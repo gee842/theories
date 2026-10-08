@@ -889,3 +889,106 @@ This route supplies a substantive way to investigate organization without presup
 The next successful argument must establish a necessary constraint on formation from independently warranted content, then show why that constraint has the claimed causal and modal reach. It must allow loss, erasure and finite systems already admitted by the theory. Universal inexhaustibility of formative potential is not added as a completion gate, nor is every relation required to remain operative. No new theorem, Lean source, compiler run, axiom or empirical result is introduced in this assessment; existing checked results retain their recorded scope. This is author counterreview, without independent acceptance.
 
 **中文结论。** 本轮直接检验关系及其作用角色怎样共同形成。已有方法形成史确实说明：获得的结果能形成被随后调用的关系，不必先放入一个完成的高层主体。但把形成能力归于同一整体，不等于已经演绎证明其普遍必然性；辨认方法的发生也不自动保证辨认正确。新的原典比较提供实质候选及其明确承诺，没有成为新的根基公理。无假设目标仍未完成，也没有被判为不可能。
+
+## 22. Derive a local law without assuming exact endpoint lifting
+
+9 October 2026, Asia/Bangkok. This continuation applies the [Theory of Becoming priority](../../../../sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md) while retaining this session's deductive-necessity standard.
+
+**Result:** `derived-history-law-exactness`; formally reuses registered `finite-trace-transport`. Existing unmigrated declarations `Generative.Deeper.history_trace_iff`, `Generative.ContinuationConditions.SameFuture` and `Generative.SelfFormation.exact_summary_exists_iff` supply the history construction, continuation vocabulary and prior summary-existence comparison. The new proof uses the first two directly; the third is a scope comparison, not a new formal import.
+
+**Delta:** construct a step relation from admitted histories and a proposed summary; prove its finite continuation exactness if and only if equal summary codes never merge different admitted continuation profiles. Unlike the core's stronger endpoint-lifting contract, this does not require that every derived endpoint lift from every representative. The checked separation example demonstrates the difference. This is one result package, not six independent foundational discoveries.
+
+**Supplied premises / correspondence:** a language `L : List A → Prop`, prefix closure, a summary `q : List A → C`, and the actual interpretation of those data. The alphabet and summary carrier need not be finite. No independently supplied step law, updater, representative selection or favorable direction is added. The language is substantive input; moving it into a history description does not justify it.
+
+**Evidence:** [six new theorems and five definitions](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DerivedHistoryLaw.lean), checked with Lean 4.29.1; [receipt pointer](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/derived-history-law-verification.json). Eleven new and 43 inherited declaration audits are empty. No new empirical evidence or independent-agent acceptance is claimed.
+
+**Boundary:** finite existential event-word continuations only; not encoded endpoints, branch identities, probabilities, policies or a universal physical law. The empty language is admitted and yields vacuous exactness on admitted histories; actuality is not manufactured.
+
+**Integration:** a supplied whole-history constraint now produces the local `Process` used by the existing core. `history_trace_iff` supplies its concrete admitted paths; `trace_map` proves their projection; `derived_trace_sound` proves the converse continuation statement from equal-fiber future agreement. The actual warrant of the language remains the unfilled foundational input.
+
+### Begin with the relations being represented
+
+The target is how earlier activity participates in what can follow, including formation, erasure and ending. A history and a current summary are two descriptions of that same unfolding. They are not independently constituted things connected by an external updater. The selected alphabet marks distinctions relevant to the question; the summary retains some of their accumulated consequences. This finite-word analysis does not assert that all reality consists of externally imposed discrete steps.
+
+The prior [history realization](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/HistoryRealization.lean) already constructs an exact word-language model using the full history as state. The prior [summary theorem](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GeneratedSelf.lean) already characterizes when some static decoder can answer continuation questions. Neither result is counted again here. The present question concerns the compositional *relation of steps* obtained after compressing histories; its existential definition need not be computationally decidable or physically implemented.
+
+### The constructed relation and its exact criterion
+
+Construct a local edge `s --a--> t` precisely when some admitted history `h` has `q h = s`, its extension `h ++ [a]` is admitted, and that extension has code `t`. Every edge therefore comes from one admitted extension. Still, a sequence of edges may switch between different histories sharing a code. That is where false continuations can enter.
+
+The exact criterion is:
+
+> For any two admitted histories with the same code, every finite suffix is admitted after one if and only if it is admitted after the other.
+
+`exact_iff_fiber_future` proves that this criterion is equivalent to the derived local process answering **all finite continuation questions correctly from every admitted history's code**. Necessity follows because one code cannot give two different answers to the same question. Sufficiency is not merely assumed in a decoder: induction over a derived path transfers each chosen representative's remaining suffix back to the history being represented. Prefix closure supplies the positive projection of each admitted extension.
+
+The local law is thus constructed and its adequacy proved. The main equivalence assumes neither a particular initial history nor an empty-word membership witness; it applies wherever an admitted history is supplied. Its necessity concerns exactness at **every admitted history**, not just feasibility from one initial code.
+
+`distinguishing_merge_creates_false_continuation` also gives a specific failure: if admitted histories share a code and one admits a suffix the other excludes, that suffix is feasible in the derived process from the latter's code. This is a misdescription caused by the summary, not evidence that the actual unfolding allows an impossible recombination.
+
+### Why the stronger lifting premise is unnecessary here
+
+The checked control admits every Boolean word and assigns code `true` only to the history `[false]`, assigning `false` to every other history. All histories have the same continuation language, so the derived process is exact for finite words. Yet it permits the abstract edge `false --false--> false`, witnessed by `[true] → [true,false]`. Starting instead from the empty history, the same letter ends at `[false]`, whose code is `true`.
+
+Consequently finite-word exactness does not require exact encoded endpoints. The core's stronger lifting condition remains correct and useful for its richer query contract; it is not a compulsory premise for this narrower one. The existing formation/profile counterexamples also remain intact: a language of feasible words can omit real formed relationships and outcomes. This new construction cannot replace those richer accounts.
+
+### Author counterreview and foundational consequence
+
+**Has a world law been derived from nothing?** No. `L` already states which finite histories are admitted. The proof derives a local representation and identifies its precise preservation condition. It does not derive the content of `L`, its reference to actual activity or universal availability of this representation. Calling `L` “the whole” would not remove that dependence.
+
+**Is the criterion just the desired conclusion renamed?** It is a condition on pairs of histories sharing a summary code; the conclusion concerns paths of arbitrary length assembled in a newly constructed step relation. The inductive connection is checked, and a failed merge gives a witnessed false path. The distinction is substantive at the representation level, without being a causal explanation of the original language.
+
+**Does this impose an observer/world split or permanent memory?** No. A summary is an analytical articulation within the same unfolding. It need not be an observer's memory or preserve every past event. What it must retain depends on the questions being answered. Physical formation and use of a summary require their own already developed mechanism and correspondence; this proof does not install one.
+
+**What has advanced?** A separate local update law and endpoint-lifting premise are unnecessary for this finite continuation contract. The remaining substantive input is exposed more precisely, rather than hidden in a state-machine interface. The next foundational deduction still has to warrant the actual admissibility relationships and their intended scope; repeating this construction for another arbitrary language would not do that. The concurrent [effective-capacity study](RELATIONAL-BECOMING-INTEGRATION.md) answers a different question about preparations and eventual reachability under a supplied law; it is a conceptual neighbor, not an automatically composed proof.
+
+The first build found `propext` dependencies introduced by the overlapping pattern used for the control's summary function. Rewriting it with explicit constructor cases preserved its computation and removed those dependencies; the failed source/log and successful source/log are both retained. The main equivalence already had an empty audit in the first build. No inference rule or foundational assumption was added during the repair.
+
+**中文结论。** 本轮从同一可接纳历史族及其摘要构造局部规律，并实查充要条件：同码的已接纳历史必须保留相同有限接续。无需另给更新器，也不必要求更强的端点提升；错误合并怎样制造虚假接续已有具体证明。这个进展消去表示层的额外输入，未证明原历史族的实际根据。六项新定理、五项定义的11项新审计全空，另43项继承审计全空；无假设的普遍基础仍未完成。
+
+### Direct closure attempt and the precise unresolved claim
+
+9 October 2026. Ren now directs: “close gap.” This assessment reuses `derived-history-law-exactness` and the [general constitutive argument](GENERAL-FOUNDATION-ARGUMENT.md#4-push-the-second-commitment-beyond-descriptive-fidelity); it adds no result identity or theorem.
+
+**Correction to the preceding conversational summary:** requiring a foundation to justify its universal claims does not require deducing the complete history language of every particular system. Local laws may remain contingent inputs to applications of a necessary universal conditional. The open claim is the common operative relationship: why constituted conditions participate in forming further activity throughout the proposed scope, and why the distinctions used to state that relationship preserve its actual content. The foundation cannot make that relationship merely an assumed antecedent and then declare it discharged.
+
+The direct affirmative attempt starts within one unfolding: an achieved organization has actually realized constitutive relationships; when that organization continues, an adequate realization of its constituent roles continues, possibly through transformation or replacement. This earns the necessary-realization constraint already established in the general argument. The proposed final step says that this constraint also establishes the common causal and modal account of formation and transformation. I cannot justify that final step. A condition required by a realized organization does not, through this argument alone, establish the activity making a continuation available. This is the existing argument's limit, not a new non-entailment theorem or a rival world obtained by deleting its relationships.
+
+Three attempted completions therefore retain an unearned input. Calling the admissible histories “all actual possibilities” gives the input its intended reading but does not justify the reading. Defining constitution to include precisely the desired generative law restates the disputed identification unless its application is earned. Explaining how an interpretation forms within the unfolding earns a formation account where established, but does not make every formed interpretation correct. These distinctions concern claims within one reality; they do not posit an outside law or an independently existing observer.
+
+The [whole-theory discharge construction](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/WholeTheoryDischarge.lean) can substitute genuine root proofs through the developed theory. Its `localProof` certificates and proof-dependency warrant remain required. A targeted search of active Lean sources in the generative-basis tree found no application of `roots_discharged`, `whole_derivation_discharged` or `closed_whole_valid` outside that generic module. This does not rule out another proof route; it means this existing tool has not supplied the missing foundational instance. The newer [inclusive-becoming account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BECOMING-FOUNDATION.md#4-the-zero-axiom-target-and-its-present-boundary) likewise explicitly retains the operative relation and interpretation as unresolved.
+
+**Outcome:** the gap has not been closed. No axiom, theorem, inference rule or compiler run is added in this reassessment. The earlier checked theorem and its counterexample retain their exact scope. This is a corrected statement of the remaining obligation and an unsuccessful direct closure attempt, not another foundational advance or a proof of impossibility. Further equivalent encodings do not discharge this particular obligation.
+
+**中文。** 根基须证明其普遍主张，不必把每项具体规律都演绎为必然。已成立的构成约束说明组织继续需要相容实现；它尚未独自说明形成与变化的共同作用根据。把真实可能性放入历史族、把结论放入“构成”的定义，或只说明认识怎样发生，都未补上这一推论。本次直接尝试未闭合缺口，未新增公理或定理，也不宣告该目标不可能。
+
+### Correct the starting point without claiming a completed deduction
+
+9 October 2026. Ren asks why the previous path was chosen and then directs us to continue, get it right and finish. This is a correction to the unsuccessful argument above, not another result. It reuses the actual operative content assessed in [consequence-to-organization formation](CONSEQUENCE-ORGANIZATION-MECHANISM.md), the [general argument](GENERAL-FOUNDATION-ARGUMENT.md#5-why-this-does-not-yet-establish-the-strongest-generative-claim), and the unchanged `derived-history-law-exactness` representation result.
+
+The earlier attempt began with an achieved organization and asked whether its realization constraint also explained its formation. That is too weak a starting description when the target already includes independently established forming activity. The relevant unfolding includes how a connection forms, how an operation subsequently uses it, and how it can be lost. Describing only the achieved arrangement omits some of that target. Failure to recover the omitted operation from the arrangement alone is not evidence against the fuller account.
+
+The existing method-formation history makes this correction concrete. An acquired result participates in forming a bound connection; a later route reads that connection and dispatches the formed method. The source-bound construction distinguishes actual use from an unused acceptance label and retains controls for broken binding and wrong source. That operative evidence earns more than a static pattern. Its stated constructor, candidate and execution conditions remain local inputs; this continuation adds neither a new execution nor a new correspondence claim.
+
+The strongest direct argument is therefore: where forming and subsequent use are independently established, an account of that very activity must preserve their operative connection or give grounds to revise the attribution. This preserves an actual causal relationship; it does not first require deriving it from an impoverished snapshot. But it earns necessity of fidelity **to that established relationship**, not deductive necessity of the foundational generalization that such a relationship explains formation and changing possibilities throughout the intended scope. Calling any observed difference “formation” leaves the producing relationship to establish; using “formation” only after productive participation has been established carries that content in the antecedent. Neither usage, by itself, supplies the missing general argument.
+
+This is an inference boundary within one unfolding, not a separation between a process and an external law. It does not require independently constituted agents, a fixed temporal architecture for every domain, the persistence of every effect, or necessary particular physical laws. A relation may be erased, unused or terminal. A successful foundation must show why its common explanatory relationship is necessary at the scope it actually claims, while preserving those cases.
+
+**Disposition:** the activity-first reconstruction corrects the diagnosis and credits already earned operation. It does not close the deductive gap. No new mathematical proposition, Lean declaration, axiom, compiler run or independent result is claimed; no impossibility conclusion is drawn. The producer's verified representation still needs a warranted actual interpretation at the foundational consumer. More equivalent representations do not fill that input.
+
+**中文。** 应从实际形成、调用与可能消失的同一关系展开开始；只保留完成后的构型，再问为何无法从中恢复作用，遗漏了原解释对象。已有形成史确实支持具体作用联系，不能抹去。但对已确定作用关系的必要保真，尚不等于普遍生成关系的演绎必然。本次修正起点与诊断，未新增定理、公理或完成声明。
+
+<a id="whole-theory-and-generative-manifold"></a>
+### The whole theory is the necessity target; generativity is within its manifold
+
+9 October 2026. [Ren's exact correction](../../../../sources/15-codex-theory-conversations/2026-10-09-becoming-whole-generative-manifold.md) states that the Theory of Becoming as a whole is deductively necessary and generativity is part of its manifold. This governs the ongoing foundational task. The previous reply's demand to establish a universally generative relationship was an incorrect statement of that task.
+
+**Reused records:** `theory-of-becoming-foundation`, `derived-history-law-exactness` and `finite-basis-common-interpretation`. **Delta:** correct the whole/part scope, not strengthen a theorem. **Evidence:** Ren's quoted clarification, read against the existing inclusive becoming account. **Remaining inputs:** the local laws and interpretations in the existing proofs are unchanged. **Boundary:** no deduction of the whole is supplied by this correction; no new mathematical claim, axiom, compiler run or independent result is claimed. **Integration:** the actual consumer is the whole Theory of Becoming; a generative mechanism supplies a particular articulation within its manifold, not a premise that all its forms must be generative.
+
+Begin with the same relational unfolding in which relations form, persist, transform and disappear. Generativity differentiates within this whole. The whole is not a further entity standing outside its forms, and the forms need not be disjoint. A change can establish one relation while dissolving another. Degeneration and terminality need no generative reinterpretation to remain within the account. Conversely, merely including their names would not yet establish the necessary content of the theory.
+
+This changes how the earlier gap reports must be read. Failure to show that every change exhibits a particular generative mechanism cannot serve as the whole's failure criterion. Earlier conditional proofs and their counterexamples remain valid at their exact signatures; their promotion to such a criterion is withdrawn. A proposed universal relationship may still be investigated, but its scope and necessity must be argued as a claim about Becoming, rather than inherited from the word “generative.”
+
+The corrected deduction must articulate what the whole theory asserts necessarily and establish that content, then explain which relationships realize generative forms within it. The claim is not added as an axiom, and every local mechanism is not required to be individually necessary. Ren's assertion and the repository's current proof coverage remain distinct. “Manifold” is retained as his description of the differentiated whole without importing a topological or differential structure.
+
+**中文。** 此前把生成关系处处成立当作根基门槛，误把整体中的部分当作整体。当前必然性对象是 Theory of Becoming 整体；生成性是其 manifold 的部分。原定理及反例保留范围，撤回将局部生成机制的界限直接升格为整体失败标准的推断。此次纠正说明证明对象，不把用户主张写成公理，也不冒充已完成整体验证。

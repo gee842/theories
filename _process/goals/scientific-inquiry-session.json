@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "scientific-inquiry-session",
+  "title": {
+    "zh": "科学探究基础会话",
+    "en": "Scientific inquiry foundation session"
+  },
+  "scope_type": "authorized-session",
+  "scope": {
+    "zh": "Ren 明确指令继续并完成必要科学基础的本会话；不自动接管其他会话工作。",
+    "en": "This session explicitly directed by Ren to pursue and finish a necessary scientific foundation; other sessions are not automatically assigned here."
+  },
+  "objective": {
+    "zh": "从独立说明的科学成就及同一展开的真实关系，证明完整所提核心在所声明科学范围内不可缺少，不以接受核心定义充分性。",
+    "en": "Establish the indispensability of the full proposed core across the intended scientific scope from independently stated achievements and actual relationships within one unfolding, without defining adequacy as acceptance of the core."
+  },
+  "premises": {
+    "zh": "用户明确要求完成必要科学基础；已完成局部定理直接复用，完整理论及伦理普遍性保留不同范围。",
+    "en": "The user explicitly requests completing the necessary scientific foundation; reuse completed local theorems and distinguish whole-theory and ethical universality."
+  },
+  "completion": {
+    "zh": "须完成所提核心与科学成就的独立必要性对应；局部统计或生成定理不能独自宣布整体完成。",
+    "en": "Complete the independent necessity correspondence between the proposed core and scientific achievements; local statistical or generative theorems alone do not complete the whole target."
+  },
+  "sources": [
+    "sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md"
+  ],
+  "result_ids": [
+    "finite-fallible-inquiry-necessity",
+    "scientific-inquiry-foundation"
+  ]
+}

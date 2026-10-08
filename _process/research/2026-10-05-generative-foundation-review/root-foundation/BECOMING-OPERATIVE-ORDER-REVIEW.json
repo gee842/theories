@@ -1,0 +1,131 @@
+{
+  "scope": "Primary-source scope correction to the open foundation. No new theorem, experiment or independent review; existing Lean receipts remain historical proof evidence.",
+  "entry_ids": [
+    "C01"
+  ],
+  "suffixes": {
+    "claim_en": " Operative constitution does not presume a definite causal order at every native interface.",
+    "claim_zh": " 作用构成不预设每个原生接口均有确定因果次序。",
+    "scope_en": " A primary quantum-process comparison distinguishes joint operational structure from an inventory of order alternatives, and temporal implementation from native causal order. This revises the open foundation candidate; it supplies no new quantum proof, empirical result or zero-axiom completion. Existing finite-trace proofs retain their scope.",
+    "scope_zh": " 量子过程主文献比较区分联合操作结构与次序选项清单、时间实现与原生因果次序。此次修订开放根基候选，不新增量子证明、经验结果或零公理完成；既有有限历史证明保留范围。"
+  },
+  "links_added": [
+    {
+      "label_en": "Operative relations and causal order",
+      "label_zh": "作用关系与因果次序",
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md#17-operative-relations-without-a-presupposed-global-order"
+    }
+  ],
+  "reviewed_sources": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BECOMING-FOUNDATION.md": {
+      "before": "140cc1680dc94001157d02da26cec6b6695e81685df719c193e2faabe02bc8f3",
+      "after": "cb1c529f44d4b3b51c6131ee5dbaa80dcb08030ec3f87148b784793a71df436f"
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md": {
+      "before": "41eec259167dc4247f615fa38f0d4669afbfae2458ba2c5f66277f09e7dbac65",
+      "after": "c0fddfdad705e45b0dd0f173160be6ee9572ef9bc888b2dea4682fa2ca1f37b0"
+    }
+  },
+  "prior_study_prefix_sha256": "41eec259167dc4247f615fa38f0d4669afbfae2458ba2c5f66277f09e7dbac65",
+  "prior_study_reviewed_sha256": "41eec259167dc4247f615fa38f0d4669afbfae2458ba2c5f66277f09e7dbac65",
+  "unrelated_entries_preserved": true,
+  "unrelated_rendered_lines_preserved": true,
+  "sources_read": [
+    {
+      "url": "https://arxiv.org/html/1105.4464v3",
+      "sections": [
+        "Results",
+        "Discussion"
+      ],
+      "role": "Premised framework comparator; no observed causal-inequality violation inferred"
+    },
+    {
+      "url": "https://arxiv.org/html/1603.00043v1",
+      "sections": [
+        "Introduction",
+        "II.2",
+        "III.1",
+        "IV.2.3"
+      ],
+      "role": "Native operation comparison, dephasing case and witness scope"
+    },
+    {
+      "url": "https://arxiv.org/html/1801.07594v4",
+      "sections": [
+        "3",
+        "4",
+        "8"
+      ],
+      "role": "Operational versus temporal implementation and physical correspondence"
+    },
+    {
+      "url": "https://quantum-journal.org/papers/q-2019-12-02-206/",
+      "sections": [
+        "Abstract",
+        "publication metadata"
+      ],
+      "role": "Version and publication cross-check"
+    }
+  ],
+  "failed_retrievals": [
+    "Nature article routes returned internal errors; used versioned author manuscripts",
+    "Quantum journal PDF timed out; read versioned HTML instead"
+  ],
+  "validation": {
+    "status": "passed-scoped",
+    "checked_at_utc": "2026-10-08T18:36:14.787746+00:00",
+    "scope": "Owned chapter and new study-section links, C01 links and exact rendered row, the two reviewed source versions, unchanged previous study prefix, unchanged coherence proof sources and receipt bindings. No new mathematical or experimental validation.",
+    "local_document_links_checked": 21,
+    "c01_links_checked": 74,
+    "canonical_c01_row_exact": true,
+    "existing_proof_bindings_match": true,
+    "research_render_exit": 0,
+    "research_check_exit": 0,
+    "research_check_record_count": 69,
+    "diff_whitespace_exit": 0,
+    "full_chain_render_exit": 2,
+    "unrelated_chain_validation_issues": [
+      "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/organizational-formation-from-generative-comparison.md",
+      "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/situated-recovery-empirical-correspondence.md",
+      "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/context-sensitive-updating-correspondence.md",
+      "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/transition-grouping-word-partition.md"
+    ],
+    "unrelated_chain_pending_changes": {
+      "modified_sources": [
+        "RESEARCH.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+        "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+        "theories/shengsheng-buxi-generative-existence/README.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+        "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+        "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md",
+        "theories/shengsheng-buxi-generative-existence/results/records/market-supported-finite-transition.md",
+        "experiments/market-generativity/formal/README.md",
+        "theories/shengsheng-buxi-generative-existence/results/records/classification-robust-generative-comparison.json",
+        "theories/shengsheng-buxi-generative-existence/results/records/classification-robust-generative-comparison.md",
+        "theories/shengsheng-buxi-generative-existence/results/records/market-partial-correction-boundary.md"
+      ],
+      "missing_sources": [],
+      "new_pages": [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md"
+      ],
+      "removed_pages": [
+        "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+        "theories/meta-attractor/COMMON-ORGANIZATION.md"
+      ]
+    },
+    "goal_completion": "Not established; full foundational target remains open.",
+    "full_chain_check_exit": 2
+  }
+}

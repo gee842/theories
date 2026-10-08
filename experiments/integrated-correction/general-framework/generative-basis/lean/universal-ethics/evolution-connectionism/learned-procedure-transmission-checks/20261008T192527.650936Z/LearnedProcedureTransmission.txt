@@ -1,0 +1,150 @@
+LearnedProcedureTransmission.lean:33:64: error: unsolved goals
+case h.h.«0».«2»
+B : Network 3
+⊢ B 0 2 = B 0 ⟨2, ⋯⟩
+
+case h.h.«1».«2»
+B : Network 3
+⊢ B 1 2 = B 1 ⟨2, ⋯⟩
+
+case h.h.«2».«0»
+B : Network 3
+⊢ B 2 0 = B ⟨2, ⋯⟩ 0
+
+case h.h.«2».«1»
+B : Network 3
+⊢ B 2 1 = B ⟨2, ⋯⟩ 1
+
+case h.h.«2».«2»
+B : Network 3
+⊢ B 2 2 = B ⟨2, ⋯⟩ ⟨2, ⋯⟩
+LearnedProcedureTransmission.lean:171:36: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+LearnedProcedureTransmission.lean:163:0: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+LearnedProcedureTransmission.lean:194:4: error: Type mismatch: After simplification, term
+  repeated_continual_cycles 10
+ has type
+  run Route.continual (weighted 1 1) (cycles 10) = (weighted (10 + 1) (3 * 10 + 1), 30)
+but is expected to have type
+  run Route.continual (weighted 1 1) (cycles 10) = (weighted 11 31, 30)
+LearnedProcedureTransmission.lean:207:2: error: unsolved goals
+case false
+⊢ (nativeRun (construct identityChannels (weighted 1 1) false).apparatus identityChannels
+          (construct identityChannels (weighted 1 1) false).network tenCycles).1 =
+      weighted 11 31 ∧
+    (nativeRun (construct identityChannels (weighted 1 1) false).apparatus identityChannels
+            (construct identityChannels (weighted 1 1) false).network tenCycles).2 =
+        30 ∧
+      40 -
+          (nativeRun (construct identityChannels (weighted 1 1) false).apparatus identityChannels
+              (construct identityChannels (weighted 1 1) false).network tenCycles).2 =
+        10
+LearnedProcedureTransmission.lean:211:2: error: unsolved goals
+case true
+⊢ (nativeRun (construct identityChannels (weighted 1 1) true).apparatus identityChannels
+          (construct identityChannels (weighted 1 1) true).network tenCycles).1 =
+      weighted 1 1 ∧
+    (nativeRun (construct identityChannels (weighted 1 1) true).apparatus identityChannels
+            (construct identityChannels (weighted 1 1) true).network tenCycles).2 =
+        40 ∧
+      40 -
+          (nativeRun (construct identityChannels (weighted 1 1) true).apparatus identityChannels
+              (construct identityChannels (weighted 1 1) true).network tenCycles).2 =
+        0
+LearnedProcedureTransmission.lean:207:17: warning: This simp argument is unused:
+  show (firstSeed false).tested = false by rfl
+
+Hint: Omit it from the simp argument list.
+  simp [̵e̵x̵p̵o̵s̵e̵,̵s̵h̵o̵w̵ ̵(̵f̵i̵r̵s̵t̵S̵e̵e̵d̵ ̵f̵a̵l̵s̵e̵)̵.̵t̵e̵s̵t̵e̵d̵ ̵=̵ ̵f̵a̵l̵s̵e̵ ̵b̵y̵ ̵r̵f̵l̵,̵[̲e̲x̲p̲o̲s̲e̲,̲ show (firstSeed false).active = 1 by rfl,
+      show (firstSeed false).source = 160 by rfl, t̵e̵n̵_̵c̵y̵c̵l̵e̵s̵_̵l̵e̵n̵g̵t̵h̵,̵e̵x̵e̵c̵u̵t̵e̵d̵_̵p̵a̵r̵e̵n̵t̵_̵r̵e̵t̵u̵r̵n̵s̵.̵2̵,̵p̵a̵r̵e̵n̵t̵A̵f̵t̵e̵r̵,̵f̵i̵r̵s̵t̵S̵e̵e̵d̵]̵t̲e̲n̲_̲c̲y̲c̲l̲e̲s̲_̲l̲e̲n̲g̲t̲h̲,̲ ̲e̲x̲e̲c̲u̲t̲e̲d̲_̲p̲a̲r̲e̲n̲t̲_̲r̲e̲t̲u̲r̲n̲s̲.̲2̲,̲
+  ̲ ̲ ̲ ̲ ̲p̲a̲r̲e̲n̲t̲A̲f̲t̲e̲r̲,̲ ̲f̲i̲r̲s̲t̲S̲e̲e̲d̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LearnedProcedureTransmission.lean:208:6: warning: This simp argument is unused:
+  show (firstSeed false).active = 1 by rfl
+
+Hint: Omit it from the simp argument list.
+  simp [̵e̵x̵p̵o̵s̵e̵,̵s̵h̵o̵w̵ ̵(̵f̵i̵r̵s̵t̵S̵e̵e̵d̵ ̵f̵a̵l̵s̵e̵)̵.̵t̵e̵s̵t̵e̵d̵ ̵=̵ ̵f̵a̵l̵s̵e̵ ̵b̵y̵ ̵r̵f̵l̵,̵[̲e̲x̲p̲o̲s̲e̲,̲ show (firstSeed f̵a̵l̵s̵e̵)̵.̵a̵c̵t̵i̵v̵e̵f̲a̲l̲s̲e̲)̲.̲t̲e̲s̲t̲e̲d̲ = 1̵f̲a̲l̲s̲e̲ by rfl,
+      show (firstSeed false).source = 160 by rfl, t̵e̵n̵_̵c̵y̵c̵l̵e̵s̵_̵l̵e̵n̵g̵t̵h̵,̵e̵x̵e̵c̵u̵t̵e̵d̵_̵p̵a̵r̵e̵n̵t̵_̵r̵e̵t̵u̵r̵n̵s̵.̵2̵,̵p̵a̵r̵e̵n̵t̵A̵f̵t̵e̵r̵,̵f̵i̵r̵s̵t̵S̵e̵e̵d̵]̵t̲e̲n̲_̲c̲y̲c̲l̲e̲s̲_̲l̲e̲n̲g̲t̲h̲,̲ ̲e̲x̲e̲c̲u̲t̲e̲d̲_̲p̲a̲r̲e̲n̲t̲_̲r̲e̲t̲u̲r̲n̲s̲.̲2̲,̲
+  ̲ ̲ ̲ ̲ ̲p̲a̲r̲e̲n̲t̲A̲f̲t̲e̲r̲,̲ ̲f̲i̲r̲s̲t̲S̲e̲e̲d̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LearnedProcedureTransmission.lean:209:6: warning: This simp argument is unused:
+  show (firstSeed false).source = 160 by rfl
+
+Hint: Omit it from the simp argument list.
+  simp [̵e̵x̵p̵o̵s̵e̵,̵s̵h̵o̵w̵[̲e̲x̲p̲o̲s̲e̲,̲ ̲s̲h̲o̲w̲ (firstSeed false).tested = false by rfl,
+      show (firstSeed false).active = 1 by rfl, s̵h̵o̵w̵ ̵(̵f̵i̵r̵s̵t̵S̵e̵e̵d̵ ̵f̵a̵l̵s̵e̵)̵.̵s̵o̵u̵r̵c̵e̵ ̵=̵ ̵1̵6̵0̵ ̵b̵y̵ ̵r̵f̵l̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵t̵e̵n̵_̵c̵y̵c̵l̵e̵s̵_̵l̵e̵n̵g̵t̵h̵,̵e̵x̵e̵c̵u̵t̵e̵d̵_̵p̵a̵r̵e̵n̵t̵_̵r̵e̵t̵u̵r̵n̵s̵.̵2̵,̵p̵a̵r̵e̵n̵t̵A̵f̵t̵e̵r̵,̵f̵i̵r̵s̵t̵S̵e̵e̵d̵]̵t̲e̲n̲_̲c̲y̲c̲l̲e̲s̲_̲l̲e̲n̲g̲t̲h̲,̲ ̲e̲x̲e̲c̲u̲t̲e̲d̲_̲p̲a̲r̲e̲n̲t̲_̲r̲e̲t̲u̲r̲n̲s̲.̲2̲,̲
+  ̲ ̲ ̲ ̲ ̲p̲a̲r̲e̲n̲t̲A̲f̲t̲e̲r̲,̲ ̲f̲i̲r̲s̲t̲S̲e̲e̲d̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LearnedProcedureTransmission.lean:210:24: warning: This simp argument is unused:
+  executed_parent_returns.2
+
+Hint: Omit it from the simp argument list.
+  simp [expose, ̲show (firstSeed false).tested = false by rfl,
+       ̵ ̵show (firstSeed false).active = 1 by rfl,
+  ̵  ̵ ̵ ̵ ̵ ̵show (firstSeed false).source = 160 by rfl,
+       ̵ ̵ten_cycles_length,e̵x̵e̵c̵u̵t̵e̵d̵_̵ ̲parent_̵r̵e̵t̵u̵r̵n̵s̵.̵2̵,̵p̵a̵r̵e̵n̵t̵After, ̲firstSeed]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LearnedProcedureTransmission.lean:211:17: warning: This simp argument is unused:
+  show (firstSeed true).tested = false by rfl
+
+Hint: Omit it from the simp argument list.
+  simp [̵e̵x̵p̵o̵s̵e̵,̵s̵h̵o̵w̵ ̵(̵f̵i̵r̵s̵t̵S̵e̵e̵d̵ ̵t̵r̵u̵e̵)̵.̵t̵e̵s̵t̵e̵d̵ ̵=̵ ̵f̵a̵l̵s̵e̵ ̵b̵y̵ ̵r̵f̵l̵,̵[̲e̲x̲p̲o̲s̲e̲,̲ show (firstSeed true).active = 1 by rfl,
+      show (firstSeed true).source = 160 by rfl, t̵e̵n̵_̵c̵y̵c̵l̵e̵s̵_̵l̵e̵n̵g̵t̵h̵,̵e̵x̵e̵c̵u̵t̵e̵d̵_̵p̵a̵r̵e̵n̵t̵_̵r̵e̵t̵u̵r̵n̵s̵.̵1̵,̵p̵a̵r̵e̵n̵t̵A̵f̵t̵e̵r̵,̵f̵i̵r̵s̵t̵S̵e̵e̵d̵]̵t̲e̲n̲_̲c̲y̲c̲l̲e̲s̲_̲l̲e̲n̲g̲t̲h̲,̲ ̲e̲x̲e̲c̲u̲t̲e̲d̲_̲p̲a̲r̲e̲n̲t̲_̲r̲e̲t̲u̲r̲n̲s̲.̲1̲,̲
+  ̲ ̲ ̲ ̲ ̲p̲a̲r̲e̲n̲t̲A̲f̲t̲e̲r̲,̲ ̲f̲i̲r̲s̲t̲S̲e̲e̲d̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LearnedProcedureTransmission.lean:212:6: warning: This simp argument is unused:
+  show (firstSeed true).active = 1 by rfl
+
+Hint: Omit it from the simp argument list.
+  simp [̵e̵x̵p̵o̵s̵e̵,̵s̵h̵o̵w̵ ̵(̵f̵i̵r̵s̵t̵S̵e̵e̵d̵ ̵t̵r̵u̵e̵)̵.̵t̵e̵s̵t̵e̵d̵ ̵=̵ ̵f̵a̵l̵s̵e̵ ̵b̵y̵ ̵r̵f̵l̵,̵[̲e̲x̲p̲o̲s̲e̲,̲ show (firstSeed t̵r̵u̵e̵)̵.̵a̵c̵t̵i̵v̵e̵t̲r̲u̲e̲)̲.̲t̲e̲s̲t̲e̲d̲ = 1̵f̲a̲l̲s̲e̲ by rfl,
+      show (firstSeed true).source = 160 by rfl, t̵e̵n̵_̵c̵y̵c̵l̵e̵s̵_̵l̵e̵n̵g̵t̵h̵,̵e̵x̵e̵c̵u̵t̵e̵d̵_̵p̵a̵r̵e̵n̵t̵_̵r̵e̵t̵u̵r̵n̵s̵.̵1̵,̵p̵a̵r̵e̵n̵t̵A̵f̵t̵e̵r̵,̵f̵i̵r̵s̵t̵S̵e̵e̵d̵]̵t̲e̲n̲_̲c̲y̲c̲l̲e̲s̲_̲l̲e̲n̲g̲t̲h̲,̲ ̲e̲x̲e̲c̲u̲t̲e̲d̲_̲p̲a̲r̲e̲n̲t̲_̲r̲e̲t̲u̲r̲n̲s̲.̲1̲,̲
+  ̲ ̲ ̲ ̲ ̲p̲a̲r̲e̲n̲t̲A̲f̲t̲e̲r̲,̲ ̲f̲i̲r̲s̲t̲S̲e̲e̲d̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LearnedProcedureTransmission.lean:213:6: warning: This simp argument is unused:
+  show (firstSeed true).source = 160 by rfl
+
+Hint: Omit it from the simp argument list.
+  simp [̵e̵x̵p̵o̵s̵e̵,̵s̵h̵o̵w̵[̲e̲x̲p̲o̲s̲e̲,̲ ̲s̲h̲o̲w̲ (firstSeed true).tested = false by rfl,
+      show (firstSeed true).active = 1 by rfl, s̵h̵o̵w̵ ̵(̵f̵i̵r̵s̵t̵S̵e̵e̵d̵ ̵t̵r̵u̵e̵)̵.̵s̵o̵u̵r̵c̵e̵ ̵=̵ ̵1̵6̵0̵ ̵b̵y̵ ̵r̵f̵l̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵t̵e̵n̵_̵c̵y̵c̵l̵e̵s̵_̵l̵e̵n̵g̵t̵h̵,̵e̵x̵e̵c̵u̵t̵e̵d̵_̵p̵a̵r̵e̵n̵t̵_̵r̵e̵t̵u̵r̵n̵s̵.̵1̵,̵p̵a̵r̵e̵n̵t̵A̵f̵t̵e̵r̵,̵f̵i̵r̵s̵t̵S̵e̵e̵d̵]̵t̲e̲n̲_̲c̲y̲c̲l̲e̲s̲_̲l̲e̲n̲g̲t̲h̲,̲ ̲e̲x̲e̲c̲u̲t̲e̲d̲_̲p̲a̲r̲e̲n̲t̲_̲r̲e̲t̲u̲r̲n̲s̲.̲1̲,̲
+  ̲ ̲ ̲ ̲ ̲p̲a̲r̲e̲n̲t̲A̲f̲t̲e̲r̲,̲ ̲f̲i̲r̲s̲t̲S̲e̲e̲d̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LearnedProcedureTransmission.lean:214:24: warning: This simp argument is unused:
+  executed_parent_returns.1
+
+Hint: Omit it from the simp argument list.
+  simp [̵e̵x̵p̵o̵s̵e̵,̵s̵h̵o̵w̵[̲e̲x̲p̲o̲s̲e̲,̲ ̲s̲h̲o̲w̲ (firstSeed true).tested = false by rfl,
+      show (firstSeed true).active = 1 by rfl, show (firstSeed true).source = 160 by rfl,
+      t̵e̵n̵_̵c̵y̵c̵l̵e̵s̵_̵l̵e̵n̵g̵t̵h̵,̵e̵x̵e̵c̵u̵t̵e̵d̵_̵p̵a̵r̵e̵n̵t̵_̵r̵e̵t̵u̵r̵n̵s̵.̵1̵,̵p̵a̵r̵e̵n̵t̵A̵f̵t̵e̵r̵,̵f̵i̵r̵s̵t̵S̵e̵e̵d̵]̵t̲e̲n̲_̲c̲y̲c̲l̲e̲s̲_̲l̲e̲n̲g̲t̲h̲,̲ ̲p̲a̲r̲e̲n̲t̲A̲f̲t̲e̲r̲,̲ ̲f̲i̲r̲s̲t̲S̲e̲e̲d̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LearnedProcedureTransmission.lean:249:4: error: Type mismatch: After simplification, term
+  continual_cycle 10
+ has type
+  run Route.continual (weighted (10 + 1) (3 * 10 + 1)) cycle = (weighted (10 + 2) (3 * 10 + 4), 3)
+but is expected to have type
+  run Route.continual (weighted 11 31) cycle = (weighted 12 34, 3)
+LearnedProcedureTransmission.lean:270:9: error: Application type mismatch: The argument
+  rfl
+has type
+  ?m.43 = ?m.43
+but is expected to have type
+  True
+in the application
+  And.intro rfl
+LearnedProcedureTransmission.lean:283:53: error: unexpected token '='; expected ':=', 'where' or '|'

@@ -1,0 +1,27 @@
+[
+  {
+    "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+    "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/inferential-substitution-before/GENERATED-LOGIC.md",
+    "sha256": "db1508358eca016029795cd379a2a5cf099aa8e71644b379e46dd35c712c32d9"
+  },
+  {
+    "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+    "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/inferential-substitution-before/RECOGNITIONAL-BINDING-INTEGRATION.md",
+    "sha256": "5f9845eb515985d0b57ad6174f91354bd88a28301de16db6f7a0f3767c8d3306"
+  },
+  {
+    "path": "sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md",
+    "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/inferential-substitution-before/2026-10-08-generative-logic-investigation.md",
+    "sha256": "1f09006b294942c9908dde35a7e44980d59ffe8d57f9ec7cc354415328fa7e39"
+  },
+  {
+    "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-CHECKS.json",
+    "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/inferential-substitution-before/RECOGNITIONAL-BINDING-CHECKS.json",
+    "sha256": "b193fd8aacbf4aefb66fb6d3c96ab9a97964bc20d319ccbc57036176aab5ad4e"
+  },
+  {
+    "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INDEX-EDITS.json",
+    "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/inferential-substitution-before/RECOGNITIONAL-BINDING-INDEX-EDITS.json",
+    "sha256": "8622443c10da578daa9a4c2bf656b27b8db7ab918801d20d0a22aafa2c00f467"
+  }
+]

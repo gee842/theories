@@ -1,0 +1,27 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-granularity-xxpndnrw/ExplanatoryGranularityBoundary.lean:99:44: error: unsolved goals
+case false
+z : Phase
+⊢ ready = z ↔ z = ready
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-granularity-xxpndnrw/ExplanatoryGranularityBoundary.lean:100:69: warning: This simp argument is unused:
+  exists_phase
+
+Hint: Omit it from the simp argument list.
+  simp [blocks, prefixes, trace_cons_iff, trace_nil_iff, e̵x̵i̵s̵t̵s̵_̵p̵h̵a̵s̵e̵,̵ ̵unfolding]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'Generative.ExplanatoryGranularityBoundary.exists_phase' depends on axioms: [propext]
+'Generative.ExplanatoryGranularityBoundary.shared_origin' depends on axioms: [propext]
+'Generative.ExplanatoryGranularityBoundary.completed_endpoints' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryGranularityBoundary.same_completed_questions' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryGranularityBoundary.real_internal_loss' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryGranularityBoundary.exact_full_accounts_distinguish' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryGranularityBoundary.terminal_questions' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryGranularityBoundary.prefixes_terminals' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryGranularityBoundary.prefix_steps' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.ExplanatoryGranularityBoundary.prefix_only_still_loses_failure' depends on axioms: [propext,
+ sorryAx,
+ Quot.sound]
+'Generative.ExplanatoryGranularityBoundary.resumption_recovers_loss' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryGranularityBoundary.reduced_prefix_account_cannot_extend' depends on axioms: [propext,
+ sorryAx,
+ Quot.sound]

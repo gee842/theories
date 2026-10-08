@@ -1,0 +1,151 @@
+{
+  "utc": "2026-10-08T19:19:50.080731+00:00",
+  "scope": "Only C09 and four reviewed source versions. Scoped row replacement preserves all other rendered lines while unrelated source review remains pending. No whole-table freshness claim.",
+  "before": {
+    "id": "C09",
+    "title_zh": "形成能力、实际运用与接续",
+    "title_en": "Formed capacity, actual exercise and continuation",
+    "claim_zh": "能力已形成、能力实际被运用、下轮条件得到再形成是不同关系；任意高的有限完成可能，不能仅凭这些替代可能性推出一条实际持续形成的历史。 固定规律下的旧可达性区分现细化为共同实现的准备步骤界：实际准备可改变当前一步能力，解除共同条件可失去最终共同实现，已有能力也可能未被使用。 进一步区别形态保留与有支持的作用：维持活动可要求改变支承路径，恢复一项条件可伴随另一项耗竭；形成、维持、转化、退化与结束须按实际关系同时说明。 明示共同操作还可在双方完整局部状态不变时改变后续响应；保留相应交叉项可准确跟随指定操作的任意有限序列。",
+    "claim_en": "Formed capacity, its actual exercise and renewed next-stage conditions are distinct; arbitrarily high finite completion possibilities do not by themselves establish one history of ongoing actual formation. The existing fixed-law reachability distinction now has an explicit preparation bound for joint realization: actual preparation can change current one-step capacity, release can remove eventual joint realization, and available capacity can remain unused. The continuation distinguishes retained form from supported efficacy: maintaining an activity can require changing its provision route, and restoring one condition can exhaust another. Formation, maintenance, transformation, degeneration and ending are explained through their actual relationships. A specified joint operation can also change later responses while both complete local states stay fixed; retaining the relevant cross contribution gives exact responses along every finite word of the declared operations.",
+    "scope_zh": "局部 Lean 与独立重建已查；善的身份待证；有界细化模块12项定理／18项审计已查，含旧推论重述，不是12项独立成果；旧有限耦合模型未解释耦合来源，完整目标未证；此前解释整合无新定理；本次关系约化模块11项定理／25项审计通过，量子前提明示，不证明Becoming整体必然性",
+    "scope_en": "Local Lean and independent reconstruction checked; ethical identity open; bounded-refinement module checks 12 theorem declarations/18 audits, including restated prior inferences rather than 12 independent results; the old finite coupling law does not explain coupling origin; the full target remains open; the prior explanatory synthesis adds no theorem; the new relational-reduction module checks 11 theorem declarations/25 audits with explicit quantum premises, without proving whole-Becoming necessity",
+    "links": [
+      {
+        "label_zh": "当前表述与范围",
+        "label_en": "Current statement and scope",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#formed-capacity-and-actual-continuation"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md",
+        "label_zh": "步骤界、已有成果及反审",
+        "label_en": "Preparation bound, prior results and counterreview"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalBecoming.lean",
+        "label_zh": "共同实现的有界细化",
+        "label_en": "Bounded joint-realization refinement"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-becoming-checks/20261008T181112.046979Z/verification.json",
+        "label_zh": "精确源码实查回执",
+        "label_en": "Source-bound checked receipt"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-POSSIBILITY-INTERFACE.md",
+        "label_zh": "复用的原可能性接口",
+        "label_en": "Reused earlier possibility interface"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY-OF-BECOMING.md",
+        "label_zh": "作用关系怎样变化",
+        "label_en": "How operative relations change"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RENEWAL-PROOF.md",
+        "label_zh": "复用的一般支承推论",
+        "label_en": "Reused general dependency inference"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PORT-RENEWAL-LAW-CLOSURE.md",
+        "label_zh": "实际补充与源头耗竭",
+        "label_en": "Actual replenishment and source exhaustion"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalReduction.lean",
+        "label_zh": "共同交叉项与精确约化",
+        "label_en": "Joint cross contribution and exact reduction"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-reduction-checks/20261008T185413.598553Z/verification.json",
+        "label_zh": "本次源码绑定实查",
+        "label_en": "Current source-bound check"
+      }
+    ]
+  },
+  "after": {
+    "id": "C09",
+    "title_zh": "形成能力、实际运用与接续",
+    "title_en": "Formed capacity, actual exercise and continuation",
+    "claim_zh": "能力已形成、能力实际被运用、下轮条件得到再形成是不同关系；任意高的有限完成可能，不能仅凭这些替代可能性推出一条实际持续形成的历史。 固定规律下的旧可达性区分现细化为共同实现的准备步骤界：实际准备可改变当前一步能力，解除共同条件可失去最终共同实现，已有能力也可能未被使用。 进一步区别形态保留与有支持的作用：维持活动可要求改变支承路径，恢复一项条件可伴随另一项耗竭；形成、维持、转化、退化与结束须按实际关系同时说明。 明示共同操作还可在双方完整局部状态不变时改变后续响应；保留相应交叉项可准确跟随指定操作的任意有限序列。 同一支持门控规律还区分仍受支持的有限修复与双失支持后的停滞：后续输入表相同不保证同样恢复。",
+    "claim_en": "Formed capacity, its actual exercise and renewed next-stage conditions are distinct; arbitrarily high finite completion possibilities do not by themselves establish one history of ongoing actual formation. The existing fixed-law reachability distinction now has an explicit preparation bound for joint realization: actual preparation can change current one-step capacity, release can remove eventual joint realization, and available capacity can remain unused. The continuation distinguishes retained form from supported efficacy: maintaining an activity can require changing its provision route, and restoring one condition can exhaust another. Formation, maintenance, transformation, degeneration and ending are explained through their actual relationships. A specified joint operation can also change later responses while both complete local states stay fixed; retaining the relevant cross contribution gives exact responses along every finite word of the declared operations. The same support-gated renewal law distinguishes finite repair through a still-supported route from inactivity after both supports are lost: equal later input schedules do not ensure equal recovery.",
+    "scope_zh": "局部 Lean 与独立重建已查；善的身份待证；有界细化模块12项定理／18项审计已查，含旧推论重述，不是12项独立成果；旧有限耦合模型未解释耦合来源，完整目标未证；此前解释整合无新定理；本次关系约化模块11项定理／25项审计通过，量子前提明示，不证明Becoming整体必然性；修复模块9项定理／10项审计通过，继承35项／60项另列；供给来源、物理对应及完整根基仍未由此导出",
+    "scope_en": "Local Lean and independent reconstruction checked; ethical identity open; bounded-refinement module checks 12 theorem declarations/18 audits, including restated prior inferences rather than 12 independent results; the old finite coupling law does not explain coupling origin; the full target remains open; the prior explanatory synthesis adds no theorem; the new relational-reduction module checks 11 theorem declarations/25 audits with explicit quantum premises, without proving whole-Becoming necessity; the repair module checks nine theorem declarations/ten audits, separately crediting 35 inherited theorems/60 audits; contribution sources, physical correspondence and the full foundation are not derived",
+    "links": [
+      {
+        "label_zh": "当前表述与范围",
+        "label_en": "Current statement and scope",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#formed-capacity-and-actual-continuation"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md",
+        "label_zh": "步骤界、已有成果及反审",
+        "label_en": "Preparation bound, prior results and counterreview"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalBecoming.lean",
+        "label_zh": "共同实现的有界细化",
+        "label_en": "Bounded joint-realization refinement"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-becoming-checks/20261008T181112.046979Z/verification.json",
+        "label_zh": "精确源码实查回执",
+        "label_en": "Source-bound checked receipt"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-POSSIBILITY-INTERFACE.md",
+        "label_zh": "复用的原可能性接口",
+        "label_en": "Reused earlier possibility interface"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY-OF-BECOMING.md",
+        "label_zh": "作用关系怎样变化",
+        "label_en": "How operative relations change"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RENEWAL-PROOF.md",
+        "label_zh": "复用的一般支承推论",
+        "label_en": "Reused general dependency inference"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PORT-RENEWAL-LAW-CLOSURE.md",
+        "label_zh": "实际补充与源头耗竭",
+        "label_en": "Actual replenishment and source exhaustion"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalReduction.lean",
+        "label_zh": "共同交叉项与精确约化",
+        "label_en": "Joint cross contribution and exact reduction"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-reduction-checks/20261008T185413.598553Z/verification.json",
+        "label_zh": "本次源码绑定实查",
+        "label_en": "Current source-bound check"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalRecovery.lean",
+        "label_zh": "支持与有限修复",
+        "label_en": "Support and finite repair"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/renewal-recovery-checks/20261008T190800.542303Z/verification.json",
+        "label_zh": "修复的源码绑定实查",
+        "label_en": "Source-bound recovery check"
+      }
+    ]
+  },
+  "reviewed_sources": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md": "1f79e8b5dceba40938728e48284da852fe575471a0ac2e3c7b663f14e111df66",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY-OF-BECOMING.md": "31e052b04830b1f89f8538d9501b52a8336078fa4e18c6304e2648f09606cc8a",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalRecovery.lean": "693840cd3b0ff85e82cd093994e748255a2d407498cd89745a62ba3b9b70cfa3",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/renewal-recovery-checks/20261008T190800.542303Z/verification.json": "b01d0a46b0231f2316d658be5799d8aac67ec95d620d2398afcc0dce325a4f91"
+  },
+  "other_entries_preserved": true,
+  "other_rendered_lines_preserved": true,
+  "owned_discovery_added": null,
+  "before_data_sha256": "ea75eba7043a4c5fff5c264419900fda4d940d5cf7be6401cb2a4bea0f75c4c3",
+  "after_data_sha256": "9eb05bb665e36bffb30f8b7437464116cb91077ac65e142ddb52afe3fa6f6d5a",
+  "before_table_sha256": "c549613348bd026e250839f79f90b6688b8fe861409859239618e9108a1378ef",
+  "after_table_sha256": "62ad5e5a69b593dc126eadd5295572aafe6b62348ad5109cd4a613dbdecfcbb7",
+  "discovery_scope": "The generated result page is outside current discovery globs; its provisional inventory addition was removed. Other inventory entries remain unchanged.",
+  "concurrent_chapter_review": "Read the new G0-object clarification and conditional C comparison with their source and study. C09 makes no new comparison claim and preserves all other rows. The new comparison record link is pending in the concurrent study."
+}

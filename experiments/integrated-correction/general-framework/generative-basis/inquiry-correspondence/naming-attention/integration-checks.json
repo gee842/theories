@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T14:08:15.227276+00:00",
+  "scope": "Owned links, four result source bindings, current M26 and empirical receipt. Shared navigation is checked by the registry command. Unrelated source drift is not accepted.",
+  "local_links_checked": 124,
+  "result_ids": [
+    "acquired-binding-compositional-use",
+    "enacted-scene-binding",
+    "encounter-selection-and-revision",
+    "naming-attention-coverage"
+  ],
+  "owned_entry": "M26",
+  "empirical_receipt_sha256": "72db9ebe4821ae5cf7894fab6afdd1f781b85eccc28e234a5349ec3870aec6d6",
+  "files_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/naming-attention/README.md": "08c35d44094d94b13f717e594b0dc52d58cb4e7a1618e5bb540f3ee7bb2b6635",
+    "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/naming-attention/PLAN.md": "a1be33bdd0293d96309e86325b3911f4cd58512e6f024670494f5349aa7c05c4",
+    "sources/developmental-attention/yu-2021/README.md": "a6f317aada352b3a9c797e5b6c3871d1656bb3b45bd69af5faebfb076ab49ce4",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md": "61542640303c7eea14c390f927735c51f0c4cbc4a5162bee67a7185a836af80f",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md": "0c30b09a9525b4d576bba944fde999382c0ddef881ed77c6a54df413afb133a7",
+    "theories/shengsheng-buxi-generative-existence/results/records/acquired-binding-compositional-use.md": "1e009a6cb4eee5ce9690262a859d7ea411e6b49b19b5eb1665c2d1746582eeac",
+    "theories/shengsheng-buxi-generative-existence/results/records/enacted-scene-binding.md": "a3cebdfcd694b9aeb33bc24697eb3aa9523f23c5738f7f575d6564ad3937a92b",
+    "theories/shengsheng-buxi-generative-existence/results/records/encounter-selection-and-revision.md": "1e46bbb9010354d147e7c7fe2802aed749e30877879a31c596695b92d392f405",
+    "theories/shengsheng-buxi-generative-existence/results/records/naming-attention-coverage.md": "4f397a637fae7ea0e7e53a43da8a848f971b738021e8621bf9ebb5f8a6775a60"
+  },
+  "full_goal_complete": false,
+  "independent_agent_review": false
+}

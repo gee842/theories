@@ -1,0 +1,13 @@
+import EvaluatorGrounding
+#check EvaluatorGrounding.self_good_reaches_at_least_as_connected
+#check EvaluatorGrounding.strict_indexed_rival_inconsistent
+#check EvaluatorGrounding.chain_preserves
+#check EvaluatorGrounding.tolerant_chain_reaches
+#check EvaluatorGrounding.reach_is_g0
+#check EvaluatorGrounding.self_good_derives_reachable_g0
+#check EvaluatorGrounding.formed_other_has_significance
+#check EvaluatorGrounding.threshold_rival_is_consistent_without_tolerance
+#check EvaluatorGrounding.tolerant_standpoint_reaches_stranger
+#check EvaluatorGrounding.present_aim_evaluator_escapes
+#check EvaluatorGrounding.closed_self_blocks_reach
+#check EvaluatorGrounding.persistence_rival_escapes_self_transcendence

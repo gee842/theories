@@ -1,0 +1,728 @@
+{
+  "checked_at_utc": "20261008T181100.924957Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "compiler": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "checker_sha256": "27a96867e37d5cf79d5bc08c8075e3e0f4f3e5f6b809738a5b9551e3893bd769",
+  "scope": "Finite block-query compilation and recovery, retained provenance and granularity boundary. Prior 256 audits inherited. Supplied expansions and complete query agreement remain explicit; no universal ontology claim.",
+  "modules": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "expected_audits": 18,
+      "empty_axiom_audits": [
+        "Generative.trace_append_iff",
+        "Generative.trace_singleton_iff",
+        "Generative.enabled_iff_singleton_trace",
+        "Generative.enabled_difference_implies_state_difference",
+        "Generative.feasible_append_iff",
+        "Generative.feasible_prefix",
+        "Generative.enabled_product_iff",
+        "Generative.trace_product_iff",
+        "Generative.feasible_product_iff",
+        "Generative.trace_map",
+        "Generative.trace_lift",
+        "Generative.projected_trace_iff",
+        "Generative.projection_exact_iff",
+        "Generative.local_exact_iff_trace_exact",
+        "Generative.enabled_projection_iff",
+        "Generative.feasible_projection_iff",
+        "Generative.feasible_difference_implies_projection_difference",
+        "Generative.trace_faithful_iff"
+      ],
+      "standard_axiom_audits": {},
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/HistoryRealization.lean",
+      "sha256": "22785f31280a7bbac5f89d7754cb6896830a6dc2d81949b9f3adfabd126e8fa9",
+      "expected_audits": 7,
+      "empty_axiom_audits": [
+        "Generative.Deeper.append_nil_constructive",
+        "Generative.Deeper.append_assoc_constructive",
+        "Generative.Deeper.history_trace_iff",
+        "Generative.Deeper.history_from_empty_iff",
+        "Generative.Deeper.history_feasible_iff",
+        "Generative.Deeper.process_language_prefix_closed",
+        "Generative.Deeper.process_language_exact_history_realization"
+      ],
+      "standard_axiom_audits": {},
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryNecessity.lean",
+      "sha256": "e6ee0229ef68da50a62ccc0d079f7e38866f86813d4e7309e681ecc17a923df5",
+      "expected_audits": 17,
+      "empty_axiom_audits": [
+        "Generative.ExplanatoryNecessity.decode_singleton_recovers_step",
+        "Generative.ExplanatoryNecessity.same_description_preserves_steps",
+        "Generative.ExplanatoryNecessity.different_steps_require_different_descriptions",
+        "Generative.ExplanatoryNecessity.step_equivalence_iff_trace_equivalence",
+        "Generative.ExplanatoryNecessity.static_profile_adequate",
+        "Generative.ExplanatoryNecessity.adequate_answers_agree",
+        "Generative.ExplanatoryNecessity.local_decomposition_iff_trace_representation",
+        "Generative.ExplanatoryNecessity.idle_feasible",
+        "Generative.ExplanatoryNecessity.flip_feasible",
+        "Generative.ExplanatoryNecessity.feasibility_profiles_agree",
+        "Generative.ExplanatoryNecessity.endpoint_profiles_differ",
+        "Generative.ExplanatoryNecessity.bounded_empty",
+        "Generative.ExplanatoryNecessity.bounded_singleton",
+        "Generative.ExplanatoryNecessity.bounded_rejects_double",
+        "Generative.ExplanatoryNecessity.bounded_prefix_closed",
+        "Generative.ExplanatoryNecessity.bounded_no_one_point_realization",
+        "Generative.ExplanatoryNecessity.bounded_history_realization"
+      ],
+      "standard_axiom_audits": {},
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryStructure.lean",
+      "sha256": "ecc83334e6d7c136cbeab5f6094e94b82b1522011542feb9c7c0faaf5f7cc52e",
+      "expected_audits": 17,
+      "empty_axiom_audits": [
+        "Generative.ExplanatoryStructure.trace_global",
+        "Generative.ExplanatoryStructure.global_realized",
+        "Generative.ExplanatoryStructure.realizes_iff_global",
+        "Generative.ExplanatoryStructure.adjacent_opposite",
+        "Generative.ExplanatoryStructure.mutilated_balance",
+        "Generative.ExplanatoryStructure.separated_balanced"
+      ],
+      "standard_axiom_audits": {
+        "Generative.ExplanatoryStructure.complete_trace_iff": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.balance_perm": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.opposite_pair_balance": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.legal_balance": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.global_balance": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.unbalanced_no_cover": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.unbalanced_no_placement_history": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.mutilated_no_cover": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.mutilated_no_history": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.separated_not_coverable": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.two_tile_orders": [
+          "propext"
+        ]
+      },
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryUniqueness.lean",
+      "sha256": "25df183309a4e5bdda32dcb45a36cb57f3b6939f5a8f2abd428469e32030f5de",
+      "expected_audits": 15,
+      "empty_axiom_audits": [
+        "Generative.ExplanatoryUniqueness.equal_codes_same_answers",
+        "Generative.ExplanatoryUniqueness.reduced_exact_kernel",
+        "Generative.ExplanatoryUniqueness.reduced_presentations_same_kernel",
+        "Generative.ExplanatoryUniqueness.matches_total_on_used",
+        "Generative.ExplanatoryUniqueness.matches_functional",
+        "Generative.ExplanatoryUniqueness.matches_inverse_functional",
+        "Generative.ExplanatoryUniqueness.matches_iff_equal_answers",
+        "Generative.ExplanatoryUniqueness.unique_matching",
+        "Generative.ExplanatoryUniqueness.short_exact",
+        "Generative.ExplanatoryUniqueness.full_exact",
+        "Generative.ExplanatoryUniqueness.short_reduced",
+        "Generative.ExplanatoryUniqueness.full_not_reduced",
+        "Generative.ExplanatoryUniqueness.first_summary_cannot_answer_both",
+        "Generative.ExplanatoryUniqueness.relative_unique_correspondence"
+      ],
+      "standard_axiom_audits": {
+        "Generative.ExplanatoryUniqueness.balance_does_not_determine_coverability": [
+          "propext"
+        ]
+      },
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicUnderdetermination.lean",
+      "sha256": "0b5e930ba0a91306e73746c811b71e74fb9ccbc9e152c2e1116c4d19c4147f6c",
+      "expected_audits": 9,
+      "empty_axiom_audits": [
+        "Generative.Deeper.idle_no_event",
+        "Generative.Deeper.static_event",
+        "Generative.Deeper.static_never_changes",
+        "Generative.Deeper.toggle_event",
+        "Generative.Deeper.toggle_always_changes",
+        "Generative.Deeper.static_history_never_changes",
+        "Generative.Deeper.toggle_two_event_cycle",
+        "Generative.Deeper.same_carrier_incompatible_laws",
+        "Generative.Deeper.event_without_state_distinction"
+      ],
+      "standard_axiom_audits": {},
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalDynamics.lean",
+      "sha256": "292fff843e984f602b3d5c62c33539abdc4d026ef376501e1f50ca5bce313ca3",
+      "expected_audits": 13,
+      "empty_axiom_audits": [
+        "Generative.Deeper.bisimulation_feasible",
+        "Generative.Deeper.bisimulation_converse",
+        "Generative.Deeper.bisimulation_same_histories",
+        "Generative.Deeper.continuing_single_event_is_one_recurrence",
+        "Generative.Deeper.static_is_one_recurrence",
+        "Generative.Deeper.toggle_is_one_recurrence",
+        "Generative.Deeper.static_toggle_one_dynamics",
+        "Generative.Deeper.static_toggle_same_histories",
+        "Generative.Deeper.states_relationally_identical",
+        "Generative.Deeper.unchanged_reads_carrier_identity",
+        "Generative.Deeper.idle_differs_from_recurrence",
+        "Generative.Deeper.toggle_continues",
+        "Generative.Deeper.idle_cannot_continue"
+      ],
+      "standard_axiom_audits": {},
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean",
+      "sha256": "ff49f9ef7e458a316898575948fcec763d879ab5412e170c25de56ac94cd7a2e",
+      "expected_audits": 18,
+      "empty_axiom_audits": [
+        "Generative.ExplanatoryBranching.same_refl",
+        "Generative.ExplanatoryBranching.same_symm",
+        "Generative.ExplanatoryBranching.same_trans",
+        "Generative.ExplanatoryBranching.bisimulation_preserves_tests",
+        "Generative.ExplanatoryBranching.bisimulation_implies_same",
+        "Generative.ExplanatoryBranching.bisimulation_lifts_trace",
+        "Generative.ExplanatoryBranching.same_functional",
+        "Generative.ExplanatoryBranching.same_inverse_functional",
+        "Generative.ExplanatoryBranching.any_bisimulation_agrees"
+      ],
+      "standard_axiom_audits": {
+        "Generative.ExplanatoryBranching.finite_separating_test": [
+          "propext"
+        ],
+        "Generative.ExplanatoryBranching.not_same_has_separating_test": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryBranching.same_forces_successor_match": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryBranching.same_is_bisimulation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryBranching.same_iff_bisimilar": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryBranching.exact_equal_codes_force_branch_matching": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryBranching.same_total_on_reachable": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryBranching.branching_structural_correspondence": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryBranching.correspondence_preserves_steps": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryUniversality.lean",
+      "sha256": "60b8b30c41ee8812c1a51f2035621048da42d3d7c6d9fa8eea1a0acbf11a7338",
+      "expected_audits": 13,
+      "empty_axiom_audits": [
+        "Generative.ExplanatoryUniversality.lift_contains",
+        "Generative.ExplanatoryUniversality.saturation_gives_exact_lift",
+        "Generative.ExplanatoryUniversality.exact_relation_forces_saturation",
+        "Generative.ExplanatoryUniversality.relation_descends_iff_saturated",
+        "Generative.ExplanatoryUniversality.lift_exact_iff_saturated",
+        "Generative.ExplanatoryUniversality.relational_reading_unique_on_used",
+        "Generative.ExplanatoryUniversality.separating_relation_blocks_descent",
+        "Generative.ExplanatoryUniversality.all_predicates_separate",
+        "Generative.ExplanatoryUniversality.all_predicates_force_injective",
+        "Generative.ExplanatoryUniversality.all_predicates_every_relation",
+        "Generative.ExplanatoryUniversality.all_predicates_relation_recoverable",
+        "Generative.ExplanatoryUniversality.all_predicates_automatically_reduced",
+        "Generative.ExplanatoryUniversality.all_predicates_unique_correspondence"
+      ],
+      "standard_axiom_audits": {},
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoining.lean",
+      "sha256": "1149035f2cc534f133664e6e1377f96761a16d532fe01af8639063ab4503176d",
+      "expected_audits": 23,
+      "empty_axiom_audits": [
+        "Generative.ExplanatoryJoining.idle_valid",
+        "Generative.ExplanatoryJoining.joint_iff_joined",
+        "Generative.ExplanatoryJoining.joined_functional",
+        "Generative.ExplanatoryJoining.joint_merge_valid",
+        "Generative.ExplanatoryJoining.joined_valid",
+        "Generative.ExplanatoryJoining.joint_chain_left",
+        "Generative.ExplanatoryJoining.joint_chain_right",
+        "Generative.ExplanatoryJoining.idle_left_probe",
+        "Generative.ExplanatoryJoining.idle_right_probe",
+        "Generative.ExplanatoryJoining.joined_idle_left",
+        "Generative.ExplanatoryJoining.same_probes_iff_boundaries",
+        "Generative.ExplanatoryJoining.probes_recover_joint",
+        "Generative.ExplanatoryJoining.exact_codes_retain_boundaries",
+        "Generative.ExplanatoryJoining.exact_reads_recover_joint",
+        "Generative.ExplanatoryJoining.boundary_replacement_preserves_joint",
+        "Generative.ExplanatoryJoining.spend_valid",
+        "Generative.ExplanatoryJoining.spend_cannot_self_join",
+        "Generative.ExplanatoryJoining.boundary_idles_distinguished",
+        "Generative.ExplanatoryJoining.loop_valid",
+        "Generative.ExplanatoryJoining.probes_miss_internal_word"
+      ],
+      "standard_axiom_audits": {
+        "Generative.ExplanatoryJoining.merge_associative": [
+          "propext"
+        ],
+        "Generative.ExplanatoryJoining.joined_associative": [
+          "propext"
+        ],
+        "Generative.ExplanatoryJoining.joined_idle_right": [
+          "propext"
+        ]
+      },
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryLocalUnits.lean",
+      "sha256": "a2167da3bd8c6364f0bcd7bfbc443edb153e3329c034fd015a42a844e3e4e0cf",
+      "expected_audits": 31,
+      "empty_axiom_audits": [
+        "Generative.ExplanatoryLocalUnits.left_unit_unique",
+        "Generative.ExplanatoryLocalUnits.right_unit_unique",
+        "Generative.ExplanatoryLocalUnits.neutral_self_composes",
+        "Generative.ExplanatoryLocalUnits.local_units_exist_uniquely",
+        "Generative.ExplanatoryLocalUnits.joined_common_unit",
+        "Generative.ExplanatoryLocalUnits.composable_common_unit",
+        "Generative.ExplanatoryLocalUnits.left_unit_of_product",
+        "Generative.ExplanatoryLocalUnits.right_unit_of_product",
+        "Generative.ExplanatoryLocalUnits.common_unit_suffices_when_complete",
+        "Generative.ExplanatoryLocalUnits.composable_iff_common_unit",
+        "Generative.ExplanatoryLocalUnits.chain_complete_iff_unit_matching_suffices",
+        "Generative.ExplanatoryLocalUnits.boundary_assignments_unique",
+        "Generative.ExplanatoryLocalUnits.neutral_transport",
+        "Generative.ExplanatoryLocalUnits.left_unit_transport",
+        "Generative.ExplanatoryLocalUnits.right_unit_transport",
+        "Generative.ExplanatoryLocalUnits.budget_functional",
+        "Generative.ExplanatoryLocalUnits.budget_associative",
+        "Generative.ExplanatoryLocalUnits.budget_has_units",
+        "Generative.ExplanatoryLocalUnits.budget_matching_does_not_suffice",
+        "Generative.ExplanatoryLocalUnits.budget_not_chain_complete",
+        "Generative.ExplanatoryLocalUnits.trace_join_functional",
+        "Generative.ExplanatoryLocalUnits.trace_chain_complete",
+        "Generative.ExplanatoryLocalUnits.trace_idle_injective"
+      ],
+      "standard_axiom_audits": {
+        "Generative.ExplanatoryLocalUnits.trace_join_associative": [
+          "propext"
+        ],
+        "Generative.ExplanatoryLocalUnits.trace_idle_neutral": [
+          "propext"
+        ],
+        "Generative.ExplanatoryLocalUnits.trace_has_units": [
+          "propext"
+        ],
+        "Generative.ExplanatoryLocalUnits.trace_left_unit_iff": [
+          "propext"
+        ],
+        "Generative.ExplanatoryLocalUnits.trace_right_unit_iff": [
+          "propext"
+        ],
+        "Generative.ExplanatoryLocalUnits.trace_composable_iff_common_unit": [
+          "propext"
+        ],
+        "Generative.ExplanatoryLocalUnits.trace_neutral_iff_idle": [
+          "propext"
+        ],
+        "Generative.ExplanatoryLocalUnits.recovered_boundary_unique": [
+          "propext"
+        ]
+      },
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningContexts.lean",
+      "sha256": "ce2396e989a8476f9c3871e825a723b378b8864a115d43f98d27b94af9f31cbd",
+      "expected_audits": 16,
+      "empty_axiom_audits": [
+        "Generative.ExplanatoryJoiningContexts.realizes_splice",
+        "Generative.ExplanatoryJoiningContexts.possible_splice",
+        "Generative.ExplanatoryJoiningContexts.realizes_functional",
+        "Generative.ExplanatoryJoiningContexts.same_refl",
+        "Generative.ExplanatoryJoiningContexts.same_symm",
+        "Generative.ExplanatoryJoiningContexts.same_trans",
+        "Generative.ExplanatoryJoiningContexts.possible_right",
+        "Generative.ExplanatoryJoiningContexts.possible_left",
+        "Generative.ExplanatoryJoiningContexts.same_preserves_joinability",
+        "Generative.ExplanatoryJoiningContexts.compatible_transports_realization",
+        "Generative.ExplanatoryJoiningContexts.compatible_refines_same"
+      ],
+      "standard_axiom_audits": {
+        "Generative.ExplanatoryJoiningContexts.continuation_after_realization": [
+          "propext"
+        ],
+        "Generative.ExplanatoryJoiningContexts.same_continuation_results": [
+          "propext"
+        ],
+        "Generative.ExplanatoryJoiningContexts.same_join_results": [
+          "propext"
+        ],
+        "Generative.ExplanatoryJoiningContexts.same_compatible": [
+          "propext"
+        ],
+        "Generative.ExplanatoryJoiningContexts.same_iff_compatible_relation": [
+          "propext"
+        ]
+      },
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean",
+      "sha256": "4c9c2ff814f1e5d2fbd9948a7466833b438ae8875cd5dcb41a2897aa60c9b3f3",
+      "expected_audits": 16,
+      "empty_axiom_audits": [
+        "Generative.ExplanatoryJoiningBranches.finite_outcomes_image_finite",
+        "Generative.ExplanatoryJoiningBranches.bisimulation_iff_compatible",
+        "Generative.ExplanatoryJoiningBranches.compatible_refines_branch_same",
+        "Generative.ExplanatoryJoiningBranches.holds_ask",
+        "Generative.ExplanatoryJoiningBranches.canonical_exact",
+        "Generative.ExplanatoryJoiningBranches.matching_preserves_operation"
+      ],
+      "standard_axiom_audits": {
+        "Generative.ExplanatoryJoiningBranches.branch_same_compatible": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryJoiningBranches.branch_same_iff_compatible_relation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryJoiningBranches.branch_same_refines_context_same": [
+          "propext"
+        ],
+        "Generative.ExplanatoryJoiningBranches.join_result_matches": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryJoiningBranches.operation_lifts": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryJoiningBranches.canonical_reduced": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryJoiningBranches.every_exact_account_has_canonical_factor": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryJoiningBranches.common_multivalued_structure": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryJoiningBranches.questions_survive_encoding": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryJoiningBranches.tree_lifts": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningIncidence.lean",
+      "sha256": "c5bd28266d38a2db108955263215706a75815aa72281643d1f544fb17d50964a",
+      "expected_audits": 9,
+      "empty_axiom_audits": [],
+      "standard_axiom_audits": {
+        "Generative.ExplanatoryJoiningIncidence.locally_finite_image_finite": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryJoiningIncidence.leave_question": [
+          "propext"
+        ],
+        "Generative.ExplanatoryJoiningIncidence.occurrence_same_matches_slots": [
+          "propext"
+        ],
+        "Generative.ExplanatoryJoiningIncidence.fragment_not_occurrence_same": [
+          "propext"
+        ],
+        "Generative.ExplanatoryJoiningIncidence.match_incident": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryJoiningIncidence.related_covers_connected": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryJoiningIncidence.span_left_open": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryJoiningIncidence.span_right_open": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryJoiningIncidence.connected_common_refinement": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningRefinement.lean",
+      "sha256": "2e4b6c6dbde751551dc956c0322683853a41fbf828a53caaa19ef8cf39e788b2",
+      "expected_audits": 11,
+      "empty_axiom_audits": [
+        "Generative.ExplanatoryJoiningRefinement.occurrence_ext",
+        "Generative.ExplanatoryJoiningRefinement.ofTuple_at",
+        "Generative.ExplanatoryJoiningRefinement.mapOccurrence_at",
+        "Generative.ExplanatoryJoiningRefinement.identity_open"
+      ],
+      "standard_axiom_audits": {
+        "Generative.ExplanatoryJoiningRefinement.map_step": [
+          "propext"
+        ],
+        "Generative.ExplanatoryJoiningRefinement.open_map_lifts_step": [
+          "propext"
+        ],
+        "Generative.ExplanatoryJoiningRefinement.open_map_bisimulation": [
+          "propext"
+        ],
+        "Generative.ExplanatoryJoiningRefinement.open_map_preserves_questions": [
+          "propext"
+        ],
+        "Generative.ExplanatoryJoiningRefinement.common_factor_preserves_joins": [
+          "propext"
+        ],
+        "Generative.ExplanatoryJoiningRefinement.common_factor_unique": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryJoiningRefinement.universal_common_factor": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningAnchors.lean",
+      "sha256": "e6a989180b3e999647bb89c3a1b4a15bfc989b3d15d9de5f89abf88d892024d9",
+      "expected_audits": 12,
+      "empty_axiom_audits": [
+        "Generative.ExplanatoryJoiningAnchors.units_role_total",
+        "Generative.ExplanatoryJoiningAnchors.role_total_collapse_open",
+        "Generative.ExplanatoryJoiningAnchors.units_collapse_open",
+        "Generative.ExplanatoryJoiningAnchors.spent_has_no_self_result",
+        "Generative.ExplanatoryJoiningAnchors.retained_anchor_separates"
+      ],
+      "standard_axiom_audits": {
+        "Generative.ExplanatoryJoiningAnchors.units_same_incidence_questions": [
+          "propext"
+        ],
+        "Generative.ExplanatoryJoiningAnchors.coarse_account_exact": [
+          "propext"
+        ],
+        "Generative.ExplanatoryJoiningAnchors.coarse_account_reduced": [
+          "propext"
+        ],
+        "Generative.ExplanatoryJoiningAnchors.every_admitted_history_collapses": [
+          "propext"
+        ],
+        "Generative.ExplanatoryJoiningAnchors.coarse_self_join_loses_real_failure": [
+          "propext"
+        ],
+        "Generative.ExplanatoryJoiningAnchors.open_map_does_not_force_pair_lifting": [
+          "propext"
+        ],
+        "Generative.ExplanatoryJoiningAnchors.same_incidence_distinct_boundary_probes": [
+          "propext"
+        ]
+      },
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningRegisters.lean",
+      "sha256": "299df4bf8ec33316d13c076891f9eb192914f6d128341bcca835cf07713542f8",
+      "expected_audits": 11,
+      "empty_axiom_audits": [],
+      "standard_axiom_audits": {
+        "Generative.ExplanatoryJoiningRegisters.finite_outcomes_image_finite": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryJoiningRegisters.retained_pair_result_matches": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryJoiningRegisters.step_retains_configuration": [
+          "propext"
+        ],
+        "Generative.ExplanatoryJoiningRegisters.trace_retains_configuration": [
+          "propext"
+        ],
+        "Generative.ExplanatoryJoiningRegisters.trace_length": [
+          "propext"
+        ],
+        "Generative.ExplanatoryJoiningRegisters.retained_history_matches": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryJoiningRegisters.singleton_self_question": [
+          "propext"
+        ],
+        "Generative.ExplanatoryJoiningRegisters.retained_question_corrects_coarse_failure": [
+          "propext"
+        ],
+        "Generative.ExplanatoryJoiningRegisters.coarse_failure_not_related": [
+          "propext"
+        ],
+        "Generative.ExplanatoryJoiningRegisters.idle_self_question": [
+          "propext"
+        ],
+        "Generative.ExplanatoryJoiningRegisters.every_exact_account_retains_real_difference": [
+          "propext"
+        ]
+      },
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGranularity.lean",
+      "sha256": "1c4580254e56eb48cb65d6aa32c6eb5e899ca69bbf39c7191184dd02eab15b3c",
+      "expected_audits": 10,
+      "empty_axiom_audits": [],
+      "standard_axiom_audits": {
+        "Generative.ExplanatoryGranularity.holds_along": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryGranularity.compile_correct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryGranularity.blocks_trace_iff": [
+          "propext",
+          "sorryAx"
+        ],
+        "Generative.ExplanatoryGranularity.finite_trace_endpoints": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryGranularity.blocks_image_finite": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryGranularity.cross_granularity_history_matches": [
+          "propext",
+          "sorryAx",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryGranularity.retained_block_provenance": [
+          "propext",
+          "sorryAx"
+        ],
+        "Generative.ExplanatoryGranularity.lift_compile": [
+          "propext"
+        ],
+        "Generative.ExplanatoryGranularity.singleton_coverage_recovers_questions": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryGranularity.full_and_block_reduced_kernels": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "exit_code": 1,
+      "source_unchanged_during_check": true,
+      "passed": false
+    }
+  ],
+  "passed": false
+}

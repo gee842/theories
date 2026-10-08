@@ -29,6 +29,8 @@ Directions preserve authorization and scope; completion status is obtained from 
 
 [historical-source-binding](theories/shengsheng-buxi-generative-existence/results/records/historical-source-binding.md): `recorded-checked`
 
+[learned-procedure-transmission](theories/shengsheng-buxi-generative-existence/results/records/learned-procedure-transmission.md): `recorded-checked`
+
 [naming-attention-coverage](theories/shengsheng-buxi-generative-existence/results/records/naming-attention-coverage.md): `reviewed-scoped`
 
 [retrospective-source-binding](theories/shengsheng-buxi-generative-existence/results/records/retrospective-source-binding.md): `recorded-checked`

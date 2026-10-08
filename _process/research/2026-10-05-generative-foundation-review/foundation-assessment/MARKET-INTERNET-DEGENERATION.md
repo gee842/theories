@@ -480,4 +480,262 @@ Delta: 削弱“纠正阶段 β=0”的前提，检验残留侵蚀以及 β=5/12
 
 Supplied premises / correspondence: 沿同一有理市场规律，参数在有限纠正阶段固定、纠正真实生效、额外支持耗用与原先资金账户明示；先证明轨迹，再接实际守卫。真实组织形成、离散退出及市场进入须另有对应。
 
-Evidence / boundary / integration: 继续在原研究与 formal 目录中检查；临界等号、超临界正初态反例及原交接接口分别核对。新的结果不会自动证明现实中可实现所给参数，也不把材料链的生成直接解释成经营者进入。
+Evidence / boundary / integration: [PartialRegimeTransition](../../../../experiments/market-generativity/formal/PartialRegimeTransition.lean) 与[源绑定回执](../../../../experiments/market-generativity/formal/partial-transition-verification.json)实际检查26项新定理／31项新声明，123项继承定理／153项审计另列。登记为 `market-partial-correction-boundary`，正式复用前轮支持界与到达—保护接口；临界等号、超临界正初态反例及不利误差分别核对。新的结果不自动证明现实中可实现所给参数，也不把材料链的生成直接解释成经营者进入。
+
+
+## 32. 无额外误差时，部分纠正的精确普遍到达边界
+
+设 P 仍为上一轮的已证保护区：x≥3/4、q≥1/2、w≤1/4，并保留物理域。对原有理参数族 0≤β≤3/4，`exact_universal_landing_boundary` 检查了
+
+\[
+\left[\forall s_0\in[0,1]^3\cap\mathbb Q^3,\quad
+x_0>0\ \Longrightarrow\ \exists N,\ F_\beta^N(s_0)\in P\right]
+\quad\Longleftrightarrow\quad \beta\le\frac5{12}.
+\]
+
+这比上一轮 β=0 的足够条件强：**残留侵蚀可以存在，临界等号也包含在无误差的有限到达一侧。** 这里首先量化持续执行的运行投影；实际有限支持能否承受这段历史，由下一节的守卫组合说明。参数范围、比例域、其余固定参数及无额外责任误差都是公开前提，5/12 不是现实平台的测量数值。
+
+大于临界值时，已有内部平衡 Sβ 本身就提供 x>0 却永不进入 P 的反例。本轮还把旧低区定理正式接到 `supercritical_low_box_never_lands`：存在有宽度的低区，区内全部运行历史都不进入 P。故反例并不只依赖精确停在不稳定点。**这否定所有正初态都有保证，不是证明所有初态都会退化。** 原 β=1/2 的高端保护区仍然存在，获得完整信用。
+
+## 33. 临界点为什么还可以恢复
+
+最坏边界 M=0 是在 w=1 处计算的。此前的门槛保护定理没有把 w 永久固定为1；新结果正是跟随它与维护活动的实际关系，而非把“条件”静置在“活动”之外。
+
+对所有 0≤β≤5/12，先检查
+
+\[
+q_n\ge\frac38(1-3^{-n}),\qquad x_n\ge\frac{x_0}{2}.
+\]
+
+后一项是 `uniform_seed_floor` 的全时界；它来自对每一步不利选择的累积核算，而不是先假定维护者永不消失。q 初期可以低于私人选择门槛，x 也可以先减少；该无误差模型中的不利幅度衰减得足够快，正余量仍被保留。
+
+这个实际余量反过来改变影响形成：w 的更新目标至多为 1−x₀/2。有限时间后，w≤1−x₀/4，于是 q 最终保持在 3/8+x₀/32 以上，产生严格正的选择差额。维护份额进一步升至7/8，留存影响降至1/4以内，责任效力再升至1/2，最终满足 P。`eventual_positive_gap`、`eventual_high_share` 与 `partial_finite_landing` 实际检查了这条连接。
+
+**因此，临界点上的恢复并非必须等待一个独立的更强控制者：仍在进行的维护，能够通过改变后续影响，参与改善自身的继续条件。** 这是给定市场规律内的具体解释，不证明一切微弱替代都有这种效果，更不证明伦理正确会自动赢得竞争。
+
+## 34. 实际支持交接，以及临界点对误差的敏感性
+
+`partial_remaining_cover` 复用前轮 `cover_step`，`supported_partial_transition` 将新的有限到达接入原保护证书。对任意固定0≤β≤5/12、正初态和每步额外支持耗用 κ≥0，有有限 N；若 C₀≥K_N，则原完整 State 的实际守卫允许整个纠正前缀执行。随后以真实剩余状态恢复原 β=1/2 并撤去额外耗用，旧证书保障后续继续。K_N 仍是前轮保守上界，未重新提出另一套“保护机制”，也没有交接补账。
+
+**临界等号的全初态保证不具备任意小持续误差下的稳健性。** 令纠正每步遭受固定不利读取／落实误差 e>0，即原 `qualityStep` 中的 error=e。在 β=5/12 处，对0<e≤5/64，
+
+\[
+(x,q,w)=\left(\frac{32e}{5},\ \frac38,\ 1-\frac{32e}{5}\right)
+\]
+
+是已检查的物理平衡，x>0 而 q 始终不到1/2。`arbitrarily_small_error_blocks_universal_landing` 对每个 ε>0 构造0<e<ε的这种反例。这里是持续偏差，不是新加入的随机噪声分布；`critical_noise_fixed` 的代码名称不宣称随机吸引性质、稳定性或所有初态失败。
+
+这把两件事分开：无误差下的精确到达边界，以及面对未知偏差时可以担保的范围。前轮 M≥ε 的统一门槛保护结果仍可直接复用，但它本身没有证明本轮全部含误差状态都有限恢复。**给现实干预留出余量是需要进一步核实的稳健性方向，不能用这一临界反例冒称最优安全距离或完整含误差恢复定理。** 同样，没有证明接近临界必然呈某种幂律慢化；本轮证明不包含经验时间标定。
+
+## 35. 零余量的进入：已有形成成果能接到哪里
+
+本轮检索、核读了 `material-preparation-output`、`recurrent-chain-assembly` 的记录，以及[FormationRoot](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationRoot.lean)与[CommonOrganization](../../../../experiments/market-generativity/meta-attractor/CommonOrganization.lean) 的实际接口。已有结果包含从缺失到形成、共同支持的消耗、形成后复制、修复位置交接，以及后果记录参与更新机制替换。这些局部形成机制已经完成，不能再把“能力如何形成”笼统列作全新的空白。
+
+但它们的输出分别是已放置材料、具有真实连接的结构、形成并运作的更新关系；**尚没有一个已验证接口，把这些具体输出及其继续条件转换为当前市场中 x 的正份额，或证明它们实际兑现某个 β。** 分子组分数不等于经营者数量，形成了某个选择器也不等于责任已经恢复。仅写一个重命名映射会把要解释的关系藏进对应。
+
+还应重构“进入”本身：它可以是现有活动学会维护、共享能力形成新的服务路径、旧活动重组后承担维护，也可以是新组织进入；不必预设一个从过程之外加入的独立主体。当前 x 只是固定总量中的实践比例。直接写 x←x+ε，会在没有说明的情况下混合旧做法转化、替代和总活动量增加。
+
+所需的下一实际接口因此是：**形成了什么可执行的维护活动，它怎样获得参与和继续的关系，其产出与耗用怎样改变被表示的实践比例与责任效力。** 共同支持必须跨形成与市场运行持续记账；形成失败、无法接入及接入后不能持续是不同失败。现有形成定理提供候选输入与约束；本轮没有虚称已经正式拼接，亦没有免费添加维护者。
+
+## 36. 反审、证据范围与新的停点
+
+肯定结果与两类反例均已实际编译：部分纠正包括临界点的普遍有限到达；超临界有宽度的未到达域；临界点任意小持续误差下的正初态反例。另有原完整守卫、支持界与撤除后接续的正式组合。作者反审核对了参数范围、投影／完整历史、量词、比例域及未表示的进入，没有独立 agent 验收。
+
+这是一个**特定关系律的全正初态到达阈值**，不是全模型吸引盆面、所有参数的稳定性分类或整个生成理论的普遍相变定律。实际市场若出现离散退出、维护活动不降低所设影响、纠正无法改变 β，或误差持续超出所表示范围，相应的保证必须修改；不能用“元吸引子”保护模型免于这些反例。
+
+对生成性对齐的新增解释是：应评价一种发展是否保留并形成能改善后续选择条件的真实活动，同时核实纠正面对偏差和转变支出的承受范围。这里复用 G0/J/E 的正面方向与损失比较，不从动力学阈值推出任意现存组织必须保存、或机构能力必须单向增减。常规反馈与控制理论同样能够表达这些条件结果，术语并不取得解释独占权。
+
+本轮把“完全阻断才足够”放宽为精确的无误差部分纠正边界，临界等号已经解决，不再列为待做；形成机制本身也直接复用。**当前具体停点是形成输出到市场作用的真实接口，以及给定偏差、支持和初态下的稳健转变范围。** 后续应补这个接口或取得足以改变对应的市场证据，不能再重复已有的有限到达与安全交接。
+
+English: In the original rational family, for 0≤beta≤3/4 and zero additional quality error, every physical positive renewal seed reaches the old protection rectangle in finite time iff beta≤5/12. The equality case works because transient adverse selection leaves a positive share that changes subsequent influence and eventually generates a strictly positive selection gap. A new full-state coupling reuses the prior stock cover and original guarded protection after withdrawal. Above the threshold, an inherited low box remains unable to reach protection; at the threshold, arbitrarily small constant adverse errors admit positive fixed-state obstructions. Twenty-six new theorems / 31 declaration audits pass, with 123 inherited theorems / 153 audits separately rebuilt. This is an exact universal-arrival boundary for the supplied law, not a full basin, random-noise stability theorem or empirical phase threshold. Existing formation results were inspected and credited, but their material and regulatory outputs have not yet been mapped by a verified, support-preserving interface to market participation or an actual change in beta. Normative use continues under G0/J/E.
+
+<a id="finite-support-obstruction"></a>
+## 37. 接续问题：恢复发生前，关系能否继续
+
+2026-10-09，AI-authored continuation。复用 `market-supported-finite-transition`、`market-protected-continuation`，并保留 `market-partial-correction-boundary` 的精确无误差边界。按 [Theory of Becoming 的新优先方向](../../../../sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md)，本轮解释同一活动怎样同时改变其实践组成及必要支持，直至一种组织方式不能继续；没有先给这种变化伦理判决。
+
+Exact delta: 前轮已有“每个正余量最终可恢复”“不存在统一恢复时长”“有足够支持则实际交接”及一个来不及恢复的具体反例。本轮从单一反例推进到：**每个有限初始支持存量，都对应一个有正宽度的正维护余量区间，区间内所有状态在所有容许的责任通道调整下仍会有限失效。** 同一个正初态的运行投影最终到达保护区，而完整守卫历史先终止。基础的资源平衡限制已有 [foundation §6](../FOUNDATION.md#6-support-limits-and-timely-correction)，不把它重新命名为原创发现。新增内容是从原市场的有限增长速度导出低维护期，再正式接回原支持消耗及终止守卫，并量化所有时变纠正。
+
+Supplied premises: 保留原 `State`、维护比例更新、支持更新、支持底线5及原 `guardedStep`。β与责任误差可以逐期变化；q由原clip保持在[0,1]。支持冲击逐期非负，没有直接注入支持、免费生成维护活动、改变学习／扩展速度或切换生产组织。这个控制范围可以容纳已实现的反馈策略，因为每条反馈历史会产生一条这样的参数序列；本轮并不解释策略的形成和授权。
+
+Evidence / interface: [FiniteSupportObstruction](../../../../experiments/market-generativity/formal/FiniteSupportObstruction.lean) 的 `next_share_upper` 正式消费前轮 `share_growth_upper`，`projected_recovery_and_actual_failure` 消费 `positive_seed_finite_landing`，`zero_schedule_is_original_pulse` 把新增时变完整历史与原β=0完整守卫历史对齐。`same_stock_can_support_high_seed` 使用原保护证书证明相同支持存量可以维持不同的已充分维护关系。登记为 `market-finite-support-obstruction`；既有结果没有被撤回或重复计数。
+
+## 38. 一个明确的不能及时恢复区间
+
+原关系律限制了维护活动扩展的最快速度。无论责任通道怎样变化，只要初始x、q物理有效，
+
+\[
+x_{t+1}\le\tfrac32x_t,\qquad x_t\le x_0(\tfrac32)^t.
+\]
+
+对给定有限支持C₀≥5，取整数N>C₀−5，并令
+
+\[
+\delta_N=\frac16(\tfrac23)^N>0.
+\]
+
+若0<x₀≤δ_N，则所有t≤N均有x_t≤1/6。此时原支持关系给出
+
+\[
+C_{t+1}=\max\{0,\ 0.9C_t+3x_t-1-\kappa_t\},\qquad \kappa_t\ge0.
+\]
+
+只要C_t≥5，便有C_{t+1}≤C_t−1。若完整历史能运行到N且仍满足每步底线，必要条件就是C₀≥5+N，与N的选择矛盾。`support_required_for_small_prefix` 检查该必要条件；`every_finite_stock_has_obstructed_positive_seeds` 检查对每个有限存量及整个正区间的全称结论。`small_seed_prefix_has_no_landing` 另检查失效前的这段历史尚未进入原保护区；不能把已成功恢复后的别种失效混进结论。
+
+这个δ_N是**可证明失效区间的保守内界**，不是精确可恢复域的分界；不在区间内也可能失败。本轮没有反推“区间之外均可恢复”，也没有计算最优支持需求。步数尚未标定为现实时间。
+
+更强的比较在同一已给规律内成立：取q₀=1、β始终为0、无额外误差和耗用，旧运行投影仍由已有定理保证有限进入保护区；完整历史却因支持先失效而终止。因此问题不能全归于认识错误、纠正启动太慢或操纵没有被制止。即便责任效力从开始就是最佳，**活动关系的实际转化仍需经历历史，而其继续条件可以先被耗尽。** 本轮沿用已有利润／选择机制，并未把商业增长当作共同生成能力增长。
+
+## 39. 对退化边界、元吸引子与 Becoming 的含义
+
+这里有两个分别需要检查的条件：运行规律是否把某初态带向维护占优的区域，以及同一完整关系是否足以实现整段转变。前一条件成立，后一条件仍可失败。β的临界值只回答前一类中的特定无误差普遍到达问题。**因此，元吸引子的运行域还要受实际可继续域限制；不能把底线失效后的数学迭代当作原组织仍在运行。** 这不另设一个独立于活动的“资源世界”：同一步活动同时改变x与C，前者的有限形成速度与后者的净消耗共同产生终止。
+
+这也不是把所有失效都叫作参数相变。新反例可在β=0固定、q=1且无额外误差时发生；已证内容是越过组织继续的底线，并未证明吸引子分岔或新的相变普遍律。[Ashwin等的原始论文摘要及版本页](https://arxiv.org/abs/1103.0169v5)已区分分岔、噪声及速率相关tipping，并指出静态分岔不是全部失稳的必要条件；本轮只核读该摘要与版本说明，不声称重验其证明。我们的支持失效定理没有研究随驱动速率变化的吸引子跟踪，故不据此直接标注为其R-tipping。
+
+对 Theory of Becoming 的正面推进是一个具体的同一历史解释：**一种组织的形成方向可以有利于恢复，却仍因形成速度和支持更新的关系而消失。** 生成、维持与消失无需分别加上善、恶或趋向改善的伦理前提。但“无需规范前提”不等于“无需实质前提”：原有增长律、支持律、底线及实际对应仍然承担解释工作。本轮没有从把全部结果放入一个空间，推出这些具体规律为什么必须如此；强零附加实质公理目标仍保持原义和未完成状态。
+
+`none`只表示原模型指定的市场组织无法继续，未表示生命、主体或整个现实从此不存在。新的外部供给、休眠、改变依存、实际形成替代活动或重组组织，都可能改变所证明的条件。它们属于同一更广变化过程，须说明怎样真实发生并接续原来的关系；不能靠抹掉已发生损失或免费重置账户来表示。
+
+## 40. 反审、验证与下一连接
+
+肯定解释与反例一起保留：相同有限C₀≥5在高维护初态(1,1,0)可由旧保护证书永续；有限支持本身并不意味着必然失败。新增失败区间同时允许任意初始q∈[0,1]和任意时变β／误差，故其结论不依赖挑选一个坏的纠正策略。参数自由度仅限所列通道，不能据此宣布任何技术、组织或供给创新都救不回来。固定比例更新不含离散进入；原操作底线仍是明示建模输入。
+
+[源绑定回执](../../../../experiments/market-generativity/formal/finite-support-verification.json)记录 Lean 4.29.1 对17项新定理／22项新声明审计的实际检查；123项继承定理／153项审计另列。原支持平衡文字与tipping摘要是背景对照，不是新Lean证明的导入。作者反审核对量词、控制范围、同一初态、支持底线、实际／投影历史与终止语义；没有独立agent验收或新增市场观察。
+
+这一轮完成了有限支持下的普遍阻碍区间，不再把“存在来不及恢复的情况”留作待做。下一确切连接是：**由实际形成的供给、依存转化或新维护路径，改变本轮的净损耗或扩展速度，并证明这段改变本身也来得及发生。** 既有形成机制、部分纠正和保护证书直接复用；还需检查形成输出怎样真正进入这些市场关系。更高层的剩余任务仍是这些构成关系在所主张范围内的根据，不能用又一个条件定理冒称无公理奠基。
+
+English: For every finite initial essential stock C₀≥5, choose an integer N>C₀−5. In the existing market, every positive renewal seed x₀≤(2/3)^N/6 fails by N under any time-varying beta and quality-error sequence and any nonnegative stock shocks. The share and stock laws remain unchanged, with no direct entry or stock injection. Share growth is at most 3/2 per step, so renewal remains at most 1/6 through N; each still-supported step then loses at least one unit. Survival would require C₀≥5+N. This is a conservative certified obstruction region, not an exact viability boundary. The same seed with initially perfect quality, zero beta, zero error and zero extra cost eventually reaches protection in the old operating projection while its actual full guarded history terminates. Conversely, the same finite stock supports a high-renewal state indefinitely under the old certificate. Seventeen new theorems / 22 audits and 123 inherited theorems / 153 audits pass. The new connection reuses the prior growth bound and finite-arrival theorem; generic support balance was already known. Failure concerns this organization, not cessation of all reality. It can occur with fixed operating parameters and proves no bifurcation or R-tipping classification. The contribution to Becoming explains formation, maintenance and ending within one history without normative premises, while retaining substantive laws and correspondence; it does not establish zero added substantive axioms. The remaining concrete bridge is an actually formed change in provision, dependence or renewal expansion whose own formation can occur before support fails.
+
+<a id="formed-independent-continuation"></a>
+## 41. 接续：实际形成一种不必等待原控制关系的接续
+
+2026-10-09。AI-authored theoretical and evidence continuation. Result(s): `market-finite-support-obstruction`、`market-supported-finite-transition`、`effective-capacity-and-eventual-reachability`；另直接信用未迁移的 [FormedSelection / FormationRoot](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationRoot.lean)、[CommonOrganization](../../../../experiments/market-generativity/meta-attractor/CommonOrganization.lean)及[实际接触形成—生产—再生](../root-foundation/DIRECT-PORT-RENEWAL.md)。已有形成、共同记账和生产后恢复条件的构造不重开，亦不把各自的能量单位与市场C强行等同。
+
+Delta: 本轮把“实际改组是否能打开另一接续”接到一个公开历史实例：LibreOffice在原共同开发活动中分化出新的协调、构建、发布及分发关系，过渡支持先于新基金会法人完成。新增的是**可追溯的组织形成与产品接入对应**，不新增数学定理或宣称另发明一般开源分支机制。登记为 `formed-software-continuation`，范围为历史机制评估。
+
+Supplied premises / correspondence: 同一活动原已包含代码、开发经验、翻译、测试、发布和使用等关系。新的组织身份由这些关系的重新协调逐渐获得实际作用，不从一个完备独立主体加一个外部资源箱开始。代码、品牌、工作时间、资金和接入渠道有不同继续条件；不预设它们可以统一计价、复制或互换。
+
+Evidence / boundary / integration: [七份原始网页及来源清单](../../../../sources/market-generativity/libreoffice-formation/README.md)，包含TDF当时声明、Ubuntu的独立分发声明和Apache的另一接续记录。[字节与内容核对](../../../../experiments/market-generativity/formation-correspondence/libreoffice-source-checks.json)不等于财务审计、法律认证、代码执行或因果效果识别。没有把此历史套入原有理模型求β、x或C，也没有证明它从该模型的已证失败区间脱出。原定理保持原范围。
+
+## 42. 不是从零输入一个新的经营者
+
+可核对的形成顺序如下。这里的“先后”只记录已经发布的里程碑，不把它自动解释为每条因果箭头均已独立识别。
+
+| 阶段 | 原始材料所支持的事实 | 实际接续意义与限制 |
+|---|---|---|
+| 2010-09-28宣布与beta | [TDF原始公告](https://listarchives.documentfoundation.org/www/announce/msg00000.html)说明原社区成员、项目负责人和语言项目管理者参与新的协调；beta已可取得，旧品牌是否转交尚待决定。 | 原有工作参与形成新的发布关系。没有等到旧品牌转交才提供另一名称的软件；这不证明品牌或许可在任意领域均无关。 |
+| 2011-01-25稳定版 | [首个稳定版公告](https://blog.documentfoundation.org/blog/2011/01/25/the-document-foundation-launches-libreoffice-3-3/)报告已经建立独立开发流程，并说明安装包整理减小分发所需体积。 | 产出与发布过程都有实际改变，不只是宣布独立；这里未重新编译历史版本或独立复测体积。 |
+| 2011-02至03支持分化 | [筹款说明](https://blog.documentfoundation.org/blog/2011/02/25/thousands-of-donors-contribute-e50000-in-just-eight-days-to-the-document-foundation/)将基金本金与后续日常运行捐款区别处理；[后续版本公告](https://blog.documentfoundation.org/blog/2011/03/22/libreoffice-3-3-2-is-now-available/)列明新增资金拟用于基础设施等事项。 | 资金取得及其用途限制属于同一形成史；计划用途不是已经核实的支出。 |
+| 2011-03-31进入另一分发关系 | [Ubuntu 11.04 Beta 1公告](https://lists.ubuntu.com/archives/ubuntu-announce/2011-March/000143.html)列LibreOffice 3.3.2为默认办公套件。 | 另一组织的发行声明支持“产出进入实际分发”这一接口，范围仅此beta；不推断全部用户迁移或软件整体优越。 |
+| 2012-02-17法人完成 | [2月20日公告](https://blog.documentfoundation.org/blog/2012/02/20/the-document-foundation-officially-incorporated-in-berlin-germany/)报告2月17日正式成立，并说明原有协会此前承担过渡法人角色。 | 新法人晚于实际发布与分发；过渡期间有既存承担关系，不是法律、资金和组织条件都凭空缺席。 |
+
+因此，此处可说明的生产者—使用者接口是**已有共同工作经过新协调形成可发布的软件版本 → Ubuntu的发行过程接入该版本**。过渡协会与后续基金会提供了不同阶段的组织承担。这里的“生产者”和“使用者”是具体协作中的分化角色，不是先验独立的本体。源代码、劳动投入、公共分发与组织形式分别保持其实际关系。
+
+这给“新维护活动进入”的解释增加了内容：一个新名称下的活动，在此前没有独立市场份额，不意味着更广过程没有代码、经验、协作或形成能力。当前x=0的无进入结论，针对原固定比例更新律；若用新组织尚未存在来断定一切生成条件都为零，便发生了对应错误。已有`effective-capacity-and-eventual-reachability`区分未完成准备、已形成能力与实际行使；本轮提供不同范围的历史对应，未添加形式适配。
+
+## 43. 理论推进：形成可以由过渡关系支撑，而不必等待最终组织完成
+
+**本例的关键不是“有资源所以成功”，而是已有工作和部分新关系已经能承担下一段活动。** 新法人尚未完成，开发与发布已发生；产品已接入新的发行关系，长期组织形式仍在继续形成。既有协会的承担使这段未完成的制度变迁具有实际承接者。由此应检验形成路径的每一阶段已经能做什么、由哪些关系承接，而不能一律设置“最终机构全部完成后才开始生产”的顺序。
+
+这也不证明组织会自动自我供养。捐助来自实际参与者，代码与经验来自既有历史，分发需要另一组织的活动。它们在某个企业或模型边界之外，不因此在整个生成现实之外。需要解释其怎样接入，同时保留原模型没有表达它们的事实。没有哪笔捐款被解释为无源产生。
+
+**另一项修正是：支持必须按可实际使用的关系辨认。** 当时公告把已筹基金本金作为受限制的资产，并将后续捐款指向运行。故不能将筹资总额直接当成当前可消耗的C，更不能把代码副本、开发时间、商标和分发准入都折成一个无条件可换的余额。历史说明了某些支持确已取得，没有给出完整逐期账户或“离失败还剩几天”的测量。
+
+由此得到一个可检验的工作主张：**实际改组能力取决于既有活动能否在变更部分依存关系时，保留、承接或重建下一阶段所需的关键关系。** 本例中旧品牌没有成为发布前的必要交接；代码、协作、构建和分发则有具体承接。不是“保持所有旧关系”，也不是只留下抽象功能名称。哪些关系可以换、哪些必须继续、换接怎样完成，要由目标活动与实际历史说明。
+
+这推进 Theory of Becoming 的关系解释：组织身份本身可以在接续中形成，生成某些新关系也可以减少对另一些旧关系的依赖。结果未必是在同一固定总体里重新分配份额；研究对象的组织方式和边界也在变化。这个解释仍以可核对的共同工作为根据，不从观察者重新命名推出实际变化，更不因包含这些变化而宣称实质规律已无公理奠基。
+
+## 44. 退化的第三个边界：是否仍有能够形成的改组路径
+
+前轮分别回答运行趋向和实际支持。本轮增加第三个分析问题：**当前的活动能否形成一条不同依存、控制或生产安排的接续？** 三者是同一历史中的不同问题，不是三个独立世界。原规律下的失败区间，不自动排除原模型未表示的实际改组；一种想得到的改组，也不自动成为来得及实施的路径。
+
+对元吸引子，研究靶子可以更准确：一个选择机制若反复产生相似后果，需要查它怎样继续控制后续改变的条件；若共同活动已能在部分依存改变后继续生产和修订，就应承认旧控制关系的覆盖有所改变，而不能把一切后继都重命名为同一个退化吸引子。反过来，源码可见、宣告开放或捐款到账，分别都不足以证明整条接续已成立。构建、维护或分发若仍受阻，断点应被保留。
+
+这还不是普遍相变判据。本例不测量盆界、转变概率或最低必要支持，也不认定Oracle时期的全部活动已经满足前文退化诊断。它提供的是实际形成另一组织接续的正面材料。关于多大控制集中会封闭改组、哪些损失不可恢复，仍需具体机制与反例；不能倒过来以最终成功定义初始“可改组”，再把这叫作预测。
+
+在G0/J/E的已完成对齐方向下，新增的实践含义是检查**有价值的工作与生活条件能否获得有效承接和修订**，包括必要时改变承载它们的机构。保持原机构、削弱原机构或创建新机构，都需按实际生成与损失比较。独立性和分支数量本身并不获得无条件的伦理优先。
+
+## 45. 实质反审：保留另一接续、真实成本与解释范围
+
+1. **是不是成功者叙事？** 当前只有一个选定形成史，没有估计分支成功率或未成功项目的分布。TDF关于人数、资金、开发流程和法人角色的陈述保持当事方身份；Ubuntu只独立支持分发接口。宣传中关于唯一优越、永久安全或参与者动机的判断不纳入结论。
+2. **是不是复制代码就完成独立？** 不是。新流程、临时承担、资金取得与分发均需具体关系；其中许多由先前活动提供。缺少运维、受限数据或不可转移依存可以阻断另一案例。新法人之前已有发布，反驳的是“所有案例必须等待最终机构完整成立”这一笼统顺序，而非一切机构要求。
+3. **旧项目是否因此消失？** [Apache自己的2012年公告](https://news.apache.org/foundation/entry/the_apache_software_foundation_announces35)记录OpenOffice在其治理下继续并发布3.4，也说明迁移时替换某些库的工作。另一路继续及重构成本保留，不能把故事写成单一胜者取代一切旧活动。
+4. **是不是纯粹市场自我纠正？** 此历史包含企业支持、志愿工作、协会、捐赠和公共分发关系。它显示原有共同活动可以改组，不证明利润选择自动修复外部性，也不建立所有损失已经补偿。
+5. **生成理论是否拥有独占解释？** 开源项目分支、软件维护和组织接续的常规解释已经能表达这些机制，应获信用。本轮贡献是在同一关系史中说明原失败定理的适用边界，保留真实生产接口与组织形成，未证明对所有理论的预测优势。
+6. **什么会推翻或缩小判断？** 若版本声明不足以代表当时可取得的软件，发行声明实际没有接入该版本，或过渡承担陈述被档案否定，应撤回相应接口。若其他案例的关键状态、权限或供给不能被承接，应收窄改组范围；不能给它们免费赋予本例条件。没有逐期支持账目，就不报告已测得避免耗尽的临界时刻。
+
+## 46. 完成范围与下一处确切缺口
+
+完成：核对七份一手声明、保留原始字节与来源，建立发布—分发的可追溯连接，并由过渡组织与基金用途区分修正“先等完整新机构”“用总钱数代替支持”“新组织无份额即无形成条件”的解释。原固定律失败定理、有限支持交接和已有形成机制均保留。**本轮没有新数学命题或Lean重跑**；来源核对通过，不冒称独立agent验收或完整市场实证。
+
+下一处缺口已缩窄：对一项正在承受退化的具体共同活动，找出实际可复用的工作、可替换的依存和不能中断的功能，验证改组的中间阶段由谁／什么承接，以及真实时间与支持是否足够。若要重新进入原数学模型，需要先由这类实际关系给出跨形成和运行的单位、速率与边界，再检查同一历史的正式组合。仅增加x、降低β或将全部捐款设为C仍不完成这个接口。普遍的强零附加实质公理目标保持原义。
+
+English: The new assessment follows one actual organizational continuation, rather than identifying an old material-model output with a market share. TDF's contemporary statements describe a beta, an independent stable release, distinct capital and operating support, and an interim association before the new foundation's incorporation. Ubuntu's own beta announcement independently supports the product-to-distribution connection. Apache's subsequent release retains another continuation and reconstruction costs. The theoretical inference is scoped: partially reorganized activity can already operate under inherited and interim supports while its lasting institutional form is still being made. A new organization's absence is not absence of all formative relations; an aggregate funding total is not interchangeable usable support. The selected history neither supplies a complete financial trajectory nor identifies a market threshold, general success rate or universally sufficient fork mechanism. Existing conditional failure and formation results remain valid; no new mathematical proof is claimed. The remaining interface is to identify actual reusable work, replaceable dependencies, uninterrupted functions and the support for each intermediate stage of a specified transformation.
+
+
+<a id="continuation-with-retained-control"></a>
+## 47. 接续：完成适应以后，什么依存仍在起作用
+
+2026-10-09。AI-authored continuation. Result(s): `formed-software-continuation`、`market-finite-support-obstruction`、`market-supported-finite-transition`。复用§3已经核对的Reddit／Apollo事件与§§41–46的LibreOffice形成史，不把旧事件再登记成独立成果。
+
+Delta: 以同一轮API规则变化中的Narwhal接续限制过强的退出叙事，并把**新的运行安排怎样保留原准入依存、影响进一步承诺**接到可核对的作者陈述。修订同一`formed-software-continuation`评估；无新增数学。
+
+Supplied premises / correspondence: 从共同内容、阅读、客户端开发、服务器维护、分发与订阅活动开始。其中形成不同的接入权限、规则制定位置与服务承担；不预设彼此独立的价值所有者再分配收益。Apollo与Narwhal有不同订阅史、开发状态、使用规模和协商过程，不能把同一平台政策当成相同初始条件。
+
+Evidence / boundary / integration: [来源与表示范围](../../../../sources/market-generativity/api-transition/README.md)新增核读五篇日期化开发者帖，并复核§3使用的运营方说明和Apollo主页。保留两份原始HTML、五份网页读取文本及日期检索响应，分别标记；不是同期冻结快照，不能排除后期编辑。新增接口是**平台持续计费及未来改价顾虑 → 客户端选择月度而非年度承诺**。这是开发者明示理由的对应，不是完整因果识别，更未证明客户端变化反过来强化平台选择的闭环。
+
+## 48. 形成途中：计划、过渡安排、发布各说明什么
+
+| 日期与声明 | 已有工作和公开缺口 | 后续材料能确认到哪里 |
+|---|---|---|
+| Apollo，[6月8日关闭说明](https://www.reddit.com/r/apolloapp/comments/144f6xm/apollo_will_close_down_on_june_30th_reddits/) | 已有程序与使用关系；作者指出降低调用、改计费、迁移用户、测试及应用审核需要时间。原年订阅已经收取，新成本先于这些承担到期，单改新用户价格不能直接覆盖旧承担。 | [主页](https://apolloapp.io/)报告6月30日停止服务。支持既定接续实际结束；不证明所有救助、重写或其他服务都不可能。人数、成本和所需时间仍是作者估计。 |
+| Narwhal，[6月8日未完成计划](https://www.reddit.com/r/getnarwhal/comments/144pdom/update_on_narwhal_w_the_upcoming_reddit_api/) | 新版本已开发一段时间；作者说无法在7月1日前完成版本与订阅改造，正在请求更长过渡时间。 | 此时材料支持“关键安排尚未完成”，不能由后来成功倒填成当时已经保证可行。 |
+| Narwhal，[6月27日接续计划](https://www.reddit.com/r/getnarwhal/comments/14kt9wj/narwhal_is_not_going_anywhere_subscriptions_and/) | 宣布7月1日继续运行，在随后数月加入订阅；仍在确定用量与价格安排。 | Reddit的[6月30日更新说明](https://redditinc.com/news/apifacts)也列出它继续接入的计划。双方公开认可这一接续方向；没有公开完整延期合同、费用豁免或逐期账目。 |
+| Narwhal，[9月27日发布](https://www.reddit.com/r/narwhalapp/comments/16tqo4f/narwhal_2_is_finally_here_subscription_details/) | 宣布新版本推出，订阅随后启用。 | 为“未完成改造后来获得发布”提供里程碑；不认证每一天无中断、所有人成功迁移或已经盈利。该页已链接10月修订，不能把后加内容作9月预测。 |
+| Narwhal，[10月9日方案](https://www.reddit.com/r/narwhalapp/comments/174206m/finalized_subscription_plan_for_launch_details/) | 明确月订阅；持续API成本使其不提供永久解锁，对未来API涨价的顾虑使其暂不提供年付。 | 新运行安排仍回应同一平台的持续条件与将来变更；没有材料表明平台定价控制已经交由客户端或共同修订。 |
+
+这些日期不提供“一样困难而唯独某人更努力”的解释，也不足以估计多给若干天的因果效果。Narwhal的新版本已有开发积累，Apollo有不同的旧订阅承担；未知协商内容必须保留。§3中的收入数据仍不参与本次机制识别。
+
+从形成前作判断，应把**已在运行的条件、有执行根据的承接安排、仅有公开计划或尚待协商／构造的条件**分别标出。6月8日的Narwhal材料尚未补齐过渡；6月27日多了一项接续声明；9月再有发布。公开声明不能直接充当已核实的合同或运行记录。证据随实际形成增多，不能把“未知”当成“不可能”，也不能把申请中的安排当成已取得。当前材料是事后核读日期化声明，不是本研究事先作出并验证的预测。
+
+## 49. 新连接：规则变动进入了进一步承诺的形成
+
+**现有技术能力并不独自给出跨规则变化的接续。** Apollo的说明具体列出了已收费的年订阅和需要逐步完成的改造。本文不替它认证所有金额或断言任何其他选择都不可行；已足以修正“只要最后的订阅价格能够覆盖成本，转变就已解决”的静态叙事。当前工作要承担此前形成的服务关系，未来方案也需要开发、许可、分发和使用者实际更新才能生效。
+
+Narwhal提供了更进一步的变化：旧运行没有在共同公告日期一概终止，新版本后来推出；与此同时，作者因担心未来API调价而选择暂不提供年付。**平台对持续接入条件的影响，进入了客户端怎样向使用者作承诺的规则。** 这项对应来自明示理由，不需要把资金、信任和权限折成同一标量。
+
+这一观察比“改价导致某应用退出”多接通了一段：一条使用关系可以继续，同时其后续承诺被重新安排。不得将Narwhal的新月订阅与Apollo的旧年订阅合成同一主体的前后账；对比的只是前者明确回应的风险与后者报告的既有承担。费用合理性、用户可承受性和旧损失是否获承接仍需独立比较。
+
+它也收窄了“边运行边形成”的解释。部分形成确实可能承接活动，但要看承接的是哪些功能、条件延续到什么时候，以及后来谁仍能改变它们。一次获得接续，不等于已取得持续修订准入条件的权能。开放源代码、保住客户或完成新版本各能有所贡献，都不能单独回答这个问题。
+
+## 50. 元吸引子与相变：先辨明改变发生在哪段关系
+
+这里可区分三种有实际内容、却不能互相代替的变化：
+
+1. **在原准入关系中改造运行。** Narwhal调整版本和订阅，继续通过Reddit API工作。它限制了“一切第三方在该日都必然退出”的判断，但不足以说明原准入控制消失。
+2. **替换某项原有依存。** LibreOffice已有材料显示新名称与发布安排无需等待旧品牌转交；其可发布版本进入另一发行过程。该范围内的替换有证据，不能扩成摆脱一切许可、资金、维护或分发条件。
+3. **改变后续改组条件的控制。** 需要进一步证据表明有关条件可由什么过程修订、谁能使修订发生、哪些承接能够在下一次变化时继续有效。现有两个案例没有完整证明这种控制得到持久重构。
+
+这不是组织进步的三个等级，也不判定继续依赖必然有害；依存可以承载有益协作。其作用是约束元吸引子解释：**若只看到活动换了一种形式继续，不能据此宣告决定进一步变化的关系也已改变。** 反过来，保留一种依存也不足以把一切后果归为同一个退化机制。必须指出具体损伤、返回或放大过程，以及实际未被覆盖的替代。
+
+因此，本案将“相变”问题推进到更可判别的层次：某客户端停止是一条实际路径的终止；另一个客户端换订阅后继续，是适应过程；有关准入和改组控制的持续重构，才可能支持更强的制度机制转变判断。**三者都不凭事件名称自动成为严格动力学相变。** 原有Lean结果的参数边界、吸引与有限支持阻碍保持其数学范围，本案没有校准其β、C或临界面。
+
+本轮只确认规则影响沿依存传入下一层承诺的一段对应。尚缺的是返回方向：新的收费、参与或退出怎样再改变平台继续维持／修改规则的能力和选择。没有这段证据，不把它写成已经识别的递归自我强化，更不把一个下游规则响应重新命名为完整meta-attractor定律。
+
+## 51. 实质反审与对齐含义
+
+**成本与服务仍是真实关系。** Reddit陈述基础设施与机会成本并保留工具和无障碍例外；不能因准入有控制者便判定收费错误。反过来，公司陈述没有核定其全部成本、过渡合理性或对受影响活动的责任。Narwhal的继续提供实际反例，既不能抹去Apollo的终止，也不能证明所有使用者损失已被替代。
+
+**作者解释和独立识别仍有距离。** “担心涨价所以不做年付”是被明确陈述的决策理由；没有检验其全部动机。平台认可接续计划不等于公开全部合同；发布不等于持续盈利。更多时间、不同旧订阅、开发成熟度、选择继续的意愿都可能有关，现有材料没有将它们分离。
+
+**成功与失败都不得吞并未知。** 宣告关闭不证明所有可设想路径皆失败；宣布继续不保证路径全部完成。一次后来成功也不允许将早期尚未取得的支持记为已有。从实际日期和承接关系出发，保留这些未知，比以结局定义“可行”更能约束理论。
+
+在G0/J/E下，规范要求进一步落实到**改变规则时，有价值活动的过渡和修订条件怎样获得实际承接**。评估应包括已有承担、有效通知内容、改造次序、过渡接入、可用替代和不能承受的损失。这里不制定脱离情境的统一最低通知天数，也不赋予每家客户端永久经营权。值得保留的活动和必要改变都须有根据；把所有适应负担直接留给承受者，不会仅因其后来成功适应就自动得到正当化。
+
+## 52. 此次完成与下一处缺口
+
+完成：在原软件接续评估内加入一个仍受原准入影响的继续案例，保留一条终止路径，建立平台改价顾虑进入客户端承诺期限的公开理由对应；以日期化的未完成、承接计划与发布限制后见之明。它修正“继续即摆脱控制”及“统一公告日期即全部活动的终止时点”的过强判断，不新增独立成果数或数学证明。
+
+下一缺口有两条准确范围：①解释实际可用的过渡安排及旧承担，须取得更完整的公开契约、费用与实施记录，当前不能求最低所需时间；②检验完整元吸引子闭环，须追踪下游适应／退出怎样反馈到规则维持和进一步修改。不能把未公开的优惠、现金流或政治动机填进空白。既有条件数学、规范方向与强零附加实质公理目标各保持原范围。
+
+English: The same software-continuation assessment now incorporates five dated developer posts and rereads two previously used statements. Apollo's author reports inherited annual commitments and unfinished technical/billing migration; Narwhal reports an incomplete transition, later continued-access plans, a release, and monthly billing chosen partly because of concern about future API increases. These are differentiated histories, not matched units or an audited transition ledger. Dated current pages constrain retrospective interpretation but do not provide immutable contemporaneous snapshots or prospective prediction. The new connection is specific: continuing access conditions enter the formation of a downstream commitment horizon. Operational adaptation therefore does not by itself establish changed control over later adaptation. Narwhal limits universal-exit narratives, while its retained API dependence limits claims that survival establishes escape. LibreOffice's specific replacement of old-brand/release dependence retains its narrower scope. A full recursive mechanism still needs the return path from downstream adaptation to the ability and selection of platform rule changes. No universal phase boundary, numerical calibration, new mathematics or axiom-free foundation is established.

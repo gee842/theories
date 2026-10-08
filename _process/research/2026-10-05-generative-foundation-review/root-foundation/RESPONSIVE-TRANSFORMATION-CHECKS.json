@@ -1,0 +1,64 @@
+{
+  "status": "passed",
+  "scope": "Interpretive revision, local links, owned chain rows and unchanged proof binding; no new theorem or full-table acceptance",
+  "checked_local_links": 42,
+  "result_id": "versioned-request-completion",
+  "new_theorems": 0,
+  "owned_fingerprints": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PLURAL-SYSTEMS-AND-CORRECTION.md": "ac7eef13029afe616c8360492614e5aa2c886e1ab112d11edd721affd799293d",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/VERSIONED-CORRECTION-INTEGRATION.md": "d3549390f16028f5ceb3381584eb53ed8b7c56d987c45f62d7b7a6f9e44cfa88",
+    "sources/15-codex-theory-conversations/2026-10-09-responsive-transformation.md": "becfe13260f7ac17537421897bd8b412cf1f54c6640e474ba046b4d9dec329a1"
+  },
+  "scoped_rows": [
+    "C33",
+    "M23",
+    "F29"
+  ],
+  "unrelated_entries_preserved_at_edit": 91,
+  "record_sha256": "c12f481883c642cb7568b7ec851acc0dbef8c9e9080d93ee4a599f8848320069",
+  "prior_proof_binding_unchanged": true,
+  "scoped_registry_check": "passed for versioned-request-completion and acquired-revision-of-pending-task; global dependency metadata checked",
+  "global_registry_note": "make research-render rendered healthy records; make research-check reports two unrelated stale records, classification-robust-generative-comparison and organizational-formation-from-generative-comparison, for changed generative-alignment-priority source. No unrelated hash was refreshed.",
+  "shared_chain_pending": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md",
+      "sources/15-codex-theory-conversations/2026-10-08-finish-alignment-fruits.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md",
+      "theories/shengsheng-buxi-generative-existence/results/records/acquired-binding-compositional-use.json",
+      "sources/situated-recovery/heald-2021/README.md",
+      "theories/shengsheng-buxi-generative-existence/results/records/enacted-scene-binding.json",
+      "theories/shengsheng-buxi-generative-existence/results/records/market-supported-finite-transition.md",
+      "experiments/market-generativity/formal/README.md",
+      "theories/shengsheng-buxi-generative-existence/results/records/encounter-selection-and-revision.json",
+      "theories/shengsheng-buxi-generative-existence/results/records/market-partial-correction-boundary.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md"
+    ],
+    "removed_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "theories/meta-attractor/COMMON-ORGANIZATION.md"
+    ]
+  }
+}

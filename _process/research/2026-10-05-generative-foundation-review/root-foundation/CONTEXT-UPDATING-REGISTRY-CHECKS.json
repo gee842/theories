@@ -1,0 +1,117 @@
+{
+  "status": "passed-scoped",
+  "selected_record_check": {
+    "records": 68,
+    "selected_records": [
+      "context-sensitive-updating-correspondence",
+      "situated-recovery-empirical-correspondence"
+    ],
+    "errors": [],
+    "source_drift": [],
+    "unrelated_source_drift": [
+      {
+        "id": "acquired-binding-compositional-use",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      },
+      {
+        "id": "classification-robust-generative-comparison",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+        "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+        "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+      },
+      {
+        "id": "enacted-scene-binding",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      },
+      {
+        "id": "encounter-control-and-retention",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      },
+      {
+        "id": "encounter-selection-and-revision",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      },
+      {
+        "id": "naming-attention-coverage",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      },
+      {
+        "id": "organizational-formation-from-generative-comparison",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+        "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+        "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+      },
+      {
+        "id": "retrospective-source-binding",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      }
+    ],
+    "scope": "Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation."
+  },
+  "global_check": {
+    "errors": [],
+    "source_drift": [
+      {
+        "id": "acquired-binding-compositional-use",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      },
+      {
+        "id": "classification-robust-generative-comparison",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+        "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+        "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+      },
+      {
+        "id": "enacted-scene-binding",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      },
+      {
+        "id": "encounter-control-and-retention",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      },
+      {
+        "id": "encounter-selection-and-revision",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      },
+      {
+        "id": "naming-attention-coverage",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      },
+      {
+        "id": "organizational-formation-from-generative-comparison",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+        "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+        "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+      },
+      {
+        "id": "retrospective-source-binding",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      }
+    ]
+  },
+  "scope": "Owned empirical records pass. Global source drift belongs to concurrent acquired-segmentation and alignment-direction sources; not silently reconciled or certified."
+}

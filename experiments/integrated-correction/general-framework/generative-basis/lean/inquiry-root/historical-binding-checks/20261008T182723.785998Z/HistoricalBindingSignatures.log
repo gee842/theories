@@ -1,0 +1,120 @@
+Generative.HistoricalBinding.actual_history_retained (h : Generative.HistoricalBinding.History)
+  (family : List Generative.HistoricalBinding.History) (reversed : Bool)
+  (ps : List Generative.HistoricalBinding.Instruction) (included : h ∈ family) :
+  h ∈ Generative.HistoricalBinding.learn family (Generative.HistoricalBinding.acquire h reversed ps)
+Generative.HistoricalBinding.acquired_history_supplies_past_route (h : Generative.HistoricalBinding.History)
+  (family : List Generative.HistoricalBinding.History) (reversed : Bool)
+  (ps : List Generative.HistoricalBinding.Instruction) (date : Generative.HistoricalBinding.Moment)
+  (included : h ∈ family) :
+  Generative.HistoricalBinding.routeAt h date ∈
+    Generative.HistoricalBinding.routesAt family (Generative.HistoricalBinding.acquire h reversed ps) date
+Generative.HistoricalBinding.acquired_history_supplies_binding_coverage (base : Generative.AcquiredBinding.Lexicon)
+  (packets : List Generative.HistoricalBinding.TimedPacket) (h : Generative.HistoricalBinding.History)
+  (family : List Generative.HistoricalBinding.History) (reversed : Bool)
+  (ps : List Generative.HistoricalBinding.Instruction) (faults : List Generative.SourceReliance.Faults)
+  (form : List Generative.AcquiredSegmentation.Sound) (target : Bool)
+  (answer : Generative.CompositionalAcquisition.Expr) (included : h ∈ family)
+  (available : Generative.CompositionalAcquisition.Expr.atom target ∈ base.repertoire)
+  (realized :
+    ∀ (p : Generative.HistoricalBinding.TimedPacket),
+      p ∈ packets →
+        p.packet.form = form →
+          ∃ f,
+            f ∈ faults ∧
+              p.packet.reports =
+                Generative.SourceReliance.emit (Generative.HistoricalBinding.routeAt h p.date)
+                  { target := target, localFault := f.fst, commonFault := f.snd })
+  (resolved :
+    Generative.AcquiredBinding.resolve
+        (Generative.HistoricalBinding.bindingView base packets family
+          (Generative.HistoricalBinding.acquire h reversed ps) faults)
+        form =
+      some answer) :
+  answer = Generative.CompositionalAcquisition.Expr.atom target
+Generative.HistoricalBinding.later_deterioration_does_not_invalidate_earlier_content :
+  Generative.HistoricalBinding.deterioration ∈ Generative.HistoricalBinding.envelope 1 ∧
+    Generative.SourceReliance.emit Generative.HistoricalBinding.deterioration.naming
+          { target := true, localFault := false, commonFault := true } =
+        (true, true) ∧
+      Generative.HistoricalBinding.answer (Generative.HistoricalBinding.envelope 1)
+          (Generative.HistoricalBinding.acquire Generative.HistoricalBinding.deterioration false
+            Generative.HistoricalBinding.controls)
+          true =
+        some Generative.CompositionalAcquisition.p1
+Generative.HistoricalBinding.later_improvement_does_not_rehabilitate_earlier_false_reports :
+  Generative.HistoricalBinding.improvement ∈ Generative.HistoricalBinding.envelope 1 ∧
+    Generative.SourceReliance.emit Generative.HistoricalBinding.improvement.naming
+          { target := true, localFault := false, commonFault := true } =
+        (false, false) ∧
+      Generative.HistoricalBinding.answer (Generative.HistoricalBinding.envelope 1)
+          (Generative.HistoricalBinding.acquire Generative.HistoricalBinding.improvement false
+            Generative.HistoricalBinding.controls)
+          false =
+        some Generative.CompositionalAcquisition.p1
+Generative.HistoricalBinding.late_assessment_alone_leaves_the_old_binding_open :
+  Generative.HistoricalBinding.answer (Generative.HistoricalBinding.envelope 1)
+        (Generative.HistoricalBinding.acquire Generative.HistoricalBinding.improvement false
+          Generative.HistoricalBinding.lateControl)
+        false =
+      none ∧
+    Generative.HistoricalBinding.answer (Generative.HistoricalBinding.envelope 1)
+        (Generative.HistoricalBinding.acquire Generative.HistoricalBinding.deterioration false
+          Generative.HistoricalBinding.lateControl)
+        true =
+      none
+Generative.HistoricalBinding.known_change_without_location_does_not_settle_the_old_binding :
+  Generative.HistoricalBinding.answer (Generative.HistoricalBinding.envelope 1)
+        (Generative.HistoricalBinding.acquire Generative.HistoricalBinding.improvement false
+          Generative.HistoricalBinding.splitControls)
+        false =
+      none ∧
+    Generative.HistoricalBinding.answer (Generative.HistoricalBinding.envelope 1)
+        (Generative.HistoricalBinding.acquire Generative.HistoricalBinding.deterioration false
+          Generative.HistoricalBinding.splitControls)
+        true =
+      none
+Generative.HistoricalBinding.unknown_packet_disturbance_preserves_uncertainty :
+  Generative.AcquiredBinding.resolve
+      (Generative.HistoricalBinding.bindingView (Generative.AcquiredBinding.emptyBinding 32)
+        (Generative.HistoricalBinding.packet false) (Generative.HistoricalBinding.envelope 1)
+        (Generative.HistoricalBinding.acquire Generative.HistoricalBinding.improvement false
+          Generative.HistoricalBinding.controls)
+        Generative.SourceReliance.allFaults)
+      (Generative.AcquiredSegmentation.word true) =
+    none
+Generative.HistoricalBinding.omitted_temporary_change_defeats_backward_confidence :
+  ¬Generative.HistoricalBinding.concealedExcursion ∈ Generative.HistoricalBinding.envelope 1 ∧
+    Generative.HistoricalBinding.concealedExcursion ∈ Generative.HistoricalBinding.envelope 2 ∧
+      Generative.HistoricalBinding.acquire Generative.HistoricalBinding.concealedExcursion false
+            Generative.HistoricalBinding.controls =
+          Generative.HistoricalBinding.acquire Generative.HistoricalBinding.constantSecure false
+            Generative.HistoricalBinding.controls ∧
+        Generative.SourceReliance.emit Generative.HistoricalBinding.concealedExcursion.naming
+              { target := true, localFault := false, commonFault := true } =
+            Generative.SourceReliance.emit Generative.HistoricalBinding.constantSecure.naming
+              { target := false, localFault := false, commonFault := true } ∧
+          Generative.HistoricalBinding.answer (Generative.HistoricalBinding.envelope 1)
+                (Generative.HistoricalBinding.acquire Generative.HistoricalBinding.concealedExcursion false
+                  Generative.HistoricalBinding.controls)
+                false =
+              some Generative.CompositionalAcquisition.p0 ∧
+            Generative.HistoricalBinding.answer (Generative.HistoricalBinding.envelope 2)
+                (Generative.HistoricalBinding.acquire Generative.HistoricalBinding.concealedExcursion false
+                  Generative.HistoricalBinding.controls)
+                false =
+              none
+Generative.HistoricalBinding.same_current_assessment_can_support_different_past_bindings :
+  Generative.HistoricalBinding.acquire Generative.HistoricalBinding.improvement false
+        Generative.HistoricalBinding.lateControl =
+      Generative.HistoricalBinding.acquire Generative.HistoricalBinding.constantSecure false
+        Generative.HistoricalBinding.lateControl ∧
+    Generative.HistoricalBinding.answer (Generative.HistoricalBinding.envelope 1)
+          (Generative.HistoricalBinding.acquire Generative.HistoricalBinding.improvement false
+            Generative.HistoricalBinding.controls)
+          false =
+        some Generative.CompositionalAcquisition.p1 ∧
+      Generative.HistoricalBinding.answer (Generative.HistoricalBinding.envelope 1)
+          (Generative.HistoricalBinding.acquire Generative.HistoricalBinding.constantSecure false
+            Generative.HistoricalBinding.controls)
+          false =
+        some Generative.CompositionalAcquisition.p0

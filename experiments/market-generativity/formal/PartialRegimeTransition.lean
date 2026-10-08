@@ -201,7 +201,7 @@ theorem eventual_positive_gap (b : Rat) (s : OperatingState)
   grind
 
 theorem share_progress (b a delta : Rat) (s : OperatingState)
-    (hs : physical s) (ha : 0 ≤ a) (hd : 0 ≤ delta)
+    (hs : physical s) (_ha : 0 ≤ a) (hd : 0 ≤ delta)
     (hx : a ≤ s.1) (hxu : s.1 ≤ 7/8) (hq : 3/8+delta ≤ s.2.1) :
     s.1+a*delta/10 ≤ (family b s).1 := by
   have h1 := Rat.mul_le_mul_of_nonneg_right hx (show (0 : Rat) ≤ 1/8 by decide +kernel)
@@ -230,8 +230,8 @@ theorem eventual_high_share (b : Rat) (s : OperatingState)
         have hg := share_step_bounds (path b s n).1 (1/5) (4*((path b s n).2.1-3/8))
           hp.1 hp.2.1 (by decide +kernel) (by grind) (by have := hp.2.2.2.1; grind)
         change (7/8 : Rat) ≤ (family b (path b s n)).1
-        change (path b s n).1 ≤ (family b (path b s n)).1 at hg
-          -- hg is a pair; the explicit first projection is used below.
+        have hgl := hg.1
+        change (path b s n).1 ≤ (family b (path b s n)).1 at hgl
         grind)
   exact ⟨K,hall⟩
 
@@ -287,5 +287,161 @@ theorem exact_universal_landing_boundary (b : Rat) (hb0 : 0 ≤ b) (hb1 : b ≤ 
       exact False.elim (hnever n hn)
   · intro hb s hs hx
     exact partial_finite_landing b s hb0 hb hs hx
+
+theorem supercritical_low_box_never_lands (b : Rat) (hb : 5/12 < b) (hu : b ≤ 3/4) :
+    ∃ xd qd wd, LowCertificate (1/4) b 1 (3/8) xd qd wd ∧
+      ∀ s, LowBox 1 xd qd wd s → ∀ n, ¬ Landing (path b s n) := by
+  have hm : margin (1/4) b 1 (3/8) < 0 := by unfold margin; grind
+  obtain ⟨xd,qd,wd,hc⟩ := negative_margin_has_low_certificate (1/4) b 1 (3/8)
+    (by decide +kernel) (by grind) (by decide +kernel) (by decide +kernel)
+    (by decide +kernel) (by decide +kernel) hm
+  refine ⟨xd,qd,wd,hc,?_⟩
+  intro s hs n hl
+  have h := low_box_all_times (1/4) b 1 (1/5) 4 (1/4) (3/8) xd qd wd
+    (by decide +kernel) (by grind) (by grind) (by decide +kernel) (by decide +kernel)
+    (by decide +kernel) (by decide +kernel) (by decide +kernel)
+    (by decide +kernel) (by decide +kernel) hc s hs n
+  change LowBox 1 xd qd wd (path b s n) at h
+  have hqd := hc.2.2.2.1
+  unfold LowBox at h
+  unfold Landing at hl
+  grind
+
+def noisyCritical (e : Rat) (s : OperatingState) : OperatingState :=
+  (shareStep s.1 (1/5) (4*(s.2.1-3/8)),
+   qualityStep s.2.1 (1/4) (5/12) s.2.2 1 e,
+   influenceStep s.2.2 (1/4) 1 s.1)
+
+def noiseBalance (e : Rat) : OperatingState := (32*e/5,3/8,1-32*e/5)
+
+theorem critical_noise_fixed (e : Rat) (he0 : 0 < e) (he1 : e ≤ 5/64) :
+    physical (noiseBalance e) ∧ 0 < (noiseBalance e).1 ∧
+    noisyCritical e (noiseBalance e) = noiseBalance e ∧ ¬ Landing (noiseBalance e) := by
+  have hq : qualityStep (3/8) (1/4) (5/12) (1-32*e/5) 1 e = 3/8 := by
+    unfold qualityStep clip01
+    have hraw : (1-(1/4 : Rat)*1-(5/12)*(1-32*e/5))*(3/8)+(1/4)*1-e = 3/8 := by grind
+    rw [hraw]
+    decide +kernel
+  refine ⟨?_,?_,?_,?_⟩
+  · unfold physical noiseBalance; grind
+  · unfold noiseBalance; dsimp; grind
+  · unfold noisyCritical noiseBalance
+    rw [hq]
+    unfold shareStep influenceStep
+    congr 1 <;> grind
+  · unfold Landing noiseBalance; grind
+
+theorem arbitrarily_small_error_blocks_universal_landing (epsilon : Rat) (he : 0 < epsilon) :
+    ∃ e s, 0 < e ∧ e < epsilon ∧ physical s ∧ 0 < s.1 ∧
+      ∀ n, ¬ Landing (RegimeBoundary.history (noisyCritical e) s n) := by
+  let e := min (epsilon/2) (5/64)
+  have he0 : 0 < e := by
+    change 0 < min (epsilon/2) (5/64)
+    have hn : (0 : Rat) < 5/64 := by decide +kernel
+    grind
+  have he1 : e ≤ 5/64 := by dsimp [e]; grind
+  have heps : e < epsilon := by dsimp [e]; grind
+  have h := critical_noise_fixed e he0 he1
+  have hh : ∀ n, RegimeBoundary.history (noisyCritical e) (noiseBalance e) n = noiseBalance e := by
+    intro n
+    induction n with
+    | zero => rfl
+    | succ n ih => simp only [RegimeBoundary.history, ih]; exact h.2.2.1
+  exact ⟨e,noiseBalance e,he0,heps,h.1,h.2.1,by intro n; rw [hh]; exact h.2.2.2⟩
+
+def supportedStock (b cost : Rat) (s : OperatingState) (initial : Rat) : Nat → Rat
+  | 0 => initial
+  | n+1 => supportStep (supportedStock b cost s initial n) (1/10) 2 1 (path b s n).1 0 cost
+
+theorem partial_remaining_cover (b cost initial : Rat) (s : OperatingState) (N : Nat)
+    (hc : 0 ≤ cost) (hs : physical s) (hi : cover cost N ≤ initial) :
+    ∀ t, t ≤ N → cover cost (N-t) ≤ supportedStock b cost s initial t := by
+  intro t
+  induction t with
+  | zero => intro _; simpa only [Nat.sub_zero, supportedStock] using hi
+  | succ t ih =>
+    intro ht
+    have hprev := ih (by omega)
+    have hn : N-t = (N-(t+1))+1 := by omega
+    rw [hn] at hprev
+    exact cover_step cost _ _ (N-(t+1)) hc (path_physical b s hs t).1 hprev
+
+def partialParameters (b : Rat) : Parameters 1 := { exampleParameters with beta := b }
+
+theorem partial_coupling_step (b cost initial : Rat) (s : OperatingState) :
+    operatingStep (partialParameters b) (lift s initial) (pulseDisturbance cost) =
+      lift (family b s) (supportStep initial (1/10) 2 1 s.1 0 cost) := by
+  have hg := gap_correspondence 4 (3/8) s.2.1 (1/2) 2 (by decide +kernel)
+  have hi : installed 1 1 = 1 := by decide +kernel
+  have hb : reserveStep 1 1 1 3 = 1 := by decide +kernel
+  unfold operatingStep partialParameters exampleParameters lift family step pulseDisturbance
+  simp only [hg, hi, hb]
+
+theorem partial_coupling_history (b cost initial : Rat) (s : OperatingState) :
+    ∀ n, MarketGenerativity.history (partialParameters b) (lift s initial)
+      (fun _ => pulseDisturbance cost) n = lift (path b s n) (supportedStock b cost s initial n) := by
+  intro n
+  induction n with
+  | zero => rfl
+  | succ n ih =>
+    simp only [MarketGenerativity.history, ih, path, RegimeBoundary.history, supportedStock]
+    exact partial_coupling_step b cost _ _
+
+theorem partial_prefix_executes (b cost initial : Rat) (s : OperatingState) (N : Nat)
+    (hc : 0 ≤ cost) (hs : physical s) (hi : cover cost N ≤ initial) :
+    ∀ t, t ≤ N → guardedHistory (partialParameters b) exampleBounds (lift s initial)
+      (fun _ => pulseDisturbance cost) t =
+        some (MarketGenerativity.history (partialParameters b) (lift s initial)
+          (fun _ => pulseDisturbance cost) t) := by
+  have hfloor : ∀ t, t ≤ N → essentialReady (partialParameters b) exampleBounds
+      (MarketGenerativity.history (partialParameters b) (lift s initial) (fun _ => pulseDisturbance cost) t) := by
+    intro t ht j _
+    rw [partial_coupling_history]
+    have h := partial_remaining_cover b cost initial s N hc hs hi t ht
+    have h5 := cover_floor cost hc (N-t)
+    change 5 ≤ supportedStock b cost s initial t
+    grind
+  intro t
+  induction t with
+  | zero => intro _; rfl
+  | succ t ih =>
+    intro ht
+    have hp := ih (by omega)
+    have hf := hfloor t (by omega)
+    have hn := hfloor (t+1) ht
+    simp only [MarketGenerativity.history] at hn
+    simp only [guardedHistory, hp, guardedStep, MarketGenerativity.history, hf, hn, and_self, ↓reduceIte]
+
+
+theorem supported_partial_transition (b cost : Rat) (s : OperatingState)
+    (hb0 : 0 ≤ b) (hb1 : b ≤ 5/12) (hc : 0 ≤ cost) (hs : physical s) (hx : 0 < s.1) :
+    ∃ N, ∀ initial, cover cost N ≤ initial →
+      (∀ t, t ≤ N → guardedHistory (partialParameters b) exampleBounds (lift s initial)
+        (fun _ => pulseDisturbance cost) t =
+          some (MarketGenerativity.history (partialParameters b) (lift s initial)
+            (fun _ => pulseDisturbance cost) t)) ∧
+      (let arrived := MarketGenerativity.history (partialParameters b) (lift s initial)
+          (fun _ => pulseDisturbance cost) N
+       Safe exampleParameters exampleBounds arrived ∧
+       ∀ k, guardedHistory exampleParameters exampleBounds arrived (fun _ => noShock) k =
+         some (MarketGenerativity.history exampleParameters arrived (fun _ => noShock) k)) := by
+  obtain ⟨N,hN⟩ := partial_finite_landing b s hb0 hb1 hs hx
+  refine ⟨N,?_⟩
+  intro initial hi
+  refine ⟨partial_prefix_executes b cost initial s N hc hs hi,?_⟩
+  dsimp only
+  have hstock := partial_remaining_cover b cost initial s N hc hs hi N (by omega)
+  have h5 : 5 ≤ supportedStock b cost s initial N := by simpa [cover] using hstock
+  have hsafe : Safe exampleParameters exampleBounds
+      (MarketGenerativity.history (partialParameters b) (lift s initial) (fun _ => pulseDisturbance cost) N) := by
+    rw [partial_coupling_history]
+    exact landing_supplies_safety _ _ hN h5
+  refine ⟨hsafe,?_⟩
+  apply safe_history_never_fails exampleParameters exampleBounds _ _ example_certificate hsafe
+  intro t
+  unfold Admissible exampleBounds noShock
+  constructor
+  · decide +kernel
+  · intro _; change (0 : Rat) ≤ 1/2; decide +kernel
 
 end PartialRegimeTransition

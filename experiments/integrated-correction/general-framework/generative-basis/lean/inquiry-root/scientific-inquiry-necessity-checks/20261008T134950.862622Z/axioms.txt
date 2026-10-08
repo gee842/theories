@@ -1,0 +1,23 @@
+'Generative.ScientificInquiryNecessity.tally' does not depend on any axioms
+'Generative.ScientificInquiryNecessity.committed' does not depend on any axioms
+'Generative.ScientificInquiryNecessity.wrong' does not depend on any axioms
+'Generative.ScientificInquiryNecessity.apart' does not depend on any axioms
+'Generative.ScientificInquiryNecessity.tally_add' depends on axioms: [propext, Quot.sound]
+'Generative.ScientificInquiryNecessity.tally_mono' depends on axioms: [propext]
+'Generative.ScientificInquiryNecessity.pointwise_coverage_bound' depends on axioms: [propext, Quot.sound]
+'Generative.ScientificInquiryNecessity.fallible_inquiry_bound' depends on axioms: [propext, Quot.sound]
+'Generative.ScientificInquiryNecessity.error_budgets_require_difference' depends on axioms: [propext, Quot.sound]
+'Generative.ScientificInquiryNecessity.blind_coverage_bound' depends on axioms: [propext, Quot.sound]
+'Generative.ScientificInquiryNecessity.common_processing_cannot_add_difference' depends on axioms: [propext, Quot.sound]
+'Generative.ScientificInquiryNecessity.run' does not depend on any axioms
+'Generative.ScientificInquiryNecessity.run_preserves_relation' does not depend on any axioms
+'Generative.ScientificInquiryNecessity.adaptive_blindness_bound' depends on axioms: [propext, Quot.sound]
+'Generative.ScientificInquiryNecessity.excludes_blind_realization' depends on axioms: [propext, Quot.sound]
+'Generative.ScientificInquiryNecessity.adaptive_service_excludes_blindness' depends on axioms: [propext, Quot.sound]
+'Generative.ScientificInquiryNecessity.ten_percent_errors_require_eighty_distinctions' depends on axioms: [propext,
+ Quot.sound]
+'Generative.ScientificInquiryNecessity.cases5' does not depend on any axioms
+'Generative.ScientificInquiryNecessity.evidence0' does not depend on any axioms
+'Generative.ScientificInquiryNecessity.evidence1' does not depend on any axioms
+'Generative.ScientificInquiryNecessity.sharp_fallible_witness' does not depend on any axioms
+'Generative.ScientificInquiryNecessity.abstention_is_not_discrimination' depends on axioms: [propext]

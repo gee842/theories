@@ -1,0 +1,130 @@
+Generative.RetrospectiveBinding.covered_packet_preserves_atomic_content (w : Generative.SourceReliance.World)
+  (rs : List Generative.SourceReliance.Route) (faults : List Generative.SourceReliance.Faults)
+  (routeIncluded : w.route ∈ rs) (faultIncluded : w.faults ∈ faults) :
+  Generative.CompositionalAcquisition.Expr.atom w.target ∈
+    Generative.RetrospectiveBinding.alternatives rs faults (Generative.SourceReliance.view w)
+Generative.RetrospectiveBinding.acquired_routes_supply_binding_coverage (s : Generative.RetrospectiveBinding.Memory)
+  (r : Generative.SourceReliance.Route) (reversed : Bool) (ps : List Generative.SourceReliance.Probe)
+  (faults : List Generative.SourceReliance.Faults) (form : List Generative.AcquiredSegmentation.Sound) (target : Bool)
+  (answer : Generative.CompositionalAcquisition.Expr)
+  (calibration : s.calibration = Generative.SourceReliance.acquire r reversed ps)
+  (available : Generative.CompositionalAcquisition.Expr.atom target ∈ s.base.repertoire)
+  (realized :
+    ∀ (p : Generative.RetrospectiveBinding.Packet),
+      p ∈ s.packets →
+        p.form = form →
+          ∃ f,
+            f ∈ faults ∧
+              p.reports =
+                Generative.SourceReliance.emit r { target := target, localFault := f.fst, commonFault := f.snd })
+  (resolved :
+    Generative.AcquiredBinding.resolve (Generative.RetrospectiveBinding.bindingView s faults) form = some answer) :
+  answer = Generative.CompositionalAcquisition.Expr.atom target
+Generative.RetrospectiveBinding.later_observation_preserves_naming_packets (record : Generative.SourceReliance.Record)
+  (s : Generative.RetrospectiveBinding.Memory) : (Generative.RetrospectiveBinding.observe record s).packets = s.packets
+Generative.RetrospectiveBinding.observe_preserves_support_account (record : Generative.SourceReliance.Record)
+  (s : Generative.RetrospectiveBinding.Memory) :
+  (Generative.RetrospectiveBinding.observe record s).base.percept.machine.support +
+      (Generative.RetrospectiveBinding.observe record s).base.percept.machine.spent =
+    s.base.percept.machine.support + s.base.percept.machine.spent
+Generative.RetrospectiveBinding.exhausted_memory_cannot_acquire_calibration (record : Generative.SourceReliance.Record)
+  (s : Generative.RetrospectiveBinding.Memory) (h : s.base.percept.machine.support = 0) :
+  Generative.RetrospectiveBinding.observe record s = s
+Generative.RetrospectiveBinding.prior_naming_alone_leaves_both_forms_unresolved (b : Bool) :
+  Generative.AcquiredBinding.resolve
+      (Generative.RetrospectiveBinding.bindingView (Generative.RetrospectiveBinding.named 36)
+        Generative.SourceReliance.allFaults)
+      (Generative.AcquiredSegmentation.word b) =
+    none
+Generative.RetrospectiveBinding.late_calibration_is_acquired_without_new_naming :
+  (Generative.RetrospectiveBinding.retrospective 36).packets = (Generative.RetrospectiveBinding.named 36).packets ∧
+    (Generative.RetrospectiveBinding.retrospective 36).calibration =
+        Generative.SourceReliance.acquire Generative.RetrospectiveBinding.secureRoute false
+          Generative.SourceReliance.protocol ∧
+      Generative.RetrospectiveBinding.routes (Generative.RetrospectiveBinding.retrospective 36) =
+        [Generative.RetrospectiveBinding.secureRoute]
+Generative.RetrospectiveBinding.late_calibration_changes_both_bindings (b : Bool) :
+  Generative.AcquiredBinding.resolve
+      (Generative.RetrospectiveBinding.bindingView (Generative.RetrospectiveBinding.retrospective 36)
+        Generative.SourceReliance.allFaults)
+      (Generative.AcquiredSegmentation.word b) =
+    some (Generative.CompositionalAcquisition.Expr.atom b)
+Generative.RetrospectiveBinding.retrospective_bindings_read_every_finite_sequence (ws : List Bool) :
+  Generative.AcquiredBinding.readForms
+      (Generative.RetrospectiveBinding.bindingView (Generative.RetrospectiveBinding.retrospective 36)
+        Generative.SourceReliance.allFaults)
+      (List.map Generative.AcquiredSegmentation.word ws) =
+    some (List.map Generative.CompositionalAcquisition.Expr.atom ws)
+Generative.RetrospectiveBinding.retrospective_evidence_enters_compositional_use (ws : List Bool) :
+  Generative.AcquiredBinding.interpret
+      (Generative.RetrospectiveBinding.bindingView (Generative.RetrospectiveBinding.retrospective 36)
+        Generative.SourceReliance.allFaults)
+      (Generative.AcquiredSegmentation.encode ws) =
+    Generative.AcquiredSegmentation.assembleMessage (List.map Generative.CompositionalAcquisition.Expr.atom ws)
+Generative.RetrospectiveBinding.acquired_reinterpretation_reaches_actual_response :
+  Option.map (fun result => (result.fst, result.snd.percept.machine.support, result.snd.percept.machine.spent))
+      (Generative.AcquiredBinding.execute Generative.AcquiredSegmentation.utterance
+        (Generative.RetrospectiveBinding.bindingView (Generative.RetrospectiveBinding.retrospective 36)
+          Generative.SourceReliance.allFaults)) =
+    some ([true, false, true], 0, 29)
+Generative.RetrospectiveBinding.actual_history_preserves_prior_learning :
+  (Generative.RetrospectiveBinding.retrospective 36).base.percept.log =
+      List.map some Generative.AcquiredSegmentation.context ∧
+    (Generative.RetrospectiveBinding.retrospective 36).base.percept.machine.samples =
+        Generative.CompositionalAcquisition.trialRecords Generative.CompositionalAcquisition.usual ∧
+      (Generative.RetrospectiveBinding.retrospective 36).base.percept.machine.support = 4 ∧
+        (Generative.RetrospectiveBinding.retrospective 36).base.percept.machine.spent = 25
+Generative.RetrospectiveBinding.retained_interpretation_can_exceed_execution_support :
+  Generative.AcquiredBinding.interpret
+        (Generative.RetrospectiveBinding.bindingView (Generative.RetrospectiveBinding.retrospective 35)
+          Generative.SourceReliance.allFaults)
+        Generative.AcquiredSegmentation.utterance =
+      some Generative.AcquiredSegmentation.intended ∧
+    Generative.AcquiredBinding.execute Generative.AcquiredSegmentation.utterance
+        (Generative.RetrospectiveBinding.bindingView (Generative.RetrospectiveBinding.retrospective 35)
+          Generative.SourceReliance.allFaults) =
+      none
+Generative.RetrospectiveBinding.calibration_without_retained_naming_cannot_bind :
+  Generative.AcquiredBinding.interpret
+      (Generative.RetrospectiveBinding.bindingView
+        (have __src := Generative.RetrospectiveBinding.retrospective 36;
+        { base := __src.base, packets := [], calibration := __src.calibration })
+        Generative.SourceReliance.allFaults)
+      Generative.AcquiredSegmentation.utterance =
+    none
+Generative.RetrospectiveBinding.partial_calibration_preserves_binding_uncertainty :
+  have s :=
+    Generative.RetrospectiveBinding.calibrate
+      (Generative.SourceReliance.acquire Generative.RetrospectiveBinding.secureRoute false
+        [Generative.SourceReliance.baseline, Generative.SourceReliance.localProbe])
+      (Generative.RetrospectiveBinding.named 36);
+  Generative.AcquiredBinding.interpret
+      (Generative.RetrospectiveBinding.bindingView s Generative.SourceReliance.allFaults)
+      Generative.AcquiredSegmentation.utterance =
+    none
+Generative.RetrospectiveBinding.channel_identity_matters_to_later_binding :
+  Generative.AcquiredBinding.resolve
+      (Generative.RetrospectiveBinding.bindingView
+        (have __src := Generative.RetrospectiveBinding.retrospective 36;
+        { base := __src.base,
+          packets :=
+            [{ form := Generative.AcquiredSegmentation.word false, reports := (false, true) },
+              { form := Generative.AcquiredSegmentation.word true, reports := (true, false) }],
+          calibration := __src.calibration })
+        Generative.SourceReliance.allFaults)
+      (Generative.AcquiredSegmentation.word false) =
+    some Generative.CompositionalAcquisition.p1
+Generative.RetrospectiveBinding.inherited_omitted_route_can_make_reinterpretation_wrong :
+  Generative.AcquiredBinding.resolve
+      (Generative.RetrospectiveBinding.bindingView Generative.RetrospectiveBinding.jointFailureMemory
+        Generative.SourceReliance.allFaults)
+      (Generative.AcquiredSegmentation.word true) =
+    some Generative.CompositionalAcquisition.p0
+Generative.RetrospectiveBinding.later_challenge_suspends_without_deleting_the_old_packet :
+  Generative.RetrospectiveBinding.challenged.packets = Generative.RetrospectiveBinding.jointFailureMemory.packets ∧
+    Generative.RetrospectiveBinding.routes Generative.RetrospectiveBinding.challenged = [] ∧
+      Generative.AcquiredBinding.resolve
+          (Generative.RetrospectiveBinding.bindingView Generative.RetrospectiveBinding.challenged
+            Generative.SourceReliance.allFaults)
+          (Generative.AcquiredSegmentation.word true) =
+        none

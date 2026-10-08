@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "id": "pending-task-context-applicability",
+  "title": {
+    "zh": "在途任务的适用条件与有支持接续",
+    "en": "Pending-task applicability and supported continuation"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F03",
+  "reviewed_at_utc": "2026-10-08T18:44:58.925340+00:00",
+  "claim": {
+    "zh": "有成本的相关条件复查消费实际送达的修订值；报告覆盖实际作用条件时，不新增所列实践损失，端点至少三单位可用工作则完成复查与行动。拒绝或不足保留未完成任务和已付成本。学习分支允许其他两个处境字段变化；不把行动保护等同于原有比较理由持续成立。",
+    "en": "Paid relevant-condition review consumes the actually delivered revision. A report covering effect-time conditions prevents added represented practice loss; at least three current work units at the endpoint suffice for review and action. Refusal or exhaustion retains the unfinished task and paid cost. The learning branch admits changes to the other two context fields; action protection does not imply continued comparative warrant."
+  },
+  "hypotheses": [
+    {
+      "zh": "继承两实践作用规律、实际取得的目的状态、版本化路线与同步授权改写；G0/J 及报告的实际对应公开。",
+      "en": "Inherited two-practice outcome law, acquired goal state, versioned route and synchronized authorized rewrite; G0/J and report correspondence remain explicit."
+    },
+    {
+      "zh": "复查消耗一单位工作，行动开始需要两单位；报告覆盖实际作用时的相关条件。复查／行动为局部抽象步骤，未实现物理隔离或感测器。",
+      "en": "Review consumes one work unit and starting action needs two; the report covers relevant conditions at the actual effect. Review/action is a local abstract step, without a physical exclusion or sensor implementation."
+    },
+    {
+      "zh": "完成实例开始时额外供给一单位当前工作，总量19；不从储备免费兑换，也不推断其现实供给。",
+      "en": "The completion instance supplies one additional current work unit initially, total 19; it neither freely converts reserve nor derives real provision."
+    }
+  ],
+  "correspondence": {
+    "zh": "取得认识、传递、复查与作用是同一共同活动的关系分化。相关性由给定作用规律得出，不把未观察者定义为无关；作用规律的取得和变化仍需解释。",
+    "en": "Acquisition, delivery, review and effect are differentiated relations in one common activity. Relevance follows from the supplied outcome law, without defining unseen relations as irrelevant; acquisition and change of that law remain to explain."
+  },
+  "canonical_source": "experiments/market-generativity/meta-attractor/PendingTaskApplicability.lean",
+  "aliases": [
+    "PendingTaskApplicability.revised_delivery_enters_review",
+    "PendingTaskApplicability.funded_covered_review"
+  ],
+  "dependencies": [
+    {
+      "id": "acquired-revision-of-pending-task",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "revised_delivery_enters_review 直接消费 revised_head_completes 的实际送达值与尾队列；continueReviewed 消费 paidRetarget 的实际状态和开支。",
+        "en": "revised_delivery_enters_review directly consumes revised_head_completes’s delivered value and queue tail; continueReviewed consumes paidRetarget’s actual state and expenditure."
+      },
+      "interface": {
+        "output": {
+          "zh": "任意有效头请求经实际编码改写后送达新值，并保留尾队列、银行和路线。",
+          "en": "Any valid rewritten head delivers the revised value and preserves the tail, banks and active route."
+        },
+        "input": {
+          "zh": "deliverReview 把送达值存为端点任务，reviewAndAct 复查后将该值送入 enact；未执行时继续保留。",
+          "en": "deliverReview stores that value as an endpoint task; reviewAndAct supplies it to enact after review, retaining it when unperformed."
+        },
+        "conditions": {
+          "zh": "保留旧不变量、连续传递、实践解释、权限与改写费用；另加有成本的报告覆盖及可用工作条件。",
+          "en": "Retains the old invariant, consecutive delivery, practice interpretation, authority and rewrite cost; adds paid report coverage and current-work conditions."
+        },
+        "evidence": "experiments/market-generativity/meta-attractor/PendingTaskApplicability.lean"
+      }
+    }
+  ],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "experiments/market-generativity/meta-attractor/PendingTaskApplicability.lean",
+      "detail": {
+        "zh": "check_can_exhaust_action_support 保留复查后无力执行；safe_change_can_remove_comparative_warrant 分开行动保护与比较；report_not_covering_effect_can_still_fail 保留报告与实际作用脱节的损失。",
+        "en": "check_can_exhaust_action_support retains exhaustion after review; safe_change_can_remove_comparative_warrant separates action protection from comparison; report_not_covering_effect_can_still_fail retains loss when the report fails to cover the effect."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "只覆盖给定作用规律中的两项实践保护；报告形成、相关性取得与更新、等待的后果及未满足需求的实际接续未证。报告取样时正确不保证覆盖后来作用；不构成普遍社会退化或完整可纠正性定理。",
+    "en": "Covers only two practice protections in the supplied outcome law. Report formation, acquisition/revision of relevance, waiting consequences and actual continuation of unmet needs are unproved. Correctness at sampling does not ensure effect coverage; no universal societal degeneration or complete corrigibility theorem."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.30.0-rc2 实际检查14项新定理／22项新审计；205项继承定理／354项继承审计分列。所有仓库导入重建；上游缓存固定。无经验验证或独立验收。",
+    "en": "Lean 4.30.0-rc2 checked 14 new theorems/22 new audits, separately from 205 inherited theorems/354 inherited audits. Repository imports rebuilt; upstream cache pinned. No empirical validation or independent acceptance."
+  },
+  "references": [
+    {
+      "path": "experiments/market-generativity/meta-attractor/PendingTaskApplicability.lean",
+      "role": "proof",
+      "sha256": "96c66b6c499a11ab255054289c886088baccf684991ec16bb64ecffb181edd89",
+      "declarations": [
+        "PendingTaskApplicability.revised_delivery_enters_review",
+        "PendingTaskApplicability.funded_covered_review",
+        "PendingTaskApplicability.covered_review_adds_no_practice_loss",
+        "PendingTaskApplicability.learning_review_covers_changed_context",
+        "PendingTaskApplicability.safe_change_can_remove_comparative_warrant",
+        "PendingTaskApplicability.check_can_exhaust_action_support",
+        "PendingTaskApplicability.report_not_covering_effect_can_still_fail"
+      ]
+    },
+    {
+      "path": "experiments/market-generativity/meta-attractor/pending-task-applicability-verification.json",
+      "role": "receipt",
+      "sha256": "d8e5d96c5d0b3798ecf1efcb0afe266ebf4cfd69f3c82c3507b5d20662d40090",
+      "declarations": []
+    },
+    {
+      "path": "experiments/market-generativity/meta-attractor/check_pending_task_applicability.py",
+      "role": "provenance",
+      "sha256": "2551f075adc4d608b36f7d961b95918b66927d9c863a817eacb365f3ca9eaf56",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COLLECTIVE-DESTRUCTION-INTEGRATION.md",
+      "role": "review",
+      "sha256": "0a69979d5c65f3f78d415f63ba40adec7a2d73b8ea885a3391483eb4ecd668ff",
+      "declarations": []
+    },
+    {
+      "path": "theories/meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md",
+      "role": "statement",
+      "sha256": "958cb5e9afb6803437834bedc1ab5b4329afa090bc91abd9a2272232cf1f01d3",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/market-generativity/meta-attractor/PendingTaskApplicability.lean",
+      "receipt": "experiments/market-generativity/meta-attractor/pending-task-applicability-verification.json",
+      "sha256_pointer": "/modules/7/source_sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "history": [
+    {
+      "zh": "2026-10-09：新增局部端点组合与有成本复查，已有目标取得、传递和证据更新成果不重复计数。作者反审及失败尝试保存。",
+      "en": "2026-10-09: adds the local endpoint composition and paid review without recounting acquired-goal, delivery or evidence-update results. Author counterreview and failed attempts are preserved."
+    }
+  ],
+  "next_delta": {
+    "zh": "在指定共同实践中取得并更新作用／相关性对应，并支持旧做法暂不适用时仍在发生的需求；保留任务不等于实际接续。",
+    "en": "Acquire and revise the effect/relevance correspondence in a specified common practice, and support continuing needs while an old method is inapplicable; retaining a task is not actual continuation."
+  }
+}

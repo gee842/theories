@@ -1,0 +1,1002 @@
+{
+  "scope": "43 new checked refinement, reference-loss and repair declarations; preserve prior and concurrent contributions.",
+  "rows_before": {
+    "C30": {
+      "id": "C30",
+      "title_zh": "生成关系的解释必要性",
+      "title_en": "Generative relations and explanatory necessity",
+      "claim_zh": "独立指定的取得、错误与后续问题要求保留实际差异和共同边界；接合探针进一步恢复有限片段接口，三元关系唯一确定局部单位，完整有限轨迹恢复其状态接口。整体表述仍合格，容量反例限定接口匹配的充分性。 最新从原有机制直接证明摘要充分性，推出有效规律与全部有限历史精确对应，不另给Exact或同态前提。 普遍化检验给出任意三元关系恢复的充要条件；完整成功答案与最少状态／边仍允许不同构机制，确定且可达、后续可区分时恢复唯一对应。 后续以共同条件下的复合接续问题推出有限分支双模拟，并由准确约简答案构造可从每个相容原生起点提升的编码规律；结构唯一性不再要求确定性。 再以后继紧致性放宽有限分支，取得结构对应及完整无限编码路径提升；有无限多个可区分后继的正例，也有全部有限复合答案相同而无限持续不同的反例。 共同问题再在明示成对紧致性下迫出步骤／接合对应并提升有限逐节点方案；实际占用／释放推出共享冲突。全部孤立共同问题仍可能遗漏指定部分的共享身份，固定搭配问题在有限实例中恢复。 再以完整下层支持覆盖及同级独占支持分离，将任意有限方案接到全局无重复与一次共同占用历史；遗漏关系的失败及修复正例均检查。每个固定 n 阶成功清单仍可漏掉 n+1 阶共享容量限制。 变化中的形成、撤去、占用与释放具有精确证书保持条件；任意允许有限历史在同一原生规律内都有完成后缀。静态清单会遗漏实际占用，释放／形成可恢复或建立准备；无限允许调度仍可能永不推进目标。 全体有限一阶身份、生成和接合真值一致，甚至有一个保留任意有限参数公式的映射，仍不足以迫出全范围可达结构的原生同构；Cantor 对角线给出真实不同构对手。保真映射再有全局覆盖则恢复同构。 Ren 非二元批评后的纠正：原反例未对准共同必要生成基础，不能作为原目标停止证据；给定位置之间可达未解释其构成性形成。 纠正后由同一部分接合关系形成全部有限情境，准确说明必须保留改变接续可能性的区别，冗余说明亦有共同因子；固定片段接合结果唯一时，共同内容带有唯一对应的操作。实际历史的全部嵌套接合问题恰好保留开始／结束接口，不抹去不同内部事件。 后续允许接合本身有多个结果：有限结果纤维及更丰富的分支问答迫出共同接合关系，原指定输入能实现每个代码结果；检验伙伴随同一编码转换，任意有限接合树提升。共同表示仍可有两个可区分结果。",
+      "claim_en": "Independently specified acquisition, error and continuation questions require native distinctions and shared boundaries. Joining probes further recover finite-fragment interfaces; the ternary relation determines unique unit roles, and complete finite traces recover their state interfaces. Global accounts remain eligible; capacity limits matching-unit sufficiency. The latest concrete summary-sufficiency proof derives an effective law and exact finite-history correspondence from the unchanged mechanism, without a separate Exact or homomorphism premise. The universal attempt characterizes arbitrary ternary-relation recovery: complete success answers and minimum states/edges still allow nonisomorphic mechanisms; deterministic reachable continuation-separated realizations recover uniqueness. The continuation derives finite-branch bisimulation from compound questions at shared conditions and reconstructs code histories lifting from every compatible native start; scoped structural uniqueness no longer requires determinism. Successor compactness further replaces finite branching, preserving structural correspondence and lifting whole infinite code runs; a genuinely infinitely branching positive model contrasts with equal finite-modal answers but different infinite realization. Joint questions further force step/joint correspondence under explicit correlated-pair compactness and lift finite nodewise plans; acquisition/release derives shared-support conflict. Complete isolated joint profiles can still lose designated-part aliasing, recovered by fixed-partner questions in the finite witness. Complete descendant support and sibling exclusion further connect arbitrary finite plans to distinct global requests and a common holding history; omission failures and a positive repair are checked. Every fixed n-ary success list can still miss an (n+1)-ary capacity restriction. Formation, withdrawal, acquisition and release have exact certificate-preservation conditions; every permitted finite history has a completing suffix in the same native law. Static lists can lose actual occupation, release/formation renew readiness, and an infinite permitted schedule can still never progress. All finite first-order identity, step and joint truths, even preserved by one coherent elementary map on every finite source tuple, do not force native isomorphism of wholly root-reachable worlds. Cantor gives a genuine obstruction; adding global coverage yields isomorphism. Following Ren’s nondual objection, the counterexample is not accepted as a stopping test for a common necessary generative basis: reachability between supplied positions does not explain their constitution. After correction, all finite contexts arise from the same partial joining law. Exact accounts must retain differences affecting continuation and have a common factor even when redundant. Functional fragment joining induces a common operation. All nested joining questions on admitted histories recover exactly their beginning/ending interface while internal event differences remain real. The continuation permits multivalued joining itself: finite outcome fibers and richer branch questions force a common joining relation; each code result lifts from the originally specified inputs. Partners in questions translate through the same encoding, and every finite joining tree lifts. The common account can retain two distinguishable outcomes.",
+      "scope_zh": "此前各轮及实际展开42项定理／64项新审计保留原范围与独立评审；本轮另54项（23＋31）／128项含继承审计：105空、23仅propext。探针可用性、状态内容及完整接续条件明示；共享容量／并行冲突下的定义域与输出识别仍待推进。 新增14项定理／18项空依赖审计，另192项继承依赖不变（150空、42标准）；独立审查接受。既有温控／氧梯度证据接入，但不等于该构造的物理实现或普遍根基完成；重叠继承不累加。 此独立一轮61项新定理／135项审计（123空、12继承propext；新61项全空）。已有14项有效规律推导保留；普遍目标为何必须区分相关原生关系仍未证，有限反例不整体否定普遍猜想。 此轮45项新定理／141项审计：103空、38标准；新19空、26标准，其中13含经典选择。有限分支、问题覆盖、约简／状态区分分别明示；前向充分性不恢复全部实际形成史，普遍解释范围仍未证。 此轮36项新定理／159项审计（102空、57标准；新5空、31标准）。后继紧致性是显式充分条件，非普遍定律或有限观察结论；完整持续、实际历史及一般共同接合各保留范围。 本轮56项新定理／183项审计（112空、71标准；新6空、50标准）。成对紧致性、问题覆盖与分离明示；逐节点共同方案不等于任意部分替换或全局并发，普遍唯一性仍未证。 此轮37项新定理／184项审计（115空、69标准；新4空、33标准）。固定接入、取得后保留及操作对应明示；支持范围可为过宽充分证书，不把相交自动当作失败。一般动态共同实现与普遍唯一性未证。 本轮42项新定理／211项审计（119空、92标准；新6空、36标准，无新增经典选择依赖）。连续准备比修复后的最终成功更强；原子步骤、全部相关变化受控与真实状态读取明示，普遍唯一性未证。 本轮33项新定理／180项审计（113空、67标准；新2空、31标准，其中13含经典选择）。一阶内容到全局覆盖的推论遇到已证明边界；不是对全部可能真理充分，也不否定不同实现共享必要生成基础。普遍根基唯一性未证。 当前状态修正：保留全部已证结论，撤回共同根基研究已撞墙的判断，不再预设全局双射为必要门槛；继续检验同一生成中分化与充分说明所必需的关系。本次无新证明，非二元亦不等于普遍唯一性已证。 本轮38项新定理／166项审计（125空、41标准；新20空、18标准，无新增经典选择）。原过程可分支，确定的是固定历史的接合；规律、语义可能性与实际取得检验分列。普遍解释对应仍待证明，不再以完整世界同构或当前未证连接宣布原目标撞墙。 新26项声明（含适配与应用，非26项独立发现）／223项审计：新6空、20标准，8项含经典选择；197项继承审计另列。删除单值条件同时加强检验并限定结果纤维，不声称原生身份、概率、共享资源或任意解释的普遍适用；下一连接是不同关系分节的有据互译。",
+      "scope_en": "Earlier studies, including native unfolding (42 theorems / 64 new audits and its independent review), retain their scopes. This separate 54 (23+31) / 128 audit study has 105 empty and 23 propext-only lists. Probe access, state content and completion are explicit; identification with shared-capacity/concurrent conflicts remains open. New 14 theorems / 18 empty audits; 192 inherited maps unchanged (150 empty, 42 standard), independently reviewed. Existing controller/oxygen evidence is integrated without equating those cases with this construction or completing universal grounding. Overlapping imports are not added. This separate round adds 61 theorems / 135 audits (123 empty, 12 inherited propext; all new 61 empty). Existing effective-law results remain credited. Universal separation of native relations remains unwarranted; the scoped counterexample does not globally refute the conjecture. This round: 45 new theorems / 141 audits, 103 empty and 38 standard; new 19 empty and 26 standard, including 13 with classical choice. Finite branching, question coverage and reduction/separation are explicit; forward adequacy does not recover every actual past or prove universal explanatory scope. This round adds 36 theorems / 159 audits (102 empty, 57 standard; new 5 empty, 31 standard). Successor compactness is an explicit sufficient condition, not a universal law or finite-observation inference; whole continuation, actual history and general joint realization retain distinct scopes. This round adds 56 theorems / 183 audits (112 empty, 71 standard; new 6 empty, 50 standard). Pair compactness, question coverage and separation are explicit; nodewise joint plans do not establish arbitrary substitution or global concurrency, and universal uniqueness remains unproved. This round adds 37 theorems / 184 audits (115 empty, 69 standard; new 4 empty, 33 standard). Fixed access, persistent holding and operational correspondence are explicit; overapproximating footprints are sufficient certificates, and overlap alone is not failure. General dynamic joint realization and universal uniqueness remain unproved. This round adds 42 theorems / 211 audits (119 empty, 92 standard; new 6 empty, 36 standard, no new classical-choice dependency). Continuous readiness is stronger than eventual success after repair; atomic steps, full mediation and current-state access are explicit, and universal uniqueness remains unproved. This round adds 33 theorems / 180 audits (113 empty, 67 standard; new 2 empty and 31 standard, 13 with classical choice). The inference from first-order content to global coverage has a proved wall. This is not unrestricted truth adequacy or a refutation of a shared necessary generative foundation; universal foundation uniqueness remains open. Corrected current status: retain every proved result, withdraw the stopping judgment for common-foundation uniqueness, and remove the unearned global-bijection gate. Investigate constituted distinctions and necessary explanatory relations within one unfolding. No new proof; nonduality does not establish universality. This round adds 38 theorems / 166 audits (125 empty, 41 standard; new 20 empty and 18 standard, no added classical choice). The underlying process may branch; fixed-history joining is functional. Laws, semantic possibility and acquired inquiry are distinguished. Universal explanatory correspondence remains open, without treating whole-world isomorphism or this unproved bridge as a stopping wall. New 26 declarations (including adapters/applications, not 26 independent discoveries) / 223 audits: new 6 empty and 20 standard, 8 with classical choice; 197 inherited audits are separate. Removing functionality enriches tests and constrains fibers. Native identity, probabilities, shared resources and applicability to every explanation are not claimed; the next connection is warranted translation across different relational articulations.",
+      "links": [
+        {
+          "label_zh": "当前论述",
+          "label_en": "Current account",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md"
+        },
+        {
+          "label_zh": "论证、反审与来源",
+          "label_en": "Argument, counterreview and sources",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "Ren 原话",
+          "label_en": "Ren’s direction",
+          "path": "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md"
+        },
+        {
+          "label_zh": "可用变化、保留与反审",
+          "label_en": "Available variation, retention and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-VARIATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "取得、校准与修正整合",
+          "label_en": "Acquisition, calibration and correction",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-INQUIRY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "唯一性、结构与反审",
+          "label_en": "Uniqueness, structure and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-STRUCTURE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "组合唯一性、来源与反审",
+          "label_en": "Compositional uniqueness, sources and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-COMPOSITION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "实际展开的保留判准与整合",
+          "label_en": "Unfolding-preservation criterion and integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "独立审查",
+          "label_en": "Independent review",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md"
+        },
+        {
+          "label_zh": "接合、接口与反审",
+          "label_en": "Joining, interfaces and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-INTEGRATION.md"
+        },
+        {
+          "label_zh": "规律、对应与完成范围",
+          "label_en": "Law, correspondence and completion scope",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "实际对应证据",
+          "label_en": "Actual correspondence evidence",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md"
+        },
+        {
+          "label_zh": "新推导独立审查",
+          "label_en": "Independent derivation review",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-REVIEW.md"
+        },
+        {
+          "label_zh": "普遍唯一性、最小反例与障碍",
+          "label_en": "Universal uniqueness, minimal rivals and the wall",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-UNIVERSALITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "解释充分性、分支与反审",
+          "label_en": "Adequacy, branching and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-BRANCHING-INTEGRATION.md"
+        },
+        {
+          "label_zh": "无限分支、紧致性与完整路径",
+          "label_en": "Infinite branching, compactness and whole runs",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-COMPACTNESS-INTEGRATION.md"
+        },
+        {
+          "label_zh": "共同实现、共享支持与情境身份",
+          "label_en": "Joint realization, shared support and contextual identity",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINTNESS-INTEGRATION.md"
+        },
+        {
+          "label_zh": "跨分支支持与全局共同占用",
+          "label_en": "Cross-branch support and common holding",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-GLOBAL-REALIZATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "变化中的支持、准备与完成",
+          "label_en": "Changing support, readiness and completion",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-CHANGING-SUPPORT-INTEGRATION.md"
+        },
+        {
+          "label_zh": "一阶真值与普遍唯一性的边界",
+          "label_en": "First-order truth and the uniqueness wall",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md"
+        },
+        {
+          "label_zh": "非二元纠正与目标复原",
+          "label_en": "Nondual correction and restored target",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md#9-nondual-correction-of-the-target-and-stopping-judgment"
+        },
+        {
+          "label_zh": "同一接合与共同必要结构",
+          "label_en": "Same joining and necessary common structure",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md"
+        },
+        {
+          "label_zh": "多结果共同结构",
+          "label_en": "Multivalued common structure",
+          "path": "theories/shengsheng-buxi-generative-existence/results/records/multivalued-joining-common-structure.json"
+        }
+      ]
+    },
+    "F22": {
+      "id": "F22",
+      "title_zh": "关系恢复、组合唯一性与接口重建",
+      "title_en": "Relation recovery, composition uniqueness and reconstructed interfaces",
+      "claim_zh": "继承校准、结构对手、组合唯一性及实际展开的接合／替换、分支继续与同规律错误反例；另增空历史探针、局部单位唯一性与关系同构下保持、完整接续充要条件和整个状态接口恢复。容量及内部序列丢失反例保留。 最新从原有机制直接证明摘要充分性，推出有效规律与全部有限历史精确对应，不另给Exact或同态前提。 普遍化检验给出任意三元关系恢复的充要条件；完整成功答案与最少状态／边仍允许不同构机制，确定且可达、后续可区分时恢复唯一对应。 后续以共同条件下的复合接续问题推出有限分支双模拟，并由准确约简答案构造可从每个相容原生起点提升的编码规律；结构唯一性不再要求确定性。 再以后继紧致性放宽有限分支，取得结构对应及完整无限编码路径提升；有无限多个可区分后继的正例，也有全部有限复合答案相同而无限持续不同的反例。 共同问题再在明示成对紧致性下迫出步骤／接合对应并提升有限逐节点方案；实际占用／释放推出共享冲突。全部孤立共同问题仍可能遗漏指定部分的共享身份，固定搭配问题在有限实例中恢复。 再以完整下层支持覆盖及同级独占支持分离，将任意有限方案接到全局无重复与一次共同占用历史；遗漏关系的失败及修复正例均检查。每个固定 n 阶成功清单仍可漏掉 n+1 阶共享容量限制。 变化中的形成、撤去、占用与释放具有精确证书保持条件；任意允许有限历史在同一原生规律内都有完成后缀。静态清单会遗漏实际占用，释放／形成可恢复或建立准备；无限允许调度仍可能永不推进目标。 全体有限一阶身份、生成和接合真值一致，甚至有一个保留任意有限参数公式的映射，仍不足以迫出全范围可达结构的原生同构；Cantor 对角线给出真实不同构对手。保真映射再有全局覆盖则恢复同构。 Ren 非二元批评后的纠正：原反例未对准共同必要生成基础，不能作为原目标停止证据；给定位置之间可达未解释其构成性形成。 纠正后由同一部分接合关系形成全部有限情境，准确说明必须保留改变接续可能性的区别，冗余说明亦有共同因子；固定片段接合结果唯一时，共同内容带有唯一对应的操作。实际历史的全部嵌套接合问题恰好保留开始／结束接口，不抹去不同内部事件。 后续允许接合本身有多个结果：有限结果纤维及更丰富的分支问答迫出共同接合关系，原指定输入能实现每个代码结果；检验伙伴随同一编码转换，任意有限接合树提升。共同表示仍可有两个可区分结果。",
+      "claim_en": "Retains calibration, structural rivals, compositional uniqueness and native unfolding’s joining/substitution, branch-continuation distinctions and same-law error cases. Adds empty-history probes, unique units and transport, an exact completion criterion and state-interface recovery, retaining capacity and internal-word-loss counters. The latest concrete summary-sufficiency proof derives an effective law and exact finite-history correspondence from the unchanged mechanism, without a separate Exact or homomorphism premise. The universal attempt characterizes arbitrary ternary-relation recovery: complete success answers and minimum states/edges still allow nonisomorphic mechanisms; deterministic reachable continuation-separated realizations recover uniqueness. The continuation derives finite-branch bisimulation from compound questions at shared conditions and reconstructs code histories lifting from every compatible native start; scoped structural uniqueness no longer requires determinism. Successor compactness further replaces finite branching, preserving structural correspondence and lifting whole infinite code runs; a genuinely infinitely branching positive model contrasts with equal finite-modal answers but different infinite realization. Joint questions further force step/joint correspondence under explicit correlated-pair compactness and lift finite nodewise plans; acquisition/release derives shared-support conflict. Complete isolated joint profiles can still lose designated-part aliasing, recovered by fixed-partner questions in the finite witness. Complete descendant support and sibling exclusion further connect arbitrary finite plans to distinct global requests and a common holding history; omission failures and a positive repair are checked. Every fixed n-ary success list can still miss an (n+1)-ary capacity restriction. Formation, withdrawal, acquisition and release have exact certificate-preservation conditions; every permitted finite history has a completing suffix in the same native law. Static lists can lose actual occupation, release/formation renew readiness, and an infinite permitted schedule can still never progress. All finite first-order identity, step and joint truths, even preserved by one coherent elementary map on every finite source tuple, do not force native isomorphism of wholly root-reachable worlds. Cantor gives a genuine obstruction; adding global coverage yields isomorphism. Following Ren’s nondual objection, the counterexample is not accepted as a stopping test for a common necessary generative basis: reachability between supplied positions does not explain their constitution. After correction, all finite contexts arise from the same partial joining law. Exact accounts must retain differences affecting continuation and have a common factor even when redundant. Functional fragment joining induces a common operation. All nested joining questions on admitted histories recover exactly their beginning/ending interface while internal event differences remain real. The continuation permits multivalued joining itself: finite outcome fibers and richer branch questions force a common joining relation; each code result lifts from the originally specified inputs. Partners in questions translate through the same encoding, and every finite joining tree lifts. The common account can retain two distinguishable outcomes.",
+      "scope_zh": "实际展开42项定理／64项新审计与该研究继承248项审计保持原范围；本轮23＋31项新定理，另74项继承审计，共128项：105空、23仅propext。新54项中43空、11仅propext，无自定公理。数学恢复不等于物理取得或唯一基础。 新增14项定理／18项空依赖审计，另192项继承依赖不变（150空、42标准）；独立审查接受。既有温控／氧梯度证据接入，但不等于该构造的物理实现或普遍根基完成；重叠继承不累加。 此独立一轮61项新定理／135项审计（123空、12继承propext；新61项全空）。已有14项有效规律推导保留；普遍目标为何必须区分相关原生关系仍未证，有限反例不整体否定普遍猜想。 此轮45项新定理／141项审计：103空、38标准；新19空、26标准，其中13含经典选择。有限分支、问题覆盖、约简／状态区分分别明示；前向充分性不恢复全部实际形成史，普遍解释范围仍未证。 此轮36项新定理／159项审计（102空、57标准；新5空、31标准）。后继紧致性是显式充分条件，非普遍定律或有限观察结论；完整持续、实际历史及一般共同接合各保留范围。 本轮56项新定理／183项审计（112空、71标准；新6空、50标准）。成对紧致性、问题覆盖与分离明示；逐节点共同方案不等于任意部分替换或全局并发，普遍唯一性仍未证。 此轮37项新定理／184项审计（115空、69标准；新4空、33标准）。固定接入、取得后保留及操作对应明示；支持范围可为过宽充分证书，不把相交自动当作失败。一般动态共同实现与普遍唯一性未证。 本轮42项新定理／211项审计（119空、92标准；新6空、36标准，无新增经典选择依赖）。连续准备比修复后的最终成功更强；原子步骤、全部相关变化受控与真实状态读取明示，普遍唯一性未证。 本轮33项新定理／180项审计（113空、67标准；新2空、31标准，其中13含经典选择）。一阶内容到全局覆盖的推论遇到已证明边界；不是对全部可能真理充分，也不否定不同实现共享必要生成基础。普遍根基唯一性未证。 当前状态修正：保留全部已证结论，撤回共同根基研究已撞墙的判断，不再预设全局双射为必要门槛；继续检验同一生成中分化与充分说明所必需的关系。本次无新证明，非二元亦不等于普遍唯一性已证。 本轮38项新定理／166项审计（125空、41标准；新20空、18标准，无新增经典选择）。原过程可分支，确定的是固定历史的接合；规律、语义可能性与实际取得检验分列。普遍解释对应仍待证明，不再以完整世界同构或当前未证连接宣布原目标撞墙。 新26项声明（含适配与应用，非26项独立发现）／223项审计：新6空、20标准，8项含经典选择；197项继承审计另列。删除单值条件同时加强检验并限定结果纤维，不声称原生身份、概率、共享资源或任意解释的普遍适用；下一连接是不同关系分节的有据互译。",
+      "scope_en": "Native unfolding retains its 42 theorems / 64 new and 248 inherited audits. This study adds 23+31 theorems with 74 inherited audits: 128 total, 105 empty and 23 propext only; new 54 comprise 43 empty and 11 propext only. No custom axioms. Recovery is not acquisition or unique grounding. New 14 theorems / 18 empty audits; 192 inherited maps unchanged (150 empty, 42 standard), independently reviewed. Existing controller/oxygen evidence is integrated without equating those cases with this construction or completing universal grounding. Overlapping imports are not added. This separate round adds 61 theorems / 135 audits (123 empty, 12 inherited propext; all new 61 empty). Existing effective-law results remain credited. Universal separation of native relations remains unwarranted; the scoped counterexample does not globally refute the conjecture. This round: 45 new theorems / 141 audits, 103 empty and 38 standard; new 19 empty and 26 standard, including 13 with classical choice. Finite branching, question coverage and reduction/separation are explicit; forward adequacy does not recover every actual past or prove universal explanatory scope. This round adds 36 theorems / 159 audits (102 empty, 57 standard; new 5 empty, 31 standard). Successor compactness is an explicit sufficient condition, not a universal law or finite-observation inference; whole continuation, actual history and general joint realization retain distinct scopes. This round adds 56 theorems / 183 audits (112 empty, 71 standard; new 6 empty, 50 standard). Pair compactness, question coverage and separation are explicit; nodewise joint plans do not establish arbitrary substitution or global concurrency, and universal uniqueness remains unproved. This round adds 37 theorems / 184 audits (115 empty, 69 standard; new 4 empty, 33 standard). Fixed access, persistent holding and operational correspondence are explicit; overapproximating footprints are sufficient certificates, and overlap alone is not failure. General dynamic joint realization and universal uniqueness remain unproved. This round adds 42 theorems / 211 audits (119 empty, 92 standard; new 6 empty, 36 standard, no new classical-choice dependency). Continuous readiness is stronger than eventual success after repair; atomic steps, full mediation and current-state access are explicit, and universal uniqueness remains unproved. This round adds 33 theorems / 180 audits (113 empty, 67 standard; new 2 empty and 31 standard, 13 with classical choice). The inference from first-order content to global coverage has a proved wall. This is not unrestricted truth adequacy or a refutation of a shared necessary generative foundation; universal foundation uniqueness remains open. Corrected current status: retain every proved result, withdraw the stopping judgment for common-foundation uniqueness, and remove the unearned global-bijection gate. Investigate constituted distinctions and necessary explanatory relations within one unfolding. No new proof; nonduality does not establish universality. This round adds 38 theorems / 166 audits (125 empty, 41 standard; new 20 empty and 18 standard, no added classical choice). The underlying process may branch; fixed-history joining is functional. Laws, semantic possibility and acquired inquiry are distinguished. Universal explanatory correspondence remains open, without treating whole-world isomorphism or this unproved bridge as a stopping wall. New 26 declarations (including adapters/applications, not 26 independent discoveries) / 223 audits: new 6 empty and 20 standard, 8 with classical choice; 197 inherited audits are separate. Removing functionality enriches tests and constrains fibers. Native identity, probabilities, shared resources and applicability to every explanation are not claimed; the next connection is warranted translation across different relational articulations.",
+      "links": [
+        {
+          "label_zh": "Lean 源码",
+          "label_en": "Lean source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryNecessity.lean"
+        },
+        {
+          "label_zh": "证明对应与回执",
+          "label_en": "Proof correspondence and receipt",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "变化源码",
+          "label_en": "Variation source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryVariation.lean"
+        },
+        {
+          "label_zh": "恢复与记录源码",
+          "label_en": "Recovery and retention source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryRecovery.lean"
+        },
+        {
+          "label_zh": "新证明对应与回执",
+          "label_en": "New proof correspondence and receipt",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-VARIATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "取得与再用源码",
+          "label_en": "Acquisition and reuse source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryInquiry.lean"
+        },
+        {
+          "label_zh": "取得、校准与修正整合",
+          "label_en": "Acquisition, calibration and correction",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-INQUIRY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "整体与结构源码",
+          "label_en": "Global and structural source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryStructure.lean"
+        },
+        {
+          "label_zh": "相对唯一性源码",
+          "label_en": "Relative uniqueness source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryUniqueness.lean"
+        },
+        {
+          "label_zh": "唯一性、结构与反审",
+          "label_en": "Uniqueness, structure and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-STRUCTURE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "组合与一般存在性源码",
+          "label_en": "Composition and general existence source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryComposition.lean"
+        },
+        {
+          "label_zh": "组合唯一性、来源与反审",
+          "label_en": "Compositional uniqueness, sources and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-COMPOSITION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "实际展开的保留判准与整合",
+          "label_en": "Unfolding-preservation criterion and integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "独立审查",
+          "label_en": "Independent review",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md"
+        },
+        {
+          "label_zh": "原生接合与准确表述源码",
+          "label_en": "Native joining and exact-account source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/UnfoldingPreservation.lean"
+        },
+        {
+          "label_zh": "同一规律下的具体保留源码",
+          "label_en": "Same-law preservation source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/FormedUnfoldingPreservation.lean"
+        },
+        {
+          "label_zh": "完整实查回执",
+          "label_en": "Fresh complete receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/unfolding-preservation-checks/20261007T225350.404286Z/receipt.json"
+        },
+        {
+          "label_zh": "部分接合源码",
+          "label_en": "Partial joining source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoining.lean"
+        },
+        {
+          "label_zh": "局部单位与重建源码",
+          "label_en": "Local-unit reconstruction source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryLocalUnits.lean"
+        },
+        {
+          "label_zh": "接合、接口与反审",
+          "label_en": "Joining, interfaces and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-INTEGRATION.md"
+        },
+        {
+          "label_zh": "规律、对应与完成范围",
+          "label_en": "Law, correspondence and completion scope",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "实际对应证据",
+          "label_en": "Actual correspondence evidence",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md"
+        },
+        {
+          "label_zh": "新推导独立审查",
+          "label_en": "Independent derivation review",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-REVIEW.md"
+        },
+        {
+          "label_zh": "有效规律与全历史对应源码",
+          "label_en": "Effective law and whole-history source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/FormedEffectiveLaw.lean"
+        },
+        {
+          "label_zh": "新六模块实查回执",
+          "label_en": "New six-module receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/formed-effective-law-checks/20261007T231137.825236Z/receipt.json"
+        },
+        {
+          "label_zh": "普遍唯一性、最小反例与障碍",
+          "label_en": "Universal uniqueness, minimal rivals and the wall",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-UNIVERSALITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "一般关系恢复源码",
+          "label_en": "General relational recovery",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryUniversality.lean"
+        },
+        {
+          "label_zh": "最小机制反例源码",
+          "label_en": "Minimal-mechanism counterexample",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryMinimalModels.lean"
+        },
+        {
+          "label_zh": "确定性唯一性源码",
+          "label_en": "Deterministic uniqueness",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryDeterminism.lean"
+        },
+        {
+          "label_zh": "解释充分性、分支与反审",
+          "label_en": "Adequacy, branching and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-BRANCHING-INTEGRATION.md"
+        },
+        {
+          "label_zh": "复合问题与分支对应",
+          "label_en": "Compound tests and branching correspondence",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean"
+        },
+        {
+          "label_zh": "共同条件与历史反例",
+          "label_en": "Shared-condition and history witnesses",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranchingWitnesses.lean"
+        },
+        {
+          "label_zh": "编码规律与全历史提升",
+          "label_en": "Code law and whole-history lifting",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranchingRecovery.lean"
+        },
+        {
+          "label_zh": "无限分支、紧致性与完整路径",
+          "label_en": "Infinite branching, compactness and whole runs",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-COMPACTNESS-INTEGRATION.md"
+        },
+        {
+          "label_zh": "紧致性与路径提升",
+          "label_en": "Compactness and run lifting",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryCompactness.lean"
+        },
+        {
+          "label_zh": "无限分支正例与反例",
+          "label_en": "Infinite-branch positive and negative witnesses",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryInfiniteBranches.lean"
+        },
+        {
+          "label_zh": "共同实现、共享支持与情境身份",
+          "label_en": "Joint realization, shared support and contextual identity",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINTNESS-INTEGRATION.md"
+        },
+        {
+          "label_zh": "成对结构与共同方案",
+          "label_en": "Pair structure and joint plans",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean"
+        },
+        {
+          "label_zh": "共享冲突与身份边界",
+          "label_en": "Shared conflict and identity limits",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatorySharedSupport.lean"
+        },
+        {
+          "label_zh": "实际占用与释放",
+          "label_en": "Actual occupancy and release",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryLeaseDynamics.lean"
+        },
+        {
+          "label_zh": "跨分支支持与全局共同占用",
+          "label_en": "Cross-branch support and common holding",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-GLOBAL-REALIZATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "完整支持范围与方案组合",
+          "label_en": "Complete support and plan composition",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFootprints.lean"
+        },
+        {
+          "label_zh": "共同占用历史",
+          "label_en": "Common holding histories",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryCoexistence.lean"
+        },
+        {
+          "label_zh": "跨分支失败与容量边界",
+          "label_en": "Cross-branch failures and capacity limits",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryCrossBranch.lean"
+        },
+        {
+          "label_zh": "变化中的支持、准备与完成",
+          "label_en": "Changing support, readiness and completion",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-CHANGING-SUPPORT-INTEGRATION.md"
+        },
+        {
+          "label_zh": "变化与精确保留条件",
+          "label_en": "Changes and exact preservation conditions",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryChangingSupport.lean"
+        },
+        {
+          "label_zh": "同一规律中的稳定与完成",
+          "label_en": "Same-law stability and completion",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryStablePlans.lean"
+        },
+        {
+          "label_zh": "失效、形成、恢复与无限不推进",
+          "label_en": "Failure, formation, repair and infinite nonprogress",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatorySupportChanges.lean"
+        },
+        {
+          "label_zh": "一阶真值与普遍唯一性的边界",
+          "label_en": "First-order truth and the uniqueness wall",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md"
+        },
+        {
+          "label_zh": "全部有限关系公式",
+          "label_en": "All finite relational formulas",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFiniteLogic.lean"
+        },
+        {
+          "label_zh": "一致保真与不同构反例",
+          "label_en": "Elementary preservation without isomorphism",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryCardinalityWall.lean"
+        },
+        {
+          "label_zh": "非二元纠正与目标复原",
+          "label_en": "Nondual correction and restored target",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md#9-nondual-correction-of-the-target-and-stopping-judgment"
+        },
+        {
+          "label_zh": "同一接合与共同必要结构",
+          "label_en": "Same joining and necessary common structure",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md"
+        },
+        {
+          "label_zh": "由接合形成情境",
+          "label_en": "Joining-generated contexts",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningContexts.lean"
+        },
+        {
+          "label_zh": "共同操作因子",
+          "label_en": "Common operational factor",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryContextualStructure.lean"
+        },
+        {
+          "label_zh": "实际历史与必要接口",
+          "label_en": "Admitted histories and necessary interfaces",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryHistoryInterfaces.lean"
+        },
+        {
+          "label_zh": "多结果共同结构",
+          "label_en": "Multivalued common structure",
+          "path": "theories/shengsheng-buxi-generative-existence/results/records/multivalued-joining-common-structure.json"
+        },
+        {
+          "label_zh": "分支接合与整体提升",
+          "label_en": "Branch joining and compound lifting",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean"
+        },
+        {
+          "label_zh": "同一规律的多结果实证",
+          "label_en": "Multivalued witness in one law",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranchWitnesses.lean"
+        }
+      ]
+    }
+  },
+  "rows_after": {
+    "C30": {
+      "id": "C30",
+      "title_zh": "生成关系的解释必要性",
+      "title_en": "Generative relations and explanatory necessity",
+      "claim_zh": "独立指定的取得、错误与后续问题要求保留实际差异和共同边界；接合探针进一步恢复有限片段接口，三元关系唯一确定局部单位，完整有限轨迹恢复其状态接口。整体表述仍合格，容量反例限定接口匹配的充分性。 最新从原有机制直接证明摘要充分性，推出有效规律与全部有限历史精确对应，不另给Exact或同态前提。 普遍化检验给出任意三元关系恢复的充要条件；完整成功答案与最少状态／边仍允许不同构机制，确定且可达、后续可区分时恢复唯一对应。 后续以共同条件下的复合接续问题推出有限分支双模拟，并由准确约简答案构造可从每个相容原生起点提升的编码规律；结构唯一性不再要求确定性。 再以后继紧致性放宽有限分支，取得结构对应及完整无限编码路径提升；有无限多个可区分后继的正例，也有全部有限复合答案相同而无限持续不同的反例。 共同问题再在明示成对紧致性下迫出步骤／接合对应并提升有限逐节点方案；实际占用／释放推出共享冲突。全部孤立共同问题仍可能遗漏指定部分的共享身份，固定搭配问题在有限实例中恢复。 再以完整下层支持覆盖及同级独占支持分离，将任意有限方案接到全局无重复与一次共同占用历史；遗漏关系的失败及修复正例均检查。每个固定 n 阶成功清单仍可漏掉 n+1 阶共享容量限制。 变化中的形成、撤去、占用与释放具有精确证书保持条件；任意允许有限历史在同一原生规律内都有完成后缀。静态清单会遗漏实际占用，释放／形成可恢复或建立准备；无限允许调度仍可能永不推进目标。 全体有限一阶身份、生成和接合真值一致，甚至有一个保留任意有限参数公式的映射，仍不足以迫出全范围可达结构的原生同构；Cantor 对角线给出真实不同构对手。保真映射再有全局覆盖则恢复同构。 Ren 非二元批评后的纠正：原反例未对准共同必要生成基础，不能作为原目标停止证据；给定位置之间可达未解释其构成性形成。 纠正后由同一部分接合关系形成全部有限情境，准确说明必须保留改变接续可能性的区别，冗余说明亦有共同因子；固定片段接合结果唯一时，共同内容带有唯一对应的操作。实际历史的全部嵌套接合问题恰好保留开始／结束接口，不抹去不同内部事件。 后续允许接合本身有多个结果：有限结果纤维及更丰富的分支问答迫出共同接合关系，原指定输入能实现每个代码结果；检验伙伴随同一编码转换，任意有限接合树提升。共同表示仍可有两个可区分结果。 不共用片段载体时，关联同测可导出单位置接合的共同细化及与既有投影相容的唯一保接合因子；但无引用关联问题会使所有有局部单位的片段同测，遗漏已消耗历史的不可自接合。保留同一配置的两个引用位置后，跨载体的有限形成历史可以匹配，精确说明必区分同一过程的空历史与已消耗历史。",
+      "claim_en": "Independently specified acquisition, error and continuation questions require native distinctions and shared boundaries. Joining probes further recover finite-fragment interfaces; the ternary relation determines unique unit roles, and complete finite traces recover their state interfaces. Global accounts remain eligible; capacity limits matching-unit sufficiency. The latest concrete summary-sufficiency proof derives an effective law and exact finite-history correspondence from the unchanged mechanism, without a separate Exact or homomorphism premise. The universal attempt characterizes arbitrary ternary-relation recovery: complete success answers and minimum states/edges still allow nonisomorphic mechanisms; deterministic reachable continuation-separated realizations recover uniqueness. The continuation derives finite-branch bisimulation from compound questions at shared conditions and reconstructs code histories lifting from every compatible native start; scoped structural uniqueness no longer requires determinism. Successor compactness further replaces finite branching, preserving structural correspondence and lifting whole infinite code runs; a genuinely infinitely branching positive model contrasts with equal finite-modal answers but different infinite realization. Joint questions further force step/joint correspondence under explicit correlated-pair compactness and lift finite nodewise plans; acquisition/release derives shared-support conflict. Complete isolated joint profiles can still lose designated-part aliasing, recovered by fixed-partner questions in the finite witness. Complete descendant support and sibling exclusion further connect arbitrary finite plans to distinct global requests and a common holding history; omission failures and a positive repair are checked. Every fixed n-ary success list can still miss an (n+1)-ary capacity restriction. Formation, withdrawal, acquisition and release have exact certificate-preservation conditions; every permitted finite history has a completing suffix in the same native law. Static lists can lose actual occupation, release/formation renew readiness, and an infinite permitted schedule can still never progress. All finite first-order identity, step and joint truths, even preserved by one coherent elementary map on every finite source tuple, do not force native isomorphism of wholly root-reachable worlds. Cantor gives a genuine obstruction; adding global coverage yields isomorphism. Following Ren’s nondual objection, the counterexample is not accepted as a stopping test for a common necessary generative basis: reachability between supplied positions does not explain their constitution. After correction, all finite contexts arise from the same partial joining law. Exact accounts must retain differences affecting continuation and have a common factor even when redundant. Functional fragment joining induces a common operation. All nested joining questions on admitted histories recover exactly their beginning/ending interface while internal event differences remain real. The continuation permits multivalued joining itself: finite outcome fibers and richer branch questions force a common joining relation; each code result lifts from the originally specified inputs. Partners in questions translate through the same encoding, and every finite joining tree lifts. The common account can retain two distinguishable outcomes. Across different fragment carriers, incidence agreement yields a common refinement with one-position lifting and a unique join-preserving factor commuting with given projections. Unanchored incidence questions nevertheless collapse all local-unit fragments, losing the spent history’s impossible self-join. Retaining two reference slots in the same configuration recovers matched finite formation histories; exact accounts must distinguish idle and spent histories within one process.",
+      "scope_zh": "此前各轮及实际展开42项定理／64项新审计保留原范围与独立评审；本轮另54项（23＋31）／128项含继承审计：105空、23仅propext。探针可用性、状态内容及完整接续条件明示；共享容量／并行冲突下的定义域与输出识别仍待推进。 新增14项定理／18项空依赖审计，另192项继承依赖不变（150空、42标准）；独立审查接受。既有温控／氧梯度证据接入，但不等于该构造的物理实现或普遍根基完成；重叠继承不累加。 此独立一轮61项新定理／135项审计（123空、12继承propext；新61项全空）。已有14项有效规律推导保留；普遍目标为何必须区分相关原生关系仍未证，有限反例不整体否定普遍猜想。 此轮45项新定理／141项审计：103空、38标准；新19空、26标准，其中13含经典选择。有限分支、问题覆盖、约简／状态区分分别明示；前向充分性不恢复全部实际形成史，普遍解释范围仍未证。 此轮36项新定理／159项审计（102空、57标准；新5空、31标准）。后继紧致性是显式充分条件，非普遍定律或有限观察结论；完整持续、实际历史及一般共同接合各保留范围。 本轮56项新定理／183项审计（112空、71标准；新6空、50标准）。成对紧致性、问题覆盖与分离明示；逐节点共同方案不等于任意部分替换或全局并发，普遍唯一性仍未证。 此轮37项新定理／184项审计（115空、69标准；新4空、33标准）。固定接入、取得后保留及操作对应明示；支持范围可为过宽充分证书，不把相交自动当作失败。一般动态共同实现与普遍唯一性未证。 本轮42项新定理／211项审计（119空、92标准；新6空、36标准，无新增经典选择依赖）。连续准备比修复后的最终成功更强；原子步骤、全部相关变化受控与真实状态读取明示，普遍唯一性未证。 本轮33项新定理／180项审计（113空、67标准；新2空、31标准，其中13含经典选择）。一阶内容到全局覆盖的推论遇到已证明边界；不是对全部可能真理充分，也不否定不同实现共享必要生成基础。普遍根基唯一性未证。 当前状态修正：保留全部已证结论，撤回共同根基研究已撞墙的判断，不再预设全局双射为必要门槛；继续检验同一生成中分化与充分说明所必需的关系。本次无新证明，非二元亦不等于普遍唯一性已证。 本轮38项新定理／166项审计（125空、41标准；新20空、18标准，无新增经典选择）。原过程可分支，确定的是固定历史的接合；规律、语义可能性与实际取得检验分列。普遍解释对应仍待证明，不再以完整世界同构或当前未证连接宣布原目标撞墙。 新26项声明（含适配与应用，非26项独立发现）／223项审计：新6空、20标准，8项含经典选择；197项继承审计另列。删除单值条件同时加强检验并限定结果纤维，不声称原生身份、概率、共享资源或任意解释的普遍适用；下一连接是不同关系分节的有据互译。 本轮43项新声明／256项审计（213继承；新9空、34标准，其中7含经典选择）。关联细化用局部有限及连通；引用修复用初始位置数相同、完整问答一致及固定输入对有限结果。不给予物理复制许可，不把关系图路径当作时间执行；实际表述对应和步骤粒度变化仍待论证。",
+      "scope_en": "Earlier studies, including native unfolding (42 theorems / 64 new audits and its independent review), retain their scopes. This separate 54 (23+31) / 128 audit study has 105 empty and 23 propext-only lists. Probe access, state content and completion are explicit; identification with shared-capacity/concurrent conflicts remains open. New 14 theorems / 18 empty audits; 192 inherited maps unchanged (150 empty, 42 standard), independently reviewed. Existing controller/oxygen evidence is integrated without equating those cases with this construction or completing universal grounding. Overlapping imports are not added. This separate round adds 61 theorems / 135 audits (123 empty, 12 inherited propext; all new 61 empty). Existing effective-law results remain credited. Universal separation of native relations remains unwarranted; the scoped counterexample does not globally refute the conjecture. This round: 45 new theorems / 141 audits, 103 empty and 38 standard; new 19 empty and 26 standard, including 13 with classical choice. Finite branching, question coverage and reduction/separation are explicit; forward adequacy does not recover every actual past or prove universal explanatory scope. This round adds 36 theorems / 159 audits (102 empty, 57 standard; new 5 empty, 31 standard). Successor compactness is an explicit sufficient condition, not a universal law or finite-observation inference; whole continuation, actual history and general joint realization retain distinct scopes. This round adds 56 theorems / 183 audits (112 empty, 71 standard; new 6 empty, 50 standard). Pair compactness, question coverage and separation are explicit; nodewise joint plans do not establish arbitrary substitution or global concurrency, and universal uniqueness remains unproved. This round adds 37 theorems / 184 audits (115 empty, 69 standard; new 4 empty, 33 standard). Fixed access, persistent holding and operational correspondence are explicit; overapproximating footprints are sufficient certificates, and overlap alone is not failure. General dynamic joint realization and universal uniqueness remain unproved. This round adds 42 theorems / 211 audits (119 empty, 92 standard; new 6 empty, 36 standard, no new classical-choice dependency). Continuous readiness is stronger than eventual success after repair; atomic steps, full mediation and current-state access are explicit, and universal uniqueness remains unproved. This round adds 33 theorems / 180 audits (113 empty, 67 standard; new 2 empty and 31 standard, 13 with classical choice). The inference from first-order content to global coverage has a proved wall. This is not unrestricted truth adequacy or a refutation of a shared necessary generative foundation; universal foundation uniqueness remains open. Corrected current status: retain every proved result, withdraw the stopping judgment for common-foundation uniqueness, and remove the unearned global-bijection gate. Investigate constituted distinctions and necessary explanatory relations within one unfolding. No new proof; nonduality does not establish universality. This round adds 38 theorems / 166 audits (125 empty, 41 standard; new 20 empty and 18 standard, no added classical choice). The underlying process may branch; fixed-history joining is functional. Laws, semantic possibility and acquired inquiry are distinguished. Universal explanatory correspondence remains open, without treating whole-world isomorphism or this unproved bridge as a stopping wall. New 26 declarations (including adapters/applications, not 26 independent discoveries) / 223 audits: new 6 empty and 20 standard, 8 with classical choice; 197 inherited audits are separate. Removing functionality enriches tests and constrains fibers. Native identity, probabilities, shared resources and applicability to every explanation are not claimed; the next connection is warranted translation across different relational articulations. This round: 43 new declarations / 256 audits (213 inherited; new 9 empty and 34 standard, 7 with classical choice). Incidence refinement uses local finiteness and connectivity; reference repair uses equal initial slot counts, complete answer agreement and finite fixed-pair outcomes. It licenses no physical copying and does not identify graph paths with temporal execution. Actual correspondence and operation-granularity changes remain open.",
+      "links": [
+        {
+          "label_zh": "当前论述",
+          "label_en": "Current account",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md"
+        },
+        {
+          "label_zh": "论证、反审与来源",
+          "label_en": "Argument, counterreview and sources",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "Ren 原话",
+          "label_en": "Ren’s direction",
+          "path": "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md"
+        },
+        {
+          "label_zh": "可用变化、保留与反审",
+          "label_en": "Available variation, retention and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-VARIATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "取得、校准与修正整合",
+          "label_en": "Acquisition, calibration and correction",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-INQUIRY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "唯一性、结构与反审",
+          "label_en": "Uniqueness, structure and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-STRUCTURE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "组合唯一性、来源与反审",
+          "label_en": "Compositional uniqueness, sources and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-COMPOSITION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "实际展开的保留判准与整合",
+          "label_en": "Unfolding-preservation criterion and integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "独立审查",
+          "label_en": "Independent review",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md"
+        },
+        {
+          "label_zh": "接合、接口与反审",
+          "label_en": "Joining, interfaces and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-INTEGRATION.md"
+        },
+        {
+          "label_zh": "规律、对应与完成范围",
+          "label_en": "Law, correspondence and completion scope",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "实际对应证据",
+          "label_en": "Actual correspondence evidence",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md"
+        },
+        {
+          "label_zh": "新推导独立审查",
+          "label_en": "Independent derivation review",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-REVIEW.md"
+        },
+        {
+          "label_zh": "普遍唯一性、最小反例与障碍",
+          "label_en": "Universal uniqueness, minimal rivals and the wall",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-UNIVERSALITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "解释充分性、分支与反审",
+          "label_en": "Adequacy, branching and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-BRANCHING-INTEGRATION.md"
+        },
+        {
+          "label_zh": "无限分支、紧致性与完整路径",
+          "label_en": "Infinite branching, compactness and whole runs",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-COMPACTNESS-INTEGRATION.md"
+        },
+        {
+          "label_zh": "共同实现、共享支持与情境身份",
+          "label_en": "Joint realization, shared support and contextual identity",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINTNESS-INTEGRATION.md"
+        },
+        {
+          "label_zh": "跨分支支持与全局共同占用",
+          "label_en": "Cross-branch support and common holding",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-GLOBAL-REALIZATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "变化中的支持、准备与完成",
+          "label_en": "Changing support, readiness and completion",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-CHANGING-SUPPORT-INTEGRATION.md"
+        },
+        {
+          "label_zh": "一阶真值与普遍唯一性的边界",
+          "label_en": "First-order truth and the uniqueness wall",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md"
+        },
+        {
+          "label_zh": "非二元纠正与目标复原",
+          "label_en": "Nondual correction and restored target",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md#9-nondual-correction-of-the-target-and-stopping-judgment"
+        },
+        {
+          "label_zh": "同一接合与共同必要结构",
+          "label_en": "Same joining and necessary common structure",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md"
+        },
+        {
+          "label_zh": "多结果共同结构",
+          "label_en": "Multivalued common structure",
+          "path": "theories/shengsheng-buxi-generative-existence/results/records/multivalued-joining-common-structure.json"
+        },
+        {
+          "label_zh": "跨分节共同细化",
+          "label_en": "Cross-articulation common refinement",
+          "path": "theories/shengsheng-buxi-generative-existence/results/records/incidence-common-refinement.json"
+        },
+        {
+          "label_zh": "共同引用与形成对应",
+          "label_en": "Shared reference and formation matching",
+          "path": "theories/shengsheng-buxi-generative-existence/results/records/retained-reference-joining-recovery.json"
+        }
+      ]
+    },
+    "F22": {
+      "id": "F22",
+      "title_zh": "关系恢复、组合唯一性与接口重建",
+      "title_en": "Relation recovery, composition uniqueness and reconstructed interfaces",
+      "claim_zh": "继承校准、结构对手、组合唯一性及实际展开的接合／替换、分支继续与同规律错误反例；另增空历史探针、局部单位唯一性与关系同构下保持、完整接续充要条件和整个状态接口恢复。容量及内部序列丢失反例保留。 最新从原有机制直接证明摘要充分性，推出有效规律与全部有限历史精确对应，不另给Exact或同态前提。 普遍化检验给出任意三元关系恢复的充要条件；完整成功答案与最少状态／边仍允许不同构机制，确定且可达、后续可区分时恢复唯一对应。 后续以共同条件下的复合接续问题推出有限分支双模拟，并由准确约简答案构造可从每个相容原生起点提升的编码规律；结构唯一性不再要求确定性。 再以后继紧致性放宽有限分支，取得结构对应及完整无限编码路径提升；有无限多个可区分后继的正例，也有全部有限复合答案相同而无限持续不同的反例。 共同问题再在明示成对紧致性下迫出步骤／接合对应并提升有限逐节点方案；实际占用／释放推出共享冲突。全部孤立共同问题仍可能遗漏指定部分的共享身份，固定搭配问题在有限实例中恢复。 再以完整下层支持覆盖及同级独占支持分离，将任意有限方案接到全局无重复与一次共同占用历史；遗漏关系的失败及修复正例均检查。每个固定 n 阶成功清单仍可漏掉 n+1 阶共享容量限制。 变化中的形成、撤去、占用与释放具有精确证书保持条件；任意允许有限历史在同一原生规律内都有完成后缀。静态清单会遗漏实际占用，释放／形成可恢复或建立准备；无限允许调度仍可能永不推进目标。 全体有限一阶身份、生成和接合真值一致，甚至有一个保留任意有限参数公式的映射，仍不足以迫出全范围可达结构的原生同构；Cantor 对角线给出真实不同构对手。保真映射再有全局覆盖则恢复同构。 Ren 非二元批评后的纠正：原反例未对准共同必要生成基础，不能作为原目标停止证据；给定位置之间可达未解释其构成性形成。 纠正后由同一部分接合关系形成全部有限情境，准确说明必须保留改变接续可能性的区别，冗余说明亦有共同因子；固定片段接合结果唯一时，共同内容带有唯一对应的操作。实际历史的全部嵌套接合问题恰好保留开始／结束接口，不抹去不同内部事件。 后续允许接合本身有多个结果：有限结果纤维及更丰富的分支问答迫出共同接合关系，原指定输入能实现每个代码结果；检验伙伴随同一编码转换，任意有限接合树提升。共同表示仍可有两个可区分结果。 不共用片段载体时，关联同测可导出单位置接合的共同细化及与既有投影相容的唯一保接合因子；但无引用关联问题会使所有有局部单位的片段同测，遗漏已消耗历史的不可自接合。保留同一配置的两个引用位置后，跨载体的有限形成历史可以匹配，精确说明必区分同一过程的空历史与已消耗历史。",
+      "claim_en": "Retains calibration, structural rivals, compositional uniqueness and native unfolding’s joining/substitution, branch-continuation distinctions and same-law error cases. Adds empty-history probes, unique units and transport, an exact completion criterion and state-interface recovery, retaining capacity and internal-word-loss counters. The latest concrete summary-sufficiency proof derives an effective law and exact finite-history correspondence from the unchanged mechanism, without a separate Exact or homomorphism premise. The universal attempt characterizes arbitrary ternary-relation recovery: complete success answers and minimum states/edges still allow nonisomorphic mechanisms; deterministic reachable continuation-separated realizations recover uniqueness. The continuation derives finite-branch bisimulation from compound questions at shared conditions and reconstructs code histories lifting from every compatible native start; scoped structural uniqueness no longer requires determinism. Successor compactness further replaces finite branching, preserving structural correspondence and lifting whole infinite code runs; a genuinely infinitely branching positive model contrasts with equal finite-modal answers but different infinite realization. Joint questions further force step/joint correspondence under explicit correlated-pair compactness and lift finite nodewise plans; acquisition/release derives shared-support conflict. Complete isolated joint profiles can still lose designated-part aliasing, recovered by fixed-partner questions in the finite witness. Complete descendant support and sibling exclusion further connect arbitrary finite plans to distinct global requests and a common holding history; omission failures and a positive repair are checked. Every fixed n-ary success list can still miss an (n+1)-ary capacity restriction. Formation, withdrawal, acquisition and release have exact certificate-preservation conditions; every permitted finite history has a completing suffix in the same native law. Static lists can lose actual occupation, release/formation renew readiness, and an infinite permitted schedule can still never progress. All finite first-order identity, step and joint truths, even preserved by one coherent elementary map on every finite source tuple, do not force native isomorphism of wholly root-reachable worlds. Cantor gives a genuine obstruction; adding global coverage yields isomorphism. Following Ren’s nondual objection, the counterexample is not accepted as a stopping test for a common necessary generative basis: reachability between supplied positions does not explain their constitution. After correction, all finite contexts arise from the same partial joining law. Exact accounts must retain differences affecting continuation and have a common factor even when redundant. Functional fragment joining induces a common operation. All nested joining questions on admitted histories recover exactly their beginning/ending interface while internal event differences remain real. The continuation permits multivalued joining itself: finite outcome fibers and richer branch questions force a common joining relation; each code result lifts from the originally specified inputs. Partners in questions translate through the same encoding, and every finite joining tree lifts. The common account can retain two distinguishable outcomes. Across different fragment carriers, incidence agreement yields a common refinement with one-position lifting and a unique join-preserving factor commuting with given projections. Unanchored incidence questions nevertheless collapse all local-unit fragments, losing the spent history’s impossible self-join. Retaining two reference slots in the same configuration recovers matched finite formation histories; exact accounts must distinguish idle and spent histories within one process.",
+      "scope_zh": "实际展开42项定理／64项新审计与该研究继承248项审计保持原范围；本轮23＋31项新定理，另74项继承审计，共128项：105空、23仅propext。新54项中43空、11仅propext，无自定公理。数学恢复不等于物理取得或唯一基础。 新增14项定理／18项空依赖审计，另192项继承依赖不变（150空、42标准）；独立审查接受。既有温控／氧梯度证据接入，但不等于该构造的物理实现或普遍根基完成；重叠继承不累加。 此独立一轮61项新定理／135项审计（123空、12继承propext；新61项全空）。已有14项有效规律推导保留；普遍目标为何必须区分相关原生关系仍未证，有限反例不整体否定普遍猜想。 此轮45项新定理／141项审计：103空、38标准；新19空、26标准，其中13含经典选择。有限分支、问题覆盖、约简／状态区分分别明示；前向充分性不恢复全部实际形成史，普遍解释范围仍未证。 此轮36项新定理／159项审计（102空、57标准；新5空、31标准）。后继紧致性是显式充分条件，非普遍定律或有限观察结论；完整持续、实际历史及一般共同接合各保留范围。 本轮56项新定理／183项审计（112空、71标准；新6空、50标准）。成对紧致性、问题覆盖与分离明示；逐节点共同方案不等于任意部分替换或全局并发，普遍唯一性仍未证。 此轮37项新定理／184项审计（115空、69标准；新4空、33标准）。固定接入、取得后保留及操作对应明示；支持范围可为过宽充分证书，不把相交自动当作失败。一般动态共同实现与普遍唯一性未证。 本轮42项新定理／211项审计（119空、92标准；新6空、36标准，无新增经典选择依赖）。连续准备比修复后的最终成功更强；原子步骤、全部相关变化受控与真实状态读取明示，普遍唯一性未证。 本轮33项新定理／180项审计（113空、67标准；新2空、31标准，其中13含经典选择）。一阶内容到全局覆盖的推论遇到已证明边界；不是对全部可能真理充分，也不否定不同实现共享必要生成基础。普遍根基唯一性未证。 当前状态修正：保留全部已证结论，撤回共同根基研究已撞墙的判断，不再预设全局双射为必要门槛；继续检验同一生成中分化与充分说明所必需的关系。本次无新证明，非二元亦不等于普遍唯一性已证。 本轮38项新定理／166项审计（125空、41标准；新20空、18标准，无新增经典选择）。原过程可分支，确定的是固定历史的接合；规律、语义可能性与实际取得检验分列。普遍解释对应仍待证明，不再以完整世界同构或当前未证连接宣布原目标撞墙。 新26项声明（含适配与应用，非26项独立发现）／223项审计：新6空、20标准，8项含经典选择；197项继承审计另列。删除单值条件同时加强检验并限定结果纤维，不声称原生身份、概率、共享资源或任意解释的普遍适用；下一连接是不同关系分节的有据互译。 本轮43项新声明／256项审计（213继承；新9空、34标准，其中7含经典选择）。关联细化用局部有限及连通；引用修复用初始位置数相同、完整问答一致及固定输入对有限结果。不给予物理复制许可，不把关系图路径当作时间执行；实际表述对应和步骤粒度变化仍待论证。",
+      "scope_en": "Native unfolding retains its 42 theorems / 64 new and 248 inherited audits. This study adds 23+31 theorems with 74 inherited audits: 128 total, 105 empty and 23 propext only; new 54 comprise 43 empty and 11 propext only. No custom axioms. Recovery is not acquisition or unique grounding. New 14 theorems / 18 empty audits; 192 inherited maps unchanged (150 empty, 42 standard), independently reviewed. Existing controller/oxygen evidence is integrated without equating those cases with this construction or completing universal grounding. Overlapping imports are not added. This separate round adds 61 theorems / 135 audits (123 empty, 12 inherited propext; all new 61 empty). Existing effective-law results remain credited. Universal separation of native relations remains unwarranted; the scoped counterexample does not globally refute the conjecture. This round: 45 new theorems / 141 audits, 103 empty and 38 standard; new 19 empty and 26 standard, including 13 with classical choice. Finite branching, question coverage and reduction/separation are explicit; forward adequacy does not recover every actual past or prove universal explanatory scope. This round adds 36 theorems / 159 audits (102 empty, 57 standard; new 5 empty, 31 standard). Successor compactness is an explicit sufficient condition, not a universal law or finite-observation inference; whole continuation, actual history and general joint realization retain distinct scopes. This round adds 56 theorems / 183 audits (112 empty, 71 standard; new 6 empty, 50 standard). Pair compactness, question coverage and separation are explicit; nodewise joint plans do not establish arbitrary substitution or global concurrency, and universal uniqueness remains unproved. This round adds 37 theorems / 184 audits (115 empty, 69 standard; new 4 empty, 33 standard). Fixed access, persistent holding and operational correspondence are explicit; overapproximating footprints are sufficient certificates, and overlap alone is not failure. General dynamic joint realization and universal uniqueness remain unproved. This round adds 42 theorems / 211 audits (119 empty, 92 standard; new 6 empty, 36 standard, no new classical-choice dependency). Continuous readiness is stronger than eventual success after repair; atomic steps, full mediation and current-state access are explicit, and universal uniqueness remains unproved. This round adds 33 theorems / 180 audits (113 empty, 67 standard; new 2 empty and 31 standard, 13 with classical choice). The inference from first-order content to global coverage has a proved wall. This is not unrestricted truth adequacy or a refutation of a shared necessary generative foundation; universal foundation uniqueness remains open. Corrected current status: retain every proved result, withdraw the stopping judgment for common-foundation uniqueness, and remove the unearned global-bijection gate. Investigate constituted distinctions and necessary explanatory relations within one unfolding. No new proof; nonduality does not establish universality. This round adds 38 theorems / 166 audits (125 empty, 41 standard; new 20 empty and 18 standard, no added classical choice). The underlying process may branch; fixed-history joining is functional. Laws, semantic possibility and acquired inquiry are distinguished. Universal explanatory correspondence remains open, without treating whole-world isomorphism or this unproved bridge as a stopping wall. New 26 declarations (including adapters/applications, not 26 independent discoveries) / 223 audits: new 6 empty and 20 standard, 8 with classical choice; 197 inherited audits are separate. Removing functionality enriches tests and constrains fibers. Native identity, probabilities, shared resources and applicability to every explanation are not claimed; the next connection is warranted translation across different relational articulations. This round: 43 new declarations / 256 audits (213 inherited; new 9 empty and 34 standard, 7 with classical choice). Incidence refinement uses local finiteness and connectivity; reference repair uses equal initial slot counts, complete answer agreement and finite fixed-pair outcomes. It licenses no physical copying and does not identify graph paths with temporal execution. Actual correspondence and operation-granularity changes remain open.",
+      "links": [
+        {
+          "label_zh": "Lean 源码",
+          "label_en": "Lean source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryNecessity.lean"
+        },
+        {
+          "label_zh": "证明对应与回执",
+          "label_en": "Proof correspondence and receipt",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "变化源码",
+          "label_en": "Variation source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryVariation.lean"
+        },
+        {
+          "label_zh": "恢复与记录源码",
+          "label_en": "Recovery and retention source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryRecovery.lean"
+        },
+        {
+          "label_zh": "新证明对应与回执",
+          "label_en": "New proof correspondence and receipt",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-VARIATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "取得与再用源码",
+          "label_en": "Acquisition and reuse source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryInquiry.lean"
+        },
+        {
+          "label_zh": "取得、校准与修正整合",
+          "label_en": "Acquisition, calibration and correction",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-INQUIRY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "整体与结构源码",
+          "label_en": "Global and structural source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryStructure.lean"
+        },
+        {
+          "label_zh": "相对唯一性源码",
+          "label_en": "Relative uniqueness source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryUniqueness.lean"
+        },
+        {
+          "label_zh": "唯一性、结构与反审",
+          "label_en": "Uniqueness, structure and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-STRUCTURE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "组合与一般存在性源码",
+          "label_en": "Composition and general existence source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryComposition.lean"
+        },
+        {
+          "label_zh": "组合唯一性、来源与反审",
+          "label_en": "Compositional uniqueness, sources and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-COMPOSITION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "实际展开的保留判准与整合",
+          "label_en": "Unfolding-preservation criterion and integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "独立审查",
+          "label_en": "Independent review",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md"
+        },
+        {
+          "label_zh": "原生接合与准确表述源码",
+          "label_en": "Native joining and exact-account source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/UnfoldingPreservation.lean"
+        },
+        {
+          "label_zh": "同一规律下的具体保留源码",
+          "label_en": "Same-law preservation source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/FormedUnfoldingPreservation.lean"
+        },
+        {
+          "label_zh": "完整实查回执",
+          "label_en": "Fresh complete receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/unfolding-preservation-checks/20261007T225350.404286Z/receipt.json"
+        },
+        {
+          "label_zh": "部分接合源码",
+          "label_en": "Partial joining source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoining.lean"
+        },
+        {
+          "label_zh": "局部单位与重建源码",
+          "label_en": "Local-unit reconstruction source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryLocalUnits.lean"
+        },
+        {
+          "label_zh": "接合、接口与反审",
+          "label_en": "Joining, interfaces and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-INTEGRATION.md"
+        },
+        {
+          "label_zh": "规律、对应与完成范围",
+          "label_en": "Law, correspondence and completion scope",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "实际对应证据",
+          "label_en": "Actual correspondence evidence",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md"
+        },
+        {
+          "label_zh": "新推导独立审查",
+          "label_en": "Independent derivation review",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-REVIEW.md"
+        },
+        {
+          "label_zh": "有效规律与全历史对应源码",
+          "label_en": "Effective law and whole-history source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/FormedEffectiveLaw.lean"
+        },
+        {
+          "label_zh": "新六模块实查回执",
+          "label_en": "New six-module receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/formed-effective-law-checks/20261007T231137.825236Z/receipt.json"
+        },
+        {
+          "label_zh": "普遍唯一性、最小反例与障碍",
+          "label_en": "Universal uniqueness, minimal rivals and the wall",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-UNIVERSALITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "一般关系恢复源码",
+          "label_en": "General relational recovery",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryUniversality.lean"
+        },
+        {
+          "label_zh": "最小机制反例源码",
+          "label_en": "Minimal-mechanism counterexample",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryMinimalModels.lean"
+        },
+        {
+          "label_zh": "确定性唯一性源码",
+          "label_en": "Deterministic uniqueness",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryDeterminism.lean"
+        },
+        {
+          "label_zh": "解释充分性、分支与反审",
+          "label_en": "Adequacy, branching and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-BRANCHING-INTEGRATION.md"
+        },
+        {
+          "label_zh": "复合问题与分支对应",
+          "label_en": "Compound tests and branching correspondence",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean"
+        },
+        {
+          "label_zh": "共同条件与历史反例",
+          "label_en": "Shared-condition and history witnesses",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranchingWitnesses.lean"
+        },
+        {
+          "label_zh": "编码规律与全历史提升",
+          "label_en": "Code law and whole-history lifting",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranchingRecovery.lean"
+        },
+        {
+          "label_zh": "无限分支、紧致性与完整路径",
+          "label_en": "Infinite branching, compactness and whole runs",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-COMPACTNESS-INTEGRATION.md"
+        },
+        {
+          "label_zh": "紧致性与路径提升",
+          "label_en": "Compactness and run lifting",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryCompactness.lean"
+        },
+        {
+          "label_zh": "无限分支正例与反例",
+          "label_en": "Infinite-branch positive and negative witnesses",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryInfiniteBranches.lean"
+        },
+        {
+          "label_zh": "共同实现、共享支持与情境身份",
+          "label_en": "Joint realization, shared support and contextual identity",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINTNESS-INTEGRATION.md"
+        },
+        {
+          "label_zh": "成对结构与共同方案",
+          "label_en": "Pair structure and joint plans",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean"
+        },
+        {
+          "label_zh": "共享冲突与身份边界",
+          "label_en": "Shared conflict and identity limits",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatorySharedSupport.lean"
+        },
+        {
+          "label_zh": "实际占用与释放",
+          "label_en": "Actual occupancy and release",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryLeaseDynamics.lean"
+        },
+        {
+          "label_zh": "跨分支支持与全局共同占用",
+          "label_en": "Cross-branch support and common holding",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-GLOBAL-REALIZATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "完整支持范围与方案组合",
+          "label_en": "Complete support and plan composition",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFootprints.lean"
+        },
+        {
+          "label_zh": "共同占用历史",
+          "label_en": "Common holding histories",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryCoexistence.lean"
+        },
+        {
+          "label_zh": "跨分支失败与容量边界",
+          "label_en": "Cross-branch failures and capacity limits",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryCrossBranch.lean"
+        },
+        {
+          "label_zh": "变化中的支持、准备与完成",
+          "label_en": "Changing support, readiness and completion",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-CHANGING-SUPPORT-INTEGRATION.md"
+        },
+        {
+          "label_zh": "变化与精确保留条件",
+          "label_en": "Changes and exact preservation conditions",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryChangingSupport.lean"
+        },
+        {
+          "label_zh": "同一规律中的稳定与完成",
+          "label_en": "Same-law stability and completion",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryStablePlans.lean"
+        },
+        {
+          "label_zh": "失效、形成、恢复与无限不推进",
+          "label_en": "Failure, formation, repair and infinite nonprogress",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatorySupportChanges.lean"
+        },
+        {
+          "label_zh": "一阶真值与普遍唯一性的边界",
+          "label_en": "First-order truth and the uniqueness wall",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md"
+        },
+        {
+          "label_zh": "全部有限关系公式",
+          "label_en": "All finite relational formulas",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFiniteLogic.lean"
+        },
+        {
+          "label_zh": "一致保真与不同构反例",
+          "label_en": "Elementary preservation without isomorphism",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryCardinalityWall.lean"
+        },
+        {
+          "label_zh": "非二元纠正与目标复原",
+          "label_en": "Nondual correction and restored target",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md#9-nondual-correction-of-the-target-and-stopping-judgment"
+        },
+        {
+          "label_zh": "同一接合与共同必要结构",
+          "label_en": "Same joining and necessary common structure",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md"
+        },
+        {
+          "label_zh": "由接合形成情境",
+          "label_en": "Joining-generated contexts",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningContexts.lean"
+        },
+        {
+          "label_zh": "共同操作因子",
+          "label_en": "Common operational factor",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryContextualStructure.lean"
+        },
+        {
+          "label_zh": "实际历史与必要接口",
+          "label_en": "Admitted histories and necessary interfaces",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryHistoryInterfaces.lean"
+        },
+        {
+          "label_zh": "多结果共同结构",
+          "label_en": "Multivalued common structure",
+          "path": "theories/shengsheng-buxi-generative-existence/results/records/multivalued-joining-common-structure.json"
+        },
+        {
+          "label_zh": "分支接合与整体提升",
+          "label_en": "Branch joining and compound lifting",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean"
+        },
+        {
+          "label_zh": "同一规律的多结果实证",
+          "label_en": "Multivalued witness in one law",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranchWitnesses.lean"
+        },
+        {
+          "label_zh": "跨分节共同细化",
+          "label_en": "Cross-articulation common refinement",
+          "path": "theories/shengsheng-buxi-generative-existence/results/records/incidence-common-refinement.json"
+        },
+        {
+          "label_zh": "共同引用与形成对应",
+          "label_en": "Shared reference and formation matching",
+          "path": "theories/shengsheng-buxi-generative-existence/results/records/retained-reference-joining-recovery.json"
+        },
+        {
+          "label_zh": "关联对应",
+          "label_en": "Incidence correspondence",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningIncidence.lean"
+        },
+        {
+          "label_zh": "相容投影的唯一因子",
+          "label_en": "Unique factor commuting with projections",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningRefinement.lean"
+        },
+        {
+          "label_zh": "已允许历史的丢失检验",
+          "label_en": "Loss test on admitted histories",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningAnchors.lean"
+        },
+        {
+          "label_zh": "保留引用的有限形成",
+          "label_en": "Finite formation with retained references",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningRegisters.lean"
+        }
+      ]
+    }
+  },
+  "owned_continuations": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "before_sha256": "e7a7d1c8c68afaa08c285dac3a84ba874f0efb6291668dd8701d8bf79e231e5b",
+      "appended_text": "\n## 15. Different articulations: common refinement and the reference that must survive\n\n**继续，2026-10-08。** 本轮得到共同细化及其准确范围，也发现并修复了一种真实的信息丢失：去掉片段名称后，如果问题每次只问“有某个伙伴”，已有局部单位的全部接合结构都可能被压成同一种回答。不能据此宣称找到了有内容的唯一基础。修复不需要重新预设独立对象，而要保留同一形成片段在后续接合中的共同指向；新的有限配置证明检查了这一连接。\n\n```text\nResult(s): reuse branching-tests-bisimulation; retain the four preceding\n  joining records at their checked scopes. New: incidence-common-refinement,\n  joining-open-map-factor, unanchored-incidence-collapse,\n  retained-reference-joining-recovery.\nDelta: compare different fragment types through role questions; construct a\n  common relation and its projection-preserving factor; prove this unanchored\n  language loses real joining distinctions; repair shared reference using\n  retained configurations and lift their finite formation histories.\nSupplied premises / correspondence: ternary joining interpretation; common\n  role or slot-command grammar and exact complete question agreement. Incidence\n  refinement uses locally finite incident joins and connected declared scope.\n  Retained-reference recovery uses finite outcomes per fixed input pair and equal initial slot counts.\nEvidence: 43 new Lean declarations, 213 inherited audits, 256 total;\n  frozen receipt 20261008T134730.060831Z. No independent-agent review claimed.\nBoundary: common refinement is mathematical, not proof of identical actual\n  provenance. One-position lifting is not fixed-pair lifting. Configuration\n  retention is not physical copying or an acquired memory mechanism.\nIntegration: same_is_bisimulation supplies the incidence adapter and the\n  retained-pair adapter; existing trace local units and the non-reusable spent\n  history supply a same-process failure, then a checked discriminating repair.\n```\n\nThe old §13 next connection has therefore advanced in two precise senses: a common refinement exists for the declared name-independent incidence target, and a stronger reference-retaining target matches formation across different fragment carriers. Neither claims that every equally adequate segmentation of actual reality already satisfies those target correspondences. The results live in the same study, with no new dated study copy.\n\n## 16. A common refinement without a shared fragment carrier\n\nFor each J, an `Occurrence J` consists of three fragments and an actual `J first second result` witness. `Position J` displays either a fragment or one of these witnessed joins. Entering a join through a role and leaving it through a role are relations derived from J. The common question vocabulary uses only these six role movements, Boolean conjunction/negation and continuation; it has no native fragment constants or atomic valuation.\n\nThis analytical distinction between a fragment and a witnessed joining does not posit two fundamental kinds. Each displayed join is constructed from the same fragments and J. Conversely, using one representation does not derive J's real interpretation. A path in this incidence graph is a relational inspection path, potentially traversing a result back to its formation, not automatically a physically executable temporal history.\n\n`match_incident` reuses the existing modal recovery theorem. Given equal role-question answers at x and y, and finitely many joins incident to y at each role, an actual join incident to x is matched by **one** join incident to y whose three positions all have matching answers. This condition is `LocallyFinite`: finite joins around a fragment/role, not the preceding weaker finite-results condition for a fixed input pair.\n\nDefine `Span J K` as all pairs of fragments with equal answers. Its joining relation holds exactly when the two coordinate joins both hold. `span_left_open` and `span_right_open` prove the projections preserve joins and lift every incident join while fixing one chosen participant. With equal answers at roots, local finiteness on both sides and incidence-connected declared scopes, `connected_common_refinement` proves both projections cover those scopes. A fragment map or bijection was not assumed.\n\nThe constructed span is a common **relational** refinement for this question family. It can contain several matches for a fragment; that is compatible with common content. Its existence is not evidence that two otherwise unrelated events share actual provenance or that every physical segmentation is adequately represented. The content and limits of its question family must still be tested.\n\n## 17. The unique factor and its exact strength\n\n`OpenMap J K p` explicitly means preservation of joining plus lifting an incident join while keeping one participant fixed. This is a substantial condition when supplied for a particular physical interpretation; it is derived for the span projections above rather than hidden in the definition of explanatory adequacy.\n\n`open_map_bisimulation` and `open_map_preserves_questions` check that such a map preserves all role questions, without a finiteness requirement. If an independently supplied common refinement L has open maps p and q into J and K, each x in L consequently determines the span position `(p x, q x)`. `universal_common_factor` proves there is one and only one function into the span commuting with those two projections, and it preserves joins.\n\n**The factor is not claimed to be open or onto.** The uniqueness concerns commuting with the supplied projections; it is not uniqueness of all carriers, all automorphisms, or all underlying realities. In particular, a local lift along each projection does not by itself synchronize arbitrary separately chosen participants. This exact qualification matters for the next test.\n\n## 18. A substantive loss: unanchored questions erase all unital distinctions\n\nThe attempt to remove fragment names exposes a limitation stronger than a single artificial graph. `units_role_total` proves that, when J has local left/right units, each fragment participates in a join in each role. `units_collapse_open` then constructs an open map to the one-fragment joining relation. Hence `units_same_incidence_questions` proves that **any two fragments of any two such unital joining structures agree on every question of this unanchored incidence language**. No finite-fiber hypothesis is used in this collapse theorem.\n\nThis common answer pattern is too weak for the intended full joining explanation. The counterreview uses the already admitted histories of one process. An actual witness here means a `Trace` admitted by the supplied P, not an empirical observation or a claim that every admissible trace has been physically executed. By `trace_has_units`, every admitted history maps to the coarse account. Yet the actual spent history in `budgetProcess` cannot join with itself: its ending condition no longer matches its required beginning. The coarse account allows its one code to self-join. `open_map_does_not_force_pair_lifting` checks this exact failure. The same law's two boundary idles also agree on incidence questions while the inherited anchored boundary probes distinguish them.\n\nNo independent ethical predicate was toggled, and no difference of whole-world cardinality is used. The lost information is an actual continuation failure already witnessed in the same process. The coarse account is exact, even reduced, **for the incidence language**; it is not a sufficient account of the richer fixed-input joining task. The theorem diagnoses an omitted relationship in this representation. It does not refute the generative account or justify declaring the universal programme impossible.\n\nThe missing relationship is joint reference. “For this fragment, some compatible second fragment exists” may choose a new second fragment every time. “These two retained fragments can join” keeps both inputs fixed. “The very same fragment fills both inputs” needs no externally supplied name, yet distinguishes the spent history from its coarse code. Thus dropping native names must not also drop relationships that keep track of the same formed contribution.\n\n## 19. Repair: retain references within formation and match the fixed inputs\n\n`ExplanatoryJoiningRegisters` represents a finite retained configuration as a list of fragments. A command `(i,j)` selects the two positions **in that same configuration**. A valid response witnesses `J a b z` and appends z; it does not replace the previous entries. Natural-number positions refer to the configuration's own ordering, including positions formed by earlier responses. They are not common native fragment names shared between J and K.\n\nThe action and question types are now the same even when F and G differ. With equal initial slot counts and `FiniteOutcomes K`, `retained_pair_result_matches` proves that equal answers for two configurations force a matched result from the two actual corresponding retained slots. The resulting extended configurations again answer alike. This fixes both inputs before choosing the result; it does not settle them independently after the join. In contrast to the incidence route, only finite outcomes for each fixed input pair are needed.\n\nWith equal initial slot counts and finite outcome fibers on both sides, `retained_history_matches` carries any finite sequence of these formation commands across the comparison. Earlier results can be referenced in later commands, including in more than one subsequent position. `trace_retains_configuration` proves that the final configuration extends the original list rather than rewriting its old references. The same command sequence and an answer-equivalent final configuration are preserved. `trace_length` also proves that one slot is appended per command, so initially aligned slot counts remain aligned. Equal initial counts are explicit; answer agreement alone was not used to infer them. This generalizes the comparison scope beyond an unshared tree syntax, while keeping it a finite relational formation arrangement.\n\nThis is **not** a theorem that a resource can be physically copied, that every recorded fragment remains available after consumption, or that a queried arrangement has actually been executed. Whether references denote reusable patterns, retained records, or material conditions with continuing availability must be accounted for in J and the full realization model. The existing joint-support and acquired-record mechanisms remain completed at their own scopes; the current list construction does not redo or supersede them. It also does not establish cycles, infinitely completed formation, probability or a change in the granularity of the basic joining operation.\n\n`singleton_self_question` connects the command `(0,0)` on `[x]` to `∃ z, J x x z`. The repaired language rejects the erroneous coarse self-join. More directly, `every_exact_account_retains_real_difference` proves that **within the same budget process**, every exact account of these retained questions distinguishes its initial empty history from its spent history. This last unavoidable-distinction theorem needs neither reducedness nor any finite-fiber assumption. The question is formed from joining and retained reference, with no separate success predicate.\n\n## 20. Affirmative inference, counterreview and remaining universal connection\n\n**正面推进。** 对“什么由什么形成，并怎样成为后续条件”的充分说明，保留有无某条关系还不够；如果后续作用取决于几个位置是否指向同一形成片段，这个共同指向也属于说明必须保留的内容。实际接续成败迫出这种区别。它不是先给出独立对象再外加关系的要求，也不是从逻辑语法直接证明现实的一元本体。\n\nThe substantive inference is conditional on the explanatory undertaking: when the continuation being explained depends on whether two positions reuse the same formed fragment, an account that forgets that relationship changes the explanandum. The checked within-process witness shows exactly how. Common structure can be reconstructed across different carriers while retaining these references; a one-element common profile alone is not evidence that the intended explanatory content has survived.\n\n| Counterreview | Finding |\n|---|---|\n| Was a common fragment carrier still assumed? | No in the new incidence and retained-configuration comparisons. The common query grammar and initial answer agreement remain explicit. |\n| Does name independence alone establish an adequate invariant? | No. The all-unital collapse is a checked failure of that inference. |\n| Was the failure an arbitrary model toggle? | No. Admitted histories, inherited local units and the same spent history's impossible self-join supply the real correspondence. |\n| Is native identity demanded regardless of consequence? | No. The repair retains shared references because they change joining outcomes; it does not recover every irrelevant token distinction. |\n| Is the unique factor a uniquely adequate ontology? | No. It is the unique join-preserving function commuting with two given open maps; stronger lifting is not claimed for that factor. |\n| Is the repaired grammar physically implemented? | Not proved here. Its semantic configuration and question completeness are supplied; actual acquisition and resource realization remain scoped obligations. |\n| Do all equally adequate segmentations agree on these questions? | Not proved. Real cross-description correspondence, including changes of granularity, remains to be warranted. |\n\n**Next connection / 下一连接。** Use the completed refinement and retained-reference recovery instead of repeating them. The universal inference now requires a warranted translation between actual explanatory articulations and these reference-sharing formation questions, particularly when one articulation packages several joins into one. A disagreement must be assessed against the same formation and continuation being explained. Neither raw same-name matching nor featureless existential connectivity supplies that warrant. This is still an open connection, not a new no-go result for the full theory.\n\n## 21. Checked evidence and integration for this continuation\n\nThe new sources are [JoiningIncidence](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningIncidence.lean) (9 declarations), [JoiningRefinement](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningRefinement.lean) (11), [JoiningAnchors](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningAnchors.lean) (12) and [JoiningRegisters](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningRegisters.lean) (11). Four scoped result identities distinguish the new correspondence, factor, loss theorem and repair; helpers, adapters and inherited counterexamples are not counted as independent discoveries.\n\n[Runner](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_explanatory_joining_refinement.py) · [frozen receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-refinement-checks/20261008T134730.060831Z/receipt.json) · [scoped integration checks](EXPLANATORY-JOINING-REFINEMENT-CHECKS.json).\n\nLean 4.29.1 checks 17 modules and 256 declarations. Inherited: 213 audits, 166 empty / 47 standard. New: 43, 9 empty / 34 standard: 23 only `propext`, 4 `propext` plus `Quot.sound`, 7 also `Classical.choice`. Whole closure: 175 empty / 81 standard. Sources and logs are frozen and hashes are bound to the successful receipt. The earlier successful 255-audit run remains preserved; the final version explicitly requires and preserves aligned slot counts, with the added length theorem, rather than reading provenance alignment into mere command matching. No custom postulates or proof holes; the general finite-test recovery inherits classical dependencies.\n\nThe formal genealogy reuses `branching-tests-bisimulation` through `same_is_bisimulation` / `same_forces_successor_match`, `trace_has_units` and `spend_cannot_self_join`. The earlier joining and question proofs remain unchanged. This is new checked correspondence and scope testing, not a claim to have discovered modal bisimulation, relational incidence representations or a previously unknown general uniqueness principle. The previous primary-source assessment in §§7 and 14 is credited at its recorded reading scope; no new empirical or literature review is claimed this round.\n\nThe previous study/chapter content and C30/F22 contributions are retained. The four previous result records retain their claims and proof receipts while their next-connection summaries credit this continuation. Incoming repository navigation and unrelated ethical/inquiry studies retain their own authority and validation scope; rendering their existing metadata does not constitute scientific acceptance of their work.\n",
+      "prior_bytes_preserved": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "before_sha256": "8524c5019e1f58aad949b840a29f696505b879d115b73c878388109ff10cdd4a",
+      "appended_text": "\n## 95. 不共用片段名称的共同细化\n\n现在比较片段类型不同的两种关系表述。问题先只使用一次真实接合中的三个角色：第一片段、第二片段、形成结果。片段与带有接合见证的组合一起构成关系图；这两个分析位置都从同一个接合关系形成，不是独立主体与外界。\n\n在每个片段的每个角色周围只有有限次接合、所比较范围关系连通的条件下，根位置对全部这些有限问题给出相同答案，便能导出覆盖两边的共同关系细化。Lean 已证明：细化中的接合在两边都成立；固定一个参与位置时，两边的相应接合都能提升。不必预先给出片段双射。\n\n这里的关系检查路径不等于物理时间历史；数学上存在共同细化，也不独自证明两个表述指向同一次实际发生。实际解释对应仍需有根据。\n\n## 96. 唯一对应的一个更准确形式\n\n若另一个共同细化已经有分别通向这两种表述的映射，并且映射保留接合、允许固定一个参与位置的接合提升，Lean 证明它有唯一函数通向上述共同细化，同时保持两边原有投影和接合。\n\n这是一个准确的结构唯一性：唯一的是与两个既有投影相容的因子，不是所有完整现实必须一一相同。因子本身没有被证明仍满足单位置提升或覆盖全部位置；不能把“保留接合”与这些更强性质混同。\n\n## 97. 不记住共同指向，会留下空泛共性\n\n反审发现一个真实限制：若问题每次只问“存在某个伙伴”，就可能在每次回答时换掉伙伴。Lean 已证明，具有局部左右单位的任意接合结构，其所有片段对上述无名称关联问题都给出同样答案。这甚至不需要有限性。\n\n这个共同答案模式不够解释完整接续。已有单次消耗过程中，有一步路径见证的消耗片段不能和自身接合，因其结束条件已经不再匹配开始条件；但压成一个代码的说明却允许自接合。它对前述狭窄问题确实精确，甚至最小，却对这个更丰富的接合任务失真。\n\n这是同一已允许历史关系中的遗漏，有已有路径和失败见证；没有据此宣称已观测到物理事件。它不是通过任意改变谓词否定完整理论，也不构成生成根基不可能的证明。失败的是“只要去掉名称、保留存在关联，就足以保留生成内容”这条局部路线。\n\n## 98. 从形成内部保留引用，而不预设共同对象名\n\n修复的方法是保留已经形成的有限配置。问题指定同一配置里的两个位置，接合后把有见证的结果接在末尾，之前的位置不被换掉。位置编号来自这份配置自身的顺序；两种表述不需要使用同一种原生片段名称。\n\n在初始配置具有相同位置数、对全部相应分支问题回答一致、每个固定输入对只有有限结果的条件下，Lean 已证明：固定两个原输入位置后，接合结果可以在另一表述中匹配；扩展后的配置继续同测，新增位置也保持对齐。任意有限的同一命令序列都有相应形成历史，旧配置完整保留，形成的新位置数一致。\n\n因此，后续几处关系可以继续引用前面同一次形成的结果，不必每次独立重新选代表。这个关系语义并不授权复制物理资源，也不证明实际记忆装置已经形成；实际可用性和执行仍应由完整模型承担。\n\n## 99. 哪一种区别被证明不可抹去\n\n新的无名称问题“让保留的同一片段占据两个输入位置，是否还能接合”，正确识别了上述压缩错误。更直接地，Lean 已证明：在同一个单次消耗过程里，任何精确回答这些配置问题的说明，都必须区分初始空历史与已消耗历史。\n\n这个必要区别定理不要求说明最小，也不要求有限分支，没有另外添加成功或善的谓词。它来自同一过程里可接续与不可接续的真实差异。\n\n这推进了原问题的一个核心回答：当“前面形成的东西怎样继续起作用”属于所解释内容时，几个后续位置是否共同指向同一形成片段，也必须被保留。仅有若干分别成立的存在关系不足以代替这个依存关系。这里的同一性是由所解释的接续后果要求保留的，不是把预设独立实体的全部身份都强加为解释门槛。\n\n## 100. 已完成的连接与仍待证明的普遍对应\n\n本轮共同细化、相容投影的唯一因子、无引用检验的退化及保留引用的修复，均已进入实际 Lean 检查。43项新声明加213项继承审计，共256项；新9空依赖、34标准依赖，其中7项含经典选择。完整依赖及反审保存在[原研究的接续章节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md#15-different-articulations-common-refinement-and-the-reference-that-must-survive)。辅助引理与应用不另算独立发现。\n\n需要继续论证的是：实际同样充分的不同表述，为什么能有据地翻译到保留这种引用的形成问题，尤其是一份表述把另一份的几个接合包成一个步骤时。现有结果覆盖不同片段载体，不自动覆盖任意基本步骤粒度变化。不能把这个普遍对应藏入“充分”的定义，也不能把尚未证明报告为已经证明不可能。\n\n**English continuation.** Role-only incidence questions construct a common relational refinement and a unique join-preserving factor relative to given open projections. But all unital joining structures collapse in that unanchored language: admitted non-reusable histories expose the lost fixed-input relation. Retained configurations repair the comparison across different fragment carriers. Equal initial slot counts, complete question agreement and finite fixed-pair outcomes force matched finite formation histories with shared references retained. Exact accounts within the same process must distinguish its idle and spent histories. Actual correspondence, memory realization, resource use and arbitrary changes of operation granularity remain explicit obligations.\n",
+      "prior_bytes_preserved": true
+    }
+  ],
+  "record_edits": {
+    "new_ids": [
+      "incidence-common-refinement",
+      "joining-open-map-factor",
+      "unanchored-incidence-collapse",
+      "retained-reference-joining-recovery"
+    ],
+    "updated_records": [
+      {
+        "id": "functional-joining-common-structure",
+        "before_sha256": "2aea65efd7f56ff87f81f856d6aa11b5218ed92f4aa4fe86e09c2ddf79a57138",
+        "after_sha256": "f4c06984361fe3978e0f67b204c0b3e721ef81953ad2f67b8fb68ffb5f2c9071",
+        "claim_hypotheses_and_bindings_preserved": true
+      },
+      {
+        "id": "multivalued-joining-common-structure",
+        "before_sha256": "cbf2025b5285b5a0d21450e9d7bba04f5488ada46a380b64a3241a7351fba1d3",
+        "after_sha256": "852fc3ab70b39a91fe0ce793590de1e82fad07b82575acd12bc3f0df202ff806",
+        "claim_hypotheses_and_bindings_preserved": true
+      },
+      {
+        "id": "joining-questions-survive-encoding",
+        "before_sha256": "cb0b00271a8f522e0cf8d4a86581c54d17025ae3d906d6fc8a2315334d210729",
+        "after_sha256": "197063e9f9571487bb92b361c0eea40f73e1093b1ae70f592e424f044b0071f3",
+        "claim_hypotheses_and_bindings_preserved": true
+      },
+      {
+        "id": "finite-joining-tree-lifting",
+        "before_sha256": "0cb4746fdf9235faf513b88ab95446572b427c3bcd8a2d5d5b46a4ec03590b62",
+        "after_sha256": "1bc2e779e5598be5a6b7d460bd69d4e52ffb558e75c8df221569b45402edf972",
+        "claim_hypotheses_and_bindings_preserved": true
+      }
+    ]
+  },
+  "preserved_other_entries": true,
+  "preserved_other_rendered_lines": true,
+  "reviewed_owned_sources": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md": "69c8ac75128c19463dab3ea03f4f9b97589e334a7a62ca379ee9301bbf88fe61",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md": "175e27901a8df8c1e552f18b5337da17a8f06b84a1e5d5833601d452981f8d23",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningIncidence.lean": "c5bd28266d38a2db108955263215706a75815aa72281643d1f544fb17d50964a",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningRefinement.lean": "2e4b6c6dbde751551dc956c0322683853a41fbf828a53caaa19ef8cf39e788b2",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningAnchors.lean": "e6a989180b3e999647bb89c3a1b4a15bfc989b3d15d9de5f89abf88d892024d9",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningRegisters.lean": "299df4bf8ec33316d13c076891f9eb192914f6d128341bcca835cf07713542f8"
+  },
+  "pending_shared_changes_at_edit": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md",
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+      "sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md"
+    ],
+    "removed_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "theories/meta-attractor/COMMON-ORGANIZATION.md"
+    ]
+  }
+}

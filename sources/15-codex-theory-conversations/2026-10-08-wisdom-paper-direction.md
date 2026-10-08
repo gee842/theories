@@ -91,3 +91,12 @@ Ren 对上一轮以 Dancy 对照安排主线的明确纠正，原话：
 > 因为道德考虑的是变化之后的结果，因此它本身是对becoming的判断，而我们的模型可以判断becoming
 
 编者说明：本输入把本会话的正面论证推进到“道德评价生成变化，生成评价的普遍原则支撑具体道德判断”。[主研究第14节](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#morality-as-judgment-of-becoming)更正上一轮的研究优先级，复用已完成的G0/J路线与生成评价成果。关于完整历史、判断范围和模型对应的展开由AI撰写；这段输入未被改写为Ren已经接受全部细节、所有智慧已被证明或全部模型已被验收。
+
+<a id="continue-deriving-generative-judgments"></a>
+## 继续展开生成判断 / Continue deriving generative judgments
+
+在明确“道德判断becoming，普遍生成原则提供根据”的研究方向后，Ren指示：
+
+> 继续
+
+编者说明：[主研究第15节](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#deriving-a-family-of-moral-judgments)将共同前提展开为一组判断及其改变条件。情境、对照和哲学解释由AI构造；不是Ren逐项提供的案例，不是独立历史样本，也没有将继续指示改写为对全部结论的验收。

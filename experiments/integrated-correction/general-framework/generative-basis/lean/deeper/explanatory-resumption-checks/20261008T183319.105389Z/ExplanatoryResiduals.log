@@ -1,0 +1,16 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-resumption-kq6xj_l5/ExplanatoryResiduals.lean:164:19: error: unexpected token 'prefix'; expected rcasesPat
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-resumption-kq6xj_l5/ExplanatoryResiduals.lean:164:26: error: unexpected token '⟩'; expected ':'
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-resumption-kq6xj_l5/ExplanatoryResiduals.lean:165:62: error: unexpected identifier; expected ':'
+'Generative.ExplanatoryResiduals.advance_resume' does not depend on any axioms
+'Generative.ExplanatoryResiduals.trace_resume' does not depend on any axioms
+'Generative.ExplanatoryResiduals.cut_resume' does not depend on any axioms
+'Generative.ExplanatoryResiduals.advance_has_native_trace' does not depend on any axioms
+'Generative.ExplanatoryResiduals.residual_trace_has_native_trace' does not depend on any axioms
+'Generative.ExplanatoryResiduals.cut_trans' does not depend on any axioms
+'Generative.ExplanatoryResiduals.cut_sequence' does not depend on any axioms
+'Generative.ExplanatoryResiduals.execution_reaches_skip' does not depend on any axioms
+'Generative.ExplanatoryResiduals.execution_iff_completed_cut' does not depend on any axioms
+'Generative.ExplanatoryResiduals.same_preserves_resumption' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryResiduals.advance_matches' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryResiduals.partial_history_matches' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryResiduals.resumption_after_inserted_history' depends on axioms: [sorryAx]

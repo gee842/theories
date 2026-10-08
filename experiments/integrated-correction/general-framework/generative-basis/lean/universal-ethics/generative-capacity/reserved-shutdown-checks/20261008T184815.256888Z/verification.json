@@ -1,0 +1,68 @@
+{
+  "status": "failed",
+  "utc": "20261008T184815.256888Z",
+  "retained_run": "reserved-shutdown-checks/20261008T184815.256888Z",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "sources": {
+    "AlignmentInquiry": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentInquiry.lean",
+      "sha256": "f40ad6179db326830edcdf8ec511f9069833a361f71181fd60166e0f72c0a23c"
+    },
+    "EffectiveCommand": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EffectiveCommand.lean",
+      "sha256": "7247ca05597f2f916fb409213d3814d48ad9a7037fb95017146d106273d58553"
+    },
+    "AcquiredCorrection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AcquiredCorrection.lean",
+      "sha256": "5448267c53e610b28bd030dfb1a894be840c307d54cd76e4be3695f196e8cd62"
+    },
+    "FaultTolerantCorrection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FaultTolerantCorrection.lean",
+      "sha256": "38f978fcabfaadca45c90b2298cf57502b839c6c9b93c3b9d0827d9ac2cb66ac"
+    },
+    "CorrectionReconfiguration": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionReconfiguration.lean",
+      "sha256": "4bd7160762f4bb697c72293133c91934e3622674f75990f6328d186abd7425e7"
+    },
+    "EvidenceQualifiedCorrection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvidenceQualifiedCorrection.lean",
+      "sha256": "a3c87bdfa01dbf6c25da19d4bbc0d6e028744b504d95023c76607379cc20327f"
+    },
+    "FallibleInspection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FallibleInspection.lean",
+      "sha256": "998bca3b8a24fd84c957e11b5b3cf9ef838fba5f76a432b0cbb35255a18c6aa3"
+    },
+    "TemporalInspection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/TemporalInspection.lean",
+      "sha256": "4916c6b1d5cbf38b7cebdd378fa508c799e279c56daaf5359334c4a73bf48694"
+    },
+    "MediatedControl": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MediatedControl.lean",
+      "sha256": "9a412dfca848a09f1b27e60b5551058a83597b1e131728f19096f9dafe888b7a"
+    },
+    "MediatedControlCases": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MediatedControlCases.lean",
+      "sha256": "0bf23de4df2cfa3c7a88b1feef0f42cafdc261b81c7185fd0bafa2cd29539aec"
+    },
+    "RecoverableControl": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RecoverableControl.lean",
+      "sha256": "05b158915cb6f387b5fef71bf9925b0221ba04d5bb1994243de3c820a266468c"
+    },
+    "ReservedShutdown": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReservedShutdown.lean",
+      "sha256": "54d52ae57fb590fa34cf9fc1ac1b30e12c854246a2caa77a2abce4225a582717"
+    },
+    "ReservedShutdownCases": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReservedShutdownCases.lean",
+      "sha256": "f5fbba237f883934857a2510da522efd0084a92e3d2fa3929c35443b3bbd2df0"
+    }
+  },
+  "checker_sha256": {
+    "check_reserved_shutdown.py": "e64cc93322a7aeb70b285559cf3110a662e116debccf42740bebb0402496d8bd",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_recoverable_control.py": "99bb5496244d7b79d5ecd0f2eca907e6375aa0563268868bb3b9a2d349f825c9"
+  },
+  "scope": "A current authorized stop grant, three reserved units/steps, protected existing issue-deliver-enact protocol and bounded interruption intervals support shutdown during incomplete recovery. Every admissible schedule of at least initial remaining reserve minus two supervisor cycles stops; pending evidence and actual writes remain retained. No successful recovery suffix is needed. Supervisor scheduling, bounded interruption, durable gate/state and physical command correspondence remain supplied.",
+  "version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "ReservedShutdownCases.lean:30:17: error(lean.synthInstanceFailed): failed to synthesize instance of type class\n  Inhabited World\n\nHint: Adding the command `deriving instance Inhabited for TemporalInspection.World` may allow Lean to derive the missing instance.\nReservedShutdownCases.lean:48:54: error: `generation` is not a field of structure `Packet`\n"
+}

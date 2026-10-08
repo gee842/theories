@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-09",
+  "scope": "Owned M24 suffix, three links and six actually read/authored sources; unrelated rows and pending reviews retained.",
+  "additions": {
+    "claim_zh": " 作用前的付费复查现已接入实际送达任务；按实际相关条件支持接续，并区分行动保护与原比较理由的持续成立。",
+    "claim_en": " Paid pre-effect review now consumes the actually delivered task, supporting continuation under relevant conditions while separating action protection from continued comparative warrant.",
+    "scope_zh": " 适用性接续新增14项定理／22项审计，205项继承定理／354项继承审计分列；在给定作用规律下允许无关处境字段变化，保留复查耗尽行动支持及报告不覆盖作用的失败。缺少根据或支持时保留未完成任务，不把等待当成安全；相关性取得、报告形成与真实需求接续仍待说明。",
+    "scope_en": " The applicability continuation adds 14 theorems/22 audits, separately from 205 inherited theorems/354 audits. The supplied outcome law admits changes to irrelevant context fields, retaining review-induced action exhaustion and reports failing to cover the effect. Missing grounds or support retain an unfinished task without certifying waiting safe; relevance acquisition, report formation and actual continuation of needs remain open."
+  },
+  "links": [
+    {
+      "label_zh": "任务适用条件与支持",
+      "label_en": "Task applicability and support",
+      "path": "theories/shengsheng-buxi-generative-existence/results/records/pending-task-context-applicability.md"
+    },
+    {
+      "label_zh": "作用前复查Lean连接",
+      "label_en": "Pre-effect review Lean composition",
+      "path": "experiments/market-generativity/meta-attractor/PendingTaskApplicability.lean"
+    },
+    {
+      "label_zh": "适用性实际回执",
+      "label_en": "Applicability checked receipt",
+      "path": "experiments/market-generativity/meta-attractor/pending-task-applicability-verification.json"
+    }
+  ],
+  "reviewed_source_changes": {
+    "theories/shengsheng-buxi-generative-existence/results/records/pending-task-context-applicability.md": {
+      "old": null,
+      "new": "4e96ae66db62291ff934730c6d4d73a673561db2617da6324addf00954da9bf3"
+    },
+    "experiments/market-generativity/meta-attractor/PendingTaskApplicability.lean": {
+      "old": null,
+      "new": "96c66b6c499a11ab255054289c886088baccf684991ec16bb64ecffb181edd89"
+    },
+    "experiments/market-generativity/meta-attractor/pending-task-applicability-verification.json": {
+      "old": null,
+      "new": "d8e5d96c5d0b3798ecf1efcb0afe266ebf4cfd69f3c82c3507b5d20662d40090"
+    },
+    "theories/meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md": {
+      "old": "759f5035104638d6ba63fd3cdd40bb0c4e4a3d7c3922ef5052cebbad2659ad40",
+      "new": "958cb5e9afb6803437834bedc1ab5b4329afa090bc91abd9a2272232cf1f01d3"
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COLLECTIVE-DESTRUCTION-INTEGRATION.md": {
+      "old": "f362c3d867050a5e6c95d89b3e2a5b2743976d19d0ca7197dd1aeab62a07f327",
+      "new": "0a69979d5c65f3f78d415f63ba40adec7a2d73b8ea885a3391483eb4ecd668ff"
+    },
+    "theories/shengsheng-buxi-generative-existence/results/records/acquired-revision-of-pending-task.md": {
+      "old": "cc58b2a4297f32f52ab30f077cc1a3ea9e781bf90aec60736436f8123001d263",
+      "new": "f84f2d93f75a3fc3d327ca151e0331d6710f968066ad0b0e232bc53458500e6b"
+    }
+  },
+  "old_row_sha256": "153cc7940027eaf2a0169f669336e161a1ebaf05e2369e8d3111feb2cfca229e",
+  "new_row_sha256": "4d27ca4d057f6f10572c88b7ce4b961f43ec3333c258de3af1a106e6fe7827d2"
+}

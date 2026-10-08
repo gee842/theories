@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "date": "2026-10-09",
+  "participants": 24,
+  "trial_rows": 51152,
+  "channel_measurements": 7008,
+  "triplets": 2304,
+  "original_fragments_checked": 48,
+  "complete_updating_originals_hash_verified": 1,
+  "full_original_participant": 24,
+  "full_original_table_extraction_matches": true,
+  "published_rounded_statistics_matched": 5,
+  "scope": "Provenance, exact extraction, complete participant inclusion and numerical contrast checks; no new sample, latent-state identification or infinite convergence.",
+  "new_theorems": 0,
+  "new_laboratory_experiments": 0,
+  "independent_review": false,
+  "source_sha256": {
+    "MEMORY-UPDATING-PLAN.md": "98756e31154949a9a47284ab436cb94514d2fb3a4461bb365693bd5dfa7b6c70",
+    "MEMORY-UPDATING.md": "950ba4a78a68cb91f3584dd7bf0705c6a5318d36a44b20d82d2fcf30c601e370",
+    "fetch_memory_updating.py": "64e75996aa74a2dd5408f7b52ae38629d2c05d04e58c7f012011caf5f938e0e7",
+    "analyze_memory_updating.py": "cfb1ae0e04bccaf01a5ddbd1c40de1d43bb71a14a540c3cd5dbc5b6a96289385",
+    "check_memory_updating.py": "ae2362d507ec3302da9e3487e1375eb265fd845706069b9e49a2b238a109390b",
+    "plot_memory_updating.py": "43a8ed75600b5cbfb992c1170d003076852fb8788735198567486b95ff59d678",
+    "memory-updating-results.json": "79c84f137f4d823019764d67d9e1d4db02cc6a8c60c38c0032ab87cb6dc8b710",
+    "memory-updating-observations.json": "6a3895edf2cf92166c45837a8bfb8cd583af8aa6ebbd37f4d631f0606fe77b9d",
+    "memory-updating-triplets.json": "9bd092b7d1c82997eea1c43e17986f08ca0ceffd84f5b9ed11d140f543caf66e",
+    "memory-updating-extraction-audit.json": "8d2d31b99aeaf859571c25a2c0a63072f5168ba45424a028817091cc848ec0ac",
+    "memory-updating-results.png": "a6dd2dda98c78d8103cd8efafbad5e4b251a0435d304d5900f13daa648adbb9f",
+    "memory-updating-results.svg": "21d13a96994c06b4fdca827c03dda14078dffc248248a2ca415579beb09610d0"
+  },
+  "retrieval_sha256": "a2302d0e0f0c5922535547583633c76918b2ef9dc4999f94f932760cdc9b21da"
+}

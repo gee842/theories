@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "id": "effective-capacity-and-eventual-reachability",
+  "title": {
+    "zh": "共同实现的准备步骤界与实际变化",
+    "en": "Preparation bounds and actual changes in joint realization"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-08T19:22:44.046898+00:00",
+  "claim": {
+    "zh": "在固定关系法则与实现含义下，实际前缀后的 n 步共同实现，可沿同一中间配置接成前缀长度加 n 步的共同实现。旧共同激活规律给出一步准备改变当前一步能力、解除共同条件后任何有限步均不能共同实现，以及能力未被实际使用的路径。无界可达的回溯复用已有推论，不另计成果。",
+    "en": "Under a fixed relational law and realization interpretation, joint realization within n steps after an actual prefix is reachable through the same intermediate configuration within prefix length plus n steps. The existing joint-activation law supplies changed one-step capacity after preparation, loss of joint realization at every finite horizon after release, and a path leaving available joint capacity unused. Unbounded backward reachability repeats the established inference and is not counted as another result."
+  },
+  "hypotheses": [
+    {
+      "zh": "同一固定过程、稳定的端点实现含义和一条实际可行有限前缀；每个组合由同一条历史的同一端点共同实现。",
+      "en": "One fixed process, stable endpoint meanings and an admitted finite prefix; all claims in a bundle share one history and endpoint."
+    },
+    {
+      "zh": "步数从各自当前配置开始计算，不直接等于物理时间；同一绝对截止时点的比较必须计入已经经过的准备。",
+      "en": "Event counts start at each current configuration and do not automatically represent physical duration; a common absolute deadline must count the preparation already spent."
+    },
+    {
+      "zh": "具体应用原样复用 JointContinuationClassification 的耦合、事件规律和终末配置；不声称从零产生该耦合。",
+      "en": "The application reuses JointContinuationClassification’s supplied coupling, event law and terminal configurations without claiming the coupling’s causal origin."
+    },
+    {
+      "zh": "逻辑、关系表示和可能性解释明示；无概率、最优策略、无限接续或 G0/J 输入。",
+      "en": "Logic, representation and the existential interpretation remain explicit; no probability, optimal policy, infinite continuation or G0/J input is supplied."
+    }
+  ],
+  "correspondence": {
+    "zh": "同一活动中准备、共同激活和解除条件形成不同后续。Trace 拼接携带同一实际中间配置；history_meaning 保持旧历史的实现含义。当前新增量是有界细化及旧共同活动应用，祖先可达／当前形成／行使的区分与原接触形成证据由既有可能性接口保留。",
+    "en": "Preparation, joint activation and release differentiate continuations within one activity. Trace concatenation retains the same intermediate configuration; history_meaning preserves the original realization semantics. The delta is a bounded refinement and application to an existing common activity. The prior possibility interface retains the ancestral-reachability/formed-condition/exercise distinction and its actual contact-formation evidence."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalBecoming.lean",
+  "aliases": [
+    "RelationalBecoming.within_after_prefix",
+    "RelationalBecoming.actual_preparation_changes_effective_capacity",
+    "RelationalBecoming.released_cannot_reach_joint",
+    "RelationalBecoming.actual_release_loses_eventual_joint",
+    "RelationalBecoming.prepared_capacity_can_end_without_joint_realization"
+  ],
+  "dependencies": [],
+  "related": [
+    {
+      "id": "relational-generative-comparison",
+      "detail": {
+        "zh": "使用同一旧共同激活规律；该记录把共同组合接到明确规范比较，本记录计算实际前缀与步骤界，二者没有新证明依赖。",
+        "en": "Uses the same inherited joint-activation law. That record connects bundles to explicit normative comparison; this one accounts for actual prefixes and event bounds. Neither is a new proof input to the other."
+      }
+    },
+    {
+      "id": "wisdom-root",
+      "detail": {
+        "zh": "生成判断的解释关联：准备、损失和实际运用应进入适用范围，但本地界不能独自证明完整智慧根基。",
+        "en": "Interpretive connection to judgments of becoming: preparation, loss and actual exercise belong in the relevant scope; this local bound does not establish the full root of wisdom."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalBecoming.lean",
+      "detail": {
+        "zh": "actual_release_loses_eventual_joint 保留真实共同可能丧失；prepared_capacity_can_end_without_joint_realization 保留有能力而未实际共同实现的终末路径。",
+        "en": "actual_release_loses_eventual_joint retains genuine loss of a joint possibility; prepared_capacity_can_end_without_joint_realization retains a terminal path with available but unexercised joint capacity."
+      }
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md",
+      "detail": {
+        "zh": "这是旧有限机会的准备，不解释耦合首次形成、维持成本或恢复；无界推论已有旧证明，不重复声称发现。",
+        "en": "This is preparation within the inherited finite opportunity, not the coupling’s first formation, maintenance costs or recovery. The unbounded inference already has an earlier proof and is not claimed as a new discovery."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "范围限于固定规律、端点含义、存在性有限路径及明示步骤计量。不证明全体可能性随生成严格增大，不推出善、不抹去实际变化，也不完成零附加实质公理或整个变化解释。",
+    "en": "Limited to a fixed law, endpoint meanings, existential finite paths and the stated event-count measure. It establishes neither universal expansion of possibilities, ethical worth, absence of actual becoming, zero substantive axioms nor the full explanation of change."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 实查12项本模块定理／18项声明审计，9项空依赖、9项仅 propext 和／或 Quot.sound；部分为旧推论的重述，不是12项新成果。继承28项定理／49项空审计分列，总67项审计；作者反审与来源对应，未声称独立代理验收。",
+    "en": "Lean 4.29.1 checked this module’s 12 theorem declarations and 18 declaration audits: 9 empty and 9 using only propext and/or Quot.sound. Some restate prior inferences; these are not 12 new results. Separately credits 28 inherited theorems and 49 empty audits, 67 audits total. Includes author counterreview and source correspondence, without claiming independent-agent acceptance."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalBecoming.lean",
+      "role": "proof",
+      "sha256": "8e7be2b1a9773e75c1f3a222b77d4ed39256cae98baf3eb5acb1894b7a199be7",
+      "declarations": [
+        "RelationalBecoming.within_after_prefix",
+        "RelationalBecoming.actual_preparation_changes_effective_capacity",
+        "RelationalBecoming.released_cannot_reach_joint",
+        "RelationalBecoming.actual_release_loses_eventual_joint",
+        "RelationalBecoming.prepared_capacity_can_end_without_joint_realization"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "role": "proof",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "declarations": [
+        "Generative.trace_append_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointContinuationClassification.lean",
+      "role": "proof",
+      "sha256": "e508683cc80832744a28f44c69f9c2561701cd099219448b75cfdb474c0786ee",
+      "declarations": [
+        "JointContinuationClassification.Realized"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-becoming-checks/20261008T181112.046979Z/verification.json",
+      "role": "receipt",
+      "sha256": "e610e56b6768e4861f75137df9ccca198ec350765d512d5158083d170b891e7b",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "1f79e8b5dceba40938728e48284da852fe575471a0ac2e3c7b663f14e111df66",
+      "declarations": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "31e052b04830b1f89f8538d9501b52a8336078fa4e18c6304e2648f09606cc8a",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-POSSIBILITY-INTERFACE.md",
+      "role": "integration",
+      "sha256": "4946e23fad19116eabfd5ed4e2b6733e7736b165d383e817dbef3ce0ef5e170e",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-09-generative-relation-change-goal.md",
+      "role": "provenance",
+      "sha256": "8ce677d4e04ce3ee260df566b9538ee5b2e1e9a74244e6a1180f7fad674daf55",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-PORT-RENEWAL.md",
+      "role": "integration",
+      "sha256": "a52f53a048b56213279c61d12325ef55db78185a57ad3aa5d316fd699a23588f",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalBecoming.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-becoming-checks/20261008T181112.046979Z/verification.json",
+      "sha256_pointer": "/source_sha256/RelationalBecoming",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-becoming-checks/20261008T181112.046979Z/verification.json",
+      "sha256_pointer": "/source_sha256/GenerativeCore",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointContinuationClassification.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-becoming-checks/20261008T181112.046979Z/verification.json",
+      "sha256_pointer": "/source_sha256/JointContinuationClassification",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "复用已完成的实际形成、生产与材料再形成连接，检验其支持的共同构成性论断在目标范围内是否必要；不将旧因果组合重新列为待完成，也不把新的表示适配当作普遍奠基。",
+    "en": "Reuse the completed actual formation, production and material-regeneration connection to test the necessity of the common constitutive claim over the intended scope. Do not reopen the old causal composition or treat another representation adapter as universal grounding."
+  },
+  "history": [
+    {
+      "zh": "2026-10-09：登记准备步骤的有界细化和旧共同激活应用；明确信用 GenerativePossibility 的已有无界推论与实际形成见证。保留首次检查失败和随后成功回执，不把重复推论计作独立发现。",
+      "en": "2026-10-09: registers the preparation-budget refinement and application to the existing joint-activation law. Explicitly credits GenerativePossibility’s prior unbounded inference and actual formation witness. Preserves the failed first check and successful corrected receipt; repeated inferences are not independent discoveries."
+    },
+    {
+      "zh": "2026-10-09接续：同一研究补全作用、支承、维持、转化与结束的解释及实质反审；复用既有依存和端口定理。当前主张、Lean源码与回执不变，不新增数学成果或普遍完成状态。",
+      "en": "2026-10-09 continuation: the same study develops operative support, maintenance, transformation and ending with substantive counterreview, reusing existing dependency and port results. The checked claim, Lean source and receipt remain unchanged; no new mathematical result or universal completion is recorded."
+    },
+    {
+      "zh": "2026-10-09：同一研究接入独立的共同交叉项约化成果并接纳Becoming整体范围澄清；本记录的准备界主张、旧证明及回执未改变。",
+      "en": "2026-10-09: the same study adds the separate joint-cross-contribution reduction and the whole-Becoming scope clarification. This record’s preparation-bound claim, proof and receipt remain unchanged."
+    },
+    {
+      "en": "9 October 2026: the statement chapter gained an appended section on renewing and consuming formation (relational-renewal-classification). The earlier text is byte-identical; this record's claim, proof and receipt are unchanged. Hash updated after reading the change.",
+      "zh": "2026年10月9日：陈述章末尾新增“更新与消耗”一节（relational-renewal-classification）。原有文字逐字节不变；本记录的主张、证明与回执不变。读过改动后更新哈希。"
+    },
+    {
+      "zh": "2026-10-09：核读新增有限修复解释及共享章中不可返回前提的明确化。仅更新所涉陈述／整合来源版本；原主张、证明与回执保持，正净修复不满足旧不可返回的前提。",
+      "en": "2026-10-09: Reviewed the added finite-repair explanation and explicit no-return premise in the shared chapter. Updates only affected statement/integration source versions; prior claims, proofs and receipts remain. Positive net repair does not satisfy the earlier no-return premise."
+    },
+    {
+      "zh": "2026-10-09：核读共享章中并行新增的 G0 对象修正及 C 条件比较，并核读其原指令及整合节。该比较属于另项研究，本记录的局部动力学、证明与范围不变；不将它计入本次数学验收。",
+      "en": "2026-10-09: Read concurrent clarification of G0’s object and the C-conditional comparison in the shared chapter, with its source instruction and integration section. That comparison belongs to another study; this record’s local dynamics, proof and scope remain unchanged and do not claim its mathematical acceptance."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+'CopyingRegistration.State' does not depend on any axioms
+'CopyingRegistration.initial' does not depend on any axioms
+'CopyingRegistration.readAt' depends on axioms: [propext]
+'CopyingRegistration.spendOne' does not depend on any axioms
+'CopyingRegistration.dock' does not depend on any axioms
+'CopyingRegistration.lose' does not depend on any axioms
+'CopyingRegistration.slip' does not depend on any axioms
+'CopyingRegistration.tick' depends on axioms: [propext]
+'CopyingRegistration.operate' depends on axioms: [propext]
+'CopyingRegistration.Aligned' does not depend on any axioms
+'CopyingRegistration.Registered' depends on axioms: [propext]
+'CopyingRegistration.Tracks' does not depend on any axioms
+'CopyingRegistration.dock_forms_actual_contact' depends on axioms: [propext, Quot.sound]
+'CopyingRegistration.dock_preserves_alignment' depends on axioms: [propext]
+'CopyingRegistration.loss_preserves_alignment' depends on axioms: [propext]
+'CopyingRegistration.dock_accounts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CopyingRegistration.loss_accounts' depends on axioms: [propext, Quot.sound]
+'CopyingRegistration.slip_accounts' depends on axioms: [propext, Quot.sound]
+'CopyingRegistration.tick_accounts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CopyingRegistration.tick_tokens' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CopyingRegistration.correct_read_refines_old_tick' depends on axioms: [propext]
+'CopyingRegistration.registered_read_is_correct' depends on axioms: [propext, Quot.sound]
+'CopyingRegistration.tick_keeps_registered' depends on axioms: [propext]
+'CopyingRegistration.tick_keeps_tracks' depends on axioms: [propext, Quot.sound]
+'CopyingRegistration.registered_operation_refines' depends on axioms: [propext, Quot.sound]
+'CopyingRegistration.registered_inheritance' depends on axioms: [propext, Quot.sound]
+'CopyingRegistration.Event' does not depend on any axioms
+'CopyingRegistration.step' depends on axioms: [propext]
+'CopyingRegistration.run' depends on axioms: [propext]
+'CopyingRegistration.process' depends on axioms: [propext]
+'CopyingRegistration.run_is_trace' depends on axioms: [propext]
+'CopyingRegistration.step_accounts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CopyingRegistration.history_accounts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CopyingRegistration.step_retains_built_prefix' depends on axioms: [propext, Quot.sound]
+'CopyingRegistration.history_retains_built_prefix' depends on axioms: [propext, Quot.sound]
+'CopyingRegistration.formation' does not depend on any axioms
+'CopyingRegistration.copying' does not depend on any axioms
+'CopyingRegistration.prepared' depends on axioms: [propext]
+'CopyingRegistration.actual_contacts_are_formed' depends on axioms: [propext]
+'CopyingRegistration.formed_registration_is_complete' depends on axioms: [propext, Quot.sound]
+'CopyingRegistration.no_contact_no_copy' depends on axioms: [propext]
+'CopyingRegistration.incompatible_docking_is_not_registration' does not depend on any axioms
+'CopyingRegistration.formation_then_faithful_copy' depends on axioms: [propext]
+'CopyingRegistration.slip_changes_actual_copy' depends on axioms: [propext]
+'CopyingRegistration.loss_stalls_with_stock_remaining' depends on axioms: [propext]
+'CopyingRegistration.rebinding_restores_fidelity' depends on axioms: [propext]
+'CopyingRegistration.correcting_contact_does_not_rewrite_past' depends on axioms: [propext]
+'CopyingRegistration.altered_contact_can_preserve_this_signal' depends on axioms: [propext]
+'CopyingRegistration.census' does not depend on any axioms
+'CopyingRegistration.copiedCells' depends on axioms: [propext]
+'CopyingRegistration.matched_difference_is_contact' depends on axioms: [propext]
+'CopyingRegistration.matched_totals_different_copy' depends on axioms: [propext]
+'CopyingRegistration.no_census_only_copy' depends on axioms: [propext]
+'CopyingRegistration.erroneous_daughter_can_be_faithfully_inherited' depends on axioms: [propext]

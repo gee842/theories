@@ -1,0 +1,103 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T13:54:20.837484+00:00",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean",
+  "source_sha256": "d46f15d2e512aca17541c493f224860ab4489f6da5ed8c1fd21bcd1b379e3c14",
+  "checker_sha256": "9c56041847cd19af88a4f86de698e10fc7313dca078866f2cb99e00b7b9d1024",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-inquiry-necessity-checks/20261008T135418.446592Z",
+  "theorems": 18,
+  "explicit_declaration_audits": 27,
+  "dependencies": {
+    "Generative.ScientificInquiryNecessity.tally": [],
+    "Generative.ScientificInquiryNecessity.committed": [],
+    "Generative.ScientificInquiryNecessity.wrong": [],
+    "Generative.ScientificInquiryNecessity.apart": [],
+    "Generative.ScientificInquiryNecessity.tally_add": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.ScientificInquiryNecessity.tally_mono": [
+      "propext"
+    ],
+    "Generative.ScientificInquiryNecessity.pointwise_coverage_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.ScientificInquiryNecessity.fallible_inquiry_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.ScientificInquiryNecessity.error_budgets_require_difference": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.ScientificInquiryNecessity.blind_coverage_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.ScientificInquiryNecessity.common_processing_cannot_add_difference": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.ScientificInquiryNecessity.tally_as_unit_weight": [
+      "propext"
+    ],
+    "Generative.ScientificInquiryNecessity.distributional_coverage_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.ScientificInquiryNecessity.likelihoodRead": [],
+    "Generative.ScientificInquiryNecessity.likelihood_attains_overlap": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.ScientificInquiryNecessity.overlap_plus_excess": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.ScientificInquiryNecessity.run": [],
+    "Generative.ScientificInquiryNecessity.run_preserves_relation": [],
+    "Generative.ScientificInquiryNecessity.adaptive_blindness_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.ScientificInquiryNecessity.excludes_blind_realization": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.ScientificInquiryNecessity.adaptive_service_excludes_blindness": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.ScientificInquiryNecessity.ten_percent_errors_require_eighty_distinctions": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.ScientificInquiryNecessity.cases5": [],
+    "Generative.ScientificInquiryNecessity.evidence0": [],
+    "Generative.ScientificInquiryNecessity.evidence1": [],
+    "Generative.ScientificInquiryNecessity.sharp_fallible_witness": [],
+    "Generative.ScientificInquiryNecessity.abstention_is_not_discrimination": [
+      "propext"
+    ]
+  },
+  "commands": [
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "-o",
+      "ScientificInquiryNecessity.olean",
+      "ScientificInquiryNecessity.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "ScientificInquiryNecessityAudit.lean"
+    ]
+  ],
+  "log_sha256": {
+    "compile.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axioms.txt": "cd57827d90389bd8fa93ad7a370e95f25639fa609096b277684a1ef04cfd7061"
+  },
+  "scope": "Finite natural-weight coupling bound with separate commitment and wrong-answer counts; common processing cannot increase paired differences; adaptive relational simulation preserves blindness across different state types. Actual marginal laws, complete access, interpretation and scientific scope are supplied. No universal ontology or ethical warrant is proved."
+}

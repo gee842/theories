@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-09",
+  "entry_ids": [
+    "C01"
+  ],
+  "suffixes": {
+    "claim_zh": " 包容生成与退化的整体范围须保留接续相容性；情境可以通过同一活动实际改变，而不从每一步任意重选。",
+    "claim_en": " An inclusive scope covering generation and degeneration must retain continuation coherence; context may actually change through the same activity without being freely reselected at each step.",
+    "scope_zh": " 包容历史的相容性新增20项Lean定理／30项声明审计及28项继承审计：合并步骤精确保留原历史并集，当且仅当该并集对接合封闭。保留情境给出精确实现；后继情境支持从同一历史导出，实际改变与终止均保留。57项依赖报告空，终止证明含标准propext。实际关系与解释仍给定，强的零实质公理基础未完成。",
+    "scope_en": " Inclusive-history coherence adds 20 Lean theorems / 30 new declaration audits plus 28 inherited audits: pooling steps preserves exactly the original history union iff that union is closed under joining. Retained context gives an exact realization; successor context support is derived from the same history, preserving actual change and termination. 57 dependency reports are empty; terminality uses standard propext. Actual relation and interpretation remain supplied; the strong zero-substantive-axiom foundation is unfinished."
+  },
+  "links_added": [
+    {
+      "label_zh": "生成之论根基范围",
+      "label_en": "Becoming foundational scope",
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BECOMING-FOUNDATION.md"
+    },
+    {
+      "label_zh": "包容范围与相容接续",
+      "label_en": "Inclusive scope and coherent continuation",
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md#16-inclusive-becoming-and-coherent-continuation"
+    },
+    {
+      "label_zh": "情境接续实查",
+      "label_en": "Context-continuation verification",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/becoming-compatibility-verification.json"
+    }
+  ],
+  "reviewed_sources": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BECOMING-FOUNDATION.md": {
+      "before": null,
+      "after": "140cc1680dc94001157d02da26cec6b6695e81685df719c193e2faabe02bc8f3"
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md": {
+      "before": "0043a1849d5fb7c121d0e90fc997a72f3d398d0b1a8c96a013367895dea6f419",
+      "after": "41eec259167dc4247f615fa38f0d4669afbfae2458ba2c5f66277f09e7dbac65"
+    },
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/becoming-compatibility-verification.json": {
+      "before": null,
+      "after": "e65455d516b7a25086c50adc4680e7204b0974d17fe3f5b6960b083870e264ae"
+    }
+  },
+  "prior_study_prefix_sha256": "0043a1849d5fb7c121d0e90fc997a72f3d398d0b1a8c96a013367895dea6f419",
+  "prior_study_reviewed_sha256": "0043a1849d5fb7c121d0e90fc997a72f3d398d0b1a8c96a013367895dea6f419",
+  "unrelated_entries_preserved": true,
+  "scope": "Owned bilingual C01 additions and three authored/read sources only. Historical receipts and unrelated review hashes unchanged."
+}

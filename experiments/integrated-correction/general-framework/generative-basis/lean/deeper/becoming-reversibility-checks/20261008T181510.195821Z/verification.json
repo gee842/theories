@@ -1,0 +1,18 @@
+{
+  "status": "failed",
+  "utc": "20261008T181510.195821Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "becoming-reversibility-checks/20261008T181510.195821Z",
+  "source_sha256": {
+    "GenerativeCore": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "BecomingReversibility": "b656993ebbdea26653eb611fe1532712264fb12e408a63dd684659088b82247a"
+  },
+  "checker_sha256": {
+    "check_becoming_reversibility.py": "0f4c41f5a8913d906b464bfa346a467fb7115800939bcd830c7cf88017b217dc",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Fixed-law finite reachability: preservation of all endpoint possibilities is equivalent to return; failure to return has a constructive lost endpoint witness. Incomplete observation can hide that loss. Supplied laws and state identity remain; no ethical ranking, physical irreversibility or zero-substantive-premise foundation is established.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "BecomingReversibility.lean:90:2: error: Alternative `nil` is not needed\n"
+}

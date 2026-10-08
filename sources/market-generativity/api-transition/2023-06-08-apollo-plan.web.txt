@@ -1,0 +1,246 @@
+📣 Apollo will close down on June 30th. Reddit’s recent decisions and actions have unfortunately made it impossible for Apollo to continue. Thank you so, so much for all the support over the years. ❤️ : r/apolloapp (https://www.reddit.com/r/apolloapp/comments/144f6xm/apollo_will_close_down_on_june_30th_reddits/)
+citeturn66view0 [wordlim: 200] Crawled: last week; Content type: text/html; Source: open({"ref_id":"https://www.reddit.com/r/apolloapp/comments/144f6xm/apollo_will_close_down_on_june_30th_reddits/","lineno":86}); Total lines: 3072
+L0: cite0†Skip to main content L1: 
+L2: Open menu Open navigation Go to Reddit Home
+L3: 
+L4: [Input: Search Reddit]
+L5: 
+L6: cite1†Log In Log in to Reddit
+L7: 
+L8: Expand user menu Open settings menu
+L9: 
+L10: cite2†Go to apolloapp L11: 
+L12: cite2†r/apolloapp L13: 
+L14: • 3y ago
+L15: 
+L16: cite3†iamthatis L17: # 📣 Apollo will close down on June 30th. Reddit’s recent decisions and actions have unfortunately made it impossible for Apollo to continue. Thank you so, so much for all the support over the years. ❤️
+L18: 
+L19: cite4†Announcement 📣 L20: 
+L21: Hey all,
+L22: 
+L23: It's been an amazing run thanks to all of you.
+L24: Eight years ago, I posted in the Apple subreddit cite5†about a Reddit app I was looking for beta testers for , and my life completely changed that day. I just finished university and an internship at Apple, and wanted to build a Reddit client of my own: a premier, customizable, well-designed Reddit app for iPhone. This fortunately resonated with people immediately, and it's been my full time job ever since.
+L25: Today's a much sadder post than that initial one eight years ago. June 30th will be Apollo's last day.
+L26: 
+L27: I've talked to a lot of people, and come to terms with this over the last weeks as talks with Reddit have deteriorated to an ugly point, and in the interest of transparency with the community, I wanted to talk about how I arrived at this decision, and if you have any questions at the end, I'm more than happy to answer. This post will be long as I have a lot of topics to cover.
+L28: Please note that I recorded all my calls with Reddit, so my statements are not based on memory, but the recorded statements by Reddit over the course of the year. One-party consent recording is legal in my country of Canada. Also I won't be naming names, that's not important and I don't want to doxx people.
+L29: ## What happened initially?
+L30: 
+L31: On April 18th, cite6†Reddit announced changes that would be coming to the API , namely that the API is moving to a paid model for third-party apps. Shortly thereafter we received phone calls, however the price (the key element in an announcement to move to a paid API) was notably missing, with the intent to follow up with it in 2-4 weeks.
+L32: The information they did provide however was: we will be moving to a paid API as it's not tenable for Reddit to pay for third-party apps indefinitely (understandable, agreed), so they're looking to do equitable pricing based in reality. They mentioned that they were not looking to be like Twitter, cite7†which has API pricing so high it was publicly ridiculed†www.wired.co.uk .
+L33: I was excited to hear these statements, as I agree that long-term Reddit footing the bill for third-party apps is not tenable, and with a paid arrangement there's a great possibility for developing a more concrete relationship with Reddit, with better API support for users. I think this optimism cite8†came across in my first post about the calls with Reddit.
+L34: ## When did they announce pricing?
+L35: 
+L36: Six weeks later, they called to discuss pricing. I quickly put together a small app where I could input the prices and it would output monthly/yearly cost, cost for free users, paid users, etc. so I'd be able to process the information immediately.
+L37: The price they gave was $0.24 for 1,000 API calls. I quickly inputted this in my app, and saw that it was not far off Twitter's outstandingly high API prices, at $12,000, and with my current usage would cost almost $2 million dollars per month, or over $20 million per year. That is not an exaggeration, that is just multiplying the 7 billion requests Apollo made last month by the price per request.
+L38: Could I potentially get that number down? Absolutely given some time, but it's illustrative of the large cost that Apollo would be charged.
+L39: ## Why do you say Reddit's pricing is "too high"? By what metric?
+L40: 
+L41: Reddit's promise was that the pricing would be equitable and based in reality. The reality that they themselves have posted data about over the years is as follows (copy-pasted from cite9†my previous post ):
+L42: > Less than 2 years ago cite10†they said they crossed $100M in quarterly revenue for the first time ever†www.redditinc.com , if we assume despite the economic downturn that they've managed to do that every single quarter now, and for your best quarter, you've doubled it to $200M. Let's also be generous and go far, far above industry estimates and say you made another $50M in Reddit Premium subscriptions. That's $550M in revenue per year, let's say an even $600M.
+L43: In 2019, cite11†they said they hit 430 million monthly active users†www.redditinc.com , and to also be generous, let's say they haven't added a single active user since then (if we do revenue-per-user calculations, the more users, the less revenue each user would contribute). So at generous estimates of $600M and 430M monthly active users, that's $1.40 per user per year, or $0.12 monthly. These own numbers they've given are also seemingly cite12†inline with industry estimates as well†www.cnbc.com .
+L44: Apollo's price would be approximately $2.50 per month per user, with Reddit's indicated cost being approximately $0.12 per their own numbers.
+L45: 
+L46: A 20x increase does not seem "based in reality" to me.
+L47: ## Why doesn't Reddit just buy Apollo and other third-party apps?
+L48: 
+L49: This was a cite13†very common comment†reddit.com across the topics: "If Apollo has an apparent opportunity cost of $20 million per year, why not just buy them and other third-party apps, as they did with Alien Blue?"
+L50: I believe it's a fair question. If these apps apparently cost so much, an easy solution that would likely make everyone happy would be to simply buy these apps out. So I brought that up to them during a call on May 31st where I was suggesting a variety of potential solutions.
+L51: ## Bizarre allegations by Reddit of Apollo "blackmailing" and "threatening" Reddit
+L52: 
+L53: About 24 hours after that call with Reddit, I received cite14†this odd message on Mastodon†christianselig.com :
+L54: 
+L55: > "Can you please comment publicly about the internal Reddit claim that you tried to “blackmail” them for a $10,000,000 payout to “stay quiet”?"
+L56: 
+L57: Then yesterday, moderators told me they were on a call with CEO Steve Huffman (spez), and he said the following per their transcript:
+L58: > Steve: "Apollo threatened us, said they’ll “make it easy” if Reddit gave them $10 million."
+L59: >
+L60: > Steve: "This guy behind the scenes is coercing us. He's threatening us."
+L61: 
+L62: Wow. Because my memory is that you didn't take it as a threat, and you even apologized profusely when you admitted you misheard it. It's very easy to take a single line and make it look bad by removing all the rest of the context, so let's look at the full context.
+L63: I can only assume you didn't realize I was recording the call, because there's no way you'd be so blatantly lying if you did.
+L64: As said, a common suggestion across the many threads on this topic was "If third-party apps are costing Reddit so much money, why don't they just buy them out like they did Alien Blue?" That was the point I brought up. If running Apollo as it stands now would cost you $20 million yearly as you quote, I suggested you cut a check to me to end Apollo. I said I'd even do it for half that or six months worth: $10 million, what a deal!
+L65: The bizarre thing is - initially - on the call you interpreted that as a threat. Even giving you the benefit of the doubt that maybe my phrasing was confusing, I asked for you to elaborate on how you found what I said to be a threat, because I was incredibly confused how you interpreted it that way. You responded that I said "Hey, if you want this to go away…" Which is not at all what I said, so I reiterated that I said "If you want to Apollo to go quiet, as in it's quite loud in terms of API usage".
+L66: What did you then say?
+L67: 
+L68: > Me: "I said 'If you want Apollo to go quiet'. Like in terms of- I would say it's quite loud in terms of its API usage."
+L69: >
+L70: > Reddit: "Oh. Go quiet as in that. Okay, got it. Got it. Sorry."
+L71: >
+L72: > Reddit: "That's a complete misinterpretation on my end. I apologize. I apologize immediately."
+L73: The admission that you mistook me, and the four subsequent apologies led me to believe that you acknowledged you mistook me and you were apologetic. The fact that you're pretending none of this happened (or was recorded), and instead espousing a different reality where instead of apologizing for taking it as a threat, you're instead going the complete opposite direction and saying "He threatened us!" is so low I almost don't believe it.
+L74: But again, I've recorded all my calls with you just in case you tried something like this.
+L75: 
+L76: Transcript of this part of the call: cite15†https://gist.github.com/christianselig/fda7e8bc5a25aec9824f915e6a5c7014†gist.github.com L77: 
+L78: Audio of this part of the call: cite16†http://christianselig.com/apollo-end/reddit-third-call-may-31-end.m4a†christianselig.com L79: (If you take issue with the call being recorded please remember that I'm in Canada and so long as one participant in the call (me) consents to being recorded, it's legal. If anyone would like the recording of the full call, I'm happy to provide.)
+L80: 
+L81: I bring this up for two reasons:
+L82: 
+L83:   * I don't want Reddit slandering me to internal employees or public people by saying I threatened them when they reality is that they immediately apologized for misunderstanding me.
+L84:   * It shows why I've finally come to the conclusion that I don't think this situation is recoverable. If Reddit is willing to stoop to such deep lows as to slander individuals with blatant lies to try to get community favor back, I no longer have any faith they want this to work, or ever did.
+L85: ## What is an API or an API request anyway?
+L86: 
+L87: Some people are confused about this situation and don't understand what an API is. An API (Application Programming Interface) is just a way for an app to talk to a website. As an analogy, pretend Reddit is a bouncer. Historically, you can ask Reddit "Could I have the comments for this post?" or "Can you list the posts in AskReddit?". Those would be one API request each, and Reddit would respond with the corresponding data.
+L88: Everything you do on Reddit is an API request. Upvoting, downvoting, commenting, loading posts, loading subreddits, checking for new messages, blocking users, filtering subreddits, etc.
+L89: 
+L90: The situation is changing so that for each API request you make, there's a portion of a penny charged to the developer of that app. I think that is very reasonable, provided, well, that the price they charge is reasonable.
+L91: ## Claims that Apollo is "inefficient"
+L92: 
+L93: Another common claim by Reddit is that Apollo is inherently inefficient, using on average 345 requests per day per user, while some other apps use 100. I'd like to use some numbers to illustrate why I think this is very unfairly framing it.
+L94: Up until a week ago, cite17†the stated Reddit API rate limits†github.com that apps were asked to operate within was 60 requests per minute per user. That works out to a total of 86,400 per day. Reddit stated that Apollo uses 345 requests per user per day on average, which is also in line with my findings. Thats 0.4% of the limit Reddit was previously imposing, which I would say is quite efficient.
+L95: As an analogy (can you tell I love analogies?), to scale the numbers, if I was to borrow my friend’s car and he said “Please don’t drive it more than 864 miles” and I returned the car with 3.4 miles driven, I think he’d be pretty happy with my low use. The fact that a different friend one week only used 1 mile is really cool, but I don't think either person is "inefficient".
+L96: That being said, if Reddit would like to see Apollo make further optimizations to get its existing number lower, I’m genuinely more than happy to do so! However the 30 day limit they’ve given me after announcing the pricing to when I will start getting charged significant amounts of money is not enough time to deal with rewriting large parts of my app to lower total requests, while also changing the payment model, transitioning users, and ensuring this is all properly tested and gets through app review.
+L97: Further, Reddit themselves said to me that the majority of the cost isn't the server, it's the opportunity cost per user, so the focus on 100 versus 345 calls, rather than the cost per user, doesn't sound genuine. At the very least providing even a bit more time to lower usage to their new targets would be feasible if they've historically provided it, and it's not the majority of the costs anyway.
+L98: > Me: "Because I assume the majority of it isn't server costs. I assume the majority is the opportunity cost per user."
+L99: >
+L100: > Reddit: "Exactly."
+L101: ## Why not just increase the price of Apollo?
+L102: One option many have suggested is to simply increase the price of Apollo to offset costs. The issue here is that Apollo has approximately 50,000 yearly subscribers at the moment. On average they paid $10/year many months ago, a price I chose based on operating costs I had at the time (server fees, icon design, having a part-time server engineer).
+L103: Those users are owed service as they already prepaid for a year, but starting July 1st will (in the best case scenario) cost an additional $1/month each in Reddit fees. That's $50,000 in sudden monthly fee that will start incurring in 30 days.
+L104: So you see, even if I increase the price for new subscribers, I still have those many users to contend with. If I wait until their subscription expires, slowly month after month there will be less of them. First month $50,000, second month maybe $45,000, then $40,000, etc. until everything has expired, amounting to hundreds of thousands of dollars. It would be cheaper to simply refund users.
+L105: I hope you can recognize how that's an enormous amount of money to suddenly start incurring with 30 days notice. Even if I added 12,000 new subscribers at $5/month (an enormous feat given the short notice), after Apple's fees that would just be enough to break even.
+L106: Going from a free API for 8 years to suddenly incurring massive costs is not something I can feasibly make work with only 30 days. That's a lot of users to migrate, plans to create, things to test, and to get through app review, and it's just not economically feasible. It's much cheaper for me to simply shut down.
+L107: ## So what is the REAL issue you're having?
+L108: 
+L109: Hopefully that illustrates why, even more than the large price associated with the API, the 30 day timeline between when the pricing was announced and developers will be charged is a far, far, far bigger issue and not one I can overcome. Much more time would be needed to overhaul the payment model in my app, transition existing users from existing plans, test the changes, and have users update to the new version.
+L110: As a comparison, when Apple bought Dark Sky and announced a shut down of their API, knowing that this API was at the core of many businesses, cite18†they provided 18 months before the API would be turned off†blog.darksky.net . When the 18 months came, they ultimately extended it another 12 months, resulting in a total transition period of 30 months. While I'm not asking for that much, Reddit's in comparison is 30 days.
+L111: ## Reddit says you won't get your first bill until August 1st, though!
+L112: 
+L113: The issue is the size of the bill, not when it will arrive. Significant, significant charges for the API will start building up with 30 days notice on July 1st, the fact that the bill for those charges being 30 days from then is not important. If you hear that your electricity bill is going up 1,000x and the company tells you, "Don't worry, the bill only comes at the end of the month", I hope you understand how that isn't comforting.
+L114: ## What would be a good price/timeline?
+L115: 
+L116: I hope I explained above why the 30 day time limit is the true issue. However in a perfect world I think lowering the price by half and providing a three month transition period to the paid API would make the transition feasible for more developers, myself included. These concessions seem minor and reasonable in the face of the changes.
+L117: ## I thought you said Reddit would be flexible on the timeline?
+L118: 
+L119: That was my understanding as well based on what they said on a call on May 4th:
+L120: > Reddit: "If there's an entity who's like 'Hey I'm showing really good progress', you know trying to like we're trying to get a contract in place, we're trying to do all that type of stuff, I don't think you're going to see us be like, you know, like overly aggressive on that timeline. And I feel pretty confident about that point by the way based on conversations I've heard internally."
+L121: 
+L122: However when asking about more time, such as a 90 day transition period to make the changes, they said:
+L123: > Reddit: "On the 90-day transition, remember that billing doesn't kick in until July 1. So you won't see your first bill from July until the beginning of August, and it won’t be due until the end of August (It’s net 30 day billing). You do, however, have to sign an agreement to get paid level access on July 1."
+L124: ## Did you explicitly ask Reddit for more time?
+L125: 
+L126: Yes, my last email to them (including Steve) said:
+L127: > In terms of timeline, what concerns me most is the short nature of it before I start incurring costs. I have a large amount of users at price points that I won’t be able to afford to support with 30 days notice. For instance, users who subscribed for a year for $10 six months ago when I had no idea any of this was coming, amounts to $0.83 per month or $0.58 after Apple’s cut.
+L128: Even if I’m able to decrease my API usage down to the number in your charts, that still puts me in the red for everyone of those users for awhile with no recourse. A situation like this is one that is legitimately making me legitimately leaning toward shutting down the app, but one that I could salvage if given more time to transition from the free API to the paid API.
+L129: >
+L130: > In prior calls you mentioned that provided I kept communicating and progress was being made, the timeline wasn’t an absolute.
+L131: >
+L132: > Is that still the case, or is it now the case that the date is set in stone?
+L133: That was a week ago and I've yet to receive any further contact from Reddit.
+L134: ## Isn't this your fault for building a service reliant on someone else?
+L135: 
+L136: To a certain extent, yes. However, I was assured this year by Reddit not even that long ago that no changes were planned to be made to the API Apollo uses, and I've made decisions about how to monetize my business based on what Reddit has said.
+L137: 
+L138: > January 26, 2023
+L139: >
+L140: > Reddit: "So I would expect no change, certainly not in the short to medium term. And we're talking like order of years."
+L141: 
+L142: Another portion of the call:
+L143: > January 26, 2023
+L144: >
+L145: > Reddit: "There's not gonna be any change on it. There's no plans to, there's no plans to touch it right now in 2023.
+L146: >
+L147: > Me: "Fair enough."
+L148: >
+L149: > Reddit: "And if we do touch it, we're going to be improving it in some way."
+L150: ## Will you build a competitor? Move to one of the existing alternatives?
+L151: 
+L152: I've received so many messages of kind people offering to work with me to build a competitor to Reddit, and while I'm very flattered, that's not something I'm interested in doing. I'm a product guy, I like building fun apps for people to use, and I'm just not personally interested in something more managerial.
+L153: These last several months have also been incredibly exhausting and mentally draining, I don't have it in me to engage in something so enormous.
+L154: ## Will you sell Apollo?
+L155: 
+L156: Probably not. Maybe if the perfect buyer came along who thought they could turn Apollo into something cool and sustainable, but I'd rather the app just die if it would go to a company that would turn something I worked really hard on into something that would ruin its legacy.
+L157: 
+L158: To be clear: I am not threatening anyone in the previous paragraph.
+L159: ## Reddit states that the Twitter comparison is unfair
+L160: 
+L161: Reddit stated on the first call that they don't want to be like Twitter:
+L162: > Reddit: "I think one thing that we have tried to be very, very, very intentional about is we are not Elon, we're not trying to be that, we're not trying to go down that same path. [...] We are trying to do is just use usage-based pricing, that will hopefully be very transparent to you, and very clear to you. Or we're not trying to go down the same path that you may have seen some of our other peers go down."
+L163: They now state that the comparison of how close their pricing comes to Twitter is an unfair one, and that when they said that above, they were apparently referring not to the pricing, but to the decision Twitter made to ban third-party apps at a rule level, not a pricing level.
+L164: 
+L165: I think regardless of whatever their intent/meaning behind the comparison to Twitter was, the result is the same: the pricing will kill third-party apps, just as Twitter did.
+L166: I said this to Reddit, and they responded that they don't think Twitter's pricing is unreasonable, and that if anything, if Twitter reversed the rule about third-party apps, they would probably increase the prices as well.
+L167: 
+L168: Just to be clear about how wrong and out of touch that is, without naming names, a formerly very, very high up person at Twitter messaged me on Twitter and said:
+L169: > "The Reddit api moves are crazy. I’m not sure what choices you have but to move to another network. [...] That pricing is designed to prevent apps like yours forevermore."
+L170: 
+L171: So to be clear, even this person thinks this pricing is unreasonable. I do too.
+L172: ## Have you talked to CEO Steve Huffman about any of this?
+L173: 
+L174: I requested a call to talk to Steve about some suggestions I had, his response was "Sorry, no. You can give name-redacted a ping if you want."
+L175: 
+L176: I've then emailed that person (same person I've been talking to for months) suggestions approximately one week ago about how Apollo could survive this, and I've yet to receive a response.
+L177: ## Do I support the protest/Reddit blackout?
+L178: Abundantly. Unlike other social media companies like Facebook and Twitter who pay their moderators as employees, Reddit relies on volunteers to do the hard work for free. I completely understand that when tools they take to do their volunteer, important job are taken away, there is anger and frustration there.
+L179: While I haven't personally mobilized anyone to participate in the blackout out of fear of retaliation from Reddit, the last thing I want is for that to feel like I don't support the folks speaking up. I wholeheartedly do.
+L180: It's been a horrible week, and the kindness Redditors and moderators and communities have shown Apollo and other third-party apps has genuinely made it much more bearable and I am genuinely so appreciative.
+L181: 
+L182: I am, admittedly, doubtful Reddit wants to listen to folks anymore so I don't see it having an effect.
+L183: ## Your initial post in April sounded quite optimistic. Are you dumb?
+L184: In hindsight, kinda yeah. Many of the other developers and folks I talked to were much less optimistic than I was, but I legitimately had great interactions with Reddit for many years prior to last week (they were kind, communicative, gave me heads up of changes), so when they said they were aiming to have pricing that would be fair and based in reality, I honestly believed them. That was foolish of me in hindsight, and maybe could have had a different outcome if I was more aggressive in the beginning.
+L185: Sorry. /canadian
+L186: (And to be clear, they did indeed say this. They used the word "substantive" and I wanted to make sure we had the same definition of something "having a firm basis in reality and therefore important, meaningful, or considerable")
+L187: 
+L188: > Reddit: "That's exactly right. And I think, thankfully, the word is exactly the right one. It's going to have a firm basis in reality. I also just looked it up. We're going to try to be as transparent as we can."
+L189: ## Reddit claims they've reached out to developers who were bad users of the API, was Apollo contacted?
+L190: 
+L191: On May 31st Reddit cite19†posted a chart of large excess usage by some unlabeled API clients , and stated: "We reached out to the most impactful large scale applications in order to work out terms for access above our default rate limits via an enterprise tier."
+L192: 
+L193: To be clear, Apollo was never contacted, and I've been told from someone internally that Apollo is indeed not one of the unlabeled API clients.
+L194: The only time that Apollo was reached out to by Reddit in any capacity about usage was late last year when we received an email about a 6 minute period where Apollo's server API usage increased by 35% before lowering again. Despite 35% for 6 minutes being a comparatively small blip (the above post references clients that are over by 500000%), we responded within 2 minutes.
+L195: We offered to jump on a call with Reddit engineers if they needed an answer ASAP, identified the issue within several hours and Reddit thanked us for the fast investigation.
+L196: Full email transcript: cite20†https://gist.github.com/christianselig/6c71608cf617d2f881cd2849325494c1†gist.github.com L197: ## Claims that Apollo has made no attempt to be a good user of the API
+L198: 
+L199: On the call with moderators, Steve Huffman said:
+L200: 
+L201: > Steve: "I don't use the app, so I'll give you the best answer I can -- he does scraping so that he can deliver notifications faster, but has done NO EFFORT to be a good citizen of the internet."
+L202: First off, Apollo does no scraping, it's purely through authenticated calls to the API and has checks in place to ensure it stays within Reddit's API rate limits. cite21†I've open sourced the server code to show this†github.com .
+L203: Secondly, to say we have made no effort is categorically false. I have so many emails where I've reached out to Reddit expressing concerns about and bugs inefficiencies in the API, or ideas on how to improve things, or significant Reddit bugs that made things hard on us. When Reddit has had questions for us, as discussed above, we immediately jumped into action to get an answer as quickly as possible.
+L204: 
+L205: Here's an email of me giving a heads up to Reddit of IP address changes on our server:
+L206: > Me: "With the new change it'll be maybe like, one IP address. This is all obviously still within the API rate limits as the requests are from individual user accounts that have signed in. Again, long story short the result will be more optimized if anything, I just wanted to give a heads up and ensure that it'd be okay if Reddit suddenly saw the server go from a bunch of different IP addresses to a single one which might cause some confusion if I didn't give a heads up."
+L207: Me wanting to make sure we were doing everything as best as we could:
+L208: 
+L209: > Me: "Everything is going well, we just had a few questions about best practices making sure we’re following any suggestions your team has. Is there any way we could poke someone on your team with a few questions we’ve been having and have a tiny back and forth? We were just seeing some elevated response times, and just thought it would be great if we could maybe describe what we’re doing and see if anything seems off/suboptimal."
+L210: Me reporting to Reddit that the API has a serious bug in recording rate limits:
+L211: > Me: "We obviously respect the rate limit headers and if a user comes close to approaching it (within 50 requests of the 600 every 10 minutes limit) we stop their requests until the refresh period occurs. However we're seeing some users have very, very weird rate limit headers. Things like "requests remaining: 0, requests made: 17,483, reset: 598 seconds left" which indicates they've somehow made over 17 thousand requests in two seconds which seems hard to believe."
+L212: Me suggesting to Reddit improvements that could help improve efficiency of notification API calls:
+L213: 
+L214: > Me: "So like little stuff like that, where even if there's a streaming client or some way to minimize the calls there, I think it would help us both out enormously."
+L215: 
+L216: Further, cite22†when making suggestions†christianselig.com to your own employees, they themselves have expressed concern about how terrible the public API is:
+L217: > Call on January 26, 2023
+L218: >
+L219: > Reddit: "I cannot tell you how painful it is to use our API. [...] The API needs to change. Like it's just unusable. I am surprised that you're able to build a functional app on it to be honest."
+L220: ## Claims that third-party apps are not interested in talking
+L221: 
+L222: > Steve: "Why not work with the third party apps? Their existence is not a priority for us. We don't use them. I don't use them. It's a part of our traffic but not a lot, and it's a lot of work on our side to keep them alive. If I have to choose where to put our effort, we're going to focus internally. I'm kind of open to it, but I haven't – and I can't convince you, but I don't get the sense that they want to work with us either."
+L223: I'm genuinely not sure where Steve has got the impression that I don't want to work with him. Despite reaching out multiple times and him declining to talk, I've stated multiple times on calls, literally saying the words "I definitely still want to talk".
+L224: > Reddit: "What I'm hearing is like, Yeah, great. We have this disagreement on pricing methodology, etc. But any feasible number that we get to, any number that's even in, the zip code of what we're sharing with you is unfeasible from your perspective financially. So it's like arguing around the edges of that price thing is like, it just won't make any sense to you. And I presume also just given the NSFW stuff and the removal of ads that makes it even more trickier." Me: Yeah.
+L225: I mean, to be very clear, I'm not saying I'm walking away from the negotiation table and taking my basketball and going home and just gonna kick up a storm. That's not my intention at all. I definitely still want to talk. I'm not asking you to lower the price by a hundred times or something. I don't think – depending on what you mean by zip code – I don't think I'm so unreasonable that I'm requiring you to bend over backwards here."
+L226: I've also emailed Steve and the other contact directly stating that I'm interested in talking, and including ideas for how we could come to a solution:
+L227: > Me: "I understand where Reddit's coming from in this. A free API, while appreciated, is not tenable for you especially heading into an IPO, and my only goal here is to come to a solution where we both feel understood. I also hear you that killing third-party clients isn't actually the goal, and in that spirit have been working on how to address your concerns from my end: [...]"
+L228: I don't know how you can say I'm not interested in talking when you haven't my most recent email in a week. To say it once more, I was very interested in talking.
+L229: 
+L230: On the other side of things, per the transcript, Steve and the other admin on the call don't even know when the discussions with third-party apps began.
+L231: > Steve: "When did we start talking with them?"
+L232: >
+L233: > AnAbsurdlyAngryGoose: "What month did you first start?"
+L234: >
+L235: > Steve: "FlyingLaserTurtles? Do you remember? April or May of this year."
+L236: >
+L237: > FlyingLaserTurtles: "Maybe late March? But yes."
+L238: ## Claims that Reddit has been talking to developers for months talking about these changes
+L239: 
+L240: > Steve: "We've been in contact with third party apps for MONTHS, talking about these coming changes."
+L241: When you announce that the API will be charging developers, the most important portion of that conversation is what will be charged, which was not available for almost two months after the initial call. From the time developers were told the price, to the time developers will be subject to the price, is 30 days, not "months". Months would have been very helpful, in fact.
+L242: ## What about existing subscriptions?
+L243: 
+L244: I've been talking to my rep at Apple, and over the next few weeks my plan is to release something similar to what Tweetbot did (Paul has been incredibly helpful in all of this) where folks can decide if they want a pro-rated refund on any existing time left in their subscription as Apollo will not be able to afford to continue it, or they can decline the refund if they're feeling kind and have enjoyed their time with Apollo.
+L245: For the curious, refunding all existing subscriptions by my estimates will cost me about $250,000.
+L246: ## A nice send off at WWDC
+L247: 
+L248: Apollo got mentioned a few times during Apple's 2023 WWDC keynote, even by Craig Federighi himself, and even during the Vision Pro announcement showing Apollo as one of the existing apps compatible with the headset (I'm sorry I won't be able to see that happen).
+L249: I was lucky enough to be there in person and it felt incredible. Some folks asked if there was any deeper meaning behind that, and while that would be cool, in all reality these things are so well produced that they've been done for a while now, so I'm sure it's just a coincidence, even if it's a really cool one.
+L250: ## Extra icons
+L251: 

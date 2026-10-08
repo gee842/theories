@@ -1,0 +1,647 @@
+Narwhal is not going anywhere! Subscriptions and Narwhal 2 coming : r/getnarwhal (https://www.reddit.com/r/getnarwhal/comments/14kt9wj/narwhal_is_not_going_anywhere_subscriptions_and/)
+citeturn69view0 [wordlim: 200] Crawled: 2 weeks ago; Content type: text/html; Source: open({"ref_id":"https://www.reddit.com/r/getnarwhal/comments/14kt9wj/narwhal_is_not_going_anywhere_subscriptions_and/","lineno":16}); Total lines: 2263
+L0: cite0†Skip to main content L1: 
+L2: Open menu Open navigation Go to Reddit Home
+L3: 
+L4: [Input: Search Reddit]
+L5: 
+L6: cite1†Log In Log in to Reddit
+L7: 
+L8: Expand user menu Open settings menu
+L9: 
+L10: cite2†Go to getnarwhal L11: 
+L12: cite2†r/getnarwhal L13: 
+L14: • 3y ago
+L15: 
+L16: cite3†det0ur L17: # Narwhal is not going anywhere! Subscriptions and Narwhal 2 coming
+L18: 
+L19: Hey all, I want to give you an update on what is happening with Narwhal. I've been talking with Reddit a lot about the API changes and what it will mean for Narwhal.
+L20: Narwhal is not going anywhere on July 1st. It will continue to operate as it has for many years (except it will not have ads anymore). Over the next few months, I am going to be adding subscriptions into Narwhal 2. The subscriptions will be there to cover the cost of using the Reddit API. I am still figuring out what to do for heavy power users, but there may be a base plan which includes X number of API requests/month and you can top up your balance with another purchase.
+L21: The subscription will likely be in the $4-$7 range to start. It may change based on total usage of the app (either up or down) to cover the costs of using the reddit API.
+L22: Yes, this means Narwhal 2 is finally going to see the light of day. Is it perfect? No. Is it as finished as I wanted it to be before I released it? No. But it makes the most sense to put subscriptions in Narwhal 2 instead of the current app.
+L23: 
+L24: TLDR; Narwhal is not going anywhere on July 1st. Subscriptions will be coming over the next few months.
+L25: Ask me anything in the comments and I'll do my best to answer! Also, let me know if this is something that you actually want me to do. Are you willing to subscribe to continue using Narwhal?
+L26: 
+L27: Thank you everyone!
+L28: 
+L29: cite4†Share L30: 
+L31: Sort by:
+L32: 
+L33: Best
+L34: 
+L35: Open comment sort options
+L36: 
+L37: * Best
+L38: 
+L39: * Top
+L40: 
+L41: * New
+L42: 
+L43: * Controversial
+L44: 
+L45: * Old
+L46: 
+L47: * Q&A
+L48: 
+L49: cite5†AndyJS81 L50: 
+L51: •
+L52: 
+L53: cite6†3y ago L54: Do you have some kind of exemption for the original Narwhal to keep operating from July 1st? How long will the OG app last, and how did you manage to keep it free for now? I assume you need to meet some kind of deadline with Narwhal 2 and at that point Narwhal 1 will be shut down?
+L55: 
+L56: cite3†det0ur L57: 
+L58: •
+L59: 
+L60: cite7†3y ago L61: 
+L62: Narwhal 2 will eventually just be an update for Narwhal 1. When that happens, if you don't update it will stop working over time, because Narwhal 2 will be on a new API key.
+L63: 
+L64: cite8†mjbmitch L65: 
+L66: •
+L67: cite9†3y ago L68: 
+L69: Did Reddit give you an exemption of some kind?
+L70: 
+L71: more replies
+L72: 
+L73: cite10†more replies L74: 
+L75: cite11†Foryourconsideration L76: 
+L77: •
+L78: 
+L79: cite12†3y ago L80: 
+L81: How are you allowed to use the old key past tomorrow though? That's the question that I want to know the answer to. The old key shouldn't work anymore....
+L82: 
+L83: [deleted]
+L84: 
+L85: • 3y ago
+L86: 
+L87: Comment deleted by user
+L88: 
+L89: more replies
+L90: 
+L91: cite13†More replies L92: 
+L93: cite14†agentanthony L94: 
+L95: •
+L96: 
+L97: cite15†3y ago L98: This is much better than the official app. Thank you. I will be subscribing to support this. I can't use the official app at all, It's so cluttered.
+L99: 
+L100: more reply
+L101: 
+L102: cite16†more reply L103: 
+L104: more replies
+L105: 
+L106: cite17†more replies L107: 
+L108: more replies
+L109: 
+L110: cite18†more replies L111: 
+L112: cite19†Cryptosporidium513 L113: 
+L114: •
+L115: 
+L116: cite20†3y ago L117: 
+L118: I was an Apollo user and I’ve been trying Narwhal out for the past couple of weeks and really like it! I’ll be subscribing as soon as it’s live.
+L119: 
+L120: cite3†det0ur L121: 
+L122: •
+L123: 
+L124: cite21†3y ago L125: 
+L126: Glad to have you!
+L127: 
+L128: cite22†Riffington L129: 
+L130: •
+L131: 
+L132: cite23†3y ago L133: • Edited 1y ago
+L134: 
+L135: onerous longing retire coordinated public angle oil tap roll exultant
+L136: 
+L137: This post was mass deleted and anonymized with cite24†Redact†redact.dev L138: 
+L139: cite3†det0ur L140: 
+L141: •
+L142: 
+L143: cite25†3y ago L144: 
+L145: Yep it already has it :)
+L146: 
+L147: cite26†more replies cite26†more replies cite27†More replies L148: 
+L149: cite28†theENERTRON L150: 
+L151: •
+L152: 
+L153: cite29†3y ago L154: 
+L155: can you include a one-time purchase, even if it’s really big?
+L156: 
+L157: cite3†det0ur L158: 
+L159: •
+L160: 
+L161: cite30†3y ago L162: 
+L163: Unfortunately no because the API has an ongoing cost associated with it
+L164: 
+L165: cite31†More replies L166: 
+L167: more reply
+L168: cite32†more reply L169: 
+L170: cite33†Nopeyesok L171: 
+L172: •
+L173: 
+L174: cite34†3y ago L175: 
+L176: • Edited 3y ago
+L177: 
+L178: Same boat here gonna try it out tomorrow. Anything we’re used to in Apollo missing or any features narwhal has Apollo does not?
+L179: 
+L180: Edit: this is a fine replacement over going to the official app. Hope they add a couple things like comment lines, hide all posts above or a hide all read posts.
+L181: 
+L182: [deleted]
+L183: 
+L184: •
+L185: 
+L186: cite35†3y ago L187: Just downloaded it. Only been playing with it for 5-10 minutes but I didn’t realize how much the color coded lines next to comments help to be able to read a thread
+L188: 
+L189: Also seems that if I sort comments by new in one thread it’ll now make all my comments for every thread sorted by new? Instead of just that one post. Kinda annoying unless I missed some configuration to not allow that
+L190: 
+L191: more replies
+L192: 
+L193: cite36†more replies L194: 
+L195: cite37†Ace123428 L196: 
+L197: •
+L198: 
+L199: cite38†3y ago L200: Biggest thing for me is lack of customization for “gestures” Apollo let’s you change what they mean for each type of thing you interact with while narwhal currently doesn’t, for example changing which way you swipe for upvote/downvote or if you want a swipe to reply or collapse. It was a lot of functionality I’ve learned I will miss even if it was just a small part. Those small parts add up a lot into how you enjoy/use an app and losing that kinda sucks.
+L201: Narwhal is great but it’s just lacking a few features that made Apollo feel like a home.
+L202: 
+L203: more reply
+L204: 
+L205: cite39†more reply L206: 
+L207: cite40†fluffy_ninja_ L208: 
+L209: •
+L210: 
+L211: cite41†3y ago L212: 
+L213: The thing I miss most is the ability to scrub through GIFs
+L214: 
+L215: more reply
+L216: 
+L217: cite42†more reply L218: 
+L219: more replies
+L220: 
+L221: cite43†more replies L222: 
+L223: more replies
+L224: 
+L225: cite44†more replies L226: 
+L227: cite45†stromm L228: 
+L229: •
+L230: 
+L231: cite46†3y ago L232: 
+L233: I'm a bit confused.
+L234: 
+L235: What do you mean by NarWhal when you state "Narwhal is not going anywhere..."?
+L236: Do you mean Narwhal v2.48 (AKA Narwhal 1), that I am currently running on my iOS devices)?
+L237: 
+L238: Or do you mean specifically the upcoming new Narwhal 2 (not the same as v2.48 for iOS)?
+L239: 
+L240: Thank you for working through all this headache to continue supporting our addiction for Narwhal.
+L241: 
+L242: cite3†det0ur L243: 
+L244: •
+L245: 
+L246: cite47†3y ago L247: 
+L248: Your app that you have on your phone right now will continue working and eventually will be replaced by Narwhal 2
+L249: 
+L250: cite48†oppereindbaas L251: 
+L252: •
+L253: 
+L254: cite49†3y ago L255: So basically for the forseeable future we’ll hang on to the app minus the porn and sometime in the future the app will be replaced/updated with a subscription model?
+L256: 
+L257: cite3†det0ur L258: 
+L259: •
+L260: 
+L261: cite50†3y ago L262: 
+L263: Yep, thats correct. Timeline is a few months
+L264: 
+L265: more replies
+L266: 
+L267: cite51†more replies L268: 
+L269: cite45†stromm L270: 
+L271: •
+L272: 
+L273: cite52†3y ago L274: 
+L275: Thank you for clarifying!
+L276: 
+L277: more reply
+L278: 
+L279: cite53†more reply cite54†More replies L280: 
+L281: [deleted]
+L282: 
+L283: •
+L284: 
+L285: cite55†3y ago L286: 
+L287: Pretty crazy, didn’t expect this at all but really glad to see it!
+L288: Are you still going to be able to make any money through the subscriptions or will all of it be going to Reddit and Apple? I get that they’ll be taking huge cuts but I really hope this will still be a profitable project for you.
+L289: 
+L290: I would expect that you will see a significant uptick in downloads and users once Apollo and those other few apps are shut down and people look to alternative 3Ps, will the API call limit help you stay out of financial trouble and the API cost becoming unmanageable?
+L291: 
+L292: cite3†det0ur L293: •
+L294: 
+L295: cite56†3y ago L296: 
+L297: To be determined. Working the math out will be the most difficult part of all of this. Managing the API cost while trying not to go bankrupt at the same time. We will see!
+L298: 
+L299: more replies
+L300: 
+L301: cite57†more replies L302: 
+L303: cite58†catdad23 L304: 
+L305: •
+L306: 
+L307: cite59†3y ago L308: 
+L309: I’ve seen 3p used a lot in this thread, can you tell me what it means?
+L310: 
+L311: more replies
+L312: 
+L313: cite60†more replies cite61†More replies L314: 
+L315: [deleted]
+L316: 
+L317: •
+L318: 
+L319: cite62†3y ago L320: 
+L321: • Edited 3y ago
+L322: 
+L323: There was a different comment/post here, but it has been edited.
+L324: Reddit cite63†chose to betray years of free work put from users, mods, and developers. They will not stop driving this website into shit until every feature is monetized, predatory, and cancerous.
+L325: 
+L326: Use cite64†PowerDeleteSuite†github.com to remove your value to reddit and stop financing these dark patterns.
+L327: 
+L328: P.S. fuck cite65†u/spez L329: 
+L330: cite3†det0ur L331: 
+L332: •
+L333: 
+L334: cite66†3y ago L335: 
+L336: Sexually explicit content will be removed in July. I've given them my feedback on it and I hope there is a way to bring it back in the future.
+L337: cite67†Shrinra L338: 
+L339: •
+L340: 
+L341: cite68†3y ago L342: 
+L343: • Edited 3y ago
+L344: 
+L345: Does this just include subreddits marked NSFW, or does it also include NFSW posts in SFW subs? They haven't provided much detail, unfortunately.
+L346: 
+L347: cite3†det0ur L348: 
+L349: •
+L350: 
+L351: cite69†3y ago L352: 
+L353: From what I understand, it is just sexually explicit content, not posts marked as NSFW
+L354: 
+L355: cite70†more replies cite70†more replies cite71†More replies L356: 
+L357: more replies
+L358: 
+L359: cite72†more replies L360: 
+L361: more reply
+L362: 
+L363: cite73†more reply L364: 
+L365: cite74†siobhanmairii__ L366: 
+L367: •
+L368: 
+L369: cite75†3y ago L370: Former user here. Been using Apollo for years, and now I’m back. Will a subscription be necessary to use narwhal after July 1st?
+L371: 
+L372: cite3†det0ur L373: 
+L374: •
+L375: 
+L376: cite76†3y ago L377: 
+L378: No, not on July 1st, but sometime in the next few months
+L379: 
+L380: cite77†Dom9360 L381: 
+L382: •
+L383: 
+L384: cite78†3y ago L385: 
+L386: Curious, so aren’t you worried that your app will explode in usage once most of the others go dark? Meaning, wouldn’t you be on the hook for a lot of API fees but not charging? Also, how would I join beta of NW2?
+L387: 
+L388: more replies
+L389: 
+L390: cite79†more replies L391: 
+L392: cite80†nsfwtttt L393: 
+L394: •
+L395: cite81†3y ago L396: 
+L397: May I ask how? Are you gonna pay from your own pocket or did Reddit give you some extra time with no payment?
+L398: 
+L399: more replies
+L400: 
+L401: cite82†more replies L402: 
+L403: more reply
+L404: 
+L405: cite83†more reply cite84†More replies L406: 
+L407: cite85†Level7Cannoneer L408: 
+L409: •
+L410: 
+L411: cite86†3y ago L412: 
+L413: What about tracking and data mining that the Reddit app does? How does Narwhal handle that stuff?
+L414: 
+L415: cite3†det0ur L416: 
+L417: •
+L418: 
+L419: cite87†3y ago L420: 
+L421: There won’t be any of that in narwhal 2 because we won’t have advertising in the app
+L422: 
+L423: cite85†Level7Cannoneer L424: 
+L425: •
+L426: 
+L427: cite88†3y ago L428: Good to know. Thank you for spending the time to answer my question.
+L429: 
+L430: more reply
+L431: 
+L432: cite89†more reply cite90†More replies L433: 
+L434: cite91†pixelated666 L435: 
+L436: •
+L437: 
+L438: cite92†3y ago L439: As someone who is an Apollo user but have used Narwhal a bit as well, I will say you have your work seriously cut out for you if you intend to charge $4 per month for this app. I don’t want you to replicate Apollo, but there are a LOT of things that make that app a lot better to use than Narwhal. For example, search is infinitely times better on Apollo than Narwhal.
+L440: 
+L441: cite3†det0ur L442: 
+L443: •
+L444: 
+L445: cite93†3y ago L446: 
+L447: I agree. I already have a completely redesigned search done in Narwhal 2. Stay tuned!
+L448: 
+L449: cite94†cellocaster L450: 
+L451: •
+L452: cite95†3y ago L453: 
+L454: Your constructive humility is highly commendable.
+L455: 
+L456: cite96†More replies cite97†More replies L457: 
+L458: cite98†K0pp3r L459: 
+L460: •
+L461: 
+L462: cite99†3y ago L463: 
+L464: Will the subscriptions be patreon based, through iOS, or something else?
+L465: 
+L466: cite3†det0ur L467: 
+L468: •
+L469: 
+L470: cite100†3y ago L471: 
+L472: It will be in app through iOS
+L473: 
+L474: more replies
+L475: 
+L476: cite101†more replies cite102†More replies L477: 
+L478: cite103†yeetboy L479: 
+L480: •
+L481: 
+L482: cite104†3y ago L483: 
+L484: Can you clarify the subscription cost? $4-7 per month? Year?
+L485: 
+L486: cite3†det0ur L487: 
+L488: •
+L489: 
+L490: cite105†3y ago L491: 
+L492: It will have to be per month to cover the API costs
+L493: 
+L494: cite106†grapplerone L495: •
+L496: 
+L497: cite107†3y ago L498: 
+L499: I’d have no problem with it. My main reason for not using Narwhal has been its font is TOO SMALL at max for my reading. I’m 66 and need reading glasses. Most apps are written for young people’s eyes.
+L500: 
+L501: I also really liked Apollos read on scroll feature and the new comments highlight on read posts.
+L502: 
+L503: cite3†det0ur L504: 
+L505: •
+L506: 
+L507: cite108†3y ago L508: 
+L509: Narwhal 2 already has larger font options :)
+L510: 
+L511: cite109†more replies cite109†more replies cite110†More replies L512: 
+L513: more replies
+L514: 
+L515: cite111†more replies cite112†More replies L516: cite94†cellocaster L517: 
+L518: •
+L519: 
+L520: cite113†3y ago L521: 
+L522: • Edited 3y ago
+L523: 
+L524: With all due respect as a former Narwhal user, I don’t like the idea of that subscription fee largely going into Reddit’s pockets. I won’t judge anyone who wants to hop on the Narwhal train, I’m glad there will be some good alternatives to the dogshit first party app, but… it’s a little too much for me to stomach. Extortion is what it is.
+L525: 
+L526: cite3†det0ur L527: 
+L528: •
+L529: 
+L530: cite114†3y ago L531: No worries! I totally respect that opinion. If I’m the only user of narwhal 2 so be it :)
+L532: 
+L533: cite94†cellocaster L534: 
+L535: •
+L536: 
+L537: cite115†3y ago L538: 
+L539: • Edited 3y ago
+L540: If I knew a significant portion of that subscription fee was going towards the dev, I’d feel different. Not against paying for quality, which Narwhal absolutely is. All I see is that they’re forcing you to pass fees onto your user base just to allow you to tread water. I’m torn because I want to support the little guy like you, but I’m disgusted by Reddit’s actions here.
+L541: Is this in any way a significant growth opportunity for you (beyond capturing some of Apollo et al’s refugees)? Or is it as it seems… largely treading water?
+L542: 
+L543: cite116†More replies cite117†More replies L544: 
+L545: cite118†CurveOfTheUniverse L546: 
+L547: •
+L548: 
+L549: cite119†3y ago L550: I'm cautiously interested. I chose to use Apollo because the interface felt intuitive and flexible from the beginning, and I've never quite been able to crack the first iteration of Narwhal. It feels a bit limited and can be hard to read in some ways. Will Narwhal 2 get a design glow-up or just new features?
+L551: 
+L552: cite3†det0ur L553: 
+L554: •
+L555: 
+L556: cite120†3y ago L557: 
+L558: Definitely a design glow up!
+L559: 
+L560: cite121†Varrock L561: 
+L562: •
+L563: 
+L564: cite122†3y ago L565: 
+L566: Add the new comment highlighter + counter feature and I'm sold
+L567: 
+L568: cite3†det0ur L569: 
+L570: •
+L571: 
+L572: cite123†3y ago L573: Could you elaborate on those?
+L574: 
+L575: cite124†more replies cite124†more replies cite125†More replies L576: 
+L577: cite126†coreyonfire L578: 
+L579: •
+L580: 
+L581: cite127†3y ago L582: 
+L583: If there’s one thing and one thing only that Narwhal 2 brings, I ask that it be non-white light mode color options (ie,cite128†Sepia†i.imgur.com ) for those of us goblins who prefer a more book-like reading experience.
+L584: 
+L585: cite129†More replies cite130†More replies L586: 
+L587: cite131†sraka1 L588: 
+L589: •
+L590: 
+L591: cite132†3y ago L592: cite3†u/det0ur when will you open up the Discord? Can we get a Testflight invite link to the new app?
+L593: 
+L594: cite3†det0ur L595: 
+L596: •
+L597: 
+L598: cite133†3y ago L599: 
+L600: Soon!
+L601: 
+L602: cite134†More replies L603: 
+L604: cite135†yaycupcake L605: 
+L606: •
+L607: 
+L608: cite136†3y ago L609: 
+L610: Will there be a way to import shortcuts from Narwhal 1 into Narwhal 2? I am an Apollo refugee and I really can't function without shortcuts but I have a ton and I don't wanna manually add them in this app if I'll just have to do it all over again in a few months for the new app.
+L611: I also don't know if it's feasible based on how you built the app, but I wonder if you would be able to let people customize the swipe actions. I'm so used to swiping the other way for upvoting for example. If not I'm sure I'll get used to it no worries.
+L612: 
+L613: cite3†det0ur L614: 
+L615: •
+L616: 
+L617: cite137†3y ago L618: 
+L619: Yes I want to figure that out. Also, shortcuts in narwhal 2 are synced across devices
+L620: 
+L621: Edit: Also it has customizble swipe gestures already
+L622: 
+L623: cite135†yaycupcake L624: 
+L625: •
+L626: 
+L627: cite138†3y ago L628: Fantastic thanks. I can't seem to find the place to customize the swipe gestures though, unless you mean in the new app.
+L629: 
+L630: more reply
+L631: 
+L632: cite139†more reply cite140†More replies L633: 
+L634: cite141†mrhsx L635: 
+L636: •
+L637: 
+L638: cite142†3y ago L639: 
+L640: Would you know the minimum iOS version requirement for Narwhal 2? I’m guessing I’ll have to finally update from iOS 14 for this
+L641: 
+L642: cite3†det0ur L643: 
+L644: •
+L645: 
+L646: cite143†3y ago L647: 
+L648: I think you might be good actually
+L649: 
+L650: more reply
+L651: 
+L652: cite144†more reply L653: 
+L654: cite145†djcodeblue L655: 
+L656: •
+L657: 
+L658: cite146†3y ago L659: 
+L660: Can I ask why you're still on iOS 14?
+L661: more replies
+L662: 
+L663: cite147†more replies cite148†More replies L664: 
+L665: cite141†mrhsx L666: 
+L667: •
+L668: 
+L669: cite149†3y ago L670: 
+L671: Will Narwhal 2 have a cite150†r/randnsfw option?
+L672: 
+L673: cite3†det0ur L674: 
+L675: •
+L676: 
+L677: cite151†3y ago L678: 
+L679: I’m not sure yet if tvat will work in the new api or not
+L680: 
+L681: cite152†More replies L682: 
+L683: cite153†Kokuei05 L684: 
+L685: •
+L686: 
+L687: cite154†3y ago L688: 
+L689: • Edited 3y ago
+L690: 
+L691: Guess my iPad is going back to Narwhal. Don't remember what made me switch to Apollo but I'll probably figure it out as soon as I start using it again.
+L692: Edit: it was the side bar always there and requires an additional action to hide it. Also links you open cannot be easily closed. It will remain until you open another link. RIP.
+L693: 
+L694: cite3†det0ur L695: 
+L696: •
+L697: 
+L698: cite155†3y ago L699: 
+L700: Could you elaborate a bit on those issues?
+L701: 
+L702: more reply
+L703: 
+L704: cite156†more reply cite157†More replies L705: 
+L706: cite158†ATXbruh L707: 
+L708: •
+L709: 
+L710: cite159†3y ago L711: 
+L712: This is legit amazing news. Fellow iOS dev here who’s used narwhal for quite some time and just couldn’t get into Apollo or the official app.
+L713: Would you happen to have a tip jar/can I “buy you a coffee” to say thanks? ¯\(ツ)/¯
+L714: 
+L715: cite3†det0ur L716: 
+L717: •
+L718: 
+L719: cite160†3y ago L720: 
+L721: Thanks for the support! I don’t have one right now but maybe in the future
+L722: 
+L723: cite161†More replies L724: 
+L725: cite162†pewpewlasersandshit L726: 
+L727: •
+L728: 
+L729: cite163†3y ago L730: 
+L731: Hey cite3†u/det0ur , thanks for providing us a great alternative to the official Reddit app! Quick question: Will Narwhal 2 feature Mod tools and access to mod mail ?
+L732: 
+L733: cite3†det0ur L734: 
+L735: •
+L736: 
+L737: cite164†3y ago L738: 
+L739: Not at launch but I want to get that in soon after
+L740: cite165†asoksevil L741: 
+L742: •
+L743: 
+L744: cite166†3y ago L745: 
+L746: I think this would be a key thing for many who are mods! I don’t want to use Reddit app however in order to moderate I need it because Narwhal doesn’t have any mod tools at all.
+L747: 
+L748: cite3†det0ur L749: 
+L750: •
+L751: 
+L752: cite167†3y ago L753: 
+L754: I agree 100%. It’s one of my top priorities post launch
+L755: 
+L756: cite168†more reply cite168†more reply cite169†More replies L757: 
+L758: more replies
+L759: 
+L760: cite170†more replies cite171†More replies L761: 
+L762: cite172†soundwithdesign L763: 
+L764: •
+L765: 
+L766: cite173†3y ago L767: I’m debating on switching over until I see the redesign that The Verge mentioned in their article. Have you already updated the app to the redesign or when will that happen?
+L768: 
+L769: cite3†det0ur L770: 
+L771: •
+L772: 
+L773: cite174†3y ago L774: 
+L775: Not yet that is coming soon
+L776: 
+L777: more reply
+L778: 
+L779: cite175†more reply cite176†More replies L780: 
+L781: cite177†silvab L782: 
+L783: •
+L784: 
+L785: cite178†3y ago L786: 
+L787: Wow you rock, you have my support, will be buying two subscriptions - my wife and I were both about to delete reddit from our phones altogether.
+L788: 
+L789: cite3†det0ur L790: 
+L791: •
+L792: 
+L793: cite179†3y ago L794: 
+L795: You rock!!
+L796: cite180†More replies L797: 
+L798: cite181†Steven_Seagal_1952 L799: 
+L800: •
+L801: 
+L802: cite182†3y ago L803: 
+L804: I can't find this app. Is it only for ios?
+L805: 
+L806: cite3†det0ur L807: 
+L808: •
+L809: 
+L810: cite183†3y ago L811: 
+L812: iOS only sorry!
+L813: 
+L814: more reply
+L815: 
+L816: cite184†more reply cite185†More replies L817: 
+L818: cite186†AnnoyedByEverything_ L819: 
+L820: •
+L821: 
+L822: cite187†3y ago L823: I was using Apollo for years and loved it. I was devastated to see it go and thus thought my reddit days were over, but then by serendipity I stumbled upon this app and my hopes were revitalized. That official app just made me more depressed every time I used it, it was so bad. Thank you narwhal
+L824: 
+L825: cite3†det0ur L826: 
+L827: •
+L828: 
+L829: cite188†3y ago L830: 
+L831: Thanks for being here :)
+L832: 
+L833: cite189†More replies L834: 
+L835: cite190†mohmd_shbbr L836: 
+L837: •
+L838: 
+L839: cite191†3y ago L840: 
+L841: Will this be on top of the existing Narwhal Pro Subscription which removes ad for me?
+L842: 
+L843: cite3†det0ur L844: 
+L845: •
+L846: cite192†3y ago L847: 
+L848: The ad removal in Narwhal 1 is not a subscription
+L849: 
+L850: cite193†More replies L851: 

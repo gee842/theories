@@ -1,0 +1,427 @@
+{
+  "status": "passed",
+  "scope": "Owned documentary sources, local links, current/frozen compiler evidence and hashes; no new proof or empirical run by this script.",
+  "record": "theories/shengsheng-buxi-generative-existence/results/records/learned-procedure-transmission.json",
+  "record_sha256": "db9a6b210110f0ae1c6dc967808cf61e5975a0388859fa89ce5eb361812b35a3",
+  "source_hashes": {
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean": "61411ff92abf52de4653835a106f4c67d3d95e1b91293c63eb206a0dab545c9b",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/learned-procedure-transmission-verification.json": "b3e4813e6cc532f0238847dce40fc36a0ca298d50013a41f69e3f8e46d9a0c2f",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/check_learned_procedure_transmission.py": "ee6c0e44fe414c5c2b2d0b2c48590bf6b2918585e933a6ee72e51a2b50aa030f",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNED-PROCEDURE-TRANSMISSION.md": "e11f4462141f3b0e48e9168e44dcbeba66bab4401261cabea20e8b5e4faa3024",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md": "d25644501fb7e5da9a501cf70c50fec46fda1edad1769edad33aace2aa8cccc7",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-COUNTERREVIEW.md": "d7e62408a8474f8980b07b9a1067826625ccda525bc33068da0b8aae78a5df98",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-SOURCES.md": "b2b661b4924982f011641dd39f580d526778241ebb4d9b4d3edb1fe9dc85f9bd",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md": "7a9572ac1afa35d4c91dab73e875021c8fb9e32c31e66f07816cc1e96edcbc3c",
+    "sources/15-codex-theory-conversations/2026-10-09-learning-recursive-selection.md": "d36bd85013a7cac394e56d1178c1b41119692bbffbd787264ecbf63081f29fd8"
+  },
+  "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/learned-procedure-transmission-verification.json",
+  "receipt_sha256": "b3e4813e6cc532f0238847dce40fc36a0ca298d50013a41f69e3f8e46d9a0c2f",
+  "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/learned-procedure-transmission-checks/20261008T193434.751521Z",
+  "new_theorems": 30,
+  "new_audits": 50,
+  "inherited_audits": 251,
+  "links_checked": 100,
+  "links": [
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNED-PROCEDURE-TRANSMISSION.md",
+      "target": "EVOLUTION-UPDATER-CONSEQUENCES.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNED-PROCEDURE-TRANSMISSION.md",
+      "target": "EVOLUTION-CALIBRATED-UPDATER.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNED-PROCEDURE-TRANSMISSION.md",
+      "target": "EVOLUTION-CALIBRATION-RENEWAL.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNED-PROCEDURE-TRANSMISSION.md",
+      "target": "RECURSIVE-GENERATIVE-SELECTION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNED-PROCEDURE-TRANSMISSION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNED-PROCEDURE-TRANSMISSION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/check_learned_procedure_transmission.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNED-PROCEDURE-TRANSMISSION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/learned-procedure-transmission-verification.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-08-cognition-learning-evolution-goal.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md",
+      "target": "SEMANTIC-SUFFICIENCY-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalAcquisition.lean"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/check_compositional_acquisition.py"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/KnowledgeCorrespondence.lean"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-acquisition-verification.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md",
+      "target": "MATHEMATICS-LEARNING-EVIDENCE.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md",
+      "target": "LIANGZHI-EVOLUTION-SOURCES.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-09-learning-recursive-selection.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md",
+      "target": "LEARNING-SELECTION-SOURCES.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md",
+      "target": "LEARNING-SELECTION-COUNTERREVIEW.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md",
+      "target": "LEARNING-SELECTION-COUNTERREVIEW.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/learned-procedure-transmission-verification.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-COUNTERREVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-COUNTERREVIEW.md",
+      "target": "SYSTEMS-HIGHER-DYNAMICS.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-COUNTERREVIEW.md",
+      "target": "RECURSIVE-GENERATIVE-SELECTION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-COUNTERREVIEW.md",
+      "target": "RECURSIVE-GENERATIVE-SELECTION-MATH.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-COUNTERREVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-COUNTERREVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/KNOWLEDGE.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-COUNTERREVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/KNOWLEDGE.md#how-content-can-form-and-remain-mistaken"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-COUNTERREVIEW.md",
+      "target": "RECURSIVE-GENERATIVE-SELECTION-REVIEW.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-COUNTERREVIEW.md",
+      "target": "COGNITION-LEARNING-EVOLUTION-INTEGRATION.md#8-learning-and-recursive-selection-the-connection-being-completed"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-COUNTERREVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/LearnedProcedureTransmission.lean"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-COUNTERREVIEW.md",
+      "target": "LEARNED-PROCEDURE-TRANSMISSION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-COUNTERREVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/learned-procedure-transmission-checks/20261008T193434.751521Z/verification.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-SOURCES.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-SOURCES.md",
+      "target": "RECURSIVE-GENERATIVE-SELECTION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-SOURCES.md",
+      "target": "EVOLUTIONARY-ORGANIZATION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-SOURCES.md",
+      "target": "LINEAGE-CONTINUATION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-SOURCES.md",
+      "target": "EVOLUTIONARY-ORGANIZATION-INTEGRATION.md#organizational-rules-become-inheritable"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-SOURCES.md",
+      "target": "EVOLUTIONARY-ORGANIZATION-INTEGRATION.md#joint-practice-forms-further-participation"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-SOURCES.md",
+      "target": "../../../../sources/evolutionary-selection/organizational-inheritance/SYSTEMS-READING.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-SOURCES.md",
+      "target": "../../../../sources/evolutionary-selection/doulcier-2025/article.xml"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-SOURCES.md",
+      "target": "../../../../sources/evolutionary-selection/doulcier-2025/manifest.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-SOURCES.md",
+      "target": "RECURSIVE-GENERATIVE-SELECTION-SOURCES.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-SOURCES.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-SOURCES.md",
+      "target": "RECURSIVE-GENERATIVE-SELECTION-REVIEW.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-08-cognition-learning-evolution-goal.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPOSITIONAL-FORMATION-INTEGRATION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPOSITIONAL-TRANSMISSION-INTEGRATION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "NONDUAL-METHOD.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../results/records/retrospective-source-binding.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-HIGHER-DYNAMICS.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "THE-THEORY-OF-EVOLUTION.md#the-next-theoretical-connection"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-09-learning-recursive-selection.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-SOURCES.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-COUNTERREVIEW.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md#8-learning-and-recursive-selection-the-connection-being-completed"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md#9-executed-learning-enters-reconstruction-and-subsequent-use"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/learned-procedure-transmission-verification.json"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "KNOWLEDGE.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalAcquisition.lean"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPOSITIONAL-FORMATION-INTEGRATION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-formation-verification.json"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "EVALUATIVE-PLASTICITY.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "GOAL-FORMATION-AND-REVISION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "ETHICAL-LEARNING.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "EVOLUTIONARY-ORGANIZATION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-EVOLUTION-SOURCES.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#27-forming-an-access-distinction-and-bringing-it-into-later-learning"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#28-comparative-components-and-the-limits-of-evolutionary-inference"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#29-revised-connection-counterreview-and-discriminating-observations"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPOSITIONAL-TRANSMISSION-INTEGRATION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-verification.json"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-verification.json"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#7-continuation-learned-bindings-replace-the-fixed-decoder"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../results/records/acquired-binding-compositional-use.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#11-enacted-access-movement-and-naming-form-the-binding-scene"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../results/records/enacted-scene-binding.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../results/records/encounter-selection-and-revision.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../results/records/naming-attention-coverage.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/naming-attention/README.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../results/records/encounter-control-and-retention.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/contingent-learning/README.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#21-acquired-source-relations-reinterpret-retained-naming"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#22-developmental-evidence-and-what-it-identifies"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../results/records/historical-source-binding.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#25-updating-present-trust-does-not-identify-historical-reinterpretation"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md#5-primary-evidence-and-comparisons"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#14-acquired-access-changes-the-selection-of-encounters"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#17-public-naming-records-constrain-automatic-coverage"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPOSITIONAL-FORMATION-INTEGRATION.md#5-developmental-and-evolutionary-evidence"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#19-encounter-control-is-tested-against-later-use"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md#29-revised-connection-counterreview-and-discriminating-observations"
+    },
+    {
+      "source": "sources/15-codex-theory-conversations/2026-10-09-learning-recursive-selection.md",
+      "target": "2026-10-08-cognition-learning-evolution-goal.md"
+    },
+    {
+      "source": "sources/15-codex-theory-conversations/2026-10-09-learning-recursive-selection.md",
+      "target": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md"
+    },
+    {
+      "source": "sources/15-codex-theory-conversations/2026-10-09-learning-recursive-selection.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-GENERATIVE-SELECTION.md"
+    }
+  ],
+  "checker_sha256": "33d99ad1827198f8a87dec33b632ed4bfbb41f65bde9d1cb7509948cabbb88ec"
+}

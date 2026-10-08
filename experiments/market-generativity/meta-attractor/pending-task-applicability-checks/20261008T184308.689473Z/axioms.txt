@@ -1,0 +1,380 @@
+'CorrectionRelations.Boundary' does not depend on any axioms
+'CorrectionRelations.Fits' does not depend on any axioms
+'CorrectionRelations.boundary_exact_for_context' does not depend on any axioms
+'CorrectionRelations.all_contexts_refinement_iff' does not depend on any axioms
+'CorrectionRelations.all_contexts_equivalent_iff' does not depend on any axioms
+'CorrectionRelations.Couple' does not depend on any axioms
+'CorrectionRelations.regrouping_preserves_relation' does not depend on any axioms
+'CorrectionRelations.coupled_boundary_exact' does not depend on any axioms
+'CorrectionRelations.boundary_replacement_preserves_coupling' depends on axioms: [propext]
+'CorrectionRelations.EqualBoundary' does not depend on any axioms
+'CorrectionRelations.FreeBoundary' does not depend on any axioms
+'CorrectionRelations.equal_boundary_full_coordinate_projections' does not depend on any axioms
+'CorrectionRelations.separate_coordinate_summaries_lose_joint_restriction' does not depend on any axioms
+'CorrectionRelations.Edge' does not depend on any axioms
+'CorrectionRelations.Parity' does not depend on any axioms
+'CorrectionRelations.Follow' does not depend on any axioms
+'CorrectionRelations.Path' does not depend on any axioms
+'CorrectionRelations.each_edge_has_full_projections' does not depend on any axioms
+'CorrectionRelations.path_iff_propagated' does not depend on any axioms
+'CorrectionRelations.propagation_parity' does not depend on any axioms
+'CorrectionRelations.cycle_compatible_iff_even' depends on axioms: [propext]
+'CorrectionRelations.every_root_choice_extends_iff_even' depends on axioms: [propext]
+'CorrectionRelations.odd_cycle_has_no_joint_assignment' depends on axioms: [propext]
+'CorrectionRelations.triangle_local_relations_do_not_ensure_joint_correction' depends on axioms: [propext]
+'CorrectionRelations.parity_append' does not depend on any axioms
+'CorrectionRelations.matching_converter_restores_every_root' depends on axioms: [propext]
+'CorrectionRelations.transparent_converter_fails_for_odd_cycle' depends on axioms: [propext]
+'CorrectionRelations.aggregate_probe_reads_parity' does not depend on any axioms
+'CorrectionRelations.aggregate_probe_summarizes_path' depends on axioms: [propext]
+'CorrectionRelations.equal_probes_iff_equal_path_relations' depends on axioms: [propext]
+'CorrectionRelations.converter_from_current_probe_corrects_every_root' depends on axioms: [propext]
+'CorrectionRelations.converter_from_stale_probe_can_fail' depends on axioms: [propext]
+'CorrectionRelations.retained_converter_iff_same_composed_relation' depends on axioms: [propext]
+'CorrectionRelations.Revision' does not depend on any axioms
+'CorrectionRelations.Revised' does not depend on any axioms
+'CorrectionRelations.paired_revision_preserves_parity' does not depend on any axioms
+'CorrectionRelations.finite_revisions_preserve_parity' does not depend on any axioms
+'CorrectionRelations.finite_revisions_preserve_entire_relation' depends on axioms: [propext]
+'CorrectionRelations.retained_converter_survives_finite_revisions' depends on axioms: [propext]
+'CorrectionRelations.first_half_of_paired_change_defeats_retained_converter' depends on axioms: [propext]
+'CorrectionRelations.Possible' does not depend on any axioms
+'CorrectionRelations.Uniform' does not depend on any axioms
+'CorrectionRelations.Observable' does not depend on any axioms
+'CorrectionRelations.uniform_implies_possible' does not depend on any axioms
+'CorrectionRelations.observable_implies_possible' does not depend on any axioms
+'CorrectionRelations.constant_observation_iff_uniform' does not depend on any axioms
+'CorrectionRelations.Fixed' does not depend on any axioms
+'CorrectionRelations.Switched' does not depend on any axioms
+'CorrectionRelations.fixed_boundary_total' does not depend on any axioms
+'CorrectionRelations.switched_boundary_total' does not depend on any axioms
+'CorrectionRelations.fixed_switched_same_feasibility_contexts' does not depend on any axioms
+'CorrectionRelations.fixed_has_uniform_realization' does not depend on any axioms
+'CorrectionRelations.switched_has_only_modewise_witnesses' depends on axioms: [propext]
+'CorrectionRelations.observing_relation_restores_realization' does not depend on any axioms
+'CorrectionRelations.exact_feasibility_summary_not_control_contract' depends on axioms: [propext]
+'CorrectionHandoff.Record' does not depend on any axioms
+'CorrectionHandoff.Channel' does not depend on any axioms
+'CorrectionHandoff.decode' does not depend on any axioms
+'CorrectionHandoff.Sound' does not depend on any axioms
+'CorrectionHandoff.Ready' does not depend on any axioms
+'CorrectionHandoff.readyDecidable' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.probe' does not depend on any axioms
+'CorrectionHandoff.configure' does not depend on any axioms
+'CorrectionHandoff.power' does not depend on any axioms
+'CorrectionHandoff.execute' does not depend on any axioms
+'CorrectionHandoff.probe_learns_decoder' depends on axioms: [propext]
+'CorrectionHandoff.probe_sound' depends on axioms: [propext]
+'CorrectionHandoff.configure_sound' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.power_sound' does not depend on any axioms
+'CorrectionHandoff.ready_executes' depends on axioms: [propext]
+'CorrectionHandoff.probe_preserves_ready' does not depend on any axioms
+'CorrectionHandoff.power_on_ready' does not depend on any axioms
+'CorrectionHandoff.configure_rejects_old_record' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.Installation' does not depend on any axioms
+'CorrectionHandoff.replace' does not depend on any axioms
+'CorrectionHandoff.Invariant' does not depend on any axioms
+'CorrectionHandoff.Operation' does not depend on any axioms
+'CorrectionHandoff.step' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.replace_inactive' depends on axioms: [propext]
+'CorrectionHandoff.replace_ready' does not depend on any axioms
+'CorrectionHandoff.step_preserves' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.run' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.run_preserves' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.every_interruptible_prefix' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.unbounded_schedule_safety' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.handoff' does not depend on any axioms
+'CorrectionHandoff.handoff_completes' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.initial' does not depend on any axioms
+'CorrectionHandoff.initial_invariant' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.uncheckedSwitch' does not depend on any axioms
+'CorrectionHandoff.stalePreparation' does not depend on any axioms
+'CorrectionHandoff.stale_record_switch_fails' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.guarded_stale_switch_retains_service' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.fresh_retest_restores_switch' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.early_retirement_breaks_service' does not depend on any axioms
+'CorrectionHandoff.pause_does_not_complete_handoff' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.untrackedChange' does not depend on any axioms
+'CorrectionHandoff.matching_revision_is_insufficient' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.reusedRevision' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.revision_reuse_admits_stale_record' depends on axioms: [propext, Quot.sound]
+'CorrectionVersioned.Bank' does not depend on any axioms
+'CorrectionVersioned.Sound' does not depend on any axioms
+'CorrectionVersioned.Ready' does not depend on any axioms
+'CorrectionVersioned.readyDecidable' does not depend on any axioms
+'CorrectionVersioned.emptyBank' does not depend on any axioms
+'CorrectionVersioned.appendBank' does not depend on any axioms
+'CorrectionVersioned.asChannel' does not depend on any axioms
+'CorrectionVersioned.empty_sound' does not depend on any axioms
+'CorrectionVersioned.append_sound' does not depend on any axioms
+'CorrectionVersioned.inherited_channel_sound' depends on axioms: [propext]
+'CorrectionVersioned.inherited_channel_ready' does not depend on any axioms
+'CorrectionVersioned.prepared_path_delivers' depends on axioms: [propext, Quot.sound]
+'CorrectionVersioned.Packet' does not depend on any axioms
+'CorrectionVersioned.Installation' does not depend on any axioms
+'CorrectionVersioned.PacketValid' does not depend on any axioms
+'CorrectionVersioned.Invariant' does not depend on any axioms
+'CorrectionVersioned.busy' does not depend on any axioms
+'CorrectionVersioned.replaceBank' does not depend on any axioms
+'CorrectionVersioned.available' does not depend on any axioms
+'CorrectionVersioned.availableDecidable' does not depend on any axioms
+'CorrectionVersioned.live_packet_pins' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionVersioned.unpinned_differs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionVersioned.replace_available_preserves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionVersioned.reset' does not depend on any axioms
+'CorrectionVersioned.append' does not depend on any axioms
+'CorrectionVersioned.certify' does not depend on any axioms
+'CorrectionVersioned.publish' does not depend on any axioms
+'CorrectionVersioned.beginRequest' does not depend on any axioms
+'CorrectionVersioned.reset_preserves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionVersioned.append_preserves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionVersioned.seal_preserves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionVersioned.publish_preserves' does not depend on any axioms
+'CorrectionVersioned.begin_preserves' depends on axioms: [propext, Quot.sound]
+'CorrectionVersioned.tick' does not depend on any axioms
+'CorrectionVersioned.drop_after_hop' depends on axioms: [propext]
+'CorrectionVersioned.tick_preserves_and_output' depends on axioms: [propext, Quot.sound]
+'CorrectionVersioned.drain' does not depend on any axioms
+'CorrectionVersioned.head_traversal_completes' depends on axioms: [propext, Quot.sound]
+'CorrectionVersioned.valid_head_completes' depends on axioms: [propext, Quot.sound]
+'CorrectionVersioned.Operation' does not depend on any axioms
+'CorrectionVersioned.step' does not depend on any axioms
+'CorrectionVersioned.step_preserves_and_output' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionVersioned.run' does not depend on any axioms
+'CorrectionVersioned.run_preserves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionVersioned.every_prefix_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionVersioned.pinned_bank_cannot_be_reset' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionVersioned.pinned_bank_cannot_be_appended' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionVersioned.equal_whole_relations_do_not_protect_mixed_requests' depends on axioms: [propext]
+'CorrectionVersioned.initial' does not depend on any axioms
+'CorrectionVersioned.initial_invariant' depends on axioms: [propext, Quot.sound]
+'CorrectionVersioned.publication_selects_ready' depends on axioms: [propext]
+'CorrectionVersioned.full_request_capacity_blocks_admission' depends on axioms: [propext]
+'CorrectionVersioned.two_banks_can_both_be_unavailable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionVersioned.handoffExample' does not depend on any axioms
+'CorrectionVersioned.staged_handoff_finishes_both_requests' does not depend on any axioms
+'CorrectionVersioned.forceReuse' does not depend on any axioms
+'CorrectionVersioned.premature_reuse_can_deliver_wrong' does not depend on any axioms
+'CorrectionVersioned.readCurrentVersion' does not depend on any axioms
+'CorrectionVersioned.switching_version_mid_request_fails' does not depend on any axioms
+'CorrectionVersioned.late_registration_after_capture_can_fail' does not depend on any axioms
+'CorrectionVersioned.completion_allows_old_retirement' depends on axioms: [propext, Quot.sound]
+'CorrectionVersioned.pause_is_not_a_progress_guarantee' does not depend on any axioms
+'PracticalJudgment.Included' does not depend on any axioms
+'PracticalJudgment.StrictIncluded' does not depend on any axioms
+'PracticalJudgment.included_trans' does not depend on any axioms
+'PracticalJudgment.strict_included_irrefl' does not depend on any axioms
+'PracticalJudgment.strict_included_trans' does not depend on any axioms
+'PracticalJudgment.Better' does not depend on any axioms
+'PracticalJudgment.better_irrefl' does not depend on any axioms
+'PracticalJudgment.better_trans' does not depend on any axioms
+'PracticalJudgment.protection_anchor' does not depend on any axioms
+'PracticalJudgment.no_protection_trade_by_count' does not depend on any axioms
+'PracticalJudgment.Frontier' does not depend on any axioms
+'PracticalJudgment.dominated_excluded' does not depend on any axioms
+'PracticalJudgment.finite_frontier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PracticalJudgment.Required' does not depend on any axioms
+'PracticalJudgment.required_performed' does not depend on any axioms
+'PracticalJudgment.alternative_defeats_specific_duty' does not depend on any axioms
+'PracticalJudgment.impossible_menu_no_duty' does not depend on any axioms
+'PracticalJudgment.necessary_means_required' does not depend on any axioms
+'PracticalJudgment.Assigned' does not depend on any axioms
+'PracticalJudgment.unique_responder_required' does not depend on any axioms
+'PracticalJudgment.assignment_respects_capacity' does not depend on any axioms
+'PracticalJudgment.Covered' does not depend on any axioms
+'PracticalJudgment.transfer_requires_actual_successor' does not depend on any axioms
+'PracticalJudgment.no_demand_gap_transfer' depends on axioms: [propext, Quot.sound]
+'PracticalJudgment.uncovered_demand_is_failure' does not depend on any axioms
+'PracticalJudgment.Settled' does not depend on any axioms
+'PracticalJudgment.Residual' does not depend on any axioms
+'PracticalJudgment.settlement_removes_residual' does not depend on any axioms
+'PracticalJudgment.unfulfilled_unreleased_remains' does not depend on any axioms
+'PracticalJudgment.Robust' does not depend on any axioms
+'PracticalJudgment.robust_at_actual' does not depend on any axioms
+'PracticalJudgment.robust_under_refinement' does not depend on any axioms
+'PracticalJudgment.required_under_faithful_redescription' does not depend on any axioms
+'PracticalJudgment.withinCeiling' does not depend on any axioms
+'PracticalJudgment.optionalFormation' does not depend on any axioms
+'PracticalJudgment.supplied_ceiling_bounds_optional_gain' depends on axioms: [propext]
+'PracticalJudgment.independent_choices_not_joint_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PracticalJudgment.basis' does not depend on any axioms
+'PracticalJudgment.event' does not depend on any axioms
+'PracticalJudgment.mixed_repair_anchor' does not depend on any axioms
+'PracticalJudgment.repair_retains_real_loss' does not depend on any axioms
+'PracticalJudgment.protectedOne' does not depend on any axioms
+'PracticalJudgment.noGain' does not depend on any axioms
+'PracticalJudgment.competing_claims_incomparable' depends on axioms: [propext]
+'PracticalJudgment.collective_duty_without_individual_duty' depends on axioms: [propext]
+'PracticalJudgment.uncertain_worlds_need_common_plan' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.SoundOn' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.ExactOn' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.Resolves' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.exact_is_sound' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.exact_requires_resolution' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.decoder' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.KnowledgeCorrespondence.resolution_admits_decoder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.KnowledgeCorrespondence.exact_possible_iff_resolves' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.KnowledgeCorrespondence.conflicting_fibre_forces_abstention' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.sound_restricts_domain' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.refinement_preserves_resolution' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.preserved_record_preserves_exactness' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.History' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.signal' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.target' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.allHistories' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.normal' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.reference' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.pairedEvidence' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.decodePair' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.direct' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.calibrated_pair_exact' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.raw_signal_not_resolving' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.no_exact_raw_decoder' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.every_sound_raw_decoder_abstains' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.direct_exact_on_normal' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.direct_fails_on_expanded_domain' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.lucky_actual_correct' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.parity_record_exact' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.double_reversal_exact' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.FixedContentSafe' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.true_content_trivially_safe' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.abstention_sound' does not depend on any axioms
+'Generative.KnowledgeCorrespondence.abstention_not_exact' does not depend on any axioms
+'GoalFormationRevision.Practice' does not depend on any axioms
+'GoalFormationRevision.Selection' does not depend on any axioms
+'GoalFormationRevision.Goal' does not depend on any axioms
+'GoalFormationRevision.Conditions' does not depend on any axioms
+'GoalFormationRevision.Outcome' does not depend on any axioms
+'GoalFormationRevision.perform' does not depend on any axioms
+'GoalFormationRevision.attainment' does not depend on any axioms
+'GoalFormationRevision.meansFor' does not depend on any axioms
+'GoalFormationRevision.supplied_means_realize_their_goal' depends on axioms: [propext, Quot.sound]
+'GoalFormationRevision.goal_criteria_really_disagree' depends on axioms: [propext]
+'GoalFormationRevision.protects' does not depend on any axioms
+'GoalFormationRevision.gains' does not depend on any axioms
+'GoalFormationRevision.warranted_revision' depends on axioms: [propext]
+'GoalFormationRevision.revision_loses_real_output' depends on axioms: [propext]
+'GoalFormationRevision.harmless_practices_incomparable' depends on axioms: [propext]
+'GoalFormationRevision.crossed_losses_incomparable' depends on axioms: [propext]
+'GoalFormationRevision.feedback' depends on axioms: [propext]
+'GoalFormationRevision.inferFormation' does not depend on any axioms
+'GoalFormationRevision.formation_identified' depends on axioms: [propext]
+'GoalFormationRevision.ambiguous_formation_suspended' does not depend on any axioms
+'GoalFormationRevision.encode' does not depend on any axioms
+'GoalFormationRevision.decode' does not depend on any axioms
+'GoalFormationRevision.acquired_calibration_correct' does not depend on any axioms
+'GoalFormationRevision.calibration_consumes_existing_interface' does not depend on any axioms
+'GoalFormationRevision.Account' does not depend on any axioms
+'GoalFormationRevision.total' does not depend on any axioms
+'GoalFormationRevision.charge' does not depend on any axioms
+'GoalFormationRevision.charge_conserves' depends on axioms: [propext, Quot.sound]
+'GoalFormationRevision.insufficient_work_blocks' depends on axioms: [propext, Quot.sound]
+'GoalFormationRevision.Evidence' does not depend on any axioms
+'GoalFormationRevision.Ground' does not depend on any axioms
+'GoalFormationRevision.interpret' does not depend on any axioms
+'GoalFormationRevision.callsForRevision' does not depend on any axioms
+'GoalFormationRevision.predictFeedback' depends on axioms: [propext]
+'GoalFormationRevision.formation_model_predicts_intervention' depends on axioms: [propext]
+'GoalFormationRevision.proposedSelector' depends on axioms: [propext]
+'GoalFormationRevision.acquired_grounds_warrant_comparison' depends on axioms: [propext]
+'GoalFormationRevision.Record' does not depend on any axioms
+'GoalFormationRevision.State' does not depend on any axioms
+'GoalFormationRevision.learnedGoal' does not depend on any axioms
+'GoalFormationRevision.experience' depends on axioms: [propext]
+'GoalFormationRevision.calibrate' does not depend on any axioms
+'GoalFormationRevision.assess' does not depend on any axioms
+'GoalFormationRevision.reviseGoal' does not depend on any axioms
+'GoalFormationRevision.reform' depends on axioms: [propext]
+'GoalFormationRevision.no_authority_no_reform' depends on axioms: [propext]
+'GoalFormationRevision.cycle' depends on axioms: [propext]
+'GoalFormationRevision.cycle_conserves' depends on axioms: [propext, Quot.sound]
+'GoalFormationRevision.cycles' depends on axioms: [propext]
+'GoalFormationRevision.operate' depends on axioms: [propext]
+'GoalFormationRevision.operateMany' depends on axioms: [propext]
+'GoalFormationRevision.supported_cycle' depends on axioms: [propext, Quot.sound]
+'GoalFormationRevision.supported_finite_continuation' depends on axioms: [propext, Quot.sound]
+'GoalFormationRevision.start' does not depend on any axioms
+'GoalFormationRevision.acquire' depends on axioms: [propext]
+'GoalFormationRevision.revised' depends on axioms: [propext]
+'GoalFormationRevision.completed' depends on axioms: [propext]
+'GoalFormationRevision.harmful' does not depend on any axioms
+'GoalFormationRevision.safe' does not depend on any axioms
+'GoalFormationRevision.conflict' does not depend on any axioms
+'GoalFormationRevision.acquired_history_identifies_origin' depends on axioms: [propext]
+'GoalFormationRevision.goal_depends_on_actual_formative_rule' depends on axioms: [propext]
+'GoalFormationRevision.revised_goal_with_old_metric_still_successful' depends on axioms: [propext]
+'GoalFormationRevision.calibration_handles_reversed_channel' depends on axioms: [propext]
+'GoalFormationRevision.no_harm_no_revision' depends on axioms: [propext]
+'GoalFormationRevision.crossed_loss_blocks_simple_revision' depends on axioms: [propext]
+'GoalFormationRevision.recognition_does_not_force_revision' depends on axioms: [propext]
+'GoalFormationRevision.reform_changes_the_formative_relation' depends on axioms: [propext]
+'GoalFormationRevision.acquired_intervention_prediction_realized' depends on axioms: [propext]
+'GoalFormationRevision.revision_preserves_formation_and_losses' depends on axioms: [propext]
+'GoalFormationRevision.complete_history_account' depends on axioms: [propext]
+'GoalFormationRevision.actual_reformed_continuation' depends on axioms: [propext]
+'GoalFormationRevision.continued_practice_preserves_actual_consequences' depends on axioms: [propext]
+'GoalFormationRevision.unchanged_selection_exhausts_revised_practice' depends on axioms: [propext]
+'GoalFormationRevision.reform_does_not_make_support_infinite' depends on axioms: [propext]
+'GoalFormationRevision.reform_with_insufficient_work_fails' depends on axioms: [propext]
+'GoalFormationRevision.missing_reference_prevents_assessment' depends on axioms: [propext]
+'GoalFormationRevision.false_reference_can_hide_real_loss' depends on axioms: [propext]
+'GoalFormationRevision.erased_formation_evidence_blocks_deliberation' depends on axioms: [propext]
+'GoalFormationRevision.wrong_formation_model_prevents_needed_reform' depends on axioms: [propext]
+'GoalFormationRevision.stale_grounds_can_leave_new_loss_unaddressed' depends on axioms: [propext]
+'GoalFormationRevision.changed_goal_is_consumed_by_operation' depends on axioms: [propext]
+'GoalFormationRevision.corrected_reference_restores_revision' depends on axioms: [propext]
+'GoalFormationRevision.reform_changes_later_goal_acquisition' depends on axioms: [propext]
+'GoalFormationRevision.joined_revision_has_warrant_and_actual_continuation' depends on axioms: [propext]
+'CommonTaskRevision.goalBit' does not depend on any axioms
+'CommonTaskRevision.bitGoal' does not depend on any axioms
+'CommonTaskRevision.retarget' does not depend on any axioms
+'CommonTaskRevision.retargetHead' does not depend on any axioms
+'CommonTaskRevision.retarget_preserves_remaining' depends on axioms: [propext]
+'CommonTaskRevision.retarget_preserves_route_and_progress' does not depend on any axioms
+'CommonTaskRevision.retarget_valid' depends on axioms: [propext]
+'CommonTaskRevision.retarget_head_invariant' depends on axioms: [propext]
+'CommonTaskRevision.revised_head_completes' depends on axioms: [propext, Quot.sound]
+'CommonTaskRevision.paidRetarget' does not depend on any axioms
+'CommonTaskRevision.enact' depends on axioms: [propext]
+'CommonTaskRevision.deliverAndAct' depends on axioms: [propext]
+'CommonTaskRevision.continuation' depends on axioms: [propext]
+'CommonTaskRevision.retargeted_act_uses_delivered_revision' depends on axioms: [propext, Quot.sound]
+'CommonTaskRevision.formed' depends on axioms: [propext]
+'CommonTaskRevision.acquired_revision_changes_pending_action' depends on axioms: [propext, Quot.sound]
+'CommonTaskRevision.warranted_revision_and_pending_delivery' depends on axioms: [propext, Quot.sound]
+'CommonTaskRevision.paid_retarget_keeps_history' depends on axioms: [propext, Quot.sound]
+'CommonTaskRevision.pending' does not depend on any axioms
+'CommonTaskRevision.pending_is_valid' depends on axioms: [propext, Quot.sound]
+'CommonTaskRevision.old_route_faithfully_executes_outdated_task' depends on axioms: [propext]
+'CommonTaskRevision.declaration_only_fails' does not depend on any axioms
+'CommonTaskRevision.unencoded_replacement_fails' does not depend on any axioms
+'CommonTaskRevision.no_authority_blocks_rewrite' depends on axioms: [propext]
+'CommonTaskRevision.insufficient_rewrite_support' depends on axioms: [propext]
+'CommonTaskRevision.stale_conditions_defeat_the_new_practice' depends on axioms: [propext]
+'CommonTaskRevision.correction_retains_past_loss' depends on axioms: [propext]
+'PendingTaskApplicability.relevantRisk' does not depend on any axioms
+'PendingTaskApplicability.Endpoint' does not depend on any axioms
+'PendingTaskApplicability.reviewAndAct' depends on axioms: [propext]
+'PendingTaskApplicability.CoversEffect' does not depend on any axioms
+'PendingTaskApplicability.operation_without_relevant_loss' depends on axioms: [propext, Quot.sound]
+'PendingTaskApplicability.funded_operation_exists' depends on axioms: [propext, Quot.sound]
+'PendingTaskApplicability.funded_covered_review' depends on axioms: [propext, Quot.sound]
+'PendingTaskApplicability.covered_review_adds_no_practice_loss' depends on axioms: [propext, Quot.sound]
+'PendingTaskApplicability.review_retains_request' depends on axioms: [propext]
+'PendingTaskApplicability.deliverReview' depends on axioms: [propext]
+'PendingTaskApplicability.revised_delivery_enters_review' depends on axioms: [propext, Quot.sound]
+'PendingTaskApplicability.learning_review_covers_changed_context' depends on axioms: [propext, Quot.sound]
+'PendingTaskApplicability.safe_change_can_remove_comparative_warrant' depends on axioms: [propext]
+'PendingTaskApplicability.continueReviewed' depends on axioms: [propext]
+'PendingTaskApplicability.withHeadroom' depends on axioms: [propext]
+'PendingTaskApplicability.summarize' does not depend on any axioms
+'PendingTaskApplicability.check_can_exhaust_action_support' depends on axioms: [propext]
+'PendingTaskApplicability.additional_current_support_completes' depends on axioms: [propext]
+'PendingTaskApplicability.irrelevant_context_change_can_still_complete' depends on axioms: [propext]
+'PendingTaskApplicability.relevant_change_retains_unfinished_task' depends on axioms: [propext]
+'PendingTaskApplicability.missing_report_retains_unfinished_task' depends on axioms: [propext]
+'PendingTaskApplicability.report_not_covering_effect_can_still_fail' depends on axioms: [propext]

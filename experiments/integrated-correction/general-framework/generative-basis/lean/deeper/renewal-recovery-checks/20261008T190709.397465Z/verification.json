@@ -1,0 +1,130 @@
+{
+  "status": "failed",
+  "checked_at_utc": "2026-10-08T19:07:11.034063+00:00",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "checker_sha256": "594cfeffc0de6120997d129e51f96c0796cc60aaa09f465e313cca9308b4329d",
+  "modules": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean",
+      "source_sha256": "b97719c886e3dcd0f143a23db62fb7b8556dac35ec5c312fcdf7e14d47cee1d4",
+      "theorems": 35,
+      "declarations": [
+        "RelationalRenewal.add_sub_self",
+        "RelationalRenewal.sub_le_from_add",
+        "RelationalRenewal.le_sub_from_add",
+        "RelationalRenewal.keeps_level",
+        "RelationalRenewal.no_gain",
+        "RelationalRenewal.strict_loss",
+        "RelationalRenewal.add_le_cancel",
+        "RelationalRenewal.accumulate",
+        "RelationalRenewal.Unfolding",
+        "RelationalRenewal.Supported",
+        "RelationalRenewal.Dependent",
+        "RelationalRenewal.Renewed",
+        "RelationalRenewal.Consumed",
+        "RelationalRenewal.Participates",
+        "RelationalRenewal.RenewingIn",
+        "RelationalRenewal.ConsumingIn",
+        "RelationalRenewal.renewed_not_consumed",
+        "RelationalRenewal.renewing_not_consuming",
+        "RelationalRenewal.renewing_keeps_support",
+        "RelationalRenewal.lost_support_ends",
+        "RelationalRenewal.unrenewed_monotone",
+        "RelationalRenewal.unrenewed_drawdown_finite",
+        "RelationalRenewal.alternating",
+        "RelationalRenewal.alternating_even",
+        "RelationalRenewal.fluctuating",
+        "RelationalRenewal.fluctuating_dependent",
+        "RelationalRenewal.fluctuating_neither",
+        "RelationalRenewal.Law",
+        "RelationalRenewal.Law.level",
+        "RelationalRenewal.Law.level_succ",
+        "RelationalRenewal.Law.formed",
+        "RelationalRenewal.Law.formed_at_active",
+        "RelationalRenewal.Law.formed_at_inactive",
+        "RelationalRenewal.Law.formed_le",
+        "RelationalRenewal.Law.formed_of_always",
+        "RelationalRenewal.Law.Part",
+        "RelationalRenewal.Law.need",
+        "RelationalRenewal.Law.requiresPart",
+        "RelationalRenewal.Law.drawsPart",
+        "RelationalRenewal.Law.unfolding",
+        "RelationalRenewal.Law.unfolding_dependent",
+        "RelationalRenewal.Law.within_renewal_sustains",
+        "RelationalRenewal.Law.within_renewal_renewing",
+        "RelationalRenewal.Law.no_return_below_support",
+        "RelationalRenewal.Law.permanently_below",
+        "RelationalRenewal.Law.overdraw_crosses_support",
+        "RelationalRenewal.Law.overdraw_consuming",
+        "RelationalRenewal.Law.dependent_overdraw_ends_itself",
+        "RelationalRenewal.Law.independent_overdraw_persists",
+        "RelationalRenewal.Law.cultivation",
+        "RelationalRenewal.Law.malignant",
+        "RelationalRenewal.Law.formation_does_not_decide",
+        "RelationalRenewal.Law.sharing",
+        "RelationalRenewal.Law.winning",
+        "RelationalRenewal.Law.own_trajectory_does_not_decide",
+        "RelationalRenewal.Law.alone",
+        "RelationalRenewal.Law.together",
+        "RelationalRenewal.Law.jointly_consuming",
+        "RelationalRenewal.Law.escalation",
+        "RelationalRenewal.Law.escalation_consumes"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalRecovery.lean",
+      "source_sha256": "6149f83b4336d597d6ea8119a6e8f9e374b598475ed8186d07488d43b1521f98",
+      "theorems": 9,
+      "declarations": [
+        "RenewalRecovery.inactive_pair_absorbs",
+        "RenewalRecovery.supported_repair_step",
+        "RenewalRecovery.repair_window_progress",
+        "RenewalRecovery.repair_restores_sustaining_support",
+        "RenewalRecovery.pulse",
+        "RenewalRecovery.same_future_inputs",
+        "RenewalRecovery.two_actual_pulses",
+        "RenewalRecovery.supported_pulse_recovers",
+        "RenewalRecovery.unsupported_pulse_never_recovers",
+        "RenewalRecovery.recovered_history_neither_global_class"
+      ]
+    }
+  ],
+  "new_theorems": 9,
+  "new_declaration_audits": 10,
+  "total_declaration_audits": 70,
+  "dependencies": {},
+  "jobs": [
+    {
+      "log": "RelationalRenewal-compile.txt",
+      "exit_code": 0,
+      "arguments": [
+        "-o",
+        "RelationalRenewal.olean",
+        "RelationalRenewal.lean"
+      ]
+    },
+    {
+      "log": "RenewalRecovery-compile.txt",
+      "exit_code": 1,
+      "arguments": [
+        "-o",
+        "RenewalRecovery.olean",
+        "RenewalRecovery.lean"
+      ]
+    }
+  ],
+  "failure": "RenewalRecovery.lean:37:16: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern\n  if L.needF ≤ L.level t then ?m.41 else ?m.42\nin the target expression\n  L.level t + 1 ≤ L.level t + L.renew + L.contrib t - L.draw t\n\ncase isTrue\nL : Law\nt : Nat\nfOn : L.needF ≤ L.level t\nsurplus : L.draw t < L.contrib t\nh✝ : L.needG ≤ L.level t\n⊢ L.level t + 1 ≤ L.level t + L.renew + L.contrib t - L.draw t\nRenewalRecovery.lean:37:16: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern\n  if L.needF ≤ L.level t then ?m.41 else ?m.42\nin the target expression\n  L.level t + 1 ≤ L.level t + L.contrib t - L.draw t\n\ncase isFalse\nL : Law\nt : Nat\nfOn : L.needF ≤ L.level t\nsurplus : L.draw t < L.contrib t\nh✝ : ¬L.needG ≤ L.level t\n⊢ L.level t + 1 ≤ L.level t + L.contrib t - L.draw t\nRenewalRecovery.lean:54:6: error: omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  h ≥ 0\n  g ≥ 0\n  f ≥ 0\n  f - g ≤ -1\n  e ≥ 0\n  c ≥ 0\n  c - e ≥ 1\n  b ≥ 0\n  b - f ≤ 0\n  a ≥ 0\n  a - b ≥ 0\n  a + e - f ≤ 0\n  a + e - h ≥ 0\nwhere\n a := ↑(L.level T)\n b := ↑L.needF\n c := ↑N\n e := ↑d\n f := ↑(L.level (T + d))\n g := ↑(L.level (T + d + 1))\n h := ↑(L.level (T + (d + 1)))\nRenewalRecovery.lean:106:40: error: failed to synthesize\n  Decidable ((pulse 2).unfolding.requires Part.focal ())\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\nRenewalRecovery.lean:114:60: error: omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  a ≥ 2\nwhere\n a := ↑((pulse 2).level (2 + T))\nRenewalRecovery.lean:114:60: error: omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  0 ≤ b ≤ 1\n  a ≥ 2\nwhere\n a := ↑((pulse 2).level (2 + T))\n b := ↑({ start := 2, renew := 1, needG := 2, needF := 1, draw := fun t => if t = 0 then 2 else 0,\n        contrib := fun t => if t = 0 then 0 else 1 }.level\n    (2 + T))\n",
+  "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/renewal-recovery-checks/20261008T190709.397465Z",
+  "artifact_sha256": {
+    "Audit.lean": "1bba4b610891bb00289f99b8da0fa5180ed01f89d914621625bff768ae0dc32d",
+    "RelationalRenewal-compile.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "RelationalRenewal.lean": "b97719c886e3dcd0f143a23db62fb7b8556dac35ec5c312fcdf7e14d47cee1d4",
+    "RenewalRecovery-compile.txt": "ef803b4a432f0112692904d834ce020986ac33f7500b900ba58dd65e27ca0c9d",
+    "RenewalRecovery.lean": "6149f83b4336d597d6ea8119a6e8f9e374b598475ed8186d07488d43b1521f98",
+    "Signatures.lean": "70d331283397389c36da78e79aa8e84d1646de52e1a6534957e8edc1d13daae9",
+    "check_renewal_recovery.py": "594cfeffc0de6120997d129e51f96c0796cc60aaa09f465e313cca9308b4329d",
+    "lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2"
+  },
+  "scope": "Recovery inside the inherited support-gated renewal law. An active route with positive net contribution throughout a finite window restores sustaining support by the deficit bound. If both activities are unsupported, the level is invariant despite later nominal contribution inputs. Two actual input histories have the same initial condition and future inputs but differ in recovery; a recovered history is neither all-time renewing nor permanently consuming. The law, thresholds, contribution schedule and physical correspondence remain supplied. No general irreversibility, unique ontology, ethical or axiom-free foundation claim."
+}

@@ -1,0 +1,104 @@
+{
+  "entry": "M20",
+  "checked_at_utc": "2026-10-08T19:03:36.107582+00:00",
+  "suffixes": {
+    "claim_zh": " 同一软件接续评估加入Narwhal：未完成改造、继续接入计划与后续发布分别记录；未来API改价顾虑进入月度承诺安排，运行适应不独自证明后续改组控制已变。",
+    "claim_en": " The same software-continuation assessment adds Narwhal: unfinished change, continued-access plans and a later release are distinguished; concern about future API repricing enters monthly commitments, so operational adaptation does not establish changed control over later adaptation.",
+    "scope_zh": " 新核读五篇开发者帖并复核两份旧声明；现取历史页可能后改，不是事前预测、匹配因果识别或完整合同。保留Apollo终止与Narwhal继续，规则影响的返回闭环仍缺；不新增结果或数学。",
+    "scope_en": " Five newly examined developer posts and two reread statements; currently retrieved historical pages may be edited and provide neither prospective prediction, matched causal identification nor complete contracts. Apollo’s ending and Narwhal’s continuation remain; the rule-influence return loop is still missing. No new result identity or mathematics."
+  },
+  "links_added": [
+    {
+      "label_zh": "适应与保留的控制",
+      "label_en": "Adaptation and retained control",
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#continuation-with-retained-control"
+    },
+    {
+      "label_zh": "API过渡来源与限度",
+      "label_en": "API transition sources and limits",
+      "path": "sources/market-generativity/api-transition/README.md"
+    }
+  ],
+  "reviewed_versions": {
+    "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md": {
+      "before": "f9cebf1df1f2dfd7c9468d535c44aecd94d96be81fbd99845e30a08e131816a1",
+      "after": "d713347b7ed83e3163883769cf884db71a13341b38bb45faa383579e29f251df"
+    },
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md": {
+      "before": "cdd071d8c1abf13dace28b127a4506cc58b59e25473bfc362c90c064fff376bc",
+      "after": "ce8d50a91534c482cf5a163a9a100870666490d81b74f4f48917f5b9c9a46d36"
+    },
+    "sources/market-generativity/api-transition/README.md": {
+      "before": null,
+      "after": "39e935ff5c9d4ee9f0f06949a57f9965e630f287a0f327cb487f895fd7835697"
+    },
+    "sources/market-generativity/api-transition/manifest.json": {
+      "before": null,
+      "after": "4a6090f630c67758c1cbe9f50e2b34a36b3117d4c426eec89142689ec9f486d1"
+    },
+    "experiments/market-generativity/formation-correspondence/api-transition-source-checks.json": {
+      "before": null,
+      "after": "cbf044e7780ca06c013baf2d88e2f21dff780b35a61a35183f5aee763fbd249f"
+    }
+  },
+  "other_entries_unchanged": true,
+  "other_rendered_lines_unchanged": true,
+  "discovery_unchanged": true,
+  "preserved_prefixes": {
+    "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md": {
+      "bytes": 96832,
+      "sha256": "f9cebf1df1f2dfd7c9468d535c44aecd94d96be81fbd99845e30a08e131816a1"
+    },
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md": {
+      "bytes": 44601,
+      "sha256": "cdd071d8c1abf13dace28b127a4506cc58b59e25473bfc362c90c064fff376bc"
+    }
+  },
+  "pending_errors": [
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/organizational-formation-from-generative-comparison.md",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/situated-recovery-empirical-correspondence.md",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/context-sensitive-updating-correspondence.md",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/transition-grouping-word-partition.md"
+  ],
+  "pending_versions": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md",
+      "theories/shengsheng-buxi-generative-existence/results/records/market-supported-finite-transition.md",
+      "experiments/market-generativity/formal/README.md",
+      "theories/shengsheng-buxi-generative-existence/results/records/recurrent-chain-assembly.json",
+      "theories/shengsheng-buxi-generative-existence/results/records/classification-robust-generative-comparison.json",
+      "theories/shengsheng-buxi-generative-existence/results/records/classification-robust-generative-comparison.md",
+      "theories/shengsheng-buxi-generative-existence/results/records/market-partial-correction-boundary.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY-OF-BECOMING.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-ETHICS-ISOMORPHISM-AUDIT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATOR-GROUNDING-ARGUMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DISCRIMINATION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-RENEWAL-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/G0-WARRANT.md"
+    ],
+    "removed_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "theories/meta-attractor/COMMON-ORGANIZATION.md"
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+import ReservedShutdown
+#print axioms ReservedShutdown.book
+#print axioms ReservedShutdown.actual
+#print axioms ReservedShutdown.state
+#print axioms ReservedShutdown.mapBook
+#print axioms ReservedShutdown.setState
+#print axioms ReservedShutdown.control
+#print axioms ReservedShutdown.Grant
+#print axioms ReservedShutdown.eligible
+#print axioms ReservedShutdown.Armed
+#print axioms ReservedShutdown.backend
+#print axioms ReservedShutdown.stopDevice
+#print axioms ReservedShutdown.stop
+#print axioms ReservedShutdown.Stopped
+#print axioms ReservedShutdown.setState_preserves_evidence
+#print axioms ReservedShutdown.stop_executes_current_authorized_command
+#print axioms ReservedShutdown.denied_grant_cannot_stop
+#print axioms ReservedShutdown.stop_keeps_pending_record
+#print axioms ReservedShutdown.debit
+#print axioms ReservedShutdown.debit_shape
+#print axioms ReservedShutdown.tick_available_and_preserves_control
+#print axioms ReservedShutdown.Attempt
+#print axioms ReservedShutdown.admissible
+#print axioms ReservedShutdown.attempt
+#print axioms ReservedShutdown.eligibility_follows_control
+#print axioms ReservedShutdown.recovery_attempt_keeps_stop_margin
+#print axioms ReservedShutdown.Supervisor
+#print axioms ReservedShutdown.stopped
+#print axioms ReservedShutdown.cycle
+#print axioms ReservedShutdown.Valid
+#print axioms ReservedShutdown.cycle_keeps_access_or_stops
+#print axioms ReservedShutdown.run
+#print axioms ReservedShutdown.failedSnapshot
+#print axioms ReservedShutdown.runRetained
+#print axioms ReservedShutdown.successful_execution_retains_exact_state
+#print axioms ReservedShutdown.stopped_is_absorbing
+#print axioms ReservedShutdown.every_supported_schedule_finishes
+#print axioms ReservedShutdown.preflight
+#print axioms ReservedShutdown.admission_establishes_stop_access
+#print axioms ReservedShutdown.inspected
+#print axioms ReservedShutdown.grant
+#print axioms ReservedShutdown.scenario
+#print axioms ReservedShutdown.executeExample
+#print axioms ReservedShutdown.terminal
+#print axioms ReservedShutdown.old_exhaustion_entry_is_refused
+#print axioms ReservedShutdown.incomplete_recovery_reaches_real_shutdown
+#print axioms ReservedShutdown.repeated_interruptions_cannot_spend_stop_reserve
+#print axioms ReservedShutdown.deadline_margin_stops_before_retry
+#print axioms ReservedShutdown.stale_grant_is_refused
+#print axioms ReservedShutdown.no_shutdown_mandate_is_refused
+#print axioms ReservedShutdown.uncovered_long_interrupt_breaks_completion
+#print axioms ReservedShutdown.failed_interrupt_retains_elapsed_time
+#check ReservedShutdown.setState_preserves_evidence
+#check ReservedShutdown.stop_executes_current_authorized_command
+#check ReservedShutdown.denied_grant_cannot_stop
+#check ReservedShutdown.stop_keeps_pending_record
+#check ReservedShutdown.debit_shape
+#check ReservedShutdown.tick_available_and_preserves_control
+#check ReservedShutdown.eligibility_follows_control
+#check ReservedShutdown.recovery_attempt_keeps_stop_margin
+#check ReservedShutdown.cycle_keeps_access_or_stops
+#check ReservedShutdown.successful_execution_retains_exact_state
+#check ReservedShutdown.stopped_is_absorbing
+#check ReservedShutdown.every_supported_schedule_finishes
+#check ReservedShutdown.admission_establishes_stop_access
+#check ReservedShutdown.old_exhaustion_entry_is_refused
+#check ReservedShutdown.incomplete_recovery_reaches_real_shutdown
+#check ReservedShutdown.repeated_interruptions_cannot_spend_stop_reserve
+#check ReservedShutdown.deadline_margin_stops_before_retry
+#check ReservedShutdown.stale_grant_is_refused
+#check ReservedShutdown.no_shutdown_mandate_is_refused
+#check ReservedShutdown.uncovered_long_interrupt_breaks_completion
+#check ReservedShutdown.failed_interrupt_retains_elapsed_time

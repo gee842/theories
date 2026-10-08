@@ -1,0 +1,326 @@
+{
+  "checked_at_utc": "2026-10-08T18:33:07.158935+00:00",
+  "status": "owned-scope-passed",
+  "owned_ids": [
+    "mediated-evidence-transport",
+    "recoverable-mediated-change"
+  ],
+  "commands": [
+    "make research-render",
+    "python3 -B tools/research/research.py check --ids mediated-evidence-transport recoverable-mediated-change",
+    "make research-check"
+  ],
+  "render": {
+    "records": 68,
+    "selected_records": [
+      "acquired-binding-compositional-use",
+      "acquired-revision-of-pending-task",
+      "aggregate-exit-funding",
+      "alignment-direction-g0-j",
+      "assured-route-criterion",
+      "becoming-context-coherence",
+      "binding-preserving-substitution",
+      "branching-target-uniqueness",
+      "branching-tests-bisimulation",
+      "classification-robust-generative-comparison",
+      "code-plan-global-support",
+      "conditional-foundation-assessment",
+      "context-sensitive-updating-correspondence",
+      "derivation-soundness",
+      "derived-history-law-exactness",
+      "effective-capacity-and-eventual-reachability",
+      "enacted-scene-binding",
+      "encounter-control-and-retention",
+      "encounter-selection-and-revision",
+      "endpoint-loss-and-return",
+      "exclusive-footprint-support",
+      "fallible-witness-diagnosability",
+      "finite-basis-common-interpretation",
+      "finite-continuation-plans",
+      "finite-fallible-inquiry-necessity",
+      "finite-granularity-question-recovery",
+      "finite-joining-tree-lifting",
+      "finite-trace-transport",
+      "formed-goal-revision-continuation",
+      "fulfillment-chance-floor",
+      "functional-joining-common-structure",
+      "growth-constrained-fragmentation",
+      "incidence-common-refinement",
+      "joining-open-map-factor",
+      "joining-questions-survive-encoding",
+      "joint-code-plan-lifting",
+      "joint-decomposition-lifting",
+      "joint-plan-composition",
+      "joint-target-uniqueness",
+      "market-finite-support-obstruction",
+      "market-partial-correction-boundary",
+      "market-protected-continuation",
+      "market-supported-finite-transition",
+      "material-preparation-output",
+      "mediated-evidence-transport",
+      "multivalued-joining-common-structure",
+      "naming-attention-coverage",
+      "open-form-realization-under-revision",
+      "organizational-formation-from-generative-comparison",
+      "organizational-rule-inheritance",
+      "positive-ground-open-futures",
+      "practical-judgment-g0-j",
+      "prefix-observation-loss",
+      "recoverable-mediated-change",
+      "recurrent-chain-assembly",
+      "relational-generative-comparison",
+      "retained-reference-joining-recovery",
+      "retrospective-source-binding",
+      "risk-certificate-outcome-distinction",
+      "scientific-inquiry-foundation",
+      "situated-recovery-empirical-correspondence",
+      "theory-of-becoming-foundation",
+      "trace-law-equivalence",
+      "transition-grouping-word-partition",
+      "unanchored-incidence-collapse",
+      "universal-practical-warrant",
+      "versioned-request-completion",
+      "wisdom-root"
+    ],
+    "errors": [],
+    "source_drift": [
+      {
+        "id": "acquired-binding-compositional-use",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      },
+      {
+        "id": "classification-robust-generative-comparison",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+        "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+        "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+      },
+      {
+        "id": "enacted-scene-binding",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      },
+      {
+        "id": "encounter-control-and-retention",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      },
+      {
+        "id": "encounter-selection-and-revision",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      },
+      {
+        "id": "naming-attention-coverage",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      },
+      {
+        "id": "organizational-formation-from-generative-comparison",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+        "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+        "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+      },
+      {
+        "id": "retrospective-source-binding",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      }
+    ],
+    "unrelated_source_drift": [],
+    "scope": "Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation."
+  },
+  "focused_check": {
+    "records": 68,
+    "selected_records": [
+      "mediated-evidence-transport",
+      "recoverable-mediated-change"
+    ],
+    "errors": [],
+    "source_drift": [],
+    "unrelated_source_drift": [
+      {
+        "id": "acquired-binding-compositional-use",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      },
+      {
+        "id": "classification-robust-generative-comparison",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+        "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+        "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+      },
+      {
+        "id": "enacted-scene-binding",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      },
+      {
+        "id": "encounter-control-and-retention",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      },
+      {
+        "id": "encounter-selection-and-revision",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      },
+      {
+        "id": "naming-attention-coverage",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      },
+      {
+        "id": "organizational-formation-from-generative-comparison",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+        "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+        "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+      },
+      {
+        "id": "retrospective-source-binding",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      }
+    ],
+    "scope": "Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation."
+  },
+  "global_check": {
+    "records": 68,
+    "selected_records": [
+      "acquired-binding-compositional-use",
+      "acquired-revision-of-pending-task",
+      "aggregate-exit-funding",
+      "alignment-direction-g0-j",
+      "assured-route-criterion",
+      "becoming-context-coherence",
+      "binding-preserving-substitution",
+      "branching-target-uniqueness",
+      "branching-tests-bisimulation",
+      "classification-robust-generative-comparison",
+      "code-plan-global-support",
+      "conditional-foundation-assessment",
+      "context-sensitive-updating-correspondence",
+      "derivation-soundness",
+      "derived-history-law-exactness",
+      "effective-capacity-and-eventual-reachability",
+      "enacted-scene-binding",
+      "encounter-control-and-retention",
+      "encounter-selection-and-revision",
+      "endpoint-loss-and-return",
+      "exclusive-footprint-support",
+      "fallible-witness-diagnosability",
+      "finite-basis-common-interpretation",
+      "finite-continuation-plans",
+      "finite-fallible-inquiry-necessity",
+      "finite-granularity-question-recovery",
+      "finite-joining-tree-lifting",
+      "finite-trace-transport",
+      "formed-goal-revision-continuation",
+      "fulfillment-chance-floor",
+      "functional-joining-common-structure",
+      "growth-constrained-fragmentation",
+      "incidence-common-refinement",
+      "joining-open-map-factor",
+      "joining-questions-survive-encoding",
+      "joint-code-plan-lifting",
+      "joint-decomposition-lifting",
+      "joint-plan-composition",
+      "joint-target-uniqueness",
+      "market-finite-support-obstruction",
+      "market-partial-correction-boundary",
+      "market-protected-continuation",
+      "market-supported-finite-transition",
+      "material-preparation-output",
+      "mediated-evidence-transport",
+      "multivalued-joining-common-structure",
+      "naming-attention-coverage",
+      "open-form-realization-under-revision",
+      "organizational-formation-from-generative-comparison",
+      "organizational-rule-inheritance",
+      "positive-ground-open-futures",
+      "practical-judgment-g0-j",
+      "prefix-observation-loss",
+      "recoverable-mediated-change",
+      "recurrent-chain-assembly",
+      "relational-generative-comparison",
+      "retained-reference-joining-recovery",
+      "retrospective-source-binding",
+      "risk-certificate-outcome-distinction",
+      "scientific-inquiry-foundation",
+      "situated-recovery-empirical-correspondence",
+      "theory-of-becoming-foundation",
+      "trace-law-equivalence",
+      "transition-grouping-word-partition",
+      "unanchored-incidence-collapse",
+      "universal-practical-warrant",
+      "versioned-request-completion",
+      "wisdom-root"
+    ],
+    "errors": [],
+    "source_drift": [
+      {
+        "id": "acquired-binding-compositional-use",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      },
+      {
+        "id": "classification-robust-generative-comparison",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+        "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+        "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+      },
+      {
+        "id": "enacted-scene-binding",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      },
+      {
+        "id": "encounter-control-and-retention",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      },
+      {
+        "id": "encounter-selection-and-revision",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      },
+      {
+        "id": "naming-attention-coverage",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      },
+      {
+        "id": "organizational-formation-from-generative-comparison",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+        "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+        "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+      },
+      {
+        "id": "retrospective-source-binding",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "reviewed_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+        "current_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+      }
+    ],
+    "unrelated_source_drift": [],
+    "scope": "Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation."
+  },
+  "scope": "Owned result records and generated views passed with no selected source drift or structural errors. Global check returns source drift for unrelated concurrent studies; those source hashes were not refreshed. No additional Lean run or acceptance of concurrent research."
+}

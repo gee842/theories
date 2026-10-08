@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T18:38:13.465912+00:00",
+  "manifest_sha256": "1a8ecb6a7b754d700cf577ceb2ea058c8f55016141f05e232a4685b959856c24",
+  "checker_sha256": "69473315697acb992b4ee86a879648622e686ccebab99e1e779c897b75e79b78",
+  "source_checks": [
+    {
+      "id": "launch",
+      "sha256": "504944b79a3cb7fd2df45161f2034a8627233577d0d1707f742b1c003909b99a",
+      "anchors_checked": [
+        "September 28, 2010",
+        "Pending this decision",
+        "beta version",
+        "Steering Committee"
+      ]
+    },
+    {
+      "id": "first-stable",
+      "sha256": "3c3a84e4d311db06c28516cb659b4de6af9f49e1b2dd6be941f7693787d9ffc5",
+      "anchors_checked": [
+        "January 25, 2011",
+        "first stable release",
+        "independent process",
+        "75 to 11GB"
+      ]
+    },
+    {
+      "id": "endowment",
+      "sha256": "753b8ddeae8279cd5cb8da63c85eee5e924bea44d720c1ac8ef6f81ffe1ec3ab",
+      "anchors_checked": [
+        "2011-02-25",
+        "eight days",
+        "frozen assets",
+        "ongoing running costs"
+      ]
+    },
+    {
+      "id": "continued-release",
+      "sha256": "59617d7cb1aefb29b7204e65fa98358a6d9bff71b6f646530bb08b7b959d15f3",
+      "anchors_checked": [
+        "March 22, 2011",
+        "operating expenses",
+        "infrastructure costs"
+      ]
+    },
+    {
+      "id": "distribution",
+      "sha256": "450e528c0d5dfa9d2217af65eaea54aa6bb630fdcbc57f063b876557bf2b1311",
+      "anchors_checked": [
+        "Thu Mar 31",
+        "2011",
+        "LibreOffice 3.3.2",
+        "default office package"
+      ]
+    },
+    {
+      "id": "incorporation",
+      "sha256": "68bac83fbee628eb9dce51bd600b13e72562c9b2e3104770fc36022efe525c74",
+      "anchors_checked": [
+        "February 17th, 2012",
+        "interim legal entity",
+        "Freies Office Deutschland"
+      ]
+    },
+    {
+      "id": "other-continuation",
+      "sha256": "48b85c0608701a560cfa3e48bf83e4be59e488c6ee54abbbe9d6cf53faa6bb69",
+      "anchors_checked": [
+        "18 October 2012",
+        "In May 2012",
+        "incompatibly-licensed libraries"
+      ]
+    }
+  ],
+  "scope": "Seven retained primary statements and text anchors; publication/event dates distinguished. No new mathematical theorem, executable software test, causal effect size, full financial ledger, measured stock threshold or independent-agent review."
+}

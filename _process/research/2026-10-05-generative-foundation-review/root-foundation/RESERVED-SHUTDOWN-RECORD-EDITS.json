@@ -1,0 +1,45 @@
+{
+  "scope": "One stronger result; only reviewed authored shared-document changes in two inherited records. Original receipts untouched.",
+  "updates": [
+    {
+      "id": "mediated-evidence-transport",
+      "reconciled_references": [
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-INTEGRATION.md",
+          "before": "baca7031239809fe93e6086b678f5e884ef726905aa6b78bcad54d899daf9d1c",
+          "after": "7691adee9e1f76698d2775e3b15a7f02277312b7cc02ba80468c8a0d35d91830"
+        },
+        {
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md",
+          "before": "83ede6e76779513c2e9de6a14836b356ba5457101a0ef3717504139748bb6b1c",
+          "after": "f100092dfc46968db1da068aa6f1f4a827946625852dea033267a311290589c0"
+        },
+        {
+          "path": "sources/15-codex-theory-conversations/2026-10-08-finish-alignment-fruits.md",
+          "before": "4e807e1a28676c93b28a905e097abd4055472b771878c2e1ed39a84210560ce0",
+          "after": "396d41225a3b911836840504e80392823b3cf3fe47db1f3f4e3783e13647fada"
+        }
+      ]
+    },
+    {
+      "id": "recoverable-mediated-change",
+      "reconciled_references": [
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-INTEGRATION.md",
+          "before": "baca7031239809fe93e6086b678f5e884ef726905aa6b78bcad54d899daf9d1c",
+          "after": "7691adee9e1f76698d2775e3b15a7f02277312b7cc02ba80468c8a0d35d91830"
+        },
+        {
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md",
+          "before": "83ede6e76779513c2e9de6a14836b356ba5457101a0ef3717504139748bb6b1c",
+          "after": "f100092dfc46968db1da068aa6f1f4a827946625852dea033267a311290589c0"
+        },
+        {
+          "path": "sources/15-codex-theory-conversations/2026-10-08-finish-alignment-fruits.md",
+          "before": "4e807e1a28676c93b28a905e097abd4055472b771878c2e1ed39a84210560ce0",
+          "after": "396d41225a3b911836840504e80392823b3cf3fe47db1f3f4e3783e13647fada"
+        }
+      ]
+    }
+  ]
+}

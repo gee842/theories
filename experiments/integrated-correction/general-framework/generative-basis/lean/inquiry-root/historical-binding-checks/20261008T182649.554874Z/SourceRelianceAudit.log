@@ -1,0 +1,53 @@
+'Generative.SourceReliance.Route' does not depend on any axioms
+'Generative.SourceReliance.Probe' does not depend on any axioms
+'Generative.SourceReliance.Reports' does not depend on any axioms
+'Generative.SourceReliance.emit' does not depend on any axioms
+'Generative.SourceReliance.repertoire' does not depend on any axioms
+'Generative.SourceReliance.raw' does not depend on any axioms
+'Generative.SourceReliance.decode' does not depend on any axioms
+'Generative.SourceReliance.Record' does not depend on any axioms
+'Generative.SourceReliance.acquire' does not depend on any axioms
+'Generative.SourceReliance.fits' does not depend on any axioms
+'Generative.SourceReliance.learn' does not depend on any axioms
+'Generative.SourceReliance.baseline' does not depend on any axioms
+'Generative.SourceReliance.localProbe' does not depend on any axioms
+'Generative.SourceReliance.commonProbe' does not depend on any axioms
+'Generative.SourceReliance.protocol' does not depend on any axioms
+'Generative.SourceReliance.Faults' does not depend on any axioms
+'Generative.SourceReliance.World' does not depend on any axioms
+'Generative.SourceReliance.view' does not depend on any axioms
+'Generative.SourceReliance.enumerate' does not depend on any axioms
+'Generative.SourceReliance.compatible' does not depend on any axioms
+'Generative.SourceReliance.consensus' does not depend on any axioms
+'Generative.SourceReliance.rely' does not depend on any axioms
+'Generative.SourceReliance.clean' does not depend on any axioms
+'Generative.SourceReliance.localUncertain' does not depend on any axioms
+'Generative.SourceReliance.allFaults' does not depend on any axioms
+'Generative.SourceReliance.acquired_decode' depends on axioms: [Quot.sound]
+'Generative.SourceReliance.acquired_record_form' depends on axioms: [propext, Quot.sound]
+'Generative.SourceReliance.actual_route_retained' depends on axioms: [propext, Quot.sound]
+'Generative.SourceReliance.protocol_identifies_route' depends on axioms: [propext, Quot.sound]
+'Generative.SourceReliance.baseline_does_not_identify' depends on axioms: [propext, Quot.sound]
+'Generative.SourceReliance.local_probe_leaves_common_vulnerability' depends on axioms: [propext, Quot.sound]
+'Generative.SourceReliance.duplicated_records_add_no_constraint' depends on axioms: [propext, Quot.sound]
+'Generative.SourceReliance.recoding_preserves_acquired_routes' depends on axioms: [propext, Quot.sound]
+'Generative.SourceReliance.mem_enumerate' depends on axioms: [propext, Quot.sound]
+'Generative.SourceReliance.actual_world_compatible' depends on axioms: [propext, Quot.sound]
+'Generative.SourceReliance.consensus_correct_for_member' depends on axioms: [propext, Quot.sound]
+'Generative.SourceReliance.reliance_correct_with_covered_world' depends on axioms: [propext, Quot.sound]
+'Generative.SourceReliance.acquired_reliance_correct' depends on axioms: [propext, Quot.sound]
+'Generative.SourceReliance.separate_second_survives_declared_faults' does not depend on any axioms
+'Generative.SourceReliance.copy_can_be_reliable_when_route_is_clean' does not depend on any axioms
+'Generative.SourceReliance.copied_agreement_under_local_uncertainty' does not depend on any axioms
+'Generative.SourceReliance.uncopied_agreement_under_shared_uncertainty' does not depend on any axioms
+'Generative.SourceReliance.partial_acquisition_preserves_relevant_uncertainty' depends on axioms: [propext, Quot.sound]
+'Generative.SourceReliance.common_probe_enables_scoped_reliance' depends on axioms: [propext, Quot.sound]
+'Generative.SourceReliance.copied_pair_has_opposite_compatible_targets' does not depend on any axioms
+'Generative.SourceReliance.no_report_only_exact_answer_on_copied_pair' does not depend on any axioms
+'Generative.SourceReliance.jointFailure' does not depend on any axioms
+'Generative.SourceReliance.jointRecords' does not depend on any axioms
+'Generative.SourceReliance.omitted_joint_failure_matches_training' does not depend on any axioms
+'Generative.SourceReliance.omitted_joint_failure_defeats_inference' does not depend on any axioms
+'Generative.SourceReliance.joint_challenge_reopens_model_family' does not depend on any axioms
+'Generative.SourceReliance.empty_family_does_not_certify' does not depend on any axioms
+'Generative.SourceReliance.joint_challenge_leaves_observed_history_unchanged' does not depend on any axioms

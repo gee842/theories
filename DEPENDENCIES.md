@@ -234,6 +234,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean)
 
+## formed-copying-correction ← formed-copying-registration
+
+`formal-reuse` — damaged 直接执行旧形成、错位及复制操作；新 step_accounts 调用旧 step_accounts，编辑后实际后继接入原复制。 / damaged directly executes prior formation, displacement and copying; new step_accounts invokes prior step_accounts, and the actual edited daughter enters inherited copying.
+
+**Producer output / 上游输出:** AAAB 产物、剩余 B、四个已成连接及自初始预算累计的消耗。 / The AAAB product, residual B, four formed contacts and expenditure accumulated from the entrance budget.
+
+**Consumer input / 下游输入:** 检查／编辑过程保留该整个状态，拆回并重接一个连接后执行实际替换。 / The checking/editing process retains that whole state, reclaims and reconnects one contact, then performs actual replacement.
+
+**Retained conditions / 保留条件:** 入口预算明确为13、14或15；未在失败后补入支持。替换规律新增，随后复制另需其准确读取和供给。 / Entrance budgets are explicitly 13, 14 or 15; support is not added after failure. Exchange is an added law, and subsequent copying separately requires accurate reading and supply.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/CopyingCorrection.lean)
+
 ## formed-copying-registration ← inherited-structural-copying
 
 `formal-reuse` — registered_operation_refines 将注册后的运行对应到旧步骤；registered_inheritance 实际调用 copied_structure_inherits。 / registered_operation_refines relates registered execution to the old steps; registered_inheritance directly uses copied_structure_inherits.
@@ -353,6 +365,10 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 回应匹配当前检验关系、实际修订与重试、继续参与、原治理门槛；未把操作正确当作自动授权。 / Response matches the current test relation; actual revision and retry, continuing participation and the original governance threshold; correct execution does not automatically confer authority.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointPracticeContinuation.lean)
+
+## learned-procedure-transmission ← encounter-selection-and-revision
+
+`interpretive` — 复用取得信息、进一步经历选择及实际使用的区分；新联结论历史不正式导入经历选择模型。 / Reuses the distinction between acquired information, selection of further encounters and actual use. This new connectionist history is not a formal import of the encounter-choice model.
 
 ## market-finite-support-obstruction ← market-supported-finite-transition
 

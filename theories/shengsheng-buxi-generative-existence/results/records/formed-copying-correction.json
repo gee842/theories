@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "id": "formed-copying-correction",
+  "title": {
+    "zh": "形成的编辑关系纠正已成后继",
+    "en": "Formed correction edits an existing successor"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F10",
+  "reviewed_at_utc": "2026-10-08T19:33:55.794637+00:00",
+  "claim": {
+    "zh": "旧错误复制留下的产物、库存和连接进入新检查／编辑过程；实际材料替换接通释放及随后遗传，并证明单点参考匹配的精确条件与忠实参考下任意有限检查的缺陷不增。",
+    "en": "The product, stock and connections retained from erroneous copying enter a new checking/editing process; actual component exchange joins release and subsequent inheritance, with an exact single-site reference-matching criterion and non-increasing defects through every finite inspection scan under faithful references."
+  },
+  "hypotheses": [
+    {
+      "zh": "位置访问、比较、可复用组分的原子替换及保留位置边给定；接线、检查、替换各耗一支持，位置选择和发生次序给定。",
+      "en": "Positional access, comparison, atomic exchange of reusable components and retained positional bonds are supplied; connection, inspection and exchange each consume one support unit, with site selection and event order supplied."
+    },
+    {
+      "zh": "参考匹配成为模板纠正需要忠实参考；一般不增定理不保证覆盖全部位置、供给充足或最终完成。",
+      "en": "Reference matching becomes template correction under faithful correspondence; the general non-increase theorem does not guarantee coverage, sufficient stock or eventual completion."
+    }
+  ],
+  "correspondence": {
+    "zh": "由同一复制史保留的材料和连接形成编辑关系，差异通过沿实际路由取值而取得；Faithful 不参与操作分支，只作为正确性定理的对应前提。",
+    "en": "Materials and connections retained from one copying history form the editing relation; differences are read along the actual route. Faithful does not control operational branches and is only a correspondence premise for correctness."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/CopyingCorrection.lean",
+  "aliases": [
+    "CopyingCorrection.formed_route_edits_actual_product"
+  ],
+  "dependencies": [
+    {
+      "id": "formed-copying-registration",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "damaged 直接执行旧形成、错位及复制操作；新 step_accounts 调用旧 step_accounts，编辑后实际后继接入原复制。",
+        "en": "damaged directly executes prior formation, displacement and copying; new step_accounts invokes prior step_accounts, and the actual edited daughter enters inherited copying."
+      },
+      "interface": {
+        "output": {
+          "zh": "AAAB 产物、剩余 B、四个已成连接及自初始预算累计的消耗。",
+          "en": "The AAAB product, residual B, four formed contacts and expenditure accumulated from the entrance budget."
+        },
+        "input": {
+          "zh": "检查／编辑过程保留该整个状态，拆回并重接一个连接后执行实际替换。",
+          "en": "The checking/editing process retains that whole state, reclaims and reconnects one contact, then performs actual replacement."
+        },
+        "conditions": {
+          "zh": "入口预算明确为13、14或15；未在失败后补入支持。替换规律新增，随后复制另需其准确读取和供给。",
+          "en": "Entrance budgets are explicitly 13, 14 or 15; support is not added after failure. Exchange is an added law, and subsequent copying separately requires accurate reading and supply."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/CopyingCorrection.lean"
+      }
+    }
+  ],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/CopyingCorrection.lean",
+      "detail": {
+        "zh": "共同错误来源可掩盖错误或损坏正确产物；预算13时检查耗尽编辑／释放支持，14时纠正完成但不能释放。",
+        "en": "A shared wrong source can conceal error or damage correct output; budget 13 exhausts editing/release support, while 14 corrects without releasing."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "未导出参考选择、故障定位、比较／替换微观规律、自动修复计划、自供、误差率或种群优势；编码与动力学校对及同机制传统模型保留比较信用。",
+    "en": "Reference selection, fault localization, microscopic comparison/exchange, autonomous repair planning, renewal, error rates and population advantage are not derived; coding, kinetic proofreading and equivalent conventional mechanisms retain comparative credit."
+  },
+  "validation_scope": {
+    "zh": "27项新定理声明／45项新审计，529项实际闭包中484项继承分列；两份原始论文按记录范围阅读并检查关键页，无新经验复算。",
+    "en": "27 new theorem declarations / 45 new audits, with 484 inherited declarations separate in 529 actual-closure audits. Two original papers are read at the recorded scope with key-page inspection, without new empirical reanalysis."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/CopyingCorrection.lean",
+      "role": "proof",
+      "sha256": "0c25fda0e3f08d34091ac55dcddecfc2c8c86f634480ffe4f50cccdce5c06aa5",
+      "declarations": [
+        "CopyingCorrection.exchange_material",
+        "CopyingCorrection.inspection_matches_reference_iff",
+        "CopyingCorrection.inspection_scan_does_not_increase_defects",
+        "CopyingCorrection.history_accounts",
+        "CopyingCorrection.formed_route_edits_actual_product",
+        "CopyingCorrection.shared_wrong_source_hides_error",
+        "CopyingCorrection.wrong_reference_damages_correct_product",
+        "CopyingCorrection.corrected_daughter_enters_inheritance"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/copying-correction-verification/verification.json",
+      "role": "receipt",
+      "sha256": "8ea4c378aacc81e24ddef5ff7d5ac9094a5d00934f029e10a1e82b98fe0eb233",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "08738429cb8e1369eef571c7149f4e031103411c57c971165141b0319785ccf8",
+      "declarations": []
+    },
+    {
+      "path": "sources/evolutionary-selection/copying-correction/README.md",
+      "role": "review",
+      "sha256": "8eff15156f6a32444ab9afcb073e8538ad941769b3221820fc76364718436267",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/CopyingCorrection.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/copying-correction-verification/verification.json",
+      "sha256_pointer": "/source_sha256/CopyingCorrection.lean",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "把已有参考取得／更新机制接到本编辑关系，说明如何辨别共同错误来源、改变所依据的关系，并保持实施编辑所需支持。",
+    "en": "Compose existing reference-acquisition/renewal mechanisms with this editing relation, explaining discrimination of a shared wrong source, change of the guiding relationship and retained support for actual editing."
+  },
+  "history": [
+    {
+      "zh": "2026-10-09：新增一个原产物—编辑—后继组合；旧无编辑语法的前缀保留定理与其他校准／社会组织结果不变。",
+      "en": "2026-10-09: adds one retained-product–editing–successor composition; the old no-editing grammar’s prefix theorem and separate calibration/social-organizational results remain unchanged."
+    }
+  ]
+}

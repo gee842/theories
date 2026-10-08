@@ -1,0 +1,236 @@
+{
+  "render": {
+    "command": "make research-render",
+    "exit_code": 2,
+    "result": {
+      "records": 61,
+      "selected_records": [
+        "acquired-binding-compositional-use",
+        "aggregate-exit-funding",
+        "alignment-direction-g0-j",
+        "assured-route-criterion",
+        "becoming-context-coherence",
+        "binding-preserving-substitution",
+        "branching-target-uniqueness",
+        "branching-tests-bisimulation",
+        "classification-robust-generative-comparison",
+        "code-plan-global-support",
+        "conditional-foundation-assessment",
+        "derivation-soundness",
+        "derived-history-law-exactness",
+        "effective-capacity-and-eventual-reachability",
+        "enacted-scene-binding",
+        "encounter-control-and-retention",
+        "encounter-selection-and-revision",
+        "endpoint-loss-and-return",
+        "exclusive-footprint-support",
+        "fallible-witness-diagnosability",
+        "finite-basis-common-interpretation",
+        "finite-continuation-plans",
+        "finite-fallible-inquiry-necessity",
+        "finite-granularity-question-recovery",
+        "finite-joining-tree-lifting",
+        "finite-trace-transport",
+        "fulfillment-chance-floor",
+        "functional-joining-common-structure",
+        "growth-constrained-fragmentation",
+        "incidence-common-refinement",
+        "joining-open-map-factor",
+        "joining-questions-survive-encoding",
+        "joint-code-plan-lifting",
+        "joint-decomposition-lifting",
+        "joint-plan-composition",
+        "joint-target-uniqueness",
+        "market-partial-correction-boundary",
+        "market-protected-continuation",
+        "market-supported-finite-transition",
+        "material-preparation-output",
+        "multivalued-joining-common-structure",
+        "naming-attention-coverage",
+        "open-form-realization-under-revision",
+        "organizational-formation-from-generative-comparison",
+        "organizational-rule-inheritance",
+        "positive-ground-open-futures",
+        "practical-judgment-g0-j",
+        "prefix-observation-loss",
+        "recurrent-chain-assembly",
+        "relational-generative-comparison",
+        "retained-reference-joining-recovery",
+        "retrospective-source-binding",
+        "risk-certificate-outcome-distinction",
+        "scientific-inquiry-foundation",
+        "situated-recovery-empirical-correspondence",
+        "theory-of-becoming-foundation",
+        "trace-law-equivalence",
+        "transition-grouping-word-partition",
+        "unanchored-incidence-collapse",
+        "universal-practical-warrant",
+        "wisdom-root"
+      ],
+      "errors": [],
+      "source_drift": [
+        {
+          "id": "classification-robust-generative-comparison",
+          "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+          "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+          "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+        },
+        {
+          "id": "market-partial-correction-boundary",
+          "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+          "reviewed_sha256": "9cb0bbe1826d8d9ae39f47c7b1262a75ec78ed3f7ad5ec6cd1196b5a9e80724a",
+          "current_sha256": "0aaf71300c4eba2d9e799843a62349e77f733e2ab32300641aba63143fdc027a"
+        },
+        {
+          "id": "market-partial-correction-boundary",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md",
+          "reviewed_sha256": "258d0e31178a169713eca103f09bcc86b816ce01b01e72d2e8a58fab01baf39b",
+          "current_sha256": "aa8f7f774309ede25bfaad0ca0b547f57e3de870fda67c0fb6b46010c141fda7"
+        },
+        {
+          "id": "market-protected-continuation",
+          "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+          "reviewed_sha256": "9cb0bbe1826d8d9ae39f47c7b1262a75ec78ed3f7ad5ec6cd1196b5a9e80724a",
+          "current_sha256": "0aaf71300c4eba2d9e799843a62349e77f733e2ab32300641aba63143fdc027a"
+        },
+        {
+          "id": "market-supported-finite-transition",
+          "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+          "reviewed_sha256": "9cb0bbe1826d8d9ae39f47c7b1262a75ec78ed3f7ad5ec6cd1196b5a9e80724a",
+          "current_sha256": "0aaf71300c4eba2d9e799843a62349e77f733e2ab32300641aba63143fdc027a"
+        },
+        {
+          "id": "market-supported-finite-transition",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md",
+          "reviewed_sha256": "258d0e31178a169713eca103f09bcc86b816ce01b01e72d2e8a58fab01baf39b",
+          "current_sha256": "aa8f7f774309ede25bfaad0ca0b547f57e3de870fda67c0fb6b46010c141fda7"
+        },
+        {
+          "id": "organizational-formation-from-generative-comparison",
+          "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+          "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+          "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+        }
+      ],
+      "unrelated_source_drift": [],
+      "scope": "Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation."
+    }
+  },
+  "global": {
+    "command": "make research-check",
+    "exit_code": 2,
+    "result": {
+      "records": 61,
+      "selected_records": [
+        "acquired-binding-compositional-use",
+        "aggregate-exit-funding",
+        "alignment-direction-g0-j",
+        "assured-route-criterion",
+        "becoming-context-coherence",
+        "binding-preserving-substitution",
+        "branching-target-uniqueness",
+        "branching-tests-bisimulation",
+        "classification-robust-generative-comparison",
+        "code-plan-global-support",
+        "conditional-foundation-assessment",
+        "derivation-soundness",
+        "derived-history-law-exactness",
+        "effective-capacity-and-eventual-reachability",
+        "enacted-scene-binding",
+        "encounter-control-and-retention",
+        "encounter-selection-and-revision",
+        "endpoint-loss-and-return",
+        "exclusive-footprint-support",
+        "fallible-witness-diagnosability",
+        "finite-basis-common-interpretation",
+        "finite-continuation-plans",
+        "finite-fallible-inquiry-necessity",
+        "finite-granularity-question-recovery",
+        "finite-joining-tree-lifting",
+        "finite-trace-transport",
+        "fulfillment-chance-floor",
+        "functional-joining-common-structure",
+        "growth-constrained-fragmentation",
+        "incidence-common-refinement",
+        "joining-open-map-factor",
+        "joining-questions-survive-encoding",
+        "joint-code-plan-lifting",
+        "joint-decomposition-lifting",
+        "joint-plan-composition",
+        "joint-target-uniqueness",
+        "market-partial-correction-boundary",
+        "market-protected-continuation",
+        "market-supported-finite-transition",
+        "material-preparation-output",
+        "multivalued-joining-common-structure",
+        "naming-attention-coverage",
+        "open-form-realization-under-revision",
+        "organizational-formation-from-generative-comparison",
+        "organizational-rule-inheritance",
+        "positive-ground-open-futures",
+        "practical-judgment-g0-j",
+        "prefix-observation-loss",
+        "recurrent-chain-assembly",
+        "relational-generative-comparison",
+        "retained-reference-joining-recovery",
+        "retrospective-source-binding",
+        "risk-certificate-outcome-distinction",
+        "scientific-inquiry-foundation",
+        "situated-recovery-empirical-correspondence",
+        "theory-of-becoming-foundation",
+        "trace-law-equivalence",
+        "transition-grouping-word-partition",
+        "unanchored-incidence-collapse",
+        "universal-practical-warrant",
+        "wisdom-root"
+      ],
+      "errors": [],
+      "source_drift": [
+        {
+          "id": "classification-robust-generative-comparison",
+          "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+          "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+          "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+        },
+        {
+          "id": "market-partial-correction-boundary",
+          "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+          "reviewed_sha256": "9cb0bbe1826d8d9ae39f47c7b1262a75ec78ed3f7ad5ec6cd1196b5a9e80724a",
+          "current_sha256": "0aaf71300c4eba2d9e799843a62349e77f733e2ab32300641aba63143fdc027a"
+        },
+        {
+          "id": "market-partial-correction-boundary",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md",
+          "reviewed_sha256": "258d0e31178a169713eca103f09bcc86b816ce01b01e72d2e8a58fab01baf39b",
+          "current_sha256": "aa8f7f774309ede25bfaad0ca0b547f57e3de870fda67c0fb6b46010c141fda7"
+        },
+        {
+          "id": "market-protected-continuation",
+          "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+          "reviewed_sha256": "9cb0bbe1826d8d9ae39f47c7b1262a75ec78ed3f7ad5ec6cd1196b5a9e80724a",
+          "current_sha256": "0aaf71300c4eba2d9e799843a62349e77f733e2ab32300641aba63143fdc027a"
+        },
+        {
+          "id": "market-supported-finite-transition",
+          "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+          "reviewed_sha256": "9cb0bbe1826d8d9ae39f47c7b1262a75ec78ed3f7ad5ec6cd1196b5a9e80724a",
+          "current_sha256": "0aaf71300c4eba2d9e799843a62349e77f733e2ab32300641aba63143fdc027a"
+        },
+        {
+          "id": "market-supported-finite-transition",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md",
+          "reviewed_sha256": "258d0e31178a169713eca103f09bcc86b816ce01b01e72d2e8a58fab01baf39b",
+          "current_sha256": "aa8f7f774309ede25bfaad0ca0b547f57e3de870fda67c0fb6b46010c141fda7"
+        },
+        {
+          "id": "organizational-formation-from-generative-comparison",
+          "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+          "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+          "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+        }
+      ],
+      "unrelated_source_drift": [],
+      "scope": "Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation."
+    }
+  }
+}

@@ -199,3 +199,124 @@ The next constructive connection is **qualified recipient evidence → retained 
 A discriminating extension would admit both target drift and sensor inversion, then construct and pay for a calibration intervention that separates them. The theorem should state exactly which error pairs remain indistinguishable and when the mechanism must report unknown. A claim of reliable identification while both worlds in Section 5 remain observationally equivalent would fail. A discovered additional material channel would revise the interface. An independently supported realization across materially different domains would strengthen the proposed generative explanation, while an exact conventional realization would establish shared mechanism rather than exclusive theoretical ownership.
 
 The supported research conjecture is thus: **any adequate account of empirical inquiry must respect the causal and informational conditions of the inquiry it claims to explain; the generative foundation aims to derive the formation, maintenance and revision of those conditions within one account.** Establishing that our proposed minimal principles exhaust those conditions, or uniquely characterize scientific philosophy, remains a further task.
+
+
+## 10. Fallible inquiry and the foundational inference
+
+8 October 2026. This continues [Ren's explicit completion request](../../../../sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md#finish-the-necessary-foundation-of-scientific-inquiry). Begin with activity forming differences, retaining some effects and thereby changing later activity. Evidence acquisition, calibration, interpretation and judgment are differentiated relations in that history. The alternatives below are alternative specifications of that activity, not independently existing observer and world substances.
+
+The original §§3–4 already supplied statistical bounds by hand. The exact correspondence, acquired interpretation and completed model-revision studies remain completed under their hypotheses. This continuation supplies an actual Lean check of a finite weighted, fallible component and its adaptive interface. It does not count established statistical mathematics as a new discovery. Concurrent joining-refinement work is left to its own study; its unintegrated files are not imported as accepted premises here.
+
+```text
+Result: finite-fallible-inquiry-necessity (migration of the inquiry-conditions
+  claim with new formal evidence and an adaptive cross-representation connection).
+Reuse: this study I1/I2 and abstention analysis; KnowledgeCorrespondence exact
+  resolution; InquiryAdequacy's separation of identifying and responding;
+  scientific compatibility's achievement-versus-necessary-condition test.
+Delta: actual checked error/coverage bounds without perfect-answer assumptions;
+  direct finite marginal-law and paired-scenario versions; common-processing
+  contraction; adaptive blindness across different internal state types.
+Premises: intended binary contrast; complete available information; actual finite
+  natural-weight laws (equal positive totals for probability comparisons); a
+  common response rule; supplied correspondence of steps and readouts.
+Evidence: ScientificInquiryNecessity.lean and immutable successful receipt;
+  primary statistical source comparison and author counterreview below.
+Boundary: no independent empirical warrant of those laws, general knowledge
+  analysis, universal ontology, entire-theory necessity or G0 derivation.
+Integration: adaptive relation preservation supplies equality of readouts;
+  equality supplies the coverage/error obstruction. The coupling bound also
+  quantifies permitted departures. No finite-branching or perfect-answer
+  premise from the joining theorem is silently imported.
+```
+
+### 10.1 A criterion independent of allegiance to the theory
+
+Specify what the inquiry claims to achieve before asking whether our core is necessary. A binary contrast asks which of two materially or explanatorily relevant alternatives holds. A response may assert either answer or suspend. Its declared service consists of coverage and error on those alternatives. These requirements can be supplied by the scientific question, an experimental protocol or a critic; they contain no occurrence of G0, generativity, monism or acceptance of this theory.
+
+This does not reduce every scientific activity to binary testing. It applies whenever an achievement claim includes such a contrast, including an implication of a richer estimate or prediction. A research programme can be scientifically legitimate while failing to resolve it. A mathematical proof can proceed from premises without a new experiment. The obligation is on an account that asserts the corresponding empirical achievement.
+
+### 10.2 Exact checked content for imperfect inquiry
+
+Let `tally w f xs` sum natural weights times the specified event count. `wrong` counts a false committed answer; `committed` counts an answer rather than suspension. The list and weights are a finite law table. They are not a finite sample presumed to certify its generating law. The following formulas are the integer statements checked by Lean.
+
+For paired scenarios with complete evidence `e0`, `e1` and a common reader, let C be commitment weight under alternative 0, E0 and E1 the false-answer weights, and D the weight of unequal evidence. Then:
+
+**C ≤ E0 + E1 + D.**
+
+The pointwise reason is exhaustive: with the same accessible evidence and shared reader randomization, a committed answer is the same in both cases, so it is wrong in one of them. Unequal evidence accounts for the remaining cases. `fallible_inquiry_bound` sums this statement. `error_budgets_require_difference` yields C ≤ b0 + b1 + D from declared error budgets. Coverage 100 and each error at most 10 therefore require D at least 80; the named arithmetic corollary is checked. D depends on the chosen valid pairing, so a loose pairing yields a loose bound. It is not silently identified with total variation.
+
+A direct marginal-law version removes the need to choose that pairing. For evidence values e with weights p0(e), p1(e), define Δ as the sum of `p0(e) - p1(e)` with natural subtraction. `distributional_coverage_bound` proves **C ≤ E0 + E1 + Δ**. When the two tables each have the same positive total N, dividing all counts by N gives the usual directional-variation bound; under equal mass the normalized Δ is total variation. The Lean statement is the natural-weight version, not a newly checked measure-theoretic theorem for arbitrary real laws.
+
+`likelihood_attains_overlap` checks the false-answer weight of the likelihood reader as the sum of `min(p0(e), p1(e))`; `overlap_plus_excess` checks that this overlap plus Δ equals the total p0 weight. These supply the existing full-coverage testing identity at the finite rational-law interface. They do not acquire the true laws or install the reader. `sharp_fallible_witness` gives five equal-weight cases, four distinguishing and one indistinguishable, attaining C=5, E0=0, E1=1, D=4. It is a constructed law, not empirical data.
+
+`blind_coverage_bound` proves C=E0+E1 when paired answers coincide. `abstention_is_not_discrimination` preserves zero coverage and zero errors for universal suspension. Correctly refusing an answer can be warranted; it cannot be reported as successful discrimination. A favorable prior can also reward a constant answer without resolving both alternatives. No universal equal prior is imposed on rational choice.
+
+`common_processing_cannot_add_difference` checks contraction of paired differences under common subsequent processing. It concerns processing the same complete input, including shared randomization. A new observation, inherited information omitted from the initial description, or a change in the actual intervention law changes the premise. More computation can make an already present distinction usable; the theorem does not deny that achievement.
+
+### 10.3 Adaptive activity and different internal descriptions
+
+The argument need not require identical internal state spaces. In `run_preserves_relation`, one description uses S, another T; a relation R links corresponding situations. If the initial situations satisfy R and every paired step preserves it, the completed finite runs satisfy R. A step may include the policy's choice, a changed instrument, retention and a revision of the policy itself when those activities are represented in the state. A finite stopping rule can be represented by an absorbing finished state. This representation is an application obligation, not a claim that all actual inquiry has already been encoded.
+
+R is a witness proposed by the account under test, not a definition of scientific adequacy. If related situations also give the same final answers, `adaptive_blindness_bound` connects this dynamic witness to the exact commitment/error identity. `adaptive_service_excludes_blindness` proves that such an account is incompatible with coverage greater than the sum of its two error budgets. The proof works across different internal partitions and vocabularies without a state bijection or common fragment set. It establishes an obstruction to erasing a relevant contrast; it does not recover the whole common joining structure between arbitrary representations.
+
+Producer and consumer are joined explicitly: `run_preserves_relation` → same final readout → `adaptive_blindness_bound` → `adaptive_service_excludes_blindness`. Preserving a relation and matching readouts remain supplied premises. This does not claim to discover a matching relation for every proposed pair of theories.
+
+### 10.4 What follows philosophically
+
+There is now a defensible necessity argument with an independently stated achievement:
+
+1. Fix the actual question, alternative conditions, complete access, coverage and claimed error tolerance.
+2. Audit whether a proposed account preserves the relationships capable of carrying the required distinction into a usable answer.
+3. Where that account entails the checked blindness or inadequate-separation condition, the claimed achievement is excluded at this interface.
+4. Therefore, an adequate account of that achievement cannot also erase or deny those relationships. Its language and internal divisions can differ.
+
+The conclusion is a general conditional constraint on empirical inquiry, with a finite weighted formal component. It is stronger than saying that science can be redescribed in generative vocabulary: it excludes definite achievement claims under definite conditions. It is also narrower than a proof that the whole ontology is mandatory. Information-theoretic success does not by itself settle consciousness, reference, explanatory depth or the authority of practical reasons.
+
+The generative account gives the constraint a connected explanatory task: explain how relevant differences form, become accessible, persist or are reconstructed, and enter revised judgment within the same unfolding. Existing acquired-interpretation and revision mechanisms supply conditional examples. They are not counted again or treated as an empirical census. To explain continued scientific practice, its actual material and institutional supports must also be connected; the earlier support results require their own loss and demand premises. No perpetual renewal duty follows from one isolated correct answer.
+
+### 10.5 Primary assessment and substantive counterreview
+
+The statistical foundation is established prior mathematics. [Aldous and Fill, §12.1.1](https://www.stat.berkeley.edu/~aldous/RWG/Book_Ralph/Ch12.S1.html) state the coupling inequality and require correct marginal laws; their §12.1.2 stresses both construction and analysis of the coupling. The present finite paired bound uses that style of reasoning, with abstention exposed. [Yu 1997, Lemma 1](https://web.stanford.edu/class/stats300a/REFS/yu1997assouad.pdf) relates separation of target values and distributional overlap to estimation limits. These sources support the statistical mechanism, not our philosophical universality. Reading limits are recorded in the [source dossier](SCIENTIFIC-PHILOSOPHY-SOURCES.md#fallible-inquiry-necessity-source-check).
+
+| Counterreview | Assessment |
+|---|---|
+| Is generativity built into adequacy? | No core-allegiance predicate occurs in the formal criterion. The scientific target and law correspondence remain substantive supplied inputs. Calling every actual process generative would add no further proof. |
+| Does ordinary fallibility defeat necessity? | No. Nonzero error and abstention occur in the bound. A weaker achievement has weaker requirements. |
+| Do two worlds recreate dualism? | The pair compares alternative descriptions/conditions within the inquiry task. It posits no independently existing subject/object substances. A coupling is an analytical device, not simultaneous physical execution of both alternatives. |
+| Does a complete record require complete reality? | No. Complete means every input actually used at this interface. Omitted inherited knowledge or timing invalidates an application; irrelevant detail need not be retained. |
+| Can a model be scientifically useful while omitting the mechanism? | Yes. A useful predictor need not explain how its evidence was produced. The obligation applies to what the account claims to explain, and omission is distinct from denying a necessary relationship. |
+| Can a correct answer be luck? | Yes. An actual true output alone supplies neither the two-case guarantee nor knowledge. Calibration, relevance and competent uptake retain their earlier obligations. |
+| Does this refute an equally successful instrumentalist or static account? | No. Either can preserve the tested relationships. Representation plurality is compatible with shared necessary constraints. |
+| Does the familiar statistical theorem prove the whole theory? | No. The contribution is formal verification and a connected necessity argument. Known mathematics gives no automatic warrant for monism, G0 or exclusivity. |
+| Can finite testing establish every actual law used here? | No. The proof checks consequences of law tables; actual calibration and transfer remain fallible empirical questions. |
+| Is the remaining universality gap an impossibility theorem? | No. Neither this study nor the concurrent representation work proves the generative proposal impossible. |
+
+### 10.6 Completion judgment and the exact remaining inference
+
+**Completed here:** a checked finite fallible constraint and its adaptive cross-representation composition; a substantive argument that any adequate explanation of the specified empirical achievement must respect it. This closes the need to rely on infallible, perfectly complete answers for that necessity argument. The argument admits ignorance, inherited knowledge, different internal articulations and correction.
+
+**Still open:** demonstrating that the full proposed relational core, with a justified mapping from each of its commitments, is indispensable across the intended range of scientific inquiry. The current theorem establishes necessary access and use constraints; it does not identify those constraints with every claim of the theory. A proof of this broader target would need the additional mapping and scope argument, not merely another compilation or a definition of science that accepts the core.
+
+The next substantive connection is to specify which further core commitment, beyond information carried into warranted response, is claimed necessary for a named scientific achievement; then derive its necessity or retain an adequate rival that dispenses with it. This targets the actual missing inference. The historical blanket “next construction” in §9 does not reopen the completed acquired-interpretation and model-revision studies.
+
+**中文结论。** 本轮把可错求知的必要约束接入实际 Lean 检查：允许错误、保留不作答，低错误且有覆盖的辨别仍须有足够可用区别。不同内部状态和分节可以通过明示关系进入同一限制；不要求现实本体相同或完整模型同构。已完成的是这项条件必要性及其哲学对应，不是把整个理论、所有科学范围或 G0 的必要性宣布已证。关系产生、保留、使用和修订的统一说明仍有正面根据；其完整范围须另作论证。
+
+Formal evidence: [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean), [checker](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/check_scientific_inquiry_necessity.py), [latest receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-inquiry-necessity-verification.json). The canonical result binds the immutable successful snapshot, not only the latest pointer. Compiler dependencies and counts are recorded there; absence of custom postulates is not absence of model premises. This is author verification, not independent-agent review or empirical confirmation.
+
+
+### 10.7 Map the result to the actual core before claiming completion
+
+The [current root](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md#1-the-positive-candidate) and [premise ledger](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md#1-the-common-claim) begin with activity forming and changing the conditions of further activity, including observation, modeling and evaluation. Their explanatory commitment is richer than the assertion that an output bit differs. The correspondence can now be stated commitment by commitment:
+
+| Core relationship | Independently specified achievement | Present warrant |
+|---|---|---|
+| Consequential differentiation becomes accessible | Discriminate opposed targets with coverage exceeding combined error budgets | The finite law-table and coupling bounds establish the required separation under the supplied law correspondence. |
+| Continuing effects enter later activity | A later judgment uses information acquired earlier | Common-processing contraction excludes manufacture from a wholly erased complete input. External records or reacquisition can preserve the needed route; individual permanent memory is not required. |
+| A formed organization actually uses distinctions | Realize the declared judgment rather than merely store informative data | The proof audits a reader/run when supplied. Existing acquisition mechanisms provide conditional realizations; the universal formation of all such capacities is not proved by this bound. |
+| Models and inquiries occur within the reality explained | Explain production, use and correction of scientific accounts themselves | The connected account includes these activities and exposes their dependencies. This is an affirmative methodological argument, not a deduction that every entity has one uniquely specified generative constitution. |
+| Conditions remain available under continuing demand | Continue an inquiry that consumes or loses its supports | Earlier support laws apply with their stated demand, loss and boundary assumptions. A fixed finite observation does not require perpetual renewal. |
+| Relevant failures can change judgment or method | Correct a specified error across an admitted disturbance class | Completed revision mechanisms show realizations. The noise/target correspondence and relevant error class must remain warranted; a successfully calibrated isolated measurement need not revise itself. |
+
+This mapping identifies both positive necessity and real limits. It prevents silently treating the most demanding account of indefinitely sustained, self-correcting science as a requirement on every isolated scientific achievement. It also prevents weakening the whole root to “some information exists” and then announcing that the original foundation has been proved.
+
+The remaining obstacle is therefore substantive: warrant the intended scope and the additional formation/immanence commitments as necessary explanatory requirements. It is not a demand that empirical assumptions become logically infallible, that every physical law be derived, or that the completed G0 route be reopened. Conversely, merely placing those commitments in the definition of adequate science would bypass the user's conjecture. The partial theorem is finished; the full target remains a live philosophical inference with explicit content.

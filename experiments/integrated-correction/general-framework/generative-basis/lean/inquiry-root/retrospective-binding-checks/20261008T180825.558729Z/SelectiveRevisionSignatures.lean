@@ -1,0 +1,17 @@
+import SelectiveRevision
+#check Generative.SelectiveRevision.learned_reading
+#check Generative.SelectiveRevision.prepared_outcome
+#check Generative.SelectiveRevision.purpose_preserves_assessment
+#check Generative.SelectiveRevision.withdrawal_retains_claim_records
+#check Generative.SelectiveRevision.sole_ground_withdrawn
+#check Generative.SelectiveRevision.redundant_ground_survives
+#check Generative.SelectiveRevision.contrary_reports_conflict
+#check Generative.SelectiveRevision.withdrawing_conflicting_ground
+#check Generative.SelectiveRevision.changed_purpose_changes_choice
+#check Generative.SelectiveRevision.joint_recoding_preserves_outcome
+#check Generative.SelectiveRevision.rails_equal_combine
+#check Generative.SelectiveRevision.conventional_matches_all_states
+#check Generative.SelectiveRevision.conventional_matches_every_history
+#check Generative.SelectiveRevision.suspension_hides_different_grounds
+#check Generative.SelectiveRevision.supported_copied_mistake
+#check Generative.SelectiveRevision.raw_shape_fails_recoding

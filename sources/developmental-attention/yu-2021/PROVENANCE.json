@@ -1,0 +1,88 @@
+{
+  "retrieved_at_utc": "2026-10-08T13:53:01.096528+00:00",
+  "project": "https://osf.io/mvz78/",
+  "article": "https://doi.org/10.1073/pnas.2107019118",
+  "license": "No dataset license declared in retrieved public node metadata; no license inferred from article.",
+  "files": [
+    {
+      "name": "naming_onset-0.50_target_exp12.csv",
+      "url": "https://osf.io/download/kbzp4/",
+      "final_url": "https://storage.googleapis.com/cos-osf-prod-files-us-east1/c61fe9028621ff85cea7e4c19193d26f1daa384bbdef7e70a75260feb0bb6bbc?response-content-disposition=attachment%3B%20filename%3D%22naming_onset-0.50_target_exp12.csv%22%3B%20filename%2A%3DUTF-8%27%27naming_onset-0.50_target_exp12.csv&GoogleAccessId=files-us%40cos-osf-prod.iam.gserviceaccount.com&Expires=1791467633&Signature=lTNclrUvN71tVB8%2Fb9oSHT6DnpcBYfbD1OP5a%2FJ%2FFoK1PzCEwEKGXrOPZCRf9UTh9EuTaIgews8vclNrG8LhBIMfat%2FcY0tI6tgHTgiOVY3EEhFFwAzxSqEw8BY1u3syZv9pIl35dPZGOIedzQJujdZmZM1md88S3m18xRG2qS22gp5QmeCVNP%2Fino3%2BAT1E9V5zNDN%2FAx5NORKphcUsjXSG2SYpj23Grro6EEKOYMgvJqf%2B%2FqOQjhzWt3ILYt%2FpcLsiKU6%2FqIIGXBCb3WYG048siIwIKtSvwF1IrBP2mcFdwSR8Q98arV37xqdUFk19y%2B%2B6TYgq4cZKV9mVuh0x%2Fw%3D%3D",
+      "content_type": "application/octet-stream",
+      "bytes": 47215,
+      "sha256": "c61fe9028621ff85cea7e4c19193d26f1daa384bbdef7e70a75260feb0bb6bbc",
+      "deposited_sha256": "c61fe9028621ff85cea7e4c19193d26f1daa384bbdef7e70a75260feb0bb6bbc",
+      "osf_file_id": "61843c6b04027a016c8ec463"
+    },
+    {
+      "name": "naming_onset-1.00_target_exp12.csv",
+      "url": "https://osf.io/download/vf76u/",
+      "final_url": "https://storage.googleapis.com/cos-osf-prod-files-us-east1/66984077ad89e15039fb8e38722335b9f614d2404d1fdf83935ad29531b40cc5?response-content-disposition=attachment%3B%20filename%3D%22naming_onset-1.00_target_exp12.csv%22%3B%20filename%2A%3DUTF-8%27%27naming_onset-1.00_target_exp12.csv&GoogleAccessId=files-us%40cos-osf-prod.iam.gserviceaccount.com&Expires=1791467639&Signature=NvGnnkS9yLgpkwF3QNU43j%2BH52t0ws%2BRYehawMz8gfSRPkFLMuBCfXjopC1gWqxZGuPSPQtguI%2BF3tn3fEwOr4%2FEFFRSUDt%2FHnupJeCgywKnW%2FN8M%2BzUmrqARySoXcYm1QOpta627fum3%2BkkxSj7nySxbKKEfiNwisAJsoJDVVZyxdfOsSE6wWQzO8kys9uAHcyJ0OquPywdY%2BwBouYo3kuHOO%2By9J6PgY0d18WCVW9of%2F3n1O%2FRZ%2BOiJ1dljsKbViUcAABiOY2mqJKlkwPIRjA0X4aJkty0bgDjP3zDAoi9MTupCefsJUXBCLwGWe71mC2nQwYrQOYCXlNNge23iQ%3D%3D",
+      "content_type": "application/octet-stream",
+      "bytes": 49506,
+      "sha256": "66984077ad89e15039fb8e38722335b9f614d2404d1fdf83935ad29531b40cc5",
+      "deposited_sha256": "66984077ad89e15039fb8e38722335b9f614d2404d1fdf83935ad29531b40cc5",
+      "osf_file_id": "61843c6b5bdf6d01481e06e6"
+    },
+    {
+      "name": "naming_onset-1.50_target_exp12.csv",
+      "url": "https://osf.io/download/975at/",
+      "final_url": "https://storage.googleapis.com/cos-osf-prod-files-us-east1/b96d3a23a27001a5c7af9f318019776ab90ce1db972f4bef6bf22a64f9d6c1ab?response-content-disposition=attachment%3B%20filename%3D%22naming_onset-1.50_target_exp12.csv%22%3B%20filename%2A%3DUTF-8%27%27naming_onset-1.50_target_exp12.csv&GoogleAccessId=files-us%40cos-osf-prod.iam.gserviceaccount.com&Expires=1791467640&Signature=CvoCzFOXn8Hzpodic%2BHR7mCctv6gUtPYJ4o4Aeyw%2FEg5XxQAn61gm%2FmGD6P91bC0hBZyYjWg4KP%2FqHXj7Q9VPJJs9f6%2BI9PceDeJgXlirnmsvTh%2FGVswrHk%2FdeqK8MdaILtfc2rJtjuUuxTf8vfxjKzf5BvqLGtv7XhLwJAagNP2g1gZIJeQ0AQ5p5LjW8BR%2BP%2BAf3bWttBYHJVQbu8c5rpxZHzgdsGQbswN8oyeSGvwAt2ucx577jglmIMP%2F0R8vXFucWVURqPAWZAtJlvGJONh4rIHlgmWc9jpSM4l%2F2cU6k9bJcfAGLfpps9kGNaCkOiV%2FVgJ7pCymG8cWtXWHQ%3D%3D",
+      "content_type": "application/octet-stream",
+      "bytes": 51550,
+      "sha256": "b96d3a23a27001a5c7af9f318019776ab90ce1db972f4bef6bf22a64f9d6c1ab",
+      "deposited_sha256": "b96d3a23a27001a5c7af9f318019776ab90ce1db972f4bef6bf22a64f9d6c1ab",
+      "osf_file_id": "61843c6a5bdf6d01281e1088"
+    },
+    {
+      "name": "naming_onset-2.00_target_exp12.csv",
+      "url": "https://osf.io/download/vye8p/",
+      "final_url": "https://storage.googleapis.com/cos-osf-prod-files-us-east1/ea0b1133804e381abd330de1fcfaf1e690875a7f1aa32fc606945caf213e7dc3?response-content-disposition=attachment%3B%20filename%3D%22naming_onset-2.00_target_exp12.csv%22%3B%20filename%2A%3DUTF-8%27%27naming_onset-2.00_target_exp12.csv&GoogleAccessId=files-us%40cos-osf-prod.iam.gserviceaccount.com&Expires=1791467632&Signature=uiJkwuFF16ofyxJrepxtU5PvVJWyPi9RhJnWPtE4CY4EJriBkPV1iP%2FHZjE9kEgAJ8J%2BVd0smnRZ3R9MxB0xyAs%2FkTS14WXZwGCIr8Ixr0CMLaMgmlE5DMH4n8dYfR5Yt0PuRV9id5IIk4QWiKI3LcuIqz9rviX99WaZpVFevAR8CI%2Bdk7ui8WsL5hyJWCRIoNjUKyBTEWQUix%2BzjZ10KIPpyR5e2gwCev44K57ckVDkc%2BYvzAcdDHFARPtrqFy55QjNkdt2kV6E%2FCNmCWkilxjALWQVptwnewiUXBQj%2BoLxjPudxif473tCN4IL%2F2%2FOvzk9v4NRamPivddSn1jRgg%3D%3D",
+      "content_type": "application/octet-stream",
+      "bytes": 52670,
+      "sha256": "ea0b1133804e381abd330de1fcfaf1e690875a7f1aa32fc606945caf213e7dc3",
+      "deposited_sha256": "ea0b1133804e381abd330de1fcfaf1e690875a7f1aa32fc606945caf213e7dc3",
+      "osf_file_id": "61843c6b0435d7014bc0480e"
+    },
+    {
+      "name": "naming_onset-3.00_target_exp12.csv",
+      "url": "https://osf.io/download/c9d57/",
+      "final_url": "https://storage.googleapis.com/cos-osf-prod-files-us-east1/6f1e939edda9c5beaf94a9edd8cc2723bfafbf9168f2db402722f204b62c3c8a?response-content-disposition=attachment%3B%20filename%3D%22naming_onset-3.00_target_exp12.csv%22%3B%20filename%2A%3DUTF-8%27%27naming_onset-3.00_target_exp12.csv&GoogleAccessId=files-us%40cos-osf-prod.iam.gserviceaccount.com&Expires=1791467639&Signature=D3lVf0iwUknyl6oM7aXu%2B0WFDGe8h%2FY2ctd2LSrVN8BzmNN4Qce3HTt2jbO5YJC4%2FsVbIOCFJxxgdgqTXME4I%2FP94aV1il27XSvoRObO5T%2BDaxXNjNbF%2BYIvTlgXKtbUCqg88To5Fkb9cDCzGsTLw0IOQsp5Z8XGudE3ugY%2F5GBIpcrxAM34Ch%2BMyGARDvslMJcsBBDGp3jOAL%2BiVvBJdPM9RVdfoUXT97hrF%2FpkQsGC7Q13LZZ44kRapi%2FklN809oDHkQFwPqAosKvBLZOK%2Fus%2BKu7KhbuKWat1os2g1MTJt7sEzF5enHBT2VcObPaeKZEZKFh%2BKvMk46rCpw827g%3D%3D",
+      "content_type": "application/octet-stream",
+      "bytes": 55049,
+      "sha256": "6f1e939edda9c5beaf94a9edd8cc2723bfafbf9168f2db402722f204b62c3c8a",
+      "deposited_sha256": "6f1e939edda9c5beaf94a9edd8cc2723bfafbf9168f2db402722f204b62c3c8a",
+      "osf_file_id": "61843c6a5bdf6d01481e06e0"
+    },
+    {
+      "name": "naming_onset-4.00_target_exp12.csv",
+      "url": "https://osf.io/download/hjsqf/",
+      "final_url": "https://storage.googleapis.com/cos-osf-prod-files-us-east1/b3b709d1423c99cc504e8a4d095f32d2fe4448b6d841b604d174b135333cad21?response-content-disposition=attachment%3B%20filename%3D%22naming_onset-4.00_target_exp12.csv%22%3B%20filename%2A%3DUTF-8%27%27naming_onset-4.00_target_exp12.csv&GoogleAccessId=files-us%40cos-osf-prod.iam.gserviceaccount.com&Expires=1791467637&Signature=f6aNoFmyatKoxYRb3%2BwHE8GVGnW%2BAQZXUhmR8rQ4F3qrYUJ1XQhD%2BWItOtKM%2FWt2aoSPlSp8p7peb2V7UJe%2FgSp%2FX8mU3JlPa6of2R15hfyQ2eOFb%2FPSED5%2BE9nXDzZsh5TsKocWz786S%2Bk3xJ7lde5%2B2RPJUWnUfPGrEErSTGQa9TKA%2Bi8neXwDwrttibTcQg4XdlqD5NIi6oE9%2Fu%2F%2BZ2X9WtfaR600M2cCiPfSAvw58hpz3b7AdiSdJ0mmyAyprNm6MgaZttWGBBkK7NxZGi2ZLCoh8ih3rASj%2BX378%2B7aCHo2DkpaRP8qLW%2BdJOE4m1tgzAXXquofqzcwLTx1Jg%3D%3D",
+      "content_type": "application/octet-stream",
+      "bytes": 63268,
+      "sha256": "b3b709d1423c99cc504e8a4d095f32d2fe4448b6d841b604d174b135333cad21",
+      "deposited_sha256": "b3b709d1423c99cc504e8a4d095f32d2fe4448b6d841b604d174b135333cad21",
+      "osf_file_id": "61843c6e04027a016c8ec46e"
+    },
+    {
+      "name": "naming_onset-5.00_target_exp12.csv",
+      "url": "https://osf.io/download/jzk39/",
+      "final_url": "https://storage.googleapis.com/cos-osf-prod-files-us-east1/b045734f81fb20372e681623ed899ebdd64c45b1042ebb734ccf6d3325dc8c43?response-content-disposition=attachment%3B%20filename%3D%22naming_onset-5.00_target_exp12.csv%22%3B%20filename%2A%3DUTF-8%27%27naming_onset-5.00_target_exp12.csv&GoogleAccessId=files-us%40cos-osf-prod.iam.gserviceaccount.com&Expires=1791467632&Signature=Tmbm%2Bewg8yOhFTbvcxIxLOtRREoR1KF2fQYakTuk6Fl%2BGcZurW43v9AtMflosfB%2FqsucSneF4HOxhxUZe123%2FIrzQClJlTr5DoHDYafimVpGackR1BnWvtzbsK%2FqEdYMOC6oCWBbGP3yxStPAac2XSjo8mKdCEkNF3RamYZs6umpNr%2FuH7K5myVz5k6tpo2uSSX89n8mcgmcJhFwE5SAz3l0r%2B6AYR2tTjoOwJuSPigHd75N5rbAcCwCmjEPcNiPLlZL1TKFu6yF9ZdYUJZb3bCo2W1Dbdp%2B%2FrPK5Q0qSSEwIh%2BCoTaSnSYlEkypuFsCPKU8QOe7qisH0NVlKupEXw%3D%3D",
+      "content_type": "application/octet-stream",
+      "bytes": 56309,
+      "sha256": "b045734f81fb20372e681623ed899ebdd64c45b1042ebb734ccf6d3325dc8c43",
+      "deposited_sha256": "b045734f81fb20372e681623ed899ebdd64c45b1042ebb734ccf6d3325dc8c43",
+      "osf_file_id": "61843c6e0435d70179c02931"
+    },
+    {
+      "name": "readme.txt",
+      "url": "https://osf.io/download/b7hek/",
+      "final_url": "https://storage.googleapis.com/cos-osf-prod-files-us-east1/3643823a19e9ddfabc694746be79759bdf2ee6911f93fcfa9cfe8409eb2fa796?response-content-disposition=attachment%3B%20filename%3D%22readme.txt%22%3B%20filename%2A%3DUTF-8%27%27readme.txt&GoogleAccessId=files-us%40cos-osf-prod.iam.gserviceaccount.com&Expires=1791467632&Signature=JVnMqejhq5Zi%2BdxLLHWH%2F90cDgHgoNVDTAuSTpanU2tQ8b9YP3fKqTz8x1V%2FaflUSE0mYs0HPH7rfs5CSa5zx8sO%2FtgNkS7DhRF170YQmYx7hLsZyCklhGqEBflrOqJXwCwCZVpMw5R2O2wROhrEFYpcYrstC0I%2FKT14tbSbuyuOjl0RyrH0gcBwTBJcXAjPhuT2zLqQ1QoX1uqrPYXPJFzuB%2Fprpw5N87yTpju0U0bIfK0NuGzfdNpqLzfNYjl1NZ2trnqkyruOC6%2F%2Bwm4zQRCLCAJs%2B47NLjv%2BMd4kA2n96sL7bn7VhWi9FkYks8bTbYB75bz2U9dEdGsblIZZSw%3D%3D",
+      "content_type": "application/octet-stream",
+      "bytes": 835,
+      "sha256": "3643823a19e9ddfabc694746be79759bdf2ee6911f93fcfa9cfe8409eb2fa796",
+      "deposited_sha256": "3643823a19e9ddfabc694746be79759bdf2ee6911f93fcfa9cfe8409eb2fa796",
+      "osf_file_id": "61843c6e0435d7016dc039b2"
+    }
+  ]
+}

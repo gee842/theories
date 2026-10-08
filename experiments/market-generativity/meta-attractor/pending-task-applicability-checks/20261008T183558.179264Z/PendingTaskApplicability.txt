@@ -1,0 +1,132 @@
+PendingTaskApplicability.lean:34:62: error: unexpected identifier; expected '}'
+PendingTaskApplicability.lean:56:4: error: `simp` made no progress
+PendingTaskApplicability.lean:52:13: warning: This simp argument is unused:
+  Option.bind_some
+
+Hint: Omit it from the simp argument list.
+  simp only [̵O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵s̵o̵m̵e̵]̵ ̵at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+PendingTaskApplicability.lean:67:2: error: Tactic `split` failed: Could not split an `if` or `match` expression in the goal
+
+Hint: Use `set_option trace.split.failure true` to display additional diagnostic information
+
+c : Conditions
+l : State
+value : Bool
+work : 2 ≤ l.account.work
+⊢ ∃ l',
+    (do
+        let goal ← some (bitGoal value)
+        let account ←
+          do
+            let b ← some { work := l.account.work - 2, reserve := l.account.reserve, spent := l.account.spent + 2 }
+            if feedback l.selector (meansFor goal) = 2 ∧ 2 ≤ b.reserve then
+                pure { work := b.work + 2, reserve := b.reserve - 2, spent := b.spent }
+              else pure b
+        pure
+            { account := account, selector := l.selector, attendanceScore := l.attendanceScore,
+              learningScore := l.learningScore, goal := some (bitGoal value), evidence := l.evidence,
+              ground := l.ground,
+              archive :=
+                l.archive ++
+                  [{ practice := meansFor goal, outcome := perform c (meansFor goal),
+                      feedback := feedback l.selector (meansFor goal) }],
+              losses :=
+                l.losses +
+                  if ((perform c (meansFor goal)).access && (perform c (meansFor goal)).maintenance) = true then 0
+                  else 1,
+              reformed := l.reformed }) =
+      some l'
+PendingTaskApplicability.lean:66:13: warning: This simp argument is unused:
+  Option.bind_some
+
+Hint: Omit it from the simp argument list.
+  simp only [O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵s̵o̵m̵e̵,̵ ̵charge, work, ↓reduceIte]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+PendingTaskApplicability.lean:78:64: error: unexpected identifier; expected '}'
+PendingTaskApplicability.lean:77:54: error: unsolved goals
+c : Conditions
+l : State
+value : Bool
+work : 3 ≤ l.account.work
+risk : relevantRisk c value = false
+a : Account :=
+  let __src := l.account;
+  { work := l.account.work - 1, reserve := __src.reserve, spent := __src.spent }
+⊢ let e := { learning := l, requested := value };
+  let out := reviewAndAct c (some false) e;
+  out.pending = false ∧
+    out.learning.losses = l.losses ∧
+      out.learning.archive.length = l.archive.length + 1 ∧ total out.learning.account = total l.account
+PendingTaskApplicability.lean:99:6: error: Tactic `split` failed: Could not split an `if` or `match` expression in the goal
+
+Hint: Use `set_option trace.split.failure true` to display additional diagnostic information
+
+case isFalse.some
+c : Conditions
+report : Option Bool
+e : Endpoint
+cover : CoversEffect c report e
+h✝ : ¬(!e.pending) = true
+a : Account
+hc : charge 1 e.learning.account = some a
+⊢ sorry.learning.losses = e.learning.losses
+PendingTaskApplicability.lean:116:6: error: Tactic `split` failed: Could not split an `if` or `match` expression in the goal
+
+Hint: Use `set_option trace.split.failure true` to display additional diagnostic information
+
+case isFalse.some
+c : Conditions
+report : Option Bool
+e : Endpoint
+h✝ : ¬(!e.pending) = true
+a : Account
+⊢ sorry.requested = e.requested
+PendingTaskApplicability.lean:149:16: error(lean.unknownIdentifier): Unknown constant `CorrectionVersioned.Installation.ext`
+PendingTaskApplicability.lean:138:48: warning: This simp argument is unused:
+  Option.bind_some
+
+Hint: Omit it from the simp argument list.
+  simp only [retargetHead, hp, List.head?_cons,̵ ̵O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵s̵o̵m̵e̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+PendingTaskApplicability.lean:186:62: error: failed to synthesize
+  Decidable
+    (Option.map summarize (continueReviewed harmful (some false) formed pending) =
+      some (0, true, true, 1, 2, 1, 8, 9, [some false]))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+PendingTaskApplicability.lean:190:64: error: failed to synthesize
+  Decidable
+    (Option.map summarize (continueReviewed harmful (some false) withHeadroom pending) =
+      some (0, false, true, 1, 3, 2, 6, 11, [some false]))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+PendingTaskApplicability.lean:194:64: error: failed to synthesize
+  Decidable
+    (Option.map summarize
+        (continueReviewed { accessLoss := false, transitionLoss := false, reversed := true } (some false) withHeadroom
+          pending) =
+      some (0, false, true, 1, 3, 2, 6, 11, [some false]))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+PendingTaskApplicability.lean:198:61: error: failed to synthesize
+  Decidable
+    (Option.map summarize (continueReviewed conflict (some true) withHeadroom pending) =
+      some (0, true, true, 1, 2, 2, 8, 9, [some true]))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+PendingTaskApplicability.lean:202:56: error: failed to synthesize
+  Decidable
+    (Option.map summarize (continueReviewed harmful none withHeadroom pending) =
+      some (0, true, true, 1, 2, 2, 8, 9, [none]))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+PendingTaskApplicability.lean:206:64: error: failed to synthesize
+  Decidable
+    (Option.map summarize (continueReviewed conflict (some false) withHeadroom pending) =
+      some (0, false, true, 2, 3, 2, 6, 11, [some false]))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.

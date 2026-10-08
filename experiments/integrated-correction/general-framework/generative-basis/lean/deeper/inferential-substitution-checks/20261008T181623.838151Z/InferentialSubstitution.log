@@ -1,0 +1,18 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-inferential-substitution-dfd0_6se/InferentialSubstitution.lean:37:30: error(lean.unknownIdentifier): Unknown identifier `congrArg₂`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-inferential-substitution-dfd0_6se/InferentialSubstitution.lean:48:10: error(lean.unknownIdentifier): Unknown identifier `congrArg₂`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-inferential-substitution-dfd0_6se/InferentialSubstitution.lean:78:30: error(lean.unknownIdentifier): Unknown identifier `congrArg₂`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-inferential-substitution-dfd0_6se/InferentialSubstitution.lean:91:10: error(lean.unknownIdentifier): Unknown identifier `congrArg₂`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-inferential-substitution-dfd0_6se/InferentialSubstitution.lean:167:15: error: Type mismatch
+  extendContext true fun {a} => emptyContext fun x => Bool
+has type
+  Position [Form.atom 0] ?m.8 → GroundFor (fun x => Bool) ?m.8
+but is expected to have type
+  ContextGround (fun x => Bool) [Form.atom 0]
+'Generative.InferentialSubstitution.extract_rename' depends on axioms: [sorryAx, Quot.sound]
+'Generative.InferentialSubstitution.extract_substitute' depends on axioms: [sorryAx, Quot.sound]
+'Generative.InferentialSubstitution.all_terms_agree_iff_positions' depends on axioms: [sorryAx, Quot.sound]
+'Generative.InferentialSubstitution.discharge_matches_supply' depends on axioms: [sorryAx, Quot.sound]
+'Generative.InferentialSubstitution.discharge_preserves_assessment' depends on axioms: [sorryAx, Quot.sound]
+'Generative.InferentialSubstitution.successive_substitution' depends on axioms: [sorryAx, Quot.sound]
+'Generative.InferentialSubstitution.nested_substitution_retains_outer' does not depend on any axioms
+'Generative.InferentialSubstitution.typed_capture_changes_answer' depends on axioms: [sorryAx]

@@ -6,7 +6,7 @@
 
 记录源 / Editable record: [multivalued-joining-common-structure.json](multivalued-joining-common-structure.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T13:12:41.148537+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-08T13:52:31.763955+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
@@ -42,6 +42,11 @@ Boundary source / 边界来源: [EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md](..
 **Preserved conditions / 保留条件:** finite_outcomes_image_finite 验证有限纤维；无原子谓词；精确性及约简性另明示。 / finite_outcomes_image_finite verifies finite fibers; no atomic predicates; exactness and reducedness are separately explicit. [ExplanatoryJoiningBranches.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean)
 
 - Related, not a proved adapter / 关联而非已证转换: [functional-joining-common-structure](functional-joining-common-structure.md). 从单值共同操作接续到多结果关系；并非相同问题集下的无代价弱化。 / Continues from functional common operations to a multivalued relation, not a cost-free weakening for the identical question family.
+- Related, not a proved adapter / 关联而非已证转换: [retained-reference-joining-recovery](retained-reference-joining-recovery.md). 不同载体的保留引用形成对应已在新范围内实查；不是回写本结果的证明范围。 / Retained-reference formation across different carriers is checked at its new scope; it does not rewrite this result’s proof scope.
+- Related, not a proved adapter / 关联而非已证转换: [finite-granularity-question-recovery](finite-granularity-question-recovery.md). 同一研究中的接续成果；具体正式复用另列，关联不自动构成已证转换。 / Continuation result in the same study; formal reuse is listed separately, and this relationship does not itself assert a checked adapter.
+- Related, not a proved adapter / 关联而非已证转换: [prefix-observation-loss](prefix-observation-loss.md). 同一研究中的接续成果；具体正式复用另列，关联不自动构成已证转换。 / Continuation result in the same study; formal reuse is listed separately, and this relationship does not itself assert a checked adapter.
+- Related, not a proved adapter / 关联而非已证转换: [guarded-program-question-recovery](guarded-program-question-recovery.md). 同一研究的新接续；具体形式复用另列，此关联不独自证明转换。 / New continuation in the same study; formal reuse is specified separately, without a proved adapter inferred from this relation.
+- Related, not a proved adapter / 关联而非已证转换: [residual-continuation-correspondence](residual-continuation-correspondence.md). 同一研究的新接续；具体形式复用另列，此关联不独自证明转换。 / New continuation in the same study; formal reuse is specified separately, without a proved adapter inferred from this relation.
 
 ## 来源与既有回执 Sources and existing receipts
 
@@ -57,10 +62,13 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 ## 复用与下一增量 Reuse and next delta
 
-从同一形成的不同关系分节取得共同细化或互译，不预设同一片段集与伙伴对齐；不重开已完成的有限结果恢复。 / Earn common refinement or translation between different articulations of the same formation without presupposing a common fragment set and partner alignment; reuse completed finite-outcome recovery.
+复用有限条件程序与真实余项恢复；继续建立内部语法不同的说明之间余项、判断与实际形成关系的有据翻译，区分语义可判定与实际取得。 / Reuse finite guarded programs and coherent residual recovery; establish warranted residual/guard/formation translation between descriptions with different internal syntax, distinguishing semantic tests from actual acquisition.
 
 Aliases / 别名: `Generative.ExplanatoryJoiningBranches.common_multivalued_structure`
 
 ## 沿革 History
 
 - 2026-10-08：在既有接合情境研究中接续；已完成结果分别迁移，新连接与复用分列。 / 2026-10-08: continued the existing joining-context study; migrated completed claims separately and distinguished new connections from reuse.
+- 2026-10-08 接续：原主张、前提与回执保持；审读同一研究新增共同细化、无引用退化及保留引用修复，更新后续连接。 / 2026-10-08 continuation: retained the original claim, premises and receipts; read the appended refinement, unanchored-collapse and retained-reference repair and updated the next connection.
+- 2026-10-09：复用本成果接通固定有限操作粒度；旧主张、假设与证明绑定不变。新前缀遗漏及继续检验见同一研究第22—26节。 / 2026-10-09: reuse this result in finite-granularity continuation; preserve its claim, hypotheses and proof bindings. New prefix omission and resumption testing appear in the same study §§22–26.
+- 2026-10-09接续：研究新增有限条件程序、余项恢复及35项实查声明；原成果的主张、假设和证明绑定保持，见原研究§27—32。 / 2026-10-09 continuation: finite guarded programs, residual recovery and 35 checked declarations added in the same study §§27–32; this result retains its claim, assumptions and proof bindings.

@@ -1,0 +1,24 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-resumption-xggdpi92/ExplanatoryResiduals.lean:35:22: error: Application type mismatch: The argument
+  hp
+has type
+  Executes m p' (p'.seq q, t).snd middle
+but is expected to have type
+  Executes m (p', t).fst (p', t).snd finish
+in the application
+  ih hp
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-resumption-xggdpi92/ExplanatoryResiduals.lean:81:23: error: Type mismatch
+  Advance.seq step
+has type
+  Advance m (x✝².fst.seq ?m.51, x✝².snd) (x✝.fst.seq ?m.51, x✝.snd)
+but is expected to have type
+  Process.step ?m.27 ((fun c => (c.fst.seq q, c.snd)) x✝²) x✝¹ ((fun c => (c.fst.seq q, c.snd)) x✝)
+'Generative.ExplanatoryResiduals.advance_resume' depends on axioms: [sorryAx]
+'Generative.ExplanatoryResiduals.trace_resume' depends on axioms: [sorryAx]
+'Generative.ExplanatoryResiduals.cut_resume' depends on axioms: [sorryAx]
+'Generative.ExplanatoryResiduals.advance_has_native_trace' does not depend on any axioms
+'Generative.ExplanatoryResiduals.residual_trace_has_native_trace' does not depend on any axioms
+'Generative.ExplanatoryResiduals.cut_trans' does not depend on any axioms
+'Generative.ExplanatoryResiduals.cut_sequence' depends on axioms: [sorryAx]
+'Generative.ExplanatoryResiduals.execution_reaches_skip' depends on axioms: [sorryAx]
+'Generative.ExplanatoryResiduals.execution_iff_completed_cut' depends on axioms: [sorryAx]
+'Generative.ExplanatoryResiduals.same_preserves_resumption' depends on axioms: [propext, Classical.choice, Quot.sound]

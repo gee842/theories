@@ -6,7 +6,7 @@
 
 记录源 / Editable record: [market-protected-continuation.json](market-protected-continuation.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T13:25:42.189982+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-08T19:02:21.616729+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
@@ -32,6 +32,8 @@ Canonical source: [MarketGenerativity.lean](../../../../experiments/market-gener
 
 No dependency on another migrated record is asserted; source imports and supplied premises remain in scope. / 尚无对另一已迁移条目的依赖断言；源码导入与给定前提仍须保留。
 
+- Related, not a proved adapter / 关联而非已证转换: [market-partial-correction-boundary](market-partial-correction-boundary.md). 新增结果放宽纠正参数，原范围继续保留和复用。 / The new result relaxes the correction parameter; the original scope remains preserved and reusable.
+- Related, not a proved adapter / 关联而非已证转换: [market-finite-support-obstruction](market-finite-support-obstruction.md). 已完成的有限支持阻碍，保留本记录较窄结论。 / Completed finite-support obstruction preserving this record’s narrower result.
 
 ## 来源与既有回执 Sources and existing receipts
 
@@ -52,3 +54,7 @@ Aliases / 别名: `MarketGenerativity.safe_history_never_fails`
 ## 沿革 History
 
 - 2026-10-08：随有限转变的正式复用迁移既有成果身份；原源码和历史回执保留。 / 2026-10-08: migrated the inherited result identity for formal reuse by finite transition; original source and historical receipts remain.
+- 2026-10-08：审读同一研究追加的部分纠正与临界分析；本条原主张、证明和历史回执未改变。 / 2026-10-08: reviewed appended partial-correction and critical analysis in the same study; this record’s original claim, proof and historical receipt are unchanged.
+- 2026-10-09：核读并接入既有研究§§37–40有限支持阻碍；本记录的定理、前提及旧回执均不变，新量词结果见market-finite-support-obstruction。 / 2026-10-09: reconciled study sections 37–40 on finite-support obstruction; this record’s theorem, premises and prior receipt remain unchanged, with the stronger quantified obstruction in market-finite-support-obstruction.
+- 2026-10-09：核读既有研究§§41–46的LibreOffice形成对应；原定理、条件和回执均保留，新历史评估另记formed-software-continuation，未作数值映射。 / 2026-10-09: reconciled study sections 41–46 on LibreOffice formation; original theorem, hypotheses and receipt remain, with the new historical assessment in formed-software-continuation and no numerical mapping.
+- 2026-10-09：核读同一研究§§47–52的API接续与保留依存评估；先前正文原字节前缀保留。此对应未改变本条数学命题、前提或回执，也未提供数量化参数。 / 2026-10-09: reconciles sections 47–52 on API continuation and retained dependence; original study/chapter byte prefixes remain. The assessment changes no mathematical claim, hypothesis or receipt and supplies no quantitative parameters.

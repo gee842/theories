@@ -69,3 +69,19 @@ Ren's next exact instruction, following the temporal-inspection result:
 > please
 
 AI scope interpretation: test whether executed, permission-checked instructions can establish the transition scope previously supplied by a change notice, carry evidence through the same transformation, and preserve a concrete failure when an additional writer bypasses that interface. The [mediated-control study](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-INTEGRATION.md) records the result and its physical correspondence limits. This task selection, bounded language and interpretation are AI-authored, not additional words attributed to Ren.
+
+## Continuation through interrupted change
+
+9 October 2026, Asia/Bangkok. Ren's next exact instruction after the mediated-control result and updated repository workflow:
+
+> continue
+
+AI scope interpretation: weaken whole-program atomicity by relating actual staged writes, durable recovery information, interruption, expenditure and current command access; preserve concrete failures of lost recovery information and unavailable correction. The continuation stays in [the existing mediated-control study](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-INTEGRATION.md#9-interrupted-change-and-recovery--中断改变与恢复). This protocol and its interpretation are AI elaboration, not additional words attributed to Ren. It continues this alignment task and does not take over another session's foundational objective.
+
+## Completion of the remaining corrective-access connection
+
+9 October 2026, Asia/Bangkok. Ren's exact instruction:
+
+> finish remains
+
+AI scope interpretation: complete the outstanding operational connection identified by the exhausted-but-running recovery counterexample, using a concrete reserved shutdown protocol and checking its conditions and failure boundaries. The work continues [the same study](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-INTEGRATION.md#10-reserved-shutdown-during-recovery--恢复期间保留停止能力). The additional protected grant, bounded interruption and supervisor are AI-authored design premises, not propositions attributed to Ren. This finishes the specified local connection without claiming an unspecified physical installation or stronger universal alignment/foundational programme is complete.

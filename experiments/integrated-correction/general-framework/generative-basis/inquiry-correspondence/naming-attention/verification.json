@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T14:01:58.041199+00:00",
+  "scope": "All eight descriptive counts and participant statistics in seven windows independently recomputed with Decimal; source hashes verified. Not an independent research review or exact reproduction of all published analyses.",
+  "distinct_naming_events": 1508,
+  "subjects": 36,
+  "repeated_windows": 7,
+  "counts_by_window": [
+    {
+      "seconds": 0.5,
+      "other_gaze_without_target": 667,
+      "no_coded_object_gaze": 204
+    },
+    {
+      "seconds": 1.0,
+      "other_gaze_without_target": 616,
+      "no_coded_object_gaze": 142
+    },
+    {
+      "seconds": 1.5,
+      "other_gaze_without_target": 560,
+      "no_coded_object_gaze": 98
+    },
+    {
+      "seconds": 2.0,
+      "other_gaze_without_target": 529,
+      "no_coded_object_gaze": 66
+    },
+    {
+      "seconds": 3.0,
+      "other_gaze_without_target": 467,
+      "no_coded_object_gaze": 45
+    },
+    {
+      "seconds": 4.0,
+      "other_gaze_without_target": 425,
+      "no_coded_object_gaze": 32
+    },
+    {
+      "seconds": 5.0,
+      "other_gaze_without_target": 393,
+      "no_coded_object_gaze": 24
+    }
+  ],
+  "source_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/naming-attention/PLAN.md": "a1be33bdd0293d96309e86325b3911f4cd58512e6f024670494f5349aa7c05c4",
+    "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/naming-attention/analyze.py": "c465d1c6b70f413d1b40df01c4bb3151b0c85c09f5c48cd4bdecdb3fdff5cd94",
+    "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/naming-attention/check_analysis.py": "79588f1cf15a3d316740ef3a7a5d75cfbc4cbc382699f65c871e713bcf647c65",
+    "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/naming-attention/results.json": "8fd80fa244b069d7b0b7a6bdf1d9a5e0d5f84190e275b47bfac99bff18d53218",
+    "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/naming-attention/participant-summaries.csv": "c6482da05a903ed4c0c6982d09729e34b6113fbd174b5df72d78e6a2cff8d654",
+    "sources/developmental-attention/yu-2021/PROVENANCE.json": "f8e24c332f9089e713a476c051b2f5641b1dcdcaeeb9743c40f174644d79507e",
+    "sources/developmental-attention/yu-2021/node-api.json": "d08d1cefb6464d2759acb8e6aad098fef322f48ccff44af47e050bb0de61f004",
+    "sources/developmental-attention/yu-2021/files-api.json": "ecc55012a9e9b1089e80ade34d3a569545e09b50016aafba2c95b41af296cde7",
+    "sources/developmental-attention/yu-2021/naming_onset-0.50_target_exp12.csv": "c61fe9028621ff85cea7e4c19193d26f1daa384bbdef7e70a75260feb0bb6bbc",
+    "sources/developmental-attention/yu-2021/naming_onset-1.00_target_exp12.csv": "66984077ad89e15039fb8e38722335b9f614d2404d1fdf83935ad29531b40cc5",
+    "sources/developmental-attention/yu-2021/naming_onset-1.50_target_exp12.csv": "b96d3a23a27001a5c7af9f318019776ab90ce1db972f4bef6bf22a64f9d6c1ab",
+    "sources/developmental-attention/yu-2021/naming_onset-2.00_target_exp12.csv": "ea0b1133804e381abd330de1fcfaf1e690875a7f1aa32fc606945caf213e7dc3",
+    "sources/developmental-attention/yu-2021/naming_onset-3.00_target_exp12.csv": "6f1e939edda9c5beaf94a9edd8cc2723bfafbf9168f2db402722f204b62c3c8a",
+    "sources/developmental-attention/yu-2021/naming_onset-4.00_target_exp12.csv": "b3b709d1423c99cc504e8a4d095f32d2fe4448b6d841b604d174b135333cad21",
+    "sources/developmental-attention/yu-2021/naming_onset-5.00_target_exp12.csv": "b045734f81fb20372e681623ed899ebdd64c45b1042ebb734ccf6d3325dc8c43",
+    "sources/developmental-attention/yu-2021/readme.txt": "3643823a19e9ddfabc694746be79759bdf2ee6911f93fcfa9cfe8409eb2fa796"
+  },
+  "new_lean_theorems": 0,
+  "independent_agent_review": false,
+  "full_goal_complete": false
+}

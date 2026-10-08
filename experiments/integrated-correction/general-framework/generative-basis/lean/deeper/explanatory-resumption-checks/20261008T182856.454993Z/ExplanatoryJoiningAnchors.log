@@ -1,0 +1,12 @@
+'Generative.ExplanatoryJoiningAnchors.units_role_total' does not depend on any axioms
+'Generative.ExplanatoryJoiningAnchors.role_total_collapse_open' does not depend on any axioms
+'Generative.ExplanatoryJoiningAnchors.units_collapse_open' does not depend on any axioms
+'Generative.ExplanatoryJoiningAnchors.units_same_incidence_questions' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningAnchors.coarse_account_exact' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningAnchors.coarse_account_reduced' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningAnchors.every_admitted_history_collapses' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningAnchors.spent_has_no_self_result' does not depend on any axioms
+'Generative.ExplanatoryJoiningAnchors.coarse_self_join_loses_real_failure' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningAnchors.open_map_does_not_force_pair_lifting' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningAnchors.same_incidence_distinct_boundary_probes' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningAnchors.retained_anchor_separates' does not depend on any axioms

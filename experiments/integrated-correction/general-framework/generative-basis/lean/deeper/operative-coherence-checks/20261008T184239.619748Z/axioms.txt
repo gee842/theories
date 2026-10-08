@@ -1,0 +1,51 @@
+'Generative.OperativeCoherence.Vec' does not depend on any axioms
+'Generative.OperativeCoherence.Joint' does not depend on any axioms
+'Generative.OperativeCoherence.Matrix' does not depend on any axioms
+'Generative.OperativeCoherence.xGate' does not depend on any axioms
+'Generative.OperativeCoherence.zGate' does not depend on any axioms
+'Generative.OperativeCoherence.negVec' does not depend on any axioms
+'Generative.OperativeCoherence.norm' does not depend on any axioms
+'Generative.OperativeCoherence.inner' does not depend on any axioms
+'Generative.OperativeCoherence.prepare' does not depend on any axioms
+'Generative.OperativeCoherence.switched' does not depend on any axioms
+'Generative.OperativeCoherence.controlDensity' does not depend on any axioms
+'Generative.OperativeCoherence.dephase' does not depend on any axioms
+'Generative.OperativeCoherence.diagonal' does not depend on any axioms
+'Generative.OperativeCoherence.mass' does not depend on any axioms
+'Generative.OperativeCoherence.plusMass' does not depend on any axioms
+'Generative.OperativeCoherence.minusMass' does not depend on any axioms
+'Generative.OperativeCoherence.response' does not depend on any axioms
+'Generative.OperativeCoherence.basisZero' does not depend on any axioms
+'Generative.OperativeCoherence.prepared' does not depend on any axioms
+'Generative.OperativeCoherence.coherent' does not depend on any axioms
+'Generative.OperativeCoherence.degraded' does not depend on any axioms
+'Generative.OperativeCoherence.xz_anticommute' depends on axioms: [propext]
+'Generative.OperativeCoherence.x_preserves_norm' depends on axioms: [propext]
+'Generative.OperativeCoherence.z_preserves_norm' depends on axioms: [propext]
+'Generative.OperativeCoherence.prepared_density' does not depend on any axioms
+'Generative.OperativeCoherence.switched_density' depends on axioms: [propext]
+'Generative.OperativeCoherence.dephase_preserves_diagonal' does not depend on any axioms
+'Generative.OperativeCoherence.dephase_preserves_mass' does not depend on any axioms
+'Generative.OperativeCoherence.response_mass_conserved' depends on axioms: [propext, Quot.sound]
+'Generative.OperativeCoherence.dephase_response' depends on axioms: [propext]
+'Generative.OperativeCoherence.prepared_matrix' does not depend on any axioms
+'Generative.OperativeCoherence.coherent_matrix' does not depend on any axioms
+'Generative.OperativeCoherence.degraded_matrix' does not depend on any axioms
+'Generative.OperativeCoherence.branch_weights_unchanged' does not depend on any axioms
+'Generative.OperativeCoherence.prepared_response' does not depend on any axioms
+'Generative.OperativeCoherence.coherent_response' does not depend on any axioms
+'Generative.OperativeCoherence.degraded_response' does not depend on any axioms
+'Generative.OperativeCoherence.no_diagonal_response_decoder' does not depend on any axioms
+'Generative.OperativeCoherence.dephase_merges_preparations' does not depend on any axioms
+'Generative.OperativeCoherence.no_uniform_dephase_inverse' does not depend on any axioms
+'Generative.OperativeCoherence.retained' does not depend on any axioms
+'Generative.OperativeCoherence.decodePlus' does not depend on any axioms
+'Generative.OperativeCoherence.retained_response_exact' depends on axioms: [propext, Quot.sound]
+'Generative.OperativeCoherence.dephase_keeps_response_iff' depends on axioms: [propext, Quot.sound]
+'Generative.OperativeCoherence.withBlank' does not depend on any axioms
+'Generative.OperativeCoherence.recordBranch' does not depend on any axioms
+'Generative.OperativeCoherence.recordBranch_involution' does not depend on any axioms
+'Generative.OperativeCoherence.recording_reduces_to_dephase' depends on axioms: [propext]
+'Generative.OperativeCoherence.joint_reversal_restores_control' does not depend on any axioms
+'Generative.OperativeCoherence.prepared_control_embedding' does not depend on any axioms
+'Generative.OperativeCoherence.coherent_control_embedding' does not depend on any axioms

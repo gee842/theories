@@ -1,0 +1,365 @@
+{
+  "checked_at_utc": "2026-10-08T18:49:31.789140+00:00",
+  "status": "passed-owned-scope",
+  "owned_result": "pending-task-context-applicability",
+  "validated_records": [
+    "acquired-revision-of-pending-task",
+    "formed-goal-revision-continuation",
+    "pending-task-context-applicability",
+    "versioned-request-completion"
+  ],
+  "new_theorems": 14,
+  "new_audits": 22,
+  "inherited_theorems": 205,
+  "inherited_audits": 354,
+  "proof_receipt_sha256": "d8e5d96c5d0b3798ecf1efcb0afe266ebf4cfd69f3c82c3507b5d20662d40090",
+  "reviewed_sources_match": true,
+  "M24_matches": true,
+  "link_errors": [],
+  "commands": [
+    {
+      "command": [
+        "make",
+        "research-render"
+      ],
+      "exit_code": 2,
+      "result": {
+        "records": 77,
+        "selected_records": [
+          "acquired-binding-compositional-use",
+          "acquired-revision-of-pending-task",
+          "aggregate-exit-funding",
+          "alignment-direction-g0-j",
+          "assured-route-criterion",
+          "becoming-context-coherence",
+          "binding-preserving-substitution",
+          "branching-target-uniqueness",
+          "branching-tests-bisimulation",
+          "classification-robust-generative-comparison",
+          "code-plan-global-support",
+          "conditional-foundation-assessment",
+          "constitutive-binding-assessment",
+          "context-sensitive-updating-correspondence",
+          "control-coherence-loss",
+          "derivation-soundness",
+          "derived-history-law-exactness",
+          "effective-capacity-and-eventual-reachability",
+          "enacted-scene-binding",
+          "encounter-control-and-retention",
+          "encounter-selection-and-revision",
+          "endpoint-loss-and-return",
+          "exclusive-footprint-support",
+          "fallible-witness-diagnosability",
+          "finite-basis-common-interpretation",
+          "finite-continuation-plans",
+          "finite-fallible-inquiry-necessity",
+          "finite-granularity-question-recovery",
+          "finite-joining-tree-lifting",
+          "finite-trace-transport",
+          "formed-goal-revision-continuation",
+          "formed-software-continuation",
+          "fulfillment-chance-floor",
+          "functional-joining-common-structure",
+          "growth-constrained-fragmentation",
+          "guarded-program-question-recovery",
+          "historical-source-binding",
+          "incidence-common-refinement",
+          "inherited-structural-copying",
+          "joining-open-map-factor",
+          "joining-questions-survive-encoding",
+          "joint-code-plan-lifting",
+          "joint-decomposition-lifting",
+          "joint-plan-composition",
+          "joint-practice-forms-continuation",
+          "joint-target-uniqueness",
+          "market-finite-support-obstruction",
+          "market-partial-correction-boundary",
+          "market-protected-continuation",
+          "market-supported-finite-transition",
+          "material-preparation-output",
+          "mediated-evidence-transport",
+          "multivalued-joining-common-structure",
+          "naming-attention-coverage",
+          "open-form-realization-under-revision",
+          "organizational-formation-from-generative-comparison",
+          "organizational-rule-inheritance",
+          "pending-task-context-applicability",
+          "positive-ground-open-futures",
+          "practical-judgment-g0-j",
+          "prefix-observation-loss",
+          "recoverable-mediated-change",
+          "recurrent-chain-assembly",
+          "relational-generative-comparison",
+          "residual-continuation-correspondence",
+          "retained-reference-joining-recovery",
+          "retrospective-source-binding",
+          "risk-certificate-outcome-distinction",
+          "scientific-inquiry-foundation",
+          "situated-recovery-empirical-correspondence",
+          "theory-of-becoming-foundation",
+          "trace-law-equivalence",
+          "transition-grouping-word-partition",
+          "unanchored-incidence-collapse",
+          "universal-practical-warrant",
+          "versioned-request-completion",
+          "wisdom-root"
+        ],
+        "errors": [],
+        "source_drift": [
+          {
+            "id": "acquired-binding-compositional-use",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+            "reviewed_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811",
+            "current_sha256": "de06249a90b8783d4f217d8a3178ff21a0cb7aa0c872fe782861b47eb0aced47"
+          },
+          {
+            "id": "enacted-scene-binding",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+            "reviewed_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811",
+            "current_sha256": "de06249a90b8783d4f217d8a3178ff21a0cb7aa0c872fe782861b47eb0aced47"
+          },
+          {
+            "id": "encounter-control-and-retention",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+            "reviewed_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811",
+            "current_sha256": "de06249a90b8783d4f217d8a3178ff21a0cb7aa0c872fe782861b47eb0aced47"
+          },
+          {
+            "id": "encounter-selection-and-revision",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+            "reviewed_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811",
+            "current_sha256": "de06249a90b8783d4f217d8a3178ff21a0cb7aa0c872fe782861b47eb0aced47"
+          },
+          {
+            "id": "historical-source-binding",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+            "reviewed_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811",
+            "current_sha256": "de06249a90b8783d4f217d8a3178ff21a0cb7aa0c872fe782861b47eb0aced47"
+          },
+          {
+            "id": "naming-attention-coverage",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+            "reviewed_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811",
+            "current_sha256": "de06249a90b8783d4f217d8a3178ff21a0cb7aa0c872fe782861b47eb0aced47"
+          },
+          {
+            "id": "retrospective-source-binding",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+            "reviewed_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811",
+            "current_sha256": "de06249a90b8783d4f217d8a3178ff21a0cb7aa0c872fe782861b47eb0aced47"
+          }
+        ],
+        "unrelated_source_drift": [],
+        "scope": "Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation."
+      }
+    },
+    {
+      "command": [
+        "make",
+        "research-check"
+      ],
+      "exit_code": 2,
+      "result": {
+        "records": 77,
+        "selected_records": [
+          "acquired-binding-compositional-use",
+          "acquired-revision-of-pending-task",
+          "aggregate-exit-funding",
+          "alignment-direction-g0-j",
+          "assured-route-criterion",
+          "becoming-context-coherence",
+          "binding-preserving-substitution",
+          "branching-target-uniqueness",
+          "branching-tests-bisimulation",
+          "classification-robust-generative-comparison",
+          "code-plan-global-support",
+          "conditional-foundation-assessment",
+          "constitutive-binding-assessment",
+          "context-sensitive-updating-correspondence",
+          "control-coherence-loss",
+          "derivation-soundness",
+          "derived-history-law-exactness",
+          "effective-capacity-and-eventual-reachability",
+          "enacted-scene-binding",
+          "encounter-control-and-retention",
+          "encounter-selection-and-revision",
+          "endpoint-loss-and-return",
+          "exclusive-footprint-support",
+          "fallible-witness-diagnosability",
+          "finite-basis-common-interpretation",
+          "finite-continuation-plans",
+          "finite-fallible-inquiry-necessity",
+          "finite-granularity-question-recovery",
+          "finite-joining-tree-lifting",
+          "finite-trace-transport",
+          "formed-goal-revision-continuation",
+          "formed-software-continuation",
+          "fulfillment-chance-floor",
+          "functional-joining-common-structure",
+          "growth-constrained-fragmentation",
+          "guarded-program-question-recovery",
+          "historical-source-binding",
+          "incidence-common-refinement",
+          "inherited-structural-copying",
+          "joining-open-map-factor",
+          "joining-questions-survive-encoding",
+          "joint-code-plan-lifting",
+          "joint-decomposition-lifting",
+          "joint-plan-composition",
+          "joint-practice-forms-continuation",
+          "joint-target-uniqueness",
+          "market-finite-support-obstruction",
+          "market-partial-correction-boundary",
+          "market-protected-continuation",
+          "market-supported-finite-transition",
+          "material-preparation-output",
+          "mediated-evidence-transport",
+          "multivalued-joining-common-structure",
+          "naming-attention-coverage",
+          "open-form-realization-under-revision",
+          "organizational-formation-from-generative-comparison",
+          "organizational-rule-inheritance",
+          "pending-task-context-applicability",
+          "positive-ground-open-futures",
+          "practical-judgment-g0-j",
+          "prefix-observation-loss",
+          "recoverable-mediated-change",
+          "recurrent-chain-assembly",
+          "relational-generative-comparison",
+          "residual-continuation-correspondence",
+          "retained-reference-joining-recovery",
+          "retrospective-source-binding",
+          "risk-certificate-outcome-distinction",
+          "scientific-inquiry-foundation",
+          "situated-recovery-empirical-correspondence",
+          "theory-of-becoming-foundation",
+          "trace-law-equivalence",
+          "transition-grouping-word-partition",
+          "unanchored-incidence-collapse",
+          "universal-practical-warrant",
+          "versioned-request-completion",
+          "wisdom-root"
+        ],
+        "errors": [],
+        "source_drift": [
+          {
+            "id": "acquired-binding-compositional-use",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+            "reviewed_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811",
+            "current_sha256": "de06249a90b8783d4f217d8a3178ff21a0cb7aa0c872fe782861b47eb0aced47"
+          },
+          {
+            "id": "enacted-scene-binding",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+            "reviewed_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811",
+            "current_sha256": "de06249a90b8783d4f217d8a3178ff21a0cb7aa0c872fe782861b47eb0aced47"
+          },
+          {
+            "id": "encounter-control-and-retention",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+            "reviewed_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811",
+            "current_sha256": "de06249a90b8783d4f217d8a3178ff21a0cb7aa0c872fe782861b47eb0aced47"
+          },
+          {
+            "id": "encounter-selection-and-revision",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+            "reviewed_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811",
+            "current_sha256": "de06249a90b8783d4f217d8a3178ff21a0cb7aa0c872fe782861b47eb0aced47"
+          },
+          {
+            "id": "historical-source-binding",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+            "reviewed_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811",
+            "current_sha256": "de06249a90b8783d4f217d8a3178ff21a0cb7aa0c872fe782861b47eb0aced47"
+          },
+          {
+            "id": "naming-attention-coverage",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+            "reviewed_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811",
+            "current_sha256": "de06249a90b8783d4f217d8a3178ff21a0cb7aa0c872fe782861b47eb0aced47"
+          },
+          {
+            "id": "retrospective-source-binding",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+            "reviewed_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811",
+            "current_sha256": "de06249a90b8783d4f217d8a3178ff21a0cb7aa0c872fe782861b47eb0aced47"
+          }
+        ],
+        "unrelated_source_drift": [],
+        "scope": "Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation."
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "tools/research/research.py",
+        "check",
+        "--ids",
+        "acquired-revision-of-pending-task",
+        "formed-goal-revision-continuation",
+        "pending-task-context-applicability",
+        "versioned-request-completion"
+      ],
+      "exit_code": 0,
+      "result": {
+        "records": 77,
+        "selected_records": [
+          "acquired-revision-of-pending-task",
+          "formed-goal-revision-continuation",
+          "pending-task-context-applicability",
+          "versioned-request-completion"
+        ],
+        "errors": [],
+        "source_drift": [],
+        "unrelated_source_drift": [
+          {
+            "id": "acquired-binding-compositional-use",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+            "reviewed_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811",
+            "current_sha256": "de06249a90b8783d4f217d8a3178ff21a0cb7aa0c872fe782861b47eb0aced47"
+          },
+          {
+            "id": "enacted-scene-binding",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+            "reviewed_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811",
+            "current_sha256": "de06249a90b8783d4f217d8a3178ff21a0cb7aa0c872fe782861b47eb0aced47"
+          },
+          {
+            "id": "encounter-control-and-retention",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+            "reviewed_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811",
+            "current_sha256": "de06249a90b8783d4f217d8a3178ff21a0cb7aa0c872fe782861b47eb0aced47"
+          },
+          {
+            "id": "encounter-selection-and-revision",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+            "reviewed_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811",
+            "current_sha256": "de06249a90b8783d4f217d8a3178ff21a0cb7aa0c872fe782861b47eb0aced47"
+          },
+          {
+            "id": "historical-source-binding",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+            "reviewed_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811",
+            "current_sha256": "de06249a90b8783d4f217d8a3178ff21a0cb7aa0c872fe782861b47eb0aced47"
+          },
+          {
+            "id": "naming-attention-coverage",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+            "reviewed_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811",
+            "current_sha256": "de06249a90b8783d4f217d8a3178ff21a0cb7aa0c872fe782861b47eb0aced47"
+          },
+          {
+            "id": "retrospective-source-binding",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+            "reviewed_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811",
+            "current_sha256": "de06249a90b8783d4f217d8a3178ff21a0cb7aa0c872fe782861b47eb0aced47"
+          }
+        ],
+        "scope": "Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation."
+      }
+    }
+  ],
+  "concurrent_scope": "Owned records and their full dependency closure validate directly, with matching generated pages and receipt bindings. Earlier invalid reference roles in another study temporarily blocked rendering and were corrected there. Later concurrent records/source edits can again make whole-repository navigation or freshness checks fail. No unrelated scientific source or record was modified by this study.",
+  "limits": "Owned documentary consistency and source-bound proof audit only. No whole-chain freshness, independent acceptance or empirical validation."
+}

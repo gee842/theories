@@ -1,5 +1,7 @@
 # Growth forms the possibilities of fragmentation
 
+**Inherited arrangement continuation, 9 October 2026.** [Actual rearrangement now changes inherited copying](#inherited-arrangement-changes-copying), with 34 new checked theorem declarations / 57 audits. The new template mechanism preserves real partial products and gives a third-structure cost constraint. Earlier fixed-law assembly remains valid; the additional copying apparatus and its correspondence are explicit premises.
+
 **Continuation, 8 October 2026.** [Recurrent assembly from prepared material](#recurrent-assembly-from-prepared-material) now closes the previously missing preparation-to-repeated-structure connection for one chain class, with 31 additional checked theorems / 47 new audits. Earlier results below retain their original scope and counts. The complete evolutionary theory remains open; repeated reconstruction under a fixed local law is distinct from the evolution of that law.
 
 8 October 2026. AI-authored continuation of Ren's instruction to explain how evolution forms and changes the organization of further evolution. The [previous material preparation result](MATERIAL-MATURATION-INTEGRATION.md) is retained. This study connects **actual local growth → retained connection graph → actual cuts → transmitted composition and contacts → finite preparation of a common organization**.
@@ -189,3 +191,200 @@ The strong matched comparator is a conventional typed-chain assembly and fragmen
 Author counterreview identifies three remaining premises that the favorable result must not conceal: the chemical/spatial realization of selective attachment, the operative cleavage relation, and the availability of materials and work. It also preserves a fourth evolutionary requirement: reconstructing one type does not explain the formation, inheritance and selection of changes to that type's organizing process. These are distinct from the now-completed finite composition and should guide the next investigation without reopening its established result.
 
 The [continuation checks](RECURRENT-ASSEMBLY-CHECKS.json) bind the proof, canonical records, owned theory changes and paired C14 data. They add no independent-agent acceptance or empirical validation. The earlier study receipt remains historical, and the six broad completion conditions remain unchanged.
+
+## Inherited arrangement changes copying
+
+9 October 2026. AI-authored continuation of [Ren's request to keep advancing the comparison](../../../../sources/15-codex-theory-conversations/2026-10-09-evolution-comparative-continuation.md). **The arrangement formed through earlier activity now changes the support required for a further, actually constructed arrangement. That difference can persist through descendants without an independently assigned fitness value.** This is a conditional mechanism and a new cross-structure constraint, not a demonstrated advantage over all strong evolutionary accounts.
+
+**中文结果。** 同一材料接续中的组分排列，经逐项读取和接合形成后继；后继保留的排列又改变下一轮接合所需的支持。一次消耗支持的交换使 ABAB 变为 AABB，变化可以实际复制并继续。给定共同局部规律时，两种已知排列的复制成本限制第三种排列，不能为每种另填一个任意值。共享供给和发生次序仍可能改变谁先完成；更省的复制不独自推出种群扩张。
+
+Result(s): reuse `recurrent-chain-assembly` and the source-scoped fragment interface; add `inherited-structural-copying` for this new composition. The separate `organizational-rule-inheritance` result and its social-practice continuation retain their own mechanisms and scope.
+
+Delta: actual rearrangement → changed ordered copying → material-built inherited variants → exact support threshold and a third-arrangement constraint. The earlier fixed end-attachment rule always restored an alternating pattern; it could not preserve this new variation.
+
+Supplied premises / correspondence: ordered access to a retained connected template, exact copying, local adjacent-type support costs, a unit-cost exchange, a unit release operation, the occurrence/order of operations and finite typed stock. These are local relationships selected within the unfolding, not laws asserted to exist outside it. Parent, template and descendant name roles differentiated by which retained sequence directs which new transfers. The model omits spatial binding geometry, error-producing chemistry and renewal.
+
+Evidence: [StructuralCopying.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/StructuralCopying.lean), especially `formed_variant_enters_copying`, `exact_reproduction_budget`, `finite_lineage_inherits`, `lineage_accounts`, `third_structure_cost_constraint` and `shared_supply_order_matters`. The [fresh-build receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/structural-copying-verification/README.md) checks **34 new theorem declarations / 57 new audits / 430 closure audits**, with 373 inherited declarations separate.
+
+Boundary: structural variation is inherited under a supplied copying relation; the formation, accuracy and renewal of that copying relation are not derived. A release threshold is not a calendar-time growth rate or an invasion criterion. All six broader completion requirements remain intact.
+
+Integration: the [canonical result](../../../../theories/shengsheng-buxi-generative-existence/results/records/inherited-structural-copying.json) records the producer-output/consumer-input correspondence. `previous_fragment_is_template` identifies an actual earlier ABAB fragment with the new template input. It is an endpoint adapter, not a proof that earlier attachment creates template-reading capacity. This limitation is additional to, not hidden inside, the inherited fragment identity.
+
+### How variation enters further generation
+
+The copying operation reads the retained sequence one position at a time. Each enabled step removes an existing matching component from the common pool, joins it to the growing strand and transfers the required support to the spent account. Failure preserves both the unfilled suffix and the partial product. The target parent graph is never assigned as a completed daughter. Ordered token transfers and formed edges prove daughter equality at successful completion.
+
+The local exchange moves the second and third components in the represented positional path and consumes one support unit. Thus ABAB becomes AABB with the same component multiplicities and positional connections, but different typed adjacency. This is a supplied rearrangement operation, not a derivation of how molecular bonds are broken and remade. Starting with the actual ABAB fragment, four free components and eight support units, exchange consumes one and the subsequent AABB copying/release consumes seven. The changed strand is the actual input to copying (`formed_variant_enters_copying`); its cost is not charged to a separate unrecorded stock.
+
+`finite_lineage_inherits` proves repetition for any nonempty path template and any finite number of successive daughter-to-daughter reproductions with the declared material and support. All parents remain in the returned material list. For n reproductions, there are n+1 retained copies along this selected lineage, not 2^n copies of a population in which every parent reproduces each round. `lineage_accounts` conserves material and support even after a partial failure. This new operation is not the earlier chain-cleavage doubling protocol, so its counts and costs cannot be interchanged.
+
+### A derived cost and an additional prediction
+
+Let e and u be the shared local support costs of copying an equal-type and unequal-type adjacent transition. First attachment and release each consume one unit. The actual scan gives total support requirements:
+
+| Retained arrangement | Total support C | e=2, u=1 | e=1, u=2 |
+|---|---:|---:|---:|
+| ABAB | 2+3u | 5 | 8 |
+| AABB | 2+2e+u | 7 | 6 |
+| ABBA | 2+e+2u | 6 | 7 |
+
+The four-component examples have the same material composition and positional path. The costs follow from the different adjacent relations actually encountered, rather than a variant-specific performance coefficient. The general theorem `exact_reproduction_budget` proves that, for a valid nonempty template and a pool containing its prescribed sequence plus a residual tail, copying and release succeed **if and only if** the support budget is at least the derived cost. Incomplete material and unspent support remain observable below that threshold.
+
+The table also yields a checked restriction:
+
+\[
+2C(ABBA)=C(ABAB)+C(AABB).
+\]
+
+`two_costs_determine_third` proves that two local-law candidates agreeing on the first two costs must agree on the third. Thus the third cost cannot be independently adjusted after inspecting it. This supplies a concrete test of the common local mechanism. Unequal first-step or release costs, nonlocal folding, positional effects, copying errors or operation-dependent work can defeat its physical correspondence. The mixed ABBA template is a further admissible test configuration; this construction does not claim to have formed it through the specific ABAB-to-AABB exchange.
+
+### What the comparison permits
+
+| Account given the same declared material and operations | Consequence |
+|---|---|
+| Component counts and untyped path only | Provably insufficient to distinguish the two actual completion outcomes at five support units (`no_census_only_completion`). |
+| An independent total cost for each variant | Can fit the first two outcomes but leaves the third cost free. The shared mechanism supplies a restriction beyond that description. This is a bounded explanatory economy relative to those free coefficients. |
+| A conventional sequence-dependent assembly mechanism retaining the same local interactions | Has access to the same cost sums and predicts the same restrictions. No advantage over this strong mechanism has been established. |
+| A population recurrence supplied with completion coefficients | Must still account for partial products, allocation/order, errors and subsequent opportunities before a local cost comparison determines population change. |
+
+The negative cases matter. At five support units under e=2, u=1, ABAB copies and releases. AABB stops at AAB, leaving one B and one support unit; its failure is not deletion or death. At four support units, ABAB is fully built but unreleased. If the local costs instead favor equal-type transitions, the structural ranking reverses. There is no universally superior arrangement.
+
+With one common stock of eight components and nine support units, processing ABAB before AABB releases only the first; reversing their order releases only AABB. The source strands and partial daughters remain accounted for. This witnesses why a matched isolated allowance cannot establish a competition result without the encounter/allocation relation. Selection is a consequence of the joint history, not a number permanently attached to the arrangement.
+
+### Primary evidence and substantive counterreview
+
+[Papastavrou, Horning and Joyce (2024)](https://doi.org/10.1073/pnas.2321592121) provide a strong existing account of structure-dependent copying, fidelity and subsequent selection. Their evolved RNA variants trade reduced cleavage activity for better replication; stage yields and functional-progeny effects explain much of competitive enrichment. This exceeds our binary work model in biological detail and evidence. The current Lean model's perfect-copying assumption excludes a relationship that their results show to be consequential. The [original XML and reading scope](../../../../sources/evolutionary-selection/structural-copying/README.md) are preserved; no kinetic fit or sequence-data reanalysis is asserted here.
+
+**Does this derive the origin of the copying rule?** No. It removes an independent variant-specific return parameter by deriving consequences from retained arrangement and shared local operations. Ordered access and accurate copying remain supplied. Structure-sensitive effective instructions change; the primitive interaction law does not evolve in this construction.
+
+**Is the new mechanism merely the old one renamed?** No: the original alternating-end rule would overwrite the alternative arrangement, whereas the supplied templating operation transmits it. That stronger ability costs an additional premise. The fragment endpoint is checked, but the premise ledger must include construction and maintenance of a template-reading relation. No copying-capability gain is obtained for free from a changed name.
+
+**Does the third-cost restriction establish superiority over strong evolutionary theories?** No. It establishes predictive constraint over independently supplied variant costs and identifies what must be checked next. A mechanistic rival with the same interactions has the same restriction. To earn an advantage over it, our account must explain or independently constrain a relation it otherwise supplies, while retaining at least the same explanatory targets. More names or proof declarations would not do that.
+
+The completed connection is **formed structural variation → material copying → retained variation → derived continuation threshold**. The next precise bridge is **activity that forms, maintains or degrades the copying relation and thereby changes its fidelity and further variation**, coupled to an explicit allocation/encounter process when making population claims. This is the unresolved producer of the new mechanism, not a reason to reopen the completed exact-copying proofs. The [scoped integration checks](STRUCTURAL-COPYING-CHECKS.json) preserve earlier receipts, other sessions' work and the broad completion conditions.
+
+
+## Formed registration changes copying fidelity
+
+9 October 2026. AI-authored continuation in the existing abstract material-copying branch. **Relations formed during ongoing assembly determine which retained position enters the next attachment. Their loss can interrupt continuation; their displacement can transmit a different arrangement; their restoration need not repair what has already formed.** The independently authorized social-organizational branch keeps its scope and results.
+
+**中文结果。** 先有共同材料活动中形成、保持和改变的连接，随后才区分保留排列、读取位置与正在接合的后继。复制能力不再只表现为直接读取模板的既定操作：对接消耗实际连接件和支持，复制沿当前连接取值。缺接、错接、恢复与已经形成的差异属于同一历史。这里形成的是复制所需的**配准关系**；选择性接合及取值规律仍为局部前提，不能因此宣布完整复制能力的起源已经解释。
+
+Result(s): reuse `inherited-structural-copying`; add `formed-copying-registration` for the contact-formation-to-copying composition. The earlier [recording-fidelity review](../../2026-10-05-concern-theory/RECORDING-FIDELITY-REVIEW.md) already credits material formation of recording capacity under supplied transduction. This is not the first general result that information handling requires formed support, nor a formal adapter to that separate recording process.
+
+Delta: paid formation of indexed contacts → operative reading of retained material → actual correct or changed attachment → partial continuation, repair and inherited difference. The earlier `StructuralCopying.tick` took the next desired template value directly. `CopyingRegistration.tick` instead reads the source position of the actual contact at the current insertion site. Its pending list is a length/continuation scaffold: its head is **not** used to choose the attached value.
+
+Supplied premises / correspondence: pre-individuated positions, identity-compatible docking, reliable transduction of the contacted value, a finite template and available typed stock; unit costs for docking and displacement, inherited adjacent-type costs for attachment, and scheduled event occurrence. These are explicit local relationships within the common process. Selective docking is implemented by an index-equality guard; the model does not derive the physical discrimination that makes this guard appropriate. It has no spatial binding kinetics, stochastic error law, spontaneous contact decay or autonomous repair detection. A command to restore a contact does not explain how restoration is initiated.
+
+Evidence: [CopyingRegistration.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/CopyingRegistration.lean), especially `registered_operation_refines`, `registered_inheritance`, `history_accounts`, `history_retains_built_prefix`, `rebinding_restores_fidelity` and `no_census_only_copy`. The [fresh verification](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/copying-registration-verification/README.md) separates new declarations from the actual inherited import closure.
+
+Boundary: contact formation makes one prerequisite of accurate copying endogenous to the represented history; it does not derive all of copying, selection or the enabling local law. There is no estimated mutation rate or proof that fidelity improves evolution in every setting. “Error” here means disagreement with the specified retained template, not moral badness, loss of function or evolutionary disadvantage.
+
+Integration: the [canonical record](../../../../theories/shengsheng-buxi-generative-existence/results/records/formed-copying-registration.json) specifies the exact interface. Complete value registration and consistency between the retained template, built prefix and remaining suffix imply refinement to the old copying operation. `registered_inheritance` then uses the old `copied_structure_inherits`, preserving its nonempty path and stock/cost hypotheses. This composition discharges the old perfect-read premise for stable registered operations; it does not erase the new formation premises or preserve registration through arbitrary loss and displacement.
+
+### Formation, interruption and restoration in one history
+
+Each docking operation transfers one connector from spare stock into an actual pair of insertion/source positions and spends one support unit. Losing a contact returns its connector but does not refund work. Displacement changes the source position of an existing contact and costs one support unit. Copying then removes a matching token from the material pool and extends the actual product. A missing contact or unavailable token stalls without deleting the incomplete product. These operations share a configuration and accounts; completed output is not assigned by a fidelity flag.
+
+Use A/B for the two represented component values, retained arrangement ABAB, three free A components and two free B components, four spare connectors, and twelve initial support units. Four docking steps leave four contacts, no spare connectors, eight free support units and four spent units. Under the previously checked adjacent costs e=2, u=1:
+
+| Subsequent history | Actual built arrangement | Release and remaining support |
+|---|---|---|
+| Four correctly registered copy steps | ABAB | Released; 3 units remain |
+| Displace the second contact to source position 0, then copy | AAAB | Released; no support remains |
+| Remove the second contact, then attempt four copy steps | A | Stalled with 7 support units and one spare connector |
+| Displace, remove and redock the second contact before copying | ABAB | Released; 1 unit remains |
+| Copy the first two positions with a displacement before the second, then restore and finish | AAAB | Complete but unreleased; no support remains |
+
+Each line is checked from the common prepared state. The differences in support follow the actual event history and adjacent values, including the extra equal transitions in AAAB. The late-restoration case is not evidence that restoration is universally ineffective: it comes after the mistaken attachment and this process has no excision/replacement operation. `history_retains_built_prefix` proves prefix retention for **every finite event list**, not just the displayed trace. Extending the mechanism with an actual editing reaction would change that boundary and require new accounts and proofs.
+
+A changed contact need not change the present signal. Displacing position 0's source from 0 to 2 still reads A on ABAB. Thus positional alignment and value fidelity differ: `Aligned` records source/target identity, whereas `Registered` records complete agreement on this template's values. No theorem claims that all displacement is error, that alignment alone provides coverage, or that value agreement on one template establishes correct source identity across others.
+
+The released AAAB daughter can subsequently enter the old exact-copying process and produce AAAB again with the stated new material and support. The source of the difference and the mechanism of its later persistence are therefore distinct phases in one checked composition. The second phase assumes its own accurate copying relation; it does not inherit a newly generated complete apparatus for free.
+
+### A discriminating comparison and its limit
+
+Two actual displaced configurations have identical connector count, spare connectors, free/spent support, remaining typed stock and current built cells, as well as the same retained template and pending work. One reads ABAB; the other reads AAAB. `no_census_only_copy` rules out a predictor of copied content based only on the declared count/resource summary for all these states. The missing variable is the **operative contact relation**, not an inexplicable change attached to an otherwise identical full configuration.
+
+| Comparator with matched inputs | Assessment |
+|---|---|
+| Counts/resources without contact identities | Insufficient for these two histories, with a checked counterexample. This is a representation limit. |
+| A fixed fidelity number without its formation or damage history | Does not determine which position changes in these deterministic interventions. Supplying a different number for each history fits outcomes without explaining that change. |
+| A conventional copying mechanism retaining contact identities, local attachment costs and event order | Produces the same outcomes and the same repair/prefix boundary. There is no demonstrated advantage over it. |
+| An error-correction mechanism with excision, checking and replacement | Can answer a question absent from this model. Our no-excision boundary is not a refutation of such a rival. Its added operations and support must be compared explicitly. |
+
+The theoretical gain is a completed **explanatory connection inside this programme**: an operational input formerly supplied wholesale is now partly produced and altered through accounted activity. It is not a novel discovery that contact errors cause copying errors. To claim stronger comparative economy, an independently supported formation mechanism would have to constrain fidelity across interventions with fewer fitted relations while matching the strong rival's explanatory targets. No such empirical gain is claimed here.
+
+### Primary evidence, counterreview and the next inference
+
+The preserved [Papastavrou–Horning–Joyce original](../../../../sources/evolutionary-selection/structural-copying/README.md) is reread as the **existing comparison**, without starting a new biological model. Its Results on polymerase evolution and copying fidelity, and its Discussion, already connect changes in the copying machinery and reaction conditions to maintained functional inheritance. Much of the improved fidelity is associated with operation at lower magnesium concentration; this makes a one-variable intrinsic-accuracy interpretation inadequate. Their experiments also distinguish sequence copying, functional progeny and competitive enrichment. They provide stronger empirical support for those distinctions than this abstract construction. Our contact pairs are not calibrated to their molecular errors, and their evolving system relies on externally organized experimental operations. No new measurement or data reanalysis is performed.
+
+Author counterreview rejects three overclaims. First, index-compatible docking builds a relation under a supplied recognition rule; it does not derive recognition. Second, stable registration is preserved by copying alone, but a successful initial setup does not guarantee fidelity when damaging events intervene. Third, reliable inheritance of an altered daughter does not establish retention of the ancestral pattern or of a desired function. The earlier recording-capacity result and conventional mechanistic literature receive credit for the general distinctions; the new output-to-input proof is the specific contribution.
+
+The next unresolved producer is **how the local discrimination and corrective activity are themselves formed, retained and changed**, including which disturbances they distinguish, how an already formed error can be recognized and edited, and whether the required support is regenerated. A useful matched test must retain the same stock and externally imposed events, compare restoration before and after the affected attachment, and include cases where two source positions presently have the same value. That would separate genuine source-sensitive correction from accidental value agreement. A population claim additionally requires the still-open allocation/encounter process. These obligations now begin after the completed registration-to-copying link, not before it. The [scoped integration checks](COPYING-REGISTRATION-CHECKS.json) retain historical proof receipts and all six broad requirements.
+
+
+## Formed correction edits inherited material
+
+9 October 2026. AI-authored continuation of the abstract copying branch. **A relation formed from retained components now couples a comparison to actual replacement within the product. It changes what can continue, but neither comparison nor replacement guarantees further reproduction.** The previous no-editing result remains correct for its original event grammar.
+
+**中文结果。** 同一形成史中，复制留下了 AAAB 产物、未用的 B 和已经形成的连接。拆回一个暂时不再使用的复制连接，再把它接成保留位置与产物位置之间的检查／编辑关系；读取到的差异使库存 B 实际替换产物中的 A，移出的 A 留在库存。因而已经形成的错误可以改变。检查、编辑、释放和后来复制各自有条件，不能把其中任何一项完成当作其余项目已经完成。
+
+Result(s): reuse `formed-copying-registration` and its inherited material-copying interfaces; add `formed-copying-correction` for this new editing composition. The [calibrated-updater result](EVOLUTION-CALIBRATED-UPDATER.md) already constructs discrimination from acquired references and connects it to updating. Its [renewal continuation](EVOLUTION-CALIBRATION-RENEWAL.md) already handles renewed calibration at its stated scope. This study neither reclaims those accomplishments nor asserts a new formal adapter between their signal models and these material states.
+
+Delta: the actual erroneous product and residual stock from the preceding copying process → reallocation of one formed connector → source-to-product comparison → material exchange → release and later inherited copying. The old process could restore reading but had no operation that changed an existing product position. The new exchange is that previously absent operation; its physical realization remains a premise.
+
+Supplied premises / correspondence: positional access, component-value comparison, connector reuse and an atomic positional exchange that preserves the represented path bonds. Exchanged components remain usable, rather than becoming waste. Connection, inspection and exchange each consume one abstract support unit. Event occurrence and the inspected site are scheduled; fault localization, discovery of the plan, microscopic selectivity and autonomous maintenance are not derived. These are differentiated operations in the retained configuration, not a separately constituted correct observer inspecting an independent world. Their concrete physical realization would require its own correspondence.
+
+Evidence: [CopyingCorrection.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/CopyingCorrection.lean), especially `exchange_material`, `inspection_matches_reference_iff`, `inspection_scan_does_not_increase_defects`, `history_accounts`, `formed_route_edits_actual_product` and the wrong-reference witnesses. The [fresh-build evidence](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/copying-correction-verification/README.md) separates new declarations from inherited ones. Primary comparison uses preserved originals, not new experimental measurements.
+
+Boundary: the controller compares the actual value reached by its formed route with the current product value. It does not receive a true-error label or read the `Faithful` predicate. Agreement with the intended template is a separate correspondence condition. A formed route can lead to the wrong source, and inspection can consume the remaining opportunity to edit or release.
+
+Integration: the [canonical record](../../../../theories/shengsheng-buxi-generative-existence/results/records/formed-copying-correction.json) gives the producer/consumer interface. `damaged` executes the old formation, displacement and copying operations at an explicitly declared entrance budget; its work, stock and expenditure are retained, without resetting them before repair. The previous 12-unit example is not silently granted additional support: this continuation states budgets 13, 14 and 15 at the entrance. New arbitrary-history accounts directly reuse `CopyingRegistration.step_accounts` for inherited operations.
+
+### Detection, replacement and continuation separate in the actual mechanism
+
+A checking route is an actual pair of product/source positions. `connect` requires valid positions, an available connector and support; it does **not** require the two position indices to be equal. Thus formation alone does not ensure a faithful reference. `reference` follows the stored route, and `inspect` reads both the reached source value and the current product position. Missing access leaves the configuration unchanged.
+
+When both values are available, inspection consumes one support unit. If they differ and a matching replacement component and another support unit are available, `exchange` moves that component into the product and returns the displaced component to the pool. The operation preserves all other product positions, its length and positional bonds. The material-permutation theorem preserves component values as well as their total count. The connector, material-count and free-plus-spent-support accounts hold for every finite history of the enlarged event grammar, including failures.
+
+For a currently mismatching inspected value, `inspection_matches_reference_iff` proves an exact condition: **after the route has formed, the inspected site comes to match its reached reference if and only if its replacement value is in stock and at least two support units remain before inspection**. One supports inspection and one the exchange. Matching the reached reference becomes correction relative to the retained template only when that reference is faithful. The theorem does not infer true correctness merely from agreement.
+
+`set_correct_reduces` proves that replacing a wrong component by the actual template value removes exactly one positional mismatch. `inspection_scan_does_not_increase_defects` extends non-increase to every finite list of inspections using faithful references. The reference relation is retained through those inspections. The mismatch count compares corresponding represented positions; it is not a measure of missing length, function, fitness or goodness. Uncovered sites and exhausted support can leave defects forever: non-increase is not eventual correction.
+
+### One old product, three distinct thresholds
+
+ABAB is retained, and the old displaced copying relation produces AAAB using the existing stock of three A and two B components. Eleven support units have already been spent on registration, displacement and copying, leaving one B in stock. No connector is spare. The repair plan removes the old second-position copying contact, reuses its connector for a route from template position 1 to product position 1, and inspects that position.
+
+| Support declared at the original entrance | Result after the repair plan | Release |
+|---:|---|---|
+| 13 | AAAB remains; B is still unused; support is exhausted | Fails |
+| 14 | B has replaced A, producing ABAB; support is exhausted | Fails |
+| 15 | ABAB is formed, and the displaced A remains in stock | Succeeds; total spent support is 15 |
+
+All three lines are kernel-checked. At budget 13 the uncorrected product could have been released before undertaking this plan; after connection and inspection neither editing nor release can occur. This does not establish that checking is generally harmful. It identifies an actual timing/support consequence that a fidelity-only account omits. At budget 14, correction itself succeeds yet reproduction remains incomplete. At 15, the released corrected daughter can enter the earlier copying process and form ABAB again with the explicitly supplied next-round material and five support units. That later phase uses its own accurate-copying premise; the repair apparatus is not automatically inherited with the sequence.
+
+### A formed checker can conceal or introduce error
+
+Connect the second product position to template position 0 instead of position 1. On the already erroneous AAAB, both the reached reference and the product value are A, so inspection performs no exchange. The actual intended value at template position 1 is B. This is a computed blind spot caused by the represented source relation, not a freely toggled report.
+
+Apply the same wrong route to a correctly formed ABAB with an available A component. The reached A now disagrees with the correct B. The comparison triggers a real exchange and produces AAAB. More available inspection activity can therefore worsen fidelity when its correspondence is wrong. The faithful-reference theorem and these adverse histories are consistent: the latter violate its reference premise.
+
+These witnesses also prevent an inference from the earlier restored-reading result to complete repair. Restoring the source of future attachments and editing a retained product are different operations. Conversely, the previous prefix-preservation theorem cannot be extended unchanged to this enlarged event grammar, because actual positional exchange has now been added. No old theorem is withdrawn or declared erroneous.
+
+### Strong comparison, primary support and counterreview
+
+[Hamming (1950)](https://doi.org/10.1002/j.1538-7305.1950.tb00463.x), introduction and §§2–3, already distinguishes detecting failure from correcting it and develops redundant checks that locate a specified class of errors. That account can correct without consulting an intact copy of the entire original message. Our retained-reference mechanism is not a more economical coding theory or a replacement for its fault-class analysis. Its construction and resource ledger address a different local question. The [preserved source packet](../../../../sources/evolutionary-selection/copying-correction/README.md) records the inspected pages.
+
+[Hopfield (1974)](https://doi.org/10.1073/pnas.71.10.4135), the kinetic-mechanism section, already connects enhanced discrimination to driven intermediate reactions and rejection pathways. Repeating a nominal checking stage is insufficient without the relevant kinetic and nonequilibrium conditions. This is a stronger physical explanation than assigning unit support costs to a reliable comparator and atomic exchange. Our model does not derive those kinetics, its quantitative accuracy limits or a physical energy conversion. The source is assessed as prior mechanism theory; no new biological-system case is developed.
+
+| Matched explanatory target | Comparative assessment |
+|---|---|
+| A fidelity number alone | Omits whether a route formed, whether replacement material is available and whether the corrected product can be released. The new history separates those outcomes. |
+| Conventional state-transition mechanism with the same routes, comparison, material exchange and costs | Can express the same outcomes. No new predictive advantage over this strong comparator is established. |
+| Coding theory with declared error classes and redundant constraints | Already explains a route to detection/correction not present here; those results must be retained rather than treating all correction as intact-template comparison. |
+| Kinetic discrimination with supported reaction paths | Already explains physical selectivity absent from the present unit-cost abstraction. The current proof is not a derivation or validation of that mechanism. |
+
+Author counterreview therefore credits one completed connection: **formed checking/editing relation → changed existing material → supported release → inherited corrected arrangement**. The equality comparison, atomic exchange, known inspection site and formation plan remain supplied. Planning a route to the appropriate source is not yet learning which source is appropriate, and a non-increasing error count is not an evolutionary advantage.
+
+The next precise connection is the **formation and continued warrant of the reference/editing relation itself**: how activity distinguishes a shared wrong source from a correct one, acquires or changes which relation guides editing, and retains enough support to act on that distinction. Existing calibration and reference-renewal results should be composed through their actual input/output conditions, not recounted as missing. A demonstrated advantage would require independent constraints on these relationships across changed situations while matching the stronger coding/kinetic or state-transition account. Repetition of “formed” terminology or more proof declarations cannot supply that evidence. The [scoped checks](COPYING-CORRECTION-CHECKS.json) preserve all six broad requirements and the preceding completed links.

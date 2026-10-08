@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "id": "naming-attention-coverage",
+  "title": {
+    "zh": "命名与所指注视的公开数据边界",
+    "en": "Public-data boundary of naming and target gaze"
+  },
+  "kind": "assessment",
+  "status": "reviewed-scoped",
+  "family": "F09",
+  "reviewed_at_utc": "2026-10-08T18:50:58.660938+00:00",
+  "claim": {
+    "zh": "36名婴儿的1,508次公开命名记录中，三秒窗口有467次记录到其他物体注视而无所指注视；35名婴儿出现此情况。它限制命名自动确保所指注视的测量对应。",
+    "en": "Among 1,508 public naming records from 36 infants, 467 nominal three-second windows contain other-object gaze with zero target gaze; 35 infants show such cases. This limits automatic naming-to-target-gaze measurement correspondence."
+  },
+  "hypotheses": [
+    {
+      "zh": "采用原作者公开分数与窗口，保留全部记录；注视是有限访问代理，不是全部光学可见性、候选表征或学习结果。",
+      "en": "Use the deposited fractions and windows with every record retained. Gaze is a limited access proxy, not full optical visibility, represented candidates or learning outcomes."
+    },
+    {
+      "zh": "已知论文结论后作探索性复算；七个窗口是相同经历的重复测量。参与者均值另列，不将各事件当独立样本推断。",
+      "en": "Exploratory reanalysis with the paper’s conclusion already known. Seven windows repeatedly measure the same events; participant means are separate, without independent-event inference."
+    },
+    {
+      "zh": "未将目标加其他注视归一化；无已编码物体注视、缩短窗口和小数舍入差异保留。",
+      "en": "No renormalization to target-plus-other gaze; zero coded-object gaze, shortened windows and decimal rounding differences remain."
+    }
+  ],
+  "correspondence": {
+    "zh": "所指由观察编码界定；不能将此标签当作学习者已知答案。命名、朝向及物体位置是同一互动中的关系，实际保留与纠正未由这些字段测量。",
+    "en": "The intended target is observer-coded and cannot be assumed as the learner’s known answer. Naming, orientation and object positions are relations within one interaction; these fields do not measure retention or correction."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/naming-attention/README.md",
+  "aliases": [],
+  "dependencies": [
+    {
+      "id": "encounter-selection-and-revision",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "检验其合作命名覆盖的经验对应，保留条件证明及覆盖失败反例；没有声称把注视数据形式转换为Lean候选集。",
+        "en": "Tests the empirical correspondence of cooperative naming coverage while preserving the conditional proof and failure cases; no formal conversion of gaze data into Lean candidate sets is claimed."
+      }
+    }
+  ],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/naming-attention/README.md",
+      "detail": {
+        "zh": "五秒窗口仍有393次其他注视而无所指注视；三秒另45次两者皆零，不能算为已观察到的错误所指。论文与导出数据的分箱／计数对应仍未解决。",
+        "en": "At five seconds, 393 windows still contain other gaze with zero target gaze. A separate 45 three-second windows have zero on both and cannot be counted as observed wrong reference. Publication/export binning and count correspondence remains unresolved."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "不识别错误学习、独占算法、社会协调的发育因果、意识或演化心理；不是论文全部分析的精确复现，也不更改既有条件定理。",
+    "en": "Does not identify mislearning, a unique algorithm, developmental causation of coordination, consciousness or evolutionary psychology. Not an exact replication of all published analyses and does not change existing conditional theorems."
+  },
+  "validation_scope": {
+    "zh": "8份原始文件匹配OSF哈希；七窗口的八类计数及参与者统计以独立Decimal算法复算通过。实质作者反审完成；无新实验、独立agent验收或新Lean定理。",
+    "en": "Eight original files match OSF hashes. An independent Decimal calculation verifies eight count categories and participant statistics across seven windows. Substantive author counterreview completed; no new experiment, independent-agent acceptance or new Lean theorem."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/naming-attention/README.md",
+      "role": "statement",
+      "sha256": "08c35d44094d94b13f717e594b0dc52d58cb4e7a1618e5bb540f3ee7bb2b6635",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+      "role": "review",
+      "sha256": "7d9dec741345e3fa7739b3408238150962a2cc50f74c135f631d60951419d940",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/naming-attention/verification.json",
+      "role": "receipt",
+      "sha256": "72db9ebe4821ae5cf7894fab6afdd1f781b85eccc28e234a5349ec3870aec6d6",
+      "declarations": []
+    },
+    {
+      "path": "sources/developmental-attention/yu-2021/README.md",
+      "role": "provenance",
+      "sha256": "a6f317aada352b3a9c797e5b6c3871d1656bb3b45bd69af5faebfb076ab49ce4",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/naming-attention/PLAN.md",
+      "role": "provenance",
+      "sha256": "a1be33bdd0293d96309e86325b3911f4cd58512e6f024670494f5349aa7c05c4",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [],
+  "next_delta": {
+    "zh": "既有条件连接保留；下一重点是在匹配发育程序中识别已取得访问及所保留来源／次序如何进入实际使用，分别观察当前依赖与旧内容认可。原典已约束自动迁移，但未识别唯一机制或演化史。",
+    "en": "Preserve the completed conditional connections. Next identify how formed access and retained source/order information guide actual use in a matched developmental procedure, distinguishing present reliance from old-content endorsement. Primary evidence constrains automatic transfer without identifying a unique mechanism or evolutionary history."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：由公开数据直接检验自动注视覆盖，保留未分配时间及发表／导出差异；把下一连接具体化为协调线索、经历接纳／加权与保留纠正。",
+      "en": "2026-10-08: directly tested automatic gaze coverage with public data, retaining unassigned time and publication/export differences. Specified the next connection through coordination cues, encounter admission/weighting and retained correction."
+    },
+    {
+      "zh": "2026-10-08：已读研究新增19–20节；后续保留测量加入经验约束，未改变本成果声明、证明或既有反例。下一对应具体化为经验可靠性改变后对新证据的使用。",
+      "en": "2026-10-08: reviewed added study sections 19–20. A later-retention measure adds an empirical constraint without changing this result’s claim, proof or existing failures. The next correspondence is evidence use after experienced reliability changes."
+    },
+    {
+      "zh": "2026-10-09：已读研究21–23节；取得的来源关系现以另一路径生成旧命名记录的绑定候选。原声明、证明、经验结果与反例不改写；历史适用范围的新反例具体化后续连接。",
+      "en": "2026-10-09: reviewed study sections 21–23. Acquired source relations now generate binding alternatives for old naming records through an additional route. Original claims, proofs, empirical results and failures remain; a historical-applicability counterexample sharpens the next connection."
+    },
+    {
+      "zh": "2026-10-09：核读同一研究新增历史适用范围组合与反审；本项既有主张、源码及实查不变，接续问题转向来源—时序保持和持续性假设的经验识别。",
+      "en": "2026-10-09: reviewed the same study’s historical-applicability composition and counterreview. This result’s prior claim, sources and scientific checks remain unchanged; the continuation now targets empirical identification of source–time retention and persistence assumptions."
+    },
+    {
+      "zh": "2026-10-09：核读同一研究新增第27–29节的五篇原典对应、反审与取得／保持／使用区分；只更新此来源版本及下一连接，原成果、证明和经验回执范围保留。",
+      "en": "2026-10-09: reviewed the same study’s added §§27–29, five primary-source correspondences, counterreview and formation/retention/use distinction. Updated this source version and next connection while preserving the prior result, proof and empirical-receipt scopes."
+    }
+  ]
+}

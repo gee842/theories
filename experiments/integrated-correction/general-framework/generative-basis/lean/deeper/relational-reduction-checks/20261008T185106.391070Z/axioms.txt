@@ -1,0 +1,148 @@
+'Generative.Process' does not depend on any axioms
+'Generative.Enabled' does not depend on any axioms
+'Generative.Trace' does not depend on any axioms
+'Generative.trace_nil_iff' does not depend on any axioms
+'Generative.trace_cons_iff' does not depend on any axioms
+'Generative.trace_singleton_iff' does not depend on any axioms
+'Generative.trace_append_iff' does not depend on any axioms
+'Generative.enabled_iff_singleton_trace' does not depend on any axioms
+'Generative.enabled_difference_implies_state_difference' does not depend on any axioms
+'Generative.Feasible' does not depend on any axioms
+'Generative.feasible_append_iff' does not depend on any axioms
+'Generative.feasible_prefix' does not depend on any axioms
+'Generative.productProcess' does not depend on any axioms
+'Generative.enabled_product_iff' does not depend on any axioms
+'Generative.trace_product_left' does not depend on any axioms
+'Generative.trace_product_right' does not depend on any axioms
+'Generative.trace_product_mk' does not depend on any axioms
+'Generative.trace_product_iff' does not depend on any axioms
+'Generative.feasible_product_iff' does not depend on any axioms
+'Generative.trace_map' does not depend on any axioms
+'Generative.trace_lift' does not depend on any axioms
+'Generative.projected_trace_iff' does not depend on any axioms
+'Generative.projection_exact_iff' does not depend on any axioms
+'Generative.local_exact_iff_trace_exact' does not depend on any axioms
+'Generative.enabled_projection_iff' does not depend on any axioms
+'Generative.feasible_projection_iff' does not depend on any axioms
+'Generative.feasible_difference_implies_projection_difference' does not depend on any axioms
+'Generative.trace_faithful_iff' does not depend on any axioms
+'SystemsOrganization.evolve' does not depend on any axioms
+'SystemsOrganization.deterministic' does not depend on any axioms
+'SystemsOrganization.deterministic_trace_iff' does not depend on any axioms
+'SystemsOrganization.Commuting' does not depend on any axioms
+'SystemsOrganization.evolve_semiconjugacy' does not depend on any axioms
+'SystemsOrganization.commuting_iff_all_words' does not depend on any axioms
+'SystemsOrganization.projected_trace_exact' does not depend on any axioms
+'SystemsOrganization.FibreConsistent' does not depend on any axioms
+'SystemsOrganization.reduced_law_exists_iff' does not depend on any axioms
+'SystemsOrganization.commuting_composes' does not depend on any axioms
+'SystemsOrganization.coupledNext' does not depend on any axioms
+'SystemsOrganization.coupled_components_preserve_history' does not depend on any axioms
+'SystemsOrganization.copyCell' does not depend on any axioms
+'SystemsOrganization.routed' does not depend on any axioms
+'SystemsOrganization.self_routing_fixed' does not depend on any axioms
+'SystemsOrganization.cross_routing_two_steps' does not depend on any axioms
+'SystemsOrganization.cross_routing_not_fixed' does not depend on any axioms
+'SystemsOrganization.same_cells_different_collective_recurrence' does not depend on any axioms
+'SystemsOrganization.crossed_left_not_fibre_consistent' does not depend on any axioms
+'SystemsOrganization.no_autonomous_left_law' does not depend on any axioms
+'SystemsOrganization.Device' does not depend on any axioms
+'SystemsOrganization.Event' does not depend on any axioms
+'SystemsOrganization.assembled' does not depend on any axioms
+'SystemsOrganization.exchanged' does not depend on any axioms
+'SystemsOrganization.organization' does not depend on any axioms
+'SystemsOrganization.parts' does not depend on any axioms
+'SystemsOrganization.linkInventory' does not depend on any axioms
+'SystemsOrganization.link_inventory_preserved' does not depend on any axioms
+'SystemsOrganization.fuel_does_not_increase' does not depend on any axioms
+'SystemsOrganization.raw' does not depend on any axioms
+'SystemsOrganization.formed' does not depend on any axioms
+'SystemsOrganization.exchangedOnce' does not depend on any axioms
+'SystemsOrganization.formation_step' does not depend on any axioms
+'SystemsOrganization.formation_preserves_cell_values' does not depend on any axioms
+'SystemsOrganization.formation_consumes_spare_and_fuel' does not depend on any axioms
+'SystemsOrganization.exchange_unavailable_before_formation' does not depend on any axioms
+'SystemsOrganization.exchange_available_after_formation' does not depend on any axioms
+'SystemsOrganization.formation_and_recurrence_same_history' does not depend on any axioms
+'SystemsOrganization.parts_only_cannot_preserve_futures' does not depend on any axioms
+'SystemsOrganization.no_fuel_blocks_formation' does not depend on any axioms
+'SystemsOrganization.no_spare_blocks_formation' does not depend on any axioms
+'Generative.OperativeCoherence.Vec' does not depend on any axioms
+'Generative.OperativeCoherence.Joint' does not depend on any axioms
+'Generative.OperativeCoherence.Matrix' does not depend on any axioms
+'Generative.OperativeCoherence.xGate' does not depend on any axioms
+'Generative.OperativeCoherence.zGate' does not depend on any axioms
+'Generative.OperativeCoherence.negVec' does not depend on any axioms
+'Generative.OperativeCoherence.norm' does not depend on any axioms
+'Generative.OperativeCoherence.inner' does not depend on any axioms
+'Generative.OperativeCoherence.prepare' does not depend on any axioms
+'Generative.OperativeCoherence.blankControl' does not depend on any axioms
+'Generative.OperativeCoherence.hControl' does not depend on any axioms
+'Generative.OperativeCoherence.preparation_from_blank' depends on axioms: [propext]
+'Generative.OperativeCoherence.switched' does not depend on any axioms
+'Generative.OperativeCoherence.controlDensity' does not depend on any axioms
+'Generative.OperativeCoherence.dephase' does not depend on any axioms
+'Generative.OperativeCoherence.diagonal' does not depend on any axioms
+'Generative.OperativeCoherence.mass' does not depend on any axioms
+'Generative.OperativeCoherence.plusMass' does not depend on any axioms
+'Generative.OperativeCoherence.minusMass' does not depend on any axioms
+'Generative.OperativeCoherence.response' does not depend on any axioms
+'Generative.OperativeCoherence.basisZero' does not depend on any axioms
+'Generative.OperativeCoherence.prepared' does not depend on any axioms
+'Generative.OperativeCoherence.coherent' does not depend on any axioms
+'Generative.OperativeCoherence.degraded' does not depend on any axioms
+'Generative.OperativeCoherence.xz_anticommute' depends on axioms: [propext]
+'Generative.OperativeCoherence.x_preserves_norm' depends on axioms: [propext]
+'Generative.OperativeCoherence.z_preserves_norm' depends on axioms: [propext]
+'Generative.OperativeCoherence.prepared_density' does not depend on any axioms
+'Generative.OperativeCoherence.switched_density' depends on axioms: [propext]
+'Generative.OperativeCoherence.dephase_preserves_diagonal' does not depend on any axioms
+'Generative.OperativeCoherence.dephase_preserves_mass' does not depend on any axioms
+'Generative.OperativeCoherence.response_mass_conserved' depends on axioms: [propext, Quot.sound]
+'Generative.OperativeCoherence.dephase_response' depends on axioms: [propext]
+'Generative.OperativeCoherence.prepared_matrix' does not depend on any axioms
+'Generative.OperativeCoherence.coherent_matrix' does not depend on any axioms
+'Generative.OperativeCoherence.degraded_matrix' does not depend on any axioms
+'Generative.OperativeCoherence.branch_weights_unchanged' does not depend on any axioms
+'Generative.OperativeCoherence.prepared_response' does not depend on any axioms
+'Generative.OperativeCoherence.coherent_response' does not depend on any axioms
+'Generative.OperativeCoherence.degraded_response' does not depend on any axioms
+'Generative.OperativeCoherence.no_diagonal_response_decoder' does not depend on any axioms
+'Generative.OperativeCoherence.dephase_merges_preparations' does not depend on any axioms
+'Generative.OperativeCoherence.no_uniform_dephase_inverse' does not depend on any axioms
+'Generative.OperativeCoherence.retained' does not depend on any axioms
+'Generative.OperativeCoherence.decodePlus' does not depend on any axioms
+'Generative.OperativeCoherence.retained_response_exact' depends on axioms: [propext, Quot.sound]
+'Generative.OperativeCoherence.dephase_keeps_response_iff' depends on axioms: [propext, Quot.sound]
+'Generative.OperativeCoherence.withBlank' does not depend on any axioms
+'Generative.OperativeCoherence.recordBranch' does not depend on any axioms
+'Generative.OperativeCoherence.recordBranch_involution' does not depend on any axioms
+'Generative.OperativeCoherence.recording_reduces_to_dephase' depends on axioms: [propext]
+'Generative.OperativeCoherence.joint_reversal_restores_control' does not depend on any axioms
+'Generative.OperativeCoherence.prepared_control_embedding' does not depend on any axioms
+'Generative.OperativeCoherence.coherent_control_embedding' does not depend on any axioms
+'Generative.RelationalReduction.exchangeCoordinates' does not depend on any axioms
+'Generative.RelationalReduction.registerDensity' does not depend on any axioms
+'Generative.RelationalReduction.localStates' does not depend on any axioms
+'Generative.RelationalReduction.phase' does not depend on any axioms
+'Generative.RelationalReduction.joined' does not depend on any axioms
+'Generative.RelationalReduction.changed' does not depend on any axioms
+'Generative.RelationalReduction.formation_from_blank' does not depend on any axioms
+'Generative.RelationalReduction.actual_phase_preserves_both_local_states' does not depend on any axioms
+'Generative.RelationalReduction.basisMasses' does not depend on any axioms
+'Generative.RelationalReduction.actual_phase_preserves_basis_masses' does not depend on any axioms
+'Generative.RelationalReduction.same_interaction_distinguishes_relation' does not depend on any axioms
+'Generative.RelationalReduction.no_local_pair_update' does not depend on any axioms
+'Generative.RelationalReduction.coupledCross' does not depend on any axioms
+'Generative.RelationalReduction.Summary' does not depend on any axioms
+'Generative.RelationalReduction.summarize' does not depend on any axioms
+'Generative.RelationalReduction.decodeControl' does not depend on any axioms
+'Generative.RelationalReduction.summary_recovers_control' depends on axioms: [propext]
+'Generative.RelationalReduction.Event' does not depend on any axioms
+'Generative.RelationalReduction.next' does not depend on any axioms
+'Generative.RelationalReduction.reducedNext' does not depend on any axioms
+'Generative.RelationalReduction.summary_update_exact' depends on axioms: [propext]
+'Generative.RelationalReduction.every_finite_word_exact' depends on axioms: [propext]
+'Generative.RelationalReduction.every_finite_control_response_exact' depends on axioms: [propext]
+'Generative.RelationalReduction.retained_cross_distinguishes_change' does not depend on any axioms
+'Generative.RelationalReduction.summary_omits_other_relations' does not depend on any axioms

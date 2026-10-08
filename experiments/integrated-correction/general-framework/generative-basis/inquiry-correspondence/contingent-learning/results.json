@@ -1,0 +1,203 @@
+{
+  "created_at_utc": "2026-10-08T14:34:31.867422+00:00",
+  "scope": "Exploratory participant-level summaries; conditional t/Welch intervals, no equivalence or causal-identification claim.",
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.18.1"
+  },
+  "units": "proportion change (multiply by 100 for percentage points)",
+  "audit": {
+    "export_participants": 77,
+    "primary_participants": 75,
+    "export_trials": 454,
+    "primary_trials": 451,
+    "primary_trials_by_condition": {
+      "curiosity": 145,
+      "random": 145,
+      "yoked": 161
+    },
+    "log_omissions": [
+      {
+        "condition": "curiosity",
+        "participant": 18,
+        "trials": 1
+      },
+      {
+        "condition": "yoked",
+        "participant": 53,
+        "trials": 2
+      }
+    ],
+    "omitted_reason": "Cleaned-log membership only; individual omission reasons not established.",
+    "yoking_partner_ids_available": false,
+    "wide_rows": 921,
+    "complete_prepost_pairs": 454,
+    "incomplete_prepost_pairs": 13,
+    "maximum_summary_reconstruction_difference": 6.106226635438361e-16
+  },
+  "primary": {
+    "groups": {
+      "curiosity": {
+        "n": 25,
+        "mean": 0.08490876120283994,
+        "sd": 0.17521158607323353,
+        "se": 0.03504231721464671,
+        "ci95": [
+          0.012584973107417657,
+          0.15723254929826222
+        ],
+        "one_sample_t": 2.4230350031575667,
+        "one_sample_df": 24,
+        "p_unadjusted": 0.023302161229037957,
+        "p_bonferroni_3": 0.06990648368711387
+      },
+      "yoked": {
+        "n": 25,
+        "mean": 0.09835762765100002,
+        "sd": 0.1402520311862589,
+        "se": 0.02805040623725178,
+        "ci95": [
+          0.04046443456485432,
+          0.15625082073714572
+        ],
+        "one_sample_t": 3.506460006999048,
+        "one_sample_df": 24,
+        "p_unadjusted": 0.0018131525380374585,
+        "p_bonferroni_3": 0.0054394576141123755
+      },
+      "random": {
+        "n": 25,
+        "mean": 0.07988251097702671,
+        "sd": 0.120629852770272,
+        "se": 0.0241259705540544,
+        "ci95": [
+          0.030088955052633773,
+          0.12967606690141964
+        ],
+        "one_sample_t": 3.311058960220871,
+        "one_sample_df": 24,
+        "p_unadjusted": 0.002931669857150094,
+        "p_bonferroni_3": 0.008795009571450282
+      }
+    },
+    "contrasts": {
+      "curiosity_minus_yoked": {
+        "difference": -0.013448866448160082,
+        "se": 0.044886404242785796,
+        "df": 45.80418270142996,
+        "ci95": [
+          -0.10381093665287172,
+          0.07691320375655156
+        ]
+      },
+      "curiosity_minus_random": {
+        "difference": 0.005026250225813225,
+        "se": 0.04254440563631163,
+        "df": 42.578126886562664,
+        "ci95": [
+          -0.08079731186585534,
+          0.09084981231748179
+        ]
+      }
+    },
+    "anova": {
+      "f": 0.10540939390987868,
+      "df_between": 2,
+      "df_within": 72,
+      "p": 0.9000946332806911
+    }
+  },
+  "all_export_sensitivity": {
+    "groups": {
+      "curiosity": {
+        "n": 26,
+        "mean": 0.09945197173249401,
+        "sd": 0.18700338281373968,
+        "se": 0.036674380695196934,
+        "ci95": [
+          0.023919670792384634,
+          0.17498427267260339
+        ],
+        "one_sample_t": 2.711755995528474,
+        "one_sample_df": 25,
+        "p_unadjusted": 0.011928893700936149,
+        "p_bonferroni_3": 0.03578668110280844
+      },
+      "yoked": {
+        "n": 26,
+        "mean": 0.11285390827239251,
+        "sd": 0.15603686394568644,
+        "se": 0.03060134669611068,
+        "ci95": [
+          0.04982925498558281,
+          0.17587856155920223
+        ],
+        "one_sample_t": 3.687873915912852,
+        "one_sample_df": 25,
+        "p_unadjusted": 0.0010992007363335903,
+        "p_bonferroni_3": 0.003297602209000771
+      },
+      "random": {
+        "n": 25,
+        "mean": 0.07988251097702671,
+        "sd": 0.120629852770272,
+        "se": 0.0241259705540544,
+        "ci95": [
+          0.030088955052633773,
+          0.12967606690141964
+        ],
+        "one_sample_t": 3.311058960220871,
+        "one_sample_df": 24,
+        "p_unadjusted": 0.002931669857150094,
+        "p_bonferroni_3": 0.008795009571450282
+      }
+    },
+    "contrasts": {
+      "curiosity_minus_yoked": {
+        "difference": -0.013401936539898504,
+        "se": 0.04776455400180973,
+        "df": 48.44630426379572,
+        "ci95": [
+          -0.10941615812177598,
+          0.08261228504197897
+        ]
+      },
+      "curiosity_minus_random": {
+        "difference": 0.019569460755467297,
+        "se": 0.043898435673168736,
+        "df": 42.942506811455296,
+        "ci95": [
+          -0.06896359982051288,
+          0.10810252133144747
+        ]
+      }
+    },
+    "anova": {
+      "f": 0.28245228793375937,
+      "df_between": 2,
+      "df_within": 74,
+      "p": 0.7547417472860852
+    }
+  },
+  "source_sha256": {
+    "sources/developmental-attention/bazhydai-2026/CuriGaze_log_Cleaned.csv": "70f4b6630137823fca9f455ea972c7f9fa078bfc1a3b03f44b29830d1f223005",
+    "sources/developmental-attention/bazhydai-2026/LearnedHits_Pt.Trial1-96.csv": "c745b780df0c7f5644e0492493010e325a65db463f26869aa29d67a1fb41e7cb",
+    "sources/developmental-attention/bazhydai-2026/LearnedHits_Pt1-96.csv": "120ec8b76b79f4cf92e59523d3e49581952a2eec17396d737a7b0ab1b718108b",
+    "sources/developmental-attention/bazhydai-2026/LearnedLabels_26_1_96_.csv": "a14d286cf217ed4b3363b79f7a1de5b1d0766ea65db3342e236a6e2c75802c44",
+    "sources/developmental-attention/bazhydai-2026/PROVENANCE.json": "45b0a8df3acf285c2a0590af66b9316d1e184b86564ac5516529486e037f8506",
+    "sources/developmental-attention/bazhydai-2026/README.md": "858156815d025539d1d4f4e62fdb164360fe9def467248d0296d7a5f66eec70a",
+    "sources/developmental-attention/bazhydai-2026/cleaned-log-provenance.json": "edbd454bfe5229b85cd5b3a1fcb6a0560a250181a54a4c3c5f7d7d3f2ae62d83",
+    "sources/developmental-attention/bazhydai-2026/curigaze_OSF_V3.R": "d45c865a70884cca95d1bc5f22bd1cd0055dc23c5be9e81e7603ab92cbde7078",
+    "sources/developmental-attention/bazhydai-2026/curigaze_readme.txt": "4ffd007ca6b82b5e7f9b83de17c886352afbb0e5cc31f65dca44b8d640f24bc0",
+    "sources/developmental-attention/bazhydai-2026/files-api-page-1.json": "3e343f6ee2e23f23684650a942ccfa5bef3cbbffc867a1c80a41b01f808877f9",
+    "sources/developmental-attention/bazhydai-2026/files-api-page-2.json": "b9fe7c5ffdfc5c2ae61434f201188f8fee7d4e7e64a772f5205415d87b0a3480",
+    "sources/developmental-attention/bazhydai-2026/hit_baselineCorr1-96.csv": "5153124563cf6b3b9112c7af7be2b5053e0d166bf219b0e30b14733e095d1752",
+    "sources/developmental-attention/bazhydai-2026/hit_baselineCorr_byPt1-96.csv": "ea370657c69fb3be126631200f346a7f53dce986475c9446465ebe4f4600634f",
+    "sources/developmental-attention/bazhydai-2026/hit_summary_wide1-96.csv": "82d6816711c0320653aa1efb561fe32686f9daabe4ae567f585cc033a8a02ab0",
+    "sources/developmental-attention/bazhydai-2026/node-api.json": "4b737b98deadfe6770d5790609367601cff2afa1dcf7f61de54b23029a72b700"
+  },
+  "analysis_sha256": "83392baca6543c68466ee91436620136b9df3215ecc091464fb83514151d65cf",
+  "plan_sha256": "360b3de3f84bfd3991266651a45fbf65525699a9f3f15c39edfada00e9f52d57"
+}

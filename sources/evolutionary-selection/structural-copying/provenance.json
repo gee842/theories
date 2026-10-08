@@ -1,0 +1,9 @@
+{
+  "retrieved_at_utc": "2026-10-08T18:35:45.881473+00:00",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10945747/fullTextXML",
+  "doi": "10.1073/pnas.2321592121",
+  "file": "papastavrou2024.xml",
+  "bytes": 107697,
+  "sha256": "7f48fd2eb33b683de4259a35e7679a2d0aff78fd13d9fb1605b1c0e091b5a921",
+  "format": "Original public full-text XML; bytes unmodified; no simulation or data reanalysis."
+}

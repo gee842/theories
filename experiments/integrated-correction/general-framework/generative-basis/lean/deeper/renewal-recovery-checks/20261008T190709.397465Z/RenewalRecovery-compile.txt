@@ -1,0 +1,65 @@
+RenewalRecovery.lean:37:16: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  if L.needF ≤ L.level t then ?m.41 else ?m.42
+in the target expression
+  L.level t + 1 ≤ L.level t + L.renew + L.contrib t - L.draw t
+
+case isTrue
+L : Law
+t : Nat
+fOn : L.needF ≤ L.level t
+surplus : L.draw t < L.contrib t
+h✝ : L.needG ≤ L.level t
+⊢ L.level t + 1 ≤ L.level t + L.renew + L.contrib t - L.draw t
+RenewalRecovery.lean:37:16: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  if L.needF ≤ L.level t then ?m.41 else ?m.42
+in the target expression
+  L.level t + 1 ≤ L.level t + L.contrib t - L.draw t
+
+case isFalse
+L : Law
+t : Nat
+fOn : L.needF ≤ L.level t
+surplus : L.draw t < L.contrib t
+h✝ : ¬L.needG ≤ L.level t
+⊢ L.level t + 1 ≤ L.level t + L.contrib t - L.draw t
+RenewalRecovery.lean:54:6: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  h ≥ 0
+  g ≥ 0
+  f ≥ 0
+  f - g ≤ -1
+  e ≥ 0
+  c ≥ 0
+  c - e ≥ 1
+  b ≥ 0
+  b - f ≤ 0
+  a ≥ 0
+  a - b ≥ 0
+  a + e - f ≤ 0
+  a + e - h ≥ 0
+where
+ a := ↑(L.level T)
+ b := ↑L.needF
+ c := ↑N
+ e := ↑d
+ f := ↑(L.level (T + d))
+ g := ↑(L.level (T + d + 1))
+ h := ↑(L.level (T + (d + 1)))
+RenewalRecovery.lean:106:40: error: failed to synthesize
+  Decidable ((pulse 2).unfolding.requires Part.focal ())
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+RenewalRecovery.lean:114:60: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  a ≥ 2
+where
+ a := ↑((pulse 2).level (2 + T))
+RenewalRecovery.lean:114:60: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  0 ≤ b ≤ 1
+  a ≥ 2
+where
+ a := ↑((pulse 2).level (2 + T))
+ b := ↑({ start := 2, renew := 1, needG := 2, needF := 1, draw := fun t => if t = 0 then 2 else 0,
+        contrib := fun t => if t = 0 then 0 else 1 }.level
+    (2 + T))

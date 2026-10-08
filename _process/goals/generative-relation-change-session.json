@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "generative-relation-change-session",
+  "title": {
+    "zh": "生成关系怎样变化：本会话目标",
+    "en": "How generative relations change: session objective"
+  },
+  "scope_type": "authorized-session",
+  "scope": {
+    "zh": "Ren 在本会话明确要求完成生成关系怎样变化；沿当前生成／变化首要方向，保留此前智慧与 G0/J 任务的独立范围。",
+    "en": "Ren explicitly requests completing how generative relations change in this session, within the current Theory of Becoming priority and while retaining the distinct wisdom and G0/J scopes."
+  },
+  "objective": {
+    "zh": "说明同一展开中的关系如何形成、维持、转化、退化和消失，以及这些发生怎样改变进一步活动的实际条件。",
+    "en": "Explain how relationships within one unfolding form, persist, transform, degenerate and dissolve, and how these occurrences change the actual conditions of further activity."
+  },
+  "premises": {
+    "zh": "从一元关系方法开始；不预设变化为善，保留实际损失与终止。复用已完成机制，分别公开形式假设、实际规律、对应与规范承诺。",
+    "en": "Begin with the monist relational method; do not assume change is good, and retain real losses and cessation. Reuse completed mechanisms and distinguish formal premises, operative laws, correspondence and normative commitments."
+  },
+  "completion": {
+    "zh": "须连接实际形成、继续作用及丧失的解释，并公开尚未说明的普遍推论；步骤界或有限例子本身不完成全范围。强的零附加实质公理假说不得缩成无伦理公理。",
+    "en": "Connect explanations of actual formation, continuing effects and loss while disclosing unestablished universal inferences. An event bound or finite example alone does not complete the full scope. Do not reduce the strong zero-substantive-axiom hypothesis to absence of ethical axioms."
+  },
+  "sources": [
+    "sources/15-codex-theory-conversations/2026-10-09-generative-relation-change-goal.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY-OF-BECOMING.md"
+  ],
+  "result_ids": [
+    "effective-capacity-and-eventual-reachability"
+  ]
+}

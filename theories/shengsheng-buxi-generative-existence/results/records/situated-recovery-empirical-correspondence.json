@@ -62,19 +62,19 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md",
       "role": "review",
-      "sha256": "b9f5becc224f0089139d2df9c06aef8efe582bd3d7c1496af7f34a29dda1e82d",
+      "sha256": "b49d49d99d92be46c4a38225170120350f1bd3fe3bd52ee05f31a476aa04338f",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
       "role": "integration",
-      "sha256": "3365f2a872b54bc72cf68e85370cec725a084cb853bc865b948793363ba6c847",
+      "sha256": "2a03855ec4bcc1d0e2170e0355ced99b07401ba8e4f7c448d9f7e0471357b0c0",
       "declarations": []
     },
     {
       "path": "sources/situated-recovery/heald-2021/README.md",
       "role": "provenance",
-      "sha256": "6e3a886681ed1a54c3c89db6bc973668907727712fd4849e77fb5055c40ada7c",
+      "sha256": "a70f0dd135fa1692a8552cf45e06bb7baba1268e198ae07952a7ea7b319c941c",
       "declarations": []
     },
     {
@@ -93,6 +93,10 @@
     {
       "zh": "2026-10-08：按Ren要求直接利用公开数据，接续已有六篇文献整合；新增实际数据对应与预测评估，保留小样本不确定和不利结果。",
       "en": "2026-10-08: followed Ren’s direction to use public data, extending the six-study synthesis with actual measurement correspondence and forecast evaluation while retaining small-sample uncertainty and adverse results."
+    },
+    {
+      "zh": "2026-10-09：已读并整合三个共享来源中新增的24人更新研究；16人恢复主张、原分析及原科学回执不变，新增主张另列，不重复计数。",
+      "en": "2026-10-09: read and reconciled the 24-person updating additions in three shared sources. The 16-person recovery claim, analysis and scientific receipt remain unchanged; the distinct updating claim is recorded separately."
     }
   ]
 }

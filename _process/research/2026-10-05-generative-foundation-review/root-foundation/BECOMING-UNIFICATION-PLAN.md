@@ -4,7 +4,11 @@
 
 ## 0. 结论
 
-**不重写，加一条“脊柱”。** 核心 `Generative.Process` 保持不动，在它上面加一组薄层：先给状态加上主张赋值，再加模态形式与 Becoming 谓词，最后让 Universal Metaethical Core 成为同一语言中的一组公开前提。伦理不再有自己的世界模型。旧模块与记录按原范围保留，只为约 12 个通用模式模块补转换定理。叙述层只新增一章正典入口，不改任何已被记录绑定的章节。整条脊柱约 6–9 个工作日；逐一重写 126 个伦理模块需要 20 个以上工作日，且大多只是重新编码有限例子，不值得做。
+**不在原处改写，加一条“脊柱”，并把通用模块移植上去。** 核心 `Generative.Process` 保持不动，在它上面加一组薄层：先给状态加上主张赋值，再加模态形式与 Becoming 谓词，最后让 Universal Metaethical Core 成为同一语言中的一组公开前提。伦理不再有自己的世界模型。
+
+伦理族共 132 个模块、约 30,600 行、2,225 条定理，平均每条约 14 行，多由 `decide`、`simp`、`rfl` 完成。其中 34 个是通用（类型多态）模块，约 8,600 行、597 条定理；98 个是具体有限例子，约 22,000 行、1,628 条定理。数学已经做完，移植比从头证明简单得多。成本主要在三处：一是在原处改写会使绑定这些源码的 27 条记录漂移，并要重跑会覆盖旧回执的检查器；二是并行会话每天都在往这一族里加模块；三是重新编码 98 个例子模块几乎不增加内容。
+
+因此：34 个通用模块以新文件形式移植到脊柱上（旧文件冻结为历史；同一主张的记录增加新的证明绑定，不新增成果）；98 个例子模块保留原样，只在实际需要时作为脊柱实例重写。叙述层只新增一章正典入口，不改任何已被记录绑定的章节。整条脊柱加通用模块移植约 6–9 个工作日。
 
 ## 1. 普查得到的事实
 
@@ -40,9 +44,11 @@ L0′ Run         无限运行 Run P（现在有 5 处各自用 Nat → State �
 L1  Frame       Frame = Process + realized : S → C → Prop + generative : C → Prop + 可观测量
 L2  Modal       CommonResponse（= Robust）、After、Sound/Sufficient、Reach、通用 trace_invariant、
                 Scope = 一个 sound 探究策略实际执行所到达的端点
-L3  Becoming    Novel（沿轨迹的新实现）、更新／消耗（Run 上可观测量的性质）、端点损失与返回、耗竭
+L3  Becoming    Novel（沿轨迹的新实现）、更新／消耗（Run 上可观测量的性质）、端点损失与返回、耗竭；
+                generative 指更新型形成，是整体展开中的一部分，与消耗、退化同在一个展开上
 L4  Universal Metaethical Core（同一语言中的公开前提，宇宙多态）
-                G0：生成内容被实现 → 正面相关
+                G0：生生（更新型形成）被实现 → 正面相关
+                C ：多实现生生内容的扩展接续严格更好（关系读法下推出：消耗型形成排在其不发生之下）
                 D ：在 Scope 上确保 + 位置有通达 → 支持理由；位置 = 被实现的通达主张 Access p r
                 L ：把结果间比较提升到回应间比较的规则（新显式前提）
                 J1–J4：由 realized 定义的序、基本条件优先、责任分配、正当选择
@@ -61,7 +67,7 @@ Leaves          ℝ/Mathlib、序理论、Rat 市场：作为叶子包，只在�
 
 1. **隐藏前提 L。** `Situation.realize` 是函数，默认每个选项只有一个结果；`Process.step` 是关系，允许多个结果。只要对回应作 J 序比较，就需要一条提升规则，例如“每个结果都优于每个结果”或“每个结果都优于某个结果”；而且传递性还需要中间回应可行。选择哪条规则是规范内容，应与 J4 并列公开。
 2. **所见范围可以由动力学定义。** 这收窄了正面根据结果中一个原本由应用自行给出的参数。
-3. **更新／消耗是同一个分类。** F01 与 F07 两条记录、`Depletion`、`ContinuationRenewal` 及 8 条储备或更新界，可以统一为 `Run` 上可观测量的性质。这是审查 §3.3 在核心层的答案，也是整合中唯一预期会产生新的实质定理的地方。
+3. **更新／消耗是同一个分类。** F01 与 F07 两条记录、`Depletion`、`ContinuationRenewal` 及 8 条储备或更新界，可以统一为 `Run` 上可观测量的性质。在脊柱上，这个分类就是 G0 对象的关系内容：对应 Ren 的 G0 时，`generative` 由 Run 上的更新性质给出，而不是由应用自行指定。这是审查 §3.3 在核心层的答案，也是整合中唯一预期会产生新的实质定理的地方。
 
 ## 4. 迁移不变量
 
@@ -79,8 +85,8 @@ Leaves          ℝ/Mathlib、序理论、Rat 市场：作为叶子包，只在�
 |---|---|---|---|
 | P0（今天） | 提交本线已有工作；保存本计划与原型 | 本线文件入库，HEAD 中链接完整 | — |
 | P1 脊柱核心 | `BecomingFrame`（Frame、Run、Reach、`trace_invariant`、Novel），`BecomingModal`（通用 CommonResponse、After、Scope、反单调性）；合并检查器；记录 `becoming-spine` | 空公理；继承哈希与回执相符 | 1–2 日 |
-| P2 伦理层 | `MetaethicalCore`：宇宙多态的 G0、按状态索引的 D（通达即主张）、显式 L、J1–J4；`sound_inquiry_gives_positioned_reason`；一页前提卡（G0、D、E、L、J1–J4） | 同上；前提卡与记录逐项一致 | 1–2 日 |
-| P3 适配 | 约 12 个通用模式模块的转换定理：`GenerativeComparison`、`PracticalJudgment`、`PracticalReach`、`StandardsBridge`、`PositiveGroundUncertainty`、`PositionedPositiveReason`、`JointContinuationClassification`、`WholeGroundCoverage`、`WholePracticalRestriction`、`GenerativeLossComparison`、`RenewingFormation`、`RelationalRenewal`；按具名声明升级 `related` 链接 | 每条升级都有具名声明 | 2–3 日 |
+| P2 伦理层 | `MetaethicalCore`：宇宙多态的 G0 与 C、按状态索引的 D（通达即主张）、显式 L、J1–J4；`sound_inquiry_gives_positioned_reason`；一页前提卡（G0、C、D、E、L、J1–J4） | 同上；前提卡与记录逐项一致 | 1–2 日 |
+| P3 移植 | 34 个通用伦理模块（约 8,600 行、597 条定理）以新文件移植到脊柱，首先是 `GenerativeComparison`、`PracticalJudgment`、`PracticalReach`、`StandardsBridge`、`PositiveGroundUncertainty`、`PositionedPositiveReason`、`JointContinuationClassification`、`WholeGroundCoverage`、`WholePracticalRestriction`、`GenerativeLossComparison`、`RenewingFormation`、`RelationalRenewal`、`RenewalComparison`；对应记录增加证明绑定；按具名声明升级 `related` 链接。凡函数式单一结果改为关系的地方，移植成为推广，须用提升规则 L 重新证明 | 旧定理在脊柱上逐条有对应；每条升级都有具名声明 | 2–4 日 |
 | P3b 更新／消耗统一 | `Depletion`、`RenewingFormation`、`RelationalRenewal`、`ContinuationRenewal` 统一为 Run 可观测量的一个分类定理 | 新的实质结果，独立反审 | 1 日 |
 | P4 叙述 | 新正典入口 `THE-THEORY-OF-BECOMING`（8 部分：Becoming、组织与演化、认识与探究、集体动力学、评价的形成、Universal Metaethical Core、AI 对齐、开放纲领），附术语表和前提卡；旧章作为证据链接；README 首段指向它；补齐阅读目录 | 不改任何被绑定章节；渲染与检查通过 | 1–2 日 |
 | P5（可选） | 只作索引的 Lake 工作区、层级模块名、Mathlib 叶子包（4.30） | 不参与回执 | 1 日 |
@@ -88,11 +94,8 @@ Leaves          ℝ/Mathlib、序理论、Rat 市场：作为叶子包，只在�
 ## 6. 需要 Ren 决定
 
 1. **路线。** 采用“加脊柱、只增不改”（推荐），还是全面重写。
-2. **术语与 G0 的作用域。** 两种选择：
-   - “Becoming”指整个展开，“生成／generative”只指其中更新进一步形成条件的模式，与消耗、退化并列。这样 G0 获得区分内容，回应审查 §3.3，但改变了 G0 的作用域。
-   - 保留 generative 作总称，区分只由动力学承担；这是并行会话 `RenewingFormation` 当前的做法，G0 逐事件同时承认两者。
+2. **术语与 G0 的作用域（已由 Ren 定下，2026-10-09）。** “Becoming”指整个展开；“generative is a part of its manifold”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-09-becoming-whole-generative-manifold.md)）。G0 的对象从一开始就是生生，生成与退化作为关系不重叠（[Ren 追问](../../../../sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md#ren-follow-up)，`renewing_not_consuming` 已证；不重叠不等于穷尽，一次发生可以同时参与两者）。所以这不是改变 G0 的作用域，而是脊柱中 `generative` 的读法：L1 的 `generative` 是参数，要对应 Ren 的 G0 时取 L3 的更新性质，不读成“任何已实现的新组织”。把形式读法认作生生，仍是对应，不是 Lean 结果。“消耗更坏”由 C 承担，C 列入前提卡。
 
-   这是理论内容的决定，不是工程决定。
 3. **提升规则 L 的默认。** 推荐以“每个结果都优于每个结果”作保守默认并公开；更强的规则作为可选承诺。
 4. **工作规则。** 是否在 AGENTS.md 加一条：“新的形式结果陈述在脊柱上；只有脊柱确实表达不了时才另建模型，此时应扩展脊柱。”
 5. **旧章节的标注。** 是否在新正典章中把 `GENERATIVE-GROUNDING`、`UNIFIED-ETHICAL-GROUNDING` 等标为“历史证据”。原文不动，只在新章中说明。

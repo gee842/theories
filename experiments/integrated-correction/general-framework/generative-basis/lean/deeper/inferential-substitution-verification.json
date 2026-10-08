@@ -1,0 +1,6 @@
+{
+  "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/inferential-substitution-checks/20261008T181823.552825Z/receipt.json",
+  "passed": true,
+  "total_empty_axiom_audits": 13,
+  "total_audits": 19
+}

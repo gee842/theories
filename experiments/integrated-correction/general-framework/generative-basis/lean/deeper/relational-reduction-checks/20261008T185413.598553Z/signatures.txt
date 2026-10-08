@@ -1,0 +1,386 @@
+Generative.Process.{u, v} (State : Type u) (Action : Type v) : Type (max u v)
+Generative.Enabled.{u, v} {State : Type u} {Action : Type v} (P : Generative.Process State Action) (s : State)
+  (a : Action) : Prop
+Generative.Trace.{u, v} {State : Type u} {Action : Type v} (P : Generative.Process State Action) :
+  State → List Action → State → Prop
+Generative.trace_nil_iff.{u, v} {State : Type u} {Action : Type v} {P : Generative.Process State Action} {s t : State} :
+  Generative.Trace P s [] t ↔ s = t
+Generative.trace_cons_iff.{u, v} {State : Type u} {Action : Type v} {P : Generative.Process State Action} {s t : State}
+  {a : Action} {as : List Action} : Generative.Trace P s (a :: as) t ↔ ∃ m, P.step s a m ∧ Generative.Trace P m as t
+Generative.trace_singleton_iff.{u, v} {State : Type u} {Action : Type v} {P : Generative.Process State Action}
+  {s t : State} {a : Action} : Generative.Trace P s [a] t ↔ P.step s a t
+Generative.trace_append_iff.{u, v} {State : Type u} {Action : Type v} {P : Generative.Process State Action}
+  {s t : State} {xs ys : List Action} :
+  Generative.Trace P s (xs ++ ys) t ↔ ∃ m, Generative.Trace P s xs m ∧ Generative.Trace P m ys t
+Generative.enabled_iff_singleton_trace.{u, v} {State : Type u} {Action : Type v} {P : Generative.Process State Action}
+  {s : State} {a : Action} : Generative.Enabled P s a ↔ ∃ t, Generative.Trace P s [a] t
+Generative.enabled_difference_implies_state_difference.{u, v} {State : Type u} {Action : Type v}
+  {P : Generative.Process State Action} {s t : State} {a : Action} (hs : Generative.Enabled P s a)
+  (ht : ¬Generative.Enabled P t a) : s ≠ t
+Generative.Feasible.{u, v} {State : Type u} {Action : Type v} (P : Generative.Process State Action) (s : State)
+  (as : List Action) : Prop
+Generative.feasible_append_iff.{u, v} {State : Type u} {Action : Type v} {P : Generative.Process State Action}
+  {s : State} {xs ys : List Action} :
+  Generative.Feasible P s (xs ++ ys) ↔ ∃ m, Generative.Trace P s xs m ∧ Generative.Feasible P m ys
+Generative.feasible_prefix.{u, v} {State : Type u} {Action : Type v} {P : Generative.Process State Action} {s : State}
+  {xs ys : List Action} (h : Generative.Feasible P s (xs ++ ys)) : Generative.Feasible P s xs
+Generative.productProcess.{u, v, w} {State : Type u} {Action : Type v} {Other : Type w}
+  (P : Generative.Process State Action) (Q : Generative.Process Other Action) :
+  Generative.Process (State × Other) Action
+Generative.enabled_product_iff.{u, v, w} {State : Type u} {Action : Type v} {Other : Type w}
+  {P : Generative.Process State Action} {Q : Generative.Process Other Action} {s : State} {q : Other} {a : Action} :
+  Generative.Enabled (Generative.productProcess P Q) (s, q) a ↔ Generative.Enabled P s a ∧ Generative.Enabled Q q a
+Generative.trace_product_left.{u, v, w} {State : Type u} {Action : Type v} {Other : Type w}
+  {P : Generative.Process State Action} {Q : Generative.Process Other Action} {s t : State × Other} {as : List Action}
+  (h : Generative.Trace (Generative.productProcess P Q) s as t) : Generative.Trace P s.fst as t.fst
+Generative.trace_product_right.{u, v, w} {State : Type u} {Action : Type v} {Other : Type w}
+  {P : Generative.Process State Action} {Q : Generative.Process Other Action} {s t : State × Other} {as : List Action}
+  (h : Generative.Trace (Generative.productProcess P Q) s as t) : Generative.Trace Q s.snd as t.snd
+Generative.trace_product_mk.{u, v, w} {State : Type u} {Action : Type v} {Other : Type w}
+  {P : Generative.Process State Action} {Q : Generative.Process Other Action} {s t : State} {q r : Other}
+  {as : List Action} (hp : Generative.Trace P s as t) (hq : Generative.Trace Q q as r) :
+  Generative.Trace (Generative.productProcess P Q) (s, q) as (t, r)
+Generative.trace_product_iff.{u, v, w} {State : Type u} {Action : Type v} {Other : Type w}
+  {P : Generative.Process State Action} {Q : Generative.Process Other Action} {s t : State} {q r : Other}
+  {as : List Action} :
+  Generative.Trace (Generative.productProcess P Q) (s, q) as (t, r) ↔
+    Generative.Trace P s as t ∧ Generative.Trace Q q as r
+Generative.feasible_product_iff.{u, v, w} {State : Type u} {Action : Type v} {Other : Type w}
+  {P : Generative.Process State Action} {Q : Generative.Process Other Action} {s : State} {q : Other}
+  {as : List Action} :
+  Generative.Feasible (Generative.productProcess P Q) (s, q) as ↔
+    Generative.Feasible P s as ∧ Generative.Feasible Q q as
+Generative.trace_map.{u, v, w} {State : Type u} {Action : Type v} {Other : Type w} {P : Generative.Process State Action}
+  {Q : Generative.Process Other Action} {f : State → Other}
+  (hstep : ∀ (s : State) (a : Action) (t : State), P.step s a t → Q.step (f s) a (f t)) {s t : State} {as : List Action}
+  (h : Generative.Trace P s as t) : Generative.Trace Q (f s) as (f t)
+Generative.trace_lift.{u, v, w} {State : Type u} {Action : Type v} {Other : Type w}
+  {P : Generative.Process State Action} {Q : Generative.Process Other Action} {q : State → Other}
+  (hlift : ∀ (s : State) (a : Action) (r : Other), Q.step (q s) a r → ∃ t, P.step s a t ∧ q t = r) {s : State}
+  {r : Other} {as : List Action} (h : Generative.Trace Q (q s) as r) : ∃ t, Generative.Trace P s as t ∧ q t = r
+Generative.projected_trace_iff.{u, v, w} {State : Type u} {Action : Type v} {Other : Type w}
+  {P : Generative.Process State Action} {Q : Generative.Process Other Action} {q : State → Other}
+  (hpreserve : ∀ (s : State) (a : Action) (t : State), P.step s a t → Q.step (q s) a (q t))
+  (hlift : ∀ (s : State) (a : Action) (r : Other), Q.step (q s) a r → ∃ t, P.step s a t ∧ q t = r) {s : State}
+  {r : Other} {as : List Action} : Generative.Trace Q (q s) as r ↔ ∃ t, Generative.Trace P s as t ∧ q t = r
+Generative.projection_exact_iff.{u, v, w} {State : Type u} {Action : Type v} {Other : Type w}
+  {P : Generative.Process State Action} {Q : Generative.Process Other Action} {q : State → Other} :
+  ((∀ (s : State) (a : Action) (t : State), P.step s a t → Q.step (q s) a (q t)) ∧
+      ∀ (s : State) (a : Action) (r : Other), Q.step (q s) a r → ∃ t, P.step s a t ∧ q t = r) ↔
+    ∀ (s : State) (as : List Action) (r : Other),
+      Generative.Trace Q (q s) as r ↔ ∃ t, Generative.Trace P s as t ∧ q t = r
+Generative.local_exact_iff_trace_exact.{u, v, w} {State : Type u} {Action : Type v} {Other : Type w}
+  {P : Generative.Process State Action} {Q : Generative.Process Other Action} {q : State → Other} :
+  (∀ (s : State) (a : Action) (r : Other), Q.step (q s) a r ↔ ∃ t, P.step s a t ∧ q t = r) ↔
+    ∀ (s : State) (as : List Action) (r : Other),
+      Generative.Trace Q (q s) as r ↔ ∃ t, Generative.Trace P s as t ∧ q t = r
+Generative.enabled_projection_iff.{u, v, w} {State : Type u} {Action : Type v} {Other : Type w}
+  {P : Generative.Process State Action} {Q : Generative.Process Other Action} {q : State → Other}
+  (hpreserve : ∀ (s : State) (a : Action) (t : State), P.step s a t → Q.step (q s) a (q t))
+  (hlift : ∀ (s : State) (a : Action) (r : Other), Q.step (q s) a r → ∃ t, P.step s a t ∧ q t = r) {s : State}
+  {a : Action} : Generative.Enabled P s a ↔ Generative.Enabled Q (q s) a
+Generative.feasible_projection_iff.{u, v, w} {State : Type u} {Action : Type v} {Other : Type w}
+  {P : Generative.Process State Action} {Q : Generative.Process Other Action} {q : State → Other}
+  (hpreserve : ∀ (s : State) (a : Action) (t : State), P.step s a t → Q.step (q s) a (q t))
+  (hlift : ∀ (s : State) (a : Action) (r : Other), Q.step (q s) a r → ∃ t, P.step s a t ∧ q t = r) {s : State}
+  {as : List Action} : Generative.Feasible P s as ↔ Generative.Feasible Q (q s) as
+Generative.feasible_difference_implies_projection_difference.{u, v, w} {State : Type u} {Action : Type v}
+  {Other : Type w} {P : Generative.Process State Action} {Q : Generative.Process Other Action} {q : State → Other}
+  (hexact : ∀ (s : State) (as : List Action), Generative.Feasible P s as ↔ Generative.Feasible Q (q s) as) {s t : State}
+  {as : List Action} (hs : Generative.Feasible P s as) (ht : ¬Generative.Feasible P t as) : q s ≠ q t
+Generative.trace_faithful_iff.{u, v, w} {State : Type u} {Action : Type v} {Other : Type w}
+  {P : Generative.Process State Action} {Q : Generative.Process Other Action} {q : State → Other}
+  (hpreserve : ∀ (s : State) (a : Action) (t : State), P.step s a t → Q.step (q s) a (q t))
+  (hlift : ∀ (s : State) (a : Action) (r : Other), Q.step (q s) a r → ∃ t, P.step s a t ∧ q t = r)
+  (hinjective : ∀ (s t : State), q s = q t → s = t) {s t : State} {as : List Action} :
+  Generative.Trace P s as t ↔ Generative.Trace Q (q s) as (q t)
+SystemsOrganization.evolve.{u, z} {S : Type u} {A : Type z} (next : S → A → S) : S → List A → S
+SystemsOrganization.deterministic.{u, z} {S : Type u} {A : Type z} (next : S → A → S) : Generative.Process S A
+SystemsOrganization.deterministic_trace_iff.{u, z} {S : Type u} {A : Type z} (next : S → A → S) (s t : S)
+  (word : List A) :
+  Generative.Trace (SystemsOrganization.deterministic next) s word t ↔ t = SystemsOrganization.evolve next s word
+SystemsOrganization.Commuting.{u, v, z} {S : Type u} {Q : Type v} {A : Type z} (next : S → A → S) (reduced : Q → A → Q)
+  (p : S → Q) : Prop
+SystemsOrganization.evolve_semiconjugacy.{u, v, z} {S : Type u} {Q : Type v} {A : Type z} {next : S → A → S}
+  {reduced : Q → A → Q} {p : S → Q} (h : SystemsOrganization.Commuting next reduced p) (s : S) (word : List A) :
+  p (SystemsOrganization.evolve next s word) = SystemsOrganization.evolve reduced (p s) word
+SystemsOrganization.commuting_iff_all_words.{u, v, z} {S : Type u} {Q : Type v} {A : Type z} {next : S → A → S}
+  {reduced : Q → A → Q} {p : S → Q} :
+  SystemsOrganization.Commuting next reduced p ↔
+    ∀ (s : S) (word : List A),
+      p (SystemsOrganization.evolve next s word) = SystemsOrganization.evolve reduced (p s) word
+SystemsOrganization.projected_trace_exact.{u, v, z} {S : Type u} {Q : Type v} {A : Type z} {next : S → A → S}
+  {reduced : Q → A → Q} {p : S → Q} (h : SystemsOrganization.Commuting next reduced p) (s : S) (r : Q) (word : List A) :
+  Generative.Trace (SystemsOrganization.deterministic reduced) (p s) word r ↔
+    ∃ t, Generative.Trace (SystemsOrganization.deterministic next) s word t ∧ p t = r
+SystemsOrganization.FibreConsistent.{u, v, z} {S : Type u} {Q : Type v} {A : Type z} (next : S → A → S) (p : S → Q) :
+  Prop
+SystemsOrganization.reduced_law_exists_iff.{u, v, z} {S : Type u} {Q : Type v} {A : Type z} (next : S → A → S)
+  (p : S → Q) (sectionMap : Q → S) (hsection : ∀ (q : Q), p (sectionMap q) = q) :
+  (∃ reduced, SystemsOrganization.Commuting next reduced p) ↔ SystemsOrganization.FibreConsistent next p
+SystemsOrganization.commuting_composes.{u, v, w, z} {S : Type u} {Q : Type v} {R : Type w} {A : Type z}
+  {next : S → A → S} {middle : Q → A → Q} {last : R → A → R} {p : S → Q} {q : Q → R}
+  (hp : SystemsOrganization.Commuting next middle p) (hq : SystemsOrganization.Commuting middle last q) :
+  SystemsOrganization.Commuting next last fun s => q (p s)
+SystemsOrganization.coupledNext.{v, w, z} {Q : Type v} {R : Type w} {A : Type z} (left : Q → R → A → Q)
+  (right : Q → R → A → R) (state : Q × R) (a : A) : Q × R
+SystemsOrganization.coupled_components_preserve_history.{u, v, w, z} {S : Type u} {Q : Type v} {R : Type w} {A : Type z}
+  {next : S → A → S} (p : S → Q) (q : S → R) (left : Q → R → A → Q) (right : Q → R → A → R)
+  (hp : ∀ (s : S) (a : A), p (next s a) = left (p s) (q s) a)
+  (hq : ∀ (s : S) (a : A), q (next s a) = right (p s) (q s) a) (s : S) (word : List A) :
+  (p (SystemsOrganization.evolve next s word), q (SystemsOrganization.evolve next s word)) =
+    SystemsOrganization.evolve (SystemsOrganization.coupledNext left right) (p s, q s) word
+SystemsOrganization.copyCell (input : Bool) : Bool
+SystemsOrganization.routed (crossed : Bool) (state : Bool × Bool) : Unit → Bool × Bool
+SystemsOrganization.self_routing_fixed (s : Bool × Bool) : SystemsOrganization.routed false s () = s
+SystemsOrganization.cross_routing_two_steps (s : Bool × Bool) :
+  SystemsOrganization.evolve (SystemsOrganization.routed true) s [(), ()] = s
+SystemsOrganization.cross_routing_not_fixed : SystemsOrganization.routed true (true, false) () ≠ (true, false)
+SystemsOrganization.same_cells_different_collective_recurrence :
+  SystemsOrganization.routed false (true, false) () = (true, false) ∧
+    SystemsOrganization.routed true (true, false) () ≠ (true, false) ∧
+      SystemsOrganization.evolve (SystemsOrganization.routed true) (true, false) [(), ()] = (true, false)
+SystemsOrganization.crossed_left_not_fibre_consistent :
+  ¬SystemsOrganization.FibreConsistent (SystemsOrganization.routed true) fun s => s.fst
+SystemsOrganization.no_autonomous_left_law :
+  ¬∃ reduced, SystemsOrganization.Commuting (SystemsOrganization.routed true) reduced fun s => s.fst
+SystemsOrganization.Device : Type
+SystemsOrganization.Event : Type
+SystemsOrganization.assembled (s : SystemsOrganization.Device) : SystemsOrganization.Device
+SystemsOrganization.exchanged (s : SystemsOrganization.Device) : SystemsOrganization.Device
+SystemsOrganization.organization : Generative.Process SystemsOrganization.Device SystemsOrganization.Event
+SystemsOrganization.parts (s : SystemsOrganization.Device) : Bool × Bool
+SystemsOrganization.linkInventory (s : SystemsOrganization.Device) : Nat
+SystemsOrganization.link_inventory_preserved {s t : SystemsOrganization.Device} {a : SystemsOrganization.Event}
+  (h : SystemsOrganization.organization.step s a t) :
+  SystemsOrganization.linkInventory t = SystemsOrganization.linkInventory s
+SystemsOrganization.fuel_does_not_increase {s t : SystemsOrganization.Device} {a : SystemsOrganization.Event}
+  (h : SystemsOrganization.organization.step s a t) : t.fuel ≤ s.fuel
+SystemsOrganization.raw : SystemsOrganization.Device
+SystemsOrganization.formed : SystemsOrganization.Device
+SystemsOrganization.exchangedOnce : SystemsOrganization.Device
+SystemsOrganization.formation_step :
+  SystemsOrganization.organization.step SystemsOrganization.raw SystemsOrganization.Event.assemble
+    SystemsOrganization.formed
+SystemsOrganization.formation_preserves_cell_values :
+  SystemsOrganization.parts SystemsOrganization.raw = SystemsOrganization.parts SystemsOrganization.formed
+SystemsOrganization.formation_consumes_spare_and_fuel :
+  SystemsOrganization.raw.spare = true ∧
+    SystemsOrganization.formed.spare = false ∧ SystemsOrganization.raw.fuel = 1 ∧ SystemsOrganization.formed.fuel = 0
+SystemsOrganization.exchange_unavailable_before_formation :
+  ¬Generative.Enabled SystemsOrganization.organization SystemsOrganization.raw SystemsOrganization.Event.exchange
+SystemsOrganization.exchange_available_after_formation :
+  Generative.Enabled SystemsOrganization.organization SystemsOrganization.formed SystemsOrganization.Event.exchange
+SystemsOrganization.formation_and_recurrence_same_history :
+  Generative.Trace SystemsOrganization.organization SystemsOrganization.raw
+    [SystemsOrganization.Event.assemble, SystemsOrganization.Event.exchange, SystemsOrganization.Event.exchange]
+    SystemsOrganization.formed
+SystemsOrganization.parts_only_cannot_preserve_futures :
+  ¬∃ summary,
+      ∀ (s : SystemsOrganization.Device) (word : List SystemsOrganization.Event),
+        Generative.Feasible SystemsOrganization.organization s word ↔
+          Generative.Feasible summary (SystemsOrganization.parts s) word
+SystemsOrganization.no_fuel_blocks_formation (s : SystemsOrganization.Device) (h : s.fuel = 0) :
+  ¬Generative.Enabled SystemsOrganization.organization s SystemsOrganization.Event.assemble
+SystemsOrganization.no_spare_blocks_formation (s : SystemsOrganization.Device) (h : s.spare = false) :
+  ¬Generative.Enabled SystemsOrganization.organization s SystemsOrganization.Event.assemble
+Generative.OperativeCoherence.Vec : Type
+Generative.OperativeCoherence.Joint : Type
+Generative.OperativeCoherence.Matrix : Type
+Generative.OperativeCoherence.xGate (v : Generative.OperativeCoherence.Vec) : Generative.OperativeCoherence.Vec
+Generative.OperativeCoherence.zGate (v : Generative.OperativeCoherence.Vec) : Generative.OperativeCoherence.Vec
+Generative.OperativeCoherence.negVec (v : Generative.OperativeCoherence.Vec) : Generative.OperativeCoherence.Vec
+Generative.OperativeCoherence.norm (v : Generative.OperativeCoherence.Vec) : Int
+Generative.OperativeCoherence.inner (u v : Generative.OperativeCoherence.Vec) : Int
+Generative.OperativeCoherence.prepare (v : Generative.OperativeCoherence.Vec) : Generative.OperativeCoherence.Joint
+Generative.OperativeCoherence.blankControl (v : Generative.OperativeCoherence.Vec) : Generative.OperativeCoherence.Joint
+Generative.OperativeCoherence.hControl (v : Generative.OperativeCoherence.Joint) : Generative.OperativeCoherence.Joint
+Generative.OperativeCoherence.preparation_from_blank (v : Generative.OperativeCoherence.Vec) :
+  Generative.OperativeCoherence.hControl (Generative.OperativeCoherence.blankControl v) =
+    Generative.OperativeCoherence.prepare v
+Generative.OperativeCoherence.switched (A B : Generative.OperativeCoherence.Vec → Generative.OperativeCoherence.Vec)
+  (v : Generative.OperativeCoherence.Joint) : Generative.OperativeCoherence.Joint
+Generative.OperativeCoherence.controlDensity (v : Generative.OperativeCoherence.Joint) :
+  Generative.OperativeCoherence.Matrix
+Generative.OperativeCoherence.dephase (m : Generative.OperativeCoherence.Matrix) : Generative.OperativeCoherence.Matrix
+Generative.OperativeCoherence.diagonal (m : Generative.OperativeCoherence.Matrix) : Int × Int
+Generative.OperativeCoherence.mass (m : Generative.OperativeCoherence.Matrix) : Int
+Generative.OperativeCoherence.plusMass (m : Generative.OperativeCoherence.Matrix) : Int
+Generative.OperativeCoherence.minusMass (m : Generative.OperativeCoherence.Matrix) : Int
+Generative.OperativeCoherence.response (m : Generative.OperativeCoherence.Matrix) : Int × Int × Int
+Generative.OperativeCoherence.basisZero : Generative.OperativeCoherence.Vec
+Generative.OperativeCoherence.prepared : Generative.OperativeCoherence.Matrix
+Generative.OperativeCoherence.coherent : Generative.OperativeCoherence.Matrix
+Generative.OperativeCoherence.degraded : Generative.OperativeCoherence.Matrix
+Generative.OperativeCoherence.xz_anticommute (v : Generative.OperativeCoherence.Vec) :
+  Generative.OperativeCoherence.zGate (Generative.OperativeCoherence.xGate v) =
+    Generative.OperativeCoherence.negVec (Generative.OperativeCoherence.xGate (Generative.OperativeCoherence.zGate v))
+Generative.OperativeCoherence.x_preserves_norm (v : Generative.OperativeCoherence.Vec) :
+  Generative.OperativeCoherence.norm (Generative.OperativeCoherence.xGate v) = Generative.OperativeCoherence.norm v
+Generative.OperativeCoherence.z_preserves_norm (v : Generative.OperativeCoherence.Vec) :
+  Generative.OperativeCoherence.norm (Generative.OperativeCoherence.zGate v) = Generative.OperativeCoherence.norm v
+Generative.OperativeCoherence.prepared_density (v : Generative.OperativeCoherence.Vec) :
+  Generative.OperativeCoherence.controlDensity (Generative.OperativeCoherence.prepare v) =
+    { zz := Generative.OperativeCoherence.norm v, zo := Generative.OperativeCoherence.norm v,
+      oz := Generative.OperativeCoherence.norm v, oo := Generative.OperativeCoherence.norm v }
+Generative.OperativeCoherence.switched_density (v : Generative.OperativeCoherence.Vec) :
+  Generative.OperativeCoherence.controlDensity
+      (Generative.OperativeCoherence.switched Generative.OperativeCoherence.xGate Generative.OperativeCoherence.zGate
+        (Generative.OperativeCoherence.prepare v)) =
+    { zz := Generative.OperativeCoherence.norm v, zo := -Generative.OperativeCoherence.norm v,
+      oz := -Generative.OperativeCoherence.norm v, oo := Generative.OperativeCoherence.norm v }
+Generative.OperativeCoherence.dephase_preserves_diagonal (m : Generative.OperativeCoherence.Matrix) :
+  Generative.OperativeCoherence.diagonal (Generative.OperativeCoherence.dephase m) =
+    Generative.OperativeCoherence.diagonal m
+Generative.OperativeCoherence.dephase_preserves_mass (m : Generative.OperativeCoherence.Matrix) :
+  Generative.OperativeCoherence.mass (Generative.OperativeCoherence.dephase m) = Generative.OperativeCoherence.mass m
+Generative.OperativeCoherence.response_mass_conserved (m : Generative.OperativeCoherence.Matrix) :
+  Generative.OperativeCoherence.plusMass m + Generative.OperativeCoherence.minusMass m =
+    2 * Generative.OperativeCoherence.mass m
+Generative.OperativeCoherence.dephase_response (m : Generative.OperativeCoherence.Matrix) :
+  Generative.OperativeCoherence.response (Generative.OperativeCoherence.dephase m) =
+    (Generative.OperativeCoherence.mass m, Generative.OperativeCoherence.mass m,
+      2 * Generative.OperativeCoherence.mass m)
+Generative.OperativeCoherence.prepared_matrix :
+  Generative.OperativeCoherence.prepared = { zz := 1, zo := 1, oz := 1, oo := 1 }
+Generative.OperativeCoherence.coherent_matrix :
+  Generative.OperativeCoherence.coherent = { zz := 1, zo := -1, oz := -1, oo := 1 }
+Generative.OperativeCoherence.degraded_matrix :
+  Generative.OperativeCoherence.degraded = { zz := 1, zo := 0, oz := 0, oo := 1 }
+Generative.OperativeCoherence.branch_weights_unchanged :
+  Generative.OperativeCoherence.diagonal Generative.OperativeCoherence.prepared = (1, 1) ∧
+    Generative.OperativeCoherence.diagonal Generative.OperativeCoherence.coherent = (1, 1) ∧
+      Generative.OperativeCoherence.diagonal Generative.OperativeCoherence.degraded = (1, 1)
+Generative.OperativeCoherence.prepared_response :
+  Generative.OperativeCoherence.response Generative.OperativeCoherence.prepared = (4, 0, 4)
+Generative.OperativeCoherence.coherent_response :
+  Generative.OperativeCoherence.response Generative.OperativeCoherence.coherent = (0, 4, 4)
+Generative.OperativeCoherence.degraded_response :
+  Generative.OperativeCoherence.response Generative.OperativeCoherence.degraded = (2, 2, 4)
+Generative.OperativeCoherence.no_diagonal_response_decoder :
+  ¬∃ decode,
+      decode (Generative.OperativeCoherence.diagonal Generative.OperativeCoherence.coherent) =
+          Generative.OperativeCoherence.plusMass Generative.OperativeCoherence.coherent ∧
+        decode (Generative.OperativeCoherence.diagonal Generative.OperativeCoherence.degraded) =
+          Generative.OperativeCoherence.plusMass Generative.OperativeCoherence.degraded
+Generative.OperativeCoherence.dephase_merges_preparations :
+  Generative.OperativeCoherence.dephase Generative.OperativeCoherence.prepared =
+    Generative.OperativeCoherence.dephase Generative.OperativeCoherence.coherent
+Generative.OperativeCoherence.no_uniform_dephase_inverse :
+  ¬∃ restore,
+      restore (Generative.OperativeCoherence.dephase Generative.OperativeCoherence.prepared) =
+          Generative.OperativeCoherence.prepared ∧
+        restore (Generative.OperativeCoherence.dephase Generative.OperativeCoherence.coherent) =
+          Generative.OperativeCoherence.coherent
+Generative.OperativeCoherence.retained (m : Generative.OperativeCoherence.Matrix) : (Int × Int) × Int
+Generative.OperativeCoherence.decodePlus (r : (Int × Int) × Int) : Int
+Generative.OperativeCoherence.retained_response_exact (m : Generative.OperativeCoherence.Matrix) :
+  Generative.OperativeCoherence.decodePlus (Generative.OperativeCoherence.retained m) =
+    Generative.OperativeCoherence.plusMass m
+Generative.OperativeCoherence.dephase_keeps_response_iff (m : Generative.OperativeCoherence.Matrix) :
+  Generative.OperativeCoherence.plusMass (Generative.OperativeCoherence.dephase m) =
+      Generative.OperativeCoherence.plusMass m ↔
+    m.zo + m.oz = 0
+Generative.OperativeCoherence.withBlank (v : Generative.OperativeCoherence.Vec) : Generative.OperativeCoherence.Joint
+Generative.OperativeCoherence.recordBranch (v : Generative.OperativeCoherence.Joint) :
+  Generative.OperativeCoherence.Joint
+Generative.OperativeCoherence.recordBranch_involution (v : Generative.OperativeCoherence.Joint) :
+  Generative.OperativeCoherence.recordBranch (Generative.OperativeCoherence.recordBranch v) = v
+Generative.OperativeCoherence.recording_reduces_to_dephase (v : Generative.OperativeCoherence.Vec) :
+  Generative.OperativeCoherence.controlDensity
+      (Generative.OperativeCoherence.recordBranch (Generative.OperativeCoherence.withBlank v)) =
+    Generative.OperativeCoherence.dephase
+      (Generative.OperativeCoherence.controlDensity (Generative.OperativeCoherence.withBlank v))
+Generative.OperativeCoherence.joint_reversal_restores_control (v : Generative.OperativeCoherence.Vec) :
+  Generative.OperativeCoherence.controlDensity
+      (Generative.OperativeCoherence.recordBranch
+        (Generative.OperativeCoherence.recordBranch (Generative.OperativeCoherence.withBlank v))) =
+    Generative.OperativeCoherence.controlDensity (Generative.OperativeCoherence.withBlank v)
+Generative.OperativeCoherence.prepared_control_embedding :
+  Generative.OperativeCoherence.controlDensity (Generative.OperativeCoherence.withBlank { zero := 1, one := 1 }) =
+    Generative.OperativeCoherence.prepared
+Generative.OperativeCoherence.coherent_control_embedding :
+  Generative.OperativeCoherence.controlDensity (Generative.OperativeCoherence.withBlank { zero := -1, one := 1 }) =
+    Generative.OperativeCoherence.coherent
+Generative.RelationalReduction.exchangeCoordinates (v : Generative.OperativeCoherence.Joint) :
+  Generative.OperativeCoherence.Joint
+Generative.RelationalReduction.registerDensity (v : Generative.OperativeCoherence.Joint) :
+  Generative.OperativeCoherence.Matrix
+Generative.RelationalReduction.localStates (v : Generative.OperativeCoherence.Joint) :
+  Generative.OperativeCoherence.Matrix × Generative.OperativeCoherence.Matrix
+Generative.RelationalReduction.phase (v : Generative.OperativeCoherence.Joint) : Generative.OperativeCoherence.Joint
+Generative.RelationalReduction.joined : Generative.OperativeCoherence.Joint
+Generative.RelationalReduction.changed : Generative.OperativeCoherence.Joint
+Generative.RelationalReduction.formation_from_blank :
+  Generative.OperativeCoherence.recordBranch
+      (Generative.OperativeCoherence.hControl
+        (Generative.OperativeCoherence.blankControl Generative.OperativeCoherence.basisZero)) =
+    Generative.RelationalReduction.joined
+Generative.RelationalReduction.actual_phase_preserves_both_local_states :
+  Generative.RelationalReduction.localStates Generative.RelationalReduction.joined =
+      ({ zz := 1, zo := 0, oz := 0, oo := 1 }, { zz := 1, zo := 0, oz := 0, oo := 1 }) ∧
+    Generative.RelationalReduction.localStates Generative.RelationalReduction.changed =
+      Generative.RelationalReduction.localStates Generative.RelationalReduction.joined
+Generative.RelationalReduction.basisMasses (v : Generative.OperativeCoherence.Joint) : Int × Int × Int × Int
+Generative.RelationalReduction.actual_phase_preserves_basis_masses :
+  Generative.RelationalReduction.basisMasses Generative.RelationalReduction.joined = (1, 0, 0, 1) ∧
+    Generative.RelationalReduction.basisMasses Generative.RelationalReduction.changed =
+      Generative.RelationalReduction.basisMasses Generative.RelationalReduction.joined
+Generative.RelationalReduction.same_interaction_distinguishes_relation :
+  Generative.OperativeCoherence.response
+        (Generative.OperativeCoherence.controlDensity
+          (Generative.OperativeCoherence.recordBranch Generative.RelationalReduction.joined)) =
+      (4, 0, 4) ∧
+    Generative.OperativeCoherence.response
+        (Generative.OperativeCoherence.controlDensity
+          (Generative.OperativeCoherence.recordBranch Generative.RelationalReduction.changed)) =
+      (0, 4, 4)
+Generative.RelationalReduction.no_local_pair_update :
+  ¬∃ update,
+      update (Generative.RelationalReduction.localStates Generative.RelationalReduction.joined) =
+          Generative.OperativeCoherence.controlDensity
+            (Generative.OperativeCoherence.recordBranch Generative.RelationalReduction.joined) ∧
+        update (Generative.RelationalReduction.localStates Generative.RelationalReduction.changed) =
+          Generative.OperativeCoherence.controlDensity
+            (Generative.OperativeCoherence.recordBranch Generative.RelationalReduction.changed)
+Generative.RelationalReduction.coupledCross (v : Generative.OperativeCoherence.Joint) : Int
+Generative.RelationalReduction.Summary : Type
+Generative.RelationalReduction.summarize (v : Generative.OperativeCoherence.Joint) :
+  Generative.RelationalReduction.Summary
+Generative.RelationalReduction.decodeControl (s : Generative.RelationalReduction.Summary) :
+  Generative.OperativeCoherence.Matrix
+Generative.RelationalReduction.summary_recovers_control (v : Generative.OperativeCoherence.Joint) :
+  Generative.RelationalReduction.decodeControl (Generative.RelationalReduction.summarize v) =
+    Generative.OperativeCoherence.controlDensity v
+Generative.RelationalReduction.Event : Type
+Generative.RelationalReduction.next (v : Generative.OperativeCoherence.Joint) :
+  Generative.RelationalReduction.Event → Generative.OperativeCoherence.Joint
+Generative.RelationalReduction.reducedNext (s : Generative.RelationalReduction.Summary) :
+  Generative.RelationalReduction.Event → Generative.RelationalReduction.Summary
+Generative.RelationalReduction.summary_update_exact :
+  SystemsOrganization.Commuting Generative.RelationalReduction.next Generative.RelationalReduction.reducedNext
+    Generative.RelationalReduction.summarize
+Generative.RelationalReduction.every_finite_word_exact (v : Generative.OperativeCoherence.Joint)
+  (word : List Generative.RelationalReduction.Event) :
+  Generative.RelationalReduction.summarize (SystemsOrganization.evolve Generative.RelationalReduction.next v word) =
+    SystemsOrganization.evolve Generative.RelationalReduction.reducedNext (Generative.RelationalReduction.summarize v)
+      word
+Generative.RelationalReduction.every_finite_control_response_exact (v : Generative.OperativeCoherence.Joint)
+  (word : List Generative.RelationalReduction.Event) :
+  Generative.OperativeCoherence.response
+      (Generative.RelationalReduction.decodeControl
+        (SystemsOrganization.evolve Generative.RelationalReduction.reducedNext
+          (Generative.RelationalReduction.summarize v) word)) =
+    Generative.OperativeCoherence.response
+      (Generative.OperativeCoherence.controlDensity
+        (SystemsOrganization.evolve Generative.RelationalReduction.next v word))
+Generative.RelationalReduction.retained_cross_distinguishes_change :
+  Generative.RelationalReduction.summarize Generative.RelationalReduction.joined =
+      { zeroMass := 1, oneMass := 1, localCross := 0, jointCross := 1 } ∧
+    Generative.RelationalReduction.summarize Generative.RelationalReduction.changed =
+      { zeroMass := 1, oneMass := 1, localCross := 0, jointCross := -1 }
+Generative.RelationalReduction.summary_omits_other_relations :
+  Generative.RelationalReduction.summarize { zero := { zero := 1, one := 0 }, one := { zero := 0, one := 0 } } =
+      Generative.RelationalReduction.summarize { zero := { zero := 0, one := 1 }, one := { zero := 0, one := 0 } } ∧
+    Generative.RelationalReduction.registerDensity { zero := { zero := 1, one := 0 }, one := { zero := 0, one := 0 } } ≠
+      Generative.RelationalReduction.registerDensity { zero := { zero := 0, one := 1 }, one := { zero := 0, one := 0 } }

@@ -1,0 +1,15 @@
+import BecomingReversibility
+#print axioms BecomingReversibility.Reach
+#print axioms BecomingReversibility.Possible
+#print axioms BecomingReversibility.reach_refl
+#print axioms BecomingReversibility.reach_trans
+#print axioms BecomingReversibility.possible_before_reached
+#print axioms BecomingReversibility.no_endpoint_loss_iff_return
+#print axioms BecomingReversibility.same_endpoint_possibilities_iff_return
+#print axioms BecomingReversibility.irreversible_iff_endpoint_loss
+#print axioms BecomingReversibility.loss_persists_along_continuation
+#print axioms BecomingReversibility.oneWay
+#print axioms BecomingReversibility.twoWay
+#print axioms BecomingReversibility.oneWay_no_return
+#print axioms BecomingReversibility.same_occurring_change_different_return
+#print axioms BecomingReversibility.incomplete_questions_can_hide_irreversibility

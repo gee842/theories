@@ -1,0 +1,92 @@
+{
+  "status": "passed_scoped",
+  "checked_at_utc": "2026-10-08T14:06:42.397666+00:00",
+  "errors": [],
+  "local_links_checked": 18,
+  "proof_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-inquiry-necessity-checks/20261008T135418.446592Z/verification.json",
+  "proof_receipt_sha256": "bae0ba96edb44ba75ee958d8a296a4b87897fa3da54765daebde6c1d95baa04e",
+  "theorems": 18,
+  "declaration_audits": 27,
+  "empty_dependency_lists": 11,
+  "standard_dependency_lists": 16,
+  "proof_rerun_by_this_checker": false,
+  "registry": {
+    "records": 50,
+    "selected_records": [
+      "finite-fallible-inquiry-necessity",
+      "scientific-inquiry-foundation"
+    ],
+    "errors": [],
+    "source_drift": [],
+    "unrelated_source_drift": [
+      {
+        "id": "classification-robust-generative-comparison",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+        "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+        "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+      },
+      {
+        "id": "organizational-formation-from-generative-comparison",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+        "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+        "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+      }
+    ],
+    "scope": "Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation."
+  },
+  "owned_chain_row_matches": true,
+  "chain_pending_changes": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+      "theories/shengsheng-buxi-generative-existence/results/records/acquired-binding-compositional-use.json",
+      "theories/shengsheng-buxi-generative-existence/results/records/acquired-binding-compositional-use.md",
+      "theories/shengsheng-buxi-generative-existence/results/records/enacted-scene-binding.json",
+      "theories/shengsheng-buxi-generative-existence/results/records/enacted-scene-binding.md",
+      "theories/shengsheng-buxi-generative-existence/results/records/encounter-selection-and-revision.json",
+      "theories/shengsheng-buxi-generative-existence/results/records/encounter-selection-and-revision.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md"
+    ],
+    "removed_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "theories/meta-attractor/COMMON-ORGANIZATION.md"
+    ]
+  },
+  "chain_validation_errors": [
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/multivalued-joining-common-structure.json",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/incidence-common-refinement.json",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/retained-reference-joining-recovery.json",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/organizational-formation-from-generative-comparison.md",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/situated-recovery-empirical-correspondence.md",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/transition-grouping-word-partition.md",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/multivalued-joining-common-structure.json",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/incidence-common-refinement.json",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/retained-reference-joining-recovery.json"
+  ],
+  "whole_chain_current": false,
+  "new_empirical_runs": 0,
+  "independent_agent_review": false,
+  "checker_sha256": "00f995cd39a86ae0e34720b77f20cd6467f8e970d4c6d81d64bbdb89624954d0",
+  "scope": "Own append preservation, links, canonical records and frozen Lean evidence only. The finite necessity theorem is checked; the scientific-foundation target remains open. Unrelated concurrent edits and whole-chain freshness are not certified."
+}

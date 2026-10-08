@@ -1,0 +1,152 @@
+{
+  "retrieved_at_utc": "2026-10-08T14:31:35.324746+00:00",
+  "project": "https://osf.io/ndthz/",
+  "article": "https://doi.org/10.1111/desc.70101",
+  "metadata": [
+    {
+      "name": "files-api-page-1.json",
+      "url": "https://api.osf.io/v2/nodes/ndthz/files/osfstorage/",
+      "sha256": "3e343f6ee2e23f23684650a942ccfa5bef3cbbffc867a1c80a41b01f808877f9"
+    },
+    {
+      "name": "files-api-page-2.json",
+      "url": "https://api.osf.io/v2/nodes/ndthz/files/osfstorage/?page=2",
+      "sha256": "b9fe7c5ffdfc5c2ae61434f201188f8fee7d4e7e64a772f5205415d87b0a3480"
+    },
+    {
+      "name": "node-api.json",
+      "url": "https://api.osf.io/v2/nodes/ndthz/",
+      "sha256": "4b737b98deadfe6770d5790609367601cff2afa1dcf7f61de54b23029a72b700"
+    }
+  ],
+  "files": [
+    {
+      "name": "curigaze_readme.txt",
+      "url": "https://osf.io/download/xns5e/",
+      "final_url": null,
+      "retrieval": "already preserved bytes, reverified against deposited hash",
+      "storage_get_url": "https://files.de-1.osf.io/v1/resources/ndthz/providers/osfstorage/678f62aa6cc3d0c5fa34fb47",
+      "sha256": "4ffd007ca6b82b5e7f9b83de17c886352afbb0e5cc31f65dca44b8d640f24bc0",
+      "deposited_sha256": "4ffd007ca6b82b5e7f9b83de17c886352afbb0e5cc31f65dca44b8d640f24bc0",
+      "bytes": 885,
+      "osf_file_id": "678f62aa6cc3d0c5fa34fb47"
+    },
+    {
+      "name": "curigaze_OSF_V3.R",
+      "url": "https://osf.io/download/rfbgt/",
+      "final_url": null,
+      "retrieval": "already preserved bytes, reverified against deposited hash",
+      "storage_get_url": "https://files.de-1.osf.io/v1/resources/ndthz/providers/osfstorage/69146886533b15a713ddde19",
+      "sha256": "d45c865a70884cca95d1bc5f22bd1cd0055dc23c5be9e81e7603ab92cbde7078",
+      "deposited_sha256": "d45c865a70884cca95d1bc5f22bd1cd0055dc23c5be9e81e7603ab92cbde7078",
+      "bytes": 59612,
+      "osf_file_id": "69146886533b15a713ddde19"
+    },
+    {
+      "name": "hit_baselineCorr_byPt1-96.csv",
+      "url": "https://osf.io/download/t8bsp/",
+      "final_url": null,
+      "retrieval": "already preserved bytes, reverified against deposited hash",
+      "storage_get_url": "https://files.de-1.osf.io/v1/resources/ndthz/providers/osfstorage/678e2b130f1f791833dd6725",
+      "sha256": "ea370657c69fb3be126631200f346a7f53dce986475c9446465ebe4f4600634f",
+      "deposited_sha256": "ea370657c69fb3be126631200f346a7f53dce986475c9446465ebe4f4600634f",
+      "bytes": 2533,
+      "osf_file_id": "678e2b130f1f791833dd6725"
+    },
+    {
+      "name": "hit_baselineCorr1-96.csv",
+      "url": "https://osf.io/download/gknzp/",
+      "final_url": null,
+      "retrieval": "already preserved bytes, reverified against deposited hash",
+      "storage_get_url": "https://files.de-1.osf.io/v1/resources/ndthz/providers/osfstorage/678e2b1041a7e68a08c0da71",
+      "sha256": "5153124563cf6b3b9112c7af7be2b5053e0d166bf219b0e30b14733e095d1752",
+      "deposited_sha256": "5153124563cf6b3b9112c7af7be2b5053e0d166bf219b0e30b14733e095d1752",
+      "bytes": 32861,
+      "osf_file_id": "678e2b1041a7e68a08c0da71"
+    },
+    {
+      "name": "LearnedLabels_26_1_96_.csv",
+      "url": "https://osf.io/download/sjhdn/",
+      "final_url": null,
+      "retrieval": "already preserved bytes, reverified against deposited hash",
+      "storage_get_url": "https://files.de-1.osf.io/v1/resources/ndthz/providers/osfstorage/678e2b14482440ed269001ae",
+      "sha256": "a14d286cf217ed4b3363b79f7a1de5b1d0766ea65db3342e236a6e2c75802c44",
+      "deposited_sha256": "a14d286cf217ed4b3363b79f7a1de5b1d0766ea65db3342e236a6e2c75802c44",
+      "bytes": 4577,
+      "osf_file_id": "678e2b14482440ed269001ae"
+    },
+    {
+      "name": "LearnedHits_Pt.Trial1-96.csv",
+      "url": "https://osf.io/download/9ycve/",
+      "final_url": null,
+      "retrieval": "already preserved bytes, reverified against deposited hash",
+      "storage_get_url": "https://files.de-1.osf.io/v1/resources/ndthz/providers/osfstorage/678e2b1224836f87d4900207",
+      "sha256": "c745b780df0c7f5644e0492493010e325a65db463f26869aa29d67a1fb41e7cb",
+      "deposited_sha256": "c745b780df0c7f5644e0492493010e325a65db463f26869aa29d67a1fb41e7cb",
+      "bytes": 12984,
+      "osf_file_id": "678e2b1224836f87d4900207"
+    },
+    {
+      "name": "hit_summary_wide1-96.csv",
+      "url": "https://osf.io/download/epcjk/",
+      "final_url": null,
+      "retrieval": "already preserved bytes, reverified against deposited hash",
+      "storage_get_url": "https://files.de-1.osf.io/v1/resources/ndthz/providers/osfstorage/678e2b1029654dba09dd6823",
+      "sha256": "82d6816711c0320653aa1efb561fe32686f9daabe4ae567f585cc033a8a02ab0",
+      "deposited_sha256": "82d6816711c0320653aa1efb561fe32686f9daabe4ae567f585cc033a8a02ab0",
+      "bytes": 69047,
+      "osf_file_id": "678e2b1029654dba09dd6823"
+    },
+    {
+      "name": "LearnedHits_Pt1-96.csv",
+      "url": "https://osf.io/download/tv7f4/",
+      "final_url": null,
+      "retrieval": "already preserved bytes, reverified against deposited hash",
+      "storage_get_url": "https://files.de-1.osf.io/v1/resources/ndthz/providers/osfstorage/678e2b1345cfa4e47c282b0e",
+      "sha256": "120ec8b76b79f4cf92e59523d3e49581952a2eec17396d737a7b0ab1b718108b",
+      "deposited_sha256": "120ec8b76b79f4cf92e59523d3e49581952a2eec17396d737a7b0ab1b718108b",
+      "bytes": 2259,
+      "osf_file_id": "678e2b1345cfa4e47c282b0e"
+    }
+  ],
+  "unavailable": [
+    {
+      "name": "CuriGaze_MasterLog_OSF.xlsx",
+      "url": "https://osf.io/download/wgru4/",
+      "reason": "Repeated HTTP 429 from canonical and public storage GETs; not acquired. Cleaned inclusion log obtained from verified Data.zip instead."
+    }
+  ],
+  "archive_member": {
+    "archive_url": "https://osf.io/download/8at7y/",
+    "archive_bytes": 222449161,
+    "archive_sha256": "efe9ed283fa9bcbf9f0ea221e35a143c029feb737ce5c6fa973c2606d8abd9c0",
+    "member": "Data/CuriGaze_log_Cleaned.csv",
+    "member_bytes": 1831,
+    "member_sha256": "70f4b6630137823fca9f455ea972c7f9fa078bfc1a3b03f44b29830d1f223005",
+    "temporary_archive": "/tmp/codex-curigaze-Data.zip",
+    "scope": "Only original cleaned-log member imported; no raw gaze or redundant ZIP copied into repository."
+  },
+  "large_files_not_preserved_in_repository": [
+    {
+      "name": "Data.zip",
+      "bytes": 222449161,
+      "retrieval": "Temporary verified download; cleaned log only retained"
+    },
+    {
+      "name": "onlyLearned_w.prepost_df1-96.csv",
+      "bytes": 776973624,
+      "retrieval": "Not downloaded"
+    },
+    {
+      "name": "onlyLearned_df1-96.csv",
+      "bytes": 718895529,
+      "retrieval": "Not downloaded"
+    }
+  ],
+  "node_license": {
+    "copyright_holders": [
+      ""
+    ],
+    "year": "2021"
+  }
+}

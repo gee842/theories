@@ -6,7 +6,7 @@
 
 记录源 / Editable record: [recurrent-chain-assembly.json](recurrent-chain-assembly.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T13:32:50.152026+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-08T19:33:55.799793+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
@@ -60,7 +60,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 ## 复用与下一增量 Reuse and next delta
 
-当前固定规律下的结构接续完成；下一连接是改变接合／断裂关系的可遗传差异怎样形成，并改变重复接续与选择。 / Structural continuation under the current fixed law is complete. Next is formation of heritable differences in attachment/cleavage relations and their effects on repeated continuation and selection.
+固定规律重复与附加模板复制已完成，formed-copying-registration 进一步接通局部配准形成；物理辨别、更新供给与共同分配仍待说明。 / Fixed-law recurrence and added template copying are complete; formed-copying-registration further joins local registration formation, leaving physical discrimination, renewed supply and shared allocation to explain.
 
 Aliases / 别名: `RecurrentAssembly.prepared_repeated_generation`
 
@@ -68,3 +68,6 @@ Aliases / 别名: `RecurrentAssembly.prepared_repeated_generation`
 
 - 2026-10-08：按本轮实际审读及所列回执登记范围；原证明和反例保持。 / 2026-10-08: recorded the actually reviewed scope and cited receipt, preserving original proofs and counterexamples.
 - 本轮新增31项定理／47项声明审计，373项闭包审计中326项继承声明另计；旧成果迁移不计新定理。 / This continuation adds 31 theorems / 47 declaration audits; 326 inherited declarations are separate within the 373-audit closure. Migration adds no theorem.
+- 2026-10-09：审读同一研究新增模板复制段；原证明和结论保持，端点适配及额外复制前提分列。 / 2026-10-09: reviewed the added template-copying section in the same study; original proofs and claims remain, with endpoint correspondence and added copying premises separated.
+- 2026-10-09：重读并接入同一研究的配准形成段；旧数学主张及原回执不变，修正旧比较段中完美复制前提的指称。 / 2026-10-09: reconciles the same study’s registration-formation continuation; prior mathematics and receipts remain unchanged, and the old comparison clarifies that perfect copying was this model’s premise.
+- 2026-10-09：已阅读同一研究新增的材料编辑连接；本记录的旧数学及原回执不变，旧无编辑范围不因新增操作而撤销。 / 2026-10-09: reconciles the same study’s added material-editing connection; prior mathematics and receipts remain unchanged, and adding an editing operation does not withdraw the old no-editing scope.

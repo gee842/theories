@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "id": "reserved-shutdown-during-recovery",
+  "title": {
+    "zh": "恢复期间保留停止能力",
+    "en": "Reserved shutdown during incomplete recovery"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F05",
+  "reviewed_at_utc": "2026-10-08T18:53:33.827654+00:00",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReservedShutdown.lean",
+  "aliases": [
+    "ReservedShutdown.every_supported_schedule_finishes",
+    "ReservedShutdown.cycle_keeps_access_or_stops",
+    "ReservedShutdown.stop_executes_current_authorized_command"
+  ],
+  "claim": {
+    "zh": "当前授权停止通道受保护并保留三单位及三个时步时，恢复监督在延迟有界的每次继续尝试后保留停止余量；从剩余 R 单位出发，任意至少 R−2 周期的合法尝试序列最终实际停止并保留未完成恢复信息，无需恢复成功后缀。",
+    "en": "With a protected currently authorized stop channel and three reserved units/steps, the recovery supervisor preserves the stop margin after each continuing attempt with bounded delay; from R remaining units, every admissible sequence of at least R−2 cycles completes shutdown while retaining unfinished recovery information, without requiring a successful recovery suffix."
+  },
+  "hypotheses": [
+    {
+      "zh": "起始证据相容；准备仍满足旧权限／代次检查；待恢复描述、实际效果、消耗账及门控持久且受保护；无额外写入。",
+      "en": "Initial evidence coherence; preparation satisfies the prior permission/generation checks; pending description, actual effects, accounting and gate are durable and protected; no extra writer."
+    },
+    {
+      "zh": "额外当前停止授权绑定代次、序号与路径且任务允许停止；通道、容量和最终三步事务受保护，无并发撤权。其正当性、密码实现及物理对应是供应前提。",
+      "en": "An additional current stop grant matches authority epoch, serial and route, with a shutdown mandate; channel, reserve and final three-step transaction are protected, without concurrent revocation. Its legitimacy, cryptographic implementation and physical correspondence are supplied."
+    },
+    {
+      "zh": "入口余量至少三单位及三个时步；恢复仅在余量足以覆盖一次工作加中断上限 Δ 并仍能停止时继续；中断 δ≤Δ，每次尝试耗一单位／一步，监督持续执行。",
+      "en": "Entry margin is at least three units/steps; recovery continues only when it covers one work step plus maximum interruption Δ and still supports stopping; each delay δ≤Δ, each attempt costs one unit/step, and supervisor execution continues."
+    }
+  ],
+  "correspondence": {
+    "zh": "改变、恢复根据、权限、容量与时距是同一活动的关系分化；停止经过旧 issue/deliver/enact 语义，不由未完成候选证据推得其授权。running=false 的物理停止意义仍须实现对应。",
+    "en": "Change, recovery grounds, authority, capacity and time differentiate within one activity; stopping executes the existing issue/deliver/enact semantics, while its authority is not inferred from incomplete candidate evidence. The physical stopping meaning of running=false still requires implementation correspondence."
+  },
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReservedShutdown.lean",
+      "detail": {
+        "zh": "旧九单位情形在入口被拒，不能追溯救出已耗尽状态；过时代次与无停止权限均拒绝。",
+        "en": "The old nine-unit case is refused at entry, without retroactively rescuing a stranded state; stale epoch and absent shutdown mandate are refused."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReservedShutdown.lean",
+      "detail": {
+        "zh": "中断上限一、实际延迟十、截止十五时，保留后的时刻为十八，已耗八单位且活动仍运行，停止不再及时。",
+        "en": "With bound one, actual delay ten and deadline fifteen, retained time reaches eighteen with eight units spent and activity still running; stopping is no longer timely."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "已完成指定操作连接，不证明旧普通见证通道在未完成时可用、不取得授权、不验证硬件或全部损害、不涵盖任意长中断／任意不可逆作用、不证明普遍对齐或零实质公理。",
+    "en": "Completes the specified operational connection; does not make the old ordinary witness path available while pending, acquire authority, verify hardware or all harm, cover arbitrary outages/irreversible effects, or prove universal alignment or zero substantive axioms."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 实查21项新定理／51项显式审计（18空、27仅propext、3另含Quot.sound、3再含Classical.choice），十个继承证明模块及一个案例辅助模块重编。7,272项有限记录匹配：6,912支持历史、96授权入口、264延迟边界。同作者，非独立验收或物理实验。",
+    "en": "Lean 4.29.1 checked 21 new theorems / 51 explicit audits (18 empty, 27 propext only, 3 also Quot.sound, 3 additionally Classical.choice), rebuilding ten inherited proof modules and one case helper. 7,272 finite matches: 6,912 supported histories, 96 authority/admission cases, 264 delay-boundary histories. Same author, not independent acceptance or physical experiments."
+  },
+  "next_delta": {
+    "zh": "局部推论已完成。真实部署另需指定安装的持久实现、完整中介、停止授权／容量保护、调度与延迟上限及实际停止效果证据；抽象再检查不替代这些对应。",
+    "en": "The local inference is complete. Deployment separately requires evidence for an identified installation: persistence, complete mediation, protected stop authority/reserve, scheduling/delay bounds and actual stopping effects; more abstract checking does not discharge that correspondence."
+  },
+  "history": [
+    {
+      "zh": "2026-10-09：按“finish remains”完成恢复耗尽前的有支持停止连接；旧22项恢复证明及耗尽运行反例保持原范围，额外保护与界限公开。",
+      "en": "2026-10-09: completes supported stopping before recovery exhaustion under “finish remains”; the prior 22 recovery proofs and exhausted-running counterexample retain their scope, with additional protection and bounds explicit."
+    }
+  ],
+  "related": [
+    {
+      "id": "alignment-direction-g0-j",
+      "detail": {
+        "zh": "解释关联：已完成 G0/J 方向说明为何回应条件应被保留；当前停止授权的正当性仍需单独根据。",
+        "en": "Interpretive connection: the completed G0/J direction informs preserving response conditions; this stop grant still needs its own normative warrant."
+      }
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "recoverable-mediated-change",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "admission_establishes_stop_access 与 recovery_attempt_keeps_stop_margin 直接复用准备、tick 及 crash 的证据相容性；再接入实际停止和有限周期完成。",
+        "en": "admission_establishes_stop_access and recovery_attempt_keeps_stop_margin directly reuse evidence coherence from preparation, tick and crash; this then connects to executed stopping and finite-cycle completion."
+      },
+      "interface": {
+        "output": {
+          "zh": "准备及每个恢复／中断步骤产生 Safe，相容的未完成状态保留实际效果及待恢复描述。",
+          "en": "Preparation and each recovery/interruption step produce Safe, retaining actual effects and pending information in coherent incomplete states."
+        },
+        "input": {
+          "zh": "Armed 需要 Safe，加上当前额外停止授权与余量；这些给 cycle_keeps_access_or_stops 和 every_supported_schedule_finishes 的归纳输入。",
+          "en": "Armed consumes Safe with an additional current stop grant and margin, supplying the inductive inputs to cycle_keeps_access_or_stops and every_supported_schedule_finishes."
+        },
+        "conditions": {
+          "zh": "旧覆盖写入与持久对应保留；另需停止通道、三步余量、中断上限、一次尝试工作成本及监督执行。",
+          "en": "Prior overwrite and persistence correspondence remain; add the stop channel, three-step margin, interruption bound, attempt work cost and supervisor execution."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReservedShutdown.lean"
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReservedShutdown.lean",
+      "role": "proof",
+      "sha256": "54d52ae57fb590fa34cf9fc1ac1b30e12c854246a2caa77a2abce4225a582717",
+      "declarations": [
+        "ReservedShutdown.every_supported_schedule_finishes",
+        "ReservedShutdown.cycle_keeps_access_or_stops",
+        "ReservedShutdown.stop_executes_current_authorized_command"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/reserved-shutdown-verification.json",
+      "role": "receipt",
+      "sha256": "656ba4110d95b002e9a01c0c942677f94cffdab2341611fdd88b4b302e81cf61",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "7691adee9e1f76698d2775e3b15a7f02277312b7cc02ba80468c8a0d35d91830",
+      "declarations": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md",
+      "role": "statement",
+      "sha256": "f100092dfc46968db1da068aa6f1f4a827946625852dea033267a311290589c0",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-finish-alignment-fruits.md",
+      "role": "provenance",
+      "sha256": "396d41225a3b911836840504e80392823b3cf3fe47db1f3f4e3783e13647fada",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RecoverableControl.lean",
+      "role": "proof",
+      "sha256": "05b158915cb6f387b5fef71bf9925b0221ba04d5bb1994243de3c820a266468c",
+      "declarations": [
+        "RecoverableControl.prepare_preserves_safety",
+        "RecoverableControl.tick_preserves_safety",
+        "RecoverableControl.crash_preserves_safety"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EffectiveCommand.lean",
+      "role": "proof",
+      "sha256": "7247ca05597f2f916fb409213d3814d48ad9a7037fb95017146d106273d58553",
+      "declarations": [
+        "EffectiveCommand.protocol_exact"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReservedShutdownCases.lean",
+      "role": "proof",
+      "sha256": "393284aac793ff5329a7463d5379cfd697ec4bd734b04cfdd8d078f7cb609f41",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_reserved_shutdown.py",
+      "role": "provenance",
+      "sha256": "e64cc93322a7aeb70b285559cf3110a662e116debccf42740bebb0402496d8bd",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RESERVED-SHUTDOWN.md",
+      "role": "statement",
+      "sha256": "779776c30fe94ddc5a2a65b3045d310d60240c2702a2b389bc05ed1e4b9b3d8c",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReservedShutdown.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/reserved-shutdown-verification.json",
+      "sha256_pointer": "/sources/ReservedShutdown/sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RecoverableControl.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/reserved-shutdown-verification.json",
+      "sha256_pointer": "/sources/RecoverableControl/sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EffectiveCommand.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/reserved-shutdown-verification.json",
+      "sha256_pointer": "/sources/EffectiveCommand/sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ]
+}

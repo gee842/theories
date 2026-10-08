@@ -1,0 +1,60 @@
+EvaluatorGrounding.self_good_reaches_at_least_as_connected {Gen Prof : Type}
+  (s : EvaluatorGrounding.Standpoint Gen Prof) (atLeast : Prof → Prof → Prop) (self : EvaluatorGrounding.SelfGood s)
+  (mono : EvaluatorGrounding.Monotone s atLeast) {g g' : Gen} (ownG : s.own g) (livingG : s.living g)
+  (livingG' : s.living g') (connected : atLeast (s.prof g) (s.prof g')) : s.sig g'
+EvaluatorGrounding.strict_indexed_rival_inconsistent {Gen Prof : Type} (s : EvaluatorGrounding.Standpoint Gen Prof)
+  (atLeast : Prof → Prof → Prop) (self : EvaluatorGrounding.SelfGood s) (mono : EvaluatorGrounding.Monotone s atLeast)
+  (onlyOwn : ∀ (g : Gen), s.sig g → s.own g)
+  (differentiates : ∃ g g', s.own g ∧ s.living g ∧ s.living g' ∧ ¬s.own g' ∧ atLeast (s.prof g) (s.prof g')) : False
+EvaluatorGrounding.chain_preserves {Prof : Type} (val : Prof → Prop) (step : Prof → Prof → Prop)
+  (tol : EvaluatorGrounding.Tolerant val step) {p q : Prof} (chain : EvaluatorGrounding.Chain step p q)
+  (start : val p) : val q
+EvaluatorGrounding.tolerant_chain_reaches {Gen Prof : Type} (s : EvaluatorGrounding.Standpoint Gen Prof)
+  (val : Prof → Prop) (step : Prof → Prof → Prop) (sup : EvaluatorGrounding.Supervenes s val)
+  (self : EvaluatorGrounding.SelfGood s) (tol : EvaluatorGrounding.Tolerant val step)
+  (chain :
+    ∀ (g' : Gen),
+      s.reach g' → s.living g' → ∃ g, s.own g ∧ s.living g ∧ EvaluatorGrounding.Chain step (s.prof g) (s.prof g'))
+  (g' : Gen) : s.reach g' → s.living g' → s.sig g'
+EvaluatorGrounding.reach_is_g0 {Gen Prof : Type} (s : EvaluatorGrounding.Standpoint Gen Prof) :
+  (∀ (g' : Gen), s.reach g' → s.living g' → s.sig g') ↔
+    GenerativeComparison.G0 (EvaluatorGrounding.reachableInventory s) fun x g => s.sig g
+EvaluatorGrounding.self_good_derives_reachable_g0 {Gen Prof : Type} (s : EvaluatorGrounding.Standpoint Gen Prof)
+  (val : Prof → Prop) (step : Prof → Prof → Prop) (sup : EvaluatorGrounding.Supervenes s val)
+  (self : EvaluatorGrounding.SelfGood s) (tol : EvaluatorGrounding.Tolerant val step)
+  (chain :
+    ∀ (g' : Gen),
+      s.reach g' → s.living g' → ∃ g, s.own g ∧ s.living g ∧ EvaluatorGrounding.Chain step (s.prof g) (s.prof g')) :
+  GenerativeComparison.G0 (EvaluatorGrounding.reachableInventory s) fun x g => s.sig g
+EvaluatorGrounding.formed_other_has_significance (val : Nat → Prop)
+  (self : EvaluatorGrounding.SelfGood (EvaluatorGrounding.standpoint val))
+  (mono : EvaluatorGrounding.Monotone (EvaluatorGrounding.standpoint val) fun x1 x2 => x1 ≤ x2) :
+  (EvaluatorGrounding.standpoint val).sig EvaluatorGrounding.Occ.formedOther
+EvaluatorGrounding.threshold_rival_is_consistent_without_tolerance :
+  EvaluatorGrounding.SelfGood (EvaluatorGrounding.standpoint fun x => 4 ≤ x) ∧
+    (EvaluatorGrounding.Monotone (EvaluatorGrounding.standpoint fun x => 4 ≤ x) fun x1 x2 => x1 ≤ x2) ∧
+      (EvaluatorGrounding.Supervenes (EvaluatorGrounding.standpoint fun x => 4 ≤ x) fun x => 4 ≤ x) ∧
+        (EvaluatorGrounding.standpoint fun x => 4 ≤ x).sig EvaluatorGrounding.Occ.formedOther ∧
+          ¬(EvaluatorGrounding.standpoint fun x => 4 ≤ x).sig EvaluatorGrounding.Occ.stranger ∧
+            ¬EvaluatorGrounding.Tolerant (fun x => 4 ≤ x) EvaluatorGrounding.adjacent
+EvaluatorGrounding.tolerant_standpoint_reaches_stranger (val : Nat → Prop)
+  (self : EvaluatorGrounding.SelfGood (EvaluatorGrounding.standpoint val))
+  (tol : EvaluatorGrounding.Tolerant val EvaluatorGrounding.adjacent) :
+  (EvaluatorGrounding.standpoint val).sig EvaluatorGrounding.Occ.stranger ∧
+    (EvaluatorGrounding.standpoint val).sig EvaluatorGrounding.Occ.formedOther
+EvaluatorGrounding.present_aim_evaluator_escapes :
+  ¬EvaluatorGrounding.SelfGood (EvaluatorGrounding.standpoint fun x => False) ∧
+    (EvaluatorGrounding.Monotone (EvaluatorGrounding.standpoint fun x => False) fun x1 x2 => x1 ≤ x2) ∧
+      (EvaluatorGrounding.Supervenes (EvaluatorGrounding.standpoint fun x => False) fun x => False) ∧
+        EvaluatorGrounding.Tolerant (fun x => False) EvaluatorGrounding.adjacent ∧
+          ¬(EvaluatorGrounding.standpoint fun x => False).sig EvaluatorGrounding.Occ.formedOther
+EvaluatorGrounding.closed_self_blocks_reach :
+  EvaluatorGrounding.SelfGood (EvaluatorGrounding.standpoint fun x => 4 ≤ x) ∧
+    EvaluatorGrounding.Tolerant (fun x => 4 ≤ x) EvaluatorGrounding.closedStep ∧
+      ¬(EvaluatorGrounding.standpoint fun x => 4 ≤ x).sig EvaluatorGrounding.Occ.stranger
+EvaluatorGrounding.persistence_rival_escapes_self_transcendence :
+  EvaluatorGrounding.SelfGood EvaluatorGrounding.persistence ∧
+    EvaluatorGrounding.Monotone EvaluatorGrounding.persistence EvaluatorGrounding.productLe ∧
+      ¬EvaluatorGrounding.productLe (EvaluatorGrounding.profile2 EvaluatorGrounding.Occ.changedSelf)
+            (EvaluatorGrounding.profile2 EvaluatorGrounding.Occ.formedOther) ∧
+        ¬EvaluatorGrounding.persistence.sig EvaluatorGrounding.Occ.formedOther

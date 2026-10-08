@@ -1,0 +1,142 @@
+Generative.AcquiredBinding.candidate_characterization (s : Generative.AcquiredBinding.Lexicon)
+  (form : List Generative.AcquiredSegmentation.Sound) (meaning : Generative.CompositionalAcquisition.Expr) :
+  meaning ∈ Generative.AcquiredBinding.candidates s form ↔
+    meaning ∈ s.repertoire ∧
+      ∀ (r : Generative.AcquiredBinding.Encounter),
+        r ∈ s.records → ¬r.origin ∈ s.excluded → r.form = form → meaning ∈ r.offered
+Generative.AcquiredBinding.resolution_is_a_unique_candidate (s : Generative.AcquiredBinding.Lexicon)
+  (form : List Generative.AcquiredSegmentation.Sound) (e : Generative.CompositionalAcquisition.Expr) :
+  Generative.AcquiredBinding.resolve s form = some e ↔ Generative.AcquiredBinding.candidates s form = [e]
+Generative.AcquiredBinding.adequate_evidence_preserves_target (s : Generative.AcquiredBinding.Lexicon)
+  (form : List Generative.AcquiredSegmentation.Sound) (target : Generative.CompositionalAcquisition.Expr)
+  (available : target ∈ s.repertoire)
+  (sound :
+    ∀ (r : Generative.AcquiredBinding.Encounter),
+      r ∈ s.records → ¬r.origin ∈ s.excluded → r.form = form → target ∈ r.offered) :
+  target ∈ Generative.AcquiredBinding.candidates s form
+Generative.AcquiredBinding.unique_resolution_is_correct_under_coverage (s : Generative.AcquiredBinding.Lexicon)
+  (form : List Generative.AcquiredSegmentation.Sound) (target e : Generative.CompositionalAcquisition.Expr)
+  (available : target ∈ s.repertoire)
+  (sound :
+    ∀ (r : Generative.AcquiredBinding.Encounter),
+      r ∈ s.records → ¬r.origin ∈ s.excluded → r.form = form → target ∈ r.offered)
+  (resolved : Generative.AcquiredBinding.resolve s form = some e) : e = target
+Generative.AcquiredBinding.encounter_preserves_account (raw : List Generative.AcquiredSegmentation.Sound)
+  (offered : List Generative.CompositionalAcquisition.Expr) (origin : Nat) (s : Generative.AcquiredBinding.Lexicon) :
+  (Generative.AcquiredBinding.encounter raw offered origin s).percept.machine.support +
+      (Generative.AcquiredBinding.encounter raw offered origin s).percept.machine.spent =
+    s.percept.machine.support + s.percept.machine.spent
+Generative.AcquiredBinding.exclusion_preserves_original_records (origin : Nat)
+  (s : Generative.AcquiredBinding.Lexicon) : (Generative.AcquiredBinding.excludeSource origin s).records = s.records
+Generative.AcquiredBinding.no_support_keeps_binding_evidence (raw : List Generative.AcquiredSegmentation.Sound)
+  (offered : List Generative.CompositionalAcquisition.Expr) (origin : Nat) (s : Generative.AcquiredBinding.Lexicon)
+  (h : s.percept.machine.support = 0) : Generative.AcquiredBinding.encounter raw offered origin s = s
+Generative.AcquiredBinding.segmentation_without_binding_cannot_interpret :
+  Generative.AcquiredSegmentation.chunks
+        (Generative.AcquiredSegmentation.bond (Generative.AcquiredBinding.emptyBinding 32).percept.log)
+        Generative.AcquiredSegmentation.utterance =
+      List.map Generative.AcquiredSegmentation.word [true, false, true] ∧
+    Generative.AcquiredBinding.interpret (Generative.AcquiredBinding.emptyBinding 32)
+        Generative.AcquiredSegmentation.utterance =
+      none
+Generative.AcquiredBinding.single_ambiguous_encounter_does_not_choose_a_meaning :
+  Generative.AcquiredBinding.candidates
+        (Generative.AcquiredBinding.encounter (Generative.AcquiredSegmentation.word false)
+          [Generative.CompositionalAcquisition.p0, Generative.CompositionalAcquisition.p1] 0
+          (Generative.AcquiredBinding.emptyBinding 32))
+        (Generative.AcquiredSegmentation.word false) =
+      [Generative.CompositionalAcquisition.p0, Generative.CompositionalAcquisition.p1] ∧
+    Generative.AcquiredBinding.resolve
+        (Generative.AcquiredBinding.encounter (Generative.AcquiredSegmentation.word false)
+          [Generative.CompositionalAcquisition.p0, Generative.CompositionalAcquisition.p1] 0
+          (Generative.AcquiredBinding.emptyBinding 32))
+        (Generative.AcquiredSegmentation.word false) =
+      none
+Generative.AcquiredBinding.actual_encounters_acquire_both_bindings (b : Bool) :
+  Generative.AcquiredBinding.resolve (Generative.AcquiredBinding.learned 32) (Generative.AcquiredSegmentation.word b) =
+    some (Generative.CompositionalAcquisition.Expr.atom b)
+Generative.AcquiredBinding.learned_bindings_decode_every_encoded_sequence (ws : List Bool) :
+  Generative.AcquiredBinding.readForms (Generative.AcquiredBinding.learned 32)
+      (List.map Generative.AcquiredSegmentation.word ws) =
+    some (List.map Generative.CompositionalAcquisition.Expr.atom ws)
+Generative.AcquiredBinding.acquired_binding_and_grouping_compose (ws : List Bool) :
+  Generative.AcquiredBinding.interpret (Generative.AcquiredBinding.learned 32)
+      (Generative.AcquiredSegmentation.encode ws) =
+    Generative.AcquiredSegmentation.assembleMessage (List.map Generative.CompositionalAcquisition.Expr.atom ws)
+Generative.AcquiredBinding.acquired_bindings_reach_actual_compositional_response :
+  Option.map (fun r => (r.fst, r.snd.percept.machine.support, r.snd.percept.machine.spent, r.snd.records.length))
+      (Generative.AcquiredBinding.execute Generative.AcquiredSegmentation.utterance
+        (Generative.AcquiredBinding.learned 32)) =
+    some ([true, false, true], 0, 25, 4)
+Generative.AcquiredBinding.actual_binding_history_retains_prior_learning :
+  (Generative.AcquiredBinding.learned 32).percept.log = List.map some Generative.AcquiredSegmentation.context ∧
+    (Generative.AcquiredBinding.learned 32).percept.machine.samples =
+        Generative.CompositionalAcquisition.trialRecords Generative.CompositionalAcquisition.usual ∧
+      ((Generative.AcquiredBinding.learned 32).records.all fun r => r.offered.length == 2) = true
+Generative.AcquiredBinding.interpretation_can_outlast_affordable_execution :
+  Generative.AcquiredBinding.interpret (Generative.AcquiredBinding.learned 31)
+        Generative.AcquiredSegmentation.utterance =
+      some Generative.AcquiredSegmentation.intended ∧
+    Generative.AcquiredBinding.execute Generative.AcquiredSegmentation.utterance
+        (Generative.AcquiredBinding.learned 31) =
+      none
+Generative.AcquiredBinding.repeated_ambiguity_does_not_resolve_reference :
+  Generative.AcquiredBinding.candidates Generative.AcquiredBinding.repeatedAmbiguity
+        (Generative.AcquiredSegmentation.word false) =
+      [Generative.CompositionalAcquisition.p0, Generative.CompositionalAcquisition.p1] ∧
+    Generative.AcquiredBinding.resolve Generative.AcquiredBinding.repeatedAmbiguity
+        (Generative.AcquiredSegmentation.word false) =
+      none
+Generative.AcquiredBinding.omitted_target_can_produce_a_wrong_unique_binding :
+  Generative.AcquiredBinding.resolve Generative.AcquiredBinding.misbound (Generative.AcquiredSegmentation.word false) =
+      some Generative.CompositionalAcquisition.p1 ∧
+    Option.map Prod.fst
+        (Generative.AcquiredBinding.execute (Generative.AcquiredSegmentation.word false)
+          Generative.AcquiredBinding.misbound) =
+      some [true]
+Generative.AcquiredBinding.contrary_encounters_suspend_instead_of_silently_relabeling :
+  Generative.AcquiredBinding.resolve Generative.AcquiredBinding.conflicted
+        (Generative.AcquiredSegmentation.word false) =
+      none ∧
+    Generative.AcquiredBinding.resolve Generative.AcquiredBinding.conflicted
+          (Generative.AcquiredSegmentation.word true) =
+        some Generative.CompositionalAcquisition.p1 ∧
+      Generative.AcquiredBinding.conflicted.records.length = 5
+Generative.AcquiredBinding.corrected_admission_repairs_use_without_erasing_history :
+  Generative.AcquiredBinding.repaired.records = Generative.AcquiredBinding.conflicted.records ∧
+    Generative.AcquiredBinding.resolve Generative.AcquiredBinding.repaired
+          (Generative.AcquiredSegmentation.word false) =
+        some Generative.CompositionalAcquisition.p0 ∧
+      Option.map Prod.fst
+          (Generative.AcquiredBinding.execute Generative.AcquiredSegmentation.utterance
+            Generative.AcquiredBinding.repaired) =
+        some [true, false, true]
+Generative.AcquiredBinding.excluding_the_sound_encounters_preserves_the_wrong_binding :
+  Generative.AcquiredBinding.resolve (Generative.AcquiredBinding.excludeSource 0 Generative.AcquiredBinding.conflicted)
+      (Generative.AcquiredSegmentation.word false) =
+    some Generative.CompositionalAcquisition.p1
+Generative.AcquiredBinding.insufficient_binding_experience_preserves_partial_learning :
+  (Generative.AcquiredBinding.learned 27).records.length = 3 ∧
+    Generative.AcquiredBinding.resolve (Generative.AcquiredBinding.learned 27)
+          (Generative.AcquiredSegmentation.word false) =
+        some Generative.CompositionalAcquisition.p0 ∧
+      Generative.AcquiredBinding.resolve (Generative.AcquiredBinding.learned 27)
+          (Generative.AcquiredSegmentation.word true) =
+        none
+Generative.AcquiredBinding.supplied_repertoire_can_exclude_the_intended_content :
+  Generative.AcquiredBinding.resolve
+      (Generative.AcquiredBinding.encounter (Generative.AcquiredSegmentation.word false)
+        [Generative.CompositionalAcquisition.p0] 0
+        (have __src := Generative.AcquiredBinding.emptyBinding 32;
+        { percept := __src.percept,
+          repertoire := [Generative.CompositionalAcquisition.p1, Generative.AcquiredBinding.extra],
+          records := __src.records, excluded := __src.excluded }))
+      (Generative.AcquiredSegmentation.word false) =
+    none
+Generative.AcquiredBinding.failed_grouping_prevents_binding_record_formation :
+  (Generative.AcquiredBinding.encounter (Generative.AcquiredSegmentation.word false)
+        [Generative.CompositionalAcquisition.p0] 0
+        (have __src := Generative.AcquiredBinding.emptyBinding 32;
+        { percept := Generative.AcquiredSegmentation.ready 32, repertoire := __src.repertoire, records := __src.records,
+          excluded := __src.excluded })).records =
+    []

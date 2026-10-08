@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F06",
-  "reviewed_at_utc": "2026-10-08T13:25:42.189982+00:00",
+  "reviewed_at_utc": "2026-10-08T19:02:21.616729+00:00",
   "claim": {
     "zh": "给定市场规律、有效保护证书、安全初态及逐步容许扰动，原实际守卫在所有自然数时刻都与运行历史一致，不发生支持失败。",
     "en": "Given the market law, a valid protection certificate, a safe initial state and admissible disturbances at every step, the actual guarded history agrees with the operating history at every natural time without support failure."
@@ -28,7 +28,22 @@
     "MarketGenerativity.safe_history_never_fails"
   ],
   "dependencies": [],
-  "related": [],
+  "related": [
+    {
+      "id": "market-partial-correction-boundary",
+      "detail": {
+        "zh": "新增结果放宽纠正参数，原范围继续保留和复用。",
+        "en": "The new result relaxes the correction parameter; the original scope remains preserved and reusable."
+      }
+    },
+    {
+      "id": "market-finite-support-obstruction",
+      "detail": {
+        "zh": "已完成的有限支持阻碍，保留本记录较窄结论。",
+        "en": "Completed finite-support obstruction preserving this record’s narrower result."
+      }
+    }
+  ],
   "counterexamples": [
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
@@ -65,7 +80,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
       "role": "integration",
-      "sha256": "cdd092289ae62ca502b36a193e3e6fa619785715e449497776814644b00d7ba3",
+      "sha256": "d713347b7ed83e3163883769cf884db71a13341b38bb45faa383579e29f251df",
       "declarations": []
     }
   ],
@@ -86,6 +101,22 @@
     {
       "zh": "2026-10-08：随有限转变的正式复用迁移既有成果身份；原源码和历史回执保留。",
       "en": "2026-10-08: migrated the inherited result identity for formal reuse by finite transition; original source and historical receipts remain."
+    },
+    {
+      "zh": "2026-10-08：审读同一研究追加的部分纠正与临界分析；本条原主张、证明和历史回执未改变。",
+      "en": "2026-10-08: reviewed appended partial-correction and critical analysis in the same study; this record’s original claim, proof and historical receipt are unchanged."
+    },
+    {
+      "zh": "2026-10-09：核读并接入既有研究§§37–40有限支持阻碍；本记录的定理、前提及旧回执均不变，新量词结果见market-finite-support-obstruction。",
+      "en": "2026-10-09: reconciled study sections 37–40 on finite-support obstruction; this record’s theorem, premises and prior receipt remain unchanged, with the stronger quantified obstruction in market-finite-support-obstruction."
+    },
+    {
+      "zh": "2026-10-09：核读既有研究§§41–46的LibreOffice形成对应；原定理、条件和回执均保留，新历史评估另记formed-software-continuation，未作数值映射。",
+      "en": "2026-10-09: reconciled study sections 41–46 on LibreOffice formation; original theorem, hypotheses and receipt remain, with the new historical assessment in formed-software-continuation and no numerical mapping."
+    },
+    {
+      "zh": "2026-10-09：核读同一研究§§47–52的API接续与保留依存评估；先前正文原字节前缀保留。此对应未改变本条数学命题、前提或回执，也未提供数量化参数。",
+      "en": "2026-10-09: reconciles sections 47–52 on API continuation and retained dependence; original study/chapter byte prefixes remain. The assessment changes no mathematical claim, hypothesis or receipt and supplies no quantitative parameters."
     }
   ]
 }

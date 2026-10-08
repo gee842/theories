@@ -1,0 +1,755 @@
+{
+  "scope": "9 October systems/subsystems conceptual correction; no new proof or result identity.",
+  "recorded_at_utc": "2026-10-08T18:15:39.846389+00:00",
+  "owned_entry": "C14",
+  "entry_before": {
+    "id": "C14",
+    "title_zh": "生成对选择的递归影响",
+    "title_en": "Recursive influence of generation on selection",
+    "claim_zh": "活动后果可改变后继形成与选择条件，贡献变体不必获益。重构、发育与聚合区分遗传群体和运输集合；细菌回复实验接通遗传切换与周期完成。谱系预测保留总体优势及局部失败。新增原始实证支持呼吸形成氧梯度并改变后续选择；结构形成史须接入发育迁移，常规解释获完整信用。 原始延时研究进一步记录界面小筏形成、下落和再形成；酸碱条件改变空间组织，须与持续膜结构和实际后代分别对应。 此前比较方向提出独立机制约束下的跨条件接续，以及重构和选择关系自身的改变。 新的24小时形成实测与常规模型进一步接通建立条件和留存占比；较低离散的优势取决于相对生长，反例保留。 已完成的演化组织说明进一步接通实际取样、继承发育状态与跨转移重建；组织改变后续取样结果，真实供给及后续修订均保留。 原始显微数据现核对真实尺度及逐位置拍摄时钟，混合培养两段采集的位置配置可接续；成像对应与培养物身份仍分别论证。 直接同等网络比较现证明重构机制具有精确的常规实现，包含依当前状态选择及失败行动。 Ren现明确要求聚焦理论：复用形成、重构、更新器及目的修订成果，比较其独立前提与额外解释，当时选定具体联结论学习结果的恢复。 预先固定视野的91帧现接成实测发育史；增长后的局部消失与轨迹的边界删失分别保留，观察结束不独自说明结构丧失。 新理论连接把后继重建能力接到完整回返路径的选择阈值及繁殖代价；直接外形延续可下降，第一代相同产出仍可掩盖相反的增长条件。 现已恢复单步Hebb方向，有限循环发育的后果响应由规律导出；tanh符号相容条件保持方向，并支持有限关系改变，反馈和选择关系改变可反转局部增益。 有限组装程序现从实际消耗及成功停止共同推出P列产出和重建比例；成功概率不同于后继比例，额外尝试可提高成功却消除增长优势。既有类型的增长因子接入相邻规则入侵条件。 新的共同历史由逐项非线性选择推出留存关系：同一网络从不完整线索重现两种格局，持续偏向一方造成旧格局失去重现能力，继续修订又能恢复；当前选择改善不保证保留旧能力。 实际传递组成与保留接触机会现导出局部成功率，后继自行重建成键；同一亲代、同平均成键率和接触消耗仍可因后继间机会分布不同而产生不同重建。不同种类传播体的响应不能无条件压成同一个回返系数。 后续同史构造把反复干扰造成的实际反应失败接到更新器维持与替换：由原生发育算出回报差别，保留旧关系与剩余支持，新规则实际改变后续更新并取得维持所需支持。 三阶段接续现证明条件性的有限周期回返，平衡混合时可用发育后响应的均值合并；成熟亲代的准备规律仍须实现。 组成生成与付费安放现实现指定亲代准备：同类生成使原先接触重建优势倒转，互补生成又改变排序；失败保留未用组成和支持，未完成指定返回不等于死亡。 参考接触现取得未知仿射通道的实际读数，形成的局部比较与抑制连接推出响应式更新，并在保留网络及支持记录中运行；校准后的通道变化可造成实际误报并阻止修复。 新参考比较现决定保留或修订已取得的读数，并实际恢复原网络更新；有限工作段之间可以改变通道。仿射通道零点相同、增益同向恰好保留全部符号判断，参数变化不独自等于能力丧失。 生长与断键现从实际连接图导出后继成员，接入共同材料准备；同组成及同边数可有不同共同传递，均匀断键与最老边先断使排序反转。新形成的替代维持关系还可使原有断键不再导致群体分裂。 实际逐步变化与噪声现推出取得读数的误差界，原生网络推出反应余量；工作段内通道可持续改变而在充分年龄窗口内保留实际修复及后续两类记忆。区间跨界保留不确定，可靠性取决于关系变化与辨别余量的共同条件。 实际安放材料现经逐项接合生成链，断裂保留内部边，片段经同一规律重建为可再分割链；任意有限轮次在共同材料和支持预算下实际接续，失败保留未完成后继及余料。 社会组织接续现由共同工作形成资格，经实际提案与授权改变规则，分化后继承的程序改变后续筛选；规则复制与实际参与分开，技术接续可保持而规则修订能力失去。",
+    "claim_en": "Consequences can change successor formation and selection without guaranteeing contributor advantage. Reconstruction, development and aggregation distinguish inherited clusters from transport groups; bacterial reversion links switching to cycle completion. Lineage forecasts retain aggregate gains and local failures. Primary evidence now links respiration-generated oxygen gradients to changed selection; structural development must enter transferable prediction. Conventional explanation receives full credit. Original time-lapse research adds recurring surface rafts and pH-sensitive spatial organization, requiring separate correspondences for persistent mat structure and actual descendants. Earlier comparative work proposed continuation across conditions constrained by independent mechanisms, followed by changes in reconstruction and selection relations. New 24-hour observations and a conventional model connect establishment to retained representation; lower dispersal gains only under the relative-growth condition, with an adverse contrast preserved. The completed evolutionary-organization account now connects actual sampling, inherited developmental state and reconstruction across transfers; formed organization changes later sampling, with actual provision and subsequent revision retained. Original microscopy now supplies checked scale and position-specific capture times, with continued position configuration across two rescue acquisitions; imaging correspondence and culture identity remain distinct. A direct matched-network comparison now establishes an exact conventional realization of the reconstruction mechanism, including shared state-dependent selectors and failed actions. Ren now directs a theoretical focus: reuse formation, reconstruction, updater and goal-revision results, compare their independent premises and added explanation, and selected recovery of a specific connectionist learning result. A predefined field now has a measured 91-frame developmental history; local disappearance after growth is distinguished from boundary censoring, so an observation ending does not alone establish structural loss. A new theoretical connection gives a full-cycle selection threshold and reproductive cost ceiling for inherited reconstruction; direct resemblance can fall, and identical first-generation outputs can conceal opposite growth conditions. The single-step Hebbian direction is now recovered. Finite recurrent sensitivity follows from the developmental law; a sign-compatible tanh regime preserves the direction through finite changes, while feedback and changed selective relations can reverse local gains. A finite assembly programme now derives P-column production and reconstruction jointly from paid attempts and stopping. Success probability differs from the descendant fraction, and added attempts can improve success while removing growth advantage. The resident factor enters an adjacent-rule invasion condition. A new common history derives retained relations from coordinate-wise nonlinear selection: the same network recalls two patterns from incomplete cues, continued emphasis on one destroys old recall, and further revision restores it. Current-score improvement does not guarantee preservation of an earlier capacity. Actual transmitted components and retained contact slots now determine local success, with each successor rebuilding its own bond. The same parent, mean encounter rate and cost can yield different reconstruction because opportunities are distributed differently across successors. Distinct seed responses cannot unconditionally be collapsed to one return coefficient. A subsequent common history connects actual response failures from repeated interference to updater maintenance and replacement: native development determines return differences, old relationships and remaining support persist, and the new rule governs later updates and earns renewal. A three-stage continuation proves conditional finite-cycle return and permits aggregation by the mean developed response under a balanced mixture; common mature-parent preparation still requires realization. Component production and paid routing now realize preparation of the specified parent: same-type production reverses the contact reconstruction ranking, while complementary production changes it again. Failed preparation retains components and work; missing the specified return does not establish death. Reference contacts now acquire actual readings of unknown affine channels. Formed local comparisons and inhibition derive responsive updating and operate in the retained network/support history; channel changes after calibration can cause false success and suppress repair. Fresh reference comparison now determines retention or revision of acquired readings and restores native updating across finite blocks with changed channels. Equal zero and same gain orientation exactly preserve the all-input affine sign interface; parameter change alone does not establish lost capacity. Growth and actual edge removal now derive successor membership from formed connections and join common material preparation. Equal composition and edge counts can yield different cotransmission; uniform and oldest-edge cuts reverse the ranking. A newly formed alternative retention route can also prevent a formerly separating cut from fragmenting the group. Actual successive changes and noise now imply acquired-reading error bounds, while native network responses imply a positive margin. Channels may keep changing within a block while actual repair and subsequent two-memory retention persist through a sufficient age window. Intervals crossing the boundary retain uncertainty; reliability depends jointly on relational change and discrimination margin. Actual placed material now forms a chain through tokenwise attachment; cleavage retains internal edges, and the fragments rebuild under the same law into cleavable chains. Every finitely supported number of rounds executes with shared material/work accounting; failure retains incomplete descendants and unused components. A social-organizational continuation now forms mandates through work, changes a rule through actual proposal and authorization, and inherits a procedure that changes later filtering; copied rules differ from actual participation, and technical continuation can persist while revision capacity is lost.",
+    "scope_zh": "保留16/26、19/41、7/13及6/6定理/审计与反例；本轮新增7项局部定理／11项审计。54段视频/18项技术重复、33/190敏感性、3,808记录/3,600联系及42/72对7/72保持范围；3,424项预测及139分组/485行核验保留。新核对八项生长及两项竞争摘要，不能转作周期概率。初始未形成与后来失效须区分；联合校准、广泛比较与支持更新仍开放。 新保存四份影片，44帧像素对应核验通过；帧数不是重复。基因标签、拍摄时钟及后代联系未齐，未拟合周期概率。 新方向评估已完成，须与生态支架、内生化及演化联结论等强对手比较；优越性未获确立，无新预测或定理。 新核对45项培养物／11个日期组，保留784对769数量歧义与数值容量失败；事件求解只作显式模型适配。 聚焦说明现按用户选定范围完成：20项新 Lean 定理／44项新声明审计／113项闭包审计。有限历史继承及重建不等于入侵稳定性或无限更新；原始干预和强比较已评估，广泛优越性仍未成立。 新核对4,383项目录、388项时间戳、114项首末图像记录及两幅完整像素场；位置时差最大225.89秒，重启间隔337.39秒。处理／终点身份、内部轨迹及六日后代仍未接齐，无新定理。 新增11项 Lean 定理／24项审计及34,768项执行，结论是同等法则下等价，非 Watson 模型复现或经验胜出。直接比较已关合，独立约束的联合经验预测仍开放。 理论整合与作者反审已完成，无新定理；局部前提消解不等于已证比较经济性，伦理延展明示G0及附加承诺。经验校准不作本轮理论完成门槛；广泛优越性仍未证。 新核对91项图像子块及23,855,104个裁剪像素；三种检测阈值与三种移动界限的敏感性保留。四条最长分配轨迹含局部骤失候选及仍可见的边界对象；不拟合坍塌率，不补造后代连接，无新定理。 新增28项 Lean 定理／40项审计，含有限历史界及条件识别；中观产出、路由及传递仍给定，未由细胞事件导出。常规生命周期模型获完整信用，当时的联结论学习恢复待办现由后续成果接通，广泛优越性仍开放。 新增29项Lean定理／41项声明审计通过，使用明示的发育与选择规律；保留有限反例及原生法则、初始状态、变异传递等前提。具名方向恢复完成，当时选定多格局记忆、干扰和持续修订；无新经验预测或广泛原创性声明。 新增37项 Lean 定理／57项新审计，含166项闭包审计；有限程序连接已完成，单次成功、复制、成熟产出及更新仍给定。独立平均近似有增长符号反例，同信息的常规机制模型保持一致，无新实证或广泛优越性。 发育记忆连接现有28项新 Lean 定理／44项新声明审计，另重建41项继承审计；模糊线索失败保留。限于含自作用、完全衰减tanh的符号重现，训练初始适应、提案、步长、日程及读出视野明示。多格局记忆连接按此范围完成；当时选定干扰后果进入更新规则形成或修订，不宣告容量、幅值收敛、生物适用或全理论完成。 接触重建连接新增30项 Lean 定理／57项新审计，含223项闭包审计；替代本构造中独立成功率和亲代成键标记复制，未替代旧产出公式。兼容、均匀有放回取样、分割及成熟供给仍明示；单周期比较不冒充入侵。下一项是分割形成及成本与后继类型保留的种群连接；强空间模型获完整信用。 后果—更新器替换新增36项 Lean 定理／57项新审计，另重建85项继承审计。明示单步完整格局读出、两种可用规则、可靠成功信号、形成及支持法则；保留旧规则再次失效、同任务无优势、额外成本、误报与支持耗尽。此有限替换连接完成；当时选定可用响应规则及可靠辨别由局部关系构成的实际对应，非种群频率、伦理必然或广泛优越性结论。 材料成熟新增28项 Lean 定理／44项新审计，含267项闭包审计；有限准备连接完成，整体返回概率由实际组成生长和路由推出。生成规律、装配配方及能力、槽位几何、分割形成与供给仍给定；原典比较不冒充复现或优越性。下一项是繁殖配方和分割的形成、传递及修订，不重开已有材料准备。 辨别取得及更新构造新增30项 Lean 定理／59项新审计，另重建142项继承审计。明示稳定非零仿射通道、参考绑定、部件法则、构造计划，以及入口额外10单位构造支持与4个部件。缺接触、常数通道、支持不足和传递改变均保留。此局部对应完成；当时选定变化中的参考—使用对应，不重开一般校准或形成机制，不宣告种群、伦理或广泛优越性。 参考接续新增34项 Lean 定理／50项新审计，201项继承审计分列。实际六读数比较及有支持的提交取代正确变化警报；每段7单位是充分预算，段内共同关系、参考绑定、精确仿射类及复查日程仍明示。保留仅检查零点、六单位不足提交、常数通道、迟发变化、跨时参考和非仿射重合。此有限复查连接完成；当时选定在实际活动中保持参考—使用关系或界定其偏离，不宣告自供支持、普遍可靠或演化优越性。 生长—分割新增31项 Lean 定理／59项新审计，326项闭包审计分列；本构造中原先指定分割的连接完成。发育日程、分化、断裂发生规律、催化对应及有限支持仍明示。共同八槽准备要求整池无剩余，并未再生两种发育连接图；下一项是实际生长与维持关系的重建、传递及响应式断裂，不重开已完成的有限分割或成熟。原典力学及空间解释获信用，无广泛优越性结论。 有界变化新增42项 Lean 定理／56项新审计，251项继承审计分列。精确共同初始参考、非零初始增益、仿射类、实际变化／噪声界及新功能门仍给定；年龄按变化步计，未增加门的物质实现或支持账。有限历史连接完成；低估界可误报，过宽界可保留真实损坏，零年龄仍有噪声项。下一连接为适用界的形成／维持，以及失去确定判断后有支持的复查，不重开一般校准或宣告普遍伦理、种群及理论优越性。 重复链状生成新增31项定理／47项新审计，373项闭包审计中326项继承声明另计。准备到一个固定规律结构类的重复接续现完成；初始结构激活另需八支持，一条完整链 g 轮另需8(2^g−1)组分及9(2^g−1)支持。相容、八组分切分域、操作次序、无未表示承重边和供给明示；未重建旧分枝类。下一项是组织规律的可遗传差异、其形成与选择，不重开已完成有限接续，不宣告力学、自供或比较优越性。 社会程序新增29项定理／53项审计，实际闭包81项；种子授权、认可、复制与更高层规则给定，未证扩散优势或伦理正当性。",
+    "scope_en": "Preserves 16/26, 19/41, 7/13 and 6/6 theorem/audit results and counterexamples; seven new local-balance theorems / eleven audits pass. The 54 videos/18 technical replicates, 33/190 sensitivity, 3,808 records/3,600 links, 42/72 versus 7/72, 3,424 forecasts and 139-cohort/485-row checks retain their scopes. Eight growth and two competition summaries cannot become cycle probabilities. Initial absence versus later loss, joint calibration, broad comparison and support renewal remain open. Four original movies are preserved and 44 selected-frame correspondences pass; frames are not replicates. Exact genotype attribution, acquisition timing and linked descendants remain incomplete; no cycle probability is fitted. The new direction assessment is complete; ecological scaffolding, endogenization and evolutionary connectionism are strong comparators. Superiority is unestablished, with no new forecast or theorem. New checks cover 45 cultures/11 dated cohorts, preserving a 784-versus-769 count ambiguity and numerical capacity failure; event integration is an explicit model adaptation. The focused account is complete at the selected scope: 20 new Lean theorems / 44 new declaration audits / 113 closure audits. Finite-history inheritance and reconstruction do not establish invasion stability or indefinite renewal; primary interventions and strong comparators are assessed, while broad superiority remains unestablished. New checks cover 4,383 directory entries, 388 timestamps, 114 first/last image records and two complete pixel fields; scene offsets reach 225.89 seconds and the restart gap is 337.39 seconds. Treatment/endpoint identity, interior trajectories and six-day descendants remain unjoined; no new theorem. Eleven new Lean theorems / 24 new audits and 34,768 executed comparisons establish equivalence under matched laws, not Watson-model replication or an empirical win. The direct comparison is closed; independently constrained joint empirical prediction remains open. The theoretical integration and author counterreview are complete, with no new theorem. Internal premise reduction is distinct from demonstrated comparative economy; the ethical extension discloses G0 and further commitments. Empirical calibration is not this task’s theoretical completion gate; broad superiority remains unestablished. New checks cover 91 image subblocks and 23,855,104 crop pixels, preserving detection and movement sensitivity. Four longest assigned tracks include local-loss candidates and a still-visible boundary object; no collapse rate, descendant join or new theorem is asserted. Twenty-eight new Lean theorems / forty audits cover finite-history bounds and conditional identification. Mesoscopic production, routing and transmission remain supplied, not derived from cell events. Conventional life-cycle models retain full credit; the then-pending connectionist recovery is addressed below, while broad superiority remains open. Twenty-nine new Lean theorems / 41 declaration audits pass under explicit developmental and selection laws. Finite adverse cases and supplied native laws, initial states and mutation/transmission premises remain. The named directional recovery is complete; memory, interference and continued revision across patterns were its selected continuation. No new empirical prediction or broad novelty is claimed. Thirty-seven new Lean theorems / fifty-seven audits pass, with 166 closure audits. The finite programme connection is complete; trial success, copying, mature output and renewal remain supplied. A separate-averages approximation has an opposite growth sign; the equally informed conventional mechanism agrees. No new empirical result or broad superiority is claimed. The developmental-memory connection now has 28 new Lean theorems / 44 new declaration audits, with 41 inherited audits separately rebuilt; ambiguous-cue failure is preserved. Scope is sign recall with self-interactions and full-decay tanh. Adapted training profiles, proposals, step size, schedule and readout horizons remain explicit. The bounded multi-pattern memory connection is complete; interference consequences entering update-rule formation or revision were its selected continuation. Capacity, amplitude convergence, biological applicability and full-theory completion are not claimed. The contact reconstruction connection adds 30 Lean theorems / 57 new audits, with 223 closure audits. It replaces the independent success rate and parental bond flag in this construction without reusing the old offspring formula. Compatibility, uniform replacement sampling, partition formation and mature-stage provision remain explicit. A one-cycle comparison is not invasion; partition formation/cost and a population interface retaining seed distinctions are next. Strong spatial models retain full credit. Consequence-dependent updater replacement adds 36 Lean theorems / 57 new audits, with 85 inherited audits separately rebuilt. One-step full-profile readout, two available rules, faithful success, construction and support laws remain explicit. Failed old-rule replacement, no gain on unchanged tasks, extra cost, false reports and source exhaustion are preserved. This finite replacement connection is complete; construction of the responsive rule and reliable access from local relations was its selected continuation, with no population-frequency, ethical-necessity or broad-superiority claim. Material maturation adds 28 Lean theorems / 44 new audits, with 267 closure audits. The finite preparation connection is complete; return follows from actual composition-dependent growth and routing. Production laws, routing recipe/capabilities, slot geometry, partition formation and supplies remain explicit. Primary comparison is not replication or superiority. Formation, inheritance and revision of reproductive recipes and partitions are next; completed material preparation is reused. Acquired discrimination and updater construction add 30 Lean theorems / 59 new audits, with 142 inherited audits separately rebuilt. Stable nonzero affine channels, bound references, component laws, an assembly plan and ten extra construction units/four parts at entrance remain explicit. Missing contact, constant channels, underfunding and altered transfer are preserved. This local correspondence is complete; maintaining reference-to-use correspondence through change was its selected continuation. Generic calibration/formation results are not reopened; no population, ethical or broad-superiority conclusion follows. Reference renewal adds 34 Lean theorems / 50 new audits, with 201 inherited audits separate. Actual six-reading comparison and supported commitment replace a correct change alarm. Seven units per block suffice; common within-block relations, bound references, the exact affine class and inspection schedule remain explicit. Zero-only checks, six-unit revision failure, constant channels, late change, mixed references and nonaffine aliasing retain limits. This finite inspection connection is complete; actual maintenance or bounded departure of reference-to-use relations was its selected continuation, with no self-funding, universal-reliability or evolutionary-superiority claim. Growth-to-fragmentation adds 31 Lean theorems / 59 new audits, with 326 closure audits separated. The formerly assigned partition is derived in this bounded construction. Developmental schedule, differentiation, fracture occurrence, catalytic correspondence and finite support remain explicit. The common eight-slot preparation requires the whole pool with no excess and does not regenerate either grown graph. Reconstruction/transmission of operative growth and retention relations with responsive fracture is next; completed finite fragmentation and maturation are not reopened. Primary biophysical and spatial accounts retain credit; no broad superiority follows. Bounded change adds 42 Lean theorems / 56 new audits, with 251 inherited audits separate. Coherent exact initial references, initially nonzero gain, the affine class, actual change/noise bounds and the new functional gate remain supplied. Age counts change steps; no new physical gate or support account is derived. The finite-history connection is complete. Understated bounds can falsely certify success, broad valid bounds can retain actual damage, and zero age retains a noise term. Next connect applicable envelope formation/maintenance to supported renewed inquiry after lost decisiveness; general calibration is not reopened and no universal ethical, population or theoretical superiority is asserted. Recurrent chain formation adds 31 theorems / 47 new audits, with 326 inherited declarations separate in the 373-audit closure. Preparation now joins repeatable structure in one fixed-law class. Activation costs eight extra support units; g rounds from one complete chain require 8(2^g−1) extra components and 9(2^g−1) support. Compatibility, the size-eight cleavage domain, operation order, no unrepresented load-bearing edges and feed remain explicit; the old branched class is not rebuilt. Heritable differences in organizing laws and their formation/selection are next; completed finite continuation is reused. Mechanics, autonomous feed and comparative superiority remain unproved. The social protocol adds 29 theorems / 53 audits with 81 in the actual closure; seed authority, recognition, copying and higher rules are supplied, with no propagation advantage or ethical warrant proved.",
+    "links": [
+      {
+        "label_zh": "当前表述与范围",
+        "label_en": "Current statement and scope",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#recursive-selection-and-the-generative-direction"
+      },
+      {
+        "label_zh": "生成的重构及实查",
+        "label_en": "Generated reconstruction and checks",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELECTION-RECURRENCE-INTEGRATION.md"
+      },
+      {
+        "label_zh": "完整演化目标",
+        "label_en": "Full evolutionary objective",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md"
+      },
+      {
+        "label_zh": "局部发育与关联形成",
+        "label_en": "Local development and formed association",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-ASSOCIATION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "生态留存实证与核验",
+        "label_en": "Measured ecological retention and checks",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ECOLOGICAL-SELECTION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "堆积、断裂与数量对应",
+        "label_en": "Packing, fragmentation and census correspondence",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PACKING-FRAGMENTATION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "生命周期与物理筛选核验",
+        "label_en": "Life-cycle and physical sorting checks",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SETTLING-CORRESPONDENCE-INTEGRATION.md"
+      },
+      {
+        "label_zh": "聚合实测与共存对应",
+        "label_en": "Measured aggregation and coexistence",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AGGREGATION-SELECTION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "谱系与实际生命周期",
+        "label_en": "Recorded lineage and realized life cycle",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LINEAGE-CONTINUATION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "谱系的时间遮蔽预测",
+        "label_en": "Chronological lineage forecasting",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LINEAGE-FORECAST-INTEGRATION.md"
+      },
+      {
+        "label_zh": "共同条件及发育预测迁移",
+        "label_en": "Shared conditions and developmental transfer",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-TRANSFER-INTEGRATION.md"
+      },
+      {
+        "label_zh": "生成的氧条件与膜发育",
+        "label_en": "Generated oxygen conditions and mat development",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-CONDITIONS-INTEGRATION.md"
+      },
+      {
+        "label_zh": "界面形成、失效与再形成",
+        "label_en": "Surface formation, loss and reformation",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-HISTORY-INTEGRATION.md"
+      },
+      {
+        "label_zh": "比较贡献与下一检验",
+        "label_en": "Comparative contribution and next test",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-COMPARATIVE-DIRECTION.md"
+      },
+      {
+        "label_zh": "情境形成与留存选择",
+        "label_en": "Contextual establishment and retention selection",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md"
+      },
+      {
+        "label_zh": "演化组织的完整聚焦说明",
+        "label_en": "Completed focused account of evolutionary organization",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md"
+      },
+      {
+        "label_zh": "整合、强比较及完成评估",
+        "label_en": "Integration, strong comparison and completion assessment",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "实际后继重建的检查回执",
+        "label_en": "Checked reconstruction through actual descendants",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/developmental-reconstruction-verification/verification.json"
+      },
+      {
+        "label_zh": "原始证据及读取范围",
+        "label_en": "Primary evidence and reading scope",
+        "path": "sources/evolutionary-selection/evolutionary-organization/README.md"
+      },
+      {
+        "label_zh": "原始显微尺度、时钟与身份对应",
+        "label_en": "Original microscopy scale, timing and identity correspondence",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MICROSCOPY-CORRESPONDENCE-INTEGRATION.md"
+      },
+      {
+        "label_zh": "直接网络比较与范围",
+        "label_en": "Direct network comparison and scope",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md"
+      },
+      {
+        "label_zh": "理论整合及下一推导",
+        "label_en": "Theoretical integration and next derivation",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-THEORETICAL-INTEGRATION.md"
+      },
+      {
+        "label_zh": "Ren的理论重点指令",
+        "label_en": "Ren’s theoretical-focus instruction",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-evolution-theoretical-focus.md"
+      },
+      {
+        "label_zh": "实测发育史及观察界限",
+        "label_en": "Measured developmental history and observation limits",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md"
+      },
+      {
+        "label_zh": "原始像素与独立解码核验",
+        "label_en": "Original pixels and independent decoding checks",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/developmental-history/measurement-verification.json"
+      },
+      {
+        "label_zh": "重建能力的选择及反审",
+        "label_en": "Selection on reconstruction and counterreview",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONSTRUCTIVE-SELECTION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "回返阈值及识别的检查回执",
+        "label_en": "Checked return threshold and identification",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/reconstructive-selection-verification/verification.json"
+      },
+      {
+        "label_zh": "强生命周期对手与原典",
+        "label_en": "Strong life-cycle comparators and primary sources",
+        "path": "sources/evolutionary-selection/reconstructive-selection/README.md"
+      },
+      {
+        "label_zh": "学习方向恢复及反审",
+        "label_en": "Learning-direction recovery and counterreview",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CONNECTIONISM-RECOVERY.md"
+      },
+      {
+        "label_zh": "恢复的形式源码",
+        "label_en": "Recovery formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/ConnectionistRecovery.lean"
+      },
+      {
+        "label_zh": "29项定理检查回执",
+        "label_en": "29-theorem verification receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/connectionist-recovery-verification.json"
+      },
+      {
+        "label_zh": "局部组装推出选择与反审",
+        "label_en": "Assembly-derived selection and counterreview",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md"
+      },
+      {
+        "label_zh": "组装及入侵条件检查回执",
+        "label_en": "Checked assembly and invasion condition",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/assembly-derived-selection-verification/verification.json"
+      },
+      {
+        "label_zh": "发育记忆、干扰与恢复",
+        "label_en": "Developmental memory, interference and restoration",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-DEVELOPMENTAL-MEMORY.md"
+      },
+      {
+        "label_zh": "记忆研究的事先范围",
+        "label_en": "Prospective memory scope",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-DEVELOPMENTAL-MEMORY-PROTOCOL.md"
+      },
+      {
+        "label_zh": "记忆连接的形式源码",
+        "label_en": "Memory connection formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/DevelopmentalMemory.lean"
+      },
+      {
+        "label_zh": "28项新定理检查回执",
+        "label_en": "28-new-theorem verification receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/developmental-memory-verification.json"
+      },
+      {
+        "label_zh": "接触重建与反审",
+        "label_en": "Contact reconstruction",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-RECONSTRUCTION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "30项定理核验",
+        "label_en": "30-theorem verification",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/contact-reconstruction-verification/README.md"
+      },
+      {
+        "label_zh": "结构传递原典",
+        "label_en": "Structural transmission source",
+        "path": "sources/evolutionary-selection/contact-reconstruction/README.md"
+      },
+      {
+        "label_zh": "后果与更新规则替换",
+        "label_en": "Consequences and updater replacement",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-UPDATER-CONSEQUENCES.md"
+      },
+      {
+        "label_zh": "更新器接续的事先范围",
+        "label_en": "Prospective updater-continuation scope",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-UPDATER-CONSEQUENCES-PROTOCOL.md"
+      },
+      {
+        "label_zh": "更新器后果的形式源码",
+        "label_en": "Updater-consequence formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/UpdaterConsequences.lean"
+      },
+      {
+        "label_zh": "36项新定理检查回执",
+        "label_en": "36-new-theorem verification receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/updater-consequences-verification.json"
+      },
+      {
+        "label_zh": "材料成熟与反审",
+        "label_en": "Material maturation",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-MATURATION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "28项定理核验",
+        "label_en": "28-theorem verification",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/material-maturation-verification/README.md"
+      },
+      {
+        "label_zh": "组成复制原典",
+        "label_en": "Composition-dependent replication",
+        "path": "sources/evolutionary-selection/material-maturation/README.md"
+      },
+      {
+        "label_zh": "取得辨别及更新构造",
+        "label_en": "Acquired discrimination and updater construction",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CALIBRATED-UPDATER.md"
+      },
+      {
+        "label_zh": "辨别构造事先范围",
+        "label_en": "Prospective discrimination/constructor scope",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CALIBRATED-UPDATER-PROTOCOL.md"
+      },
+      {
+        "label_zh": "局部校准与控制源码",
+        "label_en": "Local calibration/control formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/CalibratedUpdater.lean"
+      },
+      {
+        "label_zh": "30项辨别构造定理回执",
+        "label_en": "30-theorem constructor verification",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/calibrated-updater-verification.json"
+      },
+      {
+        "label_zh": "变化中的参考接续及反审",
+        "label_en": "Reference renewal and counterreview",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CALIBRATION-RENEWAL.md"
+      },
+      {
+        "label_zh": "参考接续事先范围",
+        "label_en": "Prospective reference-renewal scope",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CALIBRATION-RENEWAL-PROTOCOL.md"
+      },
+      {
+        "label_zh": "参考复查及修订源码",
+        "label_en": "Reference reinspection/revision formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/CalibrationRenewal.lean"
+      },
+      {
+        "label_zh": "34项参考接续定理回执",
+        "label_en": "34-theorem reference-renewal receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/calibration-renewal-verification.json"
+      },
+      {
+        "label_zh": "生长、分割与共同准备",
+        "label_en": "Growth fragmentation and preparation",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "分割连接实查",
+        "label_en": "Fragmentation verification",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/grown-fragmentation-verification/README.md"
+      },
+      {
+        "label_zh": "有界变化及辨别余量反审",
+        "label_en": "Bounded change and response-margin counterreview",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-DRIFT-MARGINS.md"
+      },
+      {
+        "label_zh": "有界变化事先范围",
+        "label_en": "Prospective bounded-change scope",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-DRIFT-MARGINS-PROTOCOL.md"
+      },
+      {
+        "label_zh": "变化界及原生余量源码",
+        "label_en": "Change-bound and native-margin formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/DriftMargins.lean"
+      },
+      {
+        "label_zh": "42项有界变化定理回执",
+        "label_en": "42-theorem bounded-change receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/drift-margins-verification.json"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md#recurrent-assembly-from-prepared-material",
+        "label_zh": "准备与重复结构生成",
+        "label_en": "Preparation and recurrent structure"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/recurrent-assembly-verification/README.md",
+        "label_zh": "重复生成实查",
+        "label_en": "Recurrent assembly verification"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/results/records/recurrent-chain-assembly.json",
+        "label_zh": "重复链状生成成果",
+        "label_en": "Recurrent chain assembly result"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md#organizational-rules-become-inheritable",
+        "label_zh": "社会组织变异与继承",
+        "label_en": "Organizational variation and inheritance"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/organizational-rule-inheritance-verification/README.md",
+        "label_zh": "社会程序实查",
+        "label_en": "Social-protocol verification"
+      },
+      {
+        "path": "sources/evolutionary-selection/organizational-inheritance/README.md",
+        "label_zh": "组织原始材料与比较",
+        "label_en": "Organizational primary records and comparison"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/results/records/organizational-rule-inheritance.json",
+        "label_zh": "组织规则继承成果",
+        "label_en": "Organizational rule inheritance result"
+      }
+    ]
+  },
+  "entry_after": {
+    "id": "C14",
+    "title_zh": "生成对选择的递归影响",
+    "title_en": "Recursive influence of generation on selection",
+    "claim_zh": "活动后果可改变后继形成与选择条件，贡献变体不必获益。重构、发育与聚合区分遗传群体和运输集合；细菌回复实验接通遗传切换与周期完成。谱系预测保留总体优势及局部失败。新增原始实证支持呼吸形成氧梯度并改变后续选择；结构形成史须接入发育迁移，常规解释获完整信用。 原始延时研究进一步记录界面小筏形成、下落和再形成；酸碱条件改变空间组织，须与持续膜结构和实际后代分别对应。 此前比较方向提出独立机制约束下的跨条件接续，以及重构和选择关系自身的改变。 新的24小时形成实测与常规模型进一步接通建立条件和留存占比；较低离散的优势取决于相对生长，反例保留。 已完成的演化组织说明进一步接通实际取样、继承发育状态与跨转移重建；组织改变后续取样结果，真实供给及后续修订均保留。 原始显微数据现核对真实尺度及逐位置拍摄时钟，混合培养两段采集的位置配置可接续；成像对应与培养物身份仍分别论证。 直接同等网络比较现证明重构机制具有精确的常规实现，包含依当前状态选择及失败行动。 Ren现明确要求聚焦理论：复用形成、重构、更新器及目的修订成果，比较其独立前提与额外解释，当时选定具体联结论学习结果的恢复。 预先固定视野的91帧现接成实测发育史；增长后的局部消失与轨迹的边界删失分别保留，观察结束不独自说明结构丧失。 新理论连接把后继重建能力接到完整回返路径的选择阈值及繁殖代价；直接外形延续可下降，第一代相同产出仍可掩盖相反的增长条件。 现已恢复单步Hebb方向，有限循环发育的后果响应由规律导出；tanh符号相容条件保持方向，并支持有限关系改变，反馈和选择关系改变可反转局部增益。 有限组装程序现从实际消耗及成功停止共同推出P列产出和重建比例；成功概率不同于后继比例，额外尝试可提高成功却消除增长优势。既有类型的增长因子接入相邻规则入侵条件。 新的共同历史由逐项非线性选择推出留存关系：同一网络从不完整线索重现两种格局，持续偏向一方造成旧格局失去重现能力，继续修订又能恢复；当前选择改善不保证保留旧能力。 实际传递组成与保留接触机会现导出局部成功率，后继自行重建成键；同一亲代、同平均成键率和接触消耗仍可因后继间机会分布不同而产生不同重建。不同种类传播体的响应不能无条件压成同一个回返系数。 后续同史构造把反复干扰造成的实际反应失败接到更新器维持与替换：由原生发育算出回报差别，保留旧关系与剩余支持，新规则实际改变后续更新并取得维持所需支持。 三阶段接续现证明条件性的有限周期回返，平衡混合时可用发育后响应的均值合并；成熟亲代的准备规律仍须实现。 组成生成与付费安放现实现指定亲代准备：同类生成使原先接触重建优势倒转，互补生成又改变排序；失败保留未用组成和支持，未完成指定返回不等于死亡。 参考接触现取得未知仿射通道的实际读数，形成的局部比较与抑制连接推出响应式更新，并在保留网络及支持记录中运行；校准后的通道变化可造成实际误报并阻止修复。 新参考比较现决定保留或修订已取得的读数，并实际恢复原网络更新；有限工作段之间可以改变通道。仿射通道零点相同、增益同向恰好保留全部符号判断，参数变化不独自等于能力丧失。 生长与断键现从实际连接图导出后继成员，接入共同材料准备；同组成及同边数可有不同共同传递，均匀断键与最老边先断使排序反转。新形成的替代维持关系还可使原有断键不再导致群体分裂。 实际逐步变化与噪声现推出取得读数的误差界，原生网络推出反应余量；工作段内通道可持续改变而在充分年龄窗口内保留实际修复及后续两类记忆。区间跨界保留不确定，可靠性取决于关系变化与辨别余量的共同条件。 实际安放材料现经逐项接合生成链，断裂保留内部边，片段经同一规律重建为可再分割链；任意有限轮次在共同材料和支持预算下实际接续，失败保留未完成后继及余料。 社会组织接续现由共同工作形成资格，经实际提案与授权改变规则，分化后继承的程序改变后续筛选；规则复制与实际参与分开，技术接续可保持而规则修订能力失去。 10月9日按Ren的系统／子系统纠正：从共同活动中分化、相互维持和改变的反馈解释接续；工作、能力、参与及边界变化尚未由局部程序证明闭合。",
+    "claim_en": "Consequences can change successor formation and selection without guaranteeing contributor advantage. Reconstruction, development and aggregation distinguish inherited clusters from transport groups; bacterial reversion links switching to cycle completion. Lineage forecasts retain aggregate gains and local failures. Primary evidence now links respiration-generated oxygen gradients to changed selection; structural development must enter transferable prediction. Conventional explanation receives full credit. Original time-lapse research adds recurring surface rafts and pH-sensitive spatial organization, requiring separate correspondences for persistent mat structure and actual descendants. Earlier comparative work proposed continuation across conditions constrained by independent mechanisms, followed by changes in reconstruction and selection relations. New 24-hour observations and a conventional model connect establishment to retained representation; lower dispersal gains only under the relative-growth condition, with an adverse contrast preserved. The completed evolutionary-organization account now connects actual sampling, inherited developmental state and reconstruction across transfers; formed organization changes later sampling, with actual provision and subsequent revision retained. Original microscopy now supplies checked scale and position-specific capture times, with continued position configuration across two rescue acquisitions; imaging correspondence and culture identity remain distinct. A direct matched-network comparison now establishes an exact conventional realization of the reconstruction mechanism, including shared state-dependent selectors and failed actions. Ren now directs a theoretical focus: reuse formation, reconstruction, updater and goal-revision results, compare their independent premises and added explanation, and selected recovery of a specific connectionist learning result. A predefined field now has a measured 91-frame developmental history; local disappearance after growth is distinguished from boundary censoring, so an observation ending does not alone establish structural loss. A new theoretical connection gives a full-cycle selection threshold and reproductive cost ceiling for inherited reconstruction; direct resemblance can fall, and identical first-generation outputs can conceal opposite growth conditions. The single-step Hebbian direction is now recovered. Finite recurrent sensitivity follows from the developmental law; a sign-compatible tanh regime preserves the direction through finite changes, while feedback and changed selective relations can reverse local gains. A finite assembly programme now derives P-column production and reconstruction jointly from paid attempts and stopping. Success probability differs from the descendant fraction, and added attempts can improve success while removing growth advantage. The resident factor enters an adjacent-rule invasion condition. A new common history derives retained relations from coordinate-wise nonlinear selection: the same network recalls two patterns from incomplete cues, continued emphasis on one destroys old recall, and further revision restores it. Current-score improvement does not guarantee preservation of an earlier capacity. Actual transmitted components and retained contact slots now determine local success, with each successor rebuilding its own bond. The same parent, mean encounter rate and cost can yield different reconstruction because opportunities are distributed differently across successors. Distinct seed responses cannot unconditionally be collapsed to one return coefficient. A subsequent common history connects actual response failures from repeated interference to updater maintenance and replacement: native development determines return differences, old relationships and remaining support persist, and the new rule governs later updates and earns renewal. A three-stage continuation proves conditional finite-cycle return and permits aggregation by the mean developed response under a balanced mixture; common mature-parent preparation still requires realization. Component production and paid routing now realize preparation of the specified parent: same-type production reverses the contact reconstruction ranking, while complementary production changes it again. Failed preparation retains components and work; missing the specified return does not establish death. Reference contacts now acquire actual readings of unknown affine channels. Formed local comparisons and inhibition derive responsive updating and operate in the retained network/support history; channel changes after calibration can cause false success and suppress repair. Fresh reference comparison now determines retention or revision of acquired readings and restores native updating across finite blocks with changed channels. Equal zero and same gain orientation exactly preserve the all-input affine sign interface; parameter change alone does not establish lost capacity. Growth and actual edge removal now derive successor membership from formed connections and join common material preparation. Equal composition and edge counts can yield different cotransmission; uniform and oldest-edge cuts reverse the ranking. A newly formed alternative retention route can also prevent a formerly separating cut from fragmenting the group. Actual successive changes and noise now imply acquired-reading error bounds, while native network responses imply a positive margin. Channels may keep changing within a block while actual repair and subsequent two-memory retention persist through a sufficient age window. Intervals crossing the boundary retain uncertainty; reliability depends jointly on relational change and discrimination margin. Actual placed material now forms a chain through tokenwise attachment; cleavage retains internal edges, and the fragments rebuild under the same law into cleavable chains. Every finitely supported number of rounds executes with shared material/work accounting; failure retains incomplete descendants and unused components. A social-organizational continuation now forms mandates through work, changes a rule through actual proposal and authorization, and inherits a procedure that changes later filtering; copied rules differ from actual participation, and technical continuation can persist while revision capacity is lost. The 9 October systems/subsystems correction explains continuation through differentiation and reciprocal maintenance/transformation within common activity; the local protocol proof does not close work, capability, participation or changing boundaries.",
+    "scope_zh": "保留16/26、19/41、7/13及6/6定理/审计与反例；本轮新增7项局部定理／11项审计。54段视频/18项技术重复、33/190敏感性、3,808记录/3,600联系及42/72对7/72保持范围；3,424项预测及139分组/485行核验保留。新核对八项生长及两项竞争摘要，不能转作周期概率。初始未形成与后来失效须区分；联合校准、广泛比较与支持更新仍开放。 新保存四份影片，44帧像素对应核验通过；帧数不是重复。基因标签、拍摄时钟及后代联系未齐，未拟合周期概率。 新方向评估已完成，须与生态支架、内生化及演化联结论等强对手比较；优越性未获确立，无新预测或定理。 新核对45项培养物／11个日期组，保留784对769数量歧义与数值容量失败；事件求解只作显式模型适配。 聚焦说明现按用户选定范围完成：20项新 Lean 定理／44项新声明审计／113项闭包审计。有限历史继承及重建不等于入侵稳定性或无限更新；原始干预和强比较已评估，广泛优越性仍未成立。 新核对4,383项目录、388项时间戳、114项首末图像记录及两幅完整像素场；位置时差最大225.89秒，重启间隔337.39秒。处理／终点身份、内部轨迹及六日后代仍未接齐，无新定理。 新增11项 Lean 定理／24项审计及34,768项执行，结论是同等法则下等价，非 Watson 模型复现或经验胜出。直接比较已关合，独立约束的联合经验预测仍开放。 理论整合与作者反审已完成，无新定理；局部前提消解不等于已证比较经济性，伦理延展明示G0及附加承诺。经验校准不作本轮理论完成门槛；广泛优越性仍未证。 新核对91项图像子块及23,855,104个裁剪像素；三种检测阈值与三种移动界限的敏感性保留。四条最长分配轨迹含局部骤失候选及仍可见的边界对象；不拟合坍塌率，不补造后代连接，无新定理。 新增28项 Lean 定理／40项审计，含有限历史界及条件识别；中观产出、路由及传递仍给定，未由细胞事件导出。常规生命周期模型获完整信用，当时的联结论学习恢复待办现由后续成果接通，广泛优越性仍开放。 新增29项Lean定理／41项声明审计通过，使用明示的发育与选择规律；保留有限反例及原生法则、初始状态、变异传递等前提。具名方向恢复完成，当时选定多格局记忆、干扰和持续修订；无新经验预测或广泛原创性声明。 新增37项 Lean 定理／57项新审计，含166项闭包审计；有限程序连接已完成，单次成功、复制、成熟产出及更新仍给定。独立平均近似有增长符号反例，同信息的常规机制模型保持一致，无新实证或广泛优越性。 发育记忆连接现有28项新 Lean 定理／44项新声明审计，另重建41项继承审计；模糊线索失败保留。限于含自作用、完全衰减tanh的符号重现，训练初始适应、提案、步长、日程及读出视野明示。多格局记忆连接按此范围完成；当时选定干扰后果进入更新规则形成或修订，不宣告容量、幅值收敛、生物适用或全理论完成。 接触重建连接新增30项 Lean 定理／57项新审计，含223项闭包审计；替代本构造中独立成功率和亲代成键标记复制，未替代旧产出公式。兼容、均匀有放回取样、分割及成熟供给仍明示；单周期比较不冒充入侵。下一项是分割形成及成本与后继类型保留的种群连接；强空间模型获完整信用。 后果—更新器替换新增36项 Lean 定理／57项新审计，另重建85项继承审计。明示单步完整格局读出、两种可用规则、可靠成功信号、形成及支持法则；保留旧规则再次失效、同任务无优势、额外成本、误报与支持耗尽。此有限替换连接完成；当时选定可用响应规则及可靠辨别由局部关系构成的实际对应，非种群频率、伦理必然或广泛优越性结论。 材料成熟新增28项 Lean 定理／44项新审计，含267项闭包审计；有限准备连接完成，整体返回概率由实际组成生长和路由推出。生成规律、装配配方及能力、槽位几何、分割形成与供给仍给定；原典比较不冒充复现或优越性。下一项是繁殖配方和分割的形成、传递及修订，不重开已有材料准备。 辨别取得及更新构造新增30项 Lean 定理／59项新审计，另重建142项继承审计。明示稳定非零仿射通道、参考绑定、部件法则、构造计划，以及入口额外10单位构造支持与4个部件。缺接触、常数通道、支持不足和传递改变均保留。此局部对应完成；当时选定变化中的参考—使用对应，不重开一般校准或形成机制，不宣告种群、伦理或广泛优越性。 参考接续新增34项 Lean 定理／50项新审计，201项继承审计分列。实际六读数比较及有支持的提交取代正确变化警报；每段7单位是充分预算，段内共同关系、参考绑定、精确仿射类及复查日程仍明示。保留仅检查零点、六单位不足提交、常数通道、迟发变化、跨时参考和非仿射重合。此有限复查连接完成；当时选定在实际活动中保持参考—使用关系或界定其偏离，不宣告自供支持、普遍可靠或演化优越性。 生长—分割新增31项 Lean 定理／59项新审计，326项闭包审计分列；本构造中原先指定分割的连接完成。发育日程、分化、断裂发生规律、催化对应及有限支持仍明示。共同八槽准备要求整池无剩余，并未再生两种发育连接图；下一项是实际生长与维持关系的重建、传递及响应式断裂，不重开已完成的有限分割或成熟。原典力学及空间解释获信用，无广泛优越性结论。 有界变化新增42项 Lean 定理／56项新审计，251项继承审计分列。精确共同初始参考、非零初始增益、仿射类、实际变化／噪声界及新功能门仍给定；年龄按变化步计，未增加门的物质实现或支持账。有限历史连接完成；低估界可误报，过宽界可保留真实损坏，零年龄仍有噪声项。下一连接为适用界的形成／维持，以及失去确定判断后有支持的复查，不重开一般校准或宣告普遍伦理、种群及理论优越性。 重复链状生成新增31项定理／47项新审计，373项闭包审计中326项继承声明另计。准备到一个固定规律结构类的重复接续现完成；初始结构激活另需八支持，一条完整链 g 轮另需8(2^g−1)组分及9(2^g−1)支持。相容、八组分切分域、操作次序、无未表示承重边和供给明示；未重建旧分枝类。下一项是组织规律的可遗传差异、其形成与选择，不重开已完成有限接续，不宣告力学、自供或比较优越性。 社会程序新增29项定理／53项审计，实际闭包81项；种子授权、认可、复制与更高层规则给定，未证扩散优势或伦理正当性。 本次为既有成果的解释与对应纠正；复用已检查系统判据、保留强系统动力学比较，零新定理或成果编号。",
+    "scope_en": "Preserves 16/26, 19/41, 7/13 and 6/6 theorem/audit results and counterexamples; seven new local-balance theorems / eleven audits pass. The 54 videos/18 technical replicates, 33/190 sensitivity, 3,808 records/3,600 links, 42/72 versus 7/72, 3,424 forecasts and 139-cohort/485-row checks retain their scopes. Eight growth and two competition summaries cannot become cycle probabilities. Initial absence versus later loss, joint calibration, broad comparison and support renewal remain open. Four original movies are preserved and 44 selected-frame correspondences pass; frames are not replicates. Exact genotype attribution, acquisition timing and linked descendants remain incomplete; no cycle probability is fitted. The new direction assessment is complete; ecological scaffolding, endogenization and evolutionary connectionism are strong comparators. Superiority is unestablished, with no new forecast or theorem. New checks cover 45 cultures/11 dated cohorts, preserving a 784-versus-769 count ambiguity and numerical capacity failure; event integration is an explicit model adaptation. The focused account is complete at the selected scope: 20 new Lean theorems / 44 new declaration audits / 113 closure audits. Finite-history inheritance and reconstruction do not establish invasion stability or indefinite renewal; primary interventions and strong comparators are assessed, while broad superiority remains unestablished. New checks cover 4,383 directory entries, 388 timestamps, 114 first/last image records and two complete pixel fields; scene offsets reach 225.89 seconds and the restart gap is 337.39 seconds. Treatment/endpoint identity, interior trajectories and six-day descendants remain unjoined; no new theorem. Eleven new Lean theorems / 24 new audits and 34,768 executed comparisons establish equivalence under matched laws, not Watson-model replication or an empirical win. The direct comparison is closed; independently constrained joint empirical prediction remains open. The theoretical integration and author counterreview are complete, with no new theorem. Internal premise reduction is distinct from demonstrated comparative economy; the ethical extension discloses G0 and further commitments. Empirical calibration is not this task’s theoretical completion gate; broad superiority remains unestablished. New checks cover 91 image subblocks and 23,855,104 crop pixels, preserving detection and movement sensitivity. Four longest assigned tracks include local-loss candidates and a still-visible boundary object; no collapse rate, descendant join or new theorem is asserted. Twenty-eight new Lean theorems / forty audits cover finite-history bounds and conditional identification. Mesoscopic production, routing and transmission remain supplied, not derived from cell events. Conventional life-cycle models retain full credit; the then-pending connectionist recovery is addressed below, while broad superiority remains open. Twenty-nine new Lean theorems / 41 declaration audits pass under explicit developmental and selection laws. Finite adverse cases and supplied native laws, initial states and mutation/transmission premises remain. The named directional recovery is complete; memory, interference and continued revision across patterns were its selected continuation. No new empirical prediction or broad novelty is claimed. Thirty-seven new Lean theorems / fifty-seven audits pass, with 166 closure audits. The finite programme connection is complete; trial success, copying, mature output and renewal remain supplied. A separate-averages approximation has an opposite growth sign; the equally informed conventional mechanism agrees. No new empirical result or broad superiority is claimed. The developmental-memory connection now has 28 new Lean theorems / 44 new declaration audits, with 41 inherited audits separately rebuilt; ambiguous-cue failure is preserved. Scope is sign recall with self-interactions and full-decay tanh. Adapted training profiles, proposals, step size, schedule and readout horizons remain explicit. The bounded multi-pattern memory connection is complete; interference consequences entering update-rule formation or revision were its selected continuation. Capacity, amplitude convergence, biological applicability and full-theory completion are not claimed. The contact reconstruction connection adds 30 Lean theorems / 57 new audits, with 223 closure audits. It replaces the independent success rate and parental bond flag in this construction without reusing the old offspring formula. Compatibility, uniform replacement sampling, partition formation and mature-stage provision remain explicit. A one-cycle comparison is not invasion; partition formation/cost and a population interface retaining seed distinctions are next. Strong spatial models retain full credit. Consequence-dependent updater replacement adds 36 Lean theorems / 57 new audits, with 85 inherited audits separately rebuilt. One-step full-profile readout, two available rules, faithful success, construction and support laws remain explicit. Failed old-rule replacement, no gain on unchanged tasks, extra cost, false reports and source exhaustion are preserved. This finite replacement connection is complete; construction of the responsive rule and reliable access from local relations was its selected continuation, with no population-frequency, ethical-necessity or broad-superiority claim. Material maturation adds 28 Lean theorems / 44 new audits, with 267 closure audits. The finite preparation connection is complete; return follows from actual composition-dependent growth and routing. Production laws, routing recipe/capabilities, slot geometry, partition formation and supplies remain explicit. Primary comparison is not replication or superiority. Formation, inheritance and revision of reproductive recipes and partitions are next; completed material preparation is reused. Acquired discrimination and updater construction add 30 Lean theorems / 59 new audits, with 142 inherited audits separately rebuilt. Stable nonzero affine channels, bound references, component laws, an assembly plan and ten extra construction units/four parts at entrance remain explicit. Missing contact, constant channels, underfunding and altered transfer are preserved. This local correspondence is complete; maintaining reference-to-use correspondence through change was its selected continuation. Generic calibration/formation results are not reopened; no population, ethical or broad-superiority conclusion follows. Reference renewal adds 34 Lean theorems / 50 new audits, with 201 inherited audits separate. Actual six-reading comparison and supported commitment replace a correct change alarm. Seven units per block suffice; common within-block relations, bound references, the exact affine class and inspection schedule remain explicit. Zero-only checks, six-unit revision failure, constant channels, late change, mixed references and nonaffine aliasing retain limits. This finite inspection connection is complete; actual maintenance or bounded departure of reference-to-use relations was its selected continuation, with no self-funding, universal-reliability or evolutionary-superiority claim. Growth-to-fragmentation adds 31 Lean theorems / 59 new audits, with 326 closure audits separated. The formerly assigned partition is derived in this bounded construction. Developmental schedule, differentiation, fracture occurrence, catalytic correspondence and finite support remain explicit. The common eight-slot preparation requires the whole pool with no excess and does not regenerate either grown graph. Reconstruction/transmission of operative growth and retention relations with responsive fracture is next; completed finite fragmentation and maturation are not reopened. Primary biophysical and spatial accounts retain credit; no broad superiority follows. Bounded change adds 42 Lean theorems / 56 new audits, with 251 inherited audits separate. Coherent exact initial references, initially nonzero gain, the affine class, actual change/noise bounds and the new functional gate remain supplied. Age counts change steps; no new physical gate or support account is derived. The finite-history connection is complete. Understated bounds can falsely certify success, broad valid bounds can retain actual damage, and zero age retains a noise term. Next connect applicable envelope formation/maintenance to supported renewed inquiry after lost decisiveness; general calibration is not reopened and no universal ethical, population or theoretical superiority is asserted. Recurrent chain formation adds 31 theorems / 47 new audits, with 326 inherited declarations separate in the 373-audit closure. Preparation now joins repeatable structure in one fixed-law class. Activation costs eight extra support units; g rounds from one complete chain require 8(2^g−1) extra components and 9(2^g−1) support. Compatibility, the size-eight cleavage domain, operation order, no unrepresented load-bearing edges and feed remain explicit; the old branched class is not rebuilt. Heritable differences in organizing laws and their formation/selection are next; completed finite continuation is reused. Mechanics, autonomous feed and comparative superiority remain unproved. The social protocol adds 29 theorems / 53 audits with 81 in the actual closure; seed authority, recognition, copying and higher rules are supplied, with no propagation advantage or ethical warrant proved. This is an interpretation/correspondence correction to the existing result, reusing checked systems criteria and a strong system-dynamics comparison; no new theorem or result identity.",
+    "links": [
+      {
+        "label_zh": "当前表述与范围",
+        "label_en": "Current statement and scope",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#recursive-selection-and-the-generative-direction"
+      },
+      {
+        "label_zh": "生成的重构及实查",
+        "label_en": "Generated reconstruction and checks",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELECTION-RECURRENCE-INTEGRATION.md"
+      },
+      {
+        "label_zh": "完整演化目标",
+        "label_en": "Full evolutionary objective",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md"
+      },
+      {
+        "label_zh": "局部发育与关联形成",
+        "label_en": "Local development and formed association",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-ASSOCIATION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "生态留存实证与核验",
+        "label_en": "Measured ecological retention and checks",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ECOLOGICAL-SELECTION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "堆积、断裂与数量对应",
+        "label_en": "Packing, fragmentation and census correspondence",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PACKING-FRAGMENTATION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "生命周期与物理筛选核验",
+        "label_en": "Life-cycle and physical sorting checks",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SETTLING-CORRESPONDENCE-INTEGRATION.md"
+      },
+      {
+        "label_zh": "聚合实测与共存对应",
+        "label_en": "Measured aggregation and coexistence",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AGGREGATION-SELECTION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "谱系与实际生命周期",
+        "label_en": "Recorded lineage and realized life cycle",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LINEAGE-CONTINUATION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "谱系的时间遮蔽预测",
+        "label_en": "Chronological lineage forecasting",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LINEAGE-FORECAST-INTEGRATION.md"
+      },
+      {
+        "label_zh": "共同条件及发育预测迁移",
+        "label_en": "Shared conditions and developmental transfer",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-TRANSFER-INTEGRATION.md"
+      },
+      {
+        "label_zh": "生成的氧条件与膜发育",
+        "label_en": "Generated oxygen conditions and mat development",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-CONDITIONS-INTEGRATION.md"
+      },
+      {
+        "label_zh": "界面形成、失效与再形成",
+        "label_en": "Surface formation, loss and reformation",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-HISTORY-INTEGRATION.md"
+      },
+      {
+        "label_zh": "比较贡献与下一检验",
+        "label_en": "Comparative contribution and next test",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-COMPARATIVE-DIRECTION.md"
+      },
+      {
+        "label_zh": "情境形成与留存选择",
+        "label_en": "Contextual establishment and retention selection",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md"
+      },
+      {
+        "label_zh": "演化组织的完整聚焦说明",
+        "label_en": "Completed focused account of evolutionary organization",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md"
+      },
+      {
+        "label_zh": "整合、强比较及完成评估",
+        "label_en": "Integration, strong comparison and completion assessment",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "实际后继重建的检查回执",
+        "label_en": "Checked reconstruction through actual descendants",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/developmental-reconstruction-verification/verification.json"
+      },
+      {
+        "label_zh": "原始证据及读取范围",
+        "label_en": "Primary evidence and reading scope",
+        "path": "sources/evolutionary-selection/evolutionary-organization/README.md"
+      },
+      {
+        "label_zh": "原始显微尺度、时钟与身份对应",
+        "label_en": "Original microscopy scale, timing and identity correspondence",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MICROSCOPY-CORRESPONDENCE-INTEGRATION.md"
+      },
+      {
+        "label_zh": "直接网络比较与范围",
+        "label_en": "Direct network comparison and scope",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md"
+      },
+      {
+        "label_zh": "理论整合及下一推导",
+        "label_en": "Theoretical integration and next derivation",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-THEORETICAL-INTEGRATION.md"
+      },
+      {
+        "label_zh": "Ren的理论重点指令",
+        "label_en": "Ren’s theoretical-focus instruction",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-evolution-theoretical-focus.md"
+      },
+      {
+        "label_zh": "实测发育史及观察界限",
+        "label_en": "Measured developmental history and observation limits",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md"
+      },
+      {
+        "label_zh": "原始像素与独立解码核验",
+        "label_en": "Original pixels and independent decoding checks",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/developmental-history/measurement-verification.json"
+      },
+      {
+        "label_zh": "重建能力的选择及反审",
+        "label_en": "Selection on reconstruction and counterreview",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONSTRUCTIVE-SELECTION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "回返阈值及识别的检查回执",
+        "label_en": "Checked return threshold and identification",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/reconstructive-selection-verification/verification.json"
+      },
+      {
+        "label_zh": "强生命周期对手与原典",
+        "label_en": "Strong life-cycle comparators and primary sources",
+        "path": "sources/evolutionary-selection/reconstructive-selection/README.md"
+      },
+      {
+        "label_zh": "学习方向恢复及反审",
+        "label_en": "Learning-direction recovery and counterreview",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CONNECTIONISM-RECOVERY.md"
+      },
+      {
+        "label_zh": "恢复的形式源码",
+        "label_en": "Recovery formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/ConnectionistRecovery.lean"
+      },
+      {
+        "label_zh": "29项定理检查回执",
+        "label_en": "29-theorem verification receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/connectionist-recovery-verification.json"
+      },
+      {
+        "label_zh": "局部组装推出选择与反审",
+        "label_en": "Assembly-derived selection and counterreview",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md"
+      },
+      {
+        "label_zh": "组装及入侵条件检查回执",
+        "label_en": "Checked assembly and invasion condition",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/assembly-derived-selection-verification/verification.json"
+      },
+      {
+        "label_zh": "发育记忆、干扰与恢复",
+        "label_en": "Developmental memory, interference and restoration",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-DEVELOPMENTAL-MEMORY.md"
+      },
+      {
+        "label_zh": "记忆研究的事先范围",
+        "label_en": "Prospective memory scope",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-DEVELOPMENTAL-MEMORY-PROTOCOL.md"
+      },
+      {
+        "label_zh": "记忆连接的形式源码",
+        "label_en": "Memory connection formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/DevelopmentalMemory.lean"
+      },
+      {
+        "label_zh": "28项新定理检查回执",
+        "label_en": "28-new-theorem verification receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/developmental-memory-verification.json"
+      },
+      {
+        "label_zh": "接触重建与反审",
+        "label_en": "Contact reconstruction",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-RECONSTRUCTION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "30项定理核验",
+        "label_en": "30-theorem verification",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/contact-reconstruction-verification/README.md"
+      },
+      {
+        "label_zh": "结构传递原典",
+        "label_en": "Structural transmission source",
+        "path": "sources/evolutionary-selection/contact-reconstruction/README.md"
+      },
+      {
+        "label_zh": "后果与更新规则替换",
+        "label_en": "Consequences and updater replacement",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-UPDATER-CONSEQUENCES.md"
+      },
+      {
+        "label_zh": "更新器接续的事先范围",
+        "label_en": "Prospective updater-continuation scope",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-UPDATER-CONSEQUENCES-PROTOCOL.md"
+      },
+      {
+        "label_zh": "更新器后果的形式源码",
+        "label_en": "Updater-consequence formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/UpdaterConsequences.lean"
+      },
+      {
+        "label_zh": "36项新定理检查回执",
+        "label_en": "36-new-theorem verification receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/updater-consequences-verification.json"
+      },
+      {
+        "label_zh": "材料成熟与反审",
+        "label_en": "Material maturation",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-MATURATION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "28项定理核验",
+        "label_en": "28-theorem verification",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/material-maturation-verification/README.md"
+      },
+      {
+        "label_zh": "组成复制原典",
+        "label_en": "Composition-dependent replication",
+        "path": "sources/evolutionary-selection/material-maturation/README.md"
+      },
+      {
+        "label_zh": "取得辨别及更新构造",
+        "label_en": "Acquired discrimination and updater construction",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CALIBRATED-UPDATER.md"
+      },
+      {
+        "label_zh": "辨别构造事先范围",
+        "label_en": "Prospective discrimination/constructor scope",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CALIBRATED-UPDATER-PROTOCOL.md"
+      },
+      {
+        "label_zh": "局部校准与控制源码",
+        "label_en": "Local calibration/control formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/CalibratedUpdater.lean"
+      },
+      {
+        "label_zh": "30项辨别构造定理回执",
+        "label_en": "30-theorem constructor verification",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/calibrated-updater-verification.json"
+      },
+      {
+        "label_zh": "变化中的参考接续及反审",
+        "label_en": "Reference renewal and counterreview",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CALIBRATION-RENEWAL.md"
+      },
+      {
+        "label_zh": "参考接续事先范围",
+        "label_en": "Prospective reference-renewal scope",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CALIBRATION-RENEWAL-PROTOCOL.md"
+      },
+      {
+        "label_zh": "参考复查及修订源码",
+        "label_en": "Reference reinspection/revision formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/CalibrationRenewal.lean"
+      },
+      {
+        "label_zh": "34项参考接续定理回执",
+        "label_en": "34-theorem reference-renewal receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/calibration-renewal-verification.json"
+      },
+      {
+        "label_zh": "生长、分割与共同准备",
+        "label_en": "Growth fragmentation and preparation",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "分割连接实查",
+        "label_en": "Fragmentation verification",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/grown-fragmentation-verification/README.md"
+      },
+      {
+        "label_zh": "有界变化及辨别余量反审",
+        "label_en": "Bounded change and response-margin counterreview",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-DRIFT-MARGINS.md"
+      },
+      {
+        "label_zh": "有界变化事先范围",
+        "label_en": "Prospective bounded-change scope",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-DRIFT-MARGINS-PROTOCOL.md"
+      },
+      {
+        "label_zh": "变化界及原生余量源码",
+        "label_en": "Change-bound and native-margin formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/DriftMargins.lean"
+      },
+      {
+        "label_zh": "42项有界变化定理回执",
+        "label_en": "42-theorem bounded-change receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/drift-margins-verification.json"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md#recurrent-assembly-from-prepared-material",
+        "label_zh": "准备与重复结构生成",
+        "label_en": "Preparation and recurrent structure"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/recurrent-assembly-verification/README.md",
+        "label_zh": "重复生成实查",
+        "label_en": "Recurrent assembly verification"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/results/records/recurrent-chain-assembly.json",
+        "label_zh": "重复链状生成成果",
+        "label_en": "Recurrent chain assembly result"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md#organizational-rules-become-inheritable",
+        "label_zh": "社会组织变异与继承",
+        "label_en": "Organizational variation and inheritance"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/organizational-rule-inheritance-verification/README.md",
+        "label_zh": "社会程序实查",
+        "label_en": "Social-protocol verification"
+      },
+      {
+        "path": "sources/evolutionary-selection/organizational-inheritance/README.md",
+        "label_zh": "组织原始材料与比较",
+        "label_en": "Organizational primary records and comparison"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/results/records/organizational-rule-inheritance.json",
+        "label_zh": "组织规则继承成果",
+        "label_en": "Organizational rule inheritance result"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md#systems-and-subsystems-form-the-relevant-dynamics",
+        "label_zh": "整体与子系统的反馈纠正",
+        "label_en": "Whole/subsystem feedback correction"
+      }
+    ]
+  },
+  "other_entries_preserved_at_edit": true,
+  "other_entry_count": 93,
+  "reviewed_paths": [
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+    "theories/shengsheng-buxi-generative-existence/results/records/organizational-rule-inheritance.json"
+  ],
+  "six_full_theory_rows_before": [
+    "| **1 Formation of evolving organization** | Formation, regulation and developmental reconstruction have conditional models. The new bond-history account derives common founder ancestry under local non-aggregative development, with a targeted biological correspondence. | Extend the connected explanation beyond the stated local laws, retaining genealogy, actual construction and empirical scope. Origins of cells/genomes and broader mechanisms are not established by this case. |",
+    "| **2 Recovery of established evolutionary explanations** | Explicit transmission models and the new two-type recurrence correspondence. | Correspondences covering the claimed selection, mutation, drift, movement, inheritance and ecological mechanisms, with valid ranges and failures. Mathematical claims require actual Lean checks. An abstract interface alone is insufficient. |",
+    "| **3 Evolution of the conditions of evolution** | Actual output determines reconstruction, and inherited retention changes development. Retention, packing and aggregation constrain sorting. A bacterial genealogy and directly linked reversion assay now connect inherited switching to actual cycle completion and subsequent lineage representation under a declared regime. Separate oxygen experiments establish activity-generated gradients and condition-dependent competitive outcomes. | Generalize and calibrate these connections with supported renewal, mixing and stochastic occurrence. Resolve the separate yeast census conversion and follow fragmentation/aggregation participants. Explain mutation, transmission and replacement contributions to prevalence; fixation alone is not causal proof. Laboratory protocol changes do not establish endogenous evolution of the selector. |",
+    "| **4 Novel organization and changed evolutionary units** | The completed [new-possibilities integration](NEW-POSSIBILITIES.md) distinguishes installed construction from encompassing law, gives a formed constructor and scope-specific description revision. The association model adds formed group relations; empirical aggregation distinguishes temporary sorting groups from inherited organizations. | Credit those results and connect formation to inherited retention and ongoing effect under actual evolutionary conditions. Common transport does not alone establish a new inherited unit. Broader changes of evolutionary units and sustained qualitative innovation require their own mechanisms and evidence. |",
+    "| **5 Demonstrated comparative strength** | Exact recurrence correspondence and a proved limit of snapshots omitting bonds. Retention data compare ordinary predictors with/without protocol information, including a worsening case. A source-bound settling sensitivity holds geometry fixed and reveals consequential density/drag choices; a conventional developmental life-cycle model receives credit. Chronological genealogy forecasts now demonstrate a gain over a changing stage average and two block alternatives, fully credited to conventional lineage inference. Dated assay transfer exposes stage-specific prediction failures. | Establish a consequential gain against an adequately specified rival with matched evidence and assumptions. Neither the reduced baselines nor disagreement between unvalidated velocity approximations establishes superior prediction. Measure sorting and descendants to decide the physical correspondence. Broad empirical superiority remains unestablished. |",
+    "| **6 Ethical continuation and evolved evaluation** | The [practical-judgment candidate](PRACTICAL-JUDGMENT.md) is complete and independently accepted at its explicit-axiom general-principles scope, with G0 and additional comparison/responsibility commitments disclosed. | Credit that completed scope; connect evolved evaluation to its actual recognition, calibration and implementation, preserving failures. Application correspondence and actual compliance require evidence. Reproductive advantage cannot silently serve as ethical authority. |"
+  ],
+  "six_full_theory_rows_after": [
+    "| **1 Formation of evolving organization** | Formation, regulation and developmental reconstruction have conditional models. The new bond-history account derives common founder ancestry under local non-aggregative development, with a targeted biological correspondence. | Extend the connected explanation beyond the stated local laws, retaining genealogy, actual construction and empirical scope. Origins of cells/genomes and broader mechanisms are not established by this case. |",
+    "| **2 Recovery of established evolutionary explanations** | Explicit transmission models and the new two-type recurrence correspondence. | Correspondences covering the claimed selection, mutation, drift, movement, inheritance and ecological mechanisms, with valid ranges and failures. Mathematical claims require actual Lean checks. An abstract interface alone is insufficient. |",
+    "| **3 Evolution of the conditions of evolution** | Actual output determines reconstruction, and inherited retention changes development. Retention, packing and aggregation constrain sorting. A bacterial genealogy and directly linked reversion assay now connect inherited switching to actual cycle completion and subsequent lineage representation under a declared regime. Separate oxygen experiments establish activity-generated gradients and condition-dependent competitive outcomes. | Generalize and calibrate these connections with supported renewal, mixing and stochastic occurrence. Resolve the separate yeast census conversion and follow fragmentation/aggregation participants. Explain mutation, transmission and replacement contributions to prevalence; fixation alone is not causal proof. Laboratory protocol changes do not establish endogenous evolution of the selector. |",
+    "| **4 Novel organization and changed evolutionary units** | The completed [new-possibilities integration](NEW-POSSIBILITIES.md) distinguishes installed construction from encompassing law, gives a formed constructor and scope-specific description revision. The association model adds formed group relations; empirical aggregation distinguishes temporary sorting groups from inherited organizations. | Credit those results and connect formation to inherited retention and ongoing effect under actual evolutionary conditions. Common transport does not alone establish a new inherited unit. Broader changes of evolutionary units and sustained qualitative innovation require their own mechanisms and evidence. |",
+    "| **5 Demonstrated comparative strength** | Exact recurrence correspondence and a proved limit of snapshots omitting bonds. Retention data compare ordinary predictors with/without protocol information, including a worsening case. A source-bound settling sensitivity holds geometry fixed and reveals consequential density/drag choices; a conventional developmental life-cycle model receives credit. Chronological genealogy forecasts now demonstrate a gain over a changing stage average and two block alternatives, fully credited to conventional lineage inference. Dated assay transfer exposes stage-specific prediction failures. | Establish a consequential gain against an adequately specified rival with matched evidence and assumptions. Neither the reduced baselines nor disagreement between unvalidated velocity approximations establishes superior prediction. Measure sorting and descendants to decide the physical correspondence. Broad empirical superiority remains unestablished. |",
+    "| **6 Ethical continuation and evolved evaluation** | The [practical-judgment candidate](PRACTICAL-JUDGMENT.md) is complete and independently accepted at its explicit-axiom general-principles scope, with G0 and additional comparison/responsibility commitments disclosed. | Credit that completed scope; connect evolved evaluation to its actual recognition, calibration and implementation, preserving failures. Application correspondence and actual compliance require evidence. Reproductive advantage cannot silently serve as ethical authority. |"
+  ],
+  "all_six_unchanged": true,
+  "full_render_matches_at_edit": true,
+  "shared_validation_pending": [
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/multivalued-joining-common-structure.json",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/incidence-common-refinement.json",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/retained-reference-joining-recovery.json",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/organizational-formation-from-generative-comparison.md",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/situated-recovery-empirical-correspondence.md",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/transition-grouping-word-partition.md",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/multivalued-joining-common-structure.json",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/incidence-common-refinement.json",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/retained-reference-joining-recovery.json"
+  ],
+  "prior_authored_hashes": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md": "aa58c19c7a91b8b7b6b9e9133e70539e9f53c5012512f5240966d714ff9f18ed",
+    "theories/shengsheng-buxi-generative-existence/results/records/organizational-rule-inheritance.json": "dbaccc7cc5fe63b0e1f8bebfeec1e176e0ea250af7dba80d9ab851d8318c7b17",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md": "f49d53908d1f753203f1d7dde1fe49a53113bf0c84ab7bf82ddb483af5d91a4e",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md": "a1fc789d5eca12c68f884ca56320271b604f2b18bf617124b424268ea5ef6057"
+  }
+}

@@ -1,0 +1,41 @@
+'Generative.StandardsBridge.Observation' does not depend on any axioms
+'Generative.StandardsBridge.Rule' does not depend on any axioms
+'Generative.StandardsBridge.Fits' does not depend on any axioms
+'Generative.StandardsBridge.revise' does not depend on any axioms
+'Generative.StandardsBridge.learn' does not depend on any axioms
+'Generative.StandardsBridge.answer' does not depend on any axioms
+'Generative.StandardsBridge.Safe' does not depend on any axioms
+'Generative.StandardsBridge.Maximal' does not depend on any axioms
+'Generative.StandardsBridge.mem_revise' depends on axioms: [propext]
+'Generative.StandardsBridge.mem_learn' depends on axioms: [propext, Quot.sound]
+'Generative.StandardsBridge.actual_rule_retained' depends on axioms: [propext, Quot.sound]
+'Generative.StandardsBridge.eliminated_rule_has_counterevidence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.StandardsBridge.repetition_does_not_change_candidates' depends on axioms: [propext, Quot.sound]
+'Generative.StandardsBridge.answer_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.StandardsBridge.answer_safe' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.StandardsBridge.safe_definite_requires_agreement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.StandardsBridge.answer_maximal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.StandardsBridge.unique_maximal_safe' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.StandardsBridge.known_rule_makes_answer_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.StandardsBridge.acquire' does not depend on any axioms
+'Generative.StandardsBridge.acquired_evidence_faithful' depends on axioms: [propext, Quot.sound]
+'Generative.StandardsBridge.acquired_answers_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.StandardsBridge.transport' does not depend on any axioms
+'Generative.StandardsBridge.answer_transport' depends on axioms: [propext, Quot.sound]
+'Generative.StandardsBridge.learning_transport' depends on axioms: [propext, Quot.sound]
+'Generative.StandardsBridge.wrong_reencoding_breaks_transfer' does not depend on any axioms
+'Generative.StandardsBridge.repertoire' does not depend on any axioms
+'Generative.StandardsBridge.bool_repertoire_complete' depends on axioms: [propext, Quot.sound]
+'Generative.StandardsBridge.full_bool_repertoire_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.StandardsBridge.oneSample' does not depend on any axioms
+'Generative.StandardsBridge.twoSamples' does not depend on any axioms
+'Generative.StandardsBridge.before_acquisition_abstains' does not depend on any axioms
+'Generative.StandardsBridge.one_sample_leaves_other_case_unsettled' does not depend on any axioms
+'Generative.StandardsBridge.contrasting_acquisition_settles_both' does not depend on any axioms
+'Generative.StandardsBridge.learned_response_differs_from_last_report' does not depend on any axioms
+'Generative.StandardsBridge.repeated_same_case_does_not_settle_other' does not depend on any axioms
+'Generative.StandardsBridge.insufficient_support_retains_ambiguity' does not depend on any axioms
+'Generative.StandardsBridge.wrong_model_class_can_be_confidently_wrong' does not depend on any axioms
+'Generative.StandardsBridge.inconsistent_evidence_yields_no_answer' does not depend on any axioms

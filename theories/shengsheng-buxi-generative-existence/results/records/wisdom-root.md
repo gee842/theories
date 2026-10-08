@@ -6,7 +6,7 @@
 
 记录源 / Editable record: [wisdom-root.json](wisdom-root.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T13:30:28.072748+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-08T13:55:50.810696+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
@@ -19,17 +19,17 @@ Canonical source: [CORE-CONSTRAINT-AND-WISDOM.md](../../../../_process/research/
 - 保留获授权的必要关系与生成解释两部分；不能将局部成功条件改名为完整智慧。 / Retain both authorized components, necessary relations and generative explanation; local success conditions cannot simply be renamed full wisdom.
 - 按Ren本次纠正，以道德评价becoming、普遍生成原则支撑具体判断为正面路线；G0、J／C、实践解释及真实对应E明示，不以对手认可或无公理证明G0为门槛。 / Following Ren’s correction, pursue morality as appraisal of becoming through universal generative principles. G0, J/C, practical articulation and correspondence E remain explicit; neither a rival’s assent nor axiom-free proof of G0 gates this route.
 
-活动、后果、认识与评价在同一展开中分化。具体回应可以改变，熟练判断可以不显式复述原则；二者不独自反驳共同规范根据。生成评价保留真实历史、共同实现、损失及有根据的未来范围。 / Activity, consequences, knowing and appraisal differentiate within one unfolding. Responses may change and skilled judgment may remain tacit; neither alone defeats a common normative ground. Appraisal preserves actual history, joint realization, losses and warranted future scope.
+第15节以固定G0/J/E说明八种构造判断、改变条件和错误诊断。角色、承担、认识与回应在同一展开中说明；特定任务的解除、真实生成可能性与比较不完备各保持其内容，固定规则的默认选择不冒充唯一正当答案。 / Section 15 applies fixed G0/J/E to eight constructed judgments, reversal conditions and error diagnoses. Roles, undertakings, knowing and response remain within one unfolding. Discharge, genuine generative possibilities and incomplete comparisons retain their content; a fixed selector’s default is not a uniquely warranted answer.
 
 ## 检验与边界 Validation and boundaries
 
-第14节按Ren纠正接通已有生成评价结果，复用G0/J及已检查的关系比较、目的评价和开放未来结果。没有新增数学定理、Lean组合或独立验收；完整目标保持开放。 / Section 14 follows Ren’s correction and interpretively joins existing generative-appraisal results, reusing G0/J and checked relational-comparison, goal-ground and open-future results. No new theorem, Lean composition or independent acceptance; the full target remains open.
+第15节新增八种构造情境的哲学应用及反审，复用一般实践判断、目的评价、关系比较和开放未来的原证明。不新增定理、Lean运行、盲法历史检验或独立验收；完整根目标保持开放。 / Section 15 adds eight constructed philosophical applications and author counterreview, reusing the original practical, goal-ground, relational and open-future proofs. No new theorem, Lean run, blinded historical test or independent acceptance; the full root remains open.
 
 目前完整目标未证；足够行动的多种描述也未必有共同最粗的充分描述。 目的评价的必要关系与有限判断范围修正已局部完成，不能升级为全部智慧的定义。 / The full target remains unproved; sufficient action descriptions need not have a common coarsest sufficient description. Local goal-ground necessity and the limited-judgment scope correction are complete, without becoming a definition of all wisdom.
 
 - 足够描述不自动有仍充分的共同最粗表示。 / Sufficient descriptions need not admit a still-sufficient common coarsest representation. [WISDOM-RESPONSE-NECESSITY.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-RESPONSE-NECESSITY.md)
 - 正确风险界限可伴随实际失败，不能用逐次必胜界定全部智慧。 / A true risk bound can accompany actual failure; infallible success cannot simply define all wisdom. [WISDOM-FALLIBLE-JUDGMENT.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md)
-- 第12节保留不同智慧内容，第13节文献比较留作背景。第14节按Ren纠正，直接展开普遍生成评价路线；不显式循原则或情境变化不独自反驳共同根据。只有变化表示不足以保证伦理对应，完整智慧覆盖仍须说明。 / Section 12 retains differentiated wisdom and section 13 preserves literary comparison as background. Section 14 follows Ren’s correction toward universal generative appraisal. Tacit judgment and changing contexts do not alone defeat common grounds; representing change alone does not secure ethical correspondence or full wisdom coverage. [CORE-CONSTRAINT-AND-WISDOM.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md)
+- 第12–14节的智慧范围与普遍原则路线保留。第15节指出既有固定选择器在不可比情形中的默认分支只满足非支配要求，不能升级为独优；构造例与已有数学结果也不能替代现实对应或历史覆盖。 / Sections 12–14 retain differentiated wisdom and the universal-principle route. Section 15 clarifies that the fixed selector’s default in incomparable cases meets nondomination without unique superiority; constructed applications and existing mathematical results do not substitute for actual correspondence or historical coverage. [CORE-CONSTRAINT-AND-WISDOM.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md)
 
 ## 依赖与关联 Dependencies and related results
 
@@ -54,7 +54,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 ## 复用与下一增量 Reuse and next delta
 
-以道德判断becoming及普遍生成评价根据为主线，按各自真实前提接通已有形成、认识、评价和修订；先固定原则与情境对应再推演，检验道德智慧覆盖及历史表达，其他智慧范围分别说明。 / Pursue morality as appraisal of becoming through universal generative grounds. Connect established formation, knowing, appraisal and revision under their actual premises; fix principles and contextual correspondence before deriving judgments, test moral-wisdom coverage and historical expressions, and address other wisdom domains separately.
+将本组判断所需的实际区别与已完成目的形成、反馈取得和修订历史的输出逐项对应，说明形成的能力怎样取得理由并用于回应；复用机制，明示规范输入，继续检验道德及其他智慧范围。 / Match the distinctions needed by these judgments to outputs of completed goal formation, feedback acquisition and revision histories, explaining how formed capacities acquire reasons and use them in response. Reuse mechanisms, disclose normative inputs and continue testing moral and other wisdom scope.
 
 Aliases / 别名: —
 
@@ -65,3 +65,4 @@ Aliases / 别名: —
 - 2026-10-08：在同一主研究第12节加入三个原典的有范围比较，区分判断／能力／完整解释；承认忠实对照未被排除，保持完整目标开放。不新增独立成果或数学计数。 / 2026-10-08: added scoped comparisons of three primary texts in the existing study, distinguishing episodes, capacities and full explanation. The faithful comparator is not excluded and the full target remains open; no extra result identity or mathematical count.
 - 2026-10-08：第13节将忠实对照落实到两项原典及既有案例，区分实际关系的保留与普遍根据的争议；收窄下一连接，不新建成果身份、不新增定理。 / 2026-10-08: section 13 makes the faithful comparison concrete through two primary texts and the existing case, distinguishing retained relations from disputed universal grounding. The next connection is narrowed; no new result identity or theorem.
 - 2026-10-08：Ren明确纠正Dancy导向，以道德判断becoming及本理论普遍原则为正面路线。第14节修订主线并复用既有成果；保留第13节文献及反循环边界，不重开无公理起点或已完成机制。 / 2026-10-08: Ren corrects the Dancy-led framing and directs the affirmative route through morality as appraisal of becoming under this theory’s universal principles. Section 14 reuses established results while retaining section 13’s sources and anti-circularity limits; no axiom-free gate or completed mechanism is reopened.
+- 2026-10-08：沿道德评价becoming的主线，第15节固定共同前提展开八种判断，列明改变条件、非唯一选择与错误诊断。新增哲学应用，不重复计算既有定理；角色和情境为明示构造，未冒称独立历史样本。 / 2026-10-08: section 15 develops eight judgments from shared premises along the becoming-appraisal route, stating reversal conditions, nonunique choice and error diagnoses. This adds philosophical applications without recounting existing theorems; constructed roles and cases are not independent historical evidence.

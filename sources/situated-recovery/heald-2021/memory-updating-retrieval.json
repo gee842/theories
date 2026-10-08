@@ -1,0 +1,572 @@
+{
+  "date": "2026-10-09",
+  "public_mirror": "https://zenodo.org/records/5516490",
+  "files": [
+    {
+      "original_path": "memory_updating_participant1.mat",
+      "url": "https://zenodo.org/records/5516490/files/memory_updating_participant1.mat?download=1",
+      "original_size": 180343933,
+      "deposited_full_sha256": "04a6a7eba106f0990abcd51cb3c1e9ab0cea3c233bfea11fc9d2f06eb3aa377f",
+      "full_digest_verified": false,
+      "fragments": [
+        {
+          "path": "memory-updating-ranges/memory_updating_participant1.mat.header.bin",
+          "start_inclusive": 0,
+          "end_inclusive": 127,
+          "sha256": "6e9cc323ca4d73baf62433a07d0b4a3dc02a132d9272dd821442be2a97a50cbe",
+          "bytes": 128
+        },
+        {
+          "path": "memory-updating-ranges/memory_updating_participant1.mat.subsystem.bin",
+          "start_inclusive": 180275039,
+          "end_inclusive": 180343932,
+          "sha256": "b9794a2fef74eb61cfafa029d79429c5804f057a3e2873ef3f26557858a78415",
+          "bytes": 68894
+        }
+      ]
+    },
+    {
+      "original_path": "memory_updating_participant2.mat",
+      "url": "https://zenodo.org/records/5516490/files/memory_updating_participant2.mat?download=1",
+      "original_size": 165755184,
+      "deposited_full_sha256": "6b2f96c95f8986e0e49c4bd96f29b980b2bc5ff53f963731f83c6a466ea70532",
+      "full_digest_verified": false,
+      "fragments": [
+        {
+          "path": "memory-updating-ranges/memory_updating_participant2.mat.header.bin",
+          "start_inclusive": 0,
+          "end_inclusive": 127,
+          "sha256": "18518bbefb22e1f4e031ba7a45f56be61c0408ea2b1f3c476d439d09074a196a",
+          "bytes": 128
+        },
+        {
+          "path": "memory-updating-ranges/memory_updating_participant2.mat.subsystem.bin",
+          "start_inclusive": 165686339,
+          "end_inclusive": 165755183,
+          "sha256": "ac39d5fa08ecbb701b17c4567a9538766e61df2d839bfcfbd2709f1b22a1162f",
+          "bytes": 68845
+        }
+      ]
+    },
+    {
+      "original_path": "memory_updating_participant3.mat",
+      "url": "https://zenodo.org/records/5516490/files/memory_updating_participant3.mat?download=1",
+      "original_size": 177844830,
+      "deposited_full_sha256": "d86b40083148024f6849e56c595373c987ee73d6d3aca340a97a9afd2e455faa",
+      "full_digest_verified": false,
+      "fragments": [
+        {
+          "path": "memory-updating-ranges/memory_updating_participant3.mat.header.bin",
+          "start_inclusive": 0,
+          "end_inclusive": 127,
+          "sha256": "0c08101b599b87f072da2866ad5e4b15a8d2288efb013c80a22db7c8d9f6dfa3",
+          "bytes": 128
+        },
+        {
+          "path": "memory-updating-ranges/memory_updating_participant3.mat.subsystem.bin",
+          "start_inclusive": 177775864,
+          "end_inclusive": 177844829,
+          "sha256": "05882684b508902f0f7704bcb81e4d63c9764ddef07ee6c1ad0c5d669c941083",
+          "bytes": 68966
+        }
+      ]
+    },
+    {
+      "original_path": "memory_updating_participant4.mat",
+      "url": "https://zenodo.org/records/5516490/files/memory_updating_participant4.mat?download=1",
+      "original_size": 203562437,
+      "deposited_full_sha256": "606a019e1b2d955a7d264851d316f8261b4ce99375082d6055db02e38ae07d18",
+      "full_digest_verified": false,
+      "fragments": [
+        {
+          "path": "memory-updating-ranges/memory_updating_participant4.mat.header.bin",
+          "start_inclusive": 0,
+          "end_inclusive": 127,
+          "sha256": "b1669ee5643764641acac8a426bf9d809c896bd9d93c3d27c025a141329b6e31",
+          "bytes": 128
+        },
+        {
+          "path": "memory-updating-ranges/memory_updating_participant4.mat.subsystem.bin",
+          "start_inclusive": 203492586,
+          "end_inclusive": 203562436,
+          "sha256": "3fd7b7419fee0f750ef025174a21176921507e6bc61ce223a6f6b64a628d0179",
+          "bytes": 69851
+        }
+      ]
+    },
+    {
+      "original_path": "memory_updating_participant5.mat",
+      "url": "https://zenodo.org/records/5516490/files/memory_updating_participant5.mat?download=1",
+      "original_size": 173530178,
+      "deposited_full_sha256": "35d4db924f5308947df58d794b1d5db11908da2b689eef7941e8fddbffddfb9e",
+      "full_digest_verified": false,
+      "fragments": [
+        {
+          "path": "memory-updating-ranges/memory_updating_participant5.mat.header.bin",
+          "start_inclusive": 0,
+          "end_inclusive": 127,
+          "sha256": "acc773639af75ed8421488f39acdbe8eb97322745c304873b511805a123a1758",
+          "bytes": 128
+        },
+        {
+          "path": "memory-updating-ranges/memory_updating_participant5.mat.subsystem.bin",
+          "start_inclusive": 173461235,
+          "end_inclusive": 173530177,
+          "sha256": "6146f63af8ab0d956ac08a93e696d1d82b9604cdbc7719de5d6df33902ae6774",
+          "bytes": 68943
+        }
+      ]
+    },
+    {
+      "original_path": "memory_updating_participant6.mat",
+      "url": "https://zenodo.org/records/5516490/files/memory_updating_participant6.mat?download=1",
+      "original_size": 157229630,
+      "deposited_full_sha256": "3ce45c8e1e050d7a80a1d052321a9b9ffeacd6e2829aceb0fd4864c5a084e6f3",
+      "full_digest_verified": false,
+      "fragments": [
+        {
+          "path": "memory-updating-ranges/memory_updating_participant6.mat.header.bin",
+          "start_inclusive": 0,
+          "end_inclusive": 127,
+          "sha256": "f495069f9636963de1e5781936124ab12c3f19a9488006b916d496231ecfe778",
+          "bytes": 128
+        },
+        {
+          "path": "memory-updating-ranges/memory_updating_participant6.mat.subsystem.bin",
+          "start_inclusive": 157160861,
+          "end_inclusive": 157229629,
+          "sha256": "71cc037e81abafabe5a6f7eccb349d2d1fd55aad22b8d9903980a1eea25c4338",
+          "bytes": 68769
+        }
+      ]
+    },
+    {
+      "original_path": "memory_updating_participant7.mat",
+      "url": "https://zenodo.org/records/5516490/files/memory_updating_participant7.mat?download=1",
+      "original_size": 189825016,
+      "deposited_full_sha256": "b24b3f01aad2a264946922f2363dbd930dcbfdf5211c213dcc36cd8056bb1a71",
+      "full_digest_verified": false,
+      "fragments": [
+        {
+          "path": "memory-updating-ranges/memory_updating_participant7.mat.header.bin",
+          "start_inclusive": 0,
+          "end_inclusive": 127,
+          "sha256": "2941da89a3b63699526a29db99fafbaf4ef49d46ba6a7333871a3eed5262c86f",
+          "bytes": 128
+        },
+        {
+          "path": "memory-updating-ranges/memory_updating_participant7.mat.subsystem.bin",
+          "start_inclusive": 189755733,
+          "end_inclusive": 189825015,
+          "sha256": "60473e994cfaca32b6845fae9d6cf936dc9b72c01590f84735a90a66cb8d8279",
+          "bytes": 69283
+        }
+      ]
+    },
+    {
+      "original_path": "memory_updating_participant8.mat",
+      "url": "https://zenodo.org/records/5516490/files/memory_updating_participant8.mat?download=1",
+      "original_size": 177883510,
+      "deposited_full_sha256": "a12414823269343c3a300142349783270a0eebd4f30da1db59fae520348277cb",
+      "full_digest_verified": false,
+      "fragments": [
+        {
+          "path": "memory-updating-ranges/memory_updating_participant8.mat.header.bin",
+          "start_inclusive": 0,
+          "end_inclusive": 127,
+          "sha256": "06ff3abafa7c2c649ad43a7a5877e66e891f1e468e0096154dd6eff59cdaf3d4",
+          "bytes": 128
+        },
+        {
+          "path": "memory-updating-ranges/memory_updating_participant8.mat.subsystem.bin",
+          "start_inclusive": 177813882,
+          "end_inclusive": 177883509,
+          "sha256": "0d75cfa4e278b3fa830f95869442aa7fafdc0ea30e5c39034bb996578116106a",
+          "bytes": 69628
+        }
+      ]
+    },
+    {
+      "original_path": "memory_updating_participant9.mat",
+      "url": "https://zenodo.org/records/5516490/files/memory_updating_participant9.mat?download=1",
+      "original_size": 169420198,
+      "deposited_full_sha256": "ae771fa566fa03fa28eb07199e853c2d037ccdd9fe9d23144127afb2cdb4a4be",
+      "full_digest_verified": false,
+      "fragments": [
+        {
+          "path": "memory-updating-ranges/memory_updating_participant9.mat.header.bin",
+          "start_inclusive": 0,
+          "end_inclusive": 127,
+          "sha256": "e7ec1c0f8f1ce1f690f86e7b3015bbf72200cfab22f3a2e40defd8b03837033b",
+          "bytes": 128
+        },
+        {
+          "path": "memory-updating-ranges/memory_updating_participant9.mat.subsystem.bin",
+          "start_inclusive": 169351526,
+          "end_inclusive": 169420197,
+          "sha256": "19297b66a18184e33b1d0b9957577ac7cd38186a40fe78976fba15f243310169",
+          "bytes": 68672
+        }
+      ]
+    },
+    {
+      "original_path": "memory_updating_participant10.mat",
+      "url": "https://zenodo.org/records/5516490/files/memory_updating_participant10.mat?download=1",
+      "original_size": 189731648,
+      "deposited_full_sha256": "db90720295d0a12e50fe2221090dd38f04d2c11a1985a95daf560c91dd130732",
+      "full_digest_verified": false,
+      "fragments": [
+        {
+          "path": "memory-updating-ranges/memory_updating_participant10.mat.header.bin",
+          "start_inclusive": 0,
+          "end_inclusive": 127,
+          "sha256": "7c0df0971e8bd3c4a6b2209b5a154eacc1876a60dcfdd4d8057645729c25ab63",
+          "bytes": 128
+        },
+        {
+          "path": "memory-updating-ranges/memory_updating_participant10.mat.subsystem.bin",
+          "start_inclusive": 189662461,
+          "end_inclusive": 189731647,
+          "sha256": "c60ceb8078d7e36e58f4888514514c98732f69340ea5f5b08126e6db99fa127d",
+          "bytes": 69187
+        }
+      ]
+    },
+    {
+      "original_path": "memory_updating_participant11.mat",
+      "url": "https://zenodo.org/records/5516490/files/memory_updating_participant11.mat?download=1",
+      "original_size": 168695849,
+      "deposited_full_sha256": "0e1793a7dff936d64945d60ed48282cf4c70bf93fa5c62788a6fca6bf9fa6c6d",
+      "full_digest_verified": false,
+      "fragments": [
+        {
+          "path": "memory-updating-ranges/memory_updating_participant11.mat.header.bin",
+          "start_inclusive": 0,
+          "end_inclusive": 127,
+          "sha256": "fe15b17067978592e984632c4f7a882b873252e340d786126b2cbd219c6064ce",
+          "bytes": 128
+        },
+        {
+          "path": "memory-updating-ranges/memory_updating_participant11.mat.subsystem.bin",
+          "start_inclusive": 168626652,
+          "end_inclusive": 168695848,
+          "sha256": "aca33e7cfe9df73fcff4360be3a40de40842b0e57e305556e8ccd9e7ec423210",
+          "bytes": 69197
+        }
+      ]
+    },
+    {
+      "original_path": "memory_updating_participant12.mat",
+      "url": "https://zenodo.org/records/5516490/files/memory_updating_participant12.mat?download=1",
+      "original_size": 185111533,
+      "deposited_full_sha256": "83c82d3ce8e34d02fc6c105a86fac93fb1b83d36eff78ebb1b921739ddb8a4fc",
+      "full_digest_verified": false,
+      "fragments": [
+        {
+          "path": "memory-updating-ranges/memory_updating_participant12.mat.header.bin",
+          "start_inclusive": 0,
+          "end_inclusive": 127,
+          "sha256": "b3698b371614740525e2b75f51f717c6abcf1518582dd8d18a6e4bfb9bae081d",
+          "bytes": 128
+        },
+        {
+          "path": "memory-updating-ranges/memory_updating_participant12.mat.subsystem.bin",
+          "start_inclusive": 185042465,
+          "end_inclusive": 185111532,
+          "sha256": "2f621a9135b5456b4dbc69fe7d1466d8c76a068ad762f75df7b77f50b2f8da10",
+          "bytes": 69068
+        }
+      ]
+    },
+    {
+      "original_path": "memory_updating_participant13.mat",
+      "url": "https://zenodo.org/records/5516490/files/memory_updating_participant13.mat?download=1",
+      "original_size": 183809467,
+      "deposited_full_sha256": "9c6ba6db2e0d8de9f836b844654a5bc5873916a5e618f3d630e42c96e6820dea",
+      "full_digest_verified": false,
+      "fragments": [
+        {
+          "path": "memory-updating-ranges/memory_updating_participant13.mat.header.bin",
+          "start_inclusive": 0,
+          "end_inclusive": 127,
+          "sha256": "93c04e631b7a6ceaa969e94796c6991a05b97767ead7e1c214b67ed256761f73",
+          "bytes": 128
+        },
+        {
+          "path": "memory-updating-ranges/memory_updating_participant13.mat.subsystem.bin",
+          "start_inclusive": 183740266,
+          "end_inclusive": 183809466,
+          "sha256": "5726e7538cccf89048bf7e67aa947c3cf5b0800aa51a667aec1cc9b4a0664314",
+          "bytes": 69201
+        }
+      ]
+    },
+    {
+      "original_path": "memory_updating_participant14.mat",
+      "url": "https://zenodo.org/records/5516490/files/memory_updating_participant14.mat?download=1",
+      "original_size": 177957085,
+      "deposited_full_sha256": "bf3360805604b71f3e1186cb95dc791875c01d6cd2e7947a52fb038300bfc9bb",
+      "full_digest_verified": false,
+      "fragments": [
+        {
+          "path": "memory-updating-ranges/memory_updating_participant14.mat.header.bin",
+          "start_inclusive": 0,
+          "end_inclusive": 127,
+          "sha256": "b9b0b1e50da4e5070722a7ce85eb6813ba46829eef69533a058a4204d4ec1552",
+          "bytes": 128
+        },
+        {
+          "path": "memory-updating-ranges/memory_updating_participant14.mat.subsystem.bin",
+          "start_inclusive": 177887666,
+          "end_inclusive": 177957084,
+          "sha256": "2e52c9c24d34fdcea00f7541c5f2f7134f8fa7bbf44349dec21693a642ea9306",
+          "bytes": 69419
+        }
+      ]
+    },
+    {
+      "original_path": "memory_updating_participant15.mat",
+      "url": "https://zenodo.org/records/5516490/files/memory_updating_participant15.mat?download=1",
+      "original_size": 183257882,
+      "deposited_full_sha256": "c0964f91fa74866f609387651dfa0c53e4405060fc2c2686e1010705d365c8df",
+      "full_digest_verified": false,
+      "fragments": [
+        {
+          "path": "memory-updating-ranges/memory_updating_participant15.mat.header.bin",
+          "start_inclusive": 0,
+          "end_inclusive": 127,
+          "sha256": "d7f15ecf734babfd36000ff9c6bac23f7246fd904ce04f7f01ae3555530fe461",
+          "bytes": 128
+        },
+        {
+          "path": "memory-updating-ranges/memory_updating_participant15.mat.subsystem.bin",
+          "start_inclusive": 183188227,
+          "end_inclusive": 183257881,
+          "sha256": "d1a4f8e639927670b7d00615c7726a332de29953f8452c6dd8216cf5617a0243",
+          "bytes": 69655
+        }
+      ]
+    },
+    {
+      "original_path": "memory_updating_participant16.mat",
+      "url": "https://zenodo.org/records/5516490/files/memory_updating_participant16.mat?download=1",
+      "original_size": 184071499,
+      "deposited_full_sha256": "202bbdb5cb6099c893a6a7ad2262eb6e25000e4cb5ef60e26a51c019747466e0",
+      "full_digest_verified": false,
+      "fragments": [
+        {
+          "path": "memory-updating-ranges/memory_updating_participant16.mat.header.bin",
+          "start_inclusive": 0,
+          "end_inclusive": 127,
+          "sha256": "76616c3d7fc2e9d0248690e1cd68232240d6fc42a6bf85f852523219e541a6f9",
+          "bytes": 128
+        },
+        {
+          "path": "memory-updating-ranges/memory_updating_participant16.mat.subsystem.bin",
+          "start_inclusive": 184001782,
+          "end_inclusive": 184071498,
+          "sha256": "91122486c314f17693d1454507d7a83380760fb6ab25a25781b608e7a170893b",
+          "bytes": 69717
+        }
+      ]
+    },
+    {
+      "original_path": "memory_updating_participant17.mat",
+      "url": "https://zenodo.org/records/5516490/files/memory_updating_participant17.mat?download=1",
+      "original_size": 173813377,
+      "deposited_full_sha256": "ebd1d4bd8784d76a4dd95f148db5cccc32a00440d7a09314a9b0fd56548c029c",
+      "full_digest_verified": false,
+      "fragments": [
+        {
+          "path": "memory-updating-ranges/memory_updating_participant17.mat.header.bin",
+          "start_inclusive": 0,
+          "end_inclusive": 127,
+          "sha256": "4a25e293f94415542ab7ab4b8b8b5ea8e6936d998defcdae9c7362ee5558ecf7",
+          "bytes": 128
+        },
+        {
+          "path": "memory-updating-ranges/memory_updating_participant17.mat.subsystem.bin",
+          "start_inclusive": 173744342,
+          "end_inclusive": 173813376,
+          "sha256": "9926eb099fd4e1effc37cf0c5845db933d5a42805d853c7b75f19d20c01cd7ed",
+          "bytes": 69035
+        }
+      ]
+    },
+    {
+      "original_path": "memory_updating_participant18.mat",
+      "url": "https://zenodo.org/records/5516490/files/memory_updating_participant18.mat?download=1",
+      "original_size": 173101457,
+      "deposited_full_sha256": "fbe2ae7a9ab6d1a7f28c8c096324d196bb8b8d39c54d1a8a396cc5f9abcc23e7",
+      "full_digest_verified": false,
+      "fragments": [
+        {
+          "path": "memory-updating-ranges/memory_updating_participant18.mat.header.bin",
+          "start_inclusive": 0,
+          "end_inclusive": 127,
+          "sha256": "df4d6fbf5732f04aa87193ce641bcf5625f4b6d5fae9403448357af4eeb00b7a",
+          "bytes": 128
+        },
+        {
+          "path": "memory-updating-ranges/memory_updating_participant18.mat.subsystem.bin",
+          "start_inclusive": 173032806,
+          "end_inclusive": 173101456,
+          "sha256": "01aeacf0a923ec93580ce7f910b01f67c588e83d53fe32e18fbd8eb32b159d8d",
+          "bytes": 68651
+        }
+      ]
+    },
+    {
+      "original_path": "memory_updating_participant19.mat",
+      "url": "https://zenodo.org/records/5516490/files/memory_updating_participant19.mat?download=1",
+      "original_size": 174394206,
+      "deposited_full_sha256": "36466fec0c87e3e21325541d80740e6989c6529889af283169f51c72d50c4e7e",
+      "full_digest_verified": false,
+      "fragments": [
+        {
+          "path": "memory-updating-ranges/memory_updating_participant19.mat.header.bin",
+          "start_inclusive": 0,
+          "end_inclusive": 127,
+          "sha256": "a365014938e34e34374f6090993ace0b69980888f93bf0f6c5a38c353e0b35d6",
+          "bytes": 128
+        },
+        {
+          "path": "memory-updating-ranges/memory_updating_participant19.mat.subsystem.bin",
+          "start_inclusive": 174326993,
+          "end_inclusive": 174394205,
+          "sha256": "ea16b212603b46e3d1ca7356f0542d9526c09a23c305a26f4ea113d1803c1423",
+          "bytes": 67213
+        }
+      ]
+    },
+    {
+      "original_path": "memory_updating_participant20.mat",
+      "url": "https://zenodo.org/records/5516490/files/memory_updating_participant20.mat?download=1",
+      "original_size": 175706653,
+      "deposited_full_sha256": "d4caf80a0c3a3adfc866613162b43f8b3c8ab45792e6c0c89825fccbcabf8fe9",
+      "full_digest_verified": false,
+      "fragments": [
+        {
+          "path": "memory-updating-ranges/memory_updating_participant20.mat.header.bin",
+          "start_inclusive": 0,
+          "end_inclusive": 127,
+          "sha256": "bde0a53d3b820cba33d9c89019172caa8ade1daba1e7041c738c1e0f4c909094",
+          "bytes": 128
+        },
+        {
+          "path": "memory-updating-ranges/memory_updating_participant20.mat.subsystem.bin",
+          "start_inclusive": 175639362,
+          "end_inclusive": 175706652,
+          "sha256": "86a0caf38b8b30e269436b0fbe459fac6dc8bfc8f681e28c6c08941e46d0b006",
+          "bytes": 67291
+        }
+      ]
+    },
+    {
+      "original_path": "memory_updating_participant21.mat",
+      "url": "https://zenodo.org/records/5516490/files/memory_updating_participant21.mat?download=1",
+      "original_size": 169207711,
+      "deposited_full_sha256": "2c507f476480aff5560e4ebe601cc01e10a7714f5d3423613ebf7d0eb96d69c0",
+      "full_digest_verified": false,
+      "fragments": [
+        {
+          "path": "memory-updating-ranges/memory_updating_participant21.mat.header.bin",
+          "start_inclusive": 0,
+          "end_inclusive": 127,
+          "sha256": "c3b7b4ef878da35cc11299f278ac8b25ef95241b652bfc7cf5b9eb9fe509e34a",
+          "bytes": 128
+        },
+        {
+          "path": "memory-updating-ranges/memory_updating_participant21.mat.subsystem.bin",
+          "start_inclusive": 169140291,
+          "end_inclusive": 169207710,
+          "sha256": "e77ee8dc7431a17bf0aead22ec43639b1d608623eb4bb127f74501a308e08711",
+          "bytes": 67420
+        }
+      ]
+    },
+    {
+      "original_path": "memory_updating_participant22.mat",
+      "url": "https://zenodo.org/records/5516490/files/memory_updating_participant22.mat?download=1",
+      "original_size": 162885424,
+      "deposited_full_sha256": "5e4594566ad6537d9a2d65e445899f324bbab522a83d607724986d5898adafc5",
+      "full_digest_verified": false,
+      "fragments": [
+        {
+          "path": "memory-updating-ranges/memory_updating_participant22.mat.header.bin",
+          "start_inclusive": 0,
+          "end_inclusive": 127,
+          "sha256": "d4b35816b55e93ae1319a1e32fab309c392b79de594eb641503a89f9ae077a54",
+          "bytes": 128
+        },
+        {
+          "path": "memory-updating-ranges/memory_updating_participant22.mat.subsystem.bin",
+          "start_inclusive": 162818290,
+          "end_inclusive": 162885423,
+          "sha256": "7dd9d9632062507348215de181d349665755c02e1afa0d1bc92cc623daa2744c",
+          "bytes": 67134
+        }
+      ]
+    },
+    {
+      "original_path": "memory_updating_participant23.mat",
+      "url": "https://zenodo.org/records/5516490/files/memory_updating_participant23.mat?download=1",
+      "original_size": 179311215,
+      "deposited_full_sha256": "b8a65f049d1f15fb6d1abe6c8c109bbd58f518adc6ba46ac5fe77bd9fc0c655a",
+      "full_digest_verified": false,
+      "fragments": [
+        {
+          "path": "memory-updating-ranges/memory_updating_participant23.mat.header.bin",
+          "start_inclusive": 0,
+          "end_inclusive": 127,
+          "sha256": "268b7e345c354aefd4299a7d931d9cf51cbb4c2a10a3437c73005a9eee40c7ee",
+          "bytes": 128
+        },
+        {
+          "path": "memory-updating-ranges/memory_updating_participant23.mat.subsystem.bin",
+          "start_inclusive": 179244627,
+          "end_inclusive": 179311214,
+          "sha256": "8aec09e1efaf64883aabbe6e7b8ba07f6bd52c46801fabffcb1da980780d5098",
+          "bytes": 66588
+        }
+      ]
+    },
+    {
+      "original_path": "memory_updating_participant24.mat",
+      "url": "https://zenodo.org/records/5516490/files/memory_updating_participant24.mat?download=1",
+      "original_size": 185284643,
+      "deposited_full_sha256": "1637014780a4f9759411088813d8596c8e95bff02d8934a604f1e3e1e84c59fd",
+      "full_digest_verified": false,
+      "fragments": [
+        {
+          "path": "memory-updating-ranges/memory_updating_participant24.mat.header.bin",
+          "start_inclusive": 0,
+          "end_inclusive": 127,
+          "sha256": "933ad23d30af0a14c7b23d3b0d7977e3038dff11902bf7dbd3d77ed6d77fb2c5",
+          "bytes": 128
+        },
+        {
+          "path": "memory-updating-ranges/memory_updating_participant24.mat.subsystem.bin",
+          "start_inclusive": 185204382,
+          "end_inclusive": 185284642,
+          "sha256": "cba1accef54328595bd93dbe69305d6200d8770a9fc659cdc086d633008ea628",
+          "bytes": 80261
+        }
+      ]
+    }
+  ],
+  "code": {
+    "path": "Fig3_data_figure.m",
+    "sha256": "977151f11f08a87631b86f16062b9bc6c2f85a0984afdd76717cd562c3e13091",
+    "url": "https://zenodo.org/records/5512855/files/Fig3_data_figure.m?download=1"
+  },
+  "prior_recovery_receipt_preserved": true,
+  "scope": "Exact HTTP 206 header and MCOS subsystem fragments; full-file hashes retained as identity metadata, not verified from partial bytes.",
+  "full_original_crosscheck": {
+    "path": "originals/memory_updating_participant24.mat",
+    "bytes": 185284643,
+    "sha256": "1637014780a4f9759411088813d8596c8e95bff02d8934a604f1e3e1e84c59fd",
+    "all_selected_fragments_identical": true,
+    "scope": "Participant 24 only; not a full-file hash check for participants 1\u201323."
+  }
+}

@@ -1,0 +1,320 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-resumption-gwkee311/ExplanatoryResumptionCases.lean:10:5: error: unknown namespace `Phase`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-resumption-gwkee311/ExplanatoryResumptionCases.lean:22:83: error: unsolved goals
+safe done t : Phase
+⊢ (match safe, Event.begin with
+        | Phase.origin, Event.enter => False
+        | Phase.risky, Event.begin => False
+        | Phase.safe, Event.begin => False
+        | Phase.ready, Event.finish => False
+        | x, x_1 => False) ∧
+        t = Phase.origin ∨
+      (match safe, Event.begin with
+          | Phase.origin, Event.enter => True
+          | Phase.risky, Event.begin => False
+          | Phase.safe, Event.begin => False
+          | Phase.ready, Event.finish => False
+          | x, x_1 => False) ∧
+          t = Phase.risky ∨
+        (match safe, Event.begin with
+            | Phase.origin, Event.enter => True
+            | Phase.risky, Event.begin => False
+            | Phase.safe, Event.begin => False
+            | Phase.ready, Event.finish => False
+            | x, x_1 => False) ∧
+            t = Phase.safe ∨
+          (match safe, Event.begin with
+              | Phase.origin, Event.enter => False
+              | Phase.risky, Event.begin => True
+              | Phase.safe, Event.begin => True
+              | Phase.ready, Event.finish => False
+              | x, x_1 => False) ∧
+              t = Phase.done ∨
+            (match safe, Event.begin with
+                | Phase.origin, Event.enter => False
+                | Phase.risky, Event.begin => True
+                | Phase.safe, Event.begin => False
+                | Phase.ready, Event.finish => False
+                | x, x_1 => False) ∧
+                t = Phase.blocked ∨
+              (match safe, Event.begin with
+                | Phase.origin, Event.enter => False
+                | Phase.risky, Event.begin => False
+                | Phase.safe, Event.begin => False
+                | Phase.ready, Event.finish => True
+                | x, x_1 => False) ∧
+                t = Phase.done ↔
+    done = t
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-resumption-gwkee311/ExplanatoryResumptionCases.lean:26:89: error: unsolved goals
+safe ready t : Phase
+⊢ (((match safe, Event.finish with
+          | Phase.origin, Event.enter => False
+          | Phase.risky, Event.begin => False
+          | Phase.safe, Event.begin => False
+          | Phase.ready, Event.finish => False
+          | x, x_1 => False) ∨
+          (match safe, Event.finish with
+            | Phase.origin, Event.enter => True
+            | Phase.risky, Event.begin => False
+            | Phase.safe, Event.begin => False
+            | Phase.ready, Event.finish => False
+            | x, x_1 => False) ∨
+            (match safe, Event.finish with
+              | Phase.origin, Event.enter => False
+              | Phase.risky, Event.begin => True
+              | Phase.safe, Event.begin => True
+              | Phase.ready, Event.finish => False
+              | x, x_1 => False) ∨
+              (match safe, Event.finish with
+                | Phase.origin, Event.enter => False
+                | Phase.risky, Event.begin => True
+                | Phase.safe, Event.begin => False
+                | Phase.ready, Event.finish => False
+                | x, x_1 => False) ∨
+                match safe, Event.finish with
+                | Phase.origin, Event.enter => False
+                | Phase.risky, Event.begin => False
+                | Phase.safe, Event.begin => False
+                | Phase.ready, Event.finish => True
+                | x, x_1 => False) ∧
+        (match safe, Event.begin with
+          | Phase.origin, Event.enter => False
+          | Phase.risky, Event.begin => True
+          | Phase.safe, Event.begin => True
+          | Phase.ready, Event.finish => False
+          | x, x_1 => False) ∧
+          t = Phase.done ∨
+      ((¬match safe, Event.finish with
+            | Phase.origin, Event.enter => False
+            | Phase.risky, Event.begin => False
+            | Phase.safe, Event.begin => False
+            | Phase.ready, Event.finish => False
+            | x, x_1 => False) ∧
+          (¬match safe, Event.finish with
+              | Phase.origin, Event.enter => True
+              | Phase.risky, Event.begin => False
+              | Phase.safe, Event.begin => False
+              | Phase.ready, Event.finish => False
+              | x, x_1 => False) ∧
+            (¬match safe, Event.finish with
+                | Phase.origin, Event.enter => False
+                | Phase.risky, Event.begin => True
+                | Phase.safe, Event.begin => True
+                | Phase.ready, Event.finish => False
+                | x, x_1 => False) ∧
+              (¬match safe, Event.finish with
+                  | Phase.origin, Event.enter => False
+                  | Phase.risky, Event.begin => True
+                  | Phase.safe, Event.begin => False
+                  | Phase.ready, Event.finish => False
+                  | x, x_1 => False) ∧
+                ¬match safe, Event.finish with
+                  | Phase.origin, Event.enter => False
+                  | Phase.risky, Event.begin => False
+                  | Phase.safe, Event.begin => False
+                  | Phase.ready, Event.finish => True
+                  | x, x_1 => False) ∧
+        match safe, Event.begin with
+        | Phase.origin, Event.enter => t = Phase.risky ∨ t = Phase.safe
+        | Phase.risky, Event.begin => t = Phase.ready ∨ t = Phase.blocked
+        | Phase.safe, Event.begin => t = Phase.ready
+        | Phase.ready, Event.finish => t = Phase.done
+        | x, x_1 => False) ↔
+    t = ready
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-resumption-gwkee311/ExplanatoryResumptionCases.lean:34:2: error: unsolved goals
+case right.refl
+safe done : Phase
+h : Executes m earlyCheck safe done
+⊢ False
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-resumption-gwkee311/ExplanatoryResumptionCases.lean:39:60: error: unsolved goals
+risky done blocked t : Phase
+⊢ (match risky, Event.begin with
+        | Phase.origin, Event.enter => False
+        | Phase.risky, Event.begin => False
+        | Phase.safe, Event.begin => False
+        | Phase.ready, Event.finish => False
+        | x, x_1 => False) ∧
+        t = Phase.origin ∨
+      (match risky, Event.begin with
+          | Phase.origin, Event.enter => True
+          | Phase.risky, Event.begin => False
+          | Phase.safe, Event.begin => False
+          | Phase.ready, Event.finish => False
+          | x, x_1 => False) ∧
+          t = Phase.risky ∨
+        (match risky, Event.begin with
+            | Phase.origin, Event.enter => True
+            | Phase.risky, Event.begin => False
+            | Phase.safe, Event.begin => False
+            | Phase.ready, Event.finish => False
+            | x, x_1 => False) ∧
+            t = Phase.safe ∨
+          (match risky, Event.begin with
+              | Phase.origin, Event.enter => False
+              | Phase.risky, Event.begin => True
+              | Phase.safe, Event.begin => True
+              | Phase.ready, Event.finish => False
+              | x, x_1 => False) ∧
+              t = Phase.done ∨
+            (match risky, Event.begin with
+                | Phase.origin, Event.enter => False
+                | Phase.risky, Event.begin => True
+                | Phase.safe, Event.begin => False
+                | Phase.ready, Event.finish => False
+                | x, x_1 => False) ∧
+                t = Phase.blocked ∨
+              (match risky, Event.begin with
+                | Phase.origin, Event.enter => False
+                | Phase.risky, Event.begin => False
+                | Phase.safe, Event.begin => False
+                | Phase.ready, Event.finish => True
+                | x, x_1 => False) ∧
+                t = Phase.done ↔
+    done = t ∨ blocked = t
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-resumption-gwkee311/ExplanatoryResumptionCases.lean:49:67: error: Application type mismatch: The argument
+  rfl
+has type
+  ?m.64 = ?m.64
+but is expected to have type
+  m.process.step safe Event.begin ?m.61
+in the application
+  Advance.action rfl
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-resumption-gwkee311/ExplanatoryResumptionCases.lean:51:58: error: Application type mismatch: The argument
+  rfl
+has type
+  ?m.119 = ?m.119
+but is expected to have type
+  m.process.step safe Event.begin ?m.116
+in the application
+  Advance.action rfl
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-resumption-gwkee311/ExplanatoryResumptionCases.lean:58:48: error: unsolved goals
+ready : Phase
+⊢ ((match ready, Event.finish with
+      | Phase.origin, Event.enter => False
+      | Phase.risky, Event.begin => False
+      | Phase.safe, Event.begin => False
+      | Phase.ready, Event.finish => False
+      | x, x_1 => False) ∨
+      (match ready, Event.finish with
+        | Phase.origin, Event.enter => True
+        | Phase.risky, Event.begin => False
+        | Phase.safe, Event.begin => False
+        | Phase.ready, Event.finish => False
+        | x, x_1 => False) ∨
+        (match ready, Event.finish with
+          | Phase.origin, Event.enter => False
+          | Phase.risky, Event.begin => True
+          | Phase.safe, Event.begin => False
+          | Phase.ready, Event.finish => False
+          | x, x_1 => False) ∨
+          match ready, Event.finish with
+          | Phase.origin, Event.enter => False
+          | Phase.risky, Event.begin => False
+          | Phase.safe, Event.begin => False
+          | Phase.ready, Event.finish => True
+          | x, x_1 => False) ∧
+    ((¬match ready, Event.finish with
+        | Phase.origin, Event.enter => False
+        | Phase.risky, Event.begin => False
+        | Phase.safe, Event.begin => False
+        | Phase.ready, Event.finish => False
+        | x, x_1 => False) →
+      (¬match ready, Event.finish with
+          | Phase.origin, Event.enter => True
+          | Phase.risky, Event.begin => False
+          | Phase.safe, Event.begin => False
+          | Phase.ready, Event.finish => False
+          | x, x_1 => False) →
+        (¬match ready, Event.finish with
+            | Phase.origin, Event.enter => False
+            | Phase.risky, Event.begin => True
+            | Phase.safe, Event.begin => True
+            | Phase.ready, Event.finish => False
+            | x, x_1 => False) →
+          (¬match ready, Event.finish with
+              | Phase.origin, Event.enter => False
+              | Phase.risky, Event.begin => True
+              | Phase.safe, Event.begin => False
+              | Phase.ready, Event.finish => False
+              | x, x_1 => False) →
+            match ready, Event.finish with
+            | Phase.origin, Event.enter => False
+            | Phase.risky, Event.begin => False
+            | Phase.safe, Event.begin => False
+            | Phase.ready, Event.finish => True
+            | x, x_1 => False)
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-resumption-gwkee311/ExplanatoryResumptionCases.lean:76:9: error: Application type mismatch: The argument
+  rfl
+has type
+  ?m.24 = ?m.24
+but is expected to have type
+  m.process.step ready Event.finish done
+in the application
+  And.intro rfl
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-resumption-gwkee311/ExplanatoryResumptionCases.lean:76:14: error: Application type mismatch: The argument
+  rfl
+has type
+  ?m.28 = ?m.28
+but is expected to have type
+  Executes m (Program.action Event.finish) ready done
+in the application
+  And.intro rfl
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-resumption-gwkee311/ExplanatoryResumptionCases.lean:76:19: error: unsolved goals
+ready done : Phase
+⊢ ∀ (x : Phase),
+    ¬match done, Event.finish with
+      | Phase.origin, Event.enter => x = Phase.risky ∨ x = Phase.safe
+      | Phase.risky, Event.begin => x = Phase.ready ∨ x = Phase.blocked
+      | Phase.safe, Event.begin => x = Phase.ready
+      | Phase.ready, Event.finish => x = Phase.done
+      | x, x_1 => False
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-resumption-gwkee311/ExplanatoryResumptionCases.lean:80:47: error: Application type mismatch: The argument
+  rfl
+has type
+  ?m.18 = ?m.18
+but is expected to have type
+  m.process.step ready Event.finish done
+in the application
+  And.intro rfl
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-resumption-gwkee311/ExplanatoryResumptionCases.lean:82:2: error: Type mismatch
+  impossible
+has type
+  m.process.step done Event.finish t
+but is expected to have type
+  False
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-resumption-gwkee311/ExplanatoryResumptionCases.lean:89:15: error: Application type mismatch: The argument
+  rfl
+has type
+  ?m.30 = ?m.30
+but is expected to have type
+  m.process.step safe Event.begin ?m.25
+in the application
+  Trace.cons rfl
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-resumption-gwkee311/ExplanatoryResumptionCases.lean:89:26: error: Application type mismatch: The argument
+  rfl
+has type
+  ?m.40 = ?m.40
+but is expected to have type
+  m.process.step ?m.34 Event.finish ?m.35
+in the application
+  Trace.cons rfl
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-resumption-gwkee311/ExplanatoryResumptionCases.lean:88:52: error: unsolved goals
+safe done : Phase
+⊢ Trace m.process safe [Event.begin, Event.finish] done ∧ ¬∃ t, Executes m (Program.action Event.finish) done t
+'Generative.ExplanatoryResumptionCases.adaptive_safe_exact' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.ExplanatoryResumptionCases.early_check_safe_exact' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.ExplanatoryResumptionCases.testing_before_formation_changes_results' depends on axioms: [propext,
+ sorryAx,
+ Quot.sound]
+'Generative.ExplanatoryResumptionCases.adaptive_risky_exact' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.ExplanatoryResumptionCases.same_start_reaches_distinct_residuals' depends on axioms: [propext, sorryAx]
+'Generative.ExplanatoryResumptionCases.remaining_program_changes_continuation' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryResumptionCases.exact_paused_accounts_retain_remaining_program' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryResumptionCases.inserted_activity_can_disable_resumption' depends on axioms: [propext, sorryAx]
+'Generative.ExplanatoryResumptionCases.inserted_activity_changes_native_answers' depends on axioms: [propext, sorryAx]
+'Generative.ExplanatoryResumptionCases.interrupted_history_retained' depends on axioms: [propext, sorryAx]

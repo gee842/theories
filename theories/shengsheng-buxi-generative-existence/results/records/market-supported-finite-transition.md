@@ -6,7 +6,7 @@
 
 记录源 / Editable record: [market-supported-finite-transition.json](market-supported-finite-transition.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T13:25:42.191315+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-08T19:02:21.616729+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
@@ -40,6 +40,8 @@ Lean 4.29.1 实查27项新定理／35项新审计，96项继承定理／118项�
 **Preserved conditions / 保留条件:** 同一完整 State、实际剩余支持、预算及原参数；后继扰动为 noShock，无新增储备。 / Same full State, actual remaining stock, budget and original parameters; successor disturbance is noShock with no added reserve. [RegimeTransition.lean](../../../../experiments/market-generativity/formal/RegimeTransition.lean)
 
 - Related, not a proved adapter / 关联而非已证转换: [alignment-direction-g0-j](alignment-direction-g0-j.md). 机制结果供既有 G0/J 判断使用；稳定性不提供规范起点或覆盖全部现实损失。 / The mechanism informs existing G0/J judgment; stability neither supplies normative grounds nor covers all real losses.
+- Related, not a proved adapter / 关联而非已证转换: [market-partial-correction-boundary](market-partial-correction-boundary.md). 新增结果放宽纠正参数，原范围继续保留和复用。 / The new result relaxes the correction parameter; the original scope remains preserved and reusable.
+- Related, not a proved adapter / 关联而非已证转换: [market-finite-support-obstruction](market-finite-support-obstruction.md). 已完成的有限支持阻碍，保留本记录较窄结论。 / Completed finite-support obstruction preserving this record’s narrower result.
 
 ## 来源与既有回执 Sources and existing receipts
 
@@ -54,10 +56,14 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 ## 复用与下一增量 Reuse and next delta
 
-有限持续纠正及支持交接已完成。下一连接是实际可实施的部分阻断如何形成、保持并兑现参数改变，以及零余量后的有支持进入；复用既有形成机制。 / Finite sustained correction and support handoff are complete. Next connect formation and retention of implementable partial suppression to actual parameter change, and supported entry after zero share, reusing established formation mechanisms.
+β=0有限转变已完成，部分纠正与临界等号由 market-partial-correction-boundary 推进；后续形成—市场接口及含误差范围以该条为准。 / The beta=0 finite transition is complete; market-partial-correction-boundary advances partial correction and equality. Follow that record for formation-to-market and error-scope continuations.
 
 Aliases / 别名: `RegimeTransition.supported_finite_transition`
 
 ## 沿革 History
 
 - 2026-10-08：新增有限持续干预、前缀支持和原保护证书之间的正式组合；保留零余量、期限与支持失败。 / 2026-10-08: added the formal composition of finite sustained intervention, prefix support and the original protection certificate, retaining zero-seed, timing and support failures.
+- 2026-10-08：审读同一研究追加的部分纠正与临界分析；本条原主张、证明和历史回执未改变。 / 2026-10-08: reviewed appended partial-correction and critical analysis in the same study; this record’s original claim, proof and historical receipt are unchanged.
+- 2026-10-09：核读并接入既有研究§§37–40有限支持阻碍；本记录的定理、前提及旧回执均不变，新量词结果见market-finite-support-obstruction。 / 2026-10-09: reconciled study sections 37–40 on finite-support obstruction; this record’s theorem, premises and prior receipt remain unchanged, with the stronger quantified obstruction in market-finite-support-obstruction.
+- 2026-10-09：核读既有研究§§41–46的LibreOffice形成对应；原定理、条件和回执均保留，新历史评估另记formed-software-continuation，未作数值映射。 / 2026-10-09: reconciled study sections 41–46 on LibreOffice formation; original theorem, hypotheses and receipt remain, with the new historical assessment in formed-software-continuation and no numerical mapping.
+- 2026-10-09：核读同一研究§§47–52的API接续与保留依存评估；先前正文原字节前缀保留。此对应未改变本条数学命题、前提或回执，也未提供数量化参数。 / 2026-10-09: reconciles sections 47–52 on API continuation and retained dependence; original study/chapter byte prefixes remain. The assessment changes no mathematical claim, hypothesis or receipt and supplies no quantitative parameters.

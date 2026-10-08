@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "id": "control-coherence-loss",
+  "title": {
+    "en": "Control-response loss and recovery through retained joint relations",
+    "zh": "控制响应丧失与保留共同关系的恢复"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-08T19:01:13.669135+00:00",
+  "claim": {
+    "en": "In the specified real-amplitude fragment, controlled X/Z order and complete dephasing preserve control branch weights while changing a fixed measurement response. A diagonal-only decoder and a uniform inverse from the reduced matrix cannot recover the required distinctions. A reversible interaction with a blank register realizes the dephasing on reduction, and retaining the joint state permits exact reversal.",
+    "zh": "在明示实振幅片段中，受控X/Z次序与完全退相干保留控制分支权重但改变固定测量响应。仅凭对角线的解码与仅凭约化矩阵的统一逆映射无法恢复所需区别。与空白寄存器的可逆交互经约化恰好实现退相干；保留共同状态允许精确反转。"
+  },
+  "hypotheses": [
+    {
+      "en": "Integer amplitude and density numerators with explicit normalization; H, X, Z, coherent control, reduction and measurement are specified operations, not derived physical laws. Arbitrary integer matrices are not asserted to be physical states.",
+      "zh": "整数振幅及密度分子具有公开归一化；H、X、Z、相干控制、约化及测量均为明示操作，不是推导出的物理定律。不声称任意整数矩阵均为物理状态。"
+    },
+    {
+      "en": "The no-inverse result requires one map to restore both original preparations from their common reduced output alone. Joint reversal retains the initially blank register and control of the same joint operation.",
+      "zh": "无逆映射结果要求同一映射仅凭共同约化输出恢复两种原制备；共同反转保留最初空白寄存器及对同一共同操作的控制。"
+    }
+  ],
+  "correspondence": {
+    "en": "A restricted algebraic instantiation of standard quantum operations with the control coordinate first. Matrix traces and shared response denominators are explicit. This is a state-interface calculation, not a verified implementation of the full higher-order switch or a laboratory run.",
+    "zh": "标准量子操作的受限代数实例化，以控制坐标为先；矩阵迹和响应共同分母公开。这是状态接口计算，不是完整高阶开关的已验证实现或实验运行。"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/OperativeCoherence.lean",
+  "aliases": [
+    "Generative.OperativeCoherence.switched_density",
+    "Generative.OperativeCoherence.dephase_keeps_response_iff",
+    "Generative.OperativeCoherence.no_diagonal_response_decoder",
+    "Generative.OperativeCoherence.no_uniform_dephase_inverse",
+    "Generative.OperativeCoherence.recording_reduces_to_dephase",
+    "Generative.OperativeCoherence.joint_reversal_restores_control"
+  ],
+  "dependencies": [],
+  "related": [
+    {
+      "id": "becoming-context-coherence",
+      "detail": {
+        "en": "Extends the operative comparison beyond existential context support; the prior trace theorem is neither imported nor claimed to represent quantum coherence.",
+        "zh": "将作用比较推进到存在性情境支持之外；未导入此前历史定理，也不声称它已表示量子相干性。"
+      }
+    },
+    {
+      "id": "endpoint-loss-and-return",
+      "detail": {
+        "en": "Contrasts loss at a reduced interface with recovery at a retained joint interface; no formal transport to that fixed-law endpoint theorem is claimed.",
+        "zh": "比较约化接口的损失与保留共同接口的恢复；不声称已形式接入固定规律端点定理。"
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/OperativeCoherence.lean",
+      "detail": {
+        "en": "The prepared, coherent and degraded matrices share diagonal (1,1) but have distinct plus responses. Prepared and coherent matrices dephase to the same matrix, blocking uniform recovery from that matrix alone.",
+        "zh": "已制备、相干与退化矩阵共享对角线(1,1)，但正向响应不同；前两者退相干至同一矩阵，阻断仅凭该矩阵的统一恢复。"
+      }
+    }
+  ],
+  "limitations": {
+    "en": "The checked fragment has real integer amplitudes, selected operations and one response. It proves neither causal nonseparability, arbitrary complex quantum behavior, physical implementation, universal irreversibility, ethical degeneration nor the universal zero-substantive-axiom foundation.",
+    "zh": "所查片段限于实整数振幅、选定操作及一种响应。未证明因果不可分离、任意复数量子行为、物理实现、普遍不可逆、伦理退化或普遍零实质公理根基。"
+  },
+  "validation_scope": {
+    "en": "Fresh Lean 4.29.1 build: 27 theorems and 54 declaration audits. 44 reports empty; 10 use propext, three of those also Quot.sound. No custom postulates or final Classical.choice. Source-bound frozen receipt; author counterreview, no independent acceptance or new empirical result.",
+    "zh": "Lean 4.29.1重新实编27项定理及54项声明审计。44项空，10项含propext，其中3项另含Quot.sound；无自定公理或最终Classical.choice。回执绑定冻结源码；作者反审，无独立验收或新增经验成果。"
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/OperativeCoherence.lean",
+      "role": "proof",
+      "sha256": "27028964458cad91d16df534203331ae5e9f295375e5ef027bcc9da0eb1394c8",
+      "declarations": [
+        "Generative.OperativeCoherence.preparation_from_blank",
+        "Generative.OperativeCoherence.switched_density",
+        "Generative.OperativeCoherence.coherent_response",
+        "Generative.OperativeCoherence.degraded_response",
+        "Generative.OperativeCoherence.no_diagonal_response_decoder",
+        "Generative.OperativeCoherence.no_uniform_dephase_inverse",
+        "Generative.OperativeCoherence.retained_response_exact",
+        "Generative.OperativeCoherence.dephase_keeps_response_iff",
+        "Generative.OperativeCoherence.recording_reduces_to_dephase",
+        "Generative.OperativeCoherence.joint_reversal_restores_control"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/operative-coherence-checks/20261008T184345.613262Z/verification.json",
+      "role": "receipt",
+      "sha256": "5235cf9487a839cc50e2f52788bdeb580f585b9970621d5f85969e6a18b4d4ed",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
+      "role": "integration",
+      "sha256": "a3bb5b0c7e0630bfc24ade4e35dc33354160bf0ac0355dca05286626514899fd",
+      "declarations": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BECOMING-FOUNDATION.md",
+      "role": "statement",
+      "sha256": "5daa894cad1efdc502d305ce757ac6ed1478f9fb5b4376c21873edd5bdbeabb7",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_operative_coherence.py",
+      "role": "review",
+      "sha256": "40eec236f1a32e9d6807c96c5816441cc078e477335185b8a2b6dd38d8dbdd5e",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/OperativeCoherence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/operative-coherence-checks/20261008T184345.613262Z/verification.json",
+      "sha256_pointer": "/modules/0/source_sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "en": "Use the established difference between local access and retained joint relations in the common constitutive argument. Warrant the universal claim at its full scope instead of promoting this supplied quantum mechanism into universal ontology.",
+    "zh": "将局部可用与保留共同关系的已建立区别用于共同构成论证；取得普遍主张完整范围的根据，不把给定量子机制升格为普遍本体。"
+  },
+  "history": [
+    {
+      "en": "9 October 2026: §18 derives a concrete formation/loss/reversal interface after §17’s source assessment. Preliminary 21- and 26-theorem builds remain development history; the final 27-theorem package is one scoped result.",
+      "zh": "2026年10月9日：第18节在第17节来源评估后推导具体形成／损失／反转接口。21及26定理初步构建保留为开发历史；最终27定理包是一个有范围成果。"
+    },
+    {
+      "en": "9 October 2026: reconciled Ren’s whole/manifold correction. The necessity target is Becoming as a whole, with generativity within it. Earlier chapter/study content and proof sources are preserved; no new theorem or axiom.",
+      "zh": "2026年10月9日：接入Ren关于整体／manifold的修正。必然性对象是Becoming整体，生成性位于其中。保留此前理论、研究及证明源码；无新增定理或公理。"
+    },
+    {
+      "en": "9 October 2026: reviewed the existing whole/manifold insertion and the subsequent whole-deduction audit in the shared theory/study. The local mathematical statement and proof receipt are unchanged; the whole target does not require this particular mechanism everywhere.",
+      "zh": "2026年10月9日：核读共享理论／研究中的整体／manifold插入及后续整体演绎审计。局部数学陈述与证明回执不变；整体目标不要求该机制处处成立。"
+    }
+  ]
+}

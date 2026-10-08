@@ -182,7 +182,13 @@ Where capability gains reshape resource allocation, goal formation and successor
 
 Under explicit G0 and J1–J4, the positive aim includes richer living, understanding, relationships and continued organizational development, with actual losses and bounded responsibilities retained. Capability gains can be valuable without settling their use or distribution. The connected formation and continuation of warranted goal revision now has the completed conditional result identified above; growth makes its relevance explicit. The correction-infrastructure study below tests a further implementation requirement, without reopening completed practical principles or goal revision. The [checked possibility/control distinctions](ZERO-AXIOM-PRACTICAL-JUDGMENT.md#16-连续推进理由可行接续迁移与冲突--reasons-effective-continuation-transfer-and-conflict) support only their stated structural claims. This section adds no mathematical proof, measured growth law or guarantee of ethical convergence.
 
-## Corrigibility and its changing practical conditions
+<a id="corrigibility-and-its-changing-practical-conditions"></a>
+
+## Responsive transformation through changing understanding and circumstances
+
+**因应转化 / Responsive transformation，2026-10-09。** [Ren's clarification](../../../sources/15-codex-theory-conversations/2026-10-09-responsive-transformation.md) makes boundary conditions and direction the governing questions of this line. Begin with activity changing the conditions of further activity; discernment, evaluation, purposes and response differentiate within that unfolding. Their capacity for revision can develop or deteriorate as cognition and circumstances change. The [current account](PLURAL-SYSTEMS-AND-CORRECTION.md#15-responsive-transformation) distinguishes enabling relations and checked local limits from ethical direction under G0/J. Local guarantees retain their explicit premises; an unconditional future guarantee is not the completion requirement.
+
+**For AI-alignment readers:** this is our relational approach to *corrigibility*: effective openness to warranted learning, redirection, revision, interruption and replacement, including reconsideration of what should change. The term remains a bridge to that literature rather than the ontological starting point. A request's authority, an AI's understanding and the conditions of action are situated and revisable; no current judgment grants automatic exemption from legitimate oversight. The historical proof packages below retain their names and scopes.
 
 **可纠正性形式研究，2026-10-08。** [Ren 要求持续形式化直至前沿贡献出现](../../../sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md#formalization-toward-a-corrigibility-frontier-contribution)。[首轮证明、执行与文献反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-INFRASTRUCTURE-INTEGRATION.md)已有34项 Lean 定理／56项声明审计：奖励“接受更新”不会独自改变基础做法之间的排序；若最优做法破坏实际纠正入口，再提高接受奖励也不能恢复入口。单独维护奖励有明确代价界，不能被写成无条件保证。
 

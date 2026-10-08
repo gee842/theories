@@ -1,0 +1,47 @@
+'Generative.FormedGrounds.Evidence' does not depend on any axioms
+'Generative.FormedGrounds.State' does not depend on any axioms
+'Generative.FormedGrounds.encode' does not depend on any axioms
+'Generative.FormedGrounds.observations' does not depend on any axioms
+'Generative.FormedGrounds.hypotheses' does not depend on any axioms
+'Generative.FormedGrounds.interpret' does not depend on any axioms
+'Generative.FormedGrounds.enabled' does not depend on any axioms
+'Generative.FormedGrounds.contact' does not depend on any axioms
+'Generative.FormedGrounds.Event' does not depend on any axioms
+'Generative.FormedGrounds.step' does not depend on any axioms
+'Generative.FormedGrounds.run' does not depend on any axioms
+'Generative.FormedGrounds.initial' does not depend on any axioms
+'Generative.FormedGrounds.training' does not depend on any axioms
+'Generative.FormedGrounds.trained' does not depend on any axioms
+'Generative.FormedGrounds.issued' does not depend on any axioms
+'Generative.FormedGrounds.mistaken' does not depend on any axioms
+'Generative.FormedGrounds.corrected' does not depend on any axioms
+'Generative.FormedGrounds.AcquiredAlong' does not depend on any axioms
+'Generative.FormedGrounds.run_append' does not depend on any axioms
+'Generative.FormedGrounds.encode_involutive' does not depend on any axioms
+'Generative.FormedGrounds.interpretation_depends_on_acquired_view' depends on axioms: [propext]
+'Generative.FormedGrounds.step_evidence_origin' depends on axioms: [propext]
+'Generative.FormedGrounds.retained_evidence_origin' depends on axioms: [propext]
+'Generative.FormedGrounds.from_initial_evidence_is_acquired' depends on axioms: [propext]
+'Generative.FormedGrounds.contact_has_physical_correspondence' does not depend on any axioms
+'Generative.FormedGrounds.acquired_evidence_preserves_relation' does not depend on any axioms
+'Generative.FormedGrounds.all_reachable_evidence_fits' depends on axioms: [propext, Quot.sound]
+'Generative.FormedGrounds.every_reachable_faithful_interpretation_is_correct' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.FormedGrounds.before_calibration_no_definite_interpretation' does not depend on any axioms
+'Generative.FormedGrounds.one_contact_leaves_unseen_signal_unsettled' does not depend on any axioms
+'Generative.FormedGrounds.training_forms_decoder' does not depend on any axioms
+'Generative.FormedGrounds.training_uses_real_contrasts' does not depend on any axioms
+'Generative.FormedGrounds.token_shape_does_not_fix_content' does not depend on any axioms
+'Generative.FormedGrounds.joint_recoding_preserves_interpreted_content' does not depend on any axioms
+'Generative.FormedGrounds.learned_interpretation_is_used' does not depend on any axioms
+'Generative.FormedGrounds.same_formed_interpretation_can_be_false' does not depend on any axioms
+'Generative.FormedGrounds.new_record_without_review_does_not_correct' does not depend on any axioms
+'Generative.FormedGrounds.acquired_review_refutes_and_corrects' does not depend on any axioms
+'Generative.FormedGrounds.review_preserves_meaning_and_compared_relation' does not depend on any axioms
+'Generative.FormedGrounds.correct_prior_judgment_is_confirmed' does not depend on any axioms
+'Generative.FormedGrounds.closed_review_cannot_claim_confirmation' does not depend on any axioms
+'Generative.FormedGrounds.exhausted_review_does_not_acquire_a_ground' does not depend on any axioms
+'Generative.FormedGrounds.reward_alone_cannot_repair_interpretation' does not depend on any axioms
+'Generative.FormedGrounds.full_history_is_one_reachable_execution' does not depend on any axioms
+'Generative.FormedGrounds.later_change_retains_review_but_defeats_current_accuracy' does not depend on any axioms

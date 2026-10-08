@@ -1,0 +1,57 @@
+'StructuralCopying.Law' does not depend on any axioms
+'StructuralCopying.charge' does not depend on any axioms
+'StructuralCopying.cost' does not depend on any axioms
+'StructuralCopying.CopyState' does not depend on any axioms
+'StructuralCopying.extend' does not depend on any axioms
+'StructuralCopying.tick' depends on axioms: [propext]
+'StructuralCopying.steps' depends on axioms: [propext]
+'StructuralCopying.start' does not depend on any axioms
+'StructuralCopying.copy' depends on axioms: [propext]
+'StructuralCopying.release' does not depend on any axioms
+'StructuralCopying.reproduce' depends on axioms: [propext]
+'StructuralCopying.tick_accounts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StructuralCopying.tick_keeps_template_order' depends on axioms: [propext]
+'StructuralCopying.tick_preserves_tokens' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StructuralCopying.steps_preserve_tokens' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StructuralCopying.tick_preserves_path' depends on axioms: [propext]
+'StructuralCopying.steps_invariants' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StructuralCopying.steps_preserve_path' depends on axioms: [propext]
+'StructuralCopying.supported_scan' depends on axioms: [propext, Quot.sound]
+'StructuralCopying.copied_structure_inherits' depends on axioms: [propext, Quot.sound]
+'StructuralCopying.reproduction_inherits' depends on axioms: [propext, Quot.sound]
+'StructuralCopying.reproduction_accounts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StructuralCopying.tick_cost_balance' depends on axioms: [propext]
+'StructuralCopying.steps_cost_balance' depends on axioms: [propext]
+'StructuralCopying.completed_copy_requires_cost' depends on axioms: [propext]
+'StructuralCopying.exact_reproduction_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StructuralCopying.descendants' depends on axioms: [propext]
+'StructuralCopying.repeatedFeed' does not depend on any axioms
+'StructuralCopying.finite_lineage_inherits' depends on axioms: [propext, Quot.sound]
+'StructuralCopying.lineage_accounts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StructuralCopying.exchange' depends on axioms: [propext]
+'StructuralCopying.exchange_preserves_material' depends on axioms: [propext, Quot.sound]
+'StructuralCopying.exchange_preserves_path' depends on axioms: [propext]
+'StructuralCopying.alternating' does not depend on any axioms
+'StructuralCopying.clustered' does not depend on any axioms
+'StructuralCopying.mixed' does not depend on any axioms
+'StructuralCopying.alternatingEasy' does not depend on any axioms
+'StructuralCopying.clusteredEasy' does not depend on any axioms
+'StructuralCopying.feed' does not depend on any axioms
+'StructuralCopying.previous_fragment_is_template' does not depend on any axioms
+'StructuralCopying.actual_exchange_forms_variant' depends on axioms: [propext]
+'StructuralCopying.formed_variant_enters_copying' depends on axioms: [propext]
+'StructuralCopying.inherited_variant_changes_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StructuralCopying.exact_local_ranking' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StructuralCopying.third_structure_cost_constraint' depends on axioms: [propext, Quot.sound]
+'StructuralCopying.two_costs_determine_third' depends on axioms: [propext, Quot.sound]
+'StructuralCopying.equal_census_different_organization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StructuralCopying.inherited_variant_reproduces' depends on axioms: [propext]
+'StructuralCopying.common_budget_discriminates' depends on axioms: [propext]
+'StructuralCopying.changed_local_law_reverses_advantage' depends on axioms: [propext]
+'StructuralCopying.full_copy_need_not_be_released' depends on axioms: [propext]
+'StructuralCopying.batch' depends on axioms: [propext]
+'StructuralCopying.made' does not depend on any axioms
+'StructuralCopying.batch_accounts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'StructuralCopying.shared_supply_order_matters' depends on axioms: [propext]
+'StructuralCopying.census' does not depend on any axioms
+'StructuralCopying.no_census_only_completion' depends on axioms: [propext]

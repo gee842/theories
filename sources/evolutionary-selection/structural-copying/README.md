@@ -1,0 +1,7 @@
+# Structural copying primary comparison
+
+[Papastavrou, Horning and Joyce, 2024, *RNA-catalyzed evolution of catalytic RNA*](https://doi.org/10.1073/pnas.2321592121), PNAS 121(11), e2321592121, is preserved as [original full-text XML](papastavrou2024.xml). [Provenance](provenance.json) records its public Europe PMC retrieval, original byte count and SHA-256. The XML is unchanged; no reading edition or new dataset is substituted for it.
+
+Reading scope: RNA-catalyzed evolution, sequence changes, biochemical properties, Figure 4 description and Discussion. The paper connects copying, catalytic function, fidelity and changing sequence distributions. It reports evolved variants that copy more readily while losing some cleavage activity, and checks a product of stage yields against competitive enrichment. Sequence-dependent functional progeny improve that comparison. These are the authors' evidence and explanation, not a reanalysis here. The protocol also uses protein-mediated amplification and experimental selection; it is not autonomous polymerase self-reproduction.
+
+The [current formal study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md#inherited-arrangement-changes-copying) uses this strong comparator to delimit its claims. A binary adjacent-type cost law does not represent nucleotide sequences, folding, kinetic yields or error spectra and is not fitted to this paper. No additional quantitative biological prediction or experimental replication is claimed.

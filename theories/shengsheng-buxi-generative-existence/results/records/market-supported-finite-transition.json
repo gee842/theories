@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F06",
-  "reviewed_at_utc": "2026-10-08T13:25:42.191315+00:00",
+  "reviewed_at_utc": "2026-10-08T19:02:21.616729+00:00",
   "claim": {
     "zh": "原有理市场模型的每个物理初态只要维护份额为正，在实际 β=0 纠正下都存在有限 N；初始支持达到含额外耗用的 K_N 时，全部纠正步骤真实执行，实际到达状态在撤除干预后满足原 β=1/2 的永久保护证书。",
     "en": "Every physical state of the original rational market model with positive renewal share has a finite beta=0 correction horizon N. Initial support above K_N, including extra per-step consumption, makes every pulse step executable and lets the actual arrived state satisfy the original beta=1/2 perpetual protection certificate after withdrawal."
@@ -63,6 +63,20 @@
         "zh": "机制结果供既有 G0/J 判断使用；稳定性不提供规范起点或覆盖全部现实损失。",
         "en": "The mechanism informs existing G0/J judgment; stability neither supplies normative grounds nor covers all real losses."
       }
+    },
+    {
+      "id": "market-partial-correction-boundary",
+      "detail": {
+        "zh": "新增结果放宽纠正参数，原范围继续保留和复用。",
+        "en": "The new result relaxes the correction parameter; the original scope remains preserved and reusable."
+      }
+    },
+    {
+      "id": "market-finite-support-obstruction",
+      "detail": {
+        "zh": "已完成的有限支持阻碍，保留本记录较窄结论。",
+        "en": "Completed finite-support obstruction preserving this record’s narrower result."
+      }
     }
   ],
   "counterexamples": [
@@ -106,13 +120,13 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
       "role": "review",
-      "sha256": "cdd092289ae62ca502b36a193e3e6fa619785715e449497776814644b00d7ba3",
+      "sha256": "d713347b7ed83e3163883769cf884db71a13341b38bb45faa383579e29f251df",
       "declarations": []
     },
     {
       "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md",
       "role": "integration",
-      "sha256": "a53cd244b8d3a8e92b85a172d099a4f4b878cec1faa1c5372b4cadeac334bcc9",
+      "sha256": "ce8d50a91534c482cf5a163a9a100870666490d81b74f4f48917f5b9c9a46d36",
       "declarations": []
     }
   ],
@@ -126,13 +140,29 @@
     }
   ],
   "next_delta": {
-    "zh": "有限持续纠正及支持交接已完成。下一连接是实际可实施的部分阻断如何形成、保持并兑现参数改变，以及零余量后的有支持进入；复用既有形成机制。",
-    "en": "Finite sustained correction and support handoff are complete. Next connect formation and retention of implementable partial suppression to actual parameter change, and supported entry after zero share, reusing established formation mechanisms."
+    "zh": "β=0有限转变已完成，部分纠正与临界等号由 market-partial-correction-boundary 推进；后续形成—市场接口及含误差范围以该条为准。",
+    "en": "The beta=0 finite transition is complete; market-partial-correction-boundary advances partial correction and equality. Follow that record for formation-to-market and error-scope continuations."
   },
   "history": [
     {
       "zh": "2026-10-08：新增有限持续干预、前缀支持和原保护证书之间的正式组合；保留零余量、期限与支持失败。",
       "en": "2026-10-08: added the formal composition of finite sustained intervention, prefix support and the original protection certificate, retaining zero-seed, timing and support failures."
+    },
+    {
+      "zh": "2026-10-08：审读同一研究追加的部分纠正与临界分析；本条原主张、证明和历史回执未改变。",
+      "en": "2026-10-08: reviewed appended partial-correction and critical analysis in the same study; this record’s original claim, proof and historical receipt are unchanged."
+    },
+    {
+      "zh": "2026-10-09：核读并接入既有研究§§37–40有限支持阻碍；本记录的定理、前提及旧回执均不变，新量词结果见market-finite-support-obstruction。",
+      "en": "2026-10-09: reconciled study sections 37–40 on finite-support obstruction; this record’s theorem, premises and prior receipt remain unchanged, with the stronger quantified obstruction in market-finite-support-obstruction."
+    },
+    {
+      "zh": "2026-10-09：核读既有研究§§41–46的LibreOffice形成对应；原定理、条件和回执均保留，新历史评估另记formed-software-continuation，未作数值映射。",
+      "en": "2026-10-09: reconciled study sections 41–46 on LibreOffice formation; original theorem, hypotheses and receipt remain, with the new historical assessment in formed-software-continuation and no numerical mapping."
+    },
+    {
+      "zh": "2026-10-09：核读同一研究§§47–52的API接续与保留依存评估；先前正文原字节前缀保留。此对应未改变本条数学命题、前提或回执，也未提供数量化参数。",
+      "en": "2026-10-09: reconciles sections 47–52 on API continuation and retained dependence; original study/chapter byte prefixes remain. The assessment changes no mathematical claim, hypothesis or receipt and supplies no quantitative parameters."
     }
   ]
 }

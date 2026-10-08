@@ -1,0 +1,424 @@
+{
+  "checked_at_utc": "2026-10-08T19:23:52.068436+00:00",
+  "scope": "Owned repair result and source bindings; no full-repository freshness claim.",
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/build_generative_chain.py",
+        "--render"
+      ],
+      "exit_code": 2,
+      "stdout": "{\n  \"status\": \"needs-review\",\n  \"errors\": [\n    \"Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/organizational-formation-from-generative-comparison.md\",\n    \"Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/situated-recovery-empirical-correspondence.md\",\n    \"Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/context-sensitive-updating-correspondence.md\",\n    \"Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/transition-grouping-word-partition.md\",\n    \"Linked source versions changed; reread affected entries before rendering.\"\n  ],\n  \"changes\": {\n    \"modified_sources\": [\n      \"RESEARCH.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md\",\n      \"sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md\",\n      \"theories/shengsheng-buxi-generative-existence/README.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md\",\n      \"sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md\",\n      \"theories/shengsheng-buxi-generative-existence/results/ROADMAP.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md\",\n      \"experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md\",\n      \"theories/shengsheng-buxi-generative-existence/results/records/market-supported-finite-transition.md\",\n      \"experiments/market-generativity/formal/README.md\",\n      \"theories/shengsheng-buxi-generative-existence/results/records/classification-robust-generative-comparison.json\",\n      \"theories/shengsheng-buxi-generative-existence/results/records/classification-robust-generative-comparison.md\",\n      \"theories/shengsheng-buxi-generative-existence/results/records/market-partial-correction-boundary.md\"\n    ],\n    \"missing_sources\": [],\n    \"new_pages\": [\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-ETHICS-ISOMORPHISM-AUDIT.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATOR-GROUNDING-ARGUMENT.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DISCRIMINATION-INTEGRATION.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-RENEWAL-INTEGRATION.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/G0-WARRANT.md\"\n    ],\n    \"removed_pages\": [\n      \"_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md\",\n      \"theories/meta-attractor/COMMON-ORGANIZATION.md\",\n      \"theories/shengsheng-buxi-generative-existence/results/records/supported-renewal-recovery.md\"\n    ]\n  }\n}\n",
+      "stderr": ""
+    }
+  ],
+  "additional_tool_checks": [
+    {
+      "name": "research-check",
+      "cmd": "make research-check",
+      "result": {
+        "chunk_id": "419ad3",
+        "wall_time_seconds": 0.394931209,
+        "exit_code": 2,
+        "original_token_count": 1164,
+        "output": "python3 -B tools/research/research.py check\n{\n  \"records\": 86,\n  \"selected_records\": [\n    \"acquired-binding-compositional-use\",\n    \"acquired-revision-of-pending-task\",\n    \"aggregate-exit-funding\",\n    \"alignment-direction-g0-j\",\n    \"assured-route-criterion\",\n    \"becoming-context-coherence\",\n    \"binding-preserving-substitution\",\n    \"branching-target-uniqueness\",\n    \"branching-tests-bisimulation\",\n    \"classification-robust-generative-comparison\",\n    \"code-plan-global-support\",\n    \"conditional-foundation-assessment\",\n    \"constitutive-binding-assessment\",\n    \"context-sensitive-updating-correspondence\",\n    \"control-coherence-loss\",\n    \"derivation-soundness\",\n    \"derived-history-law-exactness\",\n    \"effective-capacity-and-eventual-reachability\",\n    \"enacted-scene-binding\",\n    \"encounter-control-and-retention\",\n    \"encounter-selection-and-revision\",\n    \"endpoint-loss-and-return\",\n    \"exclusive-footprint-support\",\n    \"fallible-witness-diagnosability\",\n    \"finite-basis-common-interpretation\",\n    \"finite-continuation-plans\",\n    \"finite-fallible-inquiry-necessity\",\n    \"finite-granularity-question-recovery\",\n    \"finite-joining-tree-lifting\",\n    \"finite-trace-transport\",\n    \"formed-copying-registration\",\n    \"formed-goal-revision-continuation\",\n    \"formed-software-continuation\",\n    \"fulfillment-chance-floor\",\n    \"functional-joining-common-structure\",\n    \"growth-constrained-fragmentation\",\n    \"guarded-program-question-recovery\",\n    \"historical-source-binding\",\n    \"incidence-common-refinement\",\n    \"inherited-structural-copying\",\n    \"joining-open-map-factor\",\n    \"joining-questions-survive-encoding\",\n    \"joint-code-plan-lifting\",\n    \"joint-correlation-reduced-dynamics\",\n    \"joint-decomposition-lifting\",\n    \"joint-plan-composition\",\n    \"joint-practice-forms-continuation\",\n    \"joint-target-uniqueness\",\n    \"market-finite-support-obstruction\",\n    \"market-partial-correction-boundary\",\n    \"market-protected-continuation\",\n    \"market-supported-finite-transition\",\n    \"material-preparation-output\",\n    \"mediated-evidence-transport\",\n    \"multivalued-joining-common-structure\",\n    \"naming-attention-coverage\",\n    \"open-form-realization-under-revision\",\n    \"organizational-formation-from-generative-comparison\",\n    \"organizational-rule-inheritance\",\n    \"pending-task-context-applicability\",\n    \"positioned-positive-reason\",\n    \"positive-ground-open-futures\",\n    \"practical-judgment-g0-j\",\n    \"prefix-observation-loss\",\n    \"protection-priority-excludes-uniform-aggregation\",\n    \"recoverable-mediated-change\",\n    \"recurrent-chain-assembly\",\n    \"relational-generative-comparison\",\n    \"relational-renewal-classification\",\n    \"renewing-consuming-formation\",\n    \"reserved-shutdown-during-recovery\",\n    \"residual-continuation-correspondence\",\n    \"retained-reference-joining-recovery\",\n    \"retrospective-source-binding\",\n    \"risk-certificate-outcome-distinction\",\n    \"scientific-inquiry-foundation\",\n    \"self-good-reachable-g0\",\n    \"situated-recovery-empirical-correspondence\",\n    \"supported-renewal-recovery\",\n    \"theory-of-becoming-foundation\",\n    \"trace-law-equivalence\",\n    \"transition-grouping-word-partition\",\n    \"unanchored-incidence-collapse\",\n    \"universal-practical-warrant\",\n    \"versioned-request-completion\",\n    \"wisdom-root\"\n  ],\n  \"errors\": [],\n  \"source_drift\": [\n    {\n      \"id\": \"relational-renewal-classification\",\n      \"path\": \"experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-renewal-verification.json\",\n      \"reviewed_sha256\": \"e5f74f810e7f2d1706df05741376c6af72acc9ec6fa21b492f7311494fa910d2\",\n      \"current_sha256\": \"09f11601f070fa7d68c619bf380ef45de2d6f2405b47853884c4e181a66ae300\"\n    },\n    {\n      \"id\": \"relational-renewal-classification\",\n      \"path\": \"_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-RENEWAL-INTEGRATION.md\",\n      \"reviewed_sha256\": \"0655c1292c51cd9da3937e0578e186d69936a523fe526f8d72845ec6424d7d2b\",\n      \"current_sha256\": \"abd523d285c7972692dc796252fcb220731b9c848c5a1f8c8a14b94554f4ee95\"\n    },\n    {\n      \"id\": \"relational-renewal-classification\",\n      \"path\": \"sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md\",\n      \"reviewed_sha256\": \"36676f03a40ec0b0a892f295c8da8366207612590bb84f1558a1f851d6d1b92f\",\n      \"current_sha256\": \"4bfbbb3cc6cd821aaa60d58a88b305730cb2cad72caa43880793637f4c03b7ad\"\n    }\n  ],\n  \"unrelated_source_drift\": [],\n  \"scope\": \"Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation.\"\n}\nmake: *** [research-check] Error 2\n"
+      }
+    },
+    {
+      "name": "owned-check",
+      "cmd": "python3 -B tools/research/research.py check --ids supported-renewal-recovery effective-capacity-and-eventual-reachability joint-correlation-reduced-dynamics",
+      "result": {
+        "chunk_id": "9fde44",
+        "wall_time_seconds": 0.338026792,
+        "exit_code": 0,
+        "original_token_count": 369,
+        "output": "{\n  \"records\": 86,\n  \"selected_records\": [\n    \"effective-capacity-and-eventual-reachability\",\n    \"joint-correlation-reduced-dynamics\",\n    \"supported-renewal-recovery\"\n  ],\n  \"errors\": [],\n  \"source_drift\": [],\n  \"unrelated_source_drift\": [\n    {\n      \"id\": \"relational-renewal-classification\",\n      \"path\": \"experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-renewal-verification.json\",\n      \"reviewed_sha256\": \"e5f74f810e7f2d1706df05741376c6af72acc9ec6fa21b492f7311494fa910d2\",\n      \"current_sha256\": \"09f11601f070fa7d68c619bf380ef45de2d6f2405b47853884c4e181a66ae300\"\n    },\n    {\n      \"id\": \"relational-renewal-classification\",\n      \"path\": \"_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-RENEWAL-INTEGRATION.md\",\n      \"reviewed_sha256\": \"0655c1292c51cd9da3937e0578e186d69936a523fe526f8d72845ec6424d7d2b\",\n      \"current_sha256\": \"abd523d285c7972692dc796252fcb220731b9c848c5a1f8c8a14b94554f4ee95\"\n    },\n    {\n      \"id\": \"relational-renewal-classification\",\n      \"path\": \"sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md\",\n      \"reviewed_sha256\": \"36676f03a40ec0b0a892f295c8da8366207612590bb84f1558a1f851d6d1b92f\",\n      \"current_sha256\": \"4bfbbb3cc6cd821aaa60d58a88b305730cb2cad72caa43880793637f4c03b7ad\"\n    }\n  ],\n  \"scope\": \"Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation.\"\n}\n"
+      }
+    },
+    {
+      "name": "chain-check",
+      "cmd": "python3 -B _process/research/2026-10-05-generative-foundation-review/root-foundation/build_generative_chain.py --check",
+      "result": {
+        "chunk_id": "749f72",
+        "wall_time_seconds": 0.275303625,
+        "exit_code": 2,
+        "original_token_count": 1021,
+        "output": "{\n  \"status\": \"needs-review\",\n  \"errors\": [\n    \"Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/organizational-formation-from-generative-comparison.md\",\n    \"Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/situated-recovery-empirical-correspondence.md\",\n    \"Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/context-sensitive-updating-correspondence.md\",\n    \"Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/transition-grouping-word-partition.md\",\n    \"Linked source versions changed; reread affected entries before rendering.\"\n  ],\n  \"changes\": {\n    \"modified_sources\": [\n      \"RESEARCH.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md\",\n      \"sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md\",\n      \"theories/shengsheng-buxi-generative-existence/README.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md\",\n      \"sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md\",\n      \"theories/shengsheng-buxi-generative-existence/results/ROADMAP.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md\",\n      \"experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md\",\n      \"theories/shengsheng-buxi-generative-existence/results/records/market-supported-finite-transition.md\",\n      \"experiments/market-generativity/formal/README.md\",\n      \"theories/shengsheng-buxi-generative-existence/results/records/classification-robust-generative-comparison.json\",\n      \"theories/shengsheng-buxi-generative-existence/results/records/classification-robust-generative-comparison.md\",\n      \"theories/shengsheng-buxi-generative-existence/results/records/market-partial-correction-boundary.md\"\n    ],\n    \"missing_sources\": [],\n    \"new_pages\": [\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-ETHICS-ISOMORPHISM-AUDIT.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATOR-GROUNDING-ARGUMENT.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DISCRIMINATION-INTEGRATION.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-RENEWAL-INTEGRATION.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/G0-WARRANT.md\"\n    ],\n    \"removed_pages\": [\n      \"_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md\",\n      \"theories/meta-attractor/COMMON-ORGANIZATION.md\",\n      \"theories/shengsheng-buxi-generative-existence/results/records/supported-renewal-recovery.md\"\n    ]\n  }\n}\n"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "actual successful Lean receipt",
+      "passed": true,
+      "detail": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/renewal-recovery-checks/20261008T190800.542303Z/verification.json"
+    },
+    {
+      "name": "new theorem and audit inventory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "standard axiom dependencies explicit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current and frozen source experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "current and frozen source experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalRecovery.lean",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved artifact Audit.lean",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved artifact RelationalRenewal-compile.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved artifact RelationalRenewal.lean",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved artifact RenewalRecovery-compile.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved artifact RenewalRecovery.lean",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved artifact Signatures.lean",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved artifact axioms.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved artifact check_renewal_recovery.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved artifact lean-toolchain",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "preserved artifact signatures.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "checker still matches actual check",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "latest pointer is successful frozen receipt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "prior failed build preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reviewed source versions supported-renewal-recovery",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "generated record supported-renewal-recovery",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reviewed source versions effective-capacity-and-eventual-reachability",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "generated record effective-capacity-and-eventual-reachability",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reviewed source versions joint-correlation-reduced-dynamics",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "generated record joint-correlation-reduced-dynamics",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "aliases bind checked declarations",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "owned recovery section, study and record links",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "C09 retains paired recorded delta",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C09 source versions match reviewed content",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C09 rendered row exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "other entries preserved at edit",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "owned_status": "passed",
+  "global_scope": "The first make research-render rendered healthy records but returned 2 for concurrent source drift. The subsequent required render returned 1 for in-progress unrelated declaration/receipt bindings. Current errors are preserved; no unrelated record was repaired or certified. The earlier scoped CLI check passed before later concurrent mutations; current owned metadata/source/view checks are distinct from that historical command.",
+  "full_objective_audit": "The finite repair connection is completed under explicit hypotheses. The common account now retains formation, maintenance, transformation, loss and supported reformation; those local mechanisms do not complete the universal constitutive argument or whole-Becoming deduction. No completion status is set.",
+  "first_documentary_check": {
+    "status": "failed",
+    "checks": [
+      {
+        "name": "actual successful Lean receipt",
+        "passed": true,
+        "detail": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/renewal-recovery-checks/20261008T190800.542303Z/verification.json"
+      },
+      {
+        "name": "new theorem and audit inventory",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "standard axiom dependencies explicit",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "current and frozen source experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "current and frozen source experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalRecovery.lean",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "preserved artifact Audit.lean",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "preserved artifact RelationalRenewal-compile.txt",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "preserved artifact RelationalRenewal.lean",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "preserved artifact RenewalRecovery-compile.txt",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "preserved artifact RenewalRecovery.lean",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "preserved artifact Signatures.lean",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "preserved artifact axioms.txt",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "preserved artifact check_renewal_recovery.py",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "preserved artifact lean-toolchain",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "preserved artifact signatures.txt",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "checker still matches actual check",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "latest pointer is successful frozen receipt",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "prior failed build preserved",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "reviewed source versions supported-renewal-recovery",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "generated record supported-renewal-recovery",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "reviewed source versions effective-capacity-and-eventual-reachability",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "generated record effective-capacity-and-eventual-reachability",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "reviewed source versions joint-correlation-reduced-dynamics",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "generated record joint-correlation-reduced-dynamics",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "aliases bind checked declarations",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "owned recovery section, study and record links",
+        "passed": true,
+        "detail": []
+      },
+      {
+        "name": "C09 retains paired recorded delta",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "C09 source versions match reviewed content",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "C09 rendered row exact",
+        "passed": true,
+        "detail": null
+      },
+      {
+        "name": "other entries preserved at edit",
+        "passed": true,
+        "detail": null
+      }
+    ]
+  },
+  "scoped_render": {
+    "method": "registry.render_record with navigation.write_views overwrite guards under research.render_lock",
+    "records": [
+      "supported-renewal-recovery",
+      "effective-capacity-and-eventual-reachability",
+      "joint-correlation-reduced-dynamics"
+    ],
+    "errors": [],
+    "reason": "Whole render currently reports unrelated in-progress proof metadata; only validated, unchanged-proof owned record views are regenerated."
+  },
+  "current_global_metadata": {
+    "load_errors": [],
+    "errors": [
+      "protection-priority-excludes-uniform-aggregation: declaration not found: ProtectionPriorityRival.every_scalar_comparison_trades in experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtectionPriorityRival.lean",
+      "protection-priority-excludes-uniform-aggregation: declaration not found: ProtectionPriorityRival.no_scalar_represents_priority in experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtectionPriorityRival.lean",
+      "protection-priority-excludes-uniform-aggregation: invalid proof receipt binding: receipt does not bind the reviewed proof source",
+      "renewing-consuming-formation: declaration not found: RenewingFormation.event_reading_favors_both in experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingFormation.lean",
+      "renewing-consuming-formation: declaration not found: RenewingFormation.whole_direction_separates in experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingFormation.lean",
+      "renewing-consuming-formation: invalid proof receipt binding: receipt does not bind the reviewed proof source"
+    ],
+    "source_drift": [
+      {
+        "id": "protection-priority-excludes-uniform-aggregation",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtectionPriorityRival.lean",
+        "reviewed_sha256": "cedaf9775aa43342817148668ba5b2163ec01c0e1c5bdfbcc8d44fcafa673bcd",
+        "current_sha256": "e104cc7426693a9f8222397efc9f5e6c49b50f47bbe4fb3b0024c04cf5e71103"
+      },
+      {
+        "id": "protection-priority-excludes-uniform-aggregation",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-verification.json",
+        "reviewed_sha256": "c3bd3a499f0ecf957d98dd921c7a72e3b570eb9b338dbd7058e963b5d04ca5d0",
+        "current_sha256": "a9e6dab8bd0d1379a6e647c162574b7cdf49b09f0f626494dec05d5642f7b71b"
+      },
+      {
+        "id": "protection-priority-excludes-uniform-aggregation",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/G0-WARRANT.md",
+        "reviewed_sha256": "78bae7f18fffae2ebafb733e6b2ba4a04bb9c3c2e2e984b23d59db3ded59f2c0",
+        "current_sha256": "35f7c277f6e23c3bb276c2ba453d5e9c5fa5f8c7fa948360872b41ba4e00dc13"
+      },
+      {
+        "id": "renewing-consuming-formation",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingFormation.lean",
+        "reviewed_sha256": "2fe6aa4e9d0d43e205c06733fdc04e29a1322cc6d261c3df1972c411e530231b",
+        "current_sha256": "4a42505a5678d500fd211904c69254e6760250f23c64ba87d08116ae9ce979b3"
+      },
+      {
+        "id": "renewing-consuming-formation",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/generative-discrimination-verification.json",
+        "reviewed_sha256": "c3bd3a499f0ecf957d98dd921c7a72e3b570eb9b338dbd7058e963b5d04ca5d0",
+        "current_sha256": "a9e6dab8bd0d1379a6e647c162574b7cdf49b09f0f626494dec05d5642f7b71b"
+      },
+      {
+        "id": "renewing-consuming-formation",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/G0-WARRANT.md",
+        "reviewed_sha256": "78bae7f18fffae2ebafb733e6b2ba4a04bb9c3c2e2e984b23d59db3ded59f2c0",
+        "current_sha256": "35f7c277f6e23c3bb276c2ba453d5e9c5fa5f8c7fa948360872b41ba4e00dc13"
+      }
+    ]
+  },
+  "shared_chapter_links": [
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY-OF-BECOMING.md: missing link ../results/records/relational-reading-comparison.md"
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T18:42:39.620547+00:00",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "checker_sha256": "a027a6951e2674a1f16a31aaa56ef3efab3a85b33811b5ef21eec9aa4a910a94",
+  "modules": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/OperativeCoherence.lean",
+      "source_sha256": "7498546d82ab24c97faf467a56f9aacb35695b2037f882303bdf31392daea841",
+      "theorems": 26,
+      "declarations": [
+        "Generative.OperativeCoherence.Vec",
+        "Generative.OperativeCoherence.Joint",
+        "Generative.OperativeCoherence.Matrix",
+        "Generative.OperativeCoherence.xGate",
+        "Generative.OperativeCoherence.zGate",
+        "Generative.OperativeCoherence.negVec",
+        "Generative.OperativeCoherence.norm",
+        "Generative.OperativeCoherence.inner",
+        "Generative.OperativeCoherence.prepare",
+        "Generative.OperativeCoherence.switched",
+        "Generative.OperativeCoherence.controlDensity",
+        "Generative.OperativeCoherence.dephase",
+        "Generative.OperativeCoherence.diagonal",
+        "Generative.OperativeCoherence.mass",
+        "Generative.OperativeCoherence.plusMass",
+        "Generative.OperativeCoherence.minusMass",
+        "Generative.OperativeCoherence.response",
+        "Generative.OperativeCoherence.basisZero",
+        "Generative.OperativeCoherence.prepared",
+        "Generative.OperativeCoherence.coherent",
+        "Generative.OperativeCoherence.degraded",
+        "Generative.OperativeCoherence.xz_anticommute",
+        "Generative.OperativeCoherence.x_preserves_norm",
+        "Generative.OperativeCoherence.z_preserves_norm",
+        "Generative.OperativeCoherence.prepared_density",
+        "Generative.OperativeCoherence.switched_density",
+        "Generative.OperativeCoherence.dephase_preserves_diagonal",
+        "Generative.OperativeCoherence.dephase_preserves_mass",
+        "Generative.OperativeCoherence.response_mass_conserved",
+        "Generative.OperativeCoherence.dephase_response",
+        "Generative.OperativeCoherence.prepared_matrix",
+        "Generative.OperativeCoherence.coherent_matrix",
+        "Generative.OperativeCoherence.degraded_matrix",
+        "Generative.OperativeCoherence.branch_weights_unchanged",
+        "Generative.OperativeCoherence.prepared_response",
+        "Generative.OperativeCoherence.coherent_response",
+        "Generative.OperativeCoherence.degraded_response",
+        "Generative.OperativeCoherence.no_diagonal_response_decoder",
+        "Generative.OperativeCoherence.dephase_merges_preparations",
+        "Generative.OperativeCoherence.no_uniform_dephase_inverse",
+        "Generative.OperativeCoherence.retained",
+        "Generative.OperativeCoherence.decodePlus",
+        "Generative.OperativeCoherence.retained_response_exact",
+        "Generative.OperativeCoherence.dephase_keeps_response_iff",
+        "Generative.OperativeCoherence.withBlank",
+        "Generative.OperativeCoherence.recordBranch",
+        "Generative.OperativeCoherence.recordBranch_involution",
+        "Generative.OperativeCoherence.recording_reduces_to_dephase",
+        "Generative.OperativeCoherence.joint_reversal_restores_control",
+        "Generative.OperativeCoherence.prepared_control_embedding",
+        "Generative.OperativeCoherence.coherent_control_embedding"
+      ]
+    }
+  ],
+  "new_theorems": 26,
+  "new_declaration_audits": 51,
+  "total_declaration_audits": 51,
+  "dependencies": {
+    "Generative.OperativeCoherence.Vec": [],
+    "Generative.OperativeCoherence.Joint": [],
+    "Generative.OperativeCoherence.Matrix": [],
+    "Generative.OperativeCoherence.xGate": [],
+    "Generative.OperativeCoherence.zGate": [],
+    "Generative.OperativeCoherence.negVec": [],
+    "Generative.OperativeCoherence.norm": [],
+    "Generative.OperativeCoherence.inner": [],
+    "Generative.OperativeCoherence.prepare": [],
+    "Generative.OperativeCoherence.switched": [],
+    "Generative.OperativeCoherence.controlDensity": [],
+    "Generative.OperativeCoherence.dephase": [],
+    "Generative.OperativeCoherence.diagonal": [],
+    "Generative.OperativeCoherence.mass": [],
+    "Generative.OperativeCoherence.plusMass": [],
+    "Generative.OperativeCoherence.minusMass": [],
+    "Generative.OperativeCoherence.response": [],
+    "Generative.OperativeCoherence.basisZero": [],
+    "Generative.OperativeCoherence.prepared": [],
+    "Generative.OperativeCoherence.coherent": [],
+    "Generative.OperativeCoherence.degraded": [],
+    "Generative.OperativeCoherence.xz_anticommute": [
+      "propext"
+    ],
+    "Generative.OperativeCoherence.x_preserves_norm": [
+      "propext"
+    ],
+    "Generative.OperativeCoherence.z_preserves_norm": [
+      "propext"
+    ],
+    "Generative.OperativeCoherence.prepared_density": [],
+    "Generative.OperativeCoherence.switched_density": [
+      "propext"
+    ],
+    "Generative.OperativeCoherence.dephase_preserves_diagonal": [],
+    "Generative.OperativeCoherence.dephase_preserves_mass": [],
+    "Generative.OperativeCoherence.response_mass_conserved": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.OperativeCoherence.dephase_response": [
+      "propext"
+    ],
+    "Generative.OperativeCoherence.prepared_matrix": [],
+    "Generative.OperativeCoherence.coherent_matrix": [],
+    "Generative.OperativeCoherence.degraded_matrix": [],
+    "Generative.OperativeCoherence.branch_weights_unchanged": [],
+    "Generative.OperativeCoherence.prepared_response": [],
+    "Generative.OperativeCoherence.coherent_response": [],
+    "Generative.OperativeCoherence.degraded_response": [],
+    "Generative.OperativeCoherence.no_diagonal_response_decoder": [],
+    "Generative.OperativeCoherence.dephase_merges_preparations": [],
+    "Generative.OperativeCoherence.no_uniform_dephase_inverse": [],
+    "Generative.OperativeCoherence.retained": [],
+    "Generative.OperativeCoherence.decodePlus": [],
+    "Generative.OperativeCoherence.retained_response_exact": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.OperativeCoherence.dephase_keeps_response_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.OperativeCoherence.withBlank": [],
+    "Generative.OperativeCoherence.recordBranch": [],
+    "Generative.OperativeCoherence.recordBranch_involution": [],
+    "Generative.OperativeCoherence.recording_reduces_to_dephase": [
+      "propext"
+    ],
+    "Generative.OperativeCoherence.joint_reversal_restores_control": [],
+    "Generative.OperativeCoherence.prepared_control_embedding": [],
+    "Generative.OperativeCoherence.coherent_control_embedding": []
+  },
+  "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/operative-coherence-checks/20261008T184239.619748Z",
+  "log_sha256": {
+    "OperativeCoherence-compile.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axioms.txt": "f257cdfea77d0b0c0ed6b4614e8a77f32d254b539a9516140e36126697f7cbb2"
+  },
+  "scope": "Integer amplitude and density-numerator algebra for specified X/Z controlled orders, dephasing, a fixed control measurement, and failure of uniform recovery from the reduced matrix alone. Physical interpretation is supplied. No proof of causal nonseparability, general quantum theory, a laboratory implementation, universal irreversibility, axiom-free ontology or ethical warrant."
+}

@@ -1,0 +1,14 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-resumption-xdbr_jga/ExplanatoryResiduals.lean:124:2: error: Invalid target: Index in target's type is not a variable (consider using the `cases` tactic instead)
+  (p, s)
+'Generative.ExplanatoryResiduals.advance_resume' does not depend on any axioms
+'Generative.ExplanatoryResiduals.trace_resume' does not depend on any axioms
+'Generative.ExplanatoryResiduals.cut_resume' does not depend on any axioms
+'Generative.ExplanatoryResiduals.advance_has_native_trace' does not depend on any axioms
+'Generative.ExplanatoryResiduals.residual_trace_has_native_trace' does not depend on any axioms
+'Generative.ExplanatoryResiduals.cut_trans' does not depend on any axioms
+'Generative.ExplanatoryResiduals.cut_sequence' does not depend on any axioms
+'Generative.ExplanatoryResiduals.execution_reaches_skip' does not depend on any axioms
+'Generative.ExplanatoryResiduals.execution_iff_completed_cut' does not depend on any axioms
+'Generative.ExplanatoryResiduals.same_preserves_resumption' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryResiduals.advance_matches' depends on axioms: [sorryAx]
+'Generative.ExplanatoryResiduals.partial_history_matches' depends on axioms: [sorryAx]

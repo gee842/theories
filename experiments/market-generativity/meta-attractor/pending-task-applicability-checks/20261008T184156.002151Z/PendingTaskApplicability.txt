@@ -1,0 +1,16 @@
+PendingTaskApplicability.lean:140:2: error: 'change' tactic failed, pattern
+  (Option.map (fun out => (out.1.packets, out.1.banks, out.1.active, out.2)) do
+      let output ← result.2.head?
+      some (result.1, reviewAndAct c report { learning := l, requested := output.2 })) =
+    ?m.115
+is not definitionally equal to target
+  (Option.map (fun out => (out.1.packets, out.1.banks, out.1.active, out.2)) do
+      let p_1 ← some (retarget p next)
+      let output ←
+        (drain ((List.drop p_1.cursor (s.banks p_1.slot).path).length + 1)
+                { active := s.active, banks := s.banks, packets := retarget p next :: ps }).2.head?
+      pure
+          ((drain ((List.drop p_1.cursor (s.banks p_1.slot).path).length + 1)
+                { active := s.active, banks := s.banks, packets := retarget p next :: ps }).1,
+            reviewAndAct c report { learning := l, requested := output.2 })) =
+    some (ps, s.banks, s.active, reviewAndAct c report { learning := l, requested := next })

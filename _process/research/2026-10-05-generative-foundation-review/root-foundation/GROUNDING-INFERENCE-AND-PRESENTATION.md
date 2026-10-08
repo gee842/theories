@@ -578,3 +578,256 @@ The [isolated checker](../../../../experiments/integrated-correction/general-fra
 The proof uses Lean's dependent type theory, finite lists, inductive queries, configuration identity and the stated local laws. Empty reports do not discharge those commitments or establish actual-world correspondence. There is no new empirical result or independent acceptance; the substantive objections above are author counterreview.
 
 **中文结论。** 可以从同一过程的操作关系推导分化，而不先把左右读数立为独立部件：原生例子中，两项返回关系足以辨明全部四个配置。但“关系可定义”不等于“已有界面能辨识”；所有指定模态查询仍可遗漏它。进一步保留每一步的计数，不改变原有历史及终点问题的答案，却消去所有非空的完整配置返回。原关系通过有根据的投影仍然成立。因此需要说明的是：在所解释的生成中，什么被恰当地认作同一配置或同一作用关系、这种认同怎样获得实际根据；不是把完整显示状态的相等直接升格为无假设根基。23项新定理已实查，普遍演绎根据仍未完成。
+
+
+## 16. Inclusive becoming and coherent continuation
+
+9 October 2026, Asia/Bangkok. [Ren's inclusive proposal](../../../../sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md) and [completion objective](../../../../sources/15-codex-theory-conversations/2026-10-09-theory-of-becoming-continuation.md) motivate this continuation of the same foundational study. The [Theory of Becoming formulation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BECOMING-FOUNDATION.md) preserves the strong target and its full completion audit.
+
+**Result(s):** reuse `finite-trace-transport` formally through the unchanged core; reuse `trace-law-equivalence`, `conditional-foundation-assessment` and the continuation-profile work in §13 interpretively. New scoped identity: `becoming-context-coherence`. The encompassing `theory-of-becoming-foundation` remains an open target.
+
+**Delta:** an exact test for whether pooling the steps of an inclusive family preserves its finite endpoint histories, followed by a construction retaining or actually changing operative context and a derived history-to-successor-support connection. This differs from §13's residual word language: it retains the shared intermediate context and endpoint conditions. It does not count the existing trace transport or lifting theorem as a new independent result.
+
+**Supplied premises / correspondence:** Lean's logic, state/event/context types, a nonempty family for the pooling equivalence, finite inductive histories, and a joint step relation. The interpretation of context as a consequential relation within one unfolding needs actual correspondence; the proof supplies no physical observer, dynamics, distribution or normative premise.
+
+**Evidence:** [BecomingCompatibility.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/BecomingCompatibility.lean), the [isolated checker](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_becoming_compatibility.py) and [current receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/becoming-compatibility-verification.json). Twenty new theorems / 30 new declaration audits plus 28 inherited audits pass. Of the 58 reports, 57 are empty; only the terminality proof uses standard `propext`. No custom postulate or classical choice is present. These are compiler evidence, not independent substantive acceptance.
+
+**Boundary:** finite histories, supplied law and interpretation, possible rather than guaranteed realization. The pooled-crossing control fails in the retained-context model; a different model with an actual context-changing event succeeds and then terminates. This does not refute the fuller nondual account or prove the universal zero-axiom target impossible.
+
+**Integration:** a history's actual supported endpoint contexts supply the next activity's input. `arrivals_append` proves the connection through the same intermediate pair; `arrivals_snoc` derives the next support without an independently installed update function. The theory page uses the result as a necessary coherence condition while retaining the universal constitutive inference as open.
+
+### The affirmative argument
+
+Start with relationships through which activity can continue. Different possible outcomes may belong to one explanatory scope without every combination of their conditions being jointly realizable. The aim is to include the full range of becoming while retaining the relations that make each continuation possible.
+
+For a family of processes P(i), `InOne` means that at least one member supports the whole finite history with its endpoints. `pooled` instead admits an edge if some member supports that edge. The theorem `pooling_exact_iff_join_closed` proves that the two yield exactly the same endpoint histories precisely when the first family of histories is closed under joining at the displayed boundary. A witness member is used only to cover the empty history. No finiteness of the family, determinism, totality, favorable direction or ethical preference is assumed.
+
+The counterexample is concrete. One member permits 0→1; another permits 1→2. Their pooled edges permit 0→1→2, although neither member permits that history. Preserving the actual supporting context blocks the unsupported join. The number 1 was a shared display, not evidence that the complete operative conditions matched. This is a representational failure, not two fundamentally isolated worlds.
+
+`retained_realizes_union` constructs an exact alternative retaining context throughout a member's history. This does not mean all becoming has frozen laws. `evolving` uses a joint relation R(i,s,a,j,t), in which the same event changes operative context and displayed conditions together. `Arrives` describes which contexts are supported at an endpoint by a full incoming history. The proved composition and one-event update carry that support forward rather than replacing it with every context appearing somewhere in the model.
+
+The explicit changing-context control realizes (false,0)→(true,1)→(true,2). A previously unsupported current context is formed by the actual first step, and the second step uses it. At the terminal configuration no further step exists. Thus static compatibility is not treated as a prohibition on changing conditions, and actual ending remains within the account. This is a declared finite illustration, not an identified life process or a proof of universal generation.
+
+### What the exact criterion does and does not require
+
+1. **Fixed initial context versus some context.** The pooled-family theorem asks whether some member supports a whole history. The erasure/lifting theorem asks the stronger question of support from each specified initial context. Its fibre-wise lifting condition is necessary at that stronger scope; it is not imposed on all coarser inquiries. `erasure_can_start_from_wrong_context` preserves their difference.
+2. **Unknown context versus formed context.** `Arrives` is a semantic support relation. It may describe possibilities compatible with the modeled history without claiming an observer actually knows them. A physical context can genuinely change through R even though a hypothesis about a fixed context would merely be ruled out. The two uses cannot be exchanged.
+3. **Necessary conditional versus derived law.** Exact support propagation follows from the declared finite-history meaning. The actual relation R and its scope are not derived by that fact. Introducing R on a larger state does not alone explain why its events occur.
+4. **No frozen substance.** The pair notation is an analytical articulation of one joint configuration. A physical interpretation must identify the relations and dependencies it preserves. Treating its fields as ontologically independent would violate the method and is not required by the proof.
+5. **Genuine counterexample.** The finite control defeats unqualified pooling, not the claim that generation and degeneration belong to one reality. A stronger whole-process description retaining the missing relation is positively reconstructed. No arbitrarily toggled goodness predicate is used.
+
+### Conventional comparison and source assessment
+
+Michael Sipser's [MIT 18.404 Lecture 2 notes](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/d741901d23b4522588e267177c77d10d_MIT18_404f20_lec2.pdf), read on 9 October 2026 Bangkok, supply a conventional comparator. Pages 6–7 present subset tracking for nondeterministic automata and a language-union construction retaining component transition structures. The comparison gives full credit to those methods. The present formalization uses arbitrary relations and retains endpoint questions; no mathematical priority or predictive superiority over automata is claimed. The added contribution to this project is a checked test of the inclusive-scope interpretation and its connection to changing operative conditions.
+
+No external page supplies the new theorem's proof: its evidence is the actual Lean build. The notes are a targeted primary teaching source, not an exhaustive literature review or evidence for the ontology. Earlier §§13–15 and their preserved comparisons remain applicable.
+
+### Substantive counterreview and next central inference
+
+The strongest objection is that the positive construction still supplies R. That objection is correct at the zero-axiom scope. It does not make the coherence theorem empty: the criterion rules out an explicit inclusive representation, identifies precisely its lost relation and provides an exact repair. But it is still a conditional structural advance.
+
+Another objection is that any actual whole may already contain the omitted contexts. That is compatible with the result and with Ren's proposal. The consequence is to retain those contexts and justify their abstraction, not to assert that reality is incoherent or must contain permanently distinct controllers.
+
+The central remaining question is the same foundational inference made more precise: how does independently identified formation, with actual continuing effects, warrant the proposed common relation between constituted conditions and further activity across the intended scope? The theorem constrains a satisfactory representation of that answer. It does not infer universal explainability, a unique state space, indefinite persistence, ethical authority or a complete catalogue of local laws. Further progress must address that constitutive warrant, not repeatedly recode the same conditional result.
+
+**中文评估。** 本轮从一元关系展开解释“全部空间”需要保留的相容性。把不同情境中的每一步取并集，可能拼出任何一个原过程都不允许的完整历史；定理给出恰好何时不会发生的接合封闭条件。正面构造既能保留作用情境，也能让情境在同一事件中改变，并从真实接续推导后继支持。有限终止被保留。形式化公开局部关系、解释及逻辑前提，未把空公理报告当成零假设的普遍根据；下一中心任务仍是共同作用关系的构成必然性。
+
+
+## 17. Operative relations without a presupposed global order
+
+9 October 2026, Asia/Bangkok. This is an AI-authored continuation of the same foundational argument, under the existing Theory of Becoming objective. It changes the candidate's interpretation and comparison target; it adds no independent result identity, mathematical theorem or empirical claim.
+
+**Result(s):** reuse `becoming-context-coherence` at its finite-history scope and `conditional-foundation-assessment` at its completed scope; credit the concurrent `derived-history-law-exactness` result through its [canonical statement](../../../../theories/shengsheng-buxi-generative-existence/results/records/derived-history-law-exactness.md). Update the open `theory-of-becoming-foundation` target. The derived-history result removes a separately supplied step law relative to an admitted language; it does not establish that every actual operative interface has that representation.
+
+**Delta:** distinguish an operative relationship's joint consequences from a definite causal ordering of its identified operations. A published formation/loss comparison makes the difference concrete: retaining possible order labels does not preserve control coherence. The next constitutive comparison must therefore retain the native operations and their joint response, rather than test only a list of histories. This extends, rather than re-proves, the earlier endpoint-sensitive and joint-realization requirements.
+
+**Supplied premises / correspondence:** the literature below uses finite-dimensional quantum theory, identified input/output subsystems, quantum instruments and process validity conditions. These are substantive physical and mathematical inputs, not a zero-axiom derivation. A claim of physical realization requires the corresponding operations, not merely a program reproducing selected numbers. No isolated primitive subjects are inferred from the laboratory notation.
+
+**Evidence and boundary:** targeted primary reading, a constitutive argument and author counterreview. Existing Lean statements and receipts are unchanged. The source results are attributed comparisons, not newly formalized repository results or independent acceptance of our foundation. No universal absence of time, no unrestricted realizability of process matrices and no failure of finite-trace mathematics is inferred.
+
+**Integration:** the operative conditions in the literature determine the responses available when the identified operations are used together. That is the consumer interface for the proposed formation account. The earlier Boolean support construction does not supply quantum amplitudes, a probability rule or a verified map to that interface. The theory page now states this requirement and separates temporal continuation from the broader constitutive question.
+
+### Begin with the actual relationship being explained
+
+In the proposed account, formation is a change in the relationships through which activity is jointly realized. The resulting structure may support persistence, transformation or loss. Local roles are identified through their participation in that activity. A chronological description can be appropriate, but the appearance of a finite event list in a proof does not by itself establish the physical order of the roles being explained.
+
+The earlier [general constitutive argument](GENERAL-FOUNDATION-INTEGRATION.md#2-the-strongest-direct-constitutive-argument) already admits an atemporal whole-constraint account and distinguishes joint realization from simultaneous operation. It would misrepresent that argument to charge it with a universal fixed-order axiom. The present task instead tests a possible promotion of the finite-history results into such an axiom. That promotion would strengthen the theory without warrant and would unnecessarily constrain the inclusive becoming proposal.
+
+Three questions now have to stay distinct: how a calculation is evaluated; how a particular device unfolds in time; and which causal order, if any, can be assigned to the operations identified by its explanatory interface. An adequate account can relate these questions. Equating their answers before establishing the correspondence can erase the relationship that the account ought to explain.
+
+### Primary comparison and its exact reading scope
+
+The following sources were read on 9 October 2026 Bangkok through their versioned arXiv HTML and the journal metadata. No full-text copy is imported. This is a focused comparison, not an exhaustive review of quantum foundations.
+
+| Primary source | Content used and retained boundary |
+|---|---|
+| Oreshkov, Costa and Brukner, *Quantum correlations with no causal order*, Nature Communications 3, 1092 (2012), [arXiv v3](https://arxiv.org/html/1105.4464v3), Results and Discussion | The process framework retains local quantum operations and probability consistency without assuming a global causal order. It admits a causal-inequality violation under its premises. The paper treats physical occurrence as a further question; mathematical admission is not its experimental observation. Its classical-order result has the stated bipartite scope. |
+| Branciard, *Witnesses of causal nonseparability*, Scientific Reports 6, 26018 (2016), [arXiv v1](https://arxiv.org/html/1603.00043v1), Introduction, II.2, III.1 and IV.2.3 | The quantum switch is causally nonseparable, although it does not violate a causal inequality in the discussed setting. Complete control dephasing yields the classical switch. A causal witness depends on faithful implementation of its operations. Causal nonseparability and device-independent inequality violation are therefore different claims. |
+| Oreshkov, *Time-delocalized quantum subsystems and operations*, Quantum 3, 206 (2019), [journal](https://quantum-journal.org/papers/q-2019-12-02-206/) and [arXiv v4](https://arxiv.org/html/1801.07594v4), §§3–4 and 8 | The paper identifies the switch's operations on subsystems spread across different times and explains their realization within standard quantum mechanics. The operational description cannot be replaced by an acyclic circuit containing those same operations once each. A temporal implementation description remains available. This does not establish that spacetime itself has no order, or realize every process matrix. |
+
+### A positive formation-and-loss comparison
+
+The switch comparison gives the candidate an independently specified operative distinction: coherent control versus the dephased arrangement. Both order alternatives remain in the latter. The loss to be explained is thus not exhausted by deleting one order label. The relevant input/output organization and its responses must be retained when relating the descriptions. This is our interpretation of the cited comparison, not a new derivation of quantum theory.
+
+This is useful for the original inclusive proposal. Generation and degeneration can concern a relation through which activities combine, even where a coarse inventory still lists the same alternatives. A whole-process account should explain how that relation is maintained or altered. Calling its loss degeneration is descriptive at this particular operative scope; it supplies no ethical judgment, no universal arrow of time and no guarantee that its restoration is possible.
+
+The formal context in §16 is a supported alternative in an existential trace construction. Quantum coherence in the cited comparison is not that notion of consistency. Replacing coherent control by a randomly selected classical tag would need an actual equivalence for the original operational questions; the earlier Lean proof supplies none. This is a specific missing correspondence, not a reason to reject every sequential representation. A larger sequential account can remain a candidate if its map preserves the identified operations and their joint responses.
+
+### The constitutive inference after this comparison
+
+The affirmative argument begins with an independently identified joint operation. Its operative relationships include how the identified components participate, not just which names can appear in an event list. If an alternative changes the joint response while retaining those names, it has not preserved everything relevant to that operation. Consequently, the required comparison must keep the operational target fixed before assessing which relations its explanation may omit. This is an adequacy argument at an identified target, not a deduction that every actual formation satisfies our preferred law.
+
+The revised common candidate is: **becoming forms, sustains, transforms or dissolves operative relationships within one unfolding; where effects continue, they participate in the conditions of further activity.** Its explanatory content must come from establishing the relationships, their realization and their consequences. The second clause alone is a conditional description, not the stronger foundational deduction. Neither self-reference nor the phrase “operative relationship” discharges that remaining obligation.
+
+The strong zero-added-substantive-axiom target remains unchanged. The comparison removes an unwarranted strengthening from the proposed route: definite causal order at every operational interface. It does not replace that target with a merely compatible framework, absence of ethical axioms or imported quantum postulates. What remains to be warranted is the common constitutive participation of actual relations, at interfaces whose identity and adequacy are earned within the unfolding.
+
+### Author counterreview and next action
+
+| Objection | Assessment |
+|---|---|
+| The quantum implementation still evolves in time, so there is no challenge. | There is no claimed refutation of temporal implementations. The challenged promotion requires the same native operations to have a definite causal order. The distinction between implementation and operational interface is essential. |
+| A sequential computer can calculate the output. | This can establish a useful numerical representation. It does not alone preserve which operations are performed, how they can be varied or composed, or their physical use. Those were the target of the comparison. |
+| The source assumes quantum theory and cannot ground an axiom-free ontology. | Accepted. It supplies a substantive comparison and a scope test. None of its physical postulates is silently adopted as the new universal foundation. |
+| The revised candidate merely says that relations have consequences. | That is a real risk. Actual joint-response relations and their loss must do explanatory work. The revision is not counted as foundational completion or a new proved law. |
+| A quantum example invalidates the existing trace or coherence proofs. | It does not. Their statements are mathematical conditionals. A claim that they already cover this native interface would require a further correspondence; that is the unsupported step. |
+
+**Next action:** develop the common constitutive inference using jointly realized operations and their response to admissible changes, preserving the same operation identity and loss conditions. Compare a concrete adequate sequential reconstruction, if available, with the native description before asserting that the latter needs a new foundation. Any mathematical adapter must be formalized and actually checked; an enlarged state space alone is insufficient. This is a more discriminating route toward the full target, not another requirement to enumerate every possible physical law.
+
+**中文结论。** 先从共同活动的作用关系出发，不能从证明中的有限序列反推所有原生操作都具有确定的全局因果次序。主文献中的量子开关与退相干后的经典开关保留两种次序选项，却不保留同一联合操作结构；这使“关系的形成或丧失”具有具体比较对象。实现可以有时间描述，原生操作的次序仍须依其接口说明。既有相容性与历史规律定理保持；此次修订明确新的对应职责，并未导出量子理论、普遍无时间本体或零公理根基。
+
+
+## 18. A checked operative loss and a retained whole
+
+9 October 2026, Asia/Bangkok. This continues §17's concrete comparison toward the same full foundational target. The mathematical construction and interpretation below are AI-authored. Conventional quantum operations are credited, not presented as newly discovered physics.
+
+**Result(s):** new restricted result `control-coherence-loss`; interpretive reuse of §17 and `becoming-context-coherence`. The former existential support theorem is not imported or counted again. `endpoint-loss-and-return` remains a related fixed-law endpoint result, not a premise of the calculation. The open `theory-of-becoming-foundation` receives a concrete operative correspondence, without a claim of universal closure.
+
+**Delta:** derive the prepared and controlled-order responses from specified operations; identify exactly the cross-term needed by one fixed measurement; exhibit failure of a diagonal-only decoder and uniform recovery from the reduced state; realize the reduction through a reversible interaction and check the joint reversal. This is more specific than fitting a new event table or repeating the need for correspondence.
+
+**Supplied premises / correspondence:** Lean's dependent type theory and `Std`; integer real-amplitude numerators; the specified H, X, Z and controlled operations; partial-trace and measurement interpretations from quantum theory; an initially blank register and retained access for reversal. No physical validity is asserted for arbitrary integer matrices. The generalized matrix identities are algebraic; the displayed physical reading uses the stated normalized examples.
+
+**Evidence:** [OperativeCoherence.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/OperativeCoherence.lean), [isolated checker](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_operative_coherence.py), and [source-bound receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/operative-coherence-verification.json). A fresh Lean 4.29.1 build checks 27 theorems / 54 declared structures, definitions and theorem audits; 44 reports are empty, 10 use `propext`, of which three also use `Quot.sound`. No final report contains classical choice or a custom postulate. Preliminary builds are development history, not additional results.
+
+**Boundary:** a real-amplitude algebraic fragment, a fixed X/Z use and a fixed control measurement. The calculation neither implements the full higher-order quantum switch nor proves causal nonseparability. A known output can be prepared afresh; the recovery obstruction concerns one function recovering either original input from the reduced output alone. The wider relation is retained in the constructive reversal case, not presumed accessible in every physical situation.
+
+**Integration:** preparation supplies the coherent control to the controlled-order operation; its derived control density supplies the measurement and dephasing comparison. A controlled interaction with a blank register supplies exactly the same dephasing after reduction. Retaining that joint state supplies the input to the checked inverse. This is the producer-output/consumer-input chain being established, not a claim that the philosophical root has been inferred from the example.
+
+### Start with the changing joint activity
+
+The same unfolding supports a control, a target, their controlled interaction and a later interaction with a surrounding register. These roles denote specific operations and accessible degrees of freedom in the model. They do not name independently constituted substances. What can be distinguished or restored depends on which relationships are retained and usable.
+
+The initial control is specified in its zero basis state. `preparation_from_blank` derives the prepared amplitudes by the declared Hadamard operation. The stored integer amplitudes omit the common factor `1/sqrt(2)`; this factor is accounted for in the density and measurement denominators. Nothing is generated from an empty physical input, and the preparation operation itself remains an explicit law.
+
+For a target vector v, the two control branches apply Z after X and X after Z. `xz_anticommute` checks the opposite sign of these composed actions. `switched_density` derives the whole control numerator matrix as `[[n, -n], [-n, n]]`, where n is the target's squared integer norm. The branch signs enter the joint operation before the reduction; the differing response is not installed as a separate output predicate.
+
+### Exact response and the inadequacy of branch weights alone
+
+For the displayed target `(1, 0)`, each control numerator matrix has trace 2. The corresponding normalized density is M/2. The plus/minus measurement numerators are
+
+```
+plusMass(M)  = M00 + M01 + M10 + M11
+minusMass(M) = M00 - M01 - M10 + M11
+```
+
+Their common denominator is twice the trace, here 4. `response_mass_conserved` checks that their sum has that value. The exact derived responses are:
+
+| Stage | Stored matrix | (plus numerator, minus numerator, denominator) |
+|---|---|---|
+| Prepared | `[[1, 1], [1, 1]]` | `(4, 0, 4)` |
+| Controlled X/Z output | `[[1, -1], [-1, 1]]` | `(0, 4, 4)` |
+| Dephased output | `[[1, 0], [0, 1]]` | `(2, 2, 4)` |
+
+The three diagonal pairs are all `(1, 1)`. `no_diagonal_response_decoder` proves that no function of this pair alone can reproduce even the one specified plus response for both the coherent and degraded outputs. This is a necessary restriction on that proposed abstraction. It does not say every possible classical description fails: a description retaining the cross contribution does better.
+
+The positive repair is exact. `retained_response_exact` recovers the plus numerator from the two diagonal entries and the sum of the off-diagonal entries for every integer matrix. `dephase_keeps_response_iff` proves that dephasing preserves this numerator exactly when that cross sum is zero. The criterion concerns this measurement; it does not claim to reconstruct every state or all complex-valued quantum observables.
+
+### Local loss, joint formation and restoration
+
+Defining `dephase` as setting the two off-diagonal entries to zero specifies its reduced action. The later construction explains that action through a larger relationship. `withBlank` places a control amplitude vector with a blank surrounding register. `recordBranch` applies a controlled X to that register. `recording_reduces_to_dephase` proves that the control density after this interaction is exactly the dephased original control density. Thus the same loss arises from the declared interaction and reduction, not an unexplained change of the measurement predicate.
+
+For both the prepared and controlled-order control states, reduction yields the same matrix. `no_uniform_dephase_inverse` proves that a function taking only this reduced matrix cannot restore both inputs correctly. It is an obstruction to uniform identification and recovery under that access restriction. It is not a ban on preparing a known state, using a retained record or interacting with the environment.
+
+In the joint construction, `recordBranch_involution` proves that applying the interaction twice restores any joint amplitude state exactly. `joint_reversal_restores_control` then gives the original control after reduction. The positive result uses the retained surrounding register and the ability to reverse the joint operation. Applying an inverse to the full relation and asking a function of the reduced matrix to recover an unknown input are different physical and informational tasks.
+
+The foundation gains a precise explanatory comparison: **local loss and the formation of wider relations can be consequences of the same activity.** Accounting for the wider relation preserves the reality of the local loss. A claim of restoration must identify the relation still available and the operation able to use it. Neither loss nor reversibility alone warrants an ethical verdict, and this case establishes no universal reversibility or conservation law for all becoming.
+
+### Primary correspondence and source assessment
+
+The operations are matched to a declared standard fragment. [Oreshkov 2019, §3, equation (6)](https://arxiv.org/html/1801.07594v4) gives the coherent ordering of two unitary operations; the new calculation selects X and Z. [Branciard 2016, §IV.2.3](https://arxiv.org/html/1603.00043v1) supplies the control-dephasing comparison already assessed in §17. These are local instantiations of their supplied quantum framework, not a derivation of that framework or a new causal witness.
+
+[John Watrous's IBM Quantum course, Channel representations, “Completely dephasing channel”](https://quantum.cloud.ibm.com/learning/en/courses/general-formulation-of-quantum-information/quantum-channels/representations-of-channels), read 9 October 2026 Bangkok, explicitly realizes dephasing by an initialized register, controlled-NOT and partial trace. Our first coordinate is control and second is register; the source displays the opposite tensor-factor ordering. The adaptation changes coordinate order, not the identified gate. The source treats general density matrices; our checked implementation covers the declared pure real-amplitude fragment and exact examples. No hardware execution, complex-Hilbert-space formalization or empirical validation is claimed.
+
+### Author counterreview and remaining foundation
+
+| Objection | Assessment |
+|---|---|
+| The result merely assigns different outcome tables. | Preparation and the controlled X/Z output are computed from the explicit operations; the reduced loss is derived from the reversible joint interaction. The operations and physical interpretation remain supplied premises. |
+| A fixed X/Z calculation proves indefinite causal order. | It does not. A fixed-gate response is much weaker than a higher-order process characterization. The source's nonseparability claim is not re-proved here. |
+| Removing environment access is merely a representational omission. | The reduced description alone omits wider relations. For operations restricted to that control it also correctly predicts loss of discrimination. An account of the whole must retain both facts and state which access is physically available. |
+| Reversing the joint interaction proves local loss was unreal. | The original local responses differ under the same test. Restoration requires an additional retained relationship and operation; it does not erase that difference. |
+| No uniform inverse means no recovery of any particular target. | Incorrect. The impossibility quantifies one map recovering both possible originals from their common reduced output. Repreparation of a known target and retained-environment recovery are different tasks. |
+| A low-dimensional quantum calculation completes the zero-axiom foundation. | Incorrect. It closes the selected algebraic interface and gives a necessary abstraction boundary. Quantum operations, their interpretation and the universal constitutive inference remain distinct obligations. |
+
+The direct universal claim is still not proved: independently identified actual relations must be shown to have the proposed common constitutive participation across the intended scope, without putting that consequence into the target definition. This example prevents an inadequate answer that counts only alternative outcomes or declares all loss absolute. It also positively realizes the relevant formation, loss and restoration in a connected calculation. The next comparison must retain joint operative responses and state the access conditions under which a relation participates; it need not reconstruct every contingent law or turn this quantum mechanism into the ontology of every life process.
+
+**中文结论。** 27项新定理实查了同一受控活动中的制备、次序作用、局部退相干与共同关系上的恢复。两个分支的权重都保留，后续同一测量却从确定结果变成等概率结果；仅留权重无法恢复该响应。更广的可逆交互恰好产生这种局部约化损失，保留并反转共同关系又能恢复控制。因此，局部退化与更广关系的形成可以同时发生；损失范围、保留关系与恢复能力须一起说明。强的零附加实质公理目标仍未完成，量子前提及实际对应没有被检查报告消去。
+
+## 19. The whole deduction and the passage from inclusion to relation
+
+9 October 2026. This continuation applies [Ren's whole/manifold correction](../../../../sources/15-codex-theory-conversations/2026-10-09-becoming-whole-generative-manifold.md) to the foundation's actual completion audit, including its surviving references to a universal operative law. The correction had been recorded at the beginning of the theory chapter, but §§4–5 still made the older universal formulation its central remaining requirement.
+
+**Reused results:** `theory-of-becoming-foundation`, `becoming-context-coherence`, `control-coherence-loss`, and the existing [general constitutive argument](GENERAL-FOUNDATION-INTEGRATION.md#2-the-strongest-direct-constitutive-argument). **Delta:** distinguish the whole's relational unity from unrestricted inclusion and from the mechanisms of particular forms; test the direct passage between them. **Supplied commitments:** the monist relational method, meaningful articulation and its inferential assessment remain explicit. The candidate's necessity is the claim to establish, not a premise. **Evidence:** the corrected user scope, a direct philosophical argument, targeted primary reading and author counterreview. **Boundary:** no new mathematical proposition, physical experiment, independent acceptance or completed zero-axiom deduction. **Integration:** the theory's completion criteria and existing target record change; the two conditional proof records retain their statements, sources and receipts.
+
+### Begin with differentiation within the unfolding
+
+The inquiry, its changing expressions, the relationships it addresses and its attempts at correction occur within the reality at issue. Begin with that articulated activity. Where a relationship holds, changes or ends, the account owes an explanation of the relevant determination and difference. A terminal loss need not be redescribed as hidden productivity; persistence need not be excluded because it fails a test for newly produced possibilities. Nor does differentiation turn its terms into independently constituted substances.
+
+The whole claim is therefore not that every occurrence creates conditions for a successor. Its proposed content is that determinations and their differences are constituted within one relational unfolding, whose forms include the constructive, maintained, transformed and lost. These are descriptions of potentially overlapping relationships. They are not five independent forces, an exhaustive classification already proved, or a partition of a pre-existing carrier.
+
+This formulation still contains a substantive claim. To say that the theory considers all actuality does not yet demonstrate that the actuality considered has this relational constitution. The distinction is between an undertaking and its justification within the same reality, not between a model and an inaccessible second realm.
+
+### The direct deduction attempt
+
+The strongest present argument can be reconstructed without an independently complete subject and object:
+
+1. The occurring inquiry exhibits differentiated articulation: a claim is retained, compared, accepted or revised through particular relationships. The earlier enacted and formed-reference work earns limited instances of this participation. No deduction of all actuality from an isolated subject is required.
+2. An account claiming the whole cannot place this actual inquiry outside the scope it undertakes to explain. Its consideration of denials, errors and losses also belongs to that scope. This earns a requirement of self-inclusion, not the truth of every included statement.
+3. Where actual constitution is established, its explanatory replacement must preserve that constitution or justify correcting the attribution. An account cannot remove a relation from its representation and use the resulting omission as a refutation of that relation. This is the already earned constitutive fidelity argument.
+4. The proposed final step says that all determinations of the whole are internally constituted moments of the unfolding, including those not presently identified by the inquiry. **The preceding steps do not yet exhibit that whole-scope constitution.** In this attempted argument, self-inclusion establishes where inquiry belongs and fidelity constrains an established target; neither supplies the unestablished part of the final claim.
+
+This is a diagnosis of an unfinished philosophical deduction, not a new formal non-entailment theorem. No freely varied causal predicate or purported relationless universe is introduced as a counterexample. A general constitutive argument could supply the last step without surveying every occurrence, making all regions mutually accessible or deriving each contingent law. Its content must actually be shown. Our current attempt does not show it merely by using unrestricted words such as “all” or “whole.”
+
+The closest positive candidate is that determinacy itself is relational: a determination is this through its distinction from other determinations. But its present articulation has two scopes to reconcile. A distinction made in expressing a claim supplies an actual relation of articulation. The stronger assertion concerns what constitutes the determination being articulated. Their connection need not be external or arbitrary; it can be earned, as local correspondence constructions already demonstrate. It is nevertheless the substantive step to establish. Treating the concept's contrast as sufficient evidence of every attributed constitutive relation would assume that step.
+
+### Primary comparison: the category does not already supply a cause
+
+The earlier [Hegel comparison](DEDUCTIVE-FOUNDATION-TEST.md#7-can-the-developed-whole-discharge-its-own-basis) considered retrospective grounding and immanent differentiation. This reading tests a more specific passage relevant to the corrected whole scope.
+
+In [*Science of Logic*, §§132–134](https://www.marxists.org/reference/archive/hegel/works/hl/hlbeing.htm), Hegel presents becoming through inseparable but differentiated being and nothing. The target is not two independently given things joined by an external operation. This remains a serious affirmative comparator, not a premise of Ren's account.
+
+In [§169](https://www.marxists.org/reference/archive/hegel/works/hl/hl083.htm), Hegel explicitly excludes reading this initial transition as a relation of cause, ground or condition: these require further determinations. Sections 176–183 distinguish coming-to-be and ceasing-to-be, then develop determinate being as a stable result. Section 140 also distinguishes abstract being/nothing from consequential differences concerning determinate content. These passages support preserving differentiation and stability in assessing his argument; they do not warrant transferring every causal claim into its opening category. We do not adopt the ethical indifference urged in §145, a necessary beneficial sequel to every loss, or Hegel's dismissive cultural generalizations.
+
+[“With What Must Science Begin?”, §§109–114](https://www.marxists.org/reference/archive/hegel/works/hl/hlbegin.htm), considers an analysis of beginning and then identifies its presupposition of a familiar concrete relation. Hegel's alternative seeks the development's internal necessity. This directly exposes the burden of treating “one relational unfolding” as a rich given and calling its analysis assumption-free. We retain Ren's relational starting method; we do not adopt Hegel's pure beginning as an instruction to erase actual activity. The relation between that beginning, its articulation and its eventual warrant must be demonstrated.
+
+**Our inference from the reading:** the earlier demand for a universal causal-generative law cannot be justified simply by citing a deduction of a category called becoming. Conversely, the absence of such a law does not defeat the wider whole claim. The interpretation of the philosophical deduction and the later explanatory relations require their own explicit connection. The assessed passages sharpen this obligation; they are not an assessment or formalization of Hegel's entire system.
+
+### Author counterreview
+
+| Objection | Assessment |
+|---|---|
+| Removing universal generativity makes the target easier by changing it. | The removal follows Ren's explicit whole/part correction. Relational unity, differentiation and zero-added-substantive-axiom warrant remain substantive unfinished requirements. |
+| Inclusion in one whole already proves all the needed connections. | Inclusion fixes scope. It does not in this argument identify constitution, causal interaction or a continuation. The whole is not an extra object that supplies those relations by its name. |
+| Distinguishing expression from its content reinstalls dualism. | They are differentiated relations within the same inquiry. The issue is whether this particular identification is warranted, not whether knowing exists outside reality. |
+| The criterion silently demands interaction between every pair of regions. | No such condition is imposed. Relational unity is not defined as complete causal connectivity, simultaneous action, universal memory or guaranteed future interaction. |
+| A stable or terminal form defeats the theory of becoming. | Those forms belong to its authorized scope. A counterexample must defeat a content the whole theory actually asserts, not a productive sequel it does not require. |
+| Citing Hegel discharges the deduction. | The source supplies a worked candidate and distinguishes its levels. Its necessary transitions and their correspondence to this theory still require argument; no authority-based discharge is accepted. |
+
+### Consequence for the next foundational step
+
+The consumer is now stated correctly: a deduction of the whole's relational unity and differentiation. Completed mechanisms supply explanations of particular modes and constraints on their adequate articulation. They are neither disqualified for remaining local nor sufficient by their accumulation to settle the whole claim.
+
+The next discriminating argument must establish the passage from determinate articulation to actual relational constitution at the whole scope. It may do so through a developed immanent account whose starting content is genuinely discharged; it need not begin from a relationless substrate or require an endless tower of prior certificates. It must identify which determination is being established, how its contrary fails on that same content, and why the outcome is more than a requirement on the current description. Repeating a successful transport, counting more modes or renaming the supplied whole will not complete this passage.
+
+**Disposition:** the audit's incorrect universal-generativity gate is removed; the direct inclusive-whole argument is assessed at its corrected scope and does not yet complete the deduction. Earlier local proofs, genuine losses and failed stronger arguments are preserved. The prior sections' requests for a universally operative generative connection retain historical scope where they occur; they do not override the current whole/manifold target. No impossibility of the full objective is inferred.
+
+**中文。** 本轮将整体／部分修正落实到真正的完成审计，而非仅加开头声明。包容一切实际发生、探究自身也在其中，并不独自建立所有规定的关系构成；已经确定的关系则不能因表示删去而被否定。正面路线保留规定性中的区别与依存，但从表达中的区别到所表达现实之构成的普遍连接仍须论证。黑格尔原典尤其区分最初的生成范畴与后续的原因、根据、条件关系，也保留确定存在；不能从名称直接取得普遍作用法则。当前进展是纠正演绎对象并定位该路线的确切剩余步骤，非新增定理、完成宣告或不可能性证明。

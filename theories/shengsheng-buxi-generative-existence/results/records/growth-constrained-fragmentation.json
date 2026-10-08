@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F10",
-  "reviewed_at_utc": "2026-10-08T13:32:50.150952+00:00",
+  "reviewed_at_utc": "2026-10-08T19:33:55.801236+00:00",
   "claim": {
     "zh": "实际生长得到的两种同组成连接图限制一边断裂后的后继；精确连通证书和共同准备计算保留断裂规律改变造成的排序反转。",
     "en": "Two actually grown graphs with matched composition constrain successors after one-edge removal; exact connectivity certificates and common-preparation calculations retain a cut-law ranking reversal."
@@ -67,7 +67,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
       "role": "integration",
-      "sha256": "dae2a6100f0837c82476bfc1e39f14b478be57c13a1614de9c3bcb83647bcc61",
+      "sha256": "08738429cb8e1369eef571c7149f4e031103411c57c971165141b0319785ccf8",
       "declarations": []
     }
   ],
@@ -88,6 +88,18 @@
     {
       "zh": "2026-10-08：按本轮实际审读及所列回执登记范围；原证明和反例保持。",
       "en": "2026-10-08: recorded the actually reviewed scope and cited receipt, preserving original proofs and counterexamples."
+    },
+    {
+      "zh": "2026-10-09：审读同一研究新增模板复制段；原证明和结论保持，端点适配及额外复制前提分列。",
+      "en": "2026-10-09: reviewed the added template-copying section in the same study; original proofs and claims remain, with endpoint correspondence and added copying premises separated."
+    },
+    {
+      "zh": "2026-10-09：重读并接入同一研究的配准形成段；旧数学主张及原回执不变，修正旧比较段中完美复制前提的指称。",
+      "en": "2026-10-09: reconciles the same study’s registration-formation continuation; prior mathematics and receipts remain unchanged, and the old comparison clarifies that perfect copying was this model’s premise."
+    },
+    {
+      "zh": "2026-10-09：已阅读同一研究新增的材料编辑连接；本记录的旧数学及原回执不变，旧无编辑范围不因新增操作而撤销。",
+      "en": "2026-10-09: reconciles the same study’s added material-editing connection; prior mathematics and receipts remain unchanged, and adding an editing operation does not withdraw the old no-editing scope."
     }
   ]
 }

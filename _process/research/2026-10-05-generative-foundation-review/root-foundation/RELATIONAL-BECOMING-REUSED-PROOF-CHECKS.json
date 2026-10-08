@@ -1,0 +1,27 @@
+{
+  "scope": "Existing result reuse only; no new compiler run, mechanism or mathematical claim. Compared the current three relevant sources with the prior actual Lean receipt.",
+  "utc": "2026-10-08T18:26:20.354776+00:00",
+  "status": "passed",
+  "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/port-direct-renewal-verification.json",
+  "receipt_sha256": "c72605a6600f158a3ed053352e74d6026cdc2a05ca60ce5b6399f7578588c7bc",
+  "checks": [
+    {
+      "module": "ContactFormation",
+      "current_source_matches": true,
+      "historical_exit_code": 0,
+      "historical_clean": true
+    },
+    {
+      "module": "PortDirectRenewal",
+      "current_source_matches": true,
+      "historical_exit_code": 0,
+      "historical_clean": true
+    },
+    {
+      "module": "GenerativePossibility",
+      "current_source_matches": true,
+      "historical_exit_code": 0,
+      "historical_clean": true
+    }
+  ]
+}

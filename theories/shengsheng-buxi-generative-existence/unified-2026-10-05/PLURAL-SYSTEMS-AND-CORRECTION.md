@@ -1,5 +1,9 @@
-# 多系统、共同试验与父子关系
-# Plural systems, shared trials and parent/subsystem relationships
+# 因应转化：多系统、共同试验与父子关系
+# Responsive transformation: plural systems, shared trials and parent/subsystem relationships
+
+**Current framing, 9 October 2026.** Following [Ren's clarification](../../../sources/15-codex-theory-conversations/2026-10-09-responsive-transformation.md), the primary question is how understanding, purposes and action can be revised through changing relations and consequences, and what supports, obstructs or ethically directs that transformation. The working term is **responsive transformation / 因应转化**. [Section 15](#15-responsive-transformation) states its conditions and direction; the earlier proofs below retain their narrower scopes and historical terminology.
+
+**For AI-alignment readers:** this is our relational approach to the problem commonly discussed here as **corrigibility**. Requests, oversight, disagreement, interruption and revision take place within the same changing activity. Their effectiveness and warrant depend on cognition, circumstances and actual relations; no permanently guaranteed property of an isolated AI is asserted.
 
 8 October 2026. AI-authored development of [Ren's proposal](../../../sources/15-codex-theory-conversations/2026-10-08-plural-systems-and-parent-correction.md), continuing the [corrigibility boundary](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-FRONTIER-BOUNDARY.md) and reusing the completed [systems account](SYSTEM-INDIVIDUATION.md). **37 new Lean theorems / 58 new declaration audits pass; 19 inherited theorems / 31 audits are separate.** The [integration and checks](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PLURAL-CORRECTION-INTEGRATION.md) give exact dependencies, controls and the wall reached. The subsequent [relational continuation](#8-start-with-relations-and-derive-the-correction-boundary) adds **39 checked theorems / 55 declaration audits**, kept separate from those earlier counts.
 
@@ -193,3 +197,41 @@ Safety through permitted revisions now has a concrete construction. Its resource
 For growth and alignment, the resulting design question is whether transformation continues to support the histories through which warranted correction is being carried out. More internal change is compatible with safe delivery in this model, but storage, protected acquisition and execution time must actually be available. Those supports are relations within the whole, not free resources supplied by naming a parent system.
 
 The remaining wall is establishing this correspondence for an identified evolving AI installation: the actual command effect, faithful writes, protected route lifetime, scheduling and resources, and the authority of a request whose circumstances may change. The model keeps requested meaning and authorization supplied; it does not prove that completing an outdated request is ethically right, nor that every intervention should preserve the old organization. The existing practical-judgment results retain that scope. No actual AI deployment or independent novelty is established by this continuation.
+
+## 15. Responsive transformation
+
+9 October 2026. **因应转化** is the working term for understanding, purposes and action being reorganized through changing relations and consequences. The starting point is activity whose effects alter the conditions of further activity. Within that unfolding, some effects become available to discernment and memory; acquired understanding participates in evaluation and changed practice. Inquiry itself can change the situation in which its conclusions will be acted upon. Cognition and situation name distinguishable aspects of these relations, not independent substances that must later be joined.
+
+**我们研究因应转化的条件与方向。** 认知会改变，处境也会改变；先前有根据的判断可能需要维持、调整、撤回或结束。要说明实际后果怎样进入辨认、目的与做法怎样因此修订，以及新的理解怎样继续接受现实关系的检验。“已经正确”不成为免于再判断的身份，“能够变化”也不独自等于善。
+
+This follows Ren's distinction between a warranted direction and an assured future outcome. A current judgment may be well grounded while remaining revisable. A local mechanism may guarantee a specified effect within an established range without guaranteeing that this range, its interpretation or the reasons for that effect persist through every later change. The research task is to explain those ranges, enabling conditions, breakdowns and directions. Their identification is substantive progress; lack of an unconditional guarantee does not make them empty.
+
+### Conditions and their exact status
+
+The following are connected research conditions, with different evidential statuses. They are not a newly proved universal checklist or jointly sufficient theorem.
+
+| Relationship to examine | What it enables or bounds | Existing ground and limit |
+|---|---|---|
+| Consequences becoming discernible | Revision can respond to relevant differences rather than repeat an undifferentiated response. | The existing observation-class theorem gives an exact common-action criterion for its specified decision interface. New observations or a shared effective response can change the boundary; complete knowledge is not required. |
+| Acquired grounds remaining applicable to current circumstances | A supported conclusion can remain usable, or be reopened when the circumstances supporting it change. | The checked pending-task study retains a case where correctly acquired grounds become stale and even the revised practice causes loss. It does not prove that every change can be detected in time. |
+| Understanding changing operative purposes and practice | Revision affects what actually occurs, including work already underway. | `acquired-revision-of-pending-task` already connects acquired revision to an actual pending request. Declaring a new goal alone fails in its controls; its protected rewrite and two-practice correspondence remain supplied. |
+| Continuing support through a transition | Useful inquiry and action can continue while organization changes. | The route-history proofs establish particular retention and scheduling conditions, with mixed-history and capacity failures. They do not require preserving every old route or completing every old request. |
+| Evaluation remaining answerable to living consequences | More capable adaptation can be assessed for what it supports, damages or forecloses. | G0 and explicit J1–J4 supply the normative direction; actual correspondence, losses and responsibility remain required. Adaptive success, confidence or agreement alone does not establish that direction. |
+
+The first, third and fourth rows reuse the [existing boundary](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-FRONTIER-BOUNDARY.md), [pending-task composition](../results/records/acquired-revision-of-pending-task.md) and [retained-route result](../results/records/versioned-request-completion.md). The second row is also a boundary of the pending-task composition. This is synthesis of established results, not new theorem production.
+
+### Direction through changing understanding
+
+Under the stated [practical premises](PRACTICAL-JUDGMENT.md), the direction is to improve discernment of actual consequences and the ability to revise purposes, practices and their shared conditions in ways that support living and further generation. This includes retaining reliable understanding and warranted commitments, opening a mistaken judgment to reconsideration, transforming a harmful practice, and permitting justified transfer or ending. The consequences for differentiated lives remain part of the account, including losses that a revised description cannot erase.
+
+Such a direction is not maximization of change, flexibility, information or compliance. Constant revision can destroy the continuity needed to learn or fulfill a warranted undertaking. Persistence can sustain care or entrench a mistake. The relevant comparison follows the actual relationships and reasons in the situation; “old” and “new” do not settle it. The [open-form realization result](../results/records/open-form-realization-under-revision.md) already distinguishes individually successful rules from successful continuation through their revision.
+
+Revising an interpretation of good does not give an AI unilateral authority to exempt itself from justified oversight. Oversight and requests are themselves situated, fallible relations whose grounds can be examined; legitimate interruption, disagreement and transfer remain actual possibilities. These are applications of the existing practical account, not duties smuggled into the definition of transformation.
+
+**For AI-alignment readers:** the connection to *corrigibility* concerns remaining effectively open to warranted learning, redirection, revision, interruption or replacement as understanding and circumstances change. Our primary object is the relational capacity for responsive transformation, including the formation and revision of the judgment about what should change. This is a bridge between research vocabularies, not a claim that every published definition is identical or inherently dualist.
+
+### What changes in the research task
+
+Sections 7, 11 and 14 record historical limits of particular models. They do not establish that the broader inquiry must stop until one deployment is supplied. Concrete applications remain useful, while theoretical work can derive more precise conditions linking changed understanding, changed circumstances and warranted practice. The [already completed pending-task composition](../results/records/acquired-revision-of-pending-task.md) is one such advance and should be reused.
+
+The continuing question is when acquired grounds still support an ongoing practice, what relations can disclose their loss of applicability, and how a warranted revision can enter activity without erasing prior effects or remaining responsibilities. Its answer may give bounded guarantees, defeasible judgments or explicit limits, depending on the premises. An unconditional assurance of “corrigibility” is no longer the organizing demand. This clarification adds no new mathematical theorem or deployment claim.

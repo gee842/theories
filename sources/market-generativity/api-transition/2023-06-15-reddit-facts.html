@@ -1,0 +1,1764 @@
+<!doctype html><html lang="en"><head>
+    <meta charset="utf-8">
+    
+    <title>Key Facts to Understanding Reddit’s Recent API Updates - Upvoted</title>
+    
+    
+    <link rel="shortcut icon" href="https://redditinc.com/hubfs/Reddit_Favicon_FullColor_48x48.png">
+    
+    <meta name="description" content="Last Updated: June 30, 2023 Key Reddit stats 100,000+ active communities Over 57M daily active uniques Over 50,000 daily active moderators (mods) As of now">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     
+    
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:description" content="Last Updated: June 30, 2023 Key Reddit stats 100,000+ active communities Over 57M daily active uniques Over 50,000 daily active moderators (mods) As of now">
+    <meta property="og:title" content="Key Facts to Understanding Reddit’s Recent API Updates - Upvoted">
+    <meta name="twitter:description" content="Last Updated: June 30, 2023 Key Reddit stats 100,000+ active communities Over 57M daily active uniques Over 50,000 daily active moderators (mods) As of now">
+    <meta name="twitter:title" content="Key Facts to Understanding Reddit’s Recent API Updates - Upvoted">
+
+    
+
+    
+    <style>
+a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;vertical-align:middle}.hs-breadcrumb-menu{list-style-type:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px}.hs-breadcrumb-menu-item{float:left;padding:10px 0px 10px 10px}.hs-breadcrumb-menu-divider:before{content:'›';padding-left:10px}.hs-featured-image-link{border:0}.hs-featured-image{float:right;margin:0 0 20px 20px;max-width:50%}@media (max-width: 568px){.hs-featured-image{float:none;margin:0;width:100%;max-width:100%}}.hs-screen-reader-text{clip:rect(1px, 1px, 1px, 1px);height:1px;overflow:hidden;position:absolute !important;width:1px}
+</style>
+
+<link rel="stylesheet" href="https://redditinc.com/hubfs/hub_generated/template_assets/1/175075265396/1787165336812/template_main.min.css">
+<link rel="stylesheet" href="https://redditinc.com/hubfs/hub_generated/template_assets/1/175067789195/1790107922879/template_blog-post.min.css">
+<link rel="stylesheet" href="https://redditinc.com/hubfs/hub_generated/template_assets/1/175075265395/1787165333107/template_theme-overrides.css">
+<link rel="stylesheet" href="https://redditinc.com/hubfs/hub_generated/template_assets/1/175075265391/1787165344370/template_fonts.min.css">
+<link rel="stylesheet" href="https://redditinc.com/hubfs/hub_generated/template_assets/1/175080379059/1787165332962/template_child.min.css">
+<link rel="stylesheet" href="https://redditinc.com/hubfs/hub_generated/template_assets/1/175188582566/1787165329073/template_blog.min.css">
+<link rel="stylesheet" href="https://redditinc.com/hubfs/hub_generated/module_assets/1/199713715561/1773887716651/module_website-header-s2.min.css">
+<link rel="stylesheet" href="https://redditinc.com/hubfs/hub_generated/module_assets/1/190440228791/1747895087246/module_search_input.min.css">
+
+<style>
+  #hs_cos_wrapper_search_input .hs-search-field__bar>form { border-radius:px; }
+
+#hs_cos_wrapper_search_input .hs-search-field__bar>form>label {}
+
+#hs_cos_wrapper_search_input .hs-search-field__bar>form>.hs-search-field__input { border-radius:px; }
+
+#hs_cos_wrapper_search_input .hs-search-field__button { border-radius:px; }
+
+#hs_cos_wrapper_search_input .hs-search-field__button:hover,
+#hs_cos_wrapper_search_input .hs-search-field__button:focus {}
+
+#hs_cos_wrapper_search_input .hs-search-field__button:active {}
+
+#hs_cos_wrapper_search_input .hs-search-field--open .hs-search-field__suggestions { border-radius:px; }
+
+#hs_cos_wrapper_search_input .hs-search-field--open .hs-search-field__suggestions a {}
+
+#hs_cos_wrapper_search_input .hs-search-field--open .hs-search-field__suggestions a:hover {}
+
+</style>
+
+<link rel="stylesheet" href="https://redditinc.com/hubfs/hub_generated/module_assets/1/175080431218/1743731108982/module_social-share.min.css">
+<style>
+@font-face {
+  font-family: "Reddit Sans Chocolate";
+  src: url("https://redditinc.com/hubfs/RedditSansChocolate-ExtraBold.woff") format("woff");
+  font-display: swap;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "RedditDisplay-ExtraBold";
+  src: url("https://redditinc.com/hubfs/RedditDisplay-ExtraBold.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "RedditSans";
+  src: url("https://redditinc.com/hubfs/RedditSans-Bold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "RedditSans";
+  src: url("https://redditinc.com/hubfs/RedditSans-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "RedditSans";
+  src: url("https://redditinc.com/hubfs/RedditSans-SemiBold.woff") format("woff");
+  font-display: swap;
+  font-weight: 600;
+}
+</style>
+
+<style>
+  @font-face {
+    font-family: "Reddit Sans";
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+    src: url("/_hcms/googlefonts/Reddit_Sans/800.woff2") format("woff2"), url("/_hcms/googlefonts/Reddit_Sans/800.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Reddit Sans";
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url("/_hcms/googlefonts/Reddit_Sans/700.woff2") format("woff2"), url("/_hcms/googlefonts/Reddit_Sans/700.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Reddit Sans";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("/_hcms/googlefonts/Reddit_Sans/regular.woff2") format("woff2"), url("/_hcms/googlefonts/Reddit_Sans/regular.woff") format("woff");
+  }
+</style>
+
+<!-- Editor Styles -->
+<style id="hs_editor_style" type="text/css">
+#hs_cos_wrapper_menu .hs-menu-wrapper > ul  { margin-bottom: 40px !important }
+.header-row-0-force-full-width-section > .row-fluid {
+  max-width: none !important;
+}
+/* HubSpot Styles (default) */
+.header-row-0-padding {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+</style>
+    <script type="application/ld+json">
+{
+  "mainEntityOfPage" : {
+    "@type" : "WebPage",
+    "@id" : "https://redditinc.com/news/apifacts"
+  },
+  "author" : {
+    "name" : "Staff",
+    "url" : "https://redditinc.com/news/author/staff",
+    "@type" : "Person"
+  },
+  "headline" : "Key Facts to Understanding Reddit’s Recent API Updates - Upvoted",
+  "datePublished" : "2023-06-16T02:00:00.000Z",
+  "dateModified" : "2024-10-03T19:23:14.750Z",
+  "publisher" : {
+    "name" : "Reddit",
+    "logo" : {
+      "url" : "https://redditinc.com/hubfs/Reddit_Lockup@2x.png",
+      "@type" : "ImageObject"
+    },
+    "@type" : "Organization"
+  },
+  "@context" : "https://schema.org",
+  "@type" : "BlogPosting",
+  "image" : [ "https://redditinc.com/hubfs/Reddit%20Inc/Blog/Imported_Blog_Media/BlogHeader_Logo_002_2023-06-15-220333_vdav.png" ]
+}
+</script>
+
+
+  <script data-search_input-config="config_search_input" type="application/json">
+  {
+    "autosuggest_results_message": "Results for \u201C[[search_term]]\u201D",
+    "autosuggest_no_results_message": "There are no autosuggest results for \u201C[[search_term]]\u201D",
+    "sr_empty_search_field_message": "There are no suggestions because the search field is empty.",
+    "sr_autosuggest_results_message": "There are currently [[number_of_results]] auto-suggested results for [[search_term]]. Navigate to the results list by pressing the down arrow key, or press return to search for all results.",
+    "sr_search_field_aria_label": "This is a search field with an auto-suggest feature attached.",
+    "sr_search_button_aria_label": "Search"
+  }
+  </script>
+
+  <script id="hs-search-input__valid-content-types" type="application/json">
+    [
+      
+        "SITE_PAGE",
+      
+        "LANDING_PAGE",
+      
+        "BLOG_POST",
+      
+        "LISTING_PAGE",
+      
+        "KNOWLEDGE_ARTICLE",
+      
+        "HS_CASE_STUDY"
+      
+    ]
+  </script>
+
+
+    
+
+<style>
+ .gen-header__item-text {
+  font-weight: 600;
+}
+</style>
+<!-- OneTrust Cookies Consent Notice start for redditinc.com -->
+<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="1edeb221-754b-4822-94fe-d1cd24d64d2a"></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script>
+<!-- OneTrust Cookies Consent Notice end for redditinc.com -->
+<!-- Google Tag Manager -->
+<script type="text/plain" class="optanon-category-C0004">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PRWFNB5');</script>
+<!-- End Google Tag Manager -->
+<meta property="og:image" content="https://redditinc.com/hubfs/Reddit%20Inc/Blog/Imported_Blog_Media/BlogHeader_Logo_002_2023-06-15-220333_vdav.png">
+<meta property="og:image:width" content="1000">
+<meta property="og:image:height" content="400">
+
+<meta name="twitter:image" content="https://redditinc.com/hubfs/Reddit%20Inc/Blog/Imported_Blog_Media/BlogHeader_Logo_002_2023-06-15-220333_vdav.png">
+
+
+<meta property="og:url" content="https://redditinc.com/news/apifacts">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="canonical" href="https://redditinc.com/news/apifacts">
+
+<meta property="og:type" content="article">
+<link rel="alternate" type="application/rss+xml" href="https://redditinc.com/news/rss.xml">
+<meta name="twitter:domain" content="redditinc.com">
+
+<meta http-equiv="content-language" content="en">
+
+
+
+
+
+
+  <meta name="generator" content="HubSpot"></head>
+  <body>
+    <div class="body-wrapper   hs-content-id-177057446913 hs-blog-post hs-blog-id-175418393707">
+
+      
+<div data-global-resource-path="redditinc/templates/partials/post-header.html"><div class="child-header-wrapper  post-header ">
+  <header class="header header--fixed">
+    
+
+    <div class="container-fluid">
+<div class="row-fluid-wrapper">
+<div class="row-fluid">
+<div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-1 dnd-section header-row-0-padding header-row-0-force-full-width-section">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-2 dnd-row">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_widget_1766091331393" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+  #hs_cos_wrapper_widget_1766091331393 .header__top {}
+
+#hs_cos_wrapper_widget_1766091331393 .header__language-switcher-current-label>span {}
+
+#hs_cos_wrapper_widget_1766091331393 .header__language-switcher:hover .header__language-switcher-current-label>span,
+#hs_cos_wrapper_widget_1766091331393 .header__language-switcher:focus .header__language-switcher-current-label>span {}
+
+#hs_cos_wrapper_widget_1766091331393 .header__language-switcher .lang_list_class a:hover,
+#hs_cos_wrapper_widget_1766091331393 .header__language-switcher .lang_list_class a:focus {}
+
+#hs_cos_wrapper_widget_1766091331393 .header__language-switcher .lang_list_class a:active {}
+
+#hs_cos_wrapper_widget_1766091331393 .header__menu-link {}
+
+#hs_cos_wrapper_widget_1766091331393 .header__menu-item--depth-1>.header__menu-link:hover,
+#hs_cos_wrapper_widget_1766091331393 .header__menu-item--depth-1>.header__menu-link:focus {}
+
+#hs_cos_wrapper_widget_1766091331393 .header__menu-item--depth-1>.header__menu-link:active {}
+
+#hs_cos_wrapper_widget_1766091331393 .header__menu-item--depth-1>.header__menu-link--active-link {}
+
+#hs_cos_wrapper_widget_1766091331393 .header__menu-submenu .header__menu-link:hover,
+#hs_cos_wrapper_widget_1766091331393 .header__menu-submenu .header__menu-link:focus {}
+
+#hs_cos_wrapper_widget_1766091331393 .button {}
+
+#hs_cos_wrapper_widget_1766091331393 .button:hover,
+#hs_cos_wrapper_widget_1766091331393 .button:focus {}
+
+#hs_cos_wrapper_widget_1766091331393 .button:active {}
+
+</style>
+
+
+
+
+
+
+  <div class="header__container header__container--left child-header post">
+
+    <div class="header__bottom">
+      <div class="header__wrapper header__wrapper--bottom">
+        <div class="header__logo-col">
+          
+  
+    
+  
+
+  <div class="header__logo">
+    
+      <a class="header__logo-link" href="/?hsLang=en">
+    
+
+    
+      <img class="header__logo-image" src="https://redditinc.com/hubfs/Reddit%20Inc/Content/Brand%20Page/Reddit_Lockup_Logo.svg" loading="eager" alt="Reddit_Lockup_Logo" height="37" width="134">
+    
+
+    
+      </a>
+    
+  </div>
+
+        </div>
+
+        
+          <div class="header__menu-col">
+            
+  <nav class="header__menu header__menu--desktop" aria-label="Desktop navigation">
+    <ul class="header__menu-wrapper no-list">
+      
+  
+
+  
+
+  
+    
+    <li class="header__menu-item header__menu-item--depth-1 header__menu-item--has-submenu hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         header__menu-link--toggle
+         " href="https://redditinc.com" aria-haspopup="true" aria-expanded="false">
+        Company
+      </a>
+
+      
+        
+          <button class="header__menu-child-toggle no-button" aria-expanded="false"></button>
+
+          <ul class="header__menu-submenu header__menu-submenu--level-2 no-list">
+            
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://redditinc.com">
+        About
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://redditinc.com/press">
+        Press
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://redditinc.com/careers">
+        Careers
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://redditinc.com/brand">
+        Brand
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://investor.redditinc.com/?_ga=2.3313267.278986563.1723437500-874118656.1723006889">
+        Investors
+      </a>
+
+      
+    </li>
+  
+            
+          </ul>
+        
+      
+    </li>
+  
+  
+    
+    <li class="header__menu-item header__menu-item--depth-1 header__menu-item--has-submenu hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         header__menu-link--toggle
+         " href="https://redditinc.com/values" aria-haspopup="true" aria-expanded="false">
+        Values
+      </a>
+
+      
+        
+          <button class="header__menu-child-toggle no-button" aria-expanded="false"></button>
+
+          <ul class="header__menu-submenu header__menu-submenu--level-2 no-list">
+            
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://redditinc.com/values">
+        Our values
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://redditinc.com/privacy">
+        Privacy
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://redditinc.com/transparency">
+        Transparency
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://redditinc.com/reddit-for-good">
+        Reddit for Good
+      </a>
+
+      
+    </li>
+  
+            
+          </ul>
+        
+      
+    </li>
+  
+  
+    
+    <li class="header__menu-item header__menu-item--depth-1 header__menu-item--has-submenu hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         header__menu-link--toggle
+         " href="https://redditinc.com/news" aria-haspopup="true" aria-expanded="false">
+        News
+      </a>
+
+      
+        
+          <button class="header__menu-child-toggle no-button" aria-expanded="false"></button>
+
+          <ul class="header__menu-submenu header__menu-submenu--level-2 no-list">
+            
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://redditinc.com/news">
+        Newsroom
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="/news/tag/announcements">
+        Announcements
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="/news/tag/product-and-community">
+        Product and Community
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="/news/tag/policy-and-safety">
+        Policy and Safety
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="/news/tag/life-at-reddit">
+        Life at Reddit
+      </a>
+
+      
+    </li>
+  
+            
+          </ul>
+        
+      
+    </li>
+  
+  
+    
+    <li class="header__menu-item header__menu-item--depth-1 header__menu-item--has-submenu hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         header__menu-link--toggle
+         " href="https://redditinc.com/support" aria-haspopup="true" aria-expanded="false">
+        Support
+      </a>
+
+      
+        
+          <button class="header__menu-child-toggle no-button" aria-expanded="false"></button>
+
+          <ul class="header__menu-submenu header__menu-submenu--level-2 no-list">
+            
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://redditinc.com/support">
+        Support
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://support.reddithelp.com/hc/en-us">
+        Reddit help center
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://support.reddithelp.com/hc/en-us/requests/new">
+        Contact
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://redditinc.com/policies/reddit-rules">
+        Reddit rules
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://redditinc.com/press">
+        Press inquiries
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://legalrequests.reddithelp.com/hc/en-us">
+        Legal requests
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://redditinc.com/policies">
+        Terms &amp; policies
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://support.reddithelp.com/hc/en-us/articles/26410290525844-Public-Content-Policy">
+        Public content policy
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://www.reddit.com/policies/privacy-policy?__hstc=53109431.bd1028bfa9b412cc559ab7e732b52496.1745261918403.1762461401867.1762463751390.211&amp;__hssc=53109431.47.1762462769908&amp;__hsfp=3647649972">
+        Privacy policy
+      </a>
+
+      
+    </li>
+  
+            
+          </ul>
+        
+      
+    </li>
+  
+  
+
+    </ul>
+  </nav>
+
+            
+  <div class="header__menu-container header__menu-container--mobile">
+    <div class="nav-opener">
+      <span></span>
+      <strong id="menu-label">menu</strong>
+    </div>
+
+    <nav class="header__menu header__menu--mobile" aria-label="Mobile navigation">
+      <ul class="header__menu-wrapper no-list">
+        
+  
+
+  
+
+  
+    
+    <li class="header__menu-item header__menu-item--depth-1 header__menu-item--has-submenu hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         header__menu-link--toggle
+         " href="https://redditinc.com" aria-haspopup="true" aria-expanded="false">
+        Company
+      </a>
+
+      
+        
+          <button class="header__menu-child-toggle no-button" aria-expanded="false"></button>
+
+          <ul class="header__menu-submenu header__menu-submenu--level-2 no-list">
+            
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://redditinc.com">
+        About
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://redditinc.com/press">
+        Press
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://redditinc.com/careers">
+        Careers
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://redditinc.com/brand">
+        Brand
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://investor.redditinc.com/?_ga=2.3313267.278986563.1723437500-874118656.1723006889">
+        Investors
+      </a>
+
+      
+    </li>
+  
+            
+          </ul>
+        
+      
+    </li>
+  
+  
+    
+    <li class="header__menu-item header__menu-item--depth-1 header__menu-item--has-submenu hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         header__menu-link--toggle
+         " href="https://redditinc.com/values" aria-haspopup="true" aria-expanded="false">
+        Values
+      </a>
+
+      
+        
+          <button class="header__menu-child-toggle no-button" aria-expanded="false"></button>
+
+          <ul class="header__menu-submenu header__menu-submenu--level-2 no-list">
+            
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://redditinc.com/values">
+        Our values
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://redditinc.com/privacy">
+        Privacy
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://redditinc.com/transparency">
+        Transparency
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://redditinc.com/reddit-for-good">
+        Reddit for Good
+      </a>
+
+      
+    </li>
+  
+            
+          </ul>
+        
+      
+    </li>
+  
+  
+    
+    <li class="header__menu-item header__menu-item--depth-1 header__menu-item--has-submenu hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         header__menu-link--toggle
+         " href="https://redditinc.com/news" aria-haspopup="true" aria-expanded="false">
+        News
+      </a>
+
+      
+        
+          <button class="header__menu-child-toggle no-button" aria-expanded="false"></button>
+
+          <ul class="header__menu-submenu header__menu-submenu--level-2 no-list">
+            
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://redditinc.com/news">
+        Newsroom
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="/news/tag/announcements">
+        Announcements
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="/news/tag/product-and-community">
+        Product and Community
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="/news/tag/policy-and-safety">
+        Policy and Safety
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="/news/tag/life-at-reddit">
+        Life at Reddit
+      </a>
+
+      
+    </li>
+  
+            
+          </ul>
+        
+      
+    </li>
+  
+  
+    
+    <li class="header__menu-item header__menu-item--depth-1 header__menu-item--has-submenu hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         header__menu-link--toggle
+         " href="https://redditinc.com/support" aria-haspopup="true" aria-expanded="false">
+        Support
+      </a>
+
+      
+        
+          <button class="header__menu-child-toggle no-button" aria-expanded="false"></button>
+
+          <ul class="header__menu-submenu header__menu-submenu--level-2 no-list">
+            
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://redditinc.com/support">
+        Support
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://support.reddithelp.com/hc/en-us">
+        Reddit help center
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://support.reddithelp.com/hc/en-us/requests/new">
+        Contact
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://redditinc.com/policies/reddit-rules">
+        Reddit rules
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://redditinc.com/press">
+        Press inquiries
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://legalrequests.reddithelp.com/hc/en-us">
+        Legal requests
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://redditinc.com/policies">
+        Terms &amp; policies
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://support.reddithelp.com/hc/en-us/articles/26410290525844-Public-Content-Policy">
+        Public content policy
+      </a>
+
+      
+    </li>
+  
+            
+              
+    <li class="header__menu-item header__menu-item--depth-2  hs-skip-lang-url-rewrite">
+      <a class="header__menu-link 
+         
+         " href="https://www.reddit.com/policies/privacy-policy?__hstc=53109431.bd1028bfa9b412cc559ab7e732b52496.1745261918403.1762461401867.1762463751390.211&amp;__hssc=53109431.47.1762462769908&amp;__hsfp=3647649972">
+        Privacy policy
+      </a>
+
+      
+    </li>
+  
+            
+          </ul>
+        
+      
+    </li>
+  
+  
+
+
+        
+
+        
+      </ul>
+    </nav>
+  </div>
+
+          </div>
+        
+
+        
+
+        
+
+        
+          <div class="header__mag-glass">
+            <img width="20" src="https://5018647.fs1.hubspotusercontent-na1.net/hubfs/5018647/Design/Icons/Font%20Awesome/search.svg">
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div>
+</div>
+</div>
+    <div class="header__search-wrapper">
+
+      <div class="header__search header--element">
+        <div id="hs_cos_wrapper_search_input" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="hs-search-field">
+    <div class="hs-search-field__bar hs-search-field__bar--button-inline  ">
+      <form data-hs-do-not-collect="true" class="hs-search-field__form" action="/hs-search-results">
+
+        <label class="hs-search-field__label show-for-sr" for="search_input-input">This is a search field with an auto-suggest feature attached.</label>
+
+        <input role="combobox" aria-expanded="false" aria-controls="autocomplete-results" aria-label="This is a search field with an auto-suggest feature attached." type="search" class="hs-search-field__input" id="search_input-input" name="q" autocomplete="off" aria-autocomplete="list" placeholder="Search articles">
+
+        
+          
+            <input type="hidden" name="type" value="SITE_PAGE">
+          
+        
+          
+        
+          
+            <input type="hidden" name="type" value="BLOG_POST">
+          
+        
+          
+            <input type="hidden" name="type" value="LISTING_PAGE">
+          
+        
+          
+        
+          
+        
+
+        
+
+        <button class="hs-search-field__button " aria-label="Search"> </button>
+        <div class="hs-search-field__suggestions-container ">
+          <ul id="autocomplete-results" role="listbox" aria-label="term" class="hs-search-field__suggestions">
+            
+              <li role="option" tabindex="-1" aria-posinset="1" aria-setsize="0" class="results-for show-for-sr">There are no suggestions because the search field is empty.</li>
+            
+          </ul>
+        </div>
+      </form>
+    </div>
+    <div id="sr-messenger" class="hs-search-sr-message-container show-for-sr" role="status" aria-live="polite" aria-atomic="true">
+    </div>
+</div>
+
+</div>
+        <div class="header__toggle">
+          <div class="gen-header__menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>  
+      </div>
+
+      <div class="cmclose">
+        <div class="cmclose-icon brand-icon">
+          <img src="https://redditinc.com/hubfs/raw_assets/public/redditinc/images/icons/brand-icons/icon_close.svg" alt="close">
+        </div>
+      </div>
+
+    </div>
+  </header>
+</div></div>
+        
+
+      
+      <main id="main-content">
+         
+
+
+<div class="blog-post_content-wrapper">
+  
+    <div class="article-hero">
+      <div class="hero-inner">
+        <img class="attachment-article-hero size-article-hero" src="https://redditinc.com/hubfs/Reddit%20Inc/Blog/Imported_Blog_Media/BlogHeader_Logo_002_2023-06-15-220333_vdav.png">
+      </div>
+    </div>
+  
+
+  <div class="article-wrap">
+    
+    
+    <div class="entry-header">
+      <h1 class="entry-title"><span id="hs_cos_wrapper_name" class="hs_cos_wrapper hs_cos_wrapper_meta_field hs_cos_wrapper_type_text" style="" data-hs-cos-general-type="meta_field" data-hs-cos-type="text">Key Facts to Understanding Reddit’s Recent API Updates</span></h1>
+			<p class="entry-subtitle"></p>
+    </div>
+    <div class="article-content ">
+      <div class="left-sec">
+        <div class="entry-meta">
+          
+          <span class="article-topic-link">
+            
+            <a class="blog-post__tag-link hs-button" href="https://redditinc.com/news/tag/product-and-community" rel="tag">Product and Community</a>
+            
+          </span>
+          
+          <span class="article-meta">
+            <span class="posted-on">
+              <time class="entry-date">June 15, 2023</time>
+            </span>
+          </span>
+        </div>
+
+        <div class="entry-content">
+          <div class="blog-post__body">
+            <span id="hs_cos_wrapper_post_body" class="hs_cos_wrapper hs_cos_wrapper_meta_field hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="meta_field" data-hs-cos-type="rich_text"><div class="entry-inner"> 
+ <p dir="ltr" style="text-align: center"><em>Last Updated: </em><em>June 30</em><em>, 2023</em></p> 
+</div> 
+<!--more--><div class="entry-inner"> 
+ <p dir="ltr"><strong>Key Reddit stats</strong></p> 
+ <ul>
+  <li><p dir="ltr">100,000+ active communities</p></li>
+  <li><p dir="ltr">Over 57M daily active uniques </p></li>
+  <li><p dir="ltr">Over 50,000 daily active moderators (mods)</p></li>
+  <li><p dir="ltr">As of now, more than 96% of our top 5,000 communities (by DAU) are open</p></li>
+ </ul> 
+</div> 
+<div class="entry-inner"> 
+ <p dir="ltr"><strong>Our API pricing structure and why it matters </strong></p> 
+ <ul>
+  <li><p dir="ltr">We recognize that many core users enjoy third-party apps and use them to contribute to Reddit in important ways. </p></li>
+  <li><p dir="ltr">Supporting these apps is not free for Reddit; they incur both infrastructure and significant opportunity costs. </p></li>
+  <li><p dir="ltr">Reddit needs to be a self-sustaining business and to do that, we can no longer subsidize commercial entities that require large-scale data use from our API.</p></li>
+  <li><p dir="ltr">Many other platforms have chosen to stop supporting apps like these altogether. We are offering our enterprise pricing as a path forward that balances the preferences of our users, the ambitions of developers, and the needs of Reddit as a business.</p></li>
+  <li><p dir="ltr">Today, more than 98% of apps do not pay and will continue to access the Data API for free so long as apps are not monetized and are below our published data-usage threshold.</p></li>
+  <li><p dir="ltr">Our pricing is based on usage levels comparable to our own costs.</p></li>
+  <li><p dir="ltr">Some apps and experiences use the API modestly. There are others that make hundreds of millions of API requests per day – most do not and are not being charged.</p></li>
+ </ul> 
+</div> 
+<div class="entry-inner"> 
+ <p dir="ltr"><strong>Our investment in tools for mods</strong></p> 
+ <ul>
+  <li dir="ltr"><p dir="ltr">Improving Reddit apps and moderator tools is a critical focus for us. In fact, 93% of mod actions are taken through desktop and native Reddit apps.</p></li>
+  <li dir="ltr"><p dir="ltr"><a href="https://www.reddit.com/r/modnews/comments/12kxfd4/mobile_moderation_on_reddit/">We're working to improve the mobile mod experience</a> (the full list can be found <a href="https://www.reddit.com/r/reddit/comments/145bram/comment/jnkhdk8/?utm_source=share&amp;utm_medium=web2x&amp;context=3">here</a>), and our plans for future updates <a href="https://new.reddit.com/r/modnews/comments/142kh8s/improvement_to_the_mobile_mod_queue/">include</a>:</p>
+   <ul>
+    <li dir="ltr"><p dir="ltr">Updating the user profile cards to be more mod centric and increase mod efficiency and improve workflowBuilding a mobile mod log</p></li>
+    <li dir="ltr"><p dir="ltr">The ability to manage Community Rules (i.e., add/edit/delete rules on mobile)</p></li>
+    <li dir="ltr"><p dir="ltr">Mod Insights on mobile</p></li>
+    <li dir="ltr"><p dir="ltr">Increasing the content density within mod queues to improve efficiency and scannability</p></li>
+    <li dir="ltr"><p dir="ltr">Native mobile Mod Mail</p></li>
+    <li dir="ltr"><p dir="ltr">Mod tools and mod bots continue to have free access to the Data API. Pushshift access for mods is rolling out to verified moderators.</p></li>
+   </ul></li>
+ </ul> 
+</div> 
+<div class="entry-inner"> 
+ <p dir="ltr"><strong>Working with third-party developers and researchers </strong></p> 
+ <ul>
+  <li dir="ltr"><p dir="ltr">API access remains free for non-commercial researchers and academics under our published usage threshold.</p></li>
+  <li dir="ltr"><p dir="ltr">API access is free for moderator tools and bots. We are rolling out a number of <a href="https://www.reddit.com/r/modnews/comments/141oqn8/api_updates_questions/">tools</a> to enhance the moderator experience on Reddit. </p></li>
+  <li dir="ltr"><p dir="ltr">We’re committed to fostering a safe and responsible developer ecosystem around Reddit - developers and third-party apps can make Reddit better and can do so in a sustainable and mutually-beneficial partnership while also keeping data and our users safe.</p></li>
+  <li dir="ltr"><p dir="ltr">Recently, Narwhal <a href="https://www.reddit.com/r/getnarwhal/comments/14kt9wj/narwhal_is_not_going_anywhere_subscriptions_and/?utm_source=share&amp;utm_medium=ios_app&amp;utm_name=ioscss&amp;utm_content=1&amp;utm_term=1">posted in their community</a> and outlined their future plans to stay active and connected to Reddit’s API. <a href="https://www.reddit.com/r/RelayForReddit/comments/14n876v/update_relay_will_continue_to_operate_from_july/">Relay</a> and <a href="https://www.reddit.com/r/redditnow/comments/14n646l/now_for_reddit_july_1st_and_beyond/">Now for Reddit</a> shared similar posts.</p></li>
+ </ul> 
+</div> 
+<div class="entry-inner"> 
+ <p dir="ltr"><strong>We are not shutting down discussions or unilaterally reopening communities</strong></p> 
+ <ul>
+  <li dir="ltr"><p dir="ltr">Dissent, debate, and discussions are foundational parts of Reddit. We respect our communities’ ability to protest as long as mods follow our <a href="https://www.redditinc.com/policies/moderator-code-of-conduct?hsLang=en">Moderator Code of Conduct</a>.</p></li>
+  <li dir="ltr"><p dir="ltr">We have a unique system of checks and balances, and we respect the communities right to protest. Some communities chose to participate, and others didn't. </p></li>
+  <li dir="ltr"><p dir="ltr">Mods and users want communities to be open and accessible, after expressing their POV, many communities have decided to reopen.</p>
+   <ul>
+    <li dir="ltr"><p dir="ltr">r/denvernuggets made a <a href="https://www.reddit.com/r/denvernuggets/comments/1480vxj/rnba_refugees_game_thread_2023_nba_finals_game_5/?utm_source=share&amp;utm_medium=web2x&amp;context=3">home</a> for the NBA fans during the finals</p></li>
+    <li dir="ltr"><p dir="ltr">r/darksouls <a href="https://www.reddit.com/r/darksouls/comments/148zehh/we_hear_you_rdarksouls_will_stay_online/?utm_source=share&amp;utm_medium=web2x&amp;context=3">listened</a> to their community and decided to reopen</p></li>
+    <li dir="ltr"><p dir="ltr">r/nottheonion is asking users to vote, including a <a href="https://www.reddit.com/r/nottheonion/comments/148w58w/vote_shall_we_blackout_again_or_remain_open/">fun option</a> that encourages people to take Tuesdays off</p></li>
+    <li dir="ltr"><p dir="ltr">r/taylorswift fans want a wholesome <a href="https://www.reddit.com/r/TaylorSwift/">place</a> to talk about the Eras Tour</p></li>
+   </ul></li>
+ </ul> 
+</div> 
+<div class="entry-inner"> 
+ <p dir="ltr"><strong>Accessibility on Reddit </strong></p> 
+ <ul>
+  <li><p dir="ltr">We conducted an accessibility audit with an external consultant and have been working on improving accessibility on the site and in our apps.</p></li>
+  <li><p dir="ltr"><a href="https://www.reddit.com/r/modnews/comments/14he7nz/accessibility_updates_to_mod_tools_part_1/">We are working to improve the accessibility of mod tools on Reddit</a>, and as of June 30, 2023, we have committed to making the following surfaces more accessible:</p>
+   <ul>
+    <li><p dir="ltr">How mods access Moderation tools</p></li>
+    <li><p dir="ltr">ModQueue (view, action posts, and comments, filter and sort content, add removal reasons, and bulk action items)</p></li>
+    <li><p dir="ltr">ModMail (inbox, read, reply to messages, create new mail, private mod note)</p></li>
+    <li><p dir="ltr">User Settings (manage mods, approved users, muted users, banned users)</p></li>
+    <li><p dir="ltr">Community Settings</p></li>
+    <li><p dir="ltr">Ban Evasion Settings</p></li>
+    <li><p dir="ltr">Additional User Settings</p></li>
+    <li><p dir="ltr">Remaining mod surfaces</p></li>
+   </ul></li>
+  <li><p dir="ltr">We’ve also connected with a number of developers of non-commercial apps that address accessibility needs and offered them exemptions from our large-scale pricing terms. </p></li>
+  <li><p dir="ltr">As of June 30, 2023, we’ve signed agreements with Luna, Dystopia, and Redreader; conversations continue with others.</p></li>
+ </ul> 
+</div> 
+<div class="entry-inner"> 
+ <p dir="ltr"><strong>Investing in our Developer Platform </strong></p> 
+ <ul>
+  <li><p dir="ltr">Our <a href="https://www.redditinc.com/blog/coming-soon-reddit-developer-platform-a-unified-space-for-developers-to-create-and-launch-programs-and-apps-to-run-specifically-on-reddit?hsLang=en">Developer Platform</a> is a unified space for developers to build and launch programs and apps to run specifically on Reddit, e.g., moderation apps, user utilities, games, and more.</p></li>
+  <li><p dir="ltr">Unlike external bots built solely using our API, Developer Platform apps are hosted on Reddit servers, natively cross-platform, and have access to new features like event-based triggers. The Developer Platform is currently in beta; those interested can learn more <a href="http://developers.reddit.com">here</a>.</p></li>
+ </ul> 
+</div> 
+<div class="entry-inner"> 
+ <p dir="ltr"><strong>NSFW content on Reddit</strong></p> 
+ <ul>
+  <li dir="ltr"><p dir="ltr">Moderators incorrectly marking a community as NSFW is a violation of both our <a href="https://www.redditinc.com/policies/content-policy?hsLang=en">Content Policy</a> and <a href="https://www.redditinc.com/policies/moderator-code-of-conduct?hsLang=en">Moderator Code of Conduct</a>.</p></li>
+  <li dir="ltr"><p dir="ltr">We do not serve ads in NSFW communities or adjacent to NSFW content.</p></li>
+ </ul> 
+</div> 
+<div class="entry-inner"> 
+ <p><strong>Key dates for our API Terms and Services</strong></p> 
+ <p><u>Effective June 19, 2023</u>, our updated <a href="https://www.redditinc.com/policies/data-api-terms?hsLang=en" target="_blank" rel="noreferrer noopener">Data API Terms</a>, together with our <a href="https://www.redditinc.com/policies/developer-terms?hsLang=en" target="_blank" rel="noreferrer noopener">Developer Terms</a>, replaced the existing Data API terms.</p> 
+ <p><u>Effective July 1, 2023</u>, the rate limits to use the Data API free of charge are 100 queries per minute per OAuth client id if you are using OAuth authentication and ten queries per minute if you are not using OAuth authentication.</p> 
+ <p><u>Effective July 1, 2023</u>, the rate for third-party apps that require higher usage limits is $0.24 per 1K API calls.</p> 
+ <p><u>Effective July 5, 2023</u>, we will limit access to mature (explicit) content via our Data API as part of an ongoing effort to provide guardrails to how explicit content and communities on Reddit are discovered and viewed. <em>Note that this change will not impact any moderator bots or extensions</em></p> 
+</div> 
+<div class="entry-inner"> 
+ <p dir="ltr"><strong>Timeline of our API announcements</strong></p> 
+ <ul>
+  <li><p dir="ltr">April 18, 2023: <a href="https://www.reddit.com/r/reddit/comments/12qwagm/an_update_regarding_reddits_api/">An Update Regarding Reddit’s API: r/reddit</a></p></li>
+  <li><p dir="ltr">May 1, 2023: <a href="https://www.reddit.com/r/modnews/comments/134tjpe/reddit_data_api_update_changes_to_pushshift_access/">Reddit Data API Update: Changes to Pushshift Access: r/modnews</a></p></li>
+  <li><p dir="ltr">May 31, 2023: <a href="https://www.reddit.com/r/modnews/comments/13wshdp/api_update_continued_access_to_our_api_for/">API Update: Continued access to our API for moderators: r/modnews</a> </p></li>
+  <li><p dir="ltr">May 31, 2023: <a href="https://www.reddit.com/r/redditdev/comments/13wsiks/api_update_enterprise_level_tier_for_large_scale/">API Update: Enterprise Level Tier for Large Scale Applications: r/redditdev</a></p></li>
+  <li><p dir="ltr">June 5, 2023: <a href="https://www.reddit.com/r/modnews/comments/141oqn8/api_updates_questions/">API Updates &amp; Questions: r/modnews</a></p></li>
+  <li><p dir="ltr">June 9, 2023: <a href="https://www.reddit.com/r/reddit/comments/145bram/addressing_the_community_about_changes_to_our_api/">Addressing the community about changes to our API: r/reddit</a></p></li>
+  <li><p dir="ltr">June 30, 2023: <a href="https://www.reddit.com/r/redditdev/comments/14nbw6g/updated_rate_limits_going_into_effect_over_the/">Updated rate limits going into effect over the coming weeks: r/redditdev</a></p></li>
+ </ul> 
+</div> 
+<div class="entry-inner"> 
+ <p dir="ltr"><strong>Additional Resources</strong></p> 
+ <ul>
+  <li><p dir="ltr"><a href="https://support.reddithelp.com/hc/en-us/articles/16160319875092-Reddit-Data-API-Wiki">Reddit Data API Wiki</a></p></li>
+  <li><p dir="ltr"><a href="https://support.reddithelp.com/hc/en-us/articles/14945211791892-Reddit-Developer-Interfaces">Reddit Developer Interfaces </a></p></li>
+  <li><p dir="ltr"><a href="https://mods.reddithelp.com/hc/en-us/articles/16693988535309-Moderation-Bots-Tooling">Moderation Bots &amp; Tooling</a></p></li>
+  <li><p dir="ltr"><a href="https://support.reddithelp.com/hc/en-us/categories/200339399-Reddit-Apps">Reddit Apps </a></p></li>
+  <li><p dir="ltr"><a href="https://support.reddithelp.com/hc/en-us/requests/new?ticket_form_id=14868593862164">Submit a request for Reddit API access </a></p></li>
+ </ul> 
+</div></span>
+            
+          </div> 
+        </div>
+      </div>
+      <div class="right-sec">
+        
+        <div class="related-post entry-content">			
+          <div class="et_pb_section">
+            <div class="related-header">
+              <h5>Related articles</h5>
+            </div>
+            <div class="et_pb_rows">
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <div class="et_pb_column">
+                <div class="et_pb_with_border">
+                  <div class="et_pb_blurb_content">
+                    <div class="et_pb_blurb_container">
+                      <p class="et_pb_module_header"><a href="https://redditinc.com/news/modernizing-reddits-infrastructure-and-moderation-tools?hsLang=en">Modernizing Reddit’s Infrastructure and Moderation Tools</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+              
+              
+              <div class="et_pb_column">
+                <div class="et_pb_with_border">
+                  <div class="et_pb_blurb_content">
+                    <div class="et_pb_blurb_container">
+                      <p class="et_pb_module_header"><a href="https://redditinc.com/news/in-case-you-saw-it-we-are-testing-a-new-shopping-product-experience-in-search?hsLang=en">We are testing new ways to bring real conversations into shopping experiences</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+              
+              
+              <div class="et_pb_column">
+                <div class="et_pb_with_border">
+                  <div class="et_pb_blurb_content">
+                    <div class="et_pb_blurb_container">
+                      <p class="et_pb_module_header"><a href="https://redditinc.com/news/testing-verified-profiles-on-reddit?hsLang=en">Testing Verified Profiles on Reddit</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+              
+              
+              
+              
+              
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+
+  </div>
+
+</div>
+
+
+
+
+      </main>
+
+      
+      <div data-global-resource-path="redditinc/templates/partials/website-footer.html"><footer class="footer child-footer">
+  <div class="page-center wrapper">
+    <div class="left">
+      <div class="logo footer">
+        <div id="hs_cos_wrapper_footer_logo" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-linked_image" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+    
+
+
+
+
+
+
+  
+
+
+
+<span id="hs_cos_wrapper_footer_logo_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_linked_image" style="" data-hs-cos-general-type="widget" data-hs-cos-type="linked_image"><a href="/?hsLang=en" target="_parent" id="hs-link-footer_logo_" style="border-width:0px;border:0px;"><img src="https://redditinc.com/hubfs/raw_assets/public/redditinc/images/Reddit_Lockup_Logo.svg" class="hs-image-widget " style="width:200px;border-width:0px;border:0px;" width="200" alt="Reddit" title="Reddit"></a></span></div>
+      </div>
+      <div class="social-links">
+        <div id="hs_cos_wrapper_module_172301340003615" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="social-share">
+  <ul class="footer-nav">
+    
+    
+    <li>
+      
+      
+      <a href="https://www.facebook.com/reddit">
+        
+        <img src="https://redditinc.com/hubfs/Reddit%20Inc/_Assets/facebook-white.svg" alt="Facebook" loading="lazy">
+      </a>
+    </li>
+    
+    
+    
+    <li>
+      
+      
+      <a href="https://www.instagram.com/reddit">
+        
+        <img src="https://redditinc.com/hubfs/Reddit%20Inc/_Assets/instagram-white.svg" alt="Instagram" loading="lazy">
+      </a>
+    </li>
+    
+    
+    
+    <li>
+      
+      
+      <a href="https://www.twitter.com/reddit">
+        
+        <img src="https://redditinc.com/hubfs/Reddit%20Inc/_Assets/twitter-white.svg" alt="Twitter" loading="lazy">
+      </a>
+    </li>
+    
+    
+    
+    <li>
+      
+      
+      <a href="https://www.youtube.com/c/reddit">
+        
+        <img src="https://redditinc.com/hubfs/Reddit%20Inc/_Assets/youtube-white.svg" alt="Youtube" loading="lazy">
+      </a>
+    </li>
+    
+    
+    
+    <li>
+      
+      
+      <a href="https://www.linkedin.com/company/reddit-com/">
+        
+        <img src="https://redditinc.com/hubfs/Reddit%20Inc/_Assets/linkedin-white.svg" alt="Linkedin" loading="lazy">
+      </a>
+    </li>
+    
+    
+  </ul>
+</div></div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="menu-wrapper">
+        <span id="hs_cos_wrapper_menu" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="menu"><div id="hs_menu_wrapper_menu" class="hs-menu-wrapper active-branch no-flyouts hs-menu-flow-horizontal" role="navigation" data-sitemap-name="default" data-menu-id="175079742071" aria-label="Navigation Menu">
+ <ul role="menu">
+  <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children" role="none"><a href="javascript:;" aria-haspopup="true" aria-expanded="false" role="menuitem">Company</a>
+   <ul role="menu" class="hs-menu-children-wrapper">
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://redditinc.com" role="menuitem">Reddit, Inc.</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://business.reddit.com/" role="menuitem">Reddit for Business</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://redditinc.com/careers" role="menuitem">Careers</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="http://investor.redditinc.com/?_ga=2.107038017.278986563.1723437500-874118656.1723006889" role="menuitem">Investors</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://redditinc.com/press" role="menuitem">Press Contact</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://redditinc.com/news" role="menuitem">News</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://www.reddit.com/r/RDDT/" role="menuitem">r/RDDT</a></li>
+   </ul></li>
+  <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children" role="none"><a href="javascript:;" aria-haspopup="true" aria-expanded="false" role="menuitem">Community</a>
+   <ul role="menu" class="hs-menu-children-wrapper">
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://www.reddit.com/r/reddit/" role="menuitem">Reddit.com</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://redditforcommunity.com/?utm_source=redditinc&amp;utm_medium=redditinc&amp;utm_campaign=evergreen" role="menuitem">Reddit for Community</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://redditinc.com/policies/reddit-rules" role="menuitem">Reddit Rules</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://reddit.zendesk.com/hc" role="menuitem">Help Center</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://redditinc.com/policies/moderator-code-of-conduct" role="menuitem">Moderator Code of Conduct</a></li>
+   </ul></li>
+  <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children" role="none"><a href="javascript:;" aria-haspopup="true" aria-expanded="false" role="menuitem">Privacy &amp; Safety</a>
+   <ul role="menu" class="hs-menu-children-wrapper">
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://www.reddit.com/policies/privacy-policy" role="menuitem">Privacy Policy</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://redditinc.com/policies/user-agreement" role="menuitem">User Agreement</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://redditinc.com/transparency" role="menuitem">Transparency Report</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://www.reddit.com/r/redditsafety/" role="menuitem">r/redditsafety</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://redditinc.com/policies" role="menuitem">Other Terms and Policies</a></li>
+   </ul></li>
+ </ul>
+</div></span>
+        <div style="text-align:right">
+          
+        <!-- OneTrust cookies settings button start -->
+<a href="#" class="ot-sdk-show-settings" style="font-size:1rem">Your Privacy Choices</a>
+<!-- OneTrust cookies settings button end -->
+        </div>
+      </div>
+      <div class="doc">  
+        <div id="hs_cos_wrapper_copyright" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_copyright_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><p>Copyright 2026&nbsp;<a href="/?hsLang=en" target="_blank" rel="noopener">Reddit, Inc.</a> All rights reserved.</p></span></div>
+      </div>
+    </div>
+  </div>
+</footer></div>
+      
+    </div>
+    
+    
+    
+    
+    
+    
+<!-- HubSpot performance collection script -->
+<script defer src="/hs/hsstatic/content-cwv-embed/static-1.1293/embed.js"></script>
+<script src="https://redditinc.com/hubfs/hub_generated/template_assets/1/219977391796/1787295054271/template_jquery-4.0.0.min.js"></script>
+<script src="https://redditinc.com/hubfs/hub_generated/template_assets/1/175072288028/1790048469553/template_main.min.js"></script>
+<script>
+var hsVars = hsVars || {}; hsVars['language'] = 'en';
+</script>
+
+<script src="/hs/hsstatic/cos-i18n/static-1.53/bundles/project.js"></script>
+<script src="https://redditinc.com/hubfs/hub_generated/module_assets/1/199713715561/1773887716651/module_website-header-s2.min.js"></script>
+<script src="https://redditinc.com/hubfs/hub_generated/module_assets/1/190440228791/1747895087246/module_search_input.min.js"></script>
+
+<script>
+  domReady(function () {
+
+      (function () {
+        // This block handles the main click-to-open functionality for dropdowns
+        // It's a bit general, so we'll keep it just in case.
+        $('.list-content').on('click', function (event) {
+          event.stopPropagation();
+          var $parentDiv = $(this).closest('.list-content');
+          $parentDiv.toggleClass('active-list');
+        });
+
+        // This is the specific click handler for your language switcher.
+        // It adds the 'active-list' class that your CSS uses to show the dropdown.
+        $('.lang_switcher_class').on('click', function (event) {
+          event.stopPropagation();
+          var $parentDiv = $(this).closest('.header__language-switcher-label');
+          $parentDiv.toggleClass('active-list');
+          $('.select-holder .list-content').removeClass('active-list');
+        });
+
+        // This makes the dropdown close when you click anywhere else on the page.
+        $('body').click(function () {
+          $('.header__language-switcher-label').removeClass('active-list');
+          $('.list-content').removeClass('active-list');
+        });
+
+        // These prevent the click from closing the menu immediately.
+        $('.lang_switcher_class').click(function (e) {
+          event.stopPropagation();
+        });
+        $('.list-content').click(function (e) {
+          event.stopPropagation();
+        });
+
+
+        // This entire block replaces the default language codes with readable names.
+        $('.lang_switcher_link[lang="nl-nl"]').text('Nederlands');
+        $('.lang_switcher_link[lang="en-us"]').text('English');
+        $('.lang_switcher_link[lang="de-de"]').text('Deutsch');
+        $('.lang_switcher_link[lang="it-it"]').text('Italiano');
+        $('.lang_switcher_link[lang="es-es"]').text('Español (ES)');
+        $('.lang_switcher_link[lang="es-mx"]').text('Español (MX)');
+        $('.lang_switcher_link[lang="pt-pt"]').text('Português (PT)');
+        $('.lang_switcher_link[lang="pt-br"]').text('Português (BR)');
+        $('.lang_switcher_link[lang="sv-se"]').text('Svenska');
+        $('.lang_switcher_link[lang="fr-fr"]').text('Français');
+        $('.lang_switcher_link[lang="hi-in"]').text('हिन्दी');
+        $('.lang_switcher_link[lang="bn"]').text('বাংলা');
+        $('.lang_switcher_link[lang="tl"]').text('Filipino');
+        $('.lang_switcher_link[lang="th"]').text('ไทย');
+        $('.lang_switcher_link[lang="pl-pl"]').text('Polski');
+
+        // This part creates and displays the currently selected language in the dropdown button.
+        const htmlLang = $("html").attr("lang");
+        $('.globe_class').append(`<div class="topen"><span></span></div>`);
+        $(".filter-options .header__language-switcher .lang_list_class li a").each(function (t) {
+          const actlText = $(this).text();
+          const actlLang = $(this).attr("lang");
+          if (actlLang === htmlLang) {
+            $('.topen span').text(actlText);
+          }
+        });
+
+      })()
+    });
+
+</script>
+
+
+<!-- Start of HubSpot Analytics Code -->
+<script type="text/javascript">
+var _hsq = _hsq || [];
+_hsq.push(["setContentType", "blog-post"]);
+_hsq.push(["setCanonicalUrl", "https:\/\/redditinc.com\/news\/apifacts"]);
+_hsq.push(["setPageId", "177057446913"]);
+_hsq.push(["setContentMetadata", {
+    "contentPageId": 177057446913,
+    "legacyPageId": "177057446913",
+    "contentFolderId": null,
+    "contentGroupId": 175418393707,
+    "abTestId": null,
+    "languageVariantId": 177057446913,
+    "languageCode": "en",
+    
+    
+}]);
+</script>
+
+<script type="text/javascript" id="hs-script-loader" async defer src="/hs/scriptloader/40687240.js?businessUnitId=1831680"></script>
+<!-- End of HubSpot Analytics Code -->
+
+
+<script type="text/javascript">
+var hsVars = {
+    render_id: "ea5a848c-adba-4797-9ea5-212cb2c01e78",
+    ticks: 1790101307903,
+    page_id: 177057446913,
+    
+    content_group_id: 175418393707,
+    portal_id: 40687240,
+    app_hs_base_url: "https://app.hubspot.com",
+    cp_hs_base_url: "https://cp.hubspot.com",
+    language: "en",
+    analytics_page_type: "blog-post",
+    scp_content_type: "",
+    
+    analytics_page_id: "177057446913",
+    category_id: 3,
+    folder_id: 0,
+    is_hubspot_user: false
+}
+</script>
+
+
+<script defer src="/hs/hsstatic/HubspotToolsMenu/static-1.640/js/index.js"></script>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PRWFNB5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+  
+</body></html>

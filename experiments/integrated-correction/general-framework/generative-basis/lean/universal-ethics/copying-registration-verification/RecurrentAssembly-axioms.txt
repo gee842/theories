@@ -1,0 +1,47 @@
+'RecurrentAssembly.Edge' does not depend on any axioms
+'RecurrentAssembly.Strand' does not depend on any axioms
+'RecurrentAssembly.Supply' does not depend on any axioms
+'RecurrentAssembly.path' does not depend on any axioms
+'RecurrentAssembly.wanted' does not depend on any axioms
+'RecurrentAssembly.attach' depends on axioms: [propext]
+'RecurrentAssembly.grow' depends on axioms: [propext]
+'RecurrentAssembly.attach_material' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecurrentAssembly.attach_support' depends on axioms: [propext, Quot.sound]
+'RecurrentAssembly.attach_tokens' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecurrentAssembly.grow_tokens' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecurrentAssembly.attach_preserves_path' depends on axioms: [propext]
+'RecurrentAssembly.grow_accounts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecurrentAssembly.grow_preserves_path' depends on axioms: [propext]
+'RecurrentAssembly.mature' does not depend on any axioms
+'RecurrentAssembly.fragment' does not depend on any axioms
+'RecurrentAssembly.reproduce' depends on axioms: [propext]
+'RecurrentAssembly.size' does not depend on any axioms
+'RecurrentAssembly.reproduce_accounts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecurrentAssembly.generation' depends on axioms: [propext]
+'RecurrentAssembly.size_append' depends on axioms: [propext]
+'RecurrentAssembly.generation_accounts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecurrentAssembly.rounds' depends on axioms: [propext]
+'RecurrentAssembly.rounds_accounts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecurrentAssembly.prepared_material_assembles' depends on axioms: [propext]
+'RecurrentAssembly.completed_routing_output' depends on axioms: [propext]
+'RecurrentAssembly.prepared_output_rebuilds' depends on axioms: [propext]
+'RecurrentAssembly.formed_graph_matches_previous' does not depend on any axioms
+'RecurrentAssembly.fragments_retain_real_links' depends on axioms: [propext, Quot.sound]
+'RecurrentAssembly.supported_reproduction' depends on axioms: [propext, Quot.sound]
+'RecurrentAssembly.blocks' does not depend on any axioms
+'RecurrentAssembly.blocks_length' depends on axioms: [propext, Quot.sound]
+'RecurrentAssembly.blocks_add' depends on axioms: [propext, Quot.sound]
+'RecurrentAssembly.size_replicate' depends on axioms: [propext, Quot.sound]
+'RecurrentAssembly.supported_generation' depends on axioms: [propext, Quot.sound]
+'RecurrentAssembly.required' does not depend on any axioms
+'RecurrentAssembly.required_as_growth' depends on axioms: [propext, Quot.sound]
+'RecurrentAssembly.supported_rounds' depends on axioms: [propext, Quot.sound]
+'RecurrentAssembly.prepared_repeated_generation' depends on axioms: [propext, Quot.sound]
+'RecurrentAssembly.process' depends on axioms: [propext]
+'RecurrentAssembly.rounds_are_trace' depends on axioms: [propext]
+'RecurrentAssembly.finite_material_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecurrentAssembly.zero_support_stops' depends on axioms: [propext]
+'RecurrentAssembly.two_generations_realized' depends on axioms: [propext, Quot.sound]
+'RecurrentAssembly.partial_failure_keeps_material' depends on axioms: [propext]
+'RecurrentAssembly.missing_kind_stalls_with_work_remaining' depends on axioms: [propext]
+'RecurrentAssembly.wrong_structure_is_not_reset' depends on axioms: [propext]

@@ -1,0 +1,20 @@
+{
+  "retrieved_at_utc": "2026-10-08T19:24:45.270387+00:00",
+  "scope": "Original article PDFs from university-hosted mirrors; retained without editing. Reading scope is recorded separately. No new empirical measurements.",
+  "files": [
+    {
+      "file": "hamming1950.pdf",
+      "url": "https://zoo.cs.yale.edu/classes/cs323/doc/Hamming.pdf",
+      "doi": "10.1002/j.1538-7305.1950.tb00463.x",
+      "bytes": 4168658,
+      "sha256": "913160af23a1b39eb71ff48923e4cc53679bd7c9af63a0fa3f93264f0c23de2a"
+    },
+    {
+      "file": "hopfield1974.pdf",
+      "url": "https://garcialab.berkeley.edu/courses/papers/Hopfield1974.pdf",
+      "doi": "10.1073/pnas.71.10.4135",
+      "bytes": 1129614,
+      "sha256": "fc6722f535405a2d451129199aae7d430bcad54898336019281c784e9f0d78a5"
+    }
+  ]
+}

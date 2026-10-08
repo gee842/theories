@@ -1,6 +1,6 @@
 # 生成条件与逻辑规则 / Generative conditions and logical rules
 
-**直接奠基路线继续：由指回关系说明同一，再检验其形式范围。** [第14节](#recognitional-binding)区分构成共同指向与经验再辨认；在已有明确语法中，无来源、无周围假设的原子型 `A → A` 项必定返回所给根据。7项新定理／21项含继承审计全空；语法及绑定解释的最终根据仍待说明。/ **Direct grounding investigation:** constitutive binding and checked atomic endomorphism uniqueness; full presuppositionless metalogic remains unfinished. The earlier identity candidate and its scope controls remain in [§13](#reflective-identity).
+**构成性论证已完成评估，严格无前提奠基未获证明。** [第16节](#constitutive-binding-assessment)区分新引用的设立、实际承接、辨认与推理根据；局部同一／代入无需每次另添认可前提，但这不自证全部元推理资源。旧的笼统“绑定还缺最终根据”标签退出下一步；保留具体的强目标不足。/ **Completed scoped assessment:** constituted reference and local warrant preservation, with explicit limits on the attempted passage to presuppositionless metalogic. All prior Lean results retain their scope; no new theorem is claimed.
 
 **第四轮完成：取得记录、核对当前适用性与实际执行接通。** [第12节](#acquired-support-use)在明确读取、版本维护及原子使用条件下，将记录支持的执行投影到同一原生占用过程；新增28项 Lean 定理通过。无关位置可以变化，反复失效也可以耗尽有限预算。/ **Fourth round complete:** acquired tickets support native use under explicit correspondence and atomicity conditions, with selective interference and exact retry accounting. Physical sensing and synchronization remain realization obligations; established concurrency results remain credited.
 
@@ -303,3 +303,50 @@ The relation-preservation premise is derived for every term in this fragment. Th
 **中心反审。** `use` 的解释已经规定指回绑定位置；本轮没有声称从不含此规定的起点推导出它。形式结果说明给定关系如何约束所有这种项；哲学候选则尝试以实际展示的指回关系说明这个规定的根据。把每次指回都理解成先比较两个独立对象，并不是唯一解释；但仅将某个结构命名为“自明”也不足以完成论证。
 
 **状态与下一连接。** 新增7项 Lean 定理，连同14项继承声明共21项审计全空；标准逻辑关系方法已有先例，未宣称前沿新逻辑。局部传递及唯一性已完成。剩余中心是实际引入／使用如何充分展示其解释，以及由此怎样说明假设代入的内容与认可保持。[本轮论证、原典、反审与冻结回执](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md)明确区分这一未完成奠基与已检查的数学后果。
+
+
+<a id="binding-preserving-substitution"></a>
+
+## 15. 假设代入是依存关系的接续 / Substitution as continuation of dependence
+
+2026-10-09，Asia/Bangkok。先看同一论证中的关系变化：某次假设引入形成随后使用的位置；当具体根据代入该位置时，相关使用接到这个根据，而内部新引入的假设保留自己的使用。这些角色由同一活动的展开与嵌套分化，不是预先独立的主体和对象。
+
+**正面候选。** 代入的局部根据，是指定依存关系在替换中得到接续。先有 x，暂设 y，再在内部暂设 z，而结论凭 y；以 x 代入 y 后，内部结论应继续凭 x。若改成凭 z，即使二者类型相同，也已经改变这个论证的根据。这里的“应”相对于保持这项指定推理的任务；没有据此证明所有有意义的推理实践必须采用完整相同演算。
+
+**已实查的推进。** 在已有有限项语言中构造同时代入，进入内层假设时保留新位置并移动旧引用。对指定代入 σ 及前后上下文赋值 η、ρ，全部消费者求值相同，当且仅当每个替换项都给出原位置所要求的根据：
+
+\[
+\bigl(\forall t,\;\operatorname{eval}(t[\sigma],\rho)
+ =\operatorname{eval}(t,\eta)\bigr)
+\;\Longleftrightarrow\;
+\bigl(\forall p,\;\operatorname{eval}(\sigma(p),\rho)=\eta(p)\bigr).
+\]
+
+充分方向由语法归纳得出，必要方向使用逐位置的引用项。单一消费者可能忽略某个位置，所以不能把这个必要条件误用于任意单项。进一步检查了单假设代入、两次代入的语义组合，以及在生产出的根据满足输入要求时保持已有假设保证。保证本身和输入满足仍是公开前提。
+
+**真正的对照。** 正确代入与误接到内层假设的项都可保持类型；在外层根据为 true、内层为 false 时，二者给出不同的 Bool 值。在两个根据都为 true 时，二者又给出同一答案。因此，类型相同或一次答案相同，均不足以识别原来的依存关系。这里的求值相同也不等于完整意义、实际经历或来源历史相同。
+
+This joins producer output to the consumer's introduced position throughout the finite expression, including under binders. The existing application-after-abstraction equation only supplied an environment; this construction inserts open syntax and proves its evaluation law. The known substitution technique is credited. The exact criterion establishes denotational fidelity under the supplied language; it does not independently ground that language, identify every semantic content, preserve physical cost, or discharge the truth of its hypothetical assessment premise.
+
+**完成与未完成。** 9项新 Lean 定理通过；19项含继承审计中13项空、6项因函数外延性使用 `Quot.sound`，不报成零依赖。绑定与代入的形式连接已完成。当前基础问题更明确：实际展示的引入／使用何以充分说明它的指向角色，并能在相关变化中区分真正承接与偶然同值。后续不能仅以更多解释器定理替代这项根据论证，也不因论证使用逻辑就直接判它不可能。[同一研究中的论证、原典、反审与实查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#binding-preserving-substitution)及[规范成果记录](../results/records/binding-preserving-substitution.json)保留其边界。
+
+
+<a id="constitutive-binding-assessment"></a>
+
+## 16. 绑定的构成性根据：完成局部说明，检验更强结论 / Constitutive binding: local explanation and stronger claim
+
+2026-10-09，Asia/Bangkok。按 Ren 的“完成它”，本节给出完整候选与评估；数学结果直接复用第13–15节，不再用另一组解释器定理代替奠基。
+
+**先说明同一活动中的关系怎样形成。** 一次引入使某个称谓获得局部指向，后续使用可以承接、改接或丢失该关系。“引入”“使用”“判断”是这一展开中的不同角色。新称谓可以在引入时确定所指；它无需先证明某个旧名称原来指什么。但设立一个引用、实际使用成功、辨明这次成功及由此获得推理根据，是不同的成就。
+
+**正面论证。** 在实际承接已经展示、内容与认可要求保持的范围内，同一根据继续支持同一判断，不需要每次再加一个独立命题认可该支持；这也没有提高原根据的地位。代入则把具体根据接到假设原先承担的位置，保持内层新假设各自的角色。既有实查已经说明此接续的形式条件。这里形成的是局部构成性说明，不能仅因形式化采用参数就把其根据判为任意。
+
+**保留可争辩的对手。** 一致改名可保留全部关系；改用最新根据则保留类型而改变指定依存；结论采用更严格标准时，可保留原绑定而拒绝原来强度的推论。误接还可被当前同值掩盖。因此，所有反对者必须接受整套同样逻辑，并未由他们能够指向本论证而得到证明。规定用语也不自动使其全部规则有效，原有错误引入／消去及自我担保检验继续适用。
+
+**审计本论证自身。** 展示引用、辨别前后角色、比较假设变化与判断根据是否充分，都是本次实际使用的资源。它们可以在同一活动内部得到考察，不需要先设一个外部裁判。使用某条规则也不同于把“该规则有效”写成证明前提。然而，本次局部引用的建立没有进一步证明这些元推理资源全部都无未说明的承诺。不能据此宣布严格目标完成，也没有由此证明它不可能。
+
+**明确处置。** “每一个绑定还要另有一个外部证书”的笼统要求被撤下。局部构成性解释已经提出、展开并经实质反审；已完成的同一与代入不重开。当前路线的确切不足是：从局部引用设立与承接，尚不能推出本论证用来概括和评估它的全部元推理资源已经得到无前提正当化。这个不足是内部解释尚未闭合，不能重新命名成事实／价值或认识／世界的独立本体。
+
+The completed work is a scoped philosophical assessment, not a new mathematical theorem or a completed premise-free foundation. Institution of a reference differs from successful use and recognized warrant. The affirmative argument explains local retention without an extra endorsement premise on every step; target-preserving rivals restrict its reach. The own-resource audit names the unsupported promotion from that local achievement to full metatheoretical entitlement. No proof of global impossibility, imported universal ethical axiom, or requirement to solve all empirical knowledge is introduced.
+
+[完整论证、三条强路线的评估、原典与资源审计](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#constitutive-binding-assessment)与[规范评估记录](../results/records/constitutive-binding-assessment.json)保存这个结论。既有9项代入定理及其他历史证明未改变、未重编、未重复计为新成果。

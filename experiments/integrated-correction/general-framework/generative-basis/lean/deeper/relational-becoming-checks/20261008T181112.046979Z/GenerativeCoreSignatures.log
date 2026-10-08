@@ -1,0 +1,86 @@
+Generative.trace_nil_iff.{u, v} {State : Type u} {Action : Type v} {P : Generative.Process State Action} {s t : State} :
+  Generative.Trace P s [] t ↔ s = t
+Generative.trace_cons_iff.{u, v} {State : Type u} {Action : Type v} {P : Generative.Process State Action} {s t : State}
+  {a : Action} {as : List Action} : Generative.Trace P s (a :: as) t ↔ ∃ m, P.step s a m ∧ Generative.Trace P m as t
+Generative.trace_singleton_iff.{u, v} {State : Type u} {Action : Type v} {P : Generative.Process State Action}
+  {s t : State} {a : Action} : Generative.Trace P s [a] t ↔ P.step s a t
+Generative.trace_append_iff.{u, v} {State : Type u} {Action : Type v} {P : Generative.Process State Action}
+  {s t : State} {xs ys : List Action} :
+  Generative.Trace P s (xs ++ ys) t ↔ ∃ m, Generative.Trace P s xs m ∧ Generative.Trace P m ys t
+Generative.enabled_iff_singleton_trace.{u, v} {State : Type u} {Action : Type v} {P : Generative.Process State Action}
+  {s : State} {a : Action} : Generative.Enabled P s a ↔ ∃ t, Generative.Trace P s [a] t
+Generative.enabled_difference_implies_state_difference.{u, v} {State : Type u} {Action : Type v}
+  {P : Generative.Process State Action} {s t : State} {a : Action} (hs : Generative.Enabled P s a)
+  (ht : ¬Generative.Enabled P t a) : s ≠ t
+Generative.feasible_append_iff.{u, v} {State : Type u} {Action : Type v} {P : Generative.Process State Action}
+  {s : State} {xs ys : List Action} :
+  Generative.Feasible P s (xs ++ ys) ↔ ∃ m, Generative.Trace P s xs m ∧ Generative.Feasible P m ys
+Generative.feasible_prefix.{u, v} {State : Type u} {Action : Type v} {P : Generative.Process State Action} {s : State}
+  {xs ys : List Action} (h : Generative.Feasible P s (xs ++ ys)) : Generative.Feasible P s xs
+Generative.enabled_product_iff.{u, v, w} {State : Type u} {Action : Type v} {Other : Type w}
+  {P : Generative.Process State Action} {Q : Generative.Process Other Action} {s : State} {q : Other} {a : Action} :
+  Generative.Enabled (Generative.productProcess P Q) (s, q) a ↔ Generative.Enabled P s a ∧ Generative.Enabled Q q a
+Generative.trace_product_left.{u, v, w} {State : Type u} {Action : Type v} {Other : Type w}
+  {P : Generative.Process State Action} {Q : Generative.Process Other Action} {s t : State × Other} {as : List Action}
+  (h : Generative.Trace (Generative.productProcess P Q) s as t) : Generative.Trace P s.fst as t.fst
+Generative.trace_product_right.{u, v, w} {State : Type u} {Action : Type v} {Other : Type w}
+  {P : Generative.Process State Action} {Q : Generative.Process Other Action} {s t : State × Other} {as : List Action}
+  (h : Generative.Trace (Generative.productProcess P Q) s as t) : Generative.Trace Q s.snd as t.snd
+Generative.trace_product_mk.{u, v, w} {State : Type u} {Action : Type v} {Other : Type w}
+  {P : Generative.Process State Action} {Q : Generative.Process Other Action} {s t : State} {q r : Other}
+  {as : List Action} (hp : Generative.Trace P s as t) (hq : Generative.Trace Q q as r) :
+  Generative.Trace (Generative.productProcess P Q) (s, q) as (t, r)
+Generative.trace_product_iff.{u, v, w} {State : Type u} {Action : Type v} {Other : Type w}
+  {P : Generative.Process State Action} {Q : Generative.Process Other Action} {s t : State} {q r : Other}
+  {as : List Action} :
+  Generative.Trace (Generative.productProcess P Q) (s, q) as (t, r) ↔
+    Generative.Trace P s as t ∧ Generative.Trace Q q as r
+Generative.feasible_product_iff.{u, v, w} {State : Type u} {Action : Type v} {Other : Type w}
+  {P : Generative.Process State Action} {Q : Generative.Process Other Action} {s : State} {q : Other}
+  {as : List Action} :
+  Generative.Feasible (Generative.productProcess P Q) (s, q) as ↔
+    Generative.Feasible P s as ∧ Generative.Feasible Q q as
+Generative.trace_map.{u, v, w} {State : Type u} {Action : Type v} {Other : Type w} {P : Generative.Process State Action}
+  {Q : Generative.Process Other Action} {f : State → Other}
+  (hstep : ∀ (s : State) (a : Action) (t : State), P.step s a t → Q.step (f s) a (f t)) {s t : State} {as : List Action}
+  (h : Generative.Trace P s as t) : Generative.Trace Q (f s) as (f t)
+Generative.trace_lift.{u, v, w} {State : Type u} {Action : Type v} {Other : Type w}
+  {P : Generative.Process State Action} {Q : Generative.Process Other Action} {q : State → Other}
+  (hlift : ∀ (s : State) (a : Action) (r : Other), Q.step (q s) a r → ∃ t, P.step s a t ∧ q t = r) {s : State}
+  {r : Other} {as : List Action} (h : Generative.Trace Q (q s) as r) : ∃ t, Generative.Trace P s as t ∧ q t = r
+Generative.projected_trace_iff.{u, v, w} {State : Type u} {Action : Type v} {Other : Type w}
+  {P : Generative.Process State Action} {Q : Generative.Process Other Action} {q : State → Other}
+  (hpreserve : ∀ (s : State) (a : Action) (t : State), P.step s a t → Q.step (q s) a (q t))
+  (hlift : ∀ (s : State) (a : Action) (r : Other), Q.step (q s) a r → ∃ t, P.step s a t ∧ q t = r) {s : State}
+  {r : Other} {as : List Action} : Generative.Trace Q (q s) as r ↔ ∃ t, Generative.Trace P s as t ∧ q t = r
+Generative.projection_exact_iff.{u, v, w} {State : Type u} {Action : Type v} {Other : Type w}
+  {P : Generative.Process State Action} {Q : Generative.Process Other Action} {q : State → Other} :
+  ((∀ (s : State) (a : Action) (t : State), P.step s a t → Q.step (q s) a (q t)) ∧
+      ∀ (s : State) (a : Action) (r : Other), Q.step (q s) a r → ∃ t, P.step s a t ∧ q t = r) ↔
+    ∀ (s : State) (as : List Action) (r : Other),
+      Generative.Trace Q (q s) as r ↔ ∃ t, Generative.Trace P s as t ∧ q t = r
+Generative.local_exact_iff_trace_exact.{u, v, w} {State : Type u} {Action : Type v} {Other : Type w}
+  {P : Generative.Process State Action} {Q : Generative.Process Other Action} {q : State → Other} :
+  (∀ (s : State) (a : Action) (r : Other), Q.step (q s) a r ↔ ∃ t, P.step s a t ∧ q t = r) ↔
+    ∀ (s : State) (as : List Action) (r : Other),
+      Generative.Trace Q (q s) as r ↔ ∃ t, Generative.Trace P s as t ∧ q t = r
+Generative.enabled_projection_iff.{u, v, w} {State : Type u} {Action : Type v} {Other : Type w}
+  {P : Generative.Process State Action} {Q : Generative.Process Other Action} {q : State → Other}
+  (hpreserve : ∀ (s : State) (a : Action) (t : State), P.step s a t → Q.step (q s) a (q t))
+  (hlift : ∀ (s : State) (a : Action) (r : Other), Q.step (q s) a r → ∃ t, P.step s a t ∧ q t = r) {s : State}
+  {a : Action} : Generative.Enabled P s a ↔ Generative.Enabled Q (q s) a
+Generative.feasible_projection_iff.{u, v, w} {State : Type u} {Action : Type v} {Other : Type w}
+  {P : Generative.Process State Action} {Q : Generative.Process Other Action} {q : State → Other}
+  (hpreserve : ∀ (s : State) (a : Action) (t : State), P.step s a t → Q.step (q s) a (q t))
+  (hlift : ∀ (s : State) (a : Action) (r : Other), Q.step (q s) a r → ∃ t, P.step s a t ∧ q t = r) {s : State}
+  {as : List Action} : Generative.Feasible P s as ↔ Generative.Feasible Q (q s) as
+Generative.feasible_difference_implies_projection_difference.{u, v, w} {State : Type u} {Action : Type v}
+  {Other : Type w} {P : Generative.Process State Action} {Q : Generative.Process Other Action} {q : State → Other}
+  (hexact : ∀ (s : State) (as : List Action), Generative.Feasible P s as ↔ Generative.Feasible Q (q s) as) {s t : State}
+  {as : List Action} (hs : Generative.Feasible P s as) (ht : ¬Generative.Feasible P t as) : q s ≠ q t
+Generative.trace_faithful_iff.{u, v, w} {State : Type u} {Action : Type v} {Other : Type w}
+  {P : Generative.Process State Action} {Q : Generative.Process Other Action} {q : State → Other}
+  (hpreserve : ∀ (s : State) (a : Action) (t : State), P.step s a t → Q.step (q s) a (q t))
+  (hlift : ∀ (s : State) (a : Action) (r : Other), Q.step (q s) a r → ∃ t, P.step s a t ∧ q t = r)
+  (hinjective : ∀ (s t : State), q s = q t → s = t) {s t : State} {as : List Action} :
+  Generative.Trace P s as t ↔ Generative.Trace Q (q s) as (q t)

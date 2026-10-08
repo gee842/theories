@@ -1,0 +1,13 @@
+import RelationalBecoming
+#check RelationalBecoming.within_after_prefix
+#check RelationalBecoming.eventual_after_prefix
+#check RelationalBecoming.no_new_eventual_bundle
+#check RelationalBecoming.history_meaning
+#check RelationalBecoming.joint_content_iff
+#check RelationalBecoming.prepared_joint_within_one
+#check RelationalBecoming.initial_not_joint_within_one
+#check RelationalBecoming.actual_preparation_changes_effective_capacity
+#check RelationalBecoming.release_region_preserved
+#check RelationalBecoming.released_cannot_reach_joint
+#check RelationalBecoming.actual_release_loses_eventual_joint
+#check RelationalBecoming.prepared_capacity_can_end_without_joint_realization

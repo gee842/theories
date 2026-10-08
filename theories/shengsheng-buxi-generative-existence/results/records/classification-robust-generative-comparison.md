@@ -6,7 +6,7 @@
 
 记录源 / Editable record: [classification-robust-generative-comparison.json](classification-robust-generative-comparison.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T13:32:34.839413+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-08T18:34:30.569633+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
@@ -87,3 +87,4 @@ Aliases / 别名: `ClassificationRobustJudgment.all_secondary_iff`, `Classificat
 ## 沿革 History
 
 - 2026-10-08：依据更新后的仓库接续一元关系路线，新增分类精确判准与形式组合，再以三路例检验更强共同方案推论；旧结果与回执保持范围。 / 2026-10-08: continues the monist relational route using the updated repository; adds an exact classification criterion and formal composition, then tests the stronger common-plan inference with three routes. Earlier results and receipts retain their scope.
+- 2026-10-09：逐项核读共享指示中新增的“接续部分纠正与临界反馈”，并验证此前已审字节完整保留为前缀。新增指示属于市场／元吸引子会话，不改变本成果的 G0/J、分类或组织形成范围。更新该来源的审阅指纹；主张、前提、证明绑定、反例与验证状态保持不变，无新定理或重新验收。 / 2026-10-09: reviewed the appended partial-correction and critical-feedback directive and verified that all previously reviewed bytes remain an unchanged prefix. The addition belongs to the market/meta-attractor session and does not change this result’s G0/J, classification or organizational-formation scope. Updated this source-review fingerprint; claims, hypotheses, proof bindings, counterexamples and validation status are unchanged, with no new theorem or renewed scientific acceptance.

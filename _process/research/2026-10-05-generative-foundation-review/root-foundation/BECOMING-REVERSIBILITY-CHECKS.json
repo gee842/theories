@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "scope": "Owned source-bound Lean artifacts, integration links and F01 preservation; not whole-chain freshness or independent acceptance.",
+  "errors": [],
+  "lean_status": "passed",
+  "new_theorems": 10,
+  "new_declaration_audits": 14,
+  "inherited_theorems": 23,
+  "inherited_declaration_audits": 28,
+  "retained_artifacts": 17,
+  "record_sha256": "9f79ad279a7c295039161bce66e658842638ff5e603491e8915a8016b828e470",
+  "other_chain_entries_preserved": true
+}

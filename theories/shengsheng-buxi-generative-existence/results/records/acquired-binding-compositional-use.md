@@ -6,7 +6,7 @@
 
 记录源 / Editable record: [acquired-binding-compositional-use.json](acquired-binding-compositional-use.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T13:41:46.812488+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-08T18:50:58.660938+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
@@ -52,7 +52,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 ## 复用与下一增量 Reuse and next delta
 
-复用 encounter-selection-and-revision：取得的访问与歧义现接通实际选择及新学习；下一连接是维持覆盖的选择性注意与相互沟通协调的发育对应。 / Reuse encounter-selection-and-revision: acquired access and ambiguity now enter actual selection and further learning. Next is developmental correspondence for selective attention and reciprocal communicative coordination sustaining coverage.
+既有条件连接保留；下一重点是在匹配发育程序中识别已取得访问及所保留来源／次序如何进入实际使用，分别观察当前依赖与旧内容认可。原典已约束自动迁移，但未识别唯一机制或演化史。 / Preserve the completed conditional connections. Next identify how formed access and retained source/order information guide actual use in a matched developmental procedure, distinguishing present reliance from old-content endorsement. Primary evidence constrains automatic transfer without identifying a unique mechanism or evolutionary history.
 
 Aliases / 别名: `Generative.AcquiredBinding.acquired_binding_and_grouping_compose`
 
@@ -61,3 +61,8 @@ Aliases / 别名: `Generative.AcquiredBinding.acquired_binding_and_grouping_comp
 - 2026-10-08：接通取得的分节、由歧义接触形成的绑定和已有组合使用；固定解码被替代，错误与来源判断前提保留。 / 2026-10-08: joined acquired grouping, bindings learned from ambiguous encounters and existing compositional use; replaced the fixed decoder while preserving error and source-judgment premises.
 - 2026-10-08：审读原研究第11–13节，新空间接触史正式供给原绑定输入；本记录的证明和原范围未变，下一连接更新。 / 2026-10-08: reviewed study sections 11–13; a spatial encounter history formally supplies the original binding inputs. This record’s proof and scope are unchanged; the next connection is updated.
 - 2026-10-08：核读原研究第14–16节；选择经历及访问预测修订的新连接已实查，原证明范围不变，未宣告完整心理解释。 / 2026-10-08: reviewed study sections 14–16; encounter selection and access-prediction revision now have a checked connection. This proof’s original scope remains unchanged; no complete psychological explanation is claimed.
+- 2026-10-08：核读新增公开命名／注视分析；自动所指注视的经验对应受限，既有覆盖前提、形式结论及原实查范围不变。 / 2026-10-08: reviewed the appended public naming/gaze analysis. Automatic target-gaze correspondence is limited; the existing coverage premises, formal conclusions and original verification scope are unchanged.
+- 2026-10-08：已读研究新增19–20节；后续保留测量加入经验约束，未改变本成果声明、证明或既有反例。下一对应具体化为经验可靠性改变后对新证据的使用。 / 2026-10-08: reviewed added study sections 19–20. A later-retention measure adds an empirical constraint without changing this result’s claim, proof or existing failures. The next correspondence is evidence use after experienced reliability changes.
+- 2026-10-09：已读研究21–23节；取得的来源关系现以另一路径生成旧命名记录的绑定候选。原声明、证明、经验结果与反例不改写；历史适用范围的新反例具体化后续连接。 / 2026-10-09: reviewed study sections 21–23. Acquired source relations now generate binding alternatives for old naming records through an additional route. Original claims, proofs, empirical results and failures remain; a historical-applicability counterexample sharpens the next connection.
+- 2026-10-09：核读同一研究新增历史适用范围组合与反审；本项既有主张、源码及实查不变，接续问题转向来源—时序保持和持续性假设的经验识别。 / 2026-10-09: reviewed the same study’s historical-applicability composition and counterreview. This result’s prior claim, sources and scientific checks remain unchanged; the continuation now targets empirical identification of source–time retention and persistence assumptions.
+- 2026-10-09：核读同一研究新增第27–29节的五篇原典对应、反审与取得／保持／使用区分；只更新此来源版本及下一连接，原成果、证明和经验回执范围保留。 / 2026-10-09: reviewed the same study’s added §§27–29, five primary-source correspondences, counterreview and formation/retention/use distinction. Updated this source version and next connection while preserving the prior result, proof and empirical-receipt scopes.

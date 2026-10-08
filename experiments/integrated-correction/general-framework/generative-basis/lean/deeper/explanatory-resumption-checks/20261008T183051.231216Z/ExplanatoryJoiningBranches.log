@@ -1,0 +1,25 @@
+'Generative.ExplanatoryJoiningBranches.finite_outcomes_image_finite' does not depend on any axioms
+'Generative.ExplanatoryJoiningBranches.bisimulation_iff_compatible' does not depend on any axioms
+'Generative.ExplanatoryJoiningBranches.branch_same_compatible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryJoiningBranches.compatible_refines_branch_same' does not depend on any axioms
+'Generative.ExplanatoryJoiningBranches.branch_same_iff_compatible_relation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryJoiningBranches.holds_ask' does not depend on any axioms
+'Generative.ExplanatoryJoiningBranches.branch_same_refines_context_same' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningBranches.join_result_matches' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryJoiningBranches.operation_lifts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryJoiningBranches.canonical_exact' does not depend on any axioms
+'Generative.ExplanatoryJoiningBranches.canonical_reduced' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryJoiningBranches.every_exact_account_has_canonical_factor' depends on axioms: [propext,
+ Quot.sound]
+'Generative.ExplanatoryJoiningBranches.matching_preserves_operation' does not depend on any axioms
+'Generative.ExplanatoryJoiningBranches.common_multivalued_structure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryJoiningBranches.questions_survive_encoding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryJoiningBranches.tree_lifts' depends on axioms: [propext, Classical.choice, Quot.sound]

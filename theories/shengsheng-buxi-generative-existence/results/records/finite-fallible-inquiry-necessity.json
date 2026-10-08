@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "id": "finite-fallible-inquiry-necessity",
+  "title": {
+    "zh": "可错科学辨别的必要信息条件",
+    "en": "Necessary information conditions for fallible scientific discrimination"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F11",
+  "reviewed_at_utc": "2026-10-08T13:59:58.351644+00:00",
+  "claim": {
+    "zh": "有限加权辨别的作答覆盖不超过两种错误权重与证据差异之和；保持相同读数的适应关系不能同时达到更强覆盖和错误指标。",
+    "en": "Finite weighted discrimination has commitment coverage at most the two error weights plus evidence separation; adaptive relations preserving the same readouts cannot also meet stronger coverage/error claims."
+  },
+  "hypotheses": [
+    {
+      "zh": "二元目标意义、有限自然数权重表和完整实际可用输入；概率解释另需两侧同一正总量。",
+      "en": "Intended binary target, finite natural-weight tables and complete actually available inputs; probability interpretation additionally requires equal positive marginal totals."
+    },
+    {
+      "zh": "配对版本使用有效配对和共同读者；直接边缘版本不需指定配对。",
+      "en": "The paired version uses a valid pairing and common reader; the direct marginal version needs no chosen coupling."
+    },
+    {
+      "zh": "适应性结论使用初态关系、每步关系保持及关联状态的相同读数；不同状态类型获准。",
+      "en": "The adaptive conclusion uses initial relatedness, step preservation and identical readouts on related states; different state types are allowed."
+    }
+  ],
+  "correspondence": {
+    "zh": "从同一展开分化出问题、保留证据及回应；定理检验所声明的辨别成就，不定义科学为接受本理论。",
+    "en": "Questions, retained evidence and responses differentiate within one unfolding; the theorem tests a declared discrimination achievement rather than defining science as acceptance of this theory."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean",
+  "aliases": [
+    "Generative.ScientificInquiryNecessity.fallible_inquiry_bound",
+    "Generative.ScientificInquiryNecessity.distributional_coverage_bound",
+    "Generative.ScientificInquiryNecessity.adaptive_service_excludes_blindness"
+  ],
+  "dependencies": [],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
+      "detail": {
+        "zh": "不作答可无错误但无辨别覆盖；正确猜中不能保证两侧可靠，遗漏实际输入会使应用失效。",
+        "en": "Abstention can avoid errors without discrimination coverage; a lucky answer does not ensure two-case reliability, and omitted actual inputs invalidate an application."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "有限自然数权重、完整读数、共同规则及实际概率对应明示；没有校准真实法则或证明整个核心的科学普遍必要性。",
+    "en": "Finite natural weights, complete readouts, a common rule and actual probability correspondence are explicit; no calibration of actual laws or science-wide necessity of the whole core is proved."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 实编18项定理／27项声明审计：11空、16标准依赖；无自定公理或经典选择。没有新增经验数据或独立评审。",
+    "en": "Lean 4.29.1 compiled 18 theorems / 27 declaration audits: 11 empty, 16 standard dependency lists; no custom postulates or classical choice. No new empirical data or independent review."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean",
+      "role": "proof",
+      "sha256": "d46f15d2e512aca17541c493f224860ab4489f6da5ed8c1fd21bcd1b379e3c14",
+      "declarations": [
+        "Generative.ScientificInquiryNecessity.fallible_inquiry_bound",
+        "Generative.ScientificInquiryNecessity.distributional_coverage_bound",
+        "Generative.ScientificInquiryNecessity.adaptive_service_excludes_blindness",
+        "Generative.ScientificInquiryNecessity.run_preserves_relation",
+        "Generative.ScientificInquiryNecessity.adaptive_blindness_bound",
+        "Generative.ScientificInquiryNecessity.likelihood_attains_overlap",
+        "Generative.ScientificInquiryNecessity.overlap_plus_excess",
+        "Generative.ScientificInquiryNecessity.common_processing_cannot_add_difference",
+        "Generative.ScientificInquiryNecessity.sharp_fallible_witness"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-inquiry-necessity-checks/20261008T135418.446592Z/verification.json",
+      "role": "receipt",
+      "sha256": "bae0ba96edb44ba75ee958d8a296a4b87897fa3da54765daebde6c1d95baa04e",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
+      "role": "integration",
+      "sha256": "74fbf5465d41b2c06a59a73610cde95686e73fe8490fb17d75254915baac8708",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-SOURCES.md",
+      "role": "review",
+      "sha256": "82503946526c878e0ed7ea7dd98056a7dd1b783a3aabd919efba0defa7c3cb2e",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/check_scientific_inquiry_necessity.py",
+      "role": "review",
+      "sha256": "9c56041847cd19af88a4f86de698e10fc7313dca078866f2cb99e00b7b9d1024",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md",
+      "role": "provenance",
+      "sha256": "eee7495c6e24cd9386d17868d816eb51e965c64c6925af1b9c1e873cff403707",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-inquiry-necessity-checks/20261008T135418.446592Z/verification.json",
+      "sha256_pointer": "/source_sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "明确尚需科学普遍必要性证明的核心承诺，并给出独立问题、对应及真正对手；不把此次局部证明升级为全理论完成。",
+    "en": "Identify the further core commitment requiring a science-wide necessity proof, with an independent task, correspondence and substantive rival; do not upgrade this local proof to whole-theory completion."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：迁移既有 I1/I2 及不作答论证，并新增有限权重形式证据和适应接续；18项新形式定理不是18项独立发现。",
+      "en": "2026-10-08: migrated existing I1/I2 and abstention reasoning with new finite-weight formal evidence and adaptive composition; 18 new formal theorems are not 18 independent discoveries."
+    }
+  ]
+}

@@ -81,3 +81,171 @@ Martin-Löf's [*On the Meanings of the Logical Constants and the Justifications 
 The [isolated Lean checker](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_recognitional_binding.py) compiled the three source snapshots. [The frozen successful receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/recognitional-binding-checks/20261008T120159.334011Z/receipt.json) records **7 new theorem audits plus 14 inherited declaration audits, all 21 with empty named-axiom reports**, without warnings or proof holes. The inherited 14 comprise 8 theorems and 2 supporting definitions in `InferentialGrounds`, plus 4 theorems in `GroundRelationTransport`; they are not 14 new theorems. The first compile failed on dependent indices and inference of the example's carrier; explicit binders repaired these typing errors without changing the intended statements.
 
 An empty report concerns dependencies of the checked Lean declarations, not the absence of grammar, inference, evaluation or metatheory. There was no independent-agent review or empirical validation. [Before editions](development/recognitional-binding-before/manifest.json), [owned index edits](RECOGNITIONAL-BINDING-INDEX-EDITS.json) and [documentary checks](RECOGNITIONAL-BINDING-CHECKS.json) preserve the prior result and shared concurrent work. Only the owned F01 additions and read/authored source versions are maintained; the separate full-results catalogue and unrelated pending reviews are preserved.
+
+<a id="binding-preserving-substitution"></a>
+
+## 9. 接续：假设代入保留哪种关系 / Continuation: what substitution preserves
+
+9 October 2026, Asia/Bangkok. Ren's [latest continuation](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md#substitution-continuation) keeps the direct metalogical target. The present section supersedes only the mathematical substitution question in §7; the philosophical warrant remains under investigation.
+
+**Result:** [binding-preserving-substitution](../../../../theories/shengsheng-buxi-generative-existence/results/records/binding-preserving-substitution.json). **Reused sources:** the unmigrated `InferentialGrounds` language and evaluation, `GroundRelationTransport`'s prior propagation result, and `RecognitionalBinding`'s source-free identity result. Only the first is imported in the new module; the latter two are conceptual predecessors, not dependencies of its proof. The registered [derivation-soundness](../../../../theories/shengsheng-buxi-generative-existence/results/records/derivation-soundness.json) is a related premise-preservation boundary in a different calculus, not a formal adapter to this result.
+
+**Delta:** construct simultaneous substitution under nested binders and prove its evaluation law, with an exact all-consumer criterion and a same-type capture control. Earlier `application_after_abstraction` supplied an environment and reduced by definition; it did not recursively insert an open producer term inside every use of a consumer. `CoreTreeRearticulation.substitute_derived_basis`, also inspected, expands closed basis derivations in a different calculus; it is credited, not reproduced as a new result here.
+
+**Premises and correspondence:** finite typed syntax, stable atomic labels, the same ground-family interpretation and evaluation clauses. The construction has no mutation, divergence or physical cost. Context positions articulate relations of introduction and use within one derivation; context lists do not posit independently existing domains. Reference to actual reasoning, intensional content or temporally changing grounds still needs an adequate account.
+
+**Evidence and integration:** nine new Lean theorems with a source-bound receipt below. An actual producer term can now replace the consumer's designated assumption throughout the finite expression, including under new binders. A producer meeting the consumer's input requirement supplies the premise of the checked assessment theorem; neither requirement nor its satisfaction is manufactured by substitution.
+
+### 9.1 Start with the relation that changes
+
+A hypothetical derivation already differentiates an introduction and its dependent uses. When a concrete derivation replaces that introduction, its output must reach those uses. Meanwhile, assumptions introduced later inside the consumer retain their own uses. These roles form through nesting in the same argument; they are not two pre-existing things joined by an unexplained outside operation.
+
+The positive candidate is **continuation of the designated dependence through replacement**. A use that originally depended on the substituted assumption receives the producer's output; a use of a newly introduced assumption continues to depend on that new assumption. On this account, permission to substitute is justified locally by the preserved relation, not by a further assertion announcing that replacement is valid. The formal result below tests this proposal's mathematical consequence under explicit interpretation.
+
+中文例子：先有根据 x，再暂设 y，随后在论证内部暂设 z，而结论仍凭 y。现在用 x 代入 y：正确的接续是在暂设 z 的范围内仍凭 x；若把 x 改接到 z，就改变了根据。x 与 z 即使属于同一类型，也不能因此互换。这个例子所问的是一个论证内部的依存怎样保持，不是独立主体怎样给独立对象赋义。
+
+### 9.2 Exact checked statement
+
+Let σ assign a replacement term to every position of a consumer context. Let η give the original context grounds and ρ interpret the replacement terms. In the existing language:
+
+\[
+\left[\forall t,\quad
+  \operatorname{eval}(\operatorname{substitute}(\sigma,t),\rho)
+  =\operatorname{eval}(t,\eta)\right]
+\quad\Longleftrightarrow\quad
+\left[\forall p,\quad
+  \operatorname{eval}(\sigma(p),\rho)=\eta(p)\right].
+\]
+
+Both quantifiers range over the declared types and contexts. The forward direction tests the term that uses each position. The reverse direction is an induction over every term. Under abstraction, the newest position remains bound locally, while older replacement terms are shifted across the new binder. This is constructed by `liftSubstitution`, with `extract_rename` proving that the shift preserves their evaluated grounds. It is not a separately assumed global semantic-correctness predicate.
+
+The necessity concerns **agreement for all consumers**. A particular consumer can ignore a changed position. The criterion also concerns equality of interpreted values; distinct historical sources that currently evaluate equally may satisfy it. It does not uniquely reconstruct provenance or prove identity of all meanings.
+
+| New checked declaration | Scope |
+|---|---|
+| `extract_rename` | Position maps preserve evaluation when the mapped positions supply the original grounds. |
+| `extract_substitute` | The recursively constructed replacement preserves evaluation when its position outputs match. |
+| `all_terms_agree_iff_positions` | The displayed exact criterion; individual use terms give necessity. |
+| `discharge_matches_supply` | Replacing one assumption by a producer agrees with evaluating the consumer under the producer's supplied ground. |
+| `discharge_preserves_assessment` | Given a hypothetical assessment guarantee and a producer meeting its input condition, the substituted term meets the output condition. |
+| `successive_substitution` | Two syntactic insertions and the composed insertion evaluate identically; not syntactic equality or equal physical execution cost. |
+| `nested_substitution_retains_outer` | The concrete replacement under an inner binder retains the earlier outer position. |
+| `typed_capture_changes_answer` | Correct and captured alternatives have the same type but give true and false when their two grounds differ. |
+| `matching_values_hide_capture` | Those two alternatives agree when the two grounds happen to have equal values. One matching answer therefore does not distinguish the bindings. |
+
+The assessment theorem keeps both inputs explicit: `∀ g, input g → output (eval body [g,env])`, and `input (eval producer env)`. It does not prove the hypothetical guarantee or the supplied ground's adequacy by discharging a variable. No unconditional conclusion or axiom-free metatheory follows from removing a local assumption slot.
+
+### 9.3 A substantive rival, and what the comparison decides
+
+The captured candidate follows the nearest newly introduced same-type position. It remains a well-typed, meaningful term. It can be understood as a different instruction: “use the newest available ground.” Both candidates preserve the same available Bool values and inner/outer nesting; they differ in which introduction the conclusion depends upon. With outer=true and inner=false they diverge; with both=true they agree. These are Bool data, not assertions that falsehood is provable.
+
+This rival defeats the broader claim that preserving type, surface name or one observed answer suffices for substitution fidelity. It does not refute the narrower criterion that retains designated dependence. Conversely, designating the original dependence as the target requires justification in applying the account to an actual argument. An activity intentionally redirecting its dependence may be coherent; it simply does not preserve this specified hypothetical derivation. We do not label every such activity “not reasoning.”
+
+The strongest unresolved objection is that the semantic equations already interpret what counts as supplying the same ground. The response is a bounded explanation: the constructed insertion exposes and preserves those position relations throughout the term, so correctness at every compound expression need not be assumed separately. That removes one explanatory burden, **not** the warrant of the primitive context-use interpretation. Equal output is also weaker than complete sameness of content, experience or history. The model's omission of those relations must not be reported as their ontological absence.
+
+### 9.4 Primary sources and novelty assessment
+
+The authors' [PLFA chapter on de Bruijn representation](https://plfa.github.io/DeBruijn/) was inspected at its introduction and its renaming, simultaneous substitution and single substitution sections. It presents typed position indices, extends substitution under a binder by retaining the new variable and shifting earlier replacements, and illustrates avoidance of capture. This is an established technique; our Lean implementation adapts it to the repository's existing language and proves a denotational criterion. It is not a claim to have discovered substitution, de Bruijn indices or their philosophical justification.
+
+The previously inspected Martin-Löf discussion in §6 remains the source for the hypothetical-proof comparison. No new full-text or historical-priority claim is made here. Source comparison supports reusing the mathematical method; it supplies no authority that would settle the stronger foundational question.
+
+### 9.5 What this changes in the foundational account
+
+Identity and substitution now have a connected candidate explanation: a use refers to an introduced ground; replacing that introduction preserves the designated dependencies through the continuation. The equality theorem exposes the exact supplied interface. The capture control shows a genuine difference within the same representational scope, not an arbitrary truth-label switch.
+
+The mathematical continuation is complete. The next **foundational** question is why a displayed introduction/use relation warrants its claimed referential role across the relevant variations—rather than merely coinciding with another interpretation at the current values—and how that warrant is recognized or corrected in actual argument. The target must remain fixed enough for a rival to contest it. Merely compiling a larger interpreter, renaming a position “self-evident,” or demanding an endless independent certificate would not answer this question.
+
+This remains a proposed internal account of warrant, not proof that use of logic makes the project impossible. It also does not substitute the independently authorized Theory of Becoming or the completed G0/J ethical route for this session's metalogical objective.
+
+### 9.6 Actual checks and records
+
+[InferentialSubstitution.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/InferentialSubstitution.lean) was compiled with its unchanged `InferentialGrounds` import by the [isolated checker](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_inferential_substitution.py). The [final frozen receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/inferential-substitution-checks/20261008T181823.552825Z/receipt.json) records **9 new theorems, 10 inherited declaration audits, 19 total**: 13 empty reports and 6 depending only on `Quot.sound` through function extensionality. There are no custom postulates, proof holes, warnings or classical-choice dependencies. Reporting those six as empty would be incorrect. First attempts failed on an unavailable congruence helper and an implicit context type; explicit rewriting and annotation repaired them. A subsequent successful eight-theorem build was extended by the equal-value control; only the final nine-theorem build is the current result.
+
+The inherited ten comprise eight theorems and two supporting definitions; they are not new. The [before-edition manifest](development/inferential-substitution-before/manifest.json) preserves the preceding theory, study and source record. [Scoped integration checks](INFERENTIAL-SUBSTITUTION-CHECKS.json) and [owned chain edits](INFERENTIAL-SUBSTITUTION-INDEX-EDITS.json) distinguish this work from concurrent research. Generated overviews follow the canonical record; no independent-agent acceptance, empirical validation or full presuppositionless completion is claimed.
+
+<a id="constitutive-binding-assessment"></a>
+
+## 10. 完整评估：绑定的构成性根据能完成什么 / Completed assessment of constitutive binding
+
+9 October 2026, Asia/Bangkok. Ren first asked what was missing from presuppositionless grounding, then instructed [“完成它”](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md#complete-binding-grounding). This section supplies the promised affirmative argument, target-preserving rivals and audit of the argument's own resources. It does not reinterpret that instruction as permission to announce a proof that the evidence does not support.
+
+**Assessment:** a fresh designation can institute a reference, and an exhibited retention/insertion can explain a local rule without a separate endorsement premise at every use. This closes the vague demand for an additional external certificate of *every binding as such*. It does **not** establish that every attempted designation succeeds, that concept-constituting rules automatically confer warrant, or that the present reasoning has justified all its own resources without presuppositions. The strict metalogical target remains unmet. The boundary is now an explicit insufficiency of this route, not a request to solve all perception or to keep adding interpreter lemmas.
+
+**Result identity:** [constitutive-binding-assessment](../../../../theories/shengsheng-buxi-generative-existence/results/records/constitutive-binding-assessment.json) migrates and completes the philosophical assessment begun in §§2, 5, 7 and 9. It is not another independent mathematical result. **Reused result:** [binding-preserving-substitution](../../../../theories/shengsheng-buxi-generative-existence/results/records/binding-preserving-substitution.json), plus the unchanged `ReflectiveIdentity`, `RecognitionalBinding` and `InferentialGrounds` checks. **Delta:** separate instituting a reference, successfully executing it, recognizing it and licensing an inference; settle the local explanation and identify the exact stronger passage it cannot yet establish. **New mathematical claims:** none; no new Lean wrapper or compilation is used as a substitute for the missing argument.
+
+### 10.1 Begin with the occurrence and its developing relations
+
+In the present discussion, an inscription is made available, a later expression addresses it, and that connection can be retained, redirected or lost. “Introduction,” “use” and “assessment” select different relationships in this one activity. The account need not first posit an isolated meaning-giver facing an independently constituted meaning-bearer. Conversely, describing the activity as one does not make every attempted connection successful.
+
+For a concrete public designation, fix two displayed labels: **earlier** and **later**. Introduce a fresh local expression, **this section's chosen label**, to designate **earlier**. That introducing act specifies a local use; it does not infer that a previously established expression already had that reference. Now consider a continuation that uses **later** while presenting it as an unchanged use of **this section's chosen label**. The conflicting continuations can be compared against the displayed introduction. No claim that either label describes the world truly is involved.
+
+This example openly uses an existing language and the reader's ability to follow the display. It exhibits a proposal for a reference and an inspectable contrast, not an experiment certifying every reader's uptake. If uptake fails, a relation may have been proposed without being successfully shared. That is a failure of this attempted realization; it does not show that reference always needs a further independently legislating realm.
+
+中文要点：新称谓可以在引入时确定所指。这样的命名不必先证明一个旧名称的所指事实。可是“我规定它指向这里”“这次使用实际接到了这里”和“我已辨明这次使用接对了”仍是同一活动中不同的成就；前一个不能自动冒充后两个。
+
+### 10.2 The affirmative argument, with each step's scope
+
+1. **A fresh local designation can establish a role.** The introduction specifies which occurrence or ground subsequent uses are meant to continue. It does not assert an arbitrary proposition about the designated ground. This is a constitutive account of this local practice, offered through the displayed case; it is not a theorem that any uttered instruction has succeeded.
+2. **An unchanged use retains that role.** In applying the account to an actual use, successful binding must be exhibited or warranted. Once that is the use being made, a second independent endorsement of “this is the designated ground” is not required merely to define the same role again. Redirecting the use changes the relation; it cannot preserve the original role simply by repeating its name.
+3. **Retention need not improve the ground's status.** Under an unchanged content and assessment requirement, re-presenting the retained ground adds no stronger entitlement. The already checked `retained_ground_preserves` and `same_criterion` express this limited point. A bad or merely tentative starting ground remains so. This explains why the identity rule need not be a new demand imposed on a separate object; it articulates continuation of the same support within the judgment.
+4. **Insertion retains the consumer's designated dependence.** A producer supplies the ground at an introduced hypothesis, while nested introductions retain their own roles. The already checked substitution result establishes exactly which semantic agreement follows under its supplied interpretation. This explains the mechanism of local warrant preservation when the hypothetical guarantee and adequate producer are already warranted; it does not originate either warrant.
+5. **The conclusion is local and explanatory.** We have an account of what this rule does, why it does not need an extra endorsement premise on each application, and what would count as a failed application. This is sufficient to answer the previously underspecified demand that every binding must receive another external certificate. It is insufficient to show that the account's entire use of identification, hypothetical reasoning and consequence has no ungrounded commitment.
+
+The argument does not claim that role preservation is an unrestricted moral or epistemic duty. It gives an internal standard for continuing this specified inferential dependence. A participant may openly change the task or assessment; the account must describe that change rather than treat every deviation as meaningless.
+
+### 10.3 Alternatives that preserve the relevant activity
+
+| Rival account | What it preserves | What the comparison establishes |
+|---|---|---|
+| **Relabel the entire display consistently.** | The same introduction/use relations and assessment, with different names. | It preserves the local account; reference does not privilege our spelling or position labels. This is an alternative articulation, not a counterexample. |
+| **Use the newest ground.** | The same available grounds, types and nesting; the use is redirected to a different introduction. | A meaningful alternative task, already witnessed by the capture control. It defeats type-only or name-only fidelity. It does not preserve the particular earlier dependence under examination. |
+| **Retain the ground but require stricter support at the conclusion.** | The same bound content and its support; premise and conclusion have different assessment roles. | The earlier mixed-standard control defeats the claim that binding alone licenses an unchanged entailment relation under every assessment. This opponent is intelligible and retains reference; participation does not force acceptance of the entire proposed logic. |
+| **Same present answer, different dependent source.** | The observed answer in the displayed assignment and the available positions. | The existing equal-value control shows why that observation alone does not identify binding. The added claim of preserved dependence requires more than present numerical or Boolean agreement. |
+| **A convention can constitute any valid rule.** | Actual introduction of a vocabulary and willingness to follow its rules. | The existing introduction/elimination mismatch and Curry controls block unrestricted self-certification at their stated formal scopes. Instituting an expression does not establish that every rule associated with it transfers warrant. |
+| **The successful role is merely defined, so nothing was explained.** | The represented activity and the semantic definition. | Defining the mathematical operation alone would leave actual realization open. The present argument separately locates institution, use and inspection in the displayed activity. Its explanatory gain is limited but real; it does not solve successful uptake by definition. |
+| **Every use of logic in its own explanation is vicious.** | The fact that the explanation uses inference. | This alone does not establish impossibility. Use of a rule and assuming a proposition declaring it valid are different dependencies. The positive entitlement to use it still has to be accounted for; the distinction is not a blanket authorization. |
+
+The comparison does not start with detached freely switchable truth labels. Where a rival changes a relation, the change is specified. Where it retains binding but changes assessment, its genuine consequence for the stronger claim is retained. No omitted semantic or historical relationship is interpreted as evidence for two fundamentally separate realities.
+
+### 10.4 Three routes to the stronger conclusion, actually assessed
+
+**Route A: enact the reference, then infer that the whole account needs no presuppositions.** Enactment can establish a local reference instead of borrowing a fact about an already existing name. The further conclusion does not follow from that accomplishment alone: the current account still relies on identifying the act and explaining its inferential role. Those resources may themselves admit an immanent account, but no such full justification is supplied by the reference's institution. This is not a demand for a previous theorem or an outside judge.
+
+**Route B: whatever constitutes a meaningful expression is inferentially warranted.** This is too broad. A proposed expression can come with rules whose combined use grants unsupported conclusions. The inherited mismatch and self-certification tests supply actual bounds. Our retention construction avoids those specific failures; avoiding them does not establish that every remaining constitutive commitment is fully warranted.
+
+**Route C: a challenge must refer to the claim, therefore the challenger must accept all its rules.** The opponent needs enough reference to address the target. That does not identify their premise/conclusion standards with ours, nor derive induction, unrestricted reuse, classical negation or every hypothetical step. The mixed-standard rival preserves the relevant referential activity while contesting a stronger inferential demand. Accordingly the performative argument supports at most a specified local commitment, not the proposed entire conclusion.
+
+These are assessments of the present routes. They are **not** an impossibility proof covering every future account of presuppositionless grounding. The concrete stopping point is the passage from a successfully instituted and retained referential role to comprehensive entitlement for the metainferences used to explain it. Our current account does not contain that passage.
+
+### 10.5 The argument's own resource audit
+
+| Resource actually used | Role here | Status after this assessment |
+|---|---|---|
+| The occurrence and display of this discussion | Makes a local designation available for inspection. | Presented evidence for this occurrence, not an assertion of universal generative ontology. Reader uptake is not certified. |
+| Linguistic differentiation and contextual reference | Distinguishes the introduction, intended use, actual use and rival. | Used explicitly. A local designation is exhibited; all linguistic competence is not generated from nothing. |
+| “Unchanged” dependence and assessment | Fixes what the local continuation is meant to preserve. | Public scope of the candidate, not an unnoticed universal sameness axiom. Actual applications remain fallible. |
+| Hypothetical application and comparison of rivals | Supports the general explanatory claim and tests its scope. | Used in this argument; no independent premise declaring their reliability is added, but their complete metatheoretic warrant is not proved by this use. |
+| Finite induction, equality and function interpretation | Proves propagation through the supplied formal syntax. | Already checked under Lean's metatheory; the substitution receipt includes six `Quot.sound` dependencies. This is evidence for the formal consequence only. |
+| A distinction between adequate support and an unsupported conclusion | Assesses whether a rule supplies what it purports to supply. | Made explicit within the inferential activity. This assessment is not manufactured by a fresh name or an empty axiom report. |
+
+The absence of a separate premise saying “identity is valid” is a genuine reduction of one kind of assumption. It is not identical to absence of every substantive or inferential commitment. The user asked for the stronger route; we retain that target rather than reporting the weaker reduction as completion.
+
+### 10.6 Primary-source comparison
+
+Carroll's [*What the Tortoise Said to Achilles*](https://www.ditext.com/carroll/tortoise.html), the sequence of added conditionals, was reread. It illustrates why adding another assertion about the transition does not itself perform that transition. We use it to test an endless endorsement demand, not as a proof that our foundational account succeeds.
+
+Boghossian's [*Knowledge of Logic*](https://paulboghossian.com/pb/files/KnowledgeOfLogic.pdf), PDF pp.17–20, distinguishes assuming the conclusion from employing a rule in an account of its validity, and tests unconstrained rule-circular justification against defective inferential rules. This supports our two-part audit: rule use alone is not an impossibility verdict, and permissibility of every self-supporting rule does not follow.
+
+Boghossian's contribution to [*Blind Reasoning*](https://paulboghossian.com/pb/files/BlindReasoning.pdf), PDF pp.1–6 and 17–20, asks what makes inference transmit justification and examines difficulties for entitlement through concept possession. We use these passages as substantive objections to promoting constitution directly into unrestricted warrant. We do not adopt his full epistemology or treat its thinker/content terminology as separate ontological starting points. No claim that these papers settle the disputed foundation is made.
+
+### 10.7 Disposition and completion scope
+
+**Closed local question:** a new reference can have an instituted role, and actual retention/insertion under an unchanged assessment can explain the corresponding local rule without a fresh independent endorsement at every step. No requirement to prove all empirical perception, obtain universal agreement, or certify every possible implementation is imposed on this local explanation.
+
+**Corrected earlier wording:** “the ultimate ground of actual binding is still missing” compressed institution, successful execution, recognition and complete metalogical warrant into one undifferentiated task. We now retire that wording as the next-step label. The local constitutive account has been stated and tested; the known capture and assessment failures remain results, not gates to repeat.
+
+**Unmet stronger target:** the present argument has not justified all of its identificatory and inferential resources without presuppositions. In particular, it supplies no argument establishing why the local reference-making achievement licenses the full metatheoretical means used to generalize and assess it. This is an unresolved explanation in the same activity, not an established external realm or a proof of impossibility. We cannot truthfully announce completion of the requested strict foundation.
+
+**Work completed in this request:** the full candidate argument, substantive rivals, own-resource audit and a definite assessment of its reach. Zero new mathematics; existing checked consequences are reused. Further progress would have to change the stated insufficiency by actually justifying the named metainferential resources, rather than repeating role definitions, substitution proofs or a general claim that disagreement defeats itself.
+
+The [preserved prior editions](development/binding-constitution-before/manifest.json), [scoped evidence checks](BINDING-CONSTITUTION-CHECKS.json) and [owned chain edits](BINDING-CONSTITUTION-INDEX-EDITS.json) record this philosophical continuation without changing any Lean source or frozen mathematical receipt. The review is author counterreview; no independent-agent acceptance or completed zero-presupposition proof is claimed.

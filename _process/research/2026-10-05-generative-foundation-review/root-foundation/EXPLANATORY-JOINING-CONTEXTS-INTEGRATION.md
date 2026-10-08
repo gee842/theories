@@ -202,9 +202,9 @@ Delta: compare different fragment types through role questions; construct a
 Supplied premises / correspondence: ternary joining interpretation; common
   role or slot-command grammar and exact complete question agreement. Incidence
   refinement uses locally finite incident joins and connected declared scope.
-  Retained-reference recovery uses only finite outcomes per fixed input pair.
-Evidence: 42 new Lean declarations, 213 inherited audits, 255 total;
-  frozen receipt 20261008T134016.091055Z. No independent-agent review claimed.
+  Retained-reference recovery uses finite outcomes per fixed input pair and equal initial slot counts.
+Evidence: 43 new Lean declarations, 213 inherited audits, 256 total;
+  frozen receipt 20261008T134730.060831Z. No independent-agent review claimed.
 Boundary: common refinement is mathematical, not proof of identical actual
   provenance. One-position lifting is not fixed-pair lifting. Configuration
   retention is not physical copying or an acquired memory mechanism.
@@ -239,7 +239,7 @@ The constructed span is a common **relational** refinement for this question fam
 
 The attempt to remove fragment names exposes a limitation stronger than a single artificial graph. `units_role_total` proves that, when J has local left/right units, each fragment participates in a join in each role. `units_collapse_open` then constructs an open map to the one-fragment joining relation. Hence `units_same_incidence_questions` proves that **any two fragments of any two such unital joining structures agree on every question of this unanchored incidence language**. No finite-fiber hypothesis is used in this collapse theorem.
 
-This common answer pattern is too weak for the intended full joining explanation. The counterreview uses the already admitted histories of one process. By `trace_has_units`, every admitted history maps to the coarse account. Yet the actual spent history in `budgetProcess` cannot join with itself: its ending condition no longer matches its required beginning. The coarse account allows its one code to self-join. `open_map_does_not_force_pair_lifting` checks this exact failure. The same law's two boundary idles also agree on incidence questions while the inherited anchored boundary probes distinguish them.
+This common answer pattern is too weak for the intended full joining explanation. The counterreview uses the already admitted histories of one process. An actual witness here means a `Trace` admitted by the supplied P, not an empirical observation or a claim that every admissible trace has been physically executed. By `trace_has_units`, every admitted history maps to the coarse account. Yet the actual spent history in `budgetProcess` cannot join with itself: its ending condition no longer matches its required beginning. The coarse account allows its one code to self-join. `open_map_does_not_force_pair_lifting` checks this exact failure. The same law's two boundary idles also agree on incidence questions while the inherited anchored boundary probes distinguish them.
 
 No independent ethical predicate was toggled, and no difference of whole-world cardinality is used. The lost information is an actual continuation failure already witnessed in the same process. The coarse account is exact, even reduced, **for the incidence language**; it is not a sufficient account of the richer fixed-input joining task. The theorem diagnoses an omitted relationship in this representation. It does not refute the generative account or justify declaring the universal programme impossible.
 
@@ -249,9 +249,9 @@ The missing relationship is joint reference. “For this fragment, some compatib
 
 `ExplanatoryJoiningRegisters` represents a finite retained configuration as a list of fragments. A command `(i,j)` selects the two positions **in that same configuration**. A valid response witnesses `J a b z` and appends z; it does not replace the previous entries. Natural-number positions refer to the configuration's own ordering, including positions formed by earlier responses. They are not common native fragment names shared between J and K.
 
-The action and question types are now the same even when F and G differ. Under `FiniteOutcomes K`, `retained_pair_result_matches` proves that equal answers for two configurations force a matched result from the two actual corresponding retained slots. The resulting extended configurations again answer alike. This fixes both inputs before choosing the result; it does not settle them independently after the join. In contrast to the incidence route, only finite outcomes for each fixed input pair are needed.
+The action and question types are now the same even when F and G differ. With equal initial slot counts and `FiniteOutcomes K`, `retained_pair_result_matches` proves that equal answers for two configurations force a matched result from the two actual corresponding retained slots. The resulting extended configurations again answer alike. This fixes both inputs before choosing the result; it does not settle them independently after the join. In contrast to the incidence route, only finite outcomes for each fixed input pair are needed.
 
-With finite outcome fibers on both sides, `retained_history_matches` carries any finite sequence of these formation commands across the comparison. Earlier results can be referenced in later commands, including in more than one subsequent position. `trace_retains_configuration` proves that the final configuration extends the original list rather than rewriting its old references. The same command sequence and an answer-equivalent final configuration are preserved. This generalizes the comparison scope beyond an unshared tree syntax, while keeping it a finite relational formation arrangement.
+With equal initial slot counts and finite outcome fibers on both sides, `retained_history_matches` carries any finite sequence of these formation commands across the comparison. Earlier results can be referenced in later commands, including in more than one subsequent position. `trace_retains_configuration` proves that the final configuration extends the original list rather than rewriting its old references. The same command sequence and an answer-equivalent final configuration are preserved. `trace_length` also proves that one slot is appended per command, so initially aligned slot counts remain aligned. Equal initial counts are explicit; answer agreement alone was not used to infer them. This generalizes the comparison scope beyond an unshared tree syntax, while keeping it a finite relational formation arrangement.
 
 This is **not** a theorem that a resource can be physically copied, that every recorded fragment remains available after consumption, or that a queried arrangement has actually been executed. Whether references denote reusable patterns, retained records, or material conditions with continuing availability must be accounted for in J and the full realization model. The existing joint-support and acquired-record mechanisms remain completed at their own scopes; the current list construction does not redo or supersede them. It also does not establish cycles, infinitely completed formation, probability or a change in the granularity of the basic joining operation.
 
@@ -277,12 +277,172 @@ The substantive inference is conditional on the explanatory undertaking: when th
 
 ## 21. Checked evidence and integration for this continuation
 
-The new sources are [JoiningIncidence](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningIncidence.lean) (9 declarations), [JoiningRefinement](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningRefinement.lean) (11), [JoiningAnchors](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningAnchors.lean) (12) and [JoiningRegisters](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningRegisters.lean) (10). Four scoped result identities distinguish the new correspondence, factor, loss theorem and repair; helpers, adapters and inherited counterexamples are not counted as independent discoveries.
+The new sources are [JoiningIncidence](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningIncidence.lean) (9 declarations), [JoiningRefinement](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningRefinement.lean) (11), [JoiningAnchors](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningAnchors.lean) (12) and [JoiningRegisters](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningRegisters.lean) (11). Four scoped result identities distinguish the new correspondence, factor, loss theorem and repair; helpers, adapters and inherited counterexamples are not counted as independent discoveries.
 
-[Runner](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_explanatory_joining_refinement.py) · [frozen receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-refinement-checks/20261008T134016.091055Z/receipt.json) · [scoped integration checks](EXPLANATORY-JOINING-REFINEMENT-CHECKS.json).
+[Runner](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_explanatory_joining_refinement.py) · [frozen receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-refinement-checks/20261008T134730.060831Z/receipt.json) · [scoped integration checks](EXPLANATORY-JOINING-REFINEMENT-CHECKS.json).
 
-Lean 4.29.1 checks 17 modules and 255 declarations. Inherited: 213 audits, 166 empty / 47 standard. New: 42, 9 empty / 33 standard: 22 only `propext`, 4 `propext` plus `Quot.sound`, 7 also `Classical.choice`. Whole closure: 175 empty / 80 standard. Sources and logs are frozen and hashes are bound to the successful receipt. No custom postulates or proof holes; the general finite-test recovery inherits classical dependencies.
+Lean 4.29.1 checks 17 modules and 256 declarations. Inherited: 213 audits, 166 empty / 47 standard. New: 43, 9 empty / 34 standard: 23 only `propext`, 4 `propext` plus `Quot.sound`, 7 also `Classical.choice`. Whole closure: 175 empty / 81 standard. Sources and logs are frozen and hashes are bound to the successful receipt. The earlier successful 255-audit run remains preserved; the final version explicitly requires and preserves aligned slot counts, with the added length theorem, rather than reading provenance alignment into mere command matching. No custom postulates or proof holes; the general finite-test recovery inherits classical dependencies.
 
 The formal genealogy reuses `branching-tests-bisimulation` through `same_is_bisimulation` / `same_forces_successor_match`, `trace_has_units` and `spend_cannot_self_join`. The earlier joining and question proofs remain unchanged. This is new checked correspondence and scope testing, not a claim to have discovered modal bisimulation, relational incidence representations or a previously unknown general uniqueness principle. The previous primary-source assessment in §§7 and 14 is credited at its recorded reading scope; no new empirical or literature review is claimed this round.
 
 The previous study/chapter content and C30/F22 contributions are retained. The four previous result records retain their claims and proof receipts while their next-connection summaries credit this continuation. Incoming repository navigation and unrelated ethical/inquiry studies retain their own authority and validation scope; rendering their existing metadata does not constitute scientific acceptance of their work.
+
+
+## 22. Operation granularity within one unfolding
+
+**2026-10-09，Asia/Bangkok。** 本轮把“一步／多步”放回同一关系展开：宏步骤由原过程中的有限路径形成，内部位置和相邻宏步骤共享的边界都来自这些路径。没有独立宏观世界、观察主体或另附的正面价值。允许某条接续在中途失效，符合当前 Theory of Becoming 包含维持、形成、转化与终止的范围。
+
+```text
+Reused results: branching-tests-bisimulation; retained-reference-joining-recovery.
+Also reused: Generative.trace_append_iff and the previously checked
+ExplanatoryUniqueness.reduced_exact_kernel (unmigrated generic claim).
+Delta: finite block questions compile to native questions; different program
+expansions admit matched completed histories; retained configurations preserve
+internal formation counts. Singleton coverage connects full/block kernels.
+Counterexample: complete blocks AND all their nonempty prefixes can omit an
+internal loss; no prefix-language formula uniformly translates its question.
+Premises: supplied relational laws, expansion recipes, query vocabulary and
+complete translated-answer agreement; only the receiving side needs finite
+native successors for the one-way matching theorem.
+Output → input: native finite successors → finite block endpoints → existing
+successor matching → histories over different native event words.
+Boundary: correspondence/coverage, variable or unbounded protocols, physical
+execution, probability, concurrent interruptions and universal necessity.
+```
+
+The principal sources are [ExplanatoryGranularity](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGranularity.lean) and [ExplanatoryGranularityBoundary](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGranularityBoundary.lean). The existing [protocol composition](PROTOCOL-COMPOSITION-MATH.md) already connects completed physical blocks and reports with controlled paths, and explicitly retains deadlock and permitted nontermination. It is credited at that scope; we do not count block flattening or “completion may hide failure” as newly discovered general principles. This continuation adds modal question compilation, cross-program answer-based recovery, the prefix-only nontranslation witness and its suffix-at-position repair. The prior primary-source discussion in §§7, 14 and 21 retains its reading scope; this round adds no external literature or empirical acceptance.
+
+## 23. Exact translation and cross-granularity recovery
+
+For a supplied model m and finite recipe `expand : B → List A`, `blocks m expand` admits a b-step exactly when the native process has a trace of `expand b` with the same endpoints. Recipes may differ in native names and lengths across descriptions. They are fixed finite words, not state-dependent protocols or unbounded repetition. An empty recipe denotes the identity trace; no claim assumes every displayed block consumes an event.
+
+`compile_correct` preserves **every** Boolean/modal block question by replacing each block modality with nested native modalities along its recipe. `blocks_trace_iff` flattens successive blocks using their actual common boundary, with no resetting of conditions. These translations need no finite-branching or adequacy premise beyond the defined path semantics. Their recorded Lean dependencies are nevertheless standard logical dependencies, not empty axiom reports.
+
+`finite_trace_endpoints` / `blocks_image_finite` prove that a fixed finite recipe has finitely many endpoints when each native step has finitely many successors. `cross_granularity_history_matches` then needs complete agreement on translated block questions at the initial compared positions and **only finite successors on the receiving side**. Every finite left path described by a block word has a right path with that same block word, possibly a different number of native events, and the endpoint answers still agree. Matching both directions uses the condition on both sides. Agreement at internal positions is not a conclusion of this block theorem.
+
+For retained joining configurations, `retained_block_provenance` proves that the original list remains a prefix and that the number of added references is exactly the number of **internal commands**, not the number of displayed blocks. This closes the finite-block connection to the preceding reference semantics. Across unequal expansions it does not assert one-to-one matching of all internal slots; such a reference translation remains to justify. No physical copying or availability-after-consumption follows.
+
+`singleton_coverage_recovers_questions` supplies one explicit sufficient coverage condition: every native event can also be named as a singleton block. The full native and block question profiles then coincide. `full_and_block_reduced_kernels` connects this equivalence to the old exact/reduced presentation theorem: the two presentations merge exactly the same cases. This is a checked adapter for that broader query repertoire, not another independent uniqueness theorem or a proof that every useful coarse explanation must expose every primitive event. Minimality remains separate from accuracy.
+
+## 24. A connected failure witness stronger than endpoint disagreement
+
+The finite example has a common origin leading to two admitted positions, `risky` and `safe`. From risky, `begin` can reach either `ready` or `blocked`; from safe it reaches ready. Only ready admits `finish`, which reaches done. These are relations in one supplied unfolding. Names describe roles in that law, not independent substances, probabilities or empirical measurements.
+
+Both positions have exactly the same completed `[begin, finish]` endpoint, done, and agree on **all** questions using that completed block. Yet the native question
+
+`after begin (not (after finish top))`
+
+is true at risky and false at safe. It asks whether an admitted formation can reach a position from which the required continuation is unavailable. This keeps the actual intermediate witness and its loss; it is not an arbitrary new failure predicate. `exact_full_accounts_distinguish` proves every account exact for these native questions must distinguish the two positions, without Reduced or finite-branch assumptions.
+
+The stronger counterreview allows both `[begin]` and `[begin, finish]`: all nonempty prefixes of the completed recipe, with arbitrary finite nesting, negation and conjunction. **The two positions still answer every such question alike.** In this repertoire ready and blocked both appear terminal, because neither admits another begin. Merely seeing the prefix has not made finish available as a question at the reached position.
+
+`no_prefix_translation_of_loss` therefore proves there is no formula anywhere in that prefix-only language whose truth uniformly equals the native loss question on the same unfolding. This is a genuine obstruction for a specified proposed translation, not an impossibility claim about all explanations or generative grounding. A rich code may keep extra details: only `reduced_prefix_account_cannot_extend` additionally uses Reduced to show that its already merged encoding cannot acquire an exact full decoder.
+
+## 25. Repair and the next universal inference
+
+Expose `[finish]` as a continuation question **at the position actually reached by `[begin]`**. `resumption_recovers_loss` proves the translated question now distinguishes the same two positions. Prefix and suffix are joined through the same intermediate witness. Checking each independently from an initial point would not establish this connection.
+
+**必要性推进：** 若解释范围包含“已形成的条件还能否承接后续变化”，中间位置及其可续／失续区别就是其所需内容。分节可以改变，步骤数不必相同；但不能把一次形成所到达的位置换成另一个方便的存在见证。所要求的是有后果的关系区别，不是把所有原生身份或事件名称强加给每份说明。
+
+| Author counterreview | Result and limit |
+|---|---|
+| Was the universal answer assumed in “sufficient”? | No universal coverage is proved. The exact query scope is explicit; the concrete native question has an admitted distinguishing witness. |
+| Is an endpoint-success comparison new? | No; earlier protocol work is credited. The new stronger failure survives the entire nonempty-prefix modal language and rules out a uniform formula translation. |
+| Are full-world bijections again demanded? | No; histories with unequal native word lengths can match at declared boundaries. Full/block reduced kernels concern answer distinctions only. |
+| Does compilation infer actual equivalence of two accounts? | No. Intra-model compilation is derived from finite path semantics; cross-account translated-answer agreement remains supplied. |
+| Do completed paths guarantee execution or termination? | No. Timing, probability, resource realization and adverse incomplete histories require their own warranted content. |
+| Does resumption require an already independent observer? | No. It is a relation from the reached position in the same law. Actual access or acquisition by a formed inquirer is a further implementation question. |
+| Does singleton coverage prove it is necessary? | No. It is a transparent sufficient condition, deliberately stronger than needed in some processes. |
+
+The next central connection is a warranted **shared-reference translation at intermediate positions for genuinely different explanatory articulations**, including state-dependent expansion and interruption. A candidate can earn adequacy by recovering the independently relevant continuation/loss questions; it need not duplicate all native events. The now-proved prefix obstruction helps test that candidate. It is not a reason to abandon the universal programme, nor does the finite bridge establish a zero-substantive-premise ontology.
+
+## 26. Checked evidence for finite granularity
+
+[Runner](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_explanatory_granularity.py) · [final frozen receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-granularity-checks/20261008T181446.359434Z/receipt.json) · [owned integration checks](EXPLANATORY-GRANULARITY-CHECKS.json).
+
+Lean 4.29.1: **23 new proof declarations**, including helpers and adapters, plus **256 inherited audits**, **279 total across 19 modules**. New dependencies: 5 only `propext`, 15 `propext` with `Quot.sound`, 3 also `Classical.choice`; no new empty-dependency theorem is claimed. Whole closure: 175 empty / 104 standard. All final modules pass with no warnings, proof holes or custom postulates. Source bytes, compiler logs and checker are hash-bound; prior runs remain historical evidence. This is author verification, not independent-agent acceptance.
+
+Two new canonical result identities separate finite-granularity recovery and the prefix-language boundary. The eight earlier joining records retain their claims, assumptions, aliases and proof bindings; only this authored study continuation, next connection and related links change. Existing chapter sections and C30/F22 contributions remain intact. Unrelated repository changes and pending chain-source reviews are not scientifically accepted by rendering the shared navigation.
+
+
+## 27. Condition-dependent unfolding and a Lean claim contract
+
+**2026-10-09，Asia/Bangkok。Ren 要求继续，同时保证这些都在 Lean 中。** 本轮所有新增数学结论，包括失败见证与修复的充分条件，都有实际编译的 Lean 声明。理论解释、形式对应的实际根据与普遍性未证部分仍分别标明；写入 Lean 不会把给定前提变成已获证明的现实规律。
+
+```text
+Reused: branching-tests-bisimulation, finite-trace-transport, prior native
+Trace and exact-account results. Extend finite-granularity-question-recovery;
+reuse prefix-observation-loss's single connected model, not its proof novelty.
+Delta: finite recipes can test reached conditions, branch, and end early;
+questions compile and boundary histories match. Partial unfolding retains
+remaining recipe plus reached conditions, with exact resumption/completion.
+Stronger partial matching requires common recipe syntax and all native tests,
+not merely agreement on completed macro questions.
+Evidence: ExplanatoryGuardedPrograms (11), ExplanatoryResiduals (13),
+ExplanatoryResumptionCases (11); 35 new declarations / 314 closure audits.
+Boundary: supplied grammar/guards and actual correspondence; no unbounded
+loops, automatic guard acquisition, physical storage or universal necessity.
+```
+
+[Guarded programs](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGuardedPrograms.lean) use skip, native activity, a native question as guard, sequencing and finite choice. Conditions are tested **at the position reached when the guard occurs**. Skip can represent an explicitly selected early ending; it does not erase the preceding history or declare every unfinished path successful. The guard's semantic evaluation has no physical event or cost in this model. Its actual acquisition, reliability and material implementation are not proved by this construction.
+
+[Residuals](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryResiduals.lean) record a remaining recipe and reached native conditions in one unfolding relation. Both change through that relation from a specified initial configuration. They are analytical coordinates, not independently constituted substances. When a native model already includes the material organization specifying what remains, an additional physically separate “program object” is unnecessary; the present representation does not prove otherwise.
+
+## 28. What the guarded extension proves
+
+The recipe-to-question theorem compiles every finite guarded continuation into the existing native modal language. Choice uses a Boolean encoding with classical dependencies disclosed in the receipt. Fixed finite words embed exactly into this grammar. Every execution and every finite recipe history projects to a native trace with the same endpoints; guard and administrative steps are explicitly erased as semantic bookkeeping, not claimed to be free material operations.
+
+Finite native successors imply finite endpoints for each finite recipe, including state-dependent branch selection. Complete translated macro answers at the initial compared positions, together with finite successors on the receiving side, force matching finite recipe histories. The two descriptions may use different native events, words and guarded recipes. Their **macro boundary** answers remain aligned. This does not force all internal residual positions to match.
+
+There is a further stronger, separately scoped theorem: for the **same recipe syntax** and agreement on **all native questions**, receiving-side finite branching matches every partial history, preserving both its residual recipe and all reached-position answers. Thus the internal correspondence is recovered under explicit stronger coverage; it is not inferred from the weaker boundary premise that failed in §24.
+
+## 29. Resumption retains what formed and what remains
+
+A partial path of the residual unfolding is a `Cut`. `cut_resume` proves that executing the actual remaining recipe from the actual reached position completes the original recipe. `execution_iff_completed_cut` proves the converse as well: big-step execution is exactly residual unfolding to skip. Partial paths concatenate, and each has a native history. These statements have empty Lean axiom reports; their supplied process and recipe semantics remain substantive inputs.
+
+If native activity is inserted while a recipe is paused, the new execution must start at the **changed** position. `resumption_after_inserted_history` joins the earlier native prefix, inserted history and actual resumed suffix into one native trace. It deliberately does not call the inserted trace an execution of the uninterrupted original recipe. Whether such insertion is available in an actual implementation is a correspondence obligation.
+
+If the reached position before and after an insertion agrees on all native questions, `same_preserves_resumption` shows that all finite guarded continuation questions agree too, without a finite-branching premise. This is a sufficient preservation condition, not a claim that insertions normally satisfy it. The concrete inserted-activity failure below violates that premise by changing whether finish is possible.
+
+## 30. Three substantive tests in the inherited unfolding
+
+The [cases](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryResumptionCases.lean) reuse the previous origin/risky/safe/ready/blocked/done law. No independent success, loss or value predicate is added.
+
+1. **Testing before formation can select the wrong branch for a reached-position task.** At safe, finish is unavailable; begin reaches ready, where finish is available. The adaptive recipe first begins and then checks, reaching done. Moving that same check before begin instead ends at ready. This is a failure of that particular transformation, not a claim that all early checks are erroneous. `guard_hoisting_sound` gives the positive condition: when the prefix preserves the guard's answer at every admitted endpoint, moving the test earlier preserves the execution relation. From risky, the adaptive recipe may reach either done or blocked; the explicit early-ending branch remains represented.
+2. **Native conditions alone can omit the remaining organization.** One initial choice recipe has two partial paths from the same safe position to the same native ready position, leaving finish pending on one and skip on the other. A continuation question distinguishes them: after executing the remainder, is finish unavailable? Any exact account of these paused-program questions must retain that difference; Reduced is not assumed. This does not exhibit identical complete physical situations with different futures. The native coordinate omitted the residual organization, and the paired configuration retains it.
+3. **Inserted activity can consume a pending continuation.** The same native finish activity takes ready to done. A pending finish was executable at ready and is unavailable at done. The preceding begin/finish native history still exists. The error would be resuming from the stale ready position, not admitting the intervening change or preserving the history.
+
+The proposed invariant is now more precise: an explanation of a particular partial unfolding's continuations must retain the consequential relation between **how that unfolding reached its present conditions and which continuation remains**. This is an inference about the specified query task, supported by the concrete exact-account separation. Its unrestricted applicability to every explanation remains unproved.
+
+## 31. Mathematical claims mapped to actual Lean declarations
+
+All names below are in the three newly checked sources; abbreviations GP, R and C denote `Generative.ExplanatoryGuardedPrograms`, `Generative.ExplanatoryResiduals` and `Generative.ExplanatoryResumptionCases`.
+
+| Claim / 主张 | Checked declarations | Supplied scope / 明示条件 |
+|---|---|---|
+| Guarded continuation and whole-question translation | GP.diamond_correct; GP.compile_correct | Fixed finite grammar; native guard semantics; standard classical Boolean encoding |
+| Earlier fixed words are included; actual native paths are retained | GP.word_program_exact; GP.execution_has_native_trace; GP.program_history_has_native_trace | Native Process and Trace; guards add no represented physical event |
+| Finite endpoints and cross-recipe boundary matching | GP.finite_program_endpoints; GP.program_image_finite; GP.guarded_history_matches | Receiving-side ImageFinite and complete translated boundary-question agreement |
+| Partial execution and exact resumption | R.cut_resume; R.execution_iff_completed_cut; R.cut_trans; R.residual_trace_has_native_trace | The same residual configuration at each join; finite operational paths |
+| Matched intermediate positions with remaining recipe | R.advance_matches; R.partial_history_matches | Same recipe syntax, complete native question agreement, receiving-side finite branching |
+| Inserted history plus resumed suffix; a sufficient preservation condition | R.resumption_after_inserted_history; R.same_preserves_resumption | Actual native inserted path and execution from its endpoint; full Same for the latter |
+| Guard timing failure and sound early testing | C.formation_changes_guard; C.testing_before_formation_changes_results; GP.guard_hoisting_sound | Failure in the inherited law; soundness when all prefix endpoints preserve this guard |
+| Early ending remains an actual admitted result | C.adaptive_risky_exact | The same supplied six-position law and explicit branch recipe |
+| Consequential residual difference forced in exact accounts | C.same_start_reaches_distinct_residuals; C.remaining_program_changes_continuation; C.exact_paused_accounts_retain_remaining_program | Common initial program and native origin; accuracy for paused-program questions, no minimality |
+| Interruption can invalidate resumption while preserving history | C.inserted_activity_can_disable_resumption; C.inserted_activity_changes_native_answers; C.interrupted_history_retained | Same native law; no scheduling, probability or permission guarantee |
+
+The remaining declarations are logical and path adapters; the 35-declaration count is not a count of independent discoveries. `autoImplicit false` is enabled in every new module so mistyped free names cannot silently become theorem parameters.
+
+## 32. Counterreview, scope and checked receipt
+
+**Affirmative connection:** fixed-word expansion has been extended to finite condition-dependent unfolding. Exact partial resumption and partial matching under stronger native coverage now have checked proofs. Actual reached-condition and residual differences produce unavoidable distinctions for the stated explanatory questions.
+
+**Author counterreview:** semantic guard truth is not an acquired sensor; a guard mentioning future possibility may be unavailable to an actual participant. Residual syntax is supplied, even though partial residuals are derived from its unfolding. Administrative steps are not automatically physical microevents. Partial matching assumes common syntax and native question coverage, whereas arbitrary guarded recipes match only their declared boundaries. None of these distinctions establishes separate ontologies. All real blocked/ending/interruption cases remain present. The early-check sufficient condition is not claimed necessary. A richer whole-native representation may already include residual organization and therefore need no extra coordinate.
+
+The earlier [protocol composition](PROTOCOL-COMPOSITION-MATH.md) already retained intermediate states, aborts and nontermination, and earlier exact-account/branch-matching results supply the recovery method. The finite grammar and operational semantics are an explicit formalization for this continuation, not a claim of priority for program semantics. Existing source assessment is credited; no new literature survey, empirical test or independent-agent acceptance is claimed.
+
+[Runner](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_explanatory_resumption.py) · [frozen final receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-resumption-checks/20261008T183544.703004Z/receipt.json) · [owned integration checks](EXPLANATORY-RESUMPTION-CHECKS.json).
+
+Lean 4.29.1 checks **35 new declarations** (11 guarded, 13 residual, 11 cases), **279 inherited audits**, **314 total across 22 modules**. New: 12 empty and 23 standard dependencies, 9 including `Classical.choice`. Full closure: 187 empty / 127 standard. Final checks have no warnings, custom postulates, holes or unsafe shortcuts; source bytes, logs and checker are hash-bound. Prior failed development receipts remain historical and are not acceptance evidence.
+
+**Next inference:** establish warranted translation of residual organization and guard meaning between descriptions whose internal syntax itself differs, including genuinely acquired or physically implemented tests. Existing local acquisition/mechanism results remain available to reuse; their universal correspondence is not presumed. Unbounded iteration, unrestricted interleaving and the zero-substantive-premise universal foundation remain open. This is an explicit remaining bridge, not a new universal impossibility judgment.

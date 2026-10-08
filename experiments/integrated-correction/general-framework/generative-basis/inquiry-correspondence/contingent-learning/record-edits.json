@@ -1,0 +1,59 @@
+{
+  "recorded_at_utc": "2026-10-08T14:40:55.557910+00:00",
+  "scope": "Four owned integration references and next correspondences; one new outcome-level empirical assessment. Existing claims/proofs/receipts preserved.",
+  "edits": [
+    {
+      "id": "acquired-binding-compositional-use",
+      "before_sha256": "536042c95dcff7f28c7efe39f3d177298095dc77cdbb92cbb0a30ecca5a11b47",
+      "after_sha256": "d947f8fe3b5b1852d6bfe44050a6c873fa47cc70d23c34b9ed2f8099b8c3f112",
+      "reviewed_source_changes": [
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+          "before_sha256": "61542640303c7eea14c390f927735c51f0c4cbc4a5162bee67a7185a836af80f",
+          "after_sha256": "23e18baa74db97fe1b1bce544b003bb3c71285ae30948897b36ae7bebaa33fb8"
+        }
+      ]
+    },
+    {
+      "id": "enacted-scene-binding",
+      "before_sha256": "e514ff55670372d11b409a0fad7286e3e46466ce029be37ea1954e672cd52c5c",
+      "after_sha256": "971b5f76b711bc96f60a6fa9ef02a1342d7c4a1467f1471bd654fd878a3dd5ef",
+      "reviewed_source_changes": [
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+          "before_sha256": "61542640303c7eea14c390f927735c51f0c4cbc4a5162bee67a7185a836af80f",
+          "after_sha256": "23e18baa74db97fe1b1bce544b003bb3c71285ae30948897b36ae7bebaa33fb8"
+        }
+      ]
+    },
+    {
+      "id": "encounter-selection-and-revision",
+      "before_sha256": "6c7b7c3956132117d785ff31be4eeb633e12bd346a714f12e865f266df8e71c0",
+      "after_sha256": "d28f5faa0720cfd83b65d624578821251ced472fe08b7f68e183033127633457",
+      "reviewed_source_changes": [
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+          "before_sha256": "61542640303c7eea14c390f927735c51f0c4cbc4a5162bee67a7185a836af80f",
+          "after_sha256": "23e18baa74db97fe1b1bce544b003bb3c71285ae30948897b36ae7bebaa33fb8"
+        }
+      ]
+    },
+    {
+      "id": "naming-attention-coverage",
+      "before_sha256": "5fbf9eee183d852be744ac0a25b8078ac6997f2d5ce8e1c45bdf29dd37eba9f2",
+      "after_sha256": "9ce9c88d7c5fa2c96055a0415f7a8f77cf39db72b9cad105db3eed29bca397df",
+      "reviewed_source_changes": [
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+          "before_sha256": "61542640303c7eea14c390f927735c51f0c4cbc4a5162bee67a7185a836af80f",
+          "after_sha256": "23e18baa74db97fe1b1bce544b003bb3c71285ae30948897b36ae7bebaa33fb8"
+        }
+      ]
+    },
+    {
+      "id": "encounter-control-and-retention",
+      "created": true,
+      "after_sha256": "742cbb27c4b46a1881a06933e3b6dd419bf79e5490f77be5a095622645fa7984"
+    }
+  ]
+}

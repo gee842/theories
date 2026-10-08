@@ -1,0 +1,61 @@
+{
+  "retrieved_at_utc": "2026-10-08T13:57:13.516469+00:00",
+  "sources": [
+    {
+      "file": "valkey-governance-before.md",
+      "url": "https://raw.githubusercontent.com/valkey-io/valkey/4f61034934cf165163ef272e5795bccadc288b09/GOVERNANCE.md",
+      "resolved_url": "https://raw.githubusercontent.com/valkey-io/valkey/4f61034934cf165163ef272e5795bccadc288b09/GOVERNANCE.md",
+      "bytes": 4869,
+      "sha256": "57cb3883d095ed3b688958fc9d99a4fbdaac40adcf72781c6d7b5bade26c9c29"
+    },
+    {
+      "file": "valkey-governance-after.md",
+      "url": "https://raw.githubusercontent.com/valkey-io/valkey/cd6faaa726791447f7adc196b6c77cc20658112d/GOVERNANCE.md",
+      "resolved_url": "https://raw.githubusercontent.com/valkey-io/valkey/cd6faaa726791447f7adc196b6c77cc20658112d/GOVERNANCE.md",
+      "bytes": 6900,
+      "sha256": "3d46eb04264e503da5e97b40146c516437eb862b95d53b66a0a4518457c89829"
+    },
+    {
+      "file": "valkey-pr2927.json",
+      "url": "https://api.github.com/repos/valkey-io/valkey/pulls/2927",
+      "resolved_url": "https://api.github.com/repos/valkey-io/valkey/pulls/2927",
+      "bytes": 18639,
+      "sha256": "1f5ad0678f9cf4c40ed1d5642e6f2dc1855e567fba8ef816674234e0b15ca4fd"
+    },
+    {
+      "file": "valkey-pr2927-reviews.json",
+      "url": "https://api.github.com/repos/valkey-io/valkey/pulls/2927/reviews?per_page=100",
+      "resolved_url": "https://api.github.com/repos/valkey-io/valkey/pulls/2927/reviews?per_page=100",
+      "bytes": 45707,
+      "sha256": "4089ad3a2095e0f764a11fd789bc17dd6ef9b8a6aa5b91c27f0215405885b1c3"
+    },
+    {
+      "file": "valkey-pr2927-comments.json",
+      "url": "https://api.github.com/repos/valkey-io/valkey/issues/2927/comments?per_page=100",
+      "resolved_url": "https://api.github.com/repos/valkey-io/valkey/issues/2927/comments?per_page=100",
+      "bytes": 8038,
+      "sha256": "4e95506f2987135f09c12c7b0eb96e2e0cbcbe15b57bca830ded95c1cf7a5013"
+    },
+    {
+      "file": "valkey-launch.html",
+      "url": "https://www.linuxfoundation.org/press/linux-foundation-launches-open-source-valkey-community",
+      "resolved_url": "https://www.linuxfoundation.org/press/linux-foundation-launches-open-source-valkey-community",
+      "bytes": 92306,
+      "sha256": "3c91cbeac83b3ec281aafba8cfb9b04171ffd63cafe947c1af4099690d295674"
+    },
+    {
+      "file": "tdf-esc2011.html",
+      "url": "https://blog.documentfoundation.org/blog/2011/05/23/the-document-foundation-announces-the-members-of-the-engineering-steering-committee/",
+      "resolved_url": "https://blog.documentfoundation.org/blog/2011/05/23/the-document-foundation-announces-the-members-of-the-engineering-steering-committee/",
+      "bytes": 92690,
+      "sha256": "655ac0df8f08136e108104c29857588d4ae0fe4c88e12dca7e5361ed1d51b746"
+    },
+    {
+      "file": "pentland-feldman2008.pdf",
+      "url": "https://bpb-us-e2.wpmucdn.com/sites.uci.edu/dist/5/1068/files/2013/02/Pentland-and-Feldman-2008-Information-and-Organization.pdf",
+      "resolved_url": "https://bpb-us-e2.wpmucdn.com/sites.uci.edu/dist/5/1068/files/2013/02/Pentland-and-Feldman-2008-Information-and-Organization.pdf",
+      "bytes": 204926,
+      "sha256": "b7a2ec9898a0ad63d76a75cf1728abf3add3f0d773ac26637fdb0a35edd55a25"
+    }
+  ]
+}

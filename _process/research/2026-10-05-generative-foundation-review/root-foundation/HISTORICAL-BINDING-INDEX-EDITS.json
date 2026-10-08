@@ -1,0 +1,399 @@
+{
+  "recorded_at_utc": "2026-10-08T18:33:21.600338+00:00",
+  "scope": "Only M26 paired content/three links and actually read/authored source versions. Other entries, rows, discovery inventory and unreviewed fingerprints preserved.",
+  "before_entry": {
+    "id": "M26",
+    "title_zh": "认知发展与取得的组合解释",
+    "title_en": "Cognitive development and acquired compositional interpretation",
+    "claim_zh": "取得的组合操作进入沟通、分节、绑定及新使用；行动与访问记录改变后续经历。后得来源关系现重释旧命名并进入组合回应。经验覆盖与保留边界、错误确信及历史倒推失败保留，完整认知目标未完成。",
+    "claim_en": "Acquired composition enters communication, grouping, binding and new use; activity and access records change later encounters. Later source learning now reinterprets retained naming and enters compositional response. Empirical coverage/retention limits, mistaken confidence and backward-transfer failure remain; the full cognitive goal is incomplete.",
+    "scope_zh": "取得25项定理／52项审计；构造37／65；传递27／45；分节23／51；绑定23／41；行动场景16／29；经历选择22／46；回溯来源绑定20／36（最新284项继承定理／513项审计分列）。空间、类别、目录、准则、初次巡查与合作命名仍有给定；新组合另要求渠道、校准、路径／扰动范围及向过去的适用性，非完整成本账。经验：36人1,508次命名，三秒467次其他注视而零所指，另45次两者零，五秒前类393次；75人451试次主动−配对−1.34个百分点，95%区间[−10.38,+7.69]不证等效。下一连接为来源—内容保持与历史范围的形成；心理实现、演化及意识未完成。",
+    "scope_en": "Acquisition 25 theorems/52 audits; formation 37/65; transmission 27/45; grouping 23/51; binding 23/41; enacted scenes 16/29; encounter selection 22/46; retrospective source binding 20/36 (latest 284 inherited theorems/513 audits separate). Spatial/category laws, catalogue, criterion, initial surveys and cooperative naming retain supplied premises; the new composition additionally requires channel identity, calibration, route/fault coverage and backward applicability, without complete cost accounting. Empirical: 36 infants/1,508 events, 467 three-second other-without-target gaze cases plus 45 zero on both; 393 former cases at five seconds. For 75 participants/451 trials, Curiosity−Yoked −1.34 percentage points, 95% interval [−10.38,+7.69], not equivalence. Next: formation of source–content retention and historical scope. Psychological realization, evolution and consciousness remain incomplete.",
+    "links": [
+      {
+        "label_zh": "当前理论与完整目标",
+        "label_en": "Account and full objective",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md"
+      },
+      {
+        "label_zh": "论证、证据及反审",
+        "label_en": "Argument, evidence and counterreview",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "形式源码",
+        "label_en": "Formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalAcquisition.lean"
+      },
+      {
+        "label_zh": "实查回执",
+        "label_en": "Checked receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-acquisition-verification.json"
+      },
+      {
+        "label_zh": "Ren 的目标",
+        "label_en": "Ren's objective",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-cognition-learning-evolution-goal.md"
+      },
+      {
+        "label_zh": "连接形成与修复",
+        "label_en": "Formation and repair",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPOSITIONAL-FORMATION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "构造形式源码",
+        "label_en": "Formation formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalFormation.lean"
+      },
+      {
+        "label_zh": "构造实查回执",
+        "label_en": "Formation receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-formation-verification.json"
+      },
+      {
+        "label_zh": "沟通与重构",
+        "label_en": "Communication and reconstruction",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPOSITIONAL-TRANSMISSION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "传递形式源码",
+        "label_en": "Transmission formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean"
+      },
+      {
+        "label_zh": "传递实查回执",
+        "label_en": "Transmission receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-verification.json"
+      },
+      {
+        "label_zh": "取得分节与使用",
+        "label_en": "Acquired grouping and use",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "分节形式源码",
+        "label_en": "Segmentation formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean"
+      },
+      {
+        "label_zh": "分节实查回执",
+        "label_en": "Segmentation receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-verification.json"
+      },
+      {
+        "label_zh": "绑定成果与范围",
+        "label_en": "Binding result and scope",
+        "path": "theories/shengsheng-buxi-generative-existence/results/records/acquired-binding-compositional-use.md"
+      },
+      {
+        "label_zh": "分节成果复用",
+        "label_en": "Grouping result reuse",
+        "path": "theories/shengsheng-buxi-generative-existence/results/records/transition-grouping-word-partition.md"
+      },
+      {
+        "label_zh": "绑定形式源码",
+        "label_en": "Binding formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean"
+      },
+      {
+        "label_zh": "绑定实查回执",
+        "label_en": "Binding receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-binding-verification.json"
+      },
+      {
+        "label_zh": "行动场景与绑定成果",
+        "label_en": "Enacted-scene binding result",
+        "path": "theories/shengsheng-buxi-generative-existence/results/records/enacted-scene-binding.md"
+      },
+      {
+        "label_zh": "行动场景形式源码",
+        "label_en": "Enacted-scene formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean"
+      },
+      {
+        "label_zh": "行动场景实查回执",
+        "label_en": "Enacted-scene receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/enacted-scene-verification.json"
+      },
+      {
+        "label_zh": "经历选择成果",
+        "label_en": "Encounter-selection result",
+        "path": "theories/shengsheng-buxi-generative-existence/results/records/encounter-selection-and-revision.md"
+      },
+      {
+        "label_zh": "经历选择源码",
+        "label_en": "Encounter-selection source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean"
+      },
+      {
+        "label_zh": "经历选择回执",
+        "label_en": "Encounter-selection receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/encounter-choice-verification.json"
+      },
+      {
+        "label_zh": "命名注视经验成果",
+        "label_en": "Naming-gaze empirical result",
+        "path": "theories/shengsheng-buxi-generative-existence/results/records/naming-attention-coverage.md"
+      },
+      {
+        "label_zh": "复算、范围与反审",
+        "label_en": "Reanalysis, scope and counterreview",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/naming-attention/README.md"
+      },
+      {
+        "label_zh": "原始数据与来源",
+        "label_en": "Original data and provenance",
+        "path": "sources/developmental-attention/yu-2021/README.md"
+      },
+      {
+        "label_zh": "控制与保留成果",
+        "label_en": "Control and retention result",
+        "path": "theories/shengsheng-buxi-generative-existence/results/records/encounter-control-and-retention.md"
+      },
+      {
+        "label_zh": "保留复算与反审",
+        "label_en": "Retention reanalysis and review",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/contingent-learning/README.md"
+      },
+      {
+        "label_zh": "原始汇总与纳入来源",
+        "label_en": "Original summaries and inclusion source",
+        "path": "sources/developmental-attention/bazhydai-2026/README.md"
+      },
+      {
+        "label_zh": "回溯来源绑定成果",
+        "label_en": "Retrospective source-binding result",
+        "path": "theories/shengsheng-buxi-generative-existence/results/records/retrospective-source-binding.md"
+      },
+      {
+        "label_zh": "回溯绑定源码",
+        "label_en": "Retrospective-binding source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean"
+      },
+      {
+        "label_zh": "回溯绑定实查",
+        "label_en": "Retrospective-binding receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/retrospective-binding-verification.json"
+      }
+    ]
+  },
+  "updated_entry": {
+    "id": "M26",
+    "title_zh": "认知发展与取得的组合解释",
+    "title_en": "Cognitive development and acquired compositional interpretation",
+    "claim_zh": "取得的组合操作进入沟通、分节、绑定及新使用；行动与访问记录改变后续经历。后得来源关系重释旧命名，日期化证据进一步约束其历史适用范围。经验覆盖与保留边界、错误确信及暂时变化失败保留，完整认知目标未完成。",
+    "claim_en": "Acquired composition enters communication, grouping, binding and new use; activity and access records change later encounters. Later source learning reinterprets old naming, and dated evidence constrains its historical applicability. Empirical coverage/retention limits, mistaken confidence and temporary-change failure remain; the full cognitive goal is incomplete.",
+    "scope_zh": "取得25项定理／52项审计；构造37／65；传递27／45；分节23／51；绑定23／41；行动场景16／29；经历选择22／46；回溯绑定20／36；历史绑定10／36（最新304项继承定理／549项审计分列）。空间、类别、目录、准则、初次巡查与合作命名仍有给定；历史组合要求身份、时序、校准和变化／扰动范围，不提供新成本账或任意长度史。经验：36人1,508次命名，三秒467次其他注视而零所指，另45次两者零，五秒前类393次；75人451试次主动−配对−1.34个百分点，95%区间[−10.38,+7.69]不证等效。下一重点是来源—时序保持与持续性假设的经验识别，分别测当前依赖及回溯认可；心理实现、演化及意识未完成。",
+    "scope_en": "Acquisition 25 theorems/52 audits; formation 37/65; transmission 27/45; grouping 23/51; binding 23/41; enacted scenes 16/29; encounter selection 22/46; retrospective binding 20/36; historical binding 10/36 (latest 304 inherited theorems/549 audits separate). Spatial/category laws, catalogue, criterion, initial surveys and cooperative naming retain supplied premises; historical composition requires identity, chronology, calibration and change/disturbance envelopes, with no new cost account or arbitrary-length history. Empirical: 36 infants/1,508 events, 467 three-second other-without-target gaze cases plus 45 zero on both; 393 former cases at five seconds. For 75 participants/451 trials, Curiosity−Yoked −1.34 percentage points, 95% interval [−10.38,+7.69], not equivalence. Next: empirical identification of source–time retention and persistence assumptions, measuring present reliance and retrospective endorsement separately. Psychological realization, evolution and consciousness remain incomplete.",
+    "links": [
+      {
+        "label_zh": "当前理论与完整目标",
+        "label_en": "Account and full objective",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md"
+      },
+      {
+        "label_zh": "论证、证据及反审",
+        "label_en": "Argument, evidence and counterreview",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "形式源码",
+        "label_en": "Formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalAcquisition.lean"
+      },
+      {
+        "label_zh": "实查回执",
+        "label_en": "Checked receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-acquisition-verification.json"
+      },
+      {
+        "label_zh": "Ren 的目标",
+        "label_en": "Ren's objective",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-cognition-learning-evolution-goal.md"
+      },
+      {
+        "label_zh": "连接形成与修复",
+        "label_en": "Formation and repair",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPOSITIONAL-FORMATION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "构造形式源码",
+        "label_en": "Formation formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalFormation.lean"
+      },
+      {
+        "label_zh": "构造实查回执",
+        "label_en": "Formation receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-formation-verification.json"
+      },
+      {
+        "label_zh": "沟通与重构",
+        "label_en": "Communication and reconstruction",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPOSITIONAL-TRANSMISSION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "传递形式源码",
+        "label_en": "Transmission formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean"
+      },
+      {
+        "label_zh": "传递实查回执",
+        "label_en": "Transmission receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-verification.json"
+      },
+      {
+        "label_zh": "取得分节与使用",
+        "label_en": "Acquired grouping and use",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "分节形式源码",
+        "label_en": "Segmentation formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean"
+      },
+      {
+        "label_zh": "分节实查回执",
+        "label_en": "Segmentation receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-verification.json"
+      },
+      {
+        "label_zh": "绑定成果与范围",
+        "label_en": "Binding result and scope",
+        "path": "theories/shengsheng-buxi-generative-existence/results/records/acquired-binding-compositional-use.md"
+      },
+      {
+        "label_zh": "分节成果复用",
+        "label_en": "Grouping result reuse",
+        "path": "theories/shengsheng-buxi-generative-existence/results/records/transition-grouping-word-partition.md"
+      },
+      {
+        "label_zh": "绑定形式源码",
+        "label_en": "Binding formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean"
+      },
+      {
+        "label_zh": "绑定实查回执",
+        "label_en": "Binding receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-binding-verification.json"
+      },
+      {
+        "label_zh": "行动场景与绑定成果",
+        "label_en": "Enacted-scene binding result",
+        "path": "theories/shengsheng-buxi-generative-existence/results/records/enacted-scene-binding.md"
+      },
+      {
+        "label_zh": "行动场景形式源码",
+        "label_en": "Enacted-scene formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean"
+      },
+      {
+        "label_zh": "行动场景实查回执",
+        "label_en": "Enacted-scene receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/enacted-scene-verification.json"
+      },
+      {
+        "label_zh": "经历选择成果",
+        "label_en": "Encounter-selection result",
+        "path": "theories/shengsheng-buxi-generative-existence/results/records/encounter-selection-and-revision.md"
+      },
+      {
+        "label_zh": "经历选择源码",
+        "label_en": "Encounter-selection source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean"
+      },
+      {
+        "label_zh": "经历选择回执",
+        "label_en": "Encounter-selection receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/encounter-choice-verification.json"
+      },
+      {
+        "label_zh": "命名注视经验成果",
+        "label_en": "Naming-gaze empirical result",
+        "path": "theories/shengsheng-buxi-generative-existence/results/records/naming-attention-coverage.md"
+      },
+      {
+        "label_zh": "复算、范围与反审",
+        "label_en": "Reanalysis, scope and counterreview",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/naming-attention/README.md"
+      },
+      {
+        "label_zh": "原始数据与来源",
+        "label_en": "Original data and provenance",
+        "path": "sources/developmental-attention/yu-2021/README.md"
+      },
+      {
+        "label_zh": "控制与保留成果",
+        "label_en": "Control and retention result",
+        "path": "theories/shengsheng-buxi-generative-existence/results/records/encounter-control-and-retention.md"
+      },
+      {
+        "label_zh": "保留复算与反审",
+        "label_en": "Retention reanalysis and review",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/contingent-learning/README.md"
+      },
+      {
+        "label_zh": "原始汇总与纳入来源",
+        "label_en": "Original summaries and inclusion source",
+        "path": "sources/developmental-attention/bazhydai-2026/README.md"
+      },
+      {
+        "label_zh": "回溯来源绑定成果",
+        "label_en": "Retrospective source-binding result",
+        "path": "theories/shengsheng-buxi-generative-existence/results/records/retrospective-source-binding.md"
+      },
+      {
+        "label_zh": "回溯绑定源码",
+        "label_en": "Retrospective-binding source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/RetrospectiveBinding.lean"
+      },
+      {
+        "label_zh": "回溯绑定实查",
+        "label_en": "Retrospective-binding receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/retrospective-binding-verification.json"
+      },
+      {
+        "label_zh": "历史绑定成果",
+        "label_en": "Historical-binding result",
+        "path": "theories/shengsheng-buxi-generative-existence/results/records/historical-source-binding.md"
+      },
+      {
+        "label_zh": "历史绑定源码",
+        "label_en": "Historical-binding source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean"
+      },
+      {
+        "label_zh": "历史绑定实查",
+        "label_en": "Historical-binding receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/historical-binding-verification.json"
+      }
+    ]
+  },
+  "reviewed_owned_sources": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md": "4099448704dfc13a6a46340e74fdcc0de214c65e2ecf282d70444f862c560eaa",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md": "854eb9bccd03f54234da416dcccae2fd80ba55d8f57b14e5073061b17e6fe7c5",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/HistoricalBinding.lean": "d9acb084e22fd2abb430b0ddf1591514ecdf69e8f3281eff8030d8273a7524bd",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/historical-binding-verification.json": "096fedbaed6c761463fc77feef25016d18a56dc547aec74b525eda57bb9ba4f0",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/check_historical_binding.py": "5d8b142d68883385b8eb8f701b614a81a4e3561172c8bf176a401bea98713bb6",
+    "theories/shengsheng-buxi-generative-existence/results/records/acquired-binding-compositional-use.json": "2173705a8492d0a3b2de34583a683abfefcfc9c6da15e080f008ca36db9277cb",
+    "theories/shengsheng-buxi-generative-existence/results/records/acquired-binding-compositional-use.md": "b972e03b2e87352edb0174d2f3041333bb3e4a642e651115a7b7fa41e914d889",
+    "theories/shengsheng-buxi-generative-existence/results/records/enacted-scene-binding.json": "65079f09b03e5ecd9914e28e667d625a05527fc70158a29d48e20e69511b81a8",
+    "theories/shengsheng-buxi-generative-existence/results/records/enacted-scene-binding.md": "9c77029e254be1b8667010e223bb0209a054b9e177b4c86479a8c3999be5a04f",
+    "theories/shengsheng-buxi-generative-existence/results/records/encounter-selection-and-revision.json": "970b08f886c58f1904091e02159a79536afd0914b46725c6f9487d3f25a722c9",
+    "theories/shengsheng-buxi-generative-existence/results/records/encounter-selection-and-revision.md": "1ebdb129eef75ceb2ca8ecb3a4dec8c5d72bcca364a458900ff8236a7ff4db54",
+    "theories/shengsheng-buxi-generative-existence/results/records/naming-attention-coverage.json": "7944523f6b00ce66be61af39ddb09ffd333ac9d53bfbbbeb6bf4f67fefcfaf5c",
+    "theories/shengsheng-buxi-generative-existence/results/records/naming-attention-coverage.md": "29419cf94b3bb37f390a4d1f5a85592218edc74b620481b3aa494c2965d2c779",
+    "theories/shengsheng-buxi-generative-existence/results/records/encounter-control-and-retention.json": "cc70fca698d648b386d2a0f907da449960fb025ffe5c33bdacf7a438570c6cac",
+    "theories/shengsheng-buxi-generative-existence/results/records/encounter-control-and-retention.md": "584669bc3b49bc52f49d3dde5c57571c2513627824abb312d9897b2fc5a43838",
+    "theories/shengsheng-buxi-generative-existence/results/records/retrospective-source-binding.json": "d61fee6f37a5b580bc2a17255a1f475a7e518b7da9e5cb411e251065ec809ac0",
+    "theories/shengsheng-buxi-generative-existence/results/records/retrospective-source-binding.md": "97947b0ce5490af40dffbf83c04b2663c9af66368384d343bcda931c1a6be523",
+    "theories/shengsheng-buxi-generative-existence/results/records/historical-source-binding.json": "fc9781bad3e9fc7a64170569f0371ddc219a48dcad62e63312da9b3b285af214",
+    "theories/shengsheng-buxi-generative-existence/results/records/historical-source-binding.md": "b403d2a3cacbc620200cb109fa4945dbe14a6f4479559eab5840ab44b0315bb4"
+  },
+  "before_data_sha256": "edcdfc25c4734812797496be239393f173647b4047ebed29465ba86547c90682",
+  "after_data_sha256": "9714ae2f0b005bab89447ffbd96402622636aa1fdd8784834d1aeebf173ccf76",
+  "before_table_sha256": "d5edc8b2f7d8ccb3c9d1bf4c557b0a3fa4677f1b195b56091b6af76aea664c1e",
+  "after_table_sha256": "f48613a92d39c5c653aabd3b1dd5e870ecf50594ebae2b4b8febd30aebb839e6",
+  "preserved_other_entries": 93,
+  "preserved_non_M26_rows": true
+}

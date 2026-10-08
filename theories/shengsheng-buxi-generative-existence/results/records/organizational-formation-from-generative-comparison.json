@@ -8,7 +8,7 @@
   "kind": "argument",
   "status": "reviewed-scoped",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-08T13:33:43.527041+00:00",
+  "reviewed_at_utc": "2026-10-08T18:34:30.570680+00:00",
   "claim": {
     "zh": "在有限非空的合格接续中，若每种缺少某项组织关系的接续都有充分更好的合格构造，则所有未被击败的选择都包含该关系；这可支持建设或增强共同能力而不预定唯一承载。",
     "en": "In a finite nonempty eligible range, if every continuation lacking an organizational relation has a strictly better eligible construction, every undefeated choice includes that relation. This can warrant building or strengthening shared capacity without fixing one carrier."
@@ -106,7 +106,7 @@
     {
       "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
       "role": "provenance",
-      "sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+      "sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f",
       "declarations": []
     }
   ],
@@ -131,6 +131,10 @@
     {
       "zh": "2026-10-08：核对原理论与研究为保留前缀、共享指示的逆向保留及市场会话新增范围后，接入分类稳健后续并缩小 next_delta；原定理及历史回执不改写。",
       "en": "2026-10-08: verified original theory/study prefixes, inverse preservation of the shared directive and the concurrent market-session scope; connected robust classification and narrowed next_delta. Original theorems and receipts are unchanged."
+    },
+    {
+      "zh": "2026-10-09：逐项核读共享指示中新增的“接续部分纠正与临界反馈”，并验证此前已审字节完整保留为前缀。新增指示属于市场／元吸引子会话，不改变本成果的 G0/J、分类或组织形成范围。更新该来源的审阅指纹；主张、前提、证明绑定、反例与验证状态保持不变，无新定理或重新验收。",
+      "en": "2026-10-09: reviewed the appended partial-correction and critical-feedback directive and verified that all previously reviewed bytes remain an unchanged prefix. The addition belongs to the market/meta-attractor session and does not change this result’s G0/J, classification or organizational-formation scope. Updated this source-review fingerprint; claims, hypotheses, proof bindings, counterexamples and validation status are unchanged, with no new theorem or renewed scientific acceptance."
     }
   ]
 }

@@ -1,0 +1,495 @@
+{
+  "checked_at_utc": "2026-10-08T18:16:21.825999+00:00",
+  "status": "passed",
+  "repository_checks": [
+    {
+      "command": "make research-check",
+      "exit_code": 2,
+      "report": {
+        "records": 53,
+        "selected_records": [
+          "acquired-binding-compositional-use",
+          "aggregate-exit-funding",
+          "alignment-direction-g0-j",
+          "assured-route-criterion",
+          "branching-target-uniqueness",
+          "branching-tests-bisimulation",
+          "classification-robust-generative-comparison",
+          "code-plan-global-support",
+          "conditional-foundation-assessment",
+          "derivation-soundness",
+          "enacted-scene-binding",
+          "encounter-control-and-retention",
+          "encounter-selection-and-revision",
+          "exclusive-footprint-support",
+          "fallible-witness-diagnosability",
+          "finite-basis-common-interpretation",
+          "finite-continuation-plans",
+          "finite-fallible-inquiry-necessity",
+          "finite-joining-tree-lifting",
+          "finite-trace-transport",
+          "fulfillment-chance-floor",
+          "functional-joining-common-structure",
+          "growth-constrained-fragmentation",
+          "incidence-common-refinement",
+          "joining-open-map-factor",
+          "joining-questions-survive-encoding",
+          "joint-code-plan-lifting",
+          "joint-decomposition-lifting",
+          "joint-plan-composition",
+          "joint-target-uniqueness",
+          "market-partial-correction-boundary",
+          "market-protected-continuation",
+          "market-supported-finite-transition",
+          "material-preparation-output",
+          "multivalued-joining-common-structure",
+          "naming-attention-coverage",
+          "open-form-realization-under-revision",
+          "organizational-formation-from-generative-comparison",
+          "organizational-rule-inheritance",
+          "positive-ground-open-futures",
+          "practical-judgment-g0-j",
+          "recurrent-chain-assembly",
+          "relational-generative-comparison",
+          "retained-reference-joining-recovery",
+          "retrospective-source-binding",
+          "risk-certificate-outcome-distinction",
+          "scientific-inquiry-foundation",
+          "situated-recovery-empirical-correspondence",
+          "trace-law-equivalence",
+          "transition-grouping-word-partition",
+          "unanchored-incidence-collapse",
+          "universal-practical-warrant",
+          "wisdom-root"
+        ],
+        "errors": [],
+        "source_drift": [
+          {
+            "id": "classification-robust-generative-comparison",
+            "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+            "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+            "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+          },
+          {
+            "id": "organizational-formation-from-generative-comparison",
+            "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+            "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+            "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+          }
+        ],
+        "unrelated_source_drift": [],
+        "scope": "Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation."
+      }
+    },
+    {
+      "command": "python3 -B tools/research/research.py check --ids organizational-rule-inheritance",
+      "exit_code": 0,
+      "report": {
+        "records": 53,
+        "selected_records": [
+          "organizational-rule-inheritance"
+        ],
+        "errors": [],
+        "source_drift": [],
+        "unrelated_source_drift": [
+          {
+            "id": "classification-robust-generative-comparison",
+            "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+            "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+            "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+          },
+          {
+            "id": "organizational-formation-from-generative-comparison",
+            "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+            "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+            "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+          }
+        ],
+        "scope": "Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation."
+      }
+    }
+  ],
+  "scope": "Conceptual/correspondence correction; unchanged existing proof bindings, original primary PDF, owned references, six requirement rows and C14 rendering. No new Lean run, theorem, formal adapter, empirical reanalysis or whole-repository certification.",
+  "new_theorems": 0,
+  "new_result_identities": 0,
+  "proof_bindings": [
+    {
+      "module": "GenerativeCore",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "existing_source_receipt_log_snapshot_match": true
+    },
+    {
+      "module": "SystemsOrganization",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SystemsOrganization.lean",
+      "source_sha256": "fd9622e4b76602f4f97bc9290798d01b4a7c2f3925023c268f5d3fb75e3dbf8b",
+      "existing_source_receipt_log_snapshot_match": true
+    },
+    {
+      "module": "FeedbackDynamics",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/FeedbackDynamics.lean",
+      "source_sha256": "9a6f8adcbf9ba4afc783fbb81d3ec1e16e34e4886d7ebcbe422657d83e35d51d",
+      "existing_source_receipt_log_snapshot_match": true
+    },
+    {
+      "module": "SymbolicDynamics",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SymbolicDynamics.lean",
+      "source_sha256": "f5da626efd96f712791c86552cd2662889dd8f2b1ecfba2f1249e1f5d10afa14",
+      "existing_source_receipt_log_snapshot_match": true
+    },
+    {
+      "module": "SystemsComplexity",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SystemsComplexity.lean",
+      "source_sha256": "b4cc368512489db9624c84aba96a6ecf6ec89cd140c13f7393d36f1abddbf028",
+      "existing_source_receipt_log_snapshot_match": true
+    },
+    {
+      "module": "OrganizationalRuleInheritance",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/OrganizationalRuleInheritance.lean",
+      "source_sha256": "a124e377584bf560977cd4e9410646129fff1f18f91cfd853fa26ae427708234",
+      "existing_source_receipt_match": true
+    }
+  ],
+  "systems_primary_pdf_matches": true,
+  "relative_links_checked": 125,
+  "six_requirements_unchanged": true,
+  "c14_matches": true,
+  "whole_chain_render_matches": true,
+  "shared_chain_validation_pending": [
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/multivalued-joining-common-structure.json",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/incidence-common-refinement.json",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/retained-reference-joining-recovery.json",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/organizational-formation-from-generative-comparison.md",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/situated-recovery-empirical-correspondence.md",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/transition-grouping-word-partition.md",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/multivalued-joining-common-structure.json",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/incidence-common-refinement.json",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/retained-reference-joining-recovery.json"
+  ],
+  "errors": [],
+  "source_hashes": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md": "9ca5b982bfa943be0879da7a9c08a86d1e597e1b47649241893a4537829f0580",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md": "818d62498d6a16f1f747399e3677c6a2d0c500a5b7734d180b08de77738dda35",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md": "80263f7681709dc506961dd81708d83c18bb635a73eea44bebac826a8099ef0e",
+    "sources/15-codex-theory-conversations/2026-10-09-systems-subsystems-evolution.md": "51670ed6e712faea27c7fac5f49f9e0a39de1fbdad2f5f58f1e82278362e9f58",
+    "sources/evolutionary-selection/organizational-inheritance/SYSTEMS-READING.md": "d078415840e3b41679073b7405a2ff7f949c9b971fca321737e00fb46968920d",
+    "theories/shengsheng-buxi-generative-existence/results/records/organizational-rule-inheritance.json": "64c1f5d96507c505869ed0624f52f696e6d663de43f02bdb536c720969137a51",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/verification.json": "b63d7ee11df965310e6632dc68a4b0d1d4cc6600fa0317dbbb9f06e7b0284411",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/organizational-rule-inheritance-verification/verification.json": "d501af23cd3b31ba9420d1f702d99e49be8a6241b336f5cef18553b4c6f8f2fe"
+  },
+  "subsequent_revisions": [
+    {
+      "description": "Ren’s further structure/dynamics wording correction; no new theorem or result identity.",
+      "edited_at_utc": "2026-10-08T18:21:59.652934+00:00",
+      "other_entries_preserved": true,
+      "other_entry_count": 93,
+      "c14_scope_before": "Preserves 16/26, 19/41, 7/13 and 6/6 theorem/audit results and counterexamples; seven new local-balance theorems / eleven audits pass. The 54 videos/18 technical replicates, 33/190 sensitivity, 3,808 records/3,600 links, 42/72 versus 7/72, 3,424 forecasts and 139-cohort/485-row checks retain their scopes. Eight growth and two competition summaries cannot become cycle probabilities. Initial absence versus later loss, joint calibration, broad comparison and support renewal remain open. Four original movies are preserved and 44 selected-frame correspondences pass; frames are not replicates. Exact genotype attribution, acquisition timing and linked descendants remain incomplete; no cycle probability is fitted. The new direction assessment is complete; ecological scaffolding, endogenization and evolutionary connectionism are strong comparators. Superiority is unestablished, with no new forecast or theorem. New checks cover 45 cultures/11 dated cohorts, preserving a 784-versus-769 count ambiguity and numerical capacity failure; event integration is an explicit model adaptation. The focused account is complete at the selected scope: 20 new Lean theorems / 44 new declaration audits / 113 closure audits. Finite-history inheritance and reconstruction do not establish invasion stability or indefinite renewal; primary interventions and strong comparators are assessed, while broad superiority remains unestablished. New checks cover 4,383 directory entries, 388 timestamps, 114 first/last image records and two complete pixel fields; scene offsets reach 225.89 seconds and the restart gap is 337.39 seconds. Treatment/endpoint identity, interior trajectories and six-day descendants remain unjoined; no new theorem. Eleven new Lean theorems / 24 new audits and 34,768 executed comparisons establish equivalence under matched laws, not Watson-model replication or an empirical win. The direct comparison is closed; independently constrained joint empirical prediction remains open. The theoretical integration and author counterreview are complete, with no new theorem. Internal premise reduction is distinct from demonstrated comparative economy; the ethical extension discloses G0 and further commitments. Empirical calibration is not this task’s theoretical completion gate; broad superiority remains unestablished. New checks cover 91 image subblocks and 23,855,104 crop pixels, preserving detection and movement sensitivity. Four longest assigned tracks include local-loss candidates and a still-visible boundary object; no collapse rate, descendant join or new theorem is asserted. Twenty-eight new Lean theorems / forty audits cover finite-history bounds and conditional identification. Mesoscopic production, routing and transmission remain supplied, not derived from cell events. Conventional life-cycle models retain full credit; the then-pending connectionist recovery is addressed below, while broad superiority remains open. Twenty-nine new Lean theorems / 41 declaration audits pass under explicit developmental and selection laws. Finite adverse cases and supplied native laws, initial states and mutation/transmission premises remain. The named directional recovery is complete; memory, interference and continued revision across patterns were its selected continuation. No new empirical prediction or broad novelty is claimed. Thirty-seven new Lean theorems / fifty-seven audits pass, with 166 closure audits. The finite programme connection is complete; trial success, copying, mature output and renewal remain supplied. A separate-averages approximation has an opposite growth sign; the equally informed conventional mechanism agrees. No new empirical result or broad superiority is claimed. The developmental-memory connection now has 28 new Lean theorems / 44 new declaration audits, with 41 inherited audits separately rebuilt; ambiguous-cue failure is preserved. Scope is sign recall with self-interactions and full-decay tanh. Adapted training profiles, proposals, step size, schedule and readout horizons remain explicit. The bounded multi-pattern memory connection is complete; interference consequences entering update-rule formation or revision were its selected continuation. Capacity, amplitude convergence, biological applicability and full-theory completion are not claimed. The contact reconstruction connection adds 30 Lean theorems / 57 new audits, with 223 closure audits. It replaces the independent success rate and parental bond flag in this construction without reusing the old offspring formula. Compatibility, uniform replacement sampling, partition formation and mature-stage provision remain explicit. A one-cycle comparison is not invasion; partition formation/cost and a population interface retaining seed distinctions are next. Strong spatial models retain full credit. Consequence-dependent updater replacement adds 36 Lean theorems / 57 new audits, with 85 inherited audits separately rebuilt. One-step full-profile readout, two available rules, faithful success, construction and support laws remain explicit. Failed old-rule replacement, no gain on unchanged tasks, extra cost, false reports and source exhaustion are preserved. This finite replacement connection is complete; construction of the responsive rule and reliable access from local relations was its selected continuation, with no population-frequency, ethical-necessity or broad-superiority claim. Material maturation adds 28 Lean theorems / 44 new audits, with 267 closure audits. The finite preparation connection is complete; return follows from actual composition-dependent growth and routing. Production laws, routing recipe/capabilities, slot geometry, partition formation and supplies remain explicit. Primary comparison is not replication or superiority. Formation, inheritance and revision of reproductive recipes and partitions are next; completed material preparation is reused. Acquired discrimination and updater construction add 30 Lean theorems / 59 new audits, with 142 inherited audits separately rebuilt. Stable nonzero affine channels, bound references, component laws, an assembly plan and ten extra construction units/four parts at entrance remain explicit. Missing contact, constant channels, underfunding and altered transfer are preserved. This local correspondence is complete; maintaining reference-to-use correspondence through change was its selected continuation. Generic calibration/formation results are not reopened; no population, ethical or broad-superiority conclusion follows. Reference renewal adds 34 Lean theorems / 50 new audits, with 201 inherited audits separate. Actual six-reading comparison and supported commitment replace a correct change alarm. Seven units per block suffice; common within-block relations, bound references, the exact affine class and inspection schedule remain explicit. Zero-only checks, six-unit revision failure, constant channels, late change, mixed references and nonaffine aliasing retain limits. This finite inspection connection is complete; actual maintenance or bounded departure of reference-to-use relations was its selected continuation, with no self-funding, universal-reliability or evolutionary-superiority claim. Growth-to-fragmentation adds 31 Lean theorems / 59 new audits, with 326 closure audits separated. The formerly assigned partition is derived in this bounded construction. Developmental schedule, differentiation, fracture occurrence, catalytic correspondence and finite support remain explicit. The common eight-slot preparation requires the whole pool with no excess and does not regenerate either grown graph. Reconstruction/transmission of operative growth and retention relations with responsive fracture is next; completed finite fragmentation and maturation are not reopened. Primary biophysical and spatial accounts retain credit; no broad superiority follows. Bounded change adds 42 Lean theorems / 56 new audits, with 251 inherited audits separate. Coherent exact initial references, initially nonzero gain, the affine class, actual change/noise bounds and the new functional gate remain supplied. Age counts change steps; no new physical gate or support account is derived. The finite-history connection is complete. Understated bounds can falsely certify success, broad valid bounds can retain actual damage, and zero age retains a noise term. Next connect applicable envelope formation/maintenance to supported renewed inquiry after lost decisiveness; general calibration is not reopened and no universal ethical, population or theoretical superiority is asserted. Recurrent chain formation adds 31 theorems / 47 new audits, with 326 inherited declarations separate in the 373-audit closure. Preparation now joins repeatable structure in one fixed-law class. Activation costs eight extra support units; g rounds from one complete chain require 8(2^g−1) extra components and 9(2^g−1) support. Compatibility, the size-eight cleavage domain, operation order, no unrepresented load-bearing edges and feed remain explicit; the old branched class is not rebuilt. Heritable differences in organizing laws and their formation/selection are next; completed finite continuation is reused. Mechanics, autonomous feed and comparative superiority remain unproved. The social protocol adds 29 theorems / 53 audits with 81 in the actual closure; seed authority, recognition, copying and higher rules are supplied, with no propagation advantage or ethical warrant proved. This is an interpretation/correspondence correction to the existing result, reusing checked systems criteria and a strong system-dynamics comparison; no new theorem or result identity.",
+      "c14_scope_after": "Preserves 16/26, 19/41, 7/13 and 6/6 theorem/audit results and counterexamples; seven new local-balance theorems / eleven audits pass. The 54 videos/18 technical replicates, 33/190 sensitivity, 3,808 records/3,600 links, 42/72 versus 7/72, 3,424 forecasts and 139-cohort/485-row checks retain their scopes. Eight growth and two competition summaries cannot become cycle probabilities. Initial absence versus later loss, joint calibration, broad comparison and support renewal remain open. Four original movies are preserved and 44 selected-frame correspondences pass; frames are not replicates. Exact genotype attribution, acquisition timing and linked descendants remain incomplete; no cycle probability is fitted. The new direction assessment is complete; ecological scaffolding, endogenization and evolutionary connectionism are strong comparators. Superiority is unestablished, with no new forecast or theorem. New checks cover 45 cultures/11 dated cohorts, preserving a 784-versus-769 count ambiguity and numerical capacity failure; event integration is an explicit model adaptation. The focused account is complete at the selected scope: 20 new Lean theorems / 44 new declaration audits / 113 closure audits. Finite-history inheritance and reconstruction do not establish invasion stability or indefinite renewal; primary interventions and strong comparators are assessed, while broad superiority remains unestablished. New checks cover 4,383 directory entries, 388 timestamps, 114 first/last image records and two complete pixel fields; scene offsets reach 225.89 seconds and the restart gap is 337.39 seconds. Treatment/endpoint identity, interior trajectories and six-day descendants remain unjoined; no new theorem. Eleven new Lean theorems / 24 new audits and 34,768 executed comparisons establish equivalence under matched laws, not Watson-model replication or an empirical win. The direct comparison is closed; independently constrained joint empirical prediction remains open. The theoretical integration and author counterreview are complete, with no new theorem. Internal premise reduction is distinct from demonstrated comparative economy; the ethical extension discloses G0 and further commitments. Empirical calibration is not this task’s theoretical completion gate; broad superiority remains unestablished. New checks cover 91 image subblocks and 23,855,104 crop pixels, preserving detection and movement sensitivity. Four longest assigned tracks include local-loss candidates and a still-visible boundary object; no collapse rate, descendant join or new theorem is asserted. Twenty-eight new Lean theorems / forty audits cover finite-history bounds and conditional identification. Mesoscopic production, routing and transmission remain supplied, not derived from cell events. Conventional life-cycle models retain full credit; the then-pending connectionist recovery is addressed below, while broad superiority remains open. Twenty-nine new Lean theorems / 41 declaration audits pass under explicit developmental and selection laws. Finite adverse cases and supplied native laws, initial states and mutation/transmission premises remain. The named directional recovery is complete; memory, interference and continued revision across patterns were its selected continuation. No new empirical prediction or broad novelty is claimed. Thirty-seven new Lean theorems / fifty-seven audits pass, with 166 closure audits. The finite programme connection is complete; trial success, copying, mature output and renewal remain supplied. A separate-averages approximation has an opposite growth sign; the equally informed conventional mechanism agrees. No new empirical result or broad superiority is claimed. The developmental-memory connection now has 28 new Lean theorems / 44 new declaration audits, with 41 inherited audits separately rebuilt; ambiguous-cue failure is preserved. Scope is sign recall with self-interactions and full-decay tanh. Adapted training profiles, proposals, step size, schedule and readout horizons remain explicit. The bounded multi-pattern memory connection is complete; interference consequences entering update-rule formation or revision were its selected continuation. Capacity, amplitude convergence, biological applicability and full-theory completion are not claimed. The contact reconstruction connection adds 30 Lean theorems / 57 new audits, with 223 closure audits. It replaces the independent success rate and parental bond flag in this construction without reusing the old offspring formula. Compatibility, uniform replacement sampling, partition formation and mature-stage provision remain explicit. A one-cycle comparison is not invasion; partition formation/cost and a population interface retaining seed distinctions are next. Strong spatial models retain full credit. Consequence-dependent updater replacement adds 36 Lean theorems / 57 new audits, with 85 inherited audits separately rebuilt. One-step full-profile readout, two available rules, faithful success, construction and support laws remain explicit. Failed old-rule replacement, no gain on unchanged tasks, extra cost, false reports and source exhaustion are preserved. This finite replacement connection is complete; construction of the responsive rule and reliable access from local relations was its selected continuation, with no population-frequency, ethical-necessity or broad-superiority claim. Material maturation adds 28 Lean theorems / 44 new audits, with 267 closure audits. The finite preparation connection is complete; return follows from actual composition-dependent growth and routing. Production laws, routing recipe/capabilities, slot geometry, partition formation and supplies remain explicit. Primary comparison is not replication or superiority. Formation, inheritance and revision of reproductive recipes and partitions are next; completed material preparation is reused. Acquired discrimination and updater construction add 30 Lean theorems / 59 new audits, with 142 inherited audits separately rebuilt. Stable nonzero affine channels, bound references, component laws, an assembly plan and ten extra construction units/four parts at entrance remain explicit. Missing contact, constant channels, underfunding and altered transfer are preserved. This local correspondence is complete; maintaining reference-to-use correspondence through change was its selected continuation. Generic calibration/formation results are not reopened; no population, ethical or broad-superiority conclusion follows. Reference renewal adds 34 Lean theorems / 50 new audits, with 201 inherited audits separate. Actual six-reading comparison and supported commitment replace a correct change alarm. Seven units per block suffice; common within-block relations, bound references, the exact affine class and inspection schedule remain explicit. Zero-only checks, six-unit revision failure, constant channels, late change, mixed references and nonaffine aliasing retain limits. This finite inspection connection is complete; actual maintenance or bounded departure of reference-to-use relations was its selected continuation, with no self-funding, universal-reliability or evolutionary-superiority claim. Growth-to-fragmentation adds 31 Lean theorems / 59 new audits, with 326 closure audits separated. The formerly assigned partition is derived in this bounded construction. Developmental schedule, differentiation, fracture occurrence, catalytic correspondence and finite support remain explicit. The common eight-slot preparation requires the whole pool with no excess and does not regenerate either grown graph. Reconstruction/transmission of operative growth and retention relations with responsive fracture is next; completed finite fragmentation and maturation are not reopened. Primary biophysical and spatial accounts retain credit; no broad superiority follows. Bounded change adds 42 Lean theorems / 56 new audits, with 251 inherited audits separate. Coherent exact initial references, initially nonzero gain, the affine class, actual change/noise bounds and the new functional gate remain supplied. Age counts change steps; no new physical gate or support account is derived. The finite-history connection is complete. Understated bounds can falsely certify success, broad valid bounds can retain actual damage, and zero age retains a noise term. Next connect applicable envelope formation/maintenance to supported renewed inquiry after lost decisiveness; general calibration is not reopened and no universal ethical, population or theoretical superiority is asserted. Recurrent chain formation adds 31 theorems / 47 new audits, with 326 inherited declarations separate in the 373-audit closure. Preparation now joins repeatable structure in one fixed-law class. Activation costs eight extra support units; g rounds from one complete chain require 8(2^g−1) extra components and 9(2^g−1) support. Compatibility, the size-eight cleavage domain, operation order, no unrepresented load-bearing edges and feed remain explicit; the old branched class is not rebuilt. Heritable differences in organizing laws and their formation/selection are next; completed finite continuation is reused. Mechanics, autonomous feed and comparative superiority remain unproved. The social protocol adds 29 theorems / 53 audits with 81 in the actual closure; seed authority, recognition, copying and higher rules are supplied, with no propagation advantage or ethical warrant proved. This is an interpretation/correspondence correction to the existing result, reusing checked systems criteria and a strong system-dynamics comparison; no new theorem or result identity. The refined description identifies continuation, order and participation: one activity may realize repair and learning, and neither displacement language nor training-session counts establish capability change.",
+      "read_authored_source_hashes": {
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md": "a16644d8f5dfed149ec6b5c6b29256d492e38e48a38400c22d5344c1fb658a08",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md": "52cfe1085524073f229fec6a52c88a014735be84d50a2bb1c6a614f395413f3e",
+        "sources/15-codex-theory-conversations/2026-10-09-systems-subsystems-evolution.md": "ca84e13960e6127fe12fe5511afe33be91d65422a7c7a727169593e3e1c684da",
+        "theories/shengsheng-buxi-generative-existence/results/records/organizational-rule-inheritance.json": "e620a728b7e955ffa2ffd3bb6a227dbfea3b036d809a5be2bd8d29930af5785c"
+      },
+      "render": {
+        "exit_code": 2,
+        "report": {
+          "records": 60,
+          "selected_records": [
+            "acquired-binding-compositional-use",
+            "aggregate-exit-funding",
+            "alignment-direction-g0-j",
+            "assured-route-criterion",
+            "becoming-context-coherence",
+            "branching-target-uniqueness",
+            "branching-tests-bisimulation",
+            "classification-robust-generative-comparison",
+            "code-plan-global-support",
+            "conditional-foundation-assessment",
+            "derivation-soundness",
+            "derived-history-law-exactness",
+            "effective-capacity-and-eventual-reachability",
+            "enacted-scene-binding",
+            "encounter-control-and-retention",
+            "encounter-selection-and-revision",
+            "endpoint-loss-and-return",
+            "exclusive-footprint-support",
+            "fallible-witness-diagnosability",
+            "finite-basis-common-interpretation",
+            "finite-continuation-plans",
+            "finite-fallible-inquiry-necessity",
+            "finite-granularity-question-recovery",
+            "finite-joining-tree-lifting",
+            "finite-trace-transport",
+            "fulfillment-chance-floor",
+            "functional-joining-common-structure",
+            "growth-constrained-fragmentation",
+            "incidence-common-refinement",
+            "joining-open-map-factor",
+            "joining-questions-survive-encoding",
+            "joint-code-plan-lifting",
+            "joint-decomposition-lifting",
+            "joint-plan-composition",
+            "joint-target-uniqueness",
+            "market-partial-correction-boundary",
+            "market-protected-continuation",
+            "market-supported-finite-transition",
+            "material-preparation-output",
+            "multivalued-joining-common-structure",
+            "naming-attention-coverage",
+            "open-form-realization-under-revision",
+            "organizational-formation-from-generative-comparison",
+            "organizational-rule-inheritance",
+            "positive-ground-open-futures",
+            "practical-judgment-g0-j",
+            "prefix-observation-loss",
+            "recurrent-chain-assembly",
+            "relational-generative-comparison",
+            "retained-reference-joining-recovery",
+            "retrospective-source-binding",
+            "risk-certificate-outcome-distinction",
+            "scientific-inquiry-foundation",
+            "situated-recovery-empirical-correspondence",
+            "theory-of-becoming-foundation",
+            "trace-law-equivalence",
+            "transition-grouping-word-partition",
+            "unanchored-incidence-collapse",
+            "universal-practical-warrant",
+            "wisdom-root"
+          ],
+          "errors": [],
+          "source_drift": [
+            {
+              "id": "classification-robust-generative-comparison",
+              "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+              "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+              "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+            },
+            {
+              "id": "market-partial-correction-boundary",
+              "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+              "reviewed_sha256": "9cb0bbe1826d8d9ae39f47c7b1262a75ec78ed3f7ad5ec6cd1196b5a9e80724a",
+              "current_sha256": "0aaf71300c4eba2d9e799843a62349e77f733e2ab32300641aba63143fdc027a"
+            },
+            {
+              "id": "market-partial-correction-boundary",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md",
+              "reviewed_sha256": "258d0e31178a169713eca103f09bcc86b816ce01b01e72d2e8a58fab01baf39b",
+              "current_sha256": "aa8f7f774309ede25bfaad0ca0b547f57e3de870fda67c0fb6b46010c141fda7"
+            },
+            {
+              "id": "market-protected-continuation",
+              "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+              "reviewed_sha256": "9cb0bbe1826d8d9ae39f47c7b1262a75ec78ed3f7ad5ec6cd1196b5a9e80724a",
+              "current_sha256": "0aaf71300c4eba2d9e799843a62349e77f733e2ab32300641aba63143fdc027a"
+            },
+            {
+              "id": "market-supported-finite-transition",
+              "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+              "reviewed_sha256": "9cb0bbe1826d8d9ae39f47c7b1262a75ec78ed3f7ad5ec6cd1196b5a9e80724a",
+              "current_sha256": "0aaf71300c4eba2d9e799843a62349e77f733e2ab32300641aba63143fdc027a"
+            },
+            {
+              "id": "market-supported-finite-transition",
+              "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md",
+              "reviewed_sha256": "258d0e31178a169713eca103f09bcc86b816ce01b01e72d2e8a58fab01baf39b",
+              "current_sha256": "aa8f7f774309ede25bfaad0ca0b547f57e3de870fda67c0fb6b46010c141fda7"
+            },
+            {
+              "id": "organizational-formation-from-generative-comparison",
+              "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+              "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+              "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+            }
+          ],
+          "unrelated_source_drift": [],
+          "scope": "Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation."
+        }
+      },
+      "repository_checks": [
+        {
+          "command": "make research-check",
+          "exit_code": 2,
+          "report": {
+            "records": 61,
+            "selected_records": [
+              "acquired-binding-compositional-use",
+              "aggregate-exit-funding",
+              "alignment-direction-g0-j",
+              "assured-route-criterion",
+              "becoming-context-coherence",
+              "binding-preserving-substitution",
+              "branching-target-uniqueness",
+              "branching-tests-bisimulation",
+              "classification-robust-generative-comparison",
+              "code-plan-global-support",
+              "conditional-foundation-assessment",
+              "derivation-soundness",
+              "derived-history-law-exactness",
+              "effective-capacity-and-eventual-reachability",
+              "enacted-scene-binding",
+              "encounter-control-and-retention",
+              "encounter-selection-and-revision",
+              "endpoint-loss-and-return",
+              "exclusive-footprint-support",
+              "fallible-witness-diagnosability",
+              "finite-basis-common-interpretation",
+              "finite-continuation-plans",
+              "finite-fallible-inquiry-necessity",
+              "finite-granularity-question-recovery",
+              "finite-joining-tree-lifting",
+              "finite-trace-transport",
+              "fulfillment-chance-floor",
+              "functional-joining-common-structure",
+              "growth-constrained-fragmentation",
+              "incidence-common-refinement",
+              "joining-open-map-factor",
+              "joining-questions-survive-encoding",
+              "joint-code-plan-lifting",
+              "joint-decomposition-lifting",
+              "joint-plan-composition",
+              "joint-target-uniqueness",
+              "market-partial-correction-boundary",
+              "market-protected-continuation",
+              "market-supported-finite-transition",
+              "material-preparation-output",
+              "multivalued-joining-common-structure",
+              "naming-attention-coverage",
+              "open-form-realization-under-revision",
+              "organizational-formation-from-generative-comparison",
+              "organizational-rule-inheritance",
+              "positive-ground-open-futures",
+              "practical-judgment-g0-j",
+              "prefix-observation-loss",
+              "recurrent-chain-assembly",
+              "relational-generative-comparison",
+              "retained-reference-joining-recovery",
+              "retrospective-source-binding",
+              "risk-certificate-outcome-distinction",
+              "scientific-inquiry-foundation",
+              "situated-recovery-empirical-correspondence",
+              "theory-of-becoming-foundation",
+              "trace-law-equivalence",
+              "transition-grouping-word-partition",
+              "unanchored-incidence-collapse",
+              "universal-practical-warrant",
+              "wisdom-root"
+            ],
+            "errors": [],
+            "source_drift": [
+              {
+                "id": "classification-robust-generative-comparison",
+                "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+                "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+                "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+              },
+              {
+                "id": "market-partial-correction-boundary",
+                "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+                "reviewed_sha256": "9cb0bbe1826d8d9ae39f47c7b1262a75ec78ed3f7ad5ec6cd1196b5a9e80724a",
+                "current_sha256": "0aaf71300c4eba2d9e799843a62349e77f733e2ab32300641aba63143fdc027a"
+              },
+              {
+                "id": "market-partial-correction-boundary",
+                "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md",
+                "reviewed_sha256": "258d0e31178a169713eca103f09bcc86b816ce01b01e72d2e8a58fab01baf39b",
+                "current_sha256": "aa8f7f774309ede25bfaad0ca0b547f57e3de870fda67c0fb6b46010c141fda7"
+              },
+              {
+                "id": "market-protected-continuation",
+                "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+                "reviewed_sha256": "9cb0bbe1826d8d9ae39f47c7b1262a75ec78ed3f7ad5ec6cd1196b5a9e80724a",
+                "current_sha256": "0aaf71300c4eba2d9e799843a62349e77f733e2ab32300641aba63143fdc027a"
+              },
+              {
+                "id": "market-supported-finite-transition",
+                "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+                "reviewed_sha256": "9cb0bbe1826d8d9ae39f47c7b1262a75ec78ed3f7ad5ec6cd1196b5a9e80724a",
+                "current_sha256": "0aaf71300c4eba2d9e799843a62349e77f733e2ab32300641aba63143fdc027a"
+              },
+              {
+                "id": "market-supported-finite-transition",
+                "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md",
+                "reviewed_sha256": "258d0e31178a169713eca103f09bcc86b816ce01b01e72d2e8a58fab01baf39b",
+                "current_sha256": "aa8f7f774309ede25bfaad0ca0b547f57e3de870fda67c0fb6b46010c141fda7"
+              },
+              {
+                "id": "organizational-formation-from-generative-comparison",
+                "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+                "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+                "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+              }
+            ],
+            "unrelated_source_drift": [],
+            "scope": "Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation."
+          }
+        },
+        {
+          "command": "python3 -B tools/research/research.py check --ids organizational-rule-inheritance",
+          "exit_code": 0,
+          "report": {
+            "records": 61,
+            "selected_records": [
+              "organizational-rule-inheritance"
+            ],
+            "errors": [],
+            "source_drift": [],
+            "unrelated_source_drift": [
+              {
+                "id": "classification-robust-generative-comparison",
+                "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+                "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+                "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+              },
+              {
+                "id": "market-partial-correction-boundary",
+                "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+                "reviewed_sha256": "9cb0bbe1826d8d9ae39f47c7b1262a75ec78ed3f7ad5ec6cd1196b5a9e80724a",
+                "current_sha256": "0aaf71300c4eba2d9e799843a62349e77f733e2ab32300641aba63143fdc027a"
+              },
+              {
+                "id": "market-partial-correction-boundary",
+                "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md",
+                "reviewed_sha256": "258d0e31178a169713eca103f09bcc86b816ce01b01e72d2e8a58fab01baf39b",
+                "current_sha256": "aa8f7f774309ede25bfaad0ca0b547f57e3de870fda67c0fb6b46010c141fda7"
+              },
+              {
+                "id": "market-protected-continuation",
+                "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+                "reviewed_sha256": "9cb0bbe1826d8d9ae39f47c7b1262a75ec78ed3f7ad5ec6cd1196b5a9e80724a",
+                "current_sha256": "0aaf71300c4eba2d9e799843a62349e77f733e2ab32300641aba63143fdc027a"
+              },
+              {
+                "id": "market-supported-finite-transition",
+                "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+                "reviewed_sha256": "9cb0bbe1826d8d9ae39f47c7b1262a75ec78ed3f7ad5ec6cd1196b5a9e80724a",
+                "current_sha256": "0aaf71300c4eba2d9e799843a62349e77f733e2ab32300641aba63143fdc027a"
+              },
+              {
+                "id": "market-supported-finite-transition",
+                "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md",
+                "reviewed_sha256": "258d0e31178a169713eca103f09bcc86b816ce01b01e72d2e8a58fab01baf39b",
+                "current_sha256": "aa8f7f774309ede25bfaad0ca0b547f57e3de870fda67c0fb6b46010c141fda7"
+              },
+              {
+                "id": "organizational-formation-from-generative-comparison",
+                "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+                "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+                "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+              }
+            ],
+            "scope": "Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation."
+          }
+        }
+      ],
+      "checked_at_utc": "2026-10-08T18:22:34.005609+00:00",
+      "status": "passed",
+      "relative_links_checked": 72,
+      "proof_sources_unchanged": true,
+      "c14_matches": true,
+      "whole_chain_render_matches": true,
+      "errors": [],
+      "scope": "Language and explanatory correspondence only. Earlier checks retain their original source versions. No fresh Lean run or added mathematical claim."
+    }
+  ]
+}

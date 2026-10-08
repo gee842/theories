@@ -1,0 +1,12 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-inferential-substitution-kpd04tzo/InferentialSubstitution.lean:37:30: error(lean.unknownIdentifier): Unknown identifier `congrArg2`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-inferential-substitution-kpd04tzo/InferentialSubstitution.lean:48:10: error(lean.unknownIdentifier): Unknown identifier `congrArg2`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-inferential-substitution-kpd04tzo/InferentialSubstitution.lean:78:30: error(lean.unknownIdentifier): Unknown identifier `congrArg2`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-inferential-substitution-kpd04tzo/InferentialSubstitution.lean:91:10: error(lean.unknownIdentifier): Unknown identifier `congrArg2`
+'Generative.InferentialSubstitution.extract_rename' depends on axioms: [sorryAx, Quot.sound]
+'Generative.InferentialSubstitution.extract_substitute' depends on axioms: [sorryAx, Quot.sound]
+'Generative.InferentialSubstitution.all_terms_agree_iff_positions' depends on axioms: [sorryAx, Quot.sound]
+'Generative.InferentialSubstitution.discharge_matches_supply' depends on axioms: [sorryAx, Quot.sound]
+'Generative.InferentialSubstitution.discharge_preserves_assessment' depends on axioms: [sorryAx, Quot.sound]
+'Generative.InferentialSubstitution.successive_substitution' depends on axioms: [sorryAx, Quot.sound]
+'Generative.InferentialSubstitution.nested_substitution_retains_outer' does not depend on any axioms
+'Generative.InferentialSubstitution.typed_capture_changes_answer' does not depend on any axioms

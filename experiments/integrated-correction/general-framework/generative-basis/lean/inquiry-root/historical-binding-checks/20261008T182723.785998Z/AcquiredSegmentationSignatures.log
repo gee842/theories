@@ -1,0 +1,149 @@
+Generative.AcquiredSegmentation.grouping_preserves_encountered_sequence
+  (r : Generative.AcquiredSegmentation.Sound → Generative.AcquiredSegmentation.Sound → Bool)
+  (xs : List Generative.AcquiredSegmentation.Sound) : (Generative.AcquiredSegmentation.chunks r xs).flatten = xs
+Generative.AcquiredSegmentation.receiving_preserves_support (event : Option Generative.AcquiredSegmentation.Sound)
+  (s : Generative.AcquiredSegmentation.State) :
+  (Generative.AcquiredSegmentation.receive event s).machine.support +
+      (Generative.AcquiredSegmentation.receive event s).machine.spent =
+    s.machine.support + s.machine.spent
+Generative.AcquiredSegmentation.exposure_preserves_support
+  (events : List (Option Generative.AcquiredSegmentation.Sound)) (s : Generative.AcquiredSegmentation.State) :
+  (Generative.AcquiredSegmentation.expose events s).machine.support +
+      (Generative.AcquiredSegmentation.expose events s).machine.spent =
+    s.machine.support + s.machine.spent
+Generative.AcquiredSegmentation.insufficient_reception_keeps_actual_record
+  (event : Option Generative.AcquiredSegmentation.Sound) (s : Generative.AcquiredSegmentation.State)
+  (short : s.machine.support = 0) : Generative.AcquiredSegmentation.receive event s = s
+Generative.AcquiredSegmentation.broadening_preserves_support (raw : List Generative.AcquiredSegmentation.Sound)
+  (more : List (Option Generative.AcquiredSegmentation.Sound)) (s : Generative.AcquiredSegmentation.State) :
+  (Generative.AcquiredSegmentation.broadenAfterFailure raw more s).machine.support +
+      (Generative.AcquiredSegmentation.broadenAfterFailure raw more s).machine.spent =
+    s.machine.support + s.machine.spent
+Generative.AcquiredSegmentation.ideal_grouping_recovers_words (ws : List Bool) :
+  Generative.AcquiredSegmentation.chunks Generative.AcquiredSegmentation.idealBond
+      (Generative.AcquiredSegmentation.encode ws) =
+    List.map Generative.AcquiredSegmentation.word ws
+Generative.AcquiredSegmentation.decoded_word_sequence (ws : List Bool) :
+  Generative.AcquiredSegmentation.decodeChunks (List.map Generative.AcquiredSegmentation.word ws) =
+    some (List.map Generative.CompositionalAcquisition.Expr.atom ws)
+Generative.AcquiredSegmentation.actual_exposure_forms_the_grouping_relation
+  (x y : Generative.AcquiredSegmentation.Sound) :
+  Generative.AcquiredSegmentation.bond (Generative.AcquiredSegmentation.experienced 28).log x y =
+    Generative.AcquiredSegmentation.idealBond x y
+Generative.AcquiredSegmentation.learned_grouping_transfers_to_every_word_sequence (ws : List Bool) :
+  Generative.AcquiredSegmentation.chunks
+      (Generative.AcquiredSegmentation.bond (Generative.AcquiredSegmentation.experienced 28).log)
+      (Generative.AcquiredSegmentation.encode ws) =
+    List.map Generative.AcquiredSegmentation.word ws
+Generative.AcquiredSegmentation.acquired_segmentation_enters_message_assembly (ws : List Bool) :
+  Generative.AcquiredSegmentation.parse (Generative.AcquiredSegmentation.experienced 28)
+      (Generative.AcquiredSegmentation.encode ws) =
+    Generative.AcquiredSegmentation.assembleMessage (List.map Generative.CompositionalAcquisition.Expr.atom ws)
+Generative.AcquiredSegmentation.no_experience_leaves_the_message_unparsed :
+  Generative.AcquiredSegmentation.parse (Generative.AcquiredSegmentation.ready 28)
+        Generative.AcquiredSegmentation.utterance =
+      none ∧
+    Generative.AcquiredSegmentation.act Generative.AcquiredSegmentation.utterance
+        (Generative.AcquiredSegmentation.ready 28) =
+      none
+Generative.AcquiredSegmentation.new_grouping_reaches_the_existing_formed_operation :
+  Generative.AcquiredSegmentation.parse (Generative.AcquiredSegmentation.experienced 28)
+        Generative.AcquiredSegmentation.utterance =
+      some Generative.AcquiredSegmentation.intended ∧
+    Option.map (fun r => (r.fst, r.snd.machine.support, r.snd.machine.spent))
+        (Generative.AcquiredSegmentation.act Generative.AcquiredSegmentation.utterance
+          (Generative.AcquiredSegmentation.experienced 28)) =
+      some ([true, false, true], 0, 21)
+Generative.AcquiredSegmentation.response_retains_training_history_and_original_acquisition :
+  Option.map (fun r => (r.snd.log, r.snd.machine.samples))
+      (Generative.AcquiredSegmentation.act Generative.AcquiredSegmentation.utterance
+        (Generative.AcquiredSegmentation.experienced 28)) =
+    some
+      (List.map some Generative.AcquiredSegmentation.context,
+        Generative.CompositionalAcquisition.trialRecords Generative.CompositionalAcquisition.usual)
+Generative.AcquiredSegmentation.exact_whole_history_account :
+  (Generative.AcquiredSegmentation.ready 28).machine.support = 14 ∧
+    (Generative.AcquiredSegmentation.experienced 28).machine.support = 4 ∧ 7 + 7 + 10 + 4 = 28
+Generative.AcquiredSegmentation.grouped_message_can_lack_execution_support :
+  Generative.AcquiredSegmentation.parse (Generative.AcquiredSegmentation.experienced 27)
+        Generative.AcquiredSegmentation.utterance =
+      some Generative.AcquiredSegmentation.intended ∧
+    Generative.AcquiredSegmentation.act Generative.AcquiredSegmentation.utterance
+        (Generative.AcquiredSegmentation.experienced 27) =
+      none
+Generative.AcquiredSegmentation.missing_observation_slots_preserve_the_absence_of_an_edge :
+  Generative.AcquiredSegmentation.edges
+        [some Generative.AcquiredSegmentation.Sound.a, none, some Generative.AcquiredSegmentation.Sound.b] =
+      [] ∧
+    Generative.AcquiredSegmentation.bond
+          [some Generative.AcquiredSegmentation.Sound.a, none, some Generative.AcquiredSegmentation.Sound.b]
+          Generative.AcquiredSegmentation.Sound.a Generative.AcquiredSegmentation.Sound.b =
+        false ∧
+      Generative.AcquiredSegmentation.bond
+          [some Generative.AcquiredSegmentation.Sound.a, some Generative.AcquiredSegmentation.Sound.b]
+          Generative.AcquiredSegmentation.Sound.a Generative.AcquiredSegmentation.Sound.b =
+        true
+Generative.AcquiredSegmentation.equal_event_frequencies_do_not_identify_grouping
+  (x : Generative.AcquiredSegmentation.Sound) :
+  List.count x Generative.AcquiredSegmentation.context = List.count x Generative.AcquiredSegmentation.reordered
+Generative.AcquiredSegmentation.encounter_relations_change_grouping_and_use :
+  Generative.AcquiredSegmentation.bond (List.map some Generative.AcquiredSegmentation.context)
+        Generative.AcquiredSegmentation.Sound.a Generative.AcquiredSegmentation.Sound.b =
+      true ∧
+    Generative.AcquiredSegmentation.bond (List.map some Generative.AcquiredSegmentation.reordered)
+          Generative.AcquiredSegmentation.Sound.a Generative.AcquiredSegmentation.Sound.b =
+        false ∧
+      Generative.AcquiredSegmentation.parse
+          (Generative.AcquiredSegmentation.expose (List.map some Generative.AcquiredSegmentation.reordered)
+            (Generative.AcquiredSegmentation.ready 28))
+          Generative.AcquiredSegmentation.utterance =
+        none
+Generative.AcquiredSegmentation.diagnostic_failure_changes_further_acquisition :
+  Generative.AcquiredSegmentation.parse (Generative.AcquiredSegmentation.narrow 28)
+        Generative.AcquiredSegmentation.utterance =
+      none ∧
+    (Generative.AcquiredSegmentation.broadened 28).log = List.map some Generative.AcquiredSegmentation.context ∧
+      Generative.AcquiredSegmentation.parse (Generative.AcquiredSegmentation.broadened 28)
+            Generative.AcquiredSegmentation.utterance =
+          some Generative.AcquiredSegmentation.intended ∧
+        Option.map Prod.fst
+            (Generative.AcquiredSegmentation.act Generative.AcquiredSegmentation.utterance
+              (Generative.AcquiredSegmentation.broadened 28)) =
+          some [true, false, true]
+Generative.AcquiredSegmentation.recognized_message_does_not_trigger_broadening :
+  Generative.AcquiredSegmentation.broadenAfterFailure
+      [Generative.AcquiredSegmentation.Sound.a, Generative.AcquiredSegmentation.Sound.b]
+      (List.map some Generative.AcquiredSegmentation.additional) (Generative.AcquiredSegmentation.narrow 28) =
+    Generative.AcquiredSegmentation.narrow 28
+Generative.AcquiredSegmentation.insufficient_further_acquisition_keeps_a_prefix :
+  (Generative.AcquiredSegmentation.broadened 19).log =
+      List.map some
+        [Generative.AcquiredSegmentation.Sound.a, Generative.AcquiredSegmentation.Sound.b,
+          Generative.AcquiredSegmentation.Sound.a, Generative.AcquiredSegmentation.Sound.b,
+          Generative.AcquiredSegmentation.Sound.c] ∧
+    Generative.AcquiredSegmentation.parse (Generative.AcquiredSegmentation.broadened 19)
+        Generative.AcquiredSegmentation.utterance =
+      none
+Generative.AcquiredSegmentation.partial_experience_can_parse_one_form_without_general_grouping :
+  (Generative.AcquiredSegmentation.broadened 21).log =
+      List.map some
+        [Generative.AcquiredSegmentation.Sound.a, Generative.AcquiredSegmentation.Sound.b,
+          Generative.AcquiredSegmentation.Sound.a, Generative.AcquiredSegmentation.Sound.b,
+          Generative.AcquiredSegmentation.Sound.c, Generative.AcquiredSegmentation.Sound.d,
+          Generative.AcquiredSegmentation.Sound.c] ∧
+    Generative.AcquiredSegmentation.parse (Generative.AcquiredSegmentation.broadened 21)
+          Generative.AcquiredSegmentation.utterance =
+        some Generative.AcquiredSegmentation.intended ∧
+      Generative.AcquiredSegmentation.act Generative.AcquiredSegmentation.utterance
+            (Generative.AcquiredSegmentation.broadened 21) =
+          none ∧
+        Generative.AcquiredSegmentation.parse (Generative.AcquiredSegmentation.broadened 21)
+            [Generative.AcquiredSegmentation.Sound.c, Generative.AcquiredSegmentation.Sound.d,
+              Generative.AcquiredSegmentation.Sound.c, Generative.AcquiredSegmentation.Sound.d] =
+          none
+Generative.AcquiredSegmentation.recurrence_can_join_across_the_intended_units :
+  Generative.AcquiredSegmentation.chunks
+        (Generative.AcquiredSegmentation.bond (List.map some Generative.AcquiredSegmentation.learnerFavored))
+        Generative.AcquiredSegmentation.learnerFavored =
+      [Generative.AcquiredSegmentation.learnerFavored] ∧
+    Generative.AcquiredSegmentation.decodeChunk Generative.AcquiredSegmentation.learnerFavored = none

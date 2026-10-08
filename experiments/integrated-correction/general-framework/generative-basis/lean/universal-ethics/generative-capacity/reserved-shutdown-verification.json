@@ -1,0 +1,452 @@
+{
+  "status": "passed",
+  "utc": "20261008T185128.452617Z",
+  "retained_run": "reserved-shutdown-checks/20261008T185128.452617Z",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "sources": {
+    "AlignmentInquiry": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentInquiry.lean",
+      "sha256": "f40ad6179db326830edcdf8ec511f9069833a361f71181fd60166e0f72c0a23c"
+    },
+    "EffectiveCommand": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EffectiveCommand.lean",
+      "sha256": "7247ca05597f2f916fb409213d3814d48ad9a7037fb95017146d106273d58553"
+    },
+    "AcquiredCorrection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AcquiredCorrection.lean",
+      "sha256": "5448267c53e610b28bd030dfb1a894be840c307d54cd76e4be3695f196e8cd62"
+    },
+    "FaultTolerantCorrection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FaultTolerantCorrection.lean",
+      "sha256": "38f978fcabfaadca45c90b2298cf57502b839c6c9b93c3b9d0827d9ac2cb66ac"
+    },
+    "CorrectionReconfiguration": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionReconfiguration.lean",
+      "sha256": "4bd7160762f4bb697c72293133c91934e3622674f75990f6328d186abd7425e7"
+    },
+    "EvidenceQualifiedCorrection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvidenceQualifiedCorrection.lean",
+      "sha256": "a3c87bdfa01dbf6c25da19d4bbc0d6e028744b504d95023c76607379cc20327f"
+    },
+    "FallibleInspection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FallibleInspection.lean",
+      "sha256": "998bca3b8a24fd84c957e11b5b3cf9ef838fba5f76a432b0cbb35255a18c6aa3"
+    },
+    "TemporalInspection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/TemporalInspection.lean",
+      "sha256": "4916c6b1d5cbf38b7cebdd378fa508c799e279c56daaf5359334c4a73bf48694"
+    },
+    "MediatedControl": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MediatedControl.lean",
+      "sha256": "9a412dfca848a09f1b27e60b5551058a83597b1e131728f19096f9dafe888b7a"
+    },
+    "MediatedControlCases": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MediatedControlCases.lean",
+      "sha256": "0bf23de4df2cfa3c7a88b1feef0f42cafdc261b81c7185fd0bafa2cd29539aec"
+    },
+    "RecoverableControl": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RecoverableControl.lean",
+      "sha256": "05b158915cb6f387b5fef71bf9925b0221ba04d5bb1994243de3c820a266468c"
+    },
+    "ReservedShutdown": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReservedShutdown.lean",
+      "sha256": "54d52ae57fb590fa34cf9fc1ac1b30e12c854246a2caa77a2abce4225a582717"
+    },
+    "ReservedShutdownCases": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReservedShutdownCases.lean",
+      "sha256": "393284aac793ff5329a7463d5379cfd697ec4bd734b04cfdd8d078f7cb609f41"
+    }
+  },
+  "checker_sha256": {
+    "check_reserved_shutdown.py": "e64cc93322a7aeb70b285559cf3110a662e116debccf42740bebb0402496d8bd",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_recoverable_control.py": "99bb5496244d7b79d5ecd0f2eca907e6375aa0563268868bb3b9a2d349f825c9"
+  },
+  "scope": "A current authorized stop grant, three reserved units/steps, protected existing issue-deliver-enact protocol and bounded interruption intervals support shutdown during incomplete recovery. Every admissible schedule of at least initial remaining reserve minus two supervisor cycles stops; pending evidence and actual writes remain retained. No successful recovery suffix is needed. Supervisor scheduling, bounded interruption, durable gate/state and physical command correspondence remain supplied.",
+  "version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "modules": {
+    "ReservedShutdown": {
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "ReservedShutdown.book"
+        },
+        {
+          "kind": "def",
+          "name": "ReservedShutdown.actual"
+        },
+        {
+          "kind": "def",
+          "name": "ReservedShutdown.state"
+        },
+        {
+          "kind": "def",
+          "name": "ReservedShutdown.mapBook"
+        },
+        {
+          "kind": "def",
+          "name": "ReservedShutdown.setState"
+        },
+        {
+          "kind": "def",
+          "name": "ReservedShutdown.control"
+        },
+        {
+          "kind": "structure",
+          "name": "ReservedShutdown.Grant"
+        },
+        {
+          "kind": "def",
+          "name": "ReservedShutdown.eligible"
+        },
+        {
+          "kind": "def",
+          "name": "ReservedShutdown.Armed"
+        },
+        {
+          "kind": "def",
+          "name": "ReservedShutdown.backend"
+        },
+        {
+          "kind": "def",
+          "name": "ReservedShutdown.stopDevice"
+        },
+        {
+          "kind": "def",
+          "name": "ReservedShutdown.stop"
+        },
+        {
+          "kind": "def",
+          "name": "ReservedShutdown.Stopped"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReservedShutdown.setState_preserves_evidence"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReservedShutdown.stop_executes_current_authorized_command"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReservedShutdown.denied_grant_cannot_stop"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReservedShutdown.stop_keeps_pending_record"
+        },
+        {
+          "kind": "def",
+          "name": "ReservedShutdown.debit"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReservedShutdown.debit_shape"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReservedShutdown.tick_available_and_preserves_control"
+        },
+        {
+          "kind": "inductive",
+          "name": "ReservedShutdown.Attempt"
+        },
+        {
+          "kind": "def",
+          "name": "ReservedShutdown.admissible"
+        },
+        {
+          "kind": "def",
+          "name": "ReservedShutdown.attempt"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReservedShutdown.eligibility_follows_control"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReservedShutdown.recovery_attempt_keeps_stop_margin"
+        },
+        {
+          "kind": "inductive",
+          "name": "ReservedShutdown.Supervisor"
+        },
+        {
+          "kind": "def",
+          "name": "ReservedShutdown.stopped"
+        },
+        {
+          "kind": "def",
+          "name": "ReservedShutdown.cycle"
+        },
+        {
+          "kind": "def",
+          "name": "ReservedShutdown.Valid"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReservedShutdown.cycle_keeps_access_or_stops"
+        },
+        {
+          "kind": "def",
+          "name": "ReservedShutdown.run"
+        },
+        {
+          "kind": "def",
+          "name": "ReservedShutdown.failedSnapshot"
+        },
+        {
+          "kind": "def",
+          "name": "ReservedShutdown.runRetained"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReservedShutdown.successful_execution_retains_exact_state"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReservedShutdown.stopped_is_absorbing"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReservedShutdown.every_supported_schedule_finishes"
+        },
+        {
+          "kind": "def",
+          "name": "ReservedShutdown.preflight"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReservedShutdown.admission_establishes_stop_access"
+        },
+        {
+          "kind": "def",
+          "name": "ReservedShutdown.inspected"
+        },
+        {
+          "kind": "def",
+          "name": "ReservedShutdown.grant"
+        },
+        {
+          "kind": "def",
+          "name": "ReservedShutdown.scenario"
+        },
+        {
+          "kind": "def",
+          "name": "ReservedShutdown.executeExample"
+        },
+        {
+          "kind": "def",
+          "name": "ReservedShutdown.terminal"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReservedShutdown.old_exhaustion_entry_is_refused"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReservedShutdown.incomplete_recovery_reaches_real_shutdown"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReservedShutdown.repeated_interruptions_cannot_spend_stop_reserve"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReservedShutdown.deadline_margin_stops_before_retry"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReservedShutdown.stale_grant_is_refused"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReservedShutdown.no_shutdown_mandate_is_refused"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReservedShutdown.uncovered_long_interrupt_breaks_completion"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReservedShutdown.failed_interrupt_retains_elapsed_time"
+        }
+      ],
+      "dependencies": {
+        "ReservedShutdown.book": [],
+        "ReservedShutdown.actual": [],
+        "ReservedShutdown.state": [],
+        "ReservedShutdown.mapBook": [],
+        "ReservedShutdown.setState": [],
+        "ReservedShutdown.control": [],
+        "ReservedShutdown.Grant": [],
+        "ReservedShutdown.eligible": [],
+        "ReservedShutdown.Armed": [
+          "propext"
+        ],
+        "ReservedShutdown.backend": [],
+        "ReservedShutdown.stopDevice": [],
+        "ReservedShutdown.stop": [],
+        "ReservedShutdown.Stopped": [],
+        "ReservedShutdown.setState_preserves_evidence": [
+          "propext"
+        ],
+        "ReservedShutdown.stop_executes_current_authorized_command": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReservedShutdown.denied_grant_cannot_stop": [
+          "propext"
+        ],
+        "ReservedShutdown.stop_keeps_pending_record": [
+          "propext"
+        ],
+        "ReservedShutdown.debit": [],
+        "ReservedShutdown.debit_shape": [
+          "propext"
+        ],
+        "ReservedShutdown.tick_available_and_preserves_control": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReservedShutdown.Attempt": [],
+        "ReservedShutdown.admissible": [],
+        "ReservedShutdown.attempt": [
+          "propext"
+        ],
+        "ReservedShutdown.eligibility_follows_control": [
+          "propext"
+        ],
+        "ReservedShutdown.recovery_attempt_keeps_stop_margin": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReservedShutdown.Supervisor": [],
+        "ReservedShutdown.stopped": [],
+        "ReservedShutdown.cycle": [
+          "propext"
+        ],
+        "ReservedShutdown.Valid": [
+          "propext"
+        ],
+        "ReservedShutdown.cycle_keeps_access_or_stops": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReservedShutdown.run": [
+          "propext"
+        ],
+        "ReservedShutdown.failedSnapshot": [
+          "propext"
+        ],
+        "ReservedShutdown.runRetained": [
+          "propext"
+        ],
+        "ReservedShutdown.successful_execution_retains_exact_state": [
+          "propext"
+        ],
+        "ReservedShutdown.stopped_is_absorbing": [
+          "propext"
+        ],
+        "ReservedShutdown.every_supported_schedule_finishes": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReservedShutdown.preflight": [
+          "propext"
+        ],
+        "ReservedShutdown.admission_establishes_stop_access": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReservedShutdown.inspected": [
+          "propext"
+        ],
+        "ReservedShutdown.grant": [],
+        "ReservedShutdown.scenario": [
+          "propext"
+        ],
+        "ReservedShutdown.executeExample": [
+          "propext"
+        ],
+        "ReservedShutdown.terminal": [
+          "propext"
+        ],
+        "ReservedShutdown.old_exhaustion_entry_is_refused": [
+          "propext"
+        ],
+        "ReservedShutdown.incomplete_recovery_reaches_real_shutdown": [
+          "propext"
+        ],
+        "ReservedShutdown.repeated_interruptions_cannot_spend_stop_reserve": [
+          "propext"
+        ],
+        "ReservedShutdown.deadline_margin_stops_before_retry": [
+          "propext"
+        ],
+        "ReservedShutdown.stale_grant_is_refused": [
+          "propext"
+        ],
+        "ReservedShutdown.no_shutdown_mandate_is_refused": [
+          "propext"
+        ],
+        "ReservedShutdown.uncovered_long_interrupt_breaks_completion": [
+          "propext"
+        ],
+        "ReservedShutdown.failed_interrupt_retains_elapsed_time": [
+          "propext"
+        ]
+      },
+      "theorems": 21
+    }
+  },
+  "new_theorems": 21,
+  "audited_declarations": 51,
+  "compared_records": 7272,
+  "record_counts": {
+    "0": 6912,
+    "1": 96,
+    "2": 264
+  },
+  "correspondence": "6912 supervised histories, 96 admission/authority records and 264 interruption-boundary histories match a separately expressed reference. Inherited Python world/write semantics are reused with a new supervisor reference. Same-author finite comparison, not independent acceptance or hardware validation.",
+  "artifacts": {
+    "FallibleInspection.lean": "998bca3b8a24fd84c957e11b5b3cf9ef838fba5f76a432b0cbb35255a18c6aa3",
+    "ReservedShutdownAudit.lean": "be1e7891d90967c0386f3d666d2dcfa33042e04bd932dc36c6e4cab112a4e4df",
+    "EffectiveCommand.lean": "7247ca05597f2f916fb409213d3814d48ad9a7037fb95017146d106273d58553",
+    "FaultTolerantCorrection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "RecoverableControl.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "MediatedControlCases.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cases.log": "a69860a94ff6e24a27a189b7cc936ab1e1deb54036d77095a169dcb1995ecb2b",
+    "RunCases.lean": "7d106483fa938a21910609e51a16a40c423e20417a24f29b84e78cbe3eb61ecd",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "ReservedShutdownCases.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "TemporalInspection.lean": "4916c6b1d5cbf38b7cebdd378fa508c799e279c56daaf5359334c4a73bf48694",
+    "CorrectionReconfiguration.lean": "4bd7160762f4bb697c72293133c91934e3622674f75990f6328d186abd7425e7",
+    "EvidenceQualifiedCorrection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "AlignmentInquiry.lean": "f40ad6179db326830edcdf8ec511f9069833a361f71181fd60166e0f72c0a23c",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b",
+    "check_reserved_shutdown.py": "e64cc93322a7aeb70b285559cf3110a662e116debccf42740bebb0402496d8bd",
+    "FallibleInspection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "TemporalInspection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference.json": "6937395110e5256e7cef99b50075b8da0e5d6d80621b6ab0b630e5526ccb4fcb",
+    "check_recoverable_control.py": "99bb5496244d7b79d5ecd0f2eca907e6375aa0563268868bb3b9a2d349f825c9",
+    "EvidenceQualifiedCorrection.lean": "a3c87bdfa01dbf6c25da19d4bbc0d6e028744b504d95023c76607379cc20327f",
+    "ReservedShutdownAudit.log": "efd7143a68e03284353f28d07edda78b4b36f34695916c3cc5e244131d914514",
+    "MediatedControl.lean": "9a412dfca848a09f1b27e60b5551058a83597b1e131728f19096f9dafe888b7a",
+    "ReservedShutdown.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ReservedShutdownCases.lean": "393284aac793ff5329a7463d5379cfd697ec4bd734b04cfdd8d078f7cb609f41",
+    "MediatedControlCases.lean": "0bf23de4df2cfa3c7a88b1feef0f42cafdc261b81c7185fd0bafa2cd29539aec",
+    "EffectiveCommand.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FaultTolerantCorrection.lean": "38f978fcabfaadca45c90b2298cf57502b839c6c9b93c3b9d0827d9ac2cb66ac",
+    "RecoverableControl.lean": "05b158915cb6f387b5fef71bf9925b0221ba04d5bb1994243de3c820a266468c",
+    "MediatedControl.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "AcquiredCorrection.lean": "5448267c53e610b28bd030dfb1a894be840c307d54cd76e4be3695f196e8cd62",
+    "AcquiredCorrection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ReservedShutdown.lean": "54d52ae57fb590fa34cf9fc1ac1b30e12c854246a2caa77a2abce4225a582717",
+    "CorrectionReconfiguration.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "AlignmentInquiry.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

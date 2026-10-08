@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-09",
+  "status": "passed-owned-scope",
+  "new_result": "acquired-revision-of-pending-task",
+  "new_theorems": 17,
+  "new_audits": 27,
+  "inherited_theorems": 188,
+  "inherited_audits": 327,
+  "source_bound_actual_lean_receipt": "experiments/market-generativity/meta-attractor/common-task-revision-verification.json",
+  "local_links_checked": 90,
+  "owned_M24_row_matches": true,
+  "new_reviewed_sources": {
+    "theories/meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md": "759f5035104638d6ba63fd3cdd40bb0c4e4a3d7c3922ef5052cebbad2659ad40",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COLLECTIVE-DESTRUCTION-INTEGRATION.md": "f362c3d867050a5e6c95d89b3e2a5b2743976d19d0ca7197dd1aeab62a07f327",
+    "theories/shengsheng-buxi-generative-existence/results/records/acquired-revision-of-pending-task.md": "cc58b2a4297f32f52ab30f077cc1a3ea9e781bf90aec60736436f8123001d263",
+    "experiments/market-generativity/meta-attractor/CommonTaskRevision.lean": "7457eb257c09c31e2eba774c8d3a8be8654242f55d3e511bb6157fe4995bc398",
+    "experiments/market-generativity/meta-attractor/common-task-revision-verification.json": "597e54ba387e56033ea99111c3b888108332a93f08fd7dcbb5763b3e7b019aa0"
+  },
+  "registry_check": {
+    "records": 65,
+    "selected_records": [
+      "acquired-revision-of-pending-task",
+      "formed-goal-revision-continuation",
+      "versioned-request-completion"
+    ],
+    "errors": [],
+    "source_drift": [],
+    "unrelated_source_drift": [
+      {
+        "id": "classification-robust-generative-comparison",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+        "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+        "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+      },
+      {
+        "id": "organizational-formation-from-generative-comparison",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+        "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+        "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+      }
+    ],
+    "scope": "Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation."
+  },
+  "scope": "Documentary integrity and bindings to the separate actual Lean run. Earlier navigation receipts remain historical after result-register migration. No full-table freshness or independent scientific acceptance."
+}

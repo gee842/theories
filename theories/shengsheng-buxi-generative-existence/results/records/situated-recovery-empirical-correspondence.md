@@ -56,3 +56,4 @@ Aliases / 别名: —
 ## 沿革 History
 
 - 2026-10-08：按Ren要求直接利用公开数据，接续已有六篇文献整合；新增实际数据对应与预测评估，保留小样本不确定和不利结果。 / 2026-10-08: followed Ren’s direction to use public data, extending the six-study synthesis with actual measurement correspondence and forecast evaluation while retaining small-sample uncertainty and adverse results.
+- 2026-10-09：已读并整合三个共享来源中新增的24人更新研究；16人恢复主张、原分析及原科学回执不变，新增主张另列，不重复计数。 / 2026-10-09: read and reconciled the 24-person updating additions in three shared sources. The 16-person recovery claim, analysis and scientific receipt remain unchanged; the distinct updating claim is recorded separately.

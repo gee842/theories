@@ -1,0 +1,87 @@
+{
+  "retrieved_at_utc": "2026-10-08T18:55:25.867646+00:00",
+  "scope": "Current retrievals, not contemporaneous snapshots; edited posts possible. Direct public Reddit JSON request returned HTTP 403, so five post documents retain web-reader responses, labelled separately from two original HTML responses. Comments and ancillary material are not used as author claims.",
+  "sources": [
+    {
+      "id": "apollo-plan",
+      "publication_date": "2023-06-08",
+      "url": "https://www.reddit.com/r/apolloapp/comments/144f6xm/apollo_will_close_down_on_june_30th_reddits/",
+      "file": "2023-06-08-apollo-plan.web.txt",
+      "representation": "web-reader text response; not original server HTML or a contemporaneous snapshot",
+      "sha256": "72e0df3e39c2cffbd12c0ba6aa069c7e723a56c38195e431b435329e54d85d94",
+      "bytes": 34857
+    },
+    {
+      "id": "narwhal-unfinished",
+      "publication_date": "2023-06-08",
+      "url": "https://www.reddit.com/r/getnarwhal/comments/144pdom/update_on_narwhal_w_the_upcoming_reddit_api/",
+      "file": "2023-06-08-narwhal-unfinished.web.txt",
+      "representation": "web-reader text response; not original server HTML or a contemporaneous snapshot",
+      "sha256": "6fb9daaef750d7d2ee989ef64344af4e270adbe6dda363e01883afc3a9a05dd2",
+      "bytes": 27355
+    },
+    {
+      "id": "narwhal-bridge",
+      "publication_date": "2023-06-27",
+      "url": "https://www.reddit.com/r/getnarwhal/comments/14kt9wj/narwhal_is_not_going_anywhere_subscriptions_and/",
+      "file": "2023-06-27-narwhal-bridge.web.txt",
+      "representation": "web-reader text response; not original server HTML or a contemporaneous snapshot",
+      "sha256": "b10d071cd787eb2141e6c77e714a56a00c62b50bd1e742ba5805c446dc3987c7",
+      "bytes": 26547
+    },
+    {
+      "id": "narwhal-release",
+      "publication_date": "2023-09-27",
+      "url": "https://www.reddit.com/r/narwhalapp/comments/16tqo4f/narwhal_2_is_finally_here_subscription_details/",
+      "file": "2023-09-27-narwhal-release.web.txt",
+      "representation": "web-reader text response; not original server HTML or a contemporaneous snapshot",
+      "sha256": "3c2d1ddd0c78c65e9e4d29c5ceb12d609497d629bb6fa076835dd967c5eb31f9",
+      "bytes": 27637
+    },
+    {
+      "id": "narwhal-pricing",
+      "publication_date": "2023-10-09",
+      "url": "https://www.reddit.com/r/narwhalapp/comments/174206m/finalized_subscription_plan_for_launch_details/",
+      "file": "2023-10-09-narwhal-pricing.web.txt",
+      "representation": "web-reader text response; not original server HTML or a contemporaneous snapshot",
+      "sha256": "894bf245aa6cc9597eb55a53035c3f215cf195c674c08269c78f57d98681fa03",
+      "bytes": 26875
+    },
+    {
+      "id": "reddit-facts",
+      "publication_date": "2023-06-15",
+      "url": "https://redditinc.com/news/apifacts",
+      "final_url": "https://redditinc.com/news/apifacts",
+      "file": "2023-06-15-reddit-facts.html",
+      "representation": "unaltered HTML response",
+      "content_type": "text/html; charset=UTF-8",
+      "sha256": "317dd143aba165f5cdffd06161b5c5bae3a6469bd6894ac722570c74ec5d76ca",
+      "bytes": 64020
+    },
+    {
+      "id": "apollo-ended",
+      "publication_date": null,
+      "url": "https://apolloapp.io/",
+      "final_url": "https://apolloapp.io/",
+      "file": "apollo-homepage.html",
+      "representation": "unaltered HTML response",
+      "content_type": "text/html",
+      "sha256": "3880df742d6d38674f9ae78798bbd5e7f0140a63ea89aeacabe9109a3725111f",
+      "bytes": 4332
+    },
+    {
+      "id": "post-dates",
+      "publication_date": null,
+      "file": "post-dates.web.txt",
+      "representation": "web search response for the four dated Narwhal primary posts; not original server HTML",
+      "urls": [
+        "https://www.reddit.com/r/getnarwhal/comments/144pdom/update_on_narwhal_w_the_upcoming_reddit_api/",
+        "https://www.reddit.com/r/getnarwhal/comments/14kt9wj/narwhal_is_not_going_anywhere_subscriptions_and/",
+        "https://www.reddit.com/r/narwhalapp/comments/16tqo4f/narwhal_2_is_finally_here_subscription_details/",
+        "https://www.reddit.com/r/narwhalapp/comments/174206m/finalized_subscription_plan_for_launch_details/"
+      ],
+      "sha256": "227edc303202444bfb1ee88b72f8dadcbe5ec02947be3539374b59389b36ba78",
+      "bytes": 32331
+    }
+  ]
+}

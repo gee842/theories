@@ -830,3 +830,113 @@ Lean 已将原有有限分支恢复定理接到左右接合：若每对片段的
 本轮26项新 Lean 声明全部通过，另197项继承审计；完整223项为166空依赖、57标准依赖。新声明中6空、20标准，8项继承了经典选择依赖。没有自定公理或证明缺口，不等于零逻辑依赖或零模型前提。一般分支恢复是已知并已在仓库完成的数学，本轮贡献是接合对应、检验转换及有限树形接续。[既有研究中的新增整合](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md#9-multivalued-continuation-exact-delta-and-result-identities)保存反审、结果身份和冻结回执。
 
 **English continuation.** A finite-outcome joining law may remain genuinely multivalued. Exact answers to its richer branch questions force joining-compatible distinctions; minimal accounts share a relation of all possible outcome classes. The same encoding translates the partners inside questions and lifts any finite joining tree from its originally specified leaves. No native identity, probability, resource duplication or universal explanatory scope follows. The next universal connection concerns independently adequate articulations of the same formation when a common fragment set and alignment are not already given.
+
+## 95. 不共用片段名称的共同细化
+
+现在比较片段类型不同的两种关系表述。问题先只使用一次真实接合中的三个角色：第一片段、第二片段、形成结果。片段与带有接合见证的组合一起构成关系图；这两个分析位置都从同一个接合关系形成，不是独立主体与外界。
+
+在每个片段的每个角色周围只有有限次接合、所比较范围关系连通的条件下，根位置对全部这些有限问题给出相同答案，便能导出覆盖两边的共同关系细化。Lean 已证明：细化中的接合在两边都成立；固定一个参与位置时，两边的相应接合都能提升。不必预先给出片段双射。
+
+这里的关系检查路径不等于物理时间历史；数学上存在共同细化，也不独自证明两个表述指向同一次实际发生。实际解释对应仍需有根据。
+
+## 96. 唯一对应的一个更准确形式
+
+若另一个共同细化已经有分别通向这两种表述的映射，并且映射保留接合、允许固定一个参与位置的接合提升，Lean 证明它有唯一函数通向上述共同细化，同时保持两边原有投影和接合。
+
+这是一个准确的结构唯一性：唯一的是与两个既有投影相容的因子，不是所有完整现实必须一一相同。因子本身没有被证明仍满足单位置提升或覆盖全部位置；不能把“保留接合”与这些更强性质混同。
+
+## 97. 不记住共同指向，会留下空泛共性
+
+反审发现一个真实限制：若问题每次只问“存在某个伙伴”，就可能在每次回答时换掉伙伴。Lean 已证明，具有局部左右单位的任意接合结构，其所有片段对上述无名称关联问题都给出同样答案。这甚至不需要有限性。
+
+这个共同答案模式不够解释完整接续。已有单次消耗过程中，有一步路径见证的消耗片段不能和自身接合，因其结束条件已经不再匹配开始条件；但压成一个代码的说明却允许自接合。它对前述狭窄问题确实精确，甚至最小，却对这个更丰富的接合任务失真。
+
+这是同一已允许历史关系中的遗漏，有已有路径和失败见证；没有据此宣称已观测到物理事件。它不是通过任意改变谓词否定完整理论，也不构成生成根基不可能的证明。失败的是“只要去掉名称、保留存在关联，就足以保留生成内容”这条局部路线。
+
+## 98. 从形成内部保留引用，而不预设共同对象名
+
+修复的方法是保留已经形成的有限配置。问题指定同一配置里的两个位置，接合后把有见证的结果接在末尾，之前的位置不被换掉。位置编号来自这份配置自身的顺序；两种表述不需要使用同一种原生片段名称。
+
+在初始配置具有相同位置数、对全部相应分支问题回答一致、每个固定输入对只有有限结果的条件下，Lean 已证明：固定两个原输入位置后，接合结果可以在另一表述中匹配；扩展后的配置继续同测，新增位置也保持对齐。任意有限的同一命令序列都有相应形成历史，旧配置完整保留，形成的新位置数一致。
+
+因此，后续几处关系可以继续引用前面同一次形成的结果，不必每次独立重新选代表。这个关系语义并不授权复制物理资源，也不证明实际记忆装置已经形成；实际可用性和执行仍应由完整模型承担。
+
+## 99. 哪一种区别被证明不可抹去
+
+新的无名称问题“让保留的同一片段占据两个输入位置，是否还能接合”，正确识别了上述压缩错误。更直接地，Lean 已证明：在同一个单次消耗过程里，任何精确回答这些配置问题的说明，都必须区分初始空历史与已消耗历史。
+
+这个必要区别定理不要求说明最小，也不要求有限分支，没有另外添加成功或善的谓词。它来自同一过程里可接续与不可接续的真实差异。
+
+这推进了原问题的一个核心回答：当“前面形成的东西怎样继续起作用”属于所解释内容时，几个后续位置是否共同指向同一形成片段，也必须被保留。仅有若干分别成立的存在关系不足以代替这个依存关系。这里的同一性是由所解释的接续后果要求保留的，不是把预设独立实体的全部身份都强加为解释门槛。
+
+## 100. 已完成的连接与仍待证明的普遍对应
+
+本轮共同细化、相容投影的唯一因子、无引用检验的退化及保留引用的修复，均已进入实际 Lean 检查。43项新声明加213项继承审计，共256项；新9空依赖、34标准依赖，其中7项含经典选择。完整依赖及反审保存在[原研究的接续章节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md#15-different-articulations-common-refinement-and-the-reference-that-must-survive)。辅助引理与应用不另算独立发现。
+
+需要继续论证的是：实际同样充分的不同表述，为什么能有据地翻译到保留这种引用的形成问题，尤其是一份表述把另一份的几个接合包成一个步骤时。现有结果覆盖不同片段载体，不自动覆盖任意基本步骤粒度变化。不能把这个普遍对应藏入“充分”的定义，也不能把尚未证明报告为已经证明不可能。
+
+**English continuation.** Role-only incidence questions construct a common relational refinement and a unique join-preserving factor relative to given open projections. But all unital joining structures collapse in that unanchored language: admitted non-reusable histories expose the lost fixed-input relation. Retained configurations repair the comparison across different fragment carriers. Equal initial slot counts, complete question agreement and finite fixed-pair outcomes force matched finite formation histories with shared references retained. Exact accounts within the same process must distinguish its idle and spent histories. Actual correspondence, memory realization, resource use and arbitrary changes of operation granularity remain explicit obligations.
+
+
+## 101. 从同一展开形成不同操作粒度
+
+2026年10月9日。把原过程的一段有限路径视作一个宏步骤，内部位置与相邻步骤的共同边界都由同一关系展开给出。Lean 已证明：宏步骤的全部有限分支问题可以精确翻译成原步骤的问题；宏历史展开后保持实际相邻边界，不重新初始化条件。
+
+比较两种表述时，同一宏步骤可以展开成不同事件名称、不同数量的原生步骤。完整翻译问答一致、承接路径的一侧每步只有有限后继，就足以匹配任意有限的宏历史，并保留终点处全部宏问答。双向匹配在两侧分别使用有限性。这里恢复的是所声明边界之间的关系；没有声称内部每个位置也已对应。
+
+## 102. 保留引用与结构唯一性的接通
+
+宏步骤内部若使用上一轮的保留引用接合，原配置仍完整保留；新增位置数等于内部接合次数，而不是宏步骤数。不同长度的展开并不自动给出内部位置的一一对应。
+
+一个明确的充分覆盖条件是：宏问题也能把每个原步骤作为单步检验。此时全部原生问答可恢复；两份精确且约简的原生／宏说明，恰好合并同样的情形。这接通既有相对唯一性成果，未把约简当作一切充分解释的要求，也未证明每种合格粗描述都必须保留全部原步骤。
+
+## 103. 所有前缀仍可能遗漏中途失续
+
+同一过程从共同起点分出两种条件：一边的形成可到达“还能完成”或“已经受阻”，另一边只能到达“还能完成”。两边整段完成后的终点相同，全部整段问题也相同；但“形成之后，是否可能已经不能完成”有真实差异。
+
+更强的 Lean 反例表明：即使加入这段活动的全部非空前缀，并允许任意有限嵌套、否定与合取，两边仍然同测。前缀抵达的“可完成”与“受阻”在这套狭窄问题里都显得不能继续，因为问题没有允许从那里检验余下步骤。因此，这个语言中不存在任何公式，能在同一过程中准确表达那项中途损失。
+
+这是特定表述遗漏了生成关系的证明。反例不否定共同生成基础，也没有把完整世界同构重新设成门槛。
+
+## 104. 必须保留的是到达之后的关系
+
+把余下步骤开放为实际到达位置上的接续问题，就能区分同一反例。检验的前段和后段通过同一个中间位置相接，不能各自换用一个方便的存在见证。
+
+因此，若解释承担“形成的条件怎样改变后续可能性”的任务，就必须保留会改变这些接续答案的关系区别。允许不同名称、不同分节和不同内部步数；必要内容由所解释的形成与失续后果限定。完整且准确回答这些问题的说明必须保留反例中的区别，不需要先要求它最小。
+
+下一处普遍推论是：实际不同的说明怎样有据地建立中间位置及共同引用的翻译，尤其当展开随形成条件改变、允许中断或与其他活动交织时。固定有限程序的桥梁已完成；这个更强对应仍待论证，不报告为普遍不可能。
+
+## 105. 本轮实查与范围
+
+23项新证明声明、256项继承审计，共279项通过 Lean 4.29.1 检查。新声明均有标准逻辑依赖，其中3项包含经典选择；没有自加公理或证明空洞，但这不等于零实质前提。过程规律、有限展开方案、比较问题的实际意义及完整问答一致各自明示。[论证、反审与回执](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md#22-operation-granularity-within-one-unfolding)保留全部旧成果与反例。
+
+**English continuation.** Finite block questions compile exactly into native questions. Complete translated-answer agreement plus finite successors on the receiving side matches finite histories across different event names and word lengths. Retained configurations preserve original references and count internal formations. Singleton coverage recovers full question kernels. In one connected admitted unfolding, completed blocks and their entire nonempty-prefix modal language still omit a real intermediate loss; no formula in that language translates the loss question. Exposing the continuation at the actually reached position repairs the omission. Warranted intermediate-reference translation, variable protocols and universal foundation remain open, with supplied laws and logical dependencies explicit.
+
+
+## 106. 展开可以随已经形成的条件改变
+
+固定有限事件词的桥梁现已扩展到含判断、分支和提前结束的有限程序。判断使用同一过程的接续问题，并在程序实际到达的位置解释。Lean 已证明这套程序及其全部分支问题能精确翻译到原生问题；给定完整翻译问答一致和承接侧有限分支，不同条件程序的有限宏历史可以匹配，保留边界处问答。
+
+程序语法、判断的语义和实际对应仍是公开前提。这里的判断没有另计物理事件，不意味着判断免费、已经学会或实际上可取得；含未来可能性的语义检验尤其需要实际实现根据。
+
+## 107. 中间位置同时保留剩余的形成关系
+
+部分展开现在明确保留“到达的条件”和“还剩下的程序”，两者由同一展开关系共同产生。Lean 证明：从该位置执行真实剩余部分，恰好接续原程序；原程序的完整执行也恰好对应展开到结束。所有部分路径都能投到原生历史，衔接时不重置条件。
+
+在相同程序语法、全部原生问题同测和承接侧有限分支的更强条件下，还能逐段匹配中间展开，保留剩余部分及到达处问答。不同程序只在宏边界同测，并不独自提供这个更强结论。
+
+## 108. 提前判断、遗漏余项与插入活动的实查
+
+同一已有模型给出三个具体检验。第一，形成前不能完成，形成后却能完成；把到达后的判断移到起点，会改变程序结果。正面修复也已证明：若前段活动的每个可达结果都保持这项判断，则提前判断有效。
+
+第二，同一个初始程序可以到达同一个原生条件，却留下不同余项；一个还要完成，另一个已经结束。它们对剩余活动的后果回答不同，任何精确说明都必须保留这个区别。这不是完整物理状态相同却凭空产生不同未来；它指出只读原生条件的投影遗漏了已经分化的程序组织。若完整状态本已包含该组织，就不必增设一个独立本体。
+
+第三，插入同一过程允许的活动可以耗尽原来待用的接续条件。此前历史仍然成立，接续则必须从改变后的位置开始。Lean 已把前段、插入活动和实际后段接为一条原生历史，并保留“插入后的路径不自动是原来未中断程序的执行”这一范围。
+
+## 109. 本轮数学结论全部进入 Lean
+
+35项新证明声明加279项继承审计，共314项通过 Lean 4.29.1 实编。新12项空依赖、23项标准依赖，其中9项含经典选择；没有自加公理或证明空洞。新增模块关闭隐式自由参数生成。研究中[逐项对照表](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md#31-mathematical-claims-mapped-to-actual-lean-declarations)把每个数学主张、反例及修复条件接到准确的声明。
+
+必要关系进一步明确为：对部分形成的接续作说明，需要保留已经到达的条件与剩余形成组织之间那些会改变答案的联系。任意不同语法的解释为什么都能有据地恢复这些联系，仍是下一项普遍推论；有限形式成功不替代这个根据，也不构成零实质前提的普遍唯一性证明。
+
+**English continuation.** Finite guarded programs extend fixed words to reached-condition branching and explicit early ending. Boundary recovery permits different recipes; partial recovery separately requires common recipe syntax and complete native question agreement. Residual paths preserve both remaining organization and reached conditions, with exact completion/resumption and native trace projection. One inherited unfolding demonstrates changed guard truth, lost pending organization and interruption-induced loss; a guard-preservation condition justifies early testing. All new mathematical claims and concrete failures are Lean-checked, with semantic versus physical guard access and the unresolved universal translation explicit.

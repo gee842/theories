@@ -1,0 +1,420 @@
+{
+  "status": "passed",
+  "utc": "20261008T182417.414303Z",
+  "retained_run": "recoverable-control-checks/20261008T182417.414303Z",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "sources": {
+    "AlignmentInquiry": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentInquiry.lean",
+      "sha256": "f40ad6179db326830edcdf8ec511f9069833a361f71181fd60166e0f72c0a23c"
+    },
+    "EffectiveCommand": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EffectiveCommand.lean",
+      "sha256": "7247ca05597f2f916fb409213d3814d48ad9a7037fb95017146d106273d58553"
+    },
+    "AcquiredCorrection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AcquiredCorrection.lean",
+      "sha256": "5448267c53e610b28bd030dfb1a894be840c307d54cd76e4be3695f196e8cd62"
+    },
+    "FaultTolerantCorrection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FaultTolerantCorrection.lean",
+      "sha256": "38f978fcabfaadca45c90b2298cf57502b839c6c9b93c3b9d0827d9ac2cb66ac"
+    },
+    "CorrectionReconfiguration": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionReconfiguration.lean",
+      "sha256": "4bd7160762f4bb697c72293133c91934e3622674f75990f6328d186abd7425e7"
+    },
+    "EvidenceQualifiedCorrection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvidenceQualifiedCorrection.lean",
+      "sha256": "a3c87bdfa01dbf6c25da19d4bbc0d6e028744b504d95023c76607379cc20327f"
+    },
+    "FallibleInspection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FallibleInspection.lean",
+      "sha256": "998bca3b8a24fd84c957e11b5b3cf9ef838fba5f76a432b0cbb35255a18c6aa3"
+    },
+    "TemporalInspection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/TemporalInspection.lean",
+      "sha256": "4916c6b1d5cbf38b7cebdd378fa508c799e279c56daaf5359334c4a73bf48694"
+    },
+    "MediatedControl": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MediatedControl.lean",
+      "sha256": "9a412dfca848a09f1b27e60b5551058a83597b1e131728f19096f9dafe888b7a"
+    },
+    "MediatedControlCases": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MediatedControlCases.lean",
+      "sha256": "0bf23de4df2cfa3c7a88b1feef0f42cafdc261b81c7185fd0bafa2cd29539aec"
+    },
+    "RecoverableControl": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RecoverableControl.lean",
+      "sha256": "d770e224ad7b98d36838c7092f46bf9296f20d9fdb1a582beae538ce774d3b90"
+    },
+    "RecoverableControlCases": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RecoverableControlCases.lean",
+      "sha256": "cc7b10ede6b9eca67ee8cf36d097bacb7e83527c6817c2c2462b85f09896f0fc"
+    }
+  },
+  "checker_sha256": {
+    "check_recoverable_control.py": "99bb5496244d7b79d5ecd0f2eca907e6375aa0563268868bb3b9a2d349f825c9",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Staged overwrite recovery preserves quarantined intermediate states and published candidate coverage across arbitrary admitted finite crash histories. A sufficiently funded/timely uninterrupted suffix publishes with exact additional consumption. Durable descriptor/gate, atomic microsteps and publication, overwrite semantics, no extra writer, current source correspondence and stable final command remain supplied.",
+  "version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "modules": {
+    "RecoverableControl": {
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "RecoverableControl.SameUntouched"
+        },
+        {
+          "kind": "theorem",
+          "name": "RecoverableControl.exact_result_from_untouched"
+        },
+        {
+          "kind": "theorem",
+          "name": "RecoverableControl.member_preserves_untouched"
+        },
+        {
+          "kind": "def",
+          "name": "RecoverableControl.accounting"
+        },
+        {
+          "kind": "theorem",
+          "name": "RecoverableControl.accounting_preserves_coverage"
+        },
+        {
+          "kind": "structure",
+          "name": "RecoverableControl.Pending"
+        },
+        {
+          "kind": "inductive",
+          "name": "RecoverableControl.Device"
+        },
+        {
+          "kind": "def",
+          "name": "RecoverableControl.Coherent"
+        },
+        {
+          "kind": "def",
+          "name": "RecoverableControl.Safe"
+        },
+        {
+          "kind": "def",
+          "name": "RecoverableControl.prepare"
+        },
+        {
+          "kind": "def",
+          "name": "RecoverableControl.charge"
+        },
+        {
+          "kind": "def",
+          "name": "RecoverableControl.tick"
+        },
+        {
+          "kind": "def",
+          "name": "RecoverableControl.crash"
+        },
+        {
+          "kind": "def",
+          "name": "RecoverableControl.use"
+        },
+        {
+          "kind": "theorem",
+          "name": "RecoverableControl.pending_blocks_use"
+        },
+        {
+          "kind": "theorem",
+          "name": "RecoverableControl.prepare_preserves_safety"
+        },
+        {
+          "kind": "theorem",
+          "name": "RecoverableControl.charge_keeps_structure"
+        },
+        {
+          "kind": "theorem",
+          "name": "RecoverableControl.charge_preserves_coherence"
+        },
+        {
+          "kind": "theorem",
+          "name": "RecoverableControl.tick_preserves_safety"
+        },
+        {
+          "kind": "theorem",
+          "name": "RecoverableControl.crash_preserves_safety"
+        },
+        {
+          "kind": "inductive",
+          "name": "RecoverableControl.Event"
+        },
+        {
+          "kind": "def",
+          "name": "RecoverableControl.step"
+        },
+        {
+          "kind": "def",
+          "name": "RecoverableControl.SourceLaw"
+        },
+        {
+          "kind": "theorem",
+          "name": "RecoverableControl.step_preserves_safety"
+        },
+        {
+          "kind": "inductive",
+          "name": "RecoverableControl.History"
+        },
+        {
+          "kind": "theorem",
+          "name": "RecoverableControl.interrupted_history_preserves_safety"
+        },
+        {
+          "kind": "theorem",
+          "name": "RecoverableControl.published_history_to_current_certificate"
+        },
+        {
+          "kind": "def",
+          "name": "RecoverableControl.spent"
+        },
+        {
+          "kind": "def",
+          "name": "RecoverableControl.clockTime"
+        },
+        {
+          "kind": "theorem",
+          "name": "RecoverableControl.crash_retains_consumption"
+        },
+        {
+          "kind": "theorem",
+          "name": "RecoverableControl.tick_consumes_one"
+        },
+        {
+          "kind": "def",
+          "name": "RecoverableControl.resumeSteps"
+        },
+        {
+          "kind": "theorem",
+          "name": "RecoverableControl.funded_suffix_publishes"
+        },
+        {
+          "kind": "theorem",
+          "name": "RecoverableControl.crash_keeps_pending"
+        },
+        {
+          "kind": "def",
+          "name": "RecoverableControl.run"
+        },
+        {
+          "kind": "def",
+          "name": "RecoverableControl.initial"
+        },
+        {
+          "kind": "def",
+          "name": "RecoverableControl.scan"
+        },
+        {
+          "kind": "def",
+          "name": "RecoverableControl.noCrash"
+        },
+        {
+          "kind": "def",
+          "name": "RecoverableControl.oneCrash"
+        },
+        {
+          "kind": "def",
+          "name": "RecoverableControl.published"
+        },
+        {
+          "kind": "theorem",
+          "name": "RecoverableControl.staged_change_then_actual_shutdown"
+        },
+        {
+          "kind": "theorem",
+          "name": "RecoverableControl.interrupted_change_then_actual_shutdown"
+        },
+        {
+          "kind": "theorem",
+          "name": "RecoverableControl.interruption_can_exhaust_execution_capacity"
+        },
+        {
+          "kind": "theorem",
+          "name": "RecoverableControl.interruption_delay_can_miss_deadline"
+        },
+        {
+          "kind": "def",
+          "name": "RecoverableControl.partiallyChanged"
+        },
+        {
+          "kind": "def",
+          "name": "RecoverableControl.loseMarker"
+        },
+        {
+          "kind": "theorem",
+          "name": "RecoverableControl.losing_pending_marker_exposes_false_certificate"
+        }
+      ],
+      "dependencies": {
+        "RecoverableControl.SameUntouched": [
+          "propext"
+        ],
+        "RecoverableControl.exact_result_from_untouched": [
+          "propext"
+        ],
+        "RecoverableControl.member_preserves_untouched": [
+          "propext"
+        ],
+        "RecoverableControl.accounting": [],
+        "RecoverableControl.accounting_preserves_coverage": [],
+        "RecoverableControl.Pending": [],
+        "RecoverableControl.Device": [],
+        "RecoverableControl.Coherent": [
+          "propext"
+        ],
+        "RecoverableControl.Safe": [
+          "propext"
+        ],
+        "RecoverableControl.prepare": [
+          "propext"
+        ],
+        "RecoverableControl.charge": [],
+        "RecoverableControl.tick": [
+          "propext"
+        ],
+        "RecoverableControl.crash": [],
+        "RecoverableControl.use": [
+          "propext"
+        ],
+        "RecoverableControl.pending_blocks_use": [
+          "propext"
+        ],
+        "RecoverableControl.prepare_preserves_safety": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RecoverableControl.charge_keeps_structure": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RecoverableControl.charge_preserves_coherence": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RecoverableControl.tick_preserves_safety": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RecoverableControl.crash_preserves_safety": [
+          "propext"
+        ],
+        "RecoverableControl.Event": [],
+        "RecoverableControl.step": [
+          "propext"
+        ],
+        "RecoverableControl.SourceLaw": [
+          "propext"
+        ],
+        "RecoverableControl.step_preserves_safety": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RecoverableControl.History": [
+          "propext"
+        ],
+        "RecoverableControl.interrupted_history_preserves_safety": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RecoverableControl.published_history_to_current_certificate": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RecoverableControl.spent": [],
+        "RecoverableControl.clockTime": [],
+        "RecoverableControl.crash_retains_consumption": [],
+        "RecoverableControl.tick_consumes_one": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RecoverableControl.resumeSteps": [
+          "propext"
+        ],
+        "RecoverableControl.funded_suffix_publishes": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RecoverableControl.crash_keeps_pending": [],
+        "RecoverableControl.run": [
+          "propext"
+        ],
+        "RecoverableControl.initial": [],
+        "RecoverableControl.scan": [],
+        "RecoverableControl.noCrash": [],
+        "RecoverableControl.oneCrash": [],
+        "RecoverableControl.published": [],
+        "RecoverableControl.staged_change_then_actual_shutdown": [
+          "propext"
+        ],
+        "RecoverableControl.interrupted_change_then_actual_shutdown": [
+          "propext"
+        ],
+        "RecoverableControl.interruption_can_exhaust_execution_capacity": [
+          "propext"
+        ],
+        "RecoverableControl.interruption_delay_can_miss_deadline": [
+          "propext"
+        ],
+        "RecoverableControl.partiallyChanged": [
+          "propext"
+        ],
+        "RecoverableControl.loseMarker": [],
+        "RecoverableControl.losing_pending_marker_exposes_false_certificate": [
+          "propext"
+        ]
+      },
+      "theorems": 21
+    }
+  },
+  "new_theorems": 21,
+  "audited_declarations": 47,
+  "compared_records": 27888,
+  "record_counts": {
+    "0": 4716,
+    "1": 20736,
+    "2": 1464,
+    "3": 972
+  },
+  "correspondence": "4716 prefix/redo records, 20736 interrupted-and-resumed histories, 1464 permission/generation preparation records, and 972 marker-loss records match a separately expressed reference. Same-author finite comparison, not independent acceptance or hardware validation.",
+  "artifacts": {
+    "FallibleInspection.lean": "998bca3b8a24fd84c957e11b5b3cf9ef838fba5f76a432b0cbb35255a18c6aa3",
+    "RecoverableControlAudit.lean": "976a69a2af27779f3eb7225b3210874a8c1eab94d14de34582b62a8e78aeb8de",
+    "EffectiveCommand.lean": "7247ca05597f2f916fb409213d3814d48ad9a7037fb95017146d106273d58553",
+    "FaultTolerantCorrection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "RecoverableControl.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "MediatedControlCases.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cases.log": "10c2c241106981285f4049338c1faea5820cac256692fc774318004f36b33268",
+    "RunCases.lean": "707bb07f27668e4e1c2abf8603c063342568c8530d5032823127b3177bd143c6",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "TemporalInspection.lean": "4916c6b1d5cbf38b7cebdd378fa508c799e279c56daaf5359334c4a73bf48694",
+    "RecoverableControlCases.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CorrectionReconfiguration.lean": "4bd7160762f4bb697c72293133c91934e3622674f75990f6328d186abd7425e7",
+    "EvidenceQualifiedCorrection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "AlignmentInquiry.lean": "f40ad6179db326830edcdf8ec511f9069833a361f71181fd60166e0f72c0a23c",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b",
+    "FallibleInspection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "TemporalInspection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference.json": "2147361b8ac6a68b85212ca42a9450de5b3094cf7893901d59543d0503cf77ab",
+    "check_recoverable_control.py": "99bb5496244d7b79d5ecd0f2eca907e6375aa0563268868bb3b9a2d349f825c9",
+    "EvidenceQualifiedCorrection.lean": "a3c87bdfa01dbf6c25da19d4bbc0d6e028744b504d95023c76607379cc20327f",
+    "MediatedControl.lean": "9a412dfca848a09f1b27e60b5551058a83597b1e131728f19096f9dafe888b7a",
+    "RecoverableControlCases.lean": "cc7b10ede6b9eca67ee8cf36d097bacb7e83527c6817c2c2462b85f09896f0fc",
+    "MediatedControlCases.lean": "0bf23de4df2cfa3c7a88b1feef0f42cafdc261b81c7185fd0bafa2cd29539aec",
+    "EffectiveCommand.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FaultTolerantCorrection.lean": "38f978fcabfaadca45c90b2298cf57502b839c6c9b93c3b9d0827d9ac2cb66ac",
+    "RecoverableControl.lean": "d770e224ad7b98d36838c7092f46bf9296f20d9fdb1a582beae538ce774d3b90",
+    "MediatedControl.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "AcquiredCorrection.lean": "5448267c53e610b28bd030dfb1a894be840c307d54cd76e4be3695f196e8cd62",
+    "AcquiredCorrection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "RecoverableControlAudit.log": "de87a8abbca52ae343be217a5ed42384d1fc169f9ba9be2b464579cd80ce0554",
+    "CorrectionReconfiguration.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "AlignmentInquiry.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

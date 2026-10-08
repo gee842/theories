@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "id": "joint-correlation-reduced-dynamics",
+  "title": {
+    "zh": "局部状态不变的关系转化与充分约化",
+    "en": "Relational transformation with unchanged local states and a sufficient reduction"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-08T19:22:44.047319+00:00",
+  "claim": {
+    "zh": "在明示两量子位实振幅片段中，实际相位操作保留双方完整局部密度与联合基底分布，而同一后续受控X操作产生不同控制响应。局部密度对不能统一给出下一控制状态。保留相应共同交叉项的四整数摘要，对指定交互与相位操作的任意有限序列给出精确控制密度和响应。",
+    "en": "In the specified two-qubit real-amplitude fragment, an actual phase operation preserves both complete local densities and the joint basis distribution, while the same subsequent controlled-X gives different control responses. The local density pair cannot uniformly determine the next control state. A four-integer summary retaining the relevant joint cross contribution gives exact control densities and responses for every finite word of the supplied interaction and phase operations."
+  },
+  "hypotheses": [
+    {
+      "zh": "整数实振幅与密度分子；主要物理见证的振幅除以根号2，密度除以2，最终省略见证的范数为1。任意整数输入的一般结论是代数恒等式。",
+      "en": "Integer real amplitudes and density numerators; main physical witnesses divide amplitudes by sqrt 2 and densities by 2, while the final omission witnesses have norm 1. General integer-input conclusions are algebraic identities."
+    },
+    {
+      "zh": "H制备、受控X、第一坐标Z、偏迹与测量含义来自明示量子框架；共同操作的实际访问条件保留。",
+      "en": "H preparation, controlled-X, first-coordinate Z, partial trace and measurement interpretation are supplied by the declared quantum framework; actual joint-operation access remains required."
+    },
+    {
+      "zh": "任意有限词精确性限于两类指定操作及第一坐标响应；复用既有SystemsOrganization的同一状态接续定理。",
+      "en": "All-finite-word exactness is restricted to the two specified operations and first-coordinate responses; it reuses the existing SystemsOrganization theorem preserving reached-state composition."
+    }
+  ],
+  "correspondence": {
+    "zh": "同一制备中分化的两个坐标表示操作角色。相位实际改变共同振幅关系，再以相同交互和测量比较后续；summary_update_exact的输出满足旧evolve_semiconjugacy的输入，summary_recovers_control连接测量。标准量子效应及一般约化定理不作为新发现。",
+    "en": "Two coordinates differentiate operation roles within one preparation. Phase changes the joint amplitude relation before a common interaction and measurement compare continuations. summary_update_exact supplies the old evolve_semiconjugacy premise, and summary_recovers_control connects its output to measurement. Neither the standard quantum effect nor the general reduction theorem is claimed as a new discovery."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalReduction.lean",
+  "aliases": [
+    "Generative.RelationalReduction.actual_phase_preserves_both_local_states",
+    "Generative.RelationalReduction.actual_phase_preserves_basis_masses",
+    "Generative.RelationalReduction.same_interaction_distinguishes_relation",
+    "Generative.RelationalReduction.no_local_pair_update",
+    "Generative.RelationalReduction.summary_update_exact",
+    "Generative.RelationalReduction.every_finite_control_response_exact",
+    "Generative.RelationalReduction.summary_omits_other_relations"
+  ],
+  "dependencies": [],
+  "related": [
+    {
+      "id": "control-coherence-loss",
+      "detail": {
+        "zh": "形式源码复用该模块的操作与约化定义；此前丧失／恢复定理本身不是新障碍的推理前提。",
+        "en": "The formal source reuses that module’s operation and reduction definitions; the prior loss/recovery theorem is not itself a premise of the new obstruction."
+      }
+    },
+    {
+      "id": "effective-capacity-and-eventual-reachability",
+      "detail": {
+        "zh": "同一变化研究中的独立范围：既有准备步骤界与本次共同关系在局部状态不变时的变化；无形式证明依赖。",
+        "en": "Distinct scopes in the same change study: preparation bounds and joint transformation with unchanged local states; no formal proof dependency."
+      }
+    },
+    {
+      "id": "theory-of-becoming-foundation",
+      "detail": {
+        "zh": "在Becoming整体内接通具体关系转化；不把局部构造当成整个理论的演绎必要性。",
+        "en": "Connects a concrete relational transformation within Becoming as a whole; it does not establish the whole theory’s deductive necessity."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalReduction.lean",
+      "detail": {
+        "zh": "no_local_pair_update保留双方完整局部状态却反驳统一下一步更新；summary_omits_other_relations显示正面摘要仍省略寄存器关系，扩充操作范围需重新验证。",
+        "en": "no_local_pair_update preserves both full local states but refutes a uniform next-step update; summary_omits_other_relations shows the sufficient summary still omits register relations, so enlarged operation scope requires renewed validation."
+      }
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md",
+      "detail": {
+        "zh": "完整量子状态与指定操作同样解释全部结果；此次反例针对局部约化，未反驳强的已有量子解释。",
+        "en": "The full quantum state and specified operators explain all results equally; the obstruction targets the local reduction and does not refute the adequate conventional quantum account."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "未证明任意复数或混合态的全量子行为、所有操作下的最小摘要、物理实验、因果不可分离、普遍本体或伦理权威。Becoming整体的强零实质公理目标保持。",
+    "en": "Does not prove full behavior for arbitrary complex or mixed states, a minimal summary for every operation, hardware realization, causal nonseparability, universal ontology or ethical authority. The strong zero-substantive-axiom goal for Becoming as a whole remains open."
+  },
+  "validation_scope": {
+    "zh": "Lean4.29.1新模块11项定理声明／25项审计通过，21空、4仅propext；继承74项定理／123项审计分列，总148项审计134空14标准。源码、导入闭包、签名与回执绑定；作者反审，无独立代理验收。",
+    "en": "Lean 4.29.1 checks 11 module theorem declarations / 25 audits, 21 empty and four using only propext. Separately credits 74 inherited theorems / 123 audits: total 148, 134 empty and 14 standard. Source, import closure, signatures and receipt bound; author counterreview, no independent-agent acceptance."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "role": "proof",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "declarations": [
+        "Generative.trace_append_iff"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SystemsOrganization.lean",
+      "role": "proof",
+      "sha256": "fd9622e4b76602f4f97bc9290798d01b4a7c2f3925023c268f5d3fb75e3dbf8b",
+      "declarations": [
+        "SystemsOrganization.evolve_semiconjugacy"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/OperativeCoherence.lean",
+      "role": "proof",
+      "sha256": "27028964458cad91d16df534203331ae5e9f295375e5ef027bcc9da0eb1394c8",
+      "declarations": [
+        "Generative.OperativeCoherence.recordBranch",
+        "Generative.OperativeCoherence.controlDensity",
+        "Generative.OperativeCoherence.response"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalReduction.lean",
+      "role": "proof",
+      "sha256": "06894fa52b7758335ba720c8b51df037cd21286c4db1461fc28fb70699898a9b",
+      "declarations": [
+        "Generative.RelationalReduction.actual_phase_preserves_both_local_states",
+        "Generative.RelationalReduction.actual_phase_preserves_basis_masses",
+        "Generative.RelationalReduction.same_interaction_distinguishes_relation",
+        "Generative.RelationalReduction.no_local_pair_update",
+        "Generative.RelationalReduction.summary_update_exact",
+        "Generative.RelationalReduction.every_finite_control_response_exact",
+        "Generative.RelationalReduction.summary_omits_other_relations"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-reduction-checks/20261008T185413.598553Z/verification.json",
+      "role": "receipt",
+      "sha256": "6be2a6a159b4903f6495badde969dc1cb414b72e080ad1c66f1d4efb75ad0953",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "1f79e8b5dceba40938728e48284da852fe575471a0ac2e3c7b663f14e111df66",
+      "declarations": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY-OF-BECOMING.md",
+      "role": "statement",
+      "sha256": "31e052b04830b1f89f8538d9501b52a8336078fa4e18c6304e2648f09606cc8a",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_relational_reduction.py",
+      "role": "review",
+      "sha256": "c83bcd121f817076d69faf29d431c873c782c34bc50d3c297738aa11d594210a",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-reduction-checks/20261008T185413.598553Z/verification.json",
+      "sha256_pointer": "/modules/0/source_sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SystemsOrganization.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-reduction-checks/20261008T185413.598553Z/verification.json",
+      "sha256_pointer": "/modules/1/source_sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/OperativeCoherence.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-reduction-checks/20261008T185413.598553Z/verification.json",
+      "sha256_pointer": "/modules/2/source_sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalReduction.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-reduction-checks/20261008T185413.598553Z/verification.json",
+      "sha256_pointer": "/modules/3/source_sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "将已取得的关系保留条件用于Becoming整体的构成性论证；不重开此已完成操作接口，不要求每次变化都具生成性，也不把另一局部模型当作普遍演绎。",
+    "en": "Use the established relation-retention condition in the constitutive account of Becoming as a whole. Do not reopen this completed operational interface, require every change to be generative, or treat another local model as the universal deduction."
+  },
+  "history": [
+    {
+      "zh": "2026-10-09：在原变化研究第12节接续已查的共同作用模块，给出双方完整局部状态不变的实际转化及任意有限词充分约化；保留首次成功快照和澄清归一化注释后的最终检查。标准物理和继承的约化定理分别署名。",
+      "en": "2026-10-09: §12 of the existing change study extends the checked joint-operation module with actual transformation preserving both full local states and a sufficient reduction for arbitrary finite words. Retains the first successful snapshot and the final check after clarifying a normalization comment. Credits conventional physics and the inherited reduction theorem separately."
+    },
+    {
+      "en": "9 October 2026: the statement chapter gained an appended section on renewing and consuming formation (relational-renewal-classification). The earlier text is byte-identical; this record's claim, proof and receipt are unchanged. Hash updated after reading the change.",
+      "zh": "2026年10月9日：陈述章末尾新增“更新与消耗”一节（relational-renewal-classification）。原有文字逐字节不变；本记录的主张、证明与回执不变。读过改动后更新哈希。"
+    },
+    {
+      "zh": "2026-10-09：核读新增有限修复解释及共享章中不可返回前提的明确化。仅更新所涉陈述／整合来源版本；原主张、证明与回执保持，正净修复不满足旧不可返回的前提。",
+      "en": "2026-10-09: Reviewed the added finite-repair explanation and explicit no-return premise in the shared chapter. Updates only affected statement/integration source versions; prior claims, proofs and receipts remain. Positive net repair does not satisfy the earlier no-return premise."
+    },
+    {
+      "zh": "2026-10-09：核读共享章中并行新增的 G0 对象修正及 C 条件比较，并核读其原指令及整合节。该比较属于另项研究，本记录的局部动力学、证明与范围不变；不将它计入本次数学验收。",
+      "en": "2026-10-09: Read concurrent clarification of G0’s object and the C-conditional comparison in the shared chapter, with its source instruction and integration section. That comparison belongs to another study; this record’s local dynamics, proof and scope remain unchanged and do not claim its mathematical acceptance."
+    }
+  ]
+}

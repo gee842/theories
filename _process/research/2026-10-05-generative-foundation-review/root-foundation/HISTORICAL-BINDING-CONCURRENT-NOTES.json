@@ -1,0 +1,61 @@
+{
+  "recorded_at_utc": "2026-10-08T18:35:34.192737+00:00",
+  "base_commit": "1e9b5ed081c84c85ef919b3dfaee41c91ddf8b91",
+  "head": "1e9b5ed081c84c85ef919b3dfaee41c91ddf8b91",
+  "scope": "Incoming work noted without claim of global scientific integration. No commit, relocation, cleanup or unrelated source-hash refresh.",
+  "incoming": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/results/records/context-sensitive-updating-correspondence.json",
+      "sha256": "7c245425d13ef15906d983e87b6f11b019673db3e8df191f0dc64473becea315",
+      "assessment": "Read the new record: separate 24-person motor-updating empirical contribution. No dataset reanalysis, acceptance upgrade or source change performed here."
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md",
+      "sha256": "eb17a9cca25bea1bf050838379553efa0bf69764a3adbcc2a5e0713f2ebe42ca",
+      "assessment": "Read the consolidation/reuse scope; no scientific claim newly accepted from its labels."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/results/records/formed-goal-revision-continuation.json",
+      "sha256": "7e734b8e9cbffec462f19070164e764718d8bc735516c818993d4c696a791f2e",
+      "assessment": "Concurrent result discovered in generated navigation; scientific source and receipt not independently assessed this round."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/results/records/mediated-evidence-transport.json",
+      "sha256": "5069c8454435421f3e3affd532fa3a3820afc6435d5c9c299d8a2a83b63922ef",
+      "assessment": "Concurrent result discovered; not absorbed into the historical-binding proof."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/results/records/recoverable-mediated-change.json",
+      "sha256": "9526e437f35a9ab9f12f8fb49ddd4305d4015af3c343b621c7f4ff6a281c25cf",
+      "assessment": "Concurrent result discovered; not absorbed into the historical-binding proof."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BECOMING-FOUNDATION.md",
+      "sha256": "cb1c529f44d4b3b51c6131ee5dbaa80dcb08030ec3f87148b784793a71df436f",
+      "assessment": "Concurrent foundation edits preserved; their transient source drift was resolved by their owner before final global check."
+    }
+  ],
+  "owned_result": "historical-source-binding",
+  "owned_validation": "Lean receipt and 240 local-link checks passed; seven selected records passed canonical freshness checks.",
+  "whole_repository_validation": {
+    "research_render_exit": 2,
+    "research_check_exit": 2,
+    "metadata_errors": [],
+    "remaining_source_drift_ids": [
+      "classification-robust-generative-comparison",
+      "organizational-formation-from-generative-comparison"
+    ],
+    "source": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+    "action": "Preserved pending review; healthy records rendered. No hash refresh."
+  },
+  "full_goal_complete": false,
+  "final_whole_repository_check": {
+    "checked_at_utc": "2026-10-08T18:36:13.152031+00:00",
+    "command": "make research-check",
+    "exit_code": 0,
+    "records": 69,
+    "errors": [],
+    "source_drift": [],
+    "note": "Earlier unrelated source drift was resolved concurrently. This round did not refresh those source hashes; the historical exit-2 check above remains recorded."
+  }
+}

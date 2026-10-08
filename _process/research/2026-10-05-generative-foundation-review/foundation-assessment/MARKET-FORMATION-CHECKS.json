@@ -1,0 +1,159 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T18:48:12.984197+00:00",
+  "new_primary_sources": 7,
+  "new_math_theorems": 0,
+  "source_receipt_bindings": "matched original bytes, manifest and checker",
+  "owned_links": [
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormationRoot.lean"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "target": "../../../../experiments/market-generativity/meta-attractor/CommonOrganization.lean"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "target": "../root-foundation/DIRECT-PORT-RENEWAL.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "target": "../../../../sources/market-generativity/libreoffice-formation/README.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "target": "../../../../experiments/market-generativity/formation-correspondence/libreoffice-source-checks.json"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#formed-independent-continuation"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md",
+      "target": "../results/records/formed-software-continuation.md"
+    },
+    {
+      "source": "sources/market-generativity/libreoffice-formation/README.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#formed-independent-continuation"
+    },
+    {
+      "source": "sources/market-generativity/libreoffice-formation/README.md",
+      "target": "manifest.json"
+    },
+    {
+      "source": "sources/market-generativity/libreoffice-formation/README.md",
+      "target": "2010-09-28-launch.html"
+    },
+    {
+      "source": "sources/market-generativity/libreoffice-formation/README.md",
+      "target": "2011-01-25-first-stable.html"
+    },
+    {
+      "source": "sources/market-generativity/libreoffice-formation/README.md",
+      "target": "2011-02-25-endowment.html"
+    },
+    {
+      "source": "sources/market-generativity/libreoffice-formation/README.md",
+      "target": "2011-03-22-continued-release.html"
+    },
+    {
+      "source": "sources/market-generativity/libreoffice-formation/README.md",
+      "target": "2011-03-31-ubuntu-beta.html"
+    },
+    {
+      "source": "sources/market-generativity/libreoffice-formation/README.md",
+      "target": "2012-02-20-incorporation.html"
+    },
+    {
+      "source": "sources/market-generativity/libreoffice-formation/README.md",
+      "target": "2012-10-apache-continuation.html"
+    },
+    {
+      "source": "sources/market-generativity/libreoffice-formation/README.md",
+      "target": "../../../experiments/market-generativity/formation-correspondence/check_libreoffice_sources.py"
+    },
+    {
+      "source": "sources/market-generativity/libreoffice-formation/README.md",
+      "target": "../../../experiments/market-generativity/formation-correspondence/libreoffice-source-checks.json"
+    }
+  ],
+  "selected_registry_errors": [],
+  "selected_source_drift": [],
+  "unrelated_registry_errors": [],
+  "unrelated_source_drift": [
+    {
+      "id": "becoming-context-coherence",
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
+      "reviewed_sha256": "c0fddfdad705e45b0dd0f173160be6ee9572ef9bc888b2dea4682fa2ca1f37b0",
+      "current_sha256": "e0f0849f885d3c84c24e18772554583398144aa5cc6f357e64db666b00cba18c"
+    },
+    {
+      "id": "becoming-context-coherence",
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BECOMING-FOUNDATION.md",
+      "reviewed_sha256": "cb1c529f44d4b3b51c6131ee5dbaa80dcb08030ec3f87148b784793a71df436f",
+      "current_sha256": "7805d07d45214bdbec975352b16b0e69fe6ff686c4e48f792bc62840c6be98fa"
+    },
+    {
+      "id": "theory-of-becoming-foundation",
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BECOMING-FOUNDATION.md",
+      "reviewed_sha256": "cb1c529f44d4b3b51c6131ee5dbaa80dcb08030ec3f87148b784793a71df436f",
+      "current_sha256": "7805d07d45214bdbec975352b16b0e69fe6ff686c4e48f792bc62840c6be98fa"
+    },
+    {
+      "id": "theory-of-becoming-foundation",
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
+      "reviewed_sha256": "c0fddfdad705e45b0dd0f173160be6ee9572ef9bc888b2dea4682fa2ca1f37b0",
+      "current_sha256": "e0f0849f885d3c84c24e18772554583398144aa5cc6f357e64db666b00cba18c"
+    }
+  ],
+  "chain_metadata_errors": [
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/organizational-formation-from-generative-comparison.md",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/situated-recovery-empirical-correspondence.md",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/context-sensitive-updating-correspondence.md",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/transition-grouping-word-partition.md"
+  ],
+  "pending_chain_versions": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md",
+      "theories/shengsheng-buxi-generative-existence/results/records/market-supported-finite-transition.md",
+      "experiments/market-generativity/formal/README.md",
+      "theories/shengsheng-buxi-generative-existence/results/records/recurrent-chain-assembly.json",
+      "theories/shengsheng-buxi-generative-existence/results/records/classification-robust-generative-comparison.json",
+      "theories/shengsheng-buxi-generative-existence/results/records/classification-robust-generative-comparison.md",
+      "theories/shengsheng-buxi-generative-existence/results/records/market-partial-correction-boundary.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BECOMING-FOUNDATION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md"
+    ],
+    "removed_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "theories/meta-attractor/COMMON-ORGANIZATION.md"
+    ]
+  },
+  "concurrent_work": {
+    "root-foundation/RELATIONAL-BECOMING-INTEGRATION.md": "Read and credited preparation/realization and prior direct port renewal; no new adapter or acceptance.",
+    "root-foundation/SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md": "Concurrent M20 memory-updating additions preserved; not used as evidence for this case.",
+    "root-foundation/COLLECTIVE-DESTRUCTION-INTEGRATION.md": "Concurrent common-task work preserved; not incorporated as a premise."
+  },
+  "scope": "Scoped evidence and documentary integration checks only. Author counterreview; no independent agent, causal identification, financial audit, software execution, Lean rerun or full-repository certification."
+}

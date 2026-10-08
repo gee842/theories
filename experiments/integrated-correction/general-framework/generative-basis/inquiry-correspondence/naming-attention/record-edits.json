@@ -1,0 +1,890 @@
+{
+  "reviewed_at_utc": "2026-10-08T14:05:56.476428+00:00",
+  "existing_records": {
+    "acquired-binding-compositional-use": {
+      "before": {
+        "schema_version": 1,
+        "kind": "theorem",
+        "status": "recorded-checked",
+        "family": "F09",
+        "reviewed_at_utc": "2026-10-08T13:41:46.812488+00:00",
+        "related": [],
+        "id": "acquired-binding-compositional-use",
+        "title": {
+          "zh": "取得的绑定接通组合使用",
+          "en": "Acquired bindings enter compositional use"
+        },
+        "claim": {
+          "zh": "指定经历形成分节并由四次各自歧义的接触取得形式到已有操作的绑定；对二词编码的任意有限序列，学习后的解释等于相应原子表达的组合。有限支持下另有实际执行见证。",
+          "en": "The specified history forms grouping and acquires form-to-known-operation bindings from four individually ambiguous encounters. Interpretation of every finite sequence in the two-word encoding equals assembly of its corresponding atomic expressions. A separate finite-support witness executes the result."
+        },
+        "hypotheses": [
+          {
+            "zh": "既有操作、基本分类、分节算法、三项已知操作范围、交集更新和接触安排给定；成功史保留足够支持。",
+            "en": "Existing operations, elementary categories, grouping algorithm, three-operation repertoire, intersection update and encounter schedule are supplied; the successful history has sufficient support."
+          },
+          {
+            "zh": "一般正确性要求目标在候选范围且每个相关获准接触包含该目标；纠正时来源排除判断另行给定。",
+            "en": "General correctness requires the target in the repertoire and in each relevant admitted encounter; source-exclusion judgments for correction are separately supplied."
+          }
+        ],
+        "correspondence": {
+          "zh": "取得的是新形式指向已可用操作的关系；场景列表代表实际可取得的候选，需有独立的感知与社会对应。",
+          "en": "What is acquired is a new form-to-available-operation relationship; scene lists represent accessible alternatives and require independent perceptual/social correspondence."
+        },
+        "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean",
+        "aliases": [
+          "Generative.AcquiredBinding.acquired_binding_and_grouping_compose"
+        ],
+        "dependencies": [
+          {
+            "id": "transition-grouping-word-partition",
+            "relation": "formal-reuse",
+            "detail": {
+              "zh": "直接调用分节词划分定理，再以实际取得的解码结果组合。",
+              "en": "Directly invokes the word-partition theorem, then composes it with acquired decoding."
+            },
+            "interface": {
+              "output": {
+                "zh": "编码序列的分节等于词列表。",
+                "en": "Segmentation of an encoded sequence equals its word list."
+              },
+              "input": {
+                "zh": "readForms 在词列表上使用取得的绑定。",
+                "en": "readForms consumes the word list through acquired bindings."
+              },
+              "conditions": {
+                "zh": "新学习史保留相同 idealBond，且每个词的绑定已由接触取得；无固定 decodeChunk 调用。",
+                "en": "The new history preserves idealBond and acquires each word binding from encounters; it does not invoke fixed decodeChunk."
+              },
+              "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean"
+            }
+          }
+        ],
+        "counterexamples": [
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean",
+            "detail": {
+              "zh": "遗漏真实候选可造成错误唯一绑定；重复歧义不辨明意义；误排真实来源保留错误，有限支持可阻断执行。",
+              "en": "Omitting the target can create a wrong unique binding; repeated ambiguity does not identify a meaning; excluding sound evidence preserves error, and finite support can prevent execution."
+            }
+          }
+        ],
+        "limitations": {
+          "zh": "未推导已有操作的全部意义、分类与注意起源，或来源判断的可靠性；不是完整语义、婴儿神经机制或演化心理证明。",
+          "en": "Does not derive the full meanings of prior operations, category/attention origins or source-judgment reliability; not a proof of complete semantics, infant neural mechanisms or evolutionary psychology."
+        },
+        "validation_scope": {
+          "zh": "Lean 4.29.1 新编23项定理／41项声明审计，247项继承审计分列。作者反审与原始证据比较；无独立验收或新实验。",
+          "en": "Fresh Lean 4.29.1 build: 23 new theorems / 41 declaration audits, with 247 inherited audits separately rebuilt. Author counterreview and primary-evidence comparison; no independent acceptance or new experiment."
+        },
+        "references": [
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean",
+            "role": "proof",
+            "sha256": "0395ecdcce1d3d4712930497ace63d030279e3fe610a60f945d372e45878946d",
+            "declarations": [
+              "Generative.AcquiredBinding.acquired_binding_and_grouping_compose",
+              "Generative.AcquiredBinding.unique_resolution_is_correct_under_coverage",
+              "Generative.AcquiredBinding.acquired_bindings_reach_actual_compositional_response",
+              "Generative.AcquiredBinding.excluding_the_sound_encounters_preserves_the_wrong_binding"
+            ]
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-binding-verification.json",
+            "role": "receipt",
+            "sha256": "397cdc260034c70c0f28aa8f5d96078fc445ffe38777edbea0bbe77f7eefa661",
+            "declarations": []
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+            "role": "integration",
+            "sha256": "ae2a57df8613a5a0919d1a14ac620442b34f3e22e89ce82ebde19eda586b2e35",
+            "declarations": []
+          }
+        ],
+        "proof_bindings": [
+          {
+            "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean",
+            "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-binding-verification.json",
+            "sha256_pointer": "/source_sha256/AcquiredBinding",
+            "success_pointer": "/status",
+            "success_value": "passed"
+          }
+        ],
+        "next_delta": {
+          "zh": "复用 encounter-selection-and-revision：取得的访问与歧义现接通实际选择及新学习；下一连接是维持覆盖的选择性注意与相互沟通协调的发育对应。",
+          "en": "Reuse encounter-selection-and-revision: acquired access and ambiguity now enter actual selection and further learning. Next is developmental correspondence for selective attention and reciprocal communicative coordination sustaining coverage."
+        },
+        "history": [
+          {
+            "zh": "2026-10-08：接通取得的分节、由歧义接触形成的绑定和已有组合使用；固定解码被替代，错误与来源判断前提保留。",
+            "en": "2026-10-08: joined acquired grouping, bindings learned from ambiguous encounters and existing compositional use; replaced the fixed decoder while preserving error and source-judgment premises."
+          },
+          {
+            "zh": "2026-10-08：审读原研究第11–13节，新空间接触史正式供给原绑定输入；本记录的证明和原范围未变，下一连接更新。",
+            "en": "2026-10-08: reviewed study sections 11–13; a spatial encounter history formally supplies the original binding inputs. This record’s proof and scope are unchanged; the next connection is updated."
+          },
+          {
+            "zh": "2026-10-08：核读原研究第14–16节；选择经历及访问预测修订的新连接已实查，原证明范围不变，未宣告完整心理解释。",
+            "en": "2026-10-08: reviewed study sections 14–16; encounter selection and access-prediction revision now have a checked connection. This proof’s original scope remains unchanged; no complete psychological explanation is claimed."
+          }
+        ]
+      },
+      "after": {
+        "schema_version": 1,
+        "kind": "theorem",
+        "status": "recorded-checked",
+        "family": "F09",
+        "reviewed_at_utc": "2026-10-08T14:05:56.476428+00:00",
+        "related": [],
+        "id": "acquired-binding-compositional-use",
+        "title": {
+          "zh": "取得的绑定接通组合使用",
+          "en": "Acquired bindings enter compositional use"
+        },
+        "claim": {
+          "zh": "指定经历形成分节并由四次各自歧义的接触取得形式到已有操作的绑定；对二词编码的任意有限序列，学习后的解释等于相应原子表达的组合。有限支持下另有实际执行见证。",
+          "en": "The specified history forms grouping and acquires form-to-known-operation bindings from four individually ambiguous encounters. Interpretation of every finite sequence in the two-word encoding equals assembly of its corresponding atomic expressions. A separate finite-support witness executes the result."
+        },
+        "hypotheses": [
+          {
+            "zh": "既有操作、基本分类、分节算法、三项已知操作范围、交集更新和接触安排给定；成功史保留足够支持。",
+            "en": "Existing operations, elementary categories, grouping algorithm, three-operation repertoire, intersection update and encounter schedule are supplied; the successful history has sufficient support."
+          },
+          {
+            "zh": "一般正确性要求目标在候选范围且每个相关获准接触包含该目标；纠正时来源排除判断另行给定。",
+            "en": "General correctness requires the target in the repertoire and in each relevant admitted encounter; source-exclusion judgments for correction are separately supplied."
+          }
+        ],
+        "correspondence": {
+          "zh": "取得的是新形式指向已可用操作的关系；场景列表代表实际可取得的候选，需有独立的感知与社会对应。",
+          "en": "What is acquired is a new form-to-available-operation relationship; scene lists represent accessible alternatives and require independent perceptual/social correspondence."
+        },
+        "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean",
+        "aliases": [
+          "Generative.AcquiredBinding.acquired_binding_and_grouping_compose"
+        ],
+        "dependencies": [
+          {
+            "id": "transition-grouping-word-partition",
+            "relation": "formal-reuse",
+            "detail": {
+              "zh": "直接调用分节词划分定理，再以实际取得的解码结果组合。",
+              "en": "Directly invokes the word-partition theorem, then composes it with acquired decoding."
+            },
+            "interface": {
+              "output": {
+                "zh": "编码序列的分节等于词列表。",
+                "en": "Segmentation of an encoded sequence equals its word list."
+              },
+              "input": {
+                "zh": "readForms 在词列表上使用取得的绑定。",
+                "en": "readForms consumes the word list through acquired bindings."
+              },
+              "conditions": {
+                "zh": "新学习史保留相同 idealBond，且每个词的绑定已由接触取得；无固定 decodeChunk 调用。",
+                "en": "The new history preserves idealBond and acquires each word binding from encounters; it does not invoke fixed decodeChunk."
+              },
+              "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean"
+            }
+          }
+        ],
+        "counterexamples": [
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean",
+            "detail": {
+              "zh": "遗漏真实候选可造成错误唯一绑定；重复歧义不辨明意义；误排真实来源保留错误，有限支持可阻断执行。",
+              "en": "Omitting the target can create a wrong unique binding; repeated ambiguity does not identify a meaning; excluding sound evidence preserves error, and finite support can prevent execution."
+            }
+          }
+        ],
+        "limitations": {
+          "zh": "未推导已有操作的全部意义、分类与注意起源，或来源判断的可靠性；不是完整语义、婴儿神经机制或演化心理证明。",
+          "en": "Does not derive the full meanings of prior operations, category/attention origins or source-judgment reliability; not a proof of complete semantics, infant neural mechanisms or evolutionary psychology."
+        },
+        "validation_scope": {
+          "zh": "Lean 4.29.1 新编23项定理／41项声明审计，247项继承审计分列。作者反审与原始证据比较；无独立验收或新实验。",
+          "en": "Fresh Lean 4.29.1 build: 23 new theorems / 41 declaration audits, with 247 inherited audits separately rebuilt. Author counterreview and primary-evidence comparison; no independent acceptance or new experiment."
+        },
+        "references": [
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean",
+            "role": "proof",
+            "sha256": "0395ecdcce1d3d4712930497ace63d030279e3fe610a60f945d372e45878946d",
+            "declarations": [
+              "Generative.AcquiredBinding.acquired_binding_and_grouping_compose",
+              "Generative.AcquiredBinding.unique_resolution_is_correct_under_coverage",
+              "Generative.AcquiredBinding.acquired_bindings_reach_actual_compositional_response",
+              "Generative.AcquiredBinding.excluding_the_sound_encounters_preserves_the_wrong_binding"
+            ]
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-binding-verification.json",
+            "role": "receipt",
+            "sha256": "397cdc260034c70c0f28aa8f5d96078fc445ffe38777edbea0bbe77f7eefa661",
+            "declarations": []
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+            "role": "integration",
+            "sha256": "61542640303c7eea14c390f927735c51f0c4cbc4a5162bee67a7185a836af80f",
+            "declarations": []
+          }
+        ],
+        "proof_bindings": [
+          {
+            "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredBinding.lean",
+            "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-binding-verification.json",
+            "sha256_pointer": "/source_sha256/AcquiredBinding",
+            "success_pointer": "/status",
+            "success_value": "passed"
+          }
+        ],
+        "next_delta": {
+          "zh": "复用已有选择及绑定成果；公开注视记录现限制自动覆盖。下一连接是可取得的协调／可靠性线索如何形成经历接纳或加权，再影响保留、指称与纠正，不给学习者注入观察者所知的目标。",
+          "en": "Reuse completed selection and binding. Public gaze records now constrain automatic coverage. Next connect locally available coordination/reliability cues to encounter admission or weighting, retained reference and correction without supplying observer-known target truth."
+        },
+        "history": [
+          {
+            "zh": "2026-10-08：接通取得的分节、由歧义接触形成的绑定和已有组合使用；固定解码被替代，错误与来源判断前提保留。",
+            "en": "2026-10-08: joined acquired grouping, bindings learned from ambiguous encounters and existing compositional use; replaced the fixed decoder while preserving error and source-judgment premises."
+          },
+          {
+            "zh": "2026-10-08：审读原研究第11–13节，新空间接触史正式供给原绑定输入；本记录的证明和原范围未变，下一连接更新。",
+            "en": "2026-10-08: reviewed study sections 11–13; a spatial encounter history formally supplies the original binding inputs. This record’s proof and scope are unchanged; the next connection is updated."
+          },
+          {
+            "zh": "2026-10-08：核读原研究第14–16节；选择经历及访问预测修订的新连接已实查，原证明范围不变，未宣告完整心理解释。",
+            "en": "2026-10-08: reviewed study sections 14–16; encounter selection and access-prediction revision now have a checked connection. This proof’s original scope remains unchanged; no complete psychological explanation is claimed."
+          },
+          {
+            "zh": "2026-10-08：核读新增公开命名／注视分析；自动所指注视的经验对应受限，既有覆盖前提、形式结论及原实查范围不变。",
+            "en": "2026-10-08: reviewed the appended public naming/gaze analysis. Automatic target-gaze correspondence is limited; the existing coverage premises, formal conclusions and original verification scope are unchanged."
+          }
+        ]
+      }
+    },
+    "enacted-scene-binding": {
+      "before": {
+        "schema_version": 1,
+        "id": "enacted-scene-binding",
+        "title": {
+          "zh": "行动形成可供绑定的场景",
+          "en": "Action forms scenes available for binding"
+        },
+        "kind": "theorem",
+        "status": "recorded-checked",
+        "family": "F09",
+        "reviewed_at_utc": "2026-10-08T13:41:46.812488+00:00",
+        "claim": {
+          "zh": "指定空间关系与有支持的移动／命名史产生已有绑定构造的精确解释输入，因此其任意有限编码序列的解释结果继续成立；另外有实际响应及访问、保留、时序失败见证。",
+          "en": "The specified spatial arrangement and supported movement/naming history produce the previous binding construction’s exact interpretation inputs, preserving interpretation of every finite encoded sequence; separate witnesses cover actual response and access, retention and timing failures."
+        },
+        "hypotheses": [
+          {
+            "zh": "给定整数二维位置、Manhattan 距离与范围2、三个已识别操作位置、移动规律、命名约定和安排。",
+            "en": "Integer two-dimensional positions, Manhattan distance and range two, three identified operation sites, movement law, naming convention and schedule are supplied."
+          },
+          {
+            "zh": "复用已取得分节与绑定架构；成功史有37单位声明支持，移动消耗5单位。",
+            "en": "The acquired grouping/binding architecture is reused; the successful history has 37 declared support units, including five consumed by movement."
+          }
+        ],
+        "correspondence": {
+          "zh": "接收位置与被命名位置是同一局部安排的关系角色。范围表示可取得性，未独自解释完整视野、注意、身体或沟通意图。",
+          "en": "Receiving and named positions are relational roles within one local arrangement. Range represents accessibility; it does not itself explain a full visual field, attention, bodies or communicative intention."
+        },
+        "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean",
+        "aliases": [
+          "Generative.EnactedScene.enacted_access_enters_all_sequence_interpretation"
+        ],
+        "dependencies": [
+          {
+            "id": "acquired-binding-compositional-use",
+            "relation": "formal-reuse",
+            "detail": {
+              "zh": "空间接触史产生旧绑定构造的解释输入，直接调用其任意序列定理。",
+              "en": "The spatial history produces the prior construction’s interpretation inputs and directly invokes its all-sequence theorem."
+            },
+            "interface": {
+              "output": {
+                "zh": "给定取得绑定后，编码序列解释等于相应原子消息组合。",
+                "en": "After the stated acquired bindings, encoded-sequence interpretation equals the corresponding atomic message assembly."
+              },
+              "input": {
+                "zh": "新移动史保留相同日志、候选范围、绑定记录与排除记录。",
+                "en": "The movement history has the same log, repertoire, binding records and exclusions."
+              },
+              "conditions": {
+                "zh": "解释输入相同，不要求整个状态或支出历史相同；额外移动成本保留。",
+                "en": "Interpretation inputs match; whole-state or expenditure-history identity is not assumed, and movement costs remain."
+              },
+              "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean"
+            }
+          }
+        ],
+        "related": [],
+        "counterexamples": [
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean",
+            "detail": {
+              "zh": "位置和名称次数相同可因时序产生相反绑定；清楚视野漏掉所指可误学；访问无保留不形成绑定，支持不足阻断移动或执行。",
+              "en": "Matching positions and name counts can yield inverted bindings through timing; a clear view omitting the target can mislead; access without retention does not bind, and insufficient support prevents movement or response."
+            }
+          }
+        ],
+        "limitations": {
+          "zh": "是给定安排下的新输入接通，不是移动安排自发形成、完整注意、知觉分类、意向理解或演化心理证明。",
+          "en": "A new input composition under a supplied schedule, not a proof of schedule formation, complete attention, perceptual categories, intention understanding or evolutionary psychology."
+        },
+        "validation_scope": {
+          "zh": "Lean 4.29.1 新查16项定理／29项声明审计，288项继承审计分列；作者反审和含未泛化结果的原始文献比较，无新实验或独立验收。",
+          "en": "Lean 4.29.1: 16 new theorems / 29 declaration audits, with 288 inherited audits separately rebuilt; author counterreview and primary comparison including failed generalization, without a new experiment or independent acceptance."
+        },
+        "references": [
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean",
+            "role": "proof",
+            "sha256": "e801ec6a3187354d9ad0c211687ee6ac655b7845f984fd53e2fad23798715631",
+            "declarations": [
+              "Generative.EnactedScene.enacted_scenes_supply_the_previous_binding_inputs",
+              "Generative.EnactedScene.enacted_access_enters_all_sequence_interpretation",
+              "Generative.EnactedScene.enacted_access_reaches_actual_response",
+              "Generative.EnactedScene.unchanged_position_and_name_counts_do_not_establish_coordination",
+              "Generative.EnactedScene.a_clear_view_can_omit_the_named_target"
+            ]
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/enacted-scene-verification.json",
+            "role": "receipt",
+            "sha256": "8a9fc92ce6eda7cf26ae79941ce9de120e50c420730b5d9f6755e44c9652c431",
+            "declarations": []
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+            "role": "integration",
+            "sha256": "ae2a57df8613a5a0919d1a14ac620442b34f3e22e89ce82ebde19eda586b2e35",
+            "declarations": []
+          }
+        ],
+        "proof_bindings": [
+          {
+            "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean",
+            "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/enacted-scene-verification.json",
+            "sha256_pointer": "/source_sha256/EnactedScene",
+            "success_pointer": "/status",
+            "success_value": "passed"
+          }
+        ],
+        "next_delta": {
+          "zh": "复用 encounter-selection-and-revision：取得的访问与歧义现接通实际选择及新学习；下一连接是维持覆盖的选择性注意与相互沟通协调的发育对应。",
+          "en": "Reuse encounter-selection-and-revision: acquired access and ambiguity now enter actual selection and further learning. Next is developmental correspondence for selective attention and reciprocal communicative coordination sustaining coverage."
+        },
+        "history": [
+          {
+            "zh": "2026-10-08：由实际移动计算可取得候选，并正式接通已检查的绑定解释；动作选择与类别形成的前提保留。",
+            "en": "2026-10-08: computed accessible alternatives from actual movement and formally joined the checked binding interpretation; action-selection and category-formation premises remain."
+          },
+          {
+            "zh": "2026-10-08：核读原研究第14–16节；选择经历及访问预测修订的新连接已实查，原证明范围不变，未宣告完整心理解释。",
+            "en": "2026-10-08: reviewed study sections 14–16; encounter selection and access-prediction revision now have a checked connection. This proof’s original scope remains unchanged; no complete psychological explanation is claimed."
+          }
+        ]
+      },
+      "after": {
+        "schema_version": 1,
+        "id": "enacted-scene-binding",
+        "title": {
+          "zh": "行动形成可供绑定的场景",
+          "en": "Action forms scenes available for binding"
+        },
+        "kind": "theorem",
+        "status": "recorded-checked",
+        "family": "F09",
+        "reviewed_at_utc": "2026-10-08T14:05:56.476428+00:00",
+        "claim": {
+          "zh": "指定空间关系与有支持的移动／命名史产生已有绑定构造的精确解释输入，因此其任意有限编码序列的解释结果继续成立；另外有实际响应及访问、保留、时序失败见证。",
+          "en": "The specified spatial arrangement and supported movement/naming history produce the previous binding construction’s exact interpretation inputs, preserving interpretation of every finite encoded sequence; separate witnesses cover actual response and access, retention and timing failures."
+        },
+        "hypotheses": [
+          {
+            "zh": "给定整数二维位置、Manhattan 距离与范围2、三个已识别操作位置、移动规律、命名约定和安排。",
+            "en": "Integer two-dimensional positions, Manhattan distance and range two, three identified operation sites, movement law, naming convention and schedule are supplied."
+          },
+          {
+            "zh": "复用已取得分节与绑定架构；成功史有37单位声明支持，移动消耗5单位。",
+            "en": "The acquired grouping/binding architecture is reused; the successful history has 37 declared support units, including five consumed by movement."
+          }
+        ],
+        "correspondence": {
+          "zh": "接收位置与被命名位置是同一局部安排的关系角色。范围表示可取得性，未独自解释完整视野、注意、身体或沟通意图。",
+          "en": "Receiving and named positions are relational roles within one local arrangement. Range represents accessibility; it does not itself explain a full visual field, attention, bodies or communicative intention."
+        },
+        "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean",
+        "aliases": [
+          "Generative.EnactedScene.enacted_access_enters_all_sequence_interpretation"
+        ],
+        "dependencies": [
+          {
+            "id": "acquired-binding-compositional-use",
+            "relation": "formal-reuse",
+            "detail": {
+              "zh": "空间接触史产生旧绑定构造的解释输入，直接调用其任意序列定理。",
+              "en": "The spatial history produces the prior construction’s interpretation inputs and directly invokes its all-sequence theorem."
+            },
+            "interface": {
+              "output": {
+                "zh": "给定取得绑定后，编码序列解释等于相应原子消息组合。",
+                "en": "After the stated acquired bindings, encoded-sequence interpretation equals the corresponding atomic message assembly."
+              },
+              "input": {
+                "zh": "新移动史保留相同日志、候选范围、绑定记录与排除记录。",
+                "en": "The movement history has the same log, repertoire, binding records and exclusions."
+              },
+              "conditions": {
+                "zh": "解释输入相同，不要求整个状态或支出历史相同；额外移动成本保留。",
+                "en": "Interpretation inputs match; whole-state or expenditure-history identity is not assumed, and movement costs remain."
+              },
+              "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean"
+            }
+          }
+        ],
+        "related": [],
+        "counterexamples": [
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean",
+            "detail": {
+              "zh": "位置和名称次数相同可因时序产生相反绑定；清楚视野漏掉所指可误学；访问无保留不形成绑定，支持不足阻断移动或执行。",
+              "en": "Matching positions and name counts can yield inverted bindings through timing; a clear view omitting the target can mislead; access without retention does not bind, and insufficient support prevents movement or response."
+            }
+          }
+        ],
+        "limitations": {
+          "zh": "是给定安排下的新输入接通，不是移动安排自发形成、完整注意、知觉分类、意向理解或演化心理证明。",
+          "en": "A new input composition under a supplied schedule, not a proof of schedule formation, complete attention, perceptual categories, intention understanding or evolutionary psychology."
+        },
+        "validation_scope": {
+          "zh": "Lean 4.29.1 新查16项定理／29项声明审计，288项继承审计分列；作者反审和含未泛化结果的原始文献比较，无新实验或独立验收。",
+          "en": "Lean 4.29.1: 16 new theorems / 29 declaration audits, with 288 inherited audits separately rebuilt; author counterreview and primary comparison including failed generalization, without a new experiment or independent acceptance."
+        },
+        "references": [
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean",
+            "role": "proof",
+            "sha256": "e801ec6a3187354d9ad0c211687ee6ac655b7845f984fd53e2fad23798715631",
+            "declarations": [
+              "Generative.EnactedScene.enacted_scenes_supply_the_previous_binding_inputs",
+              "Generative.EnactedScene.enacted_access_enters_all_sequence_interpretation",
+              "Generative.EnactedScene.enacted_access_reaches_actual_response",
+              "Generative.EnactedScene.unchanged_position_and_name_counts_do_not_establish_coordination",
+              "Generative.EnactedScene.a_clear_view_can_omit_the_named_target"
+            ]
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/enacted-scene-verification.json",
+            "role": "receipt",
+            "sha256": "8a9fc92ce6eda7cf26ae79941ce9de120e50c420730b5d9f6755e44c9652c431",
+            "declarations": []
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+            "role": "integration",
+            "sha256": "61542640303c7eea14c390f927735c51f0c4cbc4a5162bee67a7185a836af80f",
+            "declarations": []
+          }
+        ],
+        "proof_bindings": [
+          {
+            "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean",
+            "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/enacted-scene-verification.json",
+            "sha256_pointer": "/source_sha256/EnactedScene",
+            "success_pointer": "/status",
+            "success_value": "passed"
+          }
+        ],
+        "next_delta": {
+          "zh": "复用已有选择及绑定成果；公开注视记录现限制自动覆盖。下一连接是可取得的协调／可靠性线索如何形成经历接纳或加权，再影响保留、指称与纠正，不给学习者注入观察者所知的目标。",
+          "en": "Reuse completed selection and binding. Public gaze records now constrain automatic coverage. Next connect locally available coordination/reliability cues to encounter admission or weighting, retained reference and correction without supplying observer-known target truth."
+        },
+        "history": [
+          {
+            "zh": "2026-10-08：由实际移动计算可取得候选，并正式接通已检查的绑定解释；动作选择与类别形成的前提保留。",
+            "en": "2026-10-08: computed accessible alternatives from actual movement and formally joined the checked binding interpretation; action-selection and category-formation premises remain."
+          },
+          {
+            "zh": "2026-10-08：核读原研究第14–16节；选择经历及访问预测修订的新连接已实查，原证明范围不变，未宣告完整心理解释。",
+            "en": "2026-10-08: reviewed study sections 14–16; encounter selection and access-prediction revision now have a checked connection. This proof’s original scope remains unchanged; no complete psychological explanation is claimed."
+          },
+          {
+            "zh": "2026-10-08：核读新增公开命名／注视分析；自动所指注视的经验对应受限，既有覆盖前提、形式结论及原实查范围不变。",
+            "en": "2026-10-08: reviewed the appended public naming/gaze analysis. Automatic target-gaze correspondence is limited; the existing coverage premises, formal conclusions and original verification scope are unchanged."
+          }
+        ]
+      }
+    },
+    "encounter-selection-and-revision": {
+      "before": {
+        "schema_version": 1,
+        "id": "encounter-selection-and-revision",
+        "title": {
+          "zh": "取得的访问模型选择学习经历",
+          "en": "Acquired access selects learning encounters"
+        },
+        "kind": "theorem",
+        "status": "recorded-checked",
+        "family": "F09",
+        "reviewed_at_utc": "2026-10-08T13:41:46.812488+00:00",
+        "claim": {
+          "zh": "指定初次巡查取得的访问记录和当前绑定歧义选择后续实际接触，产生已有解释接口的输入，因而任意有限编码序列的解释继续成立；旧访问记录的重看修订改变下一选择，实际响应与失败另有见证。",
+          "en": "Access records acquired through the specified preliminary surveys and current binding ambiguity select subsequent actual encounters, producing the prior interpretation inputs and preserving interpretation for every finite encoded sequence. Reobserving stale access revises the next choice; actual response and failures have separate witnesses."
+        },
+        "hypotheses": [
+          {
+            "zh": "给定空间规律、类别、位置目录、首次巡查和以候选缩减为准的首个匹配选择；合作命名只针对实际可取得的原子操作。",
+            "en": "Spatial law, categories, location catalogue, preliminary itinerary and first-match candidate-reduction choice are supplied; cooperative naming concerns actually accessible atomic operations."
+          },
+          {
+            "zh": "复用已有取得／构造／分节／绑定历史；成功实例从51单位支持开始，解释计算及记忆维护未分别计价。",
+            "en": "Reuse the existing acquisition/formation/grouping/binding history. The successful witness starts with 51 support units; interpretation computation and memory maintenance have no separate charges."
+          },
+          {
+            "zh": "重看干预及场景迁移事件给定；没有推导完整自主校准、选择准则起源或迁移物理代价。",
+            "en": "Reobservation and rearrangement are supplied interventions; full autonomous calibration, the origin of the choice criterion and physical relocation cost are not derived."
+          }
+        ],
+        "correspondence": {
+          "zh": "选择只读保留访问、绑定和已尝试位置，不读实际场景真值；命名与移动仍在同一安排中发生。它说明局部探究接续，未识别具体儿童算法或完整互惠沟通。",
+          "en": "Choice reads retained access, bindings and attempted locations rather than actual scene truth; naming and movement occur in the same arrangement. This explains a local inquiry continuation, without identifying a particular child algorithm or complete reciprocal communication."
+        },
+        "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean",
+        "aliases": [
+          "Generative.EncounterChoice.selected_encounters_transfer_to_all_sequences"
+        ],
+        "dependencies": [
+          {
+            "id": "enacted-scene-binding",
+            "relation": "formal-reuse",
+            "detail": {
+              "zh": "选择经历产生旧行动场景构造的解释输入，直接复用其任意序列结论。",
+              "en": "Selected encounters produce the earlier enacted-scene interpretation inputs, directly reusing its all-sequence conclusion."
+            },
+            "interface": {
+              "output": {
+                "zh": "旧行动场景下任意编码序列解释与相应原子消息组合一致。",
+                "en": "Every encoded sequence under the prior enacted scene matches the corresponding atomic message assembly."
+              },
+              "input": {
+                "zh": "selected_encounters_supply_previous_interpretation_inputs 保证新史的日志、候选、绑定和排除输入相同。",
+                "en": "selected_encounters_supply_previous_interpretation_inputs establishes matching log, repertoire, binding and exclusion inputs in the new history."
+              },
+              "conditions": {
+                "zh": "接口相同不要求支出或完整状态相同；初次巡查及新访问读取成本保留。",
+                "en": "Input equality does not identify expenditure or whole states; preliminary survey and fresh-reading costs remain."
+              },
+              "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean"
+            }
+          }
+        ],
+        "related": [],
+        "counterexamples": [
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean",
+            "detail": {
+              "zh": "目录不足留下歧义；支持不足阻断动作或输出；错误唯一绑定仍使停止规则停止；原本正确的访问记录可随实际安排改变而过时。",
+              "en": "An inadequate catalogue leaves ambiguity; limited support blocks action or output; wrong unique bindings still trigger stopping; an originally correct access record can become stale as the arrangement changes."
+            }
+          }
+        ],
+        "limitations": {
+          "zh": "选择准则、初次巡查、重看及合作覆盖仍有给定前提。未证明最优信息／成本、所有注意、沟通意图、情感、意识或演化心理。",
+          "en": "Choice criterion, preliminary surveys, reobservation and cooperative coverage remain supplied. No information/cost optimum or complete attention, communicative intention, affect, consciousness or evolutionary psychology is proved."
+        },
+        "validation_scope": {
+          "zh": "Lean 4.29.1：22项新定理／46项声明审计，317项继承审计分列；作者反审及两项发展原典比较，无新实验或独立验收。",
+          "en": "Lean 4.29.1: 22 new theorems / 46 declaration audits, with 317 inherited audits separately rebuilt; author counterreview and two primary developmental comparisons, without a new experiment or independent acceptance."
+        },
+        "references": [
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean",
+            "role": "proof",
+            "sha256": "d84dc3dc2793dd3be45dabde2a242777da47d35394883e0ec04ce23658164d94",
+            "declarations": [
+              "Generative.EncounterChoice.selected_encounters_supply_previous_interpretation_inputs",
+              "Generative.EncounterChoice.selected_encounters_transfer_to_all_sequences",
+              "Generative.EncounterChoice.reobservation_revises_the_access_model_and_next_choice",
+              "Generative.EncounterChoice.removing_coverage_can_make_the_stopping_rule_wrong"
+            ]
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/encounter-choice-verification.json",
+            "role": "receipt",
+            "sha256": "1b86eeb0233b7897e3a4f0f1009c2e7e19b030fbd1b05323f13e0354da20b30c",
+            "declarations": []
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+            "role": "integration",
+            "sha256": "ae2a57df8613a5a0919d1a14ac620442b34f3e22e89ce82ebde19eda586b2e35",
+            "declarations": []
+          }
+        ],
+        "proof_bindings": [
+          {
+            "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean",
+            "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/encounter-choice-verification.json",
+            "sha256_pointer": "/source_sha256/EncounterChoice",
+            "success_pointer": "/status",
+            "success_value": "passed"
+          }
+        ],
+        "next_delta": {
+          "zh": "复用 encounter-selection-and-revision：取得的访问与歧义现接通实际选择及新学习；下一连接是维持覆盖的选择性注意与相互沟通协调的发育对应。",
+          "en": "Reuse encounter-selection-and-revision: acquired access and ambiguity now enter actual selection and further learning. Next is developmental correspondence for selective attention and reciprocal communicative coordination sustaining coverage."
+        },
+        "history": [
+          {
+            "zh": "2026-10-08：由取得的访问和当前歧义选出实际接触，重看修订访问预测；正式接通旧解释，保留错误停止、缺乏机会和支持失败。",
+            "en": "2026-10-08: acquired access and current ambiguity select actual encounters; reobservation revises access predictions. Formally joined the prior interpreter while retaining mistaken stopping, missing opportunities and support failure."
+          }
+        ]
+      },
+      "after": {
+        "schema_version": 1,
+        "id": "encounter-selection-and-revision",
+        "title": {
+          "zh": "取得的访问模型选择学习经历",
+          "en": "Acquired access selects learning encounters"
+        },
+        "kind": "theorem",
+        "status": "recorded-checked",
+        "family": "F09",
+        "reviewed_at_utc": "2026-10-08T14:05:56.476428+00:00",
+        "claim": {
+          "zh": "指定初次巡查取得的访问记录和当前绑定歧义选择后续实际接触，产生已有解释接口的输入，因而任意有限编码序列的解释继续成立；旧访问记录的重看修订改变下一选择，实际响应与失败另有见证。",
+          "en": "Access records acquired through the specified preliminary surveys and current binding ambiguity select subsequent actual encounters, producing the prior interpretation inputs and preserving interpretation for every finite encoded sequence. Reobserving stale access revises the next choice; actual response and failures have separate witnesses."
+        },
+        "hypotheses": [
+          {
+            "zh": "给定空间规律、类别、位置目录、首次巡查和以候选缩减为准的首个匹配选择；合作命名只针对实际可取得的原子操作。",
+            "en": "Spatial law, categories, location catalogue, preliminary itinerary and first-match candidate-reduction choice are supplied; cooperative naming concerns actually accessible atomic operations."
+          },
+          {
+            "zh": "复用已有取得／构造／分节／绑定历史；成功实例从51单位支持开始，解释计算及记忆维护未分别计价。",
+            "en": "Reuse the existing acquisition/formation/grouping/binding history. The successful witness starts with 51 support units; interpretation computation and memory maintenance have no separate charges."
+          },
+          {
+            "zh": "重看干预及场景迁移事件给定；没有推导完整自主校准、选择准则起源或迁移物理代价。",
+            "en": "Reobservation and rearrangement are supplied interventions; full autonomous calibration, the origin of the choice criterion and physical relocation cost are not derived."
+          }
+        ],
+        "correspondence": {
+          "zh": "选择只读保留访问、绑定和已尝试位置，不读实际场景真值；命名与移动仍在同一安排中发生。它说明局部探究接续，未识别具体儿童算法或完整互惠沟通。",
+          "en": "Choice reads retained access, bindings and attempted locations rather than actual scene truth; naming and movement occur in the same arrangement. This explains a local inquiry continuation, without identifying a particular child algorithm or complete reciprocal communication."
+        },
+        "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean",
+        "aliases": [
+          "Generative.EncounterChoice.selected_encounters_transfer_to_all_sequences"
+        ],
+        "dependencies": [
+          {
+            "id": "enacted-scene-binding",
+            "relation": "formal-reuse",
+            "detail": {
+              "zh": "选择经历产生旧行动场景构造的解释输入，直接复用其任意序列结论。",
+              "en": "Selected encounters produce the earlier enacted-scene interpretation inputs, directly reusing its all-sequence conclusion."
+            },
+            "interface": {
+              "output": {
+                "zh": "旧行动场景下任意编码序列解释与相应原子消息组合一致。",
+                "en": "Every encoded sequence under the prior enacted scene matches the corresponding atomic message assembly."
+              },
+              "input": {
+                "zh": "selected_encounters_supply_previous_interpretation_inputs 保证新史的日志、候选、绑定和排除输入相同。",
+                "en": "selected_encounters_supply_previous_interpretation_inputs establishes matching log, repertoire, binding and exclusion inputs in the new history."
+              },
+              "conditions": {
+                "zh": "接口相同不要求支出或完整状态相同；初次巡查及新访问读取成本保留。",
+                "en": "Input equality does not identify expenditure or whole states; preliminary survey and fresh-reading costs remain."
+              },
+              "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean"
+            }
+          }
+        ],
+        "related": [],
+        "counterexamples": [
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean",
+            "detail": {
+              "zh": "目录不足留下歧义；支持不足阻断动作或输出；错误唯一绑定仍使停止规则停止；原本正确的访问记录可随实际安排改变而过时。",
+              "en": "An inadequate catalogue leaves ambiguity; limited support blocks action or output; wrong unique bindings still trigger stopping; an originally correct access record can become stale as the arrangement changes."
+            }
+          }
+        ],
+        "limitations": {
+          "zh": "选择准则、初次巡查、重看及合作覆盖仍有给定前提。未证明最优信息／成本、所有注意、沟通意图、情感、意识或演化心理。",
+          "en": "Choice criterion, preliminary surveys, reobservation and cooperative coverage remain supplied. No information/cost optimum or complete attention, communicative intention, affect, consciousness or evolutionary psychology is proved."
+        },
+        "validation_scope": {
+          "zh": "Lean 4.29.1：22项新定理／46项声明审计，317项继承审计分列；作者反审及两项发展原典比较，无新实验或独立验收。",
+          "en": "Lean 4.29.1: 22 new theorems / 46 declaration audits, with 317 inherited audits separately rebuilt; author counterreview and two primary developmental comparisons, without a new experiment or independent acceptance."
+        },
+        "references": [
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean",
+            "role": "proof",
+            "sha256": "d84dc3dc2793dd3be45dabde2a242777da47d35394883e0ec04ce23658164d94",
+            "declarations": [
+              "Generative.EncounterChoice.selected_encounters_supply_previous_interpretation_inputs",
+              "Generative.EncounterChoice.selected_encounters_transfer_to_all_sequences",
+              "Generative.EncounterChoice.reobservation_revises_the_access_model_and_next_choice",
+              "Generative.EncounterChoice.removing_coverage_can_make_the_stopping_rule_wrong"
+            ]
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/encounter-choice-verification.json",
+            "role": "receipt",
+            "sha256": "1b86eeb0233b7897e3a4f0f1009c2e7e19b030fbd1b05323f13e0354da20b30c",
+            "declarations": []
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+            "role": "integration",
+            "sha256": "61542640303c7eea14c390f927735c51f0c4cbc4a5162bee67a7185a836af80f",
+            "declarations": []
+          }
+        ],
+        "proof_bindings": [
+          {
+            "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean",
+            "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/encounter-choice-verification.json",
+            "sha256_pointer": "/source_sha256/EncounterChoice",
+            "success_pointer": "/status",
+            "success_value": "passed"
+          }
+        ],
+        "next_delta": {
+          "zh": "复用已有选择及绑定成果；公开注视记录现限制自动覆盖。下一连接是可取得的协调／可靠性线索如何形成经历接纳或加权，再影响保留、指称与纠正，不给学习者注入观察者所知的目标。",
+          "en": "Reuse completed selection and binding. Public gaze records now constrain automatic coverage. Next connect locally available coordination/reliability cues to encounter admission or weighting, retained reference and correction without supplying observer-known target truth."
+        },
+        "history": [
+          {
+            "zh": "2026-10-08：由取得的访问和当前歧义选出实际接触，重看修订访问预测；正式接通旧解释，保留错误停止、缺乏机会和支持失败。",
+            "en": "2026-10-08: acquired access and current ambiguity select actual encounters; reobservation revises access predictions. Formally joined the prior interpreter while retaining mistaken stopping, missing opportunities and support failure."
+          },
+          {
+            "zh": "2026-10-08：核读新增公开命名／注视分析；自动所指注视的经验对应受限，既有覆盖前提、形式结论及原实查范围不变。",
+            "en": "2026-10-08: reviewed the appended public naming/gaze analysis. Automatic target-gaze correspondence is limited; the existing coverage premises, formal conclusions and original verification scope are unchanged."
+          }
+        ]
+      }
+    }
+  },
+  "new_record": {
+    "schema_version": 1,
+    "id": "naming-attention-coverage",
+    "title": {
+      "zh": "命名与所指注视的公开数据边界",
+      "en": "Public-data boundary of naming and target gaze"
+    },
+    "kind": "assessment",
+    "status": "reviewed-scoped",
+    "family": "F09",
+    "reviewed_at_utc": "2026-10-08T14:05:56.476428+00:00",
+    "claim": {
+      "zh": "36名婴儿的1,508次公开命名记录中，三秒窗口有467次记录到其他物体注视而无所指注视；35名婴儿出现此情况。它限制命名自动确保所指注视的测量对应。",
+      "en": "Among 1,508 public naming records from 36 infants, 467 nominal three-second windows contain other-object gaze with zero target gaze; 35 infants show such cases. This limits automatic naming-to-target-gaze measurement correspondence."
+    },
+    "hypotheses": [
+      {
+        "zh": "采用原作者公开分数与窗口，保留全部记录；注视是有限访问代理，不是全部光学可见性、候选表征或学习结果。",
+        "en": "Use the deposited fractions and windows with every record retained. Gaze is a limited access proxy, not full optical visibility, represented candidates or learning outcomes."
+      },
+      {
+        "zh": "已知论文结论后作探索性复算；七个窗口是相同经历的重复测量。参与者均值另列，不将各事件当独立样本推断。",
+        "en": "Exploratory reanalysis with the paper’s conclusion already known. Seven windows repeatedly measure the same events; participant means are separate, without independent-event inference."
+      },
+      {
+        "zh": "未将目标加其他注视归一化；无已编码物体注视、缩短窗口和小数舍入差异保留。",
+        "en": "No renormalization to target-plus-other gaze; zero coded-object gaze, shortened windows and decimal rounding differences remain."
+      }
+    ],
+    "correspondence": {
+      "zh": "所指由观察编码界定；不能将此标签当作学习者已知答案。命名、朝向及物体位置是同一互动中的关系，实际保留与纠正未由这些字段测量。",
+      "en": "The intended target is observer-coded and cannot be assumed as the learner’s known answer. Naming, orientation and object positions are relations within one interaction; these fields do not measure retention or correction."
+    },
+    "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/naming-attention/README.md",
+    "aliases": [],
+    "dependencies": [
+      {
+        "id": "encounter-selection-and-revision",
+        "relation": "interpretive",
+        "detail": {
+          "zh": "检验其合作命名覆盖的经验对应，保留条件证明及覆盖失败反例；没有声称把注视数据形式转换为Lean候选集。",
+          "en": "Tests the empirical correspondence of cooperative naming coverage while preserving the conditional proof and failure cases; no formal conversion of gaze data into Lean candidate sets is claimed."
+        }
+      }
+    ],
+    "related": [],
+    "counterexamples": [
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/naming-attention/README.md",
+        "detail": {
+          "zh": "五秒窗口仍有393次其他注视而无所指注视；三秒另45次两者皆零，不能算为已观察到的错误所指。论文与导出数据的分箱／计数对应仍未解决。",
+          "en": "At five seconds, 393 windows still contain other gaze with zero target gaze. A separate 45 three-second windows have zero on both and cannot be counted as observed wrong reference. Publication/export binning and count correspondence remains unresolved."
+        }
+      }
+    ],
+    "limitations": {
+      "zh": "不识别错误学习、独占算法、社会协调的发育因果、意识或演化心理；不是论文全部分析的精确复现，也不更改既有条件定理。",
+      "en": "Does not identify mislearning, a unique algorithm, developmental causation of coordination, consciousness or evolutionary psychology. Not an exact replication of all published analyses and does not change existing conditional theorems."
+    },
+    "validation_scope": {
+      "zh": "8份原始文件匹配OSF哈希；七窗口的八类计数及参与者统计以独立Decimal算法复算通过。实质作者反审完成；无新实验、独立agent验收或新Lean定理。",
+      "en": "Eight original files match OSF hashes. An independent Decimal calculation verifies eight count categories and participant statistics across seven windows. Substantive author counterreview completed; no new experiment, independent-agent acceptance or new Lean theorem."
+    },
+    "references": [
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/naming-attention/README.md",
+        "role": "statement",
+        "sha256": "08c35d44094d94b13f717e594b0dc52d58cb4e7a1618e5bb540f3ee7bb2b6635",
+        "declarations": []
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+        "role": "review",
+        "sha256": "61542640303c7eea14c390f927735c51f0c4cbc4a5162bee67a7185a836af80f",
+        "declarations": []
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/naming-attention/verification.json",
+        "role": "receipt",
+        "sha256": "72db9ebe4821ae5cf7894fab6afdd1f781b85eccc28e234a5349ec3870aec6d6",
+        "declarations": []
+      },
+      {
+        "path": "sources/developmental-attention/yu-2021/README.md",
+        "role": "provenance",
+        "sha256": "a6f317aada352b3a9c797e5b6c3871d1656bb3b45bd69af5faebfb076ab49ce4",
+        "declarations": []
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/naming-attention/PLAN.md",
+        "role": "provenance",
+        "sha256": "a1be33bdd0293d96309e86325b3911f4cd58512e6f024670494f5349aa7c05c4",
+        "declarations": []
+      }
+    ],
+    "proof_bindings": [],
+    "next_delta": {
+      "zh": "复用已有选择及绑定成果；公开注视记录现限制自动覆盖。下一连接是可取得的协调／可靠性线索如何形成经历接纳或加权，再影响保留、指称与纠正，不给学习者注入观察者所知的目标。",
+      "en": "Reuse completed selection and binding. Public gaze records now constrain automatic coverage. Next connect locally available coordination/reliability cues to encounter admission or weighting, retained reference and correction without supplying observer-known target truth."
+    },
+    "history": [
+      {
+        "zh": "2026-10-08：由公开数据直接检验自动注视覆盖，保留未分配时间及发表／导出差异；把下一连接具体化为协调线索、经历接纳／加权与保留纠正。",
+        "en": "2026-10-08: directly tested automatic gaze coverage with public data, retaining unassigned time and publication/export differences. Specified the next connection through coordination cues, encounter admission/weighting and retained correction."
+      }
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+import RecoverableControl
+#print axioms RecoverableControl.SameUntouched
+#print axioms RecoverableControl.exact_result_from_untouched
+#print axioms RecoverableControl.member_preserves_untouched
+#print axioms RecoverableControl.accounting
+#print axioms RecoverableControl.accounting_preserves_coverage
+#print axioms RecoverableControl.Pending
+#print axioms RecoverableControl.Device
+#print axioms RecoverableControl.Coherent
+#print axioms RecoverableControl.Safe
+#print axioms RecoverableControl.prepare
+#print axioms RecoverableControl.charge
+#print axioms RecoverableControl.tick
+#print axioms RecoverableControl.crash
+#print axioms RecoverableControl.use
+#print axioms RecoverableControl.pending_blocks_use
+#print axioms RecoverableControl.prepare_preserves_safety
+#print axioms RecoverableControl.charge_keeps_structure
+#print axioms RecoverableControl.charge_preserves_coherence
+#print axioms RecoverableControl.tick_preserves_safety
+#print axioms RecoverableControl.crash_preserves_safety
+#print axioms RecoverableControl.Event
+#print axioms RecoverableControl.step
+#print axioms RecoverableControl.SourceLaw
+#print axioms RecoverableControl.step_preserves_safety
+#print axioms RecoverableControl.History
+#print axioms RecoverableControl.interrupted_history_preserves_safety
+#print axioms RecoverableControl.published_history_to_current_certificate
+#print axioms RecoverableControl.spent
+#print axioms RecoverableControl.clockTime
+#print axioms RecoverableControl.crash_retains_consumption
+#print axioms RecoverableControl.tick_consumes_one
+#print axioms RecoverableControl.resumeSteps
+#print axioms RecoverableControl.funded_suffix_publishes
+#print axioms RecoverableControl.crash_keeps_pending
+#print axioms RecoverableControl.run
+#print axioms RecoverableControl.initial
+#print axioms RecoverableControl.scan
+#print axioms RecoverableControl.noCrash
+#print axioms RecoverableControl.oneCrash
+#print axioms RecoverableControl.published
+#print axioms RecoverableControl.staged_change_then_actual_shutdown
+#print axioms RecoverableControl.interrupted_change_then_actual_shutdown
+#print axioms RecoverableControl.interruption_can_exhaust_execution_capacity
+#print axioms RecoverableControl.interruption_delay_can_miss_deadline
+#print axioms RecoverableControl.partiallyChanged
+#print axioms RecoverableControl.loseMarker
+#print axioms RecoverableControl.losing_pending_marker_exposes_false_certificate
+#check RecoverableControl.exact_result_from_untouched
+#check RecoverableControl.member_preserves_untouched
+#check RecoverableControl.accounting_preserves_coverage
+#check RecoverableControl.pending_blocks_use
+#check RecoverableControl.prepare_preserves_safety
+#check RecoverableControl.charge_keeps_structure
+#check RecoverableControl.charge_preserves_coherence
+#check RecoverableControl.tick_preserves_safety
+#check RecoverableControl.crash_preserves_safety
+#check RecoverableControl.step_preserves_safety
+#check RecoverableControl.interrupted_history_preserves_safety
+#check RecoverableControl.published_history_to_current_certificate
+#check RecoverableControl.crash_retains_consumption
+#check RecoverableControl.tick_consumes_one
+#check RecoverableControl.funded_suffix_publishes
+#check RecoverableControl.crash_keeps_pending
+#check RecoverableControl.staged_change_then_actual_shutdown
+#check RecoverableControl.interrupted_change_then_actual_shutdown
+#check RecoverableControl.interruption_can_exhaust_execution_capacity
+#check RecoverableControl.interruption_delay_can_miss_deadline
+#check RecoverableControl.losing_pending_marker_exposes_false_certificate

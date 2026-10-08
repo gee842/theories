@@ -1,0 +1,634 @@
+Finalized subscription plan for launch (details inside) : r/narwhalapp (https://www.reddit.com/r/narwhalapp/comments/174206m/finalized_subscription_plan_for_launch_details/)
+citeturn67view0 [wordlim: 200] Crawled: 3 weeks ago; Content type: text/html; Source: open({"ref_id":"https://www.reddit.com/r/narwhalapp/comments/174206m/finalized_subscription_plan_for_launch_details/","lineno":16}); Total lines: 2186
+L0: cite0†Skip to main content L1: 
+L2: Open menu Open navigation Go to Reddit Home
+L3: 
+L4: r/narwhalapp [Input: Search in ⁨r/narwhalapp⁩]
+L5: 
+L6: cite1†Log In Log in to Reddit
+L7: 
+L8: Expand user menu Open settings menu
+L9: 
+L10: cite2†Go to narwhalapp L11: 
+L12: cite2†r/narwhalapp L13: 
+L14: • 3y ago
+L15: 
+L16: cite3†det0ur L17: # Finalized subscription plan for launch (details inside)
+L18: 
+L19: Hey all,
+L20: 
+L21: Thanks to everyone who responded to the subscription survey in the app. It has been really valuable.
+L22: Narwhal is going to start out with a single subscription plan for $3.99/month. No one has to even think about what an API is let alone what API calls they are making. For less than the price of Reddit Premium, everyone will get an ad-free, privacy-focused Narwhal that I will continuously improve over time. My goal is make the best Reddit app possible and I will only be able to do that with all of your feedback.
+L23: 
+L24: Let me know your thoughts!
+L25: ### Frequently Asked Questions
+L26: 
+L27: Why do you have a subscription?
+L28: 
+L29: Reddit is now charging a substantial fee to use the API to power Narwhal. This fee will be tens of thousands if not hundreds of thousands a month depending on how many people subscribe. The only goal of this subscription is to cover the costs of using the API
+L30: 
+L31: Can I buy a lifetime unlock?
+L32: 
+L33: Unfortunately, because the API has a monthly cost to Narwhal, a lifetime unlock won't be possible.
+L34: 
+L35: Can I pay annually?
+L36: Maybe in the future, but for now, we are a bit worried about Reddit increasing the price of the API. To be safe, we are going to keep it a monthly subscription
+L37: 
+L38: cite4†Share L39: 
+L40: Sort by:
+L41: 
+L42: Best
+L43: 
+L44: Open comment sort options
+L45: 
+L46: * Best
+L47: 
+L48: * Top
+L49: 
+L50: * New
+L51: 
+L52: * Controversial
+L53: 
+L54: * Old
+L55: 
+L56: * Q&A
+L57: 
+L58: cite5†Satuhrn L59: 
+L60: •
+L61: 
+L62: cite6†3y ago L63: This sounds like a very generous plan. I might actually subscribe to support even though I selected will not subscribe on the survey. I like the work you are doing, but I strongly disagree with how Reddit is handling things
+L64: 
+L65: cite3†det0ur L66: 
+L67: •
+L68: 
+L69: cite7†3y ago L70: 
+L71: You and I both agree on how badly Reddit is handling things. But, the only thing I can do it try to make the best possible product given the circumstances. I really appreciate your support!
+L72: 
+L73: cite8†zombiepete L74: 
+L75: •
+L76: 
+L77: cite9†3y ago L78: It’s impressive that you’ve decided to work on this despite the challenges and not just throw in the towel. I am hopeful that this is going to work out; this app is far and away a better way to Reddit and I am here for it.
+L79: 
+L80: cite3†det0ur L81: 
+L82: •
+L83: 
+L84: cite10†3y ago L85: 
+L86: I’m still working on it for the same reason I started: I wanted to make the best Reddit app for myself. Thanks for your support!
+L87: 
+L88: cite11†more replies cite11†more replies cite12†More replies L89: 
+L90: cite13†Nemothewhale87 L91: 
+L92: •
+L93: 
+L94: cite14†3y ago L95: Just continue making this app more like Apollo but with the subscription model and I’ll be a happy camper!
+L96: 
+L97: cite15†More replies cite16†More replies L98: 
+L99: cite17†wetdagger L100: 
+L101: •
+L102: 
+L103: cite18†3y ago L104: 
+L105: Love it! You'll be getting a visit to the tip jar from me when it's available!
+L106: 
+L107: cite3†det0ur L108: 
+L109: •
+L110: 
+L111: cite19†3y ago L112: 
+L113: Tip jar is in the app right now under Settings ;)
+L114: 
+L115: cite17†wetdagger L116: 
+L117: •
+L118: 
+L119: cite20†3y ago L120: 
+L121: Beers on me. 🍻
+L122: 
+L123: cite3†det0ur L124: 
+L125: •
+L126: 
+L127: cite21†3y ago L128: 
+L129: You are too awesome, thanks so much <3
+L130: 
+L131: cite22†more reply cite22†more reply cite23†More replies L132: cite24†n8-g L133: 
+L134: •
+L135: 
+L136: cite25†3y ago L137: 
+L138: Does that work in TestFlight? The message says it’s for test purposes only and we won’t be charged.
+L139: 
+L140: cite3†det0ur L141: 
+L142: •
+L143: 
+L144: cite26†3y ago L145: 
+L146: No, it only works if you have the App Store version installed
+L147: 
+L148: cite27†more reply cite27†more reply cite28†More replies cite29†More replies cite30†More replies L149: 
+L150: cite31†TheMKB L151: 
+L152: •
+L153: 
+L154: cite32†3y ago L155: 
+L156: I will definitely be subscribing. Thank you for giving us an option to use something other than the unforgivable official Reddit app.
+L157: 
+L158: cite3†det0ur L159: 
+L160: •
+L161: 
+L162: cite33†3y ago L163: Thanks for your support!! Please tell your friends about Narwhal :)
+L164: 
+L165: cite34†More replies L166: 
+L167: cite35†Sorrydoor L168: 
+L169: •
+L170: 
+L171: cite36†3y ago L172: 
+L173: I really appreciate how thoughtful you’ve been throughout this whole mess. My usage would’ve put me in an awkward-ish spot (6,000 a month) between the lowest tiers and I was a bit bummed I’d missed the lowest one. I was very conflicted when voting too, as I’d obviously prefer to pay less, but was worried it’d turn out to be a burden for you too. Here’s hoping $3.99 works!
+L174: 
+L175: cite3†det0ur L176: 
+L177: •
+L178: cite37†3y ago L179: 
+L180: Thanks for sticking with me this whole time
+L181: 
+L182: cite38†More replies L183: 
+L184: cite39†1AMA-CAT-AMA L185: 
+L186: •
+L187: 
+L188: cite40†3y ago L189: 
+L190: Can we keep the api calls calculator in the app just in case you are forced to move to a per api call plan?
+L191: 
+L192: cite3†det0ur L193: 
+L194: •
+L195: 
+L196: cite41†3y ago L197: 
+L198: I am probably going to remove it, because I really think this can work and I don't want people to even have to think about what an API is.
+L199: 
+L200: [deleted]
+L201: 
+L202: •
+L203: 
+L204: cite42†3y ago L205: 
+L206: • Edited 3y ago
+L207: What about adding it as a semi-hidden setting. Something you need to go menu diving to see, that way most people won’t even know/care.
+L208: 
+L209: For me, I’d like to keep my API usage somewhat lower anyway, just out of respect and because my API usage would’ve fallen in the 5-10k tier.
+L210: 
+L211: Edit: also curiosity lol
+L212: 
+L213: cite39†1AMA-CAT-AMA L214: 
+L215: •
+L216: 
+L217: cite43†3y ago L218: Or hide the menu, but keep the counter running in the background. Hopefully you’ll never need to unhide it but if there comes a time where you need to switch to a per api call plan, then the data is just there and ready.
+L219: 
+L220: cite44†more replies cite44†more replies cite45†More replies L221: 
+L222: [deleted]
+L223: 
+L224: •
+L225: 
+L226: cite46†3y ago L227: 
+L228: You should keep it. I have been using it to not overdo my Reddit consumption. I saw sunlight for the first time last week! Also, I tipped you and your partner a beer. You guys are the best.
+L229: cite47†theunquenchedservant L230: 
+L231: •
+L232: 
+L233: cite48†3y ago L234: 
+L235: I really like knowing what my usage is, but I get I’m one of the weird ones. Take that for whatever it’s worth.
+L236: 
+L237: cite49†woahacow L238: 
+L239: •
+L240: 
+L241: cite50†3y ago L242: 
+L243: Actually a great decision. I was going slightly nuts tracking usage lol.
+L244: 
+L245: more reply
+L246: 
+L247: cite51†more reply cite52†More replies L248: 
+L249: cite53†billiever L250: 
+L251: •
+L252: 
+L253: cite54†3y ago L254: 
+L255: Are you planning to add video scrubbing? As in swiping anywhere on a video to scrub through it. One of the best features on other video players.
+L256: 
+L257: cite3†det0ur L258: 
+L259: •
+L260: cite55†3y ago L261: 
+L262: Yea, I do want to add this
+L263: 
+L264: cite56†More replies L265: 
+L266: cite57†ignoresubs L267: 
+L268: •
+L269: 
+L270: cite58†3y ago L271: 
+L272: Nothing constructive for me to add, just wanted to say thanks.
+L273: 
+L274: More tacos inbound for you and Charlie.
+L275: 
+L276: cite3†det0ur L277: 
+L278: •
+L279: 
+L280: cite59†3y ago L281: 
+L282: You are amazing!!
+L283: 
+L284: cite60†More replies L285: 
+L286: cite61†ShezaEU L287: 
+L288: •
+L289: 
+L290: cite62†3y ago L291: 
+L292: When all this happen? Today, tomorrow, next week?
+L293: 
+L294: cite3†det0ur L295: 
+L296: •
+L297: 
+L298: cite63†3y ago L299: 
+L300: In the next 1-2 weeks
+L301: 
+L302: cite64†More replies L303: 
+L304: cite65†thezerosubnet L305: 
+L306: •
+L307: 
+L308: cite66†3y ago L309: I was on the fence before.. but for 3.99 and all you can eat, I’ll be definetly subscribing now.
+L310: 
+L311: I would have been a casual user, but tbh, keeping track of api usage was a turn off for me. Not having to worry about it will get me to sub.
+L312: 
+L313: cite3†det0ur L314: 
+L315: •
+L316: 
+L317: cite67†3y ago L318: 
+L319: Thanks, I agree that tracking api usage is so so lame!
+L320: 
+L321: cite68†More replies L322: 
+L323: cite69†cavahoos L324: 
+L325: •
+L326: 
+L327: cite70†3y ago L328: 
+L329: Can you add an option to subscribe outside of the confines of the App Store so you don’t have to pay a cut to apple?
+L330: I was very willing to pay up to 8 a month for this so to get it for just 4 a month is amazing to me
+L331: 
+L332: cite3†det0ur L333: 
+L334: •
+L335: 
+L336: cite71†3y ago L337: 
+L338: Yes, I want to do this. Won’t be ready soon though
+L339: 
+L340: cite72†More replies L341: 
+L342: cite73†JasonQG L343: 
+L344: •
+L345: 
+L346: cite74†3y ago L347: 
+L348: How did you determine this will be enough to cover costs? What happens if it turns out your estimates were off?
+L349: 
+L350: cite3†det0ur L351: 
+L352: •
+L353: 
+L354: cite75†3y ago L355: 
+L356: This is definitely an experiment. If I absolutely have to, I will transition to some other plans. But I want to try this first
+L357: cite73†JasonQG L358: 
+L359: •
+L360: 
+L361: cite76†3y ago L362: 
+L363: Fingers crossed
+L364: 
+L365: cite77†mbhwookie L366: 
+L367: •
+L368: 
+L369: cite78†3y ago L370: 
+L371: Basically relies on the basic and below users out numbering the power users, correct? Lower cost to encourage more subscribers to offset. Seems smart and I hope it works out.
+L372: 
+L373: more reply
+L374: 
+L375: cite79†more reply cite80†More replies cite81†More replies L376: 
+L377: [deleted]
+L378: 
+L379: •
+L380: 
+L381: cite82†3y ago L382: 
+L383: Thank you for the incredible work cite3†u/det0ur . Count me in!
+L384: 
+L385: cite3†det0ur L386: 
+L387: •
+L388: 
+L389: cite83†3y ago L390: 
+L391: 😍
+L392: 
+L393: cite84†More replies L394: 
+L395: cite85†Chairboy L396: 
+L397: •
+L398: 
+L399: cite86†3y ago L400: You son of a bitch, I’m in. Thanks for tackling this, impressed with version 2 and happy you’ve stuck with us.￼ We’re an unruly lot.
+L401: 
+L402: cite3†det0ur L403: 
+L404: •
+L405: 
+L406: cite87†3y ago L407: 
+L408: Haha I’m not going anywhere. Thanks for the support!
+L409: 
+L410: cite88†More replies L411: 
+L412: cite89†Apophis_ L413: 
+L414: •
+L415: 
+L416: cite90†3y ago L417: Sorry, unfortunately I had to stop using your app and sideload Apollo. Cost is too high for me. I live in a country with wages couple times smaller than in the USA, with raging inflation and raising costs of life. I know it's "only a couple dollars" for most of you, but for me it's much more difficult. Just throwing it out in case you are thinking about regional prices or some solution to people like me (any way to use reddit with less API usage?).
+L418: Recent updates for Narwhal were huge and I'm glad to see the app growing. Maybe in the future I'll be back. All best!
+L419: 
+L420: cite3†det0ur L421: 
+L422: •
+L423: 
+L424: cite91†3y ago L425: 
+L426: I totally understand. I wish Reddit had regional pricing like this
+L427: 
+L428: cite92†More replies L429: 
+L430: cite93†Praise_the_Tsun L431: 
+L432: •
+L433: 
+L434: cite94†3y ago L435: 
+L436: Paying through Apple subscriptions with a fee or third party website? Would love for you to get more of a cut if possible.
+L437: 
+L438: cite3†det0ur L439: 
+L440: •
+L441: 
+L442: cite95†3y ago L443: 
+L444: Going to be apple only to start.
+L445: 
+L446: cite96†More replies L447: 
+L448: cite97†leaky_wand L449: 
+L450: •
+L451: 
+L452: cite98†3y ago L453: Oh man I’m gonna upvote so many things
+L454: 
+L455: cite3†det0ur L456: 
+L457: •
+L458: 
+L459: cite99†3y ago L460: 
+L461: lol don’t go too crazy or you might bankrupt me
+L462: 
+L463: cite100†More replies L464: 
+L465: cite101†chriberg L466: 
+L467: •
+L468: 
+L469: cite102†3y ago L470: 
+L471: Was absolutely NOT going to subscribe under the prior system. $4/month regardless of api usage, on the other hand, is more than fair. Will be subscribing for sure now.
+L472: 
+L473: cite3†det0ur L474: 
+L475: •
+L476: 
+L477: cite103†3y ago L478: 
+L479: Glad to have you!
+L480: 
+L481: cite104†More replies L482: 
+L483: cite105†AlphaDeltaF1 L484: 
+L485: •
+L486: 
+L487: cite106†3y ago L488: I responded I wouldn’t subscribe but if this is the plan I will def be subscribing. I didn’t want to have to worry about my API usage. You guys rock
+L489: 
+L490: cite3†det0ur L491: 
+L492: •
+L493: 
+L494: cite107†3y ago L495: 
+L496: You rock!
+L497: 
+L498: cite108†More replies L499: 
+L500: cite109†SACHD L501: 
+L502: •
+L503: 
+L504: cite110†3y ago L505: 
+L506: Does $3.99 include any payments that will go directly to you for making and maintaining the app? I am an Apollo switcher who is really enjoying Narwhal and would like to support you for your efforts.
+L507: If $3.99 doesn’t include anything for you then please add a plan that includes this $3.99 but additional dollars can be pledged to you.
+L508: 
+L509: cite111†adamb10 L510: 
+L511: •
+L512: 
+L513: cite112†3y ago L514: 
+L515: There’s a tip jar in settings too.
+L516: 
+L517: cite109†SACHD L518: 
+L519: •
+L520: 
+L521: cite113†3y ago L522: 
+L523: That’s awesome. But I am a software engineer myself and I have the money to help out a fellow software engineer. I would like to contribute on a monthly basis rather than a one-time tip.
+L524: 
+L525: cite3†det0ur L526: 
+L527: •
+L528: 
+L529: cite114†3y ago L530: Thanks, I really appreciate that. I’m going to add a section to add an additional $1, $2, $3 to the subscription if you’d like to support me
+L531: 
+L532: cite115†More replies cite116†More replies L533: 
+L534: more reply
+L535: 
+L536: cite117†more reply L537: 
+L538: cite118†Idolmistress L539: 
+L540: •
+L541: 
+L542: cite119†3y ago L543: 
+L544: $4 a month is really a bargain. I’ll definitely be signing up when the subscription starts!
+L545: 
+L546: cite3†det0ur L547: 
+L548: •
+L549: 
+L550: cite120†3y ago L551: 
+L552: Awesome, glad to have you
+L553: 
+L554: cite121†More replies L555: 
+L556: cite122†NOTorAND L557: 
+L558: •
+L559: 
+L560: cite123†3y ago L561: I’m curious what were the key reasons in you deciding to go this direction instead of based on API calls
+L562: 
+L563: cite3†det0ur L564: 
+L565: •
+L566: 
+L567: cite124†3y ago L568: 
+L569: A lot of people don’t even know what an API is. I don’t want people who use Narwhal to even have to think about that. I just want everyone to use the app :)
+L570: 
+L571: cite125†More replies L572: 
+L573: cite126†eec-gray L574: 
+L575: •
+L576: 
+L577: cite127†3y ago L578: 
+L579: Sounds very reasonable. Thanks for the transparency.
+L580: 
+L581: Will this allow use across both iPhone and iPad apps?
+L582: 
+L583: cite3†det0ur L584: 
+L585: •
+L586: 
+L587: cite128†3y ago L588: 
+L589: Yes
+L590: 
+L591: cite129†More replies L592: cite130†SpezSux114 L593: 
+L594: •
+L595: 
+L596: cite131†3y ago L597: 
+L598: I’m brand new to this app but just wanted to say that you did a beautiful job on it. I will absolutely pay for a subscription, thank you for making this app.
+L599: 
+L600: cite3†det0ur L601: 
+L602: •
+L603: 
+L604: cite132†3y ago L605: 
+L606: Thank you for the support! Glad to have you here
+L607: 
+L608: cite133†More replies L609: 
+L610: cite134†KingBee L611: 
+L612: •
+L613: 
+L614: cite135†3y ago L615: 
+L616: • Edited 3y ago
+L617: Your work is appreciated, and this is a great move. I've been monitoring my API calls, and its made me alter my behavior in negative ways - for example avoiding expanding nested comments and never upvoting or downvoting anything.
+L618: I was also able to set up the settings so it looks more like the old app. There is still some extra padding in places that spaces things out more compared to my old screenshots, but I was able to get it tolerably close with close to the smallest font settings and small thumbnails and some other tweaks.
+L619: My #1 request here would be to let us minimize the padding between the username and the comments text. This empty space is noticeably larger than it used to be, and as far as I can tell is the main reason you see less comments on the screen compared to the old app.
+L620: 
+L621: My decision to subscribe or not has little to do with you or your app tbh. It is more around whether I want to give reddit this money monthly.
+L622: I am inclined to say they (reddit, not you) can go fuck themselves and reduce my mobile use. But we'll see how deep my 10+ year addition is ingrained....
+L623: 
+L624: cite3†det0ur L625: 
+L626: •
+L627: 
+L628: cite136†3y ago L629: 
+L630: I appreciate you still being here!
+L631: 
+L632: cite137†More replies L633: 
+L634: cite138†bdrumzzz L635: 
+L636: •
+L637: 
+L638: cite139†3y ago L639: This is so good and thank you very much for your tireless efforts in engineering this after Reddit's self-inflicted debacle. I will definitely be subscribing and paying a visit to the tip jar so you can continue this arduous task. Cheers.
+L640: 
+L641: cite3†det0ur L642: 
+L643: •
+L644: 
+L645: cite140†3y ago L646: 
+L647: You are awesome!
+L648: 
+L649: cite141†More replies L650: 
+L651: cite142†Slitted L652: 
+L653: •
+L654: 
+L655: cite143†3y ago L656: 
+L657: I just got the prompt on N2 now, and I know it’s a dummy charge since I’m on the beta app, but I clicked the subscribe option like it was free candy.
+L658: $4/mo for general access is going to be pretty damn fair. Nice one Rick!
+L659: 
+L660: cite3†det0ur L661: 
+L662: •
+L663: 
+L664: cite144†3y ago L665: 
+L666: Thank you so much for subscribing 🙏
+L667: 
+L668: cite145†More replies L669: 
+L670: cite146†Trollsniper L671: 
+L672: •
+L673: 
+L674: cite147†3y ago L675: 
+L676: I’m very conflicted here. On one hand I’m thrilled with this simpler pricing model and with how the app is taking shape.
+L677: 
+L678: On the other hand, I’m very much not thrilled to show support to Reddit’s bullshit and giving them revenue.
+L679: I have to say, under the original model, I was 100% not subscribing. Given the updated pricing, I’m tempted to feed my Reddit addiction.
+L680: 
+L681: cite3†det0ur L682: 
+L683: •
+L684: 
+L685: cite148†3y ago L686: 
+L687: We will be happy to have you if you decide to sub!
+L688: 
+L689: cite149†More replies L690: 
+L691: cite150†davsbrander L692: 
+L693: •
+L694: 
+L695: cite151†3y ago L696: 
+L697: • Edited 3y ago
+L698: 
+L699: Thanks, but no thanks. I just don’t use Reddit enough to justify that cost per month.
+L700: I appreciate all the effort you’ve put into this app and the work you are doing to make a third party app work, but I can’t justify the cost for my usage given my low API calls (~1500-2000 per month).
+L701: 
+L702: The price point is reasonable for heavier user than me, great for power users, but that’s not what I am. I’m sad to leave narwhal as I’ve used it since Alien Blue was no longer an option, but wish you nothing but good luck and hope you get many many subscribers and are never out of pocket.
+L703: It’s been a good run since N1 and I’ve got more than my moneys worth out of the old pro upgrade.
+L704: 
+L705: cite3†det0ur L706: 
+L707: •
+L708: 
+L709: cite152†3y ago L710: 
+L711: Totally understandable. After the initial launch and I get more data, I might be able to add a plan for people around your usage!
+L712: 
+L713: cite150†davsbrander L714: 
+L715: •
+L716: 
+L717: cite153†3y ago L718: 
+L719: Thanks for understanding, and I appreciate everything you've put into this app. It is truely a great upgrade to N1!
+L720: Given I have more downvotes than upvotes I hope that means you'll get lots of subscribers rather than people in my position and make the unlimited plan work! I'll keep an eye on the app/subreddit from the web in case a plan suited to me is viable.
+L721: 
+L722: cite154†More replies L723: 
+L724: cite155†TopoRUS L725: 
+L726: cite156†Image: Cake icon†www.redditstatic.com •
+L727: 
+L728: cite157†3y ago L729: 
+L730: Yeah, I'm in the same situation with estimate less than 2k API calls. And too can't yet justify subscription.
+L731: Well, I guess it'll be easier to decide after subscription will be enabled.
+L732: 
+L733: cite158†painintheass21 L734: 
+L735: •
+L736: 
+L737: cite159†3y ago L738: 
+L739: Same here
+L740: 
+L741: cite160†Turget L742: 
+L743: •
+L744: 
+L745: cite161†3y ago L746: 
+L747: Same
+L748: 
+L749: cite162†More replies L750: 
+L751: cite163†itsamoreh L752: 
+L753: •
+L754: 
+L755: cite164†3y ago L756: 
+L757: Dude way to under promise and over deliver! Thanks!
+L758: 
+L759: cite165†Conflict_NZ L760: 
+L761: •
+L762: 
+L763: cite166†3y ago L764: 
+L765: Are you allowed to talk about how reddit is charging you? Are they giving you a bulk discount or some special rate? I'm estimated 7000 calls for the month and I'd hate to get you charged for extra.
+L766: cite167†ClarkZuckerberg L767: 
+L768: •
+L769: 
+L770: cite168†3y ago L771: 
+L772: During testing, OP likely just averaged out the API calls and figured out what they’d need to charge to pay for it all and keep a little themselves. That’s what I’d do anyways. So even if you’re using 7,000, someone else might be using 3,000.
+L773: 
+L774: cite169†AzazelsAdvocate L775: 
+L776: •
+L777: 
+L778: cite170†3y ago L779: It's exactly this. As a comparison, the Relay app for Android has $1/$2/$3 plans with limited API usage, and a $5 unlimited plan. I'd consider myself a pretty heavy user and the $2 plan is enough for me, and the $3 plan would be double that. I actually think everyone having to pay $4 is actually kind of a rip off for anyone but the top few percent of heavy users.
+L780: 
+L781: cite171†AineLasagna L782: 
+L783: •
+L784: 
+L785: cite172†3y ago L786: I’m hitting around 12k average so I would have been happy paying for the $6 or $7 plan, whatever it was, since reddit is my main social app
+L787: 
+L788: cite173†More replies cite174†More replies cite175†More replies L789: 
+L790: [deleted]
+L791: 
+L792: •
+L793: 
+L794: cite176†3y ago L795: 
+L796: as a heavy user …. that’s freaking awesome
+L797: 
+L798: just￼ gonna shout out the tip jar ☕️🍻🌮
+L799: 
+L800: cite177†Stone0777 L801: 
+L802: •
+L803: 
+L804: cite178†3y ago L805: 
+L806: Wow, that’s a great price point and I don’t have to worry about API calls…done deal. Will be subscribing!
+L807: 
+L808: Thanks creating this great App
+L809: 
+L810: cite179†Neryuslu L811: 
+L812: •
+L813: cite180†3y ago L814: 
+L815: Love your app, and you have been listening to feedback so well, actually quickly implemented a few things I suggested (account access in shortcuts, placeholder thumbnail, etc.).
+L816: 
+L817: I would have preferred to pay 2.99, but 3.99 is still fair, since I won't have to pay attention to my API calls.
+L818: 
+L819: The customization options are great, I have been able to 'rebuild' Apollo as closely as possible.Thank you!
+L820: You're the first developer ever to get a monthly sub from me. I have refused this model so far, but in this case it's obviously different. Still sucks to indirectly pay Reddit like this. Fuck you cite181†u/spez .
+L821: 
+L822: I still think that you need to change the default font to San Francisco and make the fonts brighter (especially read posts). I have customized it, but the default hurts readability. I have had this confirmed by an UI/UX expert.
+L823: 
+L824: cite53†billiever L825: 
+L826: •
+L827: 
+L828: cite182†3y ago L829: What things did you do to make it similar to Apollo?
+L830: 
+L831: cite179†Neryuslu L832: 
+L833: •
+L834: 
+L835: cite183†3y ago L836: 
+L837: • Edited 3y ago
+L838: 

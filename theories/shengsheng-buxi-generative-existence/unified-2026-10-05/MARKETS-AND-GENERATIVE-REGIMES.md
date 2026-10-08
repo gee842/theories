@@ -196,3 +196,59 @@ C_0\ge K_N=(15+10\kappa)(10/9)^N-10(1+\kappa).
 当前数学结果是有限干预后的区域转移与实际支持交接，未宣称严格的全参数分岔分类或完整可恢复域。β=0 的实际授权与实施仍是给定条件；比例模型尚不包含离散退出和形成新参与者。下一连接应落到可实施的部分阻断及其形成、保留和成本，以及零余量后的实际进入。完成的有限到达与交接直接复用。
 
 English: A finite, effective beta=0 intervention reaches the old protection rectangle from every physical rational state with positive renewal share. A conservative initial stock cover includes each intervention step’s extra support burden; the actual guarded history executes and hands its unchanged arrived state to the inherited beta=1/2 protection theorem after withdrawal. Zero seed, no uniform pulse duration and an immediate support-failure example delimit the result. It establishes a sufficient supported transition, not an optimal policy, complete basin, empirically calibrated threshold or endogenous formation of the intervention. G0/J/E supply the separate normative use.
+
+
+<a id="partial-correction-boundary"></a>
+### 部分纠正、临界反馈与误差 / Partial correction, critical feedback and error
+
+2026-10-08。[接续论证与反审](../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#partial-correction-boundary)进一步削弱上一轮“β=0”的条件，并解决临界等号。在原有理参数族0≤β≤3/4、没有额外责任误差时，**所有物理正维护初态都有限进入原保护区，当且仅当 β≤5/12。** 因而部分纠正足够，临界点也可恢复；大于临界值仍有低区无法进入保护，同时原来的高端保护区并未消失。[26项新定理／31项审计](../../../experiments/market-generativity/formal/partial-transition-verification.json)实际通过，123项继承定理／153项审计另列。
+
+临界恢复的根据来自同一关系过程：初期不利选择不会耗尽全部维护份额，已检查 xₙ≥x₀/2；这个实际余量逐步降低后续影响，使责任效力最终超过私人选择门槛，继而支持更多维护。最坏点 w=1 上的零纠正余量，不等于 w 会永久停在那里。这里没有从微弱替代的存在直接跳到必然胜利，结论依赖所列实际更新关系。
+
+新的有限到达已经接回前轮支持账户与原实际守卫：初始支持满足既有 K_N 上界时，每一步纠正可执行；撤除后，以到达时的真实剩余状态沿原 β=1/2 法则继续。支持充足仍是条件，不是对任何实际储备的承诺。
+
+**临界点的精确保证并不耐受任意小持续误差。** 对任意小的正偏差 e，原责任更新可出现正维护平衡 (32e/5,3/8,1−32e/5)，始终不进入保护区。由此不能把无误差的等号当作现实中的稳健目标，也不能把反例误说成所有受扰历史都退化。严格的含误差可恢复域、最优纠正力度与时间尚未证明。
+
+对元吸引子理论，当前边界从区域存在进一步推进为指定规律下的普遍到达阈值；恢复中的活动也能参与改变自己的选择条件。对齐仍先评价整体中的生、可能性与实际损失，再据这种机制判断什么纠正值得实施、何种活动需要支持。动力学不单独分配义务，也不要求保存每个现存组织。
+
+进入问题已按已有形成成果重构：真实入口可能来自新组织，也可能来自现有活动的学习、重组与新服务路径。现有形成、修复与更新机制直接复用；尚缺的是其实际输出如何成为市场中的维护活动及责任作用，并保留跨阶段的支持与失败。不得以一个免费份额增量代替这个连接。[成果记录](../results/records/market-partial-correction-boundary.md)保存精确前提与后续范围。
+
+English: Partial correction suffices. In the original rational family, all physical positive renewal states reach protection in finite time iff beta≤5/12, including equality, under zero extra error. A retained positive share changes later influence and creates a favorable selection gap; the supported full-state handoff is checked. Arbitrarily small constant adverse error invalidates the universal critical guarantee, and supercritical low regions remain. The remaining formation-to-market interface and robust recovery range require actual correspondence; existing formation mechanisms are credited, not restarted.
+
+<a id="finite-support-obstruction"></a>
+### 恢复方向与来得及恢复 / Recovery direction and timely realization
+
+2026-10-09。[新推导与反审](../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#finite-support-obstruction)证明：在原增长与支持关系下，对每个有限C₀≥5，都有一段有正宽度的正维护余量区间，任何时变责任纠正都不能让其撑过恢复所需的前期。取整数N>C₀−5，若0<x₀≤(2/3)^N/6，维护份额在前N步至多为1/6，每个仍满足底线的步骤至少净损失一单位支持，故完整历史至迟在N失效。任意β／误差序列及非负支持耗用均包含在证明中，实际反馈产生的序列也在范围内；直接补充支持、改变扩展规律或形成新维护活动须另行解释。
+
+同一个正初态即便从q=1开始，β立即为0、没有误差或额外耗用，旧运行投影仍会最终恢复，而完整守卫历史会先终止。这把“方向已转好”与“关系能否支撑这段转变”接入同一历史。支持存量与维护活动不是独立实体：同一步活动同时改变两者，它们的更新速度共同决定原组织能否继续。相同有限支持在高维护初态又可由原证书持续运行，故不是所有有限支持都必然失败。[17项新定理／22项审计](../../../experiments/market-generativity/formal/finite-support-verification.json)实际检查，123项继承定理／153项审计另列。
+
+**元吸引子所描述的趋向，只能沿实际可继续的关系实现。** 本轮给出不能及时恢复域的保守内界，未给出精确盆界或新的普遍相变律；固定参数下也可发生支持失效。`none`表示原市场组织不能继续，不表示现实整体终结。对Becoming，这是生成、维持与消失的一个同历史解释，无需善恶前提，但仍依赖明示实质规律，并未完成零附加实质公理目标。下一连接是实际形成的供给、依存转化或维护路径怎样改变该边界，且其形成过程本身来得及发生。[成果记录](../results/records/market-finite-support-obstruction.md)保存量词和范围。
+
+English: Under the inherited share and support laws, every finite stock C₀≥5 admits a positive-width interval 0<x₀≤(2/3)^N/6, for any integer N>C₀−5, that fails by N under every time-varying beta/error sequence and nonnegative stock shock. Even initially perfect quality with immediate zero-beta correction and no extra cost can have projected eventual recovery but full-history failure. The same stock can sustain a high-renewal state under the original certificate. The new 17 theorems / 22 audits give a conservative obstruction region, not an exact basin or a new universal phase law. Meta-attractor tendencies require an executable supporting history. Organizational ending does not mean reality ends. Formation, maintenance and dissolution are explained together without ethical premises; substantive laws remain explicit and zero-axiom grounding is unfinished. Actually formed changes in provision, dependence or renewal expansion are the next interface.
+
+<a id="formed-independent-continuation"></a>
+### 在接续中形成新的组织 / Forming organization through continuation
+
+2026-10-09。[历史对应与反审](../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#formed-independent-continuation)接续原支持边界：LibreOffice在已有代码、开发、翻译和使用关系中，形成新的协调、发布与分发。新的法人尚在形成，已有协会承担过渡支持，实际版本已发布并进入Ubuntu的beta发行。基金本金与运行资金用途有别，不能直接等同于模型中可即时消耗的同一种支持。七份一手声明保留来源；没有假定旧项目消失、重跑旧证明或宣称测得β／C。
+
+新增的解释是：**部分改组后的活动可以先承担下一段工作，使长期组织继续形成。** 新机构无需在所有案例中先完整成立；实际功能又不能因为纸面分支存在就视为已接通。需要逐阶段说明什么从既有活动中保留，什么依存被替换，什么功能不得中断，以及当时怎样承接。代码、技能、权限和资金并不是若干独立实体的任意拼装，它们在共同工作中形成并通过新的协作继续起作用。
+
+退化研究因而要分辨运行趋向、支持可继续性，以及**实际改组路径是否仍可形成**。固定规律中的失败不自动排除改变该规律所表示关系的可能；想得到一条新路径也不保证它可实现。对元吸引子应追踪原控制怎样持续覆盖这些改变，或怎样被实际改组改变其覆盖。此处未给出普遍相变判据，不以成功后见之明定义初始可改组性。
+
+在G0/J/E下，有根据的对齐应支持有价值活动的实际承接和修订，必要时改变承载机构；不能将既存机构的存续与共同生成能力的存续画等号。分支、独立和开放也都需要真实损失与保护功能的比较。[规范范围与历史评估记录](../results/records/formed-software-continuation.md)保留这些条件。强零附加实质公理奠基仍未由此完成。
+
+English: A traced LibreOffice history supports an organizational continuation formed through inherited work, interim support and actual distribution before final incorporation. This is a historical correspondence, not a new Lean theorem or a quantitative escape from the old obstruction interval. Partial reorganization can support activity while its lasting institution is still forming; usable support is not an undifferentiated total. Alongside direction and support, investigate whether an actual reorganization path can form. Fixed-law failure does not settle that question, and imagined alternatives do not establish executable ones. G0/J/E warrant appraisal of effective continuation, revision and appropriate institutional change, preserving actual losses and the limits of this selected case.
+
+
+<a id="continuation-with-retained-control"></a>
+### 适应成功与控制关系的继续 / Adaptation with retained control
+
+2026-10-09。[同一研究的日期化对照与反审](../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#continuation-with-retained-control)补入Narwhal的接续，保留Apollo的终止。共同内容、使用、开发和维护中形成的API依存，在改价后通过新的版本和订阅继续起作用。Narwhal从报告来不及完成改造，经过继续接入的公开计划，到发布新版本；其作者后来明确因担心API再次涨价而暂不提供年付。平台持续条件因而进入客户端面向使用者的承诺安排。这里记录作者明示理由，无完整合同、财务账或匹配因果识别。
+
+**部分形成能够支撑接续，还须辨明接续后哪些关系保持了对进一步改变的影响。** 新运行方式形成、特定旧依存被替换、后续改组条件的控制得到改变，是不同的实际主张。Narwhal的继续限制普遍退出判断，却没有建立准入控制已被替换；LibreOffice的旧品牌与发布依存发生具体改变，也不证明它已摆脱一切必要支持。这些区别不把依存本身判成恶，也不设机构必须永久独立的目标。
+
+对元吸引子，本轮识别一段“上游规则条件进入下游承诺规则”的现实对应。下游适应怎样再反馈并强化／改变原规则选择，仍缺确切证据。客户端停止、改造后继续与控制关系重构都不能凭名称自动成为严格相变。原数学阈值保留，本案未校准参数。评价当时的可行性应分清已运行条件、公开承接安排及尚待形成之处，不能用后来结局倒填支持。
+
+G0/J/E的应用进一步要求比较改变规则时已有承担、实际过渡和有效修订条件；某条活动后来成功适应，不自动正当化全部被转移的负担。完整成本、可替代功能和真实损失仍有各自的根据。此增量修订[原软件接续记录](../results/records/formed-software-continuation.md)，没有另计一个结果或新增数学。
+
+English: Dated Apollo and Narwhal statements distinguish inherited commitments, unfinished transition work, continued-access plans and a later release. Narwhal's stated concern about future API increases enters its decision to avoid annual billing. This is a scoped correspondence for dependence shaping a downstream commitment rule, not a complete feedback loop or a controlled estimate of transition time. Operational adaptation, replacement of a particular dependency and changed control over future adaptation require different evidence. Continued service does not establish escape, and continued dependence alone does not establish degeneration. The ethical use evaluates actual transition and revision conditions under G0/J/E; no universal phase threshold or new mathematical result is claimed.

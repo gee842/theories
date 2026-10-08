@@ -6,7 +6,7 @@
 
 记录源 / Editable record: [organizational-formation-from-generative-comparison.json](organizational-formation-from-generative-comparison.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T13:33:43.527041+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-08T18:34:30.570680+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
@@ -57,3 +57,4 @@ Aliases / 别名: —
 
 - 2026-10-08：接续生成优先纠正，形成有范围的规范推论及新 Lean 组合；迁移该主张为唯一成果身份，历史来源与反例保留。 / 2026-10-08: extends the generative-first correction with a scoped normative argument and new Lean composition; migrates this claim to one result identity while retaining historical sources and countercases.
 - 2026-10-08：核对原理论与研究为保留前缀、共享指示的逆向保留及市场会话新增范围后，接入分类稳健后续并缩小 next_delta；原定理及历史回执不改写。 / 2026-10-08: verified original theory/study prefixes, inverse preservation of the shared directive and the concurrent market-session scope; connected robust classification and narrowed next_delta. Original theorems and receipts are unchanged.
+- 2026-10-09：逐项核读共享指示中新增的“接续部分纠正与临界反馈”，并验证此前已审字节完整保留为前缀。新增指示属于市场／元吸引子会话，不改变本成果的 G0/J、分类或组织形成范围。更新该来源的审阅指纹；主张、前提、证明绑定、反例与验证状态保持不变，无新定理或重新验收。 / 2026-10-09: reviewed the appended partial-correction and critical-feedback directive and verified that all previously reviewed bytes remain an unchanged prefix. The addition belongs to the market/meta-attractor session and does not change this result’s G0/J, classification or organizational-formation scope. Updated this source-review fingerprint; claims, hypotheses, proof bindings, counterexamples and validation status are unchanged, with no new theorem or renewed scientific acceptance.

@@ -101,3 +101,14 @@ This preserves the foundation’s intended continuity: norms and interpretations
 5. **Reflexive test.** Apply the same criticism and revision requirements to this foundation. An amendment must expose what failed, what changed and what new consequence can be checked.
 
 The decisive contribution of this branch is a sharpened burden of proof: identify the exact invariant whose denial defeats the relevant epistemic task, and show that our foundation establishes it under independently specified conditions. The next bridge is **formed, context-indexed evidence and paid revision → justified reliance**, with alternatives and possible defeaters retained. Completing that bridge would advance the unified foundation; comparing philosophical sources alone does not complete it.
+
+
+## Fallible inquiry necessity source check
+
+8 October 2026. Supports [the continuation](SCIENTIFIC-INQUIRY-CONDITIONS.md#10-fallible-inquiry-and-the-foundational-inference), without restarting the earlier philosophy survey.
+
+- **David Aldous and James Fill, Reversible Markov Chains and Random Walks on Graphs, §12.1.1–12.1.2.** [Author-hosted text](https://www.stat.berkeley.edu/~aldous/RWG/Book_Ralph/Ch12.S1.html), accessed 8 October 2026. Read the coupling inequality, its displayed marginal requirements, proof chain and methodological comments. The same mathematics bounds variation by mismatches under a valid coupling. It does not say every chosen coupling is sharp. Our separate coverage/error accounting and generative interpretation are our application, not the authors' philosophical conclusion. The remainder of the chapter was not assessed for this task.
+- **Bin Yu, “Assouad, Fano, and Le Cam” (1997), Lemma 1 and introductory comparison.** [Primary chapter PDF hosted at Stanford](https://web.stanford.edu/class/stats300a/REFS/yu1997assouad.pdf). The retrieved indexed passage supplies the lemma, affinity relation and opening of its proof. The PDF endpoint was accessible, but this turn does not claim a full-chapter reading. The comparison credits existing testing-to-estimation reasoning; it does not extend our kernel check to arbitrary measure spaces.
+- **David Blackwell, “Comparison of Experiments” (1951).** Publisher/search metadata were located; the Project Euclid endpoint failed. No new substantive inference here relies on a claimed fresh full-text reading of that paper.
+
+No source states that the repository's ontology or whole ethical theory is necessary. The formal finite bounds are independently checked in our source; historical mathematical credit and philosophical warrant are kept separate. Earlier Peirce, Quine, van Fraassen and Longino comparisons retain their original reading scope and are not counted as fresh source assessment.

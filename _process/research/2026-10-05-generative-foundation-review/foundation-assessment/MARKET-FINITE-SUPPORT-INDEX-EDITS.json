@@ -1,0 +1,80 @@
+{
+  "scope": "M20 owned continuation only; unrelated pending reviews retained",
+  "entry": "M20",
+  "suffixes": {
+    "claim_zh": " 有限支持边界进一步明确：任意有限C₀≥5均有正维护余量区间，在原扩展与耗用关系下对全部时变责任纠正仍会先失效；同一正初态投影有限恢复而完整历史终止。",
+    "claim_en": " Finite support adds a quantified boundary: every finite C0>=5 has a positive renewal interval that fails under all time-varying quality corrections with the inherited growth and stock laws; the same seed has projected finite recovery but full-history termination.",
+    "scope_zh": " 有限支持阻碍新增17项Lean定理／22项审计，继承123项／153项另列；δ_N为保守失败内界，真实供给、依存改变与进入不在控制范围内，不宣告普遍相变或零实质公理。",
+    "scope_en": " Finite-support obstruction adds 17 Lean theorems / 22 audits, with 123 inherited theorems / 153 audits separate; delta_N is a conservative failure interval, excluding new provision, dependence change and entry, without universal phase or zero-substantive-axiom claims."
+  },
+  "links_added": [
+    {
+      "label_zh": "有限支持阻碍与反审",
+      "label_en": "Finite-support obstruction and counterreview",
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#finite-support-obstruction"
+    },
+    {
+      "label_zh": "有限支持证明",
+      "label_en": "Finite-support proof",
+      "path": "experiments/market-generativity/formal/FiniteSupportObstruction.lean"
+    },
+    {
+      "label_zh": "有限支持回执",
+      "label_en": "Finite-support receipt",
+      "path": "experiments/market-generativity/formal/finite-support-verification.json"
+    }
+  ],
+  "reviewed_versions": {
+    "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md": {
+      "before": "9cb0bbe1826d8d9ae39f47c7b1262a75ec78ed3f7ad5ec6cd1196b5a9e80724a",
+      "after": "0aaf71300c4eba2d9e799843a62349e77f733e2ab32300641aba63143fdc027a"
+    },
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md": {
+      "before": "258d0e31178a169713eca103f09bcc86b816ce01b01e72d2e8a58fab01baf39b",
+      "after": "aa8f7f774309ede25bfaad0ca0b547f57e3de870fda67c0fb6b46010c141fda7"
+    },
+    "experiments/market-generativity/formal/FiniteSupportObstruction.lean": {
+      "before": null,
+      "after": "4d5e2ef8cc147600698d945180d7f402a39d0072120723f8578deebaaaf3230a"
+    },
+    "experiments/market-generativity/formal/finite-support-verification.json": {
+      "before": null,
+      "after": "ebd25fd80d23ce9de8c12b18128c44c0630d1293cc69f8b11f1477048b24232b"
+    }
+  },
+  "other_entries_unchanged": true,
+  "other_rendered_lines_unchanged": true,
+  "before_entry_sha256": "b7573239451df4a5dc362f9759964986128e2ae7d9fb952a3b082a3371ce4ac6",
+  "after_entry_sha256": "8a2a56bebe9de93d5b32e70fb8014f8c14b82063e62b734c6aecb240a716df40",
+  "pending_chain_errors": [
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/organizational-formation-from-generative-comparison.md",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/situated-recovery-empirical-correspondence.md",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/transition-grouping-word-partition.md"
+  ],
+  "pending_source_versions": [
+    "RESEARCH.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+    "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+    "theories/shengsheng-buxi-generative-existence/README.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+    "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+    "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+    "theories/meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COLLECTIVE-DESTRUCTION-INTEGRATION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md",
+    "theories/shengsheng-buxi-generative-existence/results/records/acquired-binding-compositional-use.json",
+    "theories/shengsheng-buxi-generative-existence/results/records/enacted-scene-binding.json",
+    "theories/shengsheng-buxi-generative-existence/results/records/market-supported-finite-transition.md",
+    "experiments/market-generativity/formal/README.md",
+    "theories/shengsheng-buxi-generative-existence/results/records/encounter-selection-and-revision.json",
+    "theories/shengsheng-buxi-generative-existence/results/records/market-partial-correction-boundary.md"
+  ]
+}

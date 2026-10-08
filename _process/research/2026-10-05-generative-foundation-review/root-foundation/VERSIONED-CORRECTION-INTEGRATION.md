@@ -1,5 +1,7 @@
 # Correction through changing request histories
 
+**Current interpretation, 9 October 2026:** [§8](#8-reframing-the-question-responsive-transformation) follows Ren's move to **responsive transformation / 因应转化**. The proofs below remain local results about delivery and history; their former application boundary is not a requirement to guarantee all future revision or to suspend general theoretical inquiry.
+
 8 October 2026. AI-authored continuation of [Ren's relational direction and renewed instruction](../../../../sources/15-codex-theory-conversations/2026-10-08-plural-systems-and-parent-correction.md). Current theory: [plural systems and correction, §§12–14](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PLURAL-SYSTEMS-AND-CORRECTION.md#12-correction-depends-on-the-requests-history). The mathematical results are conditional implementation results; the authorized G0/practical-judgment route is retained without reopening its completed work.
 
 ## 1. The connection advanced
@@ -92,3 +94,31 @@ The present wall is correspondence to an identified real correction process: fai
 The supplied premises are not outside generative reality; they are activities omitted or abstracted by this local representation. Their omission is a model boundary, not evidence that they cannot be formed. No claim of universal behavioral corrigibility, unconditional availability, exclusive necessity of versioning, or independent novelty follows.
 
 [Owned index edits](VERSIONED-CORRECTION-INDEX-EDITS.json) and [scoped verification](VERSIONED-CORRECTION-CHECKS.json) bind the documents, proof and executable evidence to the maintained bilingual chain without certifying unrelated concurrent changes. Counterreview here is by the author, not independent acceptance.
+
+## 8. Reframing the question: responsive transformation
+
+9 October 2026. [Ren's exact clarification](../../../../sources/15-codex-theory-conversations/2026-10-09-responsive-transformation.md) directs inquiry toward boundary conditions and direction through changing cognition and situation, and requests a primary term that does not presuppose a separate corrector and corrected object. **Responsive transformation / 因应转化** is the assistant's proposed working name. It describes a capacity and process, not automatic improvement or a declaration that “corrigibility” is intrinsically dualist in every use.
+
+Result(s): reuse `versioned-request-completion`, `acquired-revision-of-pending-task`, `open-form-realization-under-revision` and `practical-judgment-g0-j`. The earlier observation-boundary results retain their source identity in `CORRECTION-FRONTIER-BOUNDARY.md`; no new alias is counted as another result.
+
+Delta: correct the interpretation of the stopping point and the governing research question. The local delivery theorem is one conditional contribution to understanding responsive transformation. The broader objective is to identify conditions that enable, obstruct and ethically direct revision as understanding and circumstances change. No new theorem, independent result or guarantee is claimed for the terminology.
+
+Supplied premises / correspondence: retain the delivery theorem's actual invariant, encoding, protected lifetime and consecutive ticks; the acquired-task composition retains its two-practice correspondence, grounded comparison and protected rewrite. G0/J supply the stated ethical direction. The account must distinguish truth or warrant from current recognition and confidence without dividing them into separate ontological domains.
+
+Evidence: rereading of the unchanged `CorrectionVersioned` proof and existing receipt, the registered producer/consumer interface and the pending-task study's actual changed-condition failure; conceptual reconstruction and author counterreview below. The current theory's condition table classifies formal results, application requirements and normative premises separately. Prior build evidence remains unchanged; this exposition does not warrant rerunning identical proofs.
+
+Boundary: faithful delivery alone does not establish continuing appropriateness; updated cognition does not imply that later circumstances remain covered by its grounds. Conversely, a bounded implementation failure does not defeat every capacity for learning and transformation. No single global rate, scalar objective or sufficient list for all intelligence is derived.
+
+Integration: the existing producer `CorrectionVersioned.valid_head_completes` gives a delivered value from a valid pending history. The independently completed consumer `CommonTaskRevision.revised_head_completes` passes it a re-encoded valid head, and `retargeted_act_uses_delivered_revision` connects delivery to action. The [consumer record](../../../../theories/shengsheng-buxi-generative-existence/results/records/acquired-revision-of-pending-task.md) already preserves the conditions under which changed purposes enter work and the case where subsequent situation change defeats the new practice. That composition is credited, not repeated as this turn's result. The broader conceptual interpretation does not assert an additional formal composition.
+
+### Author counterreview and source assessment
+
+- **Is this only renaming?** The new name would do nothing if fixed requests still defined the whole research target. The substantive correction is to make changing understanding, grounds and situation part of what is being investigated, and to accept supported boundaries and directions as meaningful outcomes. Earlier delivery proofs remain useful within that account.
+- **Are conditions another disguised assurance?** The current list is not asserted jointly sufficient. Each mathematical claim keeps its quantifiers and supplied range; historical counterexamples remain. A new condition can defeat a formerly applicable guarantee without showing that the old theorem was false.
+- **Does revisability mean every demand should be obeyed?** No. Whether change is warranted uses the existing practical account. The capacity can include maintaining a justified practice, rejecting an unjust demand, learning from dissent, relinquishing control or ending. That range neither assumes all requests are correct nor grants an AI a unilateral veto over legitimate oversight.
+- **Does responsiveness imply goodness?** No. More effective adaptation can support a destructive purpose. The direction under G0/J concerns actual living and further generation with real losses and responsibilities retained; this meaning is not built into the descriptive term.
+- **Does every distinction reintroduce dualism?** No. The model's differentiated roles are usable local descriptions when their relations and omissions are explicit. The prior inference from a delivery-model limit to a deployment-only next step was too restrictive. Theoretical investigation of those omitted relations remains authorized.
+
+The existing network-update and reclamation comparisons in §5 retain credit. This round adds no external literature finding; the vocabulary bridge is our presentation choice, not a claim of synonymy across AI-alignment literature. The relevant newer repository evidence is the already checked pending-task composition above. Its source and review are not independent validation of this conceptual reframing.
+
+The [current formulation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PLURAL-SYSTEMS-AND-CORRECTION.md#15-responsive-transformation) therefore replaces unconditional assurance as the organizing demand with **conditions and direction of responsive transformation**. The retained-route result record is updated only in interpretation, linked context and provenance; its theorem, proof binding and scientific status are unchanged. Earlier documentary receipts remain historical snapshots.

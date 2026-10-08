@@ -1,0 +1,304 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T14:11:36.790525+00:00",
+  "scope": "Owned continuation, source-bound social protocol, primary organizational records, new conditional result, local links, paired C14 and preserved broad requirements. No empirical or independent-agent validation.",
+  "new_theorem_count": 29,
+  "new_audit_count": 53,
+  "closure_audit_count": 81,
+  "links_checked": 52,
+  "links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "#organizational-rules-become-inheritable"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "../../../../sources/15-codex-theory-conversations/2026-10-08-evolutionary-organization-completion.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "DEVELOPMENTAL-ASSOCIATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "GENERATED-SELECTION-RECURRENCE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/DevelopmentalReconstruction.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/developmental-reconstruction-verification/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "EVOLUTIONARY-ORGANIZATION-CHECKS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "EVOLUTIONARY-ORGANIZATION-CHECK.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "../../../../sources/evolutionary-selection/evolutionary-organization/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "MAT-HISTORY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "MAT-CONDITIONS-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "LINEAGE-FORECAST-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "DEVELOPMENTAL-TRANSFER-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "LIVING-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "EVOLUTION-COMPARATIVE-DIRECTION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "../../../../sources/evolutionary-selection/comparative-direction/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "MAT-HISTORY-INTEGRATION.md#status-and-next-connection"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md#substantive-counterreview-and-next-test"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "../../../../sources/15-codex-theory-conversations/2026-10-08-social-organizational-evolution.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/OrganizationalRuleInheritance.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/organizational-rule-inheritance-verification/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "../../../../sources/evolutionary-selection/organizational-inheritance/README.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/organizational-rule-inheritance-verification/README.md",
+      "reference": "../OrganizationalRuleInheritance.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/organizational-rule-inheritance-verification/README.md",
+      "reference": "check.py"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/organizational-rule-inheritance-verification/README.md",
+      "reference": "verification.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/organizational-rule-inheritance-verification/README.md",
+      "reference": "../../../../../../../sources/evolutionary-selection/organizational-inheritance/README.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/organizational-rule-inheritance-verification/README.md",
+      "reference": "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md#organizational-rules-become-inheritable"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../sources/15-codex-theory-conversations/2026-10-08-social-organizational-evolution.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "EVOLUTIONARY-ORGANIZATION.md#social-organization-transmits-changed-rules"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "reference": "../../../sources/15-codex-theory-conversations/2026-10-08-social-organizational-evolution.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md#organizational-rules-become-inheritable"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "reference": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/organizational-rule-inheritance-verification/README.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "reference": "../../../sources/evolutionary-selection/organizational-inheritance/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "EVOLUTIONARY-ORGANIZATION-INTEGRATION.md#organizational-rules-become-inheritable"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "ORGANIZATIONAL-RULE-INDEX-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "ORGANIZATIONAL-RULE-CHECKS.json"
+    },
+    {
+      "from": "sources/evolutionary-selection/organizational-inheritance/README.md",
+      "reference": "../../15-codex-theory-conversations/2026-10-08-social-organizational-evolution.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/organizational-inheritance/README.md",
+      "reference": "manifest.json"
+    },
+    {
+      "from": "sources/evolutionary-selection/organizational-inheritance/README.md",
+      "reference": "valkey-launch.html"
+    },
+    {
+      "from": "sources/evolutionary-selection/organizational-inheritance/README.md",
+      "reference": "valkey-governance-before.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/organizational-inheritance/README.md",
+      "reference": "valkey-governance-after.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/organizational-inheritance/README.md",
+      "reference": "valkey-pr2927.json"
+    },
+    {
+      "from": "sources/evolutionary-selection/organizational-inheritance/README.md",
+      "reference": "valkey-pr2927-reviews.json"
+    },
+    {
+      "from": "sources/evolutionary-selection/organizational-inheritance/README.md",
+      "reference": "valkey-pr2927-comments.json"
+    },
+    {
+      "from": "sources/evolutionary-selection/organizational-inheritance/README.md",
+      "reference": "tdf-esc2011.html"
+    },
+    {
+      "from": "sources/evolutionary-selection/organizational-inheritance/README.md",
+      "reference": "pentland-feldman2008.pdf"
+    },
+    {
+      "from": "sources/evolutionary-selection/organizational-inheritance/README.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md#organizational-rules-become-inheritable"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-social-organizational-evolution.md",
+      "reference": "../../_process/goals/theory-of-evolution.json"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-social-organizational-evolution.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md#organizational-rules-become-inheritable"
+    }
+  ],
+  "new_canonical_results": 1,
+  "migrated_interfaces": 0,
+  "registry_check": {
+    "records": 51,
+    "selected_records": [
+      "organizational-rule-inheritance"
+    ],
+    "errors": [],
+    "source_drift": [],
+    "unrelated_source_drift": [
+      {
+        "id": "classification-robust-generative-comparison",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+        "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+        "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+      },
+      {
+        "id": "organizational-formation-from-generative-comparison",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+        "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+        "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+      }
+    ],
+    "scope": "Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation."
+  },
+  "six_requirements_preserved": true,
+  "preserved_primary_sources": 8,
+  "other_chain_entries_preserved_at_edit": 93,
+  "C14_matches_paired_data": true,
+  "full_chain_render_matches": true,
+  "shared_structural_errors": [
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/multivalued-joining-common-structure.json",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/incidence-common-refinement.json",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/retained-reference-joining-recovery.json",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/organizational-formation-from-generative-comparison.md",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/situated-recovery-empirical-correspondence.md",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/transition-grouping-word-partition.md",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/multivalued-joining-common-structure.json",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/incidence-common-refinement.json",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/retained-reference-joining-recovery.json"
+  ],
+  "shared_reviews_pending": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md",
+      "theories/shengsheng-buxi-generative-existence/results/records/acquired-binding-compositional-use.json",
+      "theories/shengsheng-buxi-generative-existence/results/records/enacted-scene-binding.json",
+      "theories/shengsheng-buxi-generative-existence/results/records/encounter-selection-and-revision.json"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md"
+    ],
+    "removed_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "theories/meta-attractor/COMMON-ORGANIZATION.md"
+    ]
+  },
+  "artifact_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md": "aa58c19c7a91b8b7b6b9e9133e70539e9f53c5012512f5240966d714ff9f18ed",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/OrganizationalRuleInheritance.lean": "a124e377584bf560977cd4e9410646129fff1f18f91cfd853fa26ae427708234",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/organizational-rule-inheritance-verification/README.md": "0b84946fcdb694242ae56055968cb5fec7ea30e0053cab40647f505d377ae859",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/organizational-rule-inheritance-verification/verification.json": "d501af23cd3b31ba9420d1f702d99e49be8a6241b336f5cef18553b4c6f8f2fe",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZATIONAL-RULE-INDEX-EDITS.json": "5c1ba0d266aa489364f5a8c610f30f0e6964bc46e63d3a7ebd320b67a5299236",
+    "sources/evolutionary-selection/organizational-inheritance/README.md": "575a1ebb889b5db53311e9e8525f129124500a0e30b403644b5c685cb053babd",
+    "sources/evolutionary-selection/organizational-inheritance/manifest.json": "1ea830e7b5d4f700512457181dc552b217a4268e72d75caa3de167179a734849",
+    "theories/shengsheng-buxi-generative-existence/results/records/organizational-rule-inheritance.json": "dbaccc7cc5fe63b0e1f8bebfeec1e176e0ea250af7dba80d9ab851d8318c7b17"
+  },
+  "checker_sha256": "09a8cf6fa25916132860ae30079c00158e6f5becd25f3be7e1f54578e8a25de1"
+}

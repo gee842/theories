@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "cognition-learning-evolution",
+  "title": {
+    "zh": "认知、学习与演化心理的相连解释",
+    "en": "Connected explanation of cognition, learning and evolutionary psychology"
+  },
+  "scope_type": "authorized-session",
+  "scope": {
+    "zh": "本会话独立授权的完整认知目标；当前从学习和跨层次选择的连接推进。",
+    "en": "This session's independently authorized full cognitive objective; the current continuation connects learning to selection across scales."
+  },
+  "objective": {
+    "zh": "完成认知、学习与演化心理的相连解释，说明形成、保持和使用怎样经实际后果改变组织及其学习、评价和接续方式。",
+    "en": "Complete the connected explanation of cognition, learning and evolutionary psychology, including how formation, retention and use change organization and its learning, evaluation and continuation through actual consequences."
+  },
+  "premises": {
+    "zh": "同一关系展开；公开实际作用、更新、传递、支持和对应条件。多层次选择不默认单一报酬、固定层级或必然有利方向。保留G0/J的独立规范范围。",
+    "en": "Begin with one relational unfolding; disclose operation, updating, transmission, support and correspondence conditions. Multilevel selection presupposes neither one reward, a fixed hierarchy nor inevitable favorable direction. Preserve the separate normative scope of G0/J."
+  },
+  "completion": {
+    "zh": "遵从现有认知章节十项完整解释职责。完成一个条件连接或否定不成立的普遍推论不完成全部目标；不得重开已完成机制。当前连接须综合正面机制、实际形式检查、原典对应与实质反审。",
+    "en": "Retain the ten full-explanation obligations in the existing cognition chapter. Completing a conditional connection or rejecting an unsupported universal inference does not complete the whole objective; completed mechanisms are not reopened. The current connection requires affirmative mechanism, actual formal checks, primary-source correspondence and substantive counterreview."
+  },
+  "sources": [
+    "sources/15-codex-theory-conversations/2026-10-08-cognition-learning-evolution-goal.md",
+    "sources/15-codex-theory-conversations/2026-10-09-learning-recursive-selection.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md"
+  ],
+  "result_ids": [
+    "acquired-binding-compositional-use",
+    "enacted-scene-binding",
+    "encounter-selection-and-revision",
+    "naming-attention-coverage",
+    "encounter-control-and-retention",
+    "retrospective-source-binding",
+    "historical-source-binding",
+    "learned-procedure-transmission"
+  ]
+}

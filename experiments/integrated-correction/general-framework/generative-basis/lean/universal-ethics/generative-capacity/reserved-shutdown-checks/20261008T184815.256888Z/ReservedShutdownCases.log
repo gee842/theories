@@ -1,0 +1,5 @@
+ReservedShutdownCases.lean:30:17: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Inhabited World
+
+Hint: Adding the command `deriving instance Inhabited for TemporalInspection.World` may allow Lean to derive the missing instance.
+ReservedShutdownCases.lean:48:54: error: `generation` is not a field of structure `Packet`

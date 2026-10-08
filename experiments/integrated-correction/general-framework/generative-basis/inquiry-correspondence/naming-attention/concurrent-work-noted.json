@@ -1,0 +1,98 @@
+{
+  "noted_at_utc": "2026-10-08T14:10:01.977271+00:00",
+  "starting_commit": "4948d91ea4bfb945cdcbed268a5651424da5e8dd",
+  "current_head": "1e9b5ed081c84c85ef919b3dfaee41c91ddf8b91",
+  "incoming_scopes": {
+    "foundation-and-joining": {
+      "detail": "Concurrent necessity/joining work, not substantively accepted by this study.",
+      "paths": [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-REFINEMENT-CHECK.py",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-REFINEMENT-CHECKS.json",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-REFINEMENT-INDEX-EDITS.json",
+        "theories/shengsheng-buxi-generative-existence/results/records/incidence-common-refinement.json",
+        "theories/shengsheng-buxi-generative-existence/results/records/incidence-common-refinement.md",
+        "theories/shengsheng-buxi-generative-existence/results/records/joining-open-map-factor.json",
+        "theories/shengsheng-buxi-generative-existence/results/records/joining-open-map-factor.md",
+        "theories/shengsheng-buxi-generative-existence/results/records/joining-questions-survive-encoding.json",
+        "theories/shengsheng-buxi-generative-existence/results/records/joining-questions-survive-encoding.md",
+        "theories/shengsheng-buxi-generative-existence/results/records/retained-reference-joining-recovery.json",
+        "theories/shengsheng-buxi-generative-existence/results/records/retained-reference-joining-recovery.md",
+        "theories/shengsheng-buxi-generative-existence/results/records/unanchored-incidence-collapse.json",
+        "theories/shengsheng-buxi-generative-existence/results/records/unanchored-incidence-collapse.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md"
+      ]
+    },
+    "scientific-inquiry": {
+      "detail": "Concurrent inquiry-necessity formalization and source integration, not audited here.",
+      "paths": [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-NECESSITY-CHECKS.json",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-NECESSITY-EDITS.json",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-SOURCES.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-inquiry-necessity-checks/20261008T134950.862622Z/ScientificInquiryNecessity.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-inquiry-necessity-checks/20261008T134950.862622Z/ScientificInquiryNecessityAudit.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-inquiry-necessity-checks/20261008T134950.862622Z/axioms.txt",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-inquiry-necessity-checks/20261008T134950.862622Z/check_scientific_inquiry_necessity.py",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-inquiry-necessity-checks/20261008T134950.862622Z/compile.txt",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-inquiry-necessity-checks/20261008T134950.862622Z/lean-toolchain",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-inquiry-necessity-checks/20261008T134950.862622Z/verification.json",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-inquiry-necessity-checks/20261008T135418.446592Z/ScientificInquiryNecessity.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-inquiry-necessity-checks/20261008T135418.446592Z/ScientificInquiryNecessityAudit.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-inquiry-necessity-checks/20261008T135418.446592Z/axioms.txt",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-inquiry-necessity-checks/20261008T135418.446592Z/check_scientific_inquiry_necessity.py",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-inquiry-necessity-checks/20261008T135418.446592Z/compile.txt",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-inquiry-necessity-checks/20261008T135418.446592Z/lean-toolchain",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-inquiry-necessity-checks/20261008T135418.446592Z/verification.json",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-inquiry-necessity-verification.json",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md"
+      ]
+    },
+    "market-regimes": {
+      "detail": "Concurrent partial-regime-transition work, not changed or accepted here.",
+      "paths": [
+        "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+        "experiments/market-generativity/formal/PartialRegimeTransition.lean",
+        "experiments/market-generativity/formal/README.md",
+        "experiments/market-generativity/formal/check_partial_transition.py",
+        "experiments/market-generativity/formal/partial-transition-verification.json",
+        "experiments/market-generativity/formal/partial-transition-verification/MarketGenerativity.lean",
+        "experiments/market-generativity/formal/partial-transition-verification/MarketGenerativity.txt",
+        "experiments/market-generativity/formal/partial-transition-verification/PartialRegimeTransition.lean",
+        "experiments/market-generativity/formal/partial-transition-verification/PartialRegimeTransition.txt",
+        "experiments/market-generativity/formal/partial-transition-verification/PartialTransitionAudit.lean",
+        "experiments/market-generativity/formal/partial-transition-verification/PartialTransitionAudit.txt",
+        "experiments/market-generativity/formal/partial-transition-verification/RegimeAttraction.lean",
+        "experiments/market-generativity/formal/partial-transition-verification/RegimeAttraction.txt",
+        "experiments/market-generativity/formal/partial-transition-verification/RegimeBoundary.lean",
+        "experiments/market-generativity/formal/partial-transition-verification/RegimeBoundary.txt",
+        "experiments/market-generativity/formal/partial-transition-verification/RegimeTransition.lean",
+        "experiments/market-generativity/formal/partial-transition-verification/RegimeTransition.txt",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md"
+      ]
+    },
+    "wisdom-and-priority": {
+      "detail": "Concurrent wisdom and Theory of Becoming priority work. The new AGENTS scope was read; it preserves independent authorized sessions, including this cognition objective.",
+      "paths": [
+        "AGENTS.md",
+        "_process/goals/theory-of-becoming.json",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-GENERATIVE-JUDGMENTS-CHECKS.json",
+        "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+        "sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md",
+        "sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md",
+        "sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md",
+        "theories/shengsheng-buxi-generative-existence/results/records/wisdom-root.json",
+        "theories/shengsheng-buxi-generative-existence/results/records/wisdom-root.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md"
+      ]
+    }
+  },
+  "unrelated_registry_source_drift": [
+    "classification-robust-generative-comparison",
+    "organizational-formation-from-generative-comparison"
+  ],
+  "drift_source": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+  "note": "Owned numeric, document, record and M26 checks passed. This log is a scope inventory, not scientific review of concurrent changes."
+}

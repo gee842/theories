@@ -1,0 +1,11 @@
+# Copying correction verification
+
+[CopyingCorrection.lean](../CopyingCorrection.lean) joins the actual product of displaced copying to a formed checking/editing route, component exchange, release and later inheritance. [check.py](check.py) builds its eleven-module project import closure in a fresh temporary directory using Lean 4.29.1. It rejects proof holes, additional axioms, unsafe/native shortcuts and compiler warnings and checks source stability.
+
+[verification.json](verification.json) records **27 new theorem declarations / 45 new declaration audits / 529 closure audits**, with 484 inherited declarations separate. Seven new axiom reports are empty; the others contain only the standard `propext`, `Classical.choice` and `Quot.sound`. These counts describe one local composition, not 27 independent discoveries.
+
+General results establish component-value permutation through exchange, preservation of other positions and path shape, an exact material/support criterion for matching an inspected reference, and non-increasing positional defects through arbitrary finite inspection scans under faithful references. Every finite event history conserves connectors, material count and free-plus-spent support. Kernel-checked concrete histories retain hidden errors, corruption by a wrong reference, insufficient editing support, corrected-but-unreleased products and actual later inheritance.
+
+The [existing study](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md#formed-correction-edits-inherited-material) explains the unchanged old no-editing theorem and the new event grammar. Site access, comparison, atomic exchange with reusable components, retained positional bonds, route placement and event occurrence remain supplied. A formed route is not automatically faithful. The proof does not derive microscopic selectivity, a repair-discovery policy, autonomous renewal, error rates or comparative superiority over strong mechanistic accounts.
+
+Run `python3 -B check.py` here. The receipt binds active source bytes, snapshots, toolchain, compiler/axiom logs and the checker. Earlier verification directories retain their original scope.

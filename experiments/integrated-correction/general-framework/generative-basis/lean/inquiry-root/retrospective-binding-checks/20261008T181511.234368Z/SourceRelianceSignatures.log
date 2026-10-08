@@ -1,0 +1,131 @@
+Generative.SourceReliance.acquired_decode (r : Generative.SourceReliance.Route) (reversed : Bool)
+  (p : Generative.SourceReliance.Probe) :
+  Generative.SourceReliance.decode reversed (Generative.SourceReliance.raw reversed r p) =
+    some (Generative.SourceReliance.emit r p)
+Generative.SourceReliance.acquired_record_form (r : Generative.SourceReliance.Route) (reversed : Bool)
+  (ps : List Generative.SourceReliance.Probe) :
+  Generative.SourceReliance.acquire r reversed ps =
+    List.map (fun p => (p, some (Generative.SourceReliance.emit r p))) ps
+Generative.SourceReliance.actual_route_retained (r : Generative.SourceReliance.Route)
+  (candidates : List Generative.SourceReliance.Route) (reversed : Bool) (ps : List Generative.SourceReliance.Probe)
+  (included : r ∈ candidates) :
+  r ∈ Generative.SourceReliance.learn candidates (Generative.SourceReliance.acquire r reversed ps)
+Generative.SourceReliance.protocol_identifies_route (r : Generative.SourceReliance.Route) (reversed : Bool) :
+  Generative.SourceReliance.learn Generative.SourceReliance.repertoire
+      (Generative.SourceReliance.acquire r reversed Generative.SourceReliance.protocol) =
+    [r]
+Generative.SourceReliance.baseline_does_not_identify (r : Generative.SourceReliance.Route) (reversed : Bool) :
+  Generative.SourceReliance.learn Generative.SourceReliance.repertoire
+      (Generative.SourceReliance.acquire r reversed [Generative.SourceReliance.baseline]) =
+    Generative.SourceReliance.repertoire
+Generative.SourceReliance.local_probe_leaves_common_vulnerability (r : Generative.SourceReliance.Route)
+  (reversed : Bool) :
+  Generative.SourceReliance.learn Generative.SourceReliance.repertoire
+      (Generative.SourceReliance.acquire r reversed
+        [Generative.SourceReliance.baseline, Generative.SourceReliance.localProbe]) =
+    [{ copiesFirst := r.copiesFirst, sharesDisturbance := false },
+      { copiesFirst := r.copiesFirst, sharesDisturbance := true }]
+Generative.SourceReliance.duplicated_records_add_no_constraint (rs : List Generative.SourceReliance.Route)
+  (records : List Generative.SourceReliance.Record) :
+  Generative.SourceReliance.learn rs (records ++ records) = Generative.SourceReliance.learn rs records
+Generative.SourceReliance.recoding_preserves_acquired_routes (r : Generative.SourceReliance.Route)
+  (ps : List Generative.SourceReliance.Probe) :
+  Generative.SourceReliance.learn Generative.SourceReliance.repertoire (Generative.SourceReliance.acquire r false ps) =
+    Generative.SourceReliance.learn Generative.SourceReliance.repertoire (Generative.SourceReliance.acquire r true ps)
+Generative.SourceReliance.mem_enumerate (w : Generative.SourceReliance.World)
+  (routes : List Generative.SourceReliance.Route) (faults : List Generative.SourceReliance.Faults) :
+  w ∈ Generative.SourceReliance.enumerate routes faults ↔ w.route ∈ routes ∧ w.faults ∈ faults
+Generative.SourceReliance.actual_world_compatible (w : Generative.SourceReliance.World)
+  (routes : List Generative.SourceReliance.Route) (faults : List Generative.SourceReliance.Faults)
+  (routeIncluded : w.route ∈ routes) (faultIncluded : w.faults ∈ faults) :
+  w ∈ Generative.SourceReliance.compatible routes faults (Generative.SourceReliance.view w)
+Generative.SourceReliance.consensus_correct_for_member (values : List Bool) (actual b : Bool)
+  (included : actual ∈ values) (asserts : Generative.SourceReliance.consensus values = some b) : b = actual
+Generative.SourceReliance.reliance_correct_with_covered_world (w : Generative.SourceReliance.World)
+  (routes : List Generative.SourceReliance.Route) (faults : List Generative.SourceReliance.Faults) (b : Bool)
+  (routeIncluded : w.route ∈ routes) (faultIncluded : w.faults ∈ faults)
+  (asserts : Generative.SourceReliance.rely routes faults (Generative.SourceReliance.view w) = some b) : b = w.target
+Generative.SourceReliance.acquired_reliance_correct (r : Generative.SourceReliance.Route) (reversed : Bool)
+  (ps : List Generative.SourceReliance.Probe) (faults : List Generative.SourceReliance.Faults)
+  (f : Generative.SourceReliance.Faults) (target b : Bool) (covered : f ∈ faults)
+  (asserts :
+    Generative.SourceReliance.rely
+        (Generative.SourceReliance.learn Generative.SourceReliance.repertoire
+          (Generative.SourceReliance.acquire r reversed ps))
+        faults (Generative.SourceReliance.emit r { target := target, localFault := f.fst, commonFault := f.snd }) =
+      some b) :
+  b = target
+Generative.SourceReliance.separate_second_survives_declared_faults (target f c : Bool) :
+  Generative.SourceReliance.rely [{ copiesFirst := false, sharesDisturbance := false }]
+      Generative.SourceReliance.allFaults
+      (Generative.SourceReliance.emit { copiesFirst := false, sharesDisturbance := false }
+        { target := target, localFault := f, commonFault := c }) =
+    some target
+Generative.SourceReliance.copy_can_be_reliable_when_route_is_clean (target : Bool) :
+  Generative.SourceReliance.rely [{ copiesFirst := true, sharesDisturbance := false }] Generative.SourceReliance.clean
+      (Generative.SourceReliance.emit { copiesFirst := true, sharesDisturbance := false }
+        { target := target, localFault := false, commonFault := false }) =
+    some target
+Generative.SourceReliance.copied_agreement_under_local_uncertainty (report : Bool) :
+  Generative.SourceReliance.rely [{ copiesFirst := true, sharesDisturbance := false }]
+      Generative.SourceReliance.localUncertain (report, report) =
+    none
+Generative.SourceReliance.uncopied_agreement_under_shared_uncertainty (report : Bool) :
+  Generative.SourceReliance.rely [{ copiesFirst := false, sharesDisturbance := true }]
+      Generative.SourceReliance.allFaults (report, report) =
+    none
+Generative.SourceReliance.partial_acquisition_preserves_relevant_uncertainty (reversed report : Bool) :
+  Generative.SourceReliance.rely
+      (Generative.SourceReliance.learn Generative.SourceReliance.repertoire
+        (Generative.SourceReliance.acquire { copiesFirst := false, sharesDisturbance := false } reversed
+          [Generative.SourceReliance.baseline, Generative.SourceReliance.localProbe]))
+      Generative.SourceReliance.allFaults (report, report) =
+    none
+Generative.SourceReliance.common_probe_enables_scoped_reliance (reversed target f c : Bool) :
+  Generative.SourceReliance.rely
+      (Generative.SourceReliance.learn Generative.SourceReliance.repertoire
+        (Generative.SourceReliance.acquire { copiesFirst := false, sharesDisturbance := false } reversed
+          Generative.SourceReliance.protocol))
+      Generative.SourceReliance.allFaults
+      (Generative.SourceReliance.emit { copiesFirst := false, sharesDisturbance := false }
+        { target := target, localFault := f, commonFault := c }) =
+    some target
+Generative.SourceReliance.copied_pair_has_opposite_compatible_targets :
+  Generative.SourceReliance.view
+      { route := { copiesFirst := true, sharesDisturbance := false }, target := false, faults := (false, false) } =
+    Generative.SourceReliance.view
+      { route := { copiesFirst := true, sharesDisturbance := false }, target := true, faults := (true, false) }
+Generative.SourceReliance.no_report_only_exact_answer_on_copied_pair
+  (answer : Generative.SourceReliance.Reports → Bool) :
+  ¬(answer
+          (Generative.SourceReliance.view
+            { route := { copiesFirst := true, sharesDisturbance := false }, target := false,
+              faults := (false, false) }) =
+        false ∧
+      answer
+          (Generative.SourceReliance.view
+            { route := { copiesFirst := true, sharesDisturbance := false }, target := true, faults := (true, false) }) =
+        true)
+Generative.SourceReliance.omitted_joint_failure_matches_training :
+  Generative.SourceReliance.jointRecords Generative.SourceReliance.protocol =
+    Generative.SourceReliance.acquire { copiesFirst := false, sharesDisturbance := false } false
+      Generative.SourceReliance.protocol
+Generative.SourceReliance.omitted_joint_failure_defeats_inference :
+  Generative.SourceReliance.rely
+      (Generative.SourceReliance.learn Generative.SourceReliance.repertoire
+        (Generative.SourceReliance.jointRecords Generative.SourceReliance.protocol))
+      Generative.SourceReliance.allFaults
+      (Generative.SourceReliance.jointFailure { target := true, localFault := true, commonFault := true }) =
+    some false
+Generative.SourceReliance.joint_challenge_reopens_model_family :
+  Generative.SourceReliance.learn Generative.SourceReliance.repertoire
+      (Generative.SourceReliance.jointRecords
+        (Generative.SourceReliance.protocol ++ [{ target := true, localFault := true, commonFault := true }])) =
+    []
+Generative.SourceReliance.empty_family_does_not_certify (faults : List Generative.SourceReliance.Faults)
+  (reports : Generative.SourceReliance.Reports) : Generative.SourceReliance.rely [] faults reports = none
+Generative.SourceReliance.joint_challenge_leaves_observed_history_unchanged :
+  List.take Generative.SourceReliance.protocol.length
+      (Generative.SourceReliance.jointRecords
+        (Generative.SourceReliance.protocol ++ [{ target := true, localFault := true, commonFault := true }])) =
+    Generative.SourceReliance.jointRecords Generative.SourceReliance.protocol

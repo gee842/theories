@@ -1,0 +1,66 @@
+'Generative.CompositionalFormation.Route' does not depend on any axioms
+'Generative.CompositionalFormation.dispatch' does not depend on any axioms
+'Generative.CompositionalFormation.Program' does not depend on any axioms
+'Generative.CompositionalFormation.operate' does not depend on any axioms
+'Generative.CompositionalFormation.routeFor' does not depend on any axioms
+'Generative.CompositionalFormation.programFor' does not depend on any axioms
+'Generative.CompositionalFormation.formed_operation_correspondence' depends on axioms: [propext]
+'Generative.CompositionalFormation.generatedRoutes' does not depend on any axioms
+'Generative.CompositionalFormation.two_connector_routes' does not depend on any axioms
+'Generative.CompositionalFormation.fits' does not depend on any axioms
+'Generative.CompositionalFormation.correct_program_fits_actual_records' depends on axioms: [propext, Quot.sound]
+'Generative.CompositionalFormation.fit_implies_record_agreement' depends on axioms: [propext, Quot.sound]
+'Generative.CompositionalFormation.separating_probe_identifies_generated_route' depends on axioms: [propext, Quot.sound]
+'Generative.CompositionalFormation.accepted_generated_program_transfers' depends on axioms: [propext, Quot.sound]
+'Generative.CompositionalFormation.Frame' does not depend on any axioms
+'Generative.CompositionalFormation.fromLearner' does not depend on any axioms
+'Generative.CompositionalFormation.place' does not depend on any axioms
+'Generative.CompositionalFormation.assemble' does not depend on any axioms
+'Generative.CompositionalFormation.inspect' does not depend on any axioms
+'Generative.CompositionalFormation.discard' does not depend on any axioms
+'Generative.CompositionalFormation.attempt' does not depend on any axioms
+'Generative.CompositionalFormation.search' does not depend on any axioms
+'Generative.CompositionalFormation.develop' depends on axioms: [propext]
+'Generative.CompositionalFormation.respond' does not depend on any axioms
+'Generative.CompositionalFormation.placing_preserves_support' depends on axioms: [propext, Quot.sound]
+'Generative.CompositionalFormation.placing_accounts_parts' depends on axioms: [propext, Quot.sound]
+'Generative.CompositionalFormation.assembly_preserves_support' depends on axioms: [propext, Quot.sound]
+'Generative.CompositionalFormation.inspecting_preserves_support' depends on axioms: [propext, Quot.sound]
+'Generative.CompositionalFormation.discarding_preserves_support' depends on axioms: [propext, Quot.sound]
+'Generative.CompositionalFormation.attempt_preserves_support' depends on axioms: [propext, Quot.sound]
+'Generative.CompositionalFormation.search_preserves_support' depends on axioms: [propext, Quot.sound]
+'Generative.CompositionalFormation.development_preserves_support' depends on axioms: [propext, Quot.sound]
+'Generative.CompositionalFormation.prepared' depends on axioms: [propext]
+'Generative.CompositionalFormation.developed' depends on axioms: [propext]
+'Generative.CompositionalFormation.interpretation_alone_does_not_supply_route' depends on axioms: [propext]
+'Generative.CompositionalFormation.incorrect_route_is_built_tried_and_replaced' depends on axioms: [propext]
+'Generative.CompositionalFormation.development_retains_actual_acquisition' depends on axioms: [propext]
+'Generative.CompositionalFormation.formed_route_executes_novel_expression' depends on axioms: [propext]
+'Generative.CompositionalFormation.whole_example_account' depends on axioms: [propext]
+'Generative.CompositionalFormation.no_parts_preserves_record_but_blocks_formation' depends on axioms: [propext]
+'Generative.CompositionalFormation.partial_assembly_keeps_consumption' depends on axioms: [propext]
+'Generative.CompositionalFormation.interpreted_and_formed_can_lack_execution_support' depends on axioms: [propext]
+'Generative.CompositionalFormation.reverse_order_requires_different_formed_route' depends on axioms: [propext]
+'Generative.CompositionalFormation.damaged' depends on axioms: [propext]
+'Generative.CompositionalFormation.retained_verdict_does_not_replace_damaged_connection' depends on axioms: [propext]
+'Generative.CompositionalFormation.collapsed' does not depend on any axioms
+'Generative.CompositionalFormation.duplicated' does not depend on any axioms
+'Generative.CompositionalFormation.old_record_can_admit_wrong_constructed_operation' does not depend on any axioms
+'Generative.CompositionalFormation.expanded_repertoire_can_form_a_failing_route' depends on axioms: [propext]
+'Generative.CompositionalFormation.asymmetric_composition_exposes_the_new_failure' does not depend on any axioms
+'Generative.CompositionalFormation.encounter' does not depend on any axioms
+'Generative.CompositionalFormation.reconsider' depends on axioms: [propext]
+'Generative.CompositionalFormation.encounter_preserves_support' depends on axioms: [propext, Quot.sound]
+'Generative.CompositionalFormation.reconsideration_preserves_support' depends on axioms: [propext, Quot.sound]
+'Generative.CompositionalFormation.corrected' depends on axioms: [propext]
+'Generative.CompositionalFormation.further' does not depend on any axioms
+'Generative.CompositionalFormation.fresh_record_changes_actual_reconstruction' depends on axioms: [propext]
+'Generative.CompositionalFormation.repaired_operation_uses_a_further_untrained_expression' depends on axioms: [propext]
+'Generative.CompositionalFormation.repair_keeps_the_cost_of_failure' depends on axioms: [propext]
+'Generative.CompositionalFormation.discrepancy_alone_does_not_supply_repair_parts' depends on axioms: [propext]
+'Generative.CompositionalFormation.unobserved_failure_can_retain_wrong_operation' depends on axioms: [propext]
+'Generative.CompositionalFormation.extent' does not depend on any axioms
+'Generative.CompositionalFormation.equal_primitive_effects_preserve_extent' depends on axioms: [propext]
+'Generative.CompositionalFormation.indistinguishable_reversal_preserves_every_expression' depends on axioms: [propext]
+'Generative.CompositionalFormation.extra_probe_restores_transfer_for_generated_routes' depends on axioms: [propext,
+ Quot.sound]

@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-87 migrated records: 83 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+89 migrated records: 85 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -44,6 +44,7 @@
 | `finite-granularity-question-recovery` | [有限操作粒度的问答翻译与历史恢复 / Question translation and history recovery across finite operation scales](records/finite-granularity-question-recovery.md) | theorem | recorded-checked |
 | `finite-joining-tree-lifting` | [有限接合树从指定片段提升 / Finite joining trees lift from specified fragments](records/finite-joining-tree-lifting.md) | theorem | recorded-checked |
 | `finite-trace-transport` | [保步映射传递有限历史 / Step-preserving maps transport finite traces](records/finite-trace-transport.md) | theorem | recorded-checked |
+| `formed-copying-correction` | [形成的编辑关系纠正已成后继 / Formed correction edits an existing successor](records/formed-copying-correction.md) | theorem | recorded-checked |
 | `formed-copying-registration` | [形成的配准关系改变复制保真度 / Formed registration changes copying fidelity](records/formed-copying-registration.md) | theorem | recorded-checked |
 | `formed-goal-revision-continuation` | [取得根据的目的修订与实际接续 / Acquired grounds, goal revision and actual continuation](records/formed-goal-revision-continuation.md) | theorem | recorded-checked |
 | `formed-software-continuation` | [共同软件活动的接续与依存限度 / Continuation and dependence within shared software activity](records/formed-software-continuation.md) | assessment | reviewed-scoped |
@@ -62,6 +63,7 @@
 | `joint-plan-composition` | [局部方案的共同接续 / Joint continuation of local plans](records/joint-plan-composition.md) | theorem | recorded-checked |
 | `joint-practice-forms-continuation` | [共同实践形成后续参与与接续 / Joint practice forms further participation and continuation](records/joint-practice-forms-continuation.md) | theorem | recorded-checked |
 | `joint-target-uniqueness` | [共同实现测试下的目标唯一性 / Target uniqueness for joint tests](records/joint-target-uniqueness.md) | theorem | recorded-checked |
+| `learned-procedure-transmission` | [学习方式经实际表现进入重构 / Learning procedures reconstructed through actual performance](records/learned-procedure-transmission.md) | theorem | recorded-checked |
 | `market-finite-support-obstruction` | [有限支持下无法及时恢复的正区间 / Positive seed intervals that finite support cannot rescue](records/market-finite-support-obstruction.md) | theorem | recorded-checked |
 | `market-partial-correction-boundary` | [部分纠正的精确到达边界 / Exact arrival boundary under partial correction](records/market-partial-correction-boundary.md) | theorem | recorded-checked |
 | `market-protected-continuation` | [市场保护证书下的持续运行 / Continued market operation under a protection certificate](records/market-protected-continuation.md) | theorem | recorded-checked |

@@ -242,3 +242,13 @@ AI 范围说明：先核对当前成果与授权，再继续尚未闭合的理�
 > 继续
 
 AI 范围说明：检验有限持续纠正怎样在原有维护、影响和支持历史内进入已证保护区；区分正余量、零余量、可执行期限与纠正前后的支持。新增证明与[论证](../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#supported-finite-transition)是 AI 阐发，不把本次“继续”认作任何局部参数已被现实校准，亦不改变其他会话的独立授权。
+
+
+<a id="continue-partial-regime-correction"></a>
+## 接续部分纠正与临界反馈
+
+有支持的有限纠正结果交付后，本市场／元吸引子会话中 Ren 指示：
+
+> 继续
+
+AI 范围说明：检验部分侵蚀残留与临界等号，继续把实际支持、偏差及已完成形成机制的输出纳入同一过程说明。[本轮论证](../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#partial-correction-boundary)与新定理为 AI 阐发；用户未因此认可现实参数已校准，亦未授权后台任务或新子 agent。

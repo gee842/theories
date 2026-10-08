@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T14:34:56.639382+00:00",
+  "scope": "Original hashes; gaze-count ratios; trial differences; participant means; cleaned-log inclusion; Decimal variances, ANOVA and Welch arithmetic; shared SciPy distribution functions.",
+  "independent_agent_review": false,
+  "raw_gaze_pipeline_reproduced": false,
+  "full_goal_complete": false,
+  "elementary_checks": {
+    "primary": {
+      "participants": 75,
+      "between_ss": "0.0045622094682488262413036311096829204108087679516278",
+      "within_ss": "1.5581110446131270422352869826920209835566893424036",
+      "f": "0.10540939390987873312009750409772608081112735482049"
+    },
+    "all_export_sensitivity": {
+      "participants": 77,
+      "between_ss": "0.013986592057867150070406502007223023076953375422767",
+      "within_ss": "1.8321816754497280430173053905443242565892421070992",
+      "f": "0.28245228793375953719591177377031516791042206028503"
+    }
+  },
+  "source_sha256": {
+    "sources/developmental-attention/bazhydai-2026/CuriGaze_log_Cleaned.csv": "70f4b6630137823fca9f455ea972c7f9fa078bfc1a3b03f44b29830d1f223005",
+    "sources/developmental-attention/bazhydai-2026/LearnedHits_Pt.Trial1-96.csv": "c745b780df0c7f5644e0492493010e325a65db463f26869aa29d67a1fb41e7cb",
+    "sources/developmental-attention/bazhydai-2026/LearnedHits_Pt1-96.csv": "120ec8b76b79f4cf92e59523d3e49581952a2eec17396d737a7b0ab1b718108b",
+    "sources/developmental-attention/bazhydai-2026/LearnedLabels_26_1_96_.csv": "a14d286cf217ed4b3363b79f7a1de5b1d0766ea65db3342e236a6e2c75802c44",
+    "sources/developmental-attention/bazhydai-2026/PROVENANCE.json": "45b0a8df3acf285c2a0590af66b9316d1e184b86564ac5516529486e037f8506",
+    "sources/developmental-attention/bazhydai-2026/README.md": "858156815d025539d1d4f4e62fdb164360fe9def467248d0296d7a5f66eec70a",
+    "sources/developmental-attention/bazhydai-2026/cleaned-log-provenance.json": "edbd454bfe5229b85cd5b3a1fcb6a0560a250181a54a4c3c5f7d7d3f2ae62d83",
+    "sources/developmental-attention/bazhydai-2026/curigaze_OSF_V3.R": "d45c865a70884cca95d1bc5f22bd1cd0055dc23c5be9e81e7603ab92cbde7078",
+    "sources/developmental-attention/bazhydai-2026/curigaze_readme.txt": "4ffd007ca6b82b5e7f9b83de17c886352afbb0e5cc31f65dca44b8d640f24bc0",
+    "sources/developmental-attention/bazhydai-2026/files-api-page-1.json": "3e343f6ee2e23f23684650a942ccfa5bef3cbbffc867a1c80a41b01f808877f9",
+    "sources/developmental-attention/bazhydai-2026/files-api-page-2.json": "b9fe7c5ffdfc5c2ae61434f201188f8fee7d4e7e64a772f5205415d87b0a3480",
+    "sources/developmental-attention/bazhydai-2026/hit_baselineCorr1-96.csv": "5153124563cf6b3b9112c7af7be2b5053e0d166bf219b0e30b14733e095d1752",
+    "sources/developmental-attention/bazhydai-2026/hit_baselineCorr_byPt1-96.csv": "ea370657c69fb3be126631200f346a7f53dce986475c9446465ebe4f4600634f",
+    "sources/developmental-attention/bazhydai-2026/hit_summary_wide1-96.csv": "82d6816711c0320653aa1efb561fe32686f9daabe4ae567f585cc033a8a02ab0",
+    "sources/developmental-attention/bazhydai-2026/node-api.json": "4b737b98deadfe6770d5790609367601cff2afa1dcf7f61de54b23029a72b700"
+  },
+  "artifact_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/contingent-learning/analyze.py": "83392baca6543c68466ee91436620136b9df3215ecc091464fb83514151d65cf",
+    "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/contingent-learning/check_analysis.py": "9dac5cfcd59a1fbf67bfc0afe18c81dd2439f1aa99a0f2655724cd9550b18eec",
+    "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/contingent-learning/PLAN.md": "360b3de3f84bfd3991266651a45fbf65525699a9f3f15c39edfada00e9f52d57",
+    "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/contingent-learning/results.json": "422d0879b96696d10df743473264386ce36c79bb66ca6ae439621450724dc1e9",
+    "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/contingent-learning/participant-summaries.csv": "d632fcb16cae0e88b7eed1e62dd6cc8ac223fcc91dc4fd3003420eaa223dec14"
+  }
+}

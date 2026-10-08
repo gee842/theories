@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F22",
+  "reviewed_at_utc": "2026-10-08T18:20:02.495493+00:00",
+  "validation_scope": {
+    "zh": "Lean 4.29.1 实查23项新声明／279项闭包审计；新23标准依赖，3含经典选择；继承256项另列。冻结源码、日志及检查器哈希绑定。作者反审，非独立 agent 验收。",
+    "en": "Lean 4.29.1: 23 new declarations / 279 closure audits; all 23 new use standard dependencies, 3 include classical choice; 256 inherited audits separate. Frozen source/log/checker hashes are bound. Author counterreview, no independent-agent acceptance."
+  },
+  "next_delta": {
+    "zh": "复用有限条件程序与真实余项恢复；继续建立内部语法不同的说明之间余项、判断与实际形成关系的有据翻译，区分语义可判定与实际取得。",
+    "en": "Reuse finite guarded programs and coherent residual recovery; establish warranted residual/guard/formation translation between descriptions with different internal syntax, distinguishing semantic tests from actual acquisition."
+  },
+  "history": [
+    {
+      "zh": "2026-10-09：在既有接合情境研究中完成有限粒度接通与具体边界检验；不另开研究副本。",
+      "en": "2026-10-09: finite-granularity connection and concrete boundary test completed within the existing joining-context study."
+    },
+    {
+      "zh": "2026-10-09接续：研究新增有限条件程序、余项恢复及35项实查声明；原成果的主张、假设和证明绑定保持，见原研究§27—32。",
+      "en": "2026-10-09 continuation: finite guarded programs, residual recovery and 35 checked declarations added in the same study §§27–32; this result retains its claim, assumptions and proof bindings."
+    }
+  ],
+  "id": "prefix-observation-loss",
+  "title": {
+    "zh": "全部前缀问答仍可遗漏中途失续",
+    "en": "All prefix questions can still omit an intermediate loss"
+  },
+  "claim": {
+    "zh": "同一连通过程的两种到达条件对完整宏步骤及其全部非空前缀的任意有限分支问题同测，却有不同的中途失续。整个前缀语言都不能翻译该损失问题；在实际中间位置开放后缀检验后恢复区别，任何原生精确说明必须保留它。",
+    "en": "Two reached positions in one connected process agree on every finite branch question over complete blocks and all their nonempty prefixes, yet differ in intermediate loss. No formula in the whole prefix language translates that loss question. Exposing the suffix at the reached position restores the distinction, which every native exact account must preserve."
+  },
+  "hypotheses": [
+    {
+      "zh": "明确六位置、三事件的同一有限关系；前缀问题词为 begin 与 begin/finish，原子问题类型为空。",
+      "en": "One explicit six-position, three-event relation; prefix recipes are begin and begin/finish, with empty atomic vocabulary."
+    },
+    {
+      "zh": "不可翻译定理不需约简；旧编码不可扩展定理另用 Reduced。",
+      "en": "The nontranslation theorem needs no reduction; impossibility of extending an already merged encoding additionally uses Reduced."
+    }
+  ],
+  "correspondence": {
+    "zh": "两位置有同一已允许 origin/enter 历史来源；区别由真实可达中间位置与后续 finish 有无给出，不来自自由损失谓词。此为给定规律中的见证，不是经验观察。",
+    "en": "Both positions are reached from the same admitted origin/enter source. The difference comes from reached positions and the availability of finish, without a free loss predicate. These are witnesses under a supplied law, not empirical observations."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGranularityBoundary.lean",
+  "aliases": [
+    "Generative.ExplanatoryGranularityBoundary.prefix_only_still_loses_failure",
+    "Generative.ExplanatoryGranularityBoundary.no_prefix_translation_of_loss"
+  ],
+  "dependencies": [
+    {
+      "id": "finite-granularity-question-recovery",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "修复接用精确宏问题编译；反例不借用有限恢复前提。",
+        "en": "Repair uses exact block-question compilation; the counterexample does not use finite-recovery hypotheses."
+      },
+      "interface": {
+        "output": {
+          "zh": "compile_correct 的同一过程问题等价。",
+          "en": "Same-process question equivalence from compile_correct."
+        },
+        "input": {
+          "zh": "resumption_recovers_loss 以同一中间位置上的后缀恢复原生区别。",
+          "en": "resumption_recovers_loss restores the native difference using a suffix at the same reached position."
+        },
+        "conditions": {
+          "zh": "明示 resumable 的两种单步展开；无独立观察谓词。",
+          "en": "Explicit two-singleton resumable expansion; no independent observation predicate."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGranularityBoundary.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "unanchored-incidence-collapse",
+      "detail": {
+        "zh": "同一研究中的接续成果；具体正式复用另列，关联不自动构成已证转换。",
+        "en": "Continuation result in the same study; formal reuse is listed separately, and this relationship does not itself assert a checked adapter."
+      }
+    },
+    {
+      "id": "retained-reference-joining-recovery",
+      "detail": {
+        "zh": "同一研究中的接续成果；具体正式复用另列，关联不自动构成已证转换。",
+        "en": "Continuation result in the same study; formal reuse is listed separately, and this relationship does not itself assert a checked adapter."
+      }
+    },
+    {
+      "id": "guarded-program-question-recovery",
+      "detail": {
+        "zh": "同一研究的新接续；具体形式复用另列，此关联不独自证明转换。",
+        "en": "New continuation in the same study; formal reuse is specified separately, without a proved adapter inferred from this relation."
+      }
+    },
+    {
+      "id": "residual-continuation-correspondence",
+      "detail": {
+        "zh": "同一研究的新接续；具体形式复用另列，此关联不独自证明转换。",
+        "en": "New continuation in the same study; formal reuse is specified separately, without a proved adapter inferred from this relation."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "否定的是特定前缀问题语言的充分性，不是全部粗描述或生成根据。更丰富原子检验或非约简代码可能保留该区别；没有证明现实必用这些事件名称。",
+    "en": "Refutes sufficiency of this specified prefix language, not every coarse description or generative grounding. Richer atomic tests or nonreduced codes may retain the distinction; reality is not shown to require these event names."
+  },
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGranularityBoundary.lean",
+      "detail": {
+        "zh": "否定的是特定前缀问题语言的充分性，不是全部粗描述或生成根据。更丰富原子检验或非约简代码可能保留该区别；没有证明现实必用这些事件名称。",
+        "en": "Refutes sufficiency of this specified prefix language, not every coarse description or generative grounding. Richer atomic tests or nonreduced codes may retain the distinction; reality is not shown to require these event names."
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGranularityBoundary.lean",
+      "role": "proof",
+      "sha256": "e9609b527616c11ffa74b1fe2aec175ade80da79978d4e6346e5e20e193e89ec",
+      "declarations": [
+        "Generative.ExplanatoryGranularityBoundary.shared_origin",
+        "Generative.ExplanatoryGranularityBoundary.same_completed_questions",
+        "Generative.ExplanatoryGranularityBoundary.real_internal_loss",
+        "Generative.ExplanatoryGranularityBoundary.exact_full_accounts_distinguish",
+        "Generative.ExplanatoryGranularityBoundary.prefix_only_still_loses_failure",
+        "Generative.ExplanatoryGranularityBoundary.no_prefix_translation_of_loss",
+        "Generative.ExplanatoryGranularityBoundary.resumption_recovers_loss",
+        "Generative.ExplanatoryGranularityBoundary.reduced_prefix_account_cannot_extend"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-granularity-checks/20261008T181446.359434Z/receipt.json",
+      "role": "receipt",
+      "sha256": "26ac4c6011432c220e356eaf77c89db6481f90330790ddafa775712528e86273",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "f0765ef905a1975e0104ec4e93579524dfd41ca168b89224345ce30b46c70f1f",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGranularityBoundary.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-granularity-checks/20261008T181446.359434Z/receipt.json",
+      "sha256_pointer": "/modules/18/sha256",
+      "success_pointer": "/passed",
+      "success_value": true
+    }
+  ]
+}

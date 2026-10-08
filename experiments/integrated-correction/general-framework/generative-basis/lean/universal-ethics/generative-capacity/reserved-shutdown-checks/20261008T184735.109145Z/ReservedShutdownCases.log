@@ -1,0 +1,4 @@
+ReservedShutdownCases.lean:54:9: error: unexpected token 'prefix'; expected term
+ReservedShutdownCases.lean:54:16: error: unexpected token 'in'; expected ':'
+ReservedShutdownCases.lean:56:41: error: unexpected identifier; expected ':'
+ReservedShutdownCases.lean:57:39: error: unexpected token ','; expected ':'

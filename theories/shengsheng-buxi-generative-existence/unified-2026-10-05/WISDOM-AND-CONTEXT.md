@@ -1,5 +1,7 @@
 # 智慧、情境与共同核心 / Wisdom, context and the common core
 
+**共同原则的具体展开 / Concrete judgments from common principles，2026-10-08。** [第14节](#a-family-of-generative-judgments)及[主研究第15节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#deriving-a-family-of-moral-judgments)给出八种有范围的道德判断及其改变条件；同一根据既说明相反回应，也保留未被唯一决定的选择。
+
 **当前方向：道德判断becoming / Current direction: morality judges becoming，2026-10-08。** [Ren纠正](../../../sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md#morality-judges-becoming)及[第13节](#morality-and-universal-generative-principles)明确正面路线：以已有普遍生成评价原则判断实际变化；不同回应和不显式循原则，不独自否定共同规范根据。
 
 **理由约束的实质对照 / Substantive comparison of reason constraints，2026-10-08。** [第12节](#reason-constraints-and-rivals)接入[具体文献与原案例比较](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#substantive-rival-comparison)，区分保留关系、换表述及普遍根的争议。/ Contextual judgment can retain particular constraints while disputing a necessary general basis. This is interpretive work reusing checked results, not a new proof.
@@ -168,3 +170,18 @@ This continuation reuses the checked goal-ground and risk results without adding
 本轮正面路线是从生成关系及共同评价根据推导有内容的道德判断，检验它对道德智慧的覆盖，并接通已完成的形成、认识与修订。历史表达的重合是待检验的解释效果；其他智慧范围仍有独立的覆盖责任。完整根目标保持开放，继续沿已授权公理路线，不以Dancy认可或无前提证明G0为门槛。
 
 **English.** Universal generative principles can appraise changing relations and support different situated responses. Tacit judgment does not establish independence from normative grounds. The existing G0/J route, relational comparison and positive open-future results are reused with their exact assumptions; no new theorem or complete wisdom-root proof is claimed.
+
+<a id="a-family-of-generative-judgments"></a>
+## 14. 共同生成根据的一组判断 / A family of judgments from common generative grounds
+
+沿Ren要求的正面路线，[主研究第15节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#deriving-a-family-of-moral-judgments)固定G0、J1–J4与对应E，展开八种情境应用：修复受损条件、保留仍有效的安排、限制可放弃扩张的剥夺、实际交接、合宜结束、承认形态开放的正面生成、保留实质选择以及按有限认识判断。每项都给出足以改变其结论的实际关系。
+
+这些判断来自对同一展开的不同接续进行评价。共同方向可以要求改变，也可以要求保留；真实承担仍在时须回应，特定任务完成或正当解除后则不再有同一未履行根据。开放生成与审慎查证也可同时成立。情境改变说明结论怎样变化，不把普遍原则变成任何时候重复一个动作。
+
+本轮进一步明确：既有固定选择规则在不可比情形下返回旧安排，只证明满足原非支配要求，没有证明旧安排独优。智慧判断须分清一项正面理由、严格比较、具体承担、允许范围与唯一选择；不能将其中一项无条件升级为另一项。
+
+相关错误可定位为遗漏真实损失、消耗的条件、仍有效的承担、已经完成的任务，或混淆认识和理由的强度。这是解释智慧分化的一条正面路径；明知而不行仍可能存在，不能把全部道德问题归为信息不足。
+
+主研究给出既有证明及其原范围；本轮是八个构造例的哲学应用，不是新的数学组合、现实案例验收或历史覆盖。下一步将所需判断内容与已完成的形成、反馈取得和修订结果核对，复用机制而不重开它们。整个慧根目标保持其构成必要性和实际生成两部分。
+
+**English.** Common G0/J grounds support distinct situated judgments, their reversals and principled room for choice. A fixed adequate selector need not choose the uniquely warranted action when the comparison is incomplete. Existing formal results are reused; the new contribution is philosophical application, scope discrimination and error analysis, not a new proof of the whole root.

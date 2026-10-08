@@ -1,0 +1,84 @@
+{
+  "scope": "One new restricted operative calculation, owned C01 additions and four reviewed source versions. No universal quantum or zero-axiom completion; historical receipts and unrelated work preserved.",
+  "entry_ids": [
+    "C01"
+  ],
+  "suffixes": {
+    "claim_en": " Local loss can arise through the formation of wider relations; restoration requires the relations and access that the claimed recovery uses.",
+    "claim_zh": " 局部损失可经更广关系的形成产生；恢复须保留其实际使用的关系及可用条件。",
+    "scope_en": " A declared real-amplitude control calculation adds 27 Lean theorems / 54 audits (44 empty; 10 standard, no final classical choice). Branch weights remain equal while the fixed response changes; a reduced-state uniform inverse fails, but retained joint interaction reverses exactly. Quantum operations and interpretation remain inputs; no causal-nonseparability or universal zero-axiom proof is claimed.",
+    "scope_zh": " 明示实振幅控制计算新增27项Lean定理／54项审计（44空、10标准，无最终经典选择）。分支权重保持而固定响应改变；约化状态的统一逆失败，保留共同交互却能精确反转。量子操作及解释仍为输入；不声称因果不可分离或普遍零公理证明。"
+  },
+  "links_added": [
+    {
+      "label_en": "Checked operative loss and retained whole",
+      "label_zh": "实查作用损失与保留整体",
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md#18-a-checked-operative-loss-and-a-retained-whole"
+    },
+    {
+      "label_en": "Control coherence calculation",
+      "label_zh": "控制相干计算",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/OperativeCoherence.lean"
+    },
+    {
+      "label_en": "Control coherence verification",
+      "label_zh": "控制相干实查",
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/operative-coherence-verification.json"
+    }
+  ],
+  "reviewed_sources": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BECOMING-FOUNDATION.md": {
+      "before": "cb1c529f44d4b3b51c6131ee5dbaa80dcb08030ec3f87148b784793a71df436f",
+      "after": "7805d07d45214bdbec975352b16b0e69fe6ff686c4e48f792bc62840c6be98fa"
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md": {
+      "before": "c0fddfdad705e45b0dd0f173160be6ee9572ef9bc888b2dea4682fa2ca1f37b0",
+      "after": "e0f0849f885d3c84c24e18772554583398144aa5cc6f357e64db666b00cba18c"
+    },
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/OperativeCoherence.lean": {
+      "before": null,
+      "after": "27028964458cad91d16df534203331ae5e9f295375e5ef027bcc9da0eb1394c8"
+    },
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/operative-coherence-verification.json": {
+      "before": null,
+      "after": "5235cf9487a839cc50e2f52788bdeb580f585b9970621d5f85969e6a18b4d4ed"
+    }
+  },
+  "prior_study_prefix_sha256": "c0fddfdad705e45b0dd0f173160be6ee9572ef9bc888b2dea4682fa2ca1f37b0",
+  "prior_study_reviewed_sha256": "c0fddfdad705e45b0dd0f173160be6ee9572ef9bc888b2dea4682fa2ca1f37b0",
+  "unrelated_entries_preserved": true,
+  "unrelated_rendered_lines_preserved": true,
+  "proof_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/operative-coherence-checks/20261008T184345.613262Z/verification.json",
+  "proof_receipt_sha256": "5235cf9487a839cc50e2f52788bdeb580f585b9970621d5f85969e6a18b4d4ed",
+  "source_assessment": [
+    {
+      "url": "https://arxiv.org/html/1801.07594v4",
+      "scope": "Section 3, equation (6): supplied controlled unitary orders"
+    },
+    {
+      "url": "https://arxiv.org/html/1603.00043v1",
+      "scope": "Section IV.2.3: control dephasing comparison; full causal witness not reproduced"
+    },
+    {
+      "url": "https://quantum.cloud.ibm.com/learning/en/courses/general-formulation-of-quantum-information/quantum-channels/representations-of-channels",
+      "scope": "Completely dephasing channel: initialized register, CNOT and partial trace; control-first coordinate adaptation explicitly recorded"
+    }
+  ],
+  "pre_render_check": "Expected generated-view differences; no owned source drift or invalid record metadata.",
+  "validation": {
+    "status": "passed-scoped-on-reconciliation",
+    "checked_at_utc": "2026-10-08T19:04:24.063709+00:00",
+    "reason_for_prior_pending": "The whole/manifold insertion changed BECOMING-FOUNDATION.md between the original edit and validation. Removing only that reviewed block from the captured pre-current baseline exactly reproduces the original recorded after hash.",
+    "historical_hashes_preserved": true,
+    "source_checker_and_log_bindings_match_frozen_receipt": true,
+    "new_theorems_in_retained_build": 27,
+    "declaration_audits": 54,
+    "empty_reports": 44,
+    "propext_reports": 10,
+    "quot_sound_reports": 3,
+    "prior_study_prefix_verified": true,
+    "paired_additions_and_links_retained": true,
+    "current_documentary_followup": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-WHOLE-DEDUCTION-REVIEW.json",
+    "scope_note": "Historical build evidence remains valid; current study/theory versions include subsequent scope corrections. This verifies unchanged evidence without a new Lean build or a full-chain certification."
+  }
+}

@@ -29,6 +29,8 @@ Directions preserve authorization and scope; completion status is obtained from 
 
 [historical-source-binding](records/historical-source-binding.md): `recorded-checked`
 
+[learned-procedure-transmission](records/learned-procedure-transmission.md): `recorded-checked`
+
 [naming-attention-coverage](records/naming-attention-coverage.md): `reviewed-scoped`
 
 [retrospective-source-binding](records/retrospective-source-binding.md): `recorded-checked`

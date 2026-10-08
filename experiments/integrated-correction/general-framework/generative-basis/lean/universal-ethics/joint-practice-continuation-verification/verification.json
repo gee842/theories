@@ -1,0 +1,323 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T18:41:45.161786+00:00",
+  "version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "fresh_temporary_build": true,
+  "commands": [
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "--version"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "-o",
+      "GenerativeCore.olean",
+      "GenerativeCore.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "GenerativeCoreAudit.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "-o",
+      "OrganizationalRuleInheritance.olean",
+      "OrganizationalRuleInheritance.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "OrganizationalRuleInheritanceAudit.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "-o",
+      "JointPracticeContinuation.olean",
+      "JointPracticeContinuation.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "JointPracticeContinuationAudit.lean"
+    ]
+  ],
+  "source_unchanged_during_check": true,
+  "source_sha256": {
+    "GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "OrganizationalRuleInheritance.lean": "a124e377584bf560977cd4e9410646129fff1f18f91cfd853fa26ae427708234",
+    "JointPracticeContinuation.lean": "839ebe73511b486c72b60926c4bab80ba4b6738d98d0cb141c06ac76c8b6df42",
+    "lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+    "GenerativeCoreAudit.lean": "d0e29bea9d0403409ee60ac5b2c044e68394230e4e5eda1e908ff4d4a946b187",
+    "OrganizationalRuleInheritanceAudit.lean": "be9fe04185506f5c427491730254dcee9ebb544189890dc237e0af9842a53b79",
+    "JointPracticeContinuationAudit.lean": "56be87def8a74a4b69b7fe85bc7cf4104b474a4fde85496bd44341da1659d731"
+  },
+  "log_sha256": {
+    "version.txt": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b",
+    "GenerativeCore-compiler.txt": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "GenerativeCore-axioms.txt": "a940c563aa7dafc2204031660bcc59f2780125b6bdb5350b7daac8b1226585f1",
+    "OrganizationalRuleInheritance-compiler.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "OrganizationalRuleInheritance-axioms.txt": "9b725e8109857cc2cc43f82351834a0baafe8348af2a0edafdcb6b5245b5fc1a",
+    "JointPracticeContinuation-compiler.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "JointPracticeContinuation-axioms.txt": "2a114ddda0898726021309d395c7bf370694cf3f99f7e98e29f55577102b2838"
+  },
+  "checker_sha256": "bdcff06c528fdbc0a7975b0a305be323adee98215dc866e9e4eb2fbee945dc76",
+  "source_locations": {
+    "GenerativeCore.lean": "GenerativeCore.lean",
+    "OrganizationalRuleInheritance.lean": "universal-ethics/OrganizationalRuleInheritance.lean",
+    "JointPracticeContinuation.lean": "universal-ethics/JointPracticeContinuation.lean"
+  },
+  "new_theorem_count": 22,
+  "new_audit_count": 51,
+  "total_audit_count": 132,
+  "new_empty_axiom_count": 20,
+  "axiom_dependencies": {
+    "GenerativeCore": {
+      "Generative.Process": [],
+      "Generative.Enabled": [],
+      "Generative.Trace": [],
+      "Generative.trace_nil_iff": [],
+      "Generative.trace_cons_iff": [],
+      "Generative.trace_singleton_iff": [],
+      "Generative.trace_append_iff": [],
+      "Generative.enabled_iff_singleton_trace": [],
+      "Generative.enabled_difference_implies_state_difference": [],
+      "Generative.Feasible": [],
+      "Generative.feasible_append_iff": [],
+      "Generative.feasible_prefix": [],
+      "Generative.productProcess": [],
+      "Generative.enabled_product_iff": [],
+      "Generative.trace_product_left": [],
+      "Generative.trace_product_right": [],
+      "Generative.trace_product_mk": [],
+      "Generative.trace_product_iff": [],
+      "Generative.feasible_product_iff": [],
+      "Generative.trace_map": [],
+      "Generative.trace_lift": [],
+      "Generative.projected_trace_iff": [],
+      "Generative.projection_exact_iff": [],
+      "Generative.local_exact_iff_trace_exact": [],
+      "Generative.enabled_projection_iff": [],
+      "Generative.feasible_projection_iff": [],
+      "Generative.feasible_difference_implies_projection_difference": [],
+      "Generative.trace_faithful_iff": []
+    },
+    "OrganizationalRuleInheritance": {
+      "OrganizationalRuleInheritance.Rule": [],
+      "OrganizationalRuleInheritance.Ballot": [],
+      "OrganizationalRuleInheritance.State": [],
+      "OrganizationalRuleInheritance.voters": [],
+      "OrganizationalRuleInheritance.consistent": [],
+      "OrganizationalRuleInheritance.governance": [],
+      "OrganizationalRuleInheritance.technical": [],
+      "OrganizationalRuleInheritance.Event": [],
+      "OrganizationalRuleInheritance.handoff": [],
+      "OrganizationalRuleInheritance.fork": [],
+      "OrganizationalRuleInheritance.step": [],
+      "OrganizationalRuleInheritance.run": [],
+      "OrganizationalRuleInheritance.process": [],
+      "OrganizationalRuleInheritance.run_is_trace": [
+        "propext"
+      ],
+      "OrganizationalRuleInheritance.admitted_requires_review": [
+        "propext",
+        "Quot.sound"
+      ],
+      "OrganizationalRuleInheritance.adoption_uses_recorded_proposal": [
+        "propext"
+      ],
+      "OrganizationalRuleInheritance.changed_rule_requires_adoption": [
+        "propext",
+        "Quot.sound"
+      ],
+      "OrganizationalRuleInheritance.handoff_preserves_record": [],
+      "OrganizationalRuleInheritance.handoff_does_not_invent_participation": [
+        "propext",
+        "Quot.sound"
+      ],
+      "OrganizationalRuleInheritance.fork_retains_source": [],
+      "OrganizationalRuleInheritance.handoffs": [],
+      "OrganizationalRuleInheritance.repeated_handoff_inherits": [],
+      "OrganizationalRuleInheritance.same_enacted_relations_same_decision": [
+        "propext",
+        "Quot.sound"
+      ],
+      "OrganizationalRuleInheritance.no_participation_no_integration": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "OrganizationalRuleInheritance.nonAdopting": [
+        "propext"
+      ],
+      "OrganizationalRuleInheritance.nonadopting_step_preserves": [
+        "propext",
+        "Quot.sound"
+      ],
+      "OrganizationalRuleInheritance.nonadopting_history_inherits": [
+        "propext",
+        "Quot.sound"
+      ],
+      "OrganizationalRuleInheritance.initial": [],
+      "OrganizationalRuleInheritance.allVote": [],
+      "OrganizationalRuleInheritance.twoVote": [],
+      "OrganizationalRuleInheritance.fourVote": [],
+      "OrganizationalRuleInheritance.formation": [],
+      "OrganizationalRuleInheritance.formed": [],
+      "OrganizationalRuleInheritance.revised": [],
+      "OrganizationalRuleInheritance.revision": [],
+      "OrganizationalRuleInheritance.relations_form_through_work": [],
+      "OrganizationalRuleInheritance.review_alone_does_not_confer_office": [],
+      "OrganizationalRuleInheritance.office_without_review_fails": [],
+      "OrganizationalRuleInheritance.proposal_alone_does_not_change_rule": [],
+      "OrganizationalRuleInheritance.authorized_revision_is_actual": [],
+      "OrganizationalRuleInheritance.low_support_cannot_revise": [],
+      "OrganizationalRuleInheritance.duplicate_votes_do_not_create_mandates": [],
+      "OrganizationalRuleInheritance.inherited_rules_change_access": [],
+      "OrganizationalRuleInheritance.wait_and_objection_matter": [],
+      "OrganizationalRuleInheritance.inherited_revision_continues": [],
+      "OrganizationalRuleInheritance.copied_rule_without_participation_fails": [],
+      "OrganizationalRuleInheritance.enabling_one_operation_need_not_enable_revision": [],
+      "OrganizationalRuleInheritance.successor_can_revise_inherited_rule": [],
+      "OrganizationalRuleInheritance.boundary_is_not_exclusive_membership": [
+        "propext",
+        "Quot.sound"
+      ],
+      "OrganizationalRuleInheritance.summary": [],
+      "OrganizationalRuleInheritance.no_count_only_decision": [
+        "propext"
+      ],
+      "OrganizationalRuleInheritance.common_history_can_branch_with_different_rules": [],
+      "OrganizationalRuleInheritance.majority_acceptance_survives_extension": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "JointPracticeContinuation": {
+      "JointPracticeContinuation.Org": [],
+      "JointPracticeContinuation.OrgEvent": [],
+      "JointPracticeContinuation.applyMethod": [],
+      "JointPracticeContinuation.inferMethod": [],
+      "JointPracticeContinuation.reviseFromResult": [],
+      "JointPracticeContinuation.result_revision_eq_inference": [],
+      "JointPracticeContinuation.infer_recovers_method": [],
+      "JointPracticeContinuation.inferred_method_replays": [],
+      "JointPracticeContinuation.Trial": [],
+      "JointPracticeContinuation.Response": [],
+      "JointPracticeContinuation.State": [],
+      "JointPracticeContinuation.methodAt": [],
+      "JointPracticeContinuation.Event": [],
+      "JointPracticeContinuation.step": [
+        "propext"
+      ],
+      "JointPracticeContinuation.run": [
+        "propext"
+      ],
+      "JointPracticeContinuation.process": [
+        "propext"
+      ],
+      "JointPracticeContinuation.run_is_trace": [
+        "propext"
+      ],
+      "JointPracticeContinuation.no_direct_review": [
+        "propext"
+      ],
+      "JointPracticeContinuation.retry_produces_existing_review": [
+        "propext"
+      ],
+      "JointPracticeContinuation.enrollment_consumes_review": [
+        "propext",
+        "Quot.sound"
+      ],
+      "JointPracticeContinuation.response_identifies_current_method": [
+        "propext",
+        "Quot.sound"
+      ],
+      "JointPracticeContinuation.revision_installs_inferred_method": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "JointPracticeContinuation.initial": [],
+      "JointPracticeContinuation.ballot": [],
+      "JointPracticeContinuation.practice": [],
+      "JointPracticeContinuation.after": [
+        "propext"
+      ],
+      "JointPracticeContinuation.firstHistory": [],
+      "JointPracticeContinuation.first": [
+        "propext"
+      ],
+      "JointPracticeContinuation.first_history_enacts_revision": [
+        "propext"
+      ],
+      "JointPracticeContinuation.secondHistory": [],
+      "JointPracticeContinuation.second": [
+        "propext"
+      ],
+      "JointPracticeContinuation.acquired_participation_forms_next_review": [
+        "propext"
+      ],
+      "JointPracticeContinuation.continuationHistory": [],
+      "JointPracticeContinuation.continued": [
+        "propext"
+      ],
+      "JointPracticeContinuation.continuation_without_first_reviewer": [
+        "propext"
+      ],
+      "JointPracticeContinuation.complete_history_is_one_trace": [
+        "propext"
+      ],
+      "JointPracticeContinuation.response_without_revision_does_not_pass_retry": [
+        "propext"
+      ],
+      "JointPracticeContinuation.revision_without_response_fails": [
+        "propext"
+      ],
+      "JointPracticeContinuation.early_departure_prevents_this_practice": [
+        "propext"
+      ],
+      "JointPracticeContinuation.changed_context_rejects_old_response": [
+        "propext"
+      ],
+      "JointPracticeContinuation.admission_without_tested_review_fails": [
+        "propext"
+      ],
+      "JointPracticeContinuation.practiced": [
+        "propext"
+      ],
+      "JointPracticeContinuation.completed_work_does_not_itself_confer_mandate": [
+        "propext"
+      ],
+      "JointPracticeContinuation.laterAttempt": [
+        "propext"
+      ],
+      "JointPracticeContinuation.acquired_method_operates_after_departure": [
+        "propext"
+      ],
+      "JointPracticeContinuation.proposedHistory": [],
+      "JointPracticeContinuation.revisedOrganization": [
+        "propext"
+      ],
+      "JointPracticeContinuation.formed_practice_enters_existing_rule_revision": [
+        "propext"
+      ],
+      "JointPracticeContinuation.narrow": [
+        "propext"
+      ],
+      "JointPracticeContinuation.narrowPracticed": [
+        "propext"
+      ],
+      "JointPracticeContinuation.operation_can_continue_while_admission_fails": [
+        "propext"
+      ]
+    }
+  },
+  "scope": "A two-method software task: actual trial, validated response, inferred configuration, tested retry, existing reviewed-work admission, later response and succession in one history. Formal reuse of OrganizationalRuleInheritance and GenerativeCore. Seed mandate/configuration, two-method family, inference mechanism, current test relation, infrastructure, available people, event order, access and faithful procedure are supplied. Not general human learning, recruitment, empirical calibration, organizational self-sufficiency, universal ontology or comparative superiority. Failed responses, missing revision, premature departure, changed context and governance capacity remain explicit."
+}

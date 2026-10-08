@@ -1,0 +1,319 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T19:35:51.120788+00:00",
+  "scope": "Owned material-correction result and its complete six-record dependency closure, current Lean source/receipt, preserved primary bytes, links, C14 and six requirements. Global metadata/navigation outcomes are reported separately; no empirical or independent-agent acceptance.",
+  "new_theorem_count": 27,
+  "new_audit_count": 45,
+  "closure_audit_count": 529,
+  "owned_record_errors": [],
+  "owned_source_drift": [],
+  "global_metadata_errors": [],
+  "global_source_drift": [],
+  "standard_focused_check_exit": 0,
+  "standard_focused_check": {
+    "records": 88,
+    "selected_records": [
+      "formed-copying-correction",
+      "formed-copying-registration",
+      "growth-constrained-fragmentation",
+      "inherited-structural-copying",
+      "material-preparation-output",
+      "recurrent-chain-assembly"
+    ],
+    "errors": [],
+    "source_drift": [],
+    "unrelated_source_drift": [],
+    "scope": "Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation."
+  },
+  "links_checked": 50,
+  "links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "#inherited-arrangement-changes-copying"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "#recurrent-assembly-from-prepared-material"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "MATERIAL-MATURATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "../../../../sources/evolutionary-selection/grown-fragmentation/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "MATERIAL-MATURATION-INTEGRATION.md#primary-comparison-and-author-counterreview"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "CONTACT-RECONSTRUCTION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "EVOLUTION-CALIBRATED-UPDATER.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/GrownFragmentation.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/grown-fragmentation-verification/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "GROWN-FRAGMENTATION-CHECKS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/recurrent-assembly-verification/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/results/records/recurrent-chain-assembly.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "../../../../sources/evolutionary-selection/evolutionary-organization/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "PACKING-FRAGMENTATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "SETTLING-CORRESPONDENCE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "RECURRENT-ASSEMBLY-CHECKS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "../../../../sources/15-codex-theory-conversations/2026-10-09-evolution-comparative-continuation.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/StructuralCopying.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/structural-copying-verification/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/results/records/inherited-structural-copying.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "../../../../sources/evolutionary-selection/structural-copying/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "STRUCTURAL-COPYING-CHECKS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "../../2026-10-05-concern-theory/RECORDING-FIDELITY-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/CopyingRegistration.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/copying-registration-verification/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/results/records/formed-copying-registration.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "../../../../sources/evolutionary-selection/structural-copying/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "COPYING-REGISTRATION-CHECKS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "EVOLUTION-CALIBRATED-UPDATER.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "EVOLUTION-CALIBRATION-RENEWAL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/CopyingCorrection.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/copying-correction-verification/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/results/records/formed-copying-correction.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "../../../../sources/evolutionary-selection/copying-correction/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "reference": "COPYING-CORRECTION-CHECKS.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/copying-correction-verification/README.md",
+      "reference": "../CopyingCorrection.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/copying-correction-verification/README.md",
+      "reference": "check.py"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/copying-correction-verification/README.md",
+      "reference": "verification.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/copying-correction-verification/README.md",
+      "reference": "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md#formed-correction-edits-inherited-material"
+    },
+    {
+      "from": "sources/evolutionary-selection/structural-copying/README.md",
+      "reference": "papastavrou2024.xml"
+    },
+    {
+      "from": "sources/evolutionary-selection/structural-copying/README.md",
+      "reference": "provenance.json"
+    },
+    {
+      "from": "sources/evolutionary-selection/structural-copying/README.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md#inherited-arrangement-changes-copying"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md#formed-correction-edits-inherited-material"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "reference": "../results/records/formed-copying-correction.json"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "reference": "../../../sources/evolutionary-selection/copying-correction/README.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/copying-correction/README.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/copying-correction/README.md",
+      "reference": "provenance.json"
+    },
+    {
+      "from": "sources/evolutionary-selection/copying-correction/README.md",
+      "reference": "hamming1950.pdf"
+    },
+    {
+      "from": "sources/evolutionary-selection/copying-correction/README.md",
+      "reference": "hopfield1974.pdf"
+    }
+  ],
+  "original_bytes_preserved": 107697,
+  "new_originals_preserved": [
+    {
+      "file": "hamming1950.pdf",
+      "url": "https://zoo.cs.yale.edu/classes/cs323/doc/Hamming.pdf",
+      "doi": "10.1002/j.1538-7305.1950.tb00463.x",
+      "bytes": 4168658,
+      "sha256": "913160af23a1b39eb71ff48923e4cc53679bd7c9af63a0fa3f93264f0c23de2a"
+    },
+    {
+      "file": "hopfield1974.pdf",
+      "url": "https://garcialab.berkeley.edu/courses/papers/Hopfield1974.pdf",
+      "doi": "10.1073/pnas.71.10.4135",
+      "bytes": 1129614,
+      "sha256": "fc6722f535405a2d451129199aae7d430bcad54898336019281c784e9f0d78a5"
+    }
+  ],
+  "prior_study_prefix_preserved": true,
+  "six_requirements_preserved": true,
+  "other_chain_entries_preserved_at_edit": 93,
+  "C14_matches_paired_data": true,
+  "shared_chain_pending_reviews": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md",
+      "theories/shengsheng-buxi-generative-existence/results/records/market-supported-finite-transition.md",
+      "experiments/market-generativity/formal/README.md",
+      "theories/shengsheng-buxi-generative-existence/results/records/classification-robust-generative-comparison.json",
+      "theories/shengsheng-buxi-generative-existence/results/records/classification-robust-generative-comparison.md",
+      "theories/shengsheng-buxi-generative-existence/results/records/market-partial-correction-boundary.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-ETHICS-ISOMORPHISM-AUDIT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATOR-GROUNDING-ARGUMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATOR-GROUNDING-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DISCRIMINATION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DISCRIMINATION-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNED-PROCEDURE-TRANSMISSION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-COUNTERREVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEARNING-SELECTION-SOURCES.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-RENEWAL-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/G0-WARRANT.md"
+    ],
+    "removed_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "theories/meta-attractor/COMMON-ORGANIZATION.md"
+    ]
+  },
+  "artifact_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md": "08738429cb8e1369eef571c7149f4e031103411c57c971165141b0319785ccf8",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/CopyingCorrection.lean": "0c25fda0e3f08d34091ac55dcddecfc2c8c86f634480ffe4f50cccdce5c06aa5",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/copying-correction-verification/verification.json": "8ea4c378aacc81e24ddef5ff7d5ac9094a5d00934f029e10a1e82b98fe0eb233",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/copying-correction-verification/README.md": "710639e71537d29525e526f60e389f99dc7761aadc5ea6d6bd53b20bc2eca4c7",
+    "sources/evolutionary-selection/structural-copying/README.md": "d3956b1d3b06fca5cabcfb1efd55f3887c630555792714d451467e5d098d1c5e",
+    "sources/evolutionary-selection/structural-copying/provenance.json": "7323b8b4a07212ebbfeba9b5be274197a1288e5fce95f74e900a4507e93521b2",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COPYING-CORRECTION-INDEX-EDITS.json": "c403397e982f10dd430933b2c39fcc8ee45f159ce5bf0cc642488dc69e3a146c",
+    "sources/evolutionary-selection/copying-correction/README.md": "8eff15156f6a32444ab9afcb073e8538ad941769b3221820fc76364718436267",
+    "sources/evolutionary-selection/copying-correction/provenance.json": "91c48e12da685e64a5d541f91cf2aa5b9d7a4ad6fbe6d436f3c2d0f7008de83e",
+    "theories/shengsheng-buxi-generative-existence/results/records/formed-copying-correction.json": "d7c153fe06781c53c987286bac1a6ee4a2768ebb619b84a4453c74d0631e5955",
+    "theories/shengsheng-buxi-generative-existence/results/records/formed-copying-registration.json": "972460b8e61571a70ee4f7ed3af7f43921c66bc8431c3a872b85d41da6487cc6",
+    "theories/shengsheng-buxi-generative-existence/results/records/growth-constrained-fragmentation.json": "87dca28d90167f5e2fe5aa8dc1f26f044b7d3a9140c894b51beca2d71b197c68",
+    "theories/shengsheng-buxi-generative-existence/results/records/inherited-structural-copying.json": "c6e00f9d060e36b0d452d8ebc1f7439f9274048cb525f38b8def6ef5669f66ca",
+    "theories/shengsheng-buxi-generative-existence/results/records/material-preparation-output.json": "d3396b26f14ed5849ba72d7e1262d5e912a9512246276bb4c42addc301b5aa1f",
+    "theories/shengsheng-buxi-generative-existence/results/records/recurrent-chain-assembly.json": "42454680301db1283ddd396c206a9756c95f8e093ec37b36d6618945c17c8937"
+  },
+  "checker_sha256": "0e612001620c80952031ca71db91fc7970f93026596e4a591db3df788bc8501d"
+}

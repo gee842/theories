@@ -1,0 +1,29 @@
+{
+  "status": "failed",
+  "utc": "20261008T182649.554874Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "historical-binding-checks/20261008T182649.554874Z",
+  "source_sha256": {
+    "KnowledgeCorrespondence": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+    "NormativeActivity": "15105e2caa43fb9b00f228343be16a7d729ff5a3da10c506d134d07417ae622c",
+    "StandardsBridge": "f061dbc44da5cdf11ac5ff79b3f89558c7e177b23b9f121c1048c16ed353a42a",
+    "FormedGrounds": "15764b3258f843dc967fdfabfd17cd5f47a6eb740a4aa5a3465ceae61dea17ba",
+    "SelectiveRevision": "68468cb99fb536d1fcfefff017cf3188337b5dc769ac1c5041811abfd4ad3fc0",
+    "SourceReliance": "ac7b685ca7e8b92f4869bc67d94494a71e90cef67c1a9d21eb0bb2c71b0f87f9",
+    "CompositionalAcquisition": "c1bb4792d8f2034e870724f0a8828cef9ef31ecf36e3b6b53ed6e8eb3900f848",
+    "CompositionalFormation": "975e7affcf982c64b42b9795e0129b1504441d71c4ff47069e0ba57d19a26be5",
+    "CompositionalTransmission": "d5a6fb23c43dd10782d7696fbbc7e433013eb4000c7ee4f425a8cf4b6e50211b",
+    "AcquiredSegmentation": "95fdab3a4c1707b754aab480a4f2265076867c8a38ed71a955c93d77a914301c",
+    "AcquiredBinding": "0395ecdcce1d3d4712930497ace63d030279e3fe610a60f945d372e45878946d",
+    "RetrospectiveBinding": "e573e973b423b48ccd45fbd8dae88b84788b43c03cf39aa18558f6991bb418de",
+    "HistoricalBinding": "e038079af2c30de8afe81553dfea04d47923f724f00043e1b2f483543d9f1136"
+  },
+  "checker_sha256": {
+    "check_historical_binding.py": "5d8b142d68883385b8eb8f701b614a81a4e3561172c8bf176a401bea98713bb6",
+    "audit_support.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Dated acquired controls constrain route histories; projection at packet dates supplies existing binding coverage without global route stability. Chronology, source identity, calibration fidelity, route/change/disturbance envelopes and elementary repertoire remain supplied. No new acquisition-cost account, empirical identification or full cognitive explanation.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "HistoricalBinding.lean:84:93: error: Application type mismatch: The argument\n  resolved\nhas type\n  resolve (bindingView base packets family (acquire h reversed ps) faults) form = some answer\nbut is expected to have type\n  resolve base form = some answer\nin the application\n  unique_resolution_is_correct_under_coverage base form (Expr.atom target) answer available ?m.29 resolved\nHistoricalBinding.lean:86:2: error: 'change' tactic failed, pattern\n  rec \u2208 List.map ?m.43 packets\nis not definitionally equal to target\n  rec \u2208 base.records\n"
+}

@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T14:43:00.859946+00:00",
+  "scope": "Owned links, five result source bindings, current M26 and empirical receipt. Shared navigation is checked by the registry command. Unrelated source drift is not accepted.",
+  "local_links_checked": 144,
+  "result_ids": [
+    "acquired-binding-compositional-use",
+    "enacted-scene-binding",
+    "encounter-selection-and-revision",
+    "naming-attention-coverage",
+    "encounter-control-and-retention"
+  ],
+  "owned_entry": "M26",
+  "empirical_receipt_sha256": "83eb2ec18c48685265893e0b4b83ff314aaa0e73be42846e35fb08b40d9416b6",
+  "files_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/contingent-learning/README.md": "85eaff6232414408a38bcedd1a983d6ff19b355a81f681aea890d5084101e901",
+    "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/contingent-learning/PLAN.md": "360b3de3f84bfd3991266651a45fbf65525699a9f3f15c39edfada00e9f52d57",
+    "sources/developmental-attention/bazhydai-2026/README.md": "858156815d025539d1d4f4e62fdb164360fe9def467248d0296d7a5f66eec70a",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md": "23e18baa74db97fe1b1bce544b003bb3c71285ae30948897b36ae7bebaa33fb8",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md": "479e8272e3bf87c2a19bf1b02cd6f4a533cc1a018a334a431a74ae5bb0274049",
+    "theories/shengsheng-buxi-generative-existence/results/records/acquired-binding-compositional-use.md": "a786724d1af892ada4066a56d31d7c013e39468f29d1a71669a40aac8bd57987",
+    "theories/shengsheng-buxi-generative-existence/results/records/enacted-scene-binding.md": "f4fb7a363c33896935463a2507ec11f8e93b38a9d10c612337897dff3c32bbca",
+    "theories/shengsheng-buxi-generative-existence/results/records/encounter-selection-and-revision.md": "0d6fe5ad3790bf385273bb7c9f034a382e0ac581703ba04da3e961256425d920",
+    "theories/shengsheng-buxi-generative-existence/results/records/naming-attention-coverage.md": "1299f1cb003671a964ab5cb4da6bb17b463d2f4ab450553d6445f3ecdd6245fd",
+    "theories/shengsheng-buxi-generative-existence/results/records/encounter-control-and-retention.md": "3530d63ed45ae92b64e01cca2b93072333d75ec16e5f49db895d00ee2df87199"
+  },
+  "full_goal_complete": false,
+  "independent_agent_review": false,
+  "figure_visual_review": "PNG inspected: labels, units, intervals and caveat readable; no clipping.",
+  "figure_sha256": {
+    "png": "136f2f1d2c8d50610a762b983527568a805be15d5daee9530a36b879edf03e6f",
+    "svg": "df463758f6aeab776e17bb6cb332d4946ca4f0a09e91d83e6cfa6d6a0a507a1b"
+  }
+}

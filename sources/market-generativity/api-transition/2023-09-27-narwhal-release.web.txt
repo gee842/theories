@@ -1,0 +1,616 @@
+Narwhal 2 is finally here! Subscription details inside : r/narwhalapp (https://www.reddit.com/r/narwhalapp/comments/16tqo4f/narwhal_2_is_finally_here_subscription_details/)
+citeturn68view0 [wordlim: 200] Crawled: last month; Content type: text/html; Source: open({"ref_id":"https://www.reddit.com/r/narwhalapp/comments/16tqo4f/narwhal_2_is_finally_here_subscription_details/","lineno":16}); Total lines: 2323
+L0: cite0†Skip to main content L1: 
+L2: Open menu Open navigation Go to Reddit Home
+L3: 
+L4: r/narwhalapp [Input: Search in ⁨r/narwhalapp⁩]
+L5: 
+L6: cite1†Log In Log in to Reddit
+L7: 
+L8: Expand user menu Open settings menu
+L9: 
+L10: cite2†Go to narwhalapp L11: 
+L12: cite2†r/narwhalapp L13: 
+L14: • 3y ago
+L15: 
+L16: cite3†det0ur L17: # Narwhal 2 is finally here! Subscription details inside
+L18: 
+L19: Narwhal 2 is finally here! We have been working on this for years 🙃 and it is finally ready to see the light of day. We did our best to keep the "essence" of Narwhal 1 while modernizing the design and improving efficiency.
+L20: Unfortunately, Narwhal 2 will require subscriptions in a couple weeks. This is due to the Reddit API cost. We hope that after you use Narwhal 2 for a couple weeks you will realize that it is worth paying for. We will be continuing to make Narwhal 2 the best app it can be. We have a laundry list of features to implement and you can vote on features here: cite4†https://roadmap.narwhal.app†roadmap.narwhal.app L21: ### Subscription Details
+L22: 
+L23: I made changes to the subscription plans here: cite5†https://www.reddit.com/r/narwhalapp/comments/174206m/finalized_subscription_plan_for_launch_details/ ?
+L24: ### Why are the subscriptions so expensive?
+L25: 
+L26: The reason these subscriptions are so expensive is because Narwhal is now going to be incurring a large amount of costs. Reddit is charging for the API, Apple will be charging us for subscription fees, server costs for monitoring API usage and more.
+L27: We are intentionally starting out conservative with pricing so that we don't dig ourselves into a hole. If we are able to lower costs without going bankrupt, we will do so. We hope that you think Narwhal is worth it, but if not, thanks for trying out Narwhal!
+L28: 
+L29: Let me know if you have any questions and I'll be happy to answer
+L30: 
+L31: cite6†Share L32: 
+L33: Sort by:
+L34: 
+L35: Best
+L36: 
+L37: Open comment sort options
+L38: 
+L39: * Best
+L40: 
+L41: * Top
+L42: 
+L43: * New
+L44: 
+L45: * Controversial
+L46: 
+L47: * Old
+L48: 
+L49: * Q&A
+L50: 
+L51: cite7†netori L52: 
+L53: •
+L54: 
+L55: cite8†3y ago L56: Any chance for a $4-5/month subscription? I'm in the middle between casual and active. I suppose I could top-up towards the end of the month but it would be nice not to have to check when I get low on API calls.
+L57: 
+L58: cite3†det0ur L59: 
+L60: •
+L61: 
+L62: cite9†3y ago L63: 
+L64: I'm open to it if there are enough people who want this
+L65: 
+L66: cite10†tWiZzLeR322 L67: 
+L68: •
+L69: 
+L70: cite11†3y ago L71: 
+L72: A $4.99 tier for 10,000 API calls seems like the right amount for me too.
+L73: 
+L74: more replies
+L75: 
+L76: cite12†more replies L77: 
+L78: cite13†audhumbla L79: 
+L80: •
+L81: 
+L82: cite14†3y ago L83: Adding on to this, if you want us to pay according to api usage, please optimize api usage in the app.
+L84: 
+L85: For instance in the previous app if you opened a post it would first show just the image for example and then you could tap view comments.
+L86: 
+L87: Now if I open an image post it immediately opens te comments as well, even though I might not be interested in the comments, so that’s a wasted api call.
+L88: 
+L89: more replies
+L90: 
+L91: cite15†more replies L92: 
+L93: [deleted]
+L94: 
+L95: •
+L96: 
+L97: cite16†3y ago L98: I agree with this, a $4.99 tier for 10,000 API calls would be perfect for me as well.
+L99: 
+L100: more reply
+L101: 
+L102: cite17†more reply L103: 
+L104: more reply
+L105: 
+L106: cite18†more reply L107: 
+L108: [deleted]
+L109: 
+L110: •
+L111: 
+L112: cite19†3y ago L113: 
+L114: • Edited 3y ago
+L115: 
+L116: Not sure if this has been brought up before but is it possible to have a website to sign up for the subscriptions so that you don’t have to pay Apple like Google, Disney, Netflix, etc. do? Keep the subscription options though the app but offer lower priced subscription though a separate website to reduce cost?
+L117: cite3†det0ur L118: 
+L119: •
+L120: 
+L121: cite20†3y ago L122: 
+L123: I need to look into this. I don't have time to do that in the next couple weeks, but if I can get away with that with Apple, I'll definitely do it
+L124: 
+L125: cite21†vocal_tsunami L126: 
+L127: •
+L128: 
+L129: cite22†3y ago L130: 
+L131: Please consider it. I’d rather pay all money directly to you. And yes I think you can do it no problem if apps like Inoreader can
+L132: 
+L133: cite3†det0ur L134: 
+L135: •
+L136: 
+L137: cite23†3y ago L138: 
+L139: Yes I’ll definitely do it just won’t be ready in the next couple weeka
+L140: 
+L141: cite24†more reply cite24†more reply cite25†More replies L142: 
+L143: more replies
+L144: cite26†more replies L145: 
+L146: cite27†blakezilla L147: 
+L148: •
+L149: 
+L150: cite28†3y ago L151: 
+L152: To piggyback, I’d love to see a yearly option as well. I really dislike recurring fees, but I understand if it’s not possible!
+L153: 
+L154: cite29†jamvng L155: 
+L156: •
+L157: 
+L158: cite30†3y ago L159: 
+L160: The complicated part would be he’d had to create his own website and store accounts with payment information himself. He understandably may not want to get into that.
+L161: 
+L162: more replies
+L163: 
+L164: cite31†more replies L165: 
+L166: cite32†Maleficent_Fudge3124 L167: 
+L168: •
+L169: 
+L170: cite33†3y ago L171: Also if you find a way to do it on a 3rd party website, you could charge per API call rather than a constant subscription cost as is required by Apple.
+L172: 
+L173: I’d much prefer that.
+L174: 
+L175: Unless unused API calls each month were rolling into the next month.
+L176: 
+L177: more replies
+L178: 
+L179: cite34†more replies L180: 
+L181: cite35†grapplerone L182: 
+L183: •
+L184: 
+L185: cite36†3y ago L186: 
+L187: I’m very impressed with this application. It added a couple features I wanted like larger text & read on scroll. The menu system is far easier to manage and laid out well.
+L188: Blows the Reddit app away as far as customization goes.
+L189: 
+L190: cite3†det0ur L191: 
+L192: •
+L193: 
+L194: cite37†3y ago L195: 
+L196: Thanks, I'm glad you think so :)
+L197: 
+L198: cite38†conturax L199: 
+L200: •
+L201: 
+L202: cite39†3y ago L203: 
+L204: Question: I have an ipad mini but like using it as an oversized iphone in vertical mode. Is there anyway to have the narwhal app work like that without the 2 columns like the phone app?
+L205: 
+L206: cite3†det0ur L207: 
+L208: •
+L209: 
+L210: cite40†3y ago L211: 
+L212: Yes I’ll have a setting for this
+L213: 
+L214: cite41†more reply cite41†more reply cite42†More replies cite43†More replies L215: 
+L216: more replies
+L217: 
+L218: cite44†more replies L219: cite45†Cheechers23 L220: 
+L221: •
+L222: 
+L223: cite46†3y ago L224: 
+L225: Have you looked at the Apple Small Business Program? I believe that reduces Apple’s cut from 30% to 15%.
+L226: 
+L227: cite3†det0ur L228: 
+L229: •
+L230: 
+L231: cite47†3y ago L232: 
+L233: Yes I’ve applied to that. I might get to 1 million in revenue (not profit as that money will be going to Reddit) sooner than later. My bill for current usage of Narwhal would be above 1 million per year so we will see how many people subscribe
+L234: 
+L235: cite48†More replies L236: 
+L237: cite49†crafting-ur-end L238: 
+L239: •
+L240: 
+L241: cite50†3y ago L242: This seems reasonable to me at a first glance, it’ll be interesting to see how my API pulls average over the course of a month or so
+L243: 
+L244: cite3†det0ur L245: 
+L246: •
+L247: 
+L248: cite51†3y ago L249: 
+L250: Thanks, I'm also working on adding additional things to reduce API usage like the ability to tap on thumbnails to open media directly instead of loading comments + media
+L251: 
+L252: cite52†Azuretower L253: 
+L254: •
+L255: 
+L256: cite53†3y ago L257: Same as greymalken, I would love to have an action bar item that showed daily API count. Or maybe percent used for the month? I’m not sure what the most useful display of the data would be. But something like that.
+L258: 
+L259: cite3†det0ur L260: 
+L261: •
+L262: 
+L263: cite54†3y ago L264: 
+L265: We are planning to add it to the side menu
+L266: 
+L267: cite55†More replies L268: 
+L269: [deleted]
+L270: 
+L271: • 3y ago
+L272: 
+L273: Comment deleted by user
+L274: 
+L275: more reply
+L276: 
+L277: cite56†More replies cite57†More replies L278: 
+L279: cite58†Connor_E L280: 
+L281: •
+L282: 
+L283: cite59†3y ago L284: I understand all the reasons why Christian did not do this, but I wish he would have implemented this for Apollo. Narwahl is great and I've been loving it but Apollo had my heart.
+L285: 
+L286: Still better than paying $6.99 for the reddit app with no ads.
+L287: 
+L288: cite3†det0ur L289: 
+L290: •
+L291: 
+L292: cite60†3y ago L293: 
+L294: Well, I hope that over time Narwhal can live up to what you want. Please always give me as much feedback as possible so I can make the best app possible.
+L295: 
+L296: cite61†mbhwookie L297: 
+L298: •
+L299: 
+L300: cite62†3y ago L301: It’s looking really good. I had been using Apollo since release and have been suffering with the Reddit app the past month. Overall really good UI and features seem to comparable.
+L302: 
+L303: Good for you for trying. Hopefully Reddit doesn’t change things up too much. Already sucks to have to care about your interactions all the time, but anything beats the trash Reddit app.
+L304: 
+L305: Prices seem fair for everyone.
+L306: 
+L307: cite3†det0ur L308: 
+L309: •
+L310: 
+L311: cite63†3y ago L312: 
+L313: Thanks for trying out Narwhal!
+L314: 
+L315: cite64†more reply cite64†more reply cite65†More replies L316: cite58†Connor_E L317: 
+L318: •
+L319: 
+L320: cite66†3y ago L321: 
+L322: One very very small issue I've ran into is that the swipe gesture to save/unsave/upvote/downvote on posts are a little sensitive and react too quickly while I'm just scrolling. Could be a user error though.
+L323: 
+L324: cite3†det0ur L325: 
+L326: •
+L327: 
+L328: cite67†3y ago L329: 
+L330: I’m using the standard iOS swipe gesture but I’ll take a look at this
+L331: 
+L332: more reply
+L333: 
+L334: cite68†more reply L335: 
+L336: more replies
+L337: 
+L338: cite69†more replies L339: 
+L340: [deleted]
+L341: 
+L342: •
+L343: 
+L344: cite70†3y ago L345: 
+L346: I really don’t blame him after what Reddit pulled with him.
+L347: But I also wish this :/
+L348: 
+L349: [deleted]
+L350: 
+L351: •
+L352: 
+L353: cite71†3y ago L354: 
+L355: Another big problem he had was that he allowed people to pay in advance for Apollo premium or whatever it was called. So you could pay for the whole year. Guess who mostly did that? Power users who used the app a lot. And if he did a whole reimbursement for all those subscriptions it would have probably bankrupted him. So there really wasn’t a good option like this.
+L356: If Reddit had given a reasonable amount of notice, like 12 months, it would have been possible.
+L357: 
+L358: cite72†More replies L359: 
+L360: cite73†-DementedAvenger- L361: 
+L362: •
+L363: 
+L364: cite74†3y ago L365: 
+L366: Same. I want Apollo back without side loading.
+L367: 
+L368: more replies
+L369: 
+L370: cite75†more replies L371: 
+L372: cite76†glaive_anus L373: 
+L374: •
+L375: 
+L376: cite77†3y ago L377: 
+L378: Can you clarify if the pricing is per month or per day? For example, am I purchasing 5k calls/month and can use it throughout the month at varied per-day rates, say 165 calls one day, 90 calls another, and 300 a third day?
+L379: Will unused calls carry forward? Or is it use it or lose it month to month?
+L380: 
+L381: What constitutes a month for the purposes of the end user? Does a "month" start the moment I purchase the subscription and then renew exactly in 30 days, or when the subscription renews automatically?
+L382: 
+L383: What happens when a user exceeds the API calls purchased?
+L384: 
+L385: Will you be providing a template settings to help with minimizing API calls (eg blocking upvotes and downvotes, other API consuming activities that are tiny?)
+L386: Is it possible to bulk buy a set of API calls instead of subscribing for use? For example, purchasing 5k calls to cover my use but recognizing these will be consumed over a period longer than a month. I may be more inclined to purchase a flat amount of calls to use at my leisure than to add another subscription.
+L387: 
+L388: cite3†det0ur L389: 
+L390: •
+L391: 
+L392: cite78†3y ago L393: The pricing is per month. The 165 calls is just used as a way to estimate your usage. If you use 300 one day and 90 another that is fine, it just all adds towards the 5,000
+L394: 
+L395: Right now it will be use it or lose it. I haven't really thought about the carry forward too much, but I am worried about Reddit raising the prices and then I could be on the hook for a ton of money if that makes sense.
+L396: A month will start when you first subscribe and then renew a month after that. I'm using the standard Apple subscriptions so it will function exactly like any other iOS subscription.
+L397: 
+L398: When a user exceeds API calls, a screen will be shown that they will need to buy more calls to continue using Narwhal.
+L399: 
+L400: cite79†OldBratpfanne L401: 
+L402: •
+L403: 
+L404: cite80†3y ago L405: My old cell phone contract had an one month carry over for unused call-/data volume, where your unused volume each month would be carried over in a "second volume bank" that reset at the end of each month, however you would always first use up the volume in your "primary bank" (obviously taking from the secondary bank first would have been better for the consumer but this way felt like a decent compromise between my and the providers interests).
+L406: I don’t think it made a huge difference on my providers profit/cost since most of the time the volume in the secondary bank just expired, but I always felt it made a big difference in psychological customer satisfaction.
+L407: cite3†det0ur L408: 
+L409: •
+L410: 
+L411: cite81†3y ago L412: 
+L413: I actually like that. Just give an extra month for unused calls
+L414: 
+L415: cite82†more replies cite82†more replies cite83†More replies L416: 
+L417: cite84†yaycupcake L418: 
+L419: •
+L420: 
+L421: cite85†3y ago L422: 
+L423: Is it possible to show in-app what day of the month your subscription will roll over? So if you're low on calls with like 1 day left in the "month" or billing cycle, you could opt to touch grass instead of pay the extra dollar for a top up.
+L424: As an aside, I noticed the "all" menu (3 dots) shows in dark theme (dark bg, light text) even when I configured my theme to be a light theme. Is there something I'm missing, or is there a way customizing that can be added?
+L425: 
+L426: cite3†det0ur L427: 
+L428: •
+L429: 
+L430: cite86†3y ago L431: 
+L432: Yep it will have that. I’ll add a diff style for that menu in the future
+L433: 
+L434: cite87†More replies L435: 
+L436: cite88†Dragon88Love L437: 
+L438: •
+L439: 
+L440: cite89†3y ago L441: Do you have a date in which we’ll need to start paying? It would be nice to have all of October to see what a month’s usage looks like before diving in.
+L442: 
+L443: cite3†det0ur L444: 
+L445: •
+L446: 
+L447: cite90†3y ago L448: 
+L449: Mid October is my goal
+L450: 
+L451: cite91†More replies L452: 
+L453: more replies
+L454: 
+L455: cite92†more replies cite93†More replies L456: 
+L457: cite94†SXL L458: 
+L459: •
+L460: 
+L461: cite95†3y ago L462: 
+L463: I’m at 5700 estimated api calls. Thats going to be annoying as I will either have to be actively conserving calls or go with a higher much more expensive plan.
+L464: I like that you can top it up at a fair price though but would rather have a sub at 4usd with more calls. But maybe a tier for every taste isnt feasable.
+L465: 
+L466: cite3†det0ur L467: 
+L468: •
+L469: 
+L470: cite96†3y ago L471: 
+L472: This is good feedback! I'm not sure where people are falling at the moment. It might make sense for me to add a plan in the middle
+L473: 
+L474: more replies
+L475: 
+L476: cite97†more replies L477: 
+L478: more replies
+L479: 
+L480: cite98†more replies L481: 
+L482: cite99†ignoresubs L483: 
+L484: •
+L485: 
+L486: cite100†3y ago L487: It finally arrived! Congrats on the launch! I absolutely think you achieved the goal of modernizing Narwhal while retaining the feel.
+L488: 
+L489: cite3†det0ur L490: 
+L491: •
+L492: 
+L493: cite101†3y ago L494: 
+L495: Thanks!!
+L496: 
+L497: more reply
+L498: 
+L499: cite102†more reply cite103†More replies L500: 
+L501: cite104†n8-g L502: 
+L503: •
+L504: 
+L505: cite105†3y ago L506: 
+L507: Small request, but it looks like average API usage includes today, which means it will start low each morning and increase throughout the day. Would it be possible to just ignore the current day’s requests when computing that?
+L508: 
+L509: cite3†det0ur L510: 
+L511: •
+L512: 
+L513: cite106†3y ago L514: Yes that’s a good suggestion
+L515: 
+L516: more reply
+L517: 
+L518: cite107†more reply cite108†More replies L519: 
+L520: cite109†ibuildpixels L521: 
+L522: •
+L523: 
+L524: cite110†3y ago L525: I would very much consider getting a subscription IF I have the ability to configure which API features I care about in order to min-max the amount of API calls I make. For example, disabling or buffering auto-search results which can blow up API requests. Or disabling comment loading unless I explicity want to see them. Maybe removing the ability to upvote and downvote posts. And disabling mail.
+L526: There’s a lot of potential here and it would be really nice to have a dedicated settings section to fine-tune this experience.
+L527: Also, as many people suggested, further backend optimizations on caching/batch calls could be nifty.
+L528: 
+L529: cite3†det0ur L530: 
+L531: •
+L532: 
+L533: cite111†3y ago L534: 
+L535: Yes, I'm looking into how to fix the subreddit search API to reduce usage. I'm also going to not load comments when you have the do not show comments options on. Then it will only load once you open them.
+L536: 
+L537: cite109†ibuildpixels L538: 
+L539: •
+L540: 
+L541: cite112†3y ago L542: 
+L543: Are there any plans to let users who primarily lurk/don’t engage in conversations to “simplify” the app functionality?
+L544: 
+L545: cite3†det0ur L546: 
+L547: •
+L548: cite113†3y ago L549: 
+L550: Could you elaborate a bit more. We try to make it pretty simple out of the gate with most actions behind a gesture
+L551: 
+L552: cite114†more replies cite114†more replies cite115†More replies cite116†More replies L553: 
+L554: more replies
+L555: 
+L556: cite117†more replies L557: 
+L558: cite118†nereuszeer L559: 
+L560: •
+L561: 
+L562: cite119†3y ago L563: 
+L564: Real talk. If I install the version from the App Store over the beta, will I keep my settings? I want to switch over but don’t feel like losing everything. TIA!
+L565: 
+L566: cite3†det0ur L567: 
+L568: •
+L569: 
+L570: cite120†3y ago L571: Yes, just don't ever delete the app. Only ever hit the install button from app store or testflight and it will overwrite the app and keep the settings
+L572: 
+L573: more reply
+L574: 
+L575: cite121†more reply cite122†More replies L576: 
+L577: cite123†Howard0115 L578: 
+L579: •
+L580: 
+L581: cite124†3y ago L582: 
+L583: Thank you det0ur! You really put a lot of hard work and thought into this product and it shows. I was on the betas but glad to see the official release now.
+L584: 
+L585: cite3†det0ur L586: 
+L587: •
+L588: 
+L589: cite125†3y ago L590: 
+L591: Thank you!
+L592: 
+L593: more reply
+L594: 
+L595: cite126†more reply cite127†More replies L596: 
+L597: cite128†FuzzyPuffin L598: 
+L599: •
+L600: cite129†3y ago L601: 
+L602: Are the API usage numbers supposed to sync across devices? For some reason I am seeing different numbers on my iPhone and iPad. If I combine them, looks like I’m sitting at 14k a month.
+L603: 
+L604: cite3†det0ur L605: 
+L606: •
+L607: 
+L608: cite130†3y ago L609: 
+L610: Not currently no. The numbers are per device
+L611: 
+L612: more replies
+L613: 
+L614: cite131†more replies cite132†More replies L615: 
+L616: cite133†anonamouse504 L617: 
+L618: •
+L619: 
+L620: cite134†3y ago L621: 
+L622: I may be dumb here. But this continues to be ad free after the beta correct? Like these fees include ad free?
+L623: 
+L624: cite3†det0ur L625: 
+L626: •
+L627: 
+L628: cite135†3y ago L629: Yea narwhal will not have ads
+L630: 
+L631: more reply
+L632: 
+L633: cite136†more reply L634: 
+L635: cite137†NOTorAND L636: 
+L637: •
+L638: 
+L639: cite138†3y ago L640: 
+L641: Really is a no brainer considering i’d already pay for reddit premium to avoid the reddit app ads and the native app just ain’t cuttin it feature wise. Easy purchase. should def have something between the $3 and $7 tier tho.
+L642: 
+L643: cite3†det0ur L644: 
+L645: •
+L646: 
+L647: cite139†3y ago L648: 
+L649: Thanks! I do hope more people realize they won’t need Reddit premium anymore for the no ads if they use narwhal
+L650: 
+L651: cite140†More replies L652: 
+L653: cite141†physicscat L654: 
+L655: •
+L656: cite142†3y ago L657: 
+L658: Can we still use the original Narwhal?
+L659: 
+L660: cite3†det0ur L661: 
+L662: •
+L663: 
+L664: cite143†3y ago L665: 
+L666: No, it no longer exists
+L667: 
+L668: cite141†physicscat L669: 
+L670: •
+L671: 
+L672: cite144†3y ago L673: 
+L674: I’m using it right now.
+L675: 
+L676: cite3†det0ur L677: 
+L678: •
+L679: 
+L680: cite145†3y ago L681: 
+L682: Correct, but it is no longer available for download on the App Store, and it will stop working in a couple weeks.
+L683: 
+L684: cite146†more reply cite146†more reply cite147†More replies cite148†More replies cite149†More replies L685: 
+L686: cite150†rusfairfax L687: 
+L688: •
+L689: 
+L690: cite151†3y ago L691: I’ve been a user since Alien Blue was killed by Reddit. Love the new version. Thanks for your hard work.
+L692: 
+L693: Any thoughts on having a single payment for lifetime Ultra? eg. I’d be down to pay like 3-years or 4-years worth of Ultra upfront for a lifetime sub.
+L694: 
+L695: cite3†det0ur L696: 
+L697: •
+L698: 
+L699: cite152†3y ago L700: 
+L701: That isn’t possible, because every action you take in the app now costs money to Reddit
+L702: 
+L703: more reply
+L704: 
+L705: cite153†more reply cite154†More replies L706: 
+L707: cite155†ReversePettlngZoo L708: 
+L709: •
+L710: 
+L711: cite156†3y ago L712: cite3†u/det0ur wtf am I gonna do? (Besides get a life and get off Reddit)
+L713: 
+L714: cite157†https://i.imgur.com/TbJLiDa.jpg†i.imgur.com L715: 
+L716: cite3†det0ur L717: 
+L718: •
+L719: 
+L720: cite158†3y ago L721: 
+L722: Oh man. How much are you upvoting and downvoting?
+L723: 
+L724: more reply
+L725: 
+L726: cite159†more reply cite160†More replies L727: 
+L728: cite161†woahacow L729: 
+L730: •
+L731: 
+L732: cite162†3y ago L733: Guys I just wanted to say I’m so happy you decided to continue! Narwhal was my first app when i started using reddit way back and I’m happy to return to it. Glad to see the refreshed design and the added features i missed the most from apollo. I’ll happily pay for my light usage (also helpfully estimated by the app).
+L734: 
+L735: cite3†det0ur L736: 
+L737: •
+L738: 
+L739: cite163†3y ago L740: 
+L741: Really glad to have you back!
+L742: 
+L743: cite164†More replies L744: 
+L745: cite165†michikade L746: 
+L747: •
+L748: 
+L749: cite166†3y ago L750: That mid-tier price point sounds actually a little better in price than I was expecting but it makes sense. API use + 30% to Apple + server fees + you not living off of whatever you can scrounge out of your couch cushions, etc.
+L751: 
+L752: It’d be nice if I could buy an annual pack (I hate subscriptions so much, everybody sucks money out of me monthly these days) but I understand how annual isn’t as easy to deal with on the back end with Reddit being the way they are.
+L753: 
+L754: cite3†det0ur L755: 
+L756: •
+L757: 
+L758: cite167†3y ago L759: You and me both hate subscriptions. I really really wish we didn't have to do this. I can't do annual because I'm worried about Reddit raising their prices at some point, sorry :(
+L760: 
+L761: [deleted]
+L762: 
+L763: • 3y ago
+L764: 
+L765: Comment deleted by user
+L766: 
+L767: more replies
+L768: 
+L769: cite168†More replies L770: 
+L771: cite169†Jakyrian L772: 
+L773: •
+L774: 
+L775: cite170†3y ago L776: 
+L777: Question regarding future TestFlight builds, how will the subscription work if there’s no IAP for test apps?
+L778: 
+L779: cite3†det0ur L780: 
+L781: •
+L782: 
+L783: cite171†3y ago L784: I need to figure this out. It will most likely require an app store subscription
+L785: 
+L786: more reply
+L787: 
+L788: cite172†more reply cite173†More replies L789: 
+L790: cite174†purplemountain01 L791: 
+L792: •
+L793: 
+L794: cite175†3y ago L795: 
+L796: Thew new update is great. I'm liking it. Former Apollo user. Thank you for the hard work that was put into Narwhal 2.
+L797: 
+L798: cite3†det0ur L799: 
+L800: •
+L801: 
+L802: cite176†3y ago L803: 
+L804: Thanks for trying out Narwhal and for your support :)
+L805: 

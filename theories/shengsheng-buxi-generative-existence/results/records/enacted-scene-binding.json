@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F09",
-  "reviewed_at_utc": "2026-10-08T13:41:46.812488+00:00",
+  "reviewed_at_utc": "2026-10-08T18:50:58.660938+00:00",
   "claim": {
     "zh": "指定空间关系与有支持的移动／命名史产生已有绑定构造的精确解释输入，因此其任意有限编码序列的解释结果继续成立；另外有实际响应及访问、保留、时序失败见证。",
     "en": "The specified spatial arrangement and supported movement/naming history produce the previous binding construction’s exact interpretation inputs, preserving interpretation of every finite encoded sequence; separate witnesses cover actual response and access, retention and timing failures."
@@ -96,7 +96,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
       "role": "integration",
-      "sha256": "ae2a57df8613a5a0919d1a14ac620442b34f3e22e89ce82ebde19eda586b2e35",
+      "sha256": "7d9dec741345e3fa7739b3408238150962a2cc50f74c135f631d60951419d940",
       "declarations": []
     }
   ],
@@ -110,8 +110,8 @@
     }
   ],
   "next_delta": {
-    "zh": "复用 encounter-selection-and-revision：取得的访问与歧义现接通实际选择及新学习；下一连接是维持覆盖的选择性注意与相互沟通协调的发育对应。",
-    "en": "Reuse encounter-selection-and-revision: acquired access and ambiguity now enter actual selection and further learning. Next is developmental correspondence for selective attention and reciprocal communicative coordination sustaining coverage."
+    "zh": "既有条件连接保留；下一重点是在匹配发育程序中识别已取得访问及所保留来源／次序如何进入实际使用，分别观察当前依赖与旧内容认可。原典已约束自动迁移，但未识别唯一机制或演化史。",
+    "en": "Preserve the completed conditional connections. Next identify how formed access and retained source/order information guide actual use in a matched developmental procedure, distinguishing present reliance from old-content endorsement. Primary evidence constrains automatic transfer without identifying a unique mechanism or evolutionary history."
   },
   "history": [
     {
@@ -121,6 +121,26 @@
     {
       "zh": "2026-10-08：核读原研究第14–16节；选择经历及访问预测修订的新连接已实查，原证明范围不变，未宣告完整心理解释。",
       "en": "2026-10-08: reviewed study sections 14–16; encounter selection and access-prediction revision now have a checked connection. This proof’s original scope remains unchanged; no complete psychological explanation is claimed."
+    },
+    {
+      "zh": "2026-10-08：核读新增公开命名／注视分析；自动所指注视的经验对应受限，既有覆盖前提、形式结论及原实查范围不变。",
+      "en": "2026-10-08: reviewed the appended public naming/gaze analysis. Automatic target-gaze correspondence is limited; the existing coverage premises, formal conclusions and original verification scope are unchanged."
+    },
+    {
+      "zh": "2026-10-08：已读研究新增19–20节；后续保留测量加入经验约束，未改变本成果声明、证明或既有反例。下一对应具体化为经验可靠性改变后对新证据的使用。",
+      "en": "2026-10-08: reviewed added study sections 19–20. A later-retention measure adds an empirical constraint without changing this result’s claim, proof or existing failures. The next correspondence is evidence use after experienced reliability changes."
+    },
+    {
+      "zh": "2026-10-09：已读研究21–23节；取得的来源关系现以另一路径生成旧命名记录的绑定候选。原声明、证明、经验结果与反例不改写；历史适用范围的新反例具体化后续连接。",
+      "en": "2026-10-09: reviewed study sections 21–23. Acquired source relations now generate binding alternatives for old naming records through an additional route. Original claims, proofs, empirical results and failures remain; a historical-applicability counterexample sharpens the next connection."
+    },
+    {
+      "zh": "2026-10-09：核读同一研究新增历史适用范围组合与反审；本项既有主张、源码及实查不变，接续问题转向来源—时序保持和持续性假设的经验识别。",
+      "en": "2026-10-09: reviewed the same study’s historical-applicability composition and counterreview. This result’s prior claim, sources and scientific checks remain unchanged; the continuation now targets empirical identification of source–time retention and persistence assumptions."
+    },
+    {
+      "zh": "2026-10-09：核读同一研究新增第27–29节的五篇原典对应、反审与取得／保持／使用区分；只更新此来源版本及下一连接，原成果、证明和经验回执范围保留。",
+      "en": "2026-10-09: reviewed the same study’s added §§27–29, five primary-source correspondences, counterreview and formation/retention/use distinction. Updated this source version and next connection while preserving the prior result, proof and empirical-receipt scopes."
     }
   ]
 }

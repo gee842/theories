@@ -12,6 +12,8 @@ Before foundational analysis, formalization or criticism, read the [nondual meth
 
 ## Respect research scope and completion
 
+**当前首要研究方向：Theory of Becoming（生成／变化之论）。** [Ren 的最新提议与优先指令](sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md)要求解释包含生成、维持、转化、退化与消失的整个关系展开，不先假定它是好的；生命、演化及评价通过其中具体形成的关系展开。优先研究其能否无需附加实质公理奠基。不得把强的“零公理”目标悄悄缩成“无伦理公理”，也不得把包容全部结果当成已解释实际规律。G0/J 的伦理方向、已完成条件成果与其他独立授权范围保持；本次是优先级与研究假说，不是无公理证明已经完成。见 [当前范围](GOALS.md#theory-of-becoming)。
+
 The continuing foundation programme and current generative-alignment direction remain in [the scope directory](GOALS.md). Connect research to the unresolved inference it advances. Explain supplied premises and what result would change the account. Credit completed conditional mechanisms and arguments rather than restarting them from historical “next step” passages.
 
 **G0 公理路线已获明确授权。** 对已完成的对齐伦理奠基任务，不再要求规范起点自身的无公理证明。G0、附加比较／责任承诺、对应条件及推论分别公开，不把权重或义务藏入定义。生生的正面范围遵从[Ren 的原话](sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md)，不先改成“已独立判好”的可能性。独立重新授权的无公理、普遍智能及其他目标保持自身范围，见[明确公理修正](sources/15-codex-theory-conversations/2026-10-08-alignment-grounding-axiom-correction.md)与 GOALS。

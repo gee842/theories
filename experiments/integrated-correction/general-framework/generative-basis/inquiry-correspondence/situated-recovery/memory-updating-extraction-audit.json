@@ -1,0 +1,365 @@
+[
+  {
+    "participant": 1,
+    "rows": 2128,
+    "finite_channels": 292,
+    "missed_trials": 0,
+    "missing_trial_numbers": [],
+    "table_copies_agree": 2,
+    "triplets_by_condition": [
+      36,
+      12,
+      12,
+      36
+    ],
+    "author_sequence_exact_match": true
+  },
+  {
+    "participant": 2,
+    "rows": 2128,
+    "finite_channels": 292,
+    "missed_trials": 0,
+    "missing_trial_numbers": [],
+    "table_copies_agree": 2,
+    "triplets_by_condition": [
+      36,
+      12,
+      12,
+      36
+    ],
+    "author_sequence_exact_match": true
+  },
+  {
+    "participant": 3,
+    "rows": 2130,
+    "finite_channels": 292,
+    "missed_trials": 0,
+    "missing_trial_numbers": [],
+    "table_copies_agree": 2,
+    "triplets_by_condition": [
+      36,
+      12,
+      12,
+      36
+    ],
+    "author_sequence_exact_match": true
+  },
+  {
+    "participant": 4,
+    "rows": 2130,
+    "finite_channels": 292,
+    "missed_trials": 0,
+    "missing_trial_numbers": [],
+    "table_copies_agree": 2,
+    "triplets_by_condition": [
+      36,
+      12,
+      12,
+      36
+    ],
+    "author_sequence_exact_match": true
+  },
+  {
+    "participant": 5,
+    "rows": 2132,
+    "finite_channels": 292,
+    "missed_trials": 0,
+    "missing_trial_numbers": [],
+    "table_copies_agree": 2,
+    "triplets_by_condition": [
+      36,
+      12,
+      12,
+      36
+    ],
+    "author_sequence_exact_match": true
+  },
+  {
+    "participant": 6,
+    "rows": 2132,
+    "finite_channels": 292,
+    "missed_trials": 0,
+    "missing_trial_numbers": [],
+    "table_copies_agree": 2,
+    "triplets_by_condition": [
+      36,
+      12,
+      12,
+      36
+    ],
+    "author_sequence_exact_match": true
+  },
+  {
+    "participant": 7,
+    "rows": 2130,
+    "finite_channels": 292,
+    "missed_trials": 0,
+    "missing_trial_numbers": [],
+    "table_copies_agree": 2,
+    "triplets_by_condition": [
+      36,
+      12,
+      12,
+      36
+    ],
+    "author_sequence_exact_match": true
+  },
+  {
+    "participant": 8,
+    "rows": 2134,
+    "finite_channels": 292,
+    "missed_trials": 0,
+    "missing_trial_numbers": [],
+    "table_copies_agree": 2,
+    "triplets_by_condition": [
+      36,
+      12,
+      12,
+      36
+    ],
+    "author_sequence_exact_match": true
+  },
+  {
+    "participant": 9,
+    "rows": 2130,
+    "finite_channels": 292,
+    "missed_trials": 0,
+    "missing_trial_numbers": [],
+    "table_copies_agree": 2,
+    "triplets_by_condition": [
+      36,
+      12,
+      12,
+      36
+    ],
+    "author_sequence_exact_match": true
+  },
+  {
+    "participant": 10,
+    "rows": 2132,
+    "finite_channels": 292,
+    "missed_trials": 0,
+    "missing_trial_numbers": [],
+    "table_copies_agree": 2,
+    "triplets_by_condition": [
+      36,
+      12,
+      12,
+      36
+    ],
+    "author_sequence_exact_match": true
+  },
+  {
+    "participant": 11,
+    "rows": 2136,
+    "finite_channels": 292,
+    "missed_trials": 0,
+    "missing_trial_numbers": [],
+    "table_copies_agree": 2,
+    "triplets_by_condition": [
+      36,
+      12,
+      12,
+      36
+    ],
+    "author_sequence_exact_match": true
+  },
+  {
+    "participant": 12,
+    "rows": 2130,
+    "finite_channels": 292,
+    "missed_trials": 0,
+    "missing_trial_numbers": [],
+    "table_copies_agree": 2,
+    "triplets_by_condition": [
+      36,
+      12,
+      12,
+      36
+    ],
+    "author_sequence_exact_match": true
+  },
+  {
+    "participant": 13,
+    "rows": 2130,
+    "finite_channels": 292,
+    "missed_trials": 0,
+    "missing_trial_numbers": [
+      1667,
+      1668
+    ],
+    "table_copies_agree": 2,
+    "triplets_by_condition": [
+      36,
+      12,
+      12,
+      36
+    ],
+    "author_sequence_exact_match": true
+  },
+  {
+    "participant": 14,
+    "rows": 2134,
+    "finite_channels": 292,
+    "missed_trials": 0,
+    "missing_trial_numbers": [],
+    "table_copies_agree": 2,
+    "triplets_by_condition": [
+      36,
+      12,
+      12,
+      36
+    ],
+    "author_sequence_exact_match": true
+  },
+  {
+    "participant": 15,
+    "rows": 2130,
+    "finite_channels": 292,
+    "missed_trials": 0,
+    "missing_trial_numbers": [],
+    "table_copies_agree": 2,
+    "triplets_by_condition": [
+      36,
+      12,
+      12,
+      36
+    ],
+    "author_sequence_exact_match": true
+  },
+  {
+    "participant": 16,
+    "rows": 2132,
+    "finite_channels": 292,
+    "missed_trials": 0,
+    "missing_trial_numbers": [],
+    "table_copies_agree": 2,
+    "triplets_by_condition": [
+      36,
+      12,
+      12,
+      36
+    ],
+    "author_sequence_exact_match": true
+  },
+  {
+    "participant": 17,
+    "rows": 2128,
+    "finite_channels": 292,
+    "missed_trials": 0,
+    "missing_trial_numbers": [],
+    "table_copies_agree": 2,
+    "triplets_by_condition": [
+      36,
+      12,
+      12,
+      36
+    ],
+    "author_sequence_exact_match": true
+  },
+  {
+    "participant": 18,
+    "rows": 2134,
+    "finite_channels": 292,
+    "missed_trials": 0,
+    "missing_trial_numbers": [],
+    "table_copies_agree": 2,
+    "triplets_by_condition": [
+      36,
+      12,
+      12,
+      36
+    ],
+    "author_sequence_exact_match": true
+  },
+  {
+    "participant": 19,
+    "rows": 2128,
+    "finite_channels": 292,
+    "missed_trials": 0,
+    "missing_trial_numbers": [],
+    "table_copies_agree": 2,
+    "triplets_by_condition": [
+      36,
+      12,
+      12,
+      36
+    ],
+    "author_sequence_exact_match": true
+  },
+  {
+    "participant": 20,
+    "rows": 2134,
+    "finite_channels": 292,
+    "missed_trials": 0,
+    "missing_trial_numbers": [],
+    "table_copies_agree": 2,
+    "triplets_by_condition": [
+      36,
+      12,
+      12,
+      36
+    ],
+    "author_sequence_exact_match": true
+  },
+  {
+    "participant": 21,
+    "rows": 2136,
+    "finite_channels": 292,
+    "missed_trials": 0,
+    "missing_trial_numbers": [],
+    "table_copies_agree": 2,
+    "triplets_by_condition": [
+      36,
+      12,
+      12,
+      36
+    ],
+    "author_sequence_exact_match": true
+  },
+  {
+    "participant": 22,
+    "rows": 2130,
+    "finite_channels": 292,
+    "missed_trials": 0,
+    "missing_trial_numbers": [],
+    "table_copies_agree": 2,
+    "triplets_by_condition": [
+      36,
+      12,
+      12,
+      36
+    ],
+    "author_sequence_exact_match": true
+  },
+  {
+    "participant": 23,
+    "rows": 2130,
+    "finite_channels": 292,
+    "missed_trials": 0,
+    "missing_trial_numbers": [],
+    "table_copies_agree": 2,
+    "triplets_by_condition": [
+      36,
+      12,
+      12,
+      36
+    ],
+    "author_sequence_exact_match": true
+  },
+  {
+    "participant": 24,
+    "rows": 2134,
+    "finite_channels": 292,
+    "missed_trials": 0,
+    "missing_trial_numbers": [],
+    "table_copies_agree": 2,
+    "triplets_by_condition": [
+      36,
+      12,
+      12,
+      36
+    ],
+    "author_sequence_exact_match": true
+  }
+]

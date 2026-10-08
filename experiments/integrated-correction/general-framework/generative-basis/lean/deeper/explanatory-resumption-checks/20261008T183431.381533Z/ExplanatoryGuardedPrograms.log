@@ -1,0 +1,14 @@
+'Generative.ExplanatoryGuardedPrograms.holds_either' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryGuardedPrograms.diamond_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryGuardedPrograms.compile_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryGuardedPrograms.word_program_exact' depends on axioms: [propext]
+'Generative.ExplanatoryGuardedPrograms.execution_has_native_trace' does not depend on any axioms
+'Generative.ExplanatoryGuardedPrograms.finite_program_endpoints' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryGuardedPrograms.program_image_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryGuardedPrograms.guarded_history_matches' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryGuardedPrograms.program_history_has_native_trace' does not depend on any axioms
+'Generative.ExplanatoryGuardedPrograms.branch_executes' depends on axioms: [propext, Quot.sound]

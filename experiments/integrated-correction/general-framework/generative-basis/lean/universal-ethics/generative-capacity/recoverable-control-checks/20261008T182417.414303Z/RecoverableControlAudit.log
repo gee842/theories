@@ -1,0 +1,167 @@
+'RecoverableControl.SameUntouched' depends on axioms: [propext]
+'RecoverableControl.exact_result_from_untouched' depends on axioms: [propext]
+'RecoverableControl.member_preserves_untouched' depends on axioms: [propext]
+'RecoverableControl.accounting' does not depend on any axioms
+'RecoverableControl.accounting_preserves_coverage' does not depend on any axioms
+'RecoverableControl.Pending' does not depend on any axioms
+'RecoverableControl.Device' does not depend on any axioms
+'RecoverableControl.Coherent' depends on axioms: [propext]
+'RecoverableControl.Safe' depends on axioms: [propext]
+'RecoverableControl.prepare' depends on axioms: [propext]
+'RecoverableControl.charge' does not depend on any axioms
+'RecoverableControl.tick' depends on axioms: [propext]
+'RecoverableControl.crash' does not depend on any axioms
+'RecoverableControl.use' depends on axioms: [propext]
+'RecoverableControl.pending_blocks_use' depends on axioms: [propext]
+'RecoverableControl.prepare_preserves_safety' depends on axioms: [propext, Quot.sound]
+'RecoverableControl.charge_keeps_structure' depends on axioms: [propext, Quot.sound]
+'RecoverableControl.charge_preserves_coherence' depends on axioms: [propext, Quot.sound]
+'RecoverableControl.tick_preserves_safety' depends on axioms: [propext, Quot.sound]
+'RecoverableControl.crash_preserves_safety' depends on axioms: [propext]
+'RecoverableControl.Event' does not depend on any axioms
+'RecoverableControl.step' depends on axioms: [propext]
+'RecoverableControl.SourceLaw' depends on axioms: [propext]
+'RecoverableControl.step_preserves_safety' depends on axioms: [propext, Quot.sound]
+'RecoverableControl.History' depends on axioms: [propext]
+'RecoverableControl.interrupted_history_preserves_safety' depends on axioms: [propext, Quot.sound]
+'RecoverableControl.published_history_to_current_certificate' depends on axioms: [propext, Quot.sound]
+'RecoverableControl.spent' does not depend on any axioms
+'RecoverableControl.clockTime' does not depend on any axioms
+'RecoverableControl.crash_retains_consumption' does not depend on any axioms
+'RecoverableControl.tick_consumes_one' depends on axioms: [propext, Quot.sound]
+'RecoverableControl.resumeSteps' depends on axioms: [propext]
+'RecoverableControl.funded_suffix_publishes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecoverableControl.crash_keeps_pending' does not depend on any axioms
+'RecoverableControl.run' depends on axioms: [propext]
+'RecoverableControl.initial' does not depend on any axioms
+'RecoverableControl.scan' does not depend on any axioms
+'RecoverableControl.noCrash' does not depend on any axioms
+'RecoverableControl.oneCrash' does not depend on any axioms
+'RecoverableControl.published' does not depend on any axioms
+'RecoverableControl.staged_change_then_actual_shutdown' depends on axioms: [propext]
+'RecoverableControl.interrupted_change_then_actual_shutdown' depends on axioms: [propext]
+'RecoverableControl.interruption_can_exhaust_execution_capacity' depends on axioms: [propext]
+'RecoverableControl.interruption_delay_can_miss_deadline' depends on axioms: [propext]
+'RecoverableControl.partiallyChanged' depends on axioms: [propext]
+'RecoverableControl.loseMarker' does not depend on any axioms
+'RecoverableControl.losing_pending_marker_exposes_false_certificate' depends on axioms: [propext]
+RecoverableControl.exact_result_from_untouched (p : List MediatedControl.Write) (a b : TemporalInspection.World)
+  (same : RecoverableControl.SameUntouched p a b) : MediatedControl.writes p a = MediatedControl.writes p b
+RecoverableControl.member_preserves_untouched (p : List MediatedControl.Write) (op : MediatedControl.Write)
+  (a b : TemporalInspection.World) (member : op ∈ p) (same : RecoverableControl.SameUntouched p a b) :
+  RecoverableControl.SameUntouched p (MediatedControl.oneWrite op a) b
+RecoverableControl.accounting_preserves_coverage (m : MediatedControl.Machine) (s : EffectiveCommand.State)
+  (known : TemporalInspection.Known m.tracked) : TemporalInspection.Known (RecoverableControl.accounting m s).tracked
+RecoverableControl.pending_blocks_use (r : RecoverableControl.Pending) (e : MediatedControl.Event) :
+  RecoverableControl.use e (RecoverableControl.Device.busy r) = none
+RecoverableControl.prepare_preserves_safety (p : MediatedControl.Packet) (d out : RecoverableControl.Device)
+  (safe : RecoverableControl.Safe d) (done : RecoverableControl.prepare p d = some out) : RecoverableControl.Safe out
+RecoverableControl.charge_keeps_structure (r paid : RecoverableControl.Pending)
+  (done : RecoverableControl.charge r = some paid) :
+  paid.origin = r.origin ∧
+    paid.program = r.program ∧
+      paid.actual = r.actual ∧
+        paid.todo = r.todo ∧
+          paid.target.tracked.actual = r.target.tracked.actual ∧
+            paid.target.tracked.possible = r.target.tracked.possible ∧
+              paid.target.tracked.installation.state.spent = r.target.tracked.installation.state.spent + 1 ∧
+                paid.target.tracked.installation.state.reserve + paid.target.tracked.installation.state.spent =
+                  r.target.tracked.installation.state.reserve + r.target.tracked.installation.state.spent
+RecoverableControl.charge_preserves_coherence (r paid : RecoverableControl.Pending)
+  (safe : RecoverableControl.Coherent r) (done : RecoverableControl.charge r = some paid) :
+  RecoverableControl.Coherent paid
+RecoverableControl.tick_preserves_safety (d out : RecoverableControl.Device) (safe : RecoverableControl.Safe d)
+  (done : RecoverableControl.tick d = some out) : RecoverableControl.Safe out
+RecoverableControl.crash_preserves_safety (d : RecoverableControl.Device) (delay : Nat)
+  (safe : RecoverableControl.Safe d) : RecoverableControl.Safe (RecoverableControl.crash delay d)
+RecoverableControl.step_preserves_safety (e : RecoverableControl.Event) (d out : RecoverableControl.Device)
+  (safe : RecoverableControl.Safe d) (source : RecoverableControl.SourceLaw e d)
+  (done : RecoverableControl.step e d = some out) : RecoverableControl.Safe out
+RecoverableControl.interrupted_history_preserves_safety {start finish : RecoverableControl.Device}
+  (h : RecoverableControl.History start finish) (safe : RecoverableControl.Safe start) : RecoverableControl.Safe finish
+RecoverableControl.published_history_to_current_certificate {start : RecoverableControl.Device}
+  {finish : MediatedControl.Machine} (h : RecoverableControl.History start (RecoverableControl.Device.ready finish))
+  (safe : RecoverableControl.Safe start) (supports : FaultTolerantCorrection.Domain → Bool) (P : Prop)
+  (faithful :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ (EvidenceQualifiedCorrection.describe finish.tracked.actual.model).roster →
+        CorrectionReconfiguration.fails
+              ((EvidenceQualifiedCorrection.describe finish.tracked.actual.model).vulnerability d)
+              (TemporalInspection.commandRoots finish.tracked.actual) =
+            false →
+          supports d = true → P)
+  (accepted :
+    FaultTolerantCorrection.certificate (EvidenceQualifiedCorrection.describe finish.tracked.actual.model).roster
+        (EvidenceQualifiedCorrection.pooled EvidenceQualifiedCorrection.describe
+          (TemporalInspection.models finish.tracked.possible))
+        supports =
+      true) :
+  P
+RecoverableControl.crash_retains_consumption (d : RecoverableControl.Device) (delay : Nat) :
+  RecoverableControl.spent (RecoverableControl.crash delay d) = RecoverableControl.spent d ∧
+    RecoverableControl.clockTime (RecoverableControl.crash delay d) = RecoverableControl.clockTime d + delay
+RecoverableControl.tick_consumes_one (d out : RecoverableControl.Device) (done : RecoverableControl.tick d = some out) :
+  RecoverableControl.spent out = RecoverableControl.spent d + 1
+RecoverableControl.funded_suffix_publishes (todo : List MediatedControl.Write) (r : RecoverableControl.Pending)
+  (remaining : r.todo = todo) (safe : RecoverableControl.Coherent r)
+  (fuel : todo.length + 1 ≤ r.target.tracked.installation.state.reserve)
+  (time : r.target.tracked.installation.state.time + todo.length + 1 ≤ r.target.tracked.installation.state.deadline) :
+  ∃ m,
+    RecoverableControl.resumeSteps (todo.length + 1) (RecoverableControl.Device.busy r) =
+        some (RecoverableControl.Device.ready m) ∧
+      TemporalInspection.Known m.tracked ∧
+        m.tracked.actual = r.target.tracked.actual ∧
+          m.tracked.installation.state.spent = r.target.tracked.installation.state.spent + todo.length + 1 ∧
+            m.tracked.installation.state.time = r.target.tracked.installation.state.time + todo.length + 1
+RecoverableControl.crash_keeps_pending (r : RecoverableControl.Pending) (delay : Nat) :
+  ∃ after,
+    RecoverableControl.crash delay (RecoverableControl.Device.busy r) = RecoverableControl.Device.busy after ∧
+      after.todo = r.program ∧ after.actual = r.actual
+RecoverableControl.staged_change_then_actual_shutdown :
+  have m :=
+    (RecoverableControl.published
+          (RecoverableControl.run RecoverableControl.noCrash (RecoverableControl.initial 22 22)).snd).getD
+      (MediatedControl.start { model := EvidenceQualifiedCorrection.Model.left, fault := some 0 } 0 0);
+  m.tracked.actual = { model := EvidenceQualifiedCorrection.Model.right, fault := some 2 } ∧
+    m.tracked.installation.state.completed = true ∧
+      m.tracked.installation.state.running = false ∧
+        m.tracked.installation.state.spent = 22 ∧ m.tracked.installation.state.reserve = 0
+RecoverableControl.interrupted_change_then_actual_shutdown :
+  have m :=
+    (RecoverableControl.published
+          (RecoverableControl.run RecoverableControl.oneCrash (RecoverableControl.initial 23 24)).snd).getD
+      (MediatedControl.start { model := EvidenceQualifiedCorrection.Model.left, fault := some 0 } 0 0);
+  m.tracked.actual = { model := EvidenceQualifiedCorrection.Model.right, fault := some 2 } ∧
+    m.tracked.installation.state.completed = true ∧
+      m.tracked.installation.state.running = false ∧
+        m.tracked.installation.state.spent = 23 ∧
+          m.tracked.installation.state.time = 24 ∧ m.tracked.installation.serial = 2 ∧ m.journal.length = 1
+RecoverableControl.interruption_can_exhaust_execution_capacity :
+  have m :=
+    (RecoverableControl.published
+          (RecoverableControl.run RecoverableControl.oneCrash (RecoverableControl.initial 22 24)).snd).getD
+      (MediatedControl.start { model := EvidenceQualifiedCorrection.Model.left, fault := some 0 } 0 0);
+  m.tracked.installation.state.completed = false ∧
+    m.tracked.installation.state.spent = 20 ∧ m.tracked.installation.state.reserve = 2
+RecoverableControl.interruption_delay_can_miss_deadline :
+  have m :=
+    (RecoverableControl.published
+          (RecoverableControl.run RecoverableControl.oneCrash (RecoverableControl.initial 23 23)).snd).getD
+      (MediatedControl.start { model := EvidenceQualifiedCorrection.Model.left, fault := some 0 } 0 0);
+  m.tracked.installation.state.completed = false ∧
+    m.tracked.installation.state.time = 21 ∧ m.tracked.installation.state.spent = 20
+RecoverableControl.losing_pending_marker_exposes_false_certificate :
+  have m :=
+    (RecoverableControl.published (RecoverableControl.loseMarker RecoverableControl.partiallyChanged)).getD
+      (MediatedControl.start { model := EvidenceQualifiedCorrection.Model.left, fault := some 0 } 0 0);
+  RecoverableControl.published RecoverableControl.partiallyChanged = none ∧
+    RecoverableControl.use MediatedControl.Event.command RecoverableControl.partiallyChanged = none ∧
+      ¬m.tracked.actual ∈ m.tracked.possible ∧
+        CorrectionReconfiguration.induced (EvidenceQualifiedCorrection.describe m.tracked.actual.model)
+              (TemporalInspection.roots m.tracked.actual) =
+            [2, 3] ∧
+          (FaultTolerantCorrection.certificate FaultTolerantCorrection.roster4
+              (EvidenceQualifiedCorrection.pooled EvidenceQualifiedCorrection.describe
+                (TemporalInspection.models m.tracked.possible))
+              fun d => decide (2 ≤ d)) =
+            true

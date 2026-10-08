@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F10",
-  "reviewed_at_utc": "2026-10-08T13:32:50.152026+00:00",
+  "reviewed_at_utc": "2026-10-08T19:33:55.799793+00:00",
   "claim": {
     "zh": "先前实际路由输出经逐项接合形成可分割链；保留内部边的两个片段经同一接合规律各自重建，任意有限轮次可在明确共同材料及支持预算内执行。",
     "en": "The previous actual routing output forms a cleavable chain through tokenwise attachment; its internally connected fragments rebuild under the same attachment law, with every finite number of rounds executable within explicit shared material/support budgets."
@@ -121,7 +121,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
       "role": "integration",
-      "sha256": "dae2a6100f0837c82476bfc1e39f14b478be57c13a1614de9c3bcb83647bcc61",
+      "sha256": "08738429cb8e1369eef571c7149f4e031103411c57c971165141b0319785ccf8",
       "declarations": []
     }
   ],
@@ -135,8 +135,8 @@
     }
   ],
   "next_delta": {
-    "zh": "当前固定规律下的结构接续完成；下一连接是改变接合／断裂关系的可遗传差异怎样形成，并改变重复接续与选择。",
-    "en": "Structural continuation under the current fixed law is complete. Next is formation of heritable differences in attachment/cleavage relations and their effects on repeated continuation and selection."
+    "zh": "固定规律重复与附加模板复制已完成，formed-copying-registration 进一步接通局部配准形成；物理辨别、更新供给与共同分配仍待说明。",
+    "en": "Fixed-law recurrence and added template copying are complete; formed-copying-registration further joins local registration formation, leaving physical discrimination, renewed supply and shared allocation to explain."
   },
   "history": [
     {
@@ -146,6 +146,18 @@
     {
       "zh": "本轮新增31项定理／47项声明审计，373项闭包审计中326项继承声明另计；旧成果迁移不计新定理。",
       "en": "This continuation adds 31 theorems / 47 declaration audits; 326 inherited declarations are separate within the 373-audit closure. Migration adds no theorem."
+    },
+    {
+      "zh": "2026-10-09：审读同一研究新增模板复制段；原证明和结论保持，端点适配及额外复制前提分列。",
+      "en": "2026-10-09: reviewed the added template-copying section in the same study; original proofs and claims remain, with endpoint correspondence and added copying premises separated."
+    },
+    {
+      "zh": "2026-10-09：重读并接入同一研究的配准形成段；旧数学主张及原回执不变，修正旧比较段中完美复制前提的指称。",
+      "en": "2026-10-09: reconciles the same study’s registration-formation continuation; prior mathematics and receipts remain unchanged, and the old comparison clarifies that perfect copying was this model’s premise."
+    },
+    {
+      "zh": "2026-10-09：已阅读同一研究新增的材料编辑连接；本记录的旧数学及原回执不变，旧无编辑范围不因新增操作而撤销。",
+      "en": "2026-10-09: reconciles the same study’s added material-editing connection; prior mathematics and receipts remain unchanged, and adding an editing operation does not withdraw the old no-editing scope."
     }
   ]
 }

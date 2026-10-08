@@ -1,0 +1,59 @@
+'GrownFragmentation.Edge' does not depend on any axioms
+'GrownFragmentation.Growing' does not depend on any axioms
+'GrownFragmentation.enabled' does not depend on any axioms
+'GrownFragmentation.birth' does not depend on any axioms
+'GrownFragmentation.develop' does not depend on any axioms
+'GrownFragmentation.legal' does not depend on any axioms
+'GrownFragmentation.enabled_birth' depends on axioms: [propext]
+'GrownFragmentation.actual_development' depends on axioms: [propext, Quot.sound]
+'GrownFragmentation.development_accounts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GrownFragmentation.daughter_differentiates' depends on axioms: [propext]
+'GrownFragmentation.initial' does not depend on any axioms
+'GrownFragmentation.chainWord' does not depend on any axioms
+'GrownFragmentation.branchedWord' does not depend on any axioms
+'GrownFragmentation.chain' does not depend on any axioms
+'GrownFragmentation.branched' does not depend on any axioms
+'GrownFragmentation.histories_legal' does not depend on any axioms
+'GrownFragmentation.grown_observations' does not depend on any axioms
+'GrownFragmentation.neighbors' does not depend on any axioms
+'GrownFragmentation.neighbor_connected' depends on axioms: [propext, Quot.sound]
+'GrownFragmentation.flood' depends on axioms: [propext, Quot.sound]
+'GrownFragmentation.flood_sound' depends on axioms: [propext, Quot.sound]
+'GrownFragmentation.component' depends on axioms: [propext, Quot.sound]
+'GrownFragmentation.component_sound' depends on axioms: [propext, Quot.sound]
+'GrownFragmentation.closed' does not depend on any axioms
+'GrownFragmentation.connected_same_side' depends on axioms: [propext, Quot.sound]
+'GrownFragmentation.certified_component' depends on axioms: [propext, Quot.sound]
+'GrownFragmentation.cutEdges' does not depend on any axioms
+'GrownFragmentation.cut' depends on axioms: [propext, Quot.sound]
+'GrownFragmentation.cut_accounts' depends on axioms: [propext, Quot.sound]
+'GrownFragmentation.cutComponents' depends on axioms: [propext, Quot.sound]
+'GrownFragmentation.cutCertificate' depends on axioms: [propext, Quot.sound]
+'GrownFragmentation.certificate_exact_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GrownFragmentation.every_tree_cut_certified' depends on axioms: [propext, Quot.sound]
+'GrownFragmentation.central_cut_pools' depends on axioms: [propext, Quot.sound]
+'GrownFragmentation.only_equal_tree_cuts' depends on axioms: [propext, Quot.sound]
+'GrownFragmentation.seeds' depends on axioms: [propext, Quot.sound]
+'GrownFragmentation.joined' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GrownFragmentation.cutReturn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GrownFragmentation.joined_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GrownFragmentation.central_seed_properties' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GrownFragmentation.countJoined' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GrownFragmentation.joined_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GrownFragmentation.countCutReturn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GrownFragmentation.cut_return_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GrownFragmentation.all_cut_returns' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GrownFragmentation.central_returns' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GrownFragmentation.meanCutReturn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GrownFragmentation.uniform_cut_returns' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GrownFragmentation.fragmentation_changes_prepared_return' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GrownFragmentation.oldestReturn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GrownFragmentation.oldest_cut_reverses_ranking' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GrownFragmentation.parentSummary' does not depend on any axioms
+'GrownFragmentation.matched_parent_summaries' does not depend on any axioms
+'GrownFragmentation.no_parent_summary_predictor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GrownFragmentation.reinforced' does not depend on any axioms
+'GrownFragmentation.reinforcement_is_actual' depends on axioms: [propext, Quot.sound]
+'GrownFragmentation.bypass_survives_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GrownFragmentation.bypass_really_connects' depends on axioms: [propext, Quot.sound]
+'GrownFragmentation.cut_spends_without_fragmenting' depends on axioms: [propext, Quot.sound]

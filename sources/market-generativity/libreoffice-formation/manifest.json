@@ -1,0 +1,82 @@
+{
+  "scope": "Seven primary public statements retained as retrieved HTML; historical article bodies are evidence, current navigation and comments are not. No adaptation of original bytes. Project statements retain authorship and are not independent audits.",
+  "sources": [
+    {
+      "id": "launch",
+      "publication_date": "2010-09-28",
+      "requested_url": "https://listarchives.documentfoundation.org/www/announce/msg00000.html",
+      "final_url": "https://listarchives.documentfoundation.org/www/announce/msg00000.html",
+      "file": "2010-09-28-launch.html",
+      "sha256": "504944b79a3cb7fd2df45161f2034a8627233577d0d1707f742b1c003909b99a",
+      "bytes": 15407,
+      "content_type": "text/html",
+      "retrieved_at_utc": "2026-10-08T18:36:32.634607+00:00"
+    },
+    {
+      "id": "first-stable",
+      "publication_date": "2011-01-25",
+      "requested_url": "https://blog.documentfoundation.org/blog/2011/01/25/the-document-foundation-launches-libreoffice-3-3/",
+      "final_url": "https://blog.documentfoundation.org/blog/2011/01/25/the-document-foundation-launches-libreoffice-3-3/",
+      "file": "2011-01-25-first-stable.html",
+      "sha256": "3c3a84e4d311db06c28516cb659b4de6af9f49e1b2dd6be941f7693787d9ffc5",
+      "bytes": 187265,
+      "content_type": "text/html; charset=UTF-8",
+      "retrieved_at_utc": "2026-10-08T18:36:32.955189+00:00"
+    },
+    {
+      "id": "endowment",
+      "publication_date": "2011-02-25",
+      "requested_url": "https://blog.documentfoundation.org/blog/2011/02/25/thousands-of-donors-contribute-e50000-in-just-eight-days-to-the-document-foundation/",
+      "final_url": "https://blog.documentfoundation.org/blog/2011/02/25/thousands-of-donors-contribute-e50000-in-just-eight-days-to-the-document-foundation/",
+      "file": "2011-02-25-endowment.html",
+      "sha256": "753b8ddeae8279cd5cb8da63c85eee5e924bea44d720c1ac8ef6f81ffe1ec3ab",
+      "bytes": 89341,
+      "content_type": "text/html; charset=UTF-8",
+      "retrieved_at_utc": "2026-10-08T18:36:32.832992+00:00"
+    },
+    {
+      "id": "continued-release",
+      "publication_date": "2011-03-22",
+      "requested_url": "https://blog.documentfoundation.org/blog/2011/03/22/libreoffice-3-3-2-is-now-available/",
+      "final_url": "https://blog.documentfoundation.org/blog/2011/03/22/libreoffice-3-3-2-is-now-available/",
+      "file": "2011-03-22-continued-release.html",
+      "sha256": "59617d7cb1aefb29b7204e65fa98358a6d9bff71b6f646530bb08b7b959d15f3",
+      "bytes": 120363,
+      "content_type": "text/html; charset=UTF-8",
+      "retrieved_at_utc": "2026-10-08T18:36:32.936988+00:00"
+    },
+    {
+      "id": "distribution",
+      "publication_date": "2011-03-31",
+      "requested_url": "https://lists.ubuntu.com/archives/ubuntu-announce/2011-March/000143.html",
+      "final_url": "https://lists.ubuntu.com/archives/ubuntu-announce/2011-March/000143.html",
+      "file": "2011-03-31-ubuntu-beta.html",
+      "sha256": "450e528c0d5dfa9d2217af65eaea54aa6bb630fdcbc57f063b876557bf2b1311",
+      "bytes": 14814,
+      "content_type": "text/html",
+      "retrieved_at_utc": "2026-10-08T18:36:33.621053+00:00"
+    },
+    {
+      "id": "incorporation",
+      "publication_date": "2012-02-20",
+      "requested_url": "https://blog.documentfoundation.org/blog/2012/02/20/the-document-foundation-officially-incorporated-in-berlin-germany/",
+      "final_url": "https://blog.documentfoundation.org/blog/2012/02/20/the-document-foundation-officially-incorporated-in-berlin-germany/",
+      "file": "2012-02-20-incorporation.html",
+      "sha256": "68bac83fbee628eb9dce51bd600b13e72562c9b2e3104770fc36022efe525c74",
+      "bytes": 106428,
+      "content_type": "text/html; charset=UTF-8",
+      "retrieved_at_utc": "2026-10-08T18:36:34.071559+00:00"
+    },
+    {
+      "id": "other-continuation",
+      "publication_date": "2012-10-18",
+      "requested_url": "https://news.apache.org/foundation/entry/the_apache_software_foundation_announces35",
+      "final_url": "https://news.apache.org/foundation/entry/the_apache_software_foundation_announces35",
+      "file": "2012-10-apache-continuation.html",
+      "sha256": "48b85c0608701a560cfa3e48bf83e4be59e488c6ee54abbbe9d6cf53faa6bb69",
+      "bytes": 163810,
+      "content_type": "text/html; charset=UTF-8",
+      "retrieved_at_utc": "2026-10-08T18:36:35.433646+00:00"
+    }
+  ]
+}

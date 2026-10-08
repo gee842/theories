@@ -1,0 +1,462 @@
+Finalized subscription plan for launch (details inside) (https://www.reddit.com/r/narwhalapp/comments/174206m/finalized_subscription_plan_for_launch_details/)
+citeturn70reddit0 [wordlim: 200] Published: 3.0 years ago;     [Monday October 09 2023] [+9 votes] ... Also, and maybe saying this while using Narwhal while in the Narwhal subreddit is counter-intuitive, but Narwhal isn't the only Reddit app still standing either.
+[Monday October 09 2023] [+350 votes]
+Hey all,
+
+Thanks to everyone who responded to the subscription survey in the app. It has been really valuable.
+
+Narwhal is going to start out with a single subscription plan for $3.99/month. No one has to even think about what an API is let alone what API calls they are making. For less than the price of Reddit Premium, everyone will get an ad-free, privacy-focused Narwhal that I will continuously improve over time. My goal is make the best Reddit app possible and I will only be able to do that with all of your feedback.
+
+Let me know your thoughts!
+
+### Frequently Asked Questions
+
+**Why do you have a subscription?**
+
+Reddit is now charging a substantial fee to use the API to power Narwhal. This fee will be tens of thousands if not hundreds of thousands a month depending on how many people subscribe. The only goal of this subscription is to cover the costs of using the API
+
+**Can I buy a lifetime unlock?**
+
+Unfortunately, because the API has a monthly cost to Narwhal, a lifetime unlock won't be possible.
+
+**Can I pay annually?**
+
+Maybe in the future, but for now, we are a bit worried about Reddit increasing the price of the API. To be safe, we are going to keep it a monthly subscription
+
+[Monday October 09 2023] [+60 votes]
+Love it! You'll be getting a visit to the tip jar from me when it's available!
+
+  [Monday October 09 2023] [+47 votes]
+  Tip jar is in the app right now under Settings ;)
+
+    [Monday October 09 2023] [+32 votes]
+    Beers on me. 🍻
+
+      [Monday October 09 2023] [+28 votes]
+      You are too awesome, thanks so much <3
+
+        [Tuesday October 10 2023] [+5 votes]
+        Cervesa y tacos go together, ye?
+
+    [Tuesday October 10 2023] [+2 votes]
+    Does that work in TestFlight? The message says it’s for test purposes only and we won’t be charged.
+
+      [Tuesday October 10 2023] [+10 votes]
+      No, it only works if you have the App Store version installed
+
+        [Sunday October 15 2023] [+2 votes]
+        Thank you so much!
+        Can you put back the API call visibility in Settings  - I tuned my settings to cut down my usage, and want to continue to monitor it.
+
+[Monday October 09 2023] [+186 votes]
+This sounds like a very generous plan. I might actually subscribe to support even though I selected will not subscribe on the survey. I like the work you are doing, but I strongly disagree with how Reddit is handling things
+
+  [Monday October 09 2023] [+129 votes]
+  You and I both agree on how badly Reddit is handling things. But, the only thing I can do it try to make the best possible product given the circumstances. I really appreciate your support!
+
+    [Monday October 09 2023] [+66 votes]
+    It’s impressive that you’ve decided to work on this despite the challenges and not just throw in the towel. I am hopeful that this is going to work out; this app is far and away a better way to Reddit and I am here for it.
+
+      [Monday October 09 2023] [+62 votes]
+      I’m still working on it for the same reason I started: I wanted to make the best Reddit app for myself. Thanks for your support!
+
+        [Monday October 09 2023] [+19 votes]
+        All the customization means it can be the best Reddit app for anyone.         Somehow, you made it work. There was no excuse and I view him as poorly as I view Reddit :(
+
+    [Saturday October 21 2023] [+3 votes]
+    Just continue making this app more like Apollo but with the subscription model and I’ll be a happy camper!
+
+[Monday October 09 2023] [+11 votes]
+Thanks, but no thanks. I just don’t use Reddit enough to justify that cost per month.
+I appreciate all the effort you’ve put into this app and the work you are doing to make a third party app work, but I can’t justify the cost for my usage given my low API calls (~1500-2000 per month).
+The price point is reasonable for heavier user than me, great for power users, but that’s not what I am. I’m sad to leave narwhal as I’ve used it since Alien Blue was no longer an option, but wish you nothing but good luck and hope you get many many subscribers and are never out of pocket.
+It’s been a good run since N1 and I’ve got more than my moneys worth out of the old pro upgrade.
+
+  [Tuesday October 10 2023] [+9 votes]
+  [Monday October 09 2023] [+68 votes]
+  I am probably going to remove it, because I really think this can work and I don't want people to even have to think about what an API is.
+
+    [Monday October 09 2023] [+47 votes]
+    What about adding it as a semi-hidden setting. Something you need to go menu diving to see, that way most people won’t even know/care.
+    For me, I’d like to keep my API usage somewhat lower anyway, just out of respect and because my API usage would’ve fallen in the 5-10k tier.
+    Edit: also curiosity lol
+
+      [Monday October 09 2023] [+26 votes]
+      Or hide the menu, but keep the counter running in the background. Hopefully you’ll never need to unhide it but if there comes a time where you need to switch to a per api call plan, then the data is just there and ready.
+
+        [Monday October 09 2023] [+44 votes]
+        Yea this is likely what I will do. Keep recording but hopefully never need it
+
+          [Monday October 09 2023] [+54 votes]
+          the transparency you're providing right now is great. 
+  [Tuesday October 10 2023] [+5 votes]
+  What things did you do to make it similar to Apollo?
+
+    [Tuesday October 10 2023] [+16 votes]
+    Basically customized the bottom menu to be the same, and customized the posts in the feed to be similar to the compact view of Apollo.
+    Edit: here is a screenshot:
+    URL
+
+      [Tuesday October 10 2023] [+2 votes]
+      Can you screenshot your settings?
+
+        [Tuesday October 10 2023] [+15 votes]
+        Hey there, this should cover everything I think. I additionally copied the default theme to adapt the fonts (brighter) and adapted the shortcuts in the bottom and top.
+        URL 
+        URL 
+        URL 
+        URL
+
+[Monday October 09 2023] [+58 votes]
+I will definitely be subscribing. Thank you for giving us an option to use something other than the unforgivable official Reddit app.
+
+  [Monday October 09 2023] [+17 votes]
+  Thanks for your support!!       I’m hitting around 12k average so I would have been happy paying for the $6 or $7 plan, whatever it was, since reddit is my main social app
+
+[Monday October 09 2023] [+51 votes]
+I really appreciate how thoughtful you’ve been throughout this whole mess. My usage would’ve put me in an awkward-ish spot (6,000 a month) between the lowest tiers and I was a bit bummed I’d missed the lowest one. I was very conflicted when voting too, as I’d obviously prefer to pay less, but was worried it’d turn out to be a burden for you too. Here’s hoping $3.99 works!
+
+  [Tuesday October 10 2023] [+24 votes]
+  Thanks for sticking with me this whole time
+
+[Monday October 09 2023] [+13 votes]
+Does $3.99 include any payments that will go directly to you for making and maintaining the app? I am an Apollo switcher who is really enjoying Narwhal and would like to support you for your efforts.
+If $3.99 doesn’t include anything for you then please add a plan that includes this $3.99 but additional dollars can be pledged to you.
+--------------------------------------------------------------------------------
+Update on Narwhal w/ the upcoming Reddit API changes (TLDR; trying to stay alive) (https://www.reddit.com/r/getnarwhal/comments/144pdom/update_on_narwhal_w_the_upcoming_reddit_api/)
+citeturn70reddit1 [wordlim: 200] Published: 3.3 years ago; [Thursday June 08 2023] [+805 votes] ... I would love some more time from the Reddit team to get ready for the transition. ...     Yup, Narwhal is great software, but Reddit is worth paying a monthly fee to use 3rd party software.
+[Thursday June 08 2023] [+805 votes]
+As I'm sure many of you have seen today, Apollo, Sync, Reddit is Fun, Relay, ReddPlanet, and more have announced they will be shutting down on June 30th. You may be wondering what will be happening to Narwhal.
+
+It is basically a meme at this point, but I have been working on Narwhal 2 for quite a while now. I would still very much like to release this app to the world so that others can use it. In order to do this though, the app would have to be offered as a paid subscription only, otherwise we couldn't cover the costs of using the Reddit API. Even with a subscription, there are still a couple things I am hoping to work out with Reddit in order to continue Narwhal:
+
+1. Cost of using the Reddit API. We would just like to reduce the rate of the API in order to make it more tenable for you all to pay a monthly subscription. The lower the cost of the API, the lower the subscription will be for all of you to use Narwhal. I am still hoping to work on this point with the Reddit team.
+--------------------------------------------------------------------------------
+Narwhal 2 is finally here! Subscription details inside (https://www.reddit.com/r/narwhalapp/comments/16tqo4f/narwhal_2_is_finally_here_subscription_details/)
+citeturn70reddit2 [wordlim: 200] Published: 3.0 years ago;       [Wednesday September 27 2023] [+16 votes] ... And the $3/month subscription cost doesn’t feel out of line for a much nicer experience over Reddit’s own app. ... I do hope more people realize they won’t need Reddit premium anymore for the no ads if they use narwhal
+[Wednesday September 27 2023] [+324 votes]
+Narwhal 2 is finally here! We have been working on this for years 🙃 and it is finally ready to see the light of day. We did our best to keep the "essence" of Narwhal 1 while modernizing the design and improving efficiency.
+
+Unfortunately, Narwhal 2 will require subscriptions in a couple weeks. This is due to the Reddit API cost. We hope that after you use Narwhal 2 for a couple weeks you will realize that it is worth paying for. We will be continuing to make Narwhal 2 the best app it can be. We have a laundry list of features to implement and you can vote on features here: URL
+
+### Subscription Details
+
+I made changes to the subscription plans here: URL?
+
+### Why are the subscriptions so expensive?
+
+The reason these subscriptions are so expensive is because Narwhal is now going to be incurring a large amount of costs. Reddit is charging for the API, Apple will be charging us for subscription fees, server costs for monitoring API usage and more.
+
+We are intentionally starting out conservative with pricing so that we don't dig ourselves into a hole. If we are able to lower costs without going bankrupt, we will do so. We hope that you think Narwhal is worth it, but if not, thanks for trying out Narwhal!
+
+Let me know if you have any questions and I'll be happy to answer
+
+[Wednesday September 27 2023] [+49 votes]
+Not sure if this has been brought up before but is it possible to have a website to sign up for the subscriptions so that you don’t have to pay Apple like Google, Disney, Netflix, etc. do? Keep the subscription options though the app but offer lower priced subscription though a separate website to reduce cost?
+
+  [Wednesday September 27 2023] [+46 votes]
+  I need to look into this. I don't have time to do that in the next couple weeks, but if I can get away with that with Apple, I'll definitely do it
+
+    [Wednesday September 27 2023] [+10 votes]
+    Yes please look into this. I will prefer you getting the 30% cut instead of Apple.
+
+      [Wednesday September 27 2023] [+16 votes]
+
+[Wednesday September 27 2023] [+6 votes]
+I would very much consider getting a subscription IF I have the ability to configure which API features I care about in order to min-max the amount of API calls I make. For example, disabling or buffering auto-search results which can blow up API requests. Or disabling comment loading unless I explicity want to see them. Maybe removing the ability to upvote and downvote posts. And disabling mail. There’s a lot of potential here and it would be really nice to have a dedicated settings section to fine-tune this experience.
+Also, as many people suggested, further backend optimizations on caching/batch calls could be nifty.
+
+  [Wednesday September 27 2023] [+9 votes]
+  Yes, I'm looking into how to fix the subreddit search API to reduce usage. I'm also going to not load comments when you have the do not show comments options on. Then it will only load once you open them.
+
+    [Wednesday September 27 2023] [+3 votes]
+    Are there any plans to let users who primarily lurk/don’t engage in conversations to “simplify” the app functionality?
+
+[Wednesday September 27 2023] [+29 votes]
+I understand all the reasons why Christian did not do this, but I wish he would have implemented this for Apollo. Narwahl is great and I've been loving it but Apollo had my heart.
+Still better than paying $6.99 for the reddit app with no ads.
+
+  [Wednesday September 27 2023] [+43 votes]
+  Well, I hope that over time Narwhal can live up to what you want. Please always give me as much feedback as possible so I can make the best app possible.
+
+    [Wednesday September 27 2023] [+7 votes]
+    One very very small issue I've ran into is that the swipe gesture to save/unsave/upvote/downvote on posts are a little sensitive and react too quickly while I'm just scrolling. Could be a user error though.
+
+      [Wednesday September 27 2023] [+4 votes]
+      I’m using the standard iOS swipe gesture but I’ll take a look at this
+
+    [Wednesday September 27 2023] [+12 votes]
+    It’s looking really good. I had been using Apollo since release and have been suffering with the Reddit app the past month. Overall really good UI and features seem to comparable.
+    Good for you for trying. Hopefully Reddit doesn’t change things up too much. Already sucks to have to care about your interactions all the time, but anything beats the trash Reddit app.
+    Prices seem fair for everyone.
+
+      [Wednesday September 27 2023] [+8 votes]
+      Thanks for trying out Narwhal!
+
+        [Saturday September 30 2023] [+3 votes]
+        I really appreciate all your work. Fellow ex Apollo user here, I tried the Reddit app after Apollo shut down and just could not use it at all. Took me a while to try all the different clients that survived and Narwhal stuck to me. This new version seems to be near perfect for a casual user like me. And the $3/month subscription cost doesn’t feel out of line for a much nicer experience over Reddit’s own app. Will definitely subscribe
+
+    [Thursday September 28 2023] [+2 votes]
+    For some reason this link does not work.
+    URL
+    Using other apps (third party and the Reddit official app) when you click the link it should auto compose a private message with prefilled text.
+I’m very impressed with this application. It added a couple features I wanted like larger text & read on scroll. The menu system is far easier to manage and laid out well.
+Blows the Reddit app away as far as customization goes.
+
+  [Wednesday September 27 2023] [+10 votes]
+  Thanks, I'm glad you think so :)
+
+    [Thursday September 28 2023] [+10 votes]
+    Question: I have an ipad mini but like using it as an oversized iphone in vertical mode. Is there anyway to have the narwhal app work like that without the 2 columns like the phone app?
+
+      [Thursday September 28 2023] [+10 votes]
+      Yes I’ll have a setting for this
+
+        [Thursday September 28 2023] [+3 votes]
+        Thank you so much!
+
+  [Thursday September 28 2023] [+3 votes]
+  Yeah, it's smooth and polished and clean and I LOVE the themes.
+
+[Wednesday September 27 2023] [+70 votes]
+Guess I’m done upvoting stuff 😂
+
+  [Thursday September 28 2023] [+5 votes]
+  you get anywhere from ~1600 to 2500 calls per dollar on the plans, so is an upvote worth 1/20th of a cent to you?
+I don’t use Reddit much on weekends so hopefully it evens out
+
+[Wednesday September 27 2023] [+2 votes]
+I think I got automatically updated from Narwhal 1 to 2 today. When I look at my api usage it only shows my data from today, which is almost nothing since I just recently got updated. Is there any way to see my api usage from before today, when I was still on narwhal 1?
+
+  [Wednesday September 27 2023] [+3 votes]
+  The API usage tracking was only added in N2, so no.
+  But subscriptions will only be required in a couple of weeks so you still have time to generate usage data in N2 and gauge what tier you'll fall in to.
+
+    [Wednesday September 27 2023] [+2 votes]
+    Thank you!
+
+[Wednesday September 27 2023] [+4 votes]
+Are the API usage numbers supposed to sync across devices? For some reason I am seeing different numbers on my iPhone and iPad. If I combine them, looks like I’m sitting at 14k a month.
+
+  [Wednesday September 27 2023] [+6 votes]
+  Not currently no. The numbers are per device
+
+[Wednesday September 27 2023] [+3 votes]
+How can we see how many API calls we are making?
+
+  [Wednesday September 27 2023] [+4 votes]
+  Settings > API Usage
+
+[Wednesday September 27 2023] [+10 votes]
+It finally arrived! Congrats on the launch! I absolutely think you achieved the goal of modernizing Narwhal while retaining the feel.
+
+  [Wednesday September 27 2023] [+9 votes]
+  Thanks!!
+
+    [Thursday September 28 2023] [+3 votes]
+    Yeah loving the app, however it was slightly jarring to see a new interface after YEARS of using the same settings on narwhal 1.
+    I’ve been working around with the settings back and forth for around 40 mins trying to make it look exactly the same but doesn’t seem to be a 1:1.
+    Is there a way the update can pull all my old settings/customizations and apply them universally? Getting a slightly uncanny valley feeling atm
+
+[Wednesday September 27 2023] [+3 votes]
+Guys, you did an outstanding job. Finally, I can say I don't miss Apollo anymore.
+
+  [Wednesday September 27 2023] [+3 votes]
+  Thanks for your support!
+
+[Wednesday September 27 2023] [+3 votes]
+I may be dumb here. But this continues to be ad free after the beta correct? Like these fees include ad free?
+
+  [Wednesday September 27 2023] [+5 votes]
+  Yea narwhal will not have ads
+
+  [Wednesday September 27 2023] [+3 votes]
+  Third party apps aren't allowed to show ads anymore, so it doesn't need to be part of the fees :p
+
+[Wednesday September 27 2023] [+3 votes]
+Guess, if there would be a plan for 10k api calls, for let’s say 4 USD a month, it will cover most people here.
+Will we get a prompt that subscription starts from today or will there be a update restricting free access?
+
+[Wednesday September 27 2023] [+5 votes]
+Real talk. If I install the version from the App Store over the beta, will I keep my settings? I want to switch over but don’t feel like losing everything. TIA!
+
+  [Wednesday September 27 2023] [+6 votes]
+  Yes, just don't ever delete the app. Only ever hit the install button from app store or testflight and it will overwrite the app and keep the settings
+
+  [Wednesday September 27 2023] [+23 votes]
+  Yes I’ve applied to that. I might get to 1 million in revenue (not profit as that money will be going to Reddit) sooner than later. My bill for current usage of Narwhal would be above 1 million per year so we will see how many people subscribe
+
+[Wednesday September 27 2023] [+8 votes]
+Small request, but it looks like average API usage includes today, which means it will start low each morning and increase throughout the day. Would it be possible to just ignore the current day’s requests when computing that?
+
+  [Wednesday September 27 2023] [+6 votes]
+  Yes that’s a good suggestion
+
+[Wednesday September 27 2023] [+3 votes]
+Really is a no brainer considering i’d already pay for reddit premium to avoid the reddit app ads and the native app just ain’t cuttin it feature wise. Easy purchase. should def have something between the $3 and $7 tier tho.
+
+  [Wednesday September 27 2023] [+4 votes]
+  Thanks! I do hope more people realize they won’t need Reddit premium anymore for the no ads if they use narwhal
+
+[Wednesday September 27 2023] [+2 votes]
+Love the update to the app and will probably end up subscribing to the active tier. Wish there was a way to subscribe outside the apple ecosystem so those vultures weren’t stealing 30% for nothing,
+
+[Wednesday September 27 2023] [+2 votes]
+Power or Ultra. Just in case. Makes it easier knowing the extra goes to the developer. I’m a fairly heavy Reddit user, took me a while to figure out Narwhal, since moving from Apollo, but am very happy. Keep up the good work! 👍🏻
+
+[Wednesday September 27 2023] [+2 votes]
+This is a such a great app. I’m more than happy to pay for it.
+
+[Wednesday September 27 2023] [+3 votes]
+Can we still use the original Narwhal?
+
+  [Wednesday September 27 2023] [+8 votes]
+  No, it no longer exists
+
+    [Wednesday September 27 2023] [+2 votes]
+    I’m using it right now.
+
+      [Wednesday September 27 2023] [+7 votes]
+      Correct, but it is no longer available for download on the App Store, and it will stop working in a couple weeks.
+
+--------------------------------------------------------------------------------
+Narwhal is not going anywhere! Subscriptions and Narwhal 2 coming (https://www.reddit.com/r/getnarwhal/comments/14kt9wj/narwhal_is_not_going_anywhere_subscriptions_and/)
+citeturn70reddit3 [wordlim: 200] Published: 3.3 years ago; [Tuesday June 27 2023] [+1209 votes] ... I've been talking with Reddit a lot about the API changes and what it will mean for Narwhal. ...     Which would be another level of stupidity from Reddit’s part, because that is exactly what other apps’ developers have been asking for and did not get.
+[Tuesday June 27 2023] [+1209 votes]
+Hey all, I want to give you an update on what is happening with Narwhal. I've been talking with Reddit a lot about the API changes and what it will mean for Narwhal.
+
+Narwhal is not going anywhere on July 1st. It will continue to operate as it has for many years (except it will not have ads anymore). Over the next few months, I am going to be adding subscriptions into Narwhal 2. The subscriptions will be there to cover the cost of using the Reddit API. I am still figuring out what to do for heavy power users, but there may be a base plan which includes X number of API requests/month and you can top up your balance with another purchase. The subscription will likely be in the $4-$7 range to start. It may change based on total usage of the app (either up or down) to cover the costs of using the reddit API.
+
+Yes, this means Narwhal 2 is finally going to see the light of day. Is it perfect? No. Is it as finished as I wanted it to be before I released it? No. But it makes the most sense to put subscriptions in Narwhal 2 instead of the current app.
+
+TLDR; Narwhal is not going anywhere on July 1st. Subscriptions will be coming over the next few months.
+
+Ask me anything in the comments and I'll do my best to answer! Also, let me know if this is something that you actually want me to do. Are you willing to subscribe to continue using Narwhal?
+
+Thank you everyone!
+
+[Tuesday June 27 2023] [+49 votes]
+I will absolutely be willing to subscribe! Thanks for the great app. I’m looking forward to Narwhal 2
+
+[Tuesday June 27 2023] [+43 votes]
+There was a different comment/post here, but it has been edited.
+Reddit chose to betray years of free work put from users, mods, and developers. They will not stop driving this website into shit until every feature is monetized, predatory, and cancerous.
+Use PowerDeleteSuite to remove your value to reddit and stop financing these dark patterns.
+P.S. fuck u/spez
+
+  [Tuesday June 27 2023] [+59 votes]
+  Sexually explicit content will be removed in July. I've given them my feedback on it and I hope there is a way to bring it back in the future.
+
+[Tuesday June 27 2023] [+62 votes]
+Well done on soldiering on!
+I am a little confused what happens as of July 1st though if subscriptions aren’t ready yet, are you planning to wear the usage costs until you have the subscriptions ready? That seems risky if word gets out to all the Apollo orphans looking for options that aren’t the reddit app.
+
+  [Wednesday June 28 2023] [+52 votes]
+  He's likely been in talks with Reddit and they came to the agreement to postpone API fees for him until Narwhal 2 is ready.
+
+    [Wednesday June 28 2023] [+61 votes]
+    Which would be another level of stupidity from Reddit’s part, because that is exactly what other apps’ developers have been asking for and did not get. It could’ve prevented this entire protest if Reddit just gave a grace period to everyone.
+
+      [Wednesday June 28 2023] [+40 votes]
+      Yeah, Apollo dev tried many times to talk. But spez straight up publicly said he doesn't want to work with Apollo
+
+        [Wednesday June 28 2023] [+20 votes]
+        That’s because it’s the best one. (sorry narwhal; I know what sub I’m in. I have both on my phone).
+
+[Tuesday June 27 2023] [+12 votes]
+This is awesome news! Thanks so much for all the work you've put into this!
+
+[Tuesday June 27 2023] [+18 votes]
+I am very grateful on this day. I’ll gladly pay on day one. Thank you! Narwhal is the main way I can use Reddit without my brain locking up.
+
+[Wednesday June 28 2023] [+99 votes]
+Looks like this former Narwhal user will be returning this weekend!
+
+  [Wednesday June 28 2023] [+34 votes]
+  Same! Thank god we have another option besides the awful official app.
+
+    [Wednesday June 28 2023] [+17 votes]
+    Hear, hear! I always loved Narwhal, but switched to Apollo a while back while Narwhal 2 was in development. I’m excited to check it out!
+
+  [Wednesday June 28 2023] [+4 votes]
+  Fuck yeah! Hope sync is back too and I’m set.
+
+[Wednesday June 28 2023] [+121 votes]
+Do you have some kind of exemption for the original Narwhal to keep operating from July 1st? How long will the OG app last, and how did you manage to keep it free for now? I assume you need to meet some kind of deadline with Narwhal 2 and at that point Narwhal 1 will be shut down?
+--------------------------------------------------------------------------------
+I’ve been using Narwhal for nearly 40% of my life. To me this app is Reddit and I won’t be using the official app/site (https://www.reddit.com/r/getnarwhal/comments/144mphc)
+citeturn70reddit4 [wordlim: 200] Published: 3.3 years ago; Crawled: 3.0 years ago; [Thursday June 08 2023] [+233 votes]Once “new” Reddit started on desktop and old.reddit kept redirecting to the new one, I exclusively used narwhal and narwhal only.
+[Thursday June 08 2023] [+233 votes]
+Once “new” Reddit started on desktop and old.reddit kept redirecting to the new one, I exclusively used narwhal and narwhal only. At this point everything else feels like a completely different experience.
+
+[Thursday June 08 2023] [+30 votes]
+I can’t remember for how long I’ve been using Narwhal, but suffice it to say, Narwhal is Reddit to me. Narwhal is a supremely well-designed and usable/lovable app. If Narwhal goes, it’ll be the last day on Reddit for me.
+
+  [Thursday June 08 2023] [+4 votes]
+  I’ve been using it for the entirety of this account (8 years) and my account before that (about 1 year). Sad times indeed
+
+    [Saturday June 10 2023] [+1 votes]
+    Wow you started using reddit at 13 wow
+
+  [Thursday June 08 2023] [+7 votes]
+  Even aside from Narwhal and all third party apps being killed, the way Reddit has handled this has been abysmal. Then also add in how moderating will be affected and other downstream effects, seems like Reddit is going to implode. --------------------------------------------------------------------------------
+Used Narwhal during the Alien Blue days. Appreciate this app and the developer. Thank you. (https://www.reddit.com/r/getnarwhal/comments/144lfyw)
+citeturn70reddit5 [wordlim: 200] Published: 3.3 years ago; Crawled: 3.1 years ago; It’s so damn bittersweet seeing Arnie the narwhal smiling in that picture. ... [Thursday June 08 2023] [+8 votes]
+[Thursday June 08 2023] [+411 votes]
+SHARED URL
+
+[Thursday June 08 2023] [+7 votes]
+🥲
+
+[Thursday June 08 2023] [+14 votes]
+who is chopping onions??????
+
+  [Thursday June 08 2023] [+10 votes]
+  Ninjas
+
+[Thursday June 08 2023] [+31 votes]
+It’s so damn bittersweet seeing Arnie the narwhal smiling in that picture. I know it’s just a meme but damn it’ll suck not being able to use this app. :(
+
+[Thursday June 08 2023] [+11 votes]
+I will really miss you, Narwhal.
+
+[Thursday June 08 2023] [+8 votes]
+alien blue…narwhal…apollo…i cant believe they’re all leaving me.
+
+  [Friday June 09 2023] [+3 votes]
+  What have they done to my boy
+
+[Thursday June 08 2023] [+10 votes]
+I just wanted Narwhal 2 😞
+
+[Friday June 09 2023] [+4 votes]
+Yeah me too, daily user. Thanks for the good times 😪
+
+[Friday June 09 2023] [+15 votes]
+I’ve been using this app for years. Thanks for everything 🥲
+
+[Saturday June 10 2023] [+1 votes]
+Maybe I didn't understand correctly but I thought that Narwhal would continue.
+
+  [Saturday June 10 2023] [+2 votes]
+  I hope so URL
+
+[Sunday June 11 2023] [+3 votes]
+This app made my day to day life a lot better. Thanks for everything.--------------------------------------------------------------------------------
+Missing subreddit jump & slow search (https://www.reddit.com/r/narwhalapp/comments/16tosxx/missing_subreddit_jump_slow_search/)
+citeturn70reddit6 [wordlim: 200] Published: 3.0 years ago; [Wednesday September 27 2023] [+8 votes]Narwhal 1 had a `/r/` field / option which allowed jumping directly to a known subreddit, which was useful for quickly jumping around.
+--------------------------------------------------------------------------------
+I cant log in to this account anywhere else. Will it just have to be abandoned after narwhal goes down? (https://www.reddit.com/r/getnarwhal/comments/144do6p)
+citeturn70reddit7 [wordlim: 200] Published: 3.3 years ago; Crawled: 3.3 years ago; [Thursday June 08 2023] [+17 votes] ... [Thursday June 08 2023] [+11 votes]
+--------------------------------------------------------------------------------
+Was Anyone Else Excited for Narwhal 2 to Release Then Saw Your API Usage and Got Disappointed? (https://www.reddit.com/r/narwhalapp/comments/16tipzo)
+citeturn70reddit8 [wordlim: 200] Published: 3.0 years ago; Crawled: 1.6 years ago; I wonder if /u/det0ur has explored the option of adding Reddit’s ads to Narwhal 2.0 so Reddit still gets their ad money while we don’t have to suffer through API misery. ...       [Wednesday September 27 2023] [+4 votes]
+--------------------------------------------------------------------------------
+Automatically hide posts I’ve opened? (https://www.reddit.com/r/narwhalapp/comments/16tqdm1)
+citeturn70reddit9 [wordlim: 200] Published: 3.0 years ago; Crawled: 2.7 years ago; [Wednesday September 27 2023] [+7 votes] ... [Wednesday September 27 2023] [+2 votes]
+--------------------------------------------------------------------------------
+Is it possible to have iPhone open Reddit links in Narwhal by default (instead of the official app)? (https://www.reddit.com/r/narwhalapp/comments/16tohvg)
+citeturn70reddit10 [wordlim: 200] Published: 3.0 years ago; Crawled: 1.7 years ago; [Wednesday September 27 2023] [+16 votes] ...   When I click a Reddit link in safari it immediately navigates to the 3rd party Reddit app.
+--------------------------------------------------------------------------------
+Narwhal - Thanks for the endless hours of great UI/UX (https://www.reddit.com/r/getnarwhal/comments/14jj27d)
+citeturn70reddit11 [wordlim: 200] Published: 3.3 years ago; Crawled: 3.3 years ago; I’m guessing Narwhal really does end in like 4 days unless u/det0ur has any kind of update coming. ...   [Tuesday June 27 2023] [+4 votes] ...   [Tuesday June 27 2023] [+2 votes]

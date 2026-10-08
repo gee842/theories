@@ -1,0 +1,20 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-resumption-h9m4kiwd/ExplanatoryResumptionCases.lean:29:65: warning: This simp argument is unused:
+  exists_phase
+
+Hint: Omit it from the simp argument list.
+  simp [earlyCheck, branch_executes, Executes, canFinish, Holds, e̵x̵i̵s̵t̵s̵_̵p̵h̵a̵s̵e̵,̵ ̵m,
+      ExplanatoryGranularityBoundary.unfolding]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'Generative.ExplanatoryResumptionCases.adaptive_safe_exact' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryResumptionCases.early_check_safe_exact' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryResumptionCases.testing_before_formation_changes_results' depends on axioms: [propext,
+ Quot.sound]
+'Generative.ExplanatoryResumptionCases.adaptive_risky_exact' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryResumptionCases.same_start_reaches_distinct_residuals' depends on axioms: [propext]
+'Generative.ExplanatoryResumptionCases.remaining_program_changes_continuation' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryResumptionCases.exact_paused_accounts_retain_remaining_program' depends on axioms: [propext,
+ Quot.sound]
+'Generative.ExplanatoryResumptionCases.inserted_activity_can_disable_resumption' depends on axioms: [propext]
+'Generative.ExplanatoryResumptionCases.inserted_activity_changes_native_answers' depends on axioms: [propext]
+'Generative.ExplanatoryResumptionCases.interrupted_history_retained' depends on axioms: [propext]

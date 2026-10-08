@@ -1,0 +1,46 @@
+'Generative.RetrospectiveBinding.Packet' does not depend on any axioms
+'Generative.RetrospectiveBinding.Memory' does not depend on any axioms
+'Generative.RetrospectiveBinding.debit' does not depend on any axioms
+'Generative.RetrospectiveBinding.receive' does not depend on any axioms
+'Generative.RetrospectiveBinding.observe' does not depend on any axioms
+'Generative.RetrospectiveBinding.calibrate' does not depend on any axioms
+'Generative.RetrospectiveBinding.routes' does not depend on any axioms
+'Generative.RetrospectiveBinding.alternatives' does not depend on any axioms
+'Generative.RetrospectiveBinding.bindingView' does not depend on any axioms
+'Generative.RetrospectiveBinding.covered_packet_preserves_atomic_content' depends on axioms: [propext, Quot.sound]
+'Generative.RetrospectiveBinding.acquired_routes_supply_binding_coverage' depends on axioms: [propext, Quot.sound]
+'Generative.RetrospectiveBinding.later_observation_preserves_naming_packets' does not depend on any axioms
+'Generative.RetrospectiveBinding.observe_preserves_support_account' depends on axioms: [propext, Quot.sound]
+'Generative.RetrospectiveBinding.exhausted_memory_cannot_acquire_calibration' depends on axioms: [propext]
+'Generative.RetrospectiveBinding.secureRoute' does not depend on any axioms
+'Generative.RetrospectiveBinding.start' depends on axioms: [propext]
+'Generative.RetrospectiveBinding.named' depends on axioms: [propext]
+'Generative.RetrospectiveBinding.retrospective' depends on axioms: [propext]
+'Generative.RetrospectiveBinding.prior_naming_alone_leaves_both_forms_unresolved' depends on axioms: [propext,
+ Quot.sound]
+'Generative.RetrospectiveBinding.late_calibration_is_acquired_without_new_naming' depends on axioms: [propext]
+'Generative.RetrospectiveBinding.late_calibration_changes_both_bindings' depends on axioms: [propext, Quot.sound]
+'Generative.RetrospectiveBinding.retrospective_bindings_read_every_finite_sequence' depends on axioms: [propext,
+ Quot.sound]
+'Generative.RetrospectiveBinding.retrospective_evidence_enters_compositional_use' depends on axioms: [propext,
+ Quot.sound]
+'Generative.RetrospectiveBinding.acquired_reinterpretation_reaches_actual_response' depends on axioms: [propext,
+ Quot.sound]
+'Generative.RetrospectiveBinding.actual_history_preserves_prior_learning' depends on axioms: [propext]
+'Generative.RetrospectiveBinding.retained_interpretation_can_exceed_execution_support' depends on axioms: [propext,
+ Quot.sound]
+'Generative.RetrospectiveBinding.calibration_without_retained_naming_cannot_bind' depends on axioms: [propext,
+ Quot.sound]
+'Generative.RetrospectiveBinding.partial_calibration_preserves_binding_uncertainty' depends on axioms: [propext,
+ Quot.sound]
+'Generative.RetrospectiveBinding.channel_identity_matters_to_later_binding' depends on axioms: [propext, Quot.sound]
+'Generative.RetrospectiveBinding.jointFailureMemory' depends on axioms: [propext]
+'Generative.RetrospectiveBinding.inherited_omitted_route_can_make_reinterpretation_wrong' depends on axioms: [propext,
+ Quot.sound]
+'Generative.RetrospectiveBinding.challenged' depends on axioms: [propext]
+'Generative.RetrospectiveBinding.later_challenge_suspends_without_deleting_the_old_packet' depends on axioms: [propext,
+ Quot.sound]
+'Generative.RetrospectiveBinding.changedRouteHistory' depends on axioms: [propext]
+'Generative.RetrospectiveBinding.backward_transfer_can_fail_after_a_real_route_change' depends on axioms: [propext,
+ Quot.sound]
+'Generative.RetrospectiveBinding.packet_and_later_calibration_do_not_reveal_the_past_route' depends on axioms: [propext]

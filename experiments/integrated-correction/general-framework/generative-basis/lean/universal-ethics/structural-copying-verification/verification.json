@@ -1,0 +1,1659 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T18:39:19.893091+00:00",
+  "version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "fresh_temporary_build": true,
+  "commands": [
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "--version"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "-o",
+      "GenerativeCore.olean",
+      "GenerativeCore.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "GenerativeCoreAudit.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "-o",
+      "DevelopmentalAssociation.olean",
+      "DevelopmentalAssociation.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "DevelopmentalAssociationAudit.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "-o",
+      "ReconstructiveSelection.olean",
+      "ReconstructiveSelection.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "ReconstructiveSelectionAudit.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "-o",
+      "AssemblyDerivedSelection.olean",
+      "AssemblyDerivedSelection.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "AssemblyDerivedSelectionAudit.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "-o",
+      "ContactReconstruction.olean",
+      "ContactReconstruction.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "ContactReconstructionAudit.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "-o",
+      "MaterialMaturation.olean",
+      "MaterialMaturation.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "MaterialMaturationAudit.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "-o",
+      "GrownFragmentation.olean",
+      "GrownFragmentation.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "GrownFragmentationAudit.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "-o",
+      "RecurrentAssembly.olean",
+      "RecurrentAssembly.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "RecurrentAssemblyAudit.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "-o",
+      "StructuralCopying.olean",
+      "StructuralCopying.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "StructuralCopyingAudit.lean"
+    ]
+  ],
+  "source_unchanged_during_check": true,
+  "source_sha256": {
+    "GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "DevelopmentalAssociation.lean": "6137099d1ae405f6f26bda3966960ce495dcc8e519297ae922cf4927a73eb8be",
+    "ReconstructiveSelection.lean": "c0faf669d3178e2a4284e7ac3191ceb490cfd901bb40c51035774f061a76d197",
+    "AssemblyDerivedSelection.lean": "b6518a29b8c5dcf81629b3bb21f0970b5d89d7e6ef824e7534cbd21f23dff801",
+    "ContactReconstruction.lean": "4a050a2aab79bb01599c35065d92372bcf860062f7e6c6841908f344699c3ec2",
+    "MaterialMaturation.lean": "129096807280cc6c6a3b3a06f2c70eeca32d108ec16dc145db7cf5222446b915",
+    "GrownFragmentation.lean": "d251c7a1f956b3bedd28d28703118e7e57ddfd091ac8dbe756f17b04c747f8ca",
+    "RecurrentAssembly.lean": "fadb5c6e313d26e061ad8549f077e3a426abd9af2101f382cf74d3d66991023f",
+    "StructuralCopying.lean": "2e804dd44a4cf8fe89908f26cad044ca7aec58379cb7790bfb401eb939757a1e",
+    "lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+    "GenerativeCoreAudit.lean": "d0e29bea9d0403409ee60ac5b2c044e68394230e4e5eda1e908ff4d4a946b187",
+    "DevelopmentalAssociationAudit.lean": "f9d1508eb07b62130f0e85dbbecd97be9203600894b285b799c51ee4661b053e",
+    "ReconstructiveSelectionAudit.lean": "2ad2e042c95726efd9fbd216832228d46c3d3ba9224faa106ecbe4bb011fc2b4",
+    "AssemblyDerivedSelectionAudit.lean": "edcc39d02d1f0519a5d807c768447e593e5cf18a2081e726f1c24799a11c2388",
+    "ContactReconstructionAudit.lean": "9c5683fe6c08b1782039b49bd5eb09d5b39c0df8cdbba369281e7482f010b551",
+    "MaterialMaturationAudit.lean": "ff0dab3ffa6bc8aab3bb612c71f83d04d4aba35fd76dacd7c9e383d42a761a95",
+    "GrownFragmentationAudit.lean": "976d19a9a0bbb91d020ed8a03ad4f94e820020ee20c189e25d05a484adf7206c",
+    "RecurrentAssemblyAudit.lean": "88e6c75a831c3bdcdc923f673a5200118ebdb01cd82cb8cc60a4cfe8ba13a6a4",
+    "StructuralCopyingAudit.lean": "3b61462ea5c63faf47492d97eaf561991b5862cbd09450b45c519dfec9439cc2"
+  },
+  "log_sha256": {
+    "version.txt": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b",
+    "GenerativeCore-compiler.txt": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "GenerativeCore-axioms.txt": "a940c563aa7dafc2204031660bcc59f2780125b6bdb5350b7daac8b1226585f1",
+    "DevelopmentalAssociation-compiler.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "DevelopmentalAssociation-axioms.txt": "5d6d2b75185ba33703b7c3b6a43bcb1d1493cb2eb36cbdd01e8a72a03c8bca80",
+    "ReconstructiveSelection-compiler.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ReconstructiveSelection-axioms.txt": "621ef6c73b025077682c10df3f66cb3d208c5e80a413ae2b76505a1147e6a735",
+    "AssemblyDerivedSelection-compiler.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "AssemblyDerivedSelection-axioms.txt": "3b564f4a8ac69905a05a0aa93e53250b7aa1d35c253ca77a5d1f4adfd584afa4",
+    "ContactReconstruction-compiler.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ContactReconstruction-axioms.txt": "43fb138567a9fe9ba99dc4bb764d10cef6b6c2aeeaed7c57543fae67457b8d12",
+    "MaterialMaturation-compiler.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "MaterialMaturation-axioms.txt": "cc69e6f54f0fd760d19a336b14c3fa3a2c805c9760bc24ae6a0ee23154277542",
+    "GrownFragmentation-compiler.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "GrownFragmentation-axioms.txt": "7c2c531c40cb47d3651b9576e3e76b6d1cbe9ec0b26bcae8362b6f94db3ae742",
+    "RecurrentAssembly-compiler.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "RecurrentAssembly-axioms.txt": "32d8a516dc8ad956dfd39963f75e4724e3695d7a5142157074d2df414d813956",
+    "StructuralCopying-compiler.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "StructuralCopying-axioms.txt": "30e9a9247660276677bec57b26656eaef5ef4d0bdc04a95b93e3b57e2dc7d6b1"
+  },
+  "checker_sha256": "77981fa706df7e96c2a10ff44926800cbc99cbcf5bcfda6df78ef39da6fbc270",
+  "source_locations": {
+    "GenerativeCore.lean": "GenerativeCore.lean",
+    "DevelopmentalAssociation.lean": "universal-ethics/DevelopmentalAssociation.lean",
+    "ReconstructiveSelection.lean": "universal-ethics/ReconstructiveSelection.lean",
+    "AssemblyDerivedSelection.lean": "universal-ethics/AssemblyDerivedSelection.lean",
+    "ContactReconstruction.lean": "universal-ethics/ContactReconstruction.lean",
+    "MaterialMaturation.lean": "universal-ethics/MaterialMaturation.lean",
+    "GrownFragmentation.lean": "universal-ethics/GrownFragmentation.lean",
+    "RecurrentAssembly.lean": "universal-ethics/RecurrentAssembly.lean",
+    "StructuralCopying.lean": "universal-ethics/StructuralCopying.lean"
+  },
+  "new_theorem_count": 34,
+  "new_audit_count": 57,
+  "total_audit_count": 430,
+  "new_empty_axiom_count": 17,
+  "axiom_dependencies": {
+    "GenerativeCore": {
+      "Generative.Process": [],
+      "Generative.Enabled": [],
+      "Generative.Trace": [],
+      "Generative.trace_nil_iff": [],
+      "Generative.trace_cons_iff": [],
+      "Generative.trace_singleton_iff": [],
+      "Generative.trace_append_iff": [],
+      "Generative.enabled_iff_singleton_trace": [],
+      "Generative.enabled_difference_implies_state_difference": [],
+      "Generative.Feasible": [],
+      "Generative.feasible_append_iff": [],
+      "Generative.feasible_prefix": [],
+      "Generative.productProcess": [],
+      "Generative.enabled_product_iff": [],
+      "Generative.trace_product_left": [],
+      "Generative.trace_product_right": [],
+      "Generative.trace_product_mk": [],
+      "Generative.trace_product_iff": [],
+      "Generative.feasible_product_iff": [],
+      "Generative.trace_map": [],
+      "Generative.trace_lift": [],
+      "Generative.projected_trace_iff": [],
+      "Generative.projection_exact_iff": [],
+      "Generative.local_exact_iff_trace_exact": [],
+      "Generative.enabled_projection_iff": [],
+      "Generative.feasible_projection_iff": [],
+      "Generative.feasible_difference_implies_projection_difference": [],
+      "Generative.trace_faithful_iff": []
+    },
+    "DevelopmentalAssociation": {
+      "DevelopmentalAssociation.State": [],
+      "DevelopmentalAssociation.material": [],
+      "DevelopmentalAssociation.divide": [],
+      "DevelopmentalAssociation.changeRetention": [],
+      "DevelopmentalAssociation.detach": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.aggregate": [],
+      "DevelopmentalAssociation.Event": [],
+      "DevelopmentalAssociation.step": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.run": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.process": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.run_iff_core_trace": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.division_inherits": [
+        "propext"
+      ],
+      "DevelopmentalAssociation.changed_state_governs_division": [
+        "propext"
+      ],
+      "DevelopmentalAssociation.step_accounts": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.core_trace_accounts": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.LineageConsistent": [],
+      "DevelopmentalAssociation.division_preserves_lineage": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.NoAggregation": [
+        "propext"
+      ],
+      "DevelopmentalAssociation.step_preserves_lineage": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.trace_preserves_lineage": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.Connected": [],
+      "DevelopmentalAssociation.connected_same_founder": [],
+      "DevelopmentalAssociation.developed_groups_have_common_origin": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.seed": [],
+      "DevelopmentalAssociation.seed_lineage": [],
+      "DevelopmentalAssociation.Observation": [],
+      "DevelopmentalAssociation.observe": [],
+      "DevelopmentalAssociation.development": [],
+      "DevelopmentalAssociation.changed_division_forms_group": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.separated_descendant_reconstructs_association": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.restored_separation_changes_later_growth": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.mixed": [],
+      "DevelopmentalAssociation.aggregation_breaks_clonal_conclusion": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.splitMiddle": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.splitBase": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.CoarseObservation": [],
+      "DevelopmentalAssociation.coarse": [],
+      "DevelopmentalAssociation.equal_cell_states_different_continuations": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.comparison_histories_are_actual": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.no_bond_free_exact_predictor": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.ineffective_operations_fail": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    "ReconstructiveSelection": {
+      "ReconstructiveSelection.Kernel": [],
+      "ReconstructiveSelection.nextO": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.nextP": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.value": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.margin": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.Expands": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.value_step": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.loop_criterion": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.full_loop_criterion": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.expansion_has_margin": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.nonexpansion_witness": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.history": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.uniform_history_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.developmental": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.returnDen": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.returnNumer": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.criticalOutput": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.finiteReturns": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.finite_return_identity": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.total_descendants": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.developmental_margin": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.output_threshold": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.developmental_expansion_criterion": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.developmental_nonnegative": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.developmental_growth_certificate": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.uniform_nonexpansion": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.threshold_exceeds_one": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.first_return_balance": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.cost_ceiling": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.reconstruction_threshold_identity": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.reconstruction_lowers_threshold": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.no_creation_from_routing": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.first_census_nonidentification": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.second_census_contrast": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.second_census_identifies_reconstruction": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.indistinguishable_first_census_opposite_margins": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.reconstruction_without_direct_copy": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.costly_reconstruction_can_cross_threshold": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.reconstruction_can_be_too_costly": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.lost_return_prevents_this_gain": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "AssemblyDerivedSelection": {
+      "AssemblyDerivedSelection.Local": [],
+      "AssemblyDerivedSelection.attempt": [],
+      "AssemblyDerivedSelection.rewrite": [],
+      "AssemblyDerivedSelection.attempt_accounts": [
+        "propext",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.rewrite_accounts": [
+        "propext",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.realize": [],
+      "AssemblyDerivedSelection.successful_attempt_refines_aggregate": [
+        "propext",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.Tree": [],
+      "AssemblyDerivedSelection.tree": [],
+      "AssemblyDerivedSelection.leaves": [],
+      "AssemblyDerivedSelection.develop": [],
+      "AssemblyDerivedSelection.every_leaf_accounts": [
+        "propext",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.average": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.average_mass": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.average_nonnegative": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.organized": [
+        "propext",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.propagules": [
+        "propext",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.Batch": [],
+      "AssemblyDerivedSelection.reproduce": [],
+      "AssemblyDerivedSelection.reproduction_accounts": [
+        "propext",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.all_terminals_can_reproduce": [
+        "propext",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.cost": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.success": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.outputO": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.outputP": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.tree_expectations": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.success_from_tree": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.revised_program_expectations": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.output_nonnegative": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.output_account": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.outputP_closed": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.success_cost_identity": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.success_complement": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.cost_bounds": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.success_bounds": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.joint_output_identity": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.joint_output_lower_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.cost_increment": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.success_increment": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.outputO_increment": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.kernel": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.selectionSurplus": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.kernel_margin": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.derived_expansion": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.induced_kernel_nonnegative": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.assembled_growth_certificate": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.selection_increment": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.beneficial_extra_attempt": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.resident_stage_balance": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.adjacent_rule_invasion": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.last_attempt_tradeoff": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.resident_and_gaining_revision": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.effectiveReturn": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.effective_kernel": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.probability_is_not_descendant_fraction": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.support_exhaustion_reverses_gain": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "AssemblyDerivedSelection.naive_averaging_changes_growth_sign": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "ContactReconstruction": {
+      "ContactReconstruction.Edge": [],
+      "ContactReconstruction.Seed": [],
+      "ContactReconstruction.internal": [],
+      "ContactReconstruction.transmit": [],
+      "ContactReconstruction.compatible": [],
+      "ContactReconstruction.State": [],
+      "ContactReconstruction.encounter": [],
+      "ContactReconstruction.project": [],
+      "ContactReconstruction.encounter_projection": [
+        "propext"
+      ],
+      "ContactReconstruction.encounter_accounts": [
+        "propext",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.replay": [],
+      "ContactReconstruction.replay_accounts": [
+        "propext",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.formed_bond_has_transmitted_endpoints": [
+        "propext",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.total": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.hits": [],
+      "ContactReconstruction.rate": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.total_binary": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.rate_bounds": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.meanDraw": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.draw_reduction": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.expected": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.binaryExpected": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.expectation_projection": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.stopped_binary": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.binary_is_tree": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.expected_mass": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.reconstructed": [
+        "propext",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.reconstruction_from_contacts": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.cost_from_contacts": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.singleton_cannot_reconstruct": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.empty_contacts_stay_unbonded": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.zero_rate_never_succeeds": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.singleton_no_reconstruction": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.two_attempt_heterogeneity": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.two_attempt_cost_equal": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.one_attempt_mean_suffices": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.strict_heterogeneity_loss": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.parentComponents": [],
+      "ContactReconstruction.parentContacts": [],
+      "ContactReconstruction.labels": [],
+      "ContactReconstruction.concentrated": [],
+      "ContactReconstruction.distributed": [],
+      "ContactReconstruction.severed": [],
+      "ContactReconstruction.actual_partitions": [],
+      "ContactReconstruction.actual_rates": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.batchOutput": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.batchCost": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.same_first_different_second": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.opposed_cycle_comparison": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.severed_partition_preserves_components_loses_contacts": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.no_aggregate_return_coefficient": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.Stages": [],
+      "ContactReconstruction.next": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.typed_two_step": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.balanced_stage_reduction": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.cycles": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ContactReconstruction.conditional_cycle_return": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "MaterialMaturation": {
+      "MaterialMaturation.Stock": [],
+      "MaterialMaturation.product": [],
+      "MaterialMaturation.produce": [],
+      "MaterialMaturation.produce_accounts": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "MaterialMaturation.run": [],
+      "MaterialMaturation.run_accounts": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "MaterialMaturation.supported_run": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "MaterialMaturation.counts_length": [
+        "propext",
+        "Quot.sound"
+      ],
+      "MaterialMaturation.total_by_kind": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "MaterialMaturation.expected": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "MaterialMaturation.countExpected": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "MaterialMaturation.growth_projection": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "MaterialMaturation.canonical": [],
+      "MaterialMaturation.count_expected_mass": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "MaterialMaturation.expected_mass": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "MaterialMaturation.route": [
+        "propext"
+      ],
+      "MaterialMaturation.Routing": [],
+      "MaterialMaturation.routeTrace": [
+        "propext"
+      ],
+      "MaterialMaturation.routing_trace_accounts": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "MaterialMaturation.route_trace_projection": [
+        "propext"
+      ],
+      "MaterialMaturation.canonical_slots_match_parent": [
+        "propext"
+      ],
+      "MaterialMaturation.partial_routing_preserves_unused_components_and_work": [
+        "propext"
+      ],
+      "MaterialMaturation.route_sound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "MaterialMaturation.route_complete": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "MaterialMaturation.canonical_iff_counts": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "MaterialMaturation.actual_preparation_iff": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "MaterialMaturation.ready": [
+        "propext",
+        "Quot.sound"
+      ],
+      "MaterialMaturation.balanced": [
+        "propext",
+        "Quot.sound"
+      ],
+      "MaterialMaturation.ready_is_balance": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "MaterialMaturation.growReturn": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "MaterialMaturation.return_from_composition": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "MaterialMaturation.exact_maturation_rates": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "MaterialMaturation.seedCells": [],
+      "MaterialMaturation.pipeline": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "MaterialMaturation.batchReturn": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "MaterialMaturation.total_scale": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "MaterialMaturation.contact_expected_scale": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "MaterialMaturation.pipeline_factorization": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "MaterialMaturation.actual_compositions": [],
+      "MaterialMaturation.exact_joint_returns": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "MaterialMaturation.maturation_reverses_contact_ranking": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "MaterialMaturation.both_laws_below_replacement": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "MaterialMaturation.same_type_cannot_invent_missing_kind": [
+        "propext"
+      ],
+      "MaterialMaturation.opposite_production_can_form_missing_kind": []
+    },
+    "GrownFragmentation": {
+      "GrownFragmentation.Edge": [],
+      "GrownFragmentation.Growing": [],
+      "GrownFragmentation.enabled": [],
+      "GrownFragmentation.birth": [],
+      "GrownFragmentation.develop": [],
+      "GrownFragmentation.legal": [],
+      "GrownFragmentation.enabled_birth": [
+        "propext"
+      ],
+      "GrownFragmentation.actual_development": [
+        "propext",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.development_accounts": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.daughter_differentiates": [
+        "propext"
+      ],
+      "GrownFragmentation.initial": [],
+      "GrownFragmentation.chainWord": [],
+      "GrownFragmentation.branchedWord": [],
+      "GrownFragmentation.chain": [],
+      "GrownFragmentation.branched": [],
+      "GrownFragmentation.histories_legal": [],
+      "GrownFragmentation.grown_observations": [],
+      "GrownFragmentation.neighbors": [],
+      "GrownFragmentation.neighbor_connected": [
+        "propext",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.flood": [
+        "propext",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.flood_sound": [
+        "propext",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.component": [
+        "propext",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.component_sound": [
+        "propext",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.closed": [],
+      "GrownFragmentation.connected_same_side": [
+        "propext",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.certified_component": [
+        "propext",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.cutEdges": [],
+      "GrownFragmentation.cut": [
+        "propext",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.cut_accounts": [
+        "propext",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.cutComponents": [
+        "propext",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.cutCertificate": [
+        "propext",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.certificate_exact_split": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.every_tree_cut_certified": [
+        "propext",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.central_cut_pools": [
+        "propext",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.only_equal_tree_cuts": [
+        "propext",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.seeds": [
+        "propext",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.joined": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.cutReturn": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.joined_factorization": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.central_seed_properties": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.countJoined": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.joined_projection": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.countCutReturn": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.cut_return_projection": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.all_cut_returns": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.central_returns": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.meanCutReturn": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.uniform_cut_returns": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.fragmentation_changes_prepared_return": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.oldestReturn": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.oldest_cut_reverses_ranking": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.parentSummary": [],
+      "GrownFragmentation.matched_parent_summaries": [],
+      "GrownFragmentation.no_parent_summary_predictor": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.reinforced": [],
+      "GrownFragmentation.reinforcement_is_actual": [
+        "propext",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.bypass_survives_cut": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.bypass_really_connects": [
+        "propext",
+        "Quot.sound"
+      ],
+      "GrownFragmentation.cut_spends_without_fragmenting": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    "RecurrentAssembly": {
+      "RecurrentAssembly.Edge": [],
+      "RecurrentAssembly.Strand": [],
+      "RecurrentAssembly.Supply": [],
+      "RecurrentAssembly.path": [],
+      "RecurrentAssembly.wanted": [],
+      "RecurrentAssembly.attach": [
+        "propext"
+      ],
+      "RecurrentAssembly.grow": [
+        "propext"
+      ],
+      "RecurrentAssembly.attach_material": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RecurrentAssembly.attach_support": [
+        "propext",
+        "Quot.sound"
+      ],
+      "RecurrentAssembly.attach_tokens": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RecurrentAssembly.grow_tokens": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RecurrentAssembly.attach_preserves_path": [
+        "propext"
+      ],
+      "RecurrentAssembly.grow_accounts": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RecurrentAssembly.grow_preserves_path": [
+        "propext"
+      ],
+      "RecurrentAssembly.mature": [],
+      "RecurrentAssembly.fragment": [],
+      "RecurrentAssembly.reproduce": [
+        "propext"
+      ],
+      "RecurrentAssembly.size": [],
+      "RecurrentAssembly.reproduce_accounts": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RecurrentAssembly.generation": [
+        "propext"
+      ],
+      "RecurrentAssembly.size_append": [
+        "propext"
+      ],
+      "RecurrentAssembly.generation_accounts": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RecurrentAssembly.rounds": [
+        "propext"
+      ],
+      "RecurrentAssembly.rounds_accounts": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RecurrentAssembly.prepared_material_assembles": [
+        "propext"
+      ],
+      "RecurrentAssembly.completed_routing_output": [
+        "propext"
+      ],
+      "RecurrentAssembly.prepared_output_rebuilds": [
+        "propext"
+      ],
+      "RecurrentAssembly.formed_graph_matches_previous": [],
+      "RecurrentAssembly.fragments_retain_real_links": [
+        "propext",
+        "Quot.sound"
+      ],
+      "RecurrentAssembly.supported_reproduction": [
+        "propext",
+        "Quot.sound"
+      ],
+      "RecurrentAssembly.blocks": [],
+      "RecurrentAssembly.blocks_length": [
+        "propext",
+        "Quot.sound"
+      ],
+      "RecurrentAssembly.blocks_add": [
+        "propext",
+        "Quot.sound"
+      ],
+      "RecurrentAssembly.size_replicate": [
+        "propext",
+        "Quot.sound"
+      ],
+      "RecurrentAssembly.supported_generation": [
+        "propext",
+        "Quot.sound"
+      ],
+      "RecurrentAssembly.required": [],
+      "RecurrentAssembly.required_as_growth": [
+        "propext",
+        "Quot.sound"
+      ],
+      "RecurrentAssembly.supported_rounds": [
+        "propext",
+        "Quot.sound"
+      ],
+      "RecurrentAssembly.prepared_repeated_generation": [
+        "propext",
+        "Quot.sound"
+      ],
+      "RecurrentAssembly.process": [
+        "propext"
+      ],
+      "RecurrentAssembly.rounds_are_trace": [
+        "propext"
+      ],
+      "RecurrentAssembly.finite_material_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RecurrentAssembly.zero_support_stops": [
+        "propext"
+      ],
+      "RecurrentAssembly.two_generations_realized": [
+        "propext",
+        "Quot.sound"
+      ],
+      "RecurrentAssembly.partial_failure_keeps_material": [
+        "propext"
+      ],
+      "RecurrentAssembly.missing_kind_stalls_with_work_remaining": [
+        "propext"
+      ],
+      "RecurrentAssembly.wrong_structure_is_not_reset": [
+        "propext"
+      ]
+    },
+    "StructuralCopying": {
+      "StructuralCopying.Law": [],
+      "StructuralCopying.charge": [],
+      "StructuralCopying.cost": [],
+      "StructuralCopying.CopyState": [],
+      "StructuralCopying.extend": [],
+      "StructuralCopying.tick": [
+        "propext"
+      ],
+      "StructuralCopying.steps": [
+        "propext"
+      ],
+      "StructuralCopying.start": [],
+      "StructuralCopying.copy": [
+        "propext"
+      ],
+      "StructuralCopying.release": [],
+      "StructuralCopying.reproduce": [
+        "propext"
+      ],
+      "StructuralCopying.tick_accounts": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "StructuralCopying.tick_keeps_template_order": [
+        "propext"
+      ],
+      "StructuralCopying.tick_preserves_tokens": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "StructuralCopying.steps_preserve_tokens": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "StructuralCopying.tick_preserves_path": [
+        "propext"
+      ],
+      "StructuralCopying.steps_invariants": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "StructuralCopying.steps_preserve_path": [
+        "propext"
+      ],
+      "StructuralCopying.supported_scan": [
+        "propext",
+        "Quot.sound"
+      ],
+      "StructuralCopying.copied_structure_inherits": [
+        "propext",
+        "Quot.sound"
+      ],
+      "StructuralCopying.reproduction_inherits": [
+        "propext",
+        "Quot.sound"
+      ],
+      "StructuralCopying.reproduction_accounts": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "StructuralCopying.tick_cost_balance": [
+        "propext"
+      ],
+      "StructuralCopying.steps_cost_balance": [
+        "propext"
+      ],
+      "StructuralCopying.completed_copy_requires_cost": [
+        "propext"
+      ],
+      "StructuralCopying.exact_reproduction_budget": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "StructuralCopying.descendants": [
+        "propext"
+      ],
+      "StructuralCopying.repeatedFeed": [],
+      "StructuralCopying.finite_lineage_inherits": [
+        "propext",
+        "Quot.sound"
+      ],
+      "StructuralCopying.lineage_accounts": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "StructuralCopying.exchange": [
+        "propext"
+      ],
+      "StructuralCopying.exchange_preserves_material": [
+        "propext",
+        "Quot.sound"
+      ],
+      "StructuralCopying.exchange_preserves_path": [
+        "propext"
+      ],
+      "StructuralCopying.alternating": [],
+      "StructuralCopying.clustered": [],
+      "StructuralCopying.mixed": [],
+      "StructuralCopying.alternatingEasy": [],
+      "StructuralCopying.clusteredEasy": [],
+      "StructuralCopying.feed": [],
+      "StructuralCopying.previous_fragment_is_template": [],
+      "StructuralCopying.actual_exchange_forms_variant": [
+        "propext"
+      ],
+      "StructuralCopying.formed_variant_enters_copying": [
+        "propext"
+      ],
+      "StructuralCopying.inherited_variant_changes_cost": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "StructuralCopying.exact_local_ranking": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "StructuralCopying.third_structure_cost_constraint": [
+        "propext",
+        "Quot.sound"
+      ],
+      "StructuralCopying.two_costs_determine_third": [
+        "propext",
+        "Quot.sound"
+      ],
+      "StructuralCopying.equal_census_different_organization": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "StructuralCopying.inherited_variant_reproduces": [
+        "propext"
+      ],
+      "StructuralCopying.common_budget_discriminates": [
+        "propext"
+      ],
+      "StructuralCopying.changed_local_law_reverses_advantage": [
+        "propext"
+      ],
+      "StructuralCopying.full_copy_need_not_be_released": [
+        "propext"
+      ],
+      "StructuralCopying.batch": [
+        "propext"
+      ],
+      "StructuralCopying.made": [],
+      "StructuralCopying.batch_accounts": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "StructuralCopying.shared_supply_order_matters": [
+        "propext"
+      ],
+      "StructuralCopying.census": [],
+      "StructuralCopying.no_census_only_completion": [
+        "propext"
+      ]
+    }
+  },
+  "scope": "A retained connected sequence directs material-consuming copy steps. Local adjacent-type costs yield an exact necessary/sufficient budget under supplied material, and actual daughters repeat the sequence through any finitely supported lineage. A paid exchange changes that organization without changing component multiplicities. Common-budget effects, local-law rank reversal, unreleased complete copies and shared-supply ordering are retained. Exact template access and copying, exchange/release mechanisms, local costs, occurrence order and material provision are supplied; no copying-origin derivation, molecular calibration, long-run competitive advantage or general superiority over strong mechanistic models."
+}

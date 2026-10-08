@@ -131,3 +131,31 @@ All states and costs are rational. The supplied intervention changes only beta f
 The finite intervention horizon exists before the support cover is selected. The theorem does not claim that a given actual endowment is sufficient, that this is a least-cost policy, or that every positive state recovers under unchanged beta=1/2. The full recovery boundary, empirical calibration, partial interventions, discrete extinction/entry and formation of the correction remain separate questions. It proves protection after withdrawal, not a new all-state convergence result.
 
 [Chinese/English integration and substantive counterreview](../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#supported-finite-transition) explain the link to degeneration, meta-attraction and generative alignment. The result reuses the established normative argument and does not derive an ethical verdict from stability.
+
+
+<a id="checked-partial-transition"></a>
+## Checked partial correction and the critical case
+
+[PartialRegimeTransition.lean](PartialRegimeTransition.lean) extends the same model, importing the completed finite-transition module. `python3 experiments/market-generativity/formal/check_partial_transition.py` rebuilds five sources and an audit from frozen bytes. The [receipt](partial-transition-verification.json) and [frozen package](partial-transition-verification) bind **26 new theorems / 31 named-declaration audits** and **123 inherited theorems / 153 audits** to Lean 4.29.1. No new axioms or warnings are accepted; inherited work is not counted as new results.
+
+| Declaration | Checked scope |
+|---|---|
+| exact_universal_landing_boundary | For 0≤beta≤3/4, every physical rational state with positive x reaches Landing in finite time iff beta≤5/12; zero additional error. |
+| retained_positive_seed, uniform_seed_floor | Before selection turns favorable, transient losses still leave xₙ≥x₀/2 throughout the subcritical/critical history. This is derived, not assumed. |
+| eventual_positive_gap, partial_finite_landing | The retained share changes influence; quality eventually exceeds 3/8 by x₀/32 and the original protection rectangle is reached. |
+| supercritical_low_box_never_lands | The original low-certificate and all-time box theorems imply an entire nonarrival region above the threshold. This does not assert that all states fail. |
+| critical_noise_fixed, arbitrarily_small_error_blocks_universal_landing | An arbitrarily small *constant adverse error*, not a sampled random process, yields a positive critical fixed state that never lands. No stability claim for that point. |
+| partial_coupling_history, supported_partial_transition | Exact lifting of each partial-correction step to original full State, consumption of the declared extra support, then inherited guarded nonfailure after withdrawal without stock reset. |
+
+The cover K_N, cover-step inequality, landing-to-Safe adapter and final protection theorem are reused. The new parameter condition is 0≤beta≤5/12; implementation and funding of that change remain supplied. The critical positive-seed bound and iff concern the operating projection; actual execution additionally requires the support cover. Zero-share entry, full basin boundaries, arbitrary time-varying beta, noisy recovery away from criticality, least costs and empirical calibration are not claimed.
+
+[Theory, interpretation and counterreview](../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#partial-correction-boundary) preserve the distinction between a mathematical partial intervention and formed market effects.
+
+<a id="checked-finite-support-obstruction"></a>
+## Checked finite-support obstruction
+
+[FiniteSupportObstruction.lean](FiniteSupportObstruction.lean) imports the original finite-transition module and uses the original full State, operatingStep and guardedStep with time-varying beta/error. Run `python3 -B experiments/market-generativity/formal/check_finite_support.py`. The [source-bound receipt](finite-support-verification.json) and [frozen proof package](finite-support-verification) record **17 new theorems / 22 declaration audits**, with **123 inherited theorems / 153 audits** separately rebuilt under Lean 4.29.1.
+
+For each finite stock C₀≥5, take an integer N>C₀−5. Every seed 0<x₀≤(2/3)^N/6 fails by N for every beta/error sequence and nonnegative stock shock, with the share-growth and stock laws fixed. No support injection, direct entry or faster growth is admitted. This is a conservative obstruction interval, not the exact viability boundary. `support_required_for_small_prefix` derives C₀≥5+N as necessary for survival through a small-renewal prefix. `guarded_prefix_sound` connects the stock argument to the actual guarded history, and `guarded_failure_persists` retains termination. `projected_recovery_and_actual_failure` uses the old finite-arrival theorem for the same seed whose full history fails; `same_stock_can_support_high_seed` reuses old all-time protection for a different seed with the same stock.
+
+中文：本轮将一个来不及恢复的示例推广为每个有限存量对应的正区间及全部时变纠正，且接回原实际守卫。生成、维持与组织终止在同一历史内解释；原规律和实际对应仍明示，未宣告无公理奠基。参见[论证、反审与下一接口](../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#finite-support-obstruction)。

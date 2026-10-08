@@ -1,0 +1,435 @@
+{
+  "passed_owned_documentary_scope": true,
+  "new_theorems": 0,
+  "lean_recompiled": false,
+  "reused_receipts": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/reflective-identity-checks/20261008T114343.985843Z/receipt.json",
+      "sha256": "d11f16b8667017d1513994aefd00bc57320a6adc7456ca7c0bc4949fc8fc79ee"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/recognitional-binding-checks/20261008T120159.334011Z/receipt.json",
+      "sha256": "54433618b963ad102e467a5ff0f5410a884daa9ad707bb7d47b0521fe53d99d3"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/inferential-substitution-checks/20261008T181823.552825Z/receipt.json",
+      "sha256": "8b574d92284e38f21c192d0ce2258921ca0f5d42bee254af20db5d4525bb7811"
+    }
+  ],
+  "unique_retained_declaration_audits": 41,
+  "empty_reports": 35,
+  "quot_sound_only": 6,
+  "historical_editions": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/binding-constitution-before/GENERATED-LOGIC.md",
+      "sha256": "98d4c503da9d556fefb90675a4f5d440a7661b80c0438610ec6a4e4fd94e1499"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/binding-constitution-before/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "sha256": "c49f256558394c13c4385f96efefd1ae8c3efcd39a3a07058ccfb93a3b746c69"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/binding-constitution-before/2026-10-08-generative-logic-investigation.md",
+      "sha256": "516145938474ccd571ff321b539cc0cba3bf01dc2fe9a415942c7985c5404f84"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/results/records/binding-preserving-substitution.json",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/binding-constitution-before/binding-preserving-substitution.json",
+      "sha256": "c783c9d99ff24d7ea5dca2eed1a388aacd8d64e05bf5d62a348a858ac339234d"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INFERENTIAL-SUBSTITUTION-CHECKS.json",
+      "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/binding-constitution-before/INFERENTIAL-SUBSTITUTION-CHECKS.json",
+      "sha256": "54b4453caa3d77d44a1171f82335ee40ecbf87c2b32093460f05f4a13e119269"
+    }
+  ],
+  "documents": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md": "25debbc76dde0e82f38c566c997e26a3b25156a8caae0c8970affa12e5d746b6",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md": "f922271a08eb27387d282ebc5d2d487ada369dc5685e0e308463722b301ea4ac",
+    "sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md": "19fed5a540e2867283db81cf7d8112ee3229d00a81922fdea6045a91e4be1a4d"
+  },
+  "local_links": [
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "#constitutive-binding-assessment"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "#acquired-support-use"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "MATHEMATICAL-CORE.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-LOGIC-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedContraction.lean"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContractionMechanisms.lean"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/generated-contraction-checks/20261008T101759.536385Z/receipt.json"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/generated-contraction-verification.json"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryLeaseDynamics.lean"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-LOGIC-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContextualLeaseRules.lean"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContextualLogicAbstraction.lean"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_contextual_logic.py"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/contextual-logic-checks/20261008T103742.401003Z/receipt.json"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-CHANGING-SUPPORT-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ReconfigurableSupportLogic.lean"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/reconfigurable-logic-checks/20261008T105809.742208Z/receipt.json"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONFIGURABLE-LOGIC-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-HANDOFF-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-FRONTIER-BOUNDARY.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVIDENCE-QUALIFIED-CORRECTION-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SUPPORT-USE-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/AcquiredSupportUse.lean"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/AcquiredSupportUseCases.lean"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/acquired-support-use-checks/20261008T112000.799032Z/receipt.json"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md#presuppositionless-metalogic"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REFLECTIVE-IDENTITY-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ReflectiveIdentity.lean"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/reflective-identity-checks/20261008T114343.985843Z/receipt.json"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REFLECTIVE-IDENTITY-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#binding-preserving-substitution"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../results/records/binding-preserving-substitution.json"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#constitutive-binding-assessment"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../results/records/constitutive-binding-assessment.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md#recognitional-continuation"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md#recognitional-binding"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "target": "REFLECTIVE-IDENTITY-INTEGRATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "target": "GROUNDING-INFERENCE-AND-PRESENTATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RecognitionalBinding.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_recognitional_binding.py"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/recognitional-binding-checks/20261008T120159.334011Z/receipt.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "target": "development/recognitional-binding-before/manifest.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "target": "RECOGNITIONAL-BINDING-INDEX-EDITS.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "target": "RECOGNITIONAL-BINDING-CHECKS.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md#substitution-continuation"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/results/records/binding-preserving-substitution.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/results/records/derivation-soundness.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/InferentialSubstitution.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_inferential_substitution.py"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/inferential-substitution-checks/20261008T181823.552825Z/receipt.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "target": "development/inferential-substitution-before/manifest.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "target": "INFERENTIAL-SUBSTITUTION-CHECKS.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "target": "INFERENTIAL-SUBSTITUTION-INDEX-EDITS.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md#complete-binding-grounding"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/results/records/constitutive-binding-assessment.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/results/records/binding-preserving-substitution.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "target": "development/binding-constitution-before/manifest.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "target": "BINDING-CONSTITUTION-CHECKS.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md",
+      "target": "BINDING-CONSTITUTION-INDEX-EDITS.json"
+    },
+    {
+      "document": "sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md",
+      "target": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md"
+    },
+    {
+      "document": "sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-LOGIC-INTEGRATION.md"
+    },
+    {
+      "document": "sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-LOGIC-INTEGRATION.md"
+    },
+    {
+      "document": "sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONFIGURABLE-LOGIC-INTEGRATION.md"
+    },
+    {
+      "document": "sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SUPPORT-USE-INTEGRATION.md"
+    },
+    {
+      "document": "sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REFLECTIVE-IDENTITY-INTEGRATION.md"
+    },
+    {
+      "document": "sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md"
+    },
+    {
+      "document": "sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#binding-preserving-substitution"
+    },
+    {
+      "document": "sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#constitutive-binding-assessment"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "target": "RECOGNITIONAL-BINDING-INTEGRATION.md#constitutive-binding-assessment"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "target": "BINDING-CONSTITUTION-INDEX-EDITS.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "target": "BINDING-CONSTITUTION-CHECKS.json"
+    }
+  ],
+  "focused_registry_command_exit": 0,
+  "focused_registry_command": {
+    "records": 76,
+    "selected_records": [
+      "binding-preserving-substitution",
+      "constitutive-binding-assessment"
+    ],
+    "errors": [],
+    "source_drift": [],
+    "unrelated_source_drift": [
+      {
+        "id": "becoming-context-coherence",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
+        "reviewed_sha256": "c0fddfdad705e45b0dd0f173160be6ee9572ef9bc888b2dea4682fa2ca1f37b0",
+        "current_sha256": "e0f0849f885d3c84c24e18772554583398144aa5cc6f357e64db666b00cba18c"
+      },
+      {
+        "id": "becoming-context-coherence",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BECOMING-FOUNDATION.md",
+        "reviewed_sha256": "cb1c529f44d4b3b51c6131ee5dbaa80dcb08030ec3f87148b784793a71df436f",
+        "current_sha256": "7805d07d45214bdbec975352b16b0e69fe6ff686c4e48f792bc62840c6be98fa"
+      },
+      {
+        "id": "theory-of-becoming-foundation",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BECOMING-FOUNDATION.md",
+        "reviewed_sha256": "cb1c529f44d4b3b51c6131ee5dbaa80dcb08030ec3f87148b784793a71df436f",
+        "current_sha256": "7805d07d45214bdbec975352b16b0e69fe6ff686c4e48f792bc62840c6be98fa"
+      },
+      {
+        "id": "theory-of-becoming-foundation",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
+        "reviewed_sha256": "c0fddfdad705e45b0dd0f173160be6ee9572ef9bc888b2dea4682fa2ca1f37b0",
+        "current_sha256": "e0f0849f885d3c84c24e18772554583398144aa5cc6f357e64db666b00cba18c"
+      }
+    ],
+    "scope": "Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation."
+  },
+  "pending_shared_reviews": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md",
+      "theories/shengsheng-buxi-generative-existence/results/records/market-supported-finite-transition.md",
+      "experiments/market-generativity/formal/README.md",
+      "theories/shengsheng-buxi-generative-existence/results/records/recurrent-chain-assembly.json",
+      "theories/shengsheng-buxi-generative-existence/results/records/classification-robust-generative-comparison.json",
+      "theories/shengsheng-buxi-generative-existence/results/records/classification-robust-generative-comparison.md",
+      "theories/shengsheng-buxi-generative-existence/results/records/market-partial-correction-boundary.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BECOMING-FOUNDATION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md"
+    ],
+    "removed_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "theories/meta-attractor/COMMON-ORGANIZATION.md"
+    ]
+  },
+  "global_chain_link_errors": [
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/organizational-formation-from-generative-comparison.md",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/situated-recovery-empirical-correspondence.md",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/context-sensitive-updating-correspondence.md",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/transition-grouping-word-partition.md"
+  ],
+  "complete_presuppositionless_grounding": false,
+  "whole_table_certified": false,
+  "independent_agent_review": false
+}

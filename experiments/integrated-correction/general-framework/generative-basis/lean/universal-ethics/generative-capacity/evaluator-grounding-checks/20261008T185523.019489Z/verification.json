@@ -1,0 +1,383 @@
+{
+  "status": "passed",
+  "utc": "20261008T185523.019489Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "evaluator-grounding-checks/20261008T185523.019489Z",
+  "source_sha256": {
+    "GenerativeComparison": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
+    "EvaluatorGrounding": "86c1583d35505b466db5670f15f19b53cba2be3deb4e3d56b53bed79bcc9218c"
+  },
+  "checker_sha256": {
+    "check_evaluator_grounding.py": "9074b9ab33f133952d13d99bf029bcb698b7ccfe1cce1a406531f101af44200e",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Monist evaluator grounding. From a standpoint's reason-giving self-good (S0) over its own living and further generation, with significance determined by formed relations rather than a primitive owner: (1) monotonicity in the relations grounding self-good extends significance to any living occurrence at least as connected as a valued own occurrence, and a strictly own-only rival is inconsistent once its further generation differentiates into such an occurrence; (2) supervenience, tolerance (no positive-to-none flip across one small relational step) and graded connection extend significance to every reachable living occurrence, which is exactly G0 for the reachable inventory with this standpoint's significance as positive relevance. Countermodels keep consistent a threshold rival without tolerance, a present-aim evaluator without self-good, a closed self without graded connection, and a persistence-grounded rival escaping the tolerance-free step. S0, tolerance, differentiation and graded-connection correspondence are supplied; no theorem proves them, assigns weights, permission or duty, or binds an evaluator without self-good.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "checked_application_examples": [
+    {
+      "claim": "finite standpoint with tolerance yields G0 for its reachable inventory",
+      "kernel_checked": true,
+      "counted_as_new_theorem": false
+    },
+    {
+      "claim": "threshold rival reaches the formed other but not the stranger",
+      "kernel_checked": true,
+      "counted_as_new_theorem": false
+    },
+    {
+      "claim": "own-only rival with self-good and monotonicity is inconsistent in the finite unfolding",
+      "kernel_checked": true,
+      "counted_as_new_theorem": false
+    }
+  ],
+  "source_unchanged_during_check": true,
+  "modules": [
+    {
+      "module": "GenerativeComparison",
+      "theorems": 11,
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "GenerativeComparison.Inventory"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.G0"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.Extends"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.GenerativeExtension"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.ComparisonPrinciple"
+        },
+        {
+          "kind": "structure",
+          "name": "GenerativeComparison.Situation"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.PracticalArticulation"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.SelectionCoherence"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.Survives"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.new_realization_has_positive_relevance"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.generative_extension_irreflexive"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.generative_extension_transitive"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.comparison_supplies_situated_reason"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.coherent_selection_survives_filter"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.feasible_restriction_preserves_survivor"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.continual_improvement_has_no_survivor"
+        },
+        {
+          "kind": "abbrev",
+          "name": "GenerativeComparison.Profile"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.profileInventory"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.count"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.firstAppraisal"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.secondAppraisal"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.ScoreBetter"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.tradeoffSituation"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.both_appraisals_respect_all_extensions"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.tradeoff_has_opposite_strict_appraisals"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.both_tradeoff_options_survive"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.each_appraisal_has_a_different_coherent_selection"
+        }
+      ],
+      "axiom_dependencies": {
+        "GenerativeComparison.Inventory": [],
+        "GenerativeComparison.G0": [],
+        "GenerativeComparison.Extends": [],
+        "GenerativeComparison.GenerativeExtension": [],
+        "GenerativeComparison.ComparisonPrinciple": [],
+        "GenerativeComparison.Situation": [],
+        "GenerativeComparison.PracticalArticulation": [],
+        "GenerativeComparison.SelectionCoherence": [],
+        "GenerativeComparison.Survives": [],
+        "GenerativeComparison.new_realization_has_positive_relevance": [],
+        "GenerativeComparison.generative_extension_irreflexive": [],
+        "GenerativeComparison.generative_extension_transitive": [],
+        "GenerativeComparison.comparison_supplies_situated_reason": [],
+        "GenerativeComparison.coherent_selection_survives_filter": [],
+        "GenerativeComparison.feasible_restriction_preserves_survivor": [],
+        "GenerativeComparison.continual_improvement_has_no_survivor": [],
+        "GenerativeComparison.Profile": [],
+        "GenerativeComparison.profileInventory": [],
+        "GenerativeComparison.count": [],
+        "GenerativeComparison.firstAppraisal": [],
+        "GenerativeComparison.secondAppraisal": [],
+        "GenerativeComparison.ScoreBetter": [],
+        "GenerativeComparison.tradeoffSituation": [],
+        "GenerativeComparison.both_appraisals_respect_all_extensions": [
+          "propext",
+          "Quot.sound"
+        ],
+        "GenerativeComparison.tradeoff_has_opposite_strict_appraisals": [
+          "propext"
+        ],
+        "GenerativeComparison.both_tradeoff_options_survive": [],
+        "GenerativeComparison.each_appraisal_has_a_different_coherent_selection": [
+          "propext"
+        ]
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "EvaluatorGrounding",
+      "theorems": 12,
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "EvaluatorGrounding.Standpoint"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluatorGrounding.SelfGood"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluatorGrounding.Monotone"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluatorGrounding.Supervenes"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluatorGrounding.Tolerant"
+        },
+        {
+          "kind": "inductive",
+          "name": "EvaluatorGrounding.Chain"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluatorGrounding.self_good_reaches_at_least_as_connected"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluatorGrounding.strict_indexed_rival_inconsistent"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluatorGrounding.chain_preserves"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluatorGrounding.tolerant_chain_reaches"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluatorGrounding.reachableInventory"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluatorGrounding.reach_is_g0"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluatorGrounding.self_good_derives_reachable_g0"
+        },
+        {
+          "kind": "inductive",
+          "name": "EvaluatorGrounding.Occ"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluatorGrounding.degree"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluatorGrounding.ownOcc"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluatorGrounding.reachOcc"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluatorGrounding.adjacent"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluatorGrounding.standpoint"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluatorGrounding.formed_other_has_significance"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluatorGrounding.threshold_rival_is_consistent_without_tolerance"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluatorGrounding.tolerant_standpoint_reaches_stranger"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluatorGrounding.present_aim_evaluator_escapes"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluatorGrounding.closedStep"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluatorGrounding.closed_self_blocks_reach"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluatorGrounding.profile2"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluatorGrounding.productLe"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluatorGrounding.persistence"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluatorGrounding.persistence_rival_escapes_self_transcendence"
+        }
+      ],
+      "axiom_dependencies": {
+        "EvaluatorGrounding.Standpoint": [],
+        "EvaluatorGrounding.SelfGood": [],
+        "EvaluatorGrounding.Monotone": [],
+        "EvaluatorGrounding.Supervenes": [],
+        "EvaluatorGrounding.Tolerant": [],
+        "EvaluatorGrounding.Chain": [],
+        "EvaluatorGrounding.self_good_reaches_at_least_as_connected": [],
+        "EvaluatorGrounding.strict_indexed_rival_inconsistent": [],
+        "EvaluatorGrounding.chain_preserves": [],
+        "EvaluatorGrounding.tolerant_chain_reaches": [],
+        "EvaluatorGrounding.reachableInventory": [],
+        "EvaluatorGrounding.reach_is_g0": [],
+        "EvaluatorGrounding.self_good_derives_reachable_g0": [],
+        "EvaluatorGrounding.Occ": [],
+        "EvaluatorGrounding.degree": [],
+        "EvaluatorGrounding.ownOcc": [
+          "propext"
+        ],
+        "EvaluatorGrounding.reachOcc": [
+          "propext"
+        ],
+        "EvaluatorGrounding.adjacent": [],
+        "EvaluatorGrounding.standpoint": [
+          "propext"
+        ],
+        "EvaluatorGrounding.formed_other_has_significance": [
+          "propext"
+        ],
+        "EvaluatorGrounding.threshold_rival_is_consistent_without_tolerance": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EvaluatorGrounding.tolerant_standpoint_reaches_stranger": [
+          "propext"
+        ],
+        "EvaluatorGrounding.present_aim_evaluator_escapes": [
+          "propext"
+        ],
+        "EvaluatorGrounding.closedStep": [],
+        "EvaluatorGrounding.closed_self_blocks_reach": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EvaluatorGrounding.profile2": [],
+        "EvaluatorGrounding.productLe": [],
+        "EvaluatorGrounding.persistence": [
+          "propext"
+        ],
+        "EvaluatorGrounding.persistence_rival_escapes_self_transcendence": [
+          "propext"
+        ]
+      },
+      "kernel_checked": true
+    }
+  ],
+  "artifact_sha256": {
+    "Controls.lean": "a12a7993ee77e3aad6d524790553dc3c2d31e3231a2c9586f2bfd7b13bd48f62",
+    "Controls.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "EvaluatorGrounding.lean": "86c1583d35505b466db5670f15f19b53cba2be3deb4e3d56b53bed79bcc9218c",
+    "EvaluatorGrounding.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "EvaluatorGroundingAxiomAudit.lean": "a0cec7208661ee307859ca25ecb85d93b52856b949f8deea263fdc185e2886e8",
+    "EvaluatorGroundingAxiomAudit.log": "8a908e52df9fa7bfd1d73d8ccc5c5321960fec17944b82d37311530c401987e7",
+    "EvaluatorGroundingSignatures.lean": "d95ca47e9a0fbb1b3d80f1e2feca65ba007fd54ac2bf1b9bc5f2164fa7506a9e",
+    "EvaluatorGroundingSignatures.log": "7ec6150cfc108b6fd3f33a707c9bbe5d1b003ec4eddbd8630ca50fe71edaa8bd",
+    "GenerativeComparison.lean": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
+    "GenerativeComparison.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "GenerativeComparisonAxiomAudit.lean": "b917ae91ff6db176d460a5d332e193d545ad4277abfc0e95224a97d2894ad84e",
+    "GenerativeComparisonAxiomAudit.log": "66f7f5742924df733c730fbc3f8c6caf59156c8f5b9bf7bb5c4522e69db4be0f",
+    "GenerativeComparisonSignatures.lean": "bb1012bec6a2f508fa3e308f5ff3c666a651559eab86001b5b46e82013642809",
+    "GenerativeComparisonSignatures.log": "9a1754ab174b2e643d3359d1468c52053ccc3305e7c79e18b2b1ce67663da16f",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_evaluator_grounding.py": "9074b9ab33f133952d13d99bf029bcb698b7ccfe1cce1a406531f101af44200e",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

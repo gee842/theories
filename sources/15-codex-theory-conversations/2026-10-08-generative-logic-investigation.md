@@ -68,3 +68,29 @@ After the identity-rule candidate left recognition of content and ground as the 
 > 继续
 
 AI execution scope: investigate the recognitional connection within the same inferential activity. [The continuation](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md) distinguishes constituted binding from independent reidentification and checks source-free transport, atomic identity uniqueness and two controls. Seven new theorems and 14 inherited declaration audits pass. The syntax, evaluation and actual correspondence remain explicit; the stronger presuppositionless target is neither completed nor declared impossible. This paragraph is an AI scope record, not an additional user quotation.
+
+<a id="substitution-continuation"></a>
+
+## 2026年10月9日：代入关系接续 / Substitution continuation
+
+After receiving updated repository instructions and the preceding binding/identity result, Ren wrote:
+
+> 请继续
+
+AI scope summary: continue the independently authorized metalogical investigation through the actual introduction/use/substitution connection. The [existing study's continuation](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#binding-preserving-substitution) constructs nested substitution, checks preservation and capture boundaries, and retains the stronger philosophical target. This text records execution scope; it is not an additional Ren quotation or a new authorization to claim complete axiom-free grounding. Date uses Asia/Bangkok; frozen Lean receipts retain their UTC timestamps.
+
+<a id="complete-binding-grounding"></a>
+
+## 2026年10月9日：明确缺口并要求完成 / Identify the gap and complete it
+
+Ren asked:
+
+> “无前提奠基仍未完成” 差什么
+
+AI response summary: the assistant distinguished the checked conditional consequences from the ground of the basic introduction/use interpretation, its scope and its own use of inference. It identified a constitutive argument about actual binding, tested by alternatives preserving the relevant activity, as the required next work. It also rejected adding all perception and world-knowledge as a completion gate for this local problem. This is an AI summary, not a user quotation.
+
+Ren then instructed:
+
+> 完成它
+
+The [completed argument assessment in the existing study](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECOGNITIONAL-BINDING-INTEGRATION.md#constitutive-binding-assessment) distinguishes the local constitutive explanation from the stronger presuppositionless target. The instruction authorizes pursuing completion; it does not supply evidence that the stronger result has been achieved. No change to other independently authorized research scopes is inferred.

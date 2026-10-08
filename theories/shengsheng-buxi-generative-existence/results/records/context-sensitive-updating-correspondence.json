@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "id": "context-sensitive-updating-correspondence",
+  "title": {
+    "zh": "情境选择性更新的公开数据对应",
+    "en": "Public-data correspondence for context-sensitive updating"
+  },
+  "kind": "assessment",
+  "status": "reviewed-scoped",
+  "family": "F04",
+  "reviewed_at_utc": "2026-10-08T18:30:05.769357+00:00",
+  "claim": {
+    "zh": "24人公开数据复算支持训练前后扰动方向效应增强及训练后的线索效应；线索效应的增强未明确成立，有限后段中其作用较弱。",
+    "en": "Reanalysis of 24 participants supports an increased perturbation contrast across training and a post-training cue effect; an acquired increase in the cue effect is uncertain and its later finite-window effect is weaker."
+  },
+  "hypotheses": [
+    {
+      "zh": "采用作者的逐试次施力系数、线索／方向对应及公开Fig3窗口；不声称独立重建原始力处理或重新拟合COIN。",
+      "en": "Use author-processed trial coefficients, cue/direction mapping and published Fig3 windows; no independent raw-force preprocessing reconstruction or COIN refit."
+    },
+    {
+      "zh": "完整24人样本；参与者重采样，三个变化检验作Holm校正；其他区间与敏感性分析属探索性，阶段变化不能独立识别全部训练因果效应。",
+      "en": "Complete 24-person sample, participant bootstrap, and Holm adjustment for three change tests; other intervals/sensitivities are exploratory and phase change does not isolate every causal effect of training."
+    },
+    {
+      "zh": "24人原始表片段经范围、哈希及冗余表核对；仅第24人完整文件另核官方哈希。第13人缺失两个非所分析三试次中的编号，保留并作删人敏感性检查。",
+      "en": "Check ranges, local fragment hashes and redundant tables for all 24; only participant 24 also has a complete-file deposited-hash check. Two absent source trial numbers for participant 13 lie outside the analysed triplets and are preserved with an omission sensitivity."
+    }
+  ],
+  "correspondence": {
+    "zh": "7,008次通道测量与2,304组三试次把已形成的实验历史接到后续表现更新；形成、当前作用和持续性分别判断，不把表现差值当作直接读出的隐藏记忆。",
+    "en": "7,008 channel measurements and 2,304 triplets connect established experimental history to subsequent expressed updates. Formation, current effect and persistence remain distinct; the expressed difference is not direct latent-memory readout."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/MEMORY-UPDATING.md",
+  "aliases": [],
+  "dependencies": [
+    {
+      "id": "situated-recovery-empirical-correspondence",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "复用反应保留与测量对应的完成结果，加入操控线索／扰动下的更新比较；不声称正式定理组合或独立重复实验。",
+        "en": "Reuse completed retention and measurement correspondence, adding updating contrasts under cue/perturbation manipulations; no formal theorem composition or independent experimental replication."
+      }
+    }
+  ],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/MEMORY-UPDATING.md",
+      "detail": {
+        "zh": "线索变化区间包含零；较晚线索效应弱化，P−条件的线索效应未明确成立；阶段／时间及潜在检索解释保留。",
+        "en": "Cue-change interval includes zero; later cue influence is weaker and the cue contrast within P− is uncertain. Phase/time and latent-retrieval alternatives remain."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "未识别唯一潜在机制、无限收敛、完整情境理解、任意新概念、自主最终目标或完整跨尺度生物联合验证。",
+    "en": "Does not identify a unique latent mechanism, infinite convergence, complete situational understanding, arbitrary new concepts, autonomous final goals or full cross-scale biological joint validation."
+  },
+  "validation_scope": {
+    "zh": "51,152行、7,008测量、2,304组三试次；全部分组与作者代码的另一翻译吻合，五个发表统计量吻合。48个原始片段及一个完整原文件核验；实质自审，无独立样本、独立审查或新Lean定理。",
+    "en": "51,152 rows, 7,008 measurements and 2,304 triplets; grouping matches a separate translation of author code and five published statistics. Verify 48 original fragments and one complete original; substantive self-review, no independent sample/review or new Lean theorem."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/MEMORY-UPDATING.md",
+      "role": "statement",
+      "sha256": "950ba4a78a68cb91f3584dd7bf0705c6a5318d36a44b20d82d2fcf30c601e370",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md",
+      "role": "review",
+      "sha256": "b49d49d99d92be46c4a38225170120350f1bd3fe3bd52ee05f31a476aa04338f",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "2a03855ec4bcc1d0e2170e0355ced99b07401ba8e4f7c448d9f7e0471357b0c0",
+      "declarations": []
+    },
+    {
+      "path": "sources/situated-recovery/heald-2021/README.md",
+      "role": "provenance",
+      "sha256": "a70f0dd135fa1692a8552cf45e06bb7baba1268e198ae07952a7ea7b319c941c",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/MEMORY-UPDATING-PLAN.md",
+      "role": "provenance",
+      "sha256": "98756e31154949a9a47284ab436cb94514d2fb3a4461bb365693bd5dfa7b6c70",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/memory-updating-verification.json",
+      "role": "receipt",
+      "sha256": "3266f28dba75031c76a70ff1411dc2a77354ea989857b8c47331094e5ee7ae69",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [],
+  "next_delta": {
+    "zh": "复用公开研究中能区分记忆修订、表达变化与有意纠正的观察／操控，推进到反思性模型和目标修订。",
+    "en": "Use observations/manipulations in existing studies that distinguish memory revision, expression changes and deliberate correction, advancing toward reflective model and goal revision."
+  },
+  "history": [
+    {
+      "zh": "2026-10-09：按Ren继续利用公开数据的指令，接续16人恢复研究，完成24人情境更新对应并保留不支持单调增强的结果。",
+      "en": "2026-10-09: followed Ren’s direction to continue with public data, extending the 16-person recovery study with complete 24-person updating correspondence while preserving results against monotonic strengthening."
+    }
+  ]
+}

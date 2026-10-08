@@ -1,0 +1,148 @@
+{
+  "scope": "Whole-theory philosophical deduction assessment and correction of the surviving universal-generativity completion gate. Existing target updated; no new result identity, theorem, compilation or empirical claim.",
+  "reviewed_at_utc": "2026-10-08T19:02:10.279640+00:00",
+  "records": [
+    "theory-of-becoming-foundation",
+    "becoming-context-coherence",
+    "control-coherence-loss"
+  ],
+  "entry_ids": [
+    "C01"
+  ],
+  "paired_scope_additions": {
+    "scope_en": " The corrected whole deduction separates inclusive scope, relational constitution and particular operative modes. Earlier universal-generativity gap reports do not set its completion gate. The direct inclusion-to-constitution argument remains incomplete; primary Hegel passages distinguish the opening category from cause or condition. No new theorem is claimed.",
+    "scope_zh": " 修正后的整体演绎区分包容范围、关系构成与具体作用形态；此前普遍生成性缺口不设定其完成门槛。从包容到构成的直接论证仍未完成；黑格尔原典区分最初范畴与原因、条件。无新增定理。"
+  },
+  "links_added": [
+    {
+      "label_en": "Whole deduction: inclusion and relational constitution",
+      "label_zh": "整体演绎：包容与关系构成",
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md#19-the-whole-deduction-and-the-passage-from-inclusion-to-relation"
+    }
+  ],
+  "reviewed_sources": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md": {
+      "before": "e0f0849f885d3c84c24e18772554583398144aa5cc6f357e64db666b00cba18c",
+      "after": "a3bb5b0c7e0630bfc24ade4e35dc33354160bf0ac0355dca05286626514899fd"
+    },
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BECOMING-FOUNDATION.md": {
+      "before": "d448d55329a73ace2b68af7b412e554d760141a21a4ee1c03248b3e07758dd97",
+      "after": "5daa894cad1efdc502d305ce757ac6ed1478f9fb5b4376c21873edd5bdbeabb7"
+    }
+  },
+  "prior_study_prefix_sha256": "e0f0849f885d3c84c24e18772554583398144aa5cc6f357e64db666b00cba18c",
+  "prior_study_preserved": true,
+  "unrelated_entries_preserved": true,
+  "unrelated_rendered_lines_preserved": true,
+  "source_assessment": [
+    {
+      "url": "https://www.marxists.org/reference/archive/hegel/works/hl/hlbeing.htm",
+      "sections": "132–134",
+      "use": "Reconstruct the affirmative immanent category; no adoption as a premise."
+    },
+    {
+      "url": "https://www.marxists.org/reference/archive/hegel/works/hl/hl083.htm",
+      "sections": "140, 169, 176–183; surrounding discussion inspected",
+      "use": "Distinguish determinate loss, opening transition, further causal/ground relations, and stability; no whole-system interpretation or mathematical formalization."
+    },
+    {
+      "url": "https://www.marxists.org/reference/archive/hegel/works/hl/hlbegin.htm",
+      "sections": "109–114; 101–108 and 115–121 read for context",
+      "use": "Assess the presupposition in analysis of a concrete beginning; do not import pure abstraction as our method."
+    }
+  ],
+  "validation": {
+    "status": "passed-scoped",
+    "checked_at_utc": "2026-10-08T19:04:24.063053+00:00",
+    "document_link_checks": 27,
+    "canonical_C01_row_matches": true,
+    "owned_reviewed_versions_match": true,
+    "earlier_study_bytes_preserved": true,
+    "new_mathematical_claims": 0,
+    "unchanged_proof_bindings": [
+      "theory-of-becoming-foundation",
+      "becoming-context-coherence",
+      "control-coherence-loss"
+    ],
+    "commands": {
+      "make research-render": 2,
+      "make research-check": 2,
+      "focused three-record check": 0,
+      "generative_chain --render": 2,
+      "generative_chain --check": 2,
+      "git diff --check scoped": 0
+    },
+    "global_metadata_errors": [],
+    "unrelated_source_drift": [
+      {
+        "id": "effective-capacity-and-eventual-reachability",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY-OF-BECOMING.md",
+        "reviewed_sha256": "487959af2954b350c8eee8620f90765505177e5d31ef78fa33869bd7b98000e9",
+        "current_sha256": "a559e7c5611e84704a446b67eb308b518ec0e225ef3ce7fd04003f444a622892"
+      },
+      {
+        "id": "joint-correlation-reduced-dynamics",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY-OF-BECOMING.md",
+        "reviewed_sha256": "487959af2954b350c8eee8620f90765505177e5d31ef78fa33869bd7b98000e9",
+        "current_sha256": "a559e7c5611e84704a446b67eb308b518ec0e225ef3ce7fd04003f444a622892"
+      },
+      {
+        "id": "positioned-positive-reason",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md",
+        "reviewed_sha256": "9143724537d8578457a4ed489fda0d01c776d5c3f317b3c14f9e3308ff9f567f",
+        "current_sha256": "9708f58e675b3cd0a02e7f108ac1b84f0ec9e4762a95877a1c79666b9666c86e"
+      }
+    ],
+    "chain_unrelated_issues": [
+      "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/organizational-formation-from-generative-comparison.md",
+      "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/situated-recovery-empirical-correspondence.md",
+      "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/context-sensitive-updating-correspondence.md",
+      "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/transition-grouping-word-partition.md",
+      "Linked source versions changed; reread affected entries before rendering."
+    ],
+    "chain_pending_changes": {
+      "modified_sources": [
+        "RESEARCH.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+        "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+        "theories/shengsheng-buxi-generative-existence/README.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+        "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+        "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md",
+        "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md",
+        "theories/shengsheng-buxi-generative-existence/results/records/market-supported-finite-transition.md",
+        "experiments/market-generativity/formal/README.md",
+        "theories/shengsheng-buxi-generative-existence/results/records/recurrent-chain-assembly.json",
+        "theories/shengsheng-buxi-generative-existence/results/records/classification-robust-generative-comparison.json",
+        "theories/shengsheng-buxi-generative-existence/results/records/classification-robust-generative-comparison.md",
+        "theories/shengsheng-buxi-generative-existence/results/records/market-partial-correction-boundary.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY-OF-BECOMING.md"
+      ],
+      "missing_sources": [],
+      "new_pages": [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-ETHICS-ISOMORPHISM-AUDIT.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATOR-GROUNDING-ARGUMENT.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-DISCRIMINATION-INTEGRATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-RENEWAL-INTEGRATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/G0-WARRANT.md"
+      ],
+      "removed_pages": [
+        "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+        "theories/meta-attractor/COMMON-ORGANIZATION.md"
+      ]
+    },
+    "scope_note": "Local documentary verification and preservation only. Unrelated source reviews remain pending. No philosophical proof is supplied by these metadata checks."
+  }
+}

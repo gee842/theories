@@ -1,0 +1,143 @@
+Generative.FormedGrounds.run_append (reversed : Bool) (xs ys : List Generative.FormedGrounds.Event)
+  (s : Generative.FormedGrounds.State) :
+  Generative.FormedGrounds.run reversed (xs ++ ys) s =
+    Generative.FormedGrounds.run reversed ys (Generative.FormedGrounds.run reversed xs s)
+Generative.FormedGrounds.encode_involutive (reversed b : Bool) :
+  Generative.FormedGrounds.encode reversed (Generative.FormedGrounds.encode reversed b) = b
+Generative.FormedGrounds.interpretation_depends_on_acquired_view (s t : Generative.FormedGrounds.State)
+  (sameEvidence : Generative.FormedGrounds.observations s = Generative.FormedGrounds.observations t)
+  (sameSignal : s.signal = t.signal) (r u : Bool) :
+  (Generative.FormedGrounds.step r Generative.FormedGrounds.Event.judge s).judgment =
+    (Generative.FormedGrounds.step u Generative.FormedGrounds.Event.judge t).judgment
+Generative.FormedGrounds.step_evidence_origin (reversed : Bool) (e : Generative.FormedGrounds.Event)
+  (s : Generative.FormedGrounds.State) (r : Generative.FormedGrounds.Evidence)
+  (retained : r ∈ (Generative.FormedGrounds.step reversed e s).examples) :
+  r ∈ s.examples ∨
+    e = Generative.FormedGrounds.Event.calibrate ∧
+      Generative.FormedGrounds.enabled s = true ∧ Generative.FormedGrounds.contact reversed s = r
+Generative.FormedGrounds.retained_evidence_origin (reversed : Bool) (es : List Generative.FormedGrounds.Event)
+  (s : Generative.FormedGrounds.State) (r : Generative.FormedGrounds.Evidence)
+  (retained : r ∈ (Generative.FormedGrounds.run reversed es s).examples) :
+  r ∈ s.examples ∨ Generative.FormedGrounds.AcquiredAlong reversed es s r
+Generative.FormedGrounds.from_initial_evidence_is_acquired (reversed : Bool) (es : List Generative.FormedGrounds.Event)
+  (r : Generative.FormedGrounds.Evidence)
+  (retained : r ∈ (Generative.FormedGrounds.run reversed es Generative.FormedGrounds.initial).examples) :
+  Generative.FormedGrounds.AcquiredAlong reversed es Generative.FormedGrounds.initial r
+Generative.FormedGrounds.contact_has_physical_correspondence (reversed : Bool) (s : Generative.FormedGrounds.State) :
+  (Generative.FormedGrounds.contact reversed s).receipt.report =
+      decide
+        ((Generative.FormedGrounds.contact reversed s).receipt.specimen ≤
+          (Generative.FormedGrounds.contact reversed s).receipt.reference) ∧
+    Generative.FormedGrounds.encode reversed (Generative.FormedGrounds.contact reversed s).token =
+      (Generative.FormedGrounds.contact reversed s).receipt.report
+Generative.FormedGrounds.acquired_evidence_preserves_relation (reversed : Bool)
+  (es : List Generative.FormedGrounds.Event) (s : Generative.FormedGrounds.State)
+  (r : Generative.FormedGrounds.Evidence) (origin : Generative.FormedGrounds.AcquiredAlong reversed es s r) :
+  Generative.FormedGrounds.encode reversed r.token = r.receipt.report
+Generative.FormedGrounds.all_reachable_evidence_fits (reversed : Bool) (es : List Generative.FormedGrounds.Event) :
+  Generative.StandardsBridge.Fits (Generative.FormedGrounds.encode reversed)
+    (Generative.FormedGrounds.observations (Generative.FormedGrounds.run reversed es Generative.FormedGrounds.initial))
+Generative.FormedGrounds.every_reachable_faithful_interpretation_is_correct (reversed : Bool)
+  (es : List Generative.FormedGrounds.Event) (b result : Bool)
+  (asserted :
+    Generative.FormedGrounds.interpret
+        (Generative.FormedGrounds.observations
+          (Generative.FormedGrounds.run reversed es Generative.FormedGrounds.initial))
+        (some (Generative.FormedGrounds.encode reversed b)) =
+      some result) :
+  result = b
+Generative.FormedGrounds.before_calibration_no_definite_interpretation (b : Bool) :
+  Generative.FormedGrounds.interpret (Generative.FormedGrounds.observations Generative.FormedGrounds.initial) (some b) =
+    none
+Generative.FormedGrounds.one_contact_leaves_unseen_signal_unsettled (reversed : Bool) :
+  Generative.FormedGrounds.interpret
+      (Generative.FormedGrounds.observations
+        (Generative.FormedGrounds.step reversed Generative.FormedGrounds.Event.calibrate
+          Generative.FormedGrounds.initial))
+      (some (Generative.FormedGrounds.encode reversed true)) =
+    none
+Generative.FormedGrounds.training_forms_decoder (reversed b : Bool) :
+  Generative.FormedGrounds.interpret (Generative.FormedGrounds.observations (Generative.FormedGrounds.trained reversed))
+      (some (Generative.FormedGrounds.encode reversed b)) =
+    some b
+Generative.FormedGrounds.training_uses_real_contrasts (reversed : Bool) :
+  (Generative.FormedGrounds.trained reversed).examples.length = 2 ∧
+    (Generative.FormedGrounds.trained reversed).native.budget = 2 ∧
+      (Generative.FormedGrounds.trained reversed).judgment = none
+Generative.FormedGrounds.token_shape_does_not_fix_content :
+  Generative.FormedGrounds.interpret (Generative.FormedGrounds.observations (Generative.FormedGrounds.trained false))
+        (some true) =
+      some true ∧
+    Generative.FormedGrounds.interpret (Generative.FormedGrounds.observations (Generative.FormedGrounds.trained true))
+        (some true) =
+      some false
+Generative.FormedGrounds.joint_recoding_preserves_interpreted_content (reversed b : Bool) :
+  Generative.FormedGrounds.interpret (Generative.FormedGrounds.observations (Generative.FormedGrounds.trained reversed))
+      (some (Generative.FormedGrounds.encode reversed b)) =
+    Generative.FormedGrounds.interpret
+      (Generative.FormedGrounds.observations (Generative.FormedGrounds.trained !reversed))
+      (some (Generative.FormedGrounds.encode (!reversed) b))
+Generative.FormedGrounds.learned_interpretation_is_used (reversed : Bool) :
+  (Generative.FormedGrounds.issued reversed).judgment =
+      some (Generative.NormativeActivity.target (Generative.FormedGrounds.issued reversed).native) ∧
+    (Generative.FormedGrounds.issued reversed).judgment = some false ∧
+      (Generative.FormedGrounds.issued reversed).native.budget = 1
+Generative.FormedGrounds.same_formed_interpretation_can_be_false (reversed : Bool) :
+  Generative.FormedGrounds.observations (Generative.FormedGrounds.mistaken reversed) =
+      Generative.FormedGrounds.observations (Generative.FormedGrounds.issued reversed) ∧
+    (Generative.FormedGrounds.mistaken reversed).judgment = some true ∧
+      Generative.NormativeActivity.target (Generative.FormedGrounds.mistaken reversed).native = false ∧
+        (Generative.FormedGrounds.mistaken reversed).incentive = 10
+Generative.FormedGrounds.new_record_without_review_does_not_correct (reversed : Bool) :
+  have s :=
+    Generative.FormedGrounds.step reversed Generative.FormedGrounds.Event.inspectOnly
+      (Generative.FormedGrounds.mistaken reversed);
+  s.native.receipt = some (Generative.NormativeActivity.sample (Generative.FormedGrounds.mistaken reversed).native) ∧
+    s.judgment = some true ∧ Generative.NormativeActivity.target s.native = false
+Generative.FormedGrounds.acquired_review_refutes_and_corrects (reversed : Bool) :
+  (Generative.FormedGrounds.corrected reversed).review = some false ∧
+    (Generative.FormedGrounds.corrected reversed).judgment = some false ∧
+      (Generative.FormedGrounds.corrected reversed).judgment =
+          some (Generative.NormativeActivity.target (Generative.FormedGrounds.corrected reversed).native) ∧
+        (Generative.FormedGrounds.corrected reversed).incentive = 10 ∧
+          (Generative.FormedGrounds.corrected reversed).native.budget = 0
+Generative.FormedGrounds.review_preserves_meaning_and_compared_relation (reversed : Bool) :
+  Generative.FormedGrounds.observations (Generative.FormedGrounds.corrected reversed) =
+      Generative.FormedGrounds.observations (Generative.FormedGrounds.mistaken reversed) ∧
+    (Generative.FormedGrounds.corrected reversed).native.specimen =
+        (Generative.FormedGrounds.mistaken reversed).native.specimen ∧
+      (Generative.FormedGrounds.corrected reversed).native.reference =
+        (Generative.FormedGrounds.mistaken reversed).native.reference
+Generative.FormedGrounds.correct_prior_judgment_is_confirmed (reversed : Bool) :
+  (Generative.FormedGrounds.step reversed Generative.FormedGrounds.Event.review
+        (Generative.FormedGrounds.issued reversed)).review =
+    some true
+Generative.FormedGrounds.closed_review_cannot_claim_confirmation (reversed : Bool) :
+  have s :=
+    Generative.FormedGrounds.step reversed Generative.FormedGrounds.Event.review
+      (Generative.FormedGrounds.step reversed Generative.FormedGrounds.Event.close
+        (Generative.FormedGrounds.mistaken reversed));
+  s.review = none ∧ s.judgment = some true
+Generative.FormedGrounds.exhausted_review_does_not_acquire_a_ground (reversed : Bool) :
+  have s :=
+    Generative.FormedGrounds.step reversed Generative.FormedGrounds.Event.inspectOnly
+      (Generative.FormedGrounds.mistaken reversed);
+  Generative.FormedGrounds.step reversed Generative.FormedGrounds.Event.review s = s
+Generative.FormedGrounds.reward_alone_cannot_repair_interpretation (reversed : Bool) (n : Nat) :
+  (Generative.FormedGrounds.step reversed (Generative.FormedGrounds.Event.reward n)
+        (Generative.FormedGrounds.mistaken reversed)).judgment =
+    some true
+Generative.FormedGrounds.full_history_is_one_reachable_execution (reversed : Bool) :
+  Generative.FormedGrounds.corrected reversed =
+    Generative.FormedGrounds.run reversed
+      (Generative.FormedGrounds.training ++
+        [Generative.FormedGrounds.Event.setReference 0, Generative.FormedGrounds.Event.hear,
+          Generative.FormedGrounds.Event.judge, Generative.FormedGrounds.Event.reverseSignal,
+          Generative.FormedGrounds.Event.judge, Generative.FormedGrounds.Event.reward 10,
+          Generative.FormedGrounds.Event.review])
+      Generative.FormedGrounds.initial
+Generative.FormedGrounds.later_change_retains_review_but_defeats_current_accuracy (reversed : Bool) :
+  have s :=
+    Generative.FormedGrounds.step reversed (Generative.FormedGrounds.Event.setReference 1)
+      (Generative.FormedGrounds.corrected reversed);
+  s.review = some false ∧ s.judgment = some false ∧ Generative.NormativeActivity.target s.native = true

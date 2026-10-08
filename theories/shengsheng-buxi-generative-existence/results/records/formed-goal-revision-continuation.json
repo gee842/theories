@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "formed-goal-revision-continuation",
+  "title": {
+    "zh": "取得根据的目的修订与实际接续",
+    "en": "Acquired grounds, goal revision and actual continuation"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F03",
+  "reviewed_at_utc": "2026-10-08T18:23:59.802431+00:00",
+  "claim": {
+    "zh": "给定有损访问且转变保留维护的教育构造，取得的原目标为参与计数；既有比较支持学习实践，完成修订与选择改革后五次实际操作使用新目的并保留先前一次损失。",
+    "en": "In the supplied educational construction with access loss and preserved transition maintenance, acquisition forms the attendance goal; the existing comparison supports learning, and after revision and selector reform five actual operations consume the new goal while retaining the earlier loss."
+  },
+  "hypotheses": [
+    {
+      "zh": "两实践、反馈与校准规律、G0/J 解释、响应与权限、初始工作和储备以及给定执行顺序。",
+      "en": "Two practices, feedback/calibration laws, G0/J interpretation, responsiveness and authority, initial work/reserve and the scheduled sequence."
+    }
+  ],
+  "correspondence": {
+    "zh": "明确区分目的形成、成就判准改变与行动；局部二选一不能冒充任意目的的开放发现。",
+    "en": "Distinguishes goal formation, changed attainment criteria and action; the two-practice local choice is not open discovery of arbitrary ends."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GoalFormationRevision.lean",
+  "aliases": [
+    "GoalFormationRevision.joined_revision_has_warrant_and_actual_continuation"
+  ],
+  "dependencies": [],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GoalFormationRevision.lean",
+      "detail": {
+        "zh": "证据失真、根据过期、不响应、交叉损失和支持不足各有反例；不证明普遍动机形成或生物实现。",
+        "en": "False or stale grounds, nonresponse, crossed losses and insufficient support retain counterexamples; no universal motivation or biological realization."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "证据失真、根据过期、不响应、交叉损失和支持不足各有反例；不证明普遍动机形成或生物实现。",
+    "en": "False or stale grounds, nonresponse, crossed losses and insufficient support retain counterexamples; no universal motivation or biological realization."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.30.0-rc2 实际重建导入闭包并审计；明确区分原成果和新增组合。元数据检查不替代数学证明。",
+    "en": "Lean 4.30.0-rc2 actually rebuilt the repository import closure and audited declarations; inherited claims and the new composition remain distinct. Metadata checks do not replace proofs."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GoalFormationRevision.lean",
+      "role": "proof",
+      "sha256": "90c5903cf3d1382304fa91dc3336e7a8ae20c89695ea4c9baabd9b95bd068038",
+      "declarations": [
+        "GoalFormationRevision.joined_revision_has_warrant_and_actual_continuation"
+      ]
+    },
+    {
+      "path": "experiments/market-generativity/meta-attractor/common-task-revision-verification.json",
+      "role": "receipt",
+      "sha256": "597e54ba387e56033ea99111c3b888108332a93f08fd7dcbb5763b3e7b019aa0",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "b5d56d35a4862466f33f0e893b7ae2917f2fec6de4b457a083f5aee6631f08d8",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GoalFormationRevision.lean",
+      "receipt": "experiments/market-generativity/meta-attractor/common-task-revision-verification.json",
+      "sha256_pointer": "/modules/5/source_sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "复用此相连历史；在途工作连接已由 acquired-revision-of-pending-task 推进，持续适用仍需说明。",
+    "en": "Reuse this joined history; acquired-revision-of-pending-task advances the in-flight connection, while continuing applicability remains to establish."
+  },
+  "history": [
+    {
+      "zh": "2026-10-09：迁移既有有界形成／修订定理；原稿与原回执保留，本轮仅把它重建为组合依赖。",
+      "en": "2026-10-09: migrated the existing bounded formation/revision theorem; original sources and receipt remain, rebuilt here as a composition dependency."
+    }
+  ]
+}

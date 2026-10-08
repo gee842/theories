@@ -1,0 +1,42 @@
+'Generative.HistoricalBinding.Moment' does not depend on any axioms
+'Generative.HistoricalBinding.History' does not depend on any axioms
+'Generative.HistoricalBinding.routeAt' does not depend on any axioms
+'Generative.HistoricalBinding.Observation' does not depend on any axioms
+'Generative.HistoricalBinding.Instruction' does not depend on any axioms
+'Generative.HistoricalBinding.acquire' does not depend on any axioms
+'Generative.HistoricalBinding.fits' does not depend on any axioms
+'Generative.HistoricalBinding.learn' does not depend on any axioms
+'Generative.HistoricalBinding.routesAt' does not depend on any axioms
+'Generative.HistoricalBinding.TimedPacket' does not depend on any axioms
+'Generative.HistoricalBinding.bindingView' does not depend on any axioms
+'Generative.HistoricalBinding.actual_history_retained' depends on axioms: [propext, Quot.sound]
+'Generative.HistoricalBinding.acquired_history_supplies_past_route' depends on axioms: [propext, Quot.sound]
+'Generative.HistoricalBinding.acquired_history_supplies_binding_coverage' depends on axioms: [propext, Quot.sound]
+'Generative.HistoricalBinding.allHistories' does not depend on any axioms
+'Generative.HistoricalBinding.changes' does not depend on any axioms
+'Generative.HistoricalBinding.envelope' does not depend on any axioms
+'Generative.HistoricalBinding.secure' does not depend on any axioms
+'Generative.HistoricalBinding.vulnerable' does not depend on any axioms
+'Generative.HistoricalBinding.deterioration' does not depend on any axioms
+'Generative.HistoricalBinding.improvement' does not depend on any axioms
+'Generative.HistoricalBinding.concealedExcursion' does not depend on any axioms
+'Generative.HistoricalBinding.constantSecure' does not depend on any axioms
+'Generative.HistoricalBinding.controls' does not depend on any axioms
+'Generative.HistoricalBinding.lateControl' does not depend on any axioms
+'Generative.HistoricalBinding.splitControls' does not depend on any axioms
+'Generative.HistoricalBinding.packetFaults' does not depend on any axioms
+'Generative.HistoricalBinding.packet' does not depend on any axioms
+'Generative.HistoricalBinding.answer' depends on axioms: [propext, Quot.sound]
+'Generative.HistoricalBinding.later_deterioration_does_not_invalidate_earlier_content' depends on axioms: [propext,
+ Quot.sound]
+'Generative.HistoricalBinding.later_improvement_does_not_rehabilitate_earlier_false_reports' depends on axioms: [propext,
+ Quot.sound]
+'Generative.HistoricalBinding.late_assessment_alone_leaves_the_old_binding_open' depends on axioms: [propext,
+ Quot.sound]
+'Generative.HistoricalBinding.known_change_without_location_does_not_settle_the_old_binding' depends on axioms: [propext,
+ Quot.sound]
+'Generative.HistoricalBinding.unknown_packet_disturbance_preserves_uncertainty' depends on axioms: [propext, Quot.sound]
+'Generative.HistoricalBinding.omitted_temporary_change_defeats_backward_confidence' depends on axioms: [propext,
+ Quot.sound]
+'Generative.HistoricalBinding.same_current_assessment_can_support_different_past_bindings' depends on axioms: [propext,
+ Quot.sound]

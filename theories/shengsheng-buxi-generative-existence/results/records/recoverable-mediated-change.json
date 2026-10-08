@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "id": "recoverable-mediated-change",
+  "title": {
+    "zh": "中断改变后的证据恢复与纠正边界",
+    "en": "Evidence recovery and corrective-access limits after interrupted change"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F05",
+  "reviewed_at_utc": "2026-10-08T18:53:33.830831+00:00",
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RecoverableControl.lean",
+  "aliases": [
+    "RecoverableControl.interrupted_history_preserves_safety",
+    "RecoverableControl.funded_suffix_publishes",
+    "RecoverableControl.published_history_to_current_certificate"
+  ],
+  "dependencies": [
+    {
+      "id": "mediated-evidence-transport",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "prepare_preserves_safety 直接复用 commit_preserves_actual_coverage 及 commit_records_the_executed_effect，给出恢复不变量的初值。",
+        "en": "prepare_preserves_safety directly reuses commit_preserves_actual_coverage and commit_records_the_executed_effect to initialize the recovery invariant."
+      },
+      "interface": {
+        "output": {
+          "zh": "提交目标具有实际候选覆盖并与执行程序的确切结果相等。",
+          "en": "The commit target has actual candidate coverage and equals the exact executed program result."
+        },
+        "input": {
+          "zh": "逐步执行开始时的 Coherent 需要该目标覆盖及全程序结果对应；后续相容性再接入当前认证。",
+          "en": "Initial Coherent requires that target coverage and full-program result correspondence; subsequent coherence then feeds current certification."
+        },
+        "conditions": {
+          "zh": "原初始覆盖、权限／代次检查及程序语义保留；新研究另加持久状态、微步骤和当前读取对应。",
+          "en": "Original initial coverage, permission/generation checks and program semantics remain; the new study additionally requires durable state, microsteps and current read correspondence."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RecoverableControl.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "alignment-direction-g0-j",
+      "detail": {
+        "zh": "解释关联：复用完成的 G0/J 方向；实现条件不独自证明权限及目的正当。",
+        "en": "Interpretive connection: reuses the completed G0/J direction; implementation conditions do not independently justify permissions or ends."
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RecoverableControl.lean",
+      "role": "proof",
+      "sha256": "05b158915cb6f387b5fef71bf9925b0221ba04d5bb1994243de3c820a266468c",
+      "declarations": [
+        "RecoverableControl.interrupted_history_preserves_safety",
+        "RecoverableControl.funded_suffix_publishes",
+        "RecoverableControl.published_history_to_current_certificate"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/recoverable-control-verification.json",
+      "role": "receipt",
+      "sha256": "10d57250f0263bffd2f32e71d30c54134d7053f601f5e8434ccf2ab54564658f",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "7691adee9e1f76698d2775e3b15a7f02277312b7cc02ba80468c8a0d35d91830",
+      "declarations": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md",
+      "role": "statement",
+      "sha256": "f100092dfc46968db1da068aa6f1f4a827946625852dea033267a311290589c0",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-finish-alignment-fruits.md",
+      "role": "provenance",
+      "sha256": "396d41225a3b911836840504e80392823b3cf3fe47db1f3f4e3783e13647fada",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MediatedControl.lean",
+      "role": "proof",
+      "sha256": "9a412dfca848a09f1b27e60b5551058a83597b1e131728f19096f9dafe888b7a",
+      "declarations": [
+        "MediatedControl.commit_preserves_actual_coverage",
+        "MediatedControl.commit_records_the_executed_effect"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RecoverableControlCases.lean",
+      "role": "proof",
+      "sha256": "cc7b10ede6b9eca67ee8cf36d097bacb7e83527c6817c2c2462b85f09896f0fc",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_recoverable_control.py",
+      "role": "provenance",
+      "sha256": "99bb5496244d7b79d5ecd0f2eca907e6375aa0563268868bb3b9a2d349f825c9",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RECOVERABLE-CONTROL.md",
+      "role": "statement",
+      "sha256": "0ac119884b9aa7fdfec214907258c6636bc87122eae7c20b6c04cc216735a874",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RecoverableControl.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/recoverable-control-verification.json",
+      "sha256_pointer": "/sources/RecoverableControl/sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MediatedControl.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/recoverable-control-verification.json",
+      "sha256_pointer": "/sources/MediatedControl/sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "claim": {
+    "zh": "持久待恢复描述和逐项覆盖写入可在任意有限合法中断历史中维持未完成态的相容性及发布态的实际候选覆盖；有相应资源与时距的 n 项剩余写入加发布恰在 n+1 无中断步完成。",
+    "en": "A durable pending description and sequential overwrite steps preserve coherence while incomplete and actual candidate coverage when published across every finite admitted interruption history; n remaining writes plus publication complete in exactly n+1 uninterrupted steps when corresponding resources and time remain."
+  },
+  "hypotheses": [
+    {
+      "zh": "起始证据覆盖及当前读取规律；准备目标来自原权限／代次检查的 commit；待恢复描述、消耗账及门控持久且受保护。",
+      "en": "Initial evidence coverage and current read law; the prepared target comes from the preceding permission/generation-checked commit; pending description, consumption state and gate are durable and protected."
+    },
+    {
+      "zh": "覆盖写入语义、单次写入／消耗原子性、准备及发布原子性、无额外写入或并行权限改变；中断保持已经发生的改变并带入明示延迟。",
+      "en": "Overwrite semantics, atomic individual write/consumption steps, atomic preparation/publication, no extra writer or concurrent grant change; interruptions retain completed effects and add a specified delay."
+    },
+    {
+      "zh": "完成定理另需足够剩余资源、截止期及一个无中断后缀；一致性本身不保证这些条件。",
+      "en": "The completion theorem additionally requires sufficient remaining resources, deadline and an uninterrupted suffix; consistency alone does not ensure them."
+    }
+  ],
+  "correspondence": {
+    "zh": "实际改变、保留的恢复根据及行动访问是同一历史中的分化；Safe 仅表示证据相容，不表示活动无害或停止入口总是可用。",
+    "en": "Actual change, retained recovery grounds and access to action differentiate within one history; Safe denotes evidence coherence, not harmless activity or always-available shutdown."
+  },
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RecoverableControl.lean",
+      "detail": {
+        "zh": "九单位时第一次实际写入后恢复耗尽，活动仍在运行且普通停止被阻；删去持久标记又可暴露失实认证。",
+        "en": "With nine units, recovery exhausts after the first actual write while activity remains running and ordinary shutdown is blocked; losing the durable marker can instead expose a false certificate."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RecoverableControl.lean",
+      "detail": {
+        "zh": "重复写入或中断延迟使22单位或23时限不足；此前消耗保留。",
+        "en": "Repeated writes or crash delay make 22 units or a 23-step deadline insufficient; prior consumption remains."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "局部恢复及证据推论，不是硬件、编译器、持久屏障、任意不可逆效果、独立紧急停止或伦理充分性的验证。实际全部损害并未建模；不证明普遍趋同或零实质公理。",
+    "en": "Local recovery and evidential inference, not verification of hardware, compiler, persistence barriers, arbitrary irreversible effects, an independent emergency stop or ethical adequacy. Full intermediate harm is not modeled; universal convergence and zero substantive axioms are not proved."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 新查22项定理／48项显式审计（17空、22仅propext、8另含Quot.sound、1再含Classical.choice）；九个继承证明模块及一个案例辅助模块另重编。27,888项同作者有限核对通过；完整签名、依赖及冻结哈希保留，无独立验收或硬件试验。",
+    "en": "Lean 4.29.1 checked 22 new theorems / 48 explicit audits (17 empty, 22 propext only, 8 also Quot.sound, 1 additionally Classical.choice); nine inherited proof modules and one case helper were separately rebuilt. 27,888 same-author finite comparisons passed; full signatures, dependencies and frozen hashes remain, without independent acceptance or hardware trials."
+  },
+  "next_delta": {
+    "zh": "reserved-shutdown-during-recovery 已接通未完成期间的有支持停止；原恢复反例仍成立于旧协议。真实持久实现、无旁路及受保护停止通道另需指定安装证据。",
+    "en": "reserved-shutdown-during-recovery now supplies supported stopping while incomplete; the old recovery counterexample remains valid for the old protocol. Real persistence, no bypass and the protected stop channel separately require evidence for an identified installation."
+  },
+  "history": [
+    {
+      "zh": "2026-10-09：接入逐项写入与重复中断后的恢复；保留耗尽运行、期限失败及标记丢失反例。原27项指令接续证明不重算为新增。",
+      "en": "2026-10-09: adds staged writes and recovery after repeated interruption, retaining exhausted-but-running, deadline and marker-loss failures. The original 27 instruction-continuation proofs are not recounted."
+    },
+    {
+      "zh": "2026-10-09：核读同研究§10、理论§14及“finish remains”来源的作者增量；更新三处文献指纹，原证明及实查回执未改，新增停止结果分列。",
+      "en": "2026-10-09: read the authored continuation in study §10, theory §14 and the “finish remains” provenance; reconciled three documentary fingerprints, leaving original proofs and scientific receipts unchanged; the stronger stopping result is separate."
+    }
+  ]
+}

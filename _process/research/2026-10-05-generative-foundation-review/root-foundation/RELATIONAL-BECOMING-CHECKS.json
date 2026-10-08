@@ -1,0 +1,199 @@
+{
+  "scope": "Documentary and exact-receipt correspondence only; reuses the actual Lean check. Unrelated records and full-chain review remain outside this acceptance.",
+  "utc": "2026-10-08T18:27:01.601787+00:00",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "lean receipt passed",
+      "passed": true
+    },
+    {
+      "name": "source binding GenerativeCore",
+      "passed": true
+    },
+    {
+      "name": "source binding JointContinuationClassification",
+      "passed": true
+    },
+    {
+      "name": "source binding RelationalBecoming",
+      "passed": true
+    },
+    {
+      "name": "retained artifact Controls.lean",
+      "passed": true
+    },
+    {
+      "name": "retained artifact Controls.log",
+      "passed": true
+    },
+    {
+      "name": "retained artifact GenerativeCore.lean",
+      "passed": true
+    },
+    {
+      "name": "retained artifact GenerativeCore.log",
+      "passed": true
+    },
+    {
+      "name": "retained artifact GenerativeCoreAxiomAudit.lean",
+      "passed": true
+    },
+    {
+      "name": "retained artifact GenerativeCoreAxiomAudit.log",
+      "passed": true
+    },
+    {
+      "name": "retained artifact GenerativeCoreSignatures.lean",
+      "passed": true
+    },
+    {
+      "name": "retained artifact GenerativeCoreSignatures.log",
+      "passed": true
+    },
+    {
+      "name": "retained artifact JointContinuationClassification.lean",
+      "passed": true
+    },
+    {
+      "name": "retained artifact JointContinuationClassification.log",
+      "passed": true
+    },
+    {
+      "name": "retained artifact JointContinuationClassificationAxiomAudit.lean",
+      "passed": true
+    },
+    {
+      "name": "retained artifact JointContinuationClassificationAxiomAudit.log",
+      "passed": true
+    },
+    {
+      "name": "retained artifact JointContinuationClassificationSignatures.lean",
+      "passed": true
+    },
+    {
+      "name": "retained artifact JointContinuationClassificationSignatures.log",
+      "passed": true
+    },
+    {
+      "name": "retained artifact RelationalBecoming.lean",
+      "passed": true
+    },
+    {
+      "name": "retained artifact RelationalBecoming.log",
+      "passed": true
+    },
+    {
+      "name": "retained artifact RelationalBecomingAxiomAudit.lean",
+      "passed": true
+    },
+    {
+      "name": "retained artifact RelationalBecomingAxiomAudit.log",
+      "passed": true
+    },
+    {
+      "name": "retained artifact RelationalBecomingSignatures.lean",
+      "passed": true
+    },
+    {
+      "name": "retained artifact RelationalBecomingSignatures.log",
+      "passed": true
+    },
+    {
+      "name": "retained artifact check.py",
+      "passed": true
+    },
+    {
+      "name": "retained artifact check_relational_becoming.py",
+      "passed": true
+    },
+    {
+      "name": "retained artifact version.log",
+      "passed": true
+    },
+    {
+      "name": "checker binding check_relational_becoming.py",
+      "passed": true
+    },
+    {
+      "name": "checker binding check.py",
+      "passed": true
+    },
+    {
+      "name": "global dependency metadata",
+      "passed": true
+    },
+    {
+      "name": "owned source fingerprints",
+      "passed": true
+    },
+    {
+      "name": "owned document links and anchors",
+      "passed": true
+    },
+    {
+      "name": "owned C09 paired content",
+      "passed": true
+    },
+    {
+      "name": "owned C09 rendered row",
+      "passed": true
+    },
+    {
+      "name": "chain own fingerprint _process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md",
+      "passed": true
+    },
+    {
+      "name": "chain own fingerprint experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalBecoming.lean",
+      "passed": true
+    },
+    {
+      "name": "chain own fingerprint experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-becoming-checks/20261008T181112.046979Z/verification.json",
+      "passed": true
+    },
+    {
+      "name": "chain own fingerprint _process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-POSSIBILITY-INTERFACE.md",
+      "passed": true
+    }
+  ],
+  "link_errors": [],
+  "registry_metadata_errors": [],
+  "unrelated_source_drift": [
+    {
+      "id": "classification-robust-generative-comparison",
+      "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+      "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+    },
+    {
+      "id": "organizational-formation-from-generative-comparison",
+      "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "reviewed_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d",
+      "current_sha256": "8b0b1757f8b9ecc73c94ba84992b91b2b946dd6115fc7447287e2c52c551634f"
+    }
+  ],
+  "source_bound_proof_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-becoming-checks/20261008T181112.046979Z/verification.json",
+  "authored_file_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md": "ac8189f0194b0dfc04b864bc8ae807f313358f5ac95a6c3b5a21681662b23eb3",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY-OF-BECOMING.md": "35e32063aefdfe53d404396747eb45e56b5afde0084175ca294f32f401e605e3",
+    "theories/shengsheng-buxi-generative-existence/results/records/effective-capacity-and-eventual-reachability.md": "aa348009f499bd0faef05a938f82f6cc62dec0fe544025e088428028a24ccfa5",
+    "sources/15-codex-theory-conversations/2026-10-09-generative-relation-change-goal.md": "8ce677d4e04ce3ee260df566b9538ee5b2e1e9a74244e6a1180f7fad674daf55"
+  },
+  "validation_commands": {
+    "research_render": "ran; exit 2 from unrelated source drift; healthy record rendered",
+    "research_check": "Latest run exit 2; no metadata or navigation errors. Two unrelated records retain drift against the changed alignment-priority source.",
+    "scoped_check": "Latest run passed (exit 0), 65-record dependency metadata checked, no selected source drift.",
+    "chain_render_and_check": "ran; exit 2 from unrelated unversioned/stale sources; owned paired row checked separately"
+  },
+  "mathematical_novelty": "Preparation event budget and application only. GenerativePossibility already proves the unbounded reachability distinction; duplicate inferences are credited, not new independent results.",
+  "goal_status": "active; full generative-relation-change objective unfinished",
+  "prior_documentary_attempt": {
+    "utc": "2026-10-08T18:24:02.150183+00:00",
+    "status": "failed",
+    "metadata_errors": [
+      "acquired-revision-of-pending-task: invalid reference role evidence"
+    ],
+    "note": "Concurrent result metadata was incomplete at the earlier check; its owner has since corrected it. No edits to that record were made here."
+  },
+  "reused_formation_proof_check": "RELATIONAL-BECOMING-REUSED-PROOF-CHECKS.json; three unchanged sources match the earlier successful actual Lean receipt; no rerun."
+}

@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "id": "inherited-structural-copying",
+  "title": {
+    "zh": "继承排列改变进一步复制",
+    "en": "Inherited arrangement changes further copying"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F10",
+  "reviewed_at_utc": "2026-10-08T19:33:55.797868+00:00",
+  "claim": {
+    "zh": "实际交换改变保留排列，逐项材料复制传递变化；在给定材料下推导精确接续预算及任意有限谱系，并由共同局部成本约束第三种排列。",
+    "en": "An actual exchange changes retained order and tokenwise material copying transmits it; declared material permits an exact continuation budget and every finite lineage, while shared local costs constrain a third arrangement."
+  },
+  "hypotheses": [
+    {
+      "zh": "非空路径模板可按序精确读取；局部相同／不同邻接成本、交换、释放和发生次序给定。",
+      "en": "A nonempty path template admits ordered exact access; equal/unequal adjacency costs, exchange, release and occurrence order are supplied."
+    },
+    {
+      "zh": "一般充足性与必要性使用模板序列加剩余尾部的材料池；接合消耗材料，首次接合及释放各需一支持。",
+      "en": "The general sufficiency/necessity theorem uses the template sequence plus a residual tail as stock; attachment consumes material, with one support unit each for first attachment and release."
+    }
+  ],
+  "correspondence": {
+    "zh": "先前实际 ABAB 片段满足新模板结构输入；这只核对端点，不证明旧接合作用形成读取能力。操作角色由保留排列、逐项移入和释放关系分化。",
+    "en": "The previous actual ABAB fragment meets the new structural template input; this checks the endpoint without deriving reading capability from old attachment. Operational roles differentiate through retained order, token transfers and release."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/StructuralCopying.lean",
+  "aliases": [
+    "StructuralCopying.exact_reproduction_budget"
+  ],
+  "dependencies": [
+    {
+      "id": "recurrent-chain-assembly",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "previous_fragment_is_template 核对既有片段与模板输入；新复制关系另为前提，不复用旧倍增成本。",
+        "en": "previous_fragment_is_template checks the existing fragment against the template input; the new copying relation is an added premise and does not reuse old doubling costs."
+      },
+      "interface": {
+        "output": {
+          "zh": "实际八组分链的四组分 ABAB 片段及保留边。",
+          "en": "The four-component ABAB fragment and retained edges of the actual eight-component chain."
+        },
+        "input": {
+          "zh": "结构复制的非空路径模板。",
+          "en": "A nonempty path template for structural copying."
+        },
+        "conditions": {
+          "zh": "端点同一之外，按序访问、精确复制、接合及释放仍须提供；旧分裂与新模板操作不等同。",
+          "en": "Beyond endpoint identity, ordered access, exact copying, attachment and release must be provided; old cleavage and new template operations are not identified."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/StructuralCopying.lean"
+      }
+    }
+  ],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/StructuralCopying.lean",
+      "detail": {
+        "zh": "共同库存中先后次序可使更昂贵排列先释放；完整复制未必释放，相容规律改变可反转排序。",
+        "en": "Shared-stock order can release the more costly arrangement first; a complete copy need not be released, and changed local costs can reverse ranking."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "未导出读取／保真能力、物理化学成本、变异发生率、自供或种群入侵。第三成本约束超出独立拟合系数，但同机制的强传统模型也有此约束。",
+    "en": "Reading/fidelity capability, physicochemical costs, mutation occurrence, autonomous feed and population invasion are not derived. The third-cost constraint exceeds independently fitted coefficients but is also available to a strong conventional model with the same mechanism."
+  },
+  "validation_scope": {
+    "zh": "34项新定理声明／57项新审计，430项实际闭包审计中373项继承分列；原始论文只作机制与比较对应，无新数据复算。",
+    "en": "34 new theorem declarations / 57 new audits, with 373 inherited declarations separate in 430 actual-closure audits. The primary paper supplies mechanism/comparison context, not a new data reanalysis."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/StructuralCopying.lean",
+      "role": "proof",
+      "sha256": "2e804dd44a4cf8fe89908f26cad044ca7aec58379cb7790bfb401eb939757a1e",
+      "declarations": [
+        "StructuralCopying.formed_variant_enters_copying",
+        "StructuralCopying.exact_reproduction_budget",
+        "StructuralCopying.finite_lineage_inherits",
+        "StructuralCopying.lineage_accounts",
+        "StructuralCopying.third_structure_cost_constraint",
+        "StructuralCopying.two_costs_determine_third",
+        "StructuralCopying.shared_supply_order_matters"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/structural-copying-verification/verification.json",
+      "role": "receipt",
+      "sha256": "5b1c5e52cc29abd4557b7a2b17cbe2ae84df24aa4252bee951394b84fd5804e5",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "08738429cb8e1369eef571c7149f4e031103411c57c971165141b0319785ccf8",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/StructuralCopying.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/structural-copying-verification/verification.json",
+      "sha256_pointer": "/source_sha256/StructuralCopying.lean",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "配准形成和已成产物编辑均有后续条件组合；继续选择性／参考规律、持续支持及共同供给中的选择。",
+    "en": "Registration formation and editing of existing products now have conditional continuations; next explain selectivity/reference relations, renewed support and selection under shared provision."
+  },
+  "history": [
+    {
+      "zh": "2026-10-09：接续原分割研究，保留原固定规律成果与社会组织支线；一个局部组合成果，不按声明数认领独立发现。",
+      "en": "2026-10-09: extends the existing fragmentation study while preserving fixed-law results and the social-organizational branch; one local composition, not one independent discovery per declaration."
+    },
+    {
+      "zh": "2026-10-09：重读并接入同一研究的配准形成段；旧数学主张及原回执不变，修正旧比较段中完美复制前提的指称。",
+      "en": "2026-10-09: reconciles the same study’s registration-formation continuation; prior mathematics and receipts remain unchanged, and the old comparison clarifies that perfect copying was this model’s premise."
+    },
+    {
+      "zh": "2026-10-09：已阅读同一研究新增的材料编辑连接；本记录的旧数学及原回执不变，旧无编辑范围不因新增操作而撤销。",
+      "en": "2026-10-09: reconciles the same study’s added material-editing connection; prior mathematics and receipts remain unchanged, and adding an editing operation does not withdraw the old no-editing scope."
+    }
+  ]
+}

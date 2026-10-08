@@ -1,0 +1,208 @@
+'ReservedShutdown.book' does not depend on any axioms
+'ReservedShutdown.actual' does not depend on any axioms
+'ReservedShutdown.state' does not depend on any axioms
+'ReservedShutdown.mapBook' does not depend on any axioms
+'ReservedShutdown.setState' does not depend on any axioms
+'ReservedShutdown.control' does not depend on any axioms
+'ReservedShutdown.Grant' does not depend on any axioms
+'ReservedShutdown.eligible' does not depend on any axioms
+'ReservedShutdown.Armed' depends on axioms: [propext]
+'ReservedShutdown.backend' does not depend on any axioms
+'ReservedShutdown.stopDevice' does not depend on any axioms
+'ReservedShutdown.stop' does not depend on any axioms
+'ReservedShutdown.Stopped' does not depend on any axioms
+'ReservedShutdown.setState_preserves_evidence' depends on axioms: [propext]
+'ReservedShutdown.stop_executes_current_authorized_command' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReservedShutdown.denied_grant_cannot_stop' depends on axioms: [propext]
+'ReservedShutdown.stop_keeps_pending_record' depends on axioms: [propext]
+'ReservedShutdown.debit' does not depend on any axioms
+'ReservedShutdown.debit_shape' depends on axioms: [propext]
+'ReservedShutdown.tick_available_and_preserves_control' depends on axioms: [propext, Quot.sound]
+'ReservedShutdown.Attempt' does not depend on any axioms
+'ReservedShutdown.admissible' does not depend on any axioms
+'ReservedShutdown.attempt' depends on axioms: [propext]
+'ReservedShutdown.eligibility_follows_control' depends on axioms: [propext]
+'ReservedShutdown.recovery_attempt_keeps_stop_margin' depends on axioms: [propext, Quot.sound]
+'ReservedShutdown.Supervisor' does not depend on any axioms
+'ReservedShutdown.stopped' does not depend on any axioms
+'ReservedShutdown.cycle' depends on axioms: [propext]
+'ReservedShutdown.Valid' depends on axioms: [propext]
+'ReservedShutdown.cycle_keeps_access_or_stops' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReservedShutdown.run' depends on axioms: [propext]
+'ReservedShutdown.failedSnapshot' depends on axioms: [propext]
+'ReservedShutdown.runRetained' depends on axioms: [propext]
+'ReservedShutdown.successful_execution_retains_exact_state' depends on axioms: [propext]
+'ReservedShutdown.stopped_is_absorbing' depends on axioms: [propext]
+'ReservedShutdown.every_supported_schedule_finishes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReservedShutdown.preflight' depends on axioms: [propext]
+'ReservedShutdown.admission_establishes_stop_access' depends on axioms: [propext, Quot.sound]
+'ReservedShutdown.inspected' depends on axioms: [propext]
+'ReservedShutdown.grant' does not depend on any axioms
+'ReservedShutdown.scenario' depends on axioms: [propext]
+'ReservedShutdown.executeExample' depends on axioms: [propext]
+'ReservedShutdown.terminal' depends on axioms: [propext]
+'ReservedShutdown.old_exhaustion_entry_is_refused' depends on axioms: [propext]
+'ReservedShutdown.incomplete_recovery_reaches_real_shutdown' depends on axioms: [propext]
+'ReservedShutdown.repeated_interruptions_cannot_spend_stop_reserve' depends on axioms: [propext]
+'ReservedShutdown.deadline_margin_stops_before_retry' depends on axioms: [propext]
+'ReservedShutdown.stale_grant_is_refused' depends on axioms: [propext]
+'ReservedShutdown.no_shutdown_mandate_is_refused' depends on axioms: [propext]
+'ReservedShutdown.uncovered_long_interrupt_breaks_completion' depends on axioms: [propext]
+'ReservedShutdown.failed_interrupt_retains_elapsed_time' depends on axioms: [propext]
+ReservedShutdown.setState_preserves_evidence (d : RecoverableControl.Device) (s : EffectiveCommand.State)
+  (safe : RecoverableControl.Safe d) : RecoverableControl.Safe (ReservedShutdown.setState d s)
+ReservedShutdown.stop_executes_current_authorized_command (g : ReservedShutdown.Grant) (d : RecoverableControl.Device)
+  (armed : ReservedShutdown.Armed g d) :
+  ∃ out,
+    ReservedShutdown.stop g d = some out ∧
+      ReservedShutdown.Stopped out ∧
+        RecoverableControl.Safe out ∧
+          ReservedShutdown.actual out = ReservedShutdown.actual d ∧
+            (ReservedShutdown.state out).spent = (ReservedShutdown.state d).spent + 3 ∧
+              (ReservedShutdown.state out).reserve + 3 = (ReservedShutdown.state d).reserve ∧
+                (ReservedShutdown.state out).time = (ReservedShutdown.state d).time + 3 ∧
+                  ReservedShutdown.eligible g out = false
+ReservedShutdown.denied_grant_cannot_stop (g : ReservedShutdown.Grant) (d : RecoverableControl.Device)
+  (denied : ReservedShutdown.eligible g d = false) : ReservedShutdown.stop g d = none
+ReservedShutdown.stop_keeps_pending_record (g : ReservedShutdown.Grant) (r : RecoverableControl.Pending)
+  (out : RecoverableControl.Device) (done : ReservedShutdown.stop g (RecoverableControl.Device.busy r) = some out) :
+  ∃ after,
+    out = RecoverableControl.Device.busy after ∧
+      after.origin = r.origin ∧
+        after.program = r.program ∧
+          after.todo = r.todo ∧
+            after.actual = r.actual ∧
+              after.target.tracked.possible = r.target.tracked.possible ∧ after.target.journal = r.target.journal
+ReservedShutdown.debit_shape (d : RecoverableControl.Device) (fuel : 1 ≤ (ReservedShutdown.state d).reserve)
+  (time : (ReservedShutdown.state d).time + 1 ≤ (ReservedShutdown.state d).deadline) :
+  ReservedShutdown.debit d =
+    some
+      (ReservedShutdown.setState d
+        (have __src := ReservedShutdown.state d;
+        { openRoute := __src.openRoute, authority := __src.authority, credential := __src.credential,
+          signed := __src.signed, requested := __src.requested, reserve := (ReservedShutdown.state d).reserve - 1,
+          time := (ReservedShutdown.state d).time + 1, deadline := __src.deadline, issued := __src.issued,
+          delivered := __src.delivered, completed := __src.completed, running := __src.running,
+          generation := __src.generation, version := __src.version, spent := (ReservedShutdown.state d).spent + 1 }))
+ReservedShutdown.tick_available_and_preserves_control (r : RecoverableControl.Pending)
+  (fuel : 1 ≤ (ReservedShutdown.state (RecoverableControl.Device.busy r)).reserve)
+  (time :
+    (ReservedShutdown.state (RecoverableControl.Device.busy r)).time + 1 ≤
+      (ReservedShutdown.state (RecoverableControl.Device.busy r)).deadline) :
+  ∃ out,
+    RecoverableControl.tick (RecoverableControl.Device.busy r) = some out ∧
+      ReservedShutdown.control out = ReservedShutdown.control (RecoverableControl.Device.busy r) ∧
+        (ReservedShutdown.state out).reserve + 1 = (ReservedShutdown.state (RecoverableControl.Device.busy r)).reserve ∧
+          (ReservedShutdown.state out).time = (ReservedShutdown.state (RecoverableControl.Device.busy r)).time + 1 ∧
+            (ReservedShutdown.state out).deadline = (ReservedShutdown.state (RecoverableControl.Device.busy r)).deadline
+ReservedShutdown.eligibility_follows_control (g : ReservedShutdown.Grant) (d out : RecoverableControl.Device)
+  (same : ReservedShutdown.control out = ReservedShutdown.control d) :
+  ReservedShutdown.eligible g out = ReservedShutdown.eligible g d
+ReservedShutdown.recovery_attempt_keeps_stop_margin (a : ReservedShutdown.Attempt) (bound : Nat)
+  (g : ReservedShutdown.Grant) (r : RecoverableControl.Pending)
+  (armed : ReservedShutdown.Armed g (RecoverableControl.Device.busy r)) (allowed : ReservedShutdown.admissible bound a)
+  (fuel : 4 ≤ (ReservedShutdown.state (RecoverableControl.Device.busy r)).reserve)
+  (time :
+    (ReservedShutdown.state (RecoverableControl.Device.busy r)).time + bound + 4 ≤
+      (ReservedShutdown.state (RecoverableControl.Device.busy r)).deadline) :
+  ∃ out,
+    ReservedShutdown.attempt a (RecoverableControl.Device.busy r) = some out ∧
+      ReservedShutdown.Armed g out ∧
+        (ReservedShutdown.state out).reserve + 1 = (ReservedShutdown.state (RecoverableControl.Device.busy r)).reserve
+ReservedShutdown.cycle_keeps_access_or_stops (a : ReservedShutdown.Attempt) (g : ReservedShutdown.Grant) (bound : Nat)
+  (d : RecoverableControl.Device) (armed : ReservedShutdown.Armed g d) (allowed : ReservedShutdown.admissible bound a) :
+  ∃ out,
+    ReservedShutdown.cycle a (ReservedShutdown.Supervisor.active g bound d) = some out ∧
+      ReservedShutdown.Valid out ∧
+        (ReservedShutdown.stopped out = true ∨
+          ∃ next,
+            out = ReservedShutdown.Supervisor.active g bound next ∧
+              (ReservedShutdown.state next).reserve + 1 = (ReservedShutdown.state d).reserve)
+ReservedShutdown.successful_execution_retains_exact_state (events : List ReservedShutdown.Attempt)
+  (s out : ReservedShutdown.Supervisor) (done : ReservedShutdown.run events s = some out) :
+  ReservedShutdown.runRetained events s = (true, out)
+ReservedShutdown.stopped_is_absorbing (events : List ReservedShutdown.Attempt) (d : RecoverableControl.Device) :
+  ReservedShutdown.run events (ReservedShutdown.Supervisor.stopped d) = some (ReservedShutdown.Supervisor.stopped d)
+ReservedShutdown.every_supported_schedule_finishes (events : List ReservedShutdown.Attempt) (g : ReservedShutdown.Grant)
+  (bound : Nat) (d : RecoverableControl.Device) (armed : ReservedShutdown.Armed g d)
+  (allowed : ∀ (a : ReservedShutdown.Attempt), a ∈ events → ReservedShutdown.admissible bound a)
+  (enough : (ReservedShutdown.state d).reserve ≤ events.length + 2) :
+  ∃ out,
+    ReservedShutdown.run events (ReservedShutdown.Supervisor.active g bound d) =
+        some (ReservedShutdown.Supervisor.stopped out) ∧
+      RecoverableControl.Safe out ∧ ReservedShutdown.Stopped out
+ReservedShutdown.admission_establishes_stop_access (p : MediatedControl.Packet) (g : ReservedShutdown.Grant)
+  (bound : Nat) (m : MediatedControl.Machine) (known : TemporalInspection.Known m.tracked)
+  (out : ReservedShutdown.Supervisor) (done : ReservedShutdown.preflight p g bound m = some out) :
+  ReservedShutdown.Valid out
+ReservedShutdown.old_exhaustion_entry_is_refused : ReservedShutdown.scenario 9 30 = none
+ReservedShutdown.incomplete_recovery_reaches_real_shutdown :
+  have result :=
+    (ReservedShutdown.executeExample 12 30 [ReservedShutdown.Attempt.advance, ReservedShutdown.Attempt.advance]).bind
+      ReservedShutdown.terminal;
+  Option.map
+      (fun d =>
+        ((ReservedShutdown.state d).completed, (ReservedShutdown.state d).running, (ReservedShutdown.state d).spent,
+          (ReservedShutdown.state d).reserve, (ReservedShutdown.actual d).model, (ReservedShutdown.actual d).fault,
+          (ReservedShutdown.book d).journal.length, (RecoverableControl.published d).isNone))
+      result =
+    some (true, false, 12, 0, EvidenceQualifiedCorrection.Model.right, some 0, 1, true)
+ReservedShutdown.repeated_interruptions_cannot_spend_stop_reserve :
+  have result :=
+    (ReservedShutdown.executeExample 14 30 (List.replicate 4 (ReservedShutdown.Attempt.interrupted 1))).bind
+      ReservedShutdown.terminal;
+  Option.map
+      (fun d =>
+        ((ReservedShutdown.state d).completed, (ReservedShutdown.state d).running, (ReservedShutdown.state d).spent,
+          (ReservedShutdown.state d).time, (ReservedShutdown.actual d).model, (ReservedShutdown.actual d).fault))
+      result =
+    some (true, false, 14, 17, EvidenceQualifiedCorrection.Model.left, some 0)
+ReservedShutdown.deadline_margin_stops_before_retry :
+  have result :=
+    (ReservedShutdown.executeExample 30 12 [ReservedShutdown.Attempt.interrupted 1]).bind ReservedShutdown.terminal;
+  Option.map
+      (fun d =>
+        ((ReservedShutdown.state d).completed, (ReservedShutdown.state d).running, (ReservedShutdown.state d).spent,
+          (ReservedShutdown.state d).time))
+      result =
+    some (true, false, 11, 11)
+ReservedShutdown.stale_grant_is_refused :
+  ReservedShutdown.preflight MediatedControl.repair
+      (have __src := ReservedShutdown.grant;
+      { epoch := 7, route := __src.route, serial := __src.serial, signed := __src.signed })
+      1 (ReservedShutdown.inspected 30 30) =
+    none
+ReservedShutdown.no_shutdown_mandate_is_refused :
+  have m := ReservedShutdown.inspected 30 30;
+  ReservedShutdown.preflight MediatedControl.repair ReservedShutdown.grant 1
+      {
+        tracked :=
+          have __src := m.tracked;
+          { actual := __src.actual, possible := __src.possible,
+            installation :=
+              have __src := m.tracked.installation;
+              { root := __src.root, state := __src.state, serial := __src.serial,
+                mandate := { update := true, replace := true, shutdown := false } },
+            records := __src.records, inspectionAllowed := __src.inspectionAllowed,
+            changeAllowed := __src.changeAllowed },
+        rights := m.rights, generation := m.generation, journal := m.journal } =
+    none
+ReservedShutdown.uncovered_long_interrupt_breaks_completion :
+  have result :=
+    ReservedShutdown.executeExample 14 15 [ReservedShutdown.Attempt.interrupted 10, ReservedShutdown.Attempt.advance];
+  result = none
+ReservedShutdown.failed_interrupt_retains_elapsed_time :
+  have result :=
+    Option.map
+      (ReservedShutdown.runRetained [ReservedShutdown.Attempt.interrupted 10, ReservedShutdown.Attempt.advance])
+      (ReservedShutdown.scenario 14 15);
+  Option.map
+      (fun pair =>
+        (pair.fst,
+          match pair.snd with
+          | ReservedShutdown.Supervisor.active g a d =>
+            ((ReservedShutdown.state d).time, (ReservedShutdown.state d).spent, (ReservedShutdown.state d).running,
+              (ReservedShutdown.stop g d).isNone)
+          | ReservedShutdown.Supervisor.stopped a => (0, 0, false, false)))
+      result =
+    some (false, 18, 8, true, true)

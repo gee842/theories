@@ -1,0 +1,147 @@
+HistoricalBinding.lean:26:3: error: unexpected token 'at'; expected identifier
+HistoricalBinding.lean:37:34: error: unexpected token 'at'; expected ')' or term
+HistoricalBinding.lean:40:64: error: unexpected token 'at'; expected ')' or term
+HistoricalBinding.lean:47:42: error: unexpected token 'at'; expected term
+HistoricalBinding.lean:65:48: error: unsolved goals
+h : History
+family : List History
+reversed : Bool
+ps : List Instruction
+included : h ∈ family
+⊢ ∀ (a : Moment) (b : SourceReliance.Probe), (a, b) ∈ ps → sorry () = true
+HistoricalBinding.lean:66:15: warning: declaration uses `sorry`
+HistoricalBinding.lean:66:21: warning: declaration uses `sorry`
+HistoricalBinding.lean:66:30: warning: This simp argument is unused:
+  SourceReliance.acquired_decode
+
+Hint: Omit it from the simp argument list.
+  simp [learn, fits, acquire, S̵o̵u̵r̵c̵e̵R̵e̵l̵i̵a̵n̵c̵e̵.̵a̵c̵q̵u̵i̵r̵e̵d̵_̵d̵e̵c̵o̵d̵e̵,̵ ̵included]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+HistoricalBinding.lean:69:87: error: unexpected token 'at'; expected term
+HistoricalBinding.lean:81:46: error: unexpected token 'at'; expected ')' or term
+HistoricalBinding.lean:134:84: error: Tactic `decide` failed for proposition
+  deterioration ∈ envelope 1 ∧
+    SourceReliance.emit deterioration.naming { target := true, localFault := false, commonFault := true } =
+        (true, true) ∧
+      answer (envelope 1) (acquire deterioration false controls) true = some p1
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `decidable_of_decidable_of_iff`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqList`, `instDecidableEqNat`, `instDecidableEqProd`, `instDecidableNot`, `instDecidableOr`, `Bool.decEq`, `List.hasDecEq`, `List.instDecidableMemOfLawfulBEq`, `Nat.decEq`, `Nat.decLe`, `Option.instDecidableEq`, `instDecidableEqSound`, `instDecidableEqHistory`, `SourceReliance.instDecidableEqRoute`, `instDecidableEqHistory.decEq`, and `SourceReliance.instDecidableEqRoute.decEq`, reduction got stuck at the `Decidable` instance
+  match answer (envelope 1) (acquire deterioration false controls) true with
+  | none =>
+    match some p1 with
+    | none => isTrue ⋯
+    | some val => isFalse ⋯
+  | some a =>
+    match some p1 with
+    | none => isFalse ⋯
+    | some b =>
+      match instDecidableEqExpr a b with
+      | isTrue h => isTrue ⋯
+      | isFalse n => isFalse ⋯
+HistoricalBinding.lean:139:83: error: Tactic `decide` failed for proposition
+  improvement ∈ envelope 1 ∧
+    SourceReliance.emit improvement.naming { target := true, localFault := false, commonFault := true } =
+        (false, false) ∧
+      answer (envelope 1) (acquire improvement false controls) false = some p1
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `decidable_of_decidable_of_iff`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqList`, `instDecidableEqNat`, `instDecidableEqProd`, `instDecidableNot`, `instDecidableOr`, `Bool.decEq`, `List.hasDecEq`, `List.instDecidableMemOfLawfulBEq`, `Nat.decEq`, `Nat.decLe`, `Option.instDecidableEq`, `instDecidableEqSound`, `instDecidableEqHistory`, `SourceReliance.instDecidableEqRoute`, `instDecidableEqHistory.decEq`, and `SourceReliance.instDecidableEqRoute.decEq`, reduction got stuck at the `Decidable` instance
+  match answer (envelope 1) (acquire improvement false controls) false with
+  | none =>
+    match some p1 with
+    | none => isTrue ⋯
+    | some val => isFalse ⋯
+  | some a =>
+    match some p1 with
+    | none => isFalse ⋯
+    | some b =>
+      match instDecidableEqExpr a b with
+      | isTrue h => isTrue ⋯
+      | isFalse n => isFalse ⋯
+HistoricalBinding.lean:143:84: error: Tactic `decide` failed for proposition
+  answer (envelope 1) (acquire improvement false lateControl) false = none ∧
+    answer (envelope 1) (acquire deterioration false lateControl) true = none
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `decidable_of_decidable_of_iff`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqList`, `instDecidableEqNat`, `instDecidableNot`, `instDecidableOr`, `Bool.decEq`, `List.hasDecEq`, `List.instDecidableMemOfLawfulBEq`, `Nat.decEq`, `Nat.decLe`, `Option.decidableEqNone`, `instDecidableEqSound`, `SourceReliance.instDecidableEqRoute`, and `SourceReliance.instDecidableEqRoute.decEq`, reduction got stuck at the `Decidable` instance
+  match answer (envelope 1) (acquire improvement false lateControl) false with
+  | none => isTrue ⋯
+  | some val => isFalse ⋯
+HistoricalBinding.lean:149:86: error: Tactic `decide` failed for proposition
+  answer (envelope 1) (acquire improvement false splitControls) false = none ∧
+    answer (envelope 1) (acquire deterioration false splitControls) true = none
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `decidable_of_decidable_of_iff`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqList`, `instDecidableEqNat`, `instDecidableNot`, `instDecidableOr`, `Bool.decEq`, `List.hasDecEq`, `List.instDecidableMemOfLawfulBEq`, `Nat.decEq`, `Nat.decLe`, `Option.decidableEqNone`, `instDecidableEqSound`, `SourceReliance.instDecidableEqRoute`, and `SourceReliance.instDecidableEqRoute.decEq`, reduction got stuck at the `Decidable` instance
+  match answer (envelope 1) (acquire improvement false splitControls) false with
+  | none => isTrue ⋯
+  | some val => isFalse ⋯
+HistoricalBinding.lean:153:94: error: Tactic `decide` failed for proposition
+  resolve
+      (bindingView (emptyBinding 32) (packet false) (envelope 1) (acquire improvement false controls)
+        SourceReliance.allFaults)
+      (word true) =
+    none
+because its `Decidable` instance
+  (resolve
+      (bindingView (emptyBinding 32) (packet false) (envelope 1) (acquire improvement false controls)
+        SourceReliance.allFaults)
+      (word true)).decidableEqNone
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `decidable_of_decidable_of_iff`, `instDecidableEqBool`, `instDecidableEqList`, `instDecidableEqNat`, `instDecidableNot`, `instDecidableOr`, `Bool.decEq`, `List.hasDecEq`, `List.instDecidableMemOfLawfulBEq`, `Nat.decEq`, `Nat.decLe`, `Option.decidableEqNone`, `instDecidableEqSound`, `SourceReliance.instDecidableEqRoute`, and `SourceReliance.instDecidableEqRoute.decEq`, reduction got stuck at the `Decidable` instance
+  match
+    resolve
+      (bindingView (emptyBinding 32) (packet false) (envelope 1) (acquire improvement false controls)
+        SourceReliance.allFaults)
+      (word true) with
+  | none => isTrue ⋯
+  | some val => isFalse ⋯
+HistoricalBinding.lean:163:87: error: Tactic `decide` failed for proposition
+  ¬concealedExcursion ∈ envelope 1 ∧
+    concealedExcursion ∈ envelope 2 ∧
+      acquire concealedExcursion false controls = acquire constantSecure false controls ∧
+        SourceReliance.emit concealedExcursion.naming { target := true, localFault := false, commonFault := true } =
+            SourceReliance.emit constantSecure.naming { target := false, localFault := false, commonFault := true } ∧
+          answer (envelope 1) (acquire concealedExcursion false controls) false = some p0 ∧
+            answer (envelope 2) (acquire concealedExcursion false controls) false = none
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `decidable_of_decidable_of_iff`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqList`, `instDecidableEqNat`, `instDecidableEqProd`, `instDecidableNot`, `Bool.decEq`, `List.instDecidableMemOfLawfulBEq`, `Nat.decEq`, `Nat.decLe`, `Nat.decLt`, `Option.instDecidableEq`, `instDecidableEqHistory`, `instDecidableEqMoment`, `SourceReliance.instDecidableEqProbe`, `SourceReliance.instDecidableEqRoute`, `instDecidableEqHistory.decEq`, `SourceReliance.instDecidableEqProbe.decEq`, and `SourceReliance.instDecidableEqRoute.decEq`, reduction got stuck at the `Decidable` instance
+  match id sorry.fst, id sorry.fst with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+HistoricalBinding.lean:171:85: error: Tactic `decide` failed for proposition
+  answer (envelope 1) (acquire lateImprovement false controls) false = some p1 ∧
+    answer (envelope 1) (acquire earlyImprovement false controls) false = none
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `decidable_of_decidable_of_iff`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqList`, `instDecidableEqNat`, `instDecidableNot`, `instDecidableOr`, `Bool.decEq`, `List.hasDecEq`, `List.instDecidableMemOfLawfulBEq`, `Nat.decEq`, `Nat.decLe`, `Option.instDecidableEq`, `instDecidableEqSound`, `SourceReliance.instDecidableEqRoute`, and `SourceReliance.instDecidableEqRoute.decEq`, reduction got stuck at the `Decidable` instance
+  match answer (envelope 1) (acquire lateImprovement false controls) false with
+  | none =>
+    match some p1 with
+    | none => isTrue ⋯
+    | some val => isFalse ⋯
+  | some a =>
+    match some p1 with
+    | none => isFalse ⋯
+    | some b =>
+      match instDecidableEqExpr a b with
+      | isTrue h => isTrue ⋯
+      | isFalse n => isFalse ⋯

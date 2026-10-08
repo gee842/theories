@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "theory-of-becoming",
+  "title": {
+    "en": "Theory of Becoming — current first priority",
+    "zh": "生成／变化之论——当前首要研究方向"
+  },
+  "scope_type": "project-direction",
+  "scope": {
+    "en": "Ren's current first priority for the continuing foundation programme: explain the whole scope of becoming, including generation and degeneration. Preserve completed ethical and evolutionary results and the scopes of independently authorized tasks. Ren clarifies that deductive necessity concerns the whole Theory of Becoming; generativity is within its manifold.",
+    "zh": "Ren 为持续基础研究确立的当前首要方向：解释包含生成与退化的整个变化范围。保留已完成伦理、演化成果及其他独立授权任务的范围。 Ren进一步明确：演绎必然性的对象是Theory of Becoming整体；生成性是其manifold的部分。"
+  },
+  "objective": {
+    "en": "Establish the deductive necessity of the Theory of Becoming as a whole without added substantive axioms; explain generative forms within its manifold. Articulate how relations form, persist, transform and dissolve, including life and evolution, without requiring every becoming to be generative or favorably directed.",
+    "zh": "无需附加实质公理，建立Theory of Becoming整体的演绎必然性，并说明其manifold中的生成形态。阐明关系怎样形成、维持、转化与消失，包含生命与演化，不要求每种变化均有生成性或有利方向。"
+  },
+  "premises": {
+    "en": "Begin with the monist relational method and disclose its role. Retain mixed effects, real losses and terminal continuations. Distinguish logical machinery, definitions, local laws, correspondence and normative commitments; a supplied local law is not thereby external to reality. G0/J remain explicit ethical commitments within the whole, without becoming premises of every dynamical explanation.",
+    "zh": "从一元关系方法开始并公开其作用，保留混合后果、真实损失与接续终止。区分逻辑工具、定义、局部规律、实际对应及规范承诺；局部给定规律不因此外在于现实。G0/J 仍是整体内公开的伦理承诺，不成为每项动态解释的前提。"
+  },
+  "completion": {
+    "en": "Reuse completed conditional mechanisms and identify the exact remaining foundational inference. Assess zero normative axioms and zero added substantive axioms separately; neither outcome inclusion, an empty Lean axiom report nor hidden hypotheses establishes the stronger target. Explain actual possibilities and constraints, expose remaining dependencies, and preserve substantive counterexamples. This priority authorization does not certify a new result or universal completion. Establish the whole claim at its stated scope; do not substitute universal generativity for the whole or treat a mode’s absence as its refutation.",
+    "zh": "复用已完成条件机制，指出尚缺的确切基础推论。分别检验无规范公理与无附加实质公理；包容全部结果、空 Lean 公理报告或隐藏假设都不等于更强目标成立。说明实际可能与限制，公开剩余依赖并保留实质反例。本优先授权不认证新成果或普遍完成。 按所声明范围建立整体主张；不以普遍生成性替换整体，不把某种形态缺失直接视为整体反例。"
+  },
+  "sources": [
+    "sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+    "sources/15-codex-theory-conversations/2026-10-09-theory-of-becoming-continuation.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BECOMING-FOUNDATION.md",
+    "sources/15-codex-theory-conversations/2026-10-09-becoming-whole-generative-manifold.md",
+    "sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md"
+  ],
+  "result_ids": [
+    "conditional-foundation-assessment",
+    "endpoint-loss-and-return",
+    "becoming-context-coherence",
+    "theory-of-becoming-foundation",
+    "relational-renewal-classification",
+    "relational-reading-comparison"
+  ],
+  "overview": {
+    "title": {
+      "en": "First priority: Theory of Becoming",
+      "zh": "首要研究方向：生成／变化之论"
+    },
+    "summary": {
+      "en": "Ren locates deductive necessity in the Theory of Becoming as a whole; generativity is within its manifold. Develop that deduction without added substantive axioms, retaining persistence, degeneration, dissolution and mixed changes. Life, evolution and G0/J evaluation remain differentiated within the same reality.",
+      "zh": "Ren明确整体Theory of Becoming是演绎必然性的对象，生成性是其manifold中的部分。无需附加实质公理推进这一演绎，保留维持、退化、消解及混合变化；生命、演化与G0/J评价在同一现实中分化。"
+    },
+    "next_step": {
+      "en": "Articulate and derive the whole’s necessary content, then explain the particular conditions of generative forms within it. Reuse completed mechanisms without making their universality a condition of the whole.",
+      "zh": "明确并推导整体的必要内容，再说明其中生成形态的具体条件。复用已完成机制，不把这些机制普遍成立作为整体成立条件。"
+    }
+  }
+}

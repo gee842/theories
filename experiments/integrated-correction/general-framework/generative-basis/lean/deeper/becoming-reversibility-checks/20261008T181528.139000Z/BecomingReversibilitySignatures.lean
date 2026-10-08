@@ -1,0 +1,11 @@
+import BecomingReversibility
+#check BecomingReversibility.reach_refl
+#check BecomingReversibility.reach_trans
+#check BecomingReversibility.possible_before_reached
+#check BecomingReversibility.no_endpoint_loss_iff_return
+#check BecomingReversibility.same_endpoint_possibilities_iff_return
+#check BecomingReversibility.irreversible_iff_endpoint_loss
+#check BecomingReversibility.loss_persists_along_continuation
+#check BecomingReversibility.oneWay_no_return
+#check BecomingReversibility.same_occurring_change_different_return
+#check BecomingReversibility.incomplete_questions_can_hide_irreversibility

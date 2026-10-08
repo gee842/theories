@@ -1,0 +1,375 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> Ubuntu 11.04 Beta 1 (Natty Narwhal) Released.
+   </TITLE>
+   <LINK REL="Index" HREF="index.html" >
+   <LINK REL="made" HREF="mailto:ubuntu-announce%40lists.ubuntu.com?Subject=Re%3A%20Ubuntu%2011.04%20Beta%201%20%28Natty%20Narwhal%29%20Released.&In-Reply-To=%3C1301608598.2340.4152.camel%40veni%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000142.html">
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>Ubuntu 11.04 Beta 1 (Natty Narwhal) Released.</H1>
+    <B>Kate Stewart</B> 
+    <A HREF="mailto:ubuntu-announce%40lists.ubuntu.com?Subject=Re%3A%20Ubuntu%2011.04%20Beta%201%20%28Natty%20Narwhal%29%20Released.&In-Reply-To=%3C1301608598.2340.4152.camel%40veni%3E"
+       TITLE="Ubuntu 11.04 Beta 1 (Natty Narwhal) Released.">kate.stewart at canonical.com
+       </A><BR>
+    <I>Thu Mar 31 21:56:38 UTC 2011</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000142.html">Ubuntu 9.10 reaches end-of-life on April 30 2011
+</A></li>
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#143">[ date ]</a>
+              <a href="thread.html#143">[ thread ]</a>
+              <a href="subject.html#143">[ subject ]</a>
+              <a href="author.html#143">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>The Ubuntu team is pleased to announce the release of Ubuntu 11.04
+beta. 
+
+Codenamed &quot;Natty Narwhal&quot;, 11.04 continues Ubuntu's proud tradition of
+integrating the latest and greatest open source technologies into a
+high-quality, easy-to-use Linux distribution.
+
+Ubuntu 11.04 now combines Ubuntu Desktop Edition and Ubuntu Netbook
+Edition.  This edition introduces the Unity environment as the default
+desktop.  
+
+Ubuntu 11.04 Netbook edition will still be produced for the ARM
+platform, and the team is proud to introduce a Headless edition with
+11.04 for ARM.
+
+Ubuntu 11.04 Server has made it easier to provision servers, and reduce
+power consumption. 
+
+Ubuntu 11.04 Server for EC2 is available as well, with a new kernel and
+improved initialization and configuration options. 
+
+The Ubuntu 11.04 family of Kubuntu, Xubuntu, Edubuntu, Mythbuntu, and
+Ubuntu Studio, also reach beta status today.
+
+
+Ubuntu features
+---------------
+
+Unity is now the default Ubuntu desktop session. The Unity launcher has
+many new features, including drag and drop re-ordering of launcher
+icons, full keyboard navigation support, launcher activation through
+keyboard shortcuts, right-click context menu quick-list and switching
+between running applications.  
+
+Ubuntu 11.04 comes with the latest Firefox 4.0 as standard web browser.
+
+LibreOffice 3.3.2 has been included in 11.04 as the default office
+package.
+
+Banshee 1.9.5 is the standard music player now and has been integrated
+into the sound menu.
+
+X.org 1.10.0 and Mesa 7.10.1 are the new versions included with 11.04.
+
+11.04 Beta 1 includes the 2.6.38-7.39 kernel which is based on the
+latest mainline kernel, 2.6.38. 
+
+GNU toolchain has transitioned to be based off of gcc 4.5 for i386,
+amd64, ARM omap3/omap4 and PowerPC architecture
+
+All main packages have now been built and and are installable with
+Python 2.7
+
+dpkg 1.16.0-pre brings us up-to-date with staged changes for the
+upcoming Debian 1.16.0 dpkg release, as well as pulling in the current
+version of the in-progress multiarch work
+
+Upstart has been updated to 0.9.4-1. There are a lot of new features:
+its now &quot;chroot-aware&quot;, there is support for basic job/event
+visualization, there are two new initctrl commands (show-config,
+check-config), a socket bridge is now provided, the latest D-Bus version
+now allows D-Bus services to be activated via Upstart, a manual job
+configuration stanza, and override file support is now available.
+
+The Ubuntu One control panel now allows selective syncing, and the
+launcher icon now displays sync progress.  File syncing speed has been
+improved as well. 
+
+The Ubuntu Software Center now allows users to &quot;rate &amp; review&quot; installed
+applications, share reviews via integration with social networking
+services added into Gwibber,  and has other usability improvements.
+
+Please see <A HREF="http://www.ubuntu.com/testing/natty/beta">http://www.ubuntu.com/testing/natty/beta</A> for details.
+
+
+Ubuntu Netbook on ARM
+--------------------
+
+The ARM version is the first one to ship with our new Unity 2D interface
+by default.
+
+The 2.6.38 kernel for OMAP4 has had many driver improvements, most
+notably the display driver was switched to use the HDMI port by default
+and auto detect the monitor resolution. 
+
+Ubuntu Headless developer image is being introduced for omap3 and omap4
+hardware.  Headless is fully set up for the serial port and contains a
+minimal command line install. 
+
+
+Ubuntu Server
+-------------
+
+cobbler and mcollective have been included, which will make provisioning
+servers a bit easier.
+
+Powernap 2.0 uses a new method to reduce power consumption and can now
+monitor user activity (Console, Mouse, Keyboard), system activity (load,
+processors, process IO), and network activity (wake-on-lan, udp ports
+tcp ports) 
+
+Default dhcpd server updated from dhcp3 to isc-dhcp (version 4). 
+
+Eucalyptus is now the latest stable point release (2.0.2) with security
+and efficiency fixes. (Known bug against the dhcpd server) 
+
+OpenStack (nova) in Universe is a technology preview, with a recent
+snapshot of 2011.2 (Cactus) release. 
+
+libvirt is updated to 0.8.8 with new features and bug fixes (see
+upstream change log for full information 0.8.3-&gt;0.8.8)  
+
+
+Ubuntu Cloud
+------------
+
+cloud-init has been updated to 0.60. This feature includes support
+resizing of / at first boot, adds minimal OVF transport (iso) support
+and allow setting of hostname when first booting. Rightscale support has
+been added to cloud-config and cloud-init. 
+
+Webscale technologies have been packaged and included, Cassandra 0.7.0,
+ZeroMQ, Membase, and XtraBackup. 
+
+Running images in EC2, t1.micro is currently limited to arch amd64. 
+
+
+Kubuntu
+-------
+
+Kubuntu 11.04 Beta 1 sports the latest KDE software including KDE
+Platform 4.6.1. 
+
+Kubuntu now provides a working Samba file sharing module that lets you
+add and manage shares from the folder's Properties dialogs. 
+
+The new Language Selector module allows you to add, remove, and manage
+system languages directly from System Settings. 
+
+An updated system-config-printer-kde brings a number of bug fixes to
+Kubuntu's printer management tool. 
+
+Please see  <A HREF="https://wiki.kubuntu.org/NattyNarwhal/Beta1/Kubuntu">https://wiki.kubuntu.org/NattyNarwhal/Beta1/Kubuntu</A> for
+details. 
+
+        
+Xubuntu
+-------
+
+Xubuntu wallpaper has been updated for this release. The wallpaper is
+designed to integrate well with the new graybird theme. 
+
+The installation slide show has been updated for Natty Narwhal, and
+really displays the best of Xubuntu. 
+
+The Elementary Xubuntu icon theme has been updated. 
+
+Xubuntu is using the Droid font by default, since it is a lightweight,
+good visibility font. 
+
+The newly released Xfce 4.8 is included. The menus in Xfce 4.8 are now
+editable with any menu editor that meets the freedesktop.org standards.
+The suggested editor is alacarte. 
+
+
+Edubuntu
+--------
+
+You can test Edubuntu 11.04 directly from your web browser by going at
+<A HREF="http://www.edubuntu.org/weblive">http://www.edubuntu.org/weblive</A> 
+
+WebLive is also directly integrated in the Ubuntu Software Center
+letting you test the most popular apps without installing them on your
+machine. Just click the &quot;Test drive&quot; button. 
+
+Ubiquity now has an additional step allowing users to fine-tune which
+applications should be installed on the final system. 
+
+Edubuntu now ships with Arkose, which provides application sandboxing
+for downloaded apps. 
+
+New software packages in Edubuntu include Pencil, Geogebra, Calibre,
+LibreCAD, Freemind and Stellarium. 
+
+Theming improvements include a new LDM theme when installing LTSP from
+the Edubuntu installer. The text-mode boot mode now displays &quot;Edubuntu&quot;
+instead of &quot;Ubuntu&quot;. Our ongoing menu refinements include new icons
+where they were missing, and more consistent case use in menu entries. 
+
+Edubuntu 11.04 ships with the classical Gnome desktop by default but
+Unity is available as an option in the installer.
+
+For more details on what has changed in Edubuntu 11.04, please refer to
+<A HREF="http://edubuntu.org/2011-03-03/edubuntu-1104-beta-1-released">http://edubuntu.org/2011-03-03/edubuntu-1104-beta-1-released</A> 
+
+        
+Ubuntu Studio
+-------------
+
+The task selections during installation have been updated. The audio
+tasks have been parsed into two groups: generation and recording. 
+
+Currently, Ubuntu Studio is shipping the -generic kernel. We are working
+with the Ubuntu Kernel Team to get a -low latency kernel into the
+archives.  An interim -lowlatency kernel is available in Allesio
+Bogani's PPA. 
+
+network-manager has replaced gnome-network-admin.  
+
+The packages shipped in Ubuntu Studio are now more focused to support
+identified tasks and their derived work flows. 
+
+Ubuntu Studio does not currently use Unity. As the user logs in it will
+default to Gnome Classic Desktop (i.e. Gnome2). 
+
+
+Mythbuntu
+---------
+
+The Mythbuntu-bare (Backup and Restore for the database and
+configuration files) Mythbuntu Control Center plugin now has the 
+ability to schedule backups on a daily, weekly, or monthly basis. 
+
+Android and iOS devices can now be used as remote controls. 
+
+MythTV 0.24 is now integrated into the builds. 
+
+
+
+Please see <A HREF="http://www.ubuntu.com/testing/natty/beta">http://www.ubuntu.com/testing/natty/beta</A> for more details on
+the above products.
+
+
+About Ubuntu
+------------
+
+Ubuntu is a full-featured Linux distribution for desktops, laptops, and
+servers, with a fast and easy installation and regular releases.  A
+tightly-integrated selection of excellent applications is included, and
+an incredible variety of add-on software is just a few clicks away.
+
+Professional technical support is available from Canonical Limited and
+hundreds of other companies around the world.  For more information
+about support, visit <A HREF="http://www.ubuntu.com/support">http://www.ubuntu.com/support</A> .
+
+
+To Get Ubuntu 11.04 Beta 1
+------------------------
+
+To upgrade to Ubuntu 11.04 Beta 1 from Ubuntu 10.10, follow 
+these instructions:
+
+  <A HREF="https://help.ubuntu.com/community/NattyUpgrades">https://help.ubuntu.com/community/NattyUpgrades</A>
+
+Or, download Ubuntu 11.04 Beta 1 images from a location near you: 
+
+  <A HREF="http://www.ubuntu.com/testing/download">http://www.ubuntu.com/testing/download</A> (Ubuntu and Ubuntu Server) 
+
+In addition, they can be found at the following links:  
+
+<A HREF="http://releases.ubuntu.com/natty/">http://releases.ubuntu.com/natty/</A> (Ubuntu, Ubuntu Server) 
+<A HREF="http://cdimage.ubuntu.com/releases/natty/beta-1/">http://cdimage.ubuntu.com/releases/natty/beta-1/</A> (Ubuntu DVD, source) 
+<A HREF="http://uec-images.ubuntu.com/releases/natty/beta-1/">http://uec-images.ubuntu.com/releases/natty/beta-1/</A> (Ubuntu Server EC2) 
+<A HREF="http://cdimage.ubuntu.com/ubuntu-netbook/releases/natty/beta-1/">http://cdimage.ubuntu.com/ubuntu-netbook/releases/natty/beta-1/</A> (Ubuntu Netbook ARM) 
+<A HREF="http://cdimage.ubuntu.com/netboot/11.04/beta-1/">http://cdimage.ubuntu.com/netboot/11.04/beta-1/</A> (Ubuntu Netboot) 
+<A HREF="http://releases.ubuntu.com/kubuntu/natty/">http://releases.ubuntu.com/kubuntu/natty/</A> (Kubuntu) 
+<A HREF="http://cdimage.ubuntu.com/kubuntu/releases/natty/beta-1/">http://cdimage.ubuntu.com/kubuntu/releases/natty/beta-1/</A> (Kubuntu DVD, preinstalled ARM images) 
+<A HREF="http://cdimage.ubuntu.com/xubuntu/releases/natty/beta-1/">http://cdimage.ubuntu.com/xubuntu/releases/natty/beta-1/</A> (Xubuntu) 
+<A HREF="http://cdimage.ubuntu.com/edubuntu/releases/natty/beta-1/">http://cdimage.ubuntu.com/edubuntu/releases/natty/beta-1/</A> (Edubuntu) 
+<A HREF="http://cdimage.ubuntu.com/ubuntustudio/releases/natty/beta-1/">http://cdimage.ubuntu.com/ubuntustudio/releases/natty/beta-1/</A> (Ubuntu Studio) 
+<A HREF="http://cdimage.ubuntu.com/mythbuntu/releases/natty/beta-1/">http://cdimage.ubuntu.com/mythbuntu/releases/natty/beta-1/</A> (Mythbuntu) 
+    
+The final version of Ubuntu 11.04 is expected to be released in April 2011.
+
+
+Feedback and Participation
+--------------------------
+
+If you would like to help shape Ubuntu, take a look at the list of ways
+you can participate at:
+
+  <A HREF="http://www.ubuntu.com/community/participate/">http://www.ubuntu.com/community/participate/</A>
+
+
+Your comments, bug reports, patches and suggestions will help turn this
+Beta into the best release of Ubuntu ever.  Please note that, where
+possible, we prefer that bugs be reported using the tools provided,
+rather than by visiting Launchpad directly.  Instructions can be 
+found at:
+
+  <A HREF="https://help.ubuntu.com/community/ReportingBugs">https://help.ubuntu.com/community/ReportingBugs</A>
+
+
+If you have a question, or if you think you may have found a bug but are
+not sure, first try asking on the #ubuntu IRC channel on freenode, on 
+the Ubuntu Users mailing list, or on the Ubuntu forums:
+
+  <A HREF="http://lists.ubuntu.com/mailman/listinfo/ubuntu-users">http://lists.ubuntu.com/mailman/listinfo/ubuntu-users</A>
+  <A HREF="http://www.ubuntuforums.org/">http://www.ubuntuforums.org/</A>
+
+
+
+More Information
+----------------
+
+You can find out more about Ubuntu and about this preview release on our
+website, IRC channel and wiki. If you are new to Ubuntu, please visit:  
+
+  <A HREF="http://www.ubuntu.com/">http://www.ubuntu.com/</A>
+
+To sign up for future Ubuntu announcements, please subscribe to Ubuntu's
+very low volume announcement list at:
+
+  <A HREF="http://lists.ubuntu.com/mailman/listinfo/ubuntu-announce">http://lists.ubuntu.com/mailman/listinfo/ubuntu-announce</A>
+
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000142.html">Ubuntu 9.10 reaches end-of-life on April 30 2011
+</A></li>
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#143">[ date ]</a>
+              <a href="thread.html#143">[ thread ]</a>
+              <a href="subject.html#143">[ subject ]</a>
+              <a href="author.html#143">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.ubuntu.com/mailman/listinfo/ubuntu-announce">More information about the ubuntu-announce
+mailing list</a><br>
+</body></html>

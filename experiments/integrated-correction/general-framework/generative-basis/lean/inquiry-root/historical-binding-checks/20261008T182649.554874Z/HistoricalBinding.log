@@ -1,0 +1,12 @@
+HistoricalBinding.lean:84:93: error: Application type mismatch: The argument
+  resolved
+has type
+  resolve (bindingView base packets family (acquire h reversed ps) faults) form = some answer
+but is expected to have type
+  resolve base form = some answer
+in the application
+  unique_resolution_is_correct_under_coverage base form (Expr.atom target) answer available ?m.29 resolved
+HistoricalBinding.lean:86:2: error: 'change' tactic failed, pattern
+  rec ∈ List.map ?m.43 packets
+is not definitionally equal to target
+  rec ∈ base.records

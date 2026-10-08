@@ -1,0 +1,67 @@
+{
+  "scope": "C09 paired bounded-refinement addition, four read-source fingerprints and two inspected discovery paths; all other entries, output lines and review hashes preserved. Prior unbounded inference explicitly credited.",
+  "before": {
+    "id": "C09",
+    "title_zh": "形成能力、实际运用与接续",
+    "title_en": "Formed capacity, actual exercise and continuation",
+    "claim_zh": "能力已形成、能力实际被运用、下轮条件得到再形成是不同关系；任意高的有限完成可能，不能仅凭这些替代可能性推出一条实际持续形成的历史。",
+    "claim_en": "Formed capacity, its actual exercise and renewed next-stage conditions are distinct; arbitrarily high finite completion possibilities do not by themselves establish one history of ongoing actual formation.",
+    "scope_zh": "局部 Lean 与独立重建已查；善的身份待证",
+    "scope_en": "Local Lean and independent reconstruction checked; ethical identity open",
+    "links": [
+      {
+        "label_zh": "当前表述与范围",
+        "label_en": "Current statement and scope",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#formed-capacity-and-actual-continuation"
+      }
+    ]
+  },
+  "after": {
+    "id": "C09",
+    "title_zh": "形成能力、实际运用与接续",
+    "title_en": "Formed capacity, actual exercise and continuation",
+    "claim_zh": "能力已形成、能力实际被运用、下轮条件得到再形成是不同关系；任意高的有限完成可能，不能仅凭这些替代可能性推出一条实际持续形成的历史。 固定规律下的旧可达性区分现细化为共同实现的准备步骤界：实际准备可改变当前一步能力，解除共同条件可失去最终共同实现，已有能力也可能未被使用。",
+    "claim_en": "Formed capacity, its actual exercise and renewed next-stage conditions are distinct; arbitrarily high finite completion possibilities do not by themselves establish one history of ongoing actual formation. The existing fixed-law reachability distinction now has an explicit preparation bound for joint realization: actual preparation can change current one-step capacity, release can remove eventual joint realization, and available capacity can remain unused.",
+    "scope_zh": "局部 Lean 与独立重建已查；善的身份待证；有界细化模块12项定理／18项审计已查，含旧推论重述，不是12项独立成果；形成来源与完整目标未证",
+    "scope_en": "Local Lean and independent reconstruction checked; ethical identity open; bounded-refinement module checks 12 theorem declarations/18 audits, including restated prior inferences rather than 12 independent results; origin and full target remain open",
+    "links": [
+      {
+        "label_zh": "当前表述与范围",
+        "label_en": "Current statement and scope",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#formed-capacity-and-actual-continuation"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md",
+        "label_zh": "步骤界、已有成果及反审",
+        "label_en": "Preparation bound, prior results and counterreview"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalBecoming.lean",
+        "label_zh": "共同实现的有界细化",
+        "label_en": "Bounded joint-realization refinement"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-becoming-checks/20261008T181112.046979Z/verification.json",
+        "label_zh": "精确源码实查回执",
+        "label_en": "Source-bound checked receipt"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-POSSIBILITY-INTERFACE.md",
+        "label_zh": "复用的原可能性接口",
+        "label_en": "Reused earlier possibility interface"
+      }
+    ]
+  },
+  "other_entries_unchanged": true,
+  "other_output_lines_unchanged": true,
+  "reviewed_paths": [
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalBecoming.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-becoming-checks/20261008T181112.046979Z/verification.json",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/REGENERATIVE-POSSIBILITY-INTERFACE.md"
+  ],
+  "discovery_added": [
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-BECOMING-INTEGRATION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY-OF-BECOMING.md"
+  ]
+}

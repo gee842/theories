@@ -1,0 +1,55 @@
+RelationalBecoming.within_after_prefix.{u, v, w} {S : Type u} {A : Type v} {C : Type w} {P : Generative.Process S A}
+  {realized : S → C → Prop} {s t : S} {earlierWord : List A} {n : Nat} {bundle : C → Prop}
+  (path : Generative.Trace P s earlierWord t) (next : RelationalBecoming.Within P realized t n bundle) :
+  RelationalBecoming.Within P realized s (earlierWord.length + n) bundle
+RelationalBecoming.eventual_after_prefix.{u, v, w} {S : Type u} {A : Type v} {C : Type w} {P : Generative.Process S A}
+  {realized : S → C → Prop} {s t : S} {earlierWord : List A} {bundle : C → Prop}
+  (path : Generative.Trace P s earlierWord t) (next : RelationalBecoming.Eventually P realized t bundle) :
+  RelationalBecoming.Eventually P realized s bundle
+RelationalBecoming.no_new_eventual_bundle.{u, v, w} {S : Type u} {A : Type v} {C : Type w} {P : Generative.Process S A}
+  {realized : S → C → Prop} {s t : S} {earlierWord : List A} (path : Generative.Trace P s earlierWord t) :
+  ¬∃ bundle, RelationalBecoming.Eventually P realized t bundle ∧ ¬RelationalBecoming.Eventually P realized s bundle
+RelationalBecoming.history_meaning (h : JointContinuationClassification.History)
+  (c : JointContinuationClassification.Claim) :
+  JointContinuationClassification.Realized h c ↔ RelationalBecoming.realized h.final c
+RelationalBecoming.joint_content_iff (s : JointContinuationClassification.Configuration) :
+  (∀ (c : JointContinuationClassification.Claim), RelationalBecoming.both c → RelationalBecoming.realized s c) ↔
+    s = JointContinuationClassification.Configuration.bothActive
+RelationalBecoming.prepared_joint_within_one :
+  RelationalBecoming.Within RelationalBecoming.process RelationalBecoming.realized
+    JointContinuationClassification.Configuration.coupled 1 RelationalBecoming.both
+RelationalBecoming.initial_not_joint_within_one :
+  ¬RelationalBecoming.Within RelationalBecoming.process RelationalBecoming.realized
+      JointContinuationClassification.Configuration.initial 1 RelationalBecoming.both
+RelationalBecoming.actual_preparation_changes_effective_capacity :
+  Generative.Trace RelationalBecoming.process JointContinuationClassification.Configuration.initial
+      [JointContinuationClassification.Event.retain] JointContinuationClassification.Configuration.coupled ∧
+    ¬RelationalBecoming.Within RelationalBecoming.process RelationalBecoming.realized
+          JointContinuationClassification.Configuration.initial 1 RelationalBecoming.both ∧
+      RelationalBecoming.Within RelationalBecoming.process RelationalBecoming.realized
+          JointContinuationClassification.Configuration.coupled 1 RelationalBecoming.both ∧
+        RelationalBecoming.Within RelationalBecoming.process RelationalBecoming.realized
+          JointContinuationClassification.Configuration.initial 2 RelationalBecoming.both
+RelationalBecoming.release_region_preserved {s t : JointContinuationClassification.Configuration}
+  {a : JointContinuationClassification.Event} (inside : RelationalBecoming.belowRelease s)
+  (step : RelationalBecoming.process.step s a t) : RelationalBecoming.belowRelease t
+RelationalBecoming.released_cannot_reach_joint :
+  ¬RelationalBecoming.Eventually RelationalBecoming.process RelationalBecoming.realized
+      JointContinuationClassification.Configuration.released RelationalBecoming.both
+RelationalBecoming.actual_release_loses_eventual_joint :
+  Generative.Trace RelationalBecoming.process JointContinuationClassification.Configuration.initial
+      [JointContinuationClassification.Event.release] JointContinuationClassification.Configuration.released ∧
+    RelationalBecoming.Eventually RelationalBecoming.process RelationalBecoming.realized
+        JointContinuationClassification.Configuration.initial RelationalBecoming.both ∧
+      ¬RelationalBecoming.Eventually RelationalBecoming.process RelationalBecoming.realized
+          JointContinuationClassification.Configuration.released RelationalBecoming.both
+RelationalBecoming.prepared_capacity_can_end_without_joint_realization :
+  Generative.Trace RelationalBecoming.process JointContinuationClassification.Configuration.initial
+      [JointContinuationClassification.Event.retain, JointContinuationClassification.Event.activateLeft]
+      JointContinuationClassification.Configuration.leftActive ∧
+    RelationalBecoming.Within RelationalBecoming.process RelationalBecoming.realized
+        JointContinuationClassification.Configuration.coupled 1 RelationalBecoming.both ∧
+      ¬RelationalBecoming.realized JointContinuationClassification.Configuration.leftActive
+            JointContinuationClassification.Claim.rightRealized ∧
+        ∀ (a : JointContinuationClassification.Event),
+          ¬Generative.Enabled RelationalBecoming.process JointContinuationClassification.Configuration.leftActive a

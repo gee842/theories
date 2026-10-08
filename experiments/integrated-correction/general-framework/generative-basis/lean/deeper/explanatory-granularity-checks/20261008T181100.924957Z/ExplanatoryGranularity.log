@@ -1,0 +1,19 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-granularity-0gp933lh/ExplanatoryGranularity.lean:58:11: error: Type mismatch
+  Iff.rfl
+has type
+  ?m.30 ↔ ?m.30
+but is expected to have type
+  Trace (blocks m expand).process s [] t ↔ Trace m.process s (List.flatMap expand []) t
+'Generative.ExplanatoryGranularity.holds_along' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryGranularity.compile_correct' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryGranularity.blocks_trace_iff' depends on axioms: [propext, sorryAx]
+'Generative.ExplanatoryGranularity.finite_trace_endpoints' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryGranularity.blocks_image_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryGranularity.cross_granularity_history_matches' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryGranularity.retained_block_provenance' depends on axioms: [propext, sorryAx]
+'Generative.ExplanatoryGranularity.lift_compile' depends on axioms: [propext]
+'Generative.ExplanatoryGranularity.singleton_coverage_recovers_questions' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryGranularity.full_and_block_reduced_kernels' depends on axioms: [propext, Quot.sound]

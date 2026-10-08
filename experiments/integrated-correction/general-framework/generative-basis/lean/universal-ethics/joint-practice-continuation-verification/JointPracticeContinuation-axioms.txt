@@ -1,0 +1,51 @@
+'JointPracticeContinuation.Org' does not depend on any axioms
+'JointPracticeContinuation.OrgEvent' does not depend on any axioms
+'JointPracticeContinuation.applyMethod' does not depend on any axioms
+'JointPracticeContinuation.inferMethod' does not depend on any axioms
+'JointPracticeContinuation.reviseFromResult' does not depend on any axioms
+'JointPracticeContinuation.result_revision_eq_inference' does not depend on any axioms
+'JointPracticeContinuation.infer_recovers_method' does not depend on any axioms
+'JointPracticeContinuation.inferred_method_replays' does not depend on any axioms
+'JointPracticeContinuation.Trial' does not depend on any axioms
+'JointPracticeContinuation.Response' does not depend on any axioms
+'JointPracticeContinuation.State' does not depend on any axioms
+'JointPracticeContinuation.methodAt' does not depend on any axioms
+'JointPracticeContinuation.Event' does not depend on any axioms
+'JointPracticeContinuation.step' depends on axioms: [propext]
+'JointPracticeContinuation.run' depends on axioms: [propext]
+'JointPracticeContinuation.process' depends on axioms: [propext]
+'JointPracticeContinuation.run_is_trace' depends on axioms: [propext]
+'JointPracticeContinuation.no_direct_review' depends on axioms: [propext]
+'JointPracticeContinuation.retry_produces_existing_review' depends on axioms: [propext]
+'JointPracticeContinuation.enrollment_consumes_review' depends on axioms: [propext, Quot.sound]
+'JointPracticeContinuation.response_identifies_current_method' depends on axioms: [propext, Quot.sound]
+'JointPracticeContinuation.revision_installs_inferred_method' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JointPracticeContinuation.initial' does not depend on any axioms
+'JointPracticeContinuation.ballot' does not depend on any axioms
+'JointPracticeContinuation.practice' does not depend on any axioms
+'JointPracticeContinuation.after' depends on axioms: [propext]
+'JointPracticeContinuation.firstHistory' does not depend on any axioms
+'JointPracticeContinuation.first' depends on axioms: [propext]
+'JointPracticeContinuation.first_history_enacts_revision' depends on axioms: [propext]
+'JointPracticeContinuation.secondHistory' does not depend on any axioms
+'JointPracticeContinuation.second' depends on axioms: [propext]
+'JointPracticeContinuation.acquired_participation_forms_next_review' depends on axioms: [propext]
+'JointPracticeContinuation.continuationHistory' does not depend on any axioms
+'JointPracticeContinuation.continued' depends on axioms: [propext]
+'JointPracticeContinuation.continuation_without_first_reviewer' depends on axioms: [propext]
+'JointPracticeContinuation.complete_history_is_one_trace' depends on axioms: [propext]
+'JointPracticeContinuation.response_without_revision_does_not_pass_retry' depends on axioms: [propext]
+'JointPracticeContinuation.revision_without_response_fails' depends on axioms: [propext]
+'JointPracticeContinuation.early_departure_prevents_this_practice' depends on axioms: [propext]
+'JointPracticeContinuation.changed_context_rejects_old_response' depends on axioms: [propext]
+'JointPracticeContinuation.admission_without_tested_review_fails' depends on axioms: [propext]
+'JointPracticeContinuation.practiced' depends on axioms: [propext]
+'JointPracticeContinuation.completed_work_does_not_itself_confer_mandate' depends on axioms: [propext]
+'JointPracticeContinuation.laterAttempt' depends on axioms: [propext]
+'JointPracticeContinuation.acquired_method_operates_after_departure' depends on axioms: [propext]
+'JointPracticeContinuation.proposedHistory' does not depend on any axioms
+'JointPracticeContinuation.revisedOrganization' depends on axioms: [propext]
+'JointPracticeContinuation.formed_practice_enters_existing_rule_revision' depends on axioms: [propext]
+'JointPracticeContinuation.narrow' depends on axioms: [propext]
+'JointPracticeContinuation.narrowPracticed' depends on axioms: [propext]
+'JointPracticeContinuation.operation_can_continue_while_admission_fails' depends on axioms: [propext]

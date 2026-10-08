@@ -1,0 +1,342 @@
+LearnedProcedureTransmission.lean:188:79: error: unsolved goals
+p : Bool
+hr :
+  nativeRun (construct identityChannels (weighted 0 0) p).apparatus identityChannels
+      (construct identityChannels (weighted 0 0) p).network [Task.c, Task.a] =
+    (weighted 1 1, 0)
+⊢ (nativeRun
+          { zero := (build identityChannels (blank 10 4)).zero, one := (build identityChannels (blank 10 4)).one,
+            wired := (build identityChannels (blank 10 4)).wired, inhibit := p,
+            parts := (build identityChannels (blank 10 4)).parts, fuel := (build identityChannels (blank 10 4)).fuel,
+            spent := (build identityChannels (blank 10 4)).spent }
+          identityChannels (copyMatrix (weighted 0 0)) [Task.c, Task.a]).1 =
+      copyMatrix (weighted 1 1) ∧
+    (nativeRun
+            { zero := (build identityChannels (blank 10 4)).zero, one := (build identityChannels (blank 10 4)).one,
+              wired := (build identityChannels (blank 10 4)).wired, inhibit := p,
+              parts := (build identityChannels (blank 10 4)).parts, fuel := (build identityChannels (blank 10 4)).fuel,
+              spent := (build identityChannels (blank 10 4)).spent }
+            identityChannels (copyMatrix (weighted 0 0)) [Task.c, Task.a]).2 =
+        0 ∧
+      2 -
+          (nativeRun
+              { zero := (build identityChannels (blank 10 4)).zero, one := (build identityChannels (blank 10 4)).one,
+                wired := (build identityChannels (blank 10 4)).wired, inhibit := p,
+                parts := (build identityChannels (blank 10 4)).parts,
+                fuel := (build identityChannels (blank 10 4)).fuel,
+                spent := (build identityChannels (blank 10 4)).spent }
+              identityChannels (copyMatrix (weighted 0 0)) [Task.c, Task.a]).2 =
+        2
+LearnedProcedureTransmission.lean:196:30: warning: This simp argument is unused:
+  hr
+
+Hint: Omit it from the simp argument list.
+  simp [expose, ̲beforeTraining,h̵r̵,̵ ̲firstSeed, ̲construct]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LearnedProcedureTransmission.lean:285:2: error: unsolved goals
+case false
+h :
+  nativeRun
+      (construct identityChannels
+          (inheritedRecord Transfer.faithful
+            {
+              kit :=
+                { network := if false = true then weighted 1 1 else weighted 11 31,
+                  apparatus := (construct identityChannels (weighted 1 1) false).apparatus },
+              active := 1, retired := 0, precursor := 130, source := 120, available := if false = true then 40 else 30,
+              spent := 0, waste := if false = true then 2 else 12, tested := true })
+          (inheritedProcedure Transfer.faithful
+            {
+              kit :=
+                { network := if false = true then weighted 1 1 else weighted 11 31,
+                  apparatus := (construct identityChannels (weighted 1 1) false).apparatus },
+              active := 1, retired := 0, precursor := 130, source := 120, available := if false = true then 40 else 30,
+              spent := 0, waste := if false = true then 2 else 12, tested := true })).apparatus
+      identityChannels
+      (construct identityChannels
+          (inheritedRecord Transfer.faithful
+            {
+              kit :=
+                { network := if false = true then weighted 1 1 else weighted 11 31,
+                  apparatus := (construct identityChannels (weighted 1 1) false).apparatus },
+              active := 1, retired := 0, precursor := 130, source := 120, available := if false = true then 40 else 30,
+              spent := 0, waste := if false = true then 2 else 12, tested := true })
+          (inheritedProcedure Transfer.faithful
+            {
+              kit :=
+                { network := if false = true then weighted 1 1 else weighted 11 31,
+                  apparatus := (construct identityChannels (weighted 1 1) false).apparatus },
+              active := 1, retired := 0, precursor := 130, source := 120, available := if false = true then 40 else 30,
+              spent := 0, waste := if false = true then 2 else 12, tested := true })).network
+      cycle =
+    (weighted 12 34, 3)
+⊢ (nativeRun
+          (construct identityChannels
+              (inheritedRecord Transfer.faithful
+                {
+                  kit :=
+                    { network := weighted 11 31,
+                      apparatus := (construct identityChannels (weighted 1 1) false).apparatus },
+                  active := 1, retired := 0, precursor := 130, source := 120, available := 30, spent := 0, waste := 12,
+                  tested := true })
+              (inheritedProcedure Transfer.faithful
+                {
+                  kit :=
+                    { network := weighted 11 31,
+                      apparatus := (construct identityChannels (weighted 1 1) false).apparatus },
+                  active := 1, retired := 0, precursor := 130, source := 120, available := 30, spent := 0, waste := 12,
+                  tested := true })).apparatus
+          identityChannels
+          (construct identityChannels
+              (inheritedRecord Transfer.faithful
+                {
+                  kit :=
+                    { network := weighted 11 31,
+                      apparatus := (construct identityChannels (weighted 1 1) false).apparatus },
+                  active := 1, retired := 0, precursor := 130, source := 120, available := 30, spent := 0, waste := 12,
+                  tested := true })
+              (inheritedProcedure Transfer.faithful
+                {
+                  kit :=
+                    { network := weighted 11 31,
+                      apparatus := (construct identityChannels (weighted 1 1) false).apparatus },
+                  active := 1, retired := 0, precursor := 130, source := 120, available := 30, spent := 0, waste := 12,
+                  tested := true })).network
+          [Task.c, Task.c, Task.c, Task.a]).1 =
+      weighted 12 34 ∧
+    10 +
+          (nativeRun
+              (construct identityChannels
+                  (inheritedRecord Transfer.faithful
+                    {
+                      kit :=
+                        { network := weighted 11 31,
+                          apparatus := (construct identityChannels (weighted 1 1) false).apparatus },
+                      active := 1, retired := 0, precursor := 130, source := 120, available := 30, spent := 0,
+                      waste := 12, tested := true })
+                  (inheritedProcedure Transfer.faithful
+                    {
+                      kit :=
+                        { network := weighted 11 31,
+                          apparatus := (construct identityChannels (weighted 1 1) false).apparatus },
+                      active := 1, retired := 0, precursor := 130, source := 120, available := 30, spent := 0,
+                      waste := 12, tested := true })).apparatus
+              identityChannels
+              (construct identityChannels
+                  (inheritedRecord Transfer.faithful
+                    {
+                      kit :=
+                        { network := weighted 11 31,
+                          apparatus := (construct identityChannels (weighted 1 1) false).apparatus },
+                      active := 1, retired := 0, precursor := 130, source := 120, available := 30, spent := 0,
+                      waste := 12, tested := true })
+                  (inheritedProcedure Transfer.faithful
+                    {
+                      kit :=
+                        { network := weighted 11 31,
+                          apparatus := (construct identityChannels (weighted 1 1) false).apparatus },
+                      active := 1, retired := 0, precursor := 130, source := 120, available := 30, spent := 0,
+                      waste := 12, tested := true })).network
+              [Task.c, Task.c, Task.c, Task.a]).2 =
+        13 ∧
+      12 +
+          (4 -
+            (nativeRun
+                (construct identityChannels
+                    (inheritedRecord Transfer.faithful
+                      {
+                        kit :=
+                          { network := weighted 11 31,
+                            apparatus := (construct identityChannels (weighted 1 1) false).apparatus },
+                        active := 1, retired := 0, precursor := 130, source := 120, available := 30, spent := 0,
+                        waste := 12, tested := true })
+                    (inheritedProcedure Transfer.faithful
+                      {
+                        kit :=
+                          { network := weighted 11 31,
+                            apparatus := (construct identityChannels (weighted 1 1) false).apparatus },
+                        active := 1, retired := 0, precursor := 130, source := 120, available := 30, spent := 0,
+                        waste := 12, tested := true })).apparatus
+                identityChannels
+                (construct identityChannels
+                    (inheritedRecord Transfer.faithful
+                      {
+                        kit :=
+                          { network := weighted 11 31,
+                            apparatus := (construct identityChannels (weighted 1 1) false).apparatus },
+                        active := 1, retired := 0, precursor := 130, source := 120, available := 30, spent := 0,
+                        waste := 12, tested := true })
+                    (inheritedProcedure Transfer.faithful
+                      {
+                        kit :=
+                          { network := weighted 11 31,
+                            apparatus := (construct identityChannels (weighted 1 1) false).apparatus },
+                        active := 1, retired := 0, precursor := 130, source := 120, available := 30, spent := 0,
+                        waste := 12, tested := true })).network
+                [Task.c, Task.c, Task.c, Task.a]).2) =
+        13
+LearnedProcedureTransmission.lean:288:2: error: unsolved goals
+case true
+h :
+  nativeRun
+      (construct identityChannels
+          (inheritedRecord Transfer.faithful
+            {
+              kit :=
+                { network := if True then weighted 1 1 else weighted 11 31,
+                  apparatus := (construct identityChannels (weighted 1 1) true).apparatus },
+              active := 1, retired := 0, precursor := 130, source := 120, available := if True then 40 else 30,
+              spent := 0, waste := if True then 2 else 12, tested := true })
+          (inheritedProcedure Transfer.faithful
+            {
+              kit :=
+                { network := if True then weighted 1 1 else weighted 11 31,
+                  apparatus := (construct identityChannels (weighted 1 1) true).apparatus },
+              active := 1, retired := 0, precursor := 130, source := 120, available := if True then 40 else 30,
+              spent := 0, waste := if True then 2 else 12, tested := true })).apparatus
+      identityChannels
+      (construct identityChannels
+          (inheritedRecord Transfer.faithful
+            {
+              kit :=
+                { network := if True then weighted 1 1 else weighted 11 31,
+                  apparatus := (construct identityChannels (weighted 1 1) true).apparatus },
+              active := 1, retired := 0, precursor := 130, source := 120, available := if True then 40 else 30,
+              spent := 0, waste := if True then 2 else 12, tested := true })
+          (inheritedProcedure Transfer.faithful
+            {
+              kit :=
+                { network := if True then weighted 1 1 else weighted 11 31,
+                  apparatus := (construct identityChannels (weighted 1 1) true).apparatus },
+              active := 1, retired := 0, precursor := 130, source := 120, available := if True then 40 else 30,
+              spent := 0, waste := if True then 2 else 12, tested := true })).network
+      cycle =
+    (weighted 1 1, 4)
+⊢ (nativeRun
+          (construct identityChannels
+              (inheritedRecord Transfer.faithful
+                {
+                  kit :=
+                    { network := weighted 1 1,
+                      apparatus := (construct identityChannels (weighted 1 1) true).apparatus },
+                  active := 1, retired := 0, precursor := 130, source := 120, available := 40, spent := 0, waste := 2,
+                  tested := true })
+              (inheritedProcedure Transfer.faithful
+                {
+                  kit :=
+                    { network := weighted 1 1,
+                      apparatus := (construct identityChannels (weighted 1 1) true).apparatus },
+                  active := 1, retired := 0, precursor := 130, source := 120, available := 40, spent := 0, waste := 2,
+                  tested := true })).apparatus
+          identityChannels
+          (construct identityChannels
+              (inheritedRecord Transfer.faithful
+                {
+                  kit :=
+                    { network := weighted 1 1,
+                      apparatus := (construct identityChannels (weighted 1 1) true).apparatus },
+                  active := 1, retired := 0, precursor := 130, source := 120, available := 40, spent := 0, waste := 2,
+                  tested := true })
+              (inheritedProcedure Transfer.faithful
+                {
+                  kit :=
+                    { network := weighted 1 1,
+                      apparatus := (construct identityChannels (weighted 1 1) true).apparatus },
+                  active := 1, retired := 0, precursor := 130, source := 120, available := 40, spent := 0, waste := 2,
+                  tested := true })).network
+          [Task.c, Task.c, Task.c, Task.a]).1 =
+      weighted 1 1 ∧
+    2 *
+          (nativeRun
+              (construct identityChannels
+                  (inheritedRecord Transfer.faithful
+                    {
+                      kit :=
+                        { network := weighted 1 1,
+                          apparatus := (construct identityChannels (weighted 1 1) true).apparatus },
+                      active := 1, retired := 0, precursor := 130, source := 120, available := 40, spent := 0,
+                      waste := 2, tested := true })
+                  (inheritedProcedure Transfer.faithful
+                    {
+                      kit :=
+                        { network := weighted 1 1,
+                          apparatus := (construct identityChannels (weighted 1 1) true).apparatus },
+                      active := 1, retired := 0, precursor := 130, source := 120, available := 40, spent := 0,
+                      waste := 2, tested := true })).apparatus
+              identityChannels
+              (construct identityChannels
+                  (inheritedRecord Transfer.faithful
+                    {
+                      kit :=
+                        { network := weighted 1 1,
+                          apparatus := (construct identityChannels (weighted 1 1) true).apparatus },
+                      active := 1, retired := 0, precursor := 130, source := 120, available := 40, spent := 0,
+                      waste := 2, tested := true })
+                  (inheritedProcedure Transfer.faithful
+                    {
+                      kit :=
+                        { network := weighted 1 1,
+                          apparatus := (construct identityChannels (weighted 1 1) true).apparatus },
+                      active := 1, retired := 0, precursor := 130, source := 120, available := 40, spent := 0,
+                      waste := 2, tested := true })).network
+              [Task.c, Task.c, Task.c, Task.a]).2 =
+        8 ∧
+      8 -
+          2 *
+            (nativeRun
+                (construct identityChannels
+                    (inheritedRecord Transfer.faithful
+                      {
+                        kit :=
+                          { network := weighted 1 1,
+                            apparatus := (construct identityChannels (weighted 1 1) true).apparatus },
+                        active := 1, retired := 0, precursor := 130, source := 120, available := 40, spent := 0,
+                        waste := 2, tested := true })
+                    (inheritedProcedure Transfer.faithful
+                      {
+                        kit :=
+                          { network := weighted 1 1,
+                            apparatus := (construct identityChannels (weighted 1 1) true).apparatus },
+                        active := 1, retired := 0, precursor := 130, source := 120, available := 40, spent := 0,
+                        waste := 2, tested := true })).apparatus
+                identityChannels
+                (construct identityChannels
+                    (inheritedRecord Transfer.faithful
+                      {
+                        kit :=
+                          { network := weighted 1 1,
+                            apparatus := (construct identityChannels (weighted 1 1) true).apparatus },
+                        active := 1, retired := 0, precursor := 130, source := 120, available := 40, spent := 0,
+                        waste := 2, tested := true })
+                    (inheritedProcedure Transfer.faithful
+                      {
+                        kit :=
+                          { network := weighted 1 1,
+                            apparatus := (construct identityChannels (weighted 1 1) true).apparatus },
+                        active := 1, retired := 0, precursor := 130, source := 120, available := 40, spent := 0,
+                        waste := 2, tested := true })).network
+                [Task.c, Task.c, Task.c, Task.a]).2 =
+        0
+LearnedProcedureTransmission.lean:287:59: warning: This simp argument is unused:
+  h
+
+Hint: Omit it from the simp argument list.
+  simp [expose, ̲daughterState, ̲parentAfter, ̲firstSeed, ̲cycle,h̵,̵ ̲successorAfter]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LearnedProcedureTransmission.lean:290:59: warning: This simp argument is unused:
+  h
+
+Hint: Omit it from the simp argument list.
+  simp [expose, ̲daughterState, ̲parentAfter, ̲firstSeed, ̲cycle,h̵,̵ ̲successorAfter]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+LearnedProcedureTransmission.lean:310:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  nativeRun (construct ?m.19 ?B true).apparatus ?m.19 (construct ?m.19 ?B true).network ?tasks
+in the target expression
+  let child := construct identityChannels (weighted 1 4) true;
+  nativeRun child.apparatus identityChannels child.network [Task.a, Task.a] = (weighted 2 4, 1)
+
+⊢ let child := construct identityChannels (weighted 1 4) true;
+  nativeRun child.apparatus identityChannels child.network [Task.a, Task.a] = (weighted 2 4, 1)

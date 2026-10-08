@@ -1,0 +1,10 @@
+{
+  "archive_url": "https://osf.io/download/8at7y/",
+  "archive_bytes": 222449161,
+  "archive_sha256": "efe9ed283fa9bcbf9f0ea221e35a143c029feb737ce5c6fa973c2606d8abd9c0",
+  "member": "Data/CuriGaze_log_Cleaned.csv",
+  "member_bytes": 1831,
+  "member_sha256": "70f4b6630137823fca9f455ea972c7f9fa078bfc1a3b03f44b29830d1f223005",
+  "temporary_archive": "/tmp/codex-curigaze-Data.zip",
+  "scope": "Only original cleaned-log member imported; no raw gaze or redundant ZIP copied into repository."
+}

@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "id": "encounter-control-and-retention",
+  "title": {
+    "zh": "经历控制与保留使用的经验范围",
+    "en": "Empirical scope of encounter control and retained use"
+  },
+  "kind": "assessment",
+  "status": "reviewed-scoped",
+  "family": "F09",
+  "reviewed_at_utc": "2026-10-08T18:50:58.660938+00:00",
+  "claim": {
+    "zh": "公开CuriGaze正式纳入75人、451试次的复算中，主动条件相对配对条件的目标注视变化差为−1.34个百分点，常规95% Welch区间为[−10.38,+7.69]；未建立保留优势或等效。它约束选择自动产生学习优势的经验对应。",
+    "en": "Reanalysis of the public CuriGaze inclusion sample, 75 participants and 451 trials, gives Curiosity−Yoked target-looking change of −1.34 percentage points, conventional 95% Welch interval [−10.38,+7.69]. It establishes neither a retention advantage nor equivalence, constraining an automatic selection-to-learning-advantage correspondence."
+  },
+  "hypotheses": [
+    {
+      "zh": "按作者清理名单与试次表共同字段纳入；先在参与者内平均。77人的较早导出另存敏感性，不择行追随期望结论。",
+      "en": "Use the authors’ cleaned inclusion list joined to trial records, averaging within participants first. Retain the earlier 77-person export as sensitivity; do not select rows to fit a desired finding."
+    },
+    {
+      "zh": "常规t/Welch区间以参与者独立为条件；配对身份未获得，顺序采样覆盖率未证明，参与者随机分配未确立。",
+      "en": "Conventional t/Welch intervals condition on participant independence. Pair identities are unavailable, sequential-design coverage is unproved, and randomized participant allocation is not established."
+    },
+    {
+      "zh": "论文已知后的探索性二次分析；目标注视变化不是学习词数比例，也不独自识别概念理解、控制识别或保留机制。",
+      "en": "Exploratory secondary analysis after the paper was known. Change in target looking is not proportion of words learned and does not alone identify comprehension, recognized control or a retention mechanism."
+    }
+  ],
+  "correspondence": {
+    "zh": "控制、有效取得、保留和证据接纳是同一经历史中的不同作用关系。显示内容相同未证明保留输入相同；另一指点研究的积极结果不把跨研究差异识别为单一社会因果。",
+    "en": "Control, effective access, retention and evidence admission are distinct roles within one history. Matched displays do not establish equal retained inputs; a positive pointing comparison does not identify a single social cause across different studies."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/contingent-learning/README.md",
+  "aliases": [],
+  "dependencies": [
+    {
+      "id": "encounter-selection-and-revision",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "复用已完成的选择与解释接口；后续测量约束其心理对应，不声称把数据形式转换为Lean历史。",
+        "en": "Reuse the completed selection/interpretation interface; later measurement constrains psychological correspondence without a formal conversion of data to Lean histories."
+      }
+    },
+    {
+      "id": "naming-attention-coverage",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "从已有自动注视覆盖边界转向后续学习测量；不同人群与任务不拼接为同一观察史。",
+        "en": "Moves from the existing automatic gaze-coverage boundary to a later-learning measure; different populations/tasks are not joined into one observed history."
+      }
+    }
+  ],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/contingent-learning/README.md",
+      "detail": {
+        "zh": "区间容许正负差异，不足以认定等效；两人的名单遗漏原因与配对关系不明。原始轨迹未复算，论文表中SD差异和单值多重校正问题明示。",
+        "en": "Intervals admit positive and negative differences and cannot establish equivalence. Two log-omission reasons and pair mappings are unknown. Raw trajectories are not reprocessed; table-SD discrepancies and singleton multiple-adjustment code are disclosed."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "不识别唯一心理机制、社会原因、长期记忆、意识或演化起源；75人主要分析与77人敏感性分开，区间不作顺序设计保证。",
+    "en": "Does not identify a unique psychological mechanism, social cause, long-term memory, consciousness or evolutionary origin. The 75-person primary analysis and 77-person sensitivity remain separate; intervals have no sequential-design guarantee."
+  },
+  "validation_scope": {
+    "zh": "八个原始小文件与OSF哈希匹配；清理名单来自已验证压缩包。独立CSV/Decimal运算重构比例、参与者均值、方差、ANOVA及Welch算术，分布函数共用SciPy。作者实质反审完成，无独立agent验收或新Lean证明。",
+    "en": "Eight small originals match OSF hashes; the cleaned log comes from a verified archive. Separate CSV/Decimal calculations reconstruct proportions, participant means, variances, ANOVA and Welch arithmetic, sharing SciPy distribution functions. Substantive author counterreview completed; no independent-agent acceptance or new Lean proof."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/contingent-learning/README.md",
+      "role": "statement",
+      "sha256": "85eaff6232414408a38bcedd1a983d6ff19b355a81f681aea890d5084101e901",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+      "role": "review",
+      "sha256": "7d9dec741345e3fa7739b3408238150962a2cc50f74c135f631d60951419d940",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/contingent-learning/verification.json",
+      "role": "receipt",
+      "sha256": "83eb2ec18c48685265893e0b4b83ff314aaa0e73be42846e35fb08b40d9416b6",
+      "declarations": []
+    },
+    {
+      "path": "sources/developmental-attention/bazhydai-2026/README.md",
+      "role": "provenance",
+      "sha256": "858156815d025539d1d4f4e62fdb164360fe9def467248d0296d7a5f66eec70a",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/contingent-learning/PLAN.md",
+      "role": "provenance",
+      "sha256": "360b3de3f84bfd3991266651a45fbf65525699a9f3f15c39edfada00e9f52d57",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [],
+  "next_delta": {
+    "zh": "既有条件连接保留；下一重点是在匹配发育程序中识别已取得访问及所保留来源／次序如何进入实际使用，分别观察当前依赖与旧内容认可。原典已约束自动迁移，但未识别唯一机制或演化史。",
+    "en": "Preserve the completed conditional connections. Next identify how formed access and retained source/order information guide actual use in a matched developmental procedure, distinguishing present reliance from old-content endorsement. Primary evidence constrains automatic transfer without identifying a unique mechanism or evolutionary history."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：从原始汇总与纳入名单直接复算后续目标注视，保留不确定性、纳入差异及正面比较，接入已有研究与完整目标。",
+      "en": "2026-10-08: directly reconstructed later target looking from original summaries and the inclusion log, preserving uncertainty, inclusion differences and a positive comparison; integrated with the existing study and full objective."
+    },
+    {
+      "zh": "2026-10-09：已读研究21–23节；取得的来源关系现以另一路径生成旧命名记录的绑定候选。原声明、证明、经验结果与反例不改写；历史适用范围的新反例具体化后续连接。",
+      "en": "2026-10-09: reviewed study sections 21–23. Acquired source relations now generate binding alternatives for old naming records through an additional route. Original claims, proofs, empirical results and failures remain; a historical-applicability counterexample sharpens the next connection."
+    },
+    {
+      "zh": "2026-10-09：核读同一研究新增历史适用范围组合与反审；本项既有主张、源码及实查不变，接续问题转向来源—时序保持和持续性假设的经验识别。",
+      "en": "2026-10-09: reviewed the same study’s historical-applicability composition and counterreview. This result’s prior claim, sources and scientific checks remain unchanged; the continuation now targets empirical identification of source–time retention and persistence assumptions."
+    },
+    {
+      "zh": "2026-10-09：核读同一研究新增第27–29节的五篇原典对应、反审与取得／保持／使用区分；只更新此来源版本及下一连接，原成果、证明和经验回执范围保留。",
+      "en": "2026-10-09: reviewed the same study’s added §§27–29, five primary-source correspondences, counterreview and formation/retention/use distinction. Updated this source version and next connection while preserving the prior result, proof and empirical-receipt scopes."
+    }
+  ]
+}

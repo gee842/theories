@@ -60,3 +60,7 @@ Aliases / 别名: `InquiryRoot.JointInterpretation.pointwise_closure_iff_common`
 
 - 2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。 / 2026-10-08: migrated existing result identity and scope; no new theorem or relocated source.
 - 2026-10-08：架构整理显式登记已有证明的输出—输入对应；无新推论或编译。 / 2026-10-08: architecture repair records the existing proof’s output/input correspondence; no new inference or compilation.
+- 2026-10-09：核读同一研究新增§22；原§20及此前全文逐字保留，共同解释主张与证明范围不变。 / 2026-10-09: reviewed the appended §22; §20 and all earlier study bytes remain unchanged. The common-interpretation claim and proof scope are preserved.
+- 2026-10-09直接闭合审计：保留此前研究全文和证明；区分普遍作用根据与具体规律必然化，本次未闭合根基且无新定理。 / 2026-10-09 direct closure audit: preserves all earlier study bytes and proofs; distinguishes universal operative warrant from making particular laws necessary. No foundational closure or new theorem.
+- 2026-10-09：追加从实际形成活动开始的诊断修正；保留此前研究与证明，未新增结果或闭合根基。 / 2026-10-09: appended the activity-first diagnostic correction; preserved earlier study and proofs, with no new result or foundational closure.
+- 2026年10月9日：接入Ren关于整体／manifold的修正。必然性对象是Becoming整体，生成性位于其中。保留此前理论、研究及证明源码；无新增定理或公理。 / 9 October 2026: reconciled Ren’s whole/manifold correction. The necessity target is Becoming as a whole, with generativity within it. Earlier chapter/study content and proof sources are preserved; no new theorem or axiom.

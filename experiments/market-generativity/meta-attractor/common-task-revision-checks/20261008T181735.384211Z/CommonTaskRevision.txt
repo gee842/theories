@@ -1,0 +1,82 @@
+CommonTaskRevision.lean:56:12: error: Application type mismatch: The argument
+  h.left
+has type
+  ∀ (b : Bool), Sound (s.banks b)
+but is expected to have type
+  ∀ (b : Bool), Sound ((retargetHead s next).banks b)
+in the application
+  And.intro h.left
+CommonTaskRevision.lean:56:17: error: Application type mismatch: The argument
+  h.right.left
+has type
+  Ready span (s.banks s.active)
+but is expected to have type
+  Ready span ((retargetHead s next).banks (retargetHead s next).active)
+in the application
+  And.intro h.right.left
+CommonTaskRevision.lean:60:6: error: Type mismatch
+  retarget_valid span s p next
+    (h.right.right p
+      (of_eq_true
+        (Eq.trans (Eq.trans (congrFun' (congrArg Membership.mem hp) p) List.mem_cons._simp_1)
+          (Eq.trans (congrFun' (congrArg Or (eq_self p)) (p ∈ ps)) (true_or (p ∈ ps))))))
+has type
+  PacketValid span s (retarget p next)
+but is expected to have type
+  PacketValid span (retargetHead s next) (retarget p next)
+CommonTaskRevision.lean:61:6: error: Type mismatch
+  h.right.right q
+    (of_eq_true
+      (Eq.trans (Eq.trans (congrFun' (congrArg Membership.mem hp) q) List.mem_cons._simp_1)
+        (Eq.trans (congrArg (Or (q = p)) (eq_true hq)) (or_true (q = p)))))
+has type
+  PacketValid span s q
+but is expected to have type
+  PacketValid span (retargetHead s next) q
+CommonTaskRevision.lean:116:48: warning: This simp argument is unused:
+  Option.bind_some
+
+Hint: Omit it from the simp argument list.
+  simp only [retargetHead, hp, List.head?_cons,̵ ̵O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵s̵o̵m̵e̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CommonTaskRevision.lean:132:13: warning: Possibly looping simp theorem: `show
+      GoalFormationRevision.completed GoalFormationRevision.harmful =
+        some
+          ((GoalFormationRevision.completed GoalFormationRevision.harmful).getD
+            (GoalFormationRevision.start .attendance))
+      from by decide`
+
+Hint: You can disable a simp theorem from the default simp set by passing `- theoremName` to `simp`.
+CommonTaskRevision.lean:132:2: error: Tactic `simp` failed with a nested error:
+maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+CommonTaskRevision.lean:160:21: warning: This simp argument is unused:
+  Option.bind_some
+
+Hint: Omit it from the simp argument list.
+  simp only [hg,̵ ̵O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵s̵o̵m̵e̵] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CommonTaskRevision.lean:166:25: warning: This simp argument is unused:
+  Option.bind_some
+
+Hint: Omit it from the simp argument list.
+  simp only [hc, O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵s̵o̵m̵e̵,̵ ̵Option.some.injEq, Prod.mk.injEq] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CommonTaskRevision.lean:166:43: warning: This simp argument is unused:
+  Option.some.injEq
+
+Hint: Omit it from the simp argument list.
+  simp only [hc, Option.bind_some, O̵p̵t̵i̵o̵n̵.̵s̵o̵m̵e̵.̵i̵n̵j̵E̵q̵,̵ ̵Prod.mk.injEq] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CommonTaskRevision.lean:166:62: warning: This simp argument is unused:
+  Prod.mk.injEq
+
+Hint: Omit it from the simp argument list.
+  simp only [hc, Option.bind_some, Option.some.injEq,̵ ̵P̵r̵o̵d̵.̵m̵k̵.̵i̵n̵j̵E̵q̵] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

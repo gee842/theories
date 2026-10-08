@@ -1,0 +1,32 @@
+BecomingReversibility.reach_refl.{u, v} {S : Type u} {A : Type v} (P : Generative.Process S A) (s : S) :
+  BecomingReversibility.Reach P s s
+BecomingReversibility.reach_trans.{u, v} {S : Type u} {A : Type v} {P : Generative.Process S A} {s t r : S}
+  (h : BecomingReversibility.Reach P s t) (k : BecomingReversibility.Reach P t r) : BecomingReversibility.Reach P s r
+BecomingReversibility.possible_before_reached.{u, v} {S : Type u} {A : Type v} {P : Generative.Process S A} {s t : S}
+  {q : S → Prop} (h : BecomingReversibility.Reach P s t) (k : BecomingReversibility.Possible P t q) :
+  BecomingReversibility.Possible P s q
+BecomingReversibility.no_endpoint_loss_iff_return.{u, v} {S : Type u} {A : Type v} {P : Generative.Process S A}
+  {s t : S} :
+  (∀ (q : S → Prop), BecomingReversibility.Possible P s q → BecomingReversibility.Possible P t q) ↔
+    BecomingReversibility.Reach P t s
+BecomingReversibility.same_endpoint_possibilities_iff_return.{u, v} {S : Type u} {A : Type v}
+  {P : Generative.Process S A} {s t : S} (h : BecomingReversibility.Reach P s t) :
+  (∀ (q : S → Prop), BecomingReversibility.Possible P s q ↔ BecomingReversibility.Possible P t q) ↔
+    BecomingReversibility.Reach P t s
+BecomingReversibility.irreversible_iff_endpoint_loss.{u, v} {S : Type u} {A : Type v} {P : Generative.Process S A}
+  {s t : S} :
+  ¬BecomingReversibility.Reach P t s ↔ ∃ q, BecomingReversibility.Possible P s q ∧ ¬BecomingReversibility.Possible P t q
+BecomingReversibility.loss_persists_along_continuation.{u, v} {S : Type u} {A : Type v} {P : Generative.Process S A}
+  {t r : S} {q : S → Prop} (lost : ¬BecomingReversibility.Possible P t q) (later : BecomingReversibility.Reach P t r) :
+  ¬BecomingReversibility.Possible P r q
+BecomingReversibility.oneWay_no_return : ¬BecomingReversibility.Reach BecomingReversibility.oneWay true false
+BecomingReversibility.same_occurring_change_different_return :
+  Generative.Trace BecomingReversibility.oneWay false [()] true ∧
+    Generative.Trace BecomingReversibility.twoWay false [()] true ∧
+      ¬BecomingReversibility.Reach BecomingReversibility.oneWay true false ∧
+        BecomingReversibility.Reach BecomingReversibility.twoWay true false
+BecomingReversibility.incomplete_questions_can_hide_irreversibility :
+  (∀ (q : Unit → Prop),
+      (BecomingReversibility.Possible BecomingReversibility.oneWay false fun x => q ()) ↔
+        BecomingReversibility.Possible BecomingReversibility.oneWay true fun x => q ()) ∧
+    ¬BecomingReversibility.Reach BecomingReversibility.oneWay true false

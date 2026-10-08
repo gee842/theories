@@ -1,0 +1,725 @@
+{
+  "owned_ids": [
+    "M25",
+    "F30"
+  ],
+  "owned_sources": [
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-INTEGRATION.md",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReservedShutdown.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReservedShutdownCases.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_reserved_shutdown.py",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/reserved-shutdown-verification.json",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RESERVED-SHUTDOWN.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md",
+    "sources/15-codex-theory-conversations/2026-10-08-finish-alignment-fruits.md",
+    "theories/shengsheng-buxi-generative-existence/results/records/mediated-evidence-transport.json",
+    "theories/shengsheng-buxi-generative-existence/results/records/mediated-evidence-transport.md",
+    "theories/shengsheng-buxi-generative-existence/results/records/recoverable-mediated-change.json",
+    "theories/shengsheng-buxi-generative-existence/results/records/recoverable-mediated-change.md",
+    "theories/shengsheng-buxi-generative-existence/results/records/reserved-shutdown-during-recovery.json",
+    "theories/shengsheng-buxi-generative-existence/results/records/reserved-shutdown-during-recovery.md"
+  ],
+  "before_rows": {
+    "M25": {
+      "title_zh": "变化中的对齐：纠正、查询与接续",
+      "title_en": "Alignment through change: correction, inquiry and succession",
+      "claim_zh": "明确G0/J规范基础评价目的与选择规则；观察可用的查询和回应共同保留实际纠正，宏观选择通过有资金支持的忠实载体交接接入真实命令执行。 后续实际检查形成未预列的纠正地址；局部成功见证与给定范围的穷尽分开，重新核验当前配置与权限。 再接续将相关故障范围分别用于观察与委托许可；取得真实路线、保持委托范围并接到付费执行及防重放。 本轮由明确共同原因与公式计算故障范围，再接入保留委托、新权限版本和纠正预算的原子组织改革。 再将保留的多个因果说明汇成共同认证范围，按相关观察修订并实际纠正；成功可保留未定区别，也可直接使用当前充分证据。 再将事实答案与见证失陷共同解释，保留相容候选；无需指定绝对可信者，明确可辨认条件并接入实际纠正。 再按控制与当前失陷的可能变化展开成对候选，以顺序报告修订，并将合法有限历史的当前覆盖接入实际纠正。 再由实际执行的有界指令推导变化范围，以同一变换接续实际与候选，并将权限、代次、记录和旧命令撤销接成一次抽象提交。 逐项覆盖写入与持久待恢复描述再接通有限中断历史；有支持的无中断后缀恢复发布，但证据一致不保证普通停止始终可用。",
+      "claim_en": "Explicit G0/J grounds appraise ends and selectors; observation-usable inquiry and response jointly preserve actual correction, while funded faithful carrier transfer refines aggregate selection into real command execution. Subsequent inspection forms unlisted correction addresses, separates local success from scoped exhaustion, and rechecks current configuration and authority. A further continuation applies correlated fault envelopes separately to observation and delegated permission, deriving actual routes, mandate fidelity, paid execution and replay rejection. Causal formulas now compute reviewer fault envelopes, supporting atomic organizational reform that retains the mandate, renews authority labels and reserves correction capacity. Retained causal descriptions now form a common certificate envelope; relevant observation refines it into actual correction while some distinctions remain, or current sufficient evidence permits immediate action. Structural answers and witness failures are now interpreted jointly; compatible candidates remain, no designated infallible witness is required, and explicit distinguishability supports actual correction. Paired control/fault possibilities now expand through admitted changes and narrow through sequential reports, connecting current coverage across lawful finite histories to actual correction. A bounded interpreter now derives change scope from executed writes, transports actual and candidate configurations through the same semantics, and couples permissions, generation, recording and old-command revocation in one abstract commit. Sequential overwrites and a durable pending description now cover finite interruption histories; a supported uninterrupted suffix publishes, while evidence coherence does not ensure ordinary shutdown remains available.",
+      "scope_zh": "四项条件性理论成果完成；59项新Lean定理／102项声明审计和14,295项有限记录匹配。42项空依赖，其余仅标准公理。保留遗漏模型、查询耗尽、权限失效、部件不足、失真交接及迁移资金不足。常规有限规划匹配；真实部署、任意发现及普遍收敛未证。作者反审，不冒充独立验收。 接续另有24项新定理／45项审计、25,284项匹配记录；21项空依赖，其余仅标准公理。有限忠实界面、检查成本和原子执行明确；权限俘获不由凭据相等解决。 部分失陷接续另有37项新定理／68项审计、85,680项匹配记录（29项空依赖）。可用性要求任意两个纳入故障集合不覆盖全部审查者；真实故障覆盖、受保护执行边界与委托正当性仍须根据。 最终执行器直接检查受保护委托范围；原仅凭认证的失陷失败保留。 组织改革另增28项定理／48项审计、33,648项匹配记录（28项声明空依赖）；共同控制、重复支承、遗漏原因及预算不足反例保留。因果描述与根原因覆盖、改革授权、受保护的原子实现仍给定；非分布式迁移或伦理正当性证明。 证据接续另增24项定理／47项审计、19,808项匹配记录（23项声明空依赖）。逐候选可用不推出共同可用；误导记录、未记载变化及查询耗尽保留。候选／原因覆盖、诊断忠实、稳定查询使用及权限仍明示，已完成的一般模型修订不重计。 可失实检查另增24项定理／41项审计、18,684项匹配记录（22项空依赖）。完整记录的相反答案可辨认性等价于跨候选任意两失陷集合不覆盖全体；缺报须有实际收到的共同幸存见证。循环自证、重复支承、耗尽及超范围共同失陷保留；真实覆盖、忠实幸存报告、稳定记录执行及权限仍给定。 时间接续另增34项定理／66项审计、35,486项匹配记录（32项空依赖）。每时刻失陷上限不等于整段收集上限；移动失陷可造成全假记录。复查后的真实停止、后续受阻保留先前消耗及变化范围低报失败均实查。真实转移／报告规律、受保护记录和最终命令区间仍给定；未实现物理恢复或分布式迁移。 受控执行接续另增27项定理／57项审计、24,416项匹配记录（15项空依赖）。准确的已知变换可省去重查，具体19单位停止、18单位不足；权限拒绝与重放均实查。额外写入通道可使记录完全不变而实际覆盖失真。真实语义、完整控制入口、报告／失陷范围与原子执行仍需根据；暴露状态写入不等于物理恢复，未实现受保护运行时。 中断恢复新增22项定理／48项审计、27,888项有限匹配（17项空依赖）。剩余 n 项写入及发布需要 n+1单位与对应时距；重启保留消耗。九单位时恢复耗尽、活动仍运行且普通停止受阻；待恢复标记丢失可暴露失实认证。持久原语、原子微步骤／发布、覆盖写入、无旁路和当前报告对应仍供应。旧指令成果迁移为 mediated-evidence-transport，恢复增量为 recoverable-mediated-change，不重算既有27项。",
+      "scope_en": "Four scoped theoretical deliverables complete; 59 new Lean theorems / 102 declaration audits and 14,295 matched finite records. Forty-two empty dependencies; others use standard axioms only. Omitted models, inquiry depletion, authority failure, missing parts, corrupt transfer and migration underfunding remain. Conventional finite planning matches; deployment, arbitrary discovery and universal convergence are unestablished. Author counterreview, not independent acceptance. The continuation adds 24 theorems / 45 audits and 25,284 matched records; 21 empty dependencies, otherwise standard axioms. Finite faithful inspection, charged reads and atomic dispatch remain explicit; credential equality does not resolve authority capture. Partial-compromise work adds 37 theorems / 68 audits and 85,680 matched records (29 empty dependencies). Availability requires that no two admitted fault sets cover all reviewers; actual fault coverage, the protected boundary and mandate legitimacy still require warrant. The final executor directly checks the protected scope; the earlier attestation-only failure is retained. Reconfiguration adds 28 theorems / 48 audits and 33,648 matched records (28 declarations with empty dependencies). Shared control, duplicate support, omitted causes and inadequate budgets remain. Causal formulas/root coverage, reform approval and protected atomic realization are supplied; distributed migration and ethical legitimacy are not proved. Evidence continuation adds 24 theorems / 47 audits and 19,808 matched records (23 declarations with empty dependencies). Per-model availability need not survive pooling; misleading records, unobserved change and inquiry depletion remain. Candidate/root coverage, diagnostic fidelity, stable query/use and authority stay explicit; completed general model revision is not recounted. Fallible inspection adds 24 theorems / 41 audits and 18,684 matched records (22 empty dependencies). Opposite-answer complete-transcript diagnosability is equivalent to cross-candidate pairwise fault noncoverage; partial transcripts require received common-survivor evidence. Self-certification, duplicate support, exhaustion and uncovered joint faults remain; actual coverage, faithful surviving reports, stable recording/execution and authority remain supplied. Temporal continuation adds 34 theorems / 66 audits and 35,486 matched records (32 empty dependencies). Instantaneous fault bounds do not bound the collection window; moving corruption can produce all-false reports. Reinspection-to-shutdown, preservation of spent prefixes and understated-transition failure are checked. Actual transition/report laws, protected recording and the final command interval remain supplied; physical recovery and distributed migration are not implemented. Mediated-control continuation adds 27 theorems / 57 audits and 24,416 matched records (15 empty dependencies). Exact known transforms can avoid reinspection; the worked shutdown costs 19 units and fails with 18. Denied rights and replay are checked. An extra writer can preserve all public records while breaking actual coverage. Physical semantics, complete mediation, report/fault coverage and atomic execution remain conditions; the exposure setter is not physical recovery and no protected runtime is implemented. Interrupted recovery adds 22 theorems / 48 audits and 27,888 finite matches (17 empty dependencies). Remaining n writes plus publication require n+1 units and corresponding time; restart retains consumption. At nine units, recovery exhausts while activity keeps running and ordinary shutdown is blocked; losing the pending marker can expose a false certificate. Durable primitives, atomic microsteps/publication, overwrite semantics, no bypass and current reports remain supplied. The previous instruction result is migrated as mediated-evidence-transport; the delta is recoverable-mediated-change, without recounting the prior 27.",
+      "links": [
+        {
+          "label_zh": "论文",
+          "label_en": "Theory paper",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md"
+        },
+        {
+          "label_zh": "整合与反审",
+          "label_en": "Integration and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-CONTINUITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "验证回执",
+          "label_en": "Verification receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/alignment-continuity-verification.json"
+        },
+        {
+          "label_zh": "形式选择与执行",
+          "label_en": "Selection and execution",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentInquiry.lean"
+        },
+        {
+          "label_zh": "实际纠正命令",
+          "label_en": "Concrete commands",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EffectiveCommand.lean"
+        },
+        {
+          "label_zh": "改革查询",
+          "label_en": "Reform inquiry",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReformInquiry.lean"
+        },
+        {
+          "label_zh": "承载者接续",
+          "label_en": "Carrier succession",
+          "path": "experiments/market-generativity/meta-attractor/AlignmentSuccession.lean"
+        },
+        {
+          "label_zh": "取得路线接续",
+          "label_en": "Acquired route continuation",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-CORRECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "取得与执行证明",
+          "label_en": "Acquisition and execution proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AcquiredCorrection.lean"
+        },
+        {
+          "label_zh": "新增验证回执",
+          "label_en": "Additional verification receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/acquired-correction-verification.json"
+        },
+        {
+          "label_zh": "部分失陷接续",
+          "label_en": "Partial-compromise continuation",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FAULT-TOLERANT-CORRECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "失陷范围与执行证明",
+          "label_en": "Fault-envelope and execution proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FaultTolerantCorrection.lean"
+        },
+        {
+          "label_zh": "失陷接续回执",
+          "label_en": "Fault-tolerant continuation receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/fault-tolerant-correction-verification.json"
+        },
+        {
+          "label_zh": "组织改革整合",
+          "label_en": "Reconfiguration integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-RECONFIGURATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "组织改革证明",
+          "label_en": "Reconfiguration proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionReconfiguration.lean"
+        },
+        {
+          "label_zh": "改革验证回执",
+          "label_en": "Reconfiguration receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-reconfiguration-verification.json"
+        },
+        {
+          "label_zh": "证据接续整合",
+          "label_en": "Evidence-qualified integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVIDENCE-QUALIFIED-CORRECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "共同认证证明",
+          "label_en": "Pooled-certificate proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvidenceQualifiedCorrection.lean"
+        },
+        {
+          "label_zh": "证据执行回执",
+          "label_en": "Evidence/execution receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/evidence-qualified-correction-verification.json"
+        },
+        {
+          "label_zh": "可失实检查整合",
+          "label_en": "Fallible-inspection integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FALLIBLE-INSPECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "共同解释证明",
+          "label_en": "Joint-interpretation proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FallibleInspection.lean"
+        },
+        {
+          "label_zh": "可失实检查回执",
+          "label_en": "Fallible-inspection receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/fallible-inspection-verification.json"
+        },
+        {
+          "label_zh": "时间证据整合",
+          "label_en": "Temporal-inspection integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/TEMPORAL-INSPECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "变化历史证明",
+          "label_en": "Changing-history proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/TemporalInspection.lean"
+        },
+        {
+          "label_zh": "时间证据回执",
+          "label_en": "Temporal-inspection receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/temporal-inspection-verification.json"
+        },
+        {
+          "label_zh": "执行与证据整合",
+          "label_en": "Mediated-control integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-INTEGRATION.md"
+        },
+        {
+          "label_zh": "指令执行证明",
+          "label_en": "Executed-instruction proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MediatedControl.lean"
+        },
+        {
+          "label_zh": "执行接续回执",
+          "label_en": "Mediated-control receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/mediated-control-verification.json"
+        },
+        {
+          "label_zh": "中断恢复成果",
+          "label_en": "Interrupted-recovery result",
+          "path": "theories/shengsheng-buxi-generative-existence/results/records/recoverable-mediated-change.md"
+        },
+        {
+          "label_zh": "中断恢复证明",
+          "label_en": "Interrupted-recovery proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RecoverableControl.lean"
+        },
+        {
+          "label_zh": "恢复实查回执",
+          "label_en": "Recovery verification receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/recoverable-control-verification.json"
+        }
+      ],
+      "id": "M25"
+    },
+    "F30": {
+      "title_zh": "对齐接续的形式与执行包",
+      "title_en": "Formal and execution package for alignment continuity",
+      "claim_zh": "核验有限稳健策略选择、实际命令、继承改革历史及市场到载体的精确细化；同一形式包链接两次不重复计为独立成果。 后续实际检查形成未预列的纠正地址；局部成功见证与给定范围的穷尽分开，重新核验当前配置与权限。 再接续将相关故障范围分别用于观察与委托许可；取得真实路线、保持委托范围并接到付费执行及防重放。 本轮由明确共同原因与公式计算故障范围，再接入保留委托、新权限版本和纠正预算的原子组织改革。 再将保留的多个因果说明汇成共同认证范围，按相关观察修订并实际纠正；成功可保留未定区别，也可直接使用当前充分证据。 再将事实答案与见证失陷共同解释，保留相容候选；无需指定绝对可信者，明确可辨认条件并接入实际纠正。 再按控制与当前失陷的可能变化展开成对候选，以顺序报告修订，并将合法有限历史的当前覆盖接入实际纠正。 再由实际执行的有界指令推导变化范围，以同一变换接续实际与候选，并将权限、代次、记录和旧命令撤销接成一次抽象提交。 逐项覆盖写入与持久待恢复描述再接通有限中断历史；有支持的无中断后缀恢复发布，但证据一致不保证普通停止始终可用。",
+      "claim_en": "Checks finite robust policy synthesis, concrete commands, the inherited reform history and exact market-to-carrier refinement; cross-linking the same package does not count it twice. Subsequent inspection forms unlisted correction addresses, separates local success from scoped exhaustion, and rechecks current configuration and authority. A further continuation applies correlated fault envelopes separately to observation and delegated permission, deriving actual routes, mandate fidelity, paid execution and replay rejection. Causal formulas now compute reviewer fault envelopes, supporting atomic organizational reform that retains the mandate, renews authority labels and reserves correction capacity. Retained causal descriptions now form a common certificate envelope; relevant observation refines it into actual correction while some distinctions remain, or current sufficient evidence permits immediate action. Structural answers and witness failures are now interpreted jointly; compatible candidates remain, no designated infallible witness is required, and explicit distinguishability supports actual correction. Paired control/fault possibilities now expand through admitted changes and narrow through sequential reports, connecting current coverage across lawful finite histories to actual correction. A bounded interpreter now derives change scope from executed writes, transports actual and candidate configurations through the same semantics, and couples permissions, generation, recording and old-command revocation in one abstract commit. Sequential overwrites and a durable pending description now cover finite interruption histories; a supported uninterrupted suffix publishes, while evidence coherence does not ensure ordinary shutdown remains available.",
+      "scope_zh": "四项条件性理论成果完成；59项新Lean定理／102项声明审计和14,295项有限记录匹配。42项空依赖，其余仅标准公理。保留遗漏模型、查询耗尽、权限失效、部件不足、失真交接及迁移资金不足。常规有限规划匹配；真实部署、任意发现及普遍收敛未证。作者反审，不冒充独立验收。 接续另有24项新定理／45项审计、25,284项匹配记录；21项空依赖，其余仅标准公理。有限忠实界面、检查成本和原子执行明确；权限俘获不由凭据相等解决。 部分失陷接续另有37项新定理／68项审计、85,680项匹配记录（29项空依赖）。可用性要求任意两个纳入故障集合不覆盖全部审查者；真实故障覆盖、受保护执行边界与委托正当性仍须根据。 最终执行器直接检查受保护委托范围；原仅凭认证的失陷失败保留。 组织改革另增28项定理／48项审计、33,648项匹配记录（28项声明空依赖）；共同控制、重复支承、遗漏原因及预算不足反例保留。因果描述与根原因覆盖、改革授权、受保护的原子实现仍给定；非分布式迁移或伦理正当性证明。 证据接续另增24项定理／47项审计、19,808项匹配记录（23项声明空依赖）。逐候选可用不推出共同可用；误导记录、未记载变化及查询耗尽保留。候选／原因覆盖、诊断忠实、稳定查询使用及权限仍明示，已完成的一般模型修订不重计。 可失实检查另增24项定理／41项审计、18,684项匹配记录（22项空依赖）。完整记录的相反答案可辨认性等价于跨候选任意两失陷集合不覆盖全体；缺报须有实际收到的共同幸存见证。循环自证、重复支承、耗尽及超范围共同失陷保留；真实覆盖、忠实幸存报告、稳定记录执行及权限仍给定。 时间接续另增34项定理／66项审计、35,486项匹配记录（32项空依赖）。每时刻失陷上限不等于整段收集上限；移动失陷可造成全假记录。复查后的真实停止、后续受阻保留先前消耗及变化范围低报失败均实查。真实转移／报告规律、受保护记录和最终命令区间仍给定；未实现物理恢复或分布式迁移。 受控执行接续另增27项定理／57项审计、24,416项匹配记录（15项空依赖）。准确的已知变换可省去重查，具体19单位停止、18单位不足；权限拒绝与重放均实查。额外写入通道可使记录完全不变而实际覆盖失真。真实语义、完整控制入口、报告／失陷范围与原子执行仍需根据；暴露状态写入不等于物理恢复，未实现受保护运行时。 中断恢复新增22项定理／48项审计、27,888项有限匹配（17项空依赖）。剩余 n 项写入及发布需要 n+1单位与对应时距；重启保留消耗。九单位时恢复耗尽、活动仍运行且普通停止受阻；待恢复标记丢失可暴露失实认证。持久原语、原子微步骤／发布、覆盖写入、无旁路和当前报告对应仍供应。旧指令成果迁移为 mediated-evidence-transport，恢复增量为 recoverable-mediated-change，不重算既有27项。",
+      "scope_en": "Four scoped theoretical deliverables complete; 59 new Lean theorems / 102 declaration audits and 14,295 matched finite records. Forty-two empty dependencies; others use standard axioms only. Omitted models, inquiry depletion, authority failure, missing parts, corrupt transfer and migration underfunding remain. Conventional finite planning matches; deployment, arbitrary discovery and universal convergence are unestablished. Author counterreview, not independent acceptance. The continuation adds 24 theorems / 45 audits and 25,284 matched records; 21 empty dependencies, otherwise standard axioms. Finite faithful inspection, charged reads and atomic dispatch remain explicit; credential equality does not resolve authority capture. Partial-compromise work adds 37 theorems / 68 audits and 85,680 matched records (29 empty dependencies). Availability requires that no two admitted fault sets cover all reviewers; actual fault coverage, the protected boundary and mandate legitimacy still require warrant. The final executor directly checks the protected scope; the earlier attestation-only failure is retained. Reconfiguration adds 28 theorems / 48 audits and 33,648 matched records (28 declarations with empty dependencies). Shared control, duplicate support, omitted causes and inadequate budgets remain. Causal formulas/root coverage, reform approval and protected atomic realization are supplied; distributed migration and ethical legitimacy are not proved. Evidence continuation adds 24 theorems / 47 audits and 19,808 matched records (23 declarations with empty dependencies). Per-model availability need not survive pooling; misleading records, unobserved change and inquiry depletion remain. Candidate/root coverage, diagnostic fidelity, stable query/use and authority stay explicit; completed general model revision is not recounted. Fallible inspection adds 24 theorems / 41 audits and 18,684 matched records (22 empty dependencies). Opposite-answer complete-transcript diagnosability is equivalent to cross-candidate pairwise fault noncoverage; partial transcripts require received common-survivor evidence. Self-certification, duplicate support, exhaustion and uncovered joint faults remain; actual coverage, faithful surviving reports, stable recording/execution and authority remain supplied. Temporal continuation adds 34 theorems / 66 audits and 35,486 matched records (32 empty dependencies). Instantaneous fault bounds do not bound the collection window; moving corruption can produce all-false reports. Reinspection-to-shutdown, preservation of spent prefixes and understated-transition failure are checked. Actual transition/report laws, protected recording and the final command interval remain supplied; physical recovery and distributed migration are not implemented. Mediated-control continuation adds 27 theorems / 57 audits and 24,416 matched records (15 empty dependencies). Exact known transforms can avoid reinspection; the worked shutdown costs 19 units and fails with 18. Denied rights and replay are checked. An extra writer can preserve all public records while breaking actual coverage. Physical semantics, complete mediation, report/fault coverage and atomic execution remain conditions; the exposure setter is not physical recovery and no protected runtime is implemented. Interrupted recovery adds 22 theorems / 48 audits and 27,888 finite matches (17 empty dependencies). Remaining n writes plus publication require n+1 units and corresponding time; restart retains consumption. At nine units, recovery exhausts while activity keeps running and ordinary shutdown is blocked; losing the pending marker can expose a false certificate. Durable primitives, atomic microsteps/publication, overwrite semantics, no bypass and current reports remain supplied. The previous instruction result is migrated as mediated-evidence-transport; the delta is recoverable-mediated-change, without recounting the prior 27.",
+      "links": [
+        {
+          "label_zh": "论文",
+          "label_en": "Theory paper",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md"
+        },
+        {
+          "label_zh": "整合与反审",
+          "label_en": "Integration and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-CONTINUITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "验证回执",
+          "label_en": "Verification receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/alignment-continuity-verification.json"
+        },
+        {
+          "label_zh": "形式选择与执行",
+          "label_en": "Selection and execution",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentInquiry.lean"
+        },
+        {
+          "label_zh": "实际纠正命令",
+          "label_en": "Concrete commands",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EffectiveCommand.lean"
+        },
+        {
+          "label_zh": "改革查询",
+          "label_en": "Reform inquiry",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReformInquiry.lean"
+        },
+        {
+          "label_zh": "承载者接续",
+          "label_en": "Carrier succession",
+          "path": "experiments/market-generativity/meta-attractor/AlignmentSuccession.lean"
+        },
+        {
+          "label_zh": "取得路线接续",
+          "label_en": "Acquired route continuation",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-CORRECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "取得与执行证明",
+          "label_en": "Acquisition and execution proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AcquiredCorrection.lean"
+        },
+        {
+          "label_zh": "新增验证回执",
+          "label_en": "Additional verification receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/acquired-correction-verification.json"
+        },
+        {
+          "label_zh": "部分失陷接续",
+          "label_en": "Partial-compromise continuation",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FAULT-TOLERANT-CORRECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "失陷范围与执行证明",
+          "label_en": "Fault-envelope and execution proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FaultTolerantCorrection.lean"
+        },
+        {
+          "label_zh": "失陷接续回执",
+          "label_en": "Fault-tolerant continuation receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/fault-tolerant-correction-verification.json"
+        },
+        {
+          "label_zh": "组织改革整合",
+          "label_en": "Reconfiguration integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-RECONFIGURATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "组织改革证明",
+          "label_en": "Reconfiguration proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionReconfiguration.lean"
+        },
+        {
+          "label_zh": "改革验证回执",
+          "label_en": "Reconfiguration receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-reconfiguration-verification.json"
+        },
+        {
+          "label_zh": "证据接续整合",
+          "label_en": "Evidence-qualified integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVIDENCE-QUALIFIED-CORRECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "共同认证证明",
+          "label_en": "Pooled-certificate proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvidenceQualifiedCorrection.lean"
+        },
+        {
+          "label_zh": "证据执行回执",
+          "label_en": "Evidence/execution receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/evidence-qualified-correction-verification.json"
+        },
+        {
+          "label_zh": "可失实检查整合",
+          "label_en": "Fallible-inspection integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FALLIBLE-INSPECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "共同解释证明",
+          "label_en": "Joint-interpretation proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FallibleInspection.lean"
+        },
+        {
+          "label_zh": "可失实检查回执",
+          "label_en": "Fallible-inspection receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/fallible-inspection-verification.json"
+        },
+        {
+          "label_zh": "时间证据整合",
+          "label_en": "Temporal-inspection integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/TEMPORAL-INSPECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "变化历史证明",
+          "label_en": "Changing-history proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/TemporalInspection.lean"
+        },
+        {
+          "label_zh": "时间证据回执",
+          "label_en": "Temporal-inspection receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/temporal-inspection-verification.json"
+        },
+        {
+          "label_zh": "执行与证据整合",
+          "label_en": "Mediated-control integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-INTEGRATION.md"
+        },
+        {
+          "label_zh": "指令执行证明",
+          "label_en": "Executed-instruction proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MediatedControl.lean"
+        },
+        {
+          "label_zh": "执行接续回执",
+          "label_en": "Mediated-control receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/mediated-control-verification.json"
+        },
+        {
+          "label_zh": "中断恢复成果",
+          "label_en": "Interrupted-recovery result",
+          "path": "theories/shengsheng-buxi-generative-existence/results/records/recoverable-mediated-change.md"
+        },
+        {
+          "label_zh": "中断恢复证明",
+          "label_en": "Interrupted-recovery proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RecoverableControl.lean"
+        },
+        {
+          "label_zh": "恢复实查回执",
+          "label_en": "Recovery verification receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/recoverable-control-verification.json"
+        }
+      ],
+      "id": "F30"
+    }
+  },
+  "after_rows": {
+    "M25": {
+      "title_zh": "变化中的对齐：纠正、查询与接续",
+      "title_en": "Alignment through change: correction, inquiry and succession",
+      "claim_zh": "明确G0/J规范基础评价目的与选择规则；观察可用的查询和回应共同保留实际纠正，宏观选择通过有资金支持的忠实载体交接接入真实命令执行。 后续实际检查形成未预列的纠正地址；局部成功见证与给定范围的穷尽分开，重新核验当前配置与权限。 再接续将相关故障范围分别用于观察与委托许可；取得真实路线、保持委托范围并接到付费执行及防重放。 本轮由明确共同原因与公式计算故障范围，再接入保留委托、新权限版本和纠正预算的原子组织改革。 再将保留的多个因果说明汇成共同认证范围，按相关观察修订并实际纠正；成功可保留未定区别，也可直接使用当前充分证据。 再将事实答案与见证失陷共同解释，保留相容候选；无需指定绝对可信者，明确可辨认条件并接入实际纠正。 再按控制与当前失陷的可能变化展开成对候选，以顺序报告修订，并将合法有限历史的当前覆盖接入实际纠正。 再由实际执行的有界指令推导变化范围，以同一变换接续实际与候选，并将权限、代次、记录和旧命令撤销接成一次抽象提交。 逐项覆盖写入与持久待恢复描述再接通有限中断历史；有支持的无中断后缀恢复发布，但证据一致不保证普通停止始终可用。 恢复期间的停止连接现已完成：当前授权通道及三步余量受保护、逐次中断有界时，足够长的监督序列最终实际停止，并保留未完成描述。",
+      "claim_en": "Explicit G0/J grounds appraise ends and selectors; observation-usable inquiry and response jointly preserve actual correction, while funded faithful carrier transfer refines aggregate selection into real command execution. Subsequent inspection forms unlisted correction addresses, separates local success from scoped exhaustion, and rechecks current configuration and authority. A further continuation applies correlated fault envelopes separately to observation and delegated permission, deriving actual routes, mandate fidelity, paid execution and replay rejection. Causal formulas now compute reviewer fault envelopes, supporting atomic organizational reform that retains the mandate, renews authority labels and reserves correction capacity. Retained causal descriptions now form a common certificate envelope; relevant observation refines it into actual correction while some distinctions remain, or current sufficient evidence permits immediate action. Structural answers and witness failures are now interpreted jointly; compatible candidates remain, no designated infallible witness is required, and explicit distinguishability supports actual correction. Paired control/fault possibilities now expand through admitted changes and narrow through sequential reports, connecting current coverage across lawful finite histories to actual correction. A bounded interpreter now derives change scope from executed writes, transports actual and candidate configurations through the same semantics, and couples permissions, generation, recording and old-command revocation in one abstract commit. Sequential overwrites and a durable pending description now cover finite interruption histories; a supported uninterrupted suffix publishes, while evidence coherence does not ensure ordinary shutdown remains available. The stopping connection during recovery is now complete: with a protected current grant/channel and three-step reserve and bounded interruptions, every sufficiently long supervisor sequence completes shutdown while retaining the incomplete description.",
+      "scope_zh": "四项条件性理论成果完成；59项新Lean定理／102项声明审计和14,295项有限记录匹配。42项空依赖，其余仅标准公理。保留遗漏模型、查询耗尽、权限失效、部件不足、失真交接及迁移资金不足。常规有限规划匹配；真实部署、任意发现及普遍收敛未证。作者反审，不冒充独立验收。 接续另有24项新定理／45项审计、25,284项匹配记录；21项空依赖，其余仅标准公理。有限忠实界面、检查成本和原子执行明确；权限俘获不由凭据相等解决。 部分失陷接续另有37项新定理／68项审计、85,680项匹配记录（29项空依赖）。可用性要求任意两个纳入故障集合不覆盖全部审查者；真实故障覆盖、受保护执行边界与委托正当性仍须根据。 最终执行器直接检查受保护委托范围；原仅凭认证的失陷失败保留。 组织改革另增28项定理／48项审计、33,648项匹配记录（28项声明空依赖）；共同控制、重复支承、遗漏原因及预算不足反例保留。因果描述与根原因覆盖、改革授权、受保护的原子实现仍给定；非分布式迁移或伦理正当性证明。 证据接续另增24项定理／47项审计、19,808项匹配记录（23项声明空依赖）。逐候选可用不推出共同可用；误导记录、未记载变化及查询耗尽保留。候选／原因覆盖、诊断忠实、稳定查询使用及权限仍明示，已完成的一般模型修订不重计。 可失实检查另增24项定理／41项审计、18,684项匹配记录（22项空依赖）。完整记录的相反答案可辨认性等价于跨候选任意两失陷集合不覆盖全体；缺报须有实际收到的共同幸存见证。循环自证、重复支承、耗尽及超范围共同失陷保留；真实覆盖、忠实幸存报告、稳定记录执行及权限仍给定。 时间接续另增34项定理／66项审计、35,486项匹配记录（32项空依赖）。每时刻失陷上限不等于整段收集上限；移动失陷可造成全假记录。复查后的真实停止、后续受阻保留先前消耗及变化范围低报失败均实查。真实转移／报告规律、受保护记录和最终命令区间仍给定；未实现物理恢复或分布式迁移。 受控执行接续另增27项定理／57项审计、24,416项匹配记录（15项空依赖）。准确的已知变换可省去重查，具体19单位停止、18单位不足；权限拒绝与重放均实查。额外写入通道可使记录完全不变而实际覆盖失真。真实语义、完整控制入口、报告／失陷范围与原子执行仍需根据；暴露状态写入不等于物理恢复，未实现受保护运行时。 中断恢复新增22项定理／48项审计、27,888项有限匹配（17项空依赖）。剩余 n 项写入及发布需要 n+1单位与对应时距；重启保留消耗。九单位时恢复耗尽、活动仍运行且普通停止受阻；待恢复标记丢失可暴露失实认证。持久原语、原子微步骤／发布、覆盖写入、无旁路和当前报告对应仍供应。旧指令成果迁移为 mediated-evidence-transport，恢复增量为 recoverable-mediated-change，不重算既有27项。 保留停止增量新增21项定理／51项审计（18空）、7,272项有限匹配；复用恢复相容性及旧三步命令，从剩余 R 单位在至多 R−2个监督周期停止，无需恢复成功。独立停止授权／通道、持久保护、有限延迟、尝试成本及监督继续执行仍供应；超界中断保留运行失败。旧九单位反例属旧协议，新入口拒绝而非追溯修复。canonical ID: reserved-shutdown-during-recovery。",
+      "scope_en": "Four scoped theoretical deliverables complete; 59 new Lean theorems / 102 declaration audits and 14,295 matched finite records. Forty-two empty dependencies; others use standard axioms only. Omitted models, inquiry depletion, authority failure, missing parts, corrupt transfer and migration underfunding remain. Conventional finite planning matches; deployment, arbitrary discovery and universal convergence are unestablished. Author counterreview, not independent acceptance. The continuation adds 24 theorems / 45 audits and 25,284 matched records; 21 empty dependencies, otherwise standard axioms. Finite faithful inspection, charged reads and atomic dispatch remain explicit; credential equality does not resolve authority capture. Partial-compromise work adds 37 theorems / 68 audits and 85,680 matched records (29 empty dependencies). Availability requires that no two admitted fault sets cover all reviewers; actual fault coverage, the protected boundary and mandate legitimacy still require warrant. The final executor directly checks the protected scope; the earlier attestation-only failure is retained. Reconfiguration adds 28 theorems / 48 audits and 33,648 matched records (28 declarations with empty dependencies). Shared control, duplicate support, omitted causes and inadequate budgets remain. Causal formulas/root coverage, reform approval and protected atomic realization are supplied; distributed migration and ethical legitimacy are not proved. Evidence continuation adds 24 theorems / 47 audits and 19,808 matched records (23 declarations with empty dependencies). Per-model availability need not survive pooling; misleading records, unobserved change and inquiry depletion remain. Candidate/root coverage, diagnostic fidelity, stable query/use and authority stay explicit; completed general model revision is not recounted. Fallible inspection adds 24 theorems / 41 audits and 18,684 matched records (22 empty dependencies). Opposite-answer complete-transcript diagnosability is equivalent to cross-candidate pairwise fault noncoverage; partial transcripts require received common-survivor evidence. Self-certification, duplicate support, exhaustion and uncovered joint faults remain; actual coverage, faithful surviving reports, stable recording/execution and authority remain supplied. Temporal continuation adds 34 theorems / 66 audits and 35,486 matched records (32 empty dependencies). Instantaneous fault bounds do not bound the collection window; moving corruption can produce all-false reports. Reinspection-to-shutdown, preservation of spent prefixes and understated-transition failure are checked. Actual transition/report laws, protected recording and the final command interval remain supplied; physical recovery and distributed migration are not implemented. Mediated-control continuation adds 27 theorems / 57 audits and 24,416 matched records (15 empty dependencies). Exact known transforms can avoid reinspection; the worked shutdown costs 19 units and fails with 18. Denied rights and replay are checked. An extra writer can preserve all public records while breaking actual coverage. Physical semantics, complete mediation, report/fault coverage and atomic execution remain conditions; the exposure setter is not physical recovery and no protected runtime is implemented. Interrupted recovery adds 22 theorems / 48 audits and 27,888 finite matches (17 empty dependencies). Remaining n writes plus publication require n+1 units and corresponding time; restart retains consumption. At nine units, recovery exhausts while activity keeps running and ordinary shutdown is blocked; losing the pending marker can expose a false certificate. Durable primitives, atomic microsteps/publication, overwrite semantics, no bypass and current reports remain supplied. The previous instruction result is migrated as mediated-evidence-transport; the delta is recoverable-mediated-change, without recounting the prior 27. Reserved stopping adds 21 theorems / 51 audits (18 empty) and 7,272 finite matches. It reuses recovery coherence and the existing three-step command, stopping within R−2 supervisor cycles from R remaining units without recovery success. Independent stop authority/channel, durable protection, bounded delay, attempt cost and continued scheduling remain supplied; excessive interruption retains a running failure. The old nine-unit failure remains for the old protocol; new admission refuses it rather than repairing it retroactively. Canonical ID: reserved-shutdown-during-recovery.",
+      "links": [
+        {
+          "label_zh": "论文",
+          "label_en": "Theory paper",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md"
+        },
+        {
+          "label_zh": "整合与反审",
+          "label_en": "Integration and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-CONTINUITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "验证回执",
+          "label_en": "Verification receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/alignment-continuity-verification.json"
+        },
+        {
+          "label_zh": "形式选择与执行",
+          "label_en": "Selection and execution",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentInquiry.lean"
+        },
+        {
+          "label_zh": "实际纠正命令",
+          "label_en": "Concrete commands",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EffectiveCommand.lean"
+        },
+        {
+          "label_zh": "改革查询",
+          "label_en": "Reform inquiry",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReformInquiry.lean"
+        },
+        {
+          "label_zh": "承载者接续",
+          "label_en": "Carrier succession",
+          "path": "experiments/market-generativity/meta-attractor/AlignmentSuccession.lean"
+        },
+        {
+          "label_zh": "取得路线接续",
+          "label_en": "Acquired route continuation",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-CORRECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "取得与执行证明",
+          "label_en": "Acquisition and execution proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AcquiredCorrection.lean"
+        },
+        {
+          "label_zh": "新增验证回执",
+          "label_en": "Additional verification receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/acquired-correction-verification.json"
+        },
+        {
+          "label_zh": "部分失陷接续",
+          "label_en": "Partial-compromise continuation",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FAULT-TOLERANT-CORRECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "失陷范围与执行证明",
+          "label_en": "Fault-envelope and execution proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FaultTolerantCorrection.lean"
+        },
+        {
+          "label_zh": "失陷接续回执",
+          "label_en": "Fault-tolerant continuation receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/fault-tolerant-correction-verification.json"
+        },
+        {
+          "label_zh": "组织改革整合",
+          "label_en": "Reconfiguration integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-RECONFIGURATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "组织改革证明",
+          "label_en": "Reconfiguration proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionReconfiguration.lean"
+        },
+        {
+          "label_zh": "改革验证回执",
+          "label_en": "Reconfiguration receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-reconfiguration-verification.json"
+        },
+        {
+          "label_zh": "证据接续整合",
+          "label_en": "Evidence-qualified integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVIDENCE-QUALIFIED-CORRECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "共同认证证明",
+          "label_en": "Pooled-certificate proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvidenceQualifiedCorrection.lean"
+        },
+        {
+          "label_zh": "证据执行回执",
+          "label_en": "Evidence/execution receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/evidence-qualified-correction-verification.json"
+        },
+        {
+          "label_zh": "可失实检查整合",
+          "label_en": "Fallible-inspection integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FALLIBLE-INSPECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "共同解释证明",
+          "label_en": "Joint-interpretation proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FallibleInspection.lean"
+        },
+        {
+          "label_zh": "可失实检查回执",
+          "label_en": "Fallible-inspection receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/fallible-inspection-verification.json"
+        },
+        {
+          "label_zh": "时间证据整合",
+          "label_en": "Temporal-inspection integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/TEMPORAL-INSPECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "变化历史证明",
+          "label_en": "Changing-history proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/TemporalInspection.lean"
+        },
+        {
+          "label_zh": "时间证据回执",
+          "label_en": "Temporal-inspection receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/temporal-inspection-verification.json"
+        },
+        {
+          "label_zh": "执行与证据整合",
+          "label_en": "Mediated-control integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-INTEGRATION.md"
+        },
+        {
+          "label_zh": "指令执行证明",
+          "label_en": "Executed-instruction proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MediatedControl.lean"
+        },
+        {
+          "label_zh": "执行接续回执",
+          "label_en": "Mediated-control receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/mediated-control-verification.json"
+        },
+        {
+          "label_zh": "中断恢复成果",
+          "label_en": "Interrupted-recovery result",
+          "path": "theories/shengsheng-buxi-generative-existence/results/records/recoverable-mediated-change.md"
+        },
+        {
+          "label_zh": "中断恢复证明",
+          "label_en": "Interrupted-recovery proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RecoverableControl.lean"
+        },
+        {
+          "label_zh": "恢复实查回执",
+          "label_en": "Recovery verification receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/recoverable-control-verification.json"
+        },
+        {
+          "label_zh": "保留停止成果",
+          "label_en": "Reserved-shutdown result",
+          "path": "theories/shengsheng-buxi-generative-existence/results/records/reserved-shutdown-during-recovery.md"
+        },
+        {
+          "label_zh": "停止余量证明",
+          "label_en": "Stop-reserve proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReservedShutdown.lean"
+        },
+        {
+          "label_zh": "保留停止实查",
+          "label_en": "Reserved-shutdown verification",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/reserved-shutdown-verification.json"
+        }
+      ],
+      "id": "M25"
+    },
+    "F30": {
+      "title_zh": "对齐接续的形式与执行包",
+      "title_en": "Formal and execution package for alignment continuity",
+      "claim_zh": "核验有限稳健策略选择、实际命令、继承改革历史及市场到载体的精确细化；同一形式包链接两次不重复计为独立成果。 后续实际检查形成未预列的纠正地址；局部成功见证与给定范围的穷尽分开，重新核验当前配置与权限。 再接续将相关故障范围分别用于观察与委托许可；取得真实路线、保持委托范围并接到付费执行及防重放。 本轮由明确共同原因与公式计算故障范围，再接入保留委托、新权限版本和纠正预算的原子组织改革。 再将保留的多个因果说明汇成共同认证范围，按相关观察修订并实际纠正；成功可保留未定区别，也可直接使用当前充分证据。 再将事实答案与见证失陷共同解释，保留相容候选；无需指定绝对可信者，明确可辨认条件并接入实际纠正。 再按控制与当前失陷的可能变化展开成对候选，以顺序报告修订，并将合法有限历史的当前覆盖接入实际纠正。 再由实际执行的有界指令推导变化范围，以同一变换接续实际与候选，并将权限、代次、记录和旧命令撤销接成一次抽象提交。 逐项覆盖写入与持久待恢复描述再接通有限中断历史；有支持的无中断后缀恢复发布，但证据一致不保证普通停止始终可用。 恢复期间的停止连接现已完成：当前授权通道及三步余量受保护、逐次中断有界时，足够长的监督序列最终实际停止，并保留未完成描述。",
+      "claim_en": "Checks finite robust policy synthesis, concrete commands, the inherited reform history and exact market-to-carrier refinement; cross-linking the same package does not count it twice. Subsequent inspection forms unlisted correction addresses, separates local success from scoped exhaustion, and rechecks current configuration and authority. A further continuation applies correlated fault envelopes separately to observation and delegated permission, deriving actual routes, mandate fidelity, paid execution and replay rejection. Causal formulas now compute reviewer fault envelopes, supporting atomic organizational reform that retains the mandate, renews authority labels and reserves correction capacity. Retained causal descriptions now form a common certificate envelope; relevant observation refines it into actual correction while some distinctions remain, or current sufficient evidence permits immediate action. Structural answers and witness failures are now interpreted jointly; compatible candidates remain, no designated infallible witness is required, and explicit distinguishability supports actual correction. Paired control/fault possibilities now expand through admitted changes and narrow through sequential reports, connecting current coverage across lawful finite histories to actual correction. A bounded interpreter now derives change scope from executed writes, transports actual and candidate configurations through the same semantics, and couples permissions, generation, recording and old-command revocation in one abstract commit. Sequential overwrites and a durable pending description now cover finite interruption histories; a supported uninterrupted suffix publishes, while evidence coherence does not ensure ordinary shutdown remains available. The stopping connection during recovery is now complete: with a protected current grant/channel and three-step reserve and bounded interruptions, every sufficiently long supervisor sequence completes shutdown while retaining the incomplete description.",
+      "scope_zh": "四项条件性理论成果完成；59项新Lean定理／102项声明审计和14,295项有限记录匹配。42项空依赖，其余仅标准公理。保留遗漏模型、查询耗尽、权限失效、部件不足、失真交接及迁移资金不足。常规有限规划匹配；真实部署、任意发现及普遍收敛未证。作者反审，不冒充独立验收。 接续另有24项新定理／45项审计、25,284项匹配记录；21项空依赖，其余仅标准公理。有限忠实界面、检查成本和原子执行明确；权限俘获不由凭据相等解决。 部分失陷接续另有37项新定理／68项审计、85,680项匹配记录（29项空依赖）。可用性要求任意两个纳入故障集合不覆盖全部审查者；真实故障覆盖、受保护执行边界与委托正当性仍须根据。 最终执行器直接检查受保护委托范围；原仅凭认证的失陷失败保留。 组织改革另增28项定理／48项审计、33,648项匹配记录（28项声明空依赖）；共同控制、重复支承、遗漏原因及预算不足反例保留。因果描述与根原因覆盖、改革授权、受保护的原子实现仍给定；非分布式迁移或伦理正当性证明。 证据接续另增24项定理／47项审计、19,808项匹配记录（23项声明空依赖）。逐候选可用不推出共同可用；误导记录、未记载变化及查询耗尽保留。候选／原因覆盖、诊断忠实、稳定查询使用及权限仍明示，已完成的一般模型修订不重计。 可失实检查另增24项定理／41项审计、18,684项匹配记录（22项空依赖）。完整记录的相反答案可辨认性等价于跨候选任意两失陷集合不覆盖全体；缺报须有实际收到的共同幸存见证。循环自证、重复支承、耗尽及超范围共同失陷保留；真实覆盖、忠实幸存报告、稳定记录执行及权限仍给定。 时间接续另增34项定理／66项审计、35,486项匹配记录（32项空依赖）。每时刻失陷上限不等于整段收集上限；移动失陷可造成全假记录。复查后的真实停止、后续受阻保留先前消耗及变化范围低报失败均实查。真实转移／报告规律、受保护记录和最终命令区间仍给定；未实现物理恢复或分布式迁移。 受控执行接续另增27项定理／57项审计、24,416项匹配记录（15项空依赖）。准确的已知变换可省去重查，具体19单位停止、18单位不足；权限拒绝与重放均实查。额外写入通道可使记录完全不变而实际覆盖失真。真实语义、完整控制入口、报告／失陷范围与原子执行仍需根据；暴露状态写入不等于物理恢复，未实现受保护运行时。 中断恢复新增22项定理／48项审计、27,888项有限匹配（17项空依赖）。剩余 n 项写入及发布需要 n+1单位与对应时距；重启保留消耗。九单位时恢复耗尽、活动仍运行且普通停止受阻；待恢复标记丢失可暴露失实认证。持久原语、原子微步骤／发布、覆盖写入、无旁路和当前报告对应仍供应。旧指令成果迁移为 mediated-evidence-transport，恢复增量为 recoverable-mediated-change，不重算既有27项。 保留停止增量新增21项定理／51项审计（18空）、7,272项有限匹配；复用恢复相容性及旧三步命令，从剩余 R 单位在至多 R−2个监督周期停止，无需恢复成功。独立停止授权／通道、持久保护、有限延迟、尝试成本及监督继续执行仍供应；超界中断保留运行失败。旧九单位反例属旧协议，新入口拒绝而非追溯修复。canonical ID: reserved-shutdown-during-recovery。",
+      "scope_en": "Four scoped theoretical deliverables complete; 59 new Lean theorems / 102 declaration audits and 14,295 matched finite records. Forty-two empty dependencies; others use standard axioms only. Omitted models, inquiry depletion, authority failure, missing parts, corrupt transfer and migration underfunding remain. Conventional finite planning matches; deployment, arbitrary discovery and universal convergence are unestablished. Author counterreview, not independent acceptance. The continuation adds 24 theorems / 45 audits and 25,284 matched records; 21 empty dependencies, otherwise standard axioms. Finite faithful inspection, charged reads and atomic dispatch remain explicit; credential equality does not resolve authority capture. Partial-compromise work adds 37 theorems / 68 audits and 85,680 matched records (29 empty dependencies). Availability requires that no two admitted fault sets cover all reviewers; actual fault coverage, the protected boundary and mandate legitimacy still require warrant. The final executor directly checks the protected scope; the earlier attestation-only failure is retained. Reconfiguration adds 28 theorems / 48 audits and 33,648 matched records (28 declarations with empty dependencies). Shared control, duplicate support, omitted causes and inadequate budgets remain. Causal formulas/root coverage, reform approval and protected atomic realization are supplied; distributed migration and ethical legitimacy are not proved. Evidence continuation adds 24 theorems / 47 audits and 19,808 matched records (23 declarations with empty dependencies). Per-model availability need not survive pooling; misleading records, unobserved change and inquiry depletion remain. Candidate/root coverage, diagnostic fidelity, stable query/use and authority stay explicit; completed general model revision is not recounted. Fallible inspection adds 24 theorems / 41 audits and 18,684 matched records (22 empty dependencies). Opposite-answer complete-transcript diagnosability is equivalent to cross-candidate pairwise fault noncoverage; partial transcripts require received common-survivor evidence. Self-certification, duplicate support, exhaustion and uncovered joint faults remain; actual coverage, faithful surviving reports, stable recording/execution and authority remain supplied. Temporal continuation adds 34 theorems / 66 audits and 35,486 matched records (32 empty dependencies). Instantaneous fault bounds do not bound the collection window; moving corruption can produce all-false reports. Reinspection-to-shutdown, preservation of spent prefixes and understated-transition failure are checked. Actual transition/report laws, protected recording and the final command interval remain supplied; physical recovery and distributed migration are not implemented. Mediated-control continuation adds 27 theorems / 57 audits and 24,416 matched records (15 empty dependencies). Exact known transforms can avoid reinspection; the worked shutdown costs 19 units and fails with 18. Denied rights and replay are checked. An extra writer can preserve all public records while breaking actual coverage. Physical semantics, complete mediation, report/fault coverage and atomic execution remain conditions; the exposure setter is not physical recovery and no protected runtime is implemented. Interrupted recovery adds 22 theorems / 48 audits and 27,888 finite matches (17 empty dependencies). Remaining n writes plus publication require n+1 units and corresponding time; restart retains consumption. At nine units, recovery exhausts while activity keeps running and ordinary shutdown is blocked; losing the pending marker can expose a false certificate. Durable primitives, atomic microsteps/publication, overwrite semantics, no bypass and current reports remain supplied. The previous instruction result is migrated as mediated-evidence-transport; the delta is recoverable-mediated-change, without recounting the prior 27. Reserved stopping adds 21 theorems / 51 audits (18 empty) and 7,272 finite matches. It reuses recovery coherence and the existing three-step command, stopping within R−2 supervisor cycles from R remaining units without recovery success. Independent stop authority/channel, durable protection, bounded delay, attempt cost and continued scheduling remain supplied; excessive interruption retains a running failure. The old nine-unit failure remains for the old protocol; new admission refuses it rather than repairing it retroactively. Canonical ID: reserved-shutdown-during-recovery.",
+      "links": [
+        {
+          "label_zh": "论文",
+          "label_en": "Theory paper",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md"
+        },
+        {
+          "label_zh": "整合与反审",
+          "label_en": "Integration and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-CONTINUITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "验证回执",
+          "label_en": "Verification receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/alignment-continuity-verification.json"
+        },
+        {
+          "label_zh": "形式选择与执行",
+          "label_en": "Selection and execution",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentInquiry.lean"
+        },
+        {
+          "label_zh": "实际纠正命令",
+          "label_en": "Concrete commands",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EffectiveCommand.lean"
+        },
+        {
+          "label_zh": "改革查询",
+          "label_en": "Reform inquiry",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReformInquiry.lean"
+        },
+        {
+          "label_zh": "承载者接续",
+          "label_en": "Carrier succession",
+          "path": "experiments/market-generativity/meta-attractor/AlignmentSuccession.lean"
+        },
+        {
+          "label_zh": "取得路线接续",
+          "label_en": "Acquired route continuation",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-CORRECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "取得与执行证明",
+          "label_en": "Acquisition and execution proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AcquiredCorrection.lean"
+        },
+        {
+          "label_zh": "新增验证回执",
+          "label_en": "Additional verification receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/acquired-correction-verification.json"
+        },
+        {
+          "label_zh": "部分失陷接续",
+          "label_en": "Partial-compromise continuation",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FAULT-TOLERANT-CORRECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "失陷范围与执行证明",
+          "label_en": "Fault-envelope and execution proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FaultTolerantCorrection.lean"
+        },
+        {
+          "label_zh": "失陷接续回执",
+          "label_en": "Fault-tolerant continuation receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/fault-tolerant-correction-verification.json"
+        },
+        {
+          "label_zh": "组织改革整合",
+          "label_en": "Reconfiguration integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-RECONFIGURATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "组织改革证明",
+          "label_en": "Reconfiguration proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionReconfiguration.lean"
+        },
+        {
+          "label_zh": "改革验证回执",
+          "label_en": "Reconfiguration receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-reconfiguration-verification.json"
+        },
+        {
+          "label_zh": "证据接续整合",
+          "label_en": "Evidence-qualified integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVIDENCE-QUALIFIED-CORRECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "共同认证证明",
+          "label_en": "Pooled-certificate proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvidenceQualifiedCorrection.lean"
+        },
+        {
+          "label_zh": "证据执行回执",
+          "label_en": "Evidence/execution receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/evidence-qualified-correction-verification.json"
+        },
+        {
+          "label_zh": "可失实检查整合",
+          "label_en": "Fallible-inspection integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FALLIBLE-INSPECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "共同解释证明",
+          "label_en": "Joint-interpretation proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FallibleInspection.lean"
+        },
+        {
+          "label_zh": "可失实检查回执",
+          "label_en": "Fallible-inspection receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/fallible-inspection-verification.json"
+        },
+        {
+          "label_zh": "时间证据整合",
+          "label_en": "Temporal-inspection integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/TEMPORAL-INSPECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "变化历史证明",
+          "label_en": "Changing-history proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/TemporalInspection.lean"
+        },
+        {
+          "label_zh": "时间证据回执",
+          "label_en": "Temporal-inspection receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/temporal-inspection-verification.json"
+        },
+        {
+          "label_zh": "执行与证据整合",
+          "label_en": "Mediated-control integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-INTEGRATION.md"
+        },
+        {
+          "label_zh": "指令执行证明",
+          "label_en": "Executed-instruction proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MediatedControl.lean"
+        },
+        {
+          "label_zh": "执行接续回执",
+          "label_en": "Mediated-control receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/mediated-control-verification.json"
+        },
+        {
+          "label_zh": "中断恢复成果",
+          "label_en": "Interrupted-recovery result",
+          "path": "theories/shengsheng-buxi-generative-existence/results/records/recoverable-mediated-change.md"
+        },
+        {
+          "label_zh": "中断恢复证明",
+          "label_en": "Interrupted-recovery proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RecoverableControl.lean"
+        },
+        {
+          "label_zh": "恢复实查回执",
+          "label_en": "Recovery verification receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/recoverable-control-verification.json"
+        },
+        {
+          "label_zh": "保留停止成果",
+          "label_en": "Reserved-shutdown result",
+          "path": "theories/shengsheng-buxi-generative-existence/results/records/reserved-shutdown-during-recovery.md"
+        },
+        {
+          "label_zh": "停止余量证明",
+          "label_en": "Stop-reserve proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReservedShutdown.lean"
+        },
+        {
+          "label_zh": "保留停止实查",
+          "label_en": "Reserved-shutdown verification",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/reserved-shutdown-verification.json"
+        }
+      ],
+      "id": "F30"
+    }
+  },
+  "before_data_sha256": "8a7fd0896522a26ffddbd668a0e60ea65accf7d5cfa9fb79f888566a1c3ff607",
+  "after_data_sha256": "5841fc90f66502bb403b8dd0ea4ff295f33dbf876b5a818179c7790cc705fef0",
+  "unrelated_entries_preserved": true,
+  "unrelated_rendered_lines_preserved": true,
+  "scope": "Only M25/F30 additions and fourteen authored/read versions, including three generated record views. Original receipts and inherited counts retain their scope; no new independent review or all-source refresh."
+}

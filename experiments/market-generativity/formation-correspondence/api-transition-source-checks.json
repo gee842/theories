@@ -1,0 +1,98 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T18:57:36.990738+00:00",
+  "manifest_sha256": "4a6090f630c67758c1cbe9f50e2b34a36b3117d4c426eec89142689ec9f486d1",
+  "checker_sha256": "a193a087431af1da5e7fc1cdbafc409ed060f919ef061d8dae282b138ed05201",
+  "source_checks": [
+    {
+      "id": "apollo-plan",
+      "sha256": "72e0df3e39c2cffbd12c0ba6aa069c7e723a56c38195e431b435329e54d85d94",
+      "representation": "web-reader text response; not original server HTML or a contemporaneous snapshot",
+      "anchors": [
+        "iamthatis",
+        "50,000 yearly subscribers",
+        "app review",
+        "July 1st",
+        "June 30th will be Apollo"
+      ]
+    },
+    {
+      "id": "narwhal-unfinished",
+      "sha256": "6fb9daaef750d7d2ee989ef64344af4e270adbe6dda363e01883afc3a9a05dd2",
+      "representation": "web-reader text response; not original server HTML or a contemporaneous snapshot",
+      "anchors": [
+        "det0ur",
+        "won't be able to finish Narwhal 2",
+        "July 1st",
+        "still waiting to hear back"
+      ]
+    },
+    {
+      "id": "narwhal-bridge",
+      "sha256": "b10d071cd787eb2141e6c77e714a56a00c62b50bd1e742ba5805c446dc3987c7",
+      "representation": "web-reader text response; not original server HTML or a contemporaneous snapshot",
+      "anchors": [
+        "det0ur",
+        "not going anywhere on July 1st",
+        "Over the next few months"
+      ]
+    },
+    {
+      "id": "narwhal-release",
+      "sha256": "3c2d1ddd0c78c65e9e4d29c5ceb12d609497d629bb6fa076835dd967c5eb31f9",
+      "representation": "web-reader text response; not original server HTML or a contemporaneous snapshot",
+      "anchors": [
+        "det0ur",
+        "Narwhal 2 is finally here",
+        "require subscriptions in a couple weeks"
+      ]
+    },
+    {
+      "id": "narwhal-pricing",
+      "sha256": "894bf245aa6cc9597eb55a53035c3f215cf195c674c08269c78f57d98681fa03",
+      "representation": "web-reader text response; not original server HTML or a contemporaneous snapshot",
+      "anchors": [
+        "det0ur",
+        "$3.99/month",
+        "Can I pay annually",
+        "worried about Reddit increasing the price"
+      ]
+    },
+    {
+      "id": "reddit-facts",
+      "sha256": "317dd143aba165f5cdffd06161b5c5bae3a6469bd6894ac722570c74ec5d76ca",
+      "representation": "unaltered HTML response",
+      "anchors": [
+        "June 15, 2023",
+        "June 30, 2023",
+        "Narwhal",
+        "infrastructure",
+        "opportunity costs",
+        "July 1",
+        "$0.24"
+      ]
+    },
+    {
+      "id": "apollo-ended",
+      "sha256": "3880df742d6d38674f9ae78798bbd5e7f0140a63ea89aeacabe9109a3725111f",
+      "representation": "unaltered HTML response",
+      "anchors": [
+        "shut down on June 30, 2023"
+      ]
+    },
+    {
+      "id": "post-dates",
+      "sha256": "227edc303202444bfb1ee88b72f8dadcbe5ec02947be3539374b59389b36ba78",
+      "representation": "web search response for the four dated Narwhal primary posts; not original server HTML",
+      "anchors": [
+        "Thursday June 08 2023",
+        "Tuesday June 27 2023",
+        "Wednesday September 27 2023",
+        "Monday October 09 2023"
+      ]
+    }
+  ],
+  "primary_statements": 7,
+  "newly_examined_posts": 5,
+  "scope": "Saved representations, main-post attribution anchors and dated milestone order. Not contemporaneous snapshots, a prospective prediction, causal identification, financial/contract audit, proof of nonstop operation or a new mathematical theorem."
+}

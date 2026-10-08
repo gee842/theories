@@ -1,0 +1,13 @@
+'Generative.ExplanatoryJoiningIncidence.locally_finite_image_finite' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryJoiningIncidence.leave_question' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningIncidence.occurrence_same_matches_slots' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningIncidence.fragment_not_occurrence_same' depends on axioms: [propext]
+'Generative.ExplanatoryJoiningIncidence.match_incident' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryJoiningIncidence.related_covers_connected' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryJoiningIncidence.span_left_open' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryJoiningIncidence.span_right_open' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryJoiningIncidence.connected_common_refinement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

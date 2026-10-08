@@ -1,0 +1,83 @@
+{
+  "recorded_at_utc": "2026-10-08T18:32:20.342901+00:00",
+  "scope": "Six reviewed study/next-delta updates; one new historical composition. Prior scientific claims and receipts preserved.",
+  "edits": [
+    {
+      "id": "acquired-binding-compositional-use",
+      "before_sha256": "b74b1217157434de74f4d512ca0e7cd7c0c5cf5b38ab7a1d08aaa562b21c9646",
+      "after_sha256": "2173705a8492d0a3b2de34583a683abfefcfc9c6da15e080f008ca36db9277cb",
+      "changes": [
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+          "old_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+          "new_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+        }
+      ]
+    },
+    {
+      "id": "enacted-scene-binding",
+      "before_sha256": "4e22b5ad1ebafeb36e4895407c1cac9ba3783b49e598293758c2637cde8a204b",
+      "after_sha256": "65079f09b03e5ecd9914e28e667d625a05527fc70158a29d48e20e69511b81a8",
+      "changes": [
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+          "old_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+          "new_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+        }
+      ]
+    },
+    {
+      "id": "encounter-selection-and-revision",
+      "before_sha256": "688bea0d1aad0dd2194ef07e2a5fef4aea75cd91e0f024671b15c90a0f33fee5",
+      "after_sha256": "970b08f886c58f1904091e02159a79536afd0914b46725c6f9487d3f25a722c9",
+      "changes": [
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+          "old_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+          "new_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+        }
+      ]
+    },
+    {
+      "id": "naming-attention-coverage",
+      "before_sha256": "976454ce8d209990050cefc0153e4737c916fbd08e74955e84eccdf6b58f10d2",
+      "after_sha256": "7944523f6b00ce66be61af39ddb09ffd333ac9d53bfbbbeb6bf4f67fefcfaf5c",
+      "changes": [
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+          "old_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+          "new_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+        }
+      ]
+    },
+    {
+      "id": "encounter-control-and-retention",
+      "before_sha256": "6756a4450de2e9eaa685df07eacb4e14590dd7daae8167ecbceedf01cda83db9",
+      "after_sha256": "cc70fca698d648b386d2a0f907da449960fb025ffe5c33bdacf7a438570c6cac",
+      "changes": [
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+          "old_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+          "new_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+        }
+      ]
+    },
+    {
+      "id": "retrospective-source-binding",
+      "before_sha256": "0e54a1a7b6f839af9dc354896e706d5b6eb0f78ae9d6395551c1f73c89fcebfa",
+      "after_sha256": "d61fee6f37a5b580bc2a17255a1f475a7e518b7da9e5cb411e251065ec809ac0",
+      "changes": [
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
+          "old_sha256": "73c7694b9a806be1d400352514327ff2b7fb7264735174865a0dc097f7123e2f",
+          "new_sha256": "f710db912169f83ad484fc9726753de351c836a79c4904442a4e06428f3b3811"
+        }
+      ]
+    },
+    {
+      "id": "historical-source-binding",
+      "created": true,
+      "after_sha256": "fc9781bad3e9fc7a64170569f0371ddc219a48dcad62e63312da9b3b285af214"
+    }
+  ]
+}

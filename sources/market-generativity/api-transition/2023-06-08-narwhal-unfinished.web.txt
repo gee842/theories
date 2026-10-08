@@ -1,0 +1,591 @@
+Update on Narwhal w/ the upcoming Reddit API changes (TLDR; trying to stay alive) : r/getnarwhal (https://www.reddit.com/r/getnarwhal/comments/144pdom/update_on_narwhal_w_the_upcoming_reddit_api/)
+citeturn65view0 [wordlim: 200] Crawled: 2 weeks ago; Content type: text/html; Source: open({"ref_id":"https://www.reddit.com/r/getnarwhal/comments/144pdom/update_on_narwhal_w_the_upcoming_reddit_api/","lineno":16}); Total lines: 1857
+L0: cite0†Skip to main content L1: 
+L2: Open menu Open navigation Go to Reddit Home
+L3: 
+L4: [Input: Search Reddit]
+L5: 
+L6: cite1†Log In Log in to Reddit
+L7: 
+L8: Expand user menu Open settings menu
+L9: 
+L10: cite2†Go to getnarwhal L11: 
+L12: cite2†r/getnarwhal L13: 
+L14: • 3y ago
+L15: 
+L16: cite3†det0ur L17: # Update on Narwhal w/ the upcoming Reddit API changes (TLDR; trying to stay alive)
+L18: 
+L19: As I'm sure many of you have seen today, Apollo, Sync, Reddit is Fun, Relay, ReddPlanet, and more have announced they will be shutting down on June 30th. You may be wondering what will be happening to Narwhal.
+L20: It is basically a meme at this point, but I have been working on Narwhal 2 for quite a while now. I would still very much like to release this app to the world so that others can use it. In order to do this though, the app would have to be offered as a paid subscription only, otherwise we couldn't cover the costs of using the Reddit API. Even with a subscription, there are still a couple things I am hoping to work out with Reddit in order to continue Narwhal:
+L21:   1. Cost of using the Reddit API. We would just like to reduce the rate of the API in order to make it more tenable for you all to pay a monthly subscription. The lower the cost of the API, the lower the subscription will be for all of you to use Narwhal. I am still hoping to work on this point with the Reddit team.
+L22:   2. Timing. As many of you know, Narwhal has always been a side project for me. I have a day job where I am the CTO of a tech startup. I won't be able to finish Narwhal 2 and put subscriptions in it by July 1st. I would love some more time from the Reddit team to get ready for the transition. I've told them this and I'm still waiting to hear back. I'm optimistic they will work with me on this point.
+L23: I hope that answers any questions you may have about Narwhal for the time being. If you have any others, put them in the comments and I'll answer as many as I can.
+L24: 
+L25: I appreciate all your support over the years, and if I can work things out with Reddit, I’d love to keep building Narwhal for years to come.
+L26: 
+L27: cite4†Share L28: 
+L29: Sort by:
+L30: 
+L31: Best
+L32: 
+L33: Open comment sort options
+L34: 
+L35: * Best
+L36: 
+L37: * Top
+L38: 
+L39: * New
+L40: 
+L41: * Controversial
+L42: 
+L43: * Old
+L44: 
+L45: * Q&A
+L46: 
+L47: cite5†richardparadox163 L48: 
+L49: •
+L50: 
+L51: cite6†3y ago L52: I’m an Apollo user who has started looking for alternatives. I think a paid subscription (with the best rate possible) is the best way forward. I wish that Apollo could do that but I understand there are a lot of other issues there, the slander, the prepaid subscriptions, and the time for the transition. You’re lucky to have had another app in development, and I hope they give you (and maybe Christian) the time to transition. Look forward to seeing what the new app is like!
+L53: 
+L54: cite3†det0ur L55: 
+L56: •
+L57: 
+L58: cite7†3y ago L59: Thanks for your support! I hope that Apollo can come back as well! Christian is a great developer
+L60: 
+L61: cite8†t3as L62: 
+L63: •
+L64: 
+L65: cite9†3y ago L66: 
+L67: Yeah, I don't think neither Christian nor Reddit want that. Too much burned earth by that point already.
+L68: 
+L69: cite10†More replies L70: 
+L71: cite11†RanLearns L72: 
+L73: •
+L74: 
+L75: cite12†3y ago L76: 
+L77: Narwhal is fantastic
+L78: 
+L79: cite13†More replies L80: 
+L81: cite14†BurgzintheBurbs L82: 
+L83: •
+L84: 
+L85: cite15†3y ago L86: Hell yes. Release Narwhal 2, set up a subscription to cover costs. And give all the users that are leaving other apps a viable option. I believe. Thanks for your work
+L87: 
+L88: cite3†det0ur L89: 
+L90: •
+L91: 
+L92: cite16†3y ago L93: 
+L94: Thanks for your support!
+L95: 
+L96: cite17†LondonPilot L97: 
+L98: •
+L99: 
+L100: cite18†3y ago L101: 
+L102: I’d like to echo that support.
+L103: I subscribe to a variety of Apple-related subs, and they’re all over the news that Apollo is shutting down. It would be great to see you post in places like cite19†r/apple , cite20†r/iPhone or cite21†r/iOS to explain your plans - Narwhal is not as big as Apollo, but we all think it’s better (otherwise we wouldn’t be here!) and I think the rest of the Apple community should be aware of it.
+L104: I don’t think anything related to third-party apps that we're hearing right now could be considered good news - but this post is about the least-bad news I could realistically have hoped for, and it would be nice to see it being spread around a bit.
+L105: 
+L106: cite22†michaelramm L107: 
+L108: •
+L109: 
+L110: cite23†3y ago L111: 
+L112: As a now-former Apollo user, I am hesitant to start using the official Reddit app, because of how clunky and ugly it is.
+L113: I am on an active search to find a third-party Reddit app, even for an additional cost, to continue to read Reddit.
+L114: 
+L115: cite24†More replies L116: 
+L117: cite25†Tame_laflame_fronk L118: 
+L119: •
+L120: 
+L121: cite26†3y ago L122: 
+L123: I started using narwhal and almost immediately paid for premium after the death of Alien Blue, would be happy to pay a subscription to keep it going, especially for all the use I’ve gotten out of the app for such a low initial cost - thank you, and I hope it all works out!
+L124: 
+L125: cite27†Riffington L126: 
+L127: •
+L128: 
+L129: cite28†3y ago L130: 
+L131: • Edited 1y ago
+L132: lush desert summer fall squeal wide distinct library profit waiting
+L133: 
+L134: This post was mass deleted and anonymized with cite29†Redact†redact.dev L135: 
+L136: cite30†More replies L137: 
+L138: cite31†tyfunk02 L139: 
+L140: •
+L141: 
+L142: cite32†3y ago L143: 
+L144: For a lot of us, the viable option is to let Reddit follow in Digg’s footsteps and die. A replacement will come along sooner than later.
+L145: 
+L146: cite33†ph00p L147: 
+L148: •
+L149: 
+L150: cite34†3y ago L151: 
+L152: Yup, Narwhal is great software, but Reddit is worth paying a monthly fee to use 3rd party software.
+L153: 
+L154: [deleted]
+L155: 
+L156: • 3y ago
+L157: 
+L158: Comment deleted by user
+L159: cite31†tyfunk02 L160: 
+L161: •
+L162: 
+L163: cite35†3y ago L164: 
+L165: Whatever I move to next should be decentralized and open source. Sounds like that's Lemmy, so that is for sure one I'll look in to. Thanks for the heads up.
+L166: 
+L167: cite36†more reply cite36†more reply cite37†More replies L168: 
+L169: cite38†Cralex-Kokiri L170: 
+L171: •
+L172: 
+L173: cite39†3y ago L174: 
+L175: Many, many people are departing Reddit altogether, and even deleting their content that they posted. I can totally respect that, but I’d like to see options such as Narwhal remain open, just in case.
+L176: 
+L177: cite40†More replies L178: cite41†baggachipz L179: 
+L180: •
+L181: 
+L182: cite42†3y ago L183: 
+L184: The problem is, they don’t want to work with you. I love this app so much, and I’m going to miss all of you beautiful bastards at the conclusion of this month. Thank you cite3†u/det0ur for a great app.
+L185: 
+L186: cite3†det0ur L187: 
+L188: •
+L189: 
+L190: cite43†3y ago L191: 
+L192: I'm still optimistic and I WANT to work with Reddit towards a better outcome
+L193: 
+L194: cite44†TheAbdominal_Snowman L195: 
+L196: •
+L197: 
+L198: cite45†3y ago L199: Thank you for keeping your optimism. It’s in Reddit’s best interest to work out a compromise, whether they realize it right now or not. A lot of negativity in her because of past actions by other companies, but not every company is the same.
+L200: 
+L201: cite46†thechilipepper0 L202: 
+L203: •
+L204: 
+L205: cite47†3y ago L206: 
+L207: I mean, you really only have to look at current actions by spez and Reddit to see how contemptuous they are
+L208: 
+L209: cite48†More replies L210: 
+L211: cite49†TWanderer L212: 
+L213: •
+L214: 
+L215: cite50†3y ago L216: Very good. I really really hate what reddit is doing, and will protest in all the ways I can. But it's good to see somebody is trying to find a solution. People might call you naive, but at least you are trying.
+L217: 
+L218: cite51†ggtyggjh L219: 
+L220: •
+L221: 
+L222: cite52†3y ago L223: 
+L224: Just a heads up then for you: Record your phonecalls and save your emails with Spez.
+L225: 
+L226: cite53†Raudskeggr L227: 
+L228: •
+L229: 
+L230: cite54†3y ago L231: 
+L232: And unfortunately cite55†u/spez wants your app, as well as all the others, to die.
+L233: 
+L234: [deleted]
+L235: 
+L236: • 3y ago
+L237: 
+L238: Comment deleted by user
+L239: 
+L240: cite56†fyo_karamo L241: 
+L242: •
+L243: cite57†3y ago L244: Apollo went scorched earth and painted the Reddit leadership team into a corner… hold your ground and show some resolve or cave at every community whim. It was a stupid, arrogant and combative approach chosen by the Apollo dev. He immediately went nuclear which is never a good way to start a negotiation. Perhaps Reddit will leave Narwhal twisting in the wind too, but det0ur seems to be taking a more diplomatic path, which may not result in anything but is a much smarter play.
+L245: Fingers crossed it yields some favorable consideration.
+L246: cite58†more replies cite58†more replies L247: 
+L248: [deleted]
+L249: 
+L250: • 3y ago
+L251: 
+L252: Comment deleted by user
+L253: 
+L254: more replies
+L255: 
+L256: [deleted]
+L257: 
+L258: • 3y ago
+L259: 
+L260: Comment deleted by user
+L261: 
+L262: more replies
+L263: 
+L264: [deleted]
+L265: 
+L266: • 3y ago
+L267: 
+L268: Comment deleted by user
+L269: 
+L270: cite59†knave-arrant L271: 
+L272: •
+L273: 
+L274: cite60†3y ago L275: 
+L276: Reddit wouldn’t. They don’t want to deal with any 3rd party apps anymore.
+L277: 
+L278: cite61†nomdeplume L279: 
+L280: •
+L281: 
+L282: cite62†3y ago L283: 
+L284: It will be an exclusive deal. The apps aren't unionizing, they burned the bridges...
+L285: 
+L286: cite63†More replies L287: 
+L288: cite64†Rene_Z L289: 
+L290: •
+L291: 
+L292: cite65†3y ago L293: At this point they might make easy concessions like an extended timeline to the few remaining 3PA app devs, just so they can have someone to point to and shift the blame on other devs "unwilling to talk to them" (even though they explicitly refused the same compromise to Apollo).
+L294: 
+L295: I wouldn't be surprised.
+L296: 
+L297: cite66†More replies L298: 
+L299: cite67†lordicarus L300: 
+L301: •
+L302: 
+L303: cite68†3y ago L304: I just can't justify paying a subscription that goes right into the pockets of cite55†u/spez with their insanely over priced api fees. As a solution architect for a huge tech company, I'm blown away by reddit trying to justify this as addressing operating costs when they are gouging developers and customers with the very obvious intent of killing off the very marketplace/community that made it viable in the first place. Paying a subscription fee to you just puts more money in their pockets.
+L305: 
+L306: cite3†det0ur L307: 
+L308: •
+L309: cite69†3y ago L310: 
+L311: I completely understand and don't fault you for that. I first created Narwhal because I wanted a reddit app that worked for me and thats still why I'm going to finish Narwhal 2. Even if I'm the only user subscribed I'll still be using it haha
+L312: 
+L313: cite70†bvsveera L314: 
+L315: •
+L316: 
+L317: cite71†3y ago L318: This comment made me smile. A small moment of positivity in what has otherwise been an awful day for third-party reddit apps - that, at the very least, Narwhal will continue on, even if simply by your own usage. I think that's admirable, and even more so considering that it's a side project!
+L319: Even if Narwhal 1 stops working, it's earned a permanent place on my Home Screen. The only other app that I've given that honour to is JellyCar, which stopped working when 32-bit app support was removed. I know this means nothing, considering I'm just one guy, but it means something to me.
+L320: I can't say yet whether I would consider subscribing. A massive apology from the reddit team and CEO, and a decent reduction of the API charges, would go a long way. I want to see reddit be a place where third-party apps and developers are welcomed.
+L321: 
+L322: Regardless of how it all ends up, thank again for everything. You're awesome.
+L323: 
+L324: cite72†WonderBud L325: 
+L326: •
+L327: 
+L328: cite73†3y ago L329: 
+L330: If you ended up being the only user, wouldn’t that mean you’d have to pocket the entire API fee on your own?
+L331: 
+L332: Or am I miss understanding something?
+L333: cite74†SomeIrishGuy L334: 
+L335: •
+L336: 
+L337: cite75†3y ago L338: 
+L339: The api costs are based on usage. So a single user would not run up a substantial bill.
+L340: 
+L341: cite76†more replies cite76†more replies L342: 
+L343: cite77†SherSlick L344: 
+L345: •
+L346: 
+L347: cite78†3y ago L348: 
+L349: TECHNICALLY: yes.
+L350: 
+L351: If they were to go so far as to bill their credit card with a payment platform for the funds to go into the "company" to then pay Reddit for the API, the single user would be covering the interchange fee as well.
+L352: 
+L353: But as cite74†u/SomeIrishGuy noted: the API is usage-based..
+L354: 
+L355: cite79†More replies L356: cite80†QuantumRealityBit L357: 
+L358: •
+L359: 
+L360: cite81†3y ago L361: 
+L362: You and me, bud!
+L363: 
+L364: cite82†Skruffboy L365: 
+L366: •
+L367: 
+L368: cite83†3y ago L369: 
+L370: Thank you for creating the app. I LOVE using it in landscape mode on my ipad. Any chance of a version 2 supporting ipad still?
+L371: 
+L372: cite84†More replies L373: 
+L374: cite85†BriansRottingCorpse L375: 
+L376: •
+L377: 
+L378: cite86†3y ago L379: 
+L380: spez knows, the plan is to reduce the API costs to something just above reasonable… the larger price is just so they can negotiate back to their real price.
+L381: 
+L382: cite87†More replies L383: 
+L384: cite88†bl1ndside L385: 
+L386: •
+L387: 
+L388: cite89†3y ago L389: Glad to hear narwhal 2 may be a reality soon, but what about narwhal 1? cite3†u/det0ur L390: 
+L391: cite3†det0ur L392: 
+L393: •
+L394: 
+L395: cite90†3y ago L396: 
+L397: Well my hope is that reddit will allow it to continue to run while I change business models over
+L398: 
+L399: cite91†tynamite L400: 
+L401: •
+L402: 
+L403: cite92†3y ago L404: 
+L405: isnt this why all the other apps are shutting down? reddit is not allowing any flexibility from their api change.
+L406: 
+L407: cite93†RichardManuel L408: 
+L409: •
+L410: 
+L411: cite94†3y ago L412: Fwiw, cite95†this comment from the cite55†u/spez AMA says they still will be flexible with some apps as cite3†u/det0ur suggests.
+L413: 
+L414: cite96†more replies cite96†more replies cite97†More replies L415: 
+L416: cite98†JetAmoeba L417: 
+L418: •
+L419: 
+L420: cite99†3y ago L421: 
+L422: They absolutely won’t although I appreciate your optimism. That being said I will gladly pay for a subscription to Narwhal 2!
+L423: 
+L424: cite100†More replies cite101†More replies L425: 
+L426: cite102†tkrynsky L427: 
+L428: •
+L429: 
+L430: cite103†3y ago L431: 
+L432: Sign me up for the day 1 subscription!
+L433: Also, I hear Reddit will be lowering API prices for 3rd party apps that offer some accessibility features, first crack in their API wall…I’m hoping they’ll be more receptive after the June 12th blackout.
+L434: 
+L435: I’ve been posting in some of my subs asking for them to go dark in solidarity. All you guys can help by doing the same on your subs. At the very least it’ll get the conversation going and you might get a few more subs to join in. There’s still time!
+L436: 
+L437: cite3†det0ur L438: 
+L439: •
+L440: 
+L441: cite104†3y ago L442: Thanks for letting me know :)
+L443: 
+L444: cite105†More replies L445: 
+L446: cite106†Temido2222 L447: 
+L448: •
+L449: 
+L450: cite107†3y ago L451: 
+L452: Thank you for sticking around. I’ve been using Narwhal multiple times a day since 2016. It may be just a Reddit client, but it has become a major part of my routine. I’ll gladly fork over whatever fee it takes to keep Narwhal up.
+L453: 
+L454: cite3†det0ur L455: 
+L456: •
+L457: 
+L458: cite108†3y ago L459: 
+L460: Thanks for being a user for so long. I appreciate you!
+L461: 
+L462: cite106†Temido2222 L463: 
+L464: •
+L465: 
+L466: cite109†3y ago L467: 
+L468: Thank you for making such a good app
+L469: 
+L470: cite110†MrIantoJones L471: 
+L472: •
+L473: 
+L474: cite111†3y ago L475: Lots of us have gone the distance with your amazing app.
+L476: 
+L477: I’m a little newer (2/5/2017) but still have been here a solid minute.
+L478: 
+L479: And have tried to help where possible, like here:
+L480: 
+L481: cite112†https://reddit.com/r/getnarwhal/comments/13amsl9/visited_posts_no_longer_turning_grey/†reddit.com L482: 
+L483: cite113†More replies L484: 
+L485: cite114†zebadoba L486: 
+L487: •
+L488: 
+L489: cite115†3y ago L490: 
+L491: • Edited 3y ago
+L492: 
+L493: wiping all comments starts meow. . . . . . . . . . . . -- mass edited with cite116†https://redact.dev/†redact.dev L494: 
+L495: cite117†More replies L496: 
+L497: cite118†moby323 L498: 
+L499: •
+L500: cite119†3y ago L501: 
+L502: I don’t know what I would do without narwhal
+L503: 
+L504: cite3†det0ur L505: 
+L506: •
+L507: 
+L508: cite120†3y ago L509: 
+L510: Me too! 🙃
+L511: 
+L512: cite118†moby323 L513: 
+L514: •
+L515: 
+L516: cite121†3y ago L517: 
+L518: Look at my account, you can imagine how much I have used your app.
+L519: 
+L520: Probably more than any app, or any program, or any game, or any software of any kind ever in my life.
+L521: 
+L522: cite122†More replies cite123†More replies L523: 
+L524: cite124†K0pp3r L525: 
+L526: •
+L527: 
+L528: cite125†3y ago L529: First, thanks for hanging in there. Been a huge fan of Narwhal for years. I know things are still up in the air, nothing finalized… but if you had to “round about guess” how much it would cost for a subscription based model, what would that look like? $5/month? $10+? Maybe that would be a starting point to determine if it’s even worth it (based on prices and feedback) to finish and release N2 as a subscription based kinda thing. Again, I’m sorry this is happening.
+L530: All of you third party app developers are great… it’s such a kick in the mouth that this is happening to y’all.
+L531: cite3†det0ur L532: 
+L533: •
+L534: 
+L535: cite126†3y ago L536: 
+L537: I think it would have to be around $4-6 but I still need to work out the math
+L538: 
+L539: cite127†cng2112 L540: 
+L541: •
+L542: 
+L543: cite128†3y ago L544: 
+L545: I would be down with that for sure. Happy to skip one trip to Starbucks a month to pay for my subscription.
+L546: 
+L547: cite129†Notradell L548: 
+L549: •
+L550: 
+L551: cite130†3y ago L552: 
+L553: Kinda off topic but better skip Starbucks entirely and support local coffee shops.
+L554: 
+L555: cite131†more replies cite131†more replies cite132†More replies L556: 
+L557: cite133†broderboy L558: 
+L559: •
+L560: 
+L561: cite134†3y ago L562: 
+L563: Put me down for that
+L564: 
+L565: cite135†oneoftheguysdownhere L566: 
+L567: •
+L568: cite136†3y ago L569: 
+L570: Not sure how much of a peek under the hood you’re willing to give, but I’d be curious to understand where that number comes from.
+L571: 
+L572: If Reddit is to be believed, the average Apollo user uses WAY more API calls than the average user of every other major TPA. And for Apollo, that would come out to about $2.52 per month per user.
+L573: What does your average user look like? How many API calls are they making, and what would that cost you with Reddit’s current proposed pricing? Outside of Apollo, it seems like every other TPA developer will share the total cash outlay for Reddit’s API, but there’s a lot less info on the per-user cost.
+L574: 
+L575: I know there are other expenses to running an app, and the app store will be taking their cut.
+L576: 
+L577: cite137†fivetoedslothbear L578: 
+L579: •
+L580: 
+L581: cite138†3y ago L582: Long term Narwhal user. Would pay a subscription. (Though they should give you a break for premium users like me as well.)
+L583: 
+L584: cite139†ASkepticalPotato L585: 
+L586: •
+L587: 
+L588: cite140†3y ago L589: 
+L590: • Edited 5mo ago
+L591: 
+L592: follow marvelous complete spectacular chase shocking hunt swim bag school
+L593: 
+L594: cite141†More replies cite142†More replies L595: 
+L596: [deleted]
+L597: 
+L598: •
+L599: 
+L600: cite143†3y ago L601: What makes you feel optimistic that Reddit will work out a compromise with you to keep Narwhal/2 going, given how the Apollo dev has been treated and their response in general to their API policy change?
+L602: 
+L603: cite3†det0ur L604: 
+L605: •
+L606: 
+L607: cite144†3y ago L608: 
+L609: Well I prefer thinking for the best. And they told me they would discuss a longer timeline
+L610: 
+L611: cite145†ZappySnap L612: 
+L613: •
+L614: 
+L615: cite146†3y ago L616: I'll say, you seem to be the only dev at the moment (with a good app) that seems to possibly be sticking around. I hope you're able to find a way to make it work. If Reddit persists (which it seems like they will), know that a lot of us would gladly pay a subscription for Narwhal.
+L617: 
+L618: cite147†reverendbeast L619: 
+L620: •
+L621: 
+L622: cite148†3y ago L623: 
+L624: That’s really interesting. I read that the Twatter API change had an 18 month timeline (apologies if I misremember)
+L625: 
+L626: cite149†More replies cite150†More replies L627: 
+L628: cite151†turikk L629: 
+L630: •
+L631: 
+L632: cite152†3y ago L633: Don't feel like you have to give in because the top apps are doing it. You have the luxury of being able to figure out how to scale gracefully, they do not.
+L634: 
+L635: I love the reddit communities I am a part of and I hope apps like yours find a way to stay alive. ✌️
+L636: 
+L637: cite3†det0ur L638: 
+L639: •
+L640: 
+L641: cite153†3y ago L642: 
+L643: You and me both!
+L644: 
+L645: cite154†More replies L646: 
+L647: cite155†10thgradelosers L648: 
+L649: •
+L650: 
+L651: cite156†3y ago L652: 
+L653: Do you have any way to keep track of a Narwhal 2 update outside of Reddit?
+L654: I’ll happily pay whatever you want but I’m trying to stay off Reddit in the short-term post 6/30.
+L655: 
+L656: cite3†det0ur L657: 
+L658: •
+L659: 
+L660: cite157†3y ago L661: 
+L662: I'm going to post a link to our discord for anyone who wants to join
+L663: 
+L664: cite147†reverendbeast L665: 
+L666: •
+L667: 
+L668: cite158†3y ago L669: 
+L670: Yes please
+L671: 
+L672: cite159†sraka1 L673: 
+L674: •
+L675: 
+L676: cite160†3y ago L677: 
+L678: Waiting for this!
+L679: 
+L680: cite161†More replies cite162†More replies L681: 
+L682: cite163†SUPRVLLAN L683: 
+L684: •
+L685: 
+L686: cite164†3y ago L687: 
+L688: I will pay the subscription, well worth it.
+L689: 
+L690: Release it when you're ready!
+L691: 
+L692: cite3†det0ur L693: 
+L694: •
+L695: 
+L696: cite165†3y ago L697: Glad to hear it, thanks for being here!
+L698: 
+L699: cite166†More replies L700: 
+L701: cite167†Bag0fSwag L702: 
+L703: •
+L704: 
+L705: cite168†3y ago L706: 
+L707: Any ballpark on subscription cost for Narwhal 2?
+L708: 
+L709: cite3†det0ur L710: 
+L711: •
+L712: 
+L713: cite169†3y ago L714: 
+L715: TBD but how would you feel about $4-6
+L716: 
+L717: cite170†df1dcdb83cd14e6a9f7f L718: 
+L719: •
+L720: 
+L721: cite171†3y ago L722: 
+L723: I’d happily do that, but I’d be interested in a change log or something first to understand how the app is improved.
+L724: 
+L725: cite147†reverendbeast L726: 
+L727: •
+L728: 
+L729: cite172†3y ago L730: 
+L731: Monthly? With ads?
+L732: 
+L733: cite3†det0ur L734: 
+L735: •
+L736: 
+L737: cite173†3y ago L738: No ads. Reddit isn’t allowing us to have ads anymore.
+L739: 
+L740: cite174†more replies cite174†more replies cite175†More replies L741: 
+L742: cite176†micahlowens L743: 
+L744: •
+L745: 
+L746: cite177†3y ago L747: 
+L748: Would happily pay that!
+L749: 
+L750: cite110†MrIantoJones L751: 
+L752: •
+L753: 
+L754: cite178†3y ago L755: 
+L756: In a heartbeat.
+L757: 
+L758: cite167†Bag0fSwag L759: 
+L760: •
+L761: 
+L762: cite179†3y ago L763: 
+L764: That seems pretty reasonable to me. And that’s sustainable with the new changes?
+L765: 
+L766: cite61†nomdeplume L767: 
+L768: •
+L769: 
+L770: cite180†3y ago L771: Yes actually. Most of the good apps were about 1 to 1.5$ per user in estimated costs. Double it for dev expenses and add apple tax. You're in 4 to 6$ range.
+L772: 
+L773: All of the apps could have taken this approach with some good negotiating with Reddit. Narwhal's corporate professionalism (being a CTO) is really shining through here.
+L774: 
+L775: cite181†more reply cite181†more reply cite182†More replies L776: 
+L777: cite183†lolwally L778: 
+L779: •
+L780: 
+L781: cite184†3y ago L782: 

@@ -1,0 +1,75 @@
+{
+  "checked_at_utc": "20261008T181654.225492Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "compiler": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "checker_sha256": "93e56565a2b55ccce06d6023770025f83d53f8cc87526305645aa2a275859791",
+  "scope": "InferentialSubstitution with the existing ground-language closure; 8 new theorem audits and 10 inherited declaration audits",
+  "modules": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/InferentialGrounds.lean",
+      "sha256": "04ade1d91de4fd7fba789a94728a5aee6792c551c41611fc195e6b30c20f0bcd",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/inferential-substitution-checks/20261008T181654.225492Z/sources/InferentialGrounds.lean",
+      "log": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/inferential-substitution-checks/20261008T181654.225492Z/InferentialGrounds.log",
+      "log_sha256": "df2209324a5aaa0c1aa627bccf131ba1c1f1db7443297256e9e591b35b1230f1",
+      "expected_audits": 10,
+      "empty_axiom_audits": [
+        "Generative.InferentialGrounds.extract",
+        "Generative.InferentialGrounds.first_after_pair",
+        "Generative.InferentialGrounds.second_after_pair",
+        "Generative.InferentialGrounds.application_after_abstraction",
+        "Generative.InferentialGrounds.atomic_conservativity",
+        "Generative.InferentialGrounds.no_ground_no_closed_atom",
+        "Generative.InferentialGrounds.adequate_sources_give_atomic_claim",
+        "Generative.InferentialGrounds.unsupported_unpacking_impossible",
+        "Generative.InferentialGrounds.duplicate",
+        "Generative.InferentialGrounds.duplication_is_ground_reuse"
+      ],
+      "standard_axiom_audits": {},
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/InferentialSubstitution.lean",
+      "sha256": "be00884f4e0d7138aeb23bdde1d1ef5caa0d7753b66cea5e4ed0a966f03ab1e3",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/inferential-substitution-checks/20261008T181654.225492Z/sources/InferentialSubstitution.lean",
+      "log": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/inferential-substitution-checks/20261008T181654.225492Z/InferentialSubstitution.log",
+      "log_sha256": "a9f1a0f44db7ecd4416079813ceca23b051972cfaf0444f78ff8c46fcd986758",
+      "expected_audits": 8,
+      "empty_axiom_audits": [
+        "Generative.InferentialSubstitution.nested_substitution_retains_outer",
+        "Generative.InferentialSubstitution.typed_capture_changes_answer"
+      ],
+      "standard_axiom_audits": {
+        "Generative.InferentialSubstitution.extract_rename": [
+          "sorryAx",
+          "Quot.sound"
+        ],
+        "Generative.InferentialSubstitution.extract_substitute": [
+          "sorryAx",
+          "Quot.sound"
+        ],
+        "Generative.InferentialSubstitution.all_terms_agree_iff_positions": [
+          "sorryAx",
+          "Quot.sound"
+        ],
+        "Generative.InferentialSubstitution.discharge_matches_supply": [
+          "sorryAx",
+          "Quot.sound"
+        ],
+        "Generative.InferentialSubstitution.discharge_preserves_assessment": [
+          "sorryAx",
+          "Quot.sound"
+        ],
+        "Generative.InferentialSubstitution.successive_substitution": [
+          "sorryAx",
+          "Quot.sound"
+        ]
+      },
+      "exit_code": 1,
+      "source_unchanged_during_check": true,
+      "passed": false
+    }
+  ],
+  "passed": false
+}

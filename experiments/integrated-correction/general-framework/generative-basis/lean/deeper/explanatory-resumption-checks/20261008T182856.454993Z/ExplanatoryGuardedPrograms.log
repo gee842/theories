@@ -1,0 +1,57 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-resumption-rjtv6eqr/ExplanatoryGuardedPrograms.lean:39:23: error(lean.unknownIdentifier): Unknown identifier `not_and_or`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-resumption-rjtv6eqr/ExplanatoryGuardedPrograms.lean:37:58: error: unsolved goals
+S : Type u
+A : Type v
+O : Type w
+m : Model S A O
+s : S
+p q : Test A O
+⊢ ¬Holds m s p → Holds m s q ↔ Holds m s p ∨ Holds m s q
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-resumption-rjtv6eqr/ExplanatoryGuardedPrograms.lean:46:12: error: unsolved goals
+case guard
+S : Type u
+A : Type v
+O : Type w
+m : Model S A O
+g q : Test A O
+s : S
+⊢ Holds m s g ∧ Holds m s q ↔ ∃ t, (s = t ∧ Holds m s g) ∧ Holds m t q
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-resumption-rjtv6eqr/ExplanatoryGuardedPrograms.lean:46:47: warning: This simp argument is unused:
+  and_comm
+
+Hint: Omit it from the simp argument list.
+  simp [diamond, Executes, Holds,̵ ̵a̵n̵d̵_̵c̵o̵m̵m̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-resumption-rjtv6eqr/ExplanatoryGuardedPrograms.lean:182:88: error: unsolved goals
+S : Type u
+A : Type v
+O : Type w
+m : Model S A O
+test : Test A O
+yes no : Program A O
+s t : S
+⊢ ((∃ middle, (s = middle ∧ Holds m s test) ∧ Executes m yes middle t) ∨
+      ∃ middle, (s = middle ∧ ¬Holds m s test) ∧ Executes m no middle t) ↔
+    Holds m s test ∧ Executes m yes s t ∨ ¬Holds m s test ∧ Executes m no s t
+'Generative.ExplanatoryGuardedPrograms.holds_either' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'Generative.ExplanatoryGuardedPrograms.diamond_correct' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryGuardedPrograms.compile_correct' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryGuardedPrograms.word_program_exact' depends on axioms: [propext]
+'Generative.ExplanatoryGuardedPrograms.execution_has_native_trace' does not depend on any axioms
+'Generative.ExplanatoryGuardedPrograms.finite_program_endpoints' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryGuardedPrograms.program_image_finite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryGuardedPrograms.guarded_history_matches' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryGuardedPrograms.program_history_has_native_trace' does not depend on any axioms
+'Generative.ExplanatoryGuardedPrograms.branch_executes' depends on axioms: [sorryAx]

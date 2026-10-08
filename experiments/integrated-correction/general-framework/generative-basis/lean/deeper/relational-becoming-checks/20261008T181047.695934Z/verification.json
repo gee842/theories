@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "utc": "20261008T181047.695934Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "relational-becoming-checks/20261008T181047.695934Z",
+  "source_sha256": {
+    "GenerativeCore": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "JointContinuationClassification": "e508683cc80832744a28f44c69f9c2561701cd099219448b75cfdb474c0786ee",
+    "RelationalBecoming": "aec4f68d50264f8a667aa3f8c25e98eabbbafbb80d78ddf18209433eb12171e8"
+  },
+  "checker_sha256": {
+    "check_relational_becoming.py": "f2c17ada60a5484bbf17cb5066b0d503cd8152c6327b2e50680bf08ac34ba3f4",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Fixed-law finite-history prefix transport distinguishes eventual joint reachability from current bounded joint capacity. An inherited common event law witnesses preparation, loss and an unfulfilled capacity. No normative axiom, origin of the supplied coupling, universal novelty or zero-substantive-premise foundation is established.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "RelationalBecoming.lean:32:5: error: unexpected token 'prefix'; expected '_' or identifier\nRelationalBecoming.lean:32:13: error: unexpected identifier; expected prec\nRelationalBecoming.lean:33:28: error: unexpected identifier; expected ':'\nRelationalBecoming.lean:36:16: error: unexpected token '++'; expected ':'\nRelationalBecoming.lean:43:5: error: unexpected token 'prefix'; expected '_' or identifier\nRelationalBecoming.lean:43:13: error: unexpected identifier; expected prec\nRelationalBecoming.lean:44:28: error: unexpected identifier; expected ':'\nRelationalBecoming.lean:51:5: error: unexpected token 'prefix'; expected '_' or identifier\nRelationalBecoming.lean:51:13: error: unexpected identifier; expected prec\nRelationalBecoming.lean:51:46: error: unexpected identifier; expected ':'\nRelationalBecoming.lean:100:12: error(lean.unknownIdentifier): Unknown constant `List.length_eq_zero.mp`\nRelationalBecoming.lean:115:4: error(lean.unknownIdentifier): Unknown identifier `within_after_prefix`\nRelationalBecoming.lean:144:4: error: numerals are data in Lean, but the expected type is a proposition\n  Eventually process realized Configuration.initial both : Prop\nRelationalBecoming.lean:143:8: error: Invalid `\u27e8...\u27e9` notation: The expected type\n  Eventually process realized Configuration.released both \u2192 False\nis not an inductive type\n\nNote: This notation can only be used when the expected type is an inductive type with a single constructor\n"
+}

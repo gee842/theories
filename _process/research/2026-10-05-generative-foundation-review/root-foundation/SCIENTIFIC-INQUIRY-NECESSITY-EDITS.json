@@ -1,0 +1,190 @@
+{
+  "before_appends": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md": {
+      "sha256": "b749005ab0304881d26388e6b78f9b83625336fc60d80e154b9515b5749c87fd",
+      "bytes": 25266,
+      "append_sha256": "203473f60ec6ae9b7b262b43503866760b39d64e918de6b348d1f8e7d17d2335",
+      "after_sha256": "74fbf5465d41b2c06a59a73610cde95686e73fe8490fb17d75254915baac8708"
+    },
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md": {
+      "sha256": "b42ba04164ea731545535c528855759cc013c6393597cc66cf4d38d61e5a6c06",
+      "bytes": 24659,
+      "append_sha256": "8601371c2f8d0cb689a01d2dca967011b4c31590011aeffa689b332bd928231d",
+      "after_sha256": "a2c45060bb7021847d812e0fce3ea72be2fc817cae2256a84489b967d66ab9c8"
+    },
+    "sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md": {
+      "sha256": "a207bbfb42ba637a8a76e0df316a3c2ac708de1c5192a445dbac76ab6c7d038c",
+      "bytes": 11117,
+      "append_sha256": "8111aa6502ef1ee68d26445f3293701d390d7578f3264222d939ef7cd1c6c58a",
+      "after_sha256": "eee7495c6e24cd9386d17868d816eb51e965c64c6925af1b9c1e873cff403707"
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-SOURCES.md": {
+      "sha256": "074b2093ab415b6a9f6d2003d088daee1b227214658947912ad24fcdb57a9458",
+      "bytes": 21702,
+      "append_sha256": "9d9e44c53b6cfef95901fc57ce30636ff68f5df5519fd48b525129f8eb8227af",
+      "after_sha256": "82503946526c878e0ed7ea7dd98056a7dd1b783a3aabd919efba0defa7c3cb2e"
+    }
+  },
+  "directive_register": {
+    "before_sha256": "b11d4581dfd0e6d1ca9a6f79d811a045253999b75ff1ca3a63d6dcd0cc021db4",
+    "before_bytes": 2344,
+    "addition": "\nThe [scientific-inquiry session](../GOALS.md#scientific-inquiry-session) follows [Ren’s explicit completion request](../sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md#finish-the-necessary-foundation-of-scientific-inquiry). The checked fallible-inquiry constraint and the open full-core necessity target have separate result identities; the completed ethical axiom route is unchanged.\n"
+  },
+  "proof_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-inquiry-necessity-checks/20261008T135418.446592Z/verification.json",
+  "chain": {
+    "row": "M21",
+    "prior_row_sha256": "68160683043d4fd7841b0e8734b0b368d7d918b617a3190877a866eeee6ebba6",
+    "row_sha256": "6950124c422b19f3f038ffd4297c109991a9cf85316c25c6d37d30f015850487",
+    "append_fields": {
+      "claim_zh": " 本轮将可错科学辨别的必要条件接入实查：作答覆盖受两侧错误和可用区别共同约束，适应关系可跨不同内部状态接续。",
+      "claim_en": " This continuation checks a necessary condition of fallible scientific discrimination: coverage is constrained by the two error weights and available distinctions, with adaptive correspondence across different internal states.",
+      "scope_zh": " 本次18项新形式定理／27项审计支持有限自然权重范围，信用既有统计方法；不是18项独立发现。完整核心的科学普遍必要性仍开放。",
+      "scope_en": " This round adds 18 formal theorems / 27 audits for finite natural weights, crediting established statistics; these are not 18 independent discoveries. Science-wide necessity of the full core remains open."
+    },
+    "added_links": [
+      {
+        "label_zh": "可错求知必要条件",
+        "label_en": "Fallible inquiry necessity",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md#10-fallible-inquiry-and-the-foundational-inference"
+      },
+      {
+        "label_zh": "必要条件实查",
+        "label_en": "Checked necessity",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean"
+      },
+      {
+        "label_zh": "必要条件回执",
+        "label_en": "Necessity receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-inquiry-necessity-verification.json"
+      },
+      {
+        "label_zh": "科学基础开放目标",
+        "label_en": "Open scientific-foundation target",
+        "path": "theories/shengsheng-buxi-generative-existence/results/records/scientific-inquiry-foundation.md"
+      }
+    ],
+    "prior_reviews": {
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md": null,
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-SOURCES.md": null,
+      "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean": null,
+      "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/check_scientific_inquiry_necessity.py": null,
+      "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-inquiry-necessity-verification.json": null,
+      "sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md": "a207bbfb42ba637a8a76e0df316a3c2ac708de1c5192a445dbac76ab6c7d038c",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md": null,
+      "theories/shengsheng-buxi-generative-existence/results/records/scientific-inquiry-foundation.md": null
+    },
+    "reviewed_sources": {
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md": "74fbf5465d41b2c06a59a73610cde95686e73fe8490fb17d75254915baac8708",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-SOURCES.md": "82503946526c878e0ed7ea7dd98056a7dd1b783a3aabd919efba0defa7c3cb2e",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificInquiryNecessity.lean": "d46f15d2e512aca17541c493f224860ab4489f6da5ed8c1fd21bcd1b379e3c14",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/check_scientific_inquiry_necessity.py": "9c56041847cd19af88a4f86de698e10fc7313dca078866f2cb99e00b7b9d1024",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-inquiry-necessity-verification.json": "bae0ba96edb44ba75ee958d8a296a4b87897fa3da54765daebde6c1d95baa04e",
+      "sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md": "eee7495c6e24cd9386d17868d816eb51e965c64c6925af1b9c1e873cff403707",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md": "a2c45060bb7021847d812e0fce3ea72be2fc817cae2256a84489b967d66ab9c8",
+      "theories/shengsheng-buxi-generative-existence/results/records/scientific-inquiry-foundation.md": "70556d59a346fd5e622adff5d66838faea7b00377640ece2eca3b69d9224a878"
+    },
+    "other_entry_sha256": {
+      "C01": "9804ef5b7f00dc235579af19be0e7e5284c49af09b4df1804bcd19d6b2f0a740",
+      "C02": "5932d5b9777e47a03a1384a5b7510516ab4b33c620e5d5ec02a7d5fe38779d09",
+      "C04": "0403ff1590e3f987a722c719494e6fc1e2dbde620b744eb37703adcb5baecb46",
+      "C03": "0ee91c59dfb35f42022fd05413492e68417a90eb70d64805ee8c2362d1414770",
+      "C21": "0a56b20d98a7d1c93d2e3d78d061a1bd366bf2f8918c07d7a9d0bb85f1c08761",
+      "C05": "d4992e299e3c1e4a29c2b98b92f8b96bae2975e49bf4c85ecc8a9eb52764c834",
+      "C06": "2561c89bb1696c46e00f215ea7f08b0a5017a037c06eb56cdfaa12ea0f294c68",
+      "C22": "2cec4278de9fc44c4b64faa1608199026a3dc202550aa1c46d797086ece955f4",
+      "C30": "ca9de5497d117df13bc28abf326dbb221ffb766ba15f138007371a48171b1f23",
+      "C07": "82033537c96091434213bc9c0510d8381736f66b42c63605a7dc7af7f3c8f5c5",
+      "C08": "374d3daa4ebbceaa1d5d81cf2afa8ea6c21b1e47b7f61b59d3bfe2751105a455",
+      "C09": "ee75b6b6593e75df48747585cf4bb2b521f0eb26ac56cf0b271389f09d0a8e9b",
+      "C10": "9e574658b564619de12448c944651b78e1b71a2fc3df0ffc22e5acc9653cc16d",
+      "C11": "491b8617edcb09c02e8635845930ae7b1d8a1690bbd5dcf8d5a799450c68a7e3",
+      "C12": "da12e12f9a6c441e5766e44b31d709a57342eff8363e45953ecd4d275b0fdeb0",
+      "C13": "2b830b7dee3918a61d77f460493408405f305f718089f75086768076d01f164a",
+      "C14": "5ade0e7cd8f5c47836d7afb4055890ae476a605fd7e546e3cd69a1eb8456e176",
+      "C25": "402e1c9be9901799b0adf230c1d6c05c735d7a9a9bfab6e905307aa561f59707",
+      "C28": "df77e610a7cdebd650b9eae13bc7fc46ea9acab8cbf54babc43e72488762d1ed",
+      "C29": "757ea14e2cdd26752e2fe809d8c02204353b838345d72826ae60c32e0023d99f",
+      "C32": "cc8150373df09f414573ebd39126c8d67699edea96f6e247c133a026d99cfd05",
+      "C33": "fa789ba577d1121e6ea88e2a5b1fff24883ee1bf0ce32f9fe27d753d6b7bbbdc",
+      "C16": "9919f7bb1b620ac3b33d9b1361c92e450b37f92eec11e4595be4d18fb1133a76",
+      "C17": "95b9f2152a3fca416b363c78fddf3729265a1088a8c969f0c4467110eda28eec",
+      "C18": "214176276718013e52e1bf9a30ed81e2621d33398ec387ba6cab4bc3e8d8e2ca",
+      "C19": "97a13c122fcb902d413cca36ef335a0cf55cea6b8e46ecf3c885f31a618ec55b",
+      "C23": "05392088378a35777eaeae2b73d0c40cb96e6102ee30d7872224ac90b3b9f485",
+      "C20": "1b2717b65470f6b6f308fb8c4701758cbe7417e3cf8fcdcc0d1b9e4bdef7998a",
+      "C24": "ec481b72be03197f16c27ad0b242560efb72a3410faf57bfb8a87b93119f9897",
+      "C26": "1d0aef805bbb5dfed3ca6c75d591853bf7b63b3add19af794860d671e5edd9b3",
+      "C27": "582ff0d67bf111ff4549733ab3eaa9e37e58f87fb7345d8b5e106ab10c615377",
+      "C31": "6f706aad037911cf097ef2137a6dcdd506bc42de6fbcfa776ba82dedd470faa7",
+      "M01": "c9453c5e50ccf55ed5abbd911ab136456fb9a98dd8815ebd725ffff1c0f35536",
+      "M02": "fe6e674705dd882be15160c8da94bc3b89f488a2b5e9bf9f42425255953318c6",
+      "M03": "16a4345a94114d9b74b187c4a40bb5b13da3041512666326936e1486c6211e5b",
+      "M04": "5e14a1420ea1c82a2d5392aad0d7fa2b8ec300e4b1529698bd610379e275accd",
+      "M05": "07ff5eaba642d73f85a2121a3aa5b22d649712d914a1e222d54e2db0782715fa",
+      "M06": "2cf8f65955a8291a70d0ca5d27a7c2fca3871b3efa94e6fccb3c73222870b49b",
+      "M07": "b0dca005ea8a6afcb03b73d3b89bdff1dd52dd46d794e6042a29e8cf9b7ced77",
+      "M08": "6d02bfe2a6973b9c3b8f65c5d5796c5eca9313c6354389a6817df2ef9b8483e8",
+      "M09": "2c42195d97b6fb05d56fd78c4e2923a66722e006395060cf473533b7d5660359",
+      "M10": "a2e401336ad739d7ba48221dfee68fa2b351d26acc8fb8f2fa9450293dc68bc3",
+      "M11": "12ee09e81f0dcefda5fd3e580f7cb3ed898b53e930befd643460b58068ad9287",
+      "M12": "7bf7fd95cedf720ce5b8c2702cfb9b47aff24d0701ed88dfee073ad01413d6da",
+      "M13": "d46857c84a67b88f3525e31e69a1cf6d84626b7db3cfadffb7adadc306a4d9e7",
+      "M14": "d05fc9c43d66c0798aea91f6bfcc0fec573d3891623422d9723f3d5c58905d5f",
+      "M15": "ed59957431204a8ebbb99c24bfaa844b8b97d775bbab929229d2c802f8216bbd",
+      "M16": "a0ece4c21e5e361c9d8ac4a8d126bdb783dc45e877248424d68d39e2b94236a1",
+      "M17": "75f5b1b39247e4538bc15d28849b6e85f0d09eedb6875babc14b228d41146df3",
+      "M18": "f06a2e6c51de1d3885b64337bbd62a8684292a7530a863d6d03fabf8d9b5448c",
+      "M19": "394d9828fe40804868e1d8d6b4f529a29f066a01595055b2b5cd81ef2aa27dca",
+      "M20": "b7573239451df4a5dc362f9759964986128e2ae7d9fb952a3b082a3371ce4ac6",
+      "M22": "c9c4888cea1658abf4874ef3732464bc2fa3780b2c66e308d6971e5960017b5c",
+      "M23": "18af6a3a53aac8c1a785b60ae9d9fe638c418d4b6235294c90ef7a2fc7ad8749",
+      "M24": "30cf6af49391dc71530f9af401870a517f816fdf389131ea6570c2a641c69d21",
+      "M25": "66f648c2e924f454ad45eabc1f0db08313628e41f1dffb21e401177b9c080771",
+      "M26": "0cb3674d8b675ad37ed4d40e8ce815efa87a113e5c58befb44dae032ee7c0014",
+      "F01": "2dc4242893c9811e40f823c6ae70866f377d73da2ca7e1b56572d2bb7bb31797",
+      "F02": "5bbfccf894f21b7db471b67064bacf8f6cd71f9112e930edacae659a90de3e1b",
+      "F03": "de2427c8e9e2c2b043ae293d46898a8f1938d8c98604ab39b83381984aa76ec3",
+      "F04": "9475a0fadd92bf0e2bda5490b236191ed056e80b977c6dabdeb04141bcb8a089",
+      "F05": "e82185735483b563c85d1c1ff044fac14eab88121b0b3c83f8600a47a1c7379d",
+      "F06": "d0fbbfb6b74c601dc987d22b28feb7c7cb46185580a898bb551cbaea011673ed",
+      "F07": "6270eb8bec31d2dca02c6f94b1e3aac36f6d9200d9f5f3972fc4a95b4837c522",
+      "F08": "eddb04cdffaa0194088377b58a1a77b62e81f87284dc13e0ee2b7304ee623441",
+      "F09": "4e0b1c3479e2196ab1fef6c0e6683b427bb73061c958daa135ff4e786cb0f819",
+      "F10": "e5a5d353918da7ecb9b0ea3801278f814aac463bd6142889d44d9d9afcd4997e",
+      "F11": "ce2c29291b7a7f714f6ee9a9de7fb9c5183e4c71a8b6a130ec9695ec5bc10889",
+      "F12": "13cd28dbcaf7e4c380821a6445782d6099cf67cedec3e35cae87bb13b6e1efbd",
+      "F13": "7e1e4ec7da44501e407f238fc0308ede5383a8ba2b24616422e9c8b8d148d7e1",
+      "F14": "f0deacb7176c94edc576fd322175a189636cb67b9eb043649c83135950ad6af8",
+      "F15": "0dce4bd0a44854f3726a5c1b0b7749cbc29c252969e6f0b89606125b0a06b191",
+      "F16": "37eb667a3c6d297eaa5a36a67c58a318af53317edebeed77c6b70af26c48ebb6",
+      "F17": "1ba994385e1b42d30772de7c83f20c264643dc9ce09dddf6e57295c82de9312b",
+      "F18": "c13ac533237bb4df37fcd28b21b84028a6cbed0cb7ee05b64ab3983248d984f6",
+      "F19": "9db208831c4d45989ff01a23a86525d8735bb19b1219e3bcf5938b7fc8ec2875",
+      "F20": "5c0993b17e626e7a1f7212e7679dbe4165ec649ab1fcd20c3e70df42f85be67e",
+      "F21": "82ce18866aa80af66c5202c49a36ebb84d5613ad6c67543269da83105b32452e",
+      "F22": "e05155b4f03ff4e1f670d2761f65f08a5748c61ca3dafa639c6b95fe72461a68",
+      "F23": "5c7fbe92c73c3b684b1f362f0796ceaa43c130f2d095c62477ffdf0a24217dca",
+      "F24": "f2f16356f6ad5ef5bee126788c5b56593c1d16ae7cea070e0d0dc4240a976b55",
+      "F25": "c67601cb39d3efb531e4181f2e61887dbd6d42a084b43340df299cab07c75225",
+      "F26": "388cfc7313fb5d0b0d8d6d25b9faed99f1dc5a7c404e4def3064e4552ab4f903",
+      "F27": "e55a85b6c6a5f3b994c4249cf9717b90f2d2343a78400b82422c2d47ca8f9f22",
+      "F28": "529594c0247d7b4918e6e3d25c2bca6e3241d8b389db35c127b20a76cc1f7281",
+      "F29": "3e5d1d17888acc0af0eb2ecc2f2f3fc65b13165a918a53fcd4a848ded90175f1",
+      "F30": "fab0cf084931f6916729cde9f97936041fdb5fb7393a2f1166a18c234115bbbd",
+      "E01": "179b0fdf45651ddbb3b3a388d7b3080259ddebe2d42768bc4d49c672e11b64f4",
+      "E02": "34834e597becaa5635d61bcbc71ede012fd33f435d04588c530b64533fc7b5a8",
+      "E03": "e7c1d36851f02ea376e080cf3be183840caf65a6131b4ad557341f1c0c0edaff",
+      "E04": "1ac1b197e11081dff71ee20cf881962550c4dc388497dd64e65b89e725eac894",
+      "E05": "20989663d94bf27d325471f1fcdb80fd2663d48deea5e0b2ff476e4b5595be6b",
+      "E06": "ec36fd6bc306b2373761e19ede8779d150adb4f5444570bbe6973baddbfb82da"
+    },
+    "other_entries_preserved": true,
+    "other_rendered_lines_preserved": true,
+    "prior_discovery_preserved": true
+  },
+  "chain_maintenance": {
+    "prior_sha256": "6afc22af48edb12d2749314b45624dce37d48f610f2a6bd349a96c1a167334cf",
+    "prior_bytes": 232415,
+    "addition": "\n\n**可错科学辨别的必要约束 / Necessary constraints on fallible scientific discrimination，2026-10-08。** M21成对接入[现有研究的续篇](SCIENTIFIC-INQUIRY-CONDITIONS.md#10-fallible-inquiry-and-the-foundational-inference)：18项新形式定理／27项审计，信用既有统计数学；适应关系接到错误与作答覆盖，完整核心的科学普遍必要性仍开放。/ [Owned edits](SCIENTIFIC-INQUIRY-NECESSITY-EDITS.json) preserve prior prose, other entries and rendered lines. [Scoped checks](SCIENTIFIC-INQUIRY-NECESSITY-CHECKS.json) bind the new proof receipt and the maintained row; they do not certify unread concurrent source changes. Canonical results and the scoped authorization drive generated navigation. No empirical or independent-agent acceptance is claimed.\n"
+  }
+}
