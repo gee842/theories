@@ -2,6 +2,8 @@
 
 2026-10-08 · Research direction: Ren. Mapping and documentary audit: AI-authored.
 
+[Current canonical records / 当前成果记录](RESULT-REGISTER.md) maintain migrated claims. This map preserves its dated chat coverage; family links below add navigation to migrated records without expanding the snapshot. / 已迁移主张以成果记录维护；以下成果族链接只补充导航，不扩大会话快照范围。
+
 对44个仓库会话可检索成果的有限映射，归入14个成果族并指定复用入口。新成果指仓库贡献，不等于文献原创；讨论上下文链接不声称已整合该会话全部论证。活动会话继续推进，本表保留有日期的检查点。
 
 A bounded map of outcomes retrieved from 44 repository chats, with canonical reuse targets for 14 result families. New-result means a reported repository contribution, not independent novelty versus the literature. Discussion-context links locate related existing theory and do not assert that every chat argument was incorporated. This map records a dated checkpoint while active chats continue.
@@ -112,6 +114,8 @@ Finite traces, faithful projections and necessary retained distinctions supply t
 
 **Scope still separate / 保留范围:** A shared representation does not prove every law, unique foundation or wisdom.
 
+**Migrated records / 已迁移条目:** [branching-target-uniqueness](records/branching-target-uniqueness.md) · [trace-law-equivalence](records/trace-law-equivalence.md)
+
 <a id="f02"></a>
 
 ### F02 共同支持与方案组合 Shared support and plan composition
@@ -125,6 +129,8 @@ Separate feasibility does not establish joint realization; different modules giv
 **Consolidation / 整合:** Use the additive theorem for pooled exit budgets, the footprint theorem for nested exclusive demands, and the plan theorem for observation-dependent continuation. Count the shared obstruction once in synthesis; retain its distinct applications.
 
 **Scope still separate / 保留范围:** No adapter between all three representations has been verified by this map.
+
+**Migrated records / 已迁移条目:** [aggregate-exit-funding](records/aggregate-exit-funding.md) · [exclusive-footprint-support](records/exclusive-footprint-support.md) · [joint-plan-composition](records/joint-plan-composition.md) · [joint-target-uniqueness](records/joint-target-uniqueness.md)
 
 <a id="f03"></a>
 
@@ -168,6 +174,8 @@ Evidence acquisition and fault coverage can support actual correction through ch
 
 **Scope still separate / 保留范围:** Intervention-derived dependence and joint diagnostic envelopes are related but their formal transport is not established here.
 
+**Migrated records / 已迁移条目:** [fallible-witness-diagnosability](records/fallible-witness-diagnosability.md)
+
 <a id="f06"></a>
 
 ### F06 选择制度与纠正的代价 Selection regimes and costly correction
@@ -196,6 +204,8 @@ G0 and disclosed comparative commitments support scoped preservation, revision, 
 
 **Scope still separate / 保留范围:** Do not count applications as repeated foundations or import risk priorities into G0 without their extra premise.
 
+**Migrated records / 已迁移条目:** [alignment-direction-g0-j](records/alignment-direction-g0-j.md) · [fulfillment-chance-floor](records/fulfillment-chance-floor.md) · [practical-judgment-g0-j](records/practical-judgment-g0-j.md)
+
 <a id="f08"></a>
 
 ### F08 规范根据与独立强目标 Normative warrant and stronger independent goals
@@ -209,6 +219,8 @@ The completed explicit-axiom route and stronger zero-axiom or universal-warrant 
 **Consolidation / 整合:** Route foundations, critiques and applications to their stated targets. Repeated acknowledgements of an open premise are not new impossibility proofs.
 
 **Scope still separate / 保留范围:** Universal practical authority, root-of-wisdom necessity and exclusive foundational necessity remain distinct unproved goals.
+
+**Migrated records / 已迁移条目:** [universal-practical-warrant](records/universal-practical-warrant.md) · [wisdom-root](records/wisdom-root.md)
 
 <a id="f09"></a>
 
@@ -252,6 +264,8 @@ Finite-basis joint interpretation, potentialist truth and resource-sensitive rul
 
 **Scope still separate / 保留范围:** These results do not derive the metalogic or actual universal admission from no premises.
 
+**Migrated records / 已迁移条目:** [derivation-soundness](records/derivation-soundness.md) · [finite-basis-common-interpretation](records/finite-basis-common-interpretation.md)
+
 <a id="f12"></a>
 
 ### F12 经典思想与关系重构 Classical comparison and relational reconstruction
@@ -279,6 +293,8 @@ Several chats reviewed and accepted the same five-condition completion result.
 **Consolidation / 整合:** One completion result with multiple reviews. Do not count each accepting chat or replayed import closure as a fresh proof.
 
 **Scope still separate / 保留范围:** Historical next steps must be read with later scoped completions.
+
+**Migrated records / 已迁移条目:** [conditional-foundation-assessment](records/conditional-foundation-assessment.md)
 
 <a id="f14"></a>
 
@@ -333,7 +349,7 @@ The earlier reading registers contain 107 chapters; the current directory contai
 
 ## 维护 Maintenance
 
-Edit `data/session-results.json` for scoped claim classifications and canonical reuse entries. Capture new chat evidence explicitly before broadening session coverage. Refresh the Lean inventory with the existing catalogue tool or this checkpoint tool; neither refresh certifies proof validity.
+Edit `data/session-results.json` for dated session classifications and provenance links. Maintain migrated claim status only in `records/<id>.json`; record links above are generated from those files. Capture new chat evidence explicitly before broadening session coverage. Inventory refreshes do not certify proof validity.
 
 ```sh
 python3 -B _process/research/2026-10-05-generative-foundation-review/root-foundation/build_session_result_map.py --check

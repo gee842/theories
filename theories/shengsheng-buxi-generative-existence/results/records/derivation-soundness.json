@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "id": "derivation-soundness",
+  "title": {
+    "zh": "带前提的推导健全性",
+    "en": "Premise-tracked derivation soundness"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F11",
+  "reviewed_at_utc": "2026-10-08T12:31:53.854610+00:00",
+  "claim": {
+    "zh": "若 Derives basis context p，则每个满足全部 basis 及 context 的解释也满足 p。",
+    "en": "If Derives basis context p, every interpretation satisfying the entire basis and local context satisfies p."
+  },
+  "hypotheses": [
+    {
+      "zh": "使用既有有限推导规则；根基和局部前提的真均为显式输入。",
+      "en": "The existing finite derivation rules are fixed; basis truth and local assumptions are explicit inputs."
+    }
+  ],
+  "correspondence": {
+    "zh": "形式健全性不提供根基本身的实际真或规范权威。",
+    "en": "Formal soundness supplies neither actual basis truth nor normative authority."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/GenerativeClosure.lean",
+  "aliases": [
+    "InquiryRoot.derivation_sound",
+    "InquiryRoot.WholeDischarge.derivation_sound_constructively"
+  ],
+  "dependencies": [],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/GenerativeClosure.lean",
+      "detail": {
+        "zh": "任意新增局部前提可以推出条件句，不能据此抹去前提。",
+        "en": "Adding a local premise supports a conditional derivation, not discharge of that premise."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "任意新增局部前提可以推出条件句，不能据此抹去前提。",
+    "en": "Adding a local premise supports a conditional derivation, not discharge of that premise."
+  },
+  "validation_scope": {
+    "zh": "复用所列既有 Lean 回执；本次仅审读源码、核对声明及回执哈希对应，未重新编译。",
+    "en": "Credits the linked existing Lean receipt. This migration reads source and checks declaration presence and receipt hash binding; it does not rerun Lean."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/GenerativeClosure.lean",
+      "role": "proof",
+      "sha256": "d0a79987bd15c3de39f4c109d1d61703df50d3e9b3236c4e46acdd1854ec22ed",
+      "declarations": [
+        "InquiryRoot.derivation_sound",
+        "InquiryRoot.extra_claim_not_closed_derivable"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/joint-interpretation-verification.json",
+      "role": "receipt",
+      "sha256": "84ccd8f9cfbc584fdd568815f1d39f8bccf671420ec5de493a5d4492488f607a",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/WholeTheoryDischarge.lean",
+      "role": "integration",
+      "sha256": "f835741c8d9efc49eabb6f4d82db0488e5f46f308fd0f1500bd8692a62590893",
+      "declarations": [
+        "InquiryRoot.WholeDischarge.derivation_sound_constructively"
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-PROOF-REUSE-SOURCE-CHECKS.json",
+      "role": "review",
+      "sha256": "9126a57e70b9c5e3647c77906d0b8712a86a0acc2f567ddf9f274f64f24641cf",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md",
+      "role": "provenance",
+      "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/GenerativeClosure.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/joint-interpretation-verification.json",
+      "sha256_pointer": "/modules/GenerativeClosure/source_sha256",
+      "success_pointer": "/passed",
+      "success_value": true
+    }
+  ],
+  "next_delta": {
+    "zh": "继续复用健全性；新研究须说明如何取得或解除实质前提。",
+    "en": "Reuse soundness; a new contribution must explain acquisition or discharge of substantive premises."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
+      "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+    },
+    {
+      "zh": "P02：两处当前命题及归纳体相同；第二名称保存历史逻辑依赖削减，不抹去旧回执。",
+      "en": "P02: the current statements and induction bodies coincide; the second name preserves historical dependency reduction and its receipts."
+    }
+  ]
+}

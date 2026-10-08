@@ -10,6 +10,7 @@
 
 | 文档 / Document | 内容 / Contents |
 |---|---|
+| [成果登记表 / Canonical result register](RESULT-REGISTER.md) | 每项已迁移主张的单一记录：前提、证据、状态、依赖、反例与别名；阅读页自动生成。 / One editable record per migrated claim, with generated reading views. |
 | [会话成果与证明复用 / Session outcomes and proof reuse](SESSION-RESULTS.md) | 会话到成果族、规范复用入口、重复证明判别及新增章节。 / Chats mapped to result families, canonical reuse targets, overlap decisions and additional chapters. |
 | [全部理论分支 / Theory map](THEORY-MAP.md) | 17 个分支的中英论证、意义、状态和后续；含方法档案。 / Bilingual branch accounts, including the method archive. |
 | [统一论证 A–L](ARGUMENTS-A-L.md) · [统一论证 M–Z](ARGUMENTS-M-Z.md) | 逐章中英阅读版：论证、意义、范围、下一问题、原文、Lean 与证据。 / Paired chapter readings with scope, questions, sources and evidence. |

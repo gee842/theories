@@ -132,8 +132,10 @@ def link(label, path):
 
 def render(data, inv):
     s = inv['statistics']
+    migrated = [read(p) for p in sorted((OUT/'records').glob('*.json'))]
     lines = ['# 会话成果与证明复用地图 Session outcomes and proof reuse', '',
         '2026-10-08 · Research direction: Ren. Mapping and documentary audit: AI-authored.', '',
+        '[Current canonical records / 当前成果记录](RESULT-REGISTER.md) maintain migrated claims. This map preserves its dated chat coverage; family links below add navigation to migrated records without expanding the snapshot. / 已迁移主张以成果记录维护；以下成果族链接只补充导航，不扩大会话快照范围。', '',
         data['scope_zh'], '', data['scope_en'], '',
         '**结论：多数近期成果已有正文入口；形式连接须逐项判断。验证副本与重复验收不计作新证明。**', '',
         '**Most recent outcomes have research or theory entries. Formal composition is assessed claim by claim. Verification copies and repeated acceptances are not additional proofs.**', '',
@@ -172,6 +174,9 @@ def render(data, inv):
             f['claim_en'], '', '**Hypotheses / 前提:** '+f['hypotheses_en'], '',
             '**Canonical reuse entries / 复用入口:** '+ ' · '.join(link(Path(p).stem, p) for p in f['canonical_sources']), '',
             '**Consolidation / 整合:** '+f['reuse_en'], '', '**Scope still separate / 保留范围:** '+f['remaining_en'], '']
+        matches = [r for r in migrated if r['family'] == f['id']]
+        if matches:
+            lines += ['**Migrated records / 已迁移条目:** ' + ' · '.join(f'[{r["id"]}](records/{r["id"]}.md)' for r in matches), '']
     c = inv['chapter_reading_coverage']
     lines += ['## 双语阅读版的覆盖 Reading edition coverage', '',
         f"The earlier reading registers contain {c['registered']} chapters; the current directory contained {c['current']} at this checkpoint. {len(c['changed_since_reading'])} registered chapters differ from their recorded reading hashes. The Lean navigation is refreshed; old reading hashes are not relabeled as reviewed.", '',
@@ -180,7 +185,7 @@ def render(data, inv):
     for p in c['unregistered']:
         lines.append('| '+link(Path(p).stem, p)+' |')
     lines += ['', '## 维护 Maintenance', '',
-        'Edit `data/session-results.json` for scoped claim classifications and canonical reuse entries. Capture new chat evidence explicitly before broadening session coverage. Refresh the Lean inventory with the existing catalogue tool or this checkpoint tool; neither refresh certifies proof validity.', '',
+        'Edit `data/session-results.json` for dated session classifications and provenance links. Maintain migrated claim status only in `records/<id>.json`; record links above are generated from those files. Capture new chat evidence explicitly before broadening session coverage. Inventory refreshes do not certify proof validity.', '',
         '```sh', 'python3 -B _process/research/2026-10-05-generative-foundation-review/root-foundation/build_session_result_map.py --check', '```', '',
         'No theoretical claim or generativity-chain entry changes in this documentary consolidation. Existing scientific validation and pending source reviews retain their scopes.', '']
     return '\n'.join(lines)

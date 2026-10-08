@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "id": "trace-law-equivalence",
+  "title": {
+    "zh": "逐步规律与端点历史等价",
+    "en": "Step laws and endpoint traces"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-08T12:31:53.854610+00:00",
+  "claim": {
+    "zh": "两个同型过程逐步允许关系一致，当且仅当它们对每条有限动作串及起终点的历史一致。",
+    "en": "Two processes on the same state/action types agree pointwise on steps iff they agree on all finite labelled traces with both endpoints retained."
+  },
+  "hypotheses": [
+    {
+      "zh": "同一 State、Action 类型与给定 Process.step；使用既有 Trace 定义。",
+      "en": "Common State and Action types, supplied Process.step relations, and the existing Trace definition."
+    }
+  ],
+  "correspondence": {
+    "zh": "端点、动作和步骤的实际含义另需对应。",
+    "en": "The actual interpretation of states, actions and steps remains supplied."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean",
+  "aliases": [
+    "Generative.Deeper.same_steps_iff_endpoint_traces",
+    "Generative.Model.laws_iff_endpoint_histories"
+  ],
+  "dependencies": [],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean",
+      "detail": {
+        "zh": "只保留可行动作串会丢失规律；静止和翻转过程给出反例。",
+        "en": "Word feasibility alone loses law information; static and toggle processes supply the counterexample."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "只保留可行动作串会丢失规律；静止和翻转过程给出反例。",
+    "en": "Word feasibility alone loses law information; static and toggle processes supply the counterexample."
+  },
+  "validation_scope": {
+    "zh": "复用所列既有 Lean 回执；本次仅审读源码、核对声明及回执哈希对应，未重新编译。",
+    "en": "Credits the linked existing Lean receipt. This migration reads source and checks declaration presence and receipt hash binding; it does not rerun Lean."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean",
+      "role": "proof",
+      "sha256": "d4a0dfc019fd1009d0230b0aa88ea4d940d42b6394ff44f59568e95edbd27692",
+      "declarations": [
+        "Generative.Deeper.same_steps_iff_endpoint_traces",
+        "Generative.Deeper.word_feasibility_does_not_determine_endpoints"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/verification.json",
+      "role": "receipt",
+      "sha256": "362c4eda65deeb23222ed432ef4920d0525da9c6e0b7f101ec71f3e42fff350a",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean",
+      "role": "integration",
+      "sha256": "c9752ea54674fc5b3fedd89c64af133c19838a20a83c363d0fac5272c84ff33b",
+      "declarations": [
+        "Generative.Model.laws_iff_endpoint_histories"
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-PROOF-REUSE-SOURCE-CHECKS.json",
+      "role": "review",
+      "sha256": "9126a57e70b9c5e3647c77906d0b8712a86a0acc2f567ddf9f274f64f24641cf",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md",
+      "role": "provenance",
+      "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/verification.json",
+      "sha256_pointer": "/modules/9/source_sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "直接引用原定理或已有公开包装；更弱观察范围需另证。",
+    "en": "Reuse the original theorem or its existing public wrapper; weaker observational scope needs a separate result."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
+      "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+    },
+    {
+      "zh": "公开包装直接调用原定理；P01 已记录此复用，不计两个独立证明。",
+      "en": "The public wrapper directly invokes the original theorem; P01 records the reuse, counted as one result."
+    }
+  ]
+}

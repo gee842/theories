@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "id": "wisdom-root",
+  "title": {
+    "zh": "核心作为智慧之根的目标",
+    "en": "Core as the root of wisdom target"
+  },
+  "kind": "target",
+  "status": "open",
+  "family": "F08",
+  "reviewed_at_utc": "2026-10-08T12:31:53.854610+00:00",
+  "claim": {
+    "zh": "待建立：核心不仅约束一般活动，还在所声明范围内构成并解释智慧的实际生成。",
+    "en": "Open: establish that the core not only constrains activity but constitutes and explains the actual formation of wisdom at the claimed scope."
+  },
+  "hypotheses": [
+    {
+      "zh": "保留获授权的必要关系与生成解释两部分；不能将局部成功条件改名为完整智慧。",
+      "en": "Retain both authorized components, necessary relations and generative explanation; local success conditions cannot simply be renamed full wisdom."
+    }
+  ],
+  "correspondence": {
+    "zh": "适当把握理由、目的的根据及修订须接入实际形成的关系。",
+    "en": "Appropriate grasp of reasons, warranted ends and their revision must connect to actually formed relations."
+  },
+  "canonical_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+  "aliases": [],
+  "dependencies": [],
+  "related": [
+    {
+      "id": "conditional-foundation-assessment",
+      "detail": {
+        "zh": "已完成候选有自己的有限智慧范围；不能自动升级为本目标。",
+        "en": "The completed candidate has its own bounded wisdom scope, which does not automatically satisfy this target."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-RESPONSE-NECESSITY.md",
+      "detail": {
+        "zh": "足够描述不自动有仍充分的共同最粗表示。",
+        "en": "Sufficient descriptions need not admit a still-sufficient common coarsest representation."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "目前完整目标未证；足够行动的多种描述也未必有共同最粗的充分描述。",
+    "en": "The full target remains unproved; sufficient action descriptions need not have a common coarsest sufficient description."
+  },
+  "validation_scope": {
+    "zh": "登记目标与当前局部必要性研究；不宣称完整智慧或唯一核心已证。",
+    "en": "Records the target and current local necessity study; neither full wisdom nor a unique core is certified."
+  },
+  "references": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+      "role": "statement",
+      "sha256": "f970aa6e9bfc356f5eb148bab91206c3f785fdfdc02e3c55faac276bd2902383",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-RESPONSE-NECESSITY.md",
+      "role": "integration",
+      "sha256": "3277bbd8462f82dcbbac1b7164585a426776ec85811811f8ae1827d9e94a522e",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md",
+      "role": "provenance",
+      "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [],
+  "next_delta": {
+    "zh": "推进目的根据及其修订连接，复用现有形成、辨别与实践结果。",
+    "en": "Advance warranted ends and their revision while reusing existing formation, discrimination and practical results."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
+      "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+    }
+  ]
+}

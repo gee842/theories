@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "id": "alignment-direction-g0-j",
+  "title": {
+    "zh": "G0/J 的 AI 对齐方向应用",
+    "en": "AI alignment direction from G0/J"
+  },
+  "kind": "argument",
+  "status": "reviewed-scoped",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-08T12:31:53.854610+00:00",
+  "claim": {
+    "zh": "既有实践原则在有根据的 AI 对应下支持生成、纠正、交接与适当结束，并保留能力增长的真实好处和损失。",
+    "en": "With warranted AI correspondence, the practical principles support generative development, correction, transfer and appropriate ending while retaining capability growth’s real benefits and losses."
+  },
+  "hypotheses": [
+    {
+      "zh": "继承 G0、J1–J4；E 包括基本分类、实际保护、有效承担及权限的根据。",
+      "en": "Inherits G0 and J1–J4; E includes warrant for basic classifications, actual protection, valid undertakings and authority."
+    }
+  ],
+  "correspondence": {
+    "zh": "构造案例区分增长、服务、转移与突然撤出；同样相关关系可跨智能类型适用。",
+    "en": "The constructed case distinguishes expansion, service, transfer and abrupt withdrawal; the same relevant relations can apply across intelligence types."
+  },
+  "canonical_source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md",
+  "aliases": [],
+  "dependencies": [
+    {
+      "id": "practical-judgment-g0-j",
+      "detail": {
+        "zh": "把既有原则应用到明示 AI 服务关系；形式例直接导入 PracticalJudgment。",
+        "en": "Applies the existing principles to declared AI-service relations; the formal example imports PracticalJudgment."
+      },
+      "relation": "application"
+    }
+  ],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md",
+      "detail": {
+        "zh": "完成的是方向论证；不证明必然服从、部署可靠性或 G0 的无公理必然性。",
+        "en": "The completed result is a direction argument; it proves neither inevitable compliance, deployment reliability nor axiom-free necessity of G0."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "完成的是方向论证；不证明必然服从、部署可靠性或 G0 的无公理必然性。",
+    "en": "The completed result is a direction argument; it proves neither inevitable compliance, deployment reliability nor axiom-free necessity of G0."
+  },
+  "validation_scope": {
+    "zh": "既有独立审查接受方向论证，并独立重编译9项新定理／16项新审计及46项继承审计。本次仅登记。",
+    "en": "The existing independent review accepts the direction argument and independently rebuilt 9 new theorems/16 new audits plus 46 inherited audits. This turn only registers that evidence."
+  },
+  "references": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md",
+      "role": "statement",
+      "sha256": "9940ead2d7f06a18ff7f2ec37f27aebd496dde10854d8a11993469a31a7900cd",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/alignment-direction-verification.json",
+      "role": "receipt",
+      "sha256": "3e479e7b0c34e818fd174d243b2705abf9355d170ff4d7b5fc7c2bf7db4d8a1c",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentDirection.lean",
+      "role": "proof",
+      "sha256": "1b183a54e20f3f247aaca539e06ee5c739929758648c965ff900d494b002cd34",
+      "declarations": [
+        "AlignmentDirection.transfer_over_expansion",
+        "AlignmentDirection.promised_successor_without_delivery_fails"
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-REVIEW.md",
+      "role": "review",
+      "sha256": "8bc0f4cc3013a249838caa58ddba992d56eb40fa9be0f58353bd116e31b8c2da",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "b0ef4db36886e1560f3d5f72bc90c769338f04bf6cf879a316147cc2be0a616f",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md",
+      "role": "provenance",
+      "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentDirection.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/alignment-direction-verification.json",
+      "sha256_pointer": "/source_sha256/AlignmentDirection",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "研究新目的、制度与可靠实施的具体连接，复用已完成的方向论证。",
+    "en": "Investigate specific connections for new ends, institutions and reliable implementation while reusing the completed direction argument."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
+      "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+    }
+  ]
+}

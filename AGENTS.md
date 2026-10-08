@@ -1,5 +1,7 @@
 # Working in the theory repository
 
+**成果接续流程 / Result contribution workflow，2026-10-08。** 按[贡献流程](_process/RESULT-WORKFLOW.md)先检索[成果登记表](theories/shengsheng-buxi-generative-existence/results/RESULT-REGISTER.md)及原研究。已迁移主张只编辑其 `results/records/<id>.json`，阅读页和登记表由脚本生成；复用已有证明并在现有研究中指出新增量。别名、复查和重复验收不增加独立成果数；跨成果组合须有明确输出—输入对应。来源改变先核读再更新哈希，不能用登记标签盖过证据。未迁移成果仍以原来源为准；研究目标与其他会话授权不变。 / Search existing results before new work, identify the substantive delta, update the affected canonical record, and run its renderer/checker. Preserve historical evidence and concurrent edits. The register governs migrated summaries only, not the truth of premises or the whole research programme.
+
 This repository is the primary home for Ren's theory and research. Start with `README.md`, `RESEARCH.md`, and `_process/BRIEF.md`.
 
 **集体对齐会话的共同问题提醒，Ren，2026年10月8日。** [原话](sources/15-codex-theory-conversations/2026-10-08-collective-destructive-attractors.md#common-problem-solving-and-awareness)要求对默认博弈框架保持 awareness。研究共同活动怎样辨明并解决问题，包括共同修订问题表述、目的和组织方式；不要未经论证就把不同位置变成对立利益，把相互依存变成筹码，把协调变成“谁赢更多”的平衡。在选问题、定义角色和解释失败时检查这一偏移，不能只在结论补非二元声明。真实冲突与差异保留其具体范围；共同活动也不预设一个固定共同效用函数。本会话的[当前接续](theories/meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md#common-problems-and-revisable-purposes)复用已完成机制，其他独立会话保持范围。

@@ -1,5 +1,7 @@
 # Generative Existence (生生不息论)
 
+**[成果登记表 / Canonical results](results/RESULT-REGISTER.md)**：已迁移主张的前提、证据、复用与边界由单一记录维护；按[贡献流程](../../_process/RESULT-WORKFLOW.md)接续新工作。本 README 保留理论导航和研究沿革。 / Use the registry for migrated claim identity and status, and this README for theory navigation and history.
+
 **能力下降与履行不能混同 / Lost capacity is not fulfillment，2026-10-08。** [维护目标的自我改写检验](unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md#maintenance-baseline)新增4项Lean定理／13项审计，保留真实完成后合法结束。/ Actual withdrawal can empty a recomputed target without delivering the warranted original task; the finite completion record does not certify continuous future supply.
 
 **吸引、退化与实际继续 / Attraction, degeneration and actual continuation，2026-10-08。** [市场接续](unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md#local-attraction-and-actual-support)新增38项 Lean 定理／52项审计：局部双吸引、内部不稳定及同一运行历史中的支持结局。/ The selected rational connection is complete; reproducing selection need not preserve its necessary support. Full domains, supported entry and timely sustained change remain open; existing normative grounds are reused.

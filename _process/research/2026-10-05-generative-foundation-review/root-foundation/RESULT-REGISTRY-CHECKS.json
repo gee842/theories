@@ -1,0 +1,18 @@
+{
+  "scope": "Documentary structure, source/receipt hash binding, navigation and generated views only; no Lean build or new mathematical claim.",
+  "checkpoint_commit": "74cba5b1",
+  "records": 15,
+  "kinds": {
+    "argument": 2,
+    "assessment": 1,
+    "target": 2,
+    "theorem": 10
+  },
+  "proof_receipt_bindings": 12,
+  "local_links_checked": 475,
+  "navigation_insertions": 8,
+  "checker_tests_passed": 9,
+  "errors": [],
+  "source_drift": [],
+  "lean_sources_changed_by_this_task": []
+}

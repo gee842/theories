@@ -1,5 +1,7 @@
 # Ren 的理论：成果与进度 / Ren’s theories: results and progress
 
+**[成果登记表 / Canonical results](theories/shengsheng-buxi-generative-existence/results/RESULT-REGISTER.md)**：按主张复用前提、证据、依赖和反例；已迁移条目由单一记录生成。新工作遵循[贡献流程](_process/RESULT-WORKFLOW.md)。 / Start here to reuse migrated claims and identify what a new contribution adds; historical studies and full theory remain linked.
+
 **[会话成果与证明复用 / Session outcomes and proof reuse](theories/shengsheng-buxi-generative-existence/results/SESSION-RESULTS.md)**：44个仓库会话按14个成果族连接到当前论述与复用证明；区分新结果、推广、应用、反例和重复验收。/ A dated cross-session map, with refreshed Lean navigation and explicit integration limits.
 
 **首要方向之一 / A current primary direction，2026-10-08。** [生成性对齐理论](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#current-generative-alignment-priority)连接跨智能的规范根据、人类与机构目标的评价、关切和智慧的形成、选择规则自身的改变。[Ren 指示](sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md)：已完成的方向论证、实践判断和局部检验归入成果，直接复用，不再列为待做方向。其他独立未完成研究保持范围。 / Develop the stronger generative alignment programme; completed arguments and checks are reusable results, not recurring research directions. Older dated next steps are historical where later work closed them.

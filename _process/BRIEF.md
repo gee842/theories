@@ -1,5 +1,7 @@
 # Brief for readers of this corpus
 
+**先查成果，再说明新增量 / Reuse before extending。** [成果登记表](../theories/shengsheng-buxi-generative-existence/results/RESULT-REGISTER.md)提供已迁移主张的单一记录；按[贡献流程](RESULT-WORKFLOW.md)在现有研究中说明复用、改变的前提或结论、真实对应与剩余连接。 / Generated views and one editable record per migrated claim reduce repeated proofs and competing status summaries. Unmigrated results retain their existing sources; the broader research scope remains unchanged.
+
 **当前首要方向之一 / A current primary direction，2026-10-08。** [生成性对齐理论](../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#current-generative-alignment-priority)连接跨智能的规范根据、人类与机构目标的评价、关切和智慧的形成、选择规则自身的改变。[Ren 指示](../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md)：已完成的方向论证、实践判断和局部检验归入成果，直接复用，不再列为待做方向。其他独立未完成研究保持范围。 / Develop the stronger generative alignment programme; completed arguments and checks are reusable results, not recurring research directions. Older dated next steps are historical where later work closed them.
 
 **对齐方向的完整论证 / Completed alignment-direction argument，2026-10-08。** [当前对齐方向](../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md)将 G0、公开 J1–J4、真实对应与 AI 的增长、纠正、交接及结束相连。构造例保留能力增益和真实损失；9项新 Lean 定理／16项新审计通过，另46项继承审计。完成后独立审查已接受；可靠部署与无公理根据保持各自范围。 / The independently reviewed explicit-axiom argument states what AI development should support and why; implementation remains a separate task.

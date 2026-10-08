@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "branching-target-uniqueness",
+  "title": {
+    "zh": "分支测试下的目标唯一性",
+    "en": "Target uniqueness for branching tests"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F01",
+  "reviewed_at_utc": "2026-10-08T12:31:53.854610+00:00",
+  "claim": {
+    "zh": "若目标模型由分支测试分离，与同一源位置有相同测试真值的两个目标位置相等。",
+    "en": "If branching tests separate the target model, two target positions agreeing with one source position on all tests are equal."
+  },
+  "hypotheses": [
+    {
+      "zh": "ExplanatoryBranching 的 Model、Test、Same；目标满足 Separated。",
+      "en": "ExplanatoryBranching Model, Test and Same; Separated holds for the target."
+    }
+  ],
+  "correspondence": {
+    "zh": "测试包括条件、否定、合取和动作后继；测试适用性是解释范围的一部分。",
+    "en": "Tests include conditions, negation, conjunction and action successors; their applicability is part of explanatory scope."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean",
+  "aliases": [
+    "Generative.ExplanatoryBranching.same_functional"
+  ],
+  "dependencies": [],
+  "related": [
+    {
+      "id": "joint-target-uniqueness",
+      "detail": {
+        "zh": "声明形似，但测试与模型不同；未断言这两个引理相互转换。",
+        "en": "Similar header, different tests and models; no adapter between these lemmas is asserted."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean",
+      "detail": {
+        "zh": "这个小引理本身不要求 image-finiteness，也不独自证明普遍双模拟或唯一本体。",
+        "en": "This lemma itself needs no image-finiteness and does not alone establish universal bisimulation or unique ontology."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "这个小引理本身不要求 image-finiteness，也不独自证明普遍双模拟或唯一本体。",
+    "en": "This lemma itself needs no image-finiteness and does not alone establish universal bisimulation or unique ontology."
+  },
+  "validation_scope": {
+    "zh": "复用所列既有 Lean 回执；本次仅审读源码、核对声明及回执哈希对应，未重新编译。",
+    "en": "Credits the linked existing Lean receipt. This migration reads source and checks declaration presence and receipt hash binding; it does not rerun Lean."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean",
+      "role": "proof",
+      "sha256": "ff49f9ef7e458a316898575948fcec763d879ab5412e170c25de56ac94cd7a2e",
+      "declarations": [
+        "Generative.ExplanatoryBranching.same_functional"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-branching-checks/20261007T233522.275247Z/receipt.json",
+      "role": "receipt",
+      "sha256": "f8619d4410229178fc852d88bb0bb280fc59f4f4dabf6f9381db41ac2685151a",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-BRANCHING-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "8f12c85b38accccfdc9310391778b6193526aabefff59fb5802d122ed64574e1",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md",
+      "role": "provenance",
+      "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-branching-checks/20261007T233522.275247Z/receipt.json",
+      "sha256_pointer": "/modules/7/sha256",
+      "success_pointer": "/passed",
+      "success_value": true
+    }
+  ],
+  "next_delta": {
+    "zh": "使用这一测试语言时复用；更丰富语言需保留其本地语义。",
+    "en": "Reuse for this test language; a richer language must retain its own semantics."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
+      "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "aggregate-exit-funding",
+  "title": {
+    "zh": "可加退出承担的共同资金界",
+    "en": "Joint funding of additive exit obligations"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F02",
+  "reviewed_at_utc": "2026-10-08T12:31:53.854610+00:00",
+  "claim": {
+    "zh": "前 n 项自然数承担的每个所选子集都不超过 reserve，当且仅当全部承担之和不超过 reserve。",
+    "en": "Every selected subset of the first n natural-number obligations fits reserve iff their full sum fits reserve."
+  },
+  "hypotheses": [
+    {
+      "zh": "承担为非负自然数且可加，reserve 为同一份可用支持。",
+      "en": "Obligations are nonnegative additive natural numbers; reserve is the same available support pool."
+    }
+  ],
+  "correspondence": {
+    "zh": "数值代表所声明的退出工作，不是通用伦理价值；真实义务与储备需独立核实。",
+    "en": "Numbers represent declared exit work, not universal ethical value; actual obligations and reserves require independent correspondence."
+  },
+  "canonical_source": "experiments/market-generativity/meta-attractor/CorrectionDependence.lean",
+  "aliases": [
+    "CorrectionDependence.all_coalitions_funded_iff_joint_total"
+  ],
+  "dependencies": [],
+  "related": [
+    {
+      "id": "exclusive-footprint-support",
+      "detail": {
+        "zh": "支持身份与可加总量不同，没有已证通用转换。",
+        "en": "Support identity differs from additive quantity; no verified general adapter."
+      }
+    },
+    {
+      "id": "joint-plan-composition",
+      "detail": {
+        "zh": "静态总量条件不提供动态方案的观察与作用覆盖。",
+        "en": "A static total does not supply a dynamic plan’s observation and effect coverage."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/market-generativity/meta-attractor/CorrectionDependence.lean",
+      "detail": {
+        "zh": "各项分别可负担不推出共同可负担；两个二单位承担可以竞争同一二单位储备。",
+        "en": "Individual affordability does not imply joint affordability: two two-unit obligations can compete for one two-unit reserve."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "各项分别可负担不推出共同可负担；两个二单位承担可以竞争同一二单位储备。",
+    "en": "Individual affordability does not imply joint affordability: two two-unit obligations can compete for one two-unit reserve."
+  },
+  "validation_scope": {
+    "zh": "复用所列既有 Lean 回执；本次仅审读源码、核对声明及回执哈希对应，未重新编译。",
+    "en": "Credits the linked existing Lean receipt. This migration reads source and checks declaration presence and receipt hash binding; it does not rerun Lean."
+  },
+  "references": [
+    {
+      "path": "experiments/market-generativity/meta-attractor/CorrectionDependence.lean",
+      "role": "proof",
+      "sha256": "18997cd01c7a7a41863c06ea351f34d69ce067cd0f518c68a3885ae142108067",
+      "declarations": [
+        "CorrectionDependence.all_coalitions_funded_iff_joint_total",
+        "CorrectionDependence.individually_affordable_exits_can_fail_jointly"
+      ]
+    },
+    {
+      "path": "experiments/market-generativity/meta-attractor/correction-dependence-verification.json",
+      "role": "receipt",
+      "sha256": "ac339db3b76ff066b48c3ff4881dc85fd4158da7f3cb4d1cae9d48bf583c9b27",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md",
+      "role": "provenance",
+      "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/market-generativity/meta-attractor/CorrectionDependence.lean",
+      "receipt": "experiments/market-generativity/meta-attractor/correction-dependence-verification.json",
+      "sha256_pointer": "/source_sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "可加退出预算直接复用；其他支持类型需明确转换或另证。",
+    "en": "Reuse for additive exit budgets; other support types require a stated translation or separate proof."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
+      "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+    }
+  ]
+}

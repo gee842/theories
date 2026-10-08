@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "id": "fulfillment-chance-floor",
+  "title": {
+    "zh": "实际履行导出同律机会下界",
+    "en": "Fulfillment implies a same-law chance floor"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-08T12:31:53.854610+00:00",
+  "claim": {
+    "zh": "有限配对情形中，逐情形覆盖有效需求且旧支持仍工作的目标，推出同一正总权重下的质量下界；对所有自然数权重保持质量等价于覆盖。",
+    "en": "In a finite coupled domain, pointwise coverage of demand with still-working old support yields a mass floor under one positive total weight; preservation for all natural weights characterizes inclusion."
+  },
+  "hypotheses": [
+    {
+      "zh": "有限情形列表、自然数事件权重、目标 demand AND oldWorks 及 Fulfilled；概率解释需正总权重。",
+      "en": "Finite event enumeration, natural event weights, target demand AND oldWorks, and Fulfilled; probability interpretation requires positive total weight."
+    }
+  ],
+  "correspondence": {
+    "zh": "配对、时段、覆盖与旧承担有效性需要证据；权重不是伦理重要性。",
+    "en": "Coupling, time window, coverage and validity of the undertaking need evidence; weights are not ethical importance."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ChanceAdequacy.lean",
+  "aliases": [
+    "ChanceAdequacy.fulfillment_gives_chance_floor",
+    "ChanceAdequacy.all_weights_preserve_mass_iff"
+  ],
+  "dependencies": [],
+  "related": [
+    {
+      "id": "practical-judgment-g0-j",
+      "detail": {
+        "zh": "J3 支持其承担解释；纯质量不等式没有这个规范前提。",
+        "en": "J3 supports the undertaking interpretation; the pure mass inequality does not itself require that normative premise."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ChanceAdequacy.lean",
+      "detail": {
+        "zh": "同一法则下同成功率不代表逐情形履行；事件修复的定义不保证及时有权限的实际实施。",
+        "en": "Equal success under one law need not fulfill the undertaking pointwise; an event-level repair definition does not ensure timely authorized implementation."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "同一法则下同成功率不代表逐情形履行；事件修复的定义不保证及时有权限的实际实施。",
+    "en": "Equal success under one law need not fulfill the undertaking pointwise; an event-level repair definition does not ensure timely authorized implementation."
+  },
+  "validation_scope": {
+    "zh": "复用所列既有 Lean 回执；本次仅审读源码、核对声明及回执哈希对应，未重新编译。",
+    "en": "Credits the linked existing Lean receipt. This migration reads source and checks declaration presence and receipt hash binding; it does not rerun Lean."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ChanceAdequacy.lean",
+      "role": "proof",
+      "sha256": "501a26f1561c78fb552a550700fc730c296e6005cde5a0f0d2e0cb9ec11a8c41",
+      "declarations": [
+        "ChanceAdequacy.fulfillment_gives_chance_floor",
+        "ChanceAdequacy.all_weights_preserve_mass_iff",
+        "ChanceAdequacy.positive_chance_can_miss_due_protection"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/chance-adequacy-verification.json",
+      "role": "receipt",
+      "sha256": "992a7f0741c58222bd0251e74b37546d613e91cf7c5a945e7ae04404cc258357",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "c81a98cbf3a1a59f90e2cf7e6a94bff403bcee2274999da79fdcdc81ffd9b471",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md",
+      "role": "provenance",
+      "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ChanceAdequacy.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/chance-adequacy-verification.json",
+      "sha256_pointer": "/source_sha256/ChanceAdequacy",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "接管时复用此桥；新增任务仍须建立真实实施与有效承担。",
+    "en": "Reuse this bridge for takeover; additional tasks still require actual implementation and warranted undertakings."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
+      "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+    }
+  ]
+}

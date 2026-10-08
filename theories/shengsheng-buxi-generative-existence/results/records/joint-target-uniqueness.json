@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "joint-target-uniqueness",
+  "title": {
+    "zh": "共同实现测试下的目标唯一性",
+    "en": "Target uniqueness for joint tests"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F02",
+  "reviewed_at_utc": "2026-10-08T12:31:53.854610+00:00",
+  "claim": {
+    "zh": "若目标由含 together 的测试分离，与同一源位置完全同测的两个目标位置相等。",
+    "en": "If the target is separated by tests including together, two target positions agreeing with one source position on all tests are equal."
+  },
+  "hypotheses": [
+    {
+      "zh": "使用 ExplanatoryJointness 本地 Model、Test、Same 和 Separated。",
+      "en": "Uses the namespace-local ExplanatoryJointness Model, Test, Same and Separated."
+    }
+  ],
+  "correspondence": {
+    "zh": "together 检验整体的成对共同实现；不把分别成立当成共同实现。",
+    "en": "The together test concerns joint realization of a pair within a whole; separate truth is not joint realization."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean",
+  "aliases": [
+    "Generative.ExplanatoryJointness.same_target_unique"
+  ],
+  "dependencies": [],
+  "related": [
+    {
+      "id": "branching-target-uniqueness",
+      "detail": {
+        "zh": "保留不同测试语义，不按相同声明外形合并。",
+        "en": "Retain distinct test semantics rather than merging by header shape."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINTNESS-INTEGRATION.md",
+      "detail": {
+        "zh": "完整部分测试轮廓可能不能识别指定部分是否重复使用同一支持。",
+        "en": "Even complete part profiles may fail to identify whether designated parts reuse the same support."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "唯一性小引理不独自证明共同计划恢复或任意指定部分可替换；相关反例保留在研究中。",
+    "en": "This uniqueness lemma alone proves neither joint-plan recovery nor arbitrary substitution of designated parts; the study retains the latter boundary."
+  },
+  "validation_scope": {
+    "zh": "复用所列既有 Lean 回执；本次仅审读源码、核对声明及回执哈希对应，未重新编译。",
+    "en": "Credits the linked existing Lean receipt. This migration reads source and checks declaration presence and receipt hash binding; it does not rerun Lean."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean",
+      "role": "proof",
+      "sha256": "18f745f8ef8bae379e3fadcf059a68c529caa5af4453adc469182148e4fa4e4f",
+      "declarations": [
+        "Generative.ExplanatoryJointness.same_target_unique"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-jointness-checks/20261008T082735.042695Z/receipt.json",
+      "role": "receipt",
+      "sha256": "aa8a37f8bf4539f5d3e90986a1e0a74fdf9568cacc1b1438a2421f3721d6f420",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINTNESS-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "3fd90975012d16823b2f972d5bdd5cf0f6ffc1c4b4c967a8dac10371e6351ab7",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md",
+      "role": "provenance",
+      "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-jointness-checks/20261008T082735.042695Z/receipt.json",
+      "sha256_pointer": "/modules/9/sha256",
+      "success_pointer": "/passed",
+      "success_value": true
+    }
+  ],
+  "next_delta": {
+    "zh": "使用共同语言时复用；具体部分替换或全局并发另需对应。",
+    "en": "Reuse for the joint language; designated-part substitution or global concurrency requires further correspondence."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
+      "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "id": "exclusive-footprint-support",
+  "title": {
+    "zh": "局部排他支持推至全部叶项",
+    "en": "Exclusive footprints support all leaves"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F02",
+  "reviewed_at_utc": "2026-10-08T12:31:53.854610+00:00",
+  "claim": {
+    "zh": "若共同分解的子支持包含于父支持且彼此排他，已实现计划的全部叶项请求无重复并受根支持覆盖。",
+    "en": "If child footprints lie within the parent and are mutually exclusive, every realized plan’s combined leaf requests are duplicate-free and covered by the root footprint."
+  },
+  "hypotheses": [
+    {
+      "zh": "Within F J、Separate F J 与 Realizes J (Supported F) s p。",
+      "en": "Within F J, Separate F J, and Realizes J (Supported F) s p."
+    }
+  ],
+  "correspondence": {
+    "zh": "资源身份与排他性是局部模型前提，不是生成的一般原语。",
+    "en": "Resource identity and exclusivity are local model premises, not universal primitives of generativity."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFootprints.lean",
+  "aliases": [
+    "Generative.ExplanatoryFootprints.realized_requests_supported"
+  ],
+  "dependencies": [],
+  "related": [
+    {
+      "id": "aggregate-exit-funding",
+      "detail": {
+        "zh": "同一共同支持问题的不同表达，不计作已证明的相互推广。",
+        "en": "Different representations of shared support; neither is registered as a proved generalization of the other."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFootprints.lean",
+      "detail": {
+        "zh": "这里只从已实现计划推得支持；一般反向实现不能省去额外结构。",
+        "en": "This direction derives support from a realized plan; converse realization cannot omit additional structure."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "这里只从已实现计划推得支持；一般反向实现不能省去额外结构。",
+    "en": "This direction derives support from a realized plan; converse realization cannot omit additional structure."
+  },
+  "validation_scope": {
+    "zh": "复用所列既有 Lean 回执；本次仅审读源码、核对声明及回执哈希对应，未重新编译。",
+    "en": "Credits the linked existing Lean receipt. This migration reads source and checks declaration presence and receipt hash binding; it does not rerun Lean."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFootprints.lean",
+      "role": "proof",
+      "sha256": "dc6ce537f5fabb729327b28194fc9bc06cf98b47ba76ecf3f32324e00857ecc9",
+      "declarations": [
+        "Generative.ExplanatoryFootprints.realized_requests_supported"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-global-realization-checks/20261008T085919.976102Z/receipt.json",
+      "role": "receipt",
+      "sha256": "873e0ce7f081927642f2629954ab05c6294f57efecf1e5a50a4d889b89335650",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md",
+      "role": "provenance",
+      "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFootprints.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-global-realization-checks/20261008T085919.976102Z/receipt.json",
+      "sha256_pointer": "/modules/10/sha256",
+      "success_pointer": "/passed",
+      "success_value": true
+    }
+  ],
+  "next_delta": {
+    "zh": "嵌套排他请求复用；更改为可共享、可更新支持时须新说明。",
+    "en": "Reuse for nested exclusive requests; sharing or renewal requires a new account."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
+      "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+    }
+  ]
+}

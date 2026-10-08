@@ -1,5 +1,7 @@
 # Root-foundation review package
 
+**成果登记与贡献流程 / Canonical records and contribution workflow，2026-10-08。** [登记表](../../../../theories/shengsheng-buxi-generative-existence/results/RESULT-REGISTER.md)把首批具体主张、复用别名、前提、证据和反例接到单一 JSON 记录；[流程](../../../RESULT-WORKFLOW.md)说明如何扩展、应用、组合或反驳。[生成／检查器](build_result_registry.py)与[检查器测试](test_result_registry.py)不新增 Lean 证明，也不自动更新科学回执。
+
 **维护参照纠错 / Maintenance reference correction，2026-10-08。** [论证、4项新定理／13项审计及反审](MAINTENANCE-BASELINE-INTEGRATION.md)检查干预后重算目标的空过关，以及真实交付后退役；21项导入定理／55项审计分列。/ Existing J3, risk-reference and changing-execution results are credited; this is a scoped correspondence correction.
 
 **First-order truth and native uniqueness, 8 October 2026.** [Integration](EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md): 33 new checked theorems / 180 audits. All finite identity/step/joint formulas agree between wholly generated nonisomorphic worlds. One coherent elementary embedding still fails coverage; adding coverage gives an isomorphism. The exact inference has a proved counterexample; uniqueness of a universal generative foundation remains open.

@@ -1,5 +1,7 @@
 # SOURCES manifest
 
+**2026-10-08 — Result-centered repository coordination.** [Selected exact messages](15-codex-theory-conversations/2026-10-08-result-centered-repository.md) preserve Ren’s integration/overlap question, repository-structure diagnosis and instruction to commit all, finish, and check for arriving work. The record separates verbatim messages from the assistant’s implementation scope.
+
 **Universal uniqueness until a wall, 8 October 2026.** [Ren’s exact request](15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md#延续普遍唯一性直到遇到实质边界--continue-universal-uniqueness-until-a-wall) directs this return to uniqueness. [Source assessment](../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md#7-existing-mathematics-and-primary-source-assessment) credits Moosa’s author-hosted notes, Example 6.12 and the discussion after Proposition 6.19, for established infinite-set model theory; Cantor diagonalization is checked locally. Link-only reading, no full-source review, source import or mathematical priority claim.
 
 **Individuation comparison, 8 October 2026.** [Reading scope and assessment](../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md#21-can-individuation-ground-the-law-through-formation-itself) records the newly examined Simondon translation. Link-only; no original bytes imported or foundational postulate adopted.

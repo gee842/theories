@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "id": "joint-plan-composition",
+  "title": {
+    "zh": "局部方案的共同接续",
+    "en": "Joint continuation of local plans"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F02",
+  "reviewed_at_utc": "2026-10-08T12:31:53.854610+00:00",
+  "claim": {
+    "zh": "真实共同作用可投影到局部作用、初始证据覆盖、各局部方案成功且递推共同可实施时，配对方案保持两项终点要求。",
+    "en": "When joint effects project to local effects, initial evidence covers projections, both local plans work and recursive joint executability holds, the zipped plan achieves both endpoint requirements."
+  },
+  "hypotheses": [
+    {
+      "zh": "共同历史 X 的两个投影、同一有限步数；project、初始覆盖、两份 works 及 compatible。",
+      "en": "Two projections of one history X, a common finite horizon, project, initial coverage, both local works hypotheses and compatible."
+    }
+  ],
+  "correspondence": {
+    "zh": "共同活动造成的实际作用必须仍在局部规律中；每个后续记录分支都需可执行。",
+    "en": "Actual joint effects must remain covered by local laws; every subsequent observation branch must be executable."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean",
+  "aliases": [
+    "JointContinuation.joint_plan_composition"
+  ],
+  "dependencies": [],
+  "related": [
+    {
+      "id": "aggregate-exit-funding",
+      "detail": {
+        "zh": "共同耗尽关联不等于已证明的类型转换。",
+        "en": "The shared depletion issue does not establish a proved type translation."
+      }
+    },
+    {
+      "id": "exclusive-footprint-support",
+      "detail": {
+        "zh": "共同方案有时间和观察条件，不能由静态叶项支持自动导出。",
+        "en": "Joint plans have timing and observation conditions not automatically supplied by static leaf support."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean",
+      "detail": {
+        "zh": "同一二单位储备上两份两步局部方案会在共同第二步失败；单独成功和改成先后都不自动修复。",
+        "en": "Two locally successful two-step plans on the same two-unit reserve fail at the second joint step; separate success or serialization alone does not repair this."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "同一二单位储备上两份两步局部方案会在共同第二步失败；单独成功和改成先后都不自动修复。",
+    "en": "Two locally successful two-step plans on the same two-unit reserve fail at the second joint step; separate success or serialization alone does not repair this."
+  },
+  "validation_scope": {
+    "zh": "复用所列既有 Lean 回执；本次仅审读源码、核对声明及回执哈希对应，未重新编译。",
+    "en": "Credits the linked existing Lean receipt. This migration reads source and checks declaration presence and receipt hash binding; it does not rerun Lean."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean",
+      "role": "proof",
+      "sha256": "e3ef0f5a62365fb29dc2adbd36b3552b17ac85a010905013daefe8ffb3671a30",
+      "declarations": [
+        "JointContinuation.joint_plan_composition",
+        "JointContinuation.joint_second_step_fails",
+        "JointContinuation.serialization_without_renewal_fails"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/joint-continuation-verification.json",
+      "role": "receipt",
+      "sha256": "b94ff50ff09ef8ea75fecdad00eacc59ed838303bebf9acbf8dd8a85d26b8cef",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-CONTINUATION-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "7a9a1db3adcaf7d4b1f18ebff8b3c8d7fa6c360818c7ecf86a04a8a8b197bf70",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md",
+      "role": "provenance",
+      "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/joint-continuation-verification.json",
+      "sha256_pointer": "/modules/1/source_sha256",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "复用一般组合定理；应用需证明实际 project 与 compatible，不能只链接两份局部证明。",
+    "en": "Reuse the composition theorem; applications must establish actual project and compatible, not merely link two local proofs."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
+      "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+    }
+  ]
+}
