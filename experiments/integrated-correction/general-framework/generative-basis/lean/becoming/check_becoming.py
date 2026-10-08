@@ -5,6 +5,12 @@ Resolves the import closure of the spine modules, requires every inherited modul
 current bytes to match a passed receipt, compiles the closure in dependency order with
 Lean 4.29.1, audits the axioms of every declaration, and requires an empty axiom report
 for every declaration of the spine modules. Inherited reports are recorded, not changed.
+
+The core is pure: its import closure is exactly the foundation and the core modules,
+every declaration in that closure has an empty axiom report, and the closure compiles
+from Lean's prelude alone (the foundation's `import Std` line is removed for that run).
+The bridge imports existing modules to show their interfaces are the spine's; nothing
+in the core imports it.
 """
 from datetime import datetime, timezone
 import json
@@ -21,8 +27,13 @@ LEAN_ROOT = HERE.parent
 sys.path.insert(0, str(LEAN_ROOT / "universal-ethics" / "generative-capacity"))
 import check as audit_support  # noqa: E402
 
-# Spine modules in this directory, in layer order.
-SPINE = ["BecomingFrame", "BecomingModal", "BecomingRenewal", "MetaethicalCore", "BecomingInstances"]
+# The foundation the core builds on (L0 and its two direct companions).
+FOUNDATION = ["GenerativeCore", "InquirySufficiency", "RelationalRenewal"]
+# Spine modules in this directory, in layer order: the core, then the bridge.
+CORE = ["BecomingFrame", "BecomingModal", "BecomingRenewal", "MetaethicalCore"]
+BRIDGE = ["BecomingInstances"]
+SPINE = CORE + BRIDGE
+PURE = FOUNDATION + CORE
 RECEIPT = HERE / "becoming-verification.json"
 RETAINED = HERE / "becoming-checks"
 
@@ -37,7 +48,8 @@ SCOPE = (
     "Metaethical core: on a connected whole with some living claim, significance of every living claim "
     "from every standpoint (G0 at claim level) is equivalent to a seed together with relational and "
     "standpoint neutrality; the positioned articulation D follows from the articulation premise A; a "
-    "sound inquiry for new living content gives every position with access a contributory reason. "
+    "sound inquiry for new living content gives every position with access a contributory reason; "
+    "G0, C, D and the secured positive ground are stated in the core, which imports no ethics module. "
     "Each of seed, relational neutrality, standpoint neutrality, connection and A has a consistent "
     "countermodel, and each rival satisfies the same rule inside a formed boundary. The lifting rule L "
     "is transitive only through a live middle response. No premise is proved, no rejecting position is "
@@ -45,7 +57,9 @@ SCOPE = (
     "a condition in which every living formation participates discharges connection, and without one "
     "connection can fail; consumption is a formed relation, so under N_rel valuing a consuming "
     "formation's activity reaches the living events of the formation it consumes. "
-    "Instances: seed-edge closures and evaluator chains are reachability on the edge process; a "
+    "Instances: the core's G0, C, D, secured ground and relational living are by definition those of "
+    "the existing modules, and J1/J2 on configurations is PracticalJudgment.Better; "
+    "seed-edge closures and evaluator chains are reachability on the edge process; a "
     "frame's reachable configurations form a joint-continuation space whose bundles step-preserving "
     "maps carry and lifting summaries reflect; robust responses, guarantees, live steps and evidence "
     "narrowing by a rule list are common responses, one-step completion, enabledness and After on a "
@@ -75,7 +89,7 @@ def imports_of(data):
     return [m.strip() for m in re.findall(r"^import\s+(.+)$", code, re.M) if m.strip() != "Std"]
 
 
-def closure(index):
+def closure(index, roots=SPINE):
     order, seen = [], set()
 
     def visit(name, stack):
@@ -89,7 +103,7 @@ def closure(index):
         seen.add(name)
         order.append(name)
 
-    for name in SPINE:
+    for name in roots:
         visit(name, [])
     return order
 
@@ -113,7 +127,7 @@ def declarations(data):
 
 
 CONTROLS = """import BecomingInstances
-open Becoming Generative Generative.InquirySufficiency PositionedPositiveReason
+open Becoming Generative Generative.InquirySufficiency
 
 -- The full premise set is consistent: the model satisfies seed, both neutralities and connection.
 example : (Model.valuation Model.linked (fun _ _ => True)).Grounds :=
@@ -173,6 +187,7 @@ def main():
     retained.mkdir(parents=True, exist_ok=False)
     index = module_index()
     order = closure(index)
+    core_closure = closure(index, CORE)
     paths = {name: index[name][0] for name in order}
     sources = {name: paths[name].read_bytes() for name in order}
     helpers = {p.name: p.read_bytes() for p in [Path(__file__), LEAN_ROOT / "universal-ethics" / "generative-capacity" / "check.py"]}
@@ -184,6 +199,8 @@ def main():
         "status": "checking", "utc": stamp, "toolchain": audit_support.TOOLCHAIN,
         "retained_run": str(retained.relative_to(HERE)),
         "spine_modules": SPINE,
+        "core_modules": CORE, "foundation_modules": FOUNDATION, "bridge_modules": BRIDGE,
+        "core_closure": core_closure,
         "compile_order": order,
         "source_paths": {name: str(paths[name].relative_to(LEAN_ROOT)) for name in order},
         "source_sha256": {name: audit_support.digest(data) for name, data in sources.items()},
@@ -191,6 +208,7 @@ def main():
         "scope": SCOPE,
     }
     try:
+        assert sorted(core_closure) == sorted(PURE), ("core imports outside the core", core_closure)
         inherited = [name for name in order if name not in SPINE]
         receipts = passed_receipts()
         matches = {}
@@ -207,10 +225,10 @@ def main():
         records = []
         with tempfile.TemporaryDirectory(prefix="becoming-spine-lean-") as scratch:
             work = Path(scratch)
-            env = {**os.environ, "LEAN_PATH": str(work)}
 
-            def run(args, log):
-                p = subprocess.run(command + args, cwd=work, env=env, text=True,
+            def run(args, log, where=work):
+                env = {**os.environ, "LEAN_PATH": str(where)}
+                p = subprocess.run(command + args, cwd=where, env=env, text=True,
                                    stdout=subprocess.PIPE, stderr=subprocess.STDOUT, timeout=600)
                 (retained / log).write_text(p.stdout)
                 assert p.returncode == 0, p.stdout
@@ -238,7 +256,7 @@ def main():
                         assert match, (full, output)
                         axioms = [a.strip() for a in match[1].split(",") if a.strip()]
                     assert set(axioms) <= {"propext", "Quot.sound", "Classical.choice"}, (full, axioms)
-                    assert name not in SPINE or not axioms, (full, axioms)
+                    assert name not in SPINE + PURE or not axioms, (full, axioms)
                     dependencies[full] = axioms
                 if name in SPINE:
                     signatures = "import " + name + "\n" + "\n".join(
@@ -248,6 +266,8 @@ def main():
                     run([name + "Signatures.lean"], name + "Signatures.log")
                 records.append({
                     "module": name, "spine": name in SPINE,
+                    "layer": ("foundation" if name in FOUNDATION else "core" if name in CORE
+                              else "bridge" if name in BRIDGE else "inherited"),
                     "theorems": sum(x["kind"] == "theorem" for x in registry[name]),
                     "declarations": registry[name], "axiom_dependencies": dependencies,
                     "kernel_checked": True,
@@ -255,6 +275,13 @@ def main():
             (work / "Controls.lean").write_text(CONTROLS)
             (retained / "Controls.lean").write_text(CONTROLS)
             run(["Controls.lean"], "Controls.log")
+            # The core needs nothing beyond Lean's prelude.
+            bare = work / "prelude-only"
+            bare.mkdir()
+            for name in core_closure:
+                (bare / (name + ".lean")).write_text(re.sub(r"^import Std\n", "", sources[name].decode(), flags=re.M))
+                run(["-o", name + ".olean", name + ".lean"], name + "PreludeOnly.log", bare)
+            receipt["core_compiles_from_prelude"] = True
             receipt["checked_application_examples"] = [
                 {"claim": "the full premise set has a model", "kernel_checked": True, "counted_as_new_theorem": False},
                 {"claim": "universal_reason has a nonvacuous instance on a one-step frame", "kernel_checked": True, "counted_as_new_theorem": False},
@@ -281,6 +308,9 @@ def main():
     spine = [r for r in records if r["spine"]]
     print(json.dumps({
         "status": receipt["status"],
+        "core_closure": core_closure,
+        "core_axioms": sorted({a for r in records if r["layer"] in ("foundation", "core")
+                               for aa in r["axiom_dependencies"].values() for a in aa}),
         "spine_theorems": {r["module"]: r["theorems"] for r in spine},
         "spine_declaration_audits": sum(len(r["declarations"]) for r in spine),
         "inherited_modules": len(records) - len(spine),

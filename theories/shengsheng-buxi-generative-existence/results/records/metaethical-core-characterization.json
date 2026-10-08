@@ -51,31 +51,7 @@
     "Becoming.Model.articulation_neutrality_is_needed",
     "Becoming.Scope.secures"
   ],
-  "dependencies": [
-    {
-      "id": "positioned-positive-reason",
-      "relation": "formal-reuse",
-      "detail": {
-        "zh": "universal_reason 直接调用 every_situated_position_has_reason；其前提 D 由 positioned_articulation_of_articulates 从 A 推出，所需 G0 由 significant_of_grounds 从种子、N_rel、N_std 推出。",
-        "en": "universal_reason directly calls every_situated_position_has_reason; its premise D is derived from A by positioned_articulation_of_articulates, and its G0 from seed, N_rel and N_std by significant_of_grounds."
-      },
-      "interface": {
-        "output": {
-          "zh": "对任一位置、任一回应：有通达且回应在所见范围上确保正面新内容，即有一项支持理由。",
-          "en": "For any position and response: access and secured positive new content on the scope supply a contributory reason."
-        },
-        "input": {
-          "zh": "PositionedArticulation access admitted before positive Reason，positive 取不带索引的意义 ∀ p, sig p c。",
-          "en": "PositionedArticulation access admitted before positive Reason, with positive the unindexed significance ∀ p, sig p c."
-        },
-        "conditions": {
-          "zh": "所见范围取 Scope（sound 策略的实际执行端点）；库存取框架在 living 读法下的状态库存。",
-          "en": "Admitted continuations are Scope (endpoints of actual executions of a sound policy); the inventory is the frame's state inventory under the `living` reading."
-        },
-        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean"
-      }
-    }
-  ],
+  "dependencies": [],
   "related": [
     {
       "id": "self-good-reachable-g0",
@@ -110,6 +86,13 @@
       "detail": {
         "zh": "解释关联：承受者一侧的 N_rel 阻止“自身谱系”边界取消人类的意义；正面性不带权重，与强烈偏倚相容，权重仍由 J 承担。",
         "en": "Interpretive connection: patient-side N_rel blocks a lineage boundary from cancelling human significance; positivity carries no weight and is compatible with strong partiality, so weights remain with J."
+      }
+    },
+    {
+      "id": "positioned-positive-reason",
+      "detail": {
+        "zh": "核心自己陈述 D 与确保的正面根据；桥接层的 positionedArticulation_iff 与 securesPositiveGround_iff 表明它们就是该结果的定义，因此 every_situated_position_has_reason 等定理直接适用。universal_reason 在核心内以同样两步证明，不调用它。",
+        "en": "The core states D and the secured positive ground itself; the bridge's positionedArticulation_iff and securesPositiveGround_iff show that they are that result's definitions, so every_situated_position_has_reason and its companions apply directly. universal_reason is proved in the core by the same two steps without calling it."
       }
     }
   ],
@@ -155,14 +138,14 @@
     "en": "Proves none of S0, N, A, C, L or J, binds no position rejecting them, and does not treat the value of bringing new lives into existence. A contributory reason is not a duty or ranking and predicts no recognition or compliance. Sidgwick's dualism of practical reason is not dissolved; it is located at the boundary-neutrality premise."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查。本结果所在的 MetaethicalCore（不含其后加的读法一节，见 becoming-renewal-reading）、BecomingModal、BecomingFrame 共有 20、5、11 项定理，全部空依赖；同一回执共 5 个脊柱模块 75 项定理／137 项声明审计。检查器要求脊柱模块无任何公理依赖，并要求 15 个继承模块的当前字节与某张已通过回执一致；继承模块的 propext、Quot.sound、Classical.choice 依赖另列，未迁移。控制例不计为新定理。作者自审，尚无独立反审。",
-    "en": "Successful Lean 4.29.1 consolidated check. This result's MetaethicalCore (excluding the later reading section, see becoming-renewal-reading), BecomingModal and BecomingFrame have 20, 5 and 11 theorems, all with empty axiom reports; the same receipt covers 5 spine modules with 75 theorems/137 declaration audits. The checker requires the spine to have no axiom dependency and each of the 15 inherited modules' current bytes to match a passed receipt; inherited propext, Quot.sound and Classical.choice dependencies are listed separately and not migrated. Controls are not counted as new theorems. Author's review only; no independent review yet."
+    "zh": "Lean 4.29.1 合并检查器成功实查。本结果所在的 MetaethicalCore（不含其后加的读法一节，见 becoming-renewal-reading）、BecomingModal、BecomingFrame 共有 20、5、11 项定理，全部空依赖；同一回执共 5 个脊柱模块 80 项定理／146 项声明审计。检查器要求脊柱模块无任何公理依赖，并要求 15 个继承模块的当前字节与某张已通过回执一致；继承模块的 propext、Quot.sound、Classical.choice 依赖另列，未迁移。控制例不计为新定理。作者自审，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal 与 L1–L4）的导入闭包恰为这 7 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check. This result's MetaethicalCore (excluding the later reading section, see becoming-renewal-reading), BecomingModal and BecomingFrame have 20, 5 and 11 theorems, all with empty axiom reports; the same receipt covers 5 spine modules with 80 theorems/146 declaration audits. The checker requires the spine to have no axiom dependency and each of the 15 inherited modules' current bytes to match a passed receipt; inherited propext, Quot.sound and Classical.choice dependencies are listed separately and not migrated. Controls are not counted as new theorems. Author's review only; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal and L1–L4) is exactly these 7 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean",
       "role": "proof",
-      "sha256": "afd2ddd2a4b9ee90963d84c11a55833aed18d20ba0627af3dd3a80e443799889",
+      "sha256": "32e5e64d27dca7c151f4f08c71dddbbde9cfe22a25ebfcea3ce5c4ae131ab898",
       "declarations": [
         "Becoming.Neutral.within",
         "Becoming.Valuation.seed_of_selfGood",
@@ -183,7 +166,10 @@
         "Becoming.Model.no_relation_into_beyond",
         "Becoming.Model.isolated",
         "Becoming.Model.connection_is_needed",
-        "Becoming.Model.articulation_neutrality_is_needed"
+        "Becoming.Model.articulation_neutrality_is_needed",
+        "Becoming.G0",
+        "Becoming.SecuresPositiveGround",
+        "Becoming.PositionedArticulation"
       ]
     },
     {
@@ -215,25 +201,6 @@
       ]
     },
     {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean",
-      "role": "proof",
-      "sha256": "95cf5800f6827d1896cac186113cccf9561768693c6d6e867a3626cd04fc8408",
-      "declarations": [
-        "PositionedPositiveReason.every_situated_position_has_reason",
-        "PositionedPositiveReason.PositionedArticulation",
-        "PositionedPositiveReason.SecuresPositiveGround"
-      ]
-    },
-    {
-      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
-      "role": "proof",
-      "sha256": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
-      "declarations": [
-        "GenerativeComparison.G0",
-        "GenerativeComparison.ComparisonPrinciple"
-      ]
-    },
-    {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/InquirySufficiency.lean",
       "role": "proof",
       "sha256": "d4a95ca842f46ffa9c23eea92d04cdb45027dc6842148d3d0bdc17cd65ad18f2",
@@ -255,13 +222,13 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "aa40411be42045f949a6e0264fc3e419538734e49b9cdcaadb8e1c8e95b1f807",
+      "sha256": "d3278a00c62378bbb5dc026b882091d6f63b75375351570b9f62f7fa0ceb6aa1",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "92a95746cb629629221d2a075c5391dd98de6522f9d7a1a8268493e4350616f9",
+      "sha256": "0a30805045b474a848bcc58c7ff7ae80647be906907b2d3957bbfa5a8c3e0911",
       "declarations": []
     },
     {
@@ -274,6 +241,12 @@
       "path": "sources/15-codex-theory-conversations/2026-10-09-one-theory-unification.md",
       "role": "provenance",
       "sha256": "054c09c4d17c281d401795a90330f5a7c353827b12ec06f73820dd9055c52b41",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-09-pure-core.md",
+      "role": "provenance",
+      "sha256": "176dab59cfaf8e877810861694177b48767e83a53f3624043c0d64021a853fab",
       "declarations": []
     }
   ],
@@ -296,20 +269,6 @@
       "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingFrame.lean",
       "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "sha256_pointer": "/source_sha256/BecomingFrame",
-      "success_pointer": "/status",
-      "success_value": "passed"
-    },
-    {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
-      "sha256_pointer": "/source_sha256/PositionedPositiveReason",
-      "success_pointer": "/status",
-      "success_value": "passed"
-    },
-    {
-      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
-      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
-      "sha256_pointer": "/source_sha256/GenerativeComparison",
       "success_pointer": "/status",
       "success_value": "passed"
     },
@@ -344,6 +303,10 @@
     {
       "zh": "2026-10-09（P3b）：MetaethicalCore 增加“关系读法”一节（属 becoming-renewal-reading），并导入 BecomingRenewal 与 RenewalComparison；本结果的声明未变，只更新哈希、检查范围计数与下一步。",
       "en": "2026-10-09 (P3b): MetaethicalCore gained the “relational reading” section (belonging to becoming-renewal-reading) and imports BecomingRenewal and RenewalComparison; this result's declarations are unchanged; only hashes, validation counts and the next step were updated."
+    },
+    {
+      "zh": "2026-10-09（P5a）：按 Ren“你说的脊柱，它不能有任何依赖，没有axiom，外围可以用任意你觉得最合适的工具，但是我们的core要优雅 纯净”，核心不再导入伦理模块：G0、C、D 与确保的正面根据在 MetaethicalCore 中陈述，桥接层以 Iff.rfl 证明它们就是既有定义；Frame.inventory、BetterAt 与 living_iff_relational 移入 BecomingInstances。已读差异：本结果的定理陈述与证明内容不变，哈希、位置与计数更新。",
+      "en": "2026-10-09 (P5a): following Ren's “你说的脊柱，它不能有任何依赖，没有axiom，外围可以用任意你觉得最合适的工具，但是我们的core要优雅 纯净”, the core no longer imports ethics modules: G0, C, D and the secured positive ground are stated in MetaethicalCore, and the bridge proves by Iff.rfl that they are the existing definitions; Frame.inventory, BetterAt and living_iff_relational moved to BecomingInstances. Diff read: this result's statements and proof content are unchanged; hashes, locations and counts updated."
     }
   ]
 }

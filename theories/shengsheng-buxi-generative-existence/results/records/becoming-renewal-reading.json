@@ -74,8 +74,8 @@
       "id": "relational-reading-comparison",
       "relation": "formal-reuse",
       "detail": {
-        "zh": "living_iff_relational 表明脊柱上的 living 就是该结果的 relationalInventory（取一条延续）。",
-        "en": "living_iff_relational shows that the spine's `living` is that result's relationalInventory (for one continuation)."
+        "zh": "桥接层的 living_iff_relational 表明脊柱上的 living 就是该结果的 relationalInventory（取一条延续）；核心不导入该结果。",
+        "en": "The bridge's living_iff_relational shows that the spine's `living` is that result's relationalInventory (for one continuation); the core does not import it."
       },
       "interface": {
         "output": {
@@ -91,7 +91,8 @@
           "en": "The family of continuations is one run."
         },
         "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean"
-      }
+      },
+      "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingInstances.lean"
     },
     {
       "id": "metaethical-core-characterization",
@@ -168,8 +169,8 @@
     "en": "Proves none of S0, N, A, C, L or J and binds no position rejecting them. The unification of bounds is organizational, not new mathematics; ContinuationRenewal's well-founded form is not derived from the principle. The relational reading and the common-participation relation are disclosed reading choices; whether they are the right reading of 生生, and the empirical correspondence of common conditions, lie outside this result."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261008T203107.301650Z）：BecomingRenewal 6 项定理与 MetaethicalCore 读法一节 7 项定理全部空依赖；同一回执共 5 个脊柱模块 75 项定理／137 项声明审计，15 个继承模块的当前字节与已通过回执一致。控制例“有共同条件的运行在关系读法下连通”不计为新定理。作者反审见整合文档，尚无独立反审。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261008T203107.301650Z): BecomingRenewal's 6 theorems and the 7 theorems of MetaethicalCore's reading section all have empty axiom reports; the same receipt covers 5 spine modules with 75 theorems/137 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The control that a run with a common condition is connected under the relational reading is not counted. The author's counterreview is in the integration note; no independent review yet."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261008T203107.301650Z）：BecomingRenewal 6 项定理与 MetaethicalCore 读法一节 6 项定理及桥接层的 living_iff_relational全部空依赖；同一回执共 5 个脊柱模块 80 项定理／146 项声明审计，15 个继承模块的当前字节与已通过回执一致。控制例“有共同条件的运行在关系读法下连通”不计为新定理。作者反审见整合文档，尚无独立反审。检查器另核对核心纯净：核心（GenerativeCore、InquirySufficiency、RelationalRenewal 与 L1–L4）的导入闭包恰为这 7 个模块，其中每条声明的公理报告为空，并且只用 Lean 内置前导即可编译（基础模块的 import Std 在该次编译中去掉）。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261008T203107.301650Z): BecomingRenewal's 6 theorems and the 6 theorems of MetaethicalCore's reading section with the bridge's living_iff_relational all have empty axiom reports; the same receipt covers 5 spine modules with 80 theorems/146 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The control that a run with a common condition is connected under the relational reading is not counted. The author's counterreview is in the integration note; no independent review yet. The checker also verifies core purity: the import closure of the core (GenerativeCore, InquirySufficiency, RelationalRenewal and L1–L4) is exactly these 7 modules, every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone (the foundation's import Std removed for that run)."
   },
   "references": [
     {
@@ -190,10 +191,9 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean",
       "role": "proof",
-      "sha256": "afd2ddd2a4b9ee90963d84c11a55833aed18d20ba0627af3dd3a80e443799889",
+      "sha256": "32e5e64d27dca7c151f4f08c71dddbbde9cfe22a25ebfcea3ce5c4ae131ab898",
       "declarations": [
         "Becoming.Conditions.valuation",
-        "Becoming.Conditions.living_iff_relational",
         "Becoming.Conditions.connected_of_common",
         "Becoming.Conditions.significant_iff_of_common",
         "Becoming.Conditions.consumption_relates",
@@ -201,6 +201,14 @@
         "Becoming.Separate.not_connected",
         "Becoming.Valuation.significant_iff",
         "Becoming.Valuation.transmits"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingInstances.lean",
+      "role": "proof",
+      "sha256": "049480d59e0e5d96b26d6ba6e7c469ceea034b08b9b7b92b3ad9a327f8a503f4",
+      "declarations": [
+        "Becoming.Conditions.living_iff_relational"
       ]
     },
     {
@@ -236,7 +244,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "aa40411be42045f949a6e0264fc3e419538734e49b9cdcaadb8e1c8e95b1f807",
+      "sha256": "d3278a00c62378bbb5dc026b882091d6f63b75375351570b9f62f7fa0ceb6aa1",
       "declarations": []
     },
     {
@@ -248,13 +256,19 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "92a95746cb629629221d2a075c5391dd98de6522f9d7a1a8268493e4350616f9",
+      "sha256": "0a30805045b474a848bcc58c7ff7ae80647be906907b2d3957bbfa5a8c3e0911",
       "declarations": []
     },
     {
       "path": "sources/15-codex-theory-conversations/2026-10-09-one-theory-unification.md",
       "role": "provenance",
       "sha256": "054c09c4d17c281d401795a90330f5a7c353827b12ec06f73820dd9055c52b41",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-09-pure-core.md",
+      "role": "provenance",
+      "sha256": "176dab59cfaf8e877810861694177b48767e83a53f3624043c0d64021a853fab",
       "declarations": []
     }
   ],
@@ -293,6 +307,13 @@
       "sha256_pointer": "/source_sha256/RenewalComparison",
       "success_pointer": "/status",
       "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingInstances.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/BecomingInstances",
+      "success_pointer": "/status",
+      "success_value": "passed"
     }
   ],
   "next_delta": {
@@ -303,6 +324,10 @@
     {
       "zh": "2026-10-09：应 Ren“你自己全改了吧……先更新好计划，然后再一步步完整完成，保持代码和整体结构优雅”新增，作为整合计划 P3b，并完成 metaethical-core-characterization 的下一步（living 与 related 的动力学来源）。",
       "en": "2026-10-09: added following Ren's “你自己全改了吧……先更新好计划，然后再一步步完整完成，保持代码和整体结构优雅”, as P3b of the unification plan, completing the next step of metaethical-core-characterization (a dynamic source for `living` and `related`)."
+    },
+    {
+      "zh": "2026-10-09（P5a）：按 Ren“你说的脊柱，它不能有任何依赖，没有axiom，外围可以用任意你觉得最合适的工具，但是我们的core要优雅 纯净”，核心不再导入伦理模块：G0、C、D 与确保的正面根据在 MetaethicalCore 中陈述，桥接层以 Iff.rfl 证明它们就是既有定义；Frame.inventory、BetterAt 与 living_iff_relational 移入 BecomingInstances。已读差异：本结果的定理陈述与证明内容不变，哈希、位置与计数更新。",
+      "en": "2026-10-09 (P5a): following Ren's “你说的脊柱，它不能有任何依赖，没有axiom，外围可以用任意你觉得最合适的工具，但是我们的core要优雅 纯净”, the core no longer imports ethics modules: G0, C, D and the secured positive ground are stated in MetaethicalCore, and the bridge proves by Iff.rfl that they are the existing definitions; Frame.inventory, BetterAt and living_iff_relational moved to BecomingInstances. Diff read: this result's statements and proof content are unchanged; hashes, locations and counts updated."
     }
   ]
 }

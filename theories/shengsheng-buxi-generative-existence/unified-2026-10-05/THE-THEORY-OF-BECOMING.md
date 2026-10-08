@@ -314,7 +314,7 @@ The Becoming layer can supply `living` (the relational reading) and `related` (p
 
 ### 6.5 比较、提升与实践判断 / Comparison, lifting and practical judgment
 
-**C 与 J。** C 在框架的配置上陈述；J1/J2 的“先基本条件、再活的增益”由 `BetterAt` 陈述（[practical-judgment-g0-j](../results/records/practical-judgment-g0-j.md)）。
+**C 与 J。** C 在框架的配置上陈述；J1/J2 的“先基本条件、再活的增益”由桥接层的 `BetterAt` 陈述（[practical-judgment-g0-j](../results/records/practical-judgment-g0-j.md)）。
 
 **L 是被整合暴露出来的隐藏前提。** 情境给每个回应一个结果，过程却可以有多个结果；只要对回应作比较，就需要一条提升规则。在保守的 L 下：
 
@@ -376,18 +376,22 @@ It proves none of S0, N, A, C, L or J, binds no rejecting position, and does not
 
 All new formal results are stated on one spine; when it cannot express a result, the spine is extended rather than another model built. Existing generic modules are instantiated, not copied.
 
+**核心纯净 / A pure core.** 按 [Ren 的要求](../../../sources/15-codex-theory-conversations/2026-10-09-pure-core.md)，核心（L0 及其两个基础模块，加 L1–L4）不导入核心以外的任何模块，其中每条声明的公理报告为空，并且只用 Lean 的内置前导即可编译；检查器每次都检查这三点。G0、C、D 与确保的正面根据在核心中陈述一次；桥接层证明既有模块的定义就是这些，依存方向从外围指向核心。外围可用任何合适的工具（Mathlib、Python）。
+
+The core (L0 with its two foundation modules, and L1–L4) imports nothing outside itself; every declaration in it has an empty axiom report, and it compiles from Lean's prelude alone. The checker verifies all three on every run. The bridge proves that existing modules' definitions are the core's; dependence runs from the periphery to the core, which may use any suitable tool.
+
 | 层 / Layer | 模块 | 内容 | 定理 |
 |---|---|---|---:|
 | L0 | `GenerativeCore` | 过程、轨迹及其组合、传递 | 继承 |
 | L1 | [BecomingFrame](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingFrame.lean) | 框架、运行、可达、不变量、新实现 | 11 |
 | L2 | [BecomingModal](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingModal.lean) | 所见范围；可靠策略确保其目标 | 5 |
 | L3 | [BecomingRenewal](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingRenewal.lean) | 运行上的更新／消耗；一条下降原则 | 6 |
-| L4 | [MetaethicalCore](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean) | 前提卡、G0 刻画、极小性、普遍理由、关系读法 | 27 |
-| 桥接 / Bridges | [BecomingInstances](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingInstances.lean) | 既有接口是脊柱的实例；比较经 L 推广 | 26 |
+| L4 | [MetaethicalCore](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean) | 前提卡、G0 刻画、极小性、普遍理由、关系读法 | 26 |
+| 桥接 / Bridges | [BecomingInstances](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingInstances.lean) | 既有接口是脊柱的实例；核心定义即既有定义；J1/J2 的 `BetterAt`；比较经 L 推广 | 32 |
 
-[合并检查器](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py)与[回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)覆盖 75 项定理、137 项声明审计，公理报告全部为空；15 个继承模块的当前字节须与已通过的回执一致。方向与计划见[统一计划](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md)。
+[合并检查器](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/check_becoming.py)与[回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json)覆盖 80 项定理、146 项声明审计，公理报告全部为空；15 个继承模块的当前字节须与已通过的回执一致。方向与计划见[统一计划](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md)。
 
-The consolidated checker and receipt cover 75 theorems and 137 declaration audits, all with empty axiom reports. The current bytes of 15 inherited modules must match passed receipts.
+The consolidated checker and receipt cover 80 theorems and 146 declaration audits, all with empty axiom reports. The current bytes of 15 inherited modules must match passed receipts.
 
 ## 10. 术语表 / Glossary
 

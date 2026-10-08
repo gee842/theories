@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "utc": "2026-10-08T20:32:10Z",
+  "utc": "2026-10-08T21:22:35Z",
   "criterion": "A module in universal-ethics, generative-capacity or evolution-connectionism with a theorem whose signature has an explicit type binder, or with a type variable (plan §1).",
   "census": {
     "modules": 45,
@@ -41,10 +41,10 @@
   },
   "spine_receipt": {
     "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
-    "sha256": "aa40411be42045f949a6e0264fc3e419538734e49b9cdcaadb8e1c8e95b1f807",
-    "utc": "20261008T203107.301650Z"
+    "sha256": "b697c249bde83147b1e2152aef65bee30c5448480605056e10102a316c409829",
+    "utc": "20261008T212046.845736Z"
   },
-  "checker_sha256": "4621cef4048cfd30c0acea2e5e77cbb90f383dcc8caa1ca6704118ce9f960c94",
+  "checker_sha256": "8f4585633f9647afc35c8ccde6420adc2eeddef61529af21ceb902d525d6ce27",
   "scope": "Classification and mechanical checks of its rows only. Kernel checking of every named declaration is supplied by the spine receipt; the inherited modules are not recompiled.",
   "modules": {
     "ContinuationRenewal": {
@@ -425,7 +425,25 @@
         {
           "declaration": "Becoming.Frame.inventory",
           "spine_modules": [
-            "MetaethicalCore"
+            "BecomingInstances"
+          ]
+        },
+        {
+          "declaration": "Becoming.g0_iff",
+          "spine_modules": [
+            "BecomingInstances"
+          ]
+        },
+        {
+          "declaration": "Becoming.extension_iff",
+          "spine_modules": [
+            "BecomingInstances"
+          ]
+        },
+        {
+          "declaration": "Becoming.comparison_iff",
+          "spine_modules": [
+            "BecomingInstances"
           ]
         },
         {
@@ -459,7 +477,7 @@
           ]
         }
       ],
-      "note": "函数式情境恰为提升规则 L 下的确定情形；比较、理由、存活与持续改进推广到每个框架",
+      "note": "G0、生成扩展与 C 在定义上即核心的；函数式情境恰为提升规则 L 下的确定情形；比较、理由、存活与持续改进推广到每个框架",
       "imports_core": false,
       "imports_mathlib": false
     },
@@ -533,9 +551,15 @@
       "category": "bridge",
       "connections": [
         {
-          "declaration": "Becoming.universal_reason",
+          "declaration": "Becoming.securesPositiveGround_iff",
           "spine_modules": [
-            "MetaethicalCore"
+            "BecomingInstances"
+          ]
+        },
+        {
+          "declaration": "Becoming.positionedArticulation_iff",
+          "spine_modules": [
+            "BecomingInstances"
           ]
         },
         {
@@ -543,9 +567,15 @@
           "spine_modules": [
             "MetaethicalCore"
           ]
+        },
+        {
+          "declaration": "Becoming.universal_reason",
+          "spine_modules": [
+            "MetaethicalCore"
+          ]
         }
       ],
-      "note": "路线理由由表述前提 A 给出",
+      "note": "确保的正面根据与 D 在定义上即核心的；路线理由由表述前提 A 给出",
       "imports_core": false,
       "imports_mathlib": false
     },
@@ -585,9 +615,15 @@
           "spine_modules": [
             "BecomingInstances"
           ]
+        },
+        {
+          "declaration": "Becoming.BetterAt",
+          "spine_modules": [
+            "BecomingInstances"
+          ]
         }
       ],
-      "note": "`Robust` 即共同回应，反之每个稳健回应都是某过程的共同回应",
+      "note": "`Robust` 即共同回应，反之每个稳健回应都是某过程的共同回应；`Better` 在配置上即 `BetterAt`",
       "imports_core": false,
       "imports_mathlib": false
     },

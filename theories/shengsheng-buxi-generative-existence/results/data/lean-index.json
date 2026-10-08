@@ -17,19 +17,19 @@
     "classification": "Path-based documentary roles; working-source is not a claim of accepted, complete, canonical or checked status. A file containing only #print axioms and no inventoried named declarations is an audit-driver."
   },
   "statistics": {
-    "lean_paths": 5712,
-    "distinct_byte_contents": 1454,
-    "byte_identical_duplicate_groups": 662,
+    "lean_paths": 5758,
+    "distinct_byte_contents": 1461,
+    "byte_identical_duplicate_groups": 665,
     "roles": {
       "audit-driver": 14,
       "development-attempt": 442,
       "historical-draft": 3,
       "imported-archive": 23,
-      "saved-copy": 4672,
+      "saved-copy": 4718,
       "working-source": 558
     },
-    "working_named_theorem_lemma_occurrences": 10818,
-    "working_explicit_named_declaration_occurrences": 17916,
+    "working_named_theorem_lemma_occurrences": 10823,
+    "working_explicit_named_declaration_occurrences": 17925,
     "working_groups": {
       "abstraction": 41,
       "concern": 15,
@@ -1131,7 +1131,7 @@
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingInstances.lean",
-      "sha256": "30636dd8f1c5ac6444ee085e3228eae5110944a59334eb31a2b78f68e2deacf8",
+      "sha256": "049480d59e0e5d96b26d6ba6e7c469ceea034b08b9b7b92b3ad9a327f8a503f4",
       "role": "working-source",
       "group": "core",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
@@ -1177,7 +1177,7 @@
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean",
-      "sha256": "afd2ddd2a4b9ee90963d84c11a55833aed18d20ba0627af3dd3a80e443799889",
+      "sha256": "32e5e64d27dca7c151f4f08c71dddbbde9cfe22a25ebfcea3ce5c4ae131ab898",
       "role": "working-source",
       "group": "core",
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
@@ -2187,6 +2187,420 @@
     },
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/WholeGroundCoverageAxiomAudit.lean",
+      "sha256": "a6e14bd79f1def768583cc5baa8777a8cc16e3da7b2440d0360f1834a1bf3a80",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/BecomingFrame.lean",
+      "sha256": "a5af25d221a18ce291638a314ee9c2e2bf2620e8db76f16ce38518b32824e3d3",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/BecomingFrameAxiomAudit.lean",
+      "sha256": "1925e5a026a7c555db3c468025660f5d9e2bc1482f826d43ac568de60dc28619",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/BecomingFrameSignatures.lean",
+      "sha256": "c4ba8c9117d16d3ed0a51647b428697e5d061ff4ee2d892cdac099e802ce6321",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/BecomingInstances.lean",
+      "sha256": "049480d59e0e5d96b26d6ba6e7c469ceea034b08b9b7b92b3ad9a327f8a503f4",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/BecomingInstancesAxiomAudit.lean",
+      "sha256": "9836e87695b603cba2791631d915f2f01acd8d0e97f19bc6edcc62b50308f2ea",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/BecomingInstancesSignatures.lean",
+      "sha256": "8f2514a128390f8a407ba6c8145e8f049898a854b340d00d3ecf1773ca590bf5",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/BecomingModal.lean",
+      "sha256": "382e1684c6391d1bba72f1830a3ba67486216dcdd883f25d225855ac1ea7a54f",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/BecomingModalAxiomAudit.lean",
+      "sha256": "8afd8eae9605d102fd215da5b1083fc175300341224e4db9e545e92c59ecfaa4",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/BecomingModalSignatures.lean",
+      "sha256": "cde3d8205f26deb2983a6da110be0e94b58079ef3a3751a3c54a93206269c2dc",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/BecomingRenewal.lean",
+      "sha256": "c9fd981c2746de23c08ae5756a8ecdbc6f364cf85f7a0c01eb18b706b000c310",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/BecomingRenewalAxiomAudit.lean",
+      "sha256": "5aa0a639c09683b5f1c365d522f7413fd99ef85c9aa63f52fdb1b5958b79c63b",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/BecomingRenewalSignatures.lean",
+      "sha256": "543d21ec3dfd3a66b6a3c3029223073c4038d58daa821c14985ab00deb33089a",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/Controls.lean",
+      "sha256": "0f5068b10651cce761313d61ec16a09102b92282677be3ccb1b4f1d39c2c9421",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/CorrectionInfrastructure.lean",
+      "sha256": "132fc3763fea09962c00f28bcdaafedc046244827e26b6215772eb0a48e91835",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/CorrectionInfrastructureAxiomAudit.lean",
+      "sha256": "2d46df0587353eaed863fde23641740cdda2abe68caf92cbaa6474d56ba96a19",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/CutCoverageAudit.lean",
+      "sha256": "4e6649999c96112c1f746d377fbfdacabe10e6ed2d12a7368f480b3986e38669",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/CutCoverageAuditAxiomAudit.lean",
+      "sha256": "da5e28aa8f3bc517685da82f175af0040e10a305086a24da5ef60889d6262cd5",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/EvaluatorGrounding.lean",
+      "sha256": "e98dd3eeabfbc94407512be78d9a7412af4fe00e6fbcf7acf03e3b068286689c",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/EvaluatorGroundingAxiomAudit.lean",
+      "sha256": "a0cec7208661ee307859ca25ecb85d93b52856b949f8deea263fdc185e2886e8",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/GenerativeComparison.lean",
+      "sha256": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/GenerativeComparisonAxiomAudit.lean",
+      "sha256": "b917ae91ff6db176d460a5d332e193d545ad4277abfc0e95224a97d2894ad84e",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/GenerativeCoreAxiomAudit.lean",
+      "sha256": "1fa733a28044ead178c5a811051dd0d7bc0f4505ef5c69d360c6bc126eabc027",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/InquirySufficiency.lean",
+      "sha256": "d4a95ca842f46ffa9c23eea92d04cdb45027dc6842148d3d0bdc17cd65ad18f2",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/InquirySufficiencyAxiomAudit.lean",
+      "sha256": "9cb95df62d069792ecc6a362a1777b8fe225bdbe9708a2f2665fe87c055e00ec",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/JointContinuationClassification.lean",
+      "sha256": "e508683cc80832744a28f44c69f9c2561701cd099219448b75cfdb474c0786ee",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/JointContinuationClassificationAxiomAudit.lean",
+      "sha256": "bf2526a91d356919deb8e1f320ce5688ec87e1907f16d1fb3db7eeeaadbb7026",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/MetaethicalCore.lean",
+      "sha256": "32e5e64d27dca7c151f4f08c71dddbbde9cfe22a25ebfcea3ce5c4ae131ab898",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/MetaethicalCoreAxiomAudit.lean",
+      "sha256": "830408a82e4f20e2141365d1dcd10dc503e70f906fa6d97f7c3a6e841e8933e4",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/MetaethicalCoreSignatures.lean",
+      "sha256": "bbf3de0af436857a33e6288d9d419d2f6593d014a955df1e041c576cb92faf95",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/PositionedPositiveReason.lean",
+      "sha256": "95cf5800f6827d1896cac186113cccf9561768693c6d6e867a3626cd04fc8408",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/PositionedPositiveReasonAxiomAudit.lean",
+      "sha256": "6eb520202e3a25b82d69f9adb7ce6f7cafeacc6db2faed19b56f2f5272c8c5ce",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/PositiveGroundUncertainty.lean",
+      "sha256": "86ff096d42b7246b74242ba0e68ec90d3624392f14303b0dcd6e8a9c59e42fcd",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/PositiveGroundUncertaintyAxiomAudit.lean",
+      "sha256": "70c062f4e977f657a5d49456343d026713a23975305d295d48da149aa9f8d360",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/PracticalJudgment.lean",
+      "sha256": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/PracticalJudgmentAxiomAudit.lean",
+      "sha256": "c9f412159410854fb031176d7fe7a4c351dfaea59354c7d7a19ec4ad0c6e51a6",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/PracticalReach.lean",
+      "sha256": "1b13fcc34fed86de83e6f09dae82b321422195f31fb97d37024d7143183d0e7b",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/PracticalReachAxiomAudit.lean",
+      "sha256": "f028c3fd805d1ad423efd6322c0979e1370d65eeadfab5340788b99a0f999d4d",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/RelationalRenewal.lean",
+      "sha256": "b97719c886e3dcd0f143a23db62fb7b8556dac35ec5c312fcdf7e14d47cee1d4",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/RelationalRenewalAxiomAudit.lean",
+      "sha256": "20b7b467a75db17bd77b4f2876f9f6c6b2498688ca2665e51784f26f280e517f",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/RenewalComparison.lean",
+      "sha256": "438afd1164e6e594b1e3614c120ec2a20d51df37ba6cffcdab802310b51df133",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/RenewalComparisonAxiomAudit.lean",
+      "sha256": "0cf7a97577c684d55a47ebcb21e7b7a1c8168ab61f328e12fa560f854cccc862",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/StandardsBridge.lean",
+      "sha256": "f061dbc44da5cdf11ac5ff79b3f89558c7e177b23b9f121c1048c16ed353a42a",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/StandardsBridgeAxiomAudit.lean",
+      "sha256": "0eb43ace08d209058824387c1bd826f05b131774d7393eaf3a641e846925dd99",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/WholeGroundCoverage.lean",
+      "sha256": "8ddf51311583755908ba843986f262f7a0b4071764031a6fa1a1bf2c0dbd512a",
+      "role": "saved-copy",
+      "group": "core",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/README.md",
+      "direct_documentation_links_from": [],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/WholeGroundCoverageAxiomAudit.lean",
       "sha256": "a6e14bd79f1def768583cc5baa8777a8cc16e3da7b2440d0360f1834a1bf3a80",
       "role": "saved-copy",
       "group": "core",
@@ -57103,6 +57517,339 @@
       },
       "print_axioms_commands": 41
     },
+    "049480d59e0e5d96b26d6ba6e7c469ceea034b08b9b7b92b3ad9a327f8a503f4": {
+      "byte_size": 19979,
+      "line_count": 420,
+      "imports": [
+        "MetaethicalCore",
+        "GenerativeComparison",
+        "PositionedPositiveReason",
+        "PracticalJudgment",
+        "RenewalComparison",
+        "JointContinuationClassification",
+        "WholeGroundCoverage",
+        "CutCoverageAudit",
+        "EvaluatorGrounding",
+        "PracticalReach",
+        "StandardsBridge",
+        "CorrectionInfrastructure"
+      ],
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "edgeProcess",
+          "qualified_name_hint": "Becoming.edgeProcess",
+          "line": 56
+        },
+        {
+          "kind": "def",
+          "name": "Closure",
+          "qualified_name_hint": "Becoming.Closure",
+          "line": 60
+        },
+        {
+          "kind": "theorem",
+          "name": "base",
+          "qualified_name_hint": "Becoming.Closure.base",
+          "line": 67
+        },
+        {
+          "kind": "theorem",
+          "name": "step",
+          "qualified_name_hint": "Becoming.Closure.step",
+          "line": 70
+        },
+        {
+          "kind": "theorem",
+          "name": "induction",
+          "qualified_name_hint": "Becoming.Closure.induction",
+          "line": 74
+        },
+        {
+          "kind": "theorem",
+          "name": "reached_iff_closure",
+          "qualified_name_hint": "Becoming.reached_iff_closure",
+          "line": 82
+        },
+        {
+          "kind": "theorem",
+          "name": "cutReach_iff_closure",
+          "qualified_name_hint": "Becoming.cutReach_iff_closure",
+          "line": 91
+        },
+        {
+          "kind": "theorem",
+          "name": "chain_iff_reach",
+          "qualified_name_hint": "Becoming.chain_iff_reach",
+          "line": 100
+        },
+        {
+          "kind": "def",
+          "name": "Frame.continuations",
+          "qualified_name_hint": "Becoming.Frame.continuations",
+          "line": 119
+        },
+        {
+          "kind": "theorem",
+          "name": "Frame.map_preserves_bundles",
+          "qualified_name_hint": "Becoming.Frame.map_preserves_bundles",
+          "line": 124
+        },
+        {
+          "kind": "theorem",
+          "name": "Frame.lift_reflects_bundles",
+          "qualified_name_hint": "Becoming.Frame.lift_reflects_bundles",
+          "line": 133
+        },
+        {
+          "kind": "theorem",
+          "name": "commonResponse_is_robust",
+          "qualified_name_hint": "Becoming.commonResponse_is_robust",
+          "line": 144
+        },
+        {
+          "kind": "def",
+          "name": "judgeProcess",
+          "qualified_name_hint": "Becoming.judgeProcess",
+          "line": 152
+        },
+        {
+          "kind": "def",
+          "name": "sees",
+          "qualified_name_hint": "Becoming.sees",
+          "line": 155
+        },
+        {
+          "kind": "theorem",
+          "name": "robust_iff_commonResponse",
+          "qualified_name_hint": "Becoming.robust_iff_commonResponse",
+          "line": 159
+        },
+        {
+          "kind": "theorem",
+          "name": "guarantees_iff_completes",
+          "qualified_name_hint": "Becoming.guarantees_iff_completes",
+          "line": 173
+        },
+        {
+          "kind": "theorem",
+          "name": "liveStep_iff_enabled",
+          "qualified_name_hint": "Becoming.liveStep_iff_enabled",
+          "line": 180
+        },
+        {
+          "kind": "def",
+          "name": "observe",
+          "qualified_name_hint": "Becoming.observe",
+          "line": 185
+        },
+        {
+          "kind": "theorem",
+          "name": "after_observe_iff",
+          "qualified_name_hint": "Becoming.after_observe_iff",
+          "line": 188
+        },
+        {
+          "kind": "def",
+          "name": "encode",
+          "qualified_name_hint": "Becoming.encode",
+          "line": 195
+        },
+        {
+          "kind": "theorem",
+          "name": "encode_inj",
+          "qualified_name_hint": "Becoming.encode_inj",
+          "line": 199
+        },
+        {
+          "kind": "theorem",
+          "name": "mem_filter",
+          "qualified_name_hint": "Becoming.mem_filter",
+          "line": 205
+        },
+        {
+          "kind": "theorem",
+          "name": "beq_true_iff",
+          "qualified_name_hint": "Becoming.beq_true_iff",
+          "line": 226
+        },
+        {
+          "kind": "theorem",
+          "name": "revise_is_after",
+          "qualified_name_hint": "Becoming.revise_is_after",
+          "line": 233
+        },
+        {
+          "kind": "def",
+          "name": "Frame.inventory",
+          "qualified_name_hint": "Becoming.Frame.inventory",
+          "line": 252
+        },
+        {
+          "kind": "theorem",
+          "name": "g0_iff",
+          "qualified_name_hint": "Becoming.g0_iff",
+          "line": 255
+        },
+        {
+          "kind": "theorem",
+          "name": "extension_iff",
+          "qualified_name_hint": "Becoming.extension_iff",
+          "line": 259
+        },
+        {
+          "kind": "theorem",
+          "name": "comparison_iff",
+          "qualified_name_hint": "Becoming.comparison_iff",
+          "line": 263
+        },
+        {
+          "kind": "theorem",
+          "name": "securesPositiveGround_iff",
+          "qualified_name_hint": "Becoming.securesPositiveGround_iff",
+          "line": 268
+        },
+        {
+          "kind": "theorem",
+          "name": "positionedArticulation_iff",
+          "qualified_name_hint": "Becoming.positionedArticulation_iff",
+          "line": 274
+        },
+        {
+          "kind": "def",
+          "name": "BetterAt",
+          "qualified_name_hint": "Becoming.BetterAt",
+          "line": 282
+        },
+        {
+          "kind": "theorem",
+          "name": "Conditions.living_iff_relational",
+          "qualified_name_hint": "Becoming.Conditions.living_iff_relational",
+          "line": 287
+        },
+        {
+          "kind": "def",
+          "name": "LiftExtension",
+          "qualified_name_hint": "Becoming.LiftExtension",
+          "line": 304
+        },
+        {
+          "kind": "theorem",
+          "name": "comparison_lifts",
+          "qualified_name_hint": "Becoming.comparison_lifts",
+          "line": 309
+        },
+        {
+          "kind": "def",
+          "name": "LiftedArticulation",
+          "qualified_name_hint": "Becoming.LiftedArticulation",
+          "line": 315
+        },
+        {
+          "kind": "theorem",
+          "name": "lifted_comparison_supplies_reason",
+          "qualified_name_hint": "Becoming.lifted_comparison_supplies_reason",
+          "line": 320
+        },
+        {
+          "kind": "def",
+          "name": "LiftSurvives",
+          "qualified_name_hint": "Becoming.LiftSurvives",
+          "line": 328
+        },
+        {
+          "kind": "def",
+          "name": "LiftCoherence",
+          "qualified_name_hint": "Becoming.LiftCoherence",
+          "line": 332
+        },
+        {
+          "kind": "theorem",
+          "name": "lift_coherent_selection_survives",
+          "qualified_name_hint": "Becoming.lift_coherent_selection_survives",
+          "line": 337
+        },
+        {
+          "kind": "theorem",
+          "name": "lift_continual_improvement_has_no_survivor",
+          "qualified_name_hint": "Becoming.lift_continual_improvement_has_no_survivor",
+          "line": 345
+        },
+        {
+          "kind": "def",
+          "name": "situationProcess",
+          "qualified_name_hint": "Becoming.situationProcess",
+          "line": 352
+        },
+        {
+          "kind": "theorem",
+          "name": "situation_enabled_iff",
+          "qualified_name_hint": "Becoming.situation_enabled_iff",
+          "line": 355
+        },
+        {
+          "kind": "theorem",
+          "name": "situation_lift_iff",
+          "qualified_name_hint": "Becoming.situation_lift_iff",
+          "line": 359
+        },
+        {
+          "kind": "theorem",
+          "name": "articulation_iff_lifted",
+          "qualified_name_hint": "Becoming.articulation_iff_lifted",
+          "line": 368
+        },
+        {
+          "kind": "inductive",
+          "name": "Act",
+          "qualified_name_hint": "Becoming.LiftModel.Act",
+          "line": 383
+        },
+        {
+          "kind": "def",
+          "name": "options",
+          "qualified_name_hint": "Becoming.LiftModel.options",
+          "line": 388
+        },
+        {
+          "kind": "def",
+          "name": "frame",
+          "qualified_name_hint": "Becoming.LiftModel.frame",
+          "line": 394
+        },
+        {
+          "kind": "def",
+          "name": "larger",
+          "qualified_name_hint": "Becoming.LiftModel.larger",
+          "line": 396
+        },
+        {
+          "kind": "theorem",
+          "name": "some_outcome_does_not_lift",
+          "qualified_name_hint": "Becoming.LiftModel.some_outcome_does_not_lift",
+          "line": 400
+        },
+        {
+          "kind": "theorem",
+          "name": "lift_needs_live_middle",
+          "qualified_name_hint": "Becoming.LiftModel.lift_needs_live_middle",
+          "line": 409
+        }
+      ],
+      "declaration_counts": {
+        "def": 17,
+        "inductive": 1,
+        "theorem": 32
+      },
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 0
+    },
     "04ade1d91de4fd7fba789a94728a5aee6792c551c41611fc195e6b30c20f0bcd": {
       "byte_size": 6175,
       "line_count": 137,
@@ -69173,6 +69920,93 @@
         "def": 13,
         "inductive": 1,
         "theorem": 10
+      },
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 0
+    },
+    "0f5068b10651cce761313d61ec16a09102b92282677be3ccb1b4f1d39c2c9421": {
+      "byte_size": 2714,
+      "line_count": 52,
+      "imports": [
+        "BecomingInstances"
+      ],
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "grow",
+          "qualified_name_hint": "grow",
+          "line": 10
+        },
+        {
+          "kind": "def",
+          "name": "everyone",
+          "qualified_name_hint": "everyone",
+          "line": 11
+        },
+        {
+          "kind": "def",
+          "name": "zero",
+          "qualified_name_hint": "zero",
+          "line": 13
+        },
+        {
+          "kind": "def",
+          "name": "sense0",
+          "qualified_name_hint": "sense0",
+          "line": 14
+        },
+        {
+          "kind": "def",
+          "name": "respondOnce",
+          "qualified_name_hint": "respondOnce",
+          "line": 15
+        },
+        {
+          "kind": "def",
+          "name": "believed",
+          "qualified_name_hint": "believed",
+          "line": 16
+        },
+        {
+          "kind": "def",
+          "name": "access",
+          "qualified_name_hint": "access",
+          "line": 17
+        },
+        {
+          "kind": "def",
+          "name": "nothingBefore",
+          "qualified_name_hint": "nothingBefore",
+          "line": 18
+        },
+        {
+          "kind": "def",
+          "name": "routeReason",
+          "qualified_name_hint": "routeReason",
+          "line": 21
+        },
+        {
+          "kind": "theorem",
+          "name": "grow_sound",
+          "qualified_name_hint": "grow_sound",
+          "line": 25
+        },
+        {
+          "kind": "theorem",
+          "name": "grow_reason",
+          "qualified_name_hint": "grow_reason",
+          "line": 34
+        }
+      ],
+      "declaration_counts": {
+        "def": 9,
+        "theorem": 2
       },
       "textual_markers": {
         "sorry": [],
@@ -99576,6 +100410,384 @@
       ],
       "declaration_counts": {
         "def": 5
+      },
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 0
+    },
+    "32e5e64d27dca7c151f4f08c71dddbbde9cfe22a25ebfcea3ce5c4ae131ab898": {
+      "byte_size": 23914,
+      "line_count": 508,
+      "imports": [
+        "BecomingModal",
+        "BecomingRenewal"
+      ],
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "Within",
+          "qualified_name_hint": "Becoming.Within",
+          "line": 74
+        },
+        {
+          "kind": "def",
+          "name": "Neutral",
+          "qualified_name_hint": "Becoming.Neutral",
+          "line": 78
+        },
+        {
+          "kind": "theorem",
+          "name": "Neutral.within",
+          "qualified_name_hint": "Becoming.Neutral.within",
+          "line": 81
+        },
+        {
+          "kind": "structure",
+          "name": "Valuation",
+          "qualified_name_hint": "Becoming.Valuation",
+          "line": 88
+        },
+        {
+          "kind": "def",
+          "name": "relations",
+          "qualified_name_hint": "Becoming.Valuation.relations",
+          "line": 99
+        },
+        {
+          "kind": "def",
+          "name": "Connected",
+          "qualified_name_hint": "Becoming.Valuation.Connected",
+          "line": 103
+        },
+        {
+          "kind": "def",
+          "name": "SelfGood",
+          "qualified_name_hint": "Becoming.Valuation.SelfGood",
+          "line": 107
+        },
+        {
+          "kind": "def",
+          "name": "Seed",
+          "qualified_name_hint": "Becoming.Valuation.Seed",
+          "line": 111
+        },
+        {
+          "kind": "def",
+          "name": "transmits",
+          "qualified_name_hint": "Becoming.Valuation.transmits",
+          "line": 115
+        },
+        {
+          "kind": "def",
+          "name": "shares",
+          "qualified_name_hint": "Becoming.Valuation.shares",
+          "line": 119
+        },
+        {
+          "kind": "def",
+          "name": "Grounds",
+          "qualified_name_hint": "Becoming.Valuation.Grounds",
+          "line": 123
+        },
+        {
+          "kind": "def",
+          "name": "Significant",
+          "qualified_name_hint": "Becoming.Valuation.Significant",
+          "line": 127
+        },
+        {
+          "kind": "theorem",
+          "name": "seed_of_selfGood",
+          "qualified_name_hint": "Becoming.Valuation.seed_of_selfGood",
+          "line": 132
+        },
+        {
+          "kind": "theorem",
+          "name": "transmits_invariant",
+          "qualified_name_hint": "Becoming.Valuation.transmits_invariant",
+          "line": 137
+        },
+        {
+          "kind": "theorem",
+          "name": "reaches",
+          "qualified_name_hint": "Becoming.Valuation.reaches",
+          "line": 142
+        },
+        {
+          "kind": "theorem",
+          "name": "significant_of_grounds",
+          "qualified_name_hint": "Becoming.Valuation.significant_of_grounds",
+          "line": 146
+        },
+        {
+          "kind": "theorem",
+          "name": "significant_iff",
+          "qualified_name_hint": "Becoming.Valuation.significant_iff",
+          "line": 151
+        },
+        {
+          "kind": "def",
+          "name": "G0",
+          "qualified_name_hint": "Becoming.G0",
+          "line": 166
+        },
+        {
+          "kind": "theorem",
+          "name": "Valuation.g0",
+          "qualified_name_hint": "Becoming.Valuation.g0",
+          "line": 170
+        },
+        {
+          "kind": "def",
+          "name": "SecuresPositiveGround",
+          "qualified_name_hint": "Becoming.SecuresPositiveGround",
+          "line": 175
+        },
+        {
+          "kind": "def",
+          "name": "PositionedArticulation",
+          "qualified_name_hint": "Becoming.PositionedArticulation",
+          "line": 180
+        },
+        {
+          "kind": "def",
+          "name": "articulates",
+          "qualified_name_hint": "Becoming.articulates",
+          "line": 187
+        },
+        {
+          "kind": "theorem",
+          "name": "positioned_articulation_of_articulates",
+          "qualified_name_hint": "Becoming.positioned_articulation_of_articulates",
+          "line": 194
+        },
+        {
+          "kind": "theorem",
+          "name": "universal_reason",
+          "qualified_name_hint": "Becoming.universal_reason",
+          "line": 205
+        },
+        {
+          "kind": "def",
+          "name": "AccessAt",
+          "qualified_name_hint": "Becoming.AccessAt",
+          "line": 221
+        },
+        {
+          "kind": "def",
+          "name": "Extension",
+          "qualified_name_hint": "Becoming.Extension",
+          "line": 229
+        },
+        {
+          "kind": "def",
+          "name": "Comparison",
+          "qualified_name_hint": "Becoming.Comparison",
+          "line": 234
+        },
+        {
+          "kind": "def",
+          "name": "LiftBetter",
+          "qualified_name_hint": "Becoming.LiftBetter",
+          "line": 238
+        },
+        {
+          "kind": "theorem",
+          "name": "LiftBetter.trans",
+          "qualified_name_hint": "Becoming.LiftBetter.trans",
+          "line": 241
+        },
+        {
+          "kind": "theorem",
+          "name": "LiftBetter.irrefl",
+          "qualified_name_hint": "Becoming.LiftBetter.irrefl",
+          "line": 248
+        },
+        {
+          "kind": "theorem",
+          "name": "LiftBetter.some",
+          "qualified_name_hint": "Becoming.LiftBetter.some",
+          "line": 254
+        },
+        {
+          "kind": "def",
+          "name": "Conditions.valuation",
+          "qualified_name_hint": "Becoming.Conditions.valuation",
+          "line": 270
+        },
+        {
+          "kind": "theorem",
+          "name": "connected_of_common",
+          "qualified_name_hint": "Becoming.Conditions.connected_of_common",
+          "line": 283
+        },
+        {
+          "kind": "theorem",
+          "name": "significant_iff_of_common",
+          "qualified_name_hint": "Becoming.Conditions.significant_iff_of_common",
+          "line": 291
+        },
+        {
+          "kind": "theorem",
+          "name": "consumption_relates",
+          "qualified_name_hint": "Becoming.Conditions.consumption_relates",
+          "line": 299
+        },
+        {
+          "kind": "theorem",
+          "name": "valuing_consumption_reaches",
+          "qualified_name_hint": "Becoming.Conditions.valuing_consumption_reaches",
+          "line": 311
+        },
+        {
+          "kind": "def",
+          "name": "same",
+          "qualified_name_hint": "Becoming.Separate.same",
+          "line": 327
+        },
+        {
+          "kind": "def",
+          "name": "frame",
+          "qualified_name_hint": "Becoming.Separate.frame",
+          "line": 333
+        },
+        {
+          "kind": "def",
+          "name": "still",
+          "qualified_name_hint": "Becoming.Separate.still",
+          "line": 335
+        },
+        {
+          "kind": "def",
+          "name": "conditions",
+          "qualified_name_hint": "Becoming.Separate.conditions",
+          "line": 337
+        },
+        {
+          "kind": "theorem",
+          "name": "stays",
+          "qualified_name_hint": "Becoming.Separate.stays",
+          "line": 340
+        },
+        {
+          "kind": "theorem",
+          "name": "not_connected",
+          "qualified_name_hint": "Becoming.Separate.not_connected",
+          "line": 351
+        },
+        {
+          "kind": "inductive",
+          "name": "Who",
+          "qualified_name_hint": "Becoming.Model.Who",
+          "line": 366
+        },
+        {
+          "kind": "inductive",
+          "name": "Life",
+          "qualified_name_hint": "Becoming.Model.Life",
+          "line": 369
+        },
+        {
+          "kind": "def",
+          "name": "related",
+          "qualified_name_hint": "Becoming.Model.related",
+          "line": 373
+        },
+        {
+          "kind": "def",
+          "name": "own",
+          "qualified_name_hint": "Becoming.Model.own",
+          "line": 382
+        },
+        {
+          "kind": "def",
+          "name": "linked",
+          "qualified_name_hint": "Becoming.Model.linked",
+          "line": 389
+        },
+        {
+          "kind": "def",
+          "name": "valuation",
+          "qualified_name_hint": "Becoming.Model.valuation",
+          "line": 394
+        },
+        {
+          "kind": "theorem",
+          "name": "linked_connected",
+          "qualified_name_hint": "Becoming.Model.linked_connected",
+          "line": 397
+        },
+        {
+          "kind": "theorem",
+          "name": "seed_is_needed",
+          "qualified_name_hint": "Becoming.Model.seed_is_needed",
+          "line": 406
+        },
+        {
+          "kind": "def",
+          "name": "ownRegion",
+          "qualified_name_hint": "Becoming.Model.ownRegion",
+          "line": 414
+        },
+        {
+          "kind": "theorem",
+          "name": "relational_neutrality_is_needed",
+          "qualified_name_hint": "Becoming.Model.relational_neutrality_is_needed",
+          "line": 421
+        },
+        {
+          "kind": "def",
+          "name": "ownStandpoint",
+          "qualified_name_hint": "Becoming.Model.ownStandpoint",
+          "line": 441
+        },
+        {
+          "kind": "theorem",
+          "name": "standpoint_neutrality_is_needed",
+          "qualified_name_hint": "Becoming.Model.standpoint_neutrality_is_needed",
+          "line": 447
+        },
+        {
+          "kind": "theorem",
+          "name": "no_relation_into_beyond",
+          "qualified_name_hint": "Becoming.Model.no_relation_into_beyond",
+          "line": 459
+        },
+        {
+          "kind": "theorem",
+          "name": "isolated",
+          "qualified_name_hint": "Becoming.Model.isolated",
+          "line": 465
+        },
+        {
+          "kind": "theorem",
+          "name": "connection_is_needed",
+          "qualified_name_hint": "Becoming.Model.connection_is_needed",
+          "line": 476
+        },
+        {
+          "kind": "def",
+          "name": "endorses",
+          "qualified_name_hint": "Becoming.Model.endorses",
+          "line": 489
+        },
+        {
+          "kind": "theorem",
+          "name": "articulation_neutrality_is_needed",
+          "qualified_name_hint": "Becoming.Model.articulation_neutrality_is_needed",
+          "line": 496
+        }
+      ],
+      "declaration_counts": {
+        "def": 30,
+        "inductive": 2,
+        "structure": 1,
+        "theorem": 26
       },
       "textual_markers": {
         "sorry": [],
@@ -184364,6 +185576,23 @@
       },
       "print_axioms_commands": 15
     },
+    "830408a82e4f20e2141365d1dcd10dc503e70f906fa6d97f7c3a6e841e8933e4": {
+      "byte_size": 2544,
+      "line_count": 60,
+      "imports": [
+        "MetaethicalCore"
+      ],
+      "declarations": [],
+      "declaration_counts": {},
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 59
+    },
     "832ab5f036cb62a6b475620e899b870da615da40e58bdd2004efb35b0e62bd32": {
       "byte_size": 24036,
       "line_count": 461,
@@ -197265,6 +198494,23 @@
       },
       "print_axioms_commands": 0
     },
+    "8f2514a128390f8a407ba6c8145e8f049898a854b340d00d3ecf1773ca590bf5": {
+      "byte_size": 1276,
+      "line_count": 33,
+      "imports": [
+        "BecomingInstances"
+      ],
+      "declarations": [],
+      "declaration_counts": {},
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 0
+    },
     "8f2b844e0553622d1197fd5be8a3eef0abfa7d284044754277af95b2ebedcca8": {
       "byte_size": 3382,
       "line_count": 57,
@@ -205300,6 +206546,23 @@
         "unsafe": []
       },
       "print_axioms_commands": 0
+    },
+    "9836e87695b603cba2791631d915f2f01acd8d0e97f19bc6edcc62b50308f2ea": {
+      "byte_size": 2122,
+      "line_count": 51,
+      "imports": [
+        "BecomingInstances"
+      ],
+      "declarations": [],
+      "declaration_counts": {},
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 50
     },
     "984ac9e7f6d7af0649b963695faf2ccfe1ea85193083b908166753b0b1fa172f": {
       "byte_size": 5008,
@@ -240873,6 +242136,23 @@
         "unsafe": []
       },
       "print_axioms_commands": 27
+    },
+    "bbf3de0af436857a33e6288d9d419d2f6593d014a955df1e041c576cb92faf95": {
+      "byte_size": 1142,
+      "line_count": 27,
+      "imports": [
+        "MetaethicalCore"
+      ],
+      "declarations": [],
+      "declaration_counts": {},
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 0
     },
     "bc0034e689384c967e17bc175dd12a39ff6e332932c4bdd812614a97e644aaca": {
       "byte_size": 692,
@@ -309061,6 +310341,10 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/connectionist-recovery-checks/20261008T084849.166309Z/ConnectionistRecoveryAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/connectionist-recovery-checks/20261008T084939.429664Z/ConnectionistRecoveryAudit.lean"
     ],
+    "049480d59e0e5d96b26d6ba6e7c469ceea034b08b9b7b92b3ad9a327f8a503f4": [
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingInstances.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/BecomingInstances.lean"
+    ],
     "04ade1d91de4fd7fba789a94728a5aee6792c551c41611fc195e6b30c20f0bcd": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/InferentialGrounds.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ground-relation-transport-checks/20261007T231357.510101Z/sources/InferentialGrounds.lean",
@@ -309361,6 +310645,7 @@
     ],
     "0cf7a97577c684d55a47ebcb21e7b7a1c8168ab61f328e12fa560f854cccc862": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/RenewalComparisonAxiomAudit.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/RenewalComparisonAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-renewal-checks/20261008T191915.432934Z/RenewalComparisonAxiomAudit.lean"
     ],
     "0d038dd797886d58fe490ed2795f8c8cdba9d159ca56509f934eb60969242995": [
@@ -309428,6 +310713,7 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T195935.130766Z/StandardsBridgeAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/StandardsBridgeAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/StandardsBridgeAxiomAudit.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/StandardsBridgeAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/formed-effective-law-checks/20261007T231137.825236Z/StandardsBridgeAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/unfolding-preservation-checks/20261007T225350.404286Z/StandardsBridgeAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/historical-binding-checks/20261008T182615.583132Z/StandardsBridgeAudit.lean",
@@ -309572,6 +310858,7 @@
     "132fc3763fea09962c00f28bcdaafedc046244827e26b6215772eb0a48e91835": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/CorrectionInfrastructure.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/CorrectionInfrastructure.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/CorrectionInfrastructure.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInfrastructure.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-infrastructure-checks/20261008T075837.039887Z/CorrectionInfrastructure.lean"
     ],
@@ -309745,7 +311032,8 @@
     ],
     "1925e5a026a7c555db3c468025660f5d9e2bc1482f826d43ac568de60dc28619": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/BecomingFrameAxiomAudit.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/BecomingFrameAxiomAudit.lean"
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/BecomingFrameAxiomAudit.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/BecomingFrameAxiomAudit.lean"
     ],
     "1946edc3478dcec20e21200d37fac0c04d42d5f6259dac4b0edced659550a6a9": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/enacted-scene-checks/20261008T131513.359754Z/EnactedSceneAudit.lean",
@@ -309785,6 +311073,7 @@
     "1b13fcc34fed86de83e6f09dae82b321422195f31fb97d37024d7143183d0e7b": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/PracticalReach.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/PracticalReach.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/PracticalReach.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalReach.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/practical-reach-checks/20261007T225003.193303Z/PracticalReach.lean"
     ],
@@ -309820,6 +311109,7 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T195935.130766Z/GenerativeCoreAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/GenerativeCoreAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/GenerativeCoreAxiomAudit.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/GenerativeCoreAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/becoming-reversibility-checks/20261008T181510.195821Z/GenerativeCoreAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/becoming-reversibility-checks/20261008T181528.139000Z/GenerativeCoreAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-becoming-checks/20261008T181047.695934Z/GenerativeCoreAxiomAudit.lean",
@@ -309837,6 +311127,7 @@
     ],
     "20b7b467a75db17bd77b4f2876f9f6c6b2498688ca2665e51784f26f280e517f": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/RelationalRenewalAxiomAudit.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/RelationalRenewalAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-renewal-checks/20261008T185948.447355Z/RelationalRenewalAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-renewal-checks/20261008T191703.522544Z/RelationalRenewalAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-renewal-checks/20261008T191915.432934Z/RelationalRenewalAxiomAudit.lean"
@@ -310374,6 +311665,7 @@
     "2d46df0587353eaed863fde23641740cdda2abe68caf92cbaa6474d56ba96a19": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/CorrectionInfrastructureAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/CorrectionInfrastructureAxiomAudit.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/CorrectionInfrastructureAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-infrastructure-checks/20261008T075837.039887Z/CorrectionInfrastructureAxiomAudit.lean"
     ],
     "2d8e90d222e37d41ef41bb17d18a4bb08b38b560eb8fa8fe45532044724a6c63": [
@@ -310441,7 +311733,6 @@
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean"
     ],
     "30636dd8f1c5ac6444ee085e3228eae5110944a59334eb31a2b78f68e2deacf8": [
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingInstances.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/BecomingInstances.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/BecomingInstances.lean"
     ],
@@ -310563,6 +311854,10 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/period-general-runs/20261007T104916.419891Z/sources/PhaseCycleDerivation.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/phase-recovered-contact-runs/20261007T102345.860219Z/sources/PhaseCycleDerivation.lean"
     ],
+    "32e5e64d27dca7c151f4f08c71dddbbde9cfe22a25ebfcea3ce5c4ae131ab898": [
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/MetaethicalCore.lean"
+    ],
     "33866e4b1743f3cd3a7fc05c07c2df15b840776b633be6f7c99a7f93c62dbf2d": [
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/completion-applicability/root/attempt-02-GenerativeApplicabilityModel.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeApplicabilityModel.lean",
@@ -310640,7 +311935,8 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingModal.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T195935.130766Z/BecomingModal.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/BecomingModal.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/BecomingModal.lean"
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/BecomingModal.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/BecomingModal.lean"
     ],
     "386ee96bed3fd9ba52dd98f0281a8265481d3b949f8038bcf8459ce6ea37266e": [
       "experiments/market-generativity/meta-attractor/TestingReorganization.lean",
@@ -310867,6 +312163,7 @@
     ],
     "438afd1164e6e594b1e3614c120ec2a20d51df37ba6cffcdab802310b51df133": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/RenewalComparison.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/RenewalComparison.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalComparison.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-renewal-checks/20261008T191915.432934Z/RenewalComparison.lean"
     ],
@@ -311051,6 +312348,7 @@
     "4e6649999c96112c1f746d377fbfdacabe10e6ed2d12a7368f480b3986e38669": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/CutCoverageAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/CutCoverageAudit.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/CutCoverageAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/CutCoverageAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/verification/20261007T110659.328621Z/CutCoverageAudit.lean"
     ],
@@ -311136,6 +312434,10 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingRealization.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-realization-checks/20261007T165626.734264Z/sources/LivingRealization.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-recovery-checks/20261007T184505.678085Z/sources/LivingRealization.lean"
+    ],
+    "543d21ec3dfd3a66b6a3c3029223073c4038d58daa821c14985ab00deb33089a": [
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/BecomingRenewalSignatures.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/BecomingRenewalSignatures.lean"
     ],
     "5448267c53e610b28bd030dfb1a894be840c307d54cd76e4be3695f196e8cd62": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AcquiredCorrection.lean",
@@ -311344,6 +312646,10 @@
       "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/variation-warrant-review/20261007T234545.254086Z/VariationWarrant.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/VariationWarrant.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/variation-warrant-checks/20261007T234515.871133Z/VariationWarrant.lean"
+    ],
+    "5aa0a639c09683b5f1c365d522f7413fd99ef85c9aa63f52fdb1b5958b79c63b": [
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/BecomingRenewalAxiomAudit.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/BecomingRenewalAxiomAudit.lean"
     ],
     "5bb802f04b30f42b51275d3484761ec66582ea068b3e0b041cde3e51853c3b04": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/closure-repair-checks/20261008T092400.926900Z-before/AcquiredPredictionRecord.lean",
@@ -311721,6 +313027,7 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T195935.130766Z/PositionedPositiveReasonAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/PositionedPositiveReasonAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/PositionedPositiveReasonAxiomAudit.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/PositionedPositiveReasonAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/positioned-positive-reason-checks/20261008T185535.491960Z/PositionedPositiveReasonAxiomAudit.lean"
     ],
     "6ec58296e4837aa1aea7b9cb2fdd85df07890be782912f4916548a2489ea8023": [
@@ -311747,6 +313054,7 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T195935.130766Z/PositiveGroundUncertaintyAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/PositiveGroundUncertaintyAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/PositiveGroundUncertaintyAxiomAudit.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/PositiveGroundUncertaintyAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/open-future-revision-checks/20261008T131709.439945Z/PositiveGroundUncertaintyAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/open-future-revision-checks/20261008T131727.086965Z/PositiveGroundUncertaintyAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/positioned-positive-reason-checks/20261008T184937.483067Z/PositiveGroundUncertaintyAxiomAudit.lean",
@@ -312058,6 +313366,7 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T195935.130766Z/PositiveGroundUncertainty.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/PositiveGroundUncertainty.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/PositiveGroundUncertainty.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/PositiveGroundUncertainty.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositiveGroundUncertainty.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/open-future-revision-checks/20261008T131709.439945Z/PositiveGroundUncertainty.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/open-future-revision-checks/20261008T131727.086965Z/PositiveGroundUncertainty.lean",
@@ -312114,7 +313423,8 @@
     "8afd8eae9605d102fd215da5b1083fc175300341224e4db9e545e92c59ecfaa4": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T195935.130766Z/BecomingModalAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/BecomingModalAxiomAudit.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/BecomingModalAxiomAudit.lean"
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/BecomingModalAxiomAudit.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/BecomingModalAxiomAudit.lean"
     ],
     "8b0754f2a63414a40aab814ac962effaaab47c1bc83e0e28a5f93b5f902d4f3c": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/ContinuationRenewal.lean",
@@ -312193,6 +313503,7 @@
     "8ddf51311583755908ba843986f262f7a0b4071764031a6fa1a1bf2c0dbd512a": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/WholeGroundCoverage.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/WholeGroundCoverage.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/WholeGroundCoverage.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/WholeGroundCoverage.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/verification/20261007T110659.328621Z/WholeGroundCoverage.lean"
     ],
@@ -312297,6 +313608,7 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T195935.130766Z/GenerativeComparison.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/GenerativeComparison.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/GenerativeComparison.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/GenerativeComparison.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-renewal-checks/20261008T191648.388040Z/GenerativeComparison.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-renewal-checks/20261008T191703.522544Z/GenerativeComparison.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-renewal-checks/20261008T191915.432934Z/GenerativeComparison.lean",
@@ -312336,6 +313648,7 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T195935.130766Z/PositionedPositiveReason.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/PositionedPositiveReason.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/PositionedPositiveReason.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/PositionedPositiveReason.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/positioned-positive-reason-checks/20261008T185535.491960Z/PositionedPositiveReason.lean"
     ],
@@ -312494,7 +313807,8 @@
     "9cb95df62d069792ecc6a362a1777b8fe225bdbe9708a2f2665fe87c055e00ec": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T195935.130766Z/InquirySufficiencyAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/InquirySufficiencyAxiomAudit.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/InquirySufficiencyAxiomAudit.lean"
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/InquirySufficiencyAxiomAudit.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/InquirySufficiencyAxiomAudit.lean"
     ],
     "9cbffa50aa314afc7e9cd3ebed1270d720b4e755deb079487f11612d85ca7f87": [
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791254295824849000/PlasticityPreparation.lean",
@@ -312561,6 +313875,7 @@
     "a0cec7208661ee307859ca25ecb85d93b52856b949f8deea263fdc185e2886e8": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/EvaluatorGroundingAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/EvaluatorGroundingAxiomAudit.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/EvaluatorGroundingAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/evaluator-grounding-checks/20261008T185523.019489Z/EvaluatorGroundingAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/evaluator-grounding-checks/20261008T200325.071625Z/EvaluatorGroundingAxiomAudit.lean"
     ],
@@ -312649,7 +313964,8 @@
     "a5af25d221a18ce291638a314ee9c2e2bf2620e8db76f16ce38518b32824e3d3": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingFrame.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/BecomingFrame.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/BecomingFrame.lean"
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/BecomingFrame.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/BecomingFrame.lean"
     ],
     "a5b8a3c6defa189009367933defb10fe8d0ea2f39e9df368a5594ada60c993ab": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/CalibratedUpdater.lean",
@@ -312679,6 +313995,7 @@
     "a6e14bd79f1def768583cc5baa8777a8cc16e3da7b2440d0360f1834a1bf3a80": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/WholeGroundCoverageAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/WholeGroundCoverageAxiomAudit.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/WholeGroundCoverageAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/verification/20261007T110659.328621Z/WholeGroundCoverageAxiomAudit.lean"
     ],
     "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37": [
@@ -312922,10 +314239,6 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/connected/sources/EvaluationPreparation.lean",
       "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/EvaluationPreparation.lean"
     ],
-    "afd2ddd2a4b9ee90963d84c11a55833aed18d20ba0627af3dd3a80e443799889": [
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/MetaethicalCore.lean"
-    ],
     "b059831292a7865d59d87f7d1a1db3dcfcebd8901c2c0086ce7ce6c7847a36cb": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-versioned-checks/20261008T105706.086260Z/CorrectionVersionedAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-versioned-checks/20261008T105925.840067Z/CorrectionVersionedAudit.lean"
@@ -313067,6 +314380,7 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T195935.130766Z/GenerativeComparisonAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/GenerativeComparisonAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/GenerativeComparisonAxiomAudit.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/GenerativeComparisonAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/classification-robust-judgment-checks/20261008T132242.897767Z/GenerativeComparisonAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/classification-robust-judgment-checks/20261008T132520.713649Z/GenerativeComparisonAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/comparison-checks/20261007T163915.257189Z/GenerativeComparisonAxiomAudit.lean",
@@ -313095,6 +314409,7 @@
     ],
     "b97719c886e3dcd0f143a23db62fb7b8556dac35ec5c312fcdf7e14d47cee1d4": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/RelationalRenewal.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/RelationalRenewal.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-renewal-checks/20261008T185948.447355Z/RelationalRenewal.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-renewal-checks/20261008T191648.388040Z/RelationalRenewal.lean",
@@ -313220,6 +314535,7 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T195935.130766Z/JointContinuationClassificationAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/JointContinuationClassificationAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/JointContinuationClassificationAxiomAudit.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/JointContinuationClassificationAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-becoming-checks/20261008T181047.695934Z/JointContinuationClassificationAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-becoming-checks/20261008T181112.046979Z/JointContinuationClassificationAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/classification-robust-judgment-checks/20261008T132242.897767Z/JointContinuationClassificationAxiomAudit.lean",
@@ -313340,7 +314656,8 @@
     ],
     "c4ba8c9117d16d3ed0a51647b428697e5d061ff4ee2d892cdac099e802ce6321": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/BecomingFrameSignatures.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/BecomingFrameSignatures.lean"
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/BecomingFrameSignatures.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/BecomingFrameSignatures.lean"
     ],
     "c4ce285254e7a76f2b0bb3a371e590eee7379b84d072df0f1a402a177236092d": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationClosure.lean",
@@ -313482,6 +314799,7 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T195935.130766Z/PracticalJudgmentAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/PracticalJudgmentAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/PracticalJudgmentAxiomAudit.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/PracticalJudgmentAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/alignment-direction-checks/20261007T222436.216895Z/PracticalJudgmentAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/alignment-direction-checks/20261007T222744.213210Z/PracticalJudgmentAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/alignment-direction-checks/20261007T223223.414557Z/PracticalJudgmentAxiomAudit.lean",
@@ -313544,7 +314862,8 @@
     ],
     "c9fd981c2746de23c08ae5756a8ecdbc6f364cf85f7a0c01eb18b706b000c310": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingRenewal.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/BecomingRenewal.lean"
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/BecomingRenewal.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/BecomingRenewal.lean"
     ],
     "cad780a4d755a84295b7d602974bbc7320dce24195a86108c2c88694ca30e1df": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-binding-checks/20261008T125637.277558Z/CompositionalFormationSignatures.lean",
@@ -313603,7 +314922,8 @@
     "cde3d8205f26deb2983a6da110be0e94b58079ef3a3751a3c54a93206269c2dc": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T195935.130766Z/BecomingModalSignatures.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/BecomingModalSignatures.lean",
-      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/BecomingModalSignatures.lean"
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/BecomingModalSignatures.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/BecomingModalSignatures.lean"
     ],
     "ce2396e989a8476f9c3871e825a723b378b8864a115d43f98d27b94af9f31cbd": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningContexts.lean",
@@ -313753,6 +315073,7 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T195935.130766Z/InquirySufficiency.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/InquirySufficiency.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/InquirySufficiency.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/InquirySufficiency.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/InquirySufficiency.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/derived-inquiry-runs/1791286286937536000/sources/InquirySufficiency.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/finite-runs/1791274374289538000/sources/InquirySufficiency.lean",
@@ -313896,6 +315217,7 @@
     "da5e28aa8f3bc517685da82f175af0040e10a305086a24da5ef60889d6262cd5": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/CutCoverageAuditAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/CutCoverageAuditAxiomAudit.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/CutCoverageAuditAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/verification/20261007T110659.328621Z/CutCoverageAuditAxiomAudit.lean"
     ],
     "da9d06d9f0fca5cb1252105dccb473246ad66dbdb81a63b048d63b12c9da5d7b": [
@@ -314124,6 +315446,7 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T195935.130766Z/GenerativeCore.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/GenerativeCore.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/GenerativeCore.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/GenerativeCore.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/connected/pretraining/sources/GenerativeCore.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/connected/sources/GenerativeCore.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/acquired-support-use-checks/20261008T111356.246487Z/sources/GenerativeCore.lean",
@@ -314399,6 +315722,7 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T195935.130766Z/PracticalJudgment.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/PracticalJudgment.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/PracticalJudgment.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/PracticalJudgment.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/inquiry-judgment-checks/20261007T204901.661652Z/sources/PracticalJudgment.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/inquiry-judgment-checks/20261007T204918.879994Z/sources/PracticalJudgment.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/inquiry-judgment-checks/20261007T205512.709175Z/sources/PracticalJudgment.lean",
@@ -314510,6 +315834,7 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T195935.130766Z/JointContinuationClassification.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/JointContinuationClassification.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/JointContinuationClassification.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/JointContinuationClassification.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-becoming-checks/20261008T181047.695934Z/JointContinuationClassification.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-becoming-checks/20261008T181112.046979Z/JointContinuationClassification.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointContinuationClassification.lean",
@@ -314689,6 +316014,7 @@
     "e98dd3eeabfbc94407512be78d9a7412af4fe00e6fbcf7acf03e3b068286689c": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/EvaluatorGrounding.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/EvaluatorGrounding.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/EvaluatorGrounding.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluatorGrounding.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/evaluator-grounding-checks/20261008T200325.071625Z/EvaluatorGrounding.lean"
     ],
@@ -314860,6 +316186,7 @@
     "f028c3fd805d1ad423efd6322c0979e1370d65eeadfab5340788b99a0f999d4d": [
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/PracticalReachAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/PracticalReachAxiomAudit.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/PracticalReachAxiomAudit.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/practical-reach-checks/20261007T225003.193303Z/PracticalReachAxiomAudit.lean"
     ],
     "f04266c1745c71437a5500a955fb6da364eb9cce56b1a4655a04968ac450d5c3": [
@@ -314882,6 +316209,7 @@
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T195935.130766Z/StandardsBridge.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T201324.870042Z/StandardsBridge.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T203107.301650Z/StandardsBridge.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-checks/20261008T212332.763099Z/StandardsBridge.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/formed-effective-law-checks/20261007T231137.825236Z/StandardsBridge.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/unfolding-preservation-checks/20261007T225350.404286Z/StandardsBridge.lean",
       "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/historical-binding-checks/20261008T182615.583132Z/StandardsBridge.lean",

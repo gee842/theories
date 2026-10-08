@@ -1775,9 +1775,9 @@ Completion is scoped. The conditional foundation is accepted; universal validity
 
 **Significance:** It organizes the scattered chapters into one theory with a single entry point; earlier chapters remain the records of their arguments and evidence at original scope, while this chapter takes over their role as entry points.
 
-**范围：** AI（Claude）撰写的组织与表述，Ren 原话以引文标出。脊柱每条声明的公理报告为空；前提在 Lean 中是定义或假设，不是公理。无伦理公理不等于无实质公理，空公理报告也不等于没有前提。本章不新增证明，只引用已检查的结果。
+**范围：** AI（Claude）撰写的组织与表述，Ren 原话以引文标出。脊柱每条声明的公理报告为空；核心不导入核心以外的模块，只用 Lean 内置前导即可编译；前提在 Lean 中是定义或假设，不是公理。无伦理公理不等于无实质公理，空公理报告也不等于没有前提。本章不新增证明，只引用已检查的结果。
 
-**Scope:** Organization and exposition by AI (Claude), with Ren’s words quoted. Every declaration of the spine has an empty axiom report; premises are definitions or hypotheses in Lean, not axioms. No ethical axiom does not mean no substantive premise, and an empty axiom report does not mean no premises. The chapter adds no proof and cites checked results only.
+**Scope:** Organization and exposition by AI (Claude), with Ren’s words quoted. Every declaration of the spine has an empty axiom report; the core imports nothing outside itself and compiles from Lean’s prelude alone; premises are definitions or hypotheses in Lean, not axioms. No ethical axiom does not mean no substantive premise, and an empty axiom report does not mean no premises. The chapter adds no proof and cites checked results only.
 
 **后续：** 首要开放问题是整体的演绎必然性：从确定的整体描述推到其分化是同一展开中内在相关的环节；另有普遍实践根据、依存的动态化与逐步读法。
 

@@ -1,9 +1,5 @@
 import BecomingModal
 import BecomingRenewal
-import RenewalComparison
-import GenerativeComparison
-import PracticalJudgment
-import PositionedPositiveReason
 
 /-!
 # The Universal Metaethical Core on the Becoming spine
@@ -31,7 +27,8 @@ The premise card, every item named and visible:
 * L, `LiftBetter`: outcome comparisons lift to responses with several outcomes;
   conservative default, every outcome better than every outcome.
 * J1–J4: `PracticalJudgment` (protection priority, frontier selection, assigned
-  responsibility), stated on configurations by `BetterAt`.
+  responsibility), additional commitments outside the core; `BecomingInstances`
+  states them on configurations by `BetterAt`.
 * Correspondence: E (formation), `Connected`, and the reading of `living`. The
   Becoming layer can supply the last two: `Conditions.valuation` reads a run's
   formation events relationally, so that `living` is the relational reading and
@@ -42,8 +39,8 @@ Results:
   standpoint is equivalent to a seed with N_rel and N_std. This characterizes the
   content of Ren's adopted G0; it does not replace it. The forward direction is
   nearly immediate; the content lies in the backward direction and in minimality.
-* `positioned_articulation_of_articulates`: the positioned articulation D of
-  `PositionedPositiveReason` follows from A with G0's unindexed significance.
+* `positioned_articulation_of_articulates`: the positioned articulation D follows
+  from A with G0's unindexed significance.
 * `universal_reason`: a sound inquiry whose goal is new living content gives every
   position with access a contributory reason for it.
 * Minimality: dropping the seed, N_rel, N_std, connection or A each leaves a
@@ -60,11 +57,16 @@ Nothing here proves S0, N, A, C, L or J, binds a position that rejects them, or
 treats bringing new lives into existence. A contributory reason is not a duty, a
 ranking or a prediction of recognition or compliance. Every declaration has an
 empty axiom report.
+
+The core imports only the spine and its foundation. G0, C, D and the secured positive
+ground are stated here once; `BecomingInstances` shows that the definitions of
+`GenerativeComparison` and `PositionedPositiveReason` are these, so their theorems
+apply without the core depending on them.
 -/
 
 namespace Becoming
 
-open Generative Generative.InquirySufficiency GenerativeComparison PositionedPositiveReason
+open Generative Generative.InquirySufficiency
 
 /-! ## Boundaries and neutrality -/
 
@@ -159,14 +161,26 @@ end Valuation
 
 variable {S A C Pos : Type}
 
-/-- The frame's configurations as an inventory under a reading. -/
-def Frame.inventory (F : Frame S A C) (reading : C → Prop) : Inventory S C :=
-  ⟨F.realized, reading⟩
+/-- G0 on the frame: living content realized at a configuration is positively
+relevant there. -/
+def G0 (F : Frame S A C) (living : C → Prop) (positive : S → C → Prop) : Prop :=
+  ∀ s c, living c → F.realized s c → positive s c
 
 /-- Claim-level significance is G0 for the frame, with unindexed positive relevance. -/
 theorem Valuation.g0 (F : Frame S A C) {V : Valuation Pos C} (all : V.Significant) :
-    G0 (F.inventory V.living) (fun _ c => ∀ p, V.sig p c) :=
+    G0 F V.living (fun _ c => ∀ p, V.sig p c) :=
   fun _ c alive _ p => all p c alive
+
+/-- Every admitted outcome of the response holds positive content absent before it. -/
+def SecuresPositiveGround {H R : Type} (admitted : R → H → Prop) (before : H → C → Prop)
+    (positive : H → C → Prop) (r : R) : Prop :=
+  ∀ h, admitted r h → ∃ c, positive h c ∧ ¬ before h c
+
+/-- D: positioned articulation. Endorsement does not occur in it. -/
+def PositionedArticulation {H R : Type} (access : Pos → R → Prop)
+    (admitted : R → H → Prop) (before : H → C → Prop) (positive : H → C → Prop)
+    (Reason : Pos → R → Prop) : Prop :=
+  ∀ p r, access p r → SecuresPositiveGround admitted before positive r → Reason p r
 
 /-- A's rule: securing positive content from one's own standpoint, with access,
 supplies a contributory reason. -/
@@ -197,10 +211,11 @@ theorem universal_reason {R : Type} {k : Nat} (F : Frame S A C) (V : Valuation P
     (policy : Policy A R k)
     (sound : Sound F.P safe (Novel F V.living before) sense response policy B) :
     ∀ p, access p policy → Reason p policy :=
-  every_situated_position_has_reason access (Scope F.P sense response B) before
-    (F.inventory V.living) (fun _ c => ∀ p, V.sig p c) Reason
-    (Valuation.g0 F (Valuation.significant_of_grounds connected grounds))
-    (positioned_articulation_of_articulates articulate) policy (Scope.secures sound)
+  fun p available => positioned_articulation_of_articulates articulate p policy available
+    fun t reached => match Scope.secures sound t reached with
+      | ⟨c, alive, held, fresh⟩ =>
+        ⟨c, Valuation.g0 F (Valuation.significant_of_grounds connected grounds) t c alive held,
+          fresh⟩
 
 /-- Access as a realized claim: a position's access is formed in the unfolding. -/
 def AccessAt {R : Type} (F : Frame S A C) (claim : Pos → R → C) (s : S) (p : Pos) (r : R) :
@@ -209,14 +224,15 @@ def AccessAt {R : Type} (F : Frame S A C) (claim : Pos → R → C) (s : S) (p :
 
 /-! ## Comparison, lifting and practical judgment on the frame -/
 
-/-- C on the frame. -/
-abbrev Comparison (F : Frame S A C) (living : C → Prop) (Better : S → S → Prop) : Prop :=
-  ComparisonPrinciple (F.inventory living) Better
+/-- A generative extension: the second configuration keeps every claim of the first
+and realizes some living claim the first does not. -/
+def Extension (F : Frame S A C) (living : C → Prop) (s t : S) : Prop :=
+  (∀ c, F.realized s c → F.realized t c) ∧
+    ∃ c, living c ∧ F.realized t c ∧ ¬ F.realized s c
 
-/-- J1/J2 on configurations: basic conditions first, then living gains. -/
-def BetterAt (F : Frame S A C) (basic living : C → Prop) : S → S → Prop :=
-  PracticalJudgment.Better (fun s c => basic c ∧ F.realized s c)
-    (fun s c => living c ∧ F.realized s c)
+/-- C on the frame. `Better s t` says that `t` is strictly better. -/
+def Comparison (F : Frame S A C) (living : C → Prop) (Better : S → S → Prop) : Prop :=
+  ∀ s t, Extension F living s t → Better s t
 
 /-- L, conservative default: every outcome of `a` is better than every outcome of `b`. -/
 def LiftBetter (F : Frame S A C) (better : S → S → Prop) (s : S) (a b : A) : Prop :=
@@ -262,12 +278,6 @@ namespace Conditions
 
 variable {F Cond : Type} {P : Process S A} (K : Conditions S F Cond) (r : Run P)
   (own sig : Pos → F × Nat → Prop)
-
-/-- The spine's `living` is the recorded relational reading. -/
-theorem living_iff_relational (e : F × Nat) :
-    (K.valuation r own sig).living e ↔
-      (RenewalComparison.relationalInventory (fun _ : Unit => K.along r)).realized () e :=
-  Iff.rfl
 
 /-- A condition in which every living formation participates connects the whole. -/
 theorem connected_of_common (c₀ : Cond)

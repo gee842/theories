@@ -80,7 +80,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## becoming-renewal-reading ← relational-reading-comparison
 
-`formal-reuse` — living_iff_relational 表明脊柱上的 living 就是该结果的 relationalInventory（取一条延续）。 / living_iff_relational shows that the spine's `living` is that result's relationalInventory (for one continuation).
+`formal-reuse` — 桥接层的 living_iff_relational 表明脊柱上的 living 就是该结果的 relationalInventory（取一条延续）；核心不导入该结果。 / The bridge's living_iff_relational shows that the spine's `living` is that result's relationalInventory (for one continuation); the core does not import it.
 
 **Producer output / 上游输出:** 关系读法：活跃且不消耗的形成事件为生成根据。 / The relational reading: active events of non-consuming formations are generative grounds.
 
@@ -104,7 +104,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 ## becoming-spine-instances ← metaethical-core-characterization
 
-`formal-reuse` — comparison_lifts 与各提升定理直接使用 Comparison（C）、LiftBetter（L）、Frame.inventory 与 Enabled；PositiveGroundUncertainty 与 PositionedPositiveReason 的接口实例就是 universal_reason。 / comparison_lifts and the lifted theorems directly use Comparison (C), LiftBetter (L), Frame.inventory and Enabled; the interface instance for PositiveGroundUncertainty and PositionedPositiveReason is universal_reason itself.
+`formal-reuse` — comparison_lifts 与各提升定理直接使用核心的 Extension、Comparison（C）、LiftBetter（L）与 Enabled；g0_iff、extension_iff、comparison_iff 表明 G0、生成扩展与 C 就是 GenerativeComparison 在框架库存上的定义。 / comparison_lifts and the lifted theorems directly use the core's Extension, Comparison (C), LiftBetter (L) and Enabled; g0_iff, extension_iff and comparison_iff show that G0, generative extension and C are GenerativeComparison's definitions on the frame's inventory.
 
 **Producer output / 上游输出:** 框架上的生成比较原则 C 与保守提升规则 L 的定义。 / The definitions of generative comparison principle C on a frame and the conservative lifting rule L.
 
@@ -477,18 +477,6 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 同一完整 State、实际剩余支持、预算及原参数；后继扰动为 noShock，无新增储备。 / Same full State, actual remaining stock, budget and original parameters; successor disturbance is noShock with no added reserve.
 
 [Connection evidence / 连接证据](experiments/market-generativity/formal/RegimeTransition.lean)
-
-## metaethical-core-characterization ← positioned-positive-reason
-
-`formal-reuse` — universal_reason 直接调用 every_situated_position_has_reason；其前提 D 由 positioned_articulation_of_articulates 从 A 推出，所需 G0 由 significant_of_grounds 从种子、N_rel、N_std 推出。 / universal_reason directly calls every_situated_position_has_reason; its premise D is derived from A by positioned_articulation_of_articulates, and its G0 from seed, N_rel and N_std by significant_of_grounds.
-
-**Producer output / 上游输出:** 对任一位置、任一回应：有通达且回应在所见范围上确保正面新内容，即有一项支持理由。 / For any position and response: access and secured positive new content on the scope supply a contributory reason.
-
-**Consumer input / 下游输入:** PositionedArticulation access admitted before positive Reason，positive 取不带索引的意义 ∀ p, sig p c。 / PositionedArticulation access admitted before positive Reason, with positive the unindexed significance ∀ p, sig p c.
-
-**Retained conditions / 保留条件:** 所见范围取 Scope（sound 策略的实际执行端点）；库存取框架在 living 读法下的状态库存。 / Admitted continuations are Scope (endpoints of actual executions of a sound policy); the inventory is the frame's state inventory under the `living` reading.
-
-[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean)
 
 ## multivalued-joining-common-structure ← branching-tests-bisimulation
 

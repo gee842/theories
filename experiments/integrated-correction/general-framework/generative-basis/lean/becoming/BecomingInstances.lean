@@ -1,4 +1,8 @@
 import MetaethicalCore
+import GenerativeComparison
+import PositionedPositiveReason
+import PracticalJudgment
+import RenewalComparison
 import JointContinuationClassification
 import WholeGroundCoverage
 import CutCoverageAudit
@@ -12,8 +16,13 @@ import CorrectionInfrastructure
 
 Generic ethics modules are polymorphic over small interfaces. This module gives
 each interface from the spine, or proves that a module's own combinator is the
-spine's, so their theorems apply to one unfolding without copying them.
+spine's, so their theorems apply to one unfolding without copying them. The core
+imports none of these modules; the dependency runs from them to the spine.
 
+* The core's G0, C, secured positive ground and positioned articulation D are, by
+  definition, those of `GenerativeComparison` and `PositionedPositiveReason` on the
+  frame's inventory; the relational reading of `living` is `RenewalComparison`'s.
+  J1/J2 on configurations, `BetterAt`, is `PracticalJudgment.Better`.
 * Seed–edge closures (`WholeGroundCoverage.Reached`, `CutCoverageAudit.Reach`)
   and finite chains (`EvaluatorGrounding.Chain`) are reachability on the process
   whose steps are the edges.
@@ -233,6 +242,56 @@ theorem revise_is_after {Q : Type} (hs : List (StandardsBridge.Rule Q)) (q : Q) 
 
 end Continuations
 
+/-! ## The core's definitions are those of the existing modules -/
+
+section Definitions
+
+variable {S A C Pos : Type}
+
+/-- The frame's configurations as an inventory under a reading. -/
+def Frame.inventory (F : Frame S A C) (reading : C → Prop) : GenerativeComparison.Inventory S C :=
+  ⟨F.realized, reading⟩
+
+theorem g0_iff (F : Frame S A C) (living : C → Prop) (positive : S → C → Prop) :
+    G0 F living positive ↔ GenerativeComparison.G0 (F.inventory living) positive :=
+  Iff.rfl
+
+theorem extension_iff (F : Frame S A C) (living : C → Prop) (s t : S) :
+    Extension F living s t ↔ GenerativeComparison.GenerativeExtension (F.inventory living) s t :=
+  Iff.rfl
+
+theorem comparison_iff (F : Frame S A C) (living : C → Prop) (Better : S → S → Prop) :
+    Comparison F living Better ↔
+      GenerativeComparison.ComparisonPrinciple (F.inventory living) Better :=
+  Iff.rfl
+
+theorem securesPositiveGround_iff {H R : Type} (admitted : R → H → Prop)
+    (before : H → C → Prop) (positive : H → C → Prop) (r : R) :
+    SecuresPositiveGround admitted before positive r ↔
+      PositionedPositiveReason.SecuresPositiveGround admitted before positive r :=
+  Iff.rfl
+
+theorem positionedArticulation_iff {H R : Type} (access : Pos → R → Prop)
+    (admitted : R → H → Prop) (before : H → C → Prop) (positive : H → C → Prop)
+    (Reason : Pos → R → Prop) :
+    PositionedArticulation access admitted before positive Reason ↔
+      PositionedPositiveReason.PositionedArticulation access admitted before positive Reason :=
+  Iff.rfl
+
+/-- J1/J2 on configurations: basic conditions first, then living gains. -/
+def BetterAt (F : Frame S A C) (basic living : C → Prop) : S → S → Prop :=
+  PracticalJudgment.Better (fun s c => basic c ∧ F.realized s c)
+    (fun s c => living c ∧ F.realized s c)
+
+/-- The spine's `living` is the recorded relational reading. -/
+theorem Conditions.living_iff_relational {F Cond : Type} {P : Process S A}
+    (K : Conditions S F Cond) (r : Run P) (own sig : Pos → F × Nat → Prop) (e : F × Nat) :
+    (K.valuation r own sig).living e ↔
+      (RenewalComparison.relationalInventory (fun _ : Unit => K.along r)).realized () e :=
+  Iff.rfl
+
+end Definitions
+
 /-! ## Situations of a frame and the lifting rule -/
 
 section Lifting
@@ -243,7 +302,7 @@ variable {S A C : Type}
 
 /-- Every outcome of `b` generatively extends every outcome of `a`. -/
 def LiftExtension (F : Frame S A C) (living : C → Prop) (s : S) (a b : A) : Prop :=
-  ∀ t, F.P.step s a t → ∀ t', F.P.step s b t' → GenerativeExtension (F.inventory living) t t'
+  ∀ t, F.P.step s a t → ∀ t', F.P.step s b t' → Extension F living t t'
 
 /-- C lifts: a lifted extension is a conservative lifted comparison. `Better first
 second` follows `GenerativeComparison`: the second is better. -/
