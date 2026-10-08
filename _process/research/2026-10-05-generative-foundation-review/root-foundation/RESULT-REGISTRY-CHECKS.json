@@ -14,5 +14,1274 @@
   "checker_tests_passed": 9,
   "errors": [],
   "source_drift": [],
-  "lean_sources_changed_by_this_task": []
+  "lean_sources_changed_by_this_task": [],
+  "post_completion_registry_check": {
+    "exit_code": 0,
+    "records": 16,
+    "errors": [],
+    "source_drift": [],
+    "scope": "Documentary checks only; no Lean build or semantic proof audit."
+  },
+  "incoming_work": {
+    "observed_at_utc": "2026-10-08T12:39:58.723366+00:00",
+    "after_completion_commit": "6f10fb336c544a25dba75de8c5007435ad86dc35",
+    "path_count": 248,
+    "by_status": {
+      " M": 44,
+      "??": 204
+    },
+    "scope": "Observed worktree changes after the registry completion commit. New studies, evolving source and frozen copies are not independent result counts. This snapshot inventories incoming work without compiling, accepting, migrating or committing those other sessions’ changes. Observed hashes are inventory fingerprints, not reviewed-source certifications.",
+    "new_research_log_entries": [
+      "**有限判断与慧根 / Limited judgment and the wisdom root，2026-10-08。** [5项新 Lean 应用及反审](_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md)明确正确风险陈述可以伴随实际失败，单次结果不足以独自评价事前界限。/ This corrects the claim strength used in the necessity test, with 59 inherited audits separately credited. G0/J/E, actual losses and the open full-root target remain explicit.",
+      "**共同组织与旧数学校正 / Common organization and mathematical reconciliation，2026-10-08。** [当前接通 / Connected account](theories/meta-attractor/COMMON-ORGANIZATION.md) 修正正反馈、协方差、主模态及稳定性过度推论；同一付费历史接通形成、调节、失败留痕、更新机制取得及再次修订。41项新 Lean 定理／89项新声明审计，112项继承定理审计分列。/ The bridge, sensing recipe, candidate repertoire and event schedule remain explicit premises; the next connection is their formation and revision within continuing activity, not another permanent supervisor. Earlier local results and genuine failures remain.",
+      "**实际执行与证据接续 / Executed changes and continuing evidence，2026-10-08。** [论证、反审与实查](_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-INTEGRATION.md)由有界写入指令推导变化范围，以同一变换接续候选，耦合权限、记录及旧命令撤销：27项新 Lean 定理／57项审计、24,416项记录匹配。/ This closes the instruction-to-evidence connection within the specified grammar; a misleading caller label cannot understate its executed effect. Exact transport permits the worked shutdown in 19 units, while an extra writer can leave identical records with false coverage. Runtime mediation, physical semantics, actual source/fault coverage and protected command execution remain substantive conditions; earlier temporal and ethical results are reused.",
+      "**诊断修订接入预测，局部连接完成 / Diagnostic repair joined to prediction，2026-10-08。** [新论证、反例与实查](_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#32-connect-completed-diagnosis-to-the-revised-predictor)复用已完成的一般修订循环，接通取得的校正量、扩展关系、实际预测误差及有限失误后的恢复。17项新Lean定理／21项审计，32项继承定理／41项审计分列。/ The named join is complete under its common-reference response family. Four fitting records do not certify omitted curvature or uniquely locate physical faults. Application now requires actual reference, informative access, calibration/transfer and support; no new empirical validation.",
+      "**生成之善先于机构形式 / Generative goodness before institutional form，2026-10-08。** [Ren 的纠正与理论 §§75–77](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#generative-good-before-institutional-power)撤回把初次授权设为基础之墙的判断：先评价整体生生，再说明组织能力应怎样形成、扩大、维持或改变。/ Constructive organizational expansion can itself be a positive generative achievement. [Argument and counterreview](_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#generative-first-correction-account) preserve actual losses, G0/J, historical cases and other sessions; no new proof or experiment.",
+      "**普遍唯一性的方法纠正 / Nondual correction of the uniqueness inquiry，2026-10-08。** [复查与研究改向](_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md#9-nondual-correction-of-the-target-and-stopping-judgment)撤回把一阶不同构反例当作共同生成基础研究的停止理由：给定位置上的可达性未解释构成性形成，完整模型双射也未证为根基唯一性的必要门槛。/ Existing 33 theorems remain valid; no new proof. Resume the target of constitutive necessity within the same unfolding, retaining genuine differences and the unproved universal claim.",
+      "**认知、学习与演化心理 / Cognition, learning and evolutionary psychology，2026-10-08。** [完整目标与当前候选](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md)在取得组合、构造与修复之后，新增[实际沟通及传递](_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPOSITIONAL-TRANSMISSION-INTEGRATION.md)的27项 Lean 定理／45项审计，151项继承审计分列。实际输出进入他人的取得、重构与再传递；任意有限后继可保留操作，也可保留任务区别的丧失，有限接触还可造成改变后稳定。/ The operation-to-later-learning interface is conditionally complete. Next: formation and revision of segmentation/reconstruction dispositions through social experience, selective attention and memory. Fresh participant support and the learning repertoire remain supplied; full cognition, evolutionary psychology and experience remain active requirements."
+    ],
+    "registry_adoption": "Another active session added risk-certificate-outcome-distinction and revised wisdom-root through the new record workflow. Its scientific acceptance remains in the cited source/receipt scope.",
+    "paths": [
+      {
+        "status": " M",
+        "path": "AGENTS.md",
+        "observed_sha256": "0371e616118b4c19208a6680590dacd25ac2f0b1b1c7b678626c36c23106da88"
+      },
+      {
+        "status": " M",
+        "path": "RESEARCH.md",
+        "observed_sha256": "652df3f1a9f572a7de588b4d86d08b766e6ccb954c7889fe6810500589ca8130"
+      },
+      {
+        "status": " M",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+        "observed_sha256": "20b66c9212ac9a38256a99d990a39ddeeb14de0b03f30409098f503df001785f"
+      },
+      {
+        "status": " M",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DIAGNOSTIC-TRACKING-INDEX-EDITS.json",
+        "observed_sha256": "f712e0507982ba609587fae8d7f821071b87cfc28e0c3dcd60b6431ad7e81db4"
+      },
+      {
+        "status": " M",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+        "observed_sha256": "0e1b2b6cb5b65e8a126320a8630c64307a52e2fd45bb498eaef5a985705be1fb"
+      },
+      {
+        "status": " M",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-FIRST-ORDER-WALL-INTEGRATION.md",
+        "observed_sha256": "6b02eb474d288400212a9a732bbe46ebd712b30c5061347e25d5288e10004458"
+      },
+      {
+        "status": " M",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+        "observed_sha256": "87665a1d040ca659abf9fb3e7daee014c5d9a073d1f87b7b92e76a0474395347"
+      },
+      {
+        "status": " M",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+        "observed_sha256": "722f5ee852a7d8b2c0e36789226d0b522aedc73ab1a93ccfb3ed31e8deb499b7"
+      },
+      {
+        "status": " M",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INDEX-EDITS.json",
+        "observed_sha256": "6d5fad14a2856c9dc60efd7c6ad1467ff72f8de7bbf4997b86567e7110becc95"
+      },
+      {
+        "status": " M",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md",
+        "observed_sha256": "fb809c35b6c065510d7b94d0ed6e50cf2a2d64dbcb907de33d4a07d26ead6c4c"
+      },
+      {
+        "status": " M",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-REVIEW.md",
+        "observed_sha256": "c6dd42cdef29f64b373f92f308285679d2a98140750afeaea3ddce100face226"
+      },
+      {
+        "status": " M",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-CHECK.py",
+        "observed_sha256": "bc59b5c81de1d23a915fb893d092f5a8e25c7d1ee1709bc3f27fcbcd610eaece"
+      },
+      {
+        "status": " M",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-CHECKS.json",
+        "observed_sha256": "6347304d7ba35fb462b1bba6a05d3d6487eb95e3d52431de9899e3c474823140"
+      },
+      {
+        "status": " M",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-INTEGRATION.md",
+        "observed_sha256": "1c6f3c8e3202a7f7bb5c0fdf2c78fc0317ad0ae5f11012deb21792fcc6bb9e68"
+      },
+      {
+        "status": " M",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+        "observed_sha256": "94db3f15e10a1f3f6a32539b1bb1220e5f6b976f7cb2bded16ad584aaf230207"
+      },
+      {
+        "status": " M",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+        "observed_sha256": "ac30ae343cb5291be04b402c5f4ebc6a50a4afdb1b04eba01a372b95b999213c"
+      },
+      {
+        "status": " M",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalTransmission.lean",
+        "observed_sha256": "d5a6fb23c43dd10782d7696fbbc7e433013eb4000c7ee4f425a8cf4b6e50211b"
+      },
+      {
+        "status": " M",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md",
+        "observed_sha256": "66fada7795dfac4c178316cc2f2f323b0ce83f302d2169cde2391ef750ef41d8"
+      },
+      {
+        "status": " M",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-verification.json",
+        "observed_sha256": "523492219e8c724fb9e16c165cdd94bf47d4b6d926ff316acd64a1ce3b734c59"
+      },
+      {
+        "status": " M",
+        "path": "experiments/market-generativity/meta-attractor/README.md",
+        "observed_sha256": "de566d732e400a95fa2e9c765fd7ff2a6b1bbc280d9446f7fd88d38c705d75b2"
+      },
+      {
+        "status": " M",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-finish-alignment-fruits.md",
+        "observed_sha256": "10e736789e7e3db1fe0573d5950331da2bf045d2c5e8d3111205199f5bf9b706"
+      },
+      {
+        "status": " M",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+        "observed_sha256": "aeaca030c51ed84409e3c63cb2887b459501fa3aabd4bd2d605cf06cdcf3a3b6"
+      },
+      {
+        "status": " M",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md",
+        "observed_sha256": "eff32e59a6b5700f8dc9ddd3de3c664497b0d6655eca6992a94b66ee8d196ecc"
+      },
+      {
+        "status": " M",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md",
+        "observed_sha256": "694d0503a3a46e69476fc66c221d414e982125d987d0da894f619a1c54a4b842"
+      },
+      {
+        "status": " M",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md",
+        "observed_sha256": "0618901f07d6e68f918607cf0a6e148af506d2766e3705d084b5de120aa0eb52"
+      },
+      {
+        "status": " M",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md",
+        "observed_sha256": "3b95a7dc4bf33eb7858fcbb49406b9a588d2dae021aad305a89b371fe07e837c"
+      },
+      {
+        "status": " M",
+        "path": "sources/SOURCES.md",
+        "observed_sha256": "c41489d2133341ee470e14ef83e2acf727df7dcf0848069caa8b8259bd345458"
+      },
+      {
+        "status": " M",
+        "path": "theories/meta-attractor/GENERATIVE-REGIMES.md",
+        "observed_sha256": "d2a6c19c0e4817467351d4c057d8c5ddea92674ec0dd8000598afaf597d94544"
+      },
+      {
+        "status": " M",
+        "path": "theories/meta-attractor/README.md",
+        "observed_sha256": "76b058984b0609974abcc826754afa103a30ce5936fba07e67cf6e325768b640"
+      },
+      {
+        "status": " M",
+        "path": "theories/shengsheng-buxi-generative-existence/README.md",
+        "observed_sha256": "02369043fd345ea6db55ffaefcf32178c3ba976ef79b753f15916a05ec1e459e"
+      },
+      {
+        "status": " M",
+        "path": "theories/shengsheng-buxi-generative-existence/results/GENERATIVITY-CHAIN.md",
+        "observed_sha256": "853ea822141eba0249b679a50582fa875b8e92904b7a0b7dc9e1a848195ee8ce"
+      },
+      {
+        "status": " M",
+        "path": "theories/shengsheng-buxi-generative-existence/results/RESULT-REGISTER.md",
+        "observed_sha256": "4ea752b93093e53d69f3ad4a5d23a1a2b635c217312ee1f205fb4f602adbad29"
+      },
+      {
+        "status": " M",
+        "path": "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+        "observed_sha256": "05d4ffcd927ecd7e4d373fae56520bb0ef846c2ef7858aed6bda9569ff891304"
+      },
+      {
+        "status": " M",
+        "path": "theories/shengsheng-buxi-generative-existence/results/data/generativity-chain.json",
+        "observed_sha256": "a02a4cce209103e1c0932069c44985ba51bfc3486a25891f2ca0fb3517d8b3c2"
+      },
+      {
+        "status": " M",
+        "path": "theories/shengsheng-buxi-generative-existence/results/records/wisdom-root.json",
+        "observed_sha256": "a29ea765d69e65f5ac69fe79cd473540fe666ee32ae79ea64e131f410a2b0acc"
+      },
+      {
+        "status": " M",
+        "path": "theories/shengsheng-buxi-generative-existence/results/records/wisdom-root.md",
+        "observed_sha256": "a715b85ef97b045c2823f084b7ff28dcbd532e0c8b438352f65d63a066eb0950"
+      },
+      {
+        "status": " M",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+        "observed_sha256": "845c9608e67723ef5e306c02e73701aa082bcb761dafa0db921c9bcb661c0d6a"
+      },
+      {
+        "status": " M",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md",
+        "observed_sha256": "bea27662ac4b3cc97bc50083a46b5e07fb399573870ec542d2a26985bbeeb504"
+      },
+      {
+        "status": " M",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+        "observed_sha256": "44f830f419397e92b99a6c881b75a8bc7009868ac7d22185225b58544484279f"
+      },
+      {
+        "status": " M",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+        "observed_sha256": "481f9b27b5b0a4edff0f992c66f1ff1bf422ee66babba71ce64d0c49646bf12a"
+      },
+      {
+        "status": " M",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+        "observed_sha256": "046962117783fc81db9b59566e9ecf1f88171ae70912bd09298cd462158b0e15"
+      },
+      {
+        "status": " M",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+        "observed_sha256": "7ebc4087eb8f328896b86c1ca5f2ca3d5d84038ace224fa548a2d59d8a2ad684"
+      },
+      {
+        "status": " M",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+        "observed_sha256": "f4c4e7fa49e5c14e15691b3572c3e061b2aae6b0905beeda4239e2a40369259d"
+      },
+      {
+        "status": " M",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md",
+        "observed_sha256": "d3523b0a1dc83425900729796c319d5af58917c8fc83a9caa986ef8e2241d14f"
+      },
+      {
+        "status": "??",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPOSITIONAL-TRANSMISSION-CHECK.py",
+        "observed_sha256": "490a2d0556c79da5415c75dff97d89aa72eade9ee93d8c566ad29d9642fa71ce"
+      },
+      {
+        "status": "??",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPOSITIONAL-TRANSMISSION-CHECKS.json",
+        "observed_sha256": "ff34b86eb95ea9911f22c4486895f4f928c45b87a5785ab8b6ecba9c9b10950e"
+      },
+      {
+        "status": "??",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPOSITIONAL-TRANSMISSION-INDEX-EDITS.json",
+        "observed_sha256": "4ad3c0060a6e27080f044c9f0b5f9a677ef1ecc0f53c439fca212a48b15a7214"
+      },
+      {
+        "status": "??",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPOSITIONAL-TRANSMISSION-INTEGRATION.md",
+        "observed_sha256": "097affbdca731a2b33b1b80679b85f4c87dd012706f02ab09273a8bcef397ced"
+      },
+      {
+        "status": "??",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DIAGNOSTIC-TRACKING-CHECKS.json",
+        "observed_sha256": "44f8ba160d40519f397f8618699b71f3d14587f698d2a152b95d57b4d280ca67"
+      },
+      {
+        "status": "??",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NONDUAL-CORRECTION-CHECK.py",
+        "observed_sha256": "c55f197ad8056f0ba5a5389fd2aca1ff480b405e7e118f4b7697845348c4550c"
+      },
+      {
+        "status": "??",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NONDUAL-CORRECTION-CHECKS.json",
+        "observed_sha256": "7e51e353dc941ef60866a05b6dac1e66ea205157220f44a9d45c579c7c2af2de"
+      },
+      {
+        "status": "??",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NONDUAL-CORRECTION-EDITS.json",
+        "observed_sha256": "cee70292a902dc9f11c93f7a866aa1963a95bb7f20f70afda1b3db20130ff6b2"
+      },
+      {
+        "status": "??",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-FIRST-CORRECTION-CHECKS.json",
+        "observed_sha256": "9ce4cab15e8f75301c76f61e881d727153aab16b8f3a79f768fb029630764d79"
+      },
+      {
+        "status": "??",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-FIRST-CORRECTION-EDITS.json",
+        "observed_sha256": "ae381960502ac204394b12c1861db1127312b7d5f8b91807b08ce66c11c24473"
+      },
+      {
+        "status": "??",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-CHECKS.json",
+        "observed_sha256": "e59d08eeb0b9bcd93e6e5d79fe6d151858e718cdab7bfccf46b5ce192f181729"
+      },
+      {
+        "status": "??",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-CHECK.py",
+        "observed_sha256": "3968371565dccd072b6d37a7a174b3fcd2fd72403d79112be6dedba101a5c7f9"
+      },
+      {
+        "status": "??",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-CHECKS.json",
+        "observed_sha256": "8287a5d8077c7c07251d7a9dd5a621f970d36e9ec7facf629971b418cba3ed00"
+      },
+      {
+        "status": "??",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-INDEX-EDITS.json",
+        "observed_sha256": "7de1786e65109a5279580519f5f806ef3184b55e4923b68c15337e9790351fce"
+      },
+      {
+        "status": "??",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-INTEGRATION.md",
+        "observed_sha256": "f2b5b0d46d1269db69020f369704c07247acbd5e7c1245f7f3cc96bc1b1968d4"
+      },
+      {
+        "status": "??",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEDIATED-CONTROL-NAVIGATION-EDITS.json",
+        "observed_sha256": "bface1e880cd5590e06474c1ccfb95173a330bcba5bb03820dedf72ee9130dcd"
+      },
+      {
+        "status": "??",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION-CHECK.py",
+        "observed_sha256": "4b33e84fdedf8cc8492426c5e434accc7f2e54ccc73bb904edc3f50ee9524ea5"
+      },
+      {
+        "status": "??",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION-CHECKS.json",
+        "observed_sha256": "45963a57ba248380bad3f5bdecb570b489730cd8c436cd0ef1f9ccb8082d4822"
+      },
+      {
+        "status": "??",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION-INDEX-EDITS.json",
+        "observed_sha256": "0b61d938272d8a81aa6a32fd5292283c4c2db357feca7b967a9d15d8a19959c5"
+      },
+      {
+        "status": "??",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-RECONCILIATION.md",
+        "observed_sha256": "43163bd3af90b8f7b6693d8aaaf454a5f56e4d4b5b83281a5dddf30c09a069c9"
+      },
+      {
+        "status": "??",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-GROUNDING-REVIEW.md",
+        "observed_sha256": "804a87f0cc119a8510fded911e43c921f453b7f360bf23baff6064f2dded989d"
+      },
+      {
+        "status": "??",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-EXPERIMENTAL-EVIDENCE-INDEX-EDITS.json",
+        "observed_sha256": "46dcbd9270425bd3dd8dcc28131f951bab851b5873509ea64ea567bc1f35ba76"
+      },
+      {
+        "status": "??",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.json",
+        "observed_sha256": "f468cbc1e22d0782861cac71766e727436601828e9fe5434518baf93a1fe81fd"
+      },
+      {
+        "status": "??",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md",
+        "observed_sha256": "43a5a95d2a01839ad6b0cfacab6d6bc9d27f8c708ed6b74b34ec575deafff9c6"
+      },
+      {
+        "status": "??",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-INDEX-EDITS.json",
+        "observed_sha256": "87c8a4a1d79c990eaf4d610503ffd0d7baa5f5d824a4af018ddf6486a278d2ac"
+      },
+      {
+        "status": "??",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md",
+        "observed_sha256": "866a74d352d910cfcec2fe581cd596fdba55a84656e519cc6ee91a8d7bf33b97"
+      },
+      {
+        "status": "??",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-REGISTRY-CHECKS.json",
+        "observed_sha256": "1ce73affa6720678ecfdcbad85066f0ab770a04d52ef3d13363a5f35e806c989"
+      },
+      {
+        "status": "??",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/check_diagnostic_tracking_integration.py",
+        "observed_sha256": "5dcca612c15d5a9beb9748f20aaa03e94d42a69ae1580e7e85b5d36245092fec"
+      },
+      {
+        "status": "??",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/check_generative_first_correction.py",
+        "observed_sha256": "779092ffd7798c5c17c289aef1bb42e8c82d9afebf9b8193ff9eb3b3562f9840"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryContextualStructure.lean",
+        "observed_sha256": "8846b9acf7eac9e8cd5b068e3e84dc4de0f51d5e97831140d03a26caee237c83"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryHistoryInterfaces.lean",
+        "observed_sha256": "d2bb8a69d897d5a434a001595f76cac283c7de2e8482e17691e7c7db42b00248"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningContexts.lean",
+        "observed_sha256": "34036868800354555daeb015ea57ab490c168ae2f053b8b9870a90f7dd138dc5"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomFallibleJudgment.lean",
+        "observed_sha256": "3c04364b3c56f6157b5f9a822cf1a7853da8e0fcad0a79a3bd92184a791aaa3a"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_wisdom_fallible_judgment.py",
+        "observed_sha256": "361785e6f177fc11b520a6633af3c53cbe4658cb39218abdda565845328595f5"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/wisdom-fallible-judgment-checks/20261008T122517.399770Z/ContextualWisdom.log",
+        "observed_sha256": "edbaa4a1b3b9a6a742845c9d1fa8570deabc8634938c2e08098a16263a88a3cf"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/wisdom-fallible-judgment-checks/20261008T122517.399770Z/CorePredication.log",
+        "observed_sha256": "99658a48ed968ef4a402aff77a5516dc53f973c07705fbb437b70ecca5d0865d"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/wisdom-fallible-judgment-checks/20261008T122517.399770Z/GeneratedPaths.log",
+        "observed_sha256": "3ba7fc4e0f2dd8d477a7a250d44bc5b3dfa1484805f4313385907dfcb9da7048"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/wisdom-fallible-judgment-checks/20261008T122517.399770Z/GenerativeCore.log",
+        "observed_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/wisdom-fallible-judgment-checks/20261008T122517.399770Z/WisdomFallibleJudgment.log",
+        "observed_sha256": "99cfd3cb96e8737118577e72cbbaa3b04465b29a1b075d4e69e6e15ebb2310a6"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/wisdom-fallible-judgment-checks/20261008T122517.399770Z/WisdomResponseStructure.log",
+        "observed_sha256": "9a847f37ba4c8a2b9f3c21578affcafef95fb4cc64aacd2b7a745544fde60fcc"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/wisdom-fallible-judgment-checks/20261008T122517.399770Z/receipt.json",
+        "observed_sha256": "d7a472e1d2757c88c16c8678d1d35bfd40bd83aac62f5a8cc2246f471b8ecfa8"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/wisdom-fallible-judgment-checks/20261008T122517.399770Z/sources/ContextualWisdom.lean",
+        "observed_sha256": "25cb25904731565b4146680af403f8cfba112ea83a42ebd115592afa757a1ea9"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/wisdom-fallible-judgment-checks/20261008T122517.399770Z/sources/CorePredication.lean",
+        "observed_sha256": "bcebf3a74f0b94fe5cc9537f57c279dc9d9220d5071db97d9644e46597c30a0c"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/wisdom-fallible-judgment-checks/20261008T122517.399770Z/sources/GeneratedPaths.lean",
+        "observed_sha256": "c9194672eca9625ef95ece823ef98a7bca46ead33215246dd97ebe3e8cecbbc1"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/wisdom-fallible-judgment-checks/20261008T122517.399770Z/sources/GenerativeCore.lean",
+        "observed_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/wisdom-fallible-judgment-checks/20261008T122517.399770Z/sources/WisdomFallibleJudgment.lean",
+        "observed_sha256": "3c04364b3c56f6157b5f9a822cf1a7853da8e0fcad0a79a3bd92184a791aaa3a"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/wisdom-fallible-judgment-checks/20261008T122517.399770Z/sources/WisdomResponseStructure.lean",
+        "observed_sha256": "2760db38cbfb9eaa2b2ad969be9124d8e6c28a1389ed2c5fa7c26223fa7a878c"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/wisdom-fallible-judgment-checks/20261008T122517.399770Z/sources/check_wisdom_fallible_judgment.py",
+        "observed_sha256": "361785e6f177fc11b520a6633af3c53cbe4658cb39218abdda565845328595f5"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/wisdom-fallible-judgment-verification.json",
+        "observed_sha256": "f8bd314268102eaa6026c4dccd65ca07a07d2ef1894bff1438034a8eb6c87d8b"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/AcquiredSegmentation.lean",
+        "observed_sha256": "4577e51e0857f14a8bfbdc4047f18f5b8e27bda07729a45dcf4b51bd1c22f075"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/AcquiredSegmentation.lean",
+        "observed_sha256": "4577e51e0857f14a8bfbdc4047f18f5b8e27bda07729a45dcf4b51bd1c22f075"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/AcquiredSegmentation.log",
+        "observed_sha256": "2bd84ad93591ec87faef69c61dcf8ee06de3f686604c67cfb07c248fbc34d731"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/CompositionalAcquisition.lean",
+        "observed_sha256": "c1bb4792d8f2034e870724f0a8828cef9ef31ecf36e3b6b53ed6e8eb3900f848"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/CompositionalAcquisition.log",
+        "observed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/CompositionalAcquisitionAudit.lean",
+        "observed_sha256": "3e8d4c9b8e0831f19643fecba73c52ae9ca389b6fb454380297a7aa9bae6d9cb"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/CompositionalAcquisitionAudit.log",
+        "observed_sha256": "4d33cdfe93f592317293685c268f25846260e8f119f3378fc77682db4d8f5bb9"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/CompositionalAcquisitionSignatures.lean",
+        "observed_sha256": "24af62f254c51c141e0be06d961b5c207278ba29a6bccec8ccd6a2bae2fb9c15"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/CompositionalAcquisitionSignatures.log",
+        "observed_sha256": "79f3b77fe4c75ba9a1c6990f3bda87c5a158fa0b2fb78f3afe5fd322ff590ee6"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/CompositionalFormation.lean",
+        "observed_sha256": "975e7affcf982c64b42b9795e0129b1504441d71c4ff47069e0ba57d19a26be5"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/CompositionalFormation.log",
+        "observed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/CompositionalFormationAudit.lean",
+        "observed_sha256": "f46ceaa876a6ed673c451d436dc75e8407cbe13be3e341827d3f5e59b777a271"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/CompositionalFormationAudit.log",
+        "observed_sha256": "4b99295619ae323a8a7f99017a8c60ab95a3a7b1e46491a51bbd35fed82cbbe0"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/CompositionalFormationSignatures.lean",
+        "observed_sha256": "cad780a4d755a84295b7d602974bbc7320dce24195a86108c2c88694ca30e1df"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/CompositionalFormationSignatures.log",
+        "observed_sha256": "27fa1abb452e629660def15ad7f42354394f30f41003b3ecefa37ced74f57073"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/CompositionalTransmission.lean",
+        "observed_sha256": "d5a6fb23c43dd10782d7696fbbc7e433013eb4000c7ee4f425a8cf4b6e50211b"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/CompositionalTransmission.log",
+        "observed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/CompositionalTransmissionAudit.lean",
+        "observed_sha256": "5c76945e4e0ddc7ea7fb9d33847ee3bbdde5545db864d0aceb58b2b6668c6018"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/CompositionalTransmissionAudit.log",
+        "observed_sha256": "6f4b4fe58b8fad97007b67730106e5b02c5587436c4bc98f9c4c082a1e8821b1"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/CompositionalTransmissionSignatures.lean",
+        "observed_sha256": "30c683a163bed1057c840af203a7af42ef8ba145d4703104c2580a7c6302ddf5"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/CompositionalTransmissionSignatures.log",
+        "observed_sha256": "3de509637da7c2f4ccaffa01362c5bd1ddeae1bdaf1483aa2ea10281d48a206e"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/KnowledgeCorrespondence.lean",
+        "observed_sha256": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/KnowledgeCorrespondence.log",
+        "observed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/KnowledgeCorrespondenceAudit.lean",
+        "observed_sha256": "17a0077b3e78d738bf2d0be19d10e280b15db7dafef91e2b612d9472a15bbd1b"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/KnowledgeCorrespondenceAudit.log",
+        "observed_sha256": "c377f105cfd06f0e0910406603df50a3a522626e83669b2e8308f8018e2c7f21"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/KnowledgeCorrespondenceSignatures.lean",
+        "observed_sha256": "055b1e508f41e4b55b8cab7943c941eb25ff15bcb01ee7283c62605cbf932b13"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/KnowledgeCorrespondenceSignatures.log",
+        "observed_sha256": "81471fa26e1d60c7def30cda3725076ec4f879b4f97ceb692743f08e198eedf1"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/audit_support.py",
+        "observed_sha256": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/check_acquired_segmentation.py",
+        "observed_sha256": "42f71f37a2a164ac948bea87cbf175ad8569819290abcb05095ec1039e70ebe5"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/verification.json",
+        "observed_sha256": "a94ca3184e91f40e47a57801d80a47f3b7fcf7bcf41b6e8b19495e99f6c5735c"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-checks/20261008T123928.883589Z/version.log",
+        "observed_sha256": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/acquired-segmentation-verification.json",
+        "observed_sha256": "a94ca3184e91f40e47a57801d80a47f3b7fcf7bcf41b6e8b19495e99f6c5735c"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/check_acquired_segmentation.py",
+        "observed_sha256": "42f71f37a2a164ac948bea87cbf175ad8569819290abcb05095ec1039e70ebe5"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122017.721573Z/CompositionalAcquisition.lean",
+        "observed_sha256": "c1bb4792d8f2034e870724f0a8828cef9ef31ecf36e3b6b53ed6e8eb3900f848"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122017.721573Z/CompositionalAcquisition.log",
+        "observed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122017.721573Z/CompositionalAcquisitionAudit.lean",
+        "observed_sha256": "3e8d4c9b8e0831f19643fecba73c52ae9ca389b6fb454380297a7aa9bae6d9cb"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122017.721573Z/CompositionalAcquisitionAudit.log",
+        "observed_sha256": "4d33cdfe93f592317293685c268f25846260e8f119f3378fc77682db4d8f5bb9"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122017.721573Z/CompositionalAcquisitionSignatures.lean",
+        "observed_sha256": "24af62f254c51c141e0be06d961b5c207278ba29a6bccec8ccd6a2bae2fb9c15"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122017.721573Z/CompositionalAcquisitionSignatures.log",
+        "observed_sha256": "79f3b77fe4c75ba9a1c6990f3bda87c5a158fa0b2fb78f3afe5fd322ff590ee6"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122017.721573Z/CompositionalFormation.lean",
+        "observed_sha256": "975e7affcf982c64b42b9795e0129b1504441d71c4ff47069e0ba57d19a26be5"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122017.721573Z/CompositionalFormation.log",
+        "observed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122017.721573Z/CompositionalFormationAudit.lean",
+        "observed_sha256": "f46ceaa876a6ed673c451d436dc75e8407cbe13be3e341827d3f5e59b777a271"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122017.721573Z/CompositionalFormationAudit.log",
+        "observed_sha256": "4b99295619ae323a8a7f99017a8c60ab95a3a7b1e46491a51bbd35fed82cbbe0"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122017.721573Z/CompositionalFormationSignatures.lean",
+        "observed_sha256": "cad780a4d755a84295b7d602974bbc7320dce24195a86108c2c88694ca30e1df"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122017.721573Z/CompositionalFormationSignatures.log",
+        "observed_sha256": "27fa1abb452e629660def15ad7f42354394f30f41003b3ecefa37ced74f57073"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122017.721573Z/CompositionalTransmission.lean",
+        "observed_sha256": "77ce8a949486590333088868931080e89ccfd8dc6a9380ad39b55ffeeb48d624"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122017.721573Z/CompositionalTransmission.log",
+        "observed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122017.721573Z/CompositionalTransmissionAudit.lean",
+        "observed_sha256": "5e065f27b293e1bcda6495e60482cae755b7e92a7c1a68d4d35c7e2c77e797e1"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122017.721573Z/CompositionalTransmissionAudit.log",
+        "observed_sha256": "76f80d99929018ce94ea37a99a99bb62d5c83e81c936ab9ef61ab42d5ff315dc"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122017.721573Z/CompositionalTransmissionSignatures.lean",
+        "observed_sha256": "2c459d5ddbd68b5c26d0cceff264a76fbf5fa8dea3ac4bcbd1c84802c4cd9b76"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122017.721573Z/CompositionalTransmissionSignatures.log",
+        "observed_sha256": "6edc5ea94dcc4a1f733028770a3f1d56fef7d05fb656ec55c8a9015613870240"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122017.721573Z/KnowledgeCorrespondence.lean",
+        "observed_sha256": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122017.721573Z/KnowledgeCorrespondence.log",
+        "observed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122017.721573Z/KnowledgeCorrespondenceAudit.lean",
+        "observed_sha256": "17a0077b3e78d738bf2d0be19d10e280b15db7dafef91e2b612d9472a15bbd1b"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122017.721573Z/KnowledgeCorrespondenceAudit.log",
+        "observed_sha256": "c377f105cfd06f0e0910406603df50a3a522626e83669b2e8308f8018e2c7f21"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122017.721573Z/KnowledgeCorrespondenceSignatures.lean",
+        "observed_sha256": "055b1e508f41e4b55b8cab7943c941eb25ff15bcb01ee7283c62605cbf932b13"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122017.721573Z/KnowledgeCorrespondenceSignatures.log",
+        "observed_sha256": "81471fa26e1d60c7def30cda3725076ec4f879b4f97ceb692743f08e198eedf1"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122017.721573Z/audit_support.py",
+        "observed_sha256": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122017.721573Z/check_compositional_transmission.py",
+        "observed_sha256": "78cfb31f5f3ce0b1708b18c869d75c140cdd203f68e50b3050accf06243f13d7"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122017.721573Z/verification.json",
+        "observed_sha256": "82c3762d164a97841d614f45643ab30869dc46b894fc3bd9ae97e86b79a558fa"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122017.721573Z/version.log",
+        "observed_sha256": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122105.046606Z/CompositionalAcquisition.lean",
+        "observed_sha256": "c1bb4792d8f2034e870724f0a8828cef9ef31ecf36e3b6b53ed6e8eb3900f848"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122105.046606Z/CompositionalAcquisition.log",
+        "observed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122105.046606Z/CompositionalAcquisitionAudit.lean",
+        "observed_sha256": "3e8d4c9b8e0831f19643fecba73c52ae9ca389b6fb454380297a7aa9bae6d9cb"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122105.046606Z/CompositionalAcquisitionAudit.log",
+        "observed_sha256": "4d33cdfe93f592317293685c268f25846260e8f119f3378fc77682db4d8f5bb9"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122105.046606Z/CompositionalAcquisitionSignatures.lean",
+        "observed_sha256": "24af62f254c51c141e0be06d961b5c207278ba29a6bccec8ccd6a2bae2fb9c15"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122105.046606Z/CompositionalAcquisitionSignatures.log",
+        "observed_sha256": "79f3b77fe4c75ba9a1c6990f3bda87c5a158fa0b2fb78f3afe5fd322ff590ee6"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122105.046606Z/CompositionalFormation.lean",
+        "observed_sha256": "975e7affcf982c64b42b9795e0129b1504441d71c4ff47069e0ba57d19a26be5"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122105.046606Z/CompositionalFormation.log",
+        "observed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122105.046606Z/CompositionalFormationAudit.lean",
+        "observed_sha256": "f46ceaa876a6ed673c451d436dc75e8407cbe13be3e341827d3f5e59b777a271"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122105.046606Z/CompositionalFormationAudit.log",
+        "observed_sha256": "4b99295619ae323a8a7f99017a8c60ab95a3a7b1e46491a51bbd35fed82cbbe0"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122105.046606Z/CompositionalFormationSignatures.lean",
+        "observed_sha256": "cad780a4d755a84295b7d602974bbc7320dce24195a86108c2c88694ca30e1df"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122105.046606Z/CompositionalFormationSignatures.log",
+        "observed_sha256": "27fa1abb452e629660def15ad7f42354394f30f41003b3ecefa37ced74f57073"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122105.046606Z/CompositionalTransmission.lean",
+        "observed_sha256": "d5a6fb23c43dd10782d7696fbbc7e433013eb4000c7ee4f425a8cf4b6e50211b"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122105.046606Z/CompositionalTransmission.log",
+        "observed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122105.046606Z/CompositionalTransmissionAudit.lean",
+        "observed_sha256": "5c76945e4e0ddc7ea7fb9d33847ee3bbdde5545db864d0aceb58b2b6668c6018"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122105.046606Z/CompositionalTransmissionAudit.log",
+        "observed_sha256": "6f4b4fe58b8fad97007b67730106e5b02c5587436c4bc98f9c4c082a1e8821b1"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122105.046606Z/CompositionalTransmissionSignatures.lean",
+        "observed_sha256": "30c683a163bed1057c840af203a7af42ef8ba145d4703104c2580a7c6302ddf5"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122105.046606Z/CompositionalTransmissionSignatures.log",
+        "observed_sha256": "3de509637da7c2f4ccaffa01362c5bd1ddeae1bdaf1483aa2ea10281d48a206e"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122105.046606Z/KnowledgeCorrespondence.lean",
+        "observed_sha256": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122105.046606Z/KnowledgeCorrespondence.log",
+        "observed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122105.046606Z/KnowledgeCorrespondenceAudit.lean",
+        "observed_sha256": "17a0077b3e78d738bf2d0be19d10e280b15db7dafef91e2b612d9472a15bbd1b"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122105.046606Z/KnowledgeCorrespondenceAudit.log",
+        "observed_sha256": "c377f105cfd06f0e0910406603df50a3a522626e83669b2e8308f8018e2c7f21"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122105.046606Z/KnowledgeCorrespondenceSignatures.lean",
+        "observed_sha256": "055b1e508f41e4b55b8cab7943c941eb25ff15bcb01ee7283c62605cbf932b13"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122105.046606Z/KnowledgeCorrespondenceSignatures.log",
+        "observed_sha256": "81471fa26e1d60c7def30cda3725076ec4f879b4f97ceb692743f08e198eedf1"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122105.046606Z/audit_support.py",
+        "observed_sha256": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122105.046606Z/check_compositional_transmission.py",
+        "observed_sha256": "78cfb31f5f3ce0b1708b18c869d75c140cdd203f68e50b3050accf06243f13d7"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122105.046606Z/verification.json",
+        "observed_sha256": "523492219e8c724fb9e16c165cdd94bf47d4b6d926ff316acd64a1ce3b734c59"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-transmission-checks/20261008T122105.046606Z/version.log",
+        "observed_sha256": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MEDIATED-CONTROL.md",
+        "observed_sha256": "71bd21fc037e7e0a1b693fef095e93542a88858eb52f3676fbc31a89a7862dbd"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RelationalGrounding.lean",
+        "observed_sha256": "9b2319e752ee1b93d4245b1c5fe0a9d1e0758b1caf37282623598ea491e84c87"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_relational_grounding.py",
+        "observed_sha256": "ace4ba47e0e7003f2dbb3f984b295bb65a97c9fef4c91f7b596d68ae640b6354"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123923.330830Z/GenerativeComparison.lean",
+        "observed_sha256": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123923.330830Z/GenerativeComparison.log",
+        "observed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123923.330830Z/GenerativeComparisonAxiomAudit.lean",
+        "observed_sha256": "b917ae91ff6db176d460a5d332e193d545ad4277abfc0e95224a97d2894ad84e"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123923.330830Z/GenerativeComparisonAxiomAudit.log",
+        "observed_sha256": "66f7f5742924df733c730fbc3f8c6caf59156c8f5b9bf7bb5c4522e69db4be0f"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123923.330830Z/GenerativeComparisonSignatures.lean",
+        "observed_sha256": "bb1012bec6a2f508fa3e308f5ff3c666a651559eab86001b5b46e82013642809"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123923.330830Z/GenerativeComparisonSignatures.log",
+        "observed_sha256": "9a1754ab174b2e643d3359d1468c52053ccc3305e7c79e18b2b1ce67663da16f"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123923.330830Z/JointContinuationClassification.lean",
+        "observed_sha256": "e508683cc80832744a28f44c69f9c2561701cd099219448b75cfdb474c0786ee"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123923.330830Z/JointContinuationClassification.log",
+        "observed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123923.330830Z/JointContinuationClassificationAxiomAudit.lean",
+        "observed_sha256": "bf2526a91d356919deb8e1f320ce5688ec87e1907f16d1fb3db7eeeaadbb7026"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123923.330830Z/JointContinuationClassificationAxiomAudit.log",
+        "observed_sha256": "07d1088dfa4fad295f1117b949c57aa078bb85c210f075642e909200dea7ad30"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123923.330830Z/JointContinuationClassificationSignatures.lean",
+        "observed_sha256": "8bdba8156427a22c80c7b5dcbf7b973083342451fd30852aa20adf60be4f9897"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123923.330830Z/JointContinuationClassificationSignatures.log",
+        "observed_sha256": "b029f40c58e42af8acdd1f0d5a11efc287be6db1bc267038a6d6df1af20ab505"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123923.330830Z/RelationalGrounding.lean",
+        "observed_sha256": "8a480ead4e17a4c69c8fa7236df797b404a97d7d58408aebdb845c4206f02f82"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123923.330830Z/RelationalGrounding.log",
+        "observed_sha256": "f6bf3f9f71c452efbcda561eeba5e53067a8f4665769e612756e58d1546a0400"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123923.330830Z/check.py",
+        "observed_sha256": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123923.330830Z/check_relational_grounding.py",
+        "observed_sha256": "ace4ba47e0e7003f2dbb3f984b295bb65a97c9fef4c91f7b596d68ae640b6354"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123923.330830Z/verification.json",
+        "observed_sha256": "843d72a3c34c614b83e0993e4e10b2846f4f905107cd352b5014b86582b77d49"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123923.330830Z/version.log",
+        "observed_sha256": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123934.603061Z/Controls.lean",
+        "observed_sha256": "524b179fed0bbe438337e58a18b89d5bcbf52582395dc31435e2f9e8253a9468"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123934.603061Z/Controls.log",
+        "observed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123934.603061Z/GenerativeComparison.lean",
+        "observed_sha256": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123934.603061Z/GenerativeComparison.log",
+        "observed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123934.603061Z/GenerativeComparisonAxiomAudit.lean",
+        "observed_sha256": "b917ae91ff6db176d460a5d332e193d545ad4277abfc0e95224a97d2894ad84e"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123934.603061Z/GenerativeComparisonAxiomAudit.log",
+        "observed_sha256": "66f7f5742924df733c730fbc3f8c6caf59156c8f5b9bf7bb5c4522e69db4be0f"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123934.603061Z/GenerativeComparisonSignatures.lean",
+        "observed_sha256": "bb1012bec6a2f508fa3e308f5ff3c666a651559eab86001b5b46e82013642809"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123934.603061Z/GenerativeComparisonSignatures.log",
+        "observed_sha256": "9a1754ab174b2e643d3359d1468c52053ccc3305e7c79e18b2b1ce67663da16f"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123934.603061Z/JointContinuationClassification.lean",
+        "observed_sha256": "e508683cc80832744a28f44c69f9c2561701cd099219448b75cfdb474c0786ee"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123934.603061Z/JointContinuationClassification.log",
+        "observed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123934.603061Z/JointContinuationClassificationAxiomAudit.lean",
+        "observed_sha256": "bf2526a91d356919deb8e1f320ce5688ec87e1907f16d1fb3db7eeeaadbb7026"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123934.603061Z/JointContinuationClassificationAxiomAudit.log",
+        "observed_sha256": "07d1088dfa4fad295f1117b949c57aa078bb85c210f075642e909200dea7ad30"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123934.603061Z/JointContinuationClassificationSignatures.lean",
+        "observed_sha256": "8bdba8156427a22c80c7b5dcbf7b973083342451fd30852aa20adf60be4f9897"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123934.603061Z/JointContinuationClassificationSignatures.log",
+        "observed_sha256": "b029f40c58e42af8acdd1f0d5a11efc287be6db1bc267038a6d6df1af20ab505"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123934.603061Z/RelationalGrounding.lean",
+        "observed_sha256": "9b2319e752ee1b93d4245b1c5fe0a9d1e0758b1caf37282623598ea491e84c87"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123934.603061Z/RelationalGrounding.log",
+        "observed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123934.603061Z/RelationalGroundingAxiomAudit.lean",
+        "observed_sha256": "5c7f32414da2a264d133a53f455955731c65966c009c33243c4ebdf344dab3b7"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123934.603061Z/RelationalGroundingAxiomAudit.log",
+        "observed_sha256": "e80301726f996db9b52453c5d062e5fc968f72f250d27571551c152113c44aac"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123934.603061Z/RelationalGroundingSignatures.lean",
+        "observed_sha256": "10052e1591587d2e6f1dcd517eb04e61f09e108586618cac561fa76e54fbfda5"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123934.603061Z/RelationalGroundingSignatures.log",
+        "observed_sha256": "b1f51d89d132f46771f9a77f9a35912b63dc4e5b84001083ed12d5e3238af651"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123934.603061Z/check.py",
+        "observed_sha256": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123934.603061Z/check_relational_grounding.py",
+        "observed_sha256": "ace4ba47e0e7003f2dbb3f984b295bb65a97c9fef4c91f7b596d68ae640b6354"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123934.603061Z/verification.json",
+        "observed_sha256": "c6467de2a60e516186c40a9c18f3f509899e5dfa9bba77c361501bbee611bec0"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-checks/20261008T123934.603061Z/version.log",
+        "observed_sha256": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+      },
+      {
+        "status": "??",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-grounding-verification.json",
+        "observed_sha256": "c6467de2a60e516186c40a9c18f3f509899e5dfa9bba77c361501bbee611bec0"
+      },
+      {
+        "status": "??",
+        "path": "experiments/market-generativity/meta-attractor/check_reconciliation.py",
+        "observed_sha256": "cb49ddd971b219a073fac59bd93dc135e3c93ab6e9ee41807ca7f25ac625432f"
+      },
+      {
+        "status": "??",
+        "path": "experiments/market-generativity/meta-attractor/reconciliation-verification.json",
+        "observed_sha256": "5f858f139cf6d0b8f95505617b6d8aebba75b97ca4ead19965b24dbdf6ca7207"
+      },
+      {
+        "status": "??",
+        "path": "experiments/market-generativity/meta-attractor/reconciliation-verification/CommonOrganization.lean",
+        "observed_sha256": "e7050cb6716ea4042291a9014b57dfbf0273fa5fdf493c29eafcfd0eaf2169e5"
+      },
+      {
+        "status": "??",
+        "path": "experiments/market-generativity/meta-attractor/reconciliation-verification/CommonOrganization.txt",
+        "observed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "status": "??",
+        "path": "experiments/market-generativity/meta-attractor/reconciliation-verification/FormedSelection.lean",
+        "observed_sha256": "8b083de5abc94ae933b2874b16bf0edf85dd899cf3e4eaf3d251523fd994c43f"
+      },
+      {
+        "status": "??",
+        "path": "experiments/market-generativity/meta-attractor/reconciliation-verification/FormedSelection.txt",
+        "observed_sha256": "ae84b75f37c602427a7fa0e766183eb4228d96047abcc75d813c1ba6f08ff216"
+      },
+      {
+        "status": "??",
+        "path": "experiments/market-generativity/meta-attractor/reconciliation-verification/GenerativeCore.lean",
+        "observed_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+      },
+      {
+        "status": "??",
+        "path": "experiments/market-generativity/meta-attractor/reconciliation-verification/GenerativeCore.txt",
+        "observed_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+      },
+      {
+        "status": "??",
+        "path": "experiments/market-generativity/meta-attractor/reconciliation-verification/LegacyReconciliation.lean",
+        "observed_sha256": "187251219c065e8e5b0348f5064b5050c602a6a8cfb64b6be6ef5ec0883e8ffe"
+      },
+      {
+        "status": "??",
+        "path": "experiments/market-generativity/meta-attractor/reconciliation-verification/LegacyReconciliation.txt",
+        "observed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "status": "??",
+        "path": "experiments/market-generativity/meta-attractor/reconciliation-verification/ReconciliationAudit.lean",
+        "observed_sha256": "07dbebc012ad67a79edead589d0702322142bb1904783bb5d46b3b01004c7279"
+      },
+      {
+        "status": "??",
+        "path": "experiments/market-generativity/meta-attractor/reconciliation-verification/ReconciliationAudit.txt",
+        "observed_sha256": "a2818fa48597b8105ce83501eb664c7b3a0d3a06ae29043abe32b26152b623e7"
+      },
+      {
+        "status": "??",
+        "path": "experiments/market-generativity/meta-attractor/reconciliation-verification/SelectorRevision.lean",
+        "observed_sha256": "2a93d72c5546106200225c5eabc08e08a7f78ac218541146e006f51f261c8d5a"
+      },
+      {
+        "status": "??",
+        "path": "experiments/market-generativity/meta-attractor/reconciliation-verification/SelectorRevision.txt",
+        "observed_sha256": "8be9f06f8e3931ccfdf0095fbb71c2af4021bd44fe3fadd2101ff57fb22275cc"
+      },
+      {
+        "status": "??",
+        "path": "experiments/market-generativity/meta-attractor/reconciliation-verification/UpdaterFormation.lean",
+        "observed_sha256": "f04266c1745c71437a5500a955fb6da364eb9cce56b1a4655a04968ac450d5c3"
+      },
+      {
+        "status": "??",
+        "path": "experiments/market-generativity/meta-attractor/reconciliation-verification/UpdaterFormation.txt",
+        "observed_sha256": "9b0654ceff7aae7bcd0ebe667e4fd72a3e5b821fa1287ee108283319746743ef"
+      },
+      {
+        "status": "??",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-monist-relational-ontology-first.md",
+        "observed_sha256": "034c1997bc5fdf2068c4ef7f1a83ded4513604fb5ec0be72fc8488a490fa0aee"
+      },
+      {
+        "status": "??",
+        "path": "theories/meta-attractor/COMMON-ORGANIZATION.md",
+        "observed_sha256": "2d76c4fd0d31c39d9cbbb69ef494944f0626bb819e417cc925ad3f52991dffae"
+      },
+      {
+        "status": "??",
+        "path": "theories/shengsheng-buxi-generative-existence/results/records/risk-certificate-outcome-distinction.json",
+        "observed_sha256": "2871b9530b79269001c1fb870a0fc942d3b2bf3e182261e0374a5e42aff04664"
+      },
+      {
+        "status": "??",
+        "path": "theories/shengsheng-buxi-generative-existence/results/records/risk-certificate-outcome-distinction.md",
+        "observed_sha256": "dc958754f32b093ff08a48fb31ced0bb1fbd6caa986a76fa0267c7a5fa002107"
+      }
+    ]
+  }
 }
