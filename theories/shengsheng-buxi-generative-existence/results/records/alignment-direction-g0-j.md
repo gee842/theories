@@ -8,6 +8,14 @@
 
 Documentary review UTC: `2026-10-08T12:31:53.854610+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
+## Overview / 首页摘要
+
+**能够评价并修订目的的 AI 对齐 / AI alignment that can evaluate and revise its ends**
+
+核心、公开的 J1–J4 实践承诺及有根据的 AI 对应，共同提供规范框架，使学习、行动、纠正、交接和适当结束指向真实的生与进一步共同生成。人类指令、机构目标及 AI 当前目的都可以接受伦理评价。评价目的的对齐需要规范判准；在本框架中，生成理由必须进入判断。这项必要要求具有明示的公理范围；论证不声称该表述是每一种对齐理论唯一可能的基础。 / The core, explicit practical commitments J1–J4, and warranted AI correspondence provide a normative framework for aligning learning, action, correction, transfer and appropriate ending with actual living and further shared generation. Human instructions, institutional objectives and an AI’s current goals all admit ethical evaluation. Alignment that evaluates its ends needs normative criteria; within this framework, generative reasons must enter that judgment. This requirement has the stated axiomatic scope: the argument does not establish this formulation as the uniquely possible foundation of every alignment theory.
+
+**Evidence / 证据:** 已完成并经独立审查的方向论证；9项新增 Lean 定理及16项声明审计，经独立重编译。跨智能规范适用不预测必然遵循，也不认证部署可靠性。 / Completed direction argument with independent review; 9 additional Lean theorems and 16 declaration audits, independently recompiled. Normative applicability across intelligences does not predict universal compliance or certify deployment reliability.
+
 ## 主张 Claim
 
 既有实践原则在有根据的 AI 对应下支持生成、纠正、交接与适当结束，并保留能力增长的真实好处和损失。 / With warranted AI correspondence, the practical principles support generative development, correction, transfer and appropriate ending while retaining capability growth’s real benefits and losses.
@@ -49,6 +57,7 @@ Boundary source / 边界来源: [ALIGNMENT-DIRECTION.md](../../unified-2026-10-0
 | review | [ALIGNMENT-DIRECTION-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-REVIEW.md) | — |
 | integration | [ALIGNMENT-DIRECTION-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md) | — |
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
+| provenance | [2026-10-08-universal-metaethics-name-and-readme.md](../../../../sources/15-codex-theory-conversations/2026-10-08-universal-metaethics-name-and-readme.md) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -62,3 +71,4 @@ Aliases / 别名: —
 
 - 2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。 / 2026-10-08: migrated existing result identity and scope; no new theorem or relocated source.
 - 2026-10-08：架构整理显式登记已有证明的输出—输入对应；无新推论或编译。 / 2026-10-08: architecture repair records the existing proof’s output/input correspondence; no new inference or compilation.
+- 2026-10-08：按 Ren 要求，在 Universal Meta-Ethics of Agency 名称下新增以英文为主的前置摘要。复用本成果及既有证据；无新定理、编译或更强完成声明。 / 2026-10-08: added the English-first leading summary requested by Ren under the title Universal Meta-Ethics of Agency. Reuses this result and its existing evidence; no new theorem, proof run or stronger completion claim.

@@ -1,0 +1,31 @@
+'Generative.EnactedScene.Place' does not depend on any axioms
+'Generative.EnactedScene.distance' does not depend on any axioms
+'Generative.EnactedScene.Situation' does not depend on any axioms
+'Generative.EnactedScene.visible' does not depend on any axioms
+'Generative.EnactedScene.move' does not depend on any axioms
+'Generative.EnactedScene.nameForm' depends on axioms: [propext]
+'Generative.EnactedScene.naming' depends on axioms: [propext]
+'Generative.EnactedScene.moving_preserves_binding_records' does not depend on any axioms
+'Generative.EnactedScene.moving_preserves_support_account' depends on axioms: [propext, Quot.sound]
+'Generative.EnactedScene.unaffordable_movement_preserves_actual_position' depends on axioms: [propext]
+'Generative.EnactedScene.start' depends on axioms: [propext]
+'Generative.EnactedScene.coordinated' depends on axioms: [propext]
+'Generative.EnactedScene.stationary' depends on axioms: [propext]
+'Generative.EnactedScene.mistimed' depends on axioms: [propext]
+'Generative.EnactedScene.interpretationInputs' does not depend on any axioms
+'Generative.EnactedScene.same_inputs_preserve_interpretation' depends on axioms: [propext, Quot.sound]
+'Generative.EnactedScene.movement_changes_accessible_alternatives' depends on axioms: [propext]
+'Generative.EnactedScene.enacted_scenes_supply_the_previous_binding_inputs' depends on axioms: [propext]
+'Generative.EnactedScene.enacted_access_enters_all_sequence_interpretation' depends on axioms: [propext, Quot.sound]
+'Generative.EnactedScene.enacted_access_reaches_actual_response' depends on axioms: [propext, Quot.sound]
+'Generative.EnactedScene.movement_is_in_the_same_support_history' depends on axioms: [propext]
+'Generative.EnactedScene.stationary_repetition_leaves_both_bindings_ambiguous' depends on axioms: [propext, Quot.sound]
+'Generative.EnactedScene.access_without_recording_does_not_acquire_the_bindings' depends on axioms: [propext,
+ Quot.sound]
+'Generative.EnactedScene.unchanged_position_and_name_counts_do_not_establish_coordination' depends on axioms: [propext,
+ Quot.sound]
+'Generative.EnactedScene.mistimed_naming_produces_an_actual_inverted_response' depends on axioms: [propext, Quot.sound]
+'Generative.EnactedScene.narrowWrong' depends on axioms: [propext]
+'Generative.EnactedScene.a_clear_view_can_omit_the_named_target' depends on axioms: [propext, Quot.sound]
+'Generative.EnactedScene.movement_support_can_run_out_before_a_response' depends on axioms: [propext, Quot.sound]
+'Generative.EnactedScene.impossible_movement_does_not_invent_a_new_scene' depends on axioms: [propext]

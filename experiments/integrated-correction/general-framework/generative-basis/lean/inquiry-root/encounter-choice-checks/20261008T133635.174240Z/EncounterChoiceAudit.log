@@ -1,0 +1,50 @@
+'Generative.EncounterChoice.View' does not depend on any axioms
+'Generative.EncounterChoice.Activity' does not depend on any axioms
+'Generative.EncounterChoice.recalled' does not depend on any axioms
+'Generative.EncounterChoice.observe' does not depend on any axioms
+'Generative.EncounterChoice.survey' does not depend on any axioms
+'Generative.EncounterChoice.speak' depends on axioms: [propext]
+'Generative.EncounterChoice.localNaming' depends on axioms: [propext]
+'Generative.EncounterChoice.complete' depends on axioms: [propext, Quot.sound]
+'Generative.EncounterChoice.informative' depends on axioms: [propext, Quot.sound]
+'Generative.EncounterChoice.choose' depends on axioms: [propext, Quot.sound]
+'Generative.EncounterChoice.visit' depends on axioms: [propext]
+'Generative.EncounterChoice.step' depends on axioms: [propext, Quot.sound]
+'Generative.EncounterChoice.run' depends on axioms: [propext, Quot.sound]
+'Generative.EncounterChoice.account' does not depend on any axioms
+'Generative.EncounterChoice.observation_preserves_account' depends on axioms: [propext, Quot.sound]
+'Generative.EncounterChoice.survey_preserves_account' depends on axioms: [propext, Quot.sound]
+'Generative.EncounterChoice.speaking_preserves_account' depends on axioms: [propext, Quot.sound]
+'Generative.EncounterChoice.naming_preserves_account' depends on axioms: [propext, Quot.sound]
+'Generative.EncounterChoice.visit_preserves_account' depends on axioms: [propext, Quot.sound]
+'Generative.EncounterChoice.step_preserves_account' depends on axioms: [propext, Quot.sound]
+'Generative.EncounterChoice.run_preserves_account' depends on axioms: [propext, Quot.sound]
+'Generative.EncounterChoice.catalogue' does not depend on any axioms
+'Generative.EncounterChoice.initial' depends on axioms: [propext]
+'Generative.EncounterChoice.calibrated' depends on axioms: [propext]
+'Generative.EncounterChoice.first' depends on axioms: [propext, Quot.sound]
+'Generative.EncounterChoice.second' depends on axioms: [propext, Quot.sound]
+'Generative.EncounterChoice.acquired' depends on axioms: [propext, Quot.sound]
+'Generative.EncounterChoice.calibration_records_actual_access' depends on axioms: [propext]
+'Generative.EncounterChoice.binding_changes_which_scene_is_chosen' depends on axioms: [propext, Quot.sound]
+'Generative.EncounterChoice.selected_encounters_supply_previous_interpretation_inputs' depends on axioms: [propext,
+ Quot.sound]
+'Generative.EncounterChoice.selected_encounters_transfer_to_all_sequences' depends on axioms: [propext, Quot.sound]
+'Generative.EncounterChoice.selected_history_reaches_actual_response' depends on axioms: [propext, Quot.sound]
+'Generative.EncounterChoice.history_accounts_for_survey_and_use' depends on axioms: [propext, Quot.sound]
+'Generative.EncounterChoice.earlierArrangement' depends on axioms: [propext]
+'Generative.EncounterChoice.olderView' depends on axioms: [propext]
+'Generative.EncounterChoice.rearranged' depends on axioms: [propext]
+'Generative.EncounterChoice.staleChoice' depends on axioms: [propext]
+'Generative.EncounterChoice.changed_arrangement_can_leave_an_accurate_old_record_stale' depends on axioms: [propext]
+'Generative.EncounterChoice.stale_prediction_changes_choice_before_reobservation' depends on axioms: [propext,
+ Quot.sound]
+'Generative.EncounterChoice.reobservation_revises_the_access_model_and_next_choice' depends on axioms: [propext,
+ Quot.sound]
+'Generative.EncounterChoice.survey_without_names_does_not_supply_bindings' depends on axioms: [propext, Quot.sound]
+'Generative.EncounterChoice.poor_catalogue_leaves_ambiguity' depends on axioms: [propext, Quot.sound]
+'Generative.EncounterChoice.acquired_binding_can_exhaust_response_support' depends on axioms: [propext, Quot.sound]
+'Generative.EncounterChoice.known_access_does_not_execute_an_unaffordable_visit' depends on axioms: [propext,
+ Quot.sound]
+'Generative.EncounterChoice.local_naming_does_not_name_an_absent_atom' depends on axioms: [propext]
+'Generative.EncounterChoice.removing_coverage_can_make_the_stopping_rule_wrong' depends on axioms: [propext, Quot.sound]

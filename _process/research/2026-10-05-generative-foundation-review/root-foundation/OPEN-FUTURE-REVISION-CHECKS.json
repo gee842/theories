@@ -1,0 +1,187 @@
+{
+  "utc": "2026-10-08T13:32:09.344254+00:00",
+  "owned_status": "passed",
+  "scope": "Owned new result, appended arguments, retained proof artifacts, new M20 additions and rendered M20 row only. Independent review and whole-repository freshness are not asserted.",
+  "new_theorems": 10,
+  "new_declaration_audits": 19,
+  "inherited_theorems": 98,
+  "inherited_declaration_audits": 185,
+  "proof_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/open-future-revision-verification.json",
+  "proof_receipt_sha256": "8e672ea784ac96083e56f04bfc2c565e1440e89371013e204b639819a5f12877",
+  "proof_sources_verified": 7,
+  "proof_artifacts_verified": 47,
+  "new_document_links_checked": 13,
+  "old_substantive_prefixes_preserved": true,
+  "owned_bilingual_content_and_links_verified": true,
+  "rendered_M20_matches_current_data": true,
+  "checks": {
+    "focused_registry": {
+      "command": [
+        "python3",
+        "-B",
+        "tools/research/research.py",
+        "check",
+        "--ids",
+        "open-form-realization-under-revision"
+      ],
+      "exit_code": 0,
+      "report": {
+        "records": 37,
+        "selected_records": [
+          "open-form-realization-under-revision"
+        ],
+        "errors": [],
+        "source_drift": [],
+        "unrelated_source_drift": [
+          {
+            "id": "organizational-formation-from-generative-comparison",
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+            "reviewed_sha256": "f0ac8caa838c19196f71bf1861a89846c4f4d6472b958116917ffcaeb1ab88a4",
+            "current_sha256": "c5825f8cd2b3796da906e6e6d49e8c9f2147e1b2e9763f673d7c50d4fc33a8a2"
+          },
+          {
+            "id": "organizational-formation-from-generative-comparison",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+            "reviewed_sha256": "7f7c51bb15824723143e3c11201d79f374d8679f230609f3fca1071eaffea460",
+            "current_sha256": "de04c7f78abc7c78a6c7cdeecd6cacfc2e1ea8b045e92d7c4957d9ba622e6fb5"
+          },
+          {
+            "id": "organizational-formation-from-generative-comparison",
+            "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+            "reviewed_sha256": "311b9e423cf1a6956373bc0ab187ce9b266a4258f058fa61aa7423886c96b14d",
+            "current_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d"
+          }
+        ],
+        "scope": "Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation."
+      },
+      "stderr": ""
+    },
+    "full_registry": {
+      "command": [
+        "make",
+        "research-check"
+      ],
+      "exit_code": 2,
+      "report": {
+        "records": 37,
+        "selected_records": [
+          "acquired-binding-compositional-use",
+          "aggregate-exit-funding",
+          "alignment-direction-g0-j",
+          "assured-route-criterion",
+          "branching-target-uniqueness",
+          "branching-tests-bisimulation",
+          "code-plan-global-support",
+          "conditional-foundation-assessment",
+          "derivation-soundness",
+          "enacted-scene-binding",
+          "exclusive-footprint-support",
+          "fallible-witness-diagnosability",
+          "finite-basis-common-interpretation",
+          "finite-continuation-plans",
+          "finite-joining-tree-lifting",
+          "finite-trace-transport",
+          "fulfillment-chance-floor",
+          "functional-joining-common-structure",
+          "joining-questions-survive-encoding",
+          "joint-code-plan-lifting",
+          "joint-decomposition-lifting",
+          "joint-plan-composition",
+          "joint-target-uniqueness",
+          "market-protected-continuation",
+          "market-supported-finite-transition",
+          "multivalued-joining-common-structure",
+          "open-form-realization-under-revision",
+          "organizational-formation-from-generative-comparison",
+          "positive-ground-open-futures",
+          "practical-judgment-g0-j",
+          "relational-generative-comparison",
+          "risk-certificate-outcome-distinction",
+          "situated-recovery-empirical-correspondence",
+          "trace-law-equivalence",
+          "transition-grouping-word-partition",
+          "universal-practical-warrant",
+          "wisdom-root"
+        ],
+        "errors": [],
+        "source_drift": [
+          {
+            "id": "organizational-formation-from-generative-comparison",
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+            "reviewed_sha256": "f0ac8caa838c19196f71bf1861a89846c4f4d6472b958116917ffcaeb1ab88a4",
+            "current_sha256": "c5825f8cd2b3796da906e6e6d49e8c9f2147e1b2e9763f673d7c50d4fc33a8a2"
+          },
+          {
+            "id": "organizational-formation-from-generative-comparison",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+            "reviewed_sha256": "7f7c51bb15824723143e3c11201d79f374d8679f230609f3fca1071eaffea460",
+            "current_sha256": "de04c7f78abc7c78a6c7cdeecd6cacfc2e1ea8b045e92d7c4957d9ba622e6fb5"
+          },
+          {
+            "id": "organizational-formation-from-generative-comparison",
+            "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+            "reviewed_sha256": "311b9e423cf1a6956373bc0ab187ce9b266a4258f058fa61aa7423886c96b14d",
+            "current_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d"
+          }
+        ],
+        "unrelated_source_drift": [],
+        "scope": "Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation."
+      },
+      "stderr": "make: *** [research-check] Error 2\n"
+    },
+    "full_chain": {
+      "command": [
+        "python3",
+        "-B",
+        "tools/research/generative_chain.py",
+        "--check"
+      ],
+      "exit_code": 2,
+      "report": {
+        "status": "needs-review",
+        "errors": [
+          "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/multivalued-joining-common-structure.json",
+          "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/organizational-formation-from-generative-comparison.md",
+          "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/situated-recovery-empirical-correspondence.md",
+          "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/transition-grouping-word-partition.md",
+          "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/multivalued-joining-common-structure.json",
+          "Linked source versions changed; reread affected entries before rendering."
+        ],
+        "changes": {
+          "modified_sources": [
+            "RESEARCH.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+            "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+            "theories/shengsheng-buxi-generative-existence/README.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+            "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+            "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+            "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md"
+          ],
+          "missing_sources": [],
+          "new_pages": [
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md"
+          ],
+          "removed_pages": [
+            "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+            "theories/meta-attractor/COMMON-ORGANIZATION.md"
+          ]
+        }
+      },
+      "stderr": ""
+    }
+  }
+}

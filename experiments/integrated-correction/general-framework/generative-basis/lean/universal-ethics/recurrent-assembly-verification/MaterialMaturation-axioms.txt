@@ -1,0 +1,44 @@
+'MaterialMaturation.Stock' does not depend on any axioms
+'MaterialMaturation.product' does not depend on any axioms
+'MaterialMaturation.produce' does not depend on any axioms
+'MaterialMaturation.produce_accounts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaterialMaturation.run' does not depend on any axioms
+'MaterialMaturation.run_accounts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaterialMaturation.supported_run' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaterialMaturation.counts_length' depends on axioms: [propext, Quot.sound]
+'MaterialMaturation.total_by_kind' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaterialMaturation.expected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaterialMaturation.countExpected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaterialMaturation.growth_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaterialMaturation.canonical' does not depend on any axioms
+'MaterialMaturation.count_expected_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaterialMaturation.expected_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaterialMaturation.route' depends on axioms: [propext]
+'MaterialMaturation.Routing' does not depend on any axioms
+'MaterialMaturation.routeTrace' depends on axioms: [propext]
+'MaterialMaturation.routing_trace_accounts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaterialMaturation.route_trace_projection' depends on axioms: [propext]
+'MaterialMaturation.canonical_slots_match_parent' depends on axioms: [propext]
+'MaterialMaturation.partial_routing_preserves_unused_components_and_work' depends on axioms: [propext]
+'MaterialMaturation.route_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaterialMaturation.route_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaterialMaturation.canonical_iff_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaterialMaturation.actual_preparation_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaterialMaturation.ready' depends on axioms: [propext, Quot.sound]
+'MaterialMaturation.balanced' depends on axioms: [propext, Quot.sound]
+'MaterialMaturation.ready_is_balance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaterialMaturation.growReturn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaterialMaturation.return_from_composition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaterialMaturation.exact_maturation_rates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaterialMaturation.seedCells' does not depend on any axioms
+'MaterialMaturation.pipeline' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaterialMaturation.batchReturn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaterialMaturation.total_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaterialMaturation.contact_expected_scale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaterialMaturation.pipeline_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaterialMaturation.actual_compositions' does not depend on any axioms
+'MaterialMaturation.exact_joint_returns' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaterialMaturation.maturation_reverses_contact_ranking' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaterialMaturation.both_laws_below_replacement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MaterialMaturation.same_type_cannot_invent_missing_kind' depends on axioms: [propext]
+'MaterialMaturation.opposite_production_can_form_missing_kind' does not depend on any axioms

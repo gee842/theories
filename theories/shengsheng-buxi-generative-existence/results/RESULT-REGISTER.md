@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-34 migrated records: 32 scoped results/arguments/assessments and 2 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+42 migrated records: 40 scoped results/arguments/assessments and 2 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -20,10 +20,12 @@
 | `assured-route-criterion` | [三路线中的保证到达条件 / Assured arrival in the three-route process](records/assured-route-criterion.md) | theorem | recorded-checked |
 | `branching-target-uniqueness` | [分支测试下的目标唯一性 / Target uniqueness for branching tests](records/branching-target-uniqueness.md) | theorem | recorded-checked |
 | `branching-tests-bisimulation` | [分支测试等价与双模拟 / Branching-test equivalence and bisimulation](records/branching-tests-bisimulation.md) | theorem | recorded-checked |
+| `classification-robust-generative-comparison` | [分类未定时的生成比较与组织要求 / Generative comparison and required organization under unsettled classification](records/classification-robust-generative-comparison.md) | theorem | recorded-checked |
 | `code-plan-global-support` | [代码共同方案的全局支持 / Global support of coded joint plans](records/code-plan-global-support.md) | theorem | recorded-checked |
 | `conditional-foundation-assessment` | [有条件统一基础的五项验收 / Five-condition acceptance of the conditional foundation](records/conditional-foundation-assessment.md) | assessment | reviewed-scoped |
 | `derivation-soundness` | [带前提的推导健全性 / Premise-tracked derivation soundness](records/derivation-soundness.md) | theorem | recorded-checked |
 | `enacted-scene-binding` | [行动形成可供绑定的场景 / Action forms scenes available for binding](records/enacted-scene-binding.md) | theorem | recorded-checked |
+| `encounter-selection-and-revision` | [取得的访问模型选择学习经历 / Acquired access selects learning encounters](records/encounter-selection-and-revision.md) | theorem | recorded-checked |
 | `exclusive-footprint-support` | [局部排他支持推至全部叶项 / Exclusive footprints support all leaves](records/exclusive-footprint-support.md) | theorem | recorded-checked |
 | `fallible-witness-diagnosability` | [可失实见证的完整辨别条件 / Complete diagnosability with fallible witnesses](records/fallible-witness-diagnosability.md) | theorem | recorded-checked |
 | `finite-basis-common-interpretation` | [有限根基的共同解释 / Common interpretation of a finite basis](records/finite-basis-common-interpretation.md) | theorem | recorded-checked |
@@ -32,15 +34,21 @@
 | `finite-trace-transport` | [保步映射传递有限历史 / Step-preserving maps transport finite traces](records/finite-trace-transport.md) | theorem | recorded-checked |
 | `fulfillment-chance-floor` | [实际履行导出同律机会下界 / Fulfillment implies a same-law chance floor](records/fulfillment-chance-floor.md) | theorem | recorded-checked |
 | `functional-joining-common-structure` | [单值接合的共同操作结构 / Common operational structure for functional joining](records/functional-joining-common-structure.md) | theorem | recorded-checked |
+| `growth-constrained-fragmentation` | [生长限制分割及后继组成 / Growth constrains fragmentation and successor composition](records/growth-constrained-fragmentation.md) | theorem | recorded-checked |
 | `joining-questions-survive-encoding` | [接合检验随同一编码保真 / Joining questions remain exact under the same encoding](records/joining-questions-survive-encoding.md) | theorem | recorded-checked |
 | `joint-code-plan-lifting` | [提升有限嵌套共同方案 / Lifting finite nested joint plans](records/joint-code-plan-lifting.md) | theorem | recorded-checked |
 | `joint-decomposition-lifting` | [从整体代码提升共同分解 / Lifting a joint decomposition from a whole code](records/joint-decomposition-lifting.md) | theorem | recorded-checked |
 | `joint-plan-composition` | [局部方案的共同接续 / Joint continuation of local plans](records/joint-plan-composition.md) | theorem | recorded-checked |
 | `joint-target-uniqueness` | [共同实现测试下的目标唯一性 / Target uniqueness for joint tests](records/joint-target-uniqueness.md) | theorem | recorded-checked |
+| `market-protected-continuation` | [市场保护证书下的持续运行 / Continued market operation under a protection certificate](records/market-protected-continuation.md) | theorem | recorded-checked |
+| `market-supported-finite-transition` | [有支持的有限纠正与保护交接 / Supported finite correction and protective handoff](records/market-supported-finite-transition.md) | theorem | recorded-checked |
+| `material-preparation-output` | [材料准备的实际输出 / Actual material preparation output](records/material-preparation-output.md) | theorem | recorded-checked |
 | `multivalued-joining-common-structure` | [多结果接合的共同关系结构 / Common relational structure for multivalued joining](records/multivalued-joining-common-structure.md) | theorem | recorded-checked |
+| `open-form-realization-under-revision` | [开放形态下的规则修订与实际生成 / Rule revision and actual generation with open forms](records/open-form-realization-under-revision.md) | theorem | recorded-checked |
 | `organizational-formation-from-generative-comparison` | [完整生成比较下的组织形成要求 / Required organization under whole generative comparison](records/organizational-formation-from-generative-comparison.md) | argument | reviewed-scoped |
 | `positive-ground-open-futures` | [可见未来中的确定正面根据与开放形态 / Certain positive ground with open forms in visible futures](records/positive-ground-open-futures.md) | theorem | recorded-checked |
 | `practical-judgment-g0-j` | [G0/J 下的一般实践判断 / Practical judgment under G0/J](records/practical-judgment-g0-j.md) | argument | reviewed-scoped |
+| `recurrent-chain-assembly` | [材料准备接入重复链状生成 / Prepared material joins recurrent chain formation](records/recurrent-chain-assembly.md) | theorem | recorded-checked |
 | `relational-generative-comparison` | [共同生成比较所需的关系信息 / Relational information required for a joint-generative comparison](records/relational-generative-comparison.md) | theorem | recorded-checked |
 | `risk-certificate-outcome-distinction` | [风险界限与实现结果的区别 / Risk bounds and realized outcomes](records/risk-certificate-outcome-distinction.md) | theorem | recorded-checked |
 | `situated-recovery-empirical-correspondence` | [情境恢复的公开数据对应 / Public-data correspondence for situated recovery](records/situated-recovery-empirical-correspondence.md) | assessment | reviewed-scoped |

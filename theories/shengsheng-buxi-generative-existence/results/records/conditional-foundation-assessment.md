@@ -8,6 +8,14 @@
 
 Documentary review UTC: `2026-10-08T12:31:53.854610+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
+## Overview / 首页摘要
+
+**贯通组织、学习、关切与智慧的有条件基础 / A connected conditional foundation for organization, learning, concern and wisdom**
+
+更广的生成论述作为有条件候选，已满足原定五项完成条件：明确奠基、接通推导、相容组合、建设与破坏机制以及可辨别证据。它在明示局部规律及规范前提下，将形成的组织、可修订评价与有根据行动接通，保留失败历史及真实接合过程与分别实现之间的界限。 / The broader generative account meets its original five completion conditions as a conditional candidate: explicit grounding, connected derivations, compatible composition, constructive and destructive regimes, and discriminating evidence. It connects formed organization and revisable evaluation to warranted action under stated local laws and normative premises, preserving failed histories and the boundaries between genuinely joined processes and separate realizations.
+
+**Evidence / 证据:** 已有综合验收及底层成果的独立审查。这是有范围的解释性验收，不是另一个总括定理或普遍经验确认。 / Existing integrated assessment and independent reviews of the underlying results. This is a scoped explanatory acceptance, not an additional omnibus theorem or a claim of universal empirical confirmation.
+
 ## 主张 Claim
 
 既有审查认为候选在显式局部规律与规范前提下满足其原五项完成条件。 / The existing review assesses the candidate as meeting its original five completion conditions under explicit local laws and normative premises.
@@ -43,6 +51,7 @@ No dependency on another migrated record is asserted; source imports and supplie
 | review | [FOUNDATION-ROOT-ACCEPTANCE.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-ROOT-ACCEPTANCE.md) | — |
 | integration | [FOUNDATION-COMPOSITION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md) | — |
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
+| provenance | [2026-10-08-universal-metaethics-name-and-readme.md](../../../../sources/15-codex-theory-conversations/2026-10-08-universal-metaethics-name-and-readme.md) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -55,3 +64,4 @@ Aliases / 别名: —
 ## 沿革 History
 
 - 2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。 / 2026-10-08: migrated existing result identity and scope; no new theorem or relocated source.
+- 2026-10-08：按 Ren 要求，在 Universal Meta-Ethics of Agency 名称下新增以英文为主的前置摘要。复用本成果及既有证据；无新定理、编译或更强完成声明。 / 2026-10-08: added the English-first leading summary requested by Ren under the title Universal Meta-Ethics of Agency. Reuses this result and its existing evidence; no new theorem, proof run or stronger completion claim.

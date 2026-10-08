@@ -1,0 +1,44 @@
+JointContinuationClassification.whole_profile_preservation_iff_joint_bundle_preservation.{u, v, w} {Old : Type u}
+  {New : Type w} {Claim : Type v} (before : JointContinuationClassification.Continuations Old Claim)
+  (after : JointContinuationClassification.Continuations New Claim) :
+  JointContinuationClassification.CarriesWholeProfiles before after ↔
+    JointContinuationClassification.PreservesJointBundles before after
+JointContinuationClassification.whole_profile_preservation_composes.{u, v, w, x} {First : Type u} {Second : Type w}
+  {Third : Type x} {Claim : Type v} {first : JointContinuationClassification.Continuations First Claim}
+  {second : JointContinuationClassification.Continuations Second Claim}
+  {third : JointContinuationClassification.Continuations Third Claim}
+  (left : JointContinuationClassification.CarriesWholeProfiles first second)
+  (right : JointContinuationClassification.CarriesWholeProfiles second third) :
+  JointContinuationClassification.CarriesWholeProfiles first third
+JointContinuationClassification.faithful_history_transport_preserves_joint_bundles.{u, v, w} {Old : Type u}
+  {New : Type w} {Claim : Type v} {before : JointContinuationClassification.Continuations Old Claim}
+  {after : JointContinuationClassification.Continuations New Claim} (transport : Old → New)
+  (feasible : ∀ (old : Old), before.feasible old → after.feasible (transport old))
+  (faithful :
+    ∀ (old : Old) (claim : Claim),
+      before.feasible old → before.realized old claim → after.realized (transport old) claim) :
+  JointContinuationClassification.PreservesJointBundles before after
+JointContinuationClassification.complement_closed_preservation_excludes_new_realization.{u, v, w} {Old : Type u}
+  {New : Type w} {Claim : Type v} {before : JointContinuationClassification.Continuations Old Claim}
+  {after : JointContinuationClassification.Continuations New Claim} (complement : Claim → Claim) {old : Old} {new : New}
+  (oldFeasible : before.feasible old) (newFeasible : after.feasible new)
+  (oldComplement :
+    ∀ (history : Old),
+      before.feasible history →
+        ∀ (claim : Claim), before.realized history (complement claim) ↔ ¬before.realized history claim)
+  (newComplement :
+    ∀ (history : New),
+      after.feasible history →
+        ∀ (claim : Claim), after.realized history (complement claim) ↔ ¬after.realized history claim)
+  (carries : ∀ (claim : Claim), before.realized old claim → after.realized new claim) :
+  ¬∃ claim, after.realized new claim ∧ ¬before.realized old claim
+JointContinuationClassification.same_marginal_realizations_can_lose_a_joint_bundle :
+  (∀ (claim : JointContinuationClassification.Claim),
+      (∃ history,
+          JointContinuationClassification.retained.feasible history ∧
+            JointContinuationClassification.retained.realized history claim) ↔
+        ∃ history,
+          JointContinuationClassification.released.feasible history ∧
+            JointContinuationClassification.released.realized history claim) ∧
+    (JointContinuationClassification.Jointly JointContinuationClassification.retained fun x => True) ∧
+      ¬JointContinuationClassification.Jointly JointContinuationClassification.released fun x => True

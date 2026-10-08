@@ -6,7 +6,7 @@
 
 记录源 / Editable record: [enacted-scene-binding.json](enacted-scene-binding.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T13:21:00.795254+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-08T13:41:46.812488+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
@@ -52,10 +52,11 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 ## 复用与下一增量 Reuse and next delta
 
-接通产生经历的探究与沟通行动的选择和修订；复用已有探究及方法形成，不重建泛型更新机制。 / Connect selection and revision of exploratory/communicative actions that produce encounters; reuse existing inquiry and method formation rather than rebuilding a generic updater.
+复用 encounter-selection-and-revision：取得的访问与歧义现接通实际选择及新学习；下一连接是维持覆盖的选择性注意与相互沟通协调的发育对应。 / Reuse encounter-selection-and-revision: acquired access and ambiguity now enter actual selection and further learning. Next is developmental correspondence for selective attention and reciprocal communicative coordination sustaining coverage.
 
 Aliases / 别名: `Generative.EnactedScene.enacted_access_enters_all_sequence_interpretation`
 
 ## 沿革 History
 
 - 2026-10-08：由实际移动计算可取得候选，并正式接通已检查的绑定解释；动作选择与类别形成的前提保留。 / 2026-10-08: computed accessible alternatives from actual movement and formally joined the checked binding interpretation; action-selection and category-formation premises remain.
+- 2026-10-08：核读原研究第14–16节；选择经历及访问预测修订的新连接已实查，原证明范围不变，未宣告完整心理解释。 / 2026-10-08: reviewed study sections 14–16; encounter selection and access-prediction revision now have a checked connection. This proof’s original scope remains unchanged; no complete psychological explanation is claimed.

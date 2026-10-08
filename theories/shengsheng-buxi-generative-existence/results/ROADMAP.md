@@ -47,9 +47,17 @@ Directions preserve authorization and scope; completion status is obtained from 
 
 **Completion criterion / 完成条件:** 已完成的方向与实践判断直接复用；后续必须说明尚缺的具体连接。 / Reuse completed direction and practical judgment results; subsequent studies must identify the specific missing connection.
 
-[2026-10-08-generative-alignment-priority](../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md) · [ALIGNMENT-AND-GOVERNANCE](../unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#current-generative-alignment-priority)
+[2026-10-08-generative-alignment-priority](../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md) · [ALIGNMENT-AND-GOVERNANCE](../unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#current-generative-alignment-priority) · [2026-10-08-readme-research-progress-and-push](../../../sources/15-codex-theory-conversations/2026-10-08-readme-research-progress-and-push.md)
+
+**README overview / 首页摘要:** 推进 AI 对齐 / Advancing AI alignment
+
+框架使智能的目的及目的形成、修订的规则都成为伦理评价的对象。它以真实的生及进一步共同生成评价人类指令、机构目标和 AI 目的。方向论证已在显式公理范围内完成；经检查的局部成果也将规则修订接到实际生成，同时允许实现形态改变。 / The framework makes the purposes of intelligence, and the rules by which those purposes are formed and revised, objects of ethical evaluation. It can assess human instructions, institutional objectives and AI goals against actual living and further shared generation. The direction argument is complete at its explicit-axiom scope; checked local results also connect rule revision to actual generation while allowing the realized form to change.
+
+**Next / 下一步:** 发展辨认伦理相关关系的具体方式，使有根据的理由在学习、目的改变和行动中保持作用；在具体案例中检验真实对应与实施。规范适用不保证行为趋同。 / Develop situated ways to recognize ethically relevant relations and preserve warranted reasons through learning, changed purposes and action. Test actual correspondence and implementation in concrete cases; normative applicability does not guarantee behavioral convergence.
 
 [alignment-direction-g0-j](records/alignment-direction-g0-j.md): `reviewed-scoped`
+
+[open-form-realization-under-revision](records/open-form-realization-under-revision.md): `recorded-checked`
 
 [practical-judgment-g0-j](records/practical-judgment-g0-j.md): `reviewed-scoped`
 
@@ -94,20 +102,55 @@ Directions preserve authorization and scope; completion status is obtained from 
 
 [2026-10-07-normative-grounding-first-priority](../../../sources/15-codex-theory-conversations/2026-10-07-normative-grounding-first-priority.md) · [2026-10-07-shengsheng-ethical-direction](../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md) · [UNIFIED-ETHICAL-GROUNDING](../unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md)
 
+<a id="theory-of-evolution"></a>
+## 演化理论 / The Theory of Evolution
+
+**Scope / 范围:** 独立获授权的演化理论研究；Ren 要求将其展示于共同 README。其理论重点不替代其他会话范围。 / The separately authorized evolutionary-theory programme, made visible in the shared README by Ren; its theoretical focus does not displace other sessions.
+
+建立生成性的演化理论，接通组织、传递、重构、发育与变化中的选择，并说明其解释及比较优势。 / Establish a generative theory of evolution with a connected account of organization, transmission, reconstruction, development and changing selection, and demonstrate its explanatory and comparative strength.
+
+**Premises / 前提:** 从同一关系展开开始，保留局部规律、遗传与选择对应。演化成功不提供伦理权威。当前理论比较关注公开前提与既有结果的恢复；新测量不是其完成门槛。 / Begin with one relational unfolding; retain local laws, inheritance and selection correspondence. Evolutionary success supplies no ethical authority. The active theoretical comparison concerns explicit premises and recovery of established results; new measurements are not its completion gate.
+
+**Completion criterion / 完成条件:** 完整演化及比较主张仍在推进。按原范围复用已完成局部推导，继续组织变异及选择的剩余连接；更广经验计划与本轮理论比较分别保留。 / The full evolutionary and comparative claim remains active. Credit completed local derivations at their stated scope and complete the remaining organizing-variation and selection connections. Keep the broader empirical programme separate from the current theoretical comparison.
+
+[2026-10-08-the-theory-of-evolution-goal](../../../sources/15-codex-theory-conversations/2026-10-08-the-theory-of-evolution-goal.md) · [2026-10-08-evolution-theoretical-focus](../../../sources/15-codex-theory-conversations/2026-10-08-evolution-theoretical-focus.md) · [THE-THEORY-OF-EVOLUTION](../unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md#current-theoretical-focus) · [2026-10-08-readme-research-progress-and-push](../../../sources/15-codex-theory-conversations/2026-10-08-readme-research-progress-and-push.md)
+
+**README overview / 首页摘要:** 论证 The Theory of Evolution / Investigating The Theory of Evolution
+
+我们正在论证同一生成论述能否建立 The Theory of Evolution。有条件成果已接通形成、传递、重构、发育记忆及更新规则修订。最近的经检查构造在任意有限供给轮数中重新建立链状组织，保留实际材料消耗与失败。完整解释及比较主张仍是正在推进的目标。 / We are investigating whether the same generative account can establish The Theory of Evolution. Conditional results connect formation, transmission, reconstruction, developmental memory and revision of updating rules. A recent checked construction rebuilds a chain through any finitely supplied number of cycles, retaining actual material costs and failure. The full explanatory and comparative claim remains an active research objective.
+
+**Next / 下一步:** 说明组织关系的可遗传变异及其选择后果；比较在同等信息下，接通的论述比既有理论多解释了什么。直接复用已完成的理论恢复与构造。 / Explain heritable variation in organizing relations and its selection consequences; establish what the connected account explains beyond equally informed existing theories. Reuse the completed theoretical recoveries and constructions.
+
+[growth-constrained-fragmentation](records/growth-constrained-fragmentation.md): `recorded-checked`
+
+[material-preparation-output](records/material-preparation-output.md): `recorded-checked`
+
+[recurrent-chain-assembly](records/recurrent-chain-assembly.md): `recorded-checked`
+
 <a id="universal-intelligence-session"></a>
-## 普遍智能会话的独立目标 / Independent universal-intelligence target
+## 能动性的普遍元伦理 / Universal Meta-Ethics of Agency
 
 **Scope / 范围:** 原普遍智能会话及其明确授权接续，不自动成为每个仓库任务目标。 / The original universal-intelligence session and explicitly authorized continuations; not automatically every repository task’s objective.
 
-证明所有智能的普遍元伦理，说明整体相依与其中差异化行动能力的形成。 8日最新接续明确采用G0，从关系中形成的个体位置及当前有根据的可见未来，建立正面生成意义与可修订的实践方向。 / Prove universal metaethics of all intelligence, explaining interconnection and differentiated agency formed within the whole. The latest 8 October continuation uses G0 to establish positive generative warrant and revisable practical direction from formed relational positions and supported visible futures.
+证明所有智能的普遍元伦理，说明整体相依与其中差异化行动能力的形成。 8日最新接续明确采用G0，从关系中形成的个体位置及当前有根据的可见未来，建立正面生成意义与可修订的实践方向。 Ren 将理论命名为 Universal Meta-Ethics of Agency，将规范核心命名为 Universal Metaethical Core；公开 README 优先展示已成立的结论及其有范围证据。 / Prove universal metaethics of all intelligence, explaining interconnection and differentiated agency formed within the whole. The latest 8 October continuation uses G0 to establish positive generative warrant and revisable practical direction from formed relational positions and supported visible futures. Ren names the theory Universal Meta-Ethics of Agency and its normative core Universal Metaethical Core; the public README leads with established conclusions and their scoped evidence.
 
 **Premises / 前提:** 规范普遍性、实际遵循和当前表述的唯一必要性必须分别论证。 保留真实生成可能与新证据纠正判断两层开放；完整积分、全知和整体严格改善不是正面根据的前提。 / Normative universality, actual compliance and exclusive necessity of this formulation need separate arguments. Preserve both real generative possibilities and evidence-responsive revision; complete integration, omniscience and strict whole improvement are not premises of positive warrant.
 
 **Completion criterion / 完成条件:** 不能以局部生成定理、给定价值保存或有限比较宣告普遍目标完成。 本次有限正面原则按其明确前提验收；不得把全面总排序、所有后果无损或必然服从另设为该原则的完成条件。 / A local generative theorem, preservation of supplied value or bounded comparison does not complete the universal target. Assess the current finite positive principle under its explicit premises; do not add a complete ranking, losslessness of every consequence or inevitable compliance as its completion gate.
 
-[2026-10-07-universal-intelligence-session-goal](../../../sources/15-codex-theory-conversations/2026-10-07-universal-intelligence-session-goal.md) · [UNIFIED-ETHICAL-GROUNDING](../unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence) · [2026-10-08-positive-generative-direction](../../../sources/15-codex-theory-conversations/2026-10-08-positive-generative-direction.md)
+[2026-10-07-universal-intelligence-session-goal](../../../sources/15-codex-theory-conversations/2026-10-07-universal-intelligence-session-goal.md) · [UNIFIED-ETHICAL-GROUNDING](../unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence) · [2026-10-08-positive-generative-direction](../../../sources/15-codex-theory-conversations/2026-10-08-positive-generative-direction.md) · [2026-10-08-universal-metaethics-name-and-readme](../../../sources/15-codex-theory-conversations/2026-10-08-universal-metaethics-name-and-readme.md) · [2026-10-08-readme-research-progress-and-push](../../../sources/15-codex-theory-conversations/2026-10-08-readme-research-progress-and-push.md)
+
+**README overview / 首页摘要:** 继续发展能动性的伦理 / Developing the ethics of agency
+
+我们继续将普遍元伦理核心展开为更具体的伦理。G0 与公开实践承诺已经支持比较、基本保护、有界责任、交接及适当结束；当前接续处理冲突要求、不确定分类和可修订判断。 / We are developing the Universal Metaethical Core into increasingly specific ethics. G0 and explicit practical commitments already support comparison, basic protection, bounded responsibility, transfer and appropriate ending. Current extensions address conflicting claims, uncertain classification and revisable judgment.
+
+**Next / 下一步:** 推进严重损失与公平机会交叉时的有根据比较；辨明足以改变具体选择的生活关系，包括何种情境变化足以正当地修订承担。 / Extend justified comparisons where serious losses and fair chances conflict; establish the particular living relationships that change a concrete choice, including when a changed situation warrants revising an undertaking.
+
+[classification-robust-generative-comparison](records/classification-robust-generative-comparison.md): `recorded-checked`
 
 [positive-ground-open-futures](records/positive-ground-open-futures.md): `recorded-checked`
+
+[practical-judgment-g0-j](records/practical-judgment-g0-j.md): `reviewed-scoped`
 
 [universal-practical-warrant](records/universal-practical-warrant.md): `open`
 
@@ -118,7 +161,7 @@ Directions preserve authorization and scope; completion status is obtained from 
 
 说明核心作为智慧之根的必要关系与实际生成。 / Explain the necessary relations and actual formation involved in the core as the root of wisdom.
 
-**Premises / 前提:** 理由与保证须匹配判断的内容和强度；不把数值风险界限当成伦理许可。 / Reasons and guarantees must match the content and strength of a judgment; a numerical risk bound is not ethical permission.
+**Premises / 前提:** 理由与保证须匹配判断的内容和强度；不把数值风险界限当成伦理许可。 Ren于2026-10-08进一步明确：道德依赖本理论普遍原则，因为道德判断becoming而模型能够判断becoming；沿显式G0/J/E正面展开，不以Dancy认可为门槛。 / Reasons and guarantees must match the content and strength of a judgment; a numerical risk bound is not ethical permission. On 8 October 2026 Ren further directs morality through this theory’s universal principles because morality appraises becoming and the model can appraise becoming. Develop the affirmative route under explicit G0/J/E, without requiring Dancy’s assent.
 
 **Completion criterion / 完成条件:** 完整目标状态以开放成果记录为准；有限智慧、判断和风险成果直接复用。 / The open result record states the full target; reuse existing bounded wisdom, judgment and risk results.
 

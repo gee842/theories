@@ -73,3 +73,63 @@ c≥6时平移后的排序与未平移的严格排序相反。这个代数域本
 本轮关闭的是“上一轮 Q 相容性见证是否足以作为逐次选择规则”的检验：**不足，必须另行说明评价与历史怎样接续。** NP 的实质优先力度及有损分担的数值范围仍开放。下一连接须在已明确决策阶段、当前支持和有效历史的比较中，给出实际可辩护的有损分担范围；不得靠换参考时点、任意权重或给定上限冒充校准。对生成性对齐的推进是明确了静态比较转为规则自我修订时必须补上的连接，尚未完成所有智能的普遍规范奠基。
 
 维护只更新本轮内容、M20成对接续及已读版本；[变更记录](RISK-CONDITIONING-INDEX-EDITS.json)与[局部检查](RISK-CONDITIONING-CHECKS.json)不认证并行未复核来源。
+
+<a id="open-form-realization-under-revision"></a>
+
+## 8. 新版成果接续：开放形态下的实际生成 / Realization under open-form revision
+
+2026-10-08后续，AI撰写。用户要求在大幅更新的仓库基础上继续；本次重读新版正面生成方向与成果工作流。第7节的风险分担校准继续开放，但不再作为所有正面伦理判断的先行门槛。本次沿“规则修订怎样接续根据”进入已完成正面原则的新组合，不重开 G0、一般实践判断、学习与实际更新机制。
+
+**Result(s)：**直接复用 `positive-ground-open-futures` 的 `contingent_generation_has_positive_ground`，以及尚按原文维护的 `ContinuationRenewal.renewal_within_rank_bound`。[一般生成实践要求](GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md)已说明实际执行与进展的区别，`Generative.SituatedContinuation.permanent_opportunity_without_completion` 已给出有机会而永久不完成的历史；这些不是本次新发现。
+
+**Delta：**新增一个组合结果 `open-form-realization-under-revision`：当前规则的进展与跨规则的剩余证书交接，推出同一历史中的有限形成，继而满足旧正面根据定理的输入。反例加强到“每条被选规则单独持续都完成、每步都推进当前规则，但反复换规则永不完成”；正例容许改变形成内容。包装式 `positive_ground_by_bound` 及应用控制不另计独立规范成果。
+
+**Supplied premises / correspondence：**实际阶段与步骤、当前证书、所见接续及实际覆盖、完成事件与新的生的对应、显式 G0；具体许可、真实损失、有效承担和支持条件仍按原有实践原则说明。**Evidence：**[新模块](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OpenFutureRevision.lean)、[检查器](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_open_future_revision.py)与[源文绑定回执](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/open-future-revision-verification.json)，10项新定理／19项声明审计。**Boundary：**充分实现接口，不是普遍行为定律、强制生产原则或全局伦理优化。**Integration：**新记录及理论第17–19节；生产端 `generation_by_bound` 的逐历史形成输出，精确进入旧定理的 `formed` 输入，保留 G0 和对应前提。
+
+### 8.1 肯定论证：开放不等于不断延期
+
+Ren 的[正面方向澄清](../../../../sources/15-codex-theory-conversations/2026-10-08-positive-generative-direction.md)及[已有整合](POSITIVE-GROUND-UNCERTAINTY-INTEGRATION.md)使一项正面伦理判断不再需要等待完整未来积分或全局严格改善。这里的有根据前景可以保留不同真实形态。下一推论责任是：若实践还会修订，支持原前景的实现关系是否仍然有效？
+
+先从一段共同活动出发，再区分准备阶段、组织路线、修订和形成事件。阶段并非独立主体的私有状态，路线也不是外部评估者任意加上的目的。模型省略了其实际形成史、物质代价和许可判断，只隔离“各路线分别有效，能否保证它们的实际组合有效”这一可检验推论。该省略不能被当成完整理论的失败。
+
+两条固定路线各自两步以内完成，却可以通过逐次切换永久停在准备阶段。旧证书由2下降到1后，新路线又把同一阶段的证书设为2。这里没有假装行动没有发生；每一步都发生且按当时规则确有进展。失败恰在换规则时进展没有接续。由此得到的是新的组合反例，而不是对准备、开放或目的修订的全面否定。
+
+正面接口保留同一阶段：当前路线使剩余证书下降，下一路线接手时不增加这一剩余要求。于是实际沿途的对角序列确实下降。已有有限更新定理给出一次完成；完成与实际新生成的对应把这一结果传给已有 G0 定理。证明没有要求完成的内容在不同历史中相同。有限正例进一步显示：经过第一步后改换路线，可以形成另一种内容而仍接住剩余证书。
+
+**对理论的推进是：维持生成方向、容许形成方式改变和保有一项有限实现根据，可以同时成立。** 这解决一个此前未给出的组合，而不是重新证明方向。对机构、人或 AI，若其选择规则允许改写所追求的具体未来，评价这种改写时可以同时检查新内容的伦理根据与实际接续；两者来自同一历史，不能用更换目标名称把尚未实现的承担宣告完成。
+
+The new contribution composes established results. Individually finishing rules can fail under perpetual revision, whereas a handoff of remaining realization certificates supports actual formation without fixing its form. Actual generative correspondence then feeds the existing positive-ground theorem. This distinguishes a reason for a possible future from a warranted claim that a revisable course will realize it.
+
+### 8.2 精确证明与对应审计
+
+记实际阶段为 xₙ，当前路线的证书为 rₙ，指定完成事件为 Fₙ。在 ¬Fₙ 时供给：rₙ(xₙ₊₁) < rₙ(xₙ)，以及 rₙ₊₁(xₙ₊₁) ≤ rₙ(xₙ₊₁)。`handed_off_progress` 推出对角序列的严格下降。`generation_by_bound` 直接调用 `ContinuationRenewal.renewal_within_rank_bound`：初始证书≤B，则存在0≤n≤B的完成事件；再使用显式 `correspondence` 取得同一历史里的生成内容 q、实际出现以及此前未出现。不同历史可以采用不同 q。
+
+代码以自然数作为有限界限，不将序数进展、实际时间或风险强度暗藏其中。事件编号0..B包括 B+1个位置；当 Fₙ表示从阶段 n 到 n+1 的完成事件时，结论是至多 B+1次被表示的实际转变。一个不发生的物理步骤不能靠自然数索引变成已经发生；无限索引历史、实际执行及支持可持续性是所给对应，不是这一定理新推导的存在结论。`DecidablePred (completed h)` 明示供应。形式上允许空的所见范围，现实应用要以实际历史属于范围排除空真值。
+
+`boundedInventory` 只记录界限内出现的内容，不预先把所有完成都定义成善；`generative`、完成到生成的关系和 G0 都作为不同参数给出。`positive_ground_by_bound` 直接复用旧正面根据推论。[冻结的 Controls.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/open-future-revision-checks/20261008T131727.086965Z/Controls.lean)把前一生产端输出实际送入后一消费端，经 Lean 编译，故这里是正式组合而非仅有概念类比。
+
+有限反例由 `each_fixed_rule_finishes`、`each_rule_local_progress`、`revising_run_stays_unfinished`、`revised_rules_can_fail_forever` 与 `revision_resets_remaining` 检查；永久失败通过任意自然数的归纳成立，不是有限次试跑。`changed_form_with_valid_handoff` 与 `realized_form_need_not_be_fixed` 检查成果可变而交接成立，以及逐分支有内容不推出同一内容。两个终止状态的名字本身不认证其在现实中就是生，也不赋予替代权限。
+
+Lean 4.29.1冻结并编译7个模块：新增10项定理／19项声明审计，14项空依赖、5项仅 `propext`；没有新增 `Classical.choice`、`Quot.sound` 或自定义公理依赖。98项继承定理／185项审计为组合闭包另行编译，其中标准 Lean 依赖保持原范围；总声明审计204项。1个控制应用不重复计数。首次编译的两处 elaboration 问题由算术化简及显式分类消除，失败快照保留；数学命题未因此修改。没有独立 agent 验收或新经验实验。
+
+### 8.3 作者实质反审
+
+1. **这会把生生变成永远制造新东西的义务吗？** 不会。生活继续、照护、休息、已经形成的关系和能力可有当下的正面意义。新生成是本定理的一个充分入口，不是 G0 的全部内容，更不是对每段生活附加的生产期限。否则会错误地产生“现在的善必须由未来另一项成果担保”的无穷后退。
+2. **证书不增加是否禁止真正学习？** 不禁止。发现原计划不可行或有害，可能就应撤回原实现保证，重新确定范围和承担。此时旧证书不再适用，本定理不要求保留它。交接≤是保证同一有限实现主张的一条充分途径，不是所有有根据修订的必要条件。
+3. **改变成果会不会只是移动球门？** 强对手成立：若承诺的是某项特定照护或交付，另一个终止状态即使有其善，也未必履行原承担。新模型只证明形式可变与有限实现相容；对应是否保持真正要求必须另审。第4节的有效历史与原有 J3、机会修订成果继续约束这一解释。
+4. **反例中的准备过程也可能有价值。** 接受。因此结论严格限于指定形成保证的失败。若来回准备已经增长了真实能力，其价值应纳入内容，不能因没有命名终点而抹去；同样不能因准备有价值，就把未形成的特定成果说成形成。
+5. **是不是又用技术检查逃避伦理判断？** 本次不把进展数当作伦理量，也不让有限保证成为正面根据的唯一入口。新增范围是已完成正面原则与修订规则的组合。NP 强度和有损分担仍未校准；再增加另一个进展构造不能回答那些规范比较，今后须按所问的具体伦理内容选题。
+6. **所见范围未穷尽未来，保证还能成立吗？** 范围内定理成立；传递到实际必须有实际覆盖。增加新候选可能要求撤回证书，旧正面开放成果已经保留此反例。不能因本次实际构造有两种成果，就宣布新证明了证据获取通道、模型生成或无限认识开放；原 `queryOpen` 字段的有限范围原样保留。
+7. **为什么正当探索要保证成功？** 不必。这里是一个稳健充分结果。成功不确定的尝试仍可能有充分理由，但其理由强度、失败损失及许可需按实际关系说明。数学中没有从“未满足交接”推出“不正当”，也没有从“有某项正面根据”推出“可以让缺乏决定权者承受严重风险”。
+
+这七项为作者反审，未冒充独立验收。最后一项把当前接续重新接回用户最初问题：共同生成的好前景是理由的一部分；它的实际形成根据、生活损失和有根据的承担在同一过程中需要分别说明。这里不预置对立双方，也不以整体名称吞掉具体受损关系。
+
+### 8.4 原典评估、完成范围与下一实质连接
+
+核读 Leslie Lamport，[“Proving the Correctness of Multiprocess Programs”](https://lamport.azurewebsites.net/pubs/proving.pdf)，*IEEE Transactions on Software Engineering* SE-3(2)，1977，125–143页；实际范围为125页导论与134–135页§III开头。其保持性质与最终发生性质的区分、执行假设及组合条件是本次借用的证明背景。下降证书不是新发明的伦理原则；仅知道各部分能够正确工作，不等于已证明其实际交互。本次原创范围仅是仓库结果的具体组合、反例及规范解释。未把全篇标为核读，未引入其原文为 G0、许可或现实执行可靠性的证据。
+
+**局部连接现已完成：**规则逐步进展与证书交接→有限实际形成→开放形态的 G0 正面根据。形式成果以[新规范记录](../../../../theories/shengsheng-buxi-generative-existence/results/records/open-form-realization-under-revision.json)维护，[当前理论](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CHOICE-AND-GENERATIVE-CONTEXT.md#open-form-realization-under-revision)接入解释。旧的有限完成、实际更新、有限正面根据均归为复用成果，不列作下一次研究任务。
+
+下一实质连接应针对**具体目的改变时，什么真实生成内容使新目的值得支持，又怎样与同一历史中仍有效的特定承担相接**，直接复用实践判断与机会成果。更好的完成证书不能独自回答这个问题；多证明一个机制也不能代替它。若研究回到有损分担，则依第7节选定真实支持与阶段后作规范比较，不用本结果假装得到比例。两者是不同后续问题，不把完成全部未来积分、每步单调增长或无公理普遍证明增设为本轮的验收门槛。
+
+Completed: an explicit handoff composes finite realization with the existing open-form G0 result. Still supplied are meaningful generative content, actual scope and execution, and the status of continuing undertakings. Subsequent theoretical work should evaluate concrete changes of ends using the already completed practical principles, rather than rebuild this mechanism or treat a realization certificate as ethical permission.

@@ -1,0 +1,49 @@
+{
+  "utc": "2026-10-08T13:31:14.148333+00:00",
+  "scope": "Owned M20 bilingual suffixes, three links and six read/authored source versions. Only the M20 rendered line was replaced. Other review versions and discovery inventory were not refreshed.",
+  "suffixes": {
+    "claim_zh": " 开放形态下的规则修订现有正式实现组合：当前路线推进与剩余证书交接接入既有有限更新，再以实际生成对应接入G0正面根据；各自会完成的路线反复切换仍可能永久不完成。",
+    "claim_en": " Open-form rule revision now has a checked realization composition: current-rule progress and remaining-certificate handoff feed existing finite renewal, then actual generative correspondence feeds G0 positive ground. Individually finishing rules can still fail forever under repeated switching.",
+    "scope_zh": " 本组合新增10项Lean定理／19项审计，继承98项／185项分列；证书不是伦理量，事件0..B至多表示B+1次实际转变。形态可改不授予任意替代承担的权限，也不把有限完成作为生活或探索的普遍要求。",
+    "scope_en": " This composition checks 10 new Lean theorems / 19 audits, separately from 98 inherited theorems / 185 audits. Certificates are not ethical quantities; events 0..B represent at most B+1 actual transitions. Variable form does not license arbitrary replacement of undertakings or impose bounded completion on all life or inquiry.",
+    "connection_zh": " 逐次修订到有条件实际生成再到正面根据的接口已完成，直接复用。下一规范连接是具体目的改变的真实生成内容与仍有效承担怎样共同支持修订；不再以另一个进展构造代替评价。",
+    "connection_en": " The interface from repeated revision through conditional actual formation to positive ground is complete and reusable. The next normative connection concerns how actual generative content and still-valid undertakings support concrete end changes; another progress construction cannot substitute for that appraisal."
+  },
+  "links": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CHOICE-AND-GENERATIVE-CONTEXT.md#open-form-realization-under-revision",
+      "label_zh": "开放形态与实际生成",
+      "label_en": "Open forms and actual generation"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/results/records/open-form-realization-under-revision.json",
+      "label_zh": "修订实现组合记录",
+      "label_en": "Revision-realization result record"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OpenFutureRevision.lean",
+      "label_zh": "修订交接与失败反例证明",
+      "label_en": "Revision handoff and failure proofs"
+    }
+  ],
+  "source_fingerprints_after": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CHOICE-AND-GENERATIVE-CONTEXT.md": "8721450f6121d1707cbfab953019a995c3dc82d7cbfe61d2e9d2e868e9ec71d4",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RISK-CONDITIONING-INTEGRATION.md": "70f117349b7256e524aaba29cadf28ada4e8cf3dccdeade56e002fb35f6ec4eb",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OpenFutureRevision.lean": "8db85bc0b7e3f9a744754d96d05d6c392dbd65a6d62e576de4fa1e89e96a64b8",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_open_future_revision.py": "bf5c04cd1325e6aac82ce31e863f1a1bc2963348b822a4142671fd2f75aaa35b",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/open-future-revision-verification.json": "8e672ea784ac96083e56f04bfc2c565e1440e89371013e204b639819a5f12877",
+    "theories/shengsheng-buxi-generative-existence/results/records/open-form-realization-under-revision.json": "217ed15ac3c71d40fd5b2aa9ca2d1caa627f50b24a06450e5716bac9a0263217"
+  },
+  "substantive_prefixes_preserved": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CHOICE-AND-GENERATIVE-CONTEXT.md": {
+      "bytes": 39521,
+      "sha256": "b665ddbd41e01e260160a8b90ce9bbd86a7f57f3f098a20890ffb506ae04041c"
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RISK-CONDITIONING-INTEGRATION.md": {
+      "bytes": 11856,
+      "sha256": "ed58e221b9a7f1d5c49217cd9497d565a9abef285d1783bed772cde3530e5ed9"
+    }
+  },
+  "recorded_git_baseline": "d829aa95f243f8819ead6eb601db4f129bec84cc",
+  "maintenance_note": "First update wrote the owned additions, then broad M20 validation found two pre-existing unversioned links from concurrent studies. They are retained for their owners; the scoped check validates only new links and owned fingerprints. No full-table freshness claim."
+}

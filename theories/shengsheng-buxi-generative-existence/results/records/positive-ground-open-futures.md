@@ -8,6 +8,14 @@
 
 Documentary review UTC: `2026-10-08T13:11:49.208617+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
+## Overview / 首页摘要
+
+**普遍元伦理核心 / Universal Metaethical Core**
+
+**G0：整体中的生及其继续生成具有基本正面规范意义。** 人类与 AI 都在同一关系展开中分化形成。在有根据的生成对应及公开的直接实践解释下，生成贡献为处于相应关系中的任何行动者提供理由，不以其文化、身份或认同为条件。同一回应可以保证**每一种有根据的可见接续都有某种生成善，同时不固定其未来形态**。真实生成可能与进一步证据修订可以共同保留。这一正面结论无须完整未来积分或整体严格更好的证明。 / **G0: living and further generation within the whole have basic positive normative significance.** Humans and AI are differentiated formations within that relational unfolding. With warranted generative correspondence and an explicit practical articulation, generative contributions supply reasons applicable to any agent so situated, independently of its culture, identity or endorsement. A single response can secure **some generative good in every supported visible continuation while leaving its particular future form open**. Real generative possibilities and further evidence revision can both remain available. This positive conclusion requires neither a complete future integral nor proof that the whole becomes strictly better.
+
+**Evidence / 证据:** 9项经 Lean 实查的定理、30项声明审计及独立范围审查。证明检查条件推论与有限见证；G0 和实践解释是显式前提。一项支持理由不独自构成最终许可。 / 9 Lean-checked theorems and 30 declaration audits, with independent scope review. The proofs check conditional inferences and finite witnesses; G0 and the practical articulation are explicit premises. A contributory reason is not by itself final permission.
+
 ## 主张 Claim
 
 在明示 G0 与生成对应下，同一个回应若在每段当前有根据的接续中实现某种新的生成内容，就在每段接续中具有某项正面根据，无须固定同一种新形态。公开的直接实践解释可给出一项支持理由。有限构造同时保留旧共同可能性、不同真实未来分支和进一步证据辨别；有真实负担或所见范围可修订，不删除这个正面结果。 / Under explicit G0 and generative correspondence, one response realizing some new generation in every presently grounded continuation has some positive ground in each continuation, without fixing one new form across all of them. Explicit direct practical articulation supplies a contributory reason. The finite construction retains old joint possibilities, distinct real future branches and further evidence discrimination; a real burden or revisable admitted scope does not erase the positive result.
@@ -55,6 +63,7 @@ No dependency on another migrated record is asserted; source imports and supplie
 | integration | [POSITIVE-GROUND-UNCERTAINTY-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/POSITIVE-GROUND-UNCERTAINTY-INTEGRATION.md) | — |
 | review | [POSITIVE-GROUND-UNCERTAINTY-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/POSITIVE-GROUND-UNCERTAINTY-REVIEW.md) | — |
 | provenance | [2026-10-08-positive-generative-direction.md](../../../../sources/15-codex-theory-conversations/2026-10-08-positive-generative-direction.md) | — |
+| provenance | [2026-10-08-universal-metaethics-name-and-readme.md](../../../../sources/15-codex-theory-conversations/2026-10-08-universal-metaethics-name-and-readme.md) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -67,3 +76,4 @@ Aliases / 别名: `PositiveGroundUncertainty.positive_integral_has_positive_occu
 ## 沿革 History
 
 - 2026-10-08：依 Ren 的正面根据、双重开放和可见未来澄清完成并登记；新增形式组合及见证独立于旧 C 比较结果，旧证明与真实反例原范围保留。 / 2026-10-08: completed and registered following Ren's clarification of positive ground, both forms of openness and visible futures. The new formal connection and witnesses are distinct from the older C-comparison result, whose proofs and counterexamples retain their scope.
+- 2026-10-08：按 Ren 要求，在 Universal Meta-Ethics of Agency 名称下新增以英文为主的前置摘要。复用本成果及既有证据；无新定理、编译或更强完成声明。 / 2026-10-08: added the English-first leading summary requested by Ren under the title Universal Meta-Ethics of Agency. Reuses this result and its existing evidence; no new theorem, proof run or stronger completion claim.

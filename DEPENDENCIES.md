@@ -30,6 +30,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md)
 
+## classification-robust-generative-comparison ← practical-judgment-g0-j
+
+`formal-reuse` — 复用比较、非自反性与传递性；不重证规范前提。 / Reuses comparison, irreflexivity and transitivity without re-proving normative premises.
+
+**Producer output / 上游输出:** Better 的定义以及 better_irrefl、better_trans。 / The Better definition and better_irrefl/better_trans.
+
+**Consumer input / 下游输入:** classification_robust_iff 的比较及 formation_required_without_fixed_classification 的严格序。 / Comparison in classification_robust_iff and strict-order inputs to formation_required_without_fixed_classification.
+
+**Retained conditions / 保留条件:** G0/J 与实际对应仍须有根据；不是逻辑公理审计所取得。 / G0/J and actual correspondence retain their substantive warrant, not supplied by logical axiom auditing.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ClassificationRobustJudgment.lean)
+
+## classification-robust-generative-comparison ← organizational-formation-from-generative-comparison
+
+`formal-reuse` — 每种 q 的稳健改善见证进入既有组织命题。 / Robust improvement witnesses for each q enter the existing organizational theorem.
+
+**Producer output / 上游输出:** formation_required_of_improvable_absence 将每个缺失者的改善转成非空 Required。 / formation_required_of_improvable_absence converts improvement of every deficient option into nonvacuous Required.
+
+**Consumer input / 下游输入:** formation_required_without_fixed_classification 为每种 q 提供该输入并输出作用要求。 / formation_required_without_fixed_classification supplies that input for each q and obtains a required role.
+
+**Retained conditions / 保留条件:** 有限非空合格范围及真实实践对应；未推出一个跨分类共同方案。 / Finite nonempty eligible scope and actual practical correspondence; no common cross-classification implementation follows.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ClassificationRobustJudgment.lean)
+
+## classification-robust-generative-comparison ← relational-generative-comparison
+
+`formal-reuse` — 直接使用其中的结构输出，不把 C 或伦理许可当作自动结果。 / Directly uses its structural output, not C or ethical permission as automatic conclusions.
+
+**Producer output / 上游输出:** RelationalGrounding.joint_bundle_extension 给出共同组合保留与一项新增生成组合。 / RelationalGrounding.joint_bundle_extension supplies joint-bundle preservation and one new generative bundle.
+
+**Consumer input / 下游输入:** joint_enrichment_is_strict 构造 freshJoint 的严格包含；joint_enrichment_without_fixed_classification 接入分类命题。 / joint_enrichment_is_strict constructs strict freshJoint inclusion; joint_enrichment_without_fixed_classification applies the classification theorem.
+
+**Retained conditions / 保留条件:** 共同能力的正面对应、旧基本相同、无所表示旧增益；现实损失覆盖不由事件法则证明。 / Positive joint-capacity correspondence, equal old basic profiles and no represented old gains; the event law does not prove real cost coverage.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ClassificationRobustJudgment.lean)
+
 ## code-plan-global-support ← joint-code-plan-lifting
 
 `formal-reuse` — 代码实现先提升为同一原生共同方案。 / Code realization first lifts to the same native joint plan.
@@ -65,6 +101,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 解释输入相同，不要求整个状态或支出历史相同；额外移动成本保留。 / Interpretation inputs match; whole-state or expenditure-history identity is not assumed, and movement costs remain.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EnactedScene.lean)
+
+## encounter-selection-and-revision ← enacted-scene-binding
+
+`formal-reuse` — 选择经历产生旧行动场景构造的解释输入，直接复用其任意序列结论。 / Selected encounters produce the earlier enacted-scene interpretation inputs, directly reusing its all-sequence conclusion.
+
+**Producer output / 上游输出:** 旧行动场景下任意编码序列解释与相应原子消息组合一致。 / Every encoded sequence under the prior enacted scene matches the corresponding atomic message assembly.
+
+**Consumer input / 下游输入:** selected_encounters_supply_previous_interpretation_inputs 保证新史的日志、候选、绑定和排除输入相同。 / selected_encounters_supply_previous_interpretation_inputs establishes matching log, repertoire, binding and exclusion inputs in the new history.
+
+**Retained conditions / 保留条件:** 接口相同不要求支出或完整状态相同；初次巡查及新访问读取成本保留。 / Input equality does not identify expenditure or whole states; preliminary survey and fresh-reading costs remain.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/EncounterChoice.lean)
 
 ## finite-basis-common-interpretation ← derivation-soundness
 
@@ -114,6 +162,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean)
 
+## market-supported-finite-transition ← market-protected-continuation
+
+`formal-reuse` — 实际到达状态接通原保护证书，无交接重置。 / The actual arrived state supplies the original protection certificate without a handoff reset.
+
+**Producer output / 上游输出:** 原证书接收 Safe 初态和逐步容许扰动，给出全时守卫不失败。 / The inherited theorem accepts Safe and stepwise admissible disturbances and yields all-time guarded nonfailure.
+
+**Consumer input / 下游输入:** 有限纠正后的状态由 landing_supplies_safety 转为 Safe，并在 supported_finite_transition 中传入 safe_history_never_fails。 / landing_supplies_safety converts the finite-pulse arrival into Safe; supported_finite_transition passes it to safe_history_never_fails.
+
+**Retained conditions / 保留条件:** 同一完整 State、实际剩余支持、预算及原参数；后继扰动为 noShock，无新增储备。 / Same full State, actual remaining stock, budget and original parameters; successor disturbance is noShock with no added reserve.
+
+[Connection evidence / 连接证据](experiments/market-generativity/formal/RegimeTransition.lean)
+
 ## multivalued-joining-common-structure ← branching-tests-bisimulation
 
 `formal-reuse` — 检查过的同一接合到模态模型适配。 / Checked adapter from the same joining to the modal model.
@@ -126,6 +186,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean)
 
+## open-form-realization-under-revision ← positive-ground-open-futures
+
+`formal-reuse` — positive_ground_by_bound 直接调用 contingent_generation_has_positive_ground；冻结的 Controls.lean 实际把 generation_by_bound 输出送入其形成前提。 / positive_ground_by_bound directly calls contingent_generation_has_positive_ground; frozen Controls.lean passes generation_by_bound output into its formation premise.
+
+**Producer output / 上游输出:** 在 G0 下，逐历史实际新生成给出逐历史某项新的正面根据，不要求统一形态。 / Under G0, actual new generation in each history supplies some new positive ground per history without one fixed form.
+
+**Consumer input / 下游输入:** 新组合的最后一步需要把有限界限内的逐历史生成见证传递为正面根据；generation_by_bound 已提供旧定理所需的 formed 输入。 / The final step consumes the inherited inference to turn per-history bounded-generation witnesses into positive ground; generation_by_bound supplies its required formed input.
+
+**Retained conditions / 保留条件:** 同一 admitted、before、boundedInventory 和显式 G0；实际执行、当前下降、交接与生成对应未被取消。 / The same admitted scope, before relation, boundedInventory and explicit G0 are retained, as are actual execution, local descent, handoff and generative correspondence.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OpenFutureRevision.lean)
+
 ## organizational-formation-from-generative-comparison ← practical-judgment-g0-j
 
 `formal-reuse` — PracticalJudgment.finite_frontier 与 dominated_excluded 的输出经 formation_required_of_improvable_absence 接成 Required；规范解释继承公开 J 承诺。 / PracticalJudgment.finite_frontier and dominated_excluded feed formation_required_of_improvable_absence to produce Required; normative interpretation inherits the explicit J commitments.
@@ -133,6 +205,30 @@ Curated result edges retain their exact interpretation. File imports can be expl
 ## organizational-formation-from-generative-comparison ← alignment-direction-g0-j
 
 `interpretive` — 复用已完成的跨智能方向，推进组织形成的具体条件。 / Reuses the completed cross-intelligence direction to advance the conditions of organizational formation.
+
+## recurrent-chain-assembly ← material-preparation-output
+
+`formal-reuse` — prepared_repeated_generation 使用 completed_routing_output 和既有 route_trace_projection 接通。 / prepared_repeated_generation uses completed_routing_output and the inherited route_trace_projection to compose the interface.
+
+**Producer output / 上游输出:** 成功路由轨迹的实际 placed 序列。 / Actual placed sequence from a successful routing trace.
+
+**Consumer input / 下游输入:** 逐项接合的共享材料池。 / Shared component pool for tokenwise attachment.
+
+**Retained conditions / 保留条件:** 给定路由能力、无未表示承重边、另供八单位初始接合支持及明示后续库存。 / Supplied routing capability, no unrepresented load-bearing edges, eight additional activation-support units and explicit subsequent stock.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RecurrentAssembly.lean)
+
+## recurrent-chain-assembly ← growth-constrained-fragmentation
+
+`formal-reuse` — formed_graph_matches_previous 与 fragments_retain_real_links 核对已生成图及真实分割；不复用旧概率为长期增长。 / formed_graph_matches_previous and fragments_retain_real_links check the formed graph and actual split; old probabilities are not reused as long-term growth.
+
+**Producer output / 上游输出:** 先前实际链状图与中心断裂的成员分割。 / Previous actual chain graph and central-cut member partition.
+
+**Consumer input / 下游输入:** 本轮接合终点与保留内部连接的片段。 / New attachment endpoint and internally connected fragments.
+
+**Retained conditions / 保留条件:** 限于已核对链类及两种形成途径的端点对应；不等同局部规律或成本。 / Only the checked chain class and endpoint correspondence between formation routes; local laws and costs are not identified.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RecurrentAssembly.lean)
 
 ## risk-certificate-outcome-distinction ← assured-route-criterion
 
@@ -157,6 +253,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 **Retained conditions / 保留条件:** 同一状态、动作类型和原端点；没有物理规律识别。 / Same state/action types and endpoints; no physical law identification.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean)
+
+## wisdom-root ← practical-judgment-g0-j
+
+`interpretive` — 既有G0/J普遍原则解释保留、转化、交接和结束的共同根据；第14节作哲学复用，不新增规范公理或Lean连接。 / Existing G0/J principles explain the common grounds of preservation, transformation, transfer and ending; section 14 reuses them philosophically without a new normative axiom or Lean adapter.
+
+## wisdom-root ← relational-generative-comparison
+
+`interpretive` — 既有C条件下的关系信息必要性支撑模型须保留共同生成差别的论证；不证明全部伦理根基。 / The existing C-dependent information necessity supports retaining joint-generative differences in appraisal; it does not prove the entire ethical foundation.
+
+## wisdom-root ← positive-ground-open-futures
+
+`interpretive` — 既有G0下的正面未来根据表明，生成形态开放与有根据的评价可以并存；不把正面方面升级为最终许可。 / The existing G0-based positive-future ground supports appraisal with open generative form; a positive aspect is not upgraded to final permission.
 
 ## Wider composition evidence / 更广组合证据
 

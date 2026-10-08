@@ -172,3 +172,27 @@ English: Ethical loss, reproduced selection and dynamical persistence have diffe
 局部三态结构和支持连接已完成；[平衡分支图](../../../experiments/market-generativity/formal/figures/regime-fixed-states.png)仅标示所证范围。完整三维吸引域、实数域推广、全部参数的稳定性／严格分岔类型及现实阈值未完成。下一连接是有支持的进入和持续纠正怎样在实际支持失效前跨过状态域分界；速率问题应置于这条实际时序中，复用已完成的边界和吸引证明。
 
 English: Two endpoint neighborhoods now have checked local attraction in the original rational operating projection, while the interior state admits arbitrarily small perturbations with finite escape. Coupling the original essential support reveals finite guarded failure on the low side and certificate-backed nonfailure on the high side. Reproducing a selection organization can undermine the wider conditions of continuation. The next connection is supported entry and sustained change before those conditions fail, not another proof of the completed local mechanism.
+
+
+<a id="supported-finite-transition"></a>
+### 有支持的有限转变 / A supported finite transition
+
+2026-10-08。[本轮论证与反审](../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#supported-finite-transition)关闭了上文持续纠正的一项具体连接：**只要维护活动仍有正余量，实际改变选择关系可以在有限时间内把状态带入原来的保护区；支持必须贯穿这段转变。** [27 项新 Lean 定理／35 项审计](../../../experiments/market-generativity/formal/transition-verification.json)通过，96 项继承定理／118 项审计另列。
+
+本例在有限阶段将侵蚀参数 β 从 1/2 改为 0。维护份额 x、责任效力 q 与累积影响 w 均继续按原有关系演化，未被重置。对每个有理物理初态 x>0，都存在有限 N，进入 x≥3/4、q≥1/2、w≤1/4 的既有保护区。这包括原低吸引邻域中的正份额初态。之后恢复 β=1/2，原证书即可继续保护；本轮不需要先求出完整三维分界面。
+
+额外纠正每步消耗 κ≥0 个已表示的支持单位，原货币纠正预算仍按先付后收入执行。给定上述 N，一个已证明的保守充分储备是
+
+\[
+C_0\ge K_N=(15+10\kappa)(10/9)^N-10(1+\kappa).
+\]
+
+同一完整状态的实际守卫允许全部 N 步，并在撤除额外纠正时把剩余支持直接交给原保护规律，后续不发生守卫失败。这个界没有预支维护产生的收益，因此不宣称成本最小；初始支持在本地模型中给定，如何取得它仍须有现实说明。[成果记录](../results/records/market-supported-finite-transition.md)明确所复用的[原保护结果](../results/records/market-protected-continuation.md)及其正式连接。
+
+**三个边界同时保留。** x=0 时，原份额法则不会因单改 β 产生新维护者，必须另有真实进入。对任意预设时长 N，都有正但足够小的初始维护份额，到期仍未进入保护区，因此不存在统一够用的有限干预时长。若开始时必要支持已处底线，纠正也可能立刻来不及：本轮检查 x=1/100、q=1/3、w=1、C=5 的状态，即使 β=0 且 κ=0，下一步 C=3.53，低于必要底线 5，实际运行停止。
+
+这让元吸引子解释增加了明确的转变条件：**要改变反复产生退化的关系，纠正须持续到新的活动组成和留存影响足以支持接续；其间的支持不能用未来改善补账。** 有利的参数变化、足以恢复的活动余量和可承受的过渡时间不能互相替代。由既有 G0/J/E 判断何种维护、替代与损失值得支持，不由保护区或稳定性替代伦理评价。
+
+当前数学结果是有限干预后的区域转移与实际支持交接，未宣称严格的全参数分岔分类或完整可恢复域。β=0 的实际授权与实施仍是给定条件；比例模型尚不包含离散退出和形成新参与者。下一连接应落到可实施的部分阻断及其形成、保留和成本，以及零余量后的实际进入。完成的有限到达与交接直接复用。
+
+English: A finite, effective beta=0 intervention reaches the old protection rectangle from every physical rational state with positive renewal share. A conservative initial stock cover includes each intervention step’s extra support burden; the actual guarded history executes and hands its unchanged arrived state to the inherited beta=1/2 protection theorem after withdrawal. Zero seed, no uniform pulse duration and an immediate support-failure example delimit the result. It establishes a sufficient supported transition, not an optimal policy, complete basin, empirically calibrated threshold or endogenous formation of the intervention. G0/J/E supply the separate normative use.

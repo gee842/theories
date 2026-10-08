@@ -1,0 +1,638 @@
+{
+  "updated_at_utc": "2026-10-08T13:28:36.982252+00:00",
+  "scope": "Ren correction: morality appraises becoming through universal generative principles. Philosophical integration of existing results; no new proof run.",
+  "sources": [
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md",
+      "before_sha256": "5b31fde4c64dd45bb1f9b5a46b90c8f97f746400d72d73bd4595a4bcfba52f23",
+      "after_sha256": "a617f80fc3975a7a4b5a976912b9e082a35d9f753b87e5c9cfe27e432c1662a3",
+      "prefix": "",
+      "append": "\n<a id=\"morality-judges-becoming\"></a>\n## 道德判断becoming，普遍原则为根据 / Morality judges becoming through universal principles\n\nRen 对上一轮以 Dancy 对照安排主线的明确纠正，原话：\n\n> 不要盲目跟随dancy，道德就是要依赖我们的普遍原则\n>\n> 因为道德考虑的是变化之后的结果，因此它本身是对becoming的判断，而我们的模型可以判断becoming\n\n编者说明：本输入把本会话的正面论证推进到“道德评价生成变化，生成评价的普遍原则支撑具体道德判断”。[主研究第14节](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#morality-as-judgment-of-becoming)更正上一轮的研究优先级，复用已完成的G0/J路线与生成评价成果。关于完整历史、判断范围和模型对应的展开由AI撰写；这段输入未被改写为Ren已经接受全部细节、所有智慧已被证明或全部模型已被验收。\n",
+      "previous_bytes_preserved": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+      "before_sha256": "a0e5661c4d587866403ca200f498cb36b2a897bdad461d6440047b249eb6728f",
+      "after_sha256": "759243aa3f4a932451df9cd596170f1e2a48792bb7a8588ea871e908053133f8",
+      "prefix": "**当前方向纠正，2026-10-08：**[Ren明确指出](../../../../sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md#morality-judges-becoming)，道德依赖本理论的普遍原则，因为它判断becoming，而模型能够判断becoming。[第14节](#morality-as-judgment-of-becoming)据此正面接通生成变化、共同评价根据与情境回应。第13节的文献比较保留为背景，不再用情境敏感性或不显式循原则，作为搁置普遍原则路线的理由。",
+      "append": "\n<a id=\"morality-as-judgment-of-becoming\"></a>\n## 14. 道德作为对becoming的判断 / Morality as judgment of becoming\n\n2026-10-08，[Ren纠正研究方向](../../../../sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md#morality-judges-becoming)。**本轮落实的正面主张：道德评价实际生成变化，普遍的生成评价根据可以在变化的情境中支撑不同道德判断。** 研究重心是展开我们已有的根据及其适用，不以文献对手的疑问替代本理论的论证。\n\n**成果接续。** 更新`wisdom-root`；复用`practical-judgment-g0-j`、`relational-generative-comparison`、`positive-ground-open-futures`，以及本研究第10–11节已查结果。新增量为Ren纠正下的概念接通与论证优先级修订，没有新数学定理、Lean运行或独立验收。G0、J／C、从正面内容到理由的公开实践解释及对应E各保持原范围。\n\n### 14.1 普遍根据评价变化中的关系\n\n本轮沿Ren的主张，把道德问题落实为：这种活动及其继续会使共同的生、实现条件、关系与可能性变成什么；我们据何判断其中形成、保住、损害和终结的内容。行动、承受后果、辨认与评价从同一展开中分化，评价和修订也会实际改变后续。没有在生成过程外另设一个裁判世界。\n\n依本仓库既有的完整历史要求，本文将“变化之后的结果”展开为实际生成后果，包括形成了怎样的关系、怎样形成、实际损失及后续条件。它不限于终点的产出数。过去的损害不会因为后来恢复而变成没有发生；承诺、依存和权限的历史也不能由一个终点数值替代。这是AI的解释展开，依[既有实践判断](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md)说明其根据，并非向Ren追加原话。\n\nG0公开肯定整体中的生及继续生成；J1–J4说明比较、保护、承担和实际选择的相应原则。它们评价真实变化，而不是要求无论关系怎样变化都重复同一个动作。原则的普遍适用范围与某个动作的适用条件需要分别说明。新的情况可以使保留、改变、交接或结束获得不同根据，而不因此使共同评价根据消失。\n\n### 14.2 更正第13节所造成的方向偏移\n\n第13节对“具体约束不单独证明任何指定普遍理论”的逻辑范围判断仍可保留。但它不应成为忽略本理论已经给出生成内容和规范根据的理由。本轮没有只有一句抽象的“判断受约束”：已有G0/J和生成变化的关系表示，应直接评估它们怎样承担道德判断。\n\n同样，一个人凭经验辨明恰当回应、没有逐条表述原则，是判断能力如何运行的问题；它本身没有回答这个回应为什么正当。在本候选中，熟练者的判断仍由实际生成后果及共同规范根据接受评价。显式推理、熟练辨认与规范根据可以在同一形成历史中结合，不必强迫所有实践者先背诵理论。\n\n因此，本研究不采用Dancy立场为结论，也不以其认可为本路线的门槛。第13节保留真实文献和反循环要求；其“下一连接”由本节的正面展开具体化。反对意见只有在指出某项原则的内容、实际对应或推论存在问题时，才构成这里需要处理的实质压力。\n\n### 14.3 模型已经怎样判断becoming\n\n以下复用的成果表明，本理论已经能在明确范围内作生成评价；不是等证明全部未来可知以后才开始判断。\n\n| 已完成连接 | 在本论证中的作用 | 原有条件 |\n|---|---|---|\n| [目的评价](WISDOM-GOAL-GROUNDING.md#fixed-law-comparison)中的`fixed_ground_rule_adequate` | 同一关系敏感规则在损失关系不同时支持保留或改变；具体回应变化有共同评价根据 | 原有限配置、确定性全配置要求及公开J2；不改写为全部智慧 |\n| [关系生成比较](RELATIONAL-GROUNDING-PROOF.md)中的`strict_comparison_cannot_factor_through_marginals` | 分别可能性不变而共同生成条件改变时，评价仍可有实质差别；模型必须保留改变判断的关系 | 既有共同事件律、明确比较C及实际生成／损失对应；不主张一切耦合均好 |\n| [可见未来的正面根据](POSITIVE-GROUND-UNCERTAINTY-PROOF.md)中的`contingent_generation_has_positive_ground` | 同一回应可以有确定的正面生成根据，同时未来生成的具体形态仍开放 | G0、同一回应和有根据的接续范围；正面方面不自动成为最终许可，范围扩大可要求修订 |\n| [一般实践判断](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md) | 从这些得失及实际关系说明保留、转化、交接、结束和差异化承担 | J1–J4、E及其独立说明的权限、负担与可行性；不重开已完成原则 |\n\n这里的接通是哲学解释中的复用，未新建三个形式模型的共同历史或Lean组合证明。特别是，判断becoming包含对当前有根据的未来范围作判断；不要求知道所有将来，不将不同可能后继相加为一次共同实现，也不以某次失败直接取消此前有根据的风险判断。\n\n### 14.4 从共同根据到智慧推演\n\n这使“自然延伸何以产生智慧”有了更具体的正面说明候选。追踪同一活动如何改变后续条件，辨明共同实现、真实损失、已形成的承担及仍可修订的认识，再应用公开的生成评价原则，可以产生保留、改变、让渡或结束等有内容的要求。不同要求之间的联系来自实际生成关系和共同评价根据；不能只因它们表面相反就说没有普遍原则。\n\n由此，历史格言与本理论的重合可以被研究为：不同情境中的智慧表达是否抓住了这些生成关系及其规范作用。要给这一解释证据，应先固定原则和情境对应，独立推得有范围的判断，再比较原典及不利案例；仅用“becoming”重命名每一格言不会完成解释。\n\n**当前可正面确立的工作结论：**沿已授权的G0/J路线，生成评价已经能够为具体道德判断提供共同根据，情境变化可在这个根据内得到说明。“没有显式执行原则”与“具体回应改变”均不独自反驳该根据。\n\n**仍要落实的根基连接：**说明这一共同根据怎样覆盖道德智慧的不同内容，并把已有形成、认识、评价和修订结果按其真实前提接通。道德涉及becoming给出了本理论进入问题的实质路线；“某模型能表示变化”本身还不能保证它保留所有会改变道德判断的关系。所需的是相关范围的真实对应与有内容的评价，而不是要求一个全知、全排序的宇宙算法。理论智慧等其他智慧范围保持第12节的独立说明责任。G0采用公理路线继续，不新增无公理门槛，也不把规范普遍适用等同所有智能实际赞同。\n\n**English scope.** Ren directs the inquiry toward morality as appraisal of becoming through the theory's universal principles. Changing responses and tacit judgment do not by themselves defeat a common normative ground. The established G0/J route and checked goal-ground, relational-comparison and open-future results supply substantive local support. This is interpretive reuse, not a new formal composition, a prediction of all futures, or completion of the root-of-all-wisdom target.\n",
+      "previous_bytes_preserved": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md",
+      "before_sha256": "ee9df3a1b17686396e15735d04582f40bfc202ed5756fcd4ec1488cb714df472",
+      "after_sha256": "de3caf024d51a1cc69bb974945d79e9068d768e619a3b9f232ca9c6841b9cfc1",
+      "prefix": "**当前方向：道德判断becoming / Current direction: morality judges becoming，2026-10-08。** [Ren纠正](../../../sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md#morality-judges-becoming)及[第13节](#morality-and-universal-generative-principles)明确正面路线：以已有普遍生成评价原则判断实际变化；不同回应和不显式循原则，不独自否定共同规范根据。",
+      "append": "\n<a id=\"morality-and-universal-generative-principles\"></a>\n## 13. 道德、becoming与普遍生成原则 / Morality, becoming and universal generative principles\n\n[Ren指出](../../../sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md#morality-judges-becoming)，道德依赖我们的普遍原则，因为它判断becoming，而模型能够判断becoming。[主研究第14节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#morality-as-judgment-of-becoming)据此修订上一轮的论证优先级。\n\n同一展开中的活动形成后果、改变后续条件，也形成认识、评价和修订。普遍原则评价这些实际变化，因此可以支持情境不同的回应。判断者不显式表述原则，不能独自说明其判断没有共同根据；本理论应直接说明G0/J怎样给出该根据及范围。\n\n这里的生成后果按既有完整历史要求保留过程、实际损失、形成的依存与承担、共同实现及后续可能性。仅有一个有利终点不能抹去其中的损害；未知全部未来也不阻止在当前有根据范围内辨认正面生成内容。G0的正面公理、J／C的比较和实践承诺、E的实际对应分别明示；它们是同一生成理论的不同解释工作。\n\n已有目的评价结果说明同一固定规则如何因真实损失关系不同而支持保留或改变；`relational-generative-comparison`表明单项可能性相同仍可遗漏伦理比较所需的共同关系；`positive-ground-open-futures`表明正面根据可确定而生成形态仍开放。主研究给出原证明及条件，本节不重计这些结果或宣称新的数学组合。\n\n本轮正面路线是从生成关系及共同评价根据推导有内容的道德判断，检验它对道德智慧的覆盖，并接通已完成的形成、认识与修订。历史表达的重合是待检验的解释效果；其他智慧范围仍有独立的覆盖责任。完整根目标保持开放，继续沿已授权公理路线，不以Dancy认可或无前提证明G0为门槛。\n\n**English.** Universal generative principles can appraise changing relations and support different situated responses. Tacit judgment does not establish independence from normative grounds. The existing G0/J route, relational comparison and positive open-future results are reused with their exact assumptions; no new theorem or complete wisdom-root proof is claimed.\n",
+      "previous_bytes_preserved": true
+    }
+  ],
+  "checks": {
+    "checked_at_utc": "2026-10-08T13:31:42.759953+00:00",
+    "passed": true,
+    "count": 76,
+    "local_references": 48,
+    "items": [
+      {
+        "check": "source version sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md",
+        "passed": true
+      },
+      {
+        "check": "previous bytes retained sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md",
+        "passed": true
+      },
+      {
+        "check": "local reference sources/15-codex-theory-conversations/2026-10-08-math-core-and-historical-wisdom.md",
+        "passed": true
+      },
+      {
+        "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-PAPER-POSITIONING.md",
+        "passed": true
+      },
+      {
+        "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+        "passed": true
+      },
+      {
+        "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#root-of-wisdom-target",
+        "passed": true
+      },
+      {
+        "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-RESPONSE-NECESSITY.md",
+        "passed": true
+      },
+      {
+        "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-GOAL-GROUNDING.md",
+        "passed": true
+      },
+      {
+        "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md",
+        "passed": true
+      },
+      {
+        "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#wisdom-scope-and-whole-root",
+        "passed": true
+      },
+      {
+        "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#substantive-rival-comparison",
+        "passed": true
+      },
+      {
+        "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#morality-as-judgment-of-becoming",
+        "passed": true
+      },
+      {
+        "check": "source version _process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+        "passed": true
+      },
+      {
+        "check": "previous bytes retained _process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+        "passed": true
+      },
+      {
+        "check": "local reference sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md#morality-judges-becoming",
+        "passed": true
+      },
+      {
+        "check": "local reference sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md#ren-对中心问题的纠正--correction-of-the-central-question",
+        "passed": true
+      },
+      {
+        "check": "local reference sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md#root-of-wisdom-objective",
+        "passed": true
+      },
+      {
+        "check": "local reference theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+        "passed": true
+      },
+      {
+        "check": "local reference theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md",
+        "passed": true
+      },
+      {
+        "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md",
+        "passed": true
+      },
+      {
+        "check": "local reference theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md",
+        "passed": true
+      },
+      {
+        "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-RENEWAL-MATH.md",
+        "passed": true
+      },
+      {
+        "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md",
+        "passed": true
+      },
+      {
+        "check": "local reference theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+        "passed": true
+      },
+      {
+        "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-REVISION-INTEGRATION.md",
+        "passed": true
+      },
+      {
+        "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-PAPER-POSITIONING.md#5-最接近的文献与新颖性边界--primary-source-comparison",
+        "passed": true
+      },
+      {
+        "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md#3-formal-correspondence",
+        "passed": true
+      },
+      {
+        "check": "local reference theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md#2-the-exact-transfer-theorem",
+        "passed": true
+      },
+      {
+        "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-NECESSITY-ARGUMENTS.md#10-necessity-across-representations-without-trivial-containment",
+        "passed": true
+      },
+      {
+        "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-RESPONSE-NECESSITY.md#proof-and-correspondence",
+        "passed": true
+      },
+      {
+        "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-RESPONSE-NECESSITY.md#remaining-universal-connection",
+        "passed": true
+      },
+      {
+        "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md#native-example",
+        "passed": true
+      },
+      {
+        "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md#proof-audit",
+        "passed": true
+      },
+      {
+        "check": "local reference sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md#continuing-wisdom-scope",
+        "passed": true
+      },
+      {
+        "check": "local reference theories/shengsheng-buxi-generative-existence/results/records/wisdom-root.json",
+        "passed": true
+      },
+      {
+        "check": "local reference theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md#2-five-distinct-kinds-of-commitment",
+        "passed": true
+      },
+      {
+        "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/HUIGEN-FULL-THEORY-AUDIT.md#12-reason-making-circumstances-and-explanatory-necessity",
+        "passed": true
+      },
+      {
+        "check": "local reference theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+        "passed": true
+      },
+      {
+        "check": "local reference theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md",
+        "passed": true
+      },
+      {
+        "check": "local reference sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md#continuing-substantive-comparison",
+        "passed": true
+      },
+      {
+        "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-GOAL-GROUNDING.md#fixed-law-comparison",
+        "passed": true
+      },
+      {
+        "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-GROUNDING-PROOF.md",
+        "passed": true
+      },
+      {
+        "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/POSITIVE-GROUND-UNCERTAINTY-PROOF.md",
+        "passed": true
+      },
+      {
+        "check": "source version theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md",
+        "passed": true
+      },
+      {
+        "check": "previous bytes retained theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md",
+        "passed": true
+      },
+      {
+        "check": "local reference theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md#morality-and-universal-generative-principles",
+        "passed": true
+      },
+      {
+        "check": "local reference theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md#reason-constraints-and-rivals",
+        "passed": true
+      },
+      {
+        "check": "local reference theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md#wisdom-scope-and-root",
+        "passed": true
+      },
+      {
+        "check": "local reference theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md#fallible-judgment-and-root",
+        "passed": true
+      },
+      {
+        "check": "local reference theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md#goal-grounding-and-root",
+        "passed": true
+      },
+      {
+        "check": "local reference theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md#response-structure-and-root",
+        "passed": true
+      },
+      {
+        "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-PROTOCOL.md",
+        "passed": true
+      },
+      {
+        "check": "local reference _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-SOURCES.md",
+        "passed": true
+      },
+      {
+        "check": "local reference theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md#constraint-to-wisdom",
+        "passed": true
+      },
+      {
+        "check": "record version",
+        "passed": true
+      },
+      {
+        "check": "goal version",
+        "passed": true
+      },
+      {
+        "check": "preserved at edit record_claim_and_open_status",
+        "passed": true
+      },
+      {
+        "check": "preserved at edit goal_objective",
+        "passed": true
+      },
+      {
+        "check": "preserved at edit other_chain_entries",
+        "passed": true
+      },
+      {
+        "check": "preserved at edit other_review_hashes",
+        "passed": true
+      },
+      {
+        "check": "preserved at edit other_table_lines",
+        "passed": true
+      },
+      {
+        "check": "preserved at edit discovery_inventory",
+        "passed": true
+      },
+      {
+        "check": "M15 version",
+        "passed": true
+      },
+      {
+        "check": "M15 rendering",
+        "passed": true
+      },
+      {
+        "check": "reviewed chain binding sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md",
+        "passed": true
+      },
+      {
+        "check": "reviewed chain binding _process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+        "passed": true
+      },
+      {
+        "check": "reviewed chain binding theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md",
+        "passed": true
+      },
+      {
+        "check": "reused registry metadata",
+        "passed": true
+      },
+      {
+        "check": "record reference and receipt bindings practical-judgment-g0-j",
+        "passed": true
+      },
+      {
+        "check": "record reference and receipt bindings relational-generative-comparison",
+        "passed": true
+      },
+      {
+        "check": "record reference and receipt bindings wisdom-root",
+        "passed": true
+      },
+      {
+        "check": "record reference and receipt bindings positive-ground-open-futures",
+        "passed": true
+      },
+      {
+        "check": "current generated wisdom-root",
+        "passed": true
+      },
+      {
+        "check": "root status remains open",
+        "passed": true
+      },
+      {
+        "check": "tools/research/research.py render --ids wisdom-root",
+        "passed": true
+      },
+      {
+        "check": "tools/research/research.py check --ids wisdom-root",
+        "passed": true
+      }
+    ],
+    "scope": "Own correction, preserved bytes, M15 and reused evidence metadata. No new Lean run, independent review or full global-chain freshness.",
+    "unrelated_registry_drift": [
+      {
+        "id": "organizational-formation-from-generative-comparison",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+        "reviewed_sha256": "f0ac8caa838c19196f71bf1861a89846c4f4d6472b958116917ffcaeb1ab88a4",
+        "current_sha256": "c5825f8cd2b3796da906e6e6d49e8c9f2147e1b2e9763f673d7c50d4fc33a8a2"
+      },
+      {
+        "id": "organizational-formation-from-generative-comparison",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+        "reviewed_sha256": "7f7c51bb15824723143e3c11201d79f374d8679f230609f3fca1071eaffea460",
+        "current_sha256": "de04c7f78abc7c78a6c7cdeecd6cacfc2e1ea8b045e92d7c4957d9ba622e6fb5"
+      },
+      {
+        "id": "organizational-formation-from-generative-comparison",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+        "reviewed_sha256": "311b9e423cf1a6956373bc0ab187ce9b266a4258f058fa61aa7423886c96b14d",
+        "current_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d"
+      }
+    ]
+  },
+  "integration": {
+    "record": {
+      "path": "theories/shengsheng-buxi-generative-existence/results/records/wisdom-root.json",
+      "before_sha256": "41bbcd5f1837ccd44258f837df6b3bbb1e2e9f9a880a32568138541dcbe7a13c",
+      "after_sha256": "20bbed33153e55856a232767e71f27fce46daa0f393d24c5e761fa21f8044541",
+      "changed_fields_before": {
+        "reviewed_at_utc": "2026-10-08T13:11:41.593697+00:00",
+        "hypotheses": [
+          {
+            "zh": "保留获授权的必要关系与生成解释两部分；不能将局部成功条件改名为完整智慧。",
+            "en": "Retain both authorized components, necessary relations and generative explanation; local success conditions cannot simply be renamed full wisdom."
+          }
+        ],
+        "correspondence": {
+          "zh": "适当把握理由、目的的根据及修订须接入实际形成的关系；区分具体判断、形成的能力与完整解释，并区分同一过程中理由的支持、适用、认识与实行作用。",
+          "en": "Appropriate grasp of reasons, warranted ends and revision must connect to actually formed relations. Distinguish episodes, formed capacities and full explanation, and distinguish support, applicability, recognition and realization roles within one unfolding."
+        },
+        "dependencies": [],
+        "counterexamples": [
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-RESPONSE-NECESSITY.md",
+            "detail": {
+              "zh": "足够描述不自动有仍充分的共同最粗表示。",
+              "en": "Sufficient descriptions need not admit a still-sufficient common coarsest representation."
+            }
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md",
+            "detail": {
+              "zh": "正确风险界限可伴随实际失败，不能用逐次必胜界定全部智慧。",
+              "en": "A true risk bound can accompany actual failure; infallible success cannot simply define all wisdom."
+            }
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+            "detail": {
+              "zh": "第12节保留不同智慧内容；第13节落实Dancy、Dewey及原目的评价例的对照。具体约束不独自确立一套必要的普遍根；情境判断与固定的关系敏感规则可保留局部比较，未被排除。",
+              "en": "Section 12 preserves differentiated wisdom; section 13 compares Dancy, Dewey and the existing goal-ground case. Particular constraints do not alone establish a necessary universal basis. Situated judgment and a fixed relation-sensitive rule can retain the local comparison and are not excluded."
+            }
+          }
+        ],
+        "validation_scope": {
+          "zh": "登记开放目标、既有局部证明及第12–13节原典／解释比较。本轮复用已查目的评价结果，无新数学定理或实查；作者反审不冒称独立验收。",
+          "en": "Records the open target, existing local proofs and sections 12–13 primary-text/explanatory comparisons. The checked goal-ground result is reused; this continuation adds no theorem or proof run, and author counterreview is not independent acceptance."
+        },
+        "references": [
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+            "role": "statement",
+            "sha256": "a0e5661c4d587866403ca200f498cb36b2a897bdad461d6440047b249eb6728f",
+            "declarations": []
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-RESPONSE-NECESSITY.md",
+            "role": "integration",
+            "sha256": "3277bbd8462f82dcbbac1b7164585a426776ec85811811f8ae1827d9e94a522e",
+            "declarations": []
+          },
+          {
+            "path": "sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md",
+            "role": "provenance",
+            "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
+            "declarations": []
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md",
+            "role": "integration",
+            "sha256": "866a74d352d910cfcec2fe581cd596fdba55a84656e519cc6ee91a8d7bf33b97",
+            "declarations": []
+          }
+        ],
+        "next_delta": {
+          "zh": "固定G0/J/E应用范围，复用已完成形成、评价、情境修订与风险结果，检验实际承担理由作用的关系怎样正当地接续到新情境，及其共同根据是否超出既有目标评价例的局部必要性。",
+          "en": "Fix the G0/J/E application scope and reuse completed formation, evaluation, contextual revision and risk results. Test warranted transfer of reason-bearing relations to new contexts and whether their common grounds extend beyond the existing local goal-evaluation necessity."
+        },
+        "history": [
+          {
+            "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
+            "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+          },
+          {
+            "zh": "2026-10-08：在原目标不变、仍开放的前提下，接入已完成目的评价与本轮有限判断修正；更新实际核读并追加的core来源，不重开已完成机制。",
+            "en": "2026-10-08: retained the unchanged open target while integrating completed goal evaluation and the limited-judgment correction; updated the read and extended core source, without reopening completed mechanisms."
+          },
+          {
+            "zh": "2026-10-08：在同一主研究第12节加入三个原典的有范围比较，区分判断／能力／完整解释；承认忠实对照未被排除，保持完整目标开放。不新增独立成果或数学计数。",
+            "en": "2026-10-08: added scoped comparisons of three primary texts in the existing study, distinguishing episodes, capacities and full explanation. The faithful comparator is not excluded and the full target remains open; no extra result identity or mathematical count."
+          },
+          {
+            "zh": "2026-10-08：第13节将忠实对照落实到两项原典及既有案例，区分实际关系的保留与普遍根据的争议；收窄下一连接，不新建成果身份、不新增定理。",
+            "en": "2026-10-08: section 13 makes the faithful comparison concrete through two primary texts and the existing case, distinguishing retained relations from disputed universal grounding. The next connection is narrowed; no new result identity or theorem."
+          }
+        ]
+      }
+    },
+    "goal": {
+      "path": "_process/goals/wisdom-root-session.json",
+      "before_sha256": "b9080349960a5b25737d269affb6181b0d3832bf1ae5d87bae8719c576e3836b",
+      "after_sha256": "72b20a5709c2a613c21d8dd50c83824887f3e059bf6482045de16584242ec087",
+      "old_premises": {
+        "zh": "理由与保证须匹配判断的内容和强度；不把数值风险界限当成伦理许可。",
+        "en": "Reasons and guarantees must match the content and strength of a judgment; a numerical risk bound is not ethical permission."
+      }
+    },
+    "chain": {
+      "id": "M15",
+      "added_fields": {
+        "claim_zh": " Ren随后明确道德判断becoming，应由本理论普遍生成原则支撑；不同回应与熟练者不显式循原则，不独自否定共同规范根据。",
+        "claim_en": " Ren subsequently directs morality as appraisal of becoming through this theory’s universal generative principles; varied responses and tacit judgment do not alone defeat common normative grounds.",
+        "scope_zh": " 第14节据此修订主线，复用已查关系比较、目的评价与开放未来正面根据，无新定理或数学组合。G0/J/E明示；文献对照保留背景地位，完整道德智慧及其他智慧的根基覆盖继续研究。",
+        "scope_en": " Section 14 revises the main argument, reusing checked relational appraisal, goal grounds and open-future positive grounds without a new theorem or formal composition. G0/J/E stay explicit; literary comparison remains background, while full moral and other wisdom coverage is investigated."
+      },
+      "added_link": {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#morality-as-judgment-of-becoming",
+        "label_zh": "道德判断becoming与普遍原则",
+        "label_en": "Moral appraisal of becoming and universal principles"
+      },
+      "before_sha256": "2cf58838f417c6ae37f2e995a546ec974efd5d441642377eb1b7ccb752f6ad69",
+      "after_sha256": "9e9a29861c8a2ca195d79d6ef7238866c22e72556f1b25a02f7469b07b3997ab",
+      "reviewed_sources": {
+        "sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md": {
+          "before": "5b31fde4c64dd45bb1f9b5a46b90c8f97f746400d72d73bd4595a4bcfba52f23",
+          "after": "a617f80fc3975a7a4b5a976912b9e082a35d9f753b87e5c9cfe27e432c1662a3"
+        },
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md": {
+          "before": "a0e5661c4d587866403ca200f498cb36b2a897bdad461d6440047b249eb6728f",
+          "after": "759243aa3f4a932451df9cd596170f1e2a48792bb7a8588ea871e908053133f8"
+        },
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md": {
+          "before": "ee9df3a1b17686396e15735d04582f40bfc202ed5756fcd4ec1488cb714df472",
+          "after": "de3caf024d51a1cc69bb974945d79e9068d768e619a3b9f232ca9c6841b9cfc1"
+        }
+      }
+    },
+    "preservation": {
+      "record_claim_and_open_status": true,
+      "goal_objective": true,
+      "other_chain_entries": true,
+      "other_review_hashes": true,
+      "other_table_lines": true,
+      "discovery_inventory": true
+    }
+  },
+  "shared_tool_checks": [
+    {
+      "command": [
+        "tools/research/research.py",
+        "render",
+        "--ids",
+        "wisdom-root"
+      ],
+      "exit_code": 0,
+      "output": {
+        "records": 37,
+        "selected_records": [
+          "wisdom-root"
+        ],
+        "errors": [],
+        "source_drift": [],
+        "unrelated_source_drift": [
+          {
+            "id": "organizational-formation-from-generative-comparison",
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+            "reviewed_sha256": "f0ac8caa838c19196f71bf1861a89846c4f4d6472b958116917ffcaeb1ab88a4",
+            "current_sha256": "c5825f8cd2b3796da906e6e6d49e8c9f2147e1b2e9763f673d7c50d4fc33a8a2"
+          },
+          {
+            "id": "organizational-formation-from-generative-comparison",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+            "reviewed_sha256": "7f7c51bb15824723143e3c11201d79f374d8679f230609f3fca1071eaffea460",
+            "current_sha256": "de04c7f78abc7c78a6c7cdeecd6cacfc2e1ea8b045e92d7c4957d9ba622e6fb5"
+          },
+          {
+            "id": "organizational-formation-from-generative-comparison",
+            "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+            "reviewed_sha256": "311b9e423cf1a6956373bc0ab187ce9b266a4258f058fa61aa7423886c96b14d",
+            "current_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d"
+          }
+        ],
+        "scope": "Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation."
+      },
+      "stderr": ""
+    },
+    {
+      "command": [
+        "tools/research/research.py",
+        "check",
+        "--ids",
+        "wisdom-root"
+      ],
+      "exit_code": 0,
+      "output": {
+        "records": 37,
+        "selected_records": [
+          "wisdom-root"
+        ],
+        "errors": [],
+        "source_drift": [],
+        "unrelated_source_drift": [
+          {
+            "id": "organizational-formation-from-generative-comparison",
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+            "reviewed_sha256": "f0ac8caa838c19196f71bf1861a89846c4f4d6472b958116917ffcaeb1ab88a4",
+            "current_sha256": "c5825f8cd2b3796da906e6e6d49e8c9f2147e1b2e9763f673d7c50d4fc33a8a2"
+          },
+          {
+            "id": "organizational-formation-from-generative-comparison",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+            "reviewed_sha256": "7f7c51bb15824723143e3c11201d79f374d8679f230609f3fca1071eaffea460",
+            "current_sha256": "de04c7f78abc7c78a6c7cdeecd6cacfc2e1ea8b045e92d7c4957d9ba622e6fb5"
+          },
+          {
+            "id": "organizational-formation-from-generative-comparison",
+            "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+            "reviewed_sha256": "311b9e423cf1a6956373bc0ab187ce9b266a4258f058fa61aa7423886c96b14d",
+            "current_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d"
+          }
+        ],
+        "scope": "Metadata, navigation, preserved history and proof-receipt bindings only. No new Lean or empirical validation."
+      },
+      "stderr": ""
+    },
+    {
+      "command": [
+        "tools/research/generative_chain.py",
+        "--check"
+      ],
+      "exit_code": 2,
+      "output": {
+        "status": "needs-review",
+        "errors": [
+          "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/multivalued-joining-common-structure.json",
+          "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/organizational-formation-from-generative-comparison.md",
+          "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/situated-recovery-empirical-correspondence.md",
+          "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/transition-grouping-word-partition.md",
+          "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/multivalued-joining-common-structure.json",
+          "Linked source versions changed; reread affected entries before rendering."
+        ],
+        "changes": {
+          "modified_sources": [
+            "RESEARCH.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+            "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+            "theories/shengsheng-buxi-generative-existence/README.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+            "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+            "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+            "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md"
+          ],
+          "missing_sources": [],
+          "new_pages": [
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md"
+          ],
+          "removed_pages": [
+            "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+            "theories/meta-attractor/COMMON-ORGANIZATION.md"
+          ]
+        }
+      },
+      "stderr": ""
+    }
+  ]
+}

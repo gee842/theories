@@ -1,6 +1,8 @@
 # 为什么核心能够导向智慧：生成约束与理由
 # Why the core can lead to wisdom: generative constraints and reasons
 
+**当前方向纠正，2026-10-08：**[Ren明确指出](../../../../sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md#morality-judges-becoming)，道德依赖本理论的普遍原则，因为它判断becoming，而模型能够判断becoming。[第14节](#morality-as-judgment-of-becoming)据此正面接通生成变化、共同评价根据与情境回应。第13节的文献比较保留为背景，不再用情境敏感性或不显式循原则，作为搁置普遍原则路线的理由。
+
 **实质对照的结果，2026-10-08：**[第13节](#substantive-rival-comparison)把替代说明落实到 Dancy 与 Dewey，并复用原目的评价案例。情境判断可以保留实际约束，却仍争论普遍规范根是否必要；理由的支持作用、成立条件、认识条件和实行条件也须分别说明。本轮无新数学证明，完整根目标保持开放。
 
 **整个根的适用单位，2026-10-08：**[第12节](#wisdom-scope-and-whole-root)核对知其限、理论智慧、实践智慧及熟练应变，区分具体判断、形成的能力与完整生成解释。共同根的候选须解释这些分化，不能要求每次智慧活动都执行整棵树；亦不能以“发生于同一过程”代替其根据。本轮为哲学与原典比较，无新数学证明，`wisdom-root`保持开放。
@@ -334,3 +336,51 @@ G0仍按授权作为基本正面规范起点采用，J与E明示。上述比较�
 **下一连接已收窄：**在固定G0/J/E应用范围内，核对从已完成的局部根据到新情境的正当接续，是否保留了实际承担理由作用的关系，而不只复制相似特征；再辨明这种接续所需的共同关系是否超出了目标评价例中的局部必要性。直接复用现有形成、情境修订和风险成果，不重开这些机制。目的不是逼迫全部智慧采用一套显式程序，而是对共同根的实质内容进行可失败的检验。
 
 **English scope.** This matched interpretive comparison distinguishes retained relational content from disputed universal grounding. The existing goal-ground theorem excludes only its specified attainment-only selector; contextual sensitivity and fixed relation-sensitive rules retain credit. Dancy supplies a live challenge to inference from particular constraints to a necessary general basis; Dewey supplies an established formation account. Support, applicability, warranted recognition and practical realization have distinct explanatory roles within one unfolding. No new theorem, whole-theory identity, universal necessity or independent acceptance is claimed.
+
+<a id="morality-as-judgment-of-becoming"></a>
+## 14. 道德作为对becoming的判断 / Morality as judgment of becoming
+
+2026-10-08，[Ren纠正研究方向](../../../../sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md#morality-judges-becoming)。**本轮落实的正面主张：道德评价实际生成变化，普遍的生成评价根据可以在变化的情境中支撑不同道德判断。** 研究重心是展开我们已有的根据及其适用，不以文献对手的疑问替代本理论的论证。
+
+**成果接续。** 更新`wisdom-root`；复用`practical-judgment-g0-j`、`relational-generative-comparison`、`positive-ground-open-futures`，以及本研究第10–11节已查结果。新增量为Ren纠正下的概念接通与论证优先级修订，没有新数学定理、Lean运行或独立验收。G0、J／C、从正面内容到理由的公开实践解释及对应E各保持原范围。
+
+### 14.1 普遍根据评价变化中的关系
+
+本轮沿Ren的主张，把道德问题落实为：这种活动及其继续会使共同的生、实现条件、关系与可能性变成什么；我们据何判断其中形成、保住、损害和终结的内容。行动、承受后果、辨认与评价从同一展开中分化，评价和修订也会实际改变后续。没有在生成过程外另设一个裁判世界。
+
+依本仓库既有的完整历史要求，本文将“变化之后的结果”展开为实际生成后果，包括形成了怎样的关系、怎样形成、实际损失及后续条件。它不限于终点的产出数。过去的损害不会因为后来恢复而变成没有发生；承诺、依存和权限的历史也不能由一个终点数值替代。这是AI的解释展开，依[既有实践判断](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md)说明其根据，并非向Ren追加原话。
+
+G0公开肯定整体中的生及继续生成；J1–J4说明比较、保护、承担和实际选择的相应原则。它们评价真实变化，而不是要求无论关系怎样变化都重复同一个动作。原则的普遍适用范围与某个动作的适用条件需要分别说明。新的情况可以使保留、改变、交接或结束获得不同根据，而不因此使共同评价根据消失。
+
+### 14.2 更正第13节所造成的方向偏移
+
+第13节对“具体约束不单独证明任何指定普遍理论”的逻辑范围判断仍可保留。但它不应成为忽略本理论已经给出生成内容和规范根据的理由。本轮没有只有一句抽象的“判断受约束”：已有G0/J和生成变化的关系表示，应直接评估它们怎样承担道德判断。
+
+同样，一个人凭经验辨明恰当回应、没有逐条表述原则，是判断能力如何运行的问题；它本身没有回答这个回应为什么正当。在本候选中，熟练者的判断仍由实际生成后果及共同规范根据接受评价。显式推理、熟练辨认与规范根据可以在同一形成历史中结合，不必强迫所有实践者先背诵理论。
+
+因此，本研究不采用Dancy立场为结论，也不以其认可为本路线的门槛。第13节保留真实文献和反循环要求；其“下一连接”由本节的正面展开具体化。反对意见只有在指出某项原则的内容、实际对应或推论存在问题时，才构成这里需要处理的实质压力。
+
+### 14.3 模型已经怎样判断becoming
+
+以下复用的成果表明，本理论已经能在明确范围内作生成评价；不是等证明全部未来可知以后才开始判断。
+
+| 已完成连接 | 在本论证中的作用 | 原有条件 |
+|---|---|---|
+| [目的评价](WISDOM-GOAL-GROUNDING.md#fixed-law-comparison)中的`fixed_ground_rule_adequate` | 同一关系敏感规则在损失关系不同时支持保留或改变；具体回应变化有共同评价根据 | 原有限配置、确定性全配置要求及公开J2；不改写为全部智慧 |
+| [关系生成比较](RELATIONAL-GROUNDING-PROOF.md)中的`strict_comparison_cannot_factor_through_marginals` | 分别可能性不变而共同生成条件改变时，评价仍可有实质差别；模型必须保留改变判断的关系 | 既有共同事件律、明确比较C及实际生成／损失对应；不主张一切耦合均好 |
+| [可见未来的正面根据](POSITIVE-GROUND-UNCERTAINTY-PROOF.md)中的`contingent_generation_has_positive_ground` | 同一回应可以有确定的正面生成根据，同时未来生成的具体形态仍开放 | G0、同一回应和有根据的接续范围；正面方面不自动成为最终许可，范围扩大可要求修订 |
+| [一般实践判断](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md) | 从这些得失及实际关系说明保留、转化、交接、结束和差异化承担 | J1–J4、E及其独立说明的权限、负担与可行性；不重开已完成原则 |
+
+这里的接通是哲学解释中的复用，未新建三个形式模型的共同历史或Lean组合证明。特别是，判断becoming包含对当前有根据的未来范围作判断；不要求知道所有将来，不将不同可能后继相加为一次共同实现，也不以某次失败直接取消此前有根据的风险判断。
+
+### 14.4 从共同根据到智慧推演
+
+这使“自然延伸何以产生智慧”有了更具体的正面说明候选。追踪同一活动如何改变后续条件，辨明共同实现、真实损失、已形成的承担及仍可修订的认识，再应用公开的生成评价原则，可以产生保留、改变、让渡或结束等有内容的要求。不同要求之间的联系来自实际生成关系和共同评价根据；不能只因它们表面相反就说没有普遍原则。
+
+由此，历史格言与本理论的重合可以被研究为：不同情境中的智慧表达是否抓住了这些生成关系及其规范作用。要给这一解释证据，应先固定原则和情境对应，独立推得有范围的判断，再比较原典及不利案例；仅用“becoming”重命名每一格言不会完成解释。
+
+**当前可正面确立的工作结论：**沿已授权的G0/J路线，生成评价已经能够为具体道德判断提供共同根据，情境变化可在这个根据内得到说明。“没有显式执行原则”与“具体回应改变”均不独自反驳该根据。
+
+**仍要落实的根基连接：**说明这一共同根据怎样覆盖道德智慧的不同内容，并把已有形成、认识、评价和修订结果按其真实前提接通。道德涉及becoming给出了本理论进入问题的实质路线；“某模型能表示变化”本身还不能保证它保留所有会改变道德判断的关系。所需的是相关范围的真实对应与有内容的评价，而不是要求一个全知、全排序的宇宙算法。理论智慧等其他智慧范围保持第12节的独立说明责任。G0采用公理路线继续，不新增无公理门槛，也不把规范普遍适用等同所有智能实际赞同。
+
+**English scope.** Ren directs the inquiry toward morality as appraisal of becoming through the theory's universal principles. Changing responses and tacit judgment do not by themselves defeat a common normative ground. The established G0/J route and checked goal-ground, relational-comparison and open-future results supply substantive local support. This is interpretive reuse, not a new formal composition, a prediction of all futures, or completion of the root-of-all-wisdom target.

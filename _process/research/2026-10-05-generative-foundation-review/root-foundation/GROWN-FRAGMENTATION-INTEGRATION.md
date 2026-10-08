@@ -1,5 +1,7 @@
 # Growth forms the possibilities of fragmentation
 
+**Continuation, 8 October 2026.** [Recurrent assembly from prepared material](#recurrent-assembly-from-prepared-material) now closes the previously missing preparation-to-repeated-structure connection for one chain class, with 31 additional checked theorems / 47 new audits. Earlier results below retain their original scope and counts. The complete evolutionary theory remains open; repeated reconstruction under a fixed local law is distinct from the evolution of that law.
+
 8 October 2026. AI-authored continuation of Ren's instruction to explain how evolution forms and changes the organization of further evolution. The [previous material preparation result](MATERIAL-MATURATION-INTEGRATION.md) is retained. This study connects **actual local growth → retained connection graph → actual cuts → transmitted composition and contacts → finite preparation of a common organization**.
 
 **核心结果：整体组成相同的两种生长历史，会形成不同的可分割关系，因此不能共同传递任意指定的组分组合。在相同的后续生成和安放规律下，这会改变组织准备的产出；断裂规律改变，排序也会倒转。新增维持关系还可以使原先导致分裂的断键不再产生两个后继。**
@@ -104,3 +106,86 @@ The independently completed [calibrated updater](EVOLUTION-CALIBRATED-UPDATER.md
 The [Lean source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/GrownFragmentation.lean) contains both general correspondence proofs and finite exact checks. The [fresh-build receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/grown-fragmentation-verification/README.md) binds the actual seven-module closure, compiler logs and all declaration audits. Its 267 inherited audits are separate from the 59 new audits. Kernel checks use no placeholders, added axioms or native-decision shortcuts.
 
 [Integration checks](GROWN-FRAGMENTATION-CHECKS.json) bind owned links, original source bytes, proof receipts and the paired C14 update. They preserve other chain entries and the six broad requirements. Author counterreview is provided here; no independent-agent acceptance or comparative empirical superiority is claimed.
+
+## Recurrent assembly from prepared material
+
+**Result and exact delta.** The former common material preparation can now feed actual structural assembly. The assembled chain fragments with internal connections retained; the resulting pieces grow through the same attachment relation into structures that can undergo that cycle again. **Thirty-one new Lean theorems / 47 new audits / 373 closure audits pass.** This is a conditional reconstruction of one repeatable material life cycle, not the completion of all evolutionary theory.
+
+**中文结果。** 已接通“实际安放的材料 → 逐项接合形成链 → 断裂并保留片段内部连接 → 同样接合作用重建完整链 → 再次断裂”。完整结构是操作执行的结果，程序没有把目标图直接写入后继。任意有限轮次的证明同时核算共同材料与支持；缺少组分、支持不足和不合适的结构保留真实失败。局部相容规律、八组分断裂条件和操作次序仍给定，尚未说明这些规律自身的可遗传变异与选择。
+
+Result(s): `material-preparation-output` and `growth-constrained-fragmentation`, migrated here from the existing source-bound results; the new composition is `recurrent-chain-assembly`.
+
+Delta: the earlier producer's actual `routeTrace.placed` output now meets the attachment input, and the generated fragments meet the same attachment operation again. This is more than a new terminal maturity label. The established `DevelopmentalReconstruction.inherited_development_over_generations` already preserved retention through supported division/transfer histories; the present delta specifically connects the newer material preparation and retained graph fragments. It does not reopen generic inherited development.
+
+Supplied premises and correspondence: two functional component states, selective end attachment, its unit support requirement, the size-eight path cleavage domain and operation order, sufficient typed material and support, and the absence of unrepresented load-bearing links in the routed input. These are laws and roles of one process, not a separate builder acting on passive material. The prior routing capability and recipe remain supplied.
+
+Evidence: `prepared_output_rebuilds`, `fragments_retain_real_links`, `supported_reproduction`, `supported_rounds`, `prepared_repeated_generation`, `rounds_accounts` and their [source-bound receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/recurrent-assembly-verification/README.md).
+
+Boundary: material life-cycle closure for this fixed local law does not yet establish autonomous supply, the origin of the laws, differential inheritance of alternative developmental rules, or natural fracture mechanics. The previous branched structure is not rebuilt by this new chain-specific operation.
+
+Integration: the [canonical result](../../../../theories/shengsheng-buxi-generative-existence/results/records/recurrent-chain-assembly.json) records the exact producer-to-consumer interfaces. Earlier empirical, sorting, memory and updater results remain separate unless an actual adapter is proved.
+
+### Material preparation becomes a formed structure
+
+The new state contains the attached component sequence, its actual edge list and one shared supply containing unbound components, remaining support and spent support. An enabled attachment removes **one existing matching component** from that pool, appends it to the current end, records the new edge and consumes one support unit. The first component is A; subsequent attachment requires the opposite kind to the existing terminal component. Attachment stops at eight components or when the required material or support is absent.
+
+There is no input edge recipe or division-parent schedule for this assembly. `attach_preserves_path` and `grow_preserves_path` prove that starting from the empty structure produces the path relationship through the actual successive additions. `attach_tokens` and `grow_tokens` preserve the multiplicity of every component in attached-plus-unbound material. Components have Boolean functional states; unique molecular identities and chemical energy balances are outside this representation.
+
+`completed_routing_output` derives the actual placed sequence from a successful earlier routing history. `prepared_output_rebuilds` then uses that sequence as the attachment pool. The output is the alternating eight-component chain, with exactly the labels and edges of the previously grown chain (`formed_graph_matches_previous`). This is a checked endpoint correspondence. Its local formation route is end attachment from prepared components, whereas the previous route was division with daughter differentiation; it is not an identification of their mechanisms or costs.
+
+Structural assembly consumes **eight additional support units after routing**. The earlier eight routing units are not reused. A supplied precursor pool that has not actually completed routing does not receive a ready-state reset. Moreover, the previous routing representation did not track persistent mechanical bonds among its slots. The adapter treats those placed components as individually movable under the new operation. If a physical realization retains additional load-bearing links, their release or rearrangement and its cost need another correspondence; this construction does not silently prove that physical disassembly is free.
+
+### Formed fragments can rebuild the same operational arrangement
+
+The cleavage operation applies to an eight-component path with available support. It consumes one support unit and separates at the central edge. The two successor sequences are computed by taking the corresponding components; each successor edge list filters the **actual** old list and renames its local positions. The operation neither assigns a fresh path nor removes the internal edges.
+
+`fragments_retain_real_links` checks agreement with the earlier exact component split. Both fragments contain the alternating sequence A–B–A–B and its three existing edges. Four enabled applications of the same terminal attachment law extend each to A–B–A–B–A–B–A–B. Eight new components and eight further support units are consumed across both fragments. Thus one successful reproductive event has total additional requirements of **eight components and nine support units**.
+
+`supported_reproduction` proves the complete state transition for arbitrary residual pool, support and previously spent work. The two reconstructed chains have the very structure admitted by the cleavage operation, so its output meets its own next-cycle input. The size and path guard is a declared domain of this model's cleavage operation; it is not a derived physical sensor, autonomous force threshold or evolutionary optimum. Sequential treatment of fragments is also a supplied event order.
+
+### Any finite number of generations has an explicit shared budget
+
+`supported_generation` composes the operation across all current parents using one shared pool. It does not hand each parent an independent copy of the available stock. `supported_rounds` generalizes the composition to every finite number of rounds and every initial number of complete chains. `rounds_are_trace` represents those repeated operations as an actual trace of the inherited generative-process formalism.
+
+For one initial complete chain and (g) rounds, the proved budget is
+
+\[
+\text{complete chains}=2^g,\qquad
+\text{additional components}=8(2^g-1),\qquad
+\text{additional support}=9(2^g-1).
+\]
+
+The recurrence for material blocks satisfies `required g k + k = k * 2^g`; this is checked by `required_as_growth`, rather than inferred from a numerical example. `prepared_repeated_generation` additionally starts with the earlier successful routing output and includes the eight units for its initial structural assembly.
+
+These are generational counts under an admitted operation sequence, not a growth rate per hour. The proof makes an arbitrarily long **finite supported continuation** possible by supplying its whole finite budget. It does not obtain infinitely many generations from one finite initial stock, and it does not derive the production or renewal of that stock.
+
+Two rounds give an explicit success and near-failure comparison:
+
+| Initial complete chains | Additional components | Support | Actual resulting structures | Residual pool |
+|---:|---:|---:|---|---|
+| 1 | 24, with the specified types | 27 | Four complete eight-component chains | Empty |
+| 1 | The same 24 components | 26 | Three complete chains and one seven-component chain | One B component |
+
+`partial_failure_keeps_material` verifies the second line, including its 26 spent units. The smaller budget does not trigger rollback, deletion or invented material. `rounds_accounts` conserves total attached-plus-unbound component count and remaining-plus-spent support for **all** executions, successful or incomplete. `finite_material_bound` consequently bounds the number of complete descendants by the actual total material.
+
+Two further failures delimit the mechanism. Eight A components cannot build an alternating chain: after the first attachment, seven A and seven support units remain but the required B is absent. Eight appropriately typed components with no formed edges are also not automatically a reproducing chain; this cleavage operation leaves that structure unchanged. These are local mechanism tests, not universal claims that other chemistries cannot operate on such states.
+
+### What has and has not become inherited
+
+The retained fragment carries an actual connected sequence and an active end whose current type determines which further attachment can occur. Growth reconstructs the larger arrangement, and that arrangement again makes the specified split possible. The repeated organization is therefore established through inherited structure and further activity; it is not copied as a mature-state flag.
+
+This closes the **specific preparation-to-repeatable-chain connection** identified in the preceding round. It does not establish that the physical organizing law evolves, or that the chain has an independently inherited blueprint. All admitted chains share the same supplied local compatibility and cleavage rules. The construction has repeated reproduction but no demonstrated competition among heritable alternative organizing rules. Such variation and its consequences are the next evolutionary connection; a fixed-law doubling result cannot substitute for it.
+
+The previous chain-versus-branched ranking is not imported as a selection result for these repeated cycles. Both the formation mechanism and the continuation protocol have changed. In particular, successful preparations from either earlier parent can enter the common chain-building operation, so preserving the parental architecture is a separate issue. The old probabilities and their counterexamples remain valid at their original terminal census.
+
+### Primary evidence and comparative counterreview
+
+[Ratcliff et al. 2015](https://doi.org/10.1038/ncomms7102) already connect inherited cell attachment, developmental organization, fragmentation and collective heredity. Their parent–offspring life histories are substantive biological evidence for redevelopment, not just a count recurrence. The preserved [original and reading scope](../../../../sources/evolutionary-selection/evolutionary-organization/README.md) remain primary; the present continuation rereads the heredity and developmental discussion. No new estimate or simulation reproduction is made. Their genealogical bottleneck is not a requirement that every physical propagule be a single cell.
+
+The independently continued [packing](PACKING-FRAGMENTATION-INTEGRATION.md) and [sorting comparison](SETTLING-CORRESPONDENCE-INTEGRATION.md) also credit conventional models that include development, fragment descendants and repeated transfers. Their empirical and physical correspondence issues remain separate. This assembly model does not resolve the census conversion, drag law or descendant measurements identified there.
+
+The strong matched comparator is a conventional typed-chain assembly and fragmentation process given the same operations, component pools and support accounting. It reproduces these transitions and budgets exactly. There is no established comparative superiority. The new explanatory contribution within our programme is the **proved composition of a previously terminating preparation process with a repeatable structure-generating process**, including all finite rounds and real failures. The arithmetic of doubling is elementary; the substantive question is whether the operations actually regenerate their input organization, which the new source checks for this class.
+
+Author counterreview identifies three remaining premises that the favorable result must not conceal: the chemical/spatial realization of selective attachment, the operative cleavage relation, and the availability of materials and work. It also preserves a fourth evolutionary requirement: reconstructing one type does not explain the formation, inheritance and selection of changes to that type's organizing process. These are distinct from the now-completed finite composition and should guide the next investigation without reopening its established result.
+
+The [continuation checks](RECURRENT-ASSEMBLY-CHECKS.json) bind the proof, canonical records, owned theory changes and paired C14 data. They add no independent-agent acceptance or empirical validation. The earlier study receipt remains historical, and the six broad completion conditions remain unchanged.

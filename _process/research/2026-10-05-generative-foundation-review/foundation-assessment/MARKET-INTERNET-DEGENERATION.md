@@ -469,3 +469,15 @@ K_N=(15+10\kappa)(\tfrac{10}{9})^N-10(1+\kappa).
 **下一未完连接。** 本轮结果已关闭“有正余量时，有限持续纠正能否在有账可查的支持条件下交接到原保护区”这个缺口。继续应解释现实可实施的部分阻断、干预形成与保留怎样给出这个 β 改变；以及余量消失后，实际进入怎样恢复候选活动。现有形成／纠正机制应按接口复用，不能把一个免费新增参与者或永久监督者充作答案。完整三维吸引域、现实参数与变化速率仍有各自范围，不自动变成重复本轮证明的待做任务。
 
 English: A supplied finite beta=0 intervention now takes every physical rational state with positive renewal share into the original beta=1/2 protection rectangle. The proof does not reset quality, influence or participants. A recursively calculated initial stock cover, including a nonnegative per-step intervention burden, keeps every prefix above the essential floor. The actual arrived full state then supplies the old perpetual protection theorem after withdrawal, without replenishment at handoff. Zero share stays zero, no fixed pulse duration works for every positive seed, and an exact floor-stock example fails immediately despite effective correction. These are a supported transition theorem and limits, not a minimal policy, complete recovery boundary, endogenous institution-formation result or empirical calibration. Twenty-seven new theorems / 35 declaration audits and 96 inherited theorems / 118 audits were actually checked. Normative use reuses G0/J/E; actual implementation, discrete entry and plural support correspondence remain substantive obligations.
+
+
+<a id="partial-correction-boundary"></a>
+## 31. 本轮接续：部分纠正及临界反馈
+
+Result(s): `market-supported-finite-transition`、`market-protected-continuation`；原 `RegimeBoundary` 的门槛／低区边界与 `RegimeAttraction` 的平衡分类直接复用。
+
+Delta: 削弱“纠正阶段 β=0”的前提，检验残留侵蚀以及 β=5/12 临界点能否让所有正维护初态有限到达原保护区。这里的正余量会改变影响的后续形成，不能把最坏 w=1 的静态界当作整条历史。另核对既有形成结果的输出是否足以解释新维护活动进入，不作免费重置。
+
+Supplied premises / correspondence: 沿同一有理市场规律，参数在有限纠正阶段固定、纠正真实生效、额外支持耗用与原先资金账户明示；先证明轨迹，再接实际守卫。真实组织形成、离散退出及市场进入须另有对应。
+
+Evidence / boundary / integration: 继续在原研究与 formal 目录中检查；临界等号、超临界正初态反例及原交接接口分别核对。新的结果不会自动证明现实中可实现所给参数，也不把材料链的生成直接解释成经营者进入。

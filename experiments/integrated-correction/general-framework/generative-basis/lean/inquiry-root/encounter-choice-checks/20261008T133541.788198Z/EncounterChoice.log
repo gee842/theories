@@ -1,0 +1,173 @@
+EncounterChoice.lean:15:2: error: unexpected token 'at'; expected command
+EncounterChoice.lean:17:10: error: unexpected identifier; expected 'instance'
+EncounterChoice.lean:23:11: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Decidable (a✝¹ = b✝¹)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+EncounterChoice.lean:23:24: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Repr (List View)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+EncounterChoice.lean:26:49: error(lean.unknownIdentifier): Unknown constant `Generative.EncounterChoice.View.seen`
+EncounterChoice.lean:26:35: error(lean.invalidField): Invalid field `at`: The environment does not contain `Generative.EncounterChoice.View.at`, so it is not possible to project the field `at` from an expression
+  v
+of type `View`
+EncounterChoice.lean:32:27: error: Insufficient number of fields for `⟨...⟩` constructor: Constructor `Generative.EncounterChoice.View.mk` does not have explicit fields, but 2 were provided
+EncounterChoice.lean:93:8: warning: declaration uses `sorry`
+EncounterChoice.lean:148:29: error: Insufficient number of fields for `⟨...⟩` constructor: Constructor `Generative.EncounterChoice.View.mk` does not have explicit fields, but 2 were provided
+EncounterChoice.lean:148:45: error: Insufficient number of fields for `⟨...⟩` constructor: Constructor `Generative.EncounterChoice.View.mk` does not have explicit fields, but 2 were provided
+EncounterChoice.lean:148:64: error: Insufficient number of fields for `⟨...⟩` constructor: Constructor `Generative.EncounterChoice.View.mk` does not have explicit fields, but 2 were provided
+EncounterChoice.lean:154:106: error: Tactic `decide` failed for proposition
+  choose (calibrated 51).situation.lexicon (calibrated 51).views [] catalogue = some (1, 0) ∧
+    choose (first 51).situation.lexicon (first 51).views (first 51).tried catalogue = some (0, 1) ∧
+      choose (second 51).situation.lexicon (second 51).views (second 51).tried catalogue = some (2, 2)
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `decidable_of_decidable_of_iff`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `instDecidableEqProd`, `instDecidableNot`, `Bool.decEq`, `List.instDecidableMemOfLawfulBEq`, `Nat.decEq`, `Nat.decLe`, and `Option.instDecidableEq`, reduction got stuck at the `Decidable` instance
+  match choose (calibrated 51).situation.lexicon (calibrated 51).views [] catalogue with
+  | none =>
+    match some (1, 0) with
+    | none => isTrue ⋯
+    | some val => isFalse ⋯
+  | some a =>
+    match some (1, 0) with
+    | none => isFalse ⋯
+    | some b =>
+      match (fun a b => instDecidableEqProd a b) a b with
+      | isTrue h => isTrue ⋯
+      | isFalse n => isFalse ⋯
+EncounterChoice.lean:157:111: error: Tactic `decide` failed for proposition
+  interpretationInputs (acquired 51).situation.lexicon = interpretationInputs (coordinated 37).lexicon
+because its `Decidable` instance
+  instDecidableEqProd (interpretationInputs (acquired 51).situation.lexicon)
+    (interpretationInputs (coordinated 37).lexicon)
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `decidable_of_decidable_of_iff`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqList`, `instDecidableEqNat`, `instDecidableEqProd`, `instDecidableNot`, `Bool.decEq`, `List.instDecidableMemOfLawfulBEq`, `Nat.decEq`, and `Nat.decLe`, reduction got stuck at the `Decidable` instance
+  match (acquired 51).situation.lexicon.percept.log with
+  | [] =>
+    match (coordinated 37).lexicon.percept.log with
+    | [] => isTrue ⋯
+    | head :: tail => isFalse ⋯
+  | a :: as =>
+    match (coordinated 37).lexicon.percept.log with
+    | [] => isFalse ⋯
+    | b :: bs =>
+      match decEq a b with
+      | isTrue hab =>
+        match as.hasDecEq bs with
+        | isTrue habs => isTrue ⋯
+        | isFalse nabs => isFalse ⋯
+      | isFalse nab => isFalse ⋯
+EncounterChoice.lean:167:42: error: Tactic `decide` failed for proposition
+  Option.map (fun r => (r.fst, r.snd.percept.machine.support, r.snd.percept.machine.spent))
+      (AcquiredBinding.execute utterance (acquired 51).situation.lexicon) =
+    some ([true, false, true], 0, 44)
+because its `Decidable` instance
+  (Option.map (fun r => (r.fst, r.snd.percept.machine.support, r.snd.percept.machine.spent))
+        (AcquiredBinding.execute utterance (acquired 51).situation.lexicon)).instDecidableEq
+    (some ([true, false, true], 0, 44))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `decidable_of_decidable_of_iff`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `instDecidableEqProd`, `instDecidableNot`, `Bool.decEq`, `List.instDecidableMemOfLawfulBEq`, `Nat.decEq`, `Nat.decLe`, `Nat.decLt`, and `Option.instDecidableEq`, reduction got stuck at the `Decidable` instance
+  match
+    Option.map (fun r => (r.fst, r.snd.percept.machine.support, r.snd.percept.machine.spent))
+      (AcquiredBinding.execute utterance (acquired 51).situation.lexicon) with
+  | none =>
+    match some ([true, false, true], 0, 44) with
+    | none => isTrue ⋯
+    | some val => isFalse ⋯
+  | some a =>
+    match some ([true, false, true], 0, 44) with
+    | none => isFalse ⋯
+    | some b =>
+      match (fun a b => instDecidableEqProd a b) a b with
+      | isTrue h => isTrue ⋯
+      | isFalse n => isFalse ⋯
+EncounterChoice.lean:172:68: error: Tactic `decide` failed for proposition
+  (acquired 51).situation.lexicon.percept.machine.support = 4 ∧
+    (acquired 51).views.length = 6 ∧ (acquired 51).tried = catalogue ∧ 7 + 7 + 10 + 8 + 3 + 5 + 3 + 4 + 4 = 51
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `decidable_of_decidable_of_iff`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `instDecidableEqProd`, `instDecidableNot`, `Bool.decEq`, `List.instDecidableMemOfLawfulBEq`, `Nat.decEq`, and `Nat.decLe`, reduction got stuck at the `Decidable` instance
+  match h : (acquired 51).situation.lexicon.percept.machine.support.beq 4 with
+  | true => isTrue ⋯
+  | false => isFalse ⋯
+EncounterChoice.lean:186:23: error: Insufficient number of fields for `⟨...⟩` constructor: Constructor `Generative.EncounterChoice.View.mk` does not have explicit fields, but 2 were provided
+EncounterChoice.lean:191:106: error: Tactic `decide` failed for proposition
+  choose staleChoice.situation.lexicon staleChoice.views staleChoice.tried catalogue = some (2, 2)
+because its `Decidable` instance
+  (choose staleChoice.situation.lexicon staleChoice.views staleChoice.tried catalogue).instDecidableEq (some (2, 2))
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `decidable_of_decidable_of_iff`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `instDecidableEqProd`, `instDecidableNot`, `Bool.decEq`, `List.instDecidableMemOfLawfulBEq`, `Nat.decEq`, `Nat.decLe`, and `Option.instDecidableEq`, reduction got stuck at the `Decidable` instance
+  match choose staleChoice.situation.lexicon staleChoice.views staleChoice.tried catalogue with
+  | none =>
+    match some (2, 2) with
+    | none => isTrue ⋯
+    | some val => isFalse ⋯
+  | some a =>
+    match some (2, 2) with
+    | none => isFalse ⋯
+    | some b =>
+      match (fun a b => instDecidableEqProd a b) a b with
+      | isTrue h => isTrue ⋯
+      | isFalse n => isFalse ⋯
+EncounterChoice.lean:197:86: error: failed to synthesize
+  Decidable
+    (recalled (survey (0, 1) staleChoice).views (0, 1) = some [p0, extra] ∧
+      List.take staleChoice.views.length (survey (0, 1) staleChoice).views = staleChoice.views ∧
+        choose (survey (0, 1) staleChoice).situation.lexicon (survey (0, 1) staleChoice).views staleChoice.tried
+            catalogue =
+          some (0, 1))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+EncounterChoice.lean:206:73: error: Tactic `decide` failed for proposition
+  complete (run 3 [(1, 0)] (calibrated 51)).situation.lexicon = false ∧
+    choose (run 3 [(1, 0)] (calibrated 51)).situation.lexicon (run 3 [(1, 0)] (calibrated 51)).views [(1, 0)] [(1, 0)] =
+      none
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `decidable_of_decidable_of_iff`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `instDecidableEqProd`, `instDecidableNot`, `Bool.decEq`, `List.instDecidableMemOfLawfulBEq`, `Nat.decEq`, and `Nat.decLe`, reduction got stuck at the `Decidable` instance
+  match complete (run 3 [(1, 0)] (calibrated 51)).situation.lexicon, false with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+EncounterChoice.lean:210:67: error: Tactic `decide` failed for proposition
+  interpret (acquired 50).situation.lexicon utterance = some intended ∧
+    AcquiredBinding.execute utterance (acquired 50).situation.lexicon = none
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `decidable_of_decidable_of_iff`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `instDecidableEqProd`, `instDecidableNot`, `Bool.decEq`, `List.instDecidableMemOfLawfulBEq`, `Nat.decEq`, `Nat.decLe`, `Nat.decLt`, and `Option.instDecidableEq`, reduction got stuck at the `Decidable` instance
+  match interpret (acquired 50).situation.lexicon utterance with
+  | none =>
+    match some intended with
+    | none => isTrue ⋯
+    | some val => isFalse ⋯
+  | some a =>
+    match some intended with
+    | none => isFalse ⋯
+    | some b =>
+      match instDecidableEqExpr a b with
+      | isTrue h => isTrue ⋯
+      | isFalse n => isFalse ⋯
+EncounterChoice.lean:214:100: error: Tactic `decide` failed for proposition
+  (visit (0, 1) (first 38)).situation.position = (1, 0) ∧
+    (visit (0, 1) (first 38)).situation.lexicon.records = (first 38).situation.lexicon.records
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `decEq`, `decidable_of_decidable_of_iff`, `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `instDecidableEqProd`, `instDecidableNot`, `Bool.decEq`, `List.instDecidableMemOfLawfulBEq`, `Nat.decEq`, and `Nat.decLe`, reduction got stuck at the `Decidable` instance
+  match h : (visit (0, 1) (first 38)).situation.2.fst.beq 1 with
+  | true => isTrue ⋯
+  | false => isFalse ⋯

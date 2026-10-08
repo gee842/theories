@@ -1,0 +1,1082 @@
+{
+  "status": "passed",
+  "utc": "20261008T132520.713649Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "classification-robust-judgment-checks/20261008T132520.713649Z",
+  "source_sha256": {
+    "PracticalJudgment": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "ConcernExtension": "ee8e0fb64357fe9d428288aac09bb27c4f046e6ae55f50cdc88e2a445fcefc3f",
+    "RelationalOrganization": "613cf786d49800159d28adda6f56cded41db542bd54c24f9732f5324ead47c05",
+    "JointContinuationClassification": "e508683cc80832744a28f44c69f9c2561701cd099219448b75cfdb474c0786ee",
+    "GenerativeComparison": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
+    "RelationalGrounding": "9b2319e752ee1b93d4245b1c5fe0a9d1e0758b1caf37282623598ea491e84c87",
+    "ClassificationRobustJudgment": "be41162b292e8ee8037c4c493f19af2171b9b23e3e826e7a039f6448ac5e9494"
+  },
+  "checker_sha256": {
+    "check_classification_robust_judgment.py": "032363658e2f131227b69829d8436fd9de9b4da3712800166d5f29cd38755927",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Exact criterion and two-extreme sufficiency for all priority classifications of fixed positively relevant fresh contents; formal reuse of formation requirements and a joint-possibility example. G0/J, positive relevance, actual correspondence and practical eligibility remain supplied. Robust strict comparison is not a necessary condition for justified action. No universal basic-status classifier or behavioral convergence is proved.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "modules": [
+    {
+      "module": "PracticalJudgment",
+      "theorems": 30,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Included"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.StrictIncluded"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.included_trans"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.strict_included_irrefl"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.strict_included_trans"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Better"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.better_irrefl"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.better_trans"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.protection_anchor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.no_protection_trade_by_count"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Frontier"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.dominated_excluded"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.finite_frontier"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Required"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.required_performed"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.alternative_defeats_specific_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.impossible_menu_no_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.necessary_means_required"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Assigned"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.unique_responder_required"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.assignment_respects_capacity"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Covered"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.transfer_requires_actual_successor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.no_demand_gap_transfer"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.uncovered_demand_is_failure"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Settled"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Residual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.settlement_removes_residual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.unfulfilled_unreleased_remains"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Robust"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.robust_at_actual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.robust_under_refinement"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.required_under_faithful_redescription"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.withinCeiling"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.optionalFormation"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.supplied_ceiling_bounds_optional_gain"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.independent_choices_not_joint_capacity"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.basis"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.event"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.mixed_repair_anchor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.repair_retains_real_loss"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.protectedOne"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.noGain"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.competing_claims_incomparable"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.collective_duty_without_individual_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.uncertain_worlds_need_common_plan"
+        }
+      ],
+      "axiom_dependencies": {
+        "PracticalJudgment.Included": [],
+        "PracticalJudgment.StrictIncluded": [],
+        "PracticalJudgment.included_trans": [],
+        "PracticalJudgment.strict_included_irrefl": [],
+        "PracticalJudgment.strict_included_trans": [],
+        "PracticalJudgment.Better": [],
+        "PracticalJudgment.better_irrefl": [],
+        "PracticalJudgment.better_trans": [],
+        "PracticalJudgment.protection_anchor": [],
+        "PracticalJudgment.no_protection_trade_by_count": [],
+        "PracticalJudgment.Frontier": [],
+        "PracticalJudgment.dominated_excluded": [],
+        "PracticalJudgment.finite_frontier": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.Required": [],
+        "PracticalJudgment.required_performed": [],
+        "PracticalJudgment.alternative_defeats_specific_duty": [],
+        "PracticalJudgment.impossible_menu_no_duty": [],
+        "PracticalJudgment.necessary_means_required": [],
+        "PracticalJudgment.Assigned": [],
+        "PracticalJudgment.unique_responder_required": [],
+        "PracticalJudgment.assignment_respects_capacity": [],
+        "PracticalJudgment.Covered": [],
+        "PracticalJudgment.transfer_requires_actual_successor": [],
+        "PracticalJudgment.no_demand_gap_transfer": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.uncovered_demand_is_failure": [],
+        "PracticalJudgment.Settled": [],
+        "PracticalJudgment.Residual": [],
+        "PracticalJudgment.settlement_removes_residual": [],
+        "PracticalJudgment.unfulfilled_unreleased_remains": [],
+        "PracticalJudgment.Robust": [],
+        "PracticalJudgment.robust_at_actual": [],
+        "PracticalJudgment.robust_under_refinement": [],
+        "PracticalJudgment.required_under_faithful_redescription": [],
+        "PracticalJudgment.withinCeiling": [],
+        "PracticalJudgment.optionalFormation": [],
+        "PracticalJudgment.supplied_ceiling_bounds_optional_gain": [
+          "propext"
+        ],
+        "PracticalJudgment.independent_choices_not_joint_capacity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.basis": [],
+        "PracticalJudgment.event": [],
+        "PracticalJudgment.mixed_repair_anchor": [],
+        "PracticalJudgment.repair_retains_real_loss": [],
+        "PracticalJudgment.protectedOne": [],
+        "PracticalJudgment.noGain": [],
+        "PracticalJudgment.competing_claims_incomparable": [
+          "propext"
+        ],
+        "PracticalJudgment.collective_duty_without_individual_duty": [
+          "propext"
+        ],
+        "PracticalJudgment.uncertain_worlds_need_common_plan": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "ConcernExtension",
+      "theorems": 8,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "ConcernExtension.extend"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConcernExtension.included_extension_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConcernExtension.strict_extension_transfer_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConcernExtension.retained_old_new_strict"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConcernExtension.crossed_extension_is_incomparable"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConcernExtension.covered_profiles_no_better"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConcernExtension.positive_extension_changes_judgment"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConcernExtension.gain_judgment_transfer_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConcernExtension.new_basic_condition_can_reverse"
+        }
+      ],
+      "axiom_dependencies": {
+        "ConcernExtension.extend": [],
+        "ConcernExtension.included_extension_iff": [],
+        "ConcernExtension.strict_extension_transfer_iff": [],
+        "ConcernExtension.retained_old_new_strict": [],
+        "ConcernExtension.crossed_extension_is_incomparable": [],
+        "ConcernExtension.covered_profiles_no_better": [],
+        "ConcernExtension.positive_extension_changes_judgment": [],
+        "ConcernExtension.gain_judgment_transfer_iff": [],
+        "ConcernExtension.new_basic_condition_can_reverse": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "RelationalOrganization",
+      "theorems": 13,
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "RelationalOrganization.formation_required_of_improvable_absence"
+        },
+        {
+          "kind": "inductive",
+          "name": "RelationalOrganization.Form"
+        },
+        {
+          "kind": "def",
+          "name": "RelationalOrganization.spent"
+        },
+        {
+          "kind": "def",
+          "name": "RelationalOrganization.remaining"
+        },
+        {
+          "kind": "def",
+          "name": "RelationalOrganization.linked"
+        },
+        {
+          "kind": "def",
+          "name": "RelationalOrganization.basis"
+        },
+        {
+          "kind": "def",
+          "name": "RelationalOrganization.renewed"
+        },
+        {
+          "kind": "def",
+          "name": "RelationalOrganization.protect"
+        },
+        {
+          "kind": "def",
+          "name": "RelationalOrganization.freeOccasion"
+        },
+        {
+          "kind": "def",
+          "name": "RelationalOrganization.better"
+        },
+        {
+          "kind": "def",
+          "name": "RelationalOrganization.eligible"
+        },
+        {
+          "kind": "def",
+          "name": "RelationalOrganization.formed"
+        },
+        {
+          "kind": "def",
+          "name": "RelationalOrganization.menu"
+        },
+        {
+          "kind": "def",
+          "name": "RelationalOrganization.usesLeft"
+        },
+        {
+          "kind": "def",
+          "name": "RelationalOrganization.usesRight"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationalOrganization.left_formation_retains_basis"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationalOrganization.formation_has_a_real_loss"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationalOrganization.left_better_than_idle"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationalOrganization.left_better_than_overbuild"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationalOrganization.every_unformed_continuation_has_a_better_one"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationalOrganization.coordination_is_required"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationalOrganization.frontier_exactly_the_two_working_routes"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationalOrganization.neither_named_route_is_required"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationalOrganization.more_construction_can_defeat_its_own_basis"
+        },
+        {
+          "kind": "def",
+          "name": "RelationalOrganization.constructionReport"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationalOrganization.same_construction_report_different_living_basis"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationalOrganization.no_construction_report_only_basis_judge"
+        },
+        {
+          "kind": "def",
+          "name": "RelationalOrganization.repairedBasisJudgment"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationalOrganization.amount_sensitive_repair_recovers_the_local_basis"
+        }
+      ],
+      "axiom_dependencies": {
+        "RelationalOrganization.formation_required_of_improvable_absence": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RelationalOrganization.Form": [],
+        "RelationalOrganization.spent": [],
+        "RelationalOrganization.remaining": [],
+        "RelationalOrganization.linked": [
+          "propext"
+        ],
+        "RelationalOrganization.basis": [],
+        "RelationalOrganization.renewed": [
+          "propext"
+        ],
+        "RelationalOrganization.protect": [
+          "propext"
+        ],
+        "RelationalOrganization.freeOccasion": [],
+        "RelationalOrganization.better": [
+          "propext"
+        ],
+        "RelationalOrganization.eligible": [],
+        "RelationalOrganization.formed": [
+          "propext"
+        ],
+        "RelationalOrganization.menu": [],
+        "RelationalOrganization.usesLeft": [],
+        "RelationalOrganization.usesRight": [],
+        "RelationalOrganization.left_formation_retains_basis": [
+          "propext"
+        ],
+        "RelationalOrganization.formation_has_a_real_loss": [],
+        "RelationalOrganization.left_better_than_idle": [
+          "propext"
+        ],
+        "RelationalOrganization.left_better_than_overbuild": [
+          "propext"
+        ],
+        "RelationalOrganization.every_unformed_continuation_has_a_better_one": [
+          "propext"
+        ],
+        "RelationalOrganization.coordination_is_required": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RelationalOrganization.frontier_exactly_the_two_working_routes": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RelationalOrganization.neither_named_route_is_required": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RelationalOrganization.more_construction_can_defeat_its_own_basis": [
+          "propext"
+        ],
+        "RelationalOrganization.constructionReport": [
+          "propext"
+        ],
+        "RelationalOrganization.same_construction_report_different_living_basis": [
+          "propext"
+        ],
+        "RelationalOrganization.no_construction_report_only_basis_judge": [
+          "propext"
+        ],
+        "RelationalOrganization.repairedBasisJudgment": [],
+        "RelationalOrganization.amount_sensitive_repair_recovers_the_local_basis": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "JointContinuationClassification",
+      "theorems": 5,
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "JointContinuationClassification.Continuations"
+        },
+        {
+          "kind": "def",
+          "name": "JointContinuationClassification.Jointly"
+        },
+        {
+          "kind": "def",
+          "name": "JointContinuationClassification.CarriesWholeProfiles"
+        },
+        {
+          "kind": "def",
+          "name": "JointContinuationClassification.PreservesJointBundles"
+        },
+        {
+          "kind": "theorem",
+          "name": "JointContinuationClassification.whole_profile_preservation_iff_joint_bundle_preservation"
+        },
+        {
+          "kind": "theorem",
+          "name": "JointContinuationClassification.whole_profile_preservation_composes"
+        },
+        {
+          "kind": "theorem",
+          "name": "JointContinuationClassification.faithful_history_transport_preserves_joint_bundles"
+        },
+        {
+          "kind": "theorem",
+          "name": "JointContinuationClassification.complement_closed_preservation_excludes_new_realization"
+        },
+        {
+          "kind": "inductive",
+          "name": "JointContinuationClassification.Configuration"
+        },
+        {
+          "kind": "inductive",
+          "name": "JointContinuationClassification.Event"
+        },
+        {
+          "kind": "inductive",
+          "name": "JointContinuationClassification.Step"
+        },
+        {
+          "kind": "structure",
+          "name": "JointContinuationClassification.History"
+        },
+        {
+          "kind": "def",
+          "name": "JointContinuationClassification.Admissible"
+        },
+        {
+          "kind": "inductive",
+          "name": "JointContinuationClassification.Claim"
+        },
+        {
+          "kind": "def",
+          "name": "JointContinuationClassification.Realized"
+        },
+        {
+          "kind": "def",
+          "name": "JointContinuationClassification.retained"
+        },
+        {
+          "kind": "def",
+          "name": "JointContinuationClassification.released"
+        },
+        {
+          "kind": "def",
+          "name": "JointContinuationClassification.together"
+        },
+        {
+          "kind": "def",
+          "name": "JointContinuationClassification.leftOnly"
+        },
+        {
+          "kind": "def",
+          "name": "JointContinuationClassification.rightOnly"
+        },
+        {
+          "kind": "theorem",
+          "name": "JointContinuationClassification.same_marginal_realizations_can_lose_a_joint_bundle"
+        }
+      ],
+      "axiom_dependencies": {
+        "JointContinuationClassification.Continuations": [],
+        "JointContinuationClassification.Jointly": [],
+        "JointContinuationClassification.CarriesWholeProfiles": [],
+        "JointContinuationClassification.PreservesJointBundles": [],
+        "JointContinuationClassification.whole_profile_preservation_iff_joint_bundle_preservation": [],
+        "JointContinuationClassification.whole_profile_preservation_composes": [],
+        "JointContinuationClassification.faithful_history_transport_preserves_joint_bundles": [],
+        "JointContinuationClassification.complement_closed_preservation_excludes_new_realization": [],
+        "JointContinuationClassification.Configuration": [],
+        "JointContinuationClassification.Event": [],
+        "JointContinuationClassification.Step": [],
+        "JointContinuationClassification.History": [],
+        "JointContinuationClassification.Admissible": [],
+        "JointContinuationClassification.Claim": [],
+        "JointContinuationClassification.Realized": [],
+        "JointContinuationClassification.retained": [],
+        "JointContinuationClassification.released": [],
+        "JointContinuationClassification.together": [],
+        "JointContinuationClassification.leftOnly": [],
+        "JointContinuationClassification.rightOnly": [],
+        "JointContinuationClassification.same_marginal_realizations_can_lose_a_joint_bundle": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "GenerativeComparison",
+      "theorems": 11,
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "GenerativeComparison.Inventory"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.G0"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.Extends"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.GenerativeExtension"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.ComparisonPrinciple"
+        },
+        {
+          "kind": "structure",
+          "name": "GenerativeComparison.Situation"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.PracticalArticulation"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.SelectionCoherence"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.Survives"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.new_realization_has_positive_relevance"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.generative_extension_irreflexive"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.generative_extension_transitive"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.comparison_supplies_situated_reason"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.coherent_selection_survives_filter"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.feasible_restriction_preserves_survivor"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.continual_improvement_has_no_survivor"
+        },
+        {
+          "kind": "abbrev",
+          "name": "GenerativeComparison.Profile"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.profileInventory"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.count"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.firstAppraisal"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.secondAppraisal"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.ScoreBetter"
+        },
+        {
+          "kind": "def",
+          "name": "GenerativeComparison.tradeoffSituation"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.both_appraisals_respect_all_extensions"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.tradeoff_has_opposite_strict_appraisals"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.both_tradeoff_options_survive"
+        },
+        {
+          "kind": "theorem",
+          "name": "GenerativeComparison.each_appraisal_has_a_different_coherent_selection"
+        }
+      ],
+      "axiom_dependencies": {
+        "GenerativeComparison.Inventory": [],
+        "GenerativeComparison.G0": [],
+        "GenerativeComparison.Extends": [],
+        "GenerativeComparison.GenerativeExtension": [],
+        "GenerativeComparison.ComparisonPrinciple": [],
+        "GenerativeComparison.Situation": [],
+        "GenerativeComparison.PracticalArticulation": [],
+        "GenerativeComparison.SelectionCoherence": [],
+        "GenerativeComparison.Survives": [],
+        "GenerativeComparison.new_realization_has_positive_relevance": [],
+        "GenerativeComparison.generative_extension_irreflexive": [],
+        "GenerativeComparison.generative_extension_transitive": [],
+        "GenerativeComparison.comparison_supplies_situated_reason": [],
+        "GenerativeComparison.coherent_selection_survives_filter": [],
+        "GenerativeComparison.feasible_restriction_preserves_survivor": [],
+        "GenerativeComparison.continual_improvement_has_no_survivor": [],
+        "GenerativeComparison.Profile": [],
+        "GenerativeComparison.profileInventory": [],
+        "GenerativeComparison.count": [],
+        "GenerativeComparison.firstAppraisal": [],
+        "GenerativeComparison.secondAppraisal": [],
+        "GenerativeComparison.ScoreBetter": [],
+        "GenerativeComparison.tradeoffSituation": [],
+        "GenerativeComparison.both_appraisals_respect_all_extensions": [
+          "propext",
+          "Quot.sound"
+        ],
+        "GenerativeComparison.tradeoff_has_opposite_strict_appraisals": [
+          "propext"
+        ],
+        "GenerativeComparison.both_tradeoff_options_survive": [],
+        "GenerativeComparison.each_appraisal_has_a_different_coherent_selection": [
+          "propext"
+        ]
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "RelationalGrounding",
+      "theorems": 6,
+      "declarations": [
+        {
+          "kind": "inductive",
+          "name": "RelationalGrounding.Regime"
+        },
+        {
+          "kind": "def",
+          "name": "RelationalGrounding.continuations"
+        },
+        {
+          "kind": "def",
+          "name": "RelationalGrounding.marginal"
+        },
+        {
+          "kind": "def",
+          "name": "RelationalGrounding.allBundle"
+        },
+        {
+          "kind": "def",
+          "name": "RelationalGrounding.jointInventory"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationalGrounding.released_profiles_are_carried"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationalGrounding.joint_bundle_extension"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationalGrounding.marginals_agree_but_joint_descriptions_differ"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationalGrounding.strict_comparison_cannot_factor_through_marginals"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationalGrounding.joint_description_separates"
+        },
+        {
+          "kind": "def",
+          "name": "RelationalGrounding.retainedLeft"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationalGrounding.retained_possibility_does_not_force_joint_actualization"
+        }
+      ],
+      "axiom_dependencies": {
+        "RelationalGrounding.Regime": [],
+        "RelationalGrounding.continuations": [],
+        "RelationalGrounding.marginal": [],
+        "RelationalGrounding.allBundle": [],
+        "RelationalGrounding.jointInventory": [],
+        "RelationalGrounding.released_profiles_are_carried": [],
+        "RelationalGrounding.joint_bundle_extension": [],
+        "RelationalGrounding.marginals_agree_but_joint_descriptions_differ": [],
+        "RelationalGrounding.strict_comparison_cannot_factor_through_marginals": [],
+        "RelationalGrounding.joint_description_separates": [],
+        "RelationalGrounding.retainedLeft": [],
+        "RelationalGrounding.retained_possibility_does_not_force_joint_actualization": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "ClassificationRobustJudgment",
+      "theorems": 13,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "ClassificationRobustJudgment.classifiedBasic"
+        },
+        {
+          "kind": "def",
+          "name": "ClassificationRobustJudgment.classifiedGain"
+        },
+        {
+          "kind": "def",
+          "name": "ClassificationRobustJudgment.compared"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRobustJudgment.all_secondary_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRobustJudgment.all_basic_retains_fresh"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRobustJudgment.classification_robust_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRobustJudgment.two_extremes_suffice"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRobustJudgment.known_basic_improvement_is_robust"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRobustJudgment.fresh_enrichment_is_robust"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRobustJudgment.formation_required_without_fixed_classification"
+        },
+        {
+          "kind": "def",
+          "name": "ClassificationRobustJudgment.freshJoint"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRobustJudgment.joint_enrichment_is_strict"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRobustJudgment.joint_enrichment_without_fixed_classification"
+        },
+        {
+          "kind": "def",
+          "name": "ClassificationRobustJudgment.oldBasic"
+        },
+        {
+          "kind": "def",
+          "name": "ClassificationRobustJudgment.oldOccasion"
+        },
+        {
+          "kind": "def",
+          "name": "ClassificationRobustJudgment.newContent"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRobustJudgment.classification_can_matter_with_real_loss"
+        },
+        {
+          "kind": "inductive",
+          "name": "ClassificationRobustJudgment.Route"
+        },
+        {
+          "kind": "def",
+          "name": "ClassificationRobustJudgment.routeBasic"
+        },
+        {
+          "kind": "def",
+          "name": "ClassificationRobustJudgment.routeGain"
+        },
+        {
+          "kind": "def",
+          "name": "ClassificationRobustJudgment.routeFresh"
+        },
+        {
+          "kind": "def",
+          "name": "ClassificationRobustJudgment.routeFormed"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRobustJudgment.every_classification_requires_a_formed_route"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRobustJudgment.mixed_classifications_can_favor_opposite_routes"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRobustJudgment.no_route_undefeated_under_every_classification"
+        }
+      ],
+      "axiom_dependencies": {
+        "ClassificationRobustJudgment.classifiedBasic": [],
+        "ClassificationRobustJudgment.classifiedGain": [],
+        "ClassificationRobustJudgment.compared": [],
+        "ClassificationRobustJudgment.all_secondary_iff": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ClassificationRobustJudgment.all_basic_retains_fresh": [],
+        "ClassificationRobustJudgment.classification_robust_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ClassificationRobustJudgment.two_extremes_suffice": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ClassificationRobustJudgment.known_basic_improvement_is_robust": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ClassificationRobustJudgment.fresh_enrichment_is_robust": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ClassificationRobustJudgment.formation_required_without_fixed_classification": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ClassificationRobustJudgment.freshJoint": [],
+        "ClassificationRobustJudgment.joint_enrichment_is_strict": [],
+        "ClassificationRobustJudgment.joint_enrichment_without_fixed_classification": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ClassificationRobustJudgment.oldBasic": [],
+        "ClassificationRobustJudgment.oldOccasion": [],
+        "ClassificationRobustJudgment.newContent": [],
+        "ClassificationRobustJudgment.classification_can_matter_with_real_loss": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ClassificationRobustJudgment.Route": [],
+        "ClassificationRobustJudgment.routeBasic": [],
+        "ClassificationRobustJudgment.routeGain": [],
+        "ClassificationRobustJudgment.routeFresh": [],
+        "ClassificationRobustJudgment.routeFormed": [],
+        "ClassificationRobustJudgment.every_classification_requires_a_formed_route": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ClassificationRobustJudgment.mixed_classifications_can_favor_opposite_routes": [],
+        "ClassificationRobustJudgment.no_route_undefeated_under_every_classification": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "kernel_checked": true
+    }
+  ],
+  "artifact_sha256": {
+    "ClassificationRobustJudgment.lean": "be41162b292e8ee8037c4c493f19af2171b9b23e3e826e7a039f6448ac5e9494",
+    "ClassificationRobustJudgment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ClassificationRobustJudgmentAxiomAudit.lean": "189d9ba5e7f6dffab6d82a41569ab7024e86c0de7280d8861eb48ca559aad580",
+    "ClassificationRobustJudgmentAxiomAudit.log": "daf8db5b70a6ca15c2ee1f5bebda9e8798db59245a05e3d785fb41bdbdd49a2c",
+    "ClassificationRobustJudgmentSignatures.lean": "98f455f8569396c18b1665e340b154d142a16cd3d48356a1ba28fee3641dc575",
+    "ClassificationRobustJudgmentSignatures.log": "c6ea7767e7147c22fff9cbfb0c71c3d926f8e83fdc16261c13d48513e9c198d3",
+    "ConcernExtension.lean": "ee8e0fb64357fe9d428288aac09bb27c4f046e6ae55f50cdc88e2a445fcefc3f",
+    "ConcernExtension.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ConcernExtensionAxiomAudit.lean": "349ac4f11e78db07c637401d0f5838c36afa55ca29895e18945d96f15d5558d0",
+    "ConcernExtensionAxiomAudit.log": "8e4dbafe3c457d51d5b04ebc8c65c046fb5f530d921b025e910fe9acc8bb09cd",
+    "ConcernExtensionSignatures.lean": "6b1042617f36cad6bd8d835d099f572a44623cfe9c61ab1fc4143f3ee7f5ad36",
+    "ConcernExtensionSignatures.log": "40521dfee1b4a15389b99aeae30a77832da58ad977d0d17952b2afae489b3f57",
+    "GenerativeComparison.lean": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
+    "GenerativeComparison.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "GenerativeComparisonAxiomAudit.lean": "b917ae91ff6db176d460a5d332e193d545ad4277abfc0e95224a97d2894ad84e",
+    "GenerativeComparisonAxiomAudit.log": "66f7f5742924df733c730fbc3f8c6caf59156c8f5b9bf7bb5c4522e69db4be0f",
+    "GenerativeComparisonSignatures.lean": "bb1012bec6a2f508fa3e308f5ff3c666a651559eab86001b5b46e82013642809",
+    "GenerativeComparisonSignatures.log": "9a1754ab174b2e643d3359d1468c52053ccc3305e7c79e18b2b1ce67663da16f",
+    "JointContinuationClassification.lean": "e508683cc80832744a28f44c69f9c2561701cd099219448b75cfdb474c0786ee",
+    "JointContinuationClassification.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "JointContinuationClassificationAxiomAudit.lean": "bf2526a91d356919deb8e1f320ce5688ec87e1907f16d1fb3db7eeeaadbb7026",
+    "JointContinuationClassificationAxiomAudit.log": "07d1088dfa4fad295f1117b949c57aa078bb85c210f075642e909200dea7ad30",
+    "JointContinuationClassificationSignatures.lean": "8bdba8156427a22c80c7b5dcbf7b973083342451fd30852aa20adf60be4f9897",
+    "JointContinuationClassificationSignatures.log": "b029f40c58e42af8acdd1f0d5a11efc287be6db1bc267038a6d6df1af20ab505",
+    "PracticalJudgment.lean": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "PracticalJudgment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PracticalJudgmentAxiomAudit.lean": "c9f412159410854fb031176d7fe7a4c351dfaea59354c7d7a19ec4ad0c6e51a6",
+    "PracticalJudgmentAxiomAudit.log": "d73810d6b1a7343808726234c17bca9d7841acafabd3a17ee8e6145dfabbf1ea",
+    "PracticalJudgmentSignatures.lean": "aec1f9317bc8881cb24e62213fa9db801f59b620595bb90caf082a5debc9cb66",
+    "PracticalJudgmentSignatures.log": "93b65679f59a01788bfcfbfe0bf5bc3ef93f0cf67516c469f1667c5cdc9abd65",
+    "RelationalGrounding.lean": "9b2319e752ee1b93d4245b1c5fe0a9d1e0758b1caf37282623598ea491e84c87",
+    "RelationalGrounding.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "RelationalGroundingAxiomAudit.lean": "5c7f32414da2a264d133a53f455955731c65966c009c33243c4ebdf344dab3b7",
+    "RelationalGroundingAxiomAudit.log": "e80301726f996db9b52453c5d062e5fc968f72f250d27571551c152113c44aac",
+    "RelationalGroundingSignatures.lean": "10052e1591587d2e6f1dcd517eb04e61f09e108586618cac561fa76e54fbfda5",
+    "RelationalGroundingSignatures.log": "b1f51d89d132f46771f9a77f9a35912b63dc4e5b84001083ed12d5e3238af651",
+    "RelationalOrganization.lean": "613cf786d49800159d28adda6f56cded41db542bd54c24f9732f5324ead47c05",
+    "RelationalOrganization.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "RelationalOrganizationAxiomAudit.lean": "4b0f4cede3ccca87fba3a0878d56545354127915d05b084272c54d9a2a327410",
+    "RelationalOrganizationAxiomAudit.log": "4674631a3fb79edefe340838f0ae9e11a1f3dd87c5633496dfb6537b9a05041e",
+    "RelationalOrganizationSignatures.lean": "b7318d0ec3613a81e10c052a06f7e28a20f6a612cdc87b5066e48fe972aaa59c",
+    "RelationalOrganizationSignatures.log": "47dd4d8732204ea12ec135c176aa99395881e1535a239a466f618b7bf93e0622",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_classification_robust_judgment.py": "032363658e2f131227b69829d8436fd9de9b4da3712800166d5f29cd38755927",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

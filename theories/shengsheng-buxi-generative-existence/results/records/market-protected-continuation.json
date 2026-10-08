@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "id": "market-protected-continuation",
+  "title": {
+    "zh": "市场保护证书下的持续运行",
+    "en": "Continued market operation under a protection certificate"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F06",
+  "reviewed_at_utc": "2026-10-08T13:25:42.189982+00:00",
+  "claim": {
+    "zh": "给定市场规律、有效保护证书、安全初态及逐步容许扰动，原实际守卫在所有自然数时刻都与运行历史一致，不发生支持失败。",
+    "en": "Given the market law, a valid protection certificate, a safe initial state and admissible disturbances at every step, the actual guarded history agrees with the operating history at every natural time without support failure."
+  },
+  "hypotheses": [
+    {
+      "zh": "Certificate、Safe、Admissible 的全部公开条件，包括选择、责任、影响、资金及各支持底线；不是只检查维护份额。",
+      "en": "All public Certificate, Safe and Admissible conditions, including selection, accountability, influence, funding and every support floor; renewal share alone is insufficient."
+    }
+  ],
+  "correspondence": {
+    "zh": "量表示指定市场中的运行关系与支持，必要支持由 essential 指定；其正确性、伦理范围和真实参数另需对应。",
+    "en": "Quantities represent the specified market relations and supports; essential designates necessary supports. Correct mapping, ethical scope and actual parameters remain separate."
+  },
+  "canonical_source": "experiments/market-generativity/formal/MarketGenerativity.lean",
+  "aliases": [
+    "MarketGenerativity.safe_history_never_fails"
+  ],
+  "dependencies": [],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "detail": {
+        "zh": "有限支持下低端吸引历史失败，表明一般物理初态不自动满足保护证书；保护范围也不是全体伦理后果。",
+        "en": "Low-attractor histories fail with finite support: a physical initial state does not automatically satisfy the certificate, nor does protection cover every ethical consequence."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "有条件的不失败结论；不提供从不安全初态的进入、不证明完整吸引域或现实市场必然服从。",
+    "en": "Conditional nonfailure; it does not supply entry from unsafe states, a complete basin or inevitable compliance by real markets."
+  },
+  "validation_scope": {
+    "zh": "迁移原39项结果中的既有主张；本轮有限转变检查重新编译并审计继承源码，不计为新定理。",
+    "en": "Migrates an existing claim from the original 39 results; the finite-transition check rebuilds and audits inherited source without counting it as new."
+  },
+  "references": [
+    {
+      "path": "experiments/market-generativity/formal/MarketGenerativity.lean",
+      "role": "proof",
+      "sha256": "db7cf7f120e8759aebc1e280e9dc1bbd10b30a6b7004a835015624f85f8d49b1",
+      "declarations": [
+        "MarketGenerativity.safe_history_never_fails",
+        "MarketGenerativity.example_certificate"
+      ]
+    },
+    {
+      "path": "experiments/market-generativity/formal/transition-verification.json",
+      "role": "receipt",
+      "sha256": "94eb627cc38494b3347b7c5046e20b1e79bb41d35d6c01342d62241ef513c683",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "role": "integration",
+      "sha256": "cdd092289ae62ca502b36a193e3e6fa619785715e449497776814644b00d7ba3",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/market-generativity/formal/MarketGenerativity.lean",
+      "receipt": "experiments/market-generativity/formal/transition-verification.json",
+      "sha256_pointer": "/sources/MarketGenerativity.lean",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "已完成，直接复用；新研究须实际构造满足证书的状态或证明不同适用范围。",
+    "en": "Completed and reusable; new work must actually construct a certificate-satisfying state or establish a different scope."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：随有限转变的正式复用迁移既有成果身份；原源码和历史回执保留。",
+      "en": "2026-10-08: migrated the inherited result identity for formal reuse by finite transition; original source and historical receipts remain."
+    }
+  ]
+}

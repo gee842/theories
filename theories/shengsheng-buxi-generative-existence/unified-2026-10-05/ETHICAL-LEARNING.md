@@ -1136,3 +1136,74 @@ The tested stronger routes are necessity for an incumbent organization, prolific
 本轮新增13项 Lean 定理声明／29项具名声明审计，另实查30项继承定理／46项审计。其中含构造实例、一个观察限制及一个定义对应检查，不能算成13条独立规范原则；没有经验实验或独立 agent 验收。[实查回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/relational-organization-verification.json)绑定实际源码。正文中的一元重构及规范前提的辩护不是由 Lean 编译替代的。
 
 The conditional organizational-warrant argument is complete at its stated scope. The further inference stops at substantive correspondence for basic significance in newly formed living, after repairing a merely representational omission. This does not invalidate monism, reopen completed G0/J or acquired-condition principles, require omniscience, or establish inevitable compliance. Thirteen new Lean theorem declarations and 29 declaration audits include applications and a definitional identity; thirty inherited theorems and 46 audits remain separately credited.
+
+
+<a id="classification-robust-generative-direction"></a>
+## 85. 接续更新后的理论：分类未定时，生成方向仍可确定
+
+2026-10-08，依 [Ren 要求在更新后的仓库继续](../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#continue-after-repository-update)。本节接上两个新成果：[共同生成需要保留关系内容](../results/records/relational-generative-comparison.md)，以及[可见未来中有确定正面根据而形态仍开放](../results/records/positive-ground-open-futures.md)。后者已经说明：真实的生生有正面根据，不必先证明一切后果整体严格更好。这个已完成结果直接复用。
+
+上一轮 §84 的停点现在可以缩小。**说明一种新生活的所有基本条件，并不是支持它生成的普遍前提；甚至在一些情境中，也不是形成严格比较与共同组织要求的前提。** 本轮证明后一项更强而有条件的结论。它不把本轮的充分条件反过来设为一切正面理由或合理行动的门槛。
+
+先从同一活动形成新的表达、协作和共同实现讲起。旧内容与新内容是我们对这段展开已经辨认、后来辨认的内容；共同作用本身也可以成为内容，并不还原为各个位置分别可能做什么。G0 为其中生与继续生成提供正面意义；既有 J 原则进一步处理比较。没有共同历史或不会回报认识者，并不从这种正面根据中扣除新生活。
+
+这里剩余的一项不确定性可以很具体：已辨认的某种新表达或参与究竟构成基本生活条件，还是具有正面意义的一般增益？它的实际发生、丧失与生成意义可以先有根据，优先层次仍待辨明。这个局部区分不是事实与价值两域，也不是把新生活变成独立价值所有者；它辨别的是同一关系变化在当前实践比较中的分量。
+
+The updated positive-ground result is already complete: a contributory reason need not await strict whole improvement or a fixed future form. This continuation advances a stronger comparison question. Newly recognized contents belong to one unfolding, including joint capacities, and have supplied generative correspondence. Their priority tier alone remains unsettled. Neither reciprocity nor membership in the present organization is a premise of their positive significance.
+
+## 86. 分类稳健比较：两个端点足以覆盖混合分类
+
+固定所比较的两种接续 A、B，以及已经有根据的旧基本条件 P、一般增益 G 和新内容 F。分类假设 q 将 F 中的一部分列入基本条件，其余列入一般增益；同一内容在一次比较中含义不变，也不被在两层重复登记。旧内容的地位在这个定理中保持不变。具体作用或内容含义也发生变化的情形，需要另外说明对应，不能冒用本结果。
+
+令 Bq(A,B) 表示按该分类使用既有 J1/J2 的严格比较：基本保护严格扩大，或基本保护相同而一般增益严格扩大。Lean 检查了如下**充要条件**：
+
+\[
+\bigl[\forall q,\ B_q(A,B)\bigr]
+\quad\Longleftrightarrow\quad
+\bigl[F(B)\subseteq F(A)\bigr]\ \land\
+\bigl[\operatorname{Better}(P,G\cup F;A,B)\bigr].
+\]
+
+这里的并只是旧、新内容的分域登记，不是可加效用。右侧第二项把新内容暂全列为一般增益。等价地，只需检查两个端点：**把新内容全部视为一般增益时 A 优于 B；把它们全部视为基本条件时 A 仍优于 B。二者同时成立，就保证每种混合分类都支持 A。** 新内容集合不必有限。
+
+证明的关键是实际保留。全列基本的端点保证 A 没丢掉 B 已有的新内容。全列一般的端点提供严格改善。如果改善来自已知基本条件，就在任何混合分类下保留这个根据。如果基本条件相同而改善来自新、旧增益，那么分类后要么已有一项新基本改善，要么基本内容两边相同、严格增益仍落在一般层。严格改善不会仅因分层改变而消失。
+
+所以可以有两类明确的正面进展：保留已有内容并形成新的共同生活，无须先判完新内容的基本地位；恢复已知基本条件并保留新内容，也可以承担 J2 原范围内的一般损失。后一种并非无代价规则。反过来，有真实损失时，两端点不一定都成立；本定理没有给全部情况排好序。
+
+这项等价针对所有 q 构成的保守数学范围。现实中有根据的分类可能只占其中一部分；通过全范围检查是充分证据，未通过却不证明现实比较失败。我们没有断言每个任意 q 都是实际可能或伦理上恰当的解释，更没有靠任意翻转谓词反驳完整的一元理论。
+
+The exact theorem concerns fixed meanings and the existing two-tier inclusion comparison. Agreement at the all-secondary and all-basic endpoints entails agreement at every mixed assignment, without finiteness of the fresh domain. This is one theorem family, not a new moral axiom. The full predicate family is a conservative test space; failure there does not defeat a narrower warranted family or every reasonable action.
+
+## 87. 接到共同生成与组织形成
+
+新的关系成果已经构造了同一事件法则：保留与解除一种耦合，各单项可能性完全相同，但解除会失去共同实现两项内容的可能性。本轮直接取其中真实共同能力的严格扩展，接入分类稳健命题：**在本例保留的旧条件、明确的正面解释及损失覆盖下，共同生成能力的改善，不必等待它被最终分类为一般好或基本条件。** 这是已实查的模块间连接，不是另造一个同名例子。
+
+本例的共同可能性仍不是实际共同实现，也不独自证明现实成本已被覆盖；原反例保留。它支持的是一种实际能力的条件比较，不支持“任何耦合都应该保留”。
+
+再接入 §79 的组织形成命题：在有限非空且有实践根据的候选范围内，如果每种缺少关系 R 的接续，都能由另一种保留新内容、并在全列一般增益时更好的合格接续改善，那么**每一种新内容分类下，所有未被击败的选择都包含 R**。这一步同样通过 Lean 实查。
+
+得到的对齐方向比“对陌生生活保持开放”更具体：**智能可以依据已经辨明的生成之善，主动形成共同能力；当改善关系足以排除缺少这种能力的候选时，这种形成可以成为实践要求，即便对新生活的优先分类尚未完全确定。** 机构扩大、共同记忆增长或行动能力增强，都可属于这样的形成；尺度本身不决定好坏。
+
+The existing joint-profile result supplies the strict fresh-content extension. The new criterion supplies comparison under each classification. In turn, the existing finite organizational theorem consumes these improvement witnesses and yields a required role under every classification. Practical eligibility remains justified through the actual whole continuation, not by an independent permission flag. The result warrants a role; its next section tests whether it also selects one implementation.
+
+## 88. 再推进一步：确定作用，不等于已经确定同一个方案
+
+**第一个实查边界是有代价的新形成。** 一种重组获得新内容、失去一个已有的一般机会，其余基本条件相同。若新内容属于一般增益，新旧好交叉，既有偏序不给出严格优越；若它属于基本条件，J2 支持这项形成。失去的机会在两种比较中都没有消失。这说明有些比较确实需要继续辨明新生活的作用；也没有把“不足以严格比较”偷换成“不能行动”。
+
+**第二个边界更强。** 同一形成情境有“不形成、经甲形成、经乙形成”三条接续。甲、乙分别开出一种正面内容，各自相对不形成都构成稳健改善。Lean 证明：每种分类都要求形成；但将甲内容列基本、乙内容列一般时，甲严格占优，反向分类时乙严格占优。因此不存在一个方案在全部分类下都未被击败。
+
+这精确限制了量词：
+
+\[
+\forall q,\;\text{该分类下的未被击败选择都形成 R}
+\quad\not\Rightarrow\quad
+\exists a\;\forall q,\;\text{a 在该分类下都未被击败}.
+\]
+
+它反驳的是“作用已经有根据，所以同一个具体方案也已跨分类确定”的推论。那些不同分类只是强统一结论的检验假设；这里没有证明现实中的完整生活内容允许任意分类，也没有发现完整生成伦理的反例。适时调查、实际生活关系的进一步辨明，以及既有风险与有界实践判断继续适用。
+
+**本轮真正停在这个加强处：当尚有根据保留的分类对具体方案产生不同优先，而当前生成关系说明还不能消除这个差别时，不能再由方向或作用的确定性推出该同一方案。** 需要补的是这场真实取舍中会改变决定的生活作用与根据，或采用公开而有辩护的进一步比较承诺。不是再证明 G0，不是一般的机构授权之墙，也不是要求先完成所有陌生生活的分类。
+
+本轮[成果记录](../results/records/classification-robust-generative-comparison.md)对应13项新 Lean 定理声明／25项具名审计，73项继承定理／144项审计分列；含辅助引理、应用及边界，不计为13条独立伦理原则。[实查回执](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/classification-robust-judgment-verification.json)绑定源码；[研究与作者反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#classification-robustness-account)说明前提。无新经验验证或独立 agent 验收。
+
+A checked three-route construction satisfies the required-role conclusion for every classification but has no common undefeated implementation across all classifications. This tests a stronger quantifier inference, not the full ethical account. The remaining task is decision-relevant substantive correspondence in actual disputed cases, with timely inquiry and existing practical principles still available. Neither positive support nor the established role requirement waits for that stronger implementation claim.

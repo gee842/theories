@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F09",
-  "reviewed_at_utc": "2026-10-08T13:21:00.795254+00:00",
+  "reviewed_at_utc": "2026-10-08T13:41:46.812488+00:00",
   "claim": {
     "zh": "指定空间关系与有支持的移动／命名史产生已有绑定构造的精确解释输入，因此其任意有限编码序列的解释结果继续成立；另外有实际响应及访问、保留、时序失败见证。",
     "en": "The specified spatial arrangement and supported movement/naming history produce the previous binding construction’s exact interpretation inputs, preserving interpretation of every finite encoded sequence; separate witnesses cover actual response and access, retention and timing failures."
@@ -96,7 +96,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
       "role": "integration",
-      "sha256": "84563b2f7e85bcc4519ce17d139bee0bc61251e3570df1de025a143760ca1b60",
+      "sha256": "ae2a57df8613a5a0919d1a14ac620442b34f3e22e89ce82ebde19eda586b2e35",
       "declarations": []
     }
   ],
@@ -110,13 +110,17 @@
     }
   ],
   "next_delta": {
-    "zh": "接通产生经历的探究与沟通行动的选择和修订；复用已有探究及方法形成，不重建泛型更新机制。",
-    "en": "Connect selection and revision of exploratory/communicative actions that produce encounters; reuse existing inquiry and method formation rather than rebuilding a generic updater."
+    "zh": "复用 encounter-selection-and-revision：取得的访问与歧义现接通实际选择及新学习；下一连接是维持覆盖的选择性注意与相互沟通协调的发育对应。",
+    "en": "Reuse encounter-selection-and-revision: acquired access and ambiguity now enter actual selection and further learning. Next is developmental correspondence for selective attention and reciprocal communicative coordination sustaining coverage."
   },
   "history": [
     {
       "zh": "2026-10-08：由实际移动计算可取得候选，并正式接通已检查的绑定解释；动作选择与类别形成的前提保留。",
       "en": "2026-10-08: computed accessible alternatives from actual movement and formally joined the checked binding interpretation; action-selection and category-formation premises remain."
+    },
+    {
+      "zh": "2026-10-08：核读原研究第14–16节；选择经历及访问预测修订的新连接已实查，原证明范围不变，未宣告完整心理解释。",
+      "en": "2026-10-08: reviewed study sections 14–16; encounter selection and access-prediction revision now have a checked connection. This proof’s original scope remains unchanged; no complete psychological explanation is claimed."
     }
   ]
 }

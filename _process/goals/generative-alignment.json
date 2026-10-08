@@ -24,10 +24,26 @@
   },
   "sources": [
     "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
-    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#current-generative-alignment-priority"
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#current-generative-alignment-priority",
+    "sources/15-codex-theory-conversations/2026-10-08-readme-research-progress-and-push.md"
   ],
   "result_ids": [
     "alignment-direction-g0-j",
-    "practical-judgment-g0-j"
-  ]
+    "practical-judgment-g0-j",
+    "open-form-realization-under-revision"
+  ],
+  "overview": {
+    "title": {
+      "en": "Advancing AI alignment",
+      "zh": "推进 AI 对齐"
+    },
+    "summary": {
+      "en": "The framework makes the purposes of intelligence, and the rules by which those purposes are formed and revised, objects of ethical evaluation. It can assess human instructions, institutional objectives and AI goals against actual living and further shared generation. The direction argument is complete at its explicit-axiom scope; checked local results also connect rule revision to actual generation while allowing the realized form to change.",
+      "zh": "框架使智能的目的及目的形成、修订的规则都成为伦理评价的对象。它以真实的生及进一步共同生成评价人类指令、机构目标和 AI 目的。方向论证已在显式公理范围内完成；经检查的局部成果也将规则修订接到实际生成，同时允许实现形态改变。"
+    },
+    "next_step": {
+      "en": "Develop situated ways to recognize ethically relevant relations and preserve warranted reasons through learning, changed purposes and action. Test actual correspondence and implementation in concrete cases; normative applicability does not guarantee behavioral convergence.",
+      "zh": "发展辨认伦理相关关系的具体方式，使有根据的理由在学习、目的改变和行动中保持作用；在具体案例中检验真实对应与实施。规范适用不保证行为趋同。"
+    }
+  }
 }

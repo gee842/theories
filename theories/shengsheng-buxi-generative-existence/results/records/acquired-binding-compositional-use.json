@@ -3,7 +3,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F09",
-  "reviewed_at_utc": "2026-10-08T13:21:00.795254+00:00",
+  "reviewed_at_utc": "2026-10-08T13:41:46.812488+00:00",
   "related": [],
   "id": "acquired-binding-compositional-use",
   "title": {
@@ -95,7 +95,7 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-SEGMENTATION-INTEGRATION.md",
       "role": "integration",
-      "sha256": "84563b2f7e85bcc4519ce17d139bee0bc61251e3570df1de025a143760ca1b60",
+      "sha256": "ae2a57df8613a5a0919d1a14ac620442b34f3e22e89ce82ebde19eda586b2e35",
       "declarations": []
     }
   ],
@@ -109,8 +109,8 @@
     }
   ],
   "next_delta": {
-    "zh": "复用新接通的 enacted-scene-binding：空间关系与给定移动／命名安排现能生成本结果的记录输入；下一连接是这些探究与沟通安排的选择和修订，分类与注意发育仍未完成。",
-    "en": "Reuse enacted-scene-binding: spatial relations and supplied movement/naming schedules now generate this result’s record inputs. Next is selection and revision of those exploratory/communicative schedules; category and attention development remain incomplete."
+    "zh": "复用 encounter-selection-and-revision：取得的访问与歧义现接通实际选择及新学习；下一连接是维持覆盖的选择性注意与相互沟通协调的发育对应。",
+    "en": "Reuse encounter-selection-and-revision: acquired access and ambiguity now enter actual selection and further learning. Next is developmental correspondence for selective attention and reciprocal communicative coordination sustaining coverage."
   },
   "history": [
     {
@@ -120,6 +120,10 @@
     {
       "zh": "2026-10-08：审读原研究第11–13节，新空间接触史正式供给原绑定输入；本记录的证明和原范围未变，下一连接更新。",
       "en": "2026-10-08: reviewed study sections 11–13; a spatial encounter history formally supplies the original binding inputs. This record’s proof and scope are unchanged; the next connection is updated."
+    },
+    {
+      "zh": "2026-10-08：核读原研究第14–16节；选择经历及访问预测修订的新连接已实查，原证明范围不变，未宣告完整心理解释。",
+      "en": "2026-10-08: reviewed study sections 14–16; encounter selection and access-prediction revision now have a checked connection. This proof’s original scope remains unchanged; no complete psychological explanation is claimed."
     }
   ]
 }

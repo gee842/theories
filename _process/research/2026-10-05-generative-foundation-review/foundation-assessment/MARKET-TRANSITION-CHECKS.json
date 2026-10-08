@@ -1,0 +1,113 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T13:29:23.199001+00:00",
+  "new_theorems": 27,
+  "new_audits": 35,
+  "inherited_theorems": 96,
+  "inherited_audits": 118,
+  "source_receipt_bindings": "current and frozen sources, checker and logs match",
+  "owned_links": [
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "target": "../../../../experiments/market-generativity/formal/RegimeTransition.lean"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "target": "../../../../experiments/market-generativity/formal/transition-verification.json"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#supported-finite-transition"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md",
+      "target": "../../../experiments/market-generativity/formal/transition-verification.json"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md",
+      "target": "../results/records/market-supported-finite-transition.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md",
+      "target": "../results/records/market-protected-continuation.md"
+    },
+    {
+      "source": "experiments/market-generativity/formal/README.md",
+      "target": "RegimeTransition.lean"
+    },
+    {
+      "source": "experiments/market-generativity/formal/README.md",
+      "target": "transition-verification.json"
+    },
+    {
+      "source": "experiments/market-generativity/formal/README.md",
+      "target": "transition-verification"
+    },
+    {
+      "source": "experiments/market-generativity/formal/README.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#supported-finite-transition"
+    },
+    {
+      "source": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#supported-finite-transition"
+    }
+  ],
+  "selected_registry_errors": [],
+  "selected_source_drift": [],
+  "m20_owned_additions_and_render": "verified; other rows preserved at update",
+  "unrelated_registry_errors": [],
+  "unrelated_registry_drift": [
+    {
+      "id": "organizational-formation-from-generative-comparison",
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "reviewed_sha256": "f0ac8caa838c19196f71bf1861a89846c4f4d6472b958116917ffcaeb1ab88a4",
+      "current_sha256": "c5825f8cd2b3796da906e6e6d49e8c9f2147e1b2e9763f673d7c50d4fc33a8a2"
+    },
+    {
+      "id": "organizational-formation-from-generative-comparison",
+      "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "reviewed_sha256": "311b9e423cf1a6956373bc0ab187ce9b266a4258f058fa61aa7423886c96b14d",
+      "current_sha256": "f035ccb95f6c49c4e89e538e023c1a58cfe6d28f21b520d3b36e0de00c36581d"
+    },
+    {
+      "id": "wisdom-root",
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+      "reviewed_sha256": "a0e5661c4d587866403ca200f498cb36b2a897bdad461d6440047b249eb6728f",
+      "current_sha256": "759243aa3f4a932451df9cd596170f1e2a48792bb7a8588ea871e908053133f8"
+    }
+  ],
+  "current_chain_metadata_errors": [
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/multivalued-joining-common-structure.json",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/organizational-formation-from-generative-comparison.md",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/situated-recovery-empirical-correspondence.md",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/transition-grouping-word-partition.md",
+    "Unversioned source: theories/shengsheng-buxi-generative-existence/results/records/multivalued-joining-common-structure.json"
+  ],
+  "pending_unrelated_chain_versions": [
+    "RESEARCH.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+    "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+    "theories/shengsheng-buxi-generative-existence/README.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+    "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+    "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CHOICE-AND-GENERATIVE-CONTEXT.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+    "sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RISK-CONDITIONING-INTEGRATION.md"
+  ],
+  "scope": "Scoped documentary and receipt checks, not a new proof run or whole-repository acceptance. Concurrent organization, wisdom, inquiry and registry work retains independent scope."
+}

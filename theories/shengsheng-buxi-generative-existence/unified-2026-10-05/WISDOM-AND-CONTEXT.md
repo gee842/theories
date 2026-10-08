@@ -1,5 +1,7 @@
 # 智慧、情境与共同核心 / Wisdom, context and the common core
 
+**当前方向：道德判断becoming / Current direction: morality judges becoming，2026-10-08。** [Ren纠正](../../../sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md#morality-judges-becoming)及[第13节](#morality-and-universal-generative-principles)明确正面路线：以已有普遍生成评价原则判断实际变化；不同回应和不显式循原则，不独自否定共同规范根据。
+
 **理由约束的实质对照 / Substantive comparison of reason constraints，2026-10-08。** [第12节](#reason-constraints-and-rivals)接入[具体文献与原案例比较](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#substantive-rival-comparison)，区分保留关系、换表述及普遍根的争议。/ Contextual judgment can retain particular constraints while disputing a necessary general basis. This is interpretive work reusing checked results, not a new proof.
 
 **智慧的分化与整个根 / Differentiated wisdom and the whole root，2026-10-08。** [第11节](#wisdom-scope-and-root)接入[独立内容与替代解释比较](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#wisdom-scope-and-whole-root)：具体判断、形成的能力与完整解释各有范围。/ The common-root candidate must explain differentiated standards and their connections; this philosophical continuation adds no theorem and leaves the full root open.
@@ -151,3 +153,18 @@ This interpretive audit adds no mathematical proof or empirical experiment. Exis
 共同根的正面任务，是说明这些关系如何形成、相连并支持新判断。局部有理由并不自动证明必须有某一组普遍原则；对手也不因承认情境关系就接受整个core。G0/J/E路线继续使用，已完成形成和实践论证继续复用。下一检验针对理由关系跨情境接续的根据，避免只凭相似特征移植答案。
 
 This continuation reuses the checked goal-ground and risk results without adding mathematical claims. Particular constraints, their applicability, evidence and execution remain related but distinct explanatory roles. The selected rivals retain substantial content; the disputed step is the necessity of the full common generative/normative basis. Whole-root necessity and universal discovery remain open.
+
+<a id="morality-and-universal-generative-principles"></a>
+## 13. 道德、becoming与普遍生成原则 / Morality, becoming and universal generative principles
+
+[Ren指出](../../../sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md#morality-judges-becoming)，道德依赖我们的普遍原则，因为它判断becoming，而模型能够判断becoming。[主研究第14节](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#morality-as-judgment-of-becoming)据此修订上一轮的论证优先级。
+
+同一展开中的活动形成后果、改变后续条件，也形成认识、评价和修订。普遍原则评价这些实际变化，因此可以支持情境不同的回应。判断者不显式表述原则，不能独自说明其判断没有共同根据；本理论应直接说明G0/J怎样给出该根据及范围。
+
+这里的生成后果按既有完整历史要求保留过程、实际损失、形成的依存与承担、共同实现及后续可能性。仅有一个有利终点不能抹去其中的损害；未知全部未来也不阻止在当前有根据范围内辨认正面生成内容。G0的正面公理、J／C的比较和实践承诺、E的实际对应分别明示；它们是同一生成理论的不同解释工作。
+
+已有目的评价结果说明同一固定规则如何因真实损失关系不同而支持保留或改变；`relational-generative-comparison`表明单项可能性相同仍可遗漏伦理比较所需的共同关系；`positive-ground-open-futures`表明正面根据可确定而生成形态仍开放。主研究给出原证明及条件，本节不重计这些结果或宣称新的数学组合。
+
+本轮正面路线是从生成关系及共同评价根据推导有内容的道德判断，检验它对道德智慧的覆盖，并接通已完成的形成、认识与修订。历史表达的重合是待检验的解释效果；其他智慧范围仍有独立的覆盖责任。完整根目标保持开放，继续沿已授权公理路线，不以Dancy认可或无前提证明G0为门槛。
+
+**English.** Universal generative principles can appraise changing relations and support different situated responses. Tacit judgment does not establish independence from normative grounds. The existing G0/J route, relational comparison and positive open-future results are reused with their exact assumptions; no new theorem or complete wisdom-root proof is claimed.

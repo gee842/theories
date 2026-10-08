@@ -220,3 +220,37 @@ NP 保持原有的局部候选范围。**校准“足够接近平等”之前，
 现在已经确定：上一轮的静态相容性见证不足以完成规则自我修订的对齐，必须补上根据在变化中的接续。余下的实质任务仍是：在已明确当前支持、阶段及有效历史的案例里，论证有损分担的力度和范围。P、M 的最优性尚未成立；不能让新的动态诊断冒充已经完成的伦理校准。
 
 The static-to-sequential extension has now been tested and fails for the unqualified quadratic diagnostic. The next substantive comparison must fix current support, decision stage and continuing history before justifying a costly-sharing range. No best lottery, empirically calibrated NP neighborhood or completed universal grounding follows.
+
+<a id="open-form-realization-under-revision"></a>
+
+## 17. 开放的未来怎样实际形成 / Realizing an open future
+
+2026-10-08接续。新版[可见未来中的正面根据](../results/records/positive-ground-open-futures.md)已经完成一个重要推进：同一个回应，在每段当前有根据的接续中形成某种新的生，便可依显式 G0 在每段接续中有正面根据；不必先指定所有接续都出现同一种形态，也不必证明整体严格更好。这里直接复用这一结论。前节尚未完成的有损分担校准保留其范围，不能再把它当作一切正面伦理判断的门槛。
+
+接下来需要区分两项主张：**每次选到的路线单独持续下去能够实现某种生成，与不断修订路线的实际历史能够实现某种生成。** 后者不由前者自动得到。两者谈的是同一共同活动：已形成的准备、接下来的安排、路线修订和实际成果都在其中发生；“路线”是活动的组织方式，不是一个外部主体支配的独立世界。
+
+新的受检反例只有两个准备阶段。甲路线先把第一阶段推进到第二阶段，再形成甲成果；乙路线先把第二阶段推进到第一阶段，再形成乙成果。每条路线单独持续最多两步便完成，每个实际采取的步骤也确实推进了当时那条路线。但是，在第一阶段总选甲、到了第二阶段又总改选乙，就可以永远在准备阶段之间往返。每次宣称“再两步就能形成”，可以始终局部属实，却没有任何成果实际形成。
+
+这不是说一切准备都没有价值。反例中的“尚未形成”只针对指定的完成事件；若准备本身已形成真实能力、关系或生活内容，其正面意义应另行如实计入。失败的是把逐次的完成前景直接当作整段活动的完成保证。
+
+The completed positive-ground result allows the form of future generation to remain open. A new checked counterexample shows that individually terminating rules, even with progress at every executed step under its current rule, can fail forever when revised. This concerns a specified realization claim; it does not deny the possible value of preparation itself.
+
+## 18. 修订可以改变形态，同时接过已有进展 / Revision can retain progress and change form
+
+一条已经实查的充分途径是：**新路线接过当前实际阶段的剩余实现要求，而不是重新取得一份完整期限。** 具体地，为所声称的有限实现界限提供一个自然数证书。只要尚未完成，当前路线的实际步骤须使证书下降；换用下一条路线时，对已经到达的同一阶段，新证书不得高于旧路线此时的证书。这个数是剩余步数的证明工具，不是善、复杂性、风险或人的分数。
+
+这个接口直接接入已完成的[有限更新证明](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-RENEWAL-MATH.md)。初值不超过 B 时，在编号0至 B的某个事件上完成；若每个编号代表一次实际转变，就是至多 B+1次转变，不是未经对应的钟表期限。再明确完成事件实际形成新的生成内容，这个输出便满足既有正面根据定理的输入，依 G0取得某项正面根据。活动确实发生、支持足够、所见范围覆盖实际情形，以及完成与生的对应仍须成立。
+
+新构造也检查了真正改变成果的修订：走过甲路线的第一步后，改走一条当前一步即可形成乙成果的路线。剩余证书仍为1，形成内容却由甲变为乙。因此，保留实现根据不要求冻结最初方案或唯一未来。若先前正当承担的恰恰是甲成果，乙成果是否能够接替，仍由实际承担内容决定；“都属于生成”不足以取消其差别。
+
+A sufficient interface hands the remaining realization certificate between rules along the same history. Current-rule progress and a non-increasing handoff feed the existing finite-renewal theorem; actual generative correspondence then supplies the premise of the existing G0 positive-ground theorem. A checked revision changes the realized form while satisfying the interface. The certificate measures the stated bound, not ethical value, and it does not authorize replacing a specifically owed outcome.
+
+## 19. 对选择规则自身对齐的意义 / Implication for aligning revisable rules
+
+由此可以更准确地说，**生成方向可以保持，而具体目的和形成方式可以修订；但若还声称修订后的活动会实现某项善，就须说明实现根据怎样跨过这次修订。** 每次找出一个更吸引人的未来，不能独自完成这一说明。上节的证书交接是一条已经证明的充分途径，并非所有正当修订的必要形式。发现原路线失实，可能正应撤回原保证、改变范围并重新说明承担，不能为了保持证书而坚持错误。
+
+这也不把生生收缩成强制生产。持续的生活、照护、休息、关系和已经形成的开放能力可以有当下的正面意义，不必永远靠下一件产品才获得价值。有限完成界限只适用于明确提出的有限实现主张。开放探索未必具有这种保证，仍可依实际根据得到支持；所得正面理由也不独自决定损失的许可、风险分担或最终行动。
+
+[同一研究中的论证、反审与来源评估](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RISK-CONDITIONING-INTEGRATION.md#open-form-realization-under-revision)及[规范成果记录](../results/records/open-form-realization-under-revision.md)保存这项组合的准确范围。新增10项 Lean 定理／19项声明审计通过，继承的98项定理／185项审计另列，不重复算作新理论成果。当前接通的是“开放形态下的逐次修订→有条件的实际生成→G0正面根据”；真实内容的识别、具体承担是否容许替换及有损分担校准各保留已有成果与尚未完成的范围。
+
+The theoretical gain is a checked connection from revisable realization to positive ground with open forms. It neither imposes universal productivity nor makes guaranteed success necessary for justified exploration. A warranted change may retract a failed certificate. Continuing ethical relations and real losses still govern whether the revised activity should be carried out.

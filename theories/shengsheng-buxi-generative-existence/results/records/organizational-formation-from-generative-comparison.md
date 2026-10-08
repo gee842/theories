@@ -6,7 +6,7 @@
 
 记录源 / Editable record: [organizational-formation-from-generative-comparison.json](organizational-formation-from-generative-comparison.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T12:57:49.049761+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-08T13:33:43.527041+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
@@ -33,6 +33,7 @@ Canonical source: [ETHICAL-LEARNING.md](../../unified-2026-10-05/ETHICAL-LEARNIN
 
 - **formal-reuse**: [practical-judgment-g0-j](practical-judgment-g0-j.md). PracticalJudgment.finite_frontier 与 dominated_excluded 的输出经 formation_required_of_improvable_absence 接成 Required；规范解释继承公开 J 承诺。 / PracticalJudgment.finite_frontier and dominated_excluded feed formation_required_of_improvable_absence to produce Required; normative interpretation inherits the explicit J commitments.
 - **interpretive**: [alignment-direction-g0-j](alignment-direction-g0-j.md). 复用已完成的跨智能方向，推进组织形成的具体条件。 / Reuses the completed cross-intelligence direction to advance the conditions of organizational formation.
+- Related, not a proved adapter / 关联而非已证转换: [classification-robust-generative-comparison](classification-robust-generative-comparison.md). 后续分类稳健命题补足一类未定分类下的改善输入；不替换原组织结果。 / The later robust-classification result supplies improvement inputs in unsettled cases without replacing the original organizational result.
 
 ## 来源与既有回执 Sources and existing receipts
 
@@ -48,10 +49,11 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 ## 复用与下一增量 Reuse and next delta
 
-在新形成且无法直接借用已知生活内容的情境中，落实既有后天基本条件原则的实质对应；复用组织命题，不重开一般责任或旧授权之墙。 / Establish substantive application of acquired-basic-condition principles where newly formed living contents cannot be borrowed from a known case; reuse organizational warrant rather than reopening general responsibility or the withdrawn authority wall.
+分类稳健比较现已接通一类基本地位未定的形成要求，直接复用新成果。具体方案因真实生活作用分类而改变时，仍需落实会改变决定的实质对应；不把全部陌生生活分类设为建设前提。 / Robust classification now supplies formation requirements in a class of unsettled-basic-status cases; reuse the new result. Where living-role classification changes implementation, establish decision-relevant substantive correspondence without requiring classification of all unfamiliar living before construction.
 
 Aliases / 别名: —
 
 ## 沿革 History
 
 - 2026-10-08：接续生成优先纠正，形成有范围的规范推论及新 Lean 组合；迁移该主张为唯一成果身份，历史来源与反例保留。 / 2026-10-08: extends the generative-first correction with a scoped normative argument and new Lean composition; migrates this claim to one result identity while retaining historical sources and countercases.
+- 2026-10-08：核对原理论与研究为保留前缀、共享指示的逆向保留及市场会话新增范围后，接入分类稳健后续并缩小 next_delta；原定理及历史回执不改写。 / 2026-10-08: verified original theory/study prefixes, inverse preservation of the shared directive and the concurrent market-session scope; connected robust classification and narrowed next_delta. Original theorems and receipts are unchanged.

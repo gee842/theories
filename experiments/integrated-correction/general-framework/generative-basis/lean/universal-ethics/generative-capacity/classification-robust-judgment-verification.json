@@ -1,8 +1,8 @@
 {
   "status": "passed",
-  "utc": "20261008T132242.897767Z",
+  "utc": "20261008T132520.713649Z",
   "toolchain": "leanprover/lean4:v4.29.1",
-  "retained_run": "classification-robust-judgment-checks/20261008T132242.897767Z",
+  "retained_run": "classification-robust-judgment-checks/20261008T132520.713649Z",
   "source_sha256": {
     "PracticalJudgment": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
     "ConcernExtension": "ee8e0fb64357fe9d428288aac09bb27c4f046e6ae55f50cdc88e2a445fcefc3f",
@@ -10,7 +10,7 @@
     "JointContinuationClassification": "e508683cc80832744a28f44c69f9c2561701cd099219448b75cfdb474c0786ee",
     "GenerativeComparison": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
     "RelationalGrounding": "9b2319e752ee1b93d4245b1c5fe0a9d1e0758b1caf37282623598ea491e84c87",
-    "ClassificationRobustJudgment": "9eca7e7a7093b17799565bb2f022d34b481ec2f09fc60d22814bea52631b1548"
+    "ClassificationRobustJudgment": "be41162b292e8ee8037c4c493f19af2171b9b23e3e826e7a039f6448ac5e9494"
   },
   "checker_sha256": {
     "check_classification_robust_judgment.py": "032363658e2f131227b69829d8436fd9de9b4da3712800166d5f29cd38755927",
@@ -861,7 +861,7 @@
     },
     {
       "module": "ClassificationRobustJudgment",
-      "theorems": 10,
+      "theorems": 13,
       "declarations": [
         {
           "kind": "def",
@@ -930,6 +930,38 @@
         {
           "kind": "theorem",
           "name": "ClassificationRobustJudgment.classification_can_matter_with_real_loss"
+        },
+        {
+          "kind": "inductive",
+          "name": "ClassificationRobustJudgment.Route"
+        },
+        {
+          "kind": "def",
+          "name": "ClassificationRobustJudgment.routeBasic"
+        },
+        {
+          "kind": "def",
+          "name": "ClassificationRobustJudgment.routeGain"
+        },
+        {
+          "kind": "def",
+          "name": "ClassificationRobustJudgment.routeFresh"
+        },
+        {
+          "kind": "def",
+          "name": "ClassificationRobustJudgment.routeFormed"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRobustJudgment.every_classification_requires_a_formed_route"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRobustJudgment.mixed_classifications_can_favor_opposite_routes"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRobustJudgment.no_route_undefeated_under_every_classification"
         }
       ],
       "axiom_dependencies": {
@@ -979,18 +1011,34 @@
         "ClassificationRobustJudgment.classification_can_matter_with_real_loss": [
           "propext",
           "Quot.sound"
+        ],
+        "ClassificationRobustJudgment.Route": [],
+        "ClassificationRobustJudgment.routeBasic": [],
+        "ClassificationRobustJudgment.routeGain": [],
+        "ClassificationRobustJudgment.routeFresh": [],
+        "ClassificationRobustJudgment.routeFormed": [],
+        "ClassificationRobustJudgment.every_classification_requires_a_formed_route": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ClassificationRobustJudgment.mixed_classifications_can_favor_opposite_routes": [],
+        "ClassificationRobustJudgment.no_route_undefeated_under_every_classification": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
         ]
       },
       "kernel_checked": true
     }
   ],
   "artifact_sha256": {
-    "ClassificationRobustJudgment.lean": "9eca7e7a7093b17799565bb2f022d34b481ec2f09fc60d22814bea52631b1548",
+    "ClassificationRobustJudgment.lean": "be41162b292e8ee8037c4c493f19af2171b9b23e3e826e7a039f6448ac5e9494",
     "ClassificationRobustJudgment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "ClassificationRobustJudgmentAxiomAudit.lean": "79e96d3297808c5119cdacda7312941491e54914d91751585919b0937c2c9fe0",
-    "ClassificationRobustJudgmentAxiomAudit.log": "5a82c72d26562413c8d231e53e3ded3146220150253077a75cb9ab91a9fbb6ea",
-    "ClassificationRobustJudgmentSignatures.lean": "5ee871567178585feb4101e1ba621637c3085e29a9da682a9e2acad2de820112",
-    "ClassificationRobustJudgmentSignatures.log": "a94a16f35f7fdfea41bb15f08c4b1822d4c83b63b98e7a4838b5914bbe202ef9",
+    "ClassificationRobustJudgmentAxiomAudit.lean": "189d9ba5e7f6dffab6d82a41569ab7024e86c0de7280d8861eb48ca559aad580",
+    "ClassificationRobustJudgmentAxiomAudit.log": "daf8db5b70a6ca15c2ee1f5bebda9e8798db59245a05e3d785fb41bdbdd49a2c",
+    "ClassificationRobustJudgmentSignatures.lean": "98f455f8569396c18b1665e340b154d142a16cd3d48356a1ba28fee3641dc575",
+    "ClassificationRobustJudgmentSignatures.log": "c6ea7767e7147c22fff9cbfb0c71c3d926f8e83fdc16261c13d48513e9c198d3",
     "ConcernExtension.lean": "ee8e0fb64357fe9d428288aac09bb27c4f046e6ae55f50cdc88e2a445fcefc3f",
     "ConcernExtension.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "ConcernExtensionAxiomAudit.lean": "349ac4f11e78db07c637401d0f5838c36afa55ca29895e18945d96f15d5558d0",

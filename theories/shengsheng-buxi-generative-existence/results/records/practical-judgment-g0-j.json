@@ -98,6 +98,11 @@
       "role": "provenance",
       "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
       "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-universal-metaethics-name-and-readme.md",
+      "role": "provenance",
+      "sha256": "9e180ec00c808e708005c29c19179db09938c8aff15e01c38ad8d2b34507762a"
     }
   ],
   "proof_bindings": [
@@ -117,6 +122,24 @@
     {
       "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
       "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+    },
+    {
+      "en": "2026-10-08: added the English-first leading summary requested by Ren under the title Universal Meta-Ethics of Agency. Reuses this result and its existing evidence; no new theorem, proof run or stronger completion claim.",
+      "zh": "2026-10-08：按 Ren 要求，在 Universal Meta-Ethics of Agency 名称下新增以英文为主的前置摘要。复用本成果及既有证据；无新定理、编译或更强完成声明。"
     }
-  ]
+  ],
+  "overview": {
+    "title": {
+      "en": "General practical judgment with real losses and bounded responsibility",
+      "zh": "保留真实损失与有界责任的一般实践判断"
+    },
+    "summary": {
+      "en": "G0 with explicit J1–J4 commitments supports preservation, transformation, effective transfer and appropriate ending. The principles recognize generative gains, protect basic living conditions, retain actual losses, and differentiate responsibility through justified undertakings, dependence, authority and feasible response. They provide a partial ordering and bounded practical requirements; crossed basic losses may remain incomparable. J1–J4 are disclosed additional commitments, not consequences of G0 alone.",
+      "zh": "G0 加公开的 J1–J4 承诺支持保留、转化、实际交接与适当结束。原则承认生成增益、保护基本生活条件、保留真实损失，并按正当承担、依存、权限与可行回应区分责任。它们提供偏序和有界实践要求；交叉基本损失可以不排序。J1–J4 是明示的附加承诺，并非单由 G0 推出。"
+    },
+    "evidence": {
+      "en": "30 Lean theorems and 46 declaration audits, with independent acceptance of the general-principles scope. The formal package checks implications of the supplied normative and correspondence premises.",
+      "zh": "30项 Lean 定理及46项声明审计，一般原则范围获独立验收。形式包检查给定规范与对应前提的后果。"
+    }
+  }
 }

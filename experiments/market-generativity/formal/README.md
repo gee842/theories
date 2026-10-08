@@ -108,3 +108,26 @@ The two neighborhoods are relative to the physical state domain. With r≥0, H's
 The low projection's infinite limit is not an endlessly operating full economy: its essential support fails first. Failure is absorbing under the supplied guard; future replenishment, entry or changed laws would require their own representation. No complete basin surface, all-parameter stability, real-state extension, critical exponent, spectral bifurcation or empirical calibration is claimed.
 
 [The stationary-branch figure](figures/regime-fixed-states.png) marks local behavior only at beta=1/2. [Its program](plot_regime_states.py) uses Matplotlib and creates PNG/SVG plus a [provenance record](figures/regime-fixed-states.json); no simulated history is used. For this run Matplotlib was installed in an isolated temporary environment outside the repository, with no global dependency change. The [theoretical integration and counterreview](../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#attraction-and-support-coupling) distinguishes the actual support relation, normative appraisal and next empirical correspondence.
+
+
+<a id="checked-supported-transition"></a>
+## Checked finite transition with support
+
+[RegimeTransition.lean](RegimeTransition.lean) imports the original market, boundary and attraction modules. Run `python3 experiments/market-generativity/formal/check_transition.py` from the repository root. The [receipt](transition-verification.json) freezes four sources, the audit and five logs in [transition-verification](transition-verification). Lean 4.29.1 checks **27 new theorems / 35 named declarations** and separately rebuilds **96 inherited theorems / 118 declaration audits**. Only standard logical axioms are allowed; no unproved declarations, native decision shortcuts or warnings pass the checker.
+
+All states and costs are rational. The supplied intervention changes only beta from 1/2 to 0 for a finite pulse, with an additional constant support consumption cost≥0 each step. It leaves the evolving x, q, w, monetary reserve and support stock intact. Its formation and actual institutional implementation are premises, not derived here.
+
+| Declarations | Exact contribution |
+|---|---|
+| positive_seed_finite_landing | Every physical initial state with x>0 reaches x≥3/4, q≥1/2, w≤1/4 in finite pulse time. No initially favorable profit gap is required. |
+| ready_after_three, growth_below_target, influence_relaxes | Actual quality recovery, positive-share growth and influence relaxation deliver the landing condition. |
+| cover_formula, remaining_cover | K₀=5, Kₙ₊₁=(10/9)(Kₙ+1+cost). Initial stock≥K_N keeps each t≤N above K_(N−t)≥5. This is sufficient, not minimal. |
+| pulse_coupling_history, pulse_prefix_executes | Exact correspondence with original full State and every guarded pulse step, including monetary payment and extra support use. |
+| landing_supplies_safety, supported_finite_transition | The actual arrived state supplies the inherited Safe certificate. After withdrawing the pulse and extra burden, the original beta=1/2 guarded history continues forever. No resource reset occurs at handoff. |
+| zero_seed_never_lands | This share law lacks an entry mechanism: x=0 cannot be restored by the pulse. |
+| share_history_upper, no_uniform_pulse_duration | x_N≤(3/2)^N x₀; no fixed N guarantees landing for all positive seeds. |
+| too_late_even_without_extra_cost | At (x,q,w,C)=(1/100,1/3,1,5), even immediate beta=0 with zero extra burden triggers first-step guarded failure; computed support is 353/100. |
+
+The finite intervention horizon exists before the support cover is selected. The theorem does not claim that a given actual endowment is sufficient, that this is a least-cost policy, or that every positive state recovers under unchanged beta=1/2. The full recovery boundary, empirical calibration, partial interventions, discrete extinction/entry and formation of the correction remain separate questions. It proves protection after withdrawal, not a new all-state convergence result.
+
+[Chinese/English integration and substantive counterreview](../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#supported-finite-transition) explain the link to degeneration, meta-attraction and generative alignment. The result reuses the established normative argument and does not derive an ethical verdict from stability.

@@ -8,6 +8,14 @@
 
 Documentary review UTC: `2026-10-08T12:31:53.854610+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
+## Overview / 首页摘要
+
+**保留真实损失与有界责任的一般实践判断 / General practical judgment with real losses and bounded responsibility**
+
+G0 加公开的 J1–J4 承诺支持保留、转化、实际交接与适当结束。原则承认生成增益、保护基本生活条件、保留真实损失，并按正当承担、依存、权限与可行回应区分责任。它们提供偏序和有界实践要求；交叉基本损失可以不排序。J1–J4 是明示的附加承诺，并非单由 G0 推出。 / G0 with explicit J1–J4 commitments supports preservation, transformation, effective transfer and appropriate ending. The principles recognize generative gains, protect basic living conditions, retain actual losses, and differentiate responsibility through justified undertakings, dependence, authority and feasible response. They provide a partial ordering and bounded practical requirements; crossed basic losses may remain incomparable. J1–J4 are disclosed additional commitments, not consequences of G0 alone.
+
+**Evidence / 证据:** 30项 Lean 定理及46项声明审计，一般原则范围获独立验收。形式包检查给定规范与对应前提的后果。 / 30 Lean theorems and 46 declaration audits, with independent acceptance of the general-principles scope. The formal package checks implications of the supplied normative and correspondence premises.
+
 ## 主张 Claim
 
 G0 加公开 J1–J4 与实际对应，形成保留、转化、实际交接、有限结束及有界责任的一般候选。 / G0 with explicit J1–J4 and actual correspondence supplies a general candidate for preservation, transformation, actual transfer, finite ending and bounded responsibility.
@@ -45,6 +53,7 @@ No dependency on another migrated record is asserted; source imports and supplie
 | review | [PRACTICAL-JUDGMENT-REVIEW.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-REVIEW.md) | — |
 | integration | [PRACTICAL-JUDGMENT-INTEGRATION.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md) | — |
 | provenance | [2026-10-08-result-centered-repository.md](../../../../sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md) | — |
+| provenance | [2026-10-08-universal-metaethics-name-and-readme.md](../../../../sources/15-codex-theory-conversations/2026-10-08-universal-metaethics-name-and-readme.md) | — |
 
 Hashes in the editable record bind the reviewed source versions. The checker does not audit transitive Lean imports or establish premise warrant. / JSON 哈希绑定读过的版本；登记检查不审计全部 Lean 导入，也不证明前提根据。
 
@@ -57,3 +66,4 @@ Aliases / 别名: `Practical judgment G0/J1–J4`
 ## 沿革 History
 
 - 2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。 / 2026-10-08: migrated existing result identity and scope; no new theorem or relocated source.
+- 2026-10-08：按 Ren 要求，在 Universal Meta-Ethics of Agency 名称下新增以英文为主的前置摘要。复用本成果及既有证据；无新定理、编译或更强完成声明。 / 2026-10-08: added the English-first leading summary requested by Ren under the title Universal Meta-Ethics of Agency. Reuses this result and its existing evidence; no new theorem, proof run or stronger completion claim.

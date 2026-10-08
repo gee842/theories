@@ -6,7 +6,7 @@
 
 记录源 / Editable record: [acquired-binding-compositional-use.json](acquired-binding-compositional-use.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T13:21:00.795254+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-08T13:41:46.812488+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
@@ -52,7 +52,7 @@ Hashes in the editable record bind the reviewed source versions. The checker doe
 
 ## 复用与下一增量 Reuse and next delta
 
-复用新接通的 enacted-scene-binding：空间关系与给定移动／命名安排现能生成本结果的记录输入；下一连接是这些探究与沟通安排的选择和修订，分类与注意发育仍未完成。 / Reuse enacted-scene-binding: spatial relations and supplied movement/naming schedules now generate this result’s record inputs. Next is selection and revision of those exploratory/communicative schedules; category and attention development remain incomplete.
+复用 encounter-selection-and-revision：取得的访问与歧义现接通实际选择及新学习；下一连接是维持覆盖的选择性注意与相互沟通协调的发育对应。 / Reuse encounter-selection-and-revision: acquired access and ambiguity now enter actual selection and further learning. Next is developmental correspondence for selective attention and reciprocal communicative coordination sustaining coverage.
 
 Aliases / 别名: `Generative.AcquiredBinding.acquired_binding_and_grouping_compose`
 
@@ -60,3 +60,4 @@ Aliases / 别名: `Generative.AcquiredBinding.acquired_binding_and_grouping_comp
 
 - 2026-10-08：接通取得的分节、由歧义接触形成的绑定和已有组合使用；固定解码被替代，错误与来源判断前提保留。 / 2026-10-08: joined acquired grouping, bindings learned from ambiguous encounters and existing compositional use; replaced the fixed decoder while preserving error and source-judgment premises.
 - 2026-10-08：审读原研究第11–13节，新空间接触史正式供给原绑定输入；本记录的证明和原范围未变，下一连接更新。 / 2026-10-08: reviewed study sections 11–13; a spatial encounter history formally supplies the original binding inputs. This record’s proof and scope are unchanged; the next connection is updated.
+- 2026-10-08：核读原研究第14–16节；选择经历及访问预测修订的新连接已实查，原证明范围不变，未宣告完整心理解释。 / 2026-10-08: reviewed study sections 14–16; encounter selection and access-prediction revision now have a checked connection. This proof’s original scope remains unchanged; no complete psychological explanation is claimed.

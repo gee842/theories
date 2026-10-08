@@ -80,3 +80,14 @@ Ren 要求解释上一轮结论：
 > 请继续
 
 编者说明：[主研究第13节](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#substantive-rival-comparison)落实对替代说明的比较。Dancy、Dewey 的选择、四种解释作用与具体比较均为 AI 展开，不归为 Ren 的原话或已接受的结论。
+
+<a id="morality-judges-becoming"></a>
+## 道德判断becoming，普遍原则为根据 / Morality judges becoming through universal principles
+
+Ren 对上一轮以 Dancy 对照安排主线的明确纠正，原话：
+
+> 不要盲目跟随dancy，道德就是要依赖我们的普遍原则
+>
+> 因为道德考虑的是变化之后的结果，因此它本身是对becoming的判断，而我们的模型可以判断becoming
+
+编者说明：本输入把本会话的正面论证推进到“道德评价生成变化，生成评价的普遍原则支撑具体道德判断”。[主研究第14节](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md#morality-as-judgment-of-becoming)更正上一轮的研究优先级，复用已完成的G0/J路线与生成评价成果。关于完整历史、判断范围和模型对应的展开由AI撰写；这段输入未被改写为Ren已经接受全部细节、所有智慧已被证明或全部模型已被验收。

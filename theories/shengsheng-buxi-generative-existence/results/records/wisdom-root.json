@@ -8,7 +8,7 @@
   "kind": "target",
   "status": "open",
   "family": "F08",
-  "reviewed_at_utc": "2026-10-08T13:11:41.593697+00:00",
+  "reviewed_at_utc": "2026-10-08T13:30:28.072748+00:00",
   "claim": {
     "zh": "待建立：核心不仅约束一般活动，还在所声明范围内构成并解释智慧的实际生成。",
     "en": "Open: establish that the core not only constrains activity but constitutes and explains the actual formation of wisdom at the claimed scope."
@@ -17,15 +17,44 @@
     {
       "zh": "保留获授权的必要关系与生成解释两部分；不能将局部成功条件改名为完整智慧。",
       "en": "Retain both authorized components, necessary relations and generative explanation; local success conditions cannot simply be renamed full wisdom."
+    },
+    {
+      "zh": "按Ren本次纠正，以道德评价becoming、普遍生成原则支撑具体判断为正面路线；G0、J／C、实践解释及真实对应E明示，不以对手认可或无公理证明G0为门槛。",
+      "en": "Following Ren’s correction, pursue morality as appraisal of becoming through universal generative principles. G0, J/C, practical articulation and correspondence E remain explicit; neither a rival’s assent nor axiom-free proof of G0 gates this route."
     }
   ],
   "correspondence": {
-    "zh": "适当把握理由、目的的根据及修订须接入实际形成的关系；区分具体判断、形成的能力与完整解释，并区分同一过程中理由的支持、适用、认识与实行作用。",
-    "en": "Appropriate grasp of reasons, warranted ends and revision must connect to actually formed relations. Distinguish episodes, formed capacities and full explanation, and distinguish support, applicability, recognition and realization roles within one unfolding."
+    "zh": "活动、后果、认识与评价在同一展开中分化。具体回应可以改变，熟练判断可以不显式复述原则；二者不独自反驳共同规范根据。生成评价保留真实历史、共同实现、损失及有根据的未来范围。",
+    "en": "Activity, consequences, knowing and appraisal differentiate within one unfolding. Responses may change and skilled judgment may remain tacit; neither alone defeats a common normative ground. Appraisal preserves actual history, joint realization, losses and warranted future scope."
   },
   "canonical_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
   "aliases": [],
-  "dependencies": [],
+  "dependencies": [
+    {
+      "id": "practical-judgment-g0-j",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "既有G0/J普遍原则解释保留、转化、交接和结束的共同根据；第14节作哲学复用，不新增规范公理或Lean连接。",
+        "en": "Existing G0/J principles explain the common grounds of preservation, transformation, transfer and ending; section 14 reuses them philosophically without a new normative axiom or Lean adapter."
+      }
+    },
+    {
+      "id": "relational-generative-comparison",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "既有C条件下的关系信息必要性支撑模型须保留共同生成差别的论证；不证明全部伦理根基。",
+        "en": "The existing C-dependent information necessity supports retaining joint-generative differences in appraisal; it does not prove the entire ethical foundation."
+      }
+    },
+    {
+      "id": "positive-ground-open-futures",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "既有G0下的正面未来根据表明，生成形态开放与有根据的评价可以并存；不把正面方面升级为最终许可。",
+        "en": "The existing G0-based positive-future ground supports appraisal with open generative form; a positive aspect is not upgraded to final permission."
+      }
+    }
+  ],
   "related": [
     {
       "id": "conditional-foundation-assessment",
@@ -60,8 +89,8 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
       "detail": {
-        "zh": "第12节保留不同智慧内容；第13节落实Dancy、Dewey及原目的评价例的对照。具体约束不独自确立一套必要的普遍根；情境判断与固定的关系敏感规则可保留局部比较，未被排除。",
-        "en": "Section 12 preserves differentiated wisdom; section 13 compares Dancy, Dewey and the existing goal-ground case. Particular constraints do not alone establish a necessary universal basis. Situated judgment and a fixed relation-sensitive rule can retain the local comparison and are not excluded."
+        "zh": "第12节保留不同智慧内容，第13节文献比较留作背景。第14节按Ren纠正，直接展开普遍生成评价路线；不显式循原则或情境变化不独自反驳共同根据。只有变化表示不足以保证伦理对应，完整智慧覆盖仍须说明。",
+        "en": "Section 12 retains differentiated wisdom and section 13 preserves literary comparison as background. Section 14 follows Ren’s correction toward universal generative appraisal. Tacit judgment and changing contexts do not alone defeat common grounds; representing change alone does not secure ethical correspondence or full wisdom coverage."
       }
     }
   ],
@@ -70,14 +99,14 @@
     "en": "The full target remains unproved; sufficient action descriptions need not have a common coarsest sufficient description. Local goal-ground necessity and the limited-judgment scope correction are complete, without becoming a definition of all wisdom."
   },
   "validation_scope": {
-    "zh": "登记开放目标、既有局部证明及第12–13节原典／解释比较。本轮复用已查目的评价结果，无新数学定理或实查；作者反审不冒称独立验收。",
-    "en": "Records the open target, existing local proofs and sections 12–13 primary-text/explanatory comparisons. The checked goal-ground result is reused; this continuation adds no theorem or proof run, and author counterreview is not independent acceptance."
+    "zh": "第14节按Ren纠正接通已有生成评价结果，复用G0/J及已检查的关系比较、目的评价和开放未来结果。没有新增数学定理、Lean组合或独立验收；完整目标保持开放。",
+    "en": "Section 14 follows Ren’s correction and interpretively joins existing generative-appraisal results, reusing G0/J and checked relational-comparison, goal-ground and open-future results. No new theorem, Lean composition or independent acceptance; the full target remains open."
   },
   "references": [
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
       "role": "statement",
-      "sha256": "a0e5661c4d587866403ca200f498cb36b2a897bdad461d6440047b249eb6728f",
+      "sha256": "759243aa3f4a932451df9cd596170f1e2a48792bb7a8588ea871e908053133f8",
       "declarations": []
     },
     {
@@ -97,12 +126,24 @@
       "role": "integration",
       "sha256": "866a74d352d910cfcec2fe581cd596fdba55a84656e519cc6ee91a8d7bf33b97",
       "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md",
+      "role": "provenance",
+      "sha256": "a617f80fc3975a7a4b5a976912b9e082a35d9f753b87e5c9cfe27e432c1662a3",
+      "declarations": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md",
+      "role": "integration",
+      "sha256": "de3caf024d51a1cc69bb974945d79e9068d768e619a3b9f232ca9c6841b9cfc1",
+      "declarations": []
     }
   ],
   "proof_bindings": [],
   "next_delta": {
-    "zh": "固定G0/J/E应用范围，复用已完成形成、评价、情境修订与风险结果，检验实际承担理由作用的关系怎样正当地接续到新情境，及其共同根据是否超出既有目标评价例的局部必要性。",
-    "en": "Fix the G0/J/E application scope and reuse completed formation, evaluation, contextual revision and risk results. Test warranted transfer of reason-bearing relations to new contexts and whether their common grounds extend beyond the existing local goal-evaluation necessity."
+    "zh": "以道德判断becoming及普遍生成评价根据为主线，按各自真实前提接通已有形成、认识、评价和修订；先固定原则与情境对应再推演，检验道德智慧覆盖及历史表达，其他智慧范围分别说明。",
+    "en": "Pursue morality as appraisal of becoming through universal generative grounds. Connect established formation, knowing, appraisal and revision under their actual premises; fix principles and contextual correspondence before deriving judgments, test moral-wisdom coverage and historical expressions, and address other wisdom domains separately."
   },
   "history": [
     {
@@ -120,6 +161,10 @@
     {
       "zh": "2026-10-08：第13节将忠实对照落实到两项原典及既有案例，区分实际关系的保留与普遍根据的争议；收窄下一连接，不新建成果身份、不新增定理。",
       "en": "2026-10-08: section 13 makes the faithful comparison concrete through two primary texts and the existing case, distinguishing retained relations from disputed universal grounding. The next connection is narrowed; no new result identity or theorem."
+    },
+    {
+      "zh": "2026-10-08：Ren明确纠正Dancy导向，以道德判断becoming及本理论普遍原则为正面路线。第14节修订主线并复用既有成果；保留第13节文献及反循环边界，不重开无公理起点或已完成机制。",
+      "en": "2026-10-08: Ren corrects the Dancy-led framing and directs the affirmative route through morality as appraisal of becoming under this theory’s universal principles. Section 14 reuses established results while retaining section 13’s sources and anti-circularity limits; no axiom-free gate or completed mechanism is reopened."
     }
   ]
 }

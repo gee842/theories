@@ -194,4 +194,83 @@ theorem classification_can_matter_with_real_loss :
     · intro reverse
       exact Bool.noConfusion (reverse (.inr ()) ⟨rfl, True.intro⟩).1
 
+/- One formative history can open either of two positively relevant contents.
+   The classifications below are hypotheses for a uniform-decision claim, not
+   independently justified ethical verdicts about an actual community. -/
+inductive Route where
+  | absent | left | right
+  deriving DecidableEq
+
+def routeBasic (_ : Route) (_ : Unit) : Prop := True
+def routeGain (_ : Route) (_ : Unit) : Prop := False
+def routeFresh : Route → Bool → Prop
+  | .absent, _ => False
+  | .left, n => n = false
+  | .right, n => n = true
+
+def routeFormed (r : Route) : Prop := r ≠ .absent
+
+theorem every_classification_requires_a_formed_route :
+    ∀ q, Required
+      (Frontier (fun _ => True) (compared routeBasic routeGain routeFresh q))
+      routeFormed := by
+  apply formation_required_without_fixed_classification
+    routeBasic routeGain routeFresh (fun _ => True) routeFormed
+    [.absent, .left, .right]
+  · decide
+  · intro a
+    cases a <;> simp
+  · intro a _ absent
+    have same : a = .absent := by
+      apply Classical.byContradiction
+      exact absent
+    subst a
+    refine ⟨.left, True.intro, ?_, ?_⟩
+    · exact fun _ h => False.elim h
+    · apply Or.inr
+      refine ⟨(fun _ h => h), (fun _ h => h), ?_⟩
+      apply retained_old_new_strict
+      · exact fun _ h => h
+      · exact ⟨fun _ h => False.elim h, fun reverse => reverse false rfl⟩
+
+theorem mixed_classifications_can_favor_opposite_routes :
+    compared routeBasic routeGain routeFresh (fun n => n = false) .left .right ∧
+    compared routeBasic routeGain routeFresh (fun n => n = true) .right .left := by
+  constructor
+  · apply protection_anchor (c := Sum.inr false)
+    · intro c hc
+      cases c with
+      | inl i => exact hc
+      | inr n =>
+        change (n = true ∧ n = false) at hc
+        exact False.elim (Bool.noConfusion (hc.1.symm.trans hc.2))
+    · exact ⟨rfl, rfl⟩
+    · exact fun h => Bool.noConfusion h.1
+  · apply protection_anchor (c := Sum.inr true)
+    · intro c hc
+      cases c with
+      | inl i => exact hc
+      | inr n =>
+        change (n = false ∧ n = true) at hc
+        exact False.elim (Bool.noConfusion (hc.1.symm.trans hc.2))
+    · exact ⟨rfl, rfl⟩
+    · exact fun h => Bool.noConfusion h.1
+
+/-- The required role does not entail a common undefeated implementation. This
+    defeats that stronger inference, not the role requirement or all action. -/
+theorem no_route_undefeated_under_every_classification :
+    ¬ ∃ r, ∀ q, Frontier (fun _ => True)
+      (compared routeBasic routeGain routeFresh q) r := by
+  rintro ⟨r, all⟩
+  cases r with
+  | absent =>
+    exact (every_classification_requires_a_formed_route (fun _ => False)).2
+      .absent (all (fun _ => False)) rfl
+  | left =>
+    exact (all (fun n => n = true)).2 .right True.intro
+      mixed_classifications_can_favor_opposite_routes.2
+  | right =>
+    exact (all (fun n => n = false)).2 .left True.intro
+      mixed_classifications_can_favor_opposite_routes.1
+
 end ClassificationRobustJudgment

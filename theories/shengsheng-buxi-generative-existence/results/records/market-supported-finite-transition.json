@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "id": "market-supported-finite-transition",
+  "title": {
+    "zh": "有支持的有限纠正与保护交接",
+    "en": "Supported finite correction and protective handoff"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F06",
+  "reviewed_at_utc": "2026-10-08T13:25:42.191315+00:00",
+  "claim": {
+    "zh": "原有理市场模型的每个物理初态只要维护份额为正，在实际 β=0 纠正下都存在有限 N；初始支持达到含额外耗用的 K_N 时，全部纠正步骤真实执行，实际到达状态在撤除干预后满足原 β=1/2 的永久保护证书。",
+    "en": "Every physical state of the original rational market model with positive renewal share has a finite beta=0 correction horizon N. Initial support above K_N, including extra per-step consumption, makes every pulse step executable and lets the actual arrived state satisfy the original beta=1/2 perpetual protection certificate after withdrawal."
+  },
+  "hypotheses": [
+    {
+      "zh": "原 x,q,w 更新律及 x,q,w∈[0,1]、x>0；纠正阶段真实 β=0，其他参数保持原例，随后 β=1/2。",
+      "en": "Original x,q,w update law, x,q,w in [0,1], x>0; beta=0 actually holds during the pulse with other example parameters retained, followed by beta=1/2."
+    },
+    {
+      "zh": "每步额外支持耗用 κ≥0；C₀≥K_N，K₀=5、Kₙ₊₁=(10/9)(Kₙ+1+κ)；原货币预算先付后收入，没有其他冲击。",
+      "en": "Extra support consumption kappa>=0 per pulse step; C0>=K_N with K0=5 and K(n+1)=(10/9)(K(n)+1+kappa); original monetary funding remains paid before receipts, with no other shocks."
+    }
+  ],
+  "correspondence": {
+    "zh": "干预是共同运行关系中的有效改变，形成、授权与具体实施尚为给定对应；κ 只覆盖指定支持单位，不是全部生活和制度代价的统一尺度。",
+    "en": "Intervention is an effective change in shared operating relations; its formation, authority and implementation remain supplied correspondence. Kappa covers designated support units, not a common scale for every living and institutional cost."
+  },
+  "canonical_source": "experiments/market-generativity/formal/RegimeTransition.lean",
+  "aliases": [
+    "RegimeTransition.supported_finite_transition"
+  ],
+  "dependencies": [
+    {
+      "id": "market-protected-continuation",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "实际到达状态接通原保护证书，无交接重置。",
+        "en": "The actual arrived state supplies the original protection certificate without a handoff reset."
+      },
+      "interface": {
+        "output": {
+          "zh": "原证书接收 Safe 初态和逐步容许扰动，给出全时守卫不失败。",
+          "en": "The inherited theorem accepts Safe and stepwise admissible disturbances and yields all-time guarded nonfailure."
+        },
+        "input": {
+          "zh": "有限纠正后的状态由 landing_supplies_safety 转为 Safe，并在 supported_finite_transition 中传入 safe_history_never_fails。",
+          "en": "landing_supplies_safety converts the finite-pulse arrival into Safe; supported_finite_transition passes it to safe_history_never_fails."
+        },
+        "conditions": {
+          "zh": "同一完整 State、实际剩余支持、预算及原参数；后继扰动为 noShock，无新增储备。",
+          "en": "Same full State, actual remaining stock, budget and original parameters; successor disturbance is noShock with no added reserve."
+        },
+        "evidence": "experiments/market-generativity/formal/RegimeTransition.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "alignment-direction-g0-j",
+      "detail": {
+        "zh": "机制结果供既有 G0/J 判断使用；稳定性不提供规范起点或覆盖全部现实损失。",
+        "en": "The mechanism informs existing G0/J judgment; stability neither supplies normative grounds nor covers all real losses."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/market-generativity/formal/RegimeTransition.lean",
+      "detail": {
+        "zh": "零维护份额不再生；不存在对所有正份额都够用的固定纠正时长；底线支持状态可在有效无额外耗用纠正的第一步失效。",
+        "en": "Zero renewal share does not regenerate; no fixed pulse duration works for all positive shares; floor-level stock can fail on the first effective correction step even without extra consumption."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "充分的有限转变条件，不是完整可恢复域或最小成本；比例域、真实 β 改变、初始支持及新增进入均保留独立对应义务。",
+    "en": "Sufficient finite-transition conditions, not a complete recovery region or minimal cost; proportional states, actual beta change, initial support and new entry retain separate correspondence obligations."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 实查27项新定理／35项新审计，96项继承定理／118项审计另列；作者反审已整合，无独立 agent 验收、无新经验校准。",
+    "en": "Lean 4.29.1 actually checks 27 new theorems / 35 declaration audits, separately rebuilding 96 inherited theorems / 118 audits. Author counterreview is integrated; no independent agent acceptance or new empirical calibration."
+  },
+  "references": [
+    {
+      "path": "experiments/market-generativity/formal/RegimeTransition.lean",
+      "role": "proof",
+      "sha256": "9e76cc787e363e0c4ad75e34adc94bf1fe7983076e76a367850d72f65e7bf518",
+      "declarations": [
+        "RegimeTransition.supported_finite_transition",
+        "RegimeTransition.positive_seed_finite_landing",
+        "RegimeTransition.cover_formula",
+        "RegimeTransition.landing_supplies_safety",
+        "RegimeTransition.no_uniform_pulse_duration",
+        "RegimeTransition.too_late_even_without_extra_cost",
+        "RegimeTransition.zero_seed_never_lands"
+      ]
+    },
+    {
+      "path": "experiments/market-generativity/formal/transition-verification.json",
+      "role": "receipt",
+      "sha256": "94eb627cc38494b3347b7c5046e20b1e79bb41d35d6c01342d62241ef513c683",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "role": "review",
+      "sha256": "cdd092289ae62ca502b36a193e3e6fa619785715e449497776814644b00d7ba3",
+      "declarations": []
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md",
+      "role": "integration",
+      "sha256": "a53cd244b8d3a8e92b85a172d099a4f4b878cec1faa1c5372b4cadeac334bcc9",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/market-generativity/formal/RegimeTransition.lean",
+      "receipt": "experiments/market-generativity/formal/transition-verification.json",
+      "sha256_pointer": "/sources/RegimeTransition.lean",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "有限持续纠正及支持交接已完成。下一连接是实际可实施的部分阻断如何形成、保持并兑现参数改变，以及零余量后的有支持进入；复用既有形成机制。",
+    "en": "Finite sustained correction and support handoff are complete. Next connect formation and retention of implementable partial suppression to actual parameter change, and supported entry after zero share, reusing established formation mechanisms."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：新增有限持续干预、前缀支持和原保护证书之间的正式组合；保留零余量、期限与支持失败。",
+      "en": "2026-10-08: added the formal composition of finite sustained intervention, prefix support and the original protection certificate, retaining zero-seed, timing and support failures."
+    }
+  ]
+}

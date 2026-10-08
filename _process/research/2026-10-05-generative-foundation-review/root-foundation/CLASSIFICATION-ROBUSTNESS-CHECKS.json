@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "scope": "Owned source preservation, local added links, bilingual M20 additions and existing proof-receipt consistency only; no whole-table freshness, new Lean run or independent scientific acceptance.",
+  "preserved_appends": 3,
+  "shared_source_inverse_preserved": true,
+  "local_added_links": 19,
+  "unrelated_chain_data_and_rows_preserved": true,
+  "bound_proof_sources": 7,
+  "proof_retained_run": "classification-robust-judgment-checks/20261008T132520.713649Z",
+  "checker_sha256": "d50fa7bfdef7fb5728896895d10ed00121982e80f3a029d79c3f30b3ddb33262",
+  "edit_record_sha256": "c92e105cc3dc12a2109a57040d4868eb395b06a016e64e3516b9cc94efbac989"
+}

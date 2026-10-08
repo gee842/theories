@@ -1,0 +1,228 @@
+Generative.CompositionalFormation.formed_operation_correspondence (c : Generative.CompositionalAcquisition.Code)
+  (e : Generative.CompositionalAcquisition.Expr) :
+  Generative.CompositionalFormation.operate (Generative.CompositionalFormation.programFor c) e =
+    Generative.CompositionalAcquisition.eval c e
+Generative.CompositionalFormation.two_connector_routes :
+  Generative.CompositionalFormation.generatedRoutes 2 = [[false, false], [false, true], [true, false], [true, true]]
+Generative.CompositionalFormation.correct_program_fits_actual_records (c : Generative.CompositionalAcquisition.Code) :
+  Generative.CompositionalFormation.fits (Generative.CompositionalFormation.programFor c)
+      (Generative.CompositionalAcquisition.trialRecords c) =
+    true
+Generative.CompositionalFormation.fit_implies_record_agreement (p : Generative.CompositionalFormation.Program)
+  (samples : List (Generative.CompositionalAcquisition.Expr × List Bool))
+  (h : Generative.CompositionalFormation.fits p samples = true) (e : Generative.CompositionalAcquisition.Expr)
+  (answer : List Bool) (present : (e, answer) ∈ samples) : Generative.CompositionalFormation.operate p e = answer
+Generative.CompositionalFormation.separating_probe_identifies_generated_route
+  (c : Generative.CompositionalAcquisition.Code) (route : Generative.CompositionalFormation.Route)
+  (distinct : c.first ≠ c.second) (generated : route ∈ Generative.CompositionalFormation.generatedRoutes 2)
+  (agrees :
+    Generative.CompositionalFormation.dispatch route [c.first] [c.second] =
+      Generative.CompositionalAcquisition.eval c Generative.CompositionalAcquisition.orderProbe) :
+  route = Generative.CompositionalFormation.routeFor c
+Generative.CompositionalFormation.accepted_generated_program_transfers (c : Generative.CompositionalAcquisition.Code)
+  (route : Generative.CompositionalFormation.Route) (distinct : c.first ≠ c.second)
+  (generated : route ∈ Generative.CompositionalFormation.generatedRoutes 2)
+  (accepted :
+    Generative.CompositionalFormation.fits { first := c.first, second := c.second, route := route }
+        (Generative.CompositionalAcquisition.trialRecords c) =
+      true)
+  (e : Generative.CompositionalAcquisition.Expr) :
+  Generative.CompositionalFormation.operate { first := c.first, second := c.second, route := route } e =
+    Generative.CompositionalAcquisition.eval c e
+Generative.CompositionalFormation.placing_preserves_support (socket : Bool)
+  (s : Generative.CompositionalFormation.Frame) :
+  (Generative.CompositionalFormation.place socket s).support +
+      (Generative.CompositionalFormation.place socket s).spent =
+    s.support + s.spent
+Generative.CompositionalFormation.placing_accounts_parts (socket : Bool) (s : Generative.CompositionalFormation.Frame) :
+  (Generative.CompositionalFormation.place socket s).parts +
+      (Generative.CompositionalFormation.place socket s).usedParts =
+    s.parts + s.usedParts
+Generative.CompositionalFormation.assembly_preserves_support (route : Generative.CompositionalFormation.Route)
+  (s : Generative.CompositionalFormation.Frame) :
+  (Generative.CompositionalFormation.assemble route s).support +
+      (Generative.CompositionalFormation.assemble route s).spent =
+    s.support + s.spent
+Generative.CompositionalFormation.inspecting_preserves_support (e : Generative.CompositionalAcquisition.Evidence)
+  (s : Generative.CompositionalFormation.Frame) :
+  (Generative.CompositionalFormation.inspect e s).support + (Generative.CompositionalFormation.inspect e s).spent =
+    s.support + s.spent
+Generative.CompositionalFormation.discarding_preserves_support (s : Generative.CompositionalFormation.Frame) :
+  (Generative.CompositionalFormation.discard s).support + (Generative.CompositionalFormation.discard s).spent =
+    s.support + s.spent
+Generative.CompositionalFormation.attempt_preserves_support (e : Generative.CompositionalAcquisition.Evidence)
+  (r : Generative.CompositionalFormation.Route) (s : Generative.CompositionalFormation.Frame) :
+  (Generative.CompositionalFormation.attempt e r s).support + (Generative.CompositionalFormation.attempt e r s).spent =
+    s.support + s.spent
+Generative.CompositionalFormation.search_preserves_support (e : Generative.CompositionalAcquisition.Evidence)
+  (rs : List Generative.CompositionalFormation.Route) (s : Generative.CompositionalFormation.Frame) :
+  (Generative.CompositionalFormation.search e rs s).support + (Generative.CompositionalFormation.search e rs s).spent =
+    s.support + s.spent
+Generative.CompositionalFormation.development_preserves_support (s : Generative.CompositionalFormation.Frame) :
+  (Generative.CompositionalFormation.develop s).support + (Generative.CompositionalFormation.develop s).spent =
+    s.support + s.spent
+Generative.CompositionalFormation.interpretation_alone_does_not_supply_route :
+  (Generative.CompositionalAcquisition.train Generative.CompositionalAcquisition.usual
+          (Generative.CompositionalAcquisition.initial 18)).code =
+      some Generative.CompositionalAcquisition.usual ∧
+    Generative.CompositionalFormation.respond (Generative.CompositionalFormation.prepared 18 4)
+        Generative.CompositionalAcquisition.novel =
+      none
+Generative.CompositionalFormation.incorrect_route_is_built_tried_and_replaced :
+  Generative.CompositionalFormation.developed.attempts = [([false, false], false), ([false, true], true)] ∧
+    Generative.CompositionalFormation.developed.installed =
+      some (Generative.CompositionalFormation.programFor Generative.CompositionalAcquisition.usual)
+Generative.CompositionalFormation.development_retains_actual_acquisition :
+  Generative.CompositionalFormation.developed.samples =
+    (Generative.CompositionalAcquisition.train Generative.CompositionalAcquisition.usual
+        (Generative.CompositionalAcquisition.initial 18)).records
+Generative.CompositionalFormation.formed_route_executes_novel_expression :
+  Generative.CompositionalFormation.respond Generative.CompositionalFormation.developed
+      Generative.CompositionalAcquisition.novel =
+    some ([false, false, true], 0)
+Generative.CompositionalFormation.whole_example_account :
+  Generative.CompositionalFormation.developed.spent = 7 ∧
+    Generative.CompositionalFormation.developed.support = 4 ∧
+      Generative.CompositionalFormation.developed.usedParts = 4 ∧
+        Generative.CompositionalFormation.developed.parts = 0 ∧
+          7 + Generative.CompositionalFormation.developed.spent + Generative.CompositionalFormation.developed.support =
+            18
+Generative.CompositionalFormation.no_parts_preserves_record_but_blocks_formation :
+  (Generative.CompositionalFormation.develop (Generative.CompositionalFormation.prepared 18 0)).samples =
+      Generative.CompositionalAcquisition.trialRecords Generative.CompositionalAcquisition.usual ∧
+    (Generative.CompositionalFormation.develop (Generative.CompositionalFormation.prepared 18 0)).blocked = true ∧
+      Generative.CompositionalFormation.respond
+          (Generative.CompositionalFormation.develop (Generative.CompositionalFormation.prepared 18 0))
+          Generative.CompositionalAcquisition.novel =
+        none
+Generative.CompositionalFormation.partial_assembly_keeps_consumption :
+  (Generative.CompositionalFormation.develop (Generative.CompositionalFormation.prepared 18 1)).wires = [false] ∧
+    (Generative.CompositionalFormation.develop (Generative.CompositionalFormation.prepared 18 1)).spent = 1 ∧
+      (Generative.CompositionalFormation.develop (Generative.CompositionalFormation.prepared 18 1)).parts = 0 ∧
+        Generative.CompositionalFormation.respond
+            (Generative.CompositionalFormation.develop (Generative.CompositionalFormation.prepared 18 1))
+            Generative.CompositionalAcquisition.novel =
+          none
+Generative.CompositionalFormation.interpreted_and_formed_can_lack_execution_support :
+  (Generative.CompositionalFormation.develop (Generative.CompositionalFormation.prepared 14 4)).installed =
+      some (Generative.CompositionalFormation.programFor Generative.CompositionalAcquisition.usual) ∧
+    Generative.CompositionalFormation.respond
+        (Generative.CompositionalFormation.develop (Generative.CompositionalFormation.prepared 14 4))
+        Generative.CompositionalAcquisition.novel =
+      none
+Generative.CompositionalFormation.reverse_order_requires_different_formed_route :
+  (Generative.CompositionalFormation.develop
+          (Generative.CompositionalFormation.prepared 22 6 Generative.CompositionalAcquisition.switched)).attempts =
+      [([false, false], false), ([false, true], false), ([true, false], true)] ∧
+    Generative.CompositionalFormation.respond
+        (Generative.CompositionalFormation.develop
+          (Generative.CompositionalFormation.prepared 22 6 Generative.CompositionalAcquisition.switched))
+        Generative.CompositionalAcquisition.novel =
+      some ([true, false, false], 0)
+Generative.CompositionalFormation.retained_verdict_does_not_replace_damaged_connection :
+  Generative.CompositionalFormation.damaged.attempts = Generative.CompositionalFormation.developed.attempts ∧
+    Generative.CompositionalFormation.respond Generative.CompositionalFormation.damaged
+        Generative.CompositionalAcquisition.novel =
+      none
+Generative.CompositionalFormation.old_record_can_admit_wrong_constructed_operation :
+  Generative.CompositionalFormation.fits Generative.CompositionalFormation.duplicated
+        (Generative.CompositionalAcquisition.trialRecords Generative.CompositionalFormation.collapsed) =
+      true ∧
+    Generative.CompositionalFormation.operate Generative.CompositionalFormation.duplicated
+        Generative.CompositionalAcquisition.novel ≠
+      Generative.CompositionalAcquisition.eval Generative.CompositionalFormation.collapsed
+        Generative.CompositionalAcquisition.novel
+Generative.CompositionalFormation.expanded_repertoire_can_form_a_failing_route :
+  (Generative.CompositionalFormation.develop
+          (Generative.CompositionalFormation.prepared 15 2 Generative.CompositionalFormation.collapsed)).installed =
+      some Generative.CompositionalFormation.duplicated ∧
+    Generative.CompositionalFormation.respond
+        (Generative.CompositionalFormation.develop
+          (Generative.CompositionalFormation.prepared 15 2 Generative.CompositionalFormation.collapsed))
+        Generative.CompositionalAcquisition.novel =
+      some ([false, false, false, false], 0)
+Generative.CompositionalFormation.asymmetric_composition_exposes_the_new_failure :
+  Generative.CompositionalFormation.fits Generative.CompositionalFormation.duplicated
+        (Generative.CompositionalAcquisition.trialRecords Generative.CompositionalFormation.collapsed ++
+          [(Generative.CompositionalAcquisition.novel,
+              Generative.CompositionalAcquisition.eval Generative.CompositionalFormation.collapsed
+                Generative.CompositionalAcquisition.novel)]) =
+      false ∧
+    Generative.CompositionalFormation.fits
+        (Generative.CompositionalFormation.programFor Generative.CompositionalFormation.collapsed)
+        (Generative.CompositionalAcquisition.trialRecords Generative.CompositionalFormation.collapsed ++
+          [(Generative.CompositionalAcquisition.novel,
+              Generative.CompositionalAcquisition.eval Generative.CompositionalFormation.collapsed
+                Generative.CompositionalAcquisition.novel)]) =
+      true
+Generative.CompositionalFormation.encounter_preserves_support (c : Generative.CompositionalAcquisition.Code)
+  (e : Generative.CompositionalAcquisition.Expr) (s : Generative.CompositionalFormation.Frame) :
+  (Generative.CompositionalFormation.encounter c e s).support +
+      (Generative.CompositionalFormation.encounter c e s).spent =
+    s.support + s.spent
+Generative.CompositionalFormation.reconsideration_preserves_support (s : Generative.CompositionalFormation.Frame) :
+  (Generative.CompositionalFormation.reconsider s).support + (Generative.CompositionalFormation.reconsider s).spent =
+    s.support + s.spent
+Generative.CompositionalFormation.fresh_record_changes_actual_reconstruction :
+  (Generative.CompositionalFormation.corrected 27 6).samples =
+      Generative.CompositionalAcquisition.trialRecords Generative.CompositionalFormation.collapsed ++
+        [(Generative.CompositionalAcquisition.novel,
+            Generative.CompositionalAcquisition.eval Generative.CompositionalFormation.collapsed
+              Generative.CompositionalAcquisition.novel)] ∧
+    (Generative.CompositionalFormation.corrected 27 6).attempts =
+        [([false, false], true), ([false, false], false), ([false, false], false), ([false, true], true)] ∧
+      (Generative.CompositionalFormation.corrected 27 6).installed =
+        some (Generative.CompositionalFormation.programFor Generative.CompositionalFormation.collapsed)
+Generative.CompositionalFormation.repaired_operation_uses_a_further_untrained_expression :
+  ¬Generative.CompositionalFormation.further ∈
+        List.map Prod.fst (Generative.CompositionalFormation.corrected 27 6).samples ∧
+    Generative.CompositionalFormation.respond (Generative.CompositionalFormation.corrected 27 6)
+        Generative.CompositionalFormation.further =
+      some ([false, false, false], 0)
+Generative.CompositionalFormation.repair_keeps_the_cost_of_failure :
+  (Generative.CompositionalFormation.corrected 27 6).spent = 16 ∧
+    (Generative.CompositionalFormation.corrected 27 6).support = 4 ∧
+      (Generative.CompositionalFormation.corrected 27 6).usedParts = 6 ∧
+        (Generative.CompositionalFormation.corrected 27 6).parts = 0 ∧
+          7 + (Generative.CompositionalFormation.corrected 27 6).spent +
+              (Generative.CompositionalFormation.corrected 27 6).support =
+            27
+Generative.CompositionalFormation.discrepancy_alone_does_not_supply_repair_parts :
+  (Generative.CompositionalFormation.corrected 27 2).blocked = true ∧
+    (Generative.CompositionalFormation.corrected 27 2).samples =
+        Generative.CompositionalAcquisition.trialRecords Generative.CompositionalFormation.collapsed ++
+          [(Generative.CompositionalAcquisition.novel,
+              Generative.CompositionalAcquisition.eval Generative.CompositionalFormation.collapsed
+                Generative.CompositionalAcquisition.novel)] ∧
+      (Generative.CompositionalFormation.corrected 27 2).installed = none ∧
+        Generative.CompositionalFormation.respond (Generative.CompositionalFormation.corrected 27 2)
+            Generative.CompositionalFormation.further =
+          none
+Generative.CompositionalFormation.unobserved_failure_can_retain_wrong_operation :
+  (Generative.CompositionalFormation.develop
+          (Generative.CompositionalFormation.prepared 27 6 Generative.CompositionalFormation.collapsed)).installed =
+      some Generative.CompositionalFormation.duplicated ∧
+    Generative.CompositionalFormation.respond
+        (Generative.CompositionalFormation.develop
+          (Generative.CompositionalFormation.prepared 27 6 Generative.CompositionalFormation.collapsed))
+        Generative.CompositionalFormation.further =
+      some ([false, false], 14)
+Generative.CompositionalFormation.equal_primitive_effects_preserve_extent (c : Generative.CompositionalAcquisition.Code)
+  (same : c.second = c.first) (e : Generative.CompositionalAcquisition.Expr) :
+  Generative.CompositionalAcquisition.eval c e = List.replicate (Generative.CompositionalFormation.extent e) c.first
+Generative.CompositionalFormation.indistinguishable_reversal_preserves_every_expression (b r : Bool)
+  (e : Generative.CompositionalAcquisition.Expr) :
+  Generative.CompositionalAcquisition.eval { first := b, second := b, reversed := r } e =
+    Generative.CompositionalAcquisition.eval { first := b, second := b, reversed := !r } e
+Generative.CompositionalFormation.extra_probe_restores_transfer_for_generated_routes
+  (c : Generative.CompositionalAcquisition.Code) (route : Generative.CompositionalFormation.Route)
+  (generated : route ∈ Generative.CompositionalFormation.generatedRoutes 2)
+  (accepted :
+    Generative.CompositionalFormation.fits { first := c.first, second := c.second, route := route }
+        (Generative.CompositionalAcquisition.trialRecords c ++
+          [(Generative.CompositionalAcquisition.novel,
+              Generative.CompositionalAcquisition.eval c Generative.CompositionalAcquisition.novel)]) =
+      true)
+  (e : Generative.CompositionalAcquisition.Expr) :
+  Generative.CompositionalFormation.operate { first := c.first, second := c.second, route := route } e =
+    Generative.CompositionalAcquisition.eval c e

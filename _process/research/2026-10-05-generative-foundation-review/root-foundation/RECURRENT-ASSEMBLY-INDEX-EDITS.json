@@ -1,0 +1,54 @@
+{
+  "edits": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "before_sha256": "4db660618376e3ebd97ae2c8bf992038bf2e6a96a446cc5fc5802b8bfa5e69f7",
+      "after_sha256": "e05e4fbe6d5e1f4a5e1b644d12550e850af29bcd2c5832b2623648ac85745001",
+      "owned_passage": "## Prepared material reconstructs a repeatable chain\n\nThe [recurrent assembly continuation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md#recurrent-assembly-from-prepared-material) closes the preceding preparation-to-structure connection for one chain class. Actual placed components enter a shared pool; end attachment removes matching components, forms edges and consumes support. Cleavage retains each fragment's internal edges. The same attachment law rebuilds both fragments into structures that can undergo the process again. The target graph is not assigned to the successor by the operation.\n\nFor one initial complete chain and any finite g rounds, the checked additional budget is 8(2^g−1) components and 9(2^g−1) support, yielding 2^g complete chains. Activation from the earlier routed output additionally consumes eight support units. With 24 extra components and 27 support units, two rounds produce four complete chains; with 26 support units they leave three complete chains, one seven-component chain and one unused component. General material/support accounting includes incomplete executions.\n\n**31 new Lean theorems / 47 new audits / 373 closure audits pass**, with the 326 inherited declarations counted separately. The [canonical record](../results/records/recurrent-chain-assembly.json) gives exact preparation and graph interfaces. The new attachment route shares the old grown chain's endpoint, not its division mechanism or cost. Typed compatibility, the size-eight cleavage domain, event order and finite feed remain supplied. Unrepresented load-bearing links would require an additional release/rearrangement correspondence.\n\nRepeated reconstruction under this fixed law is now established. Heritable variation in attachment and cleavage relations, their physical realization and selection consequences remain the next evolutionary connection. The earlier branched morphology is not reconstructed by this chain-specific law, and its old preparation comparison is not imported as a long-term growth result. Conventional developmental life-cycle and assembly accounts retain priority; comparative superiority and the full theory remain unproved."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "before_sha256": "525d808daf7164ce9f4d1e7995498e18c32857c315f43a6b95923436ba9d26c5",
+      "after_sha256": "0be36cae7ed06556368284c5c272da968375fd5270d792829b448bad51857e38",
+      "owned_passage": "**Recurrent structural preparation, 8 October 2026.** [The prepared material now constructs a repeatable chain](EVOLUTIONARY-ORGANIZATION.md#prepared-material-reconstructs-a-repeatable-chain), with 31 new checked theorems / 47 audits. Actual attachment and retained fragments realize every finitely supplied number of cycles, preserving partial failure and shared accounting. This closes one fixed-law structural continuation; heritable variation in its organizing relations and their selection remain open. All six broader requirements retain their scope."
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "before_sha256": "bf0d3adb61226626292ee571ebf15fd11b1468f199f359496ab21de90f45453b",
+      "after_sha256": "970f347956555af03485b58ed47b45a5fe9993fb4070a427058edd4a44d55f79",
+      "owned_passage": "**准备接入重复结构生成 / Prepared material joins recurrent structure，2026-10-08。** C14接续[现有分割研究中的新连接](GROWN-FRAGMENTATION-INTEGRATION.md#recurrent-assembly-from-prepared-material)：31项新定理／47项新审计／373项闭包审计，任意有限轮次、共享预算及真实不完整后继保留。/ Two existing interfaces and one new composition are maintained as canonical records; generated overviews are not manually appended. Only owned C14 text, links and reviewed versions change. [Edits](RECURRENT-ASSEMBLY-INDEX-EDITS.json) and [checks](RECURRENT-ASSEMBLY-CHECKS.json) preserve prior scope, other entries and the six broad requirements."
+    }
+  ],
+  "six_requirement_rows": [
+    "| **1 Formation of evolving organization** | Formation, regulation and developmental reconstruction have conditional models. The new bond-history account derives common founder ancestry under local non-aggregative development, with a targeted biological correspondence. | Extend the connected explanation beyond the stated local laws, retaining genealogy, actual construction and empirical scope. Origins of cells/genomes and broader mechanisms are not established by this case. |",
+    "| **2 Recovery of established evolutionary explanations** | Explicit transmission models and the new two-type recurrence correspondence. | Correspondences covering the claimed selection, mutation, drift, movement, inheritance and ecological mechanisms, with valid ranges and failures. Mathematical claims require actual Lean checks. An abstract interface alone is insufficient. |",
+    "| **3 Evolution of the conditions of evolution** | Actual output determines reconstruction, and inherited retention changes development. Retention, packing and aggregation constrain sorting. A bacterial genealogy and directly linked reversion assay now connect inherited switching to actual cycle completion and subsequent lineage representation under a declared regime. Separate oxygen experiments establish activity-generated gradients and condition-dependent competitive outcomes. | Generalize and calibrate these connections with supported renewal, mixing and stochastic occurrence. Resolve the separate yeast census conversion and follow fragmentation/aggregation participants. Explain mutation, transmission and replacement contributions to prevalence; fixation alone is not causal proof. Laboratory protocol changes do not establish endogenous evolution of the selector. |",
+    "| **4 Novel organization and changed evolutionary units** | The completed [new-possibilities integration](NEW-POSSIBILITIES.md) distinguishes installed construction from encompassing law, gives a formed constructor and scope-specific description revision. The association model adds formed group relations; empirical aggregation distinguishes temporary sorting groups from inherited organizations. | Credit those results and connect formation to inherited retention and ongoing effect under actual evolutionary conditions. Common transport does not alone establish a new inherited unit. Broader changes of evolutionary units and sustained qualitative innovation require their own mechanisms and evidence. |",
+    "| **5 Demonstrated comparative strength** | Exact recurrence correspondence and a proved limit of snapshots omitting bonds. Retention data compare ordinary predictors with/without protocol information, including a worsening case. A source-bound settling sensitivity holds geometry fixed and reveals consequential density/drag choices; a conventional developmental life-cycle model receives credit. Chronological genealogy forecasts now demonstrate a gain over a changing stage average and two block alternatives, fully credited to conventional lineage inference. Dated assay transfer exposes stage-specific prediction failures. | Establish a consequential gain against an adequately specified rival with matched evidence and assumptions. Neither the reduced baselines nor disagreement between unvalidated velocity approximations establishes superior prediction. Measure sorting and descendants to decide the physical correspondence. Broad empirical superiority remains unestablished. |",
+    "| **6 Ethical continuation and evolved evaluation** | The [practical-judgment candidate](PRACTICAL-JUDGMENT.md) is complete and independently accepted at its explicit-axiom general-principles scope, with G0 and additional comparison/responsibility commitments disclosed. | Credit that completed scope; connect evolved evaluation to its actual recognition, calibration and implementation, preserving failures. Application correspondence and actual compliance require evidence. Reproductive advantage cannot silently serve as ethical authority. |"
+  ],
+  "chain_update": {
+    "new_link_paths": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md#recurrent-assembly-from-prepared-material",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/recurrent-assembly-verification/README.md",
+      "theories/shengsheng-buxi-generative-existence/results/records/recurrent-chain-assembly.json"
+    ],
+    "reviewed_owned_paths": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/recurrent-assembly-verification/README.md",
+      "theories/shengsheng-buxi-generative-existence/results/records/recurrent-chain-assembly.json"
+    ],
+    "other_entries_preserved": 93,
+    "other_table_lines_preserved": true,
+    "maintenance_owned_passage": "**准备接入重复结构生成 / Prepared material joins recurrent structure，2026-10-08。** C14接续[现有分割研究中的新连接](GROWN-FRAGMENTATION-INTEGRATION.md#recurrent-assembly-from-prepared-material)：31项新定理／47项新审计／373项闭包审计，任意有限轮次、共享预算及真实不完整后继保留。/ Two existing interfaces and one new composition are maintained as canonical records; generated overviews are not manually appended. Only owned C14 text, links and reviewed versions change. [Edits](RECURRENT-ASSEMBLY-INDEX-EDITS.json) and [checks](RECURRENT-ASSEMBLY-CHECKS.json) preserve prior scope, other entries and the six broad requirements.",
+    "data_before_sha256": "1fe0a8a60c34dbb642a3cc41906703593461f7cc05b6e6bcad9a15e9abd57347",
+    "data_after_sha256": "55828f9a3aad7914577414ca448bea8be341b68e9d748c509106f6c0fc321733",
+    "table_before_sha256": "0a0fba77f888a8ec3721ec2001fbedd9a76ff89f2eee40df18486c5c5bc0f332",
+    "table_after_sha256": "615b2791db669084841e109868e5a5150460a0dd5835f30d112e52667f76cd51"
+  },
+  "canonical_records": [
+    "material-preparation-output",
+    "growth-constrained-fragmentation",
+    "recurrent-chain-assembly"
+  ]
+}

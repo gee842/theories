@@ -975,3 +975,73 @@ The local observation omission has been repaired, so it is not confused with tha
 **Completed at scope:** a monist reconstruction of organizational appraisal, a conditional formation requirement, a paid constructive instance with carrier latitude, an explicit failed overbuilding history, and a repaired local report. **Not completed:** a general derivation of specific normative content for every newly formed living configuration, inevitable motivation or behavior, empirical institutional validation, or the unified foundation as a whole. The stronger limit does not suspend the completed explicit-axiom alignment direction.
 
 This is the requested stopping point for this run after testing the further connection. [Owned integration record](MONIST-ORGANIZATION-INDEX-EDITS.json) and [documentary checks](MONIST-ORGANIZATION-CHECKS.json) cover source preservation and the scoped bilingual index. The result record supplies one maintained summary; this study remains the argument and evidence location. Author counterreview is not independent-agent acceptance.
+
+
+<a id="classification-robustness-account"></a>
+## 79. Updated-repository continuation: identity and exact delta
+
+**Result:** `classification-robust-generative-comparison`; [current theory §§85–88](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#classification-robust-generative-direction). This continues [Ren's actual request](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#continue-after-repository-update), without importing another session's independent goal.
+
+**Reuse:** `practical-judgment-g0-j`, `organizational-formation-from-generative-comparison`, `relational-generative-comparison`; the unmigrated `ConcernExtension` theorems; and, interpretively, the newly completed `positive-ground-open-futures`. The positive-ground study already establishes support without fixing one future form or proving strict whole improvement. That completion is credited, not recreated or made conditional on the new theorem.
+
+**Delta:** an exact criterion for strict preference under every priority assignment of fixed fresh contents; two extreme assignments suffice for all mixed assignments. The criterion supplies the previously missing comparison input to organizational formation when basic classification remains unsettled. A checked joint-capacity application reuses the actual relational producer. Further strengthening is tested: a required role under each classification need not have one common undefeated implementation.
+
+**Supplied:** G0 and existing J commitments; positive generative interpretation and stable meanings of old and fresh contents; known old priority tiers; the declared two-tier comparison; practical correspondence and eligibility. The finite menu is required only for the formation application. These are not universal classification or omniscience assumptions.
+
+**Boundary:** the theorem addresses uncertainty of priority tier, not simultaneous uncertainty of realization, meaning, reliability or eligible means. All predicates form a conservative mathematical family, not a proof that every arbitrary assignment describes possible living relations. No new axiom is adopted. No single implementation follows from role-level agreement alone.
+
+## 80. Affirmative argument within the one unfolding
+
+The relevant change is activity forming new expression, shared memory or joint capacity. The old/new distinction records the history of recognition; it does not divide reality or distribute independent ownership. Joint realization itself belongs in the description, as the updated relational result demonstrates. G0 supplies its positive generative relevance without requiring common ancestry with, membership of, or future repayment to the evaluating locus.
+
+Some recognition can precede full priority classification. If new content is already understood as a living realization, an uncertainty about whether its loss constitutes a basic deprivation does not erase its positive significance. The positive-ground result covers this contributory reason. The new inquiry asks when stricter comparison and an organizational requirement can also survive that remaining uncertainty.
+
+Under the existing comparator, all-basic preference entails fresh-content retention. All-secondary preference supplies either strict old-basic improvement or strict gain improvement at equal old protection. Moving any retained fresh content into the basic tier then either establishes basic strictness, or leaves the gain strictness when basic profiles remain equal. This is the reason two endpoints suffice: it depends on the actual inclusion structure, not averaging classifications, voting over interpretations or assigning probabilities to moral positions.
+
+The exact criterion also makes the scope of losses visible. An old basic improvement permits arbitrary secondary losses within J2's existing scope while fresh contents must be retained. At equal old basic protection, a strict fresh enrichment and retention of old gains suffice. A new positive content paid for by a lost old secondary content may fail that stronger test without losing its contributory significance. No lossless or universally robust gate is imposed on all action.
+
+本轮推进的是：同一生成关系中已知的正面内容，可以先支持比较与必要作用；其全部基本分类无须一并完成。实际关系、内容含义和优先判断仍有各自根据，不能以形式上的 q 代替生活作用的说明。两端点定理不引入标量最大化、固定共同效用或分类投票。
+
+## 81. Producer-to-consumer audit and actual Lean evidence
+
+New source: [ClassificationRobustJudgment.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ClassificationRobustJudgment.lean). [Checker](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_classification_robust_judgment.py) and [source-bound receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/classification-robust-judgment-verification.json) retain exact inputs, outputs, signatures and axiom reports. All seven modules are compiled unchanged in a fresh temporary import closure; only scanner input substitutes validated local import lines.
+
+| New declaration(s) | Exact contribution and reused output |
+|---|---|
+| `all_secondary_iff`, `all_basic_retains_fresh` | Endpoint correspondence and retention helpers; not independent ethical findings. |
+| `classification_robust_iff`, `two_extremes_suffice` | Exact robust criterion and endpoint sufficiency for arbitrary fresh index type, using `ConcernExtension.included_extension_iff` and `strict_extension_transfer_iff`. |
+| `known_basic_improvement_is_robust`, `fresh_enrichment_is_robust` | Two sufficient applications; the former retains real possible secondary loss, the latter uses `retained_old_new_strict`. |
+| `formation_required_without_fixed_classification` | The criterion supplies an improving eligible witness under each q; PracticalJudgment's irreflexivity/transitivity and `RelationalOrganization.formation_required_of_improvable_absence` supply the required role. |
+| `joint_enrichment_is_strict`, `joint_enrichment_without_fixed_classification` | `RelationalGrounding.joint_bundle_extension` supplies preservation and a lost generative bundle. Filtering by its supplied generative field gives strict fresh inclusion, then robust comparison at fixed old protection and no represented old gains. |
+| `classification_can_matter_with_real_loss` | One actual new content and lost old occasion: secondary classification is incomparable, basic classification strictly favors formation. This is not a strict preference reversal. |
+| `every_classification_requires_a_formed_route`, `mixed_classifications_can_favor_opposite_routes`, `no_route_undefeated_under_every_classification` | A three-route application meets the required-role theorem but defeats the stronger common-implementation inference. |
+
+Lean 4.29.1 checked **13 new theorem declarations / 25 named declaration audits**. Of the new audits, 15 have empty axiom dependencies, 2 use `propext` and `Quot.sound`, and 8 use those plus `Classical.choice`; no custom logical axiom or proof escape is admitted. G0/J are disclosed philosophical premises, not hidden Lean axioms. **73 inherited theorems / 144 audits** are separately rebuilt and not counted as new results. Both successful development snapshots are retained; the later receipt includes the three-route strengthening test. No proof failure is hidden.
+
+The joint application does not invoke C as an ethical assumption: it consumes the structural `GenerativeExtension` output and applies the J comparator under an explicit positive-content interpretation. It also does not automatically compose realized capacities with a full institutional history. The inherited `retained_possibility_does_not_force_joint_actualization` remains a boundary: a joint possibility does not force actual joint success.
+
+## 82. Substantive author counterreview
+
+**Does arbitrary reclassification refute constitutive generative ethics?** No. The positive theorem proves a sufficient invariant over a deliberately larger hypothesis family. Its necessity direction is exact for that mathematical family only. The three-route counterexample targets a quantifier inference in the stated schema, not the claim that full real living relations permit arbitrary ethical labels. Warranted classifications can be a proper subset; resolving substantive correspondence can remove the hypothetical conflict.
+
+**Has protection priority become a second ontology?** No. The tier difference is inherited J2's practical commitment applied to differentiated contents of one history. Its normative warrant remains explicit. A fixed q applies to stable contents across this comparison, not an eternal property of every use of that expression. If the actual role changes across histories, the contents or comparison model must be refined before reuse.
+
+**Is the result circular because it assumes every new content good?** It assumes the disclosed G0 correspondence of fresh living/organization content; it does not define all reality as already judged good or prove positive significance by naming a field. The new conclusion concerns classification-independent comparison and required formation, which were not supplied. Cases where the content's positive meaning itself remains unknown are outside this particular result.
+
+**Does this ignore harm or require zero harm?** Neither. The paid boundary retains old opportunity loss; known-basic strict improvement permits secondary losses under J2. The comparator does not order all crossed goods. Failure of robust strictness gives no blanket prohibition or status-quo privilege. The already completed positive-ground and bounded-practical results continue to apply at their stated strengths.
+
+**Does the role theorem secretly choose one common best plan?** No. It concludes `∀ q, Required (Frontier eligible (compared ... q)) formed`, not `∃ a, ∀ q, Frontier ... a`. The checked three-route case separates them. Its two formed routes yield distinct fresh contents, and mixed priority assignments favor opposite routes. No projection from uncertain q to a physically selected action is implemented.
+
+**Does it reinstall the old authority wall?** No. Eligibility receives its warrant through actual whole-history appraisal; it is not a separately privileged moral gate. The result can support building stronger shared capacities. Larger, smaller, centralized or distributed organization has no preset order in this proof.
+
+**Has the updated repository already supplied this result?** The prior concern-extension module treats additions to a fixed tier; it does not partition one fresh domain across both tiers and establish endpoint sufficiency. The prior organization theorem assumes improvement witnesses; the new theorem supplies those uniformly over the classification family. Positive-ground openness concerns different realized future forms, whereas this result varies the priority classification of fixed meanings. These are distinct dependencies, not duplicate identities.
+
+作者反审与 Lean 核检查各有范围；本轮没有独立 agent 验收，也没有经验上识别新生活基本地位。三路构造反驳的是从“每种分类要求形成”跳到“同一方案处处未被击败”，不反驳一元生成伦理本身。
+
+## 83. Source assessment, narrowed limit and integration
+
+Primary theoretical inputs reviewed here are Ren's ontology-first instruction, the existing nondual method, the exact present continuation request, the existing acquired-condition argument, and the updated [relational integration](RELATIONAL-GROUNDING-INTEGRATION.md) and [positive-ground integration](POSITIVE-GROUND-UNCERTAINTY-INTEGRATION.md). The latter's original finite-positive-ground scope and independent review remain credited; this turn does not repeat that independent acceptance. No new external empirical or historical claim is made.
+
+The old §78 wall is narrowed rather than erased: universal classification is not required for every constructive conclusion. The new theorem establishes strict comparison and role requirements in a stated class of unsettled-classification cases. The next stronger inference reaches a real limit in the three-route schema: role agreement does not entail a common undefeated implementation. In actual cases with decision-relevant competing classifications, the remaining input is substantive living-role correspondence or a disclosed further comparison commitment; existing finite inquiry and risk practice are available. This does not demand universal recognition before action.
+
+`classification-robust-generative-comparison` records the distinct result with checked formal dependencies. `organizational-formation-from-generative-comparison` retains its completed original claim and receipt; its next-delta note and documentary references are updated after verifying the old theory/study prefixes and inversely preserving the shared source, including its concurrent market-session continuation. No historical proof receipt is rewritten. The bilingual M20 chain appends this result and its precise boundary; generated navigation comes from the canonical records. [Owned edits](CLASSIFICATION-ROBUSTNESS-INDEX-EDITS.json) and [documentary checks](CLASSIFICATION-ROBUSTNESS-CHECKS.json) certify only the owned integration, not every concurrent record.

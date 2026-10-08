@@ -1,0 +1,121 @@
+Generative.EncounterChoice.observation_preserves_account (s : Generative.EncounterChoice.Activity) :
+  Generative.EncounterChoice.account (Generative.EncounterChoice.observe s) = Generative.EncounterChoice.account s
+Generative.EncounterChoice.survey_preserves_account (p : Generative.EnactedScene.Place)
+  (s : Generative.EncounterChoice.Activity) :
+  Generative.EncounterChoice.account (Generative.EncounterChoice.survey p s) = Generative.EncounterChoice.account s
+Generative.EncounterChoice.speaking_preserves_account (es offered : List Generative.CompositionalAcquisition.Expr)
+  (s : Generative.AcquiredBinding.Lexicon) :
+  (Generative.EncounterChoice.speak es offered s).percept.machine.support +
+      (Generative.EncounterChoice.speak es offered s).percept.machine.spent =
+    s.percept.machine.support + s.percept.machine.spent
+Generative.EncounterChoice.naming_preserves_account (s : Generative.EncounterChoice.Activity) :
+  Generative.EncounterChoice.account (Generative.EncounterChoice.localNaming s) = Generative.EncounterChoice.account s
+Generative.EncounterChoice.visit_preserves_account (p : Generative.EnactedScene.Place)
+  (s : Generative.EncounterChoice.Activity) :
+  Generative.EncounterChoice.account (Generative.EncounterChoice.visit p s) = Generative.EncounterChoice.account s
+Generative.EncounterChoice.step_preserves_account (cs : List Generative.EnactedScene.Place)
+  (s : Generative.EncounterChoice.Activity) :
+  Generative.EncounterChoice.account (Generative.EncounterChoice.step cs s) = Generative.EncounterChoice.account s
+Generative.EncounterChoice.run_preserves_account (n : Nat) (cs : List Generative.EnactedScene.Place)
+  (s : Generative.EncounterChoice.Activity) :
+  Generative.EncounterChoice.account (Generative.EncounterChoice.run n cs s) = Generative.EncounterChoice.account s
+Generative.EncounterChoice.calibration_records_actual_access :
+  (Generative.EncounterChoice.calibrated 51).views =
+      [{ position := (1, 0), seen := [Generative.CompositionalAcquisition.p0, Generative.CompositionalAcquisition.p1] },
+        { position := (0, 1), seen := [Generative.CompositionalAcquisition.p0, Generative.AcquiredBinding.extra] },
+        { position := (2, 2), seen := [Generative.CompositionalAcquisition.p1, Generative.AcquiredBinding.extra] }] ∧
+    (Generative.EncounterChoice.calibrated 51).situation.lexicon.records = []
+Generative.EncounterChoice.binding_changes_which_scene_is_chosen :
+  Generative.EncounterChoice.choose (Generative.EncounterChoice.calibrated 51).situation.lexicon
+        (Generative.EncounterChoice.calibrated 51).views [] Generative.EncounterChoice.catalogue =
+      some (1, 0) ∧
+    Generative.EncounterChoice.choose (Generative.EncounterChoice.first 51).situation.lexicon
+          (Generative.EncounterChoice.first 51).views (Generative.EncounterChoice.first 51).tried
+          Generative.EncounterChoice.catalogue =
+        some (0, 1) ∧
+      Generative.EncounterChoice.choose (Generative.EncounterChoice.second 51).situation.lexicon
+          (Generative.EncounterChoice.second 51).views (Generative.EncounterChoice.second 51).tried
+          Generative.EncounterChoice.catalogue =
+        some (2, 2)
+Generative.EncounterChoice.selected_encounters_supply_previous_interpretation_inputs :
+  Generative.EnactedScene.interpretationInputs (Generative.EncounterChoice.acquired 51).situation.lexicon =
+    Generative.EnactedScene.interpretationInputs (Generative.EnactedScene.coordinated 37).lexicon
+Generative.EncounterChoice.selected_encounters_transfer_to_all_sequences (ws : List Bool) :
+  Generative.AcquiredBinding.interpret (Generative.EncounterChoice.acquired 51).situation.lexicon
+      (Generative.AcquiredSegmentation.encode ws) =
+    Generative.AcquiredSegmentation.assembleMessage (List.map Generative.CompositionalAcquisition.Expr.atom ws)
+Generative.EncounterChoice.selected_history_reaches_actual_response :
+  Option.map (fun r => (r.fst, r.snd.percept.machine.support, r.snd.percept.machine.spent))
+      (Generative.AcquiredBinding.execute Generative.AcquiredSegmentation.utterance
+        (Generative.EncounterChoice.acquired 51).situation.lexicon) =
+    some ([true, false, true], 0, 44)
+Generative.EncounterChoice.history_accounts_for_survey_and_use :
+  (Generative.EncounterChoice.acquired 51).situation.lexicon.percept.machine.support = 4 ∧
+    (Generative.EncounterChoice.acquired 51).views.length = 6 ∧
+      (Generative.EncounterChoice.acquired 51).tried = Generative.EncounterChoice.catalogue ∧
+        7 + 7 + 10 + 8 + 3 + 5 + 3 + 4 + 4 = 51
+Generative.EncounterChoice.changed_arrangement_can_leave_an_accurate_old_record_stale :
+  Generative.EncounterChoice.olderView.views =
+      [{ position := (0, 1),
+          seen := [Generative.CompositionalAcquisition.p0, Generative.CompositionalAcquisition.p1] }] ∧
+    Generative.EncounterChoice.recalled Generative.EncounterChoice.staleChoice.views (0, 1) =
+        some [Generative.CompositionalAcquisition.p0, Generative.CompositionalAcquisition.p1] ∧
+      Generative.EnactedScene.visible
+          (Generative.EnactedScene.move (0, 1) Generative.EncounterChoice.staleChoice.situation) =
+        [Generative.CompositionalAcquisition.p0, Generative.AcquiredBinding.extra]
+Generative.EncounterChoice.stale_prediction_changes_choice_before_reobservation :
+  Generative.EncounterChoice.choose Generative.EncounterChoice.staleChoice.situation.lexicon
+      Generative.EncounterChoice.staleChoice.views Generative.EncounterChoice.staleChoice.tried
+      Generative.EncounterChoice.catalogue =
+    some (2, 2)
+Generative.EncounterChoice.reobservation_revises_the_access_model_and_next_choice :
+  Generative.EncounterChoice.recalled
+        (Generative.EncounterChoice.survey (0, 1) Generative.EncounterChoice.staleChoice).views (0, 1) =
+      some [Generative.CompositionalAcquisition.p0, Generative.AcquiredBinding.extra] ∧
+    List.take Generative.EncounterChoice.staleChoice.views.length
+          (Generative.EncounterChoice.survey (0, 1) Generative.EncounterChoice.staleChoice).views =
+        Generative.EncounterChoice.staleChoice.views ∧
+      Generative.EncounterChoice.choose
+          (Generative.EncounterChoice.survey (0, 1) Generative.EncounterChoice.staleChoice).situation.lexicon
+          (Generative.EncounterChoice.survey (0, 1) Generative.EncounterChoice.staleChoice).views
+          Generative.EncounterChoice.staleChoice.tried Generative.EncounterChoice.catalogue =
+        some (0, 1)
+Generative.EncounterChoice.survey_without_names_does_not_supply_bindings :
+  (Generative.EncounterChoice.calibrated 51).situation.lexicon.records = [] ∧
+    Generative.AcquiredBinding.interpret (Generative.EncounterChoice.calibrated 51).situation.lexicon
+        Generative.AcquiredSegmentation.utterance =
+      none
+Generative.EncounterChoice.poor_catalogue_leaves_ambiguity :
+  Generative.EncounterChoice.complete
+        (Generative.EncounterChoice.run 3 [(1, 0)] (Generative.EncounterChoice.calibrated 51)).situation.lexicon =
+      false ∧
+    Generative.EncounterChoice.choose
+        (Generative.EncounterChoice.run 3 [(1, 0)] (Generative.EncounterChoice.calibrated 51)).situation.lexicon
+        (Generative.EncounterChoice.run 3 [(1, 0)] (Generative.EncounterChoice.calibrated 51)).views [(1, 0)] [(1, 0)] =
+      none
+Generative.EncounterChoice.acquired_binding_can_exhaust_response_support :
+  Generative.AcquiredBinding.interpret (Generative.EncounterChoice.acquired 50).situation.lexicon
+        Generative.AcquiredSegmentation.utterance =
+      some Generative.AcquiredSegmentation.intended ∧
+    Generative.AcquiredBinding.execute Generative.AcquiredSegmentation.utterance
+        (Generative.EncounterChoice.acquired 50).situation.lexicon =
+      none
+Generative.EncounterChoice.known_access_does_not_execute_an_unaffordable_visit :
+  (Generative.EncounterChoice.visit (0, 1) (Generative.EncounterChoice.first 38)).situation.position = (1, 0) ∧
+    (Generative.EncounterChoice.visit (0, 1) (Generative.EncounterChoice.first 38)).situation.lexicon.records =
+      (Generative.EncounterChoice.first 38).situation.lexicon.records
+Generative.EncounterChoice.local_naming_does_not_name_an_absent_atom :
+  List.map Generative.AcquiredBinding.Encounter.form
+      (Generative.EncounterChoice.localNaming
+              (Generative.EncounterChoice.survey (0, 1)
+                (Generative.EncounterChoice.initial 40))).situation.lexicon.records =
+    [Generative.AcquiredSegmentation.word false]
+Generative.EncounterChoice.removing_coverage_can_make_the_stopping_rule_wrong :
+  Generative.EncounterChoice.complete (Generative.EnactedScene.mistimed 51).lexicon = true ∧
+    Generative.EncounterChoice.choose (Generative.EnactedScene.mistimed 51).lexicon
+          (Generative.EncounterChoice.calibrated 51).views [] Generative.EncounterChoice.catalogue =
+        none ∧
+      Option.map Prod.fst
+          (Generative.AcquiredBinding.execute Generative.AcquiredSegmentation.utterance
+            (Generative.EnactedScene.mistimed 51).lexicon) =
+        some [false, true, false]

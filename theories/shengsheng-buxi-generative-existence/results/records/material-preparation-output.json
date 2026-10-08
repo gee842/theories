@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "id": "material-preparation-output",
+  "title": {
+    "zh": "材料准备的实际输出",
+    "en": "Actual material preparation output"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F10",
+  "reviewed_at_utc": "2026-10-08T13:32:50.150004+00:00",
+  "claim": {
+    "zh": "八单位路由支持下，整池完成指定八槽准备恰好要求四 A 四 B；实际路由轨迹保留放置与剩余材料。",
+    "en": "With eight routing support units, whole-pool completion of the specified eight-slot preparation requires exactly four A and four B; the actual trace preserves placed and residual material."
+  },
+  "hypotheses": [
+    {
+      "zh": "给定目标配方、按类型取用和移动的能力；完成要求无剩余池，失败保留部分状态。",
+      "en": "Supplied target recipe and type-sensitive removal/movement; completion requires no residual pool, while failure retains partial state."
+    }
+  ],
+  "correspondence": {
+    "zh": "实际 routeTrace 输出是可复用的材料接口；它未记录承重机械边。",
+    "en": "The actual routeTrace output is the reusable material interface; it does not record load-bearing mechanical edges."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/MaterialMaturation.lean",
+  "aliases": [
+    "MaterialMaturation.actual_preparation_iff"
+  ],
+  "dependencies": [],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/MaterialMaturation.lean",
+      "detail": {
+        "zh": "配方及路由能力的形成、机械解离和供给更新未解释；成功标量不能代替实际材料。",
+        "en": "Recipe/capability formation, mechanical release and renewed provision remain unexplained; a success scalar does not replace actual material."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "配方及路由能力的形成、机械解离和供给更新未解释；成功标量不能代替实际材料。",
+    "en": "Recipe/capability formation, mechanical release and renewed provision remain unexplained; a success scalar does not replace actual material."
+  },
+  "validation_scope": {
+    "zh": "所列 Lean 回执绑定实际源码；推论有效性与生物对应分列。",
+    "en": "The cited Lean receipt binds the actual source; inference validity and biological correspondence remain distinct."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/MaterialMaturation.lean",
+      "role": "proof",
+      "sha256": "129096807280cc6c6a3b3a06f2c70eeca32d108ec16dc145db7cf5222446b915",
+      "declarations": [
+        "MaterialMaturation.actual_preparation_iff",
+        "MaterialMaturation.route_trace_projection",
+        "MaterialMaturation.routing_trace_accounts"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/material-maturation-verification/verification.json",
+      "role": "receipt",
+      "sha256": "f45b6dffcdbec9958f379046dabdc4e2963a0313ca99c1843e6d17ab9cb1e8d5",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-MATURATION-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "378d61782cecff22b7d677f6afcf029623dcf93c1b63ff8c527ed003e27ee513",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/MaterialMaturation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/material-maturation-verification/verification.json",
+      "sha256_pointer": "/source_sha256/MaterialMaturation.lean",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "作为已完成材料接口复用；本轮接到真实接合和重复结构生成。",
+    "en": "Reuse the completed material interface; the present continuation connects actual attachment and repeated structural formation."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：按本轮实际审读及所列回执登记范围；原证明和反例保持。",
+      "en": "2026-10-08: recorded the actually reviewed scope and cited receipt, preserving original proofs and counterexamples."
+    }
+  ]
+}

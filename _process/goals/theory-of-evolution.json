@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "theory-of-evolution",
+  "title": {
+    "en": "The Theory of Evolution",
+    "zh": "演化理论"
+  },
+  "scope_type": "authorized-session",
+  "scope": {
+    "en": "The separately authorized evolutionary-theory programme, made visible in the shared README by Ren; its theoretical focus does not displace other sessions.",
+    "zh": "独立获授权的演化理论研究；Ren 要求将其展示于共同 README。其理论重点不替代其他会话范围。"
+  },
+  "objective": {
+    "en": "Establish a generative theory of evolution with a connected account of organization, transmission, reconstruction, development and changing selection, and demonstrate its explanatory and comparative strength.",
+    "zh": "建立生成性的演化理论，接通组织、传递、重构、发育与变化中的选择，并说明其解释及比较优势。"
+  },
+  "premises": {
+    "en": "Begin with one relational unfolding; retain local laws, inheritance and selection correspondence. Evolutionary success supplies no ethical authority. The active theoretical comparison concerns explicit premises and recovery of established results; new measurements are not its completion gate.",
+    "zh": "从同一关系展开开始，保留局部规律、遗传与选择对应。演化成功不提供伦理权威。当前理论比较关注公开前提与既有结果的恢复；新测量不是其完成门槛。"
+  },
+  "completion": {
+    "en": "The full evolutionary and comparative claim remains active. Credit completed local derivations at their stated scope and complete the remaining organizing-variation and selection connections. Keep the broader empirical programme separate from the current theoretical comparison.",
+    "zh": "完整演化及比较主张仍在推进。按原范围复用已完成局部推导，继续组织变异及选择的剩余连接；更广经验计划与本轮理论比较分别保留。"
+  },
+  "sources": [
+    "sources/15-codex-theory-conversations/2026-10-08-the-theory-of-evolution-goal.md",
+    "sources/15-codex-theory-conversations/2026-10-08-evolution-theoretical-focus.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md#current-theoretical-focus",
+    "sources/15-codex-theory-conversations/2026-10-08-readme-research-progress-and-push.md"
+  ],
+  "result_ids": [
+    "growth-constrained-fragmentation",
+    "material-preparation-output",
+    "recurrent-chain-assembly"
+  ],
+  "overview": {
+    "title": {
+      "en": "Investigating The Theory of Evolution",
+      "zh": "论证 The Theory of Evolution"
+    },
+    "summary": {
+      "en": "We are investigating whether the same generative account can establish The Theory of Evolution. Conditional results connect formation, transmission, reconstruction, developmental memory and revision of updating rules. A recent checked construction rebuilds a chain through any finitely supplied number of cycles, retaining actual material costs and failure. The full explanatory and comparative claim remains an active research objective.",
+      "zh": "我们正在论证同一生成论述能否建立 The Theory of Evolution。有条件成果已接通形成、传递、重构、发育记忆及更新规则修订。最近的经检查构造在任意有限供给轮数中重新建立链状组织，保留实际材料消耗与失败。完整解释及比较主张仍是正在推进的目标。"
+    },
+    "next_step": {
+      "en": "Explain heritable variation in organizing relations and its selection consequences; establish what the connected account explains beyond equally informed existing theories. Reuse the completed theoretical recoveries and constructions.",
+      "zh": "说明组织关系的可遗传变异及其选择后果；比较在同等信息下，接通的论述比既有理论多解释了什么。直接复用已完成的理论恢复与构造。"
+    }
+  }
+}
