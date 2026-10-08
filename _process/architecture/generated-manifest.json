@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
   "files": {
-    "README.md": "62597a9531d8e1b7013cdac94e082538c9e4cbf46d6ddc8b20f961ff0090a58f",
+    "README.md": "0fe3fb711332229859422efd2359ca37f1c10f21f76b0b57589f795234560e83",
     "RESEARCH.md": "b4a406a32698ae30212e0c3a40a26d9ba71e859142e6bd96177beee08353c486",
     "RESULTS.md": "daecdfdb9b37a7fb37c646c625a32bbca8902c7ae6750c0369864ffd0d9105b2",
     "GOALS.md": "98f9c76a078fa83ae296c09f034e179cc96654d677461659501f8732793a17d7",
     "DEPENDENCIES.md": "c200ae27a87a48b642c72f72f16929f34862af15fae6713e315fdc18bd35f6c1",
-    "_process/BRIEF.md": "5f3005b122b90314e0a33e4004b6687d91a0b889b5cb1a0bc69cb27f9e8a9d72",
-    "theories/shengsheng-buxi-generative-existence/README.md": "283ecc558cc0a6228ea4391975acd40d8edbb092aa3abbb890b161db0ee283bc",
+    "_process/BRIEF.md": "205a9ab87e85f0e4be074f153ee8a17ae0ea800cc228be4f0488c4b2705fc904",
+    "theories/shengsheng-buxi-generative-existence/README.md": "42a250937b6df46129f49bd2e2888fc69bf615f2d7637f20fbd45baf4cce39fe",
     "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md": "1a42311c5b138f04f9061c77809ce3f19e40be479cf2ed108a4b67aeb0fc00d6",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": "488455208d005b447fff6183e5682bb4a931b1c65dbc318d1a6eef29d045fe99",
     "OPEN-QUESTIONS.md": "2b2e7f406f1bf83041e0fa0774ab55f551d35cb6bdce64c789bbf737cc6b98d9",

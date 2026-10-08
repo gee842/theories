@@ -6,6 +6,8 @@
 
 我们研究同一生成展开中的关系怎样形成、持续和改变，组织、生命、认识、学习、评价与智慧怎样在其中分化。保留实际损失、不同范围和反例；局部模型的成功不自动证明普遍根据。
 
+正典入口 / Canonical entry: [The Theory of Becoming / 生成／变化之论](unified-2026-10-05/THE-THEORY-OF-BECOMING.md)——前提卡、八个部分、形式脊柱与既有章节的位置。
+
 We investigate how relations form, persist and change within one generative unfolding, and how organization, living, knowing, learning, evaluation and wisdom differentiate within it. Real losses, distinct scopes and counterexamples remain explicit.
 
 Read [the shared method / 非二元方法](unified-2026-10-05/NONDUAL-METHOD.md) before foundational work. [Working rules / 工作规则](../../AGENTS.md) apply throughout; the scope directory preserves independently authorized goals.
