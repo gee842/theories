@@ -22,7 +22,7 @@ sys.path.insert(0, str(LEAN_ROOT / "universal-ethics" / "generative-capacity"))
 import check as audit_support  # noqa: E402
 
 # Spine modules in this directory, in layer order.
-SPINE = ["BecomingFrame", "BecomingModal", "MetaethicalCore", "BecomingInstances"]
+SPINE = ["BecomingFrame", "BecomingModal", "BecomingRenewal", "MetaethicalCore", "BecomingInstances"]
 RECEIPT = HERE / "becoming-verification.json"
 RETAINED = HERE / "becoming-checks"
 
@@ -30,6 +30,10 @@ SCOPE = (
     "Spine: a Frame is the core Process with realized claims; runs, reachability, invariants and new "
     "realization are defined through the core Trace; the visible scope of an inquiry is the set of "
     "configurations its actual executions reach, and a sound policy secures its goal there. "
+    "Renewal: a run read through observables of conditions is one relational unfolding; an observable "
+    "that never rises from some step on falls only finitely often, with depletion, recurrent renewal "
+    "under a natural-number rank and unrenewed drawdown as its cases; in one process from one "
+    "configuration one run renews and another consumes. "
     "Metaethical core: on a connected whole with some living claim, significance of every living claim "
     "from every standpoint (G0 at claim level) is equivalent to a seed together with relational and "
     "standpoint neutrality; the positioned articulation D follows from the articulation premise A; a "
@@ -37,7 +41,10 @@ SCOPE = (
     "Each of seed, relational neutrality, standpoint neutrality, connection and A has a consistent "
     "countermodel, and each rival satisfies the same rule inside a formed boundary. The lifting rule L "
     "is transitive only through a live middle response. No premise is proved, no rejecting position is "
-    "bound, and no duty, ranking, recognition or compliance is inferred. "
+    "bound, and no duty, ranking, recognition or compliance is inferred. On a run read relationally, "
+    "a condition in which every living formation participates discharges connection, and without one "
+    "connection can fail; consumption is a formed relation, so under N_rel valuing a consuming "
+    "formation's activity reaches the living events of the formation it consumes. "
     "Instances: seed-edge closures and evaluator chains are reachability on the edge process; a "
     "frame's reachable configurations form a joint-continuation space whose bundles step-preserving "
     "maps carry and lifting summaries reflect; robust responses, guarantees, live steps and evidence "
@@ -149,6 +156,14 @@ theorem grow_reason : ∀ p, access p (.respond ()) → routeReason p (.respond 
 -- The continuation instance is nonvacuous: a reached configuration realizes the living claim.
 example : JointContinuationClassification.Jointly (grow.continuations false) (fun _ => True) :=
   ⟨true, Reach.of_step (a := ()) ⟨rfl, rfl⟩, fun _ _ => rfl⟩
+
+-- The common-condition discharge is nonvacuous: in the commons, every formation participates.
+example : (Commons.conditions.valuation Commons.sharing (fun (_ : Unit) _ => True)
+    (fun _ _ => True)).Connected :=
+  Commons.conditions.connected_of_common Commons.sharing _ _ ()
+    (fun e _ => match e with
+      | (.focal, _) => Or.inr trivial
+      | (.sustaining, _) => Or.inl trivial)
 """
 
 
@@ -244,6 +259,7 @@ def main():
                 {"claim": "the full premise set has a model", "kernel_checked": True, "counted_as_new_theorem": False},
                 {"claim": "universal_reason has a nonvacuous instance on a one-step frame", "kernel_checked": True, "counted_as_new_theorem": False},
                 {"claim": "a frame's continuation space has a reached configuration realizing a living claim", "kernel_checked": True, "counted_as_new_theorem": False},
+                {"claim": "a run with a common condition is connected under the relational reading", "kernel_checked": True, "counted_as_new_theorem": False},
             ]
         receipt["source_unchanged_during_check"] = all(
             paths[name].read_bytes() == data for name, data in sources.items())

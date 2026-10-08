@@ -20,7 +20,7 @@ Read [the shared method / 非二元方法](unified-2026-10-05/NONDUAL-METHOD.md)
 
 ## 已登记成果 / Registered results
 
-91 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
+92 records. Status and scope are read from the individual JSON records. This is migration coverage, not a count of all results in the corpus. / 状态及范围来自各项记录；条目数不等于全库成果总数。
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
@@ -30,6 +30,7 @@ Read [the shared method / 非二元方法](unified-2026-10-05/NONDUAL-METHOD.md)
 | [G0/J 的 AI 对齐方向应用 / AI alignment direction from G0/J](results/records/alignment-direction-g0-j.md) | reviewed-scoped | [ALIGNMENT-DIRECTION.md](unified-2026-10-05/ALIGNMENT-DIRECTION.md) |
 | [三路线中的保证到达条件 / Assured arrival in the three-route process](results/records/assured-route-criterion.md) | recorded-checked | [WisdomResponseStructure.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomResponseStructure.lean) |
 | [保留与变化情境中的相容历史 / Coherent histories across retained and changing contexts](results/records/becoming-context-coherence.md) | recorded-checked | [BecomingCompatibility.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/BecomingCompatibility.lean) |
+| [运行上的更新／消耗与生生的关系读法：连通由共同条件给出，消耗本身是关系 / Renewal on runs and the relational reading: a common condition gives connection, and consumption is itself a relation](results/records/becoming-renewal-reading.md) | recorded-checked | [BecomingRenewal.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingRenewal.lean) |
 | [既有接口是 Becoming 脊柱的实例；比较经提升规则推广到每个框架 / Existing interfaces are instances of the Becoming spine; comparison extends to every frame under the lifting rule](results/records/becoming-spine-instances.md) | recorded-checked | [BecomingInstances.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingInstances.lean) |
 | [保留绑定的代入及精确位置判据 / Binding-preserving substitution and its exact position criterion](results/records/binding-preserving-substitution.md) | recorded-checked | [InferentialSubstitution.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/InferentialSubstitution.lean) |
 | [分支测试下的目标唯一性 / Target uniqueness for branching tests](results/records/branching-target-uniqueness.md) | recorded-checked | [ExplanatoryBranching.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean) |

@@ -184,6 +184,10 @@ Ren明确整体Theory of Becoming是演绎必然性的对象，生成性是其ma
 
 [becoming-context-coherence](records/becoming-context-coherence.md): `recorded-checked`
 
+[becoming-renewal-reading](records/becoming-renewal-reading.md): `recorded-checked`
+
+[becoming-spine-instances](records/becoming-spine-instances.md): `recorded-checked`
+
 [conditional-foundation-assessment](records/conditional-foundation-assessment.md): `reviewed-scoped`
 
 [endpoint-loss-and-return](records/endpoint-loss-and-return.md): `recorded-checked`

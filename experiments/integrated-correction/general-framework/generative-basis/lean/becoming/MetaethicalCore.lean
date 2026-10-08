@@ -1,4 +1,6 @@
 import BecomingModal
+import BecomingRenewal
+import RenewalComparison
 import GenerativeComparison
 import PracticalJudgment
 import PositionedPositiveReason
@@ -30,7 +32,10 @@ The premise card, every item named and visible:
   conservative default, every outcome better than every outcome.
 * J1–J4: `PracticalJudgment` (protection priority, frontier selection, assigned
   responsibility), stated on configurations by `BetterAt`.
-* Correspondence: E (formation), `Connected`, and the reading of `living`.
+* Correspondence: E (formation), `Connected`, and the reading of `living`. The
+  Becoming layer can supply the last two: `Conditions.valuation` reads a run's
+  formation events relationally, so that `living` is the relational reading and
+  `related` is participation in a common condition.
 
 Results:
 * `significant_iff`: on a connected whole with some living content, G0 for every
@@ -44,6 +49,12 @@ Results:
 * Minimality: dropping the seed, N_rel, N_std, connection or A each leaves a
   consistent countermodel. Each rival accepts the same rule inside a formed
   boundary: its own region, its own standpoint, or endorsers.
+* On a run read relationally, a condition in which every living formation
+  participates discharges connection (`significant_iff_of_common`); without one,
+  connection can fail (`Separate.not_connected`). Consumption is itself a formed
+  relation, so under N_rel a standpoint valuing a consuming formation's activity
+  holds significant the living events of the formation it consumes
+  (`valuing_consumption_reaches`).
 
 Nothing here proves S0, N, A, C, L or J, binds a position that rejects them, or
 treats bringing new lives into existence. A contributory reason is not a duty, a
@@ -229,6 +240,114 @@ theorem LiftBetter.some {F : Frame S A C} {better : S → S → Prop} {s : S} {a
     ∃ t t', F.P.step s a t ∧ F.P.step s b t' ∧ better t t' :=
   match liveA, liveB with
   | ⟨t, ht⟩, ⟨t', ht'⟩ => ⟨t, t', ht, ht', lifted t ht t' ht'⟩
+
+/-! ## The relational reading supplied by the Becoming layer -/
+
+section Reading
+
+open RelationalRenewal
+
+/-- Formation events of a run read through its conditions. An event is living when
+its formation is active and does not consume in the run (the relational reading of
+`RenewalComparison`); two events are related when their formations participate in a
+common condition. Standpoints, their regions and significance remain supplied. -/
+def Conditions.valuation {F Cond : Type} {P : Process S A} (K : Conditions S F Cond)
+    (r : Run P) (own sig : Pos → F × Nat → Prop) : Valuation Pos (F × Nat) where
+  living e := (K.along r).active e.2 e.1 ∧ ¬ ConsumingIn (K.along r) e.1
+  related e e' := ∃ c, Participates (K.along r) e.1 c ∧ Participates (K.along r) e'.1 c
+  own := own
+  sig := sig
+
+namespace Conditions
+
+variable {F Cond : Type} {P : Process S A} (K : Conditions S F Cond) (r : Run P)
+  (own sig : Pos → F × Nat → Prop)
+
+/-- The spine's `living` is the recorded relational reading. -/
+theorem living_iff_relational (e : F × Nat) :
+    (K.valuation r own sig).living e ↔
+      (RenewalComparison.relationalInventory (fun _ : Unit => K.along r)).realized () e :=
+  Iff.rfl
+
+/-- A condition in which every living formation participates connects the whole. -/
+theorem connected_of_common (c₀ : Cond)
+    (common : ∀ e, (K.valuation r own sig).living e → Participates (K.along r) e.1 c₀) :
+    (K.valuation r own sig).Connected :=
+  fun c d alive alive' =>
+    Reach.of_step (a := ()) ⟨⟨c₀, common c alive, common d alive'⟩, alive'⟩
+
+/-- With a common condition, G0 for every standpoint is exactly a seed with N_rel and
+N_std: connection is supplied by the unfolding, not assumed. -/
+theorem significant_iff_of_common (c₀ : Cond)
+    (common : ∀ e, (K.valuation r own sig).living e → Participates (K.along r) e.1 c₀)
+    (p₀ : Pos) {e₀ : F × Nat} (alive₀ : (K.valuation r own sig).living e₀) :
+    (K.valuation r own sig).Significant ↔ (K.valuation r own sig).Grounds :=
+  Valuation.significant_iff (connected_of_common K r own sig c₀ common) p₀ alive₀
+
+/-- Consumption is itself a formed relation: a consuming formation shares the drawn
+condition with a formation that loses its support there from some step on. -/
+theorem consumption_relates {f : F} (consuming : ConsumingIn (K.along r) f) :
+    ∃ g T, (∀ t, T ≤ t → ¬ Supported (K.along r) t g) ∧
+      ∀ t t', (K.valuation r own sig).related (f, t) (g, t') :=
+  match consuming with
+  | ⟨c, drawn, g, T, depends, lost⟩ =>
+    ⟨g, T, fun t after supported => Nat.not_le_of_gt (lost t after) (supported c depends),
+      fun _ _ => ⟨c, Or.inr drawn, Or.inl depends⟩⟩
+
+/-- Under N_rel, a standpoint that values a consuming formation's activity holds
+significant every living event of a formation it consumes. Under the relational
+reading the consumer's own events are not living, so S0 alone supplies no such
+valuation; a boundary, not the absence of relation, is what N_rel's rival needs. -/
+theorem valuing_consumption_reaches (transmit : Neutral (K.valuation r own sig).transmits)
+    {f : F} (consuming : ConsumingIn (K.along r) f) :
+    ∃ g T, (∀ t, T ≤ t → ¬ Supported (K.along r) t g) ∧
+      ∀ p t t', (K.valuation r own sig).sig p (f, t) →
+        (K.valuation r own sig).living (g, t') → (K.valuation r own sig).sig p (g, t') :=
+  match consumption_relates K r own sig consuming with
+  | ⟨g, T, lost, related⟩ =>
+    ⟨g, T, lost, fun p t t' held alive => transmit (p, (f, t), (g, t')) held (related t t') alive⟩
+
+end Conditions
+
+/-! Two formations, each participating only in its own condition: both are living
+and nothing consumes, yet no formed relation links them. -/
+
+namespace Separate
+
+def same : Bool → Bool → Prop
+  | false, false => True
+  | false, true => False
+  | true, false => False
+  | true, true => True
+
+def frame : Process Unit Unit := ⟨fun _ _ _ => True⟩
+
+def still : Run frame := ⟨fun _ => (), fun _ => (), fun _ => trivial⟩
+
+def conditions : Conditions Unit Bool Bool :=
+  ⟨fun _ _ => 0, fun _ _ => True, same, fun _ _ => 0, fun _ _ => False⟩
+
+theorem stays (e e' : Bool × Nat)
+    (related : ∃ c, (same e.1 c ∨ False) ∧ (same e'.1 c ∨ False)) :
+    e.1 = false → e'.1 = false :=
+  match e, e', related with
+  | (false, _), (false, _), _ => fun _ => rfl
+  | (true, _), _, _ => fun h => Bool.noConfusion h
+  | (false, _), (true, _), ⟨false, _, .inl h⟩ => (nomatch h)
+  | (false, _), (true, _), ⟨true, .inl h, _⟩ => (nomatch h)
+  | (_, _), (_, _), ⟨_, .inr h, _⟩ => (nomatch h)
+  | (_, _), (_, _), ⟨_, _, .inr h⟩ => (nomatch h)
+
+theorem not_connected (own sig : Unit → Bool × Nat → Prop) :
+    ¬ (conditions.valuation still own sig).Connected := fun connected =>
+  Bool.noConfusion (Invariant.reach (P := (conditions.valuation still own sig).relations)
+    (I := fun e => e.1 = false) (fun e _ e' step => stays e e' step.1)
+    (connected (false, 0) (true, 0) ⟨trivial, fun ⟨_, drawn, _⟩ => drawn⟩
+      ⟨trivial, fun ⟨_, drawn, _⟩ => drawn⟩) rfl)
+
+end Separate
+
+end Reading
 
 /-! ## Minimality: each premise is needed, and each rival is a bounded rule -/
 

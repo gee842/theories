@@ -8,7 +8,7 @@
 
 [Contribution workflow / 贡献流程](../../../_process/RESULT-WORKFLOW.md) · [Session map / 会话地图](SESSION-RESULTS.md) · [Full catalogue / 完整目录](README.md)
 
-91 migrated records: 87 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
+92 migrated records: 88 scoped results/arguments/assessments and 4 open targets. This is a bounded migration, not a repository-wide semantic deduplication.
 
 `recorded-checked` credits an existing Lean receipt; `reviewed-scoped` credits an existing substantive review; `open` marks an unmet target. None certifies a stronger claim. Hash drift requires reading the changed source before updating its record.
 
@@ -20,6 +20,7 @@
 | `alignment-direction-g0-j` | [G0/J 的 AI 对齐方向应用 / AI alignment direction from G0/J](records/alignment-direction-g0-j.md) | argument | reviewed-scoped |
 | `assured-route-criterion` | [三路线中的保证到达条件 / Assured arrival in the three-route process](records/assured-route-criterion.md) | theorem | recorded-checked |
 | `becoming-context-coherence` | [保留与变化情境中的相容历史 / Coherent histories across retained and changing contexts](records/becoming-context-coherence.md) | theorem | recorded-checked |
+| `becoming-renewal-reading` | [运行上的更新／消耗与生生的关系读法：连通由共同条件给出，消耗本身是关系 / Renewal on runs and the relational reading: a common condition gives connection, and consumption is itself a relation](records/becoming-renewal-reading.md) | theorem | recorded-checked |
 | `becoming-spine-instances` | [既有接口是 Becoming 脊柱的实例；比较经提升规则推广到每个框架 / Existing interfaces are instances of the Becoming spine; comparison extends to every frame under the lifting rule](records/becoming-spine-instances.md) | theorem | recorded-checked |
 | `binding-preserving-substitution` | [保留绑定的代入及精确位置判据 / Binding-preserving substitution and its exact position criterion](records/binding-preserving-substitution.md) | theorem | recorded-checked |
 | `branching-target-uniqueness` | [分支测试下的目标唯一性 / Target uniqueness for branching tests](records/branching-target-uniqueness.md) | theorem | recorded-checked |

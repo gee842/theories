@@ -184,6 +184,10 @@ Ren明确整体Theory of Becoming是演绎必然性的对象，生成性是其ma
 
 [becoming-context-coherence](theories/shengsheng-buxi-generative-existence/results/records/becoming-context-coherence.md): `recorded-checked`
 
+[becoming-renewal-reading](theories/shengsheng-buxi-generative-existence/results/records/becoming-renewal-reading.md): `recorded-checked`
+
+[becoming-spine-instances](theories/shengsheng-buxi-generative-existence/results/records/becoming-spine-instances.md): `recorded-checked`
+
 [conditional-foundation-assessment](theories/shengsheng-buxi-generative-existence/results/records/conditional-foundation-assessment.md): `reviewed-scoped`
 
 [endpoint-loss-and-return](theories/shengsheng-buxi-generative-existence/results/records/endpoint-loss-and-return.md): `recorded-checked`

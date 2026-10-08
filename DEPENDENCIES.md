@@ -66,6 +66,42 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/BecomingCompatibility.lean)
 
+## becoming-renewal-reading ← relational-renewal-classification
+
+`formal-reuse` — Conditions.along 产出该结果的 Unfolding；falls_finitely 与 drawdown_finite 直接调用 unrenewed_drawdown_finite；分类谓词 ConsumingIn、Participates、Supported 原样使用。 / Conditions.along produces that result's Unfolding; falls_finitely and drawdown_finite directly call unrenewed_drawdown_finite; the predicates ConsumingIn, Participates and Supported are used as defined.
+
+**Producer output / 上游输出:** 任意展开上的更新／消耗分类与无更新汲取有限界。 / The renewing/consuming classification on arbitrary unfoldings and the finite bound on unrenewed drawdown.
+
+**Consumer input / 下游输入:** 运行经可观测量读出的展开。 / The unfolding read from a run through observables.
+
+**Retained conditions / 保留条件:** 依存与汲取为静态；水平为自然数。 / Static dependence and drawing; natural-number levels.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingRenewal.lean)
+
+## becoming-renewal-reading ← relational-reading-comparison
+
+`formal-reuse` — living_iff_relational 表明脊柱上的 living 就是该结果的 relationalInventory（取一条延续）。 / living_iff_relational shows that the spine's `living` is that result's relationalInventory (for one continuation).
+
+**Producer output / 上游输出:** 关系读法：活跃且不消耗的形成事件为生成根据。 / The relational reading: active events of non-consuming formations are generative grounds.
+
+**Consumer input / 下游输入:** Conditions.valuation 的 living。 / `living` of Conditions.valuation.
+
+**Retained conditions / 保留条件:** 延续族取单一运行。 / The family of continuations is one run.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean)
+
+## becoming-renewal-reading ← metaethical-core-characterization
+
+`formal-reuse` — significant_iff_of_common 以 connected_of_common 满足 significant_iff 的连通前提；valuing_consumption_reaches 使用 N_rel 的规则 transmits。 / significant_iff_of_common discharges significant_iff's connection premise by connected_of_common; valuing_consumption_reaches uses N_rel's rule transmits.
+
+**Producer output / 上游输出:** 连通整体上 G0 ⇔ 种子 ∧ N_rel ∧ N_std；N_rel 的传递规则。 / On a connected whole, G0 ⇔ seed ∧ N_rel ∧ N_std; N_rel's transmission rule.
+
+**Consumer input / 下游输入:** 由运行的关系读法给出的 Valuation 及其连通。 / The Valuation given by a run's relational reading, with its connection.
+
+**Retained conditions / 保留条件:** 立场、区域与意义仍外给；需要一个活的事件。 / Standpoints, regions and significance remain supplied; some living event is needed.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean)
+
 ## becoming-spine-instances ← metaethical-core-characterization
 
 `formal-reuse` — comparison_lifts 与各提升定理直接使用 Comparison（C）、LiftBetter（L）、Frame.inventory 与 Enabled；PositiveGroundUncertainty 与 PositionedPositiveReason 的接口实例就是 universal_reason。 / comparison_lifts and the lifted theorems directly use Comparison (C), LiftBetter (L), Frame.inventory and Enabled; the interface instance for PositiveGroundUncertainty and PositionedPositiveReason is universal_reason itself.

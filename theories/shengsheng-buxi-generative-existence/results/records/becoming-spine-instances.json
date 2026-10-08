@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-08T20:13:24+00:00",
+  "reviewed_at_utc": "2026-10-08T20:31:07+00:00",
   "claim": {
     "zh": "种子—边闭包（WholeGroundCoverage 的 Reached、CutCoverageAudit 的 Reach）与评价者链（EvaluatorGrounding 的 Chain）恰是边过程上的可达。框架的可达配置构成共同延续空间：保持步骤与主张的映射携带每个可共同实现的组合，步骤可提升、主张可反映的摘要不丢失任何组合。稳健回应恰是可容许性取完成的共同回应，反之每个稳健回应都是某个过程的共同回应；保证即一步完成；LiveStep 即 Enabled；按一次观察过滤规则表即纯观察上的 After。函数式情境的实践表述恰是提升规则 L 下表述在确定框架上的情形；在 L 下，生成比较提升到回应，并给出理由、协调选择的存活与持续改进无存活者，对每个框架成立。L 是实质承诺：有一好一坏两个结果的回应，在保守规则下两个方向都不可比。",
     "en": "Seed–edge closures (WholeGroundCoverage.Reached, CutCoverageAudit.Reach) and evaluator chains (EvaluatorGrounding.Chain) are exactly reachability on the edge process. A frame's reachable configurations form a joint-continuation space: a step- and claim-preserving map carries every jointly realizable bundle, and a summary whose steps lift and whose claims reflect loses none. A robust response is exactly a common response with completion as admissibility, and every robust response is a common response of some process; a guarantee is one-step completion; LiveStep is Enabled; filtering a rule list by one observation is After on a pure observation. The functional articulation of a situation is exactly the articulation under the lifting rule L on the deterministic frame; under L, generative comparison lifts to responses and supplies reasons, survival of coherent selection and the absence of survivors under continual improvement on every frame. L is substantive: a response with one better and one worse outcome is comparable in neither direction under the conservative rule."
@@ -28,8 +28,8 @@
     }
   ],
   "correspondence": {
-    "zh": "按核心约定，配置保留问题所需的历史，因此把模块的历史类型取为框架的配置是对应选择，不是 Lean 结果。分类页逐模块记录其定理经桥接、因已在核心上、或经类型代入作用于脊柱，以及哪些模块有意不桥接（Mathlib 叶子、具体模型）与留给 P3b 的更新／消耗模块。",
-    "en": "By the core convention a configuration retains whatever history the question needs, so taking a module's history type as a frame's configurations is a correspondence choice, not a Lean result. The classification page records, module by module, whether its theorems reach the spine by a bridge, by already being on the core, or by type substitution, and which modules are deliberately not bridged (Mathlib leaves, concrete models) or left to P3b (renewal and consumption)."
+    "zh": "按核心约定，配置保留问题所需的历史，因此把模块的历史类型取为框架的配置是对应选择，不是 Lean 结果。分类页逐模块记录其定理经桥接、因已在核心上、或经类型代入作用于脊柱，以及哪些模块有意不桥接（Mathlib 叶子、具体模型）；两个更新模块由 P3b 归入运行上的更新界。",
+    "en": "By the core convention a configuration retains whatever history the question needs, so taking a module's history type as a frame's configurations is a correspondence choice, not a Lean result. The classification page records, module by module, whether its theorems reach the spine by a bridge, by already being on the core, or by type substitution, and which modules are deliberately not bridged (Mathlib leaves, concrete models); P3b places the two renewal modules as renewal bounds on runs."
   },
   "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingInstances.lean",
   "aliases": [
@@ -132,18 +132,18 @@
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-INSTANCE-CLASSIFICATION.md",
       "detail": {
-        "zh": "有意不桥接：5 个 Mathlib 叶子留待 P5，9 个具体模型没有需要实例化的接口，2 个更新／消耗模块留待 P3b。",
-        "en": "Deliberately not bridged: 5 Mathlib leaves are left to P5, 9 concrete models have no interface to instantiate, and 2 renewal modules are left to P3b."
+        "zh": "有意不桥接：5 个 Mathlib 叶子留待 P5，9 个具体模型没有需要实例化的接口。",
+        "en": "Deliberately not bridged: 5 Mathlib leaves are left to P5, and 9 concrete models have no interface to instantiate."
       }
     }
   ],
   "limitations": {
-    "zh": "不增加任何规范内容：桥接只搬运定理，不证明其前提，历史类型的含义与外给关系的规范根据仍由使用者提供。L 只取保守规则；更强的提升规则（某结果、期望或风险规则）未研究。更新／消耗的统一与 living 的动力学读法留待 P3b。",
-    "en": "Adds no normative content: bridges transport theorems without proving their premises, and the meaning of history types and the normative warrant of supplied relations remain the user's to supply. L is only the conservative rule; stronger lifting rules (some-outcome, expectation or risk rules) are not studied. The unification of renewal and consumption and the dynamic reading of `living` are left to P3b."
+    "zh": "不增加任何规范内容：桥接只搬运定理，不证明其前提，历史类型的含义与外给关系的规范根据仍由使用者提供。L 只取保守规则；更强的提升规则（某结果、期望或风险规则）未研究。更新／消耗的统一与 living 的动力学读法见 becoming-renewal-reading。",
+    "en": "Adds no normative content: bridges transport theorems without proving their premises, and the meaning of history types and the normative warrant of supplied relations remain the user's to supply. L is only the conservative rule; stronger lifting rules (some-outcome, expectation or risk rules) are not studied. The unification of renewal and consumption and the dynamic reading of `living` are in becoming-renewal-reading."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查（20261008T201324.870042Z）：BecomingInstances 26 项定理，连同 BecomingFrame 新增的 Reach.map、Reach.lift，全部空依赖；同一回执共 4 个脊柱模块 62 项定理／111 项声明审计，13 个继承模块的当前字节与已通过回执一致，其 propext、Quot.sound、Classical.choice 另列。控制例“框架的延续空间有实现生命主张的可达配置”不计为新定理。分类检查对 45 个模块逐行机械检查。作者自审，尚无独立反审。",
-    "en": "Successful Lean 4.29.1 consolidated check (20261008T201324.870042Z): BecomingInstances' 26 theorems, with BecomingFrame's new Reach.map and Reach.lift, all have empty axiom reports; the same receipt covers 4 spine modules with 62 theorems/111 declaration audits, and 13 inherited modules whose current bytes match passed receipts, with their propext, Quot.sound and Classical.choice listed separately. The control that a frame's continuation space has a reached configuration realizing a living claim is not counted as a new theorem. The classification check mechanically checks all 45 module rows. Author's review only; no independent review yet."
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261008T203107.301650Z）：BecomingInstances 26 项定理，连同 BecomingFrame 新增的 Reach.map、Reach.lift，全部空依赖；同一回执共 5 个脊柱模块 75 项定理／137 项声明审计，15 个继承模块的当前字节与已通过回执一致，其 propext、Quot.sound、Classical.choice 另列。控制例不计为新定理。分类检查对 45 个模块逐行机械检查。作者自审，尚无独立反审。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261008T203107.301650Z): BecomingInstances' 26 theorems, with BecomingFrame's new Reach.map and Reach.lift, all have empty axiom reports; the same receipt covers 5 spine modules with 75 theorems/137 declaration audits, and 15 inherited modules whose current bytes match passed receipts, with their propext, Quot.sound and Classical.choice listed separately. Controls are not counted as new theorems. The classification check mechanically checks all 45 module rows. Author's review only; no independent review yet."
   },
   "references": [
     {
@@ -193,7 +193,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean",
       "role": "proof",
-      "sha256": "44b1485b1acbcfcfb713aa127cb29163ed5348d24be9e2682c34690e69ab9e62",
+      "sha256": "afd2ddd2a4b9ee90963d84c11a55833aed18d20ba0627af3dd3a80e443799889",
       "declarations": [
         "Becoming.Frame.inventory",
         "Becoming.Comparison",
@@ -288,25 +288,25 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "4a1ad8cb4cd2fe5b06e2d01757736d56e7c8353fe3e74da94a8a79e206e8c001",
+      "sha256": "aa40411be42045f949a6e0264fc3e419538734e49b9cdcaadb8e1c8e95b1f807",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-INSTANCE-CLASSIFICATION.md",
       "role": "integration",
-      "sha256": "d47c67fc88c170051a6e5110150035386558d5a91bbba790878266612d3a613c",
+      "sha256": "91c67a46865588849e215ee5c9b146c256a3fb409af4d84c31defe50a4575bdf",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-INSTANCE-CHECKS.json",
       "role": "integration",
-      "sha256": "4a40dd2eaee42aac5f9472d2d4937ca3fe3a5af4aae1f3e968037b0bc3064967",
+      "sha256": "3727820b57af001f76f90e8b2e01bbf4ba67f21f92f02c032bda5635ba74c719",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "48e679d390049a677d0455978954ee83789fac6b94e119bc80d4cd7dbe799bfc",
+      "sha256": "9563434662e21b9b6b1a6ff628402226ba1a953b0e3e9d866321792ab64bb9e5",
       "declarations": []
     },
     {
@@ -410,13 +410,17 @@
     }
   ],
   "next_delta": {
-    "zh": "P3b：由 Run 可观测量构造更新／消耗分类，使 ContinuationRenewal、OpenFutureRevision 与 Depletion 成为同一分类的实例；P5 时为 Mathlib 叶子建立桥接。",
-    "en": "P3b: build the renewal/consumption classification from Run observables so that ContinuationRenewal, OpenFutureRevision and Depletion become instances of one classification; at P5, bridge the Mathlib leaves."
+    "zh": "P5 时为 Mathlib 叶子建立桥接；新的形式结果直接陈述在脊柱上。",
+    "en": "At P5, bridge the Mathlib leaves; state new formal results directly on the spine."
   },
   "history": [
     {
       "zh": "2026-10-09：应 Ren“你自己全改了吧……先更新好计划，然后再一步步完整完成，保持代码和整体结构优雅”新增，作为整合计划 P3（实例化而不复制）。",
       "en": "2026-10-09: added following Ren's “你自己全改了吧……先更新好计划，然后再一步步完整完成，保持代码和整体结构优雅”, as P3 of the unification plan (instantiate rather than copy)."
+    },
+    {
+      "zh": "2026-10-09（P3b）：MetaethicalCore 增加读法一节、回执加入 BecomingRenewal 后重新生成，分类表把两个更新模块归入运行上的更新界。已读差异：本结果的声明未变，只更新哈希、计数与说明。",
+      "en": "2026-10-09 (P3b): MetaethicalCore gained its reading section, the receipt was regenerated with BecomingRenewal, and the classification places the two renewal modules as renewal bounds on runs. Diff read: this result's declarations are unchanged; only hashes, counts and descriptions were updated."
     }
   ]
 }

@@ -36,8 +36,9 @@ CATEGORIES = {
     "history": ("对历史类型多态", "Polymorphic over histories",
                 "定理对历史（完整相关延续）类型及外给关系多态；取历史为框架的配置即直接适用，前提仍由使用者提供。"
                 "用到 `Robust`、`Better`、`Inventory` 处，经第一类的桥接定理与脊柱概念等同。"),
-    "renewal": ("更新／消耗（P3b）", "Renewal and consumption (P3b)",
-                "储备与更新界，留待 P3b 由运行可观测量统一。"),
+    "renewal": ("运行上的更新界（P3b）", "Renewal bounds on runs (P3b)",
+                "定理对状态序列 `Nat → S` 多态，运行的 `state` 直接代入；其自然数秩的更新或完成界是 "
+                "`falls_finitely` 的情形。`ContinuationRenewal` 的良基形式比自然数秩更一般，不由该原则导出。"),
     "mathlib": ("Mathlib 叶子（P5）", "Mathlib leaves (P5)",
                 "依赖 Mathlib，与 Std 工具链分开；不进入脊柱回执。"),
     "model": ("具体模型", "Concrete models",
@@ -74,8 +75,9 @@ TABLE = {
     "SituatedRenewal": ("core", [], "也用到 ContinuationRenewal，见 P3b"),
     "SituatedContinuation": ("core", [], "也用到 ContinuationRenewal，见 P3b"),
     "SustainedJudgment": ("core", [], "同时用到 `PracticalJudgment`，经其桥接"),
-    "ContinuationRenewal": ("renewal", [], "无更新尾部与任意晚的更新"),
-    "OpenFutureRevision": ("renewal", [], "有界清单下的交接进展"),
+    "ContinuationRenewal": ("renewal", ["Becoming.falls_finitely", "Becoming.Run.renewal_recurs"],
+                            "无更新尾部与任意晚的更新"),
+    "OpenFutureRevision": ("renewal", ["Becoming.falls_finitely"], "交接的剩余步数证书；完成界来自 ContinuationRenewal"),
     "WholePracticalRestriction": ("history", [], "`Family Whole Index`：整体取配置，指标取立场"),
     "GenerativeLossComparison": ("history", [], "外给的 `Le` 可取 `BetterAt`"),
     "GenerativeTradeoff": ("history", [], "`Problem Circumstance Response History`"),
@@ -224,8 +226,9 @@ def page(result):
         f"按计划第 1 节的判据，伦理族中含类型多态定理的模块共 {result['census']['modules']} 个"
         f"（{result['census']['lines']:,} 行、{result['census']['theorems']} 条定理）。"
         "通用模块对小接口多态，因此不复制、不改写：脊柱给出接口的实例，或证明模块自建的组合子就是脊柱上的同一概念，"
-        f"它们的定理便直接作用于同一展开。具名声明都在 [BecomingInstances.lean]({spine}/BecomingInstances.lean) "
-        f"或 [MetaethicalCore.lean]({spine}/MetaethicalCore.lean) 中，由脊柱回执逐条检查，公理报告为空。",
+        f"它们的定理便直接作用于同一展开。具名声明在 [BecomingInstances.lean]({spine}/BecomingInstances.lean)、"
+        f"[BecomingRenewal.lean]({spine}/BecomingRenewal.lean) 或 [MetaethicalCore.lean]({spine}/MetaethicalCore.lean) 中，"
+        "由脊柱回执逐条检查，公理报告为空。",
         "",
         "Generated; do not edit. The polymorphic ethics modules are not copied: the spine instantiates their "
         "interfaces or proves their combinators equal to its own, so their theorems apply to one unfolding. "

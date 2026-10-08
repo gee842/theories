@@ -2,7 +2,7 @@
 
 由 [BECOMING-INSTANCE-CHECK.py](BECOMING-INSTANCE-CHECK.py) 生成，勿手改；检查结果见 [BECOMING-INSTANCE-CHECKS.json](BECOMING-INSTANCE-CHECKS.json)。这是[统一计划](BECOMING-UNIFICATION-PLAN.md) P3 的分类表。
 
-按计划第 1 节的判据，伦理族中含类型多态定理的模块共 45 个（10,790 行、758 条定理）。通用模块对小接口多态，因此不复制、不改写：脊柱给出接口的实例，或证明模块自建的组合子就是脊柱上的同一概念，它们的定理便直接作用于同一展开。具名声明都在 [BecomingInstances.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingInstances.lean) 或 [MetaethicalCore.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean) 中，由脊柱回执逐条检查，公理报告为空。
+按计划第 1 节的判据，伦理族中含类型多态定理的模块共 45 个（10,790 行、758 条定理）。通用模块对小接口多态，因此不复制、不改写：脊柱给出接口的实例，或证明模块自建的组合子就是脊柱上的同一概念，它们的定理便直接作用于同一展开。具名声明在 [BecomingInstances.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingInstances.lean)、[BecomingRenewal.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingRenewal.lean) 或 [MetaethicalCore.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean) 中，由脊柱回执逐条检查，公理报告为空。
 
 Generated; do not edit. The polymorphic ethics modules are not copied: the spine instantiates their interfaces or proves their combinators equal to its own, so their theorems apply to one unfolding. Each named declaration is kernel-checked with an empty axiom report by the spine receipt.
 
@@ -15,7 +15,7 @@ Generated; do not edit. The polymorphic ethics modules are not copied: the spine
 | 接口实例或等价定理 / Interface instantiated or proved equal | 11 | 2,974 | 199 |
 | 已在核心上 / Already on the core | 8 | 2,456 | 130 |
 | 对历史类型多态 / Polymorphic over histories | 10 | 2,109 | 138 |
-| 更新／消耗（P3b） / Renewal and consumption (P3b) | 2 | 382 | 27 |
+| 运行上的更新界（P3b） / Renewal bounds on runs (P3b) | 2 | 382 | 27 |
 | Mathlib 叶子（P5） / Mathlib leaves (P5) | 5 | 1,235 | 133 |
 | 具体模型 / Concrete models | 9 | 1,634 | 131 |
 
@@ -69,14 +69,14 @@ Generated; do not edit. The polymorphic ethics modules are not copied: the spine
 | [RelationalOrganization](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RelationalOrganization.lean) | 13（1） | — | 经 `PracticalJudgment` |
 | [SelectorReviewCoverage](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/SelectorReviewCoverage.lean) | 18（6） | — | `live`／`menu` 与 `Robust` 同形，世界取范围内的配置 |
 
-## 更新／消耗（P3b） / Renewal and consumption (P3b)
+## 运行上的更新界（P3b） / Renewal bounds on runs (P3b)
 
-储备与更新界，留待 P3b 由运行可观测量统一。
+定理对状态序列 `Nat → S` 多态，运行的 `state` 直接代入；其自然数秩的更新或完成界是 `falls_finitely` 的情形。`ContinuationRenewal` 的良基形式比自然数秩更一般，不由该原则导出。
 
 | 模块 | 定理（多态） | 脊柱声明 | 说明 |
 |---|---:|---|---|
-| [ContinuationRenewal](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/ContinuationRenewal.lean) | 17（5） | — | 无更新尾部与任意晚的更新 |
-| [OpenFutureRevision](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OpenFutureRevision.lean) | 10（3） | — | 有界清单下的交接进展 |
+| [ContinuationRenewal](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/ContinuationRenewal.lean) | 17（5） | `falls_finitely`，`Run.renewal_recurs` | 无更新尾部与任意晚的更新 |
+| [OpenFutureRevision](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OpenFutureRevision.lean) | 10（3） | `falls_finitely` | 交接的剩余步数证书；完成界来自 ContinuationRenewal |
 
 ## Mathlib 叶子（P5） / Mathlib leaves (P5)
 

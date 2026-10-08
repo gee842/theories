@@ -1,0 +1,308 @@
+{
+  "schema_version": 1,
+  "id": "becoming-renewal-reading",
+  "title": {
+    "zh": "运行上的更新／消耗与生生的关系读法：连通由共同条件给出，消耗本身是关系",
+    "en": "Renewal on runs and the relational reading: a common condition gives connection, and consumption is itself a relation"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-08T20:31:07+00:00",
+  "claim": {
+    "zh": "任一过程的任一运行，经条件的可观测量读出，都是一个关系展开，更新／消耗分类适用于它。从某步起不再上升的自然数可观测量只能下降有限次，耗竭、自然数秩的复现更新与无更新汲取都是这一原则的情形。分类属于运行：同一过程、同一初始配置下，焦点形成每步都活跃，一次运行更新，另一次消耗。按关系读法取活的形成事件，并以共同参与某一条件为关系：每个活的形成都参与的条件使整体连通，于是 G0 恰等于种子加 N_rel 加 N_std；条件互不相交时可不连通。消耗本身是一种已形成的关系，故在 N_rel 下，珍视消耗者活动的立场必珍视被它消耗的形成的每个活的事件。",
+    "en": "Every run of every process, read through observables of conditions, is one relational unfolding to which the renewing/consuming classification applies. A natural-number observable that never rises from some step on falls only finitely often; depletion, recurrent renewal under a natural rank and unrenewed drawdown are its cases. The class belongs to the run: in one process from one configuration, with the focal formation active at every step, one run renews and another consumes. Reading living formation events relationally and relating events whose formations participate in a common condition, a condition in which every living formation participates makes the whole connected, so G0 is exactly a seed with N_rel and N_std; disjoint conditions can leave it unconnected. Consumption is itself a formed relation, so under N_rel a standpoint valuing a consumer's activity holds significant every living event of the formation it consumes."
+  },
+  "hypotheses": [
+    {
+      "zh": "条件水平、活跃、依存（及其水平）与汲取是配置上的可观测量；依存与汲取不随配置变化。",
+      "en": "Levels of conditions, activity, dependence (with its level) and drawing are observables of configurations; dependence and drawing do not vary with the configuration."
+    },
+    {
+      "zh": "living 取整段运行上的关系读法（活跃且不消耗），related 取共同参与某一条件；两者都是公开的读法选择，不是被证明的对应。",
+      "en": "`living` is the whole-run relational reading (active and not consuming) and `related` is participation in a common condition; both are disclosed reading choices, not proved correspondences."
+    },
+    {
+      "zh": "连通的结论需要一个所有活的形成都参与的共同条件；传递结论需要 N_rel，其规范地位不由本结果证明。",
+      "en": "The connection result needs a condition in which every living formation participates; the transmission result needs N_rel, whose normative standing this result does not prove."
+    }
+  ],
+  "correspondence": {
+    "zh": "形成与条件是同一展开中的分析角色，不是独立实体或价值所有者。可观测量与实际历史的对应、共同条件（如生物圈、气候）是否真被所有活的形成参与，以及关系读法是否为生生的正确读法，都是应用或哲学上的对应义务。",
+    "en": "Formations and conditions are analytic roles in one unfolding, not independent entities or owners of value. The correspondence of observables to an actual history, whether a common condition (such as the biosphere or climate) is in fact participated in by every living formation, and whether the relational reading is the right reading of 生生 are application or philosophical duties."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingRenewal.lean",
+  "aliases": [
+    "Becoming.falls_finitely",
+    "Becoming.Run.not_of_depletion",
+    "Becoming.no_execution_of_depletion",
+    "Becoming.Run.renewal_recurs",
+    "Becoming.Conditions.drawdown_finite",
+    "Becoming.Commons.class_belongs_to_the_run",
+    "Becoming.Conditions.living_iff_relational",
+    "Becoming.Conditions.connected_of_common",
+    "Becoming.Conditions.significant_iff_of_common",
+    "Becoming.Conditions.consumption_relates",
+    "Becoming.Conditions.valuing_consumption_reaches",
+    "Becoming.Separate.not_connected"
+  ],
+  "dependencies": [
+    {
+      "id": "relational-renewal-classification",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "Conditions.along 产出该结果的 Unfolding；falls_finitely 与 drawdown_finite 直接调用 unrenewed_drawdown_finite；分类谓词 ConsumingIn、Participates、Supported 原样使用。",
+        "en": "Conditions.along produces that result's Unfolding; falls_finitely and drawdown_finite directly call unrenewed_drawdown_finite; the predicates ConsumingIn, Participates and Supported are used as defined."
+      },
+      "interface": {
+        "output": {
+          "zh": "任意展开上的更新／消耗分类与无更新汲取有限界。",
+          "en": "The renewing/consuming classification on arbitrary unfoldings and the finite bound on unrenewed drawdown."
+        },
+        "input": {
+          "zh": "运行经可观测量读出的展开。",
+          "en": "The unfolding read from a run through observables."
+        },
+        "conditions": {
+          "zh": "依存与汲取为静态；水平为自然数。",
+          "en": "Static dependence and drawing; natural-number levels."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingRenewal.lean"
+      }
+    },
+    {
+      "id": "relational-reading-comparison",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "living_iff_relational 表明脊柱上的 living 就是该结果的 relationalInventory（取一条延续）。",
+        "en": "living_iff_relational shows that the spine's `living` is that result's relationalInventory (for one continuation)."
+      },
+      "interface": {
+        "output": {
+          "zh": "关系读法：活跃且不消耗的形成事件为生成根据。",
+          "en": "The relational reading: active events of non-consuming formations are generative grounds."
+        },
+        "input": {
+          "zh": "Conditions.valuation 的 living。",
+          "en": "`living` of Conditions.valuation."
+        },
+        "conditions": {
+          "zh": "延续族取单一运行。",
+          "en": "The family of continuations is one run."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean"
+      }
+    },
+    {
+      "id": "metaethical-core-characterization",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "significant_iff_of_common 以 connected_of_common 满足 significant_iff 的连通前提；valuing_consumption_reaches 使用 N_rel 的规则 transmits。",
+        "en": "significant_iff_of_common discharges significant_iff's connection premise by connected_of_common; valuing_consumption_reaches uses N_rel's rule transmits."
+      },
+      "interface": {
+        "output": {
+          "zh": "连通整体上 G0 ⇔ 种子 ∧ N_rel ∧ N_std；N_rel 的传递规则。",
+          "en": "On a connected whole, G0 ⇔ seed ∧ N_rel ∧ N_std; N_rel's transmission rule."
+        },
+        "input": {
+          "zh": "由运行的关系读法给出的 Valuation 及其连通。",
+          "en": "The Valuation given by a run's relational reading, with its connection."
+        },
+        "conditions": {
+          "zh": "立场、区域与意义仍外给；需要一个活的事件。",
+          "en": "Standpoints, regions and significance remain supplied; some living event is needed."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "open-form-realization-under-revision",
+      "detail": {
+        "zh": "ContinuationRenewal 的自然数秩复现界是 falls_finitely 的情形（Run.renewal_recurs）；其良基形式更一般，不由此导出。",
+        "en": "ContinuationRenewal's natural-rank recurrence bound is a case of falls_finitely (Run.renewal_recurs); its well-founded form is more general and is not derived here."
+      }
+    },
+    {
+      "id": "renewing-consuming-formation",
+      "detail": {
+        "zh": "该结果的窄定律类与 G0 接口独立于本读法；本结果不建立二者间的转换。",
+        "en": "That result's narrower law class and G0 interface are independent of this reading; no conversion between them is established."
+      }
+    },
+    {
+      "id": "becoming-spine-instances",
+      "detail": {
+        "zh": "分类表中原留给 P3b 的两个模块，由本结果归入运行上的更新界。",
+        "en": "The two modules the classification left to P3b are placed by this result as renewal bounds on runs."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean",
+      "detail": {
+        "zh": "条件互不相交：两个形成都活着、都不消耗，却不连通（Separate.not_connected）；连通是展开的事实，可以不成立。",
+        "en": "Disjoint conditions: two formations are living and neither consumes, yet the whole is unconnected (Separate.not_connected); connection is a fact of the unfolding and can fail."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingRenewal.lean",
+      "detail": {
+        "zh": "公地模型没有反馈：赢者运行的损失只因汲取持续超出更新而持续；不可逆损失需要 RelationalRenewal 定律族的反馈。",
+        "en": "The commons model has no feedback: the loss in the winning run persists only because drawing keeps exceeding renewal; irreversible loss needs the feedback of the RelationalRenewal law family."
+      }
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "detail": {
+        "zh": "依存是静态的，读法是整段运行上的而非逐步的；两者都继承自既有模块，尚未放宽。",
+        "en": "Dependence is static and the reading is whole-run rather than stepwise; both are inherited from existing modules and not yet relaxed."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "不证明 S0、N、A、C、L 或 J，不约束拒绝它们的立场。界的统一是组织性的，不是新数学；ContinuationRenewal 的良基形式不由该原则导出。关系读法与共同参与关系是公开的读法选择；它们是否为生生的正确读法、共同条件的经验对应，都不在本结果内。",
+    "en": "Proves none of S0, N, A, C, L or J and binds no position rejecting them. The unification of bounds is organizational, not new mathematics; ContinuationRenewal's well-founded form is not derived from the principle. The relational reading and the common-participation relation are disclosed reading choices; whether they are the right reading of 生生, and the empirical correspondence of common conditions, lie outside this result."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261008T203107.301650Z）：BecomingRenewal 6 项定理与 MetaethicalCore 读法一节 7 项定理全部空依赖；同一回执共 5 个脊柱模块 75 项定理／137 项声明审计，15 个继承模块的当前字节与已通过回执一致。控制例“有共同条件的运行在关系读法下连通”不计为新定理。作者反审见整合文档，尚无独立反审。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261008T203107.301650Z): BecomingRenewal's 6 theorems and the 7 theorems of MetaethicalCore's reading section all have empty axiom reports; the same receipt covers 5 spine modules with 75 theorems/137 declaration audits, and 15 inherited modules whose current bytes match passed receipts. The control that a run with a common condition is connected under the relational reading is not counted. The author's counterreview is in the integration note; no independent review yet."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingRenewal.lean",
+      "role": "proof",
+      "sha256": "c9fd981c2746de23c08ae5756a8ecdbc6f364cf85f7a0c01eb18b706b000c310",
+      "declarations": [
+        "Becoming.Conditions",
+        "Becoming.Conditions.along",
+        "Becoming.falls_finitely",
+        "Becoming.Run.not_of_depletion",
+        "Becoming.no_execution_of_depletion",
+        "Becoming.Run.renewal_recurs",
+        "Becoming.Conditions.drawdown_finite",
+        "Becoming.Commons.class_belongs_to_the_run"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean",
+      "role": "proof",
+      "sha256": "afd2ddd2a4b9ee90963d84c11a55833aed18d20ba0627af3dd3a80e443799889",
+      "declarations": [
+        "Becoming.Conditions.valuation",
+        "Becoming.Conditions.living_iff_relational",
+        "Becoming.Conditions.connected_of_common",
+        "Becoming.Conditions.significant_iff_of_common",
+        "Becoming.Conditions.consumption_relates",
+        "Becoming.Conditions.valuing_consumption_reaches",
+        "Becoming.Separate.not_connected",
+        "Becoming.Valuation.significant_iff",
+        "Becoming.Valuation.transmits"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingFrame.lean",
+      "role": "proof",
+      "sha256": "a5af25d221a18ce291638a314ee9c2e2bf2620e8db76f16ce38518b32824e3d3",
+      "declarations": [
+        "Becoming.Run",
+        "Becoming.Invariant.reach"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean",
+      "role": "proof",
+      "sha256": "b97719c886e3dcd0f143a23db62fb7b8556dac35ec5c312fcdf7e14d47cee1d4",
+      "declarations": [
+        "RelationalRenewal.Unfolding",
+        "RelationalRenewal.unrenewed_drawdown_finite",
+        "RelationalRenewal.ConsumingIn",
+        "RelationalRenewal.RenewingIn",
+        "RelationalRenewal.Participates",
+        "RelationalRenewal.Supported"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalComparison.lean",
+      "role": "proof",
+      "sha256": "438afd1164e6e594b1e3614c120ec2a20d51df37ba6cffcdab802310b51df133",
+      "declarations": [
+        "RenewalComparison.relationalInventory"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "aa40411be42045f949a6e0264fc3e419538734e49b9cdcaadb8e1c8e95b1f807",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-RENEWAL-READING.md",
+      "role": "integration",
+      "sha256": "cb14f24bf6b69e9f6a4476127dfb48b77ec97a3b272094a98f32f8e11e6a39d4",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
+      "role": "statement",
+      "sha256": "9563434662e21b9b6b1a6ff628402226ba1a953b0e3e9d866321792ab64bb9e5",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-09-one-theory-unification.md",
+      "role": "provenance",
+      "sha256": "054c09c4d17c281d401795a90330f5a7c353827b12ec06f73820dd9055c52b41",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingRenewal.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/BecomingRenewal",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/MetaethicalCore",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingFrame.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/BecomingFrame",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/RelationalRenewal",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalComparison.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/RenewalComparison",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "让依存与汲取读取配置（动态依存），重做 Renewed／Consumed；确定逐步读法；独立反审关系读法作为生生读法的哲学论证。",
+    "en": "Let dependence and drawing read the configuration (dynamic dependence) and redo Renewed/Consumed; settle a stepwise reading; independent review of the philosophical argument for the relational reading as the reading of 生生."
+  },
+  "history": [
+    {
+      "zh": "2026-10-09：应 Ren“你自己全改了吧……先更新好计划，然后再一步步完整完成，保持代码和整体结构优雅”新增，作为整合计划 P3b，并完成 metaethical-core-characterization 的下一步（living 与 related 的动力学来源）。",
+      "en": "2026-10-09: added following Ren's “你自己全改了吧……先更新好计划，然后再一步步完整完成，保持代码和整体结构优雅”, as P3b of the unification plan, completing the next step of metaethical-core-characterization (a dynamic source for `living` and `related`)."
+    }
+  ]
+}
