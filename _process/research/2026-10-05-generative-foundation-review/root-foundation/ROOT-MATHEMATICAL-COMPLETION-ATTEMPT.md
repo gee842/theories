@@ -6,7 +6,7 @@
 
 **本轮直接尝试“全部”与“必然”：不把再多一个局部例子算作完成。最强候选是分层的生成充足性：有限形成、同一与代入、持续扩展、各层的完整结构轮廓，以及明确的解释规则。它可以不把答案表当输入；但完整性、无穷与解释规则的正当性仍要得到论证。任何充分解释都必须保留同一数学内容，不等于它必须接受同一终极依赖方向。**
 
-This follows the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). The arguments concern relationships within one unfolding, not independent realms of objects, minds, constraints and activity. New mathematical results are accepted only through checked Lean declarations. The candidate constructions and extrapolations below are philosophical proposals and proof obligations, not unverified mathematical theorems.
+This follows the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). The arguments concern relationships within one unfolding, not independent realms of objects, minds, constraints and activity. New mathematical results are accepted only through checked Lean declarations. The candidate constructions and extrapolations below are philosophical proposals and proof obligations, not unverified mathematical theorems.
 
 ## 1. Fix the two claims before trying to prove them
 
@@ -18,7 +18,7 @@ The intended subject is not limited to effectively decidable theories, physicall
 
 ## 2. State a root rich enough for the attempted universal argument
 
-The [current positive root](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md#1-the-positive-candidate) treats beings, activity and understanding as differentiated formations whose relationships enable and constrain transformation. The core and tree are not separate realities. Concrete organization may improve our articulation of the root rather than merely instantiate a permanently fixed sparse model.
+The [current positive root](../../../../theories/becoming/chapters/DEEPER-GENERATIVE-ROOT.md#1-the-positive-candidate) treats beings, activity and understanding as differentiated formations whose relationships enable and constrain transformation. The core and tree are not separate realities. Concrete organization may improve our articulation of the root rather than merely instantiate a permanently fixed sparse model.
 
 For the mathematical completion attempt, consider the following explicit enrichment. These are proposed constitutive resources, not declarations that the current causal model has already derived them.
 
@@ -45,7 +45,7 @@ This is a serious candidate for broad coverage. It permits uncomputed and indivi
 
 The decisive attempted justification is **no arbitrary exclusion**. If the proposed subject is all coherent profiles at a level, and a profile satisfies every independently fixed condition, exclusion would change that subject. In that conditional setting, the fullness demand has force. A specified completion cannot retain its exact role while arbitrarily deleting required realizers.
 
-The inference fails if that conditional is promoted into a universal existence principle. Before the subject is fixed as the full profile space, the absence of a stated exclusion does not establish that every profile exists in the intended mathematical universe. Nor does the description of a profile select the level at which its totality is admitted. The [completion-warrant investigation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-MATHEMATICAL-ADMISSIBILITY.md#when-the-subject-warrants-completion) already separates an independently warranted admission contract from mere finite compatibility. Genuine global conditions survive that distinction.
+The inference fails if that conditional is promoted into a universal existence principle. Before the subject is fixed as the full profile space, the absence of a stated exclusion does not establish that every profile exists in the intended mathematical universe. Nor does the description of a profile select the level at which its totality is admitted. The [completion-warrant investigation](../../../../theories/becoming/chapters/GENERATIVE-MATHEMATICAL-ADMISSIBILITY.md#when-the-subject-warrants-completion) already separates an independently warranted admission contract from mere finite compatibility. Genuine global conditions survive that distinction.
 
 There are consequently two honest versions of the proposed argument. We can **adopt** full-profile and stratified existence principles as foundational commitments, then investigate their consistency, coverage and consequences. Or we can claim to have **derived** them from the prior root, in which case a further argument must establish their necessity. The present work supports the first as an intelligible research candidate. It has not completed the second.
 

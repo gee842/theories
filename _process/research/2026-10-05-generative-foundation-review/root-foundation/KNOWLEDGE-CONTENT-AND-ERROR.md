@@ -1,6 +1,6 @@
 # Formed content, error and epistemic assessment / 内容的形成、错误与认识评价
 
-8 October 2026. AI-authored continuation under [Ren's direction](../../../../sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md). Named transition: **formed discrimination and retained use → determinate content and possible misrepresentation → assessment as knowledge**. This develops the [earlier uptake account](KNOWLEDGE-UPTAKE-AND-ERROR.md), using the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). The affirmative argument, counterreview and primary assessment are integrated below. No new mathematical theorem, experiment or independent-agent acceptance is claimed.
+8 October 2026. AI-authored continuation under [Ren's direction](../../../../sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md). Named transition: **formed discrimination and retained use → determinate content and possible misrepresentation → assessment as knowledge**. This develops the [earlier uptake account](KNOWLEDGE-UPTAKE-AND-ERROR.md), using the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). The affirmative argument, counterreview and primary assessment are integrated below. No new mathematical theorem, experiment or independent-agent acceptance is claimed.
 
 ## 1. The positive proposal and its scope
 
@@ -28,7 +28,7 @@ These are explanatory commitments. Some are already partially realized by the re
 
 ## 3. A stronger reading of the existing acquisition history
 
-The [acquired-abstraction study](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ABSTRACTION-ACQUISITION.md) already contains a useful adverse case: an inverted sensor supports a correct model of its own readings while the resulting interpretation of productive access fails. A later [experimental-access investigation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPERIMENTAL-ACCESS.md) can preserve accurate sensory prediction while investigating the conditions of its use. A matched reader clamp prevents acquired evidence from revising that use.
+The [acquired-abstraction study](../../../../theories/becoming/chapters/ABSTRACTION-ACQUISITION.md) already contains a useful adverse case: an inverted sensor supports a correct model of its own readings while the resulting interpretation of productive access fails. A later [experimental-access investigation](../../../../theories/becoming/chapters/EXPERIMENTAL-ACCESS.md) can preserve accurate sensory prediction while investigating the conditions of its use. A matched reader clamp prevents acquired evidence from revising that use.
 
 This supplies a substantive refinement: **the location of an error may be the application of an accurate representation, rather than the representation's acquired sensory content.** Calling the entire retained model “wrong” erases this difference. Calling every successful prediction knowledge of productive readiness erases it in the other direction.
 
@@ -67,7 +67,7 @@ The word “normally” here does not mean whichever response is statistically f
 The normative strength must remain explicit:
 
 - **Constitutive standard:** a judgment presented as actual is accurate when its content obtains. This identifies the achievement being assessed.
-- **Epistemic warrant:** a competent basis and adequate treatment of relevant error are proposed reasons for accepting it. Their adequacy still requires the substantive account in [the knowledge chapter](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/KNOWLEDGE.md).
+- **Epistemic warrant:** a competent basis and adequate treatment of relevant error are proposed reasons for accepting it. Their adequacy still requires the substantive account in [the knowledge chapter](../../../../theories/becoming/chapters/KNOWLEDGE.md).
 - **Practical obligation:** whether someone should investigate, retain, revise publicly or disclose depends additionally on the actual circumstances and justified ethical commitments.
 
 The first does not by itself establish the second or third. A definition of truthful reporting cannot compel participation in inquiry, settle how much evidence suffices, or justify every cost of obtaining it. This keeps the accepted axiom route open without hiding additional authority inside an ordinary word.

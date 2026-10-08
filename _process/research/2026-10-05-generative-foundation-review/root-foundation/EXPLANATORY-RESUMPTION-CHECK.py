@@ -54,7 +54,7 @@ def main():
             links.append({'from':e['path'],'reference':link})
     for name,h in edits['reviewed_owned_sources'].items():assert sha(ROOT/name)==h
     for e in edits['record_edits']:
-        p=ROOT/'theories/shengsheng-buxi-generative-existence/results/records'/(e['id']+'.json')
+        p=ROOT/'theories/becoming/results/records'/(e['id']+'.json')
         d=json.loads(p.read_text());assert sha(p)==e['after_sha256']
         for k,v in e['preserved_fields'].items():assert d[k]==v
     data=gc.read_data();rows={e['id']:e for s in data['sections'] for e in s['entries']}
@@ -65,7 +65,7 @@ def main():
         for k in ['claim_zh','claim_en','scope_zh','scope_en']:assert after[k].startswith(before[k])
         assert after['links'][:len(before['links'])]==before['links']
         assert [x for x in actual if x.startswith('| '+ident+' |')]==[x for x in expected if x.startswith('| '+ident+' |')]
-    chapter=ROOT/'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md'
+    chapter=ROOT/'theories/becoming/chapters/EXPLANATORY-NECESSITY.md'
     assert [int(n) for n in re.findall(r'^## (\d+)\.',chapter.read_text(),re.M)]==list(range(1,110))
     # All concrete mathematical claim-table entries resolve to newly audited names.
     namespaces={'GP':'Generative.ExplanatoryGuardedPrograms',

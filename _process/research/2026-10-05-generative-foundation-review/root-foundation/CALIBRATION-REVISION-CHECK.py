@@ -9,7 +9,7 @@ from urllib.parse import unquote
 
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parents[3]
-THEORY = REPO / "theories/shengsheng-buxi-generative-existence/unified-2026-10-05"
+THEORY = REPO / "theories/becoming/chapters"
 NATIVE = REPO / "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback"
 FORMAL = NATIVE / "calibration-revision/formal"
 OUTPUT = HERE / "CALIBRATION-REVISION-CHECKS.json"
@@ -25,7 +25,7 @@ DOCS = [
 ]
 INDEXES = {
     REPO / "RESEARCH.md": "**Later consequences now revise diagnostic reliance and inquiry,",
-    REPO / "theories/shengsheng-buxi-generative-existence/README.md": "**Failure now changes what the learner investigates,",
+    REPO / "theories/becoming/README.md": "**Failure now changes what the learner investigates,",
     THEORY / "GENERATIVE-GROUNDING.md": "**Actual later effect → qualified reliance → further inquiry,",
     HERE / "README.md": "**Consequences revise diagnostic reliance,",
     NATIVE / "README.md": "**Final effects now enter further inquiry,",

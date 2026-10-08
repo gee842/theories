@@ -1,6 +1,6 @@
 # Identifying renewal, selection and funded market correction
 
-6 October 2026. AI-authored prospective identification and comparator note for the [market application](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md), extending the [conceptual review](MARKET-REVIEW.md). No empirical validation is claimed. The named connection is **shared-support consequences → actual payoffs → practice selection → funded revision of selection conditions**. This is a local test of the [governing derivation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md), not its replacement.
+6 October 2026. AI-authored prospective identification and comparator note for the [market application](../../../../theories/becoming/chapters/MARKETS-AND-GENERATIVE-REGIMES.md), extending the [conceptual review](MARKET-REVIEW.md). No empirical validation is claimed. The named connection is **shared-support consequences → actual payoffs → practice selection → funded revision of selection conditions**. This is a local test of the [governing derivation](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md), not its replacement.
 
 ## Observable meanings
 

@@ -45,7 +45,7 @@ def main():
         path = ROOT / edit['path']
         assert edit['owned_passage'] in path.read_text(), path
         check_links(path, edit['owned_passage'])
-    chapter = ROOT / 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md'
+    chapter = ROOT / 'theories/becoming/chapters/EVOLUTIONARY-ORGANIZATION.md'
     section = chapter.read_text().split('## Growth forms fragmentation possibilities\n', 1)[1].split('\n## ', 1)[0]
     check_links(chapter, section)
     full = chapter.with_name('THE-THEORY-OF-EVOLUTION.md')

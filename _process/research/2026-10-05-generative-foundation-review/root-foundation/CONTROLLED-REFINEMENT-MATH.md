@@ -1,6 +1,6 @@
 # Exact representation in the presence of a learner
 
-6 October 2026. AI-authored mathematical companion to the [canonical interface](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONTROLLED-REFINEMENT.md). This advances **material process → observation-dependent response → compatible composition**. The mechanism, channel and controller remain supplied. The argument specializes the repository's existing finite-history lifting theorem; it is not a new general theory of learning.
+6 October 2026. AI-authored mathematical companion to the [canonical interface](../../../../theories/becoming/chapters/CONTROLLED-REFINEMENT.md). This advances **material process → observation-dependent response → compatible composition**. The mechanism, channel and controller remain supplied. The argument specializes the repository's existing finite-history lifting theorem; it is not a new general theory of learning.
 
 ## 1. The missing premise
 

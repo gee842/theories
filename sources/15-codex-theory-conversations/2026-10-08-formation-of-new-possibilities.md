@@ -8,4 +8,4 @@ let's finish **Formation of new possibilities&#x20;**&#x45;xplain how genuinely 
 
 Reading with the HTML entities decoded: Ren asks to finish the account of formation of new possibilities, explaining capabilities and relations beyond an initially supplied repertoire and the corresponding revision of descriptions. This interpretation is AI-authored. The request authorizes this research continuation, not a declaration that unlimited novelty, a universal evolutionary theory or ethical necessity has already been established.
 
-Current account: [新可能性的形成 / Formation of new possibilities](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NEW-POSSIBILITIES.md).
+Current account: [新可能性的形成 / Formation of new possibilities](../../theories/becoming/chapters/NEW-POSSIBILITIES.md).

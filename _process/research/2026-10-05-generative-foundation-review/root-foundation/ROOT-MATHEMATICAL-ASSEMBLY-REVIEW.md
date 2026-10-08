@@ -1,6 +1,6 @@
 # Uniform indexed assembly: independent review
 
-7 October 2026. AI-authored review under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md), continuing the [admission assessment](ROOT-MATHEMATICAL-ADMISSION-REVIEW.md). The intended full higher-order target is retained. Mathematical claims are attached to the new Lean modules; the proposed warrant for admission is philosophical. Final verification is recorded below.
+7 October 2026. AI-authored review under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md), continuing the [admission assessment](ROOT-MATHEMATICAL-ADMISSION-REVIEW.md). The intended full higher-order target is retained. Mathematical claims are attached to the new Lean modules; the proposed warrant for admission is philosophical. Final verification is recorded below.
 
 ## 1. A stronger bounded proposal
 

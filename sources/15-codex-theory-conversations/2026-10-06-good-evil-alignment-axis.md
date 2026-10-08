@@ -14,4 +14,4 @@ After an assessment of the candidate direction, its ethical premises, and the si
 
 The continuation investigates a patient's actual good or harm, its relevance to an unrelated capable actor, and the resulting justified direction for alignment. It preserves the current generative-grounding objective, existing completion conditions, and the distinction between a defended ethical proposal, a conditional inference, an implemented mechanism and universal moral truth. The instruction authorizes continued research; it does not certify the ensuing arguments or approve every formulation as Ren's own.
 
-The [canonical continuation](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AXIS.md) and its linked reviews are AI-authored research. Concurrent unified-grounding work is credited at its own scope rather than silently overwritten or counted as independent evidence.
+The [canonical continuation](../../theories/becoming/chapters/ALIGNMENT-AXIS.md) and its linked reviews are AI-authored research. Concurrent unified-grounding work is credited at its own scope rather than silently overwritten or counted as independent evidence.

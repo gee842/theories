@@ -1,6 +1,6 @@
 # Participation, retained consequence and changing effective range
 
-6 October 2026. AI-authored primary-source comparison under [Ren's project-wide nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Named connection: **formed and revisable participation → acquired consequence distinctions → changes in affected continuation**. No new model, controller, experimental run or complete foundational derivation is reported.
+6 October 2026. AI-authored primary-source comparison under [Ren's project-wide nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Named connection: **formed and revisable participation → acquired consequence distinctions → changes in affected continuation**. No new model, controller, experimental run or complete foundational derivation is reported.
 
 ## The configuration and the existing connection
 
@@ -62,7 +62,7 @@ Local inspected versions are bound below for reading scope, not frozen against c
 
 | Local file | SHA-256 |
 |---|---|
-| [NONDUAL-METHOD](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) | `8d5bf4fe5063f2f4709e955bb90a1704416595dcc1b9afa560d6cc5e53fcb5e0` |
+| [NONDUAL-METHOD](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) | `8d5bf4fe5063f2f4709e955bb90a1704416595dcc1b9afa560d6cc5e53fcb5e0` |
 | [Ren nondual directive](../../../../sources/15-codex-theory-conversations/2026-10-06-project-wide-nondual-method.md) | `09bf87ed895355ad7fd0a6e32b9f76f94688e8894d61d8ed98d72a8a255e5aff` |
 | [NONDUAL-TREE-GENEALOGY](NONDUAL-TREE-GENEALOGY.md) | `3cdd404dd579888a0bdefa765ac043cde1ef437b0a9832c219ff626e58cf8fcf` |
 | [NONDUAL-TREE-MECHANISM](NONDUAL-TREE-MECHANISM.md) | `c6ac834a14153944e8d858378cc6eb2803e51f818d1d4a1bb246567870f43081` |

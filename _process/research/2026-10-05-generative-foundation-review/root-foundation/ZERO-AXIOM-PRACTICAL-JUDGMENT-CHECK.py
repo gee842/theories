@@ -12,7 +12,7 @@ import build_generative_chain as chain
 
 ROOT = Path(__file__).resolve().parents[4]
 HERE = Path(__file__).resolve().parent
-THEORY = ROOT / "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md"
+THEORY = ROOT / "theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md"
 FORMAL = ROOT / "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity"
 
 

@@ -75,7 +75,7 @@
 
 ## 8. 对当前派生任务的实际回写建议
 
-本文连接 [生成奠基与派生图](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md)，提供的是概念区分、竞争解释和反例要求；没有新增机制证明、实验结果或实证识别。
+本文连接 [生成奠基与派生图](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md)，提供的是概念区分、竞争解释和反例要求；没有新增机制证明、实验结果或实证识别。
 
 | 待接通的环节 | 这些选读要求保留什么 | 什么结果会迫使我们修改解释 |
 |---|---|---|

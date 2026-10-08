@@ -1,6 +1,6 @@
 # Retained loss evidence before further teaching: independent review
 
-6 October 2026. AI-authored review under the [project-wide nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Named connection: **actual formation retains evidence of imposed consequences → justified interpretation and possible revision before imposing another learning cost**. The target is the selected plasticity history at count four, not an arbitrary learner or an ethical interpretation of every resource decrement.
+6 October 2026. AI-authored review under the [project-wide nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Named connection: **actual formation retains evidence of imposed consequences → justified interpretation and possible revision before imposing another learning cost**. The target is the selected plasticity history at count four, not an arbitrary learner or an ethical interpretation of every resource decrement.
 
 **Finding:** the proposed factual gap must be narrowed. In complete, faithful first-four-pair histories from the actual empty-socket entry, retained socket occupancy identifies recipient depletion exactly. A separate cumulative-loss variable is unnecessary for this mathematical identification. This does not install access to the readout, identify ethical deprivation, justify another trial or supply an available early-service action. The independent event reconstruction passes at its stated scope.
 

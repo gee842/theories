@@ -16,7 +16,7 @@ The prior package was inspected, including its handoff, source declarations and 
 
 ## 2. One process, a selected representation
 
-Following the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md), `states n` describes selected configurations of one unfolding. It does not introduce an independent agent and environment, owner and resource, or separate realms of causal and ethical existence. Support, work and restoration are differentiated relations within a history; the actual formation of these relations is not derived by this interface.
+Following the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md), `states n` describes selected configurations of one unfolding. It does not introduce an independent agent and environment, owner and resource, or separate realms of causal and ethical existence. Support, work and restoration are differentiated relations within a history; the actual formation of these relations is not derived by this interface.
 
 `renewal n` concerns the transition from time `n` to time `n + 1`. Its intended empirical identification is restoration or re-formation of conditions needed for the independently specified activity. Its identification must **precede** the desired result. Calling every nondecreasing transition "renewal" solely to make the theorem apply would not establish the substantive claim. Nor can an analyst define success as generativity and then claim to have discovered that successful continuation is generative.
 

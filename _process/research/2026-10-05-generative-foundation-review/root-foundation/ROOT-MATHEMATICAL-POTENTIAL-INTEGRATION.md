@@ -1,6 +1,6 @@
 # Classical first-order truth through possible finite continuation
 
-8 October 2026, Asia/Bangkok. AI-authored continuation of Ren's [mathematical-admission request](../../../../sources/15-codex-theory-conversations/2026-10-07-mathematical-admission-and-coverage.md), preserving the two unfinished objectives: independent admission and mathematical coverage. The stronger exclusive-root claim remains a separate obligation. This mathematical branch follows the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md); it does not replace the repository's normative research priority.
+8 October 2026, Asia/Bangkok. AI-authored continuation of Ren's [mathematical-admission request](../../../../sources/15-codex-theory-conversations/2026-10-07-mathematical-admission-and-coverage.md), preserving the two unfinished objectives: independent admission and mathematical coverage. The stronger exclusive-root claim remains a separate obligation. This mathematical branch follows the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md); it does not replace the repository's normative research priority.
 
 ## 1. The advance
 

@@ -1,10 +1,10 @@
 # Recipient change and the reorganization of response
 
-6 October 2026. AI-authored identification comparison under the [shared nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Named connection: **affected condition → acquired discrimination → revision of participation and response applicability**. The new primary reading tests one part of this connection. It does not establish ethical standing or authorize a change to the existing acquisition protocol.
+6 October 2026. AI-authored identification comparison under the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Named connection: **affected condition → acquired discrimination → revision of participation and response applicability**. The new primary reading tests one part of this connection. It does not establish ethical standing or authorize a change to the existing acquisition protocol.
 
 ## 1. What is inherited and what this adds
 
-The [practical-boundary integration](PRACTICAL-BOUNDARY-INTEGRATION.md) already separates an outstanding loss from permission to impose further teaching costs. The [nondual-applicability integration](NONDUAL-APPLICABILITY-INTEGRATION.md) already establishes material repair removing its own applicability condition. [Evaluative application](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md) already distinguishes historical service fulfillment, continuing need and standing. None is rediscovered here.
+The [practical-boundary integration](PRACTICAL-BOUNDARY-INTEGRATION.md) already separates an outstanding loss from permission to impose further teaching costs. The [nondual-applicability integration](NONDUAL-APPLICABILITY-INTEGRATION.md) already establishes material repair removing its own applicability condition. [Evaluative application](../../../../theories/becoming/chapters/EVALUATIVE-APPLICATION.md) already distinguishes historical service fulfillment, continuing need and standing. None is rediscovered here.
 
 The inherited [thermal comparator](NONDUAL-APPLICABILITY-COMPARATORS.md) concerns self-regulation. The present extension concerns another participant's changed condition within an established relation. It narrows the empirical target from generic helping or recognition to discrimination among responses. This remains a comparator, not a joined material history with the formal learner.
 

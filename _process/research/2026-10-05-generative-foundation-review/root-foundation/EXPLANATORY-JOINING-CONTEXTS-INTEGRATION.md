@@ -6,7 +6,7 @@
 
 38 new Lean theorems / 166 declaration audits pass. This is a general conditional bridge toward necessary common explanatory content, not a claim that the full metaphysical target is complete or has hit a wall. The joining law, its real correspondence and the claimed scope of explanation remain accountable.
 
-[Current chapter §§84–89](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md#84-把检验放回同一接合活动) · [scoped checks](EXPLANATORY-JOINING-CONTEXTS-CHECKS.json).
+[Current chapter §§84–89](../../../../theories/becoming/chapters/EXPLANATORY-NECESSITY.md#84-把检验放回同一接合活动) · [scoped checks](EXPLANATORY-JOINING-CONTEXTS-CHECKS.json).
 
 ## 1. Corrected target and precise new bridge
 
@@ -121,7 +121,7 @@ Integration: old branch-bisimulation output is checked against joining
   compatibility; operation_lifts feeds both translated questions and tree_lifts.
 ```
 
-The preceding functional theorem remains a completed result. Its ordinary contexts and weaker finiteness requirements are retained; it is not silently replaced by the present richer task. The primary registered claims are [multivalued common structure](../../../../theories/shengsheng-buxi-generative-existence/results/records/multivalued-joining-common-structure.json), [internal question translation](../../../../theories/shengsheng-buxi-generative-existence/results/records/joining-questions-survive-encoding.json) and [finite tree lifting](../../../../theories/shengsheng-buxi-generative-existence/results/records/finite-joining-tree-lifting.json).
+The preceding functional theorem remains a completed result. Its ordinary contexts and weaker finiteness requirements are retained; it is not silently replaced by the present richer task. The primary registered claims are [multivalued common structure](../../../../theories/becoming/results/records/multivalued-joining-common-structure.json), [internal question translation](../../../../theories/becoming/results/records/joining-questions-survive-encoding.json) and [finite tree lifting](../../../../theories/becoming/results/records/finite-joining-tree-lifting.json).
 
 ## 10. Branches arise from the same joining and recover compatibility
 

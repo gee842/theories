@@ -44,7 +44,7 @@ contain must decide: an agreement, prior arrival, a further fact about the
 centers, or a lottery, which is itself a symmetric procedure. The theorem
 shows that such an input is needed. It does not say which input is
 legitimate or who may supply it. Requirement 5 of the
-[completion contract](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md)
+[completion contract](../../../../theories/becoming/chapters/ALIGNMENT-COMPLETION.md)
 asks for exactly this, and this round does not make plural authority
 unnecessary.
 

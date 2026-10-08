@@ -1,6 +1,6 @@
 # 关系中的纠正 / Correction through relations
 
-8 October 2026. AI-authored continuation of [Ren's explicit relational instruction](../../../../sources/15-codex-theory-conversations/2026-10-08-plural-systems-and-parent-correction.md#relational-continuation-8-october-2026). [Current theory, §§8–11](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PLURAL-SYSTEMS-AND-CORRECTION.md#8-start-with-relations-and-derive-the-correction-boundary). Author counterreview; no subagent, independent reviewer or external submission.
+8 October 2026. AI-authored continuation of [Ren's explicit relational instruction](../../../../sources/15-codex-theory-conversations/2026-10-08-plural-systems-and-parent-correction.md#relational-continuation-8-october-2026). [Current theory, §§8–11](../../../../theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md#8-start-with-relations-and-derive-the-correction-boundary). Author counterreview; no subagent, independent reviewer or external submission.
 
 **Result:** exact feasibility grouping does not by itself preserve controllability. A group interface must preserve the relation between available observations and jointly effective choices if it is to support a correction guarantee. A positive finite-chain construction identifies and repairs a composed relation without identifying every internal connection.
 
@@ -12,7 +12,7 @@ The prior [plural-system round](PLURAL-CORRECTION-INTEGRATION.md) showed how com
 
 The new contribution to the governing alignment programme is **operative joint relations → adequate aggregate interface → observation-sensitive realization → application of warranted correction**. It is an implementation and correspondence advance under the explicit ethical route. It does not reopen completed practical principles, replace them by a viability criterion or prove G0 from a compatibility equation.
 
-Two concurrent results are credited. [Relational formation](DEDUCTIVE-FOUNDATION-TEST.md#14-a-necessary-constraint-on-relational-formation) already excludes independent transformations as an explanation of new joint restrictions under its recombination hypotheses. We neither reprove nor count its twenty theorems. [Relations across scales](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md) already explains actual organized participation, changing descriptions and consequence-sensitive adequacy. Our exact feasibility/context theorem addresses a narrower criterion; it does not replace that substantive account.
+Two concurrent results are credited. [Relational formation](DEDUCTIVE-FOUNDATION-TEST.md#14-a-necessary-constraint-on-relational-formation) already excludes independent transformations as an explanation of new joint restrictions under its recombination hypotheses. We neither reprove nor count its twenty theorems. [Relations across scales](../../../../theories/becoming/chapters/RELATIONS-ACROSS-SCALES.md) already explains actual organized participation, changing descriptions and consequence-sensitive adequacy. Our exact feasibility/context theorem addresses a narrower criterion; it does not replace that substantive account.
 
 ## 2. What is formally established
 

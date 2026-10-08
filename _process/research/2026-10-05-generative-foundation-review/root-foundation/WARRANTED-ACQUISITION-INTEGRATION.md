@@ -32,7 +32,7 @@ An exclusion can be sound for one question without extinguishing an event's inde
 
 ## 4. 接入 G0/J 的实践理由 / Connection to practical reasons
 
-G0 赋予整体中的生及继续生成正面意义；[J1–J4](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md)另公开比较与责任承诺。实际表达、理解、回应及共同决定是可能有实质意义的生活关系，不能仅按输出数量或符合预期的程度评价。其具体保护强度、基本／次级分类、承担能力与权限仍须说明，不由“表达”一词自动授予。
+G0 赋予整体中的生及继续生成正面意义；[J1–J4](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md)另公开比较与责任承诺。实际表达、理解、回应及共同决定是可能有实质意义的生活关系，不能仅按输出数量或符合预期的程度评价。其具体保护强度、基本／次级分类、承担能力与权限仍须说明，不由“表达”一词自动授予。
 
 当一条路线不足以支持当前的表达归属时，可以撤回那项归属及依赖它的具体主张；不必等到完整替代出现才允许承认错误。与此同时，另有根据的参与、生活需要和支承理由继续有效。若已有有权限、可承担且适合目标的替代，应比较、采用并检验；若尚没有，任务保留为待解决的支持问题，不能把空缺叫作完成，也不能为了填空维持被击败的证书。
 
@@ -72,4 +72,4 @@ Completed here is a defended, source-constrained connection under explicit commi
 
 ## 8. 仓库与验证 / Repository and checks
 
-Current theory: [alignment and governance](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#warranted-acquisition-and-retained-participation). The bilingual M20 update records this philosophical/evidential scope without increasing proof counts. [Owned edits](WARRANTED-ACQUISITION-INDEX-EDITS.json) and [scoped checks](WARRANTED-ACQUISITION-CHECKS.json) preserve unrelated concurrent changes. Source fingerprints verify versions, not philosophical truth. Original PDFs have not been falsely represented as locally preserved or visually inspected.
+Current theory: [alignment and governance](../../../../theories/becoming/chapters/ALIGNMENT-AND-GOVERNANCE.md#warranted-acquisition-and-retained-participation). The bilingual M20 update records this philosophical/evidential scope without increasing proof counts. [Owned edits](WARRANTED-ACQUISITION-INDEX-EDITS.json) and [scoped checks](WARRANTED-ACQUISITION-CHECKS.json) preserve unrelated concurrent changes. Source fingerprints verify versions, not philosophical truth. Original PDFs have not been falsely represented as locally preserved or visually inspected.

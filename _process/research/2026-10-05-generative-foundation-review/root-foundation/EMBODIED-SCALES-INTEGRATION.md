@@ -1,6 +1,6 @@
 # Cells, organs, bodies, ecosystems and cognitive activity
 
-8 October 2026, Asia/Bangkok. AI-authored continuation of [Ren’s scales direction](../../../../sources/15-codex-theory-conversations/2026-10-08-relations-across-scales.md). [Current chapter](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md) · [evidence](EMBODIED-SCALES-EVIDENCE.md) · [proof and correspondence](EMBODIED-SCALES-PROOF.md).
+8 October 2026, Asia/Bangkok. AI-authored continuation of [Ren’s scales direction](../../../../sources/15-codex-theory-conversations/2026-10-08-relations-across-scales.md). [Current chapter](../../../../theories/becoming/chapters/RELATIONS-ACROSS-SCALES.md) · [evidence](EMBODIED-SCALES-EVIDENCE.md) · [proof and correspondence](EMBODIED-SCALES-PROOF.md).
 
 ## The transition addressed
 

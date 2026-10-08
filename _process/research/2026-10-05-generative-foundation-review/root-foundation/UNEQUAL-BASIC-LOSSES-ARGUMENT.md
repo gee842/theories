@@ -1,6 +1,6 @@
 # 不等基本损失：有根据的减轻与匹配 / Unequal basic losses
 
-2026-10-08。AI 撰写的肯定伦理论证，承接 Ren 已批准的基本冲突方向；不将本文新增承诺归为 Ren 原话。按[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)及明确 G0/J 公理路线推进。[同等救助 BC1](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md)及其[整合](BASIC-CONFLICT-INTEGRATION.md)、并行完成的[一对一不等程度 BC2](BASIC-LOSS-SEVERITY-INTEGRATION.md)作为成果复用。研究中查新后，本稿由起草时的“新 BC2”改为下述 LC；不占用、覆盖或重新证明该一对一成果。
+2026-10-08。AI 撰写的肯定伦理论证，承接 Ren 已批准的基本冲突方向；不将本文新增承诺归为 Ren 原话。按[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)及明确 G0/J 公理路线推进。[同等救助 BC1](../../../../theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.md)及其[整合](BASIC-CONFLICT-INTEGRATION.md)、并行完成的[一对一不等程度 BC2](BASIC-LOSS-SEVERITY-INTEGRATION.md)作为成果复用。研究中查新后，本稿由起草时的“新 BC2”改为下述 LC；不占用、覆盖或重新证明该一对一成果。
 
 **本轮肯定结论：在数量和程度共同变化时，仍可形成部分有根据的减轻理由，而不先获得一把衡量一切生的尺子。** 当相关历史与共同支承得到保留，某方案的每项剩余基本损失都有另一方案中不重复、至少同样严重的实际损失与之相配，而且后一方案还有额外损失或某项更重，我们有理由朝前一方案移动。本文称这项附加伦理承诺为 **LC：联合损失比较理由**。其一般强度是可被其他根据击败的比较理由；它不自动给出最后行动许可或取消他方机会的充分根据。
 
@@ -8,7 +8,7 @@ LC 不削弱 BC1 已经公开承担的、在同等救助范围内更强的确定
 
 ## 1. 新的连接与保留的前提
 
-[实践判断](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md)的 J2 已经比较同一范围内基本保护的包含，BC1 已经处理一类同等而交叉的基本请求，BC2 已经支持一对一的有根据程度比较。本轮接续的是其当前 §14 提出的联合问题：**两个方案伤及不同的基本生活，且程度与数量同时变化时，哪些差别能共同提供实质比较，而不偷偷设定跨种类兑换率？**
+[实践判断](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md)的 J2 已经比较同一范围内基本保护的包含，BC1 已经处理一类同等而交叉的基本请求，BC2 已经支持一对一的有根据程度比较。本轮接续的是其当前 §14 提出的联合问题：**两个方案伤及不同的基本生活，且程度与数量同时变化时，哪些差别能共同提供实质比较，而不偷偷设定跨种类兑换率？**
 
 G0 肯定整体中的生及其继续生成。J1 保留完整历史和真实损失，J2 保护基本条件，J3/J4 处理承担、权限、可行性与及时选择。BC2 已经解释：在相关根据相当时，实际基本损失的程度能够支持一对一比较。LC 另外承诺：符合下述关系要求的这些减轻，可以同额外实际保护一道支持一个共同方向。这个合成内容既不是 G0 那一句话的逻辑定理，也不是凭 BC1/BC2 的名称已经获得的推论。
 

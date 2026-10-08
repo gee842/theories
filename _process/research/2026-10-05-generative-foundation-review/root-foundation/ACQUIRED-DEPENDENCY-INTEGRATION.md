@@ -2,7 +2,7 @@
 
 6 October 2026. AI-authored continuation under
 [Ren's core/tree correction](../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md)
-and the [shared nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md).
+and the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md).
 The previous goal round made progress: it established and integrated the exact
 [continuing-dependency characterization](CONTINUING-DEPENDENCY-INTEGRATION.md).
 The current connection is actual native consequence → formed record of a

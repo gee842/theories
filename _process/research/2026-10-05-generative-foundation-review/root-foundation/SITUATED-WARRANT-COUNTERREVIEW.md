@@ -1,6 +1,6 @@
 # 情境判断、深度不确定性与实践根据：独立反评审
 
-7 October 2026，Asia/Bangkok。AI 独立实质反评审，服务于 [普遍元伦理目标](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence)，遵循 [非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)。这是概念论证与反例检验；以下比较明确供给其情境条件，没有新经验结果、数学定理或 Lean 检查。未新增外部原典核查，外部文献不能从本反评审取得未经阅读的背书。
+7 October 2026，Asia/Bangkok。AI 独立实质反评审，服务于 [普遍元伦理目标](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence)，遵循 [非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)。这是概念论证与反例检验；以下比较明确供给其情境条件，没有新经验结果、数学定理或 Lean 检查。未新增外部原典核查，外部文献不能从本反评审取得未经阅读的背书。
 
 **评审结论：可以支持“无法枚举全部未来，不自动取消当下已有根据的理由”；不能由此推出“已有支持路径、异议渠道和修订能力，足以使实施成为正当”。** 最重要的修正，是把认识范围的辩护与实际风险承担的辩护接起来：遗漏如何形成、反馈何时可达、谁承担试行损失、停止后什么仍继续发生，都是被判断的同一生成关系。它们可能保留某个帮助理由，却推翻整体优先、实际许可或持续实施的根据。三者不能用一个“判断被推翻”概括。
 
@@ -112,6 +112,6 @@
 
 这次复核只检查整合稿的论证和范围，未重新核查来源稿的外部文献，也未新增形式结果。以上修改完成后的最终文本仍需主整合者逐项确认；本段不预先认证尚未看到的修订。
 
-**修订后复核：三项已修正。** 同日直接重读整合稿 §2、§3、§6、§9 及 [当前理论入口](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#situated-judgment-under-deep-uncertainty)。两类不确定与实际损失已经区分；旧根据的新发现可以重开判断；下一检验现明确争论：无先行承担的控制位置能否仅凭有支持且保留历史损失的整体比较，使缺乏实质改变能力的生活承担可预见的严重不可恢复风险。竞争解释否认额外承担授权是独立条件，集中决定、自愿冒险等则保留为范围控制。整合稿与理论入口对此一致，均注明该比较尚未执行，未把它计为本轮成果。
+**修订后复核：三项已修正。** 同日直接重读整合稿 §2、§3、§6、§9 及 [当前理论入口](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#situated-judgment-under-deep-uncertainty)。两类不确定与实际损失已经区分；旧根据的新发现可以重开判断；下一检验现明确争论：无先行承担的控制位置能否仅凭有支持且保留历史损失的整体比较，使缺乏实质改变能力的生活承担可预见的严重不可恢复风险。竞争解释否认额外承担授权是独立条件，集中决定、自愿冒险等则保留为范围控制。整合稿与理论入口对此一致，均注明该比较尚未执行，未把它计为本轮成果。
 
 §3 也已将正面表述限定为可反驳的审查结构，排除新充分行动条件及纯粹按日期的伦理折扣。本次限定复核未发现仍需修改的阻碍。此结论只确认上述修订及其入口对应，不认证尚未执行的比较、不裁决其竞争解释，也不新增普遍伦理、经验或形式验证结果。

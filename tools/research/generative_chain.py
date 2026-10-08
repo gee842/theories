@@ -14,7 +14,7 @@ import re
 from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[2]
-BASE = ROOT / "theories/shengsheng-buxi-generative-existence/results"
+BASE = ROOT / "theories/becoming/results"
 DATA = BASE / "data/generativity-chain.json"
 OUTPUT = BASE / "GENERATIVITY-CHAIN.md"
 

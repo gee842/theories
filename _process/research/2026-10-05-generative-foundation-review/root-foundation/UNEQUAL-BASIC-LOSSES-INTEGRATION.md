@@ -22,7 +22,7 @@ Our candidate **LC** concerns a comparative reason grounded in joint loss reduct
 
 肯定根据在于：G0 所关切的是实际生活及其接续，因而在适用范围内，已经辨明的基本毁损减轻不能仅因发生位置不同就完全失去比较作用。这样的理由不会使受损者得到补偿，也不会使未被满足的要求消失。它要求共同回应认真对待少发生或较轻发生的损失，同时保留每处不能相互代受的后果。
 
-LC 没有直接回答这项理由胜过哪些其他理由。我们保留“在损失这个方面有理由支持甲”，而不把它自动升级成“甲整体更好”“必须选甲”或“乙一方不应有任何机会”。若要跨过这一步，需要对实际权利、机会、既有承担和共同决定另作说明；[既有 J3/J4](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md)继续承担其范围内的工作。BC1 的较强优先承诺和当前 BC2 的一对一比较理由都有自己的辩护，不能从 LC 的算术重复取得。
+LC 没有直接回答这项理由胜过哪些其他理由。我们保留“在损失这个方面有理由支持甲”，而不把它自动升级成“甲整体更好”“必须选甲”或“乙一方不应有任何机会”。若要跨过这一步，需要对实际权利、机会、既有承担和共同决定另作说明；[既有 J3/J4](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md)继续承担其范围内的工作。BC1 的较强优先承诺和当前 BC2 的一对一比较理由都有自己的辩护，不能从 LC 的算术重复取得。
 
 LC is a substantive, defeasible comparative commitment. It allows suitably warranted loss reductions across differentiated positions to count together, without treating one person's reduction as compensation paid to another. Its force is pro tanto: a genuine reason which may not settle the decision. Formal strictness does not itself establish decisive normative force.
 
@@ -84,4 +84,4 @@ The counterexample has substantive structure: the same dependency law yields dif
 
 ## 8. 验证与维护
 
-确切定理、声明审计、继承模块和源快照见[证明说明](UNEQUAL-BASIC-LOSSES-PROOF.md)及其链接回执；[独立评审](UNEQUAL-BASIC-LOSSES-REVIEW.md)另给实质验收。当前理论接入[基本冲突章节](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md#joint-number-and-gravity)。[本轮核验](UNEQUAL-BASIC-LOSSES-CHECKS.json)只检查本轮文件、证明绑定、链接与双语 M20 更新；不宣称未复核的并行来源已获整表验收。没有新增经验测量。
+确切定理、声明审计、继承模块和源快照见[证明说明](UNEQUAL-BASIC-LOSSES-PROOF.md)及其链接回执；[独立评审](UNEQUAL-BASIC-LOSSES-REVIEW.md)另给实质验收。当前理论接入[基本冲突章节](../../../../theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.md#joint-number-and-gravity)。[本轮核验](UNEQUAL-BASIC-LOSSES-CHECKS.json)只检查本轮文件、证明绑定、链接与双语 M20 更新；不宣称未复核的并行来源已获整表验收。没有新增经验测量。

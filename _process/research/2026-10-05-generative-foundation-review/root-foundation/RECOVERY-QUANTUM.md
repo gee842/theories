@@ -1,6 +1,6 @@
 # The recovery rate is the dissipation of one failed conversion
 
-7 October 2026. AI-assisted continuation of the [contact-formation track](CONTACT-FORMATION-LAW.md), which listed "the recovery rate of ten dissipated units per spare pair" as supplied. It follows the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md): recovery is examined as one operation of the same activity whose failed conversions it recovers, not as an exchange with something outside it.
+7 October 2026. AI-assisted continuation of the [contact-formation track](CONTACT-FORMATION-LAW.md), which listed "the recovery rate of ten dissipated units per spare pair" as supplied. It follows the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md): recovery is examined as one operation of the same activity whose failed conversions it recovers, not as an exchange with something outside it.
 
 **Formal status:** [RecoveryQuantum.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean), 30 declarations, every axiom report empty. It is checked by [check_stock_derivation.py](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/check_stock_derivation.py) together with the formation-draw and starting-stock modules. No existing module is changed.
 

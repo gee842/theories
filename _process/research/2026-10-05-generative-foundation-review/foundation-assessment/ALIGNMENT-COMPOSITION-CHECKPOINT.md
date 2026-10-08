@@ -40,15 +40,15 @@ SHA-256 snapshot, 2026-10-06 02:17 UTC. Subsequent edits need their own binding;
 | [Finish-line audit][finish] | `708838771586c864ee080b1899e63f6b55555ecf89bc42cc63eb8f42c48b5469` |
 | [Continuation proof][continuation] | `1f74461cada69c3821a9dbe76a8baea0b3120fa74e47e7a5446729e4ccfa1385` |
 
-[completion]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md
-[grounding]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation
-[premises]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md
-[uptake]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-UPTAKE.md
-[application]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md
-[succession]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-SUCCESSION.md
+[completion]: ../../../../theories/becoming/chapters/ALIGNMENT-COMPLETION.md
+[grounding]: ../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation
+[premises]: ../../../../theories/becoming/chapters/FOUNDATION-PREMISES.md
+[uptake]: ../../../../theories/becoming/chapters/EVALUATIVE-UPTAKE.md
+[application]: ../../../../theories/becoming/chapters/EVALUATIVE-APPLICATION.md
+[succession]: ../../../../theories/becoming/chapters/EVALUATIVE-SUCCESSION.md
 [continuation]: ../../2026-10-05-revisable-concern/settlement/formal/ENDOGENOUS-CONTINUATION-MATH.md
-[institution]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md
-[memory]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md
-[empirical]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EMPIRICAL-SCOPE.md
-[plasticity]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-PLASTICITY.md
+[institution]: ../../../../theories/becoming/chapters/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md
+[memory]: ../../../../theories/becoming/chapters/MEMORY-CORRECTION-AND-SUCCESSION.md
+[empirical]: ../../../../theories/becoming/chapters/EMPIRICAL-SCOPE.md
+[plasticity]: ../../../../theories/becoming/chapters/EVALUATIVE-PLASTICITY.md
 [finish]: ../root-foundation/FIXED-FINISH-LINE-AUDIT.md

@@ -101,7 +101,7 @@ Both original author-manuscript HTML files and retrieval provenance are [preserv
 
 The completed bridge is **growth-dependent accessibility of successor compositions and their finite preparation consequences**. The next bridge is **reconstruction and transmission of the operative growth and retention relations themselves**, together with a fracture law responsive to those relations. It must connect an actual prepared state to renewed development, rather than assigning a graph or resetting a mature-state flag. Forces, geometric rearrangement, inherited developmental schedules and support renewal are candidate mechanisms to investigate; none is supplied by a favorable return coefficient.
 
-The independently completed [calibrated updater](EVOLUTION-CALIBRATED-UPDATER.md), memory, assembly and normative studies retain their scopes. Evolutionary persistence supplies no new ethical warrant. The six broader completion conditions of [The Theory of Evolution](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md) remain unchanged.
+The independently completed [calibrated updater](EVOLUTION-CALIBRATED-UPDATER.md), memory, assembly and normative studies retain their scopes. Evolutionary persistence supplies no new ethical warrant. The six broader completion conditions of [The Theory of Evolution](../../../../theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md) remain unchanged.
 
 ## Verification
 
@@ -125,7 +125,7 @@ Evidence: `prepared_output_rebuilds`, `fragments_retain_real_links`, `supported_
 
 Boundary: material life-cycle closure for this fixed local law does not yet establish autonomous supply, the origin of the laws, differential inheritance of alternative developmental rules, or natural fracture mechanics. The previous branched structure is not rebuilt by this new chain-specific operation.
 
-Integration: the [canonical result](../../../../theories/shengsheng-buxi-generative-existence/results/records/recurrent-chain-assembly.json) records the exact producer-to-consumer interfaces. Earlier empirical, sorting, memory and updater results remain separate unless an actual adapter is proved.
+Integration: the [canonical result](../../../../theories/becoming/results/records/recurrent-chain-assembly.json) records the exact producer-to-consumer interfaces. Earlier empirical, sorting, memory and updater results remain separate unless an actual adapter is proved.
 
 ### Material preparation becomes a formed structure
 
@@ -208,7 +208,7 @@ Evidence: [StructuralCopying.lean](../../../../experiments/integrated-correction
 
 Boundary: structural variation is inherited under a supplied copying relation; the formation, accuracy and renewal of that copying relation are not derived. A release threshold is not a calendar-time growth rate or an invasion criterion. All six broader completion requirements remain intact.
 
-Integration: the [canonical result](../../../../theories/shengsheng-buxi-generative-existence/results/records/inherited-structural-copying.json) records the producer-output/consumer-input correspondence. `previous_fragment_is_template` identifies an actual earlier ABAB fragment with the new template input. It is an endpoint adapter, not a proof that earlier attachment creates template-reading capacity. This limitation is additional to, not hidden inside, the inherited fragment identity.
+Integration: the [canonical result](../../../../theories/becoming/results/records/inherited-structural-copying.json) records the producer-output/consumer-input correspondence. `previous_fragment_is_template` identifies an actual earlier ABAB fragment with the new template input. It is an endpoint adapter, not a proof that earlier attachment creates template-reading capacity. This limitation is additional to, not hidden inside, the inherited fragment identity.
 
 ### How variation enters further generation
 
@@ -280,7 +280,7 @@ Evidence: [CopyingRegistration.lean](../../../../experiments/integrated-correcti
 
 Boundary: contact formation makes one prerequisite of accurate copying endogenous to the represented history; it does not derive all of copying, selection or the enabling local law. There is no estimated mutation rate or proof that fidelity improves evolution in every setting. “Error” here means disagreement with the specified retained template, not moral badness, loss of function or evolutionary disadvantage.
 
-Integration: the [canonical record](../../../../theories/shengsheng-buxi-generative-existence/results/records/formed-copying-registration.json) specifies the exact interface. Complete value registration and consistency between the retained template, built prefix and remaining suffix imply refinement to the old copying operation. `registered_inheritance` then uses the old `copied_structure_inherits`, preserving its nonempty path and stock/cost hypotheses. This composition discharges the old perfect-read premise for stable registered operations; it does not erase the new formation premises or preserve registration through arbitrary loss and displacement.
+Integration: the [canonical record](../../../../theories/becoming/results/records/formed-copying-registration.json) specifies the exact interface. Complete value registration and consistency between the retained template, built prefix and remaining suffix imply refinement to the old copying operation. `registered_inheritance` then uses the old `copied_structure_inherits`, preserving its nonempty path and stock/cost hypotheses. This composition discharges the old perfect-read premise for stable registered operations; it does not erase the new formation premises or preserve registration through arbitrary loss and displacement.
 
 ### Formation, interruption and restoration in one history
 
@@ -340,7 +340,7 @@ Evidence: [CopyingCorrection.lean](../../../../experiments/integrated-correction
 
 Boundary: the controller compares the actual value reached by its formed route with the current product value. It does not receive a true-error label or read the `Faithful` predicate. Agreement with the intended template is a separate correspondence condition. A formed route can lead to the wrong source, and inspection can consume the remaining opportunity to edit or release.
 
-Integration: the [canonical record](../../../../theories/shengsheng-buxi-generative-existence/results/records/formed-copying-correction.json) gives the producer/consumer interface. `damaged` executes the old formation, displacement and copying operations at an explicitly declared entrance budget; its work, stock and expenditure are retained, without resetting them before repair. The previous 12-unit example is not silently granted additional support: this continuation states budgets 13, 14 and 15 at the entrance. New arbitrary-history accounts directly reuse `CopyingRegistration.step_accounts` for inherited operations.
+Integration: the [canonical record](../../../../theories/becoming/results/records/formed-copying-correction.json) gives the producer/consumer interface. `damaged` executes the old formation, displacement and copying operations at an explicitly declared entrance budget; its work, stock and expenditure are retained, without resetting them before repair. The previous 12-unit example is not silently granted additional support: this continuation states budgets 13, 14 and 15 at the entrance. New arbitrary-history accounts directly reuse `CopyingRegistration.step_accounts` for inherited operations.
 
 ### Detection, replacement and continuation separate in the actual mechanism
 

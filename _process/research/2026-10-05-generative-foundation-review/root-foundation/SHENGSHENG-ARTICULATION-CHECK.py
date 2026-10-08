@@ -16,7 +16,7 @@ from urllib.parse import unquote
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[3]
-THEORY = ROOT / 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05'
+THEORY = ROOT / 'theories/becoming/chapters'
 LEAN = ROOT / 'experiments/integrated-correction/general-framework/generative-basis/lean'
 PREDICTION = ROOT / 'experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction'
 PLASTICITY = PREDICTION / 'recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity'

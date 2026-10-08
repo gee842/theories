@@ -1,6 +1,6 @@
 # Inquiry sufficient for a continuation: a focused antecedent comparison
 
-6 October 2026. AI-authored research comparison under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Named connection: **acquired distinctions → feasible further activity → revision of what counts as sufficient inquiry**. This note compares the [conditional mathematics](INQUIRY-SUFFICIENCY-MATH.md) and [existing-history reconstruction](INQUIRY-SUFFICIENCY-MECHANISM.md) with one primary antecedent already in the repository's research genealogy. It adds no controller, empirical result or new scientific execution.
+6 October 2026. AI-authored research comparison under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Named connection: **acquired distinctions → feasible further activity → revision of what counts as sufficient inquiry**. This note compares the [conditional mathematics](INQUIRY-SUFFICIENCY-MATH.md) and [existing-history reconstruction](INQUIRY-SUFFICIENCY-MECHANISM.md) with one primary antecedent already in the repository's research genealogy. It adds no controller, empirical result or new scientific execution.
 
 ## 1. The close antecedent already includes inquiry changing continuation
 
@@ -52,4 +52,4 @@ These identify the inspected versions, not a freeze of files owned by other work
 | [Existing-history reconstruction](INQUIRY-SUFFICIENCY-MECHANISM.md) | `aeaa52d2a4f7feb5210d3d68d18ae3b0946f6c2b69a4a9255575c0a4da4c117d` |
 | [Recoverable-inquiry antecedents](../../2026-10-04-integrated-evolution/recoverable-inquiry-prior-art.md) | `0a223a166e05be767cb0826f8d362403ff2939aee42b5d107b416901f81d78a4` |
 | [Recurrent-inquiry antecedents](../../2026-10-04-integrated-evolution/recurrent-inquiry-prior-art.md) | `816e231383e4d010496f1c3e4453a1c317ff2dd5899a8a2e3804635cae6a93a2` |
-| [Shared method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) | `809515aea3c9b2f67cf95c0a5c0251d5da3b7ae72c669981d7d8f26d528ba573` |
+| [Shared method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) | `809515aea3c9b2f67cf95c0a5c0251d5da3b7ae72c669981d7d8f26d528ba573` |

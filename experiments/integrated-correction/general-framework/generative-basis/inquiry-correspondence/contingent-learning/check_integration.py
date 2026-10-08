@@ -25,8 +25,8 @@ def main():
     files = [HERE / 'README.md', HERE / 'PLAN.md',
              ROOT / 'sources/developmental-attention/bazhydai-2026/README.md',
              BASE / 'ACQUIRED-SEGMENTATION-INTEGRATION.md',
-             ROOT / 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md']
-    record_dir = ROOT / 'theories/shengsheng-buxi-generative-existence/results/records'
+             ROOT / 'theories/becoming/chapters/COGNITION-LEARNING-AND-EVOLUTION.md']
+    record_dir = ROOT / 'theories/becoming/results/records'
     ids = ['acquired-binding-compositional-use', 'enacted-scene-binding',
            'encounter-selection-and-revision', 'naming-attention-coverage', 'encounter-control-and-retention']
     files += [record_dir / (name + '.md') for name in ids]

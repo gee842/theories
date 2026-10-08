@@ -16,4 +16,4 @@ The assistant recommended pausing attempts to establish unique metaphysical grou
 
 ## Scope
 
-This authorizes continuation of that operational study. It does not claim the study succeeded, endorse a particular implementation or withdraw the repository's broader generative-grounding objective. The resulting AI-authored work is [acquiring an abstraction from prediction failure](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ABSTRACTION-ACQUISITION.md).
+This authorizes continuation of that operational study. It does not claim the study succeeded, endorse a particular implementation or withdraw the repository's broader generative-grounding objective. The resulting AI-authored work is [acquiring an abstraction from prediction failure](../../theories/becoming/chapters/ABSTRACTION-ACQUISITION.md).

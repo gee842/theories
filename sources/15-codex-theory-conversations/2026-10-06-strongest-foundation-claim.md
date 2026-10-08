@@ -22,4 +22,4 @@ The instruction directs the research toward its strongest substantive explanator
 
 The accepted conditional candidate retains its existing completed scope. Stronger conclusions require further grounds; their investigation should not silently substitute a weaker controller demonstration or reopen every accepted local result.
 
-Current continuation: [the strongest foundation claim](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/STRONGEST-FOUNDATION-CLAIM.md). Governing context: [generative grounding](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md) and [unified ethical grounding](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md).
+Current continuation: [the strongest foundation claim](../../theories/becoming/chapters/STRONGEST-FOUNDATION-CLAIM.md). Governing context: [generative grounding](../../theories/becoming/chapters/GENERATIVE-GROUNDING.md) and [unified ethical grounding](../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md).

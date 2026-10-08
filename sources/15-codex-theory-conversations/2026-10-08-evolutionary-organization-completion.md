@@ -17,4 +17,4 @@ Ren selected:
 
 The alternative offered was the account plus a quantitatively validated prediction under a new experimental condition. Ren did not select that stronger empirical completion requirement. This does not cancel the wider evolutionary programme or establish comparative superiority by stipulation.
 
-The [current account](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md) and [completion assessment](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md) are AI-authored research, not further quotations from Ren.
+The [current account](../../theories/becoming/chapters/EVOLUTIONARY-ORGANIZATION.md) and [completion assessment](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md) are AI-authored research, not further quotations from Ren.

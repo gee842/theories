@@ -2,7 +2,7 @@
 
 **7 October continuation:** [Actual recovery and its retained interruption](ETHICAL-NATURALISM-ACTUAL-RECOVERY.md) now resolve the proposed immediate/eventual representation bridge. Twenty-one new axiom-free results retain actual restoration and show why eventual possibilities alone omit the interruption. The [merged integration](MERGED-OBLIGATIONS-INTEGRATION.md) also puts a contact profile and native support on the same actual port run. Neither result derives protected scope or universal ethical warrant; older package counts below describe their respective stages.
 
-2026年10月6日。AI 撰写的研究说明，回应 [Ren 关于四条自然主义论证"都可以最终证明"的消息](../../../../sources/15-codex-theory-conversations/2026-10-06-ethical-naturalism-arguments.md)。遵循[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)：评价、更新和纠正都作为展开内部的活动处理，不设外部裁判位置。形式部分在 [Lean 包](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/README.md)中。按 Ren 的无公理规则改写后，整个包 120 条新声明全部审计，**全部不依赖任何公理**（包括 Lean 标准的 `propext` 与 `Quot.sound`）；无 `sorry`，继承模块的源码哈希与主收据一致。改写前的源码与收据保存在包内的 `verification-history/2026-10-06-before-axiom-removal/`。本文不是 Ren 原话，也不宣称伦理结论已经证明。
+2026年10月6日。AI 撰写的研究说明，回应 [Ren 关于四条自然主义论证"都可以最终证明"的消息](../../../../sources/15-codex-theory-conversations/2026-10-06-ethical-naturalism-arguments.md)。遵循[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)：评价、更新和纠正都作为展开内部的活动处理，不设外部裁判位置。形式部分在 [Lean 包](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/README.md)中。按 Ren 的无公理规则改写后，整个包 120 条新声明全部审计，**全部不依赖任何公理**（包括 Lean 标准的 `propext` 与 `Quot.sound`）；无 `sorry`，继承模块的源码哈希与主收据一致。改写前的源码与收据保存在包内的 `verification-history/2026-10-06-before-axiom-removal/`。本文不是 Ren 原话，也不宣称伦理结论已经证明。
 
 **审查状态。** 首版发表后，同日由一个独立 AI 审查者复核。审查确认证明全部成立，但指出四处阻断性的表述过度和若干应改之处。本版已按审查改写；第7节列出改正内容，首版保留在 git 历史中。新增的 `NaturalismReview.lean` 给出改正后的形式陈述，前两个模块未改动。
 
@@ -20,9 +20,9 @@
 
 | 论证 | 生成论的对应 | 已有结果 | 本轮证明了什么 | 未证 |
 |---|---|---|---|---|
-| 随附性（Jackson） | 候选质量是整段历史的函数 | 中途下降不能由终点摘要恢复（[一体之仁 §7](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#7-形式化怎样保存同一历程)）；整体评价先于时间表达（[FUTURE-GOOD-INTEGRAL §7](FUTURE-GOOD-INTEGRAL.md#7-whole-appraisal-can-precede-its-temporal-expression)） | 随附蕴含在商上分解，基础的函数随附（对任意性质成立的一般事实）；候选质量一般不随附于起点、终点加动作序列 | 道德属性随附于自然基础；必然共外延到属性同一 |
+| 随附性（Jackson） | 候选质量是整段历史的函数 | 中途下降不能由终点摘要恢复（[一体之仁 §7](../../../../theories/becoming/chapters/NONINSTRUMENTAL-CONCERN.md#7-形式化怎样保存同一历程)）；整体评价先于时间表达（[FUTURE-GOOD-INTEGRAL §7](FUTURE-GOOD-INTEGRAL.md#7-whole-appraisal-can-precede-its-temporal-expression)） | 随附蕴含在商上分解，基础的函数随附（对任意性质成立的一般事实）；候选质量一般不随附于起点、终点加动作序列 | 道德属性随附于自然基础；必然共外延到属性同一 |
 | 怪异性（Mackie）／简约（Harman） | 候选质量只用过程本身定义 | 核心语义只有可行转换（`GenerativeCore`） | 保持动作词汇不变的精确重表示下不变 | 规范的"应被追求性"；对动作词汇选择的依赖 |
-| 认识论 | 损失有有限见证，并落在实际转换上 | 询问何时有用（`InquiryWarrant`）；估值经共同经历形成，正负皆可（[估值发展](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/VALUATION-DEVELOPMENT.md)）；完全对称的起点不能由记录决定（[记录与竞争要求](RECORDED-CLAIMS-INTEGRATION.md)） | 有限见证否定保全；损失定位；只看终点认识不到 | 道德信念怎样经观察形成并得到辩护；反思平衡是否收敛 |
+| 认识论 | 损失有有限见证，并落在实际转换上 | 询问何时有用（`InquiryWarrant`）；估值经共同经历形成，正负皆可（[估值发展](../../../../theories/becoming/chapters/VALUATION-DEVELOPMENT.md)）；完全对称的起点不能由记录决定（[记录与竞争要求](RECORDED-CLAIMS-INTEGRATION.md)） | 有限见证否定保全；损失定位；只看终点认识不到 | 道德信念怎样经观察形成并得到辩护；反思平衡是否收敛 |
 | 解释作用（康奈尔） | 候选质量在一切过程中蕴含"活动始终可实现" | `short_kinds_cannot_renew_forever` | 一条跨过程成立的定律式推论 | Sturgeon/Harman 意义上对观察与信念的因果解释 |
 
 ## 1. 随附性与 Jackson 的论证
@@ -51,9 +51,9 @@ Mackie 还有两部分没有被消解。第一，**规范的"应被追求性"**�
 - **损失有有限见证。** 一个动作序列在前一状态可行、在后一状态不可行，这一个有限事实就否定了保全（`witness_refutes_preservation`）。
 - **保全是全称命题。** 它涉及一切动作序列，只能得到可错的支持。
 - **损失落在实际转换上。** 若可行性可判定（例如有限过程），起点可行、终点不可行的动作序列一定在某一次实际转换上失去（`loss_localizes`）。不假定可判定时，"没有任何转换承担这次损失"也不可能成立（`loss_localizes_nn`）。
-- **只看终点认识不到。** 这与[一体之仁 §7](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#7-形式化怎样保存同一历程)的中途下降结果一致。
+- **只看终点认识不到。** 这与[一体之仁 §7](../../../../theories/becoming/chapters/NONINSTRUMENTAL-CONCERN.md#7-形式化怎样保存同一历程)的中途下降结果一致。
 
-这些是关于候选自然属性的认识论，不是关于道德知识的认识论。道德信念怎样经观察形成并得到辩护，可以接到[估值发展](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/VALUATION-DEVELOPMENT.md)：对他者后果的看重经共同经历形成，正负联结都可能，所以经验形成的评价需要纠正。还可以接到[延续范围](CONTINUATION-SCOPE-INTEGRATION.md)和[记录与竞争要求](RECORDED-CLAIMS-INTEGRATION.md)。这些连接尚未做成定理。
+这些是关于候选自然属性的认识论，不是关于道德知识的认识论。道德信念怎样经观察形成并得到辩护，可以接到[估值发展](../../../../theories/becoming/chapters/VALUATION-DEVELOPMENT.md)：对他者后果的看重经共同经历形成，正负联结都可能，所以经验形成的评价需要纠正。还可以接到[延续范围](CONTINUATION-SCOPE-INTEGRATION.md)和[记录与竞争要求](RECORDED-CLAIMS-INTEGRATION.md)。这些连接尚未做成定理。
 
 ## 4. 解释作用
 
@@ -148,13 +148,13 @@ Ren 于同日要求：不许有假设，不许有公理；每个输入要么在 
 
 ## 9. 一元重述：评价是同一过程内的关系
 
-**去掉的二分。** 首版沿用西方提法，把"道德属性"与"自然基础"当作两类东西，再问一类是否随附于、等同于另一类；也把"规范前提"与"中性事实"分开。按[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)，评价、理解和行动都是同一生成展开中分化出的关系。这里不再预设两类，而是把评价写成过程的一个组成部分，看由此能推出什么。
+**去掉的二分。** 首版沿用西方提法，把"道德属性"与"自然基础"当作两类东西，再问一类是否随附于、等同于另一类；也把"规范前提"与"中性事实"分开。按[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)，评价、理解和行动都是同一生成展开中分化出的关系。这里不再预设两类，而是把评价写成过程的一个组成部分，看由此能推出什么。
 
 **形式。** [`EmbeddedEvaluation.lean`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/naturalism/EmbeddedEvaluation.lean)（5 条新审计，均不依赖公理）定义 `recording P E`：在原过程的状态上带一个记录，记录只随原过程自己的转换而改变，改变方式由转换两端状态之间的关系 `E` 决定。评价因此就是过程的一部分，不在过程之外。
 
 - **随附是推出的，不是假设的。** 沿耦合过程的任意历史，记录恰好等于"`E` 在同一历史的每次转换上都成立"（`record_tracks_whole_history`）。西方问题里的"道德属性随附于自然事实"和"同一"，在这里是同一个历史关系的两种说法：记录就是整段历史的关系，作为状态的一部分被携带。没有需要连接的第二类东西。
 - **评价与它所评价的条件共命运。** 记录既不开启也不阻止任何活动（`recording_enabled_iff`、`recording_feasible_iff`）；过程能继续多久，评价就能继续多久。按延续条件序前进时，连同记录在内的每个初始可实现活动在每个访问状态都保持可实现（`guided_recording_keeps_continuation`）。评价不能比它赖以进行的条件活得更久。
-- **哪一种评价关系形成，是历史本身的事。** 同一过程定律下，以延续条件序记录和以其逆序记录都是可能的耦合；对同一次实际的下降，两者记录相反（`law_admits_opposite_recordings`）。所以第8节证明必要的"取向输入"，一元地看，不是从过程外部输入的"应当"，而是**哪一种评价关系在展开中形成并延续**的问题。这正是[估值发展研究](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/VALUATION-DEVELOPMENT.md)处理的形成问题（共同经历形成正或负的联结），也是研究目标中的"选择者的选择"。
+- **哪一种评价关系形成，是历史本身的事。** 同一过程定律下，以延续条件序记录和以其逆序记录都是可能的耦合；对同一次实际的下降，两者记录相反（`law_admits_opposite_recordings`）。所以第8节证明必要的"取向输入"，一元地看，不是从过程外部输入的"应当"，而是**哪一种评价关系在展开中形成并延续**的问题。这正是[估值发展研究](../../../../theories/becoming/chapters/VALUATION-DEVELOPMENT.md)处理的形成问题（共同经历形成正或负的联结），也是研究目标中的"选择者的选择"。
 
 **这改变了什么，没改变什么。**
 
@@ -210,7 +210,7 @@ Ren 于同日要求：不许有假设，不许有公理；每个输入要么在 
 
 因此，该例只否定“所选活动可以持续，就必定保留先前每一种活动”。它没有证明整体变坏，也没有反驳“取消某项活动可以构成整体生成的改善”。两个状态完整描述这个极小模型，不等于已完整表达待评价的整体关系。先前助手把该例用于解释整体伦理的困难，超出了这个反例的判别能力；保留原数学结论，收窄其伦理用途。
 
-真正的比较必须保留活动终止如何改变实际关系、实现、负担与后续生成条件。对“保留全部活动”的准则，具有充分根据的限制或完成可以构成挑战；对本已容许建设性终止的整体理论，单有取消并非反例。应检验其具体的整体质量判准及相同条件下的竞争解释，而不能随意翻转一个省略这些关系的评价谓词。[当前整体比较](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#ending-an-activity-and-the-quality-of-the-whole-continuation)保留善的构成说明这一研究任务，也不预先宣布改善已经成立。
+真正的比较必须保留活动终止如何改变实际关系、实现、负担与后续生成条件。对“保留全部活动”的准则，具有充分根据的限制或完成可以构成挑战；对本已容许建设性终止的整体理论，单有取消并非反例。应检验其具体的整体质量判准及相同条件下的竞争解释，而不能随意翻转一个省略这些关系的评价谓词。[当前整体比较](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#ending-an-activity-and-the-quality-of-the-whole-continuation)保留善的构成说明这一研究任务，也不预先宣布改善已经成立。
 
 ## 形式索引
 

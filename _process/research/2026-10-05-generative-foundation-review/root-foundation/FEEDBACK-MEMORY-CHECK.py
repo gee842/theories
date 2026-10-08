@@ -11,7 +11,7 @@ FORMAL=ROOT/'experiments/integrated-correction/general-framework/generative-basi
 EXPERIMENT=ROOT/'experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence'
 REVIEW=HERE/'development/feedback-memory-review'
 ACCEPTED=HERE/'development/feedback-memory-accepted-documents'
-CANONICAL=ROOT/'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEASURED-FEEDBACK-CORRESPONDENCE.md'
+CANONICAL=ROOT/'theories/becoming/chapters/MEASURED-FEEDBACK-CORRESPONDENCE.md'
 
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 

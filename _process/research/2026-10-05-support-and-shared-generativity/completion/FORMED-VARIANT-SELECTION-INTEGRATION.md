@@ -1,6 +1,6 @@
 # Closing the formation-to-retention preparation gap
 
-6 October 2026. AI-authored integration under the [governing roadmap](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md). The previous [conditional regulation gate](REGULATION-RETENTION-INTEGRATION.md) connected an absent response to material reconstruction. The next [selection argument](CONSEQUENCE-RETENTION-SELECTION.md) began with two already formed variants. Joining their preparation and selection, without a favorable reset, was the named next interface.
+6 October 2026. AI-authored integration under the [governing roadmap](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md). The previous [conditional regulation gate](REGULATION-RETENTION-INTEGRATION.md) connected an absent response to material reconstruction. The next [selection argument](CONSEQUENCE-RETENTION-SELECTION.md) began with two already formed variants. Joining their preparation and selection, without a favorable reset, was the named next interface.
 
 **Completed scope:** one declared law now starts with neither response type nor association present, pays their formation and association costs, and supports useful copying while an alternative remains present. Its stochastic comparisons average over all histories, including failed formations. This closes that concrete preparation gap. It does not complete the origin of chemical repertoires, selection over selectors, individual learning, concern, wisdom or the whole foundation.
 

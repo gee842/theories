@@ -51,7 +51,7 @@ def main():
         path = ROOT / edit["path"]
         assert edit["owned_passage"] in path.read_text(), edit["path"]
         check_links(path, edit["owned_passage"])
-    full = ROOT / "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md"
+    full = ROOT / "theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md"
     assert [s for s in full.read_text().splitlines() if s.startswith("| **")] == edits["preserved_six_requirement_rows"]
     assert len(edits["preserved_six_requirement_rows"]) == 6
 

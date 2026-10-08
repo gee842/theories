@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "id": "market-finite-support-obstruction",
+  "title": {
+    "zh": "有限支持下无法及时恢复的正区间",
+    "en": "Positive seed intervals that finite support cannot rescue"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F06",
+  "reviewed_at_utc": "2026-10-08T19:02:21.616729+00:00",
+  "claim": {
+    "zh": "在原增长与支持关系下，对每个有理C₀≥5及整数N>C₀−5，正维护区间0<x₀≤(2/3)^N/6在任意时变β／责任误差及非负支持冲击下均至迟在N失效。同一正初态在β=0、最佳初始责任和无误差／耗用下，运行投影有限恢复而完整守卫历史终止。",
+    "en": "Under the inherited growth and support laws, for every rational C0>=5 and integer N>C0-5, all positive seeds 0<x0<=(2/3)^N/6 fail by N under every time-varying beta/quality-error sequence and nonnegative support shock. The same positive state with beta=0, best initial quality and no error/extra cost has projected finite recovery but full guarded termination."
+  },
+  "hypotheses": [
+    {
+      "zh": "原有理State、shareStep与supportStep、必要支持底线5保留；x₀、q₀在[0,1]，原完整守卫逐步执行。",
+      "en": "The original rational State, shareStep, supportStep and essential-stock floor five remain; initial x and q are in [0,1], with the original guard at each step."
+    },
+    {
+      "zh": "β及责任误差允许任意逐期变化，clip限制q；支持冲击非负，没有直接支持注入、进入、扩展速度改变或组织切换。",
+      "en": "Beta and quality error may vary arbitrarily each step, with q clipped; stock shocks are nonnegative, with no direct stock injection, entry, change of expansion rate or organizational switch."
+    }
+  ],
+  "correspondence": {
+    "zh": "维护与支持是同一步活动的相关坐标；时变控制覆盖已实现反馈所产生的序列，但不解释反馈形成。底线及速率须有现实根据，none仅表示所表示的市场组织停止。",
+    "en": "Renewal and stock are related coordinates updated in the same activity. Time-varying control includes sequences produced by realized feedback but does not explain feedback formation. Floors and rates require actual correspondence; none ends the represented market organization only."
+  },
+  "canonical_source": "experiments/market-generativity/formal/FiniteSupportObstruction.lean",
+  "aliases": [
+    "FiniteSupportObstruction.every_finite_stock_has_obstructed_positive_seeds"
+  ],
+  "dependencies": [
+    {
+      "id": "market-supported-finite-transition",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "复用原扩展上界及正余量有限到达，新增全控制有限支持阻碍。",
+        "en": "Reuses the old growth upper bound and positive-seed finite arrival to prove a new all-control finite-support obstruction."
+      },
+      "interface": {
+        "output": {
+          "zh": "share_growth_upper与positive_seed_finite_landing输出速率界及运行到达。",
+          "en": "share_growth_upper and positive_seed_finite_landing supply a growth bound and projected arrival."
+        },
+        "input": {
+          "zh": "next_share_upper与projected_recovery_and_actual_failure消费这些输出；zero_schedule_is_original_pulse接回原完整守卫。",
+          "en": "next_share_upper and projected_recovery_and_actual_failure consume them; zero_schedule_is_original_pulse reconnects the original full guard."
+        },
+        "conditions": {
+          "zh": "同一增长与支持关系，投影到达不视为完整历史执行。",
+          "en": "Same growth and support relations; projected arrival is not taken as full execution."
+        },
+        "evidence": "experiments/market-generativity/formal/FiniteSupportObstruction.lean"
+      }
+    },
+    {
+      "id": "market-protected-continuation",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "以相同有限支持、高维护初态保留可继续的实质对照。",
+        "en": "Retains a continuing high-renewal comparison with the same finite stock."
+      },
+      "interface": {
+        "output": {
+          "zh": "example_certificate及safe_history_never_fails提供原全时保护。",
+          "en": "example_certificate and safe_history_never_fails supply inherited all-time protection."
+        },
+        "input": {
+          "zh": "same_stock_can_support_high_seed构造Safe初态并调用原保护。",
+          "en": "same_stock_can_support_high_seed constructs Safe and invokes that protection."
+        },
+        "conditions": {
+          "zh": "x=q=1、w=0、预算1、C₀≥5，无冲击，原β=1/2。",
+          "en": "x=q=1, w=0, budget one, C0>=5, no shocks, original beta=1/2."
+        },
+        "evidence": "experiments/market-generativity/formal/FiniteSupportObstruction.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "market-partial-correction-boundary",
+      "detail": {
+        "zh": "其无误差普遍投影到达阈值保留；新结果限定同一转变的实际支持。",
+        "en": "Its zero-error universal projected-arrival threshold remains; the new result constrains actual support for that transition."
+      }
+    },
+    {
+      "id": "conditional-foundation-assessment",
+      "detail": {
+        "zh": "复用既有条件基础中的支持限制，推进具体生成—维持—终止连接，不宣告零实质公理。",
+        "en": "Reuses established conditional support limits to advance a concrete formation-maintenance-ending connection without claiming zero substantive axioms."
+      }
+    },
+    {
+      "id": "formed-software-continuation",
+      "detail": {
+        "zh": "实际形成的历史接续，明确原固定律所省略关系；不反驳或数值验证此定理。",
+        "en": "Historical formed continuation identifies relationships omitted by the fixed-law model; it neither refutes nor numerically validates this theorem."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/market-generativity/formal/FiniteSupportObstruction.lean",
+      "detail": {
+        "zh": "projected_recovery_and_actual_failure保留相同正初态投影恢复而实际终止；same_stock_can_support_high_seed反驳有限支持必然失败。",
+        "en": "projected_recovery_and_actual_failure retains projected recovery and actual termination for the same seed; same_stock_can_support_high_seed refutes inevitable failure from finite stock alone."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "δ_N是保守失败区间而非精确可恢复域；不排除实际供给、依存转化、进入或更快形成改变边界。未证分岔、R-tipping分类、现实死亡或无附加实质公理奠基。",
+    "en": "The delta_N interval is a conservative obstruction, not an exact viability boundary. Actual provision, dependence change, entry or faster formation may alter it. No bifurcation, R-tipping classification, physical death or zero-added-substantive-axiom foundation is proved."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1实际检查17项新定理／22项声明审计；123项继承定理／153项审计另列。保留标准逻辑公理依赖；作者反审，无独立agent或新市场观察。",
+    "en": "Lean 4.29.1 checks 17 new theorems / 22 declaration audits, with 123 inherited theorems / 153 audits separately rebuilt. Standard logical axiom dependencies are retained; author counterreview, no independent agent or new market observations."
+  },
+  "references": [
+    {
+      "path": "experiments/market-generativity/formal/FiniteSupportObstruction.lean",
+      "role": "proof",
+      "sha256": "4d5e2ef8cc147600698d945180d7f402a39d0072120723f8578deebaaaf3230a",
+      "declarations": [
+        "FiniteSupportObstruction.every_finite_stock_has_obstructed_positive_seeds",
+        "FiniteSupportObstruction.finite_support_forces_failure",
+        "FiniteSupportObstruction.support_required_for_small_prefix",
+        "FiniteSupportObstruction.projected_recovery_and_actual_failure",
+        "FiniteSupportObstruction.same_stock_can_support_high_seed"
+      ]
+    },
+    {
+      "path": "experiments/market-generativity/formal/RegimeTransition.lean",
+      "role": "proof",
+      "sha256": "9e76cc787e363e0c4ad75e34adc94bf1fe7983076e76a367850d72f65e7bf518",
+      "declarations": [
+        "RegimeTransition.share_growth_upper",
+        "RegimeTransition.positive_seed_finite_landing"
+      ]
+    },
+    {
+      "path": "experiments/market-generativity/formal/finite-support-verification.json",
+      "role": "receipt",
+      "sha256": "ebd25fd80d23ce9de8c12b18128c44c0630d1293cc69f8b11f1477048b24232b",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "role": "review",
+      "sha256": "6000245fbadd7a5b1dacc0740efcebedceb6707f2da5db863159e5894590755d",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/MARKETS-AND-GENERATIVE-REGIMES.md",
+      "role": "integration",
+      "sha256": "ce8d50a91534c482cf5a163a9a100870666490d81b74f4f48917f5b9c9a46d36",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/market-generativity/formal/FiniteSupportObstruction.lean",
+      "receipt": "experiments/market-generativity/formal/finite-support-verification.json",
+      "sha256_pointer": "/sources/FiniteSupportObstruction.lean",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/market-generativity/formal/RegimeTransition.lean",
+      "receipt": "experiments/market-generativity/formal/finite-support-verification.json",
+      "sha256_pointer": "/sources/RegimeTransition.lean",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "普遍有限支持阻碍已完成，formed-software-continuation已补一个实际组织形成与分发接口。继续取得具体改组中各阶段的真实时间、支持及不可中断条件，才可证明它跨过哪种数量化边界。",
+    "en": "The universal finite-support obstruction is complete, and formed-software-continuation adds an actual organizational formation/distribution interface. Next obtain real timing, support and uninterrupted conditions at each stage of a specific reorganization before proving which quantitative boundary it crosses."
+  },
+  "history": [
+    {
+      "zh": "2026-10-09：从单一来不及恢复反例推进到每个有限存量的正区间及全时变责任通道；同初态投影／守卫比较与高维护对照均检查。",
+      "en": "2026-10-09: strengthened one too-late example to positive intervals for every finite stock and all time-varying quality channels; checked same-seed projection/guard and high-renewal comparisons."
+    },
+    {
+      "zh": "2026-10-09：核读既有研究§§41–46的LibreOffice形成对应；原定理、条件和回执均保留，新历史评估另记formed-software-continuation，未作数值映射。",
+      "en": "2026-10-09: reconciled study sections 41–46 on LibreOffice formation; original theorem, hypotheses and receipt remain, with the new historical assessment in formed-software-continuation and no numerical mapping."
+    },
+    {
+      "zh": "2026-10-09：核读同一研究§§47–52的API接续与保留依存评估；先前正文原字节前缀保留。此对应未改变本条数学命题、前提或回执，也未提供数量化参数。",
+      "en": "2026-10-09: reconciles sections 47–52 on API continuation and retained dependence; original study/chapter byte prefixes remain. The assessment changes no mathematical claim, hypothesis or receipt and supplies no quantitative parameters."
+    }
+  ]
+}

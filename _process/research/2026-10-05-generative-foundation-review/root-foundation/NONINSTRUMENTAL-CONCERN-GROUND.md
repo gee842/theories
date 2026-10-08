@@ -1,6 +1,6 @@
 # 非工具性关切的根据：患者的实际坏与合宜回应的优点
 
-2026年10月6日。AI 撰写的哲学论证与经验识别方案。本轮承接[已经提出并辩护的 C1/C2 候选](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md)及[现有伦理最低限与有限救助论证](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md)，不把它们记为本轮新发现。本轮独有工作是：细化患者—行动者—观察者的关系，说明“适当回应”的解释内容，比较其规范根据与动机机制，并提出接入共同生成过程后能够区分的经验问题。主要一手比较与阅读范围见[来源说明](NONINSTRUMENTAL-CONCERN-SOURCES.md)。这是构成性识别的进一步辩护，不是从纯因果规律推出伦理真理的证明。
+2026年10月6日。AI 撰写的哲学论证与经验识别方案。本轮承接[已经提出并辩护的 C1/C2 候选](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md)及[现有伦理最低限与有限救助论证](../../../../theories/becoming/chapters/UNIVERSAL-ETHICAL-MINIMUM.md)，不把它们记为本轮新发现。本轮独有工作是：细化患者—行动者—观察者的关系，说明“适当回应”的解释内容，比较其规范根据与动机机制，并提出接入共同生成过程后能够区分的经验问题。主要一手比较与阅读范围见[来源说明](NONINSTRUMENTAL-CONCERN-SOURCES.md)。这是构成性识别的进一步辩护，不是从纯因果规律推出伦理真理的证明。
 
 ## 1. 肯定的结论与所用前提
 

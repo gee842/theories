@@ -6,7 +6,7 @@ import re
 
 ROOT = Path(__file__).resolve().parents[4]
 NOTES = Path(__file__).resolve().parent
-THEORY = ROOT / "theories/shengsheng-buxi-generative-existence/unified-2026-10-05"
+THEORY = ROOT / "theories/becoming/chapters"
 EXPERIMENT = ROOT / "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/identity"
 
 

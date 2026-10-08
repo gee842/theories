@@ -1,6 +1,6 @@
 # Independent review: crossed claims, aggregation and chances
 
-8 October 2026. AI-authored independent counterreview under the explicit G0/J route and the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). This study follows the completed [LC comparison](UNEQUAL-BASIC-LOSSES-INTEGRATION.md); its [earlier review](UNEQUAL-BASIC-LOSSES-REVIEW.md) remains frozen. The present note records the new substantive challenges, primary-source reading and final acceptance of the revised argument and formal artifacts at the scopes below.
+8 October 2026. AI-authored independent counterreview under the explicit G0/J route and the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). This study follows the completed [LC comparison](UNEQUAL-BASIC-LOSSES-INTEGRATION.md); its [earlier review](UNEQUAL-BASIC-LOSSES-REVIEW.md) remains frozen. The present note records the new substantive challenges, primary-source reading and final acceptance of the revised argument and formal artifacts at the scopes below.
 
 ## 1. What the new question does and does not reopen
 
@@ -10,7 +10,7 @@ The remaining question concerns what to do with genuinely crossed claims and wha
 
 The analytical positions and rescue routes must remain relations within one care or support history. A person can participate in several jointly feasible rescue groups without becoming several claimants. Different routes to the same living relation do not automatically add distinct moral tickets. This is precisely where the relationship between group selection and actual receipt of protection must be reconstructed.
 
-During this round a concurrent [aggregation-context study](AGGREGATION-CONTEXT-INTEGRATION.md) appeared. I read its integration and [current chapter](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CHOICE-AND-GENERATIVE-CONTEXT.md). Its six-theorem/fifteen-audit package already addresses an upgrade reversal, composition assumptions and retention of weaker grounds. Those are credited results, not repeated as the present advance. The narrower new menu objection below and the affirmative LR/actual-chance questions must be distinguished from that completed work.
+During this round a concurrent [aggregation-context study](AGGREGATION-CONTEXT-INTEGRATION.md) appeared. I read its integration and [current chapter](../../../../theories/becoming/chapters/CHOICE-AND-GENERATIVE-CONTEXT.md). Its six-theorem/fifteen-audit package already addresses an upgrade reversal, composition assumptions and retention of weaker grounds. Those are credited results, not repeated as the present advance. The narrower new menu objection below and the affirmative LR/actual-chance questions must be distinguished from that completed work.
 
 ## 2. The strongest challenge to local persistence
 

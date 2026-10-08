@@ -1,8 +1,8 @@
 # Primary sources for systems, complexity and generativity
 
-6 October 2026. AI-authored, link-only research comparison. Four primary authored works were read at the portions specified below; this is neither an empirical study nor a new theorem. It supports the systems/complexity integration alongside the existing [cybernetics account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CYBERNETICS.md). Original imported conversation bytes remain unchanged.
+6 October 2026. AI-authored, link-only research comparison. Four primary authored works were read at the portions specified below; this is neither an empirical study nor a new theorem. It supports the systems/complexity integration alongside the existing [cybernetics account](../../../../theories/becoming/chapters/CYBERNETICS.md). Original imported conversation bytes remain unchanged.
 
-The [shared method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) and [current conditional-universality target](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope) govern this comparison. Analytical boundaries identify differentiated relationships within unfolding activity. Their validity and explanatory losses require examination; calling a local law supplied does not put it outside reality. A theorem about every history admitted by independently specified law properties has a different scope from establishing a uniquely necessary ontology.
+The [shared method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) and [current conditional-universality target](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope) govern this comparison. Analytical boundaries identify differentiated relationships within unfolding activity. Their validity and explanatory losses require examination; calling a local law supplied does not put it outside reality. A theorem about every history admitted by independently specified law properties has a different scope from establishing a uniquely necessary ontology.
 
 ## Four directly consulted primary comparators
 
@@ -70,7 +70,7 @@ The following are Ren's **HUMAN** messages, checked in the preserved transcripts
 - 1 April 2024: “do aero space engineer know about system theories, attractors and chaos theory?” — [original conversation](../../../../sources/12-claude-ai-chats/2024-04-01_Aerospace_Engineer_Knowledge_of_Complex_Systems_Theories_7e9844a5.md).
 - 4 July 2024: “explain concept of emergent complexity in systems theory” — [original conversation](../../../../sources/12-claude-ai-chats/2024-07-04_Emergent_Complexity_in_Systems_728e5a5d.md).
 
-These establish an existing line of inquiry, not Ren's endorsement of every following assistant claim. In particular, the assistant's ensuing list of nonlinearity, hierarchy, adaptability and unpredictability must not be promoted to Ren's definition or a scientifically universal package. The already documented October 2024 feedback discussion is preserved in [CYBERNETICS](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CYBERNETICS.md). No verified attribution to Bertalanffy, Simon or Holland by Ren is asserted here.
+These establish an existing line of inquiry, not Ren's endorsement of every following assistant claim. In particular, the assistant's ensuing list of nonlinearity, hierarchy, adaptability and unpredictability must not be promoted to Ren's definition or a scientifically universal package. The already documented October 2024 feedback discussion is preserved in [CYBERNETICS](../../../../theories/becoming/chapters/CYBERNETICS.md). No verified attribution to Bertalanffy, Simon or Holland by Ren is asserted here.
 
 ## Evidence boundary
 

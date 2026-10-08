@@ -1,6 +1,6 @@
 # Core 与 tree 的非二元继续：从同一历程展开知、行与续存
 
-2026年10月6日。AI 撰写，响应 [Ren 在本对话中的持续修正](../../../../sources/15-codex-theory-conversations/2026-10-06-nondual-core-tree-continuation.md)。本轮落实[项目级非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)，中心连接是 **同一实际后果 → 保留的辨别、后续行动与持续条件的相互制约**。此处重构既有已证连接，并推进全树的解释方式，不添加一个新的控制器或把旧证明重复计作新成果。
+2026年10月6日。AI 撰写，响应 [Ren 在本对话中的持续修正](../../../../sources/15-codex-theory-conversations/2026-10-06-nondual-core-tree-continuation.md)。本轮落实[项目级非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)，中心连接是 **同一实际后果 → 保留的辨别、后续行动与持续条件的相互制约**。此处重构既有已证连接，并推进全树的解释方式，不添加一个新的控制器或把旧证明重复计作新成果。
 
 ## 1. Core 与 tree 是同一生成活动的不同展开
 

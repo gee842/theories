@@ -1,6 +1,6 @@
 # 良知的实践分殊与实际支持交接：本轮整合
 
-2026年10月7日，Asia/Bangkok。接续 Ren 的“继续”、[良知生成演化方向](../../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md)及[生生不息的正面伦理澄清](../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md)。当前表述已进入[理论主文 §7](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md#7-同一关切可以改变回应接续也可以通过交接实现)。
+2026年10月7日，Asia/Bangkok。接续 Ren 的“继续”、[良知生成演化方向](../../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md)及[生生不息的正面伦理澄清](../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md)。当前表述已进入[理论主文 §7](../../../../theories/becoming/chapters/LIANGZHI-EVOLUTION.md#7-同一关切可以改变回应接续也可以通过交接实现)。
 
 **本轮结果：同一关切可以因实际生成关系改变而改换回应；实际交接为结束原参与而接续已形成活动提供一种可行途径。** 前半是按新判准展开、经实质反审的哲学论证，后半有20项新增 Lean 声明实际检查。两者没有被合并成“已证明交接必善”或无假设普遍伦理。
 

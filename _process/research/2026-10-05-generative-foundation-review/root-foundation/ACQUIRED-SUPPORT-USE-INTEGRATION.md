@@ -1,6 +1,6 @@
 # 取得读数与实际使用 / Acquired readings and actual use
 
-2026-10-08，Asia/Bangkok。Ren 的本次“继续”见[来源](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md)。本轮形式化、整合、来源比较及作者反审为 AI 工作。[当前理论第12节](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md#acquired-support-use)。
+2026-10-08，Asia/Bangkok。Ren 的本次“继续”见[来源](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md)。本轮形式化、整合、来源比较及作者反审为 AI 工作。[当前理论第12节](../../../../theories/becoming/chapters/GENERATED-LOGIC.md#acquired-support-use)。
 
 **完成连接：实际读取留下的记录，在明确的逐位置版本维护和原子核对／使用条件下，支持原生取得规则；任意有限执行都可投影为前轮同一占用过程的合法历史。** 无关位置可以变化；相关变化使记录失效。正确拒绝旧记录仍可能耗尽全部读取预算。
 

@@ -2,7 +2,7 @@
 
 6 October 2026. AI-authored reconstruction following [Ren's exact correction](../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nonduality-and-method.md). This changes the governing method of this ethical-grounding branch. It is not another attempt to close the earlier reason-bridge contract on its own terms.
 
-This note applies the project-wide [NONDUAL-METHOD](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) to this ethical-grounding branch. The separately preserved [project-wide direction](../../../../sources/15-codex-theory-conversations/2026-10-06-project-wide-nondual-method.md) governs the shared project; this note is a branch-specific implementation, not a competing method or independent corroboration.
+This note applies the project-wide [NONDUAL-METHOD](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) to this ethical-grounding branch. The separately preserved [project-wide direction](../../../../sources/15-codex-theory-conversations/2026-10-06-project-wide-nondual-method.md) governs the shared project; this note is a branch-specific implementation, not a competing method or independent corroboration.
 
 ## What the correction reaches
 

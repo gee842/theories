@@ -1,6 +1,6 @@
 # Renewal and closure: Phase 2 results
 
-6 October 2026 (UTC). AI-authored, continuing the [roadmap](RENEWAL-CLOSURE-ROADMAP.md) after [Phase 1](RENEWAL-CLOSURE-PHASE1.md). It follows the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md): constraint and flow are articulations, relative to timescale, of one activity. The Lean package is [`lean/conditional/renewal/`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md).
+6 October 2026 (UTC). AI-authored, continuing the [roadmap](RENEWAL-CLOSURE-ROADMAP.md) after [Phase 1](RENEWAL-CLOSURE-PHASE1.md). It follows the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md): constraint and flow are articulations, relative to timescale, of one activity. The Lean package is [`lean/conditional/renewal/`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md).
 
 **Transition addressed.** Organization → its own continuation. The question is when a supplied constraint–flow law admits a history that renews its organization forever without importing any. Kinds, support edges, spans, formation demands and arrival rates stay supplied inputs.
 

@@ -2,7 +2,7 @@
 
 **Foundational formulation, revised 6 October 2026:** **activity changes the conditions through which other activity can continue.** To explain that relationship, identify what changes, which ongoing activity depends on it, and how the change enables or interrupts that activity. Following [Ren's vocabulary correction](../../../../sources/15-codex-theory-conversations/2026-10-06-foundational-vocabulary-correction.md), the account below starts from those relations. Its selected numerical models already distinguish positions named `actor` and `recipient`; they do not derive those positions or establish a prior division into giver and receiver.
 
-6 October 2026. AI-authored continuation of the [nondual evaluation reconstruction](NONDUAL-EVALUATION.md), under the [shared method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Named connection: **a change produced by activity → its effect on an affected continuation → a distinction that evaluation and response can answer**.
+6 October 2026. AI-authored continuation of the [nondual evaluation reconstruction](NONDUAL-EVALUATION.md), under the [shared method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Named connection: **a change produced by activity → its effect on an affected continuation → a distinction that evaluation and response can answer**.
 
 This round gives a conditional correspondence test, using the existing resource theorem. It does not introduce a new controller, rerun the experiments, establish the physiology of an affected being, or derive ethical standing from a stock quantity. Its contribution is to make the consequence side of the shared criterion-revision inquiry more precise.
 

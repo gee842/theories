@@ -12,7 +12,7 @@ from urllib.parse import unquote
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[3]
 LEAN = ROOT / "experiments/integrated-correction/general-framework/generative-basis/lean/deeper"
-THEORY = ROOT / "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md"
+THEORY = ROOT / "theories/becoming/chapters/GENERATED-LOGIC.md"
 SOURCE = ROOT / "sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md"
 BEFORE = HERE / "development/acquired-support-use-before"
 

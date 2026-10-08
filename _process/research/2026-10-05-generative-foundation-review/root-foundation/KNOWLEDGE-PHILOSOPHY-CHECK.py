@@ -10,7 +10,7 @@ from urllib.parse import unquote
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[3]
-CAN = ROOT / 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05'
+CAN = ROOT / 'theories/becoming/chapters'
 PROOFS = ROOT / 'experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root'
 OUTPUT = HERE / 'KNOWLEDGE-PHILOSOPHY-CHECKS.json'
 DOCUMENTS = [

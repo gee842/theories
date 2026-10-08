@@ -1,6 +1,6 @@
 # Enough causal evidence for actual correction
 
-8 October 2026. AI-authored continuation under [Ren's instruction](../../../../sources/15-codex-theory-conversations/2026-10-08-finish-alignment-fruits.md#continuation-through-causal-uncertainty). Current theory: [alignment through change §9](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md#9-enough-evidence-for-correction--足以纠正的证据).
+8 October 2026. AI-authored continuation under [Ren's instruction](../../../../sources/15-codex-theory-conversations/2026-10-08-finish-alignment-fruits.md#continuation-through-causal-uncertainty). Current theory: [alignment through change §9](../../../../theories/becoming/chapters/ALIGNMENT-THROUGH-CHANGE.md#9-enough-evidence-for-correction--足以纠正的证据).
 
 **Completed connection:** retain unresolved causal descriptions, build a conservative common fault envelope, obtain a relevant observation when needed, and execute correction with the remaining support. The new package has **24 Lean theorems / 47 declaration audits and 19,808 matched finite records**. It weakens the preceding need for a single supplied causal description. It does not establish open-world cause coverage or make the diagnostic channel trustworthy by definition.
 
@@ -12,7 +12,7 @@ The immediately preceding [reviewer-reconfiguration result](CORRECTION-RECONFIGU
 
 The new mathematical join is therefore **retained causal uncertainty → common attestation scope → observation-dependent refinement → actual command completion**. It is not another proof that inquiry can revise models in general. Nor is the existing model-revision mechanism silently asserted to be the same physical history as this new interface: the connection is a conditional interface, with a separate illustrative realization.
 
-Under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md), the descriptors, inquiry route, controllers, review responses and protected command are related formations within one activity. Inspection consumes time and support while changing the records used for action. The formal split into a hidden arrangement, retained candidates and observations preserves these relations; it omits their physical and developmental formation. The observer is not outside the process, and the supplied sensing law is not an independent realm of infallible facts.
+Under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md), the descriptors, inquiry route, controllers, review responses and protected command are related formations within one activity. Inspection consumes time and support while changing the records used for action. The formal split into a hidden arrangement, retained candidates and observations preserves these relations; it omits their physical and developmental formation. The observer is not outside the process, and the supplied sensing law is not an independent realm of infallible facts.
 
 ## 2. A common envelope without selecting one explanation
 

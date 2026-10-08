@@ -1,12 +1,12 @@
 # 参与关系中的更新与消耗：无公理的关系性区分 / Renewing and consuming as a relation to participated conditions, without axioms
 
-2026-10-09，Asia/Bangkok。AI（Claude）撰写，执行 [Ren 的指示](../../../../sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md)：“请完成用关系结构把两种形成分开：一种更新它所参与关系的继续形成条件，另一种消耗这些条件。这两个，应该不需要任何axiom”。起因是[外部视角审查](UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md) §3.3 的恶性生成问题。证明源为 [RelationalRenewal.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean)，成果记录为 [relational-renewal-classification](../../../../theories/shengsheng-buxi-generative-existence/results/records/relational-renewal-classification.md)。
+2026-10-09，Asia/Bangkok。AI（Claude）撰写，执行 [Ren 的指示](../../../../sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md)：“请完成用关系结构把两种形成分开：一种更新它所参与关系的继续形成条件，另一种消耗这些条件。这两个，应该不需要任何axiom”。起因是[外部视角审查](UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md) §3.3 的恶性生成问题。证明源为 [RelationalRenewal.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalRenewal.lean)，成果记录为 [relational-renewal-classification](../../../../theories/becoming/results/records/relational-renewal-classification.md)。
 
-同日 Ren 追问：“为什么？我G0是什么？generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md#ren-follow-up)）。§6 据此修正，原文保留；“消耗更坏”这一比较由 [RenewalComparison.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalComparison.lean) 接入 G0/C 并检查，记录为 [relational-reading-comparison](../../../../theories/shengsheng-buxi-generative-existence/results/records/relational-reading-comparison.md)。
+同日 Ren 追问：“为什么？我G0是什么？generative和degenerate虽然都在一个becoming model上，但是他们不overlap吧”（[原话](../../../../sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md#ren-follow-up)）。§6 据此修正，原文保留；“消耗更坏”这一比较由 [RenewalComparison.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RenewalComparison.lean) 接入 G0/C 并检查，记录为 [relational-reading-comparison](../../../../theories/becoming/results/records/relational-reading-comparison.md)。
 
 ## 0. 关系配置
 
-依[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)，先说明配置。同一展开中，若干形成持续发生；它们的继续依存于某些条件处在一定水平；它们的活动又取用、改变这些条件。条件常常由依存于它的那一形成自己更新：机体维持自己的活力，社群维护自己的公地，生态维持自己的土壤。形成、条件和依存是同一历史中分化的方面，不是先有独立所有者、再交换资源。
+依[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)，先说明配置。同一展开中，若干形成持续发生；它们的继续依存于某些条件处在一定水平；它们的活动又取用、改变这些条件。条件常常由依存于它的那一形成自己更新：机体维持自己的活力，社群维护自己的公地，生态维持自己的土壤。形成、条件和依存是同一历史中分化的方面，不是先有独立所有者、再交换资源。
 
 ## 1. 成果块
 
@@ -111,8 +111,8 @@ Ren 在[生生方向](../../../../sources/15-codex-theory-conversations/2026-10-
 | [Depletion.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/Depletion.lean) | 单一储备在每一步严格下降时没有无限执行。`unrenewed_drawdown_finite` 放宽为只在形成发生时下降、其余时间不回升。相关，不导入。 |
 | [ContinuationRenewal.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/ContinuationRenewal.lean) | 无限继续需要更新反复出现，且更新本身不推出无界新颖性。本结果说明更新相对于谁、由谁维持，以及消耗何时不可逆。相关，不导入。 |
 | [CollectiveDestruction.lean](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean) | 两个局部许可分别成立、共同执行却越限的算术见证。`jointly_consuming` 给出动力学版本，并加上共同条件更新的不可逆停止。解释关联。 |
-| [renewing-consuming-formation](../../../../theories/shengsheng-buxi-generative-existence/results/records/renewing-consuming-formation.md) | 同日另一会话的较窄结果：在给定磨损规律下，更新之内生生不息，持续超出则总量以 `stock + tri renew` 为界并停止，共享形成随之停止，并附 G0 逐事件接口。它的不可逆来自规律字段 `bounded`，本结果则从更新者的依存推出；它的消耗型形成总会终止自身，不覆盖不依存的赢家；它没有一般分类。它的显式总量界与起初多形成的反转是本结果没有的。两者独立证明，互不导入。 |
-| [endpoint-loss-and-return](../../../../theories/shengsheng-buxi-generative-existence/results/records/endpoint-loss-and-return.md) | 固定规律下保留全部端点可能当且仅当可以返回。`no_return_below_support` 给出一种具体的不可返回机制。解释关联，不是形式组合。 |
+| [renewing-consuming-formation](../../../../theories/becoming/results/records/renewing-consuming-formation.md) | 同日另一会话的较窄结果：在给定磨损规律下，更新之内生生不息，持续超出则总量以 `stock + tri renew` 为界并停止，共享形成随之停止，并附 G0 逐事件接口。它的不可逆来自规律字段 `bounded`，本结果则从更新者的依存推出；它的消耗型形成总会终止自身，不覆盖不依存的赢家；它没有一般分类。它的显式总量界与起初多形成的反转是本结果没有的。两者独立证明，互不导入。 |
+| [endpoint-loss-and-return](../../../../theories/becoming/results/records/endpoint-loss-and-return.md) | 固定规律下保留全部端点可能当且仅当可以返回。`no_return_below_support` 给出一种具体的不可返回机制。解释关联，不是形式组合。 |
 | [SITUATED-RENEWAL-PROOF](SITUATED-RENEWAL-PROOF.md) | 用量超过原有支持时继续需要补充或改变支承路径。本结果补充：补充若来自依存于该条件的形成，跌破其支持即失去补充路径。 |
 
 ## 6. 对 G0 的含义
@@ -121,7 +121,7 @@ Ren 在[生生方向](../../../../sources/15-codex-theory-conversations/2026-10-
 
 **G0 的对象本来就是生生。** G0 是“整体中的生及其继续生成具有基本正面规范意义”。把形式 `Inventory.generative` 读成“任何已实现的新组织”，是 AI 的形式化读法，不是 Ren 的 G0：审查 §3.3 这样读，并行结果的 `eventInventory` 把它设为恒真。“持续形成新组织”中的“持续”已经排除消耗型：依存的消耗者终止自身（`dependent_overdraw_ends_itself`），不依存的消耗者终止它所参与的关系（`overdraw_consuming`）。恶性生成问题出在读法，不出在 G0。本结果不是“限定” G0，而是给 G0 已有的对象一个可检查的关系内容。
 
-**生成与退化不重叠。** `renewed_not_consumed` 与 `renewing_not_consuming` 证明：同一条件不能既被更新又被消耗，同一形成不能既是更新型又是消耗型。不重叠不等于穷尽，波动情形两者皆非。一次发生还可以同时参与两种关系，例如赢家维持自身的条件，同时消耗依存者的条件。重叠的是发生，不是关系；[Becoming 章](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY-OF-BECOMING.md)原有的“一次发生可能使某种继续成为现实能力，同时毁掉另一种条件”说的就是这一点。
+**生成与退化不重叠。** `renewed_not_consumed` 与 `renewing_not_consuming` 证明：同一条件不能既被更新又被消耗，同一形成不能既是更新型又是消耗型。不重叠不等于穷尽，波动情形两者皆非。一次发生还可以同时参与两种关系，例如赢家维持自身的条件，同时消耗依存者的条件。重叠的是发生，不是关系；[Becoming 章](../../../../theories/becoming/chapters/THEORY-OF-BECOMING.md)原有的“一次发生可能使某种继续成为现实能力，同时毁掉另一种条件”说的就是这一点。
 
 **分工。** 哪些关系是生成、哪些是退化，属于描述；本结果完成了这部分，不需要公理。说生成一侧有正面意义，就是 G0 本身，不是 G0 之外另欠的工作。
 

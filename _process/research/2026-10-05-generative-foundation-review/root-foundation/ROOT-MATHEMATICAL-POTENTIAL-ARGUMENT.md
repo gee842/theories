@@ -1,6 +1,6 @@
 # Potential continuation and mathematical quantification
 
-8 October 2026, Asia/Bangkok. AI-authored affirmative argument following the [induction investigation](ROOT-MATHEMATICAL-INDUCTION-ARGUMENT.md), incorporated in the [potentialist integration](ROOT-MATHEMATICAL-POTENTIAL-INTEGRATION.md). The target remains independent mathematical admission and the root's necessary constitutive role. This note follows the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Its philosophical proposal is distinct from the checked conditional mathematical correspondence.
+8 October 2026, Asia/Bangkok. AI-authored affirmative argument following the [induction investigation](ROOT-MATHEMATICAL-INDUCTION-ARGUMENT.md), incorporated in the [potentialist integration](ROOT-MATHEMATICAL-POTENTIAL-INTEGRATION.md). The target remains independent mathematical admission and the root's necessary constitutive role. This note follows the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Its philosophical proposal is distinct from the checked conditional mathematical correspondence.
 
 ## 1. A third way to understand collective use
 

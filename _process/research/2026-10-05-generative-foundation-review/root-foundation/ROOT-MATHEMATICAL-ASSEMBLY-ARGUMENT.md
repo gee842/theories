@@ -4,7 +4,7 @@
 
 ## 1. A positive reason for the assembly rule
 
-Suppose an index domain and a relation connecting its positions to a second domain are independently admitted. Write the relation as `R(i,x)`. An indexed union asks whether some position `i` is related to `x`. It retains incidence while omitting which index witnesses it. Index, membership and result are differentiated roles within this relational organization, following the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md); they are not separate substances subsequently joined by an observer.
+Suppose an index domain and a relation connecting its positions to a second domain are independently admitted. Write the relation as `R(i,x)`. An indexed union asks whether some position `i` is related to `x`. It retains incidence while omitting which index witnesses it. Index, membership and result are differentiated roles within this relational organization, following the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md); they are not separate substances subsequently joined by an observer.
 
 The strongest affirmative argument is that this projection introduces **no independent membership choices**. Once the whole relation and its index range are fixed, the proposed result is fixed through them. Admitting the projected predicate need not add a bearer, a new membership assignment or a separate truth oracle. It recognizes a derivative role in already admitted organization.
 

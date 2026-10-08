@@ -6,11 +6,11 @@
 
 ## 1. The exact local addition
 
-The accepted [plasticity construction](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-PLASTICITY.md) starts without conducting cross-channel links. Actual paid paired outcomes form signed components; their later transmission changes recipient-directed choice. In the selected primary history, aligned active links end at actor4/recipient46, while inert and identity-filtered controls retain the factual knowledge and teaching bills but abstain at actor12/recipient36. The four-unit recipient teaching loss is counted. In the replacement comparison, the further acquired sequence, native coefficient n5, command efficacy, replacement bills and affordability are preserved; changing the operative sign suppresses the service that frozen signs retain.
+The accepted [plasticity construction](../../../../theories/becoming/chapters/EVALUATIVE-PLASTICITY.md) starts without conducting cross-channel links. Actual paid paired outcomes form signed components; their later transmission changes recipient-directed choice. In the selected primary history, aligned active links end at actor4/recipient46, while inert and identity-filtered controls retain the factual knowledge and teaching bills but abstain at actor12/recipient36. The four-unit recipient teaching loss is counted. In the replacement comparison, the further acquired sequence, native coefficient n5, command efficacy, replacement bills and affordability are preserved; changing the operative sign suppresses the service that frozen signs retain.
 
 This supplies more than an assertion that a useful coefficient could be learned. It identifies which causal connection is initially absent, how it is paid for, what acquired input changes it, and which later action depends on it. The result is nevertheless a finite supplied-law construction. Typed endpoints, signal coding, calibration, native evaluation, local binding/replacement law, gain and the interpretation connecting teaching to service remain premises. The conventional implementation matches exactly. The [contribution audit](../root-foundation/EVALUATIVE-PLASTICITY-CONTRIBUTION.md) correctly locates the reduction of supplied input in **operative occupancy and sign**, rather than acquisition of the entire functional architecture.
 
-The accepted [grounding argument](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-GROUNDING.md) adds a different result on that history. Its actual net loss can instantiate an independently defended, role-bound repair reason, given patient entitlement, answerability or entrusted role, adequate permissible remedy, authority and comparison with competing claims. The formed connection then mediates the separately warranted response. The same learning law can subsequently fail that still-applicable reason. The construction does not learn the repair principle, justify imposing a teaching loss, or infer legitimacy from a permission bit.
+The accepted [grounding argument](../../../../theories/becoming/chapters/EVALUATIVE-GROUNDING.md) adds a different result on that history. Its actual net loss can instantiate an independently defended, role-bound repair reason, given patient entitlement, answerability or entrusted role, adequate permissible remedy, authority and comparison with competing claims. The formed connection then mediates the separately warranted response. The same learning law can subsequently fail that still-applicable reason. The construction does not learn the repair principle, justify imposing a teaching loss, or infer legitimacy from a permission bit.
 
 ## 2. Closest established methods
 
@@ -45,7 +45,7 @@ A system that loses the warranted response solely under association drift fails 
 
 ## Inspected local versions
 
-SHA-256 of current bytes inspected on 6 October 2026. These bind this assessment; they are not claims that live files will remain unchanged. Canonical files are under `theories/shengsheng-buxi-generative-existence/unified-2026-10-05/`; study files are under the sibling `root-foundation/` directory.
+SHA-256 of current bytes inspected on 6 October 2026. These bind this assessment; they are not claims that live files will remain unchanged. Canonical files are under `theories/becoming/chapters/`; study files are under the sibling `root-foundation/` directory.
 
 | File | SHA-256 |
 |---|---|

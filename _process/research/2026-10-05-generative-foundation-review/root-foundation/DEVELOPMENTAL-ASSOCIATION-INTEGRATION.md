@@ -1,6 +1,6 @@
 # Inherited division and the formation of association
 
-8 October 2026, Asia/Bangkok. AI-authored continuation of [The Theory of Evolution](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md). **A heritable local division state can change the association reconstructed by descendants. Group ancestry then follows from the actual bond-forming history under stated conditions.** Nineteen new Lean theorems pass. The mechanism is a conditional abstraction with a primary biological correspondence, not a new discovery of the biological mechanism or a completed universal evolutionary theory.
+8 October 2026, Asia/Bangkok. AI-authored continuation of [The Theory of Evolution](../../../../theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md). **A heritable local division state can change the association reconstructed by descendants. Group ancestry then follows from the actual bond-forming history under stated conditions.** Nineteen new Lean theorems pass. The mechanism is a conditional abstraction with a primary biological correspondence, not a new discovery of the biological mechanism or a completed universal evolutionary theory.
 
 ## The connection advanced
 
@@ -22,7 +22,7 @@ The seed supplies one or more already living cells without bonds. This study doe
 
 A supported `changeRetention` event changes one cell's effective division state; both directions are admitted. The event represents a realized change, not a mutation probability or a claim that every such change is caused by a single gene in every organism. `detach` removes an existing bond. Restoring separation changes subsequent divisions; it does not erase old bonds. `aggregate` connects two already existing positions and can join different founder lineages. Each successful event consumes the stipulated unit of support. There is no fresh stock at a generation boundary.
 
-The roles of parent, daughter, founder and associated group are descriptions of positions and relations in this common history, following the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). The model preserves ancestry, current inheritance state, bond changes and quota accounting. It omits geometry, force, age, gene-expression detail, metabolic renewal and differential survival. Those omissions constrain correspondence; they do not constitute independent substances outside the generative process.
+The roles of parent, daughter, founder and associated group are descriptions of positions and relations in this common history, following the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). The model preserves ancestry, current inheritance state, bond changes and quota accounting. It omits geometry, force, age, gene-expression detail, metabolic renewal and differential survival. Those omissions constrain correspondence; they do not constitute independent substances outside the generative process.
 
 ## General results and concrete continuation
 

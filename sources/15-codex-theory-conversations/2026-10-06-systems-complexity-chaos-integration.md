@@ -4,7 +4,7 @@
 
 > systems theory, complex systems, chaos are very close to cybernetics. can we integrate them as well?
 
-This follows the [cybernetics investigation](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CYBERNETICS.md) and the request to [complete the particular inquiry-revision connection](2026-10-06-concern-inquiry-revision.md). The resulting [integration](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md) distinguishes source comparisons, hand mathematics and inherited results under the [project-wide method](2026-10-06-project-wide-nondual-method.md).
+This follows the [cybernetics investigation](../../theories/becoming/chapters/CYBERNETICS.md) and the request to [complete the particular inquiry-revision connection](2026-10-06-concern-inquiry-revision.md). The resulting [integration](../../theories/becoming/chapters/SYSTEMS-COMPLEXITY-CHAOS.md) distinguishes source comparisons, hand mathematics and inherited results under the [project-wide method](2026-10-06-project-wide-nondual-method.md).
 
 ## Lean follow-up
 

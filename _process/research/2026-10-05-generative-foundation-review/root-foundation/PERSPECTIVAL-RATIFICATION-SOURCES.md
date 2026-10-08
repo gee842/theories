@@ -2,7 +2,7 @@
 
 7 October 2026, Asia/Bangkok. AI-authored primary philosophical source assessment for the next test in [the trajectory counterreview](PERSPECTIVAL-TRAJECTORY-COUNTERREVIEW.md#8-integration-verdict-and-next-bridge). Read with [the affirmative argument](PERSPECTIVAL-TRAJECTORY-ARGUMENT.md) and the latest [whole-practical-ground integration](WHOLE-PRACTICAL-GROUND-INTEGRATION.md). **Status: discriminating philosophical comparisons; no empirical finding, mathematical proof, legal interpretation or completed universal ethical grounding.**
 
-The target is **induced dependence → present authorization → warranted continuation or transition** within the same developing association. The sources challenge different shortcuts; they do not form a consensus from which our verdict follows. Their accounts of wellbeing, autonomy and freedom retain substantive commitments requiring assessment under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md).
+The target is **induced dependence → present authorization → warranted continuation or transition** within the same developing association. The sources challenge different shortcuts; they do not form a consensus from which our verdict follows. Their accounts of wellbeing, autonomy and freedom retain substantive commitments requiring assessment under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md).
 
 ## 1. Khader: criticism need not deny the current participant's agency
 

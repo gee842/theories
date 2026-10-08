@@ -1,6 +1,6 @@
 # 变化中的对齐：论证、实现与完成范围 / Alignment through change: integration and completion
 
-8 October 2026, Asia/Bangkok. AI-authored execution of [Ren's request](../../../../sources/15-codex-theory-conversations/2026-10-08-finish-alignment-fruits.md), under the pre-execution [protocol](ALIGNMENT-CONTINUITY-PROTOCOL.md). Current theory paper: [Generative alignment through change](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md).
+8 October 2026, Asia/Bangkok. AI-authored execution of [Ren's request](../../../../sources/15-codex-theory-conversations/2026-10-08-finish-alignment-fruits.md), under the pre-execution [protocol](ALIGNMENT-CONTINUITY-PROTOCOL.md). Current theory paper: [Generative alignment through change](../../../../theories/becoming/chapters/ALIGNMENT-THROUGH-CHANGE.md).
 
 **Result:** the four scoped theoretical deliverables are complete. The existing explicit-axiom normative argument is presented as a connected paper; three new implementation connections have **59 Lean theorems / 102 explicit-declaration audits**, with **14,295 finite records** matching an independently expressed exhaustive reference. This is author-reviewed conditional completion, not independent-agent acceptance, a deployed alignment solution, or established frontier superiority.
 

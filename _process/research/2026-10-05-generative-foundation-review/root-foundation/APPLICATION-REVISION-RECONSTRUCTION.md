@@ -1,12 +1,12 @@
 # When the acquisition protocol withholds access to remedy
 
-6 October 2026. AI-authored continuation under the [shared nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Named connection: **actual affected condition → revision of the acquisition practice while preserving access to an outstanding response**. This reconstructs the unchanged paired-plasticity law. It adds a source-level handproof, not another controller, experiment or Lean certification.
+6 October 2026. AI-authored continuation under the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Named connection: **actual affected condition → revision of the acquisition practice while preserving access to an outstanding response**. This reconstructs the unchanged paired-plasticity law. It adds a source-level handproof, not another controller, experiment or Lean certification.
 
 **Finding:** from the actual four-pair state of the continuing branch, the existing service cannot begin until two more recipient-paid acquisition cycles complete. The response score already favors helping, and the retained resources suffice for the separately demonstrated service. Access nevertheless remains closed by the protocol. Revising the score alone cannot remove this obstruction.
 
 ## 1. The inherited frontier and the exact starting state
 
-The [practical-boundary integration](PRACTICAL-BOUNDARY-INTEGRATION.md) already identifies the question at four pairs: distinguish the existing loss from permission to impose another teaching cost. The [nondual-applicability integration](NONDUAL-APPLICABILITY-INTEGRATION.md) separately establishes material restoration changing its own applicability. Neither result is repeated here. The [application account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md) preserves the conditional repair interpretation, genuine recipient evidence and the successor's separate fulfillment limitation.
+The [practical-boundary integration](PRACTICAL-BOUNDARY-INTEGRATION.md) already identifies the question at four pairs: distinguish the existing loss from permission to impose another teaching cost. The [nondual-applicability integration](NONDUAL-APPLICABILITY-INTEGRATION.md) separately establishes material restoration changing its own applicability. Neither result is repeated here. The [application account](../../../../theories/becoming/chapters/EVALUATIVE-APPLICATION.md) preserves the conditional repair interpretation, genuine recipient evidence and the successor's separate fulfillment limitation.
 
 Fix precisely
 

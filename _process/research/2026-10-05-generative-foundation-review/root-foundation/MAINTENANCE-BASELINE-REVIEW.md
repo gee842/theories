@@ -8,7 +8,7 @@
 
 这些成果没有独立认证一个指定现实安装的变化律、记录及权限组织。当前实现线的实质证据边界在这里：还需要实际关系的根据，而不是一个新的谓词名。继续以供给机制重写相同定理不能越过这个边界。
 
-本轮选出的更窄问题有明确位置：**评价接管是否兑现仍有效承担时，不能把接管已造成的能力丧失，直接代入原任务的参照，借目标变空来报告完成。** 这项规范根据已经在 [J3 与目的修订](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md#6-目的变化学习与结束责任--changed-purposes-learning-and-discharge)、[机会充分性论证](CHANCE-ADEQUACY-ARGUMENT.md)和[先前反审](CHANCE-ADEQUACY-REVIEW.md)中明示。风险修订的 `resetting_allowance_exceeds_original_scope` 也已给基准反复重设的独立诊断；本轮只补特定维护判定的操作控制，不能重复认领一般原则。
+本轮选出的更窄问题有明确位置：**评价接管是否兑现仍有效承担时，不能把接管已造成的能力丧失，直接代入原任务的参照，借目标变空来报告完成。** 这项规范根据已经在 [J3 与目的修订](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md#6-目的变化学习与结束责任--changed-purposes-learning-and-discharge)、[机会充分性论证](CHANCE-ADEQUACY-ARGUMENT.md)和[先前反审](CHANCE-ADEQUACY-REVIEW.md)中明示。风险修订的 `resetting_allowance_exceeds_original_scope` 也已给基准反复重设的独立诊断；本轮只补特定维护判定的操作控制，不能重复认领一般原则。
 
 ## 2. 必须区分的三种判断
 

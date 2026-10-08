@@ -1,6 +1,6 @@
 # 从形成的活动关系取得适用范围：形式账
 
-6 October 2026。AI 撰写的形式账。实现为 [AcquiredActivityScope.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredActivityScope.lean)，遵循[共享非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)。[新鲜形式验证](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-verification.json) 已通过：以下分别报告通用声明、九例原生保存历史以及两条另外构造的 Lean 历史。
+6 October 2026。AI 撰写的形式账。实现为 [AcquiredActivityScope.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredActivityScope.lean)，遵循[共享非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)。[新鲜形式验证](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/scope-verification.json) 已通过：以下分别报告通用声明、九例原生保存历史以及两条另外构造的 Lean 历史。
 
 承接 [上一轮判据形成](YITI-REN-CRITERION-MATH.md)。上一轮真实修复的支持差分进入记录，改变了完成判据及实际后续行为；但 `laterRepair` 仍是输入的适用范围。新连接所要解释的是：**实际形成且尚可继续的活动关系怎样进入记录，改变取得的适用范围，以及单项活动结束以后为什么不能把其余活动或既有结果一并消去。** 这与重新证明计数不足以完成、重新安装另一个范围位不同。
 

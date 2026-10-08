@@ -1,6 +1,6 @@
 # Relations across scales: mathematical correspondence and dependency audit
 
-8 October 2026, Asia/Bangkok. AI-authored. [Current bilingual theory](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md) · [Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean) · [Checker](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/check_scales.py) · [Receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/scales-verification.json).
+8 October 2026, Asia/Bangkok. AI-authored. [Current bilingual theory](../../../../theories/becoming/chapters/RELATIONS-ACROSS-SCALES.md) · [Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean) · [Checker](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/check_scales.py) · [Receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/scales-verification.json).
 
 ## Formal objects and supplied hypotheses
 

@@ -8,7 +8,7 @@ P=Path(__file__).resolve().parent
 R=P.parents[3]
 E=R/'experiments/integrated-correction/general-framework/generative-basis/biological-scale-correspondence/continuation'
 S=R/'sources/biological-scale-correspondence'
-T=R/'theories/shengsheng-buxi-generative-existence/unified-2026-10-05'
+T=R/'theories/becoming/chapters'
 A=R/'experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis'
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 spec=importlib.util.spec_from_file_location('chain',P/'build_generative_chain.py')

@@ -1,6 +1,6 @@
 # Identifying the harm-ground without confusing signal, experience and reason
 
-6 October 2026. AI-authored supporting investigation of **an independently identified aversive condition → a justified reason → its scope across deliberators** in the [entire 慧根 programme](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md). This is a limited primary-evidence check, not a medical recommendation, new participant study or completed theory of pain.
+6 October 2026. AI-authored supporting investigation of **an independently identified aversive condition → a justified reason → its scope across deliberators** in the [entire 慧根 programme](../../../../theories/becoming/chapters/HUIGEN.md). This is a limited primary-evidence check, not a medical recommendation, new participant study or completed theory of pain.
 
 The [practical-necessity audit](HUIGEN-PRACTICAL-NECESSITY-AUDIT.md) isolates a narrow candidate ground: an aversive experience whose prevention leaves no compensating relevant good worse. Its argument cannot be evaluated if “harm” silently changes between a stimulus, a control-system error, an unpleasant experience, an observed response and a valid reason. The evidence below makes that identification obligation concrete. It does not establish that the ground has actor-neutral normative authority.
 
@@ -44,7 +44,7 @@ All three sources were accessed on 6 October 2026. Only the identified primary m
 
 The current generative models can instantiate operational significance: an event changes a system's later possibilities, and a formed response can regulate that difference. The step to **experienced** aversive significance remains a separate identification and explanatory problem. Neither a signed controller error nor a recipient's resource loss already constitutes an observation of suffering.
 
-This does not diminish the models' causal results. The [recorded-reasons construction](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECORDED-REASONS.md) explicitly supplies factual calibration and normative relevance. The concrete recipient constructions concern specified outcomes and accounts. Using them for an experiential harm claim would require a new, warranted interpretation of the patient and relevant state; changing the label of a fuel variable would not provide it.
+This does not diminish the models' causal results. The [recorded-reasons construction](../../../../theories/becoming/chapters/RECORDED-REASONS.md) explicitly supplies factual calibration and normative relevance. The concrete recipient constructions concern specified outcomes and accounts. Using them for an experiential harm claim would require a new, warranted interpretation of the patient and relevant state; changing the label of a fuel variable would not provide it.
 
 The candidate harm-ground should therefore state at least:
 
@@ -72,7 +72,7 @@ The positive task is to combine an adequate account of the experience with a def
 
 The practical-congruency follow-up tests two feasible actions with equal actor costs and a difference in another patient's aversive experience. This need not posit a physically free intervention. Two commands can consume the same finite resources while producing different recipient outcomes. Equating every morally relevant consequence remains a conceptual control to defend; equating one resource counter does not establish it.
 
-An existing [recipient-correction construction](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CORRECTION.md) gives a concrete operational comparison. In its primary variable-producer fixture, the indexed arm uses actual recipient evidence; the matched `private_only` arm pays the same installation, observation and writing bills while lacking that channel. Saved unconditional metrics are:
+An existing [recipient-correction construction](../../../../theories/becoming/chapters/RECIPIENT-CORRECTION.md) gives a concrete operational comparison. In its primary variable-producer fixture, the indexed arm uses actual recipient evidence; the matched `private_only` arm pays the same installation, observation and writing bills while lacking that channel. Saved unconditional metrics are:
 
 | Metric | Indexed recipient evidence | Matched absent recipient evidence |
 |---|---:|---:|

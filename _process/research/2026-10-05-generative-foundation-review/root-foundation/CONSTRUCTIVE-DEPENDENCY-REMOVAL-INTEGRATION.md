@@ -1,6 +1,6 @@
 # Constructive dependency removal and finite inquiry
 
-6 October 2026. AI-assisted continuation of Ren's requirement to integrate the generative model in Lean without added assumptions or axioms. Read with the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) and [governing derivation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md). This continues the existing [inquiry-sufficiency proof](INQUIRY-SUFFICIENCY-LEAN-INTEGRATION.md), rather than proposing another foundation.
+6 October 2026. AI-assisted continuation of Ren's requirement to integrate the generative model in Lean without added assumptions or axioms. Read with the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) and [governing derivation](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md). This continues the existing [inquiry-sufficiency proof](INQUIRY-SUFFICIENCY-LEAN-INTEGRATION.md), rather than proposing another foundation.
 
 ## The transition addressed
 
@@ -46,7 +46,7 @@ The [public finite entry](../../../../experiments/integrated-correction/general-
 | Observation meaning, calibration, response availability and relevant history/resource coordinates | Still local representation and realization obligations. |
 | Prefix and endpoint requirements, their practical scope and warrant | Still explicit; no reward or ethical direction is inserted into the process. |
 | Finding, installing, learning or retaining a policy | Not proved by this existence characterization. Arbitrary action/response spaces are not searched. |
-| The common foundation's explanatory sufficiency | Still open under the [premise ledger](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md). Empty dependency reports do not establish it. |
+| The common foundation's explanatory sufficiency | Still open under the [premise ledger](../../../../theories/becoming/chapters/FOUNDATION-PREMISES.md). Empty dependency reports do not establish it. |
 
 Inquiry, acquired outcomes and subsequent response describe one transforming process. This analytical separation preserves native successor relations; it omits the formation of its representation and criterion unless those are separately modeled. A supplied local law is not thereby external to generative reality. Conversely, including a law in one representation does not explain its formation merely by renaming it generative.
 

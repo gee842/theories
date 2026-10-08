@@ -28,3 +28,26 @@ The repair passed the infrastructure tests, complete metadata/navigation check, 
 No Lean source was changed by this repair and no new mathematical claim was introduced. Existing source/receipt bindings were checked; mathematical and empirical work arriving from other sessions retains those sessions' recorded scope. A whole-repository checkpoint preserves incoming work without upgrading its validation status.
 
 Historical semantic migration is not exhaustive. The register explicitly distinguishes migrated coverage from the full corpus; existing reading catalogues and studies retain unmigrated claims. Physical relocation of active workspaces, a universal Lean build, automatic hash refresh and universal semantic equivalence detection are not part of the repair. Future research should migrate the particular result it changes and reuse its existing evidence. New independent authorization remains valid even before its scope record is added.
+
+## Directory renames, 9 October 2026 / 目录改名
+
+At [Ren's request](../../sources/15-codex-theory-conversations/2026-10-09-pure-core.md#rens-follow-up-finish-the-renames-then-continue-the-theory), two directories were renamed so that their paths name what they hold.
+
+| Former path / 旧路径 | Path / 现路径 |
+|---|---|
+| `theories/shengsheng-buxi-generative-existence/` | [`theories/becoming/`](../../theories/becoming/README.md) |
+| `theories/shengsheng-buxi-generative-existence/unified-2026-10-05/` | [`theories/becoming/chapters/`](../../theories/becoming/chapters/THE-THEORY-OF-BECOMING.md) |
+
+The move changed no file's content. Live references were rewritten by five ordered substitution rules that match only whole path components in path positions. This covers tools, configuration, records, catalogues, studies, experiment documentation and the other theories. In the directive register `sources/15-codex-theory-conversations/`, only Markdown link targets were rewritten, and no line quoting Ren was touched.
+
+Evidence keeps its original bytes and its old paths. This covers imported originals, drafts and exports, reading notes and handoffs, preservation history, and frozen, before/after, retained and verification copies. It also covers receipts and other recorded JSON outputs, and Lean sources. To follow an old path in evidence, use the table above.
+
+[rename-2026-10-09.json](rename-2026-10-09.json) lists every rewritten file with its hash before and after the rename, and every reviewed hash that was carried across. A hash was carried only where the file had matched it before and its new bytes are exactly the substitution of the old. As a result, the records, the reading catalogue, the generativity chain and the session map show the same freshness as before the rename. To verify:
+
+```sh
+python3 -B _process/architecture/check_rename.py
+```
+
+The checker re-derives each rewritten file from the base commit and compares hashes, and confirms that every carried hash moved from a file's hash before the rename to its hash after it.
+
+两处目录改名，使路径说出所放之物；移动本身不改任何文件内容。现行引用按五条有序规则改写，规则只匹配路径位置上的完整路径成分。指令记录只改 Markdown 链接目标，引用 Ren 原话的行不动。证据保留原字节与旧路径，按上表读。回执逐一列出改写文件改名前后的哈希，以及沿用的已审哈希：只有文件原本与之相符、且新字节恰为旧字节的替换时才沿用。因此各登记的新鲜程度与改名前相同。检查器从基准提交重新推出每个改写文件并核对哈希。

@@ -4,7 +4,7 @@
 
 The useful advance is to distinguish the availability of participants, their actual participation and the duration and consequence of their activity. An account of continued living function must connect those relations. A count of retained structures alone cannot supply that connection; neither can a fitted measure of realized output automatically identify unused capacity.
 
-Following the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md), catalyst, substrate and product are differentiated roles in the same transformations. The distinctions below preserve their joint occurrence and changing relationships. They do not introduce a self-contained organization facing fundamentally external support.
+Following the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md), catalyst, substrate and product are differentiated roles in the same transformations. The distinctions below preserve their joint occurrence and changing relationships. They do not introduce a self-contained organization facing fundamentally external support.
 
 ## 1. Primary evidence: productive engagement is inferred with a stated balance
 

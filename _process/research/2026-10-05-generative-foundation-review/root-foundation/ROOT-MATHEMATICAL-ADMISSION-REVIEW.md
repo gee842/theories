@@ -1,6 +1,6 @@
 # Full admission and graph completion: independent review
 
-7 October 2026. AI-authored counterreview of the next mathematical-root step, following the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). The question is whether the generative root warrants full higher-order domains, beyond reconstructing their truth once those domains are supplied. Mathematical claims below are tied to the new Lean declarations; the foundational appraisal is philosophical argument. Final verification status is recorded in §7.
+7 October 2026. AI-authored counterreview of the next mathematical-root step, following the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). The question is whether the generative root warrants full higher-order domains, beyond reconstructing their truth once those domains are supplied. Mathematical claims below are tied to the new Lean declarations; the foundational appraisal is philosophical argument. Final verification status is recorded in §7.
 
 ## 1. What would complete this step
 

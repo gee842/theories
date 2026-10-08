@@ -4,6 +4,6 @@
 
 > please continue
 
-The preceding assistant response reported the accepted [architecture-to-recipient-learning construction](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ARCHITECTURE-LEARNING.md) and identified the next connection: how understanding another's conditions acquires justified influence over priorities and remains effective and corrigible through succession. This instruction continues that research. It does not endorse a proposed numerical evaluator, establish its ethical interpretation, or certify completion of the foundation.
+The preceding assistant response reported the accepted [architecture-to-recipient-learning construction](../../theories/becoming/chapters/ARCHITECTURE-LEARNING.md) and identified the next connection: how understanding another's conditions acquires justified influence over priorities and remains effective and corrigible through succession. This instruction continues that research. It does not endorse a proposed numerical evaluator, establish its ethical interpretation, or certify completion of the foundation.
 
-The current supporting study coordinates with the parallel causal evaluator and the existing ethical-ground work. Its [application account](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md) is AI-authored elaboration, not wording attributed to Ren.
+The current supporting study coordinates with the parallel causal evaluator and the existing ethical-ground work. Its [application account](../../theories/becoming/chapters/EVALUATIVE-APPLICATION.md) is AI-authored elaboration, not wording attributed to Ren.

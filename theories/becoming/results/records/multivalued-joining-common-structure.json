@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "id": "multivalued-joining-common-structure",
+  "title": {
+    "zh": "多结果接合的共同关系结构",
+    "en": "Common relational structure for multivalued joining"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F22",
+  "reviewed_at_utc": "2026-10-08T13:52:31.763955+00:00",
+  "claim": {
+    "zh": "有限结果接合的两份精确约简分支说明具有唯一的已用代码对齐，保持所有可能输出类；代码结果可从任意原来指定的同码输入对提升。",
+    "en": "Two exact reduced branch accounts of finite-outcome joining have a unique alignment on used codes preserving all possible outcome classes; each code outcome lifts from any originally specified input pair with those codes."
+  },
+  "hypotheses": [
+    {
+      "zh": "同一部分接合 J；每对输入具有有限结果集合。",
+      "en": "One partial joining relation J; each input pair has a finite outcome set."
+    },
+    {
+      "zh": "目标含全部有限否定、合取、左右接合后继问题，无独立原子谓词。",
+      "en": "The target contains all finite negation, conjunction and left/right joining-successor questions, with no independent atomic predicates."
+    },
+    {
+      "zh": "Exact 给出完整精确答案；Reduced 仅用于最小代码与输出代码的提升。",
+      "en": "Exact supplies complete truthful answers; Reduced is used for minimal codes and lifting output codes."
+    }
+  ],
+  "correspondence": {
+    "zh": "片段、接合及其检验解释同一活动内的关系；数学语义不等于所有问题已被实际取得。",
+    "en": "Fragments, joining and its questions interpret relations within the same activity; mathematical semantics does not establish acquired access to every answer."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean",
+  "aliases": [
+    "Generative.ExplanatoryJoiningBranches.common_multivalued_structure"
+  ],
+  "dependencies": [
+    {
+      "id": "branching-tests-bisimulation",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "检查过的同一接合到模态模型适配。",
+        "en": "Checked adapter from the same joining to the modal model."
+      },
+      "interface": {
+        "output": {
+          "zh": "same_iff_bisimilar 所用的 same_is_bisimulation：Same 本身构成 Bisimulation。",
+          "en": "same_is_bisimulation, the checked core used by same_iff_bisimilar: Same itself forms a Bisimulation."
+        },
+        "input": {
+          "zh": "branch_same_compatible 经 bisimulation_iff_compatible 接到左右接合，join_result_matches 再替换两个输入。",
+          "en": "branch_same_compatible connects it to left/right joining via bisimulation_iff_compatible; join_result_matches then replaces both inputs."
+        },
+        "conditions": {
+          "zh": "finite_outcomes_image_finite 验证有限纤维；无原子谓词；精确性及约简性另明示。",
+          "en": "finite_outcomes_image_finite verifies finite fibers; no atomic predicates; exactness and reducedness are separately explicit."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "functional-joining-common-structure",
+      "detail": {
+        "zh": "从单值共同操作接续到多结果关系；并非相同问题集下的无代价弱化。",
+        "en": "Continues from functional common operations to a multivalued relation, not a cost-free weakening for the identical question family."
+      }
+    },
+    {
+      "id": "retained-reference-joining-recovery",
+      "detail": {
+        "zh": "不同载体的保留引用形成对应已在新范围内实查；不是回写本结果的证明范围。",
+        "en": "Retained-reference formation across different carriers is checked at its new scope; it does not rewrite this result’s proof scope."
+      }
+    },
+    {
+      "id": "finite-granularity-question-recovery",
+      "detail": {
+        "zh": "同一研究中的接续成果；具体正式复用另列，关联不自动构成已证转换。",
+        "en": "Continuation result in the same study; formal reuse is listed separately, and this relationship does not itself assert a checked adapter."
+      }
+    },
+    {
+      "id": "prefix-observation-loss",
+      "detail": {
+        "zh": "同一研究中的接续成果；具体正式复用另列，关联不自动构成已证转换。",
+        "en": "Continuation result in the same study; formal reuse is listed separately, and this relationship does not itself assert a checked adapter."
+      }
+    },
+    {
+      "id": "guarded-program-question-recovery",
+      "detail": {
+        "zh": "同一研究的新接续；具体形式复用另列，此关联不独自证明转换。",
+        "en": "New continuation in the same study; formal reuse is specified separately, without a proved adapter inferred from this relation."
+      }
+    },
+    {
+      "id": "residual-continuation-correspondence",
+      "detail": {
+        "zh": "同一研究的新接续；具体形式复用另列，此关联不独自证明转换。",
+        "en": "New continuation in the same study; formal reuse is specified separately, without a proved adapter inferred from this relation."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "detail": {
+        "zh": "有限结果和丰富问答仍是前提；保持结果类而非每个原生三元事实。例子证明共同关系仍可多结果。任意解释的适用性及不同分节的共同对应未证。",
+        "en": "Finite outcomes and rich answers remain premises; outcome classes, not every native ternary fact, are preserved. The witness proves the common relation can remain multivalued. Applicability to every explanation and common correspondence across different articulations remain unproved."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranchWitnesses.lean",
+      "detail": {
+        "zh": "同一规律有可区分的左／右结果；规范共同表示仍非单值，且共享后继不同于分别可行的路径。",
+        "en": "One law has distinguishable left/right outcomes; the canonical account remains nonfunctional, and shared continuation differs from individually feasible paths."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "有限结果和丰富问答仍是前提；保持结果类而非每个原生三元事实。例子证明共同关系仍可多结果。任意解释的适用性及不同分节的共同对应未证。",
+    "en": "Finite outcomes and rich answers remain premises; outcome classes, not every native ternary fact, are preserved. The witness proves the common relation can remain multivalued. Applicability to every explanation and common correspondence across different articulations remain unproved."
+  },
+  "validation_scope": {
+    "zh": "所列 Lean 源码与成功冻结回执逐字哈希绑定；本轮223项审计含26项新声明。旧功能性定理信用此前166项回执，未冒充新证明。",
+    "en": "Listed Lean sources bind by exact hash to successful frozen receipts. This round checks 223 declarations including 26 new ones. The older functional theorem credits its previous 166-audit receipt, not a new proof."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean",
+      "role": "proof",
+      "sha256": "4c9c2ff814f1e5d2fbd9948a7466833b438ae8875cd5dcb41a2897aa60c9b3f3",
+      "declarations": [
+        "Generative.ExplanatoryJoiningBranches.common_multivalued_structure",
+        "Generative.ExplanatoryJoiningBranches.bisimulation_iff_compatible",
+        "Generative.ExplanatoryJoiningBranches.join_result_matches",
+        "Generative.ExplanatoryJoiningBranches.operation_lifts",
+        "Generative.ExplanatoryJoiningBranches.every_exact_account_has_canonical_factor"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-branches-checks/20261008T130611.816353Z/receipt.json",
+      "role": "receipt",
+      "sha256": "ee0939ec4f4f14674312e91690ccd6bf9d436dca03b0d6664ec00c5fde832533",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "8fef4fa01911d0e706e128caafe5717c08e218d5a0dee029147f80e1443444cf",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean",
+      "role": "proof",
+      "sha256": "ff49f9ef7e458a316898575948fcec763d879ab5412e170c25de56ac94cd7a2e",
+      "declarations": [
+        "Generative.ExplanatoryBranching.same_is_bisimulation"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranchWitnesses.lean",
+      "role": "proof",
+      "sha256": "8642814c7270ef08759e57f5c8dec54061f6c29c6b69e461e50317833a20087c",
+      "declarations": [
+        "Generative.ExplanatoryJoiningBranchWitnesses.canonical_operation_still_multivalued"
+      ]
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranches.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-branches-checks/20261008T130611.816353Z/receipt.json",
+      "sha256_pointer": "/modules/12/sha256",
+      "success_pointer": "/passed",
+      "success_value": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-branches-checks/20261008T130611.816353Z/receipt.json",
+      "sha256_pointer": "/modules/7/sha256",
+      "success_pointer": "/passed",
+      "success_value": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoiningBranchWitnesses.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-joining-branches-checks/20261008T130611.816353Z/receipt.json",
+      "sha256_pointer": "/modules/13/sha256",
+      "success_pointer": "/passed",
+      "success_value": true
+    }
+  ],
+  "next_delta": {
+    "zh": "复用有限条件程序与真实余项恢复；继续建立内部语法不同的说明之间余项、判断与实际形成关系的有据翻译，区分语义可判定与实际取得。",
+    "en": "Reuse finite guarded programs and coherent residual recovery; establish warranted residual/guard/formation translation between descriptions with different internal syntax, distinguishing semantic tests from actual acquisition."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：在既有接合情境研究中接续；已完成结果分别迁移，新连接与复用分列。",
+      "en": "2026-10-08: continued the existing joining-context study; migrated completed claims separately and distinguished new connections from reuse."
+    },
+    {
+      "zh": "2026-10-08 接续：原主张、前提与回执保持；审读同一研究新增共同细化、无引用退化及保留引用修复，更新后续连接。",
+      "en": "2026-10-08 continuation: retained the original claim, premises and receipts; read the appended refinement, unanchored-collapse and retained-reference repair and updated the next connection."
+    },
+    {
+      "zh": "2026-10-09：复用本成果接通固定有限操作粒度；旧主张、假设与证明绑定不变。新前缀遗漏及继续检验见同一研究第22—26节。",
+      "en": "2026-10-09: reuse this result in finite-granularity continuation; preserve its claim, hypotheses and proof bindings. New prefix omission and resumption testing appear in the same study §§22–26."
+    },
+    {
+      "zh": "2026-10-09接续：研究新增有限条件程序、余项恢复及35项实查声明；原成果的主张、假设和证明绑定保持，见原研究§27—32。",
+      "en": "2026-10-09 continuation: finite guarded programs, residual recovery and 35 checked declarations added in the same study §§27–32; this result retains its claim, assumptions and proof bindings."
+    }
+  ]
+}

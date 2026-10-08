@@ -1,6 +1,6 @@
 # Acquired continuing dependency after component completion
 
-6 October 2026. AI-authored continuation following [Ren’s direction](../../../../sources/15-codex-theory-conversations/2026-10-06-remaining-dependency-continuation.md), under the [shared method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). **Complete at the declared native and formal scope:** independent reconstruction accepts 27 ancestry-compatible cases, with one rejected-ancestry fixture preserved separately; the fresh Lean build passes 43 substantive theorem audits and 446 generated correspondence certificates. The [preceding inquiry-completion result](INQUIRY-COMPLETION-INTEGRATION.md) remains completed at its own scope.
+6 October 2026. AI-authored continuation following [Ren’s direction](../../../../sources/15-codex-theory-conversations/2026-10-06-remaining-dependency-continuation.md), under the [shared method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). **Complete at the declared native and formal scope:** independent reconstruction accepts 27 ancestry-compatible cases, with one rejected-ancestry fixture preserved separately; the fresh Lean build passes 43 substantive theorem audits and 446 generated correspondence certificates. The [preceding inquiry-completion result](INQUIRY-COMPLETION-INTEGRATION.md) remains completed at its own scope.
 
 ## The connection being tested
 

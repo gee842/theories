@@ -1,14 +1,14 @@
 # Goodness as a reason, and goodness that changes what can follow
 
-6 October 2026. AI-authored reconstruction under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). **The two proposed answers can work together: an activity can be worth choosing because of its actual good, and can have further significance because it forms conditions for subsequent good.** Neither requires a private reward. The second contribution need not replace the first or make every good prove its productivity.
+6 October 2026. AI-authored reconstruction under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). **The two proposed answers can work together: an activity can be worth choosing because of its actual good, and can have further significance because it forms conditions for subsequent good.** Neither requires a private reward. The second contribution need not replace the first or make every good prove its productivity.
 
 ## What our definition already says
 
-[THEORY §10](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md#10-shared-generativity-and-善) proposes:
+[THEORY §10](../../../../theories/becoming/chapters/THEORY.md#10-shared-generativity-and-善) proposes:
 
 > 善：照料并成全受影响者继续生活、行动、理解与改变的条件，也使纠正损害这些条件的力量能够继续。
 
-Its English formulation concerns supporting, repairing and enabling affected beings' worthwhile possibilities, including effective understanding, contestation and change. This is an AI-assisted ethical formulation in the current theory, not a verbatim attribution to Ren. “Worthwhile” retains evaluative content. The [alignment account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AXIS.md#what-good-and-evil-mean-at-this-scope) also preserves rest, enjoyment and chosen completion without requiring further productivity.
+Its English formulation concerns supporting, repairing and enabling affected beings' worthwhile possibilities, including effective understanding, contestation and change. This is an AI-assisted ethical formulation in the current theory, not a verbatim attribution to Ren. “Worthwhile” retains evaluative content. The [alignment account](../../../../theories/becoming/chapters/ALIGNMENT-AXIS.md#what-good-and-evil-mean-at-this-scope) also preserves rest, enjoyment and chosen completion without requiring further productivity.
 
 So our good is neither maximum activity nor the persistence of the largest organization. A practice can thrive while making other lives worse. Supporting plural continuities includes changing or ending a practice that obstructs them.
 
@@ -22,7 +22,7 @@ The [relational adjudication](RELATION-AND-REASON-ARGUMENT.md) supports this can
 
 ## The strongest generative extension
 
-The [governing account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#how-consequences-participate-in-changing-activity) explains how effects become conditions of further activity. Applied to good, this opens a richer claim than a return to the original actor:
+The [governing account](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#how-consequences-participate-in-changing-activity) explains how effects become conditions of further activity. Applied to good, this opens a richer claim than a return to the original actor:
 
 **A response can realize a present good while transforming the capacities, relations and circumstances through which subsequent good becomes possible.**
 

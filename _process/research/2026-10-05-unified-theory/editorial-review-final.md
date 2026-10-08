@@ -1,6 +1,6 @@
 # Final editorial review
 
-Reviewed the revised `THEORY.md`, `START-HERE.md`, and `CLAIMS.md` in `/Users/ren/theories/theories/shengsheng-buxi-generative-existence/unified-2026-10-05/` on 5 October 2026. No edits or commits made. This is an inquiry/source-fidelity and cross-document review, not a replacement for the separate mathematical audit.
+Reviewed the revised `THEORY.md`, `START-HERE.md`, and `CLAIMS.md` in `/Users/ren/theories/theories/becoming/chapters/` on 5 October 2026. No edits or commits made. This is an inquiry/source-fidelity and cross-document review, not a replacement for the separate mathematical audit.
 
 **Verdict: substantively coherent and ready for delivery, with two very small precision edits recommended. No unresolved blocking contradiction or unsupported new empirical claim found.**
 

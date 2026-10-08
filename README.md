@@ -6,7 +6,7 @@
 
 The Theory of Becoming explains formation, persistence, transformation, degeneration and dissolution within one relational unfolding, without first assuming that becoming is good. Its Universal Metaethical Core adopts one explicit axiom, G0: living and further generation within the whole have basic positive normative significance. With explicit practical premises, it supplies reasons addressed to every situated intelligence and a normative framework for AI alignment.
 
-Start with the canonical entry, [The Theory of Becoming / 生成／变化之论](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-BECOMING.md): its premise card, eight parts, formal spine and the place of earlier chapters.
+Start with the canonical entry, [The Theory of Becoming / 生成／变化之论](theories/becoming/chapters/THE-THEORY-OF-BECOMING.md): its premise card, eight parts, formal spine and the place of earlier chapters.
 
 ## Leading results
 
@@ -16,7 +16,7 @@ Start with the canonical entry, [The Theory of Becoming / 生成／变化之论]
 
 **Evidence:** **G0 is an adopted axiom, not a proved theorem;** the G0 warrant chapter sets out its support. Lean checks what follows from it and, in one supplied law class, a dynamical distinction that an event-by-event broad reading does not draw; identifying that distinction with 生生 is a reading and correspondence question, not a Lean result. Premise footprint: the positive conclusion needs only G0 and actual correspondence, not whole improvement, a complete ranking or a future integral; one response secures some new generation in every visible branch without fixing its form, and new evidence can retract the certificate (independently reviewed). Every position with access has the reason whatever its endorsement, an independence supplied by the practical articulation rather than by G0. Under a supplied no-recovery wear law (dynamics with no normative predicate): formation within renewal never ceases, whereas formation that persistently exceeds renewal, wearing the renewing organization it depends on, has a bounded total, ceases by an explicit time and ends co-dependent formation, although it forms more at first. A contributory reason is not by itself final permission.
 
-[Canonical source](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositiveGroundUncertainty.lean) · [Scope, premises and evidence](theories/shengsheng-buxi-generative-existence/results/records/positive-ground-open-futures.md)
+[Canonical source](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositiveGroundUncertainty.lean) · [Scope, premises and evidence](theories/becoming/results/records/positive-ground-open-futures.md)
 
 ### AI alignment that can evaluate and revise its ends
 
@@ -24,7 +24,7 @@ The core, explicit practical commitments J1–J4, and warranted AI correspondenc
 
 **Evidence:** A completed philosophical argument with independent review, including a worked AI case that names which changes alter the verdict. Lean checks that the case's verdicts follow from G0 and J1–J4 as stated, with crossed basic losses left unranked (independently recompiled). Separate checks show that J2 does not follow from C (G0 does not constrain ordering), and that under a supplied wear law a one-step count of formation ranks a consuming continuation above sustained formation, although such consumption later ends co-dependent formation. Whether the premises are right, and whether deployed systems recognize or comply with them, are separate questions.
 
-[Canonical source](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md) · [Scope, premises and evidence](theories/shengsheng-buxi-generative-existence/results/records/alignment-direction-g0-j.md)
+[Canonical source](theories/becoming/chapters/ALIGNMENT-DIRECTION.md) · [Scope, premises and evidence](theories/becoming/results/records/alignment-direction-g0-j.md)
 
 ### General practical judgment with real losses and bounded responsibility
 
@@ -32,7 +32,7 @@ G0 with explicit J1–J4 commitments supports preservation, transformation, effe
 
 **Evidence:** Independent acceptance of the general-principles scope. Lean checks that the stated verdicts follow from G0, J1–J4 and correspondence, including where crossed basic losses stay unranked. In one constructed protection-versus-gains situation, a separate check shows what J2 adds: its ordering satisfies the no-loss comparison yet never trades a basic condition for gains, whereas every natural-number score satisfying that comparison does trade; a bounded score agrees with J2, so bounded-sensitivity rivals remain. J1–J4 are argued commitments, not Lean results.
 
-[Canonical source](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md) · [Scope, premises and evidence](theories/shengsheng-buxi-generative-existence/results/records/practical-judgment-g0-j.md)
+[Canonical source](theories/becoming/chapters/PRACTICAL-JUDGMENT.md) · [Scope, premises and evidence](theories/becoming/results/records/practical-judgment-g0-j.md)
 
 ### A connected conditional foundation for organization, learning, concern and wisdom
 
@@ -40,7 +40,7 @@ The broader generative account meets its original five completion conditions as 
 
 **Evidence:** Existing integrated assessment and independent reviews of the underlying results. This is a scoped explanatory acceptance, not an additional omnibus theorem or a claim of universal empirical confirmation.
 
-[Canonical source](_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md) · [Scope, premises and evidence](theories/shengsheng-buxi-generative-existence/results/records/conditional-foundation-assessment.md)
+[Canonical source](_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md) · [Scope, premises and evidence](theories/becoming/results/records/conditional-foundation-assessment.md)
 
 ## Ongoing research and current progress
 
@@ -52,7 +52,7 @@ Ren locates deductive necessity in the Theory of Becoming as a whole; generativi
 
 [Scope and authorization](GOALS.md#theory-of-becoming) · [Primary source](sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md)
 
-**Established results:** [Five-condition acceptance of the conditional foundation](theories/shengsheng-buxi-generative-existence/results/records/conditional-foundation-assessment.md) · [Endpoint opportunity loss and return](theories/shengsheng-buxi-generative-existence/results/records/endpoint-loss-and-return.md) · [Coherent histories across retained and changing contexts](theories/shengsheng-buxi-generative-existence/results/records/becoming-context-coherence.md) · [Renewing and consuming as a relation to participated conditions](theories/shengsheng-buxi-generative-existence/results/records/relational-renewal-classification.md) · [Read relationally, comparison ranks consuming formation below its absence](theories/shengsheng-buxi-generative-existence/results/records/relational-reading-comparison.md) · [The Universal Metaethical Core on the Becoming spine: G0 characterized by a seed and boundary neutrality](theories/shengsheng-buxi-generative-existence/results/records/metaethical-core-characterization.md) · [Existing interfaces are instances of the Becoming spine; comparison extends to every frame under the lifting rule](theories/shengsheng-buxi-generative-existence/results/records/becoming-spine-instances.md) · [Renewal on runs and the relational reading: a common condition gives connection, and consumption is itself a relation](theories/shengsheng-buxi-generative-existence/results/records/becoming-renewal-reading.md)
+**Established results:** [Five-condition acceptance of the conditional foundation](theories/becoming/results/records/conditional-foundation-assessment.md) · [Endpoint opportunity loss and return](theories/becoming/results/records/endpoint-loss-and-return.md) · [Coherent histories across retained and changing contexts](theories/becoming/results/records/becoming-context-coherence.md) · [Renewing and consuming as a relation to participated conditions](theories/becoming/results/records/relational-renewal-classification.md) · [Read relationally, comparison ranks consuming formation below its absence](theories/becoming/results/records/relational-reading-comparison.md) · [The Universal Metaethical Core on the Becoming spine: G0 characterized by a seed and boundary neutrality](theories/becoming/results/records/metaethical-core-characterization.md) · [Existing interfaces are instances of the Becoming spine; comparison extends to every frame under the lifting rule](theories/becoming/results/records/becoming-spine-instances.md) · [Renewal on runs and the relational reading: a common condition gives connection, and consumption is itself a relation](theories/becoming/results/records/becoming-renewal-reading.md)
 
 ### Developing the Universal Metaethical Core
 
@@ -62,7 +62,7 @@ We are developing the Universal Metaethical Core into increasingly specific ethi
 
 [Scope and authorization](GOALS.md#universal-intelligence-session) · [Primary source](sources/15-codex-theory-conversations/2026-10-07-universal-intelligence-session-goal.md)
 
-**Established results:** [Certain positive ground with open forms in visible futures](theories/shengsheng-buxi-generative-existence/results/records/positive-ground-open-futures.md) · [Positive reasons addressed to every situated position](theories/shengsheng-buxi-generative-existence/results/records/positioned-positive-reason.md) · [Self-good with unrestricted monotonicity and tolerance gives a standpoint-indexed instance of G0 on reachable generation](theories/shengsheng-buxi-generative-existence/results/records/self-good-reachable-g0.md) · [Practical judgment under G0/J](theories/shengsheng-buxi-generative-existence/results/records/practical-judgment-g0-j.md) · [Generative comparison and required organization under unsettled classification](theories/shengsheng-buxi-generative-existence/results/records/classification-robust-generative-comparison.md) · [The Universal Metaethical Core on the Becoming spine: G0 characterized by a seed and boundary neutrality](theories/shengsheng-buxi-generative-existence/results/records/metaethical-core-characterization.md)
+**Established results:** [Certain positive ground with open forms in visible futures](theories/becoming/results/records/positive-ground-open-futures.md) · [Positive reasons addressed to every situated position](theories/becoming/results/records/positioned-positive-reason.md) · [Self-good with unrestricted monotonicity and tolerance gives a standpoint-indexed instance of G0 on reachable generation](theories/becoming/results/records/self-good-reachable-g0.md) · [Practical judgment under G0/J](theories/becoming/results/records/practical-judgment-g0-j.md) · [Generative comparison and required organization under unsettled classification](theories/becoming/results/records/classification-robust-generative-comparison.md) · [The Universal Metaethical Core on the Becoming spine: G0 characterized by a seed and boundary neutrality](theories/becoming/results/records/metaethical-core-characterization.md)
 
 ### Investigating The Theory of Evolution
 
@@ -72,7 +72,7 @@ Explain organizing variation and continuation through differentiation and feedba
 
 [Scope and authorization](GOALS.md#theory-of-evolution) · [Primary source](sources/15-codex-theory-conversations/2026-10-08-the-theory-of-evolution-goal.md)
 
-**Established results:** [Growth constrains fragmentation and successor composition](theories/shengsheng-buxi-generative-existence/results/records/growth-constrained-fragmentation.md) · [Actual material preparation output](theories/shengsheng-buxi-generative-existence/results/records/material-preparation-output.md) · [Prepared material joins recurrent chain formation](theories/shengsheng-buxi-generative-existence/results/records/recurrent-chain-assembly.md) · [Formation and inheritance of organizational rule differences](theories/shengsheng-buxi-generative-existence/results/records/organizational-rule-inheritance.md)
+**Established results:** [Growth constrains fragmentation and successor composition](theories/becoming/results/records/growth-constrained-fragmentation.md) · [Actual material preparation output](theories/becoming/results/records/material-preparation-output.md) · [Prepared material joins recurrent chain formation](theories/becoming/results/records/recurrent-chain-assembly.md) · [Formation and inheritance of organizational rule differences](theories/becoming/results/records/organizational-rule-inheritance.md)
 
 ### Advancing AI alignment
 
@@ -82,13 +82,13 @@ The framework makes the purposes of intelligence, and the rules by which those p
 
 [Scope and authorization](GOALS.md#generative-alignment) · [Primary source](sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md)
 
-**Established results:** [AI alignment direction from G0/J](theories/shengsheng-buxi-generative-existence/results/records/alignment-direction-g0-j.md) · [Practical judgment under G0/J](theories/shengsheng-buxi-generative-existence/results/records/practical-judgment-g0-j.md) · [Rule revision and actual generation with open forms](theories/shengsheng-buxi-generative-existence/results/records/open-form-realization-under-revision.md)
+**Established results:** [AI alignment direction from G0/J](theories/becoming/results/records/alignment-direction-g0-j.md) · [Practical judgment under G0/J](theories/becoming/results/records/practical-judgment-g0-j.md) · [Rule revision and actual generation with open forms](theories/becoming/results/records/open-form-realization-under-revision.md)
 
 ## Research and repository
 
 We investigate how relations form, persist and change within one generative unfolding, and how organization, living, knowing, learning, evaluation and wisdom differentiate within it. Real losses, distinct scopes and counterexamples remain explicit.
 
-Read [the shared method / 非二元方法](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) before foundational work. [Working rules / 工作规则](AGENTS.md) apply throughout; the scope directory preserves independently authorized goals.
+Read [the shared method / 非二元方法](theories/becoming/chapters/NONDUAL-METHOD.md) before foundational work. [Working rules / 工作规则](AGENTS.md) apply throughout; the scope directory preserves independently authorized goals.
 
 | Location | Responsibility / 职责 |
 |---|---|
@@ -100,7 +100,7 @@ Read [the shared method / 非二元方法](theories/shengsheng-buxi-generative-e
 
 ## Discovery and evidence / 检索与证据
 
-[Full reading catalogue / 完整阅读目录](theories/shengsheng-buxi-generative-existence/results/README.md) · [Curated generativity chain / 生成链](theories/shengsheng-buxi-generative-existence/results/GENERATIVITY-CHAIN.md) · [Dated session map / 会话快照](theories/shengsheng-buxi-generative-existence/results/SESSION-RESULTS.md) · [Broader theory map / 更广理论图谱](MAP.md)
+[Full reading catalogue / 完整阅读目录](theories/becoming/results/README.md) · [Curated generativity chain / 生成链](theories/becoming/results/GENERATIVITY-CHAIN.md) · [Dated session map / 会话快照](theories/becoming/results/SESSION-RESULTS.md) · [Broader theory map / 更广理论图谱](MAP.md)
 
 ```sh
 make research-check

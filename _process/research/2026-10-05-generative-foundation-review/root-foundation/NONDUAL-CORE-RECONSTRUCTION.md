@@ -80,6 +80,6 @@
 
 ## 6. 谱系与证据边界
 
-本轮继承[非二元生成重构](NONDUAL-GENERATIVE-RECONSTRUCTION.md)、[根过程与历史语义](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md)、[生成自我](ORGANIZATION-AND-GENERATED-SELF.md)及[上一轮关切根基审计](NONINSTRUMENTAL-ROOT-MATH.md)。原来的主体索引没有声称独立实体；本轮改变的是它们在整体解释中的位置和需要补足的形成工作。
+本轮继承[非二元生成重构](NONDUAL-GENERATIVE-RECONSTRUCTION.md)、[根过程与历史语义](../../../../theories/becoming/chapters/DEEPER-GENERATIVE-ROOT.md)、[生成自我](ORGANIZATION-AND-GENERATED-SELF.md)及[上一轮关切根基审计](NONINSTRUMENTAL-ROOT-MATH.md)。原来的主体索引没有声称独立实体；本轮改变的是它们在整体解释中的位置和需要补足的形成工作。
 
 [新的原典比较](NONDUAL-CORE-SOURCES.md)考察主客作为关系中的功能如何得到说明，并保留作者已经预设的体验与尚未解释的生成。历史比较帮助提出更好的问题，不认证本模型的本体论或伦理结论。[独立审查](NONDUAL-CORE-REVIEW.md)与[整合记录](NONDUAL-CORE-INTEGRATION.md)分别记录检验范围和当前状态。

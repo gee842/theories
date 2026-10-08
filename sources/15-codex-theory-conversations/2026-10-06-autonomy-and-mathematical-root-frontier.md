@@ -12,6 +12,6 @@ already been proved. This file preserves the selected message, not a complete
 conversation transcript.
 
 The ensuing mechanisms, mathematical arguments, source comparisons and scope
-judgments are AI-authored research. The prior [method-selection result](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/METHOD-REVISION.md)
+judgments are AI-authored research. The prior [method-selection result](../../theories/becoming/chapters/METHOD-REVISION.md)
 remains preserved. The stronger inquiry does not silently revise the original
 five criteria under which the conditional foundation was already assessed.

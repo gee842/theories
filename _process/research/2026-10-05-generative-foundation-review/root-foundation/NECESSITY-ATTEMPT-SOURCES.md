@@ -1,6 +1,6 @@
 # Ownerless adversity: necessity of some concern versus equal altruism
 
-6 October 2026. AI-authored primary adjudication of **actual adverse undergoing → universally addressed contributory relief favor**, under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). The target is a reason under specified opportunity conditions, not inevitable compassion, compulsory assistance or maximization. This is a focused extension of an inherited reading, not another independent witness or a completed necessity proof.
+6 October 2026. AI-authored primary adjudication of **actual adverse undergoing → universally addressed contributory relief favor**, under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). The target is a reason under specified opportunity conditions, not inevitable compassion, compulsory assistance or maximization. This is a focused extension of an inherited reading, not another independent witness or a completed necessity proof.
 
 ## 1. What was already established
 

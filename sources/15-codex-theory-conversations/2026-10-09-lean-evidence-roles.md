@@ -23,7 +23,7 @@ AI 提出三层处理：改写证据行使其说明 Lean 的作用；为 G0 本�
 1. 新增两项 Lean 结果，其内容不来自评价公理的正负号：
    - [RenewingFormation.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingFormation.lean)：同一局部规律下，更新内的形成生生不息；持续超出更新的形成，全展开总量有界并在明确时间停止，与其共享条件的形成随之停止，尽管它起初形成得更多；
    - [ProtectionPriorityRival.lean](../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtectionPriorityRival.lean)：G0 与 C 推不出 J2；每一个满足 C 的自然数评分都会以足够多的增益交换基本条件，J2 则从不交换。
-2. 新增 [G0 根据](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/G0-WARRANT.md)一章，按解释统一、区分力、对手判别与丰饶性组织对采用公理的支持，并写明什么结果会修订 G0。
+2. 新增 [G0 根据](../../theories/becoming/chapters/G0-WARRANT.md)一章，按解释统一、区分力、对手判别与丰饶性组织对采用公理的支持，并写明什么结果会修订 G0。
 3. 通过成果记录的 `overview.evidence` 改写 README 首页三条证据行，使其说明每类检查承担什么，而不是只报数量；生成页经 `make research-render` 更新。
 
 “生生不息”在新模块中的形式读法（`Ceaseless`）、对 Ren 2026-10-07 “整体的，不断创造更多生的方向”的对应，以及磨损规律对真实过程的对应，都是 AI 重构，须按其公开边界审查。

@@ -2,7 +2,7 @@
 
 6 October 2026. AI-authored internal review by the agent who wrote the independent boundary and ordered-account checker. **Accepted scope:** an exact export of existing paid monitor prefixes and an independent conditional resource certificate for the proposed continuation. This review does not certify the separately owned route-replacement implementation, its full mixtures or its mechanism proof.
 
-The named connection is acquired diagnostic evidence → an actual boundary that a paid replacement process can consume. It advances the [generative foundation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md) by exposing evidence, stock and prefix constraints rather than treating diagnosis as free revision capacity.
+The named connection is acquired diagnostic evidence → an actual boundary that a paid replacement process can consume. It advances the [generative foundation](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md) by exposing evidence, stock and prefix constraints rather than treating diagnosis as free revision capacity.
 
 ## Actual boundary and evidence
 

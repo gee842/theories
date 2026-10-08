@@ -9,7 +9,7 @@ import subprocess
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[3]
-CAN = ROOT / "theories/shengsheng-buxi-generative-existence/unified-2026-10-05"
+CAN = ROOT / "theories/becoming/chapters"
 LEAN = ROOT / "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root"
 SYM = LEAN.parent.parent / "necessity-symmetry"
 RECIPIENT = ROOT / "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction"

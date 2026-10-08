@@ -4,7 +4,7 @@
 
 ## Scope and corrections
 
-The mathematical reviewer read the complete new [formal specification](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-SPECIFICATION.md) and [completion plan](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COMPLETION-PLAN.md). Three information/quantifier corrections were incorporated:
+The mathematical reviewer read the complete new [formal specification](../../../../theories/becoming/chapters/FORMAL-SPECIFICATION.md) and [completion plan](../../../../theories/becoming/chapters/COMPLETION-PLAN.md). Three information/quantifier corrections were incorporated:
 
 1. Sequential composition now requires one observation-adapted continuation rule with a uniform conditional success guarantee. It cannot choose a different controller for each hidden entry history.
 2. The robust approximation proposition requires the same implementing protocol to correspond across the whole preparation-uncertainty set. A uniform error bound alone does not justify hidden-state-dependent protocol selection.

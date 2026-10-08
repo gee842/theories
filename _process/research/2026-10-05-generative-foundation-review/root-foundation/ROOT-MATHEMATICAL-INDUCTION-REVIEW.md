@@ -1,6 +1,6 @@
 # Independent review: induction and collective formation
 
-7 October 2026, Asia/Bangkok. AI-authored substantive review of the [induction argument](ROOT-MATHEMATICAL-INDUCTION-ARGUMENT.md), following the [families review](ROOT-MATHEMATICAL-FAMILIES-REVIEW.md). The governing question remains whether the root independently warrants mathematical domains and their full intended content. This review follows the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). It adds no mathematical proof and makes no claim that infinite admission is impossible.
+7 October 2026, Asia/Bangkok. AI-authored substantive review of the [induction argument](ROOT-MATHEMATICAL-INDUCTION-ARGUMENT.md), following the [families review](ROOT-MATHEMATICAL-FAMILIES-REVIEW.md). The governing question remains whether the root independently warrants mathematical domains and their full intended content. This review follows the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). It adds no mathematical proof and makes no claim that infinite admission is impossible.
 
 ## 1. The affirmative explanation is substantive but conditional
 

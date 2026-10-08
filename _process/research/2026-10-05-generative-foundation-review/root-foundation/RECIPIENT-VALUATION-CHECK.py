@@ -13,7 +13,7 @@ ROOT = HERE.parents[3]
 EXPERIMENT = ROOT / "experiments/recipient-harm-valuation"
 SOURCES = ROOT / "sources/30-recipient-harm-valuation-2026-10-06"
 NEURAL_SOURCES = ROOT / "sources/32-shared-affect-action-2026-10-06"
-CANONICAL = ROOT / "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md"
+CANONICAL = ROOT / "theories/becoming/chapters/RECIPIENT-HARM-AND-ACTION.md"
 OUTPUT = HERE / "RECIPIENT-VALUATION-INTEGRATION.json"
 # Earlier behavioral-only acceptance is preserved in the canonical review and git 113a956.
 ACCEPTED_CANONICAL = "309ececbbb21e184e99d73249504736c672b589a472977efd8380912333e7ca8"

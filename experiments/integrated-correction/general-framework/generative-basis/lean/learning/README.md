@@ -2,7 +2,7 @@
 
 AI-assisted development, 6 October 2026. This package advances the named bridge
 **consequences → revision of selectors**, under the repository's
-[generative-grounding goal](../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md).
+[generative-grounding goal](../../../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md).
 It supplies universal necessary conditions, a paid feedback witness, and an
 actual-state support interface to the existing formed-variant construction.
 The origin of a learning or update architecture remains an open derivation.
@@ -116,7 +116,7 @@ This is sufficient for the stated action/observation-labelled finite-history
 contract, not necessary for every controller's action-only behavior. The same
 action vocabulary and step granularity are required. Probability, robustness,
 hardware origin and any omitted sensing or writing costs are not inferred.
-The [canonical account](../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONTROLLED-REFINEMENT.md)
+The [canonical account](../../../../../../theories/becoming/chapters/CONTROLLED-REFINEMENT.md)
 and its linked mathematics/review explain the integration obligation.
 
 Run `python3 check_controlled_refinement.py` here for this extension. Its fresh
@@ -155,7 +155,7 @@ Run `python3 check_protocol_composition.py` here. The fresh Lean 4.29.1 record i
 standard `propext` and/or `Quot.sound`. Seven canonical source modules are frozen
 and compiled without relying on existing compiled caches. This record is
 separate from the earlier 15- and 48-theorem audits. See the
-[canonical account](../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PROTOCOL-COMPOSITION.md)
+[canonical account](../../../../../../theories/becoming/chapters/PROTOCOL-COMPOSITION.md)
 and its linked mathematical companion and separate review for the supplied
 contract, progress limitations and the remaining concrete implementation task.
 
@@ -191,7 +191,7 @@ Run `python3 check_prediction_protocol.py` here. The separate
 results. Nineteen have empty axiom dependencies; the other new declarations use
 only standard `propext` and/or `Quot.sound`. Predecessor audits separately disclose
 `Classical.choice` where present. Source, checker, compiler and toolchain hashes
-are recorded. The [canonical result](../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PREDICTION-PROTOCOL.md)
+are recorded. The [canonical result](../../../../../../theories/becoming/chapters/PREDICTION-PROTOCOL.md)
 links the mathematical specification and separate internal review.
 
 ### Original information and support package

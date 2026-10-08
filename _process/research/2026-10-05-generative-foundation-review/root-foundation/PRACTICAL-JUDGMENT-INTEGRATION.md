@@ -4,7 +4,7 @@
 
 ## 1. Result and governing scope
 
-The [current bilingual theory](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md) supplies a complete explicit-axiom candidate for this practical transition. It adds a defended, limited basic-condition priority, bounded relational responsibility and a decision/allocation commitment to G0 and the existing no-countervailing-loss comparison. It explains preservation, transformation, actual transfer, finite ending, residual responsibility, genuine conflict, uncertainty and faithful revision. It does **not** claim that G0 alone entails those additions.
+The [current bilingual theory](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md) supplies a complete explicit-axiom candidate for this practical transition. It adds a defended, limited basic-condition priority, bounded relational responsibility and a decision/allocation commitment to G0 and the existing no-countervailing-loss comparison. It explains preservation, transformation, actual transfer, finite ending, residual responsibility, genuine conflict, uncertainty and faithful revision. It does **not** claim that G0 alone entails those additions.
 
 The [8 October correction](../../../../sources/15-codex-theory-conversations/2026-10-08-alignment-grounding-axiom-correction.md) authorizes an explicit normative axiom route; proving the first axiom without premises is no longer a completion gate. Additional comparisons and duties must nevertheless be declared and argued for. This study's completion is the requested general practical account under that route, not completion of all independent universal-metaethical, biological, mathematical, governance or implementation goals in the repository.
 

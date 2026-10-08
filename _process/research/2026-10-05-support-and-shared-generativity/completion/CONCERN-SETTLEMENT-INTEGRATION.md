@@ -8,7 +8,7 @@
 
 Also accept the finite feature-construction result and the conditional finite decision theorems. The positive ethical kernel is a defended philosophical contribution, with conclusions conditional on its grounds; it is not a consequence of physical persistence. The empirical audit is a reanalysis and preservation check of earlier observations. The human study is **draft, unrun, and unregistered**, with no new observations.
 
-Promote the completed source milestone, not the whole positive goal. The contribution does not close the physical realization, capability comparison, dynamical arrival, stochastic direction, or population-coverage obligations in the [formal specification](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-SPECIFICATION.md) and [completion plan](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COMPLETION-PLAN.md). Ren's descriptive question about shared generative direction and 善 remains open at those interfaces.
+Promote the completed source milestone, not the whole positive goal. The contribution does not close the physical realization, capability comparison, dynamical arrival, stochastic direction, or population-coverage obligations in the [formal specification](../../../../theories/becoming/chapters/FORMAL-SPECIFICATION.md) and [completion plan](../../../../theories/becoming/chapters/COMPLETION-PLAN.md). Ren's descriptive question about shared generative direction and 善 remains open at those interfaces.
 
 ## Frozen source and reading scope
 
@@ -20,7 +20,7 @@ Read in full: repository `AGENTS.md`, `README.md`, `RESEARCH.md`, `_process/BRIE
 
 | Main source read | SHA-256 |
 |---|---|
-| [Settlement chapter](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md) | `7908cb846110d265eb7b6c741f7da60b48e93891da6462b18304f4a7ee8c45a0` |
+| [Settlement chapter](../../../../theories/becoming/chapters/REVISABLE-CONCERN-SETTLEMENT.md) | `7908cb846110d265eb7b6c741f7da60b48e93891da6462b18304f4a7ee8c45a0` |
 | [Study README](../../2026-10-05-revisable-concern/settlement/README.md) | `f6c33483c2440ce14bee2c0241a1ca8c4d0636a7d74ad1d216a1beb252779e6a` |
 | [Settlement protocol](../../2026-10-05-revisable-concern/settlement/PROTOCOL.md) | `a6fd08337e2de8b0711d44420a5b0ced3a0f5106f547ed4f9865baf1fb80a7c6` |
 | [Formal report](../../2026-10-05-revisable-concern/settlement/formal/REPORT.md) | `3f2256fa7570d3d3892a9817e21c5990dbbcb53ab972526a5f57443459154a77` |

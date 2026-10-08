@@ -1,6 +1,6 @@
 # Adversarial review of the unified formal core
 
-5 October 2026. Reviewed `/Users/ren/theories/theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md` after its twelve proofs were written. Read-only review of the canonical file; no canonical edits or commits. This supplements `work/math-synthesis.md` and the independent finite checks in `work/math-review/`.
+5 October 2026. Reviewed `/Users/ren/theories/theories/becoming/chapters/FORMAL-CORE.md` after its twelve proofs were written. Read-only review of the canonical file; no canonical edits or commits. This supplements `work/math-synthesis.md` and the independent finite checks in `work/math-review/`.
 
 ## Determination
 

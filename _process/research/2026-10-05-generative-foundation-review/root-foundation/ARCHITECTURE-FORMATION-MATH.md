@@ -1,14 +1,14 @@
 # How local construction and reuse change the architectures that form
 
 6 October 2026. AI-authored conditional development under the
-[generative foundation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md).
+[generative foundation](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md).
 The named connection is **formed, learned machinery → local construction of a
 new action-routing graph → actual use and retention → paid changes to reusable
 construction guides → another locally constructed graph**. The
 [executable record](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/coupling/architecture/README.md)
 contains the frozen protocol, results, complete witness and independent checks.
 
-The preceding [generative development](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-DEVELOPMENT.md)
+The preceding [generative development](../../../../theories/becoming/chapters/GENERATIVE-DEVELOPMENT.md)
 implemented recipient-directed activity through a supplied target programme.
 Comparing shared and gated finished programmes did not explain their
 availability. The present law replaces that particular supplied whole with
@@ -56,7 +56,7 @@ The new phase retains q and uses it for both explicitly distinguished targets.
 It supplies target addressing, cue acquisition, compatible actuator calibration
 in the primary law and finite read-only maintenance. It does not acquire a
 recipient-specific record or compose the separate
-[recipient-correction process](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CORRECTION.md).
+[recipient-correction process](../../../../theories/becoming/chapters/RECIPIENT-CORRECTION.md).
 A supplied request/cue appears at every opportunity; no resource-deficit
 threshold or ethical reason is inferred from its presence.
 

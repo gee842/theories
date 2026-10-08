@@ -1,6 +1,6 @@
 # Formed evaluative influence and independently justified repair
 
-6 October 2026. AI-authored source/inference assessment for [the connected argument](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-GROUNDING.md). **Accepted at the conditional scope below by [separate internal review](EVALUATIVE-GROUNDING-REVIEW.md).** This study reuses accepted results; it reports no new compiler build, simulation, empirical analysis or proof of ethical truth.
+6 October 2026. AI-authored source/inference assessment for [the connected argument](../../../../theories/becoming/chapters/EVALUATIVE-GROUNDING.md). **Accepted at the conditional scope below by [separate internal review](EVALUATIVE-GROUNDING-REVIEW.md).** This study reuses accepted results; it reports no new compiler build, simulation, empirical analysis or proof of ethical truth.
 
 ## The exact advance
 
@@ -12,12 +12,12 @@ This is an inference across existing accepted results. The inferential novelty i
 
 | Source | What it supplies | What it does not supply |
 |---|---|---|
-| [ETHICAL-FOUNDATION](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md), positive bridge and N1–N4 | Patient-relative grounds, relevant consistency, answerability and implementation premises; trace displaced burdens and preserve unresolved claims | The truth of every proposed entitlement, a universal restitution priority or a complete interpersonally comparable utility |
-| [HUIGEN](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md), experiential grounds | Patient burden, actor relevance and appropriate dependency-sensitive correction are distinct; concern need not require private benefit | Moral truth from conditioning or proof that every adequate worldview accepts the proposed root |
+| [ETHICAL-FOUNDATION](../../../../theories/becoming/chapters/ETHICAL-FOUNDATION.md), positive bridge and N1–N4 | Patient-relative grounds, relevant consistency, answerability and implementation premises; trace displaced burdens and preserve unresolved claims | The truth of every proposed entitlement, a universal restitution priority or a complete interpersonally comparable utility |
+| [HUIGEN](../../../../theories/becoming/chapters/HUIGEN.md), experiential grounds | Patient burden, actor relevance and appropriate dependency-sensitive correction are distinct; concern need not require private benefit | Moral truth from conditioning or proof that every adequate worldview accepts the proposed root |
 | [Application mathematics §11](EVALUATIVE-APPLICATION-MATH.md#11-conditional-synthesis-warranted-choice-and-bounded-practical-wisdom) | Independently derived recommendation plus sound acquired means, actual mediation and paid execution gives warranted choice at the declared scope | A reason profile obtained by reading the policy's output, or empirical verification of supplied meanings |
 | [Plasticity scope review](EVALUATIVE-PLASTICITY-FORMAL-SCOPE-REVIEW.md) and [contribution audit](EVALUATIVE-PLASTICITY-CONTRIBUTION.md) | Sixty new Lean audits; 553 inherited audits; full finite numerical reconstruction and fourteen selected correspondences; actual operative formation and paid use | Full stochastic refinement, patient-good interpretation, moral authority, reliable moral learning or selection of the active recipe because it is helpful |
 | [Application-evidence mathematics](APPLICATION-EVIDENCE-MATH.md) | Actual prior delivery and a conditional obstruction to a pending old one-service entrance | Exclusion of all later, independently grounded repair claims or a fulfillment-sensitive policy |
-| [Institutional application](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md) and [notice evidence](../foundation-assessment/GOVERNANCE-NOTICE-EVIDENCE.md) | Specified affected people, institutional role, differentiated remedies and bounded implementation evidence | A real-world realization of the signed-link learner or a complete recipient-level benefit ledger |
+| [Institutional application](../../../../theories/becoming/chapters/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md) and [notice evidence](../foundation-assessment/GOVERNANCE-NOTICE-EVIDENCE.md) | Specified affected people, institutional role, differentiated remedies and bounded implementation evidence | A real-world realization of the signed-link learner or a complete recipient-level benefit ledger |
 
 ## Exact inherited formal statements used
 

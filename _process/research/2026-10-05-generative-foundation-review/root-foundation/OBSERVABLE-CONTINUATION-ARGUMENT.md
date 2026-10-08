@@ -1,6 +1,6 @@
 # 从保护事件到能够执行的接续
 
-2026-10-08。AI 撰写，沿 Ren 授权的 G0/J 路线与[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)。本轮连接已明确的维护任务与实际可执行的有限策略，不新增伦理公理。具体数学与实查状态见[证明记录](OBSERVABLE-CONTINUATION-PROOF.md)，范围核验见[独立反审](OBSERVABLE-CONTINUATION-REVIEW.md)；不把以下对应说明当作现实设备已获验证。
+2026-10-08。AI 撰写，沿 Ren 授权的 G0/J 路线与[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)。本轮连接已明确的维护任务与实际可执行的有限策略，不新增伦理公理。具体数学与实查状态见[证明记录](OBSERVABLE-CONTINUATION-PROOF.md)，范围核验见[独立反审](OBSERVABLE-CONTINUATION-REVIEW.md)；不把以下对应说明当作现实设备已获验证。
 
 **肯定推进：任务所要求的保护，不必通过提前知道哪个未来会成功来实现。它可以由及时读到的当前支承区别引导实际回应，也可以由有资源支持的共同回应实现。** 关键是把读数、分支、实施、费用与原任务放在同一个执行过程里，不能只把两张成功事件表取并集。
 

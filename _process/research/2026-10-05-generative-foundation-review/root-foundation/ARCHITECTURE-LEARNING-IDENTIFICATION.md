@@ -1,6 +1,6 @@
 # Identifying recipient learning through a formed architecture
 
-6 October 2026. AI-authored interface and identification contract for **locally formed target routing → paid recipient-specific evidence → corrected action and further paid use**. This follows [architecture formation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ARCHITECTURE-FORMATION.md) and works toward an actual composition with the functional interface established by [recipient correction](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CORRECTION.md). **Status: prospective contract; new execution and its independent review have their own evidence records.** No new biological evidence or empirical result is asserted here.
+6 October 2026. AI-authored interface and identification contract for **locally formed target routing → paid recipient-specific evidence → corrected action and further paid use**. This follows [architecture formation](../../../../theories/becoming/chapters/ARCHITECTURE-FORMATION.md) and works toward an actual composition with the functional interface established by [recipient correction](../../../../theories/becoming/chapters/RECIPIENT-CORRECTION.md). **Status: prospective contract; new execution and its independent review have their own evidence records.** No new biological evidence or empirical result is asserted here.
 
 ## What has to cross the boundary
 

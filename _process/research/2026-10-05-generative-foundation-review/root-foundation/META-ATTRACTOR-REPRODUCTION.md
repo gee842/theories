@@ -14,7 +14,7 @@ This contributes an implementation account to generative alignment, not a new no
 
 ## Existing results credited
 
-The [alignment-succession refinement](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md#4-selection-must-fund-actual-succession) already executes correction through funded replacement, carried commands, claims and receipts. The new question concerns the continued operation of the admission and support arrangements that its certificate supplies. It does not reopen that completed refinement or claim the present construction is its implementation.
+The [alignment-succession refinement](../../../../theories/becoming/chapters/ALIGNMENT-THROUGH-CHANGE.md#4-selection-must-fund-actual-succession) already executes correction through funded replacement, carried commands, claims and receipts. The new question concerns the continued operation of the admission and support arrangements that its certificate supplies. It does not reopen that completed refinement or claim the present construction is its implementation.
 
 The [carrier/diagnosis study](META-ATTRACTOR-CARRIER-DIAGNOSIS.md) already has material use, varying yields, executed observation and repair in one history. The [collective-destruction study](COLLECTIVE-DESTRUCTION-INTEGRATION.md) separately analyzes local objective fidelity, shared harm and restraint erosion. This continuation studies reproduction and coupling of enabling roles; it must not claim a full individual-population refinement merely from combining their conclusions in prose.
 

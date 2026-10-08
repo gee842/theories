@@ -10,7 +10,7 @@ from urllib.parse import unquote
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[3]
-THEORY = ROOT / "theories/shengsheng-buxi-generative-existence/unified-2026-10-05"
+THEORY = ROOT / "theories/becoming/chapters"
 PROOFS = ROOT / "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics"
 VERIFY = PROOFS / "developmental-reconstruction-verification"
 SOURCE = ROOT / "sources/evolutionary-selection/evolutionary-organization"

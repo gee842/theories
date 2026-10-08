@@ -1,6 +1,6 @@
 # 非工具性关切的根本推导尝试：C2 消除审计
 
-2026 年 10 月 6 日。AI 撰写。研究连接是**实际患者的坏 → 具有合宜回应能力的独立执行者之理由**。本轮回应 Ren 要求继续尝试没有独立假设的推导。沿用[患者理由接口](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md)、[生成之我研究](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-SELF-AND-ETHICS.md)和 [HUIGEN 理由运输 T3/T5](HUIGEN-REASON-TRANSPORT.md#3-the-noncommunicating-patient-exposes-two-distinct-transport-tasks)，不将已知锚点传播理论改称新的伦理根基。
+2026 年 10 月 6 日。AI 撰写。研究连接是**实际患者的坏 → 具有合宜回应能力的独立执行者之理由**。本轮回应 Ren 要求继续尝试没有独立假设的推导。沿用[患者理由接口](../../../../theories/becoming/chapters/NONINSTRUMENTAL-CONCERN.md)、[生成之我研究](../../../../theories/becoming/chapters/GENERATED-SELF-AND-ETHICS.md)和 [HUIGEN 理由运输 T3/T5](HUIGEN-REASON-TRANSPORT.md#3-the-noncommunicating-patient-exposes-two-distinct-transport-tasks)，不将已知锚点传播理论改称新的伦理根基。
 
 **本轮严格结果：将理由拆成患者事件与执行位置，确实允许准确表述非私人理由；但“每个有机会的事件有一个理由锚”与“固定事件下执行者替换保持理由”合起来恰好等价于原来的普遍 C2。仅做这种分解，独立规范内容没有减少。** 对事件因子分解的进一步审计也显示，它恰好等价于这里的执行者局部性；全零理由同样满足该因子分解。
 

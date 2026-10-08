@@ -1,10 +1,10 @@
 # Integration: a copied learner corrects and transmits
 
-6 October 2026. AI-authored integration for the [governing derivation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md). This closes a finite conditional interface: **actual retained copied machinery → paid evidence and correction in that carrier → productive use → paid inheritance of its corrected record**. The unified foundation remains ongoing.
+6 October 2026. AI-authored integration for the [governing derivation](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md). This closes a finite conditional interface: **actual retained copied machinery → paid evidence and correction in that carrier → productive use → paid inheritance of its corrected record**. The unified foundation remains ongoing.
 
 ## Acceptance and evidence
 
-The [canonical statement](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SUCCESSOR-LEARNING.md) explains the result. The [executable package](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/README.md) uses actual parent route-formation and transmission outputs with unsuccessful ancestry retained. Primary strict success is 1/36 over all histories; the primary faithful admitted endpoint succeeds deterministically under its noiseless conditions.
+The [canonical statement](../../../../theories/becoming/chapters/SUCCESSOR-LEARNING.md) explains the result. The [executable package](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/successor-learning/README.md) uses actual parent route-formation and transmission outputs with unsuccessful ancestry retained. Primary strict success is 1/36 over all histories; the primary faithful admitted endpoint succeeds deterministically under its noiseless conditions.
 
 | Requirement | Accepted evidence | Limit |
 |---|---|---|

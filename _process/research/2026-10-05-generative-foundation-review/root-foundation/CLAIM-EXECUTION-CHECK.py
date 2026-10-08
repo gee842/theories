@@ -44,7 +44,7 @@ def main():
     documents = [
         HERE / "CLAIM-EXECUTION-MATH.md", HERE / "CLAIM-EXECUTION-REVIEW.md",
         PACKAGE / "README.md", PACKAGE / "PROTOCOL.md",
-        REPO / "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS-AND-PAID-ACTION.md",
+        REPO / "theories/becoming/chapters/CLAIMS-AND-PAID-ACTION.md",
     ]
     checked_links = 0
     for path in documents:

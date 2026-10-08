@@ -11,7 +11,7 @@ HERE = Path(__file__).resolve().parent
 REPO = HERE.parents[3]
 PACKAGE = REPO / "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity"
 ANALYSIS = PACKAGE / "analysis"
-THEORY = REPO / "theories/shengsheng-buxi-generative-existence/unified-2026-10-05"
+THEORY = REPO / "theories/becoming/chapters"
 DOCS = [
     HERE / "VARYING-DYNAMICS-INTEGRATION.md",
     HERE / "VARYING-DYNAMICS-MECHANISM.md",
@@ -23,7 +23,7 @@ DOCS = [
 ]
 INDEXES = {
     REPO / "RESEARCH.md": "**Recurrent revision and regulation completed locally,",
-    REPO / "theories/shengsheng-buxi-generative-existence/README.md": "**Recurrent revision and regulation now formalized,",
+    REPO / "theories/becoming/README.md": "**Recurrent revision and regulation now formalized,",
     THEORY / "GENERATIVE-GROUNDING.md": "**Recurrent revision → supported regulation,",
     HERE / "README.md": "**Recurrent dynamics completed locally,",
 }

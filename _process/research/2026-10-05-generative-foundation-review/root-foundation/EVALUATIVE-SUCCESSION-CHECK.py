@@ -8,7 +8,7 @@ import re
 HERE = Path(__file__).resolve().parent
 REPO = next(p for p in HERE.parents if (p / "AGENTS.md").exists())
 STUDY = REPO / "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/succession"
-CANONICAL = REPO / "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-SUCCESSION.md"
+CANONICAL = REPO / "theories/becoming/chapters/EVALUATIVE-SUCCESSION.md"
 OUTPUT = HERE / "EVALUATIVE-SUCCESSION-INTEGRATION.json"
 verified = {}
 

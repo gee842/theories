@@ -2,7 +2,7 @@
 
 This exact finite game tests how a participant's constructed alternative changes an operator's choices, and how the operator can change the participant's future ability to pay for that alternative. Research direction: Yongxu Ren; AI-assisted implementation and analysis, 5 October 2026. The [protocol](PROTOCOL.md) was committed as `1929eb5` before enumeration. Results are authored model cases, not measurements of real institutions.
 
-The [theoretical report](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMATION.md) and [proofs](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMATION-MATH.md) explain the mechanism. Earlier [continuing participation](../continuing-participation/README.md) work already establishes compensation, participation, and dated liquidity distinctions; this study adds actual alternative construction and strategic interference with future operation.
+The [theoretical report](../../theories/becoming/chapters/FORMATION.md) and [proofs](../../theories/becoming/chapters/FORMATION-MATH.md) explain the mechanism. Earlier [continuing participation](../continuing-participation/README.md) work already establishes compensation, participation, and dated liquidity distinctions; this study adds actual alternative construction and strategic interference with future operation.
 
 ## Main result
 

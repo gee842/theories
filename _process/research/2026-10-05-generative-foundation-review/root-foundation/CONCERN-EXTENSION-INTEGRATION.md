@@ -1,17 +1,17 @@
 # 从正面生成到新的关切：论证、反审与形式范围
 
-2026年10月8日，Asia/Bangkok。AI 撰写，依 Ren“[请继续，重心是理论](../../../../sources/15-codex-theory-conversations/2026-10-08-concern-expansion-theory.md)”。当前表述为[关切的形成与新的理由](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONCERN-AND-NEW-REASONS.md)。这次推进理论连接，不增加共同厨房数据或另一个有限应用案例。
+2026年10月8日，Asia/Bangkok。AI 撰写，依 Ren“[请继续，重心是理论](../../../../sources/15-codex-theory-conversations/2026-10-08-concern-expansion-theory.md)”。当前表述为[关切的形成与新的理由](../../../../theories/becoming/chapters/CONCERN-AND-NEW-REASONS.md)。这次推进理论连接，不增加共同厨房数据或另一个有限应用案例。
 
 **本轮推进：复用最新完成的伦理学习候选，在 G0/J 明确公理路线中给出理由内容扩展后的比较传递条件。正面共同形成与稳定方向的概念连接归于已完成成果；本轮独立新增量是其比较接口，以及认识变化、生活变化与规范承诺变化的适用区别。** 新增8项泛型 Lean 定理／9项显式声明审计，全部新依赖表为空；继承30项实践定理／46项审计另列。开放内容形成的完整机制、经验验证、必然向善及独立验收不在此次完成范围内。
 
-**并行成果整合。** 完成稿前核读了新形成的[伦理学习主章](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md)及[整合](ETHICAL-LEARNING-INTEGRATION.md)。它已建立关切、认识、新生活／理由及整个形成过程的相连评价。本轮给予完整信用，不重复认领该概念连接；当前理论页已收紧为它的比较接口：加入有根据的新内容后，哪些旧判断传递、失效或反转。下述正面形成论证用于连接与前提说明，独立新增量是该接口及其范围辨明。该整合保留对方主章字节和完成状态。
+**并行成果整合。** 完成稿前核读了新形成的[伦理学习主章](../../../../theories/becoming/chapters/ETHICAL-LEARNING.md)及[整合](ETHICAL-LEARNING-INTEGRATION.md)。它已建立关切、认识、新生活／理由及整个形成过程的相连评价。本轮给予完整信用，不重复认领该概念连接；当前理论页已收紧为它的比较接口：加入有根据的新内容后，哪些旧判断传递、失效或反转。下述正面形成论证用于连接与前提说明，独立新增量是该接口及其范围辨明。该整合保留对方主章字节和完成状态。
 
 ## 1. 不重开已完成连接
 
 | 已有成果 | 本轮直接复用什么 | 本轮新增的连接 |
 |---|---|---|
-| [伦理学习](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md) | 已有理由的认识、新生活与理由的形成、规范承诺修订及形成过程的评价。 | 新内容进入后，比较的确切传递、不可比和反转条件；不重做概念连接。 |
-| [一般实践判断](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md) | G0/J/E、包含式比较、基本保护、有限承担与结束。 | 比较中的有意义内容扩大时，原判断何时传递、何时必须改变。 |
+| [伦理学习](../../../../theories/becoming/chapters/ETHICAL-LEARNING.md) | 已有理由的认识、新生活与理由的形成、规范承诺修订及形成过程的评价。 | 新内容进入后，比较的确切传递、不可比和反转条件；不重做概念连接。 |
+| [一般实践判断](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md) | G0/J/E、包含式比较、基本保护、有限承担与结束。 | 比较中的有意义内容扩大时，原判断何时传递、何时必须改变。 |
 | [目标形成与修订](GOAL-FORMATION-REVISION-INTEGRATION.md)、[同一历史的接续](GOAL-REVISION-CONTINUATION.md) | 认识后果、改变操作目的、改革选择并实际履行的条件连接。 | 进入这些接口的具体理由不必是预先列尽的，也可能由正面形成而来。 |
 | [模型修订](MODEL-REVISION-INTEGRATION.md) | 从失配构造候选、区别检验、检查共同遗漏、有限返回使用。 | 已有目标并未失配时，仍可能有扩展关切的根据；旧任务成功与评价范围充分不同。 |
 | [共同求知与地位](SHARED-INQUIRY-AND-STANDING.md) | 有根据的纳入、暂存、排除，概念缺口及有限结束。 | 将正面共同形成接到伦理理由和目标发展，不重写其一般认识框架。 |

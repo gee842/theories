@@ -1,6 +1,6 @@
 # Independent review: acquired application-class refinement
 
-6 October 2026. AI-authored prospective criteria before inspection of the new implementation or numerical results. This reviewer has advised the design and ancestry checks; later independent reconstruction is independent code, not independence from that discussion. Follow the [shared nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md).
+6 October 2026. AI-authored prospective criteria before inspection of the new implementation or numerical results. This reviewer has advised the design and ancestry checks; later independent reconstruction is independent code, not independence from that discussion. Follow the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md).
 
 ## Positive claim and honest history
 

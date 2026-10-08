@@ -1,6 +1,6 @@
 # Acquiring the dependency that completed reconstruction leaves
 
-6 October 2026. AI-authored identification interface under the [shared method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Read the [fixed protocol](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/PROTOCOL.md), producer and saved result structure, [mathematical characterization](CONTINUING-DEPENDENCY-MATH.md), and existing record interfaces below. This is source inspection and prospective acceptance criteria, not another numerical verification, implemented learner or empirical study.
+6 October 2026. AI-authored identification interface under the [shared method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Read the [fixed protocol](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/PROTOCOL.md), producer and saved result structure, [mathematical characterization](CONTINUING-DEPENDENCY-MATH.md), and existing record interfaces below. This is source inspection and prospective acceptance criteria, not another numerical verification, implemented learner or empirical study.
 
 ## The identified relation
 

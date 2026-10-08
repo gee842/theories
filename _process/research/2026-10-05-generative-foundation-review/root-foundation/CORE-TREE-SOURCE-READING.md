@@ -1,6 +1,6 @@
 # Core and tree: source reading for the next connection
 
-6 October 2026. AI-authored source reading for Ren's [current continuation instruction](../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-continuation.md). This note identifies an inherited substantive relationship that can guide further work. The project-wide [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) already governs the method; this note does not replace it. No source was edited, experiment rerun or new formal result established.
+6 October 2026. AI-authored source reading for Ren's [current continuation instruction](../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-continuation.md). This note identifies an inherited substantive relationship that can guide further work. The project-wide [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) already governs the method; this note does not replace it. No source was edited, experiment rerun or new formal result established.
 
 ## 1. The relationship already present in Ren's words
 
@@ -92,7 +92,7 @@ These formulations make the return from knowing to consequential participation e
 
 **Named connection: accumulated formation → situated knowing and response → changed conditions of further formation.** This is an AI reconstruction of the sources, not three independent substrates to be assembled. The task is to follow their connection in the same unfolding and assess whether the distinctions faithfully describe it.
 
-The [current root](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md#10-nondual-core-and-derived-positions) already supports histories and changing effective ranges without primitive actor/patient fields. The [acquired-record evidence](ACQUIRED-RECORD-EVIDENCE.md) and [receipt-identification evidence](RECEIPT-IDENTIFICATION-EVIDENCE.md) make narrower contributions: retained operational records can affect later outcomes; an observation may fail to identify its generating condition. Neither supplies a complete developmental history joining formed organization, evidence access, acquired perspective and significance.
+The [current root](../../../../theories/becoming/chapters/DEEPER-GENERATIVE-ROOT.md#10-nondual-core-and-derived-positions) already supports histories and changing effective ranges without primitive actor/patient fields. The [acquired-record evidence](ACQUIRED-RECORD-EVIDENCE.md) and [receipt-identification evidence](RECEIPT-IDENTIFICATION-EVIDENCE.md) make narrower contributions: retained operational records can affect later outcomes; an observation may fail to identify its generating condition. Neither supplies a complete developmental history joining formed organization, evidence access, acquired perspective and significance.
 
 The source-guided continuation should recover the relation those abstractions sample:
 

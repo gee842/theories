@@ -2,7 +2,7 @@
 
 8 October 2026. AI-authored primary-source assessment for [living dependencies, integration §10](LIVING-DEPENDENCY-INTEGRATION.md#10-retained-organization-through-a-changing-living-transition). This round investigates **formed organization and current provision → activity over a physical horizon → the conditions of subsequent activity**. It adds no mathematical theorem, experimental replication or fitted model.
 
-The advance is an experimentally constrained initial-condition comparison and a more precise account of what further formation would have to explain. A productive continuation need not wait for new machinery, and a requirement for changed organization need not arise from destruction of old material. Following the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md), transport, translation, retained material and changed provision name interdependent relationships within the same unfolding. They are not independently existing system and resource domains.
+The advance is an experimentally constrained initial-condition comparison and a more precise account of what further formation would have to explain. A productive continuation need not wait for new machinery, and a requirement for changed organization need not arise from destruction of old material. Following the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md), transport, translation, retained material and changed provision name interdependent relationships within the same unfolding. They are not independently existing system and resource domains.
 
 ## 1. Selected primary evidence
 

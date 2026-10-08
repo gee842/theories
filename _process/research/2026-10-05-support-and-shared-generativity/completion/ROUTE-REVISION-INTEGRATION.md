@@ -1,6 +1,6 @@
 # Integration of paid inherited-route revision
 
-6 October 2026. AI-authored integration under the governing generative-foundation goal. **Accepted after independent internal review.** The study addresses actual retained diagnostic evidence → physical updater replacement → consequence-dependent continuation → inheritance of the changed updater and acquired record. Its [canonical account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LEARNING-ROUTE-REVISION.md), [experiment](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/README.md) and [separate review](ROUTE-REVISION-REVIEW.md) define the scope.
+6 October 2026. AI-authored integration under the governing generative-foundation goal. **Accepted after independent internal review.** The study addresses actual retained diagnostic evidence → physical updater replacement → consequence-dependent continuation → inheritance of the changed updater and acquired record. Its [canonical account](../../../../theories/becoming/chapters/LEARNING-ROUTE-REVISION.md), [experiment](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/route-diagnostics/revision/README.md) and [separate review](ROUTE-REVISION-REVIEW.md) define the scope.
 
 ## Which downstream premise is replaced
 

@@ -38,7 +38,7 @@ After the third round identified warranted inclusion of possibilities and standi
 
 > please continue, see if you can reach the finish line
 
-The wording is exact. This authorizes pursuing that connection and assessing completion of the philosophical account. The resulting [shared-inquiry study](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-INQUIRY-AND-STANDING.md), [connected philosophical proposal](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PHILOSOPHICAL-ACCOUNT.md) and [completion assessment](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-PHILOSOPHY-COMPLETION.md) are AI-authored. Ren's request is not an endorsement of the resulting completion judgment, a new axiom or a declaration that all scientific philosophy requires the whole theory.
+The wording is exact. This authorizes pursuing that connection and assessing completion of the philosophical account. The resulting [shared-inquiry study](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-INQUIRY-AND-STANDING.md), [connected philosophical proposal](../../theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md) and [completion assessment](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-PHILOSOPHY-COMPLETION.md) are AI-authored. Ren's request is not an endorsement of the resulting completion judgment, a new axiom or a declaration that all scientific philosophy requires the whole theory.
 
 ## Frontier direction and active goal
 

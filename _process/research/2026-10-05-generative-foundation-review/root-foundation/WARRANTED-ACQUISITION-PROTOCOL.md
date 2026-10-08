@@ -1,6 +1,6 @@
 # Warranted acquisition: continuation protocol
 
-8 October 2026. AI-authored continuation of Ren's instruction to continue until a substantive wall. This study follows the explicit G0/J route and the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). It does not reopen the axiom-free grounding task or completed conditional interfaces.
+8 October 2026. AI-authored continuation of Ren's instruction to continue until a substantive wall. This study follows the explicit G0/J route and the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). It does not reopen the axiom-free grounding task or completed conditional interfaces.
 
 ## The connection selected after checking existing work
 

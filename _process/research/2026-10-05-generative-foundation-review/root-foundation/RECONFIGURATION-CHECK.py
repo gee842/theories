@@ -59,13 +59,13 @@ def main():
     documents={HERE/name:None for name in ['GENERATIVE-CAPACITY-INTEGRATION.md',
       'GENERATIVE-CAPACITY-ETHICAL-ARGUMENT.md','GENERATIVE-CAPACITY-COMPARATORS.md']}
     documents[PACKAGE/'README.md']=None
-    theory=ROOT/'theories/shengsheng-buxi-generative-existence'
+    theory=ROOT/'theories/becoming'
     for path in [ROOT/'RESEARCH.md',theory/'README.md',
-                 theory/'unified-2026-10-05/GENERATIVE-GROUNDING.md',HERE/'README.md']:
+                 theory/'chapters/GENERATIVE-GROUNDING.md',HERE/'README.md']:
         text=path.read_text()
         documents[path]='\n'.join(p for p in text.split('\n\n') if '重组与建设性结束' in p)
         assert documents[path],path
-    canonical=theory/'unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md'
+    canonical=theory/'chapters/UNIFIED-ETHICAL-GROUNDING.md'
     text=canonical.read_text(); start=text.index('## Reconfiguration and constructive endings')
     end=text.find('\n## ',start+4)
     documents[canonical]=text[start:end if end!=-1 else None]

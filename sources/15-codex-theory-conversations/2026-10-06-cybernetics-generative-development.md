@@ -14,4 +14,4 @@ Recorded 6 October 2026 from the current Codex conversation, “Explore cybernet
 
 The quoted formulation originated in the assistant's explanation and was explicitly accepted by Ren here. It must not be attributed as wording independently originated by Ren. The request authorizes completing the connected development; it is not evidence that the research or the unified foundation was already complete.
 
-The [cybernetics comparison](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CYBERNETICS.md) and [connected generative development](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-DEVELOPMENT.md) are AI-authored research responses. Their proved, computed, philosophical and open claims retain their stated scopes.
+The [cybernetics comparison](../../theories/becoming/chapters/CYBERNETICS.md) and [connected generative development](../../theories/becoming/chapters/GENERATIVE-DEVELOPMENT.md) are AI-authored research responses. Their proved, computed, philosophical and open claims retain their stated scopes.

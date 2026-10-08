@@ -49,7 +49,7 @@ This is a correction to a task interpretation under intervention. It does not in
 
 ## 4. 规范根据、最强对手与所获推进
 
-[J3](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md#4-谁承担什么--allocating-responsibilities)和[上一轮承担论证](CHANCE-ADEQUACY-ARGUMENT.md)已经说明可归责撤去实际替代、仍须履行或正当解除的关系。[有限风险修订](JOINT-RISK-REVISION-INTEGRATION.md#17-a-local-allowance-cannot-renew-itself-by-changing-the-reference)已经拒绝不断换基准自动续发许可；[目的修订](GOAL-REVISION-CONTINUATION.md)已经区分真实损失、取得的信号和目标改变。这些是本轮的根据与先例，不是新成果。
+[J3](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md#4-谁承担什么--allocating-responsibilities)和[上一轮承担论证](CHANCE-ADEQUACY-ARGUMENT.md)已经说明可归责撤去实际替代、仍须履行或正当解除的关系。[有限风险修订](JOINT-RISK-REVISION-INTEGRATION.md#17-a-local-allowance-cannot-renew-itself-by-changing-the-reference)已经拒绝不断换基准自动续发许可；[目的修订](GOAL-REVISION-CONTINUATION.md)已经区分真实损失、取得的信号和目标改变。这些是本轮的根据与先例，不是新成果。
 
 最强对手指出：历史支持未必正当，新的需要与共同条件也可能使原任务应当改变。这一反对保留。这里要求的是**说明任务因为什么改变，并诚实判断实际做到了什么**。失履行不独自决定整个行为不正当；紧急比较可以容许承担某种损失，但“有理由承受未履行”仍不同于“已履行”。也不能把行动使目标减少一概判错：真正完成与疗愈同样会减少未完成要求。
 

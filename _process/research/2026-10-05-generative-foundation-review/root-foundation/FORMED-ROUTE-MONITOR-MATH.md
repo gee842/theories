@@ -4,7 +4,7 @@
 
 ## 1. The actual boundary
 
-The parent is the accepted [successor-learning process](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SUCCESSOR-LEARNING.md), not a newly initialized correct controller. The ordinary stable branch supplies retained TARGET, CLOSED and FROZEN grandchildren with reserve25 in the recipient account, zero carrier cash, and occupied carrier/routing components. Original actor8 and actor15 cases remain distinct. Sources are exhausted. The inherited route and record, older learner, original actor and occupied material must remain in the new state.
+The parent is the accepted [successor-learning process](../../../../theories/becoming/chapters/SUCCESSOR-LEARNING.md), not a newly initialized correct controller. The ordinary stable branch supplies retained TARGET, CLOSED and FROZEN grandchildren with reserve25 in the recipient account, zero carrier cash, and occupied carrier/routing components. Original actor8 and actor15 cases remain distinct. Sources are exhausted. The inherited route and record, older learner, original actor and occupied material must remain in the new state.
 
 The separately labelled prior `clamp_learning` control can supply a retained PRIVATE_ZERO grandchild with recipient reserve15. That is an actual controlled predecessor with a different history and balance; it is not a matched reserve25 ordinary proxy. Its old clamp ends at the boundary, and the monitor observes ordinary learning afterward.
 

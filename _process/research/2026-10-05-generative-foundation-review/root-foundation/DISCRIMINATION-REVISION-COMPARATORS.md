@@ -1,6 +1,6 @@
 # Acquired discrimination and revised inquiry: an adverse empirical comparator
 
-6 October 2026. AI-authored comparison under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Named connection: **consequences acquired within activity → changed distinctions governing subsequent inquiry**. This link-only primary-source reading and methodological comparison was written before the new assay's acceptance; its prospective identification requirements remain below. It is not a source import or empirical validation of that implementation. The subsequent [independent result review](DISCRIMINATION-REVISION-REVIEW.md#independent-result-review) accepts the bounded computational intervention at its stated scope.
+6 October 2026. AI-authored comparison under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Named connection: **consequences acquired within activity → changed distinctions governing subsequent inquiry**. This link-only primary-source reading and methodological comparison was written before the new assay's acceptance; its prospective identification requirements remain below. It is not a source import or empirical validation of that implementation. The subsequent [independent result review](DISCRIMINATION-REVISION-REVIEW.md#independent-result-review) accepts the bounded computational intervention at its stated scope.
 
 ## Primary evidence and its exact scope
 

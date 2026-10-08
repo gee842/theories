@@ -82,4 +82,4 @@ Measure separately persistence, net renewal, distribution of regenerative capaci
 
 This note is AI-authored analysis for Ren's theory development, not Ren's verbatim claims. Primary papers or author/university copies were consulted; the replication's numerical summary is checked against its authors' university research record. Reading was targeted to findings, mechanisms, and relevant methods, not a reconstruction of every supplementary analysis. No empirical result here was reproduced. The five studies provide mechanisms and counterexamples; they do not constitute a representative sample of all evolutionary or institutional history.
 
-Connection target: `/Users/ren/theories/theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md`. This note proposes research boundaries and hypotheses; it does not amend that canonical document.
+Connection target: `/Users/ren/theories/theories/becoming/chapters/THEORY.md`. This note proposes research boundaries and hypotheses; it does not amend that canonical document.

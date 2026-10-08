@@ -3,7 +3,7 @@
 6 October 2026. AI-authored internal review by a collaborating agent distinct
 from the current formal and executable authors. The reviewer authored the
 independent finite checker. This is not external peer review. The full
-[generative-grounding objective](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md)
+[generative-grounding objective](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md)
 and its five completion conditions remain unchanged.
 
 **Status: accepted at the stated conditional formal and finite numerical
@@ -215,7 +215,7 @@ The forged publication is explicitly not claimed to have an authentic history.
 
 ## Exposition, empirical evidence and remaining obligations
 
-Read the [canonical account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-REASON-ACTION.md)
+Read the [canonical account](../../../../theories/becoming/chapters/RECIPIENT-REASON-ACTION.md)
 and [mathematical companion](REASON-ACTION-MATH.md). The inspected drafts retain
 strict-versus-distribution comparisons, real resources, the non-recording
 boundary, post-work settlement and calibration failure. The parallel

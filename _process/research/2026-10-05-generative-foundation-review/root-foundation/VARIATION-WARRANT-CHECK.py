@@ -72,7 +72,7 @@ def main():
     primary_sources = {
         'sources/evolutionary-selection/koza-2011/article.html': '171f97eba43544299ff2f0736f58fabd26a01d1bebbc22fc18300dd7b68cb263',
         'sources/tclab-benchmark/extracted/2_PID/0_initial_PID/0_initial_PID.py': 'feafc3377f48f7550670dd845490dd912f276a028b92182e83cbacd264f3ad2a',
-        'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-INDIVIDUATION.md': '62416ce3c87f922d7b52904aa09777735b7ddb0724a94011f7bf841dc5cfebc7',
+        'theories/becoming/chapters/SYSTEM-INDIVIDUATION.md': '62416ce3c87f922d7b52904aa09777735b7ddb0724a94011f7bf841dc5cfebc7',
     }
     for path, digest in primary_sources.items():
         assert sha(ROOT / path) == digest, ('original evidence or prior account changed', path)

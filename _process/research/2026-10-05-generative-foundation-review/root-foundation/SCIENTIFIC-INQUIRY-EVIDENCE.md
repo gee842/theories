@@ -4,7 +4,7 @@
 
 ## 1. What this comparison can establish
 
-An account of scientific practice must distinguish a method's reproduction, the content of its retained evidence, and its reliability on independently specified questions. The [common premise ledger](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md) already requires this separation. Published metascience can identify parts of that distinction; it cannot establish that every scientific philosophy must accept our complete ontology or that the generative framework is uniquely minimal.
+An account of scientific practice must distinguish a method's reproduction, the content of its retained evidence, and its reliability on independently specified questions. The [common premise ledger](../../../../theories/becoming/chapters/FOUNDATION-PREMISES.md) already requires this separation. Published metascience can identify parts of that distinction; it cannot establish that every scientific philosophy must accept our complete ontology or that the generative framework is uniquely minimal.
 
 The claim tested by the sources is modest: **what gets selected, recorded and transmitted can diverge from what supports accurate inference**. The proposed generative contribution concerns an explicit connection among these mechanisms and their material feasibility. Selection theory, statistics and conventional control remain substantive competing or equivalent explanations.
 
@@ -31,7 +31,7 @@ Open Science Collaboration (2015), [*Estimating the reproducibility of psycholog
 | Inquiry interface | Identified quantities or interventions | Existing local mechanism | Remaining correspondence |
 |---|---|---|---|
 | Evidence selection | Attempted studies, outcomes, publication or retention decisions | [Faithful paid recording](../../2026-10-05-concern-theory/RECORDING-FIDELITY-INTEGRATION.md) retains completed observations; omission changes the stored word | Actual submission, nonpublication and unrecorded outcomes are not fully observed by comparing published papers |
-| Selection over methods | Publication-related reproduction of methodological traits | [Selector revision](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SELECTOR-REVISION.md) and supplied method-selection models | Institutional hiring and transmission laws are empirical inputs; the finite controller is not an identified university |
+| Selection over methods | Publication-related reproduction of methodological traits | [Selector revision](../../../../theories/becoming/chapters/SELECTOR-REVISION.md) and supplied method-selection models | Institutional hiring and transmission laws are empirical inputs; the finite controller is not an identified university |
 | Correction of belief | Fresh measurements, revised estimates, persistent uncertainty | [Evidence conditions](SCIENTIFIC-INQUIRY-CONDITIONS.md) constrain obtainable discrimination | Which channel is calibrated and which historical evidence applies cannot be supplied by increased publication or reserve alone |
 | Correction across successors | Records, target identity, context, executable replay | [Concern/wisdom input contract](CONCERN-WISDOM-INPUTS.md) names paid contextual audit and reason reconstruction | An inherited confidence guarantee must retain sampling and semantic conditions; duplicate transmission is not an independent observation |
 

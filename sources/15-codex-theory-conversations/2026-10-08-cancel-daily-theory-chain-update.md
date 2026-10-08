@@ -12,4 +12,4 @@ This supersedes the daily scheduling selection in the [original index request](2
 
 The app’s automation tool confirmed deletion of “更新中英生成理论链”, former identifier `automation`. The repository’s active instructions, generated reading document and renderer were updated accordingly. Existing theory entries and source-review fingerprints were left unchanged; this task does not claim to have rereviewed concurrent research updates.
 
-See the [current maintenance record](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md#日程已取消--schedule-cancelled) and the [retained document](../../theories/shengsheng-buxi-generative-existence/results/GENERATIVITY-CHAIN.md).
+See the [current maintenance record](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md#日程已取消--schedule-cancelled) and the [retained document](../../theories/becoming/results/GENERATIVITY-CHAIN.md).

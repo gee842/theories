@@ -1,6 +1,6 @@
 # When permission follows a good across persons
 
-6 October 2026. AI-authored supporting argument for the [universal ethical minimum](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md). Named connection: **the goods that justify helping others → justified permission to pursue comparable goods oneself under actual unmet need**. This note tests a particular route to latitude; it does not treat its limitation as a refutation of personal permissions generally.
+6 October 2026. AI-authored supporting argument for the [universal ethical minimum](../../../../theories/becoming/chapters/UNIVERSAL-ETHICAL-MINIMUM.md). Named connection: **the goods that justify helping others → justified permission to pursue comparable goods oneself under actual unmet need**. This note tests a particular route to latitude; it does not treat its limitation as a refutation of personal permissions generally.
 
 ## Primary comparison and access
 

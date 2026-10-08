@@ -1,6 +1,6 @@
 # Forming fabrication capability under one fixed physical law
 
-5 October 2026. AI-assisted mathematical critique and construction, continuing from commit `348d82644a92315a0ea415a9edc44708e27ad516`. The [allocation theorem](ALLOCATION-CONTROL.md) pays for G molecules but compares supplied construction-channel availability. The [completion plan](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COMPLETION-PLAN.md) correctly leaves physical implementation of that difference open.
+5 October 2026. AI-assisted mathematical critique and construction, continuing from commit `348d82644a92315a0ea415a9edc44708e27ad516`. The [allocation theorem](ALLOCATION-CONTROL.md) pays for G molecules but compares supplied construction-channel availability. The [completion plan](../../../../theories/becoming/chapters/COMPLETION-PLAN.md) correctly leaves physical implementation of that difference open.
 
 **Advance.** A material fabricator can replace the free channel switch. The construction below has one generator, two competing fabricator types formed from absence, explicit costs, decay and a paid replacement route. A finite theorem compares their unconditional contributions to a common delivery event. A separate exact frequency calculation shows why that functional advantage need not select the useful fabricator. Neither result completes spontaneous shared generative direction.
 

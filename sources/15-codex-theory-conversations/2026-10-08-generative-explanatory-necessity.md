@@ -16,7 +16,7 @@
 
 Investigate whether generative relations are indispensable to adequate explanation, including substantive alternatives preserving the intended target. Distinguish necessary recoverable content, formation of explanatory practice, explanatory priority and ontological necessity. The first formal study checks finite-history answer adequacy, not all explanation or all reality. Other authorized mathematical and ethical branches retain their scopes.
 
-[当前研究 / Current account](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md) · [论证、反审与核验 / Integration](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md)
+[当前研究 / Current account](../../theories/becoming/chapters/EXPLANATORY-NECESSITY.md) · [论证、反审与核验 / Integration](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md)
 
 ## 持续探索授权 / Continued exploration
 

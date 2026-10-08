@@ -8,7 +8,7 @@ Date: 8 October 2026, Asia/Bangkok. Exact consecutive user messages in the curre
 
 The following interpretation is AI-authored. These messages redirect the ongoing [connectionism comparison](2026-10-08-evolution-connectionism-comparison.md): prioritize theoretical explanation, derivation, explicit premises, recovery of established results and substantive comparison. New measurements and predictive superiority are not prerequisites for completing that theoretical work. Preserve completed empirical studies and their limitations without making their unfinished follow-ups the current task. This instruction neither establishes superiority by declaration nor cancels independently authorized research in other conversations.
 
-The [current formulation](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md#current-theoretical-focus) and [theoretical assessment](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-THEORETICAL-INTEGRATION.md) implement this direction. The earlier six-part completion map remains a record of the broader ambition; its empirical requirements do not govern completion of the newly selected theoretical comparison.
+The [current formulation](../../theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md#current-theoretical-focus) and [theoretical assessment](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-THEORETICAL-INTEGRATION.md) implement this direction. The earlier six-part completion map remains a record of the broader ambition; its empirical requirements do not govern completion of the newly selected theoretical comparison.
 
 ## Continuing the theoretical frontier
 

@@ -1,6 +1,6 @@
 # Paid response formation, support access and retention
 
-6 October 2026. Executable implementation of the [analytical reaction law](../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md), advancing the [first derivation gate](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#first-acceptance-gate). AI-authored research under Ren's direction. The [protocol](PROTOCOL.md) records the comparisons before this implementation was run; the main fixture had already been chosen analytically.
+6 October 2026. Executable implementation of the [analytical reaction law](../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/ENDOGENOUS-REGULATION-MATH.md), advancing the [first derivation gate](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#first-acceptance-gate). AI-authored research under Ren's direction. The [protocol](PROTOCOL.md) records the comparisons before this implementation was run; the main fixture had already been chosen analytically.
 
 The process begins with damaged capture sites, precursor, two usable fuel units, two incident source units and no assembled regulator. Damage catalyzes paid formation. A regulator can repair a capture site at further cost; that site can then obtain fresh fuel, which can pay for copies of the regulator. No analyst's reward enters the law. This is a formation/repair/retention mechanism under supplied chemistry, not origin of the reaction repertoire or a learned selector.
 

@@ -1,7 +1,7 @@
 # Consequences, access and the question that matters
 
 6 October 2026. AI-authored continuation under [Ren's core/tree correction](../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md)
-and the [shared method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md).
+and the [shared method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md).
 Named connection: **actual consequences → acquired qualification of an
 application → selection and use of a relevant inquiry**.
 

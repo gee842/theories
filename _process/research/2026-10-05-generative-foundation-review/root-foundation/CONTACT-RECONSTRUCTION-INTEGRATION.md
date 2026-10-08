@@ -14,7 +14,7 @@ The completed assembly model computed reconstruction, cost and selection from jo
 
 A parental component pool is partitioned. An opportunity survives into a successor only when both its endpoints are transmitted there. Every successor begins with no formed bond. A paid encounter can form a specific bond between its actual components. No parental `linked` flag determines the successor's organization.
 
-Components, contact geometry, available support and the partition are different relations in this same modeled history, following the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Holding some relations fixed does not make them independent substances. Their formation remains an explanatory obligation where the scope includes it.
+Components, contact geometry, available support and the partition are different relations in this same modeled history, following the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Holding some relations fixed does not make them independent substances. Their formation remains an explanatory obligation where the scope includes it.
 
 ## Model and supplied premises
 

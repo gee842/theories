@@ -1,6 +1,6 @@
 # Cognitive possession and relevant error / 认识的持有与相关错误
 
-8 October 2026. AI-authored continuation of the [knowledge investigation](G0-AND-KNOWLEDGE.md#development-of-the-knowledge-track), following its two outstanding requirements. This is a philosophical reconstruction and author-conducted counterreview, not an independent review, new experiment or new mathematical proof. [Current account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/KNOWLEDGE.md) / [primary readings and access limits](KNOWLEDGE-SOURCES.md).
+8 October 2026. AI-authored continuation of the [knowledge investigation](G0-AND-KNOWLEDGE.md#development-of-the-knowledge-track), following its two outstanding requirements. This is a philosophical reconstruction and author-conducted counterreview, not an independent review, new experiment or new mathematical proof. [Current account](../../../../theories/becoming/chapters/KNOWLEDGE.md) / [primary readings and access limits](KNOWLEDGE-SOURCES.md).
 
 ## The explanatory claim
 
@@ -30,7 +30,7 @@ This proposal permits elementary knowing without requiring understanding of its 
 
 ## 2. The inherited construction supplies a causal comparison
 
-The [experimental-access and acquired-applicability account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPERIMENTAL-ACCESS.md) already provides a relevant bounded realization. An acquired sensory model organizes later tests; failed use qualifies its applicability and selects a further encounter while preserving the accurate sensory model. The matched reader-clamp comparison retains evidence and formation costs but repeats the failed route. Thus acquired content's availability to later selection makes a causal difference within that construction. This is stronger evidence of operational uptake than the presence of an accurate record alone.
+The [experimental-access and acquired-applicability account](../../../../theories/becoming/chapters/EXPERIMENTAL-ACCESS.md) already provides a relevant bounded realization. An acquired sensory model organizes later tests; failed use qualifies its applicability and selects a further encounter while preserving the accurate sensory model. The matched reader-clamp comparison retains evidence and formation costs but repeats the failed route. Thus acquired content's availability to later selection makes a causal difference within that construction. This is stronger evidence of operational uptake than the presence of an accurate record alone.
 
 The construction does not settle philosophical possession. Its candidate family, contact laws, selector and interpretation remain disclosed inputs. A misleading receipt can produce false completion. We credit the earlier checks at their original scope and do not call the model conscious, a universal semantic theory, or a fresh empirical discovery. Its contribution is precise: it realizes and tests one of the organizational relationships the candidate explanation requires.
 

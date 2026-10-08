@@ -2,7 +2,7 @@
 
 5 October 2026. The positive ethical premises, the finite procedures, their mathematical properties, and evidence about people have different warrants. This register keeps them separate.
 
-**Later settlement:** the [integrated status ledger](../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md) and [new formal claims](settlement/formal/CLAIMS.md) add a conditional joint revision-and-renewal theorem. The [ethical register](settlement/normative/CLAIMS.md) and [evidence audit](settlement/evidence/report.md) distinguish further reasoned results from remaining empirical obligations. This table preserves the earlier study's scope.
+**Later settlement:** the [integrated status ledger](../../../theories/becoming/chapters/REVISABLE-CONCERN-SETTLEMENT.md) and [new formal claims](settlement/formal/CLAIMS.md) add a conditional joint revision-and-renewal theorem. The [ethical register](settlement/normative/CLAIMS.md) and [evidence audit](settlement/evidence/report.md) distinguish further reasoned results from remaining empirical obligations. This table preserves the earlier study's scope.
 
 | Claim | Status | Boundary and location |
 |---|---|---|

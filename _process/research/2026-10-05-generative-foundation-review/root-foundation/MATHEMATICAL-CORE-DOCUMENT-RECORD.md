@@ -1,6 +1,6 @@
 # Mathematical core exposition and proof correspondence
 
-8 October 2026, Asia/Bangkok. AI-authored record for [Ren's document request](../../../../sources/15-codex-theory-conversations/2026-10-08-mathematical-core-document.md). The current account is [A mathematical core for systems predicates and proofs](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md).
+8 October 2026, Asia/Bangkok. AI-authored record for [Ren's document request](../../../../sources/15-codex-theory-conversations/2026-10-08-mathematical-core-document.md). The current account is [A mathematical core for systems predicates and proofs](../../../../theories/becoming/chapters/MATHEMATICAL-CORE.md).
 
 ## Scope and contribution
 

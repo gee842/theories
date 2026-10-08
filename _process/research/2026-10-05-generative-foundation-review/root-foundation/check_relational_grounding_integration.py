@@ -9,7 +9,7 @@ import re
 ROOT = Path(__file__).resolve().parents[4]
 STUDY = Path(__file__).resolve().parent
 LEAN = ROOT / 'experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity'
-RESULTS = ROOT / 'theories/shengsheng-buxi-generative-existence/results'
+RESULTS = ROOT / 'theories/becoming/results'
 
 
 def module(name, path):

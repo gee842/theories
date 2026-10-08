@@ -35,4 +35,4 @@ The [2 May conversation](../12-claude-ai-chats/2026-05-02_生生不息的出处_
 
 The full universal goal and requirement of checked formal proofs remain. Recording a substantive criterion does not itself prove its universal necessity. Conversely, the criterion must not be weakened into “more possibilities that are already independently judged good,” which would put the intended explanation back into its premises.
 
-See the [current reconstruction](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-DIRECTION-RECONSTRUCTION.md) and [canonical ethical direction](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#shengsheng-as-the-positive-ethical-direction).
+See the [current reconstruction](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-DIRECTION-RECONSTRUCTION.md) and [canonical ethical direction](../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#shengsheng-as-the-positive-ethical-direction).

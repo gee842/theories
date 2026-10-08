@@ -1,6 +1,6 @@
 # Developed association and measured ecological retention
 
-8 October 2026, Asia/Bangkok. AI-authored continuation of [The Theory of Evolution](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md).
+8 October 2026, Asia/Bangkok. AI-authored continuation of [The Theory of Evolution](../../../../theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md).
 
 **A reanalysis of 30 published culture observations supplies a measured constraint on differential continuation. For the day-28 and day-65 snowflake-yeast isolates, the new transfer regimes retained approximately 43% and 49% as many clusters as the old regimes. The day-7 comparison shows no comparable reduction.** This reproduces an existing experimental finding. It advances empirical correspondence for ecological retention; it does not establish a novel biological result, a complete reproductive cycle or comparative superiority of the generative theory.
 

@@ -1,6 +1,6 @@
 # 王阳明整体整合：本轮完成记录
 
-2026年10月7日，Asia/Bangkok。AI 撰写。依据 Ren [「先完成王阳明」](../../../../sources/15-codex-theory-conversations/2026-10-07-wang-yangming-completion.md)，完成[当前主文](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md)的整体重构、原典约束、实质反审与新形式接口。这是明确范围的研究完成记录；更强的[一切智能之普遍元伦理目标](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence)未完成。
+2026年10月7日，Asia/Bangkok。AI 撰写。依据 Ren [「先完成王阳明」](../../../../sources/15-codex-theory-conversations/2026-10-07-wang-yangming-completion.md)，完成[当前主文](../../../../theories/becoming/chapters/WANG-YANGMING.md)的整体重构、原典约束、实质反审与新形式接口。这是明确范围的研究完成记录；更强的[一切智能之普遍元伦理目标](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence)未完成。
 
 ## 1. 完成了什么肯定论证
 

@@ -1,0 +1,996 @@
+{
+  "schema_version": 1,
+  "proof_reuse": [
+    {
+      "id": "P01",
+      "classification": "existing-direct-wrapper",
+      "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean",
+      "canonical_declaration": "Generative.Deeper.same_steps_iff_endpoint_traces",
+      "related_source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean",
+      "related_declaration": "Generative.Model.laws_iff_endpoint_histories",
+      "finding_en": "The public theorem body directly calls the canonical theorem. This is already proof reuse, not an independently repeated proof.",
+      "finding_zh": "公开定理的证明体直接调用原定理，已有形式复用，不计为另一项独立证明。"
+    },
+    {
+      "id": "P02",
+      "classification": "same-current-statement-and-proof-text",
+      "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/GenerativeClosure.lean",
+      "canonical_declaration": "InquiryRoot.derivation_sound",
+      "related_source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/WholeTheoryDischarge.lean",
+      "related_declaration": "InquiryRoot.WholeDischarge.derivation_sound_constructively",
+      "finding_en": "Source inspection finds the same statement over the inherited Derives/Holds and the same current induction body. The second name preserves a historical dependency-reduction step. Count one soundness result; retain both source histories and receipts. This audit does not replace either body or assert a fresh Lean check.",
+      "finding_zh": "相同的既有 Derives/Holds 命题和当前归纳证明体；第二名称保留历史依赖削减步骤。成果只计一个健全性命题，保留两份源码与回执。"
+    },
+    {
+      "id": "P03",
+      "classification": "different-local-semantics",
+      "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean",
+      "canonical_declaration": "Generative.ExplanatoryBranching.same_functional",
+      "related_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean",
+      "related_declaration": "Generative.ExplanatoryJointness.same_target_unique",
+      "finding_en": "Matching headers use different namespace-local Model/Test/Same types. The joint language adds a together constructor and joint realization. Retain as related statements with distinct semantics, not duplicate proofs.",
+      "finding_zh": "同样的声明外形使用不同命名空间的模型与测试；共同语言增加 together 及共同实现，保留为不同语义的关联命题。"
+    }
+  ],
+  "scope_en": "A bounded map of outcomes retrieved from 44 repository chats, with canonical reuse targets for 14 result families. New-result means a reported repository contribution, not independent novelty versus the literature. Discussion-context links locate related existing theory and do not assert that every chat argument was incorporated. This map records a dated checkpoint while active chats continue.",
+  "scope_zh": "对44个仓库会话可检索成果的有限映射，归入14个成果族并指定复用入口。新成果指仓库贡献，不等于文献原创；讨论上下文链接不声称已整合该会话全部论证。活动会话继续推进，本表保留有日期的检查点。",
+  "families": [
+    {
+      "id": "F01",
+      "title_zh": "关系核心与解释充分性",
+      "title_en": "Relational core and explanatory adequacy",
+      "claim_en": "Finite traces, faithful projections and necessary retained distinctions supply the common formal vocabulary.",
+      "hypotheses_en": "A declared process law and interpretation; exact projection assumptions where used.",
+      "canonical_sources": [
+        "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+        "theories/becoming/chapters/MATHEMATICAL-CORE.md",
+        "theories/becoming/chapters/EXPLANATORY-NECESSITY.md"
+      ],
+      "reuse_en": "Reuse the core trace/projection lemmas. Changed support, observational adequacy and ontological necessity remain separately stated claims.",
+      "remaining_en": "A shared representation does not prove every law, unique foundation or wisdom."
+    },
+    {
+      "id": "F02",
+      "title_zh": "共同支持与方案组合",
+      "title_en": "Shared support and plan composition",
+      "claim_en": "Separate feasibility does not establish joint realization; different modules give different sufficient conditions.",
+      "hypotheses_en": "Additive exit obligations in CorrectionDependence; covering and separated exclusive footprints in ExplanatoryFootprints; projection fidelity and recursive joint executability in JointContinuation.",
+      "canonical_sources": [
+        "experiments/market-generativity/meta-attractor/CorrectionDependence.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryFootprints.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-CONTINUATION-INTEGRATION.md"
+      ],
+      "reuse_en": "Use the additive theorem for pooled exit budgets, the footprint theorem for nested exclusive demands, and the plan theorem for observation-dependent continuation. Count the shared obstruction once in synthesis; retain its distinct applications.",
+      "remaining_en": "No adapter between all three representations has been verified by this map."
+    },
+    {
+      "id": "F03",
+      "title_zh": "准备条件与实际推进",
+      "title_en": "Readiness and actual progress",
+      "claim_en": "Formation, occupation and release change readiness; continuing availability does not ensure actual completion.",
+      "hypotheses_en": "Specified atomic operations, guarded changes, retained support and explicit progress assumptions.",
+      "canonical_sources": [
+        "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryChangingSupport.lean",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-CHANGING-SUPPORT-INTEGRATION.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionVersioned.lean",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/VERSIONED-CORRECTION-INTEGRATION.md"
+      ],
+      "reuse_en": "Reuse the safety/progress distinction. Versioned requests add in-flight route identity and queue occupancy, so they are not duplicate support lemmas.",
+      "remaining_en": "Actual scheduling and bounded pending work are separate implementation obligations."
+    },
+    {
+      "id": "F04",
+      "title_zh": "描述与反馈的可靠范围",
+      "title_en": "Description and feedback reliability",
+      "claim_en": "Faithful descriptions, measured timing, changing dependence and tracking connect evidence to effective response.",
+      "hypotheses_en": "Calibrated errors and timing; specified dynamics; actual observation access; contraction and disturbance bounds for convergence.",
+      "canonical_sources": [
+        "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TimedFeedback.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SituatedTracking.lean",
+        "theories/becoming/chapters/RELATIONS-ACROSS-SCALES.md"
+      ],
+      "reuse_en": "Reuse general error bounds when the same correspondence holds. A measured application and a convergence extension are different contributions.",
+      "remaining_en": "Reliable readings, relevance of newly formed relations and justified response limits are not supplied by convergence alone."
+    },
+    {
+      "id": "F05",
+      "title_zh": "可失实证据与实际纠正",
+      "title_en": "Fallible evidence and executable correction",
+      "claim_en": "Evidence acquisition and fault coverage can support actual correction through changing organizations.",
+      "hypotheses_en": "Explicit candidate/fault envelopes, surviving-report fidelity, resources and response access.",
+      "canonical_sources": [
+        "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FallibleInspection.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvidenceQualifiedCorrection.lean",
+        "experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean",
+        "theories/becoming/chapters/ALIGNMENT-THROUGH-CHANGE.md"
+      ],
+      "reuse_en": "Canonical diagnosis target: FallibleInspection; canonical acquired common-cause test: CommonCauseDiscovery. Keep mechanism-specific counterexamples and reuse inherited protocols.",
+      "remaining_en": "Intervention-derived dependence and joint diagnostic envelopes are related but their formal transport is not established here."
+    },
+    {
+      "id": "F06",
+      "title_zh": "选择制度与纠正的代价",
+      "title_en": "Selection regimes and costly correction",
+      "claim_en": "Selection can reproduce constructive or destructive arrangements; funded correction and instrumental commitments have explicit boundaries.",
+      "hypotheses_en": "Supplied selection/response laws; paid and authorized operation; incentive results require valued enforceable stakes and discriminatory inspection.",
+      "canonical_sources": [
+        "experiments/market-generativity/formal/RegimeBoundary.lean",
+        "experiments/market-generativity/meta-attractor/CorrectionDependence.lean",
+        "experiments/market-generativity/meta-attractor/CorrectionCommitment.lean",
+        "theories/meta-attractor/GENERATIVE-REGIMES.md",
+        "theories/meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md"
+      ],
+      "reuse_en": "Keep regime invariance, induced exit dependence and instrumental incentives as distinct results. Shared correction vocabulary is not mathematical equivalence.",
+      "remaining_en": "Formation and continued legitimacy of inspection, custody, authority and concern remain substantive questions."
+    },
+    {
+      "id": "F07",
+      "title_zh": "显式公理下的实践判断",
+      "title_en": "Practical judgment under explicit axioms",
+      "claim_en": "G0 and disclosed comparative commitments support scoped preservation, revision, handoff, ending and responsibility.",
+      "hypotheses_en": "Normative premises G0/J and independently warranted correspondence, feasible alternatives and authority.",
+      "canonical_sources": [
+        "theories/becoming/chapters/PRACTICAL-JUDGMENT.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentDirection.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ChanceAdequacy.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RiskPriority.lean"
+      ],
+      "reuse_en": "Reuse the completed practical framework. Alignment is an application; chance adequacy is a support-to-probability extension; near-parity risk priority adds a disclosed commitment.",
+      "remaining_en": "Do not count applications as repeated foundations or import risk priorities into G0 without their extra premise."
+    },
+    {
+      "id": "F08",
+      "title_zh": "规范根据与独立强目标",
+      "title_en": "Normative warrant and stronger independent goals",
+      "claim_en": "The completed explicit-axiom route and stronger zero-axiom or universal-warrant investigations have different completion conditions.",
+      "hypotheses_en": "Constitutive, philosophical and empirical warrant must be distinguished from conditional formal inference.",
+      "canonical_sources": [
+        "theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+        "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md",
+        "theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md"
+      ],
+      "reuse_en": "Route foundations, critiques and applications to their stated targets. Repeated acknowledgements of an open premise are not new impossibility proofs.",
+      "remaining_en": "Universal practical authority, root-of-wisdom necessity and exclusive foundational necessity remain distinct unproved goals."
+    },
+    {
+      "id": "F09",
+      "title_zh": "关切与认识的形成",
+      "title_en": "Formation of concern and cognition",
+      "claim_en": "Acquired distinctions and concern can influence later activity; epistemic and ethical adequacy require separate warrant.",
+      "hypotheses_en": "Specified learning/interpretation mechanisms; development and selection conditions; G0/J for normative applications.",
+      "canonical_sources": [
+        "theories/becoming/chapters/ETHICAL-LEARNING.md",
+        "theories/becoming/chapters/CONCERN-AND-NEW-REASONS.md",
+        "theories/becoming/chapters/COGNITION-LEARNING-AND-EVOLUTION.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalAcquisition.lean"
+      ],
+      "reuse_en": "Reuse earlier evaluative succession and practical principles. Acquiring compositions, expanding concern and surrendering authority are not identical proofs.",
+      "remaining_en": "Formation of compositional organization and reliable concern under changed control are separate bridges."
+    },
+    {
+      "id": "F10",
+      "title_zh": "演化组织与发展校准",
+      "title_en": "Evolutionary organization and developmental calibration",
+      "claim_en": "Growth, transmission, reconstruction and calibration have connected conditional constructions.",
+      "hypotheses_en": "Supplied local growth, fragmentation, maturation and observation laws; specified reference access and support.",
+      "canonical_sources": [
+        "theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md",
+        "theories/becoming/chapters/EVOLUTIONARY-ORGANIZATION.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/GrownFragmentation.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/CalibrationRenewal.lean"
+      ],
+      "reuse_en": "Treat biological organization and developmental reference renewal as complementary branches. Reuse imported maturation/reconstruction results rather than adding their audit counts again.",
+      "remaining_en": "A common vocabulary of renewal does not identify their state spaces or establish long-run reproduction and empirical superiority."
+    },
+    {
+      "id": "F11",
+      "title_zh": "数学解释与生成逻辑",
+      "title_en": "Mathematical interpretation and generated logic",
+      "claim_en": "Finite-basis joint interpretation, potentialist truth and resource-sensitive rules have separate scope conditions.",
+      "hypotheses_en": "Declared logical background, admissible interpretations, stable meaning/access, and operational standards.",
+      "canonical_sources": [
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/JointInterpretation.lean",
+        "theories/becoming/chapters/GENERATED-LOGIC.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ReflectiveIdentity.lean",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-INTEGRATION.md"
+      ],
+      "reuse_en": "Reuse logical composition only at matching interpretation and standards. Shared 'identity' terminology does not equate operational warrant with Lean equality.",
+      "remaining_en": "These results do not derive the metalogic or actual universal admission from no premises."
+    },
+    {
+      "id": "F12",
+      "title_zh": "经典思想与关系重构",
+      "title_en": "Classical comparison and relational reconstruction",
+      "claim_en": "Dao, reciprocity, Liangzhi and religious comparisons provide conceptual tests and bounded applications.",
+      "hypotheses_en": "Original textual contexts and explicit correspondence; actual support succession does not itself establish ethical validity.",
+      "canonical_sources": [
+        "theories/becoming/chapters/COGNITION-LI-AND-RECIPROCITY.md",
+        "theories/becoming/chapters/DAO-AND-GENERATIVITY.md",
+        "theories/becoming/chapters/WANG-YANGMING.md",
+        "theories/becoming/chapters/LIANGZHI-EVOLUTION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md"
+      ],
+      "reuse_en": "Reuse the established nondual method and handoff results; count a source comparison as an argument, not an additional formal theorem.",
+      "remaining_en": "The broad religious-comparison discussion is preserved in the chat snapshot; a dedicated integrated survey is not established by its contextual links."
+    },
+    {
+      "id": "F13",
+      "title_zh": "有条件基础的完成与验收",
+      "title_en": "Completion and review of the conditional foundation",
+      "claim_en": "Several chats reviewed and accepted the same five-condition completion result.",
+      "hypotheses_en": "Original conditional finish line, source bindings and accepted composition scope; stronger goals remain separate.",
+      "canonical_sources": [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-ROOT-ACCEPTANCE.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/REPOSITORY-INTEGRATION-AUDIT.md"
+      ],
+      "reuse_en": "One completion result with multiple reviews. Do not count each accepting chat or replayed import closure as a fresh proof.",
+      "remaining_en": "Historical next steps must be read with later scoped completions."
+    },
+    {
+      "id": "F14",
+      "title_zh": "目录保存与研究传播",
+      "title_en": "Catalogue preservation and research communication",
+      "claim_en": "Catalogues, handoffs, pushes and presentation exports preserve or communicate results.",
+      "hypotheses_en": "Documentary correctness and source provenance; historical validation scope remains unchanged.",
+      "canonical_sources": [
+        "theories/becoming/results/README.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESULTS-CATALOGUE-RECORD.md",
+        "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/START-HERE.md"
+      ],
+      "reuse_en": "Classify navigation, reviews and releases separately from discoveries. V7.3 historical mathematics retains its original checks until explicitly migrated.",
+      "remaining_en": "A saved or published result is not automatically conceptually composed with every later branch."
+    }
+  ],
+  "sessions": [
+    {
+      "thread_id": "01a10de8-0f08-7e02-92b6-ff86b0ca165d",
+      "title": "阐释道与道德的关系",
+      "family": "F12",
+      "classification": [
+        "application",
+        "reuse"
+      ],
+      "outcome_en": "Reciprocity and cognition within the shared nondual method.",
+      "outcome_zh": "认知与恕的条件应用；复用非二元方法。",
+      "primary_source": "theories/becoming/chapters/COGNITION-LI-AND-RECIPROCITY.md",
+      "integration": "canonical",
+      "evidence_message_ids": [
+        "msg_08c5bd8bbe9da710016ac493725fdc87d0a9fdf45c0219a79b",
+        "msg_08c5bd8bbe9da710016ac421db728087d0ba5f73e119ba1afb"
+      ]
+    },
+    {
+      "thread_id": "01a11aaf-1f8e-76f3-931a-59163475e73d",
+      "title": "Analyze destructive multi-agent bas",
+      "family": "F06",
+      "classification": [
+        "extension",
+        "counterexample"
+      ],
+      "outcome_en": "Posted commitments make costly correction optimal under explicit incentive and custody premises.",
+      "outcome_zh": "可兑现担保下的有代价纠正与联盟失败界限。",
+      "primary_source": "theories/meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md",
+      "integration": "canonical",
+      "evidence_message_ids": [
+        "msg_00704e2722ab173a016ac78309eb688191ad72c0bfb5c5e7ba"
+      ]
+    },
+    {
+      "thread_id": "01a11b38-f152-7231-a533-a7a40f69e2b5",
+      "title": "Assess higher-order generative model",
+      "family": "F09",
+      "classification": [
+        "new-result",
+        "counterexample"
+      ],
+      "outcome_en": "Acquired knowledge supports unseen combinations in a supplied grammar.",
+      "outcome_zh": "取得知识支持给定语法中的新组合。",
+      "primary_source": "theories/becoming/chapters/COGNITION-LEARNING-AND-EVOLUTION.md",
+      "integration": "canonical",
+      "evidence_message_ids": [
+        "msg_03e5dc7a24d592b0016ac7832976cc8191bb8419ad6c4031b5"
+      ]
+    },
+    {
+      "thread_id": "01a117e2-be46-7f11-92db-91236ec945d9",
+      "title": "Check coverage of system theories (3)",
+      "family": "F02",
+      "classification": [
+        "extension",
+        "counterexample"
+      ],
+      "outcome_en": "Observation-dependent local plans compose under projection fidelity and joint executability.",
+      "outcome_zh": "观察分支方案在忠实投影和共同可实施条件下组合。",
+      "primary_source": "theories/becoming/chapters/RELATIONS-ACROSS-SCALES.md",
+      "integration": "canonical",
+      "evidence_message_ids": [
+        "msg_0fb734d219492f23016ac782cb586887d0aa6cf560c8e72c38"
+      ]
+    },
+    {
+      "thread_id": "01a117d0-af28-7e61-9fe4-ffd50b8093a0",
+      "title": "Check coverage of system theories (2)",
+      "family": "F04",
+      "classification": [
+        "extension",
+        "application"
+      ],
+      "outcome_en": "Disturbance bounds connect tracking to finite-stage decision evidence.",
+      "outcome_zh": "扰动界将追踪接到有限阶段的决定根据。",
+      "primary_source": "theories/becoming/chapters/GOAL-FORMATION-AND-REVISION.md",
+      "integration": "canonical",
+      "evidence_message_ids": [
+        "msg_0fb734d219492f23016ac7827f612887d08f4663e07517ade6"
+      ]
+    },
+    {
+      "thread_id": "01a10f61-f20e-72c1-9e35-4950dd17f225",
+      "title": "Compare theory with v7.3",
+      "family": "F11",
+      "classification": [
+        "formalization",
+        "reuse"
+      ],
+      "outcome_en": "Lean migration of finite-basis joint interpretation; the earlier hand argument and stronger open grounding retain their scopes.",
+      "outcome_zh": "有限根基共同解释的 Lean 迁移；旧手证和更强根据问题保留范围。",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md",
+      "integration": "canonical",
+      "evidence_message_ids": [
+        "msg_0ce3261352f49ddc016ac7826499e481919988d705ee44faae"
+      ]
+    },
+    {
+      "thread_id": "01a11749-2a4f-73b2-9eb7-80fdee4a37a4",
+      "title": "论证理论对 AI alignment 的必要性",
+      "family": "F06",
+      "classification": [
+        "extension",
+        "counterexample"
+      ],
+      "outcome_en": "Correction margin bounds destructive and protected regimes under the declared market law.",
+      "outcome_zh": "给定市场律下的纠正余量与生成／退化区域。",
+      "primary_source": "theories/becoming/chapters/MARKETS-AND-GENERATIVE-REGIMES.md",
+      "integration": "canonical",
+      "evidence_message_ids": [
+        "msg_04cfe958af7e59b5016ac78227c9b08191be5d2a66860c822a"
+      ]
+    },
+    {
+      "thread_id": "01a115c9-34fb-79b0-98cb-c382cd36d835",
+      "title": "梳理智能体的普遍元伦理",
+      "family": "F07",
+      "classification": [
+        "extension",
+        "counterexample"
+      ],
+      "outcome_en": "Concrete support fulfillment implies a finite weighted protection floor.",
+      "outcome_zh": "实际履行支持接到有限权重模型的保护下界。",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md",
+      "integration": "study-and-canonical",
+      "evidence_message_ids": [
+        "msg_0ceb3f143c675cce016ac7820251e887d09f54281fb4e1f6b7"
+      ]
+    },
+    {
+      "thread_id": "01a11b19-67ae-7cf0-9309-ab49a3c5716f",
+      "title": "论证理论对 AI alignment 的必要性 (2)",
+      "family": "F09",
+      "classification": [
+        "application",
+        "argument"
+      ],
+      "outcome_en": "Existing G0/J reasons extend to relinquishing authority while preserving warranted responsibilities.",
+      "outcome_zh": "已有 G0/J 理由应用于交权与有根据责任的接续。",
+      "primary_source": "theories/becoming/chapters/ETHICAL-LEARNING.md",
+      "integration": "canonical",
+      "evidence_message_ids": [
+        "msg_04cfe958af7e59b5016ac781afcea08191890173f1df26da3d"
+      ]
+    },
+    {
+      "thread_id": "01a10dd2-be93-75a1-902c-814e5cb4dcc4",
+      "title": "Assess theory as scientific",
+      "family": "F08",
+      "classification": [
+        "argument",
+        "open-question"
+      ],
+      "outcome_en": "Flourishing, basic significance and justified continuation are separated; G0 necessity is unproved.",
+      "outcome_zh": "区分繁盛、基本意义与整体判断；G0 必然性未证。",
+      "primary_source": "theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md",
+      "integration": "canonical",
+      "evidence_message_ids": [
+        "msg_02fe9903dab1d0c8016ac7815e6af48191bd99f03d13ca3b85"
+      ]
+    },
+    {
+      "thread_id": "01a11668-f1a7-7ed0-95aa-47b8859b8a88",
+      "title": "整体生成中的情境伦理与深度不确定性",
+      "family": "F07",
+      "classification": [
+        "extension",
+        "counterexample"
+      ],
+      "outcome_en": "Near-parity priority requires an additional disclosed normative commitment.",
+      "outcome_zh": "近乎平等时的优先力度需要新增公开承诺。",
+      "primary_source": "theories/becoming/chapters/CHOICE-AND-GENERATIVE-CONTEXT.md",
+      "integration": "canonical",
+      "evidence_message_ids": [
+        "msg_059ff6a37ef3f607016ac77cac600087d0b287603fde9b3bff"
+      ]
+    },
+    {
+      "thread_id": "01a11a7d-d73a-7800-87eb-0740114331c8",
+      "title": "Integrate meta-attractor into gener",
+      "family": "F05",
+      "classification": [
+        "extension",
+        "counterexample"
+      ],
+      "outcome_en": "Interventions reveal local common support, with an upstream indistinguishability boundary.",
+      "outcome_zh": "干预取得共同支持关系，保留上游不可辨认界限。",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-DISCOVERY.md",
+      "integration": "study-and-canonical",
+      "evidence_message_ids": [
+        "msg_0cdbd9667008906f016ac780cf1ff4819184d3a51a89b0f457"
+      ]
+    },
+    {
+      "thread_id": "01a11b0e-06c9-7402-b9b9-081a6d263df9",
+      "title": "探索 math core 的深层意义",
+      "family": "F08",
+      "classification": [
+        "argument",
+        "open-question"
+      ],
+      "outcome_en": "Restores the root-of-wisdom necessity and formation objective without declaring it proved.",
+      "outcome_zh": "恢复慧根的必要性与生成性目标，未宣告获证。",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+      "integration": "study-and-canonical",
+      "evidence_message_ids": [
+        "msg_07e49c527bb7763f016ac780854828819182f952a5d13d5e75"
+      ]
+    },
+    {
+      "thread_id": "01a11af8-204e-7690-a0c3-dda544e11695",
+      "title": "推进标准逻辑公理推导",
+      "family": "F11",
+      "classification": [
+        "argument",
+        "counterexample"
+      ],
+      "outcome_en": "Operational identity warrants preservation only under matching content and standards.",
+      "outcome_zh": "操作中的同一承接保留内容与认可标准条件。",
+      "primary_source": "theories/becoming/chapters/GENERATED-LOGIC.md",
+      "integration": "canonical",
+      "evidence_message_ids": [
+        "msg_0a708c4fbfbec79f016ac78413c5348191836bb73cbe3b1869"
+      ]
+    },
+    {
+      "thread_id": "01a11a97-5847-7a81-8fbc-93d8ebb32e99",
+      "title": "Identify AI alignment low-hanging फल",
+      "family": "F05",
+      "classification": [
+        "generalization",
+        "counterexample"
+      ],
+      "outcome_en": "Joint fallible inspection replaces a designated infallible inspector under fault coverage.",
+      "outcome_zh": "共同可失实检查在故障覆盖下替代指定无误检查者。",
+      "primary_source": "theories/becoming/chapters/ALIGNMENT-THROUGH-CHANGE.md",
+      "integration": "canonical",
+      "evidence_message_ids": [
+        "msg_01537372d42cc01a016ac77ea79f208191871ba9cfd16eaaef"
+      ]
+    },
+    {
+      "thread_id": "01a117c1-cddf-7da1-8cf6-882071be5340",
+      "title": "The Theory of Evolution",
+      "family": "F10",
+      "classification": [
+        "extension",
+        "counterexample"
+      ],
+      "outcome_en": "Fresh reference contact revises acquired discrimination and restores updating.",
+      "outcome_zh": "新参考接触修订辨别并恢复更新。",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CALIBRATION-RENEWAL.md",
+      "integration": "study-and-canonical",
+      "evidence_message_ids": [
+        "msg_04f208c95b8ab49e016ac77bf8ce1487d0a80b78425b48d34b"
+      ]
+    },
+    {
+      "thread_id": "01a11894-842d-7c90-b2fd-df22ec99e2e8",
+      "title": "The Theory of Evolution (2)",
+      "family": "F10",
+      "classification": [
+        "extension",
+        "counterexample"
+      ],
+      "outcome_en": "Actual growth constrains fragmentation, transmitted composition and preparation returns.",
+      "outcome_zh": "实际生长限制分割、传递组成与准备产出。",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "integration": "study-and-canonical",
+      "evidence_message_ids": [
+        "msg_04f208c95b8ab49e016ac77d19c0a487d09f1580df827c157f",
+        "msg_04f208c95b8ab49e016ac77709020c87d09a934ec20c07eed3"
+      ]
+    },
+    {
+      "thread_id": "01a118a7-e693-75b0-8fde-000c231b412b",
+      "title": "Complete practical judgment (2)",
+      "family": "F03",
+      "classification": [
+        "extension",
+        "counterexample"
+      ],
+      "outcome_en": "Captured routes preserve in-flight requests across updates; queue occupancy can block progress.",
+      "outcome_zh": "保留请求路线支持变化中的纠正；队列占用可阻断推进。",
+      "primary_source": "theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md",
+      "integration": "canonical",
+      "evidence_message_ids": [
+        "msg_074ec044b807145f016ac77a41335081919f6c5ee24d34daa8",
+        "msg_074ec044b807145f016ac773ce9ce08191b72eca3b13e9f582"
+      ]
+    },
+    {
+      "thread_id": "01a1180f-76e7-7472-bdba-29a860745b0a",
+      "title": "探索 math core 中的结构",
+      "family": "F03",
+      "classification": [
+        "extension",
+        "counterexample"
+      ],
+      "outcome_en": "Changing support preserves or restores readiness without guaranteeing actual completion.",
+      "outcome_zh": "变化支持保持或恢复准备，却不保证实际完成。",
+      "primary_source": "theories/becoming/chapters/EXPLANATORY-NECESSITY.md",
+      "integration": "canonical",
+      "evidence_message_ids": [
+        "msg_0af3eedf9fb9ce55016ac768db55bc8191b424733c7ae909d8",
+        "msg_0af3eedf9fb9ce55016ac75e14b91c81919bb3f10a58b6c214"
+      ]
+    },
+    {
+      "thread_id": "01a117bf-017a-7770-8114-8f3c239f0eb7",
+      "title": "Complete practical judgment",
+      "family": "F08",
+      "classification": [
+        "argument",
+        "open-question"
+      ],
+      "outcome_en": "Direct audit isolates still-unproved universal practical authority.",
+      "outcome_zh": "直接审计定位仍未证的普遍实践权威。",
+      "primary_source": "theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "integration": "canonical",
+      "evidence_message_ids": [
+        "msg_074ec044b807145f016ac6d2bb1a9c8191bc3064ffb893490a",
+        "msg_074ec044b807145f016ac6ceba95548191a8d99f3246cd3690"
+      ]
+    },
+    {
+      "thread_id": "01a117c9-467e-7462-9d3e-7577c1fa60c4",
+      "title": "Check coverage of system theories",
+      "family": "F04",
+      "classification": [
+        "application",
+        "extension"
+      ],
+      "outcome_en": "Measured execution timing connects existing bounds to published controller runs.",
+      "outcome_zh": "实测执行时序把已有误差界接到控制记录。",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/TIMED-FEEDBACK-INTEGRATION.md",
+      "integration": "study-and-canonical",
+      "evidence_message_ids": [
+        "msg_0fb734d219492f23016ac6c8fb6ed487d0b0594a195ba9c8f0",
+        "msg_0fb734d219492f23016ac6c2e08f0087d0a7bfd1d833965380"
+      ]
+    },
+    {
+      "thread_id": "01a115d3-2b4b-7122-85d7-f89324fcaace",
+      "title": "Merge remaining research branches",
+      "family": "F01",
+      "classification": [
+        "synthesis",
+        "extension"
+      ],
+      "outcome_en": "Living dependencies connect maintenance, retention, recovery and changing common provision.",
+      "outcome_zh": "生命依存接通维护、保留、恢复与变化的共同供给。",
+      "primary_source": "theories/becoming/chapters/LIVING-DEPENDENCIES.md",
+      "integration": "canonical",
+      "evidence_message_ids": [
+        "msg_0241a97ae1db1140016ac6ac182ec087d0be8b8fce491a3646",
+        "msg_0241a97ae1db1140016ac6a5794a7487d08b13b2e065d2622b"
+      ]
+    },
+    {
+      "thread_id": "01a117b5-a90f-72e2-9066-258bcb146d39",
+      "title": "梳理生成模型与宗教智慧",
+      "family": "F12",
+      "classification": [
+        "comparison",
+        "open-question"
+      ],
+      "outcome_en": "Religious and philosophical traditions are organized as proposed comparative studies.",
+      "outcome_zh": "宗教与哲学传统比较议程；尚无独立整合综述。",
+      "primary_source": "theories/becoming/chapters/WANG-YANGMING.md",
+      "integration": "discussion-context-only",
+      "evidence_message_ids": [
+        "msg_00fab280df5a8e04016ac69768221887d0b4cb32f7fa3029cd",
+        "msg_00fab280df5a8e04016ac6967da26487d0b7ff060513faf7a9"
+      ]
+    },
+    {
+      "thread_id": "01a11738-1451-77f3-9c7a-1a955ab44f1e",
+      "title": "判断生生与退化的完整理论",
+      "family": "F14",
+      "classification": [
+        "preservation"
+      ],
+      "outcome_en": "Push and schedule-removal outcome preserves earlier work; not a new proof.",
+      "outcome_zh": "推送及取消日程的保存结果，不是新证明。",
+      "primary_source": "sources/15-codex-theory-conversations/2026-10-08-cancel-daily-theory-chain-update.md",
+      "integration": "preservation",
+      "evidence_message_ids": [
+        "msg_025f6decd71f7838016ac697a1e75c87d08a8866d2e12e3d46",
+        "msg_025f6decd71f7838016ac696537e8c87d0b8dbd8725e81ef79"
+      ]
+    },
+    {
+      "thread_id": "01a11733-fd26-72f1-a12e-4b8d7b9f040b",
+      "title": "整理理论论证与进度文档",
+      "family": "F14",
+      "classification": [
+        "synthesis",
+        "preservation"
+      ],
+      "outcome_en": "Bilingual results catalogue and README release.",
+      "outcome_zh": "双语成果目录和首页发布。",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RESULTS-CATALOGUE-RECORD.md",
+      "integration": "preservation",
+      "evidence_message_ids": [
+        "msg_0f45dbd6928bbe92016ac696dba1648191932b11c66beca2e5",
+        "msg_0f45dbd6928bbe92016ac69311f8b881919ada25122cc990b6"
+      ]
+    },
+    {
+      "thread_id": "01a10e0e-9c7b-7712-8c76-2adf1e7ccb72",
+      "title": "Explore theory and mathematics",
+      "family": "F11",
+      "classification": [
+        "extension",
+        "counterexample"
+      ],
+      "outcome_en": "Potentialist first-order interpretation preserves truth with stable meaning and continued access.",
+      "outcome_zh": "稳定意义和持续可达下的潜在主义一阶真理保持。",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ROOT-MATHEMATICAL-POTENTIAL-INTEGRATION.md",
+      "integration": "study-and-canonical",
+      "evidence_message_ids": [
+        "msg_0eae0a898da9f288016ac695b9dcf487d09eda38efd1f47ea5",
+        "msg_0eae0a898da9f288016ac67b5d8d0487d08208977e4eeb2507"
+      ]
+    },
+    {
+      "thread_id": "01a1173f-365a-7d03-a754-4f30e25a9725",
+      "title": "比较理论与道及情境性",
+      "family": "F12",
+      "classification": [
+        "argument"
+      ],
+      "outcome_en": "Situated responses are discussed as differentiations of a shared generative ground.",
+      "outcome_zh": "共同生成根据中的情境回应讨论。",
+      "primary_source": "theories/becoming/chapters/DAO-AND-GENERATIVITY.md",
+      "integration": "discussion-context-only",
+      "evidence_message_ids": [
+        "msg_0e1df0c3fc03e75c016ac67746a38087d0aa93065c90e6d8c9",
+        "msg_0e1df0c3fc03e75c016ac676fab24887d0afe381a70d23b368"
+      ]
+    },
+    {
+      "thread_id": "01a11662-3be0-7130-aefc-0ab40770b007",
+      "title": "Explore generativity and continuity",
+      "family": "F08",
+      "classification": [
+        "review",
+        "open-question"
+      ],
+      "outcome_en": "Corrects the claim that a short frontier list exhausts possible research.",
+      "outcome_zh": "纠正有限前沿清单穷尽全部研究的误述。",
+      "primary_source": "theories/becoming/chapters/GENERATIVE-GROUNDING.md",
+      "integration": "discussion-context-only",
+      "evidence_message_ids": [
+        "msg_0b63de2d096fc595016ac67370a6fc87d0a8fcd62b6c822b34",
+        "msg_0b63de2d096fc595016ac6732c3c2887d091944fd6e3dce126"
+      ]
+    },
+    {
+      "thread_id": "01a10f69-8fa8-7860-9ab8-a13f030ba4ff",
+      "title": "比较并整合王阳明理论",
+      "family": "F12",
+      "classification": [
+        "argument",
+        "application"
+      ],
+      "outcome_en": "Human continuation makes the generative relations concrete without proving universal ethical warrant.",
+      "outcome_zh": "以人类延续具体化生成关系，未由此证明普遍伦理。",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-GENERATIVITY.md",
+      "integration": "study-context",
+      "evidence_message_ids": [
+        "msg_0d5e543cba37ba70016ac67194af4c87d09bcdbec300c779aa",
+        "msg_0d5e543cba37ba70016ac670e91e8087d095b4d8fe46c9a0c9"
+      ]
+    },
+    {
+      "thread_id": "01a11610-490f-7392-89d3-c2538222d17d",
+      "title": "比较并整合王阳明理论 (2)",
+      "family": "F12",
+      "classification": [
+        "extension",
+        "counterexample"
+      ],
+      "outcome_en": "Liangzhi practical changes include support handoff, recovery and finite ending.",
+      "outcome_zh": "良知实践变化包括支持交接、恢复与有限结束。",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIANGZHI-PRACTICAL-INTEGRATION.md",
+      "integration": "study-and-canonical",
+      "evidence_message_ids": [
+        "msg_0d5e543cba37ba70016ac6478f0b9087d0bbcc33621f7ad6a0",
+        "msg_0d5e543cba37ba70016ac63f89839087d0b91f05754674b924"
+      ]
+    },
+    {
+      "thread_id": "01a1160d-8d64-74e2-ac6d-ee1b1a3803dd",
+      "title": "Model subjective good and karma",
+      "family": "F08",
+      "classification": [
+        "argument",
+        "counterexample"
+      ],
+      "outcome_en": "Entrusted participation and binding commitments do not automatically make a trajectory better.",
+      "outcome_zh": "受托参与和有效承担不自动使整体历程更好。",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PERSPECTIVAL-AGREEMENT-GROUND-INTEGRATION.md",
+      "integration": "study-and-canonical",
+      "evidence_message_ids": [
+        "msg_0c296fc7c9417fe9016ac63c4a301481919537cbe9eb33612d",
+        "msg_0c296fc7c9417fe9016ac636b53cc88191863cca92990ceddb"
+      ]
+    },
+    {
+      "thread_id": "01a10f4f-ad90-7431-be26-4a9be5c12774",
+      "title": "Assess the good–evil axis",
+      "family": "F13",
+      "classification": [
+        "review",
+        "preservation"
+      ],
+      "outcome_en": "Reconciles conditional completion and stronger ethical goals; later turns concern repository transfer.",
+      "outcome_zh": "区分有条件完成与更强伦理目标；后续为仓库交接。",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MECHANISM-STATUS-RECONCILIATION.md",
+      "integration": "review",
+      "evidence_message_ids": [
+        "call_ybTZqwt6V1NHnRDVBzgXyqxI",
+        "msg_0ae0644da514dd35016ac544e8c7ec87d0a2ded1ea270bb2cd",
+        "msg_0ae0644da514dd35016ac5425c352087d0bcb42cb3979a0e98"
+      ]
+    },
+    {
+      "thread_id": "01a10f43-3bcf-7411-93cd-041487b1c4b3",
+      "title": "Assess universal ethics evidence",
+      "family": "F08",
+      "classification": [
+        "review",
+        "open-question"
+      ],
+      "outcome_en": "Corrects an inference from dynamical description to ethical valuation.",
+      "outcome_zh": "纠正从动力学描述直接推出伦理评价的推断。",
+      "primary_source": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md",
+      "integration": "discussion-context-only",
+      "evidence_message_ids": [
+        "msg_01046d2984e43266016ac54041a2c887d0a9abbe83c85c99f7",
+        "msg_01046d2984e43266016ac53f9c4bf887d0b8c4a1cf1fae8a1e"
+      ]
+    },
+    {
+      "thread_id": "01a10da1-1436-7be0-85eb-81f5e6f8ba11",
+      "title": "Explore cybernetics in the theory",
+      "family": "F01",
+      "classification": [
+        "synthesis",
+        "reuse"
+      ],
+      "outcome_en": "Connects process-law derivation to the dependency-accounting requirement.",
+      "outcome_zh": "将过程律推导接到前提依赖说明要求。",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md",
+      "integration": "study-context",
+      "evidence_message_ids": [
+        "msg_0b848a282933f2a1016ac52e69995087d09a2b2091ea453ead",
+        "msg_0b848a282933f2a1016ac52daf24dc87d09406c3500d6f4a88",
+        "msg_0b848a282933f2a1016ac4f285cf1887d09449160d5c885927"
+      ]
+    },
+    {
+      "thread_id": "01a110ef-4a87-7a51-902b-a3e07bc53021",
+      "title": "Prepare unified theory talk proposal",
+      "family": "F14",
+      "classification": [
+        "exposition",
+        "preservation"
+      ],
+      "outcome_en": "Technical supporting statement communicates results for alignment reviewers.",
+      "outcome_zh": "面向对齐审稿人的技术说明与输出。",
+      "primary_source": "drafts/2026-10-02-iaseai-selecting-the-selectors/output/pdf/generativity-to-wisdom-supporting-statement.pdf",
+      "integration": "export",
+      "evidence_message_ids": [
+        "msg_0f92c7763d39aa7f016ac4e478a94487d08241b348e35f45d1",
+        "msg_0f92c7763d39aa7f016ac4de7d7b2c87d0b3a9ba940f79bb7a",
+        "msg_0f92c7763d39aa7f016ac4ddfa96a487d096e29966093f5caa"
+      ]
+    },
+    {
+      "thread_id": "01a10ddc-aa15-7ab2-9c98-da6deda6bd87",
+      "title": "Research alignment and governance",
+      "family": "F04",
+      "classification": [
+        "extension",
+        "counterexample"
+      ],
+      "outcome_en": "Acquired consequences select the inquiry relevant to the disputed application.",
+      "outcome_zh": "取得后果选择与所争应用相关的查询。",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md",
+      "integration": "study-and-canonical",
+      "evidence_message_ids": [
+        "msg_0b22e91161ae5b93016ac4e15dfd1c87d082bef76accb64ffb",
+        "msg_0b22e91161ae5b93016ac4daf833b487d0b5adf10aa368f0ab",
+        "msg_0b22e91161ae5b93016ac4d5c5cf3c87d083db61e19a473f87"
+      ]
+    },
+    {
+      "thread_id": "01a109b3-9e69-73f2-90ae-d119becb8ac7",
+      "title": "Articulate Foundation Lenses",
+      "family": "F08",
+      "classification": [
+        "argument",
+        "review"
+      ],
+      "outcome_en": "Refines jointly realized concern while preserving harmful-concern counterexamples.",
+      "outcome_zh": "细化关切与实际实现的共同意义，保留有害关切反例。",
+      "primary_source": "theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md",
+      "integration": "canonical",
+      "evidence_message_ids": [
+        "msg_097bd7548d4e2516016ac4c8e5fad887d08644acd979590bd5",
+        "msg_097bd7548d4e2516016ac4c5aa87b887d0a7b821f2aea77008",
+        "msg_097bd7548d4e2516016ac4c1db5cc487d0998194ed1b5e1d01"
+      ]
+    },
+    {
+      "thread_id": "01a10e2f-1657-7130-a994-3fe92f369e17",
+      "title": "Clarify generative market guidance",
+      "family": "F06",
+      "classification": [
+        "reuse",
+        "review"
+      ],
+      "outcome_en": "Market nondual reconstruction retains established proofs and their interpretation limits.",
+      "outcome_zh": "市场非二元重构保留已有证明与解释限度。",
+      "primary_source": "theories/becoming/chapters/MARKETS-AND-GENERATIVE-REGIMES.md",
+      "integration": "canonical",
+      "evidence_message_ids": [
+        "msg_0f91569e876ef9ae016ac49360160887d097bdbdd9c6c85509",
+        "msg_0f91569e876ef9ae016ac42f1cb5dc87d0868efbbb4d656034",
+        "msg_0f91569e876ef9ae016ac42af414fc87d0b68d35ce26dabf83"
+      ]
+    },
+    {
+      "thread_id": "01a10d0c-c1ce-7222-aff2-39081aca0c92",
+      "title": "Review parallel work connections (2)",
+      "family": "F13",
+      "classification": [
+        "review",
+        "reuse"
+      ],
+      "outcome_en": "Parallel connection review and shared-method adoption; not a new foundation.",
+      "outcome_zh": "并行连接审查及共同方法接续，不是另一个基础证明。",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md",
+      "integration": "review",
+      "evidence_message_ids": [
+        "msg_0c330cb70294bbdc016ac49368a5c887d0b21246f729d5077a",
+        "msg_0c330cb70294bbdc016ac42d0809e887d0a874ade670332923",
+        "msg_0c330cb70294bbdc016ac429628fbc87d0b53d64a626a7167f"
+      ]
+    },
+    {
+      "thread_id": "01a10e73-1273-7ac2-b188-a61b8f9618a7",
+      "title": "Assess theory significance and finds",
+      "family": "F08",
+      "classification": [
+        "argument",
+        "open-question"
+      ],
+      "outcome_en": "Stronger necessity target retained alongside conditional concern results.",
+      "outcome_zh": "在条件关切成果之外保留更强必要性目标。",
+      "primary_source": "theories/becoming/chapters/STRONGEST-FOUNDATION-CLAIM.md",
+      "integration": "canonical",
+      "evidence_message_ids": [
+        "msg_053d130da5e5d99a016ac493c4b96487d0beb921fb93a9b931",
+        "msg_053d130da5e5d99a016ac473e55da887d09ed8998cb05a1f72",
+        "call_4d8665064d984521add61b1b919d2c01",
+        "msg_053d130da5e5d99a016ac47107cba887d083c5a68da33a8491"
+      ]
+    },
+    {
+      "thread_id": "01a10d58-8591-7c53-aee9-dabbcb77ebd9",
+      "title": "Review parallel work connections (5)",
+      "family": "F13",
+      "classification": [
+        "review",
+        "reuse"
+      ],
+      "outcome_en": "Independent acceptance of the same five-condition conditional candidate.",
+      "outcome_zh": "同一五条件候选的独立验收。",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md",
+      "integration": "review",
+      "evidence_message_ids": [
+        "msg_0c330cb70294bbdc016ac4935e630c87d0a536132d3e37dc0a",
+        "msg_0c330cb70294bbdc016ac46c72cd9887d09a0bc28c9514976c",
+        "msg_0c330cb70294bbdc016ac46a65145887d0a392c132a70d21b0"
+      ]
+    },
+    {
+      "thread_id": "01a10d14-c6b7-76e1-b798-906eaae35332",
+      "title": "Review parallel work connections (3)",
+      "family": "F13",
+      "classification": [
+        "synthesis",
+        "review"
+      ],
+      "outcome_en": "Integrated exposition and completion assessment of the same conditional candidate.",
+      "outcome_zh": "同一有条件候选的整合论述与完成评估。",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md",
+      "integration": "review",
+      "evidence_message_ids": [
+        "msg_0c330cb70294bbdc016ac4936f02d487d087eeea43036b189a",
+        "msg_0c330cb70294bbdc016ac46c7538dc87d0b7ed1ac7d484f8ea",
+        "msg_0c330cb70294bbdc016ac46bf73e0c87d08f0115c5f43f8177"
+      ]
+    },
+    {
+      "thread_id": "01a10d34-6d6c-7e93-9ba0-e40410e84e93",
+      "title": "Review parallel work connections (4)",
+      "family": "F13",
+      "classification": [
+        "review",
+        "reuse"
+      ],
+      "outcome_en": "Root acceptance confirms the same completion scope and source bindings.",
+      "outcome_zh": "根部验收确认同一完成范围与来源绑定。",
+      "primary_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-ROOT-ACCEPTANCE.md",
+      "integration": "review",
+      "evidence_message_ids": [
+        "msg_0c330cb70294bbdc016ac4936e1b1887d0b2d3be60e21268cd",
+        "msg_0c330cb70294bbdc016ac46c9d29dc87d0a5c35528116f3314",
+        "msg_0c330cb70294bbdc016ac46c7745e887d09e000e29663f4210"
+      ]
+    },
+    {
+      "thread_id": "01a10775-13f1-78c2-ae89-53fa4d62a6ef",
+      "title": "Review latest 6.2 (2)",
+      "family": "F06",
+      "classification": [
+        "extension",
+        "preservation"
+      ],
+      "outcome_en": "V7.3 adds a conditional transition path and institutional application to historical protection results.",
+      "outcome_zh": "V7.3 在历史保护成果上增加条件转变路径和制度应用。",
+      "primary_source": "drafts/2026-10-02-iaseai-selecting-the-selectors/v7.3/START-HERE.md",
+      "integration": "historical-release",
+      "evidence_message_ids": [
+        "msg_0cbebe71ec0b8f7b016ac288e6c5a487d0b9449bd76e610bd0",
+        "msg_0cbebe71ec0b8f7b016ac2807c511887d0bd7ce65bfe56ecdf",
+        "msg_0cbebe71ec0b8f7b016ac27f0e094887d0bcb0ef7a39f2c992"
+      ]
+    }
+  ]
+}

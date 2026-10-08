@@ -1,6 +1,6 @@
 # 改革也改变判断改革的证据 / Reform changes the evidence used to judge reform
 
-8 October 2026, Asia/Bangkok. AI-authored continuation of [Ren's instruction to keep pushing the frontier](../../../../sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md#continue-the-frontier). Current account: [understanding and changing formative conditions](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md#7-reform-can-change-its-own-evidential-conditions).
+8 October 2026, Asia/Bangkok. AI-authored continuation of [Ren's instruction to keep pushing the frontier](../../../../sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md#continue-the-frontier). Current account: [understanding and changing formative conditions](../../../../theories/becoming/chapters/GOAL-FORMATION-AND-REVISION.md#7-reform-can-change-its-own-evidential-conditions).
 
 **新推进：改革不仅改变目的及其支持，也可以改变哪些后果能够进入判断。旧安排下真实通过的校准，不自动覆盖改革后的证据路线。新安排可以不断给自己正面反馈，同时把真实负担转移到不再被记录的位置。** 本轮在同一目标形成历史中构造这一失败及有成本的纠正：补足实际维护条件，可以保留新的学习目的，而不必将目的退回旧形式。
 

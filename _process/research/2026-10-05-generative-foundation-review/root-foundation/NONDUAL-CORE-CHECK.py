@@ -10,7 +10,7 @@ from urllib.parse import unquote
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[3]
-THEORY = ROOT / 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05'
+THEORY = ROOT / 'theories/becoming/chapters'
 BASIS = ROOT / 'experiments/integrated-correction/general-framework/generative-basis'
 PACKAGE = BASIS / 'noninstrumental-concern'
 OUT = HERE / 'NONDUAL-CORE-CHECKS.json'
@@ -40,7 +40,7 @@ def main():
     # Shared documents: inspect only sections/paragraphs owned by this round.
     for path, marker in [
         (ROOT/'RESEARCH.md', '**非二元核心与主体延伸'),
-        (ROOT/'theories/shengsheng-buxi-generative-existence/README.md', '**Nondual core and derived subjects'),
+        (ROOT/'theories/becoming/README.md', '**Nondual core and derived subjects'),
         (HERE/'README.md', '**Nondual core / subject extensions'),
         (ROOT/'experiments/README.md', '**Nondual core extension'),
         (ROOT/'sources/SOURCES.md', '- [Nondual core and subjects as extensions]'),

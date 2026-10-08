@@ -352,7 +352,7 @@ Then ADR-031 (2026-08-22), prompted by Ren's observation that "the old guard gua
 
 ## 6. Relations to other theories in this corpus
 
-- **shengsheng-buxi-generative-existence** — direct instantiation: the spec's appendix maps lineage to 生生 and the epigraph states 系统里没有"改"，只有"生"; this cluster is the process ontology built as running software.
+- **becoming** — direct instantiation: the spec's appendix maps lineage to 生生 and the epigraph states 系统里没有"改"，只有"生"; this cluster is the process ontology built as running software.
 - **keep-the-possibility-space-open** — 护未：已定节点之"未" = 其 forkability is the possibility-preserving commitment expressed as a storage property; fork-by-default, "conflict is information," "do not assume every branch merges," and no-delete/no-revert are all possibility-preserving mechanisms.
 - **spirit-space-token-and-yi-substrate** — this is the substrate layer under that vocabulary: the moment-DAG and the truth layer are the concrete Yi/Bonfire-root machinery that a Spirit–Token–Space account would need.
 - **alignment-selection-on-cognition** — deepest conceptual link: "the compiler is the agent's attention," "projection is not neutral," the authority-labelled provenance travelling into every future compilation, and the brake on a model laundering its own outputs into fact are all claims about *what selects on cognition* and how to keep that selection accountable.

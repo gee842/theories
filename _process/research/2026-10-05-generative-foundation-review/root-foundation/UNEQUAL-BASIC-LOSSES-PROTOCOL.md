@@ -1,10 +1,10 @@
 # Comparing unequal basic losses
 
-8 October 2026. AI-authored protocol following Ren's “继续” after the proposal to investigate conflicts among different forms of 生生, constrained by actual distinctions rather than copied descriptions. Follow the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) and the explicit G0/J route. The objective remains a universal normative account; a scoped comparison is a test and development of that account, not its replacement.
+8 October 2026. AI-authored protocol following Ren's “继续” after the proposal to investigate conflicts among different forms of 生生, constrained by actual distinctions rather than copied descriptions. Follow the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) and the explicit G0/J route. The objective remains a universal normative account; a scoped comparison is a test and development of that account, not its replacement.
 
 ## The new connection
 
-[Basic conflict](BASIC-CONFLICT-INTEGRATION.md) already defends BC1 for equivalent rescue claims. [Practical judgment](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md) already supplies J2's basic-versus-optional priority, bounded responsibilities and timely procedure. [Loss comparison](GENERATIVE-LOSS-COMPARISON-INTEGRATION.md) already transports an established judgment through matched improvements. None is reopened.
+[Basic conflict](BASIC-CONFLICT-INTEGRATION.md) already defends BC1 for equivalent rescue claims. [Practical judgment](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md) already supplies J2's basic-versus-optional priority, bounded responsibilities and timely procedure. [Loss comparison](GENERATIVE-LOSS-COMPARISON-INTEGRATION.md) already transports an established judgment through matched improvements. None is reopened.
 
 This round investigates **unequal, genuinely basic losses within one shared continuation → warranted comparative reasons**, keeping severity, recoverability, distinct realization, joint support and practical authority explicit. It does not reclassify all inconvenient losses as optional or use irreversibility as an automatic trump.
 

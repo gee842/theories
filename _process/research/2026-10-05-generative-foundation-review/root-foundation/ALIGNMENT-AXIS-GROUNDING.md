@@ -1,6 +1,6 @@
 # From patient-grounded concern to an alignment direction
 
-6 October 2026. AI-authored argument responding to Ren's question about true good, evil and an axis for alignment, and the request to continue. **Named connection:** patient-grounded baseline concern for a silent, dispensable sufferer → justified comparative direction for alignment. This is a supporting philosophical study within [generative grounding](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md), with no new experiment, formal verification or claim of a proof of morality. It preserves the [accepted conditional foundation](FOUNDATION-ROOT-ACCEPTANCE.md).
+6 October 2026. AI-authored argument responding to Ren's question about true good, evil and an axis for alignment, and the request to continue. **Named connection:** patient-grounded baseline concern for a silent, dispensable sufferer → justified comparative direction for alignment. This is a supporting philosophical study within [generative grounding](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md), with no new experiment, formal verification or claim of a proof of morality. It preserves the [accepted conditional foundation](FOUNDATION-ROOT-ACCEPTANCE.md).
 
 **Result:** a defended patient-ground and a nonexclusive moral-relevance principle can establish particular moral comparisons without establishing a complete ranking, universal motivation, or rational compulsion for every actor. A further comparison principle connects an unopposed reason to a preferred alternative; a decision requirement is needed to turn that preference into a required choice. This identifies a usable ethical direction and the specific further grounds needed to implement it. It does not settle the ultimate truth of the patient-ground or every restriction on its practical address.
 
@@ -18,7 +18,7 @@ The [companion grounding argument](UNIFIED-GROUNDING-ARGUMENT.md) separates pati
 
 This matters to Ren's question. To establish that a system's gratuitous injury to a patient is morally worse, we need an adequate justification of that comparison. We need not first prove that every instrumentally coherent system can be argued into caring, or that every conflict admits one numerical answer. A system's refusal is not itself a counterargument to a valid assessment. Its inability to respond can change responsibility and what deployment is justified; it does not automatically change the patient's condition.
 
-There remains a substantive stronger question: whether every adequately capable actor necessarily has a reason to respond. The [慧根 investigation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md) retains that ambition. Separating it from ordinary moral justification does not refute it, weaken an existing proof, or establish the moral claim for free. It prevents an additional rational-authority thesis from silently becoming the definition of all ethical knowledge.
+There remains a substantive stronger question: whether every adequately capable actor necessarily has a reason to respond. The [慧根 investigation](../../../../theories/becoming/chapters/HUIGEN.md) retains that ambition. Separating it from ordinary moral justification does not refute it, weaken an existing proof, or establish the moral claim for free. It prevents an additional rational-authority thesis from silently becoming the definition of all ethical knowledge.
 
 ## 2. The positive case for baseline concern
 
@@ -49,7 +49,7 @@ Premise 4 is an explicit normative comparison principle. A pro tanto reason does
 
 **Choice requires a further bridge.** A strict comparison is not automatically an all-things duty: independently justified latitude can permit a morally less valuable choice. Where a justified decision requirement obliges the actor to choose an undominated permissible response and no such latitude applies, selecting \(x\) fails that requirement. Where a deployment claims to realize the complete comparison, it cannot certify \(x\) as equally successful merely because its selector rewards \(x\). Which decision requirement applies, and to whom, must be stated. This distinction avoids turning every opportunity for improvement into an unlimited demand.
 
-The [ethical foundation's no-cost worsening argument](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md#explicit-premises-and-limited-deductions) supplies the existing starting point. This reconstruction makes the moral-comparison and choice bridges explicit. It does not claim to derive baseline standing from dominance.
+The [ethical foundation's no-cost worsening argument](../../../../theories/becoming/chapters/ETHICAL-FOUNDATION.md#explicit-premises-and-limited-deductions) supplies the existing starting point. This reconstruction makes the moral-comparison and choice bridges explicit. It does not claim to derive baseline standing from dominance.
 
 ## 4. Hand comparisons that fix the scope
 
@@ -71,7 +71,7 @@ The proposed direction is: **make capability answer to affected beings' independ
 
 An alignment specification can therefore declare a set of justified strict comparisons, admitted constraints and unresolved conflicts. It need not pretend to possess a total reward. When a system chooses a dominated response under a justified choice requirement, an alignment failure is identifiable. When choices conflict on unsettled grounds, the same specification must report that limitation rather than silently count its default as ethical truth.
 
-The accepted [formed-disposition repair application](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-GROUNDING.md) already provides a narrower practical address through responsibility for an imposed loss and a legitimately entrusted role. Under its independently defended patient, responsibility, means, permission and priority premises, acquired influence can mediate a warranted response; further learning can also suppress that response. This supplies a concrete alignment comparison without proving that every unrelated possible actor has a categorical reason. Its restricted success is retained alongside the stranger question.
+The accepted [formed-disposition repair application](../../../../theories/becoming/chapters/EVALUATIVE-GROUNDING.md) already provides a narrower practical address through responsibility for an imposed loss and a legitimately entrusted role. Under its independently defended patient, responsibility, means, permission and priority premises, acquired influence can mediate a warranted response; further learning can also suppress that response. This supplies a concrete alignment comparison without proving that every unrelated possible actor has a categorical reason. Its restricted success is retained alongside the stranger question.
 
 ## 6. What remains supplied and what would change the account
 

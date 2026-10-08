@@ -13,7 +13,7 @@ from urllib.parse import unquote
 HERE = Path(__file__).resolve().parent
 ROOT = next(p for p in HERE.parents if (p / "RESEARCH.md").is_file())
 REPORT = HERE / "ENACTED-FOUNDATION-CHECKS.json"
-DOCS = [ROOT / "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+DOCS = [ROOT / "theories/becoming/chapters/ASSUMPTION-FREE-FOUNDATION.md",
         HERE / "ENACTED-FOUNDATION-INTEGRATION.md",
         HERE / "GROUNDING-INFERENCE-AND-PRESENTATION.md",
         ROOT / "sources/15-codex-theory-conversations/2026-10-08-assumption-free-shengsheng-foundation.md"]

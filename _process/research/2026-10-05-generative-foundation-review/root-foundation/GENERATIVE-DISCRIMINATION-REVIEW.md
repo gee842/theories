@@ -7,7 +7,7 @@
 **审查对象。** 提交 `b5a236e7` 中的：
 - [RenewingFormation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingFormation.lean)（sha256 `2fe6aa4e…`）；
 - [ProtectionPriorityRival.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtectionPriorityRival.lean)（`cedaf977…`）；
-- 两条记录、[整合说明](GENERATIVE-DISCRIMINATION-INTEGRATION.md)、[G0-WARRANT](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/G0-WARRANT.md) 与首页证据行。
+- 两条记录、[整合说明](GENERATIVE-DISCRIMINATION-INTEGRATION.md)、[G0-WARRANT](../../../../theories/becoming/chapters/G0-WARRANT.md) 与首页证据行。
 
 **审查任务。** 设定为反向审查：
 - 重编译与哈希核对；
@@ -81,6 +81,6 @@
 
 审查中“效价附着是解释前提”的说法相应细化为两点：
 - 生生的正面意义就是 G0 本身；
-- 不由 Lean 提供的是两件事：AI 的形式读法确实刻画了生生；“消耗更坏”这一由 C 承担的比较。后者在关系读法下已由 [relational-reading-comparison](../../../../theories/shengsheng-buxi-generative-existence/results/records/relational-reading-comparison.md) 检查。
+- 不由 Lean 提供的是两件事：AI 的形式读法确实刻画了生生；“消耗更坏”这一由 C 承担的比较。后者在关系读法下已由 [relational-reading-comparison](../../../../theories/becoming/results/records/relational-reading-comparison.md) 检查。
 
 RenewingFormation 的注释、整合说明、G0-WARRANT 与审查 §6 已同步修订。

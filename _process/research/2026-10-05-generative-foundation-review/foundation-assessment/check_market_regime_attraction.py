@@ -72,7 +72,7 @@ def main():
     assert figure['script_sha256'] == sha((formal/'plot_regime_states.py').read_bytes())
     for name, digest in figure['outputs'].items():
         assert digest == sha((formal/'figures'/name).read_bytes()), name
-    data = json.loads((ROOT/'theories/shengsheng-buxi-generative-existence/results/data/generativity-chain.json').read_text())
+    data = json.loads((ROOT/'theories/becoming/results/data/generativity-chain.json').read_text())
     schema_errors = chain.validate(data)
     assert not schema_errors, schema_errors
     entry = next(e for section in data['sections'] for e in section['entries'] if e['id'] == 'M20')
@@ -85,7 +85,7 @@ def main():
         inverse['links'].remove(link)
     entry_inverse_same = sha(json.dumps(inverse, ensure_ascii=False, sort_keys=True).encode()) == edits['chain']['entry_before_sha256']
     canonical = next(line for line in chain.render(data).splitlines() if line.startswith('| M20 |'))
-    rendered = (ROOT/'theories/shengsheng-buxi-generative-existence/results/GENERATIVITY-CHAIN.md').read_text()
+    rendered = (ROOT/'theories/becoming/results/GENERATIVITY-CHAIN.md').read_text()
     assert [line for line in rendered.splitlines() if line.startswith('| M20 |')] == [canonical]
     result = {
         'status': 'passed', 'checked_at_utc': datetime.now(timezone.utc).isoformat(),

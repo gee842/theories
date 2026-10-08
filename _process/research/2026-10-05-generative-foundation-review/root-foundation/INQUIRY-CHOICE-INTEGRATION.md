@@ -1,6 +1,6 @@
 # 查询与直接回应的比较 / Inquiry versus immediate response
 
-8 October 2026. AI-authored continuation of [Ren's direction](../../../../sources/15-codex-theory-conversations/2026-10-08-relations-across-scales.md). [Current account, §12](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md). The [prior revision study](SCALE-REVISION-INTEGRATION.md) supplies the reused probe, state and work charger. This is a new route-comparison law on that state, not a replay of its earlier event schedule.
+8 October 2026. AI-authored continuation of [Ren's direction](../../../../sources/15-codex-theory-conversations/2026-10-08-relations-across-scales.md). [Current account, §12](../../../../theories/becoming/chapters/RELATIONS-ACROSS-SCALES.md). The [prior revision study](SCALE-REVISION-INTEGRATION.md) supplies the reused probe, state and work charger. This is a new route-comparison law on that state, not a replay of its earlier event schedule.
 
 ## Transition and positive argument
 

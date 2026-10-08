@@ -2,7 +2,7 @@
 
 **Continuation, 8 October 2026.** [Growth forms fragmentation possibilities](GROWN-FRAGMENTATION-INTEGRATION.md) now realizes the previously selected bounded partition-formation connection: actual development and cuts determine successor composition, with 31 new Lean theorems / 59 audits. This study's preparation result remains unchanged. The new prepared output is the common eight-slot recipe, not regeneration of the new grown architectures; their transmission and operative fracture law remain unresolved. Historical next-step wording below records the earlier scope.
 
-8 October 2026. AI-authored continuation following Ren's “继续”. This advances the material preparation connection left by [contact reconstruction](CONTACT-RECONSTRUCTION-INTEGRATION.md). The local production, routing and population distinctions are differentiated relations within the same unfolding, following the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md).
+8 October 2026. AI-authored continuation following Ren's “继续”. This advances the material preparation connection left by [contact reconstruction](CONTACT-RECONSTRUCTION-INTEGRATION.md). The local production, routing and population distinctions are differentiated relations within the same unfolding, following the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md).
 
 **中文结论：重建成功的后继更多，不保证能再次形成亲代的繁殖组织。** 同一批后继沿不同的局部生成规律生长，会形成不同的组成分布，从而改变哪些后继能完成下一轮准备。本轮把“恢复成统一成熟亲代”推进为有材料与消耗记录的有限过程；原先分散接触机会的优势可以倒转。生成规律、运输装配配方、分割形成及持续供给仍明确给定，未宣告整个生命周期的起源已经解释。
 

@@ -97,6 +97,6 @@ Paths are linked above. SHA-256 values identify the read versions; active files 
 [revision-protocol]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/PROTOCOL.md
 [revision-model]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/model.py
 [pre-import]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/README.md
-[concern]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONCERN-AND-CORRECTION.md
-[joint]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/JOINT-FORMATION.md
-[ethics]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md
+[concern]: ../../../../theories/becoming/chapters/CONCERN-AND-CORRECTION.md
+[joint]: ../../../../theories/becoming/chapters/JOINT-FORMATION.md
+[ethics]: ../../../../theories/becoming/chapters/ETHICAL-FOUNDATION.md

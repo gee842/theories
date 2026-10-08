@@ -60,14 +60,14 @@ def main():
     package_readme=PACKAGE/'README.md'
     docs[package_readme]=package_readme.read_text().split('## Generative premise and situated comparison',1)[1]
     for rel in ['README.md','RESEARCH.md','_process/BRIEF.md','sources/SOURCES.md',
-      'theories/shengsheng-buxi-generative-existence/README.md',
-      'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md',
+      'theories/becoming/README.md',
+      'theories/becoming/chapters/GENERATIVE-GROUNDING.md',
       str((HERE/'README.md').relative_to(ROOT))]:
         path=ROOT/rel
         docs[path]='\n\n'.join(block for block in path.read_text().split('\n\n')
             if 'GENERATIVE-PREMISE' in block or 'generative-premise' in block)
         assert docs[path],rel
-    canonical=ROOT/'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md'
+    canonical=ROOT/'theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md'
     text=canonical.read_text(); start=text.index('## From the generative premise to situated reasons')
     docs[canonical]=text[start:text.index('\n## ',start+4)]
     for file,heading in [('GENERATIVE-CAPACITY-INTEGRATION.md','## 16. '),

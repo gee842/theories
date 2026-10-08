@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "id": "practical-judgment-g0-j",
+  "title": {
+    "zh": "G0/J 下的一般实践判断",
+    "en": "Practical judgment under G0/J"
+  },
+  "kind": "argument",
+  "status": "reviewed-scoped",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-08T12:31:53.854610+00:00",
+  "claim": {
+    "zh": "G0 加公开 J1–J4 与实际对应，形成保留、转化、实际交接、有限结束及有界责任的一般候选。",
+    "en": "G0 with explicit J1–J4 and actual correspondence supplies a general candidate for preservation, transformation, actual transfer, finite ending and bounded responsibility."
+  },
+  "hypotheses": [
+    {
+      "zh": "G0 的正面规范起点；J1–J4 比较、基本条件优先、责任及正当选择承诺，均公开而非由形式定义证明。",
+      "en": "The G0 normative starting point and explicit J1–J4 commitments on comparison, basic protection priority, responsibility and legitimate choice; these are not warranted by formal definitions."
+    },
+    {
+      "zh": "实际分类、有效承担、可行范围与权限的对应 E。",
+      "en": "Correspondence E for actual classifications, valid undertakings, feasibility and authority."
+    }
+  ],
+  "correspondence": {
+    "zh": "角色在共同生活与依存形成中说明；因果、受益和能力不独自分配无限义务。",
+    "en": "Roles are explained through shared living and formed dependence; causation, benefit and capacity alone do not assign unlimited duty."
+  },
+  "canonical_source": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md",
+  "aliases": [
+    "Practical judgment G0/J1–J4"
+  ],
+  "dependencies": [],
+  "related": [
+    {
+      "id": "universal-practical-warrant",
+      "detail": {
+        "zh": "无公理目标独立保留，不是本成果的未完成条件。",
+        "en": "The independent axiom-free target remains open and is not an unmet completion gate for this result."
+      }
+    },
+    {
+      "id": "protection-priority-excludes-uniform-aggregation",
+      "detail": {
+        "zh": "复用本结果的 Better 与 no_protection_trade_by_count，在一个构造情境中补上 J2 相对 C 的独立性、被排除的自然数评分类与一致的有界评分；本论证不变。",
+        "en": "Reuses this result's Better and no_protection_trade_by_count, adding, in one constructed situation, J2's independence from C, the excluded natural-number score class and an agreeing bounded score; this argument is unchanged."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md",
+      "detail": {
+        "zh": "J2 的优先强度是附加可修订承诺；交叉基本损失可不排序，不输出通用总效用。",
+        "en": "J2’s priority strength is an additional revisable commitment; crossed basic losses may remain incomparable, with no universal utility score."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "J2 的优先强度是附加可修订承诺；交叉基本损失可不排序，不输出通用总效用。",
+    "en": "J2’s priority strength is an additional revisable commitment; crossed basic losses may remain incomparable, with no universal utility score."
+  },
+  "validation_scope": {
+    "zh": "既有独立完成审查接受明确公理的一般原则范围；30项定理／46项审计属于形式包，不是30个规范根据证明。本次无新编译。",
+    "en": "Existing independent completion review accepts the explicit-axiom general-principles scope. The 30 theorems/46 audits concern the formal package, not 30 proofs of normative warrant. No new compilation."
+  },
+  "references": [
+    {
+      "path": "theories/becoming/chapters/PRACTICAL-JUDGMENT.md",
+      "role": "statement",
+      "sha256": "1cf861a5b3b240c9102dfc75714ed39124a64e2abc4693abdd3af9823d396710",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/practical-judgment-verification.json",
+      "role": "receipt",
+      "sha256": "b9857bbfc496d0133a127a1a0799fd0bff35defd1bbba11dc902d806ab126174",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean",
+      "role": "proof",
+      "sha256": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+      "declarations": [
+        "PracticalJudgment.better_trans",
+        "PracticalJudgment.transfer_requires_actual_successor",
+        "PracticalJudgment.competing_claims_incomparable"
+      ]
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-REVIEW.md",
+      "role": "review",
+      "sha256": "544287842225a457a259c573e3667c3aba357a3ab8643a3f832e34039c85e74a",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "fe808ea852679ce01f8886961d3edf9838ee7c6982cc747c756af17a476d6d38",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md",
+      "role": "provenance",
+      "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-universal-metaethics-name-and-readme.md",
+      "role": "provenance",
+      "sha256": "2900e16d2a0b4e0a7778078dfc4649854d5a2637480afaace2bb11f96ede5f32"
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/practical-judgment-verification.json",
+      "sha256_pointer": "/source_sha256/PracticalJudgment",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "应用现有原则并检验分类、承担与权限；不把一般责任原则再次列为待证明。",
+    "en": "Apply the existing principles and test classifications, undertakings and authority; do not reopen the completed general responsibility account."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
+      "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+    },
+    {
+      "en": "2026-10-08: added the English-first leading summary requested by Ren under the title Universal Meta-Ethics of Agency. Reuses this result and its existing evidence; no new theorem, proof run or stronger completion claim.",
+      "zh": "2026-10-08：按 Ren 要求，在 Universal Meta-Ethics of Agency 名称下新增以英文为主的前置摘要。复用本成果及既有证据；无新定理、编译或更强完成声明。"
+    },
+    {
+      "zh": "2026-10-09：依 Ren 指示，证据行改为说明 Lean 检查承担什么，并引用 J2 排除均匀聚合的新结果；本论证与范围不变。",
+      "en": "2026-10-09: following Ren's direction, the evidence line states what the Lean checks contribute and cites the new result that J2 excludes uniform aggregation; this argument and its scope are unchanged."
+    },
+    {
+      "zh": "2026-10-09：依独立审查（GENERATIVE-DISCRIMINATION-REVIEW X7、P1）修正证据行：补上“在一个构造情境中”，并写明有界评分与 J2 一致。本论证与范围不变。",
+      "en": "2026-10-09: evidence line corrected after independent review (GENERATIVE-DISCRIMINATION-REVIEW X7, P1): it now says \"in one constructed situation\" and that a bounded score agrees with J2. This argument and its scope are unchanged."
+    }
+  ],
+  "overview": {
+    "title": {
+      "en": "General practical judgment with real losses and bounded responsibility",
+      "zh": "保留真实损失与有界责任的一般实践判断"
+    },
+    "summary": {
+      "en": "G0 with explicit J1–J4 commitments supports preservation, transformation, effective transfer and appropriate ending. The principles recognize generative gains, protect basic living conditions, retain actual losses, and differentiate responsibility through justified undertakings, dependence, authority and feasible response. They provide a partial ordering and bounded practical requirements; crossed basic losses may remain incomparable. J1–J4 are disclosed additional commitments, not consequences of G0 alone.",
+      "zh": "G0 加公开的 J1–J4 承诺支持保留、转化、实际交接与适当结束。原则承认生成增益、保护基本生活条件、保留真实损失，并按正当承担、依存、权限与可行回应区分责任。它们提供偏序和有界实践要求；交叉基本损失可以不排序。J1–J4 是明示的附加承诺，并非单由 G0 推出。"
+    },
+    "evidence": {
+      "zh": "一般原则范围获独立验收。Lean 检查所述判断确由 G0、J1–J4 与对应条件推出，包括交叉基本损失不排序之处。在一个构造的保护对增益情境中，另一项检查说明 J2 增加了什么：它满足无损比较，却从不以增益交换基本条件；每一个满足该比较的自然数评分都会交换，而一个有界评分与 J2 一致，所以有界敏感性对手仍然存在。J1–J4 是经论证的承诺，不是 Lean 的结果。",
+      "en": "Independent acceptance of the general-principles scope. Lean checks that the stated verdicts follow from G0, J1–J4 and correspondence, including where crossed basic losses stay unranked. In one constructed protection-versus-gains situation, a separate check shows what J2 adds: its ordering satisfies the no-loss comparison yet never trades a basic condition for gains, whereas every natural-number score satisfying that comparison does trade; a bounded score agrees with J2, so bounded-sensitivity rivals remain. J1–J4 are argued commitments, not Lean results."
+    }
+  }
+}

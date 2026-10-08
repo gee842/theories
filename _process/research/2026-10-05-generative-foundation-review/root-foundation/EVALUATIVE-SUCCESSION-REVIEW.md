@@ -1,6 +1,6 @@
 # Independent review of evaluative succession
 
-6 October 2026. AI-authored review by the collaborating checker/reviewer, independent of this round's numerical and Lean implementation authors. This is not external peer review. **Accepted at the numerical, conditional formal and selected correspondence scopes below. No unresolved material issue remains.** The governing goal and its five completion conditions remain [generative grounding](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md).
+6 October 2026. AI-authored review by the collaborating checker/reviewer, independent of this round's numerical and Lean implementation authors. This is not external peer review. **Accepted at the numerical, conditional formal and selected correspondence scopes below. No unresolved material issue remains.** The governing goal and its five completion conditions remain [generative grounding](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md).
 
 ## Contract and independence
 

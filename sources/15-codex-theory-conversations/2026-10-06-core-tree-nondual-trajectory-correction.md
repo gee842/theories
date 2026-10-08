@@ -10,7 +10,7 @@
 
 ## AI-authored implementation
 
-Carry the [shared nondual method](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) into subsequent work in this conversation and repository. Core and tree are to be understood as differentiated articulations of one generative unfolding. Reconstruct knowing, significance, concern and response within that unfolding before treating their analytical separation as a foundational defect.
+Carry the [shared nondual method](../../theories/becoming/chapters/NONDUAL-METHOD.md) into subsequent work in this conversation and repository. Core and tree are to be understood as differentiated articulations of one generative unfolding. Reconstruct knowing, significance, concern and response within that unfolding before treating their analytical separation as a foundational defect.
 
 The recent invariant is a theorem about the chosen successor law. It establishes that law's fixed internal assessment; its relevance to the full generative account requires an argument about the adequacy of the representation. A meaning or law supplied to a local model is not thereby external to generative reality. Reassess the recent assembly-first research trajectory accordingly, preserving the existing proof and its limited scope.
 

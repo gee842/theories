@@ -7,7 +7,7 @@ from urllib.parse import unquote
 
 HERE = Path(__file__).resolve().parent
 REPO = next(p for p in HERE.parents if (p/'AGENTS.md').exists())
-THEORY = REPO/'theories/shengsheng-buxi-generative-existence/unified-2026-10-05'
+THEORY = REPO/'theories/becoming/chapters'
 EXPERIMENT = next(REPO.glob('experiments/**/plasticity/inquiry-revision/README.md')).parent
 FORMAL = EXPERIMENT.parent/'formal/inquiry-revision'
 

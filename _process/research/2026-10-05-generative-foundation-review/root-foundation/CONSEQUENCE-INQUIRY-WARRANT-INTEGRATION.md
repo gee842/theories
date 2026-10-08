@@ -3,7 +3,7 @@
 6 October 2026. AI-authored continuation of the
 [consequence → inquiry integration](CONSEQUENCE-INQUIRY-SELECTION-INTEGRATION.md),
 taking up its stated next transition under the
-[shared method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md).
+[shared method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md).
 Named connection: **acquired consequence → answer to the challenged
 application → role of that answer in surviving continuations, including
 those of other centers**.
@@ -142,7 +142,7 @@ The following are **not** established, and no Lean result here bears on them:
 - **Why concern should extend to others at all.** The invariance theorem says
   how others' consequences can enter a selection rule. It does not say that
   they ought to. That they matter is a substantive ethical claim of the
-  [unified ethical account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md).
+  [unified ethical account](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md).
   It is not proved here.
 - **Whether the activity itself is worth continuing.** A role for inquiry is
   relative to continuations that are taken as given. A continuation whose

@@ -226,7 +226,7 @@ It equals 847 at the committed witness. That ratio is not the ratio for all repa
 
 ## 6. Uniform conditional composition without a physical reset
 
-The [P1 interface](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-SPECIFICATION.md) requires a continuation guarantee conditional on the full modeled entry history. Here every certified macrocycle ends at the same full count state P. The same autonomous reaction law continues without changing a policy, supplying a packet, replacing material or reading the analyst's tags.
+The [P1 interface](../../../../theories/becoming/chapters/FORMAL-SPECIFICATION.md) requires a continuation guarantee conditional on the full modeled entry history. Here every certified macrocycle ends at the same full count state P. The same autonomous reaction law continues without changing a policy, supplying a packet, replacing material or reading the analyst's tags.
 
 With time-homogeneous support, the Markov property gives the same return kernel after every such stopping time, conditional on every past history that reaches P through the certified event. If \(r(T)\) is the exact probability of a chosen macrocycle certificate within time T, m consecutive such cycles, each within T, have probability \(r(T)^m\) from P. Any uniform lower bound \(\underline r(T)\le r(T)\) gives the corresponding bound \(\underline r(T)^m\). This is an actual state-compatible composition; no separately chosen continuation for hidden histories is used.
 

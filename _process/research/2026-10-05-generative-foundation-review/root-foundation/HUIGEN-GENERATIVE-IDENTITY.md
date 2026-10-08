@@ -1,6 +1,6 @@
 # Generative identity, future concern and inherited reasons
 
-6 October 2026. AI-authored continuation of the [entire 慧根 objective](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md). The named transition is **a formed center's reason to avoid its future harm → concern for plural continuations → reasons that successors and other deliberators inherit**. This is a hand-proved conceptual study of declared histories and normative premises. It supplies no empirical demonstration that persons can undergo the stipulated fission, no new Lean verification and no claim to have derived all ethical standing.
+6 October 2026. AI-authored continuation of the [entire 慧根 objective](../../../../theories/becoming/chapters/HUIGEN.md). The named transition is **a formed center's reason to avoid its future harm → concern for plural continuations → reasons that successors and other deliberators inherit**. This is a hand-proved conceptual study of declared histories and normative premises. It supplies no empirical demonstration that persons can undergo the stipulated fission, no new Lean verification and no claim to have derived all ethical standing.
 
 **The positive result:** if adding an equally situated continuation preserves an existing future patient's sufficient reason-ground, and judgments respect the resulting branch symmetry, the original actor has reasons concerning every branch. With at least two numerically distinct future persons, concern cannot require numerical identity with that actor. A further valid continuation of the *same responsibility for the same patients* transfers those reasons to successors, including reasons concerning their siblings. The outstanding question is therefore sharper than whether the self is generatively constituted: **which grounds survive changing the patient, and which authority survives changing the deliberator?**
 
@@ -21,7 +21,7 @@ Stage labels alone cannot settle personal identity: different time-stamped recor
 
 An actual history containing two future patients also differs from uncertainty about which one patient will exist. The following construction concerns plural actual continuations. It does not assign a probability that one branch will be the “real me,” or turn mutually exclusive possibilities into additional actual sufferers.
 
-The [relational-self genealogy](../../../../theories/relational-self-and-datong/README.md) makes constitution through relations central to Ren's account. The [ethical foundation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md) separately identifies N1 standing, N2 relevant consistency and N3 answerability. Those commitments motivate this test; relational constitution by itself is not substituted for their justification.
+The [relational-self genealogy](../../../../theories/relational-self-and-datong/README.md) makes constitution through relations central to Ren's account. The [ethical foundation](../../../../theories/becoming/chapters/ETHICAL-FOUNDATION.md) separately identifies N1 standing, N2 relevant consistency and N3 answerability. Those commitments motivate this test; relational constitution by itself is not substituted for their justification.
 
 ## 2. A positive future-to-plural-concern theorem
 
@@ -148,7 +148,7 @@ This also limits inherited commitments. A predecessor's harmful, mistaken or exp
 
 ## 6. What the actual reconstruction projects would have to preserve
 
-The accepted [recorded-reasons construction](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECORDED-REASONS.md) already separates retained bytes, calibrated factual observations, supplied reason relevance and a charged successor audit. Its generic context/node predicates can encode all the indices used here. No defect in that formal interface is alleged.
+The accepted [recorded-reasons construction](../../../../theories/becoming/chapters/RECORDED-REASONS.md) already separates retained bytes, calibrated factual observations, supplied reason relevance and a charged successor audit. Its generic context/node predicates can encode all the indices used here. No defect in that formal interface is alleged.
 
 A proposed implementation of G4 would have to preserve or re-establish:
 
@@ -160,7 +160,7 @@ A proposed implementation of G4 would have to preserve or re-establish:
 
 These conditions distinguish semantic fidelity from successful byte copying. A cold successor can reconstruct an earlier claim but still lack the relevant role, control or reason to adopt it. An authorized successor can have a valid reason despite losing access to its record. A usable implementation therefore needs both the semantic warrant and the material route; neither can be certified solely by the other.
 
-The [revisable-concern settlement](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md) supplies explicit evaluative and normative inputs. The present analysis identifies a stronger succession question those inputs can be used to test. It does not retroactively claim that the settlement derived all successor authority or universal patient standing.
+The [revisable-concern settlement](../../../../theories/becoming/chapters/REVISABLE-CONCERN-SETTLEMENT.md) supplies explicit evaluative and normative inputs. The present analysis identifies a stronger succession question those inputs can be used to test. It does not retroactively claim that the settlement derived all successor authority or universal patient standing.
 
 ## 7. The exact advance toward the full necessary root
 

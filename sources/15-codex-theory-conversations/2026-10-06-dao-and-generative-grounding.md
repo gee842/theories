@@ -16,6 +16,6 @@
 
 ## 研究位置
 
-[生成论与“道”](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DAO-AND-GENERATIVITY.md)是本次研究的当前综合表述；[研究与审查记录](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DAO-REVIEW.md)连接原典核查、旧稿谱系与规范论证。
+[生成论与“道”](../../theories/becoming/chapters/DAO-AND-GENERATIVITY.md)是本次研究的当前综合表述；[研究与审查记录](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DAO-REVIEW.md)连接原典核查、旧稿谱系与规范论证。
 
-本研究继续服务于[生成根基的总目标](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md)，聚焦“组织内的意义与学习如何通向对其他中心的关切、正当理由与智慧”。它不会以经典相似性代替机制、证据或伦理论证。外部古典与学术文本只作链接引用；未导入或改写任何旧版原件。
+本研究继续服务于[生成根基的总目标](../../theories/becoming/chapters/GENERATIVE-GROUNDING.md)，聚焦“组织内的意义与学习如何通向对其他中心的关切、正当理由与智慧”。它不会以经典相似性代替机制、证据或伦理论证。外部古典与学术文本只作链接引用；未导入或改写任何旧版原件。

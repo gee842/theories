@@ -38,7 +38,7 @@ All 26 audited declarations have empty axiom reports.
 
 ## What remains supplied
 
-- The spare-pair stock, applying the native interface draw to formation, and the rule that a formed contact clears `blocked`. These follow the pattern of the [inquiry-revision contact](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md#the-concrete-change) (one inherited spare pair, one supported operation). That mechanism belongs to a different apparatus, and its exact parts are not claimed to compose with this port.
+- The spare-pair stock, applying the native interface draw to formation, and the rule that a formed contact clears `blocked`. These follow the pattern of the [inquiry-revision contact](../../../../theories/becoming/chapters/INQUIRY-REVISION.md#the-concrete-change) (one inherited spare pair, one supported operation). That mechanism belongs to a different apparatus, and its exact parts are not claimed to compose with this port.
 - `tau`, sensor parity and receipt inversion remain fixed. Formation therefore opens the contact into whichever class `tau` dictates; it does not choose A over B, calibrate receipts, or acquire the phase knowledge alignment uses.
 - Formation is not decided by anything inside the model; the theorems hold for any history that includes it. Why a formation event occurs (an acquired reason, selection or accident) is not derived here.
 - Changing the effective law is not shown to be good. It changes what inquiry can reach.

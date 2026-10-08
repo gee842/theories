@@ -1,6 +1,6 @@
 # Prospective control: separability, contribution and the actual alternatives
 
-7 October 2026, Asia/Bangkok. AI-authored correspondence and conceptual review of the continuation selected in [the ratification integration](PERSPECTIVAL-RATIFICATION-INTEGRATION.md#7-what-is-gained-and-what-is-still-supplied), following the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). **Scope: constructed philosophical comparisons and a premise audit. No empirical intervention, new mathematical proof or completed universal ethical derivation.**
+7 October 2026, Asia/Bangkok. AI-authored correspondence and conceptual review of the continuation selected in [the ratification integration](PERSPECTIVAL-RATIFICATION-INTEGRATION.md#7-what-is-gained-and-what-is-still-supplied), following the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). **Scope: constructed philosophical comparisons and a premise audit. No empirical intervention, new mathematical proof or completed universal ethical derivation.**
 
 **Finding:** disclosed agreement removes the earlier breached-undertaking argument; it does not settle every permissible term of formation. But portability of an acquired skill also does not establish that the formation history leaves no warranted claim. A defensible comparison must identify the good, the claimed power, the provider's actual contribution, and the feasible alternative at the relevant time. Otherwise either side can win by naming its preferred bundle as the good.
 

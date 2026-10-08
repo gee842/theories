@@ -16,7 +16,7 @@ def main():
     spec=importlib.util.spec_from_file_location('chain',HERE/'build_generative_chain.py')
     chain=importlib.util.module_from_spec(spec);spec.loader.exec_module(chain)
     edits=json.loads((HERE/'EXPLANATORY-CHANGING-SUPPORT-INDEX-EDITS.json').read_text())
-    docs=[HERE/'EXPLANATORY-CHANGING-SUPPORT-INTEGRATION.md',ROOT/'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md',ROOT/'sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md']
+    docs=[HERE/'EXPLANATORY-CHANGING-SUPPORT-INTEGRATION.md',ROOT/'theories/becoming/chapters/EXPLANATORY-NECESSITY.md',ROOT/'sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md']
     contents=[(p,p.read_text()) for p in docs]
     for e in edits['shared_file_insertions']:
         p=ROOT/e['path'];assert e['preserved_other_bytes'] and e['inserted_text'] in p.read_text()

@@ -12,7 +12,7 @@ from urllib.parse import unquote
 sys.dont_write_bytecode = True
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[3]
-CAN = ROOT / 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05'
+CAN = ROOT / 'theories/becoming/chapters'
 INQ = ROOT / 'experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root'
 GROUND = INQ.parent / 'universal-ethics/generative-capacity'
 sha = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()

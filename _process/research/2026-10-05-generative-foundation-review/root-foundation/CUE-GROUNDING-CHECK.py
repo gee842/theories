@@ -8,7 +8,7 @@ from urllib.parse import unquote
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[3]
-CANONICAL = ROOT/'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CUE-GROUNDING.md'
+CANONICAL = ROOT/'theories/becoming/chapters/RECIPIENT-CUE-GROUNDING.md'
 EXPERIMENT = ROOT/'experiments/recipient-cue-grounding'
 SOURCES = ROOT/'sources/27-rat-cue-grounding-2026-10-06'
 RECEIPT = HERE/'CUE-GROUNDING-INTEGRATION.json'

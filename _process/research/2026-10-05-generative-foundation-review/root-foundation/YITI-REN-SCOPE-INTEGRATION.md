@@ -1,6 +1,6 @@
 # 继续关系及其范围的形成、改变和结束
 
-2026年10月6日。AI 撰写，接续 [Ren 对四项剩余工作开始下一轮的授权](../../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#同意开始四项剩余工作的下一轮)，遵循[共同非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)。本轮连接是：**形成中的实际活动产生不同的继续依赖；这些关系被取得并改变后续回应，活动结束后又能有区别地退出运行范围。** 它不预先把甲乙写成独立价值主体，也不以扩大范围、无限延续或总体产量最大化定义仁。
+2026年10月6日。AI 撰写，接续 [Ren 对四项剩余工作开始下一轮的授权](../../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#同意开始四项剩余工作的下一轮)，遵循[共同非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)。本轮连接是：**形成中的实际活动产生不同的继续依赖；这些关系被取得并改变后续回应，活动结束后又能有区别地退出运行范围。** 它不预先把甲乙写成独立价值主体，也不以扩大范围、无限延续或总体产量最大化定义仁。
 
 ## 1. 替代了哪一个直接输入
 

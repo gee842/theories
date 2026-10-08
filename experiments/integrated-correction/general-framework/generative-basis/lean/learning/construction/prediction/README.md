@@ -10,7 +10,7 @@ The [integration reconciliation](check_receipt_integration.py) checks current re
 
 This package joins actual constituent preparation and `ConstructedUpdater` machinery to the unchanged deterministic payable-write `PredictionAction` law. The paid retrofit consumes one free A/H pair into a separately retained five-state register. Later updater formation competes for the remaining pairs; writes reuse the register and updater replacement preserves its acquired value.
 
-- [Canonical account](../../../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATERIAL-PREDICTION-COMPOSITION.md)
+- [Canonical account](../../../../../../../../theories/becoming/chapters/MATERIAL-PREDICTION-COMPOSITION.md)
 - [Mathematical contract](../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-PREDICTION-MATH.md)
 - [Internal review](../../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-PREDICTION-REVIEW.md)
 - [Lean source](ConstructedPrediction.lean), [fresh-build checker](check.py), [audit manifest](verification.json)

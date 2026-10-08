@@ -1,6 +1,6 @@
 # 变化依存与描述的有效期 / Changing dependency and the useful lifetime of a description
 
-8 October 2026. AI-authored continuation of [Ren's repeated direction](../../../../sources/15-codex-theory-conversations/2026-10-08-relations-across-scales.md). [Current account §14](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md). The [prior inquiry comparison](INQUIRY-CHOICE-INTEGRATION.md) is credited at its constant-loss scope. This extension addresses **acquired evidence → validity through changed dependency → realizable response**. It supplies a calibration/implementation premise for practical judgment, not new ethical authority.
+8 October 2026. AI-authored continuation of [Ren's repeated direction](../../../../sources/15-codex-theory-conversations/2026-10-08-relations-across-scales.md). [Current account §14](../../../../theories/becoming/chapters/RELATIONS-ACROSS-SCALES.md). The [prior inquiry comparison](INQUIRY-CHOICE-INTEGRATION.md) is credited at its constant-loss scope. This extension addresses **acquired evidence → validity through changed dependency → realizable response**. It supplies a calibration/implementation premise for practical judgment, not new ethical authority.
 
 ## Affirmative argument and hypotheses
 

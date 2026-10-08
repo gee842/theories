@@ -2,7 +2,7 @@
 
 **后续接续 / Subsequent continuation:** [接入关系改变与摘要界限](RECONFIGURABLE-LOGIC-INTEGRATION.md)已完成未来接入范围的精确表示条件及原生反例，并信用仓库已有交错支承研究。本文第6节的历史性下一步按该接续理解；原37项证明和范围保持不变。The broader interleaving task is credited where already complete; the subsequent access-scope bound does not replace this frozen-context result.
 
-2026-10-08，Asia/Bangkok。Ren 再次要求“请继续”；候选、形式化、来源比较及作者反审为 AI 工作。[原话及范围](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md)；[当前理论第7–10节](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md)。
+2026-10-08，Asia/Bangkok。Ren 再次要求“请继续”；候选、形式化、来源比较及作者反审为 AI 工作。[原话及范围](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md)；[当前理论第7–10节](../../../../theories/becoming/chapters/GENERATED-LOGIC.md)。
 
 **有范围连接已完成：从既有占用规律推出每段局部历史允许的固定上下文，并检验摘要保留哪些执行与步数预算判断。** 新37项定理通过 Lean；全部220项依赖闭包审计通过。总量摘要失败；相关支承位摘要成功于指定工作负载，但丢失完整初始相容性。该整合没有建立逻辑学新颖性或普遍生成必然性。
 

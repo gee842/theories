@@ -1,6 +1,6 @@
 # Organized activity across scales: composition and biological correspondence
 
-8 October 2026. AI-authored continuation of [Ren's completion request](../../../../sources/15-codex-theory-conversations/2026-10-08-relations-across-scales.md). Read under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md).
+8 October 2026. AI-authored continuation of [Ren's completion request](../../../../sources/15-codex-theory-conversations/2026-10-08-relations-across-scales.md). Read under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md).
 
 **Result:** a connected conditional mechanism now has 26 newly checked Lean theorems. Published biological measurements have been reanalyzed, and three primary studies constrain the correspondence. This completes this formal construction and evidence assessment. It does **not** complete empirical certification of the entire cell–organ–body–ecosystem account. The stronger request remains partly unmet; its empirical obligations below have not been redefined away.
 

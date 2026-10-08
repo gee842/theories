@@ -1,6 +1,6 @@
 # 良知的生成演化：三个可区分的经验接口
 
-2026年10月7日。AI 来源评估，回应[Ren 的演化方向](../../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md)。所检验的连接是：共同生活怎样形成感应与照料，实际后果怎样参与其再形成、传递和差异延续。遵循[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)，不把种系、发育和社会关系设成互不相干的来源。以下是三项原始研究的限定阅读，未做新实验、重分析或系统综述。
+2026年10月7日。AI 来源评估，回应[Ren 的演化方向](../../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md)。所检验的连接是：共同生活怎样形成感应与照料，实际后果怎样参与其再形成、传递和差异延续。遵循[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)，不把种系、发育和社会关系设成互不相干的来源。以下是三项原始研究的限定阅读，未做新实验、重分析或系统综述。
 
 ## 1. 共同育幼与主动供给：比较关联
 

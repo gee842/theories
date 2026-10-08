@@ -10,7 +10,7 @@ For zero and successor, the proposed subject is arbitrary finite iteration with 
 
 This supports a positive constitutive reading. The forms need no independent bearer behind their formation and identity. A variable for an arbitrary form refers to the same subject across substitution and interpretation. The domain's unity concerns the common rule and its admissible uses, not the simultaneous physical presence of every numeral. Quantification is intended to range over that whole role, including forms never physically written down.
 
-The [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) makes the proposed relationship explicit. Actual constructions, descriptions of their rules and mathematical uses of those descriptions form within one unfolding. The mathematical role abstracts from particular occasions while retaining the distinctions relevant to the question. It is not an independent observer imposing unity on an unrelated stock of objects.
+The [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) makes the proposed relationship explicit. Actual constructions, descriptions of their rules and mathematical uses of those descriptions form within one unfolding. The mathematical role abstracts from particular occasions while retaining the distinctions relevant to the question. It is not an independent observer imposing unity on an unrelated stock of objects.
 
 The argument's strongest point is also its exact premise: the constructors exhaust the subject's sources. If that content is justified, induction has an explanation. If it is merely asserted as another name for the desired induction principle, the account has not independently warranted it.
 
@@ -32,7 +32,7 @@ The favorable proposal treats a rule as more than a record of past performances.
 
 But generic use and collective admission still require a connection. One can understand permission to continue forming without accepting a completed domain as an available argument of further mathematical operations. The proposed constitutive identification says that the domain is precisely the stable role of all these admitted finite forms, so no additional substance must be created. This is an affirmative philosophical reason for collective admission. It is not yet a deduction of its entitlement from the bare occurrence of some formative activity.
 
-The [current premise ledger](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md) already treats ordinary inductive construction as a resource of the mathematical presentation. Its successful finite-history derivations therefore cannot be recycled as an independent derivation of that resource. Nothing here demands a physically finished infinity or a separate finite recipe for every object of every mathematical domain. The issue is this particular collective formation rule's warrant.
+The [current premise ledger](../../../../theories/becoming/chapters/FOUNDATION-PREMISES.md) already treats ordinary inductive construction as a resource of the mathematical presentation. Its successful finite-history derivations therefore cannot be recycled as an independent derivation of that resource. Nothing here demands a physically finished infinity or a separate finite recipe for every object of every mathematical domain. The issue is this particular collective formation rule's warrant.
 
 ## 3. Formation identity is a separate obligation
 

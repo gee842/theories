@@ -1,6 +1,6 @@
 # Practical reach forms within the continuing relation
 
-6 October 2026. AI-authored review under the [shared nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Named connection: **formation of a consequential distinction and practical response boundary → consequences for their reconstruction**. The selected case is the existing [joint-formation game](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/JOINT-FORMATION.md). This review reads its executable law and saved histories; it installs no controller and reports no new simulation.
+6 October 2026. AI-authored review under the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Named connection: **formation of a consequential distinction and practical response boundary → consequences for their reconstruction**. The selected case is the existing [joint-formation game](../../../../theories/becoming/chapters/JOINT-FORMATION.md). This review reads its executable law and saved histories; it installs no controller and reports no new simulation.
 
 ## 1. What configuration is actually present
 

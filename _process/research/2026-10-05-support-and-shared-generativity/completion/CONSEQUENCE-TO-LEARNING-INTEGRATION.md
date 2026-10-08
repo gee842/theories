@@ -1,7 +1,7 @@
 # The paid teaching interface and its downstream contract
 
 6 October 2026. AI-authored integration under the [governing
-roadmap](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md).
+roadmap](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md).
 The transition addressed is **consequence-sensitive activity → acquired
 teaching evidence → maintained prediction → inputs to the concern results**.
 The concurrent selector-revision study addresses how an effective selector
@@ -51,7 +51,7 @@ every effective response to pass through the supplied predictor.
 
 ## Connection to the common formal account
 
-The parallel [accessible-revision interface](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LEARNING-INTERFACE.md)
+The parallel [accessible-revision interface](../../../../theories/becoming/chapters/LEARNING-INTERFACE.md)
 already proves that identical complete controller inputs cannot produce
 different required revisions from the same inherited memory. The numerical
 target criterion here is a specialization of that identification issue, not an

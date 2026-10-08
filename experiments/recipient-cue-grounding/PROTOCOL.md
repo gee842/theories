@@ -1,6 +1,6 @@
 # Retrospective paired reanalysis of a public data preview
 
-AI-authored analysis plan, 6 October 2026. Connection: **externally acquired social cue → recipient-directed food-access action**. This supports [generative grounding](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md); it neither identifies recipient-specific reasoning nor completes the alignment account.
+AI-authored analysis plan, 6 October 2026. Connection: **externally acquired social cue → recipient-directed food-access action**. This supports [generative grounding](../../theories/becoming/chapters/GENERATIVE-GROUNDING.md); it neither identifies recipient-specific reasoning nor completes the alignment account.
 
 ## Exposure, scope and provenance
 

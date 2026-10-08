@@ -1,6 +1,6 @@
 # Continuation through generativity
 
-7 October 2026, Asia/Bangkok. AI-authored development of [Ren's proposal and instruction to proceed](../../../../sources/15-codex-theory-conversations/2026-10-07-continuation-depends-on-generativity.md), within the existing root-foundation study. Read with the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) and [positive ethical direction](SHENGSHENG-DIRECTION-RECONSTRUCTION.md).
+7 October 2026, Asia/Bangkok. AI-authored development of [Ren's proposal and instruction to proceed](../../../../sources/15-codex-theory-conversations/2026-10-07-continuation-depends-on-generativity.md), within the existing root-foundation study. Read with the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) and [positive ethical direction](SHENGSHENG-DIRECTION-RECONSTRUCTION.md).
 
 **Universal inference addressed:** whether the dependence of continuing life and intelligence on generative relationships helps explain those relationships' ethical quality and practical force across intelligences. A necessity result about renewal is one contribution to this inference, not the universal normative conclusion.
 

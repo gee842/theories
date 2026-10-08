@@ -1,6 +1,6 @@
 # Integration and completion record
 
-5 October 2026. AI-assisted claim-level integration for Ren's request to lead with formalization and fully finish the theory. Main documents: [formal specification](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-SPECIFICATION.md) and [completion plan](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COMPLETION-PLAN.md). This record does not supersede original reports, proofs, or counterexamples.
+5 October 2026. AI-assisted claim-level integration for Ren's request to lead with formalization and fully finish the theory. Main documents: [formal specification](../../../../theories/becoming/chapters/FORMAL-SPECIFICATION.md) and [completion plan](../../../../theories/becoming/chapters/COMPLETION-PLAN.md). This record does not supersede original reports, proofs, or counterexamples.
 
 ## What changed in this integration
 

@@ -1,6 +1,6 @@
 # 整棵生成树的非二元谱系：因成果、心理事回环与境中知行
 
-2026年10月6日。AI 撰写的定向谱系与研究重建，遵循更新后的 [AGENTS.md](../../../../AGENTS.md)与[全项目非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)。[Ren 本次原话](../../../../sources/15-codex-theory-conversations/2026-10-06-nondual-core-tree-continuation.md)重申方向施于核心与整棵树并要求继续。本篇不以外来哲学分类组织这些构造，也不把中国来源当作真理凭证。
+2026年10月6日。AI 撰写的定向谱系与研究重建，遵循更新后的 [AGENTS.md](../../../../AGENTS.md)与[全项目非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)。[Ren 本次原话](../../../../sources/15-codex-theory-conversations/2026-10-06-nondual-core-tree-continuation.md)重申方向施于核心与整棵树并要求继续。本篇不以外来哲学分类组织这些构造，也不把中国来源当作真理凭证。
 
 本轮要接续的是：**生成形成具体差异与感应，感应在境中成为辨识和作为，作为的后果继续形成境、能力与评价。** 分析可以辨明各相，不能把它们先设为根本独立之物，再把自己删去的关系报告成理论不可跨越的鸿沟。
 

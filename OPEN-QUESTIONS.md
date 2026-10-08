@@ -10,14 +10,14 @@
 
 | Result / 成果 | Recorded scope / 已登记范围 | Source / 来源 |
 |---|---|---|
-| [科学探究之必要关系基础 / Necessary relational foundation of scientific inquiry](theories/shengsheng-buxi-generative-existence/results/records/scientific-inquiry-foundation.md) | open | [SCIENTIFIC-PHILOSOPHY.md](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md) |
-| [生成与变化之论：完整根基目标 / Theory of Becoming: full foundational target](theories/shengsheng-buxi-generative-existence/results/records/theory-of-becoming-foundation.md) | open | [BECOMING-FOUNDATION.md](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BECOMING-FOUNDATION.md) |
-| [普遍实践权威的更强目标 / Stronger universal practical warrant target](theories/shengsheng-buxi-generative-existence/results/records/universal-practical-warrant.md) | open | [ZERO-AXIOM-PRACTICAL-JUDGMENT.md](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md) |
-| [核心作为智慧之根的目标 / Core as the root of wisdom target](theories/shengsheng-buxi-generative-existence/results/records/wisdom-root.md) | open | [CORE-CONSTRAINT-AND-WISDOM.md](_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md) |
+| [科学探究之必要关系基础 / Necessary relational foundation of scientific inquiry](theories/becoming/results/records/scientific-inquiry-foundation.md) | open | [SCIENTIFIC-PHILOSOPHY.md](theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md) |
+| [生成与变化之论：完整根基目标 / Theory of Becoming: full foundational target](theories/becoming/results/records/theory-of-becoming-foundation.md) | open | [BECOMING-FOUNDATION.md](theories/becoming/chapters/BECOMING-FOUNDATION.md) |
+| [普遍实践权威的更强目标 / Stronger universal practical warrant target](theories/becoming/results/records/universal-practical-warrant.md) | open | [ZERO-AXIOM-PRACTICAL-JUDGMENT.md](theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md) |
+| [核心作为智慧之根的目标 / Core as the root of wisdom target](theories/becoming/results/records/wisdom-root.md) | open | [CORE-CONSTRAINT-AND-WISDOM.md](_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md) |
 
 ## Discovery and evidence / 检索与证据
 
-[Full reading catalogue / 完整阅读目录](theories/shengsheng-buxi-generative-existence/results/README.md) · [Curated generativity chain / 生成链](theories/shengsheng-buxi-generative-existence/results/GENERATIVITY-CHAIN.md) · [Dated session map / 会话快照](theories/shengsheng-buxi-generative-existence/results/SESSION-RESULTS.md) · [Broader theory map / 更广理论图谱](MAP.md)
+[Full reading catalogue / 完整阅读目录](theories/becoming/results/README.md) · [Curated generativity chain / 生成链](theories/becoming/results/GENERATIVITY-CHAIN.md) · [Dated session map / 会话快照](theories/becoming/results/SESSION-RESULTS.md) · [Broader theory map / 更广理论图谱](MAP.md)
 
 ```sh
 make research-check

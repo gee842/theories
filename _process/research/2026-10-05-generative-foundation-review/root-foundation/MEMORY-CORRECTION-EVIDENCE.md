@@ -1,6 +1,6 @@
 # Memory correction and later decisions: primary evidence audit
 
-6 October 2026. Supporting connection: **warranted correction → retained/transferred evidence → a later consumer's decision**. No new model calls, behavioral aggregates or agent execution. This adds lifecycle and handoff constraints to the [AgentDojo audit](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/TOOL-EVIDENCE-AND-AUTHORITY.md) and [cross-domain identification](CROSS-DOMAIN-IDENTIFICATION.md); neither already establishes the whole connection.
+6 October 2026. Supporting connection: **warranted correction → retained/transferred evidence → a later consumer's decision**. No new model calls, behavioral aggregates or agent execution. This adds lifecycle and handoff constraints to the [AgentDojo audit](../../../../theories/becoming/chapters/TOOL-EVIDENCE-AND-AUTHORITY.md) and [cross-domain identification](CROSS-DOMAIN-IDENTIFICATION.md); neither already establishes the whole connection.
 
 **Outcome: no eligible per-example model-output corpus was accessible in the inspected releases.** The sources nevertheless identify two substantive boundaries: a repaired memory is not an observed later action, and a restricted observation cannot automatically establish universal attribution impossibility. The mathematical and independent reviews handle those claims separately. Publication-level results remain reported results.
 

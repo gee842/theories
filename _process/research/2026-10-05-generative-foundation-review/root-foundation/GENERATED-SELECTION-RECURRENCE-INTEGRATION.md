@@ -1,12 +1,12 @@
 # Generated reconstruction and evolutionary recurrence
 
-8 October 2026, Asia/Bangkok. AI-authored formal integration, substantive self-review and primary-source assessment supporting [The Theory of Evolution](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md). **New result: transfer entries are computed from actual carrier pools, reconfiguration can precede their production, and a conventional population recurrence is recovered under exact hypotheses.** The rule computing the entries remains supplied.
+8 October 2026, Asia/Bangkok. AI-authored formal integration, substantive self-review and primary-source assessment supporting [The Theory of Evolution](../../../../theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md). **New result: transfer entries are computed from actual carrier pools, reconfiguration can precede their production, and a conventional population recurrence is recovered under exact hypotheses.** The rule computing the entries remains supplied.
 
 ## Inference advanced
 
 The [existing inheritance study](RECURSIVE-SELECTION-INHERITANCE-MATH.md) already connects reconstruction to actual successor operation with finite accounts. It supplies the transfer table for each assembly. This continuation removes that per-assembly table input for one declared reconstruction recipe. It does not remove the recipe itself, derive its occurrence probability, or prove that evolution selects it.
 
-The universal explanatory connection advanced is **earlier organization and effects → actually available successor material → operative daughter organization → later differential continuation**. For the ethical programme it supplies a possible mechanism of inherited orientation and its failure, not an inference from success to justified good. The [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) governs both readings.
+The universal explanatory connection advanced is **earlier organization and effects → actually available successor material → operative daughter organization → later differential continuation**. For the ethical programme it supplies a possible mechanism of inherited orientation and its failure, not an inference from success to justified good. The [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) governs both readings.
 
 ## Mechanism and correspondence
 
@@ -99,4 +99,4 @@ Run from the repository root:
 python3 experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generated-selection-recurrence-verification/check.py
 ```
 
-**Next connection:** formation and inherited variation of the reconstruction mechanism, joined to actual restoration of continuing conditions and compared with equally informed conventional mechanisms. The generic updater and learning results can contribute only through checked, compatible interfaces. The six requirements in the [current formulation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md#completion-requirements) remain the full objective; this round advances their second and third rows without completing either at universal scope.
+**Next connection:** formation and inherited variation of the reconstruction mechanism, joined to actual restoration of continuing conditions and compared with equally informed conventional mechanisms. The generic updater and learning results can contribute only through checked, compatible interfaces. The six requirements in the [current formulation](../../../../theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md#completion-requirements) remain the full objective; this round advances their second and third rows without completing either at universal scope.

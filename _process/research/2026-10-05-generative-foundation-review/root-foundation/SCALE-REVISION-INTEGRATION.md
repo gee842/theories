@@ -1,6 +1,6 @@
 # 取得证据后的尺度修订 / Scale revision after acquired evidence
 
-8 October 2026. Continuation of Ren's [relations-across-scales direction](../../../../sources/15-codex-theory-conversations/2026-10-08-relations-across-scales.md). Current account: [sections 9–10](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md). This note is AI-authored. Counterreview below is by the same agent, not an independent-agent review.
+8 October 2026. Continuation of Ren's [relations-across-scales direction](../../../../sources/15-codex-theory-conversations/2026-10-08-relations-across-scales.md). Current account: [sections 9–10](../../../../theories/becoming/chapters/RELATIONS-ACROSS-SCALES.md). This note is AI-authored. Counterreview below is by the same agent, not an independent-agent review.
 
 ## Selected transition and affirmative result
 
@@ -27,7 +27,7 @@ For the primary history, activation leaves `(a,b,S)=(12,3,1)`. Probe, inspection
 
 Four funded operations each cost 1044 abstract work ticks under the inherited tariff, using logical real-valued registers. `fuel+spent` is preserved for every finite event history. This does not show finite-bit realization, measured energy conservation or hardware accounting. The successful response balance includes the declared loss: `a′+source′+loss=a+source`. The second coordinate stays fixed. Neither equation models every relation in an ecosystem.
 
-**Reuse scope.** The [abstraction-acquisition lineage](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ABSTRACTION-ACQUISITION.md) already acquires discriminating distinctions. We reuse the [remaining-dependency code](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean)'s charger and context decoder, not its entire ancestral numerical execution. Its earlier learner, supplied teacher and historical proof scope remain credited. No assertion that this two-view switch implements L* or migrates all earlier hand proofs to Lean is made. The [embodied scales study](EMBODIED-SCALES-INTEGRATION.md) supplies separate organizational and cognitive context; its 14 theorems are not included in the new 27 or replayed here.
+**Reuse scope.** The [abstraction-acquisition lineage](../../../../theories/becoming/chapters/ABSTRACTION-ACQUISITION.md) already acquires discriminating distinctions. We reuse the [remaining-dependency code](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean)'s charger and context decoder, not its entire ancestral numerical execution. Its earlier learner, supplied teacher and historical proof scope remain credited. No assertion that this two-view switch implements L* or migrates all earlier hand proofs to Lean is made. The [embodied scales study](EMBODIED-SCALES-INTEGRATION.md) supplies separate organizational and cognitive context; its 14 theorems are not included in the new 27 or replayed here.
 
 ## Checked claims and exact hypotheses
 

@@ -1,6 +1,6 @@
 # Integration review: constitutive force and duplicate authorization
 
-6 October 2026. Internal AI review of the [current canonical account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md), [argument](CONSTITUTIVE-ANSWER-ARGUMENT.md), [counterreview](CONSTITUTIVE-ANSWER-COUNTERREVIEW.md) and [source comparison](CONSTITUTIVE-ANSWER-SOURCES.md). The complete current texts were read. This accepts a scoped conceptual clarification; it does not certify a universal ethical derivation or independent peer review.
+6 October 2026. Internal AI review of the [current canonical account](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md), [argument](CONSTITUTIVE-ANSWER-ARGUMENT.md), [counterreview](CONSTITUTIVE-ANSWER-COUNTERREVIEW.md) and [source comparison](CONSTITUTIVE-ANSWER-SOURCES.md). The complete current texts were read. This accepts a scoped conceptual clarification; it does not certify a universal ethical derivation or independent peer review.
 
 ## Reviewed snapshot
 

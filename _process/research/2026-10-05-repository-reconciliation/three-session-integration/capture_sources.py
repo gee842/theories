@@ -116,8 +116,8 @@ for rel in sorted(modified + untracked):
     belongs = (rel.startswith('experiments/shared-renewal-capability/') or
                rel.startswith('_process/research/2026-10-05-support-and-shared-generativity/completion/') or
                rel.startswith('sources/24-rna-network-evidence-2026-10-05/repeated-renewal-addition/') or
-               rel in {'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COMPLETION-PLAN.md',
-                       'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-SPECIFICATION.md'})
+               rel in {'theories/becoming/chapters/COMPLETION-PLAN.md',
+                       'theories/becoming/chapters/FORMAL-SPECIFICATION.md'})
     if not belongs:
         continue
     data = (REPO / rel).read_bytes()

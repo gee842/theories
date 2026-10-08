@@ -31,9 +31,9 @@ Candidate explanation: the core articulates relations that constrain and enable 
 
 约束首先指**同一展开中，什么可以共同发生、什么依赖什么、改变一处会怎样改变后续可能**。它既限制不相容的实现，也参与形成原先没有的能力。不是先有一团无关系的活动，再由另一类独立存在的“约束物”从外面管住它。
 
-活动中形成的结构可以在一个尺度上相对稳定，影响后续变化，又在另一个过程或尺度中形成、耗损或被改造。何时可作这种区分，须由具体关系说明。遵循[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)，不把约束／流、主体／环境当作预先独立的根本种类。
+活动中形成的结构可以在一个尺度上相对稳定，影响后续变化，又在另一个过程或尺度中形成、耗损或被改造。何时可作这种区分，须由具体关系说明。遵循[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)，不把约束／流、主体／环境当作预先独立的根本种类。
 
-已有[数学核心](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md)提供有限历史、实际共同中间条件、可达性和性质保持的形式表达。这使推论不能在连接处悄悄更换实际条件。不过，任意关系 `R` 都能作为其模型输入：**这层通用接口本身还不选择具体的生成规律，更不自动选择伦理方向。**
+已有[数学核心](../../../../theories/becoming/chapters/MATHEMATICAL-CORE.md)提供有限历史、实际共同中间条件、可达性和性质保持的形式表达。这使推论不能在连接处悄悄更换实际条件。不过，任意关系 `R` 都能作为其模型输入：**这层通用接口本身还不选择具体的生成规律，更不自动选择伦理方向。**
 
 因此，必须分别指出两种解释贡献：形式核心保证声明条件下的推论；实质生成理论说明哪些依存和变化确实存在、为什么存在、范围是什么。这里区分的是论证工作，不是两个现实领域。不能让“core”在空泛的表示能力与内容丰富的生成理论之间无标记地切换。
 
@@ -41,7 +41,7 @@ Candidate explanation: the core articulates relations that constrain and enable 
 
 从一个明确的实际关系开始：某种生活的继续，有赖于一些可以维持、重建或替换的条件。如果这段生活在这里具有正当的继续根据，那么相关回应是否真的支持这些条件，就不是任意偏好的问题。切断所有实现途径不能算作履行该继续要求；一个正当且有效的重建，可以因为它使这段生活得以实现而具有支持理由。
 
-这复用[一般生成要求论证 §§3–7](GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md)，不提出另一套伦理门槛。它已经说明：继续生活与使其实现的关系具有相连的根据，无须再为每种支持条件证明一种与生活永久分离的内在价值。当前采用的 G0 与 J1–J4 仍在[实践判断](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md)中公开；不重开已完成的公理路线。
+这复用[一般生成要求论证 §§3–7](GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md)，不提出另一套伦理门槛。它已经说明：继续生活与使其实现的关系具有相连的根据，无须再为每种支持条件证明一种与生活永久分离的内在价值。当前采用的 G0 与 J1–J4 仍在[实践判断](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md)中公开；不重开已完成的公理路线。
 
 据此，可以把 Ren 的直觉深化为一个**有范围的候选表述**：
 
@@ -64,9 +64,9 @@ Candidate explanation: the core articulates relations that constrain and enable 
 | 继续追问什么 | 已有关系怎样限制回答 | 可以联系的智慧主题及范围 |
 |---|---|---|
 | 把一次实现延长为持续实现 | [已有更新论证](CONTINUATION-RENEWAL-MATH.md)在无更新则按良基关系下降等假设下，限制无限不更新的继续 | 维护、休息、重建；不是每种活动都必耗损，也不是人人必须不断创新 |
-| 将两种单独有效的活动放进同一段历史 | [已有关联核心](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md)要求实际接合条件；完整共同可行性不能由分开成功替代 | 协调、时机、适度；单靠“各自都好”不能完成共同实现的论证 |
+| 将两种单独有效的活动放进同一段历史 | [已有关联核心](../../../../theories/becoming/chapters/MATHEMATICAL-CORE.md)要求实际接合条件；完整共同可行性不能由分开成功替代 | 协调、时机、适度；单靠“各自都好”不能完成共同实现的论证 |
 | 继续使用刚刚成功的回应 | [既有相反回应见证](WISDOM-CONTEXT-INTEGRATION.md)显示，成功可实际改变下一步的适当动作，而目标未变 | 知止、因时而变；不是一切成功都要求反向行动 |
-| 将同样审查用于判断自身 | [慧根与情境研究](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md)保留前提、推论与实际对应的不同工作；给定信息合并可漏掉所需区别 | 审慎、纠错；具体谦逊、信任或调查要求还需要证据条件和实践代价的说明 |
+| 将同样审查用于判断自身 | [慧根与情境研究](../../../../theories/becoming/chapters/HUIGEN.md)保留前提、推论与实际对应的不同工作；给定信息合并可漏掉所需区别 | 审慎、纠错；具体谦逊、信任或调查要求还需要证据条件和实践代价的说明 |
 | 将后续回应放回已经形成的共同安排 | [机会修订研究](CHANCE-REVISION-INTEGRATION.md)保留有效安排与其继续的关系，终点分布本身可遗漏它 | 守信、承担、正当改约；因果关系或一次宣布本身不建立无限义务 |
 
 这张表提出的是**推演路线及其已完成的局部支撑**，不是五条新的普遍定理，也不是把中文主题词的全部历史内涵推导出来。每条路线都能导向允许、禁止或尚未确定的结论；不能只选得到赞许格言的分支。
@@ -137,7 +137,7 @@ The objective is to establish the core as the root of wisdom: indispensable cons
 
 这个结果的解释用途是：一项辨别能力所依赖的区别，可以通过能力失败而被定位。它**没有**证明一切智慧都需要该传感器、必须作出同一种动作、始终成功或必须显式掌握一个模型。随机成功、可靠能力、对有限证据负责的判断也不是同一目标。要推广，需要先固定各自声称的能力，再检查所有实际允许的实现方式。
 
-同样，[慧根的有效生成结果](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md#2-the-exact-transfer-theorem)已经把根部前提的根据与下游推论的有效性相连。它回答“根已成立时，正当展开如何继承根据”；根在全部智慧中的必要性，不能反过来靠该传递结果获得。两类已有结果因此可作为上下两端的支点，尚未自动接成完整证明。
+同样，[慧根的有效生成结果](../../../../theories/becoming/chapters/HUIGEN.md#2-the-exact-transfer-theorem)已经把根部前提的根据与下游推论的有效性相连。它回答“根已成立时，正当展开如何继承根据”；根在全部智慧中的必要性，不能反过来靠该传递结果获得。两类已有结果因此可作为上下两端的支点，尚未自动接成完整证明。
 
 ### 8.4 证明需要闭合的连接
 
@@ -196,7 +196,7 @@ This continuation corrects the scope of the necessity test. A true numerical ris
 <a id="wisdom-scope-and-whole-root"></a>
 ## 12. 整个根要解释什么：智慧内容与承担单位 / Wisdom content and the unit of the root claim
 
-2026-10-08，承接[Ren 要求继续](../../../../sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md#continuing-wisdom-scope)。**成果接续：**更新开放目标[`wisdom-root`](../../../../theories/shengsheng-buxi-generative-existence/results/records/wisdom-root.json)，复用`risk-certificate-outcome-distinction`、原回应／目的根据结果及已接受的条件性基础。本轮新增量是原典支持的范围比较及根基论证修正；没有新增数学命题、Lean运行、经验实验或独立agent验收。G0/J/E、具体形成条件和原证明范围保持原位。
+2026-10-08，承接[Ren 要求继续](../../../../sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md#continuing-wisdom-scope)。**成果接续：**更新开放目标[`wisdom-root`](../../../../theories/becoming/results/records/wisdom-root.json)，复用`risk-certificate-outcome-distinction`、原回应／目的根据结果及已接受的条件性基础。本轮新增量是原典支持的范围比较及根基论证修正；没有新增数学命题、Lean运行、经验实验或独立agent验收。G0/J/E、具体形成条件和原证明范围保持原位。
 
 ### 12.1 从同一活动中的分化开始
 
@@ -220,7 +220,7 @@ This continuation corrects the scope of the necessity test. A true numerical ris
 
 **认识自己的范围。** 柏拉图《申辩》中，苏格拉底承认工匠拥有他没有的专长，同时批评从专长扩张为对其他重大问题的自信。这支持区分有所知与越界自许，不能将智慧读成没有知识或永不肯定。神谕的叙事角色须保留。[原文：Jowett译本，考察政治家、诗人与工匠的连续段落](https://classics.mit.edu/Plato/apology.html)。我们的重建是：局部胜任、对其范围的恰当把握，以及一项进一步结论的根据，需要分别说明；只有反复说“我不知道”并未给出这种能力。
 
-**理论智慧与实践智慧。** 亚里士多德《尼各马可伦理学》VI.5、7分别讨论对可行的人类善的判断，以及对较高对象和原理的认识；后者可以不擅长个人事务。VI.12–13又区分善用手段的聪明与涉及德性的实践智慧。[原文：Ross译本，第VI卷](https://classics.mit.edu/Aristotle/nicomachaen.6.vi.html)。因此，“每一种智慧都以立即调节行动为目标”不能忠实覆盖这里的理论智慧。解释认识能力怎样形成，也不等于证明其所知对象本身必定在时间中生成；[既有数学根基审计](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md#2-five-distinct-kinds-of-commitment)已要求区分认识形成与数学根据。
+**理论智慧与实践智慧。** 亚里士多德《尼各马可伦理学》VI.5、7分别讨论对可行的人类善的判断，以及对较高对象和原理的认识；后者可以不擅长个人事务。VI.12–13又区分善用手段的聪明与涉及德性的实践智慧。[原文：Ross译本，第VI卷](https://classics.mit.edu/Aristotle/nicomachaen.6.vi.html)。因此，“每一种智慧都以立即调节行动为目标”不能忠实覆盖这里的理论智慧。解释认识能力怎样形成，也不等于证明其所知对象本身必定在时间中生成；[既有数学根基审计](../../../../theories/becoming/chapters/FOUNDATION-PREMISES.md#2-five-distinct-kinds-of-commitment)已要求区分认识形成与数学根据。
 
 **熟练应变与养生。** 《庄子·养生主》的庖丁段落同时叙述长期操练、顺应结构和遇难处时迟缓戒惧，最后才转向养生领会；不能只保留流畅熟练。篇内还有死亡与顺应的讨论，故不宜直接读成无限延长个体存续。[所读原文及固定版本](https://zh.wikisource.org/w/index.php?title=莊子/養生主&oldid=11117686)。我们的候选解释可以追踪操作中的辨别与调整，不要求每一步都有显式命题演绎。但解牛这一活动并不自动证明对一切生命的普遍善；刀的保持、技艺恰当与整体伦理评价仍须有各自根据。寓言也不是技能形成的经验实验。
 
@@ -258,7 +258,7 @@ This continuation corrects the scope of the necessity test. A true numerical ris
 
 **对照的实际结果：**本次材料没有排除这个替代说明。它能保留局部知识与越界、理论与实践、流畅与审慎的区别。因此，此次原典符合度支持候选的覆盖修正，尚不判定统一core比这种说明更必要。我们不能仅因对手提到学习和关系就宣布它“已经接受整个core”；也不能因它不使用我们的名称就宣布它不充分。
 
-正面差异应落在进一步解释工作上：共同根能否说明这些区别怎样共同形成、互相限制并使新判断取得根据，同时减少逐项另行输入的答案。比如，从技术上能做进入“此处有理由这样做”，需要哪些新证据、生活关系和公开规范根据；转换时不能丢弃技术判断已知的限制，也不能让技术成功代替伦理根据。[已完成的目的形成与修订](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md)已经把取得形成知识、评价目标后果、修订目标及实际后续行动接在同一有限实现中；[评价应用](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md)也已有带公开根据的认识／行动连接，不能重新标成缺口。新的待核对处是：这些已成立连接保留了哪些在独立智慧内容中不可省略的关系，以及承认同样实际联系的对照解释究竟遗漏了什么。当前三个原典的符合度尚未完成这项必要性比较。
+正面差异应落在进一步解释工作上：共同根能否说明这些区别怎样共同形成、互相限制并使新判断取得根据，同时减少逐项另行输入的答案。比如，从技术上能做进入“此处有理由这样做”，需要哪些新证据、生活关系和公开规范根据；转换时不能丢弃技术判断已知的限制，也不能让技术成功代替伦理根据。[已完成的目的形成与修订](../../../../theories/becoming/chapters/GOAL-FORMATION-AND-REVISION.md)已经把取得形成知识、评价目标后果、修订目标及实际后续行动接在同一有限实现中；[评价应用](../../../../theories/becoming/chapters/EVALUATIVE-APPLICATION.md)也已有带公开根据的认识／行动连接，不能重新标成缺口。新的待核对处是：这些已成立连接保留了哪些在独立智慧内容中不可省略的关系，以及承认同样实际联系的对照解释究竟遗漏了什么。当前三个原典的符合度尚未完成这项必要性比较。
 
 **作者反审。** “恰当关系”若仅指一切已经被叫作智慧的东西，就是循环标签。本节因此保留文本自身的区分、实际损失、替代解释及明确未接通处，未将该词写成自动认证定义。理论智慧是否应包括文本所说的全部对象、庖丁故事应如何作伦理解释，也仍可争论。若一项被独立辩护的智慧在其真实范围内不需要某项根部承诺，须先检查我们是否混淆了判断、能力与完整解释；若同范围的实质必要性仍被反例击中，就修改该承诺，不能无限扩展“完整关系”保护它。
 
@@ -350,7 +350,7 @@ G0仍按授权作为基本正面规范起点采用，J与E明示。上述比较�
 
 本轮沿Ren的主张，把道德问题落实为：这种活动及其继续会使共同的生、实现条件、关系与可能性变成什么；我们据何判断其中形成、保住、损害和终结的内容。行动、承受后果、辨认与评价从同一展开中分化，评价和修订也会实际改变后续。没有在生成过程外另设一个裁判世界。
 
-依本仓库既有的完整历史要求，本文将“变化之后的结果”展开为实际生成后果，包括形成了怎样的关系、怎样形成、实际损失及后续条件。它不限于终点的产出数。过去的损害不会因为后来恢复而变成没有发生；承诺、依存和权限的历史也不能由一个终点数值替代。这是AI的解释展开，依[既有实践判断](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md)说明其根据，并非向Ren追加原话。
+依本仓库既有的完整历史要求，本文将“变化之后的结果”展开为实际生成后果，包括形成了怎样的关系、怎样形成、实际损失及后续条件。它不限于终点的产出数。过去的损害不会因为后来恢复而变成没有发生；承诺、依存和权限的历史也不能由一个终点数值替代。这是AI的解释展开，依[既有实践判断](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md)说明其根据，并非向Ren追加原话。
 
 G0公开肯定整体中的生及继续生成；J1–J4说明比较、保护、承担和实际选择的相应原则。它们评价真实变化，而不是要求无论关系怎样变化都重复同一个动作。原则的普遍适用范围与某个动作的适用条件需要分别说明。新的情况可以使保留、改变、交接或结束获得不同根据，而不因此使共同评价根据消失。
 
@@ -371,7 +371,7 @@ G0公开肯定整体中的生及继续生成；J1–J4说明比较、保护、�
 | [目的评价](WISDOM-GOAL-GROUNDING.md#fixed-law-comparison)中的`fixed_ground_rule_adequate` | 同一关系敏感规则在损失关系不同时支持保留或改变；具体回应变化有共同评价根据 | 原有限配置、确定性全配置要求及公开J2；不改写为全部智慧 |
 | [关系生成比较](RELATIONAL-GROUNDING-PROOF.md)中的`strict_comparison_cannot_factor_through_marginals` | 分别可能性不变而共同生成条件改变时，评价仍可有实质差别；模型必须保留改变判断的关系 | 既有共同事件律、明确比较C及实际生成／损失对应；不主张一切耦合均好 |
 | [可见未来的正面根据](POSITIVE-GROUND-UNCERTAINTY-PROOF.md)中的`contingent_generation_has_positive_ground` | 同一回应可以有确定的正面生成根据，同时未来生成的具体形态仍开放 | G0、同一回应和有根据的接续范围；正面方面不自动成为最终许可，范围扩大可要求修订 |
-| [一般实践判断](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md) | 从这些得失及实际关系说明保留、转化、交接、结束和差异化承担 | J1–J4、E及其独立说明的权限、负担与可行性；不重开已完成原则 |
+| [一般实践判断](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md) | 从这些得失及实际关系说明保留、转化、交接、结束和差异化承担 | J1–J4、E及其独立说明的权限、负担与可行性；不重开已完成原则 |
 
 这里的接通是哲学解释中的复用，未新建三个形式模型的共同历史或Lean组合证明。特别是，判断becoming包含对当前有根据的未来范围作判断；不要求知道所有将来，不将不同可能后继相加为一次共同实现，也不以某次失败直接取消此前有根据的风险判断。
 
@@ -396,7 +396,7 @@ G0公开肯定整体中的生及继续生成；J1–J4说明比较、保护、�
 
 ### 15.1 先固定根据与情境含义
 
-沿既有路线采用G0，肯定整体中的生与进一步生成。J1保留完整相关得失；J2在已说明的范围内赋予基本条件优先；J3说明有界承担；J4说明有权限、共同可行、未被充分击败的选择及必要程序。它们保持[既有实践论证](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md)的内容与代价，不声称J2–J4已由G0一句话单独证明。对正面未来内容形成支持理由，沿用`positive-ground-open-futures`公开的直接实践解释。
+沿既有路线采用G0，肯定整体中的生与进一步生成。J1保留完整相关得失；J2在已说明的范围内赋予基本条件优先；J3说明有界承担；J4说明有权限、共同可行、未被充分击败的选择及必要程序。它们保持[既有实践论证](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md)的内容与代价，不声称J2–J4已由G0一句话单独证明。对正面未来内容形成支持理由，沿用`positive-ground-open-futures`公开的直接实践解释。
 
 想象一段共同研习活动：参与、训练、维护和相互依存从共同活动中形成，既有安排改变后续掌握、进入活动的条件以及维护负担。下表讨论它的不同可能接续，并非已证明八个案例顺次发生。角色和承担沿形成的关系说明；没有先给彼此独立的主体各自赋值再做总和。
 

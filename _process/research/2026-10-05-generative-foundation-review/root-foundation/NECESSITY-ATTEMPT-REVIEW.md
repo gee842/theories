@@ -1,6 +1,6 @@
 # Can the reason in one's own suffering establish universal scope?
 
-6 October 2026. AI-authored constructive audit under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md), continuing the [warrant inquiry](WARRANT-OF-CONCERN-INTEGRATION.md). The target is a contributory ethical reason for every relevant response position under independently specified experiential and opportunity conditions. It is not inevitable caring behavior, compulsory assistance, or a uniquely necessary ontology. No new formal theorem or empirical result is claimed.
+6 October 2026. AI-authored constructive audit under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md), continuing the [warrant inquiry](WARRANT-OF-CONCERN-INTEGRATION.md). The target is a contributory ethical reason for every relevant response position under independently specified experiential and opportunity conditions. It is not inevitable caring behavior, compulsory assistance, or a uniquely necessary ontology. No new formal theorem or empirical result is claimed.
 
 ## 1. The strongest substantive rival
 

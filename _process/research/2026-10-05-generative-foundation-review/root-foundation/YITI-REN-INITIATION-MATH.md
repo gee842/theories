@@ -1,6 +1,6 @@
 # 整体共同形成中的启动限制：局部形式结果与反例
 
-状态：[来源绑定的新鲜验证](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-verification.json) 已通过。以下保留通用声明、有限历史与整体解释义务各自的范围。AI 撰写，承接[范围形成的数学账](YITI-REN-SCOPE-MATH.md)，遵循[共享非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)。
+状态：[来源绑定的新鲜验证](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/initiation-verification.json) 已通过。以下保留通用声明、有限历史与整体解释义务各自的范围。AI 撰写，承接[范围形成的数学账](YITI-REN-SCOPE-MATH.md)，遵循[共享非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)。
 
 [Ren 的整体积分纠正](../../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#整体积分的纠正)确定研究对象：活动、关系、后果、理解和评价共同形成的整个展开，不能改写成保护某一项预期，或将数项预期相加。下面的“保护已有 B”只是本轮可审计的**局部投影**，不代表生成整体的中心目标，也没有成为整体合宜性的充分判据。
 

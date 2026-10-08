@@ -1,6 +1,6 @@
 # 实际后果怎样进入完成判据的内容
 
-2026年10月6日。AI 撰写，承接 [Ren 同意继续目的形成研究](../../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md)，遵循[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)。本轮的指定连接是：**一项当前工作完成后，继续活动暴露出未被原判据保留的依赖；取得这种后果的关系，怎样改变内部所用的完成判据。** 本轮的运行、形式构建与独立审查均已完成并通过，所接受的是给定维护方向下的局部完成判据取得与实际使用；更强的目的起源及普遍伦理根据仍未完成。
+2026年10月6日。AI 撰写，承接 [Ren 同意继续目的形成研究](../../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md)，遵循[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)。本轮的指定连接是：**一项当前工作完成后，继续活动暴露出未被原判据保留的依赖；取得这种后果的关系，怎样改变内部所用的完成判据。** 本轮的运行、形式构建与独立审查均已完成并通过，所接受的是给定维护方向下的局部完成判据取得与实际使用；更强的目的起源及普遍伦理根据仍未完成。
 
 ## 1. 先修正上一轮的缺口描述
 

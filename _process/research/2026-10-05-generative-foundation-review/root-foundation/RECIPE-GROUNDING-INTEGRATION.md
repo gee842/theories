@@ -1,6 +1,6 @@
 # From an installed reliable recipe to an acquired reader
 
-6 October 2026. AI-authored continuation of [Ren's request](../../../../sources/15-codex-theory-conversations/2026-10-06-remaining-mechanism-grounding.md), governed by the [shared nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). The named connection is **physically differentiated encounters → acquired transduction relation → formed decoding connections → qualified use in the actual continuing learner**.
+6 October 2026. AI-authored continuation of [Ren's request](../../../../sources/15-codex-theory-conversations/2026-10-06-remaining-mechanism-grounding.md), governed by the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). The named connection is **physically differentiated encounters → acquired transduction relation → formed decoding connections → qualified use in the actual continuing learner**.
 
 **Complete at the declared native and formal scope:** independent reconstruction accepts all 33 cases; a fresh Lean build verifies 29 new mathematical statements and 800 saved correspondence certificates. This study does not declare the strict no-assumptions requirement met. It removes a particular installed functional recipe through a compatible acquired construction, preserving the conditions under which that construction fails.
 

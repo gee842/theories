@@ -1,6 +1,6 @@
 # Continuation and generativity: primary-source assessment
 
-7 October 2026. AI-authored assessment supporting Ren's thought that continuation of life, systems and humanity depends on being generative. It tests **renewal of enabling relationships → continued organized life → possible ethical significance**, under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Biological support is relevant to, but does not complete, the [universal normative target](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence).
+7 October 2026. AI-authored assessment supporting Ren's thought that continuation of life, systems and humanity depends on being generative. It tests **renewal of enabling relationships → continued organized life → possible ethical significance**, under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Biological support is relevant to, but does not complete, the [universal normative target](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence).
 
 ## Scope and prior work
 

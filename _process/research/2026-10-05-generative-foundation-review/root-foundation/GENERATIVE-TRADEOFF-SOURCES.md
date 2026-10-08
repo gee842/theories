@@ -4,7 +4,7 @@
 
 ## 1. 直接依据
 
-[生成公理与未来条件](../../../../sources/15-codex-theory-conversations/2026-10-07-generation-axiom-and-future.md)提供起点及条件性主张；[生生正面方向](../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md)保留不同“生”的范围；[一元关系方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)约束如何解释活动、认识和评价的分化。本轮不将保留原话、形式检查或下述经济模型视为 G0 的独立普遍证明。
+[生成公理与未来条件](../../../../sources/15-codex-theory-conversations/2026-10-07-generation-axiom-and-future.md)提供起点及条件性主张；[生生正面方向](../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md)保留不同“生”的范围；[一元关系方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)约束如何解释活动、认识和评价的分化。本轮不将保留原话、形式检查或下述经济模型视为 G0 的独立普遍证明。
 
 ## 2. Bounded primary-source assessment
 

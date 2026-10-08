@@ -2,7 +2,7 @@
 
 **Subsequent direct clarification, 7 October 2026:** [Ren's positive ethical direction and multiple scopes of 生](../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md) now guide the candidate's reconstruction. The earlier formulations and reading record below remain historical; §5 restores the directly stated positive genealogy alongside its qualification.
 
-6 October 2026. AI-authored genealogy under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Named connection: **good activity → changed conditions of further activity → further good**. The exact analogy already exists in Ren's words and subsequent theory drafts. This note recovers it without treating causal continuation as sufficient ethical justification.
+6 October 2026. AI-authored genealogy under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Named connection: **good activity → changed conditions of further activity → further good**. The exact analogy already exists in Ren's words and subsequent theory drafts. This note recovers it without treating causal continuation as sufficient ethical justification.
 
 ## 1. Ren's words, rather than later formulations
 
@@ -14,7 +14,7 @@ Ren's [2 May correction](../../../../sources/12-claude-ai-chats/2026-05-02_生�
 
 ## 2. The precise existing development
 
-The archived [14 July *生生不息论*](../../../../sources/07-shengsheng-buxi/downloads-2026-07-08/2026-07-14-生生不息论.md) is classified as **AI-drafted from Ren's ideas** in the [source synthesis](../../../../theories/shengsheng-buxi-generative-existence/synthesis-a-downloads-2026.md). The [inventory](../../../../sources/SOURCES.md) records reuse of identical bytes when the work was later supplied again. Its sentences must not be relabeled Ren's original speech.
+The archived [14 July *生生不息论*](../../../../sources/07-shengsheng-buxi/downloads-2026-07-08/2026-07-14-生生不息论.md) is classified as **AI-drafted from Ren's ideas** in the [source synthesis](../../../../theories/becoming/synthesis-a-downloads-2026.md). The [inventory](../../../../sources/SOURCES.md) records reuse of identical bytes when the work was later supplied again. Its sentences must not be relabeled Ren's original speech.
 
 Directly reread chapter 6 in full, chapter 13's opening through its feedback-reversal paragraph, and chapter 19 in full. Chapter 6 proposes “善者，成生也,” with concrete concern for life's conditions, truth, trust, cooperation, differentiated agency and revisability. It makes a strong claim that the ethical distinction is structural rather than arbitrarily imposed. This ontological claim is part of the candidate theory; the genealogy does not establish it by citation.
 
@@ -24,9 +24,9 @@ This is the relevant internal analogy. No new religious survey is required, and 
 
 ## 3. What “good” currently means
 
-The current [theory §10](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md#10-shared-generativity-and-善) proposes supporting, repairing and enabling affected beings' worthwhile possibilities, including their ability to understand, contest and change their conditions. This is an AI-assisted research formulation, explicitly presented as an ethical commitment. It is neither Ren's verbatim definition nor a proved consequence of survival.
+The current [theory §10](../../../../theories/becoming/chapters/THEORY.md#10-shared-generativity-and-善) proposes supporting, repairing and enabling affected beings' worthwhile possibilities, including their ability to understand, contest and change their conditions. This is an AI-assisted research formulation, explicitly presented as an ethical commitment. It is neither Ren's verbatim definition nor a proved consequence of survival.
 
-The [ethical foundation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md) also preserves rest, enjoyment, completion and chosen withdrawal. The [goodness investigation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md#can-goodness-be-generativity) tests relief that improves actual experience without changing later capacities. Consequently, the inherited proposal is richer than increasing future production. These are current conceptual commitments and tests, not newly measured effects.
+The [ethical foundation](../../../../theories/becoming/chapters/ETHICAL-FOUNDATION.md) also preserves rest, enjoyment, completion and chosen withdrawal. The [goodness investigation](../../../../theories/becoming/chapters/HUIGEN.md#can-goodness-be-generativity) tests relief that improves actual experience without changing later capacities. Consequently, the inherited proposal is richer than increasing future production. These are current conceptual commitments and tests, not newly measured effects.
 
 Three explanatory questions remain distinct within the same activity: what makes a transformation good for an affected being; what makes it positively favor an available choice; and how its effects help form subsequent goods. Calling the transformation morally good can already express a favorable judgment. Calling it beneficial identifies something whose practical scope still needs explanation. Neither use is clarified by silently switching to the other.
 

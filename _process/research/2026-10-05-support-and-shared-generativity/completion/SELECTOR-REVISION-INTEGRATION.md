@@ -1,6 +1,6 @@
 # Integrating costed selector revision and its conventional comparison
 
-6 October 2026. AI-authored integration under the [governing research path](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md), following [Ren's request](../../../../sources/15-codex-theory-conversations/2026-10-06-costed-selector-revision-request.md).
+6 October 2026. AI-authored integration under the [governing research path](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md), following [Ren's request](../../../../sources/15-codex-theory-conversations/2026-10-06-costed-selector-revision-request.md).
 
 **Completed local milestone:** a rule-bearing selector changes its cue-to-response mapping within a continuing compartment, through paid wear, reconstruction and actual return-funded retention under changed conditions. A sharp reserve/exposure recovery boundary is established. A conventional automaton exactly matches the mechanism; directed feedback performs better in the primary comparison. This is a conditional constructive result and a useful limit on novelty claims.
 
@@ -14,7 +14,7 @@
 | Negative regimes | Fixed mapping wins on capture count with two reversals; outcome-blind paid renewal can win at low reserve by avoiding maintenance expenses that otherwise make later revision insolvent. |
 | Scientific scope | Conditional explanation and exact bound, with targeted prior-art comparison. No historically new theorem, better learning algorithm or empirical identification is established. |
 
-The [canonical account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SELECTOR-REVISION.md) gives the mechanism and results. The [mathematics](SELECTOR-REVISION-MATH.md), [comparator assessment](SELECTOR-REVISION-COMPARATORS.md), [executable study](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/README.md), [formal package](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/README.md) and [internal review](SELECTOR-REVISION-REVIEW.md) preserve their distinct scopes.
+The [canonical account](../../../../theories/becoming/chapters/SELECTOR-REVISION.md) gives the mechanism and results. The [mathematics](SELECTOR-REVISION-MATH.md), [comparator assessment](SELECTOR-REVISION-COMPARATORS.md), [executable study](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/README.md), [formal package](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/README.md) and [internal review](SELECTOR-REVISION-REVIEW.md) preserve their distinct scopes.
 
 The exact program runs 55 case-arm comparisons and 945 conditional diagnostics. A separate representation reproduces all 13 reported metrics per arm and checks 85,932 conditional cases. Twenty-one new Lean declarations certify discrete event structure and deterministic costs, not stochastic probabilities or Python refinement. The reviews and executable checks are internal; proposed physical interpretations are uncalibrated.
 

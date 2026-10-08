@@ -36,7 +36,7 @@ Rubenstein and colleagues' [Causal Consistency of Structural Equation Models](ht
 
 Beckers and Halpern's [Abstracting Causal Models](https://ojs.aaai.org/index.php/AAAI/article/download/4117/3995), Example 3.4 and §§3.2–3.3, show why sparse tests, chosen distributions or overly flexible intervention mappings can conceal important differences. Definitions 3.12–3.14 constrain that mapping, while Examples 3.15–3.16 acknowledge limits to unrestricted interventions. The present review therefore requires an independently motivated question and boundary correspondence. The Lean episode interface is not thereby an implementation of their causal-abstraction definitions.
 
-These sources are methodological comparators, not empirical confirmation or evidence that the present formulation is uniquely fundamental. The original [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) governs the use of local analytical positions: preserve their relationships within the same unfolding and make omissions explicit.
+These sources are methodological comparators, not empirical confirmation or evidence that the present formulation is uniquely fundamental. The original [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) governs the use of local analytical positions: preserve their relationships within the same unfolding and make omissions explicit.
 
 ## 5. Formal and receipt review
 

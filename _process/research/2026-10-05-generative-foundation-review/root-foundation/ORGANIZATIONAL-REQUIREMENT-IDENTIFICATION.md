@@ -1,6 +1,6 @@
 # Identifying an operative requirement in organizational activity
 
-6 October 2026. AI-authored source and comparator investigation for **organizational dependency → operative continuation requirement**, under the [shared method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). This is a reading and identification note: no new model, experiment or scientific rerun. The [completed acquired-dependency continuation](ACQUIRED-DEPENDENCY-INTEGRATION.md) remains accepted at its stated scope.
+6 October 2026. AI-authored source and comparator investigation for **organizational dependency → operative continuation requirement**, under the [shared method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). This is a reading and identification note: no new model, experiment or scientific rerun. The [completed acquired-dependency continuation](ACQUIRED-DEPENDENCY-INTEGRATION.md) remains accepted at its stated scope.
 
 ## What the actual source already distinguishes
 

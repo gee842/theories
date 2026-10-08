@@ -26,6 +26,6 @@ Ren replied:
 
 ## Research connection
 
-The [resulting research](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md) investigates this necessity claim within the continuing [generative-grounding objective](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md). Its named connection is **formed, evidence-responsive learning → warranted and revisable scientific inquiry**, including the conditions under which methods and institutions themselves can be corrected.
+The [resulting research](../../theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md) investigates this necessity claim within the continuing [generative-grounding objective](../../theories/becoming/chapters/GENERATIVE-GROUNDING.md). Its named connection is **formed, evidence-responsive learning → warranted and revisable scientific inquiry**, including the conditions under which methods and institutions themselves can be corrected.
 
 Ren authorized the research direction, not its eventual findings. Arguments, mathematical formulations, source comparisons and limitations in the study are AI-authored research. Chinese formulations supplied by the study are AI-authored counterparts, not additional verbatim statements by Ren.

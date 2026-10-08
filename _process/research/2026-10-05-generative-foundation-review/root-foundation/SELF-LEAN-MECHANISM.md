@@ -1,6 +1,6 @@
 # History-conditioned distinctions and the remaining self-formation bridge
 
-6 October 2026. AI-written mechanism study and formal audit, not Ren's own formulation. The governing requirement remains [generated self and ethics](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-SELF-AND-ETHICS.md) under the [no-assumptions directive](../../../../sources/15-codex-theory-conversations/2026-10-06-no-assumptions-directive.md).
+6 October 2026. AI-written mechanism study and formal audit, not Ren's own formulation. The governing requirement remains [generated self and ethics](../../../../theories/becoming/chapters/GENERATED-SELF-AND-ETHICS.md) under the [no-assumptions directive](../../../../sources/15-codex-theory-conversations/2026-10-06-no-assumptions-directive.md).
 
 ## Result and exact scope
 

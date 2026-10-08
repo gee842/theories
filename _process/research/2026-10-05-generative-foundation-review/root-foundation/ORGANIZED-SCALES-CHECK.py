@@ -11,7 +11,7 @@ R=P.parents[3]
 A=R/'experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis'
 E=R/'experiments/integrated-correction/general-framework/generative-basis/biological-scale-correspondence'
 S=R/'sources/biological-scale-correspondence/elife-65935'
-T=R/'theories/shengsheng-buxi-generative-existence/unified-2026-10-05'
+T=R/'theories/becoming/chapters'
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 spec=importlib.util.spec_from_file_location('chain',P/'build_generative_chain.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
 errors=[];links=[]

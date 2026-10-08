@@ -2,7 +2,7 @@
 
 6 October 2026. **Checked finite construction.** The formal physical interface, independent finite game and source review have passed. This package follows the [frozen protocol](PROTOCOL.md) and [freeze receipt](protocol-freeze.json). It does not alter the [predecessor reader](../README.md).
 
-The [canonical account](../../../../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REASON-PROTECTION.md) connects the study to the full generative-foundation goal. The result is a conditional synthetic mechanism, not a claim that its A/H recipes or strategic prices have been measured in a natural system.
+The [canonical account](../../../../../../../../../theories/becoming/chapters/REASON-PROTECTION.md) connects the study to the full generative-foundation goal. The result is a conditional synthetic mechanism, not a claim that its A/H recipes or strategic prices have been measured in a natural system.
 
 ## Formal scope
 

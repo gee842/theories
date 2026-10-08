@@ -11,7 +11,7 @@ from urllib.parse import unquote
 sys.dont_write_bytecode = True
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[3]
-THEORY = ROOT / 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md'
+THEORY = ROOT / 'theories/becoming/chapters/COGNITION-LEARNING-AND-EVOLUTION.md'
 STUDY = HERE / 'COGNITION-LEARNING-EVOLUTION-INTEGRATION.md'
 DIRECTIVE = ROOT / 'sources/15-codex-theory-conversations/2026-10-08-cognition-learning-evolution-goal.md'
 FORMAL = ROOT / 'experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root'

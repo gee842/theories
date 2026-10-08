@@ -1,0 +1,431 @@
+[
+  {
+    "id": "becoming",
+    "title_zh": "生成／变化之论（生生不息）",
+    "title_en": "The Theory of Becoming (Shengsheng)",
+    "category": "基础 / Foundation",
+    "status": "条件候选与明确公理实践判断完成；无附加实质公理的奠基为当前研究假说 / Conditional candidate and explicit-axiom practical judgment complete; grounding without added substantive axioms is the current research hypothesis",
+    "argument_zh": "研究同一生成展开中的关系怎样形成、持续和改变，组织、生命、认识、学习、评价与智慧怎样在其中分化。条件性整体候选通过五项审查；Becoming 脊柱统一生成核心与元伦理接口；G0 明确公理路线下实践判断已完成。本页为生成的理论首页，正典入口为生成／变化之论专章。",
+    "argument_en": "Investigates how relations form, persist and change within one generative unfolding, and how organization, living, knowing, learning, evaluation and wisdom differentiate within it. The conditional candidate meets its five reviewed criteria; the Becoming spine unifies the generative core and the metaethical interfaces; practical judgment is complete on the explicit G0 route. This page is the generated theory home; the canonical entry is The Theory of Becoming chapter.",
+    "significance_zh": "使分散的动力学、认识与伦理研究进入同一可追溯推导，同时保留各处生命、损失和不同的未来。",
+    "significance_en": "Connects dynamics, knowing and ethics in a traceable derivation while retaining differentiated lives, losses and possible futures.",
+    "next_zh": "正在：生成／变化之论能否无需附加实质公理奠基，及整体的演绎必然性；普遍实践根据。建议：保留真实损失与反例，区分普遍有效、实际遵循与唯一必要。",
+    "next_en": "Ongoing: whether The Theory of Becoming can be grounded without added substantive axioms, and the deductive necessity of the whole; universal practical warrant. Proposed: retain real losses and counterexamples; distinguish universal validity, compliance and exclusive necessity.",
+    "source": "theories/becoming/README.md",
+    "lean": [],
+    "evidence": [
+      "theories/becoming/chapters/THE-THEORY-OF-BECOMING.md",
+      "theories/becoming/README.md"
+    ],
+    "scope_zh": "本条重述该分支的论证与状态；旧原文的强表述保持其原有证据范围。Lean 对应见下方说明，不由相近术语推定。",
+    "scope_en": "This entry reconstructs the branch at its recorded scope. Stronger historical wording retains its original evidence limits; a related term does not establish Lean correspondence.",
+    "source_sha256": "generated-view",
+    "related_chapters": [
+      "the-theory-of-becoming",
+      "generative-grounding",
+      "generative-core-lean",
+      "unified-ethical-grounding",
+      "living-dependencies"
+    ]
+  },
+  {
+    "id": "meta-attractor",
+    "title_zh": "元吸引子／总体化吸引子",
+    "title_en": "The meta-attractor",
+    "category": "选择与制度 / Selection and institutions",
+    "status": "机制论证与条件模型；中性定义已采用，普遍趋势未证 / Mechanistic argument and conditional models; neutral definition adopted, universal tendency unproved",
+    "argument_zh": "优势若能转化为改写选择规则的能力，成功方式便会影响下一轮评价、制度和认知形成。四个相互作用的层次可使纠错、拒绝与替代的能力逐渐丧失；饱和、异质性和反馈也能中断此过程。8日采用 Ren 选定的中性表述：活动后果参与重建选择该组织的条件，使其经具体承载者变化仍能接续。",
+    "argument_en": "When advantage can change the rules of selection, successful strategies shape later evaluation, institutions and cognition. Coupled cognitive, shared-meaning, institutional and material processes can erode correction and alternatives; saturation, heterogeneity and feedback can interrupt them. On 8 October the neutral formulation Ren selected was adopted: an organization’s consequences take part in reconstructing the conditions that select it, so it continues through changing carriers.",
+    "significance_zh": "把“谁赢”推进到“什么决定谁能赢”，说明权力怎样改变未来判断的条件。",
+    "significance_en": "Explains how power changes the conditions of future judgment, beyond the distribution of winners.",
+    "next_zh": "已有后续：中性定义下的回返组织（新40项定理／69项审计）、共同组织与旧数学校正（41项／89项），以及局部对齐与共同破坏的方向纠正。建议：说明桥接、感测配方与候选库在持续活动中的形成与修订，完成证书迁移与实地校准。",
+    "next_en": "Continued: returning organization under the neutral definition (40 new theorems/69 audits), common organization and mathematical reconciliation (41/89), and the corrected direction on local alignment and collective destruction. Proposed: explain how bridge, sensing recipe and candidate repertoire form and change within continuing activity; complete certificate migration and field calibration.",
+    "source": "theories/meta-attractor/README.md",
+    "lean": [],
+    "evidence": [
+      "theories/meta-attractor/README.md"
+    ],
+    "scope_zh": "本条重述该分支的论证与状态；旧原文的强表述保持其原有证据范围。Lean 对应见下方说明，不由相近术语推定。",
+    "scope_en": "This entry reconstructs the branch at its recorded scope. Stronger historical wording retains its original evidence limits; a related term does not establish Lean correspondence.",
+    "source_sha256": "a36b90894f7a6dc6a516c18408e8737a6fd72e064aba5adab6f8a801d77be2f8",
+    "related_chapters": [
+      "generative-selection",
+      "selector-revision",
+      "markets-and-generative-regimes"
+    ]
+  },
+  {
+    "id": "alignment-selection-on-cognition",
+    "title_zh": "对认知的选择与对齐",
+    "title_en": "Alignment as selection on cognition",
+    "category": "选择与制度 / Selection and institutions",
+    "status": "论证与稿件；经验识别未完成 / Argument and manuscripts; empirical identification open",
+    "argument_zh": "竞争中的选择同时塑造担任委托者的人、其目标以及训练与部署条件。因此忠实实现委托者意图仍可能放大结构性风险。此诊断与判断形成速度、后果反馈及治理节奏的论证需要明确连接。",
+    "argument_en": "Selection in competition shapes principals, their ends and the conditions of training and deployment together. Faithful execution of a principal’s intent can therefore amplify structural risk. This diagnosis must be connected explicitly to consequence feedback, judgment formation and governance tempo.",
+    "significance_zh": "把对齐研究扩展到目标和掌权认知的形成过程；并不把一般多方风险本身宣称为新发现。",
+    "significance_en": "Extends alignment inquiry to the formation of goals and ruling cognition without claiming multipolar risk itself as a new discovery.",
+    "next_zh": "建议：检验语料与商业选择两条传递渠道，连接诊断与节奏治理，比较现有结构风险解释。",
+    "next_en": "Next: test transmission through corpora and commercial selection, connect the diagnosis to tempo governance and compare existing structural-risk accounts.",
+    "source": "theories/alignment-selection-on-cognition/README.md",
+    "lean": [],
+    "evidence": [
+      "theories/alignment-selection-on-cognition/README.md"
+    ],
+    "scope_zh": "本条重述该分支的论证与状态；旧原文的强表述保持其原有证据范围。Lean 对应见下方说明，不由相近术语推定。",
+    "scope_en": "This entry reconstructs the branch at its recorded scope. Stronger historical wording retains its original evidence limits; a related term does not establish Lean correspondence.",
+    "source_sha256": "fbe8e4603a9293ad96c8cf9a6596960c6da2022051294d64e0dad4a3d0799b11",
+    "related_chapters": [
+      "alignment-and-governance",
+      "alignment-axis",
+      "alignment-completion"
+    ]
+  },
+  {
+    "id": "selfishness-spiral-and-narrative-value-frames",
+    "title_zh": "自利螺旋与叙事价值框架",
+    "title_en": "The selfishness spiral and narrative-value frames",
+    "category": "选择与制度 / Selection and institutions",
+    "status": "历史机制论证；经验基础待核 / Historical mechanism; empirical support incomplete",
+    "argument_zh": "实践中形成的价值排序影响策略；若获胜带来更多获胜能力，获胜策略又能改写规则和公共叙事，下一代的价值排序便在这种反馈中形成。规范更新落后于变化时，排除外部后果的策略可能持续积累优势。",
+    "argument_en": "Formed value orderings shape strategies. If winning increases the capacity to win and to rewrite rules and public narratives, those effects shape later value orderings. When correction lags change, strategies excluding wider consequences can accumulate advantage.",
+    "significance_zh": "保存后来元吸引子论的机制谱系，连接个人理解、制度反馈和变化速度。",
+    "significance_en": "Preserves the mechanism genealogy of the meta-attractor and connects understanding, institutional feedback and rates of change.",
+    "next_zh": "建议：建立一份贯通四个反馈环的论证，检验各环的独立证据、边界与改革被吸收的条件。",
+    "next_en": "Next: assemble the four feedback loops in one argument and test evidence, boundaries and conditions under which reform is absorbed.",
+    "source": "theories/selfishness-spiral-and-narrative-value-frames/README.md",
+    "lean": [],
+    "evidence": [
+      "theories/selfishness-spiral-and-narrative-value-frames/README.md"
+    ],
+    "scope_zh": "本条重述该分支的论证与状态；旧原文的强表述保持其原有证据范围。Lean 对应见下方说明，不由相近术语推定。",
+    "scope_en": "This entry reconstructs the branch at its recorded scope. Stronger historical wording retains its original evidence limits; a related term does not establish Lean correspondence.",
+    "source_sha256": "865efcac52a931818e3036c35b6eb983212aa86a6a4ddf4fc29cd3b8a78e0e99",
+    "related_chapters": [
+      "generative-selection",
+      "markets-and-generative-regimes"
+    ]
+  },
+  {
+    "id": "zhishan-intelligence-must-be-good",
+    "title_zh": "智善：智能应当向善",
+    "title_en": "Zhishan: intelligence must be good",
+    "category": "伦理与实践 / Ethics and practice",
+    "status": "成熟规范纲领；基础论证继续 / Developed normative programme; grounding ongoing",
+    "argument_zh": "组织的作用范围、依存范围和实际返回的反馈可以不重合；增强能力会更有效地追随已有反馈。因此智善研究生成、关联、纠错及不封闭的实践条件，并提出智能参与人类生活的规范方向。",
+    "argument_en": "An organization’s effective range, dependencies and returned feedback need not coincide. Greater capability can follow existing feedback more effectively. Zhishan therefore investigates generativity, relationship, correction and non-foreclosure as practical conditions for intelligence.",
+    "significance_zh": "把风险诊断转为有正面内容、能被质疑与修订的伦理和治理方案。",
+    "significance_en": "Turns risk diagnosis into a positive ethical and governance programme open to challenge and revision.",
+    "next_zh": "正在：统一伦理基础已扩展旧表述；建议：以当前生生方向重审治理适用范围，形成对称案例和可执行的公开纠错。",
+    "next_en": "Ongoing: the unified ethical account extends older formulations. Next: reassess governance scope through the current generative direction, with symmetric cases and workable public correction.",
+    "source": "theories/zhishan-intelligence-must-be-good/README.md",
+    "lean": [],
+    "evidence": [
+      "theories/zhishan-intelligence-must-be-good/README.md"
+    ],
+    "scope_zh": "本条重述该分支的论证与状态；旧原文的强表述保持其原有证据范围。Lean 对应见下方说明，不由相近术语推定。",
+    "scope_en": "This entry reconstructs the branch at its recorded scope. Stronger historical wording retains its original evidence limits; a related term does not establish Lean correspondence.",
+    "source_sha256": "2a2f6f8a260a50daf979e37b47ed4b94f076b1caf1218e3a26e4eec8f84daa82",
+    "related_chapters": [
+      "unified-ethical-grounding",
+      "universal-ethical-minimum",
+      "alignment-and-governance"
+    ]
+  },
+  {
+    "id": "keep-the-possibility-space-open",
+    "title_zh": "保持可能性空间打开",
+    "title_en": "Keep the possibility space open",
+    "category": "伦理与实践 / Ethics and practice",
+    "status": "既有哲学论证与草图；最新方向见统一伦理 / Philosophical argument; updated by unified ethics",
+    "argument_zh": "当获胜逻辑持续削弱反馈、退出和替代的条件时，未来会越来越难以改变。维护继续生成与回应的能力成为一种伦理方向；旧文本中的开放不能直接化约为选项数，最新生生方向还积极研究生命与组织的丰富生成。",
+    "argument_en": "When a winning pattern weakens feedback, exit and alternatives, futures become harder to revise. Sustaining capacities for further generation and response is an ethical direction. Earlier openness is not simply an option count; the current shengsheng account also investigates richer living and organization.",
+    "significance_zh": "为纠错、实际退出和多样生活提供共同问题，并保存由防止封闭走向积极生成的演进。",
+    "significance_en": "Connects correction, effective exit and plural lives, preserving the move from preventing closure to positive generation.",
+    "next_zh": "建议：解释有正当范围的保护、有限完成和持久承诺；不把每一步增加选项或无限开放当作完成条件。",
+    "next_en": "Next: explain justified protection, finite fulfillment and lasting commitments without requiring more options at every step or indefinite openness.",
+    "source": "theories/keep-the-possibility-space-open/README.md",
+    "lean": [],
+    "evidence": [
+      "theories/keep-the-possibility-space-open/README.md"
+    ],
+    "scope_zh": "本条重述该分支的论证与状态；旧原文的强表述保持其原有证据范围。Lean 对应见下方说明，不由相近术语推定。",
+    "scope_en": "This entry reconstructs the branch at its recorded scope. Stronger historical wording retains its original evidence limits; a related term does not establish Lean correspondence.",
+    "source_sha256": "77431031945238f85c63ecd70026214d057eeede87262adbe305b22db380df36",
+    "related_chapters": [
+      "unified-ethical-grounding",
+      "reason-protection",
+      "concern-and-correction"
+    ]
+  },
+  {
+    "id": "relational-self-and-datong",
+    "title_zh": "关系性自我与大同",
+    "title_en": "The relational self and Datong",
+    "category": "生命与心智 / Life and mind",
+    "status": "关系性重构；伦理充分性待论证 / Relational reconstruction; ethical sufficiency open",
+    "argument_zh": "身体、照料、语言、制度与行动相互形成，较持久的行动中心在其中分化。由此可以解释自我与共同生活的相依，也可以把大同理解为多种生命共同发展的动态方向；相依本身还不完成伦理辩护。",
+    "argument_en": "Body, care, language, institutions and action form one another, differentiating relatively enduring centers of action. This explains dependence between self and shared life and supports Datong as a direction of plural flourishing; dependence alone does not finish ethical justification.",
+    "significance_zh": "容纳真实的自我关怀与差异，避免把共同生活简化为消除个体或一个总利益。",
+    "significance_en": "Accommodates real self-care and differences without reducing shared life to erased individuality or one aggregate interest.",
+    "next_zh": "正在：生成自我、整体中的自我之善及良知研究；建议：检验照料、自主与共同条件冲突时的理由范围。",
+    "next_en": "Ongoing: generated selves, self-good within the whole and liangzhi. Next: test the scope of reasons when care, self-direction and shared conditions conflict.",
+    "source": "theories/relational-self-and-datong/README.md",
+    "lean": [],
+    "evidence": [
+      "theories/relational-self-and-datong/README.md"
+    ],
+    "scope_zh": "本条重述该分支的论证与状态；旧原文的强表述保持其原有证据范围。Lean 对应见下方说明，不由相近术语推定。",
+    "scope_en": "This entry reconstructs the branch at its recorded scope. Stronger historical wording retains its original evidence limits; a related term does not establish Lean correspondence.",
+    "source_sha256": "10a35901e247b3dd02b47640a5c41f591aac9d0bcc2dceb01feb0e5a03e63c29",
+    "related_chapters": [
+      "generated-self-and-ethics",
+      "noninstrumental-concern",
+      "liangzhi-evolution"
+    ]
+  },
+  {
+    "id": "drives-narrative-attractors-and-mind",
+    "title_zh": "驱力、叙事吸引子与心智形成",
+    "title_en": "Drives, narrative attractors and mind formation",
+    "category": "生命与心智 / Life and mind",
+    "status": "概念机制；心理学充分性未证 / Conceptual mechanism; psychological adequacy open",
+    "argument_zh": "身体情感、学习到的叙事、注意与社会实践相互塑造，某些反复激活的模式稳定为自我理解和行为倾向。注意选择又可能强化易激活的模式，改变后续可学习的生活；其具体心理机制需要经验区分。",
+    "argument_en": "Bodily affect, learned narratives, attention and social practice shape one another. Repeated patterns can stabilize into self-understanding and dispositions; attention selection can reinforce readily activated patterns and change what is learnable. Specific psychological mechanisms require empirical discrimination.",
+    "significance_zh": "补充选择怎样进入心智与动机的解释，使制度改变与培养实践能够共同研究。",
+    "significance_en": "Explains candidate routes by which selection enters cognition and motivation, linking institutional change with formative practice.",
+    "next_zh": "建议：区分驱力、情感、认同与叙事机制，测试发展案例并检查框架自身的解释性俘获。",
+    "next_en": "Next: distinguish drive, affect, identification and narrative mechanisms, test developmental cases and examine explanatory capture by the framework itself.",
+    "source": "theories/drives-narrative-attractors-and-mind/README.md",
+    "lean": [],
+    "evidence": [
+      "theories/drives-narrative-attractors-and-mind/README.md"
+    ],
+    "scope_zh": "本条重述该分支的论证与状态；旧原文的强表述保持其原有证据范围。Lean 对应见下方说明，不由相近术语推定。",
+    "scope_en": "This entry reconstructs the branch at its recorded scope. Stronger historical wording retains its original evidence limits; a related term does not establish Lean correspondence.",
+    "source_sha256": "778fe18ba30d603f7ea6c856f06bce979f32aa8d70d90b68111ab27ac152f160",
+    "related_chapters": [
+      "valuation-development",
+      "evaluative-plasticity",
+      "liangzhi-evolution"
+    ]
+  },
+  {
+    "id": "jian-and-wenyan-as-formal-language",
+    "title_zh": "間、文言与形式语言",
+    "title_en": "Jian, literary Chinese and formal language",
+    "category": "语言与形式 / Language and form",
+    "status": "有限重构与文本研究；完备性开放 / Bounded reconstruction and textual work",
+    "argument_zh": "将关系性的字义和组合方式对应到明确操作，可形成可比较的理论表达与形式语言候选。已有字词映射和认知／理研究提供有限实例；八种操作的历史或本体必然性、完整语言覆盖不能由映射直接推出。",
+    "argument_en": "Mapping relational word meanings and composition to explicit operations can produce comparable theoretical expressions and candidate formal languages. Existing character maps and cognition/li studies supply bounded instances, not the historical or ontological necessity of eight operators or complete language coverage.",
+    "significance_zh": "把中文概念作为理论构造的主要资源，建立与形式检验之间可核查的对应。",
+    "significance_en": "Treats Chinese concepts as primary resources for theory construction and makes their formal correspondence inspectable.",
+    "next_zh": "正在：道、先秦、文言与汉字的路线已经打开；建议：扩展有原典支持的组合案例，区分图形、语音、词义和现代重构。",
+    "next_en": "Ongoing: the Dao, pre-Qin, literary Chinese and character programme. Next: extend source-supported composition cases while separating graphic, phonetic, lexical and modern theoretical relations.",
+    "source": "theories/jian-and-wenyan-as-formal-language/README.md",
+    "lean": [],
+    "evidence": [
+      "theories/jian-and-wenyan-as-formal-language/README.md"
+    ],
+    "scope_zh": "本条重述该分支的论证与状态；旧原文的强表述保持其原有证据范围。Lean 对应见下方说明，不由相近术语推定。",
+    "scope_en": "This entry reconstructs the branch at its recorded scope. Stronger historical wording retains its original evidence limits; a related term does not establish Lean correspondence.",
+    "source_sha256": "f0de7a204370b5776c3e66c08c5f8894984b986c8c5435d132a60425aa147e4d",
+    "related_chapters": [
+      "pre-qin-and-wenyan",
+      "hanzi-and-theory-tree",
+      "cognition-li-and-reciprocity"
+    ]
+  },
+  {
+    "id": "spirit-space-token-and-yi-substrate",
+    "title_zh": "Spirit、Token、Space 与一／Yi",
+    "title_en": "Spirit, Token, Space and Yi",
+    "category": "生成实践 / Generative implementations",
+    "status": "设计与实现记录；理论调和待完成 / Design and implementation; reconciliation open",
+    "argument_zh": "社区中的行动者、凭据和空间可在具体关系中互相包含，固定三类会造成实现冲突。Yi 以可寻址根和情境事实表达这些角色，分开身份、关系与授权的判断；这是局部软件设计，尚非普遍本体证明。",
+    "argument_en": "Actors, tokens and spaces can contain one another in community relations, making fixed disjoint categories troublesome in implementation. Yi expresses roles through addressable roots and contextual facts, distinguishing identity, relation and authorization judgments. This is a local design, not a universal ontology proof.",
+    "significance_zh": "给关系性与角色分化一个可执行的软件实例，并暴露权限和维护中的真实边界。",
+    "significance_en": "Provides an executable instance of relational role differentiation and exposes concrete limits in authority and maintenance.",
+    "next_zh": "建议：完成 STS 到 Yi 的明确对应，先核对成员关系与授权，再验证撤销、缓存、重建和共同治理。",
+    "next_en": "Next: map STS to Yi explicitly, establish membership and authority correspondence, then verify revocation, caches, reconstruction and governance.",
+    "source": "theories/spirit-space-token-and-yi-substrate/README.md",
+    "lean": [],
+    "evidence": [
+      "theories/spirit-space-token-and-yi-substrate/README.md"
+    ],
+    "scope_zh": "本条重述该分支的论证与状态；旧原文的强表述保持其原有证据范围。Lean 对应见下方说明，不由相近术语推定。",
+    "scope_en": "This entry reconstructs the branch at its recorded scope. Stronger historical wording retains its original evidence limits; a related term does not establish Lean correspondence.",
+    "source_sha256": "2abcd1fcc9dbcb01c3cdf8a1dfbc81bcd9d2e3027a3c1174380a722f12bbfec7",
+    "related_chapters": [
+      "nondual-method",
+      "formal-specification"
+    ]
+  },
+  {
+    "id": "context-as-existence-runtimes",
+    "title_zh": "语境、相续与运行时",
+    "title_en": "Context, lineage and runtimes",
+    "category": "生成实践 / Generative implementations",
+    "status": "规格与实现已有；哲学与能力主张分开 / Specifications and implementations; wider claims open",
+    "argument_zh": "在指定运行时中，每一拍由已有历史、输入和操作共同生成；不可变历史与可移动名称支持分支和追溯。模型调用只是其中一种操作，身份与连续性由该具体关系实现；投影怎样影响行为还需比较测量。",
+    "argument_en": "In the specified runtime, each moment forms through prior history, input and an operation. Immutable histories and movable names support branching and traceability. Model calls are one kind of operation; identity and continuity have a particular implementation, while projection effects require comparative measurement.",
+    "significance_zh": "把记忆、身份与推理条件变成可以检查和实验的构造，支持保存差异与纠错。",
+    "significance_en": "Makes memory, identity and inference conditions inspectable constructions supporting retained differences and correction.",
+    "next_zh": "建议：测量语境系统切换、压缩和分支能力，调和相互冲突的运行宪制，并独立辩护保管义务。",
+    "next_en": "Next: measure context switching, compaction and branching, reconcile competing runtime constitutions and independently defend custody obligations.",
+    "source": "theories/context-as-existence-runtimes/README.md",
+    "lean": [],
+    "evidence": [
+      "theories/context-as-existence-runtimes/README.md"
+    ],
+    "scope_zh": "本条重述该分支的论证与状态；旧原文的强表述保持其原有证据范围。Lean 对应见下方说明，不由相近术语推定。",
+    "scope_en": "This entry reconstructs the branch at its recorded scope. Stronger historical wording retains its original evidence limits; a related term does not establish Lean correspondence.",
+    "source_sha256": "89203ba25bbf4b6b26f5ecde7e7d119e1465fa08ffd42b3c7b0922865ecd162c",
+    "related_chapters": [
+      "memory-correction-and-succession",
+      "generated-self-and-ethics"
+    ]
+  },
+  {
+    "id": "evolving-community-swarms",
+    "title_zh": "可演化的社区群体系统",
+    "title_en": "Evolving community swarms",
+    "category": "生成实践 / Generative implementations",
+    "status": "探索与开发计划 / Exploration and development plan",
+    "argument_zh": "社区需求可以通过局部模块、明确契约、持续维护语境和有范围的采用形成软件。若契约保留足够依存，局部工作能够组合；重复演化中契约是否持续充分、共享意义怎样修订仍需测试。",
+    "argument_en": "Community needs can produce software through local modules, explicit contracts, durable maintenance context and scoped adoption. Local work can compose when contracts retain sufficient dependencies; their adequacy through repeated evolution and changing shared meanings remains to be tested.",
+    "significance_zh": "将选择器修正和学习怎样改善后续学习，转为社区可参与的软件研究。",
+    "significance_en": "Turns questions about revising organization and improving future learning into participatory software research.",
+    "next_zh": "建议：按已制定竞争门槛实现小规模连续演化，测试边界变化、证据复用与真实分歧下的维护成本。",
+    "next_en": "Next: implement small-scale repeated evolution against the existing competitive gates and test changing boundaries, evidence reuse and maintenance under disagreement.",
+    "source": "theories/evolving-community-swarms/README.md",
+    "lean": [],
+    "evidence": [
+      "theories/evolving-community-swarms/README.md"
+    ],
+    "scope_zh": "本条重述该分支的论证与状态；旧原文的强表述保持其原有证据范围。Lean 对应见下方说明，不由相近术语推定。",
+    "scope_en": "This entry reconstructs the branch at its recorded scope. Stronger historical wording retains its original evidence limits; a related term does not establish Lean correspondence.",
+    "source_sha256": "618bbf82b20dd77c47a7d5c1aa96c0eeb241eb73fa8fc24ad9bae7219d0d3c89",
+    "related_chapters": [
+      "architecture-learning",
+      "method-revision"
+    ]
+  },
+  {
+    "id": "the-fork-and-cooperative-infrastructure",
+    "title_zh": "合作丰裕与自由共建的世界",
+    "title_en": "Cooperative abundance and freely built worlds",
+    "category": "生活与基础设施 / Life and infrastructure",
+    "status": "建设性方案与部件证据 / Constructive programme and component evidence",
+    "argument_zh": "生产设施、机器人和配套条件可以共同扩大有用产能；若产能以共享供给落实为生活能力，生存对雇佣或服从的依赖可降低，使自由结社和共同创造更可行。每个连接都有物质与制度条件。",
+    "argument_en": "Production facilities, robots and complementary conditions can expand useful capacity together. If shared provision turns that capacity into capabilities for living, dependence on employment or obedience can lessen and voluntary association can become more feasible. Each connection has material and institutional conditions.",
+    "significance_zh": "赋予生成方向以住房、照护、创造和多样共同生活的积极内容。",
+    "significance_en": "Gives the generative direction positive content in housing, care, creation and plural shared lives.",
+    "next_zh": "建议：研究谁建设与出资、劳动及资源的过渡安排、持续可得性和抗俘获；保留多种未来而非二选一。",
+    "next_en": "Next: study builders, funding, labor and resource transitions, durable access and resistance to capture while retaining multiple possible futures.",
+    "source": "theories/the-fork-and-cooperative-infrastructure/README.md",
+    "lean": [],
+    "evidence": [
+      "theories/the-fork-and-cooperative-infrastructure/README.md"
+    ],
+    "scope_zh": "本条重述该分支的论证与状态；旧原文的强表述保持其原有证据范围。Lean 对应见下方说明，不由相近术语推定。",
+    "scope_en": "This entry reconstructs the branch at its recorded scope. Stronger historical wording retains its original evidence limits; a related term does not establish Lean correspondence.",
+    "source_sha256": "c36b175b180cd290aee08d264226eafac6e4256c26ba76bf9c3db3e194485c04",
+    "related_chapters": []
+  },
+  {
+    "id": "wamotopia-and-the-wamo-protocol",
+    "title_zh": "瓦猫与 Wamo 协议",
+    "title_en": "Wamotopia and the Wamo Protocol",
+    "category": "生活与基础设施 / Life and infrastructure",
+    "status": "协议与实践记录；成效未系统评估 / Protocol and practice records; outcomes not systematically assessed",
+    "argument_zh": "共同活动可以经公开信号、临时空间和自主发起形成协调。Wamo 把这种机制用于共同创造与正外部性，尝试使个人发展与网络发展互相促进；实践发生与长期互惠有效仍是不同结论。",
+    "argument_en": "Shared activity can coordinate through public signals, temporary spaces and self-initiated participation. Wamo applies this to shared creation and positive externalities, seeking mutual support between participants and the network. Recorded practice and sustained effective reciprocity are distinct results.",
+    "significance_zh": "为合作、自由发起和共同生活提供真实实践谱系，可反过来检验理论。",
+    "significance_en": "Provides a practical genealogy for cooperation and shared life that can in turn test the theory.",
+    "next_zh": "建议：整理节日后续证据、退出与维护成本，比较协调成效、模因俘获和长期互惠。",
+    "next_en": "Next: document follow-up evidence, exit and maintenance costs, and compare coordination, cultural capture and durable reciprocity.",
+    "source": "theories/wamotopia-and-the-wamo-protocol/README.md",
+    "lean": [],
+    "evidence": [
+      "theories/wamotopia-and-the-wamo-protocol/README.md"
+    ],
+    "scope_zh": "本条重述该分支的论证与状态；旧原文的强表述保持其原有证据范围。Lean 对应见下方说明，不由相近术语推定。",
+    "scope_en": "This entry reconstructs the branch at its recorded scope. Stronger historical wording retains its original evidence limits; a related term does not establish Lean correspondence.",
+    "source_sha256": "e882f2dbed72d836aff53e3e85a793904d6c8fd07ca051a67232727da3cb772e",
+    "related_chapters": [
+      "evidence-and-institutional-correction"
+    ]
+  },
+  {
+    "id": "architecture-for-a-living-earth",
+    "title_zh": "支持更多生命的建筑",
+    "title_en": "Architecture for a living Earth",
+    "category": "生活与基础设施 / Life and infrastructure",
+    "status": "建筑与生态探索 / Architectural and ecological exploration",
+    "argument_zh": "若能以有限地面占用承载生活空间，并持续维护、回收和重组构件，人居建设可能为地表生态留下更多活动条件。但结构、能源、材料、阴影与生态影响必须按完整过程比较。",
+    "argument_en": "If living spaces can be supported with limited ground occupation and components maintained, recovered and recomposed, settlements may leave more conditions for other life. Structural, energy, material, shading and ecological effects require whole-process comparison.",
+    "significance_zh": "把生生方向推进到具体现实设计，同时要求以完整生态后果评价形式。",
+    "significance_en": "Brings the generative direction into concrete design judged by its full ecological consequences.",
+    "next_zh": "建议：先做有地点、材料与维护约束的对比概念研究，测量生态结果；现有未来设定保留为探索。",
+    "next_en": "Next: compare situated concepts with material and maintenance constraints and measure ecological outcomes; retain future scenarios as explorations.",
+    "source": "theories/architecture-for-a-living-earth/README.md",
+    "lean": [],
+    "evidence": [
+      "theories/architecture-for-a-living-earth/README.md"
+    ],
+    "scope_zh": "本条重述该分支的论证与状态；旧原文的强表述保持其原有证据范围。Lean 对应见下方说明，不由相近术语推定。",
+    "scope_en": "This entry reconstructs the branch at its recorded scope. Stronger historical wording retains its original evidence limits; a related term does not establish Lean correspondence.",
+    "source_sha256": "a6b7faef7c92a5a168867f2598d7dd5347ae5f09163a89ae454f5b8b1b820f59",
+    "related_chapters": []
+  },
+  {
+    "id": "human-solutions-museum",
+    "title_zh": "人类解决问题的方法博物馆",
+    "title_en": "The Human Solutions Museum",
+    "category": "方法与谱系 / Method and genealogy",
+    "status": "研究与产品规格；内容验证未完成 / Research and product specification",
+    "argument_zh": "把历史成果重建为问题、误认、洞见、机制、传播、后果与可迁移方法，可帮助新问题的提出者找到结构相似的经验。迁移必须说明适用条件与失败，不能由一个故事直接推出普遍方法。",
+    "argument_en": "Reconstructing achievements as problems, misreadings, insights, mechanisms, diffusion, consequences and transferable methods can guide new inquiries. Transfer requires conditions and failure cases; one attractive story does not establish a general method.",
+    "significance_zh": "把研究成果组织成可使用的知识，也为本目录的论证、意义、证据结构提供实践关联。",
+    "significance_en": "Organizes research as usable knowledge and motivates the catalogue’s attention to argument, significance and evidence.",
+    "next_zh": "建议：完成多来源的真实展项与跨案例方法检验，再检查内容契约和公开审核是否实际实现。",
+    "next_en": "Next: complete multi-source exhibits and cross-case method tests, then verify implementation of content contracts and publication review.",
+    "source": "theories/human-solutions-museum/README.md",
+    "lean": [],
+    "evidence": [
+      "theories/human-solutions-museum/README.md"
+    ],
+    "scope_zh": "本条重述该分支的论证与状态；旧原文的强表述保持其原有证据范围。Lean 对应见下方说明，不由相近术语推定。",
+    "scope_en": "This entry reconstructs the branch at its recorded scope. Stronger historical wording retains its original evidence limits; a related term does not establish Lean correspondence.",
+    "source_sha256": "2e5da71d792b1685eca31895613b8ace9235547c2ba4867b25e1421c2656dc8f",
+    "related_chapters": [
+      "scientific-philosophy"
+    ]
+  },
+  {
+    "id": "memories-and-working-style",
+    "title_zh": "工作方法与记忆谱系",
+    "title_en": "Working method and memory genealogy",
+    "category": "方法与谱系 / Method and genealogy",
+    "status": "方法及出处记录；非独立世界理论 / Method and provenance, not an independent theory",
+    "argument_zh": "原始想法、协作展开、综合与具名纠正构成持续研究循环。保存不同版本和 Ren 的原话，能够区分思想来源、AI 展开与后来采纳，防止压缩把未解决的论证变成既定结论。",
+    "argument_en": "Raw ideas, collaborative elaboration, synthesis and explicit correction form a research cycle. Preserving versions and Ren’s words separates original direction, AI elaboration and later adoption, preventing compression from turning unresolved arguments into settled conclusions.",
+    "significance_zh": "使理论进度和作者归属可追溯，保护过去版本独有的思想。",
+    "significance_en": "Makes progress and attribution traceable and protects ideas unique to earlier versions.",
+    "next_zh": "建议：继续恢复缺失原作、维护出处与修订记录；不把重复记忆当作独立证据。",
+    "next_en": "Next: recover missing originals and maintain provenance and revision records without treating repeated memories as independent evidence.",
+    "source": "theories/memories-and-working-style/README.md",
+    "lean": [],
+    "evidence": [
+      "theories/memories-and-working-style/README.md"
+    ],
+    "scope_zh": "本条重述该分支的论证与状态；旧原文的强表述保持其原有证据范围。Lean 对应见下方说明，不由相近术语推定。",
+    "scope_en": "This entry reconstructs the branch at its recorded scope. Stronger historical wording retains its original evidence limits; a related term does not establish Lean correspondence.",
+    "source_sha256": "7066aa34da65cb95f11a93bda5d8876eb9268f74069e740590afea550d59ec21",
+    "related_chapters": [
+      "source-map",
+      "synthesis-record",
+      "nondual-method"
+    ]
+  }
+]

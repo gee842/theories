@@ -32,7 +32,7 @@ def main():
     output = HERE / "CONCERN-EXTENSION-CHECKS.json"
     edits = json.loads((HERE / "CONCERN-EXTENSION-INDEX-EDITS.json").read_text())
     docs = [HERE / "CONCERN-EXTENSION-INTEGRATION.md",
-            ROOT / "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONCERN-AND-NEW-REASONS.md",
+            ROOT / "theories/becoming/chapters/CONCERN-AND-NEW-REASONS.md",
             ROOT / "sources/15-codex-theory-conversations/2026-10-08-concern-expansion-theory.md"]
     passages = [(p, p.read_text()) for p in docs]
     for item in edits["navigation_edits"]:

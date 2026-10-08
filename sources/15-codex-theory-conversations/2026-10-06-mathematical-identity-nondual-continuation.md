@@ -10,4 +10,4 @@ After the assistant read the current core and proposed investigating well-founde
 
 > please continue, this is interest
 
-The resulting [mathematical identity study](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/IMMANENT-MATHEMATICAL-IDENTITY.md), proofs and interpretations are AI-authored elaboration. The quoted messages do not claim that Ren stated those proofs or endorsed a completed universal mathematical foundation. This continues the [project-wide nondual direction](2026-10-06-project-wide-nondual-method.md) and the [earlier autonomy and mathematical-root request](2026-10-06-autonomy-and-mathematical-root-frontier.md).
+The resulting [mathematical identity study](../../theories/becoming/chapters/IMMANENT-MATHEMATICAL-IDENTITY.md), proofs and interpretations are AI-authored elaboration. The quoted messages do not claim that Ren stated those proofs or endorsed a completed universal mathematical foundation. This continues the [project-wide nondual direction](2026-10-06-project-wide-nondual-method.md) and the [earlier autonomy and mathematical-root request](2026-10-06-autonomy-and-mathematical-root-frontier.md).

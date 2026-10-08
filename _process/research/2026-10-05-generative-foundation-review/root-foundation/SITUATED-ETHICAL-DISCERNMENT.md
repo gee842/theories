@@ -1,6 +1,6 @@
 # 体道与应境中的善及其养成
 
-7 October 2026. AI-authored conceptual continuation of [Ren's proposal and integration instruction](../../../../sources/15-codex-theory-conversations/2026-10-07-situated-goodness-and-tidao.md), under the [shared nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Named connection: **formed participation and consequence-sensitive understanding → situated discernment, realization and cultivation of good → the ethical dimension of wisdom**. This supporting study develops that connection within the whole-grounding inquiry; it does not replace its central ethical-identity question.
+7 October 2026. AI-authored conceptual continuation of [Ren's proposal and integration instruction](../../../../sources/15-codex-theory-conversations/2026-10-07-situated-goodness-and-tidao.md), under the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Named connection: **formed participation and consequence-sensitive understanding → situated discernment, realization and cultivation of good → the ethical dimension of wisdom**. This supporting study develops that connection within the whole-grounding inquiry; it does not replace its central ethical-identity question.
 
 **候选主张：善的潜能可以先于一次具体相遇存在；善的具体形态在应境中显现并实现，而回应的过程又能养成更深的向善能力。** 这里的“可以”保留发生条件。我们尚未由这一提议证明人人生而具有同一善性，也没有把每一次适应都算作向善。
 

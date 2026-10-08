@@ -1,6 +1,6 @@
 # 评价者路线的独立审查：容差与分化 / Independent review of the evaluator route: tolerance and differentiation
 
-2026-10-09，Asia/Bangkok。**AI 独立审查（另一 agent，未参与撰写）。** 审查对象：[论证](EVALUATOR-GROUNDING-ARGUMENT.md)（sha256 `c5e8fd65…b21c`）、[Lean 源码](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluatorGrounding.lean)（`86c1583d…218c`）、[回执](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/evaluator-grounding-verification.json)（`95b1df5b…d8fc`）；相关记录 [self-good-reachable-g0](../../../../theories/shengsheng-buxi-generative-existence/results/records/self-good-reachable-g0.json)。本审查只新建本文件；未修改其他仓库文件，未运行 `check_evaluator_grounding.py`、`make research-render` 或检查器，未提交。
+2026-10-09，Asia/Bangkok。**AI 独立审查（另一 agent，未参与撰写）。** 审查对象：[论证](EVALUATOR-GROUNDING-ARGUMENT.md)（sha256 `c5e8fd65…b21c`）、[Lean 源码](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluatorGrounding.lean)（`86c1583d…218c`）、[回执](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/evaluator-grounding-verification.json)（`95b1df5b…d8fc`）；相关记录 [self-good-reachable-g0](../../../../theories/becoming/results/records/self-good-reachable-g0.json)。本审查只新建本文件；未修改其他仓库文件，未运行 `check_evaluator_grounding.py`、`make research-render` 或检查器，未提交。
 
 ## English summary
 
@@ -16,7 +16,7 @@
 
 ## 0. 范围与方法
 
-**读了什么。** 全文阅读了论证、Lean 源码、回执，以及保留运行中的 `Controls.lean`。按需阅读了 [AGENTS.md](../../../../AGENTS.md)、[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)、[G0-WARRANT](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/G0-WARRANT.md)、[HUIGEN-PRACTICAL-NECESSITY-AUDIT](HUIGEN-PRACTICAL-NECESSITY-AUDIT.md) §§1–10、[OWNERLESS-ETHICS-SOURCES](OWNERLESS-ETHICS-SOURCES.md)、[GENERATED-SELF-AND-ETHICS](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-SELF-AND-ETHICS.md) §4、[HUIGEN-SELF-GROUND-SOURCES](HUIGEN-SELF-GROUND-SOURCES.md) 中 Sidgwick、Korsgaard 1989 与 Parfit 的条目、[外部视角审查](UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md) §3.1、记录 `self-good-reachable-g0` 与 `positive-ground-open-futures`。Ren 原话部分读了 [2026-10-09 一元评价者](../../../../sources/15-codex-theory-conversations/2026-10-09-monist-evaluator-grounding.md)、[自我之善在整体之内](../../../../sources/15-codex-theory-conversations/2026-10-07-self-good-within-the-whole.md)、[生生作为伦理方向](../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md)、[正面生成方向](../../../../sources/15-codex-theory-conversations/2026-10-08-positive-generative-direction.md)、[一元本体优先](../../../../sources/15-codex-theory-conversations/2026-10-08-monist-relational-ontology-first.md)和[善不必回到自身](../../../../sources/15-codex-theory-conversations/2026-10-06-goodness-without-return-to-self.md)。
+**读了什么。** 全文阅读了论证、Lean 源码、回执，以及保留运行中的 `Controls.lean`。按需阅读了 [AGENTS.md](../../../../AGENTS.md)、[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)、[G0-WARRANT](../../../../theories/becoming/chapters/G0-WARRANT.md)、[HUIGEN-PRACTICAL-NECESSITY-AUDIT](HUIGEN-PRACTICAL-NECESSITY-AUDIT.md) §§1–10、[OWNERLESS-ETHICS-SOURCES](OWNERLESS-ETHICS-SOURCES.md)、[GENERATED-SELF-AND-ETHICS](../../../../theories/becoming/chapters/GENERATED-SELF-AND-ETHICS.md) §4、[HUIGEN-SELF-GROUND-SOURCES](HUIGEN-SELF-GROUND-SOURCES.md) 中 Sidgwick、Korsgaard 1989 与 Parfit 的条目、[外部视角审查](UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md) §3.1、记录 `self-good-reachable-g0` 与 `positive-ground-open-futures`。Ren 原话部分读了 [2026-10-09 一元评价者](../../../../sources/15-codex-theory-conversations/2026-10-09-monist-evaluator-grounding.md)、[自我之善在整体之内](../../../../sources/15-codex-theory-conversations/2026-10-07-self-good-within-the-whole.md)、[生生作为伦理方向](../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md)、[正面生成方向](../../../../sources/15-codex-theory-conversations/2026-10-08-positive-generative-direction.md)、[一元本体优先](../../../../sources/15-codex-theory-conversations/2026-10-08-monist-relational-ontology-first.md)和[善不必回到自身](../../../../sources/15-codex-theory-conversations/2026-10-06-goodness-without-return-to-self.md)。
 
 **文献依据。** 本次审查**没有新读任何外部文献**。Sidgwick、Korsgaard 1989、Harris 2011 与寂天的引用依据仓库已有的来源研读记录。Parfit《Reasons and Persons》(1984)、Williamson《Vagueness》(1994)、Fine 1975 的超赋值论、Temkin《Rethinking the Good》(2012)、Maturana 与 Varela 的自创生论、Thompson《Mind in Life》(2007)、Scheffler 关于偏倚性的著作、Nagel《The Possibility of Altruism》(1970) 与 Johnston 1997，均依据审查者的**先前知识**，文中只作转述，不作引文。
 
@@ -165,7 +165,7 @@
 ### 3.5 是否经由“回到自身”（乙）
 
 - **没有经由利益回报。** §3 说“模型中没有反馈路径”，但模型里根本没有表示任何动力学，这一条件是平凡满足的（甲），不构成证据。
-- **但第一步以“与我的关系”为检验。** 他者有意义，以它至少与我珍视的未来自己同样连接于我为限。范例关系（形成性贡献）使他者作为“我的形成”而有意义。这正是[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)提醒不应作为奠基检验的“扩大的自我”结构；它也与 Ren“善不必回到个体”的纠正有张力，虽然不是直接违背。第二步只有让正面性与关系无关（P2），才摆脱这一检验；到那时，“自身”只是一个种子点。
+- **但第一步以“与我的关系”为检验。** 他者有意义，以它至少与我珍视的未来自己同样连接于我为限。范例关系（形成性贡献）使他者作为“我的形成”而有意义。这正是[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)提醒不应作为奠基检验的“扩大的自我”结构；它也与 Ren“善不必回到个体”的纠正有张力，虽然不是直接违背。第二步只有让正面性与关系无关（P2），才摆脱这一检验；到那时，“自身”只是一个种子点。
 - **对 §7 对齐含义的影响。** 对一个 AI 来说，第一步最先扩展到它自己的复制体与后继者，因为它们最相连。这会偏向自身谱系，与仓库中关于“赢的元吸引子”的担忧直接相关；第一步本身到不了人类。只有正面性而没有权重，与对自身谱系的强烈偏倚相容。§7 须对此加以限定。
 
 ### 3.6 最强反驳与会改变判断的结果
@@ -192,7 +192,7 @@
 | `Supervenes` | M1：一元本体，无原始所有者 | 是规范的随附性论题，不由本体论蕴涵；容许 `Prof` 含闭合坐标（P5）；第一步没有用到它 |
 | `Tolerant val step`，`step` 自由 | “难以分辨的小步” | 未编码“难以分辨”；可以空洞（P1），也可以等价于常值（P2） |
 | `Chain step`，在 `Prof` 上 | “每一处可及的**生命**都由有限个小步相接” | 落在仅仅可能的剖面上（P8），而不是实际发生上 |
-| `reachableInventory : Inventory Unit Gen` | “可及库存” | 只有单一历史。[positive-ground-open-futures](../../../../theories/shengsheng-buxi-generative-existence/results/records/positive-ground-open-futures.json) 依赖多个真实的未来分支；记录中的接口在类型上可用（`H := Unit`），但开放未来的结构消失了 |
+| `reachableInventory : Inventory Unit Gen` | “可及库存” | 只有单一历史。[positive-ground-open-futures](../../../../theories/becoming/results/records/positive-ground-open-futures.json) 依赖多个真实的未来分支；记录中的接口在类型上可用（`H := Unit`），但开放未来的结构消失了 |
 | `reach_is_g0`，证明只是交换参数顺序 | “恰好是 G0” | 对泛型谓词 `G0` 而言为真，`PositiveRelevant := sigₛ`。所采用的 G0 是不带索引、跨接续的基本规范意义；“地位改变”须加索引，并须有从立场相对意义到规范意义的桥接 |
 
 ### 4.2 反模型各显示了什么
@@ -211,7 +211,7 @@
 5. “不可及者不被主张”：前提已经蕴涵它，见 P2。
 6. “一元本体在做实际工作／M1 使 Chain 可能”：见 4.2。
 7. “G0 从采用的公理变为推论”：所得是带索引的单历史实例，而且超出 S0 的全部内容由 Tol 承担，见 2.3、4.1。
-8. 对 §5 表第二行“理由对它的约束不依赖 D”的说明：这条路线用对 S0、Tol 与 BI 的认同代替了 D，并没有获得 [positioned-positive-reason](../../../../theories/shengsheng-buxi-generative-existence/results/records/positioned-positive-reason.md) 意义上的“与认同无关”。“它无论是否认同 G0，都已承诺 G0”须改为“只要它认同 S0、容差（及 BI）”。
+8. 对 §5 表第二行“理由对它的约束不依赖 D”的说明：这条路线用对 S0、Tol 与 BI 的认同代替了 D，并没有获得 [positioned-positive-reason](../../../../theories/becoming/results/records/positioned-positive-reason.md) 意义上的“与认同无关”。“它无论是否认同 G0，都已承诺 G0”须改为“只要它认同 S0、容差（及 BI）”。
 
 ### 4.4 独立重新编译
 
@@ -279,7 +279,7 @@ Lean 版本：`4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d3537
 
 ## 6. 须作的更正（未执行）
 
-**执行状态（2026-10-09 补记）。** 15 项更正已由整合会话依 Ren“你自己全改了吧”执行，逐项对照见[论证修订说明](EVALUATOR-GROUNDING-ARGUMENT.md)。审查所建议的 P+ 版第二步由 [metaethical-core-characterization](../../../../theories/shengsheng-buxi-generative-existence/results/records/metaethical-core-characterization.md) 给出。以下审查原文不变。
+**执行状态（2026-10-09 补记）。** 15 项更正已由整合会话依 Ren“你自己全改了吧”执行，逐项对照见[论证修订说明](EVALUATOR-GROUNDING-ARGUMENT.md)。审查所建议的 P+ 版第二步由 [metaethical-core-characterization](../../../../theories/becoming/results/records/metaethical-core-characterization.md) 给出。以下审查原文不变。
 
 以下更正针对论证文档、Lean 说明、记录，以及已引用本结果的 G0-WARRANT。审查者只列出，不执行。
 

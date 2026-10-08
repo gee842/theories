@@ -1,6 +1,6 @@
 # 从具体维护到概率约束：模型对应
 
-2026-10-08。AI 撰写，回应 Ren 要求以 Lean 继续。[上一轮论证](CHANCE-ADEQUACY-ARGUMENT.md)与[复用审计](CHANCE-ADEQUACY-PROOF-AUDIT.md)在完成时没有新数学证明；这一历史范围保留。本篇说明新增形式研究怎样连接具体承担。[源码](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ChanceAdequacy.lean)与[实际回执](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/chance-adequacy-verification.json)记录 Lean 4.29.1 通过的 8 项新定理、14 项声明审计；本文读其定义及回执，不重复编译。沿 G0/J3 与[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)，不另设伦理公理。
+2026-10-08。AI 撰写，回应 Ren 要求以 Lean 继续。[上一轮论证](CHANCE-ADEQUACY-ARGUMENT.md)与[复用审计](CHANCE-ADEQUACY-PROOF-AUDIT.md)在完成时没有新数学证明；这一历史范围保留。本篇说明新增形式研究怎样连接具体承担。[源码](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ChanceAdequacy.lean)与[实际回执](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/chance-adequacy-verification.json)记录 Lean 4.29.1 通过的 8 项新定理、14 项声明审计；本文读其定义及回执，不重复编译。沿 G0/J3 与[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)，不另设伦理公理。
 
 ## 1. 哪项承担被表示
 

@@ -4,4 +4,4 @@
 
 > pleasecontinue
 
-The preceding assistant response reported the completed [architecture-formation construction](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ARCHITECTURE-FORMATION.md) and named the next connection: locally formed routing acquiring recipient-specific evidence and correcting its responses while preserving actual resources. Ren's instruction continues that work. It does not endorse a particular local law or certify completion of the unified foundation.
+The preceding assistant response reported the completed [architecture-formation construction](../../theories/becoming/chapters/ARCHITECTURE-FORMATION.md) and named the next connection: locally formed routing acquiring recipient-specific evidence and correcting its responses while preserving actual resources. Ren's instruction continues that work. It does not endorse a particular local law or certify completion of the unified foundation.

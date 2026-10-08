@@ -1,6 +1,6 @@
 # Biological evidence for embodied relations across scales
 
-8 October 2026, Asia/Bangkok. AI-authored primary-source assessment for [the current chapter](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md). Papers constrain mechanisms and correspondence; none is treated as an endorsement of the whole theory. No new biological experiment or reanalysis of raw data is claimed.
+8 October 2026, Asia/Bangkok. AI-authored primary-source assessment for [the current chapter](../../../../theories/becoming/chapters/RELATIONS-ACROSS-SCALES.md). Papers constrain mechanisms and correspondence; none is treated as an endorsement of the whole theory. No new biological experiment or reanalysis of raw data is claimed.
 
 ## Cellular participation in organism-level choice
 

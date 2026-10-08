@@ -40,7 +40,7 @@ Three primary comparisons constrain the novelty claim. Their [reading record](..
 
 These are targets to reproduce, extend or agree with at declared scopes. The papers do not constitute a single jointly calibrated rival, and their presence does not prove that every proposed contribution is already achieved. A detailed comparison must identify the operative mechanism rather than compare programme titles.
 
-The internal/external terminology in the scaffolding discussion names positions relative to a modeled collective. It need not posit independent realities; Bourrat explicitly treats the distinction as relative. Our [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) follows how these differentiated relations form and change within the same history. Rejecting a rival solely because of its vocabulary would evade the substantive comparison.
+The internal/external terminology in the scaffolding discussion names positions relative to a modeled collective. It need not posit independent realities; Bourrat explicitly treats the distinction as relative. Our [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) follows how these differentiated relations form and change within the same history. Rejecting a rival solely because of its vocabulary would evade the substantive comparison.
 
 ## The proposed explanatory contribution
 

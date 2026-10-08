@@ -1,6 +1,6 @@
 # Agreement, stable commitment and the grounds of authority
 
-7 October 2026, Asia/Bangkok. AI-authored conceptual and correspondence review following [the prospective-control integration](PERSPECTIVAL-PROSPECTIVE-CONTROL-INTEGRATION.md), the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) and [language correction](LANGUAGE-AND-FORMATION-CORRECTION.md). **Scope: philosophical reconstruction and constructed countercases; no new theorem, empirical result or completed universal grounding.**
+7 October 2026, Asia/Bangkok. AI-authored conceptual and correspondence review following [the prospective-control integration](PERSPECTIVAL-PROSPECTIVE-CONTROL-INTEGRATION.md), the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) and [language correction](LANGUAGE-AND-FORMATION-CORRECTION.md). **Scope: philosophical reconstruction and constructed countercases; no new theorem, empirical result or completed universal grounding.**
 
 **Finding:** agreement can create a real practical difference without creating every power subsequently claimed in its name. Binding commitment, absence of unilateral revocation, stable finality and immunity from all grounds are different claims. “Authority remains answerable to its grounds” supplies a substantive limit only when the ground, its scope and relevant changes receive an independent ethical explanation. Otherwise it restates the conclusion.
 

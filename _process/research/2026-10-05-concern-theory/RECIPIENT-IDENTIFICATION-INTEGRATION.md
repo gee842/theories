@@ -1,12 +1,12 @@
 # From a recipient observation to a qualified response
 
-6 October 2026. AI-authored development under the [generative-grounding goal](../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md). The named connection is **actual formed prediction and coupling → paid recipient evidence → a qualified target correspondence → its later paid use**.
+6 October 2026. AI-authored development under the [generative-grounding goal](../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md). The named connection is **actual formed prediction and coupling → paid recipient evidence → a qualified target correspondence → its later paid use**.
 
 **Status: accepted at the finite identification-interface scope.** The [independent internal review](RECIPIENT-IDENTIFICATION-REVIEW.md) accepts the executable comparisons, frozen formal artifacts, [mathematical arguments](RECIPIENT-IDENTIFICATION-MATH.md) and this integration. Current source and verification hashes match. This is a completed conditional interface within the ongoing unified foundation.
 
 ## What was missing
 
-The [recipient-correction study](../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CORRECTION.md) acquires separate actor and recipient correspondences. Its noiseless teaching rule labels a failed action's opposite as correct. When an opportunity can be absent, a faithfully observed zero cannot distinguish the wrong action from an unavailable opportunity. Better recording alone does not resolve that ambiguity.
+The [recipient-correction study](../../../theories/becoming/chapters/RECIPIENT-CORRECTION.md) acquires separate actor and recipient correspondences. Its noiseless teaching rule labels a failed action's opposite as correct. When an opportunity can be absent, a faithfully observed zero cannot distinguish the wrong action from an unavailable opportunity. Better recording alone does not resolve that ambiguity.
 
 The new [protocol](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/PROTOCOL.md) makes a narrower inference. A zero leaves the recipient correspondence unknown and changes the next exploration action. A positive recipient receipt qualifies the action just performed, under a stable binary target and a plant that cannot return support for the wrong action. The same qualified record then governs a later paid action. Missing evidence leaves the record unchanged and is distinct from an acquired zero.
 

@@ -6,7 +6,7 @@
 
 此前的[起点研究](NONDUAL-GROUNDING-QUESTION.md)已经区分“无独立自我”“主客划分非根本”“经验无真实差异”三个命题。[生成重构](NONDUAL-GENERATIVE-RECONSTRUCTION.md)进一步提出：承受、证据可及、改变能力与临时响应组织，应在实际过程内得到解释，而不把它们都交给一个完成的行动者。[原典比较](NONDUAL-GENERATIVE-SOURCES.md)已读《易传》与《中论》，并保留二者对生成、价值和自性的不同处理。本轮不将这些重记为新发现。
 
-[关系性自我](../../../../theories/relational-self-and-datong/README.md)已有关系聚成行动中心的说法，并拒绝抹去个体的集体主义；[道与生成](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DAO-AND-GENERATIVITY.md)已要求把认识和评价置回世界内；[阳明比较](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md)保留心、理、造化相贯通的强说，又不把一体直接译成统一感受或现代平等。这些是我们的前史，不是 James 的历史影响证据。
+[关系性自我](../../../../theories/relational-self-and-datong/README.md)已有关系聚成行动中心的说法，并拒绝抹去个体的集体主义；[道与生成](../../../../theories/becoming/chapters/DAO-AND-GENERATIVITY.md)已要求把认识和评价置回世界内；[阳明比较](../../../../theories/becoming/chapters/WANG-YANGMING.md)保留心、理、造化相贯通的强说，又不把一体直接译成统一感受或现代平等。这些是我们的前史，不是 James 的历史影响证据。
 
 本轮选 William James，理由很具体：他的相关论文实际解释一个经验如何按不同关系承担主观、客观和个人连续性的功能，并讨论不同心如何共有对象。没有在已查研究目录中找到对这些论文的既有直接阅读记录。本轮未追加 Nishida；不能只因有“纯粹经验”这个词就把两位作者或中国经典归成同一体系。
 

@@ -1,6 +1,6 @@
 # Independent review: comparing unequal basic losses
 
-8 October 2026. AI-authored independent counterreview. Follows the explicit G0/J route and the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). The accepted practical account, [BC1](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md) and the independently developed [one-to-one BC2 candidate](BASIC-LOSS-SEVERITY-INTEGRATION.md) retain their scopes. This note records the substantive counterreview, primary-source comparison and final acceptance of the revised candidate and retained proof artifacts at the scopes below.
+8 October 2026. AI-authored independent counterreview. Follows the explicit G0/J route and the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). The accepted practical account, [BC1](../../../../theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.md) and the independently developed [one-to-one BC2 candidate](BASIC-LOSS-SEVERITY-INTEGRATION.md) retain their scopes. This note records the substantive counterreview, primary-source comparison and final acceptance of the revised candidate and retained proof artifacts at the scopes below.
 
 ## 1. The precise advance and the correction already required
 

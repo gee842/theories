@@ -1,6 +1,6 @@
 # Crossed basic claims, local stability and changing opportunities
 
-8 October 2026. AI-authored continuation following Ren's “继续” after the completed [LC investigation](UNEQUAL-BASIC-LOSSES-INTEGRATION.md). The [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) and authorized G0/J route govern this work. The continuing objective is universal normative grounding across intelligence; a finite comparison or procedural construction has a declared role within that investigation and does not replace it.
+8 October 2026. AI-authored continuation following Ren's “继续” after the completed [LC investigation](UNEQUAL-BASIC-LOSSES-INTEGRATION.md). The [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) and authorized G0/J route govern this work. The continuing objective is universal normative grounding across intelligence; a finite comparison or procedural construction has a declared role within that investigation and does not replace it.
 
 ## The transition
 

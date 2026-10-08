@@ -4,7 +4,7 @@
 
 ## 1. Genealogy and the selected extension
 
-The [earlier Wang source study](WANG-YANGMING-SOURCES.md) and [canonical comparison](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md) already examined *Daxue wen*, differentiated one-body concern, practice and biased judgment. Their main findings are inherited here. Rereading them supplies no new independent evidence.
+The [earlier Wang source study](WANG-YANGMING-SOURCES.md) and [canonical comparison](../../../../theories/becoming/chapters/WANG-YANGMING.md) already examined *Daxue wen*, differentiated one-body concern, practice and biased judgment. Their main findings are inherited here. Rereading them supplies no new independent evidence.
 
 The new bounded passage is **《教條示龍場諸生》〈責善〉**, in the same received collection, volume 26. It was not among the earlier note's listed primary readings. This extends the textual comparison within one thinker; it is not a new experiment, a systematic historical survey or independent corroboration of Wang's philosophical claims.
 

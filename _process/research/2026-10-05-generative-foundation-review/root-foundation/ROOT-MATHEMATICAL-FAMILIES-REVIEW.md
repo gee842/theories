@@ -1,6 +1,6 @@
 # Dependent families: independent coverage and admission review
 
-7 October 2026. AI-authored independent-agent review of the finite coverage result and its dependent-family continuation, under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). No new proof is proposed in this note. Mathematical claims refer to the reviewed Lean declarations; philosophical appraisal is distinguished from their conditional conclusions.
+7 October 2026. AI-authored independent-agent review of the finite coverage result and its dependent-family continuation, under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). No new proof is proposed in this note. Mathematical claims refer to the reviewed Lean declarations; philosophical appraisal is distinguished from their conditional conclusions.
 
 ## 1. Independent audit of the preceding coverage result
 

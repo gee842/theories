@@ -27,7 +27,7 @@ A conventional candidate-elimination procedure also returns every correct answer
 
 ## What is now established
 
-The [prior analysis](../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md) asked for evidence beyond a correct-packet-versus-no-packet comparison. This pilot adds actual fresh-context outputs that use an authentic acquired artifact selectively under confirming, defeating and out-of-scope observations. Historical donor acquisition is supported by the prior experiment, not newly measured here.
+The [prior analysis](../../../theories/becoming/chapters/MEMORY-CORRECTION-AND-SUCCESSION.md) asked for evidence beyond a correct-packet-versus-no-packet comparison. This pilot adds actual fresh-context outputs that use an authentic acquired artifact selectively under confirming, defeating and out-of-scope observations. Historical donor acquisition is supported by the prior experiment, not newly measured here.
 
 The episode boundaries, complete hypothesis family, reliability of the observations, relevance rule, accuracy objective and permission to abstain were supplied. The contexts did not discover those conditions, acquire the new evidence through inquiry, repair their own persistent archive, or act in an external task. No recipient's welfare, self-interest, ethical standing or authority was measured. Success on this task cannot fill those premises in the paid evaluative-succession construction.
 

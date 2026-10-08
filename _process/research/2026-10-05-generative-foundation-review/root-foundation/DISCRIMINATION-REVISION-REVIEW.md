@@ -1,6 +1,6 @@
 # Review: acquired discrimination changes the operative inquiry test
 
-6 October 2026. AI-authored independent review under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). **Accepted at the bounded causal scope below.** The prospective acceptance requirements were recorded before inspection of the new experiment's results and remain preserved. The named connection is acquired consequences of inquiry → revision of the distinctions used in further inquiry. This review concerns a bounded intervention on the existing observation-table learner, not a new controller, target or proof of ethical adequacy.
+6 October 2026. AI-authored independent review under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). **Accepted at the bounded causal scope below.** The prospective acceptance requirements were recorded before inspection of the new experiment's results and remain preserved. The named connection is acquired consequences of inquiry → revision of the distinctions used in further inquiry. This review concerns a bounded intervention on the existing observation-table learner, not a new controller, target or proof of ethical adequacy.
 
 ## Four explanatory layers must remain distinct
 
@@ -9,7 +9,7 @@
 3. **The implementing law.** The installed repair procedure forms and uses a new suffix after an observed inconsistency. A fixed larger event law does not make the acquired discriminator unreal or require an infinite hierarchy of changing laws. Conversely, the particular repair recipe, reset/read channel, alphabet and bound remain supplied relations in this model.
 4. **Practical and normative relevance.** A discriminator can be justified relative to the prediction contract without establishing why that contract matters, who is affected by pursuing it, or what inquiry is authorized. Successful repair cannot create permission by itself. These are differentiated questions within the same activity, not an independent evaluator outside it.
 
-The [previous sufficiency round](INQUIRY-SUFFICIENCY-INTEGRATION.md) should not be read as denying every existing acquired operational criterion. The [concurrent inquiry-revision result](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md) also changes a real six-encounter requirement to four using acquired occupancy evidence; its [independent runtime review](INQUIRY-REVISION-REVIEW.md) accepts that bounded technical bridge. It retains a supplied evidence-to-rewrite rule and its own authority conditions. The two histories must not be spliced or counted as derivation of each other's mechanisms.
+The [previous sufficiency round](INQUIRY-SUFFICIENCY-INTEGRATION.md) should not be read as denying every existing acquired operational criterion. The [concurrent inquiry-revision result](../../../../theories/becoming/chapters/INQUIRY-REVISION.md) also changes a real six-encounter requirement to four using acquired occupancy evidence; its [independent runtime review](INQUIRY-REVISION-REVIEW.md) accepts that bounded technical bridge. It retains a supplied evidence-to-rewrite rule and its own authority conditions. The two histories must not be spliced or counted as derivation of each other's mechanisms.
 
 ## Existing positive result and exact antecedents
 

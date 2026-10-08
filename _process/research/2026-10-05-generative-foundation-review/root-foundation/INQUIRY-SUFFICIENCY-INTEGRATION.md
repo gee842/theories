@@ -1,6 +1,6 @@
 # Inquiry sufficiency, action and the changing conditions of continuation
 
-6 October 2026. AI-authored integration under the [shared nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). The preceding [inquiry-interface round](INQUIRY-INTERFACE-ARGUMENT.md) made concrete progress by locating acquired control of actual inquiry duration. Its final [integration checks](INQUIRY-INTERFACE-CHECKS.json) now pass. This round advances **acquired distinctions → sufficiency for further activity → changed conditions requiring renewed assessment**, without replacing the full foundation goal with one-step predictive success.
+6 October 2026. AI-authored integration under the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). The preceding [inquiry-interface round](INQUIRY-INTERFACE-ARGUMENT.md) made concrete progress by locating acquired control of actual inquiry duration. Its final [integration checks](INQUIRY-INTERFACE-CHECKS.json) now pass. This round advances **acquired distinctions → sufficiency for further activity → changed conditions requiring renewed assessment**, without replacing the full foundation goal with one-step predictive success.
 
 ## The source result changes the account
 

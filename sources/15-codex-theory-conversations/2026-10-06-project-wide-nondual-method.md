@@ -34,4 +34,4 @@ Ren's criticism names Western practices. This implementation addresses the actua
 
 This direction does not assert completion of a proof, withdraw the no-assumptions objective, erase differentiated consequences, or validate every existing branch. The preserved conditional results retain their scopes. The new instruction concerns how the project understands and investigates its foundation.
 
-The [shared method](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) implements this direction. It continues the earlier [nondual core and subject-extension instruction](2026-10-06-nondual-core-and-subject-extensions.md) and [generated-I clarification](2026-10-06-generated-i-and-owner-independent-ethics.md).
+The [shared method](../../theories/becoming/chapters/NONDUAL-METHOD.md) implements this direction. It continues the earlier [nondual core and subject-extension instruction](2026-10-06-nondual-core-and-subject-extensions.md) and [generated-I clarification](2026-10-06-generated-i-and-owner-independent-ethics.md).

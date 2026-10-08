@@ -1,6 +1,6 @@
 # Purpose correction through actual continuation
 
-6 October 2026. AI-authored mathematical note for Ren's request to complete formal proofs alongside the proposed direction of inquiry. This note explains [PurposeCorrection.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PurposeCorrection.lean), using the existing `Generative.Process`, `Generative.Trace` and conservative joint-occurrence interface. The [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) governs its interpretation.
+6 October 2026. AI-authored mathematical note for Ren's request to complete formal proofs alongside the proposed direction of inquiry. This note explains [PurposeCorrection.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/PurposeCorrection.lean), using the existing `Generative.Process`, `Generative.Trace` and conservative joint-occurrence interface. The [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) governs its interpretation.
 
 ## Declared content and preserved distinctions
 

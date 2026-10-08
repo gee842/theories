@@ -1,6 +1,6 @@
 # Inquiry revision through continuing consequences
 
-6 October 2026. AI-authored additive mechanism under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). **Status: finite technical bridge verified.** This note distinguishes the new local law from the unchanged parent law and its existing impossibility result.
+6 October 2026. AI-authored additive mechanism under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). **Status: finite technical bridge verified.** This note distinguishes the new local law from the unchanged parent law and its existing impossibility result.
 
 ## The actual connection
 

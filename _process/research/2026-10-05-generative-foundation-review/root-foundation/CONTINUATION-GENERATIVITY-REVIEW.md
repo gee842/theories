@@ -1,6 +1,6 @@
 # Continuation through generativity: affirmative argument and counterreview
 
-7 October 2026, Asia/Bangkok. AI-authored philosophical development and internal review of Ren's thought: “the continuation of life/systems/humanity depends on being generative.” It follows the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) and [positive 生生不息 direction](SHENGSHENG-DIRECTION-RECONSTRUCTION.md). No new mathematical proof, empirical result or universal ethical derivation is claimed.
+7 October 2026, Asia/Bangkok. AI-authored philosophical development and internal review of Ren's thought: “the continuation of life/systems/humanity depends on being generative.” It follows the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) and [positive 生生不息 direction](SHENGSHENG-DIRECTION-RECONSTRUCTION.md). No new mathematical proof, empirical result or universal ethical derivation is claimed.
 
 **Named connection:** formation and renewal of the conditions of continuation → the ethical quality of whole generative realization → practical reasons across different forms of intelligence. The first relation supplies a substantive candidate ground to investigate; it does not establish the latter two merely by being necessary.
 

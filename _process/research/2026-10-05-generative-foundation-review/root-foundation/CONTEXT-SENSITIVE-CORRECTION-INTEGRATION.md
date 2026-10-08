@@ -1,7 +1,7 @@
 # Correction within the activity being understood
 
 6 October 2026. AI-authored reconstruction under [Ren's nondual correction](../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md)
-and the [shared method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md).
+and the [shared method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md).
 The named connection is **retained consequence → distinguishing interaction →
 selective revision of the operational relation**. The source-interface execution
 and independent numerical reconstruction are accepted at the scope below.

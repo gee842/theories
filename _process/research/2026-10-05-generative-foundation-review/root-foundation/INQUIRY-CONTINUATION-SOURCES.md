@@ -1,6 +1,6 @@
 # Inquiry that changes the possibilities of identification
 
-6 October 2026. AI-authored primary-source and interpretation note for the connection **acquired distinctions → actual inquiry → changed conditions of further identification**. Read under the [shared nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). This note credits established mathematical antecedents and the repository's existing acquisition mechanisms. It introduces no scientific run, empirical cognition result or mathematical-priority claim.
+6 October 2026. AI-authored primary-source and interpretation note for the connection **acquired distinctions → actual inquiry → changed conditions of further identification**. Read under the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). This note credits established mathematical antecedents and the repository's existing acquisition mechanisms. It introduces no scientific run, empirical cognition result or mathematical-priority claim.
 
 ## Direct primary antecedents
 
@@ -36,7 +36,7 @@ The [current inquiry-interface argument](INQUIRY-INTERFACE-ARGUMENT.md) prevents
 2. The access diagnoser branches its bookkeeping and compatible-state calculation on acquired evidence, but `Diagnoser.run(probe)` receives its probe-mode choice as a supplied argument. That implementation does not show that the learner formed the criterion for undertaking the consumable assay.
 3. The [method-revision implementation](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/model.py), `acquire`, actually continues until its current family has one survivor. The saved matched comparison identified by the inquiry-interface argument changes that family through a retained acquired signal and consequently continues acquisition for four readings instead of three. Its primitive access and uniqueness stopping rule remain unchanged. The misleading-signal branch preserves the fact that longer inquiry need not be a warranted improvement.
 
-The [mathematical identity study](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/IMMANENT-MATHEMATICAL-IDENTITY.md) establishes exact behavioral identity relative to declared continuations. The present connection adds a different obligation: an inquiry policy must preserve enough of the relevant future opportunities to establish the identification it claims. Exact pairwise distinctions alone do not discharge that obligation. Neither that theorem nor this source note supplies a learner that revises its criterion of sufficient inquiry through those consequences.
+The [mathematical identity study](../../../../theories/becoming/chapters/IMMANENT-MATHEMATICAL-IDENTITY.md) establishes exact behavioral identity relative to declared continuations. The present connection adds a different obligation: an inquiry policy must preserve enough of the relevant future opportunities to establish the identification it claims. Exact pairwise distinctions alone do not discharge that obligation. Neither that theorem nor this source note supplies a learner that revises its criterion of sufficient inquiry through those consequences.
 
 ## What the comparison supports
 

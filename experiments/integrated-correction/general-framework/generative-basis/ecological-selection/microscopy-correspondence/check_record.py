@@ -13,7 +13,7 @@ ROOT=next(p for p in HERE.parents if (p/'RESEARCH.md').exists())
 SOURCE=ROOT/'sources/evolutionary-selection/karita-2026'
 RAW=SOURCE/'microscopy-metadata'
 BASE=ROOT/'_process/research/2026-10-05-generative-foundation-review/root-foundation'
-THEORY=ROOT/'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md'
+THEORY=ROOT/'theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md'
 OUTPUT=BASE/'MICROSCOPY-CORRESPONDENCE-CHECKS.json'
 
 

@@ -1,6 +1,6 @@
 # Reviewing good across alternative future lives
 
-6 October 2026. AI-authored counterreview under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Named connection: **formation of different future bearers → ethical comparison of what their respective histories would realize**. The [argument](FUTURE-BEARER-FORMATION-ARGUMENT.md) is accepted as a scoped positive proposal, not a completed necessity proof.
+6 October 2026. AI-authored counterreview under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Named connection: **formation of different future bearers → ethical comparison of what their respective histories would realize**. The [argument](FUTURE-BEARER-FORMATION-ARGUMENT.md) is accepted as a scoped positive proposal, not a completed necessity proof.
 
 ## What changes in the comparison
 

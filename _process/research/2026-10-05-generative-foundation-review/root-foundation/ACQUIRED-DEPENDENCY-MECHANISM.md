@@ -1,7 +1,7 @@
 # Acquiring a distinction that preserves a native continuation
 
 6 October 2026. AI-authored source analysis and conditional construction under
-the [shared method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md).
+the [shared method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md).
 This note develops the next composition after the accepted
 [continuing-dependency result](CONTINUING-DEPENDENCY-INTEGRATION.md). The
 [fixed protocol](../../../../experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/continuing-dependency/acquisition/PROTOCOL.md)

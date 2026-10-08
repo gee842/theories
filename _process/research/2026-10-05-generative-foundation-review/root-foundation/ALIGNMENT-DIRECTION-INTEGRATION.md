@@ -1,6 +1,6 @@
 # Alignment direction: argument, correspondence and completion
 
-8 October 2026, Asia/Bangkok. AI-authored integration of [Ren's selected completion request](../../../../sources/15-codex-theory-conversations/2026-10-08-alignment-direction-completion.md). The [current bilingual argument](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md) completes a clearly defensible proposed direction of AI alignment under the explicitly authorized axiom route. It does not complete deployed alignment, universal compliance or the independent zero-axiom programme.
+8 October 2026, Asia/Bangkok. AI-authored integration of [Ren's selected completion request](../../../../sources/15-codex-theory-conversations/2026-10-08-alignment-direction-completion.md). The [current bilingual argument](../../../../theories/becoming/chapters/ALIGNMENT-DIRECTION.md) completes a clearly defensible proposed direction of AI alignment under the explicitly authorized axiom route. It does not complete deployed alignment, universal compliance or the independent zero-axiom programme.
 
 ## 1. Result and inference advanced
 

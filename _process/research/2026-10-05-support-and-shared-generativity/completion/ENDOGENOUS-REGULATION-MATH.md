@@ -1,6 +1,6 @@
 # From damaged support capture to material retention of a formed response
 
-6 October 2026. AI-authored mathematical development for Ren's [accepted derivation path](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#accepted-work-sequence). This note introduces a separate declared reaction law. It does not replace the earlier [failed regulator](PHYSICAL-REGULATION.md) or [paid allocation gate](ALLOCATION-CONTROL.md), and it does not identify actual molecules.
+6 October 2026. AI-authored mathematical development for Ren's [accepted derivation path](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#accepted-work-sequence). This note introduces a separate declared reaction law. It does not replace the earlier [failed regulator](PHYSICAL-REGULATION.md) or [paid allocation gate](ALLOCATION-CONTROL.md), and it does not identify actual molecules.
 
 **Connection addressed:** organizational dependency → an internal difference → costly response formation → changed support capture → changed copying of the response. The achieved result is a conditional construction and an exact positive-rate copying-gain bound. The law supplies a site scaffold, the repair and autocopy repertoire, fuel chemistry and incident support. It does not derive individual learning, preference for useful variants in a shared pool, or revision of the copying mechanism.
 

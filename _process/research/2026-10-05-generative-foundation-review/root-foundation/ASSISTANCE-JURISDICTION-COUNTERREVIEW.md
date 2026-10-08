@@ -1,6 +1,6 @@
 # Assistance jurisdiction: what a protected practical domain excludes
 
-6 October 2026. AI-authored counterreview of **authority over one's positive life → exclusion of all prospective stranger-relief moral favor**. This continues [unified ethical grounding](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md) and the [elective-concern review](ELECTIVE-CONCERN-COUNTERREVIEW.md). No experiment or necessary-root proof is claimed.
+6 October 2026. AI-authored counterreview of **authority over one's positive life → exclusion of all prospective stranger-relief moral favor**. This continues [unified ethical grounding](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md) and the [elective-concern review](ELECTIVE-CONCERN-COUNTERREVIEW.md). No experiment or necessary-root proof is claimed.
 
 **Assessment:** protected agency can justify more than another first-order weight: it may warrant limits on deliberation, legitimate refusal and source-specific extinction of reasons. These possibilities defeat an overbroad claim that every patient benefit must always govern choice. They do not yet establish that an existing stranger's relief contributes no moral favor. A project-preserving comparison exposes the stronger jurisdiction thesis while providing defeasible positive support for the direct candidate.
 

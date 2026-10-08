@@ -1,6 +1,6 @@
 # How concern can revise its own boundaries
 
-**Latest continuation:** the [integrated settlement](../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md) now joins paid revision, retained grounds, effective protection and succession in one conditional process, with defended ethical grounds, finite decision results and an evidence audit. Its [study record](settlement/README.md) preserves proofs, independent internal reviews and what remains unresolved. The chapter below introduces the earlier scope and access results on which it builds.
+**Latest continuation:** the [integrated settlement](../../../theories/becoming/chapters/REVISABLE-CONCERN-SETTLEMENT.md) now joins paid revision, retained grounds, effective protection and succession in one conditional process, with defended ethical grounds, finite decision results and an evidence audit. Its [study record](settlement/README.md) preserves proofs, independent internal reviews and what remains unresolved. The chapter below introduces the earlier scope and access results on which it builds.
 
 The new advance is an account of how a process can change **who and what its reasons reach**, and how that change can resist convenient suppression.
 

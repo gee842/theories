@@ -4,9 +4,9 @@
 
 ## What is already established
 
-[Finite decision mathematics N1–N5](../../2026-10-05-revisable-concern/settlement/normative/decision-math.md) establishes the undominated remainder, uncertain-standing comparison, identity consistency, scarcity lottery and information obstruction. [The 慧根 transport account](HUIGEN-REASON-TRANSPORT.md) gives the evidence-class permission and robust feasibility criteria. The [semantic-action interface](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-ACTION-COMPOSITION.md) requires both sound interpretation and causal realization. Reproving existence of a robust action would not supply their missing physical or normative premises.
+[Finite decision mathematics N1–N5](../../2026-10-05-revisable-concern/settlement/normative/decision-math.md) establishes the undominated remainder, uncertain-standing comparison, identity consistency, scarcity lottery and information obstruction. [The 慧根 transport account](HUIGEN-REASON-TRANSPORT.md) gives the evidence-class permission and robust feasibility criteria. The [semantic-action interface](../../../../theories/becoming/chapters/SEMANTIC-ACTION-COMPOSITION.md) requires both sound interpretation and causal realization. Reproving existence of a robust action would not supply their missing physical or normative premises.
 
-The present addition checks a narrower interface against the actual [paid protection process](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REASON-PROTECTION.md): which addressed claims an actual trace supports, which remain uncertified, and how protection changes when the assessment interval expands.
+The present addition checks a narrower interface against the actual [paid protection process](../../../../theories/becoming/chapters/REASON-PROTECTION.md): which addressed claims an actual trace supports, which remain uncertified, and how protection changes when the assessment interval expands.
 
 ## Partial evidence and a fixed admitted ledger
 

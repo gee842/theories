@@ -1,6 +1,6 @@
 # Affective direction within an experience
 
-6 October 2026. AI-authored candidate argument under the [shared nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). The named connection is **formed organization and experiential direction → an occurrence's unpleasantness, before reflective ownership → the proposed local patient ground**. This investigates realization upstream of C1. It neither derives welfare from an imperative nor adds a formal axiom.
+6 October 2026. AI-authored candidate argument under the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). The named connection is **formed organization and experiential direction → an occurrence's unpleasantness, before reflective ownership → the proposed local patient ground**. This investigates realization upstream of C1. It neither derives welfare from an imperative nor adds a formal axiom.
 
 The existing [constitutive candidate](CONSTITUTIVE-SIGNIFICANCE-ARGUMENT.md) distinguishes sensory quality, affect, attitudes and practical justification. The [closure audit](ETHICAL-CONSTITUTION-CLOSURE.md) already distinguishes changing represented damage from changing experience. The present addition investigates a particular organization that could explain why an experience itself becomes a target of change. It is a philosophical candidate, not an implemented or empirically verified realization.
 

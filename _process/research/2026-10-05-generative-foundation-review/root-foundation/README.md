@@ -6,7 +6,7 @@
 
 ## Discovery and evidence / 检索与证据
 
-[Full reading catalogue / 完整阅读目录](../../../../theories/shengsheng-buxi-generative-existence/results/README.md) · [Curated generativity chain / 生成链](../../../../theories/shengsheng-buxi-generative-existence/results/GENERATIVITY-CHAIN.md) · [Dated session map / 会话快照](../../../../theories/shengsheng-buxi-generative-existence/results/SESSION-RESULTS.md) · [Broader theory map / 更广理论图谱](../../../../MAP.md)
+[Full reading catalogue / 完整阅读目录](../../../../theories/becoming/results/README.md) · [Curated generativity chain / 生成链](../../../../theories/becoming/results/GENERATIVITY-CHAIN.md) · [Dated session map / 会话快照](../../../../theories/becoming/results/SESSION-RESULTS.md) · [Broader theory map / 更广理论图谱](../../../../MAP.md)
 
 ```sh
 make research-check

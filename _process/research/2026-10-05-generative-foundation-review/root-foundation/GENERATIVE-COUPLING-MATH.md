@@ -1,10 +1,10 @@
 # Forming and revising the use of an acquired prediction
 
 6 October 2026. AI-authored continuation of the [governing generative
-foundation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md).
+foundation](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md).
 This addresses **acquired prediction → formed and revisable prediction-to-action
 coupling**. It closes one premise exposed by the concurrent
-[prediction/action study](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PREDICTION-ACTION.md):
+[prediction/action study](../../../../theories/becoming/chapters/PREDICTION-ACTION.md):
 that circuit learned from actual outcomes but was given a normal or inverted
 action rule as a fixed experimental arm.
 

@@ -1,6 +1,6 @@
 # Formation and recovery draw what every native operation draws
 
-7 October 2026. AI-assisted continuation of the [contact-formation track](CONTACT-FORMATION-LAW.md), which listed "applying the native interface draw to recovery and formation" as supplied. It follows the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md): formation and recovery are treated as operations of the same activity as the native commands, so the question is whether that activity has one draw law or several.
+7 October 2026. AI-assisted continuation of the [contact-formation track](CONTACT-FORMATION-LAW.md), which listed "applying the native interface draw to recovery and formation" as supplied. It follows the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md): formation and recovery are treated as operations of the same activity as the native commands, so the question is whether that activity has one draw law or several.
 
 **Formal status:** [FormationDraw.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormationDraw.lean), 27 declarations, every axiom report empty. It imports `FormationClosure` and `PhasePeriodSelection` unchanged and reuses `sensing_command_draws`. It is checked by [check_stock_derivation.py](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/check_stock_derivation.py).
 

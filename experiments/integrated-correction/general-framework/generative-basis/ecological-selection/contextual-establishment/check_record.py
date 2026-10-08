@@ -13,7 +13,7 @@ ROOT = next(p for p in HERE.parents if (p/'RESEARCH.md').exists())
 SOURCE = ROOT/'sources/evolutionary-selection/karita-2026'
 STUDIES = ROOT/'_process/research/2026-10-05-generative-foundation-review/root-foundation'
 LEAN = HERE.parents[1]/'lean/universal-ethics'
-THEORY = ROOT/'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md'
+THEORY = ROOT/'theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md'
 
 
 def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()

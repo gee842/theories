@@ -15,7 +15,7 @@ BASE = ROOT / 'experiments/integrated-correction/general-framework/generative-ba
 FORMAL = BASE / 'lean/systems-complexity/analysis'
 EXPERIMENT = BASE / 'inquiry-correspondence'
 REVIEW = HERE / 'development/tuning-correspondence-review'
-CANONICAL = ROOT / 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEASURED-FEEDBACK-CORRESPONDENCE.md'
+CANONICAL = ROOT / 'theories/becoming/chapters/MEASURED-FEEDBACK-CORRESPONDENCE.md'
 ACCEPTED = HERE / 'development/tuning-accepted-documents'
 STANDARD_AXIOMS = {'propext', 'Classical.choice', 'Quot.sound'}
 

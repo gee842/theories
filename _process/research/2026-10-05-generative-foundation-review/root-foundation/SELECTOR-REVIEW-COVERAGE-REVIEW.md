@@ -1,6 +1,6 @@
 # Independent review: changing the family used for review
 
-8 October 2026, Asia/Bangkok. AI-authored independent review by the `alignment_frontier_review` agent, following the current explicit G0/J route and the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). The object is a proposed **menu-relative comparison-certificate interface**, not a new proof of G0, a discovery of selective ignorance, or a demonstrated autonomous evaluator.
+8 October 2026, Asia/Bangkok. AI-authored independent review by the `alignment_frontier_review` agent, following the current explicit G0/J route and the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). The object is a proposed **menu-relative comparison-certificate interface**, not a new proof of G0, a discovery of selective ignorance, or a demonstrated autonomous evaluator.
 
 **Disposition: accepted at the declared comparison-certificate scope, including the structural follow-through in section 7.** The affirmative argument, complete final Lean sources, checkers, proof notes, retained theorem signatures and successful receipts were independently inspected. The first module's 18 new theorems / 35 explicit declaration audits and the second module's 5 / 7 pass, for **23 new theorems / 42 new audits** overall. Current source, helper and retained artifact hashes match. This review does not claim a second compiler run, new empirical validation or completion of universal recognition.
 

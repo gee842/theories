@@ -27,7 +27,7 @@ One small clarification was requested: the three-pellet value of −0.76 percent
 
 The author applied the requested clarification, explicitly identifying −0.76 as the recorded preferred-response frequency change and a lower bound with one unknown slot. The corrected canonical report was reread and its SHA-256 verified as `abb7a2bd5dd9e260c660b261dfd9127ca847f4fb02de951c6ca202120f9d6b70`. All report-local file links resolve, including the completed experiment README. The results and receipts retain the identities above. **Final verdict: accepted within the stated scope; no outstanding correction from this review.**
 
-[report]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md
+[report]: ../../../../theories/becoming/chapters/RECIPIENT-HARM-AND-ACTION.md
 [results]: ../../../../experiments/recipient-harm-valuation/results.json
 [verification]: ../../../../experiments/recipient-harm-valuation/independent-verification.json
 [audit]: ../../../../experiments/recipient-harm-valuation/source-summary-audit.json

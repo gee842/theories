@@ -15,7 +15,7 @@ from pathlib import Path
 import re
 
 ROOT = Path(__file__).resolve().parents[2]
-OUT = ROOT / 'theories/shengsheng-buxi-generative-existence/results'
+OUT = ROOT / 'theories/becoming/results'
 RECORDS = OUT / 'records'
 STATUSES = {'recorded-checked', 'reviewed-scoped', 'open', 'superseded', 'withdrawn'}
 KINDS = {'theorem', 'argument', 'assessment', 'target'}

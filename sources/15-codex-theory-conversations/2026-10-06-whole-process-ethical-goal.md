@@ -15,4 +15,4 @@ Ren accepts the further grounding task while correcting the organizing perspecti
 
 The direction is consistent with his [goodness-without-return correction](2026-10-06-goodness-without-return-to-self.md) and the [project-wide nondual method](2026-10-06-project-wide-nondual-method.md). It does not by itself define a scalar good of the whole, erase differentiated effects or claim that the next goal is already achieved.
 
-The [canonical whole-process account](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#the-whole-as-the-grounding-question) and [integration](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-GROUNDING-INTEGRATION.md) record the investigation.
+The [canonical whole-process account](../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#the-whole-as-the-grounding-question) and [integration](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WHOLE-PROCESS-GROUNDING-INTEGRATION.md) record the investigation.

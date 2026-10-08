@@ -1,6 +1,6 @@
 # Independent review: consequences changing a predictive model's use
 
-6 October 2026. AI-authored prospective acceptance criteria, written before reviewing the new implementation or its numerical results. This reviewer has advised the design on resource continuity, receipt access and hypothesis-family scope; the subsequent check will be independently implemented, not independent of that discussion. Follow the [shared method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md).
+6 October 2026. AI-authored prospective acceptance criteria, written before reviewing the new implementation or its numerical results. This reviewer has advised the design on resource continuity, receipt access and hypothesis-family scope; the subsequent check will be independently implemented, not independent of that discussion. Follow the [shared method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md).
 
 ## Connection and positive target
 

@@ -1,6 +1,6 @@
 # Coformed evaluation and trajectory direction: discriminating sources
 
-7 October 2026, Asia/Bangkok. AI-authored primary-source assessment supporting [the situated-good investigation](PERSPECTIVAL-GOOD-AND-TRAJECTORIES.md). **Status: source assessment and a proposed discriminating test; no executed experiment, new proof, or established universal ethical derivation.** This is a supporting contribution to **whole realization → warranted ethical quality → practical reasons**, governed by the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md).
+7 October 2026, Asia/Bangkok. AI-authored primary-source assessment supporting [the situated-good investigation](PERSPECTIVAL-GOOD-AND-TRAJECTORIES.md). **Status: source assessment and a proposed discriminating test; no executed experiment, new proof, or established universal ethical derivation.** This is a supporting contribution to **whole realization → warranted ethical quality → practical reasons**, governed by the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md).
 
 The three sources below have different evidential roles: an original mathematical model, an original controlled experiment, and an original conceptual proposal. They are neither three replications nor independent confirmations of the generative foundation. They constrain what a faithful account of formed perspectives and their effects must explain.
 

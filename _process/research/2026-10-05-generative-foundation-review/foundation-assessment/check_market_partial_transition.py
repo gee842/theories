@@ -36,7 +36,7 @@ def main():
         assert sha(formal/'partial-transition-verification'/(name+'.txt')) == digest, name
     fragments = {
         HERE/'MARKET-INTERNET-DEGENERATION.md': '<a id="partial-correction-boundary"></a>',
-        ROOT/'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md': '<a id="partial-correction-boundary"></a>',
+        ROOT/'theories/becoming/chapters/MARKETS-AND-GENERATIVE-REGIMES.md': '<a id="partial-correction-boundary"></a>',
         formal/'README.md': '<a id="checked-partial-transition"></a>',
         ROOT/'sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md': '<a id="continue-partial-regime-correction"></a>',
     }

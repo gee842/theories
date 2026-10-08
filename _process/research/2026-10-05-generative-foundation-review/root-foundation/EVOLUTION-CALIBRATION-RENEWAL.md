@@ -93,7 +93,7 @@ Inspection has a continuing cost. Repeating a six-unit check for every task or e
 
 ## 8. Credit and primary comparison
 
-The [recipe-grounding study](RECIPE-GROUNDING-INTEGRATION.md) already acquires a decoder from actual references and preserves failed transfer. The [formed-route monitor](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMED-ROUTE-MONITOR.md) already constructs evidence of actual returns and writes with finite support and meaningful failure states. Those mechanisms are credited, not reopened.
+The [recipe-grounding study](RECIPE-GROUNDING-INTEGRATION.md) already acquires a decoder from actual references and preserves failed transfer. The [formed-route monitor](../../../../theories/becoming/chapters/FORMED-ROUTE-MONITOR.md) already constructs evidence of actual returns and writes with finite support and meaningful failure states. Those mechanisms are credited, not reopened.
 
 The [relational correction study](RELATIONAL-CORRECTION-INTEGRATION.md) already proves that a probe can identify a composed relation in its specified XOR family, and that relation-preserving changes can keep a converter correct. Its 39/55 formal package retains its own proof and scope. Here the corresponding relation is the acquired affine-to-sign interface, with an exact transfer criterion and an operative connection to the retained tanh network. No chemical, budgetary or formal-import identity with those other models is asserted.
 

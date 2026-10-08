@@ -1,6 +1,6 @@
 # From acquired source distinctions to conditional reliance
 
-8 October 2026. AI-authored continuation under [Ren's instruction to keep going](../../../../sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md#source-reliance-continuation). Reuses the [selective-revision result](SELECTIVE-REVISION-TEST.md), its inherited acquisition mechanism and the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md).
+8 October 2026. AI-authored continuation under [Ren's instruction to keep going](../../../../sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md#source-reliance-continuation). Reuses the [selective-revision result](SELECTIVE-REVISION-TEST.md), its inherited acquisition mechanism and the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md).
 
 **Result:** source-dependence assessments can be acquired from production probes, rather than supplied as a final usability label. The learned distinctions support correct definite answers when the actual production route and disturbance are covered by the declared model. A concrete omitted joint failure passes the calibration and defeats that extrapolation; a further probe exposes the mismatch and reopens inquiry. This is a completed finite connection and a substantive limit, not universal epistemic sufficiency.
 

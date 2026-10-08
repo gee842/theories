@@ -18,7 +18,8 @@ import subprocess
 from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[2]
-OUT = ROOT / "theories/shengsheng-buxi-generative-existence/results"
+OUT = ROOT / "theories/becoming/results"
+MANIFEST = ROOT / "_process/architecture/generated-manifest.json"
 SCRIPT = Path(__file__).resolve().relative_to(ROOT).as_posix()
 EXCLUDED = (".git", ".lake", "node_modules", ".venv", "venv", "__pycache__")
 KINDS = "theorem|lemma|def|abbrev|structure|inductive|opaque|axiom|constant"
@@ -203,12 +204,12 @@ def documents() -> tuple[dict, dict]:
     docs = {}
     backlinks = defaultdict(list)
     for path in discover("*.md"):
-        if path.startswith("theories/shengsheng-buxi-generative-existence/results/"):
+        if path.startswith("theories/becoming/results/"):
             continue
         if not (path.startswith(("theories/", "_process/research/", "experiments/")) or "/" not in path):
             continue
         body = (ROOT / path).read_text(encoding="utf-8")
-        targets = sorted({resolved for m in LINK.finditer(body) if (resolved := local_link(path, m.group(1))) and not resolved.startswith("theories/shengsheng-buxi-generative-existence/results/")})
+        targets = sorted({resolved for m in LINK.finditer(body) if (resolved := local_link(path, m.group(1))) and not resolved.startswith("theories/becoming/results/")})
         if not targets:
             continue
         title = next((line.lstrip("# ").strip() for line in body.splitlines() if line.startswith("# ")), Path(path).name)
@@ -305,7 +306,9 @@ def catalogue() -> tuple[dict, dict]:
 
 def doc_links(file: dict, sources: dict) -> str:
     refs = file["direct_documentation_links_from"]
-    canonical = [r for r in refs if r.startswith("theories/")]
+    # A theory's own argument outranks generated navigation that merely lists it.
+    generated = set(json.loads(MANIFEST.read_text())["files"])
+    canonical = sorted((r for r in refs if r.startswith("theories/")), key=lambda r: (r in generated, r))
     research = sorted((r for r in refs if r.startswith("_process/")), key=lambda r: ("INTEGRATION" not in r, "MATH" not in r, "ARGUMENT" not in r, r))
     chosen = canonical[:1] + research[:1]
     readme = file["package_readme"]
@@ -351,7 +354,7 @@ def render_index(manifest: dict, sources: dict) -> str:
         members = [f for f in active if f["group"] == key]
         if not members:
             continue
-        rows += ["", f'<a id="group-{key}"></a>', "", f"## {title}", "", significance, "", f"概念入口 / Conceptual entry: {mdlink(theory.removesuffix('.md'), 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/' + theory)}.", "", "| 模块 / Module | theorem/lemma | 其他声明 / Other declarations | 解释与既有证据 / Interpretation & existing evidence |", "|---|---:|---:|---|"]
+        rows += ["", f'<a id="group-{key}"></a>', "", f"## {title}", "", significance, "", f"概念入口 / Conceptual entry: {mdlink(theory.removesuffix('.md'), 'theories/becoming/chapters/' + theory)}.", "", "| 模块 / Module | theorem/lemma | 其他声明 / Other declarations | 解释与既有证据 / Interpretation & existing evidence |", "|---|---:|---:|---|"]
         for file in members:
             content = manifest["contents_by_sha256"][file["sha256"]]
             theorem_count = sum(d["kind"] in ("theorem", "lemma") for d in content["declarations"])
@@ -372,7 +375,7 @@ def render_declarations(manifest: dict, sources: dict, selected_group: str | Non
             members = [f for f in active if f["group"] == key]
             count = sum(sum(d["kind"] in ("theorem", "lemma") for d in manifest["contents_by_sha256"][f["sha256"]]["declarations"]) for f in members)
             rows.append(f"| [{title}](lean-declarations/{key}.md) | {len(members)} | {count:,} |")
-        rows += ["", "## 按名称查找 / Find by name", "", "各分组页可使用浏览器查找；编辑器的跨文件搜索可查全部名称。命令行可从仓库根运行： / Use browser find within a topic page or an editor's cross-file search for every name. From the repository root:", "", "```sh", "rg -n 'theorem_name' theories/shengsheng-buxi-generative-existence/results/lean-declarations/", "```", "", "## 模块清单 / Module list", "", "| 模块 / Module | 方向 / Topic |", "|---|---|"]
+        rows += ["", "## 按名称查找 / Find by name", "", "各分组页可使用浏览器查找；编辑器的跨文件搜索可查全部名称。命令行可从仓库根运行： / Use browser find within a topic page or an editor's cross-file search for every name. From the repository root:", "", "```sh", "rg -n 'theorem_name' theories/becoming/results/lean-declarations/", "```", "", "## 模块清单 / Module list", "", "| 模块 / Module | 方向 / Topic |", "|---|---|"]
         for file in sorted(active, key=lambda f: (Path(f["path"]).name, f["path"])):
             rows.append(f"| [{Path(file['path']).name}](lean-declarations/{file['group']}.md#{anchor(file['path'])}) | {GROUPS[file['group']][0]} |")
         return "\n".join(rows) + "\n"

@@ -24,8 +24,8 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[2]
-OUT = ROOT / 'theories/shengsheng-buxi-generative-existence/results'
-CANON = OUT.parent / 'unified-2026-10-05'
+OUT = ROOT / 'theories/becoming/results'
+CANON = OUT.parent / 'chapters'
 MANIFEST = ROOT / '_process/architecture/generated-manifest.json'
 GENERATED_VIEW = 'generated-view'
 FIELDS = ('id', 'source', 'title_zh', 'title_en', 'category', 'status',
@@ -142,7 +142,7 @@ def index(chapters: list[dict], branches: list[dict]) -> str:
              '| [统一论证 A–L](ARGUMENTS-A-L.md) · [统一论证 M–Z](ARGUMENTS-M-Z.md) | 逐章中英阅读版：论证、意义、范围、下一问题、原文、Lean 与证据。 / Paired chapter readings with scope, questions, sources and evidence. |',
              '| [Lean 模块](LEAN-INDEX.md) · [定理名称](LEAN-DECLARATIONS.md) | 按模块及声明名称定位源码；区分检查记录与当前源码。 / Find modules and named declarations; distinguish recorded checks from current sources. |',
              '| [研究路线 / Roadmap](ROADMAP.md) | 已有结果、持续方向与建议的下一检验。 / Established results, ongoing directions and proposed tests. |',
-             '| [细项主张账本 / Claim register](../unified-2026-10-05/CLAIMS.md) | 原有细项主张、证据类别、反例与研究沿革。 / Existing detailed claims, evidence classes and counterexamples. |', '',
+             '| [细项主张账本 / Claim register](../chapters/CLAIMS.md) | 原有细项主张、证据类别、反例与研究沿革。 / Existing detailed claims, evidence classes and counterexamples. |', '',
              '## 按问题阅读 / Read by question', '',
              '| 问题 / Question | 推荐起点 / Entry points |', '|---|---|',
              '| 已经建立了怎样的共同基础？ / What foundation has been established? | [生成根据](ARGUMENTS-A-L.md#generative-grounding) · [前提与范围](ARGUMENTS-A-L.md#foundation-premises) · [全篇理论](ARGUMENTS-M-Z.md#theory) |',
@@ -160,7 +160,7 @@ def index(chapters: list[dict], branches: list[dict]) -> str:
              '| 历史数学结果 / Historical mathematics | 保持原有手证、计算或历史检查的验证范围；不由后来的关联模块追认。 / Retains its original hand-proof, computation or historical-check scope. |',
              '| 经验或合成证据 / Empirical or synthetic evidence | 真实研究、对应解释、有限模拟各按原有范围阅读。 / Real studies, correspondence and finite simulations keep distinct scopes. |',
              '| 开放研究 / Open research | 目标、猜想和拟议检验；不计作完成结果。 / Targets, conjectures and proposed tests, not completed results. |', '',
-             '角色、边界、认识和评价都按[非二元方法](../unified-2026-10-05/NONDUAL-METHOD.md)理解为同一展开中形成的关系。分类只是阅读分工，不把过程分成互不相关的事实、价值或主体与世界。正面成果、实际损失和反例均保留。', '',
+             '角色、边界、认识和评价都按[非二元方法](../chapters/NONDUAL-METHOD.md)理解为同一展开中形成的关系。分类只是阅读分工，不把过程分成互不相关的事实、价值或主体与世界。正面成果、实际损失和反例均保留。', '',
              'Under the shared nondual method, roles, boundaries, knowing and evaluation are differentiated relations within one unfolding. The catalogue’s categories organize reading; they do not split reality into independent domains. Positive results, losses and counterexamples remain visible.', '',
              '## 逐项列表 / Complete chapter list', '',
              '编号沿用原文件名，支持页面搜索（中文、英文或文件名）。每项的 Lean 栏只指认具体对应；“有 Lean”不表示整个哲学结论都已获证。', '',

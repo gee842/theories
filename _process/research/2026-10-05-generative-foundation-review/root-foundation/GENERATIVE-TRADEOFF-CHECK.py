@@ -14,7 +14,7 @@ from urllib.parse import unquote
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[3]
 PACKAGE = ROOT / "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity"
-THEORY = ROOT / "theories/shengsheng-buxi-generative-existence/unified-2026-10-05"
+THEORY = ROOT / "theories/becoming/chapters"
 
 
 def digest(data):
@@ -70,7 +70,7 @@ def main():
             for suffix in ["INTEGRATION", "ARGUMENT", "REVIEW", "SOURCES"]]
     texts = {p: p.read_text() for p in docs}
     shared = [ROOT / "README.md", ROOT / "RESEARCH.md", ROOT / "_process/BRIEF.md",
-              ROOT / "theories/shengsheng-buxi-generative-existence/README.md",
+              ROOT / "theories/becoming/README.md",
               THEORY / "GENERATIVE-GROUNDING.md", HERE / "README.md",
               HERE / "GENERATIVE-PREMISE-INTEGRATION.md"]
     for path in shared:

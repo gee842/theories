@@ -13,7 +13,7 @@ The actual prose now distinguishes these levels:
 - Ethical descriptions retain actual experience, agency, consent and warranted concern where these are the subject. A modeled stock is not renamed life or welfare.
 - Genuine economic arrangements retain money, payment and liability. Exact identifiers, quoted source wording, numerical results and meaningful conditions remain traceable.
 
-English and Chinese formulations are AI-authored and labeled as such in the [grounding account](../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope) and [shared method](../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md#keep-foundational-language-at-the-right-level). Process, theory, mathematical model and an internally formed model have distinct explanatory roles.
+English and Chinese formulations are AI-authored and labeled as such in the [grounding account](../../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope) and [shared method](../../../../../theories/becoming/chapters/NONDUAL-METHOD.md#keep-foundational-language-at-the-right-level). Process, theory, mathematical model and an internally formed model have distinct explanatory roles.
 
 ## Edited scope and preservation
 
@@ -34,4 +34,4 @@ The first complete link scan passed. Later concurrent additions introduced Huige
 
 This correction clarifies how the named transition—organizational dependency → operational significance → learning and revisable response—is explained. It derives no new transition. Local event laws, stock meanings, acquisition mechanisms and ethical interpretations retain the premise status recorded in their studies. An operation's absence from a selected representation is not automatically an impossibility in the wider account.
 
-The next substantive connections and current conditional-universality target remain governed by [GENERATIVE-GROUNDING](../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md). Clearer wording does not settle them. The preserved failures, limits on fixed task rankings, and counterexamples remain constraints on future claims.
+The next substantive connections and current conditional-universality target remain governed by [GENERATIVE-GROUNDING](../../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md). Clearer wording does not settle them. The preserved failures, limits on fixed task rankings, and counterexamples remain constraints on future claims.

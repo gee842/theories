@@ -22,4 +22,4 @@ The present instruction explicitly authorizes subagents and requests completion 
 
 **中文范围。** 本次从同一关系展开说明学习、保持、实际使用及跨层次选择怎样相互形成，并研究选择器自身的形成、变动与接续。既有局部成果直接复用；不能以自体维持代替整体关系，也不能以相对频率增加代替一切生成性。完成请求与代理授权真实保留；原有认知、学习、演化心理的全部目标不被缩小，普遍有利结论须有自身根据。
 
-Current account: [cognition, learning and evolution](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md). Existing recursive-selection argument: [recursive generative selection](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-GENERATIVE-SELECTION.md).
+Current account: [cognition, learning and evolution](../../theories/becoming/chapters/COGNITION-LEARNING-AND-EVOLUTION.md). Existing recursive-selection argument: [recursive generative selection](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-GENERATIVE-SELECTION.md).

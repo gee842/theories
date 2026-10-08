@@ -1,6 +1,6 @@
 # Future-bearer formation: primary comparisons
 
-6 October 2026. AI-authored source record for **generated good → conditions under which different future bearers and goods form**. Read with the [shared method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). The [originals and manifest](../../../../sources/37-ethical-minimum-primary-2026-10-06/future-formation/README.md) preserve exact bytes. Earlier [Shiffrin readings](HUIGEN-SELF-GROUND-SOURCES.md#follow-up-shiffrin-on-imposed-harm-and-responsibility-without-agreement) already reject counterfactual worsening as a necessary condition of harm; that is not a new discovery here.
+6 October 2026. AI-authored source record for **generated good → conditions under which different future bearers and goods form**. Read with the [shared method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). The [originals and manifest](../../../../sources/37-ethical-minimum-primary-2026-10-06/future-formation/README.md) preserve exact bytes. Earlier [Shiffrin readings](HUIGEN-SELF-GROUND-SOURCES.md#follow-up-shiffrin-on-imposed-harm-and-responsibility-without-agreement) already reject counterfactual worsening as a necessary condition of harm; that is not a new discovery here.
 
 ## Harman: option-dependent bearers and reasons
 

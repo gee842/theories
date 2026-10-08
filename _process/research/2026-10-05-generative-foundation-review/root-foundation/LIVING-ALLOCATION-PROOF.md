@@ -1,6 +1,6 @@
 # Joint participant allocation, reconstruction and later reuse
 
-8 October 2026, Asia/Bangkok. AI-authored continuation of [living dependencies](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md). The target connection is **partial competence and joint support → specified activity across successive reached conditions**. Source: [LivingAllocation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingAllocation.lean).
+8 October 2026, Asia/Bangkok. AI-authored continuation of [living dependencies](../../../../theories/becoming/chapters/LIVING-DEPENDENCIES.md). The target connection is **partial competence and joint support → specified activity across successive reached conditions**. Source: [LivingAllocation.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingAllocation.lean).
 
 **Result:** arbitrary declared reaction families admit a general allocation and serialization theorem. A jointly allocated batch has an admissible serialization in the original reaction process; participant uses are bounded by the inventory from which they are jointly allocated. Across successive batches, actual positive increases of the selected count can enlarge later allocations. Concrete checked histories distinguish present activity, reconstruction, shared support and subsequent reuse. **16 new named theorems / 32 explicit declarations pass Lean 4.29.1, with 107 declaration audits across the three-module closure.**
 
@@ -29,7 +29,7 @@ All retained catalytic copies still occur on both sides. Their input occurrences
 
 This is a **declared exclusive-participant discipline**. Some real enabling relationships can support several activities without exclusive occupancy; the representation does not require treating all such relationships as independently consumed or exclusively reserved particles. Conversely, a physically relevant inhibitor, spatial conflict or duration cannot be omitted and then declared settled by these positive-input recipes. The theorem applies to the stated semantics; correspondence must justify the relevant exclusivity and omitted interactions.
 
-Following the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md), active organization, inactive organization, substrate, support and product name differentiated roles within connected transformations. They are not independent foundational realms. All modeled shared requirements and reached states remain in one history. The supplied recipe family and chosen participant descriptions remain local explanatory inputs, not consequences of the bare generative core.
+Following the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md), active organization, inactive organization, substrate, support and product name differentiated roles within connected transformations. They are not independent foundational realms. All modeled shared requirements and reached states remain in one history. The supplied recipe family and chosen participant descriptions remain local explanatory inputs, not consequences of the bare generative core.
 
 ## 3. General checked results
 

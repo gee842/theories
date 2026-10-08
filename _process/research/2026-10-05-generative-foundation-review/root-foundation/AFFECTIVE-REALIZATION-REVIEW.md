@@ -1,6 +1,6 @@
 # Affective realization: target, constitution and authority
 
-6 October 2026. AI-authored independent review of the [affective realization candidate](AFFECTIVE-REALIZATION-ARGUMENT.md), under the [shared nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Target: explain an episode's felt valence through its generated organization before a narrative “I.” This review tests that explanatory transition; it neither assumes a separate fundamental subject nor establishes ethical necessity.
+6 October 2026. AI-authored independent review of the [affective realization candidate](AFFECTIVE-REALIZATION-ARGUMENT.md), under the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Target: explain an episode's felt valence through its generated organization before a narrative “I.” This review tests that explanatory transition; it neither assumes a separate fundamental subject nor establishes ethical necessity.
 
 ## Primary rival: source synopsis
 

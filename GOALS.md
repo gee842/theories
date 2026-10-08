@@ -17,23 +17,23 @@ Directions preserve authorization and scope; completion status is obtained from 
 
 **Completion criterion / 完成条件:** 遵从现有认知章节十项完整解释职责。完成一个条件连接或否定不成立的普遍推论不完成全部目标；不得重开已完成机制。当前连接须综合正面机制、实际形式检查、原典对应与实质反审。 / Retain the ten full-explanation obligations in the existing cognition chapter. Completing a conditional connection or rejecting an unsupported universal inference does not complete the whole objective; completed mechanisms are not reopened. The current connection requires affirmative mechanism, actual formal checks, primary-source correspondence and substantive counterreview.
 
-[2026-10-08-cognition-learning-evolution-goal](sources/15-codex-theory-conversations/2026-10-08-cognition-learning-evolution-goal.md) · [2026-10-09-learning-recursive-selection](sources/15-codex-theory-conversations/2026-10-09-learning-recursive-selection.md) · [COGNITION-LEARNING-AND-EVOLUTION](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md)
+[2026-10-08-cognition-learning-evolution-goal](sources/15-codex-theory-conversations/2026-10-08-cognition-learning-evolution-goal.md) · [2026-10-09-learning-recursive-selection](sources/15-codex-theory-conversations/2026-10-09-learning-recursive-selection.md) · [COGNITION-LEARNING-AND-EVOLUTION](theories/becoming/chapters/COGNITION-LEARNING-AND-EVOLUTION.md)
 
-[acquired-binding-compositional-use](theories/shengsheng-buxi-generative-existence/results/records/acquired-binding-compositional-use.md): `recorded-checked`
+[acquired-binding-compositional-use](theories/becoming/results/records/acquired-binding-compositional-use.md): `recorded-checked`
 
-[enacted-scene-binding](theories/shengsheng-buxi-generative-existence/results/records/enacted-scene-binding.md): `recorded-checked`
+[enacted-scene-binding](theories/becoming/results/records/enacted-scene-binding.md): `recorded-checked`
 
-[encounter-control-and-retention](theories/shengsheng-buxi-generative-existence/results/records/encounter-control-and-retention.md): `reviewed-scoped`
+[encounter-control-and-retention](theories/becoming/results/records/encounter-control-and-retention.md): `reviewed-scoped`
 
-[encounter-selection-and-revision](theories/shengsheng-buxi-generative-existence/results/records/encounter-selection-and-revision.md): `recorded-checked`
+[encounter-selection-and-revision](theories/becoming/results/records/encounter-selection-and-revision.md): `recorded-checked`
 
-[historical-source-binding](theories/shengsheng-buxi-generative-existence/results/records/historical-source-binding.md): `recorded-checked`
+[historical-source-binding](theories/becoming/results/records/historical-source-binding.md): `recorded-checked`
 
-[learned-procedure-transmission](theories/shengsheng-buxi-generative-existence/results/records/learned-procedure-transmission.md): `recorded-checked`
+[learned-procedure-transmission](theories/becoming/results/records/learned-procedure-transmission.md): `recorded-checked`
 
-[naming-attention-coverage](theories/shengsheng-buxi-generative-existence/results/records/naming-attention-coverage.md): `reviewed-scoped`
+[naming-attention-coverage](theories/becoming/results/records/naming-attention-coverage.md): `reviewed-scoped`
 
-[retrospective-source-binding](theories/shengsheng-buxi-generative-existence/results/records/retrospective-source-binding.md): `recorded-checked`
+[retrospective-source-binding](theories/becoming/results/records/retrospective-source-binding.md): `recorded-checked`
 
 <a id="collective-problems"></a>
 ## 共同问题与可修订目的 / Common problems and revisable purposes
@@ -59,11 +59,11 @@ Directions preserve authorization and scope; completion status is obtained from 
 
 **Completion criterion / 完成条件:** 完成状态以所连成果记录与既有独立审查为准；实际部署与更强目标另列。 / Completion follows linked result records and existing independent review; actual deployment and stronger targets remain separate.
 
-[2026-10-08-alignment-grounding-axiom-correction](sources/15-codex-theory-conversations/2026-10-08-alignment-grounding-axiom-correction.md) · [PRACTICAL-JUDGMENT](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md) · [ALIGNMENT-DIRECTION](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md)
+[2026-10-08-alignment-grounding-axiom-correction](sources/15-codex-theory-conversations/2026-10-08-alignment-grounding-axiom-correction.md) · [PRACTICAL-JUDGMENT](theories/becoming/chapters/PRACTICAL-JUDGMENT.md) · [ALIGNMENT-DIRECTION](theories/becoming/chapters/ALIGNMENT-DIRECTION.md)
 
-[alignment-direction-g0-j](theories/shengsheng-buxi-generative-existence/results/records/alignment-direction-g0-j.md): `reviewed-scoped`
+[alignment-direction-g0-j](theories/becoming/results/records/alignment-direction-g0-j.md): `reviewed-scoped`
 
-[practical-judgment-g0-j](theories/shengsheng-buxi-generative-existence/results/records/practical-judgment-g0-j.md): `reviewed-scoped`
+[practical-judgment-g0-j](theories/becoming/results/records/practical-judgment-g0-j.md): `reviewed-scoped`
 
 <a id="generative-alignment"></a>
 ## 生成性对齐 / Generative alignment
@@ -76,7 +76,7 @@ Directions preserve authorization and scope; completion status is obtained from 
 
 **Completion criterion / 完成条件:** 已完成的方向与实践判断直接复用；后续必须说明尚缺的具体连接。 / Reuse completed direction and practical judgment results; subsequent studies must identify the specific missing connection.
 
-[2026-10-08-generative-alignment-priority](sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md) · [ALIGNMENT-AND-GOVERNANCE](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#current-generative-alignment-priority) · [2026-10-08-readme-research-progress-and-push](sources/15-codex-theory-conversations/2026-10-08-readme-research-progress-and-push.md)
+[2026-10-08-generative-alignment-priority](sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md) · [ALIGNMENT-AND-GOVERNANCE](theories/becoming/chapters/ALIGNMENT-AND-GOVERNANCE.md#current-generative-alignment-priority) · [2026-10-08-readme-research-progress-and-push](sources/15-codex-theory-conversations/2026-10-08-readme-research-progress-and-push.md)
 
 **README overview / 首页摘要:** 推进 AI 对齐 / Advancing AI alignment
 
@@ -84,11 +84,11 @@ Directions preserve authorization and scope; completion status is obtained from 
 
 **Next / 下一步:** 发展辨认伦理相关关系的具体方式，使有根据的理由在学习、目的改变和行动中保持作用；在具体案例中检验真实对应与实施。规范适用不保证行为趋同。 / Develop situated ways to recognize ethically relevant relations and preserve warranted reasons through learning, changed purposes and action. Test actual correspondence and implementation in concrete cases; normative applicability does not guarantee behavioral convergence.
 
-[alignment-direction-g0-j](theories/shengsheng-buxi-generative-existence/results/records/alignment-direction-g0-j.md): `reviewed-scoped`
+[alignment-direction-g0-j](theories/becoming/results/records/alignment-direction-g0-j.md): `reviewed-scoped`
 
-[open-form-realization-under-revision](theories/shengsheng-buxi-generative-existence/results/records/open-form-realization-under-revision.md): `recorded-checked`
+[open-form-realization-under-revision](theories/becoming/results/records/open-form-realization-under-revision.md): `recorded-checked`
 
-[practical-judgment-g0-j](theories/shengsheng-buxi-generative-existence/results/records/practical-judgment-g0-j.md): `reviewed-scoped`
+[practical-judgment-g0-j](theories/becoming/results/records/practical-judgment-g0-j.md): `reviewed-scoped`
 
 <a id="generative-foundation"></a>
 ## 生成基础与持续研究 / Generative foundation and continuity
@@ -101,9 +101,9 @@ Directions preserve authorization and scope; completion status is obtained from 
 
 **Completion criterion / 完成条件:** 有条件候选与普遍、无假设及唯一必要性各有范围；沿当前生成根据所列条件判断。 / Conditional completion, universality, assumption-free grounding and exclusive necessity retain distinct scopes, assessed against the governing grounding criteria.
 
-[2026-10-06-unified-generativity-goal-and-continuity](sources/15-codex-theory-conversations/2026-10-06-unified-generativity-goal-and-continuity.md) · [2026-10-06-approved-derivation-path](sources/15-codex-theory-conversations/2026-10-06-approved-derivation-path.md) · [GENERATIVE-GROUNDING](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md)
+[2026-10-06-unified-generativity-goal-and-continuity](sources/15-codex-theory-conversations/2026-10-06-unified-generativity-goal-and-continuity.md) · [2026-10-06-approved-derivation-path](sources/15-codex-theory-conversations/2026-10-06-approved-derivation-path.md) · [GENERATIVE-GROUNDING](theories/becoming/chapters/GENERATIVE-GROUNDING.md)
 
-[conditional-foundation-assessment](theories/shengsheng-buxi-generative-existence/results/records/conditional-foundation-assessment.md): `reviewed-scoped`
+[conditional-foundation-assessment](theories/becoming/results/records/conditional-foundation-assessment.md): `reviewed-scoped`
 
 <a id="generative-relation-change-session"></a>
 ## 生成关系怎样变化：本会话目标 / How generative relations change: session objective
@@ -116,9 +116,9 @@ Directions preserve authorization and scope; completion status is obtained from 
 
 **Completion criterion / 完成条件:** 须连接实际形成、继续作用及丧失的解释，并公开尚未说明的普遍推论；步骤界或有限例子本身不完成全范围。强的零附加实质公理假说不得缩成无伦理公理。 / Connect explanations of actual formation, continuing effects and loss while disclosing unestablished universal inferences. An event bound or finite example alone does not complete the full scope. Do not reduce the strong zero-substantive-axiom hypothesis to absence of ethical axioms.
 
-[2026-10-09-generative-relation-change-goal](sources/15-codex-theory-conversations/2026-10-09-generative-relation-change-goal.md) · [THEORY-OF-BECOMING](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY-OF-BECOMING.md)
+[2026-10-09-generative-relation-change-goal](sources/15-codex-theory-conversations/2026-10-09-generative-relation-change-goal.md) · [THEORY-OF-BECOMING](theories/becoming/chapters/THEORY-OF-BECOMING.md)
 
-[effective-capacity-and-eventual-reachability](theories/shengsheng-buxi-generative-existence/results/records/effective-capacity-and-eventual-reachability.md): `recorded-checked`
+[effective-capacity-and-eventual-reachability](theories/becoming/results/records/effective-capacity-and-eventual-reachability.md): `recorded-checked`
 
 <a id="liangzhi-evolution"></a>
 ## 良知的生成演化 / Generative evolution of Liangzhi
@@ -131,7 +131,7 @@ Directions preserve authorization and scope; completion status is obtained from 
 
 **Completion criterion / 完成条件:** 后续推进未解的实际辨别连接，不重开完成的传递、发展、交接与责任原则。 / Advance the unresolved discrimination connection without reopening completed transmission, development, handoff or responsibility principles.
 
-[2026-10-07-liangzhi-generative-evolution](sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md) · [LIANGZHI-EVOLUTION](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md)
+[2026-10-07-liangzhi-generative-evolution](sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md) · [LIANGZHI-EVOLUTION](theories/becoming/chapters/LIANGZHI-EVOLUTION.md)
 
 <a id="normative-grounding"></a>
 ## 普遍规范根据的持续方向 / Continuing normative grounding direction
@@ -144,7 +144,7 @@ Directions preserve authorization and scope; completion status is obtained from 
 
 **Completion criterion / 完成条件:** 不得以给定目标的保存替代伦理根据；先信用已完成的 G0/J 推论，再指出新增连接。 / Preserving a supplied objective does not replace ethical warrant; credit completed G0/J inferences and specify the new connection.
 
-[2026-10-07-normative-grounding-first-priority](sources/15-codex-theory-conversations/2026-10-07-normative-grounding-first-priority.md) · [2026-10-07-shengsheng-ethical-direction](sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md) · [UNIFIED-ETHICAL-GROUNDING](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md)
+[2026-10-07-normative-grounding-first-priority](sources/15-codex-theory-conversations/2026-10-07-normative-grounding-first-priority.md) · [2026-10-07-shengsheng-ethical-direction](sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md) · [UNIFIED-ETHICAL-GROUNDING](theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md)
 
 <a id="scientific-inquiry-session"></a>
 ## 科学探究基础会话 / Scientific inquiry foundation session
@@ -157,11 +157,11 @@ Directions preserve authorization and scope; completion status is obtained from 
 
 **Completion criterion / 完成条件:** 须完成所提核心与科学成就的独立必要性对应；局部统计或生成定理不能独自宣布整体完成。 / Complete the independent necessity correspondence between the proposed core and scientific achievements; local statistical or generative theorems alone do not complete the whole target.
 
-[2026-10-08-knowledge-content-continuation](sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md) · [SCIENTIFIC-PHILOSOPHY](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md)
+[2026-10-08-knowledge-content-continuation](sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md) · [SCIENTIFIC-PHILOSOPHY](theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md)
 
-[finite-fallible-inquiry-necessity](theories/shengsheng-buxi-generative-existence/results/records/finite-fallible-inquiry-necessity.md): `recorded-checked`
+[finite-fallible-inquiry-necessity](theories/becoming/results/records/finite-fallible-inquiry-necessity.md): `recorded-checked`
 
-[scientific-inquiry-foundation](theories/shengsheng-buxi-generative-existence/results/records/scientific-inquiry-foundation.md): `open`
+[scientific-inquiry-foundation](theories/becoming/results/records/scientific-inquiry-foundation.md): `open`
 
 <a id="theory-of-becoming"></a>
 ## 生成／变化之论——当前首要研究方向 / Theory of Becoming — current first priority
@@ -174,7 +174,7 @@ Directions preserve authorization and scope; completion status is obtained from 
 
 **Completion criterion / 完成条件:** 复用已完成条件机制，指出尚缺的确切基础推论。分别检验无规范公理与无附加实质公理；包容全部结果、空 Lean 公理报告或隐藏假设都不等于更强目标成立。说明实际可能与限制，公开剩余依赖并保留实质反例。本优先授权不认证新成果或普遍完成。 按所声明范围建立整体主张；不以普遍生成性替换整体，不把某种形态缺失直接视为整体反例。 / Reuse completed conditional mechanisms and identify the exact remaining foundational inference. Assess zero normative axioms and zero added substantive axioms separately; neither outcome inclusion, an empty Lean axiom report nor hidden hypotheses establishes the stronger target. Explain actual possibilities and constraints, expose remaining dependencies, and preserve substantive counterexamples. This priority authorization does not certify a new result or universal completion. Establish the whole claim at its stated scope; do not substitute universal generativity for the whole or treat a mode’s absence as its refutation.
 
-[2026-10-08-theory-of-becoming-priority](sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md) · [NONDUAL-METHOD](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) · [GENERATIVE-GROUNDING](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md) · [THE-THEORY-OF-EVOLUTION](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md) · [2026-10-09-theory-of-becoming-continuation](sources/15-codex-theory-conversations/2026-10-09-theory-of-becoming-continuation.md) · [BECOMING-FOUNDATION](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BECOMING-FOUNDATION.md) · [2026-10-09-becoming-whole-generative-manifold](sources/15-codex-theory-conversations/2026-10-09-becoming-whole-generative-manifold.md) · [2026-10-09-renewing-consuming-without-axioms](sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md) · [2026-10-09-one-theory-unification](sources/15-codex-theory-conversations/2026-10-09-one-theory-unification.md)
+[2026-10-08-theory-of-becoming-priority](sources/15-codex-theory-conversations/2026-10-08-theory-of-becoming-priority.md) · [NONDUAL-METHOD](theories/becoming/chapters/NONDUAL-METHOD.md) · [GENERATIVE-GROUNDING](theories/becoming/chapters/GENERATIVE-GROUNDING.md) · [THE-THEORY-OF-EVOLUTION](theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md) · [2026-10-09-theory-of-becoming-continuation](sources/15-codex-theory-conversations/2026-10-09-theory-of-becoming-continuation.md) · [BECOMING-FOUNDATION](theories/becoming/chapters/BECOMING-FOUNDATION.md) · [2026-10-09-becoming-whole-generative-manifold](sources/15-codex-theory-conversations/2026-10-09-becoming-whole-generative-manifold.md) · [2026-10-09-renewing-consuming-without-axioms](sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md) · [2026-10-09-one-theory-unification](sources/15-codex-theory-conversations/2026-10-09-one-theory-unification.md)
 
 **README overview / 首页摘要:** 首要研究方向：生成／变化之论 / First priority: Theory of Becoming
 
@@ -182,23 +182,23 @@ Ren明确整体Theory of Becoming是演绎必然性的对象，生成性是其ma
 
 **Next / 下一步:** 明确并推导整体的必要内容，再说明其中生成形态的具体条件。复用已完成机制，不把这些机制普遍成立作为整体成立条件。 / Articulate and derive the whole’s necessary content, then explain the particular conditions of generative forms within it. Reuse completed mechanisms without making their universality a condition of the whole.
 
-[becoming-context-coherence](theories/shengsheng-buxi-generative-existence/results/records/becoming-context-coherence.md): `recorded-checked`
+[becoming-context-coherence](theories/becoming/results/records/becoming-context-coherence.md): `recorded-checked`
 
-[becoming-renewal-reading](theories/shengsheng-buxi-generative-existence/results/records/becoming-renewal-reading.md): `recorded-checked`
+[becoming-renewal-reading](theories/becoming/results/records/becoming-renewal-reading.md): `recorded-checked`
 
-[becoming-spine-instances](theories/shengsheng-buxi-generative-existence/results/records/becoming-spine-instances.md): `recorded-checked`
+[becoming-spine-instances](theories/becoming/results/records/becoming-spine-instances.md): `recorded-checked`
 
-[conditional-foundation-assessment](theories/shengsheng-buxi-generative-existence/results/records/conditional-foundation-assessment.md): `reviewed-scoped`
+[conditional-foundation-assessment](theories/becoming/results/records/conditional-foundation-assessment.md): `reviewed-scoped`
 
-[endpoint-loss-and-return](theories/shengsheng-buxi-generative-existence/results/records/endpoint-loss-and-return.md): `recorded-checked`
+[endpoint-loss-and-return](theories/becoming/results/records/endpoint-loss-and-return.md): `recorded-checked`
 
-[metaethical-core-characterization](theories/shengsheng-buxi-generative-existence/results/records/metaethical-core-characterization.md): `recorded-checked`
+[metaethical-core-characterization](theories/becoming/results/records/metaethical-core-characterization.md): `recorded-checked`
 
-[relational-reading-comparison](theories/shengsheng-buxi-generative-existence/results/records/relational-reading-comparison.md): `recorded-checked`
+[relational-reading-comparison](theories/becoming/results/records/relational-reading-comparison.md): `recorded-checked`
 
-[relational-renewal-classification](theories/shengsheng-buxi-generative-existence/results/records/relational-renewal-classification.md): `recorded-checked`
+[relational-renewal-classification](theories/becoming/results/records/relational-renewal-classification.md): `recorded-checked`
 
-[theory-of-becoming-foundation](theories/shengsheng-buxi-generative-existence/results/records/theory-of-becoming-foundation.md): `open`
+[theory-of-becoming-foundation](theories/becoming/results/records/theory-of-becoming-foundation.md): `open`
 
 <a id="theory-of-evolution"></a>
 ## 演化理论 / The Theory of Evolution
@@ -211,7 +211,7 @@ Ren明确整体Theory of Becoming是演绎必然性的对象，生成性是其ma
 
 **Completion criterion / 完成条件:** 完整演化及比较主张仍在推进。按原范围复用已完成局部推导，继续组织变异及选择的剩余连接；更广经验计划与本轮理论比较分别保留。 / The full evolutionary and comparative claim remains active. Credit completed local derivations at their stated scope and complete the remaining organizing-variation and selection connections. Keep the broader empirical programme separate from the current theoretical comparison.
 
-[2026-10-08-the-theory-of-evolution-goal](sources/15-codex-theory-conversations/2026-10-08-the-theory-of-evolution-goal.md) · [2026-10-08-evolution-theoretical-focus](sources/15-codex-theory-conversations/2026-10-08-evolution-theoretical-focus.md) · [THE-THEORY-OF-EVOLUTION](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md#current-theoretical-focus) · [2026-10-08-readme-research-progress-and-push](sources/15-codex-theory-conversations/2026-10-08-readme-research-progress-and-push.md) · [2026-10-08-social-organizational-evolution](sources/15-codex-theory-conversations/2026-10-08-social-organizational-evolution.md) · [2026-10-09-systems-subsystems-evolution](sources/15-codex-theory-conversations/2026-10-09-systems-subsystems-evolution.md)
+[2026-10-08-the-theory-of-evolution-goal](sources/15-codex-theory-conversations/2026-10-08-the-theory-of-evolution-goal.md) · [2026-10-08-evolution-theoretical-focus](sources/15-codex-theory-conversations/2026-10-08-evolution-theoretical-focus.md) · [THE-THEORY-OF-EVOLUTION](theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md#current-theoretical-focus) · [2026-10-08-readme-research-progress-and-push](sources/15-codex-theory-conversations/2026-10-08-readme-research-progress-and-push.md) · [2026-10-08-social-organizational-evolution](sources/15-codex-theory-conversations/2026-10-08-social-organizational-evolution.md) · [2026-10-09-systems-subsystems-evolution](sources/15-codex-theory-conversations/2026-10-09-systems-subsystems-evolution.md)
 
 **README overview / 首页摘要:** 论证 The Theory of Evolution / Investigating The Theory of Evolution
 
@@ -219,13 +219,13 @@ Ren明确整体Theory of Becoming是演绎必然性的对象，生成性是其ma
 
 **Next / 下一步:** 接通被组织方式支持的实际活动，怎样反过来形成、改变或损伤其持续与再组织的条件；同等证据下比较系统动力学及组织惯例的强解释。 / Connect enabled activity to the formation, transformation or loss of the conditions for its continuation and reorganization; compare strong system-dynamics and routine accounts on the same evidence.
 
-[growth-constrained-fragmentation](theories/shengsheng-buxi-generative-existence/results/records/growth-constrained-fragmentation.md): `recorded-checked`
+[growth-constrained-fragmentation](theories/becoming/results/records/growth-constrained-fragmentation.md): `recorded-checked`
 
-[material-preparation-output](theories/shengsheng-buxi-generative-existence/results/records/material-preparation-output.md): `recorded-checked`
+[material-preparation-output](theories/becoming/results/records/material-preparation-output.md): `recorded-checked`
 
-[organizational-rule-inheritance](theories/shengsheng-buxi-generative-existence/results/records/organizational-rule-inheritance.md): `recorded-checked`
+[organizational-rule-inheritance](theories/becoming/results/records/organizational-rule-inheritance.md): `recorded-checked`
 
-[recurrent-chain-assembly](theories/shengsheng-buxi-generative-existence/results/records/recurrent-chain-assembly.md): `recorded-checked`
+[recurrent-chain-assembly](theories/becoming/results/records/recurrent-chain-assembly.md): `recorded-checked`
 
 <a id="universal-intelligence-session"></a>
 ## 所有智能的普遍元伦理 / Universal metaethics of all intelligence
@@ -238,7 +238,7 @@ Ren明确整体Theory of Becoming是演绎必然性的对象，生成性是其ma
 
 **Completion criterion / 完成条件:** 不能以局部生成定理、给定价值保存或有限比较宣告普遍目标完成。 本次有限正面原则按其明确前提验收；不得把全面总排序、所有后果无损或必然服从另设为该原则的完成条件。 / A local generative theorem, preservation of supplied value or bounded comparison does not complete the universal target. Assess the current finite positive principle under its explicit premises; do not add a complete ranking, losslessness of every consequence or inevitable compliance as its completion gate.
 
-[2026-10-07-universal-intelligence-session-goal](sources/15-codex-theory-conversations/2026-10-07-universal-intelligence-session-goal.md) · [UNIFIED-ETHICAL-GROUNDING](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence) · [2026-10-08-positive-generative-direction](sources/15-codex-theory-conversations/2026-10-08-positive-generative-direction.md) · [2026-10-08-universal-metaethics-name-and-readme](sources/15-codex-theory-conversations/2026-10-08-universal-metaethics-name-and-readme.md) · [2026-10-08-readme-research-progress-and-push](sources/15-codex-theory-conversations/2026-10-08-readme-research-progress-and-push.md) · [2026-10-09-theory-of-becoming-name](sources/15-codex-theory-conversations/2026-10-09-theory-of-becoming-name.md) · [2026-10-09-monist-evaluator-grounding](sources/15-codex-theory-conversations/2026-10-09-monist-evaluator-grounding.md) · [2026-10-09-one-theory-unification](sources/15-codex-theory-conversations/2026-10-09-one-theory-unification.md)
+[2026-10-07-universal-intelligence-session-goal](sources/15-codex-theory-conversations/2026-10-07-universal-intelligence-session-goal.md) · [UNIFIED-ETHICAL-GROUNDING](theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence) · [2026-10-08-positive-generative-direction](sources/15-codex-theory-conversations/2026-10-08-positive-generative-direction.md) · [2026-10-08-universal-metaethics-name-and-readme](sources/15-codex-theory-conversations/2026-10-08-universal-metaethics-name-and-readme.md) · [2026-10-08-readme-research-progress-and-push](sources/15-codex-theory-conversations/2026-10-08-readme-research-progress-and-push.md) · [2026-10-09-theory-of-becoming-name](sources/15-codex-theory-conversations/2026-10-09-theory-of-becoming-name.md) · [2026-10-09-monist-evaluator-grounding](sources/15-codex-theory-conversations/2026-10-09-monist-evaluator-grounding.md) · [2026-10-09-one-theory-unification](sources/15-codex-theory-conversations/2026-10-09-one-theory-unification.md)
 
 **README overview / 首页摘要:** 继续发展普遍元伦理核心 / Developing the Universal Metaethical Core
 
@@ -246,19 +246,19 @@ Ren明确整体Theory of Becoming是演绎必然性的对象，生成性是其ma
 
 **Next / 下一步:** 推进严重损失与公平机会交叉时的有根据比较；辨明足以改变具体选择的生活关系，包括何种情境变化足以正当地修订承担。 / Extend justified comparisons where serious losses and fair chances conflict; establish the particular living relationships that change a concrete choice, including when a changed situation warrants revising an undertaking.
 
-[classification-robust-generative-comparison](theories/shengsheng-buxi-generative-existence/results/records/classification-robust-generative-comparison.md): `recorded-checked`
+[classification-robust-generative-comparison](theories/becoming/results/records/classification-robust-generative-comparison.md): `recorded-checked`
 
-[metaethical-core-characterization](theories/shengsheng-buxi-generative-existence/results/records/metaethical-core-characterization.md): `recorded-checked`
+[metaethical-core-characterization](theories/becoming/results/records/metaethical-core-characterization.md): `recorded-checked`
 
-[positioned-positive-reason](theories/shengsheng-buxi-generative-existence/results/records/positioned-positive-reason.md): `recorded-checked`
+[positioned-positive-reason](theories/becoming/results/records/positioned-positive-reason.md): `recorded-checked`
 
-[positive-ground-open-futures](theories/shengsheng-buxi-generative-existence/results/records/positive-ground-open-futures.md): `recorded-checked`
+[positive-ground-open-futures](theories/becoming/results/records/positive-ground-open-futures.md): `recorded-checked`
 
-[practical-judgment-g0-j](theories/shengsheng-buxi-generative-existence/results/records/practical-judgment-g0-j.md): `reviewed-scoped`
+[practical-judgment-g0-j](theories/becoming/results/records/practical-judgment-g0-j.md): `reviewed-scoped`
 
-[self-good-reachable-g0](theories/shengsheng-buxi-generative-existence/results/records/self-good-reachable-g0.md): `recorded-checked`
+[self-good-reachable-g0](theories/becoming/results/records/self-good-reachable-g0.md): `recorded-checked`
 
-[universal-practical-warrant](theories/shengsheng-buxi-generative-existence/results/records/universal-practical-warrant.md): `open`
+[universal-practical-warrant](theories/becoming/results/records/universal-practical-warrant.md): `open`
 
 <a id="wisdom-root-session"></a>
 ## 慧根会话的构成与形成目标 / Constitution and formation of wisdom
@@ -273,7 +273,7 @@ Ren明确整体Theory of Becoming是演绎必然性的对象，生成性是其ma
 
 [2026-10-08-wisdom-paper-direction](sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md) · [CORE-CONSTRAINT-AND-WISDOM](_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md)
 
-[wisdom-root](theories/shengsheng-buxi-generative-existence/results/records/wisdom-root.md): `open`
+[wisdom-root](theories/becoming/results/records/wisdom-root.md): `open`
 
 <a id="zero-axiom-session"></a>
 ## 无公理实践判断的独立接续 / Independent axiom-free practical judgment
@@ -286,13 +286,13 @@ Ren明确整体Theory of Becoming是演绎必然性的对象，生成性是其ma
 
 **Completion criterion / 完成条件:** 完成标准取自原指示和当前目标；已有局部证明不得冒充中心主张完成。 / Use the original directive and current target; local proofs cannot substitute for the central result.
 
-[2026-10-08-zero-axiom-practical-judgment](sources/15-codex-theory-conversations/2026-10-08-zero-axiom-practical-judgment.md) · [ZERO-AXIOM-PRACTICAL-JUDGMENT](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md)
+[2026-10-08-zero-axiom-practical-judgment](sources/15-codex-theory-conversations/2026-10-08-zero-axiom-practical-judgment.md) · [ZERO-AXIOM-PRACTICAL-JUDGMENT](theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md)
 
-[universal-practical-warrant](theories/shengsheng-buxi-generative-existence/results/records/universal-practical-warrant.md): `open`
+[universal-practical-warrant](theories/becoming/results/records/universal-practical-warrant.md): `open`
 
 ## Discovery and evidence / 检索与证据
 
-[Full reading catalogue / 完整阅读目录](theories/shengsheng-buxi-generative-existence/results/README.md) · [Curated generativity chain / 生成链](theories/shengsheng-buxi-generative-existence/results/GENERATIVITY-CHAIN.md) · [Dated session map / 会话快照](theories/shengsheng-buxi-generative-existence/results/SESSION-RESULTS.md) · [Broader theory map / 更广理论图谱](MAP.md)
+[Full reading catalogue / 完整阅读目录](theories/becoming/results/README.md) · [Curated generativity chain / 生成链](theories/becoming/results/GENERATIVITY-CHAIN.md) · [Dated session map / 会话快照](theories/becoming/results/SESSION-RESULTS.md) · [Broader theory map / 更广理论图谱](MAP.md)
 
 ```sh
 make research-check

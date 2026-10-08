@@ -6,7 +6,7 @@
 
 **Result.** Required distinctions depend on the content and strength of the claim. In the inherited process, a correct numerical risk-bound claim permits an adverse realization; the mode/result projection alone cannot identify whether the prior bound held. Five new application/correspondence theorems are checked. Ethical risk permission, warranted false belief and universal wisdom are not thereby proved.
 
-**成果接续 / Result contribution.** 开放目标记录为[`wisdom-root`](../../../../theories/shengsheng-buxi-generative-existence/results/records/wisdom-root.json)；本轮局部结果记录为[`risk-certificate-outcome-distinction`](../../../../theories/shengsheng-buxi-generative-existence/results/records/risk-certificate-outcome-distinction.json)。直接复用尚未单独迁移的`WisdomResponseStructure.assured_route_iff`及[原研究](WISDOM-RESPONSE-NECESSITY.md)。新增量是同一实际路线过程中的风险证书／实现结果对应和终点不足；事件权重及阈值明示给定。证明声明与冻结回执见第4节，边界见第6节。原定理的输出“到达当且仅当所选路线不是阻断路线”用于新定理的失败见证；与一般实践责任的连接为解释性复用，未声称跨模块伦理组合证明。
+**成果接续 / Result contribution.** 开放目标记录为[`wisdom-root`](../../../../theories/becoming/results/records/wisdom-root.json)；本轮局部结果记录为[`risk-certificate-outcome-distinction`](../../../../theories/becoming/results/records/risk-certificate-outcome-distinction.json)。直接复用尚未单独迁移的`WisdomResponseStructure.assured_route_iff`及[原研究](WISDOM-RESPONSE-NECESSITY.md)。新增量是同一实际路线过程中的风险证书／实现结果对应和终点不足；事件权重及阈值明示给定。证明声明与冻结回执见第4节，边界见第6节。原定理的输出“到达当且仅当所选路线不是阻断路线”用于新定理的失败见证；与一般实践责任的连接为解释性复用，未声称跨模块伦理组合证明。
 
 <a id="correction-of-necessity-test"></a>
 ## 1. 对根基必要性检验的修正
@@ -29,7 +29,7 @@
 
 [联合风险研究§3](JOINT-RISK-REVISION-INTEGRATION.md#3-enough-information-without-complete-information)已经证明边际上界可支持共同风险界限，并有非零风险满足给定界限的见证；不重证为新发现。[情境追踪§22](JOINT-RISK-REVISION-INTEGRATION.md#22-retained-uncertainty-can-become-sufficient-for-action)已把有根据的可取得误差界连接到有限阶段的证书；并未把界限自己当作伦理许可。
 
-[风险条件化研究](RISK-CONDITIONING-INTEGRATION.md)已要求当前风险与已形成的历史根据分别接续。[一般实践判断§5](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md#5-真实冲突有限认识与及时决定--conflict-and-uncertainty)已允许有限、及时、可复核的程序，并保留残余责任；本轮不重新建立一套风险伦理。
+[风险条件化研究](RISK-CONDITIONING-INTEGRATION.md)已要求当前风险与已形成的历史根据分别接续。[一般实践判断§5](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md#5-真实冲突有限认识与及时决定--conflict-and-uncertainty)已允许有限、及时、可复核的程序，并保留残余责任；本轮不重新建立一套风险伦理。
 
 本轮的新用途是：把这些区分放回自己的慧根必要性检验，明确**不能从某种强保证需要信息区分，推出一切有智慧的判断都需要同样区分**。同样，放宽结果保证不允许放宽到任何结论都有根据。声称风险界限，仍须对实际规律与证据对应负责。
 

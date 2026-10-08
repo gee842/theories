@@ -2,7 +2,7 @@
 
 2026年10月7日，Asia/Bangkok。AI 内部分工反审，继续[良知生成演化方向](../../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md)。本轮所检验的连接是：**共同发展怎样重建可运行的回应关系，该关系的实际活动又怎样进入后续再形成。** 先于个体显性反省的倾向可以有生成史；这不要求也不容许把一项预先正确的道德规则藏进发展律。
 
-本稿遵循[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)。直接阅读并行[规范根据接口](LIANGZHI-NORMATIVE-WARRANT-INTERFACE.md)，沿其共同说明的路线推进：形成证据可以支持或修订关于伦理意义的整体解释，不必等伦理问题全部解决才有贡献；但形成规律与伦理识别不能互相定义、自我认证。新增数学主张以实际检查的 Lean 声明为准。
+本稿遵循[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)。直接阅读并行[规范根据接口](LIANGZHI-NORMATIVE-WARRANT-INTERFACE.md)，沿其共同说明的路线推进：形成证据可以支持或修订关于伦理意义的整体解释，不必等伦理问题全部解决才有贡献；但形成规律与伦理识别不能互相定义、自我认证。新增数学主张以实际检查的 Lean 声明为准。
 
 **最终反审：接受这一有限生成连接，无阻断项。** 已实际重建后继的回应联结，并把其运行后果接到再下一代的重建与运行；新增17项声明已通过检查。接受的不是良知完整生成、自然选择方向或普遍伦理根据。最强的未排除解释仍是：同一发展和运行结构只实现局部调节或控制，尚未由此辨明伦理意义。
 
@@ -16,9 +16,9 @@
 
 ## 2. 不能重新列为缺失的已有成果
 
-[实际评价接续](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-SUCCESSION.md)已经把形成的评价影响接到不同后继的实际访问、新证据、手段判断修订和选择行动。新工作不能只再复制一个评价量，就声称首次解释能力继承。原结果的同一历史、有限支持与实际失败均应被信用。
+[实际评价接续](../../../../theories/becoming/chapters/EVALUATIVE-SUCCESSION.md)已经把形成的评价影响接到不同后继的实际访问、新证据、手段判断修订和选择行动。新工作不能只再复制一个评价量，就声称首次解释能力继承。原结果的同一历史、有限支持与实际失败均应被信用。
 
-[评价发展](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/VALUATION-DEVELOPMENT.md)也已证明具体配对经历形成联结并影响响应，已有变化中的后果、更新路线修订和谱系支持。[已形成变体的选择](../../2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md)则已有实际修复后果进入复制以及支持转移的反向历程。单独再给一个“感知变化→行动变化”或“修复→复制”的构造，不等于关闭了它们之间全部新的接合。
+[评价发展](../../../../theories/becoming/chapters/VALUATION-DEVELOPMENT.md)也已证明具体配对经历形成联结并影响响应，已有变化中的后果、更新路线修订和谱系支持。[已形成变体的选择](../../2026-10-05-support-and-shared-generativity/completion/FORMED-VARIANT-SELECTION-INTEGRATION.md)则已有实际修复后果进入复制以及支持转移的反向历程。单独再给一个“感知变化→行动变化”或“修复→复制”的构造，不等于关闭了它们之间全部新的接合。
 
 最新[规范接口](LIANGZHI-NORMATIVE-WARRANT-INTERFACE.md#the-actual-successor-already-available)还信用了已完成的履行敏感撤回及多项要求研究：原先所需的回应可以因实际履行而失去该项根据，相关访问和实施已经有有限结果。因此“尚无实践应用修订”也不是本轮可重新提出的空缺。本轮小型读取—联结—动作组织，尚未把既有评价接续中的评价器、档案、指令和访问架构全部接入后果支持的再形成史。
 
@@ -85,7 +85,7 @@
 | [来源评估](LIANGZHI-DEVELOPMENT-SOURCES.md) | `23a8035b8e79381d8e1bcb41495492053b4ad520284d384e9ab3ff118411faeb` |
 | [数学对应](LIANGZHI-DEVELOPMENT-MATH.md) | `4b24ade0251a15d95bef1b25db8891b98b81db8c05080dbb7a679d06d61e9cbf` |
 | [整合](LIANGZHI-DEVELOPMENT-INTEGRATION.md) | `31099f6e9942173ca346cc7182b62c5f91c7ebae55e8d3aaee082a2735c1e850` |
-| [现行主文](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md) | `48419d8886e8dd898ade296fce33f7c0b5f019ac4ab768681412b5506e9dfdca` |
+| [现行主文](../../../../theories/becoming/chapters/LIANGZHI-EVOLUTION.md) | `48419d8886e8dd898ade296fce33f7c0b5f019ac4ab768681412b5506e9dfdca` |
 | [实验 README](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/development/README.md) | `85754f7e620c4fef802fca996c96a361e169920b801ed50eb3c49627c4d3dd18` |
 | [规范接口](LIANGZHI-NORMATIVE-WARRANT-INTERFACE.md) | `e2aac2729b2640a91fb0f764ba80df961c01f80e4a34ba43a6c3f3f8d2804e73` |
 

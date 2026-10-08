@@ -10,7 +10,7 @@ Earlier in this conversation Ren asked:
 
 The earlier empirical choice was “Pursue full experimental validation” of the biological account. The hypothetical assumption did not report that validation had happened. The present task develops the reflective formation/revision connection; it does not mark the cell–organ–body–learning–ecosystem programme experimentally complete.
 
-Implementation and assessment: [the canonical account](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md) and [the integration record](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md). This request does not itself specify every model assumption or endorse the AI-authored normative comparisons.
+Implementation and assessment: [the canonical account](../../theories/becoming/chapters/GOAL-FORMATION-AND-REVISION.md) and [the integration record](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md). This request does not itself specify every model assumption or endorse the AI-authored normative comparisons.
 
 ## Continue the frontier
 
@@ -52,7 +52,7 @@ Ren repeated the assistant's statement about historical non-recovery and added t
 
 The wording above is Ren's, preserved without grammatical correction. The repeated historical-limit passage was quoted from the assistant; it is not recorded as a new theory claim independently authored by Ren.
 
-AI-authored interpretation and execution: separate recovering an earlier history from acquiring fresh grounds for the same or a revised understanding. Situational awareness and risk estimation can support continued generative action without complete historical recovery or certainty. [The current theory](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md#11-future-understanding-and-situational-risk) and [corrective integration](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMATIVE-ASSESSMENT-INTEGRATION.md#10-fresh-understanding-and-situated-continuation) withdraw the assistant's broader stopping inference while preserving the scoped theorem. Ren did not thereby specify risk probabilities, authorize a particular real-world intervention or claim that all continuation succeeds.
+AI-authored interpretation and execution: separate recovering an earlier history from acquiring fresh grounds for the same or a revised understanding. Situational awareness and risk estimation can support continued generative action without complete historical recovery or certainty. [The current theory](../../theories/becoming/chapters/GOAL-FORMATION-AND-REVISION.md#11-future-understanding-and-situational-risk) and [corrective integration](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMATIVE-ASSESSMENT-INTEGRATION.md#10-fresh-understanding-and-situated-continuation) withdraw the assistant's broader stopping inference while preserving the scoped theorem. Ren did not thereby specify risk probabilities, authorize a particular real-world intervention or claim that all continuation succeeds.
 
 ## Continue until a new wall
 

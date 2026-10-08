@@ -26,7 +26,7 @@ The warranted direction is consequently stronger than â€œdilution might matter,â
 
 ## 3. What the general account must preserve
 
-Following the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md), progenitor, descendants, compartments and exchange routes are differentiated relationships within one history. A collection of already independent cells and a separate supply world is not the explanatory starting point. The relevant distinction concerns where the formed participants remain available and which ongoing operations they can jointly support.
+Following the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md), progenitor, descendants, compartments and exchange routes are differentiated relationships within one history. A collection of already independent cells and a separate supply world is not the explanatory starting point. The relevant distinction concerns where the formed participants remain available and which ongoing operations they can jointly support.
 
 | Relationship | Consequence for interpretation |
 |---|---|

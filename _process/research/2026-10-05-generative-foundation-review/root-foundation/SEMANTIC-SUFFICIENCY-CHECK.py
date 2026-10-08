@@ -9,7 +9,7 @@ from urllib.parse import unquote
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[3]
-CAN = ROOT/'theories/shengsheng-buxi-generative-existence/unified-2026-10-05'
+CAN = ROOT/'theories/becoming/chapters'
 EXP = ROOT/'experiments/integrated-correction/general-framework/generative-basis/semantic-evidence'
 SOURCE = ROOT/'sources/knowledge-semantics'
 OUTPUT = HERE/'SEMANTIC-SUFFICIENCY-CHECKS.json'

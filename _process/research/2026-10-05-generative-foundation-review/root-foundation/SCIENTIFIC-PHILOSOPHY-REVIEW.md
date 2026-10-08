@@ -1,6 +1,6 @@
 # Scientific-philosophy research: integration and review receipt
 
-6 October 2026. AI-authored record of the research authorized by [Ren's conjecture and clarification](../../../../sources/15-codex-theory-conversations/2026-10-06-scientific-philosophy-compatibility.md). The canonical result is [Scientific philosophy and the generative conditions of knowing](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md).
+6 October 2026. AI-authored record of the research authorized by [Ren's conjecture and clarification](../../../../sources/15-codex-theory-conversations/2026-10-06-scientific-philosophy-compatibility.md). The canonical result is [Scientific philosophy and the generative conditions of knowing](../../../../theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md).
 
 ## Scope and contribution
 
@@ -12,7 +12,7 @@ The named connection is **formed, evidence-responsive learning → warranted and
 
 | Artifact | Role and authorship |
 |---|---|
-| [Canonical synthesis](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md) | Primary-agent synthesis, including independently checked elementary induction limit and the Hume/Carnap comparison |
+| [Canonical synthesis](../../../../theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md) | Primary-agent synthesis, including independently checked elementary induction limit and the Hume/Carnap comparison |
 | [Mechanism and proof](SCIENTIFIC-INQUIRY-CONDITIONS.md) | Separate mechanism agent; complete adaptive transcripts, standard total-variation bound, finite certificates, calibration ambiguity and conditional support |
 | [Counterexamples](SCIENTIFIC-PHILOSOPHY-COUNTEREXAMPLES.md) | Separate critical agent; twelve conceptual cases, limits of stronger necessities and the distinction between adequacy and scientific investigation |
 | [Philosophical sources](SCIENTIFIC-PHILOSOPHY-SOURCES.md) | Separate source agent; seven philosophers through eight primary texts, with selected-page and access limits |
@@ -50,6 +50,6 @@ The next mechanism should explain acquisition and retention of a calibrated corr
 
 ## Repository integration and verification
 
-The study is linked from [RESEARCH.md](../../../../RESEARCH.md), the [theory README](../../../../theories/shengsheng-buxi-generative-existence/README.md), the [governing derivation map](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#the-derivation-and-the-existing-work), this directory's [README](README.md), and the [source register](../../../../sources/SOURCES.md). Concurrent reason-replay and recipient-transmission edits were inspected but not rewritten or included in this study's validation claims.
+The study is linked from [RESEARCH.md](../../../../RESEARCH.md), the [theory README](../../../../theories/becoming/README.md), the [governing derivation map](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#the-derivation-and-the-existing-work), this directory's [README](README.md), and the [source register](../../../../sources/SOURCES.md). Concurrent reason-replay and recipient-transmission edits were inspected but not rewritten or included in this study's validation claims.
 
 The [document check record](SCIENTIFIC-PHILOSOPHY-CHECKS.json) records local-link and local-anchor validation, content hashes for this round's new artifacts, and a Git whitespace check restricted to the integration files. Hashes identify the recorded editions; they do not authenticate an unexported complete conversation or an external paper. Existing Lean/scientific packages were not rerun because this round changes neither their code nor their scientific inputs. The new proofs were reviewed by hand; no new machine-checked or empirical result is claimed.

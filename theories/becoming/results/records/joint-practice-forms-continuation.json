@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "id": "joint-practice-forms-continuation",
+  "title": {
+    "zh": "共同实践形成后续参与与接续",
+    "en": "Joint practice forms further participation and continuation"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F10",
+  "reviewed_at_utc": "2026-10-08T18:43:13.631691+00:00",
+  "claim": {
+    "zh": "在明示二方法任务中，实际尝试与回应形成做法修订；成功重试产生既有程序所需审查关系，授权接纳后的参与者可回应下一次实践，并在最初回应者离开后继续形成新的参与关系。",
+    "en": "Within the declared two-method task, actual attempts and responses form a revised procedure. A successful retry produces the review relation consumed by the existing admission process; admitted participation enables later response and formation of further participation after the initial reviewer leaves."
+  },
+  "hypotheses": [
+    {
+      "zh": "二方法任务、当前检验关系、推断操作、正确种子做法与一个资格给定。",
+      "en": "The two-method task, current test relation, inference operation, correct seed configuration and one mandate are supplied."
+    },
+    {
+      "zh": "记录、通信、执行、可用参与者、具体次序、遵守程序及固定较高授权条件给定；交接不自动删除登记席位。",
+      "en": "Records, communication, execution, available participants, event order, compliance and fixed higher authorization are supplied; handoff does not automatically delete recorded offices."
+    }
+  ],
+  "correspondence": {
+    "zh": "同一状态历史中的尝试、回应、修订、检验及认可关系分化；配置是局部可执行做法，不能当成人类理解的完整模型。原始群体学习与换人研究仅为有限经验根据，并非该历史的实证复现。 修订同时读取先前实际结果和回应，核对后保留或改变做法；二方法内的等价性已查。",
+    "en": "Attempt, response, revision, testing and recognition differentiate within one state history. Configuration is a local executable procedure, not a full model of human understanding. Primary group-learning and turnover studies provide bounded empirical motivation, not reproduction of this exact history. Revision reads the earlier actual result together with the response, retaining or changing the procedure after comparison; equivalence within the two-method family is checked."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointPracticeContinuation.lean",
+  "aliases": [
+    "JointPracticeContinuation.complete_history_is_one_trace",
+    "JointPracticeContinuation.retry_produces_existing_review"
+  ],
+  "dependencies": [
+    {
+      "id": "organizational-rule-inheritance",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "retry_produces_existing_review 接入原 review 操作；enrollment_consumes_review 实际使用 admitted_requires_review，交接及规则修订直接使用原 step。",
+        "en": "retry_produces_existing_review supplies the exact prior review operation; enrollment_consumes_review uses admitted_requires_review, and handoff/rule revision directly use the original step."
+      },
+      "interface": {
+        "output": {
+          "zh": "实际成功重试产生的既有审查事件及原授权程序形成的资格。",
+          "en": "Existing review event produced by an actual successful retry, and the mandate formed by the original authorization process."
+        },
+        "input": {
+          "zh": "既有接纳程序所读的审查关系，以及后续回应所需资格与实际参与。",
+          "en": "Review relation read by the existing admission process, then mandate and actual participation needed by later response."
+        },
+        "conditions": {
+          "zh": "回应匹配当前检验关系、实际修订与重试、继续参与、原治理门槛；未把操作正确当作自动授权。",
+          "en": "Response matches the current test relation; actual revision and retry, continuing participation and the original governance threshold; correct execution does not automatically confer authority."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointPracticeContinuation.lean"
+      }
+    }
+  ],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointPracticeContinuation.lean",
+      "detail": {
+        "zh": "无回应、未修订、过早离开、处境改变和未检验便申请接纳均有失败；局部操作成功时，更高接纳条件仍可能失败。",
+        "en": "Missing response or revision, early departure, changed context and untested admission fail; local operation can succeed while higher admission conditions fail."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "仅闭合实际实践形成后续参与的一段连接；未推出人员到来、一般认知、任务及检验关系的形成、无限自维持或比较优越性。",
+    "en": "Closes one enacted-practice-to-further-participation connection, not arrival of people, general cognition, formation of tasks/test relations, indefinite self-maintenance or comparative superiority."
+  },
+  "validation_scope": {
+    "zh": "22项新定理声明／51项新声明审计；81项继承审计独立分列，实际三模块闭包共132项。作者反审与原始摘要阅读另列，无独立agent验收。",
+    "en": "22 new theorem declarations / 51 new declaration audits, separately from 81 inherited audits; 132 in the actual three-module closure. Author counterreview and primary-abstract readings are separate; no independent-agent acceptance."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointPracticeContinuation.lean",
+      "role": "proof",
+      "sha256": "839ebe73511b486c72b60926c4bab80ba4b6738d98d0cb141c06ac76c8b6df42",
+      "declarations": [
+        "JointPracticeContinuation.infer_recovers_method",
+        "JointPracticeContinuation.response_identifies_current_method",
+        "JointPracticeContinuation.revision_installs_inferred_method",
+        "JointPracticeContinuation.retry_produces_existing_review",
+        "JointPracticeContinuation.enrollment_consumes_review",
+        "JointPracticeContinuation.complete_history_is_one_trace",
+        "JointPracticeContinuation.operation_can_continue_while_admission_fails",
+        "JointPracticeContinuation.result_revision_eq_inference"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/joint-practice-continuation-verification/verification.json",
+      "role": "receipt",
+      "sha256": "149c00a5513071a855128e57f060536db50183d66985efb7561472a07951a299",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/joint-practice-continuation-verification/README.md",
+      "role": "provenance",
+      "sha256": "e07fd3c97dbcd9adde4ac8e055bc8ca12d67f122f8b38e0bd3a8be10de14ae8f",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "91cf44a5e4382b2f82d6ce36431a1b2e48a7849939f72ed8bcf579a71708f879",
+      "declarations": []
+    },
+    {
+      "path": "sources/evolutionary-selection/organizational-inheritance/SYSTEMS-READING.md",
+      "role": "provenance",
+      "sha256": "693686b4ae18f564ffa6c760703dfa91ce6b406ada4d1d7662104788acdb52cd",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointPracticeContinuation.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/joint-practice-continuation-verification/verification.json",
+      "sha256_pointer": "/source_sha256/JointPracticeContinuation.lean",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "解释共同活动怎样改变任务、当前检验关系或参与形成方式本身，并保留替代接续与真实失败。",
+    "en": "Explain how joint activity changes the task, current testing relation or means of forming participation themselves, preserving alternative continuations and real failure."
+  },
+  "history": [
+    {
+      "zh": "2026年10月9日：依照systems/subsystems与结构动态语言纠正，接通实际重试、既有认可程序、后续回应及接续；一个新组合成果，非定理数量对应的多个发现。",
+      "en": "9 October 2026: under the systems/subsystems and structural-language corrections, connects actual retry, the existing recognition procedure, later response and succession. One new composition result, not one discovery per theorem declaration."
+    }
+  ]
+}

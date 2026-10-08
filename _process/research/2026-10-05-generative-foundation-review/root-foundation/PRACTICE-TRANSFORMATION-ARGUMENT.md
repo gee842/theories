@@ -1,6 +1,6 @@
 # Continuing the concern can require transforming the practice
 
-6 October 2026. AI-authored argument under the [shared nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Named connection: **what a practice forms in its participants changes the conditions of its adequate continuation**. The constructive case is Wang Yangming's reported revision of teaching, read alongside existing generative histories. No new controller or event law is introduced.
+6 October 2026. AI-authored argument under the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Named connection: **what a practice forms in its participants changes the conditions of its adequate continuation**. The constructive case is Wang Yangming's reported revision of teaching, read alongside existing generative histories. No new controller or event law is introduced.
 
 **Candidate:** a practice's effects can undermine the relationship that made its method appropriate. Continuing its concern then requires answering the changed relationship, which can mean changing the method and the local criterion of success. Preserving a particular exercise is not identical to preserving the people, capacities or purpose it serves. This is a positive account of consequential revision, not a claim that every change improves a practice.
 

@@ -4,7 +4,7 @@ Date: 2026-10-05. Independent mathematical continuation audit. This is a researc
 
 ## 1. Scope and source map: what the existing theory already establishes
 
-The starting point is `/Users/ren/theories/theories/shengsheng-buxi-generative-existence/unified-2026-10-05/`, especially `THEORY.md` and `FORMAL-CORE.md`. The following prior work was inspected before constructing the model below:
+The starting point is `/Users/ren/theories/theories/becoming/chapters/`, especially `THEORY.md` and `FORMAL-CORE.md`. The following prior work was inspected before constructing the model below:
 
 - `/Users/ren/theories/sources/20-codex-theory-sessions-2026-10-05/root-of-wisdom/outputs/regulating-generative-conditions.md` already gives the fixed-trait selection covariance identity and a population-growth counterexample to increasing generativity. Repeating that identity does not explain the sign of selection.
 - `/Users/ren/theories/_process/research/2026-10-04-integrated-evolution/selection-of-renewal.md` already gives a paid private-retention mechanism, with a limited parameter window where renewal is selected. Private retention and shared renewal compete for the same output.

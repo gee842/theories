@@ -1,6 +1,6 @@
 # 同一关切怎样改变回应：良知、分殊与生成中的交接
 
-2026年10月7日。AI 撰写，接续 [良知认识接口](LIANGZHI-CALIBRATION-INTEGRATION.md)和 Ren 的[正面伦理方向](../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md)。遵循[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)。本轮推进的普遍推论是：**整体生成方向如何在已经形成的具体关系中取得不同的实践内容。** 它不是每个位置必须作同一回应的主张。
+2026年10月7日。AI 撰写，接续 [良知认识接口](LIANGZHI-CALIBRATION-INTEGRATION.md)和 Ren 的[正面伦理方向](../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md)。遵循[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)。本轮推进的普遍推论是：**整体生成方向如何在已经形成的具体关系中取得不同的实践内容。** 它不是每个位置必须作同一回应的主张。
 
 ## 1. 从新的正面判准出发
 

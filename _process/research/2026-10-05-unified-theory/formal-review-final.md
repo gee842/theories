@@ -4,7 +4,7 @@
 
 Date: 5 October 2026.
 
-Reviewed file: `/Users/ren/theories/theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md`.
+Reviewed file: `/Users/ren/theories/theories/becoming/chapters/FORMAL-CORE.md`.
 
 SHA-256 of the reviewed version: `162e0ebf4017c175958c70e016ae40290247e70f61349e13ff4ff72d5540b694`.
 

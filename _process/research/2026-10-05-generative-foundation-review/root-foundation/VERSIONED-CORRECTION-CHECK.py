@@ -23,7 +23,7 @@ def main():
     chain = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(chain)
     document = HERE / 'VERSIONED-CORRECTION-INTEGRATION.md'
-    chapter = ROOT / 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PLURAL-SYSTEMS-AND-CORRECTION.md'
+    chapter = ROOT / 'theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md'
     source = ROOT / 'sources/15-codex-theory-conversations/2026-10-08-plural-systems-and-parent-correction.md'
     linked = 0
 

@@ -2,7 +2,7 @@
 
 7 October 2026, Asia/Bangkok. AI-authored continuation under [Ren's instruction](../../../../sources/15-codex-theory-conversations/2026-10-07-perspectival-ratification-continuation.md), following [the trajectory round](PERSPECTIVAL-GOOD-AND-TRAJECTORIES.md#authorized-continuation-findings-and-integration). **Scope: philosophical adjudication and correspondence review. No new mathematical proof or empirical intervention is claimed.** The existing 25 Lean results retain their earlier scope; they are not ethical premises for this argument.
 
-The universal inference tested is **whole qualitative realization → differentiated practical significance**, here where an arrangement participates in forming the perspective that later endorses it. We retain the [current scope correction](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#universal-scope-and-substantive-conclusions): universality does not prescribe the same positive response at every position. The inquiry must explain the grounds of actual differences without granting every formed boundary its own authority.
+The universal inference tested is **whole qualitative realization → differentiated practical significance**, here where an arrangement participates in forming the perspective that later endorses it. We retain the [current scope correction](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#universal-scope-and-substantive-conclusions): universality does not prescribe the same positive response at every position. The inquiry must explain the grounds of actual differences without granting every formed boundary its own authority.
 
 ## 1. What the continuation changes
 

@@ -46,4 +46,4 @@ G0 给生及其继续生成以基本正面规范意义；已有 J、BC1、BC2、
 
 数学分支实际通过 Lean 4.29.1：**4 项新定理／10 项逐声明依赖审计**，无项目继承模块重编，11 项保留产物；源、检查器、签名、依赖及实际回执均绑定。CP 本身是哲学候选，没有被编码成一条公理后冒充已证明。
 
-独立反审已接受论证与形式诊断的声明范围，另行核对全部保留产物，但没有重复编译。[当前理论](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md#grounding-initial-chances)已接入；双语索引和文档验证见[本轮维护检查](CHANCE-GROUNDING-CHECKS.json)及[变更记录](CHANCE-GROUNDING-INDEX-EDITS.json)。局部文档检查不认证并行会话的所有来源；本轮没有新增经验测量。
+独立反审已接受论证与形式诊断的声明范围，另行核对全部保留产物，但没有重复编译。[当前理论](../../../../theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.md#grounding-initial-chances)已接入；双语索引和文档验证见[本轮维护检查](CHANCE-GROUNDING-CHECKS.json)及[变更记录](CHANCE-GROUNDING-INDEX-EDITS.json)。局部文档检查不认证并行会话的所有来源；本轮没有新增经验测量。

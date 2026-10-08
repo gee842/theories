@@ -4,7 +4,7 @@
 
 ## 1. What is inherited, and what is newly checked
 
-The [generated-self account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-SELF-AND-ETHICS.md) already distinguishes organization, ownership representation, perspective and narrative identity. The [ownerless-ethics source study](OWNERLESS-ETHICS-SOURCES.md) already reads Śāntideva VIII.90–103 through named translators, including the challenge to inferring altruism from no-self alone. Those are inherited comparisons, not discoveries of this round.
+The [generated-self account](../../../../theories/becoming/chapters/GENERATED-SELF-AND-ETHICS.md) already distinguishes organization, ownership representation, perspective and narrative identity. The [ownerless-ethics source study](OWNERLESS-ETHICS-SOURCES.md) already reads Śāntideva VIII.90–103 through named translators, including the challenge to inferring altruism from no-self alone. Those are inherited comparisons, not discoveries of this round.
 
 Likewise, [the classical Dao comparison](DAO-CLASSICAL-SOURCES.md#4-易传与中庸更直接的生成价值联系仍需重建) already checked *Xici shang* chapter 5. This round rereads it and adds the requested *Xici xia* chapter 1 passage. The [Wang Yangming study](WANG-YANGMING-SOURCES.md) already preserves both practical and stronger cosmological formulations. We should neither rediscover its unity theme nor domesticate it into a mere psychological claim. This note adds a focused *Zhonglun* comparison instead of expanding the survey.
 

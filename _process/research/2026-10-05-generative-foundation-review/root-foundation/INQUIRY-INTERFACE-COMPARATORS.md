@@ -1,6 +1,6 @@
 # Information acquisition that can change its own sequence
 
-6 October 2026. AI-authored focused comparison under the current [NONDUAL-METHOD](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Named connection: **what has been acquired changes which further inquiry or action is appropriate**. The selected empirical result concerns flexible use of an available action menu. It does not establish formation of that menu, autonomous revision of an access rule, or ethical authority arising from successful performance.
+6 October 2026. AI-authored focused comparison under the current [NONDUAL-METHOD](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Named connection: **what has been acquired changes which further inquiry or action is appropriate**. The selected empirical result concerns flexible use of an available action menu. It does not establish formation of that menu, autonomous revision of an access rule, or ethical authority arising from successful performance.
 
 ## The precise connection to existing work
 
@@ -50,7 +50,7 @@ Local reading bindings are snapshots, not restrictions on concurrent research:
 
 | Inspected local file | SHA-256 |
 |---|---|
-| [NONDUAL-METHOD](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) | `eb5d2a2964dc2c82e1f6fd801e60c7a25cc20e59287977a3f99526cad35281cd` |
+| [NONDUAL-METHOD](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) | `eb5d2a2964dc2c82e1f6fd801e60c7a25cc20e59287977a3f99526cad35281cd` |
 | [PRACTICE-TRANSFORMATION-ARGUMENT](PRACTICE-TRANSFORMATION-ARGUMENT.md) | `c1be8c4827efa190f455b0417824f2d4d1355d9c1eb77a02910757078ca78eca` |
 | [APPLICATION-REVISION-RECONSTRUCTION](APPLICATION-REVISION-RECONSTRUCTION.md) | `bfdbb31ee44658ec4f442f7c85f3ce6b16fdf11b04ec550077491b0c6500132f` |
 | [CONSEQUENCE-ORGANIZATION-COMPARATORS](CONSEQUENCE-ORGANIZATION-COMPARATORS.md) | `bcc149eb9abd38b92b62056d15c92f75dec42234fb7adc76f5a41fc28f69621f` |

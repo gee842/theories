@@ -1,6 +1,6 @@
 # What makes a further inquiry pertinent to continuing activity
 
-6 October 2026. AI-authored source and identification review under the [shared nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Named connection: **acquired consequence → selection of an available inquiry → revised application and actual continuation**. This note adds no model, experiment or literature corpus.
+6 October 2026. AI-authored source and identification review under the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Named connection: **acquired consequence → selection of an available inquiry → revised application and actual continuation**. This note adds no model, experiment or literature corpus.
 
 ## The strongest positive connection is already implemented
 

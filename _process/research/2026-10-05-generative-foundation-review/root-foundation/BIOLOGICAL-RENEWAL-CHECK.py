@@ -19,7 +19,7 @@ P=Path(__file__).resolve().parent
 R=P.parents[3]
 E=R/'experiments/integrated-correction/general-framework/generative-basis/biological-scale-correspondence/renewal'
 S=R/'sources/biological-scale-correspondence'
-T=R/'theories/shengsheng-buxi-generative-existence/unified-2026-10-05'
+T=R/'theories/becoming/chapters'
 A=R/'experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis'
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def near(a,b,tol=1e-9):assert math.isclose(a,b,rel_tol=tol,abs_tol=tol),(a,b)

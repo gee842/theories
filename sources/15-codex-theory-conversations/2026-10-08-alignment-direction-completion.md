@@ -10,4 +10,4 @@
 
 Ren 先询问距离“解释对齐方向的根据”还差什么。助手核读新的实践判断候选后，区分明确公理下的方向论证与现实 AI 的可靠实现。Ren 选定完成前者。沿[此前明确授权的公理路线](2026-10-08-alignment-grounding-axiom-correction.md)，综合 G0、公开比较与责任承诺、实际对应和 AI 情境，并按既有指示在完整候选完成后进行独立 agent 验证。
 
-此次请求不授权将新增规范原则全部归为 Ren 原话，也不等于要求已完成部署、普遍服从或无公理的第一根据。其他聊天独立获授权的研究保持原范围。当前成果见[对齐方向论证](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md)。
+此次请求不授权将新增规范原则全部归为 Ren 原话，也不等于要求已完成部署、普遍服从或无公理的第一根据。其他聊天独立获授权的研究保持原范围。当前成果见[对齐方向论证](../../theories/becoming/chapters/ALIGNMENT-DIRECTION.md)。

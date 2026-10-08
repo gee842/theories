@@ -32,7 +32,7 @@ def main():
         assert sha(source / s['file']) == s['sha256'] == checked['sha256']
     fragments = {
         HERE / 'MARKET-INTERNET-DEGENERATION.md': '<a id="formed-independent-continuation"></a>',
-        ROOT / 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md': '<a id="formed-independent-continuation"></a>',
+        ROOT / 'theories/becoming/chapters/MARKETS-AND-GENERATIVE-REGIMES.md': '<a id="formed-independent-continuation"></a>',
         source / 'README.md': '# LibreOffice formation:',
     }
     links = []

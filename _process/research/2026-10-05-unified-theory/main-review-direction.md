@@ -2,8 +2,8 @@
 
 5 October 2026. Reviewed full current versions of:
 
-- `/Users/ren/theories/theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md`
-- `/Users/ren/theories/theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md`
+- `/Users/ren/theories/theories/becoming/chapters/THEORY.md`
+- `/Users/ren/theories/theories/becoming/chapters/FORMAL-CORE.md`
 
 Focus: fidelity to latest relational direction/renewal/correction results, conceptual coherence, nonseparation with differentiated centers, causal versus ethical status, and avoidance of empty explanations. This review does not independently audit every older inquiry experiment, external citation, or the ordinal extension cited under F9. The prior independent checks and full latest-source proof review are in `work/direction-synthesis.md` and `work/direction-review/independent-results.json`.
 

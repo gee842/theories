@@ -4,7 +4,7 @@
 
 ## 1. Review scope and finding
 
-Reviewed the [bilingual theory](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md), [integration](PRACTICAL-JUDGMENT-INTEGRATION.md), [Lean module](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean), checker, scanner, receipt and retained source, declaration audits and signatures. The repository instructions, orientation and [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) governed the review.
+Reviewed the [bilingual theory](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md), [integration](PRACTICAL-JUDGMENT-INTEGRATION.md), [Lean module](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean), checker, scanner, receipt and retained source, declaration audits and signatures. The repository instructions, orientation and [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) governed the review.
 
 **Final finding: accepted at the explicitly conditional general-principles scope, after one substantive clarification.** The initial review required that clarification; no formal-check defect was identified. The framework otherwise addresses the requested general principles for preserving, transforming, transferring and ending, together with differentiated responsibilities. The clarification concerns the exact strength and warrant of J2, detailed in §2. The author addressed it, and §7 records the response and final verdict.
 

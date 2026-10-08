@@ -1,7 +1,7 @@
 # When a dependency becomes operative within continuing activity
 
 6 October 2026. AI-authored source reconstruction under the
-[nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md).
+[nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md).
 Named connection: organizational dependency → operative continuation requirement,
 beyond an observer supplying a maintenance task. This note inspects existing
 accepted laws and derives a short consequence of their native guards. It adds
@@ -201,19 +201,19 @@ reader contrast cannot be transported without checking those new alternatives.
 The discrete event law alone gives possibilities; the CTMC adds supplied rates
 and a distinct realized-event distribution.
 
-The [selector-revision law](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SELECTOR-REVISION.md)
+The [selector-revision law](../../../../theories/becoming/chapters/SELECTOR-REVISION.md)
 already supplies a stronger operative pattern: actual capture renews a mapping's
 material lifetime; failures allow expiry and reconstruction. Its response
 mapping can change within a continuing compartment without a numerical
 performance score selecting the winner. The
-[updater construction](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UPDATER-FORMATION.md)
+[updater construction](../../../../theories/becoming/chapters/UPDATER-FORMATION.md)
 likewise forms and replaces alternative mechanisms that generate later
 selectors. These are completed conditional antecedents, not absent capacities
 that this note proposes to invent.
 
 Their actual material composition nevertheless uses a staged adapter and a
 different source/maintenance law. The
-[material-selector interface](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATERIAL-SELECTOR-COMPOSITION.md)
+[material-selector interface](../../../../theories/becoming/chapters/MATERIAL-SELECTOR-COMPOSITION.md)
 explicitly ends concurrent preparation chemistry; the updater adapter additionally
 makes local support accessible as common fuel and introduces packets financing
 renewal. Importing that return law into the current native history would remove

@@ -12,7 +12,7 @@ This note joins the following results rather than presenting them again as new d
 
 | Existing contribution | What is inherited | Remaining interface addressed here |
 |---|---|---|
-| [Formal core, F5–F6](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md) | A response-relative quotient can be sufficient for current questions and fail for an added one; indistinguishable histories with incompatible safe actions obstruct assured safe control. | How a process can obtain evidence for a missing distinction and install a refinement. |
+| [Formal core, F5–F6](../../../../theories/becoming/chapters/FORMAL-CORE.md) | A response-relative quotient can be sufficient for current questions and fail for an added one; indistinguishable histories with incompatible safe actions obstruct assured safe control. | How a process can obtain evidence for a missing distinction and install a refinement. |
 | [Causal foundations, Proposition A and information limits](../../2026-10-05-causal-foundations/outputs/formal-results.md) | Exact intervention-relative compression requires equal block-transition laws; observation/transition dependence matters; erased records cannot be recreated merely by reinterpretation. | An executable search over additional tests of the compression, with explicit access and resource conditions. |
 | [Prospective revision](../../2026-10-04-integrated-evolution/prospective-revision-math.md) | Its E/U construction has identical archival laws while useful future relationships differ. An anomaly gate can therefore miss a useful question. Fresh prospective validation, including an independent challenge route, is required in that example. | A fair search guarantee that does not rely on archival anomaly or a supplied probability of a useful nomination. |
 | [Candidate discovery](../../2026-10-04-integrated-evolution/candidate-discovery-math.md) | Frozen candidates, fresh validation, sequential error allocation, causal identification and deployment costs. | Coverage of test programs and the distinction between falsifying a summary and establishing an actual capability or decision improvement. |
@@ -23,7 +23,7 @@ The concentration and partition ideas are standard. The advance is their explici
 
 ## 2. A missing distinction is relative to an actual question and interface
 
-Use the preparations, observations, implementable protocols, recorded laws, resource ledger and functional tests of [the specification](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-SPECIFICATION.md). The learner, its apparatus, records, surroundings and support belong to the joint situation. The notation below partitions roles in that situation; it does not place an observer outside it.
+Use the preparations, observations, implementable protocols, recorded laws, resource ledger and functional tests of [the specification](../../../../theories/becoming/chapters/FORMAL-SPECIFICATION.md). The learner, its apparatus, records, surroundings and support belong to the joint situation. The notation below partitions roles in that situation; it does not place an observer outside it.
 
 Let \(\mathcal E_0\) be a currently available family of paid experiments. An experiment includes its preparation, apparatus construction where needed, actions, observation rule, horizon, resource use and protected conditions. For two preparations \(p,q\), define
 

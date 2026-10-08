@@ -76,8 +76,8 @@ def main():
         assert digest(ROOT / path) == fingerprint
         assert data['reviewed_sources'][path] == fingerprint
     # Check only our new navigation target, without certifying unrelated prose.
-    nav = [ROOT / 'RESEARCH.md', ROOT / 'theories/shengsheng-buxi-generative-existence/README.md',
-           ROOT / 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md',
+    nav = [ROOT / 'RESEARCH.md', ROOT / 'theories/becoming/README.md',
+           ROOT / 'theories/becoming/chapters/ALIGNMENT-AND-GOVERNANCE.md',
            HERE / 'GENERATIVITY-CHAIN-INDEX-RECORD.md']
     for path in nav:
         refs = [r for r in re.findall(r'\]\(([^)]+)\)', path.read_text()) if 'CORRECTION-HANDOFF-INTEGRATION.md' in r]

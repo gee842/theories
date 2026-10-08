@@ -1,6 +1,6 @@
 # First conditional derivation gate: completed scope and next interface
 
-6 October 2026. AI-authored integration of the mathematical construction, executable verification, Lean development and separate internal review. This audits the written [first acceptance gate](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#first-acceptance-gate), not the five completion conditions for the whole foundation.
+6 October 2026. AI-authored integration of the mathematical construction, executable verification, Lean development and separate internal review. This audits the written [first acceptance gate](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#first-acceptance-gate), not the five completion conditions for the whole foundation.
 
 **Decision:** the conditional causal-loop milestone is met for the declared seven-event law. It explains damage → paid response formation → repair → accessible fuel → additional copying, with explicit conditions for benefit and failure. The next central task is to compose response formation and differential retention of competing variants under one continuing resource history, then derive variation and revision of the selection mechanism.
 

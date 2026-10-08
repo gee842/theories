@@ -1,6 +1,6 @@
 # A reason can be relational without requiring a prior special bond
 
-6 October 2026. AI-authored review under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md), following the [necessity attempt](NECESSITY-ATTEMPT-INTEGRATION.md). Named connection: **actual undergoing, an available transformation and differentiated responsibility → the constitution and scope of a reason**. This is conceptual adjudication, not a new theorem or empirical study.
+6 October 2026. AI-authored review under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md), following the [necessity attempt](NECESSITY-ATTEMPT-INTEGRATION.md). Named connection: **actual undergoing, an available transformation and differentiated responsibility → the constitution and scope of a reason**. This is conceptual adjudication, not a new theorem or empirical study.
 
 **Assessment:** the choice between suffering itself and relationship as the source of reasons is too exclusive. A particular reason can jointly concern an actual burden, an available relieving transformation and the position from which it can be realized. That does not make a prior undertaking, shared identity or special role necessary for every baseline consideration. Conversely, special relationships can genuinely constitute reasons and obligations, not merely change the weight of an otherwise complete generic reason.
 

@@ -1,6 +1,6 @@
 # Comparative certificates when selection changes its reviews
 
-8 October 2026. AI-authored mathematical support for [the affirmative argument](SELECTOR-REVIEW-COVERAGE-ARGUMENT.md). Follows the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) and the authorized G0/J route. Eighteen new Lean theorems and 35 explicit declaration audits pass. These are repository additions, not a claim of eighteen original mathematical discoveries.
+8 October 2026. AI-authored mathematical support for [the affirmative argument](SELECTOR-REVIEW-COVERAGE-ARGUMENT.md). Follows the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) and the authorized G0/J route. Eighteen new Lean theorems and 35 explicit declaration audits pass. These are repository additions, not a claim of eighteen original mathematical discoveries.
 
 **Subsequent structural closure.** The [second proof note](SELECTOR-STRUCTURAL-COVERAGE-PROOF.md) adds five theorems / seven audits in a separate module and receipt, leaving this 18 / 35 source unchanged. It checks the failed extreme-review shortcut and proves exact all-menu certification from two specified adjacent probe outcomes under an explicit global threshold law. Together the two new modules contribute **23 theorems / 42 audits**, without recounting imports. The observation contract does not supply a strategy to find an unknown boundary or permission to cause a basic loss.
 

@@ -4,7 +4,7 @@
 
 The initial continuation setting is six. The preceding four-encounter history is reproduced exactly from the accepted actual parent `primary/variable/11/37`; no four-encounter sibling entrance is substituted. At the successful endpoint, fuel is 1, affected stock is 46, retained energy is 75, material is 68 and the teaching count remains 4. The original source files and results are unchanged.
 
-The [theory integration](../../../../../../../../../../../../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md) explains the acquired/supplied distinction. The trigger, formation and rewrite laws, calibration and legitimate mandate remain declared local premises. Formation of the contact and evidence-dependent use of the new rule are implemented; universal ethical necessity is not asserted.
+The [theory integration](../../../../../../../../../../../../../../../../../theories/becoming/chapters/INQUIRY-REVISION.md) explains the acquired/supplied distinction. The trigger, formation and rewrite laws, calibration and legitimate mandate remain declared local premises. Formation of the contact and evidence-dependent use of the new rule are implemented; universal ethical necessity is not asserted.
 
 ## Execution and verification
 

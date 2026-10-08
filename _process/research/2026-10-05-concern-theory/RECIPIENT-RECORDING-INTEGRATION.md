@@ -1,6 +1,6 @@
 # Actual recipient evidence reaches a paid factual reader
 
-6 October 2026. AI-authored development under the [generative-grounding goal](../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md). The named connection is **actual recipient acquisition → physically retained contextual record → a paid partial factual certificate**.
+6 October 2026. AI-authored development under the [generative-grounding goal](../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md). The named connection is **actual recipient acquisition → physically retained contextual record → a paid partial factual certificate**.
 
 **Status: accepted at the declared conditional finite interface after implementation, formal verification and separate internal review.** The prospective [protocol](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/PROTOCOL.md) fixed the physical and semantic interface before numerical results. The [implementation](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/README.md) executes the account below. The review is collaborating-AI review, not external peer review. Reason-replay composition and the unified foundation retain their separate completion conditions.
 

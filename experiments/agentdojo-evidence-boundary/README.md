@@ -2,7 +2,7 @@
 
 **Later prospective action test, 6 October 2026:** [four fresh maintenance contexts](correction-action/RESULTS.md) reenacted the genuine counterpart repair in isolated copies by task instruction, without OS isolation. One worker repaired code and regenerated verified results; the three other need/permission combinations appropriately preserved primary artifacts. The inputs, scorer and review were frozen before dispatch. This separate local-action study adds four model contexts while preserving all original retrospective sources and analyses; its [independent review](../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/ACTION-CORRECTION-RESULTS-REVIEW.md) retains the supplied-authority and final-effect limits.
 
-6 October 2026. Retrospective analysis of a complete, fixed subset of published learned-agent executions. The [canonical account](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/TOOL-EVIDENCE-AND-AUTHORITY.md) connects the findings to externally grounded cognition and the remaining alignment/governance derivation. The retrospective analyses below add no model training, live banking action or new model call.
+6 October 2026. Retrospective analysis of a complete, fixed subset of published learned-agent executions. The [canonical account](../../theories/becoming/chapters/TOOL-EVIDENCE-AND-AUTHORITY.md) connects the findings to externally grounded cognition and the remaining alignment/governance derivation. The retrospective analyses below add no model training, live banking action or new model call.
 
 ## Cohort and findings
 

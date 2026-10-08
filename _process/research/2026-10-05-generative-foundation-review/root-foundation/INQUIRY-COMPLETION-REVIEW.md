@@ -1,6 +1,6 @@
 # Independent review: acquired completion governing further inquiry
 
-6 October 2026. AI-authored review under the [shared method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). The reviewer advised the design and inspected its fixed protocol and source before the first numerical result was reported. The later reconstruction will use independent controller code and the already independently authored ancestry checker. This is internal collaborative review, not an unaffiliated replication.
+6 October 2026. AI-authored review under the [shared method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). The reviewer advised the design and inspected its fixed protocol and source before the first numerical result was reported. The later reconstruction will use independent controller code and the already independently authored ancestry checker. This is internal collaborative review, not an unaffiliated replication.
 
 ## Prospective acceptance and claim boundary
 

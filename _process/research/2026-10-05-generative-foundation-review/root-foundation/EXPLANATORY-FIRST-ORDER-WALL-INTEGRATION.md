@@ -6,7 +6,7 @@
 
 **Result:** 33 new Lean theorems establish that agreement on every finite first-order formula in the identity/step/joint signature, even through one coherent elementary embedding, does not force native isomorphism. The two explicit worlds are wholly root-reachable and have genuine joint triples. A positive repair is also checked: an elementary map is an isomorphism exactly when it covers the target carrier. That coverage does not follow from elementary truth preservation. This attempted route has reached a proved wall; universal generative necessity itself remains open.
 
-[Current chapter §§77–82](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md#77-回到普遍唯一性把解释语言加强到底) · [Ren’s instruction](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md#延续普遍唯一性直到遇到实质边界--continue-universal-uniqueness-until-a-wall) · [Scoped integration checks](EXPLANATORY-FIRST-ORDER-WALL-CHECKS.json).
+[Current chapter §§77–82](../../../../theories/becoming/chapters/EXPLANATORY-NECESSITY.md#77-回到普遍唯一性把解释语言加强到底) · [Ren’s instruction](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md#延续普遍唯一性直到遇到实质边界--continue-universal-uniqueness-until-a-wall) · [Scoped integration checks](EXPLANATORY-FIRST-ORDER-WALL-CHECKS.json).
 
 ## 1. Which universal inference is being tested?
 
@@ -95,7 +95,7 @@ Frozen source copies, compiler logs and per-declaration dependency names are ret
 
 ## 9. Nondual correction of the target and stopping judgment
 
-Ren’s [exact criticism](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md#对非二元方法与停止判断的纠正--correction-of-method-and-stopping-judgment) changes how this result is used. The [project method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) already required checking relevance at the choice of target and representation; a nondual disclaimer at the end did not satisfy it.
+Ren’s [exact criticism](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md#对非二元方法与停止判断的纠正--correction-of-method-and-stopping-judgment) changes how this result is used. The [project method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) already required checking relevance at the choice of target and representation; a nondual disclaimer at the end did not satisfy it.
 
 **The concrete mistake was a target substitution.** The original question concerns whether generative relationships are an unavoidable common basis of sufficient explanation. I instead investigated whether agreement on a chosen relational language determines every position of an entire model up to a bijection. Failure of the second claim does not identify a failure of the first. The prior report acknowledged this distinction but nevertheless promoted global coverage/categoricity to the governing next bridge and treated its counterexample as satisfying the instruction to proceed until a wall. That stopping judgment is withdrawn. The local impossibility theorem remains a reusable result, not a failure certificate for the governing inquiry.
 

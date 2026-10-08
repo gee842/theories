@@ -1,6 +1,6 @@
 # 基本损失的程度与实际保护 / Basic-loss gravity and actual protection
 
-8 October 2026. AI-authored continuation of Ren's request to [continue with theory as the focus](../../../../sources/15-codex-theory-conversations/2026-10-08-concern-expansion-theory.md). The current argument is [Basic conflict §§9–14](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md#unequal-basic-losses). This is philosophical development on the authorized G0/J route, not a new mathematical result, field study or independent-agent review.
+8 October 2026. AI-authored continuation of Ren's request to [continue with theory as the focus](../../../../sources/15-codex-theory-conversations/2026-10-08-concern-expansion-theory.md). The current argument is [Basic conflict §§9–14](../../../../theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.md#unequal-basic-losses). This is philosophical development on the authorized G0/J route, not a new mathematical result, field study or independent-agent review.
 
 **结果：以实际生活受损及其可达接续说明严重程度，说明 BC2 的一对一比较理由。境况、可避免损失和有效行动窗口分别交代；同等地位不把所有基本损失压成同一程度，程度差异也不构成人的等级。严重度与人数同时变化仍是下一项联合问题。**
 
@@ -10,7 +10,7 @@
 
 The bridge is **G0-grounded basic claims and warranted descriptions of impairment → an interpersonal comparative reason**. Neither G0 alone nor the existing indexed inclusion comparator supplies that bridge. BC2 declares its additional commitment rather than treating a profile of loss as already an all-things-considered verdict.
 
-[Practical judgment](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md) already provides bounded responsibility, joint planning, legitimate procedure and residual claims. [BC1](BASIC-CONFLICT-INTEGRATION.md) already provides the defended equivalent-rescue candidate. [Formed basic conditions](FORMED-BASIC-CONDITIONS-INTEGRATION.md) and [classification revision](CLASSIFICATION-REVISION-INTEGRATION.md) already distinguish acquired dependence, usable replacement and revisable necessity. They are not new results here.
+[Practical judgment](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md) already provides bounded responsibility, joint planning, legitimate procedure and residual claims. [BC1](BASIC-CONFLICT-INTEGRATION.md) already provides the defended equivalent-rescue candidate. [Formed basic conditions](FORMED-BASIC-CONDITIONS-INTEGRATION.md) and [classification revision](CLASSIFICATION-REVISION-INTEGRATION.md) already distinguish acquired dependence, usable replacement and revisable necessity. They are not new results here.
 
 Most directly, [generative loss comparison](GENERATIVE-LOSS-COMPARISON-INTEGRATION.md) already establishes conditional transport through matched loss reduction for the same actual lives under its supplied preorder: 16 checked theorems and 23 audits at that study's scope. It does not justify moving protection between different lives merely because their profiles can be described in comparable terms. BC2 concerns that normative connection. No inherited proof was rerun, enlarged or counted again.
 

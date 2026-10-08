@@ -1,6 +1,6 @@
 # Participation and acquired consequence: integrated evidence
 
-6 October 2026. AI-authored continuation of [Ren's connected-model direction](../../../../sources/15-codex-theory-conversations/2026-10-06-one-connected-generative-model.md) under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). The previous [applicability round](NONDUAL-APPLICABILITY-INTEGRATION.md) made verified progress. This round reconstructs a stronger existing history, sharpens the identification of acquired participation and tests a materially different empirical comparison. It creates no new controller, theorem or simulation run.
+6 October 2026. AI-authored continuation of [Ren's connected-model direction](../../../../sources/15-codex-theory-conversations/2026-10-06-one-connected-generative-model.md) under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). The previous [applicability round](NONDUAL-APPLICABILITY-INTEGRATION.md) made verified progress. This round reconstructs a stronger existing history, sharpens the identification of acquired participation and tests a materially different empirical comparison. It creates no new controller, theorem or simulation run.
 
 ## The result changes the next question
 

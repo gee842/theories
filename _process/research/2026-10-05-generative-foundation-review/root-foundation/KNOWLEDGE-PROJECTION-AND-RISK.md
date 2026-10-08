@@ -1,6 +1,6 @@
 # Warranted projection and the consequences of error / 有根据的推展与错误的后果
 
-8 October 2026. Third round under [Ren's direction](../../../../sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md#third-round). AI-authored continuation of [revision and objectivity](KNOWLEDGE-REVISION-AND-OBJECTIVITY.md) and [scientific philosophy](SCIENTIFIC-PHILOSOPHY-AND-GENERATIVE-WARRANT.md), following the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). [Primary reading record](KNOWLEDGE-SOURCES.md#projection-risk-and-inquiry-priorities) / [practical continuation](INQUIRY-PRIORITIES-AND-G0.md).
+8 October 2026. Third round under [Ren's direction](../../../../sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md#third-round). AI-authored continuation of [revision and objectivity](KNOWLEDGE-REVISION-AND-OBJECTIVITY.md) and [scientific philosophy](SCIENTIFIC-PHILOSOPHY-AND-GENERATIVE-WARRANT.md), following the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). [Primary reading record](KNOWLEDGE-SOURCES.md#projection-risk-and-inquiry-priorities) / [practical continuation](INQUIRY-PRIORITIES-AND-G0.md).
 
 ## 1. What warrants going beyond the examined cases?
 

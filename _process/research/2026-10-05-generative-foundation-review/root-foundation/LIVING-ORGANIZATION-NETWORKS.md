@@ -1,6 +1,6 @@
 # Organized support, formation routes and catalytic networks
 
-8 October 2026, Asia/Bangkok. AI-authored primary-source comparison for the [living-dependencies investigation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md). The question is how retained or reconstructed organization enables resumed activity. This note assesses a theoretical comparator; it does not present a new biological experiment or a new mathematical proof.
+8 October 2026, Asia/Bangkok. AI-authored primary-source comparison for the [living-dependencies investigation](../../../../theories/becoming/chapters/LIVING-DEPENDENCIES.md). The question is how retained or reconstructed organization enables resumed activity. This note assesses a theoretical comparator; it does not present a new biological experiment or a new mathematical proof.
 
 ## Primary source and reading scope
 

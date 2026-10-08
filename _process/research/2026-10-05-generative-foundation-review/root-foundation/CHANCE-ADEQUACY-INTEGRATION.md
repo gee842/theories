@@ -42,7 +42,7 @@
 
 ## 6. 记录与验证
 
-独立审查已按上述具体履行范围接受本轮论证、整合及复用审计，见[反审记录](CHANCE-ADEQUACY-REVIEW.md)。[当前理论](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md#taking-over-existing-support)及本轮双语 M20 更新由[变更记录](CHANCE-ADEQUACY-INDEX-EDITS.json)和[局部维护检查](CHANCE-ADEQUACY-CHECKS.json)绑定；这些文档检查不认证未复核的并行来源或整个理论。旧定理继续保留其原验证范围，本轮新增成果是哲学适用与依赖辨明。
+独立审查已按上述具体履行范围接受本轮论证、整合及复用审计，见[反审记录](CHANCE-ADEQUACY-REVIEW.md)。[当前理论](../../../../theories/becoming/chapters/BASIC-CONFLICT-JUDGMENT.md#taking-over-existing-support)及本轮双语 M20 更新由[变更记录](CHANCE-ADEQUACY-INDEX-EDITS.json)和[局部维护检查](CHANCE-ADEQUACY-CHECKS.json)绑定；这些文档检查不认证未复核的并行来源或整个理论。旧定理继续保留其原验证范围，本轮新增成果是哲学适用与依赖辨明。
 
 <a id="checked-support-to-chance-bridge"></a>
 

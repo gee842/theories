@@ -1,12 +1,12 @@
 # 非工具性关切的共同生成模型整合记录
 
-2026年10月6日。AI 撰写。依据 [Ren 的本轮指令](../../../../sources/15-codex-theory-conversations/2026-10-06-noninstrumental-concern-integration.md)，接续[阳明比较](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WANG-YANGMING.md)，不覆盖其原典审查与既有结论。
+2026年10月6日。AI 撰写。依据 [Ren 的本轮指令](../../../../sources/15-codex-theory-conversations/2026-10-06-noninstrumental-concern-integration.md)，接续[阳明比较](../../../../theories/becoming/chapters/WANG-YANGMING.md)，不覆盖其原典审查与既有结论。
 
 ## 接受的连接
 
-[主文](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md)完成了一个有条件的连接：**实际患者条件 → C1 下的患者局部坏 → C2 下合宜回应的患者指向道德优点 → 当前证据、付费选择与同患者同事件的实际缓解。** 哲学根据、形式推论与运行条件分别陈述。C2 接受独立的道德优点关系，未将它定义成待证明的因果收益；私人奖励与先前采纳不进入其基准充分条件。
+[主文](../../../../theories/becoming/chapters/NONINSTRUMENTAL-CONCERN.md)完成了一个有条件的连接：**实际患者条件 → C1 下的患者局部坏 → C2 下合宜回应的患者指向道德优点 → 当前证据、付费选择与同患者同事件的实际缓解。** 哲学根据、形式推论与运行条件分别陈述。C2 接受独立的道德优点关系，未将它定义成待证明的因果收益；私人奖励与先前采纳不进入其基准充分条件。
 
-新过程实际导入原有 `GenerativeCore` 和 `ResourceContinuation`，使用其事件、轨迹与资源接口。患者、事件、证据、许可、选择、动作及费用共处于一条状态历史。总连接证明同时包含条件性道德优点、合法 `Trace`、同患者同事件的末端缓解和准确余额。主文已接入[总理论 §10](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md#10-shared-generativity-and-善)和[形式核心 F14](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md#f14-noninstrumental-patient-reasons-and-paid-response)。F1–F13 没有被追溯添加伦理前提。
+新过程实际导入原有 `GenerativeCore` 和 `ResourceContinuation`，使用其事件、轨迹与资源接口。患者、事件、证据、许可、选择、动作及费用共处于一条状态历史。总连接证明同时包含条件性道德优点、合法 `Trace`、同患者同事件的末端缓解和准确余额。主文已接入[总理论 §10](../../../../theories/becoming/chapters/THEORY.md#10-shared-generativity-and-善)和[形式核心 F14](../../../../theories/becoming/chapters/FORMAL-CORE.md#f14-noninstrumental-patient-reasons-and-paid-response)。F1–F13 没有被追溯添加伦理前提。
 
 这完成本轮论证、条件接口和实现的整合；它没有完成 C1/C2 的普遍必然性、无假设根基、一体之仁的全部对象范围或可靠道德能力的自主形成。
 

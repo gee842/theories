@@ -33,7 +33,7 @@ Universality is a research target. Exact identities, impossibility results over 
 - [First integrated foundation](../../../sources/15-codex-theory-conversations/2026-10-04-selection-and-generative-conditions.md): population dynamics, renewal, capacity profiles, and the verified maintenance example.
 - [Earlier contribution map](../../../sources/15-codex-theory-conversations/2026-10-04-alignment-coordination-contribution-space.md): selection over evaluators, authority reserves, and empirical designs.
 
-The canonical conceptual home remains [Generative Existence](../../../theories/shengsheng-buxi-generative-existence/README.md). This directory is a research workspace, not a competing canonical theory. Original source snapshots are preserved.
+The canonical conceptual home remains [Generative Existence](../../../theories/becoming/README.md). This directory is a research workspace, not a competing canonical theory. Original source snapshots are preserved.
 
 ## Questions driving the next results
 

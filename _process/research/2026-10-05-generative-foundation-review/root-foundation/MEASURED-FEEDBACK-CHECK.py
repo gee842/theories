@@ -15,7 +15,7 @@ HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[3]
 FORMAL=ROOT/'experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis'
 EXPERIMENT=ROOT/'experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence'
-THEORY=ROOT/'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEASURED-FEEDBACK-CORRESPONDENCE.md'
+THEORY=ROOT/'theories/becoming/chapters/MEASURED-FEEDBACK-CORRESPONDENCE.md'
 
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 

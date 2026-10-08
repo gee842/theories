@@ -1,12 +1,12 @@
 # Formation of recurring selection conditions: primary evidence
 
-7 October 2026. AI-authored assessment of the next connection in Ren's recursive proposal: **can evolution form and transmit the organization through which later selection occurs?** This is narrower than universal ethical grounding, but addresses a specific premise: favorable collective continuation need not depend entirely on an arrangement supplied afresh at each generation. The interpretation follows the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md).
+7 October 2026. AI-authored assessment of the next connection in Ren's recursive proposal: **can evolution form and transmit the organization through which later selection occurs?** This is narrower than universal ethical grounding, but addresses a specific premise: favorable collective continuation need not depend entirely on an arrangement supplied afresh at each generation. The interpretation follows the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md).
 
 ## Inherited work and present advance
 
 The [preceding assessment](RECURSIVE-GENERATIVE-SELECTION-SOURCES.md) remains credited: Chuang–Rivoire–Leibler supplies experimentally demonstrated reversal between within-group and aggregate change; Hammerschmidt–Rose–Kerr–Rainey supplies a collective-life-cycle connection, with the previously recorded abstract/caption access limit; Parvinen–Dieckmann supplies conditional evolutionary self-extinction models. None is newly counted here. Their positive results and failure conditions remain part of the account.
 
-[Generative selection](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md) and [liangzhi evolution](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md) already connect consequences, differential continuation and reconstruction. This note tests the formation of recurring biological organization, without restarting those completed conditional interfaces or treating microbial development as evidence of moral judgment.
+[Generative selection](../../../../theories/becoming/chapters/GENERATIVE-SELECTION.md) and [liangzhi evolution](../../../../theories/becoming/chapters/LIANGZHI-EVOLUTION.md) already connect consequences, differential continuation and reconstruction. This note tests the formation of recurring biological organization, without restarting those completed conditional interfaces or treating microbial development as evidence of moral judgment.
 
 ## Two original experiments
 

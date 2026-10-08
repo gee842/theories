@@ -1,6 +1,6 @@
 # 一元关系起点的普遍伦理接续：独立实质审查
 
-2026-10-08，Asia/Bangkok。AI 独立反审；不是 Ren 的原话，也不是新增规范公理。审查对象是本轮从一元、关系本体重新展开的肯定路线。依据 [AGENTS.md](../../../../AGENTS.md)、[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)及 [G0 公理路线纠正](../../../../sources/15-codex-theory-conversations/2026-10-08-alignment-grounding-axiom-correction.md)。§§1–8 保留先于新源码的路线审查；§9 记录读到实际源码、检查器与保留回执后的独立验收，不把后来完成的验证追写为最初已发生。
+2026-10-08，Asia/Bangkok。AI 独立反审；不是 Ren 的原话，也不是新增规范公理。审查对象是本轮从一元、关系本体重新展开的肯定路线。依据 [AGENTS.md](../../../../AGENTS.md)、[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)及 [G0 公理路线纠正](../../../../sources/15-codex-theory-conversations/2026-10-08-alignment-grounding-axiom-correction.md)。§§1–8 保留先于新源码的路线审查；§9 记录读到实际源码、检查器与保留回执后的独立验收，不把后来完成的验证追写为最初已发生。
 
 ## 1. 肯定路线应从何处展开
 
@@ -16,10 +16,10 @@
 
 | 既有成果 | 已建立或已说明的内容 | 本轮不得重报为新成果的部分 |
 | --- | --- | --- |
-| [非二元方法：整体作为根据](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md#formation-participation-and-responsibility) | 保留同一历史的分析边界变化须保留整体评价；具体差异与损失不能被整体抹去 | 边界移动本身不改变实际生活，已是明确方法要求 |
+| [非二元方法：整体作为根据](../../../../theories/becoming/chapters/NONDUAL-METHOD.md#formation-participation-and-responsibility) | 保留同一历史的分析边界变化须保留整体评价；具体差异与损失不能被整体抹去 | 边界移动本身不改变实际生活，已是明确方法要求 |
 | [规范根据论证](NORMATIVE-WARRANT-ARGUMENT.md) | 改变评价承接不自行消除未变根据；现实变化则可能履行、改变或解除要求 | 删除描述不等于消除其关系根据 |
 | [生成公理推导](GENERATIVE-PREMISE-DERIVATION.md) | G0—G—C—P；非局部回报的支持理由及其跨智能范围 | 不能把已完成的有前提理由推导重新列为缺失的第一连接 |
-| [实践判断](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md) | G0/J1–J4 下的比较、有限承担、实际履行、正当释放及保真重述 | 新一轮不必再造一般责任原则或一般忠实传递机制 |
+| [实践判断](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md) | G0/J1–J4 下的比较、有限承担、实际履行、正当释放及保真重述 | 新一轮不必再造一般责任原则或一般忠实传递机制 |
 | [WholePracticalRestriction.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/WholePracticalRestriction.lean) | 相容性与共同整体关系、最小延拓、覆盖范围内唯一性、保真改码及循环反例 | `compatibility_iff_common_whole_relation`、`faithful_recoding_preserves_comparison` 等已经存在 |
 | [PracticalJudgment.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean) | `required_under_faithful_redescription` | 忠实重述保留要求的数学推论不宜再次计为新普遍奠基 |
 
@@ -39,7 +39,7 @@
 
 这里应同时避免两种错误：以分立价值所有者为起点要求外部连接；以及从“一切都在整体中”直接推出所有位置承担相同要求。实际参与、承担、能力、过去损害与依存会形成差异。G0 的整体范围没有因此缩回局部，而差异也没有因此成为自动有效的特权。
 
-已有 [J2 的公开辩护与对手](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md)已经明确：基本条件相对可放弃丰富性的严格优先是附加伦理承诺。其负担不得伪装成“一元”的逻辑结果。J3 的有限救助与承担要求同样不是从“有能力”三个字演绎出来；本輪可复用已说明的关系与规范根据。
+已有 [J2 的公开辩护与对手](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md)已经明确：基本条件相对可放弃丰富性的严格优先是附加伦理承诺。其负担不得伪装成“一元”的逻辑结果。J3 的有限救助与承担要求同样不是从“有能力”三个字演绎出来；本輪可复用已说明的关系与规范根据。
 
 ## 5. 保留整体关系的实质对照
 

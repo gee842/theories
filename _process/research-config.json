@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "record_directories": [
-    "theories/shengsheng-buxi-generative-existence/results/records"
+    "theories/becoming/results/records"
   ],
   "goal_directory": "_process/goals",
   "history_manifest": "_process/architecture/history-manifest.json",
   "generated_manifest": "_process/architecture/generated-manifest.json",
   "legacy_catalogues": {
-    "reading": "theories/shengsheng-buxi-generative-existence/results/README.md",
-    "chain": "theories/shengsheng-buxi-generative-existence/results/GENERATIVITY-CHAIN.md",
-    "sessions": "theories/shengsheng-buxi-generative-existence/results/SESSION-RESULTS.md"
+    "reading": "theories/becoming/results/README.md",
+    "chain": "theories/becoming/results/GENERATIVITY-CHAIN.md",
+    "sessions": "theories/becoming/results/SESSION-RESULTS.md"
   },
   "readme_featured_results": [
     "positive-ground-open-futures",

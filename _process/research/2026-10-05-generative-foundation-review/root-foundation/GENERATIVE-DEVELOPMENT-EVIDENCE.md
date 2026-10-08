@@ -2,7 +2,7 @@
 
 6 October 2026. AI-authored evidence and comparator contribution to Ren's generative-foundation research. **Status: bounded primary-source audit and an unrun experimental design.** No participants were recruited, models deployed, raw data reanalyzed, or new empirical observations obtained. External sources below are link-only references; no source bytes were imported or altered.
 
-The named connection is **acquired prediction → formation and revision of the prediction-to-action/evaluation coupling → action responsive to another center's independently measured condition without a compensating private return**. This follows the [paid prediction/action construction](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PREDICTION-ACTION.md) and supplies empirical constraints for its next bridge. It does not substitute a donation task for the full derivation from organizational dependencies.
+The named connection is **acquired prediction → formation and revision of the prediction-to-action/evaluation coupling → action responsive to another center's independently measured condition without a compensating private return**. This follows the [paid prediction/action construction](../../../../theories/becoming/chapters/PREDICTION-ACTION.md) and supplies empirical constraints for its next bridge. It does not substitute a donation task for the full derivation from organizational dependencies.
 
 ## 1. What the current result establishes, and what remains to explain
 

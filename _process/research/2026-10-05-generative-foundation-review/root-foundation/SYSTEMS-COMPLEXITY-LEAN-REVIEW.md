@@ -1,6 +1,6 @@
 # Systems and complexity: Lean source and coverage review
 
-6 October 2026. AI-authored review under the [shared method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) and the already accepted [conceptual comparison](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md). Scope is the requested mathematical completion, not a new physical concern experiment or proof of universal favorable direction.
+6 October 2026. AI-authored review under the [shared method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) and the already accepted [conceptual comparison](../../../../theories/becoming/chapters/SYSTEMS-COMPLEXITY-CHAOS.md). Scope is the requested mathematical completion, not a new physical concern experiment or proof of universal favorable direction.
 
 **Initial source-review checkpoint:** the four source modules below passed the source-level mathematical and interpretation review. The symbolic module passed its author's Lean 4.29.1 check. Separate fresh-package and real-analysis receipts were pending at that checkpoint; their subsequent acceptance is recorded separately below rather than inferred from source inspection.
 

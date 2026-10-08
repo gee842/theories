@@ -1,6 +1,6 @@
 # Wisdom, context and continuation: integration and counterreview
 
-8 October 2026, Asia/Bangkok. AI-authored continuation of [Ren's observation and instruction](../../../../sources/15-codex-theory-conversations/2026-10-08-math-core-and-historical-wisdom.md). Current formulation: [Wisdom and context](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md). This is author counterreview, not independent-agent acceptance.
+8 October 2026, Asia/Bangkok. AI-authored continuation of [Ren's observation and instruction](../../../../sources/15-codex-theory-conversations/2026-10-08-math-core-and-historical-wisdom.md). Current formulation: [Wisdom and context](../../../../theories/becoming/chapters/WISDOM-AND-CONTEXT.md). This is author counterreview, not independent-agent acceptance.
 
 ## 1. Result and exact contribution
 
@@ -12,7 +12,7 @@ The [protocol](WISDOM-CONTEXT-PROTOCOL.md) fixed four expectations and the two s
 
 ## 2. Reused results and remaining supplied content
 
-Reused: finite trace composition and core correspondence from [MATHEMATICAL-CORE](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md); `May`/`Must` and their limits from [CorePredication](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/CorePredication.lean); valid premise transmission from [HUIGEN](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md); and the existing wisdom account in [THEORY](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md). These results are not claimed as new.
+Reused: finite trace composition and core correspondence from [MATHEMATICAL-CORE](../../../../theories/becoming/chapters/MATHEMATICAL-CORE.md); `May`/`Must` and their limits from [CorePredication](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/CorePredication.lean); valid premise transmission from [HUIGEN](../../../../theories/becoming/chapters/HUIGEN.md); and the existing wisdom account in [THEORY](../../../../theories/becoming/chapters/THEORY.md). These results are not claimed as new.
 
 The concurrently available [ExplanatorySupportChanges](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatorySupportChanges.lean) already constructs changing readiness, loss, recovery and a schedule that never finishes despite continued readiness. Its source was read and credited; it is not imported or revalidated here. The current information-obstruction instance likewise applies an established kind of result rather than claiming to discover it.
 

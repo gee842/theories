@@ -4,7 +4,7 @@
 
 > it is not about this "expectation" or that one, it is about the integral of the whole
 
-这一纠正改变研究中心。已有材料运行和证明保留，但其“保护已有乙”的条件结果只是整体中的局部投影。仁的解释要回到**活动、目的、承受、理解和评价共同形成的整个历程，及其怎样改变整个后续展开**。以下是 AI 的解释和检验，不把这句话当作伦理定理。它接续[整体未来的研究方向](FUTURE-GOOD-INTEGRAL.md#the-future-of-the-whole-as-the-criterion)及[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)，不另外建立一套竞争的基础。
+这一纠正改变研究中心。已有材料运行和证明保留，但其“保护已有乙”的条件结果只是整体中的局部投影。仁的解释要回到**活动、目的、承受、理解和评价共同形成的整个历程，及其怎样改变整个后续展开**。以下是 AI 的解释和检验，不把这句话当作伦理定理。它接续[整体未来的研究方向](FUTURE-GOOD-INTEGRAL.md#the-future-of-the-whole-as-the-criterion)及[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)，不另外建立一套竞争的基础。
 
 ## 1. 整体在解释次序上先于各项预期
 

@@ -21,7 +21,7 @@ from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[2]
 HERE = ROOT / '_process/research/2026-10-05-generative-foundation-review/root-foundation'
-OUT = ROOT / 'theories/shengsheng-buxi-generative-existence/results'
+OUT = ROOT / 'theories/becoming/results'
 DATA = OUT / 'data/session-results.json'
 SNAPSHOT = HERE / 'SESSION-OUTCOME-SNAPSHOT.json'
 INVENTORY = HERE / 'SESSION-PROOF-OVERLAP.json'
@@ -104,7 +104,7 @@ def capture():
                   if len({r['path'] for r in rows}) > 1]
     chapters = read(OUT / 'data/arguments-a-l.json') + read(OUT / 'data/arguments-m-z.json')
     registered = {r['source'] for r in chapters}
-    current = {str(p.relative_to(ROOT)) for p in (OUT.parent / 'unified-2026-10-05').glob('*.md')}
+    current = {str(p.relative_to(ROOT)) for p in (OUT.parent / 'chapters').glob('*.md')}
     changed_readings = [r['source'] for r in chapters if (ROOT/r['source']).exists()
                         and digest((ROOT/r['source']).read_bytes()) != r['source_sha256']]
     outputs = catalogue_outputs(m, manifest, sources)

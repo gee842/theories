@@ -1,6 +1,6 @@
 # Ranking reversal and generative evaluation: scope review
 
-6 October 2026. AI-authored internal conceptual review in response to Ren's objection that the earlier universal-score inference sounded reductionist. This reviews existing records and arguments; it reports no new simulation, empirical evidence or formal verification. It applies the [shared nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) and advances the named connection **task-relative success → operational significance → warranted generative evaluation** in the [governing derivation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md).
+6 October 2026. AI-authored internal conceptual review in response to Ren's objection that the earlier universal-score inference sounded reductionist. This reviews existing records and arguments; it reports no new simulation, empirical evidence or formal verification. It applies the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) and advances the named connection **task-relative success → operational significance → warranted generative evaluation** in the [governing derivation](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md).
 
 ## Finding
 

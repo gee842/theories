@@ -1,6 +1,6 @@
 # 初次共同接管：机会份额的根据从何而来
 
-2026-10-08。AI 撰写，沿 G0/J 明确公理路线，遵循[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)。本轮将已有 J3 应用于初次共同接管，不增设一个“所有旧概率永远不得下降”的公理。本文的承担内容、实际对应及剩余限制不能由形式证明代领。
+2026-10-08。AI 撰写，沿 G0/J 明确公理路线，遵循[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)。本轮将已有 J3 应用于初次共同接管，不增设一个“所有旧概率永远不得下降”的公理。本文的承担内容、实际对应及剩余限制不能由形式证明代领。
 
 **正面结果：当初次共同接管会撤掉仍有效承担所保护的实际支持，份额不能只满足“每侧概率大于零”。原承担的具体内容能够给接管以非任意的必要约束；其强度由仍须兑现的保护及真实实施关系取得。** 这比 CP 的非排除条件更有内容，但只判断特定承担是否得到承接，尚非完整公平或无前史冲突的通用比例。
 
@@ -12,7 +12,7 @@
 
 第二，给机会损失设一个可接受比率，可以产出区间，但比率的根据仍待解释。基本损失的时长或严重度不是天然的彩票权重；若假定不同位置的概率增减按固定数值抵偿，就已经加入了一项跨位置比较承诺。改名为“有界比率”不会免除这个负担。
 
-第三，初次共同接管涉及一项不同根据：**新方案将撤掉什么仍受正当承担保护的支持？** 这里可直接复用 [J3](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md#4-谁承担什么--allocating-responsibilities)的履行、修复和有界交接，不必先完成程度与人数的普遍兑换。本轮选择这条，因为它能取得一些有内容的份额限制，并明确说明内容何来。
+第三，初次共同接管涉及一项不同根据：**新方案将撤掉什么仍受正当承担保护的支持？** 这里可直接复用 [J3](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md#4-谁承担什么--allocating-responsibilities)的履行、修复和有界交接，不必先完成程度与人数的普遍兑换。本轮选择这条，因为它能取得一些有内容的份额限制，并明确说明内容何来。
 
 已有[同票机会接续](CROSSED-CLAIMS-INTEGRATION.md)、[结算历史](CHANCE-REVISION-INTEGRATION.md)及 [RS](JOINT-RISK-REVISION-INTEGRATION.md#9-continue-through-equal-basic-risk-sharing)保持信用。本轮不重新发现给定机会应怎样保留，也不把同等风险的答案改称不等损失答案。最新 [RSL](JOINT-RISK-REVISION-INTEGRATION.md#15-a-limited-fair-sharing-reason-can-survive-some-added-risk)及其有限修订检验已处理完整分担根据的局部延续和更换基准；本文不另证明伦理连续性或重新计入其成果。
 

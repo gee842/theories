@@ -1,6 +1,6 @@
 # Selective reuse of a historical correction: prospective review
 
-6 October 2026. **Prospective method review; not approval of an uninspected final protocol or prompts.** No participant calls, outcome calculations or new empirical observations were made for this review. The named connection is **an acquired correction retained outside one context → justified use, revision or suspension in a later context**. This supports the existing [succession obligation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEMORY-CORRECTION-AND-SUCCESSION.md), without adding a new controller or completion condition.
+6 October 2026. **Prospective method review; not approval of an uninspected final protocol or prompts.** No participant calls, outcome calculations or new empirical observations were made for this review. The named connection is **an acquired correction retained outside one context → justified use, revision or suspension in a later context**. This supports the existing [succession obligation](../../../../theories/becoming/chapters/MEMORY-CORRECTION-AND-SUCCESSION.md), without adding a new controller or completion condition.
 
 ## Proposed minimum and the claim it could support
 

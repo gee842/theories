@@ -6,7 +6,7 @@
 
 > great, keep advancing our theory
 
-This continues [the formation and renewal of concern](2026-10-05-formation-and-renewal-of-concern.md). It also reads the completed [formation study](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMATION.md), [ethical foundation](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md), and [concern–correction interface](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONCERN-AND-CORRECTION.md). Their original files and proofs remain preserved.
+This continues [the formation and renewal of concern](2026-10-05-formation-and-renewal-of-concern.md). It also reads the completed [formation study](../../theories/becoming/chapters/FORMATION.md), [ethical foundation](../../theories/becoming/chapters/ETHICAL-FOUNDATION.md), and [concern–correction interface](../../theories/becoming/chapters/CONCERN-AND-CORRECTION.md). Their original files and proofs remain preserved.
 
 ## The new bridge
 

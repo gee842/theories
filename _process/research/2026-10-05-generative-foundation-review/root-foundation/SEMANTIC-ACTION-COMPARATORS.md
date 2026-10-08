@@ -1,6 +1,6 @@
 # Meaning, verification and action: primary comparators
 
-6 October 2026. AI-authored source comparison for the [semantic action-composition study](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SEMANTIC-ACTION-COMPOSITION.md). The comparison locates the technical contribution and its limits. It does not claim empirical validation or that established software concepts are newly discovered by this programme.
+6 October 2026. AI-authored source comparison for the [semantic action-composition study](../../../../theories/becoming/chapters/SEMANTIC-ACTION-COMPOSITION.md). The comparison locates the technical contribution and its limits. It does not claim empirical validation or that established software concepts are newly discovered by this programme.
 
 ## Proof rules must preserve the consumer's intended property
 

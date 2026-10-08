@@ -1,6 +1,6 @@
 # Concern can assess how purposes form and change
 
-6 October 2026. AI-authored continuation under the [shared nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). The named connection is **actual undergoing and its possible transformation → warranted assessment of a formed purpose, including before concern becomes an adopted purpose**. This is philosophical argument and reconstruction. It adds no empirical result, formal theorem or proof of universal necessity.
+6 October 2026. AI-authored continuation under the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). The named connection is **actual undergoing and its possible transformation → warranted assessment of a formed purpose, including before concern becomes an adopted purpose**. This is philosophical argument and reconstruction. It adds no empirical result, formal theorem or proof of universal necessity.
 
 ## The candidate and the explanatory advance
 
@@ -26,7 +26,7 @@ A legitimate protection of self-direction does not automatically establish absen
 
 Consider two independently permissible continuations within an already chosen project. Both preserve the protections invoked by the proposed argument about participation and decision authority; one additionally relieves the specified unrelated burden. This is a conceptual comparison, not an experiment or a claim that all choices can be so matched. The actual improvement supplies the candidate's positive explanation of why that continuation has something in its favor. If the opposing argument establishes only freedom from compulsion or project abandonment, it has not established that this improvement cannot count at all.
 
-This defeats that insufficient inference, not every account of jurisdiction. A stronger opponent can argue that moral answerability itself infringes an independently legitimate protection, or defend an applicable choice-specific exclusion. The [existing protection analysis](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#protection-can-affect-justification-itself) preserves those possibilities. Their scope must be defended in the actual case. Relabeling it a private choice does not settle the matter; neither does relabeling its benefit a universal reason.
+This defeats that insufficient inference, not every account of jurisdiction. A stronger opponent can argue that moral answerability itself infringes an independently legitimate protection, or defend an applicable choice-specific exclusion. The [existing protection analysis](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#protection-can-affect-justification-itself) preserves those possibilities. Their scope must be defended in the actual case. Relabeling it a private choice does not settle the matter; neither does relabeling its benefit a universal reason.
 
 ## What this changes in the unified account
 
@@ -38,7 +38,7 @@ This leaves a precise positive task: **justify why the actual improvement contri
 
 ## Integration and checks
 
-The [canonical continuation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#concern-can-question-the-purpose-of-a-practice) and governing derivation map carry this result. The three companion notes are collaborating AI contributions with different assignments, not independent empirical confirmations. Existing source and formal results retain their original scopes; no scientific checks were rerun. [Preservation metadata](development/WARRANT-OF-CONCERN-BEFORE.json) records the pre-edit canonical bytes and original link base. The [edit receipt](WARRANT-OF-CONCERN-EDITS.json) and [link/preservation check](WARRANT-OF-CONCERN-CHECKS.json) record this integration separately from scientific validation.
+The [canonical continuation](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#concern-can-question-the-purpose-of-a-practice) and governing derivation map carry this result. The three companion notes are collaborating AI contributions with different assignments, not independent empirical confirmations. Existing source and formal results retain their original scopes; no scientific checks were rerun. [Preservation metadata](development/WARRANT-OF-CONCERN-BEFORE.json) records the pre-edit canonical bytes and original link base. The [edit receipt](WARRANT-OF-CONCERN-EDITS.json) and [link/preservation check](WARRANT-OF-CONCERN-CHECKS.json) record this integration separately from scientific validation.
 
 
 ## A rule does not settle its own justificatory scope

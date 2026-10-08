@@ -38,6 +38,6 @@ This entry records a priority and research hypothesis, not a new scientific resu
 ## Context links
 
 - [Scoped authorization](../../_process/goals/theory-of-becoming.json) and [generated scope view](../../GOALS.md#theory-of-becoming).
-- [Nondual method](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) and [ontology-first correction](2026-10-08-monist-relational-ontology-first.md).
-- [Continuing generative grounding](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md) and [conditional foundation assessment](../../theories/shengsheng-buxi-generative-existence/results/records/conditional-foundation-assessment.md).
-- [Existing evolutionary account](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md), [explicit-axiom correction](2026-10-08-alignment-grounding-axiom-correction.md) and [separately authorized zero-axiom practical judgment](2026-10-08-zero-axiom-practical-judgment.md).
+- [Nondual method](../../theories/becoming/chapters/NONDUAL-METHOD.md) and [ontology-first correction](2026-10-08-monist-relational-ontology-first.md).
+- [Continuing generative grounding](../../theories/becoming/chapters/GENERATIVE-GROUNDING.md) and [conditional foundation assessment](../../theories/becoming/results/records/conditional-foundation-assessment.md).
+- [Existing evolutionary account](../../theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md), [explicit-axiom correction](2026-10-08-alignment-grounding-axiom-correction.md) and [separately authorized zero-axiom practical judgment](2026-10-08-zero-axiom-practical-judgment.md).

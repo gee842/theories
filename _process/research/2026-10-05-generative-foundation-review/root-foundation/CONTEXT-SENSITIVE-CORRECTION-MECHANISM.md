@@ -1,8 +1,8 @@
 # Which relation does a consequence warrant correcting?
 
 6 October 2026. AI-authored source reconstruction under the
-[nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)
-and the [conditional-universality scope](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope).
+[nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)
+and the [conditional-universality scope](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope).
 Named connection: **retained consequences → context-sensitive revision of the
 relation maintained → changed activity**. No controller, transition law,
 experiment or Lean declaration is added. The new source comparison below reads
@@ -25,7 +25,7 @@ those grounds rather than equate every change with correction.
 | [Application refinement](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/REFINEMENT-MECHANISM.md) | Faithfully phase-tagged opposite outcomes force separation of two states previously grouped for application; the new partition governs later productive use. | Binding/contact/stability, refinement discipline, audit policy and the productive-use interpretation. H110 remains the same sensory model. |
 | [Completion-sensitive inquiry](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY-MECHANISM.md) | Acquired positive completion stops the episode while another phase remains unknown; a negative continues inquiry when feasible. | One productive extraction is the declared episode, and the table reader and shortest-word order implement its supplied criterion. |
 | [Acquired relay dependency](REMAINING-DEPENDENCY-INTEGRATION.md) | Acquired off/on effects determine whether a relay is maintained or released for a distinct later load. | Diagnostic-to-load calibration, the later-load undertaking and the preference for off when both settings work. |
-| [Method formation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/AUTONOMOUS-METHOD-FORMATION.md) | Acquired sensor evidence rejects an actually tried generator, removes its edge and forms another edge used to regenerate later candidates. | Retained evidence interpretation, consistency criterion, six-reading schedule, constructor and generator repertoire. |
+| [Method formation](../../../../theories/becoming/chapters/AUTONOMOUS-METHOD-FORMATION.md) | Acquired sensor evidence rejects an actually tried generator, removes its edge and forms another edge used to regenerate later candidates. | Retained evidence interpretation, consistency criterion, six-reading schedule, constructor and generator repertoire. |
 
 These are completed conditional capacities. A fixed encompassing law does not
 make their operative arrangements fixed. Conversely, a mechanism that actually

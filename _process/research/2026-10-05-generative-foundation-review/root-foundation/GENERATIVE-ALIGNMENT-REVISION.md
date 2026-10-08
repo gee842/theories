@@ -1,10 +1,10 @@
 # 目标及其形成也须对生生负责 / Goals and their formation answer to generative grounds
 
-**本轮后续 / Subsequent completion，2026-10-08。** [形成—反思—修订整合](GOAL-FORMATION-REVISION-INTEGRATION.md)与[理论章节](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md)完成下文§7所提相连历史的有限形式实现：43项新 Lean 定理／85项审计，保留取得、响应、真实成本和后续选择。/ The earlier normative argument below keeps its original scope. The joined model is now checked; empirical realization, universal semantic sufficiency and reliable conduct remain open. This is a same-author continuation, not a new independent acceptance.
+**本轮后续 / Subsequent completion，2026-10-08。** [形成—反思—修订整合](GOAL-FORMATION-REVISION-INTEGRATION.md)与[理论章节](../../../../theories/becoming/chapters/GOAL-FORMATION-AND-REVISION.md)完成下文§7所提相连历史的有限形式实现：43项新 Lean 定理／85项审计，保留取得、响应、真实成本和后续选择。/ The earlier normative argument below keeps its original scope. The joined model is now checked; empirical realization, universal semantic sufficiency and reliable conduct remain open. This is a same-author continuation, not a new independent acceptance.
 
 **后续连接已完成 / Subsequent connection completed，2026-10-08。** [相连目标修订研究](GOAL-REVISION-CONTINUATION.md)及[事先协议](GOAL-REVISION-CONTINUATION-PROTOCOL.md)接通本篇 §7 所列目标取得、理解、实际修订和选择接续；27 项新 Lean 定理，13 条历史／221 个完整状态相符。条件性连接归入成果，G0/J、对应、权限和有限支持保持明示；下文原“未完成／待执行”描述保留为第一轮历史检查点，不再作为当前待做任务。 / The previously proposed discriminators now have a checked connected realization; broader empirical and universal claims retain their separate scope.
 
-2026-10-08，Asia/Bangkok。AI 撰写的第一轮探索，执行 [Ren 已选定的首要方向及开始探索指示](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md)。采用明确 G0 公理路线，遵循[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)。本轮给出肯定论证、实质对手及原始文献比较；不是新的数学证明、经验实验或独立验收。已完成的[方向论证](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md)与[实践判断](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md)保持完成。
+2026-10-08，Asia/Bangkok。AI 撰写的第一轮探索，执行 [Ren 已选定的首要方向及开始探索指示](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md)。采用明确 G0 公理路线，遵循[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)。本轮给出肯定论证、实质对手及原始文献比较；不是新的数学证明、经验实验或独立验收。已完成的[方向论证](../../../../theories/becoming/chapters/ALIGNMENT-DIRECTION.md)与[实践判断](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md)保持完成。
 
 ## 1. 此轮推进什么 / The connection advanced
 
@@ -20,9 +20,9 @@ The positive direction includes forming understanding, relationships, organizati
 
 | 已有连接 / Existing connection | 此轮复用的内容 / Reused result | 不冒充的内容 / Limit |
 |---|---|---|
-| [评价可塑性](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-PLASTICITY.md) / Evaluative plasticity | 取得的后果可形成、改变实际评价影响，并在事实知识保持时改变选择 / Acquired consequences can change operative evaluation with factual knowledge retained | 形成的评价不因此正确 / Acquisition does not certify warrant |
-| [方法修订](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/METHOD-REVISION.md) / Method revision | 同一有成本历史中的实际取得、保留和后续方法使用 / Actual acquisition, retention and later method use in a resource-dependent history | 已给定更新律和可用方法，不是自动发现善 / Supplied updating and alternatives do not discover goodness by themselves |
-| [生成性选择](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md) / Generative selection | 关切、实际激励、选择规则及其改革可以不同；六项条件机制已整合 / Held concern, effective incentives and selection rules differ; six conditional mechanisms are integrated | 有用或能胜出不等于正当 / Usefulness and selection success do not establish ethical validity |
+| [评价可塑性](../../../../theories/becoming/chapters/EVALUATIVE-PLASTICITY.md) / Evaluative plasticity | 取得的后果可形成、改变实际评价影响，并在事实知识保持时改变选择 / Acquired consequences can change operative evaluation with factual knowledge retained | 形成的评价不因此正确 / Acquisition does not certify warrant |
+| [方法修订](../../../../theories/becoming/chapters/METHOD-REVISION.md) / Method revision | 同一有成本历史中的实际取得、保留和后续方法使用 / Actual acquisition, retention and later method use in a resource-dependent history | 已给定更新律和可用方法，不是自动发现善 / Supplied updating and alternatives do not discover goodness by themselves |
+| [生成性选择](../../../../theories/becoming/chapters/GENERATIVE-SELECTION.md) / Generative selection | 关切、实际激励、选择规则及其改革可以不同；六项条件机制已整合 / Held concern, effective incentives and selection rules differ; six conditional mechanisms are integrated | 有用或能胜出不等于正当 / Usefulness and selection success do not establish ethical validity |
 | 实践判断 G0、J1–J4、E / Practical judgment | 公开比较、承担、权限、真实损失与对应 / Explicit comparison, responsibility, authority, loss and correspondence | 不重做比较器；不宣布新案例获 Lean 验证 / The comparator is not reopened; this case is not a new Lean result |
 
 本轮新增的是这些成果的**规范连接**：根据怎样同时约束目标及产生目标的安排，怎样区分有根据的成长与只让后来评价更容易通过，以及何时这种区别支持改变选择规则。一般反消音、有限结束与 faithful recoding 均有既有研究；这里不重新将它们宣称为发现。

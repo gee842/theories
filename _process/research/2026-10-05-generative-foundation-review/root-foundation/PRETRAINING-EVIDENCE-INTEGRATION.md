@@ -1,6 +1,6 @@
 # Retained consequences before further teaching
 
-6 October 2026. AI-authored integration under the [shared nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Named connection: **formed responsiveness retains consequences of its own formation → those consequences specify what remains to be investigated → warranted revision of the practice**. The mechanism is newly proved within an existing actual law. The ethical application remains conditional; the complete foundation is not established.
+6 October 2026. AI-authored integration under the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Named connection: **formed responsiveness retains consequences of its own formation → those consequences specify what remains to be investigated → warranted revision of the practice**. The mechanism is newly proved within an existing actual law. The ethical application remains conditional; the complete foundation is not established.
 
 ## The positive result
 

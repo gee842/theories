@@ -46,4 +46,4 @@ After the report on formed relationships and unchanged event-word possibilities,
 
 This further continuation tests relations derived from the existing operations, their availability to a specified query interface, and the scope of configuration identity under an exact history refinement. This paragraph records the AI's execution scope; it does not attribute those mathematical formulations to Ren or change the stronger assumption-free objective.
 
-The [current foundation attempt](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md) and [argument, proof and counterreview record](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ENACTED-FOUNDATION-INTEGRATION.md) retain the remaining obligations.
+The [current foundation attempt](../../theories/becoming/chapters/ASSUMPTION-FREE-FOUNDATION.md) and [argument, proof and counterreview record](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ENACTED-FOUNDATION-INTEGRATION.md) retain the remaining obligations.

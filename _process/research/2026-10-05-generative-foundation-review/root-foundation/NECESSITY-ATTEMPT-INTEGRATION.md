@@ -1,6 +1,6 @@
 # Necessity attempt: identify the full ground of the reason
 
-6 October 2026. AI-authored response to Ren's request to try to solve universal ethical necessity, following the [current warrant inquiry](WARRANT-OF-CONCERN-INTEGRATION.md) and [shared nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). The named connection is **actual adverse undergoing and an accessible, otherwise permissible transformation → a contributory reason for an unrelated, uncommitted responder**.
+6 October 2026. AI-authored response to Ren's request to try to solve universal ethical necessity, following the [current warrant inquiry](WARRANT-OF-CONCERN-INTEGRATION.md) and [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). The named connection is **actual adverse undergoing and an accessible, otherwise permissible transformation → a contributory reason for an unrelated, uncommitted responder**.
 
 **Result: the attempted necessity proof does not close.** It supplies a constrained argument against a general adoption requirement, and identifies the exact full-ground claim that a self-relief argument would need. These are substantive scope findings within the positive investigation. They neither prove the restrictive alternative nor show that ethics requires an ingredient outside generative reality.
 
@@ -59,4 +59,4 @@ This is a completed attempt with an unsuccessful closure step, not completion of
 
 ## Preservation and integration
 
-The [canonical account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#necessity-attempt-the-full-ground-of-a-reason) and governing derivation record the attempted proof and its exact limit. The argument, review and source note are collaborating AI contributions, not independent empirical confirmations. [Snapshot metadata](development/NECESSITY-ATTEMPT-BEFORE.json), [exact additive edits](NECESSITY-ATTEMPT-EDITS.json) and [file/link checks](NECESSITY-ATTEMPT-CHECKS.json) preserve the existing research and distinguish this integration from scientific validation.
+The [canonical account](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#necessity-attempt-the-full-ground-of-a-reason) and governing derivation record the attempted proof and its exact limit. The argument, review and source note are collaborating AI contributions, not independent empirical confirmations. [Snapshot metadata](development/NECESSITY-ATTEMPT-BEFORE.json), [exact additive edits](NECESSITY-ATTEMPT-EDITS.json) and [file/link checks](NECESSITY-ATTEMPT-CHECKS.json) preserve the existing research and distinguish this integration from scientific validation.

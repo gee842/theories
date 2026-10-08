@@ -1,6 +1,6 @@
 # 运行上的更新／消耗与生生的关系读法 / Renewal on runs and the relational reading
 
-2026-10-09，Asia/Bangkok。AI（Claude）按 Ren 的指示“你自己全改了吧……先更新好计划，然后再一步步完整完成，保持代码和整体结构优雅”（[原话与解释](../../../../sources/15-codex-theory-conversations/2026-10-09-one-theory-unification.md)）完成[统一计划](BECOMING-UNIFICATION-PLAN.md)的 P3b。成果记录：[becoming-renewal-reading](../../../../theories/shengsheng-buxi-generative-existence/results/records/becoming-renewal-reading.md)。
+2026-10-09，Asia/Bangkok。AI（Claude）按 Ren 的指示“你自己全改了吧……先更新好计划，然后再一步步完整完成，保持代码和整体结构优雅”（[原话与解释](../../../../sources/15-codex-theory-conversations/2026-10-09-one-theory-unification.md)）完成[统一计划](BECOMING-UNIFICATION-PLAN.md)的 P3b。成果记录：[becoming-renewal-reading](../../../../theories/becoming/results/records/becoming-renewal-reading.md)。
 
 ## 1. 问题
 
@@ -28,7 +28,7 @@ Universal Metaethical Core 的前提卡里有三项对应：形成 E、连通、
 | 声明 | 内容 |
 |---|---|
 | `Conditions.valuation` | 形成事件 `(形成, 步)` 的读法有两条：活跃且在该运行中不消耗者为 living；两个事件的形成共同参与某一条件，即为 related |
-| `living_iff_relational` | 这一 `living` 就是已记录的[关系读法](../../../../theories/shengsheng-buxi-generative-existence/results/records/relational-reading-comparison.md) |
+| `living_iff_relational` | 这一 `living` 就是已记录的[关系读法](../../../../theories/becoming/results/records/relational-reading-comparison.md) |
 | `connected_of_common`、`significant_iff_of_common` | 如果每个活的形成都参与同一个条件，整体就是连通的；于是 G0 恰等于种子加 N_rel 加 N_std，连通由展开给出，不再假设 |
 | `consumption_relates` | 消耗本身就是一种已形成的关系：消耗者与失去支持的形成共享被汲取的条件 |
 | `valuing_consumption_reaches` | 在 N_rel 下，一个立场若珍视某个消耗者的活动，就必须珍视被它消耗的形成的每个活的事件 |

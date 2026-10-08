@@ -1,6 +1,6 @@
 # Current recipient reasons under arbitrary enabled histories
 
-6 October 2026. AI-authored extension of the accepted [recipient-reason construction](RECIPIENT-REASONS-INTEGRATION.md), following the [generative-grounding goal](../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md). The named connection is **initialized actual evidence and reasoning machinery → trustworthy current publication despite interruption and restart → a usable contract for downstream action**.
+6 October 2026. AI-authored extension of the accepted [recipient-reason construction](RECIPIENT-REASONS-INTEGRATION.md), following the [generative-grounding goal](../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md). The named connection is **initialized actual evidence and reasoning machinery → trustworthy current publication despite interruption and restart → a usable contract for downstream action**.
 
 **Status: accepted at the stated event-law scope after formal verification, finite exploration and separate internal review.** The [prospective protocol](../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/PROTOCOL.md) was frozen before state-space exploration. Parent sources and accepted receipts remain unchanged. This extension studies the existing guarded event law; it does not install a new action, objective, observation channel or physical fault model.
 

@@ -1,0 +1,214 @@
+{
+  "schema_version": 1,
+  "id": "positioned-positive-reason",
+  "title": {
+    "zh": "面向每个相应位置的正面理由",
+    "en": "Positive reasons addressed to every situated position"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-08T18:51:23.185277+00:00",
+  "claim": {
+    "zh": "在明示 G0、形成对应 E 与位置化直接实践解释 D 下，凡对某回应有实际通达的位置，都具有支持该回应的一项理由，不论其是否认同、属于何种载体或带有何种身份标签。D 所给出的最小理由只由通达关系与正面根据决定，因此通达相同的位置具有相同的这一理由；无通达的位置不从这条路线获得理由。认同无关性是 D 的内容，而非 G0 与 E 的推论：以认同为条件的实践解释与同一 G0 及形成事实相容，却不给有通达、不认同的位置这项理由。",
+    "en": "Under explicit G0, formation correspondence E and a positioned direct articulation D, every position with actual access to a response has a contributory reason for it, whatever its endorsement, substrate or identity labels. The least reason satisfying D is fixed by access and positive ground alone, so positions alike in access are alike in this reason; a position without access receives no reason from this route. Endorsement independence is the content of D, not a consequence of G0 and E: an endorsement-conditional articulation is compatible with the same G0 and formation facts yet withholds the reason from a non-endorsing position with access."
+  },
+  "hypotheses": [
+    {
+      "zh": "G0 不变，仍为明确采用的正面规范前提；E 要求回应在每段当前有根据的接续中实现某种新生成内容。",
+      "en": "G0 is unchanged and remains an explicit normative premise; E requires the response to realize some new generative content in every presently grounded continuation."
+    },
+    {
+      "zh": "D 是公开提出的位置化实践解释：通达加上每段接续中的正面根据给出一项支持理由。D 不提及认同、文化、身份或载体；这一点是前提的内容，由边界定理标明。",
+      "en": "D is an explicit positioned practical articulation: access together with positive ground in every continuation supplies a contributory reason. D does not mention endorsement, culture, identity or substrate; the boundary theorem marks this as premise content."
+    },
+    {
+      "zh": "位置是同一展开中形成的分化回应位置；通达代表其形成的能力、地位与可得性，不是先于历史的独立行动者。",
+      "en": "Positions are differentiated response positions formed within one unfolding; access stands for their formed capacity, standing and availability, not independent agents prior to the history."
+    }
+  ],
+  "correspondence": {
+    "zh": "具体见证沿用 PositiveGroundUncertainty 的构造：接续包括所发生的回应、仍活的形成模型与未来分支；所见范围是取得证据后仍活的模型。位置的载体与认同字段只用于显示它们不进入理由。通达与现实能力、权限的对应须在应用中说明。",
+    "en": "The concrete witness reuses the PositiveGroundUncertainty construction: a continuation records the response, a surviving formation model and a future branch; the visible scope is the models still live after acquired evidence. Position substrate and endorsement fields appear only to show that they do not enter the reason. Correspondence of access to real capacity and authority must be stated in each application."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean",
+  "aliases": [
+    "PositionedPositiveReason.every_situated_position_has_reason",
+    "PositionedPositiveReason.route_reason_is_least",
+    "PositionedPositiveReason.route_reason_depends_only_on_access",
+    "PositionedPositiveReason.g0_holds",
+    "PositionedPositiveReason.barren_not_live",
+    "PositionedPositiveReason.live_productive",
+    "PositionedPositiveReason.respond_formation",
+    "PositionedPositiveReason.nonendorsing_position_with_access_has_reason",
+    "PositionedPositiveReason.endorsement_without_access_gets_no_route_reason",
+    "PositionedPositiveReason.endorsement_independence_is_supplied_by_articulation"
+  ],
+  "dependencies": [
+    {
+      "id": "positive-ground-open-futures",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "every_situated_position_has_reason 直接调用 contingent_generation_has_positive_ground；respond_formation 由 PositiveGroundUncertainty 的定义直接计算所见范围与新形成，不调用其依赖 propext 的引理。",
+        "en": "every_situated_position_has_reason directly calls contingent_generation_has_positive_ground; respond_formation computes the visible scope and new formation directly from the PositiveGroundUncertainty definitions, without calling its propext-dependent lemmas."
+      },
+      "interface": {
+        "output": {
+          "zh": "同一回应在每段有根据的接续中具有某项新的正面根据。",
+          "en": "One response has some new positive ground in every grounded continuation."
+        },
+        "input": {
+          "zh": "D 的前件 SecuresPositiveGround：回应在每段所见接续中确保正面新内容。",
+          "en": "D's antecedent SecuresPositiveGround: the response secures positive new content in every visible continuation."
+        },
+        "conditions": {
+          "zh": "同一 G0、同一库存与先前内容；所见范围按回应索引；不加入 C、整体无损或 Better。",
+          "en": "Same G0, inventory and prior content; visible scope indexed by response; no C, global no-loss or Better."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "universal-practical-warrant",
+      "detail": {
+        "zh": "本结果在明示 D 下给出位置普遍的支持理由；更强的无附加规范前提的普遍实践根据仍为开放目标。",
+        "en": "This result supplies position-universal contributory reasons under explicit D; the stronger universal practical warrant without added normative premises remains open."
+      }
+    },
+    {
+      "id": "alignment-direction-g0-j",
+      "detail": {
+        "zh": "解释关联：人类与 AI 位置在相同通达下具有相同的这一理由；不推出认识、动机或遵循。",
+        "en": "Interpretive connection: human and AI positions with the same access have the same such reason; no recognition, motivation or compliance follows."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean",
+      "detail": {
+        "zh": "以认同为条件的实践解释与同一 G0 及形成事实相容，却不给有通达、不认同的位置理由；因此认同无关性不能从 G0 推出。",
+        "en": "An endorsement-conditional articulation is compatible with the same G0 and formation facts yet withholds the reason from a non-endorsing position with access; endorsement independence therefore does not follow from G0."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean",
+      "detail": {
+        "zh": "认同但无通达的位置不从这条路线获得理由；这不证明它全无理由。",
+        "en": "An endorsing position without access receives no reason from this route; this does not show it has no reason at all."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "一项支持理由不是许可、义务、整体排序或唯一最优动作，也不预测任何位置会认识或遵循它。普遍性以 D 为前提；不从行动者自身立场推出 G0 或 D，也不完成 universal-practical-warrant。",
+    "en": "A contributory reason is not permission, duty, an overall ranking or a uniquely optimal action, and predicts no recognition or compliance. Universality rests on D; neither G0 nor D is derived from an agent's own standpoint, and universal-practical-warrant is not completed."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 成功实查 10 项新定理／25 项声明审计，全部空依赖；检查器要求本模块无任何公理依赖。继承模块的 propext、Quot.sound 及 Classical.choice 依赖另列，未迁移；2 项应用例不计为新定理。首次运行（8 项定理，3 项依赖 propext 与 Quot.sound）的回执保留于其运行目录。尚无独立反审。",
+    "en": "Successful Lean 4.29.1 check: 10 new theorems/25 declaration audits, all with empty axiom reports; the checker requires this module to have none. Inherited modules' propext, Quot.sound and Classical.choice dependencies are listed separately and not migrated; 2 application examples are not counted as new theorems. The first run (8 theorems, 3 with propext and Quot.sound) remains in its retained run directory. No independent review yet."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean",
+      "role": "proof",
+      "sha256": "95cf5800f6827d1896cac186113cccf9561768693c6d6e867a3626cd04fc8408",
+      "declarations": [
+        "PositionedPositiveReason.every_situated_position_has_reason",
+        "PositionedPositiveReason.route_reason_is_least",
+        "PositionedPositiveReason.route_reason_depends_only_on_access",
+        "PositionedPositiveReason.g0_holds",
+        "PositionedPositiveReason.barren_not_live",
+        "PositionedPositiveReason.live_productive",
+        "PositionedPositiveReason.respond_formation",
+        "PositionedPositiveReason.nonendorsing_position_with_access_has_reason",
+        "PositionedPositiveReason.endorsement_without_access_gets_no_route_reason",
+        "PositionedPositiveReason.endorsement_independence_is_supplied_by_articulation"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositiveGroundUncertainty.lean",
+      "role": "proof",
+      "sha256": "86ff096d42b7246b74242ba0e68ec90d3624392f14303b0dcd6e8a9c59e42fcd",
+      "declarations": [
+        "PositiveGroundUncertainty.contingent_generation_has_positive_ground"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
+      "role": "proof",
+      "sha256": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
+      "declarations": [
+        "GenerativeComparison.G0"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/positioned-positive-reason-verification.json",
+      "role": "receipt",
+      "sha256": "548709579fcf0211536dab95efbc0ea9c640ba42e37cf7bed26a4d1a46b31cc1",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md",
+      "role": "review",
+      "sha256": "a9b36f167cec36a5712de30abeb7a2bb963d708d6338989135ecf68bb7188ad9",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-09-theory-of-becoming-name.md",
+      "role": "provenance",
+      "sha256": "cf4135086c14b7d30373b3bf391d85e2ca617d5a9d808f60546d0598d0adecf9",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/positioned-positive-reason-verification.json",
+      "sha256_pointer": "/source_sha256/PositionedPositiveReason",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositiveGroundUncertainty.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/positioned-positive-reason-verification.json",
+      "sha256_pointer": "/source_sha256/PositiveGroundUncertainty",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/positioned-positive-reason-verification.json",
+      "sha256_pointer": "/source_sha256/GenerativeComparison",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "把通达关系接到实际形成的能力与权限（J3/J4），说明不同位置的理由如何分化为有界责任；或推进从评价者自身已有承诺出发降低 D 的路线（见审查 §3.1）。",
+    "en": "Connect access to formed capacity and authority (J3/J4), showing how reasons differentiate into bounded responsibilities; or pursue the route that reduces D toward commitments every evaluator already has (review §3.1)."
+  },
+  "history": [
+    {
+      "zh": "2026-10-09：应 Ren 要求补上位置索引的 Lean 定理；检索确认此前无此组合。复用 positive-ground-open-futures，不改其证明与范围。",
+      "en": "2026-10-09: added at Ren's request; a repository search found no earlier composition of this kind. Reuses positive-ground-open-futures without changing its proof or scope."
+    },
+    {
+      "zh": "2026-10-09：Ren 问及此前移除的 propext／Quot.sound 依赖是否未整合。那次移除只覆盖结构核心闭包，未迁移本伦理模块族；本模块改为直接计算形成事实，10 项定理全部空依赖。主张不变。",
+      "en": "2026-10-09: Ren asked whether the earlier propext/Quot.sound removal had been left unintegrated. That removal covered only the structural-core closure and did not migrate this ethics module family. This module now computes the formation fact directly, so all 10 theorems have empty dependency reports. The claim is unchanged."
+    },
+    {
+      "en": "9 October 2026: the review gained one paragraph at the end of §3.3 recording completion of route (B) by relational-renewal-classification. The rest is byte-identical; this record's claim, proof and receipt are unchanged. Hash updated after reading the change.",
+      "zh": "2026年10月9日：审查 §3.3 末尾新增一段，记录出路 (B) 由 relational-renewal-classification 完成。其余逐字节不变；本记录的主张、证明与回执不变。读过改动后更新哈希。"
+    },
+    {
+      "en": "9 October 2026: the review gained a §3.3 correction after Ren's follow-up on G0's object (generation and degeneration do not overlap); verified that this added paragraph and one rephrased sentence are the only change, and rehashed. This record's claim and proof are unchanged.",
+      "zh": "2026年10月9日：审查 §3.3 依 Ren 关于 G0 对象的追问（生成与退化不重叠）增补修正段；核实变动仅为该段及一句改写后更新哈希。本记录的主张与证明不变。"
+    },
+    {
+      "zh": "2026年10月9日：审查文件仅在 §6 末尾新增“独立审查后的更正”一段（generative-discrimination 会话，回应其独立审查）；本记录所依的 §3.3、§5 文字未变。已读后更新该引用哈希；主张、证明与其他来源不变。",
+      "en": "9 October 2026: the review file gained only a correction paragraph at the end of §6 (generative-discrimination session, after its independent review); the §3.3 and §5 text this record relies on is unchanged. Reference hash updated after reading; claim, proof and other sources unchanged."
+    }
+  ]
+}

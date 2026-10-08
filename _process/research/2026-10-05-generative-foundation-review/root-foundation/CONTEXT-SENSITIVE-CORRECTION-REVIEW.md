@@ -1,6 +1,6 @@
 # Review: what a consequence identifies for correction
 
-6 October 2026. Independent AI-authored source and argument review for **retained consequence → context-sensitive revision of a maintained relation**. This follows the [shared nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). No new controller, law, simulation, empirical observation or Lean compilation is supplied here. The review reads existing results and independently compares selected saved histories; it does not repeat their scientific runs.
+6 October 2026. Independent AI-authored source and argument review for **retained consequence → context-sensitive revision of a maintained relation**. This follows the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). No new controller, law, simulation, empirical observation or Lean compilation is supplied here. The review reads existing results and independently compares selected saved histories; it does not repeat their scientific runs.
 
 ## Finding and contribution
 
@@ -18,7 +18,7 @@ The [purpose-correction mathematics](YITI-REN-PURPOSE-MATH.md) already character
 
 Motor coupling, application refinement, completion-sensitive inquiry, acquired relay dependence and method formation already realize different acquired changes, as reconstructed in the [mechanism note](CONTEXT-SENSITIVE-CORRECTION-MECHANISM.md). A fixed encompassing law permits those changes. Their remaining supplied contacts and repertoires do not make them ontologically external. Conversely, their existence does not establish that every particular failure calls for changing the sensory model, the undertaking or the same component.
 
-[Conditional universality](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONDITIONAL-UNIVERSALITY.md) supplies constraints on all histories of specified law classes. It permits renewal without learning and learning without a universal favorable direction. Nothing in support accounting alone selects a corrective interpretation or an ethical scope.
+[Conditional universality](../../../../theories/becoming/chapters/CONDITIONAL-UNIVERSALITY.md) supplies constraints on all histories of specified law classes. It permits renewal without learning and learning without a universal favorable direction. Nothing in support accounting alone selects a corrective interpretation or an ethical scope.
 
 ## Independent exact relay comparison
 

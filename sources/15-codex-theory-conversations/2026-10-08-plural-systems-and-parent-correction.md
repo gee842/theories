@@ -14,7 +14,7 @@ Ren quotes the preceding assistant's scoped impossibility statement and then red
 
 The first paragraph is the assistant's earlier formulation quoted by Ren; the proposal concerning plural systems and the continuation instruction are Ren's words. The following investigation must examine both experimental plurality and parent/subsystem relationships. It must not treat the claim that humanity belongs to one globalized system as proof that all local observations are one statistical sample, or assume that separately named systems have independent failures.
 
-[Current development](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PLURAL-SYSTEMS-AND-CORRECTION.md) separates Ren's proposal from AI-authored constructions and conditional proofs.
+[Current development](../../theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md) separates Ren's proposal from AI-authored constructions and conditional proofs.
 
 ## Relational continuation, 8 October 2026
 

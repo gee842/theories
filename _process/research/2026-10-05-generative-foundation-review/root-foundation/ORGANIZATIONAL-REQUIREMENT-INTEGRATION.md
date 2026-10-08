@@ -2,7 +2,7 @@
 
 6 October 2026. AI-authored continuation of **organizational dependency →
 operative significance and regulation**, governed by [Ren's correction](../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md)
-and the [shared nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md).
+and the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md).
 The [mechanism reconstruction](ORGANIZATIONAL-REQUIREMENT-MECHANISM.md),
 [adversarial review](ORGANIZATIONAL-REQUIREMENT-REVIEW.md) and
 [identification/comparator note](ORGANIZATIONAL-REQUIREMENT-IDENTIFICATION.md)
@@ -73,7 +73,7 @@ Vacancy-sensitive copying responds to available precursor and the present
 template. It need not reconstruct the kind that disappeared. This defeats the
 specific inference from restored occupation to restored type composition;
 it does not make the previous composition a universal goal. The existing
-[material-selector composition](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATERIAL-SELECTOR-COMPOSITION.md)
+[material-selector composition](../../../../theories/becoming/chapters/MATERIAL-SELECTOR-COMPOSITION.md)
 already gives H constituents a new role in a mapping productive after regime
 reversal. Which relation needs maintaining can change as organization changes.
 
@@ -115,8 +115,8 @@ transitions, and no safety theorem about arbitrary API misuse is asserted.
 The result concerns this one-use lifecycle. It does not establish that learning
 requires an outside evaluator or that every stable law must itself be revised.
 A stable law can generate revisable organizations. Existing
-[selector revision](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SELECTOR-REVISION.md)
-and [updater formation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UPDATER-FORMATION.md)
+[selector revision](../../../../theories/becoming/chapters/SELECTOR-REVISION.md)
+and [updater formation](../../../../theories/becoming/chapters/UPDATER-FORMATION.md)
 already demonstrate conditional consequence-dependent renewal and replacement.
 Their staged support laws cannot be inserted into this native history unchanged.
 

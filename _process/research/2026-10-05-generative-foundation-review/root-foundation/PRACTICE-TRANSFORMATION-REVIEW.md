@@ -1,6 +1,6 @@
 # When a practice must change to continue its work
 
-6 October 2026. AI-authored constructive review under the [shared nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Named connection: **a practice changes its participants → those changes alter what the practice accomplishes → the continuing relation transforms its method**. This reviews an inherited textual case and existing formal interfaces, without a new controller or scientific run.
+6 October 2026. AI-authored constructive review under the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Named connection: **a practice changes its participants → those changes alter what the practice accomplishes → the continuing relation transforms its method**. This reviews an inherited textual case and existing formal interfaces, without a new controller or scientific run.
 
 ## 1. The constructive result
 

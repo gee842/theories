@@ -1,10 +1,10 @@
 # Integrating the actual stochastic prediction exposure
 
-6 October 2026. AI-authored integration within the continuing unified-foundation goal. **Accepted after the formal build, independent numerical/compiled comparison and final independent review.** [Canonical account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/STOCHASTIC-PREDICTION-COMPOSITION.md).
+6 October 2026. AI-authored integration within the continuing unified-foundation goal. **Accepted after the formal build, independent numerical/compiled comparison and final independent review.** [Canonical account](../../../../theories/becoming/chapters/STOCHASTIC-PREDICTION-COMPOSITION.md).
 
 ## Named obligation and why it matters
 
-The old [prediction-protocol proof](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PREDICTION-PROTOCOL.md) explicitly covers completed deterministic payable-write trials. Its broader numerical predictor includes outages, failed rent, absent hardware, reconstruction and skipped writing. The general probability-composition principles already exist in the repository. The missing contribution was their exact application to the actual callable exposure and its continuing outputs.
+The old [prediction-protocol proof](../../../../theories/becoming/chapters/PREDICTION-PROTOCOL.md) explicitly covers completed deterministic payable-write trials. Its broader numerical predictor includes outages, failed rent, absent hardware, reconstruction and skipped writing. The general probability-composition principles already exist in the repository. The missing contribution was their exact application to the actual callable exposure and its continuing outputs.
 
 This study advances completion requirement 3: **an actual exposure's joint successor, outcome and cost law supplies the next exposure's input without conditioning away unsuccessful attempts**. It introduces no new apparatus or favorable parameter regime. It keeps all eight pre-existing controller variants and tests the same original case families.
 

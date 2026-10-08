@@ -54,7 +54,7 @@ def main():
     expected=chain.render(d).splitlines();actual=chain.OUTPUT.read_text().splitlines()
     for k in rec['owned_rows']:
         assert [l for l in expected if l.startswith('| '+k+' |')]==[l for l in actual if l.startswith('| '+k+' |')]
-    chapter=ROOT/'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md'
+    chapter=ROOT/'theories/becoming/chapters/EXPLANATORY-NECESSITY.md'
     assert [int(n) for n in re.findall(r'^## (\d+)\.',chapter.read_text(),re.M)]==list(range(1,84))
     result={'passed':True,'scope':'Interpretive target/correspondence correction, not a new mathematical result.','new_theorems':0,'lean_rerun':False,'prior_33_theorems_and_180_audit_closure_unchanged':True,'prior_receipt':prior['receipt'],'prior_owned_text_reconstructed':reconstructed,'owned_rows':rec['owned_rows'],'prior_rows_and_unrelated_content_preserved':True,'owned_rendered_rows_match':True,'local_links_checked':len(links),'links':links,'global_review_claimed':False,'independent_review_claimed':False,'pending_shared_reviews':chain.changes(d),'sha256':{**rec['reviewed_owned_versions'],str(Path(__file__).relative_to(ROOT)):sha(Path(__file__).read_bytes()),str((HERE/'EXPLANATORY-NONDUAL-CORRECTION-EDITS.json').relative_to(ROOT)):sha((HERE/'EXPLANATORY-NONDUAL-CORRECTION-EDITS.json').read_bytes())}}
     OUT.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')

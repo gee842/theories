@@ -20,7 +20,7 @@ The [recursive assessment, §§10–14](RECURSIVE-WARRANT-INTEGRATION.md#10-can-
 
 The [capacity study](HUIGEN-SELF-GROUND-AUDIT.md#67-capacity-for-ends-and-the-first-ethical-ground) tests whether making purposes possible establishes an unavoidable first good. The [explanatory-identity study](HUIGEN-SELF-GROUND-AUDIT.md#68-explanatory-identification-and-the-evidence-for-the-whole-root) tests comparative support for a naturalistic identification. The [actual-activity study](HUIGEN-SELF-GROUND-AUDIT.md#70-actual-shared-activity-and-the-warrant-for-its-goodness) retains actual shared expression and understanding while testing whether their organization settles their ethical quality. A fresh invocation of purpose, actuality, cooperation or explanatory integration would repeat those routes.
 
-The [constitutive-answer study](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#a-constitutive-answer-to-the-authority-question) also already distinguishes warranting an option-specific reason from demanding a second authorization after it is warranted. Thus the present attempt cannot claim a new solution simply by saying that reasons operate within the same reality as action.
+The [constitutive-answer study](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#a-constitutive-answer-to-the-authority-question) also already distinguishes warranting an option-specific reason from demanding a second authorization after it is warranted. Thus the present attempt cannot claim a new solution simply by saying that reasons operate within the same reality as action.
 
 The narrower question tested here is whether **a whole, non-arbitrary assessment of formed intelligence's activity must itself favor the further generative realization it adequately describes**. This assesses a proposed completing inference. It is not presented as a discovery that earlier notes overlooked all aspects of it.
 
@@ -65,7 +65,7 @@ Wanting a future establishes neither the ethical worth of that future nor a duty
 
 ### 3.3 The affirmative reconstruction behind the axiom
 
-Begin with activity forming and transforming the conditions of further activity, as required by the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Relatively enduring capacities for sensing, memory, evaluation and response differentiate within that activity. Particular intelligences have situated histories, access and control; their formation neither makes them isolated origins nor gives them access to every consequence.
+Begin with activity forming and transforming the conditions of further activity, as required by the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Relatively enduring capacities for sensing, memory, evaluation and response differentiate within that activity. Particular intelligences have situated histories, access and control; their formation neither makes them isolated origins nor gives them access to every consequence.
 
 The argument can then be stated without selecting an ethical case in advance:
 

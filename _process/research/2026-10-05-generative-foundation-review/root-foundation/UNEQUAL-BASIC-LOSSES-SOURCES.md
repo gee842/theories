@@ -28,7 +28,7 @@ Our mathematical completion family may yield opposite rankings for a crossing pr
 
 ## Internal results and scope
 
-- [Practical judgment](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md) supplies G0/J, permission, responsibility, finite procedure and residual claims.
+- [Practical judgment](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md) supplies G0/J, permission, responsibility, finite procedure and residual claims.
 - [BC1](BASIC-CONFLICT-INTEGRATION.md) and [BC2](BASIC-LOSS-SEVERITY-INTEGRATION.md) supply separately defended, scoped comparisons. Their labels and historical receipts are preserved.
 - [Loss comparison](GENERATIVE-LOSS-COMPARISON-INTEGRATION.md) already transports supported judgments through matched reductions; this study does not recount those theorems.
 - [System individuation](SYSTEM-INDIVIDUATION-INTEGRATION.md) distinguishes warranted boundaries, joint variation and actual constitution; [generative identity](HUIGEN-GENERATIVE-IDENTITY.md) already distinguishes real plural continuation from copied descriptions. The new formal record deduplication does not establish a universal criterion of new life.

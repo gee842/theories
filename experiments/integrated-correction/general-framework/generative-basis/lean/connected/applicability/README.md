@@ -1,6 +1,6 @@
 # Completion and applicability in the connected model
 
-[GenerativeApplicabilityModel.lean](../../GenerativeApplicabilityModel.lean) connects the unchanged successor, the root trace/outcome semantics and the existing proof-level claim ledger. [The canonical account](../../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONNECTED-GENERATIVE-MODEL.md#completion-evidence-what-the-current-learner-cannot-revise) explains the result and its remaining derivation requirements.
+[GenerativeApplicabilityModel.lean](../../GenerativeApplicabilityModel.lean) connects the unchanged successor, the root trace/outcome semantics and the existing proof-level claim ledger. [The canonical account](../../../../../../../theories/becoming/chapters/CONNECTED-GENERATIVE-MODEL.md#completion-evidence-what-the-current-learner-cannot-revise) explains the result and its remaining derivation requirements.
 
 The new mechanism proves that route and native influence are invariant in the existing successor, so its internal help assessment cannot change through any admitted finite history. Every actual reached, admitted assessment still selects help and pays one unit. Current commands, permission and execution may change. A process preserving every old transition retains this limitation.
 

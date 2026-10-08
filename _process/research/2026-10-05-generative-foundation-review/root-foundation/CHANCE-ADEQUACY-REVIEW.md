@@ -1,10 +1,10 @@
 # Independent review: opportunity adequacy and taking over support
 
-8 October 2026. AI-authored review under G0/J and the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). The completed [CP study](CHANCE-GROUNDING-INTEGRATION.md) supplies an additional initial-opportunity candidate, not adequate unequal shares. This continuation asks whether a concrete, justified support undertaking can constrain the first opportunity arrangement under a new common operator.
+8 October 2026. AI-authored review under G0/J and the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). The completed [CP study](CHANCE-GROUNDING-INTEGRATION.md) supplies an additional initial-opportunity candidate, not adequate unequal shares. This continuation asks whether a concrete, justified support undertaking can constrain the first opportunity arrangement under a new common operator.
 
 ## 1. What could genuinely advance
 
-[J3](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md) already gives bounded duties of fulfillment, repair and transition after justified undertakings or accountable changes of dependence. [Crossed claims](CROSSED-CLAIMS-INTEGRATION.md) already preserves supplied floors through a new joint route; [chance revision](CHANCE-REVISION-INTEGRATION.md) already protects a warranted settlement at its scope. None should be presented as newly discovered.
+[J3](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md) already gives bounded duties of fulfillment, repair and transition after justified undertakings or accountable changes of dependence. [Crossed claims](CROSSED-CLAIMS-INTEGRATION.md) already preserves supplied floors through a new joint route; [chance revision](CHANCE-REVISION-INTEGRATION.md) already protects a warranted settlement at its scope. None should be presented as newly discovered.
 
 The proposed new join is **specific protected support content → what a replacement undertaking must actually continue → a necessary constraint on its initial chance arrangement**. That can make a constraint substantive without assigning a universal severity multiplier. It remains an application of existing responsibility commitments with an additional correspondence burden, not an original history-free solution of CP.
 

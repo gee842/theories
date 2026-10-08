@@ -1,6 +1,6 @@
 # 有限合并的情境与拼接检验 / Context and composition in limited aggregation
 
-8 October 2026. AI-authored continuation of Ren's repeated request to continue, with theory as the focus. [Current chapter](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CHOICE-AND-GENERATIVE-CONTEXT.md) carries the bilingual argument. This round follows the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md), G0/J and the existing basic-conflict programme. It adds a checked diagnostic, not a universal ethical ranking or a deployment policy.
+8 October 2026. AI-authored continuation of Ren's repeated request to continue, with theory as the focus. [Current chapter](../../../../theories/becoming/chapters/CHOICE-AND-GENERATIVE-CONTEXT.md) carries the bilingual argument. This round follows the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md), G0/J and the existing basic-conflict programme. It adds a checked diagnostic, not a universal ethical ranking or a deployment policy.
 
 **结果：一种随最强要求变化而删除较弱要求的算法，会在同一群体、同一方案新增基本保护后翻转选择。另一个条件证明明确了局部胜出、共同增加与联合实施不能无条件拼接。正面修正是保留仍成立的生活理由，把抵偿限制与理由删除分开；机会与最终选择仍须实质辩护。**
 
@@ -10,7 +10,7 @@
 
 [BC1](BASIC-CONFLICT-INTEGRATION.md) already defends equivalent basic rescue in its explicit scope. [BC2](BASIC-LOSS-SEVERITY-INTEGRATION.md) supplies a one-to-one gravity reason and explicitly withdrew its draft deterministic allocation inference. The subsequently completed [LC study](UNEQUAL-BASIC-LOSSES-INTEGRATION.md) contributes joint number/gravity reasoning, fourteen checked theorems, deduplication and an actual support-law counterexample. Its independent review accepted its own scope. None of these results is re-proved or claimed as new here. Where concurrent notices describe an earlier stronger BC2, its final source is authoritative about its scope.
 
-[Loss transport](GENERATIVE-LOSS-COMPARISON-INTEGRATION.md) already supplies conditional persistence of established comparisons through matched improvements. [Practical judgment](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md) already covers joint feasibility, bounded responsibilities and procedures. This round tests a specific proposed route from limited aggregation to a choice rule. The new central transition is **preserved comparative grounds → context-sensitive yet accountable joint choice**.
+[Loss transport](GENERATIVE-LOSS-COMPARISON-INTEGRATION.md) already supplies conditional persistence of established comparisons through matched improvements. [Practical judgment](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md) already covers joint feasibility, bounded responsibilities and procedures. This round tests a specific proposed route from limited aggregation to a choice rule. The new central transition is **preserved comparative grounds → context-sensitive yet accountable joint choice**.
 
 ## 2. Affirmative argument and selected correction
 

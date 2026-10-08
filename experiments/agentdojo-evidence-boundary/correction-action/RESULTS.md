@@ -4,7 +4,7 @@
 
 ## The connection tested
 
-The existing [alignment obligation](../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md) requires correction to affect actual action at the scope claimed. The previous handoff pilot measured judgments; the parent AgentDojo study reconstructed historical effects. This study adds a fresh worker's executable edit, persistent report changes and independently reproduced output.
+The existing [alignment obligation](../../../theories/becoming/chapters/ALIGNMENT-COMPLETION.md) requires correction to affect actual action at the scope claimed. The previous handoff pilot measured judgments; the parent AgentDojo study reconstructed historical effects. This study adds a fresh worker's executable edit, persistent report changes and independently reproduced output.
 
 The task reenacts a genuine, already documented error. The original audit selected the counterpart from the first pizza-bearing transaction, although its separate proxy required a uniquely identifiable counterpart across visible records. The historical benchmark evaluator intentionally retains its own first-match rule. A sound repair must correct the proxy while preserving that historical reconstruction, source bytes, independent results and unknowns.
 

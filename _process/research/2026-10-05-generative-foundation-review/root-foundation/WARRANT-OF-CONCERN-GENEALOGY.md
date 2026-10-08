@@ -1,6 +1,6 @@
 # Actual undergoing and the warrant of concern: inherited results and the next claim
 
-6 October 2026. AI-authored genealogy under the [shared nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Named connection: **actual adverse undergoing and an eligible transformation → a prospective reason for concern and response**. This repository-first review adds no primary evidence, experiment or theorem. It identifies the exact positive proposal that remains to be vindicated more strongly.
+6 October 2026. AI-authored genealogy under the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Named connection: **actual adverse undergoing and an eligible transformation → a prospective reason for concern and response**. This repository-first review adds no primary evidence, experiment or theorem. It identifies the exact positive proposal that remains to be vindicated more strongly.
 
 ## 1. The strongest existing formulation
 

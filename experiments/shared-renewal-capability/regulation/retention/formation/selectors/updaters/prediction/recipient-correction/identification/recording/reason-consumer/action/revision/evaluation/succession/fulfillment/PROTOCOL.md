@@ -3,10 +3,10 @@
 6 October 2026. AI-authored prospective protocol, written and hashed before any
 implementation or run of this continuation. It is part of Ren's request to aim
 for a complete alignment solution. It addresses one open item of the
-[alignment completion contract](../../../../../../../../../../../../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md):
+[alignment completion contract](../../../../../../../../../../../../../../../../../theories/becoming/chapters/ALIGNMENT-COMPLETION.md):
 "Fulfillment-sensitive withdrawal in the acquired evaluator remains
 unimplemented." The obligations come from the
-[evaluative application account](../../../../../../../../../../../../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md),
+[evaluative application account](../../../../../../../../../../../../../../../../../theories/becoming/chapters/EVALUATIVE-APPLICATION.md),
 which requires the following:
 
 - an actual, accessible, episode-bound record;

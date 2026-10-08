@@ -2,7 +2,7 @@
 
 This additive study strengthens the existing completed-block interface with an explicit progress contract. The source definitions, report decoder, controller and resource laws remain supplied. It does not change any inherited transition law.
 
-**Status:** accepted after a combined fresh build and separate internal AI review. The build passes 34 new theorem audits (13 general, eight paid examples, 13 predictor), including eight with no axiom dependencies, and 244 inherited audits across 15 source modules. Use the [canonical account](../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PROTOCOL-COMPLETION.md) for the accepted scope.
+**Status:** accepted after a combined fresh build and separate internal AI review. The build passes 34 new theorem audits (13 general, eight paid examples, 13 predictor), including eight with no axiom dependencies, and 244 inherited audits across 15 source modules. Use the [canonical account](../../../../../../theories/becoming/chapters/PROTOCOL-COMPLETION.md) for the accepted scope.
 
 ## Source roles
 

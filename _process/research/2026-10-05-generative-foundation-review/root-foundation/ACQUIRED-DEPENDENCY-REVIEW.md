@@ -1,6 +1,6 @@
 # Acquired dependency: distinguish its use from its necessity
 
-6 October 2026. AI-authored review under the [shared method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). This reads the [accepted material characterization](CONTINUING-DEPENDENCY-MATH.md), [its independent review](CONTINUING-DEPENDENCY-REVIEW.md), the unchanged native law and the [existing relevance criterion](../../2026-10-05-generative-health/succession/DEPENDENCY-AND-RELEVANCE.md). Its opening hand argument and discriminator preceded execution; the later acceptance checkpoint reports independent reconstruction of the resulting finite study. No new empirical or proof-build result is claimed. The reviewer contributed to the design and is not a blind reviewer of that design.
+6 October 2026. AI-authored review under the [shared method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). This reads the [accepted material characterization](CONTINUING-DEPENDENCY-MATH.md), [its independent review](CONTINUING-DEPENDENCY-REVIEW.md), the unchanged native law and the [existing relevance criterion](../../2026-10-05-generative-health/succession/DEPENDENCY-AND-RELEVANCE.md). Its opening hand argument and discriminator preceded execution; the later acceptance checkpoint reports independent reconstruction of the resulting finite study. No new empirical or proof-build result is claimed. The reviewer contributed to the design and is not a blind reviewer of that design.
 
 ## A common adequate policy already exists for the native task
 

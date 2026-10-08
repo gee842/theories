@@ -13,7 +13,7 @@ from urllib.parse import unquote
 ROOT = Path(__file__).resolve().parents[4]
 HERE = Path(__file__).resolve().parent
 FORMAL = ROOT / "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism"
-RECORD = ROOT / "theories/shengsheng-buxi-generative-existence/results/records/learned-procedure-transmission.json"
+RECORD = ROOT / "theories/becoming/results/records/learned-procedure-transmission.json"
 
 
 def sha(path):

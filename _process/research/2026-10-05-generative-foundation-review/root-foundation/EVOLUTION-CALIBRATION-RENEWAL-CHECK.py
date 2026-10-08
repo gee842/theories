@@ -105,7 +105,7 @@ def main():
     for name, fingerprint in edits["chain"]["reviewed_sources"].items():
         assert digest(ROOT / name) == fingerprint
         assert data["reviewed_sources"][name] == fingerprint
-    chapter = ROOT / "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md"
+    chapter = ROOT / "theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md"
     assert len(re.findall(r"^\| \*\*[1-6] ", chapter.read_text(), re.M)) == 6
     result = {
         "checked_at_utc": datetime.now(timezone.utc).isoformat(),

@@ -193,7 +193,7 @@ This advances from correcting actions under a fixed concern to correcting some r
 Read for this continuation, without modification:
 
 - `/Users/ren/Documents/Codex/2026-10-05/fo/work/concern-theory/THEORY.md`, including the explicit limitation that the prior scalar critic revises efficacy rather than the feature repertoire or moral scope.
-- `/Users/ren/theories/theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md`, especially N1–N4, the distinction between standing and usefulness, relevant-structure-preserving consistency, consent, and revision of protected domains.
-- `/Users/ren/theories/theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMATION.md`, especially strategic attacks on future corrective capacity and the separate grounds of standing, influence, and legitimacy.
+- `/Users/ren/theories/theories/becoming/chapters/ETHICAL-FOUNDATION.md`, especially N1–N4, the distinction between standing and usefulness, relevant-structure-preserving consistency, consent, and revision of protected domains.
+- `/Users/ren/theories/theories/becoming/chapters/FORMATION.md`, especially strategic attacks on future corrective capacity and the separate grounds of standing, influence, and legitimacy.
 
 The present proposal extends their conjunction. It neither replaces their ethical premises with a graph nor treats strategic resilience as a moral warrant. The finite experiments should keep the conceptual theory, supplied normative assumptions, derived graph properties, constructed outcomes, and empirical evidence visibly separate.

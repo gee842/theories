@@ -1,6 +1,6 @@
 # Cue acquisition, beneficiary binding and actual food provision
 
-AI-authored methods audit, 6 October 2026. This supports the named connection **acquired evidence → recipient-specific interpretation → effective, costly delivery** in [generative grounding](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md). It audits an existing experiment; it does not run a new animal experiment or derive evaluative concern from observed helping. The companion [candidate search](REASON-ACTION-EMPIRICAL-CANDIDATES.md) remains unchanged.
+AI-authored methods audit, 6 October 2026. This supports the named connection **acquired evidence → recipient-specific interpretation → effective, costly delivery** in [generative grounding](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md). It audits an existing experiment; it does not run a new animal experiment or derive evaluative concern from observed helping. The companion [candidate search](REASON-ACTION-EMPIRICAL-CANDIDATES.md) remains unchanged.
 
 **Decision:** Gerber, Schweinfurth and Taborsky's experiment 4 is suitable for a paired reanalysis of a remote cue's effect on local provisioning. It cannot identify correct binding of cue source to beneficiary. Its simultaneous cue and action also cannot establish retained evidence used later. Experiment 3a supplies the relevant temporal separation, under a different treatment comparison. These distinctions should govern what the reanalysis claims before numerical results are inspected.
 

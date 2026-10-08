@@ -1,6 +1,6 @@
 # Prospective ground constitution: assessment before assent
 
-7 October 2026. AI-authored philosophical investigation under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). **Result: a temporal objection is answered and a self-authorization shortcut rejected; no new universally sufficient ethical ground is established.** The [universal-intelligence goal](../../../../sources/15-codex-theory-conversations/2026-10-07-universal-intelligence-session-goal.md) remains active. This note contains no new theorem, Lean proof or empirical result.
+7 October 2026. AI-authored philosophical investigation under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). **Result: a temporal objection is answered and a self-authorization shortcut rejected; no new universally sufficient ethical ground is established.** The [universal-intelligence goal](../../../../sources/15-codex-theory-conversations/2026-10-07-universal-intelligence-session-goal.md) remains active. This note contains no new theorem, Lean proof or empirical result.
 
 ## 1. The relationship under investigation
 

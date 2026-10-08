@@ -8,7 +8,7 @@
 
 | File | SHA-256 |
 |---|---|
-| [Canonical unified grounding](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md) | `86b669278b7f06cb951058e9575eeed2efe868dbc9af54e4f7b2fa24f6f40456` |
+| [Canonical unified grounding](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md) | `86b669278b7f06cb951058e9575eeed2efe868dbc9af54e4f7b2fa24f6f40456` |
 | [Argument](ASSISTANCE-JURISDICTION-ARGUMENT.md) | `f446762cab4831d3fc5d64cd5fcaf8de328ab3dcc6210a4e402c7182f868d3d0` |
 | [Counterreview](ASSISTANCE-JURISDICTION-COUNTERREVIEW.md) | `5d3b9f10b39280ee30cff250aa4aae5e361658d6d9974586e14f5020be5f138e` |
 | [Sources](ASSISTANCE-JURISDICTION-SOURCES.md) | `54eb016c8465ad90df49b58dcc77ef8b5f75766f808fae3b27e3bbce3b4b109c` |
@@ -33,6 +33,6 @@ Primary readings remain precisely attributed in the dossier: source investigator
 
 The [prior canonical snapshot](development/UNIFIED-ETHICAL-GROUNDING-BEFORE-ASSISTANCE-JURISDICTION.md) independently hashes to `35da4abc22302fd038efb09ed43a0d248b94904fbe8c48839f005d07f09f35e7`. Its [provenance](development/ASSISTANCE-JURISDICTION-BEFORE.json) preserves the original link base and identifies the [previous integrity receipt](ELECTIVE-CONCERN-CHECKS.json). That receipt and [previous integration review](ELECTIVE-CONCERN-INTEGRATION.md) are historical, not current certifications or new evidence.
 
-The six new shared-index paragraphs were read in [RESEARCH](../../../../RESEARCH.md), the [theory README](../../../../theories/shengsheng-buxi-generative-existence/README.md), the [study README](README.md), [GENERATIVE-GROUNDING](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md), [HUIGEN](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md) and [SOURCES](../../../../sources/SOURCES.md). They preserve the limited result and next boundary question. This does not recertify unrelated concurrent edits.
+The six new shared-index paragraphs were read in [RESEARCH](../../../../RESEARCH.md), the [theory README](../../../../theories/becoming/README.md), the [study README](README.md), [GENERATIVE-GROUNDING](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md), [HUIGEN](../../../../theories/becoming/chapters/HUIGEN.md) and [SOURCES](../../../../sources/SOURCES.md). They preserve the limited result and next boundary question. This does not recertify unrelated concurrent edits.
 
 The next connection is justification of choice boundaries and warranted reconsideration in the retained comparison. No new experiment, formal theorem, universal necessity result or external peer review is claimed. The parent's [focused integrity receipt](ASSISTANCE-JURISDICTION-CHECKS.json) is intentionally prospective until generated after this review freezes. Its hashes and local-reference checks concern preservation and navigation, not proof of the ethical candidate.

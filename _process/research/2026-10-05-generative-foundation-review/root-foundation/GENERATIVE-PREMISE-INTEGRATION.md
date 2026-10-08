@@ -1,6 +1,6 @@
 # 从生成的规范起点到情境理由
 
-2026年10月7日。接续 [Ren 对这一方向的批准](../../../../sources/15-codex-theory-conversations/2026-10-07-generative-premise-route-approved.md)。本轮沿明确的正面规范起点推进；不把起点尚有更强根据问题当作禁止推导的理由，也不将本轮结果称为无前提普遍伦理。工作依据是 [Ren 关于 generation 的原话](../../../../sources/15-codex-theory-conversations/2026-10-07-generation-axiom-and-future.md)、[生生与多个范围](../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md)及[一元关系方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)。
+2026年10月7日。接续 [Ren 对这一方向的批准](../../../../sources/15-codex-theory-conversations/2026-10-07-generative-premise-route-approved.md)。本轮沿明确的正面规范起点推进；不把起点尚有更强根据问题当作禁止推导的理由，也不将本轮结果称为无前提普遍伦理。工作依据是 [Ren 关于 generation 的原话](../../../../sources/15-codex-theory-conversations/2026-10-07-generation-axiom-and-future.md)、[生生与多个范围](../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md)及[一元关系方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)。
 
 ## 1. 这次实际推进什么
 

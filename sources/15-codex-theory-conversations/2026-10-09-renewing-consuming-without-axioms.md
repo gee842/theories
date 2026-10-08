@@ -24,7 +24,7 @@ Ren 引用审查答复中的两段：
 
 不需要公理的是区分本身，以及恶性生成被识别为消耗型这一结论。说“更新型形成具有正面意义”仍是 G0 的工作；本次没有把 G0 变成定理，也没有证明消耗总是更坏。（这两句已在 Ren 追问后修正，见下节；原文保留。）局部给定的水平、需要与更新速率，以及它们对真实过程的对应，属于表示和对应责任，不是公理。
 
-同日另一会话按 Ren 的另一指示完成了较窄的[规律类结果](../../theories/shengsheng-buxi-generative-existence/results/records/renewing-consuming-formation.md)。本次结果单独登记，二者的差别见[整合记录](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-RENEWAL-INTEGRATION.md)。
+同日另一会话按 Ren 的另一指示完成了较窄的[规律类结果](../../theories/becoming/results/records/renewing-consuming-formation.md)。本次结果单独登记，二者的差别见[整合记录](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-RENEWAL-INTEGRATION.md)。
 
 <a id="ren-follow-up"></a>
 ## Ren 追问

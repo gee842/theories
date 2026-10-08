@@ -1,6 +1,6 @@
 # 从生生方向辨明回应：四种情形的反审
 
-2026年10月7日，Asia/Bangkok。AI 内部分工反审，依据 [Ren 关于生生伦理方向的新回答](../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md)、[正面重构](SHENGSHENG-DIRECTION-RECONSTRUCTION.md)及[当前判准](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#shengsheng-as-the-positive-ethical-direction)。**最终结论：接受本轮四情形的有范围肯定重构及已检查的有限交接见证；未发现阻碍这项范围内整合的问题。** 本轮没有完成无假设普遍证明，也没有把实际依存直接写成道德义务。以下保留初审要求、实质竞争史及最终审查范围。
+2026年10月7日，Asia/Bangkok。AI 内部分工反审，依据 [Ren 关于生生伦理方向的新回答](../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md)、[正面重构](SHENGSHENG-DIRECTION-RECONSTRUCTION.md)及[当前判准](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#shengsheng-as-the-positive-ethical-direction)。**最终结论：接受本轮四情形的有范围肯定重构及已检查的有限交接见证；未发现阻碍这项范围内整合的问题。** 本轮没有完成无假设普遍证明，也没有把实际依存直接写成道德义务。以下保留初审要求、实质竞争史及最终审查范围。
 
 **研究处境已改变。** Ren 现在明确把整体不断创造更多生、所形成的可能性与多样性、复杂组织继续形成的能力指认为正面方向。不能仍以“尚缺一个不知道是什么的善”拒绝推进，也不能把判准改回“更多已经独立判善的东西”。本轮应认真检验这个判准能否说明具体回应的变化；它的普遍必然性没有因保存原话便自动成立。
 
@@ -71,7 +71,7 @@
 
 ## 7. 最终对应、主文及整合结论
 
-已完整审读最终[数学对应](LIANGZHI-PRACTICAL-MATH.md)、[实验 README](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/README.md)、语义契约补充、[根论证](LIANGZHI-PRACTICAL-ARGUMENT.md)、[整合](LIANGZHI-PRACTICAL-INTEGRATION.md)，以及[现行主文](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md)本轮新增的第7—8节。此前各轮主文已按其当时范围审查，本轮不另行宣称重新检验全部继承理论。根论证新列的继续能力再形成研究，是其他会话的已注明成果；本反审没有独立审查其证明源码，也未把它计作本轮新增证明。
+已完整审读最终[数学对应](LIANGZHI-PRACTICAL-MATH.md)、[实验 README](../../../../experiments/shared-renewal-capability/regulation/retention/formation/evolution/handoff/README.md)、语义契约补充、[根论证](LIANGZHI-PRACTICAL-ARGUMENT.md)、[整合](LIANGZHI-PRACTICAL-INTEGRATION.md)，以及[现行主文](../../../../theories/becoming/chapters/LIANGZHI-EVOLUTION.md)本轮新增的第7—8节。此前各轮主文已按其当时范围审查，本轮不另行宣称重新检验全部继承理论。根论证新列的继续能力再形成研究，是其他会话的已注明成果；本反审没有独立审查其证明源码，也未把它计作本轮新增证明。
 
 新能力参与新目的形成的例子，说明目的可以在同一活动中随实际可行关系形成，不必是先验私有目标。正文将它标为构造案例，未声称幼儿研究已经观察这个完整过程。原目的和新目的都接受更广的生生方向评价，亦未用“最新”或“自己选择”自动赋予权威。
 

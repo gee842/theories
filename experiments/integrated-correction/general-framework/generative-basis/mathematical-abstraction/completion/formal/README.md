@@ -1,6 +1,6 @@
 # Checked completion and admissibility proofs
 
-7 October 2026. Lean 4.29.1 / `Std` formalization of the current [completion argument](../../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-MATHEMATICAL-ADMISSIBILITY.md), following [Ren’s proof requirement](../../../../../../../sources/15-codex-theory-conversations/2026-10-07-lean-proof-requirement.md).
+7 October 2026. Lean 4.29.1 / `Std` formalization of the current [completion argument](../../../../../../../theories/becoming/chapters/GENERATIVE-MATHEMATICAL-ADMISSIBILITY.md), following [Ren’s proof requirement](../../../../../../../sources/15-codex-theory-conversations/2026-10-07-lean-proof-requirement.md).
 
 The [integration and scope ledger](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COMPLETION-WARRANT-LEAN-INTEGRATION.md) maps the earlier A/W results to these generalized proofs. This package includes arbitrary ideal families and infinite traces, not only finite test instances. It adds no empirical experiment or claim of ethical/metaphysical necessity.
 

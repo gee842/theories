@@ -31,7 +31,7 @@ Requirements may differ by center, may be zero and need not exhaust the availabl
 
 This is a representation of **disjoint current provision**, not a claim that every enabling relationship must be exclusively localized. Shared metabolites, transferable support, sequential service and alternative arrangements can invalidate an attempted physical interpretation of that exclusivity. They must be represented or allowed by the application. A selection of many historical births does not by itself supply a current provision certificate.
 
-Following the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md), the centers are differentiated relationships within the same unfolding. Their labels and boundaries do not confer independent fundamental status. The code does not construct those biological boundaries; the application must identify why these are currently distinct positions of provision and why assigning the same physical occurrence twice would misdescribe them.
+Following the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md), the centers are differentiated relationships within the same unfolding. Their labels and boundaries do not confer independent fundamental status. The code does not construct those biological boundaries; the application must identify why these are currently distinct positions of provision and why assigning the same physical occurrence twice would misdescribe them.
 
 ## 3. The actual history and the necessity inference
 

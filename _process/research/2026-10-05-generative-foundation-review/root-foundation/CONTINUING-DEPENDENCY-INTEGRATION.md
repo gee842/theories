@@ -2,7 +2,7 @@
 
 6 October 2026. AI-authored continuation under
 [Ren's core/tree correction](../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md)
-and the [shared method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md).
+and the [shared method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md).
 The previous goal round made concrete progress through
 [acquired completion controlling further inquiry](INQUIRY-COMPLETION-INTEGRATION.md).
 The full foundation remains active. This round investigates the next relation:
@@ -68,7 +68,7 @@ preservation duty.
 
 This gives core and tree reciprocal work. The branch identifies a consequential
 difference that an adequate model of this continuation must preserve. The
-existing general core and [continuation-based identity](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/IMMANENT-MATHEMATICAL-IDENTITY.md)
+existing general core and [continuation-based identity](../../../../theories/becoming/chapters/IMMANENT-MATHEMATICAL-IDENTITY.md)
 already permit that difference; the result does not invent it or repair a
 purported primitive scalar ontology. It challenges a specific coarser summary
 for this task. Other scalar descriptions can remain sufficient for other claims.

@@ -12,7 +12,7 @@ from urllib.parse import unquote
 sys.dont_write_bytecode = True
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[3]
-THEORY = ROOT / "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md"
+THEORY = ROOT / "theories/becoming/chapters/ALIGNMENT-DIRECTION.md"
 PROOF = ROOT / "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity"
 SOURCE = ROOT / "sources/15-codex-theory-conversations/2026-10-08-alignment-direction-completion.md"
 DOCS = [THEORY, SOURCE, HERE / "ALIGNMENT-DIRECTION-INTEGRATION.md"]

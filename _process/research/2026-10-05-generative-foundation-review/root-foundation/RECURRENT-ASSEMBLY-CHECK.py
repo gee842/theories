@@ -14,7 +14,7 @@ ROOT = next(p for p in HERE.parents if (p / 'RESEARCH.md').exists())
 PACKAGE = ROOT / 'experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics'
 VERIFIED = PACKAGE / 'recurrent-assembly-verification'
 STUDY = HERE / 'GROWN-FRAGMENTATION-INTEGRATION.md'
-RECORDS = ROOT / 'theories/shengsheng-buxi-generative-existence/results/records'
+RECORDS = ROOT / 'theories/becoming/results/records'
 
 
 def sha(path):
@@ -45,7 +45,7 @@ def main():
         path = ROOT / edit['path']
         assert edit['owned_passage'] in path.read_text(), path
         check_links(path, edit['owned_passage'])
-    chapter = ROOT / 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md'
+    chapter = ROOT / 'theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md'
     assert [line for line in chapter.read_text().splitlines() if line.startswith('| **')] == edits['six_requirement_rows']
     assert len(edits['six_requirement_rows']) == 6
     proof = json.loads((VERIFIED / 'verification.json').read_text())

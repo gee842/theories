@@ -82,7 +82,7 @@ for path in sorted(documents):
         continue
     # Historical genealogy and frozen source internals have their own provenance.
     text = path.read_text()
-    if path == REPO / "theories/shengsheng-buxi-generative-existence/README.md":
+    if path == REPO / "theories/becoming/README.md":
         text = text.split("## Historical formulation", 1)[0]
     text = re.sub(r"```.*?```", "", text, flags=re.S)
     for href in re.findall(r"\]\(([^)]+)\)", text):

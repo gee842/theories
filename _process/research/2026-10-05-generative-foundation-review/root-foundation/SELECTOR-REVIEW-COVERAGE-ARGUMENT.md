@@ -1,6 +1,6 @@
 # 选择规则怎样保持判断根据 / Selection and the grounds of review
 
-2026-10-08，Asia/Bangkok。AI 撰写的肯定论证，推进 Ren 已授权的[生成性对齐方向](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md)，并回应本轮“请继续，直到你 hit a wall”。遵循[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)与显式 G0/J 路线。本文不是 Ren 原话，不以规范起点的无公理证明作为门槛；构造情景不声称新经验观察。
+2026-10-08，Asia/Bangkok。AI 撰写的肯定论证，推进 Ren 已授权的[生成性对齐方向](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md)，并回应本轮“请继续，直到你 hit a wall”。遵循[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)与显式 G0/J 路线。本文不是 Ren 原话，不以规范起点的无公理证明作为门槛；构造情景不声称新经验观察。
 
 **新增连接：智能或机构改变筛选评价的规则时，可以有根据地精简、替换和关闭，却不能把反对意见失去进入判断的途径，当作反对根据已经消失。充分与否取决于所承担的具体保证；对当前方案充分的精简，不自动对新增方案、改变后的生活或更强保证充分。**
 
@@ -10,10 +10,10 @@
 
 | 已完成工作 | 本轮直接采用 | 本轮不重复声称 |
 |---|---|---|
-| [实践判断](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md) | G0、J1–J4、真实对应 E、有限责任与正当结束。 | 不重新建立混合比较、责任或方向论证。 |
+| [实践判断](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md) | G0、J1–J4、真实对应 E、有限责任与正当结束。 | 不重新建立混合比较、责任或方向论证。 |
 | [共同求知与地位](SHARED-INQUIRY-AND-STANDING.md) | 调查、接受和实施的不同门槛；有根据的准入、暂存、排除；有效批评与有限关闭。 | 不把“要听取异议”当作新的整体认识论。 |
 | [模型修订](MODEL-REVISION-INTEGRATION.md) | 失配、构造解释、新检验、共同遗漏及有范围的返回使用。 | 不再用一个固定语法内的校正器宣称完整的新分类取得。 |
-| [伦理学习](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md)与[关切扩展](CONCERN-EXTENSION-INTEGRATION.md) | 新实现、支承作用和进一步形成的具体内容；新认识与新生活的区别；内容扩展后的比较。 | 不再证明“更多理解可以改变排序”或以新标签增加价值。 |
+| [伦理学习](../../../../theories/becoming/chapters/ETHICAL-LEARNING.md)与[关切扩展](CONCERN-EXTENSION-INTEGRATION.md) | 新实现、支承作用和进一步形成的具体内容；新认识与新生活的区别；内容扩展后的比较。 | 不再证明“更多理解可以改变排序”或以新标签增加价值。 |
 | [评价扩展](EVALUATIVE-EXTENSION-INTEGRATION.md) | 所有有根据的应用均否定一项方案，不要求它们同意一个替代；共同比较与共同未败不同。 | 不把前轮量词区别重算为新发现。 |
 
 新问题是这些成果遇到**对自身认识条件的选择**：后续训练保留哪些评价者，机构保留哪些评审通路，压缩系统保留哪些描述，都会影响以后什么能对当前目标提出反对。如果变化只影响证明材料而实际生活仍未改善，如何阻止表面证书替代实际改善？反过来，如果确有忠实压缩，怎样不要求冻结旧目录和全部旧模型？本轮给出这两个方向相连的回答。

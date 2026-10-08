@@ -1,10 +1,10 @@
 # 一体之仁：共同形成解释与生成模型整合
 
-2026年10月6日。AI 撰写，回应 [Ren 的继续与完成要求](../../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md)，遵循[共同非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)。中心连接是 **承受、理解与回应在同一持续活动中的相互形成和修正，以及真实转变的非工具性根据**。本轮完成一份正面解释与一个形式表示接口；没有将这一完成改称无假设的普遍伦理证明。
+2026年10月6日。AI 撰写，回应 [Ren 的继续与完成要求](../../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md)，遵循[共同非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)。中心连接是 **承受、理解与回应在同一持续活动中的相互形成和修正，以及真实转变的非工具性根据**。本轮完成一份正面解释与一个形式表示接口；没有将这一完成改称无假设的普遍伦理证明。
 
 ## 1. 正面结果
 
-[当前主文](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#一体之仁的生成解释)把一体之仁表述为：实际承受及其可能转变能够进入体察，使这些差异改变理解、回应和回应自身的形成方式；关切的对象不限于其对当前回应者的用途。它从同一生成历程展开，解释具体分化，不以一个预先完成的中性 core 向外部伦理分支输送授权。
+[当前主文](../../../../theories/becoming/chapters/NONINSTRUMENTAL-CONCERN.md#一体之仁的生成解释)把一体之仁表述为：实际承受及其可能转变能够进入体察，使这些差异改变理解、回应和回应自身的形成方式；关切的对象不限于其对当前回应者的用途。它从同一生成历程展开，解释具体分化，不以一个预先完成的中性 core 向外部伦理分支输送授权。
 
 这一解释的新增整合内容是动态完整性：
 
@@ -54,7 +54,7 @@
 
 ## 5. 对总理论的整合与未完成处
 
-新当前论述位于原[非工具性关切主文](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md)顶部；原局部章节原文保留。王阳明比较、统一伦理根基、总理论第10节、生成根基推导图、F14、实验入口和研究索引已接入本轮结果。修改记录见[逐项编辑](YITI-REN-COFORMATION-EDITS.json)；[完整性核对](YITI-REN-COFORMATION-CHECKS.json)区分文件校验与科学验证。
+新当前论述位于原[非工具性关切主文](../../../../theories/becoming/chapters/NONINSTRUMENTAL-CONCERN.md)顶部；原局部章节原文保留。王阳明比较、统一伦理根基、总理论第10节、生成根基推导图、F14、实验入口和研究索引已接入本轮结果。修改记录见[逐项编辑](YITI-REN-COFORMATION-EDITS.json)；[完整性核对](YITI-REN-COFORMATION-CHECKS.json)区分文件校验与科学验证。
 
 **完成的是正面论述及所选形式接口，未完成的是无假设的普遍证成。** 真实体验怎样在具体生成关系中实现；体验与合宜转变的构成意义及全部回应位置范围；形成机制怎样取得并实际修订目标、权限与适用性；这些仍须正面解释。缺口位于共同生成的说明内部，未由本轮证明需要一个外在伦理领域，也未由“一体”这个词消除。
 
@@ -64,7 +64,7 @@
 
 ## 6. 整体构成、偏蔽与复通的继续
 
-2026年10月6日，接续 [Ren 的明确完成要求](../../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#要求完成整体构成偏蔽与复通的说明)。本节是后续研究，原第1—5节及其验证记录保持历史范围。[当前主文第11小节](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#11-仁感应理解与实践一体的实现偏蔽与复通)给出完整论述。AI 撰写，非 Ren 的原话；本轮没有新经验观察、代码或 Lean 构建。
+2026年10月6日，接续 [Ren 的明确完成要求](../../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#要求完成整体构成偏蔽与复通的说明)。本节是后续研究，原第1—5节及其验证记录保持历史范围。[当前主文第11小节](../../../../theories/becoming/chapters/NONINSTRUMENTAL-CONCERN.md#11-仁感应理解与实践一体的实现偏蔽与复通)给出完整论述。AI 撰写，非 Ren 的原话；本轮没有新经验观察、代码或 Lean 构建。
 
 ### 6.1 正面推进与推论
 
@@ -97,7 +97,7 @@ q(s)=q(t)\Longrightarrow\forall\ell\;[\Phi_s(\ell)\leftrightarrow\Phi_t(\ell)].
 
 ### 6.3 已有实际机制：后果可以改变准入安排
 
-[当前询问修订结果](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md)已经沿同一个四次接触后的实际状态形成修订接触、取得保留的后果并重写继续参数。旧固定律下的阻断定理仍然成立，但不能将其扩成新过程也无法修订。
+[当前询问修订结果](../../../../theories/becoming/chapters/INQUIRY-REVISION.md)已经沿同一个四次接触后的实际状态形成修订接触、取得保留的后果并重写继续参数。旧固定律下的阻断定理仍然成立，但不能将其扩成新过程也无法修订。
 
 已有 [InquiryRevision](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/inquiry-revision/InquiryRevision.lean)证明：合法 commit 保持次数、记录 n、联结符号、受影响存量及来源，改变继续参数并消耗指定的活动条件；在次数为四时将限制从六改为四。原守卫要求次数小于限制才能继续接触、次数等于限制才能关闭，故修订后进一步接触被禁用，关闭变为可用；在已验证且具备后续条件的具体历史中，再进入既有回应通道并完成回应。`commit_changes_only_access_and_spent_fuel` 与 `commit_replaces_enabled_inquiry_with_closure` 已有源码直接承担此关系；本轮只读核对，未新构建。
 

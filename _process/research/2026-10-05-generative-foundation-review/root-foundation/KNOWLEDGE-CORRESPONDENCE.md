@@ -1,6 +1,6 @@
 # Checked correspondence within the knowledge track
 
-8 October 2026. AI-authored proof correspondence and dependency audit. This is a component of the [knowledge account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/KNOWLEDGE.md), not a definition of knowledge or a substitute for its philosophical grounding. The role being tested is **available differences → warranted discrimination**, conditional on the declared meanings, domain and access relationships.
+8 October 2026. AI-authored proof correspondence and dependency audit. This is a component of the [knowledge account](../../../../theories/becoming/chapters/KNOWLEDGE.md), not a definition of knowledge or a substitute for its philosophical grounding. The role being tested is **available differences → warranted discrimination**, conditional on the declared meanings, domain and access relationships.
 
 ## Source and actual validation
 

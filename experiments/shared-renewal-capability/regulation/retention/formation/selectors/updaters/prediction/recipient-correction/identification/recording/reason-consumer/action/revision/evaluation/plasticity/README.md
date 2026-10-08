@@ -1,6 +1,6 @@
 # Paid formation and revision of an evaluative connection
 
-6 October 2026. AI-assisted research within [generative grounding](../../../../../../../../../../../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md). **Accepted at the declared finite numerical and formal scopes.** This is a conditional synthetic construction, not an empirical identification or an ethical justification.
+6 October 2026. AI-assisted research within [generative grounding](../../../../../../../../../../../../../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md). **Accepted at the declared finite numerical and formal scopes.** This is a conditional synthetic construction, not an empirical identification or an ethical justification.
 
 The study tests actual paired consequences → materially formed signed connection → its causal use in a recipient-directed choice. It begins with no conducting cross-channel link. The native evaluator, compatible sockets, calibrated meters, local binding chemistry, addressing, gain and finite control recipes remain supplied. The original recipient factual knowledge is preserved through training. Its two-unit paired operation and inherited ten-unit command trial are distinct modalities; their later assessment relation is an explicit transduction premise.
 

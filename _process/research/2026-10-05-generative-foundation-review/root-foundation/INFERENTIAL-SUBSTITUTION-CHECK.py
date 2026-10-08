@@ -13,10 +13,10 @@ ROOT = HERE.parents[3]
 sys.path.insert(0, str(ROOT))
 from tools.research import generative_chain as chain
 LEAN = ROOT / 'experiments/integrated-correction/general-framework/generative-basis/lean/deeper'
-THEORY = ROOT / 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md'
+THEORY = ROOT / 'theories/becoming/chapters/GENERATED-LOGIC.md'
 SOURCE = ROOT / 'sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md'
 STUDY = HERE / 'RECOGNITIONAL-BINDING-INTEGRATION.md'
-RECORD = ROOT / 'theories/shengsheng-buxi-generative-existence/results/records/binding-preserving-substitution.json'
+RECORD = ROOT / 'theories/becoming/results/records/binding-preserving-substitution.json'
 BEFORE = HERE / 'development/inferential-substitution-before'
 
 def sha(raw):

@@ -15,7 +15,7 @@ Ren locates the proposed normative structure within cognitive and informational 
 
 The subsequent reconstruction distinguishes aspects of one process for investigation; those distinctions and examples are the assistant's elaboration. Ren has not supplied a measured neural mechanism, a claim that normative standing exists only when represented, or a proof that any successful meme is good. The prior conditional result and the stronger unfinished goal retain their separate scopes.
 
-[Current reconstruction](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#8-认知与信息中的规范结构--normative-structure-in-cognition-and-information).
+[Current reconstruction](../../theories/becoming/chapters/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#8-认知与信息中的规范结构--normative-structure-in-cognition-and-information).
 
 
 ## Follow-up authorization
@@ -116,7 +116,7 @@ In discussing the distinction between more possibilities, greater control and be
 
 > this one is critical for ai alignment, we are pursuing exponential growth
 
-This identifies the distinction as critical for AI alignment and states a growth ambition. The message does not specify a measured quantity, rate or duration, or claim that capability, control and living quality already grow together. The connection to goal formation and selection in [the alignment account](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#pursued-exponential-growth-and-the-direction-of-alignment) is the assistant's conceptual elaboration, using existing results rather than reporting a new growth theorem or empirical finding.
+This identifies the distinction as critical for AI alignment and states a growth ambition. The message does not specify a measured quantity, rate or duration, or claim that capability, control and living quality already grow together. The connection to goal formation and selection in [the alignment account](../../theories/becoming/chapters/ALIGNMENT-AND-GOVERNANCE.md#pursued-exponential-growth-and-the-direction-of-alignment) is the assistant's conceptual elaboration, using existing results rather than reporting a new growth theorem or empirical finding.
 
 ## Formalization toward a corrigibility frontier contribution
 

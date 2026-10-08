@@ -2,7 +2,7 @@
 
 6 October 2026. AI-authored conceptual reconstruction and scope review responding to Ren's objection to the inference from a ranking reversal to a limit on universal evaluation. This adds no experiment, rerun, controller, theorem or physical realization. The existing results keep their declared scopes.
 
-The governing method is the [project-wide nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). This review credits the [existing nondual core](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md#10-nondual-core-and-derived-positions) and [acquired-perspective reconstruction](../../2026-10-05-generative-foundation-review/root-foundation/NONDUAL-TREE-MECHANISM.md); neither is being introduced here. The named connection is **organizational dependency → operational significance and regulation**, approached backward from this branch's supplied target, search and support premises.
+The governing method is the [project-wide nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). This review credits the [existing nondual core](../../../../theories/becoming/chapters/DEEPER-GENERATIVE-ROOT.md#10-nondual-core-and-derived-positions) and [acquired-perspective reconstruction](../../2026-10-05-generative-foundation-review/root-foundation/NONDUAL-TREE-MECHANISM.md); neither is being introduced here. The named connection is **organizational dependency → operational significance and regulation**, approached backward from this branch's supplied target, search and support premises.
 
 ## The corrected inference
 

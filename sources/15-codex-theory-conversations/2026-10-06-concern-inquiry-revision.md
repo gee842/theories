@@ -10,4 +10,4 @@ Ren subsequently instructed:
 
 > continue
 
-The work is carried out under Ren’s [project-wide nondual method directive](2026-10-06-project-wide-nondual-method.md). Its substantive implementation and scoped verification are recorded in [inquiry revision](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md).
+The work is carried out under Ren’s [project-wide nondual method directive](2026-10-06-project-wide-nondual-method.md). Its substantive implementation and scoped verification are recorded in [inquiry revision](../../theories/becoming/chapters/INQUIRY-REVISION.md).

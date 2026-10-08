@@ -2,7 +2,7 @@
 
 6 October 2026. AI-authored continuation of the
 [inquiry-warrant integration](CONSEQUENCE-INQUIRY-WARRANT-INTEGRATION.md)
-under [Ren's request to aim for a complete alignment solution](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md).
+under [Ren's request to aim for a complete alignment solution](../../../../theories/becoming/chapters/ALIGNMENT-COMPLETION.md).
 Named connection: **a choice's actual reach → the continuations it must count
 → what the structure of the choice settles, and what it leaves to evaluation
 and governance**. It bears on alignment requirements 2 (ground and revise

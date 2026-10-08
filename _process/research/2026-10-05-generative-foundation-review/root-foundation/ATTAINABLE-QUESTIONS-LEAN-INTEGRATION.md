@@ -1,6 +1,6 @@
 # Attainable questions integrated into constructive Lean
 
-6 October 2026. AI-assisted formal continuation under Ren's no-assumptions requirement and the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). This uses the existing inquiry study and source apparatus, following the [attainable-question argument](INQUIRY-CRITERION-MATH.md). The named connection is **inquiry changes the conditions of further inquiry → constraints on which distinctions can be acquired together → the scope of an operative inquiry criterion**.
+6 October 2026. AI-assisted formal continuation under Ren's no-assumptions requirement and the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). This uses the existing inquiry study and source apparatus, following the [attainable-question argument](INQUIRY-CRITERION-MATH.md). The named connection is **inquiry changes the conditions of further inquiry → constraints on which distinctions can be acquired together → the scope of an operative inquiry criterion**.
 
 The result integrates an existing mathematical constraint into the native generative proof framework. It does not introduce another learner, change the original apparatus law or claim that a sufficient criterion has thereby learned its own meaning. The newer acquired-applicability, completion-sensitive inquiry and recurrent-regulation results remain established at their separate scopes.
 

@@ -1,6 +1,6 @@
 # Living recovery: independent coverage and proof review
 
-8 October 2026, Asia/Bangkok. AI-authored independent review for the current [living-dependencies goal](../../../../sources/15-codex-theory-conversations/2026-10-07-living-dependencies-current-goal.md), following the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). This note continues the [previous coverage review](LIVING-DEPENDENCY-COVERAGE-REVIEW.md); it does not reopen ethical first warrant or replace biological correspondence with an arbitrary viability label.
+8 October 2026, Asia/Bangkok. AI-authored independent review for the current [living-dependencies goal](../../../../sources/15-codex-theory-conversations/2026-10-07-living-dependencies-current-goal.md), following the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). This note continues the [previous coverage review](LIVING-DEPENDENCY-COVERAGE-REVIEW.md); it does not reopen ethical first warrant or replace biological correspondence with an arbitrary viability label.
 
 **Scope verdict:** admitting passive outward transport and intermediate excursions genuinely extends the represented histories. The checked positive result is a necessary transport-and-support account for an actual return to the selected amount range. That return is not yet an independently established restoration of living function. Independent source and verification inspection found no blocker at the declared scope.
 

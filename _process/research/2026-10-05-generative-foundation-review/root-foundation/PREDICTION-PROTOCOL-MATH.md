@@ -1,6 +1,6 @@
 # Actual predictor cycles as a paid macro learner
 
-6 October 2026. AI-authored mathematical companion to [Prediction protocol](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PREDICTION-PROTOCOL.md). This instantiates the earlier [protocol interface](PROTOCOL-COMPOSITION-MATH.md) using the existing [predictor law](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean); it does not introduce a replacement learner.
+6 October 2026. AI-authored mathematical companion to [Prediction protocol](../../../../theories/becoming/chapters/PREDICTION-PROTOCOL.md). This instantiates the earlier [protocol interface](PROTOCOL-COMPOSITION-MATH.md) using the existing [predictor law](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean); it does not introduce a replacement learner.
 
 ## 1. State, boundary and permitted events
 

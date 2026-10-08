@@ -1,6 +1,6 @@
 # Executed inquiry and practical judgment: connection audit
 
-8 October 2026. AI-authored research continuation requested by Ren. Current bilingual account: [Connections among proved results](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PROVED-CONNECTIONS.md). The existing explicit-axiom route remains in force; separately authorized stronger routes are unchanged.
+8 October 2026. AI-authored research continuation requested by Ren. Current bilingual account: [Connections among proved results](../../../../theories/becoming/chapters/PROVED-CONNECTIONS.md). The existing explicit-axiom route remains in force; separately authorized stronger routes are unchanged.
 
 ## Selected inference and rationale
 

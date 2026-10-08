@@ -83,7 +83,7 @@ The three dynamic modules import the current [GenerativeCore.lean](../Generative
 
 The earlier [operation/distinction monism proposal](../../../../../../sources/07-shengsheng-buxi/ssbx-repo/docs-next/10_formal_形式/wen-substrate/03-operation-monism.md) is preserved as source genealogy. This package checks new, explicit theorems about the product iteration; it does not certify older unlocated proof artifacts or promote all of the source's ontological interpretations into mathematical results.
 
-The [governing research goal](../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md) remains broader. The next explanatory obligation is to identify the justified primitive transformations and causal state distinctions of actual mechanisms, then use their actual successors to derive regulation, competing response formation/retention and revision of selectors. A word-language realization certifies representability after the permitted words are supplied; it does not discover those words or supply their causal explanation.
+The [governing research goal](../../../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md) remains broader. The next explanatory obligation is to identify the justified primitive transformations and causal state distinctions of actual mechanisms, then use their actual successors to derive regulation, competing response formation/retention and revision of selectors. A word-language realization certifies representability after the permitted words are supplied; it does not discover those words or supply their causal explanation.
 
 ## Reproduce and audit
 

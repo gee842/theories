@@ -1,6 +1,6 @@
 # Independent review of the mathematical-root frontier
 
-6 October 2026. AI-authored mathematical and epistemic review. Reviewed the canonical [MATHEMATICAL-ROOT-FRONTIER](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-ROOT-FRONTIER.md) and checked its source claims against the [primary-source note](MATHEMATICAL-ROOT-FRONTIER-SOURCES.md). The companion proof review is recorded separately below when available. This review does not modify the canonical text or shared indexes.
+6 October 2026. AI-authored mathematical and epistemic review. Reviewed the canonical [MATHEMATICAL-ROOT-FRONTIER](../../../../theories/becoming/chapters/MATHEMATICAL-ROOT-FRONTIER.md) and checked its source claims against the [primary-source note](MATHEMATICAL-ROOT-FRONTIER-SOURCES.md). The companion proof review is recorded separately below when available. This review does not modify the canonical text or shared indexes.
 
 ## Initial disposition
 

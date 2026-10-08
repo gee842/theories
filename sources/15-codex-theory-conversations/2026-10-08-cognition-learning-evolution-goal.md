@@ -18,4 +18,4 @@ The accompanying goal instructions require preserving the full objective, contin
 
 **范围解释 / Scope interpretation.** 本会话继续建立并检验认知、学习与演化心理的相连解释；保留已完成的局部机制，不把它们重列为缺口，也不把一个新局部模型、资料综述或成稿当作整体完成。此目标不取消其他会话获授权的研究。规范问题复用已公开的 G0/J 路线，经验及认识论根据分别明示。
 
-Current account and completion obligations: [cognition, learning and evolution](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md).
+Current account and completion obligations: [cognition, learning and evolution](../../theories/becoming/chapters/COGNITION-LEARNING-AND-EVOLUTION.md).

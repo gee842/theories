@@ -1,6 +1,6 @@
 # Necessity attempt: can unchosen restraint ground unchosen concern?
 
-6 October 2026. AI-authored attempt under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Target: **actual severe, still-unwanted suffering and an accessible, otherwise permissible relieving transformation supply some moral reason before the responder adopts concern**. The target is universal within independently specified conditions, not inevitable motivation, compulsory aid or an assumption-free derivation of all reality.
+6 October 2026. AI-authored attempt under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Target: **actual severe, still-unwanted suffering and an accessible, otherwise permissible relieving transformation supply some moral reason before the responder adopts concern**. The target is universal within independently specified conditions, not inevitable motivation, compulsory aid or an assumption-free derivation of all reality.
 
 The strongest positive route treats the undergoing and its possible transformation as one concrete ground, then challenges an exclusion at the place where it claims normative authority. This round tests an additional connection: a rival appealing to autonomy already recognizes unchosen reasons concerning others. Can its own ground justify restricting those reasons to restraint? The attempted inference narrows a substantial exclusion argument but does not establish universal necessity.
 

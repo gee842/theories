@@ -10,7 +10,7 @@ HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[3]
 EXP = ROOT / 'experiments/agentdojo-evidence-boundary'
 SRC = ROOT / 'sources/28-agentdojo-evidence-2026-10-06'
-THEORY = ROOT / 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05'
+THEORY = ROOT / 'theories/becoming/chapters'
 CANON = THEORY / 'TOOL-EVIDENCE-AND-AUTHORITY.md'
 OUTPUT = HERE / 'AGENTDOJO-EVIDENCE-INTEGRATION.json'
 

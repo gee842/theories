@@ -1,6 +1,6 @@
 # Adversarial review of THEORY.md: inquiry, wisdom and source fidelity
 
-Reviewed 5 October 2026. Target: `/Users/ren/theories/theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md`, 308-line draft read in this review. Line numbers refer to that version. Companion files were still being authored and are not treated as missing deliverables. No canonical edits or commits were made.
+Reviewed 5 October 2026. Target: `/Users/ren/theories/theories/becoming/chapters/THEORY.md`, 308-line draft read in this review. Line numbers refer to that version. Companion files were still being authored and are not treated as missing deliverables. No canonical edits or commits were made.
 
 ## Overall judgment
 

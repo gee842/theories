@@ -1,6 +1,6 @@
 # 良知生成演化：项目上下文与首轮推进
 
-2026年10月7日，Asia/Bangkok。AI 撰写。依据[Ren 的提议与执行指示](../../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md)，先记录项目上下文，再开展本轮。**上下文已保存，首轮表示／传递接口及证据评估已完成；良知生成研究保持进行中。** 当前理论页是[本然良知的生成演化](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md)。这不修改更强的普遍元伦理完成标准。
+2026年10月7日，Asia/Bangkok。AI 撰写。依据[Ren 的提议与执行指示](../../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md)，先记录项目上下文，再开展本轮。**上下文已保存，首轮表示／传递接口及证据评估已完成；良知生成研究保持进行中。** 当前理论页是[本然良知的生成演化](../../../../theories/becoming/chapters/LIANGZHI-EVOLUTION.md)。这不修改更强的普遍元伦理完成标准。
 
 ## 1. 项目上下文先记录了什么
 

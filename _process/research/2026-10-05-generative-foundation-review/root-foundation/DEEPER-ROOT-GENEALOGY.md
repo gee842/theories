@@ -1,6 +1,6 @@
 # Deeper root: provenance, premise ledger and identification boundary
 
-6 October 2026. AI-authored research audit for Ren's request to finish the deeper layer. This note distinguishes Ren's primary formulations, earlier assistant-assisted project exposition, formal construction, and the current explanatory obligations. It adds no empirical evidence and makes no priority claim. The governing goal remains [generative grounding](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md).
+6 October 2026. AI-authored research audit for Ren's request to finish the deeper layer. This note distinguishes Ren's primary formulations, earlier assistant-assisted project exposition, formal construction, and the current explanatory obligations. It adds no empirical evidence and makes no priority claim. The governing goal remains [generative grounding](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md).
 
 **Connection addressed:** distinction and formal composition → consequential transformation and composable histories. The useful completion of this layer is an explicit account of what its minimal formal interface supplies, what is derived from it, and which additional laws must be identified. Replacing a supplied transition law with the name “distinction” would not complete the connection.
 

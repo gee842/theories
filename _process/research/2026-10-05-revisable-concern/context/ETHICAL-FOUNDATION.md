@@ -1,6 +1,6 @@
 # Why affected beings matter within a generative world
 
-5 October 2026. Proposed ethical development for the unified theory. This is an original AI-assisted argument for this research program, not a reconstruction of Ren's exact words, a theorem of physics, or a claim of universal philosophical agreement. It extends the explicit commitments already recorded in the [conscience source](/Users/ren/theories/sources/15-codex-theory-conversations/2026-10-05-conscience-and-universal-morality.md) and [unified theory, Section 10](/Users/ren/theories/theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md).
+5 October 2026. Proposed ethical development for the unified theory. This is an original AI-assisted argument for this research program, not a reconstruction of Ren's exact words, a theorem of physics, or a claim of universal philosophical agreement. It extends the explicit commitments already recorded in the [conscience source](/Users/ren/theories/sources/15-codex-theory-conversations/2026-10-05-conscience-and-universal-morality.md) and [unified theory, Section 10](/Users/ren/theories/theories/becoming/chapters/THEORY.md).
 
 ## The positive bridge
 

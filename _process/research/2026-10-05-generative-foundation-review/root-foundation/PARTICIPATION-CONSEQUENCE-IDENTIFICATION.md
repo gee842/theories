@@ -1,6 +1,6 @@
 # Acquired distinctions within changing participation
 
-6 October 2026. AI-authored identification argument under [Ren's nondual correction](../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md) and the [shared method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). The preceding [applicability round](NONDUAL-APPLICABILITY-INTEGRATION.md) made verified progress; it did not complete the foundation. This study addresses **formed participation → acquired distinctions of consequence → changed continuation**. Existing source laws and results are known before this reconstruction. Proposed empirical contrasts below have not been run.
+6 October 2026. AI-authored identification argument under [Ren's nondual correction](../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md) and the [shared method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). The preceding [applicability round](NONDUAL-APPLICABILITY-INTEGRATION.md) made verified progress; it did not complete the foundation. This study addresses **formed participation → acquired distinctions of consequence → changed continuation**. Existing source laws and results are known before this reconstruction. Proposed empirical contrasts below have not been run.
 
 ## Begin with the continuing configuration
 

@@ -1,6 +1,6 @@
 # Renewal and closure: Phase 2b, the conditions of correction and whole configurations
 
-6 October 2026 (UTC). AI-authored, continuing the [roadmap](RENEWAL-CLOSURE-ROADMAP.md#phase-2b--renewability-of-whole-configurations-p-c) after [Phase 2](RENEWAL-CLOSURE-PHASE2.md). It follows the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). The Lean package is [`lean/conditional/renewal/`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md).
+6 October 2026 (UTC). AI-authored, continuing the [roadmap](RENEWAL-CLOSURE-ROADMAP.md#phase-2b--renewability-of-whole-configurations-p-c) after [Phase 2](RENEWAL-CLOSURE-PHASE2.md). It follows the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). The Lean package is [`lean/conditional/renewal/`](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/renewal/README.md).
 
 **Transition addressed.** This phase links the renewal–closure theorem to the [research center](RENEWAL-CLOSURE-ROADMAP.md#11-what-this-serves-the-whole-unfolding): how the whole unfolding generates or damages the conditions of its later realization, renewal and correction. Kinds, edges, spans, demands and rates stay supplied inputs. Nothing here ranks histories ethically.
 

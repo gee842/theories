@@ -111,20 +111,20 @@ The following SHA-256 values identify the bytes read for this audit. They are pr
 
 | Source | SHA-256 |
 |---|---|
-| [EVALUATIVE-UPTAKE.md](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-UPTAKE.md) | `4e49a1a31fd9961e90d0c4add1c1bd32a15668c3ef23c7a62bdaf91efcfc54a3` |
-| [ARCHITECTURE-LEARNING.md](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ARCHITECTURE-LEARNING.md) | `5304bfc0a960a24e0e8284252de1ecbf511959412e1b41a883b919ade2932c8d` |
-| [JOINT-FORMATION.md](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/JOINT-FORMATION.md) | `eb82363f134116642ab308429a51ecfe1b3aeac3e3152c11f7168b6548fa2145` |
-| [GENERATIVE-GROUNDING.md](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md) | `6e63fe6441c23a2ad1effda19418d5fd2cb3ac52b68bdd078cd4bcf858818d4f` |
+| [EVALUATIVE-UPTAKE.md](../../../../theories/becoming/chapters/EVALUATIVE-UPTAKE.md) | `4e49a1a31fd9961e90d0c4add1c1bd32a15668c3ef23c7a62bdaf91efcfc54a3` |
+| [ARCHITECTURE-LEARNING.md](../../../../theories/becoming/chapters/ARCHITECTURE-LEARNING.md) | `5304bfc0a960a24e0e8284252de1ecbf511959412e1b41a883b919ade2932c8d` |
+| [JOINT-FORMATION.md](../../../../theories/becoming/chapters/JOINT-FORMATION.md) | `eb82363f134116642ab308429a51ecfe1b3aeac3e3152c11f7168b6548fa2145` |
+| [GENERATIVE-GROUNDING.md](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md) | `6e63fe6441c23a2ad1effda19418d5fd2cb3ac52b68bdd078cd4bcf858818d4f` |
 | [FIXED-FINISH-LINE-AUDIT.md](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md) | `708838771586c864ee080b1899e63f6b55555ecf89bc42cc63eb8f42c48b5469` |
 | [DRAFT-PROTOCOL.md](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/DRAFT-PROTOCOL.md) | `65a4632842619a979fa78c79b4188886b672ce0a91641dfc1b23bc0cd5f006ff` |
 | [check_model.py](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/check_model.py) | `b82d9a50ea0d067decaea61075393926ee493af6adf31bf86bceab790551f2e6` |
 | [model-verification.json](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/model-verification.json) | `4fadfe6ee460b7e5175a1ff3eac6bfaa64582c5abb49f3b65bf0b96ca3149138` |
 | [mutation-verification.json](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/mutation-verification.json) | `a8994f08133cd2d144a0d841b717e38b3bf4bdb3eed829d3e125717f905a55c3` |
 
-[uptake]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-UPTAKE.md
-[architecture]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ARCHITECTURE-LEARNING.md
-[joint]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/JOINT-FORMATION.md
-[goal]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation
+[uptake]: ../../../../theories/becoming/chapters/EVALUATIVE-UPTAKE.md
+[architecture]: ../../../../theories/becoming/chapters/ARCHITECTURE-LEARNING.md
+[joint]: ../../../../theories/becoming/chapters/JOINT-FORMATION.md
+[goal]: ../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation
 [finish]: FIXED-FINISH-LINE-AUDIT.md
 [protocol]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/DRAFT-PROTOCOL.md
 [check]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/INDEPENDENT-CHECK.md

@@ -1,6 +1,6 @@
 # 接管改变条件之后，原维护任务怎样继续被正确评价
 
-2026-10-08。AI 撰写，沿 G0/J 明确公理路线，遵循[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)。本轮检查的是已成立任务与其后实施之间的对应，没有另设禁止自我修改或永久保留旧设施的公理。
+2026-10-08。AI 撰写，沿 G0/J 明确公理路线，遵循[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)。本轮检查的是已成立任务与其后实施之间的对应，没有另设禁止自我修改或永久保留旧设施的公理。
 
 **正面判断：一项仍有效的有限维护任务，不能因为接管本身撤掉了它要承接的支持，便按撤除后的能力重新缩小目标，进而认证自己已经履行。** 原任务的具体内容应保留到履行、正当修订或有效解除的判断中。新的实际能力仍须如实评价；保存原任务不等于要求现在完成不可能的事。
 
@@ -10,7 +10,7 @@
 
 这留下一个具体对应风险：`oldWorks` 所指的原支持条件，可能被正在接受评价的接管实际改变。若先关闭原通道，再把当前 `oldWorks = false` 放回验收条件，所测的就不再是接管原来要完成的那项任务。定理仍可对这个缩小后的条件成立，却没有认证原任务。
 
-这不是首次发现历史重要。[J3 的结束与结算](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md#6-目的变化学习与结束责任--changed-purposes-learning-and-discharge)已经区分履行、有效交接、释放与残余要求；[有界风险修订](JOINT-RISK-REVISION-INTEGRATION.md#17-a-local-allowance-cannot-renew-itself-by-changing-the-reference)已拒绝仅靠更换基准续发许可；[目的修订](GOAL-REVISION-CONTINUATION.md)已保留先前真实损失。本轮新增的是这些要求在**接管改变自身维护验收条件**处的明确应用与形式检查。
+这不是首次发现历史重要。[J3 的结束与结算](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md#6-目的变化学习与结束责任--changed-purposes-learning-and-discharge)已经区分履行、有效交接、释放与残余要求；[有界风险修订](JOINT-RISK-REVISION-INTEGRATION.md#17-a-local-allowance-cannot-renew-itself-by-changing-the-reference)已拒绝仅靠更换基准续发许可；[目的修订](GOAL-REVISION-CONTINUATION.md)已保留先前真实损失。本轮新增的是这些要求在**接管改变自身维护验收条件**处的明确应用与形式检查。
 
 [时变检验](TEMPORAL-INSPECTION-INTEGRATION.md)已处理观察、控制与故障状态改变后的证据适用；它保留给定委托，并不决定委托是否已履行或获准结束。[共同接续](JOINT-CONTINUATION-INTEGRATION.md)与[支持交接](CORRECTION-HANDOFF-INTEGRATION.md)也已检验组合执行及安全交接。本轮不重做这些机制。
 

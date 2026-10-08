@@ -1,6 +1,6 @@
 # Recipient consequence becomes evaluatively effective: primary-data audit
 
-6 October 2026. AI-authored supporting study of the connection **acquired recipient consequence → changed action with an actual recipient effect** in the [generative-grounding programme](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md). This note freezes source access and identification limits before the separately owned retrospective analysis. It does not claim a newly formed moral motive, ethical truth or completion of the unified foundation.
+6 October 2026. AI-authored supporting study of the connection **acquired recipient consequence → changed action with an actual recipient effect** in the [generative-grounding programme](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md). This note freezes source access and identification limits before the separately owned retrospective analysis. It does not claim a newly formed moral motive, ethical truth or completion of the unified foundation.
 
 ## Why this evidence and what it can discriminate
 

@@ -6,9 +6,9 @@
 
 不能把“尚无新实验”写成“尚无现实检验”。市场和互联网已经包含共同创造、依存形成、规则改变、实际损失及纠正的连续历史。它们能够检验我们的解释，并揭示解释遗漏，不只是给完成后的理论配例子。
 
-[已有市场研究](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md)与[元吸引子的权力表述](../../../../theories/meta-attractor/README.md#the-power-formulation-2026-10-02)已经指出：局部成功可以改变后来的选择条件，并与共同条件受损并存。本轮推进的是这些关系的**实际对应与可区分后果**，不重新发明方向、重做合成模拟，或把所有现场材料降格为有待实验替代的轶事。
+[已有市场研究](../../../../theories/becoming/chapters/MARKETS-AND-GENERATIVE-REGIMES.md)与[元吸引子的权力表述](../../../../theories/meta-attractor/README.md#the-power-formulation-2026-10-02)已经指出：局部成功可以改变后来的选择条件，并与共同条件受损并存。本轮推进的是这些关系的**实际对应与可区分后果**，不重新发明方向、重做合成模拟，或把所有现场材料降格为有待实验替代的轶事。
 
-上一轮[关切内容形成候选](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#concern-content-acquisition)仍有其范围。但眼前的连接不应仅表述成“更多人怎样学会关心”：实际组织也可能听见损失、懂得依存，仍然保留使损失持续的规则。此时必须追问哪些后果能改变谁的决定，谁能保留或撤销纠正渠道。
+上一轮[关切内容形成候选](../../../../theories/becoming/chapters/ETHICAL-LEARNING.md#concern-content-acquisition)仍有其范围。但眼前的连接不应仅表述成“更多人怎样学会关心”：实际组织也可能听见损失、懂得依存，仍然保留使损失持续的规则。此时必须追问哪些后果能改变谁的决定，谁能保留或撤销纠正渠道。
 
 ## 2. Enshittification 在理论中的位置
 
@@ -54,7 +54,7 @@ Wizards 在 [2023-01-27 的官方声明](https://www.dndbeyond.com/posts/1439-og
 
 ## 6. 对齐方向的实践内容
 
-复用已完成的[对齐方向](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md)：在 G0 及分别明示的 J/E 下，支持生命、心智、关系和多样生活的形成、展开及继续生成。市场材料让它在制度层面更具体：评价目标执行时，也评价它改变了哪些后续可能、哪些人能继续参与、实际损失由谁承担，以及怎样保留修正目标和选择规则的能力。
+复用已完成的[对齐方向](../../../../theories/becoming/chapters/ALIGNMENT-DIRECTION.md)：在 G0 及分别明示的 J/E 下，支持生命、心智、关系和多样生活的形成、展开及继续生成。市场材料让它在制度层面更具体：评价目标执行时，也评价它改变了哪些后续可能、哪些人能继续参与、实际损失由谁承担，以及怎样保留修正目标和选择规则的能力。
 
 由此支持的方向包括：使有贡献的参与有可持续的继续路径，使必要收费与维护负担可以核查，使实际替代和有条件的退出可行，使受影响者有能改变决定的纠正渠道，并使成功者不能仅凭成功就取得不受纠正的永久权限。每项安排还要接受成本、权限、冲突与可行性评价；无限免费接入、永久保存每家企业、绝对开放一切信息都没有由此获得授权。
 
@@ -107,7 +107,7 @@ The two cases above support bounded correspondence and possible correction, not 
 <a id="interface-control-and-corrective-change"></a>
 ## 10. 接续：规则控制可以发生在经营活动本身
 
-2026-10-08，依据 [Ren 的继续指示](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#continue-institutional-degeneration)。本轮选择 Google 广告技术案中的规则变更史，推进共同依存 → 实际规则控制 → 替代和纠正受到影响这一连接。已有[条件市场模型](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKET-DYNAMICS-MATH.md)及[元吸引子机制](../../../../theories/meta-attractor/GENERATIVE-REGIMES.md)直接复用；不再以增长与损失并存作为新成果。
+2026-10-08，依据 [Ren 的继续指示](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#continue-institutional-degeneration)。本轮选择 Google 广告技术案中的规则变更史，推进共同依存 → 实际规则控制 → 替代和纠正受到影响这一连接。已有[条件市场模型](../../../../theories/becoming/chapters/MARKET-DYNAMICS-MATH.md)及[元吸引子机制](../../../../theories/meta-attractor/GENERATIVE-REGIMES.md)直接复用；不再以增长与损失并存作为新成果。
 
 上一轮的“利润优势 → 购买影响力 → 改写规则”容易被读成唯一顺序。它只是一个实现路径。另一条路径是：**某个经营位置同时承担共同接口的运行，并控制该接口的准入、比较顺序和修改权限。** 共同活动通过这个接口继续时，经营上的决定已经会改变他人怎样竞争；不需要先把利润花在游说上才开始改变选择条件。收益、依存、规则和控制位置因而可以相互形成。
 
@@ -187,7 +187,7 @@ English continuation: Rule control can arise directly from operating a shared in
 
 ## 16. 在原有市场模型中找到精确的参数界线
 
-直接扩展[原市场规律](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKET-DYNAMICS-MATH.md)，不另换一个有利玩具模型。所有以下新数学结果均为有理数范围；[源码](../../../../experiments/market-generativity/formal/RegimeBoundary.lean)、[检查器](../../../../experiments/market-generativity/formal/check_boundary.py)及[实际回执](../../../../experiments/market-generativity/formal/boundary-verification.json)一起保存。新增 **19 项定理／27 项声明审计**；实际导入的旧模块 **39 项定理审计**重新编译并分列，不重复计为新成果。依赖只含标准 Lean 公理，无新公理、未完成证明或原生求值捷径。
+直接扩展[原市场规律](../../../../theories/becoming/chapters/MARKET-DYNAMICS-MATH.md)，不另换一个有利玩具模型。所有以下新数学结果均为有理数范围；[源码](../../../../experiments/market-generativity/formal/RegimeBoundary.lean)、[检查器](../../../../experiments/market-generativity/formal/check_boundary.py)及[实际回执](../../../../experiments/market-generativity/formal/boundary-verification.json)一起保存。新增 **19 项定理／27 项声明审计**；实际导入的旧模块 **39 项定理审计**重新编译并分列，不重复计为新成果。依赖只含标准 Lean 公理，无新公理、未完成证明或原生求值捷径。
 
 模型中的角色与状态来自同一活动史的关系分化：维护实践份额 \(x\)、后果进入可执行责任的有效程度 \(q\)、侵蚀该效力的累积影响 \(w\)，以及维持纠正和实际活动的支持。它们不是独立的本体种类。当前只研究持续获授权并付款、活动尚能运行、没有额外不利误差时的三坐标投影：
 

@@ -1,6 +1,6 @@
 # 可纠正性的实际条件：分离、代价与组合 / Correction infrastructure: separation, cost and composition
 
-8 October 2026. AI-authored research following [Ren's request](../../../../sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md#formalization-toward-a-corrigibility-frontier-contribution). Current theory: [alignment and governance](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#corrigibility-and-its-changing-practical-conditions). Execution was specified in the [protocol](CORRECTION-INFRASTRUCTURE-PROTOCOL.md) before the comparison ran.
+8 October 2026. AI-authored research following [Ren's request](../../../../sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md#formalization-toward-a-corrigibility-frontier-contribution). Current theory: [alignment and governance](../../../../theories/becoming/chapters/ALIGNMENT-AND-GOVERNANCE.md#corrigibility-and-its-changing-practical-conditions). Execution was specified in the [protocol](CORRECTION-INFRASTRUCTURE-PROTOCOL.md) before the comparison ran.
 
 **已得结果：接受更新的激励、实际纠正入口的保持、受约束的任务最优性是三个不同的要求。** 本轮给出精确分离、真实代价和有限期组合证明；34项 Lean 定理／56项声明审计通过，1,296个完整模型的12,960项比较已执行。普通受约束规划与新组合在全部可行情形匹配，**尚不能宣布算法优越性或已经确认的前沿原创贡献**。
 

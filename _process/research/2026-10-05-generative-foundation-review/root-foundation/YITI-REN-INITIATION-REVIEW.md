@@ -1,6 +1,6 @@
 # 启动与优先修订的前提及反例审查
 
-2026年10月6日。AI 撰写的内部协作审查，遵循[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)。作者参与本轮设计和正向规范论证；独立审查指分工及源码推理，不是外部验证或盲测。上一轮[范围审查](YITI-REN-SCOPE-REVIEW.md)保持冻结。
+2026年10月6日。AI 撰写的内部协作审查，遵循[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)。作者参与本轮设计和正向规范论证；独立审查指分工及源码推理，不是外部验证或盲测。上一轮[范围审查](YITI-REN-SCOPE-REVIEW.md)保持冻结。
 
 Ren 在本轮中明确纠正：“it is not about this "expectation" or that one, it is about the integral of the whole”。[原话](../../../../sources/15-codex-theory-conversations/2026-10-06-yiti-ren-coformation-completion.md#整体积分的纠正)与既有[整体未来判据](FUTURE-GOOD-INTEGRAL.md#the-future-of-the-whole-as-the-criterion)控制本审查：下面对局部机制的准入不意味着保护某个既定乙是整个理论的根基。投影保留同一形成史和差异后果，省略目的、范围和评价共同形成；须对这些省略负责。数值整体积分在其已声明条件下仍成立，不能把本次纠正误写为反对积分。
 

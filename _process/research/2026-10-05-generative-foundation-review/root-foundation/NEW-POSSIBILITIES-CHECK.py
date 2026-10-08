@@ -14,7 +14,7 @@ from urllib.parse import unquote
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[3]
-THEORY = ROOT / 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05'
+THEORY = ROOT / 'theories/becoming/chapters'
 LEAN = ROOT / 'experiments/integrated-correction/general-framework/generative-basis/lean'
 SOURCE = ROOT / 'sources/15-codex-theory-conversations/2026-10-08-formation-of-new-possibilities.md'
 DOCS = [THEORY / 'NEW-POSSIBILITIES.md', HERE / 'NEW-POSSIBILITIES-INTEGRATION.md',

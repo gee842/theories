@@ -16,4 +16,4 @@ This fixes the completion standard for this conversation's independently authori
 
 The answer does not retract the independently authorized explicit G0/J ethical route, demand that every application measurement be deduced, or add a requirement of endless continuation for each system. It does not itself prove that the requested foundation is possible or impossible.
 
-Integrated in the [deductive assessment](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md) and [current foundation chapter](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md#deductive-necessity-is-the-foundational-standard).
+Integrated in the [deductive assessment](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md) and [current foundation chapter](../../theories/becoming/chapters/ASSUMPTION-FREE-FOUNDATION.md#deductive-necessity-is-the-foundational-standard).

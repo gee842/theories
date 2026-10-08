@@ -3,7 +3,7 @@
 **Later scope clarification, 8 October 2026:** [Ren now explicitly requires deductive necessity](../../../../sources/15-codex-theory-conversations/2026-10-08-foundation-deductive-necessity.md) for every foundational claim. The actual warrant and constitutive arguments below retain their stated results; their empirical support alone does not complete a foundational commitment under that criterion. Read the [deductive continuation](DEDUCTIVE-FOUNDATION-TEST.md) for the current completion assessment. This amendment does not extend the earlier independent review to the new results.
 # 保持量词范围的普遍系统根基论证
 
-8 October 2026. AI-authored affirmative argument for Ren's renewed instruction to solve the remaining foundational limit. This is a philosophical scope analysis, not a new mathematical theorem or empirical run. It applies the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md), preserves the independently authorized no-assumptions objective, and does not reopen the completed conditional foundation or separate G0/J ethical route.
+8 October 2026. AI-authored affirmative argument for Ren's renewed instruction to solve the remaining foundational limit. This is a philosophical scope analysis, not a new mathematical theorem or empirical run. It applies the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md), preserves the independently authorized no-assumptions objective, and does not reopen the completed conditional foundation or separate G0/J ethical route.
 
 **The three proposed root commitments do not all make the same universal claim. Actual instances already ground their permissive content. A general argument also grounds fidelity and necessary joint realization for independently identified organization. The remaining stronger passage concerns substantive causal and modal reach; it cannot be settled by quietly strengthening the permissive commitments or weakening that reach to mere description.**
 
@@ -11,15 +11,15 @@
 
 ## 1. Read the existing commitments precisely
 
-The [canonical minimal root](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope) states:
+The [canonical minimal root](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope) states:
 
 - Reality **permits** consequential differentiation: distinguishable conditions and relations can affect subsequent interactions.
 - What occurs **depends** on participating conditions and relations; organization constrains later change and can itself change.
 - Interactions **can combine**, including recurrent arrangements. Not every system is required to contain feedback, repair or reproduction.
 
-The first and third include world-level capability claims. A warranted actual realization supplies a positive ground for possibility under its realized conditions. It does not need an induction showing that every system possesses that capability. Nor does an actual recurrence establish that the same preparation remains available now. The [previous variation-warrant distinction](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-WARRANT.md#2-match-the-grounds-to-the-claim) applies unchanged.
+The first and third include world-level capability claims. A warranted actual realization supplies a positive ground for possibility under its realized conditions. It does not need an induction showing that every system possesses that capability. Nor does an actual recurrence establish that the same preparation remains available now. The [previous variation-warrant distinction](../../../../theories/becoming/chapters/SYSTEM-WARRANT.md#2-match-the-grounds-to-the-claim) applies unchanged.
 
-The second carries more than an existential observation if read as a common explanation of what occurs throughout system-forming reality. Its language needs disambiguation: a relation's being part of an achieved organization, its taking part in an operation, its being causally relevant to that operation, and its restricting other possible continuations are connected but different claims. The existing [systems account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-INDIVIDUATION.md#2-constitutive-participation-differs-from-successful-prediction) already prevents replacing participation by successful prediction.
+The second carries more than an existential observation if read as a common explanation of what occurs throughout system-forming reality. Its language needs disambiguation: a relation's being part of an achieved organization, its taking part in an operation, its being causally relevant to that operation, and its restricting other possible continuations are connected but different claims. The existing [systems account](../../../../theories/becoming/chapters/SYSTEM-INDIVIDUATION.md#2-constitutive-participation-differs-from-successful-prediction) already prevents replacing participation by successful prediction.
 
 The broad task therefore must not be restated as three equally unsupported universal propositions. It also must not be announced complete merely because two permissive claims have actual instances. The common explanatory reach has its own content.
 

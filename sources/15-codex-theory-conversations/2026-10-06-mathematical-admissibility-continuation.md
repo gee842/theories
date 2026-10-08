@@ -13,4 +13,4 @@ After an answer distinguishing admissibility, universal coverage, constitutive e
 
 The decision to test coherent completion and its relation to generative histories is AI-authored elaboration of this request. The mathematical role conditions, philosophical interpretation and limits are not additional quotations from Ren and are not presented as conclusions Ren endorsed in advance.
 
-The resulting [admissibility study](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-MATHEMATICAL-ADMISSIBILITY.md) directly pursues the stronger mathematical question while preserving the shared nondual method and the established conditional foundation. It does not introduce a new learning mechanism or change earlier source bytes.
+The resulting [admissibility study](../../theories/becoming/chapters/GENERATIVE-MATHEMATICAL-ADMISSIBILITY.md) directly pursues the stronger mathematical question while preserving the shared nondual method and the established conditional foundation. It does not introduce a new learning mechanism or change earlier source bytes.

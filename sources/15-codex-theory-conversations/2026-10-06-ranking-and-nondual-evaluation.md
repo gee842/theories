@@ -20,6 +20,6 @@ Ren's next message was:
 
 ## Scope of the requested continuation
 
-The AI-authored continuation corrects this branch's overgeneralization, preserves the valid task-relative result and investigates the relationships omitted by the local representation. It follows the [shared nondual method](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Ren's request does not certify the resulting interpretation, prove a universal criterion, or withdraw genuine counterexamples.
+The AI-authored continuation corrects this branch's overgeneralization, preserves the valid task-relative result and investigates the relationships omitted by the local representation. It follows the [shared nondual method](../../theories/becoming/chapters/NONDUAL-METHOD.md). Ren's request does not certify the resulting interpretation, prove a universal criterion, or withdraw genuine counterexamples.
 
 The [branch reconstruction](../../_process/research/2026-10-05-generative-health/succession/NONDUAL-EVALUATION.md) records the correction and its contribution to the governing derivation.

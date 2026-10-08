@@ -1,6 +1,6 @@
 # Reconstructing applicability within generative activity
 
-6 October 2026. AI-authored scope record under [Ren’s correction](../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md) and the [shared nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). This is a reconstruction of already known source laws, with new trace-level consequences under investigation; it is not a preregistration of unknown empirical outcomes.
+6 October 2026. AI-authored scope record under [Ren’s correction](../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md) and the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). This is a reconstruction of already known source laws, with new trace-level consequences under investigation; it is not a preregistration of unknown empirical outcomes.
 
 ## The connection and the independently specified target
 

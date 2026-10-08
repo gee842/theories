@@ -2,7 +2,7 @@
 
 6 October 2026. AI-authored response to Ren's question, “done? including formal?” The previous [integration](ACQUIRED-APPLICABILITY-INTEGRATION.md) accepted an implementation, independent executable reconstruction and hand arguments. It explicitly did not include Lean certification. This round closes that distinct obligation for the stated bounded mechanism; it does not change the governing foundation's scope or declare the whole research programme complete.
 
-The [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) remains governing. Formal state components describe differentiated relations within one history. Supplied laws, representation choices and physiological or ethical interpretation are not eliminated merely because a proof has an empty axiom audit.
+The [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) remains governing. Formal state components describe differentiated relations within one history. Supplied laws, representation choices and physiological or ethical interpretation are not eliminated merely because a proof has an empty axiom audit.
 
 ## Acceptance before formal execution
 

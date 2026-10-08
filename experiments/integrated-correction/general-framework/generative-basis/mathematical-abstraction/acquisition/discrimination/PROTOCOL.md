@@ -1,6 +1,6 @@
 # Acquired discriminator and its subsequent use
 
-6 October 2026. Prospective bounded causal study, written before execution. AI-authored under the [nondual method](../../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). It tests an operative distinction already implemented by the ancestor's standard observation-table learner. No ancestor source is edited and no new native stopping controller is proposed.
+6 October 2026. Prospective bounded causal study, written before execution. AI-authored under the [nondual method](../../../../../../../theories/becoming/chapters/NONDUAL-METHOD.md). It tests an operative distinction already implemented by the ancestor's standard observation-table learner. No ancestor source is edited and no new native stopping controller is proposed.
 
 ## Fixed target, contract and comparisons
 
@@ -20,4 +20,4 @@ The masked reader enumerates the same history set T and uses old E for its row c
 - For the completed supplemental ordinary run, check the original certificate, retention and native-use result. Use an external finite product comparison of target/model tables to check all-word equivalence and distinguish that external audit from learner input.
 - Bind the original source, earlier result, this protocol and study script. Preserve unique failed execution attempts if repair is necessary; do not broaden the sweep.
 
-This is a causal probe of acquired discriminator use, a standard active-automata-learning mechanism. It does not establish mathematical novelty, learned state bounds, a revised all-future contract, independently warranted inquiry, ethics or the no-assumptions foundation. The original false-bound, broken-reset, inverted-sensor and resource failures remain in [the original results](../results.json). The concurrent [inquiry-revision extension](../../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md) separately changes an actual encounter limit; its runtime and formal acceptance retain their own scope.
+This is a causal probe of acquired discriminator use, a standard active-automata-learning mechanism. It does not establish mathematical novelty, learned state bounds, a revised all-future contract, independently warranted inquiry, ethics or the no-assumptions foundation. The original false-bound, broken-reset, inverted-sensor and resource failures remain in [the original results](../results.json). The concurrent [inquiry-revision extension](../../../../../../../theories/becoming/chapters/INQUIRY-REVISION.md) separately changes an actual encounter limit; its runtime and formal acceptance retain their own scope.

@@ -1,6 +1,6 @@
 # Evidence across changing control and moving faults
 
-8 October 2026. AI-authored continuation under [Ren's instruction](../../../../sources/15-codex-theory-conversations/2026-10-08-finish-alignment-fruits.md#continuation-through-changing-inspection-histories). Current theory: [alignment through change §11](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md#11-evidence-across-changing-control--控制变化中的证据接续).
+8 October 2026. AI-authored continuation under [Ren's instruction](../../../../sources/15-codex-theory-conversations/2026-10-08-finish-alignment-fruits.md#continuation-through-changing-inspection-histories). Current theory: [alignment through change §11](../../../../theories/becoming/chapters/ALIGNMENT-THROUGH-CHANGE.md#11-evidence-across-changing-control--控制变化中的证据接续).
 
 **Completed connection:** sequential fallible reports, covered changes in causal control and current fault location, preserved candidate coverage through lawful finite histories, and actual correction after reinspection. The package adds **34 Lean theorems / 66 declaration audits and 35,486 matched records**. It removes the need to hold the diagnostic arrangement and fault location fixed throughout the whole inspection history. It does not discover the transition law or prove that the recorder and command monitor cannot be compromised.
 
@@ -10,7 +10,7 @@ The [fallible-inspection study](FALLIBLE-INSPECTION-INTEGRATION.md) already hand
 
 The new issue lies between these results: **a collection made over time need not satisfy the failure bound that holds at each instant**. Moreover, a structural distinction established earlier can cease to describe the current organization. Adding timestamps or additional names alone does not close either gap.
 
-Under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md), reporting, compromise, control changes, records and command execution are differentiated events within one changing organization. A retained report is part of that history, not an observer's timeless access to a separate reality. The formal distinction between an actual configuration and retained possibilities represents this limited access. Both change in the same executable state; inspection consumes its capacity. The representation still omits the formation of the sensing, recording and enforcement relationships themselves.
+Under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md), reporting, compromise, control changes, records and command execution are differentiated events within one changing organization. A retained report is part of that history, not an observer's timeless access to a separate reality. The formal distinction between an actual configuration and retained possibilities represents this limited access. Both change in the same executable state; inspection consumes its capacity. The representation still omits the formation of the sensing, recording and enforcement relationships themselves.
 
 The connection supplied to the G0/J alignment programme is temporal correspondence of evidence used by selection and correction. The normative ground and general responsibilities are reused; their proof is not being restarted or replaced by another observer algorithm.
 

@@ -1,6 +1,6 @@
 # 整树非二元继续的独立审查
 
-2026年10月6日。AI 独立审查，先读更新后的 [AGENTS.md](../../../../AGENTS.md) 与[共同方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)。本轮负责审查解释方法和声明范围；不新增机制，不改共享正文，不重跑旧证明或把旧验证计作新增证据。
+2026年10月6日。AI 独立审查，先读更新后的 [AGENTS.md](../../../../AGENTS.md) 与[共同方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)。本轮负责审查解释方法和声明范围；不新增机制，不改共享正文，不重跑旧证明或把旧验证计作新增证据。
 
 **结论：接受本轮为方法落实与解释整合。** [继续稿](NONDUAL-TREE-CONTINUATION.md)、[机制稿](NONDUAL-TREE-MECHANISM.md)和[谱系稿](NONDUAL-TREE-GENEALOGY.md)积极重构了同一实际历程，区分表示遗漏、未完成解释和实质失败，并保留可改变理论的条件。它们没有证明全树已经由无外加前提的根完全导出，也没有声称非二元本身足以推出所有伦理回应。此次具体进展是重新确定研究对象、纠正少数过宽的批评用语，并用既有实际连接说明这个方法如何工作。
 
@@ -71,4 +71,4 @@
 
 本轮未改变旧定理、反例、原件或科学收据。本审查完成的是当前文字与所引源码的范围核对，未声称重新验证旧编译。全树非二元方法已获得一个有内容的工作实例；无外加假设的统一根基和非工具性关切的完整推导，仍是持续研究目标。
 
-**最终整合复核：** 已读共同方法新增 worked continuation、[THEORY §2](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md#2-what-has-been-unified)、[NONINSTRUMENTAL-CONCERN 顶部更新](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md)及继续稿 §6 最终修改；均保持上述范围。审计精确编辑记录中的最终 SHA-256 与当前被修改文件一致；本审查的本地文件链接已核对，无缺失。上述检查是文字与文件完整性检查，不是新增科学验证。
+**最终整合复核：** 已读共同方法新增 worked continuation、[THEORY §2](../../../../theories/becoming/chapters/THEORY.md#2-what-has-been-unified)、[NONINSTRUMENTAL-CONCERN 顶部更新](../../../../theories/becoming/chapters/NONINSTRUMENTAL-CONCERN.md)及继续稿 §6 最终修改；均保持上述范围。审计精确编辑记录中的最终 SHA-256 与当前被修改文件一致；本审查的本地文件链接已核对，无缺失。上述检查是文字与文件完整性检查，不是新增科学验证。

@@ -4,7 +4,7 @@
 
 ## The precise connection being tested
 
-Ren asks to finish the remaining supplied process law and correspondence after the unfolding-preservation study. The strongest interpretation compatible with the existing target is to justify the actual connections, not to remove theorem parameters cosmetically or rename a chosen simulator “actual unfolding.” The [foundation's corrected completion test](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md#10-the-foundations-actual-content-fixes-its-completion-test) does not require endless continuation, one privileged notation or deduction of contingent physical constants from an empty context. It does require warrant for the foundational relationships and their claimed scope.
+Ren asks to finish the remaining supplied process law and correspondence after the unfolding-preservation study. The strongest interpretation compatible with the existing target is to justify the actual connections, not to remove theorem parameters cosmetically or rename a chosen simulator “actual unfolding.” The [foundation's corrected completion test](../../../../theories/becoming/chapters/ASSUMPTION-FREE-FOUNDATION.md#10-the-foundations-actual-content-fixes-its-completion-test) does not require endless continuation, one privileged notation or deduction of contingent physical constants from an empty context. It does require warrant for the foundational relationships and their claimed scope.
 
 Three distinct obligations must therefore remain visible:
 
@@ -64,8 +64,8 @@ The other 42 inherited audits retain the prior standard dependency maps; the new
 
 ## Sources inspected for this review
 
-- [Nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md), including accountable analytical separations and substantive constitutive tests.
-- [Assumption-free foundation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md), especially §§10–12, and [minimal grounding](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope).
+- [Nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md), including accountable analytical separations and substantive constitutive tests.
+- [Assumption-free foundation](../../../../theories/becoming/chapters/ASSUMPTION-FREE-FOUNDATION.md), especially §§10–12, and [minimal grounding](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope).
 - [Unfolding preservation](UNFOLDING-PRESERVATION-INTEGRATION.md), including its unchanged-law witnesses, actual review chronology and distinction between future and historical questions.
 - [Explanatory joining](EXPLANATORY-JOINING-INTEGRATION.md), including recovered unit roles, the partial-budget failure and the explicitly supplied completion condition.
 - The unchanged [FormedGrounds source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormedGrounds.lean).

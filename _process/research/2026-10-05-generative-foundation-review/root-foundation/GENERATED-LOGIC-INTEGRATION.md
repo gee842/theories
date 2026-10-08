@@ -1,6 +1,6 @@
 # 生成条件与收缩：证明、来源及反审 / Generated contraction: proof, sources and counterreview
 
-2026-10-08, Asia/Bangkok. AI-authored research under [Ren's question and continuation](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md). Canonical account: [GENERATED-LOGIC](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md).
+2026-10-08, Asia/Bangkok. AI-authored research under [Ren's question and continuation](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md). Canonical account: [GENERATED-LOGIC](../../../../theories/becoming/chapters/GENERATED-LOGIC.md).
 
 **Subsequent completion, 8 October 2026:** [the contextual continuation](CONTEXTUAL-LOGIC-INTEGRATION.md) closes this pilot's frozen-context, event-budget and selected-workload abstraction interface with 37 additional checked theorems. The original 38 theorems and source-bound receipt below are unchanged. The final next-step paragraph is this first round's historical proposal; the current remaining question concerns a substantively richer target and comparison with existing resource logics. / 后续已完成固定上下文及有范围摘要，保留完整初始相容、动态交错与实际时间的不同范围，不重开本轮已完成判据。
 

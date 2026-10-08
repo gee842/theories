@@ -1,6 +1,6 @@
 # An encounter can matter before a special bond is formed
 
-6 October 2026. AI-authored source adjudication for **actual undergoing and an available transformation → practical favor**, following the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). The distinction is between a present responsive relation and a required antecedent special bond. This is a primary philosophical comparison, not an empirical result or proof that every capable process necessarily has the proposed reason.
+6 October 2026. AI-authored source adjudication for **actual undergoing and an available transformation → practical favor**, following the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). The distinction is between a present responsive relation and a required antecedent special bond. This is a primary philosophical comparison, not an empirical result or proof that every capable process necessarily has the proposed reason.
 
 ## 1. Inherited work and selected extension
 

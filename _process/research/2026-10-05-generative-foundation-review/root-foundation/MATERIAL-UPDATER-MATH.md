@@ -1,12 +1,12 @@
 # Typed material constraints on updater formation
 
-6 October 2026. AI-assisted mathematical companion to [material updater composition](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATERIAL-UPDATER-COMPOSITION.md). The named transition is **actual formation of constituents → construction and replacement of response selectors and their updating modules using the same constituents and support history**. This extends a declared local model; it does not derive physical wiring, sensory transduction or a meta-selection mechanism from the root alone.
+6 October 2026. AI-assisted mathematical companion to [material updater composition](../../../../theories/becoming/chapters/MATERIAL-UPDATER-COMPOSITION.md). The named transition is **actual formation of constituents → construction and replacement of response selectors and their updating modules using the same constituents and support history**. This extends a declared local model; it does not derive physical wiring, sensory transduction or a meta-selection mechanism from the root alone.
 
 ## 1. Which process is being refined
 
 The operational predecessor is `UpdaterFormation`, including its paid `formModule` events. Its state contains the full selector state, updater kind, updater lease, whether a selector has previously been assembled, source remainder and coarse material total. A module formation spends two fuel units in the primary parameters even though it has no corresponding selector event. Erasing it would not preserve the paid state sequence. The present refinement keeps every updater event and its complete updater-state successor.
 
-The [original updater interface](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UPDATER-FORMATION.md) uses reusable material slots. Here each new construction additionally binds previously free typed components, with no reclamation. Thus a trace projects to the coarse updater law, but an arbitrary coarse trace need not lift. The two material laws are not identified or assigned equal probabilities.
+The [original updater interface](../../../../theories/becoming/chapters/UPDATER-FORMATION.md) uses reusable material slots. Here each new construction additionally binds previously free typed components, with no reclamation. Thus a trace projects to the coarse updater law, but an arbitrary coarse trace need not lift. The two material laws are not identified or assigned equal probabilities.
 
 Let an operational state be
 

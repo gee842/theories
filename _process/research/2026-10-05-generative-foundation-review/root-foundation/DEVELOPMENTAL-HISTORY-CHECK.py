@@ -35,7 +35,7 @@ def main():
     for edit in edits['edits']:
         path=ROOT/edit['path'];assert edit['owned_passage'] in path.read_text(),edit['path']
         check_links(path,edit['owned_passage'])
-    theory=ROOT/'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md'
+    theory=ROOT/'theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md'
     assert [l for l in theory.read_text().splitlines() if l.startswith('| **')]==edits['six_requirement_rows']
     assert len(edits['six_requirement_rows'])==6
     measured=json.loads((PACKAGE/'measurement-verification.json').read_text())

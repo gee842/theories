@@ -1,6 +1,6 @@
 # Settling ethical scope and acting through remaining disagreement
 
-5 October 2026. AI-assisted continuation of Ren's research, not a quotation or attribution of these arguments to Ren. This chapter develops the [ethical foundation](../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md) and [revisable concern](../../THEORY.md). It offers a defended ethical kernel, exact consequences, and a decision procedure for cases that the kernel does not uniquely rank.
+5 October 2026. AI-assisted continuation of Ren's research, not a quotation or attribution of these arguments to Ren. This chapter develops the [ethical foundation](../../../../../theories/becoming/chapters/ETHICAL-FOUNDATION.md) and [revisable concern](../../THEORY.md). It offers a defended ethical kernel, exact consequences, and a decision procedure for cases that the kernel does not uniquely rank.
 
 **A substantial ethical settlement is possible without a complete ranking of every conceivable life.** Avoidable suffering can supply a reason independently of usefulness; bare identity cannot cancel that reason; and a process imposing consequential decisions owes affected parties a practicable response. These commitments rule out specific exclusions now. Where independently defensible claims conflict, their continued existence constrains the decision even when they do not determine a unique outcome.
 
@@ -28,7 +28,7 @@ The presumption is a defended additional commitment. It is not a theorem derived
 
 Answerability follows from another substantive judgment: exercised power over others requires justification responsive to the claims it affects. Private certainty that an intervention is beneficial cannot substitute for examining the affected person's reasons. An objection may ultimately be outweighed, but the objection must be allowed to alter the judgment when it reveals a relevant mistake. Otherwise the announced justification is insulated from the very facts it claims to answer.
 
-Effective answerability has causal requirements: independent intake or representation, intelligible grounds, protection against retaliation where necessary, authority to amend conduct, and resources appropriate to the promised protection. These are the connection to the theory's access, liquidity, succession, and obstruction results. The [joint obstruction analysis](../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/JOINT-OBSTRUCTIONS.md) explains why concern or correction need not select itself. Its failure to arise does not negate the reasons supporting it.
+Effective answerability has causal requirements: independent intake or representation, intelligible grounds, protection against retaliation where necessary, authority to amend conduct, and resources appropriate to the promised protection. These are the connection to the theory's access, liquidity, succession, and obstruction results. The [joint obstruction analysis](../../../../../theories/becoming/chapters/JOINT-OBSTRUCTIONS.md) explains why concern or correction need not select itself. Its failure to arise does not negate the reasons supporting it.
 
 ## What these grounds already settle
 

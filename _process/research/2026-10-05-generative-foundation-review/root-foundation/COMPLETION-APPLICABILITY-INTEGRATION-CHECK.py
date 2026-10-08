@@ -11,7 +11,7 @@ from urllib.parse import unquote, urlsplit
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[3]
 BUILD = ROOT / "experiments/integrated-correction/general-framework/generative-basis/lean/connected/applicability"
-CANON = ROOT / "theories/shengsheng-buxi-generative-existence/unified-2026-10-05"
+CANON = ROOT / "theories/becoming/chapters"
 
 
 def sha(path):

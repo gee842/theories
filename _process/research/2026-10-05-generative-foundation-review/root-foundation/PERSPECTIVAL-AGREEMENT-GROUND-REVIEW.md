@@ -1,6 +1,6 @@
 # Why agreement can change practical authority
 
-7 October 2026, Asia/Bangkok. AI-authored affirmative argument and counterreview continuing [prospective control](PERSPECTIVAL-PROSPECTIVE-CONTROL-INTEGRATION.md), under the [nondual method and terminology correction](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md#keep-foundational-language-at-the-right-level). **Scope:** philosophical explanation and constructed discriminators; no mathematical theorem, empirical finding or completed universal proof.
+7 October 2026, Asia/Bangkok. AI-authored affirmative argument and counterreview continuing [prospective control](PERSPECTIVAL-PROSPECTIVE-CONTROL-INTEGRATION.md), under the [nondual method and terminology correction](../../../../theories/becoming/chapters/NONDUAL-METHOD.md#keep-foundational-language-at-the-right-level). **Scope:** philosophical explanation and constructed discriminators; no mathematical theorem, empirical finding or completed universal proof.
 
 **Finding:** agreement can partly constitute a worthwhile way of arranging a shared continuation, rather than merely announce preferences or predict cooperation. This supports a candidate reason for fidelity, while the full directed duty and power of release still need explanation. It supports legitimate finality as well as change. It does not yet establish a universal limit on deliberately accepted subordination: the account must defend which forms of arranging shared life have this favorable character and which powers they can confer.
 

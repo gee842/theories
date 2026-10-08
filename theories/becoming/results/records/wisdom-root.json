@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "id": "wisdom-root",
+  "title": {
+    "zh": "核心作为智慧之根的目标",
+    "en": "Core as the root of wisdom target"
+  },
+  "kind": "target",
+  "status": "open",
+  "family": "F08",
+  "reviewed_at_utc": "2026-10-08T13:55:50.810696+00:00",
+  "claim": {
+    "zh": "待建立：核心不仅约束一般活动，还在所声明范围内构成并解释智慧的实际生成。",
+    "en": "Open: establish that the core not only constrains activity but constitutes and explains the actual formation of wisdom at the claimed scope."
+  },
+  "hypotheses": [
+    {
+      "zh": "保留获授权的必要关系与生成解释两部分；不能将局部成功条件改名为完整智慧。",
+      "en": "Retain both authorized components, necessary relations and generative explanation; local success conditions cannot simply be renamed full wisdom."
+    },
+    {
+      "zh": "按Ren本次纠正，以道德评价becoming、普遍生成原则支撑具体判断为正面路线；G0、J／C、实践解释及真实对应E明示，不以对手认可或无公理证明G0为门槛。",
+      "en": "Following Ren’s correction, pursue morality as appraisal of becoming through universal generative principles. G0, J/C, practical articulation and correspondence E remain explicit; neither a rival’s assent nor axiom-free proof of G0 gates this route."
+    }
+  ],
+  "correspondence": {
+    "zh": "第15节以固定G0/J/E说明八种构造判断、改变条件和错误诊断。角色、承担、认识与回应在同一展开中说明；特定任务的解除、真实生成可能性与比较不完备各保持其内容，固定规则的默认选择不冒充唯一正当答案。",
+    "en": "Section 15 applies fixed G0/J/E to eight constructed judgments, reversal conditions and error diagnoses. Roles, undertakings, knowing and response remain within one unfolding. Discharge, genuine generative possibilities and incomplete comparisons retain their content; a fixed selector’s default is not a uniquely warranted answer."
+  },
+  "canonical_source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+  "aliases": [],
+  "dependencies": [
+    {
+      "id": "practical-judgment-g0-j",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "既有G0/J普遍原则解释保留、转化、交接和结束的共同根据；第14节作哲学复用，不新增规范公理或Lean连接。",
+        "en": "Existing G0/J principles explain the common grounds of preservation, transformation, transfer and ending; section 14 reuses them philosophically without a new normative axiom or Lean adapter."
+      }
+    },
+    {
+      "id": "relational-generative-comparison",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "既有C条件下的关系信息必要性支撑模型须保留共同生成差别的论证；不证明全部伦理根基。",
+        "en": "The existing C-dependent information necessity supports retaining joint-generative differences in appraisal; it does not prove the entire ethical foundation."
+      }
+    },
+    {
+      "id": "positive-ground-open-futures",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "既有G0下的正面未来根据表明，生成形态开放与有根据的评价可以并存；不把正面方面升级为最终许可。",
+        "en": "The existing G0-based positive-future ground supports appraisal with open generative form; a positive aspect is not upgraded to final permission."
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "conditional-foundation-assessment",
+      "detail": {
+        "zh": "已完成候选有自己的有限智慧范围；不能自动升级为本目标。",
+        "en": "The completed candidate has its own bounded wisdom scope, which does not automatically satisfy this target."
+      }
+    },
+    {
+      "id": "risk-certificate-outcome-distinction",
+      "detail": {
+        "zh": "局部结果修正必要性检验强度，不构成整个根基的形式转换或完成证明。",
+        "en": "The local result corrects the strength of the necessity test; it is not a formal adapter or completion proof for the full root."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-RESPONSE-NECESSITY.md",
+      "detail": {
+        "zh": "足够描述不自动有仍充分的共同最粗表示。",
+        "en": "Sufficient descriptions need not admit a still-sufficient common coarsest representation."
+      }
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md",
+      "detail": {
+        "zh": "正确风险界限可伴随实际失败，不能用逐次必胜界定全部智慧。",
+        "en": "A true risk bound can accompany actual failure; infallible success cannot simply define all wisdom."
+      }
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+      "detail": {
+        "zh": "第12–14节的智慧范围与普遍原则路线保留。第15节指出既有固定选择器在不可比情形中的默认分支只满足非支配要求，不能升级为独优；构造例与已有数学结果也不能替代现实对应或历史覆盖。",
+        "en": "Sections 12–14 retain differentiated wisdom and the universal-principle route. Section 15 clarifies that the fixed selector’s default in incomparable cases meets nondomination without unique superiority; constructed applications and existing mathematical results do not substitute for actual correspondence or historical coverage."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "目前完整目标未证；足够行动的多种描述也未必有共同最粗的充分描述。 目的评价的必要关系与有限判断范围修正已局部完成，不能升级为全部智慧的定义。",
+    "en": "The full target remains unproved; sufficient action descriptions need not have a common coarsest sufficient description. Local goal-ground necessity and the limited-judgment scope correction are complete, without becoming a definition of all wisdom."
+  },
+  "validation_scope": {
+    "zh": "第15节新增八种构造情境的哲学应用及反审，复用一般实践判断、目的评价、关系比较和开放未来的原证明。不新增定理、Lean运行、盲法历史检验或独立验收；完整根目标保持开放。",
+    "en": "Section 15 adds eight constructed philosophical applications and author counterreview, reusing the original practical, goal-ground, relational and open-future proofs. No new theorem, Lean run, blinded historical test or independent acceptance; the full root remains open."
+  },
+  "references": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+      "role": "statement",
+      "sha256": "c14b6211e0fa47115dfc4eb4305d0a9ad1b027bb8f98cfaacdd3e638e476527d",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-RESPONSE-NECESSITY.md",
+      "role": "integration",
+      "sha256": "909296674126cc6fe3d95253949079fadb62893c733759d9d5278e9b889da98e",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-result-centered-repository.md",
+      "role": "provenance",
+      "sha256": "a896df0f8f85139ab323dcb97878b86b2ab3d4c897e4587e15f4ca8b8f7e9017",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-FALLIBLE-JUDGMENT.md",
+      "role": "integration",
+      "sha256": "f5c69c32f6bcf032dae8149ea877ab136c8fc821c3572570a430d2e26ca68bf6",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md",
+      "role": "provenance",
+      "sha256": "4a87d84f3f7331d83d01c4f8a04b3c212d95a576fbbe477db232c6f1eff4b2dc",
+      "declarations": []
+    },
+    {
+      "path": "theories/becoming/chapters/WISDOM-AND-CONTEXT.md",
+      "role": "integration",
+      "sha256": "603a8b35a0fe934f72b563a94d16331006581c6b72fa629871a123a39714d46b",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [],
+  "next_delta": {
+    "zh": "将本组判断所需的实际区别与已完成目的形成、反馈取得和修订历史的输出逐项对应，说明形成的能力怎样取得理由并用于回应；复用机制，明示规范输入，继续检验道德及其他智慧范围。",
+    "en": "Match the distinctions needed by these judgments to outputs of completed goal formation, feedback acquisition and revision histories, explaining how formed capacities acquire reasons and use them in response. Reuse mechanisms, disclose normative inputs and continue testing moral and other wisdom scope."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：迁移既有成果身份与范围；不新增定理，不移动原始资料。",
+      "en": "2026-10-08: migrated existing result identity and scope; no new theorem or relocated source."
+    },
+    {
+      "zh": "2026-10-08：在原目标不变、仍开放的前提下，接入已完成目的评价与本轮有限判断修正；更新实际核读并追加的core来源，不重开已完成机制。",
+      "en": "2026-10-08: retained the unchanged open target while integrating completed goal evaluation and the limited-judgment correction; updated the read and extended core source, without reopening completed mechanisms."
+    },
+    {
+      "zh": "2026-10-08：在同一主研究第12节加入三个原典的有范围比较，区分判断／能力／完整解释；承认忠实对照未被排除，保持完整目标开放。不新增独立成果或数学计数。",
+      "en": "2026-10-08: added scoped comparisons of three primary texts in the existing study, distinguishing episodes, capacities and full explanation. The faithful comparator is not excluded and the full target remains open; no extra result identity or mathematical count."
+    },
+    {
+      "zh": "2026-10-08：第13节将忠实对照落实到两项原典及既有案例，区分实际关系的保留与普遍根据的争议；收窄下一连接，不新建成果身份、不新增定理。",
+      "en": "2026-10-08: section 13 makes the faithful comparison concrete through two primary texts and the existing case, distinguishing retained relations from disputed universal grounding. The next connection is narrowed; no new result identity or theorem."
+    },
+    {
+      "zh": "2026-10-08：Ren明确纠正Dancy导向，以道德判断becoming及本理论普遍原则为正面路线。第14节修订主线并复用既有成果；保留第13节文献及反循环边界，不重开无公理起点或已完成机制。",
+      "en": "2026-10-08: Ren corrects the Dancy-led framing and directs the affirmative route through morality as appraisal of becoming under this theory’s universal principles. Section 14 reuses established results while retaining section 13’s sources and anti-circularity limits; no axiom-free gate or completed mechanism is reopened."
+    },
+    {
+      "zh": "2026-10-08：沿道德评价becoming的主线，第15节固定共同前提展开八种判断，列明改变条件、非唯一选择与错误诊断。新增哲学应用，不重复计算既有定理；角色和情境为明示构造，未冒称独立历史样本。",
+      "en": "2026-10-08: section 15 develops eight judgments from shared premises along the becoming-appraisal route, stating reversal conditions, nonunique choice and error diagnoses. This adds philosophical applications without recounting existing theorems; constructed roles and cases are not independent historical evidence."
+    }
+  ]
+}

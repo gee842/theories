@@ -2,7 +2,7 @@
 
 **How concern can change its own scope, preserve warranted claims, and resist strategic exclusion.** A continuation of the formation and renewal of concern, 5 October 2026. Research direction from Ren; AI-assisted development, proofs, and internal review.
 
-**Later development:** [the integrated settlement](../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md) now supplies a conditional joint process for paid revision, retained grounds, strategic protection and renewal, alongside ethical decision results and an evidence audit. This chapter preserves the earlier modular argument and its then-open integration target; the [settlement record](settlement/README.md) states what has since been resolved and what remains open.
+**Later development:** [the integrated settlement](../../../theories/becoming/chapters/REVISABLE-CONCERN-SETTLEMENT.md) now supplies a conditional joint process for paid revision, retained grounds, strategic protection and renewal, alongside ethical decision results and an evidence audit. This chapter preserves the earlier modular argument and its then-open integration target; the [settlement record](settlement/README.md) states what has since been resolved and what remains open.
 
 ## The advance
 

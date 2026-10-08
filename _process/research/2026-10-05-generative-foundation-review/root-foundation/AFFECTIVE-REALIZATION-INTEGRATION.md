@@ -1,6 +1,6 @@
 # Formed affect before a narrative I
 
-6 October 2026. AI-authored research under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). The connection investigated is **formed regulation and acquired distinctions → an experiential episode with affective direction → local adversity and warranted response**. This supporting study specifies the experiential interface of the accepted derivation sequence. It adds no generative law, ethical axiom or claim that the complete foundation has been established.
+6 October 2026. AI-authored research under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). The connection investigated is **formed regulation and acquired distinctions → an experiential episode with affective direction → local adversity and warranted response**. This supporting study specifies the experiential interface of the accepted derivation sequence. It adds no generative law, ethical axiom or claim that the complete foundation has been established.
 
 **Result:** the target of an aversive direction and its participation in an experience are now explicit constitutive questions. Neither requires beginning the investigation with a narrative owner. We have a specific candidate and a substantive rival, with conditions for discriminating them. We have not derived experience, its badness for a bearer, or another actor's reason from the existing Lean dynamics.
 

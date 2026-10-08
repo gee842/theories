@@ -1,6 +1,6 @@
 # Later consequences change what should be investigated
 
-6 October 2026. AI-authored continuation following [Ren’s direction](../../../../sources/15-codex-theory-conversations/2026-10-06-calibration-revision-continuation.md), under the [shared nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). **Complete at the declared native and formal scope:** independent reconstruction accepts all 25 prescribed cases, and the fresh Lean build verifies 32 substantive theorems plus 399 generated correspondence certificates. The [preceding remaining-dependency result](REMAINING-DEPENDENCY-INTEGRATION.md) remains accepted at its own scope.
+6 October 2026. AI-authored continuation following [Ren’s direction](../../../../sources/15-codex-theory-conversations/2026-10-06-calibration-revision-continuation.md), under the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). **Complete at the declared native and formal scope:** independent reconstruction accepts all 25 prescribed cases, and the fresh Lean build verifies 32 substantive theorems plus 399 generated correspondence certificates. The [preceding remaining-dependency result](REMAINING-DEPENDENCY-INTEGRATION.md) remains accepted at its own scope.
 
 ## The particular connection
 

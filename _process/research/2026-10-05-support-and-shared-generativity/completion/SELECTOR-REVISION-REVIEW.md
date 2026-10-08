@@ -33,7 +33,7 @@ The reserve obstruction deserves an explicit statement: where there is no other 
 
 An embodied selector can change under fixed physical laws without the laws themselves changing. That can be a valid first instance of changing an effective selection mechanism. It does not automatically explain the origin of its repertoire, the mapping from return to maintenance, generalization to unseen response types, revision of the maintenance rule, represented objectives, or selection of new learning algorithms.
 
-Local support can favor an effective private selector while damaging other centers. Neither private persistence nor adaptation to a reversal derives shared concern or wisdom. The [governing roadmap](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md) keeps those later derivations open.
+Local support can favor an effective private selector while damaging other centers. Neither private persistence nor adaptation to a reversal derives shared concern or wisdom. The [governing roadmap](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md) keeps those later derivations open.
 
 ## What the construction actually changes
 

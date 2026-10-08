@@ -1,6 +1,6 @@
 # Acquired application distinctions: technical comparators and identification
 
-6 October 2026. AI-authored, link-only primary comparison under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Named connection: **different acquired consequences within one operative application class → refinement of that distinction → changed subsequent application**, while the retained sensory model remains valid. This note does not accept an implementation, run a new experiment or claim a new abstraction algorithm.
+6 October 2026. AI-authored, link-only primary comparison under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Named connection: **different acquired consequences within one operative application class → refinement of that distinction → changed subsequent application**, while the retained sensory model remains valid. This note does not accept an implementation, run a new experiment or claim a new abstraction algorithm.
 
 ## Primary antecedents
 

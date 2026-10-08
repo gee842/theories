@@ -15,7 +15,7 @@ sys.path.insert(0,str(ROOT))
 from tools.research import generative_chain as chain
 
 FORMAL = ROOT / 'experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root'
-RECORDS = ROOT / 'theories/shengsheng-buxi-generative-existence/results/records'
+RECORDS = ROOT / 'theories/becoming/results/records'
 IDS = ['acquired-binding-compositional-use','enacted-scene-binding','encounter-selection-and-revision',
        'naming-attention-coverage','encounter-control-and-retention','retrospective-source-binding','historical-source-binding']
 OUTPUT = HERE / 'HISTORICAL-BINDING-CHECKS.json'
@@ -48,7 +48,7 @@ def main():
         record=json.loads((RECORDS/(name+'.json')).read_text())
         for ref in record['references']:assert digest(ROOT/ref['path'])==ref['sha256'],ref['path']
     files=[HERE/'ACQUIRED-SEGMENTATION-INTEGRATION.md',FORMAL/'README.md',
-           ROOT/'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md',
+           ROOT/'theories/becoming/chapters/COGNITION-LEARNING-AND-EVOLUTION.md',
            *[RECORDS/(name+'.md') for name in IDS]]
     checked=0
     for path in files:

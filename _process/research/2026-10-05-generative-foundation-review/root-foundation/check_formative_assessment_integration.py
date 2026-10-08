@@ -12,7 +12,7 @@ sys.dont_write_bytecode = True
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[3]
 LEAN = ROOT / "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity"
-THEORY = ROOT / "theories/shengsheng-buxi-generative-existence/unified-2026-10-05"
+THEORY = ROOT / "theories/becoming/chapters"
 RESULT = HERE / "FORMATIVE-ASSESSMENT-CHECKS.json"
 
 

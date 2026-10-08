@@ -14,7 +14,7 @@ The active goal records the following full user direction, including the already
 > first of all, a cell is a part of an organ, which is a part of a body, the ecosystem
 > and there are also cognition in play, making decisions and choose activities
 
-AI-authored scope interpretation: the requested investigation includes actual biological part–whole organization, ecological participation and cognitively selected activity. Approximation between numerical descriptions alone does not answer this clarification. The [extended account](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md) and [integration record](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EMBODIED-SCALES-INTEGRATION.md) distinguish these explanatory relations and their validation scopes.
+AI-authored scope interpretation: the requested investigation includes actual biological part–whole organization, ecological participation and cognitively selected activity. Approximation between numerical descriptions alone does not answer this clarification. The [extended account](../../theories/becoming/chapters/RELATIONS-ACROSS-SCALES.md) and [integration record](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EMBODIED-SCALES-INTEGRATION.md) distinguish these explanatory relations and their validation scopes.
 
 
 ## Continuation of the operative revision study

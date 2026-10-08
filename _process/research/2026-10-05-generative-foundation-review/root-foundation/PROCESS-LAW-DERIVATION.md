@@ -1,6 +1,6 @@
 # Deriving the packet process law from its native activity
 
-6 October 2026. AI-assisted continuation of Ren's request to derive the process law, after the [inquiry-premise discharge](DERIVED-INQUIRY-PREMISES.md). This follows the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md): examine how a particular organization of activity produces its effective possibilities, retaining the relations that the coarse description omitted. A locally supplied law is not thereby external to generative reality.
+6 October 2026. AI-assisted continuation of Ren's request to derive the process law, after the [inquiry-premise discharge](DERIVED-INQUIRY-PREMISES.md). This follows the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md): examine how a particular organization of activity produces its effective possibilities, retaining the relations that the coarse description omitted. A locally supplied law is not thereby external to generative reality.
 
 The concrete target is the previously stipulated one-packet inquiry law. Its three represented targets, probe table and depletion are derived from the pre-existing executable apparatus's source conversion, contact gate and subsequent receipt acquisition. This is a derivation of an effective law from an independently implemented finer mechanism. The primitive cycle, gate and accounting rules of that mechanism remain inherited inputs; the origin of every fundamental law is not declared solved.
 

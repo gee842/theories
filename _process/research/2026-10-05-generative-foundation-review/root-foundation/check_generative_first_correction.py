@@ -77,7 +77,7 @@ for path in receipt['reviewed_owned_sources']:
 others = [e for s in data['sections'] for e in s['entries'] if e['id'] != 'M20']
 other_rows = '\n'.join(l for l in chain.OUTPUT.read_text().splitlines() if not l.startswith('| M20 |'))
 checks.append({'other_entries_match_mutation_snapshot': sha(json.dumps(others, ensure_ascii=False, sort_keys=True)) == receipt['other_entries_sha256'], 'other_rendered_lines_match_mutation_snapshot': sha(other_rows) == receipt['other_rendered_lines_sha256'], 'note': 'Differences after this mutation can be concurrent work; no other entry or rendered line was edited by this correction.'})
-direction = ROOT / 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md'
+direction = ROOT / 'theories/becoming/chapters/ALIGNMENT-DIRECTION.md'
 if chain.digest(direction) != receipt['accepted_alignment_direction_sha256']:
     errors.append('Accepted alignment direction differs from fixed fingerprint')
 source = ROOT / 'sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md'

@@ -1,6 +1,6 @@
 # Evidence interface for revising a learning route
 
-6 October 2026. AI-authored bounded formal and saved-evidence study, complementary to the successor-learning owner's route-revision implementation. **This is a conditional diagnostic interface, not a newly constructed meta-selector or sensor.** Its direction is formed learner → evidence about exercised update behavior → accountable revision of that behavior under the [generative foundation](../../../../../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md).
+6 October 2026. AI-authored bounded formal and saved-evidence study, complementary to the successor-learning owner's route-revision implementation. **This is a conditional diagnostic interface, not a newly constructed meta-selector or sensor.** Its direction is formed learner → evidence about exercised update behavior → accountable revision of that behavior under the [generative foundation](../../../../../../../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md).
 
 The accepted [successor-learning handoff](../successor-learning/HANDOFF.md) changes the acquired response `q` while its route `gamma` stays fixed. This study identifies what later evidence can and cannot establish about that route. It does not alter the parent, successor, renewal, recipient-recording or reason/protection laws. Costs and route semantics are already known when designing this synthetic analysis; no preregistration or empirical novelty is claimed.
 

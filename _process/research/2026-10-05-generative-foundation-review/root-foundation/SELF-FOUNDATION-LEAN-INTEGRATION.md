@@ -1,6 +1,6 @@
 # Generated self and ethical direction in the Lean generative model
 
-6 October 2026. AI-authored integration under [Ren's request to finish the foundation without adding assumptions or axioms](../../../../sources/15-codex-theory-conversations/2026-10-06-self-foundation-lean-no-additions.md). The current philosophical account remains [The generated I and ethics without a fundamental owner](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-SELF-AND-ETHICS.md).
+6 October 2026. AI-authored integration under [Ren's request to finish the foundation without adding assumptions or axioms](../../../../sources/15-codex-theory-conversations/2026-10-06-self-foundation-lean-no-additions.md). The current philosophical account remains [The generated I and ethics without a fundamental owner](../../../../theories/becoming/chapters/GENERATED-SELF-AND-ETHICS.md).
 
 ## Outcome
 
@@ -41,7 +41,7 @@ These counterexamples do not assert that every process must form a self. A gener
 
 An initially considered specialization to the existing renewal/terminal model inherited `propext` through its old definitions, even with a direct proof. It was rejected under the stricter empty-new-dependency target. The final counterexample uses the existing constructively defined toggle law instead. The old definitions and old theorems remain unchanged. This technical rejection does not refute their mathematical statements.
 
-The [existing noninstrumental-concern account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md) keeps C1/C2 as explicit ethical contracts. Neither is imported as a new assumption to make this integration appear complete. The new structural comparisons are not substitutes for independently identified experiential adversity or for a reason to relieve it.
+The [existing noninstrumental-concern account](../../../../theories/becoming/chapters/NONINSTRUMENTAL-CONCERN.md) keeps C1/C2 as explicit ethical contracts. Neither is imported as a new assumption to make this integration appear complete. The new structural comparisons are not substitutes for independently identified experiential adversity or for a reason to relieve it.
 
 ## Verification and preservation
 

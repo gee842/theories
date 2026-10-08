@@ -1,6 +1,6 @@
 # Integrating the cost-sensitive learning evidence
 
-6 October 2026. AI-authored integration within the governing generative-foundation goal. **Accepted at its stated scope after independent collaborating-AI review and final figure inspection.** [Canonical account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COST-SENSITIVE-LEARNING.md).
+6 October 2026. AI-authored integration within the governing generative-foundation goal. **Accepted at its stated scope after independent collaborating-AI review and final figure inspection.** [Canonical account](../../../../theories/becoming/chapters/COST-SENSITIVE-LEARNING.md).
 
 ## The transition and the reason for selecting it
 

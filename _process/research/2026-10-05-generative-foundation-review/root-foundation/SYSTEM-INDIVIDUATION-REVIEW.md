@@ -2,7 +2,7 @@
 
 8 October 2026, Asia/Bangkok. AI-authored independent review for Ren's request to continue **“What makes something a system, and how do its constitutive relationships generate its possibilities and changes?”** This first part assesses the route and its evidence; the completion-stage assessment below will identify the actual artifacts reviewed. No new mathematical theorem, empirical experiment or impossibility result is asserted here.
 
-The [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md), [current scope](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope) and [preceding constitutive argument](CONSTITUTIVE-WARRANT-ARGUMENT.md) govern this assessment. The separate completed G0/J ethical route remains untouched.
+The [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md), [current scope](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope) and [preceding constitutive argument](CONSTITUTIVE-WARRANT-ARGUMENT.md) govern this assessment. The separate completed G0/J ethical route remains untouched.
 
 ## 1. What the systems route can advance
 
@@ -18,7 +18,7 @@ Three uses must be kept distinct without treating them as separate realities:
 | An effective system for specified questions | An adequate relation between the retained description and the investigated possibilities | A uniquely privileged physical boundary, identity or mechanism |
 | An integrated organization | Evidence for the identified interdependence, joint operation, constraint or maintenance relationship | Perpetual renewal, independent existence, learning or ethical goodness |
 
-An uncoupled collection can be a legitimate mathematical system. Its treatment as a system does not establish the richer integration claim. Conversely, failure of autonomous reduction does not make an open organization unreal. The existing [systems chapter](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md) already establishes exact projection and autonomous-law conditions, assembly effects and regime-sensitive feedback. Reusing those results is appropriate; repeating them under the name “systemhood” would not be a new foundational derivation.
+An uncoupled collection can be a legitimate mathematical system. Its treatment as a system does not establish the richer integration claim. Conversely, failure of autonomous reduction does not make an open organization unreal. The existing [systems chapter](../../../../theories/becoming/chapters/SYSTEMS-COMPLEXITY-CHAOS.md) already establishes exact projection and autonomous-law conditions, assembly effects and regime-sensitive feedback. Reusing those results is appropriate; repeating them under the name “systemhood” would not be a new foundational derivation.
 
 ## 2. Substantive rival tests
 
@@ -84,7 +84,7 @@ The [independent retained receipt](development/system-individuation-review/20261
 
 | Reviewed artifact | SHA-256 at final review |
 |---|---|
-| [Current account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-INDIVIDUATION.md), including the supplemental §3 proof summary | `62416ce3c87f922d7b52904aa09777735b7ddb0724a94011f7bf841dc5cfebc7` |
+| [Current account](../../../../theories/becoming/chapters/SYSTEM-INDIVIDUATION.md), including the supplemental §3 proof summary | `62416ce3c87f922d7b52904aa09777735b7ddb0724a94011f7bf841dc5cfebc7` |
 | [Affirmative argument](SYSTEM-INDIVIDUATION-ARGUMENT.md) | `26fe3d9da0378186f824cf92b6d358d763bd87fecfbcb471d58d8ec81bc1cd79` |
 | [Formal note](SYSTEM-INDIVIDUATION-FORMAL.md) | `249db407ffd418ef968461608728307641b0078d4307235dcfce3a43eb5594c6` |
 | [Integration](SYSTEM-INDIVIDUATION-INTEGRATION.md) | `395cec32bacd430bfd702abc144a98d67952b2fceb5f23059b3e0146c0012975` |

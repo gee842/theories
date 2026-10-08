@@ -1,6 +1,6 @@
 # Closing the unified ethical account at its warranted scope
 
-6 October 2026. AI-authored review under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Named connection: **actual worthwhile transformation, available response and consequential formation of further possibilities**. This reviews the [current ethical account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md), including its preserved objections, and the [relational-goodness synthesis](RELATIONAL-GOODNESS-ARGUMENT.md). It proposes finite explanatory closure without claiming the stronger research goal achieved.
+6 October 2026. AI-authored review under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Named connection: **actual worthwhile transformation, available response and consequential formation of further possibilities**. This reviews the [current ethical account](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md), including its preserved objections, and the [relational-goodness synthesis](RELATIONAL-GOODNESS-ARGUMENT.md). It proposes finite explanatory closure without claiming the stronger research goal achieved.
 
 ## 1. The account that can be brought together
 

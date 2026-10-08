@@ -1,6 +1,6 @@
 # Activity transforms its own conditions of applicability
 
-6 October 2026. AI-authored integration following [Ren's core/tree correction](../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md) and the [shared nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Ren's words remain in the source record. The [scope record](NONDUAL-APPLICABILITY-QUESTION.md) identifies this as reconstruction of known laws, not preregistration of an unknown result.
+6 October 2026. AI-authored integration following [Ren's core/tree correction](../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md) and the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Ren's words remain in the source record. The [scope record](NONDUAL-APPLICABILITY-QUESTION.md) identifies this as reconstruction of known laws, not preregistration of an unknown result.
 
 ## What this round establishes
 

@@ -28,4 +28,4 @@ The final sentence selects intelligence as the session's addressed domain. The e
 
 Other concurrent research retains its authorization and scope. Within this session, a local case is relevant only as an explicit test, necessary premise or counterexample for the universal derivation. A failed route must be preserved rather than presented as either universal success or a proof of impossibility.
 
-See the [canonical scope](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence) and [universal derivation agenda](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NORMATIVE-WARRANT-INTEGRATION.md#universal-derivation-now-governs-this-session).
+See the [canonical scope](../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence) and [universal derivation agenda](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NORMATIVE-WARRANT-INTEGRATION.md#universal-derivation-now-governs-this-session).

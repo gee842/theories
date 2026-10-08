@@ -1,6 +1,6 @@
 # Continuing dependency: independent review
 
-6 October 2026. AI-authored mathematical and assumption review under the [shared method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). This file is owned by the independent reviewer. The review supplied prospective design criticism; that participation is disclosed rather than represented as an independent discovery of the study's target. No original source law has been changed by this reviewer.
+6 October 2026. AI-authored mathematical and assumption review under the [shared method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). This file is owned by the independent reviewer. The review supplied prospective design criticism; that participation is disclosed rather than represented as an independent discovery of the study's target. No original source law has been changed by this reviewer.
 
 **Current status:** accepted at the stated conditional mathematical and finite-computational scope. The prospective hand argument below preceded the independent run. The source-bound finite reconstruction, new Lean statements and preserved isolated build receipt have now also been reviewed, as recorded in the final checkpoint. This acceptance does not certify a newly acquired dependency model or complete the broader foundation.
 

@@ -1,6 +1,6 @@
 # Integration and independent review record
 
-5 October 2026. Coordinating review of the team continuation requested by Ren. The [integrated chapter](../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REVISABLE-CONCERN-SETTLEMENT.md) is the current synthesis; the [protocol](../PROTOCOL.md) states the acceptance conditions and the [baseline](../BASELINE.json) records the starting evidence. This is internal AI-assisted review, not external peer review.
+5 October 2026. Coordinating review of the team continuation requested by Ren. The [integrated chapter](../../../../../theories/becoming/chapters/REVISABLE-CONCERN-SETTLEMENT.md) is the current synthesis; the [protocol](../PROTOCOL.md) states the acceptance conditions and the [baseline](../BASELINE.json) records the starting evidence. This is internal AI-assisted review, not external peer review.
 
 ## Contributions and composition
 

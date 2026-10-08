@@ -123,16 +123,16 @@
 
 未逐章重审全部旧稿、没有核听原始音频、没有为预测处理或心智理论作独立神经科学文献审查，也没有将当前二值机制认作真实人类认知的完整实现。古典原文的本轮主证由并行研究负责；本文使用前轮 [儒家阅读 §2.2][Conf] 的恕之限度作为连续性背景，不以现代模型替代经文解读。没有新增实验、形式证明或经验验证。
 
-[D]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md
-[G]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md
-[F]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md
-[I]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LEARNING-INTERFACE.md
-[P]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PREDICTION-ACTION.md
-[C]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CORRECTION.md
-[S]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SCIENTIFIC-PHILOSOPHY.md
-[H]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md
-[E]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md
-[R]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECORDED-REASONS.md
+[D]: ../../../../theories/becoming/chapters/DEEPER-GENERATIVE-ROOT.md
+[G]: ../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md
+[F]: ../../../../theories/becoming/chapters/FOUNDATION-PREMISES.md
+[I]: ../../../../theories/becoming/chapters/LEARNING-INTERFACE.md
+[P]: ../../../../theories/becoming/chapters/PREDICTION-ACTION.md
+[C]: ../../../../theories/becoming/chapters/RECIPIENT-CORRECTION.md
+[S]: ../../../../theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md
+[H]: ../../../../theories/becoming/chapters/HUIGEN.md
+[E]: ../../../../theories/becoming/chapters/ETHICAL-FOUNDATION.md
+[R]: ../../../../theories/becoming/chapters/RECORDED-REASONS.md
 [Book]: ../../../../sources/07-shengsheng-buxi/downloads-2026-07-08/2026-07-14-生生不息论.md
 [Emotion]: ../../../../sources/12-claude-ai-chats/2026-04-28_Prediction_error_and_identification_in_emotion_regulation_56d9d498.md
 [JianChat]: ../../../../sources/12-claude-ai-chats/2026-05-04_求导求积与其他势的处理方法_35c49130.md
@@ -140,5 +140,5 @@
 [Translation]: ../../../../drafts/2026-10-04-soi-si-lom-5-2/translation-zh.md
 [Three]: ../../../../drafts/2026-09-05-generative-foundations/三层现实与认知反馈_论证补篇.md
 [Gloss]: ../../../../GLOSSARY.md
-[TheoryReadme]: ../../../../theories/shengsheng-buxi-generative-existence/README.md
+[TheoryReadme]: ../../../../theories/becoming/README.md
 [Conf]: WENYAN-CONFUCIAN.md

@@ -1,6 +1,6 @@
 # 良知演化续进：发展中的回应重建与进一步形成
 
-2026年10月7日，Asia/Bangkok。AI 撰写，继续 Ren 的[良知生成演化方向](../../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md)。本轮接在[首轮传递接口](LIANGZHI-EVOLUTION-INTEGRATION.md)之后；当前理论入口为[本然良知的生成演化](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md)。
+2026年10月7日，Asia/Bangkok。AI 撰写，继续 Ren 的[良知生成演化方向](../../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md)。本轮接在[首轮传递接口](LIANGZHI-EVOLUTION-INTEGRATION.md)之后；当前理论入口为[本然良知的生成演化](../../../../theories/becoming/chapters/LIANGZHI-EVOLUTION.md)。
 
 ## 1. 新连接与既有成果的关系
 

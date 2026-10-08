@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "id": "scientific-inquiry-foundation",
+  "title": {
+    "zh": "科学探究之必要关系基础",
+    "en": "Necessary relational foundation of scientific inquiry"
+  },
+  "kind": "target",
+  "status": "open",
+  "family": "F11",
+  "reviewed_at_utc": "2026-10-08T13:59:58.351644+00:00",
+  "claim": {
+    "zh": "待完成：从独立说明的科学成就及同一展开的真实关系，证明完整所提核心在所声明科学范围内不可缺少，不以接受核心定义充分性。",
+    "en": "Open: establish the indispensability of the full proposed core across the intended scientific scope from independently stated achievements and actual relationships within one unfolding, without defining adequacy as acceptance of the core."
+  },
+  "hypotheses": [
+    {
+      "zh": "用户明确要求完成必要科学基础；已完成局部定理直接复用，完整理论及伦理普遍性保留不同范围。",
+      "en": "The user explicitly requests completing the necessary scientific foundation; reuse completed local theorems and distinguish whole-theory and ethical universality."
+    }
+  ],
+  "correspondence": {
+    "zh": "逐项说明核心承诺与科学问题的连接；表示差异不自动否定共同基础，局部必要性也不自动证明完整基础。",
+    "en": "Map each core commitment to a scientific question; differences of representation do not refute a common foundation, and local necessity does not prove the whole foundation."
+  },
+  "canonical_source": "theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md",
+  "aliases": [],
+  "dependencies": [
+    {
+      "id": "finite-fallible-inquiry-necessity",
+      "relation": "interpretive",
+      "detail": {
+        "zh": "已证可错辨别约束为核心映射提供输入；整个核心的映射和范围仍未完成。",
+        "en": "The checked fallible-discrimination constraint supplies an input to the core mapping; mapping and scope of the full core remain unfinished."
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "multivalued-joining-common-structure",
+      "detail": {
+        "zh": "复用同一接合的共同结构结果，不把它升级为所有科学解释已满足其问题范围。",
+        "en": "Reuse the common-structure result for one joining law without assuming that all scientific explanations undertake its question scope."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
+      "detail": {
+        "zh": "有限自然数权重、完整读数、共同规则及实际概率对应明示；没有校准真实法则或证明整个核心的科学普遍必要性。",
+        "en": "Finite natural weights, complete readouts, a common rule and actual probability correspondence are explicit; no calibration of actual laws or science-wide necessity of the whole core is proved."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "有限自然数权重、完整读数、共同规则及实际概率对应明示；没有校准真实法则或证明整个核心的科学普遍必要性。",
+    "en": "Finite natural weights, complete readouts, a common rule and actual probability correspondence are explicit; no calibration of actual laws or science-wide necessity of the whole core is proved."
+  },
+  "validation_scope": {
+    "zh": "登记未完成的普遍目标和本轮确立的有限推进；不是新的普遍定理或不可能性结论。",
+    "en": "Records the unfinished universal target and this round’s finite advance, not a new universal theorem or impossibility result."
+  },
+  "references": [
+    {
+      "path": "theories/becoming/chapters/SCIENTIFIC-PHILOSOPHY.md",
+      "role": "statement",
+      "sha256": "a2c45060bb7021847d812e0fce3ea72be2fc817cae2256a84489b967d66ab9c8",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-INQUIRY-CONDITIONS.md",
+      "role": "integration",
+      "sha256": "d4bbd75fc720efd4c1d2d2d43f2674fdfb88d2a0dc2fc90477a299046781f09d",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md",
+      "role": "provenance",
+      "sha256": "b45a269fc679cfe24c4dcb142f4e39e73d403502be62a7c11c3ca5fa3317f2d9",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [],
+  "next_delta": {
+    "zh": "明确尚需科学普遍必要性证明的核心承诺，并给出独立问题、对应及真正对手；不把此次局部证明升级为全理论完成。",
+    "en": "Identify the further core commitment requiring a science-wide necessity proof, with an independent task, correspondence and substantive rival; do not upgrade this local proof to whole-theory completion."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：按最新明确完成请求登记本会话目标；条件形式进展和普遍完成分开。",
+      "en": "2026-10-08: records this session’s latest explicit completion request, separating conditional formal progress from universal completion."
+    }
+  ]
+}

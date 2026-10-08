@@ -1,6 +1,6 @@
 # Direction, renewal and the limits of monotone progress
 
-5 October 2026. AI-assisted formal clarification for Ren's descriptive direction-of-reality proposal. This note sharpens the quantifiers of the [common specification](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-SPECIFICATION.md); it does not replace the positive research objective with a counterexample. The finite-state propositions below are elementary consequences of the stated generator, not new laws of physics.
+5 October 2026. AI-assisted formal clarification for Ren's descriptive direction-of-reality proposal. This note sharpens the quantifiers of the [common specification](../../../../theories/becoming/chapters/FORMAL-SPECIFICATION.md); it does not replace the positive research objective with a counterexample. The finite-state propositions below are elementary consequences of the stated generator, not new laws of physics.
 
 ## 1. Three different observations
 

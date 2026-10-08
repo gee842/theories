@@ -2,9 +2,9 @@
 
 6 October 2026. AI-authored philosophical note for alignment requirement 5
 (plural agency and authority) of the
-[completion contract](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md).
+[completion contract](../../../../theories/becoming/chapters/ALIGNMENT-COMPLETION.md).
 It is not Ren's wording, and nothing in it is proved unless a Lean name is
-cited. It follows the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md):
+cited. It follows the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md):
 the centers, the rule and whoever evaluates it are treated as parts of one
 unfolding history, so no judging position outside that history is assumed.
 

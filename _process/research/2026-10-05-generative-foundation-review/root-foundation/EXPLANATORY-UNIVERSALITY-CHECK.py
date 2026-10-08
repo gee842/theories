@@ -16,7 +16,7 @@ sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 def main():
     spec=importlib.util.spec_from_file_location('chain',HERE/'build_generative_chain.py')
     chain=importlib.util.module_from_spec(spec);spec.loader.exec_module(chain)
-    docs=[HERE/'EXPLANATORY-UNIVERSALITY-INTEGRATION.md',HERE/'EXPLANATORY-JOINING-INTEGRATION.md',ROOT/'sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md',ROOT/'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md']
+    docs=[HERE/'EXPLANATORY-UNIVERSALITY-INTEGRATION.md',HERE/'EXPLANATORY-JOINING-INTEGRATION.md',ROOT/'sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md',ROOT/'theories/becoming/chapters/EXPLANATORY-NECESSITY.md']
     edits=json.loads((HERE/'EXPLANATORY-UNIVERSALITY-INDEX-EDITS.json').read_text())
     contents=[(p,p.read_text()) for p in docs]
     for e in edits['shared_file_insertions']:

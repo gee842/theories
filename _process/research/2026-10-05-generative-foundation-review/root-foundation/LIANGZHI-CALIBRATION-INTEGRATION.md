@@ -1,6 +1,6 @@
 # 良知生成研究：关系辨别的证据与伦理校准
 
-2026年10月7日，Asia/Bangkok。AI 撰写，继续 Ren 的[生成演化方向](../../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md)。本轮完成两项原始研究的判别性评估、肯定论证、现有形式接口对应及实质反审；**新增的是认识前提的经验支持和更精确的对应，不是新的普遍伦理证明或新增动力学模型。** 当前表述见[本然良知的生成演化](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md)。
+2026年10月7日，Asia/Bangkok。AI 撰写，继续 Ren 的[生成演化方向](../../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md)。本轮完成两项原始研究的判别性评估、肯定论证、现有形式接口对应及实质反审；**新增的是认识前提的经验支持和更精确的对应，不是新的普遍伦理证明或新增动力学模型。** 当前表述见[本然良知的生成演化](../../../../theories/becoming/chapters/LIANGZHI-EVOLUTION.md)。
 
 ## 1. 本轮解决了什么
 

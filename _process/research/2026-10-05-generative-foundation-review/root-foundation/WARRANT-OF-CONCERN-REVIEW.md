@@ -1,6 +1,6 @@
 # Actual undergoing and the warrant of concern
 
-6 October 2026. AI-authored constructive review under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Named connection: **actual undergoing and its possible transformation → what warrants concern within that relation**. The [coformation integration](YITI-REN-COFORMATION-INTEGRATION.md) supplies the starting account, not a new proof that every informed process becomes caring. No new experiment, formal result or primary-source reading is claimed.
+6 October 2026. AI-authored constructive review under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Named connection: **actual undergoing and its possible transformation → what warrants concern within that relation**. The [coformation integration](YITI-REN-COFORMATION-INTEGRATION.md) supplies the starting account, not a new proof that every informed process becomes caring. No new experiment, formal result or primary-source reading is claimed.
 
 ## 1. Preserve the phenomenon before criticizing the claim
 

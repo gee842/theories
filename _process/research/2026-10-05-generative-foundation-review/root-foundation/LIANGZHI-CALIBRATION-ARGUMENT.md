@@ -1,10 +1,10 @@
 # 良知校准的认识入口：实际所需、请求与共同活动
 
-2026年10月7日。AI 撰写，接续 Ren [良知生成演化方向](../../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md)及“请继续”。遵循[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)。本轮的积极主张是：**早期回应可以辨别共同活动中的目标与手段关系，实际关系能够纠正对表面动作和请求的解释；这给良知所需的一项认识能力以独立经验支持。** 它尚不是该能力全部伦理内容已经得到校准，更不是本然良知的普遍证明。
+2026年10月7日。AI 撰写，接续 Ren [良知生成演化方向](../../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md)及“请继续”。遵循[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)。本轮的积极主张是：**早期回应可以辨别共同活动中的目标与手段关系，实际关系能够纠正对表面动作和请求的解释；这给良知所需的一项认识能力以独立经验支持。** 它尚不是该能力全部伦理内容已经得到校准，更不是本然良知的普遍证明。
 
 ## 1. 当前连接，及其对普遍目标的贡献
 
-[上一轮](LIANGZHI-DEVELOPMENT-INTEGRATION.md)已把发展中的联结形成、实际回应与再下一代运行接成有限历史。更丰富的[评价接续](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-SUCCESSION.md)、[履行后的撤回](FULFILLMENT-WITHDRAWAL-INTEGRATION.md)与[自模型认证](PLURAL-CLAIMS-INTEGRATION.md)也已存在。本轮不再增加一个小控制器来重述这些能力。
+[上一轮](LIANGZHI-DEVELOPMENT-INTEGRATION.md)已把发展中的联结形成、实际回应与再下一代运行接成有限历史。更丰富的[评价接续](../../../../theories/becoming/chapters/EVALUATIVE-SUCCESSION.md)、[履行后的撤回](FULFILLMENT-WITHDRAWAL-INTEGRATION.md)与[自模型认证](PLURAL-CLAIMS-INTEGRATION.md)也已存在。本轮不再增加一个小控制器来重述这些能力。
 
 [普遍根据研究的最新审计](UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md#13-latest-constitutive-tests-and-the-current-research-impasse)指出，首个伦理根据仍未成立。当前生成演化分支应当提供能够判别解释的证据：所形成的回应是否取得了其声称辨明的关系，而不是只被命名为关切。它可以支持关于伦理意义与认识能力的共同解释；不能以认识前提的进展充当普遍规范结论。
 

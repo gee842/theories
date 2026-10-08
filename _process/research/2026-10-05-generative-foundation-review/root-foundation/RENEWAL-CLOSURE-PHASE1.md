@@ -1,6 +1,6 @@
 # Renewal and closure: claim, prior work and Phase 1 results
 
-6 October 2026 (UTC). AI-authored, following Ren's goal recorded in the [roadmap](RENEWAL-CLOSURE-ROADMAP.md). It covers Phase 0 (the claim, conventions and prior-art check) and Phase 1 (constructive necessity in Lean). It follows the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Here, "constraint" and "flow" are articulations relative to timescale within one activity; Phase 4 is where they are derived.
+6 October 2026 (UTC). AI-authored, following Ren's goal recorded in the [roadmap](RENEWAL-CLOSURE-ROADMAP.md). It covers Phase 0 (the claim, conventions and prior-art check) and Phase 1 (constructive necessity in Lean). It follows the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Here, "constraint" and "flow" are articulations relative to timescale within one activity; Phase 4 is where they are derived.
 
 ## Phase 0: the claim and its conventions
 

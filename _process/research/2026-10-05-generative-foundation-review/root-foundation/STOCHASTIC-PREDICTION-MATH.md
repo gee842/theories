@@ -1,16 +1,16 @@
 # The probability law of an actual paid prediction exposure
 
-6 October 2026. AI-authored mathematical interface study under the [generative-foundation goal](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md). **Accepted after the fresh formal build, independent executable comparison and final independent review.** The named connection is the installed predictor's actual, possibly unsuccessful exposure → its retained state and account → the next exposure. This advances compatible composition; it does not derive evaluative concern or replace the central understanding-to-concern work.
+6 October 2026. AI-authored mathematical interface study under the [generative-foundation goal](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md). **Accepted after the fresh formal build, independent executable comparison and final independent review.** The named connection is the installed predictor's actual, possibly unsuccessful exposure → its retained state and account → the next exposure. This advances compatible composition; it does not derive evaluative concern or replace the central understanding-to-concern work.
 
 ## 1. Why this is a concrete missing interface
 
-The [earlier protocol proof](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PREDICTION-PROTOCOL.md) establishes exact completed four-event trials of the deterministic payable-write law. Its source explicitly excludes stochastic outages, skipped writes and reconstruction. The [numerical predictor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py) implements a broader `advance` operation.
+The [earlier protocol proof](../../../../theories/becoming/chapters/PREDICTION-PROTOCOL.md) establishes exact completed four-event trials of the deterministic payable-write law. Its source explicitly excludes stochastic outages, skipped writes and reconstruction. The [numerical predictor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/model.py) implements a broader `advance` operation.
 
 These two laws are not globally equivalent. An executable exposure receives one scheduled packet whether or not its circuit works; an uncaptured packet is lost. An unpaid write can return a continuing predictor with changed leases and last action. Unaffordable rent destroys specified predictor fields. A later exposure can rebuild equipment. The older physical trial instead stops before an unaffordable write and does not consume an unused packet when work never occurs.
 
 The correct obligation is therefore to formalize the existing executable exposure, preserve its full probability mass and identify the exact overlap with the old completed-trial law. Reclassifying every noncompleted trial as an absorbing failure would change the executable mechanism.
 
-The general mathematics is already present in [repeated-renewal composition](../../2026-10-05-support-and-shared-generativity/completion/REPEATED-RENEWAL-COMPOSITION.md), §§2–3, and [formal specification](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-SPECIFICATION.md), P1–P2. This study supplies a concrete formal/executable boundary, rather than claiming a new probability principle.
+The general mathematics is already present in [repeated-renewal composition](../../2026-10-05-support-and-shared-generativity/completion/REPEATED-RENEWAL-COMPOSITION.md), §§2–3, and [formal specification](../../../../theories/becoming/chapters/FORMAL-SPECIFICATION.md), P1–P2. This study supplies a concrete formal/executable boundary, rather than claiming a new probability principle.
 
 ## 2. The operational state and the declared experiment
 

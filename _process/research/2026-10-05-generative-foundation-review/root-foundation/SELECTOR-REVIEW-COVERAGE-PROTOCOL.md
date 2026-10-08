@@ -8,7 +8,7 @@
 
 ## 已完成成果直接复用
 
-[实践判断](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md)、[对齐方向](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md)、[关切扩展](CONCERN-EXTENSION-INTEGRATION.md)、[评价开放](EVALUATIVE-EXTENSION-INTEGRATION.md)、[共同求知](SHARED-INQUIRY-AND-STANDING.md)、[模型修订](MODEL-REVISION-INTEGRATION.md)及[改革后证据](REFORM-EVIDENCE-INTEGRATION.md)保持完成范围。当前并行的 [alignment continuity 任务](ALIGNMENT-CONTINUITY-PROTOCOL.md)另负责观察可用纠正、改革后查询与实际接续；本轮不复制其实现。
+[实践判断](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md)、[对齐方向](../../../../theories/becoming/chapters/ALIGNMENT-DIRECTION.md)、[关切扩展](CONCERN-EXTENSION-INTEGRATION.md)、[评价开放](EVALUATIVE-EXTENSION-INTEGRATION.md)、[共同求知](SHARED-INQUIRY-AND-STANDING.md)、[模型修订](MODEL-REVISION-INTEGRATION.md)及[改革后证据](REFORM-EVIDENCE-INTEGRATION.md)保持完成范围。当前并行的 [alignment continuity 任务](ALIGNMENT-CONTINUITY-PROTOCOL.md)另负责观察可用纠正、改革后查询与实际接续；本轮不复制其实现。
 
 ## 未解连接
 

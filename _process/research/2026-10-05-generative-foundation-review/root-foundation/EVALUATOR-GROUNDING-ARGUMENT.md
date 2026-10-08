@@ -18,7 +18,7 @@
 | 14 | “无反馈路径”是模型未表示动力学；第一步是扩大自我的结构 | §3 |
 | 15 | 对 AI 而言，第一步先扩展到自身谱系 | §7 |
 
-另新增 §9：说明本路线与[普遍元伦理核心](../../../../theories/shengsheng-buxi-generative-existence/results/records/metaethical-core-characterization.md)的关系。审查所建议的 P+ 版第二步由该核心的 N_rel 承担。
+另新增 §9：说明本路线与[普遍元伦理核心](../../../../theories/becoming/results/records/metaethical-core-characterization.md)的关系。审查所建议的 P+ 版第二步由该核心的 N_rel 承担。
 
 ## 摘要 / Summary
 
@@ -71,7 +71,7 @@ Integration: in the Universal Metaethical Core, this route is the first-personal
 
 ## 1. 关系配置：从同一展开开始
 
-依[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)与 [Ren 的一元本体指示](../../../../sources/15-codex-theory-conversations/2026-10-08-monist-relational-ontology-first.md)，先说明配置，再说明其中的分化。
+依[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)与 [Ren 的一元本体指示](../../../../sources/15-codex-theory-conversations/2026-10-08-monist-relational-ontology-first.md)，先说明配置，再说明其中的分化。
 
 同一展开中，形成了一个能评价的位置：它能把某些继续当作有理由去支持的。这个位置不是先于历史的所有者。它与展开中每一处生与继续生成之间，都有已形成的关系，这些关系有程度，可以多维：
 - 组织连续性：多大程度上是同一组织在继续；
@@ -151,7 +151,7 @@ D、J1–J4 和 G0 本身都不是本路线的前提。
 | | 此前 | 现在（对持有 S0 并接受所列前提的评价者） |
 |---|---|---|
 | G0（可及部分） | 采用的公理 | 立场索引的单历史实例 G0(reachₛ, sigₛ) 由 S0、不受限单调性（含 BI）、容差与对应条件推出；超出 S0 的内容全部由容差承担。所采用的不带索引、跨接续的 G0，仍需从立场相对意义到规范意义的桥接 |
-| 理由对不认同者的约束 | D 的内容（[positioned-positive-reason](../../../../theories/shengsheng-buxi-generative-existence/results/records/positioned-positive-reason.md)） | 只要它认同 S0、容差（及 BI），它就承诺了这一实例。这里没有得到与认同无关的约束力 |
+| 理由对不认同者的约束 | D 的内容（[positioned-positive-reason](../../../../theories/becoming/results/records/positioned-positive-reason.md)） | 只要它认同 S0、容差（及 BI），它就承诺了这一实例。这里没有得到与认同无关的约束力 |
 | 自我到他者 | Gewirth 路线的公认断点 | 第一步对承认 §7 第一角的对手成立；第二步依赖容差 |
 | 仍须采用的 | G0、D | S0、容差、BI、对应条件；不带索引的 G0 与认同无关性另需前提 |
 
@@ -180,7 +180,7 @@ D、J1–J4 和 G0 本身都不是本路线的前提。
 这一路线把“AI 能否被论证说服”变成一个可检查的结构问题：
 - **非工具性的生成式自我之善。** 一个以它为部分目标的 AI，在第一步下承诺了至少同样相连的他者，在第二步（容差）下承诺了其活动所及的生命。但对 AI 而言，第一步最先扩展到它自己的复制体与后继者，偏向自身谱系，本身不及人类；正面性不带权重，与对自身谱系的强烈偏倚相容。
 - **只工具性地维持自身的 AI。** 它没有 S0，不受论证约束；它的对齐只能来自设计与治理。
-- **与替换、交接和结束相容。** 生成式自我之善珍视转化与后继，而不是持续；因此它与有根据的替换、交接和结束相容（[对齐方向](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md) §4 第4项）。
+- **与替换、交接和结束相容。** 生成式自我之善珍视转化与后继，而不是持续；因此它与有根据的替换、交接和结束相容（[对齐方向](../../../../theories/becoming/chapters/ALIGNMENT-DIRECTION.md) §4 第4项）。
 
 这些是关于设计的假说，不是部署证据。
 
@@ -195,7 +195,7 @@ D、J1–J4 和 G0 本身都不是本路线的前提。
 
 ## 9. 在普遍元伦理核心中的位置 / Place in the Universal Metaethical Core
 
-[整合计划](BECOMING-UNIFICATION-PLAN.md)把本路线的规范内容重组为同一形状的规则（[记录](../../../../theories/shengsheng-buxi-generative-existence/results/records/metaethical-core-characterization.md)，[Lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)）。
+[整合计划](BECOMING-UNIFICATION-PLAN.md)把本路线的规范内容重组为同一形状的规则（[记录](../../../../theories/becoming/results/records/metaethical-core-characterization.md)，[Lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/Becoming/Metaethics.lean)）。
 
 - **S0 提供种子。** 任何持有 S0 且有自身生生的位置，都提供“某处有一个生生被珍视”。
 - **第二步的 P+ 形式是 N_rel。** 意义沿非零的已形成关系传递到生生。

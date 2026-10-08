@@ -4,7 +4,7 @@
 
 **Current conclusion:** finite discrimination, extensional identity, finite Boolean formation and neutrality under renaming support a strong account of how admitted predicates are organized. They do not yet warrant the admission of every predicate. Unrestricted directed completion gives the desired full range, but its quantification over every relevant family is the substantive commitment to justify. The present attempt isolates that commitment more exactly; it does not derive it from the current minimal root.
 
-The [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) governs this comparison. Finite pieces, completed relations, mathematical judgments and their changing uses are differentiated relations within the same inquiry. An admission principle supplied to a formalization is not thereby outside generative reality. The question is which connections have been explained within that reality, rather than how to cross a presumed division between a mathematical realm and an observing mind.
+The [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) governs this comparison. Finite pieces, completed relations, mathematical judgments and their changing uses are differentiated relations within the same inquiry. An admission principle supplied to a formalization is not thereby outside generative reality. The question is which connections have been explained within that reality, rather than how to cross a presumed division between a mathematical realm and an observing mind.
 
 ## 1. Preserve the achievement and the genealogy
 

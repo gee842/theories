@@ -1,6 +1,6 @@
 # Embodied choices across scales — checked correspondence
 
-8 October 2026. [Current account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md) · [integration and counterreview](EMBODIED-SCALES-INTEGRATION.md) · [Lean source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean) · [receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/embodied-scales-verification.json).
+8 October 2026. [Current account](../../../../theories/becoming/chapters/RELATIONS-ACROSS-SCALES.md) · [integration and counterreview](EMBODIED-SCALES-INTEGRATION.md) · [Lean source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean) · [receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/embodied-scales-verification.json).
 
 ## Mathematical interface
 

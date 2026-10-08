@@ -51,7 +51,7 @@ Individual relief, prospective rule repair and delivered retrospective remedies 
 
 The constructive governance connection is therefore effective **reason transfer with bounded authority and actual fulfillment**. It protects plurality by carrying relevant grounds across cases while retaining differences, rights, uncertainty and further challenge. Institutional persistence or a successful appeal service alone is insufficient evidence that this connection works.
 
-[application]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md
+[application]: ../../../../theories/becoming/chapters/EVALUATIVE-APPLICATION.md
 [settlement]: ../../2026-10-05-revisable-concern/settlement/formal/REPORT.md
 [replay]: ../../2026-10-05-revisable-concern/settlement/formal/RECORDED-REASONS-MATH.md
 [reporting]: ../root-foundation/FUTURE-REPORTING-CONTRACT.md

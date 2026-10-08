@@ -9,10 +9,10 @@ recommendation, retaining efficacy knowledge and acquired influence**.
 
 ## 1. The gap this closes
 
-The [alignment completion contract](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-COMPLETION.md)
+The [alignment completion contract](../../../../theories/becoming/chapters/ALIGNMENT-COMPLETION.md)
 listed "fulfillment-sensitive withdrawal in the acquired evaluator" as
 unimplemented. The
-[application account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md)
+[application account](../../../../theories/becoming/chapters/EVALUATIVE-APPLICATION.md)
 stated exactly what an implementation must show:
 
 - an accessible, correctly bound record;

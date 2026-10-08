@@ -1,6 +1,6 @@
 # 生成解释、认知模型与伦理：现代研究对照
 
-2026-10-06。AI 定向研究，服务于[认知、理与恕的主稿](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LI-AND-RECIPROCITY.md)。这是模型层次与接口比较，不是认知科学全领域综述，也没有新增人类实验。
+2026-10-06。AI 定向研究，服务于[认知、理与恕的主稿](../../../../theories/becoming/chapters/COGNITION-LI-AND-RECIPROCITY.md)。这是模型层次与接口比较，不是认知科学全领域综述，也没有新增人类实验。
 
 ## 1. 三种对象必须保持可辨
 
@@ -24,7 +24,7 @@ Friston 等的过程理论研究是在明确的模型和优化前提下推导动
 
 Baker 等的 Bayesian Theory of Mind 用行为反推信念、欲望与感知，并在两个实验中比较人类判断和模型。本轮核读出版社摘要；作者存档 PDF 的检索文本可见，打开全文超时，未将全文实验细节列为已核验。[原论文，2017](https://www.nature.com/articles/s41562-017-0064)、[作者存档](https://cbmm.mit.edu/sites/default/files/publications/article.pdf)
 
-本轮从中取得的比较问题是：观察到的行动，需要依据行动者自己的信息和偏好来解释，而不能只代入观察者的偏好。仓库的[对象分别学习](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CORRECTION.md)也直接保留了不同对象可有相反作用规律的情形；但其有限电路与人类心理推断不是同一机制，也未提供人类认知的经验验证。
+本轮从中取得的比较问题是：观察到的行动，需要依据行动者自己的信息和偏好来解释，而不能只代入观察者的偏好。仓库的[对象分别学习](../../../../theories/becoming/chapters/RECIPIENT-CORRECTION.md)也直接保留了不同对象可有相反作用规律的情形；但其有限电路与人类心理推断不是同一机制，也未提供人类认知的经验验证。
 
 自我经验因而可以提供候选解释或初始参照。他者表达、观察、情境及既有关系可以支持或推翻它。尚无可靠信息时，应保存不确定性；不能仅靠把推测写成精确概率就获得可信度。检验对象是这个具体迁移是否成立。
 

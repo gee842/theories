@@ -6,13 +6,13 @@
 
 The conversation moved from G0 and knowledge to the entire philosophical account, then asked for successive deeper rounds and finally whether the finish line could be reached. The current request does not specify a new formal acceptance test. The following obligations reconstruct the work actually undertaken; they are not new conditions attributed to Ren, and they do not replace the original stronger conjecture with a convenient formal target.
 
-Two achievements must be distinguished. A connected philosophical position can be stated, argued, confronted with objections and delivered. Its universal adequacy or unique necessity requires stronger support. Finishing the first does not quietly count as finishing the second. The [synthesis](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PHILOSOPHICAL-ACCOUNT.md) now completes the first at a defended-candidate scope. The strongest claim that all scientific philosophy must accept the whole theory remains unestablished.
+Two achievements must be distinguished. A connected philosophical position can be stated, argued, confronted with objections and delivered. Its universal adequacy or unique necessity requires stronger support. Finishing the first does not quietly count as finishing the second. The [synthesis](../../../../theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md) now completes the first at a defended-candidate scope. The strongest claim that all scientific philosophy must accept the whole theory remains unestablished.
 
 ## 2. Assessment against the actual undertakings
 
 | Undertaking | Delivered answer and evidence | Completion scope |
 |---|---|---|
-| Explain knowing within the nondual account | Formed access, content, cognitive uptake and differentiated knowing positions; preserved inaccessible-record and error cases. [Knowledge](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/KNOWLEDGE.md). | Defended explanation; no exhaustive reduction of consciousness or semantics. |
+| Explain knowing within the nondual account | Formed access, content, cognitive uptake and differentiated knowing positions; preserved inaccessible-record and error cases. [Knowledge](../../../../theories/becoming/chapters/KNOWLEDGE.md). | Defended explanation; no exhaustive reduction of consciousness or semantics. |
 | Distinguish knowledge from correctness, benefit and agreement | Competent actual grounding, relevant errors and defeaters; lucky truth, misapplication and common error remain distinct. [Uptake/error](KNOWLEDGE-UPTAKE-AND-ERROR.md). | Candidate epistemology, with substantive rivals retained. |
 | Explain reasons and revision of standards | Explicit accuracy, relevance, fallible entitlement and reflective accountability commitments. [Reasons](KNOWLEDGE-REASONS-AND-STANDARDS.md). | Philosophical warrant argued; no premise-free global epistemic foundation. |
 | Explain continuity, objectivity and projection | Warranted partial connections among contents and grounds; relevant continuity for extension; induction remains a challenge. [Revision](KNOWLEDGE-REVISION-AND-OBJECTIVITY.md) / [projection](KNOWLEDGE-PROJECTION-AND-RISK.md). | Connected account, not a universal predictive guarantee. |
@@ -55,7 +55,7 @@ Three new primary comparisons have explicit scopes in [the source record](KNOWLE
 
 ## 6. Verdict
 
-**Completed:** the connected defended proposal, its explanation of the previous frontier, substantive author counterreview, source assessment and repository integration. The [current synthesis](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PHILOSOPHICAL-ACCOUNT.md) is the deliverable, with its claim-by-claim support in the studies.
+**Completed:** the connected defended proposal, its explanation of the previous frontier, substantive author counterreview, source assessment and repository integration. The [current synthesis](../../../../theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md) is the deliverable, with its claim-by-claim support in the studies.
 
 **Not completed or claimed:** universal empirical validation, exhaustive consciousness/semantics, a general solution to induction, unique necessity of the entire theory, premise-free ethics, or a uniquely justified political system. Other sessions pursuing stronger objectives are not closed by this verdict.
 

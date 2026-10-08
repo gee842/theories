@@ -1,6 +1,6 @@
 # Review of general situated generative requirements
 
-7 October 2026, Asia/Bangkok. AI-authored independent review of the [general argument](GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md), under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). The [source assessment](GENERAL-GENERATIVE-REQUIREMENT-SOURCES.md) records inherited technical comparisons and one focused primary philosophical reading. The mathematical inspection and validation scope are recorded below.
+7 October 2026, Asia/Bangkok. AI-authored independent review of the [general argument](GENERAL-GENERATIVE-REQUIREMENT-ARGUMENT.md), under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). The [source assessment](GENERAL-GENERATIVE-REQUIREMENT-SOURCES.md) records inherited technical comparisons and one focused primary philosophical reading. The mathematical inspection and validation scope are recorded below.
 
 ## 1. The general affirmative route
 

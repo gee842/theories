@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F22",
+  "reviewed_at_utc": "2026-10-08T18:40:39.196607+00:00",
+  "next_delta": {
+    "zh": "复用有限条件程序与真实余项恢复；继续建立内部语法不同的说明之间余项、判断与实际形成关系的有据翻译，区分语义可判定与实际取得。",
+    "en": "Reuse finite guarded programs and coherent residual recovery; establish warranted residual/guard/formation translation between descriptions with different internal syntax, distinguishing semantic tests from actual acquisition."
+  },
+  "history": [
+    {
+      "zh": "2026-10-09：沿既有接合研究推进；全部新增数学主张、反例与修复条件进入实际 Lean 检查。",
+      "en": "2026-10-09: continued the existing joining study; all new mathematical claims, counterexamples and repair conditions actually checked in Lean."
+    }
+  ],
+  "validation_scope": {
+    "zh": "Lean 4.29.1：35项新声明／314项闭包审计，279继承另列；新12空、23标准依赖，9含经典选择。新模块autoImplicit false，冻结源码／日志／检查器哈希绑定；作者反审，非独立agent验收。",
+    "en": "Lean 4.29.1: 35 new declarations / 314 closure audits, 279 inherited separate; new 12 empty and 23 standard, 9 with classical choice. New modules use autoImplicit false; frozen sources/logs/checker hashes are bound. Author counterreview, no independent-agent acceptance."
+  },
+  "id": "guarded-program-question-recovery",
+  "title": {
+    "zh": "随到达条件分支的有限展开与问答恢复",
+    "en": "Finite reached-condition branching and question recovery"
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGuardedPrograms.lean",
+  "aliases": [
+    "Generative.ExplanatoryGuardedPrograms.guarded_history_matches",
+    "Generative.ExplanatoryGuardedPrograms.guard_hoisting_sound"
+  ],
+  "claim": {
+    "zh": "有限判断、分支、顺序及提前结束的程序问题精确编译为原生问题。完整翻译问答一致且接收侧有限分支时，不同原生程序的有限宏历史有同测终点的对应。原固定词精确嵌入；前段的每个端点保持判断时，提前判断保真。",
+    "en": "Finite guarded, sequential and choice program questions compile exactly to native questions. Complete translated-answer agreement and receiving-side finite branching match finite macro histories over different native programs, preserving endpoint answers. Fixed words embed exactly; moving a guard earlier is sound if every prefix endpoint preserves it."
+  },
+  "hypotheses": [
+    {
+      "zh": "给定有限无循环Program语法、原生过程、原子问题对应和到达位置上的guard语义。",
+      "en": "Supplied finite loop-free Program syntax, native processes, atomic-question correspondence and guards interpreted at reached positions."
+    },
+    {
+      "zh": "跨程序匹配需初始完整翻译问答一致及接收侧ImageFinite；提前判断的充分条件是全部前段结果保持该判断。",
+      "en": "Cross-program matching requires complete initial translated-answer agreement and receiving-side ImageFinite; safe early testing requires guard preservation at all prefix endpoints."
+    }
+  ],
+  "correspondence": {
+    "zh": "每个执行投到同一过程的原生路径。guard和管理步骤在语义中不另计物理事件，不独自给出传感、学习或资源实施。",
+    "en": "Every execution projects to a native path in the same process. Guards and administrative steps contribute no represented physical events and do not establish sensing, learning or resource implementation."
+  },
+  "dependencies": [
+    {
+      "id": "branching-tests-bisimulation",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "用后继匹配恢复条件程序的边界历史。",
+        "en": "Use successor matching to recover guarded-program boundary histories."
+      },
+      "interface": {
+        "output": {
+          "zh": "same_forces_successor_match 的有限后继恢复。",
+          "en": "Finite successor recovery from same_forces_successor_match."
+        },
+        "input": {
+          "zh": "program_image_finite 供给有限端点；guarded_history_matches 逐步使用同测恢复。",
+          "en": "program_image_finite supplies finite endpoints; guarded_history_matches uses answer recovery stepwise."
+        },
+        "conditions": {
+          "zh": "完整翻译问答一致与接收侧有限性，不推出全部中间位置对应。",
+          "en": "Complete translated-answer agreement and receiving-side finiteness; no general internal-position matching."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGuardedPrograms.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "finite-granularity-question-recovery",
+      "detail": {
+        "zh": "word_program_exact 将固定有限词嵌入新语法；通用编译被推广，不把历史包装另计独立发现。",
+        "en": "word_program_exact embeds fixed finite words into the new grammar; generic compilation is extended, without recounting historical wrappers as discoveries."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "不涵盖无界循环、实际判断取得、概率、部署终止或任意内部语法的中间位置互译；提前判断条件只证明充分性。",
+    "en": "Does not cover unbounded loops, actual guard acquisition, probabilities, deployment termination or internal-position translation across arbitrary syntax; the early-testing condition is sufficient only."
+  },
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryResumptionCases.lean",
+      "detail": {
+        "zh": "同一过程形成前后canFinish改变；提前测试与到达后测试有不同结果。",
+        "en": "The same process changes canFinish through formation; testing early and after arrival yields different outcomes."
+      }
+    }
+  ],
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGuardedPrograms.lean",
+      "role": "proof",
+      "sha256": "95a0e0b420df43f5d98e182f9325d68078c23a6e01ceb6da4cd02ec6705a3b33",
+      "declarations": [
+        "Generative.ExplanatoryGuardedPrograms.diamond_correct",
+        "Generative.ExplanatoryGuardedPrograms.compile_correct",
+        "Generative.ExplanatoryGuardedPrograms.word_program_exact",
+        "Generative.ExplanatoryGuardedPrograms.execution_has_native_trace",
+        "Generative.ExplanatoryGuardedPrograms.finite_program_endpoints",
+        "Generative.ExplanatoryGuardedPrograms.guarded_history_matches",
+        "Generative.ExplanatoryGuardedPrograms.guard_hoisting_sound"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-resumption-checks/20261008T183544.703004Z/receipt.json",
+      "role": "receipt",
+      "sha256": "48274e139ebf513fc435b9dc3433c04fc31aa9b032f5df951cb5d6e5881bc2cf",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-CONTEXTS-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "8fef4fa01911d0e706e128caafe5717c08e218d5a0dee029147f80e1443444cf",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryResumptionCases.lean",
+      "role": "counterexample",
+      "sha256": "e936cd2a3dcbbe264ae211863104927044df0e42d0e2397a93344b4d727c2fc1",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryGuardedPrograms.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-resumption-checks/20261008T183544.703004Z/receipt.json",
+      "sha256_pointer": "/modules/19/sha256",
+      "success_pointer": "/passed",
+      "success_value": true
+    }
+  ]
+}

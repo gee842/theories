@@ -1,6 +1,6 @@
 # Independent review: acquiring the description and its evidential route together
 
-8 October 2026, Asia/Bangkok. AI-authored review by the `alignment_frontier_review` agent. Follows the explicit G0/J route and the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Earlier practical judgment, ethical direction and the 23-theorem review-coverage study remain completed at their scopes.
+8 October 2026, Asia/Bangkok. AI-authored review by the `alignment_frontier_review` agent. Follows the explicit G0/J route and the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Earlier practical judgment, ethical direction and the 23-theorem review-coverage study remain completed at their scopes.
 
 **Status: accepted after independent overlap, argument, evidence and integration review.** The principal case is Montee, Miltenberger and Wittrock (1995), *An experimental analysis of facilitated communication*, supplemented by the NPL calibration correction in the [affirmative argument](WARRANTED-ACQUISITION-ARGUMENT.md). This review assesses the inference and ethical interpretation. The [source ledger](WARRANTED-ACQUISITION-SOURCES.md) holds reported facts; the [evidence audit](WARRANTED-ACQUISITION-EVIDENCE-AUDIT.md) checks their use. No new experiment, participant assessment or clinical recommendation is proposed here.
 

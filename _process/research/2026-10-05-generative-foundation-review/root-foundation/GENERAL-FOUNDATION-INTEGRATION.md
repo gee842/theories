@@ -1,7 +1,7 @@
 # The general process law: what is grounded and what remains
 # 普遍过程规律：已有根据与未完成推论
 
-8 October 2026. AI-authored response to [Ren's instruction to solve the remaining limit](../../../../sources/15-codex-theory-conversations/2026-10-08-general-foundation-continuation.md). This integrates a [direct affirmative argument](GENERAL-FOUNDATION-ARGUMENT.md), [actual-evidence assessment](GENERAL-FOUNDATION-EVIDENCE.md) and [independent critical review](GENERAL-FOUNDATION-REVIEW.md). The [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) governs all three.
+8 October 2026. AI-authored response to [Ren's instruction to solve the remaining limit](../../../../sources/15-codex-theory-conversations/2026-10-08-general-foundation-continuation.md). This integrates a [direct affirmative argument](GENERAL-FOUNDATION-ARGUMENT.md), [actual-evidence assessment](GENERAL-FOUNDATION-EVIDENCE.md) and [independent critical review](GENERAL-FOUNDATION-REVIEW.md). The [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) governs all three.
 
 **The stronger assumption-free foundation is not completed by this investigation. The advance is a more defensible general constitutive argument and a correction of the remaining obligation: actual generative participation already has grounds; its existence need not be proved for every system. What has not been established is that the proposed common principles suffice for the claimed general explanation of organization and its possible changes, with their own inferential warrant earned.** No new axiom is adopted, no definition is substituted for that conclusion, and no impossibility result is claimed.
 
@@ -9,7 +9,7 @@
 
 ## 1. Correct the scope of the outstanding claim
 
-The [canonical three commitments](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope) contain different strengths of assertion. Treating them as three wholly ungrounded universal laws obscures work already done.
+The [canonical three commitments](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope) contain different strengths of assertion. Treating them as three wholly ungrounded universal laws obscures work already done.
 
 | Content | Current ground | Remaining distinction |
 |---|---|---|

@@ -50,8 +50,8 @@
 | [生成前提推导](GENERATIVE-PREMISE-DERIVATION.md)与 `GenerativeComparison.lean` | G0、C、P 分列；实际回应理由；保留、改变、结束同一根据 | 本轮把一个先前只作结构辨认的共同关系接入该接口 |
 | [共同实现分类](ZERO-AXIOM-CLASSIFICATION-INTEGRATION.md)与 `JointContinuationClassification.lean` | 整体轮廓／共同陈述束对应、组合、边际信息遗漏 | 不新增一般“边际不等于共同”主张；新增规范接口的实际组合 |
 | [系统分化](SYSTEM-INDIVIDUATION-INTEGRATION.md) | 关系中形成的、可重叠的局部边界及其问题范围 | 不要求主体必须消失，也不重证组织如何形成 |
-| [实践判断](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md) | J1–J4、真实损失、基本条件、有限承担、正当结束 | 不重开已经完成的一般冲突、交接和结束原则 |
-| [对齐方向](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md) | 目的、评价及选择规则同属被评价的发生 | 不再次把“选择器也受伦理评价”当作新结论 |
+| [实践判断](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md) | J1–J4、真实损失、基本条件、有限承担、正当结束 | 不重开已经完成的一般冲突、交接和结束原则 |
+| [对齐方向](../../../../theories/becoming/chapters/ALIGNMENT-DIRECTION.md) | 目的、评价及选择规则同属被评价的发生 | 不再次把“选择器也受伦理评价”当作新结论 |
 
 因此应称本轮为**关系起点下的证明接通及表示约束**，不声称又获得一套独立伦理基础、现实的无损改造证明或全球首创的数学定理。
 

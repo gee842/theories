@@ -3,7 +3,7 @@
 6 October 2026. AI-authored continuation of the
 [application-distinction result](APPLICATION-DISTINCTION-INTEGRATION.md), governed
 by [Ren's correction](../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md)
-and the [shared method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md).
+and the [shared method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md).
 The new work advances acquired consequences → operative inquiry within an
 already specified undertaking. It is one finite connection in the continuing
 foundation, not its completion.

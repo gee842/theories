@@ -1,6 +1,6 @@
 # Whole ethical identification: repose, attenuation and achievement
 
-7 October 2026. AI-authored substantive counterreview. This studies **whole qualitative realization → differentiated practical significance**, keeping the first ethical identification inside the whole inquiry. It follows the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md), [current warrant integration](NORMATIVE-WARRANT-INTEGRATION.md), and [corrected universal target](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#universal-scope-and-substantive-conclusions). The [source assessment](WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md) separates the fresh comparison from inherited work.
+7 October 2026. AI-authored substantive counterreview. This studies **whole qualitative realization → differentiated practical significance**, keeping the first ethical identification inside the whole inquiry. It follows the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md), [current warrant integration](NORMATIVE-WARRANT-INTEGRATION.md), and [corrected universal target](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#universal-scope-and-substantive-conclusions). The [source assessment](WHOLE-ETHICAL-IDENTIFICATION-SOURCES.md) separates the fresh comparison from inherited work.
 
 ## 1. Candidate and genealogy
 
@@ -82,7 +82,7 @@ No new Lean theorem or empirical result is claimed. Encoding the desired A/B ver
 
 ## 6. Joint ethical identification and the exclusivity test
 
-7 October 2026, subsequent continuation. This assesses **the whole realized relation, its ethical character, the formation of discernment, and justified correction together**. It follows [HUIGEN §§68–69](HUIGEN-SELF-GROUND-AUDIT.md#68-explanatory-identification-and-the-evidence-for-the-whole-root), the [Liangzhi warrant interface](LIANGZHI-NORMATIVE-WARRANT-INTERFACE.md) and the [whole-unit correction](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#ending-an-activity-and-the-quality-of-the-whole-continuation). None requires proving an isolated feeling or capacity to be the first good before the whole account can receive support. The preceding attenuation comparison is not repeated as the foundational unit.
+7 October 2026, subsequent continuation. This assesses **the whole realized relation, its ethical character, the formation of discernment, and justified correction together**. It follows [HUIGEN §§68–69](HUIGEN-SELF-GROUND-AUDIT.md#68-explanatory-identification-and-the-evidence-for-the-whole-root), the [Liangzhi warrant interface](LIANGZHI-NORMATIVE-WARRANT-INTERFACE.md) and the [whole-unit correction](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#ending-an-activity-and-the-quality-of-the-whole-continuation). None requires proving an isolated feeling or capacity to be the first good before the whole account can receive support. The preceding attenuation comparison is not repeated as the foundational unit.
 
 ### The positive explanatory route remains substantive
 
@@ -106,7 +106,7 @@ Our response to the source's discovery argument is that an absence of an isolate
 
 The argument is a possibility defense. Identifying such contact does not establish that the ethical appraisal is correct, that the relevant history actually proceeded in this way, or that the whole identification is necessary. Equally, that remaining work does not justify dismissing distributed inquiry as incapable of recognition. The positive route and its calibration must be assessed together at their actual evidential strength.
 
-Temporal scope matters. The [fixed-past analysis](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#when-a-fixed-past-changes-present-significance) preserves real later authority, release and changed relationships. A question about whether a response was justified at its decision point differs from current appraisal of the complete history, including reform. Critical discovery must not be simulated by silently applying a later rule as though it already governed; genuine later transformation must not be erased by declaring all ethical significance immutable. Shared past occurrence alone settles neither question.
+Temporal scope matters. The [fixed-past analysis](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#when-a-fixed-past-changes-present-significance) preserves real later authority, release and changed relationships. A question about whether a response was justified at its decision point differs from current appraisal of the complete history, including reform. Critical discovery must not be simulated by silently applying a later rule as though it already governed; genuine later transformation must not be erased by declaring all ethical significance immutable. Shared past occurrence alone settles neither question.
 
 ### What this continuation does and does not change
 

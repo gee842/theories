@@ -1,6 +1,6 @@
 # Independent review: potential continuation and truth
 
-8 October 2026, Asia/Bangkok. AI-authored review of the [potential-continuation argument](ROOT-MATHEMATICAL-POTENTIAL-ARGUMENT.md), following the [induction review](ROOT-MATHEMATICAL-INDUCTION-REVIEW.md). The governing target remains independent mathematical admission, universal coverage and unique root dependence. This review adds no mathematical proof. It assesses the new formal sources and their foundational interpretation under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md).
+8 October 2026, Asia/Bangkok. AI-authored review of the [potential-continuation argument](ROOT-MATHEMATICAL-POTENTIAL-ARGUMENT.md), following the [induction review](ROOT-MATHEMATICAL-INDUCTION-REVIEW.md). The governing target remains independent mathematical admission, universal coverage and unique root dependence. This review adds no mathematical proof. It assesses the new formal sources and their foundational interpretation under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md).
 
 ## 1. This tests a different inference
 

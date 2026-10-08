@@ -1,6 +1,6 @@
 # 无预设奠基的第一条规则候选 / A first rule candidate for presuppositionless grounding
 
-2026-10-08，Asia/Bangkok。Ren 明确认可继续研究“从无前提导出元逻辑”；[原话与范围](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md#presuppositionless-metalogic)保留这次方向。以下候选论证、形式审计和反审为 AI 工作。[当前理论第13节](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md#reflective-identity)。
+2026-10-08，Asia/Bangkok。Ren 明确认可继续研究“从无前提导出元逻辑”；[原话与范围](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md#presuppositionless-metalogic)保留这次方向。以下候选论证、形式审计和反审为 AI 工作。[当前理论第13节](../../../../theories/becoming/chapters/GENERATED-LOGIC.md#reflective-identity)。
 
 **本轮中心结果：形成了同一规则的构成性奠基候选，并把它需要说明的关系与较强规则分开。** 同一个根据，在同一内容与认可要求下直接承接自身，不需要先增添一个“P是真的”的独立命题；它也不把暂准提高为确证。11项 Lean 定理实查通过，只审计相应形式后果与两个过度推广，不代替哲学奠基。完整无预设元逻辑仍未完成，亦未被证明不可能。
 

@@ -1,6 +1,6 @@
 # Whole ethical identification: primary comparison and genealogy
 
-7 October 2026. AI-authored source assessment for [the executed counterreview](WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md). The question is the first identification of ethical quality in whole realization, including fulfillment through limitation and ending. It is not a new requirement that every opportunity for assistance supply a positive reason. Follow the [corrected universal scope](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#universal-scope-and-substantive-conclusions).
+7 October 2026. AI-authored source assessment for [the executed counterreview](WHOLE-ETHICAL-IDENTIFICATION-REVIEW.md). The question is the first identification of ethical quality in whole realization, including fulfillment through limitation and ending. It is not a new requirement that every opportunity for assistance supply a positive reason. Follow the [corrected universal scope](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#universal-scope-and-substantive-conclusions).
 
 ## 1. Inherited work, not new discoveries
 

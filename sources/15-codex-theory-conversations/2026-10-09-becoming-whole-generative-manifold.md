@@ -16,4 +16,4 @@ The research must articulate and establish the whole's necessary content, then e
 
 The quotation states Ren's substantive position. Recording it neither adds that position as a Lean axiom nor substitutes the quotation for its deduction. Existing proofs retain their exact scope; their verification status must remain distinct from the claim being investigated. G0/J and other separately authorized tasks retain their scopes.
 
-[Current foundation](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BECOMING-FOUNDATION.md#whole-and-manifold) · [Scope](../../GOALS.md#theory-of-becoming) · [Correction in the existing study](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md#whole-theory-and-generative-manifold).
+[Current foundation](../../theories/becoming/chapters/BECOMING-FOUNDATION.md#whole-and-manifold) · [Scope](../../GOALS.md#theory-of-becoming) · [Correction in the existing study](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md#whole-theory-and-generative-manifold).

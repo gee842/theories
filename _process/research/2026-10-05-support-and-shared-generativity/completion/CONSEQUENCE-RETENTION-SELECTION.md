@@ -1,6 +1,6 @@
 # When productive consequences select the response that produced them
 
-6 October 2026. AI-authored analytical extension of [consequence-coupled reconstruction](ENDOGENOUS-REGULATION-MATH.md), starting from the [shared-pool neutrality result](ENDOGENOUS-REGULATION-REVIEW.md#why-this-does-not-yet-derive-selection-of-useful-responses). This addresses the next connection in the [accepted work sequence](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#accepted-work-sequence): **changed continuation → differential retention of competing responses**.
+6 October 2026. AI-authored analytical extension of [consequence-coupled reconstruction](ENDOGENOUS-REGULATION-MATH.md), starting from the [shared-pool neutrality result](ENDOGENOUS-REGULATION-REVIEW.md#why-this-does-not-yet-derive-selection-of-useful-responses). This addresses the next connection in the [accepted work sequence](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#accepted-work-sequence): **changed continuation → differential retention of competing responses**.
 
 **Result.** An exact generator criterion distinguishes increased reconstruction from selection of a useful variant. A finite, paid-association extension provides a positive expected-frequency effect without a success variable entering the law. The association and copying chemistry are supplied; association instances form within the process. This is conditional population selection, not individual learning, discovery of the architecture, or revision of the selector.
 

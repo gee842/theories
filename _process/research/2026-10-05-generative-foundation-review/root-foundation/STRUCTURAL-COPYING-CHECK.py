@@ -72,7 +72,7 @@ def main():
     assert original.stat().st_size == provenance['bytes'] == 107697
     assert sha(original) == provenance['sha256']
 
-    full = ROOT / 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md'
+    full = ROOT / 'theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md'
     assert [l for l in full.read_text().splitlines() if l.startswith('| **')] == edits['six_requirement_rows']
     assert len(edits['six_requirement_rows']) == 6
     data = chain.read_data()

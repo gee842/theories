@@ -1,6 +1,6 @@
 # Consequences and the organization of further activity
 
-6 October 2026. AI-authored integration under [Ren's core/tree correction](../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md) and the [shared nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). The named connection is **acquired consequences → changes in the arrangements through which subsequent sensing, learning and action occur**. This round reconstructs accepted computational evidence, adds a focused primary comparison and corrects the explanatory map. It introduces no new model, theorem or scientific run. The full foundation remains open.
+6 October 2026. AI-authored integration under [Ren's core/tree correction](../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md) and the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). The named connection is **acquired consequences → changes in the arrangements through which subsequent sensing, learning and action occur**. This round reconstructs accepted computational evidence, adds a focused primary comparison and corrects the explanatory map. It introduces no new model, theorem or scientific run. The full foundation remains open.
 
 ## The core changes through what the branches disclose
 
@@ -12,7 +12,7 @@ This is reciprocal core/tree articulation. The branch constrains what the genera
 
 ## What the existing history establishes
 
-The central evidence is [autonomous method formation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/AUTONOMOUS-METHOD-FORMATION.md). In its admitted four-state environment, six acquired sensor readings contradict every candidate produced through the initially formed G0 connection. The connection is removed and a G1 connection formed. The accepted trial model is discarded. A later invocation rereads the retained connection, generates candidates again and then performs a fresh native prediction test. Breaking the retained connection blocks this later use even while the earlier acceptance label survives.
+The central evidence is [autonomous method formation](../../../../theories/becoming/chapters/AUTONOMOUS-METHOD-FORMATION.md). In its admitted four-state environment, six acquired sensor readings contradict every candidate produced through the initially formed G0 connection. The connection is removed and a G1 connection formed. The accepted trial model is discarded. A later invocation rereads the retained connection, generates candidates again and then performs a fresh native prediction test. Breaking the retained connection blocks this later use even while the earlier acceptance label survives.
 
 The initial receipt selects a connection row; the sensor archive constrains compatibility. Neither resource return nor an analyst's correctness label chooses the replacement. The two method trials replay the same acquired archive; they are not separate fresh experiments on the environment. The changed arrangement governs later candidate generation, while the record-acquisition schedule remains supplied.
 

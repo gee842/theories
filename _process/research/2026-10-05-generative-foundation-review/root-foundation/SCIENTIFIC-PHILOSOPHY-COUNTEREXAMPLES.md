@@ -2,7 +2,7 @@
 
 6 October 2026. AI-authored research and counterexample review. This note examines Ren's clarified proposal: “if a philosophy claim itself to be scientific philosophy, it must be coherent with our theory”. The arguments, distinctions and proposed tests below are AI elaborations, not additional quotations from Ren. This is a conceptual and mathematical review, not a new empirical validation or a machine-checked theorem report.
 
-**Named connection:** formed evidence-responsive learning → epistemically warranted, revisable inquiry. The governing aim is the [connected generative foundation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md), including later concern and wisdom. This review tests the necessity claim in Ren's stated direction. It does not replace it with the converse claim that our theory must accommodate every existing philosophy.
+**Named connection:** formed evidence-responsive learning → epistemically warranted, revisable inquiry. The governing aim is the [connected generative foundation](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md), including later concern and wisdom. This review tests the necessity claim in Ren's stated direction. It does not replace it with the converse claim that our theory must accommodate every existing philosophy.
 
 **Result:** a defensible necessary-condition claim survives, provided the conditions are established independently, the relevant kind of inquiry and scope are specified, and coherence means preserving those conditions under an adequate interpretation. Neither conformity to the entire present theory nor derivability of every legitimate philosophy follows. Compatibility constrains an adequate philosophy of inquiry; it is not a sufficient demarcation of science, and incompatibility does not by itself make a scientifically investigated conjecture pseudoscience.
 
@@ -31,7 +31,7 @@ For a common classical interpretation, compatibility can be expressed as the sat
 
 ## 2. Which minimal conditions are actually necessary?
 
-The [premise ledger](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md) already separates a causal presentation from informative law restrictions and empirical identifications. The distinction is decisive here.
+The [premise ledger](../../../../theories/becoming/chapters/FOUNDATION-PREMISES.md) already separates a causal presentation from informative law restrictions and empirical identifications. The distinction is decisive here.
 
 | Candidate condition | Defensible scope | What is not thereby established |
 |---|---|---|
@@ -63,7 +63,7 @@ The supported station also shows why continuing provision does not imply that th
 
 ### C3. Replacement can realize correction
 
-An inaccurate immutable module is removed and replaced by a calibrated immutable module. At the organizational level the practice corrects; neither module changes its own rule. A philosophy that locates epistemic correction in distributed succession can be coherent with the generative account without endorsing individual adaptive cognition as a universal mechanism. The [learning interface](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LEARNING-INTERFACE.md) is one implementation contract, not a requirement that every inquiry have exactly its controller architecture.
+An inaccurate immutable module is removed and replaced by a calibrated immutable module. At the organizational level the practice corrects; neither module changes its own rule. A philosophy that locates epistemic correction in distributed succession can be coherent with the generative account without endorsing individual adaptive cognition as a universal mechanism. The [learning interface](../../../../theories/becoming/chapters/LEARNING-INTERFACE.md) is one implementation contract, not a requirement that every inquiry have exactly its controller architecture.
 
 ## 4. Inaccessible evidence and the limits of warranted answers
 
@@ -75,7 +75,7 @@ Consider two admitted circumstances \(w_0,w_1\) with opposite correct binary ans
 \max\{\Pr_{w_0}(\mathrm{error}),\Pr_{w_1}(\mathrm{error})\}\geq\tfrac12.
 \]
 
-This is an elementary conditional impossibility proof. The randomization law is the same in both circumstances; an unobserved circumstance-dependent randomizer would be an additional informative input. The deterministic special case matches the existing complete-input argument in the [learning interface](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LEARNING-INTERFACE.md#3-indistinguishability-constrains-revision). No unconditional identification or learning theorem is being claimed.
+This is an elementary conditional impossibility proof. The randomization law is the same in both circumstances; an unobserved circumstance-dependent randomizer would be an additional informative input. The deterministic special case matches the existing complete-input argument in the [learning interface](../../../../theories/becoming/chapters/LEARNING-INTERFACE.md#3-indistinguishability-constrains-revision). No unconditional identification or learning theorem is being claimed.
 
 A philosophy promising uniformly better binary discrimination while denying every informative difference conflicts with these premises. A philosophy recommending suspension, an interval answer or a search for new evidence does not. Failure to know is compatible with scientifically responsible inquiry. If the circumstance is independently known in advance, the initial-information premise changes and the obstruction no longer applies.
 
@@ -99,7 +99,7 @@ Peirce supplies an antecedent for separating valid inference from stabilized bel
 
 ### C7. Accuracy without justified concern
 
-Suppose two organizations use the same perfectly accurate forecast. One uses it to protect a vulnerable group; the other uses it to target that group more efficiently. Equal predictive accuracy does not establish equal ethical justification. Conversely, a justified concern can be implemented with a mistaken forecast. The [premise ledger](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FOUNDATION-PREMISES.md#2-five-distinct-kinds-of-commitment) distinguishes these kinds of support.
+Suppose two organizations use the same perfectly accurate forecast. One uses it to protect a vulnerable group; the other uses it to target that group more efficiently. Equal predictive accuracy does not establish equal ethical justification. Conversely, a justified concern can be implemented with a mistaken forecast. The [premise ledger](../../../../theories/becoming/chapters/FOUNDATION-PREMISES.md#2-five-distinct-kinds-of-commitment) distinguishes these kinds of support.
 
 This is a constraint on the next bridge toward concern and wisdom. We must explain the formation and revision of ethical evaluation and offer its reasons. Neither empirical accuracy nor endurance can silently replace them. A philosophy's sound criticism of an oppressive yet accurate institution need not contradict the causal science of how that institution survives.
 
@@ -155,7 +155,7 @@ The foundation should be revised or narrowed if any of the following is establis
 4. A purported epistemic norm does no work beyond whatever causal outcome happened. The transition to warrant remains missing.
 5. A formal adequacy claim holds only in an arbitrarily selected class whose restrictions already supply successful inquiry. State that conditional scope and investigate why actual inquiry satisfies it.
 
-**Next bridge:** identify and construct how warranted correspondence, evidence preservation, alternative testing and defeat-sensitive revision become effective within the already formed learning process. Preserve misleading channels, inaccessible alternatives, unaffordable inquiry and destructive institutional selection. A favorable external evaluation of an update cannot be installed as the reward mechanism whose origin we are trying to explain. The [foundation's completion conditions](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation) remain open until these connections and their empirical identifications are established.
+**Next bridge:** identify and construct how warranted correspondence, evidence preservation, alternative testing and defeat-sensitive revision become effective within the already formed learning process. Preserve misleading channels, inaccessible alternatives, unaffordable inquiry and destructive institutional selection. A favorable external evaluation of an update cannot be installed as the reward mechanism whose origin we are trying to explain. The [foundation's completion conditions](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation) remain open until these connections and their empirical identifications are established.
 
 ## Source and verification status
 

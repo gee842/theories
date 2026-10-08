@@ -61,7 +61,7 @@ def main():
         if chain.digest(ROOT / name) != data["reviewed_sources"][name]:
             errors.append("Owned source version changed: " + name)
 
-    direction = ROOT / "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md"
+    direction = ROOT / "theories/becoming/chapters/ALIGNMENT-DIRECTION.md"
     accepted_unchanged = chain.digest(direction) == "9940ead2d7f06a18ff7f2ec37f27aebd496dde10854d8a11993469a31a7900cd"
     if not accepted_unchanged:
         errors.append("Accepted alignment-direction bytes changed")

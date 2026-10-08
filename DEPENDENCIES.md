@@ -52,7 +52,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Retained conditions / 保留条件:** AI 对应 E、权限、承担及真实损失仍独立说明；应用而非普遍遵循定理。 / AI correspondence E, authority, undertakings and real losses remain explicit; an application, not a universal compliance theorem.
 
-[Connection evidence / 连接证据](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md)
+[Connection evidence / 连接证据](theories/becoming/chapters/ALIGNMENT-DIRECTION.md)
 
 ## becoming-context-coherence ← finite-trace-transport
 
@@ -786,7 +786,7 @@ These historical connections retain their own source cutoff and validation scope
 
 ## Discovery and evidence / 检索与证据
 
-[Full reading catalogue / 完整阅读目录](theories/shengsheng-buxi-generative-existence/results/README.md) · [Curated generativity chain / 生成链](theories/shengsheng-buxi-generative-existence/results/GENERATIVITY-CHAIN.md) · [Dated session map / 会话快照](theories/shengsheng-buxi-generative-existence/results/SESSION-RESULTS.md) · [Broader theory map / 更广理论图谱](MAP.md)
+[Full reading catalogue / 完整阅读目录](theories/becoming/results/README.md) · [Curated generativity chain / 生成链](theories/becoming/results/GENERATIVITY-CHAIN.md) · [Dated session map / 会话快照](theories/becoming/results/SESSION-RESULTS.md) · [Broader theory map / 更广理论图谱](MAP.md)
 
 ```sh
 make research-check

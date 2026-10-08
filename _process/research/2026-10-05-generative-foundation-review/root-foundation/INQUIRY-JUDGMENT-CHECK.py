@@ -13,8 +13,8 @@ import build_generative_chain as chain
 
 ROOT = Path(__file__).resolve().parents[4]
 HERE = Path(__file__).resolve().parent
-BASE = ROOT / 'theories/shengsheng-buxi-generative-existence'
-THEORY = BASE / 'unified-2026-10-05/PROVED-CONNECTIONS.md'
+BASE = ROOT / 'theories/becoming'
+THEORY = BASE / 'chapters/PROVED-CONNECTIONS.md'
 FORMAL = ROOT / 'experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis'
 
 
@@ -90,7 +90,7 @@ def main():
         assert digest(ROOT / path) == data['reviewed_sources'][path], path
     assert all('scope_zh' in row and 'scope_en' in row for row in own_rows)
     for shared in [ROOT/'RESEARCH.md', BASE/'README.md',
-                   BASE/'unified-2026-10-05/GENERATIVE-GROUNDING.md']:
+                   BASE/'chapters/GENERATIVE-GROUNDING.md']:
         assert 'PROVED-CONNECTIONS.md' in shared.read_text(), shared
     tracked = docs + [independent_path, checker, receipt_path, FORMAL/'InquiryJudgment.lean', Path(__file__)]
     report = {'status':'passed','date':'2026-10-08 Asia/Bangkok',

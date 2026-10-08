@@ -1,6 +1,6 @@
 # 生成论与“道”：本轮研究及复核记录
 
-2026年10月6日。AI 撰写，记录 [Ren 授权](../../../../sources/15-codex-theory-conversations/2026-10-06-dao-and-generative-grounding.md)的本轮仔细研究。当前综合表述为[生成论与“道”](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DAO-AND-GENERATIVITY.md)。
+2026年10月6日。AI 撰写，记录 [Ren 授权](../../../../sources/15-codex-theory-conversations/2026-10-06-dao-and-generative-grounding.md)的本轮仔细研究。当前综合表述为[生成论与“道”](../../../../theories/becoming/chapters/DAO-AND-GENERATIVITY.md)。
 
 ## 1. 完成了什么
 
@@ -10,7 +10,7 @@
 
 | 产物 | 内容与责任 |
 |---|---|
-| [综合稿](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DAO-AND-GENERATIVITY.md) | 主代理的论证整合、判断分层、实践含义及下一连接 |
+| [综合稿](../../../../theories/becoming/chapters/DAO-AND-GENERATIVITY.md) | 主代理的论证整合、判断分层、实践含义及下一连接 |
 | [原典研究](DAO-CLASSICAL-SOURCES.md) | 原典代理核查《老子》选章、《庄子》第二三篇、《系辞上》第五章和《中庸》选段，区分经文、注释、现代解释及本文重构 |
 | [谱系审计](DAO-GENEALOGY.md) | 谱系代理检查开放运行定义、道家术语编码、反 Moloch 假设及已保存反例；不重跑旧 Lean 项目 |
 | [规范论证](DAO-NORMATIVE-REVIEW.md) | 规范代理提出正面桥梁，比较自然主义、构成论与经验理由路径，检查反例的量词和范围 |
@@ -40,7 +40,7 @@
 
 ## 4. 与总研究的连接
 
-[生成根基的推导地图](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#the-derivation-and-the-existing-work)、[跨支线索引](../../../../RESEARCH.md)、[理论 README](../../../../theories/shengsheng-buxi-generative-existence/README.md)和[本研究目录](README.md)均新增了本轮位置。现有未完成桥梁继续保留，没有用一个哲学比较节点取代总目标。
+[生成根基的推导地图](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#the-derivation-and-the-existing-work)、[跨支线索引](../../../../RESEARCH.md)、[理论 README](../../../../theories/becoming/README.md)和[本研究目录](README.md)均新增了本轮位置。现有未完成桥梁继续保留，没有用一个哲学比较节点取代总目标。
 
 最直接的下一连接是 **可信的受助者后果证据 → 有根据的相关性 → 可修正理由 → 有效保护与传承**。当前仍供应事件律、功能配方、校准条件、根理由和理由传递关系。三条规范奠基路线继续考察这些理由如何得到更深入说明；模型比较则研究它们怎样形成、被发现并实际执行。若研究只能通过预装奖励或定义善来得出善，所宣称的生成解释应收缩。
 

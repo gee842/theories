@@ -2,7 +2,7 @@
 
 **6 October 2026. AI-authored supporting study.** Named connection: **formed prediction → acquired composition-preserving abstraction → conditional finite certificate**. This note assesses the proposed closed-and-consistent observation-table learner with a supplied state bound and paid experiments. It supplies no new human study or independent performance result.
 
-Read with [structural results M4–M6](MATHEMATICS-STRUCTURAL-RESULTS.md#4-when-finite-acquired-evidence-can-identify-the-whole-behavior), [prior learning evidence](MATHEMATICS-LEARNING-EVIDENCE.md), and [formed prediction and paid action](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PREDICTION-ACTION.md).
+Read with [structural results M4–M6](MATHEMATICS-STRUCTURAL-RESULTS.md#4-when-finite-acquired-evidence-can-identify-the-whole-behavior), [prior learning evidence](MATHEMATICS-LEARNING-EVIDENCE.md), and [formed prediction and paid action](../../../../theories/becoming/chapters/PREDICTION-ACTION.md).
 
 ## 1. The ordinary comparator already learns the representation
 

@@ -8,7 +8,7 @@
 
 **当前结论，2026年10月8日：** [§11 的跨研究整合](#11-新成果接续后的结论2026年10月8日)接入已经完成的明确公理实践判断、求知优先及共同求知范围说明。本研究的基本答案现在可以交付：以 G0 指明方向，以公开比较和实践承诺形成情境理由，以有根据的认识和实际对应选择、实行、调整或结束回应。认识有限是这种实践的条件；无需将全部未来预报完成才可能取得具体行动根据。先前未决状态保留其历史范围，不再以 G0 的无公理证明阻挡本路线。下列7日论证与反例继续有效，但其末尾研究计划由本节更新。
 
-7 October 2026, Asia/Bangkok. AI-authored research responding to [Ren's transmitted correction and the separate-chat delegation](../../../../sources/15-codex-theory-conversations/2026-10-07-situated-ethics-under-uncertainty.md), under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). This is a substantive philosophical investigation and integration, not an empirical intervention or mathematical proof. The [affirmative argument](SITUATED-WARRANT-ARGUMENT.md), [independent counterreview](SITUATED-WARRANT-COUNTERREVIEW.md) and [primary-source assessment](SITUATED-WARRANT-SOURCES.md) retain their distinct claims and evidence scopes.
+7 October 2026, Asia/Bangkok. AI-authored research responding to [Ren's transmitted correction and the separate-chat delegation](../../../../sources/15-codex-theory-conversations/2026-10-07-situated-ethics-under-uncertainty.md), under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). This is a substantive philosophical investigation and integration, not an empirical intervention or mathematical proof. The [affirmative argument](SITUATED-WARRANT-ARGUMENT.md), [independent counterreview](SITUATED-WARRANT-COUNTERREVIEW.md) and [primary-source assessment](SITUATED-WARRANT-SOURCES.md) retain their distinct claims and evidence scopes.
 
 **本轮推进的普遍推论：整体生成及其伦理质量，怎样通过形成于其中、认识有限且能改变后续关系的实践位置，构成有根据的情境回应。** 不是要求每个智能计算全宇宙，也不是以局部可计算性重新定义善。普遍根据、有限认识的可靠性、实施权限和实际结果仍需分别说明。
 
@@ -21,7 +21,7 @@
 | [整体未来及积分](FUTURE-GOOD-INTEGRAL.md) | 可能历史不能当共同实际发生；概率、加总与无穷极限均有条件；当下、终局及真实历史不能抹除。 | 不重新计算积分；说明无可靠概率时，一个遗漏如何具体影响当前理由。 |
 | [视角与轨迹](PERSPECTIVAL-GOOD-AND-TRAJECTORIES.md) | 后果范围、认知可及、认可与伦理根据不同；行动会改变后来的评价及其影响力；已有25项检查过的表示结果。 | 判断所用证据和情境集合本身怎样被当前关系筛选，何时这种筛选削弱判断。 |
 | [应境与目标改变](SITUATED-ETHICAL-DISCERNMENT.md) | 参与可形成新关系；旧目标仍能成功时也可能有根据地改变；条件伦理识别已明确供给。 | 行动前不能完整知道时，比较实施、调查、延迟、停止的实际安排。 |
-| [智慧与有限认识](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md#6-wisdom-as-situated-and-revisable-understanding) | 认识不全仍可能足以作某种选择；调查耗尽支持、修正来不及及失当的适应已有案例。 | 不把可修正重新发现为善；检验修正的时机、承受分布与事前授权。 |
+| [智慧与有限认识](../../../../theories/becoming/chapters/THEORY.md#6-wisdom-as-situated-and-revisable-understanding) | 认识不全仍可能足以作某种选择；调查耗尽支持、修正来不及及失当的适应已有案例。 | 不把可修正重新发现为善；检验修正的时机、承受分布与事前授权。 |
 | [规范根据首轮](NORMATIVE-WARRANT-INTEGRATION.md) | 删除质疑渠道不等于回答质疑；积极答责义务仍需根据；合法完成与有限权限保留。 | 未知不只挑战结果预测，还可能削弱产生“没有反例”的证据过程。 |
 
 本轮没有重跑上述未变的科学检查，没有新增 Lean 定理，也没有把历史手算升级为证明。下述比较是明确条件的哲学论证，其结论可争论；若以后提出风险界限、支配性或停止条件的数学保证，须另行给出对应、假设及实际 Lean 检查。
@@ -38,7 +38,7 @@
 
 ## 3. 正面根据：当下实现与继续形成共同进入回应
 
-[生生的当前正面方向](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#shengsheng-as-the-positive-ethical-direction)关心整体中更多生、更丰富可能与多样性，以及复杂组织继续形成和发展的能力。本轮正面使用它。这里的生没有先被替换成“已另外认证为善的选项”；生活、心智、关系、生态和广义组织等范围保持开放，其相互关系尚待研究。
+[生生的当前正面方向](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#shengsheng-as-the-positive-ethical-direction)关心整体中更多生、更丰富可能与多样性，以及复杂组织继续形成和发展的能力。本轮正面使用它。这里的生没有先被替换成“已另外认证为善的选项”；生活、心智、关系、生态和广义组织等范围保持开放，其相互关系尚待研究。
 
 据此提出以下可反驳的伦理论证：正在实现的生活和新能力的形成都属于这一展开，前者不只是供未来学习消耗的材料。若某种响应以具体生活的严重、不可恢复受损换取尚未得到支持的能力收益，而另一种可行响应能先维持这些生活并开展有实际根据的学习，那么，“可能更能生成”尚不足以说明为何应把额外损失放在承受者这里。所缺的理由包括：收益为何可信、为什么不能采用另一路径、谁有根据承担这种风险，以及被舍弃的实现怎样进入整体比较。
 
@@ -140,7 +140,7 @@
 
 ## 11. 新成果接续后的结论：2026年10月8日
 
-Ren 提醒仓库已大幅前进后，本轮重新读取[实践判断](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md)、[完成整合](PRACTICAL-JUDGMENT-INTEGRATION.md)与[独立完成审查](PRACTICAL-JUDGMENT-REVIEW.md)，以及[有根据的推展](KNOWLEDGE-PROJECTION-AND-RISK.md)、[G0 下求知优先](INQUIRY-PRIORITIES-AND-G0.md)、[共同求知的范围与地位](SHARED-INQUIRY-AND-STANDING.md)和[知识哲学完成评估](KNOWLEDGE-PHILOSOPHY-COMPLETION.md)。这里作连接与状态更新，不把这些已完成的研究重新署为本会话的新证明。
+Ren 提醒仓库已大幅前进后，本轮重新读取[实践判断](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md)、[完成整合](PRACTICAL-JUDGMENT-INTEGRATION.md)与[独立完成审查](PRACTICAL-JUDGMENT-REVIEW.md)，以及[有根据的推展](KNOWLEDGE-PROJECTION-AND-RISK.md)、[G0 下求知优先](INQUIRY-PRIORITIES-AND-G0.md)、[共同求知的范围与地位](SHARED-INQUIRY-AND-STANDING.md)和[知识哲学完成评估](KNOWLEDGE-PHILOSOPHY-COMPLETION.md)。这里作连接与状态更新，不把这些已完成的研究重新署为本会话的新证明。
 
 ### 已经形成的基本答案
 

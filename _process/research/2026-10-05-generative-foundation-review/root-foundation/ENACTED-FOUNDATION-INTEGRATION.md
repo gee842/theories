@@ -1,17 +1,17 @@
 # Enacted occurrence and the assumption-free foundation of 生生
 
-8 October 2026, Asia/Bangkok. AI-authored argument, correspondence audit and substantive self-counterreview. This is not independent agent review. [Ren's exact request](../../../../sources/15-codex-theory-conversations/2026-10-08-assumption-free-shengsheng-foundation.md) renews this conversation's stronger objective; it does not reverse the separate explicit-axiom alignment task. The [theory chapter](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md) is the current formulation.
+8 October 2026, Asia/Bangkok. AI-authored argument, correspondence audit and substantive self-counterreview. This is not independent agent review. [Ren's exact request](../../../../sources/15-codex-theory-conversations/2026-10-08-assumption-free-shengsheng-foundation.md) renews this conversation's stronger objective; it does not reverse the separate explicit-axiom alignment task. The [theory chapter](../../../../theories/becoming/chapters/ASSUMPTION-FREE-FOUNDATION.md) is the current formulation.
 
 ## 1. Named transition and inherited work
 
 The transition under investigation is **actual enacted inquiry → warranted occurrence and operative differentiation → universal generative foundation**. The first entry has situated support; the second requires actual relational correspondence; the third is not yet established. This round does not substitute a new regulation, evolution or ethical optimization mechanism for that foundational question.
 
-Read the repository entry points and [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md), then the following relevant prior work:
+Read the repository entry points and [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md), then the following relevant prior work:
 
 - [Assumption-elimination audit](ASSUMPTION-ELIMINATION-AUDIT.md): definitions, law relocation and equivalent premises do not alone eliminate assumptions; the old dynamical countermodels retain their stated scope.
 - [Noninstrumental root argument §2](NONINSTRUMENTAL-ROOT-ARGUMENT.md#2-第一次尝试从发生中取得最小起点): the enacted denial already supplies a thin occurrence entry. This is not newly discovered here and does not by itself prove differentiation, endless continuation or concern.
 - [Mathematical family warrant reassessment](ROOT-MATHEMATICAL-FAMILY-WARRANT-REASSESSMENT.md): finite descriptions of a whole possibility domain differ from individual output enumeration; independent admission and constitutive priority remain open.
-- [Immanent mathematical identity](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/IMMANENT-MATHEMATICAL-IDENTITY.md): contextual identity has a declared interaction scope, and compatible descriptions do not automatically realize an enlarged domain.
+- [Immanent mathematical identity](../../../../theories/becoming/chapters/IMMANENT-MATHEMATICAL-IDENTITY.md): contextual identity has a declared interaction scope, and compatible descriptions do not automatically realize an enlarged domain.
 - [Core/tree rearticulation](CORE-TREE-CONTINUATION.md) and its [source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CoreTreeRearticulation.lean): making derived branches a reusable basis does not by itself increase warrant.
 
 The new contribution is a positive evidential reconstruction combined with an exact **finite-history replay audit**. It tests the scope of the performative argument while preserving arbitrary supplied histories and their represented internal relations. It is not claimed as a novel discovery in transition-system theory or a refutation of all richer constitutive proposals.

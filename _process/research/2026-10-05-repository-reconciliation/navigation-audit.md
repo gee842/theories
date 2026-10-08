@@ -14,8 +14,8 @@ An independent scoped link audit inspected 57 current documents and 601 local Ma
 
 | Role | Existing location | Recommended treatment |
 |---|---|---|
-| Canonical current interpretation and genealogy | `theories/shengsheng-buxi-generative-existence/README.md` | Keep its current summaries and preserved historical formulation; add a concise pointer to root `RESEARCH.md`. |
-| Unified foundation, formal core, formation, ethics, and concern–correction interface | `theories/shengsheng-buxi-generative-existence/unified-2026-10-05/` | Keep as the integrated foundation. Link to later branches rather than copy their complete reports into this directory. |
+| Canonical current interpretation and genealogy | `theories/becoming/README.md` | Keep its current summaries and preserved historical formulation; add a concise pointer to root `RESEARCH.md`. |
+| Unified foundation, formal core, formation, ethics, and concern–correction interface | `theories/becoming/chapters/` | Keep as the integrated foundation. Link to later branches rather than copy their complete reports into this directory. |
 | Direction hypothesis and costed formation | `_process/research/2026-10-05-direction-frontier/` | Existing `EXPLORATION.md`, mathematical/conceptual/literature notes, checks, review, interactive model, and research record remain together. |
 | Concern formation, widening, correction, and succession | `_process/research/2026-10-05-concern-theory/` | Existing reading guide, theory, claim register, two formal notes, evidence, reviews, and exact programs/results remain together. |
 | Revision of scope and strategic access | `_process/research/2026-10-05-revisable-concern/` | Existing guide, theory, claims, scope/access proofs, provenance/context, reviews, and independent checks remain together. |
@@ -53,15 +53,15 @@ All targets exist locally. Replace only the link target strings in these current
 
 | File and line | Suggested relative target |
 |---|---|
-| `theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-FOUNDATION.md:3`, conscience link | `../../../sources/15-codex-theory-conversations/2026-10-05-conscience-and-universal-morality.md` |
+| `theories/becoming/chapters/ETHICAL-FOUNDATION.md:3`, conscience link | `../../../sources/15-codex-theory-conversations/2026-10-05-conscience-and-universal-morality.md` |
 | Same file and line, unified-theory link | `THEORY.md` |
-| `theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMATION-PRIOR-ART.md:11` | `../../../experiments/continuing-participation/README.md` |
+| `theories/becoming/chapters/FORMATION-PRIOR-ART.md:11` | `../../../experiments/continuing-participation/README.md` |
 | Same file:12 | `../../../sources/15-codex-theory-conversations/2026-10-05-selection-and-continuity-of-renewal.md` |
 | Same file:13, formation results | `../../../experiments/integrated-correction/general-framework/gap-resolution/formation-coupled/RESULTS.md` |
 | Same file:13, reopening extension | `../../../experiments/integrated-correction/general-framework/gap-resolution/formation-coupled/REOPENING-RESULTS.md` |
 | Same file:15 | `../../../sources/15-codex-theory-conversations/2026-10-05-continuing-participation-and-funded-correction.md` |
 | `_process/research/2026-10-05-direction-frontier/EXPLORATION.md:29` | `../2026-10-04-integrated-evolution/selection-of-renewal.md` |
-| Same file:140, unified theory | `../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md` |
+| Same file:140, unified theory | `../../../theories/becoming/chapters/THEORY.md` |
 | Same file:140, conscience proposal | `../../../sources/15-codex-theory-conversations/2026-10-05-conscience-and-universal-morality.md` |
 
 These root-absolute targets will otherwise be interpreted as website-root paths by a hosted repository and will not work for another local checkout.

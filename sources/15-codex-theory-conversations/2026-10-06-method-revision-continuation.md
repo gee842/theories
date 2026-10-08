@@ -11,7 +11,7 @@ alternative from the actual acquired-model checkpoint, the finite supplied
 switching rule, protocol, proofs, code, comparisons and interpretations are
 AI-authored elaborations, not additional quotations from Ren.
 
-The result is [METHOD-REVISION.md](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/METHOD-REVISION.md).
+The result is [METHOD-REVISION.md](../../theories/becoming/chapters/METHOD-REVISION.md).
 The preceding [continuation record](2026-10-06-meta-revision-continuation.md)
 and its depleted-endpoint counterexamples remain unchanged. This extension
 does not revise the accepted conditional foundation's five completion criteria.

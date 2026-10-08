@@ -6,7 +6,7 @@
 
 ## 1. 最新成果限定了什么不能重复
 
-已重新读[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)、[规范接口](LIANGZHI-NORMATIVE-WARRANT-INTERFACE.md)和研究索引最近相关段。既有实际评价接续、履行后撤回、多项要求与自模型认证，都已经有明确范围的成果；新增发展史也已通过再下一代实际运行检验。不能将“行为会随证据改变”或“完成后会停止”重新列为普遍缺口。
+已重新读[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)、[规范接口](LIANGZHI-NORMATIVE-WARRANT-INTERFACE.md)和研究索引最近相关段。既有实际评价接续、履行后撤回、多项要求与自模型认证，都已经有明确范围的成果；新增发展史也已通过再下一代实际运行检验。不能将“行为会随证据改变”或“完成后会停止”重新列为普遍缺口。
 
 最新[整体实践根据 §8](WHOLE-PRACTICAL-GROUND-INTEGRATION.md#8-joint-explanation-and-the-source-of-corrective-force)又修正了一项竞争解释：成熟的实践自然主义可以解释非工具性关切、目的改变与评价方法修订，并不必然只追求固定回报。因此“只有生成整体论能解释纠正”已经不能充当本轮前提。候选解释可以共同支持一项伦理判断；未证明表述唯一，不等于那项判断毫无根据。
 
@@ -70,7 +70,7 @@ Martin 的用途对照并未追踪同一幼儿收到新目的后怎样更新旧�
 
 ## 7. 最终接受范围与版本
 
-最终[现行主文](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md#6-认识接口所需随共同活动而具体化)新增§6–7和[整合文](LIANGZHI-CALIBRATION-INTEGRATION.md)已通读；肯定论证、来源及形式对应的最后修订也已核对。Martin 的跨儿童用途比较与未观察同一幼儿当场更新明确保留；控制与关切不按架构名称划界；有限且有根据的终局安排没有被取消。本文接受的是这些限定之内的证据及应用解释。
+最终[现行主文](../../../../theories/becoming/chapters/LIANGZHI-EVOLUTION.md#6-认识接口所需随共同活动而具体化)新增§6–7和[整合文](LIANGZHI-CALIBRATION-INTEGRATION.md)已通读；肯定论证、来源及形式对应的最后修订也已核对。Martin 的跨儿童用途比较与未观察同一幼儿当场更新明确保留；控制与关切不按架构名称划界；有限且有根据的终局安排没有被取消。本文接受的是这些限定之内的证据及应用解释。
 
 本轮进一步说明了哪些观察能支持“形成的回应包含实际活动关系”，以及为何不能只用帮助次数或履行标签代替它。它没有给出哪些共同目标首先值得实现、知情拒绝何时改变权限、所成判断何以对全部智能有规范效力的新证明。下一连接应对这些实质根据作具体比较，并让经验研究检验其认识前提；既不从技术成功偷渡伦理权威，也不因普遍证明未成而否定已有证据。
 
@@ -82,6 +82,6 @@ Martin 的用途对照并未追踪同一幼儿收到新目的后怎样更新旧�
 | [来源评估](LIANGZHI-CALIBRATION-SOURCES.md) | `7a9411654083bd68eedc7f90c332770958447f0d90d17a54182d7da760fa8e8e` |
 | [形式对应](LIANGZHI-CALIBRATION-CORRESPONDENCE.md) | `a75243dd7ffb450ff9d4df3366803a37c030bdfda0cfdf3bc06eee83a3560801` |
 | [整合](LIANGZHI-CALIBRATION-INTEGRATION.md) | `bdf08364238e5569ccec1a450d533f20156a4ddc5a6dcfeddc2b9b6e411bf0ad` |
-| [现行主文](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md) | `e289239aaedcf017ff5e653a2bd02f070c59b8c6f3ffaf987d72c717eddbb4db` |
+| [现行主文](../../../../theories/becoming/chapters/LIANGZHI-EVOLUTION.md) | `e289239aaedcf017ff5e653a2bd02f070c59b8c6f3ffaf987d72c717eddbb4db` |
 
 本稿为 AI 内部分工的反审，不是外部同行评审、独立实验复制或新增的伦理真理认证。

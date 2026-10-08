@@ -1,6 +1,6 @@
 # Acquired distinctions and changed participation: source and rival review
 
-6 October 2026. Collaborating-AI review of **formed and revisable participation → internally acquired consequence distinctions → changed continuation**, under the [shared nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). This is source reconstruction and an identification argument, not a new controller, proof build or empirical result. The question is which actual relations are already established and what would advance their explanation without counting them twice.
+6 October 2026. Collaborating-AI review of **formed and revisable participation → internally acquired consequence distinctions → changed continuation**, under the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). This is source reconstruction and an identification argument, not a new controller, proof build or empirical result. The question is which actual relations are already established and what would advance their explanation without counting them twice.
 
 ## Begin with the strongest existing positive realization
 

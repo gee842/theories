@@ -23,7 +23,7 @@ def main():
     parser.add_argument("--output", required=True, type=Path)
     args = parser.parse_args()
     repo = Path(__file__).resolve().parents[3]
-    source = repo / "theories/shengsheng-buxi-generative-existence/unified-2026-10-05"
+    source = repo / "theories/becoming/chapters"
     output = args.output.resolve()
     if source == output or source in output.parents:
         raise ValueError("Export must be outside the canonical package")

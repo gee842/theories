@@ -22,7 +22,7 @@ def main():
     chain = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(chain)
     document = HERE / 'PLURAL-CORRECTION-INTEGRATION.md'
-    chapter = ROOT / 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PLURAL-SYSTEMS-AND-CORRECTION.md'
+    chapter = ROOT / 'theories/becoming/chapters/PLURAL-SYSTEMS-AND-CORRECTION.md'
     source = ROOT / 'sources/15-codex-theory-conversations/2026-10-08-plural-systems-and-parent-correction.md'
     linked = 0
     for current in [document, chapter, source]:
@@ -84,8 +84,8 @@ def main():
         assert digest(ROOT / path) == fingerprint
         assert data['reviewed_sources'][path] == fingerprint
     # New navigation only: shared files' unrelated changes are not certified.
-    nav = [ROOT / 'RESEARCH.md', ROOT / 'theories/shengsheng-buxi-generative-existence/README.md',
-           ROOT / 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md',
+    nav = [ROOT / 'RESEARCH.md', ROOT / 'theories/becoming/README.md',
+           ROOT / 'theories/becoming/chapters/ALIGNMENT-AND-GOVERNANCE.md',
            HERE / 'GENERATIVITY-CHAIN-INDEX-RECORD.md', ROOT / 'sources/SOURCES.md']
     for path in nav:
         refs = [r for r in re.findall(r'\]\(([^)]+)\)', path.read_text())

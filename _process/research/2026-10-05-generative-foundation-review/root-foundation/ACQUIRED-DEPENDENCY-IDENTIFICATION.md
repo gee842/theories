@@ -1,6 +1,6 @@
 # From native consequences to acquired dependency-sensitive application
 
-6 October 2026. AI-authored read-only source comparison under the [shared method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Named connection: **acquired distinctions of an operation's consequences → changed application within continuing activity**. This proposes a bounded next test; it supplies no controller, experiment, fresh proof or new literature result. The [preceding identification note](CONTINUING-DEPENDENCY-IDENTIFICATION.md) retains the material recording and last-repair-unit constraints.
+6 October 2026. AI-authored read-only source comparison under the [shared method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Named connection: **acquired distinctions of an operation's consequences → changed application within continuing activity**. This proposes a bounded next test; it supplies no controller, experiment, fresh proof or new literature result. The [preceding identification note](CONTINUING-DEPENDENCY-IDENTIFICATION.md) retains the material recording and last-repair-unit constraints.
 
 ## What existing acquisition already does
 

@@ -36,7 +36,7 @@ def main():
         assert sha(formal/'finite-support-verification'/(name+'.txt')) == digest, name
     fragments = {
         HERE/'MARKET-INTERNET-DEGENERATION.md': '<a id="finite-support-obstruction"></a>',
-        ROOT/'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md': '<a id="finite-support-obstruction"></a>',
+        ROOT/'theories/becoming/chapters/MARKETS-AND-GENERATIVE-REGIMES.md': '<a id="finite-support-obstruction"></a>',
         formal/'README.md': '<a id="checked-finite-support-obstruction"></a>',
     }
     links = []

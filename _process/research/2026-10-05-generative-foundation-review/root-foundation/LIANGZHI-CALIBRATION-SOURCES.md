@@ -1,6 +1,6 @@
 # 实际处境怎样纠正回应：两项原始研究与竞争解释
 
-2026年10月7日。AI 来源评估。承接[共同发展的证据接口](LIANGZHI-DEVELOPMENT-SOURCES.md)，本轮检验**理解是否追踪所参与活动的具体关系，以及这种校准怎样支持或修订关切的整体解释**。遵循[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)：目标、物的可用性、请求与回应不是先已完整的独立要素；实验选择其中部分关系加以改变。这里的“需要”首先指对实验呈现的任务而言需要什么，不等于已经证明的伦理要求。
+2026年10月7日。AI 来源评估。承接[共同发展的证据接口](LIANGZHI-DEVELOPMENT-SOURCES.md)，本轮检验**理解是否追踪所参与活动的具体关系，以及这种校准怎样支持或修订关切的整体解释**。遵循[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)：目标、物的可用性、请求与回应不是先已完整的独立要素；实验选择其中部分关系加以改变。这里的“需要”首先指对实验呈现的任务而言需要什么，不等于已经证明的伦理要求。
 
 已读[规范根据接口](LIANGZHI-NORMATIVE-WARRANT-INTERFACE.md)。既有[满足后撤回](FULFILLMENT-WITHDRAWAL-INTEGRATION.md)已实现有条件的实践应用修订；本轮不将其重新列为缺失，也不另造同类控制器。本文没有新证明或实验。
 

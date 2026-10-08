@@ -1,6 +1,6 @@
 # Prospective control over acquired capacities: substantive counterreview
 
-7 October 2026, Asia/Bangkok. AI-authored continuation of the [ratification investigation](PERSPECTIVAL-RATIFICATION-INTEGRATION.md#7-what-is-gained-and-what-is-still-supplied), under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). **Scope:** philosophical reconstruction, counterexamples and conditional adjudication. No new mathematical proof, empirical result or completed universal grounding is claimed.
+7 October 2026, Asia/Bangkok. AI-authored continuation of the [ratification investigation](PERSPECTIVAL-RATIFICATION-INTEGRATION.md#7-what-is-gained-and-what-is-still-supplied), under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). **Scope:** philosophical reconstruction, counterexamples and conditional adjudication. No new mathematical proof, empirical result or completed universal grounding is claimed.
 
 **Main correction:** a restriction's technical relation to a good does not settle its authority. A separable acquired skill can be subject to justified restrictions; a dependence constitutive of a shared activity can be part of an objectionable arrangement. Nor does recovery of formation costs automatically end a commitment. The strongest comparison concerns the scope of continuing control in the actual whole history, including the new grounds that commitment itself may have created.
 

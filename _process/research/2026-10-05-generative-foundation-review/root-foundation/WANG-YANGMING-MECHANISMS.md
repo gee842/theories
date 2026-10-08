@@ -2,7 +2,7 @@
 
 2026年10月6日。AI 撰写的机制类比与现有结果复核（AI-authored analogy, not historical identification）。本文重用仓库已有证明和构造，不增添实验或 Lean 验证，也不证明这些机制就是王阳明本人的心理学或形上学。阳明原文的语义和历史解释须由比较主文的来源核定；下列术语只标明拟讨论的对应关系。
 
-本轮连接是：**形成的评价影响 → 有根据、可修正的实际行动 → 关切与智慧**。这属于[生成性根基](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md)的共同推导。可整合之处在于修养怎样成为有效且可校正的行动能力；不能把已经证明的局部学习机制，提升为本有良知的普遍可靠性或知善必然行善。
+本轮连接是：**形成的评价影响 → 有根据、可修正的实际行动 → 关切与智慧**。这属于[生成性根基](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md)的共同推导。可整合之处在于修养怎样成为有效且可校正的行动能力；不能把已经证明的局部学习机制，提升为本有良知的普遍可靠性或知善必然行善。
 
 ## 1. 三个对应关系
 
@@ -12,7 +12,7 @@
 | 致良知 | 使另一个真实受影响者的处境进入判断，并检验什么回应真正有根据 | 患者的好坏、观察者学得的权重和正当行动理由不是同一量；正权重本身不是道德知识 |
 | 事上磨炼 | 实际后果形成、检验并改变预测、评价联结和行动方式 | 练习增加、联结增强、选择变化都不自动构成伦理进步；错误反馈、过滤和资源枯竭可以使过程退化 |
 
-已有[评价应用论证](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md#from-acquired-understanding-to-warranted-revisable-choice)把正向连接分为四步：独立说明患者、理由、权限和比较范围；以适用的获得性证据识别手段；从有根据的理由结构得出建议；检查证据是否实际影响选择，并由同一行动者向同一对象执行可支付的行动。这里的统一是相互联系，不是抹去各环节的条件。
+已有[评价应用论证](../../../../theories/becoming/chapters/EVALUATIVE-APPLICATION.md#from-acquired-understanding-to-warranted-revisable-choice)把正向连接分为四步：独立说明患者、理由、权限和比较范围；以适用的获得性证据识别手段；从有根据的理由结构得出建议；检查证据是否实际影响选择，并由同一行动者向同一对象执行可支付的行动。这里的统一是相互联系，不是抹去各环节的条件。
 
 ## 2. 已有正向命题：从零开始的关切何时进入行动
 
@@ -60,7 +60,7 @@ g_{j,t}w_tH_j>c_j-b_j.
 
 ## 3. 已有认识论命题：相关差异必须能够进入行动
 
-[形式核心 F6](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md#f6-consequential-differences-must-reach-action)规定：如果两个容许世界在决策期限前向控制者提供完全相同的可及历史，其安全即时行动集合却不相交，而且没有容许的安全探查能及时区分二者，那么只依赖这些历史的策略不能保证在两个世界中都安全。
+[形式核心 F6](../../../../theories/becoming/chapters/FORMAL-CORE.md#f6-consequential-differences-must-reach-action)规定：如果两个容许世界在决策期限前向控制者提供完全相同的可及历史，其安全即时行动集合却不相交，而且没有容许的安全探查能及时区分二者，那么只依赖这些历史的策略不能保证在两个世界中都安全。
 
 证明很短：确定性控制者在相同历史下采取同一行动，它至多属于其中一个安全集合。随机控制者若要确定保证安全，其全部概率支持必须落在两个集合的交集，而该交集为空。
 
@@ -72,18 +72,18 @@ g_{j,t}w_tH_j>c_j-b_j.
 
 [关切学习数学 §2](../../2026-10-05-concern-theory/learning-formal.md#2-why-self-learning-cannot-force-other-directed-valuation)已有精确反例：共享特征与只评价自身的身份门可以完美拟合同一批自我教学数据，并拥有同样准确的他者损害世界模型，却对他者赋予不同评价。因此准确事实预测、自我体验的积累和共享评价之间仍有架构问题，不能用“知道得足够多就必然关切”跳过。
 
-最新的[评价联结形成](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-PLASTICITY.md)进一步给出材料形成的局部实例。[正当修复应用](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-GROUNDING.md#a-positive-conditional-derivation)的选定历史从没有导通连接开始；实际配对后果形成正连接，使一个有独立根据的修复建议进入付费选择。无效连接和身份过滤对照保留相关事实知识与教学账单，却没有相同响应。这建立了获得的连接对具体选择的因果贡献。
+最新的[评价联结形成](../../../../theories/becoming/chapters/EVALUATIVE-PLASTICITY.md)进一步给出材料形成的局部实例。[正当修复应用](../../../../theories/becoming/chapters/EVALUATIVE-GROUNDING.md#a-positive-conditional-derivation)的选定历史从没有导通连接开始；实际配对后果形成正连接，使一个有独立根据的修复建议进入付费选择。无效连接和身份过滤对照保留相关事实知识与教学账单，却没有相同响应。这建立了获得的连接对具体选择的因果贡献。
 
 该应用还供给患者好坏或权利、责任归属、补救适当性、权限与完整比较的独立根据。操作造成的净损失与后续十单位服务有明确账目，但这些数值不自行证明责任、福利解释、额外服务的适当性或优先次序；补救成立也不意味着造成教学损失本身正当。
 
-同一研究保留了[退化修正反例](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-GROUNDING.md#what-correct-revision-must-preserve)：匹配的后续分支获得相同新数据，付出相同更新费用，保留相同手段效力，并且都能支付服务；主动替换后的联结互相抵消而不服务，冻结原正号的对照则服务。如果独立成立的修复理由和优先性仍保持，主动更新就压抑了有根据的回应。较多学习不是较好判断的充分条件。
+同一研究保留了[退化修正反例](../../../../theories/becoming/chapters/EVALUATIVE-GROUNDING.md#what-correct-revision-must-preserve)：匹配的后续分支获得相同新数据，付出相同更新费用，保留相同手段效力，并且都能支付服务；主动替换后的联结互相抵消而不服务，冻结原正号的对照则服务。如果独立成立的修复理由和优先性仍保持，主动更新就压抑了有根据的回应。较多学习不是较好判断的充分条件。
 
 因而，与“遮蔽”作类比时，应具体指出身份过滤、错误联结、错误手段判断、无权行动或预算失败；这些机制不应一概归于意志不纯，也不必都用一个内在缺陷解释。
 
 ## 5. 对智慧与后续推导的贡献
 
-已有[有界智慧论证](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md#what-wisdom-adds)要求证据改变它实际支持的判断：错误手段应修正，已履行的要求应解除，权限变化影响许可，资源不足限制执行；这些变化不能自动抹去患者地位或尚未满足的独立要求。关切的实际影响、判断的根据和响应的效力因此能够共同发展，同时保留可能的背离。
+已有[有界智慧论证](../../../../theories/becoming/chapters/EVALUATIVE-APPLICATION.md#what-wisdom-adds)要求证据改变它实际支持的判断：错误手段应修正，已履行的要求应解除，权限变化影响许可，资源不足限制执行；这些变化不能自动抹去患者地位或尚未满足的独立要求。关切的实际影响、判断的根据和响应的效力因此能够共同发展，同时保留可能的背离。
 
 本比较提供一个明确整合接口：以知行、工夫与良知的讨论，检验我们对获得性倾向、实际后果和正当修正的区分是否充分。它未增加新的数学证明、经验观察或历史同一性证据，也没有把不同局部模型接成一个未检查的共同物理历史。
 
-更强的未决连接仍是：患者的真实好坏为什么向没有先行关心欲望、没有特殊既有责任的有能力者提供实践理由。现有角色内修复实例不能独自完成此普遍化。[最强根基研究](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/STRONGEST-FOUNDATION-CLAIM.md#the-decisive-connection)保留这一任务。足以改变当前比较的结果，应独立支持或限制这个桥梁，或者表明阳明相应主张的历史内容不同于这里使用的机制重构；重复一个能实现既定目标的控制器并不完成它。
+更强的未决连接仍是：患者的真实好坏为什么向没有先行关心欲望、没有特殊既有责任的有能力者提供实践理由。现有角色内修复实例不能独自完成此普遍化。[最强根基研究](../../../../theories/becoming/chapters/STRONGEST-FOUNDATION-CLAIM.md#the-decisive-connection)保留这一任务。足以改变当前比较的结果，应独立支持或限制这个桥梁，或者表明阳明相应主张的历史内容不同于这里使用的机制重构；重复一个能实现既定目标的控制器并不完成它。

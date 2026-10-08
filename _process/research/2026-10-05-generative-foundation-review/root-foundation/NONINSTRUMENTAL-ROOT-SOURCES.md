@@ -1,6 +1,6 @@
 # 非工具性关切再推导：现象价值、行动者中立理由与公开性
 
-2026年10月6日。AI 撰写的原典比较与论证重建；不是 Ren 原话，不是王阳明的历史诠释，也不是把现代作者的主张视作证明。本轮连接是：**实际体验 → 患者局部坏 → 独立执行者的患者指向理由**。配合[本轮主论证](NONINSTRUMENTAL-ROOT-ARGUMENT.md)，保留[生成自我研究](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-SELF-AND-ETHICS.md)与现有 C1/C2 实现的边界。
+2026年10月6日。AI 撰写的原典比较与论证重建；不是 Ren 原话，不是王阳明的历史诠释，也不是把现代作者的主张视作证明。本轮连接是：**实际体验 → 患者局部坏 → 独立执行者的患者指向理由**。配合[本轮主论证](NONINSTRUMENTAL-ROOT-ARGUMENT.md)，保留[生成自我研究](../../../../theories/becoming/chapters/GENERATED-SELF-AND-ETHICS.md)与现有 C1/C2 实现的边界。
 
 ## 1. 谱系与本轮新增范围
 

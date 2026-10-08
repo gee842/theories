@@ -1,6 +1,6 @@
 # Prospective agreement and continuing control: primary-source assessment
 
-7 October 2026, Asia/Bangkok. AI-authored source assessment for the branch proposed in [the ratification integration](PERSPECTIVAL-RATIFICATION-INTEGRATION.md#7-what-is-gained-and-what-is-still-supplied), following the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Three primary philosophical sources are used. This is neither empirical confirmation nor legal guidance; no mathematical result is proposed.
+7 October 2026, Asia/Bangkok. AI-authored source assessment for the branch proposed in [the ratification integration](PERSPECTIVAL-RATIFICATION-INTEGRATION.md#7-what-is-gained-and-what-is-still-supplied), following the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Three primary philosophical sources are used. This is neither empirical confirmation nor legal guidance; no mathematical result is proposed.
 
 The universal inference being tested is **whole qualitative realization → the justified scope of prospective practical authority**. Formation through another's contribution can produce genuine powers of commitment, acquired capabilities and continuing dependence together. The question is what within that history warrants a restriction, including one knowingly chosen before the capability existed. Neither causal contribution nor an antecedent act of agreement supplies an unexplained universal answer.
 

@@ -1,6 +1,6 @@
 # Review: acquired applicability changes subsequent inquiry and use
 
-6 October 2026. Independent AI-authored conceptual, source and saved-result review under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Named connection: **an actual consequence → an acquired use relation → changed inquiry and productive activity in the same history**. This reviewer owns this note only. No model was imported, transition executed, old experiment rerun or Lean theorem certified for this review.
+6 October 2026. Independent AI-authored conceptual, source and saved-result review under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Named connection: **an actual consequence → an acquired use relation → changed inquiry and productive activity in the same history**. This reviewer owns this note only. No model was imported, transition executed, old experiment rerun or Lean theorem certified for this review.
 
 **Acceptance:** the [frozen protocol][protocol], [implementation][model] and [saved results][results] support the stated finite causal realization. No source-level or conceptual blocker was found. The independent transition reconstruction has its own receipt and must not be counted as an additional execution by this reviewer. The result does not derive the supplied applicability family, recipe or inquiry policy, and does not establish general health or justified concern.
 

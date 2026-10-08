@@ -1,6 +1,6 @@
 # Concern can warrant changing the end, not only improving its means
 
-6 October 2026. AI-authored argument under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Named connection: **actual undergoing and possible transformation → assessment of the ends that organize a response**. Activity, experience, understanding and purposive response are differentiated within one unfolding. A previously adopted welfare goal is not the starting premise.
+6 October 2026. AI-authored argument under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Named connection: **actual undergoing and possible transformation → assessment of the ends that organize a response**. Activity, experience, understanding and purposive response are differentiated within one unfolding. A previously adopted welfare goal is not the starting premise.
 
 **Positive proposal:** an actual burden can count in favor of forming or revising a purpose because of what that change would do to the undergoing. Concern is then a way of becoming responsive to significance already present in the situation. Its warrant need not originate in the purpose whose formation it justifies. This is the constitutive position defended here; accurate knowledge alone neither proves it nor guarantees motivation.
 

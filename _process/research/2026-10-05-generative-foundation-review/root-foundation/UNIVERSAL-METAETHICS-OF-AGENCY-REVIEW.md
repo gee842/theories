@@ -1,14 +1,14 @@
 # Universal Meta-Ethics of Agency：外部视角审查 / External-perspective review
 
-2026-10-09，Asia/Bangkok。AI（Claude）应 Ren 的请求“repo已经大幅更新了，我们发现了universal meta ethics of agency，请review一下”所作的审查。审查对象是 README 首项 [Universal Metaethical Core](../../../../theories/shengsheng-buxi-generative-existence/results/records/positive-ground-open-futures.md)、其[Lean 源码](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositiveGroundUncertainty.lean)、[G0 前提推导](GENERATIVE-PREMISE-DERIVATION.md)、[对齐方向](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md)及相关的 Ren 原话来源。本文是审查与建议，不新增定理、不改变任何成果记录或 README，也不替代此前的[独立范围审查](POSITIVE-GROUND-UNCERTAINTY-REVIEW.md)。
+2026-10-09，Asia/Bangkok。AI（Claude）应 Ren 的请求“repo已经大幅更新了，我们发现了universal meta ethics of agency，请review一下”所作的审查。审查对象是 README 首项 [Universal Metaethical Core](../../../../theories/becoming/results/records/positive-ground-open-futures.md)、其[Lean 源码](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositiveGroundUncertainty.lean)、[G0 前提推导](GENERATIVE-PREMISE-DERIVATION.md)、[对齐方向](../../../../theories/becoming/chapters/ALIGNMENT-DIRECTION.md)及相关的 Ren 原话来源。本文是审查与建议，不新增定理、不改变任何成果记录或 README，也不替代此前的[独立范围审查](POSITIVE-GROUND-UNCERTAINTY-REVIEW.md)。
 
 ## 0. 审查所针对的关系配置
 
-依[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)，先说明被审查的配置：同一关系展开中，一个形成了回应能力的位置面对若干有根据的可见接续；G0 赋予其中实际实现的生及继续生成以正面规范意义，直接实践解释 D／P 把正面意义转为该位置的一项支持理由，J1–J4 把支持理由接到比较、责任与正当选择。下文每一项批评都标明它属于（a）形式表示中省略的关系，（b）重构后论述中尚未解释的推论，还是（c）针对某一明确主张的反证；以及什么结果会改变本评估。
+依[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)，先说明被审查的配置：同一关系展开中，一个形成了回应能力的位置面对若干有根据的可见接续；G0 赋予其中实际实现的生及继续生成以正面规范意义，直接实践解释 D／P 把正面意义转为该位置的一项支持理由，J1–J4 把支持理由接到比较、责任与正当选择。下文每一项批评都标明它属于（a）形式表示中省略的关系，（b）重构后论述中尚未解释的推论，还是（c）针对某一明确主张的反证；以及什么结果会改变本评估。
 
 ## 1. 结论
 
-**已经成立的是：一套显式公理化、范围纪律严谨的生成伦理框架（G0 + D/P + J1–J4 + E），以及“无须整体更好也能确立正面根据”这一有价值的澄清。尚未成立的是：一种被证明的、普遍约束一切行动者的元伦理。** 仓库自身的记录与此一致：[`universal-practical-warrant`](../../../../theories/shengsheng-buxi-generative-existence/results/records/universal-practical-warrant.md) 仍为 `open`；10月7日的[首次普遍推导审计](UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md)写明 “Full universal meta-ethics: not proved”；10月8日的[公理路线纠正](../../../../sources/15-codex-theory-conversations/2026-10-08-alignment-grounding-axiom-correction.md)明确把普遍性限定为“同一明确公理框架下的适用与推导”。问题在于公开标题与首页呈现方式超出了这些记录本身所陈述的范围。（同日修订：强意义上无前提推出规范结论本不可能，任何元伦理都有起点，见 §3.1；采用公理本身不是缺陷，批评只针对呈现方式与起点强度的比较。）
+**已经成立的是：一套显式公理化、范围纪律严谨的生成伦理框架（G0 + D/P + J1–J4 + E），以及“无须整体更好也能确立正面根据”这一有价值的澄清。尚未成立的是：一种被证明的、普遍约束一切行动者的元伦理。** 仓库自身的记录与此一致：[`universal-practical-warrant`](../../../../theories/becoming/results/records/universal-practical-warrant.md) 仍为 `open`；10月7日的[首次普遍推导审计](UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md)写明 “Full universal meta-ethics: not proved”；10月8日的[公理路线纠正](../../../../sources/15-codex-theory-conversations/2026-10-08-alignment-grounding-axiom-correction.md)明确把普遍性限定为“同一明确公理框架下的适用与推导”。问题在于公开标题与首页呈现方式超出了这些记录本身所陈述的范围。（同日修订：强意义上无前提推出规范结论本不可能，任何元伦理都有起点，见 §3.1；采用公理本身不是缺陷，批评只针对呈现方式与起点强度的比较。）
 
 ## 2. 真正的贡献
 
@@ -36,7 +36,7 @@
 
 **修订（同日，回应 Ren 的质疑“我质疑这个是否可以被完成”）。** 这一质疑成立，本节原先的表述须收窄。在强意义上，即不用任何规范前提、以演绎必然性、对任何可能行动者（无论其关切为何）都成立地推出规范结论，这项工作**不可能完成**，而且这不是 G0 路线特有的缺陷：
 
-1. **两难。** 规范谓词要么不由任何前提或定义与描述关系相连，此时逻辑是保守的，描述前提推不出关于它的任何非平凡结论（Hume 律；形式化版本见 Pigden 1989、Schurz 1997）；要么由前提、定义或构成性同一与描述相连，此时这一连接本身就是实质承诺。[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)已写明：“Neither moving content into definitions nor calling it immanent discharges an explanatory dependency.”一元本体使评价成为同一展开中形成的关系，而不是另一领域；但“这种关系是好的”仍是一个立场，接受全部相同事实的对手仍可拒绝它，事实本身不能裁决。
+1. **两难。** 规范谓词要么不由任何前提或定义与描述关系相连，此时逻辑是保守的，描述前提推不出关于它的任何非平凡结论（Hume 律；形式化版本见 Pigden 1989、Schurz 1997）；要么由前提、定义或构成性同一与描述相连，此时这一连接本身就是实质承诺。[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)已写明：“Neither moving content into definitions nor calling it immanent discharges an explanatory dependency.”一元本体使评价成为同一展开中形成的关系，而不是另一领域；但“这种关系是好的”仍是一个立场，接受全部相同事实的对手仍可拒绝它，事实本身不能裁决。
 2. **这是一切奠基的共同处境。** 任何论证链都终止于无穷后退、循环或某个起点（Agrippa／Münchhausen 三难），数学同样有公理。Kant、Gewirth、Parfit、功利主义、契约主义都有起点。
 3. **“不以认同为条件而适用”不能被证明给不认同者。** 对一个不推理或不评价的存在，任何论证都不能使其承认；“适用”是规范立场的内容，不是可向其强制的结论。
 
@@ -69,11 +69,11 @@ def G0 (inventory) (PositiveRelevant) : Prop :=
 - **(A) 接受。** 它们各有一项被其他理由压倒的正面方面。代价是：在对齐最关键的情形中，判断几乎完全由 J1–J4（AI 补充、有争议的附加承诺）承担，G0 本身起不到区分作用。
 - **(B) 关系性地区分生与自毁式增长。** 不用评价词，而以关系说明：一种形成更新还是消耗它所参与的那些关系中进一步形成的条件。癌的增殖维持自身复制，同时毁坏其所依存的机体条件。这与 Ren 原话中“整体的方向”一致，而逐项 G0 恰恰在此偏离了整体单位（参见非二元方法“Whole as unit of grounding”）。
 
-(B) 正是当前首要的 [Theory of Becoming](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY-OF-BECOMING.md) 可以供给的桥：它已把退化纳入描述而不预设好坏，并把评价交给 G0／J。**若 Becoming 能以非评价的关系结构区分条件更新型形成与条件消耗型形成，G0 就获得非循环、可区分的内容；这是两条研究线之间最有产出的下一推论。** 若做不到，应公开采用 (A) 及其代价。
+(B) 正是当前首要的 [Theory of Becoming](../../../../theories/becoming/chapters/THEORY-OF-BECOMING.md) 可以供给的桥：它已把退化纳入描述而不预设好坏，并把评价交给 G0／J。**若 Becoming 能以非评价的关系结构区分条件更新型形成与条件消耗型形成，G0 就获得非循环、可区分的内容；这是两条研究线之间最有产出的下一推论。** 若做不到，应公开采用 (A) 及其代价。
 
-**(B) 已完成（2026-10-09，[Ren 的指示](../../../../sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md)）。** [关系性分类](../../../../theories/shengsheng-buxi-generative-existence/results/records/relational-renewal-classification.md)按形成与它所参与关系的条件分开更新型与消耗型，不用任何规范公理，Lean 层公理依赖全部为空。癌依存于它所消耗的条件，因而终止自身；升级竞赛起初在更新之内，随后消耗；不依存于所耗条件的“赢”可以无界持续，同时终止依存关系，而它自身的轨迹与可持续的形成无法区分。于是逐项“新组织”不能区分这些情形，关系结构可以。这三类都不是生生，因而不在 G0 的对象之内（措辞已依 Ren 追问修正，见下段）。另一会话的[较窄规律类结果](../../../../theories/shengsheng-buxi-generative-existence/results/records/renewing-consuming-formation.md)见 §6；二者的差别见[整合记录](RELATIONAL-RENEWAL-INTEGRATION.md#5-与既有及并行结果的关系)。
+**(B) 已完成（2026-10-09，[Ren 的指示](../../../../sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md)）。** [关系性分类](../../../../theories/becoming/results/records/relational-renewal-classification.md)按形成与它所参与关系的条件分开更新型与消耗型，不用任何规范公理，Lean 层公理依赖全部为空。癌依存于它所消耗的条件，因而终止自身；升级竞赛起初在更新之内，随后消耗；不依存于所耗条件的“赢”可以无界持续，同时终止依存关系，而它自身的轨迹与可持续的形成无法区分。于是逐项“新组织”不能区分这些情形，关系结构可以。这三类都不是生生，因而不在 G0 的对象之内（措辞已依 Ren 追问修正，见下段）。另一会话的[较窄规律类结果](../../../../theories/becoming/results/records/renewing-consuming-formation.md)见 §6；二者的差别见[整合记录](RELATIONAL-RENEWAL-INTEGRATION.md#5-与既有及并行结果的关系)。
 
-**审查判断的修正（2026-10-09，[Ren 追问](../../../../sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md#ren-follow-up)）。** 上文说“在第三种范围下，这些过程确实满足‘持续形成新组织’，完整论述并未排除它们”。这一句不成立，原文保留。G0 的对象是“整体中的生及其继续生成”，即生生；“持续”已经排除消耗型：依存的消耗者终止自身，不依存的消耗者终止它所参与的关系。把形式 `generative` 读成“任何已实现的新组织”，是本审查的读法，不是 Ren 的 G0。所以恶性生成问题出在形式化的读法，不出在 G0。(B) 也不是对 G0 的限定，而是给 G0 已有的对象一个关系内容；出路 (A) 不再需要。生成与退化作为关系不重叠，但一次发生可以同时参与二者。“消耗更坏”是比较，由 C 承担。[已查的比较](../../../../theories/shengsheng-buxi-generative-existence/results/records/relational-reading-comparison.md)在关系读法下，把规律族中每一种超出更新的取用严格排在同一展开中它不发生的接续之下；逐事件读法做不到。混合情形 C 不裁决。
+**审查判断的修正（2026-10-09，[Ren 追问](../../../../sources/15-codex-theory-conversations/2026-10-09-renewing-consuming-without-axioms.md#ren-follow-up)）。** 上文说“在第三种范围下，这些过程确实满足‘持续形成新组织’，完整论述并未排除它们”。这一句不成立，原文保留。G0 的对象是“整体中的生及其继续生成”，即生生；“持续”已经排除消耗型：依存的消耗者终止自身，不依存的消耗者终止它所参与的关系。把形式 `generative` 读成“任何已实现的新组织”，是本审查的读法，不是 Ren 的 G0。所以恶性生成问题出在形式化的读法，不出在 G0。(B) 也不是对 G0 的限定，而是给 G0 已有的对象一个关系内容；出路 (A) 不再需要。生成与退化作为关系不重叠，但一次发生可以同时参与二者。“消耗更坏”是比较，由 C 承担。[已查的比较](../../../../theories/becoming/results/records/relational-reading-comparison.md)在关系读法下，把规律族中每一种超出更新的取用严格排在同一展开中它不发生的接续之下；逐事件读法做不到。混合情形 C 不裁决。
 
 ### 3.4 形式层没有行动者（类别 a）
 
@@ -175,7 +175,7 @@ Integration: every_situated_position_has_reason 直接调用 contingent_generati
 
 ## 6. 接续：证据角色与有区分力的形式内容（2026-10-09）
 
-依 [Ren 的指示](../../../../sources/15-codex-theory-conversations/2026-10-09-lean-evidence-roles.md)“请把修改做完，Lean 承担有实质内容”，处理 §3.3 与 §3.5。详见[区分内容整合](GENERATIVE-DISCRIMINATION-INTEGRATION.md)与理论章 [G0-WARRANT](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/G0-WARRANT.md)。
+依 [Ren 的指示](../../../../sources/15-codex-theory-conversations/2026-10-09-lean-evidence-roles.md)“请把修改做完，Lean 承担有实质内容”，处理 §3.3 与 §3.5。详见[区分内容整合](GENERATIVE-DISCRIMINATION-INTEGRATION.md)与理论章 [G0-WARRANT](../../../../theories/becoming/chapters/G0-WARRANT.md)。
 
 ```text
 Result(s): new renewing-consuming-formation, protection-priority-excludes-uniform-aggregation;
@@ -195,5 +195,5 @@ Integration: README evidence lines now state what each check contributes; G0 sup
 **独立审查后的更正（2026-10-09）。** 本节以上原文保留。同日的[独立审查](GENERATIVE-DISCRIMINATION-REVIEW.md)附更正后接受两项结果，并指出本节有三处说过了头。
 
 1. **“出路 (A) 的代价因此不必承担”过强。** 本结果只涉及一个不可恢复的磨损规律类，外部化情形在其外。出路 (A) 不再需要，理由见 §3.3 末段：Ren 追问后确认，G0 的对象本来就是生生，恶性生成问题出在把 `generative` 读成任何新组织的形式化读法。本结果的作用较窄：在一个规律类中，给出不借好坏筛选、可检查的描述性内容，认出哪些形成属于这一对象。把 AI 的形式读法（`Ceaseless`、`KeepsCapacity`）认作生生，仍是读法与对应，不是 Lean 结果。
-2. **“符号翻转探针对新的动力学定理不适用”不对。** 新定理按构造对符号中立，探针给出同样的诊断：哪一侧在 G0 的对象之内，来自所给读法，不来自 Lean。新增的是供该读法所用的非平凡描述性区分；控制例核对的正是该区分不依赖效价参数。“消耗更坏”是比较，由 C 承担：本模块的逐事件宽读法下 C 不适用（`comparison_does_not_apply`）；在关系读法下，另一会话的 [relational-reading-comparison](../../../../theories/shengsheng-buxi-generative-existence/results/records/relational-reading-comparison.md) 已检查 C 的严格排序。
+2. **“符号翻转探针对新的动力学定理不适用”不对。** 新定理按构造对符号中立，探针给出同样的诊断：哪一侧在 G0 的对象之内，来自所给读法，不来自 Lean。新增的是供该读法所用的非平凡描述性区分；控制例核对的正是该区分不依赖效价参数。“消耗更坏”是比较，由 C 承担：本模块的逐事件宽读法下 C 不适用（`comparison_does_not_apply`）；在关系读法下，另一会话的 [relational-reading-comparison](../../../../theories/becoming/results/records/relational-reading-comparison.md) 已检查 C 的严格排序。
 3. **“J2 排除均匀聚合”不准确。** Lean 覆盖的是自然数值（单位步长）评分。修订后的模块另证明：一个有界有理评分在该情境中与 J2 在每一对选项上一致。所以这个情境只把 J2 与单位步长聚合分开。

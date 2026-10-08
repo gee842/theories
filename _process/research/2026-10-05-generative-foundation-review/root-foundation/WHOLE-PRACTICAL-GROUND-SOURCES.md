@@ -1,6 +1,6 @@
 # Whole appraisal and practical direction: primary-source assessment
 
-7 October 2026, Asia/Bangkok. AI-authored supporting source assessment for [the current completion request](../../../../sources/15-codex-theory-conversations/2026-10-07-whole-practical-ground-completion.md), the [universal target](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence), and the [substantive counterreview](WHOLE-PRACTICAL-GROUND-REVIEW.md). These are direct primary-text readings, not a comprehensive literature survey, empirical validation, or a proof by authority. This assessment uses the texts as precise affirmative and rival arguments; their cultural provenance does not decide the result.
+7 October 2026, Asia/Bangkok. AI-authored supporting source assessment for [the current completion request](../../../../sources/15-codex-theory-conversations/2026-10-07-whole-practical-ground-completion.md), the [universal target](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#session-target-universal-meta-ethics-of-all-intelligence), and the [substantive counterreview](WHOLE-PRACTICAL-GROUND-REVIEW.md). These are direct primary-text readings, not a comprehensive literature survey, empirical validation, or a proof by authority. This assessment uses the texts as precise affirmative and rival arguments; their cultural provenance does not decide the result.
 
 ## 1. Scanlon: identifying value does not specify one response form
 

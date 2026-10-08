@@ -1,6 +1,6 @@
 # Activity changes the formation of its later response
 
-6 October 2026. AI-authored continuation under the [shared nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md).
+6 October 2026. AI-authored continuation under the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md).
 Named connection: **native activity → retained material consequence → changed
 formation of a response carrier → changed later activity**. This advances one
 part of organization changing its own conditions. It does not complete the
@@ -177,10 +177,10 @@ abundance would omit the very constitution through which the response changes.
 
 ## What this establishes alongside earlier learning results
 
-The existing [selector revision](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SELECTOR-REVISION.md),
-[updater formation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UPDATER-FORMATION.md),
-[architecture formation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ARCHITECTURE-FORMATION.md)
-and [method formation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/AUTONOMOUS-METHOD-FORMATION.md)
+The existing [selector revision](../../../../theories/becoming/chapters/SELECTOR-REVISION.md),
+[updater formation](../../../../theories/becoming/chapters/UPDATER-FORMATION.md),
+[architecture formation](../../../../theories/becoming/chapters/ARCHITECTURE-FORMATION.md)
+and [method formation](../../../../theories/becoming/chapters/AUTONOMOUS-METHOD-FORMATION.md)
 already show different conditional routes from consequences to changed
 connections or reconstruction. This round derives a simpler native instance
 without importing their distinct packet, renewal or digital assembly laws.
@@ -218,7 +218,7 @@ results provide conditional examples; their physical functions and application
 criteria still need grounding where their origin is claimed. A stable law can
 generate that revision, so no endless chain of meta-controllers is required.
 
-The [whole-process ethical account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md)
+The [whole-process ethical account](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md)
 continues to ask which transformations realize good for the differentiated
 lives and relations involved. A response helping reproduce its own carrier is
 one causal route, not the ground or universal measure of goodness. The source

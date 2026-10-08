@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "id": "recurrent-chain-assembly",
+  "title": {
+    "zh": "材料准备接入重复链状生成",
+    "en": "Prepared material joins recurrent chain formation"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F10",
+  "reviewed_at_utc": "2026-10-08T19:33:55.799793+00:00",
+  "claim": {
+    "zh": "先前实际路由输出经逐项接合形成可分割链；保留内部边的两个片段经同一接合规律各自重建，任意有限轮次可在明确共同材料及支持预算内执行。",
+    "en": "The previous actual routing output forms a cleavable chain through tokenwise attachment; its internally connected fragments rebuild under the same attachment law, with every finite number of rounds executable within explicit shared material/support budgets."
+  },
+  "hypotheses": [
+    {
+      "zh": "A/B 末端相容、八组分路径的中心切分及操作次序给定；初始已完成路由输出没有未表示承重边。",
+      "en": "A/B end compatibility, central cleavage of an eight-component path and operation order are supplied; the completed routing output has no unrepresented load-bearing edges."
+    },
+    {
+      "zh": "一条完整链继续 g 轮另需 8(2^g−1) 组分和 9(2^g−1) 支持；从路由材料激活结构另需八单位支持。",
+      "en": "Continuing one complete chain for g rounds requires 8(2^g−1) additional components and 9(2^g−1) support; structural activation from routed material additionally requires eight support units."
+    }
+  ],
+  "correspondence": {
+    "zh": "结构由实际移入、形成边、过滤旧边及保留片段构成。新接合途径与旧分裂生长仅有已检查的端点对应。",
+    "en": "Structure consists of actual token transfers, formed edges, filtered old edges and retained fragments. The new attachment route and old division growth have only the checked endpoint correspondence."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RecurrentAssembly.lean",
+  "aliases": [
+    "RecurrentAssembly.prepared_repeated_generation"
+  ],
+  "dependencies": [
+    {
+      "id": "material-preparation-output",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "prepared_repeated_generation 使用 completed_routing_output 和既有 route_trace_projection 接通。",
+        "en": "prepared_repeated_generation uses completed_routing_output and the inherited route_trace_projection to compose the interface."
+      },
+      "interface": {
+        "output": {
+          "zh": "成功路由轨迹的实际 placed 序列。",
+          "en": "Actual placed sequence from a successful routing trace."
+        },
+        "input": {
+          "zh": "逐项接合的共享材料池。",
+          "en": "Shared component pool for tokenwise attachment."
+        },
+        "conditions": {
+          "zh": "给定路由能力、无未表示承重边、另供八单位初始接合支持及明示后续库存。",
+          "en": "Supplied routing capability, no unrepresented load-bearing edges, eight additional activation-support units and explicit subsequent stock."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RecurrentAssembly.lean"
+      }
+    },
+    {
+      "id": "growth-constrained-fragmentation",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "formed_graph_matches_previous 与 fragments_retain_real_links 核对已生成图及真实分割；不复用旧概率为长期增长。",
+        "en": "formed_graph_matches_previous and fragments_retain_real_links check the formed graph and actual split; old probabilities are not reused as long-term growth."
+      },
+      "interface": {
+        "output": {
+          "zh": "先前实际链状图与中心断裂的成员分割。",
+          "en": "Previous actual chain graph and central-cut member partition."
+        },
+        "input": {
+          "zh": "本轮接合终点与保留内部连接的片段。",
+          "en": "New attachment endpoint and internally connected fragments."
+        },
+        "conditions": {
+          "zh": "限于已核对链类及两种形成途径的端点对应；不等同局部规律或成本。",
+          "en": "Only the checked chain class and endpoint correspondence between formation routes; local laws and costs are not identified."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RecurrentAssembly.lean"
+      }
+    }
+  ],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RecurrentAssembly.lean",
+      "detail": {
+        "zh": "少一单位支持留下真实七组分后继；缺 B 仍有支持也停滞。未证明组织规律的可遗传变异、真实力学、自供材料或广泛比较优势。",
+        "en": "One missing support unit leaves a real seven-component successor; absence of B stalls despite remaining work. Heritable variation in organizing laws, physical mechanics, autonomous feed and broad comparative advantage are unproved."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "少一单位支持留下真实七组分后继；缺 B 仍有支持也停滞。未证明组织规律的可遗传变异、真实力学、自供材料或广泛比较优势。",
+    "en": "One missing support unit leaves a real seven-component successor; absence of B stalls despite remaining work. Heritable variation in organizing laws, physical mechanics, autonomous feed and broad comparative advantage are unproved."
+  },
+  "validation_scope": {
+    "zh": "所列 Lean 回执绑定实际源码；推论有效性与生物对应分列。",
+    "en": "The cited Lean receipt binds the actual source; inference validity and biological correspondence remain distinct."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RecurrentAssembly.lean",
+      "role": "proof",
+      "sha256": "fadb5c6e313d26e061ad8549f077e3a426abd9af2101f382cf74d3d66991023f",
+      "declarations": [
+        "RecurrentAssembly.prepared_repeated_generation",
+        "RecurrentAssembly.supported_rounds",
+        "RecurrentAssembly.required_as_growth",
+        "RecurrentAssembly.rounds_accounts",
+        "RecurrentAssembly.partial_failure_keeps_material",
+        "RecurrentAssembly.formed_graph_matches_previous",
+        "RecurrentAssembly.fragments_retain_real_links"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/recurrent-assembly-verification/verification.json",
+      "role": "receipt",
+      "sha256": "cdc66ad8b4b58a7eadaebfa4fe2cb60bcd9b9717e628971a3c273d4040f4bf4b",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "8a968b8643baecf4ad01df8721e1a78cb23528847e6dbd9cb469d76e279c0e82",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/RecurrentAssembly.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/recurrent-assembly-verification/verification.json",
+      "sha256_pointer": "/source_sha256/RecurrentAssembly.lean",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "固定规律重复与附加模板复制已完成，formed-copying-registration 进一步接通局部配准形成；物理辨别、更新供给与共同分配仍待说明。",
+    "en": "Fixed-law recurrence and added template copying are complete; formed-copying-registration further joins local registration formation, leaving physical discrimination, renewed supply and shared allocation to explain."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：按本轮实际审读及所列回执登记范围；原证明和反例保持。",
+      "en": "2026-10-08: recorded the actually reviewed scope and cited receipt, preserving original proofs and counterexamples."
+    },
+    {
+      "zh": "本轮新增31项定理／47项声明审计，373项闭包审计中326项继承声明另计；旧成果迁移不计新定理。",
+      "en": "This continuation adds 31 theorems / 47 declaration audits; 326 inherited declarations are separate within the 373-audit closure. Migration adds no theorem."
+    },
+    {
+      "zh": "2026-10-09：审读同一研究新增模板复制段；原证明和结论保持，端点适配及额外复制前提分列。",
+      "en": "2026-10-09: reviewed the added template-copying section in the same study; original proofs and claims remain, with endpoint correspondence and added copying premises separated."
+    },
+    {
+      "zh": "2026-10-09：重读并接入同一研究的配准形成段；旧数学主张及原回执不变，修正旧比较段中完美复制前提的指称。",
+      "en": "2026-10-09: reconciles the same study’s registration-formation continuation; prior mathematics and receipts remain unchanged, and the old comparison clarifies that perfect copying was this model’s premise."
+    },
+    {
+      "zh": "2026-10-09：已阅读同一研究新增的材料编辑连接；本记录的旧数学及原回执不变，旧无编辑范围不因新增操作而撤销。",
+      "en": "2026-10-09: reconciles the same study’s added material-editing connection; prior mathematics and receipts remain unchanged, and adding an editing operation does not withdraw the old no-editing scope."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Integration of the strongest foundation claim
 
-6 October 2026. AI-authored integration of [Ren's direction](../../../../sources/15-codex-theory-conversations/2026-10-06-strongest-foundation-claim.md), the [canonical claim](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/STRONGEST-FOUNDATION-CLAIM.md), and the three coordinated investigations below. This is internal philosophical review, not external peer review or a new empirical finding.
+6 October 2026. AI-authored integration of [Ren's direction](../../../../sources/15-codex-theory-conversations/2026-10-06-strongest-foundation-claim.md), the [canonical claim](../../../../theories/becoming/chapters/STRONGEST-FOUNDATION-CLAIM.md), and the three coordinated investigations below. This is internal philosophical review, not external peer review or a new empirical finding.
 
 ## The research direction
 

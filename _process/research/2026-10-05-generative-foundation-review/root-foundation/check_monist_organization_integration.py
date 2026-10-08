@@ -75,7 +75,7 @@ if lean['status'] != 'passed':
 new = next(x for x in lean['modules'] if x['module'] == 'RelationalOrganization')
 if new['theorems'] != 13 or len(new['declarations']) != 29:
     errors.append('Wrong recorded declaration counts')
-direction = ROOT / 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md'
+direction = ROOT / 'theories/becoming/chapters/ALIGNMENT-DIRECTION.md'
 if sha(direction.read_bytes()) != receipt['accepted_alignment_direction_sha256']:
     errors.append('Accepted alignment direction fingerprint changed')
 source = ROOT / 'sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md'

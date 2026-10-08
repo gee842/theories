@@ -1,6 +1,6 @@
 # 一体之仁的共同形成接口：逐发生的后果、取得与回应
 
-6 October 2026. AI-authored formal/mechanism contribution following the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). This is **a new representational adequacy interface applied to an existing causal formation history**. It does not install a new benevolent controller, establish felt experience, or finish the ethical identification of 一体之仁.
+6 October 2026. AI-authored formal/mechanism contribution following the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). This is **a new representational adequacy interface applied to an existing causal formation history**. It does not install a new benevolent controller, establish felt experience, or finish the ethical identification of 一体之仁.
 
 The connection addressed is **actual consequences → acquired and revisable influence → response → changed consequences and further response possibilities**, with every stage retaining its actual conditions. The concrete mechanism already exists in PairedPlasticity. The new work makes its successive joint changes explicit and gives an exact composition and abstraction test. This distinction matters: an additional notation for coupling is not itself a derivation of coupling.
 

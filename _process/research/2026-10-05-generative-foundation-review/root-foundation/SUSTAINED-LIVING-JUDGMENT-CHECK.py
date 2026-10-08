@@ -13,8 +13,8 @@ import build_generative_chain as chain
 
 ROOT = Path(__file__).resolve().parents[4]
 HERE = Path(__file__).resolve().parent
-BASE = ROOT / 'theories/shengsheng-buxi-generative-existence'
-THEORY = BASE / 'unified-2026-10-05/SUSTAINED-LIVING-JUDGMENT.md'
+BASE = ROOT / 'theories/becoming'
+THEORY = BASE / 'chapters/SUSTAINED-LIVING-JUDGMENT.md'
 FORMAL = ROOT / 'experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics'
 
 
@@ -71,9 +71,9 @@ def main():
     assert len(own_rows) == 2, own_rows
     assert all('scope_zh' in row and 'scope_en' in row for row in own_rows)
     for shared in [ROOT/'RESEARCH.md', BASE/'README.md',
-                   BASE/'unified-2026-10-05/GENERATIVE-GROUNDING.md',
-                   BASE/'unified-2026-10-05/LIVING-DEPENDENCIES.md',
-                   BASE/'unified-2026-10-05/PRACTICAL-JUDGMENT.md']:
+                   BASE/'chapters/GENERATIVE-GROUNDING.md',
+                   BASE/'chapters/LIVING-DEPENDENCIES.md',
+                   BASE/'chapters/PRACTICAL-JUDGMENT.md']:
         assert 'SUSTAINED-LIVING-JUDGMENT.md' in shared.read_text(), shared
     tracked = docs + [checker, receipt_path, FORMAL/'SustainedJudgment.lean', Path(__file__)]
     report = {'status':'passed','date':'2026-10-08 Asia/Bangkok',

@@ -1,6 +1,6 @@
 # Affective realization: supplementary source record
 
-6 October 2026. AI-authored source audit supporting [the integration](AFFECTIVE-REALIZATION-INTEGRATION.md), under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). These philosophical comparisons extend the [existing source collection](../../../../sources/37-ethical-minimum-primary-2026-10-06/affective-realization/README.md); they are not independent empirical replications.
+6 October 2026. AI-authored source audit supporting [the integration](AFFECTIVE-REALIZATION-INTEGRATION.md), under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). These philosophical comparisons extend the [existing source collection](../../../../sources/37-ethical-minimum-primary-2026-10-06/affective-realization/README.md); they are not independent empirical replications.
 
 ## Barlassina: affective content
 

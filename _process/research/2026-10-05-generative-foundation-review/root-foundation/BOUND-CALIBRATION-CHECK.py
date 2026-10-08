@@ -11,7 +11,7 @@ from urllib.parse import unquote
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[3]
 ANALYSIS = ROOT / 'experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis'
-THEORY = ROOT / 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05'
+THEORY = ROOT / 'theories/becoming/chapters'
 EXPERIMENT = ROOT / 'experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence'
 DOCS = [THEORY / 'RELATIONS-ACROSS-SCALES.md', HERE / 'BOUND-CALIBRATION-INTEGRATION.md',
         HERE / 'BOUND-CALIBRATION-PROTOCOL.md', EXPERIMENT / 'BOUND-CALIBRATION-PLAN.md',
@@ -79,7 +79,7 @@ def main():
             if not set(audit['axioms']) <= {'propext', 'Classical.choice', 'Quot.sound'}:
                 errors.append('Unexpected proof dependency: ' + audit['name'])
     edits = json.loads((HERE / 'BOUND-CALIBRATION-INDEX-EDITS.json').read_text())
-    data = json.loads((ROOT / 'theories/shengsheng-buxi-generative-existence/results/data/generativity-chain.json').read_text())
+    data = json.loads((ROOT / 'theories/becoming/results/data/generativity-chain.json').read_text())
     entries = {e['id']: e for s in data['sections'] for e in s['entries']}
     for e in edits['updated_entries']:
         if entries.get(e['id']) != e:

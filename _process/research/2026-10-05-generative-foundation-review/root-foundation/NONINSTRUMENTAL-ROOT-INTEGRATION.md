@@ -4,7 +4,7 @@
 
 ## 本轮结果
 
-[主文第 9 节](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#9-实际尝试从根基消除-c2)已经接入[总理论](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md#10-shared-generativity-and-善)、[形式核心 F14](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md#f14-noninstrumental-patient-reasons-and-paid-response)、前提清单和推导图。本轮完成实际尝试与检查，**未完成无外加假设的伦理根基**。
+[主文第 9 节](../../../../theories/becoming/chapters/NONINSTRUMENTAL-CONCERN.md#9-实际尝试从根基消除-c2)已经接入[总理论](../../../../theories/becoming/chapters/THEORY.md#10-shared-generativity-and-善)、[形式核心 F14](../../../../theories/becoming/chapters/FORMAL-CORE.md#f14-noninstrumental-patient-reasons-and-paid-response)、前提清单和推导图。本轮完成实际尝试与检查，**未完成无外加假设的伦理根基**。
 
 - [正向论证](NONINSTRUMENTAL-ROOT-ARGUMENT.md)重新检验发生入口、体验价值的构成性识别和固定患者的执行位置替换。已有直接患者根据与生成自我论证保持其谱系，不重复计为发现。
 - [原典比较](NONINSTRUMENTAL-ROOT-SOURCES.md)新增 Nagel 官方 Tanner 讲稿与 Sinhababu 另一篇作者文章的定向访问，区分患者局部坏、带跨主体理由内容的价值概念、可靠性推断及行动联系。原文观点不被当成研究结论已获证明。

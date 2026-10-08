@@ -13,7 +13,7 @@ The preceding [crossed-claims study](CROSSED-CLAIMS-INTEGRATION.md) established 
 - [Fair chances as a quality of the organized future](FUTURE-GOOD-INTEGRAL.md#fair-chances-as-a-quality-of-the-organized-future) already defends a procedural candidate for equal claims and preserves permission-to-pick as a substantive rival. Neither is newly discovered here.
 - [Joint-risk revision](JOINT-RISK-REVISION-INTEGRATION.md) treats joint dangers, equal-risk sharing and its asymmetric limits. It does not determine initial unequal chance weights.
 - [Chance revision](CHANCE-REVISION-INTEGRATION.md) preserves the significance of an already settled selection history. We do not repeat its endpoint-distribution diagnostic.
-- BC1, BC2, LC, LR and the [general practical judgment](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md) remain completed results with their hypotheses. CP must not erase justified priorities, permissions or finite burdens.
+- BC1, BC2, LC, LR and the [general practical judgment](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md) remain completed results with their hypotheses. CP must not erase justified priorities, permissions or finite burdens.
 
 ## Candidate and serious rival
 

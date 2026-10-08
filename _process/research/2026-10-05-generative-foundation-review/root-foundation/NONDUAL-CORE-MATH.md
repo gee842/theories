@@ -1,6 +1,6 @@
 # 非二元生成核心的形式接口：历史、派生角色与实际响应范围
 
-2026 年 10 月 6 日。AI 撰写。连接是**共同生成过程 → 实际历史中的局部作用关系 → 可重叠、可改变、可解组的响应角色**。接续[非二元生成重构](NONDUAL-GENERATIVE-RECONSTRUCTION.md)、[主客分化之前的起点问题](NONDUAL-GROUNDING-QUESTION.md)与[生成之我](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-SELF-AND-ETHICS.md)。先前 Actor/Patient 下标并未断言独立实体；现有 `Generative.Process` 本来也没有这些原始类型。本轮将这个依赖方向明确落实为代码架构和可检查的角色派生接口。
+2026 年 10 月 6 日。AI 撰写。连接是**共同生成过程 → 实际历史中的局部作用关系 → 可重叠、可改变、可解组的响应角色**。接续[非二元生成重构](NONDUAL-GENERATIVE-RECONSTRUCTION.md)、[主客分化之前的起点问题](NONDUAL-GROUNDING-QUESTION.md)与[生成之我](../../../../theories/becoming/chapters/GENERATED-SELF-AND-ETHICS.md)。先前 Actor/Patient 下标并未断言独立实体；现有 `Generative.Process` 本来也没有这些原始类型。本轮将这个依赖方向明确落实为代码架构和可检查的角色派生接口。
 
 **建立的正结果：同一实际生成过程可以先被表示，再从它的历史、连接与实际作用条件读出局部角色；这种描述扩展可以完整保留原过程的路径和终点。同时，具体共同基底内可以形成重叠的联合响应范围、产生实际效果、再解组；一个先前受作用的位置可以成为后续响应的必要来源。** 这建立的是角色可作派生描述的形式实现，不是已经推导出自我、体验或伦理。
 

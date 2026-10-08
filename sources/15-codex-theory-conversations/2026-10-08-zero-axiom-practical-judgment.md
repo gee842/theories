@@ -16,6 +16,6 @@ Ren then instructed:
 
 ## Scope of this new instruction
 
-This reopens the stronger zero-axiom target for this chat's Practical judgment investigation. The earlier [explicit-axiom completion](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md) remains preserved at its actual scope. Its 30 checked theorems and independent acceptance do not satisfy the new target. The [earlier axiom correction](2026-10-08-alignment-grounding-axiom-correction.md) remains a historical and separately authorized route; this newer direct request governs the present task without canceling other chats.
+This reopens the stronger zero-axiom target for this chat's Practical judgment investigation. The earlier [explicit-axiom completion](../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md) remains preserved at its actual scope. Its 30 checked theorems and independent acceptance do not satisfy the new target. The [earlier axiom correction](2026-10-08-alignment-grounding-axiom-correction.md) remains a historical and separately authorized route; this newer direct request governs the present task without canceling other chats.
 
 The target is actual grounding without supplied normative axioms, not deletion of Lean axiom declarations, omission of hypotheses, an assumed definition of admissibility, or a change of the meaning of zero. The stronger repository concern about all explanatory dependencies remains visible. No proof of success or universal impossibility is implied by recording the goal.

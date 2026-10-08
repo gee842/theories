@@ -69,7 +69,7 @@ def main():
     source_dir = ROOT / 'sources/evolutionary-selection/structural-copying'
     for path in (STUDY, VERIFIED / 'README.md', source_dir / 'README.md'):
         check_links(path, path.read_text())
-    chapter = ROOT / 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md'
+    chapter = ROOT / 'theories/becoming/chapters/EVOLUTIONARY-ORGANIZATION.md'
     owned_section = chapter.read_text().split('## Formed correction changes an existing successor\n', 1)[1].split('\n## ', 1)[0]
     check_links(chapter, owned_section)
     provenance = json.loads((source_dir / 'provenance.json').read_text())
@@ -89,7 +89,7 @@ def main():
     prefix = STUDY.read_text().split('\n\n## Formed correction edits inherited material', 1)[0]
     assert hashlib.sha256(prefix.encode()).hexdigest() == edits['prior_study_prefix_sha256']
 
-    full = ROOT / 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md'
+    full = ROOT / 'theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md'
     assert [l for l in full.read_text().splitlines() if l.startswith('| **')] == edits['six_requirement_rows']
     assert len(edits['six_requirement_rows']) == 6
     data = chain.read_data()

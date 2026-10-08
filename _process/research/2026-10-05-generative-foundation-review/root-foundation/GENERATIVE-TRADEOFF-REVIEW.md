@@ -1,6 +1,6 @@
 # Review: actual loss, continued generation and calibrated response
 
-7 October 2026. AI-authored independent continuation of the [explicit generative-premise route](GENERATIVE-PREMISE-INTEGRATION.md), governed by the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). G0, the positive significance of 生 and its continuing generation within the whole, is the authorized starting point. This review develops a substantive comparison rather than demanding that G0 first prove itself or merely repeating that it leaves some rankings open. No external empirical claims are introduced.
+7 October 2026. AI-authored independent continuation of the [explicit generative-premise route](GENERATIVE-PREMISE-INTEGRATION.md), governed by the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). G0, the positive significance of 生 and its continuing generation within the whole, is the authorized starting point. This review develops a substantive comparison rather than demanding that G0 first prove itself or merely repeating that it leaves some rankings open. No external empirical claims are introduced.
 
 ## 1. A positive comparison beyond a lossless extension
 

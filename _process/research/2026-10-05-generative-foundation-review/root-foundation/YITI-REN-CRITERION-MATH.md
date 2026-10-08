@@ -1,6 +1,6 @@
 # Acquired content of a completion criterion
 
-6 October 2026. AI-authored mathematics for the [criterion-formation integration](YITI-REN-CRITERION-INTEGRATION.md), following the [shared nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). The definitions, general proofs and native wrapper are implemented in [AcquiredPurposeCriterion.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredPurposeCriterion.lean). The [fresh formal receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/criterion-verification.json) passes all four modules and all seven saved native continuations at the scope stated below.
+6 October 2026. AI-authored mathematics for the [criterion-formation integration](YITI-REN-CRITERION-INTEGRATION.md), following the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). The definitions, general proofs and native wrapper are implemented in [AcquiredPurposeCriterion.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/AcquiredPurposeCriterion.lean). The [fresh formal receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/noninstrumental-concern/criterion-verification.json) passes all four modules and all seven saved native continuations at the scope stated below.
 
 ## What is acquired
 

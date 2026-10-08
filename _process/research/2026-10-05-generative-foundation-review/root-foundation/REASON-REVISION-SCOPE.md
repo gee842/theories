@@ -1,6 +1,6 @@
 # What fresh evidence can warrant through time
 
-6 October 2026. AI-authored mathematical interpretation and integration contract for the [recipient reason revision protocol](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/PROTOCOL.md). Written prospectively, with acceptance status updated after the [checked construction](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-REASON-REVISION.md). This note separates deductions from declared laws, the constructed realization and remaining empirical identification; it reports no additional experimental outcome.
+6 October 2026. AI-authored mathematical interpretation and integration contract for the [recipient reason revision protocol](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/PROTOCOL.md). Written prospectively, with acceptance status updated after the [checked construction](../../../../theories/becoming/chapters/RECIPIENT-REASON-REVISION.md). This note separates deductions from declared laws, the constructed realization and remaining empirical identification; it reports no additional experimental outcome.
 
 ## The connection to the root
 
@@ -36,7 +36,7 @@ Conversely, a positive second receipt can identify the command even when the fir
 
 ## Why undisclosed later change cannot be solved by a better label
 
-The existing [learning-interface theorem](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LEARNING-INTERFACE.md) proves that the same deterministic controller, initial memory and complete feedback history yield the same next command. Its precise formal result is `Generative.Learning.same_feedback_excludes_incompatible_futures` in [ControllerRevision.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/ControllerRevision.lean).
+The existing [learning-interface theorem](../../../../theories/becoming/chapters/LEARNING-INTERFACE.md) proves that the same deterministic controller, initial memory and complete feedback history yield the same next command. Its precise formal result is `Generative.Learning.same_feedback_excludes_incompatible_futures` in [ControllerRevision.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/ControllerRevision.lean).
 
 Apply that principle to two continuations identical in all information accessible before the next action. One preserves the correspondence; the other silently flips it after the last positive observation. If their compatible next-command sets are disjoint, one issued command cannot satisfy both. Additional internal agreement, a fresh local epoch, or another read of identical old information does not distinguish the continuations.
 

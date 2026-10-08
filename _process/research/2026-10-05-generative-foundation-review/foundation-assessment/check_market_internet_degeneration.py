@@ -65,7 +65,7 @@ def main():
     quotation = "> 其实当下的市场和互联网的演化，都能给你足够的验证检验\n> enshitification 其实就是degeneration"
     if quotation not in source.read_text():
         errors.append("Exact user quotation missing")
-    direction = ROOT / "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md"
+    direction = ROOT / "theories/becoming/chapters/ALIGNMENT-DIRECTION.md"
     accepted = chain.digest(direction) == "9940ead2d7f06a18ff7f2ec37f27aebd496dde10854d8a11993469a31a7900cd"
     if not accepted:
         errors.append("Accepted alignment direction changed")

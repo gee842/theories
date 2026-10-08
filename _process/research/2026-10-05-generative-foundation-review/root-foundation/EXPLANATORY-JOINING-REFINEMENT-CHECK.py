@@ -66,7 +66,7 @@ def main():
             links.append({'from': e['path'], 'reference': ref})
     for p, h in edits['reviewed_owned_sources'].items(): assert sha(ROOT / p) == h
     for edit in edits['record_edits']['updated_records']:
-        p = ROOT / 'theories/shengsheng-buxi-generative-existence/results/records' / (edit['id']+'.json')
+        p = ROOT / 'theories/becoming/results/records' / (edit['id']+'.json')
         assert sha(p) == edit['after_sha256'] and edit['claim_hypotheses_and_bindings_preserved']
     data = chain.read_data(); rows = {e['id']: e for s in data['sections'] for e in s['entries']}
     assert edits['preserved_other_entries'] and edits['preserved_other_rendered_lines']
@@ -76,14 +76,14 @@ def main():
         for fld in ['claim_zh', 'claim_en', 'scope_zh', 'scope_en']: assert after[fld].startswith(before[fld])
         assert after['links'][:len(before['links'])] == before['links']
         assert [x for x in actual if x.startswith('| '+k+' |')] == [x for x in expected if x.startswith('| '+k+' |')]
-    chapter = ROOT / 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md'
+    chapter = ROOT / 'theories/becoming/chapters/EXPLANATORY-NECESSITY.md'
     assert [int(n) for n in re.findall(r'^## (\d+)\.', chapter.read_text(), re.M)] == list(range(1, 101))
     sys.path.insert(0, str(ROOT))
     from tools.research import registry
     records, load_errors = registry.load_records(); errors, drift = registry.validate(records)
     assert not load_errors and not errors, (load_errors, errors)
     assert not [d for d in drift if d['id'] in IDS]
-    record_hashes = {ident: sha(ROOT / 'theories/shengsheng-buxi-generative-existence/results/records' / (ident+'.json')) for ident in IDS}
+    record_hashes = {ident: sha(ROOT / 'theories/becoming/results/records' / (ident+'.json')) for ident in IDS}
     result = {'passed': True, 'scope': 'Owned proof sources, exact receipt/logs, result metadata and appended integration; no global freshness or independent scientific acceptance.',
       'new_declarations': 43, 'inherited_audits': 213, 'total_audits': 256, 'new_empty': 9, 'new_standard': 34, 'new_classical_choice': 7,
       'receipt': str(RECEIPT.relative_to(ROOT)), 'receipt_sha256': sha(RECEIPT), 'proof_bindings': bindings, 'new_inventory': inventory,

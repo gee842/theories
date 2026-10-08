@@ -1,6 +1,6 @@
 # Consequences reorganize the distinction governing application
 
-6 October 2026. AI-authored continuation under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). The named transition is **acquired consequence revealing an inadequate application grouping → changed operative distinction → subsequent action within the same continuing conditions**. The previous [feedback result](APPLICATION-FEEDBACK-INTEGRATION.md) qualified reliance within a supplied family. This study changes the grouping through which that family or judgment can be applied.
+6 October 2026. AI-authored continuation under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). The named transition is **acquired consequence revealing an inadequate application grouping → changed operative distinction → subsequent action within the same continuing conditions**. The previous [feedback result](APPLICATION-FEEDBACK-INTEGRATION.md) qualified reliance within a supplied family. This study changes the grouping through which that family or judgment can be applied.
 
 The [new executable study](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/REFINEMENT.md), [mechanism and account proof](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/REFINEMENT-MECHANISM.md) and [independent review](APPLICATION-DISTINCTION-REVIEW.md) document the construction, controls and acceptance scope. Its sixteen cases were specified before the new numerical run.
 
@@ -99,7 +99,7 @@ explanation rather than a separate resource preface.
 The study also narrows the next unresolved transition. The controller still
 receives its contact opportunity, consistency-inquiry policy, handoff rule,
 available phase repertoire, implementation recipe and correspondence conditions.
-The completed [method-formation result](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/AUTONOMOUS-METHOD-FORMATION.md) supplies a distinct conditional route from tried evidence to a formed method connection; it cannot be spliced into this depleted endpoint by copying its successful state. The next connection is **acquired dependency evidence → formation or selection of an informative inquiry that preserves conditions for the subsequent response**. It can be investigated within an existing organization; an endless hierarchy of new controllers is not required.
+The completed [method-formation result](../../../../theories/becoming/chapters/AUTONOMOUS-METHOD-FORMATION.md) supplies a distinct conditional route from tried evidence to a formed method connection; it cannot be spliced into this depleted endpoint by copying its successful state. The next connection is **acquired dependency evidence → formation or selection of an informative inquiry that preserves conditions for the subsequent response**. It can be investigated within an existing organization; an endless hierarchy of new controllers is not required.
 
 No ethical reason is inferred from capture of an abstract support quantity.
 Concern, legitimate governance, the origin of the new local laws and the stronger

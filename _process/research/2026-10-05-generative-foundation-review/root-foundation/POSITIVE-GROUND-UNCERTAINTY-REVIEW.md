@@ -1,6 +1,6 @@
 # 保留不确定性的正面规范根据：独立审查
 
-2026-10-08。AI 独立反审；[Ren 的本轮纠正](../../../../sources/15-codex-theory-conversations/2026-10-08-positive-generative-direction.md)与 AI 的形式化分别归属。遵循 [一元关系起点](../../../../sources/15-codex-theory-conversations/2026-10-08-monist-relational-ontology-first.md)、[已授权 G0 公理路线](../../../../sources/15-codex-theory-conversations/2026-10-08-alignment-grounding-axiom-correction.md)及[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)。本稿先记录目标审查；具体源码和回执验收将在文件完成后追加。
+2026-10-08。AI 独立反审；[Ren 的本轮纠正](../../../../sources/15-codex-theory-conversations/2026-10-08-positive-generative-direction.md)与 AI 的形式化分别归属。遵循 [一元关系起点](../../../../sources/15-codex-theory-conversations/2026-10-08-monist-relational-ontology-first.md)、[已授权 G0 公理路线](../../../../sources/15-codex-theory-conversations/2026-10-08-alignment-grounding-axiom-correction.md)及[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)。本稿先记录目标审查；具体源码和回执验收将在文件完成后追加。
 
 ## 1. 修正上一轮的停止门槛
 
@@ -67,7 +67,7 @@
 
 | 已有研究 | 已说明的认识根据 | 本轮信用范围 |
 | --- | --- | --- |
-| [形成预测与行动](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PREDICTION-ACTION.md)；[生成发展](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-DEVELOPMENT.md) §2 | 形成的有限记录经实际试行、后果和观察更新；变化后的证据修订预测；取得的预测实际进入后续行动 | 有条件的认识能力及使用已经构造，不必重建一个新控制器才能承认未来可以部分被把握 |
+| [形成预测与行动](../../../../theories/becoming/chapters/PREDICTION-ACTION.md)；[生成发展](../../../../theories/becoming/chapters/GENERATIVE-DEVELOPMENT.md) §2 | 形成的有限记录经实际试行、后果和观察更新；变化后的证据修订预测；取得的预测实际进入后续行动 | 有条件的认识能力及使用已经构造，不必重建一个新控制器才能承认未来可以部分被把握 |
 | [有根据的推展](KNOWLEDGE-PROJECTION-AND-RISK.md) §§1、3 | 已有根据的因果组织、校准、取样或相关依存支持有范围的未来推展；具体变化可以保持、调整或削弱该支持 | 解释有根据的预测，而非“同属整体所以所有局部规律不变” |
 | 同文 §§6、7 与[探究优先](INQUIRY-PRIORITIES-AND-G0.md) | 可得证据、可行探究、时限、负担及实际回应共同决定目前足够的把握；共同有效回应不必等到唯一诊断，正确诊断也可能来得太晚 | 认识有限不等于没有正面根据；更多探究并非在所有情境中优先 |
 

@@ -4,7 +4,7 @@
 
 **起因。** [外部视角审查](UNIVERSAL-METAETHICS-OF-AGENCY-REVIEW.md) §3.3、§3.5 指出两点。第一，Universal Metaethical Core 的中心定理是对任意谓词成立的假言推理，规范内容全在 G0。第二，逐项读取的 G0 会给持续形成新组织的恶性过程以正面意义。
 
-**本文内容。** 记录两项新的 Lean 结果、其对应与边界，以及它们怎样接入既有成果。同日的[独立审查](GENERATIVE-DISCRIMINATION-REVIEW.md)附更正后接受了两项结果，下文已按更正修订。G0 的地位与支持另见理论章 [G0-WARRANT](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/G0-WARRANT.md)。
+**本文内容。** 记录两项新的 Lean 结果、其对应与边界，以及它们怎样接入既有成果。同日的[独立审查](GENERATIVE-DISCRIMINATION-REVIEW.md)附更正后接受了两项结果，下文已按更正修订。G0 的地位与支持另见理论章 [G0-WARRANT](../../../../theories/becoming/chapters/G0-WARRANT.md)。
 
 **先说明这些结果不做什么。** 新定理按构造对符号中立，审查中的符号翻转探针给出同样的诊断：哪一侧在 G0 的对象之内，来自所给的读法，不来自 Lean。新增的是一个非平凡的描述性区分。
 
@@ -16,7 +16,7 @@ Ren 随后追问并确认：G0 的对象本来就是生生，生成与退化不�
 
 ## 0. 关系配置
 
-依[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)：同一展开中，一项活动从当前所持条件（`stock`）形成进一步组织；另有一组织以一定速率（`renew`）恢复这些条件；活动每步的形成压力为 `demand`。三者是同一历史中分化的方面，不是彼此交换资源的独立所有者。
+依[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)：同一展开中，一项活动从当前所持条件（`stock`）形成进一步组织；另有一组织以一定速率（`renew`）恢复这些条件；活动每步的形成压力为 `demand`。三者是同一历史中分化的方面，不是彼此交换资源的独立所有者。
 
 局部规律 `WearLaw` 规定一个关系：压力在更新速率之内，更新组织不受损；超出时，活动所取用的正是进行更新的那一组织，更新速率随之下降，且不再恢复。哪些真实过程满足这一规律，是对应问题，不由定理裁定。
 
@@ -65,7 +65,7 @@ A 部分不含任何规范谓词。检查器的控制例核对的是：任何谓
 
 本结果说明：在一个明确的规律类中，存在一个不借助任何先行好坏筛选、可检查的描述性区分，可以用来认出 G0 的对象。逐事件宽读法下的形式 G0 与无损比较 C 都给不出这一区分，一步计数还把它反过来。
 
-“消耗更坏”是比较，由 C 承担。在关系读法下，另一会话的 [relational-reading-comparison](../../../../theories/shengsheng-buxi-generative-existence/results/records/relational-reading-comparison.md) 已检查 C 的严格排序；它与本文的 `comparison_does_not_apply` 相容。
+“消耗更坏”是比较，由 C 承担。在关系读法下，另一会话的 [relational-reading-comparison](../../../../theories/becoming/results/records/relational-reading-comparison.md) 已检查 C 的严格排序；它与本文的 `comparison_does_not_apply` 相容。
 
 本结果没有证明 AI 的形式读法就是生生。这一区分是所给不可恢复磨损规律的推论，规律本身承担了大部分内容。
 
@@ -118,7 +118,7 @@ Integration: practical-judgment-g0-j (evidence and related); G0-WARRANT §2.3
 | `priority_iff` | 此情境中 J2 的排序：保护优于任何增益；失去保护的选项之间，增益多者为优。 |
 | `ratio_agrees_with_priority`、`bounded_score_represents_priority`、`ratio_bounded` | 有界有理评分（保护为 1，`k` 项增益为 `k/(k+1)`，以交叉相乘比较）在每一对选项上与 J2 一致，因此满足 C 且从不交换。 |
 
-**这项结果给了什么。** [对齐方向](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md) §3 写明：J2 的词典序不是 G0 的推论，其代价是拒绝某些聚合补偿。本结果在一个构造情境中把这句话变成检查过的命题。
+**这项结果给了什么。** [对齐方向](../../../../theories/becoming/chapters/ALIGNMENT-DIRECTION.md) §3 写明：J2 的词典序不是 G0 的推论，其代价是拒绝某些聚合补偿。本结果在一个构造情境中把这句话变成检查过的命题。
 
 J2 不由 C 推出，是“C 对取舍不置可否”这一既有结果的实例。真正新增的有三点：
 - J2 在此满足 C；

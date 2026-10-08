@@ -1,6 +1,6 @@
 # Review: acquired consequences, inquiry selection and accessible correction
 
-6 October 2026. Independent AI-authored source and argument review under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Named connection: **consequences → selection of a further inquiry → revision of an application and subsequent activity**. This review adds no event law or controller and does not rerun earlier science. It owns this note only.
+6 October 2026. Independent AI-authored source and argument review under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Named connection: **consequences → selection of a further inquiry → revision of an application and subsequent activity**. This review adds no event law or controller and does not rerun earlier science. It owns this note only.
 
 ## The positive connection already exists
 

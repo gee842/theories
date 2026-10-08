@@ -6,11 +6,11 @@
 
 ## 1. Begin with differentiation, not an undifferentiated substance
 
-The [deeper-root account](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md) begins with transformations whose effects condition further transformations. Their actual laws remain to be explained. Calling this generative does not supply a hidden world-maker, universal mind or intrinsically favorable direction.
+The [deeper-root account](../../../../theories/becoming/chapters/DEEPER-GENERATIVE-ROOT.md) begins with transformations whose effects condition further transformations. Their actual laws remain to be explained. Calling this generative does not supply a hidden world-maker, universal mind or intrinsically favorable direction.
 
 Within such activity, maintained organization can acquire selective sensitivity, retained distinctions and effects upon its conditions. A practical subject/object polarity can then articulate a relation: this organized activity responds; that aspect of its situation is discriminated and transformed. The polarity can be real without preceding the process that forms it. Explanatory priority does not assert an original historical moment when nothing was differentiated.
 
-The [generated-self work](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-SELF-AND-ETHICS.md) already pursues this formation. Its acquired action-effect prediction is a conditional mechanism, not an explanation of consciousness. Its contributions, and the [earlier nondual reconstruction](NONDUAL-GROUNDING-QUESTION.md), are inherited here. Earlier actor/patient indices likewise did not assert separate substances.
+The [generated-self work](../../../../theories/becoming/chapters/GENERATED-SELF-AND-ETHICS.md) already pursues this formation. Its acquired action-effect prediction is a conditional mechanism, not an explanation of consciousness. Its contributions, and the [earlier nondual reconstruction](NONDUAL-GROUNDING-QUESTION.md), are inherited here. Earlier actor/patient indices likewise did not assert separate substances.
 
 Three distinctions must emerge without being conflated: continuity of undergoing, access to evidence, and capacity to change what occurs. A tool can extend control without extending bodily experience. Several organizations can contribute to one response without sharing one experience. A reflective I can organize these relations without creating everything they distinguish.
 
@@ -30,7 +30,7 @@ The classical comparison in [the source study](NONDUAL-GENERATIVE-SOURCES.md) su
 
 The existing local ethical contract starts with a specified capacity and executable relief route. A generative reconstruction should also explain how the relevant capacity comes into being.
 
-The earlier [joint-formation study](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/JOINT-FORMATION.md) already conditionally models acquired concern and constructed effective power. The addition here is not the discovery that capacities develop. It is to examine the individuation of the responsive organization within the proposed ethical ground, instead of supplying its controller boundary and then explaining its acquisition of control.
+The earlier [joint-formation study](../../../../theories/becoming/chapters/JOINT-FORMATION.md) already conditionally models acquired concern and constructed effective power. The addition here is not the discovery that capacities develop. It is to examine the individuation of the responsive organization within the proposed ethical ground, instead of supplying its controller boundary and then explaining its acquisition of control.
 
 Consider a transparent conceptual case. Two separated controls must be operated together to end an actual severe burden. Neither operation alone can relieve it. Two people have the relevant access, know the complementary effects and can communicate. Consent, safety, costs and other claims remain part of the situation; they are not removed by describing the controls as simple. No responsive partnership yet exists.
 

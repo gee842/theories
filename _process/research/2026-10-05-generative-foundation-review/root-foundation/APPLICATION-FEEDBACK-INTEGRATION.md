@@ -1,6 +1,6 @@
 # Acquired consequence changes the scope of reliance
 
-6 October 2026. AI-authored continuation of [applicability revaluation](APPLICABILITY-REVALUATION-INTEGRATION.md), following [Ren's renewed nondual correction](../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md) and the [shared method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md).
+6 October 2026. AI-authored continuation of [applicability revaluation](APPLICABILITY-REVALUATION-INTEGRATION.md), following [Ren's renewed nondual correction](../../../../sources/15-codex-theory-conversations/2026-10-06-core-tree-nondual-trajectory-correction.md) and the [shared method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md).
 
 The named connection now has an executable conditional realization: **actual
 failed use → acquired restriction on reliance → changed inquiry and actual
@@ -80,4 +80,4 @@ preserve those consequences and how acquiring them changes further possibilities
 The core and tree remain reciprocally informative expressions of the same inquiry.
 
 This closes the specified finite feedback-to-application witness under the new
-law. It does not reopen the other branch's accepted [encounter-limit revision](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md) or replace its distinct result. The next unresolved connection is **acquired evidence of application dependence or inadequate coverage → revision of the operative distinction's scope**, with timely contact and continuing conditions explained in that same history. The present counterexample is visible to the analyst; the narrow learner does not yet acquire its own family inadequacy. Warranted concern, institutional authority and the stronger no-assumptions foundation remain unestablished by this construction.
+law. It does not reopen the other branch's accepted [encounter-limit revision](../../../../theories/becoming/chapters/INQUIRY-REVISION.md) or replace its distinct result. The next unresolved connection is **acquired evidence of application dependence or inadequate coverage → revision of the operative distinction's scope**, with timely contact and continuing conditions explained in that same history. The present counterexample is visible to the analyst; the narrow learner does not yet acquire its own family inadequacy. Warranted concern, institutional authority and the stronger no-assumptions foundation remain unestablished by this construction.

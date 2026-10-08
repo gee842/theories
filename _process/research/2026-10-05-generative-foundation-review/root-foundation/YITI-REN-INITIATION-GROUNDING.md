@@ -1,6 +1,6 @@
 # 整体展开中的启动、继续与后果
 
-2026年10月6日。AI 撰写，接续[活动范围的形成与结束](YITI-REN-SCOPE-INTEGRATION.md)，遵循[共同非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)。本轮过程中，Ren 再次纠正：
+2026年10月6日。AI 撰写，接续[活动范围的形成与结束](YITI-REN-SCOPE-INTEGRATION.md)，遵循[共同非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)。本轮过程中，Ren 再次纠正：
 
 > it is not about this "expectation" or that one, it is about the integral of the whole
 

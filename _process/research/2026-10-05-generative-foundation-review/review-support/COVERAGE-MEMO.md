@@ -8,7 +8,7 @@ A complete exposition should connect six distinct operations: processes produce 
 
 The general state architecture `z=(x,e,n,r,phi)` is a role schema, not five independent substances or a minimal ontology. A variable can perform several roles without being counted several times. A finite model must retain sufficient memory. An ecosystem need not possess represented goals. The common causal structure does not establish the same numerical dynamics in every domain.
 
-Sources: [general architecture, lines 17–58](/Users/ren/theories/experiments/integrated-correction/general-framework/README.md:17); [multilevel state, local information and plural relations](/Users/ren/theories/experiments/integrated-correction/systems-dynamics/review/MULTILEVEL.md:13); [mechanism-first canonical revision](/Users/ren/theories/theories/shengsheng-buxi-generative-existence/README.md:303).
+Sources: [general architecture, lines 17–58](/Users/ren/theories/experiments/integrated-correction/general-framework/README.md:17); [multilevel state, local information and plural relations](/Users/ren/theories/experiments/integrated-correction/systems-dynamics/review/MULTILEVEL.md:13); [mechanism-first canonical revision](/Users/ren/theories/theories/becoming/README.md:303).
 
 The dossier must distinguish four closures:
 

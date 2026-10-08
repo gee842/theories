@@ -1,6 +1,6 @@
 # 接入变化与摘要必须保留什么 / Changing access and necessary information
 
-2026-10-08，Asia/Bangkok。Ren 的“继续”见[来源](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md)。本轮形式化、比较及作者反审为 AI 工作。[当前理论第11节](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md)。
+2026-10-08，Asia/Bangkok。Ren 的“继续”见[来源](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md)。本轮形式化、比较及作者反审为 AI 工作。[当前理论第11节](../../../../theories/becoming/chapters/GENERATED-LOGIC.md)。
 
 **完成结果：对当前接入相同的配置，保留未来允许接入范围内的全部占用区别，恰好足以保留所有允许有限历史的可行性。** 两步“改接—取得”给出必要方向。原生三步历史产生旧范围下完全等价、扩展范围下可区分的配置。只给旧摘要与改接事件，无法总能重建新摘要。
 

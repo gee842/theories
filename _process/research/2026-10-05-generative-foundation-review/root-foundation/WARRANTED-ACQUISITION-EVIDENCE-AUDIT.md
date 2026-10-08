@@ -1,6 +1,6 @@
 # Independent audit of warranted acquisition evidence
 
-8 October 2026. AI-authored independent source and inference audit for the current warranted-acquisition continuation. This is an audit of an actual published investigation and the repository's use of it, not a new experiment, raw-data replication or new Lean proof. The [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) and explicit G0/J route remain in force.
+8 October 2026. AI-authored independent source and inference audit for the current warranted-acquisition continuation. This is an audit of an actual published investigation and the repository's use of it, not a new experiment, raw-data replication or new Lean proof. The [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) and explicit G0/J route remain in force.
 
 ## Reading and preservation scope
 

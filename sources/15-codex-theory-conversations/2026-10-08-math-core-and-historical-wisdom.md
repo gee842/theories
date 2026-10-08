@@ -18,4 +18,4 @@
 
 ## 执行范围 / Research scope
 
-在既有理论仓库推进关系结构、历史原典与形式检验，遵守非二元方法、明示伦理公理及新增数学主张的 Lean 实查。首轮采用已知但未在本轮用于调整核心的比较案例；因选择并非盲法，不能冒称完成严格留出预测。更广的历史覆盖、伦理统一与唯一真理基础仍需分别研究。/ This continuation authorizes substantive investigation, not automatic acceptance of the strongest claim. See the [fixed first-test protocol](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-PROTOCOL.md) and [current account](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md).
+在既有理论仓库推进关系结构、历史原典与形式检验，遵守非二元方法、明示伦理公理及新增数学主张的 Lean 实查。首轮采用已知但未在本轮用于调整核心的比较案例；因选择并非盲法，不能冒称完成严格留出预测。更广的历史覆盖、伦理统一与唯一真理基础仍需分别研究。/ This continuation authorizes substantive investigation, not automatic acceptance of the strongest claim. See the [fixed first-test protocol](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-PROTOCOL.md) and [current account](../../theories/becoming/chapters/WISDOM-AND-CONTEXT.md).

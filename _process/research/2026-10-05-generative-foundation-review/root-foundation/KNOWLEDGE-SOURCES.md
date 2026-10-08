@@ -174,7 +174,7 @@ The historical induction challenge, conditional causal account, measured evaluat
 
 ## Shared inquiry, standing and completion
 
-8 October 2026. Three further primary comparisons constrain the [shared-inquiry argument](SHARED-INQUIRY-AND-STANDING.md) and [philosophical synthesis](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PHILOSOPHICAL-ACCOUNT.md). External originals remain link-only; no source bytes are imported into this repository. Search snippets and secondary accounts were used for discovery, not substituted for the primary passages read below. No new empirical replication or mathematical proof is claimed.
+8 October 2026. Three further primary comparisons constrain the [shared-inquiry argument](SHARED-INQUIRY-AND-STANDING.md) and [philosophical synthesis](../../../../theories/becoming/chapters/PHILOSOPHICAL-ACCOUNT.md). External originals remain link-only; no source bytes are imported into this repository. Search snippets and secondary accounts were used for discovery, not substituted for the primary passages read below. No new empirical replication or mathematical proof is claimed.
 
 ### Longino: effective critical interaction
 

@@ -42,4 +42,4 @@ The implementation checks the full construction increment including its generato
 
 The remaining theoretical issue is more basic than tuning inhibitor strength. In the original law, recycling converts a leaking fuel packet into usable R without losing the assigned work value. It does not compete with a second modeled productive fuel use. A loss of free reserve is therefore not yet a demonstration of impaired later production. A proposed regulator needs an independently specified harmful reaction or resource conflict to resolve, and new functional claims need a common expanded assay vocabulary.
 
-Return to the [original regulator comparison](../README.md) and the [completion plan](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COMPLETION-PLAN.md).
+Return to the [original regulator comparison](../README.md) and the [completion plan](../../../../theories/becoming/chapters/COMPLETION-PLAN.md).

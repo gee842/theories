@@ -9,7 +9,7 @@ from urllib.parse import unquote
 
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parents[3]
-THEORY = REPO / "theories/shengsheng-buxi-generative-existence/unified-2026-10-05"
+THEORY = REPO / "theories/becoming/chapters"
 NATIVE = REPO / "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback"
 FORMAL = NATIVE / "remaining-dependency/formal"
 OUTPUT = HERE / "REMAINING-DEPENDENCY-CHECKS.json"
@@ -25,7 +25,7 @@ DOCS = [
 ]
 INDEXES = {
     REPO / "RESEARCH.md": "**Acquired continuing dependency now changes later activity,",
-    REPO / "theories/shengsheng-buxi-generative-existence/README.md": "**Learning what must continue after success,",
+    REPO / "theories/becoming/README.md": "**Learning what must continue after success,",
     THEORY / "GENERATIVE-GROUNDING.md": "**Acquired continuing dependency → maintained relation → further activity,",
     HERE / "README.md": "**Acquired continuing dependency completed locally,",
     NATIVE / "README.md": "**Further continuation, 6 October 2026:**",

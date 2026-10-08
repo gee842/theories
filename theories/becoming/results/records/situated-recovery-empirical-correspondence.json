@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "id": "situated-recovery-empirical-correspondence",
+  "title": {
+    "zh": "情境恢复的公开数据对应",
+    "en": "Public-data correspondence for situated recovery"
+  },
+  "kind": "assessment",
+  "status": "reviewed-scoped",
+  "family": "F04",
+  "reviewed_at_utc": "2026-10-08T13:13:07.204351+00:00",
+  "claim": {
+    "zh": "16位参与者的公开记录支持有限阶段内的平均反应保留，并限制简单时间曲线的预测适用范围；较复杂模型没有普遍胜出。",
+    "en": "Public records from 16 participants support finite mean response retention and constrain the predictive scope of simple temporal curves; greater model complexity is not uniformly superior."
+  },
+  "hypotheses": [
+    {
+      "zh": "采用作者提供的施力补偿系数、FieldA方向及实际试次；作者的完整原始处理未被独立精确重建。",
+      "en": "Use the author-provided force-compensation coefficient, FieldA direction and actual trials; the complete original processing has not been independently reproduced exactly."
+    },
+    {
+      "zh": "两组各8人；以参与者为重采样单位，最后50次观察仅用于预测评分；该次分析已知论文结论，属探索性复算。",
+      "en": "Eight participants per group; resample participants and reserve final 50 observations for scoring. Published findings were known, making this exploratory secondary analysis."
+    },
+    {
+      "zh": "描述性曲线、基线及外推规则明示；非负水平约束是保留原结果后的事后敏感性分析。",
+      "en": "Descriptive curves, baseline and extrapolation rules are explicit; the nonnegative-level constraint is a post hoc sensitivity preserving the original results."
+    }
+  ],
+  "correspondence": {
+    "zh": "2,656次有效通道反应连接实际施力与有限保留；其系数不直接等于隐藏记忆、完整理解或Lean追踪误差。",
+    "en": "2,656 measured channel responses connect actual force with finite retention; their coefficient is not directly hidden memory, full understanding or the Lean tracking error."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/README.md",
+  "aliases": [],
+  "dependencies": [],
+  "related": [],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/README.md",
+      "detail": {
+        "zh": "基线校正后的组间区间包含零；自发组简单衰减、诱发组恒定均值的平均预测误差最低。近单位参数不可识别及施力复算差异均保留。",
+        "en": "The baseline-corrected group-difference interval includes zero; simple decay wins mean spontaneous forecast error and a constant mean wins evoked error. Near-unit parameter instability and force reconstruction differences are retained."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "未建立无限时间极限、独占机制、完整情境理解、伦理收敛或跨尺度生物联合验证。",
+    "en": "Does not establish an infinite-time limit, unique mechanism, complete situational understanding, ethical convergence or joint cross-scale biological validation."
+  },
+  "validation_scope": {
+    "zh": "18个来源文件保存；16份MAT核对官方哈希；5,440行、2,656次测量、800次留后预测通过数据与算术检查。实质自审完成，无独立实验、独立agent审查或新Lean定理。",
+    "en": "18 original files retained; 16 MAT files match deposited hashes; 5,440 rows, 2,656 measurements and 800 held-out predictions pass data and arithmetic checks. Substantive self-review completed; no independent experiment, independent-agent review or new Lean theorem."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/README.md",
+      "role": "statement",
+      "sha256": "5180d5377623249f372c124369ea1f54b7a015630e77c298f8646b6d0748f49a",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md",
+      "role": "review",
+      "sha256": "01f247fa37fa7c5fb14ae5def7ac2ae6c10c15bb919d1eaa6b6096c3839969d0",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+      "role": "integration",
+      "sha256": "2a3300bddad51eb8407891bfb095cebf9de1830c838f3c7144d893cce6f06736",
+      "declarations": []
+    },
+    {
+      "path": "sources/situated-recovery/heald-2021/README.md",
+      "role": "provenance",
+      "sha256": "a70f0dd135fa1692a8552cf45e06bb7baba1268e198ae07952a7ea7b319c941c",
+      "declarations": []
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/situated-recovery/verification.json",
+      "role": "receipt",
+      "sha256": "c308b05d71119471a8ada531d3e94b0a04dc3f4514d8966d2e873b3031382d09",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [],
+  "next_delta": {
+    "zh": "复用已完成的测量对应；更强机制主张须借有区分力的实验关系或既有干预证据检验，不重复等待自建实验室。",
+    "en": "Reuse the completed measurement correspondence. Stronger mechanism claims require discriminating experimental relations or existing intervention evidence, rather than waiting for our own laboratory."
+  },
+  "history": [
+    {
+      "zh": "2026-10-08：按Ren要求直接利用公开数据，接续已有六篇文献整合；新增实际数据对应与预测评估，保留小样本不确定和不利结果。",
+      "en": "2026-10-08: followed Ren’s direction to use public data, extending the six-study synthesis with actual measurement correspondence and forecast evaluation while retaining small-sample uncertainty and adverse results."
+    },
+    {
+      "zh": "2026-10-09：已读并整合三个共享来源中新增的24人更新研究；16人恢复主张、原分析及原科学回执不变，新增主张另列，不重复计数。",
+      "en": "2026-10-09: read and reconciled the 24-person updating additions in three shared sources. The 16-person recovery claim, analysis and scientific receipt remain unchanged; the distinct updating claim is recorded separately."
+    }
+  ]
+}

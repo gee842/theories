@@ -1,6 +1,6 @@
 # 规律与读取关系怎样共同取得根据 / Warranted acquisition of laws and readings
 
-2026-10-08，Asia/Bangkok。AI 撰写的肯定论证，沿[生成性对齐方向](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md)与本轮继续要求推进。遵循[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)。本轮采用已明示的 G0/J，不重新要求伦理起点的无公理证明。本文作哲学论证与主要来源比较，不增加数学定理；具体通信案例的数据核对与独立审计由本轮整合另载。
+2026-10-08，Asia/Bangkok。AI 撰写的肯定论证，沿[生成性对齐方向](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md)与本轮继续要求推进。遵循[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)。本轮采用已明示的 G0/J，不重新要求伦理起点的无公理证明。本文作哲学论证与主要来源比较，不增加数学定理；具体通信案例的数据核对与独立审计由本轮整合另载。
 
 **肯定主张：不必先拥有完整正确的规律和绝对可靠的读数，才可能取得有根据的修正。可以保持所问的实际关系，让规律解释与读取解释共同接受有区别的检查；一条尚未完全认证的通路，也可能暴露另一条通路的具体错误。所得根据属于检查确实辨明的关系，不自动成为所有能力、全部情况或完整伦理地位的判决。**
 
@@ -86,7 +86,7 @@ The communication target is a particular contribution to the formation of a mess
 
 ## 8. 与既有真实对应的接合，以及完成范围
 
-[TCLab 实测对应](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEASURED-FEEDBACK-CORRESPONDENCE.md)已经把历史读数、保留状态、命令与源代码次序相连，不能笼统贬为全是预送标签。[误差范围校准](BOUND-CALIBRATION-INTEGRATION.md)同时保留了过去包络在后续记录中的失败及真温度校准的缺口。[实际规律对应](LAW-CORRESPONDENCE-INTEGRATION.md)也已经区分有效规律的数学推导与具体物理关系的证据。这些是本轮的起点，不重复数为新的科学结果。
+[TCLab 实测对应](../../../../theories/becoming/chapters/MEASURED-FEEDBACK-CORRESPONDENCE.md)已经把历史读数、保留状态、命令与源代码次序相连，不能笼统贬为全是预送标签。[误差范围校准](BOUND-CALIBRATION-INTEGRATION.md)同时保留了过去包络在后续记录中的失败及真温度校准的缺口。[实际规律对应](LAW-CORRESPONDENCE-INTEGRATION.md)也已经区分有效规律的数学推导与具体物理关系的证据。这些是本轮的起点，不重复数为新的科学结果。
 
 本轮的理论连接能够据此具体表述：**规律和读取可以一同成为研究对象；有根据的取得是对这些关系的有区别约束，而不是把某个环节永远宣布为可靠参照。** 正面的修订可改变一项通信归属或测量解释，同时保留其他未被击败的认识、未测能力与正当关切。进一步实用判断继承既有 G0/J，而非由观察正确性独自推出。
 

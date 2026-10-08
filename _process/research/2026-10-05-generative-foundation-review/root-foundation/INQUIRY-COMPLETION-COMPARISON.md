@@ -1,6 +1,6 @@
 # Inquiry completion: scope and the next distinct connection
 
-6 October 2026. AI-authored comparative methodological review under the [shared method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). This reviews the [integration](INQUIRY-COMPLETION-INTEGRATION.md) and [native study account](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY.md), with the existing interfaces below. It adds no experiment, numerical reconstruction, literature evidence or independent acceptance of the fifteen computed histories. Those checks belong to the [separate review](INQUIRY-COMPLETION-REVIEW.md).
+6 October 2026. AI-authored comparative methodological review under the [shared method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). This reviews the [integration](INQUIRY-COMPLETION-INTEGRATION.md) and [native study account](../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/INQUIRY.md), with the existing interfaces below. It adds no experiment, numerical reconstruction, literature evidence or independent acceptance of the fifteen computed histories. Those checks belong to the [separate review](INQUIRY-COMPLETION-REVIEW.md).
 
 ## Accepted interpretation
 

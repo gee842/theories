@@ -20,7 +20,7 @@ The proposed positive action must therefore have a defensible target: restoring 
 
 A genuine resolution also needs to remain a serious control. A planned refusal to revisit anticipated temptation is different from a response-produced inability to assess a relevant change beyond that plan's defended scope. The proposal must show which case it has identified. Neither time passing nor a new proposition by itself defeats a valid settlement. The account cannot settle this by defining all stability as rigidity or every new preference as authentic.
 
-These are applications and refinements developed here, not theories attributed wholesale to either source. They continue the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md): understanding, valuation, actual options and responses can change together. An independently assessable difference in their relation must carry the argument, rather than an imagined pre-social owner whose unaltered preference always governs.
+These are applications and refinements developed here, not theories attributed wholesale to either source. They continue the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md): understanding, valuation, actual options and responses can change together. An independently assessable difference in their relation must carry the argument, rather than an imagined pre-social owner whose unaltered preference always governs.
 
 ## What the comparison does not establish
 

@@ -1,6 +1,6 @@
 # 同一生成活动中的续存、认识与后续回应：既有实际历史的重构
 
-2026 年 10 月 6 日。AI 撰写，依照更新后的 [AGENTS.md](../../../../AGENTS.md) 与[项目共同非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)。本轮不是另造一个中性核心或帮助程序，而是重读已经存在的物质形成、获得记录、纠正和实际使用历史。以下是**概念重构与范围复核，不是新增定理、重跑实验或重新认证旧编译**。
+2026 年 10 月 6 日。AI 撰写，依照更新后的 [AGENTS.md](../../../../AGENTS.md) 与[项目共同非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)。本轮不是另造一个中性核心或帮助程序，而是重读已经存在的物质形成、获得记录、纠正和实际使用历史。以下是**概念重构与范围复核，不是新增定理、重跑实验或重新认证旧编译**。
 
 **中心发现：在这条已证明的历史里，所谓组织续存、认识形成与行动能力并非三个先完成的模块，再由外部桥梁连接。同一次 `work` 的真实回执同时进入资源变化、被保留的动作指涉和下一次记录更新；同一次 `write` 同时改变当前资源、获得记录、过程阶段和后续命令。三种描述截取的是这段活动不同但相互制约的方面。**
 
@@ -111,7 +111,7 @@ phase'&=observed.
 
 1. **已留记录可以变得不再正确。** `.reverse` 在 q 与命令保持时改变响应条件 z；`dependency_changes_while_memory_is_retained` 因此推出 `ExactEffects` 不再成立。它展示正确性是记录与实际条件的关系；不是证明记录原来从未获得任何意义。
 2. **源中断使失败回执不再唯一识别原因。** [ReceiptIdentification](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/ReceiptIdentification.lean) 证明原完整解码器正确当且仅当源可用，或动作本来不匹配条件。未知可用性下全失败历史可兼容两种条件。这不反驳既定无噪声可用域中的对应，却限制其扩展；不能为了保住普遍成功临时把中断排除。
-3. **认识形成后仍可能缺少行动所需的资源。** [既有预测行动研究](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PREDICTION-ACTION.md) 的指定 Slow 纠正路线需要 21 单位初始可用燃料；20 单位可以得到已改变的命令，却不足以执行接下来的响应。此前消耗与当前用途属于同一账目，非额外精神—物质鸿沟。
+3. **认识形成后仍可能缺少行动所需的资源。** [既有预测行动研究](../../../../theories/becoming/chapters/PREDICTION-ACTION.md) 的指定 Slow 纠正路线需要 21 单位初始可用燃料；20 单位可以得到已改变的命令，却不足以执行接下来的响应。此前消耗与当前用途属于同一账目，非额外精神—物质鸿沟。
 4. **材料总数不能替代具体部件能力。** `actual_prior_revision_cannot_supply_register` 在确已到达的旧构造终态中，粗 retrofit 条件成立，但所需自由 A/H 已耗尽。`coarse_capacity_does_not_supply_register` 另保留配置反例。前者是真实已到达的边界，后者是类型内配置，不能混算为同一历史证据。
 5. **动作耦合的方向仍可改变。** 既有 inverted-action 计算分支由真实回执学习，却执行相反路线，准确预报许多自己造成的失败。它反对“预测误差小本身足够保证续存”这一弱主张；它不是只切换一个脱离过程的评价标签，也不是对任何更丰富非二元解释的全面反驳。
 

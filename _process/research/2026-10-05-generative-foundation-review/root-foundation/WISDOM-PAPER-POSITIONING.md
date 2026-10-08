@@ -38,9 +38,9 @@ This investigates the transition **truth-preserving conditional reasoning → fa
 | 规范承诺获得修订 / Revision of normative commitments | 哪项理由或公理被质疑，为什么；哪些旧要求和损失仍须处理 | 把更方便的新标准当作旧判断一直正确的证明 |
 | 表达或实现方式改变 / Redescription or implementation change | 哪些有关关系确实被保留；省略什么及其范围 | 将换名字当作伦理进步，或将忠实重构误作不忠 |
 
-这些不是四个独立存在的领域。知道、行动、评价通过同一活动中的学习、影响、共同承担和辨别分化；形式模型只保留当前问题所需的关系。采用[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)，不能以外在给定的主体、环境或价值域解释全部关系，也不能因局部模型省略形成机制，就宣布完整理论没有该机制。
+这些不是四个独立存在的领域。知道、行动、评价通过同一活动中的学习、影响、共同承担和辨别分化；形式模型只保留当前问题所需的关系。采用[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)，不能以外在给定的主体、环境或价值域解释全部关系，也不能因局部模型省略形成机制，就宣布完整理论没有该机制。
 
-伦理应用继续明示 [G0/J/E](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md)：G0 是授权采用的正面规范起点，J1–J4 是公开的比较、责任与实践承诺，E 是真实对应义务。依存发生这一事实，不能单独承担全部责任分配的论证；模型中保持一个 Q，也不等于已经证明 Q 的善。
+伦理应用继续明示 [G0/J/E](../../../../theories/becoming/chapters/PRACTICAL-JUDGMENT.md)：G0 是授权采用的正面规范起点，J1–J4 是公开的比较、责任与实践承诺，E 是真实对应义务。依存发生这一事实，不能单独承担全部责任分配的论证；模型中保持一个 Q，也不等于已经证明 Q 的善。
 
 ## 3. 已有成果怎样支持论文 / Reusable results
 

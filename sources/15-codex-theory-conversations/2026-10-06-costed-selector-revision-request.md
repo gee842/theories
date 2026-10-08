@@ -8,4 +8,4 @@ Ren quoted the assistant's proposed milestone and instructed its execution:
 >
 > please execute this
 
-The quoted proposal originated with the assistant; the instruction “please execute this” is Ren's. This records authorization and direction, not endorsement of any eventual result or claim of historical novelty. The [resulting study](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SELECTOR-REVISION.md) records a conditional mechanism, its exact recovery bound and the conventional comparison's limitations.
+The quoted proposal originated with the assistant; the instruction “please execute this” is Ren's. This records authorization and direction, not endorsement of any eventual result or claim of historical novelty. The [resulting study](../../theories/becoming/chapters/SELECTOR-REVISION.md) records a conditional mechanism, its exact recovery bound and the conventional comparison's limitations.

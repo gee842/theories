@@ -16,12 +16,12 @@ The four requested source files below matched commit **`b379528da1645db5b5c2eb55
 
 | Source read in full | SHA-256 |
 |---|---|
-| [JOINT-FORMATION.md](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/JOINT-FORMATION.md) | `eb82363f134116642ab308429a51ecfe1b3aeac3e3152c11f7168b6548fa2145` |
-| [JOINT-FORMATION-MATH.md](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/JOINT-FORMATION-MATH.md) | `78588893049559c99f82c7886c3e9edc87e45209b48a6b90d0eba616fcfdb949` |
-| [JOINT-OBSTRUCTIONS.md](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/JOINT-OBSTRUCTIONS.md) | `563c720e9327fb48197631e36b1ee97fdc2e4990c147d9da3c5582de67994ee9` |
+| [JOINT-FORMATION.md](../../../../theories/becoming/chapters/JOINT-FORMATION.md) | `eb82363f134116642ab308429a51ecfe1b3aeac3e3152c11f7168b6548fa2145` |
+| [JOINT-FORMATION-MATH.md](../../../../theories/becoming/chapters/JOINT-FORMATION-MATH.md) | `78588893049559c99f82c7886c3e9edc87e45209b48a6b90d0eba616fcfdb949` |
+| [JOINT-OBSTRUCTIONS.md](../../../../theories/becoming/chapters/JOINT-OBSTRUCTIONS.md) | `563c720e9327fb48197631e36b1ee97fdc2e4990c147d9da3c5582de67994ee9` |
 | [Experiment README](../../../../experiments/joint-formation/README.md) | `9851bc76397bab93a624063eea942a13d3e4ba15d7840e479e855c55cb67386b` |
 
-Also read in full: repository `AGENTS.md`, `README.md`, `RESEARCH.md`, `_process/BRIEF.md`; the current [formal specification](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-SPECIFICATION.md), [completion plan](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COMPLETION-PLAN.md), and the contribution's [final formal review](../../2026-10-05-unified-theory/development-02/formal-review-final.md). The specification and plan were uncommitted working files, absent from `b379528`; their mapping below refers to the inspected bytes.
+Also read in full: repository `AGENTS.md`, `README.md`, `RESEARCH.md`, `_process/BRIEF.md`; the current [formal specification](../../../../theories/becoming/chapters/FORMAL-SPECIFICATION.md), [completion plan](../../../../theories/becoming/chapters/COMPLETION-PLAN.md), and the contribution's [final formal review](../../2026-10-05-unified-theory/development-02/formal-review-final.md). The specification and plan were uncommitted working files, absent from `b379528`; their mapping below refers to the inspected bytes.
 
 | Additional version anchor | SHA-256 |
 |---|---|

@@ -1,6 +1,6 @@
 # Evidence interface: from dependencies to endogenous regulation
 
-6 October 2026. AI-authored primary-source audit for Ren's [accepted derivation sequence](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#accepted-work-sequence). This supplies empirical constraints and proposed discriminating observations for **dependency → accessible internal difference → formed response → changed continuation → changed retention**. It does not validate a new model or close that entire connection.
+6 October 2026. AI-authored primary-source audit for Ren's [accepted derivation sequence](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#accepted-work-sequence). This supplies empirical constraints and proposed discriminating observations for **dependency → accessible internal difference → formed response → changed continuation → changed retention**. It does not validate a new model or close that entire connection.
 
 **Finding.** Natural stress-response systems supply identifiable physical routes from impaired organization to regulatory activity and newly synthesized protection. Existing experiments also separate persistent protective material, altered future responsiveness, and selective survival. These are different mechanisms. None of the sources inspected here demonstrates the origin of a successful regulatory architecture from its absence, or an endogenous rule that retains newly formed responses because of their realized consequences.
 

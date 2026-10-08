@@ -57,8 +57,8 @@ No empirical observations were collected. Synthetic cases and kernel proofs do n
 [findings]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/review-history/root-formal-lifecycle/findings.json
 [scope]: EVALUATIVE-UPTAKE-SCOPE.md
 [math]: EVALUATIVE-UPTAKE-MATH.md
-[canonical]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-UPTAKE.md
-[application]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md
+[canonical]: ../../../../theories/becoming/chapters/EVALUATIVE-UPTAKE.md
+[application]: ../../../../theories/becoming/chapters/EVALUATIVE-APPLICATION.md
 
 [formal-receipt]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal/verification.json
 [crosscheck]: ../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/formal-runtime-crosscheck.json

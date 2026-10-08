@@ -1,6 +1,6 @@
 # 目的怎样接受处境纠正：定向的接续、改变与根据
 
-2026年10月6日。AI 撰写的论证与独立范围审查，承接 Ren 认可的两条路线及其要求同时完成形式化。本文遵循[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)，特别是其中的整体生成伦理方向；接续[仁的形成解释](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md#4-仁的形成也在被关切的历程之内)，不替换此前[未闭合的直接证明](YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md)。本文不是 Ren 原话、经验新发现或无假设普遍证明。
+2026年10月6日。AI 撰写的论证与独立范围审查，承接 Ren 认可的两条路线及其要求同时完成形式化。本文遵循[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)，特别是其中的整体生成伦理方向；接续[仁的形成解释](../../../../theories/becoming/chapters/NONINSTRUMENTAL-CONCERN.md#4-仁的形成也在被关切的历程之内)，不替换此前[未闭合的直接证明](YITI-REN-UNIVERSAL-PROOF-ATTEMPT.md)。本文不是 Ren 原话、经验新发现或无假设普遍证明。
 
 ## 1. 本轮实际取得的连接
 

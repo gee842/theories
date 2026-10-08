@@ -90,7 +90,7 @@ All ten local links in these six fragments exist. The fragments neither declare 
 | `START-HERE.md` opening | `e9555b38275122ba2dc58d97b7cd6bf512c85b1ac04dfa21582155e28de5b20d` |
 | `FOUNDATION-PREMISES.md` appended §8 | `21e694be90df66a1b6ff0aad697784b9c82e31a06f0bc05f83d7c7b0640715ea` |
 
-[argument]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-GROUNDING.md
+[argument]: ../../../../theories/becoming/chapters/EVALUATIVE-GROUNDING.md
 [assessment]: EVALUATIVE-GROUNDING-ASSESSMENT.md
-[goal]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation
-[institutional]: ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md
+[goal]: ../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md#completion-of-the-unified-foundation
+[institutional]: ../../../../theories/becoming/chapters/EVIDENCE-AND-INSTITUTIONAL-CORRECTION.md

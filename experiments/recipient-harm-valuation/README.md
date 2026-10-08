@@ -1,6 +1,6 @@
 # Recipient harm and learned action
 
-6 October 2026. Retrospective reanalysis of original public data from Hernandez-Lallement et al. (2020), *Harm to Others Acts as a Negative Reinforcer in Rats*. The [canonical account](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-HARM-AND-ACTION.md) connects the result to the continuing generative foundation. No new animal experiment, stimulus delivery or model training was performed.
+6 October 2026. Retrospective reanalysis of original public data from Hernandez-Lallement et al. (2020), *Harm to Others Acts as a Negative Reinforcer in Rats*. The [canonical account](../../theories/becoming/chapters/RECIPIENT-HARM-AND-ACTION.md) connects the result to the continuing generative foundation. No new animal experiment, stimulus delivery or model training was performed.
 
 ## Accepted descriptive result
 

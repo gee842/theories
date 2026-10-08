@@ -1,6 +1,6 @@
 # Paid implementation across event scales
 
-6 October 2026. AI-authored companion under the [generative-grounding programme](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md). The named connection is **several physical events → one implemented observation/update step → successive learned responses**. This develops the step-granularity obligation left open by [controlled refinement](CONTROLLED-REFINEMENT-MATH.md).
+6 October 2026. AI-authored companion under the [generative-grounding programme](../../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md). The named connection is **several physical events → one implemented observation/update step → successive learned responses**. This develops the step-granularity obligation left open by [controlled refinement](CONTROLLED-REFINEMENT-MATH.md).
 
 ## 1. Why another interface is needed
 

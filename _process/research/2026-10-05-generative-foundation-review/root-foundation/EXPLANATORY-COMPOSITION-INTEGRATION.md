@@ -1,6 +1,6 @@
 # Contextual substitution, canonical factors and structural uniqueness
 
-8 October 2026, Asia/Bangkok. AI-authored research under [Ren’s request for stronger structural uniqueness](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md#更强的结构唯一性--stronger-structural-uniqueness). This continues the [matched structural comparison](EXPLANATORY-STRUCTURE-INTEGRATION.md) in its existing workspace. The [current theory](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md#23-从相同回答到可替换的片段) contains the Chinese account.
+8 October 2026, Asia/Bangkok. AI-authored research under [Ren’s request for stronger structural uniqueness](../../../../sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md#更强的结构唯一性--stronger-structural-uniqueness). This continues the [matched structural comparison](EXPLANATORY-STRUCTURE-INTEGRATION.md) in its existing workspace. The [current theory](../../../../theories/becoming/chapters/EXPLANATORY-NECESSITY.md#23-从相同回答到可替换的片段) contains the Chinese account.
 
 **Result:** for a fixed candidate-word language and concatenation, exact reduced presentations of all two-sided contextual answers have a canonical bijective matching preserving composition and the empty word. Composition on used codes is proved total, single-valued, associative and unital. A general exact reduced presentation exists; every exact presentation, even one with redundant distinctions, has a canonical surjective functional matching into it preserving the induced composition relation. The earlier one-event budget has exactly three contextual classes and a forced multiplication table. This is a relative structural uniqueness result, not unique ontology or a discovery of all truth.
 
@@ -8,7 +8,7 @@
 
 ## 1. The bridge and its independently supplied target
 
-The preceding theorem identified equal answer distinctions, but it did not show that a composition of codes existed or was preserved. We now ask about **replacement within a larger candidate realization**. In the formal model a word is a finite list of event labels. Prefix, inserted fragment and suffix are analytical positions in one composed word. They are not independently existing agent/environment, law/flow or subject/object domains. The [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md) requires retaining the relationships that these positions expose and stating what the representation omits.
+The preceding theorem identified equal answer distinctions, but it did not show that a composition of codes existed or was preserved. We now ask about **replacement within a larger candidate realization**. In the formal model a word is a finite list of event labels. Prefix, inserted fragment and suffix are analytical positions in one composed word. They are not independently existing agent/environment, law/flow or subject/object domains. The [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md) requires retaining the relationships that these positions expose and stating what the representation omits.
 
 Supplied before choosing a presentation:
 

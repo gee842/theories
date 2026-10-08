@@ -1,6 +1,6 @@
 # Connecting paid noisy learning to the concern decision
 
-6 October 2026. AI-authored integration within the [generative grounding programme](../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md). The named transition is **acquired operational consequences → maintained predictive estimates → a reliable input to the existing concern decision**. The formation of shared evaluation remains a separate derivation obligation.
+6 October 2026. AI-authored integration within the [generative grounding programme](../../../theories/becoming/chapters/GENERATIVE-GROUNDING.md). The named transition is **acquired operational consequences → maintained predictive estimates → a reliable input to the existing concern decision**. The formation of shared evaluation remains a separate derivation obligation.
 
 **Status: accepted at the conditional reliability-interface scope.** The [separate internal review](TRANSFER-EVIDENCE-REVIEW.md) accepts the mathematical arguments and finite implementation with the boundaries below. This is not completion of shared evaluation or the unified foundation.
 

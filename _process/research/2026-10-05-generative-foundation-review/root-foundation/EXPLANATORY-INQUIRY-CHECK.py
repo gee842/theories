@@ -23,7 +23,7 @@ def main():
     spec = importlib.util.spec_from_file_location('chain', HERE / 'build_generative_chain.py')
     chain = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(chain)
-    docs = [ROOT / 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md',
+    docs = [ROOT / 'theories/becoming/chapters/EXPLANATORY-NECESSITY.md',
             ROOT / 'sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md',
             HERE / 'EXPLANATORY-INQUIRY-INTEGRATION.md', HERE / 'EXPLANATORY-VARIATION-INTEGRATION.md']
     edits = json.loads((HERE / 'EXPLANATORY-INQUIRY-INDEX-EDITS.json').read_text())

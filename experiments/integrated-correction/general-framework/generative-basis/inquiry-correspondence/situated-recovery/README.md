@@ -6,7 +6,7 @@
 
 ## Question, reuse and scope
 
-Result: `situated-recovery-empirical-correspondence` (F04). Reuse the [completed operational account](../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md#18-experimental-grounding-already-exists) and [six-study evidence assessment](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md). The new correspondence connects actual channel-force responses and retained histories to finite persistence and predictive discrimination. It does not identify measured adaptation with complete understanding or with the error variable of the Lean observer.
+Result: `situated-recovery-empirical-correspondence` (F04). Reuse the [completed operational account](../../../../../../theories/becoming/chapters/GOAL-FORMATION-AND-REVISION.md#18-experimental-grounding-already-exists) and [six-study evidence assessment](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-RECOVERY-EXPERIMENTAL-EVIDENCE.md). The new correspondence connects actual channel-force responses and retained histories to finite persistence and predictive discrimination. It does not identify measured adaptation with complete understanding or with the error variable of the Lean observer.
 
 Hand movement, robot forces, feedback conditions, recorded responses and subsequent behavior are differentiated relations within the experimental activity. The apparatus controls the channel and perturbation history; the observed response is only one projection. No fundamentally independent mind/world division or automatic normative conclusion is required.
 

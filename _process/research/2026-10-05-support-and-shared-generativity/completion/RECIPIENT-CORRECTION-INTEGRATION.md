@@ -1,6 +1,6 @@
 # Integration: paid recipient outcomes correct a distinct correspondence
 
-6 October 2026. AI-authored integration of the [current formulation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RECIPIENT-CORRECTION.md). Named connection: **formed prediction/action → actual recipient evidence → revised recipient action with preserved actor correspondence**. The [protocol](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/PROTOCOL.md), [mathematics](RECIPIENT-CORRECTION-MATH.md), [comparators](RECIPIENT-CORRECTION-COMPARATORS.md) and [independent review](RECIPIENT-CORRECTION-REVIEW.md) retain separate scopes.
+6 October 2026. AI-authored integration of the [current formulation](../../../../theories/becoming/chapters/RECIPIENT-CORRECTION.md). Named connection: **formed prediction/action → actual recipient evidence → revised recipient action with preserved actor correspondence**. The [protocol](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/PROTOCOL.md), [mathematics](RECIPIENT-CORRECTION-MATH.md), [comparators](RECIPIENT-CORRECTION-COMPARATORS.md) and [independent review](RECIPIENT-CORRECTION-REVIEW.md) retain separate scopes.
 
 ## Accepted conditional contribution
 

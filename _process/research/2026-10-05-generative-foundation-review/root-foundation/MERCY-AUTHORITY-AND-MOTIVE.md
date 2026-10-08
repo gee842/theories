@@ -12,7 +12,7 @@ The source is new to the targeted repository dossiers. An attempt to retrieve Hu
 
 ## Application to the minimum
 
-The following distinctions are this investigation's application. They preserve the [minimum's existing separation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIVERSAL-ETHICAL-MINIMUM.md) of favor, obligation and authority; they are not new proofs of those distinctions or conclusions attributed wholesale to the source.
+The following distinctions are this investigation's application. They preserve the [minimum's existing separation](../../../../theories/becoming/chapters/UNIVERSAL-ETHICAL-MINIMUM.md) of favor, obligation and authority; they are not new proofs of those distinctions or conclusions attributed wholesale to the source.
 
 **A reason to act and the motive of an act differ.** A classification that reserves “merciful” for actions performed from concern cannot settle whether relief had moral favor before that concern was adopted. An initially indifferent actor may have a reason without acting on it. Conversely, an actor can adopt a compassionate motive while lacking the permission to carry out a particular intervention. The intended C2 inquiry concerns prospective favor for a response, not whether a completed action earns a virtue label.
 

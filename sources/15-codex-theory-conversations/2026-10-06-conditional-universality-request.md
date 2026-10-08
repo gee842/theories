@@ -15,4 +15,4 @@
 
 The quoted sentence was from the assistant's description of the deeper-root study. Ren proposes conditional universality over realities with specified law properties. The assistant agreed to separate a universal representation claim from substantive consequences derived under explicit additional conditions, and to seek conditions that do not assume the conclusion.
 
-The ensuing [conditional-universality development](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONDITIONAL-UNIVERSALITY.md) advances the existing [governing foundation](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md). The choice of mathematical conditions, theorems and scope statements is AI-assisted research, not wording supplied or results certified by Ren.
+The ensuing [conditional-universality development](../../theories/becoming/chapters/CONDITIONAL-UNIVERSALITY.md) advances the existing [governing foundation](../../theories/becoming/chapters/GENERATIVE-GROUNDING.md). The choice of mathematical conditions, theorems and scope statements is AI-assisted research, not wording supplied or results certified by Ren.

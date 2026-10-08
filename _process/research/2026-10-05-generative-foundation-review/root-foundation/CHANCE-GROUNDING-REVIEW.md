@@ -1,6 +1,6 @@
 # Independent review: grounding initial chances / 初始机会根据的独立反审
 
-8 October 2026. AI-authored counterreview under the authorized G0/J route and the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). This round tests the additional opportunity commitment proposed for unequal, unresolved basic claims. It does not reopen the ethical starting point or treat lack of a complete distribution rule as a refutation of every procedural reason.
+8 October 2026. AI-authored counterreview under the authorized G0/J route and the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). This round tests the additional opportunity commitment proposed for unequal, unresolved basic claims. It does not reopen the ethical starting point or treat lack of a complete distribution rule as a refutation of every procedural reason.
 
 ## 1. The precise new connection
 

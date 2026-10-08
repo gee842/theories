@@ -52,7 +52,7 @@
 - `relational-renewal-classification`（F01）与 `renewing-consuming-formation`（F07）是同一种分类的两层表述，互不相通。
 
 **叙述层**
-- `unified-2026-10-05/` 共 138 章、5 MB。
+- `chapters/` 共 138 章、5 MB。
 - G0／J 前提表在 7 章中重复且不一致；“Universal Metaethical Core” 不出现在任何章节中；阅读目录漏掉 31 章。
 
 **基础设施**
@@ -128,10 +128,10 @@ Lean 中 L1–L4 是包 `Becoming` 的四个模块 `Becoming.Frame`、`Becoming.
 |---|---|---|
 | P0 ✓ | 本线提交 78f1abda；整库检查点 4e7642e1 | 已完成 |
 | P1 脊柱 ✓ | `BecomingFrame`：Frame、Run（含窗口即轨迹）、Reach、不变量、历史、Novel。`BecomingModal`：Scope、sound 策略确保其目标、反单调性。合并检查器 `check_becoming.py` | 已完成（d79d0d9d）：空公理；继承哈希与回执相符 |
-| P2 伦理核心 ✓ | `MetaethicalCore`：S0、N_rel、N_std、A、C、L、J 的具名定义；G0 刻画定理；D 的导出；极小性反模型与“对手即有界规则”；脊柱上的普遍位置理由；提升规则 L。记录 `metaethical-core-characterization`；一页前提卡 | 已完成（d79d0d9d）：[metaethical-core-characterization](../../../../theories/shengsheng-buxi-generative-existence/results/records/metaethical-core-characterization.md) |
+| P2 伦理核心 ✓ | `MetaethicalCore`：S0、N_rel、N_std、A、C、L、J 的具名定义；G0 刻画定理；D 的导出；极小性反模型与“对手即有界规则”；脊柱上的普遍位置理由；提升规则 L。记录 `metaethical-core-characterization`；一页前提卡 | 已完成（d79d0d9d）：[metaethical-core-characterization](../../../../theories/becoming/results/records/metaethical-core-characterization.md) |
 | P2b 评价者路线更正 ✓ | 执行[审查](EVALUATOR-GROUNDING-REVIEW.md) §6 的 15 项更正：论证文档、Lean 说明、记录 `self-good-reachable-g0`（收窄标题与主张）、G0-WARRANT 相关段；P+ 版第二步由 P2 承担 | 已完成（001c5cdd）：记录与审查逐项对应；该模块检查器重跑通过 |
-| P3 实例化 ✓ | 先用脚本对 45 个含多态定理的模块分类，结果存入本研究。再按接口逐一处理：给出脊柱实例；对重建核心组合子者证明等价（`Robust`、`Reached`、`revise`、`Guarantees` 等）；函数式结果用 L 推广。相应记录增加证明绑定，按具名声明升级 `related` 链接 | 已完成：[分类表](BECOMING-INSTANCE-CLASSIFICATION.md)覆盖 45 个模块并逐行机械检查；11 个接口都有具名实例或等价定理（`BecomingInstances`），记录 [becoming-spine-instances](../../../../theories/shengsheng-buxi-generative-existence/results/records/becoming-spine-instances.md)。证明绑定放在新记录上，既有记录按原范围保留不改；新记录以 `related` 连到它们，唯一的 `formal-reuse` 是对 C 与 L 的直接使用 |
-| P3b 更新／消耗统一 ✓ | 由 Run 可观测量构造 `RelationalRenewal` 的展开，`RenewalComparison` 的关系读法成为脊柱上 `generative` 的规范读法；`Depletion`、`ContinuationRenewal` 的储备界作为同一分类的实例 | 已完成：[整合与作者反审](BECOMING-RENEWAL-READING.md)，记录 [becoming-renewal-reading](../../../../theories/shengsheng-buxi-generative-existence/results/records/becoming-renewal-reading.md)。`BecomingRenewal` 为 L3；读法在 `MetaethicalCore` 中由 L4 使用 L3 给出。三条界的统一是组织性的；`ContinuationRenewal` 的良基形式更一般，不由该原则导出 |
+| P3 实例化 ✓ | 先用脚本对 45 个含多态定理的模块分类，结果存入本研究。再按接口逐一处理：给出脊柱实例；对重建核心组合子者证明等价（`Robust`、`Reached`、`revise`、`Guarantees` 等）；函数式结果用 L 推广。相应记录增加证明绑定，按具名声明升级 `related` 链接 | 已完成：[分类表](BECOMING-INSTANCE-CLASSIFICATION.md)覆盖 45 个模块并逐行机械检查；11 个接口都有具名实例或等价定理（`BecomingInstances`），记录 [becoming-spine-instances](../../../../theories/becoming/results/records/becoming-spine-instances.md)。证明绑定放在新记录上，既有记录按原范围保留不改；新记录以 `related` 连到它们，唯一的 `formal-reuse` 是对 C 与 L 的直接使用 |
+| P3b 更新／消耗统一 ✓ | 由 Run 可观测量构造 `RelationalRenewal` 的展开，`RenewalComparison` 的关系读法成为脊柱上 `generative` 的规范读法；`Depletion`、`ContinuationRenewal` 的储备界作为同一分类的实例 | 已完成：[整合与作者反审](BECOMING-RENEWAL-READING.md)，记录 [becoming-renewal-reading](../../../../theories/becoming/results/records/becoming-renewal-reading.md)。`BecomingRenewal` 为 L3；读法在 `MetaethicalCore` 中由 L4 使用 L3 给出。三条界的统一是组织性的；`ContinuationRenewal` 的良基形式更一般，不由该原则导出 |
 | P4 叙述 ✓ | 新正典入口 `THE-THEORY-OF-BECOMING`：Becoming、组织与演化、认识与探究、集体动力学、评价的形成、Universal Metaethical Core、AI 对齐、开放纲领。附术语表与前提卡；旧章作为证据链接，并在新章中标为历史证据；README 首段指向它；补齐阅读目录 | 已完成：正典章节（2bcf314b）。阅读目录补齐 32 个缺项；17 个过期条目先读原文差异再更新字段与版本标记；生成视图（CLAIMS、理论首页）以生成清单为准，记为 `generated-view`，其各行随成果记录检查；Lean 文本目录重新同步。两项目录检查、渲染、`research-check` 与 36 项测试通过 |
 | P4b 工作规则 ✓ | AGENTS.md 增一条：新的形式结果陈述在脊柱上；脊柱表达不了时扩展脊柱，而不是另建模型 | 已完成：规则在 AGENTS.md「Evidence and preservation」首条，链接正典章节 §9 与脊柱目录 |
 | P5a 核心纯净 ✓ | 按 [Ren 的要求](../../../../sources/15-codex-theory-conversations/2026-10-09-pure-core.md)：核心（L0 及其两个基础模块，加 L1–L4）不导入核心以外的模块，公理报告全空，只用 Lean 内置前导即可编译。G0、C、D 与确保的正面根据在核心陈述；桥接层以 `Iff.rfl` 证明既有模块的定义即核心定义；J1/J2 的 `BetterAt` 与 `living_iff_relational` 移到桥接层 | 已完成：检查器每次核对闭包、空公理报告与仅用前导编译；80 项定理／146 项声明审计 |
@@ -177,14 +177,15 @@ Ren 把以下决定交给 AI 执行（“你自己全改了吧”）：
 
 **命名约定。** 模块按所述之事命名，包路径即模块名；声明名稳定，因此记录别名不随模块改名失效；旧名留在历史条目与保留的运行中，不改写证据。
 
-**待 Ren 决定的全库改名。** 下面三个名称不再最贴切，但改动范围大，没有单方面执行：
+**全库改名（2026-10-09 完成）。** Ren 的[后续指示](../../../../sources/15-codex-theory-conversations/2026-10-09-pure-core.md#rens-follow-up-finish-the-renames-then-continue-the-theory)是不删数据、完成其余并提交 main。两个目录据此改名：
 
-| 名称 | 问题 | 可选的新名 | 代价（本次计数） |
-|---|---|---|---|
-| `theories/shengsheng-buxi-generative-existence/` | 来自早先“生成性存在”的表述；理论现名 The Theory of Becoming | `theories/becoming/` | 2,596 个文件引用该路径：记录、目录、生成页面，以及两个未合并的远程分支 |
-| `unified-2026-10-05/` | 带日期的工作目录，现在放着正典章节 | `chapters/` | 2,490 个文件引用 |
-| L0 命名空间 `Generative` | 历史名；其过程是任何变化，包括维持与退化 | `Becoming` | `GenerativeCore` 的字节被 593 张回执哈希；1,426 个 Lean 文件使用该命名空间；改名会使所有继承回执失效，除非重跑全部检查器 |
+| 旧名 | 新名 | 理由 |
+|---|---|---|
+| `theories/shengsheng-buxi-generative-existence/` | `theories/becoming/` | 理论现名 The Theory of Becoming；旧名来自早先“生成性存在”的表述 |
+| `…/unified-2026-10-05/` | `theories/becoming/chapters/` | 正典章节不再是带日期的工作目录 |
 
-建议：Ren 当时说理论名“先叫” The Theory of Becoming。名称确定后，在一次专门的会话中处理前两项：先合并或关闭未合并的分支，再用 `git mv`、脚本改写链接，并留一张新旧路径对照表。第三项保留，代价最高而收益最低；根模块 `Becoming` 的说明已写明它的含义。
+目录用 `git mv` 移动，文件内容不因移动而变。现行文件中的路径按有序替换规则改写，每个改写文件都核对为原字节的纯替换。指令记录只改 Markdown 链接目标，引用 Ren 原话的行不动。证据保留原字节，其中的旧路径按对照表读：导入原件、冻结副本、保留运行、回执、Lean 源码和历史阅读版都属此类。已审哈希只在改动核对为纯替换后沿用，各登记的过期状态与改名前相同。逐文件对照与检查器见[架构记录](../../../architecture/README.md#directory-renames-9-october-2026--目录改名)。
 
-Three rings, with dependence pointing only toward the core; one checker and one receipt per toolchain. Modules are named for what they state; declaration names are stable, so aliases survive module renames. Three repository-wide renames (the theory directory, the dated chapter folder, the L0 namespace `Generative`) are left to Ren's decision because of their measured cost; the recommendation is to do the first two in one dedicated session once the name is settled, and to keep the third.
+L0 命名空间 `Generative` 保留。`GenerativeCore` 的字节被 593 张回执哈希，改名会使这些继承回执全部失效，而收益最小；根模块 `Becoming` 的说明已写明它的含义。
+
+Three rings, with dependence pointing only toward the core; one checker and one receipt per toolchain. Modules are named for what they state; declaration names are stable, so aliases survive module renames. At Ren's request the theory directory became `theories/becoming/` and the dated chapter folder became `chapters/`. Live references were rewritten and verified as pure path substitution, evidence keeps its bytes, and a rename receipt maps every rewritten file. The L0 namespace `Generative` stays, because renaming it would invalidate every inherited receipt.

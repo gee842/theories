@@ -102,8 +102,8 @@ def main():
     assert work_capacity == spent
 
     sources = [
-        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-SPECIFICATION.md",
-        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-CORE.md",
+        "theories/becoming/chapters/FORMAL-SPECIFICATION.md",
+        "theories/becoming/chapters/FORMAL-CORE.md",
         "_process/research/2026-10-05-causal-foundations/outputs/formal-results.md",
         "_process/research/2026-10-04-integrated-evolution/prospective-revision-math.md",
         "_process/research/2026-10-04-integrated-evolution/candidate-discovery-math.md",

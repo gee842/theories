@@ -1,6 +1,6 @@
 # Repair access and revision of the practice that caused the loss
 
-6 October 2026. AI-authored source and assumption review under the [shared nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Named connection: **an affected condition changes the applicability of further acquisition while preserving access to an independently warranted response**. This is the target capacity, not a claim that early service is already available. The starting point is the actual four-pair prefix of the existing six-pair plasticity history. This review changes no event law and runs no scientific check.
+6 October 2026. AI-authored source and assumption review under the [shared nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Named connection: **an affected condition changes the applicability of further acquisition while preserving access to an independently warranted response**. This is the target capacity, not a claim that early service is already available. The starting point is the actual four-pair prefix of the existing six-pair plasticity history. This review changes no event law and runs no scientific check.
 
 ## 1. Fix the reached configuration
 

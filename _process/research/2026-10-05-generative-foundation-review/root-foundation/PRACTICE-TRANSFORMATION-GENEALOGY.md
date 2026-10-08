@@ -1,6 +1,6 @@
 # A practice changes the conditions of its own adequacy
 
-6 October 2026. AI-authored genealogy and constructive comparison under the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). Named connection: **a practice's consequences transform participation and the conditions of appropriate continuation**. This develops an inherited Wang Yangming passage alongside Ren's original feedback proposal. It adds no experiment or independently corroborated historical result.
+6 October 2026. AI-authored genealogy and constructive comparison under the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). Named connection: **a practice's consequences transform participation and the conditions of appropriate continuation**. This develops an inherited Wang Yangming passage alongside Ren's original feedback proposal. It adds no experiment or independently corroborated historical result.
 
 ## 1. Ren's proposal and the inherited development
 

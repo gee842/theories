@@ -1,6 +1,6 @@
 # 共同发展怎样重建回应：来源与操作关系
 
-2026年10月7日。AI 来源评估，接续[上一轮证据](LIANGZHI-EVOLUTION-SOURCES.md)与[Ren 的演化方向](../../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md)。本轮检验：共同发展是否改变实际运行的响应关系，形成后的活动又怎样参与后来再形成。遵循[非二元方法](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md)：照料、发育、调节和后续接触是同一形成史中的相互作用；其分化不预设独立主体和外在环境。本文没有新实验或数学证明。
+2026年10月7日。AI 来源评估，接续[上一轮证据](LIANGZHI-EVOLUTION-SOURCES.md)与[Ren 的演化方向](../../../../sources/15-codex-theory-conversations/2026-10-07-liangzhi-generative-evolution.md)。本轮检验：共同发展是否改变实际运行的响应关系，形成后的活动又怎样参与后来再形成。遵循[非二元方法](../../../../theories/becoming/chapters/NONDUAL-METHOD.md)：照料、发育、调节和后续接触是同一形成史中的相互作用；其分化不预设独立主体和外在环境。本文没有新实验或数学证明。
 
 ## 1. 三项研究各自能提供什么
 

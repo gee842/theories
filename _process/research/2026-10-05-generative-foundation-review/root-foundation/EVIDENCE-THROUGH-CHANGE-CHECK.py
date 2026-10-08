@@ -5,7 +5,7 @@ from datetime import datetime,timezone
 import hashlib,json,re,importlib.util
 from urllib.parse import unquote
 H=Path(__file__).resolve().parent;R=H.parents[3]
-T=R/'theories/shengsheng-buxi-generative-existence/unified-2026-10-05'
+T=R/'theories/becoming/chapters'
 A=R/'experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis'
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 spec=importlib.util.spec_from_file_location('chain',H/'build_generative_chain.py');chain=importlib.util.module_from_spec(spec);spec.loader.exec_module(chain)

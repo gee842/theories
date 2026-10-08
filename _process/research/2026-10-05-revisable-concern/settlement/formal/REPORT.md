@@ -1,6 +1,6 @@
 # A selected process that revises, preserves, acts, and renews
 
-5 October 2026. AI-authored mathematical continuation under Ren's research direction. This report extends the committed [joint-formation construction](../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/JOINT-FORMATION-MATH.md), read at commit `b379528`, and the [scope](../../scope-math.md) and [access](../../access-math.md) models. It is a new conditional construction, not a revision of their historical results.
+5 October 2026. AI-authored mathematical continuation under Ren's research direction. This report extends the committed [joint-formation construction](../../../../../theories/becoming/chapters/JOINT-FORMATION-MATH.md), read at commit `b379528`, and the [scope](../../scope-math.md) and [access](../../access-math.md) models. It is a new conditional construction, not a revision of their historical results.
 
 **Settlement obtained:** within a finite declared language and a specified strategic and commercial environment, one selected process can pay to identify and admit additional applicable case–reason pairs, retain their alternative grounds, retract defeated inferences, turn the surviving reasons into actual protection, and reconstruct this ability through succession. The construction includes cheaper audits, selective protection, strategic suppression, self-insulation, and replacement in the same game. It does not assume that individually successful components will automatically compose.
 

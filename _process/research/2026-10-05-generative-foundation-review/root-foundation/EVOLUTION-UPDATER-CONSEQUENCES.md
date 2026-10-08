@@ -74,7 +74,7 @@ The proposal is **not selected by an omniscient observer**. The construction eve
 
 ## 5. What is reused, what is still supplied
 
-The existing [updater-formation construction](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UPDATER-FORMATION.md) already gives formed constituents, construction costs, resource-dependent turnover and subsequent use of a changed updater. It is a completed result, not a missing generic gate.
+The existing [updater-formation construction](../../../../theories/becoming/chapters/UPDATER-FORMATION.md) already gives formed constituents, construction costs, resource-dependent turnover and subsequent use of a changed updater. It is a completed result, not a missing generic gate.
 
 | Reused explanatory role | Present realization and composition boundary |
 |---|---|

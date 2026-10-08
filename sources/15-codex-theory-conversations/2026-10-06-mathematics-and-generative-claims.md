@@ -20,6 +20,6 @@ This authorizes an investigation of the strongest supportable claims and their l
 
 ## Research connection
 
-The [mathematics study](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICS-AND-GENERATIVITY.md) and its linked proof, foundation and evidence reviews investigate **acquired prediction → reusable abstraction → warranted inference**, within the existing [generative-grounding objective](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md).
+The [mathematics study](../../theories/becoming/chapters/MATHEMATICS-AND-GENERATIVITY.md) and its linked proof, foundation and evidence reviews investigate **acquired prediction → reusable abstraction → warranted inference**, within the existing [generative-grounding objective](../../theories/becoming/chapters/GENERATIVE-GROUNDING.md).
 
 An earlier related statement by Ren is preserved in the [4 May 2026 conversation](../12-claude-ai-chats/2026-05-04_绝对哲学真理的定义_a62c2a92.md). That source remains unchanged.

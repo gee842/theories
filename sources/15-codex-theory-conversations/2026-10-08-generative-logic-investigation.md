@@ -16,7 +16,7 @@ The assistant proposed investigating when actual repeatable support warrants con
 
 This paragraph is an AI-authored scope summary, not an additional Ren quotation. The continuation authorizes that investigation, its Lean verification and repository integration. It does not request a new scheduled task, an independent agent, a universal axiom-free logic result, or changes to separately authorized ethical research.
 
-Current result: [生成条件与逻辑规则](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md). [Research integration and counterreview](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-LOGIC-INTEGRATION.md).
+Current result: [生成条件与逻辑规则](../../theories/becoming/chapters/GENERATED-LOGIC.md). [Research integration and counterreview](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-LOGIC-INTEGRATION.md).
 
 ## 第二次继续 / Second continuation
 

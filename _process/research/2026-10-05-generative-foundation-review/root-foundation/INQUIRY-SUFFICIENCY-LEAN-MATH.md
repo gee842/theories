@@ -4,7 +4,7 @@
 
 ## Preserve the whole relevant continuation
 
-Use the existing generative `Process` interface. A query and a response occur through its actual step relation. Retained possibilities describe configurations of that process, including whatever their subsequent operation depends on. If the question concerns an initial identity, that label must remain attached to the changing configuration; two equal current configurations do not establish equal histories. The [identifying-inquiry study](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-AND-MATHEMATICAL-IDENTITY.md) supplies a concrete reason for this requirement.
+Use the existing generative `Process` interface. A query and a response occur through its actual step relation. Retained possibilities describe configurations of that process, including whatever their subsequent operation depends on. If the question concerns an initial identity, that label must remain attached to the changing configuration; two equal current configurations do not establish equal histories. The [identifying-inquiry study](../../../../theories/becoming/chapters/INQUIRY-AND-MATHEMATICAL-IDENTITY.md) supplies a concrete reason for this requirement.
 
 Fix the represented observation interface, conditions on permitted intermediate steps, and endpoint requirement of the response. These are explicit local contracts, not assertions that all inquiry or ethical significance has this form. In particular, a terminal response is one executable finite action sequence, common to the still-compatible configurations. Every admitted execution of that sequence must preserve the intermediate conditions and end with the declared requirement. The sequence must be executable from every candidate; a dead end is not success by vacuity.
 
@@ -59,7 +59,7 @@ These are constraints on the reconstructed activity and the claim made about it.
 
 ## Relation to the newer criterion-revision implementation
 
-The concurrently developed [inquiry-revision extension](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/INQUIRY-REVISION.md) is already a positive construction of acquired evidence changing an operative encounter requirement. It explicitly adds a formation/read/rewrite law and retains false-positive, wrong-sign and affordability controls. Its own acceptance records govern that result.
+The concurrently developed [inquiry-revision extension](../../../../theories/becoming/chapters/INQUIRY-REVISION.md) is already a positive construction of acquired evidence changing an operative encounter requirement. It explicitly adds a formation/read/rewrite law and retains false-positive, wrong-sign and affordability controls. Its own acceptance records govern that result.
 
 The present theorem does not recreate that mechanism, import its law as a foundational premise, or declare its threshold warranted. It supplies a general criterion against which a proposed revised inquiry can be assessed: retain all its actual successors, require an available common response, and preserve the pertinent intermediate conditions. The particular interpretation, authority and formation or selection of its revision rule still need their own explanation within the common account.
 

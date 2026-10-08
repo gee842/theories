@@ -1,6 +1,6 @@
 # From the event law to joint capability tests
 
-5 October 2026. AI-assisted formal continuation for Ren. This connects the [stochastic realization](STOCHASTIC-REALIZATION.md) to finite-horizon joint tests in the same process. It supplies a real, limited bridge in the [common specification](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/FORMAL-SPECIFICATION.md). It does not introduce a favorable birth–death chain or assume nested capability levels.
+5 October 2026. AI-assisted formal continuation for Ren. This connects the [stochastic realization](STOCHASTIC-REALIZATION.md) to finite-horizon joint tests in the same process. It supplies a real, limited bridge in the [common specification](../../../../theories/becoming/chapters/FORMAL-SPECIFICATION.md). It does not introduce a favorable birth–death chain or assume nested capability levels.
 
 ## 1. The installed process and the assay
 

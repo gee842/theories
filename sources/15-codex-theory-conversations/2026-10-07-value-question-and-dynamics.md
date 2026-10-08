@@ -14,4 +14,4 @@ The assistant takes this to require an explicit distinction between explaining h
 
 This interpretation does not attribute to Ren a completed proof that all value questions are unanswerable, that values are arbitrary, or that an irreducible additional ethical principle is necessary. A constitutive ethical account would still require its own defense. Distinguishing explanatory tasks does not posit separate realities or abandon the project's nondual method.
 
-The [canonical correction](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#describing-dynamics-and-answering-the-value-question) records this boundary. The preceding conditional studies retain their narrower scopes.
+The [canonical correction](../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md#describing-dynamics-and-answering-the-value-question) records this boundary. The preceding conditional studies retain their narrower scopes.

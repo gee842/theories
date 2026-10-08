@@ -1,6 +1,6 @@
 # Generated oxygen conditions and mat development
 
-8 October 2026. AI-authored research integration and author self-review for [The Theory of Evolution](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md). The preceding goal turn answered Ren's completion question but added no research evidence; this continuation supplies primary mechanistic evidence for requirements 2, 3 and 5.
+8 October 2026. AI-authored research integration and author self-review for [The Theory of Evolution](../../../../theories/becoming/chapters/THE-THEORY-OF-EVOLUTION.md). The preceding goal turn answered Ren's completion question but added no research evidence; this continuation supplies primary mechanistic evidence for requirements 2, 3 and 5.
 
 **Result.** Bacterial activity can create the resource gradient that changes subsequent selection. Separate interventions show why access to that gradient and the formation of a persistent mat require different measurements. This gives the generative account a concrete empirical connection while crediting the conventional niche-construction and biofilm explanations that established it. It does not identify the cause of the later dated-assay failure or complete a transferable life-cycle prediction.
 

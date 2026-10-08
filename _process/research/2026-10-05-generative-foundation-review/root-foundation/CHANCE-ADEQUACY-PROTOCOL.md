@@ -1,6 +1,6 @@
 # Chance adequacy through a first common takeover
 
-8 October 2026. AI-authored continuation of Ren's “继续”. Follow the authorized G0/J route and the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). The larger universal-agency inquiry continues; this round does not replace it with a universal probability formula.
+8 October 2026. AI-authored continuation of Ren's “继续”. Follow the authorized G0/J route and the [nondual method](../../../../theories/becoming/chapters/NONDUAL-METHOD.md). The larger universal-agency inquiry continues; this round does not replace it with a universal probability formula.
 
 ## Named connection
 

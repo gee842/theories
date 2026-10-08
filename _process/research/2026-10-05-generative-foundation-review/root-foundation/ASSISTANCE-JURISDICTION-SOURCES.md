@@ -1,6 +1,6 @@
 # Assistance, jurisdiction and the scope of exclusion
 
-6 October 2026. AI-authored primary-source comparison for **genuine patient stakes → practical justification for an unrelated capable actor**. This continues the [elective-concern comparison](ELECTIVE-CONCERN-SOURCES.md) within the [unified-grounding investigation](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md). The issue is whether protected agency can exclude an otherwise relevant benefit from counting in a particular choice. Neither an ethical baseline nor unrestricted personal jurisdiction is assumed. These are two philosophical comparators, not new empirical evidence.
+6 October 2026. AI-authored primary-source comparison for **genuine patient stakes → practical justification for an unrelated capable actor**. This continues the [elective-concern comparison](ELECTIVE-CONCERN-SOURCES.md) within the [unified-grounding investigation](../../../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md). The issue is whether protected agency can exclude an otherwise relevant benefit from counting in a particular choice. Neither an ethical baseline nor unrestricted personal jurisdiction is assumed. These are two philosophical comparators, not new empirical evidence.
 
 ## 1. Adams: an exclusion can affect justification itself
 

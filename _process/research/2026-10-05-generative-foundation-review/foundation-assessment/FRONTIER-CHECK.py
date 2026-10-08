@@ -13,7 +13,7 @@ import urllib.parse
 
 A = Path(__file__).resolve().parent
 R = A.parents[3]
-C = R / 'theories/shengsheng-buxi-generative-existence/unified-2026-10-05'
+C = R / 'theories/becoming/chapters'
 OUT = A / 'FRONTIER-INTEGRATION.json'
 
 

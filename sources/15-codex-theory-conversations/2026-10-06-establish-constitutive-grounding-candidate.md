@@ -18,4 +18,4 @@ The user's instruction authorizes developing and testing that candidate. It is n
 
 ## Research destination
 
-Continue in the existing [unified ethical-grounding account](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md) and [root-foundation study](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md), under the [generative programme](../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md). The accepted conditional foundation and the stronger constitutive/necessity investigation retain separate scopes.
+Continue in the existing [unified ethical-grounding account](../../theories/becoming/chapters/UNIFIED-ETHICAL-GROUNDING.md) and [root-foundation study](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md), under the [generative programme](../../theories/becoming/chapters/GENERATIVE-GROUNDING.md). The accepted conditional foundation and the stronger constitutive/necessity investigation retain separate scopes.
