@@ -17,8 +17,8 @@
     "classification": "Path-based documentary roles; working-source is not a claim of accepted, complete, canonical or checked status. A file containing only #print axioms and no inventoried named declarations is an audit-driver."
   },
   "statistics": {
-    "lean_paths": 5879,
-    "distinct_byte_contents": 1487,
+    "lean_paths": 5880,
+    "distinct_byte_contents": 1488,
     "byte_identical_duplicate_groups": 679,
     "roles": {
       "audit-driver": 14,
@@ -26,16 +26,16 @@
       "historical-draft": 3,
       "imported-archive": 23,
       "saved-copy": 4837,
-      "working-source": 560
+      "working-source": 561
     },
-    "working_named_theorem_lemma_occurrences": 10831,
-    "working_explicit_named_declaration_occurrences": 17934,
+    "working_named_theorem_lemma_occurrences": 10874,
+    "working_explicit_named_declaration_occurrences": 17981,
     "working_groups": {
       "abstraction": 41,
       "concern": 15,
       "core": 141,
       "ethics": 133,
-      "inquiry": 71,
+      "inquiry": 72,
       "learning": 50,
       "other": 26,
       "renewal": 12,
@@ -24393,6 +24393,18 @@
       "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
       "direct_documentation_links_from": [
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/PHASE-PERIOD-SELECTION.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/README.md"
+      ],
+      "proof_status": "not_assessed_by_catalogue"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean",
+      "sha256": "129bcde17d359873ea3189d809fc149fd2004bf440b1b6731c5f14909d61124d",
+      "role": "working-source",
+      "group": "inquiry",
+      "package_readme": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
+      "direct_documentation_links_from": [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/PHASE-PERIOD-ASSUMPTIONS.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/README.md"
       ],
       "proof_status": "not_assessed_by_catalogue"
@@ -74616,6 +74628,309 @@
         "unsafe": []
       },
       "print_axioms_commands": 0
+    },
+    "129bcde17d359873ea3189d809fc149fd2004bf440b1b6731c5f14909d61124d": {
+      "byte_size": 26718,
+      "line_count": 544,
+      "imports": [
+        "PhasePeriodSelection"
+      ],
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "or_cases",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.or_cases",
+          "line": 51
+        },
+        {
+          "kind": "theorem",
+          "name": "and_cases",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.and_cases",
+          "line": 56
+        },
+        {
+          "kind": "theorem",
+          "name": "or_left",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.or_left",
+          "line": 61
+        },
+        {
+          "kind": "theorem",
+          "name": "or_right",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.or_right",
+          "line": 65
+        },
+        {
+          "kind": "theorem",
+          "name": "and_both",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.and_both",
+          "line": 69
+        },
+        {
+          "kind": "theorem",
+          "name": "allOf_intro",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.allOf_intro",
+          "line": 73
+        },
+        {
+          "kind": "theorem",
+          "name": "allOf_witness",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.allOf_witness",
+          "line": 81
+        },
+        {
+          "kind": "theorem",
+          "name": "member_map_inv",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.member_map_inv",
+          "line": 93
+        },
+        {
+          "kind": "theorem",
+          "name": "member_append_inv",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.member_append_inv",
+          "line": 104
+        },
+        {
+          "kind": "theorem",
+          "name": "member_filter_inv",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.member_filter_inv",
+          "line": 116
+        },
+        {
+          "kind": "theorem",
+          "name": "member_filter",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.member_filter",
+          "line": 133
+        },
+        {
+          "kind": "theorem",
+          "name": "member_upto_inv",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.member_upto_inv",
+          "line": 149
+        },
+        {
+          "kind": "theorem",
+          "name": "member_unknownStart",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.member_unknownStart",
+          "line": 160
+        },
+        {
+          "kind": "theorem",
+          "name": "member_unknownStart_inv",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.member_unknownStart_inv",
+          "line": 170
+        },
+        {
+          "kind": "theorem",
+          "name": "knows_step",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.knows_step",
+          "line": 183
+        },
+        {
+          "kind": "theorem",
+          "name": "contact_sub",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.contact_sub",
+          "line": 192
+        },
+        {
+          "kind": "theorem",
+          "name": "advance_sub",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.advance_sub",
+          "line": 199
+        },
+        {
+          "kind": "theorem",
+          "name": "filter_sub",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.filter_sub",
+          "line": 206
+        },
+        {
+          "kind": "theorem",
+          "name": "knows_sub",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.knows_sub",
+          "line": 214
+        },
+        {
+          "kind": "def",
+          "name": "iter",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.iter",
+          "line": 240
+        },
+        {
+          "kind": "def",
+          "name": "Related",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.Related",
+          "line": 246
+        },
+        {
+          "kind": "theorem",
+          "name": "allOf_pairs",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.allOf_pairs",
+          "line": 251
+        },
+        {
+          "kind": "def",
+          "name": "advancePair",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.advancePair",
+          "line": 261
+        },
+        {
+          "kind": "theorem",
+          "name": "advance_fst",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.advance_fst",
+          "line": 265
+        },
+        {
+          "kind": "theorem",
+          "name": "advance_snd",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.advance_snd",
+          "line": 275
+        },
+        {
+          "kind": "theorem",
+          "name": "filter_map_comm",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.filter_map_comm",
+          "line": 285
+        },
+        {
+          "kind": "theorem",
+          "name": "filter_congr",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.filter_congr",
+          "line": 300
+        },
+        {
+          "kind": "theorem",
+          "name": "related_reading",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.related_reading",
+          "line": 316
+        },
+        {
+          "kind": "theorem",
+          "name": "knows_transfer",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.knows_transfer",
+          "line": 325
+        },
+        {
+          "kind": "theorem",
+          "name": "mod_of_lt",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.mod_of_lt",
+          "line": 367
+        },
+        {
+          "kind": "theorem",
+          "name": "modCore_go_step",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.modCore_go_step",
+          "line": 373
+        },
+        {
+          "kind": "theorem",
+          "name": "modCore_go_bound",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.modCore_go_bound",
+          "line": 379
+        },
+        {
+          "kind": "theorem",
+          "name": "modCore_unfold",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.modCore_unfold",
+          "line": 391
+        },
+        {
+          "kind": "theorem",
+          "name": "modCore_small",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.modCore_small",
+          "line": 396
+        },
+        {
+          "kind": "theorem",
+          "name": "modCore_reduce",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.modCore_reduce",
+          "line": 400
+        },
+        {
+          "kind": "theorem",
+          "name": "modCore_is_mod",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.modCore_is_mod",
+          "line": 405
+        },
+        {
+          "kind": "theorem",
+          "name": "add_sub_self",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.add_sub_self",
+          "line": 414
+        },
+        {
+          "kind": "theorem",
+          "name": "add_period_mod",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.add_period_mod",
+          "line": 419
+        },
+        {
+          "kind": "theorem",
+          "name": "add_periods_mod",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.add_periods_mod",
+          "line": 428
+        },
+        {
+          "kind": "theorem",
+          "name": "succ_mod_mod",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.succ_mod_mod",
+          "line": 434
+        },
+        {
+          "kind": "theorem",
+          "name": "iter_mod",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.iter_mod",
+          "line": 449
+        },
+        {
+          "kind": "theorem",
+          "name": "iter_formula",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.iter_formula",
+          "line": 456
+        },
+        {
+          "kind": "theorem",
+          "name": "iter_add",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.iter_add",
+          "line": 462
+        },
+        {
+          "kind": "theorem",
+          "name": "iter_lt",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.iter_lt",
+          "line": 469
+        },
+        {
+          "kind": "def",
+          "name": "walk",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.walk",
+          "line": 477
+        },
+        {
+          "kind": "theorem",
+          "name": "walk_length",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.walk_length",
+          "line": 481
+        },
+        {
+          "kind": "theorem",
+          "name": "bitAt_walk",
+          "qualified_name_hint": "Generative.InquirySufficiency.PhasePeriodUniversal.bitAt_walk",
+          "line": 488
+        }
+      ],
+      "declaration_counts": {
+        "def": 4,
+        "theorem": 43
+      },
+      "textual_markers": {
+        "sorry": [],
+        "admit": [],
+        "axiom": [],
+        "native_decide": [],
+        "unsafe": []
+      },
+      "print_axioms_commands": 47
     },
     "1305fd007701681a426772a6386119a9cb3e41e455aa123462a4973decfb3151": {
       "byte_size": 9140,

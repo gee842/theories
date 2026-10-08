@@ -14,7 +14,7 @@
 
 ## 覆盖范围 / Coverage
 
-本次目录包含 **5,879 个 `.lean` 路径、1,487 份不同字节内容**；其中 679 组包含完全相同的副本。相同字节不是独立证明；不同字节也未必是不同命题。 / The inventory contains **5,879 `.lean` paths and 1,487 distinct byte contents**, including 679 groups of exact copies. Copies are not independent proofs, and changed bytes need not mean changed propositions.
+本次目录包含 **5,880 个 `.lean` 路径、1,488 份不同字节内容**；其中 679 组包含完全相同的副本。相同字节不是独立证明；不同字节也未必是不同命题。 / The inventory contains **5,880 `.lean` paths and 1,488 distinct byte contents**, including 679 groups of exact copies. Copies are not independent proofs, and changed bytes need not mean changed propositions.
 
 | 文件角色 / File role | 路径数 / Paths |
 |---|---:|
@@ -23,9 +23,9 @@
 | 历史草稿 / Historical draft | 3 |
 | 导入原件 / Imported archive | 23 |
 | 构建、验证与冻结副本 / Build, verification and frozen copy | 4,837 |
-| 当前工作源 / Working source | 560 |
+| 当前工作源 / Working source | 561 |
 
-下方当前源与审计入口中，共扫描到 **10,831 个显式 theorem/lemma 声明位置**、17,934 个显式具名声明位置。这是源码导航计数，**不是独立定理、已通过证明或研究贡献的数量**。 / The working-source and audit entries contain **10,831 explicit theorem/lemma occurrences** and 17,934 explicit named declarations. These are source-location counts, **not counts of distinct propositions, passed proofs or research contributions**.
+下方当前源与审计入口中，共扫描到 **10,874 个显式 theorem/lemma 声明位置**、17,981 个显式具名声明位置。这是源码导航计数，**不是独立定理、已通过证明或研究贡献的数量**。 / The working-source and audit entries contain **10,874 explicit theorem/lemma occurrences** and 17,981 explicit named declarations. These are source-location counts, **not counts of distinct propositions, passed proofs or research contributions**.
 
 扫描包括隐藏、被忽略及未跟踪文件；排除 `.git`、`.lake`、`node_modules`、`.venv`、`venv`、`__pycache__` 目录，不追随目录符号链接。历史导入、开发尝试、冻结副本均保存在 JSON 中，不在主表重复。当前源是按文件位置判断的文档角色，不等于已接受或已验证。 / Hidden, ignored and untracked files are included; dependency/cache directories listed above are excluded and directory symlinks are not followed. Archives, attempts and frozen copies remain in JSON without repeating them in the main table. Working-source is a documentary role, not acceptance or verification status.
 
@@ -37,7 +37,7 @@
 |---|---:|
 | [规范根据与生成方向 / Normative grounding and generative direction](#group-ethics) | 133 |
 | [评价的形成与良知 / Valuation development and liangzhi](#group-valuation) | 19 |
-| [可达询问、接触与过程律 / Attainable inquiry, contact and process laws](#group-inquiry) | 71 |
+| [可达询问、接触与过程律 / Attainable inquiry, contact and process laws](#group-inquiry) | 72 |
 | [支持与更新 / Support and renewal](#group-renewal) | 12 |
 | [学习、预测与动力学 / Learning, prediction and dynamics](#group-learning) | 50 |
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](#group-abstraction) | 41 |
@@ -288,6 +288,7 @@
 | [PeriodWindowPruning](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PeriodWindowPruning.lean) · [声明 / Names](lean-declarations/inquiry.md#module-7792c30d5fe3) | 5 | 4 | [研究 / Study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PERIOD-LOWER-BOUND-ARGUMENT.md) · [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md) |
 | [PhaseCycleDerivation](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhaseCycleDerivation.lean) · [声明 / Names](lean-declarations/inquiry.md#module-3fd985dc0b59) | 27 | 25 | [研究 / Study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PHASE-CYCLE-DERIVATION.md) · [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md) |
 | [PhasePeriodSelection](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodSelection.lean) · [声明 / Names](lean-declarations/inquiry.md#module-96e1d00a32d0) | 23 | 13 | [研究 / Study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PHASE-PERIOD-SELECTION.md) · [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md) |
+| [PhasePeriodUniversal](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean) · [声明 / Names](lean-declarations/inquiry.md#module-669a6ea433f9) | 43 | 4 | [研究 / Study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PHASE-PERIOD-ASSUMPTIONS.md) · [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md) |
 | [PhaseRecoveredContact](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhaseRecoveredContact.lean) · [声明 / Names](lean-declarations/inquiry.md#module-b51b3a4c7541) | 23 | 30 | [研究 / Study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PHASE-RECOVERED-CONTACT.md) · [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md) |
 | [PortAlignment](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PortAlignment.lean) · [声明 / Names](lean-declarations/inquiry.md#module-7c982b0727b0) | 9 | 4 | [研究 / Study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-FORMATION-LAW.md) · [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md) |
 | [PortDirectRenewal](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PortDirectRenewal.lean) · [声明 / Names](lean-declarations/inquiry.md#module-073ae3eb42fa) | 9 | 5 | [研究 / Study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DIRECT-PORT-RENEWAL-REVIEW.md) · [包说明 / Package notes](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md) |

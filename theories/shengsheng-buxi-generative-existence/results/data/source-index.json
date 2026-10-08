@@ -4796,6 +4796,18 @@
         "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
       ]
     },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PHASE-PERIOD-ASSUMPTIONS.md": {
+      "title": "Phase-period selection: status of its four premises",
+      "local_links": [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/PHASE-PERIOD-SELECTION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/STARTING-STOCK.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/check_phase_universal.py",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/explore_phase_universal.py",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/phase-universal-verification.json",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+      ]
+    },
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/PHASE-PERIOD-SELECTION.md": {
       "title": "Which period the native activity draws least to use",
       "local_links": [
@@ -7823,6 +7835,7 @@
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMATION-DRAW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/LEAN-CORE-REVIEW.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/PHASE-CYCLE-DERIVATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/PHASE-PERIOD-ASSUMPTIONS.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/PHASE-PERIOD-SELECTION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md",
         "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECEIPT-IDENTIFICATION-INTEGRATION.md",
@@ -7870,6 +7883,7 @@
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/FormedContactCycle.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhaseCycleDerivation.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodSelection.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PortValuation.lean",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md",
         "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/RecoveryQuantum.lean",

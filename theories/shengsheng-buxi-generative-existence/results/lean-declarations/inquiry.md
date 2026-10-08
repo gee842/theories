@@ -3438,6 +3438,74 @@ Imports: `PhaseCycleDerivation`
 
 </details>
 
+<a id="module-669a6ea433f9"></a>
+
+<details>
+<summary>PhasePeriodUniversal.lean — 47 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PHASE-PERIOD-ASSUMPTIONS.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean`
+
+Imports: `PhasePeriodSelection`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [Generative.InquirySufficiency.PhasePeriodUniversal.or_cases](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L51) | 51 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.and_cases](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L56) | 56 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.or_left](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L61) | 61 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.or_right](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L65) | 65 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.and_both](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L69) | 69 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.allOf_intro](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L73) | 73 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.allOf_witness](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L81) | 81 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.member_map_inv](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L93) | 93 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.member_append_inv](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L104) | 104 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.member_filter_inv](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L116) | 116 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.member_filter](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L133) | 133 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.member_upto_inv](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L149) | 149 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.member_unknownStart](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L160) | 160 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.member_unknownStart_inv](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L170) | 170 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.knows_step](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L183) | 183 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.contact_sub](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L192) | 192 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.advance_sub](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L199) | 199 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.filter_sub](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L206) | 206 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.knows_sub](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L214) | 214 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.allOf_pairs](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L251) | 251 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.advance_fst](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L265) | 265 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.advance_snd](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L275) | 275 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.filter_map_comm](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L285) | 285 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.filter_congr](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L300) | 300 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.related_reading](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L316) | 316 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.knows_transfer](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L325) | 325 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.mod_of_lt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L367) | 367 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.modCore_go_step](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L373) | 373 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.modCore_go_bound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L379) | 379 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.modCore_unfold](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L391) | 391 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.modCore_small](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L396) | 396 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.modCore_reduce](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L400) | 400 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.modCore_is_mod](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L405) | 405 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.add_sub_self](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L414) | 414 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.add_period_mod](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L419) | 419 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.add_periods_mod](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L428) | 428 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.succ_mod_mod](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L434) | 434 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.iter_mod](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L449) | 449 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.iter_formula](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L456) | 456 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.iter_add](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L462) | 462 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.iter_lt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L469) | 469 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.walk_length](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L481) | 481 |
+| [Generative.InquirySufficiency.PhasePeriodUniversal.bitAt_walk](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L488) | 488 |
+
+定义与类型 / Definitions and types:
+
+- `def` [Generative.InquirySufficiency.PhasePeriodUniversal.iter](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L240) (L240)
+- `def` [Generative.InquirySufficiency.PhasePeriodUniversal.Related](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L246) (L246)
+- `def` [Generative.InquirySufficiency.PhasePeriodUniversal.advancePair](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L261) (L261)
+- `def` [Generative.InquirySufficiency.PhasePeriodUniversal.walk](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/PhasePeriodUniversal.lean#L477) (L477)
+
+文本中有 47 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 47 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
 <a id="module-b51b3a4c7541"></a>
 
 <details>

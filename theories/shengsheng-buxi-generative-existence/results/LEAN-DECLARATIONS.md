@@ -10,7 +10,7 @@
 |---|---:|---:|
 | [规范根据与生成方向 / Normative grounding and generative direction](lean-declarations/ethics.md) | 133 | 2,238 |
 | [评价的形成与良知 / Valuation development and liangzhi](lean-declarations/valuation.md) | 19 | 202 |
-| [可达询问、接触与过程律 / Attainable inquiry, contact and process laws](lean-declarations/inquiry.md) | 71 | 1,837 |
+| [可达询问、接触与过程律 / Attainable inquiry, contact and process laws](lean-declarations/inquiry.md) | 72 | 1,880 |
 | [支持与更新 / Support and renewal](lean-declarations/renewal.md) | 12 | 309 |
 | [学习、预测与动力学 / Learning, prediction and dynamics](lean-declarations/learning.md) | 50 | 876 |
 | [抽象、适用性与构成 / Abstraction, applicability and constitution](lean-declarations/abstraction.md) | 41 | 858 |
@@ -404,6 +404,7 @@ rg -n 'theorem_name' theories/shengsheng-buxi-generative-existence/results/lean-
 | [PeriodWindowPruning.lean](lean-declarations/inquiry.md#module-7792c30d5fe3) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
 | [PhaseCycleDerivation.lean](lean-declarations/inquiry.md#module-3fd985dc0b59) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
 | [PhasePeriodSelection.lean](lean-declarations/inquiry.md#module-96e1d00a32d0) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
+| [PhasePeriodUniversal.lean](lean-declarations/inquiry.md#module-669a6ea433f9) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
 | [PhaseRecoveredContact.lean](lean-declarations/inquiry.md#module-b51b3a4c7541) | 可达询问、接触与过程律 / Attainable inquiry, contact and process laws |
 | [PlasticityPreparation.lean](lean-declarations/shared.md#module-c527ff17c751) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
 | [PlasticityWitness.lean](lean-declarations/shared.md#module-ac933f076498) | 组织形成到可修正评价 / Organizational formation through revisable evaluation |
