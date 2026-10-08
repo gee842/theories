@@ -160,3 +160,31 @@ Ren 把以下决定交给 AI 执行（“你自己全改了吧”）：
 - **范围。** S0 加 N 不及于不接受边界中立的立场，也不处理使新生命存在的价值。
 - **工具链分裂。** 核心只用前导，在 4.29.1 检查；Mathlib 叶子在 4.30.0-rc2。核心不依赖任何一方的库，因此两个工具链都能编译它。
 - **闭包变动。** 开工前按哈希冻结所用模块闭包；当前只有本会话在写，风险较低。
+
+## 8. 架构与命名 / Architecture and names
+
+按 Ren 的[要求](../../../../sources/15-codex-theory-conversations/2026-10-09-pure-core.md#rens-follow-up-elegance-and-names)，整个代码库在结构与概念上对读者优雅，名称不最能表达所述之事时就改。
+
+**三环，依存只指向核心。**
+
+| 环 | 内容 | 工具链与检查 |
+|---|---|---|
+| 核心 | 基础三模块与包 `Becoming` 的四层 | 只用 Lean 前导；`check_becoming.py` 核对闭包、空公理报告、仅前导编译 |
+| 桥接 | `Becoming.Bridge`：既有 Std 模块的接口即核心概念 | 4.29.1，同一检查器；公理报告为空 |
+| 外围 | 既有模块、Mathlib 叶子及其桥接 `CorrectionInquiry`、Python 实验 | 任意合适的工具；`CorrectionInquiry` 用 4.30.0-rc2 与 Mathlib 检查，核心在那里同样编译 |
+
+每个工具链一个检查器，每个检查器一张回执；外围检查器要求它闭包中的核心模块与核心回执一致。读者入口是[包说明](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/README.md)。
+
+**命名约定。** 模块按所述之事命名，包路径即模块名；声明名稳定，因此记录别名不随模块改名失效；旧名留在历史条目与保留的运行中，不改写证据。
+
+**待 Ren 决定的全库改名。** 下面三个名称不再最贴切，但改动范围大，没有单方面执行：
+
+| 名称 | 问题 | 可选的新名 | 代价（本次计数） |
+|---|---|---|---|
+| `theories/shengsheng-buxi-generative-existence/` | 来自早先“生成性存在”的表述；理论现名 The Theory of Becoming | `theories/becoming/` | 2,596 个文件引用该路径：记录、目录、生成页面，以及两个未合并的远程分支 |
+| `unified-2026-10-05/` | 带日期的工作目录，现在放着正典章节 | `chapters/` | 2,490 个文件引用 |
+| L0 命名空间 `Generative` | 历史名；其过程是任何变化，包括维持与退化 | `Becoming` | `GenerativeCore` 的字节被 593 张回执哈希；1,426 个 Lean 文件使用该命名空间；改名会使所有继承回执失效，除非重跑全部检查器 |
+
+建议：Ren 当时说理论名“先叫” The Theory of Becoming。名称确定后，在一次专门的会话中处理前两项：先合并或关闭未合并的分支，再用 `git mv`、脚本改写链接，并留一张新旧路径对照表。第三项保留，代价最高而收益最低；根模块 `Becoming` 的说明已写明它的含义。
+
+Three rings, with dependence pointing only toward the core; one checker and one receipt per toolchain. Modules are named for what they state; declaration names are stable, so aliases survive module renames. Three repository-wide renames (the theory directory, the dated chapter folder, the L0 namespace `Generative`) are left to Ren's decision because of their measured cost; the recommendation is to do the first two in one dedicated session once the name is settled, and to keep the third.
