@@ -1,0 +1,15 @@
+'ReceiptIdentification.receipt_success_identifies' does not depend on any axioms
+'ReceiptIdentification.compatible_success_iff' does not depend on any axioms
+'ReceiptIdentification.failure_compatible' does not depend on any axioms
+'ReceiptIdentification.compatible_iff_success_matches' does not depend on any axioms
+'ReceiptIdentification.complete_decoder_correct_iff' does not depend on any axioms
+'ReceiptIdentification.available_complete_decoder_recovered' does not depend on any axioms
+'ReceiptIdentification.stable_compatible_iff_successes_match' does not depend on any axioms
+'ReceiptIdentification.all_failure_records_compatible' does not depend on any axioms
+'ReceiptIdentification.all_failure_records_do_not_identify' does not depend on any axioms
+'ReceiptIdentification.opposed_successes_refute_fixed_regime' does not depend on any axioms
+'ReceiptIdentification.partial_decode_sound' does not depend on any axioms
+'ReceiptIdentification.partial_decode_exact' does not depend on any axioms
+'ReceiptIdentification.sound_decoder_abstains_on_failure' does not depend on any axioms
+'ReceiptIdentification.every_sound_answer_is_partial_answer' does not depend on any axioms
+'ReceiptIdentification.sound_complete_decoder_unique' does not depend on any axioms

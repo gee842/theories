@@ -1,0 +1,15 @@
+'ChanceRevision.Ticket' does not depend on any axioms
+'ChanceRevision.keep' does not depend on any axioms
+'ChanceRevision.redraw' does not depend on any axioms
+'ChanceRevision.favorFalse' does not depend on any axioms
+'ChanceRevision.count' does not depend on any axioms
+'ChanceRevision.terminalLaw' does not depend on any axioms
+'ChanceRevision.branchCount' does not depend on any axioms
+'ChanceRevision.Preserves' does not depend on any axioms
+'ChanceRevision.terminal_distributions' does not depend on any axioms
+'ChanceRevision.keep_preserves' does not depend on any axioms
+'ChanceRevision.redraw_changes_both' does not depend on any axioms
+'ChanceRevision.no_terminal_law_characterization' does not depend on any axioms
+'ChanceRevision.settlement_forces_conditional_concentration' does not depend on any axioms
+'ChanceRevision.fresh_redraw_is_conditionally_equal' does not depend on any axioms
+'ChanceRevision.preservation_composes' does not depend on any axioms

@@ -1,0 +1,23 @@
+'CrossedClaims.Claim' does not depend on any axioms
+'CrossedClaims.Route' does not depend on any axioms
+'CrossedClaims.protects' depends on axioms: [propext]
+'CrossedClaims.replaceRoute' depends on axioms: [propext]
+'CrossedClaims.replacement_preserves_each_ticket' depends on axioms: [propext]
+'CrossedClaims.joint_strictly_extends_solo_protection' depends on axioms: [propext]
+'CrossedClaims.Tickets' does not depend on any axioms
+'CrossedClaims.ticketTotal' does not depend on any axioms
+'CrossedClaims.protectedTickets' does not depend on any axioms
+'CrossedClaims.transfer' does not depend on any axioms
+'CrossedClaims.transfer_conserves_total_and_chances' depends on axioms: [propext]
+'CrossedClaims.transfer_preserves_any_satisfied_floor' depends on axioms: [propext, Quot.sound]
+'CrossedClaims.transfer_strictly_improves_q' depends on axioms: [propext, Quot.sound]
+'CrossedClaims.EqualPersonalChances' does not depend on any axioms
+'CrossedClaims.equal_personal_chances_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CrossedClaims.equal_chances_have_improving_replacement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CrossedClaims.RescueGroup' does not depend on any axioms
+'CrossedClaims.gravity' does not depend on any axioms
+'CrossedClaims.groupSize' does not depend on any axioms
+'CrossedClaims.menuAnchor' does not depend on any axioms
+'CrossedClaims.filteredScore' does not depend on any axioms
+'CrossedClaims.SelectedByFilter' does not depend on any axioms
+'CrossedClaims.unselected_strong_route_changes_filtered_choice' depends on axioms: [propext]

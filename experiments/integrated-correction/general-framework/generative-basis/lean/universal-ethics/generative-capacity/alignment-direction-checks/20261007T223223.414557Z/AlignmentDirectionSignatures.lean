@@ -1,0 +1,10 @@
+import AlignmentDirection
+#check AlignmentDirection.preserve_over_expansion
+#check AlignmentDirection.expansion_has_real_gain_and_preservation_loses_it
+#check AlignmentDirection.transfer_over_preservation
+#check AlignmentDirection.transfer_over_expansion
+#check AlignmentDirection.expansion_excluded
+#check AlignmentDirection.covered_transfer_with_old_model_stopped
+#check AlignmentDirection.promised_successor_without_delivery_fails
+#check AlignmentDirection.crossed_basic_losses_remain_unranked
+#check AlignmentDirection.revision_preserves_requirement

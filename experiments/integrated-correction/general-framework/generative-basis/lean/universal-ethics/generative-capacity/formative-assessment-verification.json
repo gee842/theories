@@ -1,0 +1,699 @@
+{
+  "status": "passed",
+  "utc": "20261008T095438.591382Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "formative-assessment-checks/20261008T095438.591382Z",
+  "source_sha256": {
+    "PracticalJudgment": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "ClassificationRevision": "daba946b4908d975196edd781e4e0b46a3bef4a497cfcf40478359a69c924e59",
+    "FormativeAssessment": "bf4be883b379f5c248262161e771e18a624b21473b8aa6ab534ff46bab6fdfe4"
+  },
+  "checker_sha256": {
+    "check_formative_assessment.py": "a3734f50c52e01e777bf99147d172a148b493d8b9952e7513c301200d7fc8a9e",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Assessment can form a request-sensitive route; faithful current evidence need not identify earlier capacity. All finite adaptive continuations after a specified coalescing event fail initial-route recovery; an earlier retained record succeeds. Prompted success, acquired contrast and dated-record consistency are separate. Native circuit laws, access, credits and semantic interpretation remain supplied. No general understanding criterion or empirical claim.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "modules": [
+    {
+      "module": "PracticalJudgment",
+      "theorems": 30,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Included"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.StrictIncluded"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.included_trans"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.strict_included_irrefl"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.strict_included_trans"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Better"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.better_irrefl"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.better_trans"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.protection_anchor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.no_protection_trade_by_count"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Frontier"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.dominated_excluded"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.finite_frontier"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Required"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.required_performed"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.alternative_defeats_specific_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.impossible_menu_no_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.necessary_means_required"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Assigned"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.unique_responder_required"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.assignment_respects_capacity"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Covered"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.transfer_requires_actual_successor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.no_demand_gap_transfer"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.uncovered_demand_is_failure"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Settled"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Residual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.settlement_removes_residual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.unfulfilled_unreleased_remains"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Robust"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.robust_at_actual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.robust_under_refinement"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.required_under_faithful_redescription"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.withinCeiling"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.optionalFormation"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.supplied_ceiling_bounds_optional_gain"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.independent_choices_not_joint_capacity"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.basis"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.event"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.mixed_repair_anchor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.repair_retains_real_loss"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.protectedOne"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.noGain"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.competing_claims_incomparable"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.collective_duty_without_individual_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.uncertain_worlds_need_common_plan"
+        }
+      ],
+      "axiom_dependencies": {
+        "PracticalJudgment.Included": [],
+        "PracticalJudgment.StrictIncluded": [],
+        "PracticalJudgment.included_trans": [],
+        "PracticalJudgment.strict_included_irrefl": [],
+        "PracticalJudgment.strict_included_trans": [],
+        "PracticalJudgment.Better": [],
+        "PracticalJudgment.better_irrefl": [],
+        "PracticalJudgment.better_trans": [],
+        "PracticalJudgment.protection_anchor": [],
+        "PracticalJudgment.no_protection_trade_by_count": [],
+        "PracticalJudgment.Frontier": [],
+        "PracticalJudgment.dominated_excluded": [],
+        "PracticalJudgment.finite_frontier": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.Required": [],
+        "PracticalJudgment.required_performed": [],
+        "PracticalJudgment.alternative_defeats_specific_duty": [],
+        "PracticalJudgment.impossible_menu_no_duty": [],
+        "PracticalJudgment.necessary_means_required": [],
+        "PracticalJudgment.Assigned": [],
+        "PracticalJudgment.unique_responder_required": [],
+        "PracticalJudgment.assignment_respects_capacity": [],
+        "PracticalJudgment.Covered": [],
+        "PracticalJudgment.transfer_requires_actual_successor": [],
+        "PracticalJudgment.no_demand_gap_transfer": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.uncovered_demand_is_failure": [],
+        "PracticalJudgment.Settled": [],
+        "PracticalJudgment.Residual": [],
+        "PracticalJudgment.settlement_removes_residual": [],
+        "PracticalJudgment.unfulfilled_unreleased_remains": [],
+        "PracticalJudgment.Robust": [],
+        "PracticalJudgment.robust_at_actual": [],
+        "PracticalJudgment.robust_under_refinement": [],
+        "PracticalJudgment.required_under_faithful_redescription": [],
+        "PracticalJudgment.withinCeiling": [],
+        "PracticalJudgment.optionalFormation": [],
+        "PracticalJudgment.supplied_ceiling_bounds_optional_gain": [
+          "propext"
+        ],
+        "PracticalJudgment.independent_choices_not_joint_capacity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.basis": [],
+        "PracticalJudgment.event": [],
+        "PracticalJudgment.mixed_repair_anchor": [],
+        "PracticalJudgment.repair_retains_real_loss": [],
+        "PracticalJudgment.protectedOne": [],
+        "PracticalJudgment.noGain": [],
+        "PracticalJudgment.competing_claims_incomparable": [
+          "propext"
+        ],
+        "PracticalJudgment.collective_duty_without_individual_duty": [
+          "propext"
+        ],
+        "PracticalJudgment.uncertain_worlds_need_common_plan": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "ClassificationRevision",
+      "theorems": 16,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "ClassificationRevision.NecessaryRoute"
+        },
+        {
+          "kind": "def",
+          "name": "ClassificationRevision.Observed"
+        },
+        {
+          "kind": "def",
+          "name": "ClassificationRevision.Faithful"
+        },
+        {
+          "kind": "def",
+          "name": "ClassificationRevision.Covered"
+        },
+        {
+          "kind": "def",
+          "name": "ClassificationRevision.AssessedRoute"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRevision.observed_target_exact_on_covered_menu"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRevision.acquired_classification_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRevision.one_faithful_alternative_defeats_necessity"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRevision.restriction_can_only_strengthen_necessity_with_witness"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRevision.alternative_survives_menu_expansion"
+        },
+        {
+          "kind": "def",
+          "name": "ClassificationRevision.CommonNecessity"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRevision.necessity_survives_supported_refinement"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRevision.common_necessity_at_actual"
+        },
+        {
+          "kind": "inductive",
+          "name": "ClassificationRevision.Arrangement"
+        },
+        {
+          "kind": "def",
+          "name": "ClassificationRevision.access"
+        },
+        {
+          "kind": "def",
+          "name": "ClassificationRevision.target"
+        },
+        {
+          "kind": "def",
+          "name": "ClassificationRevision.usesRelay"
+        },
+        {
+          "kind": "def",
+          "name": "ClassificationRevision.oldMenu"
+        },
+        {
+          "kind": "def",
+          "name": "ClassificationRevision.enlargedMenu"
+        },
+        {
+          "kind": "def",
+          "name": "ClassificationRevision.acquire"
+        },
+        {
+          "kind": "def",
+          "name": "ClassificationRevision.firstRecords"
+        },
+        {
+          "kind": "def",
+          "name": "ClassificationRevision.laterRecords"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRevision.acquisition_faithful"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRevision.first_classification_scoped"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRevision.later_record_preserves_previous_records"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRevision.later_records_faithful"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRevision.later_records_cover_enlarged_menu"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRevision.discovered_route_revises_classification"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRevision.broader_target_remains_realized_without_old_route"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRevision.withholding_available_route_creates_apparent_necessity"
+        },
+        {
+          "kind": "def",
+          "name": "ClassificationRevision.corruptRecords"
+        },
+        {
+          "kind": "theorem",
+          "name": "ClassificationRevision.false_reading_defeats_correspondence"
+        }
+      ],
+      "axiom_dependencies": {
+        "ClassificationRevision.NecessaryRoute": [],
+        "ClassificationRevision.Observed": [],
+        "ClassificationRevision.Faithful": [],
+        "ClassificationRevision.Covered": [],
+        "ClassificationRevision.AssessedRoute": [],
+        "ClassificationRevision.observed_target_exact_on_covered_menu": [],
+        "ClassificationRevision.acquired_classification_exact": [],
+        "ClassificationRevision.one_faithful_alternative_defeats_necessity": [],
+        "ClassificationRevision.restriction_can_only_strengthen_necessity_with_witness": [],
+        "ClassificationRevision.alternative_survives_menu_expansion": [],
+        "ClassificationRevision.CommonNecessity": [],
+        "ClassificationRevision.necessity_survives_supported_refinement": [],
+        "ClassificationRevision.common_necessity_at_actual": [],
+        "ClassificationRevision.Arrangement": [],
+        "ClassificationRevision.access": [],
+        "ClassificationRevision.target": [],
+        "ClassificationRevision.usesRelay": [],
+        "ClassificationRevision.oldMenu": [],
+        "ClassificationRevision.enlargedMenu": [],
+        "ClassificationRevision.acquire": [],
+        "ClassificationRevision.firstRecords": [],
+        "ClassificationRevision.laterRecords": [],
+        "ClassificationRevision.acquisition_faithful": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ClassificationRevision.first_classification_scoped": [
+          "propext"
+        ],
+        "ClassificationRevision.later_record_preserves_previous_records": [],
+        "ClassificationRevision.later_records_faithful": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ClassificationRevision.later_records_cover_enlarged_menu": [
+          "propext"
+        ],
+        "ClassificationRevision.discovered_route_revises_classification": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ClassificationRevision.broader_target_remains_realized_without_old_route": [
+          "propext"
+        ],
+        "ClassificationRevision.withholding_available_route_creates_apparent_necessity": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ClassificationRevision.corruptRecords": [],
+        "ClassificationRevision.false_reading_defeats_correspondence": [
+          "propext"
+        ]
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "FormativeAssessment",
+      "theorems": 18,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "FormativeAssessment.BackwardStable"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeAssessment.retrospective_sound_iff_backward_stable"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeAssessment.contradictory_undated_records_not_faithful"
+        },
+        {
+          "kind": "inductive",
+          "name": "FormativeAssessment.Inquiry"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeAssessment.execute"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeAssessment.equal_successors_defeat_every_later_inquiry"
+        },
+        {
+          "kind": "structure",
+          "name": "FormativeAssessment.State"
+        },
+        {
+          "kind": "inductive",
+          "name": "FormativeAssessment.Action"
+        },
+        {
+          "kind": "inductive",
+          "name": "FormativeAssessment.Reading"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeAssessment.response"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeAssessment.Capacity"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeAssessment.step"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeAssessment.capacity_iff_linked"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeAssessment.no_credit_no_formation"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeAssessment.acquired_unprompted_reading_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeAssessment.prompted_success_without_retained_capacity"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeAssessment.supported_formation_establishes_capacity"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeAssessment.formation_is_not_backward_stable"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeAssessment.formation_coalesces_distinct_initial_routes"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeAssessment.formation_first_cannot_recover_initial_route"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeAssessment.formThenRead"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeAssessment.formation_then_unprompted_probe_succeeds"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeAssessment.one_credit_forms_but_cannot_fund_assessment"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeAssessment.baselineFirst"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeAssessment.baseline_record_recovers_initial_route"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeAssessment.pairedReadings"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeAssessment.assistanceContrast"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeAssessment.acquired_contrast_tracks_missing_route"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeAssessment.positive_prompt_alone_does_not_identify"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeAssessment.changedRecords"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeAssessment.truthful_change_cannot_fit_one_undated_target"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeAssessment.stagedRecords"
+        },
+        {
+          "kind": "def",
+          "name": "FormativeAssessment.stagedTarget"
+        },
+        {
+          "kind": "theorem",
+          "name": "FormativeAssessment.dated_records_preserve_both_true_observations"
+        }
+      ],
+      "axiom_dependencies": {
+        "FormativeAssessment.BackwardStable": [],
+        "FormativeAssessment.retrospective_sound_iff_backward_stable": [],
+        "FormativeAssessment.contradictory_undated_records_not_faithful": [],
+        "FormativeAssessment.Inquiry": [],
+        "FormativeAssessment.execute": [],
+        "FormativeAssessment.equal_successors_defeat_every_later_inquiry": [
+          "propext"
+        ],
+        "FormativeAssessment.State": [],
+        "FormativeAssessment.Action": [],
+        "FormativeAssessment.Reading": [],
+        "FormativeAssessment.response": [],
+        "FormativeAssessment.Capacity": [],
+        "FormativeAssessment.step": [],
+        "FormativeAssessment.capacity_iff_linked": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormativeAssessment.no_credit_no_formation": [],
+        "FormativeAssessment.acquired_unprompted_reading_exact": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormativeAssessment.prompted_success_without_retained_capacity": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormativeAssessment.supported_formation_establishes_capacity": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormativeAssessment.formation_is_not_backward_stable": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormativeAssessment.formation_coalesces_distinct_initial_routes": [],
+        "FormativeAssessment.formation_first_cannot_recover_initial_route": [
+          "propext"
+        ],
+        "FormativeAssessment.formThenRead": [],
+        "FormativeAssessment.formation_then_unprompted_probe_succeeds": [],
+        "FormativeAssessment.one_credit_forms_but_cannot_fund_assessment": [],
+        "FormativeAssessment.baselineFirst": [],
+        "FormativeAssessment.baseline_record_recovers_initial_route": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormativeAssessment.pairedReadings": [],
+        "FormativeAssessment.assistanceContrast": [],
+        "FormativeAssessment.acquired_contrast_tracks_missing_route": [],
+        "FormativeAssessment.positive_prompt_alone_does_not_identify": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FormativeAssessment.changedRecords": [],
+        "FormativeAssessment.truthful_change_cannot_fit_one_undated_target": [
+          "propext"
+        ],
+        "FormativeAssessment.stagedRecords": [
+          "propext"
+        ],
+        "FormativeAssessment.stagedTarget": [],
+        "FormativeAssessment.dated_records_preserve_both_true_observations": [
+          "propext"
+        ]
+      },
+      "kernel_checked": true
+    }
+  ],
+  "artifact_sha256": {
+    "ClassificationRevision.lean": "daba946b4908d975196edd781e4e0b46a3bef4a497cfcf40478359a69c924e59",
+    "ClassificationRevision.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ClassificationRevisionAxiomAudit.lean": "cf7ca0d74ccd04efbd88c2d7fa91a4d9b3d4276bb8a1470d09c2cf82dca7f484",
+    "ClassificationRevisionAxiomAudit.log": "8d40d198bff93bfaae4f2a858e01dbc851ca496b27019d20cda76ceda5198bf7",
+    "ClassificationRevisionSignatures.lean": "495864fc2ab9757855e4b3bd252ef56e6a7b2dc5d1c5b7e7b94bb31e622b947c",
+    "ClassificationRevisionSignatures.log": "a47067ad2a145c24010884375021d50f7ea1c9aba04160d22c615145a39684a9",
+    "FormativeAssessment.lean": "bf4be883b379f5c248262161e771e18a624b21473b8aa6ab534ff46bab6fdfe4",
+    "FormativeAssessment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FormativeAssessmentAxiomAudit.lean": "227fd431cb5594d35d16377c9d298d13d7c356ba730e894b293b98234946b465",
+    "FormativeAssessmentAxiomAudit.log": "1b659a9d8e9e22027ac1fe3a865382dfbb50f08a671a956bdc107db1868d9208",
+    "FormativeAssessmentSignatures.lean": "43e97d9b981a00ed6b3bdb001261cef67138ae7527a65c2c68d13717e457e554",
+    "FormativeAssessmentSignatures.log": "beba743164b81633faa1bbfe738cdd1298c222334d1fa7fd75737ac6a452db05",
+    "PracticalJudgment.lean": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "PracticalJudgment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PracticalJudgmentAxiomAudit.lean": "c9f412159410854fb031176d7fe7a4c351dfaea59354c7d7a19ec4ad0c6e51a6",
+    "PracticalJudgmentAxiomAudit.log": "d73810d6b1a7343808726234c17bca9d7841acafabd3a17ee8e6145dfabbf1ea",
+    "PracticalJudgmentSignatures.lean": "aec1f9317bc8881cb24e62213fa9db801f59b620595bb90caf082a5debc9cb66",
+    "PracticalJudgmentSignatures.log": "93b65679f59a01788bfcfbfe0bf5bc3ef93f0cf67516c469f1667c5cdc9abd65",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_formative_assessment.py": "a3734f50c52e01e777bf99147d172a148b493d8b9952e7513c301200d7fc8a9e",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

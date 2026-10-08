@@ -1,0 +1,20 @@
+KitchenTransitions.Feasible (total before after kept lost gained neither : Nat) : Prop
+KitchenTransitions.feasible_loss_iff (total before after lost : Nat) :
+  (∃ kept gained neither, KitchenTransitions.Feasible total before after kept lost gained neither) ↔
+    lost ≤ before ∧ after + lost ≤ total ∧ before ≤ after + lost
+KitchenTransitions.net_change (total before after kept lost gained neither delta : Nat)
+  (h : KitchenTransitions.Feasible total before after kept lost gained neither) (hchange : after = before + delta) :
+  gained = lost + delta
+KitchenTransitions.sampleSize : Nat
+KitchenTransitions.beforeSafe : Nat
+KitchenTransitions.afterSafe : Nat
+KitchenTransitions.Published (kept lost gained neither : Nat) : Prop
+KitchenTransitions.published_loss_iff (lost : Nat) :
+  (∃ kept gained neither, KitchenTransitions.Published kept lost gained neither) ↔ lost ≤ 13
+KitchenTransitions.published_gain_bounds (kept lost gained neither : Nat)
+  (h : KitchenTransitions.Published kept lost gained neither) : 5 ≤ gained ∧ gained ≤ 18
+KitchenTransitions.published_table_determined_by_loss (kept lost gained neither : Nat)
+  (h : KitchenTransitions.Published kept lost gained neither) :
+  kept = 14 - lost ∧ gained = 5 + lost ∧ neither = 13 - lost
+KitchenTransitions.no_losses_realization : KitchenTransitions.Published 14 0 5 13
+KitchenTransitions.losses_realization : KitchenTransitions.Published 1 13 18 0

@@ -1,0 +1,20 @@
+import RiskPriority
+#print axioms RiskPriority.Exposure
+#print axioms RiskPriority.mixture
+#print axioms RiskPriority.equalized
+#print axioms RiskPriority.departure
+#print axioms RiskPriority.total
+#print axioms RiskPriority.quadratic
+#print axioms RiskPriority.magnitude
+#print axioms RiskPriority.corner
+#print axioms RiskPriority.same_support_family
+#print axioms RiskPriority.feasible_departure
+#print axioms RiskPriority.exposure_exchange
+#print axioms RiskPriority.quadratic_departure_identity
+#print axioms RiskPriority.quadratic_prefers_small_departure
+#print axioms RiskPriority.partial_sharing_control
+#print axioms RiskPriority.corner_departure_identity
+#print axioms RiskPriority.corner_prefers_equality
+#print axioms RiskPriority.diagnostic_symmetry
+#print axioms RiskPriority.corner_linear_change_bound
+#print axioms RiskPriority.bounded_exchange_certificate

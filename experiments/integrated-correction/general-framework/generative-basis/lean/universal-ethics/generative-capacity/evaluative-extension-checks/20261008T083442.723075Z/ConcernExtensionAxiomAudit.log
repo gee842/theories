@@ -1,0 +1,9 @@
+'ConcernExtension.extend' does not depend on any axioms
+'ConcernExtension.included_extension_iff' does not depend on any axioms
+'ConcernExtension.strict_extension_transfer_iff' does not depend on any axioms
+'ConcernExtension.retained_old_new_strict' does not depend on any axioms
+'ConcernExtension.crossed_extension_is_incomparable' does not depend on any axioms
+'ConcernExtension.covered_profiles_no_better' does not depend on any axioms
+'ConcernExtension.positive_extension_changes_judgment' does not depend on any axioms
+'ConcernExtension.gain_judgment_transfer_iff' does not depend on any axioms
+'ConcernExtension.new_basic_condition_can_reverse' does not depend on any axioms

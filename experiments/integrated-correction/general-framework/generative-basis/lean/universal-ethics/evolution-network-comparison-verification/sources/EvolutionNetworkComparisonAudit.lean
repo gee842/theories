@@ -1,0 +1,26 @@
+import EvolutionNetworkComparison
+
+#print axioms EvolutionNetworkComparison.Graph
+#print axioms EvolutionNetworkComparison.Network
+#print axioms EvolutionNetworkComparison.encodeGraph
+#print axioms EvolutionNetworkComparison.encode
+#print axioms EvolutionNetworkComparison.decodeGraph
+#print axioms EvolutionNetworkComparison.decode
+#print axioms EvolutionNetworkComparison.decode_encode
+#print axioms EvolutionNetworkComparison.encode_decode
+#print axioms EvolutionNetworkComparison.reaction
+#print axioms EvolutionNetworkComparison.developmentalRun
+#print axioms EvolutionNetworkComparison.sample
+#print axioms EvolutionNetworkComparison.transition
+#print axioms EvolutionNetworkComparison.history
+#print axioms EvolutionNetworkComparison.reaction_correspondence
+#print axioms EvolutionNetworkComparison.development_correspondence
+#print axioms EvolutionNetworkComparison.sample_correspondence
+#print axioms EvolutionNetworkComparison.transition_correspondence
+#print axioms EvolutionNetworkComparison.history_correspondence
+#print axioms EvolutionNetworkComparison.decoded_history_equal
+#print axioms EvolutionNetworkComparison.failure_equal
+#print axioms EvolutionNetworkComparison.readout_equal
+#print axioms EvolutionNetworkComparison.adaptiveOriginal
+#print axioms EvolutionNetworkComparison.adaptiveNetwork
+#print axioms EvolutionNetworkComparison.adaptive_correspondence

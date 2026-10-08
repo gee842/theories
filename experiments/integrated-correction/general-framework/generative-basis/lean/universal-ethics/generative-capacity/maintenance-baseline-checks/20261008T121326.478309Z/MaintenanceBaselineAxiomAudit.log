@@ -1,0 +1,13 @@
+'MaintenanceBaseline.target_transport_with_completion_gives_bound' depends on axioms: [propext, Quot.sound]
+'MaintenanceBaseline.Frame' does not depend on any axioms
+'MaintenanceBaseline.initial' does not depend on any axioms
+'MaintenanceBaseline.demand' does not depend on any axioms
+'MaintenanceBaseline.oldSupport' does not depend on any axioms
+'MaintenanceBaseline.retire' does not depend on any axioms
+'MaintenanceBaseline.enabled' does not depend on any axioms
+'MaintenanceBaseline.deliver' does not depend on any axioms
+'MaintenanceBaseline.deliverThenRetire' does not depend on any axioms
+'MaintenanceBaseline.actualDelivery' does not depend on any axioms
+'MaintenanceBaseline.retirement_can_erase_recomputed_target_without_fulfilling_origin' depends on axioms: [propext]
+'MaintenanceBaseline.actual_extended_delivery_survives_retirement' does not depend on any axioms
+'MaintenanceBaseline.completed_single_delivery_allows_retirement' does not depend on any axioms

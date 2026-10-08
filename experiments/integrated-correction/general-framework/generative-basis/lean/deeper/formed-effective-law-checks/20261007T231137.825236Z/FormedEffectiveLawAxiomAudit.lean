@@ -1,0 +1,19 @@
+import FormedEffectiveLaw
+#print axioms Generative.FormedEffectiveLaw.Summary
+#print axioms Generative.FormedEffectiveLaw.project
+#print axioms Generative.FormedEffectiveLaw.summary_sufficient
+#print axioms Generative.FormedEffectiveLaw.representative
+#print axioms Generative.FormedEffectiveLaw.project_representative
+#print axioms Generative.FormedEffectiveLaw.process
+#print axioms Generative.FormedEffectiveLaw.native_step_projects
+#print axioms Generative.FormedEffectiveLaw.effective_step_iff
+#print axioms Generative.FormedEffectiveLaw.effective_step_single_valued
+#print axioms Generative.FormedEffectiveLaw.effective_step_exists
+#print axioms Generative.FormedEffectiveLaw.native_history_projects
+#print axioms Generative.FormedEffectiveLaw.effective_trace_iff
+#print axioms Generative.FormedEffectiveLaw.every_trace_lifts_from_every_representative
+#print axioms Generative.FormedEffectiveLaw.equal_summaries_preserve_future
+#print axioms Generative.FormedEffectiveLaw.future_questions_preserved
+#print axioms Generative.FormedEffectiveLaw.reward_omitted
+#print axioms Generative.FormedEffectiveLaw.reward_change_has_no_selected_future_effect
+#print axioms Generative.FormedEffectiveLaw.summary_is_not_injective

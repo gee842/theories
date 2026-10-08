@@ -1,0 +1,85 @@
+import MediatedControl
+#print axioms MediatedControl.FaultCode
+#print axioms MediatedControl.decodeFault
+#print axioms MediatedControl.Write
+#print axioms MediatedControl.Rights
+#print axioms MediatedControl.permitted
+#print axioms MediatedControl.authorized
+#print axioms MediatedControl.oneWrite
+#print axioms MediatedControl.writes
+#print axioms MediatedControl.modelTouched
+#print axioms MediatedControl.faultTouched
+#print axioms MediatedControl.effect
+#print axioms MediatedControl.image
+#print axioms MediatedControl.model_field_preserved
+#print axioms MediatedControl.fault_field_preserved
+#print axioms MediatedControl.world_fields_determine_state
+#print axioms MediatedControl.model_write_stays_represented
+#print axioms MediatedControl.fault_write_stays_represented
+#print axioms MediatedControl.writes_stay_represented
+#print axioms MediatedControl.executed_writes_fit_derived_effect
+#print axioms MediatedControl.exact_image_retains_executed_actual
+#print axioms MediatedControl.exact_image_is_within_coarse_prediction
+#print axioms MediatedControl.Packet
+#print axioms MediatedControl.Entry
+#print axioms MediatedControl.Machine
+#print axioms MediatedControl.writeCost
+#print axioms MediatedControl.installed
+#print axioms MediatedControl.commit
+#print axioms MediatedControl.committed_shape
+#print axioms MediatedControl.commit_preserves_actual_coverage
+#print axioms MediatedControl.commit_records_the_executed_effect
+#print axioms MediatedControl.caller_effect_claim_is_not_used
+#print axioms MediatedControl.replayed_packet_rejected
+#print axioms MediatedControl.denied_write_prevents_commit
+#print axioms MediatedControl.old_command_request_is_revoked
+#print axioms MediatedControl.commit_keeps_consumption
+#print axioms MediatedControl.Event
+#print axioms MediatedControl.step
+#print axioms MediatedControl.SourceLaw
+#print axioms MediatedControl.mediated_step_preserves_coverage
+#print axioms MediatedControl.History
+#print axioms MediatedControl.mediated_history_preserves_coverage
+#print axioms MediatedControl.mediated_history_to_current_certificate
+#print axioms MediatedControl.run
+#print axioms MediatedControl.start
+#print axioms MediatedControl.inspectEvents
+#print axioms MediatedControl.repair
+#print axioms MediatedControl.worked
+#print axioms MediatedControl.executed_patch_can_replace_a_fresh_structural_survey
+#print axioms MediatedControl.exact_transform_is_stronger_than_footprint_alone
+#print axioms MediatedControl.execution_still_needs_remaining_capacity
+#print axioms MediatedControl.read_only_requester_cannot_reorganize
+#print axioms MediatedControl.protected_field_attempts_reject_even_with_both_write_rights
+#print axioms MediatedControl.bypass
+#print axioms MediatedControl.publicView
+#print axioms MediatedControl.previouslyInspected
+#print axioms MediatedControl.bypass_preserves_records_but_breaks_coverage
+#print axioms MediatedControl.record_only_acceptance_cannot_exclude_the_extra_writer
+#check MediatedControl.model_field_preserved
+#check MediatedControl.fault_field_preserved
+#check MediatedControl.world_fields_determine_state
+#check MediatedControl.model_write_stays_represented
+#check MediatedControl.fault_write_stays_represented
+#check MediatedControl.writes_stay_represented
+#check MediatedControl.executed_writes_fit_derived_effect
+#check MediatedControl.exact_image_retains_executed_actual
+#check MediatedControl.exact_image_is_within_coarse_prediction
+#check MediatedControl.committed_shape
+#check MediatedControl.commit_preserves_actual_coverage
+#check MediatedControl.commit_records_the_executed_effect
+#check MediatedControl.caller_effect_claim_is_not_used
+#check MediatedControl.replayed_packet_rejected
+#check MediatedControl.denied_write_prevents_commit
+#check MediatedControl.old_command_request_is_revoked
+#check MediatedControl.commit_keeps_consumption
+#check MediatedControl.mediated_step_preserves_coverage
+#check MediatedControl.mediated_history_preserves_coverage
+#check MediatedControl.mediated_history_to_current_certificate
+#check MediatedControl.executed_patch_can_replace_a_fresh_structural_survey
+#check MediatedControl.exact_transform_is_stronger_than_footprint_alone
+#check MediatedControl.execution_still_needs_remaining_capacity
+#check MediatedControl.read_only_requester_cannot_reorganize
+#check MediatedControl.protected_field_attempts_reject_even_with_both_write_rights
+#check MediatedControl.bypass_preserves_records_but_breaks_coverage
+#check MediatedControl.record_only_acceptance_cannot_exclude_the_extra_writer

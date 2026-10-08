@@ -1,0 +1,106 @@
+{
+  "title": "Adaptive Divergence in Experimental Populations of Pseudomonas fluorescens. V. Insight into the Niche Specialist Fuzzy Spreader Compels Revision of the Model Pseudomonas Radiation",
+  "authors": [
+    "Gayle C Ferguson",
+    "Frederic Bertels",
+    "Paul B Rainey"
+  ],
+  "year": 2013,
+  "doi": "10.1534/genetics.113.154948",
+  "pmcid": "PMC3832276",
+  "biostudies_accession": "S-EPMC3832276",
+  "retrieved": "2026-10-08",
+  "files": [
+    {
+      "file": "article.html",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3832276/?pdf=render",
+      "bytes": 301687,
+      "sha256": "50dfbe13b2f025f301983846ff9921a69258447a3ab9e81bddf1efb3c23ac0b1"
+    },
+    {
+      "file": "biostudies.json",
+      "url": "https://www.ebi.ac.uk/biostudies/api/v1/studies/S-EPMC3832276",
+      "bytes": 7181,
+      "sha256": "436f0d608d9479ded51b8e5ce4c95239839dda89ab96a5f3a8f45bd09f9cc498"
+    },
+    {
+      "file": "supp_195_4_1319__index.html",
+      "url": "https://www.ebi.ac.uk/biostudies/files/S-EPMC3832276/supp_195_4_1319__index.html",
+      "bytes": 3255,
+      "sha256": "adefd4d82a3e16b0b52cad16af56bcfda0312242f3770ac000d56c44d85b273b",
+      "biostudies_listed_bytes": 3255,
+      "download_target": "https://ftp.ebi.ac.uk/pub/databases/biostudies/S-EPMC/276/S-EPMC3832276/Files/supp_195_4_1319__index.html"
+    },
+    {
+      "file": "6fb76fb64861d8d1c868a0cece56a181_genetics.113.154948-8.mov",
+      "url": "https://www.ebi.ac.uk/biostudies/files/S-EPMC3832276/6fb76fb64861d8d1c868a0cece56a181_genetics.113.154948-8.mov",
+      "bytes": 3166850,
+      "sha256": "ed730535edefcce58aa7c5bd121665593c552fd967419c579457f35042d634ff",
+      "biostudies_listed_bytes": 3166850,
+      "download_target": "https://ftp.ebi.ac.uk/pub/databases/biostudies/S-EPMC/276/S-EPMC3832276/Files/6fb76fb64861d8d1c868a0cece56a181_genetics.113.154948-8.mov",
+      "supplement_label": "S1",
+      "legend_span_hours": 48,
+      "acquisition_time_mapping_verified": false
+    },
+    {
+      "file": "ab6eea5c688f6ab4eaf4bf48bb8fbb95_genetics.113.154948-12.mov",
+      "url": "https://www.ebi.ac.uk/biostudies/files/S-EPMC3832276/ab6eea5c688f6ab4eaf4bf48bb8fbb95_genetics.113.154948-12.mov",
+      "bytes": 2409975,
+      "sha256": "21c0c4fb0e2f4499ef3654b55edf7c9c5096b3c844a22f9d138a5f408f6f4538",
+      "biostudies_listed_bytes": 2409975,
+      "download_target": "https://ftp.ebi.ac.uk/pub/databases/biostudies/S-EPMC/276/S-EPMC3832276/Files/ab6eea5c688f6ab4eaf4bf48bb8fbb95_genetics.113.154948-12.mov",
+      "supplement_label": "S4",
+      "legend_span_hours": 48,
+      "acquisition_time_mapping_verified": false
+    },
+    {
+      "file": "eaa9186a72f48f810d721a8c31306472_genetics.113.154948-5.mov",
+      "url": "https://www.ebi.ac.uk/biostudies/files/S-EPMC3832276/eaa9186a72f48f810d721a8c31306472_genetics.113.154948-5.mov",
+      "bytes": 918481,
+      "sha256": "4ad27eec211515f7c73b2fd35bc5de06089a28d8cf678245dae25229ebc38d27",
+      "biostudies_listed_bytes": 918481,
+      "download_target": "https://ftp.ebi.ac.uk/pub/databases/biostudies/S-EPMC/276/S-EPMC3832276/Files/eaa9186a72f48f810d721a8c31306472_genetics.113.154948-5.mov",
+      "supplement_label": "S5",
+      "legend_span_hours": 12,
+      "acquisition_time_mapping_verified": false
+    },
+    {
+      "file": "8399d6f43532e501af632b69f481fd06_genetics.113.154948-10.mov",
+      "url": "https://www.ebi.ac.uk/biostudies/files/S-EPMC3832276/8399d6f43532e501af632b69f481fd06_genetics.113.154948-10.mov",
+      "bytes": 6145386,
+      "sha256": "23c5ff31aa6e39df3f533abe02fd590379832906f566efe15ef8a1a4b11efe5f",
+      "biostudies_listed_bytes": 6145386,
+      "download_target": "https://ftp.ebi.ac.uk/pub/databases/biostudies/S-EPMC/276/S-EPMC3832276/Files/8399d6f43532e501af632b69f481fd06_genetics.113.154948-10.mov",
+      "supplement_label": "S6",
+      "legend_span_hours": 48,
+      "acquisition_time_mapping_verified": false
+    }
+  ],
+  "rights": "Copyright Genetics Society of America; no CC license inferred from repository availability. Originals retained unchanged for source provenance.",
+  "checksum_scope": "Local SHA256 records bind preserved bytes. Supplement byte lengths match the primary BioStudies listing; no publisher checksum was provided.",
+  "ambiguities": [
+    "S6 legend names WS and WS-fuzY T443G, while visible tube labels read LSWS and LSWS with a deletion-like delta...478 notation. The exact handwritten notation and genotype assignment remain unresolved; the article identifies fuzY as pflu0478.",
+    "The imaging method permits 5- or 10-minute photographs and Movie Maker compilation. Encoded playback frames are not known acquisition exposures; no event time in biological hours inferred.",
+    "BioStudies ReleaseDate 2013-01-01 and movie creation_time 1970-01-01 are not used as publication or experimental dates.",
+    "Table 4B heading and footnote differ in genotype attribution; no new quantitative analysis uses that subsection."
+  ],
+  "read_scope": [
+    "Imaging and genetic reconstruction methods",
+    "Revision of FS niche preference",
+    "pH growth/flocculation experiments",
+    "fuzY mutation in WS results in compromised mat formation",
+    "Figure 2 and Figure 5 captions",
+    "Supplement index and movies S1/S4/S5/S6"
+  ],
+  "not_retrieved": [
+    "Original photograph sequence and acquisition timestamps",
+    "Biological replicate time courses",
+    "Raw mat strength observations",
+    "Viable descendants linked to each recorded vial",
+    "Supplement movies S2 and S3"
+  ],
+  "retrieval_notes": [
+    "Earlier PMC bin URLs returned HTML browser challenges; those responses are not preserved as media.",
+    "Official BioStudies file API supplied actual MOV files; lengths checked against its metadata."
+  ]
+}

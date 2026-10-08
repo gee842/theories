@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "scope": "Owned proof/source bindings, document links, navigation fragments and bilingual rows; no new scientific rerun.",
+  "new_theorems": 37,
+  "new_declaration_audits": 68,
+  "compared_records": 85680,
+  "local_links_checked": 46,
+  "owned_rows": [
+    "M25",
+    "F30"
+  ],
+  "document_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/FAULT-TOLERANT-CORRECTION-INTEGRATION.md": "d567b8abf23a2dcbf55e3551a71117c1f10181b225f55fa3a9c534249e8660b1",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FAULT-TOLERANT-CORRECTION.md": "87a8fe5fd35b4436d6b3a44603b71ddc4ff6f5ed1868d83c2486265f71bfb4b5",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md": "95e078d80ca993014f3c8277b23f057f2b6ad0f112bba4357594a9d447ecb903",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-CORRECTION-INTEGRATION.md": "05caaaadfca489373df55b2af3596b2be1f4ccde69a8440299257dc16de93e54",
+    "sources/15-codex-theory-conversations/2026-10-08-finish-alignment-fruits.md": "a244f5baf5ddd9e8072b098519294f34615709ee0ebfa389e270028268d4d217"
+  },
+  "proof_receipt_sha256": "ad1340c7f6d4c9708d8c54185db0d86061520450f702df65a22ad7d3ad55967e",
+  "pending_concurrent_review": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/AGGREGATION-CONTEXT-INTEGRATION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CHOICE-AND-GENERATIVE-CONTEXT.md"
+    ],
+    "removed_pages": []
+  },
+  "whole_table_validation_errors": [],
+  "whole_table_matches_renderer": true,
+  "whole_table_certified": false
+}

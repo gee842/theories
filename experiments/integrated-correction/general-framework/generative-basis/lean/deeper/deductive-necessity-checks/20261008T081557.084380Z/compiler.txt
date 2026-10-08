@@ -1,0 +1,7 @@
+'Generative.DeductiveNecessity.Possible' does not depend on any axioms
+'Generative.DeductiveNecessity.Necessary' does not depend on any axioms
+'Generative.DeductiveNecessity.actual_gives_possible' does not depend on any axioms
+'Generative.DeductiveNecessity.return_gives_necessary_possibility' does not depend on any axioms
+'Generative.DeductiveNecessity.uniform_possibility_transfer_iff_return' does not depend on any axioms
+'Generative.DeductiveNecessity.uniform_truth_transfer_iff_single_case' does not depend on any axioms
+'Generative.DeductiveNecessity.one_way_comparison_separates' does not depend on any axioms

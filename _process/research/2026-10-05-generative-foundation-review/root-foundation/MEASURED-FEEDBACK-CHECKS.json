@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "scope": "Current owned evidence/proof/document bindings; completion scope is stated in the separate audit.",
+  "new_theorems": 13,
+  "closure_audits": 147,
+  "replayed_commands": 1794,
+  "independent_regression_fits": 4,
+  "links_checked": 60,
+  "paired_rows": [
+    "C32",
+    "F25"
+  ],
+  "render_matches_current_data": true,
+  "concurrent_source_reviews_pending": [],
+  "new_pages_pending": [
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-INQUIRY-AND-STANDING.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PHILOSOPHICAL-ACCOUNT.md"
+  ],
+  "sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEASURED-FEEDBACK-CORRESPONDENCE.md": "c52c7b93dfe19e63d0520fa82340b87e04d8e41ae7642563bdc2c157de611b25",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-JUDGMENT-EMPIRICAL.md": "2f948ff17e1efdaa8f4be0fe4074598721a91c8c3390bf84ceb1dce26649e7e5",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/THREE-CONNECTIONS-COMPLETION-AUDIT.md": "4720a2e6b1fbcbee9aef94a571fc2d127a0b5e9e4ef2ef982b8392a26d3198d1",
+    "sources/tclab-benchmark/README.md": "831afe3b24b649ad54cb05e51478784a57e3f808839b28c2875a106d4040b5a2",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEASURED-FEEDBACK-REVIEW.md": "bcd0e3a45fd99fd57a76efc3552375437bab4b060789864bb177afb3bffb2fbd",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEASURED-FEEDBACK-CHECK.py": "f07e35bc13414cb2e71f969a3837d9ef7f674f0e2b9ccb8a998c9c16844c8610",
+    "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/tclab-results.json": "1a1d6022ec5d06fb7f18a4fc966277d52a9d1144ccb44e4f69001ebe53ad67d7",
+    "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/tclab-checks.json": "39622230d9d52aaa47eaf30cb9c882516e65f360fa12e1ea5b5c288230df28e4",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/measured-feedback-verification.json": "3596836c76d8f1701b6eff7119c0f2a67014006a55d5526bd9e99844b6d1520a",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/measured-feedback-review/Audit.lean": "a4b77321348483b8b112299d17da54c4281c46df91a78f5422162b7694213769",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/measured-feedback-review/EmbodiedChoiceScales.txt": "ef3ce4a1ba822d3fa3aa132d3f6b0d59984caac6ae03d0a80d0e1e9a6fbcdb3c",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/measured-feedback-review/GenerativeCore.txt": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/measured-feedback-review/MeasuredFeedback.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/measured-feedback-review/RelationsAcrossScales.txt": "7419604162fba6fced2806b83cad7338fd741da9274752caf4846941b814948d",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/measured-feedback-review/SystemsOrganization.txt": "e94da75fc8f1f3ec9a0fe55379f37b31c954776c93cc5a4ddb5e929a04ec458b",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/measured-feedback-review/axioms.txt": "c40fe9260cdc294426b6bac84c2d9b93f7662d36819f6444920dbe5f5cd6539e",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/measured-feedback-review/check_lean_review.py": "8c7c66b95e9cdb737f4b768330daa99f9f37b9cbae29108619884fcda34fd18b",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/measured-feedback-review/check_numerical_review.py": "10c4a5e8da11324e6bacc8b9b97bd11b9e88a53bea403179fd78f9de6f09e6d6",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/measured-feedback-review/numerical-log.txt": "85129ce3867cfb5c0c793dcd612b85812f4d8fcd4c0bd5fa0becd1f156745899",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/measured-feedback-review/numerical-verification.json": "778ac4e8c9f9d69d6443fcfc16455705c251597400e302142e3095971d6f6c23",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/measured-feedback-review/verification.json": "dfc496fdfebcd9d4da77b4b994f4694699fa9d51a90f63e7b433d5a29e8958e9"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "scope": "Publication documents, new navigation links and presence of owned insertions only; not proof revalidation or whole-repository freshness.",
+  "date": "2026-10-08",
+  "local_links": 16,
+  "errors": [],
+  "documents": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-PAPER-POSITIONING.md",
+      "sha256": "38656fc43ab060e29c4e06a8b05eab94eeedbfe3d3759886abd02823febc4695"
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md",
+      "sha256": "4213f875d27570f733133fa793969a7b67d32ce5390137137ebe7e08a58c2c36"
+    }
+  ],
+  "links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-PAPER-POSITIONING.md",
+      "link": "../../../../sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md",
+      "exists": true,
+      "anchor_found": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-PAPER-POSITIONING.md",
+      "link": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "exists": true,
+      "anchor_found": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-PAPER-POSITIONING.md",
+      "link": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md",
+      "exists": true,
+      "anchor_found": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-PAPER-POSITIONING.md",
+      "link": "WISDOM-CONTEXT-INTEGRATION.md",
+      "exists": true,
+      "anchor_found": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-PAPER-POSITIONING.md",
+      "link": "PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "exists": true,
+      "anchor_found": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-PAPER-POSITIONING.md",
+      "link": "CHANCE-REVISION-INTEGRATION.md",
+      "exists": true,
+      "anchor_found": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-PAPER-POSITIONING.md",
+      "link": "WISDOM-CONTEXT-SOURCES.md",
+      "exists": true,
+      "anchor_found": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-PAPER-POSITIONING.md",
+      "link": "CHANCE-REVISION-INTEGRATION.md",
+      "exists": true,
+      "anchor_found": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-PAPER-POSITIONING.md",
+      "link": "WISDOM-CONTEXT-SOURCES.md",
+      "exists": true,
+      "anchor_found": true
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md",
+      "link": "2026-10-08-math-core-and-historical-wisdom.md",
+      "exists": true,
+      "anchor_found": true
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md",
+      "link": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-PAPER-POSITIONING.md",
+      "exists": true,
+      "anchor_found": true
+    },
+    {
+      "from": "RESEARCH.md",
+      "link": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-PAPER-POSITIONING.md",
+      "exists": true,
+      "anchor_found": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "link": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-PAPER-POSITIONING.md",
+      "exists": true,
+      "anchor_found": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "link": "WISDOM-PAPER-POSITIONING.md",
+      "exists": true,
+      "anchor_found": true
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "link": "15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md",
+      "exists": true,
+      "anchor_found": true
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "link": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-PAPER-POSITIONING.md#5-最接近的文献与新颖性边界--primary-source-comparison",
+      "exists": true,
+      "anchor_found": true
+    }
+  ],
+  "passed": true
+}

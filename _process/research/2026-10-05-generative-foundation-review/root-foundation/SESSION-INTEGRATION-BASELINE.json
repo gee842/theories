@@ -1,0 +1,37 @@
+{
+  "captured_at_utc": "2026-10-08T12:03:32.128466+00:00",
+  "statistics": {
+    "lean_paths": 1715,
+    "distinct_byte_contents": 545,
+    "byte_identical_duplicate_groups": 230,
+    "roles": {
+      "audit-driver": 12,
+      "development-attempt": 420,
+      "historical-draft": 3,
+      "imported-archive": 23,
+      "saved-copy": 960,
+      "working-source": 297
+    },
+    "working_named_theorem_lemma_occurrences": 6031,
+    "working_explicit_named_declaration_occurrences": 9808,
+    "working_groups": {
+      "abstraction": 41,
+      "concern": 15,
+      "core": 50,
+      "ethics": 24,
+      "inquiry": 48,
+      "learning": 32,
+      "other": 1,
+      "renewal": 12,
+      "shared": 67,
+      "valuation": 19
+    }
+  },
+  "output_sha256": {
+    "theories/shengsheng-buxi-generative-existence/results/data/lean-index.json": "7ab4a6b4116e1e078cab26b5c652e7cf46eb9f822eb8ff7bb228317ade3e73a6",
+    "theories/shengsheng-buxi-generative-existence/results/data/source-index.json": "8bc3b3168d3d2b8052c323c54661c29991a38aefc0b3c1b35909caf028b1c105",
+    "theories/shengsheng-buxi-generative-existence/results/LEAN-INDEX.md": "d60e4200e523f2efb12f1006c1e5b30db28dbe025fb4d3a3f036c286401844b1",
+    "theories/shengsheng-buxi-generative-existence/results/README.md": "a0309dcf52dd3c124df09b9d7aa4523da2cc19fdbbb12c6d2f5a3ecd536979b9"
+  },
+  "validation": "Documentary pre-refresh baseline; not proof validation."
+}

@@ -1,0 +1,896 @@
+{
+  "archive_path": "Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+  "file_bytes": 2917624032,
+  "ranges": [
+    {
+      "file": "000000000000-00000544-file-header.bin",
+      "offset": 0,
+      "bytes": 544,
+      "sha256": "8da9e74c7aba71013572f1a3851aab5e0846f384af0ee1ee81e0cf7481cc1011",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=0-543",
+        "Accept-Encoding": "identity"
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:28:52 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "544",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 0-543/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000000278400-00000032-ZISRAWMETADATA-header.bin",
+      "offset": 278400,
+      "bytes": 32,
+      "sha256": "f301a003411d72b6fd6b443f9bd00c0a9a1d8c9c739fce564c5cfcc56ceb9492",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=278400-278431",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:28:54 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "32",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 278400-278431/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000000278432-00187402-ZISRAWMETADATA-body.bin",
+      "offset": 278432,
+      "bytes": 187402,
+      "sha256": "b18175688566a5f8d809a9f74ffece543848b57ca25d6f451bd858a43ae8f76b",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=278432-465833",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:28:56 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "187402",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 278432-465833/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000000000544-00000032-ZISRAWDIRECTORY-header.bin",
+      "offset": 544,
+      "bytes": 32,
+      "sha256": "b5a6d1297948db5cc57eedacaef67b35a40b7d5799240cdbf570bb1b84e136de",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=544-575",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:28:58 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "32",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 544-575/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000000000576-00036608-ZISRAWDIRECTORY-body.bin",
+      "offset": 576,
+      "bytes": 36608,
+      "sha256": "1e8f277611c34a8dbcb323f024fbc058673f3397bc474fdfd8bed23a3ff15f59",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=576-37183",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:00 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "36608",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 576-37183/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000000168320-00000032-ZISRAWATTDIR-header.bin",
+      "offset": 168320,
+      "bytes": 32,
+      "sha256": "1c888c9c263aa7c8f3816261d059095e227c4a82179165f4d9d4e3aeee66b30a",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=168320-168351",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:02 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "32",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 168320-168351/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000000168352-00000650-ZISRAWATTDIR-body.bin",
+      "offset": 168352,
+      "bytes": 650,
+      "sha256": "17e17851361f87f0b24a39f3334fd1b8c4137b8d71fb69b8320a03b227ae01fd",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=168352-169001",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:03 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "650",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 168352-169001/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "002917618432-00000032-ZISRAWATTACH-header.bin",
+      "offset": 2917618432,
+      "bytes": 32,
+      "sha256": "56b31020e93700e3b747d211dbb8dffe13ef18e1efc123ff48914af2698a8d9b",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=2917618432-2917618463",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:05 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "32",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 2917618432-2917618463/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "002917618464-00000424-ZISRAWATTACH-body.bin",
+      "offset": 2917618464,
+      "bytes": 424,
+      "sha256": "1e8ea04a2ebb698bae341b82473ac3a95de1c9a5a36d0a5f498a9d569eac3ea8",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=2917618464-2917618887",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:07 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "424",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 2917618464-2917618887/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000000646560-00004096-subblock-prefix.bin",
+      "offset": 646560,
+      "bytes": 4096,
+      "sha256": "9ecf609dc7495dda648d918b4c29b43e188852bad6cfeb8d70279772778517a7",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=646560-650655",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:44 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 646560-650655/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "002771769504-00004096-subblock-prefix.bin",
+      "offset": 2771769504,
+      "bytes": 4096,
+      "sha256": "39da647427cfbf61eb1c9b622227a4a291a7cdd8785e968e5f6f51f062152af1",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=2771769504-2771773599",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:45 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 2771769504-2771773599/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000012800608-00004096-subblock-prefix.bin",
+      "offset": 12800608,
+      "bytes": 4096,
+      "sha256": "a3de9ef0b94c6ec3461d2f04dc27830081da8a88dabf02ff287dbd80f64e1b13",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=12800608-12804703",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:47 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 12800608-12804703/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "002783923552-00004096-subblock-prefix.bin",
+      "offset": 2783923552,
+      "bytes": 4096,
+      "sha256": "fce81cd6f82ef981e336d3035f18c5fba2232ad09e65466b1366f7181cad6214",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=2783923552-2783927647",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:49 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 2783923552-2783927647/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000024954656-00004096-subblock-prefix.bin",
+      "offset": 24954656,
+      "bytes": 4096,
+      "sha256": "eb0168a7ca186ecf5689223560bd3c685e1654fc12bafb26d4c1f28af4cbcc49",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=24954656-24958751",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:51 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 24954656-24958751/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "002796077600-00004096-subblock-prefix.bin",
+      "offset": 2796077600,
+      "bytes": 4096,
+      "sha256": "726af5f8d85ea07d6606e4efeacfbc85e544acfe959cffb0560acfdc959dcdd6",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=2796077600-2796081695",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:52 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 2796077600-2796081695/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000037108704-00004096-subblock-prefix.bin",
+      "offset": 37108704,
+      "bytes": 4096,
+      "sha256": "c3818144d3cb8ebff086708abd02e6663e1cbb14adb2ced7e1576490cd2ae4b1",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=37108704-37112799",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:54 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 37108704-37112799/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "002808231648-00004096-subblock-prefix.bin",
+      "offset": 2808231648,
+      "bytes": 4096,
+      "sha256": "64787a690e731965d3f57f4234450855702da81df6b539ba9161e7565013dbaa",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=2808231648-2808235743",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:56 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 2808231648-2808235743/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000049262752-00004096-subblock-prefix.bin",
+      "offset": 49262752,
+      "bytes": 4096,
+      "sha256": "4b7b9dbd644cede9918d6e29a4022b5c4dde1bca99015fbe3c35c5e47581bb5b",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=49262752-49266847",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:58 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 49262752-49266847/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "002820385696-00004096-subblock-prefix.bin",
+      "offset": 2820385696,
+      "bytes": 4096,
+      "sha256": "6a85558e4da315871cfe90f16754e4075da806c18eac989f18c0b056ca190d0c",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=2820385696-2820389791",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:59 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 2820385696-2820389791/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000061416800-00004096-subblock-prefix.bin",
+      "offset": 61416800,
+      "bytes": 4096,
+      "sha256": "72913ff61d7adec7738d8327b502e008eb8354fc47976e594591289e9e7913f9",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=61416800-61420895",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:30:01 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 61416800-61420895/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "002832539744-00004096-subblock-prefix.bin",
+      "offset": 2832539744,
+      "bytes": 4096,
+      "sha256": "022c0368a80640ba575f2118d13e401e0efa870ba1a39ebb16842a5c8e11b9d6",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=2832539744-2832543839",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:30:03 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 2832539744-2832543839/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000073570848-00004096-subblock-prefix.bin",
+      "offset": 73570848,
+      "bytes": 4096,
+      "sha256": "90818fa6964092590649e7d174555aa21fc924197221de68a0213b6eccbdd128",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=73570848-73574943",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:30:05 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 73570848-73574943/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "002844693792-00004096-subblock-prefix.bin",
+      "offset": 2844693792,
+      "bytes": 4096,
+      "sha256": "7382f3479321fec3d28745f00622e4e5f1b251da831a831c5b6abec7dcdeb16e",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=2844693792-2844697887",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:30:07 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 2844693792-2844697887/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000085724896-00004096-subblock-prefix.bin",
+      "offset": 85724896,
+      "bytes": 4096,
+      "sha256": "acd71c2ac28868165e38e92947c6f60dec5802c39f1ef125bec33d036ee6840b",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=85724896-85728991",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:30:09 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 85724896-85728991/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "002856847840-00004096-subblock-prefix.bin",
+      "offset": 2856847840,
+      "bytes": 4096,
+      "sha256": "bd82a1d3c6feb85857ae1ca206f3b8497edf40ce75ce92bd96efdd79d1325f31",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=2856847840-2856851935",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:30:10 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 2856847840-2856851935/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000097878944-00004096-subblock-prefix.bin",
+      "offset": 97878944,
+      "bytes": 4096,
+      "sha256": "f340a1693fe4e01b63abfa3f36db6c176e578aca9c29def34c7e021dbe2f0582",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=97878944-97883039",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:30:12 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 97878944-97883039/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "002869001888-00004096-subblock-prefix.bin",
+      "offset": 2869001888,
+      "bytes": 4096,
+      "sha256": "f46678404abc9da034635388fb5c24172172982b26634edf7a30ffec6c16b843",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=2869001888-2869005983",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:30:14 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 2869001888-2869005983/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000110032992-00004096-subblock-prefix.bin",
+      "offset": 110032992,
+      "bytes": 4096,
+      "sha256": "b1614e03a1a7f9f8b821e497df4e9a37395f4601bc2e04cde59b43c87b7d7ac3",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=110032992-110037087",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:30:15 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 110032992-110037087/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "002881155936-00004096-subblock-prefix.bin",
+      "offset": 2881155936,
+      "bytes": 4096,
+      "sha256": "4bc558ae3be6737ecca02222552d84761b903cc7bbee5b285399ea383a92e9b2",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=2881155936-2881160031",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:30:17 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 2881155936-2881160031/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000122187040-00004096-subblock-prefix.bin",
+      "offset": 122187040,
+      "bytes": 4096,
+      "sha256": "ee537ce2c48cfaebcb7b01f5aa2828809124259be7c86a6ac5da1f14cdb1d0b0",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=122187040-122191135",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:30:19 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 122187040-122191135/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "002893309984-00004096-subblock-prefix.bin",
+      "offset": 2893309984,
+      "bytes": 4096,
+      "sha256": "7f0ee78b7c0752e2e852ff3b943e6b2e6d1abd38461accb274b8a80d2324c54f",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=2893309984-2893314079",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:30:20 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 2893309984-2893314079/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000134341088-00004096-subblock-prefix.bin",
+      "offset": 134341088,
+      "bytes": 4096,
+      "sha256": "39990582aea4901619f1805a16ac39b19d3364cfedf2050e612ee49be4452327",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=134341088-134345183",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:30:22 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 134341088-134345183/2917624032",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "002905464032-00004096-subblock-prefix.bin",
+      "offset": 2905464032,
+      "bytes": 4096,
+      "sha256": "cef53b599705b66b59e26826d044d98b11eb646c80e1f562fbd565d17ebaca56",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20241014-WSSM-rescue/fromt7h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=2905464032-2905468127",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"ade768e0-64bd9990cc000\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:30:24 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:03:28 GMT",
+        "ETag": "\"ade768e0-64bd9990cc000\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 2905464032-2905468127/2917624032",
+        "Connection": "close"
+      }
+    }
+  ]
+}

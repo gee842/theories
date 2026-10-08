@@ -1,0 +1,361 @@
+GoalFormationRevision.lean:63:24: error: Expected type must not contain free variables
+  gains c Practice.attendance 1
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+GoalFormationRevision.lean:59:66: warning: This simp argument is unused:
+  retain
+
+Hint: Omit it from the simp argument list.
+  simp [protects, perform, harm,̵ ̵r̵e̵t̵a̵i̵n̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+GoalFormationRevision.lean:60:60: warning: This simp argument is unused:
+  harm
+
+Hint: Omit it from the simp argument list.
+  simp [protects, perform, h̵a̵rm̵,̵ ̵r̵etain]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+GoalFormationRevision.lean:218:66: error: unexpected identifier; expected '}'
+GoalFormationRevision.lean:265:4: error: Tactic `split` failed: Could not split an `if` or `match` expression in the type
+  (do
+      let b ← some x
+      if feedback r p = 2 ∧ 2 ≤ b.reserve then pure { work := b.work + 2, reserve := b.reserve - 2, spent := b.spent }
+        else pure b) =
+    some b
+of `h`
+
+Hint: Use `set_option trace.split.failure true` to display additional diagnostic information
+
+case some
+r : Selection
+p : Practice
+a b x : Account
+hc : charge 2 a = some x
+h :
+  (do
+      let b ← some x
+      if feedback r p = 2 ∧ 2 ≤ b.reserve then pure { work := b.work + 2, reserve := b.reserve - 2, spent := b.spent }
+        else pure b) =
+    some b
+⊢ total b = total a
+GoalFormationRevision.lean:264:19: warning: This simp argument is unused:
+  Option.bind_some
+
+Hint: Omit it from the simp argument list.
+  simp only [hc,̵ ̵O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵s̵o̵m̵e̵] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+GoalFormationRevision.lean:286:79: error: unexpected identifier; expected '}'
+GoalFormationRevision.lean:296:2: error: No goals to be solved
+GoalFormationRevision.lean:308:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  cycles Selection.learning Practice.learning n { work := w, reserve := q - 2, spent := z + 2 }
+in the target expression
+  (do
+      let b ← some { work := w, reserve := q - 2, spent := z + 2 }
+      cycles Selection.learning Practice.learning n b) =
+    some { work := w, reserve := q - 2 * (n + 1), spent := z + 2 * (n + 1) }
+
+case succ
+w : Nat
+hw : 2 ≤ w
+n : Nat
+ih :
+  ∀ (q z : Nat),
+    2 * n ≤ q →
+      cycles Selection.learning Practice.learning n { work := w, reserve := q, spent := z } =
+        some { work := w, reserve := q - 2 * n, spent := z + 2 * n }
+q z : Nat
+hq : 2 * (n + 1) ≤ q
+hq2 : 2 ≤ q
+hn : 2 * n ≤ q - 2
+⊢ (do
+      let b ← some { work := w, reserve := q - 2, spent := z + 2 }
+      cycles Selection.learning Practice.learning n b) =
+    some { work := w, reserve := q - 2 * (n + 1), spent := z + 2 * (n + 1) }
+GoalFormationRevision.lean:307:53: warning: This simp argument is unused:
+  Option.bind_some
+
+Hint: Omit it from the simp argument list.
+  simp only [cycles, supported_cycle w q z hw hq2,̵ ̵O̵p̵t̵i̵o̵n̵.̵b̵i̵n̵d̵_̵s̵o̵m̵e̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+GoalFormationRevision.lean:335:68: error: Tactic `decide` proved that the proposition
+  Option.map State.ground
+      (acquire { accessLoss := false, transitionLoss := false, reversed := false } Selection.attendance) =
+    some
+      (some
+        { formation := Selection.attendance,
+          accessLoss := { accessLoss := false, transitionLoss := false, reversed := false }.accessLoss,
+          transitionLoss := { accessLoss := false, transitionLoss := false, reversed := false }.transitionLoss })
+is false
+GoalFormationRevision.lean:335:68: error: Tactic `decide` proved that the proposition
+  Option.map State.ground
+      (acquire { accessLoss := false, transitionLoss := false, reversed := false } Selection.learning) =
+    some
+      (some
+        { formation := Selection.learning,
+          accessLoss := { accessLoss := false, transitionLoss := false, reversed := false }.accessLoss,
+          transitionLoss := { accessLoss := false, transitionLoss := false, reversed := false }.transitionLoss })
+is false
+GoalFormationRevision.lean:335:68: error: Tactic `decide` proved that the proposition
+  Option.map State.ground
+      (acquire { accessLoss := false, transitionLoss := false, reversed := true } Selection.attendance) =
+    some
+      (some
+        { formation := Selection.attendance,
+          accessLoss := { accessLoss := false, transitionLoss := false, reversed := true }.accessLoss,
+          transitionLoss := { accessLoss := false, transitionLoss := false, reversed := true }.transitionLoss })
+is false
+GoalFormationRevision.lean:335:68: error: Tactic `decide` proved that the proposition
+  Option.map State.ground
+      (acquire { accessLoss := false, transitionLoss := false, reversed := true } Selection.learning) =
+    some
+      (some
+        { formation := Selection.learning,
+          accessLoss := { accessLoss := false, transitionLoss := false, reversed := true }.accessLoss,
+          transitionLoss := { accessLoss := false, transitionLoss := false, reversed := true }.transitionLoss })
+is false
+GoalFormationRevision.lean:335:68: error: Tactic `decide` proved that the proposition
+  Option.map State.ground
+      (acquire { accessLoss := false, transitionLoss := true, reversed := false } Selection.attendance) =
+    some
+      (some
+        { formation := Selection.attendance,
+          accessLoss := { accessLoss := false, transitionLoss := true, reversed := false }.accessLoss,
+          transitionLoss := { accessLoss := false, transitionLoss := true, reversed := false }.transitionLoss })
+is false
+GoalFormationRevision.lean:335:68: error: Tactic `decide` proved that the proposition
+  Option.map State.ground
+      (acquire { accessLoss := false, transitionLoss := true, reversed := false } Selection.learning) =
+    some
+      (some
+        { formation := Selection.learning,
+          accessLoss := { accessLoss := false, transitionLoss := true, reversed := false }.accessLoss,
+          transitionLoss := { accessLoss := false, transitionLoss := true, reversed := false }.transitionLoss })
+is false
+GoalFormationRevision.lean:335:68: error: Tactic `decide` proved that the proposition
+  Option.map State.ground
+      (acquire { accessLoss := false, transitionLoss := true, reversed := true } Selection.attendance) =
+    some
+      (some
+        { formation := Selection.attendance,
+          accessLoss := { accessLoss := false, transitionLoss := true, reversed := true }.accessLoss,
+          transitionLoss := { accessLoss := false, transitionLoss := true, reversed := true }.transitionLoss })
+is false
+GoalFormationRevision.lean:335:68: error: Tactic `decide` proved that the proposition
+  Option.map State.ground
+      (acquire { accessLoss := false, transitionLoss := true, reversed := true } Selection.learning) =
+    some
+      (some
+        { formation := Selection.learning,
+          accessLoss := { accessLoss := false, transitionLoss := true, reversed := true }.accessLoss,
+          transitionLoss := { accessLoss := false, transitionLoss := true, reversed := true }.transitionLoss })
+is false
+GoalFormationRevision.lean:335:68: error: Tactic `decide` proved that the proposition
+  Option.map State.ground
+      (acquire { accessLoss := true, transitionLoss := false, reversed := false } Selection.attendance) =
+    some
+      (some
+        { formation := Selection.attendance,
+          accessLoss := { accessLoss := true, transitionLoss := false, reversed := false }.accessLoss,
+          transitionLoss := { accessLoss := true, transitionLoss := false, reversed := false }.transitionLoss })
+is false
+GoalFormationRevision.lean:335:68: error: Tactic `decide` proved that the proposition
+  Option.map State.ground
+      (acquire { accessLoss := true, transitionLoss := false, reversed := false } Selection.learning) =
+    some
+      (some
+        { formation := Selection.learning,
+          accessLoss := { accessLoss := true, transitionLoss := false, reversed := false }.accessLoss,
+          transitionLoss := { accessLoss := true, transitionLoss := false, reversed := false }.transitionLoss })
+is false
+GoalFormationRevision.lean:335:68: error: Tactic `decide` proved that the proposition
+  Option.map State.ground
+      (acquire { accessLoss := true, transitionLoss := false, reversed := true } Selection.attendance) =
+    some
+      (some
+        { formation := Selection.attendance,
+          accessLoss := { accessLoss := true, transitionLoss := false, reversed := true }.accessLoss,
+          transitionLoss := { accessLoss := true, transitionLoss := false, reversed := true }.transitionLoss })
+is false
+GoalFormationRevision.lean:335:68: error: Tactic `decide` proved that the proposition
+  Option.map State.ground
+      (acquire { accessLoss := true, transitionLoss := false, reversed := true } Selection.learning) =
+    some
+      (some
+        { formation := Selection.learning,
+          accessLoss := { accessLoss := true, transitionLoss := false, reversed := true }.accessLoss,
+          transitionLoss := { accessLoss := true, transitionLoss := false, reversed := true }.transitionLoss })
+is false
+GoalFormationRevision.lean:335:68: error: Tactic `decide` proved that the proposition
+  Option.map State.ground
+      (acquire { accessLoss := true, transitionLoss := true, reversed := false } Selection.attendance) =
+    some
+      (some
+        { formation := Selection.attendance,
+          accessLoss := { accessLoss := true, transitionLoss := true, reversed := false }.accessLoss,
+          transitionLoss := { accessLoss := true, transitionLoss := true, reversed := false }.transitionLoss })
+is false
+GoalFormationRevision.lean:335:68: error: Tactic `decide` proved that the proposition
+  Option.map State.ground
+      (acquire { accessLoss := true, transitionLoss := true, reversed := false } Selection.learning) =
+    some
+      (some
+        { formation := Selection.learning,
+          accessLoss := { accessLoss := true, transitionLoss := true, reversed := false }.accessLoss,
+          transitionLoss := { accessLoss := true, transitionLoss := true, reversed := false }.transitionLoss })
+is false
+GoalFormationRevision.lean:335:68: error: Tactic `decide` proved that the proposition
+  Option.map State.ground
+      (acquire { accessLoss := true, transitionLoss := true, reversed := true } Selection.attendance) =
+    some
+      (some
+        { formation := Selection.attendance,
+          accessLoss := { accessLoss := true, transitionLoss := true, reversed := true }.accessLoss,
+          transitionLoss := { accessLoss := true, transitionLoss := true, reversed := true }.transitionLoss })
+is false
+GoalFormationRevision.lean:335:68: error: Tactic `decide` proved that the proposition
+  Option.map State.ground
+      (acquire { accessLoss := true, transitionLoss := true, reversed := true } Selection.learning) =
+    some
+      (some
+        { formation := Selection.learning,
+          accessLoss := { accessLoss := true, transitionLoss := true, reversed := true }.accessLoss,
+          transitionLoss := { accessLoss := true, transitionLoss := true, reversed := true }.transitionLoss })
+is false
+GoalFormationRevision.lean:341:56: error: Tactic `decide` proved that the proposition
+  Option.map State.goal
+        (acquire { accessLoss := false, transitionLoss := false, reversed := false } Selection.attendance) =
+      some (some Practice.attendance) ∧
+    Option.map State.goal
+        (acquire { accessLoss := false, transitionLoss := false, reversed := false } Selection.learning) =
+      some (some Practice.learning)
+is false
+GoalFormationRevision.lean:341:56: error: Tactic `decide` proved that the proposition
+  Option.map State.goal
+        (acquire { accessLoss := false, transitionLoss := false, reversed := true } Selection.attendance) =
+      some (some Practice.attendance) ∧
+    Option.map State.goal
+        (acquire { accessLoss := false, transitionLoss := false, reversed := true } Selection.learning) =
+      some (some Practice.learning)
+is false
+GoalFormationRevision.lean:341:56: error: Tactic `decide` proved that the proposition
+  Option.map State.goal
+        (acquire { accessLoss := false, transitionLoss := true, reversed := false } Selection.attendance) =
+      some (some Practice.attendance) ∧
+    Option.map State.goal
+        (acquire { accessLoss := false, transitionLoss := true, reversed := false } Selection.learning) =
+      some (some Practice.learning)
+is false
+GoalFormationRevision.lean:341:56: error: Tactic `decide` proved that the proposition
+  Option.map State.goal
+        (acquire { accessLoss := false, transitionLoss := true, reversed := true } Selection.attendance) =
+      some (some Practice.attendance) ∧
+    Option.map State.goal
+        (acquire { accessLoss := false, transitionLoss := true, reversed := true } Selection.learning) =
+      some (some Practice.learning)
+is false
+GoalFormationRevision.lean:341:56: error: Tactic `decide` proved that the proposition
+  Option.map State.goal
+        (acquire { accessLoss := true, transitionLoss := false, reversed := false } Selection.attendance) =
+      some (some Practice.attendance) ∧
+    Option.map State.goal
+        (acquire { accessLoss := true, transitionLoss := false, reversed := false } Selection.learning) =
+      some (some Practice.learning)
+is false
+GoalFormationRevision.lean:341:56: error: Tactic `decide` proved that the proposition
+  Option.map State.goal
+        (acquire { accessLoss := true, transitionLoss := false, reversed := true } Selection.attendance) =
+      some (some Practice.attendance) ∧
+    Option.map State.goal
+        (acquire { accessLoss := true, transitionLoss := false, reversed := true } Selection.learning) =
+      some (some Practice.learning)
+is false
+GoalFormationRevision.lean:341:56: error: Tactic `decide` proved that the proposition
+  Option.map State.goal
+        (acquire { accessLoss := true, transitionLoss := true, reversed := false } Selection.attendance) =
+      some (some Practice.attendance) ∧
+    Option.map State.goal
+        (acquire { accessLoss := true, transitionLoss := true, reversed := false } Selection.learning) =
+      some (some Practice.learning)
+is false
+GoalFormationRevision.lean:341:56: error: Tactic `decide` proved that the proposition
+  Option.map State.goal
+        (acquire { accessLoss := true, transitionLoss := true, reversed := true } Selection.attendance) =
+      some (some Practice.attendance) ∧
+    Option.map State.goal
+        (acquire { accessLoss := true, transitionLoss := true, reversed := true } Selection.learning) =
+      some (some Practice.learning)
+is false
+GoalFormationRevision.lean:347:84: error: Tactic `decide` proved that the proposition
+  Option.map State.goal (revised harmful) = some (some Practice.learning) ∧
+    Option.map State.attendanceScore (revised harmful) = some 2 ∧
+      Option.map State.learningScore (revised harmful) = some 0 ∧
+        (perform harmful Practice.attendance).output > (perform harmful Practice.learning).output
+is false
+GoalFormationRevision.lean:350:77: error: Tactic `decide` proved that the proposition
+  Option.map State.goal (revised { accessLoss := true, transitionLoss := false, reversed := true }) =
+    some (some Practice.learning)
+is false
+GoalFormationRevision.lean:353:66: error: Tactic `decide` proved that the proposition
+  Option.map State.goal (revised safe) = some (some Practice.attendance)
+is false
+GoalFormationRevision.lean:356:98: error: Tactic `decide` proved that the proposition
+  Option.map State.goal (revised conflict) = some (some Practice.attendance) ∧ completed conflict = none
+is false
+GoalFormationRevision.lean:361:72: error: Tactic `decide` proved that the proposition
+  Option.map State.ground (revised harmful false) = Option.map State.ground (revised harmful) ∧
+    Option.map State.goal (revised harmful false) = some (some Practice.attendance) ∧
+      Option.map State.goal (revised harmful) = some (some Practice.learning)
+is false
+GoalFormationRevision.lean:366:84: error: Tactic `decide` proved that the proposition
+  Option.map State.selector (completed harmful) = some Selection.learning ∧
+    Option.map (fun s => feedback s.selector Practice.attendance) (completed harmful) = some 0 ∧
+      Option.map (fun s => feedback s.selector Practice.learning) (completed harmful) = some 2
+is false
+GoalFormationRevision.lean:370:84: error: Tactic `decide` proved that the proposition
+  Option.map (fun s => Option.map (fun g => predictFeedback g Selection.learning Practice.learning) s.ground)
+        (acquire harmful Selection.attendance) =
+      some (some 2) ∧
+    Option.map (fun s => feedback s.selector Practice.learning) (completed harmful) = some 2
+is false
+GoalFormationRevision.lean:375:65: error: Tactic `decide` proved that the proposition
+  Option.map State.archive (completed harmful) = Option.map State.archive (acquire harmful Selection.attendance) ∧
+    Option.map State.losses (completed harmful) = some 1 ∧ Option.map State.attendanceScore (completed harmful) = some 2
+is false
+GoalFormationRevision.lean:379:71: error: Tactic `decide` proved that the proposition
+  Option.map State.account (completed harmful) = some { work := 3, reserve := 8, spent := 7 } ∧
+    Option.map (fun s => total s.account) (completed harmful) = some 18
+is false
+GoalFormationRevision.lean:382:90: error: Tactic `decide` proved that the proposition
+  Option.map State.account (completed harmful >>= operateMany harmful 5) = some { work := 1, reserve := 0, spent := 17 }
+is false
+GoalFormationRevision.lean:387:95: error: Tactic `decide` proved that the proposition
+  Option.map (fun s => s.archive.length) (completed harmful >>= operateMany harmful 5) = some 7 ∧
+    Option.map State.losses (completed harmful >>= operateMany harmful 5) = some 1 ∧
+      Option.map State.goal (completed harmful >>= operateMany harmful 5) = some (some Practice.learning)
+is false
+GoalFormationRevision.lean:404:39: error: Tactic `decide` proved that the proposition
+  Option.map State.goal
+      (acquire harmful Selection.attendance >>= fun s =>
+        assess
+            { account := s.account, selector := s.selector, attendanceScore := s.attendanceScore,
+              learningScore := s.learningScore, goal := s.goal,
+              evidence :=
+                let __src := s.evidence;
+                { attendanceSignal := __src.attendanceSignal, learningSignal := __src.learningSignal,
+                  reference := some true, attendanceFeedback := __src.attendanceFeedback,
+                  learningFeedback := __src.learningFeedback },
+              ground := s.ground, archive := s.archive, losses := s.losses, reformed := s.reformed } >>=
+          reviseGoal true) =
+    some (some Practice.attendance)
+is false
+GoalFormationRevision.lean:416:71: error: Tactic `decide` proved that the proposition
+  Option.map State.goal (revised safe >>= operate harmful) = some (some Practice.attendance) ∧
+    Option.map State.losses (revised safe >>= operate harmful) = some 1
+is false
+GoalFormationRevision.lean:420:79: error: Tactic `decide` proved that the proposition
+  Option.map State.losses (revised harmful false >>= operate harmful) = some 2 ∧
+    Option.map State.losses (revised harmful >>= operate harmful) = some 1
+is false

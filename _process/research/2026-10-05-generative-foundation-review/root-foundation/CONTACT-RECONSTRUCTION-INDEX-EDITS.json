@@ -1,0 +1,94 @@
+{
+  "scope": "Owned contact reconstruction continuation; preserve concurrent work.",
+  "edits": [
+    {
+      "path": "RESEARCH.md",
+      "before_sha256": "934510268288be01db70bdd90aa6aa25c8e9f32fdb37f5fd27e7477f93215117",
+      "after_sha256": "68c1d408e3525fc2c00c856bd4ea9ec4839ab883c6e4d2ac1c14ae3750fc187b",
+      "owned_passage": "**传递与接触重建 / Contact reconstruction，2026-10-08。** [新理论连接与反审](_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-RECONSTRUCTION-INTEGRATION.md)用实际传递组成及保留接触机会导出重建率，后继自行成键；30项新 Lean 定理／57项新审计／223项闭包审计通过。同一亲代的两种分割在平均成键率与平均接触消耗相同下，产生1对1.5的预期重建产出；不同后继不能无条件合并为单一传播体类型。/ The bounded contact-to-reconstruction connection is complete. Partition formation, its costs, maturation and type-preserving population composition are the next join; matched spatial models retain full credit. Completed connectionist recovery and memory remain separate reusable results."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "before_sha256": "975918e01c7cb6b568611d94207c6f1c8b9933ecb3ea34b24d9b75f0a419d3d4",
+      "after_sha256": "d5154f804e2f38c3442f3316665faa86c0c08089b84b307be94fcf6569850ec8",
+      "owned_passage": "**Transmission and reconstruction / 传递与重建，2026-10-08。** [Current explanation](unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md#transmission-and-contact-reconstruction) now derives contact success from actual transmitted components and checks its finite correspondence: 30 new theorems / 57 audits. Equal mean encounter rates and costs can conceal different reconstruction because opportunities are distributed differently between successors. The formation and cost of those partitions remain supplied; no broad superiority is claimed."
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "before_sha256": "8d7e5319ad0874a3627483782b78d51bb4a077433b5690d086abbeaa0367b84a",
+      "after_sha256": "55c01b9be6d0d378e663c4bda05ac7047c47cef9a9904ef055b31aaa7c50b8ca",
+      "owned_passage": "**Contact reconstruction，2026-10-08。** [Study and author counterreview](CONTACT-RECONSTRUCTION-INTEGRATION.md): 30 new Lean theorems / 57 new audits, with 223 closure audits. Actual component partitions and contact-level histories replace an independently supplied rate and parental bond copying in this finite construction. The variation penalty and failure of a generic one-type propagule projection constrain the population interface. Partition formation and maturation are the next connection."
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md",
+      "before_sha256": "c11800dbad651141dfd989b25d3e83a98b25d063178b6d1b570c5fdb3ae7298f",
+      "after_sha256": "b511028a431c5517e85b6cbbd13df321c9172b43693451ca67baa5d66642df21",
+      "owned_passage": "**Contact reconstruction, 8 October 2026.** [ContactReconstruction.lean](ContactReconstruction.lean) and [fresh verification](contact-reconstruction-verification/README.md): 30 new theorems / 57 new audits, including 18 empty-axiom declarations; 223 closure audits. Actual contact sampling projects to the earlier finite assembly process, while each transmitted seed forms its own bond. Equal mean rate and expected cost need not yield equal reconstruction. No repeated-cycle invasion or molecular law is inferred."
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "before_sha256": "c21e4783f969f3b491ff986cca190c613bb844cd4a574a4e2fc425f830649ae3",
+      "after_sha256": "434ee73e1b6d44f2baafdfade51c2341010f56e327f24699626b68024dfe5fa2",
+      "owned_passage": "**Structural transmission comparator, 2026-10-08.** [Oszoli and Zachar 2024 original XML and reading record](evolutionary-selection/contact-reconstruction/README.md) preserve the primary spatial model used in the contact-reconstruction comparison. Aggregate-based sampling, spatial retention and local competition are distinguished; its fixed-type ecological scope and supplied transition/renewal laws remain explicit. No simulation replication is claimed."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "before_sha256": "0e5237c1eedfcc40ebdb57d3cc7730c9ebda9d3c003db60527637901e5469f5f",
+      "after_sha256": "a35d3b3e9b3b70e42f7ea17a4f77b08eb34d810ba8584275a4d02c8b105c3fc6",
+      "owned_passage": "**Contact-to-reconstruction connection completed, 8 October 2026.** [Actual transmission and contact formation](EVOLUTIONARY-ORGANIZATION.md#transmission-and-contact-reconstruction) now have 30 new checked theorems / 57 new audits. The same parental components and contacts can yield different reconstruction after different partitions, despite equal mean contact rate and expected encounter cost. Distinct seed responses also restrict when a two-stage population description is valid. Formation and cost of partitioning, maturation and renewal remain supplied; the six broader completion requirements are unchanged."
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "before_sha256": "a4e36188c72df0399b2d1ab52f5486a5c7d1f50b58e9febafc5aadc943fd9983",
+      "after_sha256": "2d82309e6ac67f255a90f948fc91ed16f1afc22cd76141a4f855dafcf0c711c3",
+      "owned_passage": "**Contact continuation completed at a narrower interface, 8 October 2026.** [Actual transmission and encounter reconstruction](CONTACT-RECONSTRUCTION-INTEGRATION.md) now derive the local rate from retained component contacts and rebuild a bond in each seed. The correspondence reuses this study’s attempt/success tree, not its terminal copying operation or offspring-count formulas. New variation and stage-aggregation restrictions qualify how a future population interface can be composed. The historical results and supplied premises below retain their original scope."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "before_sha256": "f152ee282061d21e4bccb60d17dec555bef81893aeb81c73c0ce2996c8bad2b1",
+      "after_sha256": "c1bd4e65df9be4196fef23c4e4e9dbc9b160f486a26f7707bace0622dd7abb9c",
+      "owned_passage": "## Transmission and contact reconstruction\n\nThe [contact continuation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-RECONSTRUCTION-INTEGRATION.md) explains another part of the local law. A partition transmits actual components and retains only contact opportunities whose endpoints remain together. Each successor starts unbonded and can form its own bond through paid encounters. Its success probability is derived from compatible opportunities among its actual encounter slots. Uniform sampling with replacement and a fixed compatibility rule remain explicit premises.\n\nThe finite contact process projects exactly to the preceding assembly attempt tree for the stated support and organization observables. It does not reuse the terminal operation that copied a successful state into all offspring: this census has one potential reconstructed unit per transmitted seed. Thus the earlier output formulas are not automatically the new population coefficients.\n\n**How opportunities are distributed matters.** Two checked partitions of the same eight-component parent preserve every component and all four contact opportunities, produce two equally sized seeds, and have the same mean single-attempt success rate of 1/2. Giving each seed two attempts costs three support units on average in both cases. When all compatible opportunities reach one seed, expected reconstruction is 1; when they are spread between the two seeds, it is 1.5. The first attempt alone does not distinguish the outputs. A third partition conserves every component but cuts all listed opportunities, preventing reconstruction during this window.\n\nFor two seed rates p and q, the exact two-attempt deficit relative to equal rates at their mean is (p−q)²/2; expected encounter cost remains equal. Distinct seed responses also prevent a single aggregate return coefficient from describing arbitrary mixtures. A population model must retain those distinctions or establish a valid mixture restriction. This narrows when the previous two-stage selection interface can be used.\n\n**中文推进：**组成没有消失，不等于重建能力没有消失；平均成键率相同，也不等于下一轮形成能力相同。现在能由实际传递关系推出这些差异，并说明哪些粗化会漏掉它们。\n\nThe new package has **30 Lean-checked theorems / 57 new audits**, with 223 closure audits. The selected contact-to-reconstruction connection is complete. The next join is how growth and mechanics produce or revise the partition, with its costs, subsequent maturation and provision accounted for. A three-stage population operator also proves finite cycle returns and a valid aggregate coefficient under its explicit balanced-mixture law. Common mature-parent preparation remains supplied; physical realization and invasion are further claims. An equally informed spatial evolutionary model gives the same local predictions; existing primary models already treat structural transmission and competition. Neither comparative superiority nor ethical goodness follows from a greater reconstruction count."
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "before_sha256": "300ba1ba8eac11934a84ed3d6ca8dddb6ebf4cb46743e9a9503114cbed5f2679",
+      "after_sha256": "57279d8573573f6e40c51d2fe041133088b5409267524b3eaec86233cf4f8246",
+      "owned_passage": "**接触重建 / Contact reconstruction，2026-10-08。** C14成对接入[传递、接触与重建](CONTACT-RECONSTRUCTION-INTEGRATION.md)：30项新定理／57项新审计／223项闭包审计，保留成键机会分布、空接触与种群粗化边界。/ Only C14, its rendered row, one owned discovery page and three authored source fingerprints change; all other entries and table lines are preserved. [Owned edits](CONTACT-RECONSTRUCTION-INDEX-EDITS.json); [scoped checks](CONTACT-RECONSTRUCTION-CHECKS.json). No full-table certification, new empirical run or broad superiority claim."
+    }
+  ],
+  "six_requirement_rows": [
+    "| **1 Formation of evolving organization** | Formation, regulation and developmental reconstruction have conditional models. The new bond-history account derives common founder ancestry under local non-aggregative development, with a targeted biological correspondence. | Extend the connected explanation beyond the stated local laws, retaining genealogy, actual construction and empirical scope. Origins of cells/genomes and broader mechanisms are not established by this case. |",
+    "| **2 Recovery of established evolutionary explanations** | Explicit transmission models and the new two-type recurrence correspondence. | Correspondences covering the claimed selection, mutation, drift, movement, inheritance and ecological mechanisms, with valid ranges and failures. Mathematical claims require actual Lean checks. An abstract interface alone is insufficient. |",
+    "| **3 Evolution of the conditions of evolution** | Actual output determines reconstruction, and inherited retention changes development. Retention, packing and aggregation constrain sorting. A bacterial genealogy and directly linked reversion assay now connect inherited switching to actual cycle completion and subsequent lineage representation under a declared regime. Separate oxygen experiments establish activity-generated gradients and condition-dependent competitive outcomes. | Generalize and calibrate these connections with supported renewal, mixing and stochastic occurrence. Resolve the separate yeast census conversion and follow fragmentation/aggregation participants. Explain mutation, transmission and replacement contributions to prevalence; fixation alone is not causal proof. Laboratory protocol changes do not establish endogenous evolution of the selector. |",
+    "| **4 Novel organization and changed evolutionary units** | The completed [new-possibilities integration](NEW-POSSIBILITIES.md) distinguishes installed construction from encompassing law, gives a formed constructor and scope-specific description revision. The association model adds formed group relations; empirical aggregation distinguishes temporary sorting groups from inherited organizations. | Credit those results and connect formation to inherited retention and ongoing effect under actual evolutionary conditions. Common transport does not alone establish a new inherited unit. Broader changes of evolutionary units and sustained qualitative innovation require their own mechanisms and evidence. |",
+    "| **5 Demonstrated comparative strength** | Exact recurrence correspondence and a proved limit of snapshots omitting bonds. Retention data compare ordinary predictors with/without protocol information, including a worsening case. A source-bound settling sensitivity holds geometry fixed and reveals consequential density/drag choices; a conventional developmental life-cycle model receives credit. Chronological genealogy forecasts now demonstrate a gain over a changing stage average and two block alternatives, fully credited to conventional lineage inference. Dated assay transfer exposes stage-specific prediction failures. | Establish a consequential gain against an adequately specified rival with matched evidence and assumptions. Neither the reduced baselines nor disagreement between unvalidated velocity approximations establishes superior prediction. Measure sorting and descendants to decide the physical correspondence. Broad empirical superiority remains unestablished. |",
+    "| **6 Ethical continuation and evolved evaluation** | The [practical-judgment candidate](PRACTICAL-JUDGMENT.md) is complete and independently accepted at its explicit-axiom general-principles scope, with G0 and additional comparison/responsibility commitments disclosed. | Credit that completed scope; connect evolved evaluation to its actual recognition, calibration and implementation, preserving failures. Application correspondence and actual compliance require evidence. Reproductive advantage cannot silently serve as ethical authority. |"
+  ],
+  "chain_update": {
+    "new_link_paths": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-RECONSTRUCTION-INTEGRATION.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/contact-reconstruction-verification/README.md",
+      "sources/evolutionary-selection/contact-reconstruction/README.md"
+    ],
+    "reviewed_owned_paths": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-RECONSTRUCTION-INTEGRATION.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/contact-reconstruction-verification/README.md",
+      "sources/evolutionary-selection/contact-reconstruction/README.md"
+    ],
+    "other_entries_preserved": 92,
+    "other_table_lines_preserved": true,
+    "maintenance_owned_passage": "**接触重建 / Contact reconstruction，2026-10-08。** C14成对接入[传递、接触与重建](CONTACT-RECONSTRUCTION-INTEGRATION.md)：30项新定理／57项新审计／223项闭包审计，保留成键机会分布、空接触与种群粗化边界。/ Only C14, its rendered row, one owned discovery page and three authored source fingerprints change; all other entries and table lines are preserved. [Owned edits](CONTACT-RECONSTRUCTION-INDEX-EDITS.json); [scoped checks](CONTACT-RECONSTRUCTION-CHECKS.json). No full-table certification, new empirical run or broad superiority claim.",
+    "data_before_sha256": "476c3078774eb99a6a62e5d37285e4f223f7af26984e8571bd2b1130124e78c0",
+    "data_after_sha256": "7eab397115315bff7e346befb2a738bd4e660ae3d5afd7b39abd9b813471bc79",
+    "table_before_sha256": "7a99eff13f4999ec209f32cc0ac70288a218602e9f39784201c79d1ede003003",
+    "table_after_sha256": "ff94c84a5d128ae691b29d407b60b4edf2abb9ed1b37036a27464540646d0bdc"
+  },
+  "stale_scope_corrections": {
+    "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+    "count": 2,
+    "old": "The separate connectionist learning recovery remains open.",
+    "new": "Credits completed connectionist recovery and developmental memory with their exact study links."
+  },
+  "extension": "Three additional checked theorems derive typed two-step return, valid balanced aggregation and all finite conditional mature-census returns. Counts updated only in owned passages.",
+  "author_counterreview": "Explicitly credits the familiar nonlinear-averaging identity and preserves the substantive common-mature-parent reset premise."
+}

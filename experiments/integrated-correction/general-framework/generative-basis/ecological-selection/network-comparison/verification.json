@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T07:55:16.065777+00:00",
+  "scope": "Actual Lean comparator versus independent finite-array simulator; synthetic correspondence only",
+  "seed": 20261008,
+  "cases": {
+    "bounded": 18768,
+    "history_failure": 8000,
+    "history_success": 8000
+  },
+  "successful_outcomes": 11680,
+  "disabled_outcomes": 23088,
+  "maximum_history_length": 80,
+  "mismatches": 0,
+  "input_sha256": "81dfef6971a25a8ff38b281e3623783b3442545bf446e8e5231a7932e4dfd6eb",
+  "output_sha256": "c027d9a4e331c079ef146686044a39c2a9081c019adfed6f81f4a43137235ec4",
+  "source_sha256": {
+    "DevelopmentalAssociation.lean": "6137099d1ae405f6f26bda3966960ce495dcc8e519297ae922cf4927a73eb8be",
+    "DevelopmentalReconstruction.lean": "3aaa9603ec3c20c410d5187fa39aab94d63f47aaa34980077b4526e6feed9053",
+    "EvolutionNetworkComparison.lean": "7a6c968147aaace8e4e431f6a7ccd083eec60694c5905b7197840c378eaa2002",
+    "GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "Driver.lean": "67019bf34117c3f9b620f8c2141479f2168b88c69254f253ebc743eb6faa6ad1"
+  },
+  "checker_sha256": "54b4f63aaab1cfd9e02ddd7a58bb95bee6deab21b5bb4965f9241a8909e4ced2",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "fitted_parameters_each": 0,
+  "new_biological_observations": 0,
+  "protocol_sha256": "88754565b43fea959c60aa5e395124e8d1f841a7fc38e070ff945f1b9bfdc492"
+}

@@ -1,0 +1,187 @@
+{
+  "scope": "Owned additions and C30/F22 continuation only; other entries preserved.",
+  "shared_file_insertions": [
+    {
+      "path": "RESEARCH.md",
+      "before_sha256": "1a130b18598eeb163cfba72886288a98c7914fdc42edba208fd834a459e8da9f",
+      "inserted_text": "**解释必要性：五个桥梁相连 / Five joined explanatory bridges, 8 October 2026.** [新整合](_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-INQUIRY-INTEGRATION.md)以 **40项新 Lean 定理／128项含继承审计**，连接实际正反证据取得、共同通道校准、任意有限历史中的有效性、变化后失效及有支持的再用与修正。完整历史取得否定、改变门条件、重新取得肯定并通过，同时耗尽支持。未记录的通道变化与错误参考准备各有实际失败历史。 / The inherited knowledge decoder is reused directly; current labels alone do not establish validity. These conditional bridges are complete for the declared mechanism. Next derive selective validity and change coverage from actual dependencies; universal explanatory priority and normative warrant remain open.\n\n",
+      "indexed_before_sha256": "4a03a08c1283e772382e80e822ee79f66e80be2ddb1ccd7692e3925272d0c298",
+      "preserved_other_bytes": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "before_sha256": "335864494c329415133966ce5b1ba72d03a6daaeb0f3419ca13f759b10e47a9c",
+      "inserted_text": "**证据取得、失效与再用 / Acquired evidence, invalidation and reuse, 8 October 2026.** [解释必要性的新连接](unified-2026-10-05/EXPLANATORY-NECESSITY.md#11-从可辨认走到实际取得正反证据)新增40项已检查定理，把五个桥梁接成同一支持受限历史；版本标签一致仍可能因未记录变化或错误参考而产生错误判断。 / A checked correction cycle joins acquisition, calibration and renewed action, with real depletion and concrete failure rivals. Reference reliability and coverage of relevant changes remain explicit premises; next explain selective recalibration and monitoring.\n\n",
+      "indexed_before_sha256": null,
+      "preserved_other_bytes": true
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "before_sha256": "5cd1b0ee86838bbb6d2852098941d0881621aa91e7f503bd982973cfad83c44f",
+      "inserted_text": "**Multiple explanatory bridges, 8 October 2026.** [Ren’s continuation](15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md#连续推进多个桥梁--multiple-connected-bridges) requests several bridges in one round. [The source assessment](../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-INQUIRY-INTEGRATION.md#6-primary-sources-and-evidence-assessment) directly credits the existing knowledge decoder and reads NIST’s traceability policy for calibration-scope comparison. Link-only external source; no measured apparatus, uncertainty verification or imported original is claimed.\n\n",
+      "indexed_before_sha256": null,
+      "preserved_other_bytes": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "before_sha256": "3a070ccabaf835ff565b17f27287c439e73333c0ee7303d72069c939af56ed5d",
+      "inserted_text": "**Acquisition → calibration → change → supported reuse, 8 October 2026.** [The explanatory-inquiry continuation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-INQUIRY-INTEGRATION.md) joins five conditional bridges with 40 new Lean theorems / 128 audits including inherited declarations. Actual positive/negative records, validity across arbitrary lawful finite histories, obsolete-but-retained evidence and supported correction share one process; weakened reference/change laws yield realized false judgments. It directly imports the existing knowledge decoder. The next missing link is dependency-sensitive validity and generated change monitoring, not another assumed perfect revision counter. This supplies a correspondence requirement for factual grounds in practical judgment; universal normative warrant and unique explanatory priority remain distinct open questions.\n\n",
+      "indexed_before_sha256": "090e91e9713894d150fb10d7de8a3fc87626c15f5935e29609eadf938df5f6c3",
+      "preserved_other_bytes": true
+    }
+  ],
+  "rows_before": {
+    "C30": {
+      "id": "C30",
+      "title_zh": "生成关系的解释必要性",
+      "title_en": "Generative relations and explanatory necessity",
+      "claim_zh": "充分回答须保留与目标有关的差异；可用变化能辨认依存，也会消耗支持或抹去前史差异，可靠耦合和实际记录可改变可恢复性。",
+      "claim_en": "Adequate answers retain target-relevant differences; available variation can reveal dependencies while consuming support or erasing prior distinctions. Warranted coupling and formed records change recoverability.",
+      "scope_zh": "首轮17项定理保留；后续45项新 Lean 定理／87项含继承审计。辨认不等于取得，支持不自动补充；整体约束可保留同内容，普遍解释优先性及规范根据仍开放。",
+      "scope_en": "First 17-theorem study retained; continuation adds 45 checked theorems / 87 audits including imports. Identifiability is not acquisition, and support need not replenish. Global constraints can preserve the same content; universal explanatory priority and normative warrant remain open.",
+      "links": [
+        {
+          "label_zh": "当前论述",
+          "label_en": "Current account",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md"
+        },
+        {
+          "label_zh": "论证、反审与来源",
+          "label_en": "Argument, counterreview and sources",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "Ren 原话",
+          "label_en": "Ren’s direction",
+          "path": "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md"
+        },
+        {
+          "label_zh": "可用变化、保留与反审",
+          "label_en": "Available variation, retention and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-VARIATION-INTEGRATION.md"
+        }
+      ]
+    },
+    "F22": {
+      "id": "F22",
+      "title_zh": "关系恢复、可用变化与保留判准",
+      "title_en": "Relation recovery, available variation and retention criteria",
+      "claim_zh": "检查有限端点恢复、合取测试辨认、同过程内释放与支持、共同终态的前史一致性判准，以及保留改变前差异的记录过程。",
+      "claim_en": "Checks finite-endpoint recovery, conjunctive identification, native release/support histories, predecessor consistency at common endpoints, and a process retaining pre-change distinctions.",
+      "scope_zh": "初轮17项声明保持原范围；新35项变化与10项恢复定理均为空公理依赖，连同42项继承审计共87项。任意条件类、可靠耦合、实际支持、固定关系与记录规律分别明示，不推出完整证据取得或唯一基础。",
+      "scope_en": "Original 17 declarations retain scope; 35 new variation and 10 recovery theorems have empty axiom dependencies, with 42 inherited audits for 87 total. Unrestricted valuations, warranted coupling, available support, fixed relations and record laws are explicit; complete evidence acquisition and unique grounding are not established.",
+      "links": [
+        {
+          "label_zh": "Lean 源码",
+          "label_en": "Lean source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryNecessity.lean"
+        },
+        {
+          "label_zh": "证明对应与回执",
+          "label_en": "Proof correspondence and receipt",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "变化源码",
+          "label_en": "Variation source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryVariation.lean"
+        },
+        {
+          "label_zh": "恢复与记录源码",
+          "label_en": "Recovery and retention source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryRecovery.lean"
+        },
+        {
+          "label_zh": "新证明对应与回执",
+          "label_en": "New proof correspondence and receipt",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-VARIATION-INTEGRATION.md"
+        }
+      ]
+    }
+  },
+  "rows_after": {
+    "C30": {
+      "id": "C30",
+      "title_zh": "生成关系的解释必要性",
+      "title_en": "Generative relations and explanatory necessity",
+      "claim_zh": "目标相关的关系内容贯通可用变化、证据保留、实际正反证据取得、校准、变化后失效及有支持的再用；历史真实与当前适用可分离。",
+      "claim_en": "Target-relevant relations connect available variation, retention, acquired positive/negative evidence, calibration, invalidation and supported reuse; historical truth can outlast current applicability.",
+      "scope_zh": "前两轮17项及45项定理保留；本轮40项新定理／128项含继承审计。可靠参考、共同通道、变化覆盖及支持明示；完整失败历史限制标签保证，整体约束对手与普遍优先性问题保留。下一步解释选择性校准与变化检测。",
+      "scope_en": "Earlier 17- and 45-theorem studies retained; new 40-theorem study / 128 audits including imports. Reference reliability, shared channel, change coverage and support are explicit. Realized failure histories limit label-based guarantees; global rivals and universal priority remain open. Next explain selective recalibration and change monitoring.",
+      "links": [
+        {
+          "label_zh": "当前论述",
+          "label_en": "Current account",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md"
+        },
+        {
+          "label_zh": "论证、反审与来源",
+          "label_en": "Argument, counterreview and sources",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "Ren 原话",
+          "label_en": "Ren’s direction",
+          "path": "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md"
+        },
+        {
+          "label_zh": "可用变化、保留与反审",
+          "label_en": "Available variation, retention and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-VARIATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "取得、校准与修正整合",
+          "label_en": "Acquisition, calibration and correction",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-INQUIRY-INTEGRATION.md"
+        }
+      ]
+    },
+    "F22": {
+      "id": "F22",
+      "title_zh": "关系恢复、证据取得与有效再用",
+      "title_en": "Relation recovery, evidence acquisition and valid reuse",
+      "claim_zh": "在原有恢复、变化及保留结果上，直接复用知识解码定理，检查正反证据取得、任意有限历史有效性、失效与再校准、资源守恒及同起点失误过程。",
+      "claim_en": "Extends recovery, variation and retention by directly reusing the knowledge decoder: checks acquired evidence, validity across arbitrary finite lawful histories, invalidation/recalibration, resource accounting and faulty histories from valid starts.",
+      "scope_zh": "本轮40项新定理＋88项继承审计＝128项空公理依赖审计；单次四事件、保留参考两事件和完整修正历史分别明示。无噪声局部规律不等于零前提，历史存在不等于控制保证，标签一致不等于正确。",
+      "scope_en": "40 new theorems + 88 inherited audits = 128 empty dependency audits. Four-event acquisition, two-event retained-reference reuse and the full correction history have distinct contracts. Noiseless local laws are premises; path existence is not control, and matching labels do not ensure correctness.",
+      "links": [
+        {
+          "label_zh": "Lean 源码",
+          "label_en": "Lean source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryNecessity.lean"
+        },
+        {
+          "label_zh": "证明对应与回执",
+          "label_en": "Proof correspondence and receipt",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "变化源码",
+          "label_en": "Variation source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryVariation.lean"
+        },
+        {
+          "label_zh": "恢复与记录源码",
+          "label_en": "Recovery and retention source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryRecovery.lean"
+        },
+        {
+          "label_zh": "新证明对应与回执",
+          "label_en": "New proof correspondence and receipt",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-VARIATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "取得与再用源码",
+          "label_en": "Acquisition and reuse source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryInquiry.lean"
+        },
+        {
+          "label_zh": "取得、校准与修正整合",
+          "label_en": "Acquisition, calibration and correction",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-INQUIRY-INTEGRATION.md"
+        }
+      ]
+    }
+  },
+  "preserved_other_entries": true
+}

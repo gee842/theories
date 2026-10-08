@@ -75,3 +75,100 @@ Compare matched interventions with equal initial resources and information: an e
 A damaging counterexample would be continued support renewal accompanied by domination of dispensable people, accurate evidence that cannot change allocation, or successful correction that exhausts its own successor. These would require revising the claimed sufficiency of the proposed guidance. They remain compatible with the wider foundation's obligation to explain destructive regimes.
 
 This application identifies a testable institutional interface. It leaves local production laws, measurement, legitimate authority, evaluative commitments and the formation of concern explicit. The continuing foundational task is to explain how shared consequences acquire and retain warranted practical significance, including when narrow private advantage favors ignoring them.
+
+<a id="enshittification-as-degeneration"></a>
+## 市场与互联网的实际检验 / Existing histories as tests
+
+2026-10-08。[Ren 的新指示](../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#markets-internet-and-degeneration)纠正了把后续检验过度限定为新实验的路线：现实的市场和互联网演化已有可用证据，enshittification 是理解 degeneration 的直接入口。上文的匹配干预仍是可选设计，不是承认既有历史证据的门槛。[本轮整合](../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md)核读政策、开发者公告、申报文件及许可变更，保留竞争解释。
+
+**Enshittification 是退化的一种具体制度形态：共同活动形成的关系、能力与依存，被转化为限制后续共同创造和纠正的控制力。** 它不只描述产品令人不满，而是要求追踪谁还能继续做什么、实际替代是否可用、谁承担支持成本，以及谁能改变下一轮规则。每一个案是否符合这一完整解释，仍须由这些关系的证据判定。
+
+平台经营、内容贡献、开发、阅读和维护是同一活动史中形成的不同位置；控制能力与受损程度可以很不对称。退化因而不要求经营组织先衰弱：它可以在更精密的优化、更强的规则控制及商业增长中发生。被排除者的损失不会因为经营活动不再需要他们就失去意义。反过来，一家旧组织结束、某项收费出现，也不自动等于共同生成受损；实际替代、维护需要与过渡负担必须保留。
+
+首轮两个历史对应给出不同后续：Reddit／Apollo 材料显示经营收入增长与一条既有参与路径结束并存；D&D 许可争议显示一次反对反馈之后的规则撤回和开放。事实、当事方因果解释、尚未识别的机制与来源分别见[案例记录 §§3–4](../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#3-redditapollo经营增长与路径损失可以同时发生)。它们提供事件与规则变化的入口；增长与损失并存不是新的理论发现，也不能识别利润优化或完整退化机制。
+
+由此，伦理学习与制度对齐之间的接口应明确为：**后果被认识，怎样取得改变决定及后续规则的实际效力。** 单有更多信息、善意或更好的推荐目标不完成这个接口。能否提出并维持异议、能否继续提供替代、纠正需要的资源由谁控制，均属于被对齐的活动本身。
+
+正面方向沿已完成的 G0/J/E 论证：支持不同生活及其继续生成，并评价目标执行对共同条件的改变。它要求有根据地维持有益参与的继续路径、必要维护、可行替代及有效纠正，约束成功转化为不受纠正权限的过程。具体收费、接口或许可方案仍须处理实际损失、支持成本和正当权限；开放或去中心化的名称本身不保证善。
+
+本轮完成实际历史的首轮对应及理论修订；沿上述证据继续追踪为何某些反馈改变规则、另一些未能改变，是现在的未完连接。既有市场 Lean 结果保持原来的条件范围，不以这些案例宣称验证了全部参数、吸引域或普遍向善。
+
+Existing histories provide events through which to investigate participation and rule correction; disproving an equivalence between commercial growth and shared generativity is not a substantive new research target. Enshittification is interpreted as one institutional form of degeneration, requiring evidence of impaired generative conditions rather than mere dissatisfaction or a price increase. The next connection concerns how consequences gain effective influence over rule revision. G0/J/E supply the declared normative commitments; the historical cases do not prove those commitments or universal convergence.
+<a id="profit-externalities-and-selection"></a>
+### 利润、外部性与规则的再生产 / Profit, externalities and reproduced rules
+
+[Ren 随后的纠正](../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#profit-and-externalities-correction)明确：利润优化可以忽略外部性。因此，上一轮把增长与路径损失并存列作理论推进，研究靶子过弱。营收数字仅是背景，既不度量利润，也不证明实际优化目标；这一弱靶子现已撤回。
+
+实际研究从既有外部性解释继续：哪些损失没有充分影响作决定者的成本、责任或其他约束，使消耗共同条件的做法取得优势；这些优势又是否进入准入、评价和修订权，维持同样的成本转移方式。复用已经完成的选择与元吸引子机制，检查其现实关系和纠正条件，不把所有利润归于损害，也不把经营成功当作规范根据。
+
+“外部”相对于交易和收益核算划出的范围；被影响者仍属于同一生成过程。退化评价关心被改变的生活、支持、后续创造与纠正条件。单纯租金转移、外部性和这些条件的侵蚀需要分别辨明，不能只凭一个应用结束就宣布整个过程退化。[详细纠正与证据要求](../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#externalities-and-recursive-degeneration)保留已知事实和反例。
+
+The separation between profit incentives and wider consequences is the starting point. The substantive empirical question concerns whether cost-shifting advantage reproduces the conditions that favor it, including control over correction. These relations are part of one unfolding; an accounting boundary does not place consequences outside that process. Existing conditional mechanisms and G0/J/E commitments are reused.
+
+<a id="interface-control-and-rule-reproduction"></a>
+### 共同接口、纠正与规则的接续 / Shared interfaces and continuing rule control
+
+2026-10-08。[续轮研究](../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#interface-control-and-corrective-change)通过已发生的广告技术规则变更，具体化“优势怎样参与重建选择条件”。这一接口不只经由利润购买影响力：经营位置若同时运行共同接口并控制其修改，经营决定本身就会改变他人的准入与比较条件。既有有偿影响模型解释其中一种路线，不能直接冒充另一种路线的经验识别。
+
+由此得到更明确的解释：**受损者已经反馈、已经发展替代，也不保证反馈导向修复；掌握规则的位置可以把这些回应纳入维持自身优势的调整。** 解释持续退化时，应辨明缺乏认识、回应不足与反向使用反馈，不能统称为信息不足或关切尚未形成。
+
+改革的比较范围也随之明确：既记录哪项具体做法停止，也追踪谁能够决定下一轮如何参与、如何比较、如何改正。如果新做法保留了同一种有害的控制关系，一项限制的撤回不完成整个关系的修复；如果实际替代和有根据的纠正已恢复，就应承认修复，而不以“元吸引子”否定所有变化。这是有条件的理论判断，不是另一个已经证明的普遍动态法则。
+
+正面方向仍是共同生成：在已有实践判断下，支持有益活动的可持续接续，并为有根据的纠正保留可实行的权限和支持；当前产出改善不能自动抵偿对这些条件的损害。接口维护、隐私、安全与转换成本同时进入实践比较。仅有更多供应者、更多选项或新监管名称，不足以确认改善。
+
+本轮已完成所选历史接口的局部对应和实践比较论证，事实、法院认定、公司回应及 AI 推论在研究记录中分别列明。接下来的未完连接是有益替代和纠正怎样取得能随依存变化而接续的支持与权限。旧证明、Reddit／Apollo 和 D&D 材料保留范围，不重做已完成的规范方向。
+
+Control over later selection may arise within the operation of a shared interface. Effective correction must be assessed through changes in feasible continuation and revisable authority, as well as the removal of a named practice. The historical study supports a bounded mechanism correspondence; integration benefits, costs and alternative explanations remain explicit. Existing G0/J/E commitments and conditional formal results are reused.
+
+<a id="degeneration-boundaries-and-transitions"></a>
+### 退化的边界与转变 / Degeneration boundaries and transitions
+
+2026-10-08。[Ren 明确要求](../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#degeneration-boundaries-and-phase-transitions)：并非所有市场演化都是退化，应找到退化边界、可能的 phase transition 及元吸引子规律的适用范围。[本轮论证、证明、现实对应及反审](../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#degeneration-boundary-and-transition)按这一方向限定前述研究。
+
+**退化元吸引子是有适用边界的规律候选：侵蚀共同生成条件的活动取得选择优势，其后果重建选择这种活动的条件；在指定状态域及继续条件下，既有纠正不足以扭转该接续。** 返回关系解释自我维持，实际后果及 G0/J/E 说明退化；两者须分别取得根据。高利润、集中度、一次退出或不满本身均不完成判断。通用元吸引子机制同样可能维持共同支持及有根据的纠正。
+
+需要分开伦理比较、机制适用及状态域的保持／脱离三种边界。一个变化可以造成真实损失却未形成元吸引子；一个递归组织可以维持良性创造；同一组选择规律也可以允许两种状态域。不能用“元吸引子”否认已经发生的有效改革，也不能把一项做法撤回直接当作整个返回关系消失。
+
+本轮在原市场模型中实际证明了一个精确界线。持续获授权并付款的纠正强度为 \(\alpha\)，影响侵蚀强度为 \(\beta\)，影响目标上界为 \(\lambda\)，私人选择门槛为 \(\theta\)，定义
+
+\[
+M=\alpha(1-\theta)-\beta\lambda\theta.
+\]
+
+在模型规定的物理域与更新条件下：
+
+- 对全部 \(\theta\le q\le1,\ 0\le w\le\lambda\)，选择门槛得到下一步保护，当且仅当 \(M\ge0\)；要覆盖不利误差上界 \(\varepsilon\ge0\)，则当且仅当 \(M\ge\varepsilon\)。
+- 原数学研究所指定的严格低选择矩形证书存在，当且仅当 \(M<0\)；其持续执行投影在任意自然数时刻保持于该区域，维护实践的正份额在正选择速率下严格下降。
+- 原参数的负余量情形仍有一个不同的良性保护区域。因此，参数越界意味着这种退化区域能够出现，不能推出所有历史必然进入。
+
+[19 项新 Lean 定理／27 项声明审计](../../../experiments/market-generativity/formal/boundary-verification.json)已实际通过，39 项导入定理审计分列。[模型范围](../../../experiments/market-generativity/formal/README.md#checked-regime-boundary)保留当期付款、授权、实际支持、正确对应、\(w\le\lambda\) 及定参等前提。它不是所有退化形态的充要条件，也不是已测出的平台临界份额。
+
+可能的转变应分别研究：**参数改变使一个区域失去保持条件；冲击或累积变化使状态进入另一可保持区域；资金、权限或支持失效使原纠正规律不再执行；变化速度使纠正来不及完成。** 这些路线也可能反向促成恢复。区域存在变化、状态脱离与严格数学分岔不能混称为同一个相变证明。
+
+对齐的新增实际含义，是检查目标执行如何改变纠正余量及未来选择域。更强执行力若侵蚀有根据的修订能力，可能扩大退化的可持续条件；修复应落到实际返回关系、替代支持和权限，而不是只追求更换组织或打破稳定。损失与改革成本仍按已有实践原则比较。
+
+本轮完成所述条件边界及域内证明，不重开规范方向。接下来应识别现实返回关系怎样随制度变化，并取得完整状态域、实际支持与变化速率下的转变条件；不能从已发生的案例直接宣称全部参数校准或稳定性分类完成。
+
+English: Ethical loss, reproduced selection and dynamical persistence have different boundaries. The existing paid-correction law now has an exact rational margin for uniform floor protection and for existence of the specified low-selection certificates. An all-time invariant projection is checked, while a distinct favorable region remains possible at the same parameters. Parameter change, state displacement, execution failure and excessive rate of change are different candidate transition routes. This is a conditional law with explicit correspondence, not inevitable degeneration, a full basin theorem or an empirically identified phase transition.
+
+<a id="local-attraction-and-actual-support"></a>
+### 局部吸引与实际支持 / Local attraction and actual support
+
+2026-10-08。[接续研究及反审](../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#attraction-and-support-coupling)已把上述区域保持推进到实际的局部吸引，再接回原完整运行和支持关系。新增 [38 项 Lean 定理／52 项声明审计](../../../experiments/market-generativity/formal/attraction-verification.json)通过；58 项导入定理／66 项审计分列，不重计为新成果。
+
+在原例只改变侵蚀强度 \(\beta\) 的参数路径上，全部物理平衡点已经分类。维护端 \(H=(1,1,0)\)、耗损端 \(L_\beta=(0,1/(1+4\beta),1)\)，以及在 \(\beta\ge5/12\) 才进入物理域的内部点 \(S_\beta=(1-5/(12\beta),3/8,5/(12\beta))\)，具有明确的接合关系。在 \(\beta=1/2\) 截面，**两个端点均有几何缩小的邻域；内部点则有任意小、最终有限时离开的扰动。** 本轮证明覆盖每个正有理精度及此后的全部时刻，超出有限模拟和单纯不变区域。
+
+这个局部双吸引结构仍须按其表示范围理解。把预算和必要支持接回同一活动史后，本轮证明投影与原运行法则逐步相符，并得到不同的实际结局：
+
+- 高端邻域加足够的初始支持，满足旧保护证书，实际运行不会触发失效守卫。
+- 低端邻域即使每步有钱支付既定纠正，也会在有限时间耗尽原模型的必要支持，触发实际停止。
+
+所以，**能够把扰动吸收回自身的选择组织，也可能持续侵蚀它所依赖的共同生成条件。** 它的吸引性不独自证明整体可持续，更不证明伦理正当。这里没有把支持理解为独立于活动的外部对象；三坐标投影暂时略去的正是同一活动史中的支持关系。
+
+纠正的类型因此应进一步辨明：一次状态改善若仍留在低端吸引邻域，会被原关系重新吸回；改变返回规律则可能改变该邻域本身；已经失去的参与能力还需要真实的进入与重建。原份额法则没有进入机制，零份额不能靠单改侵蚀参数自行重生。这是局部模型的表示限制，不能当作现实不可逆的证明。
+
+对齐方向在此取得新的时序要求：按已有实践原则，评价纠正能否改变后续选择，也评价它完成之前谁仍有支持、谁承担损失，以及是否有可行的接续。吸引性、效率、增长与“有韧性”都不能代替这个比较。
+
+局部三态结构和支持连接已完成；[平衡分支图](../../../experiments/market-generativity/formal/figures/regime-fixed-states.png)仅标示所证范围。完整三维吸引域、实数域推广、全部参数的稳定性／严格分岔类型及现实阈值未完成。下一连接是有支持的进入和持续纠正怎样在实际支持失效前跨过状态域分界；速率问题应置于这条实际时序中，复用已完成的边界和吸引证明。
+
+English: Two endpoint neighborhoods now have checked local attraction in the original rational operating projection, while the interior state admits arbitrarily small perturbations with finite escape. Coupling the original essential support reveals finite guarded failure on the low side and certificate-backed nonfailure on the high side. Reproducing a selection organization can undermine the wider conditions of continuation. The next connection is supported entry and sustained change before those conditions fail, not another proof of the completed local mechanism.

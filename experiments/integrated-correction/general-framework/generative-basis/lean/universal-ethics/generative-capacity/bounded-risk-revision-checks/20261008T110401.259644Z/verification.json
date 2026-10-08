@@ -1,0 +1,18 @@
+{
+  "status": "failed",
+  "utc": "20261008T110401.259644Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "bounded-risk-revision-checks/20261008T110401.259644Z",
+  "source_sha256": {
+    "BasicRiskSharing": "341753b826c4d697b6c26f30ae2abf87371b3a64c81f0832bb72aa2e81f49d6b",
+    "BoundedRiskRevision": "0f85bfef3808e6c15fef2420b50e35989dde8979433ad8387c66a8788a0a49ed"
+  },
+  "checker_sha256": {
+    "check_bounded_risk_revision.py": "67a222101446e274b9211e3515a3b722e115ef2eafc304330279169939fa9e7e",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Exact intermediate-mixture frontier under the inherited asymmetric one-decision risk law; a supplied total-loss constraint and non-resetting comparison scope. No normative cap, local ethical stability or universal tradeoff is proved. Inherited BasicRiskSharing is checked separately from the new module.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "BoundedRiskRevision.lean:41:9: error: Tactic `unfold` failed to unfold `total` in\n  greatest k y \u2264 asymmetricB (10 * k) x\nBoundedRiskRevision.lean:49:7: error: unknown tactic\nBoundedRiskRevision.lean:49:4: error: unsolved goals\ncase mp.left\nk x : Nat\nhu : x \u2264 10 * k\nhn : \u00ac\u2203 y, y \u2264 10 * k \u2227 Dominates k y x\n\u22a2 7 * k \u2264 x\nBoundedRiskRevision.lean:47:2: error: unsolved goals\ncase mp.right\nk x : Nat\nhu : x \u2264 10 * k\nhn : \u00ac\u2203 y, y \u2264 10 * k \u2227 Dominates k y x\n\u22a2 x \u2264 10 * k\nBoundedRiskRevision.lean:45:46: error: unsolved goals\ncase mpr\nk x : Nat\n\u22a2 7 * k \u2264 x \u2227 x \u2264 10 * k \u2192 Efficient k x\n"
+}

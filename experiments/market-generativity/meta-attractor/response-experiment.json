@@ -1,0 +1,192 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T10:49:42.933442+00:00",
+  "script_sha256": "31aa29e9fb9ea97b5649677980794211e45334083cb3df0415f92188b52d3a40",
+  "formal_source_sha256": "e4abc39c3288b4b1764026adc72a9372b6dc472048a22d4e6d0bccf0c05a9deb",
+  "prefix_history_cases": 32805,
+  "viability_cases": 3549,
+  "affordable_action_comparisons": 39039,
+  "one_step_recovery_cases": 1560,
+  "optimal_live_step_cases": 3177,
+  "example_columns": [
+    "effective_response",
+    "operative_support"
+  ],
+  "examples": {
+    "constant_demand_greedy": [
+      [
+        2,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "one_initial_investment": [
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        3,
+        14
+      ],
+      [
+        3,
+        17
+      ]
+    ],
+    "reduced_demand": [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        2,
+        14
+      ]
+    ],
+    "greater_response_and_demands": [
+      [
+        4,
+        2
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "doubling_load_events": [
+    {
+      "time": 0,
+      "demand": 1,
+      "response": 1,
+      "unmet": 0
+    },
+    {
+      "time": 1,
+      "demand": 2,
+      "response": 2,
+      "unmet": 0
+    },
+    {
+      "time": 2,
+      "demand": 4,
+      "response": 3,
+      "unmet": 1
+    },
+    {
+      "time": 3,
+      "demand": 8,
+      "response": 4,
+      "unmet": 4
+    },
+    {
+      "time": 4,
+      "demand": 16,
+      "response": 5,
+      "unmet": 11
+    },
+    {
+      "time": 5,
+      "demand": 32,
+      "response": 6,
+      "unmet": 26
+    },
+    {
+      "time": 6,
+      "demand": 64,
+      "response": 7,
+      "unmet": 57
+    }
+  ],
+  "doubling_load_support": [
+    10,
+    10,
+    10,
+    9,
+    5,
+    0,
+    0,
+    0
+  ],
+  "scope": "Finite independent arithmetic and policy checks of the declared models, plus illustrative trajectories. Not empirical data or a substitute for the Lean universal claims."
+}

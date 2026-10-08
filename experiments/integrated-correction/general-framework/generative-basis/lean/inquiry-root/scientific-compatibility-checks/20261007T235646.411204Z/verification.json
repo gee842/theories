@@ -1,0 +1,124 @@
+{
+  "status": "passed",
+  "utc": "20261007T235646.411204Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "scientific-compatibility-checks/20261007T235646.411204Z",
+  "source_sha256": {
+    "ScientificCompatibility": "c21e14bcadb669b915b27ed256cd73ff8713c6499877ee61cad2c2fa91f8f2de"
+  },
+  "checker_sha256": {
+    "check_scientific_compatibility.py": "def589fa82e0a74ad8d001d0803f8bbd206e75f056376e1503769ee770f6a9fd",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Semantic compatibility and its universal burden, separate acceptance and correctness, conditional record/update necessity and equivalent relational presentation. No definition of scientific standing, empirical experiment, universal ontology or normative grounding.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "kernel_checked": true,
+  "theorems": 13,
+  "declarations": [
+    {
+      "kind": "abbrev",
+      "name": "Generative.ScientificCompatibility.View"
+    },
+    {
+      "kind": "def",
+      "name": "Generative.ScientificCompatibility.Entails"
+    },
+    {
+      "kind": "def",
+      "name": "Generative.ScientificCompatibility.Compatible"
+    },
+    {
+      "kind": "def",
+      "name": "Generative.ScientificCompatibility.MandatoryCompatibility"
+    },
+    {
+      "kind": "theorem",
+      "name": "Generative.ScientificCompatibility.common_truth_gives_compatibility"
+    },
+    {
+      "kind": "theorem",
+      "name": "Generative.ScientificCompatibility.compatible_symmetric"
+    },
+    {
+      "kind": "theorem",
+      "name": "Generative.ScientificCompatibility.entailment_gives_mandatory_compatibility"
+    },
+    {
+      "kind": "theorem",
+      "name": "Generative.ScientificCompatibility.mandatory_compatibility_requires_entailment"
+    },
+    {
+      "kind": "theorem",
+      "name": "Generative.ScientificCompatibility.mandatory_compatibility_iff_entailment"
+    },
+    {
+      "kind": "theorem",
+      "name": "Generative.ScientificCompatibility.one_compatible_rival_does_not_establish_mandatory_compatibility"
+    },
+    {
+      "kind": "theorem",
+      "name": "Generative.ScientificCompatibility.compatibility_does_not_require_accepting_theory"
+    },
+    {
+      "kind": "theorem",
+      "name": "Generative.ScientificCompatibility.common_error_can_be_compatible"
+    },
+    {
+      "kind": "theorem",
+      "name": "Generative.ScientificCompatibility.full_package_requires_each_commitment"
+    },
+    {
+      "kind": "theorem",
+      "name": "Generative.ScientificCompatibility.changed_conclusion_requires_retained_difference"
+    },
+    {
+      "kind": "theorem",
+      "name": "Generative.ScientificCompatibility.changed_conclusion_excludes_identity_update"
+    },
+    {
+      "kind": "def",
+      "name": "Generative.ScientificCompatibility.historyConstraint"
+    },
+    {
+      "kind": "theorem",
+      "name": "Generative.ScientificCompatibility.relational_presentation_preserves_update"
+    },
+    {
+      "kind": "theorem",
+      "name": "Generative.ScientificCompatibility.relational_presentation_preserves_changed_conclusion"
+    }
+  ],
+  "axiom_dependencies": {
+    "Generative.ScientificCompatibility.View": [],
+    "Generative.ScientificCompatibility.Entails": [],
+    "Generative.ScientificCompatibility.Compatible": [],
+    "Generative.ScientificCompatibility.MandatoryCompatibility": [],
+    "Generative.ScientificCompatibility.common_truth_gives_compatibility": [],
+    "Generative.ScientificCompatibility.compatible_symmetric": [],
+    "Generative.ScientificCompatibility.entailment_gives_mandatory_compatibility": [],
+    "Generative.ScientificCompatibility.mandatory_compatibility_requires_entailment": [],
+    "Generative.ScientificCompatibility.mandatory_compatibility_iff_entailment": [],
+    "Generative.ScientificCompatibility.one_compatible_rival_does_not_establish_mandatory_compatibility": [],
+    "Generative.ScientificCompatibility.compatibility_does_not_require_accepting_theory": [],
+    "Generative.ScientificCompatibility.common_error_can_be_compatible": [],
+    "Generative.ScientificCompatibility.full_package_requires_each_commitment": [],
+    "Generative.ScientificCompatibility.changed_conclusion_requires_retained_difference": [],
+    "Generative.ScientificCompatibility.changed_conclusion_excludes_identity_update": [],
+    "Generative.ScientificCompatibility.historyConstraint": [],
+    "Generative.ScientificCompatibility.relational_presentation_preserves_update": [],
+    "Generative.ScientificCompatibility.relational_presentation_preserves_changed_conclusion": []
+  },
+  "artifact_sha256": {
+    "AxiomAudit.log": "471e61291b1e8e2889a40e3d99e582175b1ff4c7c9758c53fefc241d27af40f4",
+    "ScientificCompatibility.lean": "c21e14bcadb669b915b27ed256cd73ff8713c6499877ee61cad2c2fa91f8f2de",
+    "ScientificCompatibilityAxiomAudit.lean": "5ffd4a67a2c4c510c8055362f144a2f4bdf6a8f16f0136caa6f24b1563de567d",
+    "ScientificCompatibilitySignatures.lean": "1997549c6708770a9a28fc9774bc266a35c892391e72b34ac3ddab62b2b956ba",
+    "Signatures.log": "dd227ad64f4457f01469986c5a4f2f8de53f2a25318bce9b542032a64218278a",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_scientific_compatibility.py": "def589fa82e0a74ad8d001d0803f8bbd206e75f056376e1503769ee770f6a9fd",
+    "compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

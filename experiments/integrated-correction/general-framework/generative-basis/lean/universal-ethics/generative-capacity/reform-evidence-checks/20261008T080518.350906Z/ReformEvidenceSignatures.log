@@ -1,0 +1,112 @@
+ReformEvidence.old_route_calibration (loss : Bool) :
+  ReformEvidence.transmit ReformEvidence.Route.selected GoalFormationRevision.Selection.attendance loss = loss
+ReformEvidence.direct_access_preserves_loss (selector : GoalFormationRevision.Selection) (loss : Bool) :
+  ReformEvidence.transmit ReformEvidence.Route.direct selector loss = loss
+ReformEvidence.old_calibration_does_not_transport :
+  ReformEvidence.transmit ReformEvidence.Route.selected GoalFormationRevision.Selection.attendance true = true ∧
+    ReformEvidence.transmit ReformEvidence.Route.selected GoalFormationRevision.Selection.learning true = false
+ReformEvidence.repair_requires_authority (s : ReformEvidence.Field) : ReformEvidence.repair false s = none
+ReformEvidence.repair_conserves {s t : ReformEvidence.Field} {authorized : Bool}
+  (h : ReformEvidence.repair authorized s = some t) :
+  GoalFormationRevision.total t.core.account = GoalFormationRevision.total s.core.account
+ReformEvidence.old_conditions_agree :
+  Option.map ReformEvidence.conditions (ReformEvidence.beforeReform true) =
+    Option.map ReformEvidence.conditions (ReformEvidence.beforeReform false)
+ReformEvidence.rule_change_activates_real_burden :
+  Option.map (fun s => (ReformEvidence.conditions s).transitionLoss) (ReformEvidence.beforeReform true) = some false ∧
+    Option.map (fun s => (ReformEvidence.conditions s).transitionLoss) (ReformEvidence.begun true) = some true
+ReformEvidence.actual_burden_differs_after_reform :
+  Option.map (fun s => s.core.losses) (ReformEvidence.post true) = some 2 ∧
+    Option.map (fun s => s.core.losses) (ReformEvidence.post false) = some 1
+ReformEvidence.filtered_judgment_inputs_agree :
+  Option.map ReformEvidence.judgmentInput (ReformEvidence.masked true) =
+    Option.map ReformEvidence.judgmentInput (ReformEvidence.masked false)
+ReformEvidence.every_decider_shares_filtered_answer {A : Type}
+  (decideFrom : Option (GoalFormationRevision.Evidence × List Bool) → A) :
+  decideFrom (Option.map ReformEvidence.judgmentInput (ReformEvidence.masked true)) =
+    decideFrom (Option.map ReformEvidence.judgmentInput (ReformEvidence.masked false))
+ReformEvidence.repetition_of_filtered_report_does_not_separate (n : Nat) :
+  List.replicate n
+      (ReformEvidence.transmit ReformEvidence.Route.selected GoalFormationRevision.Selection.learning true) =
+    List.replicate n
+      (ReformEvidence.transmit ReformEvidence.Route.selected GoalFormationRevision.Selection.learning false)
+ReformEvidence.self_approval_coexists_with_actual_loss :
+  Option.map ReformEvidence.approves (ReformEvidence.masked true) = some true ∧
+    Option.map (fun s => s.core.losses) (ReformEvidence.masked true) = some 2 ∧
+      Option.map (fun s => GoalFormationRevision.feedback s.core.selector GoalFormationRevision.Practice.learning)
+          (ReformEvidence.masked true) =
+        some 2
+ReformEvidence.approved_continuation_repeats_real_loss :
+  Option.map ReformEvidence.approves
+        (ReformEvidence.masked true >>= ReformEvidence.advance >>=
+          ReformEvidence.inspect ReformEvidence.Route.selected) =
+      some true ∧
+    Option.map (fun s => s.core.losses)
+        (ReformEvidence.masked true >>= ReformEvidence.advance >>=
+          ReformEvidence.inspect ReformEvidence.Route.selected) =
+      some 3
+ReformEvidence.direct_observation_changes_judgment :
+  Option.map ReformEvidence.approves ReformEvidence.exposed = some false ∧
+    Option.map (fun s => Option.map GoalFormationRevision.Ground.transitionLoss s.core.ground) ReformEvidence.exposed =
+        some (some true) ∧
+      Option.map ReformEvidence.Field.reports ReformEvidence.exposed = some [false, true]
+ReformEvidence.supported_reform_survives_direct_check :
+  Option.map ReformEvidence.approves
+        (ReformEvidence.masked false >>= ReformEvidence.inspect ReformEvidence.Route.direct) =
+      some true ∧
+    Option.map ReformEvidence.Field.reports
+        (ReformEvidence.masked false >>= ReformEvidence.inspect ReformEvidence.Route.direct) =
+      some [false, false]
+ReformEvidence.repair_preserves_revised_goal_and_selection :
+  Option.map (fun s => s.core.goal) ReformEvidence.restored = some (some GoalFormationRevision.Goal.learning) ∧
+    Option.map (fun s => s.core.selector) ReformEvidence.restored = some GoalFormationRevision.Selection.learning ∧
+      Option.map (fun s => s.core.ground) ReformEvidence.restored = some none
+ReformEvidence.actual_repaired_continuation_and_recheck :
+  Option.map ReformEvidence.approves ReformEvidence.rechecked = some true ∧
+    Option.map (fun s => s.core.losses) ReformEvidence.rechecked = some 2 ∧
+      Option.map ReformEvidence.Field.reports ReformEvidence.rechecked = some [false, true, false] ∧
+        Option.map (fun s => s.core.archive.length) ReformEvidence.rechecked = some 4
+ReformEvidence.all_stages_account_for_the_same_support :
+  Option.map (fun s => s.core.account) (ReformEvidence.masked true) = some { work := 5, reserve := 10, spent := 11 } ∧
+    Option.map (fun s => s.core.account) ReformEvidence.exposed = some { work := 3, reserve := 10, spent := 13 } ∧
+      Option.map (fun s => s.core.account) ReformEvidence.restored = some { work := 2, reserve := 8, spent := 16 } ∧
+        Option.map (fun s => s.core.account) ReformEvidence.rechecked = some { work := 0, reserve := 6, spent := 20 } ∧
+          Option.map (fun s => GoalFormationRevision.total s.core.account) ReformEvidence.rechecked = some 26
+ReformEvidence.depleted_work_blocks_further_operation : ReformEvidence.rechecked >>= ReformEvidence.advance = none
+ReformEvidence.unavailable_inquiry_is_not_a_pass :
+  (do
+      let s ← ReformEvidence.masked true
+      ReformEvidence.inspect ReformEvidence.Route.direct
+          {
+            core :=
+              have __src := s.core;
+              { account := { work := 1, reserve := 10, spent := 15 }, selector := __src.selector,
+                attendanceScore := __src.attendanceScore, learningScore := __src.learningScore, goal := __src.goal,
+                evidence := __src.evidence, ground := __src.ground, archive := __src.archive, losses := __src.losses,
+                reformed := __src.reformed },
+            transfersBurden := s.transfersBurden, provisioned := s.provisioned, reports := s.reports }) =
+    none
+ReformEvidence.insufficient_repair_reserve_blocks_action :
+  (do
+      let s ← ReformEvidence.exposed
+      ReformEvidence.repair true
+          {
+            core :=
+              have __src := s.core;
+              { account := { work := 3, reserve := 1, spent := 22 }, selector := __src.selector,
+                attendanceScore := __src.attendanceScore, learningScore := __src.learningScore, goal := __src.goal,
+                evidence := __src.evidence, ground := __src.ground, archive := __src.archive, losses := __src.losses,
+                reformed := __src.reformed },
+            transfersBurden := s.transfersBurden, provisioned := s.provisioned, reports := s.reports }) =
+    none
+ReformEvidence.restoring_maintenance_is_favored :
+  PracticalJudgment.Better ReformEvidence.protectionAfter ReformEvidence.gainsAfter true false
+ReformEvidence.unrepaired_shift_has_real_basic_conflict :
+  ¬PracticalJudgment.Better
+        (GoalFormationRevision.protects { accessLoss := true, transitionLoss := true, reversed := false })
+        (GoalFormationRevision.gains { accessLoss := true, transitionLoss := true, reversed := false })
+        GoalFormationRevision.Practice.learning GoalFormationRevision.Practice.attendance ∧
+    ¬PracticalJudgment.Better
+        (GoalFormationRevision.protects { accessLoss := true, transitionLoss := true, reversed := false })
+        (GoalFormationRevision.gains { accessLoss := true, transitionLoss := true, reversed := false })
+        GoalFormationRevision.Practice.attendance GoalFormationRevision.Practice.learning

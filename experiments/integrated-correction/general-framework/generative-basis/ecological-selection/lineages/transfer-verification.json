@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "scope": "Numerical block-model and source-bound assay checks, not a causal proof or independent research review.",
+  "block_enumeration_comparisons": 16,
+  "max_enumeration_error": 1.4432899320127035e-15,
+  "future_isolation_cases": 6,
+  "forecast_rows_checked": 11520,
+  "score_rows_checked": 720,
+  "block_grid_sensitivity": [
+    {
+      "grid": 50,
+      "model": "block_common_root",
+      "max_probability_difference": 0.004722534178939308
+    },
+    {
+      "grid": 50,
+      "model": "block_independent_roots",
+      "max_probability_difference": 0.002486082448612148
+    },
+    {
+      "grid": 200,
+      "model": "block_common_root",
+      "max_probability_difference": 0.0009368583236293304
+    },
+    {
+      "grid": 200,
+      "model": "block_independent_roots",
+      "max_probability_difference": 0.0007140647299460623
+    }
+  ],
+  "original_assay_rows": 3802,
+  "cohorts_checked": 139,
+  "selected_reading_rows_checked": 485,
+  "focal_batches_checked": 5,
+  "original_and_replacement_transfer_slots_checked": 48,
+  "assay_predictions_checked": 14,
+  "bindings": {
+    "check_transfer.py": "bb41f9e4c3f4399462872c1464ebe45ab7bb984c1a9e22dabb86ad1ebaceb873",
+    "TRANSFER-PROTOCOL.md": "e14503e37792a4895d754272b2868c490115a531d851f715162d216cff0a7e4b",
+    "assay_transfer.py": "ac0b7507f2aedcee444c92658b5853190ef853afcb943123a859560daf6a67c3",
+    "forecast_blocks.py": "caf0ce6f225b8854bbc581eed67f835690aa86b7b38c183e2def5815513abdbd",
+    "forecast_lineages.py": "41978bc92fb0ecf14720ac01e06a519a0a5eb3e26221e2d90a6ec5aa4d039a79",
+    "check_forecast.py": "04f814b4061700b35239257d9b6ccf6682d7178ad8d208370a81fcf5a152a939",
+    "assay-transfer-results.json": "9bb47ec1c98006198044572f6211c8e78090326d7f920e4b97f5304262941b23",
+    "forecast-verification.json": "6e49dbf63424007ec160b0277163c34212da76a8aadc83c9680e99de2aa98975",
+    "block-50-results.json": "64cfc8f4583d656f99dd5cd792d08afeb6f88690dea81431ae32bff7ac229c16",
+    "block-100-results.json": "1a2ccde22fe85ed008ded33960cdeae315bc6d4bd523c16a85e42edcab2fd180",
+    "block-200-results.json": "7fa801865fbf2303d0111afe564470cd291c17473eb70bfa9444385693de1ceb"
+  }
+}

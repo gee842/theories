@@ -1,0 +1,145 @@
+{
+  "status": "passed",
+  "utc": "20261008T113537.047137Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "chance-adequacy-checks/20261008T113537.047137Z",
+  "source_sha256": {
+    "ChanceAdequacy": "501a26f1561c78fb552a550700fc730c296e6005cde5a0f0d2e0cb9ec11a8c41"
+  },
+  "checker_sha256": {
+    "check_chance_adequacy.py": "be57a3df87be9787c352821ab61a9817520fbc013f97995b9b807244fd030472",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Eight results connect pointwise continuation of warranted demand with a finite natural-weight event law. Event inclusion implies mass monotonicity, a positive newly covered event gives a strict increase, and preservation for all natural nonnegative weights is equivalent to inclusion via Dirac separation. A positive-total wrapper yields a necessary success-numerator floor for a pointwise undertaking. Event-level repair preserves the target and candidate and can add strict protection; its physical feasibility, permission and implementable routing are separate. Positive success under a fixed law can still miss a due, positive-mass support condition. Weights are event mass, not ethical importance. Coupling, coverage and normative warrant are supplied; no actual law is assumed freely variable, and no probability interpretation is given at zero total. No inherited project theorem is rebuilt.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "checked_application_examples": [
+    {
+      "claim": "the event-level OR repair protects both positive-mass Boolean conditions",
+      "kernel_checked": true,
+      "counted_as_new_theorem": false
+    },
+    {
+      "claim": "the empty represented domain has zero total mass and is outside the probability wrapper",
+      "kernel_checked": true,
+      "counted_as_new_theorem": false
+    }
+  ],
+  "source_unchanged_during_check": true,
+  "modules": [
+    {
+      "module": "ChanceAdequacy",
+      "theorems": 8,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "ChanceAdequacy.mass"
+        },
+        {
+          "kind": "def",
+          "name": "ChanceAdequacy.IncludedOn"
+        },
+        {
+          "kind": "def",
+          "name": "ChanceAdequacy.total"
+        },
+        {
+          "kind": "theorem",
+          "name": "ChanceAdequacy.mass_monotone"
+        },
+        {
+          "kind": "theorem",
+          "name": "ChanceAdequacy.positive_added_event_strictly_increases_mass"
+        },
+        {
+          "kind": "theorem",
+          "name": "ChanceAdequacy.dirac_mass_positive_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "ChanceAdequacy.all_weights_preserve_mass_iff"
+        },
+        {
+          "kind": "def",
+          "name": "ChanceAdequacy.target"
+        },
+        {
+          "kind": "def",
+          "name": "ChanceAdequacy.Fulfilled"
+        },
+        {
+          "kind": "theorem",
+          "name": "ChanceAdequacy.fulfillment_gives_chance_floor"
+        },
+        {
+          "kind": "def",
+          "name": "ChanceAdequacy.repair"
+        },
+        {
+          "kind": "theorem",
+          "name": "ChanceAdequacy.repair_covers_target_and_candidate"
+        },
+        {
+          "kind": "theorem",
+          "name": "ChanceAdequacy.repair_adds_positive_new_protection"
+        },
+        {
+          "kind": "theorem",
+          "name": "ChanceAdequacy.positive_chance_can_miss_due_protection"
+        }
+      ],
+      "axiom_dependencies": {
+        "ChanceAdequacy.mass": [],
+        "ChanceAdequacy.IncludedOn": [],
+        "ChanceAdequacy.total": [],
+        "ChanceAdequacy.mass_monotone": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ChanceAdequacy.positive_added_event_strictly_increases_mass": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ChanceAdequacy.dirac_mass_positive_iff": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ChanceAdequacy.all_weights_preserve_mass_iff": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ChanceAdequacy.target": [],
+        "ChanceAdequacy.Fulfilled": [],
+        "ChanceAdequacy.fulfillment_gives_chance_floor": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ChanceAdequacy.repair": [],
+        "ChanceAdequacy.repair_covers_target_and_candidate": [
+          "propext"
+        ],
+        "ChanceAdequacy.repair_adds_positive_new_protection": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ChanceAdequacy.positive_chance_can_miss_due_protection": [
+          "propext"
+        ]
+      },
+      "kernel_checked": true
+    }
+  ],
+  "artifact_sha256": {
+    "ChanceAdequacy.lean": "501a26f1561c78fb552a550700fc730c296e6005cde5a0f0d2e0cb9ec11a8c41",
+    "ChanceAdequacy.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ChanceAdequacyAxiomAudit.lean": "51544c7effe09e77a7e4145d6b09c5a9b80a14f01442818bdc473fb12b94506b",
+    "ChanceAdequacyAxiomAudit.log": "8858690260708221de75301ff621855f8e4c7bc92fe36f414ffa06e32ae44626",
+    "ChanceAdequacySignatures.lean": "c0e598343a483b1515c48b076c499525a1a2d991202dfbd7ca3b024fbb4a3d61",
+    "ChanceAdequacySignatures.log": "a9b80591a134a882c0e3ad49159a6d8084a62585bd73a5511da0b963301bb1ca",
+    "Controls.lean": "6e34bd61dad6299415331ec8f1f55b04107d731bf0778fbc8795e19dae3a8f8a",
+    "Controls.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_chance_adequacy.py": "be57a3df87be9787c352821ab61a9817520fbc013f97995b9b807244fd030472",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

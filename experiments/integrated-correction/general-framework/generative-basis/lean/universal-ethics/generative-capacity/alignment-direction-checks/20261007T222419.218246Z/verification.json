@@ -1,0 +1,16 @@
+{
+  "status": "failed",
+  "utc": "20261007T222419.218246Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "alignment-direction-checks/20261007T222419.218246Z",
+  "source_sha256": {
+    "PracticalJudgment": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "AlignmentDirection": "0641f8d1e19c88c6625b92947b49edc4f1131a9fff75a4ca09058a4806aa6990"
+  },
+  "checker_sha256": {
+    "check_alignment_direction.py": "6828367b4aaf1dbe40b51255712a444204cc558e43b73bf7abff47d82c4e079c",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Nine AI-case instances: stipulated mixed comparison, retained capability loss, transfer improvement, dominated expansion, actual demand coverage, failed undelivered transfer, crossed basic losses and faithful revision. Thirty imported practical theorems remain inherited. Normative priority, permissible allocation, truthful correspondence and practical selection are explicit philosophical commitments, not kernel-established ethical facts.",
+  "error": "['PracticalJudgment']"
+}

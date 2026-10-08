@@ -1,0 +1,98 @@
+{
+  "checked_at_utc": "2026-10-07T23:18:02.313217+00:00",
+  "status": "scoped_checks_passed",
+  "scope": "Published primary-source correspondence and author counterreview. Not field intervention, individual-data reanalysis, statistical-test replication, new Lean result or independent acceptance.",
+  "sources_read": {
+    "sahyoun_2019": "Full main article, both tables; reference works and figure not independently audited",
+    "loopstra_tarasuk_2013": "Original abstract only, not full text"
+  },
+  "source_and_checker_bindings": {
+    "sahyoun-2019.xml": true,
+    "loopstra-2013-record.xml": true,
+    "checker": true
+  },
+  "aggregate_receipt": "experiments/integrated-correction/general-framework/generative-basis/situated-kitchen-evidence/published-evidence-checks.json",
+  "aggregate_receipt_sha256": "1ccbe5a177e8768744a34b278f1048ade7ac6526c4121ec7b0fed60dacc850de",
+  "unchanged_inherited_lean_sources": {
+    "PracticalJudgment": true,
+    "SituatedKitchen": true
+  },
+  "local_links_checked": 57,
+  "errors": [],
+  "c23_source_versions": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md": true,
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md": true,
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md": true,
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md": true,
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-PRIORITIES-AND-G0.md": true,
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-INQUIRY-AND-STANDING.md": true,
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-ADEQUACY-CORRESPONDENCE.md": true,
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-CALIBRATION.md": true,
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-EVIDENCE.md": true
+  },
+  "c23_matches_existing_renderer": true,
+  "global_chain_commands": [
+    {
+      "mode": "--render",
+      "exit_code": 2,
+      "output": {
+        "status": "needs-review",
+        "errors": [
+          "Linked source versions changed; reread affected entries before rendering."
+        ],
+        "changes": {
+          "modified_sources": [
+            "RESEARCH.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+            "theories/shengsheng-buxi-generative-existence/README.md"
+          ],
+          "missing_sources": [],
+          "new_pages": [
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-REVISION-CONTINUATION-PROTOCOL.md"
+          ],
+          "removed_pages": []
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "mode": "--check",
+      "exit_code": 2,
+      "output": {
+        "status": "needs-review",
+        "errors": [
+          "Linked source versions changed; reread affected entries before rendering."
+        ],
+        "changes": {
+          "modified_sources": [
+            "RESEARCH.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+            "theories/shengsheng-buxi-generative-existence/README.md"
+          ],
+          "missing_sources": [],
+          "new_pages": [
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md",
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-REVISION-CONTINUATION-PROTOCOL.md"
+          ],
+          "removed_pages": []
+        }
+      },
+      "stderr": ""
+    }
+  ],
+  "diff_check": {
+    "exit_code": 0,
+    "output": ""
+  },
+  "new_file_whitespace_errors": [],
+  "source_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-EVIDENCE.md": "be76f7808b2054895882a6e552c6814d8009501cac71c9dd4ebbaa535f4d619e",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-CALIBRATION.md": "769a8040e6555fe5b180e87f7978d5be362daf60911cdc0208fcc252a5e62622",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md": "cb0f7dd8a51d93e574142a827346c8a7737ba20e280920a1bf812b8a7b0c1423",
+    "sources/community-kitchen-evidence/README.md": "3bc59ff8992d1d93e360762a6b1ecbf834752a242dff5237238305f0c7d15b97",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md": "80beb7a9024f5258bd4ea8115e7703b65e859e15373946c4b31e81b364878712"
+  }
+}

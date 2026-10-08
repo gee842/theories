@@ -1,0 +1,11 @@
+# Acquired local signals and a constructed update gate: protocol
+
+8 October 2026. Ren again wrote “继续” after the [consequence-dependent updater result](EVOLUTION-UPDATER-CONSEQUENCES.md). AI-authored prospective scope.
+
+The exact local inputs to replace are the current network's pre-supplied responsive-rule label and faithful success predicate as controller access. Existing recipe grounding, formed monitoring, material composition and architecture formation already explain related capabilities; do not reopen those generic mechanisms. This study must establish their particular functional correspondence with the retained tanh network and finite-support history.
+
+Proposed construction: acquire zero/one reference readings from initially unknown affine coordinate channels; retain the actual rows; compose local sign comparisons; form the contact that makes a successful combined report inhibit a weight update. Start without these records or connections. Prove the effective rule from the local operation, retaining missing contacts, constant channels, failed transfer and finite construction requirements. Standard calibration and logical gates are not new inventions.
+
+State the reference-production/binding and stable-channel premises. Derive the reader's sign behavior rather than supplying its correct polarity. Do not claim that calibration itself proves its transfer conditions or that construction recipes emerge without lower laws. Compare the resulting native update and histories with the existing abstract rule, then connect activation, maintenance and source exhaustion without resetting the inherited matrix or support. Any additional construction provision must be declared at the original entrance and kept separate from prior operational stock; preserve an underfunded case.
+
+All new proof claims require actual Lean checking with imported modules counted separately. Integrate primary comparisons and substantive author counterreview. The outcome may close this precise constructor/reader correspondence while leaving physical realization, broader candidate discovery, reference warrant and population/ethical claims at their proper scopes. No new empirical data are a prerequisite.

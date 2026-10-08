@@ -1,0 +1,507 @@
+{
+  "status": "passed",
+  "scope": "Documentary consistency only; no ethical proof, empirical validation or independent acceptance.",
+  "errors": [],
+  "earlier_prefixes_preserved": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md": true,
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md": true,
+    "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md": true
+  },
+  "owned_M20_retained": true,
+  "M20_canonical": true,
+  "accepted_alignment_direction_preserved": true,
+  "local_links_checked": 114,
+  "links": [
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "reference": "../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#theoretical-continuation"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "reference": "NONDUAL-METHOD.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "reference": "PHILOSOPHICAL-ACCOUNT.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "reference": "PRACTICAL-JUDGMENT.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-REVISION-CONTINUATION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-VALUE-SCOPE.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "reference": "CONCERN-AND-NEW-REASONS.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "reference": "../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#continued-theoretical-development"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "reference": "CONCERN-AND-NEW-REASONS.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#living-realization-continuation"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "reference": "../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#formed-standing-continuation"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-VALUE-SCOPE.md#10-completion-of-the-two-questions"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#formed-standing-argument"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "reference": "../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#motivational-uptake-continuation"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "reference": "NONINSTRUMENTAL-CONCERN.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "reference": "LIANGZHI-EVOLUTION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#motivational-uptake-argument"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "reference": "../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#continue-until-developmental-wall"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#developmental-wall-investigation"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-INTEGRATION.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "reference": "../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#research-next-developmental-routes"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#next-developmental-route-assessment"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMATIVE-ASSESSMENT-INTEGRATION.md#10-fresh-understanding-and-situated-continuation"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "reference": "VALUATION-IDENTIFICATION-BOUNDS.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "reference": "REWARD-LEARNING-AND-RECIPIENT-CHOICE.md"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "reference": "../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#continue-concern-content-acquisition"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#concern-content-acquisition-account"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#theoretical-continuation"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PHILOSOPHICAL-ACCOUNT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "GOAL-REVISION-CONTINUATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "GOAL-FORMATION-REVISION-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "LIVING-VALUE-SCOPE.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONCERN-AND-NEW-REASONS.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../../../sources/07-shengsheng-buxi/downloads-2026-07-08/2026-07-14-生生不息论.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "ETHICAL-LEARNING-CHECKS.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#living-realization-and-normative-significance"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONCERN-AND-NEW-REASONS.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "LIVING-VALUE-SCOPE.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../../../sources/15-codex-theory-conversations/2026-10-07-shengsheng-ethical-direction.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../../../sources/07-shengsheng-buxi/downloads-2026-07-08/2026-07-14-生生不息论.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "GENERATIVE-PREMISE-DERIVATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "ETHICAL-REALIZATION-CHECKS.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#formed-standing-continuation"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#formed-ethical-standing"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "LIVING-VALUE-SCOPE.md#10-completion-of-the-two-questions"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-SELF-AND-ETHICS.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "CONSTITUTIVE-SIGNIFICANCE-ARGUMENT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "FORMED-STANDING-INDEX-EDITS.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "FORMED-STANDING-CHECKS.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#motivational-uptake-continuation"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#motivational-uptake-and-formation"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONINSTRUMENTAL-CONCERN.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "WARRANT-OF-CONCERN-ARGUMENT.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "PRACTICAL-UPTAKE-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../../../sources/07-shengsheng-buxi/downloads-2026-07-08/2026-07-14-生生不息论.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "MOTIVATIONAL-UPTAKE-INDEX-EDITS.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "MOTIVATIONAL-UPTAKE-CHECKS.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#continue-until-developmental-wall"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#developmental-conditions-and-present-wall"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "LIANGZHI-CALIBRATION-SOURCES.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "YITI-REN-COFORMATION-SOURCES.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "LIANGZHI-NORMATIVE-WARRANT-INTERFACE.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "GOAL-REVISION-CONTINUATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "SELECTOR-REVIEW-COVERAGE-INTEGRATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "CONCERN-DEVELOPMENT-WALL-INDEX-EDITS.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "CONCERN-DEVELOPMENT-WALL-CHECKS.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#research-next-developmental-routes"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#next-developmental-routes"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "FORMATIVE-ASSESSMENT-INTEGRATION.md#10-fresh-understanding-and-situated-continuation"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../../../experiments/recipient-value-learning/README.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/REWARD-LEARNING-AND-RECIPIENT-CHOICE.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../../../sources/32-mental-state-reward-learning-2026-10-06/README.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/VALUATION-IDENTIFICATION-BOUNDS.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../2026-10-05-concern-theory/reward-association/BOUNDED-IDENTIFICATION-REVIEW.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "RECIPIENT-VALUATION-EVIDENCE.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "CONCERN-DEVELOPMENT-ROUTES-INDEX-EDITS.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "CONCERN-DEVELOPMENT-ROUTES-CHECKS.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#continue-concern-content-acquisition"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#concern-content-acquisition"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "FORMATIVE-ASSESSMENT-INTEGRATION.md#10-fresh-understanding-and-situated-continuation"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "YITI-REN-SCOPE-GROUNDING.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "YITI-REN-COFORMATION-SOURCES.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "GOAL-REVISION-CONTINUATION.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "YITI-REN-COFORMATION-SOURCES.md"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "CONCERN-CONTENT-ACQUISITION-INDEX-EDITS.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "reference": "CONCERN-CONTENT-ACQUISITION-CHECKS.json"
+    },
+    {
+      "source": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "reference": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#current-generative-alignment-priority"
+    },
+    {
+      "source": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "reference": "../../theories/shengsheng-buxi-generative-existence/results/ROADMAP.md"
+    },
+    {
+      "source": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md"
+    },
+    {
+      "source": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-REVISION-CONTINUATION-PROTOCOL.md"
+    },
+    {
+      "source": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-REVISION-CONTINUATION.md"
+    },
+    {
+      "source": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "reference": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md"
+    },
+    {
+      "source": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "reference": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#living-realization-and-normative-significance"
+    },
+    {
+      "source": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "reference": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#formed-ethical-standing"
+    },
+    {
+      "source": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "reference": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#motivational-uptake-and-formation"
+    },
+    {
+      "source": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "reference": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#developmental-conditions-and-present-wall"
+    },
+    {
+      "source": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "reference": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#next-developmental-routes"
+    },
+    {
+      "source": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "reference": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#concern-content-acquisition"
+    },
+    {
+      "source": "RESEARCH.md",
+      "reference": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#concern-content-acquisition"
+    },
+    {
+      "source": "RESEARCH.md",
+      "reference": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#concern-content-acquisition-account"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "unified-2026-10-05/ETHICAL-LEARNING.md#concern-content-acquisition"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#concern-content-acquisition-account"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "reference": "ETHICAL-LEARNING.md#concern-content-acquisition"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "reference": "ETHICAL-LEARNING.md#concern-content-acquisition"
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "reference": "../unified-2026-10-05/ETHICAL-LEARNING.md#concern-content-acquisition"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#concern-content-acquisition"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "ETHICAL-LEARNING-INTEGRATION.md#concern-content-acquisition-account"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "CONCERN-CONTENT-ACQUISITION-INDEX-EDITS.json"
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "CONCERN-CONTENT-ACQUISITION-CHECKS.json"
+    }
+  ],
+  "owned_source_sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md": "e3ecb93e4fa97832daa64660544002085465e1b2ba0c8999bbd9169fff1f451d",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md": "c2ad8245d348c5da8d575110188605ae8179f067add7459d3a8885604637c2dd",
+    "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md": "34482cc7194fd270ea394b4f51637d39efa57e8029756412ebb339a314b8df50"
+  },
+  "checker_sha256": "f537e98bbf91e385eedd59075ef2ce5d6a7cb0ac42dc29c23baf8ab309f107d5",
+  "pending_shared_reviews_not_certified": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PLURAL-SYSTEMS-AND-CORRECTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-plural-systems-and-parent-correction.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-SOURCES.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CALIBRATED-UPDATER-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONAL-CORRECTION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-PROTOCOL.md"
+    ],
+    "removed_pages": []
+  },
+  "global_schema_link_errors_not_full_freshness": []
+}

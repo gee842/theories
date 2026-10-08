@@ -1,0 +1,49 @@
+{
+  "scope": "Owned insertions and M23/F29 followup only; shared source review remains separate",
+  "edits": [
+    {
+      "path": "RESEARCH.md",
+      "kind": "owned paragraph after title",
+      "before_sha256": "65bb5838e1424d6cf1488331063e2cfb945c1e1702c98ae49647ba75cf7f9015",
+      "after_sha256": "6c2d53cd93272db6ddce80481ce8f8ff42c480d5994fceb9d63ec3a5f3144c48"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "kind": "owned paragraph after title",
+      "before_sha256": "213be9ca901797345a9c4214814b74d28c4c68b33ff4321d92baaee0b50b2933",
+      "after_sha256": "73e3bf432128a0b38a0cf5b137c3176136bcde4907eeb2658322af17e063c3b6"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "kind": "replace owned next-bridge paragraph with completed scoped result and next extension",
+      "before_sha256": "9f1ee170e5a4d00745e28a76aa94d63a9975ccc90f69fdba8f8792bce2a8f3d8",
+      "after_sha256": "884087fc97f18e8166fa6a7157199650a310d86c544ac20d381fafc06bacc974"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "kind": "owned paragraph after title",
+      "before_sha256": "97a6b836b90540a4e9cde8a89cd421bc44061927b168b4188f7e7d297287621c",
+      "after_sha256": "6fd4415196d03b904886316a96560c8b0fcd9f03d93534b291735889d65d7430"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "kind": "owned paragraph after title",
+      "before_sha256": "f83e5d724fc863e14c4785f1940d691be7a16bf944f4cb780c2f560064b03de2",
+      "after_sha256": "fc032f0df470a4040db77596fe4eb4ef3f3ae46874b8729d331a3681ad331b2f"
+    }
+  ],
+  "paired_rows": [
+    "M23",
+    "F29"
+  ],
+  "other_entries_preserved": 88,
+  "other_rendered_lines_preserved": true,
+  "owned_fingerprints": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-OBSERVATION-REPAIR.md": "3ba9f698779da2a481dc2956962f9a52a6077ac32b781c40fb9d74f937cc5a90",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ObservationRepair.lean": "1aa81a713d2333ae73b1d0643a09c3306b7e4c189f0570a8545bd4a2c5bed4f4",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_observation_repair.py": "328bf2c7d0c488d2f5a4c07eedc836d8406b7273316a8d6fa1d5d42194ecbd2e",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/observation-repair-verification.json": "a87216d6181de00d6a3e76d21cbdb6d2289d6c46d254534e43a7c65d0516bc68",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/compare_observation_repair.py": "f532cfca226b93dff7d67dd2940fe410dc451065971039519a45a15cc2cbcc0f",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/observation-repair-model-checks.json": "f88e24c036ac1546ddf4ea8e42eebbc154731721a457998fb01e0e28ee42459e"
+  }
+}

@@ -1,0 +1,344 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-10-07T22:58:48.444466+00:00",
+  "scope": "This round: frozen proof evidence, owned documentation fragments and C30/F22. No proof rerun or global index freshness claim.",
+  "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/unfolding-preservation-checks/20261007T225350.404286Z/receipt.json",
+  "receipt_sha256": "57a38f199bdfff852dd1327f7634160580e0619f2dc69de3325f77331f08d103",
+  "pointer_sha256": "6294083867c4a3222959c9d895506d9def4fb4ab36acb8ee99bb5835194b7449",
+  "counts": {
+    "inherited": {
+      "modules": 9,
+      "declarations": 248,
+      "theorems": 181,
+      "empty_audit_dependencies": 194,
+      "standard_dependency_audits": 54
+    },
+    "new": {
+      "modules": 2,
+      "declarations": 64,
+      "theorems": 42,
+      "empty_audit_dependencies": 64,
+      "standard_dependency_audits": 0
+    }
+  },
+  "all_new_audits_empty": true,
+  "inherited_audit_maps_unchanged": true,
+  "baselines": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-composition-checks/20261007T223124.386181Z/receipt.json",
+      "sha256": "ee6c7cbe004afe3e0f6489948400488212a8f04b5267af98b8625ea786456ebd"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/formed-grounds-checks/20261007T221235.147749Z/verification.json",
+      "sha256": "109f3cb54fbeba8e1b5e3ddd1eaf97fe5ae8045c3c2c17c12cb97dfd1c123a59"
+    }
+  ],
+  "retained_artifacts_checked": 69,
+  "source_and_log_bindings": [
+    {
+      "module": "GenerativeCore",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "new": false,
+      "audits": 18,
+      "audit_log_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "module": "HistoryRealization",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/HistoryRealization.lean",
+      "sha256": "22785f31280a7bbac5f89d7754cb6896830a6dc2d81949b9f3adfabd126e8fa9",
+      "new": false,
+      "audits": 7,
+      "audit_log_sha256": "97266bca4133cb46c4605b714397a8978a46343bd795429e184693890f223efe"
+    },
+    {
+      "module": "ExplanatoryNecessity",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryNecessity.lean",
+      "sha256": "e6ee0229ef68da50a62ccc0d079f7e38866f86813d4e7309e681ecc17a923df5",
+      "new": false,
+      "audits": 17,
+      "audit_log_sha256": "6dbed6431dcbda668df4d730c07dde76db30141da09973cd6bcd78385c13a37f"
+    },
+    {
+      "module": "ExplanatoryStructure",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryStructure.lean",
+      "sha256": "ecc83334e6d7c136cbeab5f6094e94b82b1522011542feb9c7c0faaf5f7cc52e",
+      "new": false,
+      "audits": 17,
+      "audit_log_sha256": "87cc206c8e808eae9592980eadd73503489a2a0e4d6a475bae6d59df0a602899"
+    },
+    {
+      "module": "ExplanatoryUniqueness",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryUniqueness.lean",
+      "sha256": "25df183309a4e5bdda32dcb45a36cb57f3b6939f5a8f2abd428469e32030f5de",
+      "new": false,
+      "audits": 15,
+      "audit_log_sha256": "3e0af215b368d02b0cb3ae037c54155d43e8cc6ba69fe75c46826ab0d6921503"
+    },
+    {
+      "module": "KnowledgeCorrespondence",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/KnowledgeCorrespondence.lean",
+      "sha256": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+      "new": false,
+      "audits": 34,
+      "audit_log_sha256": "c377f105cfd06f0e0910406603df50a3a522626e83669b2e8308f8018e2c7f21"
+    },
+    {
+      "module": "NormativeActivity",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/NormativeActivity.lean",
+      "sha256": "15105e2caa43fb9b00f228343be16a7d729ff5a3da10c506d134d07417ae622c",
+      "new": false,
+      "audits": 56,
+      "audit_log_sha256": "a46082bf5b466328452aaad71b64bafe72fd079a2f3c95b0564ab2f5e80bfa61"
+    },
+    {
+      "module": "StandardsBridge",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/StandardsBridge.lean",
+      "sha256": "f061dbc44da5cdf11ac5ff79b3f89558c7e177b23b9f121c1048c16ed353a42a",
+      "new": false,
+      "audits": 39,
+      "audit_log_sha256": "0a5fa190c7e00d7ebf6b96fb1bb80a052e47297c9df86f6667131b30dc8a6566"
+    },
+    {
+      "module": "FormedGrounds",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormedGrounds.lean",
+      "sha256": "15764b3258f843dc967fdfabfd17cd5f47a6eb740a4aa5a3465ceae61dea17ba",
+      "new": false,
+      "audits": 45,
+      "audit_log_sha256": "fd611ab17a7183bedcf5ac06a798925b8212f43ef681fabcc0abfb91e8c4df3c"
+    },
+    {
+      "module": "UnfoldingPreservation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/UnfoldingPreservation.lean",
+      "sha256": "19ac73d41d6534617337f24e0d4a313a046e0e7bc2a82f2f8ce95bb7dedf37d6",
+      "new": true,
+      "audits": 28,
+      "audit_log_sha256": "655b556fb5a851407550a153620616a81b6b9c7f13986b657b200fc5e19f78a3"
+    },
+    {
+      "module": "FormedUnfoldingPreservation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/FormedUnfoldingPreservation.lean",
+      "sha256": "26c1a578b00b74065df6bc214e71eb2383319761ca9440ebf9a9e4703f216462",
+      "new": true,
+      "audits": 36,
+      "audit_log_sha256": "657d6d4f5fe6738b093eec8f76828406e5582e983b0e9c42959a8545ebf68a0b"
+    }
+  ],
+  "reviewed_source_hashes_exposed": {
+    "UnfoldingPreservation": "19ac73d41d6534617337f24e0d4a313a046e0e7bc2a82f2f8ce95bb7dedf37d6",
+    "FormedUnfoldingPreservation": "26c1a578b00b74065df6bc214e71eb2383319761ca9440ebf9a9e4703f216462"
+  },
+  "review_binds_receipt_hash": true,
+  "owned_fragments": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "fragment_sha256": "b8dbeca0d6fe09539e7ff1c8438876841044782f59bfda7d1bb04bbcae533efd",
+      "present": true
+    },
+    {
+      "path": "RESEARCH.md",
+      "fragment_sha256": "a5bf30aabae5651403bb3208b2ba4d001082fdec60a4e8b4e5e4db2421e8b62e",
+      "present": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "fragment_sha256": "679bb7520264e5543a2213d9f9fff6e813789e3c3b275d7d0c1e76f6c6e18f82",
+      "present": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "fragment_sha256": "719c3f2c3645c08a00414cf8daea0706ea7289dc86d11435fa978f170239e9b6",
+      "present": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "fragment_sha256": "acebc8a0fdf586a424ade006e3c36f077e6fd2e07f91f2ea8eb319e86a089301",
+      "present": true
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "fragment_sha256": "e38e534c3716272038b75c19e32f7147156467597944fc179888d1045bbe4a10",
+      "present": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "fragment_sha256": "e33eb0a703b3fb4078b348b8042737672bf8e1ecbc536d5080b82d2d6132cc51",
+      "present": true
+    }
+  ],
+  "owned_rows": [
+    "C30",
+    "F22"
+  ],
+  "owned_rows_and_rendering_match": true,
+  "other_rows_preservation_attested_by_edit_manifest": true,
+  "local_links_checked": 36,
+  "links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/UnfoldingPreservation.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/FormedUnfoldingPreservation.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormedGrounds.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md",
+      "reference": "UNFOLDING-PRESERVATION-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/unfolding-preservation-checks/20261007T225350.404286Z/receipt.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_unfolding_preservation.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md",
+      "reference": "UNFOLDING-PRESERVATION-CHECKS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md",
+      "reference": "UNFOLDING-PRESERVATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormedGrounds.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/UnfoldingPreservation.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/FormedUnfoldingPreservation.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/unfolding-preservation-checks/20261007T225350.404286Z/receipt.json"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "reference": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "reference": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "reference": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_unfolding_preservation.py"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_unfolding_preservation.py"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "reference": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_unfolding_preservation.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "UNFOLDING-PRESERVATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "UNFOLDING-PRESERVATION-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_unfolding_preservation.py"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "reference": "../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "reference": "../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "reference": "check_unfolding_preservation.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "UNFOLDING-PRESERVATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "UNFOLDING-PRESERVATION-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "UNFOLDING-PRESERVATION-INDEX-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "UNFOLDING-PRESERVATION-CHECKS.json"
+    }
+  ],
+  "concurrent_global_changes_not_certified": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-COMPOSITION-INTEGRATION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-JOINING-INTEGRATION.md"
+    ],
+    "removed_pages": []
+  },
+  "sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md": "24f5de5fa7a5231dce8f432d5e55c41d51d374e4ea091079a58b0e3e229b922d",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md": "5a8b006e5a2093e9b89d88627ac5f4c1f4dfc3f0ab2da375213db4c9f0a89cc7",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-CHECK.py": "8942b2bcfb4d0fc8e7667e3f9520d43fd4540a29474e0d107b780604ce44cdf9",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INDEX-EDITS.json": "e578ff3fa77fa0bdd215b205b95b1f99ef3d5326c8d02496b4e57f729962e563",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/build_generative_chain.py": "200321a64e3d7e9432f97cb4122f39b6217fba17567b3b276e312f144e0ea403"
+  }
+}

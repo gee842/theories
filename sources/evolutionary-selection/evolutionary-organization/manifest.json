@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-08",
+  "kind": "original source preservation, not new biological replication",
+  "files": [
+    {
+      "file": "ratcliff2015.html",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4309424/?pdf=render",
+      "title": "Origins of multicellular evolvability in snowflake yeast",
+      "bytes": 216316,
+      "sha256": "1ce86a715a15e321a0f9775a42167a030efc6b0b35fd54729df7bd94c7c828a8",
+      "retrieved_date": "2026-10-08",
+      "original_bytes_unchanged": true,
+      "publisher_checksum_available": false
+    },
+    {
+      "file": "doulcier2024.xml",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11297203/fullTextXML",
+      "title": "Stability of ecologically scaffolded traits during evolutionary transitions in individuality",
+      "bytes": 188790,
+      "sha256": "a7e5a62f1276ee2a0aa5406a0510a643609538ae80126187a8e0a3c6f5d47402",
+      "retrieved_date": "2026-10-08",
+      "original_bytes_unchanged": true,
+      "publisher_checksum_available": false
+    }
+  ],
+  "reused_source": {
+    "path": "sources/evolutionary-selection/doulcier-2025/article.xml",
+    "sha256": "642e289abfd4d12f061e8416690d8bfea182b0314afa3fc2714c7c8e2d3587e5",
+    "reading": "Results: Propagating mutational data to the full genealogy; Experimental confirmation of adaptive changes"
+  }
+}

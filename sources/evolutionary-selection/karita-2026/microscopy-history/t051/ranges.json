@@ -1,0 +1,61 @@
+{
+  "archive_path": "Yuya_Karita/AxioZoom/20231123-WS-KB-dilution6-1x/from-t5h-01.czi",
+  "file_bytes": 13272869952,
+  "ranges": [
+    {
+      "file": "007438923872-00004096-subblock-prefix.bin",
+      "offset": 7438923872,
+      "bytes": 4096,
+      "sha256": "3f9edea632d23aa12dae46eaf4ecd3baa9119fb66a99af8a38613edc756c3685",
+      "status": 206,
+      "request_headers": {
+        "Range": "bytes=7438923872-7438927967",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"3171fec40-64bd9a2e27340\""
+      },
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20231123-WS-KB-dilution6-1x/from-t5h-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20231123-WS-KB-dilution6-1x/from-t5h-01.czi",
+      "headers": {
+        "Date": "Thu, 08 Oct 2026 08:06:57 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:06:13 GMT",
+        "ETag": "\"3171fec40-64bd9a2e27340\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 7438923872-7438927967/13272869952",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "007443592478-02818048-central-row-band.bin",
+      "offset": 7443592478,
+      "bytes": 2818048,
+      "sha256": "5f0d7289fa4471ba66877087d804319a82ccfa57cb3cd27a56739094235ed2e7",
+      "status": 206,
+      "request_headers": {
+        "Range": "bytes=7443592478-7446410525",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"3171fec40-64bd9a2e27340\""
+      },
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20231123-WS-KB-dilution6-1x/from-t5h-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20231123-WS-KB-dilution6-1x/from-t5h-01.czi",
+      "headers": {
+        "Date": "Thu, 08 Oct 2026 08:06:58 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:06:13 GMT",
+        "ETag": "\"3171fec40-64bd9a2e27340\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "2818048",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 7443592478-7446410525/13272869952",
+        "Connection": "close"
+      }
+    }
+  ],
+  "reused": []
+}

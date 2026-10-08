@@ -1,0 +1,56 @@
+{
+  "entry_ids": [
+    "C28",
+    "F20"
+  ],
+  "preserved_other_entries": 72,
+  "added_entries": [
+    {
+      "id": "C28",
+      "title_zh": "尺度描述、误差与具体条件",
+      "title_en": "Scale descriptions, error and particular conditions",
+      "claim_zh": "同一历史的变化描述可在明确误差界内组合，并支持逐项条件判断；精确总量仍可能遗漏具体损失，组织变化可使旧描述失效。",
+      "claim_en": "Changing descriptions of one history compose under explicit error bounds and support indexed condition judgments; exact totals can still omit particular losses, and organizational change can defeat an earlier description.",
+      "scope_zh": "21项新 Lean 定理；有限时域条件推论，法则、校准和阈值根据另明示；非经验验证或普遍伦理证明",
+      "scope_en": "21 new Lean theorems; conditional finite-horizon inference with laws, calibration and threshold warrant explicit; no empirical validation or universal ethical proof",
+      "links": [
+        {
+          "label_zh": "当前双语论述",
+          "label_en": "Current bilingual account",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md"
+        },
+        {
+          "label_zh": "整合、反审与来源",
+          "label_en": "Integration, counterreview and sources",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-INTEGRATION.md"
+        }
+      ]
+    },
+    {
+      "id": "F20",
+      "title_zh": "尺度近似与条件传递的形式检查",
+      "title_en": "Formal checks of scale approximation and condition transport",
+      "claim_zh": "有限时域误差递推、两尺度组合、指标校准和条件传递经过实查，并保留耦合变化、误差累积及总量丢失局部条件的反例。",
+      "claim_en": "Checked finite-horizon error propagation, two-scale composition, readout calibration and condition transport retain counterexamples for changed coupling, accumulated error and local conditions lost by exact totals.",
+      "scope_zh": "21项新定理／42项继承审计；依赖标准逻辑，未构造自动尺度发现或控制策略转换",
+      "scope_en": "21 new theorems / 42 inherited audits; standard logical dependencies, without automatic scale discovery or controller synthesis",
+      "links": [
+        {
+          "label_zh": "证明与前提",
+          "label_en": "Proof and hypotheses",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-PROOF.md"
+        },
+        {
+          "label_zh": "Lean 源码",
+          "label_en": "Lean source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean"
+        },
+        {
+          "label_zh": "实查回执",
+          "label_en": "Checked receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/scales-verification.json"
+        }
+      ]
+    }
+  ]
+}

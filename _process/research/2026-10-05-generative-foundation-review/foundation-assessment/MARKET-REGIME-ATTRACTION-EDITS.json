@@ -1,0 +1,158 @@
+{
+  "scope": "Owned attraction continuation, preserving earlier boundary proofs and all concurrent work.",
+  "files": {
+    "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md": {
+      "before_bytes": 16057,
+      "before_sha256": "e94227bf64db358cc8f7287321750d71f7ff36a528a59c44b4bc3e4cd3bc52a4",
+      "edit": "append",
+      "append_bytes": 772,
+      "after_owned_sha256": "cb0e03df5e3c5394c2ab2e69a942177a5e2a88211cfd53322381cde28a39dc2a"
+    },
+    "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md": {
+      "before_bytes": 41423,
+      "before_sha256": "932d62cc6316722bf5f95d6cfff51b215a0b6f4da9988712a5dfe26d2fbfb7b9",
+      "edit": "append",
+      "append_bytes": 11252,
+      "after_owned_sha256": "380d31a7ec19d19149dd8356fee64ef4902ac646ff37f46ba9986521d897b445"
+    },
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md": {
+      "before_bytes": 27553,
+      "before_sha256": "5cfb7b4d14b9a9f7d9ed216111cdd0784257a081fa789885cae43e3d1d116200",
+      "edit": "append",
+      "append_bytes": 3643,
+      "after_owned_sha256": "96e910be89a9197fd97dedd620e3e3f7056eba56fe6fbcf8fd3c61c6ed786cf7"
+    },
+    "experiments/market-generativity/formal/README.md": {
+      "before_bytes": 11936,
+      "before_sha256": "d75b82797acbba6e4ca2be8909587ee8649d41d5ae1ecc50bca70f77fba4bc1b",
+      "edit": "append",
+      "append_bytes": 4288,
+      "after_owned_sha256": "6203e2c8605246d0b538c9e6864f5e3983e02861475c549d8f5cac57c13ef2d4"
+    },
+    "RESEARCH.md": {
+      "edit": "insert notice",
+      "before_bytes": 551461,
+      "before_sha256": "302d2d226b38ee6c347833debea6b630a9603a04e80d62a4c336ba0d66004966",
+      "owned_fragment": "**局部吸引与实际支持 / Local attraction and actual support，2026-10-08。** [原模型的三态结构、反审与实查](_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#attraction-and-support-coupling)完成参数族物理平衡分类、指定截面的双吸引及内部不稳定，并严格接回原支持与实际失效守卫；38项新 Lean 定理／52项审计，58项导入定理／66项审计分列。/ The low selection projection attracts locally but its essential support fails finitely; the high neighborhood meets the existing nonfailure certificate. Next: supported entry and sustained change across full state domains before support fails. No all-parameter bifurcation or empirical threshold is certified.\n\n",
+      "after_owned_sha256": "2045773eca6cc9c24635e2b5b8eed86651e6caba30923f17e70eba4d5eaf7e0b"
+    },
+    "theories/shengsheng-buxi-generative-existence/README.md": {
+      "edit": "insert notice",
+      "before_bytes": 784518,
+      "before_sha256": "1597c12e62b5384deb8ba03a67ce58da6e24d845dadd2f6e28595ad7f6966301",
+      "owned_fragment": "**吸引、退化与实际继续 / Attraction, degeneration and actual continuation，2026-10-08。** [市场接续](unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md#local-attraction-and-actual-support)新增38项 Lean 定理／52项审计：局部双吸引、内部不稳定及同一运行历史中的支持结局。/ The selected rational connection is complete; reproducing selection need not preserve its necessary support. Full domains, supported entry and timely sustained change remain open; existing normative grounds are reused.\n\n",
+      "after_owned_sha256": "12428f3411be6f0211d950e7247082efb0d2b996bb8af9676c7cccc98fa990b6"
+    },
+    "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md": {
+      "edit": "insert notice",
+      "before_bytes": 47252,
+      "before_sha256": "e5ed229f70a8a0adad9127a48422ce3ab49b6b78575c199c761da6750d85feaa",
+      "owned_fragment": "**市场的实际吸引与支持结局 / Market attraction and coupled support，2026-10-08。** [本轮结果及反审](../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#attraction-and-support-coupling)以38项新 Lean 定理／52项审计完成原参数截面的局部双吸引、内部不稳定和有限支持失效；高端非失效复用旧证书。/ Reuse this completed local result. Next: supported entry and sustained changes across full state domains before support fails, including timing and rate. Full basins, all-parameter stability and empirical calibration remain unproved.\n\n",
+      "after_owned_sha256": "bbc63138c550fe067914f0af6aecb652b4871fcaba9aea0ab24b2bbfd66e7b44"
+    },
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md": {
+      "edit": "insert notice",
+      "before_bytes": 102503,
+      "before_sha256": "0c7d6bf5132db752dcf885e322064ac99e34304f5d2ff77cd332b557cde292da",
+      "owned_fragment": "**吸引与纠正窗口，2026-10-08。** [新的选择—支持连接](MARKETS-AND-GENERATIVE-REGIMES.md#local-attraction-and-actual-support)证明指定模型中局部低端吸引可以与必要支持的有限失效相连，即使既定纠正足额执行。38项新 Lean 定理／52项审计通过。/ Alignment must assess changed selection relations and the actual support/timing of correction together under existing practical principles. The local connection is complete; supported entry and full-domain transitions remain open.\n\n",
+      "after_owned_sha256": "17fb5b4c1d5ad74cf89d4d3a129d2f48e2705e37a9f2888f64fa9d52e2a52f12"
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md": {
+      "edit": "insert notice",
+      "before_bytes": 217498,
+      "before_sha256": "e32e689dfa6d10b9db958793d38d62568b300bb3fb61f69459ee908b69269548",
+      "owned_fragment": "**局部吸引与支持 / Local attraction and support，2026-10-08。** M20 成对接入[三态、吸引、实际支持及反审](../foundation-assessment/MARKET-INTERNET-DEGENERATION.md#attraction-and-support-coupling)：38项新 Lean 定理／52项新审计，58项继承定理／66项审计分列。/ Only owned additions and authored/read source versions change; other rows and pending reviews remain. [Edits](../foundation-assessment/MARKET-REGIME-ATTRACTION-EDITS.json); [scoped checks](../foundation-assessment/MARKET-REGIME-ATTRACTION-CHECKS.json). No full-table freshness, all-parameter bifurcation, real-state extension, empirical calibration or independent acceptance.\n\n",
+      "after_owned_sha256": "8012ce7cf8a226c0eceda4e752746be008516fdb60c952d20f47fd548504ee95"
+    }
+  },
+  "scientific_receipt": "experiments/market-generativity/formal/attraction-verification.json",
+  "chain": {
+    "entry": "M20",
+    "field_additions": {
+      "claim_zh": " 局部吸引续研已把原市场模型的双吸引与内部不稳定接回同一历史的实际支持：选择组织能够吸收扰动，同时耗尽必要支持；高端保护与低端有限失效分列。",
+      "claim_en": " The attraction continuation connects two local attractors and interior instability to actual support in the same market history: a selection organization can absorb perturbations while exhausting essential support; high-side protection and low-side finite failure remain distinct.",
+      "scope_zh": " 本轮38项新 Lean 定理／52项声明审计，58项导入定理／66项审计分列；有理参数族平衡分类、指定截面的局部趋近和有限脱离、逐步对应及实际失效守卫已查。无完整吸引域、全部参数分岔、实数推广、经验校准或独立验收。",
+      "scope_en": " This continuation adds 38 Lean theorems / 52 declaration audits and separately rebuilds 58 inherited theorems / 66 audits: rational fixed-state classification, local approach and finite escape at a specified parameter slice, exact coupling and guarded outcomes. No full basin, all-parameter bifurcation, real-state extension, calibration or independent acceptance.",
+      "connection_zh": " 局部三态与支持连接完成；继续研究有支持的进入和持续改变怎样在实际支持失效前跨越完整状态域分界，速率属于这条时序问题。",
+      "connection_en": " The local three-state and support connection is complete. Next: supported entry and sustained change across full state domains before actual support fails; rate belongs to this timing problem."
+    },
+    "added_links": [
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md#local-attraction-and-actual-support",
+        "label_zh": "局部吸引与实际支持",
+        "label_en": "Local attraction and actual support"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#attraction-and-support-coupling",
+        "label_zh": "三态、支持及反审",
+        "label_en": "Three states, support and counterreview"
+      },
+      {
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#continue-regime-attraction-and-support",
+        "label_zh": "继续吸引与支持研究的指示",
+        "label_en": "Attraction and support continuation directive"
+      },
+      {
+        "path": "experiments/market-generativity/formal/RegimeAttraction.lean",
+        "label_zh": "吸引与实际守卫证明",
+        "label_en": "Attraction and actual guard proofs"
+      },
+      {
+        "path": "experiments/market-generativity/formal/attraction-verification.json",
+        "label_zh": "38项定理实查回执",
+        "label_en": "38-theorem verification receipt"
+      },
+      {
+        "path": "experiments/market-generativity/formal/figures/regime-fixed-states.png",
+        "label_zh": "平衡分支及已证局部行为",
+        "label_en": "Fixed branches and certified local behavior"
+      }
+    ],
+    "entry_before_sha256": "421dc9f26e83a8f13f6d88e8b7bcad38aad720a41babc8cc4db1b64255412fe7",
+    "other_entries_preserved": true,
+    "other_rendered_lines_preserved": true,
+    "known_discovery_paths_preserved": true,
+    "reviewed_sources_updated": [
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md",
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "experiments/market-generativity/formal/RegimeAttraction.lean",
+      "experiments/market-generativity/formal/attraction-verification.json",
+      "experiments/market-generativity/formal/figures/regime-fixed-states.png"
+    ],
+    "pending_reviews": {
+      "modified_sources": [
+        "RESEARCH.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+        "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+        "theories/shengsheng-buxi-generative-existence/README.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+        "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-CORRESPONDENCE.md"
+      ],
+      "missing_sources": [],
+      "new_pages": [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-ARGUMENT.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-PROTOCOL.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-REVIEW.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md"
+      ],
+      "removed_pages": [
+        "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md"
+      ]
+    },
+    "schema_link_errors": [],
+    "old_row_sha256": "a75b98db62a1a92360cb06aaea861d829df9fa5f2a38bc1de92fc8405a2ce45f",
+    "new_row_sha256": "7601f07eb358ce3435c7f90e0f9a8e6f2a2e3ff7de9e33c25b79609118d15f20"
+  }
+}

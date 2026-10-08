@@ -1,0 +1,9 @@
+import ChanceAdequacy
+#check ChanceAdequacy.mass_monotone
+#check ChanceAdequacy.positive_added_event_strictly_increases_mass
+#check ChanceAdequacy.dirac_mass_positive_iff
+#check ChanceAdequacy.all_weights_preserve_mass_iff
+#check ChanceAdequacy.fulfillment_gives_chance_floor
+#check ChanceAdequacy.repair_covers_target_and_candidate
+#check ChanceAdequacy.repair_adds_positive_new_protection
+#check ChanceAdequacy.positive_chance_can_miss_due_protection

@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "utc": "20261008T095338.032114Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "formative-assessment-checks/20261008T095338.032114Z",
+  "source_sha256": {
+    "PracticalJudgment": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "ClassificationRevision": "daba946b4908d975196edd781e4e0b46a3bef4a497cfcf40478359a69c924e59",
+    "FormativeAssessment": "91942f5ea665815add43eaccb942bc765c3dfd103f280643638e3277634ff406"
+  },
+  "checker_sha256": {
+    "check_formative_assessment.py": "a3734f50c52e01e777bf99147d172a148b493d8b9952e7513c301200d7fc8a9e",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Assessment can form a request-sensitive route; faithful current evidence need not identify earlier capacity. All finite adaptive continuations after a specified coalescing event fail initial-route recovery; an earlier retained record succeeds. Prompted success, acquired contrast and dated-record consistency are separate. Native circuit laws, access, credits and semantic interpretation remain supplied. No general understanding criterion or empirical claim.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "FormativeAssessment.lean:186:2: error: unsolved goals\ncase inl.intro\na : Nat \u00d7 Bool\nb : Bool\nleft\u271d : a = (0, true)\nright\u271d : b = false\n\u22a2 b = true \u2194\n    \u00aca.fst = 0 \u2227\n      (step (step { linked := false, credits := 3 } (Action.request true)).fst Action.form).fst.linked = true \u2227\n        a.snd = true\nFormativeAssessment.lean:188:2: error: unsolved goals\ncase inr.intro\na : Nat \u00d7 Bool\nb : Bool\nleft\u271d : a = (1, true)\nright\u271d : b = true\n\u22a2 b = true \u2194 \u00aca.fst = 0 \u2227 a.snd = true\n"
+}

@@ -1,0 +1,114 @@
+{
+  "status": "passed",
+  "age_intervals": 1788,
+  "pieces": 2378,
+  "window": {
+    "start": "4169826745986938477/1000000000000000000",
+    "end": "750715717077255249/1250000000000000",
+    "duration": "596402746915817260723/1000000000000000000"
+  },
+  "separations": [
+    {
+      "lower": "physics",
+      "higher": "arx_summary",
+      "margin": "52808976850507722331884114569598277798087936629/15625000000000000000000000000000000000000000",
+      "per_heater_margins": {
+        "Q1": "978461168832534294271973512183262418199576115637/500000000000000000000000000000000000000000000",
+        "Q2": "711426090383712820348318154043882471339237856491/500000000000000000000000000000000000000000000"
+      },
+      "separated": true
+    },
+    {
+      "lower": "ann",
+      "higher": "arx_summary",
+      "margin": "34069179003320458784010317187543274346885895895043/10000000000000000000000000000000000000000000000",
+      "per_heater_margins": {
+        "Q1": "2224125587752599475447206049741340586285351601559/1000000000000000000000000000000000000000000000",
+        "Q2": "11827923125794464029538256690129868484032379879453/10000000000000000000000000000000000000000000000"
+      },
+      "separated": true
+    }
+  ],
+  "ages": {
+    "physics": {
+      "max": 2.0280916690826416,
+      "deadlines": {
+        "1": {
+          "certainly_within": 0,
+          "certainly_beyond_timestamp_deadline": 0,
+          "undetermined": 297
+        },
+        "2": {
+          "certainly_within": 0,
+          "certainly_beyond_timestamp_deadline": 0,
+          "undetermined": 297
+        },
+        "3": {
+          "certainly_within": 297,
+          "certainly_beyond_timestamp_deadline": 0,
+          "undetermined": 0
+        }
+      }
+    },
+    "arx_summary": {
+      "max": 2.643852472305298,
+      "deadlines": {
+        "1": {
+          "certainly_within": 0,
+          "certainly_beyond_timestamp_deadline": 345,
+          "undetermined": 252
+        },
+        "2": {
+          "certainly_within": 310,
+          "certainly_beyond_timestamp_deadline": 0,
+          "undetermined": 287
+        },
+        "3": {
+          "certainly_within": 597,
+          "certainly_beyond_timestamp_deadline": 0,
+          "undetermined": 0
+        }
+      }
+    },
+    "ann": {
+      "max": 2.9395909309387207,
+      "deadlines": {
+        "1": {
+          "certainly_within": 0,
+          "certainly_beyond_timestamp_deadline": 0,
+          "undetermined": 297
+        },
+        "2": {
+          "certainly_within": 0,
+          "certainly_beyond_timestamp_deadline": 0,
+          "undetermined": 297
+        },
+        "3": {
+          "certainly_within": 297,
+          "certainly_beyond_timestamp_deadline": 0,
+          "undetermined": 0
+        }
+      }
+    },
+    "arx_figure": {
+      "max": 2.325789213180542,
+      "deadlines": {
+        "1": {
+          "certainly_within": 0,
+          "certainly_beyond_timestamp_deadline": 338,
+          "undetermined": 259
+        },
+        "2": {
+          "certainly_within": 298,
+          "certainly_beyond_timestamp_deadline": 0,
+          "undetermined": 299
+        },
+        "3": {
+          "certainly_within": 597,
+          "certainly_beyond_timestamp_deadline": 0,
+          "undetermined": 0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,199 @@
+import GenerativeClosure
+import Depletion
+
+/-!
+Concrete infinitely indexed constraints for the inherited generative interface.
+Different thresholds have different operational capability sets, so this is
+not infinity obtained by repeating one proposition with redundant syntax.
+Observation and spending laws are explicit local inputs, not universal physics.
+-/
+
+namespace InquiryRoot
+
+/-- Capacity n retains exact values below n and merges every value at least n. -/
+def clippedObservation (n hidden : Nat) : Nat := min hidden n
+
+/-- One common binary decoder must answer the threshold question at every
+    unresolved hidden value. This is existence, not free physical installation. -/
+def ThresholdAvailable (n k : Nat) : Prop :=
+  ∃ decoder : Nat → Bool,
+    ∀ hidden, decoder (clippedObservation n hidden) = decide (hidden ≤ k)
+
+theorem threshold_available_iff (n k : Nat) : ThresholdAvailable n k ↔ k < n := by
+  constructor
+  · rintro ⟨decoder, correct⟩
+    by_cases hn : k < n
+    · exact hn
+    have hn' : n ≤ k := by omega
+    have h0 : decoder n = true := by
+      simpa [clippedObservation, Nat.min_eq_right hn'] using correct k
+    have hn1 : n ≤ k + 1 := by omega
+    have hkfalse : ¬ k + 1 ≤ k := by omega
+    have h1 : decoder n = false := by
+      simpa [clippedObservation, Nat.min_eq_right hn1, hkfalse] using correct (k + 1)
+    rw [h0] at h1
+    cases h1
+  · intro hkn
+    refine ⟨fun signal => decide (signal ≤ k), ?_⟩
+    intro hidden
+    simp only [clippedObservation, decide_eq_decide]
+    omega
+
+theorem every_threshold_has_a_finite_realization (k : Nat) :
+    ThresholdAvailable (k + 1) k :=
+  (threshold_available_iff _ _).mpr (by omega)
+
+theorem next_threshold_exceeds_that_realization (k : Nat) :
+    ¬ ThresholdAvailable (k + 1) (k + 1) := by
+  intro h
+  have := (threshold_available_iff _ _).mp h
+  omega
+
+/-- For any two different query thresholds there is a capacity that separates
+    their answerability. No assertion that one finite observer answers them all. -/
+theorem threshold_capability_sets_pairwise_distinct {k l : Nat} (hkl : k < l) :
+    ∃ n, ThresholdAvailable n k ∧ ¬ ThresholdAvailable n l := by
+  refine ⟨k + 1, every_threshold_has_a_finite_realization k, ?_⟩
+  intro h
+  have := (threshold_available_iff _ _).mp h
+  omega
+
+def spendingProcess : Generative.Process Nat Unit where
+  step s _ t := s = t + 1
+
+theorem spending_trace_iff (s t : Nat) (actions : List Unit) :
+    Generative.Trace spendingProcess s actions t ↔ s = t + actions.length := by
+  induction actions generalizing s with
+  | nil => simpa using (Generative.trace_nil_iff (P := spendingProcess) (s := s) (t := t))
+  | cons a rest ih =>
+    rw [Generative.trace_cons_iff]
+    constructor
+    · rintro ⟨middle, hstep, htail⟩
+      have hs : s = middle + 1 := hstep
+      have hm := (ih middle).mp htail
+      simp only [List.length_cons]
+      omega
+    · intro h
+      refine ⟨t + rest.length, ?_, (ih _).mpr rfl⟩
+      change s = t + rest.length + 1
+      simpa only [List.length_cons, Nat.add_assoc] using h
+
+theorem spending_feasible_iff (fuel : Nat) (actions : List Unit) :
+    Generative.Feasible spendingProcess fuel actions ↔ actions.length ≤ fuel := by
+  constructor
+  · rintro ⟨remaining, htrace⟩
+    exact Generative.trace_length_bound (fun n => n)
+      (fun s _ t hs => by change s = t + 1 at hs; change t < s; omega) htrace
+  · intro h
+    refine ⟨fuel - actions.length, (spending_trace_iff _ _ _).mpr ?_⟩
+    omega
+
+theorem every_budget_excludes_a_different_horizon (fuel : Nat) :
+    Generative.Feasible spendingProcess fuel (List.replicate fuel ()) ∧
+    ¬ Generative.Feasible spendingProcess fuel (List.replicate (fuel + 1) ()) := by
+  constructor
+  · apply (spending_feasible_iff _ _).mpr
+    simp
+  · intro h
+    have bound := (spending_feasible_iff _ _).mp h
+    simp only [List.length_replicate] at bound
+    omega
+
+structure InquiryScenario where
+  capacity : Nat
+  threshold : Nat
+  fuel : Nat
+  horizon : Nat
+
+def observationTask (w : InquiryScenario) : Prop :=
+  ThresholdAvailable w.capacity w.threshold
+
+def repeatedTask (w : InquiryScenario) : Prop :=
+  Generative.Feasible spendingProcess w.fuel (List.replicate w.horizon ())
+
+def localBasis : Bool → Formula InquiryScenario
+  | false => fun w => observationTask w → w.threshold < w.capacity
+  | true => fun w => repeatedTask w → w.horizon ≤ w.fuel
+
+theorem local_basis_valid (i : Bool) (w : InquiryScenario) : localBasis i w := by
+  cases i with
+  | false => exact (threshold_available_iff _ _).mp
+  | true =>
+    intro h
+    simpa [repeatedTask, List.length_replicate] using
+      (spending_feasible_iff w.fuel (List.replicate w.horizon ())).mp h
+
+/-- The inherited closed theory propagates both informative local constraints
+    through every finite descendant, not just the particular examples below. -/
+theorem entire_local_closure_valid {p : Formula InquiryScenario}
+    (proof : Derives localBasis [] p) : ∀ w, p w := by
+  intro w
+  exact all_closed_descendants_necessary
+    (inquiry := fun _ => True) (fun i w _ => local_basis_valid i w) p proof w True.intro
+
+theorem combined_capability_descendant : Derives localBasis
+    [observationTask, repeatedTask]
+    (fun w => w.threshold < w.capacity ∧ w.horizon ≤ w.fuel) := by
+  apply Derives.andIntro
+  · exact .impElim (.base false) (.assumption (by simp))
+  · exact .impElim (.base true) (.assumption (by simp))
+
+theorem combined_capability_implication_in_closed_theory : Derives localBasis []
+    (fun w => observationTask w → repeatedTask w →
+      w.threshold < w.capacity ∧ w.horizon ≤ w.fuel) := by
+  apply Derives.impIntro
+  apply Derives.impIntro
+  apply Derives.andIntro
+  · exact .impElim (.base false) (.assumption (by simp))
+  · exact .impElim (.base true) (.assumption (by simp))
+
+/-- Two finite formulas contain uniformly quantified operational law contracts.
+    Their instances below are derived by a finite quantifier-elimination rule. -/
+def uniformBasis : Bool → Formula InquiryScenario
+  | false => fun w => ∀ k, ThresholdAvailable w.capacity k → k < w.capacity
+  | true => fun w => ∀ n, Generative.Feasible spendingProcess w.fuel
+      (List.replicate n ()) → n ≤ w.fuel
+
+theorem uniform_basis_valid (i : Bool) (w : InquiryScenario) : uniformBasis i w := by
+  cases i with
+  | false => exact fun _ => (threshold_available_iff _ _).mp
+  | true =>
+    intro n h
+    simpa only [List.length_replicate] using (spending_feasible_iff _ _).mp h
+
+theorem entire_uniform_closure_valid {p : Formula InquiryScenario}
+    (proof : Derives uniformBasis [] p) : ∀ w, p w := by
+  intro w
+  exact all_closed_descendants_necessary
+    (inquiry := fun _ => True) (fun i w _ => uniform_basis_valid i w) p proof w True.intro
+
+theorem every_threshold_contract_is_a_descendant (k : Nat) :
+    Derives uniformBasis []
+      (fun w => ThresholdAvailable w.capacity k → k < w.capacity) :=
+  .allNatElim (p := fun (k : Nat) (w : InquiryScenario) =>
+    ThresholdAvailable w.capacity k → k < w.capacity)
+    k (.base false)
+
+theorem every_support_contract_is_a_descendant (n : Nat) :
+    Derives uniformBasis [] (fun w => Generative.Feasible spendingProcess w.fuel
+      (List.replicate n ()) → n ≤ w.fuel) :=
+  .allNatElim (p := fun (n : Nat) (w : InquiryScenario) => Generative.Feasible spendingProcess w.fuel
+    (List.replicate n ()) → n ≤ w.fuel) n (.base true)
+
+#print axioms InquiryRoot.threshold_available_iff
+#print axioms InquiryRoot.every_threshold_has_a_finite_realization
+#print axioms InquiryRoot.next_threshold_exceeds_that_realization
+#print axioms InquiryRoot.threshold_capability_sets_pairwise_distinct
+#print axioms InquiryRoot.spending_trace_iff
+#print axioms InquiryRoot.spending_feasible_iff
+#print axioms InquiryRoot.every_budget_excludes_a_different_horizon
+#print axioms InquiryRoot.local_basis_valid
+#print axioms InquiryRoot.entire_local_closure_valid
+#print axioms InquiryRoot.combined_capability_descendant
+#print axioms InquiryRoot.combined_capability_implication_in_closed_theory
+#print axioms InquiryRoot.uniform_basis_valid
+#print axioms InquiryRoot.entire_uniform_closure_valid
+#print axioms InquiryRoot.every_threshold_contract_is_a_descendant
+#print axioms InquiryRoot.every_support_contract_is_a_descendant
+
+end InquiryRoot

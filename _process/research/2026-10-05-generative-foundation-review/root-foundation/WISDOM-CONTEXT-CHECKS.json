@@ -1,0 +1,276 @@
+{
+  "scope": "owned study, direct proof bindings and M15/F01; not whole-table freshness",
+  "passed": true,
+  "checks": [
+    {
+      "check": "successful Lean receipt and fifty audited declarations",
+      "passed": true
+    },
+    {
+      "check": "live/frozen source GenerativeCore.lean",
+      "passed": true
+    },
+    {
+      "check": "reported dependency binding GenerativeCore.lean",
+      "passed": true
+    },
+    {
+      "check": "live/frozen source GeneratedPaths.lean",
+      "passed": true
+    },
+    {
+      "check": "reported dependency binding GeneratedPaths.lean",
+      "passed": true
+    },
+    {
+      "check": "live/frozen source CorePredication.lean",
+      "passed": true
+    },
+    {
+      "check": "reported dependency binding CorePredication.lean",
+      "passed": true
+    },
+    {
+      "check": "live/frozen source ContextualWisdom.lean",
+      "passed": true
+    },
+    {
+      "check": "reported dependency binding ContextualWisdom.lean",
+      "passed": true
+    },
+    {
+      "check": "checker source preserved",
+      "passed": true
+    },
+    {
+      "check": "eleven declared and audited new theorems",
+      "passed": true
+    },
+    {
+      "check": "owned bilingual content retained M15",
+      "passed": true
+    },
+    {
+      "check": "canonical rendered row M15",
+      "passed": true
+    },
+    {
+      "check": "owned bilingual content retained F01",
+      "passed": true
+    },
+    {
+      "check": "canonical rendered row F01",
+      "passed": true
+    },
+    {
+      "check": "reviewed owned source theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md",
+      "passed": true
+    },
+    {
+      "check": "reviewed owned source _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md",
+      "passed": true
+    },
+    {
+      "check": "reviewed owned source _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "check": "reviewed owned source _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-SOURCES.md",
+      "passed": true
+    },
+    {
+      "check": "reviewed owned source experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContextualWisdom.lean",
+      "passed": true
+    },
+    {
+      "check": "reviewed owned source experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_contextual_wisdom.py",
+      "passed": true
+    },
+    {
+      "check": "reviewed owned source experiments/integrated-correction/general-framework/generative-basis/lean/deeper/contextual-wisdom-verification.json",
+      "passed": true
+    },
+    {
+      "check": "reviewed owned source experiments/integrated-correction/general-framework/generative-basis/lean/deeper/contextual-wisdom-checks/20261008T103919.364903Z/receipt.json",
+      "passed": true
+    },
+    {
+      "check": "reviewed owned source sources/15-codex-theory-conversations/2026-10-08-math-core-and-historical-wisdom.md",
+      "passed": true
+    },
+    {
+      "check": "only owned discovery pages recorded",
+      "passed": true
+    },
+    {
+      "check": "prior entries and table lines preserved at mutation",
+      "passed": true
+    },
+    {
+      "check": "owned navigation retained RESEARCH.md",
+      "passed": true
+    },
+    {
+      "check": "owned navigation retained theories/shengsheng-buxi-generative-existence/README.md",
+      "passed": true
+    },
+    {
+      "check": "owned navigation retained theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "passed": true
+    },
+    {
+      "check": "owned navigation retained _process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "passed": true
+    },
+    {
+      "check": "owned navigation retained experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "passed": true
+    },
+    {
+      "check": "owned navigation retained sources/SOURCES.md",
+      "passed": true
+    },
+    {
+      "check": "local link theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md -> ../../../sources/15-codex-theory-conversations/2026-10-08-math-core-and-historical-wisdom.md",
+      "passed": true
+    },
+    {
+      "check": "local link theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md -> ../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "check": "local link theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md -> ../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-SOURCES.md",
+      "passed": true
+    },
+    {
+      "check": "local link theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md -> ../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md",
+      "passed": true
+    },
+    {
+      "check": "local link theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md -> MATHEMATICAL-CORE.md",
+      "passed": true
+    },
+    {
+      "check": "local link theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md -> HUIGEN.md",
+      "passed": true
+    },
+    {
+      "check": "local link theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md -> ../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-SOURCES.md",
+      "passed": true
+    },
+    {
+      "check": "local link theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md -> PRACTICAL-JUDGMENT.md",
+      "passed": true
+    },
+    {
+      "check": "local link _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md -> ../../../../sources/15-codex-theory-conversations/2026-10-08-math-core-and-historical-wisdom.md",
+      "passed": true
+    },
+    {
+      "check": "local link _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md -> ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md",
+      "passed": true
+    },
+    {
+      "check": "local link _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md -> WISDOM-CONTEXT-PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "check": "local link _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md -> ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md",
+      "passed": true
+    },
+    {
+      "check": "local link _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md -> ../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/CorePredication.lean",
+      "passed": true
+    },
+    {
+      "check": "local link _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md -> ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "passed": true
+    },
+    {
+      "check": "local link _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md -> ../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THEORY.md",
+      "passed": true
+    },
+    {
+      "check": "local link _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md -> ../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatorySupportChanges.lean",
+      "passed": true
+    },
+    {
+      "check": "local link _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md -> ../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContextualWisdom.lean",
+      "passed": true
+    },
+    {
+      "check": "local link _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md -> ../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_contextual_wisdom.py",
+      "passed": true
+    },
+    {
+      "check": "local link _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md -> ../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/contextual-wisdom-checks/20261008T103919.364903Z/receipt.json",
+      "passed": true
+    },
+    {
+      "check": "local link _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md -> ../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/contextual-wisdom-verification.json",
+      "passed": true
+    },
+    {
+      "check": "local link _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md -> WISDOM-CONTEXT-SOURCES.md",
+      "passed": true
+    },
+    {
+      "check": "local link _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md -> WISDOM-CONTEXT-CHECKS.json",
+      "passed": true
+    },
+    {
+      "check": "local link _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md -> WISDOM-CONTEXT-INDEX-EDITS.json",
+      "passed": true
+    },
+    {
+      "check": "local link _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-SOURCES.md -> WISDOM-CONTEXT-PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "check": "local link _process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-SOURCES.md -> WISDOM-CONTEXT-INTEGRATION.md",
+      "passed": true
+    },
+    {
+      "check": "local link sources/15-codex-theory-conversations/2026-10-08-math-core-and-historical-wisdom.md -> ../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "check": "local link sources/15-codex-theory-conversations/2026-10-08-math-core-and-historical-wisdom.md -> ../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md",
+      "passed": true
+    }
+  ],
+  "local_links_checked": 27,
+  "concurrent_index_changes": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PHILOSOPHICAL-ACCOUNT.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-WARRANT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-COMPATIBILITY-NECESSITY.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-LOGIC-INTEGRATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CHOICE-AND-GENERATIVE-CONTEXT.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-LOGIC-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CALIBRATED-UPDATER-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CALIBRATED-UPDATER.md"
+    ],
+    "removed_pages": []
+  },
+  "lean_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/contextual-wisdom-checks/20261008T103919.364903Z/receipt.json"
+}

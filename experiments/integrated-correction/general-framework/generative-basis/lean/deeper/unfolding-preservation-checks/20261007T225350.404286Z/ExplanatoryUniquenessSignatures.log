@@ -1,0 +1,81 @@
+Generative.ExplanatoryUniqueness.equal_codes_same_answers.{u, v, w} {M : Type u} {Q : Type v} {C : Type w}
+  {target : M → Q → Prop} {p : Generative.ExplanatoryUniqueness.Presentation M Q C}
+  (hp : Generative.ExplanatoryUniqueness.Exact target p) {m n : M} (h : p.encode m = p.encode n) :
+  Generative.ExplanatoryUniqueness.SameAnswers target m n
+Generative.ExplanatoryUniqueness.reduced_exact_kernel.{u, v, w} {M : Type u} {Q : Type v} {C : Type w}
+  {target : M → Q → Prop} {p : Generative.ExplanatoryUniqueness.Presentation M Q C}
+  (hp : Generative.ExplanatoryUniqueness.Exact target p) (rp : Generative.ExplanatoryUniqueness.Reduced target p)
+  (m n : M) : p.encode m = p.encode n ↔ Generative.ExplanatoryUniqueness.SameAnswers target m n
+Generative.ExplanatoryUniqueness.reduced_presentations_same_kernel.{u, v, w, x} {M : Type u} {Q : Type v} {C : Type w}
+  {D : Type x} {target : M → Q → Prop} {p : Generative.ExplanatoryUniqueness.Presentation M Q C}
+  {r : Generative.ExplanatoryUniqueness.Presentation M Q D} (hp : Generative.ExplanatoryUniqueness.Exact target p)
+  (rp : Generative.ExplanatoryUniqueness.Reduced target p) (hr : Generative.ExplanatoryUniqueness.Exact target r)
+  (rr : Generative.ExplanatoryUniqueness.Reduced target r) (m n : M) : p.encode m = p.encode n ↔ r.encode m = r.encode n
+Generative.ExplanatoryUniqueness.matches_total_on_used.{u, v, w, x} {M : Type u} {Q : Type v} {C : Type w} {D : Type x}
+  (p : Generative.ExplanatoryUniqueness.Presentation M Q C) (r : Generative.ExplanatoryUniqueness.Presentation M Q D)
+  {c : C} (h : Generative.ExplanatoryUniqueness.Used p c) :
+  ∃ d, Generative.ExplanatoryUniqueness.Used r d ∧ Generative.ExplanatoryUniqueness.Matches p r c d
+Generative.ExplanatoryUniqueness.matches_functional.{u, v, w, x} {M : Type u} {Q : Type v} {C : Type w} {D : Type x}
+  {target : M → Q → Prop} {p : Generative.ExplanatoryUniqueness.Presentation M Q C}
+  {r : Generative.ExplanatoryUniqueness.Presentation M Q D} (hp : Generative.ExplanatoryUniqueness.Exact target p)
+  (rr : Generative.ExplanatoryUniqueness.Reduced target r) {c : C} {d e : D}
+  (hd : Generative.ExplanatoryUniqueness.Matches p r c d) (he : Generative.ExplanatoryUniqueness.Matches p r c e) :
+  d = e
+Generative.ExplanatoryUniqueness.matches_inverse_functional.{u, v, w, x} {M : Type u} {Q : Type v} {C : Type w}
+  {D : Type x} {target : M → Q → Prop} {p : Generative.ExplanatoryUniqueness.Presentation M Q C}
+  {r : Generative.ExplanatoryUniqueness.Presentation M Q D} (hr : Generative.ExplanatoryUniqueness.Exact target r)
+  (rp : Generative.ExplanatoryUniqueness.Reduced target p) {c e : C} {d : D}
+  (hc : Generative.ExplanatoryUniqueness.Matches p r c d) (he : Generative.ExplanatoryUniqueness.Matches p r e d) :
+  c = e
+Generative.ExplanatoryUniqueness.matches_iff_equal_answers.{u, v, w, x} {M : Type u} {Q : Type v} {C : Type w}
+  {D : Type x} {target : M → Q → Prop} {p : Generative.ExplanatoryUniqueness.Presentation M Q C}
+  {r : Generative.ExplanatoryUniqueness.Presentation M Q D} (hp : Generative.ExplanatoryUniqueness.Exact target p)
+  (hr : Generative.ExplanatoryUniqueness.Exact target r) (rr : Generative.ExplanatoryUniqueness.Reduced target r)
+  (c : C) (d : D) :
+  Generative.ExplanatoryUniqueness.Matches p r c d ↔
+    Generative.ExplanatoryUniqueness.Used p c ∧
+      Generative.ExplanatoryUniqueness.Used r d ∧ ∀ (q : Q), p.read c q ↔ r.read d q
+Generative.ExplanatoryUniqueness.unique_matching.{u, v, w, x} {M : Type u} {Q : Type v} {C : Type w} {D : Type x}
+  (p : Generative.ExplanatoryUniqueness.Presentation M Q C) (r : Generative.ExplanatoryUniqueness.Presentation M Q D)
+  (R : C → D → Prop) (aligned : ∀ (m : M), R (p.encode m) (r.encode m))
+  (functional : ∀ (c : C) (d e : D), R c d → R c e → d = e) {c : C} {d : D}
+  (used : Generative.ExplanatoryUniqueness.Used p c) : R c d ↔ Generative.ExplanatoryUniqueness.Matches p r c d
+Generative.ExplanatoryUniqueness.short_exact :
+  Generative.ExplanatoryUniqueness.Exact Generative.ExplanatoryUniqueness.firstTarget
+    Generative.ExplanatoryUniqueness.shortPresentation
+Generative.ExplanatoryUniqueness.full_exact :
+  Generative.ExplanatoryUniqueness.Exact Generative.ExplanatoryUniqueness.firstTarget
+    Generative.ExplanatoryUniqueness.fullPresentation
+Generative.ExplanatoryUniqueness.short_reduced :
+  Generative.ExplanatoryUniqueness.Reduced Generative.ExplanatoryUniqueness.firstTarget
+    Generative.ExplanatoryUniqueness.shortPresentation
+Generative.ExplanatoryUniqueness.full_not_reduced :
+  ¬Generative.ExplanatoryUniqueness.Reduced Generative.ExplanatoryUniqueness.firstTarget
+      Generative.ExplanatoryUniqueness.fullPresentation
+Generative.ExplanatoryUniqueness.first_summary_cannot_answer_both :
+  ¬∃ read,
+      Generative.ExplanatoryUniqueness.Exact Generative.ExplanatoryUniqueness.bothTarget
+        { encode := Prod.fst, read := read }
+Generative.ExplanatoryUniqueness.relative_unique_correspondence.{u, v, w, x} {M : Type u} {Q : Type v} {C : Type w}
+  {D : Type x} {target : M → Q → Prop} {p : Generative.ExplanatoryUniqueness.Presentation M Q C}
+  {r : Generative.ExplanatoryUniqueness.Presentation M Q D} (hp : Generative.ExplanatoryUniqueness.Exact target p)
+  (rp : Generative.ExplanatoryUniqueness.Reduced target p) (hr : Generative.ExplanatoryUniqueness.Exact target r)
+  (rr : Generative.ExplanatoryUniqueness.Reduced target r) :
+  (∀ (c : C),
+      Generative.ExplanatoryUniqueness.Used p c →
+        ∃ d,
+          Generative.ExplanatoryUniqueness.Matches p r c d ∧
+            ∀ (e : D), Generative.ExplanatoryUniqueness.Matches p r c e → e = d) ∧
+    ∀ (d : D),
+      Generative.ExplanatoryUniqueness.Used r d →
+        ∃ c,
+          Generative.ExplanatoryUniqueness.Matches p r c d ∧
+            ∀ (e : C), Generative.ExplanatoryUniqueness.Matches p r e d → e = c
+Generative.ExplanatoryUniqueness.balance_does_not_determine_coverability :
+  Generative.ExplanatoryStructure.balance Generative.ExplanatoryStructure.chessColor
+        Generative.ExplanatoryStructure.separated =
+      Generative.ExplanatoryStructure.balance Generative.ExplanatoryStructure.chessColor [] ∧
+    (∃ ts, Generative.ExplanatoryStructure.Global Generative.ExplanatoryStructure.adjacent [] ts []) ∧
+      ¬∃ ts,
+          Generative.ExplanatoryStructure.Global Generative.ExplanatoryStructure.adjacent
+            Generative.ExplanatoryStructure.separated ts []

@@ -1,0 +1,107 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-branching-wozk88u2/ExplanatoryBranchingWitnesses.lean:79:16: error: unsolved goals
+case cons.false.enter
+word : List Event
+⊢ Can
+      {
+        step := fun s a t =>
+          t ∈
+            match s, a with
+            | Node.root, Event.enter => [Node.both]
+            | Node.both, Event.left => [Node.finish]
+            | Node.both, Event.right => [Node.finish]
+            | Node.leftOnly, Event.left => [Node.finish]
+            | Node.rightOnly, Event.right => [Node.finish]
+            | x, x_1 => [] }
+      Node.both word ↔
+    word = [] ∨ word = [Event.left] ∨ word = [Event.right]
+
+case cons.true.enter
+word : List Event
+⊢ Can
+        {
+          step := fun s a t =>
+            t ∈
+              match s, a with
+              | Node.root, Event.enter => [Node.leftOnly, Node.rightOnly]
+              | Node.both, Event.left => [Node.finish]
+              | Node.both, Event.right => [Node.finish]
+              | Node.leftOnly, Event.left => [Node.finish]
+              | Node.rightOnly, Event.right => [Node.finish]
+              | x, x_1 => [] }
+        Node.leftOnly word ∨
+      Can
+        {
+          step := fun s a t =>
+            t ∈
+              match s, a with
+              | Node.root, Event.enter => [Node.leftOnly, Node.rightOnly]
+              | Node.both, Event.left => [Node.finish]
+              | Node.both, Event.right => [Node.finish]
+              | Node.leftOnly, Event.left => [Node.finish]
+              | Node.rightOnly, Event.right => [Node.finish]
+              | x, x_1 => [] }
+        Node.rightOnly word ↔
+    word = [] ∨ word = [Event.left] ∨ word = [Event.right]
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-branching-wozk88u2/ExplanatoryBranchingWitnesses.lean:82:30: warning: This simp argument is unused:
+  both_words
+
+Hint: Omit it from the simp argument list.
+  simp [forkModel, nexts, b̵o̵t̵h̵_̵w̵o̵r̵d̵s̵,̵ ̵left_words, right_words, or_assoc, or_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-branching-wozk88u2/ExplanatoryBranchingWitnesses.lean:82:42: warning: This simp argument is unused:
+  left_words
+
+Hint: Omit it from the simp argument list.
+  simp [forkModel, nexts, both_words, l̵e̵f̵t̵_̵w̵o̵rd̵s̵,̵ ̵r̵ight_words, or_assoc, or_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-branching-wozk88u2/ExplanatoryBranchingWitnesses.lean:82:54: warning: This simp argument is unused:
+  right_words
+
+Hint: Omit it from the simp argument list.
+  simp [forkModel, nexts, both_words, left_words, r̵i̵g̵h̵t̵_̵w̵ord̵s̵,̵ ̵o̵r̵_assoc, or_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-branching-wozk88u2/ExplanatoryBranchingWitnesses.lean:82:67: warning: This simp argument is unused:
+  or_assoc
+
+Hint: Omit it from the simp argument list.
+  simp [forkModel, nexts, both_words, left_words, right_words, or_a̵s̵s̵o̵c̵,̵ ̵o̵r̵_̵left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-branching-wozk88u2/ExplanatoryBranchingWitnesses.lean:82:77: warning: This simp argument is unused:
+  or_left_comm
+
+Hint: Omit it from the simp argument list.
+  simp [forkModel, nexts, both_words, left_words, right_words, or_assoc,̵ ̵o̵r̵_̵l̵e̵f̵t̵_̵c̵o̵m̵m̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-branching-wozk88u2/ExplanatoryBranchingWitnesses.lean:102:23: warning: Try `simp at hr` instead of `simpa using hr`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-branching-wozk88u2/ExplanatoryBranchingWitnesses.lean:103:23: warning: Try `simp at hl` instead of `simpa using hl`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+'Generative.ExplanatoryBranchingWitnesses.can_nil' does not depend on any axioms
+'Generative.ExplanatoryBranchingWitnesses.can_cons' does not depend on any axioms
+'Generative.ExplanatoryBranchingWitnesses.fork_finitely_branching' depends on axioms: [propext]
+'Generative.ExplanatoryBranchingWitnesses.finish_words' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryBranchingWitnesses.both_words' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryBranchingWitnesses.left_words' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryBranchingWitnesses.right_words' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryBranchingWitnesses.root_words' depends on axioms: [propext, sorryAx]
+'Generative.ExplanatoryBranchingWitnesses.same_all_words' depends on axioms: [propext, sorryAx]
+'Generative.ExplanatoryBranchingWitnesses.shared_condition_retains_alternatives' depends on axioms: [propext,
+ Quot.sound]
+'Generative.ExplanatoryBranchingWitnesses.early_split_loses_shared_alternatives' depends on axioms: [propext,
+ Quot.sound]
+'Generative.ExplanatoryBranchingWitnesses.trace_equivalence_misses_branching' depends on axioms: [propext,
+ sorryAx,
+ Quot.sound]
+'Generative.ExplanatoryBranchingWitnesses.no_rooted_bisimulation' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.ExplanatoryBranchingWitnesses.unmarked_bisimulation' does not depend on any axioms
+'Generative.ExplanatoryBranchingWitnesses.static_toggle_same_all_tests' does not depend on any axioms
+'Generative.ExplanatoryBranchingWitnesses.two_actual_histories_same_endpoint' does not depend on any axioms
+'Generative.ExplanatoryBranchingWitnesses.all_future_tests_agree_after_both_histories' does not depend on any axioms
+'Generative.ExplanatoryBranchingWitnesses.actual_length_not_endpoint_readable' depends on axioms: [propext]

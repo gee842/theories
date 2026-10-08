@@ -1,0 +1,87 @@
+'TestingReorganization.triple' depends on axioms: [propext]
+'TestingReorganization.put' does not depend on any axioms
+'TestingReorganization.Diverse' depends on axioms: [propext]
+'TestingReorganization.decidableDiverse' depends on axioms: [propext]
+'TestingReorganization.Agrees' depends on axioms: [propext]
+'TestingReorganization.decidableAgreement' depends on axioms: [propext]
+'TestingReorganization.agreement_sound' depends on axioms: [propext]
+'TestingReorganization.agreement_available' depends on axioms: [propext]
+'TestingReorganization.Stage' does not depend on any axioms
+'TestingReorganization.State' does not depend on any axioms
+'TestingReorganization.Complete' does not depend on any axioms
+'TestingReorganization.decidableComplete' does not depend on any axioms
+'TestingReorganization.decoded' does not depend on any axioms
+'TestingReorganization.Knowledge' does not depend on any axioms
+'TestingReorganization.Supported' does not depend on any axioms
+'TestingReorganization.Invariant' depends on axioms: [propext]
+'TestingReorganization.charge' does not depend on any axioms
+'TestingReorganization.inspected' does not depend on any axioms
+'TestingReorganization.built' does not depend on any axioms
+'TestingReorganization.tested' does not depend on any axioms
+'TestingReorganization.switched' does not depend on any axioms
+'TestingReorganization.worked' depends on axioms: [propext]
+'TestingReorganization.Event' does not depend on any axioms
+'TestingReorganization.process' depends on axioms: [propext]
+'TestingReorganization.complete_decodes_actual' depends on axioms: [propext, Quot.sound]
+'TestingReorganization.charge_supported' depends on axioms: [propext, Quot.sound]
+'TestingReorganization.work_supported' depends on axioms: [propext, Quot.sound]
+'TestingReorganization.inspection_preserves_knowledge' depends on axioms: [propext]
+'TestingReorganization.build_preserves_knowledge' does not depend on any axioms
+'TestingReorganization.test_preserves_knowledge' does not depend on any axioms
+'TestingReorganization.switch_preserves_knowledge' depends on axioms: [propext]
+'TestingReorganization.switch_preserves_diversity' depends on axioms: [propext, Quot.sound]
+'TestingReorganization.step_preserves' depends on axioms: [propext, Quot.sound]
+'TestingReorganization.trace_preserves' depends on axioms: [propext, Quot.sound]
+'TestingReorganization.switch_keeps_complete' depends on axioms: [propext]
+'TestingReorganization.step_keeps_complete' depends on axioms: [propext]
+'TestingReorganization.complete_through_trace' depends on axioms: [propext]
+'TestingReorganization.accepted' depends on axioms: [propext]
+'TestingReorganization.accepted_after_revision_is_sound' depends on axioms: [propext, Quot.sound]
+'TestingReorganization.checking_available_after_revision' depends on axioms: [propext, Quot.sound]
+'TestingReorganization.migrated' does not depend on any axioms
+'TestingReorganization.migration_completes' depends on axioms: [propext, Quot.sound]
+'TestingReorganization.migration_accounting' depends on axioms: [propext, Quot.sound]
+'TestingReorganization.work_finances_testing' depends on axioms: [propext, Quot.sound]
+'TestingReorganization.two_work_cycles_finance_migration' depends on axioms: [propext, Quot.sound]
+'TestingReorganization.work_refines_physical' depends on axioms: [propext, Quot.sound]
+'TestingReorganization.initial' depends on axioms: [propext]
+'TestingReorganization.endowed' depends on axioms: [propext]
+'TestingReorganization.surveyed' depends on axioms: [propext]
+'TestingReorganization.initial_invariant' depends on axioms: [propext]
+'TestingReorganization.funded_initial_survey' depends on axioms: [propext]
+'TestingReorganization.surveyed_ready' depends on axioms: [propext, Quot.sound]
+'TestingReorganization.replacing_a_dependency_is_actual' depends on axioms: [propext, Quot.sound]
+'TestingReorganization.mergerTest' depends on axioms: [propext]
+'TestingReorganization.common_dependency_merge_refused' depends on axioms: [propext]
+'TestingReorganization.untested_path_refused' depends on axioms: [propext]
+'TestingReorganization.corruptedReports' does not depend on any axioms
+'TestingReorganization.merger_can_corrupt_two_readers' depends on axioms: [propext]
+'TestingReorganization.present_agreement_can_hide_lost_resilience' depends on axioms: [propext, Quot.sound]
+'TestingReorganization.effectiveRoots' does not depend on any axioms
+'TestingReorganization.hiddenCommonRoot' does not depend on any axioms
+'TestingReorganization.separate_labels_do_not_establish_causal_separation' depends on axioms: [propext]
+'TestingReorganization.safeWithdrawal' does not depend on any axioms
+'TestingReorganization.responseLaw' does not depend on any axioms
+'TestingReorganization.decidableAccepted' depends on axioms: [propext]
+'TestingReorganization.responseChoice' depends on axioms: [propext]
+'TestingReorganization.response' depends on axioms: [propext]
+'TestingReorganization.certified_response_preserves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TestingReorganization.certified_response_is_physical' depends on axioms: [propext, Quot.sound]
+'TestingReorganization.changed_testing_controls_actual_response' depends on axioms: [propext, Quot.sound]
+'TestingReorganization.JointEvent' does not depend on any axioms
+'TestingReorganization.jointProcess' depends on axioms: [propext]
+'TestingReorganization.joint_step_preserves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TestingReorganization.joint_history_preserves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TestingReorganization.joint_history_keeps_complete' depends on axioms: [propext]
+'TestingReorganization.freshRoot' depends on axioms: [propext]
+'TestingReorganization.renewed' depends on axioms: [propext]
+'TestingReorganization.fresh_root_preserves_diversity' depends on axioms: [propext, Quot.sound]
+'TestingReorganization.funded_renewal_actual' depends on axioms: [propext, Quot.sound]
+'TestingReorganization.funded_renewal_retains_reserve' depends on axioms: [propext, Quot.sound]
+'TestingReorganization.renewalHistory' depends on axioms: [propext]
+'TestingReorganization.renewalEvents' depends on axioms: [propext]
+'TestingReorganization.repeated_renewal_supported' depends on axioms: [propext, Quot.sound]
+'TestingReorganization.initial_to_arbitrarily_many_revisions' depends on axioms: [propext, Quot.sound]
+'TestingReorganization.borderline' depends on axioms: [propext]
+'TestingReorganization.aliasedReports' depends on axioms: [propext]
+'TestingReorganization.unrepresented_common_cause_defeats_response' depends on axioms: [propext, Quot.sound]

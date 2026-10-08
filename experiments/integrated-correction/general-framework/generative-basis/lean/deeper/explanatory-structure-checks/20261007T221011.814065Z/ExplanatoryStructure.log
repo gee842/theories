@@ -1,0 +1,48 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-structure-smrz8cjk/ExplanatoryStructure.lean:80:16: error: unsolved goals
+case swap
+C : Type u
+color : C → Bool
+xs✝ ys : List C
+a b : C
+xs : List C
+⊢ charge color a + (charge color b + balance color xs) = balance color (a :: b :: xs)
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-structure-smrz8cjk/ExplanatoryStructure.lean:86:86: error: unsolved goals
+case false
+C : Type u
+color : C → Bool
+a b : C
+rest : List C
+h : color b = !color a
+⊢ -1 + (1 + balance color rest) = balance color rest
+
+case true
+C : Type u
+color : C → Bool
+a b : C
+rest : List C
+h : color b = !color a
+⊢ 1 + (-1 + balance color rest) = balance color rest
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-structure-smrz8cjk/ExplanatoryStructure.lean:138:2: error: failed to synthesize
+  Decidable (∀ (a b : Square), adjacent a b → chessColor b = !chessColor a)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-structure-smrz8cjk/ExplanatoryStructure.lean:169:86: error: failed to synthesize
+  Decidable (∀ (a b : Square), a ∈ separated → b ∈ separated → ¬adjacent a b)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+'Generative.ExplanatoryStructure.trace_global' does not depend on any axioms
+'Generative.ExplanatoryStructure.global_realized' does not depend on any axioms
+'Generative.ExplanatoryStructure.realizes_iff_global' does not depend on any axioms
+'Generative.ExplanatoryStructure.complete_trace_iff' depends on axioms: [propext]
+'Generative.ExplanatoryStructure.balance_perm' depends on axioms: [sorryAx]
+'Generative.ExplanatoryStructure.opposite_pair_balance' depends on axioms: [propext, sorryAx]
+'Generative.ExplanatoryStructure.legal_balance' depends on axioms: [propext, sorryAx]
+'Generative.ExplanatoryStructure.global_balance' depends on axioms: [propext, sorryAx]
+'Generative.ExplanatoryStructure.unbalanced_no_cover' depends on axioms: [propext, sorryAx]
+'Generative.ExplanatoryStructure.unbalanced_no_placement_history' depends on axioms: [propext, sorryAx]
+'Generative.ExplanatoryStructure.adjacent_opposite' depends on axioms: [sorryAx]
+'Generative.ExplanatoryStructure.mutilated_balance' does not depend on any axioms
+'Generative.ExplanatoryStructure.mutilated_no_cover' depends on axioms: [propext, sorryAx]
+'Generative.ExplanatoryStructure.mutilated_no_history' depends on axioms: [propext, sorryAx]
+'Generative.ExplanatoryStructure.separated_balanced' does not depend on any axioms
+'Generative.ExplanatoryStructure.separated_not_coverable' depends on axioms: [propext, sorryAx]

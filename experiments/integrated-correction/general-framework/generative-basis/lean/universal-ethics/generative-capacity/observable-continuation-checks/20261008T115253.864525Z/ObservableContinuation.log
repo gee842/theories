@@ -1,0 +1,39 @@
+ObservableContinuation.lean:128:2: error: failed to synthesize
+  Decidable
+    (AlignmentInquiry.choose (interface oldWorks) (states 1) singlePlans = some maintain ∧
+      (∀ (mode : Bool),
+          AlignmentInquiry.run (interface oldWorks) maintain (initial 1 mode) =
+            some { mode := mode, budget := 0, supported := !mode }) ∧
+        ChanceAdequacy.Fulfilled [false, true] (fun x => true) oldWorks (support maintain 1) ∧
+          (∀ (mode : Bool), extension mode = true) ∧
+            AlignmentInquiry.choose (interface extension) (states 1) singlePlans = none)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+ObservableContinuation.lean:142:2: error: failed to synthesize
+  Decidable
+    (AlignmentInquiry.choose (interface extension) (states 2) singlePlans = some inspect ∧
+      (∀ (mode : Bool),
+          probe (initial 2 mode) Query.sense = some (mode, { mode := mode, budget := 1, supported := false }) ∧
+            AlignmentInquiry.run (interface extension) inspect (initial 2 mode) =
+              some { mode := mode, budget := 0, supported := true }) ∧
+        ChanceAdequacy.Fulfilled [false, true] (fun x => true) oldWorks (support inspect 2) ∧
+          ChanceAdequacy.mass [false, true] (fun x => 1) oldWorks = 1 ∧
+            ChanceAdequacy.mass [false, true] (fun x => 1) (support inspect 2) = 2 ∧
+              ChanceAdequacy.mass [false, true] (fun x => 1) oldWorks <
+                ChanceAdequacy.mass [false, true] (fun x => 1) (support inspect 2))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+ObservableContinuation.lean:156:2: error: failed to synthesize
+  Decidable
+    (AlignmentInquiry.choose (interface extension) (states 2) expandedPlans = some parallelPlan ∧
+      (∀ (mode : Bool),
+          probe (initial 2 mode) Query.blind = some (false, initial 2 mode) ∧
+            AlignmentInquiry.run (interface extension) parallelPlan (initial 2 mode) =
+              some { mode := mode, budget := 0, supported := true }) ∧
+        ChanceAdequacy.Fulfilled [false, true] (fun x => true) oldWorks (support parallelPlan 2) ∧
+          ChanceAdequacy.mass [false, true] (fun x => 1) oldWorks = 1 ∧
+            ChanceAdequacy.mass [false, true] (fun x => 1) (support parallelPlan 2) = 2 ∧
+              ChanceAdequacy.mass [false, true] (fun x => 1) oldWorks <
+                ChanceAdequacy.mass [false, true] (fun x => 1) (support parallelPlan 2))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.

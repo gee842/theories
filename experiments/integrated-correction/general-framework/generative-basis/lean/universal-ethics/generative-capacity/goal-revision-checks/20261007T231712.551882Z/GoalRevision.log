@@ -1,0 +1,401 @@
+GoalRevision.lean:225:24: error: unexpected identifier; expected '}'
+GoalRevision.lean:247:79: error: unexpected identifier; expected '}'
+GoalRevision.lean:301:43: error: Tactic `decide` failed for proposition
+  initial.goal = none ∧ learned [] = none ∧ formed.goal = some Goal.volume ∧ formed.acquired = formed.archive
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `Bool.decEq`, `Nat.decLe`, `Nat.decLt`, `Option.decidableEqNone`, and `Option.instDecidableEq`, reduction got stuck at the `Decidable` instance
+  match formed.goal with
+  | none =>
+    match some Goal.volume with
+    | none => isTrue ⋯
+    | some val => isFalse ⋯
+  | some a =>
+    match some Goal.volume with
+    | none => isFalse ⋯
+    | some b =>
+      match instDecidableEqGoal a b with
+      | isTrue h => isTrue ⋯
+      | isFalse n => isFalse ⋯
+GoalRevision.lean:309:49: error: Tactic `decide` failed for proposition
+  Option.map (fun x => x.impact) (findPacket Goal.volume assessed.acquired) =
+      some (native Context.deprivation Goal.volume) ∧
+    Option.map (fun x => x.impact) (findPacket Goal.capacity assessed.acquired) =
+      some (native Context.deprivation Goal.capacity)
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `Bool.decEq`, `Nat.decLe`, and `Option.instDecidableEq`, reduction got stuck at the `Decidable` instance
+  match Option.map (fun x => x.impact) (findPacket Goal.volume assessed.acquired) with
+  | none =>
+    match some (native Context.deprivation Goal.volume) with
+    | none => isTrue ⋯
+    | some val => isFalse ⋯
+  | some a =>
+    match some (native Context.deprivation Goal.volume) with
+    | none => isFalse ⋯
+    | some b =>
+      match instDecidableEqImpact a b with
+      | isTrue h => isTrue ⋯
+      | isFalse n => isFalse ⋯
+GoalRevision.lean:316:4: error: Tactic `decide` failed for proposition
+  assessed.judgment = some Goal.capacity
+because its `Decidable` instance
+  assessed.judgment.instDecidableEq (some Goal.capacity)
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `Bool.decEq`, `Nat.decLe`, and `Option.instDecidableEq`, reduction got stuck at the `Decidable` instance
+  match assessed.judgment with
+  | none =>
+    match some Goal.capacity with
+    | none => isTrue ⋯
+    | some val => isFalse ⋯
+  | some a =>
+    match some Goal.capacity with
+    | none => isFalse ⋯
+    | some b =>
+      match instDecidableEqGoal a b with
+      | isTrue h => isTrue ⋯
+      | isFalse n => isFalse ⋯
+GoalRevision.lean:323:64: error: Tactic `decide` failed for proposition
+  (run initial (preparation Meter.faithful false)).acquired = prepared.acquired ∧
+    clamped.goal = some Goal.volume ∧
+      clamped.performed = 8 ∧
+        clamped.fulfilled = 0 ∧ clamped.losses = 9 ∧ success.goal = some Goal.capacity ∧ success.fulfilled = 8
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqList`, `Bool.decEq`, and `Nat.decLe`, reduction got stuck at the `Decidable` instance
+  match (run initial (preparation Meter.faithful false)).acquired with
+  | [] =>
+    match prepared.acquired with
+    | [] => isTrue ⋯
+    | head :: tail => isFalse ⋯
+  | a :: as =>
+    match prepared.acquired with
+    | [] => isFalse ⋯
+    | b :: bs =>
+      match decEq a b with
+      | isTrue hab =>
+        match as.hasDecEq bs with
+        | isTrue habs => isTrue ⋯
+        | isFalse nabs => isFalse ⋯
+      | isFalse nab => isFalse ⋯
+GoalRevision.lean:329:54: error: Tactic `decide` failed for proposition
+  success.halted = false ∧
+    success.rule = Rule.capacity ∧
+      success.performed = 8 ∧
+        success.fulfilled = 8 ∧
+          success.budget = { cash := 6, fund := 180, spent := 28 } ∧
+            success.losses = 1 ∧ total success.budget = total initial.budget
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `Bool.decEq`, and `Nat.decLe`, reduction got stuck at the `Decidable` instance
+  match success.halted, false with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+GoalRevision.lean:335:32: error: Tactic `decide` failed for proposition
+  unreformed.goal = some Goal.capacity ∧
+    unreformed.judgment = some Goal.capacity ∧
+      unreformed.halted = true ∧
+        unreformed.performed = 7 ∧ unreformed.fulfilled = 7 ∧ unreformed.budget.cash = 1 ∧ unreformed.losses = 1
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `Bool.decEq`, `Nat.decLe`, and `Option.instDecidableEq`, reduction got stuck at the `Decidable` instance
+  match unreformed.goal with
+  | none =>
+    match some Goal.capacity with
+    | none => isTrue ⋯
+    | some val => isFalse ⋯
+  | some a =>
+    match some Goal.capacity with
+    | none => isFalse ⋯
+    | some b =>
+      match instDecidableEqGoal a b with
+      | isTrue h => isTrue ⋯
+      | isFalse n => isFalse ⋯
+GoalRevision.lean:341:25: error: Tactic `decide` failed for proposition
+  (run
+          (let __src := initial;
+          { context := __src.context, budget := __src.budget, goal := __src.goal, rule := __src.rule,
+            archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment, quote := __src.quote,
+            adopts := false, authority := __src.authority, approval := __src.approval, halted := __src.halted,
+            losses := __src.losses, performed := __src.performed, fulfilled := __src.fulfilled })
+          (preparation Meter.faithful true)).acquired =
+      prepared.acquired ∧
+    (run
+          (let __src := initial;
+          { context := __src.context, budget := __src.budget, goal := __src.goal, rule := __src.rule,
+            archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment, quote := __src.quote,
+            adopts := false, authority := __src.authority, approval := __src.approval, halted := __src.halted,
+            losses := __src.losses, performed := __src.performed, fulfilled := __src.fulfilled })
+          (preparation Meter.faithful true)).goal =
+      some Goal.volume
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqList`, `Bool.decEq`, and `Nat.decLe`, reduction got stuck at the `Decidable` instance
+  match
+    (run
+        (let __src := initial;
+        { context := __src.context, budget := __src.budget, goal := __src.goal, rule := __src.rule,
+          archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment, quote := __src.quote,
+          adopts := false, authority := __src.authority, approval := __src.approval, halted := __src.halted,
+          losses := __src.losses, performed := __src.performed, fulfilled := __src.fulfilled })
+        (preparation Meter.faithful true)).acquired with
+  | [] =>
+    match prepared.acquired with
+    | [] => isTrue ⋯
+    | head :: tail => isFalse ⋯
+  | a :: as =>
+    match prepared.acquired with
+    | [] => isFalse ⋯
+    | b :: bs =>
+      match decEq a b with
+      | isTrue hab =>
+        match as.hasDecEq bs with
+        | isTrue habs => isTrue ⋯
+        | isFalse nabs => isFalse ⋯
+      | isFalse nab => isFalse ⋯
+GoalRevision.lean:346:71: error: Tactic `decide` failed for proposition
+  (run initial (preparation Meter.missing true)).judgment = none ∧
+    (run initial (preparation Meter.missing true)).goal = some Goal.volume ∧
+      (run initial (fullHistory Meter.missing true true)).performed = 0
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `Bool.decEq`, `Nat.decLe`, and `Option.decidableEqNone`, reduction got stuck at the `Decidable` instance
+  match (run initial (preparation Meter.missing true)).judgment with
+  | none => isTrue ⋯
+  | some val => isFalse ⋯
+GoalRevision.lean:351:80: error: Tactic `decide` failed for proposition
+  (run prepared [Event.shift Context.restrictionNeeded, Event.assess, Event.act]).judgment = none ∧
+    (run prepared [Event.shift Context.restrictionNeeded, Event.assess, Event.act]).performed = 0 ∧
+      (run prepared [Event.shift Context.restrictionNeeded, Event.assess, Event.act]).halted = true
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `Bool.decEq`, `Nat.decLe`, and `Option.decidableEqNone`, reduction got stuck at the `Decidable` instance
+  match (run prepared [Event.shift Context.restrictionNeeded, Event.assess, Event.act]).judgment with
+  | none => isTrue ⋯
+  | some val => isFalse ⋯
+GoalRevision.lean:360:13: error: Tactic `decide` failed for proposition
+  (run
+        (let __src := initial;
+        { context := Context.restrictionNeeded, budget := __src.budget, goal := __src.goal, rule := __src.rule,
+          archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment, quote := __src.quote,
+          adopts := __src.adopts, authority := __src.authority, approval := __src.approval, halted := __src.halted,
+          losses := __src.losses, performed := __src.performed, fulfilled := __src.fulfilled })
+        (fullHistory Meter.faithful true true)).goal =
+    some Goal.volume
+because its `Decidable` instance
+  (run
+          (let __src := initial;
+          { context := Context.restrictionNeeded, budget := __src.budget, goal := __src.goal, rule := __src.rule,
+            archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment, quote := __src.quote,
+            adopts := __src.adopts, authority := __src.authority, approval := __src.approval, halted := __src.halted,
+            losses := __src.losses, performed := __src.performed, fulfilled := __src.fulfilled })
+          (fullHistory Meter.faithful true true)).goal.instDecidableEq
+    (some Goal.volume)
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `Bool.decEq`, `Nat.decLe`, and `Option.instDecidableEq`, reduction got stuck at the `Decidable` instance
+  match
+    (run
+        (let __src := initial;
+        { context := Context.restrictionNeeded, budget := __src.budget, goal := __src.goal, rule := __src.rule,
+          archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment, quote := __src.quote,
+          adopts := __src.adopts, authority := __src.authority, approval := __src.approval, halted := __src.halted,
+          losses := __src.losses, performed := __src.performed, fulfilled := __src.fulfilled })
+        (fullHistory Meter.faithful true true)).goal with
+  | none =>
+    match some Goal.volume with
+    | none => isTrue ⋯
+    | some val => isFalse ⋯
+  | some a =>
+    match some Goal.volume with
+    | none => isFalse ⋯
+    | some b =>
+      match instDecidableEqGoal a b with
+      | isTrue h => isTrue ⋯
+      | isFalse n => isFalse ⋯
+GoalRevision.lean:360:24: error: Tactic `decide` failed for proposition
+  (run
+        (let __src := initial;
+        { context := Context.restrictionNeeded, budget := __src.budget, goal := __src.goal, rule := __src.rule,
+          archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment, quote := __src.quote,
+          adopts := __src.adopts, authority := __src.authority, approval := __src.approval, halted := __src.halted,
+          losses := __src.losses, performed := __src.performed, fulfilled := __src.fulfilled })
+        (fullHistory Meter.faithful true true)).fulfilled =
+    8
+because its `Decidable` instance
+  instDecidableEqNat
+    (run
+        (let __src := initial;
+        { context := Context.restrictionNeeded, budget := __src.budget, goal := __src.goal, rule := __src.rule,
+          archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment, quote := __src.quote,
+          adopts := __src.adopts, authority := __src.authority, approval := __src.approval, halted := __src.halted,
+          losses := __src.losses, performed := __src.performed, fulfilled := __src.fulfilled })
+        (fullHistory Meter.faithful true true)).fulfilled
+    8
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `Bool.decEq`, `Nat.decEq`, and `Nat.decLe`, reduction got stuck at the `Decidable` instance
+  match h :
+    (run
+            (let __src := initial;
+            { context := Context.restrictionNeeded, budget := __src.budget, goal := __src.goal, rule := __src.rule,
+              archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment, quote := __src.quote,
+              adopts := __src.adopts, authority := __src.authority, approval := __src.approval, halted := __src.halted,
+              losses := __src.losses, performed := __src.performed, fulfilled := __src.fulfilled })
+            (fullHistory Meter.faithful true true)).fulfilled.beq
+      8 with
+  | true => isTrue ⋯
+  | false => isFalse ⋯
+GoalRevision.lean:369:58: error: Tactic `decide` failed for proposition
+  (run
+          (let __src := initial;
+          { context := Context.restrictionNeeded, budget := __src.budget, goal := __src.goal, rule := __src.rule,
+            archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment, quote := __src.quote,
+            adopts := __src.adopts, authority := __src.authority, approval := __src.approval, halted := __src.halted,
+            losses := __src.losses, performed := __src.performed, fulfilled := __src.fulfilled })
+          (fullHistory Meter.reversed true true)).goal =
+      some Goal.capacity ∧
+    (run
+            (let __src := initial;
+            { context := Context.restrictionNeeded, budget := __src.budget, goal := __src.goal, rule := __src.rule,
+              archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment, quote := __src.quote,
+              adopts := __src.adopts, authority := __src.authority, approval := __src.approval, halted := __src.halted,
+              losses := __src.losses, performed := __src.performed, fulfilled := __src.fulfilled })
+            (fullHistory Meter.reversed true true)).fulfilled =
+        0 ∧
+      (run
+            (let __src := initial;
+            { context := Context.restrictionNeeded, budget := __src.budget, goal := __src.goal, rule := __src.rule,
+              archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment, quote := __src.quote,
+              adopts := __src.adopts, authority := __src.authority, approval := __src.approval, halted := __src.halted,
+              losses := __src.losses, performed := __src.performed, fulfilled := __src.fulfilled })
+            (fullHistory Meter.reversed true true)).losses =
+        9
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `Bool.decEq`, `Nat.decLe`, and `Option.instDecidableEq`, reduction got stuck at the `Decidable` instance
+  match
+    (run
+        (let __src := initial;
+        { context := Context.restrictionNeeded, budget := __src.budget, goal := __src.goal, rule := __src.rule,
+          archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment, quote := __src.quote,
+          adopts := __src.adopts, authority := __src.authority, approval := __src.approval, halted := __src.halted,
+          losses := __src.losses, performed := __src.performed, fulfilled := __src.fulfilled })
+        (fullHistory Meter.reversed true true)).goal with
+  | none =>
+    match some Goal.capacity with
+    | none => isTrue ⋯
+    | some val => isFalse ⋯
+  | some a =>
+    match some Goal.capacity with
+    | none => isFalse ⋯
+    | some b =>
+      match instDecidableEqGoal a b with
+      | isTrue h => isTrue ⋯
+      | isFalse n => isFalse ⋯
+GoalRevision.lean:375:61: error: Tactic `decide` failed for proposition
+  (run
+          (let __src := initial;
+          { context := __src.context, budget := __src.budget, goal := __src.goal, rule := __src.rule,
+            archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment, quote := __src.quote,
+            adopts := __src.adopts, authority := false, approval := __src.approval, halted := __src.halted,
+            losses := __src.losses, performed := __src.performed, fulfilled := __src.fulfilled })
+          (fullHistory Meter.faithful true true)).rule =
+      Rule.volume ∧
+    (run
+          (let __src := initial;
+          { context := __src.context, budget := __src.budget, goal := __src.goal, rule := __src.rule,
+            archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment, quote := __src.quote,
+            adopts := __src.adopts, authority := false, approval := __src.approval, halted := __src.halted,
+            losses := __src.losses, performed := __src.performed, fulfilled := __src.fulfilled })
+          (fullHistory Meter.faithful true true)).fulfilled =
+      7
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `Bool.decEq`, `instDecidableEqRule`, `Nat.decEq`, and `Nat.decLe`, reduction got stuck at the `Decidable` instance
+  match h :
+    (run
+              (let __src := initial;
+              { context := __src.context, budget := __src.budget, goal := __src.goal, rule := __src.rule,
+                archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment, quote := __src.quote,
+                adopts := __src.adopts, authority := false, approval := __src.approval, halted := __src.halted,
+                losses := __src.losses, performed := __src.performed, fulfilled := __src.fulfilled })
+              (fullHistory Meter.faithful true true)).rule.ctorIdx.beq
+      Rule.volume.ctorIdx with
+  | true => isTrue ⋯
+  | false => isFalse ⋯
+GoalRevision.lean:381:14: error: Tactic `decide` failed for proposition
+  (run initial (preparation Meter.faithful true ++ [Event.reform 3] ++ continuation 3)).rule = Rule.volume ∧
+    (run initial (preparation Meter.faithful true ++ [Event.reform 3] ++ continuation 3)).fulfilled = 3
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `Bool.decEq`, `instDecidableEqRule`, `Nat.decEq`, and `Nat.decLe`, reduction got stuck at the `Decidable` instance
+  match h :
+    (run initial (preparation Meter.faithful true ++ [Event.reform 3] ++ continuation 3)).rule.ctorIdx.beq
+      Rule.volume.ctorIdx with
+  | true => isTrue ⋯
+  | false => isFalse ⋯
+GoalRevision.lean:387:61: error: Tactic `decide` failed for proposition
+  (run
+          (let __src := initial;
+          { context := __src.context, budget := { cash := 14, fund := 5, spent := 0 }, goal := __src.goal,
+            rule := __src.rule, archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment,
+            quote := __src.quote, adopts := __src.adopts, authority := __src.authority, approval := __src.approval,
+            halted := __src.halted, losses := __src.losses, performed := __src.performed,
+            fulfilled := __src.fulfilled })
+          (fullHistory Meter.faithful true true)).rule =
+      Rule.volume ∧
+    (run
+          (let __src := initial;
+          { context := __src.context, budget := { cash := 14, fund := 5, spent := 0 }, goal := __src.goal,
+            rule := __src.rule, archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment,
+            quote := __src.quote, adopts := __src.adopts, authority := __src.authority, approval := __src.approval,
+            halted := __src.halted, losses := __src.losses, performed := __src.performed,
+            fulfilled := __src.fulfilled })
+          (fullHistory Meter.faithful true true)).fulfilled =
+      1
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqNat`, `Bool.decEq`, `instDecidableEqRule`, `Nat.decEq`, and `Nat.decLe`, reduction got stuck at the `Decidable` instance
+  match h :
+    (run
+              (let __src := initial;
+              { context := __src.context, budget := { cash := 14, fund := 5, spent := 0 }, goal := __src.goal,
+                rule := __src.rule, archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment,
+                quote := __src.quote, adopts := __src.adopts, authority := __src.authority, approval := __src.approval,
+                halted := __src.halted, losses := __src.losses, performed := __src.performed,
+                fulfilled := __src.fulfilled })
+              (fullHistory Meter.faithful true true)).rule.ctorIdx.beq
+      Rule.volume.ctorIdx with
+  | true => isTrue ⋯
+  | false => isFalse ⋯
+GoalRevision.lean:430:0: error: aborting evaluation since the expression depends on the 'sorry' axiom, which can lead to runtime instability and crashes.
+
+To attempt to evaluate anyway despite the risks, use the '#eval!' command.

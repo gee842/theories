@@ -1,0 +1,1 @@
+CorrectionRace.lean:78:54: error(lean.unknownIdentifier): Unknown constant `Bool.and_eq_true.mp`

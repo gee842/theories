@@ -1,0 +1,230 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-07T21:34:00.526321+00:00",
+  "review_script_sha256": "4942171c2b2a9db4b2c3565634f5289855c854384102a7fecee7fa5bd11d4630",
+  "producer_sha256": "57e3a1ead595bdf6b2b99535152a7f8a2562b778556937f01e3571e035676a84",
+  "results_sha256": "b8bcb98bee2e4a56fac821b4c15561f389298151f23c2ab91666450ef733f8e9",
+  "base_results_sha256": "1a1d6022ec5d06fb7f18a4fc966277d52a9d1144ccb44e4f69001ebe53ad67d7",
+  "sequences": 12,
+  "updates": 7176,
+  "unchanged_controls": 3,
+  "runs": [
+    {
+      "run": "initial",
+      "mode": "identical",
+      "updates": 598,
+      "all_exact_certificate_fields": "identical",
+      "all_summary_fields": "identical",
+      "branch_certificates": {
+        "exterior": 125,
+        "interior": 473,
+        "uncertain": 0
+      },
+      "mismatch_count": 0,
+      "zero_memory_failure_count": 0,
+      "max_command_error": 0.0,
+      "max_command_radius": 0.0,
+      "max_memory_error": 0.0,
+      "max_memory_radius": 0.0
+    },
+    {
+      "run": "initial",
+      "mode": "previous_record",
+      "updates": 598,
+      "all_exact_certificate_fields": "identical",
+      "all_summary_fields": "identical",
+      "branch_certificates": {
+        "exterior": 113,
+        "interior": 456,
+        "uncertain": 29
+      },
+      "mismatch_count": 5,
+      "zero_memory_failure_count": 285,
+      "max_command_error": 3.4304145769870105,
+      "max_command_radius": 11.93804733722185,
+      "max_memory_error": 0.5436952724338334,
+      "max_memory_radius": 10.196777125540367
+    },
+    {
+      "run": "initial",
+      "mode": "plus_one",
+      "updates": 598,
+      "all_exact_certificate_fields": "identical",
+      "all_summary_fields": "identical",
+      "branch_certificates": {
+        "exterior": 78,
+        "interior": 172,
+        "uncertain": 348
+      },
+      "mismatch_count": 25,
+      "zero_memory_failure_count": 415,
+      "max_command_error": 13.99624632224963,
+      "max_command_radius": 64.70674279144932,
+      "max_memory_error": 8.250725173603202,
+      "max_memory_radius": 59.01995993189951
+    },
+    {
+      "run": "initial",
+      "mode": "minus_one",
+      "updates": 598,
+      "all_exact_certificate_fields": "identical",
+      "all_summary_fields": "identical",
+      "branch_certificates": {
+        "exterior": 78,
+        "interior": 172,
+        "uncertain": 348
+      },
+      "mismatch_count": 24,
+      "zero_memory_failure_count": 440,
+      "max_command_error": 15.169441437010853,
+      "max_command_radius": 64.70674279144932,
+      "max_memory_error": 9.423920288364426,
+      "max_memory_radius": 59.01995993189951
+    },
+    {
+      "run": "validation_1",
+      "mode": "identical",
+      "updates": 598,
+      "all_exact_certificate_fields": "identical",
+      "all_summary_fields": "identical",
+      "branch_certificates": {
+        "exterior": 180,
+        "interior": 418,
+        "uncertain": 0
+      },
+      "mismatch_count": 0,
+      "zero_memory_failure_count": 0,
+      "max_command_error": 0.0,
+      "max_command_radius": 0.0,
+      "max_memory_error": 0.0,
+      "max_memory_radius": 0.0
+    },
+    {
+      "run": "validation_1",
+      "mode": "previous_record",
+      "updates": 598,
+      "all_exact_certificate_fields": "identical",
+      "all_summary_fields": "identical",
+      "branch_certificates": {
+        "exterior": 149,
+        "interior": 123,
+        "uncertain": 326
+      },
+      "mismatch_count": 5,
+      "zero_memory_failure_count": 258,
+      "max_command_error": 3.786148581504765,
+      "max_command_radius": 100.0,
+      "max_memory_error": 1.7748605706475002,
+      "max_memory_radius": 111.37036505048923
+    },
+    {
+      "run": "validation_1",
+      "mode": "plus_one",
+      "updates": 598,
+      "all_exact_certificate_fields": "identical",
+      "all_summary_fields": "identical",
+      "branch_certificates": {
+        "exterior": 64,
+        "interior": 5,
+        "uncertain": 529
+      },
+      "mismatch_count": 103,
+      "zero_memory_failure_count": 377,
+      "max_command_error": 39.490421775471084,
+      "max_command_radius": 100.0,
+      "max_memory_error": 29.490421775471084,
+      "max_memory_radius": 414.4939655447006
+    },
+    {
+      "run": "validation_1",
+      "mode": "minus_one",
+      "updates": 598,
+      "all_exact_certificate_fields": "identical",
+      "all_summary_fields": "identical",
+      "branch_certificates": {
+        "exterior": 64,
+        "interior": 5,
+        "uncertain": 529
+      },
+      "mismatch_count": 50,
+      "zero_memory_failure_count": 387,
+      "max_command_error": 44.66288240389391,
+      "max_command_radius": 100.0,
+      "max_memory_error": 34.66288240389391,
+      "max_memory_radius": 414.4939655447006
+    },
+    {
+      "run": "validation_2",
+      "mode": "identical",
+      "updates": 598,
+      "all_exact_certificate_fields": "identical",
+      "all_summary_fields": "identical",
+      "branch_certificates": {
+        "exterior": 181,
+        "interior": 417,
+        "uncertain": 0
+      },
+      "mismatch_count": 0,
+      "zero_memory_failure_count": 0,
+      "max_command_error": 0.0,
+      "max_command_radius": 0.0,
+      "max_memory_error": 0.0,
+      "max_memory_radius": 0.0
+    },
+    {
+      "run": "validation_2",
+      "mode": "previous_record",
+      "updates": 598,
+      "all_exact_certificate_fields": "identical",
+      "all_summary_fields": "identical",
+      "branch_certificates": {
+        "exterior": 144,
+        "interior": 115,
+        "uncertain": 339
+      },
+      "mismatch_count": 3,
+      "zero_memory_failure_count": 248,
+      "max_command_error": 7.921459849964428,
+      "max_command_radius": 100.0,
+      "max_memory_error": 1.7468037674643782,
+      "max_memory_radius": 119.97893484765834
+    },
+    {
+      "run": "validation_2",
+      "mode": "plus_one",
+      "updates": 598,
+      "all_exact_certificate_fields": "identical",
+      "all_summary_fields": "identical",
+      "branch_certificates": {
+        "exterior": 59,
+        "interior": 7,
+        "uncertain": 532
+      },
+      "mismatch_count": 117,
+      "zero_memory_failure_count": 374,
+      "max_command_error": 38.471591287092735,
+      "max_command_radius": 100.0,
+      "max_memory_error": 28.47159128709274,
+      "max_memory_radius": 417.967162343372
+    },
+    {
+      "run": "validation_2",
+      "mode": "minus_one",
+      "updates": 598,
+      "all_exact_certificate_fields": "identical",
+      "all_summary_fields": "identical",
+      "branch_certificates": {
+        "exterior": 59,
+        "interior": 7,
+        "uncertain": 532
+      },
+      "mismatch_count": 47,
+      "zero_memory_failure_count": 388,
+      "max_command_error": 46.66678021994504,
+      "max_command_radius": 100.0,
+      "max_memory_error": 36.66678021994504,
+      "max_memory_radius": 417.967162343372
+    }
+  ],
+  "scope": "Independent Fraction reconstruction with unweighted integral and interval-image branch enclosure. Every retained certificate field and summary exactly agrees. Retrospective known-input controller transformations, not counterfactual physical trajectories or future sensor calibration; left-held command exposure is not energy."
+}

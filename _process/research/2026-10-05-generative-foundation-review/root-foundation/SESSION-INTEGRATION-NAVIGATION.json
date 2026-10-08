@@ -1,0 +1,42 @@
+{
+  "scope": "Owned navigation insertions and one stale-count replacement; preservation checked at each mutation.",
+  "edits": [
+    {
+      "path": "RESEARCH.md",
+      "before_sha256": "40d51c56f9e75b3e370e94beb58807a464de45027ed614c8d75a1f957a3647c4",
+      "after_sha256": "355442437608fe2247a4c926e6f1776581f0324471a357abc183b8874aa04af6",
+      "added": "**会话成果整合与证明复用 / Session outcome consolidation，2026-10-08。** [44会话、14成果族地图](theories/shengsheng-buxi-generative-existence/results/SESSION-RESULTS.md)给出结果类别、正式复用入口及未接通的对应；[审计](_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md)修正一个冻结证据副本的源码分类，区分已有别名、同一健全性命题与不同模型的相似证明。/ The Lean navigation is refreshed; chapter readings retain their recorded review versions. This documentary integration adds no theorem or full semantic-deduplication claim.\n\n",
+      "replacements": [],
+      "unrelated_bytes_preserved": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "before_sha256": "fdc3c919a8bfaf3a481968ca1c102078f09513554a923c9ebec74a16dbc25abd",
+      "after_sha256": "bc402a8cc634d23263b09cea964f9fc287de3d05202205be33462e8bf24d8d4b",
+      "added": "**会话成果与复用 / Session outcomes and reuse，2026-10-08。** [会话地图](results/SESSION-RESULTS.md)将44个仓库会话的可检索成果归入14个成果族，指明证明复用、应用、推广、反例与验收；[审计](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md)保留跨分支对应的条件。/ Refreshed Lean navigation separates saved copies and theorem aliases from independent contributions; older reading editions retain their source-review scope.\n\n",
+      "replacements": [],
+      "unrelated_bytes_preserved": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "before_sha256": "674afbf50dda6eeac5fbfa3690cde720a8463419ed3d59d18234bd6fda354402",
+      "after_sha256": "1b30b4067efaf4427b774799a7c679c3989e87671839b2f4ae84874ab7147137",
+      "added": "**会话整合与证明复用，2026-10-08 / Session consolidation:** [审计](SESSION-INTEGRATION-AUDIT.md)及[44会话／14成果族地图](../../../../theories/shengsheng-buxi-generative-existence/results/SESSION-RESULTS.md)记录规范复用入口、重复源分类修正及声明外形的比较。/ Documentary consolidation only; original proofs, counterexamples, receipts and pending source reviews remain intact.\n\n",
+      "replacements": [],
+      "unrelated_bytes_preserved": true
+    },
+    {
+      "path": "README.md",
+      "before_sha256": "d9fe399f6984e446f42751891eae246e7c3f345d5d055ae51024a82e20a1e431",
+      "after_sha256": "0f174d73a0e169f802182414ae399ac35e36d444cba394cc561fb8d5e8201341",
+      "added": "**[会话成果与证明复用 / Session outcomes and proof reuse](theories/shengsheng-buxi-generative-existence/results/SESSION-RESULTS.md)**：44个仓库会话按14个成果族连接到当前论述与复用证明；区分新结果、推广、应用、反例和重复验收。/ A dated cross-session map, with refreshed Lean navigation and explicit integration limits.\n\n",
+      "replacements": [
+        {
+          "before": "65项中英对照，按根基、共同实现、情境理由、学习／良知／智慧与形式支撑逐项链接；有变化时持续更新。 / 65 paired entries with theory, evidence and proof links, maintained as research changes.",
+          "after": "中英条目按根基、共同实现、情境理由、学习／良知／智慧与形式支撑逐项链接，数量与状态以表内当前版本为准。 / Paired entries with theory, evidence and proof links; consult the maintained table for its current count and status."
+        }
+      ],
+      "unrelated_bytes_preserved": true
+    }
+  ]
+}

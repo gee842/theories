@@ -1,0 +1,112 @@
+Generative.CompositionalTransmission.response_remaining_is_bounded (s : Generative.CompositionalFormation.Frame)
+  (e : Generative.CompositionalAcquisition.Expr) (out : List Bool) (left : Nat)
+  (h : Generative.CompositionalFormation.respond s e = some (out, left)) : left ≤ s.support
+Generative.CompositionalTransmission.send_preserves_joint_support (e : Generative.CompositionalAcquisition.Expr)
+  (x : Generative.CompositionalTransmission.Exchange) :
+  (Generative.CompositionalTransmission.send e x).sender.support +
+          (Generative.CompositionalTransmission.send e x).sender.spent +
+        (Generative.CompositionalTransmission.send e x).receiver.support +
+      (Generative.CompositionalTransmission.send e x).receiver.spent =
+    x.sender.support + x.sender.spent + x.receiver.support + x.receiver.spent
+Generative.CompositionalTransmission.lesson_preserves_joint_support (es : List Generative.CompositionalAcquisition.Expr)
+  (x : Generative.CompositionalTransmission.Exchange) :
+  (Generative.CompositionalTransmission.lesson es x).sender.support +
+          (Generative.CompositionalTransmission.lesson es x).sender.spent +
+        (Generative.CompositionalTransmission.lesson es x).receiver.support +
+      (Generative.CompositionalTransmission.lesson es x).receiver.spent =
+    x.sender.support + x.sender.spent + x.receiver.support + x.receiver.spent
+Generative.CompositionalTransmission.delivery_uses_actual_response (e : Generative.CompositionalAcquisition.Expr)
+  (x : Generative.CompositionalTransmission.Exchange) (ready : x.receiver.blocked = false)
+  (support : 1 ≤ x.receiver.support) (out : List Bool) (remaining : Nat)
+  (actual : Generative.CompositionalFormation.respond x.sender e = some (out, remaining)) :
+  (Generative.CompositionalTransmission.send e x).receiver.samples = x.receiver.samples ++ [(e, out)] ∧
+    (Generative.CompositionalTransmission.send e x).sender.support = remaining
+Generative.CompositionalTransmission.absent_response_does_not_fabricate_sample
+  (e : Generative.CompositionalAcquisition.Expr) (x : Generative.CompositionalTransmission.Exchange)
+  (absent : Generative.CompositionalFormation.respond x.sender e = none) :
+  (Generative.CompositionalTransmission.send e x).receiver.samples = x.receiver.samples
+Generative.CompositionalTransmission.basic_lesson_reads_program (p : Generative.CompositionalFormation.Program)
+  (n : Nat) (routes : p.route ∈ Generative.CompositionalFormation.generatedRoutes 2) (enough : 7 ≤ n) :
+  (Generative.CompositionalTransmission.lesson Generative.CompositionalTransmission.basic
+        { sender := Generative.CompositionalTransmission.source p n,
+          receiver := Generative.CompositionalTransmission.blank 25 8 }).receiver =
+    have __src := Generative.CompositionalTransmission.blank 22 8;
+    { wires := __src.wires, installed := __src.installed, support := __src.support, spent := 3, parts := __src.parts,
+      usedParts := __src.usedParts, blocked := __src.blocked,
+      samples := Generative.CompositionalTransmission.programRecords p, attempts := __src.attempts }
+Generative.CompositionalTransmission.reconstructed_program_from_actual_outputs
+  (p : Generative.CompositionalFormation.Program) (n : Nat)
+  (routes : p.route ∈ Generative.CompositionalFormation.generatedRoutes 2) (distinct : p.first ≠ p.second)
+  (enough : 7 ≤ n) :
+  (Generative.CompositionalTransmission.learn (Generative.CompositionalTransmission.source p n) 25 8).installed =
+      some p ∧
+    7 ≤ (Generative.CompositionalTransmission.learn (Generative.CompositionalTransmission.source p n) 25 8).support
+Generative.CompositionalTransmission.formed_teacher_can_teach_after_supported_preparation :
+  (Generative.CompositionalFormation.develop (Generative.CompositionalFormation.prepared 25 4)).installed =
+      some (Generative.CompositionalFormation.programFor Generative.CompositionalAcquisition.usual) ∧
+    (Generative.CompositionalTransmission.learn
+          (Generative.CompositionalFormation.develop (Generative.CompositionalFormation.prepared 25 4)) 25
+          8).installed =
+      some (Generative.CompositionalFormation.programFor Generative.CompositionalAcquisition.usual)
+Generative.CompositionalTransmission.execution_only_budget_can_interrupt_teaching :
+  (Generative.CompositionalTransmission.lesson Generative.CompositionalTransmission.basic
+            { sender := Generative.CompositionalFormation.developed,
+              receiver := Generative.CompositionalTransmission.blank 25 8 }).receiver.samples =
+      [(Generative.CompositionalAcquisition.p0, [false]), (Generative.CompositionalAcquisition.p1, [true])] ∧
+    Generative.CompositionalTransmission.firstLearner.installed = none ∧
+      Generative.CompositionalTransmission.firstLearner.blocked = true
+Generative.CompositionalTransmission.teacher_program_changes_received_evidence :
+  (Generative.CompositionalTransmission.lesson Generative.CompositionalTransmission.basic
+            { sender := Generative.CompositionalTransmission.source Generative.CompositionalTransmission.selective 7,
+              receiver := Generative.CompositionalTransmission.blank 25 8 }).receiver.samples =
+      Generative.CompositionalTransmission.programRecords Generative.CompositionalTransmission.selective ∧
+    Generative.CompositionalTransmission.programRecords Generative.CompositionalTransmission.selective ≠
+      Generative.CompositionalAcquisition.trialRecords Generative.CompositionalAcquisition.usual
+Generative.CompositionalTransmission.faithfully_reconstructed_operation_can_lose_a_task_distinction :
+  (Generative.CompositionalTransmission.learn
+          (Generative.CompositionalTransmission.source Generative.CompositionalTransmission.selective 7) 25
+          8).installed =
+      some Generative.CompositionalTransmission.selective ∧
+    Generative.CompositionalFormation.operate Generative.CompositionalTransmission.selective
+          Generative.CompositionalTransmission.joint00 =
+        Generative.CompositionalFormation.operate Generative.CompositionalTransmission.selective
+          Generative.CompositionalAcquisition.orderProbe ∧
+      Generative.CompositionalAcquisition.eval Generative.CompositionalAcquisition.usual
+          Generative.CompositionalTransmission.joint00 ≠
+        Generative.CompositionalAcquisition.eval Generative.CompositionalAcquisition.usual
+          Generative.CompositionalAcquisition.orderProbe
+Generative.CompositionalTransmission.extra_funding_does_not_fix_transmitted_content :
+  (Generative.CompositionalTransmission.learn
+        (Generative.CompositionalTransmission.source Generative.CompositionalTransmission.selective 70) 100
+        80).installed =
+    some Generative.CompositionalTransmission.selective
+Generative.CompositionalTransmission.same_teacher_different_encounters_change_reconstruction :
+  (Generative.CompositionalTransmission.learn
+          (Generative.CompositionalTransmission.source
+            (Generative.CompositionalFormation.programFor Generative.CompositionalFormation.collapsed) 11)
+          25 8).installed =
+      some Generative.CompositionalFormation.duplicated ∧
+    (Generative.CompositionalTransmission.learn
+          (Generative.CompositionalTransmission.source
+            (Generative.CompositionalFormation.programFor Generative.CompositionalFormation.collapsed) 11)
+          25 8 Generative.CompositionalTransmission.extended).installed =
+      some (Generative.CompositionalFormation.programFor Generative.CompositionalFormation.collapsed)
+Generative.CompositionalTransmission.peer_demonstration_can_repair_without_new_generation :
+  Generative.CompositionalTransmission.misleadingPeer.installed = some Generative.CompositionalFormation.duplicated ∧
+    Generative.CompositionalTransmission.revisedPeer.installed =
+        some (Generative.CompositionalFormation.programFor Generative.CompositionalFormation.collapsed) ∧
+      Generative.CompositionalFormation.respond Generative.CompositionalTransmission.revisedPeer
+          Generative.CompositionalFormation.further =
+        some ([false, false, false], 5)
+Generative.CompositionalTransmission.erroneous_peer_demonstration_can_preserve_error :
+  (Generative.CompositionalFormation.reconsider
+        (Generative.CompositionalTransmission.send Generative.CompositionalAcquisition.novel
+            { sender := Generative.CompositionalTransmission.source Generative.CompositionalFormation.duplicated 5,
+              receiver := Generative.CompositionalTransmission.misleadingPeer }).receiver).installed =
+    some Generative.CompositionalFormation.duplicated
+Generative.CompositionalTransmission.received_disagreement_is_not_automatically_repaired :
+  (Generative.CompositionalTransmission.learn
+        (Generative.CompositionalTransmission.source
+          (Generative.CompositionalFormation.programFor Generative.CompositionalFormation.collapsed) 11)
+        5 8 Generative.CompositionalTransmission.extended).installed =
+    none

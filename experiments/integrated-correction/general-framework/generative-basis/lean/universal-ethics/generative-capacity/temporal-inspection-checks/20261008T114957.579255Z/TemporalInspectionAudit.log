@@ -1,0 +1,328 @@
+'TemporalInspection.World' does not depend on any axioms
+'TemporalInspection.roots' does not depend on any axioms
+'TemporalInspection.commandRoots' does not depend on any axioms
+'TemporalInspection.worlds' does not depend on any axioms
+'TemporalInspection.fits' does not depend on any axioms
+'TemporalInspection.receive' does not depend on any axioms
+'TemporalInspection.Change' does not depend on any axioms
+'TemporalInspection.successors' does not depend on any axioms
+'TemporalInspection.predict' does not depend on any axioms
+'TemporalInspection.models' does not depend on any axioms
+'TemporalInspection.received_actual_retained' depends on axioms: [propext]
+'TemporalInspection.prediction_contains_successor' depends on axioms: [propext, Quot.sound]
+'TemporalInspection.received_possible_subset' depends on axioms: [propext]
+'TemporalInspection.predicted_world_is_represented' depends on axioms: [propext]
+'TemporalInspection.missing_report_retains_worlds' depends on axioms: [propext, Quot.sound]
+'TemporalInspection.projected_model_contains_actual' depends on axioms: [propext, Quot.sound]
+'TemporalInspection.command_projection_matches_physical_causes' does not depend on any axioms
+'TemporalInspection.represented_command_coverage' does not depend on any axioms
+'TemporalInspection.covered_command_world' depends on axioms: [propext, Quot.sound]
+'TemporalInspection.current_pool_sound' depends on axioms: [propext, Quot.sound]
+'TemporalInspection.Record' does not depend on any axioms
+'TemporalInspection.State' does not depend on any axioms
+'TemporalInspection.Known' does not depend on any axioms
+'TemporalInspection.read' does not depend on any axioms
+'TemporalInspection.changeCost' does not depend on any axioms
+'TemporalInspection.move' does not depend on any axioms
+'TemporalInspection.asSituation' does not depend on any axioms
+'TemporalInspection.respond' depends on axioms: [propext]
+'TemporalInspection.Event' does not depend on any axioms
+'TemporalInspection.execute' depends on axioms: [propext]
+'TemporalInspection.Lawful' does not depend on any axioms
+'TemporalInspection.reading_preserves_known' depends on axioms: [propext]
+'TemporalInspection.movement_preserves_known' depends on axioms: [propext, Quot.sound]
+'TemporalInspection.responding_preserves_known' depends on axioms: [propext]
+'TemporalInspection.lawful_step_preserves_known' depends on axioms: [propext, Quot.sound]
+'TemporalInspection.History' depends on axioms: [propext]
+'TemporalInspection.lawful_history_preserves_known' depends on axioms: [propext, Quot.sound]
+'TemporalInspection.history_to_current_certificate' depends on axioms: [propext, Quot.sound]
+'TemporalInspection.history_to_actual_completion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TemporalInspection.run' depends on axioms: [propext]
+'TemporalInspection.runUntilBlocked' depends on axioms: [propext]
+'TemporalInspection.completed_run_preserves_its_executed_prefix' depends on axioms: [propext]
+'TemporalInspection.lawfulDecidable' depends on axioms: [propext]
+'TemporalInspection.auditRun' depends on axioms: [propext]
+'TemporalInspection.history_transitive' depends on axioms: [propext]
+'TemporalInspection.audit_produces_lawful_history' depends on axioms: [propext]
+'TemporalInspection.audit_matches_operational_run' depends on axioms: [propext]
+'TemporalInspection.initial' does not depend on any axioms
+'TemporalInspection.scan' does not depend on any axioms
+'TemporalInspection.mask' does not depend on any axioms
+'TemporalInspection.scanResult' does not depend on any axioms
+'TemporalInspection.fixed_scan_retains_same_structural_alternatives' does not depend on any axioms
+'TemporalInspection.mobileLie' does not depend on any axioms
+'TemporalInspection.single_cause_at_each_read_can_forge_whole_transcript' does not depend on any axioms
+'TemporalInspection.temporal_observer_does_not_infer_false_right_sharing' depends on axioms: [propext]
+'TemporalInspection.changedAndRechecked' does not depend on any axioms
+'TemporalInspection.worked_histories_satisfy_their_transition_and_reporting_laws' depends on axioms: [propext]
+'TemporalInspection.actual_control_change_then_reinspection_completes' depends on axioms: [propext]
+'TemporalInspection.reinspection_without_execution_capacity_does_not_complete' depends on axioms: [propext]
+'TemporalInspection.blocked_later_read_does_not_refund_earlier_inspection' depends on axioms: [propext]
+'TemporalInspection.denied_reorganization_retains_earlier_evidence_and_cost' depends on axioms: [propext]
+'TemporalInspection.predicting_change_reopens_relevant_alternatives' does not depend on any axioms
+'TemporalInspection.fault_movement_does_not_erase_structural_knowledge' does not depend on any axioms
+'TemporalInspection.new_change_after_last_report_reopens_coverage' does not depend on any axioms
+'TemporalInspection.understated_change_can_leave_false_confidence' depends on axioms: [propext]
+'TemporalInspection.denied_reads_collect_nothing' depends on axioms: [propext, Quot.sound]
+TemporalInspection.received_actual_retained (possible : List TemporalInspection.World)
+  (actual : TemporalInspection.World) (known : actual ∈ possible) (d : FaultTolerantCorrection.Domain)
+  (report : Option Bool) (lawful : TemporalInspection.fits actual d report = true) :
+  actual ∈ TemporalInspection.receive possible d report
+TemporalInspection.prediction_contains_successor (c : TemporalInspection.Change)
+  (possible : List TemporalInspection.World) (old new : TemporalInspection.World) (known : old ∈ possible)
+  (lawful : new ∈ TemporalInspection.successors c old) : new ∈ TemporalInspection.predict c possible
+TemporalInspection.received_possible_subset (possible : List TemporalInspection.World)
+  (d : FaultTolerantCorrection.Domain) (report : Option Bool) (w : TemporalInspection.World) :
+  w ∈ TemporalInspection.receive possible d report → w ∈ possible
+TemporalInspection.predicted_world_is_represented (c : TemporalInspection.Change)
+  (possible : List TemporalInspection.World) (w : TemporalInspection.World) :
+  w ∈ TemporalInspection.predict c possible → w ∈ TemporalInspection.worlds
+TemporalInspection.missing_report_retains_worlds (possible : List TemporalInspection.World)
+  (d : FaultTolerantCorrection.Domain) : TemporalInspection.receive possible d none = possible
+TemporalInspection.projected_model_contains_actual (possible : List TemporalInspection.World)
+  (actual : TemporalInspection.World) (known : actual ∈ possible) : actual.model ∈ TemporalInspection.models possible
+TemporalInspection.command_projection_matches_physical_causes :
+  (TemporalInspection.worlds.all fun w =>
+      FaultTolerantCorrection.roster4.all fun d =>
+        CorrectionReconfiguration.fails ((EvidenceQualifiedCorrection.describe w.model).vulnerability d)
+            (TemporalInspection.roots w) ==
+          CorrectionReconfiguration.fails ((EvidenceQualifiedCorrection.describe w.model).vulnerability d)
+            (TemporalInspection.commandRoots w)) =
+    true
+TemporalInspection.represented_command_coverage :
+  (TemporalInspection.worlds.all fun w =>
+      (EvidenceQualifiedCorrection.describe w.model).rootFaults.any fun b =>
+        (TemporalInspection.commandRoots w).all fun r => b.contains r) =
+    true
+TemporalInspection.covered_command_world (w : TemporalInspection.World) (represented : w ∈ TemporalInspection.worlds) :
+  CorrectionReconfiguration.Covered (EvidenceQualifiedCorrection.describe w.model) (TemporalInspection.commandRoots w)
+TemporalInspection.current_pool_sound (possible : List TemporalInspection.World) (actual : TemporalInspection.World)
+  (known : actual ∈ possible) (represented : actual ∈ TemporalInspection.worlds)
+  (supports : FaultTolerantCorrection.Domain → Bool) (P : Prop)
+  (faithful :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ (EvidenceQualifiedCorrection.describe actual.model).roster →
+        CorrectionReconfiguration.fails ((EvidenceQualifiedCorrection.describe actual.model).vulnerability d)
+              (TemporalInspection.commandRoots actual) =
+            false →
+          supports d = true → P)
+  (accepted :
+    FaultTolerantCorrection.certificate (EvidenceQualifiedCorrection.describe actual.model).roster
+        (EvidenceQualifiedCorrection.pooled EvidenceQualifiedCorrection.describe (TemporalInspection.models possible))
+        supports =
+      true) :
+  P
+TemporalInspection.reading_preserves_known (s out : TemporalInspection.State) (d : FaultTolerantCorrection.Domain)
+  (r : Option Bool) (known : TemporalInspection.Known s) (lawful : TemporalInspection.fits s.actual d r = true)
+  (done : TemporalInspection.read d r s = some out) : TemporalInspection.Known out
+TemporalInspection.movement_preserves_known (s out : TemporalInspection.State) (c : TemporalInspection.Change)
+  (next : TemporalInspection.World) (known : TemporalInspection.Known s)
+  (lawful : next ∈ TemporalInspection.successors c s.actual) (done : TemporalInspection.move c next s = some out) :
+  TemporalInspection.Known out
+TemporalInspection.responding_preserves_known (s : TemporalInspection.State) (known : TemporalInspection.Known s) :
+  TemporalInspection.Known (TemporalInspection.respond s)
+TemporalInspection.lawful_step_preserves_known (e : TemporalInspection.Event) (s out : TemporalInspection.State)
+  (known : TemporalInspection.Known s) (lawful : TemporalInspection.Lawful e s)
+  (done : TemporalInspection.execute e s = some out) : TemporalInspection.Known out
+TemporalInspection.lawful_history_preserves_known {start finish : TemporalInspection.State}
+  (history : TemporalInspection.History start finish) (known : TemporalInspection.Known start) :
+  TemporalInspection.Known finish
+TemporalInspection.history_to_current_certificate {start finish : TemporalInspection.State}
+  (history : TemporalInspection.History start finish) (known : TemporalInspection.Known start)
+  (supports : FaultTolerantCorrection.Domain → Bool) (P : Prop)
+  (faithful :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ (EvidenceQualifiedCorrection.describe finish.actual.model).roster →
+        CorrectionReconfiguration.fails ((EvidenceQualifiedCorrection.describe finish.actual.model).vulnerability d)
+              (TemporalInspection.commandRoots finish.actual) =
+            false →
+          supports d = true → P)
+  (accepted :
+    FaultTolerantCorrection.certificate (EvidenceQualifiedCorrection.describe finish.actual.model).roster
+        (EvidenceQualifiedCorrection.pooled EvidenceQualifiedCorrection.describe
+          (TemporalInspection.models finish.possible))
+        supports =
+      true) :
+  P
+TemporalInspection.history_to_actual_completion {start finish : TemporalInspection.State}
+  (history : TemporalInspection.History start finish) (known : TemporalInspection.Known start)
+  (apart :
+    FaultTolerantCorrection.separated (EvidenceQualifiedCorrection.describe finish.actual.model).roster
+      (EvidenceQualifiedCorrection.pooled EvidenceQualifiedCorrection.describe
+        (TemporalInspection.models finish.possible)))
+  (p : FaultTolerantCorrection.Request) (reads : FaultTolerantCorrection.Readings)
+  (approvals : FaultTolerantCorrection.Approvals) (current : FaultTolerantCorrection.fresh finish.installation p = true)
+  (readResponses :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ (EvidenceQualifiedCorrection.describe finish.actual.model).roster →
+        CorrectionReconfiguration.fails ((EvidenceQualifiedCorrection.describe finish.actual.model).vulnerability d)
+              (TemporalInspection.commandRoots finish.actual) =
+            false →
+          reads d = some (FaultTolerantCorrection.expected p))
+  (issueResponses :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ (EvidenceQualifiedCorrection.describe finish.actual.model).roster →
+        CorrectionReconfiguration.fails ((EvidenceQualifiedCorrection.describe finish.actual.model).vulnerability d)
+              (TemporalInspection.commandRoots finish.actual) =
+            false →
+          approvals d = some p)
+  (readFaithful :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ (EvidenceQualifiedCorrection.describe finish.actual.model).roster →
+        CorrectionReconfiguration.fails ((EvidenceQualifiedCorrection.describe finish.actual.model).vulnerability d)
+              (TemporalInspection.commandRoots finish.actual) =
+            false →
+          ∀ (o : FaultTolerantCorrection.Observation),
+            reads d = some o → o = FaultTolerantCorrection.observed finish.installation p.address)
+  (issueFaithful :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ (EvidenceQualifiedCorrection.describe finish.actual.model).roster →
+        CorrectionReconfiguration.fails ((EvidenceQualifiedCorrection.describe finish.actual.model).vulnerability d)
+              (TemporalInspection.commandRoots finish.actual) =
+            false →
+          approvals d = some p → FaultTolerantCorrection.withinMandate finish.installation p = true)
+  (funded :
+    (EvidenceQualifiedCorrection.describe finish.actual.model).roster.length * (List.length p.address + 2) + 3 ≤
+      finish.installation.state.reserve)
+  (timely :
+    finish.installation.state.time +
+          (EvidenceQualifiedCorrection.describe finish.actual.model).roster.length * (List.length p.address + 2) +
+        3 ≤
+      finish.installation.state.deadline) :
+  (FaultTolerantCorrection.guardedExecute (EvidenceQualifiedCorrection.describe finish.actual.model).roster
+          (EvidenceQualifiedCorrection.pooled EvidenceQualifiedCorrection.describe
+            (TemporalInspection.models finish.possible))
+          (EvidenceQualifiedCorrection.pooled EvidenceQualifiedCorrection.describe
+            (TemporalInspection.models finish.possible))
+          finish.installation p reads approvals).succeeded =
+      true ∧
+    (FaultTolerantCorrection.guardedExecute (EvidenceQualifiedCorrection.describe finish.actual.model).roster
+                (EvidenceQualifiedCorrection.pooled EvidenceQualifiedCorrection.describe
+                  (TemporalInspection.models finish.possible))
+                (EvidenceQualifiedCorrection.pooled EvidenceQualifiedCorrection.describe
+                  (TemporalInspection.models finish.possible))
+                finish.installation p reads approvals).installation.state.completed =
+        true ∧
+      FaultTolerantCorrection.withinMandate finish.installation p = true
+TemporalInspection.completed_run_preserves_its_executed_prefix (events : List TemporalInspection.Event)
+  (start finish : TemporalInspection.State) (done : TemporalInspection.run events start = some finish) :
+  TemporalInspection.runUntilBlocked events start = (true, finish)
+TemporalInspection.history_transitive {a b c : TemporalInspection.State} (first : TemporalInspection.History a b)
+  (second : TemporalInspection.History b c) : TemporalInspection.History a c
+TemporalInspection.audit_produces_lawful_history (events : List TemporalInspection.Event)
+  (start finish : TemporalInspection.State) (checked : TemporalInspection.auditRun events start = some finish) :
+  TemporalInspection.History start finish
+TemporalInspection.audit_matches_operational_run (events : List TemporalInspection.Event)
+  (start finish : TemporalInspection.State) (checked : TemporalInspection.auditRun events start = some finish) :
+  TemporalInspection.run events start = some finish
+TemporalInspection.fixed_scan_retains_same_structural_alternatives :
+  TemporalInspection.mask (TemporalInspection.scanResult FallibleInspection.splitReports) = 3 ∧
+    TemporalInspection.mask (TemporalInspection.scanResult fun x => some false) = 4
+TemporalInspection.single_cause_at_each_read_can_forge_whole_transcript :
+  ((FallibleInspection.auditRoster true).all fun d =>
+        TemporalInspection.fits
+          { model := EvidenceQualifiedCorrection.Model.left, fault := some (if d < 2 then 0 else d) } d (some false)) =
+      true ∧
+    (FallibleInspection.posterior true EvidenceQualifiedCorrection.hypotheses fun x => some false) =
+      [EvidenceQualifiedCorrection.Model.right]
+TemporalInspection.temporal_observer_does_not_infer_false_right_sharing :
+  have out :=
+    (TemporalInspection.run TemporalInspection.mobileLie
+          (TemporalInspection.initial { model := EvidenceQualifiedCorrection.Model.left, fault := some 0 } 30 30)).getD
+      (TemporalInspection.initial { model := EvidenceQualifiedCorrection.Model.left, fault := some 0 } 30 30);
+  out.actual.model = EvidenceQualifiedCorrection.Model.left ∧
+    TemporalInspection.mask out.possible = 7 ∧ out.installation.state.spent = 5 ∧ out.records.length = 10
+TemporalInspection.worked_histories_satisfy_their_transition_and_reporting_laws :
+  TemporalInspection.auditRun TemporalInspection.mobileLie
+        (TemporalInspection.initial { model := EvidenceQualifiedCorrection.Model.left, fault := some 0 } 30 30) =
+      TemporalInspection.run TemporalInspection.mobileLie
+        (TemporalInspection.initial { model := EvidenceQualifiedCorrection.Model.left, fault := some 0 } 30 30) ∧
+    (TemporalInspection.auditRun TemporalInspection.mobileLie
+            (TemporalInspection.initial { model := EvidenceQualifiedCorrection.Model.left, fault := some 0 } 30
+              30)).isSome =
+        true ∧
+      TemporalInspection.auditRun TemporalInspection.changedAndRechecked
+            (TemporalInspection.initial { model := EvidenceQualifiedCorrection.Model.left, fault := some 0 } 23 23) =
+          TemporalInspection.run TemporalInspection.changedAndRechecked
+            (TemporalInspection.initial { model := EvidenceQualifiedCorrection.Model.left, fault := some 0 } 23 23) ∧
+        (TemporalInspection.auditRun TemporalInspection.changedAndRechecked
+              (TemporalInspection.initial { model := EvidenceQualifiedCorrection.Model.left, fault := some 0 } 23
+                23)).isSome =
+          true
+TemporalInspection.actual_control_change_then_reinspection_completes :
+  have start := TemporalInspection.initial { model := EvidenceQualifiedCorrection.Model.left, fault := some 0 } 23 23;
+  have out := (TemporalInspection.run TemporalInspection.changedAndRechecked start).getD start;
+  out.actual.model = EvidenceQualifiedCorrection.Model.right ∧
+    TemporalInspection.mask out.possible = 4 ∧
+      out.installation.state.completed = true ∧
+        out.installation.state.running = false ∧
+          out.installation.state.spent = 23 ∧
+            out.installation.state.reserve = 0 ∧ out.installation.serial = 1 ∧ out.records.length = 12
+TemporalInspection.reinspection_without_execution_capacity_does_not_complete :
+  have start := TemporalInspection.initial { model := EvidenceQualifiedCorrection.Model.left, fault := some 0 } 22 22;
+  have out := (TemporalInspection.run TemporalInspection.changedAndRechecked start).getD start;
+  TemporalInspection.mask out.possible = 4 ∧
+    out.installation.state.completed = false ∧ out.installation.state.spent = 20 ∧ out.installation.state.reserve = 2
+TemporalInspection.blocked_later_read_does_not_refund_earlier_inspection :
+  have out :=
+    TemporalInspection.runUntilBlocked (TemporalInspection.scan FallibleInspection.splitReports)
+      (TemporalInspection.initial { model := EvidenceQualifiedCorrection.Model.left, fault := some 0 } 2 30);
+  out.fst = false ∧
+    out.snd.installation.state.spent = 2 ∧ out.snd.installation.state.reserve = 0 ∧ out.snd.records.length = 2
+TemporalInspection.denied_reorganization_retains_earlier_evidence_and_cost :
+  have start :=
+    have __src := TemporalInspection.initial { model := EvidenceQualifiedCorrection.Model.left, fault := some 0 } 23 23;
+    { actual := __src.actual, possible := __src.possible, installation := __src.installation, records := __src.records,
+      inspectionAllowed := __src.inspectionAllowed, changeAllowed := false };
+  have out := TemporalInspection.runUntilBlocked TemporalInspection.changedAndRechecked start;
+  out.fst = false ∧
+    out.snd.actual.model = EvidenceQualifiedCorrection.Model.left ∧
+      TemporalInspection.mask out.snd.possible = 3 ∧ out.snd.installation.state.spent = 5 ∧ out.snd.records.length = 5
+TemporalInspection.predicting_change_reopens_relevant_alternatives :
+  TemporalInspection.mask (TemporalInspection.scanResult FallibleInspection.splitReports) = 3 ∧
+    TemporalInspection.mask
+          (TemporalInspection.predict TemporalInspection.Change.reset
+            (TemporalInspection.scanResult FallibleInspection.splitReports)) =
+        7 ∧
+      (FaultTolerantCorrection.certificate FaultTolerantCorrection.roster4
+            (EvidenceQualifiedCorrection.pooled EvidenceQualifiedCorrection.describe
+              (TemporalInspection.models (TemporalInspection.scanResult FallibleInspection.splitReports)))
+            fun d => decide (2 ≤ d)) =
+          true ∧
+        (FaultTolerantCorrection.certificate FaultTolerantCorrection.roster4
+            (EvidenceQualifiedCorrection.pooled EvidenceQualifiedCorrection.describe
+              (TemporalInspection.models
+                (TemporalInspection.predict TemporalInspection.Change.reset
+                  (TemporalInspection.scanResult FallibleInspection.splitReports))))
+            fun d => decide (2 ≤ d)) =
+          false
+TemporalInspection.fault_movement_does_not_erase_structural_knowledge :
+  TemporalInspection.mask
+      (TemporalInspection.predict TemporalInspection.Change.mobile
+        (TemporalInspection.scanResult FallibleInspection.splitReports)) =
+    3
+TemporalInspection.new_change_after_last_report_reopens_coverage :
+  TemporalInspection.mask
+      (TemporalInspection.predict TemporalInspection.Change.control
+        (TemporalInspection.scanResult FallibleInspection.splitReports)) =
+    7
+TemporalInspection.understated_change_can_leave_false_confidence :
+  have events :=
+    TemporalInspection.scan FallibleInspection.splitReports ++
+      [TemporalInspection.Event.move TemporalInspection.Change.steady
+          { model := EvidenceQualifiedCorrection.Model.right, fault := some 2 }];
+  have start := TemporalInspection.initial { model := EvidenceQualifiedCorrection.Model.left, fault := some 0 } 30 30;
+  have out := (TemporalInspection.run events start).getD start;
+  ¬out.actual ∈ out.possible ∧
+    TemporalInspection.mask out.possible = 3 ∧
+      (FaultTolerantCorrection.certificate FaultTolerantCorrection.roster4
+            (EvidenceQualifiedCorrection.pooled EvidenceQualifiedCorrection.describe
+              (TemporalInspection.models out.possible))
+            fun d => decide (2 ≤ d)) =
+          true ∧
+        CorrectionReconfiguration.induced (EvidenceQualifiedCorrection.describe out.actual.model)
+              (TemporalInspection.roots out.actual) =
+            [2, 3] ∧
+          TemporalInspection.auditRun events start = none
+TemporalInspection.denied_reads_collect_nothing (s : TemporalInspection.State) (d : FaultTolerantCorrection.Domain)
+  (r : Option Bool) (denied : s.inspectionAllowed = false) : TemporalInspection.read d r s = none

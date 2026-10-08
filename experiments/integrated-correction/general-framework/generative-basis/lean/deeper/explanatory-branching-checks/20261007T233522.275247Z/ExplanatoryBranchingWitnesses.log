@@ -1,0 +1,20 @@
+'Generative.ExplanatoryBranchingWitnesses.can_nil' does not depend on any axioms
+'Generative.ExplanatoryBranchingWitnesses.can_cons' does not depend on any axioms
+'Generative.ExplanatoryBranchingWitnesses.fork_finitely_branching' depends on axioms: [propext]
+'Generative.ExplanatoryBranchingWitnesses.finish_words' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryBranchingWitnesses.both_words' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryBranchingWitnesses.left_words' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryBranchingWitnesses.right_words' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryBranchingWitnesses.root_words' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryBranchingWitnesses.same_all_words' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryBranchingWitnesses.shared_condition_retains_alternatives' depends on axioms: [propext,
+ Quot.sound]
+'Generative.ExplanatoryBranchingWitnesses.early_split_loses_shared_alternatives' depends on axioms: [propext,
+ Quot.sound]
+'Generative.ExplanatoryBranchingWitnesses.trace_equivalence_misses_branching' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryBranchingWitnesses.no_rooted_bisimulation' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryBranchingWitnesses.unmarked_bisimulation' does not depend on any axioms
+'Generative.ExplanatoryBranchingWitnesses.static_toggle_same_all_tests' does not depend on any axioms
+'Generative.ExplanatoryBranchingWitnesses.two_actual_histories_same_endpoint' does not depend on any axioms
+'Generative.ExplanatoryBranchingWitnesses.all_future_tests_agree_after_both_histories' does not depend on any axioms
+'Generative.ExplanatoryBranchingWitnesses.actual_length_not_endpoint_readable' depends on axioms: [propext]

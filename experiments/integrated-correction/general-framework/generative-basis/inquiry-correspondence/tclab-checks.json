@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "scope": "Separate stdlib Fraction implementation reconstructs all recorded PI commands and metrics. Model fitting is not independently repeated by this checker; physical source authenticity relies on published provenance.",
+  "producer_sha256": "8e0f917554a47960d73f5afeba6a2dde612c4c2089ef464486618c6b5dfbc92d",
+  "producer_results_sha256": "1a1d6022ec5d06fb7f18a4fc966277d52a9d1144ccb44e4f69001ebe53ad67d7",
+  "checker_sha256": "378bf14203654fc970bb47b2376e5abb1d0a2663976d6cd533b79d1f398646a0",
+  "runs": [
+    {
+      "label": "initial",
+      "samples": 599,
+      "commands": 598,
+      "exact_rational_vs_logged_float_max_command_error_percent": 7.400377938304327e-14,
+      "absolute_objective_fraction": "364840588655891569302379/59900000000000000000000",
+      "absolute_objective": 6.09082785736046,
+      "source_sha256": "192bc93456a4d71d43b7ab39de381213dfda94cadcbd169f5faacb3b1ba1330c"
+    },
+    {
+      "label": "validation_1",
+      "samples": 599,
+      "commands": 598,
+      "exact_rational_vs_logged_float_max_command_error_percent": 7.42842058890256e-14,
+      "absolute_objective_fraction": "138119367030048359191/23960000000000000000",
+      "absolute_objective": 5.7645812616881615,
+      "source_sha256": "ff526ed74785c70eeeba4ef455cb14c1ff8121cc6c1c48d946a576d9386d9a0a"
+    },
+    {
+      "label": "validation_2",
+      "samples": 599,
+      "commands": 598,
+      "exact_rational_vs_logged_float_max_command_error_percent": 5.751697116752971e-14,
+      "absolute_objective_fraction": "3329281244659640474513/599000000000000000000",
+      "absolute_objective": 5.558065516961002,
+      "source_sha256": "4c2c4925e427f21fe5ea01e555587bb6fdf4641050420c0f33095a562680ae80"
+    }
+  ],
+  "total_commands": 1794
+}

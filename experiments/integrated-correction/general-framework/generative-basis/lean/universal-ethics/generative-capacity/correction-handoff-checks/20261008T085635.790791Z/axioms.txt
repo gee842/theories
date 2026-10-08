@@ -1,0 +1,45 @@
+'CorrectionHandoff.Record' does not depend on any axioms
+'CorrectionHandoff.Channel' does not depend on any axioms
+'CorrectionHandoff.decode' does not depend on any axioms
+'CorrectionHandoff.Sound' does not depend on any axioms
+'CorrectionHandoff.Ready' does not depend on any axioms
+'CorrectionHandoff.readyDecidable' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.probe' does not depend on any axioms
+'CorrectionHandoff.configure' does not depend on any axioms
+'CorrectionHandoff.power' does not depend on any axioms
+'CorrectionHandoff.execute' does not depend on any axioms
+'CorrectionHandoff.probe_learns_decoder' depends on axioms: [propext]
+'CorrectionHandoff.probe_sound' depends on axioms: [propext]
+'CorrectionHandoff.configure_sound' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.power_sound' does not depend on any axioms
+'CorrectionHandoff.ready_executes' depends on axioms: [propext]
+'CorrectionHandoff.probe_preserves_ready' does not depend on any axioms
+'CorrectionHandoff.power_on_ready' does not depend on any axioms
+'CorrectionHandoff.configure_rejects_old_record' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.Installation' does not depend on any axioms
+'CorrectionHandoff.replace' does not depend on any axioms
+'CorrectionHandoff.Invariant' does not depend on any axioms
+'CorrectionHandoff.Operation' does not depend on any axioms
+'CorrectionHandoff.step' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.replace_inactive' depends on axioms: [propext]
+'CorrectionHandoff.replace_ready' does not depend on any axioms
+'CorrectionHandoff.step_preserves' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.run' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.run_preserves' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.every_interruptible_prefix' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.unbounded_schedule_safety' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.handoff' does not depend on any axioms
+'CorrectionHandoff.handoff_completes' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.initial' does not depend on any axioms
+'CorrectionHandoff.initial_invariant' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.uncheckedSwitch' does not depend on any axioms
+'CorrectionHandoff.stalePreparation' does not depend on any axioms
+'CorrectionHandoff.stale_record_switch_fails' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.guarded_stale_switch_retains_service' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.fresh_retest_restores_switch' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.early_retirement_breaks_service' does not depend on any axioms
+'CorrectionHandoff.pause_does_not_complete_handoff' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.untrackedChange' does not depend on any axioms
+'CorrectionHandoff.matching_revision_is_insufficient' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.reusedRevision' depends on axioms: [propext, Quot.sound]
+'CorrectionHandoff.revision_reuse_admits_stale_record' depends on axioms: [propext, Quot.sound]

@@ -1,0 +1,32 @@
+BoundedRiskRevision.greatest_on_frontier (k x : Nat) (hl : 7 * k ≤ x) (hu : x ≤ 10 * k) :
+  BoundedRiskRevision.greatest k x = BasicRiskSharing.asymmetricB (10 * k) x
+BoundedRiskRevision.dominated_beyond_balance (k x : Nat) (h : x < 7 * k) : BoundedRiskRevision.Dominates k (7 * k) x
+BoundedRiskRevision.no_joint_improvement_on_frontier (k x y : Nat) (hl : 7 * k ≤ x) (hu : x ≤ 10 * k) (hy : y ≤ 10 * k)
+  (ht : BoundedRiskRevision.total k y ≤ BoundedRiskRevision.total k x)
+  (hg : BoundedRiskRevision.greatest k y ≤ BoundedRiskRevision.greatest k x) : y = x
+BoundedRiskRevision.frontier_exact (k x : Nat) : BoundedRiskRevision.Efficient k x ↔ 7 * k ≤ x ∧ x ≤ 10 * k
+BoundedRiskRevision.intermediate_profiles :
+  (BasicRiskSharing.asymmetricA 10 10, BasicRiskSharing.asymmetricB 10 10, BoundedRiskRevision.total 1 10,
+        BoundedRiskRevision.greatest 1 10) =
+      (10, 40, 50, 40) ∧
+    (BasicRiskSharing.asymmetricA 10 9, BasicRiskSharing.asymmetricB 10 9, BoundedRiskRevision.total 1 9,
+          BoundedRiskRevision.greatest 1 9) =
+        (17, 37, 54, 37) ∧
+      (BasicRiskSharing.asymmetricA 10 8, BasicRiskSharing.asymmetricB 10 8, BoundedRiskRevision.total 1 8,
+            BoundedRiskRevision.greatest 1 8) =
+          (24, 34, 58, 34) ∧
+        (BasicRiskSharing.asymmetricA 10 7, BasicRiskSharing.asymmetricB 10 7, BoundedRiskRevision.total 1 7,
+            BoundedRiskRevision.greatest 1 7) =
+          (31, 31, 62, 31)
+BoundedRiskRevision.whole_allowance_iff (k x allowance : Nat) (hx : x ≤ 10 * k) :
+  BoundedRiskRevision.total k x ≤ 50 * k + allowance ↔ 40 * k ≤ 4 * x + allowance
+BoundedRiskRevision.four_point_constraint_optimum (k x : Nat) :
+  x ≤ 10 * k ∧ BoundedRiskRevision.total k x ≤ 54 * k ∧ BoundedRiskRevision.greatest k x ≤ 37 * k ↔ x = 9 * k
+BoundedRiskRevision.scope_bounds_compose (reference middle final allowance₁ allowance₂ : Nat)
+  (h₁ : middle ≤ reference + allowance₁) (h₂ : final ≤ middle + allowance₂) :
+  final ≤ reference + (allowance₁ + allowance₂)
+BoundedRiskRevision.resetting_allowance_exceeds_original_scope :
+  BoundedRiskRevision.total 1 9 ≤ BoundedRiskRevision.total 1 10 + 4 ∧
+    BoundedRiskRevision.total 1 8 ≤ BoundedRiskRevision.total 1 9 + 4 ∧
+      BoundedRiskRevision.total 1 7 ≤ BoundedRiskRevision.total 1 8 + 4 ∧
+        ¬BoundedRiskRevision.total 1 7 ≤ BoundedRiskRevision.total 1 10 + 4

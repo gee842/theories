@@ -1,0 +1,7 @@
+{
+  "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-changing-support-checks/20261008T095528.481203Z/receipt.json",
+  "passed": true,
+  "total_empty_axiom_audits": 119,
+  "total_declaration_audits": 211,
+  "total_standard_axiom_audits": 92
+}

@@ -1,0 +1,31 @@
+ConnectionistRecovery.lean:319:17: error(lean.unknownIdentifier): Unknown identifier `a`
+ConnectionistRecovery.lean:319:24: error(lean.unknownIdentifier): Unknown identifier `a`
+ConnectionistRecovery.lean:319:26: error(lean.unknownIdentifier): Unknown identifier `b`
+ConnectionistRecovery.lean:319:32: error(lean.unknownIdentifier): Unknown identifier `a`
+ConnectionistRecovery.lean:319:38: error(lean.unknownIdentifier): Unknown identifier `b`
+ConnectionistRecovery.lean:319:49: error(lean.unknownIdentifier): Unknown identifier `b`
+ConnectionistRecovery.lean:320:10: error(lean.unknownIdentifier): Unknown identifier `a`
+ConnectionistRecovery.lean:320:16: error(lean.unknownIdentifier): Unknown identifier `a`
+ConnectionistRecovery.lean:320:18: error(lean.unknownIdentifier): Unknown identifier `b`
+ConnectionistRecovery.lean:320:24: error(lean.unknownIdentifier): Unknown identifier `b`
+ConnectionistRecovery.lean:320:31: error(lean.unknownIdentifier): Unknown identifier `a`
+ConnectionistRecovery.lean:320:37: error(lean.unknownIdentifier): Unknown identifier `a`
+ConnectionistRecovery.lean:320:45: error(lean.unknownIdentifier): Unknown identifier `b`
+ConnectionistRecovery.lean:320:51: error(lean.unknownIdentifier): Unknown identifier `b`
+ConnectionistRecovery.lean:336:6: error: Application type mismatch: The argument
+  HasDerivAt.const_mul (s a * s b) (hasDerivAt_id u)
+has type
+  HasDerivAt (fun y => s a * s b * id y) (s a * s b * 1) u
+but is expected to have type
+  HasDerivAt (HMul.hMul (s a * s b)) (s a * s b) u
+in the application
+  HasDerivAt.comp u
+    (fixed_selection_response Real.tanh (fun x => 1 / Real.cosh x ^ 2) tanh_derivative τ δ B g s a b (s a * s b * u) T)
+    (HasDerivAt.const_mul (s a * s b) (hasDerivAt_id u))
+ConnectionistRecovery.lean:357:2: error: Type mismatch: After simplification, term
+  h
+ has type
+  score s (develop Real.tanh τ δ (perturb B a b 0) g T) ≤
+    score s (develop Real.tanh τ δ (perturb B a b (s a * s b * u)) g T)
+but is expected to have type
+  score s (develop Real.tanh τ δ B g T) ≤ score s (develop Real.tanh τ δ (perturb B a b (s a * s b * u)) g T)

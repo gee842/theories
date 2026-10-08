@@ -1,0 +1,87 @@
+SystemIndividuation.support_mono.{u, v, w, z} {S : Type u} {I : Type v} {R : Type w} {V : Type z} {admitted : S → Prop}
+  {read : S → I → R} {response : S → V} {B C : I → Prop} (h : SystemIndividuation.Supports admitted read response B)
+  (included : ∀ (i : I), B i → C i) : SystemIndividuation.Supports admitted read response C
+SystemIndividuation.support_restrict_domain.{u, v, w, z} {S : Type u} {I : Type v} {R : Type w} {V : Type z}
+  {admitted narrower : S → Prop} {read : S → I → R} {response : S → V} {B : I → Prop}
+  (h : SystemIndividuation.Supports admitted read response B) (inside : ∀ (s : S), narrower s → admitted s) :
+  SystemIndividuation.Supports narrower read response B
+SystemIndividuation.intersection_support_of_recombination.{u, v, w, z} {S : Type u} {I : Type v} {R : Type w}
+  {V : Type z} {admitted : S → Prop} {read : S → I → R} {response : S → V} {B C : I → Prop}
+  (hb : SystemIndividuation.Supports admitted read response B)
+  (hc : SystemIndividuation.Supports admitted read response C) (hr : SystemIndividuation.Recombines admitted read B C) :
+  SystemIndividuation.Supports admitted read response fun i => B i ∧ C i
+SystemIndividuation.full_product_recombines.{v, w} {I : Type v} {R : Type w} (B C : I → Prop) [DecidablePred B] :
+  SystemIndividuation.Recombines (fun x => True) (fun s => s) B C
+SystemIndividuation.full_product_support_intersection.{v, w, z} {I : Type v} {R : Type w} {V : Type z} (B C : I → Prop)
+  [DecidablePred B] (response : (I → R) → V) (hb : SystemIndividuation.Supports (fun x => True) (fun s => s) response B)
+  (hc : SystemIndividuation.Supports (fun x => True) (fun s => s) response C) :
+  SystemIndividuation.Supports (fun x => True) (fun s => s) response fun i => B i ∧ C i
+SystemIndividuation.contrast_excludes_agreement.{u, v, w, z} {S : Type u} {I : Type v} {R : Type w} {V : Type z}
+  {admitted : S → Prop} {read : S → I → R} {response : S → V} {B : I → Prop}
+  (h : SystemIndividuation.Supports admitted read response B) {s t : S} (hs : admitted s) (ht : admitted t)
+  (different : response s ≠ response t) : ¬SystemIndividuation.Agree read B s t
+SystemIndividuation.left_supports_on_diagonal :
+  SystemIndividuation.Supports SystemIndividuation.diagonal SystemIndividuation.jointRead SystemIndividuation.response
+    SystemIndividuation.leftRegion
+SystemIndividuation.right_supports_on_diagonal :
+  SystemIndividuation.Supports SystemIndividuation.diagonal SystemIndividuation.jointRead SystemIndividuation.response
+    SystemIndividuation.rightRegion
+SystemIndividuation.empty_does_not_support_on_diagonal :
+  ¬SystemIndividuation.Supports SystemIndividuation.diagonal SystemIndividuation.jointRead SystemIndividuation.response
+      fun x => False
+SystemIndividuation.intersection_does_not_support_on_diagonal :
+  ¬SystemIndividuation.Supports SystemIndividuation.diagonal SystemIndividuation.jointRead SystemIndividuation.response
+      fun i => SystemIndividuation.leftRegion i ∧ SystemIndividuation.rightRegion i
+SystemIndividuation.diagonal_does_not_recombine :
+  ¬SystemIndividuation.Recombines SystemIndividuation.diagonal SystemIndividuation.jointRead
+      SystemIndividuation.leftRegion SystemIndividuation.rightRegion
+SystemIndividuation.diagonal_has_no_least_support :
+  ¬∃ B,
+      SystemIndividuation.Supports SystemIndividuation.diagonal SystemIndividuation.jointRead
+          SystemIndividuation.response B ∧
+        ∀ (C : SystemIndividuation.Position → Prop),
+          SystemIndividuation.Supports SystemIndividuation.diagonal SystemIndividuation.jointRead
+              SystemIndividuation.response C →
+            ∀ (i : SystemIndividuation.Position), B i → C i
+SystemIndividuation.left_is_minimal_support :
+  SystemIndividuation.MinimalSupport SystemIndividuation.diagonal SystemIndividuation.jointRead
+    SystemIndividuation.response SystemIndividuation.leftRegion
+SystemIndividuation.right_is_minimal_support :
+  SystemIndividuation.MinimalSupport SystemIndividuation.diagonal SystemIndividuation.jointRead
+    SystemIndividuation.response SystemIndividuation.rightRegion
+SystemIndividuation.no_isolated_contrast_on_diagonal (i : SystemIndividuation.Position) :
+  ¬SystemIndividuation.IsolatedContrast SystemIndividuation.diagonal SystemIndividuation.jointRead
+      SystemIndividuation.response i
+SystemIndividuation.joint_contrast_on_diagonal :
+  SystemIndividuation.diagonal (false, false) ∧
+    SystemIndividuation.diagonal (true, true) ∧
+      SystemIndividuation.response (false, false) ≠ SystemIndividuation.response (true, true)
+SystemIndividuation.correlate_establishes_diagonal (s : Bool × Bool) :
+  ∃ t, SystemIndividuation.process.step s SystemIndividuation.Event.correlate t ∧ SystemIndividuation.diagonal t
+SystemIndividuation.diagonal_preserved_by_step {s t : Bool × Bool} {a : SystemIndividuation.Event}
+  (hs : SystemIndividuation.diagonal s) (step : SystemIndividuation.process.step s a t) : SystemIndividuation.diagonal t
+SystemIndividuation.diagonal_preserved_by_trace {s t : Bool × Bool} {word : List SystemIndividuation.Event}
+  (hs : SystemIndividuation.diagonal s) (trace : Generative.Trace SystemIndividuation.process s word t) :
+  SystemIndividuation.diagonal t
+SystemIndividuation.diagonal_right_identifies_state {s t : Bool × Bool} (hs : SystemIndividuation.diagonal s)
+  (ht : SystemIndividuation.diagonal t)
+  (same : SystemIndividuation.Agree SystemIndividuation.jointRead SystemIndividuation.rightRegion s t) : s = t
+SystemIndividuation.diagonal_left_identifies_state {s t : Bool × Bool} (hs : SystemIndividuation.diagonal s)
+  (ht : SystemIndividuation.diagonal t)
+  (same : SystemIndividuation.Agree SystemIndividuation.jointRead SystemIndividuation.leftRegion s t) : s = t
+SystemIndividuation.right_supports_all_possibilities_on_diagonal :
+  SystemIndividuation.PossibilitySupport SystemIndividuation.diagonal SystemIndividuation.jointRead
+    SystemIndividuation.process SystemIndividuation.rightRegion
+SystemIndividuation.left_supports_all_possibilities_on_diagonal :
+  SystemIndividuation.PossibilitySupport SystemIndividuation.diagonal SystemIndividuation.jointRead
+    SystemIndividuation.process SystemIndividuation.leftRegion
+SystemIndividuation.right_does_not_support_all_possibilities_before_restriction :
+  ¬SystemIndividuation.PossibilitySupport (fun x => True) SystemIndividuation.jointRead SystemIndividuation.process
+      SystemIndividuation.rightRegion
+SystemIndividuation.formation_and_possibility_change_same_history :
+  Generative.Trace SystemIndividuation.process (false, true)
+    [SystemIndividuation.Event.correlate, SystemIndividuation.Event.flip, SystemIndividuation.Event.pulse] (true, true)
+SystemIndividuation.pulse_unavailable_immediately_after_formation :
+  ¬Generative.Enabled SystemIndividuation.process (false, false) SystemIndividuation.Event.pulse
+SystemIndividuation.pulse_available_after_flip :
+  Generative.Enabled SystemIndividuation.process (true, true) SystemIndividuation.Event.pulse

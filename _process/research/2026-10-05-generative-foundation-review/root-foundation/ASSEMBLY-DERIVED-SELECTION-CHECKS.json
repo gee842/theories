@@ -1,0 +1,169 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T10:00:50.374623+00:00",
+  "scope": "Owned links, original bytes, kernel-check receipt and source bindings, C14 and six preserved broader requirements. No empirical test or repository-wide review.",
+  "links_checked": 28,
+  "links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "reference": "RECONSTRUCTIVE-SELECTION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "reference": "../../../../sources/evolutionary-selection/reconstructive-selection/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "reference": "RECONSTRUCTIVE-SELECTION-INTEGRATION.md#strong-comparative-assessment"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "reference": "EVOLUTIONARY-ORGANIZATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "reference": "EVOLUTION-THEORETICAL-INTEGRATION.md#5-what-theoretical-completion-still-requires"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/AssemblyDerivedSelection.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/assembly-derived-selection-verification/verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "reference": "ASSEMBLY-DERIVED-SELECTION-CHECKS.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/assembly-derived-selection-verification/README.md",
+      "reference": "../AssemblyDerivedSelection.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/assembly-derived-selection-verification/README.md",
+      "reference": "verification.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/assembly-derived-selection-verification/README.md",
+      "reference": "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/reconstructive-selection/README.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONSTRUCTIVE-SELECTION-INTEGRATION.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/reconstructive-selection/README.md",
+      "reference": "manifest.json"
+    },
+    {
+      "from": "sources/evolutionary-selection/reconstructive-selection/README.md",
+      "reference": "herron2018.html"
+    },
+    {
+      "from": "sources/evolutionary-selection/reconstructive-selection/README.md",
+      "reference": "pichugin2017.xml"
+    },
+    {
+      "from": "sources/evolutionary-selection/reconstructive-selection/README.md",
+      "reference": "pichugin2020.xml"
+    },
+    {
+      "from": "sources/evolutionary-selection/reconstructive-selection/README.md",
+      "reference": "../evolutionary-organization/README.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/reconstructive-selection/README.md",
+      "reference": "../comparative-direction/README.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/reconstructive-selection/README.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "reference": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md#deriving-reconstruction-and-cost-from-local-histories"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "ASSEMBLY-DERIVED-SELECTION.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md",
+      "reference": "AssemblyDerivedSelection.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md",
+      "reference": "assembly-derived-selection-verification/README.md"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "reference": "evolutionary-selection/reconstructive-selection/README.md#assembly-continuation-reading"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "EVOLUTIONARY-ORGANIZATION.md#deriving-reconstruction-and-cost-from-local-histories"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md"
+    }
+  ],
+  "original_sources_checked": 3,
+  "original_bytes": 748311,
+  "new_Lean_theorems": 37,
+  "new_declaration_audits": 57,
+  "closure_declaration_audits": 166,
+  "owned_index_insertions": 6,
+  "full_theory_requirements_preserved": 6,
+  "other_chain_entries_preserved_at_edit": 91,
+  "C14_matches_paired_data": true,
+  "shared_full_render_matches": true,
+  "shared_structural_errors": [],
+  "shared_reviews_pending": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md",
+      "sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-THEORETICAL-INTEGRATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-evolution-theoretical-focus.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CONNECTIONISM-RECOVERY.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "sources/evolutionary-selection/comparative-direction/README.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-DEVELOPMENTAL-MEMORY-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-DEVELOPMENTAL-MEMORY.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md"
+    ],
+    "removed_pages": []
+  },
+  "artifact_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md": "a4e36188c72df0399b2d1ab52f5486a5c7d1f50b58e9febafc5aadc943fd9983",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/assembly-derived-selection-verification/README.md": "a2cc3a4fa1ad5e66e5585675e5b90cd39a40c905f1872d9f6eeeb3ed58a3218e",
+    "sources/evolutionary-selection/reconstructive-selection/README.md": "d89717a98a1961f0d2308fad4bac5c0fd20686ff13ec676172a5cfcb5ce04f4c",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/AssemblyDerivedSelection.lean": "b6518a29b8c5dcf81629b3bb21f0970b5d89d7e6ef824e7534cbd21f23dff801",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/assembly-derived-selection-verification/verification.json": "4396f946fd9813aeba7f4b6541d6ac111efdc742d99e0c2f3ef8dfd920f8de0d",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION-INDEX-EDITS.json": "41b5c649fe0370697049c9a011bab939ed3881b37737bde24acbc72d660fbaa3",
+    "sources/evolutionary-selection/reconstructive-selection/manifest.json": "d996a7215a373b8e7b6638777718fda886456b6125d0954fafbdd981d10af457"
+  },
+  "checker_sha256": "c502a6766900a22c5feb358ffffcb2317f15a4dea32e5507eef5077b1f0d66b3"
+}

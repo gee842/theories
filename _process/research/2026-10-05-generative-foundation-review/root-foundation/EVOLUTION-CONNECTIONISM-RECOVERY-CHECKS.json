@@ -1,0 +1,482 @@
+{
+  "date": "2026-10-08",
+  "kind": "documentary integration; proof receipt linked separately",
+  "status": "passed",
+  "owned_edits": [
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-08-evolution-theoretical-focus.md",
+      "before_sha256": "ff5116a289277d1a16a175454bbd8eb96ed5b5453c21f164b12e6bbaf1f2dc44",
+      "after_sha256": "69d69d0906fdbec44ca25d6a74af01c9d596fe5878892ae4c05ffbb31423022e",
+      "old": "",
+      "new": "## Continuing the theoretical frontier\n\nRen subsequently wrote:\n\n> continue to push theoreticalfrontier\n\nDuring the proof work, Ren continued:\n\n> continue\n\nAI-authored scope: continue the selected theoretical derivation, preserving its explicit premises and adverse cases. The [recovery study](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CONNECTIONISM-RECOVERY.md) now gives the named one-step connectionist recovery, a finite recurrent sufficient condition and checked limits. These instructions do not authorize declaring the full evolutionary theory complete.",
+      "owned_passage": "## Continuing the theoretical frontier\n\nRen subsequently wrote:\n\n> continue to push theoreticalfrontier\n\nDuring the proof work, Ren continued:\n\n> continue\n\nAI-authored scope: continue the selected theoretical derivation, preserving its explicit premises and adverse cases. The [recovery study](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CONNECTIONISM-RECOVERY.md) now gives the named one-step connectionist recovery, a finite recurrent sufficient condition and checked limits. These instructions do not authorize declaring the full evolutionary theory complete."
+    },
+    {
+      "path": "sources/evolutionary-selection/comparative-direction/README.md",
+      "before_sha256": "195930f3b32f91b763dc45287e0764c6120cebc71e84893fdd45d399bee09751",
+      "after_sha256": "cb169ce2a6326f234f489612925b22e7b01ac54abe0a67ebb07f4ee99714a973",
+      "old": "",
+      "new": "## Developmental learning recovery\n\nThe later theoretical continuation obtains the original author-hosted [Watson et al. 2014 PDF](watson2014.pdf), DOI 10.1111/evo.12337, with [delivery and byte provenance](watson2014.provenance.json). The file has 15 pages and retains its original copyright notices. Read scope: model and selection definitions on printed pp.1127–1128; the single-pattern comparison and figure discussion on p.1129; the selected two-pattern discussion on p.1130; and the complete analytical-direction discussion on pp.1134–1135. The web extraction additionally supplied the opening abstract, introduction and model. This is not a full reading of every experiment or supplement. No original source bytes or simulation code were altered.\n\nThe prior failed retrieval record above remains true of that earlier round. In this continuation, PMC again returned a browser challenge, the attempted university-repository URL returned 404, and Europe PMC XML returned HTTP 500. None of those failed bodies was saved. The author-hosted PDF succeeded; text was read through the web extraction and local pypdf 6.14.2; no layout reconstruction was required.\n\nThe [theoretical study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CONNECTIONISM-RECOVERY.md) attributes the original directional argument to the paper. Its finite recurrent proof and examples are new repository work, using standard calculus; neither article simulation replication nor mathematical priority is claimed.",
+      "owned_passage": "## Developmental learning recovery\n\nThe later theoretical continuation obtains the original author-hosted [Watson et al. 2014 PDF](watson2014.pdf), DOI 10.1111/evo.12337, with [delivery and byte provenance](watson2014.provenance.json). The file has 15 pages and retains its original copyright notices. Read scope: model and selection definitions on printed pp.1127–1128; the single-pattern comparison and figure discussion on p.1129; the selected two-pattern discussion on p.1130; and the complete analytical-direction discussion on pp.1134–1135. The web extraction additionally supplied the opening abstract, introduction and model. This is not a full reading of every experiment or supplement. No original source bytes or simulation code were altered.\n\nThe prior failed retrieval record above remains true of that earlier round. In this continuation, PMC again returned a browser challenge, the attempted university-repository URL returned 404, and Europe PMC XML returned HTTP 500. None of those failed bodies was saved. The author-hosted PDF succeeded; text was read through the web extraction and local pypdf 6.14.2; no layout reconstruction was required.\n\nThe [theoretical study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CONNECTIONISM-RECOVERY.md) attributes the original directional argument to the paper. Its finite recurrent proof and examples are new repository work, using standard calculus; neither article simulation replication nor mathematical priority is claimed."
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-THEORETICAL-INTEGRATION.md",
+      "before_sha256": "9762b1f11563aabba3d96e0116be773d52e74dab89ca3dfef00255625d87f31e",
+      "after_sha256": "3cd87d50dfbfe171852cc54d2efe4d5c1f400eb60a07878a8037451678828080",
+      "old": "# The theoretical contribution of generative evolution\n\n",
+      "new": "# The theoretical contribution of generative evolution\n\n**Recovery completed at a named scope, 8 October 2026.** The [new derivation](EVOLUTION-CONNECTIONISM-RECOVERY.md) recovers the one-step Hebbian direction and proves finite recurrent sensitivity, a tanh sign-preservation regime and finite-change monotonicity, with adverse feedback and changed-selection cases. **29 new theorems / 41 declaration audits pass.** The earlier next-step text below records the assessment that selected this work. The remaining theoretical connection concerns inherited change, memory and interference across differing selection patterns, not another generic recovery gate or empirical dataset.\n\n",
+      "owned_passage": "**Recovery completed at a named scope, 8 October 2026.** The [new derivation](EVOLUTION-CONNECTIONISM-RECOVERY.md) recovers the one-step Hebbian direction and proves finite recurrent sensitivity, a tanh sign-preservation regime and finite-change monotonicity, with adverse feedback and changed-selection cases. **29 new theorems / 41 declaration audits pass.** The earlier next-step text below records the assessment that selected this work. The remaining theoretical connection concerns inherited change, memory and interference across differing selection patterns, not another generic recovery gate or empirical dataset.\n\n"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "before_sha256": "f77c5f8e8df5471604eadc18025d0783bac9abc212ac62cf3b11e69e278f6b35",
+      "after_sha256": "2bd0038d8dff46a07618ceb6694dd9e9b30a9949440e427ea1d7e9dff7704e72",
+      "old": "# The Theory of Evolution\n\n",
+      "new": "# The Theory of Evolution\n\n**Theoretical frontier advanced / 理论前沿推进，2026-10-08。** [The connectionist recovery](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CONNECTIONISM-RECOVERY.md) now derives the selected one-step learning direction and the response through finite recurrent development. A sufficient sign-compatible tanh regime admits finite changes without lowering the terminal selection score; exact adverse cases preserve the limits of that rule. **29 new Lean theorems / 41 declaration audits pass.** / 单步方向已恢复，多步后果由实际发育规律推导；符号相容条件、后续反馈反转及选择关系改变均明示。选择分数不承担伦理权威；下一理论连接是多种选择格局下的记忆、干扰和持续修订。\n\n",
+      "owned_passage": "**Theoretical frontier advanced / 理论前沿推进，2026-10-08。** [The connectionist recovery](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CONNECTIONISM-RECOVERY.md) now derives the selected one-step learning direction and the response through finite recurrent development. A sufficient sign-compatible tanh regime admits finite changes without lowering the terminal selection score; exact adverse cases preserve the limits of that rule. **29 new Lean theorems / 41 declaration audits pass.** / 单步方向已恢复，多步后果由实际发育规律推导；符号相容条件、后续反馈反转及选择关系改变均明示。选择分数不承担伦理权威；下一理论连接是多种选择格局下的记忆、干扰和持续修订。\n\n"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "before_sha256": "2bd0038d8dff46a07618ceb6694dd9e9b30a9949440e427ea1d7e9dff7704e72",
+      "after_sha256": "ed1160e1b1ee590a90d91ae5e83b32e53c27ee8de16bfc55a12b3dde30302f51",
+      "old": "## The next theoretical connection\n\nThe selected connection is **a specific connectionist learning mechanism → formation and revision of its operative relations → recovery of its learning consequence under explicit conditions**. The present reconstruction-model equivalence does not recover correlation learning or generalization. Compare the original model’s variables, developmental law, inheritance, selection and timescale assumptions with the actual generative derivation. Identify which independent input is removed or which further consequence is explained; an arbitrary transition-law embedding is insufficient. Any new mathematical claim requires an actual Lean check.\n\nCompleted organization, inherited reconstruction, updater formation, acquired interpretation and goal revision supply results to reuse. They are not generic open gates. The remaining comparison concerns the named learning result and its explanatory premises; it does not require another microscopy or descendant dataset. Broader recovery, a minimal universal foundation and demonstrated theoretical superiority remain separate unfinished claims.\n\n",
+      "new": "## The next theoretical connection\n\nThe selected one-step connectionist recovery is now complete, together with a sufficient recurrent extension and its limits. [The proof and assessment](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CONNECTIONISM-RECOVERY.md) derive the developmental response rather than supplying an effective sensitivity table. They retain the native recurrence, initial profile and selection law as premises. They do not establish full associative memory, mutation supply or population convergence.\n\nThe next connection is **inherited changes across differing selection patterns → preservation or loss of developmental memory and continued revisability**. The single-pattern sign-compatible regime cannot simply be presumed when those patterns conflict. Derive the inherited update and developmental behavior within a declared common model, preserve interference and failure, and assess the actual correspondence with existing formation/reconstruction results. A concrete memory or generalization result would advance the theory; another notation equivalence or an added empirical dataset is not the current prerequisite.\n\nCompleted organization, inherited reconstruction, updater formation, acquired interpretation and goal revision supply results to reuse. They are not generic open gates. A minimal universal foundation and demonstrated broad theoretical superiority remain distinct unfinished claims.\n\n",
+      "owned_passage": "## The next theoretical connection\n\nThe selected one-step connectionist recovery is now complete, together with a sufficient recurrent extension and its limits. [The proof and assessment](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CONNECTIONISM-RECOVERY.md) derive the developmental response rather than supplying an effective sensitivity table. They retain the native recurrence, initial profile and selection law as premises. They do not establish full associative memory, mutation supply or population convergence.\n\nThe next connection is **inherited changes across differing selection patterns → preservation or loss of developmental memory and continued revisability**. The single-pattern sign-compatible regime cannot simply be presumed when those patterns conflict. Derive the inherited update and developmental behavior within a declared common model, preserve interference and failure, and assess the actual correspondence with existing formation/reconstruction results. A concrete memory or generalization result would advance the theory; another notation equivalence or an added empirical dataset is not the current prerequisite.\n\nCompleted organization, inherited reconstruction, updater formation, acquired interpretation and goal revision supply results to reuse. They are not generic open gates. A minimal universal foundation and demonstrated broad theoretical superiority remain distinct unfinished claims.\n\n"
+    },
+    {
+      "path": "RESEARCH.md",
+      "before_sha256": "5bcbd17b7cc5c2b131b8dcc0264382ec8d20bbedd7d8ef2dbe3502acb1ba0642",
+      "after_sha256": "baa3ab91052721bde9999a2b7a2eb6418ac3a9f23f89977ae6cca8ff536838cc",
+      "old": "# Current theory and research\n\n",
+      "new": "# Current theory and research\n\n**Developmental learning recovery / 发育学习方向的恢复，2026-10-08。** [The new theoretical study](_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CONNECTIONISM-RECOVERY.md) recovers a named one-step Hebbian result and derives finite recurrent response, a sufficient tanh sign-preservation regime and finite-change monotonicity. **29 new Lean theorems / 41 audits pass.** Exact feedback and changing-selection reversals constrain the claim. The native recurrence, initial conditions, mutation supply and selection interpretation retain their premises; no memory/generalization, empirical or broad novelty claim. / 按Ren理论重点继续，已完成具名方向恢复；下一连接是不同选择格局下的继承、记忆干扰与持续修订，无需先补经验资料。\n\n",
+      "owned_passage": "**Developmental learning recovery / 发育学习方向的恢复，2026-10-08。** [The new theoretical study](_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CONNECTIONISM-RECOVERY.md) recovers a named one-step Hebbian result and derives finite recurrent response, a sufficient tanh sign-preservation regime and finite-change monotonicity. **29 new Lean theorems / 41 audits pass.** Exact feedback and changing-selection reversals constrain the claim. The native recurrence, initial conditions, mutation supply and selection interpretation retain their premises; no memory/generalization, empirical or broad novelty claim. / 按Ren理论重点继续，已完成具名方向恢复；下一连接是不同选择格局下的继承、记忆干扰与持续修订，无需先补经验资料。\n\n"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "before_sha256": "2b023e9ea76cd7b8fc7b8cd4adea22b3adc89e8be486feb2d8b18b0e65eb184e",
+      "after_sha256": "9afcad1d22e47e2feac3f3844d168ec4281ad95a131f98dcf7df9f1450e7b5a2",
+      "old": "# Generative Existence (生生不息论)\n\n",
+      "new": "# Generative Existence (生生不息论)\n\n**Theoretical evolutionary advance / 演化理论新推进，2026-10-08。** [The checked recovery](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CONNECTIONISM-RECOVERY.md) gives 29 theorems / 41 audits: the one-step Hebbian direction, finite recurrent developmental response and a sufficient tanh regime preserving finite-change gains. Adverse feedback and changed selective relations remain. / 发展怎样改变关系修订的方向已作具名推导；记忆、干扰及跨格局修订是下一理论连接，广泛优越性未宣告。\n\n",
+      "owned_passage": "**Theoretical evolutionary advance / 演化理论新推进，2026-10-08。** [The checked recovery](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CONNECTIONISM-RECOVERY.md) gives 29 theorems / 41 audits: the one-step Hebbian direction, finite recurrent developmental response and a sufficient tanh regime preserving finite-change gains. Adverse feedback and changed selective relations remain. / 发展怎样改变关系修订的方向已作具名推导；记忆、干扰及跨格局修订是下一理论连接，广泛优越性未宣告。\n\n"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "before_sha256": "fe16fd13b68d73b1276b3df78b3fdae6c442122338252c3a515bb31cf8c340cf",
+      "after_sha256": "4f58a25a5488b476b8b1c57c050497b8d3f678f9e95310eefd98f5745b8b08c5",
+      "old": "# Root-foundation review package\n\n",
+      "new": "# Root-foundation review package\n\n**Connectionist recovery / 联结论方向恢复，2026-10-08。** [Theory, correspondence and author counterreview](EVOLUTION-CONNECTIONISM-RECOVERY.md), selected by the [prospective protocol](EVOLUTION-CONNECTIONISM-RECOVERY-PROTOCOL.md), now have **29 checked theorems / 41 declaration audits**. Exact nonlinear finite response and a sufficient tanh regime sharpen the one-step directional result; finite adverse cases preserve limits. Broader memory/generalization and biological selection remain separate claims. [Documentary bindings](EVOLUTION-CONNECTIONISM-RECOVERY-CHECKS.json).\n\n",
+      "owned_passage": "**Connectionist recovery / 联结论方向恢复，2026-10-08。** [Theory, correspondence and author counterreview](EVOLUTION-CONNECTIONISM-RECOVERY.md), selected by the [prospective protocol](EVOLUTION-CONNECTIONISM-RECOVERY-PROTOCOL.md), now have **29 checked theorems / 41 declaration audits**. Exact nonlinear finite response and a sufficient tanh regime sharpen the one-step directional result; finite adverse cases preserve limits. Broader memory/generalization and biological selection remain separate claims. [Documentary bindings](EVOLUTION-CONNECTIONISM-RECOVERY-CHECKS.json).\n\n"
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "before_sha256": "4fb935131b5c4fa72edf247812f8e380f0dbe97a50b6b4dbb3582bb828cadf56",
+      "after_sha256": "5029e14995e3a8263ca72c49f089171f4116019133f01c031210c3483d093957",
+      "old": "# SOURCES manifest\n\n",
+      "new": "# SOURCES manifest\n\n**Theoretical connectionism recovery, 8 October 2026.** [Ren’s continuation](15-codex-theory-conversations/2026-10-08-evolution-theoretical-focus.md#continuing-the-theoretical-frontier) and [selected primary reading](evolutionary-selection/comparative-direction/README.md#developmental-learning-recovery) accompany the new checked derivation. The original 2014 author-hosted PDF is preserved with SHA-256 provenance; printed model and analytical sections were inspected. The new theorem package is an authored recovery and extension, not a rerun of publication simulations.\n\n",
+      "owned_passage": "**Theoretical connectionism recovery, 8 October 2026.** [Ren’s continuation](15-codex-theory-conversations/2026-10-08-evolution-theoretical-focus.md#continuing-the-theoretical-frontier) and [selected primary reading](evolutionary-selection/comparative-direction/README.md#developmental-learning-recovery) accompany the new checked derivation. The original 2014 author-hosted PDF is preserved with SHA-256 provenance; printed model and analytical sections were inspected. The new theorem package is an authored recovery and extension, not a rerun of publication simulations.\n\n"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md",
+      "before_sha256": "1a3bd69414762672b2bccf1ec08086ec5eb21502fb4523660edb6022eb1384a2",
+      "after_sha256": "57e9fe1d5c4e52f59a9968c77801556764fb6d52540222a63e28b46f768b1c4d",
+      "old": "# Universal meta-ethics: checked warrant and coverage interfaces\n\n",
+      "new": "# Universal meta-ethics: checked warrant and coverage interfaces\n\n**Developmental connectionist recovery, 8 October 2026.** [New package](evolution-connectionism/README.md): 29 theorems / 41 explicit declaration audits recover a one-step learning direction and prove finite recurrent response, sufficient tanh sign preservation, finite-change monotonicity and adverse cases. Lean 4.30.0-rc2 with pinned Mathlib; proof scope excludes population convergence, memory/generalization and ethical warrant.\n\n",
+      "owned_passage": "**Developmental connectionist recovery, 8 October 2026.** [New package](evolution-connectionism/README.md): 29 theorems / 41 explicit declaration audits recover a one-step learning direction and prove finite recurrent response, sufficient tanh sign preservation, finite-change monotonicity and adverse cases. Lean 4.30.0-rc2 with pinned Mathlib; proof scope excludes population convergence, memory/generalization and ethical warrant.\n\n"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "before_sha256": "a23d941eb38beb1073ab243744bff54022cb61b9defcacdb0c90a449cd03e5e1",
+      "after_sha256": "393d57ef9b461c3be0e7fc730f1276d33b0cb623c484a6aff1bebf9bcccd3ef1",
+      "old": "# 中英理论链索引：范围、维护与更新 / Bilingual chain index: scope and maintenance\n\n",
+      "new": "# 中英理论链索引：范围、维护与更新 / Bilingual chain index: scope and maintenance\n\n**发育联结论恢复 / Developmental connectionist recovery，2026-10-08。** C14成对加入[新推导及反审](EVOLUTION-CONNECTIONISM-RECOVERY.md)：29项 Lean 定理／41项审计，恢复单步方向并推出有限非线性后果及符号相容充分条件。实际反馈与选择变化的反例保留；记忆及不同选择格局是下一连接。/ Only C14, its rendered row, owned discovery pages and read source versions change; concurrent entries and unrelated review duties are preserved. [Owned edits and scoped checks](EVOLUTION-CONNECTIONISM-RECOVERY-CHECKS.json).\n\n",
+      "owned_passage": "**发育联结论恢复 / Developmental connectionist recovery，2026-10-08。** C14成对加入[新推导及反审](EVOLUTION-CONNECTIONISM-RECOVERY.md)：29项 Lean 定理／41项审计，恢复单步方向并推出有限非线性后果及符号相容充分条件。实际反馈与选择变化的反例保留；记忆及不同选择格局是下一连接。/ Only C14, its rendered row, owned discovery pages and read source versions change; concurrent entries and unrelated review duties are preserved. [Owned edits and scoped checks](EVOLUTION-CONNECTIONISM-RECOVERY-CHECKS.json).\n\n"
+    }
+  ],
+  "chain": {
+    "owned_entry": "C14",
+    "other_entries_preserved": 89,
+    "other_rendered_lines_preserved": true,
+    "entry_before": {
+      "id": "C14",
+      "title_zh": "生成对选择的递归影响",
+      "title_en": "Recursive influence of generation on selection",
+      "claim_zh": "活动后果可改变后继形成与选择条件，贡献变体不必获益。重构、发育与聚合区分遗传群体和运输集合；细菌回复实验接通遗传切换与周期完成。谱系预测保留总体优势及局部失败。新增原始实证支持呼吸形成氧梯度并改变后续选择；结构形成史须接入发育迁移，常规解释获完整信用。 原始延时研究进一步记录界面小筏形成、下落和再形成；酸碱条件改变空间组织，须与持续膜结构和实际后代分别对应。 此前比较方向提出独立机制约束下的跨条件接续，以及重构和选择关系自身的改变。 新的24小时形成实测与常规模型进一步接通建立条件和留存占比；较低离散的优势取决于相对生长，反例保留。 已完成的演化组织说明进一步接通实际取样、继承发育状态与跨转移重建；组织改变后续取样结果，真实供给及后续修订均保留。 原始显微数据现核对真实尺度及逐位置拍摄时钟，混合培养两段采集的位置配置可接续；成像对应与培养物身份仍分别论证。 直接同等网络比较现证明重构机制具有精确的常规实现，包含依当前状态选择及失败行动。 Ren现明确要求聚焦理论：复用形成、重构、更新器及目的修订成果，比较其独立前提与额外解释，下一连接是具体联结论学习结果的恢复。 预先固定视野的91帧现接成实测发育史；增长后的局部消失与轨迹的边界删失分别保留，观察结束不独自说明结构丧失。 新理论连接把后继重建能力接到完整回返路径的选择阈值及繁殖代价；直接外形延续可下降，第一代相同产出仍可掩盖相反的增长条件。",
+      "claim_en": "Consequences can change successor formation and selection without guaranteeing contributor advantage. Reconstruction, development and aggregation distinguish inherited clusters from transport groups; bacterial reversion links switching to cycle completion. Lineage forecasts retain aggregate gains and local failures. Primary evidence now links respiration-generated oxygen gradients to changed selection; structural development must enter transferable prediction. Conventional explanation receives full credit. Original time-lapse research adds recurring surface rafts and pH-sensitive spatial organization, requiring separate correspondences for persistent mat structure and actual descendants. Earlier comparative work proposed continuation across conditions constrained by independent mechanisms, followed by changes in reconstruction and selection relations. New 24-hour observations and a conventional model connect establishment to retained representation; lower dispersal gains only under the relative-growth condition, with an adverse contrast preserved. The completed evolutionary-organization account now connects actual sampling, inherited developmental state and reconstruction across transfers; formed organization changes later sampling, with actual provision and subsequent revision retained. Original microscopy now supplies checked scale and position-specific capture times, with continued position configuration across two rescue acquisitions; imaging correspondence and culture identity remain distinct. A direct matched-network comparison now establishes an exact conventional realization of the reconstruction mechanism, including shared state-dependent selectors and failed actions. Ren now directs a theoretical focus: reuse formation, reconstruction, updater and goal-revision results, compare their independent premises and added explanation, and recover a specific connectionist learning result. A predefined field now has a measured 91-frame developmental history; local disappearance after growth is distinguished from boundary censoring, so an observation ending does not alone establish structural loss. A new theoretical connection gives a full-cycle selection threshold and reproductive cost ceiling for inherited reconstruction; direct resemblance can fall, and identical first-generation outputs can conceal opposite growth conditions.",
+      "scope_zh": "保留16/26、19/41、7/13及6/6定理/审计与反例；本轮新增7项局部定理／11项审计。54段视频/18项技术重复、33/190敏感性、3,808记录/3,600联系及42/72对7/72保持范围；3,424项预测及139分组/485行核验保留。新核对八项生长及两项竞争摘要，不能转作周期概率。初始未形成与后来失效须区分；联合校准、广泛比较与支持更新仍开放。 新保存四份影片，44帧像素对应核验通过；帧数不是重复。基因标签、拍摄时钟及后代联系未齐，未拟合周期概率。 新方向评估已完成，须与生态支架、内生化及演化联结论等强对手比较；优越性未获确立，无新预测或定理。 新核对45项培养物／11个日期组，保留784对769数量歧义与数值容量失败；事件求解只作显式模型适配。 聚焦说明现按用户选定范围完成：20项新 Lean 定理／44项新声明审计／113项闭包审计。有限历史继承及重建不等于入侵稳定性或无限更新；原始干预和强比较已评估，广泛优越性仍未成立。 新核对4,383项目录、388项时间戳、114项首末图像记录及两幅完整像素场；位置时差最大225.89秒，重启间隔337.39秒。处理／终点身份、内部轨迹及六日后代仍未接齐，无新定理。 新增11项 Lean 定理／24项审计及34,768项执行，结论是同等法则下等价，非 Watson 模型复现或经验胜出。直接比较已关合，独立约束的联合经验预测仍开放。 理论整合与作者反审已完成，无新定理；局部前提消解不等于已证比较经济性，伦理延展明示G0及附加承诺。经验校准不作本轮理论完成门槛；广泛优越性仍未证。 新核对91项图像子块及23,855,104个裁剪像素；三种检测阈值与三种移动界限的敏感性保留。四条最长分配轨迹含局部骤失候选及仍可见的边界对象；不拟合坍塌率，不补造后代连接，无新定理。 新增28项 Lean 定理／40项审计，含有限历史界及条件识别；中观产出、路由及传递仍给定，未由细胞事件导出。常规生命周期模型获完整信用，联结论学习恢复及广泛优越性仍开放。",
+      "scope_en": "Preserves 16/26, 19/41, 7/13 and 6/6 theorem/audit results and counterexamples; seven new local-balance theorems / eleven audits pass. The 54 videos/18 technical replicates, 33/190 sensitivity, 3,808 records/3,600 links, 42/72 versus 7/72, 3,424 forecasts and 139-cohort/485-row checks retain their scopes. Eight growth and two competition summaries cannot become cycle probabilities. Initial absence versus later loss, joint calibration, broad comparison and support renewal remain open. Four original movies are preserved and 44 selected-frame correspondences pass; frames are not replicates. Exact genotype attribution, acquisition timing and linked descendants remain incomplete; no cycle probability is fitted. The new direction assessment is complete; ecological scaffolding, endogenization and evolutionary connectionism are strong comparators. Superiority is unestablished, with no new forecast or theorem. New checks cover 45 cultures/11 dated cohorts, preserving a 784-versus-769 count ambiguity and numerical capacity failure; event integration is an explicit model adaptation. The focused account is complete at the selected scope: 20 new Lean theorems / 44 new declaration audits / 113 closure audits. Finite-history inheritance and reconstruction do not establish invasion stability or indefinite renewal; primary interventions and strong comparators are assessed, while broad superiority remains unestablished. New checks cover 4,383 directory entries, 388 timestamps, 114 first/last image records and two complete pixel fields; scene offsets reach 225.89 seconds and the restart gap is 337.39 seconds. Treatment/endpoint identity, interior trajectories and six-day descendants remain unjoined; no new theorem. Eleven new Lean theorems / 24 new audits and 34,768 executed comparisons establish equivalence under matched laws, not Watson-model replication or an empirical win. The direct comparison is closed; independently constrained joint empirical prediction remains open. The theoretical integration and author counterreview are complete, with no new theorem. Internal premise reduction is distinct from demonstrated comparative economy; the ethical extension discloses G0 and further commitments. Empirical calibration is not this task’s theoretical completion gate; broad superiority remains unestablished. New checks cover 91 image subblocks and 23,855,104 crop pixels, preserving detection and movement sensitivity. Four longest assigned tracks include local-loss candidates and a still-visible boundary object; no collapse rate, descendant join or new theorem is asserted. Twenty-eight new Lean theorems / forty audits cover finite-history bounds and conditional identification. Mesoscopic production, routing and transmission remain supplied, not derived from cell events. Conventional life-cycle models retain full credit; connectionist recovery and broad superiority remain open.",
+      "links": [
+        {
+          "label_zh": "当前表述与范围",
+          "label_en": "Current statement and scope",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#recursive-selection-and-the-generative-direction"
+        },
+        {
+          "label_zh": "生成的重构及实查",
+          "label_en": "Generated reconstruction and checks",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELECTION-RECURRENCE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "完整演化目标",
+          "label_en": "Full evolutionary objective",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md"
+        },
+        {
+          "label_zh": "局部发育与关联形成",
+          "label_en": "Local development and formed association",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-ASSOCIATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "生态留存实证与核验",
+          "label_en": "Measured ecological retention and checks",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ECOLOGICAL-SELECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "堆积、断裂与数量对应",
+          "label_en": "Packing, fragmentation and census correspondence",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PACKING-FRAGMENTATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "生命周期与物理筛选核验",
+          "label_en": "Life-cycle and physical sorting checks",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SETTLING-CORRESPONDENCE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "聚合实测与共存对应",
+          "label_en": "Measured aggregation and coexistence",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AGGREGATION-SELECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "谱系与实际生命周期",
+          "label_en": "Recorded lineage and realized life cycle",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LINEAGE-CONTINUATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "谱系的时间遮蔽预测",
+          "label_en": "Chronological lineage forecasting",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LINEAGE-FORECAST-INTEGRATION.md"
+        },
+        {
+          "label_zh": "共同条件及发育预测迁移",
+          "label_en": "Shared conditions and developmental transfer",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-TRANSFER-INTEGRATION.md"
+        },
+        {
+          "label_zh": "生成的氧条件与膜发育",
+          "label_en": "Generated oxygen conditions and mat development",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-CONDITIONS-INTEGRATION.md"
+        },
+        {
+          "label_zh": "界面形成、失效与再形成",
+          "label_en": "Surface formation, loss and reformation",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-HISTORY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "比较贡献与下一检验",
+          "label_en": "Comparative contribution and next test",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-COMPARATIVE-DIRECTION.md"
+        },
+        {
+          "label_zh": "情境形成与留存选择",
+          "label_en": "Contextual establishment and retention selection",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md"
+        },
+        {
+          "label_zh": "演化组织的完整聚焦说明",
+          "label_en": "Completed focused account of evolutionary organization",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md"
+        },
+        {
+          "label_zh": "整合、强比较及完成评估",
+          "label_en": "Integration, strong comparison and completion assessment",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "实际后继重建的检查回执",
+          "label_en": "Checked reconstruction through actual descendants",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/developmental-reconstruction-verification/verification.json"
+        },
+        {
+          "label_zh": "原始证据及读取范围",
+          "label_en": "Primary evidence and reading scope",
+          "path": "sources/evolutionary-selection/evolutionary-organization/README.md"
+        },
+        {
+          "label_zh": "原始显微尺度、时钟与身份对应",
+          "label_en": "Original microscopy scale, timing and identity correspondence",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MICROSCOPY-CORRESPONDENCE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "直接网络比较与范围",
+          "label_en": "Direct network comparison and scope",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md"
+        },
+        {
+          "label_zh": "理论整合及下一推导",
+          "label_en": "Theoretical integration and next derivation",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-THEORETICAL-INTEGRATION.md"
+        },
+        {
+          "label_zh": "Ren的理论重点指令",
+          "label_en": "Ren’s theoretical-focus instruction",
+          "path": "sources/15-codex-theory-conversations/2026-10-08-evolution-theoretical-focus.md"
+        },
+        {
+          "label_zh": "实测发育史及观察界限",
+          "label_en": "Measured developmental history and observation limits",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "原始像素与独立解码核验",
+          "label_en": "Original pixels and independent decoding checks",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/developmental-history/measurement-verification.json"
+        },
+        {
+          "label_zh": "重建能力的选择及反审",
+          "label_en": "Selection on reconstruction and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONSTRUCTIVE-SELECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "回返阈值及识别的检查回执",
+          "label_en": "Checked return threshold and identification",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/reconstructive-selection-verification/verification.json"
+        },
+        {
+          "label_zh": "强生命周期对手与原典",
+          "label_en": "Strong life-cycle comparators and primary sources",
+          "path": "sources/evolutionary-selection/reconstructive-selection/README.md"
+        }
+      ]
+    },
+    "entry_after": {
+      "id": "C14",
+      "title_zh": "生成对选择的递归影响",
+      "title_en": "Recursive influence of generation on selection",
+      "claim_zh": "活动后果可改变后继形成与选择条件，贡献变体不必获益。重构、发育与聚合区分遗传群体和运输集合；细菌回复实验接通遗传切换与周期完成。谱系预测保留总体优势及局部失败。新增原始实证支持呼吸形成氧梯度并改变后续选择；结构形成史须接入发育迁移，常规解释获完整信用。 原始延时研究进一步记录界面小筏形成、下落和再形成；酸碱条件改变空间组织，须与持续膜结构和实际后代分别对应。 此前比较方向提出独立机制约束下的跨条件接续，以及重构和选择关系自身的改变。 新的24小时形成实测与常规模型进一步接通建立条件和留存占比；较低离散的优势取决于相对生长，反例保留。 已完成的演化组织说明进一步接通实际取样、继承发育状态与跨转移重建；组织改变后续取样结果，真实供给及后续修订均保留。 原始显微数据现核对真实尺度及逐位置拍摄时钟，混合培养两段采集的位置配置可接续；成像对应与培养物身份仍分别论证。 直接同等网络比较现证明重构机制具有精确的常规实现，包含依当前状态选择及失败行动。 Ren现明确要求聚焦理论：复用形成、重构、更新器及目的修订成果，比较其独立前提与额外解释，当时选定具体联结论学习结果的恢复。 预先固定视野的91帧现接成实测发育史；增长后的局部消失与轨迹的边界删失分别保留，观察结束不独自说明结构丧失。 新理论连接把后继重建能力接到完整回返路径的选择阈值及繁殖代价；直接外形延续可下降，第一代相同产出仍可掩盖相反的增长条件。 现已恢复单步Hebb方向，有限循环发育的后果响应由规律导出；tanh符号相容条件保持方向，并支持有限关系改变，反馈和选择关系改变可反转局部增益。",
+      "claim_en": "Consequences can change successor formation and selection without guaranteeing contributor advantage. Reconstruction, development and aggregation distinguish inherited clusters from transport groups; bacterial reversion links switching to cycle completion. Lineage forecasts retain aggregate gains and local failures. Primary evidence now links respiration-generated oxygen gradients to changed selection; structural development must enter transferable prediction. Conventional explanation receives full credit. Original time-lapse research adds recurring surface rafts and pH-sensitive spatial organization, requiring separate correspondences for persistent mat structure and actual descendants. Earlier comparative work proposed continuation across conditions constrained by independent mechanisms, followed by changes in reconstruction and selection relations. New 24-hour observations and a conventional model connect establishment to retained representation; lower dispersal gains only under the relative-growth condition, with an adverse contrast preserved. The completed evolutionary-organization account now connects actual sampling, inherited developmental state and reconstruction across transfers; formed organization changes later sampling, with actual provision and subsequent revision retained. Original microscopy now supplies checked scale and position-specific capture times, with continued position configuration across two rescue acquisitions; imaging correspondence and culture identity remain distinct. A direct matched-network comparison now establishes an exact conventional realization of the reconstruction mechanism, including shared state-dependent selectors and failed actions. Ren now directs a theoretical focus: reuse formation, reconstruction, updater and goal-revision results, compare their independent premises and added explanation, and selected recovery of a specific connectionist learning result. A predefined field now has a measured 91-frame developmental history; local disappearance after growth is distinguished from boundary censoring, so an observation ending does not alone establish structural loss. A new theoretical connection gives a full-cycle selection threshold and reproductive cost ceiling for inherited reconstruction; direct resemblance can fall, and identical first-generation outputs can conceal opposite growth conditions. The single-step Hebbian direction is now recovered. Finite recurrent sensitivity follows from the developmental law; a sign-compatible tanh regime preserves the direction through finite changes, while feedback and changed selective relations can reverse local gains.",
+      "scope_zh": "保留16/26、19/41、7/13及6/6定理/审计与反例；本轮新增7项局部定理／11项审计。54段视频/18项技术重复、33/190敏感性、3,808记录/3,600联系及42/72对7/72保持范围；3,424项预测及139分组/485行核验保留。新核对八项生长及两项竞争摘要，不能转作周期概率。初始未形成与后来失效须区分；联合校准、广泛比较与支持更新仍开放。 新保存四份影片，44帧像素对应核验通过；帧数不是重复。基因标签、拍摄时钟及后代联系未齐，未拟合周期概率。 新方向评估已完成，须与生态支架、内生化及演化联结论等强对手比较；优越性未获确立，无新预测或定理。 新核对45项培养物／11个日期组，保留784对769数量歧义与数值容量失败；事件求解只作显式模型适配。 聚焦说明现按用户选定范围完成：20项新 Lean 定理／44项新声明审计／113项闭包审计。有限历史继承及重建不等于入侵稳定性或无限更新；原始干预和强比较已评估，广泛优越性仍未成立。 新核对4,383项目录、388项时间戳、114项首末图像记录及两幅完整像素场；位置时差最大225.89秒，重启间隔337.39秒。处理／终点身份、内部轨迹及六日后代仍未接齐，无新定理。 新增11项 Lean 定理／24项审计及34,768项执行，结论是同等法则下等价，非 Watson 模型复现或经验胜出。直接比较已关合，独立约束的联合经验预测仍开放。 理论整合与作者反审已完成，无新定理；局部前提消解不等于已证比较经济性，伦理延展明示G0及附加承诺。经验校准不作本轮理论完成门槛；广泛优越性仍未证。 新核对91项图像子块及23,855,104个裁剪像素；三种检测阈值与三种移动界限的敏感性保留。四条最长分配轨迹含局部骤失候选及仍可见的边界对象；不拟合坍塌率，不补造后代连接，无新定理。 新增28项 Lean 定理／40项审计，含有限历史界及条件识别；中观产出、路由及传递仍给定，未由细胞事件导出。常规生命周期模型获完整信用，联结论学习恢复及广泛优越性仍开放。 新增29项Lean定理／41项声明审计通过，使用明示的发育与选择规律；保留有限反例及原生法则、初始状态、变异传递等前提。具名方向恢复完成，多格局记忆、干扰和持续修订仍待连接；无新经验预测或广泛原创性声明。",
+      "scope_en": "Preserves 16/26, 19/41, 7/13 and 6/6 theorem/audit results and counterexamples; seven new local-balance theorems / eleven audits pass. The 54 videos/18 technical replicates, 33/190 sensitivity, 3,808 records/3,600 links, 42/72 versus 7/72, 3,424 forecasts and 139-cohort/485-row checks retain their scopes. Eight growth and two competition summaries cannot become cycle probabilities. Initial absence versus later loss, joint calibration, broad comparison and support renewal remain open. Four original movies are preserved and 44 selected-frame correspondences pass; frames are not replicates. Exact genotype attribution, acquisition timing and linked descendants remain incomplete; no cycle probability is fitted. The new direction assessment is complete; ecological scaffolding, endogenization and evolutionary connectionism are strong comparators. Superiority is unestablished, with no new forecast or theorem. New checks cover 45 cultures/11 dated cohorts, preserving a 784-versus-769 count ambiguity and numerical capacity failure; event integration is an explicit model adaptation. The focused account is complete at the selected scope: 20 new Lean theorems / 44 new declaration audits / 113 closure audits. Finite-history inheritance and reconstruction do not establish invasion stability or indefinite renewal; primary interventions and strong comparators are assessed, while broad superiority remains unestablished. New checks cover 4,383 directory entries, 388 timestamps, 114 first/last image records and two complete pixel fields; scene offsets reach 225.89 seconds and the restart gap is 337.39 seconds. Treatment/endpoint identity, interior trajectories and six-day descendants remain unjoined; no new theorem. Eleven new Lean theorems / 24 new audits and 34,768 executed comparisons establish equivalence under matched laws, not Watson-model replication or an empirical win. The direct comparison is closed; independently constrained joint empirical prediction remains open. The theoretical integration and author counterreview are complete, with no new theorem. Internal premise reduction is distinct from demonstrated comparative economy; the ethical extension discloses G0 and further commitments. Empirical calibration is not this task’s theoretical completion gate; broad superiority remains unestablished. New checks cover 91 image subblocks and 23,855,104 crop pixels, preserving detection and movement sensitivity. Four longest assigned tracks include local-loss candidates and a still-visible boundary object; no collapse rate, descendant join or new theorem is asserted. Twenty-eight new Lean theorems / forty audits cover finite-history bounds and conditional identification. Mesoscopic production, routing and transmission remain supplied, not derived from cell events. Conventional life-cycle models retain full credit; connectionist recovery and broad superiority remain open. Twenty-nine new Lean theorems / 41 declaration audits pass under explicit developmental and selection laws. Finite adverse cases and supplied native laws, initial states and mutation/transmission premises remain. The named directional recovery is complete; memory, interference and continued revision across patterns remain to be connected. No new empirical prediction or broad novelty is claimed.",
+      "links": [
+        {
+          "label_zh": "当前表述与范围",
+          "label_en": "Current statement and scope",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#recursive-selection-and-the-generative-direction"
+        },
+        {
+          "label_zh": "生成的重构及实查",
+          "label_en": "Generated reconstruction and checks",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELECTION-RECURRENCE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "完整演化目标",
+          "label_en": "Full evolutionary objective",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md"
+        },
+        {
+          "label_zh": "局部发育与关联形成",
+          "label_en": "Local development and formed association",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-ASSOCIATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "生态留存实证与核验",
+          "label_en": "Measured ecological retention and checks",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ECOLOGICAL-SELECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "堆积、断裂与数量对应",
+          "label_en": "Packing, fragmentation and census correspondence",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PACKING-FRAGMENTATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "生命周期与物理筛选核验",
+          "label_en": "Life-cycle and physical sorting checks",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SETTLING-CORRESPONDENCE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "聚合实测与共存对应",
+          "label_en": "Measured aggregation and coexistence",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AGGREGATION-SELECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "谱系与实际生命周期",
+          "label_en": "Recorded lineage and realized life cycle",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LINEAGE-CONTINUATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "谱系的时间遮蔽预测",
+          "label_en": "Chronological lineage forecasting",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LINEAGE-FORECAST-INTEGRATION.md"
+        },
+        {
+          "label_zh": "共同条件及发育预测迁移",
+          "label_en": "Shared conditions and developmental transfer",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-TRANSFER-INTEGRATION.md"
+        },
+        {
+          "label_zh": "生成的氧条件与膜发育",
+          "label_en": "Generated oxygen conditions and mat development",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-CONDITIONS-INTEGRATION.md"
+        },
+        {
+          "label_zh": "界面形成、失效与再形成",
+          "label_en": "Surface formation, loss and reformation",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-HISTORY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "比较贡献与下一检验",
+          "label_en": "Comparative contribution and next test",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-COMPARATIVE-DIRECTION.md"
+        },
+        {
+          "label_zh": "情境形成与留存选择",
+          "label_en": "Contextual establishment and retention selection",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md"
+        },
+        {
+          "label_zh": "演化组织的完整聚焦说明",
+          "label_en": "Completed focused account of evolutionary organization",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md"
+        },
+        {
+          "label_zh": "整合、强比较及完成评估",
+          "label_en": "Integration, strong comparison and completion assessment",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "实际后继重建的检查回执",
+          "label_en": "Checked reconstruction through actual descendants",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/developmental-reconstruction-verification/verification.json"
+        },
+        {
+          "label_zh": "原始证据及读取范围",
+          "label_en": "Primary evidence and reading scope",
+          "path": "sources/evolutionary-selection/evolutionary-organization/README.md"
+        },
+        {
+          "label_zh": "原始显微尺度、时钟与身份对应",
+          "label_en": "Original microscopy scale, timing and identity correspondence",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MICROSCOPY-CORRESPONDENCE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "直接网络比较与范围",
+          "label_en": "Direct network comparison and scope",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md"
+        },
+        {
+          "label_zh": "理论整合及下一推导",
+          "label_en": "Theoretical integration and next derivation",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-THEORETICAL-INTEGRATION.md"
+        },
+        {
+          "label_zh": "Ren的理论重点指令",
+          "label_en": "Ren’s theoretical-focus instruction",
+          "path": "sources/15-codex-theory-conversations/2026-10-08-evolution-theoretical-focus.md"
+        },
+        {
+          "label_zh": "实测发育史及观察界限",
+          "label_en": "Measured developmental history and observation limits",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "原始像素与独立解码核验",
+          "label_en": "Original pixels and independent decoding checks",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/developmental-history/measurement-verification.json"
+        },
+        {
+          "label_zh": "重建能力的选择及反审",
+          "label_en": "Selection on reconstruction and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONSTRUCTIVE-SELECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "回返阈值及识别的检查回执",
+          "label_en": "Checked return threshold and identification",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/reconstructive-selection-verification/verification.json"
+        },
+        {
+          "label_zh": "强生命周期对手与原典",
+          "label_en": "Strong life-cycle comparators and primary sources",
+          "path": "sources/evolutionary-selection/reconstructive-selection/README.md"
+        },
+        {
+          "label_zh": "学习方向恢复及反审",
+          "label_en": "Learning-direction recovery and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CONNECTIONISM-RECOVERY.md"
+        },
+        {
+          "label_zh": "恢复的形式源码",
+          "label_en": "Recovery formal source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/ConnectionistRecovery.lean"
+        },
+        {
+          "label_zh": "29项定理检查回执",
+          "label_en": "29-theorem verification receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/connectionist-recovery-verification.json"
+        }
+      ]
+    },
+    "reviewed_sources": {
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CONNECTIONISM-RECOVERY.md": "1c0ee33bd608554e1f172d9c4cf9fa66ff670ea43a49a0181d63a025138dd8a0",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CONNECTIONISM-RECOVERY-PROTOCOL.md": "e8f64e65afd1a0ac83e020d6a0e4ea233f513c192c2d7841d8a29c54beee88f4",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/ConnectionistRecovery.lean": "0c59e2e5d52c5a2fe08c0bbca68b881b417c753103d9ae001ab0b0f35c41ac29",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/connectionist-recovery-verification.json": "92a041196db61e853d0085c5ebd7f84fa2eb61f2b1c94f37686044da33816818",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md": "728f7dc70c32c316e721280ead0a1116123e19e02a96d6b8df037bbec1f810f2",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/check_connectionist_recovery.py": "3a33c2b687eb763b036696e191c1b3e2cc260ccf2fbb024ffd2d2577f5913b79",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md": "ed1160e1b1ee590a90d91ae5e83b32e53c27ee8de16bfc55a12b3dde30302f51",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-THEORETICAL-INTEGRATION.md": "3cd87d50dfbfe171852cc54d2efe4d5c1f400eb60a07878a8037451678828080",
+      "sources/15-codex-theory-conversations/2026-10-08-evolution-theoretical-focus.md": "69d69d0906fdbec44ca25d6a74af01c9d596fe5878892ae4c05ffbb31423022e",
+      "sources/evolutionary-selection/comparative-direction/README.md": "cb169ce2a6326f234f489612925b22e7b01ac54abe0a67ebb07f4ee99714a973"
+    },
+    "new_discovery_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CONNECTIONISM-RECOVERY.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CONNECTIONISM-RECOVERY-PROTOCOL.md"
+    ],
+    "paired_row_matches_renderer": true,
+    "full_render_matches": true,
+    "pending_shared_review": {
+      "modified_sources": [
+        "RESEARCH.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+        "theories/shengsheng-buxi-generative-existence/README.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
+        "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-ARGUMENT.md"
+      ],
+      "missing_sources": [],
+      "new_pages": [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-CONTINUITY-PROTOCOL.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-CARRIER-DIAGNOSIS.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-PROTOCOL.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-REVIEW.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-SOURCES.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md"
+      ],
+      "removed_pages": []
+    }
+  },
+  "errors": [],
+  "local_link_count": 46,
+  "owned_passage_count": 11,
+  "proof": {
+    "receipt_sha256": "92a041196db61e853d0085c5ebd7f84fa2eb61f2b1c94f37686044da33816818",
+    "new_theorems": 29,
+    "audits": 41,
+    "empty_dependencies": 0,
+    "source_and_log_hashes_match": true,
+    "standard_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "original_pdf": {
+    "bytes": 1288554,
+    "sha256": "a4da950c2db561a67ca938a66543dc6153553d3939deb4e2cf5f089ddfc7af27",
+    "matches_provenance": true
+  },
+  "broad_completion_rows_preserved": 6,
+  "validation_scope": "Owned documentary passages, links, primary PDF provenance, current proof source/checker/log hashes and C14 only. Concurrent shared-source reviews remain separately pending; no repository-wide certification."
+}

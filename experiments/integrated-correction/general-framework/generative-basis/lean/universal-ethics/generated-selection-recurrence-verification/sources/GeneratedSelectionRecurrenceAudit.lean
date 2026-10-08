@@ -1,0 +1,28 @@
+import GeneratedSelectionRecurrence
+
+#print axioms GeneratedSelectionRecurrence.weakCapacity
+#print axioms GeneratedSelectionRecurrence.strongCapacity
+#print axioms GeneratedSelectionRecurrence.generatedTable
+#print axioms GeneratedSelectionRecurrence.reconstruct
+#print axioms GeneratedSelectionRecurrence.reconfigure
+#print axioms GeneratedSelectionRecurrence.cycle
+#print axioms GeneratedSelectionRecurrence.generated_table_carrier_bounds
+#print axioms GeneratedSelectionRecurrence.generated_table_maximal
+#print axioms GeneratedSelectionRecurrence.reconstruct_enabled_iff
+#print axioms GeneratedSelectionRecurrence.reconstruction_counts
+#print axioms GeneratedSelectionRecurrence.reconstructed_comparison
+#print axioms GeneratedSelectionRecurrence.cycle_population_correspondence
+#print axioms GeneratedSelectionRecurrence.reconfiguration_accounts
+#print axioms GeneratedSelectionRecurrence.Event
+#print axioms GeneratedSelectionRecurrence.step
+#print axioms GeneratedSelectionRecurrence.run
+#print axioms GeneratedSelectionRecurrence.step_accounts
+#print axioms GeneratedSelectionRecurrence.step_consumes_support
+#print axioms GeneratedSelectionRecurrence.run_accounts
+#print axioms GeneratedSelectionRecurrence.run_length_bound
+#print axioms GeneratedSelectionRecurrence.seed
+#print axioms GeneratedSelectionRecurrence.formed_two_cycle_history
+#print axioms GeneratedSelectionRecurrence.first_generated_generation
+#print axioms GeneratedSelectionRecurrence.eroded_second_cycle_history
+#print axioms GeneratedSelectionRecurrence.support_failure_and_residual_limits
+#print axioms GeneratedSelectionRecurrence.stronger_operation_can_be_unavailable

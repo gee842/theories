@@ -1,0 +1,116 @@
+Generative.StandardsBridge.mem_revise {Q : Type} (h : Generative.StandardsBridge.Rule Q)
+  (hs : List (Generative.StandardsBridge.Rule Q)) (o : Generative.StandardsBridge.Observation Q) :
+  h ∈ Generative.StandardsBridge.revise hs o ↔ h ∈ hs ∧ h o.fst = o.snd
+Generative.StandardsBridge.mem_learn {Q : Type} (h : Generative.StandardsBridge.Rule Q)
+  (hs : List (Generative.StandardsBridge.Rule Q)) (evidence : List (Generative.StandardsBridge.Observation Q)) :
+  h ∈ Generative.StandardsBridge.learn hs evidence ↔ h ∈ hs ∧ Generative.StandardsBridge.Fits h evidence
+Generative.StandardsBridge.actual_rule_retained {Q : Type} (actual : Generative.StandardsBridge.Rule Q)
+  (hs : List (Generative.StandardsBridge.Rule Q)) (evidence : List (Generative.StandardsBridge.Observation Q))
+  (included : actual ∈ hs) (faithful : Generative.StandardsBridge.Fits actual evidence) :
+  actual ∈ Generative.StandardsBridge.learn hs evidence
+Generative.StandardsBridge.eliminated_rule_has_counterevidence {Q : Type} (h : Generative.StandardsBridge.Rule Q)
+  (hs : List (Generative.StandardsBridge.Rule Q)) (evidence : List (Generative.StandardsBridge.Observation Q))
+  (included : h ∈ hs) (removed : ¬h ∈ Generative.StandardsBridge.learn hs evidence) :
+  ∃ o, o ∈ evidence ∧ h o.fst ≠ o.snd
+Generative.StandardsBridge.repetition_does_not_change_candidates {Q : Type}
+  (hs : List (Generative.StandardsBridge.Rule Q)) (o : Generative.StandardsBridge.Observation Q) :
+  Generative.StandardsBridge.revise (Generative.StandardsBridge.revise hs o) o = Generative.StandardsBridge.revise hs o
+Generative.StandardsBridge.answer_iff {Q : Type} (hs : List (Generative.StandardsBridge.Rule Q)) (q : Q) (b : Bool) :
+  Generative.StandardsBridge.answer hs q = some b ↔
+    hs ≠ [] ∧ ∀ (h : Generative.StandardsBridge.Rule Q), h ∈ hs → h q = b
+Generative.StandardsBridge.answer_safe {Q : Type} (hs : List (Generative.StandardsBridge.Rule Q)) :
+  Generative.StandardsBridge.Safe hs (Generative.StandardsBridge.answer hs)
+Generative.StandardsBridge.safe_definite_requires_agreement {Q : Type} (hs : List (Generative.StandardsBridge.Rule Q))
+  (a : Q → Option Bool) (safe : Generative.StandardsBridge.Safe hs a) (nonempty : hs ≠ []) (q : Q) (b : Bool)
+  (asserts : a q = some b) : Generative.StandardsBridge.answer hs q = some b
+Generative.StandardsBridge.answer_maximal {Q : Type} (hs : List (Generative.StandardsBridge.Rule Q))
+  (nonempty : hs ≠ []) : Generative.StandardsBridge.Maximal hs (Generative.StandardsBridge.answer hs)
+Generative.StandardsBridge.unique_maximal_safe {Q : Type} (hs : List (Generative.StandardsBridge.Rule Q))
+  (nonempty : hs ≠ []) (a : Q → Option Bool) (safe : Generative.StandardsBridge.Safe hs a)
+  (maximal : Generative.StandardsBridge.Maximal hs a) : a = Generative.StandardsBridge.answer hs
+Generative.StandardsBridge.known_rule_makes_answer_correct {Q : Type} (actual : Generative.StandardsBridge.Rule Q)
+  (hs : List (Generative.StandardsBridge.Rule Q)) (evidence : List (Generative.StandardsBridge.Observation Q))
+  (included : actual ∈ hs) (faithful : Generative.StandardsBridge.Fits actual evidence) (q : Q) (b : Bool)
+  (asserts : Generative.StandardsBridge.answer (Generative.StandardsBridge.learn hs evidence) q = some b) : b = actual q
+Generative.StandardsBridge.acquired_evidence_faithful {Q : Type} (actual : Generative.StandardsBridge.Rule Q)
+  (fuel : Nat) (qs : List Q) :
+  Generative.StandardsBridge.Fits actual (Generative.StandardsBridge.acquire actual fuel qs)
+Generative.StandardsBridge.acquired_answers_correct {Q : Type} (actual : Generative.StandardsBridge.Rule Q)
+  (hs : List (Generative.StandardsBridge.Rule Q)) (included : actual ∈ hs) (fuel : Nat) (qs : List Q) (q : Q) (b : Bool)
+  (asserts :
+    Generative.StandardsBridge.answer
+        (Generative.StandardsBridge.learn hs (Generative.StandardsBridge.acquire actual fuel qs)) q =
+      some b) :
+  b = actual q
+Generative.StandardsBridge.answer_transport {Q R : Type} (hs : List (Generative.StandardsBridge.Rule Q))
+  (decode : R → Q) (r : R) :
+  Generative.StandardsBridge.answer (List.map (Generative.StandardsBridge.transport decode) hs) r =
+    Generative.StandardsBridge.answer hs (decode r)
+Generative.StandardsBridge.learning_transport {Q R : Type} (hs : List (Generative.StandardsBridge.Rule Q))
+  (e : List (Generative.StandardsBridge.Observation Q)) (encode : Q → R) (decode : R → Q)
+  (faithful : ∀ (q : Q), decode (encode q) = q) :
+  Generative.StandardsBridge.learn (List.map (Generative.StandardsBridge.transport decode) hs)
+      (List.map (fun o => (encode o.fst, o.snd)) e) =
+    List.map (Generative.StandardsBridge.transport decode) (Generative.StandardsBridge.learn hs e)
+Generative.StandardsBridge.wrong_reencoding_breaks_transfer :
+  Generative.StandardsBridge.answer (List.map (Generative.StandardsBridge.transport fun b => !b) [id]) true ≠
+    Generative.StandardsBridge.answer [id] true
+Generative.StandardsBridge.bool_repertoire_complete (h : Generative.StandardsBridge.Rule Bool) :
+  h ∈ Generative.StandardsBridge.repertoire
+Generative.StandardsBridge.full_bool_repertoire_correct (actual : Generative.StandardsBridge.Rule Bool) (fuel : Nat)
+  (qs : List Bool) (q b : Bool)
+  (asserts :
+    Generative.StandardsBridge.answer
+        (Generative.StandardsBridge.learn Generative.StandardsBridge.repertoire
+          (Generative.StandardsBridge.acquire actual fuel qs))
+        q =
+      some b) :
+  b = actual q
+Generative.StandardsBridge.before_acquisition_abstains :
+  Generative.StandardsBridge.answer Generative.StandardsBridge.repertoire true = none
+Generative.StandardsBridge.one_sample_leaves_other_case_unsettled :
+  Generative.StandardsBridge.answer
+        (Generative.StandardsBridge.learn Generative.StandardsBridge.repertoire Generative.StandardsBridge.oneSample)
+        true =
+      some true ∧
+    Generative.StandardsBridge.answer
+        (Generative.StandardsBridge.learn Generative.StandardsBridge.repertoire Generative.StandardsBridge.oneSample)
+        false =
+      none
+Generative.StandardsBridge.contrasting_acquisition_settles_both :
+  Generative.StandardsBridge.answer
+        (Generative.StandardsBridge.learn Generative.StandardsBridge.repertoire Generative.StandardsBridge.twoSamples)
+        true =
+      some true ∧
+    Generative.StandardsBridge.answer
+        (Generative.StandardsBridge.learn Generative.StandardsBridge.repertoire Generative.StandardsBridge.twoSamples)
+        false =
+      some false
+Generative.StandardsBridge.learned_response_differs_from_last_report :
+  Generative.StandardsBridge.twoSamples.getLast? = some (false, false) ∧
+    Generative.StandardsBridge.answer
+        (Generative.StandardsBridge.learn Generative.StandardsBridge.repertoire Generative.StandardsBridge.twoSamples)
+        true =
+      some true
+Generative.StandardsBridge.repeated_same_case_does_not_settle_other :
+  Generative.StandardsBridge.answer
+      (Generative.StandardsBridge.learn Generative.StandardsBridge.repertoire
+        (Generative.StandardsBridge.acquire id 2 [true, true]))
+      false =
+    none
+Generative.StandardsBridge.insufficient_support_retains_ambiguity :
+  Generative.StandardsBridge.answer
+      (Generative.StandardsBridge.learn Generative.StandardsBridge.repertoire
+        (Generative.StandardsBridge.acquire id 1 [true, false]))
+      false =
+    none
+Generative.StandardsBridge.wrong_model_class_can_be_confidently_wrong :
+  have restricted := [fun x => true];
+  Generative.StandardsBridge.answer
+        (Generative.StandardsBridge.learn restricted (Generative.StandardsBridge.acquire id 1 [true])) false =
+      some true ∧
+    id false = false
+Generative.StandardsBridge.inconsistent_evidence_yields_no_answer :
+  Generative.StandardsBridge.answer
+      (Generative.StandardsBridge.learn Generative.StandardsBridge.repertoire [(true, true), (true, false)]) false =
+    none

@@ -1,0 +1,44 @@
+'DevelopmentalReconstruction.Culture' does not depend on any axioms
+'DevelopmentalReconstruction.World' does not depend on any axioms
+'DevelopmentalReconstruction.material' does not depend on any axioms
+'DevelopmentalReconstruction.support' does not depend on any axioms
+'DevelopmentalReconstruction.Requirement' does not depend on any axioms
+'DevelopmentalReconstruction.attached' does not depend on any axioms
+'DevelopmentalReconstruction.eligible' does not depend on any axioms
+'DevelopmentalReconstruction.transfer' does not depend on any axioms
+'DevelopmentalReconstruction.develop' depends on axioms: [propext, Quot.sound]
+'DevelopmentalReconstruction.transfer_accounts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DevelopmentalReconstruction.transfer_carries_development' depends on axioms: [propext]
+'DevelopmentalReconstruction.sampled_state_rebuilds_bonds' depends on axioms: [propext]
+'DevelopmentalReconstruction.development_accounts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DevelopmentalReconstruction.Event' does not depend on any axioms
+'DevelopmentalReconstruction.step' depends on axioms: [propext, Quot.sound]
+'DevelopmentalReconstruction.run' depends on axioms: [propext, Quot.sound]
+'DevelopmentalReconstruction.process' depends on axioms: [propext, Quot.sound]
+'DevelopmentalReconstruction.run_iff_core_trace' depends on axioms: [propext, Quot.sound]
+'DevelopmentalReconstruction.step_accounts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DevelopmentalReconstruction.history_accounts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DevelopmentalReconstruction.remainingSupport' does not depend on any axioms
+'DevelopmentalReconstruction.workCost' does not depend on any axioms
+'DevelopmentalReconstruction.historyCost' does not depend on any axioms
+'DevelopmentalReconstruction.step_support_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DevelopmentalReconstruction.history_support_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DevelopmentalReconstruction.Retention' does not depend on any axioms
+'DevelopmentalReconstruction.NoRevision' depends on axioms: [propext]
+'DevelopmentalReconstruction.local_step_preserves_retention' depends on axioms: [propext, Quot.sound]
+'DevelopmentalReconstruction.local_history_preserves_retention' depends on axioms: [propext, Quot.sound]
+'DevelopmentalReconstruction.PreservesDevelopment' depends on axioms: [propext]
+'DevelopmentalReconstruction.world_step_preserves_retention' depends on axioms: [propext, Quot.sound]
+'DevelopmentalReconstruction.inherited_development_over_generations' depends on axioms: [propext, Quot.sound]
+'DevelopmentalReconstruction.initial' does not depend on any axioms
+'DevelopmentalReconstruction.acquired' depends on axioms: [propext, Quot.sound]
+'DevelopmentalReconstruction.ordinary' depends on axioms: [propext, Quot.sound]
+'DevelopmentalReconstruction.acquired_developmental_state' depends on axioms: [propext, Quot.sound]
+'DevelopmentalReconstruction.cycle' does not depend on any axioms
+'DevelopmentalReconstruction.observation' does not depend on any axioms
+'DevelopmentalReconstruction.formed_inherited_reconstruction_history' depends on axioms: [propext, Quot.sound]
+'DevelopmentalReconstruction.formation_changes_sampling_under_same_requirement' depends on axioms: [propext, Quot.sound]
+'DevelopmentalReconstruction.relaxed_requirement_preserves_reconstruction' depends on axioms: [propext, Quot.sound]
+'DevelopmentalReconstruction.revised_descendant_changes_next_sampling' depends on axioms: [propext, Quot.sound]
+'DevelopmentalReconstruction.inherited_capacity_still_needs_actual_support' depends on axioms: [propext, Quot.sound]
+'DevelopmentalReconstruction.count_only_sampling_is_inadequate' depends on axioms: [propext, Quot.sound]

@@ -1,0 +1,21 @@
+import UnequalBasicLosses
+#print axioms UnequalBasicLosses.Profile
+#print axioms UnequalBasicLosses.total
+#print axioms UnequalBasicLosses.CumulativeLE
+#print axioms UnequalBasicLosses.CumulativeLT
+#print axioms UnequalBasicLosses.diagnosticCost
+#print axioms UnequalBasicLosses.positive_linear_diagnostics_iff
+#print axioms UnequalBasicLosses.cumulative_iff_all_positive_diagnostics
+#print axioms UnequalBasicLosses.strict_cumulative_iff_all_positive_diagnostics
+#print axioms UnequalBasicLosses.one_higher_two_lower_cross_thresholds
+#print axioms UnequalBasicLosses.positive_diagnostics_reverse_crossed_case
+#print axioms UnequalBasicLosses.reportedGrounds
+#print axioms UnequalBasicLosses.same_reported_grounds_same_inventory
+#print axioms UnequalBasicLosses.duplicating_reports_does_not_multiply_grounds
+#print axioms UnequalBasicLosses.duplicate_row_count_can_reverse_comparison
+#print axioms UnequalBasicLosses.SupportPoint
+#print axioms UnequalBasicLosses.directLossProfile
+#print axioms UnequalBasicLosses.provisionContinues
+#print axioms UnequalBasicLosses.equal_direct_profiles_different_common_continuation
+#print axioms UnequalBasicLosses.direct_profile_does_not_determine_continuation
+#print axioms UnequalBasicLosses.common_support_distinguishes_histories_in_existing_comparator

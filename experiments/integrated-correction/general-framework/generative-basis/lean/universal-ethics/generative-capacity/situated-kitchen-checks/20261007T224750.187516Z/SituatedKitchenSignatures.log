@@ -1,0 +1,41 @@
+SituatedKitchen.History : Type
+SituatedKitchen.protection (h : SituatedKitchen.History) (claim : Fin 3) : Prop
+SituatedKitchen.realization (h : SituatedKitchen.History) (claim : Fin 3) : Prop
+SituatedKitchen.care : SituatedKitchen.History
+SituatedKitchen.learning : SituatedKitchen.History
+SituatedKitchen.classOnly : SituatedKitchen.History
+SituatedKitchen.overloadedCare : SituatedKitchen.History
+SituatedKitchen.harmfulLearning : SituatedKitchen.History
+SituatedKitchen.inaccessibleLearning : SituatedKitchen.History
+SituatedKitchen.exitWithoutCover : SituatedKitchen.History
+SituatedKitchen.timely_care_beats_class_only :
+  PracticalJudgment.Better SituatedKitchen.protection SituatedKitchen.realization SituatedKitchen.care
+    SituatedKitchen.classOnly
+SituatedKitchen.learning_and_care_incomparable :
+  ¬PracticalJudgment.Better SituatedKitchen.protection SituatedKitchen.realization SituatedKitchen.learning
+        SituatedKitchen.care ∧
+    ¬PracticalJudgment.Better SituatedKitchen.protection SituatedKitchen.realization SituatedKitchen.care
+        SituatedKitchen.learning
+SituatedKitchen.supported_learning_beats_overloaded_care :
+  PracticalJudgment.Better SituatedKitchen.protection SituatedKitchen.realization SituatedKitchen.learning
+    SituatedKitchen.overloadedCare
+SituatedKitchen.care_beats_harmful_learning :
+  PracticalJudgment.Better SituatedKitchen.protection SituatedKitchen.realization SituatedKitchen.care
+    SituatedKitchen.harmfulLearning
+SituatedKitchen.skill_without_usable_route :
+  SituatedKitchen.realization SituatedKitchen.inaccessibleLearning 0 ∧
+    ¬SituatedKitchen.realization SituatedKitchen.inaccessibleLearning 1
+SituatedKitchen.restored_access_improves_same_learning :
+  PracticalJudgment.Better SituatedKitchen.protection SituatedKitchen.realization SituatedKitchen.learning
+    SituatedKitchen.inaccessibleLearning
+SituatedKitchen.competing_basic_losses_incomparable :
+  ¬PracticalJudgment.Better SituatedKitchen.protection SituatedKitchen.realization SituatedKitchen.overloadedCare
+        SituatedKitchen.exitWithoutCover ∧
+    ¬PracticalJudgment.Better SituatedKitchen.protection SituatedKitchen.realization SituatedKitchen.exitWithoutCover
+        SituatedKitchen.overloadedCare
+SituatedKitchen.handoff (_announced actualCoverage : Bool) : SituatedKitchen.History
+SituatedKitchen.announcement_cannot_replace_coverage (announced : Bool) :
+  ¬SituatedKitchen.protection (SituatedKitchen.handoff announced false) 1
+SituatedKitchen.actual_coverage_repairs_handoff (announced : Bool) :
+  PracticalJudgment.Better SituatedKitchen.protection SituatedKitchen.realization
+    (SituatedKitchen.handoff announced true) (SituatedKitchen.handoff announced false)

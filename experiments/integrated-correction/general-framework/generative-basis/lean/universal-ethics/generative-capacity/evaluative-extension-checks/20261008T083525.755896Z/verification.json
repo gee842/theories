@@ -1,0 +1,593 @@
+{
+  "status": "passed",
+  "utc": "20261008T083525.755896Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "evaluative-extension-checks/20261008T083525.755896Z",
+  "source_sha256": {
+    "PracticalJudgment": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "ConcernExtension": "ee8e0fb64357fe9d428288aac09bb27c4f046e6ae55f50cdc88e2a445fcefc3f",
+    "EvaluativeExtension": "37922908a1250ea741eab83b107ef39c474f9fdd822138aa1030e4f614889fd4"
+  },
+  "checker_sha256": {
+    "check_evaluative_extension.py": "6d76afc899c80d9d569991c334ed74f8c36469cb58287b2cd52b3776bf5196eb",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Extension of protected and secondary claim descriptions under the inherited explicit J1/J2 comparator. General sufficient transport, exact equal-extension correspondence, new-claim defeat, a formed-dependence reversal, stage-blind/incomparability controls, and separation of common strict comparison from undefeatedness across live applications. Shared content-extension facts are imported from ConcernExtension. Actual formation, basic standing, feasibility and normative commitments remain premises; no universal uncomputability, autonomous moral discovery or empirical claim.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "modules": [
+    {
+      "module": "PracticalJudgment",
+      "theorems": 30,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Included"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.StrictIncluded"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.included_trans"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.strict_included_irrefl"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.strict_included_trans"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Better"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.better_irrefl"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.better_trans"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.protection_anchor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.no_protection_trade_by_count"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Frontier"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.dominated_excluded"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.finite_frontier"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Required"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.required_performed"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.alternative_defeats_specific_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.impossible_menu_no_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.necessary_means_required"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Assigned"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.unique_responder_required"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.assignment_respects_capacity"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Covered"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.transfer_requires_actual_successor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.no_demand_gap_transfer"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.uncovered_demand_is_failure"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Settled"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Residual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.settlement_removes_residual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.unfulfilled_unreleased_remains"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Robust"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.robust_at_actual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.robust_under_refinement"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.required_under_faithful_redescription"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.withinCeiling"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.optionalFormation"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.supplied_ceiling_bounds_optional_gain"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.independent_choices_not_joint_capacity"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.basis"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.event"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.mixed_repair_anchor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.repair_retains_real_loss"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.protectedOne"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.noGain"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.competing_claims_incomparable"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.collective_duty_without_individual_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.uncertain_worlds_need_common_plan"
+        }
+      ],
+      "axiom_dependencies": {
+        "PracticalJudgment.Included": [],
+        "PracticalJudgment.StrictIncluded": [],
+        "PracticalJudgment.included_trans": [],
+        "PracticalJudgment.strict_included_irrefl": [],
+        "PracticalJudgment.strict_included_trans": [],
+        "PracticalJudgment.Better": [],
+        "PracticalJudgment.better_irrefl": [],
+        "PracticalJudgment.better_trans": [],
+        "PracticalJudgment.protection_anchor": [],
+        "PracticalJudgment.no_protection_trade_by_count": [],
+        "PracticalJudgment.Frontier": [],
+        "PracticalJudgment.dominated_excluded": [],
+        "PracticalJudgment.finite_frontier": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.Required": [],
+        "PracticalJudgment.required_performed": [],
+        "PracticalJudgment.alternative_defeats_specific_duty": [],
+        "PracticalJudgment.impossible_menu_no_duty": [],
+        "PracticalJudgment.necessary_means_required": [],
+        "PracticalJudgment.Assigned": [],
+        "PracticalJudgment.unique_responder_required": [],
+        "PracticalJudgment.assignment_respects_capacity": [],
+        "PracticalJudgment.Covered": [],
+        "PracticalJudgment.transfer_requires_actual_successor": [],
+        "PracticalJudgment.no_demand_gap_transfer": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.uncovered_demand_is_failure": [],
+        "PracticalJudgment.Settled": [],
+        "PracticalJudgment.Residual": [],
+        "PracticalJudgment.settlement_removes_residual": [],
+        "PracticalJudgment.unfulfilled_unreleased_remains": [],
+        "PracticalJudgment.Robust": [],
+        "PracticalJudgment.robust_at_actual": [],
+        "PracticalJudgment.robust_under_refinement": [],
+        "PracticalJudgment.required_under_faithful_redescription": [],
+        "PracticalJudgment.withinCeiling": [],
+        "PracticalJudgment.optionalFormation": [],
+        "PracticalJudgment.supplied_ceiling_bounds_optional_gain": [
+          "propext"
+        ],
+        "PracticalJudgment.independent_choices_not_joint_capacity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.basis": [],
+        "PracticalJudgment.event": [],
+        "PracticalJudgment.mixed_repair_anchor": [],
+        "PracticalJudgment.repair_retains_real_loss": [],
+        "PracticalJudgment.protectedOne": [],
+        "PracticalJudgment.noGain": [],
+        "PracticalJudgment.competing_claims_incomparable": [
+          "propext"
+        ],
+        "PracticalJudgment.collective_duty_without_individual_duty": [
+          "propext"
+        ],
+        "PracticalJudgment.uncertain_worlds_need_common_plan": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "ConcernExtension",
+      "theorems": 8,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "ConcernExtension.extend"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConcernExtension.included_extension_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConcernExtension.strict_extension_transfer_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConcernExtension.retained_old_new_strict"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConcernExtension.crossed_extension_is_incomparable"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConcernExtension.covered_profiles_no_better"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConcernExtension.positive_extension_changes_judgment"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConcernExtension.gain_judgment_transfer_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConcernExtension.new_basic_condition_can_reverse"
+        }
+      ],
+      "axiom_dependencies": {
+        "ConcernExtension.extend": [],
+        "ConcernExtension.included_extension_iff": [],
+        "ConcernExtension.strict_extension_transfer_iff": [],
+        "ConcernExtension.retained_old_new_strict": [],
+        "ConcernExtension.crossed_extension_is_incomparable": [],
+        "ConcernExtension.covered_profiles_no_better": [],
+        "ConcernExtension.positive_extension_changes_judgment": [],
+        "ConcernExtension.gain_judgment_transfer_iff": [],
+        "ConcernExtension.new_basic_condition_can_reverse": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "EvaluativeExtension",
+      "theorems": 20,
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "EvaluativeExtension.better_survives_no_new_loss"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluativeExtension.equal_additions_preserve_exact_comparison"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluativeExtension.new_protection_loss_defeats_old_verdict"
+        },
+        {
+          "kind": "inductive",
+          "name": "EvaluativeExtension.Plan"
+        },
+        {
+          "kind": "inductive",
+          "name": "EvaluativeExtension.Stage"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluativeExtension.need"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluativeExtension.supply"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluativeExtension.oldProtection"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluativeExtension.outputCount"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluativeExtension.oldGain"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluativeExtension.formedProtection"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluativeExtension.protection"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluativeExtension.comparison"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluativeExtension.prior_output_favored"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluativeExtension.formation_creates_a_differentiating_need"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluativeExtension.formed_maintenance_favored"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluativeExtension.formed_output_no_longer_favored"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluativeExtension.reversal_keeps_real_output_loss"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluativeExtension.no_unrestricted_preservation_of_verdicts"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluativeExtension.no_one_stage_blind_exact_ranking"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluativeExtension.one_unchanged_rule_handles_both_stages"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluativeExtension.addedGain"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluativeExtension.added_secondary_gain_can_leave_incomparability"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluativeExtension.CommonBetter"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluativeExtension.EveryApplicationDefeats"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluativeExtension.common_defeat_implies_each_defeat"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluativeExtension.each_defeat_excludes_actual_frontier"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluativeExtension.one_application_blocks_uniform_undefeatedness"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluativeExtension.uniformly_undefeated_is_common_frontier"
+        },
+        {
+          "kind": "inductive",
+          "name": "EvaluativeExtension.Response"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluativeExtension.routeProtection"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluativeExtension.routeGain"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluativeExtension.route_comparison_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluativeExtension.omission_defeated_in_every_application"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluativeExtension.omission_survives_common_comparison"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluativeExtension.no_uniformly_undefeated_response"
+        }
+      ],
+      "axiom_dependencies": {
+        "EvaluativeExtension.better_survives_no_new_loss": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EvaluativeExtension.equal_additions_preserve_exact_comparison": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EvaluativeExtension.new_protection_loss_defeats_old_verdict": [],
+        "EvaluativeExtension.Plan": [],
+        "EvaluativeExtension.Stage": [],
+        "EvaluativeExtension.need": [],
+        "EvaluativeExtension.supply": [],
+        "EvaluativeExtension.oldProtection": [],
+        "EvaluativeExtension.outputCount": [],
+        "EvaluativeExtension.oldGain": [],
+        "EvaluativeExtension.formedProtection": [],
+        "EvaluativeExtension.protection": [],
+        "EvaluativeExtension.comparison": [],
+        "EvaluativeExtension.prior_output_favored": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EvaluativeExtension.formation_creates_a_differentiating_need": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EvaluativeExtension.formed_maintenance_favored": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EvaluativeExtension.formed_output_no_longer_favored": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EvaluativeExtension.reversal_keeps_real_output_loss": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EvaluativeExtension.no_unrestricted_preservation_of_verdicts": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EvaluativeExtension.no_one_stage_blind_exact_ranking": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EvaluativeExtension.one_unchanged_rule_handles_both_stages": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EvaluativeExtension.addedGain": [],
+        "EvaluativeExtension.added_secondary_gain_can_leave_incomparability": [
+          "propext"
+        ],
+        "EvaluativeExtension.CommonBetter": [],
+        "EvaluativeExtension.EveryApplicationDefeats": [],
+        "EvaluativeExtension.common_defeat_implies_each_defeat": [],
+        "EvaluativeExtension.each_defeat_excludes_actual_frontier": [],
+        "EvaluativeExtension.one_application_blocks_uniform_undefeatedness": [],
+        "EvaluativeExtension.uniformly_undefeated_is_common_frontier": [],
+        "EvaluativeExtension.Response": [],
+        "EvaluativeExtension.routeProtection": [],
+        "EvaluativeExtension.routeGain": [],
+        "EvaluativeExtension.route_comparison_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EvaluativeExtension.omission_defeated_in_every_application": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EvaluativeExtension.omission_survives_common_comparison": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EvaluativeExtension.no_uniformly_undefeated_response": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "kernel_checked": true
+    }
+  ],
+  "artifact_sha256": {
+    "ConcernExtension.lean": "ee8e0fb64357fe9d428288aac09bb27c4f046e6ae55f50cdc88e2a445fcefc3f",
+    "ConcernExtension.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ConcernExtensionAxiomAudit.lean": "349ac4f11e78db07c637401d0f5838c36afa55ca29895e18945d96f15d5558d0",
+    "ConcernExtensionAxiomAudit.log": "8e4dbafe3c457d51d5b04ebc8c65c046fb5f530d921b025e910fe9acc8bb09cd",
+    "ConcernExtensionSignatures.lean": "6b1042617f36cad6bd8d835d099f572a44623cfe9c61ab1fc4143f3ee7f5ad36",
+    "ConcernExtensionSignatures.log": "40521dfee1b4a15389b99aeae30a77832da58ad977d0d17952b2afae489b3f57",
+    "EvaluativeExtension.lean": "37922908a1250ea741eab83b107ef39c474f9fdd822138aa1030e4f614889fd4",
+    "EvaluativeExtension.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "EvaluativeExtensionAxiomAudit.lean": "e4a3733f1d0e93f54cdceccc95889f57a0b4a1eab53b3a34bd02ab4c86ea9436",
+    "EvaluativeExtensionAxiomAudit.log": "6a3b77b2e9fcd397517cd39f79f76659b4db5a3d335dd7d618161ed22d5c3b0a",
+    "EvaluativeExtensionSignatures.lean": "99a976fc3413f4e562a2704b3a846f70d8215f092e82d0595c4767e31fbd3405",
+    "EvaluativeExtensionSignatures.log": "34d0df9258ce1f8aee34d1033f91b4c1d43558d6cd84e4a3e67f3996c6119756",
+    "PracticalJudgment.lean": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "PracticalJudgment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PracticalJudgmentAxiomAudit.lean": "c9f412159410854fb031176d7fe7a4c351dfaea59354c7d7a19ec4ad0c6e51a6",
+    "PracticalJudgmentAxiomAudit.log": "d73810d6b1a7343808726234c17bca9d7841acafabd3a17ee8e6145dfabbf1ea",
+    "PracticalJudgmentSignatures.lean": "aec1f9317bc8881cb24e62213fa9db801f59b620595bb90caf082a5debc9cb66",
+    "PracticalJudgmentSignatures.log": "93b65679f59a01788bfcfbfe0bf5bc3ef93f0cf67516c469f1667c5cdc9abd65",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_evaluative_extension.py": "6d76afc899c80d9d569991c334ed74f8c36469cb58287b2cd52b3776bf5196eb",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

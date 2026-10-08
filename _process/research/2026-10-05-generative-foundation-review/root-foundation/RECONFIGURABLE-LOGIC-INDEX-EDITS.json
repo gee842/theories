@@ -1,0 +1,272 @@
+{
+  "scope": "Reconfiguration continuation; append-only F01 and insertion-only shared navigation",
+  "shared_fragments": [
+    {
+      "path": "RESEARCH.md",
+      "text": "**接入变化与必要信息 / Reconfigurable access and required information，2026-10-08。** [理论第11节](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md)证明：当前接入相同，允许范围内占用一致恰好保留所有允许有限历史；原生改接历史区分旧工作负载下完全等价的状态。新24项 Lean 定理／42项总审计通过。[整合与反审](_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONFIGURABLE-LOGIC-INTEGRATION.md)。/ Existing changing-support interleavings are reused. The exact scope bound and blind-update obstruction are complete; obtaining and using newly relevant information under cost and interference remains separate. No frontier novelty is established.",
+      "before_sha256": "dae10df310f0d11d424237f22b3d6200bf8eca156ecc756d7acc65aad9ed897e",
+      "after_sha256": "499827014df73bc66aea05572ce2bbff3f4f7b071b8bbb2187fe1081583074c4",
+      "insertion_only": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "text": "**改接关系与摘要界限 / Changing access and abstraction bounds，2026-10-08。** [当前第11节](unified-2026-10-05/GENERATED-LOGIC.md)完成允许改接范围内的精确占用信息界限及旧摘要无法盲目更新的原生反例；24项新 Lean 定理通过。/ A fixed current route and occupancy on the permitted support scope suffice for exact finite-word behavior; that occupancy information is necessary. This reuses completed interleaving results and retains established abstraction-repair precedents.",
+      "before_sha256": "ea546265ceacaab7b2e12f0a2df996d53602269f1d0b1d037541c9498c861067",
+      "after_sha256": "cca56f3d8011c7b7c914e9bfc8a3954edf1d03c578237e2f918b793df631dba1",
+      "insertion_only": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "text": "**接入变化续研完成 / Reconfigurable logic completed，2026-10-08。** [精确表示范围、来源与作者反审](RECONFIGURABLE-LOGIC-INTEGRATION.md)新增24项定理／42项闭包审计（30空）；未来允许改接范围确定必须保留的占用区别。/ Native old-workload equivalence and future separation rule out a universal blind update from the old active-slot view. The 42-theorem changing-support study is credited, not repeated; freshness and interference of newly acquired information remain open.",
+      "before_sha256": "0455fa4c9e7af03df4cf97710b21944f5a1f60a6b6962885f8bd3fd62bd3f08b",
+      "after_sha256": "aeccef2b2665eeaa9333dab6ce982c2f8196367a64410f789584c3859b96187c",
+      "insertion_only": true
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "text": "**Reconfigurable support logic, 8 October 2026.** [ReconfigurableSupportLogic.lean](ReconfigurableSupportLogic.lean) adds 24 theorems: exact finite-word behavior for equal routes iff occupancy agrees on the permitted support scope, a native hidden-occupancy witness, and a blind-update impossibility. [Checker](check_reconfigurable_logic.py): 42 audits including 18 inherited core reports; 30 empty and 12 standard propext and/or Quot.sound, no choice. [Integration](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONFIGURABLE-LOGIC-INTEGRATION.md) keeps atomicity, fixed permission scope, query contract and observation limits explicit.",
+      "before_sha256": "c9923ea055d7f0fffc377f66c7db6fa8c0b8d1f5c55b717d3cb85b854fd14443",
+      "after_sha256": "d1724cd0de047117372e177a9e11710285dff0b13fbeafae318d94504f73fc94",
+      "insertion_only": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "text": "**接入变化与摘要界限 / Reconfigurable access and abstraction bounds，2026-10-08。** F01成对追加[本轮整合](RECONFIGURABLE-LOGIC-INTEGRATION.md)：24项新定理／42项闭包审计、允许接入范围内的必要充分占用区别及原生改接反例。/ Only owned F01 additions, reviewed authored versions and the canonical row change. All prior and concurrent F01 content, unrelated entries and pending reviews are preserved. [Edits](RECONFIGURABLE-LOGIC-INDEX-EDITS.json); [scoped checks](RECONFIGURABLE-LOGIC-CHECKS.json). No whole-table or independent certification.",
+      "before_sha256": "3e3cf64af00bdd3e7ce83179cc4f4fc672e354fcb4fbdaa733a08c05167d89ef",
+      "after_sha256": "6d227ec08d42511269a583ddf419b37a15428faafd48442bcd15c9890e9b7626",
+      "insertion_only": true
+    }
+  ],
+  "entry_before": {
+    "id": "F01",
+    "title_zh": "过程核心、谓词与路径组合",
+    "title_en": "Process core predication and composition",
+    "claim_zh": "给定变化关系后，有限历史通过实际共同中间配置组合；谓词可陈述保持性、可能性及全称终点性质，忠实抽象有明确局部条件。 生成逻辑首轮在左单位与原生上下文相容条件下，证明资源演算的收缩可容许当且仅当实际复制可达；有限供给有精确付费替代界限。 新的有限逐前缀继续谓词接入同一核心：每个请求步骤可继续，全部完成终点满足目标；有相反回应与成功后须调整的机制见证。 第二轮从原生占用规律推出局部历史允许的固定上下文精确判据；单相关支承位摘要保留所选工作负载的执行与整体事件步数预算。",
+    "claim_en": "Given a transition relation, finite histories compose through a shared reached configuration; predicates express invariance, possibility and universal endpoint properties, with explicit local conditions for faithful abstraction. A logic pilot proves contraction admissible in a resource calculus exactly when duplication is reachable, under a left unit and primitive context compatibility; finite provision has a sharp paid-replacement bound. A finite prefix-sensitive obligation extends the same core: every requested step can continue and all completed endpoints meet the target, with mechanisms for opposite responses and adjustment after success. A continuation derives the exact frozen-context criterion from native occupancy laws; a relevant-slot summary preserves selected execution and merged-state event-count budgets.",
+    "scope_zh": "逻辑、配置／事件域及变化关系明确给定，未由此导出全部规律或伦理方向。完整说明附六模块61项空依赖审计，其中核心18项、新教学定理12项；可能性、无执行时的空真与实际进展分别保留。旧回执仍可查。 新38项定理／65项总审计（51空），含顺序复用不保证重叠、上下文干扰与完整补给包不可复制的反例。形成的是即时就绪；任意有限准备已计入可达性。未导出元逻辑或确立前沿新颖性；第一轮提出的上下文与摘要目标已由本次有范围结果接续。 新11项定理继承39项审计；50项中44空、6仅标准依赖。终点正确可遗漏中断；实际调度、物理时间与目标伦理根据另列。 新37项定理／220项闭包审计（124空）；新证明无经典选择。初始完整相容性、局部历史与固定占用条件明示；总量摘要失败，单支承摘要不能认证遗漏位置的相容性。整体预算不等于保持其他占用的准备，步数不等于真实时间。Iris/Leaf已有先例，仍属完成的整合而非新颖性证明。",
+    "scope_en": "Logic, configuration/event domains and dynamics remain explicit inputs; this does not derive every law or ethical direction. The exposition checks six modules with 61 empty dependency audits, including 18 core audits and 12 new pedagogical theorems; possibility, vacuity and actual progress remain distinct. The earlier receipt is retained. New pilot: 38 theorems / 65 total audits (51 empty), retaining serial/overlap, contextual interference and funded-package duplication boundaries. Immediate readiness forms; unrestricted reachability already includes preparation. Metalogic and novelty are not established; the first-round context/abstraction target is continued by the scoped results below. Eleven new theorems plus 39 inherited audits; 44 of 50 reports empty, six standard only. Correct endpoints can omit interruption; scheduling, physical time and ethical target warrant remain separate. Continuation: 37 new theorems / 220 closure audits (124 empty), no new choice dependency. Full initial compatibility, a valid local history and a frozen frame are explicit. Counts lose readiness; the selected summary loses hidden-slot compatibility. Merged-state budgets do not imply preparation preserving held occupancy, and steps are not physical time. Iris/Leaf precedents remain credited; the scoped integration is complete, without a novelty claim.",
+    "links": [
+      {
+        "label_zh": "核心源码",
+        "label_en": "Core source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean"
+      },
+      {
+        "label_zh": "同次导入闭包回执",
+        "label_en": "Recorded import-closure receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/situated-continuation-verification.json"
+      },
+      {
+        "label_zh": "完整数学核心说明",
+        "label_en": "Full mathematical core account",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md"
+      },
+      {
+        "label_zh": "谓词与预测例证源码",
+        "label_en": "Predication and prediction companion",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/CorePredication.lean"
+      },
+      {
+        "label_zh": "证明对应与核验",
+        "label_en": "Proof correspondence and verification",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-CORE-DOCUMENT-RECORD.md"
+      },
+      {
+        "label_zh": "生成逻辑当前说明",
+        "label_en": "Generated-logic account",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md"
+      },
+      {
+        "label_zh": "来源、证明与反审",
+        "label_en": "Sources, proof and counterreview",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-LOGIC-INTEGRATION.md"
+      },
+      {
+        "label_zh": "原话与继续",
+        "label_en": "Question and continuation",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md"
+      },
+      {
+        "label_zh": "收缩判据与演算",
+        "label_en": "Criterion and calculus",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedContraction.lean"
+      },
+      {
+        "label_zh": "机制与反例",
+        "label_en": "Mechanisms and controls",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContractionMechanisms.lean"
+      },
+      {
+        "label_zh": "本轮冻结回执",
+        "label_en": "Frozen pilot receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/generated-contraction-checks/20261008T101759.536385Z/receipt.json"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContextualWisdom.lean",
+        "label_zh": "有限继续与相反回应",
+        "label_en": "Finite continuation and contextual response"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/contextual-wisdom-verification.json",
+        "label_zh": "本轮检查回执",
+        "label_en": "Current check receipt"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md",
+        "label_zh": "对应与反审",
+        "label_en": "Correspondence and counterreview"
+      },
+      {
+        "label_zh": "共享上下文整合与反审",
+        "label_en": "Contextual integration and review",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-LOGIC-INTEGRATION.md"
+      },
+      {
+        "label_zh": "原生上下文判据",
+        "label_en": "Native context criterion",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContextualLeaseRules.lean"
+      },
+      {
+        "label_zh": "摘要、预算与反例",
+        "label_en": "Abstraction, budgets and controls",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContextualLogicAbstraction.lean"
+      },
+      {
+        "label_zh": "第二轮冻结回执",
+        "label_en": "Frozen continuation receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/contextual-logic-checks/20261008T103742.401003Z/receipt.json"
+      }
+    ]
+  },
+  "entry_after": {
+    "id": "F01",
+    "title_zh": "过程核心、谓词与路径组合",
+    "title_en": "Process core predication and composition",
+    "claim_zh": "给定变化关系后，有限历史通过实际共同中间配置组合；谓词可陈述保持性、可能性及全称终点性质，忠实抽象有明确局部条件。 生成逻辑首轮在左单位与原生上下文相容条件下，证明资源演算的收缩可容许当且仅当实际复制可达；有限供给有精确付费替代界限。 新的有限逐前缀继续谓词接入同一核心：每个请求步骤可继续，全部完成终点满足目标；有相反回应与成功后须调整的机制见证。 第二轮从原生占用规律推出局部历史允许的固定上下文精确判据；单相关支承位摘要保留所选工作负载的执行与整体事件步数预算。 第三轮证明：当前接入相同，允许改接范围内占用一致，当且仅当全部允许有限历史可行性一致。",
+    "claim_en": "Given a transition relation, finite histories compose through a shared reached configuration; predicates express invariance, possibility and universal endpoint properties, with explicit local conditions for faithful abstraction. A logic pilot proves contraction admissible in a resource calculus exactly when duplication is reachable, under a left unit and primitive context compatibility; finite provision has a sharp paid-replacement bound. A finite prefix-sensitive obligation extends the same core: every requested step can continue and all completed endpoints meet the target, with mechanisms for opposite responses and adjustment after success. A continuation derives the exact frozen-context criterion from native occupancy laws; a relevant-slot summary preserves selected execution and merged-state event-count budgets. A third round proves that, at equal current routes, agreement on permitted-slot occupancy is equivalent to agreement on every allowed finite-word feasibility judgment.",
+    "scope_zh": "逻辑、配置／事件域及变化关系明确给定，未由此导出全部规律或伦理方向。完整说明附六模块61项空依赖审计，其中核心18项、新教学定理12项；可能性、无执行时的空真与实际进展分别保留。旧回执仍可查。 新38项定理／65项总审计（51空），含顺序复用不保证重叠、上下文干扰与完整补给包不可复制的反例。形成的是即时就绪；任意有限准备已计入可达性。未导出元逻辑或确立前沿新颖性；第一轮提出的上下文与摘要目标已由本次有范围结果接续。 新11项定理继承39项审计；50项中44空、6仅标准依赖。终点正确可遗漏中断；实际调度、物理时间与目标伦理根据另列。 新37项定理／220项闭包审计（124空）；新证明无经典选择。初始完整相容性、局部历史与固定占用条件明示；总量摘要失败，单支承摘要不能认证遗漏位置的相容性。整体预算不等于保持其他占用的准备，步数不等于真实时间。Iris/Leaf已有先例，仍属完成的整合而非新颖性证明。 新24项定理／42项总审计（30空）；原生三步历史产生旧工作负载等价、扩展范围可区分的配置。旧摘要加目的地不足以总能更新摘要。允许范围、原子性和身份给定；不禁止无损编码，未解决新读数取得或确立前沿新颖性。已完成交错研究直接复用。",
+    "scope_en": "Logic, configuration/event domains and dynamics remain explicit inputs; this does not derive every law or ethical direction. The exposition checks six modules with 61 empty dependency audits, including 18 core audits and 12 new pedagogical theorems; possibility, vacuity and actual progress remain distinct. The earlier receipt is retained. New pilot: 38 theorems / 65 total audits (51 empty), retaining serial/overlap, contextual interference and funded-package duplication boundaries. Immediate readiness forms; unrestricted reachability already includes preparation. Metalogic and novelty are not established; the first-round context/abstraction target is continued by the scoped results below. Eleven new theorems plus 39 inherited audits; 44 of 50 reports empty, six standard only. Correct endpoints can omit interruption; scheduling, physical time and ethical target warrant remain separate. Continuation: 37 new theorems / 220 closure audits (124 empty), no new choice dependency. Full initial compatibility, a valid local history and a frozen frame are explicit. Counts lose readiness; the selected summary loses hidden-slot compatibility. Merged-state budgets do not imply preparation preserving held occupancy, and steps are not physical time. Iris/Leaf precedents remain credited; the scoped integration is complete, without a novelty claim. Reconfiguration: 24 new theorems / 42 total audits (30 empty). A native three-event history witnesses old-workload equivalence and separation under wider access; old active-view plus destination cannot always determine the new view. Permission scope, identities and atomicity remain supplied. Lossless encodings remain possible; observation acquisition and novelty are not established. Completed interleaving work is reused.",
+    "links": [
+      {
+        "label_zh": "核心源码",
+        "label_en": "Core source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean"
+      },
+      {
+        "label_zh": "同次导入闭包回执",
+        "label_en": "Recorded import-closure receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/situated-continuation-verification.json"
+      },
+      {
+        "label_zh": "完整数学核心说明",
+        "label_en": "Full mathematical core account",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md"
+      },
+      {
+        "label_zh": "谓词与预测例证源码",
+        "label_en": "Predication and prediction companion",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/CorePredication.lean"
+      },
+      {
+        "label_zh": "证明对应与核验",
+        "label_en": "Proof correspondence and verification",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-CORE-DOCUMENT-RECORD.md"
+      },
+      {
+        "label_zh": "生成逻辑当前说明",
+        "label_en": "Generated-logic account",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md"
+      },
+      {
+        "label_zh": "来源、证明与反审",
+        "label_en": "Sources, proof and counterreview",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-LOGIC-INTEGRATION.md"
+      },
+      {
+        "label_zh": "原话与继续",
+        "label_en": "Question and continuation",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md"
+      },
+      {
+        "label_zh": "收缩判据与演算",
+        "label_en": "Criterion and calculus",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedContraction.lean"
+      },
+      {
+        "label_zh": "机制与反例",
+        "label_en": "Mechanisms and controls",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContractionMechanisms.lean"
+      },
+      {
+        "label_zh": "本轮冻结回执",
+        "label_en": "Frozen pilot receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/generated-contraction-checks/20261008T101759.536385Z/receipt.json"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContextualWisdom.lean",
+        "label_zh": "有限继续与相反回应",
+        "label_en": "Finite continuation and contextual response"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/contextual-wisdom-verification.json",
+        "label_zh": "本轮检查回执",
+        "label_en": "Current check receipt"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md",
+        "label_zh": "对应与反审",
+        "label_en": "Correspondence and counterreview"
+      },
+      {
+        "label_zh": "共享上下文整合与反审",
+        "label_en": "Contextual integration and review",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-LOGIC-INTEGRATION.md"
+      },
+      {
+        "label_zh": "原生上下文判据",
+        "label_en": "Native context criterion",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContextualLeaseRules.lean"
+      },
+      {
+        "label_zh": "摘要、预算与反例",
+        "label_en": "Abstraction, budgets and controls",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContextualLogicAbstraction.lean"
+      },
+      {
+        "label_zh": "第二轮冻结回执",
+        "label_en": "Frozen continuation receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/contextual-logic-checks/20261008T103742.401003Z/receipt.json"
+      },
+      {
+        "label_zh": "改接关系整合与反审",
+        "label_en": "Reconfiguration integration and review",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONFIGURABLE-LOGIC-INTEGRATION.md"
+      },
+      {
+        "label_zh": "改接与表示界限源码",
+        "label_en": "Access and representation bounds",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ReconfigurableSupportLogic.lean"
+      },
+      {
+        "label_zh": "第三轮冻结回执",
+        "label_en": "Frozen reconfiguration receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/reconfigurable-logic-checks/20261008T105809.742208Z/receipt.json"
+      }
+    ]
+  },
+  "other_entries_preserved": true,
+  "old_rendered_row": "| F01 | 过程核心、谓词与路径组合<br>Process core predication and composition | 给定变化关系后，有限历史通过实际共同中间配置组合；谓词可陈述保持性、可能性及全称终点性质，忠实抽象有明确局部条件。 生成逻辑首轮在左单位与原生上下文相容条件下，证明资源演算的收缩可容许当且仅当实际复制可达；有限供给有精确付费替代界限。 新的有限逐前缀继续谓词接入同一核心：每个请求步骤可继续，全部完成终点满足目标；有相反回应与成功后须调整的机制见证。 第二轮从原生占用规律推出局部历史允许的固定上下文精确判据；单相关支承位摘要保留所选工作负载的执行与整体事件步数预算。 | Given a transition relation, finite histories compose through a shared reached configuration; predicates express invariance, possibility and universal endpoint properties, with explicit local conditions for faithful abstraction. A logic pilot proves contraction admissible in a resource calculus exactly when duplication is reachable, under a left unit and primitive context compatibility; finite provision has a sharp paid-replacement bound. A finite prefix-sensitive obligation extends the same core: every requested step can continue and all completed endpoints meet the target, with mechanisms for opposite responses and adjustment after success. A continuation derives the exact frozen-context criterion from native occupancy laws; a relevant-slot summary preserves selected execution and merged-state event-count budgets. | 逻辑、配置／事件域及变化关系明确给定，未由此导出全部规律或伦理方向。完整说明附六模块61项空依赖审计，其中核心18项、新教学定理12项；可能性、无执行时的空真与实际进展分别保留。旧回执仍可查。 新38项定理／65项总审计（51空），含顺序复用不保证重叠、上下文干扰与完整补给包不可复制的反例。形成的是即时就绪；任意有限准备已计入可达性。未导出元逻辑或确立前沿新颖性；第一轮提出的上下文与摘要目标已由本次有范围结果接续。 新11项定理继承39项审计；50项中44空、6仅标准依赖。终点正确可遗漏中断；实际调度、物理时间与目标伦理根据另列。 新37项定理／220项闭包审计（124空）；新证明无经典选择。初始完整相容性、局部历史与固定占用条件明示；总量摘要失败，单支承摘要不能认证遗漏位置的相容性。整体预算不等于保持其他占用的准备，步数不等于真实时间。Iris/Leaf已有先例，仍属完成的整合而非新颖性证明。<br>Logic, configuration/event domains and dynamics remain explicit inputs; this does not derive every law or ethical direction. The exposition checks six modules with 61 empty dependency audits, including 18 core audits and 12 new pedagogical theorems; possibility, vacuity and actual progress remain distinct. The earlier receipt is retained. New pilot: 38 theorems / 65 total audits (51 empty), retaining serial/overlap, contextual interference and funded-package duplication boundaries. Immediate readiness forms; unrestricted reachability already includes preparation. Metalogic and novelty are not established; the first-round context/abstraction target is continued by the scoped results below. Eleven new theorems plus 39 inherited audits; 44 of 50 reports empty, six standard only. Correct endpoints can omit interruption; scheduling, physical time and ethical target warrant remain separate. Continuation: 37 new theorems / 220 closure audits (124 empty), no new choice dependency. Full initial compatibility, a valid local history and a frozen frame are explicit. Counts lose readiness; the selected summary loses hidden-slot compatibility. Merged-state budgets do not imply preparation preserving held occupancy, and steps are not physical time. Iris/Leaf precedents remain credited; the scoped integration is complete, without a novelty claim. | [核心源码 / Core source](../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean)<br>[同次导入闭包回执 / Recorded import-closure receipt](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/situated-continuation-verification.json)<br>[完整数学核心说明 / Full mathematical core account](../unified-2026-10-05/MATHEMATICAL-CORE.md)<br>[谓词与预测例证源码 / Predication and prediction companion](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/CorePredication.lean)<br>[证明对应与核验 / Proof correspondence and verification](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-CORE-DOCUMENT-RECORD.md)<br>[生成逻辑当前说明 / Generated-logic account](../unified-2026-10-05/GENERATED-LOGIC.md)<br>[来源、证明与反审 / Sources, proof and counterreview](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-LOGIC-INTEGRATION.md)<br>[原话与继续 / Question and continuation](../../../sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md)<br>[收缩判据与演算 / Criterion and calculus](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedContraction.lean)<br>[机制与反例 / Mechanisms and controls](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContractionMechanisms.lean)<br>[本轮冻结回执 / Frozen pilot receipt](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/generated-contraction-checks/20261008T101759.536385Z/receipt.json)<br>[有限继续与相反回应 / Finite continuation and contextual response](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContextualWisdom.lean)<br>[本轮检查回执 / Current check receipt](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/contextual-wisdom-verification.json)<br>[对应与反审 / Correspondence and counterreview](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md)<br>[共享上下文整合与反审 / Contextual integration and review](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-LOGIC-INTEGRATION.md)<br>[原生上下文判据 / Native context criterion](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContextualLeaseRules.lean)<br>[摘要、预算与反例 / Abstraction, budgets and controls](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContextualLogicAbstraction.lean)<br>[第二轮冻结回执 / Frozen continuation receipt](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/contextual-logic-checks/20261008T103742.401003Z/receipt.json) |",
+  "new_rendered_row": "| F01 | 过程核心、谓词与路径组合<br>Process core predication and composition | 给定变化关系后，有限历史通过实际共同中间配置组合；谓词可陈述保持性、可能性及全称终点性质，忠实抽象有明确局部条件。 生成逻辑首轮在左单位与原生上下文相容条件下，证明资源演算的收缩可容许当且仅当实际复制可达；有限供给有精确付费替代界限。 新的有限逐前缀继续谓词接入同一核心：每个请求步骤可继续，全部完成终点满足目标；有相反回应与成功后须调整的机制见证。 第二轮从原生占用规律推出局部历史允许的固定上下文精确判据；单相关支承位摘要保留所选工作负载的执行与整体事件步数预算。 第三轮证明：当前接入相同，允许改接范围内占用一致，当且仅当全部允许有限历史可行性一致。 | Given a transition relation, finite histories compose through a shared reached configuration; predicates express invariance, possibility and universal endpoint properties, with explicit local conditions for faithful abstraction. A logic pilot proves contraction admissible in a resource calculus exactly when duplication is reachable, under a left unit and primitive context compatibility; finite provision has a sharp paid-replacement bound. A finite prefix-sensitive obligation extends the same core: every requested step can continue and all completed endpoints meet the target, with mechanisms for opposite responses and adjustment after success. A continuation derives the exact frozen-context criterion from native occupancy laws; a relevant-slot summary preserves selected execution and merged-state event-count budgets. A third round proves that, at equal current routes, agreement on permitted-slot occupancy is equivalent to agreement on every allowed finite-word feasibility judgment. | 逻辑、配置／事件域及变化关系明确给定，未由此导出全部规律或伦理方向。完整说明附六模块61项空依赖审计，其中核心18项、新教学定理12项；可能性、无执行时的空真与实际进展分别保留。旧回执仍可查。 新38项定理／65项总审计（51空），含顺序复用不保证重叠、上下文干扰与完整补给包不可复制的反例。形成的是即时就绪；任意有限准备已计入可达性。未导出元逻辑或确立前沿新颖性；第一轮提出的上下文与摘要目标已由本次有范围结果接续。 新11项定理继承39项审计；50项中44空、6仅标准依赖。终点正确可遗漏中断；实际调度、物理时间与目标伦理根据另列。 新37项定理／220项闭包审计（124空）；新证明无经典选择。初始完整相容性、局部历史与固定占用条件明示；总量摘要失败，单支承摘要不能认证遗漏位置的相容性。整体预算不等于保持其他占用的准备，步数不等于真实时间。Iris/Leaf已有先例，仍属完成的整合而非新颖性证明。 新24项定理／42项总审计（30空）；原生三步历史产生旧工作负载等价、扩展范围可区分的配置。旧摘要加目的地不足以总能更新摘要。允许范围、原子性和身份给定；不禁止无损编码，未解决新读数取得或确立前沿新颖性。已完成交错研究直接复用。<br>Logic, configuration/event domains and dynamics remain explicit inputs; this does not derive every law or ethical direction. The exposition checks six modules with 61 empty dependency audits, including 18 core audits and 12 new pedagogical theorems; possibility, vacuity and actual progress remain distinct. The earlier receipt is retained. New pilot: 38 theorems / 65 total audits (51 empty), retaining serial/overlap, contextual interference and funded-package duplication boundaries. Immediate readiness forms; unrestricted reachability already includes preparation. Metalogic and novelty are not established; the first-round context/abstraction target is continued by the scoped results below. Eleven new theorems plus 39 inherited audits; 44 of 50 reports empty, six standard only. Correct endpoints can omit interruption; scheduling, physical time and ethical target warrant remain separate. Continuation: 37 new theorems / 220 closure audits (124 empty), no new choice dependency. Full initial compatibility, a valid local history and a frozen frame are explicit. Counts lose readiness; the selected summary loses hidden-slot compatibility. Merged-state budgets do not imply preparation preserving held occupancy, and steps are not physical time. Iris/Leaf precedents remain credited; the scoped integration is complete, without a novelty claim. Reconfiguration: 24 new theorems / 42 total audits (30 empty). A native three-event history witnesses old-workload equivalence and separation under wider access; old active-view plus destination cannot always determine the new view. Permission scope, identities and atomicity remain supplied. Lossless encodings remain possible; observation acquisition and novelty are not established. Completed interleaving work is reused. | [核心源码 / Core source](../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean)<br>[同次导入闭包回执 / Recorded import-closure receipt](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/situated-continuation-verification.json)<br>[完整数学核心说明 / Full mathematical core account](../unified-2026-10-05/MATHEMATICAL-CORE.md)<br>[谓词与预测例证源码 / Predication and prediction companion](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/CorePredication.lean)<br>[证明对应与核验 / Proof correspondence and verification](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-CORE-DOCUMENT-RECORD.md)<br>[生成逻辑当前说明 / Generated-logic account](../unified-2026-10-05/GENERATED-LOGIC.md)<br>[来源、证明与反审 / Sources, proof and counterreview](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-LOGIC-INTEGRATION.md)<br>[原话与继续 / Question and continuation](../../../sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md)<br>[收缩判据与演算 / Criterion and calculus](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedContraction.lean)<br>[机制与反例 / Mechanisms and controls](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContractionMechanisms.lean)<br>[本轮冻结回执 / Frozen pilot receipt](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/generated-contraction-checks/20261008T101759.536385Z/receipt.json)<br>[有限继续与相反回应 / Finite continuation and contextual response](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContextualWisdom.lean)<br>[本轮检查回执 / Current check receipt](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/contextual-wisdom-verification.json)<br>[对应与反审 / Correspondence and counterreview](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md)<br>[共享上下文整合与反审 / Contextual integration and review](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-LOGIC-INTEGRATION.md)<br>[原生上下文判据 / Native context criterion](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContextualLeaseRules.lean)<br>[摘要、预算与反例 / Abstraction, budgets and controls](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContextualLogicAbstraction.lean)<br>[第二轮冻结回执 / Frozen continuation receipt](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/contextual-logic-checks/20261008T103742.401003Z/receipt.json)<br>[改接关系整合与反审 / Reconfiguration integration and review](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONFIGURABLE-LOGIC-INTEGRATION.md)<br>[改接与表示界限源码 / Access and representation bounds](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ReconfigurableSupportLogic.lean)<br>[第三轮冻结回执 / Frozen reconfiguration receipt](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/reconfigurable-logic-checks/20261008T105809.742208Z/receipt.json) |",
+  "other_rendered_lines_preserved": true,
+  "authored_fingerprints": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md": "5e7a5f74ebc92808e98729827855fd5c607ca1f6d3004f77abbffcc4ff4aeca8",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-LOGIC-INTEGRATION.md": "2506c0bc5c85113a85ab66067a5820bade663bc3baecd2e9f161eed7ce9de997",
+    "sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md": "650591e8841e11c8ad1156144d79c15ab2e321178bcd4bf3452f8b2ca9c9e4ec",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONFIGURABLE-LOGIC-INTEGRATION.md": "981841e210e536b1e7ca7d1662f224556a60b75033dd3e0ddedf900df3d6e9fe",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ReconfigurableSupportLogic.lean": "ba6511391b9ec50b9e96604982c84c3a3fc9a0dc2cb931acbb7979bfbd874911",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/reconfigurable-logic-checks/20261008T105809.742208Z/receipt.json": "2b53c3994335fa24df27b90e8c83bd7e9f9c626d3486e02ee8d8ff4b6006e78a"
+  },
+  "owned_discovery_paths": [
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONFIGURABLE-LOGIC-INTEGRATION.md"
+  ]
+}

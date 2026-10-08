@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "local_links_checked": 31,
+  "new_theorems": 45,
+  "new_module_counts": {
+    "ExplanatoryVariation": 35,
+    "ExplanatoryRecovery": 10
+  },
+  "inherited_audits": 42,
+  "total_empty_axiom_audits": 87,
+  "source_and_frozen_log_bindings": "match",
+  "sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md": "c81c21c89a1aebee5f61cfcd03e6fb49d1303346057278ea97882c8c9eabeefe",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md": "e2ffcdc429d36b5c08295c11fe4f1ea20ff6c59dce9b5b7cdaff7666d59502fb",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-VARIATION-INTEGRATION.md": "7ab1339eb50daf81063d79ff1da4104bf5697b4a14ba78b953ae740bc79999f6",
+    "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md": "9b045a86b1afbbd0c93a2e85d94d321fcb51c14e8313a8d5f58784bcdf85af97",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryVariation.lean": "1146c7238dfd20e8d9dfede3f79704c8fc68c4e3879c4edb65c466249c612b86",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryRecovery.lean": "9e3e4e21ff47851b16ae85de09d2c3666a48a6c20b3108b78435422e9c48389a",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_explanatory_variation.py": "00ea1193abf6befcfa9e9f3d943cef2e83a394e8eb86a8c59cccf748dbda2242",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-variation-checks/20261007T205430.274823Z/receipt.json": "4f9d16cb185e5f50e18b80a3b13727ccb8cb8101e8f76676a37182e5e8109b46",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-VARIATION-INDEX-EDITS.json": "4c6afdd72502d6b135f5b65c56c59a5cac00a9135177ef09ef95e843fe443d31"
+  },
+  "scope": "formal correspondence and current documents; no empirical or universal-foundation verification"
+}

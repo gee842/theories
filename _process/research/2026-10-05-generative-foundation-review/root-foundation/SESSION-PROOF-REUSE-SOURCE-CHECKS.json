@@ -1,0 +1,12 @@
+{
+  "scope": "Textual source inspection only; no Lean compilation or theorem-equivalence proof.",
+  "direct_wrapper": true,
+  "same_current_normalized_soundness_statement_and_body": true,
+  "soundness_normalized_sha256": "e40c4964b3fccd85c2055fade7a307059b04a6ae611aa92869f467d71cbc32d4",
+  "source_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/GenerativeClosure.lean": "d0a79987bd15c3de39f4c109d1d61703df50d3e9b3236c4e46acdd1854ec22ed",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/WholeTheoryDischarge.lean": "f835741c8d9efc49eabb6f4d82db0488e5f46f308fd0f1500bd8692a62590893",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeModel.lean": "c9752ea54674fc5b3fedd89c64af133c19838a20a83c363d0fac5272c84ff33b",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicConsequences.lean": "d4a0dfc019fd1009d0230b0aa88ea4d940d42b6394ff44f59568e95edbd27692"
+  }
+}

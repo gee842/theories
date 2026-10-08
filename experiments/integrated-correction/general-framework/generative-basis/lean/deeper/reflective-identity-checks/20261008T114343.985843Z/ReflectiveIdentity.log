@@ -1,0 +1,11 @@
+'Generative.ReflectiveIdentity.retain_is_same' does not depend on any axioms
+'Generative.ReflectiveIdentity.retained_ground_preserves' does not depend on any axioms
+'Generative.ReflectiveIdentity.no_ground_created' does not depend on any axioms
+'Generative.ReflectiveIdentity.reflexive_exact' does not depend on any axioms
+'Generative.ReflectiveIdentity.same_criterion' does not depend on any axioms
+'Generative.ReflectiveIdentity.compose_with_bridge' does not depend on any axioms
+'Generative.ReflectiveIdentity.strict_to_tolerant_reflexive' does not depend on any axioms
+'Generative.ReflectiveIdentity.tolerant_to_strict_not_reflexive' does not depend on any axioms
+'Generative.ReflectiveIdentity.reflexive_assessment_can_fail_composition' does not depend on any axioms
+'Generative.ReflectiveIdentity.curry_fixed_point' does not depend on any axioms
+'Generative.ReflectiveIdentity.no_false_curry_fixed_point' does not depend on any axioms

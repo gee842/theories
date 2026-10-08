@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "scope": "C28/F20 only: paired fields, links, source registration and canonical rendered rows; other generated rows preserved. Full-table source review remains with concurrent studies.",
+  "other_generated_lines_unchanged": true,
+  "global_pending": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/G0-AND-KNOWLEDGE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/KNOWLEDGE.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-SOURCES.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-assumption-free-shengsheng-foundation.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-PHILOSOPHY-COMPLETION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-INQUIRY-AND-STANDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PHILOSOPHICAL-ACCOUNT.md"
+    ],
+    "removed_pages": []
+  }
+}

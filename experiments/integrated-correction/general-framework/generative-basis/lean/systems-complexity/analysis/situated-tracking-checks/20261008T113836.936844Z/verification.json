@@ -1,0 +1,221 @@
+{
+  "status": "passed",
+  "utc": "20261008T113836.936844Z",
+  "retained_run": "situated-tracking-checks/20261008T113836.936844Z",
+  "source_sha256": {
+    "SituatedTracking": "dc92b0d2cd7e35c841e711de1accfc4138cc534e2b1d3775810bc79b8052787d"
+  },
+  "checker_sha256": {
+    "check_situated_tracking.py": "61f1123be40eef9e784be6218089148cabff9f94a22e241d157bc0212a2ecd99",
+    "declaration_audit_support.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "support_source": "/Users/ren/theories/experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check.py",
+  "toolchain": "leanprover/lean4:v4.30.0-rc2",
+  "scope": "Scalar acquired estimation in a changing history; finite error bounds, conditional convergence and eventual certification with a strict margin. No full situational awareness, ethical threshold, empirical calibration or universal goal convergence is certified.",
+  "lean_version": "Lean (version 4.30.0-rc2, arm64-apple-darwin24.6.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc, Release)",
+  "source_unchanged_during_check": true,
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "mathlib_revision": "ea11ccc0c5c7c4c562742e918fe2e0b2814a58aa",
+  "manifest_sha256": "740eef1aae725322b99872aba59cc5c902378b992bfe9122737a454f3076321b",
+  "direct_import_sha256": {
+    "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/lib/lean/Init.olean": "12e94e3624b943d20ad898491957051ae9ba22ccbed9e6f92c35fbc711849246",
+    "/Users/ren/repos/\u751f\u751f\u4e0d\u606f/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Analysis/SpecificLimits/Basic.olean": "d3ae202117c497d08998457702dc6f565813ac074d8c42888adbf34c0d7b6a0f",
+    "/Users/ren/repos/\u751f\u751f\u4e0d\u606f/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic.olean": "0a821f2a00e8a64712b702ffd0355326515c0123c0b60917a5aaa1c4ac527911"
+  },
+  "upstream_rebuilt": false,
+  "inherited_project_theorems_rebuilt": 0,
+  "modules": [
+    {
+      "module": "SituatedTracking",
+      "kernel_checked": true,
+      "theorems": 15,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "SituatedTracking.estimate"
+        },
+        {
+          "kind": "def",
+          "name": "SituatedTracking.error"
+        },
+        {
+          "kind": "def",
+          "name": "SituatedTracking.forcing"
+        },
+        {
+          "kind": "theorem",
+          "name": "SituatedTracking.one_step"
+        },
+        {
+          "kind": "theorem",
+          "name": "SituatedTracking.recurrence_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "SituatedTracking.tracking_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "SituatedTracking.eventual_band"
+        },
+        {
+          "kind": "theorem",
+          "name": "SituatedTracking.vanishing_input_convergence"
+        },
+        {
+          "kind": "theorem",
+          "name": "SituatedTracking.tracking_convergence"
+        },
+        {
+          "kind": "def",
+          "name": "SituatedTracking.radius"
+        },
+        {
+          "kind": "theorem",
+          "name": "SituatedTracking.radius_nonnegative"
+        },
+        {
+          "kind": "theorem",
+          "name": "SituatedTracking.radius_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "SituatedTracking.radius_converges"
+        },
+        {
+          "kind": "theorem",
+          "name": "SituatedTracking.certificate_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "SituatedTracking.eventually_certifies"
+        },
+        {
+          "kind": "theorem",
+          "name": "SituatedTracking.misleading_reading_fixed"
+        },
+        {
+          "kind": "theorem",
+          "name": "SituatedTracking.stable_error_can_be_wrong"
+        },
+        {
+          "kind": "theorem",
+          "name": "SituatedTracking.changing_condition_retains_lag"
+        },
+        {
+          "kind": "theorem",
+          "name": "SituatedTracking.boundary_accuracy_without_certificate"
+        }
+      ],
+      "axiom_dependencies": {
+        "SituatedTracking.estimate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SituatedTracking.error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SituatedTracking.forcing": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SituatedTracking.one_step": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SituatedTracking.recurrence_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SituatedTracking.tracking_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SituatedTracking.eventual_band": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SituatedTracking.vanishing_input_convergence": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SituatedTracking.tracking_convergence": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SituatedTracking.radius": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SituatedTracking.radius_nonnegative": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SituatedTracking.radius_sound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SituatedTracking.radius_converges": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SituatedTracking.certificate_sound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SituatedTracking.eventually_certifies": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SituatedTracking.misleading_reading_fixed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SituatedTracking.stable_error_can_be_wrong": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SituatedTracking.changing_condition_retains_lag": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SituatedTracking.boundary_accuracy_without_certificate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    }
+  ],
+  "artifact_sha256": {
+    "SituatedTracking.lean": "dc92b0d2cd7e35c841e711de1accfc4138cc534e2b1d3775810bc79b8052787d",
+    "SituatedTracking.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "SituatedTrackingAxiomAudit.lean": "ad2cff2caa66e3ea907de9c0b2d4f81570126bf42bcc6537226b7f789b99e820",
+    "SituatedTrackingAxiomAudit.log": "bd08a52ee400a2444dac310b84947785ac29d9be9ef4cd04ee5e97afd8c7e437",
+    "SituatedTrackingSignatures.lean": "e695b9fd3d253ffa5722da1f669e6782d8f32555b42dfd0e50257b1b20727dc3",
+    "SituatedTrackingSignatures.log": "003ab90eebff18691f3812b3ac2a8bb1ab6ee5db21dc69d5319984bac5c25a35",
+    "check_situated_tracking.py": "61f1123be40eef9e784be6218089148cabff9f94a22e241d157bc0212a2ecd99",
+    "declaration_audit_support.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "dependencies.log": "042cf93f608f8ed1375aca6f60a15c8a6e12e63b00b4724b55f6c0a5a725ed90",
+    "version.log": "6b38d6160c0223bc189f88caad3d56588b06ca7af2b81d19cb4dbcef5024f387"
+  }
+}

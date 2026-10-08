@@ -1,0 +1,3 @@
+{"kind":"workbook","id":"wb/mrccub","sheets":1,"tables":1}
+{"kind":"sheet","id":"ws/a53np3","name":"figure  2","index":0,"range":"A1:X72","address":"A1:X72","tables":1}
+{"kind":"table","sheet":"figure  2","address":"A1:X72","rows":72,"cols":24,"values":[[null,"Panel A",null,null,null,null,null,null],[null,null,null,null,null,null,null,null],[null,null,"YFP","YFP","YFP","YFP","YFP","YFP"],[null,"A",2.213463454,2.569837681,-4.27476128,3.28689857,1.709867202,20.44377642],[null,"B",-3.433333333,0.366666667,-3.566666667,-0.1,-0.066666667,43.1],[null,"C",-13,-3.1,-15.73333333,0,0.366666667,3.433333333]],"valuesTruncated":true,"valuesPreviewRows":6,"valuesPreviewCols":8,"valuesPreviewAddress":"A1:H6"}

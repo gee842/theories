@@ -1,0 +1,15 @@
+'SelectorStructuralCoverage.lower_intensity_favored_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SelectorStructuralCoverage.threshold_all_menu_coverage_iff_capacity_inclusion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SelectorStructuralCoverage.two_extreme_reviews_miss_middle_objection' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SelectorStructuralCoverage.probe' does not depend on any axioms
+'SelectorStructuralCoverage.fitsAdjacentProbes' does not depend on any axioms
+'SelectorStructuralCoverage.two_adjacent_probes_identify_capacity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SelectorStructuralCoverage.two_probes_give_exact_certificate_on_every_menu' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

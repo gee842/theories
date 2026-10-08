@@ -1,0 +1,209 @@
+{
+  "scope": "Saved evidence bindings, original byte lengths, selected-frame receipts, local links and C14 rendering. Not biological replication, a fresh media decode, a proof or full-table certification.",
+  "checks_passed": true,
+  "original_files": 7,
+  "original_bytes": 12952815,
+  "movies": {
+    "S1": 1198,
+    "S4": 1419,
+    "S5": 641,
+    "S6": 1537
+  },
+  "selected_frames": 44,
+  "decoded_frames": 4795,
+  "derived_sheets": 5,
+  "links": [
+    {
+      "document": "sources/evolutionary-selection/ferguson-2013/README.md",
+      "reference": "manifest.json"
+    },
+    {
+      "document": "sources/evolutionary-selection/ferguson-2013/README.md",
+      "reference": "6fb76fb64861d8d1c868a0cece56a181_genetics.113.154948-8.mov"
+    },
+    {
+      "document": "sources/evolutionary-selection/ferguson-2013/README.md",
+      "reference": "ab6eea5c688f6ab4eaf4bf48bb8fbb95_genetics.113.154948-12.mov"
+    },
+    {
+      "document": "sources/evolutionary-selection/ferguson-2013/README.md",
+      "reference": "eaa9186a72f48f810d721a8c31306472_genetics.113.154948-5.mov"
+    },
+    {
+      "document": "sources/evolutionary-selection/ferguson-2013/README.md",
+      "reference": "8399d6f43532e501af632b69f481fd06_genetics.113.154948-10.mov"
+    },
+    {
+      "document": "sources/evolutionary-selection/ferguson-2013/README.md",
+      "reference": "supp_195_4_1319__index.html"
+    },
+    {
+      "document": "sources/evolutionary-selection/ferguson-2013/README.md",
+      "reference": "../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-history/README.md"
+    },
+    {
+      "document": "sources/evolutionary-selection/ferguson-2013/README.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-HISTORY-INTEGRATION.md"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-history/README.md",
+      "reference": "../../../../../../sources/evolutionary-selection/ferguson-2013/README.md"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-history/README.md",
+      "reference": "../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-HISTORY-INTEGRATION.md"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-history/README.md",
+      "reference": "inspect_movies.py"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-history/README.md",
+      "reference": "verification.json"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-history/README.md",
+      "reference": "check_record.py"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-history/README.md",
+      "reference": "../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-HISTORY-CHECKS.json"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-history/README.md",
+      "reference": "figures/s1-overview.png"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-history/README.md",
+      "reference": "figures/s1-detail.png"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-history/README.md",
+      "reference": "figures/s4-overview.png"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-history/README.md",
+      "reference": "figures/s5-overview.png"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-history/README.md",
+      "reference": "figures/s6-overview.png"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-HISTORY-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-HISTORY-INTEGRATION.md",
+      "reference": "../../../../sources/evolutionary-selection/ferguson-2013/README.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-HISTORY-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-history/README.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-HISTORY-INTEGRATION.md",
+      "reference": "MAT-CONDITIONS-INTEGRATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-HISTORY-INTEGRATION.md",
+      "reference": "LINEAGE-CONTINUATION-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../sources/15-codex-theory-conversations/2026-10-08-the-theory-of-evolution-goal.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "NONDUAL-METHOD.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "GENERATIVE-SELECTION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "LIANGZHI-EVOLUTION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELECTION-RECURRENCE-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-ASSOCIATION-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ECOLOGICAL-SELECTION-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PACKING-FRAGMENTATION-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SETTLING-CORRESPONDENCE-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/AGGREGATION-SELECTION-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LINEAGE-CONTINUATION-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LINEAGE-FORECAST-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-TRANSFER-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-CONDITIONS-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-HISTORY-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "NEW-POSSIBILITIES.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "PRACTICAL-JUDGMENT.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELECTION-RECURRENCE-INTEGRATION.md#comparison-and-primary-evidence"
+    }
+  ],
+  "local_links_checked": 42,
+  "completion_requirement_rows_unchanged": 6,
+  "scoped_C14_valid": true,
+  "unrelated_review_obligations": {
+    "modified_sources": 3,
+    "missing_sources": 0,
+    "new_pages": 2,
+    "removed_pages": 0
+  },
+  "bound_files": {
+    "sources/evolutionary-selection/ferguson-2013/README.md": "3d46d188e4658293a0e70c1050f883b9dfd75f1617d2f2aa598d48901df93f86",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-history/README.md": "633dc70e4ba72718a53a098d6796cae165f1bb62b05e4e09567163e02f7bd992",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-HISTORY-INTEGRATION.md": "65395d2d0634f5276401375d7ab113b2a25e55cc7e7881cf8b11d2a9c71c2e3f",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md": "1c6704628d0d26d76c0988ec0feceeea51f43b88f624e0eb90a7a1caf2aea5a2",
+    "sources/evolutionary-selection/ferguson-2013/manifest.json": "431b7ddcc7c0992881da6fb083b67b86435e68e8df1c8f14ae1ee48a7c500996",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-history/verification.json": "c95fb45e6c5d7ba53b6a88d0f87babc8f54bbed54356bd82b8ee061ca3b96299",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-history/inspect_movies.py": "ea25a7e400426900c7fac3b41db80d5dbc6b500ca263c465b0e4cad203052488",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-history/check_record.py": "cafc0be342f255934c8820f7fc6b635e28e98638d39fe67fffe21156980c57b6",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-HISTORY-INDEX-EDITS.json": "1368fc63f5822004d719eff6aa8526460bd909337a49cbaee3c92453d8343c48"
+  },
+  "new_theorem_claimed": false,
+  "independent_agent_review_claimed": false,
+  "biological_replication_claimed": false,
+  "full_theory_complete": false
+}

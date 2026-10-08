@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-08",
+  "scope": "Owned insertions; preserve concurrent work and all six broader requirements",
+  "edits": [
+    {
+      "path": "RESEARCH.md",
+      "before_sha256": "a03cb258268ff6d1b29972559b2cc8b2ca9c59dd8759045a3723c842a7a88bb1",
+      "after_sha256": "a513297e285a1072ded5a3f5dac1e1251dddb4f32236350a1633b2b7b85b824b",
+      "owned_passage": "**Measured developmental history, 8 October 2026.** [The new analysis](_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md) follows one predefined field through 91 original captures over 15 hours. Independent decoding checks 23,855,104 crop pixels. Two inspected structures show abrupt local image loss; a third remains visible after its track ends because it reaches the crop boundary. Detection and movement sensitivity are preserved, without fitting a collapse hazard or descendant forecast. The concurrent exact conventional-model comparison is credited. **Next:** validated structural fate joined to identified sampling and viable descendants; broad superiority remains open. / **实际发育史：**区分形成、局部消失、移动与边界删失；完整演化目标保持不变。\n\n"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "before_sha256": "d513168977aabd7b3971108ea36f2687b9bd985ab57b8192bdb302fc9704f93d",
+      "after_sha256": "e5f34690dfeec7ebbf38c1894f01b1d00a2250314fd45f563440a07484e3d3be",
+      "owned_passage": "**实际发育史与观察界限 / Measured development and observation limits，2026-10-08。** [91帧相连分析](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md)核对一个固定视野的增长、局部骤失与轨迹边界删失，23,855,104像素对应通过。/ Actual formation does not guarantee later availability; track endings are not automatically collapse. Conventional explanations receive the same evidence. Biological fate, sampling and descendants still require a validated join.\n\n"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "before_sha256": "ef8d2c326de7cee3f3a60dba95d618e872fb229de3f0cf5c56b52e9bf670057a",
+      "after_sha256": "7d1c869c70a5612dea1d6389c58db85589023b46fdd9d3d978b5c35be0c4f23d",
+      "owned_passage": "**Developmental history, 8 October 2026.** [Measured formation and apparent loss](DEVELOPMENTAL-HISTORY-INTEGRATION.md) follows 91 captures of one preselected microscopic field, with independent source decoding and threshold/movement sensitivity. The four longest assigned tracks include local-loss candidates and a verified boundary-censoring case. No new theorem, event-rate calibration or superiority claim; actual sampling and descendants remain the next empirical join.\n\n"
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "before_sha256": "0c9278f2e7ce98ae43dc7c282b2d7f9022bd9c9aa6fb1457d21675bdcfebdf4e",
+      "after_sha256": "f970d992f676ffd44b52816e09af0e38022976fd4dad7194dcd0c4af665885f3",
+      "owned_passage": "**Original developmental image history, 8 October 2026.** [Preserved CZI bands](evolutionary-selection/karita-2026/microscopy-history/README.md) add 251,170,816 original bytes for one predefined field through 91 captures, reusing earlier endpoints and headers. Exact ranges, ETags and SHA-256 bindings are checked. These partial original ranges are not whole files, biological replicates or publisher-verified whole-file hashes.\n\n"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "before_sha256": "079fc89c2e78777c6d9f0d709c6be6482e5fa6290b91e7a00d3a176c6acc422d",
+      "after_sha256": "ccfa7968b0b4f38c555f5f90e7364fd552e34ef09e3b001fbe2d3bf22e1eb812",
+      "owned_passage": "## Measured formation and apparent loss\n\n[The developmental-history continuation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md) now follows one fixed field through 91 original captures. Growing structures can disappear locally, while an assigned trajectory can also end at the observation boundary with the structure still visible. This requires distinguishing actual persistence from its measured signal before predicting what remains available for later sampling and reconstruction. The source-bound image history advances that correspondence; it does not yet establish biological collapse rates, linked descendants or a gain over the equally informed conventional account.\n\n"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "before_sha256": "9ba1fac89a3e40cf41cba2ae20be01e194ceaa0ba08dfb022d91a54d10341521",
+      "after_sha256": "81b1ebb78a019e621cc8239d62ec0614b264c38dca6ac7aa2325c23bb0a7c5eb",
+      "owned_passage": "The [measured developmental-history study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md) now adds 91 consecutive captures of a fixed field, independent decoding of 23,855,104 crop pixels, and explicit observation/identity sensitivity. Local-loss candidates and a structure still visible after boundary censoring are preserved separately. This closes the first interior-image measurement step; validated biological fate, endpoint/culture identity and later descendants remain necessary for the empirical comparison. The six requirements below remain unchanged.\n\n"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "before_sha256": "cf4cc2251ca9404ee81b2c3deb398cc48da62d2eeca3af49234e3514884ee804",
+      "after_sha256": "97a6b836b90540a4e9cde8a89cd421bc44061927b168b4188f7e7d297287621c",
+      "owned_passage": "**Observed formation and continued availability, 8 October 2026.** [The developmental-history study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md) joins 91 original captures and distinguishes local structural appearance/loss from tracking and boundary effects. It constrains a representation of the organization available for subsequent activity. The new measurement does not supply descendants, indefinite support or ethical warrant; completed reconstruction, conventional equivalence and explicit-axiom arguments retain their scopes.\n\n"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MICROSCOPY-CORRESPONDENCE-INTEGRATION.md",
+      "before_sha256": "f83ecd791e2ffbc9ac6f3644439b117616d5ef3371a602a7991c1ebda66c7461",
+      "after_sha256": "a0c8d66ae14d2e5e3bd30ef812cd56ca2a74e88c67be22cfecf79598ba266f5c",
+      "owned_passage": "**Completed interior follow-up, 8 October 2026.** [The predefined-field trajectory study](DEVELOPMENTAL-HISTORY-INTEGRATION.md) now checks all 91 scene-0 capture records and central-square pixels, measures detection/movement sensitivity, and inspects four assigned track endings. It distinguishes local image loss from boundary censoring. This advances the interior-history step below without resolving treatment/culture identity, physical fate or descendant linkage.\n\n"
+    }
+  ],
+  "six_requirement_rows": [
+    "| **1 Formation of evolving organization** | Formation, regulation and developmental reconstruction have conditional models. The new bond-history account derives common founder ancestry under local non-aggregative development, with a targeted biological correspondence. | Extend the connected explanation beyond the stated local laws, retaining genealogy, actual construction and empirical scope. Origins of cells/genomes and broader mechanisms are not established by this case. |",
+    "| **2 Recovery of established evolutionary explanations** | Explicit transmission models and the new two-type recurrence correspondence. | Correspondences covering the claimed selection, mutation, drift, movement, inheritance and ecological mechanisms, with valid ranges and failures. Mathematical claims require actual Lean checks. An abstract interface alone is insufficient. |",
+    "| **3 Evolution of the conditions of evolution** | Actual output determines reconstruction, and inherited retention changes development. Retention, packing and aggregation constrain sorting. A bacterial genealogy and directly linked reversion assay now connect inherited switching to actual cycle completion and subsequent lineage representation under a declared regime. Separate oxygen experiments establish activity-generated gradients and condition-dependent competitive outcomes. | Generalize and calibrate these connections with supported renewal, mixing and stochastic occurrence. Resolve the separate yeast census conversion and follow fragmentation/aggregation participants. Explain mutation, transmission and replacement contributions to prevalence; fixation alone is not causal proof. Laboratory protocol changes do not establish endogenous evolution of the selector. |",
+    "| **4 Novel organization and changed evolutionary units** | The completed [new-possibilities integration](NEW-POSSIBILITIES.md) distinguishes installed construction from encompassing law, gives a formed constructor and scope-specific description revision. The association model adds formed group relations; empirical aggregation distinguishes temporary sorting groups from inherited organizations. | Credit those results and connect formation to inherited retention and ongoing effect under actual evolutionary conditions. Common transport does not alone establish a new inherited unit. Broader changes of evolutionary units and sustained qualitative innovation require their own mechanisms and evidence. |",
+    "| **5 Demonstrated comparative strength** | Exact recurrence correspondence and a proved limit of snapshots omitting bonds. Retention data compare ordinary predictors with/without protocol information, including a worsening case. A source-bound settling sensitivity holds geometry fixed and reveals consequential density/drag choices; a conventional developmental life-cycle model receives credit. Chronological genealogy forecasts now demonstrate a gain over a changing stage average and two block alternatives, fully credited to conventional lineage inference. Dated assay transfer exposes stage-specific prediction failures. | Establish a consequential gain against an adequately specified rival with matched evidence and assumptions. Neither the reduced baselines nor disagreement between unvalidated velocity approximations establishes superior prediction. Measure sorting and descendants to decide the physical correspondence. Broad empirical superiority remains unestablished. |",
+    "| **6 Ethical continuation and evolved evaluation** | The [practical-judgment candidate](PRACTICAL-JUDGMENT.md) is complete and independently accepted at its explicit-axiom general-principles scope, with G0 and additional comparison/responsibility commitments disclosed. | Credit that completed scope; connect evolved evaluation to its actual recognition, calibration and implementation, preserving failures. Application correspondence and actual compliance require evidence. Reproductive advantage cannot silently serve as ethical authority. |"
+  ],
+  "chain_update": {
+    "owned_entry": "C14",
+    "other_entries_preserved": 89,
+    "new_link_paths": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md",
+      "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/developmental-history/measurement-verification.json"
+    ],
+    "new_discovery_paths": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-PROTOCOL.md"
+    ],
+    "reviewed_versions_promoted_through_owned_insertions": [
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/MICROSCOPY-CORRESPONDENCE-INTEGRATION.md"
+    ],
+    "maintenance_owned_passage": "\n\n**实测发育史 / Measured developmental history，2026-10-08。** C14 接入[91帧固定视野研究](DEVELOPMENTAL-HISTORY-INTEGRATION.md)：独立解码23,855,104个裁剪像素，保留检测及移动敏感性、局部消失候选和边界删失。/ The interior observation step is complete at one-field scope; biological fate, actual sampling and descendants remain to be joined. No new theorem or broad superiority is claimed. Other entries and concurrent source reviews are preserved.\n"
+  }
+}

@@ -1,0 +1,724 @@
+{
+  "checked_at_utc": "2026-10-08T10:12:36.793219+00:00",
+  "status": "passed",
+  "lean_version": "Lean (version 4.30.0-rc2, arm64-apple-darwin24.6.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc, Release)",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "targets": [
+    "CorrectionPopulation",
+    "CorrectionParent"
+  ],
+  "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-population-checks/20261008T101157.900508Z",
+  "modules": [
+    {
+      "module": "CorrectionBoundary",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionBoundary.lean",
+      "source_sha256": "1d86d53e01c6780860ff1f6793e5654c161a5a3316cc43d545e1dd2c3c2955ac",
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "CorrectionBoundary.Implements"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionBoundary.CommonAction"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.selector_iff_common_action"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.indistinguishable_conflict"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.refine_observation"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.restrict_histories"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionBoundary.output"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.revealed_polarity_suffices"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.opposite_decoders_conflict"
+        },
+        {
+          "kind": "structure",
+          "name": "CorrectionBoundary.Continuation"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionBoundary.observe"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionBoundary.successful"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.no_transcript_policy"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.every_finite_transcript_has_failure"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.transcript_only_certificate_cannot_accept"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionBoundary.optionalOutput"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.abstention_no_wrong_delivery"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.universal_no_wrong_requires_abstention"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.abstention_cannot_complete"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionBoundary.successMass"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionBoundary.wrongMass"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.randomized_worst_case_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.randomized_half_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.balanced_attains_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.uniform_success_error_tradeoff"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.zero_error_zero_delivery"
+        },
+        {
+          "kind": "inductive",
+          "name": "CorrectionBoundary.Command"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionBoundary.stopped"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.common_stop_succeeds"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionBoundary.mutableStop"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.mutable_stop_can_fail"
+        }
+      ],
+      "audits": 31,
+      "theorems": 19,
+      "nonempty_audits": {
+        "CorrectionBoundary.selector_iff_common_action": [
+          "Classical.choice"
+        ],
+        "CorrectionBoundary.abstention_no_wrong_delivery": [
+          "propext"
+        ],
+        "CorrectionBoundary.abstention_cannot_complete": [
+          "propext"
+        ],
+        "CorrectionBoundary.successMass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionBoundary.wrongMass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionBoundary.randomized_worst_case_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionBoundary.randomized_half_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionBoundary.balanced_attains_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionBoundary.uniform_success_error_tradeoff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionBoundary.zero_error_zero_delivery": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "module": "CorrectionPopulation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionPopulation.lean",
+      "source_sha256": "bd13fad67f759b36bc3800b046a95f6b1dd715328c9574a44af33323acda1de9",
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "CorrectionPopulation.World"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionPopulation.polarity"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionPopulation.result"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionPopulation.joint_observation_corrects"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionPopulation.left_alone_insufficient"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionPopulation.right_alone_insufficient"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionPopulation.repeatedLeft"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionPopulation.arbitrarily_many_duplicate_observations_fail"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionPopulation.probe"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionPopulation.pilot_transfers"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionPopulation.target_drift_defeats_pilot"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionPopulation.majority"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionPopulation.mass"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionPopulation.mass_nonnegative"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionPopulation.mass_normalizes"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionPopulation.independent_mass_normalizes"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionPopulation.mixture_mass_normalizes"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionPopulation.independentError"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionPopulation.independent_error_formula"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionPopulation.independent_gain"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionPopulation.independent_error_nonnegative"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionPopulation.sharedError"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionPopulation.shared_error_no_gain"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionPopulation.mixtureError"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionPopulation.common_mode_floor"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionPopulation.common_mode_floor_any_count"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionPopulation.independent_tenth_example"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionPopulation.shared_tenth_example"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionPopulation.common_tenth_example"
+        },
+        {
+          "kind": "structure",
+          "name": "CorrectionPopulation.Sites"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionPopulation.containedTest"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionPopulation.uncontainedTest"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionPopulation.mainAvailable"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionPopulation.contained_test_preserves_main"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionPopulation.shared_support_failure_reaches_main"
+        }
+      ],
+      "audits": 35,
+      "theorems": 21,
+      "nonempty_audits": {
+        "CorrectionPopulation.mass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionPopulation.mass_nonnegative": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionPopulation.mass_normalizes": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionPopulation.independent_mass_normalizes": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionPopulation.mixture_mass_normalizes": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionPopulation.independentError": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionPopulation.independent_error_formula": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionPopulation.independent_gain": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionPopulation.independent_error_nonnegative": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionPopulation.sharedError": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionPopulation.shared_error_no_gain": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionPopulation.mixtureError": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionPopulation.common_mode_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionPopulation.common_mode_floor_any_count": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionPopulation.independent_tenth_example": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionPopulation.shared_tenth_example": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionPopulation.common_tenth_example": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionPopulation.shared_support_failure_reaches_main": [
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "CorrectionParent",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionParent.lean",
+      "source_sha256": "fe5a56b7bce18b39c2a47afa87ee59f1017011872536715bd44d0d6055810473",
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "CorrectionParent.Children"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionParent.parentStopped"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionParent.stopBoth"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionParent.stopLeft"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionParent.parent_summary_exact_for_stop_both"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionParent.same_parent_summary_different_local_effect"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionParent.no_parent_only_law_for_local_stop"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionParent.retaining_sibling_context_suffices"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionParent.parent_stopped_iff_children"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionParent.child_can_stop_without_parent"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionParent.decode"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionParent.each_child_correctable"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionParent.one_broadcast_cannot_correct_both"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionParent.separate_commands_correct_both"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionParent.joint_correction_from_feasible_commands"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionParent.actualDelivery"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionParent.shared_power_loss_blocks_correct_children"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionParent.parent_support_restores_delivery"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionParent.supplied"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionParent.singleton_trials_pass"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionParent.singleton_trials_do_not_distinguish_capacity"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionParent.simultaneous_demand_distinguishes_capacity"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionParent.capacity_two_covers_all_joint_demands"
+        }
+      ],
+      "audits": 23,
+      "theorems": 16,
+      "nonempty_audits": {
+        "CorrectionParent.retaining_sibling_context_suffices": [
+          "propext"
+        ],
+        "CorrectionParent.singleton_trials_pass": [
+          "propext"
+        ]
+      }
+    }
+  ],
+  "total_audits": 89,
+  "new_audits": 58,
+  "new_theorems": 37,
+  "nonempty_audits": {
+    "CorrectionBoundary.selector_iff_common_action": [
+      "Classical.choice"
+    ],
+    "CorrectionBoundary.abstention_no_wrong_delivery": [
+      "propext"
+    ],
+    "CorrectionBoundary.abstention_cannot_complete": [
+      "propext"
+    ],
+    "CorrectionBoundary.successMass": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionBoundary.wrongMass": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionBoundary.randomized_worst_case_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionBoundary.randomized_half_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionBoundary.balanced_attains_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionBoundary.uniform_success_error_tradeoff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionBoundary.zero_error_zero_delivery": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionPopulation.mass": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionPopulation.mass_nonnegative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionPopulation.mass_normalizes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionPopulation.independent_mass_normalizes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionPopulation.mixture_mass_normalizes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionPopulation.independentError": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionPopulation.independent_error_formula": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionPopulation.independent_gain": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionPopulation.independent_error_nonnegative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionPopulation.sharedError": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionPopulation.shared_error_no_gain": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionPopulation.mixtureError": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionPopulation.common_mode_floor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionPopulation.common_mode_floor_any_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionPopulation.independent_tenth_example": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionPopulation.shared_tenth_example": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionPopulation.common_tenth_example": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionPopulation.shared_support_failure_reaches_main": [
+      "propext"
+    ],
+    "CorrectionParent.retaining_sibling_context_suffices": [
+      "propext"
+    ],
+    "CorrectionParent.singleton_trials_pass": [
+      "propext"
+    ]
+  },
+  "checker_sha256": "a00b95e924e3f8f688ffbade5538c51aa4e94a23ef37491ac54d9d9e6977a7ad",
+  "commands": [
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "CorrectionBoundary.olean",
+      "CorrectionBoundary.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "CorrectionPopulation.olean",
+      "CorrectionPopulation.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "CorrectionParent.olean",
+      "CorrectionParent.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "CorrectionPopulationAudit.lean"
+    ]
+  ],
+  "log_sha256": {
+    "CorrectionBoundary.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CorrectionPopulation.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CorrectionParent.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axioms.txt": "91fdb744fdbcf69b157cab17ebb05d7ff1b053b31e3b03ad53ddd1001059bbfc"
+  },
+  "source_changed_during_run": [],
+  "direct_import_sha256": {
+    "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/lib/lean/Init.olean": "12e94e3624b943d20ad898491957051ae9ba22ccbed9e6f92c35fbc711849246",
+    "/Users/ren/repos/\u751f\u751f\u4e0d\u606f/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic.olean": "0a821f2a00e8a64712b702ffd0355326515c0123c0b60917a5aaa1c4ac527911",
+    "CorrectionBoundary.olean": "e142f1038da213ca9a23c32a84f98977c9592df10642561fbb9ab2420f920928"
+  },
+  "mathlib_revision": "ea11ccc0c5c7c4c562742e918fe2e0b2814a58aa",
+  "manifest_sha256": "740eef1aae725322b99872aba59cc5c902378b992bfe9122737a454f3076321b",
+  "upstream_scope": "Pinned existing Mathlib cache; repository import closure rebuilt. Mathlib not rebuilt.",
+  "scope": "Complementary observations, arbitrary duplicate-observation obstruction, pilot transfer, supplied independent and common-mode error laws, contained trials, parent summaries and joint correction feasibility. CorrectionBoundary is inherited and audited separately. No empirical system individuation, automatic independence or universal ethical authority."
+}

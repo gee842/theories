@@ -1,0 +1,64 @@
+{
+  "title": "Evolutionary dynamics of nascent multicellular lineages",
+  "authors": [
+    "Guilhem Doulcier",
+    "Philippe Remigi",
+    "Daniel Rexin",
+    "Paul B. Rainey"
+  ],
+  "publication_year": 2025,
+  "article_doi": "10.1098/rspb.2024.1195",
+  "data_doi": "10.5281/zenodo.13244627",
+  "retrieved": "2026-10-08",
+  "license": "CC BY 4.0, article and cited data record",
+  "files": [
+    {
+      "file": "article.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12040459/fullTextXML",
+      "bytes": 136220,
+      "sha256": "642e289abfd4d12f061e8416690d8bfea182b0314afa3fc2714c7c8e2d3587e5"
+    },
+    {
+      "file": "zenodo-13244627.json",
+      "url": "https://zenodo.org/api/records/13244627",
+      "bytes": 4902,
+      "sha256": "f0cf601a443d1099f7d488ae3d4706676598597a6afc453aab7c82e377f0a875"
+    },
+    {
+      "file": "lce-genealogies-code-and-data.zip",
+      "url": "https://zenodo.org/api/records/13244627/files/lce-genealogies-code-and-data.zip/content",
+      "bytes": 3655596,
+      "sha256": "fe931fe108f940d229f5c2a33deb8b5e7b1838a6dc68d5b8934b7e2b6735725d"
+    }
+  ],
+  "published_archive_md5": "md5:6816127659da9e1fdb5a1eb176cbe6a3",
+  "published_archive_md5_verified": true,
+  "read_archive_members": [
+    {
+      "path": "lce-genealogies-main/01_genealogies.ipynb",
+      "bytes": 15112,
+      "sha256": "ebe88cc22c75957cddbeab4b34e5c15fc4c8944da2aa9de9a2d3abdfee22e27c"
+    },
+    {
+      "path": "lce-genealogies-main/06_fitness_assays.ipynb",
+      "bytes": 19119,
+      "sha256": "68440482d4cbd3acfbc7f6b99ff0c2aef5224bef958d5f00c572cdac61c08266"
+    },
+    {
+      "path": "lce-genealogies-main/README.md",
+      "bytes": 1324,
+      "sha256": "e26afe5ddb39bb0bb6f5611baaf34641d8807a036975b4b342b8de510023525f"
+    },
+    {
+      "path": "lce-genealogies-main/raw/19-09-27/Counts_final.xlsx",
+      "bytes": 226804,
+      "sha256": "c0d4e56b3c41b0d5559cbf32c8c621fdddd4213dcea0ef28ad0dd12ee5039d8f"
+    },
+    {
+      "path": "lce-genealogies-main/raw/24-04-03/Lifecycle fitness tests.xlsx",
+      "bytes": 248448,
+      "sha256": "31a6c4b7c564deb72a17269b60e3bfac5e035df72b3fe1d05ece91968bf10655"
+    }
+  ],
+  "scope": "Original bytes retained. Selected notebooks inspected, not executed. No reproduction of Bayesian inference or genome alignment."
+}

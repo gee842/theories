@@ -1,0 +1,16 @@
+import ExplanatoryUniqueness
+#check Generative.ExplanatoryUniqueness.equal_codes_same_answers
+#check Generative.ExplanatoryUniqueness.reduced_exact_kernel
+#check Generative.ExplanatoryUniqueness.reduced_presentations_same_kernel
+#check Generative.ExplanatoryUniqueness.matches_total_on_used
+#check Generative.ExplanatoryUniqueness.matches_functional
+#check Generative.ExplanatoryUniqueness.matches_inverse_functional
+#check Generative.ExplanatoryUniqueness.matches_iff_equal_answers
+#check Generative.ExplanatoryUniqueness.unique_matching
+#check Generative.ExplanatoryUniqueness.short_exact
+#check Generative.ExplanatoryUniqueness.full_exact
+#check Generative.ExplanatoryUniqueness.short_reduced
+#check Generative.ExplanatoryUniqueness.full_not_reduced
+#check Generative.ExplanatoryUniqueness.first_summary_cannot_answer_both
+#check Generative.ExplanatoryUniqueness.relative_unique_correspondence
+#check Generative.ExplanatoryUniqueness.balance_does_not_determine_coverability

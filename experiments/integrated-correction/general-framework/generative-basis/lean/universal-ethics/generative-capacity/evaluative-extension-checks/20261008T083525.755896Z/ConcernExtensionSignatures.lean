@@ -1,0 +1,9 @@
+import ConcernExtension
+#check ConcernExtension.included_extension_iff
+#check ConcernExtension.strict_extension_transfer_iff
+#check ConcernExtension.retained_old_new_strict
+#check ConcernExtension.crossed_extension_is_incomparable
+#check ConcernExtension.covered_profiles_no_better
+#check ConcernExtension.positive_extension_changes_judgment
+#check ConcernExtension.gain_judgment_transfer_iff
+#check ConcernExtension.new_basic_condition_can_reverse

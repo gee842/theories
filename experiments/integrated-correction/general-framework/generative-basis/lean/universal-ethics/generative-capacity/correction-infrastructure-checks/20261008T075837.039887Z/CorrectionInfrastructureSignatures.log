@@ -1,0 +1,143 @@
+CorrectionInfrastructure.acceptance_factorization {A : Type} (allowed : A → Prop) (q : A → Int) (bonus : Int)
+  (positive : 0 < bonus) (x : A × Bool) :
+  CorrectionInfrastructure.Best (fun y => allowed y.fst) (CorrectionInfrastructure.AcceptScore q bonus) x ↔
+    x.snd = true ∧ CorrectionInfrastructure.Best allowed q x.fst
+CorrectionInfrastructure.every_optimum_has_access_iff {A : Type} (allowed access : A → Prop) (q : A → Int) (bonus : Int)
+  (positive : 0 < bonus) :
+  (∀ (x : A × Bool),
+      CorrectionInfrastructure.Best (fun y => allowed y.fst) (CorrectionInfrastructure.AcceptScore q bonus) x →
+        access x.fst) ↔
+    ∀ (a : A), CorrectionInfrastructure.Best allowed q a → access a
+CorrectionInfrastructure.no_base_optimal_access {A : Type} (allowed access : A → Prop) (q : A → Int)
+  (conflict : ∀ (a : A), CorrectionInfrastructure.Best allowed q a → ¬access a) :
+  ¬∃ a, CorrectionInfrastructure.Best allowed q a ∧ access a
+CorrectionInfrastructure.costly_maintenance_separation (cost bonus : Int) (hc : 0 < cost) (hb : 0 < bonus)
+  (x : Bool × Bool) :
+  CorrectionInfrastructure.Best (fun x => True)
+      (CorrectionInfrastructure.AcceptScore (CorrectionInfrastructure.MaintenanceValue cost) bonus) x ↔
+    x = (true, true)
+CorrectionInfrastructure.accepting_optimum_can_destroy_access (cost bonus : Int) (hc : 0 < cost) (hb : 0 < bonus) :
+  CorrectionInfrastructure.Best (fun x => True)
+      (CorrectionInfrastructure.AcceptScore (CorrectionInfrastructure.MaintenanceValue cost) bonus) (true, true) ∧
+    ¬CorrectionInfrastructure.Maintains true ∧ CorrectionInfrastructure.Maintains false
+CorrectionInfrastructure.fixed_access_bonus_has_cost_boundary (weight cost : Int) (h : weight < cost) :
+  weight + CorrectionInfrastructure.MaintenanceValue cost false < CorrectionInfrastructure.MaintenanceValue cost true
+CorrectionInfrastructure.every_fixed_access_bonus_has_counterexample (weight : Int) :
+  ∃ cost,
+    weight + CorrectionInfrastructure.MaintenanceValue cost false < CorrectionInfrastructure.MaintenanceValue cost true
+CorrectionInfrastructure.maintenance_bonus_exact (weight cost : Int) :
+  (∀ (a : Bool),
+      CorrectionInfrastructure.Best (fun x => True)
+          (fun b => CorrectionInfrastructure.MaintenanceValue cost b + if b = true then 0 else weight) a →
+        CorrectionInfrastructure.Maintains a) ↔
+    cost < weight
+CorrectionInfrastructure.viable_iff_access_and_admissible {S A : Type} (step : S → A → S → Prop) (access : S → Prop)
+  (n : Nat) (s : S) :
+  CorrectionInfrastructure.Viable step access (n + 1) s ↔
+    access s ∧ ∃ a, CorrectionInfrastructure.Admissible step access n s a
+CorrectionInfrastructure.viable_has_current_access {S A : Type} (step : S → A → S → Prop) (access : S → Prop) (n : Nat)
+  (s : S) : CorrectionInfrastructure.Viable step access n s → access s
+CorrectionInfrastructure.dead_action_not_admissible {S A : Type} (step : S → A → S → Prop) (access : S → Prop) (n : Nat)
+  (s : S) (a : A) (dead : ∀ (t : S), ¬step s a t) : ¬CorrectionInfrastructure.Admissible step access n s a
+CorrectionInfrastructure.shielded_acceptance_composition {S A : Type} (step : S → A → S → Prop) (access : S → Prop)
+  (n : Nat) (s : S) (q : A → Int) (bonus : Int) (positive : 0 < bonus) (x : A × Bool)
+  (optimal :
+    CorrectionInfrastructure.Best (fun y => CorrectionInfrastructure.Admissible step access n s y.fst)
+      (CorrectionInfrastructure.AcceptScore q bonus) x) :
+  x.snd = true ∧
+    CorrectionInfrastructure.LiveStep step s x.fst ∧
+      (∀ (t : S), step s x.fst t → CorrectionInfrastructure.Viable step access n t) ∧
+        ∀ (a : A), CorrectionInfrastructure.Admissible step access n s a → q a ≤ q x.fst
+CorrectionInfrastructure.unavoidable_score_loss {A : Type} (allowed : A → Prop) (q : A → Int) (u v : A)
+  (hu : CorrectionInfrastructure.Best (fun x => True) q u) (hv : CorrectionInfrastructure.Best allowed q v) :
+  0 ≤ q u - q v ∧ ∀ (a : A), allowed a → q u - q v ≤ q u - q a
+CorrectionInfrastructure.restricted_value_is_achievable (temptation : Int) (branch : Bool) :
+  CorrectionInfrastructure.LastAllowed branch false ∧
+    CorrectionInfrastructure.TwoStepReward temptation branch false = CorrectionInfrastructure.RestrictedValue branch
+CorrectionInfrastructure.restricted_value_bounds_all_continuations (temptation : Int) (branch last : Bool)
+  (h : CorrectionInfrastructure.LastAllowed branch last) :
+  CorrectionInfrastructure.TwoStepReward temptation branch last ≤ CorrectionInfrastructure.RestrictedValue branch
+CorrectionInfrastructure.unrestricted_value_is_optimal (temptation : Int) (h : 2 < temptation) (branch : Bool) :
+  (∃ last,
+      CorrectionInfrastructure.TwoStepReward temptation branch last =
+        CorrectionInfrastructure.UnrestrictedValue temptation branch) ∧
+    ∀ (last : Bool),
+      CorrectionInfrastructure.TwoStepReward temptation branch last ≤
+        CorrectionInfrastructure.UnrestrictedValue temptation branch
+CorrectionInfrastructure.stale_value_shield_is_strictly_suboptimal (temptation bonus : Int) (ht : 2 < temptation)
+  (hb : 0 < bonus) :
+  CorrectionInfrastructure.Best (fun x => True)
+      (CorrectionInfrastructure.AcceptScore (CorrectionInfrastructure.UnrestrictedValue temptation) bonus)
+      (true, true) ∧
+    (∃ last, CorrectionInfrastructure.LastAllowed true last) ∧
+      (∀ (last : Bool),
+          CorrectionInfrastructure.LastAllowed true last →
+            CorrectionInfrastructure.TwoStepReward temptation true last = 1) ∧
+        CorrectionInfrastructure.LastAllowed false false ∧
+          CorrectionInfrastructure.TwoStepReward temptation false false = 2
+CorrectionInfrastructure.recomputed_value_restores_optimal_branch (bonus : Int) (hb : 0 < bonus) (x : Bool × Bool)
+  (h :
+    CorrectionInfrastructure.Best (fun x => True)
+      (CorrectionInfrastructure.AcceptScore CorrectionInfrastructure.RestrictedValue bonus) x) :
+  x = (false, true)
+CorrectionInfrastructure.approximate_constrained_score_bound {A : Type} (allowed : A → Prop) (actual estimate : A → Int)
+  (err : Int) (lower : ∀ (a : A), allowed a → actual a - err ≤ estimate a)
+  (upper : ∀ (a : A), allowed a → estimate a ≤ actual a + err) (chosen : A)
+  (h : CorrectionInfrastructure.Best allowed estimate chosen) (a : A) : allowed a → actual a - actual chosen ≤ 2 * err
+CorrectionInfrastructure.constrained_score_bound_is_tight (err : Int) (h : 0 ≤ err) :
+  CorrectionInfrastructure.Best (fun x => True) (fun x => err) false ∧
+    (∀ (a : Bool), (if a = true then 2 * err else 0) - err ≤ err ∧ err ≤ (if a = true then 2 * err else 0) + err) ∧
+      2 * err - 0 = 2 * err
+CorrectionInfrastructure.safe_path_is_viable {S A : Type} (next : S → A → S) (access : S → Prop) (policy : Nat → S → A)
+  (n : Nat) (s : S) :
+  CorrectionInfrastructure.PathSafe next access policy n s → CorrectionInfrastructure.DViable next access n s
+CorrectionInfrastructure.bellman_bounds_every_safe_policy {S A : Type} (next : S → A → S) (access : S → Prop)
+  (reward : S → A → Int) (V : Nat → S → Int) (bellman : CorrectionInfrastructure.Bellman next access reward V)
+  (policy : Nat → S → A) (n : Nat) (s : S) :
+  CorrectionInfrastructure.PathSafe next access policy n s →
+    CorrectionInfrastructure.Return next reward policy n s ≤ V n s
+CorrectionInfrastructure.dynamically_recomputed_composition {S A : Type} (next : S → A → S) (access : S → Prop)
+  (reward : S → A → Int) (V : Nat → S → Int) (bellman : CorrectionInfrastructure.Bellman next access reward V)
+  (bonus : Int) (positive : 0 < bonus) (choose : Nat → S → A × Bool)
+  (optimal :
+    ∀ (n : Nat) (s : S),
+      CorrectionInfrastructure.DViable next access (n + 1) s →
+        CorrectionInfrastructure.Best (fun x => CorrectionInfrastructure.DAllowed next access n s x.fst)
+          (CorrectionInfrastructure.AcceptScore (fun a => reward s a + V n (next s a)) bonus) (choose n s))
+  (n : Nat) (s : S) :
+  CorrectionInfrastructure.DViable next access n s →
+    CorrectionInfrastructure.PathSafe next access (fun k t => (choose k t).fst) n s ∧
+      CorrectionInfrastructure.Return next reward (fun k t => (choose k t).fst) n s = V n s
+CorrectionInfrastructure.dynamic_composition_accepts_at_every_viable_decision {S A : Type} (next : S → A → S)
+  (access : S → Prop) (reward : S → A → Int) (V : Nat → S → Int) (bonus : Int) (positive : 0 < bonus)
+  (choose : Nat → S → A × Bool) (n : Nat) (s : S)
+  (optimal :
+    CorrectionInfrastructure.Best (fun x => CorrectionInfrastructure.DAllowed next access n s x.fst)
+      (CorrectionInfrastructure.AcceptScore (fun a => reward s a + V n (next s a)) bonus) (choose n s)) :
+  (choose n s).snd = true
+CorrectionInfrastructure.closed_implies_every_finite_horizon {S A : Type} (step : S → A → S → Prop)
+  (access K : S → Prop) (closed : CorrectionInfrastructure.Closed step access K) (n : Nat) (s : S) :
+  K s → CorrectionInfrastructure.Viable step access n s
+CorrectionInfrastructure.uniform_policy_iff_fiber_feasible {S O A : Type} (obs : S → O) (good : S → A → Prop) :
+  CorrectionInfrastructure.UniformPolicy obs good ↔ CorrectionInfrastructure.FiberFeasible obs good
+CorrectionInfrastructure.statewise_repair_need_not_be_usable :
+  (∀ (s : Bool), ∃ a, a = s) ∧ ¬CorrectionInfrastructure.UniformPolicy (fun x => ()) fun s a => a = s
+CorrectionInfrastructure.discriminating_evidence_restores_policy :
+  CorrectionInfrastructure.UniformPolicy (fun s => s) fun s a => a = s
+CorrectionInfrastructure.uniform_safety_survives_finer_evidence {S O P A : Type} (coarse : S → O) (fine : S → P)
+  (forget : P → O) (compatible : ∀ (s : S), forget (fine s) = coarse s) (good : S → A → Prop)
+  (h : CorrectionInfrastructure.UniformPolicy coarse good) : CorrectionInfrastructure.UniformPolicy fine good
+CorrectionInfrastructure.self_reclassified_obligations_can_hide_loss :
+  (CorrectionInfrastructure.Covers (fun x => False) fun x => False) ∧
+    ¬CorrectionInfrastructure.Covers (fun x => True) fun x => False
+CorrectionInfrastructure.approved_scope_change_transports_coverage {I J : Type} (old : I → Prop)
+  (new available : J → Prop) (translate : I → J) (retained : ∀ (i : I), old i → new (translate i))
+  (coverage : CorrectionInfrastructure.Covers new available) (i : I) : old i → available (translate i)
+CorrectionInfrastructure.endpoint_repair_can_hide_interruption_gap :
+  CorrectionInfrastructure.RouteAccess (true, false) ∧
+    CorrectionInfrastructure.RouteAccess (false, true) ∧
+      ¬CorrectionInfrastructure.PrefixAccess [(true, false), (false, false), (false, true)]
+CorrectionInfrastructure.overlapping_handoff_retains_prefix_access :
+  CorrectionInfrastructure.PrefixAccess [(true, false), (true, true), (false, true)]
+CorrectionInfrastructure.correction_preservation_allows_route_retirement :
+  CorrectionInfrastructure.RouteAccess (false, true) ∧ (false, true).fst ≠ true

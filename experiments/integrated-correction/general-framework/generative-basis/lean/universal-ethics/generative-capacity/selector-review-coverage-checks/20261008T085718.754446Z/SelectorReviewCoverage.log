@@ -1,0 +1,16 @@
+SelectorReviewCoverage.lean:249:48: error: unsolved goals
+case false
+n a b : Nat
+ha : a ≤ n
+hb : b ≤ n
+na : ¬n < a
+nb : ¬n < b
+⊢ a = 0 → ¬b = 0 → b = 0 → a = 0
+
+case true
+n a b : Nat
+ha : a ≤ n
+hb : b ≤ n
+na : ¬n < a
+nb : ¬n < b
+⊢ a = 0 → ¬b = 0 → b = 0 → a = 0

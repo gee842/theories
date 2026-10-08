@@ -1,0 +1,34 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-jointness-ts3gtrwg/ExplanatorySharedSupport.lean:37:71: error: unsolved goals
+case whole.held.held
+a✝³ a✝² a✝¹ a✝ : Bool
+h : a✝³ = false ∧ a✝¹ = true ∧ a✝² = false ∧ a✝ = false ∧ ¬a✝² = a✝
+⊢ False
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-jointness-ts3gtrwg/ExplanatorySharedSupport.lean:46:84: error: unsolved goals
+case whole.held.held
+a✝³ a✝² a✝¹ a✝ : Bool
+⊢ a✝³ = false → (a✝¹ = true ∧ a✝² = a✝³ ∧ a✝ = a✝¹ ∧ ¬a✝² = a✝ ↔ a✝² = false ∧ a✝¹ = true ∧ a✝ = true)
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-jointness-ts3gtrwg/ExplanatorySharedSupport.lean:173:35: error(lean.unknownIdentifier): Unknown constant `Bool.true_ne_false`
+'Generative.ExplanatorySharedSupport.either_activity_possible' does not depend on any axioms
+'Generative.ExplanatorySharedSupport.shared_joint_impossible' depends on axioms: [propext, sorryAx]
+'Generative.ExplanatorySharedSupport.separate_joint_witness' depends on axioms: [propext]
+'Generative.ExplanatorySharedSupport.separate_joint_iff' depends on axioms: [propext, sorryAx]
+'Generative.ExplanatorySharedSupport.both_capabilities_hold' depends on axioms: [propext]
+'Generative.ExplanatorySharedSupport.separate_support_joint_answer' depends on axioms: [propext]
+'Generative.ExplanatorySharedSupport.shared_support_joint_answer' depends on axioms: [propext, sorryAx]
+'Generative.ExplanatorySharedSupport.ordinary_bisimulation' depends on axioms: [propext]
+'Generative.ExplanatorySharedSupport.all_ordinary_questions_agree' depends on axioms: [propext]
+'Generative.ExplanatorySharedSupport.joint_questions_separate' depends on axioms: [propext, sorryAx]
+'Generative.ExplanatorySharedSupport.step_finitely_branching' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatorySharedSupport.joint_finitely_branching' depends on axioms: [propext, sorryAx]
+'Generative.ExplanatorySharedSupport.both_models_compact' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatorySharedSupport.slots_same_all_joint_tests' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatorySharedSupport.distinct_slots_join' depends on axioms: [propext]
+'Generative.ExplanatorySharedSupport.duplicate_slot_fails' depends on axioms: [propext]
+'Generative.ExplanatorySharedSupport.no_reduced_exact_native_join' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatorySharedSupport.fits_slots_iff' depends on axioms: [propext]
+'Generative.ExplanatorySharedSupport.fixed_partner_separates' depends on axioms: [propext, sorryAx]
+'Generative.ExplanatorySharedSupport.partner_answers_recover_slot' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatorySharedSupport.slot_model_compact' depends on axioms: [propext, Classical.choice, Quot.sound]

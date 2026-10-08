@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-08",
+  "archive": "lce-genealogies-code-and-data.zip",
+  "archive_sha256": "fe931fe108f940d229f5c2a33deb8b5e7b1838a6dc68d5b8934b7e2b6735725d",
+  "member": "lce-genealogies-main/raw/24-04-03/Lifecycle fitness tests.xlsx",
+  "scope": "All 3802 raw rows inventoried into 139 cohorts; 485 focal rows from five dated genotype batches separately source-checked. Full cohort inventory does not validate every raw phenotype or historical genotype assignment.",
+  "article_file": "article.xml",
+  "article_sha256": "642e289abfd4d12f061e8416690d8bfea182b0314afa3fc2714c7c8e2d3587e5",
+  "article_section_read": "s3-4 Experimental confirmation of adaptive changes",
+  "genomic_or_original_statistical_replication": false
+}

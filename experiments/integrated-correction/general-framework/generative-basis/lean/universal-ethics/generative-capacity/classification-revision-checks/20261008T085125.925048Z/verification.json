@@ -1,0 +1,18 @@
+{
+  "status": "failed",
+  "utc": "20261008T085125.925048Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "classification-revision-checks/20261008T085125.925048Z",
+  "source_sha256": {
+    "PracticalJudgment": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "ClassificationRevision": "f50092f57df22388dc421f6f2eb122be372e6d71fad9136d4a66877f792cce61"
+  },
+  "checker_sha256": {
+    "check_classification_revision.py": "7e77b42a3ff95bef6a69575dde647cbb31b9a86c04be144736350ac1bca7a943",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Faithful acquired records and eligible-menu coverage yield exact local route classification. One genuine alternative defeats necessity; supported interpretation refinement and menu expansion have distinct effects. Ethical target, eligibility, correspondence and local access law remain explicit premises. No autonomous ethical axiom discovery or empirical claim.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "ClassificationRevision.lean:88:76: error: Application type mismatch: The argument\n  h\nhas type\n  CommonNecessity live eligible target route\nbut is expected to have type\n  Robust ?m.6 (NecessaryRoute eligible) route\nin the application\n  robust_at_actual ?m.10 h\nClassificationRevision.lean:88:70: error: Application type mismatch: The argument\n  truth\nhas type\n  live actual\nbut is expected to have type\n  ?m.6 (target actual)\nin the application\n  robust_at_actual truth\nClassificationRevision.lean:121:32: error: failed to synthesize\n  Decidable (Observed firstRecords Arrangement.relay)\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\nClassificationRevision.lean:141:23: error: unsolved goals\nha : enlargedMenu Arrangement.relay\n\u22a2 ?m.50 = true\nClassificationRevision.lean:141:23: error: unsolved goals\nha : enlargedMenu Arrangement.direct\n\u22a2 ?m.50 = true\nClassificationRevision.lean:141:23: error: unsolved goals\nha : enlargedMenu Arrangement.shut\n\u22a2 ?m.50 = false\nClassificationRevision.lean:148:52: error: failed to synthesize\n  Decidable (Observed laterRecords Arrangement.direct)\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\nClassificationRevision.lean:148:64: error: failed to synthesize\n  Decidable \u00acusesRelay Arrangement.direct\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\nClassificationRevision.lean:153:47: error: failed to synthesize\n  Decidable (target Arrangement.direct \u2227 \u00acusesRelay Arrangement.direct)\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\nClassificationRevision.lean:173:13: error: failed to synthesize\n  Decidable (Observed corruptRecords Arrangement.shut)\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\nClassificationRevision.lean:173:23: error: failed to synthesize\n  Decidable \u00actarget Arrangement.shut\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\n"
+}

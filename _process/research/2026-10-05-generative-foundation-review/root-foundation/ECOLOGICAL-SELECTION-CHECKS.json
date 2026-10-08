@@ -1,0 +1,152 @@
+{
+  "status": "passed",
+  "previous_goal_turn": "no progress: status restatement",
+  "current_goal_turn": "progress: preserved empirical data, executed reanalysis and integrated correspondence constraints",
+  "scope": "Owned ecological study, numerical bindings, local links and C14; not full theory completion or new proof validation",
+  "owned_document_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ECOLOGICAL-SELECTION-INTEGRATION.md": "cd97b53996fd416c448073e979090a24a424947b8ce09381bd0993be493ed0fd",
+    "sources/evolutionary-selection/ratcliff-2013/README.md": "5081b9908681c43d860e24b82f477b2cd4d47aa942c1b3796230c73ba1efbacc",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/README.md": "e2d8b557ef1430f879ad05fb539838abc7640919bfedb9747ed9b09b7036e5fc",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md": "435836ea104fa8c73177924f12837c43f7f84b3824b79398347f26faf2f32caa"
+  },
+  "numerical_verification": {
+    "status": "passed",
+    "checks": [
+      "published byte size and MD5",
+      "input and analysis SHA256 bindings",
+      "30 rows and six five-culture groups",
+      "exact integer means and contrasts",
+      "independent 252-allocation enumeration",
+      "independent balanced holdout losses"
+    ],
+    "scope": "Independent numerical implementation check, not an independent scientific review or Lean proof.",
+    "bootstrap_check": "Finite ordered output only; bootstrap percentiles are not independently recomputed.",
+    "source_sha256": "f9920311c09251f9854318a65f4d67212ec3b0d2792af78e83e50913c987db75",
+    "results_sha256": "82c2987c71b8ab21c8babd1cad4e5bcfe2b94d8382dbded3b4817e11926c1ebd",
+    "checker_sha256": "1c38bda8521f5ab66c44a11b390d05a463cdc6a86a657393cde5c2805d818fb9",
+    "node_version": "v24.19.0"
+  },
+  "local_links_checked": 26,
+  "links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ECOLOGICAL-SELECTION-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ECOLOGICAL-SELECTION-INTEGRATION.md",
+      "target": "DEVELOPMENTAL-ASSOCIATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ECOLOGICAL-SELECTION-INTEGRATION.md",
+      "target": "../../../../sources/evolutionary-selection/ratcliff-2013/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ECOLOGICAL-SELECTION-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/survival-results.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ECOLOGICAL-SELECTION-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/verification.json"
+    },
+    {
+      "from": "sources/evolutionary-selection/ratcliff-2013/README.md",
+      "target": "survival-preview.csv"
+    },
+    {
+      "from": "sources/evolutionary-selection/ratcliff-2013/README.md",
+      "target": "settling%20survival%20compiled%20data.csv"
+    },
+    {
+      "from": "sources/evolutionary-selection/ratcliff-2013/README.md",
+      "target": "dataset-metadata.json"
+    },
+    {
+      "from": "sources/evolutionary-selection/ratcliff-2013/README.md",
+      "target": "file-metadata.json"
+    },
+    {
+      "from": "sources/evolutionary-selection/ratcliff-2013/README.md",
+      "target": "manifest.json"
+    },
+    {
+      "from": "sources/evolutionary-selection/ratcliff-2013/README.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ECOLOGICAL-SELECTION-INTEGRATION.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/ratcliff-2013/README.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/analyze_survival.py"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/README.md",
+      "target": "../../../../../sources/evolutionary-selection/ratcliff-2013/README.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/README.md",
+      "target": "../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ECOLOGICAL-SELECTION-INTEGRATION.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/README.md",
+      "target": "survival-results.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/README.md",
+      "target": "verification.json"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-08-the-theory-of-evolution-goal.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "target": "NONDUAL-METHOD.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "target": "GENERATIVE-SELECTION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "target": "LIANGZHI-EVOLUTION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELECTION-RECURRENCE-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-ASSOCIATION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ECOLOGICAL-SELECTION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "target": "NEW-POSSIBILITIES.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "target": "PRACTICAL-JUDGMENT.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELECTION-RECURRENCE-INTEGRATION.md#comparison-and-primary-evidence"
+    }
+  ],
+  "source_preservation": "all manifest sizes and hashes match",
+  "C14_paired_render": "matches",
+  "chain_check_observed": {
+    "status": "passed",
+    "entries": 76,
+    "reviewed_sources": 170,
+    "scope": "Index structure, links, source fingerprints and render; not scientific validity"
+  },
+  "current_chain_changes": {
+    "modified_sources": [],
+    "missing_sources": [],
+    "new_pages": [],
+    "removed_pages": []
+  },
+  "full_evolution_goal": "active, unfinished",
+  "errors": []
+}

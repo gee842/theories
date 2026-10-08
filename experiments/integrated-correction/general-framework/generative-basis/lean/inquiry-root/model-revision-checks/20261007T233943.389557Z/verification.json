@@ -1,0 +1,1962 @@
+{
+  "status": "passed",
+  "utc": "20261007T233943.389557Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "model-revision-checks/20261007T233943.389557Z",
+  "source_sha256": {
+    "KnowledgeCorrespondence": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+    "NormativeActivity": "15105e2caa43fb9b00f228343be16a7d729ff5a3da10c506d134d07417ae622c",
+    "StandardsBridge": "f061dbc44da5cdf11ac5ff79b3f89558c7e177b23b9f121c1048c16ed353a42a",
+    "FormedGrounds": "15764b3258f843dc967fdfabfd17cd5f47a6eb740a4aa5a3465ceae61dea17ba",
+    "SelectiveRevision": "68468cb99fb536d1fcfefff017cf3188337b5dc769ac1c5041811abfd4ad3fc0",
+    "SourceReliance": "ac7b685ca7e8b92f4869bc67d94494a71e90cef67c1a9d21eb0bb2c71b0f87f9",
+    "ModelRevision": "c372a2d306bda7409d132c404ce609f2618511407f38781d0daa725abb443055"
+  },
+  "checker_sha256": {
+    "check_model_revision.py": "88e29d2cf34e5c866eafa23f3be3a6c1acb2a3d92eb9d0c812230ba0333ec7a7",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Evidence-guided repair generation, retained-history filtering, discriminating test selection and finite correction cycle; scoped use and positive exhaustive finite-domain correspondence; retained measurement-location, grammar, support and transfer failures. No universal epistemic or ethical sufficiency.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "modules": [
+    {
+      "module": "KnowledgeCorrespondence",
+      "theorems": 20,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.SoundOn"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.ExactOn"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.Resolves"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.exact_is_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.exact_requires_resolution"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.decoder"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.resolution_admits_decoder"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.exact_possible_iff_resolves"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.conflicting_fibre_forces_abstention"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.sound_restricts_domain"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.refinement_preserves_resolution"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.preserved_record_preserves_exactness"
+        },
+        {
+          "kind": "structure",
+          "name": "Generative.KnowledgeCorrespondence.History"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.signal"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.target"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.allHistories"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.normal"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.reference"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.pairedEvidence"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.decodePair"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.direct"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.calibrated_pair_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.raw_signal_not_resolving"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.no_exact_raw_decoder"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.every_sound_raw_decoder_abstains"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.direct_exact_on_normal"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.direct_fails_on_expanded_domain"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.lucky_actual_correct"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.parity_record_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.double_reversal_exact"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.FixedContentSafe"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.true_content_trivially_safe"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.abstention_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.abstention_not_exact"
+        }
+      ],
+      "axiom_dependencies": {
+        "Generative.KnowledgeCorrespondence.SoundOn": [],
+        "Generative.KnowledgeCorrespondence.ExactOn": [],
+        "Generative.KnowledgeCorrespondence.Resolves": [],
+        "Generative.KnowledgeCorrespondence.exact_is_sound": [],
+        "Generative.KnowledgeCorrespondence.exact_requires_resolution": [],
+        "Generative.KnowledgeCorrespondence.decoder": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.KnowledgeCorrespondence.resolution_admits_decoder": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.KnowledgeCorrespondence.exact_possible_iff_resolves": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.KnowledgeCorrespondence.conflicting_fibre_forces_abstention": [],
+        "Generative.KnowledgeCorrespondence.sound_restricts_domain": [],
+        "Generative.KnowledgeCorrespondence.refinement_preserves_resolution": [],
+        "Generative.KnowledgeCorrespondence.preserved_record_preserves_exactness": [],
+        "Generative.KnowledgeCorrespondence.History": [],
+        "Generative.KnowledgeCorrespondence.signal": [],
+        "Generative.KnowledgeCorrespondence.target": [],
+        "Generative.KnowledgeCorrespondence.allHistories": [],
+        "Generative.KnowledgeCorrespondence.normal": [],
+        "Generative.KnowledgeCorrespondence.reference": [],
+        "Generative.KnowledgeCorrespondence.pairedEvidence": [],
+        "Generative.KnowledgeCorrespondence.decodePair": [],
+        "Generative.KnowledgeCorrespondence.direct": [],
+        "Generative.KnowledgeCorrespondence.calibrated_pair_exact": [],
+        "Generative.KnowledgeCorrespondence.raw_signal_not_resolving": [],
+        "Generative.KnowledgeCorrespondence.no_exact_raw_decoder": [],
+        "Generative.KnowledgeCorrespondence.every_sound_raw_decoder_abstains": [],
+        "Generative.KnowledgeCorrespondence.direct_exact_on_normal": [],
+        "Generative.KnowledgeCorrespondence.direct_fails_on_expanded_domain": [],
+        "Generative.KnowledgeCorrespondence.lucky_actual_correct": [],
+        "Generative.KnowledgeCorrespondence.parity_record_exact": [],
+        "Generative.KnowledgeCorrespondence.double_reversal_exact": [],
+        "Generative.KnowledgeCorrespondence.FixedContentSafe": [],
+        "Generative.KnowledgeCorrespondence.true_content_trivially_safe": [],
+        "Generative.KnowledgeCorrespondence.abstention_sound": [],
+        "Generative.KnowledgeCorrespondence.abstention_not_exact": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "NormativeActivity",
+      "theorems": 34,
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "Generative.NormativeActivity.Receipt"
+        },
+        {
+          "kind": "structure",
+          "name": "Generative.NormativeActivity.State"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.target"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.sample"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.memoryAnswer"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.inspect"
+        },
+        {
+          "kind": "inductive",
+          "name": "Generative.NormativeActivity.Event"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.step"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.run"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.view"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.ClosedLocal"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.ReceiptSound"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.ClosedDomain"
+        },
+        {
+          "kind": "abbrev",
+          "name": "Generative.NormativeActivity.CurrentCorrect"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.initial"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.learned"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.settled"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.changed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.run_append"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.exact_inspection"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.closed_inspection"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.exhausted_inspection"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.fresh_uptake_correct"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.step_preserves_receipt_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.history_preserves_receipt_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.closed_local_preserves"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.closed_local_view_congr"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.closed_history_preserves"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.closed_history_view_congr"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.learned_without_production"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.historical_truth_present_error"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.retained_distinction_does_not_select_production"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.same_production_can_have_different_judgment"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.reachable_closed_disagreement"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.closed_domain_not_resolving"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.sound_closed_answer_abstains"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.closed_continuations_remain_unresolved"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.reopening_and_inspection_repair"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.reopening_without_inspection_does_not_repair"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.exhausted_reopening_does_not_repair"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.suspension_retains_relation_and_record"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.Reachable"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.ReachableClosed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.reachable_continuation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.witnesses_reachable_closed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.exhausted_case_reachable"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.fresh_record_can_coexist_with_stale_judgment"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.reachable_closed_not_resolving"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.sound_on_reachable_closed_abstains"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.AcquiredAlong"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.step_receipt_origin"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.retained_receipt_has_origin"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.from_initial_receipt_is_acquired"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.adapt"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.adaptive_closed_invariant"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.adaptive_closed_cannot_resolve"
+        }
+      ],
+      "axiom_dependencies": {
+        "Generative.NormativeActivity.Receipt": [],
+        "Generative.NormativeActivity.State": [],
+        "Generative.NormativeActivity.target": [],
+        "Generative.NormativeActivity.sample": [],
+        "Generative.NormativeActivity.memoryAnswer": [],
+        "Generative.NormativeActivity.inspect": [],
+        "Generative.NormativeActivity.Event": [],
+        "Generative.NormativeActivity.step": [],
+        "Generative.NormativeActivity.run": [],
+        "Generative.NormativeActivity.view": [],
+        "Generative.NormativeActivity.ClosedLocal": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.ReceiptSound": [],
+        "Generative.NormativeActivity.ClosedDomain": [],
+        "Generative.NormativeActivity.CurrentCorrect": [],
+        "Generative.NormativeActivity.initial": [],
+        "Generative.NormativeActivity.learned": [],
+        "Generative.NormativeActivity.settled": [],
+        "Generative.NormativeActivity.changed": [],
+        "Generative.NormativeActivity.run_append": [],
+        "Generative.NormativeActivity.exact_inspection": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.NormativeActivity.closed_inspection": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.exhausted_inspection": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.fresh_uptake_correct": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.step_preserves_receipt_sound": [],
+        "Generative.NormativeActivity.history_preserves_receipt_sound": [],
+        "Generative.NormativeActivity.closed_local_preserves": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.closed_local_view_congr": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.closed_history_preserves": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.closed_history_view_congr": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.learned_without_production": [],
+        "Generative.NormativeActivity.historical_truth_present_error": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.retained_distinction_does_not_select_production": [],
+        "Generative.NormativeActivity.same_production_can_have_different_judgment": [],
+        "Generative.NormativeActivity.reachable_closed_disagreement": [],
+        "Generative.NormativeActivity.closed_domain_not_resolving": [],
+        "Generative.NormativeActivity.sound_closed_answer_abstains": [],
+        "Generative.NormativeActivity.closed_continuations_remain_unresolved": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.reopening_and_inspection_repair": [],
+        "Generative.NormativeActivity.reopening_without_inspection_does_not_repair": [],
+        "Generative.NormativeActivity.exhausted_reopening_does_not_repair": [],
+        "Generative.NormativeActivity.suspension_retains_relation_and_record": [],
+        "Generative.NormativeActivity.Reachable": [],
+        "Generative.NormativeActivity.ReachableClosed": [],
+        "Generative.NormativeActivity.reachable_continuation": [],
+        "Generative.NormativeActivity.witnesses_reachable_closed": [],
+        "Generative.NormativeActivity.exhausted_case_reachable": [],
+        "Generative.NormativeActivity.fresh_record_can_coexist_with_stale_judgment": [],
+        "Generative.NormativeActivity.reachable_closed_not_resolving": [],
+        "Generative.NormativeActivity.sound_on_reachable_closed_abstains": [],
+        "Generative.NormativeActivity.AcquiredAlong": [],
+        "Generative.NormativeActivity.step_receipt_origin": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.retained_receipt_has_origin": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.from_initial_receipt_is_acquired": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.adapt": [],
+        "Generative.NormativeActivity.adaptive_closed_invariant": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.adaptive_closed_cannot_resolve": [
+          "propext"
+        ]
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "StandardsBridge",
+      "theorems": 26,
+      "declarations": [
+        {
+          "kind": "abbrev",
+          "name": "Generative.StandardsBridge.Observation"
+        },
+        {
+          "kind": "abbrev",
+          "name": "Generative.StandardsBridge.Rule"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.Fits"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.revise"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.learn"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.answer"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.Safe"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.Maximal"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.mem_revise"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.mem_learn"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.actual_rule_retained"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.eliminated_rule_has_counterevidence"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.repetition_does_not_change_candidates"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.answer_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.answer_safe"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.safe_definite_requires_agreement"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.answer_maximal"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.unique_maximal_safe"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.known_rule_makes_answer_correct"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.acquire"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.acquired_evidence_faithful"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.acquired_answers_correct"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.transport"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.answer_transport"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.learning_transport"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.wrong_reencoding_breaks_transfer"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.repertoire"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.bool_repertoire_complete"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.full_bool_repertoire_correct"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.oneSample"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.twoSamples"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.before_acquisition_abstains"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.one_sample_leaves_other_case_unsettled"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.contrasting_acquisition_settles_both"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.learned_response_differs_from_last_report"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.repeated_same_case_does_not_settle_other"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.insufficient_support_retains_ambiguity"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.wrong_model_class_can_be_confidently_wrong"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.inconsistent_evidence_yields_no_answer"
+        }
+      ],
+      "axiom_dependencies": {
+        "Generative.StandardsBridge.Observation": [],
+        "Generative.StandardsBridge.Rule": [],
+        "Generative.StandardsBridge.Fits": [],
+        "Generative.StandardsBridge.revise": [],
+        "Generative.StandardsBridge.learn": [],
+        "Generative.StandardsBridge.answer": [],
+        "Generative.StandardsBridge.Safe": [],
+        "Generative.StandardsBridge.Maximal": [],
+        "Generative.StandardsBridge.mem_revise": [
+          "propext"
+        ],
+        "Generative.StandardsBridge.mem_learn": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.actual_rule_retained": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.eliminated_rule_has_counterevidence": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.repetition_does_not_change_candidates": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.answer_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.answer_safe": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.safe_definite_requires_agreement": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.answer_maximal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.unique_maximal_safe": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.known_rule_makes_answer_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.acquire": [],
+        "Generative.StandardsBridge.acquired_evidence_faithful": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.acquired_answers_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.transport": [],
+        "Generative.StandardsBridge.answer_transport": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.learning_transport": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.wrong_reencoding_breaks_transfer": [],
+        "Generative.StandardsBridge.repertoire": [],
+        "Generative.StandardsBridge.bool_repertoire_complete": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.full_bool_repertoire_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.oneSample": [],
+        "Generative.StandardsBridge.twoSamples": [],
+        "Generative.StandardsBridge.before_acquisition_abstains": [],
+        "Generative.StandardsBridge.one_sample_leaves_other_case_unsettled": [],
+        "Generative.StandardsBridge.contrasting_acquisition_settles_both": [],
+        "Generative.StandardsBridge.learned_response_differs_from_last_report": [],
+        "Generative.StandardsBridge.repeated_same_case_does_not_settle_other": [],
+        "Generative.StandardsBridge.insufficient_support_retains_ambiguity": [],
+        "Generative.StandardsBridge.wrong_model_class_can_be_confidently_wrong": [],
+        "Generative.StandardsBridge.inconsistent_evidence_yields_no_answer": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "FormedGrounds",
+      "theorems": 27,
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "Generative.FormedGrounds.Evidence"
+        },
+        {
+          "kind": "structure",
+          "name": "Generative.FormedGrounds.State"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.encode"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.observations"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.hypotheses"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.interpret"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.enabled"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.contact"
+        },
+        {
+          "kind": "inductive",
+          "name": "Generative.FormedGrounds.Event"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.step"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.run"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.initial"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.training"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.trained"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.issued"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.mistaken"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.corrected"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.AcquiredAlong"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.run_append"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.encode_involutive"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.interpretation_depends_on_acquired_view"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.step_evidence_origin"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.retained_evidence_origin"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.from_initial_evidence_is_acquired"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.contact_has_physical_correspondence"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.acquired_evidence_preserves_relation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.all_reachable_evidence_fits"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.every_reachable_faithful_interpretation_is_correct"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.before_calibration_no_definite_interpretation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.one_contact_leaves_unseen_signal_unsettled"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.training_forms_decoder"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.training_uses_real_contrasts"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.token_shape_does_not_fix_content"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.joint_recoding_preserves_interpreted_content"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.learned_interpretation_is_used"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.same_formed_interpretation_can_be_false"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.new_record_without_review_does_not_correct"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.acquired_review_refutes_and_corrects"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.review_preserves_meaning_and_compared_relation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.correct_prior_judgment_is_confirmed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.closed_review_cannot_claim_confirmation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.exhausted_review_does_not_acquire_a_ground"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.reward_alone_cannot_repair_interpretation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.full_history_is_one_reachable_execution"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.later_change_retains_review_but_defeats_current_accuracy"
+        }
+      ],
+      "axiom_dependencies": {
+        "Generative.FormedGrounds.Evidence": [],
+        "Generative.FormedGrounds.State": [],
+        "Generative.FormedGrounds.encode": [],
+        "Generative.FormedGrounds.observations": [],
+        "Generative.FormedGrounds.hypotheses": [],
+        "Generative.FormedGrounds.interpret": [],
+        "Generative.FormedGrounds.enabled": [],
+        "Generative.FormedGrounds.contact": [],
+        "Generative.FormedGrounds.Event": [],
+        "Generative.FormedGrounds.step": [],
+        "Generative.FormedGrounds.run": [],
+        "Generative.FormedGrounds.initial": [],
+        "Generative.FormedGrounds.training": [],
+        "Generative.FormedGrounds.trained": [],
+        "Generative.FormedGrounds.issued": [],
+        "Generative.FormedGrounds.mistaken": [],
+        "Generative.FormedGrounds.corrected": [],
+        "Generative.FormedGrounds.AcquiredAlong": [],
+        "Generative.FormedGrounds.run_append": [],
+        "Generative.FormedGrounds.encode_involutive": [],
+        "Generative.FormedGrounds.interpretation_depends_on_acquired_view": [
+          "propext"
+        ],
+        "Generative.FormedGrounds.step_evidence_origin": [
+          "propext"
+        ],
+        "Generative.FormedGrounds.retained_evidence_origin": [
+          "propext"
+        ],
+        "Generative.FormedGrounds.from_initial_evidence_is_acquired": [
+          "propext"
+        ],
+        "Generative.FormedGrounds.contact_has_physical_correspondence": [],
+        "Generative.FormedGrounds.acquired_evidence_preserves_relation": [],
+        "Generative.FormedGrounds.all_reachable_evidence_fits": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.FormedGrounds.every_reachable_faithful_interpretation_is_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.FormedGrounds.before_calibration_no_definite_interpretation": [],
+        "Generative.FormedGrounds.one_contact_leaves_unseen_signal_unsettled": [],
+        "Generative.FormedGrounds.training_forms_decoder": [],
+        "Generative.FormedGrounds.training_uses_real_contrasts": [],
+        "Generative.FormedGrounds.token_shape_does_not_fix_content": [],
+        "Generative.FormedGrounds.joint_recoding_preserves_interpreted_content": [],
+        "Generative.FormedGrounds.learned_interpretation_is_used": [],
+        "Generative.FormedGrounds.same_formed_interpretation_can_be_false": [],
+        "Generative.FormedGrounds.new_record_without_review_does_not_correct": [],
+        "Generative.FormedGrounds.acquired_review_refutes_and_corrects": [],
+        "Generative.FormedGrounds.review_preserves_meaning_and_compared_relation": [],
+        "Generative.FormedGrounds.correct_prior_judgment_is_confirmed": [],
+        "Generative.FormedGrounds.closed_review_cannot_claim_confirmation": [],
+        "Generative.FormedGrounds.exhausted_review_does_not_acquire_a_ground": [],
+        "Generative.FormedGrounds.reward_alone_cannot_repair_interpretation": [],
+        "Generative.FormedGrounds.full_history_is_one_reachable_execution": [],
+        "Generative.FormedGrounds.later_change_retains_review_but_defeats_current_accuracy": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "SelectiveRevision",
+      "theorems": 16,
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "Generative.SelectiveRevision.State"
+        },
+        {
+          "kind": "inductive",
+          "name": "Generative.SelectiveRevision.Event"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SelectiveRevision.step"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SelectiveRevision.run"
+        },
+        {
+          "kind": "inductive",
+          "name": "Generative.SelectiveRevision.Ground"
+        },
+        {
+          "kind": "inductive",
+          "name": "Generative.SelectiveRevision.Choice"
+        },
+        {
+          "kind": "structure",
+          "name": "Generative.SelectiveRevision.Outcome"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SelectiveRevision.usableReading"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SelectiveRevision.combine"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SelectiveRevision.choose"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SelectiveRevision.outcome"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SelectiveRevision.rails"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SelectiveRevision.conventional"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SelectiveRevision.prepared"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SelectiveRevision.learned_reading"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SelectiveRevision.prepared_outcome"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SelectiveRevision.purpose_preserves_assessment"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SelectiveRevision.withdrawal_retains_claim_records"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SelectiveRevision.sole_ground_withdrawn"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SelectiveRevision.redundant_ground_survives"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SelectiveRevision.contrary_reports_conflict"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SelectiveRevision.withdrawing_conflicting_ground"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SelectiveRevision.changed_purpose_changes_choice"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SelectiveRevision.joint_recoding_preserves_outcome"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SelectiveRevision.rails_equal_combine"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SelectiveRevision.conventional_matches_all_states"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SelectiveRevision.conventional_matches_every_history"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SelectiveRevision.suspension_hides_different_grounds"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SelectiveRevision.copiedMistake"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SelectiveRevision.supported_copied_mistake"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SelectiveRevision.rawShape"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SelectiveRevision.raw_shape_fails_recoding"
+        }
+      ],
+      "axiom_dependencies": {
+        "Generative.SelectiveRevision.State": [],
+        "Generative.SelectiveRevision.Event": [],
+        "Generative.SelectiveRevision.step": [],
+        "Generative.SelectiveRevision.run": [],
+        "Generative.SelectiveRevision.Ground": [],
+        "Generative.SelectiveRevision.Choice": [],
+        "Generative.SelectiveRevision.Outcome": [],
+        "Generative.SelectiveRevision.usableReading": [],
+        "Generative.SelectiveRevision.combine": [],
+        "Generative.SelectiveRevision.choose": [],
+        "Generative.SelectiveRevision.outcome": [],
+        "Generative.SelectiveRevision.rails": [],
+        "Generative.SelectiveRevision.conventional": [],
+        "Generative.SelectiveRevision.prepared": [],
+        "Generative.SelectiveRevision.learned_reading": [],
+        "Generative.SelectiveRevision.prepared_outcome": [
+          "propext"
+        ],
+        "Generative.SelectiveRevision.purpose_preserves_assessment": [],
+        "Generative.SelectiveRevision.withdrawal_retains_claim_records": [],
+        "Generative.SelectiveRevision.sole_ground_withdrawn": [
+          "propext"
+        ],
+        "Generative.SelectiveRevision.redundant_ground_survives": [
+          "propext"
+        ],
+        "Generative.SelectiveRevision.contrary_reports_conflict": [
+          "propext"
+        ],
+        "Generative.SelectiveRevision.withdrawing_conflicting_ground": [
+          "propext"
+        ],
+        "Generative.SelectiveRevision.changed_purpose_changes_choice": [
+          "propext"
+        ],
+        "Generative.SelectiveRevision.joint_recoding_preserves_outcome": [
+          "propext"
+        ],
+        "Generative.SelectiveRevision.rails_equal_combine": [],
+        "Generative.SelectiveRevision.conventional_matches_all_states": [
+          "propext"
+        ],
+        "Generative.SelectiveRevision.conventional_matches_every_history": [
+          "propext"
+        ],
+        "Generative.SelectiveRevision.suspension_hides_different_grounds": [
+          "propext"
+        ],
+        "Generative.SelectiveRevision.copiedMistake": [],
+        "Generative.SelectiveRevision.supported_copied_mistake": [],
+        "Generative.SelectiveRevision.rawShape": [],
+        "Generative.SelectiveRevision.raw_shape_fails_recoding": [
+          "propext"
+        ]
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "SourceReliance",
+      "theorems": 26,
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "Generative.SourceReliance.Route"
+        },
+        {
+          "kind": "structure",
+          "name": "Generative.SourceReliance.Probe"
+        },
+        {
+          "kind": "abbrev",
+          "name": "Generative.SourceReliance.Reports"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SourceReliance.emit"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SourceReliance.repertoire"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SourceReliance.raw"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SourceReliance.decode"
+        },
+        {
+          "kind": "abbrev",
+          "name": "Generative.SourceReliance.Record"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SourceReliance.acquire"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SourceReliance.fits"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SourceReliance.learn"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SourceReliance.baseline"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SourceReliance.localProbe"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SourceReliance.commonProbe"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SourceReliance.protocol"
+        },
+        {
+          "kind": "abbrev",
+          "name": "Generative.SourceReliance.Faults"
+        },
+        {
+          "kind": "structure",
+          "name": "Generative.SourceReliance.World"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SourceReliance.view"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SourceReliance.enumerate"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SourceReliance.compatible"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SourceReliance.consensus"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SourceReliance.rely"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SourceReliance.clean"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SourceReliance.localUncertain"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SourceReliance.allFaults"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SourceReliance.acquired_decode"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SourceReliance.acquired_record_form"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SourceReliance.actual_route_retained"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SourceReliance.protocol_identifies_route"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SourceReliance.baseline_does_not_identify"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SourceReliance.local_probe_leaves_common_vulnerability"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SourceReliance.duplicated_records_add_no_constraint"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SourceReliance.recoding_preserves_acquired_routes"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SourceReliance.mem_enumerate"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SourceReliance.actual_world_compatible"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SourceReliance.consensus_correct_for_member"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SourceReliance.reliance_correct_with_covered_world"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SourceReliance.acquired_reliance_correct"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SourceReliance.separate_second_survives_declared_faults"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SourceReliance.copy_can_be_reliable_when_route_is_clean"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SourceReliance.copied_agreement_under_local_uncertainty"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SourceReliance.uncopied_agreement_under_shared_uncertainty"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SourceReliance.partial_acquisition_preserves_relevant_uncertainty"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SourceReliance.common_probe_enables_scoped_reliance"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SourceReliance.copied_pair_has_opposite_compatible_targets"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SourceReliance.no_report_only_exact_answer_on_copied_pair"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SourceReliance.jointFailure"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.SourceReliance.jointRecords"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SourceReliance.omitted_joint_failure_matches_training"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SourceReliance.omitted_joint_failure_defeats_inference"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SourceReliance.joint_challenge_reopens_model_family"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SourceReliance.empty_family_does_not_certify"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.SourceReliance.joint_challenge_leaves_observed_history_unchanged"
+        }
+      ],
+      "axiom_dependencies": {
+        "Generative.SourceReliance.Route": [],
+        "Generative.SourceReliance.Probe": [],
+        "Generative.SourceReliance.Reports": [],
+        "Generative.SourceReliance.emit": [],
+        "Generative.SourceReliance.repertoire": [],
+        "Generative.SourceReliance.raw": [],
+        "Generative.SourceReliance.decode": [],
+        "Generative.SourceReliance.Record": [],
+        "Generative.SourceReliance.acquire": [],
+        "Generative.SourceReliance.fits": [],
+        "Generative.SourceReliance.learn": [],
+        "Generative.SourceReliance.baseline": [],
+        "Generative.SourceReliance.localProbe": [],
+        "Generative.SourceReliance.commonProbe": [],
+        "Generative.SourceReliance.protocol": [],
+        "Generative.SourceReliance.Faults": [],
+        "Generative.SourceReliance.World": [],
+        "Generative.SourceReliance.view": [],
+        "Generative.SourceReliance.enumerate": [],
+        "Generative.SourceReliance.compatible": [],
+        "Generative.SourceReliance.consensus": [],
+        "Generative.SourceReliance.rely": [],
+        "Generative.SourceReliance.clean": [],
+        "Generative.SourceReliance.localUncertain": [],
+        "Generative.SourceReliance.allFaults": [],
+        "Generative.SourceReliance.acquired_decode": [
+          "Quot.sound"
+        ],
+        "Generative.SourceReliance.acquired_record_form": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.SourceReliance.actual_route_retained": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.SourceReliance.protocol_identifies_route": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.SourceReliance.baseline_does_not_identify": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.SourceReliance.local_probe_leaves_common_vulnerability": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.SourceReliance.duplicated_records_add_no_constraint": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.SourceReliance.recoding_preserves_acquired_routes": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.SourceReliance.mem_enumerate": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.SourceReliance.actual_world_compatible": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.SourceReliance.consensus_correct_for_member": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.SourceReliance.reliance_correct_with_covered_world": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.SourceReliance.acquired_reliance_correct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.SourceReliance.separate_second_survives_declared_faults": [],
+        "Generative.SourceReliance.copy_can_be_reliable_when_route_is_clean": [],
+        "Generative.SourceReliance.copied_agreement_under_local_uncertainty": [],
+        "Generative.SourceReliance.uncopied_agreement_under_shared_uncertainty": [],
+        "Generative.SourceReliance.partial_acquisition_preserves_relevant_uncertainty": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.SourceReliance.common_probe_enables_scoped_reliance": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.SourceReliance.copied_pair_has_opposite_compatible_targets": [],
+        "Generative.SourceReliance.no_report_only_exact_answer_on_copied_pair": [],
+        "Generative.SourceReliance.jointFailure": [],
+        "Generative.SourceReliance.jointRecords": [],
+        "Generative.SourceReliance.omitted_joint_failure_matches_training": [],
+        "Generative.SourceReliance.omitted_joint_failure_defeats_inference": [],
+        "Generative.SourceReliance.joint_challenge_reopens_model_family": [],
+        "Generative.SourceReliance.empty_family_does_not_certify": [],
+        "Generative.SourceReliance.joint_challenge_leaves_observed_history_unchanged": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "ModelRevision",
+      "theorems": 27,
+      "declarations": [
+        {
+          "kind": "abbrev",
+          "name": "Generative.ModelRevision.Probe"
+        },
+        {
+          "kind": "abbrev",
+          "name": "Generative.ModelRevision.Reports"
+        },
+        {
+          "kind": "abbrev",
+          "name": "Generative.ModelRevision.Evidence"
+        },
+        {
+          "kind": "abbrev",
+          "name": "Generative.ModelRevision.Law"
+        },
+        {
+          "kind": "inductive",
+          "name": "Generative.ModelRevision.Feature"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.ModelRevision.feature"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.ModelRevision.terms"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.ModelRevision.base"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.ModelRevision.difference"
+        },
+        {
+          "kind": "structure",
+          "name": "Generative.ModelRevision.Repair"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.ModelRevision.predict"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.ModelRevision.acquire"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.ModelRevision.firstMismatch"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.ModelRevision.proposals"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.ModelRevision.fits"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.ModelRevision.retain"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.ModelRevision.generate"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.ModelRevision.disagreement"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.ModelRevision.selectProbe"
+        },
+        {
+          "kind": "structure",
+          "name": "Generative.ModelRevision.State"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.ModelRevision.start"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.ModelRevision.nextInquiry"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.ModelRevision.advance"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.ModelRevision.investigate"
+        },
+        {
+          "kind": "inductive",
+          "name": "Generative.ModelRevision.Status"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.ModelRevision.status"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.ModelRevision.discovery"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.ModelRevision.contrast"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.ModelRevision.allProbes"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.ModelRevision.discoveryHistory"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.ModelRevision.interaction"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.ModelRevision.exceptionPatch"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.ModelRevision.finished"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ModelRevision.decoded_measurement_preserves_record"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ModelRevision.accepted_repair_fits_history"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ModelRevision.faithful_candidate_survives"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ModelRevision.every_probe_is_in_domain"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ModelRevision.exhaustive_acceptance_establishes_correspondence"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ModelRevision.advance_preserves_old_history"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ModelRevision.acquisition_locates_actual_discrepancy"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ModelRevision.generated_residual_targets_second_report"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ModelRevision.failure_generates_competing_repairs"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ModelRevision.both_repairs_fit_discovery"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ModelRevision.disagreement_selects_unseen_contrast"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ModelRevision.contrast_distinguishes_repairs"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ModelRevision.repetition_cannot_choose_between_repairs"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ModelRevision.complete_cycle_selects_interaction"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ModelRevision.complete_cycle_records_all_probes"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ModelRevision.corrected_law_matches_joint_failure"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ModelRevision.completed_cycle_has_earned_correspondence"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ModelRevision.no_support_preserves_unfinished_status"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ModelRevision.finished_status_is_scoped"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ModelRevision.unavailable_probe_is_not_global_settlement"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ModelRevision.agreement_alone_misses_a_bad_single_repair"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ModelRevision.independent_audit_exposes_insufficient_grammar"
+        },
+        {
+          "kind": "abbrev",
+          "name": "Generative.ModelRevision.LiveCase"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.ModelRevision.liveCases"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.ModelRevision.rely"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ModelRevision.corrected_use_retains_relevant_uncertainty"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ModelRevision.controlled_use_returns_correct_answer"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.ModelRevision.shifted"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ModelRevision.full_old_domain_does_not_establish_new_setting"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.ModelRevision.alteredRecording"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ModelRevision.recording_alternative_preserves_all_observations"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ModelRevision.mechanism_location_requires_another_observation"
+        }
+      ],
+      "axiom_dependencies": {
+        "Generative.ModelRevision.Probe": [],
+        "Generative.ModelRevision.Reports": [],
+        "Generative.ModelRevision.Evidence": [],
+        "Generative.ModelRevision.Law": [],
+        "Generative.ModelRevision.Feature": [],
+        "Generative.ModelRevision.feature": [],
+        "Generative.ModelRevision.terms": [],
+        "Generative.ModelRevision.base": [],
+        "Generative.ModelRevision.difference": [],
+        "Generative.ModelRevision.Repair": [],
+        "Generative.ModelRevision.predict": [],
+        "Generative.ModelRevision.acquire": [],
+        "Generative.ModelRevision.firstMismatch": [],
+        "Generative.ModelRevision.proposals": [],
+        "Generative.ModelRevision.fits": [],
+        "Generative.ModelRevision.retain": [],
+        "Generative.ModelRevision.generate": [],
+        "Generative.ModelRevision.disagreement": [],
+        "Generative.ModelRevision.selectProbe": [],
+        "Generative.ModelRevision.State": [],
+        "Generative.ModelRevision.start": [],
+        "Generative.ModelRevision.nextInquiry": [],
+        "Generative.ModelRevision.advance": [],
+        "Generative.ModelRevision.investigate": [],
+        "Generative.ModelRevision.Status": [],
+        "Generative.ModelRevision.status": [],
+        "Generative.ModelRevision.discovery": [],
+        "Generative.ModelRevision.contrast": [],
+        "Generative.ModelRevision.allProbes": [],
+        "Generative.ModelRevision.discoveryHistory": [],
+        "Generative.ModelRevision.interaction": [],
+        "Generative.ModelRevision.exceptionPatch": [],
+        "Generative.ModelRevision.finished": [],
+        "Generative.ModelRevision.decoded_measurement_preserves_record": [
+          "Quot.sound"
+        ],
+        "Generative.ModelRevision.accepted_repair_fits_history": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.ModelRevision.faithful_candidate_survives": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.ModelRevision.every_probe_is_in_domain": [
+          "propext"
+        ],
+        "Generative.ModelRevision.exhaustive_acceptance_establishes_correspondence": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.ModelRevision.advance_preserves_old_history": [
+          "propext"
+        ],
+        "Generative.ModelRevision.acquisition_locates_actual_discrepancy": [],
+        "Generative.ModelRevision.generated_residual_targets_second_report": [],
+        "Generative.ModelRevision.failure_generates_competing_repairs": [],
+        "Generative.ModelRevision.both_repairs_fit_discovery": [],
+        "Generative.ModelRevision.disagreement_selects_unseen_contrast": [
+          "propext"
+        ],
+        "Generative.ModelRevision.contrast_distinguishes_repairs": [],
+        "Generative.ModelRevision.repetition_cannot_choose_between_repairs": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.ModelRevision.complete_cycle_selects_interaction": [],
+        "Generative.ModelRevision.complete_cycle_records_all_probes": [],
+        "Generative.ModelRevision.corrected_law_matches_joint_failure": [],
+        "Generative.ModelRevision.completed_cycle_has_earned_correspondence": [
+          "propext"
+        ],
+        "Generative.ModelRevision.no_support_preserves_unfinished_status": [],
+        "Generative.ModelRevision.finished_status_is_scoped": [],
+        "Generative.ModelRevision.unavailable_probe_is_not_global_settlement": [],
+        "Generative.ModelRevision.agreement_alone_misses_a_bad_single_repair": [],
+        "Generative.ModelRevision.independent_audit_exposes_insufficient_grammar": [],
+        "Generative.ModelRevision.LiveCase": [],
+        "Generative.ModelRevision.liveCases": [],
+        "Generative.ModelRevision.rely": [],
+        "Generative.ModelRevision.corrected_use_retains_relevant_uncertainty": [],
+        "Generative.ModelRevision.controlled_use_returns_correct_answer": [],
+        "Generative.ModelRevision.shifted": [],
+        "Generative.ModelRevision.full_old_domain_does_not_establish_new_setting": [],
+        "Generative.ModelRevision.alteredRecording": [],
+        "Generative.ModelRevision.recording_alternative_preserves_all_observations": [],
+        "Generative.ModelRevision.mechanism_location_requires_another_observation": []
+      },
+      "kernel_checked": true
+    }
+  ],
+  "artifact_sha256": {
+    "FormedGrounds.lean": "15764b3258f843dc967fdfabfd17cd5f47a6eb740a4aa5a3465ceae61dea17ba",
+    "FormedGrounds.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FormedGroundsAxiomAudit.lean": "2af106ee8773c7d50760ec54e635afb61c7dfbee99213671c5b45fd5ca10e0f9",
+    "FormedGroundsAxiomAudit.log": "fd611ab17a7183bedcf5ac06a798925b8212f43ef681fabcc0abfb91e8c4df3c",
+    "FormedGroundsSignatures.lean": "da3de4ccee20c53a5596e518b6ffcf8abf8a842cec1ca75e91d1f48bbbb7a017",
+    "FormedGroundsSignatures.log": "578eb4ecb31900666ba461d9478922beef5daeed500fc808daab41d4b5e4f15b",
+    "KnowledgeCorrespondence.lean": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+    "KnowledgeCorrespondence.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "KnowledgeCorrespondenceAxiomAudit.lean": "17a0077b3e78d738bf2d0be19d10e280b15db7dafef91e2b612d9472a15bbd1b",
+    "KnowledgeCorrespondenceAxiomAudit.log": "c377f105cfd06f0e0910406603df50a3a522626e83669b2e8308f8018e2c7f21",
+    "KnowledgeCorrespondenceSignatures.lean": "055b1e508f41e4b55b8cab7943c941eb25ff15bcb01ee7283c62605cbf932b13",
+    "KnowledgeCorrespondenceSignatures.log": "81471fa26e1d60c7def30cda3725076ec4f879b4f97ceb692743f08e198eedf1",
+    "ModelRevision.lean": "c372a2d306bda7409d132c404ce609f2618511407f38781d0daa725abb443055",
+    "ModelRevision.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ModelRevisionAxiomAudit.lean": "72ad496538388deed4d9fc8343b8f73388ef0811cb6370baebea2a162c5d8520",
+    "ModelRevisionAxiomAudit.log": "fb1d4a6741ee4b85afab0a84deff6e91cc6d3b833f39c63ea743243a32296c93",
+    "ModelRevisionSignatures.lean": "3125a383bfb2b590181fd06251946304923a6c7adb190d8fe7983714b21e8ef6",
+    "ModelRevisionSignatures.log": "dddfa577a90df3e348c55d6525ec9716e8adae77203cd2ed140f8bb2986b47be",
+    "NormativeActivity.lean": "15105e2caa43fb9b00f228343be16a7d729ff5a3da10c506d134d07417ae622c",
+    "NormativeActivity.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "NormativeActivityAxiomAudit.lean": "6ab05e5e305732620b64e33367375942293cc36b3dd678537de16a24efbe3735",
+    "NormativeActivityAxiomAudit.log": "a46082bf5b466328452aaad71b64bafe72fd079a2f3c95b0564ab2f5e80bfa61",
+    "NormativeActivitySignatures.lean": "31a72d24ac5b5b406e0412148c388130ed3d3ffa203978751338ed337f5f7625",
+    "NormativeActivitySignatures.log": "961317ee7ae0d4dcdfc9fc6e4cf40e7b34b6b3601fce985fb099c3b43b6fb75b",
+    "SelectiveRevision.lean": "68468cb99fb536d1fcfefff017cf3188337b5dc769ac1c5041811abfd4ad3fc0",
+    "SelectiveRevision.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "SelectiveRevisionAxiomAudit.lean": "e9d4d969193df209f0a49f971c13ae4cdb2548696453796c6fd853f6ab12c0b7",
+    "SelectiveRevisionAxiomAudit.log": "793d801811374b602b8d85b0733f8b04c64834cf8d84f3fb465942815def33ad",
+    "SelectiveRevisionSignatures.lean": "c4fb9854907e7c639e240a1764a5f5f89d5fa5d0fd7a66b2d31d6140c4a178e9",
+    "SelectiveRevisionSignatures.log": "60d3177623e06fb42130eebe9ef4b3cf36335a4f77a0789d44bc98426e812505",
+    "SourceReliance.lean": "ac7b685ca7e8b92f4869bc67d94494a71e90cef67c1a9d21eb0bb2c71b0f87f9",
+    "SourceReliance.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "SourceRelianceAxiomAudit.lean": "908a5e7105ac06c9ca365cfbc642c7f32749810c9f3ab6b87cf076a9efbfe62d",
+    "SourceRelianceAxiomAudit.log": "4f2b9b4716d8ddcecf280620bda85e97874a5562ddb155dd83d4c8a87c5576dc",
+    "SourceRelianceSignatures.lean": "053c02c8b82892f664c21bf22875e3d4e78a1a3d4239b883dc6a615a2ac7d3a3",
+    "SourceRelianceSignatures.log": "76673042699929c27ef7d6d6f1047a52a1dda3653018dc8f6aa44bbe71b26f81",
+    "StandardsBridge.lean": "f061dbc44da5cdf11ac5ff79b3f89558c7e177b23b9f121c1048c16ed353a42a",
+    "StandardsBridge.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "StandardsBridgeAxiomAudit.lean": "0eb43ace08d209058824387c1bd826f05b131774d7393eaf3a641e846925dd99",
+    "StandardsBridgeAxiomAudit.log": "0a5fa190c7e00d7ebf6b96fb1bb80a052e47297c9df86f6667131b30dc8a6566",
+    "StandardsBridgeSignatures.lean": "56035d9e8a2592b7eb8071581caae089d8a9ac7f5b548f9130b35215bafa7d0d",
+    "StandardsBridgeSignatures.log": "c9e4b5bfdcea03db69722fc7d7d431662165d594f654b3e02f55ca7204181766",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_model_revision.py": "88e29d2cf34e5c866eafa23f3be3a6c1acb2a3d92eb9d0c812230ba0333ec7a7",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

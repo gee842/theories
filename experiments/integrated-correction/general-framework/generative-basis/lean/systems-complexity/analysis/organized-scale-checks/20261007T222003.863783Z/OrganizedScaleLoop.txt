@@ -1,0 +1,26 @@
+'OrganizedScaleLoop.relay_product' depends on axioms: [propext]
+'OrganizedScaleLoop.relay_append' does not depend on any axioms
+'OrganizedScaleLoop.severed_route' depends on axioms: [propext]
+'OrganizedScaleLoop.grouped_route' depends on axioms: [propext]
+'OrganizedScaleLoop.chosen_step_commutes' does not depend on any axioms
+'OrganizedScaleLoop.chosen_history_three_views' does not depend on any axioms
+'OrganizedScaleLoop.material_step' depends on axioms: [propext, Quot.sound]
+'OrganizedScaleLoop.work_step' depends on axioms: [propext, Quot.sound]
+'OrganizedScaleLoop.finite_history_accounts' depends on axioms: [propext, Quot.sound]
+'OrganizedScaleLoop.same_core_history' does not depend on any axioms
+'OrganizedScaleLoop.concrete_view_commutes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrganizedScaleLoop.concrete_view_all_histories' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrganizedScaleLoop.acquisition_amount' depends on axioms: [propext]
+'OrganizedScaleLoop.unsupported_acquisition' depends on axioms: [propext]
+'OrganizedScaleLoop.acquisition_withdrawal' depends on axioms: [propext, Quot.sound]
+'OrganizedScaleLoop.withdrawal_changes_next_exposure' depends on axioms: [propext, Quot.sound]
+'OrganizedScaleLoop.disrupted_acquisition' depends on axioms: [propext]
+'OrganizedScaleLoop.joined_endpoint' does not depend on any axioms
+'OrganizedScaleLoop.disrupted_endpoint' does not depend on any axioms
+'OrganizedScaleLoop.history_changes_choice' does not depend on any axioms
+'OrganizedScaleLoop.no_memoryless_choice_readout' does not depend on any axioms
+'OrganizedScaleLoop.same_organ_amount_distinct_signal' does not depend on any axioms
+'OrganizedScaleLoop.no_amount_only_acquisition' does not depend on any axioms
+'OrganizedScaleLoop.support_can_prevent_enactment' does not depend on any axioms
+'OrganizedScaleLoop.release_changes_shared_conditions' does not depend on any axioms
+'OrganizedScaleLoop.changed_context_reopens_exposure' does not depend on any axioms

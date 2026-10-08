@@ -1,0 +1,14 @@
+'Generative.ExplanatoryUniqueness.equal_codes_same_answers' does not depend on any axioms
+'Generative.ExplanatoryUniqueness.reduced_exact_kernel' does not depend on any axioms
+'Generative.ExplanatoryUniqueness.reduced_presentations_same_kernel' does not depend on any axioms
+'Generative.ExplanatoryUniqueness.matches_total_on_used' does not depend on any axioms
+'Generative.ExplanatoryUniqueness.matches_functional' does not depend on any axioms
+'Generative.ExplanatoryUniqueness.matches_inverse_functional' does not depend on any axioms
+'Generative.ExplanatoryUniqueness.matches_iff_equal_answers' does not depend on any axioms
+'Generative.ExplanatoryUniqueness.unique_matching' does not depend on any axioms
+'Generative.ExplanatoryUniqueness.short_exact' does not depend on any axioms
+'Generative.ExplanatoryUniqueness.full_exact' does not depend on any axioms
+'Generative.ExplanatoryUniqueness.short_reduced' does not depend on any axioms
+'Generative.ExplanatoryUniqueness.full_not_reduced' does not depend on any axioms
+'Generative.ExplanatoryUniqueness.first_summary_cannot_answer_both' does not depend on any axioms
+'Generative.ExplanatoryUniqueness.balance_does_not_determine_coverability' depends on axioms: [propext]

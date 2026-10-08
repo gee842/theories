@@ -1,0 +1,39 @@
+{
+  "retrieved": "2026-10-08",
+  "license": "CC BY 4.0 per both Figshare article records",
+  "files": [
+    {
+      "file": "collection-7736484-articles.json",
+      "url": "https://api.figshare.com/v2/collections/7736484/articles",
+      "bytes": 2194,
+      "sha256": "b6b0ca0df17ee5f432c6e6690b7658f57865b62397db94f812c5d3af00f42f10",
+      "md5": "701647e89d2a4fde9b514524ce584e41"
+    },
+    {
+      "file": "article-28660470.json",
+      "url": "https://api.figshare.com/v2/articles/28660470",
+      "bytes": 3960,
+      "sha256": "2d439d612227624d65365a04a54afa29ccd83e5a0181da08ec80c6bc270b7fc5",
+      "md5": "13c00375a546f24a895f3aeb491bf988"
+    },
+    {
+      "file": "article-28660467.json",
+      "url": "https://api.figshare.com/v2/articles/28660467",
+      "bytes": 3631,
+      "sha256": "a8268ee209b638cd64caf9e0ffa3a7e7433c2e366be809f7e275de8c3d05ee77",
+      "md5": "aa03ff2fa790a228d91becc8563a247b"
+    },
+    {
+      "file": "rspb20241195_si_001.pdf",
+      "url": "https://ndownloader.figshare.com/files/53217378",
+      "bytes": 2775045,
+      "sha256": "8f6058c30ba558121776e0e131ceb810d1ca942326995b180a1c72f2ef2d2306",
+      "md5": "34f50cc61cfca732b075094e61160040"
+    }
+  ],
+  "reading_scope": "PDF page 2, Supplementary Note 1, methods lines 969-987; rendered page inspected. Figures glanced at for layout, not digitized. Other notes not yet substantively read.",
+  "pdf_published_md5_verified": true,
+  "pdf_published_md5": "34f50cc61cfca732b075094e61160040",
+  "result": "Phase-I mat presence is recorded at its endpoint; this methods account does not provide times of formation and collapse.",
+  "publication_date_scope": "Supplement title uses 2024; main article published in 2025. No publication-year replacement."
+}

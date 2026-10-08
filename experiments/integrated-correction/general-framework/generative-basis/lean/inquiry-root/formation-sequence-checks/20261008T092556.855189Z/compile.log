@@ -1,0 +1,18 @@
+FormationSequence.lean:83:60: error: failed to synthesize
+  Decidable (ScoredAbove initialScore History.retained History.baseline)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+FormationSequence.lean:83:60: error: failed to synthesize
+  Decidable (ScoredAbove laterScore History.redirected History.retained)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+FormationSequence.lean:83:60: error: failed to synthesize
+  Decidable ¬ScoredAbove initialScore History.redirected History.baseline
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+FormationSequence.lean:88:2: error: failed to synthesize
+  Decidable
+    ¬(ScoredAbove laterScore History.redirected History.retained →
+        ScoredAbove initialScore History.redirected History.retained)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.

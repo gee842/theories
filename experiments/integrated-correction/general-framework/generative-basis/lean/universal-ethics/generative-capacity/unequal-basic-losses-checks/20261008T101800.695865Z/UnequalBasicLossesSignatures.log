@@ -1,0 +1,47 @@
+UnequalBasicLosses.positive_linear_diagnostics_iff (a b c d : Nat) :
+  (∀ (x y : Nat), 0 < x → 0 < y → x * a + y * b ≤ x * c + y * d) ↔ a ≤ c ∧ b ≤ d
+UnequalBasicLosses.cumulative_iff_all_positive_diagnostics (a b : UnequalBasicLosses.Profile) :
+  UnequalBasicLosses.CumulativeLE a b ↔
+    ∀ (x y : Nat), 0 < x → 0 < y → UnequalBasicLosses.diagnosticCost x y a ≤ UnequalBasicLosses.diagnosticCost x y b
+UnequalBasicLosses.strict_cumulative_iff_all_positive_diagnostics (a b : UnequalBasicLosses.Profile) :
+  UnequalBasicLosses.CumulativeLT a b ↔
+    ∀ (x y : Nat), 0 < x → 0 < y → UnequalBasicLosses.diagnosticCost x y a < UnequalBasicLosses.diagnosticCost x y b
+UnequalBasicLosses.cumulative_strict_irrefl (a : UnequalBasicLosses.Profile) : ¬UnequalBasicLosses.CumulativeLT a a
+UnequalBasicLosses.cumulative_strict_trans {a b c : UnequalBasicLosses.Profile}
+  (ab : UnequalBasicLosses.CumulativeLT a b) (bc : UnequalBasicLosses.CumulativeLT b c) :
+  UnequalBasicLosses.CumulativeLT a c
+UnequalBasicLosses.individual_sensitivities_agree (x y : Nat) (hx : 0 < x) (hy : 0 < y) :
+  UnequalBasicLosses.diagnosticCost x y (1, 0) < UnequalBasicLosses.diagnosticCost x y (0, 1) ∧
+    ∀ (n m : Nat),
+      n < m →
+        UnequalBasicLosses.diagnosticCost x y (n, 0) < UnequalBasicLosses.diagnosticCost x y (m, 0) ∧
+          UnequalBasicLosses.diagnosticCost x y (0, n) < UnequalBasicLosses.diagnosticCost x y (0, m)
+UnequalBasicLosses.one_higher_two_lower_cross_thresholds :
+  ¬UnequalBasicLosses.CumulativeLE (0, 1) (2, 0) ∧ ¬UnequalBasicLosses.CumulativeLE (2, 0) (0, 1)
+UnequalBasicLosses.positive_diagnostics_reverse_crossed_case :
+  UnequalBasicLosses.diagnosticCost 1 2 (2, 0) < UnequalBasicLosses.diagnosticCost 1 2 (0, 1) ∧
+    UnequalBasicLosses.diagnosticCost 2 1 (0, 1) < UnequalBasicLosses.diagnosticCost 2 1 (2, 0)
+UnequalBasicLosses.same_reported_grounds_same_inventory {G : Type} [DecidableEq G] (inventory left right : List G)
+  (same : ∀ (g : G), g ∈ left ↔ g ∈ right) :
+  UnequalBasicLosses.reportedGrounds inventory left = UnequalBasicLosses.reportedGrounds inventory right
+UnequalBasicLosses.duplicating_reports_does_not_multiply_grounds {G : Type} [DecidableEq G]
+  (inventory reports : List G) :
+  UnequalBasicLosses.reportedGrounds inventory (reports ++ reports) =
+    UnequalBasicLosses.reportedGrounds inventory reports
+UnequalBasicLosses.duplicate_row_count_can_reverse_comparison :
+  [false].length < [false, true].length ∧
+    [false, true].length < [false, false, false].length ∧
+      (UnequalBasicLosses.reportedGrounds [false, true] [false, false, false]).length <
+        (UnequalBasicLosses.reportedGrounds [false, true] [false, true]).length
+UnequalBasicLosses.equal_direct_profiles_different_common_continuation :
+  UnequalBasicLosses.directLossProfile [UnequalBasicLosses.SupportPoint.spareSupply] =
+      UnequalBasicLosses.directLossProfile [UnequalBasicLosses.SupportPoint.relay] ∧
+    UnequalBasicLosses.provisionContinues [UnequalBasicLosses.SupportPoint.spareSupply] ∧
+      ¬UnequalBasicLosses.provisionContinues [UnequalBasicLosses.SupportPoint.relay]
+UnequalBasicLosses.direct_profile_does_not_determine_continuation :
+  ¬∃ classify,
+      ∀ (lost : List UnequalBasicLosses.SupportPoint),
+        classify (UnequalBasicLosses.directLossProfile lost) ↔ UnequalBasicLosses.provisionContinues lost
+UnequalBasicLosses.common_support_distinguishes_histories_in_existing_comparator :
+  PracticalJudgment.Better (fun lost x => UnequalBasicLosses.provisionContinues lost) (fun x x_1 => False)
+    [UnequalBasicLosses.SupportPoint.spareSupply] [UnequalBasicLosses.SupportPoint.relay]

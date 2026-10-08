@@ -1,0 +1,89 @@
+{
+  "status": "passed",
+  "utc": "20261008T075924.152305Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "observational-compatibility-checks/20261008T075924.152305Z",
+  "source_sha256": {
+    "ObservationalCompatibility": "07c67bac49007cd9e56ccf758b7c21f710d9ff80f846e0993965f6faf628d56c"
+  },
+  "checker_sha256": {
+    "check_observational_compatibility.py": "9af3f0bc8431465d03391a8fd29f172ca9ca8f97e4f1bf11155c6aeb6b4f3966",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Compatibility with all profile-expressible rivals is equivalent to coverage of every admissible profile. Invariance is an explicit additional premise for universal truth; finer profiles and one joint realization are distinguished. No definition of science, ethical countermodel, empirical experiment or proof of G0.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "kernel_checked": true,
+  "theorems": 8,
+  "declarations": [
+    {
+      "kind": "def",
+      "name": "Generative.ObservationalCompatibility.Covers"
+    },
+    {
+      "kind": "def",
+      "name": "Generative.ObservationalCompatibility.MandatoryAtProfile"
+    },
+    {
+      "kind": "def",
+      "name": "Generative.ObservationalCompatibility.ConstantOnProfiles"
+    },
+    {
+      "kind": "theorem",
+      "name": "Generative.ObservationalCompatibility.coverage_gives_compatibility"
+    },
+    {
+      "kind": "theorem",
+      "name": "Generative.ObservationalCompatibility.compatibility_requires_coverage"
+    },
+    {
+      "kind": "theorem",
+      "name": "Generative.ObservationalCompatibility.compatibility_iff_coverage"
+    },
+    {
+      "kind": "theorem",
+      "name": "Generative.ObservationalCompatibility.universal_truth_gives_coverage"
+    },
+    {
+      "kind": "theorem",
+      "name": "Generative.ObservationalCompatibility.coverage_and_constancy_give_universal_truth"
+    },
+    {
+      "kind": "theorem",
+      "name": "Generative.ObservationalCompatibility.finer_coverage_gives_coarser_coverage"
+    },
+    {
+      "kind": "theorem",
+      "name": "Generative.ObservationalCompatibility.profile_coverage_can_hide_a_false_commitment"
+    },
+    {
+      "kind": "theorem",
+      "name": "Generative.ObservationalCompatibility.pairwise_realizations_do_not_give_joint_realization"
+    }
+  ],
+  "axiom_dependencies": {
+    "Generative.ObservationalCompatibility.Covers": [],
+    "Generative.ObservationalCompatibility.MandatoryAtProfile": [],
+    "Generative.ObservationalCompatibility.ConstantOnProfiles": [],
+    "Generative.ObservationalCompatibility.coverage_gives_compatibility": [],
+    "Generative.ObservationalCompatibility.compatibility_requires_coverage": [],
+    "Generative.ObservationalCompatibility.compatibility_iff_coverage": [],
+    "Generative.ObservationalCompatibility.universal_truth_gives_coverage": [],
+    "Generative.ObservationalCompatibility.coverage_and_constancy_give_universal_truth": [],
+    "Generative.ObservationalCompatibility.finer_coverage_gives_coarser_coverage": [],
+    "Generative.ObservationalCompatibility.profile_coverage_can_hide_a_false_commitment": [],
+    "Generative.ObservationalCompatibility.pairwise_realizations_do_not_give_joint_realization": []
+  },
+  "artifact_sha256": {
+    "AxiomAudit.log": "949ae6946c62faff8be846a555cc6ab6382155cf7c4b1d38c0ac11b8f764942b",
+    "ObservationalCompatibility.lean": "07c67bac49007cd9e56ccf758b7c21f710d9ff80f846e0993965f6faf628d56c",
+    "ObservationalCompatibilityAxiomAudit.lean": "c17900f881ad41cffc0d9b34ef3aaada662d305e4bfda8a2234dfb50ee18a3c0",
+    "ObservationalCompatibilitySignatures.lean": "bc0034e689384c967e17bc175dd12a39ff6e332932c4bdd812614a97e644aaca",
+    "Signatures.log": "eae414def1747b8f0f3e756204cac60afd647ed4ce09408659a511c9896e2a06",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_observational_compatibility.py": "9af3f0bc8431465d03391a8fd29f172ca9ca8f97e4f1bf11155c6aeb6b4f3966",
+    "compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

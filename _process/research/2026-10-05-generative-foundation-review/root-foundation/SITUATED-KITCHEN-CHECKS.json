@@ -1,0 +1,105 @@
+{
+  "checked_at_utc": "2026-10-07T22:50:39.479917+00:00",
+  "status": "scoped_checks_passed",
+  "scope": "Constructed application and author counterreview. Kernel checks establish comparisons of stipulated histories; no empirical observations, probability calibration or independent-agent acceptance.",
+  "proof_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/situated-kitchen-verification.json",
+  "proof_receipt_sha256": "03d6a0cd309462b3475c1b4bede084425e4d204537d76da078cb8ac23735d8bb",
+  "new_theorems": 9,
+  "new_explicit_declaration_audits": 20,
+  "inherited_theorems_rechecked": 30,
+  "inherited_explicit_declaration_audits": 46,
+  "proof_bindings": {
+    "PracticalJudgment.lean": true,
+    "PracticalJudgment.log": true,
+    "PracticalJudgmentAxiomAudit.lean": true,
+    "PracticalJudgmentAxiomAudit.log": true,
+    "PracticalJudgmentSignatures.lean": true,
+    "PracticalJudgmentSignatures.log": true,
+    "SituatedKitchen.lean": true,
+    "SituatedKitchen.log": true,
+    "SituatedKitchenAxiomAudit.lean": true,
+    "SituatedKitchenAxiomAudit.log": true,
+    "SituatedKitchenSignatures.lean": true,
+    "SituatedKitchenSignatures.log": true,
+    "check.py": true,
+    "check_situated_kitchen.py": true,
+    "version.log": true,
+    "current:PracticalJudgment.lean": true,
+    "current:SituatedKitchen.lean": true,
+    "current:check_situated_kitchen.py": true,
+    "current:check.py": true
+  },
+  "local_links_checked": 41,
+  "link_errors": [],
+  "c23_link_versions": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md": true,
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md": true,
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md": true,
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md": true,
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-PRIORITIES-AND-G0.md": true,
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-INQUIRY-AND-STANDING.md": true,
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-ADEQUACY-CORRESPONDENCE.md": true,
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-CALIBRATION.md": true
+  },
+  "c23_matches_renderer": true,
+  "global_chain_commands": [
+    {
+      "mode": "--render",
+      "exit_code": 2,
+      "output": {
+        "status": "needs-review",
+        "errors": [
+          "Linked source versions changed; reread affected entries before rendering."
+        ],
+        "changes": {
+          "modified_sources": [
+            "RESEARCH.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+            "theories/shengsheng-buxi-generative-existence/README.md"
+          ],
+          "missing_sources": [],
+          "new_pages": [
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md"
+          ],
+          "removed_pages": []
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "mode": "--check",
+      "exit_code": 2,
+      "output": {
+        "status": "needs-review",
+        "errors": [
+          "Linked source versions changed; reread affected entries before rendering."
+        ],
+        "changes": {
+          "modified_sources": [
+            "RESEARCH.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+            "theories/shengsheng-buxi-generative-existence/README.md"
+          ],
+          "missing_sources": [],
+          "new_pages": [
+            "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md"
+          ],
+          "removed_pages": []
+        }
+      },
+      "stderr": ""
+    }
+  ],
+  "diff_check": {
+    "exit_code": 0,
+    "output": ""
+  },
+  "new_file_whitespace_errors": [],
+  "source_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-CALIBRATION.md": "71a875343324462cb1422157fc56b6a1490ece86f00786541076b518c612282f",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md": "43fd20e4ca895118a33d680f42b3b4b320b0a3c6eb579f3d74ee14fac4a0f31e",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md": "0f6351727eed47b0b97e986a6bbd6545cb7306ef49fd41643c53f711a83e12eb"
+  },
+  "counterreview": "Author review accepts the constructed-case scope; no independent review claimed. Retains nonteaching relief, stable care, classification challenges and unresolved basic conflicts.",
+  "next_evidence": "Actual whole burdens, voluntary participation, meal accessibility and successor evidence; absent field material is not replaced by stipulated booleans."
+}

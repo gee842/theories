@@ -1,0 +1,163 @@
+# How evolution forms and changes evolutionary organization
+
+8 October 2026. A mechanism-based explanatory account at [Ren's selected completion scope](../../../sources/15-codex-theory-conversations/2026-10-08-evolutionary-organization-completion.md): a complete explanation with checked results, primary evidence and a substantive comparison. The [research and completion assessment](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md) records the proof package, inherited results, assumptions and counterreview. This focused account is complete at that scope; the [full evolutionary theory](THE-THEORY-OF-EVOLUTION.md) and demonstrated broad superiority remain separate unfinished objectives.
+
+**Central explanation:** changes transmitted through existing reproduction can alter how subsequent activity forms associations, produces successors and carries differences forward. Once these altered relationships are reconstructed in descendants and affect actual continuation, the organization of evolution itself has changed. Later changes can stabilize, reorganize or dismantle that organization. Its continued operation depends on actual support and on which consequences reach subsequent reproduction.
+
+**中文核心。** 既有繁殖中的可传递变化，可以改变后续活动怎样形成关联、产生后继并传递差异。这些关系若由后继重新形成，并改变实际接续，演化的组织本身就已发生变化。后来的变化又可维持、重组或拆解这种组织。它不必趋向更大、更复杂或更善；持续作用取决于真实供给，以及活动后果怎样进入后继形成。
+
+## What is being formed
+
+Evolutionary organization concerns concrete relations: which changes recur, how their consequences remain associated, what produces viable successors, how differences are carried into them, and how those successors develop. Boundaries, reproductive units and effective selection pressures can be outcomes of these relationships. They are not all assigned independently before the explanation begins.
+
+The account begins from the relevant ongoing activity. In a transition involving cells, cellular reproduction and molecular regulation are already operative; their changes can produce a new recurring collective. At the origin of the first evolving organization, a chemical account must instead explain retention, variation and renewed production. These are different explanatory starting problems. Explaining a later transition does not require already existing selection at the new level, and does not settle the origin of the first life.
+
+Following the [nondual method](NONDUAL-METHOD.md), cells, a collective, its nutrient provision and the activities sampling it are differentiated relations within one history. A study can hold some of them fixed to identify an effect. Their being supplied to that local study does not place them outside generative reality; explaining their formation remains a further question where the claimed scope includes it.
+
+## Formation becomes a recurring organization
+
+First, a transmitted change modifies an operative relation. A change in division can alter whether daughters separate; a change in regulation can alter when dispersal or differentiation occurs. The initial variation need not anticipate any collective benefit. Its physical consequences create the candidate organization before that organization can be retained through differential collective continuation.
+
+Second, interactions generate an association with consequential properties. Cells that remain attached develop a particular contact structure. Their combined structure changes transport, access, mechanical response and potential propagules. These properties can affect what subsequently survives or reproduces. Association alone is insufficient: a temporary aggregate, a maintained structure and an organization that produces reconstructing descendants require different evidence.
+
+Third, actual reproduction carries the operative developmental relation forward. A descendant need not inherit a finished copy of the parental structure. It can inherit capacities that rebuild relevant relations through its own activity. This is how development makes organization heritable without an investigator assigning a new group membership table every generation. The retained relation can also be altered or lost, so persistence is a consequence with conditions rather than part of the definition of organization.
+
+The molecular correspondence is concrete. Ratcliff and colleagues' yeast study links disrupted ACE2 function to failed daughter separation. A knockout produced the clustered form and functional complementation restored unicellularity in a tested evolved background. Coding changes were identified in five of ten evolved lines, so this is not a claim that every lineage used the same mutation. [Primary study](https://www.nature.com/articles/ncomms7102); [preserved source](../../../sources/evolutionary-selection/evolutionary-organization/README.md).
+
+## The new organization changes further evolution
+
+Reconstructed organization changes more than a current phenotype. It can change the distribution of later variants, who remains associated with whom, which events count as reproduction, and how successful activity contributes to the next generation. Those consequences can then favor or oppose variants in the mechanisms producing them.
+
+| Relationship changed | How further evolution changes |
+|---|---|
+| Developmental attachment or separation | Alters association histories and the structures on which transport and reproduction act |
+| Mutation, switching or regulatory development | Alters the production and accessibility of later inherited states |
+| Dispersal, bottlenecks or partner retention | Alters how contributions and developmental capacities reach successors |
+| Resource transformation and shared maintenance | Alters the conditions in which later reproduction and selection occur |
+| Formation or erosion of corrective arrangements | Alters whether subsequent failures can modify the rules retaining capacities |
+
+The bacterial evidence supplies one important case. A targeted mutL reversion changes life-cycle performance, especially the germ-to-soma transition. This connects a genetic change to a mechanism enabling later transitions, rather than only to current abundance. The paper did not directly measure mutation rate in that experiment; a precise kinetic law cannot be inferred from the mutation label. [Preserved study and linked records](../../../sources/evolutionary-selection/doulcier-2025/README.md).
+
+The repository's [new contextual-establishment study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md) supplies a complementary case: ancestral cells participate in the spatial conditions in which later variants arise and remain. Early establishment and later retention have different conditions. The published conventional mechanism already represents those relations, including a conditional advantage of lower dispersal despite slower growth. Its credit and failures are part of this account.
+
+The effect need not favor the mechanism's contributors. Benefits can be shared while transmission favors other participants; mixing can separate a contribution from the lineages it enables; an arrangement can reproduce before its depletion effects arrive. Conversely, development, partner retention and reproductive bottlenecks can keep relevant contributions associated with descendants. The [checked recursive-selection analysis](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-GENERATIVE-SELECTION-MATH.md) already distinguishes those cases under explicit laws. Greater collective output is not by itself a proof that every sustaining trait spreads.
+
+The resulting account is recursive: earlier activity forms relations governing variation and continuation; those relations participate in the retention of later changes; some of those changes revise the same relations. A physically fixed encompassing law can admit this history. The effective developmental or reproductive rule changes because the organization implementing it changes, without requiring a new law of nature at every generation.
+
+## What the checked reconstruction establishes
+
+The new [DevelopmentalReconstruction module](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/DevelopmentalReconstruction.lean) extends the existing mutable division-and-bond model. It introduces an explicit transfer of an actual cell, removes the old culture's other material into a recorded account, and allocates fresh precursor and activity support from finite reserves. Subsequent division inherits the sampled state and produces bonds accordingly. The old bond structure is not carried across the single-cell bottleneck.
+
+The general checked connections are:
+
+- The selected cell's operative retention and founder state pass to the new developmental history.
+- Given actual subsequent division, that inherited retention determines whether a new daughter bond forms.
+- Arbitrary finite supported histories preserve material and support accounts. Cumulative developmental work is bounded by initially available and reserved support.
+- In the absence of an operative revision, inherited retention persists across arbitrary finite admitted development-and-transfer histories.
+
+Exact histories additionally show acquisition once followed by two reconstructions; persistence after relaxing the original attached-cell sampling requirement; and a later inherited revision that changes subsequent development and eligibility. Lack of support or a nonexistent sampled cell prevents the transfer. Equal cell counts can also conceal different sampling responses when actual bonds differ. That last result limits a count-only observation, not a conventional model retaining the bonds.
+
+The sampling criterion, mutation occurrence, local division law and supply amounts remain declared premises. The transfer is an idealized single-cell bottleneck, not a simulation of spontaneous yeast fragmentation. Accounting for reserves is not explaining their indefinite replenishment. The [completed living-dependencies account](LIVING-DEPENDENCIES.md) supplies the broader explanation of continued provision, retention and recovery at its own stated scope. These scope boundaries prevent a local demonstration of reconstruction from becoming a claim of autonomous or endless evolution.
+
+## Stabilization and failure
+
+Four questions must be answered separately: does the organization remain present; can descendants reconstruct it; does it persist after the conditions promoting its origin change; and can competing variants displace it? A positive answer to one need not answer the others.
+
+The new Lean histories establish conditional reconstruction and a persistence example after a changed sampling requirement. Evolutionary stability needs a population-level account of accessible competitors and their continuation. Doulcier and colleagues' 2024 model already treats stability after scaffold change through hysteresis; it also exhibits reversion when conditions or duration are unsuitable. Its resource reset remains supplied. This provides a strong theoretical comparator rather than empirical confirmation of our model. [Primary article](https://www.nature.com/articles/s41467-024-50625-1).
+
+Support failure, changed transmission, mixing, destructive competitive advantage and loss of regulatory relations can each interrupt the recursive sequence. These failures are part of the explanation. Bigger collectives, more immediate offspring and increased complexity do not universally measure improved capacity for further evolution. Nor must every successful transition pass through one fixed hierarchy or a single mechanism.
+
+## Comparative contribution
+
+Population and transmission models remain appropriate for identified units and inherited differences. The account here explains how some inputs to those models acquire their developmental realization and change. Existing exact recurrence correspondences are retained; recovering those models is an achievement of connection, not evidence that their predictions have been surpassed.
+
+Developmental evolution, niche construction and transitions-in-individuality research already address substantial parts of this mechanism. The closest rivals include ecological scaffolding, scaffold endogenization and evolutionary connectionism, assessed in the [comparative-direction study](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-COMPARATIVE-DIRECTION.md). A rival does not fail merely because it uses a different vocabulary or a local boundary.
+
+The established contribution is a connected explanatory architecture, supported by checked examples and primary mechanisms: it keeps formation, reconstruction, selection consequences and continued provision in view together, and identifies which connections remain supplied in a particular model. The new formal extension closes the explicit sampling-to-redevelopment connection in one shared history. These are scoped explanatory and formal contributions. No novel universal evolutionary law or broad predictive superiority follows.
+
+The stronger comparative claim remains testable: independently measured developmental and sampling mechanisms should constrain new joint outcomes with fewer separate fitted success laws. An equally informed mechanistic rival receives the same observations and mechanisms. If it supplies the same explanation, record agreement; if our proposed restriction fails, revise it. The [existing data-readiness assessment](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-HISTORY-INTEGRATION.md#status-and-next-connection) identifies why a calibrated joined experiment is a further task rather than a result of this explanation.
+
+**Direct comparison completed, 8 October 2026.** The [matched network assessment](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md) now proves that this particular reconstruction mechanism has an exact conventional network implementation, including failure and shared state-dependent selectors: 11 new Lean theorems / 24 new audits and 34,768 executed comparisons. No predictive or assumption-saving gain survives at this matched-mechanism scope. This preserves the connected explanation and its original completion, while narrowing any inference of comparative superiority. The comparator is authored here, not a reproduction of Watson’s learning equations.
+
+## Measured formation and apparent loss
+
+[The developmental-history continuation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md) now follows one fixed field through 91 original captures. Growing structures can disappear locally, while an assigned trajectory can also end at the observation boundary with the structure still visible. This requires distinguishing actual persistence from its measured signal before predicting what remains available for later sampling and reconstruction. The source-bound image history advances that correspondence; it does not yet establish biological collapse rates, linked descendants or a gain over the equally informed conventional account.
+
+## Selection on the capacity to reconstruct
+
+The [new theoretical derivation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONSTRUCTIVE-SELECTION-INTEGRATION.md) connects reconstruction to selection on the transmitted developmental capacity. A lineage can pass through an organized state O and a propagule state P that lacks the visible organization while retaining the capacity to rebuild it. This distinction is a relationship within one developmental history. Actual loss of that capacity must not be confused with temporary nonexpression.
+
+In a fixed resident context, let organized descendants produce f census units and propagules produce g, with fractions q and r entering the organized state. The supplied descendant law is
+
+\[
+O_{n+1}=qfO_n+rgP_n,\qquad
+P_{n+1}=(1-q)fO_n+(1-r)gP_n.
+\]
+
+For f>0, 0<g<1, 0≤q<1 and 0<r≤1, the checked condition for a positive weighting of both stages to grow uniformly is
+
+\[
+f>\frac{1-g+rg}{q(1-g)+rg}.
+\]
+
+This yields a cost ceiling for a developmental change: its net offspring production must remain above the threshold. Increasing reconstruction r lowers that threshold when the other parameters stay fixed, but an excessive cost defeats the gain. Direct resemblance can be zero while a recurring two-stage lineage grows. Conversely, rearranging developmental routes cannot generate total descendant growth if neither stage produces more than its replacement. These are conditional results about actual production and return; q is a routing fraction, not a quantitative-genetic heritability coefficient.
+
+The observation consequence matters for the account. Starting from organized units alone, two rules differing only in r have exactly the same first-generation counts, yet can lie on opposite sides of the growth threshold. Under the fixed law and independently fixed production parameters, the second census can distinguish them. Immediate output therefore does not identify the whole capacity for further organization. Observation ending, phenotype disappearing and inherited capacity disappearing remain different claims.
+
+**Scope and comparison:** 28 new Lean theorems / 40 audited declarations establish the threshold, finite-history bounds, adverse cases and conditional identification. The coefficients and faithful transmission remain supplied; their derivation from the earlier cell events is the next explanatory connection. Conventional life-cycle models already study reproductive organization and its costs, including [Pichugin and colleagues 2017](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005860) and [Pichugin and Traulsen 2020](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008406). The same matrix gives the same predictions in either vocabulary. This advances our connected explanation without claiming a novel universal law, fixation or comparative superiority. The separate [connectionist recovery](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CONNECTIONISM-RECOVERY.md) and [developmental-memory connection](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-DEVELOPMENTAL-MEMORY.md) are now complete at their stated scopes.
+
+## Deriving reconstruction and cost from local histories
+
+The [assembly continuation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md) now closes a restricted part of the coefficient-formation problem. An inherited rule allows a finite number of local bonding attempts. Each attempt consumes support; success stops further attempts. A declared terminal copying operation uses remaining support and precursors to form descendants carrying that rule. The successful bond event corresponds to the existing association model; failed paid attempts extend its operations.
+
+Reconstruction and production are computed from the same finite histories. Early success leaves more support for descendants. Consequently, the probability that a developmental history succeeds need not equal the fraction of descendants that are organized. In one checked case, these are 3/4 and 5/6. Multiplying separate averages of success and production discards their dependence and can even reverse the predicted growth sign. A conventional model retaining the joint histories obtains the same correction.
+
+The resulting propagule outputs A_n and D_n enter the earlier descendant matrix directly. Given mature-stage output F and a positive reference growth factor lambda, the selection condition is FA_n+lambda D_n>lambda², under the declared positive-return conditions. When lambda is the current rule's resident growth factor, the extra-attempt variant has an exact local invasion criterion. Actual success probability, remaining support and the consequences of redirecting descendants jointly determine whether the rule gains.
+
+**More reliable reconstruction can be selected against.** The final supported attempt increases the probability of forming the bond but consumes the last support for reproduction on that branch. A checked example raises developmental success from 1/2 to 7/8 while moving from a positive to a negative growth margin. A perfect organized fraction among surviving offspring can coexist with inadequate total replacement.
+
+**中文推进：**现在已由有限、实际消耗的组装历史推出重建比例、后继产出及其选择条件；这部分不再分别指定为自由参数。成功得早与后继较多之间的关联不可删除。额外尝试能提高成功概率，也能因耗尽支持而消除优势。
+
+The new package has **37 Lean-checked theorems / 57 new audits**, with 166 audits including reused modules. Initial supplies, single-attempt probability, terminal copying and mature-stage output remain premises. The next coefficient-formation question concerns how formed contacts and component states change those local laws. This is neither a molecular derivation nor a demonstration of greater explanatory economy than an equally informed life-cycle model. The separate [connectionist recovery](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CONNECTIONISM-RECOVERY.md) and [developmental-memory connection](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-DEVELOPMENTAL-MEMORY.md) are now complete at their stated scopes.
+
+## Transmission and contact reconstruction
+
+The [contact continuation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-RECONSTRUCTION-INTEGRATION.md) explains another part of the local law. A partition transmits actual components and retains only contact opportunities whose endpoints remain together. Each successor starts unbonded and can form its own bond through paid encounters. Its success probability is derived from compatible opportunities among its actual encounter slots. Uniform sampling with replacement and a fixed compatibility rule remain explicit premises.
+
+The finite contact process projects exactly to the preceding assembly attempt tree for the stated support and organization observables. It does not reuse the terminal operation that copied a successful state into all offspring: this census has one potential reconstructed unit per transmitted seed. Thus the earlier output formulas are not automatically the new population coefficients.
+
+**How opportunities are distributed matters.** Two checked partitions of the same eight-component parent preserve every component and all four contact opportunities, produce two equally sized seeds, and have the same mean single-attempt success rate of 1/2. Giving each seed two attempts costs three support units on average in both cases. When all compatible opportunities reach one seed, expected reconstruction is 1; when they are spread between the two seeds, it is 1.5. The first attempt alone does not distinguish the outputs. A third partition conserves every component but cuts all listed opportunities, preventing reconstruction during this window.
+
+For two seed rates p and q, the exact two-attempt deficit relative to equal rates at their mean is (p−q)²/2; expected encounter cost remains equal. Distinct seed responses also prevent a single aggregate return coefficient from describing arbitrary mixtures. A population model must retain those distinctions or establish a valid mixture restriction. This narrows when the previous two-stage selection interface can be used.
+
+**中文推进：**组成没有消失，不等于重建能力没有消失；平均成键率相同，也不等于下一轮形成能力相同。现在能由实际传递关系推出这些差异，并说明哪些粗化会漏掉它们。
+
+The new package has **30 Lean-checked theorems / 57 new audits**, with 223 closure audits. The selected contact-to-reconstruction connection is complete. The next join is how growth and mechanics produce or revise the partition, with its costs, subsequent maturation and provision accounted for. A three-stage population operator also proves finite cycle returns and a valid aggregate coefficient under its explicit balanced-mixture law. Common mature-parent preparation remains supplied; physical realization and invasion are further claims. An equally informed spatial evolutionary model gives the same local predictions; existing primary models already treat structural transmission and competition. Neither comparative superiority nor ethical goodness follows from a greater reconstruction count.
+
+## Material growth and preparation
+
+The [material continuation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-MATURATION-INTEGRATION.md) now realizes one bounded version of the common-parent preparation that the preceding population interface supplied. Each reconstructed seed receives four precursor units and four units of growth support. A uniformly drawn existing component activates one new component, paying one precursor and one support unit. The changing pool determines later production probabilities.
+
+Two local laws are compared: an activating component produces its own kind, or produces the complementary kind. Neither rule consults a desired balance. After four events, a paid routing sequence removes actual components from the pool and fills the eight slots of the specified parental arrangement. Completion is proved equivalent to having four A and four B components. Failed routing retains the partial arrangement, residual pool and unused support; a failed return is not equated with death.
+
+**Maturation can reverse an earlier advantage.** The concentrated and distributed partitions previously produced 1 and 1.5 expected contact-reconstructed successors. Under same-type production their expected prepared-parent returns become 9/35 and 9/70: the ranking reverses. Complementary production changes the returns to 52/105 and 47/70, changing the ranking back. All four are below replacement in this fixed protocol. A better early capacity, and even the better whole-window alternative, does not by itself establish sustained reproduction.
+
+**中文推进：**现在把组成怎样继续生成、怎样付费组成下一轮亲代，接进了同一条解释。分割同时传递接触机会和组成偏差；后者会通过生成规律改变后续返回，不能只看最初重建了多少后继。
+
+The new package has **28 Lean-checked theorems / 44 new audits**, with 267 closure audits. Uniform sampling, production laws, the routing recipe and apparatus, slot geometry, initial stocks and partition remain declared local premises. The finite material preparation connection is complete; the next question is how those reproductive recipes and partitions themselves form and are inherited or revised. Repeated provision and a population treatment of other successor states remain necessary for further claims. Conventional stochastic compartment models already connect composition, replication and division; the same local laws give the same predictions in either account.
+
+## Growth forms fragmentation possibilities
+
+The [grown-fragmentation connection](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GROWN-FRAGMENTATION-INTEGRATION.md) now derives which components travel together from actual local growth and retained connections. Two legal histories produce a chain and a branched structure with the same four A, four B, seven edges and growth expenditure. Actual edge removal consumes support; sound graph traversal plus checked closure and coverage identifies the resulting successors. The partition is no longer freely assigned in this construction.
+
+The only equal-size cut in the chain yields two 2:2 pools; in the branched structure it yields 1:3 and 3:1 pools. With the same inherited production and routing protocol, these give 18/35 versus 6/35 completed common preparations. Uniform choice of one of seven edges gives 18/245 versus 6/245. Choosing the oldest retained edge instead gives 0 versus 6/35, reversing the ranking. These are exact finite model expectations, not biological estimates or lineage growth rates. The observer requires the entire resulting pool to fill the specified eight slots, with no excess.
+
+A further native operation forms an alternative retention route. Cutting the former separating edge then leaves one connected group, invalidating the proposed binary census. This establishes a limit on identifying reproductive boundaries with one chosen bond relation. It does not model the mechanical formation of entanglement. The primary biophysical studies credited in the integration already explain formation and fracture and motivate this limit.
+
+**31 new Lean theorems / 59 new audits / 326 closure audits pass.** Growth scheduling, differentiation, cut occurrence and its law, catalytic interpretation of retained edges, finite support and the terminal recipe remain supplied. The output prepares the common earlier recipe; it does not rebuild either grown graph. The next connection is reconstruction and transmission of the operative growth and retention relations themselves, with fracture responsive to those relations. No comparative superiority or repeated-generation closure is claimed.
+
+## Relation to generative alignment
+
+The causal question also matters for alignment: which arrangements retain, reconstruct and revise capacities for recognizing and sustaining further life? Success can preserve those arrangements or erode them. This motivates examining the formation of evaluators and selection rules in the [generative-alignment programme](ALIGNMENT-AND-GOVERNANCE.md#current-generative-alignment-priority). A biological mechanism is not automatically a model of an institution; those correspondences must be established.
+
+G0 and the completed practical and alignment arguments retain their explicit ethical commitments. Evolutionary explanation supplies evidence about formation, reliability and failure. It does not convert reproductive advantage into ethical authority or normative universality into inevitable behavioral convergence.

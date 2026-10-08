@@ -1,0 +1,162 @@
+{
+  "status": "passed",
+  "scope": "Explicit equal-basic-risk sharing candidate, tested implementation dependence and revisable selection; nineteen new Lean theorems under supplied local laws; no general risk ethic or empirical claim; asymmetric protection exposes a separate fairness-versus-added-basic-harm comparison",
+  "new_theorems": 19,
+  "new_explicit_declaration_audits": 36,
+  "inherited_project_theorems": 0,
+  "axiom_audits": [
+    {
+      "dependencies": [],
+      "declarations": 25
+    },
+    {
+      "dependencies": [
+        "propext",
+        "Quot.sound"
+      ],
+      "declarations": 3
+    },
+    {
+      "dependencies": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarations": 8
+    }
+  ],
+  "retained_proof_artifacts_bound": 9,
+  "prior_documents_preserved": 3,
+  "owned_M20_additions_and_renderer_match": true,
+  "other_entries_preserved_at_mutation": true,
+  "unrelated_entries_match_edit_baseline": false,
+  "other_table_lines_match_edit_baseline": false,
+  "local_links_checked": 21,
+  "links": [
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#9-continue-through-equal-basic-risk-sharing"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#14-push-beyond-symmetry-fairer-exposure-can-add-basic-harm"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#9-continue-through-equal-basic-risk-sharing"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+      "reference": "../../../../sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md#continue-the-basic-risk-comparison"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+      "reference": "FUTURE-GOOD-INTEGRAL.md#fair-chances-as-a-quality-of-the-organized-future"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md#joint-number-and-gravity"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+      "reference": "#6-primary-source-comparison-and-evidence-assessment"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/BasicRiskSharing.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_basic_risk_sharing.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/basic-risk-sharing-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+      "reference": "BASIC-RISK-SHARING-INDEX-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+      "reference": "BASIC-RISK-SHARING-CHECKS.json"
+    },
+    {
+      "from": "RESEARCH.md",
+      "reference": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#9-continue-through-equal-basic-risk-sharing"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md#13-sharing-basic-risk-and-revising-the-selection-rule"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#9-continue-through-equal-basic-risk-sharing"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "reference": "GOAL-FORMATION-AND-REVISION.md#13-sharing-basic-risk-and-revising-the-selection-rule"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#13-risk-sharing-proof-and-integration-scope"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "JOINT-RISK-REVISION-INTEGRATION.md#9-continue-through-equal-basic-risk-sharing"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "JOINT-RISK-REVISION-INTEGRATION.md#9-continue-through-equal-basic-risk-sharing"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "BASIC-RISK-SHARING-INDEX-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "BASIC-RISK-SHARING-CHECKS.json"
+    }
+  ],
+  "source_sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md": "fa773a76f4e4a5965871b48715b53b9c1fb0965546bdddef1931af7eaf236925",
+    "sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md": "42243890cab01bbd21a4c41c62c5ddbfc4cb7f07087af0c37734737b505625d6",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md": "07e783f00b47aaebf65c55e93b4f7c55e3f3cce6bc83fd6bf9103efacf89758f",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/BasicRiskSharing.lean": "341753b826c4d697b6c26f30ae2abf87371b3a64c81f0832bb72aa2e81f49d6b",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_basic_risk_sharing.py": "e6f8887ca4c6530d06d6864ce19d5c89c051c14e7b789c1f69b0d5ea07825712",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/basic-risk-sharing-verification.json": "11b9eab461c67442d4935763eb365dd38e50014e6e7ee7e889b75404aba62516"
+  },
+  "checker_sha256": "1ba90b3b3682bb8f297fddd58c450ab1a3944c3155166f263baf488577723bd2",
+  "pending_global_review": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-WARRANT.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CHOICE-AND-GENERATIVE-CONTEXT.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-REVISION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CALIBRATED-UPDATER-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CALIBRATED-UPDATER.md"
+    ],
+    "removed_pages": []
+  },
+  "new_independent_review": false,
+  "new_empirical_validation": false,
+  "whole_table_certified": false
+}

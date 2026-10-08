@@ -1,0 +1,333 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-10-07T23:38:44.377145+00:00",
+  "scope": "Owned document/source bindings, author and independent proof receipts, eight shared fragments, local links and C01. No empirical rerun or universal-foundation completion.",
+  "new_theorems": 27,
+  "new_empty_audits": 41,
+  "inherited_audits": 18,
+  "retained_proof_artifacts_checked": 25,
+  "local_links_checked": 72,
+  "links": [
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-INDIVIDUATION.md",
+      "reference": "../../../sources/15-codex-theory-conversations/2026-10-08-systems-foundation-question.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-INDIVIDUATION.md",
+      "reference": "NONDUAL-METHOD.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-INDIVIDUATION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md#1-documented-acquisition-retention-and-issued-action"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-INDIVIDUATION.md",
+      "reference": "SYSTEMS-COMPLEXITY-CHAOS.md#lean-completion-of-the-mathematical-connections"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-INDIVIDUATION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md#2-new-mathematics-and-its-exact-inputs"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-INDIVIDUATION.md",
+      "reference": "DEEPER-GENERATIVE-ROOT.md#10-nondual-core-and-derived-positions"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-INDIVIDUATION.md",
+      "reference": "EVOLUTIONARY-ORGANIZATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-INDIVIDUATION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-ARGUMENT.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-INDIVIDUATION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-FORMAL.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-INDIVIDUATION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-REVIEW.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-INDIVIDUATION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-systems-foundation-question.md",
+      "reference": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-INDIVIDUATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-ARGUMENT.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-ARGUMENT.md",
+      "reference": "UNFOLDING-PRESERVATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-ARGUMENT.md",
+      "reference": "EXPLANATORY-JOINING-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-ARGUMENT.md",
+      "reference": "UNFOLDING-PRESERVATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-ARGUMENT.md",
+      "reference": "LAW-CORRESPONDENCE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-ARGUMENT.md",
+      "reference": "CONSTITUTIVE-WARRANT-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-ARGUMENT.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-ARGUMENT.md",
+      "reference": "LAW-CORRESPONDENCE-EVIDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-FORMAL.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SystemsOrganization.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-FORMAL.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/FormedEffectiveLaw.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-FORMAL.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/SystemIndividuation.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-FORMAL.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_system_individuation.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-FORMAL.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/system-individuation-checks/20261007T233431.104249Z/receipt.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md",
+      "reference": "../../../../sources/15-codex-theory-conversations/2026-10-08-systems-foundation-question.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-INDIVIDUATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md",
+      "reference": "SYSTEM-INDIVIDUATION-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md",
+      "reference": "SYSTEM-INDIVIDUATION-FORMAL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md",
+      "reference": "SYSTEM-INDIVIDUATION-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md#10-nondual-core-and-derived-positions"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md",
+      "reference": "LAW-CORRESPONDENCE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md",
+      "reference": "EVOLUTIONARY-ORGANIZATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/SystemIndividuation.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/system-individuation-checks/20261007T233431.104249Z/receipt.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_system_individuation.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md",
+      "reference": "SYSTEM-INDIVIDUATION-REVIEW.md#3-primary-theoretical-comparisons"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md",
+      "reference": "LAW-CORRESPONDENCE-EVIDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md",
+      "reference": "CONSTITUTIVE-WARRANT-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md",
+      "reference": "SYSTEM-INDIVIDUATION-INDEX-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md",
+      "reference": "SYSTEM-INDIVIDUATION-CHECKS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md",
+      "reference": "SYSTEM-INDIVIDUATION-REVIEW.md#6-completion-stage-assessment"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-REVIEW.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-REVIEW.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-REVIEW.md",
+      "reference": "CONSTITUTIVE-WARRANT-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-REVIEW.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-REVIEW.md",
+      "reference": "LAW-CORRESPONDENCE-EVIDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-REVIEW.md",
+      "reference": "../../../../sources/tclab-benchmark/extracted/2_PID/0_initial_PID/0_initial_PID.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-REVIEW.md",
+      "reference": "../../../../sources/evolutionary-selection/koza-2011/article.html"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-REVIEW.md",
+      "reference": "EVOLUTIONARY-ORGANIZATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-REVIEW.md",
+      "reference": "development/system-individuation-review/check.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-REVIEW.md",
+      "reference": "development/system-individuation-review/20261007T233530.588639Z/receipt.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/system-individuation-checks/20261007T233431.104249Z/receipt.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-REVIEW.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-INDIVIDUATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-REVIEW.md",
+      "reference": "SYSTEM-INDIVIDUATION-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-REVIEW.md",
+      "reference": "SYSTEM-INDIVIDUATION-FORMAL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-REVIEW.md",
+      "reference": "SYSTEM-INDIVIDUATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/SystemIndividuation.lean"
+    },
+    {
+      "from": "RESEARCH.md",
+      "reference": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "SYSTEM-INDIVIDUATION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "reference": "SystemIndividuation.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "reference": "system-individuation-checks/20261007T233431.104249Z/receipt.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "reference": "../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-FORMAL.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "reference": "SYSTEM-INDIVIDUATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "reference": "SYSTEM-INDIVIDUATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md#2-new-mathematics-and-its-exact-inputs"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "SYSTEM-INDIVIDUATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "SYSTEM-INDIVIDUATION-CHECKS.json"
+    }
+  ],
+  "shared_fragments": 8,
+  "owned_rows": [
+    "C01"
+  ],
+  "stronger_foundation_completed": false,
+  "receipt_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/system-individuation-checks/20261007T233431.104249Z/receipt.json": "3379682d8dcb4f97f2f772f6a460c8baa7a95169790bcb0a9ce95dc7d8eab5a6",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/system-individuation-review/20261007T233530.588639Z/receipt.json": "2d26e9e95c60ade1f856f0a6c82f134ee280013b6a09a0fd5bc5d40233c78787"
+  },
+  "owned_document_sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-INDIVIDUATION.md": "62416ce3c87f922d7b52904aa09777735b7ddb0724a94011f7bf841dc5cfebc7",
+    "sources/15-codex-theory-conversations/2026-10-08-systems-foundation-question.md": "b80aa56e4ddc614b8b78f0f450c79ef99be717d78ca123de2a4cedb820e2682e",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-ARGUMENT.md": "26fe3d9da0378186f824cf92b6d358d763bd87fecfbcb471d58d8ec81bc1cd79",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-FORMAL.md": "249db407ffd418ef968461608728307641b0078d4307235dcfce3a43eb5594c6",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md": "395cec32bacd430bfd702abc144a98d67952b2fceb5f23059b3e0146c0012975",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-REVIEW.md": "fff77fb50f97baab91a78d4220ba6bd293299fd020075bd0e057368d8090838d"
+  },
+  "checker_sha256": "618c6c11ca8f21ce2c12d23d0e779887977df405529a97a70b24535dc3307b97",
+  "edit_record_sha256": "ec3b60b34bf1b6f6146d5d3da53cdd7996fad5dc8e60a29c3a8ef3c4bebaf7f1",
+  "concurrent_global_changes_not_certified": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md"
+    ],
+    "removed_pages": []
+  }
+}

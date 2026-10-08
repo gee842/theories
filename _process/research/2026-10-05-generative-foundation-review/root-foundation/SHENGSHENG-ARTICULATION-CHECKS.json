@@ -1,0 +1,854 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-07T20:13:59.850007+00:00",
+  "scope": "Owned links, exact cited inherited proof closures, selected correspondence, saved method evidence and paired navigation. Semantic review is separately recorded; no new proof or science run.",
+  "new_theorems": 0,
+  "compiler_runs_this_study": 0,
+  "documents": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md": "be510a31ee5d682e40c8f0afc595b473a23e4d2c7f4ef72a3ec0fd82f84ce00e",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md": "1949dfbc7d72238bd9610076a419aaba88dd9ad4202dee7527a95091f7f03f72",
+    "sources/15-codex-theory-conversations/2026-10-08-shengsheng-articulation.md": "1acc9c906a90f4da9480634dbf9a6942b737692656044f7e69cfc446a3448a44"
+  },
+  "checker_sha256": "70421227fcc5a45844987ed6f6465dfb412fb1f653dbefb92132f2a2af5ed6e8",
+  "local_links": [
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-08-shengsheng-articulation.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md",
+      "target": "MATHEMATICAL-CORE.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md",
+      "target": "GENERATIVE-GROUNDING.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md",
+      "target": "GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md",
+      "target": "NONDUAL-METHOD.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md",
+      "target": "DEEPER-GENERATIVE-ROOT.md#10-nondual-core-and-derived-positions"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md",
+      "target": "PREDICTION-ACTION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-TREE-CONTINUATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md",
+      "target": "../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/README.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md",
+      "target": "NEW-POSSIBILITIES.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md",
+      "target": "AUTONOMOUS-METHOD-FORMATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md",
+      "target": "GENERATIVE-SELECTION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md",
+      "target": "THE-THEORY-OF-EVOLUTION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md",
+      "target": "EVALUATIVE-PLASTICITY.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md",
+      "target": "EVALUATIVE-SUCCESSION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md",
+      "target": "EVALUATIVE-GROUNDING.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md",
+      "target": "EVALUATIVE-APPLICATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md",
+      "target": "MATHEMATICAL-CORE.md#the-mathematical-background-we-explicitly-use"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md",
+      "target": "NEW-POSSIBILITIES.md#1-相对于什么而言是新--what-is-new-relative-to-what"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NEW-POSSIBILITIES-REVIEW.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md",
+      "target": "EMPIRICAL-SCOPE.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md",
+      "target": "KNOWLEDGE.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-08-alignment-grounding-axiom-correction.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md",
+      "target": "PRACTICAL-JUDGMENT.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md",
+      "target": "ZERO-AXIOM-PRACTICAL-JUDGMENT.md#9-规范如何成为有作用的结构--how-a-norm-becomes-an-operative-structure"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md#15-completion-assessment-of-the-conditional-candidate"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-08-shengsheng-articulation.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/GenerativeEpisode.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/NewPossibilities.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/new-possibilities-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormationRoutes.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/routes-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md",
+      "target": "CONSEQUENCE-ORGANIZATION-MECHANISM.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md",
+      "target": "development/consequence-organization/METHOD-EVIDENCE.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md",
+      "target": "../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal-correspondence.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-GROUNDING.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md",
+      "target": "FIXED-FINISH-LINE-AUDIT.md#15-completion-assessment-of-the-conditional-candidate"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/practical-judgment-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md",
+      "target": "FOUNDATION-COMPOSITION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md",
+      "target": "SHENGSHENG-ARTICULATION-CHECK.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-08-alignment-grounding-axiom-correction.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md",
+      "target": "NEW-POSSIBILITIES-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EMPIRICAL-SCOPE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md",
+      "target": "SHENGSHENG-ARTICULATION-CHECKS.json",
+      "generated_by_this_run": true
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-shengsheng-articulation.md",
+      "target": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-shengsheng-articulation.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md"
+    }
+  ],
+  "linked_versions_at_check": {
+    "sources/15-codex-theory-conversations/2026-10-08-shengsheng-articulation.md": "1acc9c906a90f4da9480634dbf9a6942b737692656044f7e69cfc446a3448a44",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md": "548310e896c6c7de9eab1cb5efbd101589c621e61c89602a15b2b958770fddcc",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": "e37f62e96aab7fad46310cf5bd40fa15fceee41f5f63a92db686c501c3241144",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md": "1949dfbc7d72238bd9610076a419aaba88dd9ad4202dee7527a95091f7f03f72",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md": "8c48b03a167a8909148d542420a38d829b2494258fd1383617127e19e7f82c54",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md": "bf72051b231baabb7566cf069086e5ac5453ad73decb2072e2759c7f38f0e678",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PREDICTION-ACTION.md": "fc657d385f274d98e709045a5621f866cc33f65ff3acdbbd6a1a8d04f57a4df4",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-TREE-CONTINUATION.md": "a694d649df1615a2c1b8acb05746d91c27c05a0aef3b5232069d54f79f14d776",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/README.md": "a49bf251b53465c5df5d218cc39e86dc4bfd050682382268ca441ebdc5c2ca52",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NEW-POSSIBILITIES.md": "229c2e99dd8ff551b4248dbddb2b9856aa31cd84d3b6866ec7c3d62eaa194ae9",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-CAPACITY-INTEGRATION.md": "bcfba8c968760eb1f197d617bb4afb61f7d143e315840d31a8b7d82e6e327770",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/AUTONOMOUS-METHOD-FORMATION.md": "7c60fda913269c1cced163467d74f1d00c6db3ac773a3e10f11406f27e49ccf1",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md": "ec7b4f4dc01adacfde6dfce79a9f1ce69c25794b07d292d612eccc9c08b12559",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md": "9cad6d631906bf7aea44e683d034e2d99e8a5334bd8899589581e0aea603298d",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-PLASTICITY.md": "8fc9d10b189a2daeda5459195c67225548b293a0d512efd6f5e81d1afd70e60b",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-SUCCESSION.md": "a25f5ed39ae4529c5f934c7e363785f4d135e868ead2a5dffebfad05305cc44b",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-GROUNDING.md": "de7e436b169a05d24ffb210fd951c1ab47d8658ce78c024a1eacc1d6740b2eb3",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-APPLICATION.md": "2c690e7c177d82f636e486d224e4e5020afc636521e9c04223b59d97eba861e6",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/FOUNDATION-COMPOSITION.md": "82a9b9e1635cd887bef3ea7eb16e0be4c71fdc541ba91db20ff53098ea18d32e",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/NEW-POSSIBILITIES-REVIEW.md": "cb2f6f60a6c717ca10ef13fae17f574f8886d7bb38768f73c255d5802434c575",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EMPIRICAL-SCOPE.md": "f3208aff28c56fe697bb677b867c3f861b3bea894f17b655e95f919201cc28db",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/KNOWLEDGE.md": "7cc2c37cf7d2544d19d65d083783c1f1e69d3fe3d58ebd8469dcd50677aba7a3",
+    "sources/15-codex-theory-conversations/2026-10-08-alignment-grounding-axiom-correction.md": "905cb399de027d43dba8059a82954ce304b2449a478f2ea813af4242c78c1f83",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md": "b303188c0be47b26268b5e4c16d2c1637a6fcfcc593b6d15a66818cb445635f2",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md": "b360e0bad5a43d5ddc8ef2af2c0566b74d8b54c404a3d9268f9cdab6f3978d50",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/FIXED-FINISH-LINE-AUDIT.md": "da266f302153c33dc9932e53465153e76efd928f3d4118b5534d09333061ec79",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md": "be510a31ee5d682e40c8f0afc595b473a23e4d2c7f4ef72a3ec0fd82f84ce00e",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean": "021cdb25eca55e42ea471f68b08a7b5e91a2145578bf0254db2332d7e16afd8c",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/verification.json": "bf262cacb9849bb4289363b3f1102fb676f984848980e94bd63f229cdcf1e748",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/GenerativeEpisode.lean": "8e26b5d1cc400018903e948cba4856c7ba10181d272b1c03888b9ac151672064",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/NewPossibilities.lean": "02cd61df3711b01238c86c71c85ca6ad251443403ad3709ecfd7296e9a89c363",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/new-possibilities-verification.json": "2259de0b79ac7bff82d3057767c5922d5d9f717a4c2e6bdd28a513c78b40c756",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormationRoutes.lean": "e04fbba5fa726eb8c4430ce48bd2b6c0a14213f5c134e0628fe116d7a2bb1b47",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/routes-verification.json": "28cab74bc6be5f7f38c67539dbc13e37a6661cc2ad6ad935053b07b5092826db",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSEQUENCE-ORGANIZATION-MECHANISM.md": "8b69dea0e7e4bf50a856664f5a0055c1ecfc97ab178e44a5baffcfd80c4ec0d3",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/consequence-organization/METHOD-EVIDENCE.json": "91b8ce98599a9be74e5ccc39ccf983c87edd1e7cbefe18d45118ef191f914007",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/verification.json": "495dd1170485a5d1d7dfbbd3984c04c5f62fac5229f37270ea3b1defe52816a0",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal-correspondence.json": "c636f1cf99f2e0b4c5c67846045dcdf42d84290db0acc5754c70e5be7d412368",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/practical-judgment-verification.json": "b9857bbfc496d0133a127a1a0799fd0bff35defd1bbba11dc902d806ab126174",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-CHECK.py": "70421227fcc5a45844987ed6f6465dfb412fb1f653dbefb92132f2a2af5ed6e8"
+  },
+  "proof_evidence": [
+    {
+      "receipt": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/verification.json",
+      "sha256": "bf262cacb9849bb4289363b3f1102fb676f984848980e94bd63f229cdcf1e748",
+      "selected_root": null,
+      "sources": [
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+          "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
+          "sha256": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean",
+          "sha256": "2a93d72c5546106200225c5eabc08e08a7f78ac218541146e006f51f261c8d5a"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean",
+          "sha256": "f04266c1745c71437a5500a955fb6da364eb9cce56b1a4655a04968ac450d5c3"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean",
+          "sha256": "021cdb25eca55e42ea471f68b08a7b5e91a2145578bf0254db2332d7e16afd8c"
+        }
+      ],
+      "saved_artifacts": [
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/verification/GenerativeCore.txt",
+          "sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/verification/FormedSelection.txt",
+          "sha256": "bc40309a6c1a1107769f5ba127164fb16e53dc9dd85949d57285d63a6eaa8686"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/verification/SelectorRevision.txt",
+          "sha256": "8be9f06f8e3931ccfdf0095fbb71c2af4021bd44fe3fadd2101ff57fb22275cc"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/verification/UpdaterFormation.txt",
+          "sha256": "7244069bca5a50cc4445e864c905bb4d4327ca7896651008d2ffd15279bab904"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/verification/PredictionAction.txt",
+          "sha256": "98b624c0824c4e621ee6fdebc17ed4d6fbd64b18d412ad347545e7bd140fe2d4"
+        }
+      ],
+      "outside_selected_closure_changed_since_historical_receipt": [],
+      "scope": "Current cited source closure and retained successful build evidence; no fresh compilation."
+    },
+    {
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/core-tree-verification.json",
+      "sha256": "5077105bbc3f83d7d9a639c966e850cb1c78374d80dbccd92424f1651ea35c39",
+      "selected_root": "GenerativeEpisode",
+      "sources": [
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+          "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
+          "sha256": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/formal/SelectorRevision.lean",
+          "sha256": "2a93d72c5546106200225c5eabc08e08a7f78ac218541146e006f51f261c8d5a"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/formal/UpdaterFormation.lean",
+          "sha256": "f04266c1745c71437a5500a955fb6da364eb9cce56b1a4655a04968ac450d5c3"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/formal/PredictionAction.lean",
+          "sha256": "021cdb25eca55e42ea471f68b08a7b5e91a2145578bf0254db2332d7e16afd8c"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/learning/construction/prediction/GenerativeEpisode.lean",
+          "sha256": "8e26b5d1cc400018903e948cba4856c7ba10181d272b1c03888b9ac151672064"
+        }
+      ],
+      "saved_artifacts": [
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/core-tree-verification/GenerativeCore.txt",
+          "sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/core-tree-verification/FormedSelection.txt",
+          "sha256": "bc40309a6c1a1107769f5ba127164fb16e53dc9dd85949d57285d63a6eaa8686"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/core-tree-verification/SelectorRevision.txt",
+          "sha256": "8be9f06f8e3931ccfdf0095fbb71c2af4021bd44fe3fadd2101ff57fb22275cc"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/core-tree-verification/UpdaterFormation.txt",
+          "sha256": "7244069bca5a50cc4445e864c905bb4d4327ca7896651008d2ffd15279bab904"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/core-tree-verification/PredictionAction.txt",
+          "sha256": "98b624c0824c4e621ee6fdebc17ed4d6fbd64b18d412ad347545e7bd140fe2d4"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/core-tree-verification/GenerativeEpisode.txt",
+          "sha256": "8ebe8a685eaf5cae66e11a87fe503d78382c6d4066cb6fedebd8bcb6b5a2e516"
+        }
+      ],
+      "outside_selected_closure_changed_since_historical_receipt": [
+        "experiments/integrated-correction/general-framework/generative-basis/lean/Depletion.lean",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/RootRealization.lean"
+      ],
+      "scope": "Current cited source closure and retained successful build evidence; no fresh compilation."
+    },
+    {
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/new-possibilities-verification.json",
+      "sha256": "2259de0b79ac7bff82d3057767c5922d5d9f717a4c2e6bdd28a513c78b40c756",
+      "selected_root": null,
+      "sources": [
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+          "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/NewPossibilities.lean",
+          "sha256": "02cd61df3711b01238c86c71c85ca6ad251443403ad3709ecfd7296e9a89c363"
+        }
+      ],
+      "saved_artifacts": [
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/new-possibilities-checks/20261007T193643.865392Z/sources/NewPossibilities.lean",
+          "sha256": "02cd61df3711b01238c86c71c85ca6ad251443403ad3709ecfd7296e9a89c363"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/new-possibilities-checks/20261007T193643.865392Z/sources/GenerativeCore.lean",
+          "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/new-possibilities-checks/20261007T193643.865392Z/GenerativeCore.txt",
+          "sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/new-possibilities-checks/20261007T193643.865392Z/NewPossibilities.txt",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/new-possibilities-checks/20261007T193643.865392Z/axioms.txt",
+          "sha256": "c980c04898cf0a3627bcc89706dc5cc5ff5fa3d19dd75db44b0fd3f00a0ffbe1"
+        }
+      ],
+      "outside_selected_closure_changed_since_historical_receipt": [],
+      "scope": "Current cited source closure and retained successful build evidence; no fresh compilation."
+    },
+    {
+      "receipt": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/verification.json",
+      "sha256": "495dd1170485a5d1d7dfbbd3984c04c5f62fac5229f37270ea3b1defe52816a0",
+      "selected_root": null,
+      "sources": [
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+          "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean",
+          "sha256": "a7bdce34f00ab07edd8b234eb1a7abd435a0cfe8034257ff3928209d0966bf37"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/formal/RecipientCorrection.lean",
+          "sha256": "b42588f0fa631f858142cabc596f693482f30d933e793543005ab40494d00fc1"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/formal/RecipientIdentification.lean",
+          "sha256": "3e755a7d74402f8e14ecfe6c9c6b7713c072b181729fe2b50201e166282032b8"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/EmissionArchive.lean",
+          "sha256": "5d557df2242405c817ac52f987b0e07ec347bff373eeccb01259765474d5e67d"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/RecipientArchive.lean",
+          "sha256": "d122e604965c7e9ab1757b4c99bc484b619d31f245aaf04d86658b4eeb2dc1c0"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/ArchivePreparation.lean",
+          "sha256": "869e37d923316ab27f90c2b34e9b80f5591b9fcfb034b13f2672d9284c79b248"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/formal/PaidArchiveReader.lean",
+          "sha256": "0e509b5000edd501777c547503b8b96de6a348757d5c3ca9fca8d6e824988be9"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/formal/RecordedEvidence.lean",
+          "sha256": "c15c4668e843c728396e2fa07e420d77240494e2757b1cf3a27eba9afae601b9"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/learning-interface/recording/reason-replay/formal/ReasonReplay.lean",
+          "sha256": "948744dd9873de25f21846cd2a23fad2c7aee34b3ac4e2c0587d456f907eca20"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean",
+          "sha256": "2c750ca9fbd432428dc4a69717afdca8862f8efeaabc012429f2031d257d860d"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/PaidRecipientReasons.lean",
+          "sha256": "b63de0b8572a4987345dab4116516b283a40dc6f18fbe7b7afe81dee2c5f1218"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonPreparation.lean",
+          "sha256": "7bbd5e4fbfff22b3f679b6aa345756d1ad532cf56a3fbb8fd18f8dbe8a65a5e6"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/ReasonReplayBridge.lean",
+          "sha256": "f0b7434c1116004658ac711fef1c34044fc28c5fbed24c4357eb2a6d5dc1e04e"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/RecipientAction.lean",
+          "sha256": "56f7b2cc977c36b54705edb5dce2e6692f9831df248c3625e3794b851a1b7c6b"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionPreparation.lean",
+          "sha256": "0edab9069ab5804070df927b4df98861eeb46e956d20d73bf790e699fd353c9f"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/formal/ActionWitness.lean",
+          "sha256": "5eb63e2b7af10e610ef6d34f3121d785c1755a86c73422e0654f074f6674cbf7"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationSafety.lean",
+          "sha256": "27f5be6e07bbaad59101ff24c41e0513f573949b7acd80c94bd8b8b2f760c2fd"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBudget.lean",
+          "sha256": "a947733ac7394a00d90c8be94410aaf27324f7d9b418d8be07aae5dad9f21f97"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/publication-safety/formal/PublicationBridge.lean",
+          "sha256": "56dcdccc9f4ef2c44e268e688d6f4a804b2c61a9527107c10a417d3bb8ad5538"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionPreparation.lean",
+          "sha256": "11278b802f0221eb229fe6eefdcf5a439c72851558cec862d8cfc1e1f35d4b94"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/FreshRevision.lean",
+          "sha256": "2752540ebf8680e35ef28b37d0731dca6e3abdb4f175f693797491af435afd38"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/formal/RevisionWitness.lean",
+          "sha256": "2f2575d664a5436ee341a37488146b84e94a18414a911e1b13385057df6b831f"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityPreparation.lean",
+          "sha256": "d981b4cbe24b781fd5ceb79e0778d91a9fcb32b98e303d08c5bd0565244a7867"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean",
+          "sha256": "6ce4f08cb9f2b497a409482bbfc2281fd6d83a5efad14d2cabb7fbc2d3792b83"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean",
+          "sha256": "df54d86981213e4dbb14d6b707793a244971dbe084d2ac9123b21bf49e0b6e9a"
+        }
+      ],
+      "saved_artifacts": [
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/GenerativeCore.txt",
+          "sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/FormedSelection.txt",
+          "sha256": "bc40309a6c1a1107769f5ba127164fb16e53dc9dd85949d57285d63a6eaa8686"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/RecipientCorrection.txt",
+          "sha256": "797b6ef74c6d412e922bd75d25cc1719e5919c5bfcdbdfa0a0995326caed8ab7"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/RecipientIdentification.txt",
+          "sha256": "0e376b998d48e305b02ad6b5f835918171a48343443e4505b4b996bd1a3c7ad8"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/EmissionArchive.txt",
+          "sha256": "4257f369d815f8baaf276d23f243ef4deca0c8207c7550c514715dcb66db2c91"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/RecipientArchive.txt",
+          "sha256": "1640c929c9d749ce8ddbda0ede23d6253d5320d4521c8890ea3312675ac4d47f"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/ArchivePreparation.txt",
+          "sha256": "f23473fe3f861b3e5dae73e0033d3e54271f18850467dc0dce5828ccdd798af2"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/PaidArchiveReader.txt",
+          "sha256": "af49a435380cb5e5dc73c580f330d72c6d68a0b5e9eb1da2d06a84e2f6e91b38"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/RecordedEvidence.txt",
+          "sha256": "69b0897602b270b0add1d290df7c7e0fce31f1dfdeb651a0331104d07180be7b"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/ReasonReplay.txt",
+          "sha256": "fe2c9bf56e689d3bf36fd55ad15fb1fc514af50b8fe524573cbfe83a3143da02"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/RecipientReasons.txt",
+          "sha256": "a99f3f0ea43729d33e36e1dda2db2ad159a608087ab5fc2c996d3e93fb9077a6"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/PaidRecipientReasons.txt",
+          "sha256": "03cbb9f4131bd05a1c002d6414e219ce6f5ca69efbab05bb7ccafd24fe4ece30"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/ReasonPreparation.txt",
+          "sha256": "ff611c939035289d49fca2e8acccce7327ecdff43d11e7b3a1871c52ddd9dcf8"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/ReasonReplayBridge.txt",
+          "sha256": "2e31da03586db2db90d7ce5355199151c0054564728db2342da15786e4b7cd60"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/RecipientAction.txt",
+          "sha256": "97f2fe0748cb1fbd9e398a252faddadcc4cb29016250dc7d417eea8eaeb44aa0"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/ActionPreparation.txt",
+          "sha256": "f9e5365152d4f4b084e586fd7331d1acfeb016c5c112728cbc3a67e7eb3141ab"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/ActionWitness.txt",
+          "sha256": "92c87094a3f3f6b0ad12a49a4368e14884541ff1d384afa346b6bede40ee92d6"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/PublicationSafety.txt",
+          "sha256": "fc8db73bcab91f84285844001caa6244c28a9a74f24e42eb1cf9379285797af5"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/PublicationBudget.txt",
+          "sha256": "2fc12da2e352053c40f4ce9f1841c55f362f6c3851bfcd8d9caf36ec97c8ea56"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/PublicationBridge.txt",
+          "sha256": "979af7cc3e706335e26a577f9e124e0cefec6a4b1453ce79824384546b65bb2d"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/RevisionPreparation.txt",
+          "sha256": "87a177afebf2a645951fd883c44a816a5a2a2f024a957eff95807abb8c1529dc"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/FreshRevision.txt",
+          "sha256": "f92de3979ebf9e8aa83b4189649664ee0500923b520ce2434fe54e6f226f2231"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/RevisionWitness.txt",
+          "sha256": "080265bda567ab61b275f7d8969d04de9c39c4ac98a050b86512bc321a647f37"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/PlasticityPreparation.txt",
+          "sha256": "b58048a7e6ff6455e96662b03ba4839ff003fd937ea28899e5597bf64c7392ad"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/PairedPlasticity.txt",
+          "sha256": "7df4514a6af7e9cf55baaf0c30aaee08a30cc38e521f06caae11f94e1e47632e"
+        },
+        {
+          "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/development/1791255398690790000/PlasticityWitness.txt",
+          "sha256": "4d6ca14588278d8374f6b8b2c12a3583cdbd520d9196957668aed72b815ae6f2"
+        }
+      ],
+      "outside_selected_closure_changed_since_historical_receipt": [],
+      "scope": "Current cited source closure and retained successful build evidence; no fresh compilation."
+    },
+    {
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/practical-judgment-verification.json",
+      "sha256": "b9857bbfc496d0133a127a1a0799fd0bff35defd1bbba11dc902d806ab126174",
+      "selected_root": null,
+      "sources": [
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean",
+          "sha256": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af"
+        }
+      ],
+      "saved_artifacts": [
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/practical-judgment-checks/20261007T190655.804625Z/PracticalJudgment.lean",
+          "sha256": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/practical-judgment-checks/20261007T190655.804625Z/PracticalJudgment.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/practical-judgment-checks/20261007T190655.804625Z/PracticalJudgmentAxiomAudit.lean",
+          "sha256": "c9f412159410854fb031176d7fe7a4c351dfaea59354c7d7a19ec4ad0c6e51a6"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/practical-judgment-checks/20261007T190655.804625Z/PracticalJudgmentAxiomAudit.log",
+          "sha256": "d73810d6b1a7343808726234c17bca9d7841acafabd3a17ee8e6145dfabbf1ea"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/practical-judgment-checks/20261007T190655.804625Z/PracticalJudgmentSignatures.lean",
+          "sha256": "aec1f9317bc8881cb24e62213fa9db801f59b620595bb90caf082a5debc9cb66"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/practical-judgment-checks/20261007T190655.804625Z/PracticalJudgmentSignatures.log",
+          "sha256": "93b65679f59a01788bfcfbfe0bf5bc3ef93f0cf67516c469f1667c5cdc9abd65"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/practical-judgment-checks/20261007T190655.804625Z/check.py",
+          "sha256": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/practical-judgment-checks/20261007T190655.804625Z/check_practical_judgment.py",
+          "sha256": "7883fd1d3ab49d80f5d47c5cf2d13eedcadfe2a90f2b677248fc2a4b1abe2ac9"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/practical-judgment-checks/20261007T190655.804625Z/version.log",
+          "sha256": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+        }
+      ],
+      "outside_selected_closure_changed_since_historical_receipt": [],
+      "scope": "Current cited source closure and retained successful build evidence; no fresh compilation."
+    },
+    {
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/routes-verification.json",
+      "sha256": "28cab74bc6be5f7f38c67539dbc13e37a6661cc2ad6ad935053b07b5092826db",
+      "selected_root": null,
+      "sources": [
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+          "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormationRoutes.lean",
+          "sha256": "e04fbba5fa726eb8c4430ce48bd2b6c0a14213f5c134e0628fe116d7a2bb1b47"
+        }
+      ],
+      "saved_artifacts": [
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/route-checks/20261007T132821.595530Z/FormationRoutes.lean",
+          "sha256": "e04fbba5fa726eb8c4430ce48bd2b6c0a14213f5c134e0628fe116d7a2bb1b47"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/route-checks/20261007T132821.595530Z/FormationRoutes.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/route-checks/20261007T132821.595530Z/FormationRoutesAxiomAudit.lean",
+          "sha256": "e30478875943e9a4b419856118d73626b81b7d5e46633b760de576f1a1870422"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/route-checks/20261007T132821.595530Z/FormationRoutesAxiomAudit.log",
+          "sha256": "1f019279491bfcba01b417568ae58dba54d139d0dacb2c414b2f930c4e11c75c"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/route-checks/20261007T132821.595530Z/GenerativeCore.lean",
+          "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/route-checks/20261007T132821.595530Z/GenerativeCore.log",
+          "sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/route-checks/20261007T132821.595530Z/GenerativeCoreAxiomAudit.lean",
+          "sha256": "1fa733a28044ead178c5a811051dd0d7bc0f4505ef5c69d360c6bc126eabc027"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/route-checks/20261007T132821.595530Z/GenerativeCoreAxiomAudit.log",
+          "sha256": "a940c563aa7dafc2204031660bcc59f2780125b6bdb5350b7daac8b1226585f1"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/route-checks/20261007T132821.595530Z/check.py",
+          "sha256": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/route-checks/20261007T132821.595530Z/check_routes.py",
+          "sha256": "dfd122cfe32cd1f07a1a03dc4e2c15eae4a533f6637934c3546f9dcbcff2ae8d"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/route-checks/20261007T132821.595530Z/version.log",
+          "sha256": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+        }
+      ],
+      "outside_selected_closure_changed_since_historical_receipt": [],
+      "scope": "Current cited source closure and retained successful build evidence; no fresh compilation."
+    }
+  ],
+  "plasticity_correspondence": {
+    "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal-correspondence.json",
+    "sha256": "c636f1cf99f2e0b4c5c67846045dcdf42d84290db0acc5754c70e5be7d412368",
+    "bound_sources": [
+      {
+        "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/check_formal_correspondence.py",
+        "sha256": "d5331c0c9bc558145729d5cd78461b3a82a9a059145c6a165266a17643b4b627"
+      },
+      {
+        "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/results.json.gz",
+        "sha256": "b4ecc868292bc0eababc055b6ae2d2616a1310802b101f3f94c4be1c2b5ef920"
+      },
+      {
+        "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/result-files.json",
+        "sha256": "4d5c265cdfb882fe698869e833a9892c63c2dd5afb39418dc8989f4673697dc4"
+      },
+      {
+        "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/model-verification.json",
+        "sha256": "4fadfe6ee460b7e5175a1ff3eac6bfaa64582c5abb49f3b65bf0b96ca3149138"
+      },
+      {
+        "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/verification.json",
+        "sha256": "495dd1170485a5d1d7dfbbd3984c04c5f62fac5229f37270ea3b1defe52816a0"
+      },
+      {
+        "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityWitness.lean",
+        "sha256": "df54d86981213e4dbb14d6b707793a244971dbe084d2ac9123b21bf49e0b6e9a"
+      },
+      {
+        "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PairedPlasticity.lean",
+        "sha256": "6ce4f08cb9f2b497a409482bbfc2281fd6d83a5efad14d2cabb7fbc2d3792b83"
+      },
+      {
+        "path": "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/action/revision/evaluation/plasticity/formal/PlasticityPreparation.lean",
+        "sha256": "d981b4cbe24b781fd5ceb79e0778d91a9fcb32b98e303d08c5bd0565244a7867"
+      }
+    ],
+    "milestones": 14,
+    "scope": "Fourteen selected states in one actual accepted predecessor history; not full-state equality, arbitrary-event refinement or the whole numerical menu."
+  },
+  "method_evidence": {
+    "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/consequence-organization/METHOD-EVIDENCE.json",
+    "sha256": "91b8ce98599a9be74e5ccc39ccf983c87edd1e7cbefe18d45118ef191f914007",
+    "bound_sources": [
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/model.py",
+        "sha256": "f2bcc85688975d9a6e6fac4c0944e5b4f6ce0ede779707719c41428db3a4d303"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/results.json",
+        "sha256": "2b0afb08f3507eaf2de3126dcc43a3dca8dd65ff6603658ee8aae697e42263e4"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/independent-check.json",
+        "sha256": "343271383adae738f6fcbf7a0541d399fa85ad4d19942fcea33803403f40ef97"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/model.py",
+        "sha256": "f2bcc85688975d9a6e6fac4c0944e5b4f6ce0ede779707719c41428db3a4d303"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/PROTOCOL.md",
+        "sha256": "0491194fc7502ea6be11375f793ffc96fe3b60ba59c1468e5afe0c17eb53cd65"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/independent_check.py",
+        "sha256": "6c0901f5da5a7fc202e2a743591a36d0ca978a36c0f8ca9fc6de7946f1e5d8c9"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/independent_check.py",
+        "sha256": "617e42055af7f836d71d30e61002ad8b1a5e998f28996798aebb424c42d4939a"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/access/revision/metarevision/methods/formation/check.py",
+        "sha256": "5eddfd8d8e2d10c3e858ad443b683f2106f38d8adfb08a3b1049e00781ffc0ab"
+      }
+    ],
+    "scope": "Read-only extraction and current-byte binding of accepted source/results; no transition rerun, theorem or empirical result."
+  },
+  "chain_row": "C01",
+  "chain_changes_remaining": {
+    "modified_sources": [],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-EXPANSION-EVIDENCE.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-EXPANSION-REVIEW.md"
+    ],
+    "removed_pages": []
+  }
+}

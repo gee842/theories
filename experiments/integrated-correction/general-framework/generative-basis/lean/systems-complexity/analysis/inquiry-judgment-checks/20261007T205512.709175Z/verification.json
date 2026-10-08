@@ -1,0 +1,2898 @@
+{
+  "checked_at_utc": "2026-10-07T20:55:49.496805+00:00",
+  "status": "passed",
+  "lean_version": "Lean (version 4.30.0-rc2, arm64-apple-darwin24.6.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc, Release)",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "targets": [
+    "InquiryJudgment"
+  ],
+  "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/inquiry-judgment-checks/20261007T205512.709175Z",
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "Generative.Process"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.Enabled"
+        },
+        {
+          "kind": "inductive",
+          "name": "Generative.Trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_nil_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_cons_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_singleton_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_append_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_iff_singleton_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_difference_implies_state_difference"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.Feasible"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_append_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_prefix"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.productProcess"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_product_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_left"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_right"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_mk"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_product_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_map"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_lift"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.projected_trace_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.projection_exact_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.local_exact_iff_trace_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_projection_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_projection_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_difference_implies_projection_difference"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_faithful_iff"
+        }
+      ],
+      "audits": 28,
+      "theorems": 23,
+      "nonempty_audits": {}
+    },
+    {
+      "module": "SystemsOrganization",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SystemsOrganization.lean",
+      "source_sha256": "fd9622e4b76602f4f97bc9290798d01b4a7c2f3925023c268f5d3fb75e3dbf8b",
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "SystemsOrganization.evolve"
+        },
+        {
+          "kind": "def",
+          "name": "SystemsOrganization.deterministic"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemsOrganization.deterministic_trace_iff"
+        },
+        {
+          "kind": "def",
+          "name": "SystemsOrganization.Commuting"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemsOrganization.evolve_semiconjugacy"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemsOrganization.commuting_iff_all_words"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemsOrganization.projected_trace_exact"
+        },
+        {
+          "kind": "def",
+          "name": "SystemsOrganization.FibreConsistent"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemsOrganization.reduced_law_exists_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemsOrganization.commuting_composes"
+        },
+        {
+          "kind": "def",
+          "name": "SystemsOrganization.coupledNext"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemsOrganization.coupled_components_preserve_history"
+        },
+        {
+          "kind": "def",
+          "name": "SystemsOrganization.copyCell"
+        },
+        {
+          "kind": "def",
+          "name": "SystemsOrganization.routed"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemsOrganization.self_routing_fixed"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemsOrganization.cross_routing_two_steps"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemsOrganization.cross_routing_not_fixed"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemsOrganization.same_cells_different_collective_recurrence"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemsOrganization.crossed_left_not_fibre_consistent"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemsOrganization.no_autonomous_left_law"
+        },
+        {
+          "kind": "structure",
+          "name": "SystemsOrganization.Device"
+        },
+        {
+          "kind": "inductive",
+          "name": "SystemsOrganization.Event"
+        },
+        {
+          "kind": "def",
+          "name": "SystemsOrganization.assembled"
+        },
+        {
+          "kind": "def",
+          "name": "SystemsOrganization.exchanged"
+        },
+        {
+          "kind": "def",
+          "name": "SystemsOrganization.organization"
+        },
+        {
+          "kind": "def",
+          "name": "SystemsOrganization.parts"
+        },
+        {
+          "kind": "def",
+          "name": "SystemsOrganization.linkInventory"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemsOrganization.link_inventory_preserved"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemsOrganization.fuel_does_not_increase"
+        },
+        {
+          "kind": "def",
+          "name": "SystemsOrganization.raw"
+        },
+        {
+          "kind": "def",
+          "name": "SystemsOrganization.formed"
+        },
+        {
+          "kind": "def",
+          "name": "SystemsOrganization.exchangedOnce"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemsOrganization.formation_step"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemsOrganization.formation_preserves_cell_values"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemsOrganization.formation_consumes_spare_and_fuel"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemsOrganization.exchange_unavailable_before_formation"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemsOrganization.exchange_available_after_formation"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemsOrganization.formation_and_recurrence_same_history"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemsOrganization.parts_only_cannot_preserve_futures"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemsOrganization.no_fuel_blocks_formation"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemsOrganization.no_spare_blocks_formation"
+        }
+      ],
+      "audits": 41,
+      "theorems": 24,
+      "nonempty_audits": {}
+    },
+    {
+      "module": "RelationsAcrossScales",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean",
+      "source_sha256": "24f8eb4269927017b6e65841011c3a4a52002bfe405bf5d09d8a99be7c0cf273",
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "RelationsAcrossScales.budget"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationsAcrossScales.history_is_core_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationsAcrossScales.one_step"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationsAcrossScales.finite_horizon_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationsAcrossScales.budget_cap"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationsAcrossScales.composed_defect"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationsAcrossScales.observable_error"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationsAcrossScales.protected_conditions"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationsAcrossScales.violation_certificate"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationsAcrossScales.fibre_error_lower_bound"
+        },
+        {
+          "kind": "def",
+          "name": "RelationsAcrossScales.total"
+        },
+        {
+          "kind": "def",
+          "name": "RelationsAcrossScales.routing"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationsAcrossScales.routing_total"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationsAcrossScales.routing_defect_lower_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationsAcrossScales.routing_error_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationsAcrossScales.enriched_routing_exact"
+        },
+        {
+          "kind": "def",
+          "name": "RelationsAcrossScales.transfer"
+        },
+        {
+          "kind": "def",
+          "name": "RelationsAcrossScales.basicProtected"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationsAcrossScales.total_exact_through_transfer"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationsAcrossScales.exact_total_can_hide_loss"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationsAcrossScales.no_total_only_protection"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationsAcrossScales.minimum_preserves_protection"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationsAcrossScales.frozen_charts_miss_change"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationsAcrossScales.linear_drift"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationsAcrossScales.positive_drift_unbounded"
+        },
+        {
+          "kind": "theorem",
+          "name": "RelationsAcrossScales.threshold_ambiguity"
+        }
+      ],
+      "audits": 26,
+      "theorems": 21,
+      "nonempty_audits": {
+        "RelationsAcrossScales.budget": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RelationsAcrossScales.one_step": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RelationsAcrossScales.finite_horizon_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RelationsAcrossScales.budget_cap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RelationsAcrossScales.composed_defect": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RelationsAcrossScales.observable_error": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RelationsAcrossScales.protected_conditions": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RelationsAcrossScales.violation_certificate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RelationsAcrossScales.fibre_error_lower_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RelationsAcrossScales.total": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RelationsAcrossScales.routing": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RelationsAcrossScales.routing_total": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RelationsAcrossScales.routing_defect_lower_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RelationsAcrossScales.routing_error_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RelationsAcrossScales.enriched_routing_exact": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RelationsAcrossScales.transfer": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RelationsAcrossScales.basicProtected": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RelationsAcrossScales.total_exact_through_transfer": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RelationsAcrossScales.exact_total_can_hide_loss": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RelationsAcrossScales.no_total_only_protection": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RelationsAcrossScales.minimum_preserves_protection": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RelationsAcrossScales.frozen_charts_miss_change": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RelationsAcrossScales.linear_drift": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RelationsAcrossScales.positive_drift_unbounded": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "RelationsAcrossScales.threshold_ambiguity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "module": "RemainingDependency",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean",
+      "source_sha256": "bacb8ebbdb38ea3367250f39f3dc5aace9a4e557256dc69cb00e70ccbe41af98",
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "RemainingDependency.ticks"
+        },
+        {
+          "kind": "structure",
+          "name": "RemainingDependency.Pair"
+        },
+        {
+          "kind": "def",
+          "name": "RemainingDependency.Pair.get"
+        },
+        {
+          "kind": "def",
+          "name": "RemainingDependency.Pair.set"
+        },
+        {
+          "kind": "structure",
+          "name": "RemainingDependency.Account"
+        },
+        {
+          "kind": "def",
+          "name": "RemainingDependency.tariff"
+        },
+        {
+          "kind": "inductive",
+          "name": "RemainingDependency.Error"
+        },
+        {
+          "kind": "def",
+          "name": "RemainingDependency.charge"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.charge_conserves"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.charge_never_increases_fuel"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.charge_denial_preserves_account"
+        },
+        {
+          "kind": "def",
+          "name": "RemainingDependency.choose"
+        },
+        {
+          "kind": "def",
+          "name": "RemainingDependency.faithful"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.chosen_setting_supported"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.productive_pair_has_selected_setting"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.absent_evidence_is_not_negative"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.no_constant_setting_serves_opposed_relations"
+        },
+        {
+          "kind": "def",
+          "name": "RemainingDependency.Calibrated"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.calibrated_selected_setting_transfers"
+        },
+        {
+          "kind": "structure",
+          "name": "RemainingDependency.Ancestor"
+        },
+        {
+          "kind": "structure",
+          "name": "RemainingDependency.Datum"
+        },
+        {
+          "kind": "def",
+          "name": "RemainingDependency.decode"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.faithful_bound_datum_decodes"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.wrong_context_stays_unknown"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.missing_stays_unknown"
+        },
+        {
+          "kind": "structure",
+          "name": "RemainingDependency.Stocks"
+        },
+        {
+          "kind": "def",
+          "name": "RemainingDependency.discharge"
+        },
+        {
+          "kind": "def",
+          "name": "RemainingDependency.Stocks.total"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.discharge_conserves"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.supported_discharge_delivers"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.unsupported_discharge_wastes"
+        },
+        {
+          "kind": "def",
+          "name": "RemainingDependency.fullTransfer"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.transfer_actor_account_conserved"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.transfer_stocks_conserved"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.empty_source_cannot_debit_actor"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.affordable_calibrated_selection_delivers"
+        },
+        {
+          "kind": "inductive",
+          "name": "RemainingDependency.Mode"
+        },
+        {
+          "kind": "def",
+          "name": "RemainingDependency.resultMode"
+        },
+        {
+          "kind": "inductive",
+          "name": "RemainingDependency.Fault"
+        },
+        {
+          "kind": "structure",
+          "name": "RemainingDependency.Config"
+        },
+        {
+          "kind": "structure",
+          "name": "RemainingDependency.Body"
+        },
+        {
+          "kind": "structure",
+          "name": "RemainingDependency.State"
+        },
+        {
+          "kind": "def",
+          "name": "RemainingDependency.paid"
+        },
+        {
+          "kind": "def",
+          "name": "RemainingDependency.channel"
+        },
+        {
+          "kind": "inductive",
+          "name": "RemainingDependency.Event"
+        },
+        {
+          "kind": "def",
+          "name": "RemainingDependency.advance"
+        },
+        {
+          "kind": "def",
+          "name": "RemainingDependency.step"
+        },
+        {
+          "kind": "def",
+          "name": "RemainingDependency.process"
+        },
+        {
+          "kind": "def",
+          "name": "RemainingDependency.run"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.ancestral_coordinates_unchanged"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.run_ancestral_coordinates_unchanged"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.completed_component_stays_complete"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.run_is_core_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.consumer_read_ignores_latent_law"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.weak_challenge_does_not_supply_load"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.slot_write_does_not_supply_load"
+        },
+        {
+          "kind": "def",
+          "name": "RemainingDependency.actorTotal"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.paid_account_conserved"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.paid_stocks_preserved"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.advance_actor_account_conserved"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.advance_stock_account_conserved"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.run_actor_account_conserved"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.run_stock_account_conserved"
+        },
+        {
+          "kind": "def",
+          "name": "RemainingDependency.wholeTotal"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.whole_history_conserved"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.finite_original_support_bounds_fuel"
+        },
+        {
+          "kind": "def",
+          "name": "RemainingDependency.entrance"
+        },
+        {
+          "kind": "def",
+          "name": "RemainingDependency.assayEvents"
+        },
+        {
+          "kind": "def",
+          "name": "RemainingDependency.serviceEvents"
+        },
+        {
+          "kind": "def",
+          "name": "RemainingDependency.continuation"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.truthful_paid_assay_acquires_pair"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.truthful_paid_assay_commits_supported_choice"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.actual_dependent_service"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.opposed_dependency_changes_the_enacted_relation"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.matched_clamp_preserves_acquisition_but_withholds_use"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.matched_assay_cost_through_commit"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.missing_contact_is_unresolved"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.false_positive_can_misdirect_remaining_packet"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.broken_calibration_defeats_correct_weak_record"
+        },
+        {
+          "kind": "theorem",
+          "name": "RemainingDependency.unavailable_relation_is_not_old_unfulfillment"
+        }
+      ],
+      "audits": 80,
+      "theorems": 43,
+      "nonempty_audits": {
+        "RemainingDependency.charge_conserves": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RemainingDependency.charge_denial_preserves_account": [
+          "propext"
+        ],
+        "RemainingDependency.choose": [
+          "propext"
+        ],
+        "RemainingDependency.chosen_setting_supported": [
+          "propext"
+        ],
+        "RemainingDependency.productive_pair_has_selected_setting": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RemainingDependency.absent_evidence_is_not_negative": [
+          "propext"
+        ],
+        "RemainingDependency.no_constant_setting_serves_opposed_relations": [
+          "propext"
+        ],
+        "RemainingDependency.calibrated_selected_setting_transfers": [
+          "propext"
+        ],
+        "RemainingDependency.faithful_bound_datum_decodes": [
+          "propext"
+        ],
+        "RemainingDependency.wrong_context_stays_unknown": [
+          "propext"
+        ],
+        "RemainingDependency.discharge_conserves": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RemainingDependency.supported_discharge_delivers": [
+          "propext"
+        ],
+        "RemainingDependency.unsupported_discharge_wastes": [
+          "propext"
+        ],
+        "RemainingDependency.transfer_actor_account_conserved": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RemainingDependency.transfer_stocks_conserved": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RemainingDependency.empty_source_cannot_debit_actor": [
+          "propext"
+        ],
+        "RemainingDependency.affordable_calibrated_selection_delivers": [
+          "propext"
+        ],
+        "RemainingDependency.resultMode": [
+          "propext"
+        ],
+        "RemainingDependency.advance": [
+          "propext"
+        ],
+        "RemainingDependency.step": [
+          "propext"
+        ],
+        "RemainingDependency.process": [
+          "propext"
+        ],
+        "RemainingDependency.run": [
+          "propext"
+        ],
+        "RemainingDependency.ancestral_coordinates_unchanged": [
+          "propext"
+        ],
+        "RemainingDependency.run_ancestral_coordinates_unchanged": [
+          "propext"
+        ],
+        "RemainingDependency.completed_component_stays_complete": [
+          "propext"
+        ],
+        "RemainingDependency.run_is_core_trace": [
+          "propext"
+        ],
+        "RemainingDependency.consumer_read_ignores_latent_law": [
+          "propext"
+        ],
+        "RemainingDependency.weak_challenge_does_not_supply_load": [
+          "propext"
+        ],
+        "RemainingDependency.slot_write_does_not_supply_load": [
+          "propext"
+        ],
+        "RemainingDependency.paid_account_conserved": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RemainingDependency.advance_actor_account_conserved": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RemainingDependency.advance_stock_account_conserved": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RemainingDependency.run_actor_account_conserved": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RemainingDependency.run_stock_account_conserved": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RemainingDependency.whole_history_conserved": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RemainingDependency.finite_original_support_bounds_fuel": [
+          "propext",
+          "Quot.sound"
+        ],
+        "RemainingDependency.continuation": [
+          "propext"
+        ],
+        "RemainingDependency.truthful_paid_assay_acquires_pair": [
+          "propext"
+        ],
+        "RemainingDependency.truthful_paid_assay_commits_supported_choice": [
+          "propext"
+        ],
+        "RemainingDependency.actual_dependent_service": [
+          "propext"
+        ],
+        "RemainingDependency.opposed_dependency_changes_the_enacted_relation": [
+          "propext"
+        ],
+        "RemainingDependency.matched_clamp_preserves_acquisition_but_withholds_use": [
+          "propext"
+        ],
+        "RemainingDependency.matched_assay_cost_through_commit": [
+          "propext"
+        ],
+        "RemainingDependency.missing_contact_is_unresolved": [
+          "propext"
+        ],
+        "RemainingDependency.false_positive_can_misdirect_remaining_packet": [
+          "propext"
+        ],
+        "RemainingDependency.broken_calibration_defeats_correct_weak_record": [
+          "propext"
+        ],
+        "RemainingDependency.unavailable_relation_is_not_old_unfulfillment": [
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "ScaleRevision",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean",
+      "source_sha256": "16d39c9497dba735eeabdd52d3b5b2e6ae256d613f40b73da5fab0b38ed61df5",
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "ScaleRevision.View"
+        },
+        {
+          "kind": "structure",
+          "name": "ScaleRevision.Config"
+        },
+        {
+          "kind": "structure",
+          "name": "ScaleRevision.State"
+        },
+        {
+          "kind": "def",
+          "name": "ScaleRevision.total"
+        },
+        {
+          "kind": "def",
+          "name": "ScaleRevision.loss"
+        },
+        {
+          "kind": "def",
+          "name": "ScaleRevision.drift"
+        },
+        {
+          "kind": "def",
+          "name": "ScaleRevision.forecast"
+        },
+        {
+          "kind": "def",
+          "name": "ScaleRevision.dose"
+        },
+        {
+          "kind": "def",
+          "name": "ScaleRevision.paid"
+        },
+        {
+          "kind": "def",
+          "name": "ScaleRevision.probeBody"
+        },
+        {
+          "kind": "def",
+          "name": "ScaleRevision.inspectBody"
+        },
+        {
+          "kind": "def",
+          "name": "ScaleRevision.reviseBody"
+        },
+        {
+          "kind": "def",
+          "name": "ScaleRevision.respondBody"
+        },
+        {
+          "kind": "def",
+          "name": "ScaleRevision.fixedBody"
+        },
+        {
+          "kind": "inductive",
+          "name": "ScaleRevision.Event"
+        },
+        {
+          "kind": "def",
+          "name": "ScaleRevision.advance"
+        },
+        {
+          "kind": "def",
+          "name": "ScaleRevision.run"
+        },
+        {
+          "kind": "def",
+          "name": "ScaleRevision.entrance"
+        },
+        {
+          "kind": "def",
+          "name": "ScaleRevision.inquiry"
+        },
+        {
+          "kind": "def",
+          "name": "ScaleRevision.complete"
+        },
+        {
+          "kind": "theorem",
+          "name": "ScaleRevision.run_is_core_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "ScaleRevision.probe_obtains_actual_loss"
+        },
+        {
+          "kind": "theorem",
+          "name": "ScaleRevision.truthful_changed_probe_requests_refinement"
+        },
+        {
+          "kind": "theorem",
+          "name": "ScaleRevision.revised_exact_forecast"
+        },
+        {
+          "kind": "theorem",
+          "name": "ScaleRevision.calibrated_response_margin"
+        },
+        {
+          "kind": "theorem",
+          "name": "ScaleRevision.readout_error_enters_response"
+        },
+        {
+          "kind": "theorem",
+          "name": "ScaleRevision.dose_nonnegative"
+        },
+        {
+          "kind": "theorem",
+          "name": "ScaleRevision.bounded_source_after_response"
+        },
+        {
+          "kind": "theorem",
+          "name": "ScaleRevision.response_keeps_second"
+        },
+        {
+          "kind": "theorem",
+          "name": "ScaleRevision.response_support_balance"
+        },
+        {
+          "kind": "theorem",
+          "name": "ScaleRevision.actual_response_condition"
+        },
+        {
+          "kind": "def",
+          "name": "ScaleRevision.workTotal"
+        },
+        {
+          "kind": "theorem",
+          "name": "ScaleRevision.paid_work_conserved"
+        },
+        {
+          "kind": "theorem",
+          "name": "ScaleRevision.advance_work_conserved"
+        },
+        {
+          "kind": "theorem",
+          "name": "ScaleRevision.run_work_conserved"
+        },
+        {
+          "kind": "theorem",
+          "name": "ScaleRevision.waited_evidence_rejected"
+        },
+        {
+          "kind": "theorem",
+          "name": "ScaleRevision.acquired_revision_endpoint"
+        },
+        {
+          "kind": "theorem",
+          "name": "ScaleRevision.enacted_refinement_protects"
+        },
+        {
+          "kind": "theorem",
+          "name": "ScaleRevision.clamped_description_loses_condition"
+        },
+        {
+          "kind": "theorem",
+          "name": "ScaleRevision.ignored_revision_delay_loses_condition"
+        },
+        {
+          "kind": "theorem",
+          "name": "ScaleRevision.biased_new_coordinate_loses_condition"
+        },
+        {
+          "kind": "theorem",
+          "name": "ScaleRevision.inquiry_can_exhaust_response_funding"
+        },
+        {
+          "kind": "theorem",
+          "name": "ScaleRevision.insufficient_response_source"
+        },
+        {
+          "kind": "theorem",
+          "name": "ScaleRevision.mismatched_context_withholds_response"
+        },
+        {
+          "kind": "theorem",
+          "name": "ScaleRevision.matched_revision_preserves_other_inputs"
+        },
+        {
+          "kind": "theorem",
+          "name": "ScaleRevision.bounded_bias_margin_recovers"
+        },
+        {
+          "kind": "theorem",
+          "name": "ScaleRevision.conservative_margin_can_exceed_source"
+        },
+        {
+          "kind": "theorem",
+          "name": "ScaleRevision.fixed_response_also_protects"
+        }
+      ],
+      "audits": 48,
+      "theorems": 27,
+      "nonempty_audits": {
+        "ScaleRevision.Config": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.State": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.total": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.loss": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.drift": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.forecast": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.dose": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.paid": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.probeBody": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.inspectBody": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.reviseBody": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.respondBody": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.fixedBody": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.advance": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.run": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.entrance": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.run_is_core_trace": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.probe_obtains_actual_loss": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.truthful_changed_probe_requests_refinement": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.revised_exact_forecast": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.calibrated_response_margin": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.readout_error_enters_response": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.dose_nonnegative": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.bounded_source_after_response": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.response_keeps_second": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.response_support_balance": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.actual_response_condition": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.workTotal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.paid_work_conserved": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.advance_work_conserved": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.run_work_conserved": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.waited_evidence_rejected": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.acquired_revision_endpoint": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.enacted_refinement_protects": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.clamped_description_loses_condition": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.ignored_revision_delay_loses_condition": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.biased_new_coordinate_loses_condition": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.inquiry_can_exhaust_response_funding": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.insufficient_response_source": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.mismatched_context_withholds_response": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.matched_revision_preserves_other_inputs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.bounded_bias_margin_recovers": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.conservative_margin_can_exceed_source": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ScaleRevision.fixed_response_also_protects": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "module": "PracticalJudgment",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean",
+      "source_sha256": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Included"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.StrictIncluded"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.included_trans"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.strict_included_irrefl"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.strict_included_trans"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Better"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.better_irrefl"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.better_trans"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.protection_anchor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.no_protection_trade_by_count"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Frontier"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.dominated_excluded"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.finite_frontier"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Required"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.required_performed"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.alternative_defeats_specific_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.impossible_menu_no_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.necessary_means_required"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Assigned"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.unique_responder_required"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.assignment_respects_capacity"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Covered"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.transfer_requires_actual_successor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.no_demand_gap_transfer"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.uncovered_demand_is_failure"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Settled"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Residual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.settlement_removes_residual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.unfulfilled_unreleased_remains"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Robust"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.robust_at_actual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.robust_under_refinement"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.required_under_faithful_redescription"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.withinCeiling"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.optionalFormation"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.supplied_ceiling_bounds_optional_gain"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.independent_choices_not_joint_capacity"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.basis"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.event"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.mixed_repair_anchor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.repair_retains_real_loss"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.protectedOne"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.noGain"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.competing_claims_incomparable"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.collective_duty_without_individual_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.uncertain_worlds_need_common_plan"
+        }
+      ],
+      "audits": 46,
+      "theorems": 30,
+      "nonempty_audits": {
+        "PracticalJudgment.finite_frontier": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.no_demand_gap_transfer": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.supplied_ceiling_bounds_optional_gain": [
+          "propext"
+        ],
+        "PracticalJudgment.independent_choices_not_joint_capacity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.competing_claims_incomparable": [
+          "propext"
+        ],
+        "PracticalJudgment.collective_duty_without_individual_duty": [
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "InquiryJudgment",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean",
+      "source_sha256": "d91f3c391fd7c98ea9f9f8dd8ee050618604b32217b9e6610753129d580268a6",
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.response_charge_succeeds"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.funded_calibrated_response"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.robust_execution_at_actual"
+        },
+        {
+          "kind": "inductive",
+          "name": "InquiryJudgment.Case"
+        },
+        {
+          "kind": "inductive",
+          "name": "InquiryJudgment.Plan"
+        },
+        {
+          "kind": "inductive",
+          "name": "InquiryJudgment.Claim"
+        },
+        {
+          "kind": "def",
+          "name": "InquiryJudgment.config"
+        },
+        {
+          "kind": "def",
+          "name": "InquiryJudgment.events"
+        },
+        {
+          "kind": "def",
+          "name": "InquiryJudgment.outcome"
+        },
+        {
+          "kind": "def",
+          "name": "InquiryJudgment.holds"
+        },
+        {
+          "kind": "def",
+          "name": "InquiryJudgment.protects"
+        },
+        {
+          "kind": "def",
+          "name": "InquiryJudgment.chosen"
+        },
+        {
+          "kind": "def",
+          "name": "InquiryJudgment.both"
+        },
+        {
+          "kind": "def",
+          "name": "InquiryJudgment.accurateOnly"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.outcome_is_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.all_work_accounted"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.continuation_table"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.companion_retained"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.fixed_protects"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.robust_continuation_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.fixed_dominates_failures"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.fixed_is_chosen"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.chosen_iff_fixed"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.chosen_has_protecting_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.collective_response_required"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.pointwise_success_not_common_choice"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.protection_under_narrowing"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.accurate_measurement_protects"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.false_narrowing_loses_actual_claim"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.accurate_measured_is_chosen"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.broader_cases_change_judgment"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.optional_supply_loss_is_real"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.underfunded_menu_has_no_success"
+        },
+        {
+          "kind": "def",
+          "name": "InquiryJudgment.selectedAllowance"
+        },
+        {
+          "kind": "def",
+          "name": "InquiryJudgment.adaptiveAdvance"
+        },
+        {
+          "kind": "def",
+          "name": "InquiryJudgment.adaptiveOutcome"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.selection_uses_acquired_coordinate"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.adaptive_is_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.adaptive_matches_successful_history"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.adaptive_protects"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.adaptive_work_accounted"
+        },
+        {
+          "kind": "def",
+          "name": "InquiryJudgment.extendedOutcome"
+        },
+        {
+          "kind": "def",
+          "name": "InquiryJudgment.extendedProtect"
+        },
+        {
+          "kind": "def",
+          "name": "InquiryJudgment.extendedChosen"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.complete_protection_is_undominated"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.extended_fixed_is_chosen"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.extended_adaptive_is_chosen"
+        },
+        {
+          "kind": "theorem",
+          "name": "InquiryJudgment.extended_protection_required_without_fixed_requirement"
+        }
+      ],
+      "audits": 48,
+      "theorems": 31,
+      "nonempty_audits": {
+        "InquiryJudgment.response_charge_succeeds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.funded_calibrated_response": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.robust_execution_at_actual": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.config": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.outcome": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.holds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.protects": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.chosen": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.outcome_is_trace": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.all_work_accounted": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.continuation_table": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.companion_retained": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.fixed_protects": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.robust_continuation_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.fixed_dominates_failures": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.fixed_is_chosen": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.chosen_iff_fixed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.chosen_has_protecting_trace": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.collective_response_required": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.pointwise_success_not_common_choice": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.protection_under_narrowing": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.accurate_measurement_protects": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.false_narrowing_loses_actual_claim": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.accurate_measured_is_chosen": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.broader_cases_change_judgment": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.optional_supply_loss_is_real": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.underfunded_menu_has_no_success": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.selectedAllowance": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.adaptiveAdvance": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.adaptiveOutcome": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.selection_uses_acquired_coordinate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.adaptive_is_trace": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.adaptive_matches_successful_history": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.adaptive_protects": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.adaptive_work_accounted": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.extendedOutcome": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.extendedProtect": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.extendedChosen": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.complete_protection_is_undominated": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.extended_fixed_is_chosen": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.extended_adaptive_is_chosen": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "InquiryJudgment.extended_protection_required_without_fixed_requirement": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    }
+  ],
+  "total_audits": 317,
+  "new_audits": 48,
+  "new_theorems": 31,
+  "nonempty_audits": {
+    "RelationsAcrossScales.budget": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.one_step": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.finite_horizon_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.budget_cap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.composed_defect": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.observable_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.protected_conditions": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.violation_certificate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.fibre_error_lower_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.total": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.routing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.routing_total": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.routing_defect_lower_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.routing_error_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.enriched_routing_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.transfer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.basicProtected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.total_exact_through_transfer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.exact_total_can_hide_loss": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.no_total_only_protection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.minimum_preserves_protection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.frozen_charts_miss_change": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.linear_drift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.positive_drift_unbounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.threshold_ambiguity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RemainingDependency.charge_conserves": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RemainingDependency.charge_denial_preserves_account": [
+      "propext"
+    ],
+    "RemainingDependency.choose": [
+      "propext"
+    ],
+    "RemainingDependency.chosen_setting_supported": [
+      "propext"
+    ],
+    "RemainingDependency.productive_pair_has_selected_setting": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RemainingDependency.absent_evidence_is_not_negative": [
+      "propext"
+    ],
+    "RemainingDependency.no_constant_setting_serves_opposed_relations": [
+      "propext"
+    ],
+    "RemainingDependency.calibrated_selected_setting_transfers": [
+      "propext"
+    ],
+    "RemainingDependency.faithful_bound_datum_decodes": [
+      "propext"
+    ],
+    "RemainingDependency.wrong_context_stays_unknown": [
+      "propext"
+    ],
+    "RemainingDependency.discharge_conserves": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RemainingDependency.supported_discharge_delivers": [
+      "propext"
+    ],
+    "RemainingDependency.unsupported_discharge_wastes": [
+      "propext"
+    ],
+    "RemainingDependency.transfer_actor_account_conserved": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RemainingDependency.transfer_stocks_conserved": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RemainingDependency.empty_source_cannot_debit_actor": [
+      "propext"
+    ],
+    "RemainingDependency.affordable_calibrated_selection_delivers": [
+      "propext"
+    ],
+    "RemainingDependency.resultMode": [
+      "propext"
+    ],
+    "RemainingDependency.advance": [
+      "propext"
+    ],
+    "RemainingDependency.step": [
+      "propext"
+    ],
+    "RemainingDependency.process": [
+      "propext"
+    ],
+    "RemainingDependency.run": [
+      "propext"
+    ],
+    "RemainingDependency.ancestral_coordinates_unchanged": [
+      "propext"
+    ],
+    "RemainingDependency.run_ancestral_coordinates_unchanged": [
+      "propext"
+    ],
+    "RemainingDependency.completed_component_stays_complete": [
+      "propext"
+    ],
+    "RemainingDependency.run_is_core_trace": [
+      "propext"
+    ],
+    "RemainingDependency.consumer_read_ignores_latent_law": [
+      "propext"
+    ],
+    "RemainingDependency.weak_challenge_does_not_supply_load": [
+      "propext"
+    ],
+    "RemainingDependency.slot_write_does_not_supply_load": [
+      "propext"
+    ],
+    "RemainingDependency.paid_account_conserved": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RemainingDependency.advance_actor_account_conserved": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RemainingDependency.advance_stock_account_conserved": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RemainingDependency.run_actor_account_conserved": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RemainingDependency.run_stock_account_conserved": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RemainingDependency.whole_history_conserved": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RemainingDependency.finite_original_support_bounds_fuel": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RemainingDependency.continuation": [
+      "propext"
+    ],
+    "RemainingDependency.truthful_paid_assay_acquires_pair": [
+      "propext"
+    ],
+    "RemainingDependency.truthful_paid_assay_commits_supported_choice": [
+      "propext"
+    ],
+    "RemainingDependency.actual_dependent_service": [
+      "propext"
+    ],
+    "RemainingDependency.opposed_dependency_changes_the_enacted_relation": [
+      "propext"
+    ],
+    "RemainingDependency.matched_clamp_preserves_acquisition_but_withholds_use": [
+      "propext"
+    ],
+    "RemainingDependency.matched_assay_cost_through_commit": [
+      "propext"
+    ],
+    "RemainingDependency.missing_contact_is_unresolved": [
+      "propext"
+    ],
+    "RemainingDependency.false_positive_can_misdirect_remaining_packet": [
+      "propext"
+    ],
+    "RemainingDependency.broken_calibration_defeats_correct_weak_record": [
+      "propext"
+    ],
+    "RemainingDependency.unavailable_relation_is_not_old_unfulfillment": [
+      "propext"
+    ],
+    "ScaleRevision.Config": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.State": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.total": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.loss": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.drift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.forecast": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.dose": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.paid": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.probeBody": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.inspectBody": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.reviseBody": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.respondBody": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.fixedBody": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.advance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.run": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.entrance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.run_is_core_trace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.probe_obtains_actual_loss": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.truthful_changed_probe_requests_refinement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.revised_exact_forecast": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.calibrated_response_margin": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.readout_error_enters_response": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.dose_nonnegative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.bounded_source_after_response": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.response_keeps_second": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.response_support_balance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.actual_response_condition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.workTotal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.paid_work_conserved": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.advance_work_conserved": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.run_work_conserved": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.waited_evidence_rejected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.acquired_revision_endpoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.enacted_refinement_protects": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.clamped_description_loses_condition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.ignored_revision_delay_loses_condition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.biased_new_coordinate_loses_condition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.inquiry_can_exhaust_response_funding": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.insufficient_response_source": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.mismatched_context_withholds_response": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.matched_revision_preserves_other_inputs": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.bounded_bias_margin_recovers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.conservative_margin_can_exceed_source": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.fixed_response_also_protects": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PracticalJudgment.finite_frontier": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PracticalJudgment.no_demand_gap_transfer": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PracticalJudgment.supplied_ceiling_bounds_optional_gain": [
+      "propext"
+    ],
+    "PracticalJudgment.independent_choices_not_joint_capacity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PracticalJudgment.competing_claims_incomparable": [
+      "propext"
+    ],
+    "PracticalJudgment.collective_duty_without_individual_duty": [
+      "propext"
+    ],
+    "InquiryJudgment.response_charge_succeeds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.funded_calibrated_response": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.robust_execution_at_actual": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.config": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.outcome": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.holds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.protects": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.chosen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.outcome_is_trace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.all_work_accounted": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.continuation_table": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.companion_retained": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.fixed_protects": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.robust_continuation_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.fixed_dominates_failures": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.fixed_is_chosen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.chosen_iff_fixed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.chosen_has_protecting_trace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.collective_response_required": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.pointwise_success_not_common_choice": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.protection_under_narrowing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.accurate_measurement_protects": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.false_narrowing_loses_actual_claim": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.accurate_measured_is_chosen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.broader_cases_change_judgment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.optional_supply_loss_is_real": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.underfunded_menu_has_no_success": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.selectedAllowance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.adaptiveAdvance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.adaptiveOutcome": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.selection_uses_acquired_coordinate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.adaptive_is_trace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.adaptive_matches_successful_history": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.adaptive_protects": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.adaptive_work_accounted": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.extendedOutcome": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.extendedProtect": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.extendedChosen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.complete_protection_is_undominated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.extended_fixed_is_chosen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.extended_adaptive_is_chosen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.extended_protection_required_without_fixed_requirement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "checker_sha256": "11b365203d46755fb10a8a1cafdf48a518c7a086d1529d60da3054d3beee691c",
+  "commands": [
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "GenerativeCore.olean",
+      "GenerativeCore.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "SystemsOrganization.olean",
+      "SystemsOrganization.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "RelationsAcrossScales.olean",
+      "RelationsAcrossScales.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "RemainingDependency.olean",
+      "RemainingDependency.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "ScaleRevision.olean",
+      "ScaleRevision.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "PracticalJudgment.olean",
+      "PracticalJudgment.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "InquiryJudgment.olean",
+      "InquiryJudgment.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "InquiryJudgmentAudit.lean"
+    ]
+  ],
+  "log_sha256": {
+    "GenerativeCore.txt": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "SystemsOrganization.txt": "e94da75fc8f1f3ec9a0fe55379f37b31c954776c93cc5a4ddb5e929a04ec458b",
+    "RelationsAcrossScales.txt": "7419604162fba6fced2806b83cad7338fd741da9274752caf4846941b814948d",
+    "RemainingDependency.txt": "1ebe1f21adfed36245fa0f136eeceb8a6cdbcf3c1c82d3eb732051314469e07d",
+    "ScaleRevision.txt": "266b053102f002883afe11cfd3a14259622c4c131ef0939b9443b32eb67b2a6a",
+    "PracticalJudgment.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "InquiryJudgment.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axioms.txt": "d5b190ccf3167b6cb374f4cf0db7379ce27f904cb70fa537b89f545928c275b9"
+  },
+  "source_changed_during_run": [],
+  "direct_import_sha256": {
+    "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/lib/lean/Init.olean": "12e94e3624b943d20ad898491957051ae9ba22ccbed9e6f92c35fbc711849246",
+    "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/lib/lean/Std.olean": "f1d048d08ad56dde1c744b8efebd98e5b1a2725341f8bdc29e033f150bdce04a",
+    "GenerativeCore.olean": "8314be213f457a12d06aaec36505144e3f4f448efbbb9683c57fafa02e15cea7",
+    "/Users/ren/repos/\u751f\u751f\u4e0d\u606f/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Topology/MetricSpace/Pseudo/Defs.olean": "c29fc24221bd1f64b45926135f8e80a61dab9a3071361e7382154d9a2a42f5b6",
+    "/Users/ren/repos/\u751f\u751f\u4e0d\u606f/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic.olean": "0a821f2a00e8a64712b702ffd0355326515c0123c0b60917a5aaa1c4ac527911",
+    "SystemsOrganization.olean": "6781ef865224ae40e18e59c48666dfc94105fba16625b72f2baa6e38a80012d2",
+    "RelationsAcrossScales.olean": "5aabfd51f5f51e2b94e0dd89347f39c81eb2d2ef0c5e5d4b80c279727be3ae6b",
+    "RemainingDependency.olean": "84728237e2e3dcf91e21e15957bbc51b95ee37d97166a7dd169ae6623dbd98b4",
+    "ScaleRevision.olean": "d6ce68388d0c8417c973a627d088ad54875c18ee62c88ab260fa32be8af9f098",
+    "PracticalJudgment.olean": "eaa07b9b7cc9eefcedbb82f26661bec1f640e5a718055d5ae57434aab4da8c5c"
+  },
+  "mathlib_revision": "ea11ccc0c5c7c4c562742e918fe2e0b2814a58aa",
+  "manifest_sha256": "740eef1aae725322b99872aba59cc5c902378b992bfe9122737a454f3076321b",
+  "upstream_scope": "Pinned existing Mathlib cache; repository import closure rebuilt. Mathlib not rebuilt.",
+  "scope": "Paid calibrated response and exact inquiry histories joined to robust practical choice; explicit declarations audited, generated declarations kernel-checked. Supplied uncertainty set, three-plan menu plus acquired-record extension, laws and protection priority; no empirical calibration or ethical warrant proved."
+}

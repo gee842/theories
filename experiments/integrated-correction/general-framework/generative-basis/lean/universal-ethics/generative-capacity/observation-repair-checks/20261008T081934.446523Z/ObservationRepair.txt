@@ -1,0 +1,1 @@
+ObservationRepair.lean:1:0: error: object file '/Users/ren/repos/生生不息/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib.olean' of module Mathlib does not exist

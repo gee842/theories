@@ -1,0 +1,11 @@
+'Generative.ObservationalCompatibility.Covers' does not depend on any axioms
+'Generative.ObservationalCompatibility.MandatoryAtProfile' does not depend on any axioms
+'Generative.ObservationalCompatibility.ConstantOnProfiles' does not depend on any axioms
+'Generative.ObservationalCompatibility.coverage_gives_compatibility' does not depend on any axioms
+'Generative.ObservationalCompatibility.compatibility_requires_coverage' does not depend on any axioms
+'Generative.ObservationalCompatibility.compatibility_iff_coverage' does not depend on any axioms
+'Generative.ObservationalCompatibility.universal_truth_gives_coverage' does not depend on any axioms
+'Generative.ObservationalCompatibility.coverage_and_constancy_give_universal_truth' does not depend on any axioms
+'Generative.ObservationalCompatibility.finer_coverage_gives_coarser_coverage' does not depend on any axioms
+'Generative.ObservationalCompatibility.profile_coverage_can_hide_a_false_commitment' does not depend on any axioms
+'Generative.ObservationalCompatibility.pairwise_realizations_do_not_give_joint_realization' does not depend on any axioms

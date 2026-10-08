@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-08",
+  "status": "owned-content-and-navigation-passed",
+  "scientific_scope": "Philosophical argument, constructed comparison, same-author counterreview and primary-source comparison. No new mathematical proof, empirical run, independent review or proof rerun.",
+  "local_links_checked": 18,
+  "links": [
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md",
+      "reference": "../../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-PLASTICITY.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/METHOD-REVISION.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md",
+      "reference": "../../../../sources/07-shengsheng-buxi/downloads-2026-07-08/2026-07-14-生生不息论.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md",
+      "reference": "../../../../sources/05-alignment-and-moloch/2026-05-28-alignment-core-stance.md",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md",
+      "valid": true
+    },
+    {
+      "source": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "reference": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#current-generative-alignment-priority",
+      "valid": true
+    },
+    {
+      "source": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "reference": "../../theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "valid": true
+    },
+    {
+      "source": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md",
+      "valid": true
+    },
+    {
+      "source": "RESEARCH.md",
+      "reference": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md",
+      "valid": true
+    },
+    {
+      "source": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "GENERATIVE-ALIGNMENT-REVISION.md",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md",
+      "valid": true
+    },
+    {
+      "source": "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md",
+      "valid": true
+    }
+  ],
+  "primary_urls_consulted": [
+    "https://arxiv.org/abs/1606.03137",
+    "https://arxiv.org/html/2405.17713v1",
+    "https://arxiv.org/html/2408.16984v2"
+  ],
+  "M20_matches_renderer": true,
+  "whole_table_current": false,
+  "shared_source_changes_not_certified": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/README.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [],
+    "removed_pages": []
+  },
+  "accepted_direction_bytes_unchanged": true,
+  "study_sha256": "4124fbbb353c6280b77f5781cd1e49ba12489086c344b9b54d795cf3a804599f",
+  "reviewed_sections": [
+    "G0 vs additional J commitments",
+    "same-history nondual distinctions",
+    "positive formation and legitimate completion",
+    "explicit correspondence before lexical comparison",
+    "actual loss and optional gains retained",
+    "endorsement, motivation, authority and implementation separated",
+    "rivals retain full stated history",
+    "literature credit and no priority claim",
+    "connected-history test remains unrun"
+  ]
+}

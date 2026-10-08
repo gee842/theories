@@ -1,0 +1,550 @@
+{
+  "status": "passed",
+  "utc": "20261007T204714.495458Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "normative-activity-checks/20261007T204714.495458Z",
+  "source_sha256": {
+    "KnowledgeCorrespondence": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+    "NormativeActivity": "15105e2caa43fb9b00f228343be16a7d729ff5a3da10c506d134d07417ae622c"
+  },
+  "checker_sha256": {
+    "check_normative_activity.py": "afe97454509e93b17c731cc3406efcdc701227c0c7e08964eced17a68f6ded23",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Whole local measurement histories: retained judgments without production, stale but historically sound records, closed-access indistinguishability, funded reinspection and suspension. Inherits correspondence logic; supplied event laws and meanings, not a neural or ethical grounding theorem.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "modules": [
+    {
+      "module": "KnowledgeCorrespondence",
+      "theorems": 20,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.SoundOn"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.ExactOn"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.Resolves"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.exact_is_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.exact_requires_resolution"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.decoder"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.resolution_admits_decoder"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.exact_possible_iff_resolves"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.conflicting_fibre_forces_abstention"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.sound_restricts_domain"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.refinement_preserves_resolution"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.preserved_record_preserves_exactness"
+        },
+        {
+          "kind": "structure",
+          "name": "Generative.KnowledgeCorrespondence.History"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.signal"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.target"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.allHistories"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.normal"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.reference"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.pairedEvidence"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.decodePair"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.direct"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.calibrated_pair_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.raw_signal_not_resolving"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.no_exact_raw_decoder"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.every_sound_raw_decoder_abstains"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.direct_exact_on_normal"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.direct_fails_on_expanded_domain"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.lucky_actual_correct"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.parity_record_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.double_reversal_exact"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.FixedContentSafe"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.true_content_trivially_safe"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.abstention_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.abstention_not_exact"
+        }
+      ],
+      "axiom_dependencies": {
+        "Generative.KnowledgeCorrespondence.SoundOn": [],
+        "Generative.KnowledgeCorrespondence.ExactOn": [],
+        "Generative.KnowledgeCorrespondence.Resolves": [],
+        "Generative.KnowledgeCorrespondence.exact_is_sound": [],
+        "Generative.KnowledgeCorrespondence.exact_requires_resolution": [],
+        "Generative.KnowledgeCorrespondence.decoder": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.KnowledgeCorrespondence.resolution_admits_decoder": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.KnowledgeCorrespondence.exact_possible_iff_resolves": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.KnowledgeCorrespondence.conflicting_fibre_forces_abstention": [],
+        "Generative.KnowledgeCorrespondence.sound_restricts_domain": [],
+        "Generative.KnowledgeCorrespondence.refinement_preserves_resolution": [],
+        "Generative.KnowledgeCorrespondence.preserved_record_preserves_exactness": [],
+        "Generative.KnowledgeCorrespondence.History": [],
+        "Generative.KnowledgeCorrespondence.signal": [],
+        "Generative.KnowledgeCorrespondence.target": [],
+        "Generative.KnowledgeCorrespondence.allHistories": [],
+        "Generative.KnowledgeCorrespondence.normal": [],
+        "Generative.KnowledgeCorrespondence.reference": [],
+        "Generative.KnowledgeCorrespondence.pairedEvidence": [],
+        "Generative.KnowledgeCorrespondence.decodePair": [],
+        "Generative.KnowledgeCorrespondence.direct": [],
+        "Generative.KnowledgeCorrespondence.calibrated_pair_exact": [],
+        "Generative.KnowledgeCorrespondence.raw_signal_not_resolving": [],
+        "Generative.KnowledgeCorrespondence.no_exact_raw_decoder": [],
+        "Generative.KnowledgeCorrespondence.every_sound_raw_decoder_abstains": [],
+        "Generative.KnowledgeCorrespondence.direct_exact_on_normal": [],
+        "Generative.KnowledgeCorrespondence.direct_fails_on_expanded_domain": [],
+        "Generative.KnowledgeCorrespondence.lucky_actual_correct": [],
+        "Generative.KnowledgeCorrespondence.parity_record_exact": [],
+        "Generative.KnowledgeCorrespondence.double_reversal_exact": [],
+        "Generative.KnowledgeCorrespondence.FixedContentSafe": [],
+        "Generative.KnowledgeCorrespondence.true_content_trivially_safe": [],
+        "Generative.KnowledgeCorrespondence.abstention_sound": [],
+        "Generative.KnowledgeCorrespondence.abstention_not_exact": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "NormativeActivity",
+      "theorems": 34,
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "Generative.NormativeActivity.Receipt"
+        },
+        {
+          "kind": "structure",
+          "name": "Generative.NormativeActivity.State"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.target"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.sample"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.memoryAnswer"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.inspect"
+        },
+        {
+          "kind": "inductive",
+          "name": "Generative.NormativeActivity.Event"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.step"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.run"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.view"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.ClosedLocal"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.ReceiptSound"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.ClosedDomain"
+        },
+        {
+          "kind": "abbrev",
+          "name": "Generative.NormativeActivity.CurrentCorrect"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.initial"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.learned"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.settled"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.changed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.run_append"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.exact_inspection"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.closed_inspection"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.exhausted_inspection"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.fresh_uptake_correct"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.step_preserves_receipt_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.history_preserves_receipt_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.closed_local_preserves"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.closed_local_view_congr"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.closed_history_preserves"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.closed_history_view_congr"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.learned_without_production"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.historical_truth_present_error"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.retained_distinction_does_not_select_production"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.same_production_can_have_different_judgment"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.reachable_closed_disagreement"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.closed_domain_not_resolving"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.sound_closed_answer_abstains"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.closed_continuations_remain_unresolved"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.reopening_and_inspection_repair"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.reopening_without_inspection_does_not_repair"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.exhausted_reopening_does_not_repair"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.suspension_retains_relation_and_record"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.Reachable"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.ReachableClosed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.reachable_continuation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.witnesses_reachable_closed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.exhausted_case_reachable"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.fresh_record_can_coexist_with_stale_judgment"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.reachable_closed_not_resolving"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.sound_on_reachable_closed_abstains"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.AcquiredAlong"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.step_receipt_origin"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.retained_receipt_has_origin"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.from_initial_receipt_is_acquired"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.adapt"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.adaptive_closed_invariant"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.adaptive_closed_cannot_resolve"
+        }
+      ],
+      "axiom_dependencies": {
+        "Generative.NormativeActivity.Receipt": [],
+        "Generative.NormativeActivity.State": [],
+        "Generative.NormativeActivity.target": [],
+        "Generative.NormativeActivity.sample": [],
+        "Generative.NormativeActivity.memoryAnswer": [],
+        "Generative.NormativeActivity.inspect": [],
+        "Generative.NormativeActivity.Event": [],
+        "Generative.NormativeActivity.step": [],
+        "Generative.NormativeActivity.run": [],
+        "Generative.NormativeActivity.view": [],
+        "Generative.NormativeActivity.ClosedLocal": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.ReceiptSound": [],
+        "Generative.NormativeActivity.ClosedDomain": [],
+        "Generative.NormativeActivity.CurrentCorrect": [],
+        "Generative.NormativeActivity.initial": [],
+        "Generative.NormativeActivity.learned": [],
+        "Generative.NormativeActivity.settled": [],
+        "Generative.NormativeActivity.changed": [],
+        "Generative.NormativeActivity.run_append": [],
+        "Generative.NormativeActivity.exact_inspection": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.NormativeActivity.closed_inspection": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.exhausted_inspection": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.fresh_uptake_correct": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.step_preserves_receipt_sound": [],
+        "Generative.NormativeActivity.history_preserves_receipt_sound": [],
+        "Generative.NormativeActivity.closed_local_preserves": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.closed_local_view_congr": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.closed_history_preserves": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.closed_history_view_congr": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.learned_without_production": [],
+        "Generative.NormativeActivity.historical_truth_present_error": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.retained_distinction_does_not_select_production": [],
+        "Generative.NormativeActivity.same_production_can_have_different_judgment": [],
+        "Generative.NormativeActivity.reachable_closed_disagreement": [],
+        "Generative.NormativeActivity.closed_domain_not_resolving": [],
+        "Generative.NormativeActivity.sound_closed_answer_abstains": [],
+        "Generative.NormativeActivity.closed_continuations_remain_unresolved": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.reopening_and_inspection_repair": [],
+        "Generative.NormativeActivity.reopening_without_inspection_does_not_repair": [],
+        "Generative.NormativeActivity.exhausted_reopening_does_not_repair": [],
+        "Generative.NormativeActivity.suspension_retains_relation_and_record": [],
+        "Generative.NormativeActivity.Reachable": [],
+        "Generative.NormativeActivity.ReachableClosed": [],
+        "Generative.NormativeActivity.reachable_continuation": [],
+        "Generative.NormativeActivity.witnesses_reachable_closed": [],
+        "Generative.NormativeActivity.exhausted_case_reachable": [],
+        "Generative.NormativeActivity.fresh_record_can_coexist_with_stale_judgment": [],
+        "Generative.NormativeActivity.reachable_closed_not_resolving": [],
+        "Generative.NormativeActivity.sound_on_reachable_closed_abstains": [],
+        "Generative.NormativeActivity.AcquiredAlong": [],
+        "Generative.NormativeActivity.step_receipt_origin": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.retained_receipt_has_origin": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.from_initial_receipt_is_acquired": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.adapt": [],
+        "Generative.NormativeActivity.adaptive_closed_invariant": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.adaptive_closed_cannot_resolve": [
+          "propext"
+        ]
+      },
+      "kernel_checked": true
+    }
+  ],
+  "artifact_sha256": {
+    "KnowledgeCorrespondence.lean": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+    "KnowledgeCorrespondence.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "KnowledgeCorrespondenceAxiomAudit.lean": "17a0077b3e78d738bf2d0be19d10e280b15db7dafef91e2b612d9472a15bbd1b",
+    "KnowledgeCorrespondenceAxiomAudit.log": "c377f105cfd06f0e0910406603df50a3a522626e83669b2e8308f8018e2c7f21",
+    "KnowledgeCorrespondenceSignatures.lean": "055b1e508f41e4b55b8cab7943c941eb25ff15bcb01ee7283c62605cbf932b13",
+    "KnowledgeCorrespondenceSignatures.log": "81471fa26e1d60c7def30cda3725076ec4f879b4f97ceb692743f08e198eedf1",
+    "NormativeActivity.lean": "15105e2caa43fb9b00f228343be16a7d729ff5a3da10c506d134d07417ae622c",
+    "NormativeActivity.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "NormativeActivityAxiomAudit.lean": "6ab05e5e305732620b64e33367375942293cc36b3dd678537de16a24efbe3735",
+    "NormativeActivityAxiomAudit.log": "a46082bf5b466328452aaad71b64bafe72fd079a2f3c95b0564ab2f5e80bfa61",
+    "NormativeActivitySignatures.lean": "31a72d24ac5b5b406e0412148c388130ed3d3ffa203978751338ed337f5f7625",
+    "NormativeActivitySignatures.log": "961317ee7ae0d4dcdfc9fc6e4cf40e7b34b6b3601fce985fb099c3b43b6fb75b",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_normative_activity.py": "afe97454509e93b17c731cc3406efcdc701227c0c7e08964eced17a68f6ded23",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

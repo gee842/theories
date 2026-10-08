@@ -1,0 +1,109 @@
+{
+  "status": "inspected",
+  "inspection_source_sha256": "2d8f596b7b35bbc3c6f2ec1ef9b79096d95bd47882428cd2fc1fa9daeb0d1c76",
+  "archive_sha256": "4cb422489a5396e8e4d156fc7b00f89e4bd7cb9a83561aacbbeee046d6c182ed",
+  "optimizer_source_sha256": "c366db6a664a6c19f67d2a905477ae60670eababe7f4190c7025295a0ab9dd76",
+  "training_member": "2_PID/2_optimize_PID/data.txt",
+  "training_member_sha256": "192bc93456a4d71d43b7ab39de381213dfda94cadcbd169f5faacb3b1ba1330c",
+  "training_rows": 599,
+  "byte_identical_to_already_preserved_initial_run": true,
+  "recorded_second_heater_commands_all_zero": true,
+  "source_contracts": {
+    "fit": {
+      "statement": "na = 2",
+      "line": 23
+    },
+    "output_error_fit": {
+      "statement": "scale=False,diaglevel=1,pred='model')",
+      "line": 27
+    },
+    "residual": {
+      "statement": "ld1 = data['T1'].values - yp[:,0]",
+      "line": 29
+    },
+    "fixed_interval": {
+      "statement": "dt = 1.0",
+      "line": 90
+    },
+    "residual_reuse": {
+      "statement": "T1[i+1] = y[0].value[1]+ld1[i+1]",
+      "line": 112
+    },
+    "signed_movement": {
+      "statement": "mv_obj += Q1[i]-Q1[i-1]",
+      "line": 115
+    },
+    "gain_grid": {
+      "statement": "x = np.arange(5.0, 80.1, 5.0)",
+      "line": 143
+    },
+    "integral_time_grid": {
+      "statement": "y = np.arange(5.0, 80.1, 5.0)",
+      "line": 144
+    }
+  },
+  "optimizer_directory_inventory": [
+    {
+      "member": "2_PID/2_optimize_PID/data.txt",
+      "bytes": 105452
+    },
+    {
+      "member": "2_PID/2_optimize_PID/pid_3d_contour.png",
+      "bytes": 72832
+    },
+    {
+      "member": "2_PID/2_optimize_PID/pid_3d_contour2.png",
+      "bytes": 78182
+    },
+    {
+      "member": "2_PID/2_optimize_PID/pid_contour.png",
+      "bytes": 87239
+    },
+    {
+      "member": "2_PID/2_optimize_PID/starting_PID.py",
+      "bytes": 283
+    },
+    {
+      "member": "2_PID/2_optimize_PID/tclab_arx.py",
+      "bytes": 3985
+    },
+    {
+      "member": "2_PID/2_optimize_PID/tclab_farxid.png",
+      "bytes": 91573
+    },
+    {
+      "member": "2_PID/2_optimize_PID/tclab_optimal.py",
+      "bytes": 8154
+    },
+    {
+      "member": "2_PID/2_optimize_PID/validation_test1/2_validate_PID.png",
+      "bytes": 52931
+    },
+    {
+      "member": "2_PID/2_optimize_PID/validation_test1/2_validate_PID.py",
+      "bytes": 5806
+    },
+    {
+      "member": "2_PID/2_optimize_PID/validation_test1/validate.txt",
+      "bytes": 105452
+    },
+    {
+      "member": "2_PID/2_optimize_PID/validation_test2/2_validate_PID.png",
+      "bytes": 53228
+    },
+    {
+      "member": "2_PID/2_optimize_PID/validation_test2/2_validate_PID.py",
+      "bytes": 5806
+    },
+    {
+      "member": "2_PID/2_optimize_PID/validation_test2/tclab_validate.py",
+      "bytes": 630
+    },
+    {
+      "member": "2_PID/2_optimize_PID/validation_test2/validate.txt",
+      "bytes": 105452
+    }
+  ],
+  "next_test": "Resolve the signed/absolute objective discrepancy together with the model and disturbance-transfer contracts. The saved initial-data fit residual is reused under changed gains; treating that reuse as a physical counterfactual requires warrant. Preserve nominal-one-second versus measured-interval scope and the separate two-heater dataset.",
+  "scope": "Static source and archival-data inspection only. This does not reproduce GEKKO output-error fitting or certify an optimum, residual invariance, physical efficacy, or ethics. Duplicate training bytes are one observational source."
+}

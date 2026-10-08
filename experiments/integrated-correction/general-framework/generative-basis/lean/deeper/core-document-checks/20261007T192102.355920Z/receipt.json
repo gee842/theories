@@ -1,0 +1,132 @@
+{
+  "checked_at_utc": "20261007T192102.355920Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "compiler": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "checker_sha256": "8d13247e8ffb0f170cc8894d57e2d73052bf76abed2724041211ab1bf21c2287",
+  "scope": "six modules for MATHEMATICAL-CORE.md; no repository-wide validation",
+  "modules": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "expected_audits": 18,
+      "empty_axiom_audits": [
+        "Generative.trace_append_iff",
+        "Generative.trace_singleton_iff",
+        "Generative.enabled_iff_singleton_trace",
+        "Generative.enabled_difference_implies_state_difference",
+        "Generative.feasible_append_iff",
+        "Generative.feasible_prefix",
+        "Generative.enabled_product_iff",
+        "Generative.trace_product_iff",
+        "Generative.feasible_product_iff",
+        "Generative.trace_map",
+        "Generative.trace_lift",
+        "Generative.projected_trace_iff",
+        "Generative.projection_exact_iff",
+        "Generative.local_exact_iff_trace_exact",
+        "Generative.enabled_projection_iff",
+        "Generative.feasible_projection_iff",
+        "Generative.feasible_difference_implies_projection_difference",
+        "Generative.trace_faithful_iff"
+      ],
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedPaths.lean",
+      "sha256": "c9194672eca9625ef95ece823ef98a7bca46ead33215246dd97ebe3e8cecbbc1",
+      "expected_audits": 9,
+      "empty_axiom_audits": [
+        "Generative.Deeper.reach_refl",
+        "Generative.Deeper.reach_step",
+        "Generative.Deeper.reach_trans",
+        "Generative.Deeper.trace_evaluate",
+        "Generative.Deeper.reach_evaluate",
+        "Generative.Deeper.reach_least",
+        "Generative.Deeper.reach_is_least_closure",
+        "Generative.Deeper.least_closure_unique",
+        "Generative.Deeper.reach_without_steps_iff"
+      ],
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/HistoryRealization.lean",
+      "sha256": "22785f31280a7bbac5f89d7754cb6896830a6dc2d81949b9f3adfabd126e8fa9",
+      "expected_audits": 7,
+      "empty_axiom_audits": [
+        "Generative.Deeper.append_nil_constructive",
+        "Generative.Deeper.append_assoc_constructive",
+        "Generative.Deeper.history_trace_iff",
+        "Generative.Deeper.history_from_empty_iff",
+        "Generative.Deeper.history_feasible_iff",
+        "Generative.Deeper.process_language_prefix_closed",
+        "Generative.Deeper.process_language_exact_history_realization"
+      ],
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ProductTower.lean",
+      "sha256": "68cefbd0cf76251a434b81dee7f4fa8916f25474ff73f66ab6f92aa2393fff54",
+      "expected_audits": 7,
+      "empty_axiom_audits": [
+        "Generative.Deeper.leaf_diagonal",
+        "Generative.Deeper.diagonal_injective",
+        "Generative.Deeper.tower_nonempty_iff",
+        "Generative.Deeper.tower_subsingleton",
+        "Generative.Deeper.tower_subsingleton_iff",
+        "Generative.Deeper.tower_empty_iff",
+        "Generative.Deeper.seed_distinction_persists"
+      ],
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/BoundaryModels.lean",
+      "sha256": "a9c171e4a20857c82a7c8f6f8e4f48729f0900a671937e2421ec4c20ac69431e",
+      "expected_audits": 8,
+      "empty_axiom_audits": [
+        "GenerativeBoundary.ObservationLoss.no_observation_only_classifier",
+        "GenerativeBoundary.SharedResource.individual_feasibility_without_joint_feasibility",
+        "GenerativeBoundary.FixedSelector.returns_after_two",
+        "GenerativeBoundary.FixedSelector.changes_phase_every_step",
+        "GenerativeBoundary.FixedSelector.selector_changes_next_phase",
+        "GenerativeBoundary.FixedSelector.selector_preserved_by_step",
+        "GenerativeBoundary.FixedSelector.selector_unchanged_at_every_time",
+        "GenerativeBoundary.FixedSelector.recurrent_process_with_fixed_selector"
+      ],
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/CorePredication.lean",
+      "sha256": "bcebf3a74f0b94fe5cc9537f57c279dc9d9220d5071db97d9644e46597c30a0c",
+      "expected_audits": 12,
+      "empty_axiom_audits": [
+        "Generative.CorePredication.may_append_iff",
+        "Generative.CorePredication.must_append_iff",
+        "Generative.CorePredication.trace_invariant",
+        "Generative.CorePredication.reach_invariant",
+        "Generative.CorePredication.invariant_excludes_endpoint",
+        "Generative.CorePredication.feasible_and_must_implies_may",
+        "Generative.CorePredication.deterministic_trace_endpoint",
+        "Generative.CorePredication.deterministic_may_implies_must",
+        "Generative.CorePredication.possible_not_guaranteed",
+        "Generative.CorePredication.blocked_word_not_feasible",
+        "Generative.CorePredication.blocked_must_is_vacuous",
+        "Generative.CorePredication.blocked_may_is_false"
+      ],
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "total_empty_axiom_audits": 61
+}

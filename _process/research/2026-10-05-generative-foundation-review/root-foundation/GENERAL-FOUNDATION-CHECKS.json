@@ -1,0 +1,402 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-10-08T00:01:09.093428+00:00",
+  "scope": "Philosophical argument, evidence-reading record and independent content review. Five owned full documents, six shared fragments, C01 data/render only. Unchanged source/receipt bindings; no compiler or scientific rerun.",
+  "new_theorems": 0,
+  "new_axioms": 0,
+  "new_empirical_runs": 0,
+  "stronger_assumption_free_foundation_completed": false,
+  "owned_read_versions": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-ARGUMENT.md": "cf637d7b9322391b826c951c618642f563c7c60453fa4ac497754d85d73c7db5",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-EVIDENCE.md": "cd02da903c4137342ca983e25568f13a33050e0eef9fff34fed53e6e335f7812",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md": "22021964edbe0f5f170be033f8b6a908a7dd64f0c0a495aec549b59842727a66",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md": "700d2fda3dd61a284d6c6c46a4e5748283428a6648c801e381f7b96de7c1f705",
+    "sources/15-codex-theory-conversations/2026-10-08-general-foundation-continuation.md": "ba2331369e0716920ab2f19743bc960505ea0947d9706b5235b16e34842ab786"
+  },
+  "shared_fragments_checked": 6,
+  "local_links_checked": 82,
+  "links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-ARGUMENT.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-ARGUMENT.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-ARGUMENT.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-WARRANT.md#2-match-the-grounds-to-the-claim"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-ARGUMENT.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-INDIVIDUATION.md#2-constitutive-participation-differs-from-successful-prediction"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-ARGUMENT.md",
+      "reference": "LAW-CORRESPONDENCE-EVIDENCE.md#1-documented-acquisition-retention-and-issued-action"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-ARGUMENT.md",
+      "reference": "LAW-CORRESPONDENCE-EVIDENCE.md#2-experimental-formation-of-subsequent-biological-conditions"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-ARGUMENT.md",
+      "reference": "UNFOLDING-PRESERVATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-ARGUMENT.md",
+      "reference": "LAW-CORRESPONDENCE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-ARGUMENT.md",
+      "reference": "SYSTEM-INDIVIDUATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-ARGUMENT.md",
+      "reference": "VARIATION-WARRANT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-ARGUMENT.md",
+      "reference": "SYSTEM-INDIVIDUATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-ARGUMENT.md",
+      "reference": "EXPLANATORY-JOINING-INTEGRATION.md#4-a-genuine-failure-equal-interfaces-do-not-always-suffice"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-ARGUMENT.md",
+      "reference": "GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md#what-the-requested-chain-now-establishes"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-ARGUMENT.md",
+      "reference": "GROUNDING-INFERENCE-AND-PRESENTATION.md#11-derive-correspondence-through-formation-and-state-its-exact-remainder"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-EVIDENCE.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-WARRANT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-EVIDENCE.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-EVIDENCE.md",
+      "reference": "LAW-CORRESPONDENCE-EVIDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-EVIDENCE.md",
+      "reference": "../../../../sources/tclab-benchmark/extracted/2_PID/0_initial_PID/0_initial_PID.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-EVIDENCE.md",
+      "reference": "MEASURED-FEEDBACK-REVIEW.md#physical-provenance-and-what-replay-establishes"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-EVIDENCE.md",
+      "reference": "THREE-CONNECTIONS-COMPLETION-AUDIT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-EVIDENCE.md",
+      "reference": "../../../../sources/evolutionary-selection/koza-2011/article.html"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-EVIDENCE.md",
+      "reference": "MAT-CONDITIONS-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-EVIDENCE.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-EVIDENCE.md",
+      "reference": "FIXED-FINISH-LINE-AUDIT.md#15-completion-assessment-of-the-conditional-candidate"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-EVIDENCE.md",
+      "reference": "../../../../sources/tclab-benchmark/extracted/2_PID/0_initial_PID/0_initial_PID.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-EVIDENCE.md",
+      "reference": "../../../../sources/tclab-benchmark/PROVENANCE.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-EVIDENCE.md",
+      "reference": "../../../../sources/evolutionary-selection/koza-2011/article.html"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-EVIDENCE.md",
+      "reference": "../../../../sources/evolutionary-selection/koza-2011/manifest.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-EVIDENCE.md",
+      "reference": "LAW-CORRESPONDENCE-EVIDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-EVIDENCE.md",
+      "reference": "VARIATION-WARRANT-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md",
+      "reference": "../../../../sources/15-codex-theory-conversations/2026-10-08-general-foundation-continuation.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md",
+      "reference": "GENERAL-FOUNDATION-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md",
+      "reference": "GENERAL-FOUNDATION-EVIDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md",
+      "reference": "GENERAL-FOUNDATION-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md",
+      "reference": "EXPLANATORY-JOINING-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md",
+      "reference": "EXPLANATORY-BRANCHING-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md",
+      "reference": "VARIATION-WARRANT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md",
+      "reference": "GENERAL-FOUNDATION-EVIDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md",
+      "reference": "MODEL-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md",
+      "reference": "EXPLANATORY-BRANCHING-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md",
+      "reference": "SYSTEM-INDIVIDUATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md",
+      "reference": "VARIATION-WARRANT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md",
+      "reference": "GENERAL-FOUNDATION-CHECKS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md",
+      "reference": "GENERAL-FOUNDATION-INDEX-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-INDIVIDUATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-WARRANT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md",
+      "reference": "CONSTITUTIVE-WARRANT-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md",
+      "reference": "MODEL-REVISION-INTEGRATION.md#5-two-distinct-limits-on-what-the-repair-establishes"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md",
+      "reference": "EXPLANATORY-BRANCHING-INTEGRATION.md#4-a-matched-target-that-exposes-the-missing-correlation"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md",
+      "reference": "VARIATION-WARRANT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md",
+      "reference": "MODEL-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md",
+      "reference": "EXPLANATORY-BRANCHING-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md",
+      "reference": "SYSTEM-INDIVIDUATION-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md",
+      "reference": "GENERAL-FOUNDATION-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md",
+      "reference": "GENERAL-FOUNDATION-EVIDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md",
+      "reference": "GENERAL-FOUNDATION-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md",
+      "reference": "GENERAL-FOUNDATION-EVIDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md",
+      "reference": "MODEL-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md",
+      "reference": "EXPLANATORY-BRANCHING-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md",
+      "reference": "GENERAL-FOUNDATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md",
+      "reference": "../../../../sources/15-codex-theory-conversations/2026-10-08-general-foundation-continuation.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md",
+      "reference": "GENERAL-FOUNDATION-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md",
+      "reference": "GENERAL-FOUNDATION-EVIDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md",
+      "reference": "GENERAL-FOUNDATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md",
+      "reference": "../../../../sources/15-codex-theory-conversations/2026-10-08-general-foundation-continuation.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-general-foundation-continuation.md",
+      "reference": "2026-10-08-variation-warrant-question.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-general-foundation-continuation.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-INTEGRATION.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-general-foundation-continuation.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "reference": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "GENERAL-FOUNDATION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "GENERAL-FOUNDATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "GENERAL-FOUNDATION-INDEX-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "GENERAL-FOUNDATION-CHECKS.json"
+    }
+  ],
+  "review_and_evidence_bindings": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-ARGUMENT.md": "cf637d7b9322391b826c951c618642f563c7c60453fa4ac497754d85d73c7db5",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-EVIDENCE.md": "cd02da903c4137342ca983e25568f13a33050e0eef9fff34fed53e6e335f7812",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODEL-REVISION-INTEGRATION.md": "11fe0e7d8ec9bdc2758acd490f10463cc3aab08a195102576d18ec38f774287c",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-BRANCHING-INTEGRATION.md": "8f12c85b38accccfdc9310391778b6193526aabefff59fb5802d122ed64574e1",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md": "22021964edbe0f5f170be033f8b6a908a7dd64f0c0a495aec549b59842727a66",
+    "sources/15-codex-theory-conversations/2026-10-08-general-foundation-continuation.md": "ba2331369e0716920ab2f19743bc960505ea0947d9706b5235b16e34842ab786",
+    "sources/tclab-benchmark/extracted/2_PID/0_initial_PID/0_initial_PID.py": "feafc3377f48f7550670dd845490dd912f276a028b92182e83cbacd264f3ad2a",
+    "sources/tclab-benchmark/PROVENANCE.json": "b553747deb40275e4be1827a8f143eac617c159cc93e56451c5cf48db34eef39",
+    "sources/evolutionary-selection/koza-2011/article.html": "171f97eba43544299ff2f0736f58fabd26a01d1bebbc22fc18300dd7b68cb263",
+    "sources/evolutionary-selection/koza-2011/manifest.json": "c23ff2d35d927df3bbc795f8fad0be2cca20bf4d49b6d659b44fa279e76a13ab",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md": "d1bcb335d9090057791cc3f9a147e44c1ff789dbb09c3e3e2a9f35ed4835c5b8",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-REVIEW.md": "2f5c57ab45d97af9a3aed374bd08363de16fa43231b7ab45f7f5c73dfe94328b"
+  },
+  "unchanged_proof_and_receipt_bindings": {
+    "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/SystemIndividuation.lean": "aa2da76bae0b742b0966d856334ed0cd7e29ccf05ce33b0b674a00e5e0689578",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/VariationWarrant.lean": "599c90b9643f01b06c5185e4d38b19bb9e502efab2e9d71590fb30d6503042fa",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJoining.lean": "1149035f2cc534f133664e6e1377f96761a16d532fe01af8639063ab4503176d",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/UnfoldingPreservation.lean": "19ac73d41d6534617337f24e0d4a313a046e0e7bc2a82f2f8ce95bb7dedf37d6",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/system-individuation-checks/20261007T233431.104249Z/receipt.json": "3379682d8dcb4f97f2f772f6a460c8baa7a95169790bcb0a9ce95dc7d8eab5a6",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/variation-warrant-checks/20261007T234515.871133Z/receipt.json": "a5136177bc8d18b616f62cbb0fa17a1c5a9403e00ac1c5c94875608bb588ec62",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-local-units-checks/20261007T225438.405152Z/receipt.json": "8e52c03e56cf635914e76ab858839006888d1f31e9fbf06e33c2dff071c4d668",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/unfolding-preservation-checks/20261007T225350.404286Z/receipt.json": "57a38f199bdfff852dd1327f7634160580e0619f2dc69de3325f77331f08d103",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/system-individuation-review/20261007T233530.588639Z/receipt.json": "2d26e9e95c60ade1f856f0a6c82f134ee280013b6a09a0fd5bc5d40233c78787",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/variation-warrant-review/20261007T234545.254086Z/receipt.json": "6e53f5675a7205a4ef14fabf4ce960472801cea611706ac948bb5aa8f77c8c0b"
+  },
+  "proof_scope": "Existing systems 27/41 and variation 19/21 empty new-declaration audits retained; inherited maps previously checked, not rerun. Joining and branching keep exact hypotheses and disclosed standard dependencies. Source matching is not a new Lean check.",
+  "owned_rows": [
+    "C01"
+  ],
+  "other_rows_preserved_at_update": 86,
+  "whole_table_or_concurrent_work_certified": false,
+  "concurrent_changes_not_certified": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/KNOWLEDGE.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-AND-GENERATIVE-WARRANT.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PHILOSOPHICAL-ACCOUNT.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-COMPATIBILITY-NECESSITY.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md"
+    ],
+    "removed_pages": []
+  },
+  "edit_record_sha256": "c35b9714004b1ad1eb7323463da87a36b04c897f477bfaac929337e5e80ac95e",
+  "renderer_sha256": "200321a64e3d7e9432f97cb4122f39b6217fba17567b3b276e312f144e0ea403"
+}

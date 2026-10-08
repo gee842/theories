@@ -1,0 +1,52 @@
+MaintenanceBaseline.target_transport_with_completion_gives_bound {Ω : Type} (domain : List Ω) (weight : Ω → Nat)
+  (originDemand originOld currentDemand currentOld completed actualDelivery : Ω → Bool)
+  (transport :
+    ∀ (h : Ω),
+      h ∈ domain →
+        ChanceAdequacy.target originDemand originOld h = true →
+          completed h = true ∨ ChanceAdequacy.target currentDemand currentOld h = true)
+  (recordMeaning : ∀ (h : Ω), h ∈ domain → completed h = true → actualDelivery h = true)
+  (currentFulfilled : ChanceAdequacy.Fulfilled domain currentDemand currentOld actualDelivery)
+  (positive : 0 < ChanceAdequacy.total domain weight) :
+  ChanceAdequacy.Fulfilled domain originDemand originOld actualDelivery ∧
+    0 < ChanceAdequacy.total domain weight ∧
+      ChanceAdequacy.mass domain weight (ChanceAdequacy.target originDemand originOld) ≤
+          ChanceAdequacy.mass domain weight actualDelivery ∧
+        ChanceAdequacy.mass domain weight actualDelivery ≤ ChanceAdequacy.total domain weight
+MaintenanceBaseline.retirement_can_erase_recomputed_target_without_fulfilling_origin :
+  MaintenanceBaseline.oldSupport (MaintenanceBaseline.initial 1 false) = true ∧
+    (∀ (mode : Bool),
+        MaintenanceBaseline.demand (MaintenanceBaseline.retire (MaintenanceBaseline.initial 1 mode)) = true ∧
+          MaintenanceBaseline.oldSupport (MaintenanceBaseline.retire (MaintenanceBaseline.initial 1 mode)) = false ∧
+            (MaintenanceBaseline.retire (MaintenanceBaseline.initial 1 mode)).delivered = false) ∧
+      (ChanceAdequacy.Fulfilled [false, true]
+          (fun mode => MaintenanceBaseline.demand (MaintenanceBaseline.retire (MaintenanceBaseline.initial 1 mode)))
+          (fun mode => MaintenanceBaseline.oldSupport (MaintenanceBaseline.retire (MaintenanceBaseline.initial 1 mode)))
+          fun mode => (MaintenanceBaseline.retire (MaintenanceBaseline.initial 1 mode)).delivered) ∧
+        (¬ChanceAdequacy.Fulfilled [false, true] (fun x => true) ObservableContinuation.oldWorks fun mode =>
+              (MaintenanceBaseline.retire (MaintenanceBaseline.initial 1 mode)).delivered) ∧
+          ChanceAdequacy.mass [false, true] (fun x => 1) ObservableContinuation.oldWorks = 1 ∧
+            (ChanceAdequacy.mass [false, true] (fun x => 1) fun mode =>
+                (MaintenanceBaseline.retire (MaintenanceBaseline.initial 1 mode)).delivered) =
+              0
+MaintenanceBaseline.actual_extended_delivery_survives_retirement :
+  (∀ (mode : Bool),
+      MaintenanceBaseline.deliverThenRetire ObservableContinuation.Action.parallel
+          (MaintenanceBaseline.initial 2 mode) =
+        some { plant := { mode := mode, budget := 0, supported := true }, oldLive := false, delivered := true }) ∧
+    ChanceAdequacy.Fulfilled [false, true] (fun x => true) ObservableContinuation.oldWorks
+        (MaintenanceBaseline.actualDelivery ObservableContinuation.Action.parallel 2) ∧
+      ChanceAdequacy.mass [false, true] (fun x => 1) ObservableContinuation.oldWorks = 1 ∧
+        ChanceAdequacy.mass [false, true] (fun x => 1)
+            (MaintenanceBaseline.actualDelivery ObservableContinuation.Action.parallel 2) =
+          2
+MaintenanceBaseline.completed_single_delivery_allows_retirement :
+  (∀ (mode : Bool),
+      MaintenanceBaseline.deliverThenRetire ObservableContinuation.Action.left (MaintenanceBaseline.initial 1 mode) =
+        some { plant := { mode := mode, budget := 0, supported := !mode }, oldLive := false, delivered := !mode }) ∧
+    ChanceAdequacy.Fulfilled [false, true] (fun x => true) ObservableContinuation.oldWorks
+        (MaintenanceBaseline.actualDelivery ObservableContinuation.Action.left 1) ∧
+      Option.map (fun s => (MaintenanceBaseline.demand s, s.oldLive, s.delivered, s.plant.budget))
+          (MaintenanceBaseline.deliverThenRetire ObservableContinuation.Action.left
+            (MaintenanceBaseline.initial 1 false)) =
+        some (false, false, true, 0)

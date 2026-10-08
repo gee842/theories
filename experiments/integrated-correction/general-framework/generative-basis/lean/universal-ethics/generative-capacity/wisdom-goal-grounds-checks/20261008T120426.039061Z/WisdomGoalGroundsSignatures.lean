@@ -1,0 +1,8 @@
+import WisdomGoalGrounds
+#check WisdomGoalGrounds.achievement_profiles_equal
+#check WisdomGoalGrounds.retaining_goal_preferred
+#check WisdomGoalGrounds.revision_frontier_iff
+#check WisdomGoalGrounds.retention_frontier_iff
+#check WisdomGoalGrounds.adequate_goal_selector_distinguishes
+#check WisdomGoalGrounds.attainment_only_selector_insufficient
+#check WisdomGoalGrounds.fixed_ground_rule_adequate

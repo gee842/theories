@@ -1,0 +1,10 @@
+{
+  "status": "Exploratory extension after initial renewal results and after reading replication papers and workbook layout; not preregistration.",
+  "aim": "Recompute all supplied per-assay choice indices from raw counts; summarize by trial and generation without excluding outliers. Compare supplied row counts with published counts; retain exact reversed count-sequence reuse observed during layout inspection. Do not pool laboratories, impute missing exclusion flags, infer cell-to-choice calibration or claim this resolves replication disagreements.",
+  "analyses": [
+    "source numeric-cell verification",
+    "per-assay index recomputation and supplied rounding checks",
+    "descriptive trial/generation summaries and trial-matched group contrasts",
+    "source-count and reversed-sequence audit"
+  ]
+}

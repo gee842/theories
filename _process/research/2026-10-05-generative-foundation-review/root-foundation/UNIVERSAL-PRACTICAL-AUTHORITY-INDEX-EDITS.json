@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-08 Asia/Bangkok",
+  "scope": "Owned editorial updates only. No certification of concurrent research. Before hashes describe the bytes actually read for these edits.",
+  "edits": [
+    {
+      "path": "README.md",
+      "before_sha256": "ae1fa4034f5d3311e39ca8790188e3df781df7f478deeed5c8065baa493f59d8",
+      "after_sha256": "9d4c0f3d9b0b07ba0155c5afd5a20a91d47fbdc1f884573d04a535aaff19b3a7",
+      "baseline_matches_reviewed_source": false,
+      "change": "Replace only owned current navigation paragraph."
+    },
+    {
+      "path": "RESEARCH.md",
+      "before_sha256": "92461deed1d80d2718d75254f8fbd7cbd63576af2838c82ed72afbebaf354b02",
+      "after_sha256": "3ba7263953e34578e358d3dd7bed0b22e2c00d258f53a43d9e6ab4a454e4fc07",
+      "baseline_matches_reviewed_source": false,
+      "change": "Insert owned current research paragraph before its preceding study result."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "before_sha256": "705cb65040759fb55f075bf79b17d890a8bf550bb0a8d99333c27455cc60f0f5",
+      "after_sha256": "bd8d333303ad5caae4df8177ada17448715f6d343cf3e9c26bed46653919051c",
+      "baseline_matches_reviewed_source": false,
+      "change": "Insert owned current research paragraph before its preceding study result."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "before_sha256": "60f5e5d7316be0b45b1e1264273bb08f7b8b3e31fcd82499508574ff6adfd249",
+      "after_sha256": "657c199fb71b750afdb7981367b392ed45dc8464f324ae411129f4dc99d6e0b0",
+      "baseline_matches_reviewed_source": false,
+      "change": "Append owned derivation-map update; preserve earlier entries."
+    }
+  ],
+  "paired_index": {
+    "changed_entry": "C26",
+    "other_entries_preserved": 84,
+    "rendering": "Existing renderer, C26 row only",
+    "scoped_rows_checked": [
+      "C26",
+      "F23",
+      "F26",
+      "F27"
+    ],
+    "reviewed_owned_sources": 3,
+    "shared_source_review": "Pending; see exact checker record."
+  }
+}

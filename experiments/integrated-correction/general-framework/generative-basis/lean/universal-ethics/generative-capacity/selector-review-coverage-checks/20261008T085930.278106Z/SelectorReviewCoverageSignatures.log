@@ -1,0 +1,66 @@
+SelectorReviewCoverage.clear_iff_no_possible_defeat {W H : Type} (live : W → Prop) (menu : H → Prop)
+  (better : W → H → H → Prop) (a : H) :
+  SelectorReviewCoverage.Clear live menu better a ↔ menu a ∧ ¬SelectorReviewCoverage.PossibleDefeat live menu better a
+SelectorReviewCoverage.coverage_iff_certificate_transport {W V H : Type} (oldLive : W → Prop) (newLive : V → Prop)
+  (menu : H → Prop) (oldBetter : W → H → H → Prop) (newBetter : V → H → H → Prop) :
+  SelectorReviewCoverage.CertificateCoverage oldLive newLive menu oldBetter newBetter ↔
+    ∀ (a : H),
+      SelectorReviewCoverage.Clear newLive menu newBetter a → SelectorReviewCoverage.Clear oldLive menu oldBetter a
+SelectorReviewCoverage.pairwise_reflection_suffices {W V H : Type} (oldLive : W → Prop) (newLive : V → Prop)
+  (menu : H → Prop) (oldBetter : W → H → H → Prop) (newBetter : V → H → H → Prop)
+  (reflect : ∀ (a b : H), menu a → menu b → (∃ w, oldLive w ∧ oldBetter w b a) → ∃ v, newLive v ∧ newBetter v b a) :
+  SelectorReviewCoverage.CertificateCoverage oldLive newLive menu oldBetter newBetter
+SelectorReviewCoverage.certificate_coverage_composes {W V X H : Type} (first : W → Prop) (second : V → Prop)
+  (third : X → Prop) (menu : H → Prop) (r : W → H → H → Prop) (s : V → H → H → Prop) (t : X → H → H → Prop)
+  (left : SelectorReviewCoverage.CertificateCoverage first second menu r s)
+  (right : SelectorReviewCoverage.CertificateCoverage second third menu s t) :
+  SelectorReviewCoverage.CertificateCoverage first third menu r t
+SelectorReviewCoverage.all_menus_coverage_iff_pairwise_reflection {W V H : Type} (oldLive : W → Prop)
+  (newLive : V → Prop) (oldBetter : W → H → H → Prop) (newBetter : V → H → H → Prop)
+  (noSelf : ∀ (v : V), newLive v → ∀ (a : H), ¬newBetter v a a) :
+  (∀ (menu : H → Prop), SelectorReviewCoverage.CertificateCoverage oldLive newLive menu oldBetter newBetter) ↔
+    ∀ (a b : H), (∃ w, oldLive w ∧ oldBetter w b a) → ∃ v, newLive v ∧ newBetter v b a
+SelectorReviewCoverage.objection_summary_preserves_exact_certificate {W H : Type} (live : W → Prop) (menu : H → Prop)
+  (better : W → H → H → Prop) (a : H) :
+  SelectorReviewCoverage.Clear (fun x => True) menu (SelectorReviewCoverage.objectionSummary live better) a ↔
+    SelectorReviewCoverage.Clear live menu better a
+SelectorReviewCoverage.output_defeats_routine_in_both_applications (w : Bool) :
+  SelectorReviewCoverage.comparison w SelectorReviewCoverage.Plan.output SelectorReviewCoverage.Plan.routine
+SelectorReviewCoverage.compression_is_exact_on_old_menu (a : SelectorReviewCoverage.Plan) :
+  SelectorReviewCoverage.Clear (fun x => True) SelectorReviewCoverage.oldMenu SelectorReviewCoverage.compressed a ↔
+    SelectorReviewCoverage.Clear SelectorReviewCoverage.fullLive SelectorReviewCoverage.oldMenu
+      SelectorReviewCoverage.comparison a
+SelectorReviewCoverage.compressed_review_covers_old_menu :
+  SelectorReviewCoverage.CertificateCoverage SelectorReviewCoverage.fullLive (fun x => True)
+    SelectorReviewCoverage.oldMenu SelectorReviewCoverage.comparison SelectorReviewCoverage.compressed
+SelectorReviewCoverage.expanded_menu_retains_compressed_output_certificate :
+  SelectorReviewCoverage.Clear (fun x => True) SelectorReviewCoverage.enlargedMenu SelectorReviewCoverage.compressed
+    SelectorReviewCoverage.Plan.output
+SelectorReviewCoverage.new_repair_defeats_output_in_omitted_application :
+  SelectorReviewCoverage.comparison true SelectorReviewCoverage.Plan.repair SelectorReviewCoverage.Plan.output
+SelectorReviewCoverage.menu_growth_breaks_old_certificate_coverage :
+  ¬SelectorReviewCoverage.CertificateCoverage SelectorReviewCoverage.fullLive (fun x => True)
+      SelectorReviewCoverage.enlargedMenu SelectorReviewCoverage.comparison SelectorReviewCoverage.compressed
+SelectorReviewCoverage.repair_keeps_real_output_loss :
+  SelectorReviewCoverage.gain SelectorReviewCoverage.Plan.output () ∧
+    ¬SelectorReviewCoverage.gain SelectorReviewCoverage.Plan.repair () ∧
+      SelectorReviewCoverage.comparison true SelectorReviewCoverage.Plan.repair SelectorReviewCoverage.Plan.output
+SelectorReviewCoverage.restored_summary_rejects_output_certificate :
+  ¬SelectorReviewCoverage.Clear (fun x => True) SelectorReviewCoverage.enlargedMenu
+      (SelectorReviewCoverage.objectionSummary SelectorReviewCoverage.fullLive SelectorReviewCoverage.comparison)
+      SelectorReviewCoverage.Plan.output
+SelectorReviewCoverage.finite_audit_protection_profiles_agree (n a : Nat) (ha : a ≤ n) (i : Unit) :
+  SelectorReviewCoverage.prefixProtection n true a i ↔ SelectorReviewCoverage.prefixProtection n false a i
+SelectorReviewCoverage.prefix_pairwise_comparison (n a b : Nat) (w : Bool) (ha : a ≤ n) (hb : b ≤ n) :
+  SelectorReviewCoverage.prefixComparison n w a b ↔ SelectorReviewCoverage.prefixComparison n false a b
+SelectorReviewCoverage.every_finite_prefix_has_exact_compression (n a : Nat) :
+  SelectorReviewCoverage.Clear (fun x => True) (SelectorReviewCoverage.prefixMenu n)
+      (SelectorReviewCoverage.prefixCompressed n) a ↔
+    SelectorReviewCoverage.Clear SelectorReviewCoverage.fullLive (SelectorReviewCoverage.prefixMenu n)
+      (SelectorReviewCoverage.prefixComparison n) a
+SelectorReviewCoverage.every_finite_prefix_has_a_failing_next_plan (n : Nat) :
+  SelectorReviewCoverage.Clear (fun x => True) (SelectorReviewCoverage.prefixMenu (n + 1))
+      (SelectorReviewCoverage.prefixCompressed n) (n + 1) ∧
+    SelectorReviewCoverage.PossibleDefeat SelectorReviewCoverage.fullLive (SelectorReviewCoverage.prefixMenu (n + 1))
+        (SelectorReviewCoverage.prefixComparison n) (n + 1) ∧
+      SelectorReviewCoverage.prefixGain (n + 1) n ∧ ¬SelectorReviewCoverage.prefixGain n n

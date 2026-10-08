@@ -129,6 +129,8 @@ Ren 对[生生不息正面伦理方向](UNIFIED-ETHICAL-GROUNDING.md#shengsheng-
 
 ## 8. 下一连接与普遍目标
 
+**后续理论接续，2026-10-08。** 下文目的／参与变化与已有依存冲突的责任问题，已由[实践判断](PRACTICAL-JUDGMENT.md)在明确公理下完成，作为成果复用。[伦理学习](ETHICAL-LEARNING.md)进一步给出关切形成与校准的相连候选：区分发现已有理由、实际形成新的生活与理由，以及修订评价承诺；取得理解、形成动机和有根据的回应分别解释。后来的赞同不独自证明形成正当，减少活动也不独自证明退化。这项概念连接已给出论证；实际可靠发展及生的不同范围仍保持各自研究负担，不重开既有责任原则。/ The new conceptual account joins formed concern to warranted ethical learning, crediting the completed practical principles. Reliable development and further normative scope remain separately assessable; older next-step wording below is historical where these results now answer it.
+
 本轮推进了**整体生成方向怎样取得不同的实践内容**，并完成实际交接的有限前提。它接续已完成的19项传递接口、17项发展重建，以及已有丰富评价接续、履行后撤回；没有把这些重新宣布缺失，也没有把四种哲学比较计为四条伦理定理。
 
 下一项需要辨明的是：当目的改变或知情拒绝与已有依存真正冲突时，生生方向怎样支持接续、改向或终结的具体范围，为什么这项理由应由某种参与关系承担，以及什么情况会使原判断失效。形成与传递研究须检验实际习得的辨别能否迁移到这种变化；不能以帮助次数、模板留存或产物数量代替校准。

@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-07T22:09:00.521191+00:00",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/InquiryAdequacy.lean",
+  "source_sha256": "45f6c24561ea57b9bc87e6f6ae8c19a8ebca7431386af3d4ec1149281e6247e9",
+  "checker_sha256": "116dd8b71eb4482e244540d836fc7faf76a4e0fe8a9bec42ac82e07b61006000",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/inquiry-adequacy-checks/20261007T220858.910861Z",
+  "theorems": 8,
+  "explicit_declaration_audits": 13,
+  "dependencies": {
+    "Generative.InquiryAdequacy.Adequate": [],
+    "Generative.InquiryAdequacy.adequate_policy_iff_common_choice": [
+      "Classical.choice"
+    ],
+    "Generative.InquiryAdequacy.recoverable_evidence_preserves_adequacy": [],
+    "Generative.InquiryAdequacy.All": [],
+    "Generative.InquiryAdequacy.Blind": [],
+    "Generative.InquiryAdequacy.Protective": [],
+    "Generative.InquiryAdequacy.Targeted": [],
+    "Generative.InquiryAdequacy.blind_target_not_identifiable": [],
+    "Generative.InquiryAdequacy.protection_without_identification": [],
+    "Generative.InquiryAdequacy.blind_targeted_response_impossible": [],
+    "Generative.InquiryAdequacy.truthful_probe_adequate_iff_timely": [],
+    "Generative.InquiryAdequacy.late_probe_loses_even_common_protection": [],
+    "Generative.InquiryAdequacy.probe_enables_previously_unavailable_targeted_response": []
+  },
+  "commands": [
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "-o",
+      "InquiryAdequacy.olean",
+      "InquiryAdequacy.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "InquiryAdequacyAudit.lean"
+    ]
+  ],
+  "log_sha256": {
+    "compile.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axioms.txt": "0b9e16187c6270a50ad248f6e7005e34c13dfd0eb9db580768db082cf0677a2b"
+  },
+  "scope": "Common admissible choices within supplied evidence classes; policy lifting preserves a fixed requirement relation. Truthful inquiry can enable targeted action or miss a supplied deadline. Classical choice is used for abstract policy existence. No ethical warrant, empirical correspondence, probability calibration or general induction is proved."
+}

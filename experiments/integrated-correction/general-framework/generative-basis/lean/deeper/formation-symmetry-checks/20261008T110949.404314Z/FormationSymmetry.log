@@ -1,0 +1,56 @@
+FormationSymmetry.lean:76:15: error: Application type mismatch: The argument
+  rest
+has type
+  Trace P m word u
+of sort `Prop` but is expected to have type
+  S
+of sort `Type u` in the application
+  ih rest
+FormationSymmetry.lean:117:29: error: Application type mismatch: The argument
+  rfl
+has type
+  ?m.30 = ?m.30
+but is expected to have type
+  branching.step (some b) () ?m.25
+in the application
+  Trace.cons rfl
+FormationSymmetry.lean:121:8: error: Application type mismatch: The argument
+  True.intro
+has type
+  True
+but is expected to have type
+  branching.step none () ?m.16
+in the application
+  Trace.cons True.intro
+FormationSymmetry.lean:127:13: error: Type mismatch
+  Eq.symm hs
+has type
+  s = some b
+but is expected to have type
+  s = s
+'FormationSymmetry.PreservesSteps' does not depend on any axioms
+'FormationSymmetry.UniqueAfter' does not depend on any axioms
+'FormationSymmetry.fixed_start_unique_end' does not depend on any axioms
+'FormationSymmetry.changed_end_exhibits_alternative' does not depend on any axioms
+'FormationSymmetry.asymmetry_excludes_joint_contract' does not depend on any axioms
+'FormationSymmetry.outcome_domain_symmetric' does not depend on any axioms
+'FormationSymmetry.step_uniqueness_implies_trace_uniqueness' depends on axioms: [sorryAx]
+'FormationSymmetry.exchange' does not depend on any axioms
+'FormationSymmetry.branching' does not depend on any axioms
+'FormationSymmetry.exchange_involutive' does not depend on any axioms
+'FormationSymmetry.exchange_fixes_unformed' does not depend on any axioms
+'FormationSymmetry.exchange_changes_formed' does not depend on any axioms
+'FormationSymmetry.branching_preserves_exchange' does not depend on any axioms
+'FormationSymmetry.formed_branch_retained' depends on axioms: [sorryAx]
+'FormationSymmetry.either_branch_forms_and_continues' depends on axioms: [sorryAx]
+'FormationSymmetry.formed_branch_cannot_switch' depends on axioms: [sorryAx]
+'FormationSymmetry.symmetric_law_has_retained_asymmetric_outcomes' depends on axioms: [sorryAx]
+'FormationSymmetry.seededUpdate' does not depend on any axioms
+'FormationSymmetry.seededExchange' does not depend on any axioms
+'FormationSymmetry.seeded' does not depend on any axioms
+'FormationSymmetry.seeded_update_commutes' does not depend on any axioms
+'FormationSymmetry.seeded_is_deterministic' does not depend on any axioms
+'FormationSymmetry.seed_supplies_initial_asymmetry' does not depend on any axioms
+'FormationSymmetry.seeded_step_projects' does not depend on any axioms
+'FormationSymmetry.seeded_trace_projects' does not depend on any axioms
+'FormationSymmetry.fixed_seed_does_not_cover_other_branch' depends on axioms: [sorryAx]

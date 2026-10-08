@@ -1,0 +1,243 @@
+'FallibleInspection.Reports' does not depend on any axioms
+'FallibleInspection.explains' does not depend on any axioms
+'FallibleInspection.compatible' does not depend on any axioms
+'FallibleInspection.refine' does not depend on any axioms
+'FallibleInspection.explains_iff' depends on axioms: [propext, Quot.sound]
+'FallibleInspection.compatible_iff' depends on axioms: [propext, Quot.sound]
+'FallibleInspection.joint_refinement_preserves_actual' depends on axioms: [propext, Quot.sound]
+'FallibleInspection.joint_refinement_subset' depends on axioms: [propext]
+'FallibleInspection.missing_reports_preserve_each_nonempty_model' depends on axioms: [propext, Quot.sound]
+'FallibleInspection.received_common_survivor_forces_same_answer' depends on axioms: [propext, Quot.sound]
+'FallibleInspection.CrossSeparated' does not depend on any axioms
+'FallibleInspection.cross_separation_excludes_opposite_explanations' depends on axioms: [propext, Quot.sound]
+'FallibleInspection.responsive_survivors_exclude_opposite' depends on axioms: [propext, Quot.sound]
+'FallibleInspection.ambiguousReports' does not depend on any axioms
+'FallibleInspection.covering_faults_admit_same_complete_transcript' depends on axioms: [propext, Quot.sound]
+'FallibleInspection.complete_diagnosability_iff_cross_separation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'FallibleInspection.refined_pool_remains_sound' depends on axioms: [propext, Quot.sound]
+'FallibleInspection.jointly_inspected_completion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FallibleInspection.auditRoster' does not depend on any axioms
+'FallibleInspection.auditArrangement' does not depend on any axioms
+'FallibleInspection.auditFaults' does not depend on any axioms
+'FallibleInspection.splitReports' does not depend on any axioms
+'FallibleInspection.posterior' does not depend on any axioms
+'FallibleInspection.conflicting_models_each_certify_themselves' does not depend on any axioms
+'FallibleInspection.four_witnesses_cannot_separate_this_transcript' does not depend on any axioms
+'FallibleInspection.fifth_diagnostic_witness_resolves_relevant_distinction' does not depend on any axioms
+'FallibleInspection.absent_fifth_report_preserves_uncertainty' does not depend on any axioms
+'FallibleInspection.falseFifth' does not depend on any axioms
+'FallibleInspection.fifth_witness_is_not_an_infallible_oracle' does not depend on any axioms
+'FallibleInspection.duplicated_fifth_support_does_not_repair_diagnosis' does not depend on any axioms
+'FallibleInspection.simulationReports' does not depend on any axioms
+'FallibleInspection.Audited' does not depend on any axioms
+'FallibleInspection.inspect' does not depend on any axioms
+'FallibleInspection.run' depends on axioms: [propext]
+'FallibleInspection.inspection_keeps_actual_under_admitted_faults' depends on axioms: [propext, Quot.sound]
+'FallibleInspection.outcome' depends on axioms: [propext]
+'FallibleInspection.fallible_inspection_then_actual_shutdown' depends on axioms: [propext]
+'FallibleInspection.inadequate_witnesses_leave_correction_uncertified' depends on axioms: [propext]
+'FallibleInspection.diagnostic_success_still_requires_response_capacity' depends on axioms: [propext]
+'FallibleInspection.denied_inspection_does_not_collect_or_execute' depends on axioms: [propext]
+'FallibleInspection.uncovered_correlated_witness_failure_can_delete_actual' does not depend on any axioms
+FallibleInspection.explains_iff (roster bad : List FaultTolerantCorrection.Domain) (answer : Bool)
+  (reports : FallibleInspection.Reports) :
+  FallibleInspection.explains roster bad answer reports = true ↔
+    ∀ (d : FaultTolerantCorrection.Domain), d ∈ roster → ¬d ∈ bad → reports d = none ∨ reports d = some answer
+FallibleInspection.compatible_iff (roster : List FaultTolerantCorrection.Domain)
+  (faults : FaultTolerantCorrection.Envelope) (answer : Bool) (reports : FallibleInspection.Reports) :
+  FallibleInspection.compatible roster faults answer reports = true ↔
+    ∃ bad,
+      bad ∈ faults ∧
+        ∀ (d : FaultTolerantCorrection.Domain), d ∈ roster → ¬d ∈ bad → reports d = none ∨ reports d = some answer
+FallibleInspection.joint_refinement_preserves_actual {H : Type} (roster : List FaultTolerantCorrection.Domain)
+  (faults : H → FaultTolerantCorrection.Envelope) (answer : H → Bool) (models : List H) (actual : H)
+  (known : actual ∈ models) (bad : List FaultTolerantCorrection.Domain) (admitted : bad ∈ faults actual)
+  (reports : FallibleInspection.Reports)
+  (faithful :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ roster → ¬d ∈ bad → reports d = none ∨ reports d = some (answer actual)) :
+  actual ∈ FallibleInspection.refine roster faults answer models reports
+FallibleInspection.joint_refinement_subset {H : Type} (roster : List FaultTolerantCorrection.Domain)
+  (faults : H → FaultTolerantCorrection.Envelope) (answer : H → Bool) (models : List H)
+  (reports : FallibleInspection.Reports) (h : H) :
+  h ∈ FallibleInspection.refine roster faults answer models reports → h ∈ models
+FallibleInspection.missing_reports_preserve_each_nonempty_model (roster : List FaultTolerantCorrection.Domain)
+  (faults : FaultTolerantCorrection.Envelope) (answer : Bool) :
+  (FallibleInspection.compatible roster faults answer fun x => none) = !List.isEmpty faults
+FallibleInspection.received_common_survivor_forces_same_answer (roster a b : List FaultTolerantCorrection.Domain)
+  (x y : Bool) (reports : FallibleInspection.Reports) (ha : FallibleInspection.explains roster a x reports = true)
+  (hb : FallibleInspection.explains roster b y reports = true)
+  (witness : ∃ d, d ∈ roster ∧ ¬d ∈ a ∧ ¬d ∈ b ∧ reports d ≠ none) : x = y
+FallibleInspection.cross_separation_excludes_opposite_explanations (roster : List FaultTolerantCorrection.Domain)
+  (fa fb : FaultTolerantCorrection.Envelope) (apart : FallibleInspection.CrossSeparated roster fa fb) (x y : Bool)
+  (different : x ≠ y) (reports : FallibleInspection.Reports)
+  (complete : ∀ (d : FaultTolerantCorrection.Domain), d ∈ roster → reports d ≠ none)
+  (first : FallibleInspection.compatible roster fa x reports = true) :
+  FallibleInspection.compatible roster fb y reports = false
+FallibleInspection.responsive_survivors_exclude_opposite (roster bad : List FaultTolerantCorrection.Domain)
+  (alternatives : FaultTolerantCorrection.Envelope) (x y : Bool) (different : x ≠ y)
+  (reports : FallibleInspection.Reports)
+  (responses : ∀ (d : FaultTolerantCorrection.Domain), d ∈ roster → ¬d ∈ bad → reports d = some x)
+  (apart : ∀ (b : List FaultTolerantCorrection.Domain), b ∈ alternatives → ∃ d, d ∈ roster ∧ ¬d ∈ bad ∧ ¬d ∈ b) :
+  FallibleInspection.compatible roster alternatives y reports = false
+FallibleInspection.covering_faults_admit_same_complete_transcript (roster a b : List FaultTolerantCorrection.Domain)
+  (x y : Bool) (cover : ∀ (d : FaultTolerantCorrection.Domain), d ∈ roster → d ∈ a ∨ d ∈ b) :
+  FallibleInspection.explains roster a x (FallibleInspection.ambiguousReports a x y) = true ∧
+    FallibleInspection.explains roster b y (FallibleInspection.ambiguousReports a x y) = true ∧
+      ∀ (d : FaultTolerantCorrection.Domain), d ∈ roster → FallibleInspection.ambiguousReports a x y d ≠ none
+FallibleInspection.complete_diagnosability_iff_cross_separation (roster : List FaultTolerantCorrection.Domain)
+  (fa fb : FaultTolerantCorrection.Envelope) (x y : Bool) (different : x ≠ y) :
+  (∀ (reports : FallibleInspection.Reports),
+      (∀ (d : FaultTolerantCorrection.Domain), d ∈ roster → reports d ≠ none) →
+        FallibleInspection.compatible roster fa x reports = true →
+          FallibleInspection.compatible roster fb y reports = false) ↔
+    FallibleInspection.CrossSeparated roster fa fb
+FallibleInspection.refined_pool_remains_sound {H : Type} (roster : List FaultTolerantCorrection.Domain)
+  (faults : H → FaultTolerantCorrection.Envelope) (answer : H → Bool)
+  (describe : H → CorrectionReconfiguration.Arrangement) (models : List H) (actual : H) (known : actual ∈ models)
+  (bad : List FaultTolerantCorrection.Domain) (admitted : bad ∈ faults actual) (reports : FallibleInspection.Reports)
+  (faithful :
+    ∀ (d : FaultTolerantCorrection.Domain), d ∈ roster → ¬d ∈ bad → reports d = none ∨ reports d = some (answer actual))
+  (roots : List Nat) (covered : CorrectionReconfiguration.Covered (describe actual) roots)
+  (supports : FaultTolerantCorrection.Domain → Bool) (P : Prop)
+  (reliable :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ (describe actual).roster →
+        CorrectionReconfiguration.fails ((describe actual).vulnerability d) roots = false → supports d = true → P)
+  (accepted :
+    FaultTolerantCorrection.certificate (describe actual).roster
+        (EvidenceQualifiedCorrection.pooled describe (FallibleInspection.refine roster faults answer models reports))
+        supports =
+      true) :
+  P
+FallibleInspection.jointly_inspected_completion {H : Type} (roster : List FaultTolerantCorrection.Domain)
+  (faults : H → FaultTolerantCorrection.Envelope) (answer : H → Bool)
+  (describe : H → CorrectionReconfiguration.Arrangement) (models : List H) (actual : H) (known : actual ∈ models)
+  (bad : List FaultTolerantCorrection.Domain) (admitted : bad ∈ faults actual) (reports : FallibleInspection.Reports)
+  (faithful :
+    ∀ (d : FaultTolerantCorrection.Domain), d ∈ roster → ¬d ∈ bad → reports d = none ∨ reports d = some (answer actual))
+  (roots : List Nat) (covered : CorrectionReconfiguration.Covered (describe actual) roots)
+  (apart :
+    FaultTolerantCorrection.separated (describe actual).roster
+      (EvidenceQualifiedCorrection.pooled describe (FallibleInspection.refine roster faults answer models reports)))
+  (w : FaultTolerantCorrection.Installation) (p : FaultTolerantCorrection.Request)
+  (reads : FaultTolerantCorrection.Readings) (approvals : FaultTolerantCorrection.Approvals)
+  (current : FaultTolerantCorrection.fresh w p = true)
+  (readResponses :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ (describe actual).roster →
+        CorrectionReconfiguration.fails ((describe actual).vulnerability d) roots = false →
+          reads d = some (FaultTolerantCorrection.expected p))
+  (issueResponses :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ (describe actual).roster →
+        CorrectionReconfiguration.fails ((describe actual).vulnerability d) roots = false → approvals d = some p)
+  (readFaithful :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ (describe actual).roster →
+        CorrectionReconfiguration.fails ((describe actual).vulnerability d) roots = false →
+          ∀ (o : FaultTolerantCorrection.Observation),
+            reads d = some o → o = FaultTolerantCorrection.observed w p.address)
+  (issueFaithful :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ (describe actual).roster →
+        CorrectionReconfiguration.fails ((describe actual).vulnerability d) roots = false →
+          approvals d = some p → FaultTolerantCorrection.withinMandate w p = true)
+  (funded : (describe actual).roster.length * (List.length p.address + 2) + 3 ≤ w.state.reserve)
+  (timely : w.state.time + (describe actual).roster.length * (List.length p.address + 2) + 3 ≤ w.state.deadline) :
+  (FaultTolerantCorrection.guardedExecute (describe actual).roster
+          (EvidenceQualifiedCorrection.pooled describe (FallibleInspection.refine roster faults answer models reports))
+          (EvidenceQualifiedCorrection.pooled describe (FallibleInspection.refine roster faults answer models reports))
+          w p reads approvals).succeeded =
+      true ∧
+    (FaultTolerantCorrection.guardedExecute (describe actual).roster
+                (EvidenceQualifiedCorrection.pooled describe
+                  (FallibleInspection.refine roster faults answer models reports))
+                (EvidenceQualifiedCorrection.pooled describe
+                  (FallibleInspection.refine roster faults answer models reports))
+                w p reads approvals).installation.state.completed =
+        true ∧
+      FaultTolerantCorrection.withinMandate w p = true
+FallibleInspection.conflicting_models_each_certify_themselves :
+  (FaultTolerantCorrection.certificate FaultTolerantCorrection.roster4
+        (FallibleInspection.auditFaults false EvidenceQualifiedCorrection.Model.left) fun d =>
+        FallibleInspection.splitReports d == some true) =
+      true ∧
+    (FaultTolerantCorrection.certificate FaultTolerantCorrection.roster4
+          (FallibleInspection.auditFaults false EvidenceQualifiedCorrection.Model.right) fun d =>
+          FallibleInspection.splitReports d == some false) =
+        true ∧
+      FallibleInspection.posterior false EvidenceQualifiedCorrection.hypotheses FallibleInspection.splitReports =
+        EvidenceQualifiedCorrection.hypotheses
+FallibleInspection.four_witnesses_cannot_separate_this_transcript :
+  FallibleInspection.explains FaultTolerantCorrection.roster4 [0, 1] true FallibleInspection.splitReports = true ∧
+    FallibleInspection.explains FaultTolerantCorrection.roster4 [2, 3] false FallibleInspection.splitReports = true
+FallibleInspection.fifth_diagnostic_witness_resolves_relevant_distinction :
+  FallibleInspection.posterior true EvidenceQualifiedCorrection.hypotheses FallibleInspection.splitReports =
+      [EvidenceQualifiedCorrection.Model.left, EvidenceQualifiedCorrection.Model.swapped] ∧
+    EvidenceQualifiedCorrection.poolReady
+        (EvidenceQualifiedCorrection.pooled EvidenceQualifiedCorrection.describe
+          (FallibleInspection.posterior true EvidenceQualifiedCorrection.hypotheses FallibleInspection.splitReports)) =
+      true
+FallibleInspection.absent_fifth_report_preserves_uncertainty :
+  (FallibleInspection.posterior true EvidenceQualifiedCorrection.hypotheses fun d =>
+      if (d == 4) = true then none else FallibleInspection.splitReports d) =
+    EvidenceQualifiedCorrection.hypotheses
+FallibleInspection.fifth_witness_is_not_an_infallible_oracle :
+  FallibleInspection.posterior true EvidenceQualifiedCorrection.hypotheses FallibleInspection.falseFifth =
+    [EvidenceQualifiedCorrection.Model.left, EvidenceQualifiedCorrection.Model.swapped]
+FallibleInspection.duplicated_fifth_support_does_not_repair_diagnosis :
+  have dependent := fun h =>
+    CorrectionReconfiguration.envelope
+      (have __src := FallibleInspection.auditArrangement true h;
+      { roster := __src.roster,
+        vulnerability := fun d =>
+          (EvidenceQualifiedCorrection.describe h).vulnerability (if (d == 4) = true then 2 else d),
+        rootFaults := __src.rootFaults });
+  FallibleInspection.refine [0, 1, 2, 3, 4] dependent EvidenceQualifiedCorrection.diagnostic
+      EvidenceQualifiedCorrection.hypotheses FallibleInspection.splitReports =
+    EvidenceQualifiedCorrection.hypotheses
+FallibleInspection.inspection_keeps_actual_under_admitted_faults (extended : Bool)
+  (reports : FallibleInspection.Reports) (s : EvidenceQualifiedCorrection.Situation) (out : FallibleInspection.Audited)
+  (known : s.actual ∈ s.candidates) (bad : List FaultTolerantCorrection.Domain)
+  (admitted : bad ∈ FallibleInspection.auditFaults extended s.actual)
+  (faithful :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ FallibleInspection.auditRoster extended →
+        ¬d ∈ bad → reports d = none ∨ reports d = some (EvidenceQualifiedCorrection.diagnostic s.actual))
+  (done : FallibleInspection.inspect extended reports s = some out) :
+  out.situation.actual = s.actual ∧
+    out.situation.actual ∈ out.situation.candidates ∧
+      out.transcript = List.map (fun d => (d, reports d)) (FallibleInspection.auditRoster extended)
+FallibleInspection.fallible_inspection_then_actual_shutdown :
+  have out :=
+    FallibleInspection.outcome true FallibleInspection.splitReports
+      (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [0] 16 16);
+  out.candidates = [EvidenceQualifiedCorrection.Model.left, EvidenceQualifiedCorrection.Model.swapped] ∧
+    EvidenceQualifiedCorrection.achieved out = true ∧
+      out.installation.state.spent = 16 ∧ out.installation.state.reserve = 0 ∧ out.installation.serial = 1
+FallibleInspection.inadequate_witnesses_leave_correction_uncertified :
+  have out :=
+    FallibleInspection.outcome false FallibleInspection.splitReports
+      (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [0] 16 16);
+  out.candidates = EvidenceQualifiedCorrection.hypotheses ∧
+    EvidenceQualifiedCorrection.achieved out = false ∧ out.installation.state.spent = 12
+FallibleInspection.diagnostic_success_still_requires_response_capacity :
+  have out :=
+    FallibleInspection.outcome true FallibleInspection.splitReports
+      (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [0] 15 15);
+  out.candidates = [EvidenceQualifiedCorrection.Model.left, EvidenceQualifiedCorrection.Model.swapped] ∧
+    EvidenceQualifiedCorrection.achieved out = false ∧
+      out.installation.state.spent = 13 ∧ out.installation.state.reserve = 2
+FallibleInspection.denied_inspection_does_not_collect_or_execute (extended : Bool)
+  (reports : FallibleInspection.Reports) (s : EvidenceQualifiedCorrection.Situation) (denied : s.queryAllowed = false) :
+  FallibleInspection.run extended reports s = none
+FallibleInspection.uncovered_correlated_witness_failure_can_delete_actual :
+  have reports := fun d => some (decide (2 ≤ d));
+  CorrectionReconfiguration.induced (FallibleInspection.auditArrangement true EvidenceQualifiedCorrection.Model.right)
+        [2, 4] =
+      [2, 3, 4] ∧
+    FallibleInspection.posterior true EvidenceQualifiedCorrection.hypotheses reports =
+      [EvidenceQualifiedCorrection.Model.left, EvidenceQualifiedCorrection.Model.swapped]

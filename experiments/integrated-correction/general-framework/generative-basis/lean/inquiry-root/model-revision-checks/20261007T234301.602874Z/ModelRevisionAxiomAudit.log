@@ -1,0 +1,72 @@
+'Generative.ModelRevision.Probe' does not depend on any axioms
+'Generative.ModelRevision.Reports' does not depend on any axioms
+'Generative.ModelRevision.Evidence' does not depend on any axioms
+'Generative.ModelRevision.Law' does not depend on any axioms
+'Generative.ModelRevision.Feature' does not depend on any axioms
+'Generative.ModelRevision.feature' does not depend on any axioms
+'Generative.ModelRevision.terms' does not depend on any axioms
+'Generative.ModelRevision.base' does not depend on any axioms
+'Generative.ModelRevision.difference' does not depend on any axioms
+'Generative.ModelRevision.Repair' does not depend on any axioms
+'Generative.ModelRevision.predict' does not depend on any axioms
+'Generative.ModelRevision.acquire' does not depend on any axioms
+'Generative.ModelRevision.firstMismatch' does not depend on any axioms
+'Generative.ModelRevision.proposals' does not depend on any axioms
+'Generative.ModelRevision.fits' does not depend on any axioms
+'Generative.ModelRevision.retain' does not depend on any axioms
+'Generative.ModelRevision.generate' does not depend on any axioms
+'Generative.ModelRevision.disagreement' does not depend on any axioms
+'Generative.ModelRevision.selectProbe' does not depend on any axioms
+'Generative.ModelRevision.State' does not depend on any axioms
+'Generative.ModelRevision.start' does not depend on any axioms
+'Generative.ModelRevision.nextInquiry' does not depend on any axioms
+'Generative.ModelRevision.advance' does not depend on any axioms
+'Generative.ModelRevision.investigate' does not depend on any axioms
+'Generative.ModelRevision.Status' does not depend on any axioms
+'Generative.ModelRevision.status' does not depend on any axioms
+'Generative.ModelRevision.discovery' does not depend on any axioms
+'Generative.ModelRevision.contrast' does not depend on any axioms
+'Generative.ModelRevision.allProbes' does not depend on any axioms
+'Generative.ModelRevision.discoveryHistory' does not depend on any axioms
+'Generative.ModelRevision.interaction' does not depend on any axioms
+'Generative.ModelRevision.exceptionPatch' does not depend on any axioms
+'Generative.ModelRevision.finished' does not depend on any axioms
+'Generative.ModelRevision.decoded_measurement_preserves_record' depends on axioms: [Quot.sound]
+'Generative.ModelRevision.accepted_repair_fits_history' depends on axioms: [propext, Quot.sound]
+'Generative.ModelRevision.faithful_candidate_survives' depends on axioms: [propext, Quot.sound]
+'Generative.ModelRevision.every_probe_is_in_domain' depends on axioms: [propext]
+'Generative.ModelRevision.exhaustive_acceptance_establishes_correspondence' depends on axioms: [propext, Quot.sound]
+'Generative.ModelRevision.advance_preserves_old_history' depends on axioms: [propext]
+'Generative.ModelRevision.acquisition_locates_actual_discrepancy' does not depend on any axioms
+'Generative.ModelRevision.generated_residual_targets_second_report' does not depend on any axioms
+'Generative.ModelRevision.failure_generates_competing_repairs' does not depend on any axioms
+'Generative.ModelRevision.both_repairs_fit_discovery' does not depend on any axioms
+'Generative.ModelRevision.disagreement_selects_unseen_contrast' depends on axioms: [propext]
+'Generative.ModelRevision.contrast_distinguishes_repairs' does not depend on any axioms
+'Generative.ModelRevision.repetition_cannot_choose_between_repairs' depends on axioms: [propext, Quot.sound]
+'Generative.ModelRevision.complete_cycle_selects_interaction' does not depend on any axioms
+'Generative.ModelRevision.complete_cycle_records_all_probes' does not depend on any axioms
+'Generative.ModelRevision.restricted_repair_selected_when_supported' does not depend on any axioms
+'Generative.ModelRevision.corrected_law_matches_joint_failure' does not depend on any axioms
+'Generative.ModelRevision.completed_cycle_has_earned_correspondence' depends on axioms: [propext]
+'Generative.ModelRevision.no_support_preserves_unfinished_status' does not depend on any axioms
+'Generative.ModelRevision.finished_status_is_scoped' does not depend on any axioms
+'Generative.ModelRevision.unavailable_probe_is_not_global_settlement' does not depend on any axioms
+'Generative.ModelRevision.agreement_alone_misses_a_bad_single_repair' does not depend on any axioms
+'Generative.ModelRevision.independent_audit_exposes_insufficient_grammar' does not depend on any axioms
+'Generative.ModelRevision.LiveCase' does not depend on any axioms
+'Generative.ModelRevision.liveCases' does not depend on any axioms
+'Generative.ModelRevision.rely' does not depend on any axioms
+'Generative.ModelRevision.corrected_use_retains_relevant_uncertainty' does not depend on any axioms
+'Generative.ModelRevision.controlled_use_returns_correct_answer' does not depend on any axioms
+'Generative.ModelRevision.shifted' does not depend on any axioms
+'Generative.ModelRevision.full_old_domain_does_not_establish_new_setting' does not depend on any axioms
+'Generative.ModelRevision.alteredRecording' does not depend on any axioms
+'Generative.ModelRevision.recording_alternative_preserves_all_observations' does not depend on any axioms
+'Generative.ModelRevision.mechanism_location_requires_another_observation' does not depend on any axioms
+'Generative.ModelRevision.Origin' does not depend on any axioms
+'Generative.ModelRevision.ReadPoint' does not depend on any axioms
+'Generative.ModelRevision.stagedObservation' does not depend on any axioms
+'Generative.ModelRevision.locate' does not depend on any axioms
+'Generative.ModelRevision.recorded_data_retains_two_locations' does not depend on any axioms
+'Generative.ModelRevision.intermediate_observation_distinguishes_locations' does not depend on any axioms

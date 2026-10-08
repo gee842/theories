@@ -1,0 +1,66 @@
+{
+  "checked_at_utc": "20261007T221620.557396Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "compiler": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "checker_sha256": "4c9154716425ef41d1f0a568469b688522ffc7560f997e2ed3b560f200a9a040",
+  "scope": "EnactedFoundation and GenerativeCore only; 11 new theorem audits and 18 inherited",
+  "modules": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/enacted-foundation-checks/20261007T221620.557396Z/sources/GenerativeCore.lean",
+      "log": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/enacted-foundation-checks/20261007T221620.557396Z/GenerativeCore.log",
+      "log_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+      "expected_audits": 18,
+      "empty_axiom_audits": [
+        "Generative.trace_append_iff",
+        "Generative.trace_singleton_iff",
+        "Generative.enabled_iff_singleton_trace",
+        "Generative.enabled_difference_implies_state_difference",
+        "Generative.feasible_append_iff",
+        "Generative.feasible_prefix",
+        "Generative.enabled_product_iff",
+        "Generative.trace_product_iff",
+        "Generative.feasible_product_iff",
+        "Generative.trace_map",
+        "Generative.trace_lift",
+        "Generative.projected_trace_iff",
+        "Generative.projection_exact_iff",
+        "Generative.local_exact_iff_trace_exact",
+        "Generative.enabled_projection_iff",
+        "Generative.feasible_projection_iff",
+        "Generative.feasible_difference_implies_projection_difference",
+        "Generative.trace_faithful_iff"
+      ],
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/EnactedFoundation.lean",
+      "sha256": "fd0516e33c61af718264b01f8e7712c6a69730db26a018310ec3575ad14e63d7",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/enacted-foundation-checks/20261007T221620.557396Z/sources/EnactedFoundation.lean",
+      "log": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/enacted-foundation-checks/20261007T221620.557396Z/EnactedFoundation.log",
+      "log_sha256": "62b6e6cde1a3930a2dfefb85b7edb6c2dd62f1d832d2218b5f80a216d0d87676",
+      "expected_audits": 11,
+      "empty_axiom_audits": [
+        "Generative.EnactedFoundation.occurrence_from_enactment",
+        "Generative.EnactedFoundation.enacted_denial_excludes_no_occurrence",
+        "Generative.EnactedFoundation.positive_count_preserves_enabled",
+        "Generative.EnactedFoundation.zero_count_has_no_step",
+        "Generative.EnactedFoundation.zero_count_has_no_enabled",
+        "Generative.EnactedFoundation.bounded_trace_projects",
+        "Generative.EnactedFoundation.bounded_trace_count",
+        "Generative.EnactedFoundation.finite_trace_lifts",
+        "Generative.EnactedFoundation.bounded_trace_iff",
+        "Generative.EnactedFoundation.finite_trace_has_terminal_replay",
+        "Generative.EnactedFoundation.bounded_trace_length_le"
+      ],
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "total_empty_axiom_audits": 29
+}

@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "scope": "Owned proof/source bindings, document links, navigation fragments and bilingual rows; no new scientific rerun.",
+  "new_theorems": 34,
+  "new_declaration_audits": 66,
+  "compared_records": 35486,
+  "local_links_checked": 49,
+  "owned_rows": [
+    "M25",
+    "F30"
+  ],
+  "document_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/TEMPORAL-INSPECTION-INTEGRATION.md": "5bf6b4ba15df22efc5e2cf16b793b4031f072faf59938ad0fee45b4b844188fe",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/TEMPORAL-INSPECTION.md": "8e8cbfa46f050e52b7954ffecf01338c7cd08f6880c1c0d5b4224688aecb67b4",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md": "7b1ad106921145a016054d187dc7d6f0a7684f1c706f86b7374841343dbc40ed",
+    "sources/15-codex-theory-conversations/2026-10-08-finish-alignment-fruits.md": "efd206e108de795a99498e420e1a4d27befce6d6db26c4f619cc220804afc6a1"
+  },
+  "proof_receipt_sha256": "b77a27c5f4fc4f904fc9a6e94052d0cf6098fae17f3c318fb8fa73f4560833b8",
+  "pending_concurrent_review": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "theories/meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/COLLECTIVE-DESTRUCTION-INTEGRATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-collective-destructive-attractors.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CHOICE-AND-GENERATIVE-CONTEXT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-EXPANDING-INQUIRY.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-ARGUMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-PROOF.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/RISK-CONDITIONING-INTEGRATION.md"
+    ],
+    "removed_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md"
+    ]
+  },
+  "whole_table_validation_errors": [],
+  "whole_table_matches_renderer": true,
+  "whole_table_certified": false
+}

@@ -1,0 +1,8 @@
+import LifecycleCorrespondence
+
+#print axioms LifecycleCorrespondence.joint_marginal_numerator
+#print axioms LifecycleCorrespondence.numerator_agreement_iff
+#print axioms LifecycleCorrespondence.conditional_stage_composition
+#print axioms LifecycleCorrespondence.complete_record_product_overstates_joint
+#print axioms LifecycleCorrespondence.both_missing_record_completions_preserve_discrepancy
+#print axioms LifecycleCorrespondence.linked_assay_counts

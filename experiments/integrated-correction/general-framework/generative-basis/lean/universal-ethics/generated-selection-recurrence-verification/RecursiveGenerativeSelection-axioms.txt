@@ -1,0 +1,15 @@
+'RecursiveGenerativeSelection.mul_assoc_eq' does not depend on any axioms
+'RecursiveGenerativeSelection.add_mul_eq' does not depend on any axioms
+'RecursiveGenerativeSelection.strict_mul_cancel_right' does not depend on any axioms
+'RecursiveGenerativeSelection.support' does not depend on any axioms
+'RecursiveGenerativeSelection.descendants' does not depend on any axioms
+'RecursiveGenerativeSelection.pooled' does not depend on any axioms
+'RecursiveGenerativeSelection.cross_compare_iff' does not depend on any axioms
+'RecursiveGenerativeSelection.more_supporters_produce_more_support' does not depend on any axioms
+'RecursiveGenerativeSelection.supporter_share_falls_within' does not depend on any axioms
+'RecursiveGenerativeSelection.descendant_totals_positive' does not depend on any axioms
+'RecursiveGenerativeSelection.pooled_counts' does not depend on any axioms
+'RecursiveGenerativeSelection.support_contribution_threshold' does not depend on any axioms
+'RecursiveGenerativeSelection.global_supporter_share_rises_iff' does not depend on any axioms
+'RecursiveGenerativeSelection.weak_coupling_witness' does not depend on any axioms
+'RecursiveGenerativeSelection.strong_coupling_witness' does not depend on any axioms

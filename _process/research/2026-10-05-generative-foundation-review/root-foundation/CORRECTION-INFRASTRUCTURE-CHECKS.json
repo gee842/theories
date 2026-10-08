@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "scope": "Local bindings, not independent scientific acceptance",
+  "document_links": 12,
+  "proof_theorems": 34,
+  "declaration_audits": 56,
+  "model_records": 12960,
+  "scoped_rows": [
+    "M23",
+    "F29"
+  ],
+  "owned_document_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-INFRASTRUCTURE-INTEGRATION.md": "c56f7a0736568c9d4f4390d4a46e6c7d5c61364fbfc20f8f2b4976c431ffac3c",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-INFRASTRUCTURE-PROTOCOL.md": "1fcae3287ec749f994674a4657fdc93b092d25e6cb4bf9233ffc96d677c50138"
+  },
+  "shared_index_pending": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-PARTIAL-INFORMATION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md"
+    ],
+    "removed_pages": []
+  }
+}

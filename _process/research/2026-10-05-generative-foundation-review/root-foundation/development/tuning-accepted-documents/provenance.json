@@ -1,0 +1,15 @@
+{
+  "scope": "Exact prose and integration receipt accepted at the tuning review, preserved before continuing the canonical account and audit; historical evidence only.",
+  "documents": [
+    {
+      "original_path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEASURED-FEEDBACK-CORRESPONDENCE.md",
+      "preserved_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/tuning-accepted-documents/MEASURED-FEEDBACK-CORRESPONDENCE.md",
+      "sha256": "55743873ca3a8187e35d86d38e188fb80abe25715b003c4b2650e5fcd60c0922"
+    },
+    {
+      "original_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/THREE-CONNECTIONS-COMPLETION-AUDIT.md",
+      "preserved_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/tuning-accepted-documents/THREE-CONNECTIONS-COMPLETION-AUDIT.md",
+      "sha256": "99ce2ecec1825c6e6aa05f6daa084bff21c0dd46eb3ef46eca778d1f7e22f6d5"
+    }
+  ]
+}

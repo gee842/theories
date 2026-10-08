@@ -1,0 +1,17 @@
+'AlignmentInquiry.Plan' does not depend on any axioms
+'AlignmentInquiry.branch' does not depend on any axioms
+'AlignmentInquiry.Interface' does not depend on any axioms
+'AlignmentInquiry.run' does not depend on any axioms
+'AlignmentInquiry.passes' does not depend on any axioms
+'AlignmentInquiry.valid' does not depend on any axioms
+'AlignmentInquiry.choose' does not depend on any axioms
+'AlignmentInquiry.repertoire' does not depend on any axioms
+'AlignmentInquiry.repertoire_complete' depends on axioms: [propext, Quot.sound]
+'AlignmentInquiry.passes_iff_actual_completion' depends on axioms: [propext, Quot.sound]
+'AlignmentInquiry.chosen_sound' depends on axioms: [propext, Quot.sound]
+'AlignmentInquiry.chosen_exists_iff' depends on axioms: [propext, Quot.sound]
+'AlignmentInquiry.no_listed_policy_iff' depends on axioms: [propext, Quot.sound]
+'AlignmentInquiry.empty_uncertainty_never_certifies' depends on axioms: [propext, Quot.sound]
+'AlignmentInquiry.actual_covered_execution' depends on axioms: [propext, Quot.sound]
+'AlignmentInquiry.same_answer_same_selected_response' does not depend on any axioms
+'AlignmentInquiry.observational_obstruction' does not depend on any axioms

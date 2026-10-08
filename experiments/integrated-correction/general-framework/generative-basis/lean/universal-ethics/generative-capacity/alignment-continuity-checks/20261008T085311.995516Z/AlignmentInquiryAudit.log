@@ -1,0 +1,46 @@
+'AlignmentInquiry.Plan' does not depend on any axioms
+'AlignmentInquiry.branch' does not depend on any axioms
+'AlignmentInquiry.Interface' does not depend on any axioms
+'AlignmentInquiry.run' does not depend on any axioms
+'AlignmentInquiry.passes' does not depend on any axioms
+'AlignmentInquiry.valid' does not depend on any axioms
+'AlignmentInquiry.choose' does not depend on any axioms
+'AlignmentInquiry.repertoire' does not depend on any axioms
+'AlignmentInquiry.repertoire_complete' depends on axioms: [propext, Quot.sound]
+'AlignmentInquiry.passes_iff_actual_completion' depends on axioms: [propext, Quot.sound]
+'AlignmentInquiry.chosen_sound' depends on axioms: [propext, Quot.sound]
+'AlignmentInquiry.chosen_exists_iff' depends on axioms: [propext, Quot.sound]
+'AlignmentInquiry.no_listed_policy_iff' depends on axioms: [propext, Quot.sound]
+'AlignmentInquiry.empty_uncertainty_never_certifies' depends on axioms: [propext, Quot.sound]
+'AlignmentInquiry.actual_covered_execution' depends on axioms: [propext, Quot.sound]
+'AlignmentInquiry.same_answer_same_selected_response' does not depend on any axioms
+'AlignmentInquiry.observational_obstruction' does not depend on any axioms
+AlignmentInquiry.repertoire_complete {Q A : Type} (qs : List Q) (as : List A) (p : AlignmentInquiry.Plan Q A)
+  (q : p.query ∈ qs) (a : p.negative ∈ as) (b : p.positive ∈ as) : p ∈ AlignmentInquiry.repertoire qs as
+AlignmentInquiry.passes_iff_actual_completion {S Q A : Type} (m : AlignmentInquiry.Interface S Q A)
+  (p : AlignmentInquiry.Plan Q A) (s : S) :
+  AlignmentInquiry.passes m p s = true ↔ ∃ t, AlignmentInquiry.run m p s = some t ∧ m.achieved t = true
+AlignmentInquiry.chosen_sound {S Q A : Type} (m : AlignmentInquiry.Interface S Q A) (states : List S)
+  (plans : List (AlignmentInquiry.Plan Q A)) (p : AlignmentInquiry.Plan Q A)
+  (h : AlignmentInquiry.choose m states plans = some p) :
+  states ≠ [] ∧ p ∈ plans ∧ ∀ (s : S), s ∈ states → ∃ t, AlignmentInquiry.run m p s = some t ∧ m.achieved t = true
+AlignmentInquiry.chosen_exists_iff {S Q A : Type} (m : AlignmentInquiry.Interface S Q A) (states : List S)
+  (plans : List (AlignmentInquiry.Plan Q A)) :
+  (AlignmentInquiry.choose m states plans).isSome = true ↔ ∃ p, p ∈ plans ∧ AlignmentInquiry.valid m states p = true
+AlignmentInquiry.no_listed_policy_iff {S Q A : Type} (m : AlignmentInquiry.Interface S Q A) (states : List S)
+  (plans : List (AlignmentInquiry.Plan Q A)) :
+  AlignmentInquiry.choose m states plans = none ↔
+    ∀ (p : AlignmentInquiry.Plan Q A), p ∈ plans → AlignmentInquiry.valid m states p = false
+AlignmentInquiry.empty_uncertainty_never_certifies {S Q A : Type} (m : AlignmentInquiry.Interface S Q A)
+  (plans : List (AlignmentInquiry.Plan Q A)) : AlignmentInquiry.choose m [] plans = none
+AlignmentInquiry.actual_covered_execution {S Q A : Type} (m : AlignmentInquiry.Interface S Q A) (states : List S)
+  (plans : List (AlignmentInquiry.Plan Q A)) (p : AlignmentInquiry.Plan Q A) (s : S)
+  (selection : AlignmentInquiry.choose m states plans = some p) (covered : s ∈ states) :
+  ∃ answer after final,
+    m.probe s p.query = some (answer, after) ∧
+      m.respond after (AlignmentInquiry.branch p answer) = some final ∧ m.achieved final = true
+AlignmentInquiry.same_answer_same_selected_response {Q A : Type} (p : AlignmentInquiry.Plan Q A) (a b : Bool)
+  (h : a = b) : AlignmentInquiry.branch p a = AlignmentInquiry.branch p b
+AlignmentInquiry.observational_obstruction {Q A : Type} (p : AlignmentInquiry.Plan Q A) (answer : Bool)
+  (required₁ required₂ : A → Prop) (incompatible : ∀ (a : A), required₁ a → ¬required₂ a) :
+  ¬(required₁ (AlignmentInquiry.branch p answer) ∧ required₂ (AlignmentInquiry.branch p answer))

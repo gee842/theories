@@ -1,0 +1,64 @@
+{
+  "edits": [
+    {
+      "path": "RESEARCH.md",
+      "before_sha256": "3e787a2821f24ff1ec76a0bdd2fc7034fba9c117ba57fe34b3f30c7070b29d48",
+      "after_sha256": "4f7c6295ee901af9e76931e396454bba9f1ea9c192c12a251220fa7552c6ae17",
+      "owned_passage": "**局部组装推出重建选择 / Assembly-derived selection，2026-10-08。** [完整推导与反审](_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md)以实际消耗、成功停止及终端复制生成后继矩阵的P列，接通37项新 Lean 定理／57项新审计，含166项闭包审计。成功概率与后继重建比例须区分；最后一次有支持的尝试可提高成功率却降低增长余量。/ The resident-relative adjacent-rule test and finite-history certificate reuse the prior threshold. Local success, copying and mature-stage production remain supplied; the finite assembly connection is complete, while these remaining laws and connectionist recovery remain open."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "before_sha256": "a7b4118b3bd729e96824be67587425843b5560964850142d06f0d430902eeb3c",
+      "after_sha256": "f1cdf1edc562f4da80860c383b2b24bd76394c18341db51eb9d1a5ae64234776",
+      "owned_passage": "**组装与重建率的形成 / Formation of reconstruction rates，2026-10-08。** [当前理论](unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md#deriving-reconstruction-and-cost-from-local-histories)及[完整推导](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md)由有限有支持的局部历史共同推出重建、产出与代价；37项新定理／57项新审计通过，旧28项阈值定理直接复用。/ Joint histories matter: averaging success and output separately can reverse the growth sign. The equally informed conventional model agrees; the new local-law premises and broader comparative limits remain explicit."
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "before_sha256": "1376caf01acfaa2cf7655ad334d08dffe4c9be6ce80802368d2918902d395b44",
+      "after_sha256": "d22d7c37d459cafcdbea89be5d0accc263463a70f69a6923d3cbc80fc23e1a2a",
+      "owned_passage": "**Assembly-derived selection, 8 October 2026.** [Derivation and author counterreview](ASSEMBLY-DERIVED-SELECTION.md) close the finite assembly-to-descendant connection on a stated slice. Thirty-seven new Lean theorems / fifty-seven new audits derive one matrix column and its cost from paid histories, with a resident-relative invasion test and adverse regimes. Single-attempt success, copying, mature output and renewal remain supplied; connectionist learning recovery is a separate open obligation."
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md",
+      "before_sha256": "57e9fe1d5c4e52f59a9968c77801556764fb6d52540222a63e28b46f768b1c4d",
+      "after_sha256": "bcd36e24a998de316e860d21d7cf996a5c559b6bdc8149ea4aec84b672ce7018",
+      "owned_passage": "**Assembly-derived selection, 8 October 2026.** [AssemblyDerivedSelection.lean](AssemblyDerivedSelection.lean) has 37 new checked theorems / 57 audits, with 166 audits including the actual prior threshold and developmental core; [fresh verification](assembly-derived-selection-verification/README.md). Paid finite histories derive cost and one descendant column, preserve joint output and give a resident-relative adjacent-rule criterion. The fixed local success and copying laws remain premises; expected growth is not stochastic fixation."
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "before_sha256": "fef8dd38060a6a00b53bbec1515166638ca9e3d2b9d25b3b328c7c4bc2ebc127",
+      "after_sha256": "ce3d1a503a099cbf6ff3eaa90a8bc4e0d889e8634b620e18d5fde9ea767c8dae",
+      "owned_passage": "**Assembly and selection continuation, 8 October 2026.** The [existing primary reading record](evolutionary-selection/reconstructive-selection/README.md#assembly-continuation-reading) now records rereading of the 2020 cost and life-cycle mechanisms for the local assembly derivation. Original source bytes remain unchanged. The finite stopping model is a distinct conditional mechanism, not a replication or a new biological observation."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "before_sha256": "ed1160e1b1ee590a90d91ae5e83b32e53c27ee8de16bfc55a12b3dde30302f51",
+      "after_sha256": "78e7e431726306ce8aadb4fec89e29745e83020f03a43a5afab49ad6ac46c844",
+      "owned_passage": "**Finite assembly connection completed, 8 October 2026.** [Local histories now derive reconstruction and cost](EVOLUTIONARY-ORGANIZATION.md#deriving-reconstruction-and-cost-from-local-histories), with 37 new checked theorems / 57 audits. The computed propagule column satisfies the earlier selection interface, including a resident-relative invasion condition. Local success probability, copying and mature-stage output remain supplied. The completed finite connection is a reusable result; it neither completes all coefficient formation nor replaces the connectionist recovery and six broader requirements below."
+    }
+  ],
+  "six_requirement_rows": [
+    "| **1 Formation of evolving organization** | Formation, regulation and developmental reconstruction have conditional models. The new bond-history account derives common founder ancestry under local non-aggregative development, with a targeted biological correspondence. | Extend the connected explanation beyond the stated local laws, retaining genealogy, actual construction and empirical scope. Origins of cells/genomes and broader mechanisms are not established by this case. |",
+    "| **2 Recovery of established evolutionary explanations** | Explicit transmission models and the new two-type recurrence correspondence. | Correspondences covering the claimed selection, mutation, drift, movement, inheritance and ecological mechanisms, with valid ranges and failures. Mathematical claims require actual Lean checks. An abstract interface alone is insufficient. |",
+    "| **3 Evolution of the conditions of evolution** | Actual output determines reconstruction, and inherited retention changes development. Retention, packing and aggregation constrain sorting. A bacterial genealogy and directly linked reversion assay now connect inherited switching to actual cycle completion and subsequent lineage representation under a declared regime. Separate oxygen experiments establish activity-generated gradients and condition-dependent competitive outcomes. | Generalize and calibrate these connections with supported renewal, mixing and stochastic occurrence. Resolve the separate yeast census conversion and follow fragmentation/aggregation participants. Explain mutation, transmission and replacement contributions to prevalence; fixation alone is not causal proof. Laboratory protocol changes do not establish endogenous evolution of the selector. |",
+    "| **4 Novel organization and changed evolutionary units** | The completed [new-possibilities integration](NEW-POSSIBILITIES.md) distinguishes installed construction from encompassing law, gives a formed constructor and scope-specific description revision. The association model adds formed group relations; empirical aggregation distinguishes temporary sorting groups from inherited organizations. | Credit those results and connect formation to inherited retention and ongoing effect under actual evolutionary conditions. Common transport does not alone establish a new inherited unit. Broader changes of evolutionary units and sustained qualitative innovation require their own mechanisms and evidence. |",
+    "| **5 Demonstrated comparative strength** | Exact recurrence correspondence and a proved limit of snapshots omitting bonds. Retention data compare ordinary predictors with/without protocol information, including a worsening case. A source-bound settling sensitivity holds geometry fixed and reveals consequential density/drag choices; a conventional developmental life-cycle model receives credit. Chronological genealogy forecasts now demonstrate a gain over a changing stage average and two block alternatives, fully credited to conventional lineage inference. Dated assay transfer exposes stage-specific prediction failures. | Establish a consequential gain against an adequately specified rival with matched evidence and assumptions. Neither the reduced baselines nor disagreement between unvalidated velocity approximations establishes superior prediction. Measure sorting and descendants to decide the physical correspondence. Broad empirical superiority remains unestablished. |",
+    "| **6 Ethical continuation and evolved evaluation** | The [practical-judgment candidate](PRACTICAL-JUDGMENT.md) is complete and independently accepted at its explicit-axiom general-principles scope, with G0 and additional comparison/responsibility commitments disclosed. | Credit that completed scope; connect evolved evaluation to its actual recognition, calibration and implementation, preserving failures. Application correspondence and actual compliance require evidence. Reproductive advantage cannot silently serve as ethical authority. |"
+  ],
+  "chain_update": {
+    "other_entries_preserved": 91,
+    "new_link_paths": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/assembly-derived-selection-verification/verification.json"
+    ],
+    "reviewed_owned_paths": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/assembly-derived-selection-verification/verification.json",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/AssemblyDerivedSelection.lean",
+      "sources/evolutionary-selection/reconstructive-selection/README.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONSTRUCTIVE-SELECTION-INTEGRATION.md"
+    ],
+    "maintenance_owned_passage": "**有限组装推出选择 / Assembly-derived selection，2026-10-08。** C14 成对接入[推导与反审](ASSEMBLY-DERIVED-SELECTION.md)：37项新定理／57项新审计，166项闭包审计；保留联合产出、相邻规则入侵及过度尝试反例。/ Only C14, its rendered row and owned read source/discovery versions change. Local success and copying remain supplied, and all other entries and pending concurrent reviews are preserved. [Owned edits](ASSEMBLY-DERIVED-SELECTION-INDEX-EDITS.json); [scoped checks](ASSEMBLY-DERIVED-SELECTION-CHECKS.json).",
+    "all_other_rendered_lines_preserved": true
+  }
+}

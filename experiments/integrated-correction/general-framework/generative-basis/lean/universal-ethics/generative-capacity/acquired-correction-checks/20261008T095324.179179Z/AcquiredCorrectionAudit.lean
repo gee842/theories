@@ -1,0 +1,70 @@
+import AcquiredCorrection
+#print axioms AcquiredCorrection.Tree
+#print axioms AcquiredCorrection.Address
+#print axioms AcquiredCorrection.Ticket
+#print axioms AcquiredCorrection.Entry
+#print axioms AcquiredCorrection.locate
+#print axioms AcquiredCorrection.nodes
+#print axioms AcquiredCorrection.inhabited
+#print axioms AcquiredCorrection.burden
+#print axioms AcquiredCorrection.live
+#print axioms AcquiredCorrection.Verdict
+#print axioms AcquiredCorrection.Scan
+#print axioms AcquiredCorrection.bump
+#print axioms AcquiredCorrection.scan
+#print axioms AcquiredCorrection.discover
+#print axioms AcquiredCorrection.coherent
+#print axioms AcquiredCorrection.child_locate
+#print axioms AcquiredCorrection.scan_budget
+#print axioms AcquiredCorrection.scan_sound
+#print axioms AcquiredCorrection.discovered_route_is_real
+#print axioms AcquiredCorrection.exhausted_is_scoped_absence
+#print axioms AcquiredCorrection.sufficient_budget_finishes
+#print axioms AcquiredCorrection.reachable_route_is_found
+#print axioms AcquiredCorrection.positive_witness_needs_no_complete_map
+#print axioms AcquiredCorrection.interrupted_is_not_absent
+#print axioms AcquiredCorrection.acquire
+#print axioms AcquiredCorrection.acquired_accounting
+#print axioms AcquiredCorrection.Delivery
+#print axioms AcquiredCorrection.dispatch
+#print axioms AcquiredCorrection.dispatch_completes
+#print axioms AcquiredCorrection.current_revocation_rejects
+#print axioms AcquiredCorrection.absent_current_route_rejects
+#print axioms AcquiredCorrection.successful_dispatch_is_current
+#print axioms AcquiredCorrection.acquired_execution
+#print axioms AcquiredCorrection.located_depth_le_nodes
+#print axioms AcquiredCorrection.complete_finite_discovery_and_execution
+#print axioms AcquiredCorrection.exampleTree
+#print axioms AcquiredCorrection.exampleTicket
+#print axioms AcquiredCorrection.initial
+#print axioms AcquiredCorrection.acquired_new_address
+#print axioms AcquiredCorrection.acquired_then_actual_shutdown
+#print axioms AcquiredCorrection.found_but_unaffordable
+#print axioms AcquiredCorrection.revocation_keeps_search_and_recheck_cost
+#print axioms AcquiredCorrection.changed_route_rejects_stale_ticket
+#print axioms AcquiredCorrection.renewed_authority_and_new_observation_recover
+#print axioms AcquiredCorrection.captured_current_authority_passes_technical_gate
+#check AcquiredCorrection.child_locate
+#check AcquiredCorrection.scan_budget
+#check AcquiredCorrection.scan_sound
+#check AcquiredCorrection.discovered_route_is_real
+#check AcquiredCorrection.exhausted_is_scoped_absence
+#check AcquiredCorrection.sufficient_budget_finishes
+#check AcquiredCorrection.reachable_route_is_found
+#check AcquiredCorrection.positive_witness_needs_no_complete_map
+#check AcquiredCorrection.interrupted_is_not_absent
+#check AcquiredCorrection.acquired_accounting
+#check AcquiredCorrection.dispatch_completes
+#check AcquiredCorrection.current_revocation_rejects
+#check AcquiredCorrection.absent_current_route_rejects
+#check AcquiredCorrection.successful_dispatch_is_current
+#check AcquiredCorrection.acquired_execution
+#check AcquiredCorrection.located_depth_le_nodes
+#check AcquiredCorrection.complete_finite_discovery_and_execution
+#check AcquiredCorrection.acquired_new_address
+#check AcquiredCorrection.acquired_then_actual_shutdown
+#check AcquiredCorrection.found_but_unaffordable
+#check AcquiredCorrection.revocation_keeps_search_and_recheck_cost
+#check AcquiredCorrection.changed_route_rejects_stale_ticket
+#check AcquiredCorrection.renewed_authority_and_new_observation_recover
+#check AcquiredCorrection.captured_current_authority_passes_technical_gate

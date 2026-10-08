@@ -1,0 +1,93 @@
+Generative.UnfoldingPreservation.may_append.{u, v} {State : Type u} {Action : Type v}
+  (P : Generative.Process State Action) (s : State) (first second : List Action) (post : State → Prop) :
+  Generative.UnfoldingPreservation.May P s (first ++ second) post ↔
+    Generative.UnfoldingPreservation.May P s first fun m => Generative.UnfoldingPreservation.May P m second post
+Generative.UnfoldingPreservation.must_append.{u, v} {State : Type u} {Action : Type v}
+  (P : Generative.Process State Action) (s : State) (first second : List Action) (post : State → Prop) :
+  Generative.UnfoldingPreservation.Must P s (first ++ second) post ↔
+    Generative.UnfoldingPreservation.Must P s first fun m => Generative.UnfoldingPreservation.Must P m second post
+Generative.UnfoldingPreservation.completes_append_iff.{u, v} {State : Type u} {Action : Type v}
+  (P : Generative.Process State Action) (s : State) (first second : List Action) (post : State → Prop) :
+  Generative.UnfoldingPreservation.Completes P s (first ++ second) post ↔
+    (Generative.UnfoldingPreservation.May P s first fun m => Generative.Feasible P m second) ∧
+      Generative.UnfoldingPreservation.Must P s first fun m => Generative.UnfoldingPreservation.Must P m second post
+Generative.UnfoldingPreservation.all_reached_continue_suffices.{u, v} {State : Type u} {Action : Type v}
+  (P : Generative.Process State Action) (s : State) (first second : List Action) (post : State → Prop)
+  (hfirst : Generative.Feasible P s first)
+  (hnext :
+    Generative.UnfoldingPreservation.Must P s first fun m =>
+      Generative.UnfoldingPreservation.Completes P m second post) :
+  Generative.UnfoldingPreservation.Completes P s (first ++ second) post
+Generative.UnfoldingPreservation.absent_continuation_is_not_completion.{u, v} {State : Type u} {Action : Type v}
+  (P : Generative.Process State Action) (s : State) (word : List Action) (post : State → Prop)
+  (habsent : ¬Generative.Feasible P s word) :
+  Generative.UnfoldingPreservation.Must P s word post ∧ ¬Generative.UnfoldingPreservation.Completes P s word post
+Generative.UnfoldingPreservation.account_preserves_may.{u, v, w, x} {State : Type u} {Action : Type v}
+  {Outcome : Type w} {Code : Type x} {P : Generative.Process State Action} {observe : State → Outcome}
+  {p : Generative.UnfoldingPreservation.Account State Action Outcome Code}
+  (hp : Generative.UnfoldingPreservation.ExactAccount P observe p) (s : State) (word : List Action)
+  (post : Outcome → Prop) :
+  (∃ o, p.read (p.encode s) (word, o) ∧ post o) ↔
+    Generative.UnfoldingPreservation.May P s word fun t => post (observe t)
+Generative.UnfoldingPreservation.account_preserves_must.{u, v, w, x} {State : Type u} {Action : Type v}
+  {Outcome : Type w} {Code : Type x} {P : Generative.Process State Action} {observe : State → Outcome}
+  {p : Generative.UnfoldingPreservation.Account State Action Outcome Code}
+  (hp : Generative.UnfoldingPreservation.ExactAccount P observe p) (s : State) (word : List Action)
+  (post : Outcome → Prop) :
+  (∀ (o : Outcome), p.read (p.encode s) (word, o) → post o) ↔
+    Generative.UnfoldingPreservation.Must P s word fun t => post (observe t)
+Generative.UnfoldingPreservation.account_preserves_feasibility.{u, v, w, x} {State : Type u} {Action : Type v}
+  {Outcome : Type w} {Code : Type x} {P : Generative.Process State Action} {observe : State → Outcome}
+  {p : Generative.UnfoldingPreservation.Account State Action Outcome Code}
+  (hp : Generative.UnfoldingPreservation.ExactAccount P observe p) (s : State) (word : List Action) :
+  (∃ o, p.read (p.encode s) (word, o)) ↔ Generative.Feasible P s word
+Generative.UnfoldingPreservation.answer_difference_separates.{u, v, w, x} {State : Type u} {Action : Type v}
+  {Outcome : Type w} {Code : Type x} {P : Generative.Process State Action} {observe : State → Outcome}
+  {p : Generative.UnfoldingPreservation.Account State Action Outcome Code}
+  (hp : Generative.UnfoldingPreservation.ExactAccount P observe p) {s t : State} {word : List Action}
+  {outcome : Outcome} (hs : Generative.UnfoldingPreservation.NativeAnswer P observe s (word, outcome))
+  (ht : ¬Generative.UnfoldingPreservation.NativeAnswer P observe t (word, outcome)) : p.encode s ≠ p.encode t
+Generative.UnfoldingPreservation.outcome_difference_separates.{u, v, w, x} {State : Type u} {Action : Type v}
+  {Outcome : Type w} {Code : Type x} {P : Generative.Process State Action} {observe : State → Outcome}
+  {p : Generative.UnfoldingPreservation.Account State Action Outcome Code}
+  (hp : Generative.UnfoldingPreservation.ExactAccount P observe p) {s t endpoint : State} {word : List Action}
+  {outcome : Outcome} (hactual : Generative.Trace P s word endpoint) (houtcome : observe endpoint = outcome)
+  (hexcludes : ∀ (other : State), Generative.Trace P t word other → observe other ≠ outcome) : p.encode s ≠ p.encode t
+Generative.UnfoldingPreservation.enabled_difference_separates.{u, v, w, x} {State : Type u} {Action : Type v}
+  {Outcome : Type w} {Code : Type x} {P : Generative.Process State Action} {observe : State → Outcome}
+  {p : Generative.UnfoldingPreservation.Account State Action Outcome Code}
+  (hp : Generative.UnfoldingPreservation.ExactAccount P observe p) {s t : State} {a : Action}
+  (hs : Generative.Enabled P s a) (ht : ¬Generative.Enabled P t a) : p.encode s ≠ p.encode t
+Generative.UnfoldingPreservation.same_segment_iff_all_may.{u, v} {State : Type u} {Action : Type v}
+  (P : Generative.Process State Action) (first second : List Action) :
+  Generative.UnfoldingPreservation.SameSegment P first second ↔
+    ∀ (s : State) (post : State → Prop),
+      Generative.UnfoldingPreservation.May P s first post ↔ Generative.UnfoldingPreservation.May P s second post
+Generative.UnfoldingPreservation.same_segment_in_context.{u, v} {State : Type u} {Action : Type v}
+  {P : Generative.Process State Action} {first second : List Action}
+  (he : Generative.UnfoldingPreservation.SameSegment P first second) (left right : List Action) :
+  Generative.UnfoldingPreservation.SameSegment P (left ++ first ++ right) (left ++ second ++ right)
+Generative.UnfoldingPreservation.exact_segment_join.{u, v, x} {State : Type u} {Action : Type v} {Code : Type x}
+  {P : Generative.Process State Action} {p : Generative.UnfoldingPreservation.SegmentAccount State Action Code}
+  (hp : Generative.UnfoldingPreservation.ExactSegmentAccount P p) (first second : List Action) (s t : State) :
+  p.read (p.encode (first ++ second)) (s, t) ↔
+    ∃ middle, p.read (p.encode first) (s, middle) ∧ p.read (p.encode second) (middle, t)
+Generative.UnfoldingPreservation.exact_segment_admitted_join.{u, v, x} {State : Type u} {Action : Type v}
+  {Code : Type x} {P : Generative.Process State Action}
+  {p : Generative.UnfoldingPreservation.SegmentAccount State Action Code}
+  (hp : Generative.UnfoldingPreservation.ExactSegmentAccount P p) (first second : List Action) (s : State) :
+  Generative.Feasible P s (first ++ second) ↔
+    ∃ middle endpoint, p.read (p.encode first) (s, middle) ∧ p.read (p.encode second) (middle, endpoint)
+Generative.UnfoldingPreservation.equal_segment_codes_substitute.{u, v, x} {State : Type u} {Action : Type v}
+  {Code : Type x} {P : Generative.Process State Action}
+  {p : Generative.UnfoldingPreservation.SegmentAccount State Action Code}
+  (hp : Generative.UnfoldingPreservation.ExactSegmentAccount P p) {first second : List Action}
+  (he : p.encode first = p.encode second) (left right : List Action) :
+  Generative.UnfoldingPreservation.SameSegment P (left ++ first ++ right) (left ++ second ++ right)
+Generative.UnfoldingPreservation.existential_completion_does_not_complete_every_branch :
+  (Generative.UnfoldingPreservation.Completes Generative.UnfoldingPreservation.branching 0 [true, false] fun t =>
+      t = 3) ∧
+    Generative.Trace Generative.UnfoldingPreservation.branching 0 [true] 2 ∧
+      ¬Generative.Feasible Generative.UnfoldingPreservation.branching 2 [false] ∧
+        ¬Generative.UnfoldingPreservation.Must Generative.UnfoldingPreservation.branching 0 [true] fun m =>
+            Generative.Feasible Generative.UnfoldingPreservation.branching m [false]

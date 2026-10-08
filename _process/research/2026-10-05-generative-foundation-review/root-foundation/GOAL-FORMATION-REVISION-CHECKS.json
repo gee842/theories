@@ -1,0 +1,206 @@
+{
+  "status": "passed",
+  "scope": "Owned integration, M20, local links and frozen Lean source/artifact bindings; no full-table certification or new empirical validation",
+  "new_theorems": 43,
+  "new_declaration_audits": 85,
+  "inherited_theorems": 50,
+  "inherited_declaration_audits": 80,
+  "proof_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-formation-revision-verification.json",
+  "retained_artifacts_bound": 21,
+  "local_links_checked": 33,
+  "links": [
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+      "reference": "../../../sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+      "reference": "NONDUAL-METHOD.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+      "reference": "EVALUATIVE-PLASTICITY.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+      "reference": "METHOD-REVISION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+      "reference": "GENERATIVE-SELECTION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+      "reference": "PHILOSOPHICAL-ACCOUNT.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-SUFFICIENCY-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+      "reference": "PRACTICAL-JUDGMENT.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+      "reference": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GoalFormationRevision.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md",
+      "reference": "../../../../sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md",
+      "reference": "GENERATIVE-ALIGNMENT-REVISION.md#7-当前结论与下一项判别--result-and-next-discriminator"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GoalFormationRevision.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_goal_formation_revision.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-formation-revision-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md",
+      "reference": "BIOLOGICAL-JOINT-VALIDATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md",
+      "reference": "GOAL-FORMATION-REVISION-INDEX-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md",
+      "reference": "GOAL-FORMATION-REVISION-CHECKS.json"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md",
+      "reference": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "reference": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "reference": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "reference": "GOAL-FORMATION-AND-REVISION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md",
+      "reference": "GOAL-FORMATION-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "GOAL-FORMATION-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "GOAL-FORMATION-REVISION-INDEX-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "GOAL-FORMATION-REVISION-CHECKS.json"
+    }
+  ],
+  "owned_row_matches_canonical_renderer": true,
+  "unrelated_entries_match_edit_baseline": false,
+  "unrelated_table_lines_match_edit_baseline": false,
+  "shared_fragments": {
+    "RESEARCH.md": {
+      "owned_insertion_present": true,
+      "other_bytes_match_insertion_baseline": false,
+      "full_source_review_refreshed": false
+    },
+    "theories/shengsheng-buxi-generative-existence/README.md": {
+      "owned_insertion_present": true,
+      "other_bytes_match_insertion_baseline": false,
+      "full_source_review_refreshed": false
+    },
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": {
+      "owned_insertion_present": true,
+      "other_bytes_match_insertion_baseline": true,
+      "full_source_review_refreshed": false
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md": {
+      "owned_insertion_present": true,
+      "other_bytes_match_insertion_baseline": true,
+      "full_source_review_refreshed": false
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md": {
+      "owned_insertion_present": true,
+      "other_bytes_match_insertion_baseline": false,
+      "full_source_review_refreshed": false
+    }
+  },
+  "pending_global_review": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-REVISION-CONTINUATION-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-REVISION-CONTINUATION-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-REVISION-CONTINUATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-ARGUMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-REVIEW.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-INDIVIDUATION.md"
+    ],
+    "removed_pages": []
+  },
+  "owned_file_sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md": "e5068539a27a7c6957721801043af11d3df95800ec8c5e5b0f24e32daaa3a2e0",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md": "b5d56d35a4862466f33f0e893b7ae2917f2fec6de4b457a083f5aee6631f08d8",
+    "sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md": "d8c8a6c4d6b515d986ae2d377b8d3babc2090bb7bbbc85467514ee3558807137",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/check_goal_formation_revision_integration.py": "6dfc5390815e91770d8ce330ffed2c7470b0cb8dffcee22509932ce590703794"
+  },
+  "independent_agent_review": false
+}

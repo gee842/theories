@@ -1,0 +1,17 @@
+CorrectionPopulation.lean:67:42: warning: This simp argument is unused:
+  Fintype.sum_bool
+
+Hint: Omit it from the simp argument list.
+  simp [independentError, majority, mass,̵ ̵F̵i̵n̵t̵y̵p̵e̵.̵s̵u̵m̵_̵b̵o̵o̵l̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CorrectionPopulation.lean:77:47: warning: unused variable `low`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+CorrectionPopulation.lean:87:37: warning: This simp argument is unused:
+  Fintype.sum_bool
+
+Hint: Omit it from the simp argument list.
+  simp [sharedError, majority, mass,̵ ̵F̵i̵n̵t̵y̵p̵e̵.̵s̵u̵m̵_̵b̵o̵o̵l̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

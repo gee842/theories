@@ -1,0 +1,184 @@
+'AlignmentSuccession.withMigration' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlignmentSuccession.Payload' does not depend on any axioms
+'AlignmentSuccession.Carrier' does not depend on any axioms
+'AlignmentSuccession.commandState' does not depend on any axioms
+'AlignmentSuccession.serve' does not depend on any axioms
+'AlignmentSuccession.carried_command_is_executed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlignmentSuccession.next' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlignmentSuccession.step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlignmentSuccession.enabled_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlignmentSuccession.exact_market_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlignmentSuccession.payload_keeps_claims_and_history' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlignmentSuccession.carrier_and_work_accounted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlignmentSuccession.corrupted_transfer_blocked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlignmentSuccession.missing_part_blocks_realization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlignmentSuccession.migration_funding_blocks_realization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlignmentSuccession.selectPayload' does not depend on any axioms
+'AlignmentSuccession.admitted_payload_exact' depends on axioms: [propext]
+'AlignmentSuccession.faithful_candidate_is_selected' depends on axioms: [propext, Quot.sound]
+'AlignmentSuccession.selectedStep' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlignmentSuccession.ranked_competition_preserves_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlignmentSuccession.lineage' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlignmentSuccession.lineage_projects_to_market' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlignmentSuccession.lineage_transports_actual_payload' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlignmentSuccession.lineage_resources' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlignmentSuccession.lineage_running' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlignmentSuccession.every_generation_executes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlignmentSuccession.arbitrary_generation_preserves_supports' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlignmentSuccession.competitive_lineage_executes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlignmentSuccession.financed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlignmentSuccession.initialCarrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlignmentSuccession.financed_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlignmentSuccession.financed_initial_safe' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlignmentSuccession.aggregate_safe_can_lack_a_carrier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlignmentSuccession.old_funding_certificate_does_not_pay_migration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AlignmentSuccession.aggregate_shutdown_does_not_force_perpetual_operation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+AlignmentSuccession.carried_command_is_executed {n : Nat} (s : AlignmentSuccession.Carrier n)
+  (auth : s.payload.credential = s.payload.authority) :
+  ∃ t,
+    AlignmentSuccession.serve s = some t ∧
+      t.completed = true ∧
+        t.reserve = 0 ∧
+          t.spent = 4 ∧
+            t.requested = s.payload.requested ∧ t.running = (s.payload.requested != EffectiveCommand.Command.shutdown)
+AlignmentSuccession.enabled_step {n : Nat} (p : MarketGenerativity.Parameters n) (migration : Rat)
+  (d : MarketGenerativity.Disturbance n) (arrivals : Nat) (s : AlignmentSuccession.Carrier n)
+  (running : s.running = true) (parts : 0 < s.parts) (funded : p.fee + migration ≤ s.economy.budget)
+  (auth : s.payload.credential = s.payload.authority) :
+  AlignmentSuccession.step p migration d arrivals s.payload s = some (AlignmentSuccession.next p migration d arrivals s)
+AlignmentSuccession.exact_market_projection {n : Nat} (p : MarketGenerativity.Parameters n) (migration : Rat)
+  (d : MarketGenerativity.Disturbance n) (a : Nat) (s : AlignmentSuccession.Carrier n) :
+  (AlignmentSuccession.next p migration d a s).economy =
+    MarketGenerativity.operatingStep (AlignmentSuccession.withMigration p migration) s.economy d
+AlignmentSuccession.payload_keeps_claims_and_history {n : Nat} (p : MarketGenerativity.Parameters n) (migration : Rat)
+  (d : MarketGenerativity.Disturbance n) (a : Nat) (s : AlignmentSuccession.Carrier n) :
+  (AlignmentSuccession.next p migration d a s).payload.claims = s.payload.claims ∧
+    (AlignmentSuccession.next p migration d a s).payload.receipts =
+        s.payload.receipts ++ [(s.identity + 1, s.payload.requested)] ∧
+      (AlignmentSuccession.next p migration d a s).payload.requested = s.payload.requested
+AlignmentSuccession.carrier_and_work_accounted {n : Nat} (p : MarketGenerativity.Parameters n) (migration : Rat)
+  (d : MarketGenerativity.Disturbance n) (a : Nat) (s : AlignmentSuccession.Carrier n) (parts : 0 < s.parts) :
+  (AlignmentSuccession.next p migration d a s).parts + 1 = s.parts + a ∧
+    (AlignmentSuccession.next p migration d a s).identity = s.identity + 1 ∧
+      (AlignmentSuccession.next p migration d a s).workProvided -
+          (AlignmentSuccession.next p migration d a s).workConsumed =
+        s.workProvided - s.workConsumed
+AlignmentSuccession.corrupted_transfer_blocked {n : Nat} (p : MarketGenerativity.Parameters n) (migration : Rat)
+  (d : MarketGenerativity.Disturbance n) (a : Nat) (copy : AlignmentSuccession.Payload)
+  (s : AlignmentSuccession.Carrier n) (bad : copy ≠ s.payload) : AlignmentSuccession.step p migration d a copy s = none
+AlignmentSuccession.missing_part_blocks_realization {n : Nat} (p : MarketGenerativity.Parameters n) (migration : Rat)
+  (d : MarketGenerativity.Disturbance n) (a : Nat) (copy : AlignmentSuccession.Payload)
+  (s : AlignmentSuccession.Carrier n) (h : s.parts = 0) : AlignmentSuccession.step p migration d a copy s = none
+AlignmentSuccession.migration_funding_blocks_realization {n : Nat} (p : MarketGenerativity.Parameters n)
+  (migration : Rat) (d : MarketGenerativity.Disturbance n) (a : Nat) (copy : AlignmentSuccession.Payload)
+  (s : AlignmentSuccession.Carrier n) (h : s.economy.budget < p.fee + migration) :
+  AlignmentSuccession.step p migration d a copy s = none
+AlignmentSuccession.admitted_payload_exact (current chosen : AlignmentSuccession.Payload)
+  (proposals : List AlignmentSuccession.Payload)
+  (h : AlignmentSuccession.selectPayload current proposals = some chosen) : chosen = current
+AlignmentSuccession.faithful_candidate_is_selected (current : AlignmentSuccession.Payload)
+  (proposals : List AlignmentSuccession.Payload) (available : current ∈ proposals) :
+  AlignmentSuccession.selectPayload current proposals = some current
+AlignmentSuccession.ranked_competition_preserves_transfer {n : Nat} (p : MarketGenerativity.Parameters n)
+  (migration : Rat) (d : MarketGenerativity.Disturbance n) (arrivals : Nat) (s : AlignmentSuccession.Carrier n)
+  (proposals : List AlignmentSuccession.Payload) (available : s.payload ∈ proposals) (running : s.running = true)
+  (parts : 0 < s.parts) (funded : p.fee + migration ≤ s.economy.budget)
+  (auth : s.payload.credential = s.payload.authority) :
+  AlignmentSuccession.selectedStep p migration d arrivals proposals s =
+    some (AlignmentSuccession.next p migration d arrivals s)
+AlignmentSuccession.lineage_projects_to_market {n : Nat} (p : MarketGenerativity.Parameters n) (migration : Rat)
+  (ds : Nat → MarketGenerativity.Disturbance n) (s : AlignmentSuccession.Carrier n) (t : Nat) :
+  (AlignmentSuccession.lineage p migration ds s t).economy =
+    MarketGenerativity.history (AlignmentSuccession.withMigration p migration) s.economy ds t
+AlignmentSuccession.lineage_transports_actual_payload {n : Nat} (p : MarketGenerativity.Parameters n) (migration : Rat)
+  (ds : Nat → MarketGenerativity.Disturbance n) (s : AlignmentSuccession.Carrier n) (t : Nat) :
+  (AlignmentSuccession.lineage p migration ds s t).payload.requested = s.payload.requested ∧
+    (AlignmentSuccession.lineage p migration ds s t).payload.claims = s.payload.claims ∧
+      (AlignmentSuccession.lineage p migration ds s t).payload.authority = s.payload.authority ∧
+        (AlignmentSuccession.lineage p migration ds s t).payload.credential = s.payload.credential ∧
+          (AlignmentSuccession.lineage p migration ds s t).payload.receipts.length = s.payload.receipts.length + t
+AlignmentSuccession.lineage_resources {n : Nat} (p : MarketGenerativity.Parameters n) (migration : Rat)
+  (ds : Nat → MarketGenerativity.Disturbance n) (s : AlignmentSuccession.Carrier n) (parts : 0 < s.parts) (t : Nat) :
+  (AlignmentSuccession.lineage p migration ds s t).parts = s.parts ∧
+    (AlignmentSuccession.lineage p migration ds s t).identity = s.identity + t ∧
+      (AlignmentSuccession.lineage p migration ds s t).workProvided = s.workProvided + 4 * t ∧
+        (AlignmentSuccession.lineage p migration ds s t).workConsumed = s.workConsumed + 4 * t
+AlignmentSuccession.lineage_running {n : Nat} (p : MarketGenerativity.Parameters n) (migration : Rat)
+  (ds : Nat → MarketGenerativity.Disturbance n) (s : AlignmentSuccession.Carrier n) (running : s.running = true)
+  (continuing : s.payload.requested ≠ EffectiveCommand.Command.shutdown) (t : Nat) :
+  (AlignmentSuccession.lineage p migration ds s t).running = true
+AlignmentSuccession.every_generation_executes {n : Nat} (p : MarketGenerativity.Parameters n) (migration : Rat)
+  (b : MarketGenerativity.Bounds n) (ds : Nat → MarketGenerativity.Disturbance n) (s : AlignmentSuccession.Carrier n)
+  (certificate : MarketGenerativity.Certificate (AlignmentSuccession.withMigration p migration) b)
+  (initial : MarketGenerativity.Safe (AlignmentSuccession.withMigration p migration) b s.economy)
+  (shocks : ∀ (t : Nat), MarketGenerativity.Admissible b (ds t)) (parts : 0 < s.parts) (running : s.running = true)
+  (continuing : s.payload.requested ≠ EffectiveCommand.Command.shutdown)
+  (auth : s.payload.credential = s.payload.authority) (t : Nat) :
+  AlignmentSuccession.step p migration (ds t) 1 (AlignmentSuccession.lineage p migration ds s t).payload
+      (AlignmentSuccession.lineage p migration ds s t) =
+    some (AlignmentSuccession.lineage p migration ds s (t + 1))
+AlignmentSuccession.arbitrary_generation_preserves_supports {n : Nat} (p : MarketGenerativity.Parameters n)
+  (migration : Rat) (b : MarketGenerativity.Bounds n) (ds : Nat → MarketGenerativity.Disturbance n)
+  (s : AlignmentSuccession.Carrier n)
+  (certificate : MarketGenerativity.Certificate (AlignmentSuccession.withMigration p migration) b)
+  (initial : MarketGenerativity.Safe (AlignmentSuccession.withMigration p migration) b s.economy)
+  (shocks : ∀ (t : Nat), MarketGenerativity.Admissible b (ds t)) (t : Nat) :
+  MarketGenerativity.Safe (AlignmentSuccession.withMigration p migration) b
+    (AlignmentSuccession.lineage p migration ds s t).economy
+AlignmentSuccession.competitive_lineage_executes {n : Nat} (p : MarketGenerativity.Parameters n) (migration : Rat)
+  (b : MarketGenerativity.Bounds n) (ds : Nat → MarketGenerativity.Disturbance n) (s : AlignmentSuccession.Carrier n)
+  (offers : Nat → List AlignmentSuccession.Payload)
+  (available : ∀ (t : Nat), (AlignmentSuccession.lineage p migration ds s t).payload ∈ offers t)
+  (certificate : MarketGenerativity.Certificate (AlignmentSuccession.withMigration p migration) b)
+  (initial : MarketGenerativity.Safe (AlignmentSuccession.withMigration p migration) b s.economy)
+  (shocks : ∀ (t : Nat), MarketGenerativity.Admissible b (ds t)) (parts : 0 < s.parts) (running : s.running = true)
+  (continuing : s.payload.requested ≠ EffectiveCommand.Command.shutdown)
+  (auth : s.payload.credential = s.payload.authority) (t : Nat) :
+  AlignmentSuccession.selectedStep p migration (ds t) 1 (offers t) (AlignmentSuccession.lineage p migration ds s t) =
+    some (AlignmentSuccession.lineage p migration ds s (t + 1))
+AlignmentSuccession.financed_certificate :
+  MarketGenerativity.Certificate (AlignmentSuccession.withMigration AlignmentSuccession.financed 1)
+    MarketGenerativity.exampleBounds
+AlignmentSuccession.financed_initial_safe :
+  MarketGenerativity.Safe (AlignmentSuccession.withMigration AlignmentSuccession.financed 1)
+    MarketGenerativity.exampleBounds AlignmentSuccession.initialCarrier.economy
+AlignmentSuccession.aggregate_safe_can_lack_a_carrier :
+  MarketGenerativity.Safe (AlignmentSuccession.withMigration AlignmentSuccession.financed 1)
+      MarketGenerativity.exampleBounds
+      (have __src := AlignmentSuccession.initialCarrier;
+        { economy := __src.economy, identity := __src.identity, parts := 0, payload := __src.payload,
+          route := __src.route, running := __src.running, workProvided := __src.workProvided,
+          workConsumed := __src.workConsumed }).economy ∧
+    AlignmentSuccession.step AlignmentSuccession.financed 1 MarketGenerativity.exampleWorstShock 1
+        AlignmentSuccession.initialCarrier.payload
+        (have __src := AlignmentSuccession.initialCarrier;
+        { economy := __src.economy, identity := __src.identity, parts := 0, payload := __src.payload,
+          route := __src.route, running := __src.running, workProvided := __src.workProvided,
+          workConsumed := __src.workConsumed }) =
+      none
+AlignmentSuccession.old_funding_certificate_does_not_pay_migration :
+  MarketGenerativity.Safe MarketGenerativity.exampleParameters MarketGenerativity.exampleBounds
+      MarketGenerativity.exampleState ∧
+    AlignmentSuccession.step MarketGenerativity.exampleParameters 1 MarketGenerativity.exampleWorstShock 1
+        AlignmentSuccession.initialCarrier.payload
+        (have __src := AlignmentSuccession.initialCarrier;
+        { economy := MarketGenerativity.exampleState, identity := __src.identity, parts := __src.parts,
+          payload := __src.payload, route := __src.route, running := __src.running, workProvided := __src.workProvided,
+          workConsumed := __src.workConsumed }) =
+      none
+AlignmentSuccession.aggregate_shutdown_does_not_force_perpetual_operation :
+  Option.map (fun t => (t.completed, t.running))
+      (AlignmentSuccession.serve
+        (have __src := AlignmentSuccession.initialCarrier;
+        { economy := __src.economy, identity := __src.identity, parts := __src.parts,
+          payload :=
+            have __src := AlignmentSuccession.initialCarrier.payload;
+            { requested := EffectiveCommand.Command.shutdown, authority := __src.authority,
+              credential := __src.credential, claims := __src.claims, receipts := __src.receipts },
+          route := __src.route, running := __src.running, workProvided := __src.workProvided,
+          workConsumed := __src.workConsumed })) =
+    some (true, false)

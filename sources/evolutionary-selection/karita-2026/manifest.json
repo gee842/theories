@@ -1,0 +1,130 @@
+{
+  "title": "Context-dependent adaptation in structured environments",
+  "authors": [
+    "Yuya Karita",
+    "Gisela T. Rodríguez-Sánchez",
+    "Elisa Brambilla",
+    "J. Carlos R. Hernandez-Beltran",
+    "Michael Schwarz",
+    "Paul B. Rainey"
+  ],
+  "publication_date": "2026-02-04",
+  "doi": "10.1098/rspb.2025.2004",
+  "retrieved": "2026-10-08",
+  "files": [
+    {
+      "file": "article.pdf",
+      "bytes": 5719438,
+      "sha256": "aa01ee1e7235dcdbf4049c31bbc4e8d3a18cb25fa4068bf1be12a56939e404ec",
+      "url": "https://pure.mpg.de/rest/items/item_3655572_4/component/file_3698373/content"
+    },
+    {
+      "file": "supplement.pdf",
+      "bytes": 3549450,
+      "sha256": "04983a4f98bfb0c03346d08bfba64ffb076360a9d1f09b2d3be9790df97f5e44",
+      "url": "https://ndownloader.figshare.com/files/60777659",
+      "publisher_md5": "d454a31d796b804ea3a1c40e6e0194fd"
+    },
+    {
+      "file": "zenodo-15735347.json",
+      "bytes": 11458,
+      "sha256": "15291dbbbbf3114c14dd09551e4d5416641207742196f4b8ef891e12b9bab82c",
+      "url": "https://zenodo.org/api/records/15735347"
+    },
+    {
+      "file": "figshare-collection.json",
+      "bytes": 5621,
+      "sha256": "8f8e284b7b4b67aac5af3e8c67e8f9e06e2c6152f14d2369dae80aa04ee5d9d6",
+      "url": "https://api.figshare.com/v2/collections/8229719/articles?page_size=100"
+    },
+    {
+      "file": "figshare-30997061.json",
+      "bytes": 4157,
+      "sha256": "02d2980f4eacf51d62df4009106a5bbbd323c7b4bd2cc24cd2ffbbb6d754d835",
+      "url": "https://api.figshare.com/v2/articles/30997061"
+    },
+    {
+      "file": "bioimage-S-BIAD2117.json",
+      "bytes": 6864,
+      "sha256": "dd2a084f8bb82eaa959e3a4411daf224869f44bf845c4243f2e4e7a13531cfbc",
+      "url": "https://www.ebi.ac.uk/biostudies/api/v1/studies/S-BIAD2117"
+    },
+    {
+      "file": "bioimage-file-list.json",
+      "bytes": 34319,
+      "sha256": "badb22e8cd4183ba0c9c032d53319f7e2381f08932cda195092dfdf9cd3e6eb7",
+      "url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita.json"
+    },
+    {
+      "file": "europepmc-search.json",
+      "bytes": 907,
+      "sha256": "cf03f31dfa13950f713380c1496bf4621fb9e69893175d0fa60f8e84c9dfb747",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1098/rspb.2025.2004&format=json"
+    },
+    {
+      "file": "4state-model.ipynb",
+      "bytes": 90473,
+      "sha256": "61cb92d88c810a14971e0f011d3a46871fc3a3f5a392c2f920ecf6b68d782a4f",
+      "url": "https://zenodo.org/api/records/15735347/files/4state-model.ipynb/content",
+      "publisher_md5": "b22b93495199512f914705bd505af298"
+    },
+    {
+      "file": "Pellicle_success.xlsx",
+      "bytes": 8831,
+      "sha256": "c89b6f60f5d8e340ed034ce5ba22b746b0d6c2aec5b0ab5a47d50e92b5bbbb2a",
+      "url": "https://zenodo.org/api/records/15735347/files/Pellicle_success.xlsx/content",
+      "publisher_md5": "c2849c49ddf7a0bfbb682b0fd5a952c1"
+    },
+    {
+      "file": "Collapsing_colony_size.xlsx",
+      "bytes": 39166,
+      "sha256": "e81cdd13317db68581bd73e990d3cfb1eee9f16f51dcac8cfb2a610b6ba1bd3f",
+      "url": "https://zenodo.org/api/records/15735347/files/Collapsing_colony_size.xlsx/content",
+      "publisher_md5": "393ee6d7233da0fa6ffc43d8c1bfb762"
+    },
+    {
+      "file": "Surface_density_data.xlsx",
+      "bytes": 15773,
+      "sha256": "5802bfb537f94b60de3a03d5f83e4fe7b94a2af8a9c32e2deb1b030939f138a0",
+      "url": "https://zenodo.org/api/records/15735347/files/Surface_density_data.xlsx/content",
+      "publisher_md5": "6595f2b6bb05e827ec1f434f4b89a6fa"
+    },
+    {
+      "file": "Spatial_Model_LBOX500.c",
+      "bytes": 22795,
+      "sha256": "db964e775ce2bf9259f5a56e051103c9bbfc55eecad99bcf29c33ad175e2b5d3",
+      "url": "https://zenodo.org/api/records/15735347/files/Spatial_Model_LBOX500.c/content",
+      "publisher_md5": "42dd3879b30b6b23532d937d9146021a"
+    },
+    {
+      "file": "input.txt",
+      "bytes": 796,
+      "sha256": "df229e90d55c3404f7b717d223eb2b70ce5d06e1d804545a383449547fe39f5e",
+      "url": "https://zenodo.org/api/records/15735347/files/input.txt/content",
+      "publisher_md5": "ced069dea199abaa404c384566d56064"
+    }
+  ],
+  "licenses": {
+    "article": "CC BY 4.0, printed on page 1",
+    "zenodo": {
+      "id": "cc-by-4.0"
+    },
+    "bioimage": "CC BY 4.0"
+  },
+  "read_scope": [
+    "Article pages 1–9; Figures 1–6, with pages 2 and 4 rendered and visually inspected",
+    "Supplement notes A–C and Tables S1–S3; pending deeper spatial implementation audit",
+    "All eight 4state-model.ipynb cell sources, without executing stored outputs",
+    "Pellicle_success worksheet and collapsing-colony areas",
+    "BioImage file-list metadata only; no CZI acquisition pixels downloaded"
+  ],
+  "limits": [
+    "The code/data deposit is from 2025 and is explicitly cited by the final 2026 article. Do not infer that all final figures can be exactly regenerated from it.",
+    "784 numeric colony areas are present versus 769 stated in Figure 1d; an upper-diameter cutoff can match the number but is not documented as the authors’ selection rule.",
+    "The pellicle workbook pools dated cohorts; it is not a per-well within-phase trajectory.",
+    "Co-culture rescue has 2/9 successes versus 0/15 monocultures and also changes total inoculum.",
+    "158 BioImage files total 103133470688 bytes; metadata is preserved but original microscopy is not imported.",
+    "Spatial code and parameter file are preserved, not executed or fully audited.",
+    "Source model rates and capacity are local assumptions; no measured six-day persistence or true renewal follows."
+  ]
+}

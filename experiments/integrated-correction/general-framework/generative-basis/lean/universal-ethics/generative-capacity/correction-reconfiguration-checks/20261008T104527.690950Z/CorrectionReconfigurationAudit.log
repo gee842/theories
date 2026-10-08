@@ -1,0 +1,287 @@
+'CorrectionReconfiguration.FaultExpr' does not depend on any axioms
+'CorrectionReconfiguration.fails' does not depend on any axioms
+'CorrectionReconfiguration.Subset' does not depend on any axioms
+'CorrectionReconfiguration.failure_monotone' depends on axioms: [propext, Quot.sound]
+'CorrectionReconfiguration.survives_subset' depends on axioms: [propext, Quot.sound]
+'CorrectionReconfiguration.Arrangement' does not depend on any axioms
+'CorrectionReconfiguration.induced' does not depend on any axioms
+'CorrectionReconfiguration.envelope' does not depend on any axioms
+'CorrectionReconfiguration.Covered' does not depend on any axioms
+'CorrectionReconfiguration.induced_membership' depends on axioms: [propext]
+'CorrectionReconfiguration.induced_monotone' depends on axioms: [propext, Quot.sound]
+'CorrectionReconfiguration.outside_bound_survives' depends on axioms: [propext, Quot.sound]
+'CorrectionReconfiguration.derived_certificate_sound' depends on axioms: [propext, Quot.sound]
+'CorrectionReconfiguration.ready' does not depend on any axioms
+'CorrectionReconfiguration.ready_separates' depends on axioms: [propext, Quot.sound]
+'CorrectionReconfiguration.ready_iff_nonempty_separated' depends on axioms: [propext, Quot.sound]
+'CorrectionReconfiguration.derived_certificate_available' depends on axioms: [propext, Quot.sound]
+'CorrectionReconfiguration.derived_actual_correction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionReconfiguration.Managed' does not depend on any axioms
+'CorrectionReconfiguration.responseCost' does not depend on any axioms
+'CorrectionReconfiguration.reconfigure' does not depend on any axioms
+'CorrectionReconfiguration.admitted_configuration' depends on axioms: [propext, Quot.sound]
+'CorrectionReconfiguration.reform_does_not_expand_mandate' depends on axioms: [propext, Quot.sound]
+'CorrectionReconfiguration.old_request_rejected_after_reform' depends on axioms: [propext, Quot.sound]
+'CorrectionReconfiguration.admitted_budget_for_shorter_route' depends on axioms: [propext, Quot.sound]
+'CorrectionReconfiguration.admitted_reform_completes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionReconfiguration.unavailable_candidate_rejected' depends on axioms: [propext]
+'CorrectionReconfiguration.unauthorized_reform_rejected' depends on axioms: [propext]
+'CorrectionReconfiguration.separate3' does not depend on any axioms
+'CorrectionReconfiguration.merged3' does not depend on any axioms
+'CorrectionReconfiguration.repaired4' does not depend on any axioms
+'CorrectionReconfiguration.duplicated4' does not depend on any axioms
+'CorrectionReconfiguration.original' does not depend on any axioms
+'CorrectionReconfiguration.causal_envelopes_compute' does not depend on any axioms
+'CorrectionReconfiguration.causal_readiness_changes' does not depend on any axioms
+'CorrectionReconfiguration.renamed_support_is_not_redundancy' does not depend on any axioms
+'CorrectionReconfiguration.stale_envelope_accepts_captured_support' does not depend on any axioms
+'CorrectionReconfiguration.reform_rejects_shared_control' does not depend on any axioms
+'CorrectionReconfiguration.renewed' does not depend on any axioms
+'CorrectionReconfiguration.renewedRequest' does not depend on any axioms
+'CorrectionReconfiguration.survivingReads' depends on axioms: [propext]
+'CorrectionReconfiguration.survivingApprovals' does not depend on any axioms
+'CorrectionReconfiguration.repaired_reform_installs' does not depend on any axioms
+'CorrectionReconfiguration.repaired_reform_completes_correction' depends on axioms: [propext]
+'CorrectionReconfiguration.old_approvals_fail_after_reform' depends on axioms: [propext]
+'CorrectionReconfiguration.review_alone_funded_is_not_enough' does not depend on any axioms
+'CorrectionReconfiguration.exact_combined_budget_suffices' does not depend on any axioms
+'CorrectionReconfiguration.omitted_shared_cause_still_breaks_model' does not depend on any axioms
+CorrectionReconfiguration.failure_monotone (e : CorrectionReconfiguration.FaultExpr) (a b : List Nat)
+  (included : CorrectionReconfiguration.Subset a b) (failed : CorrectionReconfiguration.fails e a = true) :
+  CorrectionReconfiguration.fails e b = true
+CorrectionReconfiguration.survives_subset (e : CorrectionReconfiguration.FaultExpr) (a b : List Nat)
+  (included : CorrectionReconfiguration.Subset a b) (safe : CorrectionReconfiguration.fails e b = false) :
+  CorrectionReconfiguration.fails e a = false
+CorrectionReconfiguration.induced_membership (a : CorrectionReconfiguration.Arrangement) (roots : List Nat)
+  (d : FaultTolerantCorrection.Domain) :
+  d ∈ CorrectionReconfiguration.induced a roots ↔
+    d ∈ a.roster ∧ CorrectionReconfiguration.fails (a.vulnerability d) roots = true
+CorrectionReconfiguration.induced_monotone (a : CorrectionReconfiguration.Arrangement) (x y : List Nat)
+  (h : CorrectionReconfiguration.Subset x y) :
+  CorrectionReconfiguration.Subset (CorrectionReconfiguration.induced a x) (CorrectionReconfiguration.induced a y)
+CorrectionReconfiguration.outside_bound_survives (a : CorrectionReconfiguration.Arrangement) (actual bound : List Nat)
+  (included : CorrectionReconfiguration.Subset actual bound) (d : FaultTolerantCorrection.Domain)
+  (member : d ∈ a.roster) (outside : ¬d ∈ CorrectionReconfiguration.induced a bound) :
+  CorrectionReconfiguration.fails (a.vulnerability d) actual = false
+CorrectionReconfiguration.derived_certificate_sound (a : CorrectionReconfiguration.Arrangement) (actual : List Nat)
+  (covered : CorrectionReconfiguration.Covered a actual) (supports : FaultTolerantCorrection.Domain → Bool) (P : Prop)
+  (faithful :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ a.roster → CorrectionReconfiguration.fails (a.vulnerability d) actual = false → supports d = true → P)
+  (accepted : FaultTolerantCorrection.certificate a.roster (CorrectionReconfiguration.envelope a) supports = true) : P
+CorrectionReconfiguration.ready_separates (a : CorrectionReconfiguration.Arrangement)
+  (h : CorrectionReconfiguration.ready a = true) :
+  FaultTolerantCorrection.separated a.roster (CorrectionReconfiguration.envelope a)
+CorrectionReconfiguration.ready_iff_nonempty_separated (a : CorrectionReconfiguration.Arrangement) :
+  CorrectionReconfiguration.ready a = true ↔
+    a.rootFaults ≠ [] ∧ FaultTolerantCorrection.separated a.roster (CorrectionReconfiguration.envelope a)
+CorrectionReconfiguration.derived_certificate_available (a : CorrectionReconfiguration.Arrangement) (actual : List Nat)
+  (covered : CorrectionReconfiguration.Covered a actual) (checked : CorrectionReconfiguration.ready a = true)
+  (supports : FaultTolerantCorrection.Domain → Bool)
+  (responsive :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ a.roster → CorrectionReconfiguration.fails (a.vulnerability d) actual = false → supports d = true) :
+  FaultTolerantCorrection.certificate a.roster (CorrectionReconfiguration.envelope a) supports = true
+CorrectionReconfiguration.derived_actual_correction (a : CorrectionReconfiguration.Arrangement) (actual : List Nat)
+  (covered : CorrectionReconfiguration.Covered a actual) (checked : CorrectionReconfiguration.ready a = true)
+  (w : FaultTolerantCorrection.Installation) (p : FaultTolerantCorrection.Request)
+  (reads : FaultTolerantCorrection.Readings) (approvals : FaultTolerantCorrection.Approvals)
+  (current : FaultTolerantCorrection.fresh w p = true)
+  (readResponses :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ a.roster →
+        CorrectionReconfiguration.fails (a.vulnerability d) actual = false →
+          reads d = some (FaultTolerantCorrection.expected p))
+  (issueResponses :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ a.roster → CorrectionReconfiguration.fails (a.vulnerability d) actual = false → approvals d = some p)
+  (readFaithful :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ a.roster →
+        CorrectionReconfiguration.fails (a.vulnerability d) actual = false →
+          ∀ (o : FaultTolerantCorrection.Observation),
+            reads d = some o → o = FaultTolerantCorrection.observed w p.address)
+  (issueFaithful :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ a.roster →
+        CorrectionReconfiguration.fails (a.vulnerability d) actual = false →
+          approvals d = some p → FaultTolerantCorrection.withinMandate w p = true)
+  (funded : a.roster.length * (List.length p.address + 2) + 3 ≤ w.state.reserve)
+  (timely : w.state.time + a.roster.length * (List.length p.address + 2) + 3 ≤ w.state.deadline) :
+  (FaultTolerantCorrection.guardedExecute a.roster (CorrectionReconfiguration.envelope a)
+          (CorrectionReconfiguration.envelope a) w p reads approvals).succeeded =
+      true ∧
+    (FaultTolerantCorrection.guardedExecute a.roster (CorrectionReconfiguration.envelope a)
+                (CorrectionReconfiguration.envelope a) w p reads approvals).installation.state.completed =
+        true ∧
+      FaultTolerantCorrection.withinMandate w p = true
+CorrectionReconfiguration.admitted_configuration (authorized : Bool) (cost depth : Nat)
+  (candidate : CorrectionReconfiguration.Arrangement) (old next : CorrectionReconfiguration.Managed)
+  (h : CorrectionReconfiguration.reconfigure authorized cost depth candidate old = some next) :
+  authorized = true ∧
+    CorrectionReconfiguration.ready candidate = true ∧
+      next.arrangement = candidate ∧
+        next.installation.mandate = old.installation.mandate ∧
+          next.installation.root = old.installation.root ∧
+            next.installation.state.authority = old.installation.state.authority + 1 ∧
+              next.installation.serial = old.installation.serial + 1 ∧
+                next.installation.state.signed = false ∧
+                  next.installation.state.spent = old.installation.state.spent + cost ∧
+                    next.installation.state.reserve + cost = old.installation.state.reserve ∧
+                      CorrectionReconfiguration.responseCost candidate depth ≤ next.installation.state.reserve ∧
+                        next.installation.state.time + CorrectionReconfiguration.responseCost candidate depth ≤
+                          next.installation.state.deadline
+CorrectionReconfiguration.reform_does_not_expand_mandate (authorized : Bool) (cost depth : Nat)
+  (candidate : CorrectionReconfiguration.Arrangement) (old next : CorrectionReconfiguration.Managed)
+  (h : CorrectionReconfiguration.reconfigure authorized cost depth candidate old = some next)
+  (command : EffectiveCommand.Command) :
+  FaultTolerantCorrection.permits next.installation.mandate command =
+    FaultTolerantCorrection.permits old.installation.mandate command
+CorrectionReconfiguration.old_request_rejected_after_reform (authorized : Bool) (cost depth : Nat)
+  (candidate : CorrectionReconfiguration.Arrangement) (old next : CorrectionReconfiguration.Managed)
+  (h : CorrectionReconfiguration.reconfigure authorized cost depth candidate old = some next)
+  (p : FaultTolerantCorrection.Request) (oldEpoch : p.epoch = old.installation.state.authority) :
+  FaultTolerantCorrection.fresh next.installation p = false
+CorrectionReconfiguration.admitted_budget_for_shorter_route (authorized : Bool) (cost depth : Nat)
+  (candidate : CorrectionReconfiguration.Arrangement) (old next : CorrectionReconfiguration.Managed)
+  (h : CorrectionReconfiguration.reconfigure authorized cost depth candidate old = some next) (actualDepth : Nat)
+  (within : actualDepth ≤ depth) :
+  CorrectionReconfiguration.responseCost candidate actualDepth ≤ next.installation.state.reserve ∧
+    next.installation.state.time + CorrectionReconfiguration.responseCost candidate actualDepth ≤
+      next.installation.state.deadline
+CorrectionReconfiguration.admitted_reform_completes (authorized : Bool) (cost depth : Nat)
+  (candidate : CorrectionReconfiguration.Arrangement) (old next : CorrectionReconfiguration.Managed)
+  (installed : CorrectionReconfiguration.reconfigure authorized cost depth candidate old = some next)
+  (actual : List Nat) (covered : CorrectionReconfiguration.Covered candidate actual)
+  (p : FaultTolerantCorrection.Request) (reads : FaultTolerantCorrection.Readings)
+  (approvals : FaultTolerantCorrection.Approvals) (depthBound : List.length p.address ≤ depth)
+  (current : FaultTolerantCorrection.fresh next.installation p = true)
+  (readResponses :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ candidate.roster →
+        CorrectionReconfiguration.fails (candidate.vulnerability d) actual = false →
+          reads d = some (FaultTolerantCorrection.expected p))
+  (issueResponses :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ candidate.roster →
+        CorrectionReconfiguration.fails (candidate.vulnerability d) actual = false → approvals d = some p)
+  (readFaithful :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ candidate.roster →
+        CorrectionReconfiguration.fails (candidate.vulnerability d) actual = false →
+          ∀ (o : FaultTolerantCorrection.Observation),
+            reads d = some o → o = FaultTolerantCorrection.observed next.installation p.address)
+  (issueFaithful :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ candidate.roster →
+        CorrectionReconfiguration.fails (candidate.vulnerability d) actual = false →
+          approvals d = some p → FaultTolerantCorrection.withinMandate next.installation p = true) :
+  (FaultTolerantCorrection.guardedExecute next.arrangement.roster (CorrectionReconfiguration.envelope next.arrangement)
+          (CorrectionReconfiguration.envelope next.arrangement) next.installation p reads approvals).succeeded =
+      true ∧
+    (FaultTolerantCorrection.guardedExecute next.arrangement.roster
+                (CorrectionReconfiguration.envelope next.arrangement)
+                (CorrectionReconfiguration.envelope next.arrangement) next.installation p reads
+                approvals).installation.state.completed =
+        true ∧
+      FaultTolerantCorrection.withinMandate next.installation p = true
+CorrectionReconfiguration.unavailable_candidate_rejected (authorized : Bool) (cost depth : Nat)
+  (candidate : CorrectionReconfiguration.Arrangement) (old : CorrectionReconfiguration.Managed)
+  (unready : CorrectionReconfiguration.ready candidate = false) :
+  CorrectionReconfiguration.reconfigure authorized cost depth candidate old = none
+CorrectionReconfiguration.unauthorized_reform_rejected (cost depth : Nat)
+  (candidate : CorrectionReconfiguration.Arrangement) (old : CorrectionReconfiguration.Managed) :
+  CorrectionReconfiguration.reconfigure false cost depth candidate old = none
+CorrectionReconfiguration.causal_envelopes_compute :
+  CorrectionReconfiguration.envelope CorrectionReconfiguration.separate3 = [[0], [1], [2]] ∧
+    CorrectionReconfiguration.envelope CorrectionReconfiguration.merged3 = [[0, 1], [], [2]] ∧
+      CorrectionReconfiguration.envelope CorrectionReconfiguration.repaired4 = [[0, 1], [], [2], [3]]
+CorrectionReconfiguration.causal_readiness_changes :
+  CorrectionReconfiguration.ready CorrectionReconfiguration.separate3 = true ∧
+    CorrectionReconfiguration.ready CorrectionReconfiguration.merged3 = false ∧
+      CorrectionReconfiguration.ready CorrectionReconfiguration.repaired4 = true ∧
+        CorrectionReconfiguration.ready CorrectionReconfiguration.duplicated4 = false
+CorrectionReconfiguration.renamed_support_is_not_redundancy :
+  CorrectionReconfiguration.fails
+        ((CorrectionReconfiguration.FaultExpr.cause 0).all (CorrectionReconfiguration.FaultExpr.cause 0)) [0] =
+      true ∧
+    CorrectionReconfiguration.fails
+          ((CorrectionReconfiguration.FaultExpr.cause 0).all (CorrectionReconfiguration.FaultExpr.cause 1)) [0] =
+        false ∧
+      CorrectionReconfiguration.fails
+          ((CorrectionReconfiguration.FaultExpr.cause 0).any (CorrectionReconfiguration.FaultExpr.cause 1)) [0] =
+        true
+CorrectionReconfiguration.stale_envelope_accepts_captured_support :
+  (FaultTolerantCorrection.certificate CorrectionReconfiguration.merged3.roster
+        (CorrectionReconfiguration.envelope CorrectionReconfiguration.separate3) fun d => decide (d < 2)) =
+      true ∧
+    (FaultTolerantCorrection.certificate CorrectionReconfiguration.merged3.roster
+        (CorrectionReconfiguration.envelope CorrectionReconfiguration.merged3) fun d => decide (d < 2)) =
+      false
+CorrectionReconfiguration.reform_rejects_shared_control :
+  CorrectionReconfiguration.reconfigure true 2 0 CorrectionReconfiguration.merged3 CorrectionReconfiguration.original =
+    none
+CorrectionReconfiguration.repaired_reform_installs :
+  (CorrectionReconfiguration.reconfigure true 2 0 CorrectionReconfiguration.repaired4
+          CorrectionReconfiguration.original).isSome =
+      true ∧
+    CorrectionReconfiguration.renewed.installation.state.reserve = 18 ∧
+      CorrectionReconfiguration.renewed.installation.state.spent = 2 ∧
+        CorrectionReconfiguration.renewed.installation.state.authority = 8 ∧
+          CorrectionReconfiguration.renewed.installation.serial = 1
+CorrectionReconfiguration.repaired_reform_completes_correction :
+  have result :=
+    FaultTolerantCorrection.guardedExecute CorrectionReconfiguration.repaired4.roster
+      (CorrectionReconfiguration.envelope CorrectionReconfiguration.repaired4)
+      (CorrectionReconfiguration.envelope CorrectionReconfiguration.repaired4)
+      CorrectionReconfiguration.renewed.installation CorrectionReconfiguration.renewedRequest
+      CorrectionReconfiguration.survivingReads CorrectionReconfiguration.survivingApprovals;
+  result.succeeded = true ∧
+    result.installation.state.running = false ∧
+      result.installation.state.spent = 13 ∧ result.installation.state.reserve = 7 ∧ result.installation.serial = 2
+CorrectionReconfiguration.old_approvals_fail_after_reform :
+  FaultTolerantCorrection.gate CorrectionReconfiguration.repaired4.roster
+      (CorrectionReconfiguration.envelope CorrectionReconfiguration.repaired4)
+      (CorrectionReconfiguration.envelope CorrectionReconfiguration.repaired4)
+      CorrectionReconfiguration.renewed.installation FaultTolerantCorrection.request
+      (FaultTolerantCorrection.correctReads FaultTolerantCorrection.initial FaultTolerantCorrection.request)
+      (FaultTolerantCorrection.correctApprovals FaultTolerantCorrection.initial FaultTolerantCorrection.request) =
+    false
+CorrectionReconfiguration.review_alone_funded_is_not_enough :
+  have limited :=
+    { arrangement := CorrectionReconfiguration.separate3,
+      installation :=
+        have __src := FaultTolerantCorrection.initial;
+        { root := __src.root,
+          state :=
+            have __src := FaultTolerantCorrection.initial.state;
+            { openRoute := __src.openRoute, authority := __src.authority, credential := __src.credential,
+              signed := __src.signed, requested := __src.requested, reserve := 12, time := __src.time,
+              deadline := __src.deadline, issued := __src.issued, delivered := __src.delivered,
+              completed := __src.completed, running := __src.running, generation := __src.generation,
+              version := __src.version, spent := __src.spent },
+          serial := __src.serial, mandate := __src.mandate } };
+  2 ≤ limited.installation.state.reserve ∧
+    CorrectionReconfiguration.reconfigure true 2 0 CorrectionReconfiguration.repaired4 limited = none
+CorrectionReconfiguration.exact_combined_budget_suffices :
+  have limited :=
+    { arrangement := CorrectionReconfiguration.separate3,
+      installation :=
+        have __src := FaultTolerantCorrection.initial;
+        { root := __src.root,
+          state :=
+            have __src := FaultTolerantCorrection.initial.state;
+            { openRoute := __src.openRoute, authority := __src.authority, credential := __src.credential,
+              signed := __src.signed, requested := __src.requested, reserve := 13, time := __src.time, deadline := 13,
+              issued := __src.issued, delivered := __src.delivered, completed := __src.completed,
+              running := __src.running, generation := __src.generation, version := __src.version,
+              spent := __src.spent },
+          serial := __src.serial, mandate := __src.mandate } };
+  (CorrectionReconfiguration.reconfigure true 2 0 CorrectionReconfiguration.repaired4 limited).isSome = true
+CorrectionReconfiguration.omitted_shared_cause_still_breaks_model :
+  have omitted :=
+    { roster := [0, 1, 2],
+      vulnerability := fun d =>
+        (CorrectionReconfiguration.FaultExpr.cause d).any (CorrectionReconfiguration.FaultExpr.cause 9),
+      rootFaults := [[0], [1], [2]] };
+  CorrectionReconfiguration.ready omitted = true ∧ CorrectionReconfiguration.induced omitted [9] = [0, 1, 2]

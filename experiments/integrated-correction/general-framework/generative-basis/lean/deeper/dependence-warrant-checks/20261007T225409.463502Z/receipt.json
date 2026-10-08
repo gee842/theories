@@ -1,0 +1,20 @@
+{
+  "passed": false,
+  "checked_at_utc": "20261007T225409.463502Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "compiler": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DependenceWarrant.lean",
+  "source_sha256": "e1d2652881663bc3c4b0b7a83565a6de548fbb9fbf9d8bda31536f0991c19685",
+  "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/dependence-warrant-checks/20261007T225409.463502Z/DependenceWarrant.lean",
+  "log": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/dependence-warrant-checks/20261007T225409.463502Z/DependenceWarrant.log",
+  "log_sha256": "4d8b9bd5068df68d6ccb72315a3ed4b1413d1796c97838dd4a5329f43f52c8b9",
+  "checker": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_dependence_warrant.py",
+  "checker_sha256": "fe0eeac13d3e63f057c40e2ab8832e9208ab70aca4ac9ad5b081d0b5c2dc4375",
+  "source_unchanged_during_check": true,
+  "exit_code": 0,
+  "new_theorems": 3,
+  "empty_axiom_audits": [
+    "DependenceWarrant.history_agreement_and_separation"
+  ],
+  "scope": "One new module, Std only; three theorems audited. No ultimate grounding claim."
+}

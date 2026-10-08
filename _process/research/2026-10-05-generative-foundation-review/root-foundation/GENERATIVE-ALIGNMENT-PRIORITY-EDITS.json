@@ -1,0 +1,178 @@
+{
+  "scope": "Priority and completion-state maintenance only; no new proof, experiment or automation.",
+  "files": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md": {
+      "before_sha256": "fd05ed97525502c2040df80deb224751cfa5184be887dd372431712af5a0b521",
+      "after_sha256": "b9cf4f37e3dbd080ca29f259bf0dc902cd9eaf2fcb5917bf766ef750cb22ff4a",
+      "previously_reviewed_body": true
+    },
+    "AGENTS.md": {
+      "before_sha256": "aa9da6626797487cae19797df3db7a098ca8f4a68aa0eff8b99562d5b43a37f4",
+      "after_sha256": "5047df2baceeb1ad85f089acbc45436b68926cebf1b1a8a6eb2d2085e2b36e6d",
+      "previously_reviewed_body": false
+    },
+    "README.md": {
+      "before_sha256": "814ed6f6f7ad12c840b0682c596433557085849c896d1716c09e5e0f3d1be46d",
+      "after_sha256": "d004338aaab3d48cd273cf02396f55d0c4c3ba9efedb8732b739203335d527d2",
+      "previously_reviewed_body": false
+    },
+    "RESEARCH.md": {
+      "before_sha256": "adae7c16adeb92a6dc10a2618c88ac2756780652c43319da3b195b3edb57a959",
+      "after_sha256": "be1f84641958b4b0fac2bd681383bcc70f8f73cc7fb800e0672f425201284d4f",
+      "previously_reviewed_body": false
+    },
+    "_process/BRIEF.md": {
+      "before_sha256": "9ed10b5eddf4273e4414d57808b872ac22459257a77fbffb6d0404c34390d81a",
+      "after_sha256": "fea29f7096349974d383ac568ec9b920e8cdeb07468f182634838da8a14d6c56",
+      "previously_reviewed_body": false,
+      "final_sha256": "1ba937cb1f2f12547f8b766998304dcfc09335070d459a32b8e1a26741eca9e5"
+    },
+    "theories/shengsheng-buxi-generative-existence/README.md": {
+      "before_sha256": "4b32bc74d7c444a2886b3fb343994ba9e73532414962fe98727a9fb58d637caf",
+      "after_sha256": "2aac5a3c1ab8218500d1bf924677bb1f13a84bf47357d5ac18990cf68e781de5",
+      "previously_reviewed_body": false
+    },
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": {
+      "before_sha256": "ab5816905199649668c5a02bf0c06a79f0a603d3b1f77627d97338c1a8fc6e8f",
+      "after_sha256": "dbb618fe3b9ae6f988a5b1db41c0351dd5cab6f9ceb30440eb0eb89916b0965a",
+      "previously_reviewed_body": false
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": {
+      "before_sha256": "090cd8433fb00f94a511df12d9bc8443453e1c0523ae489036c5795731385ad6",
+      "after_sha256": "0fec65a51ed3d7f95cf4216b707abdca5d645e599cd42ac0f1644fe4d66812eb",
+      "previously_reviewed_body": false
+    },
+    "sources/SOURCES.md": {
+      "before_sha256": "451e477b1b6281d9dc20e59c51c53eb3303058544b50d7f0c01f3951f0adc77b",
+      "after_sha256": "b7341e0a08b334f29bd82be261211ad957f880dd94ba0b7338cb4cedaa806d0b",
+      "previously_reviewed_body": false
+    },
+    "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md": {
+      "before_sha256": "68f42de7c50074ab3fce8d53190ca206cdd8c2547d4ea8dfde6656732c8c87ee",
+      "after_sha256": "3d281ee3aa2cbe87c718bba90b94c29d9ac34a3e37de45af3703f50f24586edb",
+      "scope": "Read full current roadmap; priority inserted, completed entries explicitly demoted, independent unfinished work preserved."
+    }
+  },
+  "chain": {
+    "entry": "M20",
+    "before": {
+      "id": "M20",
+      "title_zh": "AI 对齐方向的明确根据",
+      "title_en": "Explicit grounding of an AI alignment direction",
+      "claim_zh": "G0 与公开 J1–J4 支持实际生与进一步共同生成，规定有范围的增长比较、有界责任、有效纠正、交接及结束；构造 AI 案例保留新能力的真实增益与放弃损失。",
+      "claim_en": "G0 with disclosed J1–J4 supports actual living and further shared generation through scoped growth comparisons, bounded responsibility, effective correction, transfer and ending; a constructed AI case retains real capability gains and forgone benefits.",
+      "scope_zh": "方向论证已完成并获独立接受；9项新定理／16项新审计，加46项继承审计，独立重编译通过。无公理根据、部署可靠性和比较优势各有独立范围。",
+      "scope_en": "Direction argument complete and independently accepted; 9 new theorems/16 new audits plus 46 inherited audits pass independent recompilation. Axiom-free grounding, reliable deployment and comparative advantage retain separate scopes.",
+      "links": [
+        {
+          "label_zh": "对齐与治理中的未来条件",
+          "label_en": "Conditions of a future in alignment and governance",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md"
+        },
+        {
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md",
+          "label_zh": "当前双语方向论证",
+          "label_en": "Current bilingual direction argument"
+        },
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md",
+          "label_zh": "论证、对应与完成",
+          "label_en": "Argument, correspondence and completion"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/alignment-direction-verification.json",
+          "label_zh": "新实例实查回执",
+          "label_en": "Checked case-instance receipt"
+        },
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-REVIEW.md",
+          "label_zh": "独立完成审查与重编译",
+          "label_en": "Independent completion review and recompilation"
+        }
+      ],
+      "connection_zh": "完整连接正面意义、比较、实践要求及 AI 应用；规范有效、实际认可与实现保持有别。",
+      "connection_en": "Connects positive significance, comparison, practical requirements and AI application, distinguishing normative warrant, recognition and implementation.",
+      "source_section": "The conditions of a future in AI alignment and governance",
+      "source_line": 13,
+      "row_type": "application_programme",
+      "source_id": "alignment_governance"
+    },
+    "after": {
+      "id": "M20",
+      "title_zh": "生成性对齐：当前首要方向之一",
+      "title_en": "Generative alignment: a current primary direction",
+      "claim_zh": "以生生为跨智能共同规范根据，连接智能生成、目标本身的评价、关切与智慧的形成及选择规则的修正；已完成的方向论证、实践判断和局部实查作为基础复用。",
+      "claim_en": "Investigate a common generative normative ground across intelligences, joining intelligence formation, appraisal of ends, concern and wisdom, and revision of selection rules; reuse completed direction, practical and checked local results.",
+      "scope_zh": "Ren于2026年10月8日列为首要方向之一；更强相连理论继续。先前方向论证已完成且独立验收（9新定理／16新审计，加46继承审计）；已完成内容退出待做方向，不重开或夸大其范围。",
+      "scope_en": "Selected by Ren as a primary direction on 8 October 2026; the stronger connected theory is ongoing. The earlier direction argument is complete and independently accepted (9 new theorems/16 new audits plus 46 inherited audits); completed work leaves the active agenda with its scope intact.",
+      "links": [
+        {
+          "label_zh": "对齐与治理中的未来条件",
+          "label_en": "Conditions of a future in alignment and governance",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md"
+        },
+        {
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md",
+          "label_zh": "当前双语方向论证",
+          "label_en": "Current bilingual direction argument"
+        },
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md",
+          "label_zh": "论证、对应与完成",
+          "label_en": "Argument, correspondence and completion"
+        },
+        {
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/alignment-direction-verification.json",
+          "label_zh": "新实例实查回执",
+          "label_en": "Checked case-instance receipt"
+        },
+        {
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-REVIEW.md",
+          "label_zh": "独立完成审查与重编译",
+          "label_en": "Independent completion review and recompilation"
+        },
+        {
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#current-generative-alignment-priority",
+          "label_zh": "当前首要方向与未解连接",
+          "label_en": "Current priority and unresolved connection"
+        },
+        {
+          "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+          "label_zh": "Ren的优先级及完成规则",
+          "label_en": "Ren’s priority and completion rule"
+        },
+        {
+          "path": "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+          "label_zh": "当前方向与完成成果分列",
+          "label_en": "Active directions and completed results"
+        }
+      ],
+      "connection_zh": "下一连接：目标与选择规则怎样被认识、评价和修正，并使该能力继续；区分规范有效、实际认可、可靠践行及必然向善。",
+      "connection_en": "Next connect understanding, appraisal and revision of ends and selection rules with continued revision capacity; distinguish warrant, recognition, reliable conduct and inevitable favorable convergence.",
+      "source_section": "Current generative alignment priority",
+      "source_line": 3,
+      "row_type": "application_programme",
+      "source_id": "alignment_governance"
+    },
+    "other_entries_unchanged": 84,
+    "scoped_generated_row": "passed",
+    "shared_pending": {
+      "modified_sources": [
+        "RESEARCH.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+        "theories/shengsheng-buxi-generative-existence/README.md"
+      ],
+      "missing_sources": [],
+      "new_pages": [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md"
+      ],
+      "removed_pages": []
+    }
+  },
+  "checks": {
+    "local_links": 46,
+    "new_proofs": 0,
+    "rerun_proofs": 0,
+    "scope": "Priority/status and local-link maintenance; no scientific validation or background task."
+  }
+}

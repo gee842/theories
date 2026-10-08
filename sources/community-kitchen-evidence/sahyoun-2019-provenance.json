@@ -1,0 +1,8 @@
+{
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6883597/fullTextXML",
+  "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6883597/fullTextXML",
+  "content_type": "application/xml",
+  "retrieved_at_utc": "2026-10-07T23:11:03.506509+00:00",
+  "bytes": 100279,
+  "sha256": "d887006d538d477b6ab826803934e7a074636dfca7ed57e858f3b0918d6289bf"
+}

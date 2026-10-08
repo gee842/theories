@@ -1,0 +1,194 @@
+{
+  "accno" : "S-EPMC3832276",
+  "attributes" : [ {
+    "name" : "DataSource",
+    "value" : "Europe PMC"
+  }, {
+    "name" : "Title",
+    "value" : "Adaptive divergence in experimental populations of Pseudomonas fluorescens. V. Insight into the niche specialist fuzzy spreader compels revision of the model Pseudomonas radiation."
+  }, {
+    "name" : "ReleaseDate",
+    "value" : "2013-01-01"
+  }, {
+    "name" : "AttachTo",
+    "value" : "EuropePMC"
+  } ],
+  "section" : {
+    "type" : "Study",
+    "attributes" : [ {
+      "name" : "Title",
+      "value" : "Adaptive divergence in experimental populations of Pseudomonas fluorescens. V. Insight into the niche specialist fuzzy spreader compels revision of the model Pseudomonas radiation."
+    }, {
+      "name" : "Abstract",
+      "value" : "Pseudomonas fluorescens is a model for the study of adaptive radiation. When propagated in a spatially structured environment, the bacterium rapidly diversifies into a range of niche specialist genotypes. Here we present a genetic dissection and phenotypic characterization of the fuzzy spreader (FS) morphotype-a type that arises repeatedly during the course of the P. fluorescens radiation and appears to colonize the bottom of static broth microcosms. The causal mutation is located within gene fuzY (pflu0478)-the fourth gene of the five-gene fuzVWXYZ operon. fuzY encodes a β-glycosyltransferase that is predicted to modify lipopolysaccharide (LPS) O antigens. The effect of the mutation is to cause cell flocculation. Analysis of 92 independent FS genotypes showed each to have arisen as the result of a loss-of-function mutation in fuzY, although different mutations have subtly different phenotypic and fitness effects. Mutations within fuzY were previously shown to suppress the phenotype of mat-forming wrinkly spreader (WS) types. This prompted a reinvestigation of FS niche preference. Time-lapse photography showed that FS colonizes the meniscus of broth microcosms, forming cellular rafts that, being too flimsy to form a mat, collapse to the vial bottom and then repeatably reform only to collapse. This led to a reassessment of the ecology of the P. fluorescens radiation. Finally, we show that ecological interactions between the three dominant emergent types (smooth, WS, and FS), combined with the interdependence of FS and WS on fuzY, can, at least in part, underpin an evolutionary arms race with bacteriophage SBW25Φ2, to which mutation in fuzY confers resistance."
+    } ],
+    "files" : [ {
+      "path" : "066f35e3178bd9dbf09506c5f03eab1f_genetics.113.154948-2.pdf",
+      "size" : 332705,
+      "type" : "file"
+    }, {
+      "path" : "06e0fc7f35b8e87732fda99513793f71_genetics.113.154948-9.pdf",
+      "size" : 526608,
+      "type" : "file"
+    }, {
+      "path" : "1fb6dbf01aedf0ff8c4cf43f961a7f7a_genetics.113.154948-7.pdf",
+      "size" : 477597,
+      "type" : "file"
+    }, {
+      "path" : "26bd324a7e3650f8fe0446c3c4e3592d_genetics.113.154948-6.mov",
+      "size" : 2876360,
+      "type" : "file"
+    }, {
+      "path" : "5a345f6807c48cd151b578f7b4b19022_genetics.113.154948-1.mov",
+      "size" : 3470191,
+      "type" : "file"
+    }, {
+      "path" : "5a46c40ca0907dd585578a72108cb658_genetics.113.154948-4.pdf",
+      "size" : 362857,
+      "type" : "file"
+    }, {
+      "path" : "6765feabeff3a1c35f11d1f1f3af9c6e_genetics.113.154948-11.pdf",
+      "size" : 680820,
+      "type" : "file"
+    }, {
+      "path" : "6fb76fb64861d8d1c868a0cece56a181_genetics.113.154948-8.mov",
+      "size" : 3166850,
+      "type" : "file"
+    }, {
+      "path" : "8399d6f43532e501af632b69f481fd06_genetics.113.154948-10.mov",
+      "size" : 6145386,
+      "type" : "file"
+    }, {
+      "path" : "ab6eea5c688f6ab4eaf4bf48bb8fbb95_genetics.113.154948-12.mov",
+      "size" : 2409975,
+      "type" : "file"
+    }, {
+      "path" : "e8b919cddb81b874dbc6266fc2423182_genetics.113.154948-3.pdf",
+      "size" : 501721,
+      "type" : "file"
+    }, {
+      "path" : "eaa9186a72f48f810d721a8c31306472_genetics.113.154948-5.mov",
+      "size" : 918481,
+      "type" : "file"
+    }, {
+      "path" : "supp_195_4_1319__index.html",
+      "size" : 3255,
+      "type" : "file"
+    } ],
+    "links" : [ [ {
+      "url" : "NC_012660.1",
+      "attributes" : [ {
+        "name" : "Type",
+        "value" : "refseq"
+      } ]
+    } ] ],
+    "subsections" : [ {
+      "type" : "Publication",
+      "attributes" : [ {
+        "name" : "Journal",
+        "value" : "Genetics"
+      }, {
+        "name" : "Volume",
+        "value" : "195(4)"
+      }, {
+        "name" : "Pages",
+        "value" : "1319-35"
+      }, {
+        "name" : "Publication date",
+        "value" : "2013 Dec"
+      } ],
+      "links" : [ [ {
+        "url" : "10.1534/genetics.113.154948",
+        "attributes" : [ {
+          "name" : "Type",
+          "value" : "DOI"
+        } ]
+      }, {
+        "url" : "10.1534/genetics.113.154948",
+        "attributes" : [ {
+          "name" : "Type",
+          "value" : "DOI"
+        } ]
+      }, {
+        "url" : "PMC3832276",
+        "attributes" : [ {
+          "name" : "Type",
+          "value" : "PMC"
+        } ]
+      }, {
+        "url" : "24077305",
+        "attributes" : [ {
+          "name" : "Type",
+          "value" : "PMID"
+        } ]
+      } ] ]
+    }, {
+      "accno" : "a1",
+      "type" : "Author",
+      "attributes" : [ {
+        "name" : "Name",
+        "value" : "Ferguson GC"
+      }, {
+        "name" : "ORCID",
+        "value" : "0000-0002-7858-6190"
+      }, {
+        "name" : "affiliation",
+        "value" : "o1",
+        "reference" : true
+      } ]
+    }, {
+      "accno" : "a2",
+      "type" : "Author",
+      "attributes" : [ {
+        "name" : "Name",
+        "value" : "Bertels F"
+      }, {
+        "name" : "ORCID",
+        "value" : "0000-0001-6222-4139"
+      }, {
+        "name" : "affiliation",
+        "value" : "o2",
+        "reference" : true
+      } ]
+    }, {
+      "accno" : "a3",
+      "type" : "Author",
+      "attributes" : [ {
+        "name" : "Name",
+        "value" : "Rainey PB"
+      }, {
+        "name" : "affiliation",
+        "value" : "o3",
+        "reference" : true
+      }, {
+        "name" : "affiliation",
+        "value" : "o2",
+        "reference" : true
+      } ]
+    }, {
+      "accno" : "o1",
+      "type" : "Organization",
+      "attributes" : [ {
+        "name" : "Name",
+        "value" : "Institute of Natural and Mathematical Sciences, New Zealand Institute for Advanced Study and Allan Wilson Centre for Molecular Ecology and Evolution, Massey University Albany, Auckland 0745, New Zealand"
+      } ]
+    }, {
+      "accno" : "o3",
+      "type" : "Organization",
+      "attributes" : [ {
+        "name" : "Name",
+        "value" : "Max Planck Institute for Evolutionary Biology, Plön 24306, Germany"
+      } ]
+    }, {
+      "accno" : "o2",
+      "type" : "Organization",
+      "attributes" : [ {
+        "name" : "Name",
+        "value" : "New Zealand Institute for Advanced Study and Allan Wilson Centre for Molecular Ecology and Evolution, Massey University Albany, Auckland 0745, New Zealand"
+      } ]
+    }, {
+      "type" : "ExtractedLinks"
+    } ]
+  },
+  "type" : "submission"
+}

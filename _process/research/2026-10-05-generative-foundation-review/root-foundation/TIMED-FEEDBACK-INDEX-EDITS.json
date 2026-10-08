@@ -1,0 +1,425 @@
+{
+  "scope": "Owned navigation insertions and later paired-row update; other sessions’ additions are preserved, not independently validated.",
+  "navigation": [
+    {
+      "path": "RESEARCH.md",
+      "before_sha256": "618f78cc6cd86cf238ec48b28107f8c55acc3d67ec25151ecd3c6a371d5ba694",
+      "after_sha256": "4120c588eee074e6a56ecfd1bd76d20d9a42ff1df420a5478d5fdd65aca2dbed",
+      "insertion": "**Source-ordered timing and robust historical comparison, 8 October 2026:** [The continuation](_process/research/2026-10-05-generative-foundation-review/root-foundation/TIMED-FEEDBACK-INTEGRATION.md) derives command-age domains from actual MPC source order and timestamps, then proves exposure bounds and consumes the existing comparison/protection results. **Eight new Lean theorems / nine declarations pass; 237 closure audits.** Across a common 596.403-second window, exact calculation encloses 2,378 heater/interval pieces and establishes higher requested-command exposure in the ARX Summary run than either nonlinear run on each heater. The archive distinguishes retained prior plans from current results and reveals unacquired terminal temperatures; original rows and metrics remain preserved. This establishes historical timing correspondence, not future latency, true-temperature calibration, energy or ethical warrant. / **执行时距：** 由实际先后关系形成误差域，并得到整个域内成立的历史比较；未来及重排行动的对应继续。\n\n",
+      "reviewed_baseline_sha256": "7d80f3c362a2de69fae7142306c1729179af4b8fdb4fc8de0176ee7b635471ea",
+      "pending_concurrent_insertion_read": "**无假设生生奠基的继续 / Assumption-free 生生 foundation, 8 October 2026.** [当前尝试](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md)区分实际发生的证据、形成后续条件的关系与整体必然接续；信用既有发生论入口，新增任意有限历史的忠实投影重演检查。**11项新 Lean 定理／29项含继承空公理依赖审计通过。** / The affirmative reconstruction and [counterreview](_process/research/2026-10-05-generative-foundation-review/root-foundation/ENACTED-FOUNDATION-INTEGRATION.md) preserve original finite transitions while showing that they alone do not establish an unbounded future. This neither refutes a richer constitutive theory nor proves that reality ends. Ren's renewed stronger objective remains open: justify the constitutive relations and their universal scope, including logical and interpretive warrant. The independently authorized explicit-axiom ethical route is unchanged.\n\n",
+      "later_concurrent_insertions_read": [
+        "**对齐方向的完整论证 / Completed alignment-direction argument，2026-10-08。** [对齐方向论证](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md)将 G0、公开 J1–J4、真实对应与 AI 的增长、纠正、交接及结束相连。构造例保留能力增益和真实损失；9项新 Lean 定理／16项新审计通过，另46项继承审计。独立完成审查随后记录；可靠部署与无公理根据保持各自范围。 / The complete explicit-axiom candidate states what AI development should support and why; implementation remains a separate task.",
+        "**Organized scales and biological correspondence, 8 October 2026.** [The continuation](_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZED-SCALES-INTEGRATION.md) adds 26 checked Lean theorems / 77 replayed inherited audits connecting organized signal operations, retained effects, supported activity and changed contact. Reanalysis checks 268 intestinal-diameter and 135 occupancy measurements. Newer primary evidence narrows the gut-to-neural mechanism. A calibrated whole biological/ecological loop remains uncompleted; this is a conditional construction and empirical advance, not certification of the entire account. / 组织—保持—行动—后续条件已在明确模型中接通；403项发表测量重分析通过，完整生物闭环的定量对应继续开放。"
+      ],
+      "baseline_recovered_by_removing_identified_insertions": true,
+      "pre_completion_status_sha256": "2d9cdd13c9d8bedba803130162daf9ce54b60c9afd037b3bb4b39763c2d7adee",
+      "final_insertion": "**Source-ordered timing and robust historical comparison, 8 October 2026:** [The continuation](_process/research/2026-10-05-generative-foundation-review/root-foundation/TIMED-FEEDBACK-INTEGRATION.md) derives command-age domains from actual MPC source order and timestamps, then proves exposure bounds and consumes the existing comparison/protection results. **Eight new Lean theorems / nine declarations pass; 237 closure audits.** Across a common 596.403-second window, exact calculation encloses 2,378 heater/interval pieces and establishes higher requested-command exposure in the ARX Summary run than either nonlinear run on each heater. The archive distinguishes retained prior plans from current results and reveals unacquired terminal temperatures; original rows and metrics remain preserved. Independent review rebuilt all 237 audits and exactly reproduced all intervals and comparisons. The [completion audit](_process/research/2026-10-05-generative-foundation-review/root-foundation/THREE-CONNECTIONS-COMPLETION-AUDIT.md) credits composition, premise explanation and physical correspondence together at this historical scope, not future latency, true-temperature calibration, energy or ethical warrant. / **执行时距：** 由实际先后关系形成误差域，并得到整个域内成立的历史比较；三类整合在此范围内完成并获独立验收；未来及重排行动的对应仍开放。\n\n",
+      "historical_status_correction": {
+        "before": "The full composition/premise/correspondence goal remains active under [its completion audit]",
+        "after": "The first stage kept the composition/premise/correspondence goal active; later completion and remaining scope are recorded in [its completion audit]"
+      },
+      "final_sha256": "0650b30890c21386617b583d2d8ac8017ac48a2b54f785893b9a5678943ef71e",
+      "only_recorded_completion_edits": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "before_sha256": "2fca3ab92b75919a2d933aab725fc59868b6596548db75a9018a5e397549dd94",
+      "after_sha256": "b094e6f1cb92765c8f136966ca1e688d0ba26881f84659e8d7e6fc5d15368395",
+      "insertion": "**执行时距与稳健历史比较 / Timing and robust historical comparison, 8 October 2026:** [新连接](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/TIMED-FEEDBACK-INTEGRATION.md)从程序次序和取得时刻推出发令时距域，以8项新定理／237项审计接通完整暴露量界与比较。共同时间窗中的每个加热器均支持同向比较；原始末行、微小排序变化和未知细节保留。 / A source-supported historical uncertainty domain now yields a comparison valid throughout it. Future timing, thermal calibration and effects of earlier action remain open.\n\n",
+      "reviewed_baseline_sha256": "5acda323c97c6de9a4609e6b05d8a72b10236d94200966f621367c0d45435571",
+      "pending_concurrent_insertion_read": "**无假设奠基继续 / Assumption-free foundation, 8 October 2026.** [新专章](unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md)从实际提问及其承接关系推进，根据与形式前提分别明示；11项新 Lean 定理／29项含继承审计检验有限发生证据的范围。 / A positive enacted-evidence account and history-preserving replay proof sharpen the remaining constitutive and universal-grounding obligations. The assumption-free foundation is not declared achieved or impossible; the completed conditional articulation and explicit-axiom ethics retain their scopes. [论证与反审 / Argument and counterreview](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ENACTED-FOUNDATION-INTEGRATION.md).\n\n",
+      "later_concurrent_insertions_read": [
+        "**对齐方向的完整论证 / Completed alignment-direction argument，2026-10-08。** [对齐方向及其根据](unified-2026-10-05/ALIGNMENT-DIRECTION.md)将 G0、公开 J1–J4、真实对应与 AI 的增长、纠正、交接及结束相连。构造例保留能力增益和真实损失；9项新 Lean 定理／16项新审计通过，另46项继承审计。独立完成审查随后记录；可靠部署与无公理根据保持各自范围。 / The complete explicit-axiom candidate states what AI development should support and why; implementation remains a separate task.",
+        "**组织机制与生物对应 / Organized mechanisms and biological correspondence, 8 October 2026.** [新整合](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZED-SCALES-INTEGRATION.md)新增26项实查定理及403项发表测量的重分析，接通区域差异、传递、保持、支持与接触改变。/ The conditional composition is checked; a quantitatively calibrated cell–organ–learning–ecological loop remains an explicit unfinished obligation."
+      ],
+      "baseline_recovered_by_removing_identified_insertions": true,
+      "pre_completion_status_sha256": "e361eda4bf1ea25635475b877ad27cee578e08c77c5322e8e0127fd0884a4b6a",
+      "final_insertion": "**执行时距与稳健历史比较 / Timing and robust historical comparison, 8 October 2026:** [新连接](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/TIMED-FEEDBACK-INTEGRATION.md)从程序次序和取得时刻推出发令时距域，以8项新定理／237项审计接通完整暴露量界与比较。三类整合在历史对应范围内完成并获独立验收；共同时间窗中的每个加热器均支持同向比较；原始末行、微小排序变化和未知细节保留。 / A source-supported historical uncertainty domain now yields a comparison valid throughout it. Independent review accepts all three requested kinds of integration together at this historical scope. Future timing, thermal calibration and effects of earlier action remain open.\n\n",
+      "historical_status_correction": {
+        "before": "整体三项整合目标继续，不把工程性能当成伦理根据。",
+        "after": "三项整合在后续研究中获得有范围完成，不把工程性能当成伦理根据。"
+      },
+      "final_sha256": "75fbd33f6ed01ae79a1de8cc1c8460444d82fe5ff6f23ebfe841dc514e102728",
+      "only_recorded_completion_edits": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "before_sha256": "1107920f321676da6ff79c366049cce19771c47faab0cf93f1e3a4748eff2c1e",
+      "after_sha256": "c5bf978a2bbe792c27a0e586c1c1c157b91b9d97dd016ebe4eee47c8ab3a8611",
+      "insertion": "\n\n**Source-ordered timing continuation, 8 October 2026.** [The completed local construction](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/TIMED-FEEDBACK-INTEGRATION.md) explains a previously supplied timing domain through source order and actual recorded brackets. Eight new Lean theorems / 237 closure audits transport this domain through exposure bounds into a robust comparison and derive the temporal term in calibrated protection. Exact archival intervals support lower requested-command exposure on each heater in two nonlinear runs than in the ARX comparison run, while preserving initialized records, timing ambiguity and different implementation routes. This advances the implementation/correspondence conditions of warranted practical judgment; it does not identify command exposure with G0/J, energy or living quality. Next establish future timing and true-temperature calibration/drift and test consequences of issuing a retained response earlier.\n",
+      "reviewed_baseline_sha256": "1107920f321676da6ff79c366049cce19771c47faab0cf93f1e3a4748eff2c1e",
+      "pending_concurrent_insertion_read": null,
+      "later_concurrent_insertions_read": [
+        "**对齐方向的规范连接 / Normative alignment-direction connection，2026-10-08。** [当前综合](ALIGNMENT-DIRECTION.md)完成 G0 → 公开比较 J1/J2 → 有界责任与选择 J3/J4 → AI 适用及修订条件的候选论证；9项新 Lean 实例检查保留真实损失与失败。/ The explicit-axiom direction is articulated with a connected AI case; reliable implementation and independent zero-axiom grounding retain their own scopes.",
+        "\n**Organized signal operations → retained effects → activity → changed contact, 8 October 2026.** [The stronger scales continuation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZED-SCALES-INTEGRATION.md) supplies 26 checked theorems and 403 reanalyzed published observations. The actual producer conclusion of the exact-organization module carries the new concrete view through histories. Region, retained history, support and competing context have distinct effects. This advances correspondence needed for practical consequence judgments, not universal normative warrant. Next: calibrate and test a joined biological preparation, preserving conventional rivals and ecological renewal as an unmet obligation. / 条件机制已接通；完整生物—生态对应尚未完成，不能由局部证明替代。\n"
+      ],
+      "baseline_recovered_by_removing_identified_insertions": true,
+      "pre_completion_status_sha256": "87fa47cb4658d3ac12de617d5609bda8b14bf7a97838c4537712a5a4df9dc1ea",
+      "final_insertion": "\n\n**Source-ordered timing continuation, 8 October 2026.** [The completed local construction](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/TIMED-FEEDBACK-INTEGRATION.md) explains a previously supplied timing domain through source order and actual recorded brackets. Eight new Lean theorems / 237 closure audits transport this domain through exposure bounds into a robust comparison and derive the temporal term in calibrated protection. Exact archival intervals support lower requested-command exposure on each heater in two nonlinear runs than in the ARX comparison run, while preserving initialized records, timing ambiguity and different implementation routes. This advances the implementation/correspondence conditions of warranted practical judgment; it does not identify command exposure with G0/J, energy or living quality. Independent proof and exact-data review accepts the connected historical result. The [completion audit](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/THREE-CONNECTIONS-COMPLETION-AUDIT.md) closes the three requested kinds of integration at this scope while preserving the stronger next direction. Further research should establish future timing and true-temperature calibration/drift and test consequences of issuing a retained response earlier.\n",
+      "historical_status_correction": {
+        "before": "The shared three-part objective remains active.",
+        "after": "At that stage the shared three-part objective remained active; its later completion assessment is recorded below."
+      },
+      "final_sha256": "9b6bb602697022b9091b632ee383189569784bd382c7f0507a24e95f63644faa",
+      "only_recorded_completion_edits": true
+    }
+  ],
+  "paired_rows": {
+    "before": {
+      "C32": {
+        "id": "C32",
+        "title_zh": "测得反馈的机制与物理对应",
+        "title_en": "Measured feedback mechanism and physical correspondence",
+        "claim_zh": "1794项物理命令、完整记忆递推与尺度界已接通；现重构实际有限调参过程。修正指标后本例参数不变，但8454项排序反转；同记录拟合不足以确定改变输入后的响应。",
+        "claim_en": "The 1794 physical-command correspondence, full memory recurrence and scale bounds now join the actual finite tuning procedure. Correcting the objective preserves this case’s selected gains but reverses 8454 pair rankings; same-record fit does not identify changed-input response.",
+        "scope_zh": "保留既有13＋13项定理和7176项精确重算；另10项新定理、1536项数值候选及独立复核通过。现代离线重构不是历史软件或新物理试验；校准域、真实时距与实践根据仍开放。",
+        "scope_en": "The earlier 13+13 theorems and 7176 exact updates retain scope; 10 new theorems, 1536 numerical candidates and independent checks pass. Modern offline reconstruction is neither historical-binary recovery nor a new physical trial. Justified domains, timing and practical warrant remain open.",
+        "links": [
+          {
+            "label_zh": "当前理论",
+            "label_en": "Current account",
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEASURED-FEEDBACK-CORRESPONDENCE.md"
+          },
+          {
+            "label_zh": "证据与前提解释",
+            "label_en": "Evidence and premise explanation",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-JUDGMENT-EMPIRICAL.md"
+          },
+          {
+            "label_zh": "完成核查",
+            "label_en": "Completion audit",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/THREE-CONNECTIONS-COMPLETION-AUDIT.md"
+          },
+          {
+            "label_zh": "独立验收与保留证据",
+            "label_en": "Independent review and retained evidence",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEASURED-FEEDBACK-REVIEW.md"
+          },
+          {
+            "label_zh": "保留记忆的后续推导",
+            "label_en": "Retained-memory continuation",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FEEDBACK-MEMORY-INTEGRATION.md"
+          },
+          {
+            "label_zh": "后续独立验收",
+            "label_en": "Continuation independent review",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FEEDBACK-MEMORY-REVIEW.md"
+          },
+          {
+            "label_zh": "实际调参与迁移研究",
+            "label_en": "Actual tuning and transfer study",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/TUNING-CORRESPONDENCE-INTEGRATION.md"
+          },
+          {
+            "label_zh": "调参独立验收",
+            "label_en": "Independent tuning review",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/TUNING-CORRESPONDENCE-REVIEW.md"
+          },
+          {
+            "label_zh": "完整有限比较",
+            "label_en": "Complete finite comparisons",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/tuning-results.json"
+          }
+        ]
+      },
+      "F25": {
+        "id": "F25",
+        "title_zh": "反馈历史、调参与有条件比较",
+        "title_en": "Feedback history, tuning and conditional comparison",
+        "claim_zh": "先前反馈13项和记忆13项定理保留；另10项定理／14项声明把轨迹误差接入完整指标，复用有限前沿、分离区间及校准保护，并由二阶递推证明残差迁移的非识别。八模块228项审计。",
+        "claim_en": "The earlier 13 feedback and 13 memory theorems retain scope. Ten further theorems/14 declarations carry trajectory error into the complete objective, reuse finite-frontier, interval and calibrated-protection results, and derive residual-transfer nonidentification through the two-lag law. Eight modules pass 228 audits.",
+        "scope_zh": "独立重编228项、重算1536项候选及验证指标、同系数重新拟合，并独立执行一组599步运行。作者另验四组。实数证明、浮点运行、物理观察及规范根据分明；原记录拟合不自动证明迁移。",
+        "scope_en": "Independent rebuild of 228 audits, all 1536 candidates/validation metrics, identical refit and one 599-step runtime case; author runtime covers four cases. Exact proofs, floating execution, physical observations and normative warrant remain distinct; original-record fit does not warrant transfer.",
+        "links": [
+          {
+            "label_zh": "Lean源码",
+            "label_en": "Lean source",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean"
+          },
+          {
+            "label_zh": "证明回执",
+            "label_en": "Proof receipt",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/measured-feedback-verification.json"
+          },
+          {
+            "label_zh": "数值复核",
+            "label_en": "Numerical cross-check",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/tclab-checks.json"
+          },
+          {
+            "label_zh": "独立验收与保留证据",
+            "label_en": "Independent review and retained evidence",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEASURED-FEEDBACK-REVIEW.md"
+          },
+          {
+            "label_zh": "后续 Lean 源码",
+            "label_en": "Continuation Lean source",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/FeedbackMemory.lean"
+          },
+          {
+            "label_zh": "168项实查回执",
+            "label_en": "168-audit receipt",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/feedback-memory-verification.json"
+          },
+          {
+            "label_zh": "后续独立验收",
+            "label_en": "Continuation independent review",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FEEDBACK-MEMORY-REVIEW.md"
+          },
+          {
+            "label_zh": "调参 Lean 源码",
+            "label_en": "Tuning Lean source",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TuningCorrespondence.lean"
+          },
+          {
+            "label_zh": "228项实查回执",
+            "label_en": "228-audit receipt",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/tuning-correspondence-verification.json"
+          },
+          {
+            "label_zh": "调参独立验收",
+            "label_en": "Independent tuning review",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/TUNING-CORRESPONDENCE-REVIEW.md"
+          },
+          {
+            "label_zh": "实际数值运行复核",
+            "label_en": "Numerical runtime cross-check",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/tuning-runtime-checks.json"
+          }
+        ]
+      }
+    },
+    "after": {
+      "C32": {
+        "id": "C32",
+        "title_zh": "测得反馈、时距形成与物理对应",
+        "title_en": "Measured feedback, formed timing domains and physical correspondence",
+        "claim_zh": "测得反馈、记忆递推和有限调参已接通；现由程序次序与档案形成时距域，继承暴露量界给出共同时间窗内每个加热器的稳健历史比较。",
+        "claim_en": "Measured feedback, recurrent memory and finite tuning are connected. Source order and archived timestamps now explain a timing domain; inherited exposure bounds yield a robust historical comparison on each heater over a common window.",
+        "scope_zh": "保留1794项命令、7176项重算及1536项调参候选的原范围；新复核1788项时距和2378项暴露片段。三类整合在此范围完成并获独立验收；未来校准、提前回应和伦理应用仍开放。",
+        "scope_en": "The 1794 commands, 7176 updates and 1536 tuning candidates retain scope; new independent checks cover 1788 age intervals and 2378 exposure pieces. The three requested kinds of integration are complete together here. Future calibration, earlier response and ethical application remain open.",
+        "links": [
+          {
+            "label_zh": "当前理论",
+            "label_en": "Current account",
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEASURED-FEEDBACK-CORRESPONDENCE.md"
+          },
+          {
+            "label_zh": "证据与前提解释",
+            "label_en": "Evidence and premise explanation",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-JUDGMENT-EMPIRICAL.md"
+          },
+          {
+            "label_zh": "完成核查",
+            "label_en": "Completion audit",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/THREE-CONNECTIONS-COMPLETION-AUDIT.md"
+          },
+          {
+            "label_zh": "独立验收与保留证据",
+            "label_en": "Independent review and retained evidence",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEASURED-FEEDBACK-REVIEW.md"
+          },
+          {
+            "label_zh": "保留记忆的后续推导",
+            "label_en": "Retained-memory continuation",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FEEDBACK-MEMORY-INTEGRATION.md"
+          },
+          {
+            "label_zh": "后续独立验收",
+            "label_en": "Continuation independent review",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FEEDBACK-MEMORY-REVIEW.md"
+          },
+          {
+            "label_zh": "实际调参与迁移研究",
+            "label_en": "Actual tuning and transfer study",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/TUNING-CORRESPONDENCE-INTEGRATION.md"
+          },
+          {
+            "label_zh": "调参独立验收",
+            "label_en": "Independent tuning review",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/TUNING-CORRESPONDENCE-REVIEW.md"
+          },
+          {
+            "label_zh": "完整有限比较",
+            "label_en": "Complete finite comparisons",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/tuning-results.json"
+          },
+          {
+            "label_zh": "时距形成与历史比较",
+            "label_en": "Formed timing and historical comparison",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/TIMED-FEEDBACK-INTEGRATION.md"
+          },
+          {
+            "label_zh": "时距独立完成审查",
+            "label_en": "Independent timing completion review",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/TIMED-FEEDBACK-REVIEW.md"
+          },
+          {
+            "label_zh": "精确时距与暴露量",
+            "label_en": "Exact timing and exposure",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/timing-results.json"
+          },
+          {
+            "label_zh": "新增原始成员清单",
+            "label_en": "Additional original-member manifest",
+            "path": "sources/tclab-benchmark/TIMING-PROVENANCE.json"
+          }
+        ]
+      },
+      "F25": {
+        "id": "F25",
+        "title_zh": "反馈历史、形成的时距与有条件比较",
+        "title_en": "Feedback history, formed timing and conditional comparison",
+        "claim_zh": "先前反馈13项、记忆13项及调参10项定理保留；另8项定理／9项声明从事件次序推出时距项，从未知切换推出暴露量界，实际复用历史比较与校准保护。九模块237项审计。",
+        "claim_en": "The earlier 13 feedback, 13 memory and 10 tuning theorems retain scope. Eight further theorems/nine declarations derive timing terms from event order and exposure bounds from unknown switches, directly reusing history comparison and calibrated protection. Nine modules pass 237 audits.",
+        "scope_zh": "独立重编237项并逐项重算全部时距、片段和比较，无证明缺口或自定义公理。取得读数与硬件采样分开；后者对应、真实漂移、未来时距及保护根据仍需明示。",
+        "scope_en": "Independent rebuild of 237 audits and exact reproduction of every interval, piece and comparison; no proof hole or custom axiom. Readout retrieval differs from hardware sampling. Sampling correspondence, physical drift, future latency and protection warrant remain explicit premises.",
+        "links": [
+          {
+            "label_zh": "Lean源码",
+            "label_en": "Lean source",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean"
+          },
+          {
+            "label_zh": "证明回执",
+            "label_en": "Proof receipt",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/measured-feedback-verification.json"
+          },
+          {
+            "label_zh": "数值复核",
+            "label_en": "Numerical cross-check",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/tclab-checks.json"
+          },
+          {
+            "label_zh": "独立验收与保留证据",
+            "label_en": "Independent review and retained evidence",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEASURED-FEEDBACK-REVIEW.md"
+          },
+          {
+            "label_zh": "后续 Lean 源码",
+            "label_en": "Continuation Lean source",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/FeedbackMemory.lean"
+          },
+          {
+            "label_zh": "168项实查回执",
+            "label_en": "168-audit receipt",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/feedback-memory-verification.json"
+          },
+          {
+            "label_zh": "后续独立验收",
+            "label_en": "Continuation independent review",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FEEDBACK-MEMORY-REVIEW.md"
+          },
+          {
+            "label_zh": "调参 Lean 源码",
+            "label_en": "Tuning Lean source",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TuningCorrespondence.lean"
+          },
+          {
+            "label_zh": "228项实查回执",
+            "label_en": "228-audit receipt",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/tuning-correspondence-verification.json"
+          },
+          {
+            "label_zh": "调参独立验收",
+            "label_en": "Independent tuning review",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/TUNING-CORRESPONDENCE-REVIEW.md"
+          },
+          {
+            "label_zh": "实际数值运行复核",
+            "label_en": "Numerical runtime cross-check",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/tuning-runtime-checks.json"
+          },
+          {
+            "label_zh": "时距 Lean 源码",
+            "label_en": "Timing Lean source",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TimedFeedback.lean"
+          },
+          {
+            "label_zh": "237项实查回执",
+            "label_en": "237-audit receipt",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/timed-feedback-verification.json"
+          },
+          {
+            "label_zh": "时距独立完成审查",
+            "label_en": "Independent timing completion review",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/TIMED-FEEDBACK-REVIEW.md"
+          }
+        ]
+      }
+    },
+    "other_entries_unchanged": 83,
+    "data_before_sha256": "755970c199e760226285bc490d61bcae30485f4b3eba62d7ea1f4fc2a2a9aeed",
+    "data_after_sha256": "17e2f77b0f51dbf170ed1f84e397b06920a4499a579462800293b69a797cbc9a",
+    "owned_discovery_paths": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/TIMED-FEEDBACK-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/TIMED-FEEDBACK-REVIEW.md"
+    ],
+    "read_source_versions": [
+      "RESEARCH.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/FEEDBACK-MEMORY-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/FEEDBACK-MEMORY-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-JUDGMENT-EMPIRICAL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEASURED-FEEDBACK-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/THREE-CONNECTIONS-COMPLETION-AUDIT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/TIMED-FEEDBACK-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/TIMED-FEEDBACK-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/TUNING-CORRESPONDENCE-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/TUNING-CORRESPONDENCE-REVIEW.md",
+      "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/tclab-checks.json",
+      "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/timing-results.json",
+      "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/tuning-results.json",
+      "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/tuning-runtime-checks.json",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/FeedbackMemory.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TimedFeedback.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TuningCorrespondence.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/feedback-memory-verification.json",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/measured-feedback-verification.json",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/timed-feedback-verification.json",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/tuning-correspondence-verification.json",
+      "sources/tclab-benchmark/TIMING-PROVENANCE.json",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEASURED-FEEDBACK-CORRESPONDENCE.md"
+    ],
+    "scoped_renderer": "Only C32/F25 replaced using existing renderer; all other output bytes preserved.",
+    "matches_combined_render": true,
+    "pending_combined_source_reviews": {
+      "modified_sources": [
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/alignment-direction-verification.json"
+      ],
+      "missing_sources": [],
+      "new_pages": [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-INQUIRY-AND-STANDING.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PHILOSOPHICAL-ACCOUNT.md"
+      ],
+      "removed_pages": []
+    }
+  },
+  "final_navigation_review": {
+    "entries": 85,
+    "reviewed_sources": 247,
+    "chain_changes": {
+      "modified_sources": [
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/KNOWLEDGE.md",
+        "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+        "sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md"
+      ],
+      "missing_sources": [],
+      "new_pages": [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-PHILOSOPHY-COMPLETION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-CONDITIONS-INTEGRATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-INQUIRY-AND-STANDING.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PHILOSOPHICAL-ACCOUNT.md"
+      ],
+      "removed_pages": []
+    },
+    "combined_render_matches": true,
+    "scope": "C32/F25 and recorded shared navigation changes only; concurrent scientific source review remains with its owner."
+  }
+}

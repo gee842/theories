@@ -1,0 +1,169 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T08:11:18.297665+00:00",
+  "scope": "Owned documentary links, source/receipt bindings and paired row; concurrent table status is separate.",
+  "checker_sha256": "2fa3756e5d5bbc1517f2831123ee416b93688f67076765a06d4a20843bb2afb6",
+  "new_lean_theorems": 7,
+  "new_explicit_declaration_audits": 12,
+  "new_axiom_dependencies": {
+    "KitchenTransitions.Feasible": [],
+    "KitchenTransitions.feasible_loss_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "KitchenTransitions.net_change": [
+      "propext",
+      "Quot.sound"
+    ],
+    "KitchenTransitions.sampleSize": [],
+    "KitchenTransitions.beforeSafe": [],
+    "KitchenTransitions.afterSafe": [],
+    "KitchenTransitions.Published": [],
+    "KitchenTransitions.published_loss_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "KitchenTransitions.published_gain_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "KitchenTransitions.published_table_determined_by_loss": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "KitchenTransitions.no_losses_realization": [],
+    "KitchenTransitions.losses_realization": []
+  },
+  "inherited_sources_unchanged": [
+    "PracticalJudgment",
+    "SituatedKitchen"
+  ],
+  "anonymous_tables": 14,
+  "checked_local_links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-PARTIAL-INFORMATION.md",
+      "to": "SITUATED-KITCHEN-EVIDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-PARTIAL-INFORMATION.md",
+      "to": "../../../../sources/community-kitchen-evidence/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-PARTIAL-INFORMATION.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-PARTIAL-INFORMATION.md",
+      "to": "GOAL-REVISION-CONTINUATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-PARTIAL-INFORMATION.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/KitchenTransitions.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-PARTIAL-INFORMATION.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/kitchen-transitions-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-PARTIAL-INFORMATION.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/situated-kitchen-evidence/check_transitions.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-PARTIAL-INFORMATION.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/situated-kitchen-evidence/transition-checks.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-EVIDENCE.md",
+      "to": "SITUATED-KITCHEN-PARTIAL-INFORMATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-EVIDENCE.md",
+      "to": "SITUATED-KITCHEN-CALIBRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-EVIDENCE.md",
+      "to": "../../../../sources/community-kitchen-evidence/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-EVIDENCE.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/situated-kitchen-evidence/published-evidence-checks.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-EVIDENCE.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/situated-kitchen-evidence/check_published.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md",
+      "to": "SITUATED-KITCHEN-PARTIAL-INFORMATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md",
+      "to": "SITUATED-KITCHEN-PARTIAL-INFORMATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-PARTIAL-INFORMATION.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-PARTIAL-INFORMATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "to": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-PARTIAL-INFORMATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "to": "SITUATED-KITCHEN-PARTIAL-INFORMATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "to": "SITUATED-KITCHEN-PARTIAL-INDEX-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "to": "SITUATED-KITCHEN-PARTIAL-CHECKS.json"
+    }
+  ],
+  "paired_row": "C23",
+  "reviewed_sources": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-PARTIAL-INFORMATION.md": "64d5ab9f01a4a54dd1ee2117dfd2d1085b217d9265a2629e0e34f8d32cb97b1f",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-EVIDENCE.md": "aaa771994d0105cc048cea6a9cc65f7505e0af6231c94eb9f670df29a598a603",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md": "57748b3f9241aded0487bf6b43d912f894a0afeed0532cc035fd536579ef16eb",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md": "eac523e7256e3a1f90bfd45f4c439d4fa1898dfb2ebef87b39bd64e66fa395ba"
+  },
+  "global_checks": [
+    {
+      "mode": "--render",
+      "exit_code": 2,
+      "stdout": "{\n  \"status\": \"needs-review\",\n  \"errors\": [\n    \"Linked source versions changed; reread affected entries before rendering.\"\n  ],\n  \"changes\": {\n    \"modified_sources\": [\n      \"RESEARCH.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md\",\n      \"sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md\",\n      \"theories/shengsheng-buxi-generative-existence/README.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md\"\n    ],\n    \"missing_sources\": [],\n    \"new_pages\": [\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-PROTOCOL.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md\"\n    ],\n    \"removed_pages\": []\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "mode": "--check",
+      "exit_code": 2,
+      "stdout": "{\n  \"status\": \"needs-review\",\n  \"errors\": [\n    \"Linked source versions changed; reread affected entries before rendering.\"\n  ],\n  \"changes\": {\n    \"modified_sources\": [\n      \"RESEARCH.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md\",\n      \"sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md\",\n      \"theories/shengsheng-buxi-generative-existence/README.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md\"\n    ],\n    \"missing_sources\": [],\n    \"new_pages\": [\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-PROTOCOL.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md\"\n    ],\n    \"removed_pages\": []\n  }\n}\n",
+      "stderr": ""
+    }
+  ],
+  "pending_global_changes": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-PROTOCOL.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md"
+    ],
+    "removed_pages": []
+  }
+}

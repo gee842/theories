@@ -2,6 +2,8 @@
 
 Unified theory of 生生, renewal, inquiry, and effective correction
 
+**Connected articulation, 8 October 2026:** [How activity forms further activity](SHENGSHENG.md) connects the principle to formation, retained consequence, organization, joint possibilities, learning, reflexive knowing, concern and practical judgment. It gives a worked joined history, explicit correspondence requirements and the current G0/J1–J4 ethical scope; the earlier conditional results below retain their original validation status.
+
 Current edition includes Development 2 and the later revisable-concern settlement: conditional solutions for joint formation, evidence acquisition and protection under explicit resource conditions, reason revision, and renewal. Navigation and later-study status reconciled 6 October 2026.
 
 5 October 2026. Research direction: Yongxu Ren. This is an AI-assisted synthesis and formal development, not a transcript of Ren's words. Its proofs are conditional mathematical results; its interpretation of reality is a research proposal. The [formal core](FORMAL-CORE.md), [claim register](CLAIMS.md), and [source map](SOURCE-MAP.md) make that distinction checkable.

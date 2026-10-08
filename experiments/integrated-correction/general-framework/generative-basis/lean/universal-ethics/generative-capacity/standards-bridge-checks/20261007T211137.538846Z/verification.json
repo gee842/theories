@@ -1,0 +1,293 @@
+{
+  "status": "passed",
+  "utc": "20261007T211137.538846Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "standards-bridge-checks/20261007T211137.538846Z",
+  "source_sha256": {
+    "StandardsBridge": "f061dbc44da5cdf11ac5ff79b3f89558c7e177b23b9f121c1048c16ed353a42a"
+  },
+  "checker_sha256": {
+    "check_standards_bridge.py": "27350d545a0d7e3237db4bb23d0fcef10050b0970869f59552747d4f4e7af862",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Acquired candidate-rule revision, exact assessment, maximal safe answering, evidence provenance and semantic transfer. Supplied candidate coverage, faithful acquisition, meanings and event laws; not a sufficient definition of understanding or moral authority.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "modules": [
+    {
+      "module": "StandardsBridge",
+      "theorems": 26,
+      "declarations": [
+        {
+          "kind": "abbrev",
+          "name": "Generative.StandardsBridge.Observation"
+        },
+        {
+          "kind": "abbrev",
+          "name": "Generative.StandardsBridge.Rule"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.Fits"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.revise"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.learn"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.answer"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.Safe"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.Maximal"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.mem_revise"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.mem_learn"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.actual_rule_retained"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.eliminated_rule_has_counterevidence"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.repetition_does_not_change_candidates"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.answer_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.answer_safe"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.safe_definite_requires_agreement"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.answer_maximal"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.unique_maximal_safe"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.known_rule_makes_answer_correct"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.acquire"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.acquired_evidence_faithful"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.acquired_answers_correct"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.transport"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.answer_transport"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.learning_transport"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.wrong_reencoding_breaks_transfer"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.repertoire"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.bool_repertoire_complete"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.full_bool_repertoire_correct"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.oneSample"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.twoSamples"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.before_acquisition_abstains"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.one_sample_leaves_other_case_unsettled"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.contrasting_acquisition_settles_both"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.learned_response_differs_from_last_report"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.repeated_same_case_does_not_settle_other"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.insufficient_support_retains_ambiguity"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.wrong_model_class_can_be_confidently_wrong"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.inconsistent_evidence_yields_no_answer"
+        }
+      ],
+      "axiom_dependencies": {
+        "Generative.StandardsBridge.Observation": [],
+        "Generative.StandardsBridge.Rule": [],
+        "Generative.StandardsBridge.Fits": [],
+        "Generative.StandardsBridge.revise": [],
+        "Generative.StandardsBridge.learn": [],
+        "Generative.StandardsBridge.answer": [],
+        "Generative.StandardsBridge.Safe": [],
+        "Generative.StandardsBridge.Maximal": [],
+        "Generative.StandardsBridge.mem_revise": [
+          "propext"
+        ],
+        "Generative.StandardsBridge.mem_learn": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.actual_rule_retained": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.eliminated_rule_has_counterevidence": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.repetition_does_not_change_candidates": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.answer_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.answer_safe": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.safe_definite_requires_agreement": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.answer_maximal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.unique_maximal_safe": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.known_rule_makes_answer_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.acquire": [],
+        "Generative.StandardsBridge.acquired_evidence_faithful": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.acquired_answers_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.transport": [],
+        "Generative.StandardsBridge.answer_transport": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.learning_transport": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.wrong_reencoding_breaks_transfer": [],
+        "Generative.StandardsBridge.repertoire": [],
+        "Generative.StandardsBridge.bool_repertoire_complete": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.full_bool_repertoire_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.oneSample": [],
+        "Generative.StandardsBridge.twoSamples": [],
+        "Generative.StandardsBridge.before_acquisition_abstains": [],
+        "Generative.StandardsBridge.one_sample_leaves_other_case_unsettled": [],
+        "Generative.StandardsBridge.contrasting_acquisition_settles_both": [],
+        "Generative.StandardsBridge.learned_response_differs_from_last_report": [],
+        "Generative.StandardsBridge.repeated_same_case_does_not_settle_other": [],
+        "Generative.StandardsBridge.insufficient_support_retains_ambiguity": [],
+        "Generative.StandardsBridge.wrong_model_class_can_be_confidently_wrong": [],
+        "Generative.StandardsBridge.inconsistent_evidence_yields_no_answer": []
+      },
+      "kernel_checked": true
+    }
+  ],
+  "artifact_sha256": {
+    "StandardsBridge.lean": "f061dbc44da5cdf11ac5ff79b3f89558c7e177b23b9f121c1048c16ed353a42a",
+    "StandardsBridge.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "StandardsBridgeAxiomAudit.lean": "0eb43ace08d209058824387c1bd826f05b131774d7393eaf3a641e846925dd99",
+    "StandardsBridgeAxiomAudit.log": "0a5fa190c7e00d7ebf6b96fb1bb80a052e47297c9df86f6667131b30dc8a6566",
+    "StandardsBridgeSignatures.lean": "56035d9e8a2592b7eb8071581caae089d8a9ac7f5b548f9130b35215bafa7d0d",
+    "StandardsBridgeSignatures.log": "c9e4b5bfdcea03db69722fc7d7d431662165d594f654b3e02f55ca7204181766",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_standards_bridge.py": "27350d545a0d7e3237db4bb23d0fcef10050b0970869f59552747d4f4e7af862",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

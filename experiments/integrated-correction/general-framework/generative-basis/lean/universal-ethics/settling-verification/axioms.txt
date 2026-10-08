@@ -1,0 +1,17 @@
+'SettlingCorrespondence.bulkMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SettlingCorrespondence.excess_mass_from_constituents' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SettlingCorrespondence.effective_contrast_accounts_for_volume' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SettlingCorrespondence.uniformScore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SettlingCorrespondence.materialScore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SettlingCorrespondence.sphere_density_correction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SettlingCorrespondence.agreement_requires_filled_envelope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SettlingCorrespondence.relativeDragScore' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SettlingCorrespondence.permeability_can_offset_density' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SettlingCorrespondence.equal_material_larger_radius_reverses_order' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SettlingCorrespondence.radiusSquared01' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SettlingCorrespondence.radiusSquared04' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SettlingCorrespondence.measured_geometry_scores_reverse' depends on axioms: [propext, Classical.choice, Quot.sound]

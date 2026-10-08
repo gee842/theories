@@ -1,0 +1,158 @@
+{
+  "status": "passed",
+  "scope": "Operational situational awareness through bounded acquired estimation, continuing tracking and convergence, with normative and empirical scope separated",
+  "new_theorems": 15,
+  "new_explicit_declaration_audits": 19,
+  "inherited_project_theorems": 0,
+  "axiom_audits": [
+    {
+      "dependencies": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "declarations": 19
+    }
+  ],
+  "retained_proof_artifacts_bound": 10,
+  "prior_documents_preserved": 3,
+  "owned_M20_additions_and_renderer_match": true,
+  "other_entries_preserved_at_mutation": true,
+  "unrelated_entries_match_edit_baseline": false,
+  "other_table_lines_match_edit_baseline": false,
+  "local_links_checked": 21,
+  "links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+      "reference": "../../../../sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md#situational-awareness-and-convergence"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+      "reference": "VARYING-DYNAMICS-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+      "reference": "CHANGING-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+      "reference": "WARRANTED-ACQUISITION-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+      "reference": "EVIDENCE-QUALIFIED-CORRECTION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+      "reference": "BOUND-CALIBRATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SituatedTracking.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/check_situated_tracking.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/situated-tracking-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+      "reference": "SITUATED-TRACKING-INDEX-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+      "reference": "SITUATED-TRACKING-CHECKS.json"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+      "reference": "../../../sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md#situational-awareness-and-convergence"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#20-situational-awareness-and-continued-convergence"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#20-situational-awareness-and-continued-convergence"
+    },
+    {
+      "from": "RESEARCH.md",
+      "reference": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#20-situational-awareness-and-continued-convergence"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md#15-situational-awareness-and-continuing-convergence"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "reference": "GOAL-FORMATION-AND-REVISION.md#15-situational-awareness-and-continuing-convergence"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "JOINT-RISK-REVISION-INTEGRATION.md#20-situational-awareness-and-continued-convergence"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "JOINT-RISK-REVISION-INTEGRATION.md#20-situational-awareness-and-continued-convergence"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "SITUATED-TRACKING-INDEX-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "SITUATED-TRACKING-CHECKS.json"
+    }
+  ],
+  "source_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md": "27631fc68d5ddeffc477c05558daa0859f984c5a89f625b504478c97f06db549",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md": "9b5c49bdc97a2670f41f42fd3998e279329bc8f0c23ebd245157b6823bb17ecc",
+    "sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md": "c5bda36d9e9ef2bdbc66078869b3a5487e938d51452b44dfc2e5320bb7ccff7e",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SituatedTracking.lean": "dc92b0d2cd7e35c841e711de1accfc4138cc534e2b1d3775810bc79b8052787d",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/check_situated_tracking.py": "61f1123be40eef9e784be6218089148cabff9f94a22e241d157bc0212a2ecd99",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/situated-tracking-verification.json": "1fa93580d022ae8ae5abc755b46318c451502fcbdda6d84e4ba7844a57af94e0"
+  },
+  "checker_sha256": "f2330803becf7692cdea8dcc1be4f5b95562ddebff40d75a0f6bc3b40ff21175",
+  "pending_global_review": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md",
+      "sources/15-codex-theory-conversations/2026-10-08-relations-across-scales.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "theories/meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/COLLECTIVE-DESTRUCTION-INTEGRATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-collective-destructive-attractors.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-DRIFT-MARGINS-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-CONTINUATION-INTEGRATION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md"
+    ],
+    "removed_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md"
+    ]
+  },
+  "new_independent_review": false,
+  "new_empirical_validation": false,
+  "complete_situational_awareness_certified": false,
+  "ethical_risk_limit_certified": false,
+  "inevitable_goal_convergence_certified": false,
+  "whole_table_certified": false
+}

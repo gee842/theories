@@ -1,0 +1,20 @@
+{
+  "status": "failed",
+  "utc": "20261008T121923.291647Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "compositional-transmission-checks/20261008T121923.291647Z",
+  "source_sha256": {
+    "KnowledgeCorrespondence": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+    "CompositionalAcquisition": "c1bb4792d8f2034e870724f0a8828cef9ef31ecf36e3b6b53ed6e8eb3900f848",
+    "CompositionalFormation": "975e7affcf982c64b42b9795e0129b1504441d71c4ff47069e0ba57d19a26be5",
+    "CompositionalTransmission": "e9bbe6184b7e5a36a03aa95ecba07cee1ece02cedfdbd40ff68c68d761c9cee3"
+  },
+  "checker_sha256": {
+    "check_compositional_transmission.py": "78cfb31f5f3ce0b1708b18c869d75c140cdd203f68e50b3050accf06243f13d7",
+    "audit_support.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Actual response transmission, reconstruction, repeated cultural continuation and peer repair under supplied schedules and formation laws. No biological inheritance, grammar origin, full cognition or universal cultural progress.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "CompositionalTransmission.lean:138:11: error: Application type mismatch: The argument\n  rfl\nhas type\n  ?m.44 = ?m.44\nbut is expected to have type\n  x.receiver = y.receiver\nin the application\n  And.intro rfl\nCompositionalTransmission.lean:180:26: error: Expected type must not contain free variables\n  7 \u2264 (cohort p 0).support\n\nHint: Use the `+revert` option to automatically clean up and revert free variables\n"
+}

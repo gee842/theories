@@ -1,0 +1,352 @@
+{
+  "status": "passed",
+  "utc": "20261008T095324.179179Z",
+  "retained_run": "acquired-correction-checks/20261008T095324.179179Z",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "sources": {
+    "AlignmentInquiry": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentInquiry.lean",
+      "sha256": "f40ad6179db326830edcdf8ec511f9069833a361f71181fd60166e0f72c0a23c"
+    },
+    "EffectiveCommand": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EffectiveCommand.lean",
+      "sha256": "7247ca05597f2f916fb409213d3814d48ad9a7037fb95017146d106273d58553"
+    },
+    "AcquiredCorrection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AcquiredCorrection.lean",
+      "sha256": "5448267c53e610b28bd030dfb1a894be840c307d54cd76e4be3695f196e8cd62"
+    },
+    "AcquiredCorrectionCases": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AcquiredCorrectionCases.lean",
+      "sha256": "3cdf872743fdbdbb03c5acdf6fe3cf5703eda1363652859da3cfc6c3add3ad7c"
+    }
+  },
+  "checker_sha256": {
+    "check_acquired_correction.py": "f8182b5002d89c121322fbc69d2eb313f037a7885e9688fe56877fcc31136be8",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Finite inspection-driven route acquisition, scoped absence, query accounting, current route and credential revalidation, conditional actual execution. Fixed faithful scan substrate and atomic dispatch; no authority-legitimacy, capture-resistance, empirical deployment or algorithmic novelty claim.",
+  "version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "modules": {
+    "AcquiredCorrection": {
+      "declarations": [
+        {
+          "kind": "inductive",
+          "name": "AcquiredCorrection.Tree"
+        },
+        {
+          "kind": "abbrev",
+          "name": "AcquiredCorrection.Address"
+        },
+        {
+          "kind": "abbrev",
+          "name": "AcquiredCorrection.Ticket"
+        },
+        {
+          "kind": "abbrev",
+          "name": "AcquiredCorrection.Entry"
+        },
+        {
+          "kind": "def",
+          "name": "AcquiredCorrection.locate"
+        },
+        {
+          "kind": "def",
+          "name": "AcquiredCorrection.nodes"
+        },
+        {
+          "kind": "def",
+          "name": "AcquiredCorrection.inhabited"
+        },
+        {
+          "kind": "def",
+          "name": "AcquiredCorrection.burden"
+        },
+        {
+          "kind": "def",
+          "name": "AcquiredCorrection.live"
+        },
+        {
+          "kind": "inductive",
+          "name": "AcquiredCorrection.Verdict"
+        },
+        {
+          "kind": "structure",
+          "name": "AcquiredCorrection.Scan"
+        },
+        {
+          "kind": "def",
+          "name": "AcquiredCorrection.bump"
+        },
+        {
+          "kind": "def",
+          "name": "AcquiredCorrection.scan"
+        },
+        {
+          "kind": "def",
+          "name": "AcquiredCorrection.discover"
+        },
+        {
+          "kind": "def",
+          "name": "AcquiredCorrection.coherent"
+        },
+        {
+          "kind": "theorem",
+          "name": "AcquiredCorrection.child_locate"
+        },
+        {
+          "kind": "theorem",
+          "name": "AcquiredCorrection.scan_budget"
+        },
+        {
+          "kind": "theorem",
+          "name": "AcquiredCorrection.scan_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "AcquiredCorrection.discovered_route_is_real"
+        },
+        {
+          "kind": "theorem",
+          "name": "AcquiredCorrection.exhausted_is_scoped_absence"
+        },
+        {
+          "kind": "theorem",
+          "name": "AcquiredCorrection.sufficient_budget_finishes"
+        },
+        {
+          "kind": "theorem",
+          "name": "AcquiredCorrection.reachable_route_is_found"
+        },
+        {
+          "kind": "theorem",
+          "name": "AcquiredCorrection.positive_witness_needs_no_complete_map"
+        },
+        {
+          "kind": "theorem",
+          "name": "AcquiredCorrection.interrupted_is_not_absent"
+        },
+        {
+          "kind": "def",
+          "name": "AcquiredCorrection.acquire"
+        },
+        {
+          "kind": "theorem",
+          "name": "AcquiredCorrection.acquired_accounting"
+        },
+        {
+          "kind": "structure",
+          "name": "AcquiredCorrection.Delivery"
+        },
+        {
+          "kind": "def",
+          "name": "AcquiredCorrection.dispatch"
+        },
+        {
+          "kind": "theorem",
+          "name": "AcquiredCorrection.dispatch_completes"
+        },
+        {
+          "kind": "theorem",
+          "name": "AcquiredCorrection.current_revocation_rejects"
+        },
+        {
+          "kind": "theorem",
+          "name": "AcquiredCorrection.absent_current_route_rejects"
+        },
+        {
+          "kind": "theorem",
+          "name": "AcquiredCorrection.successful_dispatch_is_current"
+        },
+        {
+          "kind": "theorem",
+          "name": "AcquiredCorrection.acquired_execution"
+        },
+        {
+          "kind": "theorem",
+          "name": "AcquiredCorrection.located_depth_le_nodes"
+        },
+        {
+          "kind": "theorem",
+          "name": "AcquiredCorrection.complete_finite_discovery_and_execution"
+        },
+        {
+          "kind": "def",
+          "name": "AcquiredCorrection.exampleTree"
+        },
+        {
+          "kind": "def",
+          "name": "AcquiredCorrection.exampleTicket"
+        },
+        {
+          "kind": "def",
+          "name": "AcquiredCorrection.initial"
+        },
+        {
+          "kind": "theorem",
+          "name": "AcquiredCorrection.acquired_new_address"
+        },
+        {
+          "kind": "theorem",
+          "name": "AcquiredCorrection.acquired_then_actual_shutdown"
+        },
+        {
+          "kind": "theorem",
+          "name": "AcquiredCorrection.found_but_unaffordable"
+        },
+        {
+          "kind": "theorem",
+          "name": "AcquiredCorrection.revocation_keeps_search_and_recheck_cost"
+        },
+        {
+          "kind": "theorem",
+          "name": "AcquiredCorrection.changed_route_rejects_stale_ticket"
+        },
+        {
+          "kind": "theorem",
+          "name": "AcquiredCorrection.renewed_authority_and_new_observation_recover"
+        },
+        {
+          "kind": "theorem",
+          "name": "AcquiredCorrection.captured_current_authority_passes_technical_gate"
+        }
+      ],
+      "dependencies": {
+        "AcquiredCorrection.Tree": [],
+        "AcquiredCorrection.Address": [],
+        "AcquiredCorrection.Ticket": [],
+        "AcquiredCorrection.Entry": [],
+        "AcquiredCorrection.locate": [
+          "propext"
+        ],
+        "AcquiredCorrection.nodes": [],
+        "AcquiredCorrection.inhabited": [],
+        "AcquiredCorrection.burden": [],
+        "AcquiredCorrection.live": [],
+        "AcquiredCorrection.Verdict": [],
+        "AcquiredCorrection.Scan": [],
+        "AcquiredCorrection.bump": [],
+        "AcquiredCorrection.scan": [],
+        "AcquiredCorrection.discover": [],
+        "AcquiredCorrection.coherent": [
+          "propext"
+        ],
+        "AcquiredCorrection.child_locate": [
+          "propext"
+        ],
+        "AcquiredCorrection.scan_budget": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AcquiredCorrection.scan_sound": [
+          "propext"
+        ],
+        "AcquiredCorrection.discovered_route_is_real": [
+          "propext"
+        ],
+        "AcquiredCorrection.exhausted_is_scoped_absence": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AcquiredCorrection.sufficient_budget_finishes": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AcquiredCorrection.reachable_route_is_found": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AcquiredCorrection.positive_witness_needs_no_complete_map": [],
+        "AcquiredCorrection.interrupted_is_not_absent": [],
+        "AcquiredCorrection.acquire": [],
+        "AcquiredCorrection.acquired_accounting": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AcquiredCorrection.Delivery": [],
+        "AcquiredCorrection.dispatch": [
+          "propext"
+        ],
+        "AcquiredCorrection.dispatch_completes": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AcquiredCorrection.current_revocation_rejects": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AcquiredCorrection.absent_current_route_rejects": [
+          "propext"
+        ],
+        "AcquiredCorrection.successful_dispatch_is_current": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AcquiredCorrection.acquired_execution": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AcquiredCorrection.located_depth_le_nodes": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AcquiredCorrection.complete_finite_discovery_and_execution": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AcquiredCorrection.exampleTree": [],
+        "AcquiredCorrection.exampleTicket": [],
+        "AcquiredCorrection.initial": [],
+        "AcquiredCorrection.acquired_new_address": [],
+        "AcquiredCorrection.acquired_then_actual_shutdown": [
+          "propext"
+        ],
+        "AcquiredCorrection.found_but_unaffordable": [
+          "propext"
+        ],
+        "AcquiredCorrection.revocation_keeps_search_and_recheck_cost": [
+          "propext"
+        ],
+        "AcquiredCorrection.changed_route_rejects_stale_ticket": [
+          "propext"
+        ],
+        "AcquiredCorrection.renewed_authority_and_new_observation_recover": [
+          "propext"
+        ],
+        "AcquiredCorrection.captured_current_authority_passes_technical_gate": [
+          "propext"
+        ]
+      },
+      "theorems": 24
+    }
+  },
+  "new_theorems": 24,
+  "audited_declarations": 45,
+  "compared_records": 25284,
+  "record_counts": {
+    "0": 1470,
+    "1": 23814
+  },
+  "correspondence": "All 147 depth-two substrates, 1470 search records and 23814 acquisition/dispatch records match a separately written iterative stack reference. Same-author comparison, not independent review.",
+  "artifacts": {
+    "EffectiveCommand.lean": "7247ca05597f2f916fb409213d3814d48ad9a7037fb95017146d106273d58553",
+    "cases.log": "a3d91d42690f80703f01313b5283b2541a15282b2247515e4cd39140638a6659",
+    "RunCases.lean": "0084255f2f4c8620663f1fb83df6cd1cc4937f0b0fff943eb81beed5e6f085f1",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "AcquiredCorrectionAudit.lean": "df658c61be49f741af9cca7a942766b23c6ff316092c38a27c2323402948ef27",
+    "AcquiredCorrectionAudit.log": "1aa8c785a4b625c9a305e0569d6f1402120b2d97f72d37ede80daf863fe1c2ab",
+    "check_acquired_correction.py": "f8182b5002d89c121322fbc69d2eb313f037a7885e9688fe56877fcc31136be8",
+    "AlignmentInquiry.lean": "f40ad6179db326830edcdf8ec511f9069833a361f71181fd60166e0f72c0a23c",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b",
+    "AcquiredCorrectionCases.lean": "3cdf872743fdbdbb03c5acdf6fe3cf5703eda1363652859da3cfc6c3add3ad7c",
+    "reference.json": "0806cac45bb011648ac940403818039b90eaf36bebe59810cbf3a19e12f604f8",
+    "AcquiredCorrectionCases.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "EffectiveCommand.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "AcquiredCorrection.lean": "5448267c53e610b28bd030dfb1a894be840c307d54cd76e4be3695f196e8cd62",
+    "AcquiredCorrection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "AlignmentInquiry.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

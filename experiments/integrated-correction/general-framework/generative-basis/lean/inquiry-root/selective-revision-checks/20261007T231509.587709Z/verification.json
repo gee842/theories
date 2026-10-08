@@ -1,0 +1,21 @@
+{
+  "status": "failed",
+  "utc": "20261007T231509.587709Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "selective-revision-checks/20261007T231509.587709Z",
+  "source_sha256": {
+    "KnowledgeCorrespondence": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+    "NormativeActivity": "15105e2caa43fb9b00f228343be16a7d729ff5a3da10c506d134d07417ae622c",
+    "StandardsBridge": "f061dbc44da5cdf11ac5ff79b3f89558c7e177b23b9f121c1048c16ed353a42a",
+    "FormedGrounds": "15764b3258f843dc967fdfabfd17cd5f47a6eb740a4aa5a3465ceae61dea17ba",
+    "SelectiveRevision": "805a20de9657cbe35f8fdf32521de149f3892dffd3199c4c6c73befd54d760a1"
+  },
+  "checker_sha256": {
+    "check_selective_revision.py": "6b4a5fe0d1efc0a4e2da2aa741e5f5dca27e3beaea97ebcff6ae01404e69ee4f",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Selective source withdrawal, conflict, purpose change and joint recoding after inherited acquisition; equivalence with conventional support bookkeeping at the declared state/history boundary; copied-error witness. Source assessment, independence and ethical value are not derived. No universal semantic or consciousness conclusion.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "SelectiveRevision.lean:178:17: error: Expected type must not contain free variables\n  (have assessment := combine (if true = true then none else none) (if true = true then none else none);\n      { judgment := assessment.fst, ground := assessment.snd, choice := choose g assessment.fst }).ground \u2260\n    (have assessment := combine (if true = true then some true else none) (if true = true then some false else none);\n      { judgment := assessment.fst, ground := assessment.snd, choice := choose g assessment.fst }).ground\n\nHint: Use the `+revert` option to automatically clean up and revert free variables\nSelectiveRevision.lean:199:14: error: Expected type must not contain free variables\n  rawShape (prepared true (some false) none true true g) \u2260\n    (have assessment := combine (if true = true then some false else none) (if true = true then none else none);\n      { judgment := assessment.fst, ground := assessment.snd, choice := choose g assessment.fst }).judgment\n\nHint: Use the `+revert` option to automatically clean up and revert free variables\nSelectiveRevision.lean:199:14: error: Expected type must not contain free variables\n  rawShape (prepared true (some true) none true true g) \u2260\n    (have assessment := combine (if true = true then some true else none) (if true = true then none else none);\n      { judgment := assessment.fst, ground := assessment.snd, choice := choose g assessment.fst }).judgment\n\nHint: Use the `+revert` option to automatically clean up and revert free variables\n"
+}

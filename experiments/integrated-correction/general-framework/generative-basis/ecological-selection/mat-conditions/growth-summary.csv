@@ -1,0 +1,9 @@
+strain,mixing,oxygen,mean,se,group,unit,locator,source_value
+SBW25,static,high,0.047,0.004,c,delta_OD600_per_hour,tbl1,0.047±0.004c
+SBW25,static,low,0.005,0.001,d,delta_OD600_per_hour,tbl1,0.005±0.001d
+SBW25,shaken,high,0.119,0.002,a,delta_OD600_per_hour,tbl1,0.119±0.002a
+SBW25,shaken,low,0.011,0.000,d,delta_OD600_per_hour,tbl1,0.011±0.000d
+WS,static,high,0.044,0.000,c,delta_OD600_per_hour,tbl1,0.044±0.000c
+WS,static,low,0.006,0.001,d,delta_OD600_per_hour,tbl1,0.006±0.001d
+WS,shaken,high,0.100,0.001,b,delta_OD600_per_hour,tbl1,0.100±0.001b
+WS,shaken,low,0.010,0.001,d,delta_OD600_per_hour,tbl1,0.010±0.001d

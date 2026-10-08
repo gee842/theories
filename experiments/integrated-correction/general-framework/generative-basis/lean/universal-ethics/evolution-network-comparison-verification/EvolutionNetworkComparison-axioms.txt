@@ -1,0 +1,24 @@
+'EvolutionNetworkComparison.Graph' does not depend on any axioms
+'EvolutionNetworkComparison.Network' does not depend on any axioms
+'EvolutionNetworkComparison.encodeGraph' does not depend on any axioms
+'EvolutionNetworkComparison.encode' does not depend on any axioms
+'EvolutionNetworkComparison.decodeGraph' does not depend on any axioms
+'EvolutionNetworkComparison.decode' does not depend on any axioms
+'EvolutionNetworkComparison.decode_encode' does not depend on any axioms
+'EvolutionNetworkComparison.encode_decode' does not depend on any axioms
+'EvolutionNetworkComparison.reaction' depends on axioms: [propext, Quot.sound]
+'EvolutionNetworkComparison.developmentalRun' depends on axioms: [propext, Quot.sound]
+'EvolutionNetworkComparison.sample' does not depend on any axioms
+'EvolutionNetworkComparison.transition' depends on axioms: [propext, Quot.sound]
+'EvolutionNetworkComparison.history' depends on axioms: [propext, Quot.sound]
+'EvolutionNetworkComparison.reaction_correspondence' depends on axioms: [propext, Quot.sound]
+'EvolutionNetworkComparison.development_correspondence' depends on axioms: [propext, Quot.sound]
+'EvolutionNetworkComparison.sample_correspondence' depends on axioms: [propext, Quot.sound]
+'EvolutionNetworkComparison.transition_correspondence' depends on axioms: [propext, Quot.sound]
+'EvolutionNetworkComparison.history_correspondence' depends on axioms: [propext, Quot.sound]
+'EvolutionNetworkComparison.decoded_history_equal' depends on axioms: [propext, Quot.sound]
+'EvolutionNetworkComparison.failure_equal' depends on axioms: [propext, Quot.sound]
+'EvolutionNetworkComparison.readout_equal' depends on axioms: [propext, Quot.sound]
+'EvolutionNetworkComparison.adaptiveOriginal' depends on axioms: [propext, Quot.sound]
+'EvolutionNetworkComparison.adaptiveNetwork' depends on axioms: [propext, Quot.sound]
+'EvolutionNetworkComparison.adaptive_correspondence' depends on axioms: [propext, Quot.sound]

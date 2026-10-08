@@ -1,0 +1,30 @@
+'Generative.ExplanatoryCardinalityWall.nat_valuation_bound' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryCardinalityWall.nat_fresh' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryCardinalityWall.streams_fresh' depends on axioms: [propext]
+'Generative.ExplanatoryCardinalityWall.diagonal_missing' depends on axioms: [propext]
+'Generative.ExplanatoryCardinalityWall.nat_enumerable' does not depend on any axioms
+'Generative.ExplanatoryCardinalityWall.streams_not_enumerable' depends on axioms: [propext]
+'Generative.ExplanatoryCardinalityWall.elementary_injective' depends on axioms: [propext]
+'Generative.ExplanatoryCardinalityWall.elementary_steps' depends on axioms: [propext]
+'Generative.ExplanatoryCardinalityWall.elementary_joints' depends on axioms: [propext]
+'Generative.ExplanatoryCardinalityWall.elementary_onto_isomorphism' depends on axioms: [propext]
+'Generative.ExplanatoryCardinalityWall.elementary_isomorphism_iff_onto' depends on axioms: [propext]
+'Generative.ExplanatoryCardinalityWall.oneHot_injective' depends on axioms: [propext]
+'Generative.ExplanatoryCardinalityWall.injection_elementary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryCardinalityWall.oneHot_elementary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryCardinalityWall.no_map_onto' depends on axioms: [propext]
+'Generative.ExplanatoryCardinalityWall.no_isomorphism' depends on axioms: [propext]
+'Generative.ExplanatoryCardinalityWall.all_sentences_agree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryCardinalityWall.all_rooted_questions_agree' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryCardinalityWall.partner_separates' depends on axioms: [propext]
+'Generative.ExplanatoryCardinalityWall.no_sentence_defines_enumerability' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryCardinalityWall.coherent_truth_without_coverage' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryCardinalityWall.generated_joint_worlds_without_isomorphism' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

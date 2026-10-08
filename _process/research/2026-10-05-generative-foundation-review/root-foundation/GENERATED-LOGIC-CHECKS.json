@@ -1,0 +1,207 @@
+{
+  "passed_owned_scope": true,
+  "scope": "Frozen proof bindings, new documents, owned insertions and canonical F01 row only",
+  "proof_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/generated-contraction-checks/20261008T101759.536385Z/receipt.json",
+  "proof_receipt_sha256": "36bb98ff82ac94fa4aaeef8311b2bff7cff2cad43626ebe8296439a1d8d6883c",
+  "audit_totals": {
+    "all": 65,
+    "empty": 51,
+    "new": 38,
+    "new_empty": 24
+  },
+  "documents": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md": "fe22b39c1c1cd7f4e984d8aa5469a97772ba199e5667b451827eaca8432c4770",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-LOGIC-INTEGRATION.md": "2ea9e12ebfb8c9faabf49223b262272fc824bbeb1fb4472c20fd066d7879d7a1",
+    "sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md": "be7aa09c11f84a3625265ce6a3104fd8b62d60c9184158d65f9007cf0ccd12a5"
+  },
+  "local_links": [
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "MATHEMATICAL-CORE.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-LOGIC-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedContraction.lean"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContractionMechanisms.lean"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/generated-contraction-checks/20261008T101759.536385Z/receipt.json"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/generated-contraction-verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-LOGIC-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-LOGIC-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-LOGIC-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_generated_contraction.py"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-LOGIC-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/generated-contraction-checks/20261008T101759.536385Z/receipt.json"
+    },
+    {
+      "document": "sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md",
+      "target": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md"
+    },
+    {
+      "document": "sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-LOGIC-INTEGRATION.md"
+    }
+  ],
+  "paired_entry": "F01",
+  "owned_edits_preserved": true,
+  "global_link_validation_errors": [],
+  "pending_shared_reviews": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-THEORETICAL-INTEGRATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-evolution-theoretical-focus.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "sources/evolutionary-selection/comparative-direction/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md",
+      "sources/15-codex-theory-conversations/2026-10-08-finish-alignment-fruits.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-CORRECTION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-DEVELOPMENTAL-MEMORY.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-RECONSTRUCTION-INTEGRATION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-UPDATER-CONSEQUENCES-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-UPDATER-CONSEQUENCES.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/FAULT-TOLERANT-CORRECTION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-ARGUMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-PROOF.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-SOURCES.md"
+    ],
+    "removed_pages": []
+  },
+  "combined_renderer_checks": {
+    "--render": {
+      "status": "needs-review",
+      "errors": [
+        "Linked source versions changed; reread affected entries before rendering."
+      ],
+      "changes": {
+        "modified_sources": [
+          "RESEARCH.md",
+          "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+          "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+          "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+          "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+          "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+          "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+          "theories/shengsheng-buxi-generative-existence/README.md",
+          "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+          "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-THEORETICAL-INTEGRATION.md",
+          "sources/15-codex-theory-conversations/2026-10-08-evolution-theoretical-focus.md",
+          "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+          "sources/evolutionary-selection/comparative-direction/README.md",
+          "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md",
+          "sources/15-codex-theory-conversations/2026-10-08-finish-alignment-fruits.md",
+          "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-CORRECTION-INTEGRATION.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-DEVELOPMENTAL-MEMORY.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-RECONSTRUCTION-INTEGRATION.md"
+        ],
+        "missing_sources": [],
+        "new_pages": [
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-UPDATER-CONSEQUENCES-PROTOCOL.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-UPDATER-CONSEQUENCES.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/FAULT-TOLERANT-CORRECTION-INTEGRATION.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-ARGUMENT.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-INTEGRATION.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-PROOF.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-PROTOCOL.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-REVIEW.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-SOURCES.md"
+        ],
+        "removed_pages": []
+      }
+    },
+    "--check": {
+      "status": "needs-review",
+      "errors": [
+        "Linked source versions changed; reread affected entries before rendering."
+      ],
+      "changes": {
+        "modified_sources": [
+          "RESEARCH.md",
+          "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+          "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+          "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+          "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+          "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+          "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+          "theories/shengsheng-buxi-generative-existence/README.md",
+          "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+          "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-THEORETICAL-INTEGRATION.md",
+          "sources/15-codex-theory-conversations/2026-10-08-evolution-theoretical-focus.md",
+          "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+          "sources/evolutionary-selection/comparative-direction/README.md",
+          "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md",
+          "sources/15-codex-theory-conversations/2026-10-08-finish-alignment-fruits.md",
+          "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-CORRECTION-INTEGRATION.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-DEVELOPMENTAL-MEMORY.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-RECONSTRUCTION-INTEGRATION.md"
+        ],
+        "missing_sources": [],
+        "new_pages": [
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-UPDATER-CONSEQUENCES-PROTOCOL.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-UPDATER-CONSEQUENCES.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/FAULT-TOLERANT-CORRECTION-INTEGRATION.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-ARGUMENT.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-INTEGRATION.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-PROOF.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-PROTOCOL.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-REVIEW.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-SOURCES.md"
+        ],
+        "removed_pages": []
+      }
+    }
+  },
+  "whole_table_certified": false,
+  "independent_agent_review": false
+}

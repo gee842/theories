@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-08",
+  "status": "passed",
+  "scope": "documentary checks only; no new scientific validation",
+  "checked_local_links": 21,
+  "errors": [],
+  "C14_render_matches": true,
+  "completion_requirements_retained": 6,
+  "new_theorems": 0,
+  "new_empirical_forecasts": 0,
+  "independent_agent_review": false,
+  "file_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-COMPARATIVE-DIRECTION.md": "bf9f447020d7feaa4bf738a61d9ff8eba2e11d234d5bf09e1705effc8d7ca83d",
+    "sources/15-codex-theory-conversations/2026-10-08-evolution-comparative-direction.md": "0df8936dc3b20f5b3964420b29f143b32d4a2d73fc27f6cbb129764afc007999",
+    "sources/evolutionary-selection/comparative-direction/README.md": "754acc7b1910a0b00e4f05956123f8e8de9b700c2e160264c86d3d2d335972e6"
+  },
+  "full_table_check": {
+    "exit_code": 2,
+    "status": "needs-review",
+    "errors": [
+      "Linked source versions changed; reread affected entries before rendering."
+    ],
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/README.md"
+    ]
+  },
+  "owned_passages_present": true,
+  "initial_check_correction": "The first checker required our entries immediately after shared titles; concurrent prepended entries moved them. Corrected to check owned passages without requiring that adjacency. No missing prose was restored or unrelated work rewritten."
+}

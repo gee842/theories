@@ -1,0 +1,20 @@
+{
+  "work": "Essays in Radical Empiricism",
+  "author": "William James",
+  "collection_publication_year": 1912,
+  "editor": "Ralph Barton Perry",
+  "source_url": "https://www.gutenberg.org/files/32547/32547-h/32547-h.htm",
+  "resolved_url": "https://www.gutenberg.org/files/32547/32547-h/32547-h.htm",
+  "retrieved_at_utc": "2026-10-08T07:48:51.315976+00:00",
+  "response_headers": {
+    "last-modified": "Wed, 26 May 2010 18:23:22 GMT",
+    "content-type": "text/html"
+  },
+  "file": "gutenberg-original.html",
+  "bytes": 467479,
+  "sha256": "fb1d9462675f7f7dd5724ce35d03edad5e20d18c84d98bc2520e4ac5b82d40ef",
+  "preservation": "Original HTTP response body, unmodified. Project Gutenberg electronic edition; no edition-wide collation claimed.",
+  "reading_scope": "Essay II, sections I–II, on conjunctive relations and degrees of connection; Essay VI selected passages corresponding to printed pp. 158–170, 181–188, on experienced activity, causal attribution and methods. No reading of the entire collection or empirical revalidation is claimed.",
+  "comparison_edition_url": "https://brocku.ca/MeadProject/James/James_1912/James_1912_02.html",
+  "comparison_edition_scope": "Link and metadata inspected; the retained Gutenberg text is the primary source for the present assessment."
+}

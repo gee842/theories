@@ -1,0 +1,40 @@
+DevelopmentalMemory.lean:115:4: error: unsolved goals
+case neg
+n : ℕ
+η : ℝ
+s : Profile n
+hη : 0 < η
+unit : ∀ (i : Fin n), s i * s i = 1
+i j : Fin n
+tail : List (Fin n × Fin n)
+ih : ∀ (B : Network n), accumulate η s B tail i j = B i j + ↑(List.count (i, j) tail) * η * s i * s j
+B : Network n
+a b : Fin n
+h : ¬(a, b) = (i, j)
+hrev : (i, j) ≠ (a, b)
+hno : ¬(i = a ∧ j = b)
+⊢ (((a = i → ¬b = j) ∨ η = 0) ∨ s i = 0) ∨ s j = 0
+DevelopmentalMemory.lean:113:21: warning: This simp argument is unused:
+  List.count_cons
+
+Hint: Omit it from the simp argument list.
+  simp [perturb, L̵i̵s̵t̵.̵c̵o̵u̵n̵t̵_̵c̵o̵n̵s̵,̵ ̵Nat.cast_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+DevelopmentalMemory.lean:118:43: warning: This simp argument is unused:
+  hrev
+
+Hint: Omit it from the simp argument list.
+  simp [perturb, hno, List.count_cons,̵ ̵h̵r̵e̵v̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+DevelopmentalMemory.lean:124:76: error: unsolved goals
+case h.h
+n : ℕ
+η : ℝ
+s : Profile n
+B : Network n
+hη : 0 < η
+unit : ∀ (i : Fin n), s i * s i = 1
+i j : Fin n
+⊢ (↑(List.count (i, j) Finset.univ.toList) * η = η ∨ s i = 0) ∨ s j = 0

@@ -1,0 +1,74 @@
+{
+  "shared_file_insertions": [
+    {
+      "path": "RESEARCH.md",
+      "before_sha256": "044775c6ceee84f69b6b6bbcd1c9839eff0841247925054c0c371e4ee1096ad3",
+      "inserted_text": "**生成关系的解释必要性 / Generative explanatory necessity, 8 October 2026.** [首轮研究](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md)区分必要关系内容、解释形成与本体优先。**17项新 Lean 定理／42项含继承审计通过**：完整有限端点答案可恢复一步关系；仅可行性不足；整体历史约束在粗配置上可能不可组合，保留历史可恢复精确表示。[论证、实质自我反审与原始来源](_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md)保留同内容的整体约束对手。 / The finite-query study is complete at its declared scope; universal indispensability remains open. Next compare the explanatory direction of global constraints and formative dependence on an independently fixed target. No new normative warrant or unique truth-generator claim.\n\n"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "before_sha256": "299a461efa133e0a72b35a9439d9c8d7738712dbe3113a5e27137ef900c25934",
+      "inserted_text": "**生成关系是否不可绕过 / Are generative relations indispensable? 2026-10-08:** [必要性研究](unified-2026-10-05/EXPLANATORY-NECESSITY.md)建立完整有限端点回答中的关系可恢复性，保留整体约束对手与粗描述失败。17项新 Lean 定理、42项含继承审计通过；普遍解释优先性仍开放。 / Checked relative content necessity, with explicit representation boundaries; universal explanatory priority remains a research conjecture.\n\n"
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "before_sha256": "0df569dbf8e1702c42217fede9b74de564fc5d2c73c3608207f5bbdddc5fc5c0",
+      "inserted_text": "**Generative explanatory necessity, 8 October 2026.** [Ren’s research direction](15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md) preserves the visible messages verbatim and marks assistant-origin wording. [The primary-source assessment](../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md#primary-sources-and-genealogy) distinguishes selected Adlam text, relation-closure antecedents and an abstract-only Lange challenge. External originals remain link-only; no empirical validation is claimed.\n\n"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "before_sha256": "08b4c62406d0e2108a116794606f81cc385f12756e25eb8833317705cc892003",
+      "inserted_text": "**Consequential differences → necessary explanatory content, 8 October 2026.** [The explanatory-necessity investigation](EXPLANATORY-NECESSITY.md) checks recovery of primitive transitions from exact finite endpoint answers without requiring process-shaped descriptions. Seventeen new Lean theorems / 42 total audits retain a same-content static rival, feasibility-only information loss and a global history bound that needs a richer carrier. This advances correspondence and candidate structural necessity; it does not establish universal priority, actual law formation or normative warrant. **Next:** compare independently justified global constraints with formative dependence on the same target; identify a substantive explanatory asymmetry beyond representation equivalence. / 有限查询层面的必要关系内容已实查；普遍生成必要性保持开放。\n\n"
+    }
+  ],
+  "added_entries": [
+    {
+      "id": "C30",
+      "title_zh": "生成关系的解释必要性",
+      "title_en": "Generative relations and explanatory necessity",
+      "claim_zh": "完整有限端点回答必须保留可恢复的一步变化内容；整体约束表述可保留相同答案，故内容必要性与解释优先性分开。",
+      "claim_en": "Exact finite endpoint answers retain recoverable transition content; a global-constraint presentation can preserve the same answers, separating content necessity from explanatory priority.",
+      "scope_zh": "首轮有限查询研究完成；17项新 Lean 定理／42项含继承审计。仅可行性不足，粗配置不可组合，保留历史可恢复表示；普遍必要性、实际规律根据及唯一性未证。",
+      "scope_en": "First finite-query study complete: 17 new Lean theorems / 42 audits including imports. Feasibility-only loss and coarse-carrier failure are retained; history enrichment restores representation. Universal necessity, actual law warrant and uniqueness remain open.",
+      "links": [
+        {
+          "label_zh": "当前论述",
+          "label_en": "Current account",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md"
+        },
+        {
+          "label_zh": "论证、反审与来源",
+          "label_en": "Argument, counterreview and sources",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "Ren 原话",
+          "label_en": "Ren’s direction",
+          "path": "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md"
+        }
+      ]
+    },
+    {
+      "id": "F22",
+      "title_zh": "答案恢复、局部分解与历史约束",
+      "title_en": "Answer recovery, local decomposition and history constraints",
+      "claim_zh": "检查任意解释编码中的单步恢复、共同解读下的区别、整体历史的局部重建判准及两个范围反例。",
+      "claim_en": "Checks singleton recovery from arbitrary description codes, distinctions under shared interpretation, the local reconstruction criterion and two scope counterexamples.",
+      "scope_zh": "17项新声明均为空公理依赖；另有25项继承审计。准确回答不被定义为充分解释；端点对应、问题范围与解读显式给定，不推出概率、干预或无限历史。",
+      "scope_en": "All 17 new declarations have empty axiom dependencies, with 25 inherited audits. Answer accuracy is not defined as sufficient explanation; endpoint correspondence, query scope and interpretation are explicit. No probability, intervention or infinite-history result.",
+      "links": [
+        {
+          "label_zh": "Lean 源码",
+          "label_en": "Lean source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryNecessity.lean"
+        },
+        {
+          "label_zh": "证明对应与回执",
+          "label_en": "Proof correspondence and receipt",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md"
+        }
+      ]
+    }
+  ],
+  "preserved_entry_count": 76
+}

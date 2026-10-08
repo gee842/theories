@@ -1,0 +1,200 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-07T21:16:24.285163+00:00",
+  "python": "3.11.2 (main, Feb  9 2025, 00:58:25) [Clang 16.0.0 (clang-1600.0.26.4)]",
+  "review_script_sha256": "10c4a5e8da11324e6bacc8b9b97bd11b9e88a53bea403179fd78f9de6f09e6d6",
+  "producer_sha256": "8e0f917554a47960d73f5afeba6a2dde612c4c2089ef464486618c6b5dfbc92d",
+  "producer_results_sha256": "1a1d6022ec5d06fb7f18a4fc966277d52a9d1144ccb44e4f69001ebe53ad67d7",
+  "alternate_checker_sha256": "378bf14203654fc970bb47b2376e5abb1d0a2663976d6cd533b79d1f398646a0",
+  "alternate_receipt_sha256": "39622230d9d52aaa47eaf30cb9c882516e65f360fa12e1ea5b5c288230df28e4",
+  "provenance_sha256": "b553747deb40275e4be1827a8f143eac617c159cc93e56451c5cf48db34eef39",
+  "remote_provenance": [
+    {
+      "path": "sources/tclab-benchmark/CACE_2020_source.zip",
+      "status": "remote bytes match pinned original",
+      "sha256": "4cb422489a5396e8e4d156fc7b00f89e4bd7cb9a83561aacbbeee046d6c182ed"
+    },
+    {
+      "path": "sources/tclab-benchmark/CACE_2020_Preprint.pdf",
+      "status": "remote bytes match pinned original",
+      "sha256": "16144824fbfbd1060e85d521726e85da8b0854eb4bc756b12405c4435abb9a86"
+    }
+  ],
+  "physical_runs": [
+    {
+      "label": "initial",
+      "commands": 598,
+      "max_exact_command_error_percent": 7.400377938304327e-14,
+      "metrics": {
+        "samples": 599,
+        "mean_absolute_tracking_error_celsius": 5.73449081803005,
+        "mean_absolute_command_movement_percent": 0.712674078660821,
+        "paper_absolute_objective": 6.09082785736046,
+        "archived_search_signed_objective_on_observations": 5.7775507090628055,
+        "commanded_percent_seconds_left_hold": 27292.48357669395,
+        "interval_seconds_min": 0.875199556350708,
+        "interval_seconds_max": 1.1259057521820068
+      }
+    },
+    {
+      "label": "validation_1",
+      "commands": 598,
+      "max_exact_command_error_percent": 7.42842058890256e-14,
+      "metrics": {
+        "samples": 599,
+        "mean_absolute_tracking_error_celsius": 5.314207011686143,
+        "mean_absolute_command_movement_percent": 0.900748500004037,
+        "paper_absolute_objective": 5.7645812616881615,
+        "archived_search_signed_objective_on_observations": 5.358167321480791,
+        "commanded_percent_seconds_left_hold": 28565.140940317444,
+        "interval_seconds_min": 0.8439650535583496,
+        "interval_seconds_max": 1.151778221130371
+      }
+    },
+    {
+      "label": "validation_2",
+      "commands": 598,
+      "max_exact_command_error_percent": 5.751697116752971e-14,
+      "metrics": {
+        "samples": 599,
+        "mean_absolute_tracking_error_celsius": 5.081953255425709,
+        "mean_absolute_command_movement_percent": 0.9522245230705859,
+        "paper_absolute_objective": 5.558065516961002,
+        "archived_search_signed_objective_on_observations": 5.126929900848118,
+        "commanded_percent_seconds_left_hold": 26504.04808138802,
+        "interval_seconds_min": 0.9612109661102295,
+        "interval_seconds_max": 1.0418567657470703
+      }
+    }
+  ],
+  "total_commands": 1794,
+  "independent_fits": [
+    {
+      "channel": "T1",
+      "second_heater_included": false,
+      "fit_method": "independent standard-library Householder QR",
+      "coefficients": [
+        0.0829321287723313,
+        0.7250161292686209,
+        0.269623313727205,
+        0.0004279393303754723,
+        0.005568400348167417
+      ],
+      "max_coefficient_difference_from_SVD": 4.757305660518796e-14,
+      "training_one_step": {
+        "rmse_celsius": 0.1434593132243128,
+        "mae_celsius": 0.0950780903546203,
+        "max_absolute_error_celsius": 1.1857104418967381
+      },
+      "validation_one_step": {
+        "rmse_celsius": 0.22370126181657865,
+        "mae_celsius": 0.11390055263830322,
+        "max_absolute_error_celsius": 3.4754268250109206
+      },
+      "validation_free_rollout": {
+        "rmse_celsius": 5.933461149971962,
+        "mae_celsius": 5.311309746371271,
+        "max_absolute_error_celsius": 9.452882246147226
+      },
+      "training_radius_exceeded_at_csv_data_indices_zero_based": [
+        37,
+        38
+      ]
+    },
+    {
+      "channel": "T1",
+      "second_heater_included": true,
+      "fit_method": "independent standard-library Householder QR",
+      "coefficients": [
+        0.0818877761929516,
+        0.7255180874507771,
+        0.2690923946712337,
+        0.00044024922334074,
+        0.005568808110172666,
+        0.0008252585508035803,
+        -0.0007837300695272813
+      ],
+      "max_coefficient_difference_from_SVD": 7.216449660063518e-15,
+      "training_one_step": {
+        "rmse_celsius": 0.14336233021374692,
+        "mae_celsius": 0.09513326241000637,
+        "max_absolute_error_celsius": 1.184283137234651
+      },
+      "validation_one_step": {
+        "rmse_celsius": 0.22345590440150853,
+        "mae_celsius": 0.11309867548947304,
+        "max_absolute_error_celsius": 3.4779172927851967
+      },
+      "validation_free_rollout": {
+        "rmse_celsius": 5.777561775869792,
+        "mae_celsius": 5.1519316264982,
+        "max_absolute_error_celsius": 9.326156883924185
+      },
+      "training_radius_exceeded_at_csv_data_indices_zero_based": [
+        37,
+        38
+      ]
+    },
+    {
+      "channel": "T2",
+      "second_heater_included": false,
+      "fit_method": "independent standard-library Householder QR",
+      "coefficients": [
+        0.24749130807863107,
+        0.9317303754987024,
+        0.06536000998174517,
+        -0.00039748576403388867,
+        -0.000585878786238679
+      ],
+      "max_coefficient_difference_from_SVD": 2.7006175074006933e-14,
+      "training_one_step": {
+        "rmse_celsius": 0.21660963885474518,
+        "mae_celsius": 0.16435393740459195,
+        "max_absolute_error_celsius": 1.0844987602117087
+      },
+      "validation_one_step": {
+        "rmse_celsius": 0.1940942691465776,
+        "mae_celsius": 0.15429720179754047,
+        "max_absolute_error_celsius": 0.5975262010599494
+      },
+      "validation_free_rollout": {
+        "rmse_celsius": 8.190726637724802,
+        "mae_celsius": 6.354381694805454,
+        "max_absolute_error_celsius": 15.667015169588034
+      },
+      "training_radius_exceeded_at_csv_data_indices_zero_based": []
+    },
+    {
+      "channel": "T2",
+      "second_heater_included": true,
+      "fit_method": "independent standard-library Householder QR",
+      "coefficients": [
+        0.1694272020869159,
+        0.6048054872198881,
+        0.3893478248082161,
+        0.000303970695557175,
+        -0.00017153575874905298,
+        0.0028540689449661483,
+        0.0005874077768264208
+      ],
+      "max_coefficient_difference_from_SVD": 1.3655743202889425e-14,
+      "training_one_step": {
+        "rmse_celsius": 0.1757568434851335,
+        "mae_celsius": 0.1250708033883108,
+        "max_absolute_error_celsius": 1.0123656152039402
+      },
+      "validation_one_step": {
+        "rmse_celsius": 0.16886217223818814,
+        "mae_celsius": 0.12943255154391775,
+        "max_absolute_error_celsius": 0.5691595177922864
+      },
+      "validation_free_rollout": {
+        "rmse_celsius": 3.933889298545034,
+        "mae_celsius": 3.5563030040092163,
+        "max_absolute_error_celsius": 7.486553508878281
+      },
+      "training_radius_exceeded_at_csv_data_indices_zero_based": []
+    }
+  ],
+  "scope": "Archived data analysis; no new physical experiment or future-error guarantee. QR uses training only; validation measurements occur only in one-step tests or first two rollout states. Input timing is recorded index, not a calibrated continuous-time model."
+}

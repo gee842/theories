@@ -1,0 +1,280 @@
+{
+  "data_before_sha256": "bc744e3de3b1b49095e871a86dbc5ff5d0d4fc587d35190b2db969d0a85da778",
+  "data_after_sha256": "6c04069cf1b98aeaf41cf1432c886a954e287ffc8d28f1e0bcd8ea59ed26aa66",
+  "owned_ids": [
+    "M15",
+    "F01"
+  ],
+  "entries": {
+    "M15": {
+      "before": {
+        "id": "M15",
+        "title_zh": "智慧的协同修正与慧根",
+        "title_en": "Coordinated correction in wisdom and huigen",
+        "claim_zh": "智慧协同因果理解、有根据的关切与可实行回应，并能够修正事实、排除规则和阻断纠正的权力。",
+        "claim_en": "Wisdom coordinates causal understanding, warranted concern and feasible response while revising facts, exclusion rules and power that blocks correction.",
+        "scope_zh": "有界条件综合已接受；慧根的必要性、全部伦理内容与普遍智慧未证明。 形式支撑后续修复：原15项查询定理与1项辅助重证均为空依赖；连同实际自定义依赖，六模块63项审计全空。此修复不升级慧根或伦理的普遍必要性。",
+        "scope_en": "Bounded conditional synthesis accepted; huigen's necessity, full ethical content and universal wisdom remain unproved. Formal-support repair: the fifteen original inquiry theorems and one helper reproof have empty reports; their six-module logical/inquiry closure has 63 empty audits. This does not upgrade universal huigen or ethical necessity.",
+        "links": [
+          {
+            "label_zh": "智慧的协同修正与慧根",
+            "label_en": "Coordinated correction in wisdom and huigen",
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-DEVELOPMENT.md"
+          },
+          {
+            "label_zh": "相关接续",
+            "label_en": "Related continuation",
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md"
+          },
+          {
+            "label_zh": "查询证明修复与范围",
+            "label_en": "Constructive inquiry repair and scope",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md#12-constructive-proofs-of-the-existing-inquiry-laws"
+          },
+          {
+            "label_zh": "当前完整构建回执",
+            "label_en": "Current affected-build receipt",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/inquiry-repair-verification.json"
+          }
+        ],
+        "connection_zh": "将共同形成推进为理解、评价、行动及其修订条件的协同。",
+        "connection_en": "Extends co-formation to coordination among understanding, evaluation, action and their conditions of revision.",
+        "source_section": "7. From effective concern toward wisdom",
+        "source_line": 93,
+        "row_type": "synthesis",
+        "source_id": "wisdom_huigen"
+      },
+      "after": {
+        "id": "M15",
+        "title_zh": "智慧的协同修正与慧根",
+        "title_en": "Coordinated correction in wisdom and huigen",
+        "claim_zh": "智慧协同因果理解、有根据的关切与可实行回应，并能够修正事实、排除规则和阻断纠正的权力。 本轮接续说明同一要求可有相反回应，前次成功也可实际改变下一步的条件。",
+        "claim_en": "Wisdom coordinates causal understanding, warranted concern and feasible response while revising facts, exclusion rules and power that blocks correction. A contextual continuation shows opposite responses under one requirement, including a reversal caused by the previous response’s success.",
+        "scope_zh": "有界条件综合已接受；慧根的必要性、全部伦理内容与普遍智慧未证明。 形式支撑后续修复：原15项查询定理与1项辅助重证均为空依赖；连同实际自定义依赖，六模块63项审计全空。此修复不升级慧根或伦理的普遍必要性。 新11项定理／50项含依赖审计（44空、6标准），两组熟悉原典及不利案例按范围比较；未作盲法预测或证明伦理根据同一。",
+        "scope_en": "Bounded conditional synthesis accepted; huigen's necessity, full ethical content and universal wisdom remain unproved. Formal-support repair: the fifteen original inquiry theorems and one helper reproof have empty reports; their six-module logical/inquiry closure has 63 empty audits. This does not upgrade universal huigen or ethical necessity. Eleven new theorems / fifty import-inclusive audits (44 empty, 6 standard); two familiar primary-text comparisons retain adverse details. No blind prediction or identity of ethical grounds is claimed.",
+        "links": [
+          {
+            "label_zh": "智慧的协同修正与慧根",
+            "label_en": "Coordinated correction in wisdom and huigen",
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-DEVELOPMENT.md"
+          },
+          {
+            "label_zh": "相关接续",
+            "label_en": "Related continuation",
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md"
+          },
+          {
+            "label_zh": "查询证明修复与范围",
+            "label_en": "Constructive inquiry repair and scope",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md#12-constructive-proofs-of-the-existing-inquiry-laws"
+          },
+          {
+            "label_zh": "当前完整构建回执",
+            "label_en": "Current affected-build receipt",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/inquiry-repair-verification.json"
+          },
+          {
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md",
+            "label_zh": "智慧与情境",
+            "label_en": "Wisdom and context"
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md",
+            "label_zh": "证明与反审",
+            "label_en": "Proof and counterreview"
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-SOURCES.md",
+            "label_zh": "原典与范围",
+            "label_en": "Primary sources and scope"
+          }
+        ],
+        "connection_zh": "将共同形成推进为理解、评价、行动及其修订条件的协同。",
+        "connection_en": "Extends co-formation to coordination among understanding, evaluation, action and their conditions of revision.",
+        "source_section": "7. From effective concern toward wisdom",
+        "source_line": 93,
+        "row_type": "synthesis",
+        "source_id": "wisdom_huigen"
+      }
+    },
+    "F01": {
+      "before": {
+        "id": "F01",
+        "title_zh": "过程核心、谓词与路径组合",
+        "title_en": "Process core predication and composition",
+        "claim_zh": "给定变化关系后，有限历史通过实际共同中间配置组合；谓词可陈述保持性、可能性及全称终点性质，忠实抽象有明确局部条件。 生成逻辑首轮在左单位与原生上下文相容条件下，证明资源演算的收缩可容许当且仅当实际复制可达；有限供给有精确付费替代界限。",
+        "claim_en": "Given a transition relation, finite histories compose through a shared reached configuration; predicates express invariance, possibility and universal endpoint properties, with explicit local conditions for faithful abstraction. A logic pilot proves contraction admissible in a resource calculus exactly when duplication is reachable, under a left unit and primitive context compatibility; finite provision has a sharp paid-replacement bound.",
+        "scope_zh": "逻辑、配置／事件域及变化关系明确给定，未由此导出全部规律或伦理方向。完整说明附六模块61项空依赖审计，其中核心18项、新教学定理12项；可能性、无执行时的空真与实际进展分别保留。旧回执仍可查。 新38项定理／65项总审计（51空），含顺序复用不保证重叠、上下文干扰与完整补给包不可复制的反例。形成的是即时就绪；任意有限准备已计入可达性。未导出元逻辑或确立前沿新颖性；共享上下文、及时性与忠实抽象待继续比较。",
+        "scope_en": "Logic, configuration/event domains and dynamics remain explicit inputs; this does not derive every law or ethical direction. The exposition checks six modules with 61 empty dependency audits, including 18 core audits and 12 new pedagogical theorems; possibility, vacuity and actual progress remain distinct. The earlier receipt is retained. New pilot: 38 theorems / 65 total audits (51 empty), retaining serial/overlap, contextual interference and funded-package duplication boundaries. Immediate readiness forms; unrestricted reachability already includes preparation. Metalogic and novelty are not established; shared contexts, timeliness and faithful abstraction remain for comparison.",
+        "links": [
+          {
+            "label_zh": "核心源码",
+            "label_en": "Core source",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean"
+          },
+          {
+            "label_zh": "同次导入闭包回执",
+            "label_en": "Recorded import-closure receipt",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/situated-continuation-verification.json"
+          },
+          {
+            "label_zh": "完整数学核心说明",
+            "label_en": "Full mathematical core account",
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md"
+          },
+          {
+            "label_zh": "谓词与预测例证源码",
+            "label_en": "Predication and prediction companion",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/CorePredication.lean"
+          },
+          {
+            "label_zh": "证明对应与核验",
+            "label_en": "Proof correspondence and verification",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-CORE-DOCUMENT-RECORD.md"
+          },
+          {
+            "label_zh": "生成逻辑当前说明",
+            "label_en": "Generated-logic account",
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md"
+          },
+          {
+            "label_zh": "来源、证明与反审",
+            "label_en": "Sources, proof and counterreview",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-LOGIC-INTEGRATION.md"
+          },
+          {
+            "label_zh": "原话与继续",
+            "label_en": "Question and continuation",
+            "path": "sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md"
+          },
+          {
+            "label_zh": "收缩判据与演算",
+            "label_en": "Criterion and calculus",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedContraction.lean"
+          },
+          {
+            "label_zh": "机制与反例",
+            "label_en": "Mechanisms and controls",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContractionMechanisms.lean"
+          },
+          {
+            "label_zh": "本轮冻结回执",
+            "label_en": "Frozen pilot receipt",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/generated-contraction-checks/20261008T101759.536385Z/receipt.json"
+          }
+        ]
+      },
+      "after": {
+        "id": "F01",
+        "title_zh": "过程核心、谓词与路径组合",
+        "title_en": "Process core predication and composition",
+        "claim_zh": "给定变化关系后，有限历史通过实际共同中间配置组合；谓词可陈述保持性、可能性及全称终点性质，忠实抽象有明确局部条件。 生成逻辑首轮在左单位与原生上下文相容条件下，证明资源演算的收缩可容许当且仅当实际复制可达；有限供给有精确付费替代界限。 新的有限逐前缀继续谓词接入同一核心：每个请求步骤可继续，全部完成终点满足目标；有相反回应与成功后须调整的机制见证。",
+        "claim_en": "Given a transition relation, finite histories compose through a shared reached configuration; predicates express invariance, possibility and universal endpoint properties, with explicit local conditions for faithful abstraction. A logic pilot proves contraction admissible in a resource calculus exactly when duplication is reachable, under a left unit and primitive context compatibility; finite provision has a sharp paid-replacement bound. A finite prefix-sensitive obligation extends the same core: every requested step can continue and all completed endpoints meet the target, with mechanisms for opposite responses and adjustment after success.",
+        "scope_zh": "逻辑、配置／事件域及变化关系明确给定，未由此导出全部规律或伦理方向。完整说明附六模块61项空依赖审计，其中核心18项、新教学定理12项；可能性、无执行时的空真与实际进展分别保留。旧回执仍可查。 新38项定理／65项总审计（51空），含顺序复用不保证重叠、上下文干扰与完整补给包不可复制的反例。形成的是即时就绪；任意有限准备已计入可达性。未导出元逻辑或确立前沿新颖性；共享上下文、及时性与忠实抽象待继续比较。 新11项定理继承39项审计；50项中44空、6仅标准依赖。终点正确可遗漏中断；实际调度、物理时间与目标伦理根据另列。",
+        "scope_en": "Logic, configuration/event domains and dynamics remain explicit inputs; this does not derive every law or ethical direction. The exposition checks six modules with 61 empty dependency audits, including 18 core audits and 12 new pedagogical theorems; possibility, vacuity and actual progress remain distinct. The earlier receipt is retained. New pilot: 38 theorems / 65 total audits (51 empty), retaining serial/overlap, contextual interference and funded-package duplication boundaries. Immediate readiness forms; unrestricted reachability already includes preparation. Metalogic and novelty are not established; shared contexts, timeliness and faithful abstraction remain for comparison. Eleven new theorems plus 39 inherited audits; 44 of 50 reports empty, six standard only. Correct endpoints can omit interruption; scheduling, physical time and ethical target warrant remain separate.",
+        "links": [
+          {
+            "label_zh": "核心源码",
+            "label_en": "Core source",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean"
+          },
+          {
+            "label_zh": "同次导入闭包回执",
+            "label_en": "Recorded import-closure receipt",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/situated-continuation-verification.json"
+          },
+          {
+            "label_zh": "完整数学核心说明",
+            "label_en": "Full mathematical core account",
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md"
+          },
+          {
+            "label_zh": "谓词与预测例证源码",
+            "label_en": "Predication and prediction companion",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/CorePredication.lean"
+          },
+          {
+            "label_zh": "证明对应与核验",
+            "label_en": "Proof correspondence and verification",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-CORE-DOCUMENT-RECORD.md"
+          },
+          {
+            "label_zh": "生成逻辑当前说明",
+            "label_en": "Generated-logic account",
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md"
+          },
+          {
+            "label_zh": "来源、证明与反审",
+            "label_en": "Sources, proof and counterreview",
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-LOGIC-INTEGRATION.md"
+          },
+          {
+            "label_zh": "原话与继续",
+            "label_en": "Question and continuation",
+            "path": "sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md"
+          },
+          {
+            "label_zh": "收缩判据与演算",
+            "label_en": "Criterion and calculus",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedContraction.lean"
+          },
+          {
+            "label_zh": "机制与反例",
+            "label_en": "Mechanisms and controls",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContractionMechanisms.lean"
+          },
+          {
+            "label_zh": "本轮冻结回执",
+            "label_en": "Frozen pilot receipt",
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/generated-contraction-checks/20261008T101759.536385Z/receipt.json"
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContextualWisdom.lean",
+            "label_zh": "有限继续与相反回应",
+            "label_en": "Finite continuation and contextual response"
+          },
+          {
+            "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/contextual-wisdom-verification.json",
+            "label_zh": "本轮检查回执",
+            "label_en": "Current check receipt"
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md",
+            "label_zh": "对应与反审",
+            "label_en": "Correspondence and counterreview"
+          }
+        ]
+      }
+    }
+  },
+  "other_entries_unchanged": true,
+  "rendered_rows": {
+    "M15": {
+      "before": "| M15 | 智慧的协同修正与慧根<br>Coordinated correction in wisdom and huigen | 智慧协同因果理解、有根据的关切与可实行回应，并能够修正事实、排除规则和阻断纠正的权力。 | Wisdom coordinates causal understanding, warranted concern and feasible response while revising facts, exclusion rules and power that blocks correction. | 有界条件综合已接受；慧根的必要性、全部伦理内容与普遍智慧未证明。 形式支撑后续修复：原15项查询定理与1项辅助重证均为空依赖；连同实际自定义依赖，六模块63项审计全空。此修复不升级慧根或伦理的普遍必要性。<br>Bounded conditional synthesis accepted; huigen's necessity, full ethical content and universal wisdom remain unproved. Formal-support repair: the fifteen original inquiry theorems and one helper reproof have empty reports; their six-module logical/inquiry closure has 63 empty audits. This does not upgrade universal huigen or ethical necessity. | [智慧的协同修正与慧根 / Coordinated correction in wisdom and huigen](../unified-2026-10-05/GENERATIVE-DEVELOPMENT.md)<br>[相关接续 / Related continuation](../unified-2026-10-05/HUIGEN.md)<br>[查询证明修复与范围 / Constructive inquiry repair and scope](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md#12-constructive-proofs-of-the-existing-inquiry-laws)<br>[当前完整构建回执 / Current affected-build receipt](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/inquiry-repair-verification.json) |",
+      "after": "| M15 | 智慧的协同修正与慧根<br>Coordinated correction in wisdom and huigen | 智慧协同因果理解、有根据的关切与可实行回应，并能够修正事实、排除规则和阻断纠正的权力。 本轮接续说明同一要求可有相反回应，前次成功也可实际改变下一步的条件。 | Wisdom coordinates causal understanding, warranted concern and feasible response while revising facts, exclusion rules and power that blocks correction. A contextual continuation shows opposite responses under one requirement, including a reversal caused by the previous response’s success. | 有界条件综合已接受；慧根的必要性、全部伦理内容与普遍智慧未证明。 形式支撑后续修复：原15项查询定理与1项辅助重证均为空依赖；连同实际自定义依赖，六模块63项审计全空。此修复不升级慧根或伦理的普遍必要性。 新11项定理／50项含依赖审计（44空、6标准），两组熟悉原典及不利案例按范围比较；未作盲法预测或证明伦理根据同一。<br>Bounded conditional synthesis accepted; huigen's necessity, full ethical content and universal wisdom remain unproved. Formal-support repair: the fifteen original inquiry theorems and one helper reproof have empty reports; their six-module logical/inquiry closure has 63 empty audits. This does not upgrade universal huigen or ethical necessity. Eleven new theorems / fifty import-inclusive audits (44 empty, 6 standard); two familiar primary-text comparisons retain adverse details. No blind prediction or identity of ethical grounds is claimed. | [智慧的协同修正与慧根 / Coordinated correction in wisdom and huigen](../unified-2026-10-05/GENERATIVE-DEVELOPMENT.md)<br>[相关接续 / Related continuation](../unified-2026-10-05/HUIGEN.md)<br>[查询证明修复与范围 / Constructive inquiry repair and scope](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md#12-constructive-proofs-of-the-existing-inquiry-laws)<br>[当前完整构建回执 / Current affected-build receipt](../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/inquiry-repair-verification.json)<br>[智慧与情境 / Wisdom and context](../unified-2026-10-05/WISDOM-AND-CONTEXT.md)<br>[证明与反审 / Proof and counterreview](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md)<br>[原典与范围 / Primary sources and scope](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-SOURCES.md) |"
+    },
+    "F01": {
+      "before": "| F01 | 过程核心、谓词与路径组合<br>Process core predication and composition | 给定变化关系后，有限历史通过实际共同中间配置组合；谓词可陈述保持性、可能性及全称终点性质，忠实抽象有明确局部条件。 生成逻辑首轮在左单位与原生上下文相容条件下，证明资源演算的收缩可容许当且仅当实际复制可达；有限供给有精确付费替代界限。 | Given a transition relation, finite histories compose through a shared reached configuration; predicates express invariance, possibility and universal endpoint properties, with explicit local conditions for faithful abstraction. A logic pilot proves contraction admissible in a resource calculus exactly when duplication is reachable, under a left unit and primitive context compatibility; finite provision has a sharp paid-replacement bound. | 逻辑、配置／事件域及变化关系明确给定，未由此导出全部规律或伦理方向。完整说明附六模块61项空依赖审计，其中核心18项、新教学定理12项；可能性、无执行时的空真与实际进展分别保留。旧回执仍可查。 新38项定理／65项总审计（51空），含顺序复用不保证重叠、上下文干扰与完整补给包不可复制的反例。形成的是即时就绪；任意有限准备已计入可达性。未导出元逻辑或确立前沿新颖性；共享上下文、及时性与忠实抽象待继续比较。<br>Logic, configuration/event domains and dynamics remain explicit inputs; this does not derive every law or ethical direction. The exposition checks six modules with 61 empty dependency audits, including 18 core audits and 12 new pedagogical theorems; possibility, vacuity and actual progress remain distinct. The earlier receipt is retained. New pilot: 38 theorems / 65 total audits (51 empty), retaining serial/overlap, contextual interference and funded-package duplication boundaries. Immediate readiness forms; unrestricted reachability already includes preparation. Metalogic and novelty are not established; shared contexts, timeliness and faithful abstraction remain for comparison. | [核心源码 / Core source](../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean)<br>[同次导入闭包回执 / Recorded import-closure receipt](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/situated-continuation-verification.json)<br>[完整数学核心说明 / Full mathematical core account](../unified-2026-10-05/MATHEMATICAL-CORE.md)<br>[谓词与预测例证源码 / Predication and prediction companion](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/CorePredication.lean)<br>[证明对应与核验 / Proof correspondence and verification](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-CORE-DOCUMENT-RECORD.md)<br>[生成逻辑当前说明 / Generated-logic account](../unified-2026-10-05/GENERATED-LOGIC.md)<br>[来源、证明与反审 / Sources, proof and counterreview](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-LOGIC-INTEGRATION.md)<br>[原话与继续 / Question and continuation](../../../sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md)<br>[收缩判据与演算 / Criterion and calculus](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedContraction.lean)<br>[机制与反例 / Mechanisms and controls](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContractionMechanisms.lean)<br>[本轮冻结回执 / Frozen pilot receipt](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/generated-contraction-checks/20261008T101759.536385Z/receipt.json) |",
+      "after": "| F01 | 过程核心、谓词与路径组合<br>Process core predication and composition | 给定变化关系后，有限历史通过实际共同中间配置组合；谓词可陈述保持性、可能性及全称终点性质，忠实抽象有明确局部条件。 生成逻辑首轮在左单位与原生上下文相容条件下，证明资源演算的收缩可容许当且仅当实际复制可达；有限供给有精确付费替代界限。 新的有限逐前缀继续谓词接入同一核心：每个请求步骤可继续，全部完成终点满足目标；有相反回应与成功后须调整的机制见证。 | Given a transition relation, finite histories compose through a shared reached configuration; predicates express invariance, possibility and universal endpoint properties, with explicit local conditions for faithful abstraction. A logic pilot proves contraction admissible in a resource calculus exactly when duplication is reachable, under a left unit and primitive context compatibility; finite provision has a sharp paid-replacement bound. A finite prefix-sensitive obligation extends the same core: every requested step can continue and all completed endpoints meet the target, with mechanisms for opposite responses and adjustment after success. | 逻辑、配置／事件域及变化关系明确给定，未由此导出全部规律或伦理方向。完整说明附六模块61项空依赖审计，其中核心18项、新教学定理12项；可能性、无执行时的空真与实际进展分别保留。旧回执仍可查。 新38项定理／65项总审计（51空），含顺序复用不保证重叠、上下文干扰与完整补给包不可复制的反例。形成的是即时就绪；任意有限准备已计入可达性。未导出元逻辑或确立前沿新颖性；共享上下文、及时性与忠实抽象待继续比较。 新11项定理继承39项审计；50项中44空、6仅标准依赖。终点正确可遗漏中断；实际调度、物理时间与目标伦理根据另列。<br>Logic, configuration/event domains and dynamics remain explicit inputs; this does not derive every law or ethical direction. The exposition checks six modules with 61 empty dependency audits, including 18 core audits and 12 new pedagogical theorems; possibility, vacuity and actual progress remain distinct. The earlier receipt is retained. New pilot: 38 theorems / 65 total audits (51 empty), retaining serial/overlap, contextual interference and funded-package duplication boundaries. Immediate readiness forms; unrestricted reachability already includes preparation. Metalogic and novelty are not established; shared contexts, timeliness and faithful abstraction remain for comparison. Eleven new theorems plus 39 inherited audits; 44 of 50 reports empty, six standard only. Correct endpoints can omit interruption; scheduling, physical time and ethical target warrant remain separate. | [核心源码 / Core source](../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean)<br>[同次导入闭包回执 / Recorded import-closure receipt](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/situated-continuation-verification.json)<br>[完整数学核心说明 / Full mathematical core account](../unified-2026-10-05/MATHEMATICAL-CORE.md)<br>[谓词与预测例证源码 / Predication and prediction companion](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/CorePredication.lean)<br>[证明对应与核验 / Proof correspondence and verification](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-CORE-DOCUMENT-RECORD.md)<br>[生成逻辑当前说明 / Generated-logic account](../unified-2026-10-05/GENERATED-LOGIC.md)<br>[来源、证明与反审 / Sources, proof and counterreview](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-LOGIC-INTEGRATION.md)<br>[原话与继续 / Question and continuation](../../../sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md)<br>[收缩判据与演算 / Criterion and calculus](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedContraction.lean)<br>[机制与反例 / Mechanisms and controls](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContractionMechanisms.lean)<br>[本轮冻结回执 / Frozen pilot receipt](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/generated-contraction-checks/20261008T101759.536385Z/receipt.json)<br>[有限继续与相反回应 / Finite continuation and contextual response](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContextualWisdom.lean)<br>[本轮检查回执 / Current check receipt](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/contextual-wisdom-verification.json)<br>[对应与反审 / Correspondence and counterreview](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md) |"
+    }
+  },
+  "other_table_lines_unchanged": true,
+  "reviewed_owned_sources": [
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-PROTOCOL.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-SOURCES.md",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContextualWisdom.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_contextual_wisdom.py",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/contextual-wisdom-verification.json",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/contextual-wisdom-checks/20261008T103919.364903Z/receipt.json",
+    "sources/15-codex-theory-conversations/2026-10-08-math-core-and-historical-wisdom.md"
+  ],
+  "owned_discovery_added": [
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-PROTOCOL.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-SOURCES.md"
+  ],
+  "source_review_scope": "Only newly authored/read sources; shared-file source changes remain pending with other concurrent changes."
+}

@@ -1,0 +1,17 @@
+{
+  "checked_at_utc": "2026-10-08T12:12:36.561456+00:00",
+  "passed": true,
+  "errors": [],
+  "mapped_chats": 44,
+  "families": 14,
+  "local_map_links_checked": 182,
+  "inventory_paths_checked": 4115,
+  "live_active_sources_changed_after_capture": [],
+  "semantics": "Snapshot documentary checks, not theorem validity, whole-repository freshness or independent scientific review.",
+  "input_sha256": {
+    "theories/shengsheng-buxi-generative-existence/results/data/session-results.json": "d4f1cbb3f3e601884422658f587ce6946d444299a2e57953d6e300775fc438fd",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-OUTCOME-SNAPSHOT.json": "b068868640057777514212ae1f988f0d7cc55ba6c815c7cacaafa92ff2a83692",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-PROOF-OVERLAP.json": "3869d5f10d267c8e2a153d8ccc5fb85bdf48a5d5917ecd5cb176d07217be45e7",
+    "theories/shengsheng-buxi-generative-existence/results/SESSION-RESULTS.md": "4c2033fc4f0d05c8e69d3dfdc37ee3c3029b4a4348c5cca32e965f9bd2235a9e"
+  }
+}

@@ -1,0 +1,61 @@
+'AssemblyDerivedSelection.Local' does not depend on any axioms
+'AssemblyDerivedSelection.attempt' does not depend on any axioms
+'AssemblyDerivedSelection.rewrite' does not depend on any axioms
+'AssemblyDerivedSelection.attempt_accounts' depends on axioms: [propext, Quot.sound]
+'AssemblyDerivedSelection.rewrite_accounts' depends on axioms: [propext, Quot.sound]
+'AssemblyDerivedSelection.realize' does not depend on any axioms
+'AssemblyDerivedSelection.successful_attempt_refines_aggregate' depends on axioms: [propext, Quot.sound]
+'AssemblyDerivedSelection.Tree' does not depend on any axioms
+'AssemblyDerivedSelection.tree' does not depend on any axioms
+'AssemblyDerivedSelection.leaves' does not depend on any axioms
+'AssemblyDerivedSelection.develop' does not depend on any axioms
+'AssemblyDerivedSelection.every_leaf_accounts' depends on axioms: [propext, Quot.sound]
+'AssemblyDerivedSelection.average' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.average_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.average_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.organized' depends on axioms: [propext, Quot.sound]
+'AssemblyDerivedSelection.propagules' depends on axioms: [propext, Quot.sound]
+'AssemblyDerivedSelection.Batch' does not depend on any axioms
+'AssemblyDerivedSelection.reproduce' does not depend on any axioms
+'AssemblyDerivedSelection.reproduction_accounts' depends on axioms: [propext, Quot.sound]
+'AssemblyDerivedSelection.all_terminals_can_reproduce' depends on axioms: [propext, Quot.sound]
+'AssemblyDerivedSelection.cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.success' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.outputO' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.outputP' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.tree_expectations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.success_from_tree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.revised_program_expectations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.output_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.output_account' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.outputP_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.success_cost_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.success_complement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.cost_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.success_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.joint_output_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.joint_output_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.cost_increment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.success_increment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.outputO_increment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.selectionSurplus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.kernel_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.derived_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.induced_kernel_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.assembled_growth_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.selection_increment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.beneficial_extra_attempt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.resident_stage_balance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.adjacent_rule_invasion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.last_attempt_tradeoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.resident_and_gaining_revision' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.effectiveReturn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.effective_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.probability_is_not_descendant_fraction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AssemblyDerivedSelection.support_exhaustion_reverses_gain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AssemblyDerivedSelection.naive_averaging_changes_growth_sign' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

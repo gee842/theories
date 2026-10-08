@@ -1,0 +1,56 @@
+'Generative.NormativeActivity.Receipt' does not depend on any axioms
+'Generative.NormativeActivity.State' does not depend on any axioms
+'Generative.NormativeActivity.target' does not depend on any axioms
+'Generative.NormativeActivity.sample' does not depend on any axioms
+'Generative.NormativeActivity.memoryAnswer' does not depend on any axioms
+'Generative.NormativeActivity.inspect' does not depend on any axioms
+'Generative.NormativeActivity.Event' does not depend on any axioms
+'Generative.NormativeActivity.step' does not depend on any axioms
+'Generative.NormativeActivity.run' does not depend on any axioms
+'Generative.NormativeActivity.view' does not depend on any axioms
+'Generative.NormativeActivity.ClosedLocal' depends on axioms: [propext]
+'Generative.NormativeActivity.ReceiptSound' does not depend on any axioms
+'Generative.NormativeActivity.ClosedDomain' does not depend on any axioms
+'Generative.NormativeActivity.CurrentCorrect' does not depend on any axioms
+'Generative.NormativeActivity.initial' does not depend on any axioms
+'Generative.NormativeActivity.learned' does not depend on any axioms
+'Generative.NormativeActivity.settled' does not depend on any axioms
+'Generative.NormativeActivity.changed' does not depend on any axioms
+'Generative.NormativeActivity.run_append' does not depend on any axioms
+'Generative.NormativeActivity.exact_inspection' depends on axioms: [propext, Quot.sound]
+'Generative.NormativeActivity.closed_inspection' depends on axioms: [propext]
+'Generative.NormativeActivity.exhausted_inspection' depends on axioms: [propext]
+'Generative.NormativeActivity.fresh_uptake_correct' depends on axioms: [propext]
+'Generative.NormativeActivity.step_preserves_receipt_sound' does not depend on any axioms
+'Generative.NormativeActivity.history_preserves_receipt_sound' does not depend on any axioms
+'Generative.NormativeActivity.closed_local_preserves' depends on axioms: [propext]
+'Generative.NormativeActivity.closed_local_view_congr' depends on axioms: [propext]
+'Generative.NormativeActivity.closed_history_preserves' depends on axioms: [propext]
+'Generative.NormativeActivity.closed_history_view_congr' depends on axioms: [propext]
+'Generative.NormativeActivity.learned_without_production' does not depend on any axioms
+'Generative.NormativeActivity.historical_truth_present_error' depends on axioms: [propext]
+'Generative.NormativeActivity.retained_distinction_does_not_select_production' does not depend on any axioms
+'Generative.NormativeActivity.same_production_can_have_different_judgment' does not depend on any axioms
+'Generative.NormativeActivity.reachable_closed_disagreement' does not depend on any axioms
+'Generative.NormativeActivity.closed_domain_not_resolving' does not depend on any axioms
+'Generative.NormativeActivity.sound_closed_answer_abstains' does not depend on any axioms
+'Generative.NormativeActivity.closed_continuations_remain_unresolved' depends on axioms: [propext]
+'Generative.NormativeActivity.reopening_and_inspection_repair' does not depend on any axioms
+'Generative.NormativeActivity.reopening_without_inspection_does_not_repair' does not depend on any axioms
+'Generative.NormativeActivity.exhausted_reopening_does_not_repair' does not depend on any axioms
+'Generative.NormativeActivity.suspension_retains_relation_and_record' does not depend on any axioms
+'Generative.NormativeActivity.Reachable' does not depend on any axioms
+'Generative.NormativeActivity.ReachableClosed' does not depend on any axioms
+'Generative.NormativeActivity.reachable_continuation' does not depend on any axioms
+'Generative.NormativeActivity.witnesses_reachable_closed' does not depend on any axioms
+'Generative.NormativeActivity.exhausted_case_reachable' does not depend on any axioms
+'Generative.NormativeActivity.fresh_record_can_coexist_with_stale_judgment' does not depend on any axioms
+'Generative.NormativeActivity.reachable_closed_not_resolving' does not depend on any axioms
+'Generative.NormativeActivity.sound_on_reachable_closed_abstains' does not depend on any axioms
+'Generative.NormativeActivity.AcquiredAlong' does not depend on any axioms
+'Generative.NormativeActivity.step_receipt_origin' depends on axioms: [propext]
+'Generative.NormativeActivity.retained_receipt_has_origin' depends on axioms: [propext]
+'Generative.NormativeActivity.from_initial_receipt_is_acquired' depends on axioms: [propext]
+'Generative.NormativeActivity.adapt' does not depend on any axioms
+'Generative.NormativeActivity.adaptive_closed_invariant' depends on axioms: [propext]
+'Generative.NormativeActivity.adaptive_closed_cannot_resolve' depends on axioms: [propext]

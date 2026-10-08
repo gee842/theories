@@ -1,0 +1,52 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-structure-po1v0c19/ExplanatoryUniqueness.lean:117:34: error: Function expected at
+  c
+but this term has type
+  Bool
+
+Note: Expected a function because this term is being applied to the argument
+  ·
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-structure-po1v0c19/ExplanatoryUniqueness.lean:117:28: error: Tactic `cases` failed: major premise type is not an inductive type
+  ?m.90
+
+Explanation: the `cases` tactic is for constructor-based reasoning as well as for applying custom cases principles with a 'using' clause or a registered '@[cases_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.
+
+case mk.mk.false
+b c d : Bool
+h : SameAnswers firstTarget (false, b) (c, d)
+he : firstTarget (false, b) () ↔ firstTarget (c, d) ()
+x✝ : ?m.90
+⊢ shortPresentation.encode (false, b) = shortPresentation.encode (c, d)
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-structure-po1v0c19/ExplanatoryUniqueness.lean:117:34: error: Function expected at
+  c
+but this term has type
+  Bool
+
+Note: Expected a function because this term is being applied to the argument
+  ·
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-structure-po1v0c19/ExplanatoryUniqueness.lean:117:28: error: Tactic `cases` failed: major premise type is not an inductive type
+  ?m.90
+
+Explanation: the `cases` tactic is for constructor-based reasoning as well as for applying custom cases principles with a 'using' clause or a registered '@[cases_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.
+
+case mk.mk.true
+b c d : Bool
+h : SameAnswers firstTarget (true, b) (c, d)
+he : firstTarget (true, b) () ↔ firstTarget (c, d) ()
+x✝ : ?m.90
+⊢ shortPresentation.encode (true, b) = shortPresentation.encode (c, d)
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-structure-po1v0c19/ExplanatoryUniqueness.lean:119:19: error: unexpected token 'have'; expected command
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-structure-po1v0c19/ExplanatoryUniqueness.lean:139:81: error: unexpected token 'open'; expected '#guard_msgs', 'abbrev', 'add_decl_doc', 'axiom', 'binder_predicate', 'builtin_dsimproc', 'builtin_dsimproc_decl', 'builtin_grind_propagator', 'builtin_initialize', 'builtin_simproc', 'builtin_simproc_decl', 'class', 'coinductive', 'declare_simp_like_tactic', 'declare_syntax_cat', 'def', 'dsimproc', 'dsimproc_decl', 'elab', 'elab_rules', 'example', 'grind_propagator', 'inductive', 'infix', 'infixl', 'infixr', 'initialize', 'instance', 'macro', 'macro_rules', 'notation', 'opaque', 'postfix', 'prefix', 'recommended_spelling', 'register_error_explanation', 'register_tactic_tag', 'register_try?_tactic', 'simproc', 'simproc_decl', 'structure', 'syntax', 'tactic_extension', 'theorem' or 'unif_hint'
+'Generative.ExplanatoryUniqueness.equal_codes_same_answers' does not depend on any axioms
+'Generative.ExplanatoryUniqueness.reduced_exact_kernel' does not depend on any axioms
+'Generative.ExplanatoryUniqueness.reduced_presentations_same_kernel' does not depend on any axioms
+'Generative.ExplanatoryUniqueness.matches_total_on_used' does not depend on any axioms
+'Generative.ExplanatoryUniqueness.matches_functional' does not depend on any axioms
+'Generative.ExplanatoryUniqueness.matches_inverse_functional' does not depend on any axioms
+'Generative.ExplanatoryUniqueness.matches_iff_equal_answers' does not depend on any axioms
+'Generative.ExplanatoryUniqueness.unique_matching' does not depend on any axioms
+'Generative.ExplanatoryUniqueness.short_exact' does not depend on any axioms
+'Generative.ExplanatoryUniqueness.full_exact' does not depend on any axioms
+'Generative.ExplanatoryUniqueness.short_reduced' depends on axioms: [sorryAx]
+'Generative.ExplanatoryUniqueness.full_not_reduced' does not depend on any axioms
+'Generative.ExplanatoryUniqueness.first_summary_cannot_answer_both' does not depend on any axioms
+'Generative.ExplanatoryUniqueness.balance_does_not_determine_coverability' depends on axioms: [propext]

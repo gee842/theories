@@ -1,0 +1,36 @@
+'Generative.ExplanatoryComposition.context_refl' does not depend on any axioms
+'Generative.ExplanatoryComposition.context_symm' does not depend on any axioms
+'Generative.ExplanatoryComposition.context_trans' does not depend on any axioms
+'Generative.ExplanatoryComposition.context_agrees_here' depends on axioms: [propext]
+'Generative.ExplanatoryComposition.context_append' depends on axioms: [propext]
+'Generative.ExplanatoryComposition.context_stable' depends on axioms: [propext]
+'Generative.ExplanatoryComposition.stable_relation_refines_context' does not depend on any axioms
+'Generative.ExplanatoryComposition.encoded_append_congr' depends on axioms: [propext]
+'Generative.ExplanatoryComposition.compose_encoded_iff' depends on axioms: [propext]
+'Generative.ExplanatoryComposition.compose_total' does not depend on any axioms
+'Generative.ExplanatoryComposition.compose_functional' depends on axioms: [propext]
+'Generative.ExplanatoryComposition.compose_associative' depends on axioms: [propext]
+'Generative.ExplanatoryComposition.compose_left_identity' depends on axioms: [propext]
+'Generative.ExplanatoryComposition.compose_right_identity' depends on axioms: [propext]
+'Generative.ExplanatoryComposition.matching_composes' does not depend on any axioms
+'Generative.ExplanatoryComposition.matches_swap' does not depend on any axioms
+'Generative.ExplanatoryComposition.matching_preserves_composition' does not depend on any axioms
+'Generative.ExplanatoryComposition.matching_preserves_identity' does not depend on any axioms
+'Generative.ExplanatoryComposition.structural_unique_correspondence' does not depend on any axioms
+'Generative.ExplanatoryComposition.canonical_exact' does not depend on any axioms
+'Generative.ExplanatoryComposition.canonical_reduced' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryComposition.reduced_presentation_exists' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryComposition.canonical_factorization' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryComposition.suffix_tests_can_miss_left_context' does not depend on any axioms
+'Generative.ExplanatoryComposition.current_answer_can_miss_composition' does not depend on any axioms
+'Generative.ExplanatoryComposition.classify_representative' does not depend on any axioms
+'Generative.ExplanatoryComposition.classify_append' depends on axioms: [propext]
+'Generative.ExplanatoryComposition.accepted_classify' does not depend on any axioms
+'Generative.ExplanatoryComposition.budget_exact' depends on axioms: [propext]
+'Generative.ExplanatoryComposition.bucket_separated' depends on axioms: [propext]
+'Generative.ExplanatoryComposition.budget_reduced' depends on axioms: [propext]
+'Generative.ExplanatoryComposition.every_bucket_used' depends on axioms: [propext]
+'Generative.ExplanatoryComposition.budget_composition' depends on axioms: [propext]
+'Generative.ExplanatoryComposition.any_exact_summary_retains_buckets' depends on axioms: [propext]
+'Generative.ExplanatoryComposition.three_distinctions_required' depends on axioms: [propext]
+'Generative.ExplanatoryComposition.budget_kernel_characterization' depends on axioms: [propext]

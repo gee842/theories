@@ -1,0 +1,13 @@
+'Generative.FormationSequence.TransitiveComparison' does not depend on any axioms
+'Generative.FormationSequence.whole_comparisons_favor_formation' does not depend on any axioms
+'Generative.FormationSequence.transport_supports_initial_comparison' does not depend on any axioms
+'Generative.FormationSequence.faithful_redescription_preserves_result' does not depend on any axioms
+'Generative.FormationSequence.History' does not depend on any axioms
+'Generative.FormationSequence.incumbentGain' does not depend on any axioms
+'Generative.FormationSequence.newLiving' does not depend on any axioms
+'Generative.FormationSequence.initialScore' does not depend on any axioms
+'Generative.FormationSequence.laterScore' does not depend on any axioms
+'Generative.FormationSequence.ScoredAbove' does not depend on any axioms
+'Generative.FormationSequence.score_comparison_transitive' does not depend on any axioms
+'Generative.FormationSequence.stages_can_favor_without_initial_favor' does not depend on any axioms
+'Generative.FormationSequence.diagnostic_fails_transport' does not depend on any axioms

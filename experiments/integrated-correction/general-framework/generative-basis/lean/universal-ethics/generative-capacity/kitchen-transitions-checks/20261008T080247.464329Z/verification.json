@@ -1,0 +1,23 @@
+{
+  "status": "failed",
+  "utc": "20261008T080247.464329Z",
+  "scope": "Seven marginal-count implications for a fixed paired cohort. No causal, measurement-validity or ethical premise is certified. No inherited scientific module is recompiled.",
+  "retained_run": "kitchen-transitions-checks/20261008T080247.464329Z",
+  "source_sha256": {
+    "KitchenTransitions": "5a45f6cf6098ea5637b4c9b59bcfa965d0195d028cdf11b2e4afba6a084111dd"
+  },
+  "checker_sha256": {
+    "check_kitchen_transitions.py": "58bbb13b79f2f2f01277e11280e549c657f3acfe04068c480a5043c8c73f2be7",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "KitchenTransitions.lean:57:2: error: failed to synthesize\n  Decidable (Published 14 0 5 13)\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\nKitchenTransitions.lean:60:2: error: failed to synthesize\n  Decidable (Published 1 13 18 0)\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\n",
+  "artifact_sha256": {
+    "KitchenTransitions.lean": "5a45f6cf6098ea5637b4c9b59bcfa965d0195d028cdf11b2e4afba6a084111dd",
+    "KitchenTransitions.log": "3587d9d631f32359b42a03396528a567d4778c11298bc5c712e9c2f71bb37982",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_kitchen_transitions.py": "58bbb13b79f2f2f01277e11280e549c657f3acfe04068c480a5043c8c73f2be7",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

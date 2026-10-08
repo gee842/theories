@@ -1,0 +1,482 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-10-07T23:14:28.332615+00:00",
+  "scope": "This round: frozen proof evidence, owned documentation fragments and C30/F22. No proof rerun or global index freshness claim.",
+  "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/formed-effective-law-checks/20261007T231137.825236Z/receipt.json",
+  "receipt_sha256": "dfc050b7cabc3862db0a9cbc520ed3e611f54539141b5d48e332b10c4fe4a061",
+  "pointer_sha256": "110095bc08cddfb5103ff24203be4c0710d155ccee9da351ca17d708cfc82d4e",
+  "counts": {
+    "inherited": {
+      "modules": 5,
+      "declarations": 192,
+      "theorems": 125,
+      "empty_audit_dependencies": 150,
+      "standard_dependency_audits": 42
+    },
+    "new": {
+      "modules": 1,
+      "declarations": 18,
+      "theorems": 14,
+      "empty_audit_dependencies": 18,
+      "standard_dependency_audits": 0
+    }
+  },
+  "all_new_audits_empty": true,
+  "inherited_audit_maps_unchanged": true,
+  "baselines": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-composition-checks/20261007T223124.386181Z/receipt.json",
+      "sha256": "ee6c7cbe004afe3e0f6489948400488212a8f04b5267af98b8625ea786456ebd"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/formed-grounds-checks/20261007T221235.147749Z/verification.json",
+      "sha256": "109f3cb54fbeba8e1b5e3ddd1eaf97fe5ae8045c3c2c17c12cb97dfd1c123a59"
+    }
+  ],
+  "retained_artifacts_checked": 39,
+  "source_and_log_bindings": [
+    {
+      "module": "GenerativeCore",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "new": false,
+      "audits": 18,
+      "audit_log_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257"
+    },
+    {
+      "module": "KnowledgeCorrespondence",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/KnowledgeCorrespondence.lean",
+      "sha256": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+      "new": false,
+      "audits": 34,
+      "audit_log_sha256": "c377f105cfd06f0e0910406603df50a3a522626e83669b2e8308f8018e2c7f21"
+    },
+    {
+      "module": "NormativeActivity",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/NormativeActivity.lean",
+      "sha256": "15105e2caa43fb9b00f228343be16a7d729ff5a3da10c506d134d07417ae622c",
+      "new": false,
+      "audits": 56,
+      "audit_log_sha256": "a46082bf5b466328452aaad71b64bafe72fd079a2f3c95b0564ab2f5e80bfa61"
+    },
+    {
+      "module": "StandardsBridge",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/StandardsBridge.lean",
+      "sha256": "f061dbc44da5cdf11ac5ff79b3f89558c7e177b23b9f121c1048c16ed353a42a",
+      "new": false,
+      "audits": 39,
+      "audit_log_sha256": "0a5fa190c7e00d7ebf6b96fb1bb80a052e47297c9df86f6667131b30dc8a6566"
+    },
+    {
+      "module": "FormedGrounds",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormedGrounds.lean",
+      "sha256": "15764b3258f843dc967fdfabfd17cd5f47a6eb740a4aa5a3465ceae61dea17ba",
+      "new": false,
+      "audits": 45,
+      "audit_log_sha256": "fd611ab17a7183bedcf5ac06a798925b8212f43ef681fabcc0abfb91e8c4df3c"
+    },
+    {
+      "module": "FormedEffectiveLaw",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/FormedEffectiveLaw.lean",
+      "sha256": "21284b216aff9e15bc2378b958245db37a8ee6da0623def59f5fc6b4c085df89",
+      "new": true,
+      "audits": 18,
+      "audit_log_sha256": "4524387890ad30c5398e7af03c2c5f536434ee79461f798ebfb2b112da520991"
+    }
+  ],
+  "reviewed_source_hashes_exposed": {
+    "FormedEffectiveLaw": "21284b216aff9e15bc2378b958245db37a8ee6da0623def59f5fc6b4c085df89"
+  },
+  "review_binds_final_integration_and_evidence": true,
+  "evidence_table_bindings": [
+    {
+      "path": "sources/tclab-benchmark/CACE_2020_source.zip",
+      "sha256": "4cb422489a5396e8e4d156fc7b00f89e4bd7cb9a83561aacbbeee046d6c182ed"
+    },
+    {
+      "path": "sources/tclab-benchmark/extracted/2_PID/0_initial_PID/0_initial_PID.py",
+      "sha256": "feafc3377f48f7550670dd845490dd912f276a028b92182e83cbacd264f3ad2a"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/tclab-results.json",
+      "sha256": "1a1d6022ec5d06fb7f18a4fc966277d52a9d1144ccb44e4f69001ebe53ad67d7"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/measured-feedback-review/numerical-verification.json",
+      "sha256": "778ac4e8c9f9d69d6443fcfc16455705c251597400e302142e3095971d6f6c23"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/measured-feedback-review/verification.json",
+      "sha256": "dfc496fdfebcd9d4da77b4b994f4694699fa9d51a90f63e7b433d5a29e8958e9"
+    },
+    {
+      "path": "sources/evolutionary-selection/koza-2011/article.html",
+      "sha256": "171f97eba43544299ff2f0736f58fabd26a01d1bebbc22fc18300dd7b68cb263"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-conditions/verification.json",
+      "sha256": "d43bd6cab74989155dbcf993ad9713708f2fd12c834ff008fe9baaddac32ebea"
+    }
+  ],
+  "review_binds_receipt_hash": true,
+  "owned_fragments": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "fragment_sha256": "4c9a441639b8a1abd834d0e234e8aa639abaf3dd54b99937737f1d15ba724729",
+      "present": true
+    },
+    {
+      "path": "RESEARCH.md",
+      "fragment_sha256": "e4d091042ac2c4f4a46c759da050d90ad64c66f97ca887fbf86ee93b482f16d0",
+      "present": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "fragment_sha256": "a8aff4539f584978aa7e6927fe41bf5b7540a50e7485bbcbd0d06934faac56a9",
+      "present": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "fragment_sha256": "38a18e96d46c743af28e3065e7ad9c62334844ce2d3832279368d6dc7bf8664a",
+      "present": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "fragment_sha256": "7c228ca89ae112bac0fb64091647bbd61ea6ad3939425420ead78771f77744c8",
+      "present": true
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "fragment_sha256": "dd98c115deb24af61f0eae24f3ee2b92deda3d6ee2b0f00d86843638355dcb9f",
+      "present": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "fragment_sha256": "fbf38723bbb757afd67bd62ee97b1b754047145d073674dfb4d7d9b75f0ed8c7",
+      "present": true
+    }
+  ],
+  "owned_rows": [
+    "C30",
+    "F22"
+  ],
+  "owned_rows_and_rendering_match": true,
+  "other_rows_preservation_attested_by_edit_manifest": true,
+  "local_links_checked": 72,
+  "links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-INTEGRATION.md",
+      "reference": "UNFOLDING-PRESERVATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/FormedEffectiveLaw.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-INTEGRATION.md",
+      "reference": "LAW-CORRESPONDENCE-EVIDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-INTEGRATION.md",
+      "reference": "MECHANISM-STATUS-RECONCILIATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-INTEGRATION.md",
+      "reference": "PROCESS-LAW-DERIVATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/formed-effective-law-checks/20261007T231137.825236Z/receipt.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_formed_effective_law.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-INTEGRATION.md",
+      "reference": "LAW-CORRESPONDENCE-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-INTEGRATION.md",
+      "reference": "LAW-CORRESPONDENCE-CHECKS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-REVIEW.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md#10-the-foundations-actual-content-fixes-its-completion-test"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/FormedEffectiveLaw.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-REVIEW.md",
+      "reference": "LAW-CORRESPONDENCE-EVIDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-REVIEW.md",
+      "reference": "LAW-CORRESPONDENCE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/formed-effective-law-checks/20261007T231137.825236Z/receipt.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-REVIEW.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-REVIEW.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-REVIEW.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-REVIEW.md",
+      "reference": "UNFOLDING-PRESERVATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-REVIEW.md",
+      "reference": "EXPLANATORY-JOINING-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormedGrounds.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-REVIEW.md",
+      "reference": "INQUIRY-JUDGMENT-EMPIRICAL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/tclab-checks.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-REVIEW.md",
+      "reference": "TUNING-CORRESPONDENCE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-REVIEW.md",
+      "reference": "MAT-CONDITIONS-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-REVIEW.md",
+      "reference": "../../../../sources/evolutionary-selection/koza-2011/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md",
+      "reference": "UNFOLDING-PRESERVATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md",
+      "reference": "../../../../sources/tclab-benchmark/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md",
+      "reference": "../../../../sources/tclab-benchmark/extracted/2_PID/0_initial_PID/0_initial_PID.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md",
+      "reference": "MEASURED-FEEDBACK-REVIEW.md#physical-provenance-and-what-replay-establishes"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md",
+      "reference": "FEEDBACK-MEMORY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md",
+      "reference": "FEEDBACK-MEMORY-REVIEW.md#soundness-of-the-branch-dependent-enclosure"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md",
+      "reference": "TUNING-CORRESPONDENCE-REVIEW.md#formal-content-and-its-correspondence"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md",
+      "reference": "TIMED-FEEDBACK-REVIEW.md#timing-and-row-provenance"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md",
+      "reference": "THREE-CONNECTIONS-COMPLETION-AUDIT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md",
+      "reference": "../../../../sources/evolutionary-selection/koza-2011/article.html"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md",
+      "reference": "../../../../sources/evolutionary-selection/koza-2011/manifest.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-conditions/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md",
+      "reference": "MAT-CONDITIONS-INTEGRATION.md#activity-forms-differentiated-conditions"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md",
+      "reference": "../../../../sources/tclab-benchmark/PROVENANCE.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md",
+      "reference": "development/measured-feedback-review/numerical-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-conditions/verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md",
+      "reference": "../../../../sources/tclab-benchmark/CACE_2020_source.zip"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md",
+      "reference": "../../../../sources/tclab-benchmark/extracted/2_PID/0_initial_PID/0_initial_PID.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/tclab-results.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md",
+      "reference": "development/measured-feedback-review/numerical-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md",
+      "reference": "development/measured-feedback-review/verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md",
+      "reference": "../../../../sources/evolutionary-selection/koza-2011/article.html"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-conditions/verification.json"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-REVIEW.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "reference": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-INTEGRATION.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "reference": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "reference": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-REVIEW.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-REVIEW.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "LAW-CORRESPONDENCE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "LAW-CORRESPONDENCE-EVIDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "LAW-CORRESPONDENCE-REVIEW.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "reference": "../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-INTEGRATION.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "reference": "../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "reference": "../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "LAW-CORRESPONDENCE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "LAW-CORRESPONDENCE-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "LAW-CORRESPONDENCE-EVIDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "LAW-CORRESPONDENCE-INDEX-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "LAW-CORRESPONDENCE-CHECKS.json"
+    }
+  ],
+  "concurrent_global_changes_not_certified": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md",
+      "sources/15-codex-theory-conversations/2026-10-08-relations-across-scales.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "theories/shengsheng-buxi-generative-existence/README.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-REVISION-CONTINUATION-PROTOCOL.md"
+    ],
+    "removed_pages": []
+  },
+  "sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-INTEGRATION.md": "26b7d509399b619e6d3d4857479168b3fdf42f64289ec7c923aa1c883479ee00",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-REVIEW.md": "bd2e1847fee2c1b9edcc5d69bdf9d3a66179d9b9e0b934daaddc864f365e6719",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-EVIDENCE.md": "d1bcb335d9090057791cc3f9a147e44c1ff789dbb09c3e3e2a9f35ed4835c5b8",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-CHECK.py": "eeb5e41c6ea780c44fe5c29f9d549d49f11d4fe04c3a9e93969602ae7b9a4866",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LAW-CORRESPONDENCE-INDEX-EDITS.json": "5ef9e6e221dd43bc2bf6df7448981e011e3771f35daa9f6d6398853840335bce",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/build_generative_chain.py": "200321a64e3d7e9432f97cb4122f39b6217fba17567b3b276e312f144e0ea403"
+  }
+}

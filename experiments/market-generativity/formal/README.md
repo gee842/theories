@@ -60,3 +60,51 @@ python3 experiments/market-generativity/formal/check.py
 The checker uses the already installed Lean 4.29.1 binary in the normal elan toolchain location. `MARKET_LEAN` may point to that version elsewhere. It freezes the source bytes, compiles in a fresh temporary directory with `Std` as its only import, rejects warnings and missing/excess dependency audits, records hashes, and removes generated objects. It does not install a compiler or dependencies. Running plain `lean` from another repository directory may select a different toolchain; the checker avoids that ambiguity.
 
 Environment provenance: an initial plain version probe during development caused elan to install the repository-selected Lean 4.34.1. It was not used for these checks; all saved verification pins 4.29.1. The additional global toolchain was left in place to avoid interfering with other concurrent work.
+
+<a id="checked-regime-boundary"></a>
+## Checked regime boundary, 8 October 2026
+
+[RegimeBoundary.lean](RegimeBoundary.lean) extends the actual imported market law in response to Ren's request for degeneration boundaries and transition conditions. It adds **19 checked theorems / 27 declaration audits**; **39 imported theorem audits** are separately rebuilt. Run the linked [check_boundary.py](check_boundary.py) with Python from the repository root. The [receipt](boundary-verification.json), [frozen sources and audit](boundary-verification/BoundaryAudit.lean) and logs preserve the checked dependency closure.
+
+Write M = alpha*(1-theta) - beta*lambda*theta. For rational parameters with alpha>0, beta≥0, alpha+beta≤1, 0≤lambda≤1 and 0<theta<1:
+
+| Theorem | Exact result |
+|---|---|
+| exact_floor_boundary | With correction executed and zero adverse error, every q in [theta,1] and w in [0,lambda] retains q'≥theta iff M≥0. |
+| exact_robust_floor_boundary | For every error in [0,epsilon], epsilon≥0, the same uniform protection holds iff M≥epsilon. |
+| exact_low_certificate_boundary | Positive-width certificate bounds 0<xd<1, 0≤qd<theta, 0≤wd≤1, wd≤lambda*(1-xd), alpha*(1-qd)≤beta*wd*qd exist iff M<0. This algebraic equivalence does not itself require alpha+beta≤1; actual closure does. |
+| low_box_step, low_box_all_times | Under the declared rate/domain conditions, the paid, authorized operating projection keeps 0≤x≤xd, 0≤q≤qd, wd≤w≤lambda at every natural-number time. |
+| strict_loss_of_renewing_share | For positive eta, fine and x in that region, x'<x. No limit theorem follows merely from this strict decrease. |
+| gap_correspondence | The normalized gap fine*(q-theta) is exactly the existing profit gap when fine*theta=cost-lobby. |
+| example_parameter_boundary | In the displayed one-parameter family, M≥0 iff beta≤5/12, and M=0 iff beta=5/12. |
+| Three parameter witnesses | With alpha=1/4, lambda=1, theta=3/8, beta values 1/4, 5/12 and 1/2 give margins 1/16, 0 and -1/32. The last has the old low-box certificate (xd,qd,wd)=(1/10,9/25,9/10). |
+
+Additional closure conditions are eta,fine≥0, eta*fine*theta≤1 and 0≤mu≤1. Strict selection and active feedback interpretations require positive rates, although the closure theorem allows zero rates. The original example simultaneously retains its favorable invariant rectangle: negative M does not imply every initial state degenerates.
+
+The projection does not supply funds, permission or support. It applies to actual operating histories only while those execution conditions remain satisfied; it does not say an economy continues after essential support fails. Lambda bounds the influence target, and the theorem additionally requires current w≤lambda: inherited influence can violate that current-state premise. Error, initial states below theta, entry from zero, excluded-recipient harms and changed causal laws must retain their separate treatment.
+
+This migrates and strengthens the old low-rectangle closure argument, not the old real-valued convergence or finite-support-failure arguments. The certificate is an invariant region, not a proved strict attractor or a complete basin boundary. No spectral bifurcation, critical exponent, hysteresis loop, universal rate threshold, ethical axiom or market calibration is proved. The [integrated interpretation and counterreview](../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#degeneration-boundary-and-transition) states empirical and normative correspondence separately.
+
+<a id="checked-local-attraction"></a>
+## Checked local attraction and coupled support, 8 October 2026
+
+The later [RegimeAttraction.lean](RegimeAttraction.lean) completes a narrower, explicitly rational attraction result left open by the preceding boundary study. **38 new theorems / 52 declaration audits** pass; **58 inherited theorems / 66 audits** are rebuilt and separately recorded. Run [check_attraction.py](check_attraction.py) with Python; [the receipt](attraction-verification.json) and [frozen audit](attraction-verification/AttractionAudit.lean) bind all three actual source modules, compiler and logs. No previous real-valued theorem is silently upgraded.
+
+| Checked result | Scope |
+|---|---|
+| fixed_iff_balances, fixed_classification | For the original numerical family with only beta varying over 0<beta≤3/4, every physical fixed state is H=(1,1,0), L=(0,1/(1+4 beta),1), or S=(1−5/(12 beta),3/8,5/(12 beta)). Clipping is shown inactive throughout this physical domain. |
+| middle_physical_iff, middle_fixed, collision_at_boundary | S is physical iff beta≥5/12; it meets L at equality. At beta=1/2, S=(1/6,3/8,5/6). |
+| low_selection_direction | The low fixed state's quality is below the selection threshold iff beta>5/12, and above iff beta<5/12. This is not a complete parameterized stability proof. |
+| high_tube_step/history, high_approaches | At beta=1/2, H's weighted neighborhood contracts by 7/8 per step; every positive rational tolerance is eventually met permanently. The initial radius is at most 1/32. |
+| low_tube_step/history, low_approaches | L's neighborhood contracts by 79/80 per step with the same quantified eventual property. Initial radius is at most 1/48. |
+| upper_cone_step, middle_upper_escape, middle_unstable | Arbitrarily small physical perturbations near S eventually have x>1/4. While still in the stated neighborhood, the positive displacement lower bound grows by at least 81/80 per step. This does not classify every perturbation direction. |
+| coupled_operating_step, coupled_histories | Exact lifting into the old full State includes budget=1, paid correction, zero additional shocks and the original support update, at every operating step. |
+| low_stock_loss, low_guarded_history_fails | For x≤1/48 while C≥5, support loses at least 15/16 per step. Every finite rational initial support leads to finite failure of the original guarded history. |
+| high_tube_supplies_old_safety, high_coupled_history_never_fails | The high neighborhood with C≥5 supplies the already checked safe rectangle, so the actual guarded history never fails. |
+| zero_share_remains_zero | The supplied share law contains no entry route. Changing beta alone does not create renewers from x=0; this is a representation limitation, not real-world irreversibility. |
+
+The two neighborhoods are relative to the physical state domain. With r≥0, H's tube is x∈[1−r,1], q∈[1−8r,1], w∈[0,2r]; L's is x∈[0,r], q∈[1/3−r,1/3+r], w∈[1−2r,1]. The proof scales are mathematical coordinate bounds, not ethical weights or empirical recovery rates. Natural-number bounds prove eventual approach rather than relying on numerical convergence.
+
+The low projection's infinite limit is not an endlessly operating full economy: its essential support fails first. Failure is absorbing under the supplied guard; future replenishment, entry or changed laws would require their own representation. No complete basin surface, all-parameter stability, real-state extension, critical exponent, spectral bifurcation or empirical calibration is claimed.
+
+[The stationary-branch figure](figures/regime-fixed-states.png) marks local behavior only at beta=1/2. [Its program](plot_regime_states.py) uses Matplotlib and creates PNG/SVG plus a [provenance record](figures/regime-fixed-states.json); no simulated history is used. For this run Matplotlib was installed in an isolated temporary environment outside the repository, with no global dependency change. The [theoretical integration and counterreview](../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#attraction-and-support-coupling) distinguishes the actual support relation, normative appraisal and next empirical correspondence.

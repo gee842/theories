@@ -1,0 +1,80 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-32uvc5il/ExplanatoryInquiry.lean:110:2: error: Too many variable names provided at alternative `prepare`: 3 provided, but 2 expected
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-32uvc5il/ExplanatoryInquiry.lean:111:2: error: Too many variable names provided at alternative `readTarget`: 3 provided, but 2 expected
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-32uvc5il/ExplanatoryInquiry.lean:113:2: error: Too many variable names provided at alternative `readReference`: 5 provided, but 4 expected
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-32uvc5il/ExplanatoryInquiry.lean:114:35: error(lean.unknownIdentifier): Unknown identifier `hr`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-32uvc5il/ExplanatoryInquiry.lean:117:2: error: Too many variable names provided at alternative `judge`: 9 provided, but 8 expected
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-32uvc5il/ExplanatoryInquiry.lean:118:36: error: Application type mismatch: The argument
+  ht
+has type
+  s✝.referenceRead = some target
+but is expected to have type
+  s✝.targetRead = some ?m.184
+in the application
+  fresh_pair_decodes h ht
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-32uvc5il/ExplanatoryInquiry.lean:118:45: error(lean.unknownIdentifier): Unknown identifier `er`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-32uvc5il/ExplanatoryInquiry.lean:124:2: error: Too many variable names provided at alternative `gate`: 4 provided, but 3 expected
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-32uvc5il/ExplanatoryInquiry.lean:127:2: error: Too many variable names provided at alternative `reverseChannel`: 1 provided, but 0 expected
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-32uvc5il/ExplanatoryInquiry.lean:171:2: error: Too many variable names provided at alternative `readReference`: 5 provided, but 4 expected
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-32uvc5il/ExplanatoryInquiry.lean:171:40: error(lean.unknownIdentifier): Unknown identifier `hr`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-32uvc5il/ExplanatoryInquiry.lean:171:34: error: Tactic `cases` failed: major premise type is not an inductive type
+  ?m.60
+
+Explanation: the `cases` tactic is for constructor-based reasoning as well as for applying custom cases principles with a 'using' clause or a registered '@[cases_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.
+
+case readReference
+g : GateState
+reversed : Bool
+fuel s : Nat
+n : Bool
+v : (initial g reversed fuel).fuel = s + 1
+hf : (initial g reversed fuel).standard = some n
+x✝ : ?m.60
+⊢ False
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-32uvc5il/ExplanatoryInquiry.lean:177:2: error: Too many variable names provided at alternative `judge`: 9 provided, but 8 expected
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-32uvc5il/ExplanatoryInquiry.lean:213:2: error: Too many variable names provided at alternative `prepare`: 3 provided, but 2 expected
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-32uvc5il/ExplanatoryInquiry.lean:213:29: error(lean.unknownIdentifier): Unknown identifier `hf.symm`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-32uvc5il/ExplanatoryInquiry.lean:214:2: error: Too many variable names provided at alternative `readTarget`: 3 provided, but 2 expected
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-32uvc5il/ExplanatoryInquiry.lean:214:32: error(lean.unknownIdentifier): Unknown identifier `hf.symm`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-32uvc5il/ExplanatoryInquiry.lean:215:2: error: Too many variable names provided at alternative `readReference`: 5 provided, but 4 expected
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-32uvc5il/ExplanatoryInquiry.lean:215:34: error: Type mismatch
+  Eq.symm hf
+has type
+  some n = s✝.standard
+but is expected to have type
+  { gates := s✝.gates, reversed := s✝.reversed, epoch := s✝.epoch, standard := s✝.standard, targetRead := s✝.targetRead,
+          referenceRead := some { epoch := s✝.epoch, bit := referenceSignal s✝ n }, judgment := s✝.judgment,
+          fuel := s }.fuel +
+      eventCost Event.readReference =
+    s✝.fuel
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-32uvc5il/ExplanatoryInquiry.lean:216:2: error: Too many variable names provided at alternative `judge`: 9 provided, but 8 expected
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-32uvc5il/ExplanatoryInquiry.lean:216:39: error: Type mismatch
+  Eq.symm hf
+has type
+  some n = s✝.targetRead
+but is expected to have type
+  { gates := s✝.gates, reversed := s✝.reversed, epoch := s✝.epoch, standard := s✝.standard, targetRead := s✝.targetRead,
+          referenceRead := s✝.referenceRead, judgment := some { epoch := s✝.epoch, bit := n.bit ^^ tr.bit },
+          fuel := s }.fuel +
+      eventCost Event.judge =
+    s✝.fuel
+'Generative.KnowledgeCorrespondence.calibrated_pair_exact' does not depend on any axioms
+'Generative.ExplanatoryInquiry.empty_record_valid' does not depend on any axioms
+'Generative.ExplanatoryInquiry.new_record_valid' does not depend on any axioms
+'Generative.ExplanatoryInquiry.revision_invalidates_old' does not depend on any axioms
+'Generative.ExplanatoryInquiry.standard_is_false' does not depend on any axioms
+'Generative.ExplanatoryInquiry.inherited_pair_decode' does not depend on any axioms
+'Generative.ExplanatoryInquiry.fresh_pair_decodes' does not depend on any axioms
+'Generative.ExplanatoryInquiry.valid_step' depends on axioms: [sorryAx]
+'Generative.ExplanatoryInquiry.valid_trace' depends on axioms: [sorryAx]
+'Generative.ExplanatoryInquiry.initial_valid' does not depend on any axioms
+'Generative.ExplanatoryInquiry.current_judgment_correct' does not depend on any axioms
+'Generative.ExplanatoryInquiry.current_negative_is_evidence' does not depend on any axioms
+'Generative.ExplanatoryInquiry.current_positive_allows_pass' does not depend on any axioms
+'Generative.ExplanatoryInquiry.no_reference_before_preparation' depends on axioms: [sorryAx]
+'Generative.ExplanatoryInquiry.no_judgment_without_readings' does not depend on any axioms
+'Generative.ExplanatoryInquiry.acquisition_realized' does not depend on any axioms
+'Generative.ExplanatoryInquiry.acquired_record_exact' does not depend on any axioms
+'Generative.ExplanatoryInquiry.fuel_step' depends on axioms: [sorryAx]
+'Generative.ExplanatoryInquiry.fuel_trace' depends on axioms: [sorryAx]
+'Generative.ExplanatoryInquiry.acquisition_requires_four' depends on axioms: [sorryAx]
+'Generative.ExplanatoryInquiry.insufficient_fuel_blocks_acquisition' depends on axioms: [sorryAx]

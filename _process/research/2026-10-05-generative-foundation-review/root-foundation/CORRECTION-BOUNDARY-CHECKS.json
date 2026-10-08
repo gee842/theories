@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "scope": "Local proof/model/document bindings; terminal realizability boundary and local reservation protocol, not an independent review",
+  "new_theorems": 34,
+  "new_declaration_audits": 58,
+  "inherited_repository_audits": 0,
+  "document_links": 9,
+  "delayed_test_cases": 63504,
+  "rational_mixtures": 561,
+  "threaded_trials": 60,
+  "scoped_rows": [
+    "M23",
+    "F29"
+  ],
+  "document_sha256": "c311c6db74725b93415dc0c5bcea20d7950042ff85fd4bbc68bba5cb6e4e2493",
+  "shared_index_pending": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-ARGUMENT.md",
+      "sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-DEVELOPMENTAL-MEMORY-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-CHANGING-SUPPORT-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMATIVE-ASSESSMENT-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-ARGUMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-EVIDENCE-AUDIT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-SOURCES.md"
+    ],
+    "removed_pages": []
+  }
+}

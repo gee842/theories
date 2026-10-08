@@ -1,0 +1,18 @@
+{
+  "status": "failed",
+  "utc": "20261008T113428.194822Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "compositional-acquisition-checks/20261008T113428.194822Z",
+  "source_sha256": {
+    "KnowledgeCorrespondence": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+    "CompositionalAcquisition": "62070a6473e9e65bd1c177bf79e7a9512b6d6fce846f8e4b93273716c9b05023"
+  },
+  "checker_sha256": {
+    "check_compositional_acquisition.py": "d9385207ada71f062007cefe2d9df498c342834af9c282d437a247a247d3759a",
+    "audit_support.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Conditional acquisition and all-finite-expression transfer in a fixed recursive law family; finite execution, reencoding and counterexamples. No full cognition, evolutionary selection or empirical sufficiency.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "CompositionalAcquisition.lean:73:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern\n  eval (renamed c) (rename p)\nin the target expression\n  (if c.reversed = true then\n      eval { first := c.second, second := c.first, reversed := c.reversed } (rename q) ++\n        eval { first := c.second, second := c.first, reversed := c.reversed } (rename p)\n    else\n      eval { first := c.second, second := c.first, reversed := c.reversed } (rename p) ++\n        eval { first := c.second, second := c.first, reversed := c.reversed } (rename q)) =\n    if c.reversed = true then eval c q ++ eval c p else eval c p ++ eval c q\n\ncase join\nc : Code\np q : Expr\nhp : eval (renamed c) (rename p) = eval c p\nhq : eval (renamed c) (rename q) = eval c q\n\u22a2 (if c.reversed = true then\n      eval { first := c.second, second := c.first, reversed := c.reversed } (rename q) ++\n        eval { first := c.second, second := c.first, reversed := c.reversed } (rename p)\n    else\n      eval { first := c.second, second := c.first, reversed := c.reversed } (rename p) ++\n        eval { first := c.second, second := c.first, reversed := c.reversed } (rename q)) =\n    if c.reversed = true then eval c q ++ eval c p else eval c p ++ eval c q\nCompositionalAcquisition.lean:112:2: error: No goals to be solved\nCompositionalAcquisition.lean:146:8: error: failed to synthesize\n  Decidable (separated { first := false, second := true, reversed := false })\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\nCompositionalAcquisition.lean:146:20: error: failed to synthesize\n  Decidable (separated { first := false, second := true, reversed := true })\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\n"
+}

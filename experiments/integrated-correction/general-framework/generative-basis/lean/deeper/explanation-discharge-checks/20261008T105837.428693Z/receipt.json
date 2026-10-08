@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-10-08T10:58:37.683214+00:00",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "module": "ExplanationDischarge",
+  "source_sha256": "b8f07bda5d08a4ee2b3c25b29298ae869c091c8ac00fadd98bfcf9826e08b996",
+  "checker_sha256": "77c3700b2953b52468faf793150df2c4ac783b85ff7b976413c62040c606ac0e",
+  "log_sha256": "4b268b41d9160e758f35e2de69d63c5df03168789ccdb189bcfd535f81f35577",
+  "imports": [
+    "Init"
+  ],
+  "new_theorems": 4,
+  "audits": [
+    {
+      "declaration": "ExplanationDischarge.consequence_iff_witness_implication",
+      "axioms": []
+    },
+    {
+      "declaration": "ExplanationDischarge.uniform_discharge_iff_witness",
+      "axioms": []
+    },
+    {
+      "declaration": "ExplanationDischarge.empty_interface_satisfies_every_requirement",
+      "axioms": []
+    },
+    {
+      "declaration": "ExplanationDischarge.covered_targets_inherit_consequence",
+      "axioms": []
+    }
+  ],
+  "run_directory": "explanation-discharge-checks/20261008T105837.428693Z",
+  "scope": "An exact audit of one inference from requirements on admitted explanations to a claim. Universal discharge needs a witness; coverage and substantive consequence remain separate premises of the positive route. This is not a physical countermodel or an impossibility result for the foundation.",
+  "logical_basis": "Lean 4.29.1 type theory and Init. The formal interface does not define adequate explanation or establish any actual generative law. No new foundational premise is adopted."
+}

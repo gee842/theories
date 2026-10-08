@@ -1,0 +1,24 @@
+import CrossedClaims
+#print axioms CrossedClaims.Claim
+#print axioms CrossedClaims.Route
+#print axioms CrossedClaims.protects
+#print axioms CrossedClaims.replaceRoute
+#print axioms CrossedClaims.replacement_preserves_each_ticket
+#print axioms CrossedClaims.joint_strictly_extends_solo_protection
+#print axioms CrossedClaims.Tickets
+#print axioms CrossedClaims.ticketTotal
+#print axioms CrossedClaims.protectedTickets
+#print axioms CrossedClaims.transfer
+#print axioms CrossedClaims.transfer_conserves_total_and_chances
+#print axioms CrossedClaims.transfer_preserves_any_satisfied_floor
+#print axioms CrossedClaims.transfer_strictly_improves_q
+#print axioms CrossedClaims.EqualPersonalChances
+#print axioms CrossedClaims.equal_personal_chances_iff
+#print axioms CrossedClaims.equal_chances_have_improving_replacement
+#print axioms CrossedClaims.RescueGroup
+#print axioms CrossedClaims.gravity
+#print axioms CrossedClaims.groupSize
+#print axioms CrossedClaims.menuAnchor
+#print axioms CrossedClaims.filteredScore
+#print axioms CrossedClaims.SelectedByFilter
+#print axioms CrossedClaims.unselected_strong_route_changes_filtered_choice

@@ -1,0 +1,99 @@
+{
+  "status": "passed",
+  "scope": "Exact declared finite protocol; no trained-model evaluation",
+  "lean_sha256": "47edeb32ffa0975c65d9264856b83cdbfd934c3acb39bf694da2f66ddcce22cd",
+  "runner_sha256": "f2d34d2855982b281f702a0e7cca61d7dc88a619ceae02f5244f07ea0b533206",
+  "terminal_runner_sha256": "f532cfca226b93dff7d67dd2940fe410dc451065971039519a45a15cc2cbcc0f",
+  "records_sha256": "7ac5f98f3642e8976129b47bf76f27ced22b883bf85c0a8ab40e25af6fe4479f",
+  "plan_count": 432,
+  "joint": [
+    [
+      true,
+      true,
+      "15/32"
+    ],
+    [
+      false,
+      true,
+      "1/32"
+    ],
+    [
+      true,
+      false,
+      "9/32"
+    ],
+    [
+      false,
+      false,
+      "7/32"
+    ]
+  ],
+  "selected": [
+    1,
+    [
+      "p",
+      "wait"
+    ],
+    [
+      "true",
+      "wait"
+    ]
+  ],
+  "optimal_value": "353/16",
+  "optimal_risk": "1/32",
+  "mode_optima": {
+    "0": "22",
+    "1": "353/16",
+    "2": "87/4"
+  },
+  "safe_optimum": "22",
+  "safe_plans": 17,
+  "cost_sweep": [
+    {
+      "noisy_cost": "0",
+      "optimal_value": "177/8",
+      "optimal_plans": 1,
+      "optimal_risks": [
+        "1/32"
+      ]
+    },
+    {
+      "noisy_cost": "1/16",
+      "optimal_value": "353/16",
+      "optimal_plans": 1,
+      "optimal_risks": [
+        "1/32"
+      ]
+    },
+    {
+      "noisy_cost": "1/8",
+      "optimal_value": "22",
+      "optimal_plans": 13,
+      "optimal_risks": [
+        "0",
+        "1/32"
+      ]
+    },
+    {
+      "noisy_cost": "1/4",
+      "optimal_value": "22",
+      "optimal_plans": 12,
+      "optimal_risks": [
+        "0"
+      ]
+    },
+    {
+      "noisy_cost": "1",
+      "optimal_value": "22",
+      "optimal_plans": 12,
+      "optimal_risks": [
+        "0"
+      ]
+    }
+  ],
+  "free_revelation_optimum": "91/4",
+  "free_revelation_optimal_risks": [
+    "0"
+  ],
+  "observed_relay_policies": 4
+}

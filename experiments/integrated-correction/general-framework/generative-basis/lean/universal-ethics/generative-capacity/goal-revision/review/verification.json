@@ -1,0 +1,173 @@
+{
+  "status": "passed_independent_recompilation_and_221_state_reconstruction",
+  "utc": "2026-10-07T23:29:28.259716+00:00",
+  "source_sha256": {
+    "PracticalJudgment": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "GoalRevision": "45c56a6aa974281b89e1b1a1776e6828dbd2d7a93e70351884410a241ccbde81"
+  },
+  "documents_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-REVISION-CONTINUATION-PROTOCOL.md": "e643c81f456be31e9071544f1a1cb937297ace108ea0cb1521281aa331a66127",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-REVISION-CONTINUATION.md": "33cabaa48cee298e8ae1f88d0231b2d2227d4b9b44f03b6c3570c3851d900ae4"
+  },
+  "author_receipt_sha256": "9c97862c290f75b2da79ad4fd604e6cd762af3a5fd4f42cc08a0c91b558cd8cd",
+  "author_results_sha256": "e8873bcfecd74f6a9a3cdd4b1d22aaaa15e1d34582b4ac8e177f5f159a16d42a",
+  "author_run": "goal-revision-checks/20261007T232324.512207Z",
+  "retained_artifacts": 15,
+  "counts": {
+    "PracticalJudgment": [
+      30,
+      46
+    ],
+    "GoalRevision": [
+      27,
+      84
+    ]
+  },
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "cases": 13,
+  "complete_state_comparisons": 221,
+  "final_states": {
+    "success": {
+      "goal": 2,
+      "rule": 1,
+      "fulfilled": 8,
+      "cash": 6,
+      "fund": 180,
+      "spent": 28,
+      "losses": 1,
+      "halted": false
+    },
+    "unreformed": {
+      "goal": 2,
+      "rule": 0,
+      "fulfilled": 7,
+      "cash": 1,
+      "fund": 189,
+      "spent": 24,
+      "losses": 1,
+      "halted": true
+    },
+    "write_clamp": {
+      "goal": 1,
+      "rule": 0,
+      "fulfilled": 0,
+      "cash": 16,
+      "fund": 172,
+      "spent": 26,
+      "losses": 9,
+      "halted": false
+    },
+    "no_adoption": {
+      "goal": 1,
+      "rule": 0,
+      "fulfilled": 0,
+      "cash": 16,
+      "fund": 172,
+      "spent": 26,
+      "losses": 9,
+      "halted": false
+    },
+    "approval_reversed": {
+      "goal": 2,
+      "rule": 1,
+      "fulfilled": 8,
+      "cash": 6,
+      "fund": 180,
+      "spent": 28,
+      "losses": 1,
+      "halted": false
+    },
+    "missing": {
+      "goal": 1,
+      "rule": 0,
+      "fulfilled": 0,
+      "cash": 8,
+      "fund": 196,
+      "spent": 10,
+      "losses": 1,
+      "halted": true
+    },
+    "restriction": {
+      "goal": 1,
+      "rule": 0,
+      "fulfilled": 8,
+      "cash": 16,
+      "fund": 172,
+      "spent": 26,
+      "losses": 1,
+      "halted": false
+    },
+    "misleading": {
+      "goal": 2,
+      "rule": 1,
+      "fulfilled": 0,
+      "cash": 6,
+      "fund": 180,
+      "spent": 28,
+      "losses": 9,
+      "halted": false
+    },
+    "unauthorized": {
+      "goal": 2,
+      "rule": 0,
+      "fulfilled": 7,
+      "cash": 1,
+      "fund": 189,
+      "spent": 24,
+      "losses": 1,
+      "halted": true
+    },
+    "unfunded": {
+      "goal": 2,
+      "rule": 0,
+      "fulfilled": 1,
+      "cash": 7,
+      "fund": 0,
+      "spent": 12,
+      "losses": 1,
+      "halted": true
+    },
+    "credit_inflated": {
+      "goal": 2,
+      "rule": 0,
+      "fulfilled": 7,
+      "cash": 1,
+      "fund": 189,
+      "spent": 24,
+      "losses": 1,
+      "halted": true
+    },
+    "short_demand": {
+      "goal": 2,
+      "rule": 0,
+      "fulfilled": 3,
+      "cash": 5,
+      "fund": 193,
+      "spent": 16,
+      "losses": 1,
+      "halted": false
+    },
+    "context_shift": {
+      "goal": 2,
+      "rule": 0,
+      "fulfilled": 0,
+      "cash": 7,
+      "fund": 196,
+      "spent": 11,
+      "losses": 1,
+      "halted": true
+    }
+  },
+  "script_sha256": "b75cdd91b1ffa9f013182561a03ef77d2834a6b666dace76b58a7dbc5619f150",
+  "log_sha256": {
+    "GoalRevision.log": "b53b6bc3964094f29b709dc5f931731864313a44788418df47a609c62687847a",
+    "GoalRevisionAxiomAudit.log": "6e7bc8c9a1563b80b10eddb3c49eacc01b62c1885cf89147c1e510181ade8414",
+    "GoalRevisionSignatures.log": "110f0d09bebff75bf9525294e45a9601d2e09da4c4e6053e09159fc2bf6698f4",
+    "PracticalJudgment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PracticalJudgmentAxiomAudit.log": "d73810d6b1a7343808726234c17bca9d7841acafabd3a17ee8e6145dfabbf1ea",
+    "PracticalJudgmentSignatures.log": "93b65679f59a01788bfcfbfe0bf5bc3ef93f0cf67516c469f1667c5cdc9abd65",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  },
+  "scope": "Independent isolated Lean compilation and finite reconstruction. No empirical verification, general interpreter refinement or ethical origin proof."
+}

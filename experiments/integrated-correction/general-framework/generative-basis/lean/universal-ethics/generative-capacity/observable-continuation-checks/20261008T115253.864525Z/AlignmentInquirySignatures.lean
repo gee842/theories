@@ -1,0 +1,10 @@
+import AlignmentInquiry
+#check AlignmentInquiry.repertoire_complete
+#check AlignmentInquiry.passes_iff_actual_completion
+#check AlignmentInquiry.chosen_sound
+#check AlignmentInquiry.chosen_exists_iff
+#check AlignmentInquiry.no_listed_policy_iff
+#check AlignmentInquiry.empty_uncertainty_never_certifies
+#check AlignmentInquiry.actual_covered_execution
+#check AlignmentInquiry.same_answer_same_selected_response
+#check AlignmentInquiry.observational_obstruction

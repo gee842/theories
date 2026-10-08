@@ -1,0 +1,82 @@
+CompositionalFormation.lean:105:65: error: unexpected identifier; expected '}'
+CompositionalFormation.lean:118:55: error: unexpected identifier; expected '}'
+CompositionalFormation.lean:158:17: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 0
+  a ≥ 1
+where
+ a := ↑s.parts
+ b := ↑s.spent
+ c := ↑(s.support - 1)
+CompositionalFormation.lean:154:13: warning: declaration uses `sorry`
+CompositionalFormation.lean:167:17: error: No goals to be solved
+CompositionalFormation.lean:163:13: warning: declaration uses `sorry`
+CompositionalFormation.lean:179:13: warning: declaration uses `sorry`
+CompositionalFormation.lean:177:8: warning: declaration uses `sorry`
+CompositionalFormation.lean:231:56: error: Tactic `decide` proved that the proposition
+  developed.attempts = [([false, false], false), ([false, true], true)] ∧ developed.installed = some (programFor usual)
+is false
+CompositionalFormation.lean:237:64: error: Tactic `decide` proved that the proposition
+  respond developed novel = some ([false, false, true], 0)
+is false
+CompositionalFormation.lean:242:55: error: Tactic `decide` proved that the proposition
+  developed.spent = 7 ∧
+    developed.support = 4 ∧ developed.usedParts = 4 ∧ developed.parts = 0 ∧ 7 + developed.spent + developed.support = 18
+is false
+CompositionalFormation.lean:247:57: error: Tactic `decide` failed for proposition
+  (develop (prepared 18 0)).samples = trialRecords usual ∧
+    (develop (prepared 18 0)).blocked = true ∧ respond (develop (prepared 18 0)) novel = none
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `instDecidableEqList`, `Bool.decEq`, and `Nat.decLe`, reduction got stuck at the `Decidable` instance
+  match (develop (prepared 18 0)).samples with
+  | [] =>
+    match trialRecords usual with
+    | [] => isTrue ⋯
+    | head :: tail => isFalse ⋯
+  | a :: as =>
+    match trialRecords usual with
+    | [] => isFalse ⋯
+    | b :: bs =>
+      match decEq a b with
+      | isTrue hab =>
+        match as.hasDecEq bs with
+        | isTrue habs => isTrue ⋯
+        | isFalse nabs => isFalse ⋯
+      | isFalse nab => isFalse ⋯
+CompositionalFormation.lean:253:57: error: Tactic `decide` proved that the proposition
+  (develop (prepared 18 1)).wires = [false] ∧
+    (develop (prepared 18 1)).spent = 1 ∧
+      (develop (prepared 18 1)).parts = 0 ∧ respond (develop (prepared 18 1)) novel = none
+is false
+CompositionalFormation.lean:257:57: error: Tactic `decide` proved that the proposition
+  (develop (prepared 14 4)).installed = some (programFor usual) ∧ respond (develop (prepared 14 4)) novel = none
+is false
+CompositionalFormation.lean:262:89: error: Tactic `decide` proved that the proposition
+  (develop (prepared 22 6 switched)).attempts =
+      [([false, false], false), ([false, true], false), ([true, false], true)] ∧
+    respond (develop (prepared 22 6 switched)) novel = some ([true, false, false], 0)
+is false
+CompositionalFormation.lean:280:97: error: Tactic `decide` failed for proposition
+  (develop (prepared 15 2 collapsed)).installed = some duplicated ∧
+    respond (develop (prepared 15 2 collapsed)) novel = some ([false, false, false, false], 0)
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `Bool.decEq`, `Nat.decLe`, and `Option.instDecidableEq`, reduction got stuck at the `Decidable` instance
+  match (develop (prepared 15 2 collapsed)).installed with
+  | none =>
+    match some duplicated with
+    | none => isTrue ⋯
+    | some val => isFalse ⋯
+  | some a =>
+    match some duplicated with
+    | none => isFalse ⋯
+    | some b =>
+      match instDecidableEqProgram a b with
+      | isTrue h => isTrue ⋯
+      | isFalse n => isFalse ⋯

@@ -13,7 +13,7 @@
 <details>
 <summary>CarrierTurnover.lean — 34 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean) · [研究 / Study](../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/CARRIER-TURNOVER-FORMALIZATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/formal/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-PROOF.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/formal/README.md)
 
 `experiments/shared-renewal-capability/formal/CarrierTurnover.lean`
 
@@ -161,7 +161,7 @@ Imports: `TypedRenewal`
 <details>
 <summary>TypedRenewal.lean — 48 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean) · [研究 / Study](../../../../_process/research/2026-10-05-support-and-shared-generativity/completion/CARRIER-TURNOVER-FORMALIZATION.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/formal/README.md)
+[原源码 / Source](../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-PROOF.md) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/formal/README.md)
 
 `experiments/shared-renewal-capability/formal/TypedRenewal.lean`
 
@@ -546,91 +546,91 @@ Imports: `Std`
 
 | 定理／引理 / Theorem or lemma | 源行 / Line |
 |---|---:|
-| [FormedSelection.population_type_sum](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L126) | 126 |
-| [FormedSelection.step_valid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L130) | 130 |
-| [FormedSelection.trace_valid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L136) | 136 |
-| [FormedSelection.material_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L141) | 141 |
-| [FormedSelection.trace_material_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L147) | 147 |
-| [FormedSelection.step_energy_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L151) | 151 |
-| [FormedSelection.trace_energy_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L157) | 157 |
-| [FormedSelection.step_common_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L166) | 166 |
-| [FormedSelection.trace_common_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L171) | 171 |
-| [FormedSelection.copy_increment_le_spent](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L180) | 180 |
-| [FormedSelection.copy_tally_le_spent](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L183) | 183 |
-| [FormedSelection.trace_copy_budget](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L192) | 192 |
-| [FormedSelection.exact_step_rank_drop](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L197) | 197 |
-| [FormedSelection.step_strict_rank](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L203) | 203 |
-| [FormedSelection.trace_event_bound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L208) | 208 |
-| [FormedSelection.no_infinite_event_path](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L216) | 216 |
-| [FormedSelection.step_paid_phase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L235) | 235 |
-| [FormedSelection.trace_paid_phase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L242) | 242 |
-| [FormedSelection.repair_needs_three_initial_common_units](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L253) | 253 |
-| [FormedSelection.low_fuel_cannot_restore_site](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L260) | 260 |
-| [FormedSelection.step_paid_mixed_phase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L276) | 276 |
-| [FormedSelection.trace_paid_mixed_phase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L283) | 283 |
-| [FormedSelection.restored_site_and_alternative_need_four_initial_common_units](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L291) | 291 |
-| [FormedSelection.a_absence_step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L303) | 303 |
-| [FormedSelection.h_absence_step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L309) | 309 |
-| [FormedSelection.a_absence_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L315) | 315 |
-| [FormedSelection.h_absence_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L323) | 323 |
-| [FormedSelection.a_appearance_requires_formation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L331) | 331 |
-| [FormedSelection.h_appearance_requires_formation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L338) | 338 |
-| [FormedSelection.a_copy_has_template](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L345) | 345 |
-| [FormedSelection.h_copy_has_template](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L352) | 352 |
-| [FormedSelection.owned_support_step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L363) | 363 |
-| [FormedSelection.owned_support_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L369) | 369 |
-| [FormedSelection.owned_support_forbids_h_local_copy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L377) | 377 |
-| [FormedSelection.no_h_local_copies_without_resident_wear](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L382) | 382 |
-| [FormedSelection.paid_formation_to_copy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L402) | 402 |
-| [FormedSelection.witness_accounting](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L411) | 411 |
-| [FormedSelection.repair_enables_capture](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L418) | 418 |
-| [FormedSelection.capture_enables_copy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L421) | 421 |
-| [FormedSelection.initial_owned_support](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L424) | 424 |
-| [FormedSelection.no_h_local_copies_from_absence_without_resident_wear](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L427) | 427 |
-| [FormedSelection.repaired_site_can_pass_to_alternative](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L438) | 438 |
-| [FormedSelection.inheritance_accounting](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L450) | 450 |
+| [FormedSelection.population_type_sum](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L129) | 129 |
+| [FormedSelection.step_valid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L133) | 133 |
+| [FormedSelection.trace_valid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L139) | 139 |
+| [FormedSelection.material_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L144) | 144 |
+| [FormedSelection.trace_material_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L150) | 150 |
+| [FormedSelection.step_energy_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L154) | 154 |
+| [FormedSelection.trace_energy_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L160) | 160 |
+| [FormedSelection.step_common_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L169) | 169 |
+| [FormedSelection.trace_common_ledger](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L174) | 174 |
+| [FormedSelection.copy_increment_le_spent](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L183) | 183 |
+| [FormedSelection.copy_tally_le_spent](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L186) | 186 |
+| [FormedSelection.trace_copy_budget](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L195) | 195 |
+| [FormedSelection.exact_step_rank_drop](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L200) | 200 |
+| [FormedSelection.step_strict_rank](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L206) | 206 |
+| [FormedSelection.trace_event_bound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L211) | 211 |
+| [FormedSelection.no_infinite_event_path](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L219) | 219 |
+| [FormedSelection.step_paid_phase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L238) | 238 |
+| [FormedSelection.trace_paid_phase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L245) | 245 |
+| [FormedSelection.repair_needs_three_initial_common_units](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L256) | 256 |
+| [FormedSelection.low_fuel_cannot_restore_site](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L263) | 263 |
+| [FormedSelection.step_paid_mixed_phase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L279) | 279 |
+| [FormedSelection.trace_paid_mixed_phase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L286) | 286 |
+| [FormedSelection.restored_site_and_alternative_need_four_initial_common_units](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L294) | 294 |
+| [FormedSelection.a_absence_step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L306) | 306 |
+| [FormedSelection.h_absence_step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L312) | 312 |
+| [FormedSelection.a_absence_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L318) | 318 |
+| [FormedSelection.h_absence_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L326) | 326 |
+| [FormedSelection.a_appearance_requires_formation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L334) | 334 |
+| [FormedSelection.h_appearance_requires_formation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L341) | 341 |
+| [FormedSelection.a_copy_has_template](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L348) | 348 |
+| [FormedSelection.h_copy_has_template](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L355) | 355 |
+| [FormedSelection.owned_support_step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L366) | 366 |
+| [FormedSelection.owned_support_trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L372) | 372 |
+| [FormedSelection.owned_support_forbids_h_local_copy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L380) | 380 |
+| [FormedSelection.no_h_local_copies_without_resident_wear](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L385) | 385 |
+| [FormedSelection.paid_formation_to_copy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L405) | 405 |
+| [FormedSelection.witness_accounting](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L414) | 414 |
+| [FormedSelection.repair_enables_capture](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L421) | 421 |
+| [FormedSelection.capture_enables_copy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L424) | 424 |
+| [FormedSelection.initial_owned_support](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L427) | 427 |
+| [FormedSelection.no_h_local_copies_from_absence_without_resident_wear](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L430) | 430 |
+| [FormedSelection.repaired_site_can_pass_to_alternative](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L441) | 441 |
+| [FormedSelection.inheritance_accounting](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L453) | 453 |
 
 定义与类型 / Definitions and types:
 
-- `inductive` [FormedSelection.Resident](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L12) (L12)
-- `structure` [FormedSelection.State](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L16) (L16)
-- `inductive` [FormedSelection.Event](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L26) (L26)
-- `def` [FormedSelection.bit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L32) (L32)
-- `def` [FormedSelection.occupied](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L33) (L33)
-- `def` [FormedSelection.activeResident](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L34) (L34)
-- `def` [FormedSelection.alternativeResident](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L35) (L35)
-- `def` [FormedSelection.population](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L36) (L36)
-- `def` [FormedSelection.aCount](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L37) (L37)
-- `def` [FormedSelection.hCount](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L38) (L38)
-- `def` [FormedSelection.precursor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L39) (L39)
-- `def` [FormedSelection.Valid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L40) (L40)
-- `def` [FormedSelection.Enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L42) (L42)
-- `def` [FormedSelection.advance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L59) (L59)
-- `def` [FormedSelection.Step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L77) (L77)
-- `inductive` [FormedSelection.Trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L92) (L92)
-- `def` [FormedSelection.expenditure](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L97) (L97)
-- `def` [FormedSelection.commonExpenditure](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L101) (L101)
-- `def` [FormedSelection.copyIncrement](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L106) (L106)
-- `def` [FormedSelection.eventIndicator](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L110) (L110)
-- `def` [FormedSelection.tally](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L112) (L112)
-- `def` [FormedSelection.energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L116) (L116)
-- `def` [FormedSelection.rank](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L117) (L117)
-- `def` [FormedSelection.rankDrop](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L120) (L120)
-- `def` [FormedSelection.phase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L229) (L229)
-- `def` [FormedSelection.Absent](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L250) (L250)
-- `def` [FormedSelection.mixedPhase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L270) (L270)
-- `def` [FormedSelection.SupportOwned](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L360) (L360)
-- `def` [FormedSelection.initial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L393) (L393)
-- `def` [FormedSelection.formedH](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L394) (L394)
-- `def` [FormedSelection.formed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L395) (L395)
-- `def` [FormedSelection.associated](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L396) (L396)
-- `def` [FormedSelection.repaired](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L397) (L397)
-- `def` [FormedSelection.captured](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L398) (L398)
-- `def` [FormedSelection.copied](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L399) (L399)
-- `def` [FormedSelection.witnessEvents](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L400) (L400)
-- `def` [FormedSelection.inheritanceInitial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L433) (L433)
-- `def` [FormedSelection.inheritanceFinal](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L434) (L434)
-- `def` [FormedSelection.inheritanceEvents](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L435) (L435)
+- `inductive` [FormedSelection.Resident](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L15) (L15)
+- `structure` [FormedSelection.State](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L19) (L19)
+- `inductive` [FormedSelection.Event](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L29) (L29)
+- `def` [FormedSelection.bit](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L35) (L35)
+- `def` [FormedSelection.occupied](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L36) (L36)
+- `def` [FormedSelection.activeResident](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L37) (L37)
+- `def` [FormedSelection.alternativeResident](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L38) (L38)
+- `def` [FormedSelection.population](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L39) (L39)
+- `def` [FormedSelection.aCount](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L40) (L40)
+- `def` [FormedSelection.hCount](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L41) (L41)
+- `def` [FormedSelection.precursor](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L42) (L42)
+- `def` [FormedSelection.Valid](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L43) (L43)
+- `def` [FormedSelection.Enabled](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L45) (L45)
+- `def` [FormedSelection.advance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L62) (L62)
+- `def` [FormedSelection.Step](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L80) (L80)
+- `inductive` [FormedSelection.Trace](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L95) (L95)
+- `def` [FormedSelection.expenditure](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L100) (L100)
+- `def` [FormedSelection.commonExpenditure](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L104) (L104)
+- `def` [FormedSelection.copyIncrement](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L109) (L109)
+- `def` [FormedSelection.eventIndicator](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L113) (L113)
+- `def` [FormedSelection.tally](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L115) (L115)
+- `def` [FormedSelection.energy](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L119) (L119)
+- `def` [FormedSelection.rank](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L120) (L120)
+- `def` [FormedSelection.rankDrop](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L123) (L123)
+- `def` [FormedSelection.phase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L232) (L232)
+- `def` [FormedSelection.Absent](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L253) (L253)
+- `def` [FormedSelection.mixedPhase](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L273) (L273)
+- `def` [FormedSelection.SupportOwned](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L363) (L363)
+- `def` [FormedSelection.initial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L396) (L396)
+- `def` [FormedSelection.formedH](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L397) (L397)
+- `def` [FormedSelection.formed](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L398) (L398)
+- `def` [FormedSelection.associated](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L399) (L399)
+- `def` [FormedSelection.repaired](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L400) (L400)
+- `def` [FormedSelection.captured](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L401) (L401)
+- `def` [FormedSelection.copied](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L402) (L402)
+- `def` [FormedSelection.witnessEvents](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L403) (L403)
+- `def` [FormedSelection.inheritanceInitial](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L436) (L436)
+- `def` [FormedSelection.inheritanceFinal](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L437) (L437)
+- `def` [FormedSelection.inheritanceEvents](../../../../experiments/shared-renewal-capability/regulation/retention/formation/formal/FormedSelection.lean#L438) (L438)
 
 文本中有 43 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 43 textual `#print axioms` commands; results belong to the original verification records.
 
@@ -3681,62 +3681,6 @@ Imports: `RecipientAction`, `SemanticCalibration`
 - `def` [PaidPreImport.inspect](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/calibration/pre-import/formal/PaidPreImport.lean#L80) (L80)
 
 文本中有 15 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 15 textual `#print axioms` commands; results belong to the original verification records.
-
-</details>
-
-<a id="module-69dd2fd3322c"></a>
-
-<details>
-<summary>RecipientReasons.lean — 37 explicit declarations</summary>
-
-[原源码 / Source](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean) · [包说明 / Package notes](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
-
-`experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean`
-
-Imports: `PaidArchiveReader`, `ReasonReplay`
-
-| 定理／引理 / Theorem or lemma | 源行 / Line |
-|---|---:|
-| [RecipientReasons.compatible_iff](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L49) | 49 |
-| [RecipientReasons.normalization_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L52) | 52 |
-| [RecipientReasons.finite_normalization_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L72) | 72 |
-| [RecipientReasons.finite_known_agree](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L79) | 79 |
-| [RecipientReasons.finite_no_conflict](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L83) | 83 |
-| [RecipientReasons.first_known_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L89) | 89 |
-| [RecipientReasons.finite_informative_identifies](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L101) | 101 |
-| [RecipientReasons.finite_identifies_compatible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L114) | 114 |
-| [RecipientReasons.normalization_preserves_unknown](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L118) | 118 |
-| [RecipientReasons.negative_fact_is_informative](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L120) | 120 |
-| [RecipientReasons.option_bool_cases](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L122) | 122 |
-| [RecipientReasons.sound_no_conflict](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L127) | 127 |
-| [RecipientReasons.sound_orientation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L133) | 133 |
-| [RecipientReasons.sound_informative](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L140) | 140 |
-| [RecipientReasons.unknown_is_not_conflict](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L147) | 147 |
-| [RecipientReasons.conflict_is_distinct](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L149) | 149 |
-| [RecipientReasons.closure_of_orientation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L153) | 153 |
-| [RecipientReasons.informative_exact_route](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L167) | 167 |
-| [RecipientReasons.actual_relevance](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L172) | 172 |
-| [RecipientReasons.closure_instrumental_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L183) | 183 |
-| [RecipientReasons.current_cache_normalizes_sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L193) | 193 |
-
-定义与类型 / Definitions and types:
-
-- `structure` [RecipientReasons.Triple](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L11) (L11)
-- `def` [RecipientReasons.empty](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L17) (L17)
-- `def` [RecipientReasons.normalize](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L18) (L18)
-- `def` [RecipientReasons.entrySound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L22) (L22)
-- `def` [RecipientReasons.Sound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L23) (L23)
-- `def` [RecipientReasons.known](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L26) (L26)
-- `def` [RecipientReasons.conflict](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L29) (L29)
-- `def` [RecipientReasons.orientation](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L31) (L31)
-- `def` [RecipientReasons.derived](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L35) (L35)
-- `def` [RecipientReasons.star](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L40) (L40)
-- `def` [RecipientReasons.Compatible](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L42) (L42)
-- `def` [RecipientReasons.Meaning](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L44) (L44)
-- `def` [RecipientReasons.normalizeFacts](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L61) (L61)
-- `def` [RecipientReasons.ListSound](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L64) (L64)
-- `def` [RecipientReasons.firstKnown](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L67) (L67)
-- `def` [RecipientReasons.cacheTriple](../../../../experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean#L190) (L190)
 
 </details>
 

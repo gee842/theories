@@ -1,0 +1,62 @@
+{
+  "retrieved": "2026-10-08",
+  "files": [
+    {
+      "file": "zenodo-7342768.json",
+      "url": "https://zenodo.org/api/records/7342768",
+      "bytes": 5331,
+      "sha256": "3c561d79ceee1b812b34c08506de9d723e307bb0dfeb8a6bd7a893fd91f3a10c",
+      "md5": "7575cfa6382e3c0a0791bf34291f7a59"
+    },
+    {
+      "file": "colgen-master.zip",
+      "url": "https://zenodo.org/api/records/7342768/files/colgen-master.zip/content",
+      "bytes": 9955418,
+      "sha256": "9239884822d8260dd305d2cb2e31dbb7a8465efc42df0cbbd73f8afc2bc30d47",
+      "md5": "d69d18082ef0deaa1b04905997ce6327"
+    },
+    {
+      "file": "colgen-2.0-retrieved.zip",
+      "url": "https://gitlab.com/ecoevomath/colgen/-/archive/2.0/colgen-2.0.zip",
+      "bytes": 9961295,
+      "sha256": "d4d4f92234f16fd0441050b1dc8daf33e44c5cde8c23c484fef4ab9f04348b88",
+      "md5": "95b1a733fb30dbd9c20be2f4055685e5"
+    }
+  ],
+  "read_members": [
+    {
+      "archive": "colgen-master.zip",
+      "member": "colgen-master/colgen/models/beta.py",
+      "sha256": "3f8b6bf1c65489d2768ebd1cc03f293e6d4e67ddc3bbd95b84fdeae1d4890c87",
+      "bytes": 1008
+    },
+    {
+      "archive": "colgen-2.0-retrieved.zip",
+      "member": "colgen-2.0/colgen/models/beta.py",
+      "sha256": "4e92a2d671f6200a49cf06327a7ae832b2d104eba96e75c3c8bfc2c12cf58895",
+      "bytes": 1735
+    },
+    {
+      "archive": "colgen-2.0-retrieved.zip",
+      "member": "colgen-2.0/colgen/survival.py",
+      "sha256": "044a098c9865f447f49eb93a4c616cfb6c639db8e2d96c375ad59bbec885f72c",
+      "bytes": 4537
+    },
+    {
+      "archive": "colgen-2.0-retrieved.zip",
+      "member": "colgen-2.0/colgen/bn_discrete.py",
+      "sha256": "d3521a00e0d86b804d2cd356a33a3a44de7bd54a32f607175771a6c8535aa799",
+      "bytes": 9737
+    },
+    {
+      "archive": "colgen-2.0-retrieved.zip",
+      "member": "colgen-2.0/LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "bytes": 35149
+    }
+  ],
+  "archive_v1_publisher_md5_verified": true,
+  "pinned_v2_sha256": "38e9197142457bbd525d332384e2a9525e855641524edea4e1fe1f08ac827baa",
+  "retrieved_v2_matches_pin": false,
+  "scope": "Original archives preserved, selected source read; no author code installed or executed. Canonical archive is version 1.0, not the pinned 2.0 release. Retrieved 2.0 has a different hash and is identified only by its actual bytes. Beta implementation differs between versions."
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-08",
+  "previous_goal_turn": "no progress: completion-status explanation without new research evidence",
+  "this_goal_turn": "progress: preserved primary evidence, independently checked video reconstruction, revised evolutionary correspondence and comparator",
+  "goal": "establish The Theory of Evolution",
+  "goal_complete": false,
+  "new_theorems": 0,
+  "lean_rerun": false,
+  "new_biological_experiments": 0,
+  "original_files_verified": 8,
+  "videos": 54,
+  "technical_replicates": 18,
+  "numeric_values_checked": 132,
+  "maximum_numeric_difference": 3.552713678800501e-15,
+  "figure_visually_checked": true,
+  "local_links_checked": 17,
+  "source_bindings": "passed",
+  "bilingual_C14_row": "passed against renderer; claims and scope reviewed",
+  "full_chain_check": {
+    "status": "needs-review",
+    "changes": {
+      "modified_sources": [
+        "RESEARCH.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/G0-AND-KNOWLEDGE.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/KNOWLEDGE.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-SOURCES.md",
+        "sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md"
+      ],
+      "missing_sources": [],
+      "new_pages": [],
+      "removed_pages": []
+    },
+    "scope": "Concurrent source edits remain with their owners; not a science failure or full-table certificate."
+  },
+  "independent_agent_review": false,
+  "author_self_review": "Substantive comparator and sampling review in integration",
+  "completion_requirements_preserved": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
+  ],
+  "remaining": [
+    "Compatible attachment/aggregate/viable-transfer/descendant records",
+    "Physical geometry/drag correspondence remains uncalibrated on source-matched particles",
+    "Earlier census-conversion discrepancy",
+    "Support renewal and broader evolutionary-mechanism recovery",
+    "Demonstrated gain against equally informed conventional rivals",
+    "Evolved evaluation correspondence at the full goal scope"
+  ],
+  "next_action": "Test a full measured transfer cycle with lineage and aggregate identities retained, using adequate conventional density-dependent developmental/ecological comparators. Public summaries alone do not reconstruct that history.",
+  "files_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/AGGREGATION-SELECTION-INTEGRATION.md": "14456632b161189f13a4cc8c1a2b872d27abd07ece8de4b03ae515cfa14d46ed",
+    "sources/evolutionary-selection/driscoll-2017/README.md": "9572ce3fb848d893f93fbffb8bd9088fa49732af71c5d9699964521c9ba6ee0d",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/interactions/README.md": "e13ef98bce8deafe736e67fdc37d726d26cdb07cf7f39b4be98bde783dc7db13",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md": "6b8ad285f1339c785bd09e09165a33f9eef1a4fcb2ef564cae00249d03893298",
+    "sources/evolutionary-selection/driscoll-2017/manifest.json": "3808545afc295a3a03fd9afefe808a41ff1074dba720f63425d5340cab7dd7c0",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/AGGREGATION-SELECTION-INDEX-EDITS.json": "63dd727ddd6b0978f3a845409094c47fdae9eec37c9ab31fac4d6b91a6c68d13",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/interactions/analyze_interactions.py": "3ad48d84a54285d7d6eface694d514323260d9e82ccc86869b31d1acab49fcba",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/interactions/check_interactions.py": "2f7d2fb51e1777f4599cec605ff00e7b41a4d02663465b3d79425cee8fe89d20",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/interactions/interaction-correspondence.png": "d61dd8eaca1ac1a48f1de61299765a8e8edc1d4a5be42eaa372f561d9ec819e9",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/interactions/interaction-results.json": "ccddf32921d43d2982a5bc1597d15cb1ac864acbfa97770d76dae614457ed6af",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/interactions/plot_interactions.py": "276ae5d54e173b28fe1146bb8da22c246a837b24af66051d0213fb08fceab38a",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/interactions/verification.json": "2300f752e27bc5283626809541c9546315f9109a4cb3a8061c9f54a5eeff6ff8",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/interactions/video-means.csv": "d665fdfe1ca7a9e1ec5c8fe940a10dc3542adb6f8153e794f5ee4505856b3a9f"
+  }
+}

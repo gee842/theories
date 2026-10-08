@@ -1,0 +1,107 @@
+'ReproductionNetwork.total' does not depend on any axioms
+'ReproductionNetwork.total_mono' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.total_add' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.total_congr' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.Network' does not depend on any axioms
+'ReproductionNetwork.incoming' does not depend on any axioms
+'ReproductionNetwork.advance' does not depend on any axioms
+'ReproductionNetwork.minimumIncoming' does not depend on any axioms
+'ReproductionNetwork.Box' does not depend on any axioms
+'ReproductionNetwork.Maintenance' does not depend on any axioms
+'ReproductionNetwork.return_lower_bound' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.maintenance_step' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.stockHistory' does not depend on any axioms
+'ReproductionNetwork.maintenance_history' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.demand' does not depend on any axioms
+'ReproductionNetwork.maximumDemand' does not depend on any axioms
+'ReproductionNetwork.demand_bound' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.worn' does not depend on any axioms
+'ReproductionNetwork.overflow' does not depend on any axioms
+'ReproductionNetwork.coordinate_accounting' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.network_accounting' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.State' does not depend on any axioms
+'ReproductionNetwork.Supply' does not depend on any axioms
+'ReproductionNetwork.Ready' does not depend on any axioms
+'ReproductionNetwork.outcome' does not depend on any axioms
+'ReproductionNetwork.process' does not depend on any axioms
+'ReproductionNetwork.full_material_accounting' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.actual_replacement' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.supplied' does not depend on any axioms
+'ReproductionNetwork.Supported' does not depend on any axioms
+'ReproductionNetwork.supported_ready' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.supported_step' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.history' does not depend on any axioms
+'ReproductionNetwork.supported_history' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.actual_history' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.generation_history' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.pair' does not depend on any axioms
+'ReproductionNetwork.two' does not depend on any axioms
+'ReproductionNetwork.pair_maintenance' depends on axioms: [propext]
+'ReproductionNetwork.jointly_established' depends on axioms: [propext]
+'ReproductionNetwork.alternating_first' depends on axioms: [Quot.sound]
+'ReproductionNetwork.alternating_second' depends on axioms: [Quot.sound]
+'ReproductionNetwork.alternating_history' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.no_eventual_joint_activation' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.cold_fixed' depends on axioms: [Quot.sound]
+'ReproductionNetwork.saturated_pair' depends on axioms: [Quot.sound]
+'ReproductionNetwork.cutPair' does not depend on any axioms
+'ReproductionNetwork.severed_pair_loses_both' depends on axioms: [Quot.sound]
+'ReproductionNetwork.Establishable' does not depend on any axioms
+'ReproductionNetwork.establish' does not depend on any axioms
+'ReproductionNetwork.ActivationEvent' does not depend on any axioms
+'ReproductionNetwork.activationProcess' does not depend on any axioms
+'ReproductionNetwork.establishment_accounting' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.lift_operation_trace' does not depend on any axioms
+'ReproductionNetwork.coldStart' does not depend on any axioms
+'ReproductionNetwork.seeded' does not depend on any axioms
+'ReproductionNetwork.funded_establishment' depends on axioms: [propext]
+'ReproductionNetwork.seed_is_supported' depends on axioms: [propext]
+'ReproductionNetwork.establishment_then_actual_recurrence' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.Arrangement' does not depend on any axioms
+'ReproductionNetwork.four' does not depend on any axioms
+'ReproductionNetwork.splitOutput' does not depend on any axioms
+'ReproductionNetwork.arrangement' depends on axioms: [propext]
+'ReproductionNetwork.arrangement_maintenance' depends on axioms: [propext]
+'ReproductionNetwork.arrangement_certificate_iff' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.independent_regimes' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.bridge_establishment' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.bridge_can_be_removed' depends on axioms: [propext]
+'ReproductionNetwork.ring_reorganization' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.unsupported_revision_breaks_reproduction' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.ring_four_cycle' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.arrangement_demand_bound' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.Installation' does not depend on any axioms
+'ReproductionNetwork.revision' does not depend on any axioms
+'ReproductionNetwork.allotment' does not depend on any axioms
+'ReproductionNetwork.cycle' depends on axioms: [propext]
+'ReproductionNetwork.ChangeEvent' does not depend on any axioms
+'ReproductionNetwork.changingProcess' depends on axioms: [propext]
+'ReproductionNetwork.Equipped' does not depend on any axioms
+'ReproductionNetwork.Established' does not depend on any axioms
+'ReproductionNetwork.cycle_is_executable' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.cycle_equipped' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.cycle_established' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.revision_and_operation_accounting' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.changingHistory' depends on axioms: [propext]
+'ReproductionNetwork.changeEvents' depends on axioms: [propext]
+'ReproductionNetwork.changing_history_equipped' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.changing_actual_history' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.changing_history_established' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.broken_demand' depends on axioms: [propext]
+'ReproductionNetwork.myopic_retention_prefers_no_return' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.warmStart' does not depend on any axioms
+'ReproductionNetwork.warm_start_supported' does not depend on any axioms
+'ReproductionNetwork.myopic_revision_is_strict_initially' depends on axioms: [propext]
+'ReproductionNetwork.actual_myopic_loss' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.admittedRule' depends on axioms: [propext]
+'ReproductionNetwork.supported_authorizers_admit_maintenance' depends on axioms: [propext]
+'ReproductionNetwork.proposedHistory' depends on axioms: [propext]
+'ReproductionNetwork.admission_reproduced' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.proposalProcess' depends on axioms: [propext]
+'ReproductionNetwork.proposal_refines_actual_events' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.proposalEvents' depends on axioms: [propext]
+'ReproductionNetwork.proposal_history_actual' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.weakened' does not depend on any axioms
+'ReproductionNetwork.weak_authorization_allows_failure' depends on axioms: [propext, Quot.sound]
+'ReproductionNetwork.weakened_state_can_reestablish' depends on axioms: [propext]
+'ReproductionNetwork.arbitrary_proposals_preserve_warm_regime' depends on axioms: [propext, Quot.sound]

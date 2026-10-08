@@ -1,0 +1,208 @@
+{
+  "accno" : "S-BIAD2117",
+  "attributes" : [ {
+    "name" : "Template",
+    "value" : "BioImages.v5"
+  }, {
+    "name" : "Title",
+    "value" : "Context-Dependent Adaptation in Structured Environments"
+  }, {
+    "name" : "DOI",
+    "value" : "10.6019/S-BIAD2117"
+  }, {
+    "name" : "ReleaseDate",
+    "value" : "2025-06-26"
+  }, {
+    "name" : "AttachTo",
+    "value" : "BioImages"
+  } ],
+  "section" : {
+    "accno" : "study-0",
+    "type" : "Study",
+    "attributes" : [ {
+      "name" : "Title",
+      "value" : "Context-Dependent Adaptation in Structured Environments"
+    }, {
+      "name" : "ReleaseDate",
+      "value" : "2025-06-26"
+    }, {
+      "name" : "Description",
+      "value" : "Microscopy data for the bioRxiv preprint \"Context-Dependent Adaptation in Structured Environments\""
+    }, {
+      "name" : "Keywords",
+      "value" : "Bacteria"
+    }, {
+      "name" : "Keywords",
+      "value" : "Laboratory Evolution"
+    }, {
+      "name" : "Keywords",
+      "value" : "Air-Liquid-Interface"
+    }, {
+      "name" : "Keywords",
+      "value" : "Pseudomonas fluorescens"
+    }, {
+      "name" : "Acknowledgements",
+      "value" : "The method and the scientific scope have been developed through the collaboration with the co-authors of the manuscript: Gisela T. Rodríguez-Sánchez, Elisa Brambilla, J. Carlos R. Hernandez-Beltran, Michael Schwarz, and Paul B. Rainey."
+    }, {
+      "name" : "License",
+      "value" : "CC BY 4.0",
+      "valqual" : [ {
+        "name" : "URL",
+        "value" : "https://creativecommons.org/licenses/by/4.0/legalcode"
+      } ]
+    }, {
+      "name" : "Funding statement",
+      "value" : "The project is enabled by generous core support from the Max Planck Society"
+    } ],
+    "links" : [ {
+      "url" : "https://doi.org/10.1101/2025.04.29.651346",
+      "attributes" : [ {
+        "name" : "Description",
+        "value" : "Preprint manuscript"
+      } ]
+    }, {
+      "url" : "https://doi.org/10.5281/zenodo.15293177",
+      "attributes" : [ {
+        "name" : "Description",
+        "value" : "Supplemental Movies, Spreadsheets, and Scripts"
+      } ]
+    } ],
+    "subsections" : [ {
+      "accno" : "publication-1",
+      "type" : "Publication",
+      "attributes" : [ {
+        "name" : "Title",
+        "value" : "Context-Dependent Adaptation in Structured Environments"
+      }, {
+        "name" : "Authors",
+        "value" : "Yuya Karita, Gisela T. Rodríguez-Sánchez, Elisa Brambilla, J. Carlos R. Hernandez-Beltran, Michael Schwarz, Paul B. Rainey"
+      }, {
+        "name" : "DOI",
+        "value" : "10.1101/2025.04.29.651346"
+      }, {
+        "name" : "Year",
+        "value" : "2025"
+      } ]
+    }, {
+      "accno" : "biosample-4",
+      "type" : "Biosample",
+      "attributes" : [ {
+        "name" : "Title",
+        "value" : "Biosample"
+      }, {
+        "name" : "Organism",
+        "value" : "Pseudomonas fluorescens SBW25"
+      }, {
+        "name" : "Biological entity",
+        "value" : "Bacterial populations."
+      } ]
+    }, {
+      "accno" : "specimen-5",
+      "type" : "Specimen",
+      "attributes" : [ {
+        "name" : "Title",
+        "value" : "Specimen"
+      }, {
+        "name" : "Sample preparation protocol",
+        "value" : "Pseudomonas fluorescens SBW25 strains were cultured in King’s B medium (KB) at 28C. Prior to experiments, cells were streaked on an agar plate from a frozen stock and incubated for 2 days. To obtain a saturated cell suspension, cells from a single colony on a plate were taken and cultured in a liquid medium with continuous shaking for 24 hours. When diluting or transferring cells, cell suspensions were agitated well with a vortex mixer for more than one minute to resolve clumps. A saturated liquid pre-culture was diluted to the required inoculum densities in a 12-well microtiter plate (TPP) and statically incubated with a stage-top incubator (ibidi) or an environmental chamber (PeCon)."
+      } ]
+    }, {
+      "accno" : "image-acquisition-6",
+      "type" : "Image acquisition",
+      "attributes" : [ {
+        "name" : "Title",
+        "value" : "Image acquisition"
+      }, {
+        "name" : "Imaging instrument",
+        "value" : "Zeiss Axio Zoom V16, Zeiss Axio Imager Z2, Zeiss LSM880"
+      }, {
+        "name" : "Image acquisition parameters",
+        "value" : "Bacterial colonization at an air-liquid interface was captured by upright microscopes. Fluorescent microscopy was done for mScarlet and sGFP2 fluorescent proteins that were expressed by genetically-engineered bacteria."
+      }, {
+        "name" : "Imaging method",
+        "value" : "fluorescence microscopy"
+      }, {
+        "name" : "Imaging method",
+        "value" : "bright-field microscopy"
+      }, {
+        "name" : "Imaging method",
+        "value" : "dark-field microscopy"
+      }, {
+        "name" : "Imaging method",
+        "value" : "confocal microscopy"
+      } ]
+    }, {
+      "accno" : "study-component-10",
+      "type" : "Study Component",
+      "attributes" : [ {
+        "name" : "Name",
+        "value" : "Microscopy data"
+      }, {
+        "name" : "Description",
+        "value" : "Original Microscopy data used for the bioRxiv manuscript \"Context-Dependent Adaptation in Structured Environments\"."
+      }, {
+        "name" : "File List",
+        "value" : "Yuya_Karita.json"
+      } ],
+      "subsections" : [ {
+        "accno" : "associations-11",
+        "type" : "Associations",
+        "attributes" : [ {
+          "name" : "Biosample",
+          "value" : "Biosample"
+        }, {
+          "name" : "Specimen",
+          "value" : "Specimen"
+        }, {
+          "name" : "Image acquisition",
+          "value" : "Image acquisition"
+        } ]
+      } ]
+    }, {
+      "accno" : "author-1",
+      "type" : "Author",
+      "attributes" : [ {
+        "name" : "Name",
+        "value" : "Yuya Karita"
+      }, {
+        "name" : "E-mail",
+        "value" : "karita@noneq.phys.u-tokyo.ac.jp"
+      }, {
+        "name" : "Role",
+        "value" : "first author"
+      }, {
+        "name" : "ORCID",
+        "value" : "0000-0001-8581-3630"
+      }, {
+        "name" : "affiliation",
+        "value" : "o1",
+        "reference" : true
+      }, {
+        "name" : "affiliation",
+        "value" : "o2",
+        "reference" : true
+      } ]
+    }, {
+      "accno" : "o1",
+      "type" : "organisation",
+      "attributes" : [ {
+        "name" : "Name",
+        "value" : "Max Planck Institute for Evolutionary Biology"
+      }, {
+        "name" : "RORID",
+        "value" : "https://ror.org/0534re684"
+      } ]
+    }, {
+      "accno" : "o2",
+      "type" : "organisation",
+      "attributes" : [ {
+        "name" : "Name",
+        "value" : "The University of Tokyo"
+      }, {
+        "name" : "RORID",
+        "value" : "https://ror.org/057zh3y96"
+      } ]
+    } ]
+  },
+  "type" : "submission"
+}

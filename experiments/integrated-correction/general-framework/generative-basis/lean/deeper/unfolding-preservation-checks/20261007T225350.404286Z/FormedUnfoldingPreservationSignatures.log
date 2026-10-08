@@ -1,0 +1,254 @@
+Generative.FormedUnfoldingPreservation.named_stages_are_native_runs :
+  Generative.FormedGrounds.run false Generative.FormedUnfoldingPreservation.issuedHistory
+        Generative.FormedGrounds.initial =
+      Generative.FormedGrounds.issued false ∧
+    Generative.FormedGrounds.run false Generative.FormedUnfoldingPreservation.errorHistory
+          Generative.FormedGrounds.initial =
+        Generative.FormedGrounds.mistaken false ∧
+      Generative.FormedGrounds.run false Generative.FormedUnfoldingPreservation.correctionHistory
+          Generative.FormedGrounds.initial =
+        Generative.FormedGrounds.corrected false
+Generative.FormedUnfoldingPreservation.connected_formation_error_correction :
+  (Generative.FormedGrounds.run false Generative.FormedGrounds.training
+            Generative.FormedGrounds.initial).examples.length =
+      2 ∧
+    Generative.FormedGrounds.interpret
+          (Generative.FormedGrounds.observations
+            (Generative.FormedGrounds.run false Generative.FormedGrounds.training Generative.FormedGrounds.initial))
+          (some true) =
+        some true ∧
+      (Generative.FormedGrounds.run false Generative.FormedUnfoldingPreservation.issuedHistory
+              Generative.FormedGrounds.initial).judgment =
+          some false ∧
+        (Generative.FormedGrounds.run false Generative.FormedUnfoldingPreservation.errorHistory
+                Generative.FormedGrounds.initial).judgment =
+            some true ∧
+          Generative.NormativeActivity.target
+                (Generative.FormedGrounds.run false Generative.FormedUnfoldingPreservation.errorHistory
+                    Generative.FormedGrounds.initial).native =
+              false ∧
+            (Generative.FormedGrounds.run false Generative.FormedUnfoldingPreservation.correctionHistory
+                    Generative.FormedGrounds.initial).review =
+                some false ∧
+              (Generative.FormedGrounds.run false Generative.FormedUnfoldingPreservation.correctionHistory
+                    Generative.FormedGrounds.initial).judgment =
+                some false
+Generative.FormedUnfoldingPreservation.calibration_contacts_have_native_provenance :
+  Generative.FormedGrounds.AcquiredAlong false Generative.FormedGrounds.training Generative.FormedGrounds.initial
+      { receipt := { specimen := 1, reference := 0, report := false }, token := false } ∧
+    Generative.FormedGrounds.AcquiredAlong false Generative.FormedGrounds.training Generative.FormedGrounds.initial
+      { receipt := { specimen := 1, reference := 1, report := true }, token := true }
+Generative.FormedUnfoldingPreservation.same_answer_different_review_and_support :
+  (Generative.FormedGrounds.issued false).judgment = (Generative.FormedGrounds.corrected false).judgment ∧
+    (Generative.FormedGrounds.issued false).review ≠ (Generative.FormedGrounds.corrected false).review ∧
+      Generative.FormedGrounds.enabled (Generative.FormedGrounds.issued false) = true ∧
+        Generative.FormedGrounds.enabled (Generative.FormedGrounds.corrected false) = false ∧
+          Generative.FormedUnfoldingPreservation.reading (Generative.FormedGrounds.issued false) ≠
+            Generative.FormedUnfoldingPreservation.reading (Generative.FormedGrounds.corrected false)
+Generative.FormedUnfoldingPreservation.same_answer_different_rejudgment :
+  (Generative.FormedGrounds.issued false).judgment = (Generative.FormedGrounds.corrected false).judgment ∧
+    (Generative.FormedGrounds.run false [Generative.FormedGrounds.Event.judge]
+            (Generative.FormedGrounds.issued false)).judgment =
+        some false ∧
+      (Generative.FormedGrounds.run false [Generative.FormedGrounds.Event.judge]
+              (Generative.FormedGrounds.corrected false)).judgment =
+          some true ∧
+        Generative.NormativeActivity.target
+            (Generative.FormedGrounds.run false [Generative.FormedGrounds.Event.judge]
+                (Generative.FormedGrounds.corrected false)).native =
+          false
+Generative.FormedUnfoldingPreservation.record_and_uptake_have_different_outcomes :
+  have recorded :=
+    Generative.FormedGrounds.run false
+      (Generative.FormedUnfoldingPreservation.errorHistory ++ [Generative.FormedGrounds.Event.inspectOnly])
+      Generative.FormedGrounds.initial;
+  have reviewed :=
+    Generative.FormedGrounds.run false Generative.FormedUnfoldingPreservation.correctionHistory
+      Generative.FormedGrounds.initial;
+  recorded.native = reviewed.native ∧
+    recorded.examples = reviewed.examples ∧
+      recorded.signal = reviewed.signal ∧
+        recorded.judgment = some true ∧
+          reviewed.judgment = some false ∧
+            recorded.review = none ∧
+              reviewed.review = some false ∧ Generative.NormativeActivity.target recorded.native = false
+Generative.FormedUnfoldingPreservation.spent_inspection_cannot_be_reused_for_review :
+  have recorded :=
+    Generative.FormedGrounds.run false
+      (Generative.FormedUnfoldingPreservation.errorHistory ++ [Generative.FormedGrounds.Event.inspectOnly])
+      Generative.FormedGrounds.initial;
+  recorded.native.budget = 0 ∧
+    recorded.native.inspectionOpen = true ∧
+      Generative.FormedGrounds.enabled recorded = false ∧
+        Generative.FormedGrounds.step false Generative.FormedGrounds.Event.review recorded = recorded ∧
+          recorded.judgment = some true
+Generative.FormedUnfoldingPreservation.closed_access_blocks_acquisition_with_support_remaining :
+  have closed :=
+    Generative.FormedGrounds.run false
+      (Generative.FormedUnfoldingPreservation.errorHistory ++ [Generative.FormedGrounds.Event.close])
+      Generative.FormedGrounds.initial;
+  closed.native.budget = 1 ∧
+    closed.native.inspectionOpen = false ∧
+      Generative.FormedGrounds.enabled closed = false ∧
+        Generative.FormedGrounds.step false Generative.FormedGrounds.Event.review closed = closed ∧
+          closed.judgment = some true
+Generative.FormedUnfoldingPreservation.same_present_reading_different_native_continuation :
+  Generative.FormedUnfoldingPreservation.reading (Generative.FormedGrounds.issued false) =
+      Generative.FormedUnfoldingPreservation.reading Generative.FormedUnfoldingPreservation.changed ∧
+    Generative.FormedGrounds.enabled (Generative.FormedGrounds.issued false) = true ∧
+      Generative.FormedGrounds.enabled Generative.FormedUnfoldingPreservation.changed = true ∧
+        (Generative.FormedGrounds.run false [Generative.FormedGrounds.Event.review]
+                (Generative.FormedGrounds.issued false)).judgment =
+            some false ∧
+          (Generative.FormedGrounds.run false [Generative.FormedGrounds.Event.review]
+                  Generative.FormedUnfoldingPreservation.changed).judgment =
+              some true ∧
+            Generative.FormedUnfoldingPreservation.reading
+                (Generative.FormedGrounds.run false [Generative.FormedGrounds.Event.review]
+                  (Generative.FormedGrounds.issued false)) ≠
+              Generative.FormedUnfoldingPreservation.reading
+                (Generative.FormedGrounds.run false [Generative.FormedGrounds.Event.review]
+                  Generative.FormedUnfoldingPreservation.changed)
+Generative.FormedUnfoldingPreservation.distinguishing_continuations_are_reachable :
+  Generative.FormedGrounds.run false
+        (Generative.FormedUnfoldingPreservation.issuedHistory ++ [Generative.FormedGrounds.Event.review])
+        Generative.FormedGrounds.initial =
+      Generative.FormedGrounds.run false [Generative.FormedGrounds.Event.review]
+        (Generative.FormedGrounds.issued false) ∧
+    Generative.FormedGrounds.run false
+        (Generative.FormedUnfoldingPreservation.changedHistory ++ [Generative.FormedGrounds.Event.review])
+        Generative.FormedGrounds.initial =
+      Generative.FormedGrounds.run false [Generative.FormedGrounds.Event.review]
+        Generative.FormedUnfoldingPreservation.changed
+Generative.FormedUnfoldingPreservation.judging_again_cannot_perform_the_distinguishing_inspection :
+  Generative.FormedUnfoldingPreservation.reading
+        (Generative.FormedGrounds.step false Generative.FormedGrounds.Event.judge
+          (Generative.FormedGrounds.issued false)) =
+      Generative.FormedUnfoldingPreservation.reading
+        (Generative.FormedGrounds.step false Generative.FormedGrounds.Event.judge
+          Generative.FormedUnfoldingPreservation.changed) ∧
+    (Generative.FormedGrounds.step false Generative.FormedGrounds.Event.judge
+            Generative.FormedUnfoldingPreservation.changed).judgment =
+        some false ∧
+      (Generative.FormedGrounds.step false Generative.FormedGrounds.Event.review
+              Generative.FormedUnfoldingPreservation.changed).native.budget =
+        0
+Generative.FormedUnfoldingPreservation.same_endpoint_different_acquired_history :
+  Generative.FormedGrounds.run false Generative.FormedUnfoldingPreservation.lowHistory
+        Generative.FormedGrounds.initial =
+      Generative.FormedGrounds.run false Generative.FormedUnfoldingPreservation.highHistory
+        Generative.FormedGrounds.initial ∧
+    (Generative.FormedGrounds.run false [Generative.FormedGrounds.Event.inspectOnly]
+              Generative.FormedGrounds.initial).native.receipt =
+        some { specimen := 1, reference := 0, report := false } ∧
+      (Generative.FormedGrounds.run false
+                [Generative.FormedGrounds.Event.setReference 1, Generative.FormedGrounds.Event.inspectOnly]
+                Generative.FormedGrounds.initial).native.receipt =
+          some { specimen := 1, reference := 1, report := true } ∧
+        Generative.FormedUnfoldingPreservation.reading
+            (Generative.FormedGrounds.run false [Generative.FormedGrounds.Event.inspectOnly]
+              Generative.FormedGrounds.initial) ≠
+          Generative.FormedUnfoldingPreservation.reading
+            (Generative.FormedGrounds.run false
+              [Generative.FormedGrounds.Event.setReference 1, Generative.FormedGrounds.Event.inspectOnly]
+              Generative.FormedGrounds.initial)
+Generative.FormedUnfoldingPreservation.endpoint_equality_does_not_preserve_acquired_path :
+  Generative.FormedGrounds.run false Generative.FormedUnfoldingPreservation.lowHistory
+        Generative.FormedGrounds.initial =
+      Generative.FormedGrounds.run false Generative.FormedUnfoldingPreservation.highHistory
+        Generative.FormedGrounds.initial ∧
+    Generative.FormedUnfoldingPreservation.lowHistory.length =
+        Generative.FormedUnfoldingPreservation.highHistory.length ∧
+      Generative.FormedUnfoldingPreservation.readings Generative.FormedUnfoldingPreservation.lowHistory
+          Generative.FormedGrounds.initial ≠
+        Generative.FormedUnfoldingPreservation.readings Generative.FormedUnfoldingPreservation.highHistory
+          Generative.FormedGrounds.initial
+Generative.FormedUnfoldingPreservation.no_endpoint_decoder_recovers_all_acquired_paths
+  (decode : Generative.FormedGrounds.State → List Generative.FormedUnfoldingPreservation.Reading)
+  (recovers :
+    ∀ (word : List Generative.FormedGrounds.Event),
+      decode (Generative.FormedGrounds.run false word Generative.FormedGrounds.initial) =
+        Generative.FormedUnfoldingPreservation.readings word Generative.FormedGrounds.initial) :
+  False
+Generative.FormedUnfoldingPreservation.native_run_has_trace (word : List Generative.FormedGrounds.Event)
+  (s : Generative.FormedGrounds.State) :
+  Generative.Trace Generative.FormedUnfoldingPreservation.nativeProcess s word
+    (Generative.FormedGrounds.run false word s)
+Generative.FormedUnfoldingPreservation.native_trace_ends_at_run {s t : Generative.FormedGrounds.State}
+  {word : List Generative.FormedGrounds.Event}
+  (h : Generative.Trace Generative.FormedUnfoldingPreservation.nativeProcess s word t) :
+  t = Generative.FormedGrounds.run false word s
+Generative.FormedUnfoldingPreservation.native_trace_iff_run (word : List Generative.FormedGrounds.Event)
+  (s t : Generative.FormedGrounds.State) :
+  Generative.Trace Generative.FormedUnfoldingPreservation.nativeProcess s word t ↔
+    t = Generative.FormedGrounds.run false word s
+Generative.FormedUnfoldingPreservation.native_answer_iff_run {Outcome : Type}
+  (observe : Generative.FormedGrounds.State → Outcome) (s : Generative.FormedGrounds.State)
+  (word : List Generative.FormedGrounds.Event) (outcome : Outcome) :
+  Generative.UnfoldingPreservation.NativeAnswer Generative.FormedUnfoldingPreservation.nativeProcess observe s
+      (word, outcome) ↔
+    observe (Generative.FormedGrounds.run false word s) = outcome
+Generative.FormedUnfoldingPreservation.exact_account_separates_native_outcomes {Outcome Code : Type}
+  {observe : Generative.FormedGrounds.State → Outcome}
+  {p :
+    Generative.UnfoldingPreservation.Account Generative.FormedGrounds.State Generative.FormedGrounds.Event Outcome Code}
+  (hp : Generative.UnfoldingPreservation.ExactAccount Generative.FormedUnfoldingPreservation.nativeProcess observe p)
+  {s t : Generative.FormedGrounds.State} {word : List Generative.FormedGrounds.Event}
+  (different :
+    observe (Generative.FormedGrounds.run false word s) ≠ observe (Generative.FormedGrounds.run false word t)) :
+  p.encode s ≠ p.encode t
+Generative.FormedUnfoldingPreservation.exact_future_judgment_separates_equal_current_answers {Code : Type}
+  {p :
+    Generative.UnfoldingPreservation.Account Generative.FormedGrounds.State Generative.FormedGrounds.Event (Option Bool)
+      Code}
+  (hp :
+    Generative.UnfoldingPreservation.ExactAccount Generative.FormedUnfoldingPreservation.nativeProcess
+      (fun s => s.judgment) p) :
+  p.encode (Generative.FormedGrounds.issued false) ≠ p.encode (Generative.FormedGrounds.corrected false)
+Generative.FormedUnfoldingPreservation.exact_future_reading_separates_equal_current_readings {Code : Type}
+  {p :
+    Generative.UnfoldingPreservation.Account Generative.FormedGrounds.State Generative.FormedGrounds.Event
+      Generative.FormedUnfoldingPreservation.Reading Code}
+  (hp :
+    Generative.UnfoldingPreservation.ExactAccount Generative.FormedUnfoldingPreservation.nativeProcess
+      Generative.FormedUnfoldingPreservation.reading p) :
+  p.encode (Generative.FormedGrounds.issued false) ≠ p.encode Generative.FormedUnfoldingPreservation.changed
+Generative.FormedUnfoldingPreservation.exact_future_judgment_separates_closed_acquisition {Code : Type}
+  {p :
+    Generative.UnfoldingPreservation.Account Generative.FormedGrounds.State Generative.FormedGrounds.Event (Option Bool)
+      Code}
+  (hp :
+    Generative.UnfoldingPreservation.ExactAccount Generative.FormedUnfoldingPreservation.nativeProcess
+      (fun s => s.judgment) p) :
+  p.encode
+      (Generative.FormedGrounds.run false Generative.FormedUnfoldingPreservation.errorHistory
+        Generative.FormedGrounds.initial) ≠
+    p.encode
+      (Generative.FormedGrounds.run false
+        (Generative.FormedUnfoldingPreservation.errorHistory ++ [Generative.FormedGrounds.Event.close])
+        Generative.FormedGrounds.initial)
+Generative.FormedUnfoldingPreservation.exact_future_judgment_separates_exhausted_acquisition {Code : Type}
+  {p :
+    Generative.UnfoldingPreservation.Account Generative.FormedGrounds.State Generative.FormedGrounds.Event (Option Bool)
+      Code}
+  (hp :
+    Generative.UnfoldingPreservation.ExactAccount Generative.FormedUnfoldingPreservation.nativeProcess
+      (fun s => s.judgment) p) :
+  p.encode
+      (Generative.FormedGrounds.run false Generative.FormedUnfoldingPreservation.errorHistory
+        Generative.FormedGrounds.initial) ≠
+    p.encode
+      (Generative.FormedGrounds.run false
+        (Generative.FormedUnfoldingPreservation.errorHistory ++ [Generative.FormedGrounds.Event.inspectOnly])
+        Generative.FormedGrounds.initial)
+Generative.FormedUnfoldingPreservation.current_answer_alone_is_not_an_exact_future_account
+  (reader : Option Bool → List Generative.FormedGrounds.Event × Option Bool → Prop) :
+  ¬Generative.UnfoldingPreservation.ExactAccount Generative.FormedUnfoldingPreservation.nativeProcess
+      (fun s => s.judgment) { encode := fun s => s.judgment, read := reader }
+Generative.FormedUnfoldingPreservation.current_reading_alone_is_not_an_exact_future_account
+  (reader :
+    Generative.FormedUnfoldingPreservation.Reading →
+      List Generative.FormedGrounds.Event × Generative.FormedUnfoldingPreservation.Reading → Prop) :
+  ¬Generative.UnfoldingPreservation.ExactAccount Generative.FormedUnfoldingPreservation.nativeProcess
+      Generative.FormedUnfoldingPreservation.reading
+      { encode := Generative.FormedUnfoldingPreservation.reading, read := reader }

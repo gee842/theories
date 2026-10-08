@@ -1,0 +1,143 @@
+{
+  "shared_file_insertions": [
+    {
+      "path": "RESEARCH.md",
+      "before_sha256": "b5f4d59fa3fcfaf5ef336204a81fc848ae4ed788b11fdd8ddacef40959924d53",
+      "inserted_text": "**解释必要性继续：可用变化与证据保留 / Explanatory necessity through available variation, 8 October 2026.** [新整合](_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-VARIATION-INTEGRATION.md)新增 **45项 Lean 定理／87项含继承审计**，连接合取查询的条件辨认、同一过程内的释放／支持耗尽、终态混同及同事件记录修复。可靠耦合可免去隔离测试；语义可辨认不等于实际已取得证据，记录也不恢复支持。 / Checked content now includes native variation and retained differences. A same-content global description remains viable. Next join supported positive/negative evidence acquisition and calibration to this interface, crediting existing knowledge/learning results. Universal explanatory priority and normative warrant remain open; the first 17-theorem study keeps its original scope.\n\n"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "before_sha256": "12859ef98739f47d281f9951d5e14b1ad2b23793a219d92a6f32c811e6c66354",
+      "inserted_text": "**解释怎样保留生成中的差异 / Retaining differences through generative activity，2026-10-08：** [解释必要性的持续研究](unified-2026-10-05/EXPLANATORY-NECESSITY.md#7-从同样的当前结果走向不同的依存)现以45项新 Lean 定理／87项含继承审计接通可用变化、支持消耗、差异丢失与记录形成。/ Available variation may reveal one condition while erasing another; reliable coupling can support identification without isolated tests. A general recovery criterion and a projected recorded process retain the exact limits. 普遍唯一性仍开放，未将认识要求变成行动或操控的普遍要求。\n\n"
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "before_sha256": "4886e7faa119ca7f68bd063f86203f0a7fa2ecaf0a56fe73a8cfad17b5a50bea",
+      "inserted_text": "**Continued explanatory-necessity exploration, 8 October 2026.** [Ren’s follow-up](15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md#持续探索授权--continued-exploration) authorizes ongoing exploration with Lean. [Source assessment](../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-VARIATION-INTEGRATION.md#8-primary-source-assessment) records selected Pearl text and an abstract-only invariant-prediction comparison; no statistical guarantees, empirical data or external source bytes are imported.\n\n"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "before_sha256": "73e6d91c3741e1f84a9f7dd830ac2c4e6962623b637179441d2993005e232f23",
+      "inserted_text": "**Available variation → retained evidence, 8 October 2026.** [The explanatory-necessity continuation](EXPLANATORY-NECESSITY.md#7-从同样的当前结果走向不同的依存) connects conjunctive identification to support-consuming release histories, gives a general endpoint-recovery criterion and constructs a faithful recorded extension. Forty-five additional checked theorems / 87 audits retain coupled inference without isolation, impossible unsupported probes and ambiguity after merger. A complete response profile need not be obtainable in one history; storage does not replenish support. This sharpens the knowledge/correspondence requirement for the common foundation without deriving ethical warrant or defeating a global account preserving all these relations. **Next:** supported positive/negative evidence acquisition → calibration and reuse after changes, using existing knowledge and learning mechanisms. / 可用变化与记录形成共同决定后续可辨认的差异；语义恢复、实际取得和有根据的认识各保留条件。\n\n"
+    }
+  ],
+  "rows_before": {
+    "C30": {
+      "id": "C30",
+      "title_zh": "生成关系的解释必要性",
+      "title_en": "Generative relations and explanatory necessity",
+      "claim_zh": "完整有限端点回答必须保留可恢复的一步变化内容；整体约束表述可保留相同答案，故内容必要性与解释优先性分开。",
+      "claim_en": "Exact finite endpoint answers retain recoverable transition content; a global-constraint presentation can preserve the same answers, separating content necessity from explanatory priority.",
+      "scope_zh": "首轮有限查询研究完成；17项新 Lean 定理／42项含继承审计。仅可行性不足，粗配置不可组合，保留历史可恢复表示；普遍必要性、实际规律根据及唯一性未证。",
+      "scope_en": "First finite-query study complete: 17 new Lean theorems / 42 audits including imports. Feasibility-only loss and coarse-carrier failure are retained; history enrichment restores representation. Universal necessity, actual law warrant and uniqueness remain open.",
+      "links": [
+        {
+          "label_zh": "当前论述",
+          "label_en": "Current account",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md"
+        },
+        {
+          "label_zh": "论证、反审与来源",
+          "label_en": "Argument, counterreview and sources",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "Ren 原话",
+          "label_en": "Ren’s direction",
+          "path": "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md"
+        }
+      ]
+    },
+    "F22": {
+      "id": "F22",
+      "title_zh": "答案恢复、局部分解与历史约束",
+      "title_en": "Answer recovery, local decomposition and history constraints",
+      "claim_zh": "检查任意解释编码中的单步恢复、共同解读下的区别、整体历史的局部重建判准及两个范围反例。",
+      "claim_en": "Checks singleton recovery from arbitrary description codes, distinctions under shared interpretation, the local reconstruction criterion and two scope counterexamples.",
+      "scope_zh": "17项新声明均为空公理依赖；另有25项继承审计。准确回答不被定义为充分解释；端点对应、问题范围与解读显式给定，不推出概率、干预或无限历史。",
+      "scope_en": "All 17 new declarations have empty axiom dependencies, with 25 inherited audits. Answer accuracy is not defined as sufficient explanation; endpoint correspondence, query scope and interpretation are explicit. No probability, intervention or infinite-history result.",
+      "links": [
+        {
+          "label_zh": "Lean 源码",
+          "label_en": "Lean source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryNecessity.lean"
+        },
+        {
+          "label_zh": "证明对应与回执",
+          "label_en": "Proof correspondence and receipt",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md"
+        }
+      ]
+    }
+  },
+  "rows_after": {
+    "C30": {
+      "id": "C30",
+      "title_zh": "生成关系的解释必要性",
+      "title_en": "Generative relations and explanatory necessity",
+      "claim_zh": "充分回答须保留与目标有关的差异；可用变化能辨认依存，也会消耗支持或抹去前史差异，可靠耦合和实际记录可改变可恢复性。",
+      "claim_en": "Adequate answers retain target-relevant differences; available variation can reveal dependencies while consuming support or erasing prior distinctions. Warranted coupling and formed records change recoverability.",
+      "scope_zh": "首轮17项定理保留；后续45项新 Lean 定理／87项含继承审计。辨认不等于取得，支持不自动补充；整体约束可保留同内容，普遍解释优先性及规范根据仍开放。",
+      "scope_en": "First 17-theorem study retained; continuation adds 45 checked theorems / 87 audits including imports. Identifiability is not acquisition, and support need not replenish. Global constraints can preserve the same content; universal explanatory priority and normative warrant remain open.",
+      "links": [
+        {
+          "label_zh": "当前论述",
+          "label_en": "Current account",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md"
+        },
+        {
+          "label_zh": "论证、反审与来源",
+          "label_en": "Argument, counterreview and sources",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "Ren 原话",
+          "label_en": "Ren’s direction",
+          "path": "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md"
+        },
+        {
+          "label_zh": "可用变化、保留与反审",
+          "label_en": "Available variation, retention and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-VARIATION-INTEGRATION.md"
+        }
+      ]
+    },
+    "F22": {
+      "id": "F22",
+      "title_zh": "关系恢复、可用变化与保留判准",
+      "title_en": "Relation recovery, available variation and retention criteria",
+      "claim_zh": "检查有限端点恢复、合取测试辨认、同过程内释放与支持、共同终态的前史一致性判准，以及保留改变前差异的记录过程。",
+      "claim_en": "Checks finite-endpoint recovery, conjunctive identification, native release/support histories, predecessor consistency at common endpoints, and a process retaining pre-change distinctions.",
+      "scope_zh": "初轮17项声明保持原范围；新35项变化与10项恢复定理均为空公理依赖，连同42项继承审计共87项。任意条件类、可靠耦合、实际支持、固定关系与记录规律分别明示，不推出完整证据取得或唯一基础。",
+      "scope_en": "Original 17 declarations retain scope; 35 new variation and 10 recovery theorems have empty axiom dependencies, with 42 inherited audits for 87 total. Unrestricted valuations, warranted coupling, available support, fixed relations and record laws are explicit; complete evidence acquisition and unique grounding are not established.",
+      "links": [
+        {
+          "label_zh": "Lean 源码",
+          "label_en": "Lean source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryNecessity.lean"
+        },
+        {
+          "label_zh": "证明对应与回执",
+          "label_en": "Proof correspondence and receipt",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "变化源码",
+          "label_en": "Variation source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryVariation.lean"
+        },
+        {
+          "label_zh": "恢复与记录源码",
+          "label_en": "Recovery and retention source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryRecovery.lean"
+        },
+        {
+          "label_zh": "新证明对应与回执",
+          "label_en": "New proof correspondence and receipt",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-VARIATION-INTEGRATION.md"
+        }
+      ]
+    }
+  },
+  "preserved_other_entries": 79
+}

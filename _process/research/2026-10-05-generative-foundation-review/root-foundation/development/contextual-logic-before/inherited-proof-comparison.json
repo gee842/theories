@@ -1,0 +1,74 @@
+[
+  {
+    "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+    "same_source": true,
+    "same_empty_audits": true,
+    "same_standard_audits": true
+  },
+  {
+    "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/HistoryRealization.lean",
+    "same_source": true,
+    "same_empty_audits": true,
+    "same_standard_audits": true
+  },
+  {
+    "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryNecessity.lean",
+    "same_source": true,
+    "same_empty_audits": true,
+    "same_standard_audits": true
+  },
+  {
+    "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryStructure.lean",
+    "same_source": true,
+    "same_empty_audits": true,
+    "same_standard_audits": true
+  },
+  {
+    "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryUniqueness.lean",
+    "same_source": true,
+    "same_empty_audits": true,
+    "same_standard_audits": true
+  },
+  {
+    "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicUnderdetermination.lean",
+    "same_source": true,
+    "same_empty_audits": true,
+    "same_standard_audits": true
+  },
+  {
+    "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalDynamics.lean",
+    "same_source": true,
+    "same_empty_audits": true,
+    "same_standard_audits": true
+  },
+  {
+    "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean",
+    "same_source": true,
+    "same_empty_audits": true,
+    "same_standard_audits": true
+  },
+  {
+    "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryUniversality.lean",
+    "same_source": true,
+    "same_empty_audits": true,
+    "same_standard_audits": true
+  },
+  {
+    "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryJointness.lean",
+    "same_source": true,
+    "same_empty_audits": true,
+    "same_standard_audits": true
+  },
+  {
+    "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatorySharedSupport.lean",
+    "same_source": true,
+    "same_empty_audits": true,
+    "same_standard_audits": true
+  },
+  {
+    "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryLeaseDynamics.lean",
+    "same_source": true,
+    "same_empty_audits": true,
+    "same_standard_audits": true
+  }
+]

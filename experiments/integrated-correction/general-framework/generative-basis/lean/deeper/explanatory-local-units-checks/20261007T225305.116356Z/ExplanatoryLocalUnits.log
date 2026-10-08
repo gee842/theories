@@ -1,0 +1,44 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-local-units-2q3n87gt/ExplanatoryLocalUnits.lean:164:58: error: failed to synthesize
+  Decidable (Associative budgetJoin)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-local-units-2q3n87gt/ExplanatoryLocalUnits.lean:166:53: error: failed to synthesize
+  Decidable (HasUnits budgetJoin)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-local-units-2q3n87gt/ExplanatoryLocalUnits.lean:169:78: error: failed to synthesize
+  Decidable (CommonUnit budgetJoin true true ∧ ¬Composable budgetJoin true true)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-local-units-2q3n87gt/ExplanatoryLocalUnits.lean:176:78: error: unexpected token 'open'; expected '#guard_msgs', 'abbrev', 'add_decl_doc', 'axiom', 'binder_predicate', 'builtin_dsimproc', 'builtin_dsimproc_decl', 'builtin_grind_propagator', 'builtin_initialize', 'builtin_simproc', 'builtin_simproc_decl', 'class', 'coinductive', 'declare_simp_like_tactic', 'declare_syntax_cat', 'def', 'dsimproc', 'dsimproc_decl', 'elab', 'elab_rules', 'example', 'grind_propagator', 'inductive', 'infix', 'infixl', 'infixr', 'initialize', 'instance', 'macro', 'macro_rules', 'notation', 'opaque', 'postfix', 'prefix', 'recommended_spelling', 'register_error_explanation', 'register_tactic_tag', 'register_try?_tactic', 'simproc', 'simproc_decl', 'structure', 'syntax', 'tactic_extension', 'theorem' or 'unif_hint'
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-local-units-2q3n87gt/ExplanatoryLocalUnits.lean:187:8: warning: `Subtype.eq` has been deprecated: Use `Subtype.ext` instead
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-local-units-2q3n87gt/ExplanatoryLocalUnits.lean:202:10: warning: `Subtype.eq` has been deprecated: Use `Subtype.ext` instead
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-local-units-2q3n87gt/ExplanatoryLocalUnits.lean:209:10: warning: `Subtype.eq` has been deprecated: Use `Subtype.ext` instead
+'Generative.ExplanatoryLocalUnits.left_unit_unique' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.right_unit_unique' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.neutral_self_composes' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.local_units_exist_uniquely' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.joined_common_unit' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.composable_common_unit' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.left_unit_of_product' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.right_unit_of_product' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.common_unit_suffices_when_complete' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.composable_iff_common_unit' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.chain_complete_iff_unit_matching_suffices' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.boundary_assignments_unique' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.neutral_transport' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.left_unit_transport' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.right_unit_transport' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.budget_functional' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.budget_associative' depends on axioms: [sorryAx]
+'Generative.ExplanatoryLocalUnits.budget_has_units' depends on axioms: [sorryAx]
+'Generative.ExplanatoryLocalUnits.budget_matching_does_not_suffice' depends on axioms: [sorryAx]
+'Generative.ExplanatoryLocalUnits.budget_not_chain_complete' depends on axioms: [sorryAx]
+'Generative.ExplanatoryLocalUnits.trace_join_functional' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.trace_join_associative' depends on axioms: [propext]
+'Generative.ExplanatoryLocalUnits.trace_idle_neutral' depends on axioms: [propext]
+'Generative.ExplanatoryLocalUnits.trace_has_units' depends on axioms: [propext]
+'Generative.ExplanatoryLocalUnits.trace_chain_complete' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.trace_left_unit_iff' depends on axioms: [propext]
+'Generative.ExplanatoryLocalUnits.trace_right_unit_iff' depends on axioms: [propext]
+'Generative.ExplanatoryLocalUnits.trace_composable_iff_common_unit' depends on axioms: [propext]

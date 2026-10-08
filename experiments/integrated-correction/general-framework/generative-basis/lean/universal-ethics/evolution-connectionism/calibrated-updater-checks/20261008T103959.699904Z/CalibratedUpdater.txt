@@ -1,0 +1,319 @@
+CalibratedUpdater.lean:91:41: warning: This simp argument is unused:
+  Bool.true_eq
+
+Hint: Omit it from the simp argument list.
+  simp only [localRead, ready, readings, B̵o̵o̵l̵.̵t̵r̵u̵e̵_̵e̵q̵,̵ ̵↓reduceIte]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CalibratedUpdater.lean:96:60: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Decidable (recalls s p)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+CalibratedUpdater.lean:96:85: error: unsolved goals
+case e_val
+channels : Fin 3 → Channel
+hg : ∀ (i : Fin 3), (channels i).gain ≠ 0
+p s : Profile 3
+⊢ (decide (0 < s 0 * p 0) && (decide (0 < s 1 * p 1) && decide (0 < s 2 * p 2))) = sorry ()
+CalibratedUpdater.lean:99:8: warning: This simp argument is unused:
+  recalls
+
+Hint: Omit it from the simp argument list.
+  simp [r̵e̵c̵a̵l̵l̵s̵,̵ ̵Fin.forall_fin_succ, Bool.and_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CalibratedUpdater.lean:99:17: warning: This simp argument is unused:
+  Fin.forall_fin_succ
+
+Hint: Omit it from the simp argument list.
+  simp [recalls, F̵i̵n̵.̵f̵o̵r̵a̵l̵l̵_̵f̵i̵n̵_̵s̵u̵c̵c̵,̵ ̵Bool.and_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CalibratedUpdater.lean:99:38: warning: This simp argument is unused:
+  Bool.and_assoc
+
+Hint: Omit it from the simp argument list.
+  simp [recalls, Fin.forall_fin_succ,̵ ̵B̵o̵o̵l̵.̵a̵n̵d̵_̵a̵s̵s̵o̵c̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CalibratedUpdater.lean:157:8: error(lean.unknownIdentifier): Unknown constant `CalibratedUpdater.Apparatus.ext`
+CalibratedUpdater.lean:174:43: error: Tactic `split_ifs` failed: no if-then-else conditions to split
+
+case contact
+channels : Fin 3 → Channel
+h : Apparatus
+i : Fin 3
+⊢ (match Build.contact i with
+        | Build.contact i =>
+          if h.wired i = false ∧ 0 < h.parts ∧ 0 < h.fuel then
+            { zero := h.zero, one := h.one, wired := Function.update h.wired i true, inhibit := h.inhibit,
+              parts := h.parts - 1, fuel := h.fuel - 1, spent := h.spent + 1 }
+          else h
+        | Build.reference i one => acquire channels i one h
+        | Build.inhibitor => connectInhibitor h).fuel +
+      (match Build.contact i with
+        | Build.contact i =>
+          if h.wired i = false ∧ 0 < h.parts ∧ 0 < h.fuel then
+            { zero := h.zero, one := h.one, wired := Function.update h.wired i true, inhibit := h.inhibit,
+              parts := h.parts - 1, fuel := h.fuel - 1, spent := h.spent + 1 }
+          else h
+        | Build.reference i one => acquire channels i one h
+        | Build.inhibitor => connectInhibitor h).spent =
+    h.fuel + h.spent
+CalibratedUpdater.lean:177:4: error: Tactic `split_ifs` failed: no if-then-else conditions to split
+
+case reference
+channels : Fin 3 → Channel
+h : Apparatus
+i : Fin 3
+one : Bool
+⊢ (match Build.reference i one with
+        | Build.contact i => connect i h
+        | Build.reference i one =>
+          if h.wired i = true ∧ 0 < h.fuel then
+            if one = true then
+              { zero := h.zero, one := Function.update h.one i (some (raw (channels i) 1)), wired := h.wired,
+                inhibit := h.inhibit, parts := h.parts, fuel := h.fuel - 1, spent := h.spent + 1 }
+            else
+              { zero := Function.update h.zero i (some (raw (channels i) 0)), one := h.one, wired := h.wired,
+                inhibit := h.inhibit, parts := h.parts, fuel := h.fuel - 1, spent := h.spent + 1 }
+          else h
+        | Build.inhibitor => connectInhibitor h).fuel +
+      (match Build.reference i one with
+        | Build.contact i => connect i h
+        | Build.reference i one =>
+          if h.wired i = true ∧ 0 < h.fuel then
+            if one = true then
+              { zero := h.zero, one := Function.update h.one i (some (raw (channels i) 1)), wired := h.wired,
+                inhibit := h.inhibit, parts := h.parts, fuel := h.fuel - 1, spent := h.spent + 1 }
+            else
+              { zero := Function.update h.zero i (some (raw (channels i) 0)), one := h.one, wired := h.wired,
+                inhibit := h.inhibit, parts := h.parts, fuel := h.fuel - 1, spent := h.spent + 1 }
+          else h
+        | Build.inhibitor => connectInhibitor h).spent =
+    h.fuel + h.spent
+CalibratedUpdater.lean:213:23: error: Invalid simp theorem: Expected a proposition, but found
+  Network 3 → UpdaterConsequences.Task → Prop
+CalibratedUpdater.lean:211:81: error: unsolved goals
+channels : Fin 3 → Channel
+hg : ∀ (i : Fin 3), (channels i).gain ≠ 0
+B : Network 3
+task : UpdaterConsequences.Task
+⊢ (if sorry () = true then B else learn 1 (profile task) B) =
+    if UpdaterConsequences.succeeds B task then B else learn 1 (profile task) B
+CalibratedUpdater.lean:212:72: warning: This simp argument is unused:
+  decide_eq_true_eq
+
+Hint: Omit it from the simp argument list.
+  simp only [nativeUpdate, ready_report channels hg, Option.some.injEq,̵ ̵d̵e̵c̵i̵d̵e̵_̵e̵q̵_̵t̵r̵u̵e̵_̵e̵q̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CalibratedUpdater.lean:304:16: error: Tactic `rfl` failed: The left-hand side
+  {
+    network :=
+      { network := (run route x.network cycle).1, active := true, stock := x.stock + (run route x.network cycle).2 - 4,
+          source := x.source - 4, spent := x.spent + 4,
+          waste := x.waste + (4 - (run route x.network cycle).2) }.network,
+    route := none,
+    stock :=
+      { network := (run route x.network cycle).1, active := true, stock := x.stock + (run route x.network cycle).2 - 4,
+          source := x.source - 4, spent := x.spent + 4, waste := x.waste + (4 - (run route x.network cycle).2) }.stock,
+    source :=
+      { network := (run route x.network cycle).1, active := true, stock := x.stock + (run route x.network cycle).2 - 4,
+          source := x.source - 4, spent := x.spent + 4, waste := x.waste + (4 - (run route x.network cycle).2) }.source,
+    spent :=
+      { network := (run route x.network cycle).1, active := true, stock := x.stock + (run route x.network cycle).2 - 4,
+          source := x.source - 4, spent := x.spent + 4, waste := x.waste + (4 - (run route x.network cycle).2) }.spent,
+    waste :=
+      { network := (run route x.network cycle).1, active := true, stock := x.stock + (run route x.network cycle).2 - 4,
+          source := x.source - 4, spent := x.spent + 4, waste := x.waste + (4 - (run route x.network cycle).2) }.waste }
+is not definitionally equal to the right-hand side
+  { network := (run route x.network cycle).1, route := some route, stock := x.stock + (run route x.network cycle).2 - 4,
+    source := x.source - 4, spent := x.spent + 4, waste := x.waste + (4 - (run route x.network cycle).2) }
+
+case neg
+h : Apparatus
+channels : Fin 3 → Channel
+route : Route
+corresponds :
+  ∀ (B : Network 3) (tasks : List UpdaterConsequences.Task), nativeRun h channels B tasks = run route B tasks
+x : NativeState
+hx : x.active = true
+h✝² : 4 ≤ x.source
+h✝¹ : 4 ≤ x.stock + (run route x.network cycle).2
+h✝ :
+  ¬{ network := (run route x.network cycle).1, active := true, stock := x.stock + (run route x.network cycle).2 - 4,
+          source := x.source - 4, spent := x.spent + 4,
+          waste := x.waste + (4 - (run route x.network cycle).2) }.active =
+      true
+⊢ {
+      network :=
+        { network := (run route x.network cycle).1, active := true,
+            stock := x.stock + (run route x.network cycle).2 - 4, source := x.source - 4, spent := x.spent + 4,
+            waste := x.waste + (4 - (run route x.network cycle).2) }.network,
+      route := none,
+      stock :=
+        { network := (run route x.network cycle).1, active := true,
+            stock := x.stock + (run route x.network cycle).2 - 4, source := x.source - 4, spent := x.spent + 4,
+            waste := x.waste + (4 - (run route x.network cycle).2) }.stock,
+      source :=
+        { network := (run route x.network cycle).1, active := true,
+            stock := x.stock + (run route x.network cycle).2 - 4, source := x.source - 4, spent := x.spent + 4,
+            waste := x.waste + (4 - (run route x.network cycle).2) }.source,
+      spent :=
+        { network := (run route x.network cycle).1, active := true,
+            stock := x.stock + (run route x.network cycle).2 - 4, source := x.source - 4, spent := x.spent + 4,
+            waste := x.waste + (4 - (run route x.network cycle).2) }.spent,
+      waste :=
+        { network := (run route x.network cycle).1, active := true,
+            stock := x.stock + (run route x.network cycle).2 - 4, source := x.source - 4, spent := x.spent + 4,
+            waste := x.waste + (4 - (run route x.network cycle).2) }.waste } =
+    { network := (run route x.network cycle).1, route := some route,
+      stock := x.stock + (run route x.network cycle).2 - 4, source := x.source - 4, spent := x.spent + 4,
+      waste := x.waste + (4 - (run route x.network cycle).2) }
+CalibratedUpdater.lean:304:16: error: Tactic `rfl` failed: The left-hand side
+  {
+    network :=
+      { network := (run route x.network cycle).1, active := false, stock := x.stock + (run route x.network cycle).2,
+          source := x.source - 4, spent := x.spent, waste := x.waste + (4 - (run route x.network cycle).2) }.network,
+    route := some route,
+    stock :=
+      { network := (run route x.network cycle).1, active := false, stock := x.stock + (run route x.network cycle).2,
+          source := x.source - 4, spent := x.spent, waste := x.waste + (4 - (run route x.network cycle).2) }.stock,
+    source :=
+      { network := (run route x.network cycle).1, active := false, stock := x.stock + (run route x.network cycle).2,
+          source := x.source - 4, spent := x.spent, waste := x.waste + (4 - (run route x.network cycle).2) }.source,
+    spent :=
+      { network := (run route x.network cycle).1, active := false, stock := x.stock + (run route x.network cycle).2,
+          source := x.source - 4, spent := x.spent, waste := x.waste + (4 - (run route x.network cycle).2) }.spent,
+    waste :=
+      { network := (run route x.network cycle).1, active := false, stock := x.stock + (run route x.network cycle).2,
+          source := x.source - 4, spent := x.spent, waste := x.waste + (4 - (run route x.network cycle).2) }.waste }
+is not definitionally equal to the right-hand side
+  { network := (run route x.network cycle).1, route := none, stock := x.stock + (run route x.network cycle).2,
+    source := x.source - 4, spent := x.spent, waste := x.waste + (4 - (run route x.network cycle).2) }
+
+case pos
+h : Apparatus
+channels : Fin 3 → Channel
+route : Route
+corresponds :
+  ∀ (B : Network 3) (tasks : List UpdaterConsequences.Task), nativeRun h channels B tasks = run route B tasks
+x : NativeState
+hx : x.active = true
+h✝² : 4 ≤ x.source
+h✝¹ : ¬4 ≤ x.stock + (run route x.network cycle).2
+h✝ : False
+⊢ {
+      network :=
+        { network := (run route x.network cycle).1, active := false, stock := x.stock + (run route x.network cycle).2,
+            source := x.source - 4, spent := x.spent, waste := x.waste + (4 - (run route x.network cycle).2) }.network,
+      route := some route,
+      stock :=
+        { network := (run route x.network cycle).1, active := false, stock := x.stock + (run route x.network cycle).2,
+            source := x.source - 4, spent := x.spent, waste := x.waste + (4 - (run route x.network cycle).2) }.stock,
+      source :=
+        { network := (run route x.network cycle).1, active := false, stock := x.stock + (run route x.network cycle).2,
+            source := x.source - 4, spent := x.spent, waste := x.waste + (4 - (run route x.network cycle).2) }.source,
+      spent :=
+        { network := (run route x.network cycle).1, active := false, stock := x.stock + (run route x.network cycle).2,
+            source := x.source - 4, spent := x.spent, waste := x.waste + (4 - (run route x.network cycle).2) }.spent,
+      waste :=
+        { network := (run route x.network cycle).1, active := false, stock := x.stock + (run route x.network cycle).2,
+            source := x.source - 4, spent := x.spent, waste := x.waste + (4 - (run route x.network cycle).2) }.waste } =
+    { network := (run route x.network cycle).1, route := none, stock := x.stock + (run route x.network cycle).2,
+      source := x.source - 4, spent := x.spent, waste := x.waste + (4 - (run route x.network cycle).2) }
+CalibratedUpdater.lean:303:4: warning: This simp argument is unused:
+  Bool.true_eq
+
+Hint: Omit it from the simp argument list.
+  simp only [nativeCycle, hx, project, Bool.false_eq_true,
+  ̵  ̵ ̵ ̵B̵o̵o̵l̵.̵t̵r̵u̵e̵_̵e̵q̵,̵ ̵false_and,
+  ̲  ̲ ̲ ̲true_and, ↓reduceIte, cycleStep, corresponds]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CalibratedUpdater.lean:310:16: error: Tactic `rfl` failed: The left-hand side
+  {
+    network :=
+      { network := x.network, active := true, stock := x.stock - 2, source := x.source, spent := x.spent + 2,
+          waste := x.waste }.network,
+    route := none,
+    stock :=
+      { network := x.network, active := true, stock := x.stock - 2, source := x.source, spent := x.spent + 2,
+          waste := x.waste }.stock,
+    source :=
+      { network := x.network, active := true, stock := x.stock - 2, source := x.source, spent := x.spent + 2,
+          waste := x.waste }.source,
+    spent :=
+      { network := x.network, active := true, stock := x.stock - 2, source := x.source, spent := x.spent + 2,
+          waste := x.waste }.spent,
+    waste :=
+      { network := x.network, active := true, stock := x.stock - 2, source := x.source, spent := x.spent + 2,
+          waste := x.waste }.waste }
+is not definitionally equal to the right-hand side
+  { network := x.network, route := some Route.responsive, stock := x.stock - 2, source := x.source,
+    spent := x.spent + 2, waste := x.waste }
+
+case neg
+h : Apparatus
+hu : usable h
+x : NativeState
+hx : x.active = false
+h✝¹ : 2 ≤ x.stock
+h✝ :
+  ¬{ network := x.network, active := true, stock := x.stock - 2, source := x.source, spent := x.spent + 2,
+          waste := x.waste }.active =
+      true
+⊢ {
+      network :=
+        { network := x.network, active := true, stock := x.stock - 2, source := x.source, spent := x.spent + 2,
+            waste := x.waste }.network,
+      route := none,
+      stock :=
+        { network := x.network, active := true, stock := x.stock - 2, source := x.source, spent := x.spent + 2,
+            waste := x.waste }.stock,
+      source :=
+        { network := x.network, active := true, stock := x.stock - 2, source := x.source, spent := x.spent + 2,
+            waste := x.waste }.source,
+      spent :=
+        { network := x.network, active := true, stock := x.stock - 2, source := x.source, spent := x.spent + 2,
+            waste := x.waste }.spent,
+      waste :=
+        { network := x.network, active := true, stock := x.stock - 2, source := x.source, spent := x.spent + 2,
+            waste := x.waste }.waste } =
+    { network := x.network, route := some Route.responsive, stock := x.stock - 2, source := x.source,
+      spent := x.spent + 2, waste := x.waste }
+CalibratedUpdater.lean:310:16: error: Tactic `rfl` failed: The left-hand side
+  { network := x.network, route := some Route.responsive, stock := x.stock, source := x.source, spent := x.spent,
+    waste := x.waste }
+is not definitionally equal to the right-hand side
+  { network := x.network, route := none, stock := x.stock, source := x.source, spent := x.spent, waste := x.waste }
+
+case pos
+h : Apparatus
+hu : usable h
+x : NativeState
+hx : x.active = false
+h✝¹ : ¬2 ≤ x.stock
+h✝ : x.active = true
+⊢ { network := x.network, route := some Route.responsive, stock := x.stock, source := x.source, spent := x.spent,
+      waste := x.waste } =
+    { network := x.network, route := none, stock := x.stock, source := x.source, spent := x.spent, waste := x.waste }
+CalibratedUpdater.lean:374:2: error: unsolved goals
+case left
+hp : recalls second (step Real.tanh 1 1 (weighted 1 4) first)
+hr :
+  report (ready identityChannels) (readings changedChannels (step Real.tanh 1 1 (weighted 1 4) first)) first = some true
+⊢ ¬report
+          { zero := fun i => some (raw (identityChannels i) 0), one := fun i => some (raw (identityChannels i) 1),
+            wired := fun x => true, inhibit := true, parts := 0, fuel := 0, spent := 10 }
+          (readings changedChannels (step Real.tanh 1 1 (weighted 1 4) first)) first =
+        some true →
+    learn 1 first (weighted 1 4) = weighted 1 4
+CalibratedUpdater.lean:374:31: warning: This simp argument is unused:
+  hr
+
+Hint: Omit it from the simp argument list.
+  simp [nativeUpdate, ̲profile,h̵ ̲r,̵r̵eady]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

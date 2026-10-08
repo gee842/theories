@@ -1,0 +1,24 @@
+SustainedJudgment.lean:111:3: error: unknown tactic
+SustainedJudgment.lean:109:79: error: unsolved goals
+H C G : Type
+eligible : H → Prop
+protect : H → C → Prop
+gain : H → G → Prop
+target : H → Prop
+claim : C
+meaning : ∀ (a : H), protect a claim ↔ target a
+restoration : ∀ (a : H), eligible a → ¬target a → ∃ b, eligible b ∧ Included (protect a) (protect b) ∧ target b
+a : H
+chosen : Frontier eligible (Better protect gain) a
+⊢ target a
+SustainedJudgment.lean:192:54: error: Expected type must not contain free variables
+  ¬0 < (0, n).fst
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+SustainedJudgment.lean:193:53: error: Expected type must not contain free variables
+  ¬0 < (n, 0).snd
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+SustainedJudgment.lean:195:56: warning: unused variable `hn`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`

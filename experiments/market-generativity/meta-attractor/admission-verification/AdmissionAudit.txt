@@ -1,0 +1,56 @@
+'AdmissionRevision.observation' does not depend on any axioms
+'AdmissionRevision.acquiredLoss' does not depend on any axioms
+'AdmissionRevision.guard' does not depend on any axioms
+'AdmissionRevision.choose' does not depend on any axioms
+'AdmissionRevision.learnedHistory' depends on axioms: [propext]
+'AdmissionRevision.broken_stock' depends on axioms: [propext]
+'AdmissionRevision.conservative_loss_preserves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdmissionRevision.learned_preservation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdmissionRevision.learned_history_actual' depends on axioms: [propext, Quot.sound]
+'AdmissionRevision.probe' depends on axioms: [propext]
+'AdmissionRevision.recordBody' does not depend on any axioms
+'AdmissionRevision.Reading' does not depend on any axioms
+'AdmissionRevision.measuredLoss' does not depend on any axioms
+'AdmissionRevision.Learner' does not depend on any axioms
+'AdmissionRevision.prepared' does not depend on any axioms
+'AdmissionRevision.trialReading' depends on axioms: [propext]
+'AdmissionRevision.probed' depends on axioms: [propext]
+'AdmissionRevision.learn' does not depend on any axioms
+'AdmissionRevision.acquired' depends on axioms: [propext]
+'AdmissionRevision.Event' does not depend on any axioms
+'AdmissionRevision.process' depends on axioms: [propext]
+'AdmissionRevision.probe_stays_established' depends on axioms: [propext]
+'AdmissionRevision.probe_is_executable' depends on axioms: [propext, Quot.sound]
+'AdmissionRevision.acquired_loss_from_faithful_reading' depends on axioms: [propext, Quot.sound]
+'AdmissionRevision.saturated_reading_erases_loss' depends on axioms: [propext, Quot.sound]
+'AdmissionRevision.acquisition_is_actual' depends on axioms: [propext]
+'AdmissionRevision.learning_uses_retained_reading' depends on axioms: [propext]
+'AdmissionRevision.no_learning_before_observation' depends on axioms: [propext]
+'AdmissionRevision.trial_records_its_actual_transition' depends on axioms: [propext]
+'AdmissionRevision.acquisition_accounting' depends on axioms: [propext]
+'AdmissionRevision.acquired_supported' depends on axioms: [propext]
+'AdmissionRevision.new_criterion_changes_admission' depends on axioms: [propext]
+'AdmissionRevision.new_criterion_retains_correction' depends on axioms: [propext]
+'AdmissionRevision.continuation' depends on axioms: [propext]
+'AdmissionRevision.faithful_continuation_supported' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdmissionRevision.faithful_continuation_actual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdmissionRevision.trial_learning_and_reproduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdmissionRevision.learned_operation_refines_physical' depends on axioms: [propext, Quot.sound]
+'AdmissionRevision.first_return_then_withdrawal' depends on axioms: [propext, Quot.sound]
+'AdmissionRevision.low_stock_restored' depends on axioms: [propext, Quot.sound]
+'AdmissionRevision.high_stock_withdrawn' depends on axioms: [propext, Quot.sound]
+'AdmissionRevision.alternating_stock_for_all_time' depends on axioms: [propext, Quot.sound]
+'AdmissionRevision.finite_material_advantage' depends on axioms: [propext]
+'AdmissionRevision.misleading_reading_licenses_actual_loss' depends on axioms: [propext, Quot.sound]
+'AdmissionRevision.damaged_criterion_cannot_operate' depends on axioms: [propext, Quot.sound]
+'AdmissionRevision.equipment_survives_while_admission_fails' depends on axioms: [propext, Quot.sound]
+'AdmissionRevision.alarm_arrives_below_operating_floor' depends on axioms: [propext]
+'AdmissionRevision.known_upper_error_can_restore_margin' depends on axioms: [propext, Quot.sound]
+'AdmissionRevision.bounded_error_adjustment_preserves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AdmissionRevision.Route' does not depend on any axioms
+'AdmissionRevision.routeCycle' depends on axioms: [propext]
+'AdmissionRevision.routeHistory' depends on axioms: [propext]
+'AdmissionRevision.protected_histories_identical' depends on axioms: [propext]
+'AdmissionRevision.beforeTrial' depends on axioms: [propext]
+'AdmissionRevision.protected_histories_have_different_untried_effects' depends on axioms: [propext, Quot.sound]
+'AdmissionRevision.no_protected_history_classifier' depends on axioms: [propext, Quot.sound]

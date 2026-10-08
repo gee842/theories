@@ -1,0 +1,101 @@
+DiagnosticTracking.same_discrepancy_different_repairs :
+  DiagnosticTracking.response 1 1 0 0 1 1 = 2 ∧
+    DiagnosticTracking.response 0 2 0 0 1 1 = 2 ∧ DiagnosticTracking.response 0 1 1 0 1 1 = 2
+DiagnosticTracking.diagnostic_records_distinguish :
+  (DiagnosticTracking.response 1 1 0 0 0 0, DiagnosticTracking.response 1 1 0 0 1 0,
+        DiagnosticTracking.response 1 1 0 0 0 1) =
+      (1, 2, 1) ∧
+    (DiagnosticTracking.response 0 2 0 0 0 0, DiagnosticTracking.response 0 2 0 0 1 0,
+          DiagnosticTracking.response 0 2 0 0 0 1) =
+        (0, 2, 0) ∧
+      (DiagnosticTracking.response 0 1 1 0 0 0, DiagnosticTracking.response 0 1 1 0 1 0,
+          DiagnosticTracking.response 0 1 1 0 0 1) =
+        (0, 1, 1)
+DiagnosticTracking.three_probes_miss_joint_relation (b g k h : ℝ) :
+  DiagnosticTracking.response b g k h 0 0 = DiagnosticTracking.response b g k 0 0 0 ∧
+    DiagnosticTracking.response b g k h 1 0 = DiagnosticTracking.response b g k 0 1 0 ∧
+      DiagnosticTracking.response b g k h 0 1 = DiagnosticTracking.response b g k 0 0 1
+DiagnosticTracking.joint_probe_exposes_missing_relation (b g k h : ℝ) :
+  DiagnosticTracking.response b g k h 1 1 - DiagnosticTracking.response b g k 0 1 1 = h
+DiagnosticTracking.four_readings_recover_parameters (b g k h : ℝ) :
+  DiagnosticTracking.response b g k h 0 0 = b ∧
+    DiagnosticTracking.acquiredGain (DiagnosticTracking.response b g k h 0 0)
+          (DiagnosticTracking.response b g k h 1 0) =
+        g ∧
+      DiagnosticTracking.acquiredGain (DiagnosticTracking.response b g k h 0 0)
+            (DiagnosticTracking.response b g k h 0 1) =
+          k ∧
+        DiagnosticTracking.acquiredJoint (DiagnosticTracking.response b g k h 0 0)
+            (DiagnosticTracking.response b g k h 1 0) (DiagnosticTracking.response b g k h 0 1)
+            (DiagnosticTracking.response b g k h 1 1) =
+          h
+DiagnosticTracking.acquired_effect_matches (b g k h u z : ℝ) :
+  DiagnosticTracking.acquiredEffect (DiagnosticTracking.response b g k h 0 0) (DiagnosticTracking.response b g k h 1 0)
+      (DiagnosticTracking.response b g k h 0 1) (DiagnosticTracking.response b g k h 1 1) u z =
+    g * u + k * z + h * u * z
+DiagnosticTracking.acquired_parameters_error_bounds (b g k h y0 yu yz yuz e0 eu ez euz : ℝ)
+  (h0 : |y0 - DiagnosticTracking.response b g k h 0 0| ≤ e0) (hu : |yu - DiagnosticTracking.response b g k h 1 0| ≤ eu)
+  (hz : |yz - DiagnosticTracking.response b g k h 0 1| ≤ ez)
+  (huz : |yuz - DiagnosticTracking.response b g k h 1 1| ≤ euz) :
+  |y0 - b| ≤ e0 ∧
+    |DiagnosticTracking.acquiredGain y0 yu - g| ≤ eu + e0 ∧
+      |DiagnosticTracking.acquiredGain y0 yz - k| ≤ ez + e0 ∧
+        |DiagnosticTracking.acquiredJoint y0 yu yz yuz - h| ≤ euz + eu + ez + e0
+DiagnosticTracking.reference_and_readout_offsets_confounded (reference bias g k h u z : ℝ) :
+  reference + DiagnosticTracking.response bias g k h u z = DiagnosticTracking.response (reference + bias) g k h u z
+DiagnosticTracking.four_probes_do_not_certify_unrepresented_curvature (b g k h c : ℝ) :
+  (∀ u ∈ {0, 1},
+      ∀ z ∈ {0, 1},
+        DiagnosticTracking.response b g k h u z + c * u * (u - 1) = DiagnosticTracking.response b g k h u z) ∧
+    DiagnosticTracking.response b g k h 2 0 + c * 2 * (2 - 1) - DiagnosticTracking.response b g k h 2 0 = 2 * c
+DiagnosticTracking.bound_transfers_with_drift (estimate old current precision drift : ℝ)
+  (hp : |estimate - old| ≤ precision) (hd : |old - current| ≤ drift) : |estimate - current| ≤ precision + drift
+DiagnosticTracking.corrected_reading_bound (raw actual bias learned noiseBound biasBound : ℝ)
+  (hr : |raw - (actual + bias)| ≤ noiseBound) (hb : |learned - bias| ≤ biasBound) :
+  |raw - learned - actual| ≤ noiseBound + biasBound
+DiagnosticTracking.revised_effect_bound (current next g k h learnedG learnedK learnedH u z d G K H D : ℝ)
+  (hlaw : next = current + g * u + k * z + h * u * z + d) (hg : |learnedG - g| ≤ G) (hk : |learnedK - k| ≤ K)
+  (hh : |learnedH - h| ≤ H) (hd : |d| ≤ D) :
+  |learnedG * u + learnedK * z + learnedH * u * z - (next - current)| ≤ G * |u| + K * |z| + H * |u * z| + D
+DiagnosticTracking.calibration_to_revised_residual
+  (q b g k h y0 yu yz yuz e0 eu ez euz raw current next u z d noiseBound D : ℝ) (hq : q ≤ 1)
+  (h0 : |y0 - DiagnosticTracking.response b g k h 0 0| ≤ e0) (hu : |yu - DiagnosticTracking.response b g k h 1 0| ≤ eu)
+  (hz : |yz - DiagnosticTracking.response b g k h 0 1| ≤ ez)
+  (huz : |yuz - DiagnosticTracking.response b g k h 1 1| ≤ euz) (hr : |raw - (current + b)| ≤ noiseBound)
+  (hlaw : next = current + g * u + k * z + h * u * z + d) (hd : |d| ≤ D) :
+  (1 - q) * |raw - y0 - current| + |DiagnosticTracking.acquiredEffect y0 yu yz yuz u z - (next - current)| ≤
+    (1 - q) * (noiseBound + e0) + (eu + e0) * |u| + (ez + e0) * |z| + (euz + eu + ez + e0) * |u * z| + D
+DiagnosticTracking.acquired_revision_bounds_tracking_step (q b g k h y0 yu yz yuz e0 eu ez euz noiseBound D initial : ℝ)
+  (hq : 0 ≤ q) (hq1 : q ≤ 1) (raw actual command setting disturbance : ℕ → ℝ) (n : ℕ)
+  (h0 : |y0 - DiagnosticTracking.response b g k h 0 0| ≤ e0) (hu : |yu - DiagnosticTracking.response b g k h 1 0| ≤ eu)
+  (hz : |yz - DiagnosticTracking.response b g k h 0 1| ≤ ez)
+  (huz : |yuz - DiagnosticTracking.response b g k h 1 1| ≤ euz) (hr : |raw n - (actual n + b)| ≤ noiseBound)
+  (hlaw : actual (n + 1) = actual n + g * command n + k * setting n + h * command n * setting n + disturbance n)
+  (hd : |disturbance n| ≤ D) :
+  ActionAwareTracking.error q (fun i => raw i - y0) actual
+      (fun i => DiagnosticTracking.acquiredEffect y0 yu yz yuz (command i) (setting i)) initial (n + 1) ≤
+    q *
+        ActionAwareTracking.error q (fun i => raw i - y0) actual
+          (fun i => DiagnosticTracking.acquiredEffect y0 yu yz yuz (command i) (setting i)) initial n +
+      ((1 - q) * (noiseBound + e0) + (eu + e0) * |command n| + (ez + e0) * |setting n| +
+          (euz + eu + ez + e0) * |command n * setting n| +
+        D)
+DiagnosticTracking.repaired_tail_converges (q : ℝ) (hq : 0 ≤ q) (hq1 : q < 1) (reading actual increment : ℕ → ℝ)
+  (initial : ℝ) (N : ℕ) (hr : ∀ (n : ℕ), N ≤ n → reading n = actual n)
+  (hi : ∀ (n : ℕ), N ≤ n → increment n = actual (n + 1) - actual n) :
+  Filter.Tendsto (ActionAwareTracking.error q reading actual increment initial) Filter.atTop (nhds 0)
+DiagnosticTracking.acquired_repair_restores_convergence (q : ℝ) (hq : 0 ≤ q) (hq1 : q < 1) (b g k h initial : ℝ)
+  (reading actual increment raw command setting : ℕ → ℝ) (N : ℕ) (hread : ∀ (n : ℕ), N ≤ n → raw n = actual n + b)
+  (hlaw : ∀ (n : ℕ), N ≤ n → actual (n + 1) = actual n + g * command n + k * setting n + h * command n * setting n)
+  (hinstallRead : ∀ (n : ℕ), N ≤ n → reading n = raw n - DiagnosticTracking.response b g k h 0 0)
+  (hinstallEffect :
+    ∀ (n : ℕ),
+      N ≤ n →
+        increment n =
+          DiagnosticTracking.acquiredEffect (DiagnosticTracking.response b g k h 0 0)
+            (DiagnosticTracking.response b g k h 1 0) (DiagnosticTracking.response b g k h 0 1)
+            (DiagnosticTracking.response b g k h 1 1) (command n) (setting n)) :
+  Filter.Tendsto (ActionAwareTracking.error q reading actual increment initial) Filter.atTop (nhds 0)
+DiagnosticTracking.bounded_repaired_tail (e w : ℕ → ℝ) (q B : ℝ) (hq : 0 ≤ q) (hq1 : q < 1) (hB : 0 ≤ B) (N : ℕ)
+  (hs : ∀ (n : ℕ), N ≤ n → e (n + 1) ≤ q * e n + w n) (hw : ∀ (n : ℕ), N ≤ n → w n ≤ (1 - q) * B) (ε : ℝ) :
+  0 < ε → ∃ M, ∀ (n : ℕ), M ≤ n → e n < B + ε

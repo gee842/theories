@@ -1,0 +1,17 @@
+'Generative.ExplanatoryNecessity.decode_singleton_recovers_step' does not depend on any axioms
+'Generative.ExplanatoryNecessity.same_description_preserves_steps' does not depend on any axioms
+'Generative.ExplanatoryNecessity.different_steps_require_different_descriptions' does not depend on any axioms
+'Generative.ExplanatoryNecessity.step_equivalence_iff_trace_equivalence' does not depend on any axioms
+'Generative.ExplanatoryNecessity.static_profile_adequate' does not depend on any axioms
+'Generative.ExplanatoryNecessity.adequate_answers_agree' does not depend on any axioms
+'Generative.ExplanatoryNecessity.local_decomposition_iff_trace_representation' does not depend on any axioms
+'Generative.ExplanatoryNecessity.idle_feasible' does not depend on any axioms
+'Generative.ExplanatoryNecessity.flip_feasible' does not depend on any axioms
+'Generative.ExplanatoryNecessity.feasibility_profiles_agree' does not depend on any axioms
+'Generative.ExplanatoryNecessity.endpoint_profiles_differ' does not depend on any axioms
+'Generative.ExplanatoryNecessity.bounded_empty' does not depend on any axioms
+'Generative.ExplanatoryNecessity.bounded_singleton' does not depend on any axioms
+'Generative.ExplanatoryNecessity.bounded_rejects_double' does not depend on any axioms
+'Generative.ExplanatoryNecessity.bounded_prefix_closed' does not depend on any axioms
+'Generative.ExplanatoryNecessity.bounded_no_one_point_realization' does not depend on any axioms
+'Generative.ExplanatoryNecessity.bounded_history_realization' does not depend on any axioms

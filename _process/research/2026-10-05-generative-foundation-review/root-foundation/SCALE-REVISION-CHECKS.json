@@ -1,0 +1,206 @@
+{
+  "checked_at_utc": "2026-10-07T20:25:39.888096+00:00",
+  "status": "passed",
+  "errors": [],
+  "scope": "Owned document links, current/frozen proof bindings and owned bilingual index entries; not a fresh Lean run or independent semantic review.",
+  "proof_receipt_sha256": "07fba13a86485ff926cb50e05b35129b02f54dd22965afc5bdf6ebe157325098",
+  "documents": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md": "6676cb6fa6ce5ae98080efb7fa437cb5ab8e8ec889ff5631d576c36b4b2062b6",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCALE-REVISION-INTEGRATION.md": "db7ea31a165d83eb8ce660b591ccd85f2d23fd2d00cef3f240dba6fd063304b7",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-PROOF.md": "3261edf799cd23373275cb7e7378a22b9b944f07f081a2fc4821f9c202ff5d7a",
+    "sources/15-codex-theory-conversations/2026-10-08-relations-across-scales.md": "0092be38b272f393b9404a1ef9f8acdc480ef878972ec6663f6414bf176ac884"
+  },
+  "links": [
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md",
+      "ref": "../../../sources/15-codex-theory-conversations/2026-10-08-relations-across-scales.md",
+      "valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md",
+      "ref": "SYSTEMS-COMPLEXITY-CHAOS.md",
+      "valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md",
+      "ref": "CONTROLLED-REFINEMENT.md",
+      "valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md",
+      "ref": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-PROOF.md",
+      "valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md",
+      "ref": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-INTEGRATION.md",
+      "valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md",
+      "ref": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EMBODIED-SCALES-INTEGRATION.md",
+      "valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md",
+      "ref": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EMBODIED-SCALES-EVIDENCE.md",
+      "valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md",
+      "ref": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EMBODIED-SCALES-PROOF.md",
+      "valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md",
+      "ref": "LIVING-DEPENDENCIES.md",
+      "valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md",
+      "ref": "NEW-POSSIBILITIES.md",
+      "valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md",
+      "ref": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EMBODIED-SCALES-EVIDENCE.md",
+      "valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md",
+      "ref": "CONTROLLED-REFINEMENT.md",
+      "valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md",
+      "ref": "PROTOCOL-COMPOSITION.md",
+      "valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md",
+      "ref": "PRACTICAL-JUDGMENT.md",
+      "valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md",
+      "ref": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/scales-verification.json",
+      "valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md",
+      "ref": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EMBODIED-SCALES-PROOF.md",
+      "valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md",
+      "ref": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCALE-REVISION-INTEGRATION.md",
+      "valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md",
+      "ref": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean",
+      "valid": true
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md",
+      "ref": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/scale-revision-verification.json",
+      "valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCALE-REVISION-INTEGRATION.md",
+      "ref": "../../../../sources/15-codex-theory-conversations/2026-10-08-relations-across-scales.md",
+      "valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCALE-REVISION-INTEGRATION.md",
+      "ref": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md",
+      "valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCALE-REVISION-INTEGRATION.md",
+      "ref": "RELATIONS-ACROSS-SCALES-PROOF.md",
+      "valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCALE-REVISION-INTEGRATION.md",
+      "ref": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ABSTRACTION-ACQUISITION.md",
+      "valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCALE-REVISION-INTEGRATION.md",
+      "ref": "../../../../experiments/integrated-correction/general-framework/generative-basis/mathematical-abstraction/acquisition/feedback/remaining-dependency/formal/RemainingDependency.lean",
+      "valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCALE-REVISION-INTEGRATION.md",
+      "ref": "EMBODIED-SCALES-INTEGRATION.md",
+      "valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCALE-REVISION-INTEGRATION.md",
+      "ref": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean",
+      "valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCALE-REVISION-INTEGRATION.md",
+      "ref": "RELATIONS-ACROSS-SCALES-INTEGRATION.md",
+      "valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCALE-REVISION-INTEGRATION.md",
+      "ref": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/scale-revision-verification.json",
+      "valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCALE-REVISION-INTEGRATION.md",
+      "ref": "SCALE-REVISION-CHECKS.json",
+      "valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCALE-REVISION-INTEGRATION.md",
+      "ref": "SCALE-REVISION-CHECK.py",
+      "valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-PROOF.md",
+      "ref": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md",
+      "valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-PROOF.md",
+      "ref": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean",
+      "valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-PROOF.md",
+      "ref": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/check_scales.py",
+      "valid": true
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-PROOF.md",
+      "ref": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/scales-verification.json",
+      "valid": true
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-relations-across-scales.md",
+      "ref": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md",
+      "valid": true
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-relations-across-scales.md",
+      "ref": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EMBODIED-SCALES-INTEGRATION.md",
+      "valid": true
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-relations-across-scales.md",
+      "ref": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCALE-REVISION-INTEGRATION.md",
+      "valid": true
+    }
+  ],
+  "index_entries": [
+    "C28",
+    "F20"
+  ],
+  "new_theorems": 27,
+  "inherited_audits": 106
+}

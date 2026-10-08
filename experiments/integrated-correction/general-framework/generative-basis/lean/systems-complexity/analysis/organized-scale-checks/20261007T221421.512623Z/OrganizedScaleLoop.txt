@@ -1,0 +1,511 @@
+OrganizedScaleLoop.lean:30:8: warning: This simp argument is unused:
+  relay_append
+
+Hint: Omit it from the simp argument list.
+  simp [̵r̵e̵l̵a̵y̵_̵a̵p̵p̵e̵n̵d̵,̵ ̵r̵e̵l̵a̵y̵,̵[̲r̲e̲l̲a̲y̲,̲ relay_product]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+OrganizedScaleLoop.lean:30:22: warning: This simp argument is unused:
+  relay
+
+Hint: Omit it from the simp argument list.
+  simp [relay_append, relay,̵ ̵r̵e̵l̵a̵y̵_product]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+OrganizedScaleLoop.lean:102:63: error: unexpected identifier; expected '}'
+OrganizedScaleLoop.lean:124:57: warning: declaration uses `sorry`
+OrganizedScaleLoop.lean:122:8: warning: declaration uses `sorry`
+OrganizedScaleLoop.lean:131:57: warning: declaration uses `sorry`
+OrganizedScaleLoop.lean:129:8: warning: declaration uses `sorry`
+OrganizedScaleLoop.lean:175:83: error: unsolved goals
+case ingest
+θ : ℕ
+s : Joint
+⊢ (if s.contact = true ∧ 0 < s.patch then
+          { anterior := s.anterior + 1, posterior := s.posterior, patch := s.patch - 1, fuel := s.fuel,
+            spent := s.spent, retained := s.retained, contact := s.contact, route := s.route }
+        else s).anterior =
+      (if s.contact = true ∧ 0 < s.patch then
+          { anterior := s.anterior + 1, posterior := s.posterior, patch := s.patch - 1, fuel := s.fuel,
+            spent := s.spent, retained := s.retained, contact := s.contact, route := [s.route.prod] }
+        else
+          { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel, spent := s.spent,
+            retained := s.retained, contact := s.contact, route := [s.route.prod] }).anterior ∧
+    (if s.contact = true ∧ 0 < s.patch then
+            { anterior := s.anterior + 1, posterior := s.posterior, patch := s.patch - 1, fuel := s.fuel,
+              spent := s.spent, retained := s.retained, contact := s.contact, route := s.route }
+          else s).posterior =
+        (if s.contact = true ∧ 0 < s.patch then
+            { anterior := s.anterior + 1, posterior := s.posterior, patch := s.patch - 1, fuel := s.fuel,
+              spent := s.spent, retained := s.retained, contact := s.contact, route := [s.route.prod] }
+          else
+            { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel, spent := s.spent,
+              retained := s.retained, contact := s.contact, route := [s.route.prod] }).posterior ∧
+      (if s.contact = true ∧ 0 < s.patch then
+              { anterior := s.anterior + 1, posterior := s.posterior, patch := s.patch - 1, fuel := s.fuel,
+                spent := s.spent, retained := s.retained, contact := s.contact, route := s.route }
+            else s).patch =
+          (if s.contact = true ∧ 0 < s.patch then
+              { anterior := s.anterior + 1, posterior := s.posterior, patch := s.patch - 1, fuel := s.fuel,
+                spent := s.spent, retained := s.retained, contact := s.contact, route := [s.route.prod] }
+            else
+              { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel, spent := s.spent,
+                retained := s.retained, contact := s.contact, route := [s.route.prod] }).patch ∧
+        (if s.contact = true ∧ 0 < s.patch then
+                { anterior := s.anterior + 1, posterior := s.posterior, patch := s.patch - 1, fuel := s.fuel,
+                  spent := s.spent, retained := s.retained, contact := s.contact, route := s.route }
+              else s).fuel =
+            (if s.contact = true ∧ 0 < s.patch then
+                { anterior := s.anterior + 1, posterior := s.posterior, patch := s.patch - 1, fuel := s.fuel,
+                  spent := s.spent, retained := s.retained, contact := s.contact, route := [s.route.prod] }
+              else
+                { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel, spent := s.spent,
+                  retained := s.retained, contact := s.contact, route := [s.route.prod] }).fuel ∧
+          (if s.contact = true ∧ 0 < s.patch then
+                  { anterior := s.anterior + 1, posterior := s.posterior, patch := s.patch - 1, fuel := s.fuel,
+                    spent := s.spent, retained := s.retained, contact := s.contact, route := s.route }
+                else s).spent =
+              (if s.contact = true ∧ 0 < s.patch then
+                  { anterior := s.anterior + 1, posterior := s.posterior, patch := s.patch - 1, fuel := s.fuel,
+                    spent := s.spent, retained := s.retained, contact := s.contact, route := [s.route.prod] }
+                else
+                  { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel,
+                    spent := s.spent, retained := s.retained, contact := s.contact, route := [s.route.prod] }).spent ∧
+            (if s.contact = true ∧ 0 < s.patch then
+                    { anterior := s.anterior + 1, posterior := s.posterior, patch := s.patch - 1, fuel := s.fuel,
+                      spent := s.spent, retained := s.retained, contact := s.contact, route := s.route }
+                  else s).retained =
+                (if s.contact = true ∧ 0 < s.patch then
+                    { anterior := s.anterior + 1, posterior := s.posterior, patch := s.patch - 1, fuel := s.fuel,
+                      spent := s.spent, retained := s.retained, contact := s.contact, route := [s.route.prod] }
+                  else
+                    { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel,
+                      spent := s.spent, retained := s.retained, contact := s.contact,
+                      route := [s.route.prod] }).retained ∧
+              (if s.contact = true ∧ 0 < s.patch then
+                      { anterior := s.anterior + 1, posterior := s.posterior, patch := s.patch - 1, fuel := s.fuel,
+                        spent := s.spent, retained := s.retained, contact := s.contact, route := s.route }
+                    else s).contact =
+                  (if s.contact = true ∧ 0 < s.patch then
+                      { anterior := s.anterior + 1, posterior := s.posterior, patch := s.patch - 1, fuel := s.fuel,
+                        spent := s.spent, retained := s.retained, contact := s.contact, route := [s.route.prod] }
+                    else
+                      { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel,
+                        spent := s.spent, retained := s.retained, contact := s.contact,
+                        route := [s.route.prod] }).contact ∧
+                (if s.contact = true ∧ 0 < s.patch then
+                        { anterior := s.anterior + 1, posterior := s.posterior, patch := s.patch - 1, fuel := s.fuel,
+                          spent := s.spent, retained := s.retained, contact := s.contact, route := s.route }
+                      else s).route.prod =
+                  (if s.contact = true ∧ 0 < s.patch then
+                        { anterior := s.anterior + 1, posterior := s.posterior, patch := s.patch - 1, fuel := s.fuel,
+                          spent := s.spent, retained := s.retained, contact := s.contact, route := [s.route.prod] }
+                      else
+                        { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel,
+                          spent := s.spent, retained := s.retained, contact := s.contact,
+                          route := [s.route.prod] }).route.prod
+
+case transit
+θ : ℕ
+s : Joint
+⊢ (if 0 < s.anterior then
+          { anterior := s.anterior - 1, posterior := s.posterior + 1, patch := s.patch, fuel := s.fuel,
+            spent := s.spent, retained := s.retained, contact := s.contact, route := s.route }
+        else s).anterior =
+      (if 0 < s.anterior then
+          { anterior := s.anterior - 1, posterior := s.posterior + 1, patch := s.patch, fuel := s.fuel,
+            spent := s.spent, retained := s.retained, contact := s.contact, route := [s.route.prod] }
+        else
+          { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel, spent := s.spent,
+            retained := s.retained, contact := s.contact, route := [s.route.prod] }).anterior ∧
+    (if 0 < s.anterior then
+            { anterior := s.anterior - 1, posterior := s.posterior + 1, patch := s.patch, fuel := s.fuel,
+              spent := s.spent, retained := s.retained, contact := s.contact, route := s.route }
+          else s).posterior =
+        (if 0 < s.anterior then
+            { anterior := s.anterior - 1, posterior := s.posterior + 1, patch := s.patch, fuel := s.fuel,
+              spent := s.spent, retained := s.retained, contact := s.contact, route := [s.route.prod] }
+          else
+            { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel, spent := s.spent,
+              retained := s.retained, contact := s.contact, route := [s.route.prod] }).posterior ∧
+      (if 0 < s.anterior then
+              { anterior := s.anterior - 1, posterior := s.posterior + 1, patch := s.patch, fuel := s.fuel,
+                spent := s.spent, retained := s.retained, contact := s.contact, route := s.route }
+            else s).patch =
+          (if 0 < s.anterior then
+              { anterior := s.anterior - 1, posterior := s.posterior + 1, patch := s.patch, fuel := s.fuel,
+                spent := s.spent, retained := s.retained, contact := s.contact, route := [s.route.prod] }
+            else
+              { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel, spent := s.spent,
+                retained := s.retained, contact := s.contact, route := [s.route.prod] }).patch ∧
+        (if 0 < s.anterior then
+                { anterior := s.anterior - 1, posterior := s.posterior + 1, patch := s.patch, fuel := s.fuel,
+                  spent := s.spent, retained := s.retained, contact := s.contact, route := s.route }
+              else s).fuel =
+            (if 0 < s.anterior then
+                { anterior := s.anterior - 1, posterior := s.posterior + 1, patch := s.patch, fuel := s.fuel,
+                  spent := s.spent, retained := s.retained, contact := s.contact, route := [s.route.prod] }
+              else
+                { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel, spent := s.spent,
+                  retained := s.retained, contact := s.contact, route := [s.route.prod] }).fuel ∧
+          (if 0 < s.anterior then
+                  { anterior := s.anterior - 1, posterior := s.posterior + 1, patch := s.patch, fuel := s.fuel,
+                    spent := s.spent, retained := s.retained, contact := s.contact, route := s.route }
+                else s).spent =
+              (if 0 < s.anterior then
+                  { anterior := s.anterior - 1, posterior := s.posterior + 1, patch := s.patch, fuel := s.fuel,
+                    spent := s.spent, retained := s.retained, contact := s.contact, route := [s.route.prod] }
+                else
+                  { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel,
+                    spent := s.spent, retained := s.retained, contact := s.contact, route := [s.route.prod] }).spent ∧
+            (if 0 < s.anterior then
+                    { anterior := s.anterior - 1, posterior := s.posterior + 1, patch := s.patch, fuel := s.fuel,
+                      spent := s.spent, retained := s.retained, contact := s.contact, route := s.route }
+                  else s).retained =
+                (if 0 < s.anterior then
+                    { anterior := s.anterior - 1, posterior := s.posterior + 1, patch := s.patch, fuel := s.fuel,
+                      spent := s.spent, retained := s.retained, contact := s.contact, route := [s.route.prod] }
+                  else
+                    { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel,
+                      spent := s.spent, retained := s.retained, contact := s.contact,
+                      route := [s.route.prod] }).retained ∧
+              (if 0 < s.anterior then
+                      { anterior := s.anterior - 1, posterior := s.posterior + 1, patch := s.patch, fuel := s.fuel,
+                        spent := s.spent, retained := s.retained, contact := s.contact, route := s.route }
+                    else s).contact =
+                  (if 0 < s.anterior then
+                      { anterior := s.anterior - 1, posterior := s.posterior + 1, patch := s.patch, fuel := s.fuel,
+                        spent := s.spent, retained := s.retained, contact := s.contact, route := [s.route.prod] }
+                    else
+                      { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel,
+                        spent := s.spent, retained := s.retained, contact := s.contact,
+                        route := [s.route.prod] }).contact ∧
+                (if 0 < s.anterior then
+                        { anterior := s.anterior - 1, posterior := s.posterior + 1, patch := s.patch, fuel := s.fuel,
+                          spent := s.spent, retained := s.retained, contact := s.contact, route := s.route }
+                      else s).route.prod =
+                  (if 0 < s.anterior then
+                        { anterior := s.anterior - 1, posterior := s.posterior + 1, patch := s.patch, fuel := s.fuel,
+                          spent := s.spent, retained := s.retained, contact := s.contact, route := [s.route.prod] }
+                      else
+                        { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel,
+                          spent := s.spent, retained := s.retained, contact := s.contact,
+                          route := [s.route.prod] }).route.prod
+
+case release
+θ : ℕ
+s : Joint
+⊢ (if 0 < s.posterior then
+          { anterior := s.anterior, posterior := s.posterior - 1, patch := s.patch + 1, fuel := s.fuel,
+            spent := s.spent, retained := s.retained, contact := s.contact, route := s.route }
+        else s).anterior =
+      (if 0 < s.posterior then
+          { anterior := s.anterior, posterior := s.posterior - 1, patch := s.patch + 1, fuel := s.fuel,
+            spent := s.spent, retained := s.retained, contact := s.contact, route := [s.route.prod] }
+        else
+          { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel, spent := s.spent,
+            retained := s.retained, contact := s.contact, route := [s.route.prod] }).anterior ∧
+    (if 0 < s.posterior then
+            { anterior := s.anterior, posterior := s.posterior - 1, patch := s.patch + 1, fuel := s.fuel,
+              spent := s.spent, retained := s.retained, contact := s.contact, route := s.route }
+          else s).posterior =
+        (if 0 < s.posterior then
+            { anterior := s.anterior, posterior := s.posterior - 1, patch := s.patch + 1, fuel := s.fuel,
+              spent := s.spent, retained := s.retained, contact := s.contact, route := [s.route.prod] }
+          else
+            { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel, spent := s.spent,
+              retained := s.retained, contact := s.contact, route := [s.route.prod] }).posterior ∧
+      (if 0 < s.posterior then
+              { anterior := s.anterior, posterior := s.posterior - 1, patch := s.patch + 1, fuel := s.fuel,
+                spent := s.spent, retained := s.retained, contact := s.contact, route := s.route }
+            else s).patch =
+          (if 0 < s.posterior then
+              { anterior := s.anterior, posterior := s.posterior - 1, patch := s.patch + 1, fuel := s.fuel,
+                spent := s.spent, retained := s.retained, contact := s.contact, route := [s.route.prod] }
+            else
+              { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel, spent := s.spent,
+                retained := s.retained, contact := s.contact, route := [s.route.prod] }).patch ∧
+        (if 0 < s.posterior then
+                { anterior := s.anterior, posterior := s.posterior - 1, patch := s.patch + 1, fuel := s.fuel,
+                  spent := s.spent, retained := s.retained, contact := s.contact, route := s.route }
+              else s).fuel =
+            (if 0 < s.posterior then
+                { anterior := s.anterior, posterior := s.posterior - 1, patch := s.patch + 1, fuel := s.fuel,
+                  spent := s.spent, retained := s.retained, contact := s.contact, route := [s.route.prod] }
+              else
+                { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel, spent := s.spent,
+                  retained := s.retained, contact := s.contact, route := [s.route.prod] }).fuel ∧
+          (if 0 < s.posterior then
+                  { anterior := s.anterior, posterior := s.posterior - 1, patch := s.patch + 1, fuel := s.fuel,
+                    spent := s.spent, retained := s.retained, contact := s.contact, route := s.route }
+                else s).spent =
+              (if 0 < s.posterior then
+                  { anterior := s.anterior, posterior := s.posterior - 1, patch := s.patch + 1, fuel := s.fuel,
+                    spent := s.spent, retained := s.retained, contact := s.contact, route := [s.route.prod] }
+                else
+                  { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel,
+                    spent := s.spent, retained := s.retained, contact := s.contact, route := [s.route.prod] }).spent ∧
+            (if 0 < s.posterior then
+                    { anterior := s.anterior, posterior := s.posterior - 1, patch := s.patch + 1, fuel := s.fuel,
+                      spent := s.spent, retained := s.retained, contact := s.contact, route := s.route }
+                  else s).retained =
+                (if 0 < s.posterior then
+                    { anterior := s.anterior, posterior := s.posterior - 1, patch := s.patch + 1, fuel := s.fuel,
+                      spent := s.spent, retained := s.retained, contact := s.contact, route := [s.route.prod] }
+                  else
+                    { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel,
+                      spent := s.spent, retained := s.retained, contact := s.contact,
+                      route := [s.route.prod] }).retained ∧
+              (if 0 < s.posterior then
+                      { anterior := s.anterior, posterior := s.posterior - 1, patch := s.patch + 1, fuel := s.fuel,
+                        spent := s.spent, retained := s.retained, contact := s.contact, route := s.route }
+                    else s).contact =
+                  (if 0 < s.posterior then
+                      { anterior := s.anterior, posterior := s.posterior - 1, patch := s.patch + 1, fuel := s.fuel,
+                        spent := s.spent, retained := s.retained, contact := s.contact, route := [s.route.prod] }
+                    else
+                      { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel,
+                        spent := s.spent, retained := s.retained, contact := s.contact,
+                        route := [s.route.prod] }).contact ∧
+                (if 0 < s.posterior then
+                        { anterior := s.anterior, posterior := s.posterior - 1, patch := s.patch + 1, fuel := s.fuel,
+                          spent := s.spent, retained := s.retained, contact := s.contact, route := s.route }
+                      else s).route.prod =
+                  (if 0 < s.posterior then
+                        { anterior := s.anterior, posterior := s.posterior - 1, patch := s.patch + 1, fuel := s.fuel,
+                          spent := s.spent, retained := s.retained, contact := s.contact, route := [s.route.prod] }
+                      else
+                        { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel,
+                          spent := s.spent, retained := s.retained, contact := s.contact,
+                          route := [s.route.prod] }).route.prod
+
+case acquire
+θ : ℕ
+s : Joint
+⊢ (if 0 < s.fuel then
+          { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel, spent := s.spent,
+            retained := s.retained + s.route.prod * s.anterior, contact := s.contact, route := s.route }
+        else sorry ()).anterior =
+      (if 0 < s.fuel then
+          { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel, spent := s.spent,
+            retained := s.retained + s.route.prod * s.anterior, contact := s.contact, route := [s.route.prod] }
+        else sorry ()).anterior ∧
+    (if 0 < s.fuel then
+            { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel, spent := s.spent,
+              retained := s.retained + s.route.prod * s.anterior, contact := s.contact, route := s.route }
+          else sorry ()).posterior =
+        (if 0 < s.fuel then
+            { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel, spent := s.spent,
+              retained := s.retained + s.route.prod * s.anterior, contact := s.contact, route := [s.route.prod] }
+          else sorry ()).posterior ∧
+      (if 0 < s.fuel then
+              { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel, spent := s.spent,
+                retained := s.retained + s.route.prod * s.anterior, contact := s.contact, route := s.route }
+            else sorry ()).patch =
+          (if 0 < s.fuel then
+              { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel, spent := s.spent,
+                retained := s.retained + s.route.prod * s.anterior, contact := s.contact, route := [s.route.prod] }
+            else sorry ()).patch ∧
+        (if 0 < s.fuel then
+                { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel, spent := s.spent,
+                  retained := s.retained + s.route.prod * s.anterior, contact := s.contact, route := s.route }
+              else sorry ()).fuel =
+            (if 0 < s.fuel then
+                { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel, spent := s.spent,
+                  retained := s.retained + s.route.prod * s.anterior, contact := s.contact, route := [s.route.prod] }
+              else sorry ()).fuel ∧
+          (if 0 < s.fuel then
+                  { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel,
+                    spent := s.spent, retained := s.retained + s.route.prod * s.anterior, contact := s.contact,
+                    route := s.route }
+                else sorry ()).spent =
+              (if 0 < s.fuel then
+                  { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel,
+                    spent := s.spent, retained := s.retained + s.route.prod * s.anterior, contact := s.contact,
+                    route := [s.route.prod] }
+                else sorry ()).spent ∧
+            (if 0 < s.fuel then
+                    { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel,
+                      spent := s.spent, retained := s.retained + s.route.prod * s.anterior, contact := s.contact,
+                      route := s.route }
+                  else sorry ()).retained =
+                (if 0 < s.fuel then
+                    { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel,
+                      spent := s.spent, retained := s.retained + s.route.prod * s.anterior, contact := s.contact,
+                      route := [s.route.prod] }
+                  else sorry ()).retained ∧
+              (if 0 < s.fuel then
+                      { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel,
+                        spent := s.spent, retained := s.retained + s.route.prod * s.anterior, contact := s.contact,
+                        route := s.route }
+                    else sorry ()).contact =
+                  (if 0 < s.fuel then
+                      { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel,
+                        spent := s.spent, retained := s.retained + s.route.prod * s.anterior, contact := s.contact,
+                        route := [s.route.prod] }
+                    else sorry ()).contact ∧
+                (if 0 < s.fuel then
+                        { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel,
+                          spent := s.spent, retained := s.retained + s.route.prod * s.anterior, contact := s.contact,
+                          route := s.route }
+                      else sorry ()).route.prod =
+                  (if 0 < s.fuel then
+                        { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel,
+                          spent := s.spent, retained := s.retained + s.route.prod * s.anterior, contact := s.contact,
+                          route := [s.route.prod] }
+                      else sorry ()).route.prod
+
+case withdraw
+θ : ℕ
+s : Joint
+⊢ (if θ ≤ s.retained ∧ 0 < s.fuel then
+          { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel - 1,
+            spent := s.spent + 1, retained := s.retained, contact := false, route := s.route }
+        else s).anterior =
+      (if θ ≤ s.retained ∧ 0 < s.fuel then
+          { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel - 1,
+            spent := s.spent + 1, retained := s.retained, contact := false, route := [s.route.prod] }
+        else
+          { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel, spent := s.spent,
+            retained := s.retained, contact := s.contact, route := [s.route.prod] }).anterior ∧
+    (if θ ≤ s.retained ∧ 0 < s.fuel then
+            { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel - 1,
+              spent := s.spent + 1, retained := s.retained, contact := false, route := s.route }
+          else s).posterior =
+        (if θ ≤ s.retained ∧ 0 < s.fuel then
+            { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel - 1,
+              spent := s.spent + 1, retained := s.retained, contact := false, route := [s.route.prod] }
+          else
+            { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel, spent := s.spent,
+              retained := s.retained, contact := s.contact, route := [s.route.prod] }).posterior ∧
+      (if θ ≤ s.retained ∧ 0 < s.fuel then
+              { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel - 1,
+                spent := s.spent + 1, retained := s.retained, contact := false, route := s.route }
+            else s).patch =
+          (if θ ≤ s.retained ∧ 0 < s.fuel then
+              { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel - 1,
+                spent := s.spent + 1, retained := s.retained, contact := false, route := [s.route.prod] }
+            else
+              { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel, spent := s.spent,
+                retained := s.retained, contact := s.contact, route := [s.route.prod] }).patch ∧
+        (if θ ≤ s.retained ∧ 0 < s.fuel then
+                { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel - 1,
+                  spent := s.spent + 1, retained := s.retained, contact := false, route := s.route }
+              else s).fuel =
+            (if θ ≤ s.retained ∧ 0 < s.fuel then
+                { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel - 1,
+                  spent := s.spent + 1, retained := s.retained, contact := false, route := [s.route.prod] }
+              else
+                { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel, spent := s.spent,
+                  retained := s.retained, contact := s.contact, route := [s.route.prod] }).fuel ∧
+          (if θ ≤ s.retained ∧ 0 < s.fuel then
+                  { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel - 1,
+                    spent := s.spent + 1, retained := s.retained, contact := false, route := s.route }
+                else s).spent =
+              (if θ ≤ s.retained ∧ 0 < s.fuel then
+                  { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel - 1,
+                    spent := s.spent + 1, retained := s.retained, contact := false, route := [s.route.prod] }
+                else
+                  { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel,
+                    spent := s.spent, retained := s.retained, contact := s.contact, route := [s.route.prod] }).spent ∧
+            (if θ ≤ s.retained ∧ 0 < s.fuel then
+                    { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel - 1,
+                      spent := s.spent + 1, retained := s.retained, contact := false, route := s.route }
+                  else s).retained =
+                (if θ ≤ s.retained ∧ 0 < s.fuel then
+                    { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel - 1,
+                      spent := s.spent + 1, retained := s.retained, contact := false, route := [s.route.prod] }
+                  else
+                    { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel,
+                      spent := s.spent, retained := s.retained, contact := s.contact,
+                      route := [s.route.prod] }).retained ∧
+              (if θ ≤ s.retained ∧ 0 < s.fuel then
+                      { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel - 1,
+                        spent := s.spent + 1, retained := s.retained, contact := false, route := s.route }
+                    else s).contact =
+                  (if θ ≤ s.retained ∧ 0 < s.fuel then
+                      { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel - 1,
+                        spent := s.spent + 1, retained := s.retained, contact := false, route := [s.route.prod] }
+                    else
+                      { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel,
+                        spent := s.spent, retained := s.retained, contact := s.contact,
+                        route := [s.route.prod] }).contact ∧
+                (if θ ≤ s.retained ∧ 0 < s.fuel then
+                        { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel - 1,
+                          spent := s.spent + 1, retained := s.retained, contact := false, route := s.route }
+                      else s).route.prod =
+                  (if θ ≤ s.retained ∧ 0 < s.fuel then
+                        { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel - 1,
+                          spent := s.spent + 1, retained := s.retained, contact := false, route := [s.route.prod] }
+                      else
+                        { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel,
+                          spent := s.spent, retained := s.retained, contact := s.contact,
+                          route := [s.route.prod] }).route.prod
+OrganizedScaleLoop.lean:177:62: warning: declaration uses `sorry`
+OrganizedScaleLoop.lean:186:8: warning: declaration uses `sorry`
+OrganizedScaleLoop.lean:184:8: warning: declaration uses `sorry`
+OrganizedScaleLoop.lean:188:80: error: unsolved goals
+s : Joint
+h : s.fuel = 0
+⊢ sorry () = s
+OrganizedScaleLoop.lean:189:8: warning: declaration uses `sorry`
+OrganizedScaleLoop.lean:196:18: warning: declaration uses `sorry`
+OrganizedScaleLoop.lean:191:8: warning: declaration uses `sorry`
+OrganizedScaleLoop.lean:196:31: warning: This simp argument is unused:
+  hf'
+
+Hint: Omit it from the simp argument list.
+  simp [withdraw, acquire, hf, h̵f̵'̵,̵ ̵relay_product, elicited]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+OrganizedScaleLoop.lean:207:13: warning: declaration uses `sorry`
+OrganizedScaleLoop.lean:205:8: warning: declaration uses `sorry`
+OrganizedScaleLoop.lean:224:2: error: Tactic `decide` proved that the proposition
+  evolve (step 1) initial episode =
+    { anterior := 1, posterior := 0, patch := 2, fuel := 2, spent := 2, retained := 1, contact := false,
+      route := [1, 1, 1] }
+is false
+OrganizedScaleLoop.lean:228:2: error: Tactic `decide` proved that the proposition
+  evolve (step 1) broken episode =
+    { anterior := 2, posterior := 0, patch := 1, fuel := 3, spent := 1, retained := 0, contact := true,
+      route := [1, 0, 1] }
+is false
+OrganizedScaleLoop.lean:237:30: error: Function expected at
+  predict
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  (physical s)
+OrganizedScaleLoop.lean:264:2: error: Tactic `decide` proved that the proposition
+  let s :=
+    let __src := frontLoaded;
+    { anterior := __src.anterior, posterior := __src.posterior, patch := __src.patch, fuel := 1, spent := __src.spent,
+      retained := __src.retained, contact := __src.contact, route := __src.route };
+  (acquire s).retained = 1 ∧ (withdraw 1 (acquire s)).contact = true
+is false
+'OrganizedScaleLoop.relay_product' depends on axioms: [propext]
+'OrganizedScaleLoop.relay_append' does not depend on any axioms
+'OrganizedScaleLoop.severed_route' depends on axioms: [propext]
+'OrganizedScaleLoop.grouped_route' depends on axioms: [propext]
+'OrganizedScaleLoop.chosen_step_commutes' does not depend on any axioms
+'OrganizedScaleLoop.chosen_history_three_views' does not depend on any axioms
+'OrganizedScaleLoop.material_step' depends on axioms: [propext, sorryAx, Quot.sound]
+'OrganizedScaleLoop.work_step' depends on axioms: [propext, sorryAx, Quot.sound]
+'OrganizedScaleLoop.finite_history_accounts' depends on axioms: [propext, sorryAx, Quot.sound]
+'OrganizedScaleLoop.same_core_history' depends on axioms: [sorryAx]
+'OrganizedScaleLoop.concrete_view_commutes' depends on axioms: [propext, sorryAx]
+'OrganizedScaleLoop.concrete_view_all_histories' depends on axioms: [propext, sorryAx]
+'OrganizedScaleLoop.acquisition_amount' depends on axioms: [propext, sorryAx]
+'OrganizedScaleLoop.unsupported_acquisition' depends on axioms: [propext, sorryAx]
+'OrganizedScaleLoop.acquisition_withdrawal' depends on axioms: [propext, sorryAx, Quot.sound]
+'OrganizedScaleLoop.withdrawal_changes_next_exposure' depends on axioms: [propext, sorryAx, Quot.sound]
+'OrganizedScaleLoop.disrupted_acquisition' depends on axioms: [propext, sorryAx]
+'OrganizedScaleLoop.joined_endpoint' depends on axioms: [sorryAx]
+'OrganizedScaleLoop.disrupted_endpoint' depends on axioms: [sorryAx]
+'OrganizedScaleLoop.history_changes_choice' does not depend on any axioms
+'OrganizedScaleLoop.no_memoryless_choice_readout' depends on axioms: [sorryAx]
+'OrganizedScaleLoop.same_organ_amount_distinct_signal' depends on axioms: [sorryAx]
+'OrganizedScaleLoop.no_amount_only_acquisition' depends on axioms: [sorryAx]
+'OrganizedScaleLoop.support_can_prevent_enactment' depends on axioms: [sorryAx]
+'OrganizedScaleLoop.release_changes_shared_conditions' depends on axioms: [sorryAx]

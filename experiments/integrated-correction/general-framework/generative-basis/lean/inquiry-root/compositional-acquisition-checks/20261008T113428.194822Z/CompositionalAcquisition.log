@@ -1,0 +1,32 @@
+CompositionalAcquisition.lean:73:8: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  eval (renamed c) (rename p)
+in the target expression
+  (if c.reversed = true then
+      eval { first := c.second, second := c.first, reversed := c.reversed } (rename q) ++
+        eval { first := c.second, second := c.first, reversed := c.reversed } (rename p)
+    else
+      eval { first := c.second, second := c.first, reversed := c.reversed } (rename p) ++
+        eval { first := c.second, second := c.first, reversed := c.reversed } (rename q)) =
+    if c.reversed = true then eval c q ++ eval c p else eval c p ++ eval c q
+
+case join
+c : Code
+p q : Expr
+hp : eval (renamed c) (rename p) = eval c p
+hq : eval (renamed c) (rename q) = eval c q
+⊢ (if c.reversed = true then
+      eval { first := c.second, second := c.first, reversed := c.reversed } (rename q) ++
+        eval { first := c.second, second := c.first, reversed := c.reversed } (rename p)
+    else
+      eval { first := c.second, second := c.first, reversed := c.reversed } (rename p) ++
+        eval { first := c.second, second := c.first, reversed := c.reversed } (rename q)) =
+    if c.reversed = true then eval c q ++ eval c p else eval c p ++ eval c q
+CompositionalAcquisition.lean:112:2: error: No goals to be solved
+CompositionalAcquisition.lean:146:8: error: failed to synthesize
+  Decidable (separated { first := false, second := true, reversed := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+CompositionalAcquisition.lean:146:20: error: failed to synthesize
+  Decidable (separated { first := false, second := true, reversed := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.

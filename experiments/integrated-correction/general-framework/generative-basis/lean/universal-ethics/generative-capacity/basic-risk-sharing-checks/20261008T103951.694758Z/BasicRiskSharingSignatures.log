@@ -1,0 +1,57 @@
+BasicRiskSharing.total_exposure (n x : Nat) (h : x ≤ n) :
+  BasicRiskSharing.exposureA n x + BasicRiskSharing.exposureB n x = 5 * n
+BasicRiskSharing.balanced_exposure (k : Nat) :
+  BasicRiskSharing.exposureA (2 * k) k = 5 * k ∧ BasicRiskSharing.exposureB (2 * k) k = 5 * k
+BasicRiskSharing.equal_exposure_iff (k x : Nat) (h : x ≤ 2 * k) :
+  BasicRiskSharing.exposureA (2 * k) x = BasicRiskSharing.exposureB (2 * k) x ↔ x = k
+BasicRiskSharing.attainable_common_bound_iff (k bound : Nat) :
+  (∃ x, x ≤ 2 * k ∧ BasicRiskSharing.AtMost (2 * k) x bound) ↔ 5 * k ≤ bound
+BasicRiskSharing.unique_best_allocation (k x : Nat) (h : x ≤ 2 * k) : BasicRiskSharing.AtMost (2 * k) x (5 * k) ↔ x = k
+BasicRiskSharing.pure_allocations_miss_best_bound (k : Nat) (h : 0 < k) :
+  ¬BasicRiskSharing.AtMost (2 * k) 0 (5 * k) ∧ ¬BasicRiskSharing.AtMost (2 * k) (2 * k) (5 * k)
+BasicRiskSharing.sharing_retains_the_favored_positions_cost (k : Nat) (h : 0 < k) :
+  BasicRiskSharing.exposureA (2 * k) (2 * k) < BasicRiskSharing.exposureA (2 * k) k ∧
+    BasicRiskSharing.exposureB (2 * k) 0 < BasicRiskSharing.exposureB (2 * k) k
+BasicRiskSharing.lower_equal_profile_remains_better (k : Nat) (h : 0 < k) :
+  k < BasicRiskSharing.exposureA (2 * k) k ∧ k < BasicRiskSharing.exposureB (2 * k) k
+BasicRiskSharing.native_plan_rates :
+  BasicRiskSharing.countA (BasicRiskSharing.planRecords BasicRiskSharing.Plan.favorA) = 1 ∧
+    BasicRiskSharing.countB (BasicRiskSharing.planRecords BasicRiskSharing.Plan.favorA) = 4 ∧
+      BasicRiskSharing.countA (BasicRiskSharing.planRecords BasicRiskSharing.Plan.favorB) = 4 ∧
+        BasicRiskSharing.countB (BasicRiskSharing.planRecords BasicRiskSharing.Plan.favorB) = 1
+BasicRiskSharing.product_law_realizes_balanced_rates :
+  BasicRiskSharing.productRecords.length = 20 ∧
+    BasicRiskSharing.countA BasicRiskSharing.productRecords = 5 ∧
+      BasicRiskSharing.countB BasicRiskSharing.productRecords = 5 ∧
+        BasicRiskSharing.countA BasicRiskSharing.productRecords = BasicRiskSharing.exposureA 2 1 ∧
+          BasicRiskSharing.countB BasicRiskSharing.productRecords = BasicRiskSharing.exposureB 2 1
+BasicRiskSharing.complete_joint_profile_preserved :
+  BasicRiskSharing.countBoth (BasicRiskSharing.planRecords BasicRiskSharing.Plan.favorA) = 0 ∧
+    BasicRiskSharing.countBoth (BasicRiskSharing.planRecords BasicRiskSharing.Plan.favorB) = 0 ∧
+      BasicRiskSharing.countBoth BasicRiskSharing.productRecords = 0 ∧
+        BasicRiskSharing.countAny (BasicRiskSharing.planRecords BasicRiskSharing.Plan.favorA) = 5 ∧
+          BasicRiskSharing.countAny (BasicRiskSharing.planRecords BasicRiskSharing.Plan.favorB) = 5 ∧
+            BasicRiskSharing.countAny BasicRiskSharing.productRecords = 10
+BasicRiskSharing.coupled_selection_has_equal_plan_frequencies :
+  (List.filter (fun e => decide (BasicRiskSharing.coupledPlan e = BasicRiskSharing.Plan.favorA))
+          (List.range 10)).length =
+      5 ∧
+    (List.filter (fun e => decide (BasicRiskSharing.coupledPlan e = BasicRiskSharing.Plan.favorB))
+          (List.range 10)).length =
+      5
+BasicRiskSharing.coupled_law_doubles_each_risk :
+  BasicRiskSharing.coupledRecords.length = 10 ∧
+    BasicRiskSharing.countA BasicRiskSharing.coupledRecords = 5 ∧
+      BasicRiskSharing.countB BasicRiskSharing.coupledRecords = 5 ∧
+        2 * BasicRiskSharing.countA BasicRiskSharing.coupledRecords >
+            BasicRiskSharing.countA BasicRiskSharing.productRecords ∧
+          2 * BasicRiskSharing.countB BasicRiskSharing.coupledRecords >
+            BasicRiskSharing.countB BasicRiskSharing.productRecords
+BasicRiskSharing.coupled_joint_profile_worsens :
+  BasicRiskSharing.countBoth BasicRiskSharing.coupledRecords = 0 ∧
+    BasicRiskSharing.countAny BasicRiskSharing.coupledRecords = 10 ∧
+      2 * BasicRiskSharing.countAny BasicRiskSharing.coupledRecords >
+        BasicRiskSharing.countAny BasicRiskSharing.productRecords
+BasicRiskSharing.informed_selection_can_avoid_this_law_of_loss (e : Fin 10) :
+  BasicRiskSharing.failures (if ↑e < 5 then BasicRiskSharing.Plan.favorA else BasicRiskSharing.Plan.favorB) ↑e =
+    (false, false)

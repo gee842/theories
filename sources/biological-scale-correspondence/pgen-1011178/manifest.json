@@ -1,0 +1,18 @@
+{
+  "retrieved_at_utc": "2026-10-07T22:53:31.979390+00:00",
+  "license": "CC BY 4.0",
+  "files": [
+    {
+      "file": "pgen.1011178.s005.xlsx",
+      "url": "https://journals.plos.org/plosgenetics/article/file?id=10.1371/journal.pgen.1011178.s005&type=supplementary",
+      "bytes": 105061,
+      "sha256": "44a32f1f19512030c372c27a01347de7dda22755074987d3fc597105d5598158"
+    },
+    {
+      "file": "article.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10977744/fullTextXML",
+      "bytes": 277332,
+      "sha256": "9833983ef38ad486e014c661bd64a91e38b7884a5ed9c51122ab5e6d40501648"
+    }
+  ]
+}

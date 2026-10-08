@@ -1,0 +1,27 @@
+# Biological evidence for embodied relations across scales
+
+8 October 2026, Asia/Bangkok. AI-authored primary-source assessment for [the current chapter](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md). Papers constrain mechanisms and correspondence; none is treated as an endorsement of the whole theory. No new biological experiment or reanalysis of raw data is claimed.
+
+## Cellular participation in organism-level choice
+
+Buchanan, Rupprecht, Kaelberer et al. (2022), *The preference for sugar over sweetener depends on a gut sensor cell*, Nature Neuroscience 25, 191–200, [doi:10.1038/s41593-021-00982-7](https://pmc.ncbi.nlm.nih.gov/articles/mid/NIHMS1756304/). Read abstract and Results, especially “The vagal response depends on duodenal neuropod cells,” receptor/transmission experiments and “Sugar preference depends on duodenal neuropod cells.” The mouse experiments connect identified intestinal cells, vagal signaling and food preference through intervention. Controls examine alternative effects on locomotion, intake, transit and absorption. The evidence concerns this pathway and preparation; it does not show that one cell contains the whole choice, that all appetite is explained, or that human reflective deliberation is equivalent to the assay. Our Boolean clamping witness is structurally illustrative, not fitted to these data.
+
+## Anticipation and changed opportunity
+
+Chen, Lin, Kuo and Knight (2015), *Sensory detection of food rapidly modulates arcuate feeding circuits*, Cell 160, 829–841, [doi:10.1016/j.cell.2015.01.033](https://pmc.ncbi.nlm.nih.gov/articles/PMC4373539/). Read food-accessibility, removal and feeding-bout results, Figures 5–6 descriptions and relevant discussion. Calcium activity changes with food presentation before intake; inaccessible food and subsequent removal give distinct responses. These observations challenge a nutrient-store-only account of the recorded activity. Anticipatory interpretation is supported by the manipulations, but recording population activity is not a complete causal identification of every decision step. The study does not by itself identify learned memory formation, prove consciousness or establish the error constants of our theorem.
+
+## Other living participants in nutritional choice
+
+Leitão-Gonçalves et al. (2017), *Commensal bacteria and essential amino acids control food choice behavior and reproduction*, PLOS Biology 15, e2000862, [doi:10.1371/journal.pbio.2000862](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.2000862). Read Results on nutrient deprivation, peripheral synthesis, commensal interventions, microbial combinations and feeding toward bacteria-containing food. Dietary and microbial interventions alter fly feeding; inactivated bacteria and particular combinations help test alternatives. The paper does not establish that microbes simply replace missing essential amino acids. The tissue driver’s hemocyte expression also limits exclusive localization to the fat body. This supports a relation between metabolism, other living activity and behavior, while preserving uncertainty about the complete mediating route.
+
+## Activity changes shared ecological conditions
+
+Stamps, Yang, Morales and Boundy-Mills (2012), *Drosophila Regulate Yeast Density and Increase Yeast Community Similarity in a Natural Substrate*, PLOS ONE 7, e42238, [doi:10.1371/journal.pone.0042238](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0042238). Read abstract, matched-fruit experimental design, yeast-transfer observations and reported abundance/community results. Fly-exposure treatments change microbial outcomes; larvae also leave viable, palatable yeasts in their paths. This gives an actual return connection from animal activity to the shared conditions of later living activity. Reduced diversity is retained alongside favorable food conditions for flies. The experiment does not establish foresight, a common ecosystem objective or universal ecological improvement. Its endpoint measurements do not supply every intermediate rate for a closed dynamical model.
+
+## What the synthesis establishes
+
+The studies provide interventions and observations at complementary links. They do not constitute one joined experiment: mice and flies, adults and larvae, neuronal seconds and community days remain distinct. A causal chain assembled from them is an explanatory proposal with locally supported mechanisms, not a quantitatively verified complete trajectory. A separate comparison within one preparation is needed before estimating a single whole-loop model.
+
+The present interpretation is compatible with ordinary physiology, behavioral neuroscience and ecology. None requires a fundamentally independent mind to supply choice, and none warrants describing an ecosystem as one conscious organism. The theory’s integration places these mechanisms within a common account and makes omissions consequential; it does not claim new biological discoveries or comparative superiority over well-specified conventional accounts.
+
+HTML sources were read through the web tools; links identify primary publications. No source bytes were imported or replaced. Searches also found a 2024 D. suzukii niche-construction paper, but access to its substantive results was inconsistent; it is not used as evidence here. These notes are paraphrases, not quotations from Ren or the papers.

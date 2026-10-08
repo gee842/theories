@@ -1,0 +1,411 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T11:06:45.392091+00:00",
+  "scope": "Owned source versions, retained Lean binding, links, review disposition and paired M20. No new compiler run, empirical validation, ethical-premise certification or full-table certification.",
+  "checker_sha256": "a3b6ec19a1c7bac09bc83abb079072e92c8df19a87ac7c4a2d4f8e1e6ac0b5f9",
+  "edits_sha256": "8845c3be000cc28321eebca5d4ecf2a5de38e5157e3a1ce162c822f24f67fc84",
+  "owned_reviewed_sources": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-PROTOCOL.md": "987767a21d197b46dfdfd76b27552b8a441d935acea358b121d5ae7dfa345e13",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-ARGUMENT.md": "5e1c686b03c670760c2ebb59fe889a568e6fee100ad91c9f010b7195877cf283",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-PROOF.md": "550016f5f491fb3f4a4847224dc8ecdc6a99ca9fdcfd7e5053fad084b400c111",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-REVIEW.md": "58d7f46cd68eaed88e01cb7d0e34e356c8693893c0d32f57d0ff0fc7577c7597",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-SOURCES.md": "5697b7102f76b41356e0549be36fbcf6d18eadc80162142d17b75f6ede71db22",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-INTEGRATION.md": "2b12d9c859cf9cd705d5fea54c86a8cc0996bec8bec1987e3032ff34d631ae06",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/chance-grounding-verification.json": "4d4d161d9f1c013b378abcc265f2834ce030da2d13194a0dcefb696c21815c3a"
+  },
+  "local_links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-PROTOCOL.md",
+      "to": "CROSSED-CLAIMS-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-PROTOCOL.md",
+      "to": "FUTURE-GOOD-INTEGRAL.md#fair-chances-as-a-quality-of-the-organized-future"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-PROTOCOL.md",
+      "to": "JOINT-RISK-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-PROTOCOL.md",
+      "to": "CHANCE-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-PROTOCOL.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-PROTOCOL.md",
+      "to": "CHANCE-GROUNDING-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-PROTOCOL.md",
+      "to": "CHANCE-GROUNDING-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-PROTOCOL.md",
+      "to": "CHANCE-GROUNDING-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-PROTOCOL.md",
+      "to": "CHANCE-GROUNDING-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-PROTOCOL.md",
+      "to": "CHANCE-GROUNDING-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-ARGUMENT.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-ARGUMENT.md",
+      "to": "BASIC-CONFLICT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-ARGUMENT.md",
+      "to": "BASIC-LOSS-SEVERITY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-ARGUMENT.md",
+      "to": "UNEQUAL-BASIC-LOSSES-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-ARGUMENT.md",
+      "to": "CROSSED-CLAIMS-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-ARGUMENT.md",
+      "to": "FUTURE-GOOD-INTEGRAL.md#fair-chances-as-a-quality-of-the-organized-future"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-ARGUMENT.md",
+      "to": "JOINT-RISK-REVISION-INTEGRATION.md#9-continue-through-equal-basic-risk-sharing"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-ARGUMENT.md",
+      "to": "CHANCE-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-ARGUMENT.md",
+      "to": "WISDOM-CONTEXT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-ARGUMENT.md",
+      "to": "FUTURE-GOOD-INTEGRAL.md#a-substantive-rival-and-the-remaining-dependence"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-ARGUMENT.md",
+      "to": "CHANCE-GROUNDING-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-ARGUMENT.md",
+      "to": "CHANCE-GROUNDING-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-PROOF.md",
+      "to": "JOINT-RISK-REVISION-INTEGRATION.md#9-continue-through-equal-basic-risk-sharing"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-PROOF.md",
+      "to": "CROSSED-CLAIMS-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-PROOF.md",
+      "to": "CHANCE-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-PROOF.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ChanceGrounding.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-PROOF.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_chance_grounding.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-PROOF.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/chance-grounding-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-PROOF.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/chance-grounding-checks/20261008T105731.467185Z/verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-REVIEW.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-REVIEW.md",
+      "to": "CROSSED-CLAIMS-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-REVIEW.md",
+      "to": "JOINT-RISK-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-REVIEW.md",
+      "to": "CHANCE-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-REVIEW.md",
+      "to": "FUTURE-GOOD-INTEGRAL.md#fair-chances-as-a-quality-of-the-organized-future"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-REVIEW.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ChanceGrounding.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-REVIEW.md",
+      "to": "CHANCE-GROUNDING-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-REVIEW.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/chance-grounding-checks/20261008T105731.467185Z/verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-REVIEW.md",
+      "to": "CHANCE-GROUNDING-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-REVIEW.md",
+      "to": "CHANCE-GROUNDING-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-SOURCES.md",
+      "to": "CHANCE-GROUNDING-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-SOURCES.md",
+      "to": "CHANCE-GROUNDING-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-SOURCES.md",
+      "to": "CHANCE-GROUNDING-ARGUMENT.md#8-原典比较及实际读取范围"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-SOURCES.md",
+      "to": "CROSSED-CLAIMS-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-SOURCES.md",
+      "to": "FUTURE-GOOD-INTEGRAL.md#fair-chances-as-a-quality-of-the-organized-future"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-SOURCES.md",
+      "to": "JOINT-RISK-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-SOURCES.md",
+      "to": "CHANCE-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-SOURCES.md",
+      "to": "CHANCE-GROUNDING-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-INTEGRATION.md",
+      "to": "CHANCE-GROUNDING-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-INTEGRATION.md",
+      "to": "CHANCE-GROUNDING-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-INTEGRATION.md",
+      "to": "CHANCE-GROUNDING-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-INTEGRATION.md",
+      "to": "CHANCE-GROUNDING-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-INTEGRATION.md",
+      "to": "CHANCE-GROUNDING-PROTOCOL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-INTEGRATION.md",
+      "to": "CROSSED-CLAIMS-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-INTEGRATION.md",
+      "to": "FUTURE-GOOD-INTEGRAL.md#fair-chances-as-a-quality-of-the-organized-future"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-INTEGRATION.md",
+      "to": "JOINT-RISK-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-INTEGRATION.md",
+      "to": "CHANCE-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-INTEGRATION.md",
+      "to": "CHANCE-GROUNDING-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-INTEGRATION.md",
+      "to": "CHANCE-GROUNDING-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-INTEGRATION.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md#grounding-initial-chances"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-INTEGRATION.md",
+      "to": "CHANCE-GROUNDING-CHECKS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-INTEGRATION.md",
+      "to": "CHANCE-GROUNDING-INDEX-EDITS.json"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-PROOF.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-REVIEW.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-SOURCES.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "to": "unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md#grounding-initial-chances"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "CHANCE-GROUNDING-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "BASIC-CONFLICT-JUDGMENT.md#grounding-initial-chances"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "to": "BASIC-CONFLICT-JUDGMENT.md#grounding-initial-chances"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "to": "CHANCE-GROUNDING-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "to": "CHANCE-GROUNDING-INDEX-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "to": "CHANCE-GROUNDING-CHECKS.json"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "to": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-SOURCES.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "to": "ChanceGrounding.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "to": "chance-grounding-verification.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "to": "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-PROOF.md"
+    }
+  ],
+  "navigation_passages": 10,
+  "proof_receipt": {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/chance-grounding-verification.json",
+    "sha256": "4d4d161d9f1c013b378abcc265f2834ce030da2d13194a0dcefb696c21815c3a",
+    "retained_run": "chance-grounding-checks/20261008T105731.467185Z",
+    "retained_artifact_count": 11,
+    "source_sha256": {
+      "ChanceGrounding": "efb287aa7665d04dcccea7d28220030e98ca912d95096061eaceae121f2c451f"
+    },
+    "checker_sha256": {
+      "check_chance_grounding.py": "dea8c50b684f52f885f1ea2bb4103e158194cd5eb86b2a5ffca1fa792cf49cc7",
+      "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+    },
+    "new_theorems": 4,
+    "new_declaration_audits": 10,
+    "inherited_theorems": 0,
+    "inherited_declaration_audits": 0,
+    "separately_checked_examples": [
+      {
+        "claim": "positive tickets (1,1) refine to (3,1), strictly increasing the diagnostic score",
+        "kernel_checked": true,
+        "counted_as_new_theorem": false
+      }
+    ]
+  },
+  "unchanged_lean_not_rerun": true,
+  "new_empirical_measurements": 0,
+  "independent_review": {
+    "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-REVIEW.md",
+    "sha256": "58d7f46cd68eaed88e01cb7d0e34e356c8693893c0d32f57d0ff0fc7577c7597",
+    "disposition": "accepted as a defended additional ethical candidate and checked conditional implementation diagnostic",
+    "formal_review_scope": "independent source and receipt audit, not another compiler run"
+  },
+  "paired_row": "M20",
+  "other_entries_preserved_at_mutation": 92,
+  "other_rendered_lines_preserved_at_mutation": true,
+  "unowned_review_hashes_preserved_at_mutation": true,
+  "scoped_render": "Canonical renderer; only M20 replaced and other lines retained.",
+  "global_check": {
+    "exit_code": 2,
+    "stdout": "{\n  \"status\": \"needs-review\",\n  \"errors\": [\n    \"Linked source versions changed; reread affected entries before rendering.\"\n  ],\n  \"changes\": {\n    \"modified_sources\": [\n      \"RESEARCH.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md\",\n      \"sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md\",\n      \"theories/shengsheng-buxi-generative-existence/README.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md\",\n      \"theories/shengsheng-buxi-generative-existence/results/ROADMAP.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md\",\n      \"sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md\",\n      \"experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md\",\n      \"theories/meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/COLLECTIVE-DESTRUCTION-INTEGRATION.md\",\n      \"sources/15-codex-theory-conversations/2026-10-08-collective-destructive-attractors.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md\",\n      \"sources/15-codex-theory-conversations/2026-10-08-finish-alignment-fruits.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PLURAL-SYSTEMS-AND-CORRECTION.md\",\n      \"sources/15-codex-theory-conversations/2026-10-08-plural-systems-and-parent-correction.md\"\n    ],\n    \"missing_sources\": [],\n    \"new_pages\": [\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/EVIDENCE-QUALIFIED-CORRECTION-INTEGRATION.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CALIBRATION-RENEWAL-PROTOCOL.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/VERSIONED-CORRECTION-INTEGRATION.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-PAPER-POSITIONING.md\"\n    ],\n    \"removed_pages\": [\n      \"_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md\"\n    ]\n  }\n}\n",
+    "stderr": ""
+  },
+  "pending_global_changes": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "theories/meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/COLLECTIVE-DESTRUCTION-INTEGRATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-collective-destructive-attractors.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md",
+      "sources/15-codex-theory-conversations/2026-10-08-finish-alignment-fruits.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PLURAL-SYSTEMS-AND-CORRECTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-plural-systems-and-parent-correction.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVIDENCE-QUALIFIED-CORRECTION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CALIBRATION-RENEWAL-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/VERSIONED-CORRECTION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-PAPER-POSITIONING.md"
+    ],
+    "removed_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md"
+    ]
+  }
+}

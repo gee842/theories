@@ -1,0 +1,47 @@
+Generative.ExplanatoryNecessity.decode_singleton_recovers_step.{u, v, w} {S : Type u} {A : Type v} {E : Type w}
+  {P : Generative.Process S A} {decode : E → Generative.ExplanatoryNecessity.Answers S A} {e : E}
+  (h : Generative.ExplanatoryNecessity.Adequate P decode e) (s : S) (a : A) (t : S) : decode e s [a] t ↔ P.step s a t
+Generative.ExplanatoryNecessity.same_description_preserves_steps.{u, v, w} {S : Type u} {A : Type v} {E : Type w}
+  {P Q : Generative.Process S A} {decode : E → Generative.ExplanatoryNecessity.Answers S A} {e f : E}
+  (hp : Generative.ExplanatoryNecessity.Adequate P decode e) (hq : Generative.ExplanatoryNecessity.Adequate Q decode f)
+  (he : e = f) (s : S) (a : A) (t : S) : P.step s a t ↔ Q.step s a t
+Generative.ExplanatoryNecessity.different_steps_require_different_descriptions.{u, v, w} {S : Type u} {A : Type v}
+  {E : Type w} {P Q : Generative.Process S A} {decode : E → Generative.ExplanatoryNecessity.Answers S A} {e f : E}
+  (hp : Generative.ExplanatoryNecessity.Adequate P decode e) (hq : Generative.ExplanatoryNecessity.Adequate Q decode f)
+  {s t : S} {a : A} (hs : P.step s a t) (hn : ¬Q.step s a t) : e ≠ f
+Generative.ExplanatoryNecessity.step_equivalence_iff_trace_equivalence.{u, v} {S : Type u} {A : Type v}
+  (P Q : Generative.Process S A) :
+  (∀ (s : S) (a : A) (t : S), P.step s a t ↔ Q.step s a t) ↔
+    ∀ (s : S) (word : List A) (t : S), Generative.Trace P s word t ↔ Generative.Trace Q s word t
+Generative.ExplanatoryNecessity.static_profile_adequate.{u, v} {S : Type u} {A : Type v} (P : Generative.Process S A) :
+  Generative.ExplanatoryNecessity.Adequate P (fun profile => profile) (Generative.Trace P)
+Generative.ExplanatoryNecessity.adequate_answers_agree.{u, v, w} {S : Type u} {A : Type v} {E : Type w}
+  {P : Generative.Process S A} {D : Type w} {decode : E → Generative.ExplanatoryNecessity.Answers S A}
+  {other : D → Generative.ExplanatoryNecessity.Answers S A} {e : E} {d : D}
+  (he : Generative.ExplanatoryNecessity.Adequate P decode e) (hd : Generative.ExplanatoryNecessity.Adequate P other d)
+  (s : S) (word : List A) (t : S) : decode e s word t ↔ other d s word t
+Generative.ExplanatoryNecessity.local_decomposition_iff_trace_representation.{u, v} {S : Type u} {A : Type v}
+  (H : Generative.ExplanatoryNecessity.Answers S A) :
+  Generative.ExplanatoryNecessity.LocallyDecomposable H ↔
+    ∀ (s : S) (word : List A) (t : S),
+      H s word t ↔ Generative.Trace (Generative.ExplanatoryNecessity.singletonProcess H) s word t
+Generative.ExplanatoryNecessity.idle_feasible (s : Bool) (word : List Unit) :
+  Generative.Feasible Generative.ExplanatoryNecessity.idle s word
+Generative.ExplanatoryNecessity.flip_feasible (s : Bool) (word : List Unit) :
+  Generative.Feasible Generative.ExplanatoryNecessity.flip s word
+Generative.ExplanatoryNecessity.feasibility_profiles_agree (s : Bool) (word : List Unit) :
+  Generative.Feasible Generative.ExplanatoryNecessity.idle s word ↔
+    Generative.Feasible Generative.ExplanatoryNecessity.flip s word
+Generative.ExplanatoryNecessity.endpoint_profiles_differ :
+  Generative.Trace Generative.ExplanatoryNecessity.flip false [()] true ∧
+    ¬Generative.Trace Generative.ExplanatoryNecessity.idle false [()] true
+Generative.ExplanatoryNecessity.bounded_empty : Generative.ExplanatoryNecessity.bounded []
+Generative.ExplanatoryNecessity.bounded_singleton (a : Unit) : Generative.ExplanatoryNecessity.bounded [a]
+Generative.ExplanatoryNecessity.bounded_rejects_double : ¬Generative.ExplanatoryNecessity.bounded [(), ()]
+Generative.ExplanatoryNecessity.bounded_prefix_closed :
+  Generative.Deeper.PrefixClosed Generative.ExplanatoryNecessity.bounded
+Generative.ExplanatoryNecessity.bounded_no_one_point_realization :
+  ¬∃ P, ∀ (word : List Unit), Generative.Feasible P () word ↔ Generative.ExplanatoryNecessity.bounded word
+Generative.ExplanatoryNecessity.bounded_history_realization (word : List Unit) :
+  Generative.Feasible (Generative.Deeper.historyProcess Generative.ExplanatoryNecessity.bounded) [] word ↔
+    Generative.ExplanatoryNecessity.bounded word

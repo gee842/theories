@@ -1,0 +1,21 @@
+'RiskConditioning.Plan' does not depend on any axioms
+'RiskConditioning.aRisk' does not depend on any axioms
+'RiskConditioning.bRisk' does not depend on any axioms
+'RiskConditioning.localOutcome' does not depend on any axioms
+'RiskConditioning.outcome' does not depend on any axioms
+'RiskConditioning.events' does not depend on any axioms
+'RiskConditioning.liveEvents' does not depend on any axioms
+'RiskConditioning.counts' does not depend on any axioms
+'RiskConditioning.q' does not depend on any axioms
+'RiskConditioning.event_masses' does not depend on any axioms
+'RiskConditioning.full_joint_counts' does not depend on any axioms
+'RiskConditioning.conditional_joint_counts' does not depend on any axioms
+'RiskConditioning.outside_agreement' depends on axioms: [propext]
+'RiskConditioning.live_correspondence' depends on axioms: [propext, Quot.sound]
+'RiskConditioning.no_simultaneous_loss' depends on axioms: [propext]
+'RiskConditioning.opposite_strict_rankings' does not depend on any axioms
+'RiskConditioning.translation_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RiskConditioning.translated_ranking' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RiskConditioning.earlierScore' does not depend on any axioms
+'RiskConditioning.laterScore' does not depend on any axioms
+'RiskConditioning.no_shared_minimizer' does not depend on any axioms

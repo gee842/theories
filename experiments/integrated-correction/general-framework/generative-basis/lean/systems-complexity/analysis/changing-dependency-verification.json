@@ -1,0 +1,1337 @@
+{
+  "checked_at_utc": "2026-10-07T22:44:41.287433+00:00",
+  "status": "passed",
+  "fresh_local_source_build": true,
+  "inputs_unchanged": true,
+  "toolchain": "leanprover/lean4:v4.30.0-rc2",
+  "lean_version": "Lean (version 4.30.0-rc2, arm64-apple-darwin24.6.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc, Release)",
+  "compiler_path": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "checker_sha256": "4d2c425a764e67d930a0200d397e8f6e05a34c43ed91fa949d2f5ac2815a43be",
+  "toolchain_sha256": "ce4c4e3d87434b9663f46de25ce34b48a0cf0d392e0a320a0787b4674a2d7b61",
+  "mathlib_revision": "ea11ccc0c5c7c4c562742e918fe2e0b2814a58aa",
+  "dependency_project": "/Users/ren/repos/\u751f\u751f\u4e0d\u606f",
+  "manifest_sha256": "740eef1aae725322b99872aba59cc5c902378b992bfe9122737a454f3076321b",
+  "upstream_libraries": "Existing pinned cache used; upstream Mathlib was not rebuilt.",
+  "direct_import_fingerprints": [
+    {
+      "path": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/lib/lean/Init.olean",
+      "sha256": "12e94e3624b943d20ad898491957051ae9ba22ccbed9e6f92c35fbc711849246"
+    },
+    {
+      "path": "InquiryChoice.olean",
+      "sha256": "3e4482a7dd94999e82d82b84fd5fc599606622cce61ad9597896eadb4f6253fc"
+    }
+  ],
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "exit_code": 0,
+      "passed": true,
+      "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "output_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+      "audits": [
+        {
+          "name": "Generative.trace_append_iff",
+          "axioms": []
+        },
+        {
+          "name": "Generative.trace_singleton_iff",
+          "axioms": []
+        },
+        {
+          "name": "Generative.enabled_iff_singleton_trace",
+          "axioms": []
+        },
+        {
+          "name": "Generative.enabled_difference_implies_state_difference",
+          "axioms": []
+        },
+        {
+          "name": "Generative.feasible_append_iff",
+          "axioms": []
+        },
+        {
+          "name": "Generative.feasible_prefix",
+          "axioms": []
+        },
+        {
+          "name": "Generative.enabled_product_iff",
+          "axioms": []
+        },
+        {
+          "name": "Generative.trace_product_iff",
+          "axioms": []
+        },
+        {
+          "name": "Generative.feasible_product_iff",
+          "axioms": []
+        },
+        {
+          "name": "Generative.trace_map",
+          "axioms": []
+        },
+        {
+          "name": "Generative.trace_lift",
+          "axioms": []
+        },
+        {
+          "name": "Generative.projected_trace_iff",
+          "axioms": []
+        },
+        {
+          "name": "Generative.projection_exact_iff",
+          "axioms": []
+        },
+        {
+          "name": "Generative.local_exact_iff_trace_exact",
+          "axioms": []
+        },
+        {
+          "name": "Generative.enabled_projection_iff",
+          "axioms": []
+        },
+        {
+          "name": "Generative.feasible_projection_iff",
+          "axioms": []
+        },
+        {
+          "name": "Generative.feasible_difference_implies_projection_difference",
+          "axioms": []
+        },
+        {
+          "name": "Generative.trace_faithful_iff",
+          "axioms": []
+        }
+      ],
+      "new_in_this_adaptive_extension": false
+    },
+    {
+      "module": "SystemsOrganization",
+      "exit_code": 0,
+      "passed": true,
+      "source_sha256": "fd9622e4b76602f4f97bc9290798d01b4a7c2f3925023c268f5d3fb75e3dbf8b",
+      "output_sha256": "e94da75fc8f1f3ec9a0fe55379f37b31c954776c93cc5a4ddb5e929a04ec458b",
+      "audits": [
+        {
+          "name": "SystemsOrganization.deterministic_trace_iff",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.evolve_semiconjugacy",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.commuting_iff_all_words",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.projected_trace_exact",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.reduced_law_exists_iff",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.commuting_composes",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.coupled_components_preserve_history",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.self_routing_fixed",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.cross_routing_two_steps",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.cross_routing_not_fixed",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.same_cells_different_collective_recurrence",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.crossed_left_not_fibre_consistent",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.no_autonomous_left_law",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.link_inventory_preserved",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.fuel_does_not_increase",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.formation_step",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.formation_preserves_cell_values",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.formation_consumes_spare_and_fuel",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.exchange_unavailable_before_formation",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.exchange_available_after_formation",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.formation_and_recurrence_same_history",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.parts_only_cannot_preserve_futures",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.no_fuel_blocks_formation",
+          "axioms": []
+        },
+        {
+          "name": "SystemsOrganization.no_spare_blocks_formation",
+          "axioms": []
+        }
+      ],
+      "new_in_this_adaptive_extension": false
+    },
+    {
+      "module": "RelationsAcrossScales",
+      "exit_code": 0,
+      "passed": true,
+      "source_sha256": "24f8eb4269927017b6e65841011c3a4a52002bfe405bf5d09d8a99be7c0cf273",
+      "output_sha256": "7419604162fba6fced2806b83cad7338fd741da9274752caf4846941b814948d",
+      "audits": [
+        {
+          "name": "RelationsAcrossScales.history_is_core_trace",
+          "axioms": []
+        },
+        {
+          "name": "RelationsAcrossScales.one_step",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RelationsAcrossScales.finite_horizon_bound",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RelationsAcrossScales.budget_cap",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RelationsAcrossScales.composed_defect",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RelationsAcrossScales.observable_error",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RelationsAcrossScales.protected_conditions",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RelationsAcrossScales.violation_certificate",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RelationsAcrossScales.fibre_error_lower_bound",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RelationsAcrossScales.routing_total",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RelationsAcrossScales.routing_defect_lower_bound",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RelationsAcrossScales.routing_error_bound",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RelationsAcrossScales.enriched_routing_exact",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RelationsAcrossScales.total_exact_through_transfer",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RelationsAcrossScales.exact_total_can_hide_loss",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RelationsAcrossScales.no_total_only_protection",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RelationsAcrossScales.minimum_preserves_protection",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RelationsAcrossScales.frozen_charts_miss_change",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RelationsAcrossScales.linear_drift",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RelationsAcrossScales.positive_drift_unbounded",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RelationsAcrossScales.threshold_ambiguity",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "new_in_this_adaptive_extension": false
+    },
+    {
+      "module": "RemainingDependency",
+      "exit_code": 0,
+      "passed": true,
+      "source_sha256": "bacb8ebbdb38ea3367250f39f3dc5aace9a4e557256dc69cb00e70ccbe41af98",
+      "output_sha256": "1ebe1f21adfed36245fa0f136eeceb8a6cdbcf3c1c82d3eb732051314469e07d",
+      "audits": [
+        {
+          "name": "RemainingDependency.charge_conserves",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.charge_never_increases_fuel",
+          "axioms": []
+        },
+        {
+          "name": "RemainingDependency.charge_denial_preserves_account",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.chosen_setting_supported",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.productive_pair_has_selected_setting",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.absent_evidence_is_not_negative",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.no_constant_setting_serves_opposed_relations",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.calibrated_selected_setting_transfers",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.faithful_bound_datum_decodes",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.wrong_context_stays_unknown",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.missing_stays_unknown",
+          "axioms": []
+        },
+        {
+          "name": "RemainingDependency.discharge_conserves",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.supported_discharge_delivers",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.unsupported_discharge_wastes",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.transfer_actor_account_conserved",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.transfer_stocks_conserved",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.empty_source_cannot_debit_actor",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.affordable_calibrated_selection_delivers",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.ancestral_coordinates_unchanged",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.run_ancestral_coordinates_unchanged",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.completed_component_stays_complete",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.run_is_core_trace",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.consumer_read_ignores_latent_law",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.weak_challenge_does_not_supply_load",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.slot_write_does_not_supply_load",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.paid_account_conserved",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.paid_stocks_preserved",
+          "axioms": []
+        },
+        {
+          "name": "RemainingDependency.advance_actor_account_conserved",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.advance_stock_account_conserved",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.run_actor_account_conserved",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.run_stock_account_conserved",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.whole_history_conserved",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.finite_original_support_bounds_fuel",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.truthful_paid_assay_acquires_pair",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.truthful_paid_assay_commits_supported_choice",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.actual_dependent_service",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.opposed_dependency_changes_the_enacted_relation",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.matched_clamp_preserves_acquisition_but_withholds_use",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.matched_assay_cost_through_commit",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.missing_contact_is_unresolved",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.false_positive_can_misdirect_remaining_packet",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.broken_calibration_defeats_correct_weak_record",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "RemainingDependency.unavailable_relation_is_not_old_unfulfillment",
+          "axioms": [
+            "propext"
+          ]
+        }
+      ],
+      "new_in_this_adaptive_extension": false
+    },
+    {
+      "module": "ScaleRevision",
+      "exit_code": 0,
+      "passed": true,
+      "source_sha256": "16d39c9497dba735eeabdd52d3b5b2e6ae256d613f40b73da5fab0b38ed61df5",
+      "output_sha256": "266b053102f002883afe11cfd3a14259622c4c131ef0939b9443b32eb67b2a6a",
+      "audits": [
+        {
+          "name": "ScaleRevision.run_is_core_trace",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ScaleRevision.probe_obtains_actual_loss",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ScaleRevision.truthful_changed_probe_requests_refinement",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ScaleRevision.revised_exact_forecast",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ScaleRevision.calibrated_response_margin",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ScaleRevision.readout_error_enters_response",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ScaleRevision.dose_nonnegative",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ScaleRevision.bounded_source_after_response",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ScaleRevision.response_keeps_second",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ScaleRevision.response_support_balance",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ScaleRevision.actual_response_condition",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ScaleRevision.paid_work_conserved",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ScaleRevision.advance_work_conserved",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ScaleRevision.run_work_conserved",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ScaleRevision.waited_evidence_rejected",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ScaleRevision.acquired_revision_endpoint",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ScaleRevision.enacted_refinement_protects",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ScaleRevision.clamped_description_loses_condition",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ScaleRevision.ignored_revision_delay_loses_condition",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ScaleRevision.biased_new_coordinate_loses_condition",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ScaleRevision.inquiry_can_exhaust_response_funding",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ScaleRevision.insufficient_response_source",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ScaleRevision.mismatched_context_withholds_response",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ScaleRevision.matched_revision_preserves_other_inputs",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ScaleRevision.bounded_bias_margin_recovers",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ScaleRevision.conservative_margin_can_exceed_source",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ScaleRevision.fixed_response_also_protects",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "new_in_this_adaptive_extension": false
+    },
+    {
+      "module": "InquiryChoice",
+      "exit_code": 0,
+      "passed": true,
+      "source_sha256": "2a2c6571d43f13774a8d27ff473bda6f7c363cdb0e972ecb7ebff3a23a238707",
+      "output_sha256": "c77884aa95fcf29ca260615924db39a1c772fd32efaf0823a9b9279bc2ec741b",
+      "audits": [
+        {
+          "name": "InquiryChoice.robust_iff_interval",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "InquiryChoice.robust_exists_iff",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "InquiryChoice.minimal_robust_dose",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "InquiryChoice.indistinguishable_conflict",
+          "axioms": []
+        },
+        {
+          "name": "InquiryChoice.observed_class_policy_iff",
+          "axioms": [
+            "Classical.choice"
+          ]
+        },
+        {
+          "name": "InquiryChoice.waiting_floor",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "InquiryChoice.early_support_dominates_before_delivery",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "InquiryChoice.same_horizon_same_dose",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "InquiryChoice.run_is_core_trace",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "InquiryChoice.deliver_work_conserved",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "InquiryChoice.run_work_conserved",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "InquiryChoice.two_losses_have_no_common_immediate_dose",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "InquiryChoice.low_loss_inquiry",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "InquiryChoice.high_loss_inquiry",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "InquiryChoice.shared_evidence_selects_inquiry",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "InquiryChoice.wide_tolerance_selects_immediate",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "InquiryChoice.immediate_is_robust_with_wider_tolerance",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "InquiryChoice.immediate_uses_less_work",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "InquiryChoice.inquiry_can_cross_floor_before_response",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "InquiryChoice.early_response_keeps_floor",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "InquiryChoice.selector_rejects_unsafe_inquiry",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "InquiryChoice.selector_rejects_unfunded_inquiry",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "InquiryChoice.selected_inquiry_can_lack_support",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "InquiryChoice.adaptive_dose_admissible",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "InquiryChoice.guarded_inquiry_has_feasible_correction",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "InquiryChoice.guarded_immediate_is_robust",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "InquiryChoice.repaired_selection_retains_useful_inquiry",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "InquiryChoice.repaired_selection_rejects_insufficient_support",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "new_in_this_adaptive_extension": false
+    },
+    {
+      "module": "ChangingDependency",
+      "exit_code": 0,
+      "passed": true,
+      "source_sha256": "cb4d03ecb9306acfa6c65bc962b5cecb48de7e1244cb6d04903e75df8bb576f5",
+      "output_sha256": "7c9c426691d4642f93a323e022776d951afde1bd9e888ed1ad01015cacea6088",
+      "audits": [
+        {
+          "name": "ChangingDependency.forecast_error",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ChangingDependency.cumulative_error",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ChangingDependency.acquired_error_after_change",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ChangingDependency.variable_two_stage_response",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ChangingDependency.certificate_transfers",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ChangingDependency.certificate_iff_interval",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ChangingDependency.uncertainty_requires_tolerance",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ChangingDependency.smaller_error_preserves_certificate",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ChangingDependency.read_obtains_condition_and_loss",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ChangingDependency.run_is_core_trace",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ChangingDependency.changed_dependency_keeps_timestamp",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ChangingDependency.run_work_conserved",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ChangingDependency.current_stamp_can_have_wrong_forecast",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ChangingDependency.stale_response_misses_target",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ChangingDependency.bounded_response_meets_target",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ChangingDependency.bounded_response_covers_variable_losses",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ChangingDependency.refresh_meets_same_horizon",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ChangingDependency.refresh_is_useful_when_loss_stays_low",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ChangingDependency.changed_reading_can_still_meet_target",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ChangingDependency.unbounded_change_defeats_refresh",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ChangingDependency.narrow_tolerance_defeats_old_bound",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ChangingDependency.within_bound_change_defeats_exact_refresh",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ChangingDependency.error_growth_budget",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ChangingDependency.bounded_refresh_covers_variable_losses",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ChangingDependency.bounded_refresh_repairs_actual_failure",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "new_in_this_adaptive_extension": true
+    }
+  ],
+  "new_audits": 25,
+  "replayed_inherited_audits": 161,
+  "new_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "scope": "Acquired total discrepancy and new coordinate cause an actual description revision, with continued drift during inquiry, inherited resource accounting and a bounded additive response; matched causal and failure controls.",
+  "limits": "Supplied observation/response laws, fixed inquiry schedule and thresholds; no empirical validation, automatic discovery of the missing coordinate, full controller synthesis or ancestral numerical replay."
+}

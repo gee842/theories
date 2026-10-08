@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-08",
+  "previous_goal_turn": "progress: checked aggregation measurements and revised sorting/inheritance correspondence",
+  "this_goal_turn": "progress: checksummed original genealogies, linked reversion assay, empirical joint-success audit and six fresh Lean proofs",
+  "goal": "establish The Theory of Evolution",
+  "goal_complete": false,
+  "new_theorems": 6,
+  "declaration_audits": 6,
+  "lean_toolchain": "leanprover/lean4:v4.29.1",
+  "source_bindings": "passed",
+  "publisher_archive_md5_verified": true,
+  "observed_phase_culture_nodes": 3808,
+  "observed_parent_edges": 3600,
+  "missing_source_rows": 32,
+  "unresolved_post_gap_parents": 16,
+  "terminal_ancestry_paths": 174,
+  "matched_date_initial_cultures": 144,
+  "linked_assay_rows": 222,
+  "cycle_completions_evolved_and_reverted": [
+    42,
+    7
+  ],
+  "cycle_denominators": [
+    72,
+    72
+  ],
+  "new_biological_experiments": 0,
+  "independent_agent_review": false,
+  "author_self_review": "in integration",
+  "local_links_checked": 18,
+  "full_chain_check": {
+    "status": "passed",
+    "entries": 84,
+    "reviewed_sources": 210,
+    "changes": {
+      "modified_sources": [],
+      "missing_sources": [],
+      "new_pages": [],
+      "removed_pages": []
+    }
+  },
+  "completion_requirements_preserved": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
+  ],
+  "scope": "Recorded ancestry and same-culture phase outcomes, source-reported genetic intervention and checked rational correspondences. Not a replicated genome/Bayesian pipeline, universal evolutionary account, or demonstrated broad superiority.",
+  "remaining": [
+    "Physical and developmental correspondence beyond the chosen bacterial experiment",
+    "Origin/renewal of the wider support and selection regime",
+    "Full recovery of evolutionary mechanisms and changed inherited units",
+    "Source-matched predictions against an adequate conventional lineage model",
+    "Evolved evaluation and practical application at the full goal scope"
+  ],
+  "next_action": "Use recorded phase outcomes and death/replacement relations for a matched lineage-prediction comparison, with held-out histories and appropriate condition/missingness handling; credit the original Bayesian model.",
+  "files_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LINEAGE-CONTINUATION-INTEGRATION.md": "001a646a66941e30b58d6c68be424d55034fa6c252433aa4e8b6c02de58c8668",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/lineages/README.md": "e41d86b1a3731bce2a6a22320ced2c280a98abded11e3de255838a20b963b005",
+    "sources/evolutionary-selection/doulcier-2025/README.md": "64269520a60d60eaeb4ae686fcc67b5387227e077c181b773c787bbeda5874d4",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md": "487a90b3ce73dc7248082510befcce2728040dc252873c795211c4f8bc992e3c",
+    "sources/evolutionary-selection/doulcier-2025/manifest.json": "102e47418fde32c6101b33a08f20f09d228986ae950294eccfa57d33828a1260",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LINEAGE-CONTINUATION-INDEX-EDITS.json": "5b3660b8720a5a4fb534ade87c01ada1f29d54726480a4267fcec25f7d1a9296",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LifecycleCorrespondence.lean": "790e54a70168aaf1a346850fd9c40936c25713f189fd6868633fa714c583213f",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/lifecycle-verification/check.py": "25be2764e974f2f38fe19a5a3f4f54097d8fa5503dbc0a73499b16979507160a",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/lifecycle-verification/verification.json": "3a4f20b52eada4cd3ec20c0db8c18f743d60f8461728887155baa221aa5f2dea",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/lineages/missing-reading.json": "4990de9ec0a86496185137c8897ddf7bc76d89d1702323bbb05fbc3d72c3583f",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/lineages/analyze_lineages.py": "37cc5140388b1cb9c2a7f77d031154b2b3c797bc9f5ef8da2c8dd97ddb04e819",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/lineages/linked-assay-reading.csv": "b441bcc3001c8215229bf4ff6a211b42cd6d3118b2db510dc74bcc6f311dcb21",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/lineages/genealogy-reading.csv": "58347362b3d8d3e462b62d50b76713f9955ebc84b0e220ade645f0f8b1d9f1dc",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/lineages/check_lineages.py": "4e5eee5dfd7c6ce9cd521eb4572efb57b79b4f5ac516c5b88da9942d8955bc2b",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/lineages/lineage-results.json": "766e7795d2a9cfe5a21d2d3e28e4cbcf126f359940e4720aafe82c3b83f564e9",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/lineages/verification.json": "5ec7502c73b5588971336e85a173a6a903b749a8e12fcb7abd2fa7fb8ff3468e"
+  }
+}

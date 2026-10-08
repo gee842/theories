@@ -1,0 +1,15 @@
+'InquiryRoot.threshold_available_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryRoot.every_threshold_has_a_finite_realization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryRoot.next_threshold_exceeds_that_realization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryRoot.threshold_capability_sets_pairwise_distinct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryRoot.spending_trace_iff' depends on axioms: [propext, Quot.sound]
+'InquiryRoot.spending_feasible_iff' depends on axioms: [propext, Quot.sound]
+'InquiryRoot.every_budget_excludes_a_different_horizon' depends on axioms: [propext, Quot.sound]
+'InquiryRoot.local_basis_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryRoot.entire_local_closure_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryRoot.combined_capability_descendant' depends on axioms: [propext]
+'InquiryRoot.combined_capability_implication_in_closed_theory' depends on axioms: [propext]
+'InquiryRoot.uniform_basis_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryRoot.entire_uniform_closure_valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryRoot.every_threshold_contract_is_a_descendant' does not depend on any axioms
+'InquiryRoot.every_support_contract_is_a_descendant' does not depend on any axioms

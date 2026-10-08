@@ -1,0 +1,133 @@
+Generative.CompositionalAcquisition.probe_readings (c : Generative.CompositionalAcquisition.Code) :
+  Generative.CompositionalAcquisition.eval c Generative.CompositionalAcquisition.p0 =
+      [(Generative.CompositionalAcquisition.observe c).first] ∧
+    Generative.CompositionalAcquisition.eval c Generative.CompositionalAcquisition.p1 =
+      [(Generative.CompositionalAcquisition.observe c).second]
+Generative.CompositionalAcquisition.acquired_code_exact (c : Generative.CompositionalAcquisition.Code)
+  (distinct : c.first ≠ c.second) :
+  Generative.CompositionalAcquisition.acquire (Generative.CompositionalAcquisition.observe c) = c
+Generative.CompositionalAcquisition.acquired_all_expressions (c : Generative.CompositionalAcquisition.Code)
+  (distinct : c.first ≠ c.second) (e : Generative.CompositionalAcquisition.Expr) :
+  Generative.CompositionalAcquisition.eval
+      (Generative.CompositionalAcquisition.acquire (Generative.CompositionalAcquisition.observe c)) e =
+    Generative.CompositionalAcquisition.eval c e
+Generative.CompositionalAcquisition.reencoding_preserves_content (c : Generative.CompositionalAcquisition.Code)
+  (e : Generative.CompositionalAcquisition.Expr) :
+  Generative.CompositionalAcquisition.eval (Generative.CompositionalAcquisition.renamed c)
+      (Generative.CompositionalAcquisition.rename e) =
+    Generative.CompositionalAcquisition.eval c e
+Generative.CompositionalAcquisition.acquisition_cost (c : Generative.CompositionalAcquisition.Code) :
+  Generative.CompositionalAcquisition.acquisitionCost c = 7
+Generative.CompositionalAcquisition.actual_records_supply_evidence (c : Generative.CompositionalAcquisition.Code) :
+  Generative.CompositionalAcquisition.readEvidence (Generative.CompositionalAcquisition.trialRecords c) =
+    some (Generative.CompositionalAcquisition.observe c)
+Generative.CompositionalAcquisition.actual_records_form_interpretation (c : Generative.CompositionalAcquisition.Code) :
+  Generative.CompositionalAcquisition.interpretationFromRecords (Generative.CompositionalAcquisition.trialRecords c) =
+    some (Generative.CompositionalAcquisition.acquire (Generative.CompositionalAcquisition.observe c))
+Generative.CompositionalAcquisition.training_uses_actual_records (c : Generative.CompositionalAcquisition.Code)
+  (s : Generative.CompositionalAcquisition.Learner) (enough : 7 ≤ s.support) :
+  (Generative.CompositionalAcquisition.train c s).records =
+    s.records ++ Generative.CompositionalAcquisition.trialRecords c
+Generative.CompositionalAcquisition.training_forms_interpreter (c : Generative.CompositionalAcquisition.Code)
+  (s : Generative.CompositionalAcquisition.Learner) (enough : 7 ≤ s.support) (distinct : c.first ≠ c.second) :
+  (Generative.CompositionalAcquisition.train c s).code = some c
+Generative.CompositionalAcquisition.training_support_conserved (c : Generative.CompositionalAcquisition.Code)
+  (s : Generative.CompositionalAcquisition.Learner) (enough : 7 ≤ s.support) :
+  (Generative.CompositionalAcquisition.train c s).support + 7 = s.support
+Generative.CompositionalAcquisition.insufficient_training_unchanged (c : Generative.CompositionalAcquisition.Code)
+  (s : Generative.CompositionalAcquisition.Learner) (short : s.support < 7) :
+  Generative.CompositionalAcquisition.train c s = s
+Generative.CompositionalAcquisition.acquired_execution (c : Generative.CompositionalAcquisition.Code)
+  (s : Generative.CompositionalAcquisition.Learner) (e : Generative.CompositionalAcquisition.Expr)
+  (distinct : c.first ≠ c.second) (enough : 7 + Generative.CompositionalAcquisition.operationCost c e ≤ s.support) :
+  Generative.CompositionalAcquisition.execute (Generative.CompositionalAcquisition.train c s) e =
+    some
+      (Generative.CompositionalAcquisition.eval c e,
+        s.support - 7 - Generative.CompositionalAcquisition.operationCost c e)
+Generative.CompositionalAcquisition.acquired_execution_conserved (c : Generative.CompositionalAcquisition.Code)
+  (s : Generative.CompositionalAcquisition.Learner) (e : Generative.CompositionalAcquisition.Expr)
+  (enough : 7 + Generative.CompositionalAcquisition.operationCost c e ≤ s.support) :
+  s.support - 7 - Generative.CompositionalAcquisition.operationCost c e +
+        Generative.CompositionalAcquisition.operationCost c e +
+      7 =
+    s.support
+Generative.CompositionalAcquisition.primitive_readings_do_not_resolve_order :
+  ¬Generative.KnowledgeCorrespondence.Resolves Generative.CompositionalAcquisition.separated
+      Generative.CompositionalAcquisition.primitiveEvidence Generative.CompositionalAcquisition.Code.reversed
+Generative.CompositionalAcquisition.no_exact_order_without_composite_probe :
+  ¬∃ answer,
+      Generative.KnowledgeCorrespondence.ExactOn Generative.CompositionalAcquisition.separated
+        Generative.CompositionalAcquisition.primitiveEvidence Generative.CompositionalAcquisition.Code.reversed answer
+Generative.CompositionalAcquisition.novel_expression_not_a_training_item :
+  Generative.CompositionalAcquisition.novel ≠ Generative.CompositionalAcquisition.p0 ∧
+    Generative.CompositionalAcquisition.novel ≠ Generative.CompositionalAcquisition.p1 ∧
+      Generative.CompositionalAcquisition.novel ≠ Generative.CompositionalAcquisition.orderProbe
+Generative.CompositionalAcquisition.novel_execution_from_acquisition :
+  Generative.CompositionalAcquisition.execute
+      (Generative.CompositionalAcquisition.train Generative.CompositionalAcquisition.usual
+        (Generative.CompositionalAcquisition.initial 11))
+      Generative.CompositionalAcquisition.novel =
+    some ([false, false, true], 0)
+Generative.CompositionalAcquisition.acquired_capacity_can_outlast_executable_support :
+  (Generative.CompositionalAcquisition.train Generative.CompositionalAcquisition.usual
+          (Generative.CompositionalAcquisition.initial 7)).code =
+      some Generative.CompositionalAcquisition.usual ∧
+    Generative.CompositionalAcquisition.execute
+        (Generative.CompositionalAcquisition.train Generative.CompositionalAcquisition.usual
+          (Generative.CompositionalAcquisition.initial 7))
+        Generative.CompositionalAcquisition.novel =
+      none
+Generative.CompositionalAcquisition.missing_composite_record_blocks_interpretation :
+  Generative.CompositionalAcquisition.interpretationFromRecords
+      [(Generative.CompositionalAcquisition.p0, [false]), (Generative.CompositionalAcquisition.p1, [true])] =
+    none
+Generative.CompositionalAcquisition.corrupted_composite_record_changes_interpretation :
+  Generative.CompositionalAcquisition.interpretationFromRecords
+      [(Generative.CompositionalAcquisition.p0, [false]), (Generative.CompositionalAcquisition.p1, [true]),
+        (Generative.CompositionalAcquisition.orderProbe, [true, false])] =
+    some Generative.CompositionalAcquisition.switched
+Generative.CompositionalAcquisition.changed_order_invalidates_transfer :
+  Generative.CompositionalAcquisition.eval
+      (Generative.CompositionalAcquisition.acquire
+        (Generative.CompositionalAcquisition.observe Generative.CompositionalAcquisition.usual))
+      Generative.CompositionalAcquisition.novel ≠
+    Generative.CompositionalAcquisition.eval Generative.CompositionalAcquisition.switched
+      Generative.CompositionalAcquisition.novel
+Generative.CompositionalAcquisition.unresolved_order_can_preserve_a_novel_answer :
+  Generative.CompositionalAcquisition.observe { first := false, second := false, reversed := false } =
+      Generative.CompositionalAcquisition.observe { first := false, second := false, reversed := true } ∧
+    Generative.CompositionalAcquisition.eval
+        (Generative.CompositionalAcquisition.acquire
+          (Generative.CompositionalAcquisition.observe { first := false, second := false, reversed := true }))
+        Generative.CompositionalAcquisition.novel =
+      Generative.CompositionalAcquisition.eval { first := false, second := false, reversed := true }
+        Generative.CompositionalAcquisition.novel
+Generative.CompositionalAcquisition.nonuniform_matches_training :
+  Generative.CompositionalAcquisition.nonuniform Generative.CompositionalAcquisition.p0 =
+      Generative.CompositionalAcquisition.eval Generative.CompositionalAcquisition.usual
+        Generative.CompositionalAcquisition.p0 ∧
+    Generative.CompositionalAcquisition.nonuniform Generative.CompositionalAcquisition.p1 =
+        Generative.CompositionalAcquisition.eval Generative.CompositionalAcquisition.usual
+          Generative.CompositionalAcquisition.p1 ∧
+      Generative.CompositionalAcquisition.nonuniform Generative.CompositionalAcquisition.orderProbe =
+        Generative.CompositionalAcquisition.eval Generative.CompositionalAcquisition.usual
+          Generative.CompositionalAcquisition.orderProbe
+Generative.CompositionalAcquisition.nonuniform_fails_transfer :
+  Generative.CompositionalAcquisition.nonuniform Generative.CompositionalAcquisition.novel ≠
+    Generative.CompositionalAcquisition.eval Generative.CompositionalAcquisition.usual
+      Generative.CompositionalAcquisition.novel
+Generative.CompositionalAcquisition.changed_motivation_preserves_acquired_content :
+  Generative.CompositionalAcquisition.eval
+        (Generative.CompositionalAcquisition.acquire
+          (Generative.CompositionalAcquisition.observe Generative.CompositionalAcquisition.usual))
+        (Generative.CompositionalAcquisition.pick false
+          (Generative.CompositionalAcquisition.acquire
+            (Generative.CompositionalAcquisition.observe Generative.CompositionalAcquisition.usual))) =
+      [false] ∧
+    Generative.CompositionalAcquisition.eval
+        (Generative.CompositionalAcquisition.acquire
+          (Generative.CompositionalAcquisition.observe Generative.CompositionalAcquisition.usual))
+        (Generative.CompositionalAcquisition.pick true
+          (Generative.CompositionalAcquisition.acquire
+            (Generative.CompositionalAcquisition.observe Generative.CompositionalAcquisition.usual))) =
+      [true]

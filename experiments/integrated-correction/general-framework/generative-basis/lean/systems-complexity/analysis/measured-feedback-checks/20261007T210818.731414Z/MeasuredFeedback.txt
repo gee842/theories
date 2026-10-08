@@ -1,0 +1,18 @@
+MeasuredFeedback.lean:81:39: error: unexpected token '|*'; expected '|' or '|ₘ'
+MeasuredFeedback.lean:72:52: error: unsolved goals
+case calc.step
+g : Gains
+i j r y z dt E M : ℝ
+measurement : |y - z| ≤ E
+memory : |i - j| ≤ M
+algebra :
+  raw g i { target := r, reading := y, elapsed := dt } - raw g j { target := r, reading := z, elapsed := dt } =
+    -(g.proportional + g.integral * dt) * (y - z) + (i - j)
+⊢ |g.proportional + g.integral * dt| ≤ |g.proportional + g.integral * dt| * E + M
+MeasuredFeedback.lean:99:63: error: unexpected token '|*'; expected '|' or '|ₘ'
+MeasuredFeedback.lean:153:41: error: Type mismatch
+  add_le_add_left (ih v) ?m.97
+has type
+  |lastCommand v rest - v| + ?m.97 ≤ absoluteMotion v rest + ?m.97
+but is expected to have type
+  |v - u| + |lastCommand v rest - v| ≤ |v - u| + absoluteMotion v rest

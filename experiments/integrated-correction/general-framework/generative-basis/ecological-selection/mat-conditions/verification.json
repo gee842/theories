@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "growth_summary_values_checked": 8,
+  "competition_summary_values_checked": 2,
+  "validation": "Two extraction methods plus manually read source values; no author statistics rerun.",
+  "new_lean_theorems": 0,
+  "biological_replication": false,
+  "source_sha256": "171f97eba43544299ff2f0736f58fabd26a01d1bebbc22fc18300dd7b68cb263",
+  "bindings": {
+    "read_evidence.py": "d85ed8f074466d82537783e37961098b3db6bd47ca6fa2fcb2b1de8d51056d49",
+    "check_evidence.py": "4463d700871611292d45d067f5896f8009db178574e79b194ea186ba1be44caa",
+    "growth-summary.csv": "e0a7554a632c19795bc06896b160feeb60a9b518099eef9a744b5920af55bbcb",
+    "oxygen-summary.json": "36eaea78a5f8cbb426d51e25e631cae9c8df86539a5808513c9beae5cdfd0b05"
+  }
+}

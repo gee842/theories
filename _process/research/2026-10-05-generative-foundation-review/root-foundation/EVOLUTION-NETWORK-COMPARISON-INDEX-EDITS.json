@@ -1,0 +1,91 @@
+{
+  "edits": [
+    {
+      "path": "RESEARCH.md",
+      "old_passage": "# Current theory and research\n",
+      "owned_passage": "# Current theory and research\n\n**Direct evolutionary comparison completed, 8 October 2026.** [The assessment](_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md) establishes exact correspondence between the existing reconstruction mechanism and an authored conventional network implementation: **11 new Lean theorems / 24 new audits / 34,768 executed comparisons**, with all state-dependent finite histories covered by the proof. This is equivalence under matched laws, not a reproduction of Watson’s learning equations or a predictive win. The specific formal comparison is closed; the joint empirical data requirement and full evolutionary objective remain open. / **直接比较完成：**同等信息与机制下，常规网络给出相同接续及失败结果；相连说明与明确公理伦理保留，不能当作经验优越性。\n",
+      "before_sha256": "45565a2f52b8819d13fb90bb748474bc2c9285d9b11f897abb3d709d8b7a1329",
+      "after_sha256": "1721996c8692b4a56a838a9c8a5ca0d6d6bb2ad2b26284b7cda5fc9e354a7d4a"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "old_passage": "# Generative Existence (生生不息论)\n",
+      "owned_passage": "# Generative Existence (生生不息论)\n\n**Evolutionary comparison / 演化比较，2026-10-08。** [Direct result](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md): 11 new checked theorems and 34,768 executed cases establish equivalence with a matched conventional network. The present contribution is a connected checked explanation and explicit ethical extension; biological superiority still needs the specified joint evidence. / 当前重构模型与同等机制的常规网络完全对应；不把已完成的比较或规范论证冒称生物预测胜出。\n",
+      "before_sha256": "88e0a37658892b33d5c771385d2093ee8fe4f5ebc5cdf266647085f6d95f3116",
+      "after_sha256": "61edc89ad461e43d46d0fc7becca9a0d51e86524755dd6d0d6e3d30b1c77a6bb"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "old_passage": "# Root-foundation review package\n",
+      "owned_passage": "# Root-foundation review package\n\n**Direct evolutionary-network comparison / 演化网络直接比较，2026-10-08。** [Assessment and counterreview](EVOLUTION-NETWORK-COMPARISON.md), [prospective protocol](EVOLUTION-COMPARISON-PROTOCOL.md) and [checks](EVOLUTION-NETWORK-COMPARISON-CHECKS.json) establish the current mechanism’s exact conventional realization, with 11 new theorems and 34,768 executed comparisons. The empirical advantage claim remains open; earlier completed reconstruction and ethical results keep their scope.\n",
+      "before_sha256": "af81f78f61d7dc9c6b70783685918743e402d8ac4642e2a3a02f3660280ddb8d",
+      "after_sha256": "8f264486fa3d8d656bc83b094267ab70a69d984ec1d79d5fa74fd2b1989f23ec"
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "old_passage": "# SOURCES manifest\n",
+      "owned_passage": "# SOURCES manifest\n\n**Evolutionary connectionism comparison, 8 October 2026.** [Exact user request](15-codex-theory-conversations/2026-10-08-evolution-connectionism-comparison.md) and [primary reading/preservation record](evolutionary-selection/comparative-direction/README.md#direct-comparison-reading) accompany the direct comparison. One original 2016 article XML is preserved with its delivery URL and SHA-256; the new conventional implementation is our authored comparator, not publication code.\n",
+      "before_sha256": "c1b1e774305a258479341414e8d50d5a920d1ab9737be09aa087a7e1a72261f1",
+      "after_sha256": "fe969a9d741d157712ed1719c01d2b88c8ed2dfb0ed5fbd7fbeb81a6ae72a3e2"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md",
+      "old_passage": "# Universal meta-ethics: checked warrant and coverage interfaces\n",
+      "owned_passage": "# Universal meta-ethics: checked warrant and coverage interfaces\n\n**Evolutionary network comparison, 8 October 2026.** [New module](EvolutionNetworkComparison.lean) and [fresh-build receipt](evolution-network-comparison-verification/verification.json): 11 new theorems / 24 new declaration audits, exact finite-history and shared-adaptive-selector correspondence with the existing reconstruction mechanism. This preserves identical supplied rules and establishes no empirical superiority.\n",
+      "before_sha256": "1d0e516b4a9c743d38353b94ae9cbfacfdad200483340c018ae7e02eaef7cf1f",
+      "after_sha256": "664a09704be0f50d216b5d005ae961d602ec3077d0f84c305ed8ee2e28b47d5b"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "old_passage": "## Relation to generative alignment",
+      "owned_passage": "**Direct comparison completed, 8 October 2026.** The [matched network assessment](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md) now proves that this particular reconstruction mechanism has an exact conventional network implementation, including failure and shared state-dependent selectors: 11 new Lean theorems / 24 new audits and 34,768 executed comparisons. No predictive or assumption-saving gain survives at this matched-mechanism scope. This preserves the connected explanation and its original completion, while narrowing any inference of comparative superiority. The comparator is authored here, not a reproduction of Watson’s learning equations.\n\n## Relation to generative alignment",
+      "before_sha256": "2c81c90dcae316ef5e09e28de1ee82e7d866aa1d3e41da94415174835396edda",
+      "after_sha256": "079fc89c2e78777c6d9f0d709c6be6482e5fa6290b91e7a00d3a176c6acc422d"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "old_passage": "The present result supports **conditional explanatory integration and an exact correspondence**. It does not demonstrate an empirical prediction unavailable to the comparison recurrence or establish broad superiority. A more complete conventional developmental model may reproduce the same material mechanisms. If it does, their agreement should be established and the comparative claim narrowed to whatever additional contribution survives.",
+      "owned_passage": "The present result supports **conditional explanatory integration and exact correspondences**. The [direct network comparison](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md) now settles the current developmental reconstruction model: an authored conventional implementation with the same information and laws has exactly the same finite histories, failures and state readouts, including a shared adaptive selector. Eleven new Lean theorems / 24 new audits and 34,768 executed comparisons pass. This is not a replication of Watson’s learning equations. The specific comparison is complete and yields equivalence; no distinct prediction or reduction of supplied mechanisms is demonstrated. The broader empirical claim still requires the independently constrained joint measurements specified in that assessment, and all six completion requirements remain unchanged.",
+      "before_sha256": "e48e9db0fb3a00bc902cbc73aa77030144aa32bbbcb81461f0d80e1028e6d4aa",
+      "after_sha256": "df6b5cda8cddf0a434a21fa124f1e9a936e9096d9e3328f62b106952f82f106f"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-COMPARATIVE-DIRECTION.md",
+      "old_passage": "## What better would mean",
+      "owned_passage": "**Direct formal comparison now completed:** [The matched network assessment](EVOLUTION-NETWORK-COMPARISON.md) proves exact correspondence for the current reconstruction mechanism, including shared adaptive selectors and failed actions, with 11 new theorems / 24 new audits and 34,768 executed comparisons. Equal mechanisms give equal consequences here; no predictive or assumption-saving advantage is established. This closes that direct comparison without completing the empirical test specified below or equating the authored comparator with Watson’s learning equations.\n\n## What better would mean",
+      "before_sha256": "a039b2fc949434c9c755851d9729670b50b4e2e9aad8ead2fcbf98e48019fe8a",
+      "after_sha256": "40709b8f568d8cc351be50b7fe1c2feadea1746513662d9fbbacf9dd4f1f573f"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "old_passage": "# 中英理论链索引：范围、维护与更新 / Bilingual chain index: scope and maintenance\n",
+      "owned_passage": "# 中英理论链索引：范围、维护与更新 / Bilingual chain index: scope and maintenance\n\n**直接网络比较 / Direct network comparison，2026-10-08。** C14 成对接入[比较结果与反审](EVOLUTION-NETWORK-COMPARISON.md)：11项新 Lean 定理／24项新审计、34,768项执行，保留同等机制下的等价及经验比较未完成。/ Only the owned entry, its generated row, two owned discovery pages and read changed source versions are updated. Other entries and concurrent review obligations remain preserved. [Owned edits](EVOLUTION-NETWORK-COMPARISON-INDEX-EDITS.json); [checks](EVOLUTION-NETWORK-COMPARISON-CHECKS.json).\n",
+      "before_sha256": "56898f96acbdb533ed4c419159557c8f952c573aa12a64046e53c3d270875d9d",
+      "after_sha256": "3ec4350910f31f058c1dc7f3d337a9672ad10c7c3bc7268fbba110e767756c5d"
+    }
+  ],
+  "preserved_six_requirement_rows": [
+    "| **1 Formation of evolving organization** | Formation, regulation and developmental reconstruction have conditional models. The new bond-history account derives common founder ancestry under local non-aggregative development, with a targeted biological correspondence. | Extend the connected explanation beyond the stated local laws, retaining genealogy, actual construction and empirical scope. Origins of cells/genomes and broader mechanisms are not established by this case. |",
+    "| **2 Recovery of established evolutionary explanations** | Explicit transmission models and the new two-type recurrence correspondence. | Correspondences covering the claimed selection, mutation, drift, movement, inheritance and ecological mechanisms, with valid ranges and failures. Mathematical claims require actual Lean checks. An abstract interface alone is insufficient. |",
+    "| **3 Evolution of the conditions of evolution** | Actual output determines reconstruction, and inherited retention changes development. Retention, packing and aggregation constrain sorting. A bacterial genealogy and directly linked reversion assay now connect inherited switching to actual cycle completion and subsequent lineage representation under a declared regime. Separate oxygen experiments establish activity-generated gradients and condition-dependent competitive outcomes. | Generalize and calibrate these connections with supported renewal, mixing and stochastic occurrence. Resolve the separate yeast census conversion and follow fragmentation/aggregation participants. Explain mutation, transmission and replacement contributions to prevalence; fixation alone is not causal proof. Laboratory protocol changes do not establish endogenous evolution of the selector. |",
+    "| **4 Novel organization and changed evolutionary units** | The completed [new-possibilities integration](NEW-POSSIBILITIES.md) distinguishes installed construction from encompassing law, gives a formed constructor and scope-specific description revision. The association model adds formed group relations; empirical aggregation distinguishes temporary sorting groups from inherited organizations. | Credit those results and connect formation to inherited retention and ongoing effect under actual evolutionary conditions. Common transport does not alone establish a new inherited unit. Broader changes of evolutionary units and sustained qualitative innovation require their own mechanisms and evidence. |",
+    "| **5 Demonstrated comparative strength** | Exact recurrence correspondence and a proved limit of snapshots omitting bonds. Retention data compare ordinary predictors with/without protocol information, including a worsening case. A source-bound settling sensitivity holds geometry fixed and reveals consequential density/drag choices; a conventional developmental life-cycle model receives credit. Chronological genealogy forecasts now demonstrate a gain over a changing stage average and two block alternatives, fully credited to conventional lineage inference. Dated assay transfer exposes stage-specific prediction failures. | Establish a consequential gain against an adequately specified rival with matched evidence and assumptions. Neither the reduced baselines nor disagreement between unvalidated velocity approximations establishes superior prediction. Measure sorting and descendants to decide the physical correspondence. Broad empirical superiority remains unestablished. |",
+    "| **6 Ethical continuation and evolved evaluation** | The [practical-judgment candidate](PRACTICAL-JUDGMENT.md) is complete and independently accepted at its explicit-axiom general-principles scope, with G0 and additional comparison/responsibility commitments disclosed. | Credit that completed scope; connect evolved evaluation to its actual recognition, calibration and implementation, preserving failures. Application correspondence and actual compliance require evidence. Reproductive advantage cannot silently serve as ethical authority. |"
+  ],
+  "chain_update": {
+    "entry": "C14",
+    "other_entries_preserved": 86,
+    "new_link_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md",
+    "reviewed_sources": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-COMPARATIVE-DIRECTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md"
+    ],
+    "old_row_sha256": "d62f04d3ce81b5aaeabf765650ffc80a13360b4bcabbf928133695c654ff0146",
+    "new_row_sha256": "4855a3719e290efa3fbd30496b791ac9ac41c2cf46e9de2437550aa9f1dce1b3",
+    "unrelated_lines_preserved": true,
+    "maintenance_owned_passage": "**直接网络比较 / Direct network comparison，2026-10-08。** C14 成对接入[比较结果与反审](EVOLUTION-NETWORK-COMPARISON.md)：11项新 Lean 定理／24项新审计、34,768项执行，保留同等机制下的等价及经验比较未完成。/ Only the owned entry, its generated row, two owned discovery pages and read changed source versions are updated. Other entries and concurrent review obligations remain preserved. [Owned edits](EVOLUTION-NETWORK-COMPARISON-INDEX-EDITS.json); [checks](EVOLUTION-NETWORK-COMPARISON-CHECKS.json)."
+  },
+  "scope": "Owned insertions and exact comparison-status replacement; preserves other sessions and full completion criteria"
+}

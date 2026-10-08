@@ -1,0 +1,39 @@
+{
+  "status": "passed_independent_source_binding_and_isolated_recompilation",
+  "utc": "2026-10-07T22:33:57.648067+00:00",
+  "author_retained_run": "alignment-direction-checks/20261007T223223.414557Z",
+  "author_receipt_sha256": "3e479e7b0c34e818fd174d243b2705abf9355d170ff4d7b5fc7c2bf7db4d8a1c",
+  "author_retained_artifacts_verified": 15,
+  "source_sha256": {
+    "PracticalJudgment": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "AlignmentDirection": "1b183a54e20f3f247aaca539e06ee5c739929758648c965ff900d494b002cd34"
+  },
+  "document_sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md": "9940ead2d7f06a18ff7f2ec37f27aebd496dde10854d8a11993469a31a7900cd",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md": "bc39c2dc02d5e89787cbf18118fb86d05419eff36aac63a01e0b58a0d17153b7"
+  },
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "counts": {
+    "PracticalJudgment": {
+      "theorems": 30,
+      "explicit_declarations": 46
+    },
+    "AlignmentDirection": {
+      "theorems": 9,
+      "explicit_declarations": 16
+    }
+  },
+  "independent_logs_match_author": true,
+  "scope": "Independent exact-source compilation, signature/dependency comparison and receipt consistency. Does not establish philosophical warrant or actual-world correspondence.",
+  "review_script_sha256": "bcba64a8b463feb62645dd236a5903277808eba50c44248ac8dd5790657c1ae3",
+  "review_log_sha256": {
+    "AlignmentDirection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "AlignmentDirectionAxiomAudit.log": "c1b4d8b1958068161e8ed798d5419616d0006a24220cb771ceb282b11c5aa960",
+    "AlignmentDirectionSignatures.log": "662c3ff7c8cffe9bdb9508becd745db79ce13712c4599d7553b2fccf98365994",
+    "PracticalJudgment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PracticalJudgmentAxiomAudit.log": "d73810d6b1a7343808726234c17bca9d7841acafabd3a17ee8e6145dfabbf1ea",
+    "PracticalJudgmentSignatures.log": "93b65679f59a01788bfcfbfe0bf5bc3ef93f0cf67516c469f1667c5cdc9abd65",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

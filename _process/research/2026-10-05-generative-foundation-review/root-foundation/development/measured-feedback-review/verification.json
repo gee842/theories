@@ -1,0 +1,460 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-07T21:15:55.504356+00:00",
+  "version": "Lean (version 4.30.0-rc2, arm64-apple-darwin24.6.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc, Release)",
+  "executable_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "mathlib_revision": "ea11ccc0c5c7c4c562742e918fe2e0b2814a58aa",
+  "source_sha256": {
+    "GenerativeCore": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "SystemsOrganization": "fd9622e4b76602f4f97bc9290798d01b4a7c2f3925023c268f5d3fb75e3dbf8b",
+    "RelationsAcrossScales": "24f8eb4269927017b6e65841011c3a4a52002bfe405bf5d09d8a99be7c0cf273",
+    "EmbodiedChoiceScales": "58d46268db83ebf6e2995b52665f40a63477604e6dec11bba97072b1cf4e1fd9",
+    "MeasuredFeedback": "cdc9881f5929d1713f051305f3817329ee90ed12a05a323df330bb5df817972e"
+  },
+  "checker_sha256": "2cb58e80e77463a268850db83fc13bcd2b1d657cb73da4e7d91a9c4c256ef7b5",
+  "review_script_sha256": "8c7c66b95e9cdb737f4b768330daa99f9f37b9cbae29108619884fcda34fd18b",
+  "author_snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/measured-feedback-checks/20261007T210939.617450Z",
+  "author_receipt_sha256": "3596836c76d8f1701b6eff7119c0f2a67014006a55d5526bd9e99844b6d1520a",
+  "audits": 147,
+  "new_theorems": 13,
+  "new_audits": 26,
+  "axiom_dependencies": {
+    "Generative.Process": [],
+    "Generative.Enabled": [],
+    "Generative.Trace": [],
+    "Generative.trace_nil_iff": [],
+    "Generative.trace_cons_iff": [],
+    "Generative.trace_singleton_iff": [],
+    "Generative.trace_append_iff": [],
+    "Generative.enabled_iff_singleton_trace": [],
+    "Generative.enabled_difference_implies_state_difference": [],
+    "Generative.Feasible": [],
+    "Generative.feasible_append_iff": [],
+    "Generative.feasible_prefix": [],
+    "Generative.productProcess": [],
+    "Generative.enabled_product_iff": [],
+    "Generative.trace_product_left": [],
+    "Generative.trace_product_right": [],
+    "Generative.trace_product_mk": [],
+    "Generative.trace_product_iff": [],
+    "Generative.feasible_product_iff": [],
+    "Generative.trace_map": [],
+    "Generative.trace_lift": [],
+    "Generative.projected_trace_iff": [],
+    "Generative.projection_exact_iff": [],
+    "Generative.local_exact_iff_trace_exact": [],
+    "Generative.enabled_projection_iff": [],
+    "Generative.feasible_projection_iff": [],
+    "Generative.feasible_difference_implies_projection_difference": [],
+    "Generative.trace_faithful_iff": [],
+    "SystemsOrganization.evolve": [],
+    "SystemsOrganization.deterministic": [],
+    "SystemsOrganization.deterministic_trace_iff": [],
+    "SystemsOrganization.Commuting": [],
+    "SystemsOrganization.evolve_semiconjugacy": [],
+    "SystemsOrganization.commuting_iff_all_words": [],
+    "SystemsOrganization.projected_trace_exact": [],
+    "SystemsOrganization.FibreConsistent": [],
+    "SystemsOrganization.reduced_law_exists_iff": [],
+    "SystemsOrganization.commuting_composes": [],
+    "SystemsOrganization.coupledNext": [],
+    "SystemsOrganization.coupled_components_preserve_history": [],
+    "SystemsOrganization.copyCell": [],
+    "SystemsOrganization.routed": [],
+    "SystemsOrganization.self_routing_fixed": [],
+    "SystemsOrganization.cross_routing_two_steps": [],
+    "SystemsOrganization.cross_routing_not_fixed": [],
+    "SystemsOrganization.same_cells_different_collective_recurrence": [],
+    "SystemsOrganization.crossed_left_not_fibre_consistent": [],
+    "SystemsOrganization.no_autonomous_left_law": [],
+    "SystemsOrganization.Device": [],
+    "SystemsOrganization.Event": [],
+    "SystemsOrganization.assembled": [],
+    "SystemsOrganization.exchanged": [],
+    "SystemsOrganization.organization": [],
+    "SystemsOrganization.parts": [],
+    "SystemsOrganization.linkInventory": [],
+    "SystemsOrganization.link_inventory_preserved": [],
+    "SystemsOrganization.fuel_does_not_increase": [],
+    "SystemsOrganization.raw": [],
+    "SystemsOrganization.formed": [],
+    "SystemsOrganization.exchangedOnce": [],
+    "SystemsOrganization.formation_step": [],
+    "SystemsOrganization.formation_preserves_cell_values": [],
+    "SystemsOrganization.formation_consumes_spare_and_fuel": [],
+    "SystemsOrganization.exchange_unavailable_before_formation": [],
+    "SystemsOrganization.exchange_available_after_formation": [],
+    "SystemsOrganization.formation_and_recurrence_same_history": [],
+    "SystemsOrganization.parts_only_cannot_preserve_futures": [],
+    "SystemsOrganization.no_fuel_blocks_formation": [],
+    "SystemsOrganization.no_spare_blocks_formation": [],
+    "RelationsAcrossScales.budget": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.history_is_core_trace": [],
+    "RelationsAcrossScales.one_step": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.finite_horizon_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.budget_cap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.composed_defect": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.observable_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.protected_conditions": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.violation_certificate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.fibre_error_lower_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.total": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.routing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.routing_total": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.routing_defect_lower_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.routing_error_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.enriched_routing_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.transfer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.basicProtected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.total_exact_through_transfer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.exact_total_can_hide_loss": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.no_total_only_protection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.minimum_preserves_protection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.frozen_charts_miss_change": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.linear_drift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.positive_drift_unbounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.threshold_ambiguity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EmbodiedChoiceScales.controlled_one_step": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EmbodiedChoiceScales.closed_loop_horizon": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EmbodiedChoiceScales.equal_actions_remove_action_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EmbodiedChoiceScales.choose": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EmbodiedChoiceScales.upper_margin_preserves_choice": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EmbodiedChoiceScales.lower_margin_preserves_choice": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EmbodiedChoiceScales.effect": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EmbodiedChoiceScales.arbitrarily_small_score_error_changes_effect": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "EmbodiedChoiceScales.Episode": [],
+    "EmbodiedChoiceScales.Activity": [],
+    "EmbodiedChoiceScales.signal": [],
+    "EmbodiedChoiceScales.choice": [],
+    "EmbodiedChoiceScales.total": [],
+    "EmbodiedChoiceScales.evolve": [],
+    "EmbodiedChoiceScales.process": [],
+    "EmbodiedChoiceScales.history": [],
+    "EmbodiedChoiceScales.computed_history_is_actual": [],
+    "EmbodiedChoiceScales.event_conserves_shared_support": [
+      "propext",
+      "Quot.sound"
+    ],
+    "EmbodiedChoiceScales.history_conserves_shared_support": [
+      "propext",
+      "Quot.sound"
+    ],
+    "EmbodiedChoiceScales.start": [],
+    "EmbodiedChoiceScales.clamped": [],
+    "EmbodiedChoiceScales.acquired_signal_selects_effective_activity": [],
+    "EmbodiedChoiceScales.sensory_intervention_changes_choice_and_effect": [],
+    "EmbodiedChoiceScales.bodily_amount_does_not_determine_choice": [],
+    "EmbodiedChoiceScales.intervening_participation_defeats_retained_plan": [],
+    "EmbodiedChoiceScales.response_does_not_create_unavailable_support": [
+      "propext"
+    ],
+    "MeasuredFeedback.Sample": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MeasuredFeedback.Gains": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MeasuredFeedback.increment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MeasuredFeedback.raw": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MeasuredFeedback.clip": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MeasuredFeedback.command": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MeasuredFeedback.retain": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MeasuredFeedback.Record": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MeasuredFeedback.step": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MeasuredFeedback.history": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MeasuredFeedback.measured_history_is_trace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MeasuredFeedback.command_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MeasuredFeedback.saturation_retains_integral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MeasuredFeedback.interior_updates_integral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MeasuredFeedback.clip_nonexpansive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MeasuredFeedback.command_error_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MeasuredFeedback.measured_feedback_one_step": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MeasuredFeedback.measured_feedback_horizon": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MeasuredFeedback.lastCommand": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MeasuredFeedback.signedMotion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MeasuredFeedback.absoluteMotion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MeasuredFeedback.signed_motion_telescopes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MeasuredFeedback.absolute_motion_bounds_net": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MeasuredFeedback.bounded_round_trip_has_hidden_movement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MeasuredFeedback.movement_objective_changes_comparison": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "MeasuredFeedback.shared_record_can_leave_prediction_unresolved": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "commands": [
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "GenerativeCore.olean",
+      "GenerativeCore.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "SystemsOrganization.olean",
+      "SystemsOrganization.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "RelationsAcrossScales.olean",
+      "RelationsAcrossScales.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "EmbodiedChoiceScales.olean",
+      "EmbodiedChoiceScales.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "MeasuredFeedback.olean",
+      "MeasuredFeedback.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "Audit.lean"
+    ]
+  ],
+  "log_sha256": {
+    "MeasuredFeedback.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axioms.txt": "c40fe9260cdc294426b6bac84c2d9b93f7662d36819f6444920dbe5f5cd6539e",
+    "GenerativeCore.txt": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "RelationsAcrossScales.txt": "7419604162fba6fced2806b83cad7338fd741da9274752caf4846941b814948d",
+    "SystemsOrganization.txt": "e94da75fc8f1f3ec9a0fe55379f37b31c954776c93cc5a4ddb5e929a04ec458b",
+    "EmbodiedChoiceScales.txt": "ef3ce4a1ba822d3fa3aa132d3f6b0d59984caac6ae03d0a80d0e1e9a6fbcdb3c"
+  },
+  "audit_source_sha256": "a4b77321348483b8b112299d17da54c4281c46df91a78f5422162b7694213769",
+  "scope": "All five repository modules independently compiled from current source in scratch; complete explicit-declaration axiom audit. Existing upstream cache reused. Executable hash does not fingerprint the full linked compiler runtime; no hermetic attestation. Author closure parser reused; author main runner not invoked. No proof of ethical premise warrant or empirical applicability."
+}

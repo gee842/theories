@@ -1,0 +1,7 @@
+{
+  "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-first-order-wall-checks/20261008T120907.759727Z/receipt.json",
+  "passed": true,
+  "total_empty_axiom_audits": 113,
+  "total_declaration_audits": 180,
+  "total_standard_axiom_audits": 67
+}

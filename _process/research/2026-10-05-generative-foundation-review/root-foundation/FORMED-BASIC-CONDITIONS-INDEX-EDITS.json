@@ -1,0 +1,366 @@
+{
+  "date": "2026-10-08",
+  "scope": "Owned philosophical continuation and M20 only; no new proof or empirical check.",
+  "navigation_edits": [
+    {
+      "path": "RESEARCH.md",
+      "owned_content": "**后天基本条件的理论根据 / Acquired basic conditions，2026-10-08。** [理论接续](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONCERN-AND-NEW-REASONS.md#formed-basic-conditions)与[论证、原典及作者反审](_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMED-BASIC-CONDITIONS-INTEGRATION.md)说明：形成历史可以改变基本生活的具体支承；实际损伤、及时替代和公开 J2 分别提供分类根据。保护所形成的生活不自动要求原载体永续，成功的生成也须纳入后续支持及有界承担。/ A defended application account under G0/J; language-formation evidence and ethical classification are kept distinct. No new theorem, empirical replication or independent acceptance. Next theoretical question: competing independently justified basic claims, while open acquisition retains its separate scope.",
+      "anchor": "# Current theory and research",
+      "before_sha256": "61651fb82339451a5f3724068649541f4bb080d04e06c916f9ec0a22e4deefff",
+      "after_sha256": "e2dd01617e6e8b437862b42df502acecc5394f0efbac9996b72980f6558e276b",
+      "other_content_preserved": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "owned_content": "**后天形成的基本条件 / Acquired basic conditions，2026-10-08。** [当前理论 §§7–10](unified-2026-10-05/CONCERN-AND-NEW-REASONS.md#formed-basic-conditions)说明后天形成的表达与参与条件怎样取得基本保护根据，并保留替代、退出及真实冲突。[论证与反审](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMED-BASIC-CONDITIONS-INTEGRATION.md)区分实际语言形成证据与规范应用。/ The basic layer can track formed lives without freezing every carrier or promoting every preference. This is a philosophical result under explicit G0/J, not a new theorem or empirical verdict.",
+      "anchor": "# Generative Existence (生生不息论)",
+      "before_sha256": "a4b28feb1007dda794795417028f65957a678aa6ae8f746f9a70b78afdebf954",
+      "after_sha256": "d2fa9267acb52da7766bc57d4ae1fde099f33ead18d16f3fdc59a1d2363a1b61",
+      "other_content_preserved": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "owned_content": "**后天基本条件 / Acquired basic conditions，2026-10-08。** [Integrated argument and author counterreview](FORMED-BASIC-CONDITIONS-INTEGRATION.md) connect formation history to present basic-support roles, warranted classification and revision. A primary language study constrains formation; Sen supplies a substantive capability comparison. 已有伦理学习、比较与交接直接复用；无新数学或经验重复，基本冲突及开放取得分别保留范围。",
+      "anchor": "# Root-foundation review package",
+      "before_sha256": "ad0cbab7af80aa388d739f719298fcded358cc26e434b5121867c40355392a8e",
+      "after_sha256": "149bde2aeee3af5e71988868949f389ebe8053f55edda581cfaae2ac9729704a",
+      "other_content_preserved": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "owned_content": "**基本内容的形成 / Formation of concrete basic conditions，2026-10-08。** [新的理论说明](CONCERN-AND-NEW-REASONS.md#formed-basic-conditions)接续伦理学习的生活根据：后天支承可以因实际基本参与而取得保护，其载体必要性、形成正当性和责任分配仍须分别说明。/ This develops the classification burden under G0/J without claiming autonomous discovery. Appraisal of successful formation includes its foreseeable support and transition requirements; competing warranted basic claims remain a further theoretical question.",
+      "anchor": "## Current generative alignment priority",
+      "before_sha256": "bd9a47cbce29c42818fdfbf8836969bc3ca4be420f372be5191ea0d86d8c65d2",
+      "after_sha256": "aac9086c3f27342540a446a931069f186fd215046aa8263df47cd1a0b8895249",
+      "other_content_preserved": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "owned_content": "**后天基本条件的适用论证 / Acquired-basic-condition argument，2026-10-08。** [理论接续](../unified-2026-10-05/CONCERN-AND-NEW-REASONS.md#formed-basic-conditions)已给出形成历史、基本支承作用、实际替代与可撤回分类的相连说明。/ Reuse the completed classification argument within its declared scope. The next normative question concerns competing independently justified basic claims; actual open-ended acquisition and durable concern remain separate tasks. No new mathematical or empirical result is claimed.",
+      "anchor": "# 研究进度与下一步 / Progress and next investigations",
+      "before_sha256": "cf2a3d00305fc9d8ba92382035e8a71cba83532ac67f6d45dcdab547dba333d0",
+      "after_sha256": "9a59de3fa05f5d13a2c5cb25e6266e51bc59d8ab46dcd9f19e58a843e2150405",
+      "other_content_preserved": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "owned_content": "**后天基本条件 / Acquired basic conditions，2026-10-08。** M20 成对追加[理论接续](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONCERN-AND-NEW-REASONS.md#formed-basic-conditions)与[论证及反审](FORMED-BASIC-CONDITIONS-INTEGRATION.md)：基本保护依实际生活作用判定，历史形成、载体必要性与有界承担分列。/ No new theorem or empirical replication. Only owned content, one new study discovery path and authored/read source hashes change; all previous M20 content and other rows are preserved. [Edits](FORMED-BASIC-CONDITIONS-INDEX-EDITS.json) and [scoped checks](FORMED-BASIC-CONDITIONS-CHECKS.json) retain pending concurrent reviews.",
+      "anchor": "# 中英理论链索引：范围、维护与更新 / Bilingual chain index: scope and maintenance",
+      "before_sha256": "049e01fcf37ea8ae9e15b43df99aa419309b380ed1736279e1886e63f0e82132",
+      "after_sha256": "eab00a89fcf165170ef4e5f0708f0c8332ea5f86c376d47f570a76d2b3d7df45",
+      "other_content_preserved": true
+    }
+  ],
+  "earlier_chapter": {
+    "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONCERN-AND-NEW-REASONS.md",
+    "preserved_prior_sha256": "54f8e47b9f1f6fcda877463c774192bc89fa63a23b1007113ae36bf613bc28d6",
+    "inserted_notice": "**理论接续，2026-10-08：** [§§7–10](#formed-basic-conditions)进一步论证后天形成的基本条件：生活的发展可以改变基本参与所需的具体支承，保护范围不由“先天／后天”划定，也不因此要求冻结每种既有安排。[论证、来源与反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMED-BASIC-CONDITIONS-INTEGRATION.md)区分观察到的语言形成与另行论证的保护判断。/ The continuation develops the warrant for acquired basic conditions, retaining a substantive rival and explicit G0/J premises. It adds no mathematical theorem or empirical replication; the eight checked comparison results below retain their earlier scope.",
+    "append_marker": "<a id=\"formed-basic-conditions\"></a>"
+  },
+  "entry_before": {
+    "id": "M20",
+    "title_zh": "生成性对齐：当前首要方向之一",
+    "title_en": "Generative alignment: a current primary direction",
+    "claim_zh": "以生生为共同根据评价目标、评价者与选择规则；方向论证及相连目标取得、判断、实际修订与有界改革现已成为完成成果，更强理论按明确范围继续。 后续接通改革自身改变实际负担及报告路线、直接取得与保留新目的的修复。 理论接续区分发现已有根据、形成新生活与理由、修订评价承诺；学习后的赞同不独自认证形成过程。 在已完成的伦理学习基础上，新增比较接口辨明理由内容扩展后旧判断的传递、不可比及有前提的反转。 评价扩展进一步区分共同改善与各应用分别否定；旧内容保持不要求旧评价永久保持。 理论接续给出生活实现、支承与进一步形成的具体根据；共同生活不能以组织规模或产出代替。",
+    "claim_en": "Appraise ends, evaluators and selection rules through shared generative grounds; the direction argument and connected acquisition, judgment, operative revision and bounded reform are now completed foundations for the broader programme. A further joined case connects reform-induced burdens and reporting changes to acquired correction and repair preserving the new goal. The theoretical continuation distinguishes discovering existing grounds, forming new living relations and reasons, and revising normative commitments; later endorsement alone does not authorize the formation process. Building on the completed ethical-learning account, a new comparison interface delimits preservation, incomparability and conditional reversal after warranted content extension. Evaluative extension further separates a common improvement from defeat in each live application; retained old content need not preserve every old verdict. The continuation articulates living realization, support and further formation as particular grounds; organizational scale and output cannot substitute for the shared living being assessed.",
+    "scope_zh": "当前首要方向之一；方向论证及本轮相连机制均已独立验收，不再作为待做接口。新相连结果：27新定理／84新声明审计、46继承审计，13历史／221完整状态；规范采用、对应、权限、有限资金与现实部署范围分明。 本会话后续另增23项定理／43项审计，93项继承定理／165项审计分列；此后续为同作者反审，无新经验验证或独立agent验收。 新增有辩护的伦理学习哲学候选，采用G0/J及已有认识承诺；作者反审，无新数学、经验或独立验收。 理论续研另增8项泛型定理／9项空依赖新审计，继承实践30项／46审计；保留开放发现、意义辨认及实际动机的未完成范围。 理论接续另增20项定理／36项审计，直接导入同期关切扩展；38项继承定理／55项审计分列。实际应用覆盖及规范分类仍是前提，不宣称普遍决策规则或经验新验证。 新增E适用的哲学论证，区分描述扩展、共同善及组织替代；无新定理或经验验证，广义生的完整分类保持开放。",
+    "scope_en": "A current primary direction. The direction argument and new connected mechanism are independently accepted, not unfinished interfaces. New connection: 27 theorems/84 new and 46 inherited declaration audits, 13 histories/221 full states, with normative adoption, correspondence, authority, finite funding and deployment scope explicit. This session adds a separate 23-theorem/43-audit followup, with 93 inherited theorems/165 audits separately credited; author counterreview, no new empirical or independent-agent acceptance. Adds a defended ethical-learning candidate under G0/J and inherited epistemic commitments; author counterreview, no new mathematics, empirical study or independent acceptance. A theoretical continuation adds eight generic theorems/nine axiom-free new declaration audits, separately retaining 30 inherited practical theorems/46 audits; open discovery, warranted recognition and actual motivation remain scoped unfinished connections. A theoretical continuation adds 20 theorems/36 audits and directly imports concurrent concern extension; 38 inherited theorems/55 audits are separate. Actual coverage and normative classification remain premises, without a universal decision rule or new empirical validation. Adds a philosophical account of substantive correspondence E, descriptive extension, shared goods and carrier succession; no new theorem or empirical validation, and no complete classifier of wider living.",
+    "links": [
+      {
+        "label_zh": "对齐与治理中的未来条件",
+        "label_en": "Conditions of a future in alignment and governance",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md",
+        "label_zh": "当前双语方向论证",
+        "label_en": "Current bilingual direction argument"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md",
+        "label_zh": "论证、对应与完成",
+        "label_en": "Argument, correspondence and completion"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/alignment-direction-verification.json",
+        "label_zh": "新实例实查回执",
+        "label_en": "Checked case-instance receipt"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-REVIEW.md",
+        "label_zh": "独立完成审查与重编译",
+        "label_en": "Independent completion review and recompilation"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#current-generative-alignment-priority",
+        "label_zh": "当前首要方向与未解连接",
+        "label_en": "Current priority and unresolved connection"
+      },
+      {
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+        "label_zh": "Ren的优先级及完成规则",
+        "label_en": "Ren’s priority and completion rule"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+        "label_zh": "当前方向与完成成果分列",
+        "label_en": "Active directions and completed results"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md",
+        "label_zh": "第一轮规范连接、反方与判别",
+        "label_en": "First normative connection, rivals and discriminators"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+        "label_zh": "理解自身形成及目的修订",
+        "label_en": "Understanding formation and revising goals"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md",
+        "label_zh": "相连论证、前提、反方与证明",
+        "label_en": "Joined argument, premises, counterreview and proofs"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-formation-revision-verification.json",
+        "label_zh": "43项新定理的实查回执",
+        "label_en": "Checked receipt for 43 new theorems"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-REVISION-CONTINUATION.md",
+        "label_zh": "已完成的相连历史",
+        "label_en": "Completed connected history"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REFORM-EVIDENCE-INTEGRATION.md",
+        "label_zh": "改革、证据与修复的相连研究",
+        "label_en": "Reform, evidence and actual repair"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/reform-evidence-verification.json",
+        "label_zh": "23项新定理实查回执",
+        "label_en": "Receipt for 23 new theorems"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+        "label_zh": "伦理学习与新理由的形成",
+        "label_en": "Ethical learning and new grounds"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+        "label_zh": "理论连接、来源与作者反审",
+        "label_en": "Argument, sources and author counterreview"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONCERN-AND-NEW-REASONS.md",
+        "label_zh": "理由扩展与比较传递",
+        "label_en": "Extended reasons and comparison transfer"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONCERN-EXTENSION-INTEGRATION.md",
+        "label_zh": "正面论证、原典、反审与实查",
+        "label_en": "Argument, sources, counterreview and checks"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-EXTENSION-INTEGRATION.md",
+        "label_zh": "评价扩展、未定应用与反审",
+        "label_en": "Evaluative extension, unresolved applications and counterreview"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/evaluative-extension-verification.json",
+        "label_zh": "20项新定理实查回执",
+        "label_en": "Receipt for 20 new theorems"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#living-realization-and-normative-significance",
+        "label_zh": "伦理内容的生活根据",
+        "label_en": "Living grounds of ethical content"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#living-realization-continuation",
+        "label_zh": "实现根据、反审及完成范围",
+        "label_en": "Realization warrant, counterreview and scope"
+      }
+    ],
+    "connection_zh": "目标形成—后果使用—有根据的操作目的修订—选择安排改革—有限接续已条件性完成；更大的现实形成与部署问题保持独立范围，不重复此接口。 新前沿：在不预送正确读取路线和修复方案时，取得遗漏后果、选择有能力承担的回应。 伦理学习的概念连接已给出；新生的意义范围、未定基本冲突及实际可靠形成分别保留论证负担。 本轮已辨明内容扩展的比较条件；接续研究区别的取得、规范相关性及实际关切形成，正面生成也可成为入口。 理论前沿：在不给定正确答案的情况下，取得新关系的区别并论证候选描述及基本／次级分类的根据。 新内容的生活根据已有明确应用候选；陌生组织的更广地位、基本分类及实际可靠取得仍须分别论证。",
+    "connection_en": "Acquired ends, consequential use, warranted operative revision, allocation reform and finite continuation are conditionally complete; broader real-world formation and deployment retain separate scope. New frontier: acquire omitted consequences and select an affordable response without being handed the correct access route and repair. The conceptual ethical-learning connection is now articulated; unfamiliar living significance, unresolved basic conflicts and reliable actual formation retain distinct burdens. Comparison under extended content is now delimited; investigate acquisition, normative relevance and operative concern, including positive formation as an entry point. Theoretical frontier: acquire distinctions about new relations and warrant the candidate descriptions and basic/secondary classifications without supplying the correct answer. A particular application account now grounds new content in living relations; wider standing of unfamiliar organizations, basic classification and reliable actual acquisition retain separate burdens.",
+    "source_section": "Current generative alignment priority",
+    "source_line": 3,
+    "row_type": "application_programme",
+    "source_id": "alignment_governance"
+  },
+  "entry_after": {
+    "id": "M20",
+    "title_zh": "生成性对齐：当前首要方向之一",
+    "title_en": "Generative alignment: a current primary direction",
+    "claim_zh": "以生生为共同根据评价目标、评价者与选择规则；方向论证及相连目标取得、判断、实际修订与有界改革现已成为完成成果，更强理论按明确范围继续。 后续接通改革自身改变实际负担及报告路线、直接取得与保留新目的的修复。 理论接续区分发现已有根据、形成新生活与理由、修订评价承诺；学习后的赞同不独自认证形成过程。 在已完成的伦理学习基础上，新增比较接口辨明理由内容扩展后旧判断的传递、不可比及有前提的反转。 评价扩展进一步区分共同改善与各应用分别否定；旧内容保持不要求旧评价永久保持。 理论接续给出生活实现、支承与进一步形成的具体根据；共同生活不能以组织规模或产出代替。 后天形成的支承可以因其在基本生活中的实际作用取得保护；生成的评价须包括其形成的后续支持要求。",
+    "claim_en": "Appraise ends, evaluators and selection rules through shared generative grounds; the direction argument and connected acquisition, judgment, operative revision and bounded reform are now completed foundations for the broader programme. A further joined case connects reform-induced burdens and reporting changes to acquired correction and repair preserving the new goal. The theoretical continuation distinguishes discovering existing grounds, forming new living relations and reasons, and revising normative commitments; later endorsement alone does not authorize the formation process. Building on the completed ethical-learning account, a new comparison interface delimits preservation, incomparability and conditional reversal after warranted content extension. Evaluative extension further separates a common improvement from defeat in each live application; retained old content need not preserve every old verdict. The continuation articulates living realization, support and further formation as particular grounds; organizational scale and output cannot substitute for the shared living being assessed. Acquired support can warrant basic protection through its actual role in living; appraisal of formation includes the subsequent support requirements it creates.",
+    "scope_zh": "当前首要方向之一；方向论证及本轮相连机制均已独立验收，不再作为待做接口。新相连结果：27新定理／84新声明审计、46继承审计，13历史／221完整状态；规范采用、对应、权限、有限资金与现实部署范围分明。 本会话后续另增23项定理／43项审计，93项继承定理／165项审计分列；此后续为同作者反审，无新经验验证或独立agent验收。 新增有辩护的伦理学习哲学候选，采用G0/J及已有认识承诺；作者反审，无新数学、经验或独立验收。 理论续研另增8项泛型定理／9项空依赖新审计，继承实践30项／46审计；保留开放发现、意义辨认及实际动机的未完成范围。 理论接续另增20项定理／36项审计，直接导入同期关切扩展；38项继承定理／55项审计分列。实际应用覆盖及规范分类仍是前提，不宣称普遍决策规则或经验新验证。 新增E适用的哲学论证，区分描述扩展、共同善及组织替代；无新定理或经验验证，广义生的完整分类保持开放。 后天基本条件的哲学适用论证已给出，语言形成证据不冒充规范分类；无新定理、经验重复或独立验收，具体阈值和基本冲突仍开放。",
+    "scope_en": "A current primary direction. The direction argument and new connected mechanism are independently accepted, not unfinished interfaces. New connection: 27 theorems/84 new and 46 inherited declaration audits, 13 histories/221 full states, with normative adoption, correspondence, authority, finite funding and deployment scope explicit. This session adds a separate 23-theorem/43-audit followup, with 93 inherited theorems/165 audits separately credited; author counterreview, no new empirical or independent-agent acceptance. Adds a defended ethical-learning candidate under G0/J and inherited epistemic commitments; author counterreview, no new mathematics, empirical study or independent acceptance. A theoretical continuation adds eight generic theorems/nine axiom-free new declaration audits, separately retaining 30 inherited practical theorems/46 audits; open discovery, warranted recognition and actual motivation remain scoped unfinished connections. A theoretical continuation adds 20 theorems/36 audits and directly imports concurrent concern extension; 38 inherited theorems/55 audits are separate. Actual coverage and normative classification remain premises, without a universal decision rule or new empirical validation. Adds a philosophical account of substantive correspondence E, descriptive extension, shared goods and carrier succession; no new theorem or empirical validation, and no complete classifier of wider living. Adds a defended application account of acquired basic conditions, keeping language-formation evidence distinct from ethical classification; no new theorem, empirical replication or independent acceptance. Particular thresholds and basic conflicts remain open.",
+    "links": [
+      {
+        "label_zh": "对齐与治理中的未来条件",
+        "label_en": "Conditions of a future in alignment and governance",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md",
+        "label_zh": "当前双语方向论证",
+        "label_en": "Current bilingual direction argument"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md",
+        "label_zh": "论证、对应与完成",
+        "label_en": "Argument, correspondence and completion"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/alignment-direction-verification.json",
+        "label_zh": "新实例实查回执",
+        "label_en": "Checked case-instance receipt"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-REVIEW.md",
+        "label_zh": "独立完成审查与重编译",
+        "label_en": "Independent completion review and recompilation"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#current-generative-alignment-priority",
+        "label_zh": "当前首要方向与未解连接",
+        "label_en": "Current priority and unresolved connection"
+      },
+      {
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+        "label_zh": "Ren的优先级及完成规则",
+        "label_en": "Ren’s priority and completion rule"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+        "label_zh": "当前方向与完成成果分列",
+        "label_en": "Active directions and completed results"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md",
+        "label_zh": "第一轮规范连接、反方与判别",
+        "label_en": "First normative connection, rivals and discriminators"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+        "label_zh": "理解自身形成及目的修订",
+        "label_en": "Understanding formation and revising goals"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md",
+        "label_zh": "相连论证、前提、反方与证明",
+        "label_en": "Joined argument, premises, counterreview and proofs"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-formation-revision-verification.json",
+        "label_zh": "43项新定理的实查回执",
+        "label_en": "Checked receipt for 43 new theorems"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-REVISION-CONTINUATION.md",
+        "label_zh": "已完成的相连历史",
+        "label_en": "Completed connected history"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REFORM-EVIDENCE-INTEGRATION.md",
+        "label_zh": "改革、证据与修复的相连研究",
+        "label_en": "Reform, evidence and actual repair"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/reform-evidence-verification.json",
+        "label_zh": "23项新定理实查回执",
+        "label_en": "Receipt for 23 new theorems"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+        "label_zh": "伦理学习与新理由的形成",
+        "label_en": "Ethical learning and new grounds"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+        "label_zh": "理论连接、来源与作者反审",
+        "label_en": "Argument, sources and author counterreview"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONCERN-AND-NEW-REASONS.md",
+        "label_zh": "理由扩展与比较传递",
+        "label_en": "Extended reasons and comparison transfer"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONCERN-EXTENSION-INTEGRATION.md",
+        "label_zh": "正面论证、原典、反审与实查",
+        "label_en": "Argument, sources, counterreview and checks"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-EXTENSION-INTEGRATION.md",
+        "label_zh": "评价扩展、未定应用与反审",
+        "label_en": "Evaluative extension, unresolved applications and counterreview"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/evaluative-extension-verification.json",
+        "label_zh": "20项新定理实查回执",
+        "label_en": "Receipt for 20 new theorems"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#living-realization-and-normative-significance",
+        "label_zh": "伦理内容的生活根据",
+        "label_en": "Living grounds of ethical content"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#living-realization-continuation",
+        "label_zh": "实现根据、反审及完成范围",
+        "label_en": "Realization warrant, counterreview and scope"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONCERN-AND-NEW-REASONS.md#formed-basic-conditions",
+        "label_zh": "后天基本条件的当前论证",
+        "label_en": "Current argument for acquired basic conditions"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMED-BASIC-CONDITIONS-INTEGRATION.md",
+        "label_zh": "基本分类、原典与反审",
+        "label_en": "Basic classification, primary readings and counterreview"
+      }
+    ],
+    "connection_zh": "目标形成—后果使用—有根据的操作目的修订—选择安排改革—有限接续已条件性完成；更大的现实形成与部署问题保持独立范围，不重复此接口。 新前沿：在不预送正确读取路线和修复方案时，取得遗漏后果、选择有能力承担的回应。 伦理学习的概念连接已给出；新生的意义范围、未定基本冲突及实际可靠形成分别保留论证负担。 本轮已辨明内容扩展的比较条件；接续研究区别的取得、规范相关性及实际关切形成，正面生成也可成为入口。 理论前沿：在不给定正确答案的情况下，取得新关系的区别并论证候选描述及基本／次级分类的根据。 新内容的生活根据已有明确应用候选；陌生组织的更广地位、基本分类及实际可靠取得仍须分别论证。 本轮给出历史形成到基本支承分类的有辩护接续；下一理论问题是已获根据的基本要求彼此冲突，实际开放取得与可靠动机另行保持范围。",
+    "connection_en": "Acquired ends, consequential use, warranted operative revision, allocation reform and finite continuation are conditionally complete; broader real-world formation and deployment retain separate scope. New frontier: acquire omitted consequences and select an affordable response without being handed the correct access route and repair. The conceptual ethical-learning connection is now articulated; unfamiliar living significance, unresolved basic conflicts and reliable actual formation retain distinct burdens. Comparison under extended content is now delimited; investigate acquisition, normative relevance and operative concern, including positive formation as an entry point. Theoretical frontier: acquire distinctions about new relations and warrant the candidate descriptions and basic/secondary classifications without supplying the correct answer. A particular application account now grounds new content in living relations; wider standing of unfamiliar organizations, basic classification and reliable actual acquisition retain separate burdens. The formation-to-basic-support classification now has a defended continuation. The next theoretical question concerns conflicts among warranted basic claims; actual open acquisition and reliable motivation retain their separate scopes.",
+    "source_section": "Current generative alignment priority",
+    "source_line": 3,
+    "row_type": "application_programme",
+    "source_id": "alignment_governance"
+  },
+  "paired_suffixes": {
+    "claim_zh": " 后天形成的支承可以因其在基本生活中的实际作用取得保护；生成的评价须包括其形成的后续支持要求。",
+    "claim_en": " Acquired support can warrant basic protection through its actual role in living; appraisal of formation includes the subsequent support requirements it creates.",
+    "scope_zh": " 后天基本条件的哲学适用论证已给出，语言形成证据不冒充规范分类；无新定理、经验重复或独立验收，具体阈值和基本冲突仍开放。",
+    "scope_en": " Adds a defended application account of acquired basic conditions, keeping language-formation evidence distinct from ethical classification; no new theorem, empirical replication or independent acceptance. Particular thresholds and basic conflicts remain open.",
+    "connection_zh": " 本轮给出历史形成到基本支承分类的有辩护接续；下一理论问题是已获根据的基本要求彼此冲突，实际开放取得与可靠动机另行保持范围。",
+    "connection_en": " The formation-to-basic-support classification now has a defended continuation. The next theoretical question concerns conflicts among warranted basic claims; actual open acquisition and reliable motivation retain their separate scopes."
+  },
+  "other_entries_preserved_at_mutation": 89,
+  "other_entries_sha256": "4535996348ef20d917de27439104a4d512b9ca396094122252aac2456a02e7fe",
+  "other_rendered_lines_preserved_at_mutation": true,
+  "reviewed_sources": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONCERN-AND-NEW-REASONS.md": "457aa89c4e87c3d932d696524c8dcf9cbb16f6e95c0b10a5a3656930ebe8b02e",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMED-BASIC-CONDITIONS-INTEGRATION.md": "f203e4da1114869d7549e9a3117984e38b1215662b97248c9abba73498e2c88a"
+  },
+  "owned_discovery": [
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMED-BASIC-CONDITIONS-INTEGRATION.md"
+  ],
+  "preservation_window_start": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md": "162e5ae228c39d2178910b3ff709ce7a1491e6eb28098c38f4e45cefc43f4967",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md": "4119d3ad3ee838b8ec96096c4cf67de96c6a11308f966745f26ffca303360e08",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ConcernExtension.lean": "ee8e0fb64357fe9d428288aac09bb27c4f046e6ae55f50cdc88e2a445fcefc3f",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af"
+  },
+  "shared_source_reviews_not_refreshed": [
+    "RESEARCH.md",
+    "theories/shengsheng-buxi-generative-existence/README.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+    "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md"
+  ]
+}

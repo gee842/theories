@@ -1,0 +1,27 @@
+import EvaluativeExtension
+#print axioms EvaluativeExtension.extend
+#print axioms EvaluativeExtension.inclusion_extension_iff
+#print axioms EvaluativeExtension.strict_inclusion_survives_extension
+#print axioms EvaluativeExtension.better_survives_no_new_loss
+#print axioms EvaluativeExtension.equal_additions_preserve_exact_comparison
+#print axioms EvaluativeExtension.new_protection_loss_defeats_old_verdict
+#print axioms EvaluativeExtension.Plan
+#print axioms EvaluativeExtension.Stage
+#print axioms EvaluativeExtension.need
+#print axioms EvaluativeExtension.supply
+#print axioms EvaluativeExtension.oldProtection
+#print axioms EvaluativeExtension.outputCount
+#print axioms EvaluativeExtension.oldGain
+#print axioms EvaluativeExtension.formedProtection
+#print axioms EvaluativeExtension.protection
+#print axioms EvaluativeExtension.comparison
+#print axioms EvaluativeExtension.prior_output_favored
+#print axioms EvaluativeExtension.formation_creates_a_differentiating_need
+#print axioms EvaluativeExtension.formed_maintenance_favored
+#print axioms EvaluativeExtension.formed_output_no_longer_favored
+#print axioms EvaluativeExtension.reversal_keeps_real_output_loss
+#print axioms EvaluativeExtension.no_unrestricted_preservation_of_verdicts
+#print axioms EvaluativeExtension.no_one_stage_blind_exact_ranking
+#print axioms EvaluativeExtension.one_unchanged_rule_handles_both_stages
+#print axioms EvaluativeExtension.addedGain
+#print axioms EvaluativeExtension.added_secondary_gain_can_leave_incomparability

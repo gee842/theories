@@ -1,0 +1,28 @@
+[
+  {
+    "file": "herron2018.html",
+    "url": "https://link.springer.com/article/10.1186/s12915-018-0612-6",
+    "bytes": 432663,
+    "sha256": "d5e1e5431b144939f5c36063eb49ca034ffba9ce8e3a5285200128dc6b381cc0",
+    "retrieved_utc": "2026-10-08T08:40:36.138671+00:00"
+  },
+  {
+    "name": "diekmann2010",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2871801/fullTextXML",
+    "error": "HTTP Error 500: "
+  },
+  {
+    "file": "pichugin2017.xml",
+    "url": "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1005860&type=manuscript",
+    "bytes": 145198,
+    "sha256": "e7befbbb1d309435b8e88a35eea3a410089d81a427f512e62fdae6dfe3c3639f",
+    "retrieved_utc": "2026-10-08T08:47:42.530681+00:00"
+  },
+  {
+    "file": "pichugin2020.xml",
+    "url": "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1008406&type=manuscript",
+    "bytes": 170450,
+    "sha256": "7a9f265ef74bdf8d3f37aea7f4cd4c5534d7d5b0567b56f23570e2ae34398db5",
+    "retrieved_utc": "2026-10-08T08:47:43.821093+00:00"
+  }
+]

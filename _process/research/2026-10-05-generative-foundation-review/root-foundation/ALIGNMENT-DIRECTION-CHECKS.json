@@ -1,0 +1,53 @@
+{
+  "status": "passed_owned_document_and_proof_bindings",
+  "utc": "2026-10-07T22:37:07.361150+00:00",
+  "scope": "Links, frozen actual Lean run, current proof bytes and owned bilingual M20 row. No empirical, ethical-premise or entire-table certification.",
+  "local_links": 29,
+  "proof_counts": {
+    "PracticalJudgment": [
+      30,
+      46
+    ],
+    "AlignmentDirection": [
+      9,
+      16
+    ]
+  },
+  "proof_receipt_sha256": "3e479e7b0c34e818fd174d243b2705abf9355d170ff4d7b5fc7c2bf7db4d8a1c",
+  "retained_artifacts_checked": 15,
+  "document_sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md": "9940ead2d7f06a18ff7f2ec37f27aebd496dde10854d8a11993469a31a7900cd",
+    "sources/15-codex-theory-conversations/2026-10-08-alignment-direction-completion.md": "e19a93f1f24c3771f7e6337353dc50ebf401361b26e8cf22090dcfd379facb96",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md": "b0ef4db36886e1560f3d5f72bc90c769338f04bf6cf879a316147cc2be0a616f",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-REVIEW.md": "8bc0f4cc3013a249838caa58ddba992d56eb40fa9be0f58353bd116e31b8c2da"
+  },
+  "owned_chain_sources": [
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/alignment-direction-verification.json",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-REVIEW.md"
+  ],
+  "shared_table_changes": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-assumption-free-shengsheng-foundation.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md"
+    ],
+    "removed_pages": []
+  },
+  "independent_review_file_present": true,
+  "independent_recompilation_and_accepted_documents_bound": true,
+  "independent_receipt_sha256": "976f26e63c85af6eb6a733b4d535b8ddc5ae9a80875165b5202a971ec9291c73"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "failed",
+  "utc": "20261008T113522.196439Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "chance-adequacy-checks/20261008T113522.196439Z",
+  "source_sha256": {
+    "ChanceAdequacy": "6220db935ec52cb2fa31f4fba83ae2870bdd5f9b4a7320912c661eccc703e9d9"
+  },
+  "checker_sha256": {
+    "check_chance_adequacy.py": "be57a3df87be9787c352821ab61a9817520fbc013f97995b9b807244fd030472",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Eight results connect pointwise continuation of warranted demand with a finite natural-weight event law. Event inclusion implies mass monotonicity, a positive newly covered event gives a strict increase, and preservation for all natural nonnegative weights is equivalent to inclusion via Dirac separation. A positive-total wrapper yields a necessary success-numerator floor for a pointwise undertaking. Event-level repair preserves the target and candidate and can add strict protection; its physical feasibility, permission and implementable routing are separate. Positive success under a fixed law can still miss a due, positive-mass support condition. Weights are event mass, not ethical importance. Coupling, coverage and normative warrant are supplied; no actual law is assumed freely variable, and no probability interpretation is given at zero total. No inherited project theorem is rebuilt.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "ChanceAdequacy.lean:78:4: error: unsolved goals\ncase pos.true\n\u03a9 : Type\ninst\u271d : DecidableEq \u03a9\nh : \u03a9\nevent : \u03a9 \u2192 Bool\ntail : List \u03a9\nih : 0 < mass tail (fun x => if x = h then 1 else 0) event \u2194 h \u2208 tail\nhe : event h = true\n\u22a2 0 < 1 + mass tail (fun x => if x = h then 1 else 0) event\n"
+}

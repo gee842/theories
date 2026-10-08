@@ -1,0 +1,19 @@
+BoundedRiskRevision.lean:41:9: error: Tactic `unfold` failed to unfold `total` in
+  greatest k y ≤ asymmetricB (10 * k) x
+BoundedRiskRevision.lean:49:7: error: unknown tactic
+BoundedRiskRevision.lean:49:4: error: unsolved goals
+case mp.left
+k x : Nat
+hu : x ≤ 10 * k
+hn : ¬∃ y, y ≤ 10 * k ∧ Dominates k y x
+⊢ 7 * k ≤ x
+BoundedRiskRevision.lean:47:2: error: unsolved goals
+case mp.right
+k x : Nat
+hu : x ≤ 10 * k
+hn : ¬∃ y, y ≤ 10 * k ∧ Dominates k y x
+⊢ x ≤ 10 * k
+BoundedRiskRevision.lean:45:46: error: unsolved goals
+case mpr
+k x : Nat
+⊢ 7 * k ≤ x ∧ x ≤ 10 * k → Efficient k x

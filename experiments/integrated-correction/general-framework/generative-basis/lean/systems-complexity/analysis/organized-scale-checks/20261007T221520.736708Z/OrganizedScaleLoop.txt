@@ -1,0 +1,43 @@
+OrganizedScaleLoop.lean:178:36: warning: This simp argument is unused:
+  view
+
+Hint: Omit it from the simp argument list.
+  simp_all [v̵i̵e̵w̵,̵ ̵relay_product]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+OrganizedScaleLoop.lean:242:12: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (withdraw 1 initial).contact
+in the target expression
+  predict (physical initial) = (withdraw 1 trained).contact
+
+predict : ℕ × ℕ × ℕ × ℕ × Bool × List ℕ → Bool
+hp : ∀ (s : Joint), predict (physical s) = (withdraw 1 s).contact
+a : predict (physical initial) = (withdraw 1 initial).contact
+b : predict (physical initial) = (withdraw 1 trained).contact
+he : physical initial = physical trained
+⊢ False
+'OrganizedScaleLoop.relay_product' depends on axioms: [propext]
+'OrganizedScaleLoop.relay_append' does not depend on any axioms
+'OrganizedScaleLoop.severed_route' depends on axioms: [propext]
+'OrganizedScaleLoop.grouped_route' depends on axioms: [propext]
+'OrganizedScaleLoop.chosen_step_commutes' does not depend on any axioms
+'OrganizedScaleLoop.chosen_history_three_views' does not depend on any axioms
+'OrganizedScaleLoop.material_step' depends on axioms: [propext, Quot.sound]
+'OrganizedScaleLoop.work_step' depends on axioms: [propext, Quot.sound]
+'OrganizedScaleLoop.finite_history_accounts' depends on axioms: [propext, Quot.sound]
+'OrganizedScaleLoop.same_core_history' does not depend on any axioms
+'OrganizedScaleLoop.concrete_view_commutes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrganizedScaleLoop.concrete_view_all_histories' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OrganizedScaleLoop.acquisition_amount' depends on axioms: [propext]
+'OrganizedScaleLoop.unsupported_acquisition' depends on axioms: [propext]
+'OrganizedScaleLoop.acquisition_withdrawal' depends on axioms: [propext, Quot.sound]
+'OrganizedScaleLoop.withdrawal_changes_next_exposure' depends on axioms: [propext, Quot.sound]
+'OrganizedScaleLoop.disrupted_acquisition' depends on axioms: [propext]
+'OrganizedScaleLoop.joined_endpoint' does not depend on any axioms
+'OrganizedScaleLoop.disrupted_endpoint' does not depend on any axioms
+'OrganizedScaleLoop.history_changes_choice' does not depend on any axioms
+'OrganizedScaleLoop.no_memoryless_choice_readout' depends on axioms: [sorryAx]
+'OrganizedScaleLoop.same_organ_amount_distinct_signal' does not depend on any axioms
+'OrganizedScaleLoop.no_amount_only_acquisition' does not depend on any axioms
+'OrganizedScaleLoop.support_can_prevent_enactment' does not depend on any axioms
+'OrganizedScaleLoop.release_changes_shared_conditions' does not depend on any axioms

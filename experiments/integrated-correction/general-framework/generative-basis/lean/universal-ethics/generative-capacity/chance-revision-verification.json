@@ -1,0 +1,106 @@
+{
+  "status": "passed",
+  "utc": "20261008T104619.144315Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "chance-revision-checks/20261008T104619.144315Z",
+  "source_sha256": "19fb83f15306388261186c604778325049a6694dfaff2a9ce70da97f32768cac",
+  "checker_sha256": {
+    "check_chance_revision.py": "d95074d137f6f2c61be2d9524023e014cb86575e35fdde70587b713690ed71bf",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Two fair independent draws supply four uniform tickets. Keeping a settled first result and redrawing have the same full terminal joint law but differ in history fidelity. Conditional chance reset conflicts with fidelity. No mathematical declaration establishes initial fairness, ethical settlement authority or immunity from justified correction.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "kernel_checked": true,
+  "new_theorems": 7,
+  "declarations": [
+    {
+      "kind": "abbrev",
+      "name": "ChanceRevision.Ticket"
+    },
+    {
+      "kind": "def",
+      "name": "ChanceRevision.keep"
+    },
+    {
+      "kind": "def",
+      "name": "ChanceRevision.redraw"
+    },
+    {
+      "kind": "def",
+      "name": "ChanceRevision.favorFalse"
+    },
+    {
+      "kind": "def",
+      "name": "ChanceRevision.count"
+    },
+    {
+      "kind": "def",
+      "name": "ChanceRevision.terminalLaw"
+    },
+    {
+      "kind": "def",
+      "name": "ChanceRevision.branchCount"
+    },
+    {
+      "kind": "def",
+      "name": "ChanceRevision.Preserves"
+    },
+    {
+      "kind": "theorem",
+      "name": "ChanceRevision.terminal_distributions"
+    },
+    {
+      "kind": "theorem",
+      "name": "ChanceRevision.keep_preserves"
+    },
+    {
+      "kind": "theorem",
+      "name": "ChanceRevision.redraw_changes_both"
+    },
+    {
+      "kind": "theorem",
+      "name": "ChanceRevision.no_terminal_law_characterization"
+    },
+    {
+      "kind": "theorem",
+      "name": "ChanceRevision.settlement_forces_conditional_concentration"
+    },
+    {
+      "kind": "theorem",
+      "name": "ChanceRevision.fresh_redraw_is_conditionally_equal"
+    },
+    {
+      "kind": "theorem",
+      "name": "ChanceRevision.preservation_composes"
+    }
+  ],
+  "declaration_audits": 15,
+  "axiom_dependencies": {
+    "ChanceRevision.Ticket": [],
+    "ChanceRevision.keep": [],
+    "ChanceRevision.redraw": [],
+    "ChanceRevision.favorFalse": [],
+    "ChanceRevision.count": [],
+    "ChanceRevision.terminalLaw": [],
+    "ChanceRevision.branchCount": [],
+    "ChanceRevision.Preserves": [],
+    "ChanceRevision.terminal_distributions": [],
+    "ChanceRevision.keep_preserves": [],
+    "ChanceRevision.redraw_changes_both": [],
+    "ChanceRevision.no_terminal_law_characterization": [],
+    "ChanceRevision.settlement_forces_conditional_concentration": [],
+    "ChanceRevision.fresh_redraw_is_conditionally_equal": [],
+    "ChanceRevision.preservation_composes": []
+  },
+  "source_unchanged_during_check": true,
+  "artifact_sha256": {
+    "Audit.lean": "070d14b264f98a6d5edba780031bdd4d47f2a2e404280daa80bc24609494fa75",
+    "ChanceRevision.lean": "19fb83f15306388261186c604778325049a6694dfaff2a9ce70da97f32768cac",
+    "axioms.log": "f61392407e4e727de143a2bb771decf70d2ae5a38752fd04e53dd1ffd7da5165",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_chance_revision.py": "d95074d137f6f2c61be2d9524023e014cb86575e35fdde70587b713690ed71bf",
+    "compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

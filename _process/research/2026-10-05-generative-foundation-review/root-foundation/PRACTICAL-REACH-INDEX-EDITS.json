@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-08 Asia/Bangkok",
+  "scope": "Owned additions only; no certification of concurrent research. Only owned changed text has been reviewed here.",
+  "edits": [
+    {
+      "path": "README.md",
+      "before_sha256": "d004338aaab3d48cd273cf02396f55d0c4c3ba9efedb8732b739203335d527d2",
+      "after_sha256": "4e318a5f3881e2b9d29b2ea51081f05df65aa1dc2f897ac828a4fd718d1af1d3",
+      "baseline_matches_reviewed_source": false,
+      "change": "Owned current navigation addition; prior research scopes preserved."
+    },
+    {
+      "path": "RESEARCH.md",
+      "before_sha256": "f8adb3784a8e1b8ecf0be70699d9fce5c42402eb6b9b6ddca1803a630dc7eb38",
+      "after_sha256": "24b3dcfbc1c7130f184fdf2aa0d1cf06d13d8e7ae793b2fac7024d25c9b2f41a",
+      "baseline_matches_reviewed_source": false,
+      "change": "Owned current navigation addition; prior research scopes preserved."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "before_sha256": "a894f19484d650892e77f7ab77c3373cde28e25afc70f7868c0244205c741364",
+      "after_sha256": "6d771738331ee6b41e5b059aecf5ee0e9abc8fe9bbcc3fe620f616f9c5ebc335",
+      "baseline_matches_reviewed_source": false,
+      "change": "Owned current navigation addition; prior research scopes preserved."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "before_sha256": "d7fb09665c10716941266b674035cdf71d8f3596dc03f0666e4c6afbf8f1f0c8",
+      "after_sha256": "5feff93d47d2c90dc645e82e573e9eeaa61362009e1d3adffbeba6575a14a69e",
+      "baseline_matches_reviewed_source": false,
+      "change": "Append owned connected derivation update."
+    }
+  ],
+  "paired_index": {
+    "changed_entry": "C26",
+    "new_entry": "F28",
+    "other_entries_preserved": 84,
+    "reviewed_owned_sources": [
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalReach.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/practical-reach-verification.json"
+    ],
+    "render": "C26, F28 and resulting entry count only, using existing renderer",
+    "pending": {
+      "modified_sources": [
+        "RESEARCH.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md",
+        "sources/15-codex-theory-conversations/2026-10-08-relations-across-scales.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+        "theories/shengsheng-buxi-generative-existence/README.md"
+      ],
+      "missing_sources": [],
+      "new_pages": [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/BOUND-CALIBRATION-INTEGRATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/BOUND-CALIBRATION-PROTOCOL.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-HISTORY-INTEGRATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md"
+      ],
+      "removed_pages": []
+    }
+  }
+}

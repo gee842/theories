@@ -1,0 +1,18 @@
+{
+  "status": "failed",
+  "utc": "20261007T222436.216895Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "alignment-direction-checks/20261007T222436.216895Z",
+  "source_sha256": {
+    "PracticalJudgment": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "AlignmentDirection": "0641f8d1e19c88c6625b92947b49edc4f1131a9fff75a4ca09058a4806aa6990"
+  },
+  "checker_sha256": {
+    "check_alignment_direction.py": "b730db37f7bef664863985a6024ddca08c1cafc69efaa7a2f7b175eac5ec8718",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Nine AI-case instances: stipulated mixed comparison, retained capability loss, transfer improvement, dominated expansion, actual demand coverage, failed undelivered transfer, crossed basic losses and faithful revision. Thirty imported practical theorems remain inherited. Normative priority, permissible allocation, truthful correspondence and practical selection are explicit philosophical commitments, not kernel-established ethical facts.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "AlignmentDirection.lean:46:43: error: failed to synthesize\n  Decidable (eligible 2)\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\nAlignmentDirection.lean:62:4: error: failed to synthesize\n  Decidable \u00acoldService 2\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\nAlignmentDirection.lean:66:54: error: failed to synthesize\n  Decidable \u00acoldService 2\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\n"
+}

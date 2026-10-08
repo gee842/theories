@@ -1,0 +1,30 @@
+{
+  "status": "failed",
+  "utc": "20261007T224411.297768Z",
+  "scope": "Nine constructed-case consequences under the inherited J1/J2 comparator. No empirical or normative-premise validation; 30 inherited theorems remain separately counted.",
+  "retained_run": "situated-kitchen-checks/20261007T224411.297768Z",
+  "source_sha256": {
+    "PracticalJudgment": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "SituatedKitchen": "1c397b2f0f22f09eeeec959528a8244aba9425c76c659077dca40c4568bda7a7"
+  },
+  "checker_sha256": {
+    "check_situated_kitchen.py": "b7948467d66e59961ace8b6c1b5d5837567541d776765e7024d41b26c4388a30",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "SituatedKitchen.lean:42:73: error: failed to synthesize\n  Decidable (PracticalJudgment.Better protection realization care classOnly)\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\nSituatedKitchen.lean:46:74: error: failed to synthesize\n  Decidable\n    (\u00acPracticalJudgment.Better protection realization learning care \u2227\n      \u00acPracticalJudgment.Better protection realization care learning)\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\nSituatedKitchen.lean:49:82: error: failed to synthesize\n  Decidable (PracticalJudgment.Better protection realization learning overloadedCare)\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\nSituatedKitchen.lean:52:79: error: failed to synthesize\n  Decidable (PracticalJudgment.Better protection realization care harmfulLearning)\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\nSituatedKitchen.lean:55:84: error: failed to synthesize\n  Decidable (realization inaccessibleLearning 0 \u2227 \u00acrealization inaccessibleLearning 1)\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\nSituatedKitchen.lean:58:88: error: failed to synthesize\n  Decidable (PracticalJudgment.Better protection realization learning inaccessibleLearning)\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\nSituatedKitchen.lean:62:92: error: failed to synthesize\n  Decidable\n    (\u00acPracticalJudgment.Better protection realization overloadedCare exitWithoutCover \u2227\n      \u00acPracticalJudgment.Better protection realization exitWithoutCover overloadedCare)\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\nSituatedKitchen.lean:69:51: error: Expected type must not contain free variables\n  \u00acprotection (handoff announced false) 1\n\nHint: Use the `+revert` option to automatically clean up and revert free variables\nSituatedKitchen.lean:73:63: error: Expected type must not contain free variables\n  PracticalJudgment.Better protection realization (handoff announced true) (handoff announced false)\n\nHint: Use the `+revert` option to automatically clean up and revert free variables\n",
+  "artifact_sha256": {
+    "PracticalJudgment.lean": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "PracticalJudgment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PracticalJudgmentAxiomAudit.lean": "c9f412159410854fb031176d7fe7a4c351dfaea59354c7d7a19ec4ad0c6e51a6",
+    "PracticalJudgmentAxiomAudit.log": "d73810d6b1a7343808726234c17bca9d7841acafabd3a17ee8e6145dfabbf1ea",
+    "PracticalJudgmentSignatures.lean": "f8b97b475eacfb3d07f8ccfa675828f261dffc20c9ef8032db7a92d4a6fbc90a",
+    "PracticalJudgmentSignatures.log": "953db8ccf30c696cb0438c053f498c0209a4a563746adfffcfe253bcd74bff42",
+    "SituatedKitchen.lean": "1c397b2f0f22f09eeeec959528a8244aba9425c76c659077dca40c4568bda7a7",
+    "SituatedKitchen.log": "004f6e82db8c8ece18c84f61e7bfbde5ca87c32a146118b319511c24d1efd3e3",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_situated_kitchen.py": "b7948467d66e59961ace8b6c1b5d5837567541d776765e7024d41b26c4388a30",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

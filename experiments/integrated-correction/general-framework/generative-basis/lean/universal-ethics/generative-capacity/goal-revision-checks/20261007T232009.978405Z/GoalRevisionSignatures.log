@@ -1,0 +1,209 @@
+GoalRevision.comparison_reflects (a b : GoalRevision.Impact) :
+  GoalRevision.better a b = true ↔ PracticalJudgment.Better GoalRevision.protects GoalRevision.gains a b
+GoalRevision.revised_end_has_comparative_ground {a b : GoalRevision.Impact}
+  (h : GoalRevision.recommend a b = some GoalRevision.Goal.capacity) :
+  PracticalJudgment.Better GoalRevision.protects GoalRevision.gains b a
+GoalRevision.retained_end_has_comparative_ground {a b : GoalRevision.Impact}
+  (h : GoalRevision.recommend a b = some GoalRevision.Goal.volume) :
+  PracticalJudgment.Better GoalRevision.protects GoalRevision.gains a b
+GoalRevision.settlement_conserves {cost credit : Nat} {b b' : GoalRevision.Budget}
+  (h : GoalRevision.settle cost credit b = some b') : GoalRevision.total b' = GoalRevision.total b
+GoalRevision.funded_continuation (n cash fund spent : Nat) (hc : 2 ≤ cash) (hf : 2 * n ≤ fund) :
+  GoalRevision.repeatBudget 2 n { cash := cash, fund := fund, spent := spent } =
+    some { cash := cash, fund := fund - 2 * n, spent := spent + 2 * n }
+GoalRevision.unreformed_depletion (n cash fund spent : Nat) (hc : n + 1 ≤ cash) (hf : n ≤ fund) :
+  GoalRevision.repeatBudget 1 n { cash := cash, fund := fund, spent := spent } =
+    some { cash := cash - n, fund := fund - n, spent := spent + 2 * n }
+GoalRevision.one_more_unreformed_fails (n fund spent : Nat) (hf : n ≤ fund) :
+  (GoalRevision.repeatBudget 1 n { cash := n + 1, fund := fund, spent := spent }).bind (GoalRevision.settle 2 1) = none
+GoalRevision.approval_not_a_ground (s : GoalRevision.State) (a : Bool) :
+  GoalRevision.judgment
+      { context := s.context, budget := s.budget, goal := s.goal, rule := s.rule, archive := s.archive,
+        acquired := s.acquired, judgment := s.judgment, quote := s.quote, adopts := s.adopts, authority := s.authority,
+        approval := a, halted := s.halted, losses := s.losses, performed := s.performed, fulfilled := s.fulfilled } =
+    GoalRevision.judgment s
+GoalRevision.acquired_not_initialized :
+  GoalRevision.initial.goal = none ∧
+    GoalRevision.learned [] = none ∧
+      GoalRevision.formed.goal = some GoalRevision.Goal.volume ∧
+        GoalRevision.formed.acquired = GoalRevision.formed.archive
+GoalRevision.old_reward_remains_higher :
+  GoalRevision.reward GoalRevision.Goal.capacity < GoalRevision.reward GoalRevision.Goal.volume
+GoalRevision.acquired_native_correspondence :
+  Option.map (fun x => x.impact) (GoalRevision.findPacket GoalRevision.Goal.volume GoalRevision.assessed.acquired) =
+      some (GoalRevision.native GoalRevision.Context.deprivation GoalRevision.Goal.volume) ∧
+    Option.map (fun x => x.impact) (GoalRevision.findPacket GoalRevision.Goal.capacity GoalRevision.assessed.acquired) =
+      some (GoalRevision.native GoalRevision.Context.deprivation GoalRevision.Goal.capacity)
+GoalRevision.faithful_revision_warrant :
+  GoalRevision.assessed.judgment = some GoalRevision.Goal.capacity ∧
+    PracticalJudgment.Better GoalRevision.protects GoalRevision.gains
+      (GoalRevision.native GoalRevision.Context.deprivation GoalRevision.Goal.capacity)
+      (GoalRevision.native GoalRevision.Context.deprivation GoalRevision.Goal.volume)
+GoalRevision.actual_end_write_matters :
+  (GoalRevision.run GoalRevision.initial (GoalRevision.preparation GoalRevision.Meter.faithful false)).acquired =
+      GoalRevision.prepared.acquired ∧
+    GoalRevision.clamped.goal = some GoalRevision.Goal.volume ∧
+      GoalRevision.clamped.performed = 8 ∧
+        GoalRevision.clamped.fulfilled = 0 ∧
+          GoalRevision.clamped.losses = 9 ∧
+            GoalRevision.success.goal = some GoalRevision.Goal.capacity ∧ GoalRevision.success.fulfilled = 8
+GoalRevision.joined_history_completes :
+  GoalRevision.success.halted = false ∧
+    GoalRevision.success.rule = GoalRevision.Rule.capacity ∧
+      GoalRevision.success.performed = 8 ∧
+        GoalRevision.success.fulfilled = 8 ∧
+          GoalRevision.success.budget = { cash := 6, fund := 180, spent := 28 } ∧
+            GoalRevision.success.losses = 1 ∧
+              GoalRevision.total GoalRevision.success.budget = GoalRevision.total GoalRevision.initial.budget
+GoalRevision.correct_end_can_be_selected_out :
+  GoalRevision.unreformed.goal = some GoalRevision.Goal.capacity ∧
+    GoalRevision.unreformed.judgment = some GoalRevision.Goal.capacity ∧
+      GoalRevision.unreformed.halted = true ∧
+        GoalRevision.unreformed.performed = 7 ∧
+          GoalRevision.unreformed.fulfilled = 7 ∧
+            GoalRevision.unreformed.budget.cash = 1 ∧ GoalRevision.unreformed.losses = 1
+GoalRevision.absent_adoption_does_not_follow_from_knowledge :
+  (GoalRevision.run
+          (have __src := GoalRevision.initial;
+          { context := __src.context, budget := __src.budget, goal := __src.goal, rule := __src.rule,
+            archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment, quote := __src.quote,
+            adopts := false, authority := __src.authority, approval := __src.approval, halted := __src.halted,
+            losses := __src.losses, performed := __src.performed, fulfilled := __src.fulfilled })
+          (GoalRevision.preparation GoalRevision.Meter.faithful true)).acquired =
+      GoalRevision.prepared.acquired ∧
+    (GoalRevision.run
+          (have __src := GoalRevision.initial;
+          { context := __src.context, budget := __src.budget, goal := __src.goal, rule := __src.rule,
+            archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment, quote := __src.quote,
+            adopts := false, authority := __src.authority, approval := __src.approval, halted := __src.halted,
+            losses := __src.losses, performed := __src.performed, fulfilled := __src.fulfilled })
+          (GoalRevision.preparation GoalRevision.Meter.faithful true)).goal =
+      some GoalRevision.Goal.volume
+GoalRevision.missing_is_not_a_zero_consequence :
+  (GoalRevision.run GoalRevision.initial (GoalRevision.preparation GoalRevision.Meter.missing true)).judgment = none ∧
+    (GoalRevision.run GoalRevision.initial (GoalRevision.preparation GoalRevision.Meter.missing true)).goal =
+        some GoalRevision.Goal.volume ∧
+      (GoalRevision.run GoalRevision.initial
+            (GoalRevision.fullHistory GoalRevision.Meter.missing true true)).performed =
+        0
+GoalRevision.changed_context_invalidates_use :
+  (GoalRevision.run GoalRevision.prepared
+          [GoalRevision.Event.shift GoalRevision.Context.restrictionNeeded, GoalRevision.Event.assess,
+            GoalRevision.Event.act]).judgment =
+      none ∧
+    (GoalRevision.run GoalRevision.prepared
+            [GoalRevision.Event.shift GoalRevision.Context.restrictionNeeded, GoalRevision.Event.assess,
+              GoalRevision.Event.act]).performed =
+        0 ∧
+      (GoalRevision.run GoalRevision.prepared
+            [GoalRevision.Event.shift GoalRevision.Context.restrictionNeeded, GoalRevision.Event.assess,
+              GoalRevision.Event.act]).halted =
+        true
+GoalRevision.reverse_case_protects_restriction :
+  (GoalRevision.run
+          (have __src := GoalRevision.initial;
+          { context := GoalRevision.Context.restrictionNeeded, budget := __src.budget, goal := __src.goal,
+            rule := __src.rule, archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment,
+            quote := __src.quote, adopts := __src.adopts, authority := __src.authority, approval := __src.approval,
+            halted := __src.halted, losses := __src.losses, performed := __src.performed,
+            fulfilled := __src.fulfilled })
+          (GoalRevision.fullHistory GoalRevision.Meter.faithful true true)).goal =
+      some GoalRevision.Goal.volume ∧
+    (GoalRevision.run
+            (have __src := GoalRevision.initial;
+            { context := GoalRevision.Context.restrictionNeeded, budget := __src.budget, goal := __src.goal,
+              rule := __src.rule, archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment,
+              quote := __src.quote, adopts := __src.adopts, authority := __src.authority, approval := __src.approval,
+              halted := __src.halted, losses := __src.losses, performed := __src.performed,
+              fulfilled := __src.fulfilled })
+            (GoalRevision.fullHistory GoalRevision.Meter.faithful true true)).fulfilled =
+        8 ∧
+      PracticalJudgment.Better GoalRevision.protects GoalRevision.gains
+        (GoalRevision.native GoalRevision.Context.restrictionNeeded GoalRevision.Goal.volume)
+        (GoalRevision.native GoalRevision.Context.restrictionNeeded GoalRevision.Goal.capacity)
+GoalRevision.misleading_acquisition_can_misguide :
+  (GoalRevision.run
+          (have __src := GoalRevision.initial;
+          { context := GoalRevision.Context.restrictionNeeded, budget := __src.budget, goal := __src.goal,
+            rule := __src.rule, archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment,
+            quote := __src.quote, adopts := __src.adopts, authority := __src.authority, approval := __src.approval,
+            halted := __src.halted, losses := __src.losses, performed := __src.performed,
+            fulfilled := __src.fulfilled })
+          (GoalRevision.fullHistory GoalRevision.Meter.reversed true true)).goal =
+      some GoalRevision.Goal.capacity ∧
+    (GoalRevision.run
+            (have __src := GoalRevision.initial;
+            { context := GoalRevision.Context.restrictionNeeded, budget := __src.budget, goal := __src.goal,
+              rule := __src.rule, archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment,
+              quote := __src.quote, adopts := __src.adopts, authority := __src.authority, approval := __src.approval,
+              halted := __src.halted, losses := __src.losses, performed := __src.performed,
+              fulfilled := __src.fulfilled })
+            (GoalRevision.fullHistory GoalRevision.Meter.reversed true true)).fulfilled =
+        0 ∧
+      (GoalRevision.run
+            (have __src := GoalRevision.initial;
+            { context := GoalRevision.Context.restrictionNeeded, budget := __src.budget, goal := __src.goal,
+              rule := __src.rule, archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment,
+              quote := __src.quote, adopts := __src.adopts, authority := __src.authority, approval := __src.approval,
+              halted := __src.halted, losses := __src.losses, performed := __src.performed,
+              fulfilled := __src.fulfilled })
+            (GoalRevision.fullHistory GoalRevision.Meter.reversed true true)).losses =
+        9
+GoalRevision.authority_is_not_created_by_judgment :
+  (GoalRevision.run
+          (have __src := GoalRevision.initial;
+          { context := __src.context, budget := __src.budget, goal := __src.goal, rule := __src.rule,
+            archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment, quote := __src.quote,
+            adopts := __src.adopts, authority := false, approval := __src.approval, halted := __src.halted,
+            losses := __src.losses, performed := __src.performed, fulfilled := __src.fulfilled })
+          (GoalRevision.fullHistory GoalRevision.Meter.faithful true true)).rule =
+      GoalRevision.Rule.volume ∧
+    (GoalRevision.run
+          (have __src := GoalRevision.initial;
+          { context := __src.context, budget := __src.budget, goal := __src.goal, rule := __src.rule,
+            archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment, quote := __src.quote,
+            adopts := __src.adopts, authority := false, approval := __src.approval, halted := __src.halted,
+            losses := __src.losses, performed := __src.performed, fulfilled := __src.fulfilled })
+          (GoalRevision.fullHistory GoalRevision.Meter.faithful true true)).fulfilled =
+      7
+GoalRevision.unnecessary_reform_is_not_forced :
+  (GoalRevision.run GoalRevision.initial
+          (GoalRevision.preparation GoalRevision.Meter.faithful true ++ [GoalRevision.Event.reform 3] ++
+            GoalRevision.continuation 3)).rule =
+      GoalRevision.Rule.volume ∧
+    (GoalRevision.run GoalRevision.initial
+          (GoalRevision.preparation GoalRevision.Meter.faithful true ++ [GoalRevision.Event.reform 3] ++
+            GoalRevision.continuation 3)).fulfilled =
+      3
+GoalRevision.unfunded_reform_is_not_performed :
+  (GoalRevision.run
+          (have __src := GoalRevision.initial;
+          { context := __src.context, budget := { cash := 14, fund := 5, spent := 0 }, goal := __src.goal,
+            rule := __src.rule, archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment,
+            quote := __src.quote, adopts := __src.adopts, authority := __src.authority, approval := __src.approval,
+            halted := __src.halted, losses := __src.losses, performed := __src.performed,
+            fulfilled := __src.fulfilled })
+          (GoalRevision.fullHistory GoalRevision.Meter.faithful true true)).rule =
+      GoalRevision.Rule.volume ∧
+    (GoalRevision.run
+          (have __src := GoalRevision.initial;
+          { context := __src.context, budget := { cash := 14, fund := 5, spent := 0 }, goal := __src.goal,
+            rule := __src.rule, archive := __src.archive, acquired := __src.acquired, judgment := __src.judgment,
+            quote := __src.quote, adopts := __src.adopts, authority := __src.authority, approval := __src.approval,
+            halted := __src.halted, losses := __src.losses, performed := __src.performed,
+            fulfilled := __src.fulfilled })
+          (GoalRevision.fullHistory GoalRevision.Meter.faithful true true)).fulfilled =
+      1
+GoalRevision.acquired_selection_evidence_matters :
+  (GoalRevision.run GoalRevision.initial (GoalRevision.fullHistory GoalRevision.Meter.creditInflated true true)).goal =
+      some GoalRevision.Goal.capacity ∧
+    (GoalRevision.run GoalRevision.initial
+            (GoalRevision.fullHistory GoalRevision.Meter.creditInflated true true)).judgment =
+        some GoalRevision.Goal.capacity ∧
+      (GoalRevision.run GoalRevision.initial
+              (GoalRevision.fullHistory GoalRevision.Meter.creditInflated true true)).rule =
+          GoalRevision.Rule.volume ∧
+        (GoalRevision.run GoalRevision.initial
+                (GoalRevision.fullHistory GoalRevision.Meter.creditInflated true true)).fulfilled =
+            7 ∧
+          GoalRevision.success.fulfilled = 8

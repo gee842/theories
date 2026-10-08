@@ -1,0 +1,43 @@
+'ReformEvidence.Route' does not depend on any axioms
+'ReformEvidence.transmit' does not depend on any axioms
+'ReformEvidence.old_route_calibration' depends on axioms: [propext]
+'ReformEvidence.direct_access_preserves_loss' depends on axioms: [propext]
+'ReformEvidence.old_calibration_does_not_transport' does not depend on any axioms
+'ReformEvidence.Field' does not depend on any axioms
+'ReformEvidence.conditions' does not depend on any axioms
+'ReformEvidence.prepare' depends on axioms: [propext]
+'ReformEvidence.beforeReform' depends on axioms: [propext]
+'ReformEvidence.changeRule' depends on axioms: [propext]
+'ReformEvidence.begun' depends on axioms: [propext]
+'ReformEvidence.advance' depends on axioms: [propext]
+'ReformEvidence.inspect' does not depend on any axioms
+'ReformEvidence.approves' does not depend on any axioms
+'ReformEvidence.repair' does not depend on any axioms
+'ReformEvidence.repair_requires_authority' depends on axioms: [propext]
+'ReformEvidence.repair_conserves' depends on axioms: [propext, Quot.sound]
+'ReformEvidence.post' depends on axioms: [propext]
+'ReformEvidence.masked' depends on axioms: [propext]
+'ReformEvidence.exposed' depends on axioms: [propext]
+'ReformEvidence.restored' depends on axioms: [propext]
+'ReformEvidence.rechecked' depends on axioms: [propext]
+'ReformEvidence.old_conditions_agree' depends on axioms: [propext]
+'ReformEvidence.rule_change_activates_real_burden' depends on axioms: [propext]
+'ReformEvidence.actual_burden_differs_after_reform' depends on axioms: [propext]
+'ReformEvidence.judgmentInput' does not depend on any axioms
+'ReformEvidence.filtered_judgment_inputs_agree' depends on axioms: [propext]
+'ReformEvidence.every_decider_shares_filtered_answer' depends on axioms: [propext]
+'ReformEvidence.repetition_of_filtered_report_does_not_separate' does not depend on any axioms
+'ReformEvidence.self_approval_coexists_with_actual_loss' depends on axioms: [propext]
+'ReformEvidence.approved_continuation_repeats_real_loss' depends on axioms: [propext]
+'ReformEvidence.direct_observation_changes_judgment' depends on axioms: [propext]
+'ReformEvidence.supported_reform_survives_direct_check' depends on axioms: [propext]
+'ReformEvidence.repair_preserves_revised_goal_and_selection' depends on axioms: [propext]
+'ReformEvidence.actual_repaired_continuation_and_recheck' depends on axioms: [propext]
+'ReformEvidence.all_stages_account_for_the_same_support' depends on axioms: [propext]
+'ReformEvidence.depleted_work_blocks_further_operation' depends on axioms: [propext]
+'ReformEvidence.unavailable_inquiry_is_not_a_pass' depends on axioms: [propext]
+'ReformEvidence.insufficient_repair_reserve_blocks_action' depends on axioms: [propext]
+'ReformEvidence.protectionAfter' does not depend on any axioms
+'ReformEvidence.gainsAfter' does not depend on any axioms
+'ReformEvidence.restoring_maintenance_is_favored' depends on axioms: [propext]
+'ReformEvidence.unrepaired_shift_has_real_basic_conflict' depends on axioms: [propext]

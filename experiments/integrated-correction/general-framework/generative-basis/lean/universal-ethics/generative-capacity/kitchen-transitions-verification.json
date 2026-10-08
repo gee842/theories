@@ -1,0 +1,117 @@
+{
+  "status": "passed",
+  "utc": "20261008T080355.855607Z",
+  "scope": "Seven marginal-count implications for a fixed paired cohort. No causal, measurement-validity or ethical premise is certified. No inherited scientific module is recompiled.",
+  "retained_run": "kitchen-transitions-checks/20261008T080355.855607Z",
+  "source_sha256": {
+    "KitchenTransitions": "cf8af78afdf2e07a93067fd1df21f0259bde5d6beb9490b276c49a8515457a64"
+  },
+  "checker_sha256": {
+    "check_kitchen_transitions.py": "58bbb13b79f2f2f01277e11280e549c657f3acfe04068c480a5043c8c73f2be7",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "modules": [
+    {
+      "module": "KitchenTransitions",
+      "theorems": 7,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "KitchenTransitions.Feasible"
+        },
+        {
+          "kind": "theorem",
+          "name": "KitchenTransitions.feasible_loss_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "KitchenTransitions.net_change"
+        },
+        {
+          "kind": "def",
+          "name": "KitchenTransitions.sampleSize"
+        },
+        {
+          "kind": "def",
+          "name": "KitchenTransitions.beforeSafe"
+        },
+        {
+          "kind": "def",
+          "name": "KitchenTransitions.afterSafe"
+        },
+        {
+          "kind": "def",
+          "name": "KitchenTransitions.Published"
+        },
+        {
+          "kind": "theorem",
+          "name": "KitchenTransitions.published_loss_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "KitchenTransitions.published_gain_bounds"
+        },
+        {
+          "kind": "theorem",
+          "name": "KitchenTransitions.published_table_determined_by_loss"
+        },
+        {
+          "kind": "theorem",
+          "name": "KitchenTransitions.no_losses_realization"
+        },
+        {
+          "kind": "theorem",
+          "name": "KitchenTransitions.losses_realization"
+        }
+      ],
+      "axiom_dependencies": {
+        "KitchenTransitions.Feasible": [],
+        "KitchenTransitions.feasible_loss_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "KitchenTransitions.net_change": [
+          "propext",
+          "Quot.sound"
+        ],
+        "KitchenTransitions.sampleSize": [],
+        "KitchenTransitions.beforeSafe": [],
+        "KitchenTransitions.afterSafe": [],
+        "KitchenTransitions.Published": [],
+        "KitchenTransitions.published_loss_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "KitchenTransitions.published_gain_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "KitchenTransitions.published_table_determined_by_loss": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "KitchenTransitions.no_losses_realization": [],
+        "KitchenTransitions.losses_realization": []
+      },
+      "kernel_checked": true
+    }
+  ],
+  "artifact_sha256": {
+    "KitchenTransitions.lean": "cf8af78afdf2e07a93067fd1df21f0259bde5d6beb9490b276c49a8515457a64",
+    "KitchenTransitions.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "KitchenTransitionsAxiomAudit.lean": "cf0c0a5a33428e79917e721b727ebef45b71f9c1c93429e7ae1b990bd4fd9589",
+    "KitchenTransitionsAxiomAudit.log": "0ad03981ace34bb657b2ff49b1cd78932f3560955ad6e8df98b91e9f44c548a9",
+    "KitchenTransitionsSignatures.lean": "4354e4476d6f2400fafb1b8be11605b0bebe5a83b1fedc71b97c6cbc31f51ffd",
+    "KitchenTransitionsSignatures.log": "b0de21b3550ad5c416312a524d9809c067729423996456ea6fe5c135584c8e98",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_kitchen_transitions.py": "58bbb13b79f2f2f01277e11280e549c657f3acfe04068c480a5043c8c73f2be7",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

@@ -1,0 +1,39 @@
+Generative.ScientificCompatibility.common_truth_gives_compatibility {W : Type}
+  (p q : Generative.ScientificCompatibility.View W) (w : W) (hp : p w) (hq : q w) :
+  Generative.ScientificCompatibility.Compatible p q
+Generative.ScientificCompatibility.compatible_symmetric {W : Type} (p q : Generative.ScientificCompatibility.View W)
+  (h : Generative.ScientificCompatibility.Compatible p q) : Generative.ScientificCompatibility.Compatible q p
+Generative.ScientificCompatibility.entailment_gives_mandatory_compatibility {W : Type}
+  (admissible theory : Generative.ScientificCompatibility.View W)
+  (h : Generative.ScientificCompatibility.Entails admissible theory) :
+  Generative.ScientificCompatibility.MandatoryCompatibility admissible theory
+Generative.ScientificCompatibility.mandatory_compatibility_requires_entailment {W : Type}
+  (admissible theory : Generative.ScientificCompatibility.View W)
+  (h : Generative.ScientificCompatibility.MandatoryCompatibility admissible theory) :
+  Generative.ScientificCompatibility.Entails admissible theory
+Generative.ScientificCompatibility.mandatory_compatibility_iff_entailment {W : Type}
+  (admissible theory : Generative.ScientificCompatibility.View W) :
+  Generative.ScientificCompatibility.MandatoryCompatibility admissible theory ↔
+    Generative.ScientificCompatibility.Entails admissible theory
+Generative.ScientificCompatibility.one_compatible_rival_does_not_establish_mandatory_compatibility :
+  (Generative.ScientificCompatibility.Compatible (fun b => b = false) fun x => True) ∧
+    ¬Generative.ScientificCompatibility.MandatoryCompatibility (fun x => True) fun b => b = false
+Generative.ScientificCompatibility.compatibility_does_not_require_accepting_theory :
+  (Generative.ScientificCompatibility.Compatible (fun x => True) fun b => b = false) ∧
+    ¬Generative.ScientificCompatibility.Entails (fun x => True) fun b => b = false
+Generative.ScientificCompatibility.common_error_can_be_compatible :
+  (Generative.ScientificCompatibility.Compatible (fun b => b = false) fun b => b = false) ∧ ¬true = false
+Generative.ScientificCompatibility.full_package_requires_each_commitment {W : Type}
+  (admissible core ethics : Generative.ScientificCompatibility.View W) :
+  (Generative.ScientificCompatibility.Entails admissible fun w => core w ∧ ethics w) ↔
+    Generative.ScientificCompatibility.Entails admissible core ∧
+      Generative.ScientificCompatibility.Entails admissible ethics
+Generative.ScientificCompatibility.changed_conclusion_requires_retained_difference {S E A : Type} (record : S → E)
+  (read : E → A) (s t : S) (different : read (record s) ≠ read (record t)) : record s ≠ record t
+Generative.ScientificCompatibility.changed_conclusion_excludes_identity_update {S A : Type} (update : S → S)
+  (read : S → A) (s : S) (different : read (update s) ≠ read s) : update s ≠ s
+Generative.ScientificCompatibility.relational_presentation_preserves_update {S : Type} (update : S → S) (s t : S) :
+  Generative.ScientificCompatibility.historyConstraint update s t ↔ t = update s
+Generative.ScientificCompatibility.relational_presentation_preserves_changed_conclusion {S A : Type} (update : S → S)
+  (read : S → A) (s : S) (different : read (update s) ≠ read s) :
+  ∃ t, Generative.ScientificCompatibility.historyConstraint update s t ∧ read t ≠ read s

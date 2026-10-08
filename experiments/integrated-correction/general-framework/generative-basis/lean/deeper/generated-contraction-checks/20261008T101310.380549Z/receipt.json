@@ -1,0 +1,132 @@
+{
+  "checked_at_utc": "20261008T101310.380549Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "compiler": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "checker_sha256": "1a846d8ea167d9ed69511a66306c54939a4105902f1e1407bc0a10f8571a8e87",
+  "scope": "four modules for GENERATED-LOGIC.md; no repository-wide validation",
+  "modules": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "expected_audits": 18,
+      "axiom_audits": {
+        "Generative.trace_append_iff": [],
+        "Generative.trace_singleton_iff": [],
+        "Generative.enabled_iff_singleton_trace": [],
+        "Generative.enabled_difference_implies_state_difference": [],
+        "Generative.feasible_append_iff": [],
+        "Generative.feasible_prefix": [],
+        "Generative.enabled_product_iff": [],
+        "Generative.trace_product_iff": [],
+        "Generative.feasible_product_iff": [],
+        "Generative.trace_map": [],
+        "Generative.trace_lift": [],
+        "Generative.projected_trace_iff": [],
+        "Generative.projection_exact_iff": [],
+        "Generative.local_exact_iff_trace_exact": [],
+        "Generative.enabled_projection_iff": [],
+        "Generative.feasible_projection_iff": [],
+        "Generative.feasible_difference_implies_projection_difference": [],
+        "Generative.trace_faithful_iff": []
+      },
+      "empty_count": 18,
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedPaths.lean",
+      "sha256": "c9194672eca9625ef95ece823ef98a7bca46ead33215246dd97ebe3e8cecbbc1",
+      "expected_audits": 9,
+      "axiom_audits": {
+        "Generative.Deeper.reach_refl": [],
+        "Generative.Deeper.reach_step": [],
+        "Generative.Deeper.reach_trans": [],
+        "Generative.Deeper.trace_evaluate": [],
+        "Generative.Deeper.reach_evaluate": [],
+        "Generative.Deeper.reach_least": [],
+        "Generative.Deeper.reach_is_least_closure": [],
+        "Generative.Deeper.least_closure_unique": [],
+        "Generative.Deeper.reach_without_steps_iff": []
+      },
+      "empty_count": 9,
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedContraction.lean",
+      "sha256": "e61136365023f0fd20ba9c8fac70515e4f7e8d63772ace155f15b85931038652",
+      "expected_audits": 7,
+      "axiom_audits": {
+        "Generative.Logic.reach_frame": [],
+        "Generative.Logic.replacement_of_reach": [],
+        "Generative.Logic.reach_of_replacement": [],
+        "Generative.Logic.replacement_iff_reach": [],
+        "Generative.Logic.contraction_iff_duplicate": [],
+        "Generative.Logic.duplicate_finite": [],
+        "Generative.Logic.contraction_finite": []
+      },
+      "empty_count": 7,
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContractionMechanisms.lean",
+      "sha256": "1a5f627d15f37a70731581ca4ea22fae18ee55e1f4e482ae1d0677af55cf896f",
+      "expected_audits": 17,
+      "axiom_audits": {
+        "Generative.Logic.Mechanisms.step_frame": [],
+        "Generative.Logic.Mechanisms.form_many": [],
+        "Generative.Logic.Mechanisms.paid_duplication": [],
+        "Generative.Logic.Mechanisms.paid_contraction": [],
+        "Generative.Logic.Mechanisms.formation": [],
+        "Generative.Logic.Mechanisms.spending": [],
+        "Generative.Logic.Mechanisms.Serial.serial_reuse": [],
+        "Generative.Logic.Mechanisms.Serial.no_overlapping_takes": [],
+        "Generative.Logic.Mechanisms.left_unit": [
+          "propext"
+        ],
+        "Generative.Logic.Mechanisms.step_mass": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.Logic.Mechanisms.trace_mass": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.Logic.Mechanisms.reach_mass": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.Logic.Mechanisms.budget_exact": [
+          "propext",
+          "sorryAx",
+          "Quot.sound"
+        ],
+        "Generative.Logic.Mechanisms.no_free_duplication": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.Logic.Mechanisms.no_free_contraction": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.Logic.Mechanisms.no_budget_contraction": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.Logic.Mechanisms.formed_then_exhausted": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "empty_count": 8,
+      "exit_code": 1,
+      "source_unchanged_during_check": true,
+      "passed": false
+    }
+  ],
+  "passed": false
+}

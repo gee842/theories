@@ -1,0 +1,31 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-enacted-foundation-n3p1_dfp/EnactedFoundation.lean:90:11: error: Type mismatch: After simplification, term
+  Trace.nil (s, n)
+ has type
+  Trace (bounded P) (s, n) [] (s, n)
+but is expected to have type
+  Trace (bounded P) (s✝, n) [] (s✝, n)
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-enacted-foundation-n3p1_dfp/EnactedFoundation.lean:92:21: error: unsolved goals
+State : Type u
+Action : Type v
+P : Process State Action
+s✝ t✝ : State
+as✝ : List Action
+n : Nat
+s m t : State
+a : Action
+as : List Action
+hs : P.step s a m
+a✝ : Trace P m as t
+ih : Trace (bounded P) (m, n + as.length) as (t, n)
+⊢ n + (as.length + 1) = n + as.length + 1
+'Generative.EnactedFoundation.occurrence_from_enactment' does not depend on any axioms
+'Generative.EnactedFoundation.enacted_denial_excludes_no_occurrence' does not depend on any axioms
+'Generative.EnactedFoundation.positive_count_preserves_enabled' does not depend on any axioms
+'Generative.EnactedFoundation.zero_count_has_no_step' does not depend on any axioms
+'Generative.EnactedFoundation.zero_count_has_no_enabled' does not depend on any axioms
+'Generative.EnactedFoundation.bounded_trace_projects' does not depend on any axioms
+'Generative.EnactedFoundation.bounded_trace_count' depends on axioms: [propext, Quot.sound]
+'Generative.EnactedFoundation.finite_trace_lifts' depends on axioms: [sorryAx]
+'Generative.EnactedFoundation.bounded_trace_iff' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.EnactedFoundation.finite_trace_has_terminal_replay' depends on axioms: [sorryAx]
+'Generative.EnactedFoundation.bounded_trace_length_le' depends on axioms: [propext, Quot.sound]

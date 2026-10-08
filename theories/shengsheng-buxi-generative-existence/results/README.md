@@ -10,6 +10,7 @@
 
 | 文档 / Document | 内容 / Contents |
 |---|---|
+| [会话成果与证明复用 / Session outcomes and proof reuse](SESSION-RESULTS.md) | 会话到成果族、规范复用入口、重复证明判别及新增章节。 / Chats mapped to result families, canonical reuse targets, overlap decisions and additional chapters. |
 | [全部理论分支 / Theory map](THEORY-MAP.md) | 17 个分支的中英论证、意义、状态和后续；含方法档案。 / Bilingual branch accounts, including the method archive. |
 | [统一论证 A–L](ARGUMENTS-A-L.md) · [统一论证 M–Z](ARGUMENTS-M-Z.md) | 逐章中英阅读版：论证、意义、范围、下一问题、原文、Lean 与证据。 / Paired chapter readings with scope, questions, sources and evidence. |
 | [Lean 模块](LEAN-INDEX.md) · [定理名称](LEAN-DECLARATIONS.md) | 按模块及声明名称定位源码；区分检查记录与当前源码。 / Find modules and named declarations; distinguish recorded checks from current sources. |
@@ -29,9 +30,9 @@
 
 ## 覆盖与证据含义 / Coverage and evidence
 
-本轮逐项覆盖统一目录的 **107 个顶层 Markdown 章节**及全部 **17 个理论分支 README**。章节是阅读和维护单元，包含论证族、方法、综述及导航；这些数字不是独立理论或已证明定理的数量。每个条目提供两种语言的简明论证与意义，详尽原文、历史批评及逐项证明保留在原位置。本目录不是全部历史文献的逐句新译本。
+本阅读版保留 **107 个顶层 Markdown 章节**及 **17 个理论分支 README** 的已记录核读版本。新增章节、来源变化及会话成果见[当前检查点地图](SESSION-RESULTS.md)；旧摘要与哈希没有因导航更新而自动升级。章节是阅读和维护单元，不是独立理论或定理数。每项提供中英论证与意义，完整原文、历史批评及证明继续保留。
 
-This edition covers all **107 top-level unified chapters** and **17 branch READMEs**. Chapters are reading and maintenance units, including argument families, methods and navigation; these are not counts of independent theories or proved theorems. Each entry gives paired concise arguments and significance, with full expositions, criticism and proofs retained at their original locations. It is not a new sentence-by-sentence translation of every historical source.
+This reading edition retains the recorded source versions of **107 unified chapters** and **17 branch READMEs**. Additional chapters, changed source versions and session outcomes appear in the [checkpoint map](SESSION-RESULTS.md). Navigation updates do not certify old summaries or refresh their review hashes. Chapters are reading units, not independent theories or theorems; full arguments, criticism and proofs remain at their original locations.
 
 | 标签 / Category | 含义 / Meaning |
 |---|---|

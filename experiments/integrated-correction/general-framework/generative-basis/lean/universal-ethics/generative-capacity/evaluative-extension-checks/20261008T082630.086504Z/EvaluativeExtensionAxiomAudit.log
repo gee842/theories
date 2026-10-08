@@ -1,0 +1,28 @@
+'EvaluativeExtension.extend' does not depend on any axioms
+'EvaluativeExtension.inclusion_extension_iff' does not depend on any axioms
+'EvaluativeExtension.strict_inclusion_survives_extension' does not depend on any axioms
+'EvaluativeExtension.better_survives_no_new_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvaluativeExtension.equal_additions_preserve_exact_comparison' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'EvaluativeExtension.new_protection_loss_defeats_old_verdict' does not depend on any axioms
+'EvaluativeExtension.Plan' does not depend on any axioms
+'EvaluativeExtension.Stage' does not depend on any axioms
+'EvaluativeExtension.need' does not depend on any axioms
+'EvaluativeExtension.supply' does not depend on any axioms
+'EvaluativeExtension.oldProtection' does not depend on any axioms
+'EvaluativeExtension.outputCount' does not depend on any axioms
+'EvaluativeExtension.oldGain' does not depend on any axioms
+'EvaluativeExtension.formedProtection' does not depend on any axioms
+'EvaluativeExtension.protection' does not depend on any axioms
+'EvaluativeExtension.comparison' does not depend on any axioms
+'EvaluativeExtension.prior_output_favored' depends on axioms: [propext, Quot.sound]
+'EvaluativeExtension.formation_creates_a_differentiating_need' depends on axioms: [propext, Quot.sound]
+'EvaluativeExtension.formed_maintenance_favored' depends on axioms: [propext, Quot.sound]
+'EvaluativeExtension.formed_output_no_longer_favored' depends on axioms: [propext, Quot.sound]
+'EvaluativeExtension.reversal_keeps_real_output_loss' depends on axioms: [propext, Quot.sound]
+'EvaluativeExtension.no_unrestricted_preservation_of_verdicts' depends on axioms: [propext, Quot.sound]
+'EvaluativeExtension.no_one_stage_blind_exact_ranking' depends on axioms: [propext, Quot.sound]
+'EvaluativeExtension.one_unchanged_rule_handles_both_stages' depends on axioms: [propext, Quot.sound]
+'EvaluativeExtension.addedGain' does not depend on any axioms
+'EvaluativeExtension.added_secondary_gain_can_leave_incomparability' depends on axioms: [propext]

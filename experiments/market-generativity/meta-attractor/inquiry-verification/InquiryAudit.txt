@@ -1,0 +1,99 @@
+'ExpandingInquiry.Tower' does not depend on any axioms
+'ExpandingInquiry.roots' does not depend on any axioms
+'ExpandingInquiry.shared_dependency_persists' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.deeper_separation_covers_lower_levels' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.State' does not depend on any axioms
+'ExpandingInquiry.view' does not depend on any axioms
+'ExpandingInquiry.Supported' does not depend on any axioms
+'ExpandingInquiry.Invariant' does not depend on any axioms
+'ExpandingInquiry.Full' does not depend on any axioms
+'ExpandingInquiry.charge' does not depend on any axioms
+'ExpandingInquiry.worked' depends on axioms: [propext]
+'ExpandingInquiry.fabricated' does not depend on any axioms
+'ExpandingInquiry.extended' does not depend on any axioms
+'ExpandingInquiry.pulsed' does not depend on any axioms
+'ExpandingInquiry.observed' does not depend on any axioms
+'ExpandingInquiry.restored' depends on axioms: [propext]
+'ExpandingInquiry.Event' does not depend on any axioms
+'ExpandingInquiry.process' depends on axioms: [propext]
+'ExpandingInquiry.charge_supported' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.work_supported' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.work_restores_margin' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.pulse_supported' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.extension_invalidates' depends on axioms: [propext]
+'ExpandingInquiry.observation_preserves' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.step_preserves' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.trace_preserves' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.no_work_while_interrupted' depends on axioms: [propext]
+'ExpandingInquiry.extension_requires_constructed_adapter' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.work_finances' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.probe' depends on axioms: [propext]
+'ExpandingInquiry.fundedProbe' depends on axioms: [propext]
+'ExpandingInquiry.probe_actual' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.funded_probe_actual' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.probe_records_effect' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.probeEvents' does not depend on any axioms
+'ExpandingInquiry.survey' depends on axioms: [propext]
+'ExpandingInquiry.surveyEvents' depends on axioms: [propext]
+'ExpandingInquiry.survey_actual' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.survey_records' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.survey_complete' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.expanded' depends on axioms: [propext]
+'ExpandingInquiry.round' depends on axioms: [propext]
+'ExpandingInquiry.roundEvents' depends on axioms: [propext]
+'ExpandingInquiry.expansion_actual' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.round_actual' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.rounds' depends on axioms: [propext]
+'ExpandingInquiry.events' depends on axioms: [propext]
+'ExpandingInquiry.expansion_continues' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.expansion_reach' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.expanded_records_complete' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.expansion_keeps_tower' depends on axioms: [propext]
+'ExpandingInquiry.acquired_at_reach' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.construction_accounting' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.physical_work' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.physical_restoration' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.gate' depends on axioms: [propext]
+'ExpandingInquiry.decidableGate' depends on axioms: [propext]
+'ExpandingInquiry.expansion_clears_certification' depends on axioms: [propext]
+'ExpandingInquiry.bounded_gate_sound' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.bounded_gate_available' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.safeWithdrawal' does not depend on any axioms
+'ExpandingInquiry.responseLaw' does not depend on any axioms
+'ExpandingInquiry.choice' depends on axioms: [propext]
+'ExpandingInquiry.response' depends on axioms: [propext]
+'ExpandingInquiry.withdrawn' depends on axioms: [propext]
+'ExpandingInquiry.response_preserves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExpandingInquiry.withdrawal_preserves' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.response_is_physical' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.JointEvent' does not depend on any axioms
+'ExpandingInquiry.jointProcess' depends on axioms: [propext]
+'ExpandingInquiry.joint_step_preserves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExpandingInquiry.joint_trace_preserves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ExpandingInquiry.lift_investigation' depends on axioms: [propext]
+'ExpandingInquiry.initial' does not depend on any axioms
+'ExpandingInquiry.initial_invariant' does not depend on any axioms
+'ExpandingInquiry.separatedTower' depends on axioms: [propext]
+'ExpandingInquiry.hiddenAfter' depends on axioms: [propext]
+'ExpandingInquiry.separated_roots' depends on axioms: [propext]
+'ExpandingInquiry.hidden_prefix' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.hidden_next' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.recordThrough' does not depend on any axioms
+'ExpandingInquiry.every_finite_record_has_hidden_extension' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.hidden_extension_changes_failure' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.no_finite_certificate_of_unrestricted_separation' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.continued_expansion_exposes_each_hidden_level' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.commonStart' depends on axioms: [propext]
+'ExpandingInquiry.exposed' depends on axioms: [propext]
+'ExpandingInquiry.decisionPoint' depends on axioms: [propext]
+'ExpandingInquiry.allYes' does not depend on any axioms
+'ExpandingInquiry.broader_test_changes_admission' depends on axioms: [propext]
+'ExpandingInquiry.expansion_to_response_is_actual' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.actual_corrective_effect' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.exhausted_margin_blocks_pulse' depends on axioms: [propext]
+'ExpandingInquiry.RecoveryReserve' does not depend on any axioms
+'ExpandingInquiry.step_retains_restoration_reserve' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.trace_retains_restoration_reserve' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.interrupted_history_can_restore' depends on axioms: [propext, Quot.sound]
+'ExpandingInquiry.thinReserve' depends on axioms: [propext]
+'ExpandingInquiry.unreserved_pulse_would_strand_restoration' depends on axioms: [propext, Quot.sound]

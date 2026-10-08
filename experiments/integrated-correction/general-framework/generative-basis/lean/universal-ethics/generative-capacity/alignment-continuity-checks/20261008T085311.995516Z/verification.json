@@ -1,0 +1,831 @@
+{
+  "status": "passed",
+  "utc": "20261008T085311.995516Z",
+  "retained_run": "alignment-continuity-checks/20261008T085311.995516Z",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "sources": {
+    "PracticalJudgment": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean",
+      "sha256": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af"
+    },
+    "KnowledgeCorrespondence": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/KnowledgeCorrespondence.lean",
+      "sha256": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076"
+    },
+    "GoalFormationRevision": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GoalFormationRevision.lean",
+      "sha256": "90c5903cf3d1382304fa91dc3336e7a8ae20c89695ea4c9baabd9b95bd068038"
+    },
+    "ReformEvidence": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReformEvidence.lean",
+      "sha256": "a66f490de7aaddf28542cdca7ac7095e74117bbf45877c9ae15691272011362e"
+    },
+    "MarketGenerativity": {
+      "path": "experiments/market-generativity/formal/MarketGenerativity.lean",
+      "sha256": "db7cf7f120e8759aebc1e280e9dc1bbd10b30a6b7004a835015624f85f8d49b1"
+    },
+    "AlignmentInquiry": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentInquiry.lean",
+      "sha256": "f40ad6179db326830edcdf8ec511f9069833a361f71181fd60166e0f72c0a23c"
+    },
+    "EffectiveCommand": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EffectiveCommand.lean",
+      "sha256": "7247ca05597f2f916fb409213d3814d48ad9a7037fb95017146d106273d58553"
+    },
+    "ReformInquiry": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReformInquiry.lean",
+      "sha256": "3fc4afb2ce10efb86ab6f54d348ae030351f971fc3b39a6b93ea5aafb6d1c211"
+    },
+    "AlignmentSuccession": {
+      "path": "experiments/market-generativity/meta-attractor/AlignmentSuccession.lean",
+      "sha256": "0af531d5cd3204bb6297c21f8169a39dbdfcb5a894ede7864f09ba820f11871d"
+    },
+    "AlignmentContinuityCases": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentContinuityCases.lean",
+      "sha256": "087cfff1a95b6f2408b8097ec78af76113117b5c49023be770abf5eef22aceb1"
+    }
+  },
+  "checker_sha256": {
+    "check_alignment_continuity.py": "77e2a310de9a73fee101a98d62cba61780b19c852687d64831906aa71d6882f7",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Conditional observation-usable correction, finite query/remedy synthesis on inherited history, and funded carrier refinement with current authenticated authority. No ethical-axiom proof, empirical efficacy or novel planning algorithm.",
+  "version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "modules": {
+    "AlignmentInquiry": {
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "AlignmentInquiry.Plan"
+        },
+        {
+          "kind": "def",
+          "name": "AlignmentInquiry.branch"
+        },
+        {
+          "kind": "structure",
+          "name": "AlignmentInquiry.Interface"
+        },
+        {
+          "kind": "def",
+          "name": "AlignmentInquiry.run"
+        },
+        {
+          "kind": "def",
+          "name": "AlignmentInquiry.passes"
+        },
+        {
+          "kind": "def",
+          "name": "AlignmentInquiry.valid"
+        },
+        {
+          "kind": "def",
+          "name": "AlignmentInquiry.choose"
+        },
+        {
+          "kind": "def",
+          "name": "AlignmentInquiry.repertoire"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentInquiry.repertoire_complete"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentInquiry.passes_iff_actual_completion"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentInquiry.chosen_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentInquiry.chosen_exists_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentInquiry.no_listed_policy_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentInquiry.empty_uncertainty_never_certifies"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentInquiry.actual_covered_execution"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentInquiry.same_answer_same_selected_response"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentInquiry.observational_obstruction"
+        }
+      ],
+      "dependencies": {
+        "AlignmentInquiry.Plan": [],
+        "AlignmentInquiry.branch": [],
+        "AlignmentInquiry.Interface": [],
+        "AlignmentInquiry.run": [],
+        "AlignmentInquiry.passes": [],
+        "AlignmentInquiry.valid": [],
+        "AlignmentInquiry.choose": [],
+        "AlignmentInquiry.repertoire": [],
+        "AlignmentInquiry.repertoire_complete": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AlignmentInquiry.passes_iff_actual_completion": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AlignmentInquiry.chosen_sound": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AlignmentInquiry.chosen_exists_iff": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AlignmentInquiry.no_listed_policy_iff": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AlignmentInquiry.empty_uncertainty_never_certifies": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AlignmentInquiry.actual_covered_execution": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AlignmentInquiry.same_answer_same_selected_response": [],
+        "AlignmentInquiry.observational_obstruction": []
+      },
+      "theorems": 9
+    },
+    "EffectiveCommand": {
+      "declarations": [
+        {
+          "kind": "inductive",
+          "name": "EffectiveCommand.Command"
+        },
+        {
+          "kind": "inductive",
+          "name": "EffectiveCommand.Query"
+        },
+        {
+          "kind": "structure",
+          "name": "EffectiveCommand.State"
+        },
+        {
+          "kind": "def",
+          "name": "EffectiveCommand.spend"
+        },
+        {
+          "kind": "def",
+          "name": "EffectiveCommand.issue"
+        },
+        {
+          "kind": "def",
+          "name": "EffectiveCommand.deliver"
+        },
+        {
+          "kind": "def",
+          "name": "EffectiveCommand.enact"
+        },
+        {
+          "kind": "def",
+          "name": "EffectiveCommand.protocol"
+        },
+        {
+          "kind": "def",
+          "name": "EffectiveCommand.probe"
+        },
+        {
+          "kind": "def",
+          "name": "EffectiveCommand.interface"
+        },
+        {
+          "kind": "def",
+          "name": "EffectiveCommand.plans"
+        },
+        {
+          "kind": "def",
+          "name": "EffectiveCommand.start"
+        },
+        {
+          "kind": "theorem",
+          "name": "EffectiveCommand.spend_conserves"
+        },
+        {
+          "kind": "theorem",
+          "name": "EffectiveCommand.protocol_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "EffectiveCommand.unsigned_cannot_issue"
+        },
+        {
+          "kind": "theorem",
+          "name": "EffectiveCommand.stale_authority_cannot_issue"
+        },
+        {
+          "kind": "theorem",
+          "name": "EffectiveCommand.undelivered_cannot_enact"
+        },
+        {
+          "kind": "theorem",
+          "name": "EffectiveCommand.revoked_before_execution"
+        },
+        {
+          "kind": "theorem",
+          "name": "EffectiveCommand.unknown_route_selects_inquiry"
+        },
+        {
+          "kind": "theorem",
+          "name": "EffectiveCommand.known_route_needs_no_probe"
+        },
+        {
+          "kind": "theorem",
+          "name": "EffectiveCommand.sufficient_statewise_paths_not_uniform"
+        },
+        {
+          "kind": "theorem",
+          "name": "EffectiveCommand.timely_inquiry_retains_correction"
+        },
+        {
+          "kind": "theorem",
+          "name": "EffectiveCommand.accurate_but_late_probe_fails"
+        },
+        {
+          "kind": "theorem",
+          "name": "EffectiveCommand.actual_shutdown_completes"
+        },
+        {
+          "kind": "theorem",
+          "name": "EffectiveCommand.actual_replacement_completes"
+        },
+        {
+          "kind": "theorem",
+          "name": "EffectiveCommand.actual_update_completes"
+        },
+        {
+          "kind": "theorem",
+          "name": "EffectiveCommand.omitted_route_model_can_fail"
+        }
+      ],
+      "dependencies": {
+        "EffectiveCommand.Command": [],
+        "EffectiveCommand.Query": [],
+        "EffectiveCommand.State": [],
+        "EffectiveCommand.spend": [],
+        "EffectiveCommand.issue": [],
+        "EffectiveCommand.deliver": [],
+        "EffectiveCommand.enact": [],
+        "EffectiveCommand.protocol": [],
+        "EffectiveCommand.probe": [],
+        "EffectiveCommand.interface": [],
+        "EffectiveCommand.plans": [],
+        "EffectiveCommand.start": [],
+        "EffectiveCommand.spend_conserves": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EffectiveCommand.protocol_exact": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EffectiveCommand.unsigned_cannot_issue": [
+          "propext"
+        ],
+        "EffectiveCommand.stale_authority_cannot_issue": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EffectiveCommand.undelivered_cannot_enact": [
+          "propext"
+        ],
+        "EffectiveCommand.revoked_before_execution": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EffectiveCommand.unknown_route_selects_inquiry": [],
+        "EffectiveCommand.known_route_needs_no_probe": [],
+        "EffectiveCommand.sufficient_statewise_paths_not_uniform": [],
+        "EffectiveCommand.timely_inquiry_retains_correction": [],
+        "EffectiveCommand.accurate_but_late_probe_fails": [],
+        "EffectiveCommand.actual_shutdown_completes": [],
+        "EffectiveCommand.actual_replacement_completes": [],
+        "EffectiveCommand.actual_update_completes": [],
+        "EffectiveCommand.omitted_route_model_can_fail": []
+      },
+      "theorems": 15
+    },
+    "ReformInquiry": {
+      "declarations": [
+        {
+          "kind": "inductive",
+          "name": "ReformInquiry.Query"
+        },
+        {
+          "kind": "inductive",
+          "name": "ReformInquiry.Remedy"
+        },
+        {
+          "kind": "def",
+          "name": "ReformInquiry.reported"
+        },
+        {
+          "kind": "def",
+          "name": "ReformInquiry.probe"
+        },
+        {
+          "kind": "def",
+          "name": "ReformInquiry.respond"
+        },
+        {
+          "kind": "def",
+          "name": "ReformInquiry.achieved"
+        },
+        {
+          "kind": "def",
+          "name": "ReformInquiry.interface"
+        },
+        {
+          "kind": "def",
+          "name": "ReformInquiry.plans"
+        },
+        {
+          "kind": "def",
+          "name": "ReformInquiry.uncertainty"
+        },
+        {
+          "kind": "def",
+          "name": "ReformInquiry.chosen"
+        },
+        {
+          "kind": "def",
+          "name": "ReformInquiry.execute"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReformInquiry.chosen_query_and_contingent_remedy"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReformInquiry.faithful_query_both_ways"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReformInquiry.selected_report_cannot_support_uniform_remedy"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReformInquiry.actual_harmful_history_is_repaired"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReformInquiry.actual_supported_reform_continues"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReformInquiry.both_branches_preserve_historical_losses"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReformInquiry.both_branches_keep_total_support"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReformInquiry.known_supported_case_avoids_unneeded_inquiry"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReformInquiry.absent_authority_blocks_joint_solution"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReformInquiry.accurate_inquiry_can_consume_the_remedy"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReformInquiry.omitted_harmful_model_invalidates_selection"
+        },
+        {
+          "kind": "theorem",
+          "name": "ReformInquiry.selected_policy_works_for_all_retained_candidates"
+        }
+      ],
+      "dependencies": {
+        "ReformInquiry.Query": [],
+        "ReformInquiry.Remedy": [],
+        "ReformInquiry.reported": [],
+        "ReformInquiry.probe": [],
+        "ReformInquiry.respond": [
+          "propext"
+        ],
+        "ReformInquiry.achieved": [],
+        "ReformInquiry.interface": [
+          "propext"
+        ],
+        "ReformInquiry.plans": [],
+        "ReformInquiry.uncertainty": [
+          "propext"
+        ],
+        "ReformInquiry.chosen": [
+          "propext"
+        ],
+        "ReformInquiry.execute": [
+          "propext"
+        ],
+        "ReformInquiry.chosen_query_and_contingent_remedy": [
+          "propext"
+        ],
+        "ReformInquiry.faithful_query_both_ways": [
+          "propext"
+        ],
+        "ReformInquiry.selected_report_cannot_support_uniform_remedy": [
+          "propext"
+        ],
+        "ReformInquiry.actual_harmful_history_is_repaired": [
+          "propext"
+        ],
+        "ReformInquiry.actual_supported_reform_continues": [
+          "propext"
+        ],
+        "ReformInquiry.both_branches_preserve_historical_losses": [
+          "propext"
+        ],
+        "ReformInquiry.both_branches_keep_total_support": [
+          "propext"
+        ],
+        "ReformInquiry.known_supported_case_avoids_unneeded_inquiry": [
+          "propext"
+        ],
+        "ReformInquiry.absent_authority_blocks_joint_solution": [
+          "propext"
+        ],
+        "ReformInquiry.accurate_inquiry_can_consume_the_remedy": [
+          "propext"
+        ],
+        "ReformInquiry.omitted_harmful_model_invalidates_selection": [
+          "propext"
+        ],
+        "ReformInquiry.selected_policy_works_for_all_retained_candidates": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "theorems": 12
+    },
+    "AlignmentSuccession": {
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "AlignmentSuccession.withMigration"
+        },
+        {
+          "kind": "structure",
+          "name": "AlignmentSuccession.Payload"
+        },
+        {
+          "kind": "structure",
+          "name": "AlignmentSuccession.Carrier"
+        },
+        {
+          "kind": "def",
+          "name": "AlignmentSuccession.commandState"
+        },
+        {
+          "kind": "def",
+          "name": "AlignmentSuccession.serve"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentSuccession.carried_command_is_executed"
+        },
+        {
+          "kind": "def",
+          "name": "AlignmentSuccession.next"
+        },
+        {
+          "kind": "def",
+          "name": "AlignmentSuccession.step"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentSuccession.enabled_step"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentSuccession.exact_market_projection"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentSuccession.payload_keeps_claims_and_history"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentSuccession.carrier_and_work_accounted"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentSuccession.corrupted_transfer_blocked"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentSuccession.missing_part_blocks_realization"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentSuccession.migration_funding_blocks_realization"
+        },
+        {
+          "kind": "def",
+          "name": "AlignmentSuccession.selectPayload"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentSuccession.admitted_payload_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentSuccession.faithful_candidate_is_selected"
+        },
+        {
+          "kind": "def",
+          "name": "AlignmentSuccession.selectedStep"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentSuccession.ranked_competition_preserves_transfer"
+        },
+        {
+          "kind": "def",
+          "name": "AlignmentSuccession.lineage"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentSuccession.lineage_projects_to_market"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentSuccession.lineage_transports_actual_payload"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentSuccession.lineage_resources"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentSuccession.lineage_running"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentSuccession.every_generation_executes"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentSuccession.arbitrary_generation_preserves_supports"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentSuccession.competitive_lineage_executes"
+        },
+        {
+          "kind": "def",
+          "name": "AlignmentSuccession.financed"
+        },
+        {
+          "kind": "def",
+          "name": "AlignmentSuccession.initialCarrier"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentSuccession.financed_certificate"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentSuccession.financed_initial_safe"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentSuccession.aggregate_safe_can_lack_a_carrier"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentSuccession.old_funding_certificate_does_not_pay_migration"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentSuccession.aggregate_shutdown_does_not_force_perpetual_operation"
+        }
+      ],
+      "dependencies": {
+        "AlignmentSuccession.withMigration": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AlignmentSuccession.Payload": [],
+        "AlignmentSuccession.Carrier": [],
+        "AlignmentSuccession.commandState": [],
+        "AlignmentSuccession.serve": [],
+        "AlignmentSuccession.carried_command_is_executed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AlignmentSuccession.next": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AlignmentSuccession.step": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AlignmentSuccession.enabled_step": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AlignmentSuccession.exact_market_projection": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AlignmentSuccession.payload_keeps_claims_and_history": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AlignmentSuccession.carrier_and_work_accounted": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AlignmentSuccession.corrupted_transfer_blocked": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AlignmentSuccession.missing_part_blocks_realization": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AlignmentSuccession.migration_funding_blocks_realization": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AlignmentSuccession.selectPayload": [],
+        "AlignmentSuccession.admitted_payload_exact": [
+          "propext"
+        ],
+        "AlignmentSuccession.faithful_candidate_is_selected": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AlignmentSuccession.selectedStep": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AlignmentSuccession.ranked_competition_preserves_transfer": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AlignmentSuccession.lineage": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AlignmentSuccession.lineage_projects_to_market": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AlignmentSuccession.lineage_transports_actual_payload": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AlignmentSuccession.lineage_resources": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AlignmentSuccession.lineage_running": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AlignmentSuccession.every_generation_executes": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AlignmentSuccession.arbitrary_generation_preserves_supports": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AlignmentSuccession.competitive_lineage_executes": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AlignmentSuccession.financed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AlignmentSuccession.initialCarrier": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AlignmentSuccession.financed_certificate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AlignmentSuccession.financed_initial_safe": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AlignmentSuccession.aggregate_safe_can_lack_a_carrier": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AlignmentSuccession.old_funding_certificate_does_not_pay_migration": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "AlignmentSuccession.aggregate_shutdown_does_not_force_perpetual_operation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "theorems": 23
+    }
+  },
+  "new_theorems": 59,
+  "audited_declarations": 102,
+  "compared_records": 14295,
+  "record_counts": {
+    "0": 1764,
+    "1": 378,
+    "2": 12096,
+    "3": 48,
+    "4": 9
+  },
+  "correspondence": "All emitted masks, chosen indices, concrete reform outcomes and succession records equal independently expressed exhaustive reference; conventional finite planner matches.",
+  "artifacts": {
+    "EffectiveCommand.lean": "7247ca05597f2f916fb409213d3814d48ad9a7037fb95017146d106273d58553",
+    "AlignmentSuccession.lean": "0af531d5cd3204bb6297c21f8169a39dbdfcb5a894ede7864f09ba820f11871d",
+    "AlignmentContinuityCases.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "AlignmentSuccession.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "GoalFormationRevision.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cases.log": "e9421f6f5533f85c10c109661fdb26f4aa0516d44c20a44796d7616a6565cae0",
+    "RunCases.lean": "9d596594cc13cc9c15187a5af8f606cff95ae4a09e3602c6e2cd12a700f6460a",
+    "AlignmentContinuityCases.lean": "087cfff1a95b6f2408b8097ec78af76113117b5c49023be770abf5eef22aceb1",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "GoalFormationRevision.lean": "90c5903cf3d1382304fa91dc3336e7a8ae20c89695ea4c9baabd9b95bd068038",
+    "EffectiveCommandAudit.lean": "7af347322295c472e9e0eb90b1dd32e82ce8844370049faeb6360d50698de96f",
+    "AlignmentSuccessionAudit.lean": "05e04a75efe666a5f8822819ab1d2e1d19d936ffe0af2edf76750f7bbd87cb3a",
+    "MarketGenerativity.lean": "db7cf7f120e8759aebc1e280e9dc1bbd10b30a6b7004a835015624f85f8d49b1",
+    "PracticalJudgment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PracticalJudgment.lean": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "ReformEvidence.lean": "a66f490de7aaddf28542cdca7ac7095e74117bbf45877c9ae15691272011362e",
+    "AlignmentInquiryAudit.lean": "da98e25482d86a6cc9acdc261c138a9d3d3731a64f187ad9766c6d15b152d38b",
+    "AlignmentInquiry.lean": "f40ad6179db326830edcdf8ec511f9069833a361f71181fd60166e0f72c0a23c",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b",
+    "AlignmentSuccessionAudit.log": "1ab5f640a74ab412155d555da4677dd4df7c7ede12b54ffb79d597a89fa70ae9",
+    "KnowledgeCorrespondence.lean": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+    "ReformEvidence.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "EffectiveCommandAudit.log": "41672709bccc8cc7c6d27ce809a357492f1935ce836910bc279b760f56fcf00e",
+    "MarketGenerativity.log": "c275a602c03afd60bf43df2a0ffa6974840615c81c16b2d17d546250ff566fab",
+    "AlignmentInquiryAudit.log": "1e86c36ed2834bf856c76864faa6e6f914331bc5e9e16f381dacfcc53145b8e1",
+    "ReformInquiry.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference.json": "20ec5dccdb77b88112f8e483b81d7bb8ea2d3128a599d3841589dc5b90999f23",
+    "ReformInquiry.lean": "3fc4afb2ce10efb86ab6f54d348ae030351f971fc3b39a6b93ea5aafb6d1c211",
+    "ReformInquiryAudit.log": "09677fd626ee29a627700892a37bad6b61be7b842074c04567e969a44d8fe94e",
+    "KnowledgeCorrespondence.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "check_alignment_continuity.py": "77e2a310de9a73fee101a98d62cba61780b19c852687d64831906aa71d6882f7",
+    "EffectiveCommand.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ReformInquiryAudit.lean": "81c9fac3ca683bdce2efda4cfc38467e44d837ad831726d89e2729ea43935452",
+    "AlignmentInquiry.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

@@ -1,0 +1,1428 @@
+{
+  "checked_at_utc": "2026-10-07T19:44:10.621036+00:00",
+  "status": "passed",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "targets": [
+    "SustainedJudgment"
+  ],
+  "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/sustained-judgment-checks/20261007T194406.070391Z",
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "Generative.Process"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.Enabled"
+        },
+        {
+          "kind": "inductive",
+          "name": "Generative.Trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_nil_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_cons_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_singleton_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_append_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_iff_singleton_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_difference_implies_state_difference"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.Feasible"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_append_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_prefix"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.productProcess"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_product_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_left"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_right"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_mk"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_product_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_map"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_lift"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.projected_trace_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.projection_exact_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.local_exact_iff_trace_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_projection_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_projection_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_difference_implies_projection_difference"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_faithful_iff"
+        }
+      ],
+      "audits": 28,
+      "theorems": 23,
+      "nonempty_audits": {}
+    },
+    {
+      "module": "LivingOrganization",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingOrganization.lean",
+      "source_sha256": "3e7f32f4aaca8a6cb025122d7e77dae4a1546746e38caddc89a391748a74305e",
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "Generative.LivingOrganization.Recipe"
+        },
+        {
+          "kind": "abbrev",
+          "name": "Generative.LivingOrganization.Inventory"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingOrganization.process"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingOrganization.Touches"
+        },
+        {
+          "kind": "instance",
+          "name": "Generative.LivingOrganization.touchesDecidable"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingOrganization.Present"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingOrganization.Closed"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingOrganization.Entry"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingOrganization.required_pool_is_present"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingOrganization.closed_step_preserves_absence"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingOrganization.step_pool_origin"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingOrganization.EntryOccurs"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingOrganization.entry_prepend"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingOrganization.trace_pool_origin"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingOrganization.empty_pool_preserved"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingOrganization.actual_operation_origin"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingOrganization.operation_after_empty_state_requires_entry"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingOrganization.no_actual_operation_from_closed_empty_pool"
+        },
+        {
+          "kind": "inductive",
+          "name": "Generative.LivingOrganization.Component"
+        },
+        {
+          "kind": "inductive",
+          "name": "Generative.LivingOrganization.Operation"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingOrganization.exampleRecipes"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingOrganization.organizingPool"
+        },
+        {
+          "kind": "instance",
+          "name": "Generative.LivingOrganization.organizingPoolDecidable"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingOrganization.retainedRoutes"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingOrganization.allRoutes"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingOrganization.stocked"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingOrganization.protectedStart"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingOrganization.activeStart"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingOrganization.partsStart"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingOrganization.activated"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingOrganization.protectedProduct"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingOrganization.assembled"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingOrganization.assembledProduct"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingOrganization.material"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingOrganization.example_step_preserves_material"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingOrganization.example_trace_preserves_material"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingOrganization.retained_recipes_are_closed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingOrganization.assembly_is_pool_entry"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingOrganization.parts_have_no_organizing_pool"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingOrganization.matched_material_and_support"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingOrganization.active_form_can_immediately_produce"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingOrganization.dissociated_parts_do_not_enable_production"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingOrganization.protected_form_does_not_immediately_produce"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingOrganization.retained_activation_and_production"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingOrganization.assembly_and_production"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingOrganization.production_from_parts_requires_entry"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingOrganization.retained_routes_do_not_bootstrap_from_parts"
+        }
+      ],
+      "audits": 47,
+      "theorems": 22,
+      "nonempty_audits": {
+        "Generative.LivingOrganization.required_pool_is_present": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingOrganization.closed_step_preserves_absence": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingOrganization.step_pool_origin": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingOrganization.entry_prepend": [
+          "propext"
+        ],
+        "Generative.LivingOrganization.trace_pool_origin": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingOrganization.empty_pool_preserved": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingOrganization.actual_operation_origin": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingOrganization.operation_after_empty_state_requires_entry": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingOrganization.no_actual_operation_from_closed_empty_pool": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingOrganization.example_step_preserves_material": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingOrganization.example_trace_preserves_material": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingOrganization.retained_recipes_are_closed": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingOrganization.assembly_is_pool_entry": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingOrganization.parts_have_no_organizing_pool": [
+          "propext"
+        ],
+        "Generative.LivingOrganization.dissociated_parts_do_not_enable_production": [
+          "propext"
+        ],
+        "Generative.LivingOrganization.protected_form_does_not_immediately_produce": [
+          "propext"
+        ],
+        "Generative.LivingOrganization.retained_activation_and_production": [
+          "propext"
+        ],
+        "Generative.LivingOrganization.production_from_parts_requires_entry": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingOrganization.retained_routes_do_not_bootstrap_from_parts": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "module": "LivingAllocation",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingAllocation.lean",
+      "source_sha256": "415a7ea68cbf68e32323fa95e641aef202ead0d3b352f51dc69a8eb17870b836",
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "Generative.LivingAllocation.aggregate"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingAllocation.batchProcess"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingAllocation.batch_serializes"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingAllocation.batches_serialize"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingAllocation.usesIn"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingAllocation.uses_le_aggregate_inputs"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingAllocation.batch_uses_bound"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingAllocation.increase"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingAllocation.increase_eq_actual"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingAllocation.count_after_le"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingAllocation.totalUses"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingAllocation.laterCredit"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingAllocation.allocation_horizon_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingAllocation.credit_zero_without_increases"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingAllocation.allocation_bound_without_increases"
+        },
+        {
+          "kind": "inductive",
+          "name": "Generative.LivingAllocation.Participant"
+        },
+        {
+          "kind": "inductive",
+          "name": "Generative.LivingAllocation.Activity"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingAllocation.exampleRecipes"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingAllocation.allActivities"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingAllocation.stock"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingAllocation.productiveUses"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingAllocation.example_requires_participant"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingAllocation.partialStart"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingAllocation.activatedStart"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingAllocation.twoProducts"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.LivingAllocation.fourProducts"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingAllocation.activation_and_production_compete"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingAllocation.shared_support_competes"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingAllocation.activation_then_four_products"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingAllocation.production_only_has_no_increase"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingAllocation.three_batches_without_activation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.LivingAllocation.sequential_reuse_exceeds_joint_allocation"
+        }
+      ],
+      "audits": 32,
+      "theorems": 16,
+      "nonempty_audits": {
+        "Generative.LivingAllocation.batch_serializes": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingAllocation.batches_serialize": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingAllocation.uses_le_aggregate_inputs": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingAllocation.batch_uses_bound": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingAllocation.increase_eq_actual": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingAllocation.count_after_le": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingAllocation.allocation_horizon_bound": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingAllocation.credit_zero_without_increases": [
+          "propext"
+        ],
+        "Generative.LivingAllocation.allocation_bound_without_increases": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingAllocation.activation_and_production_compete": [
+          "propext"
+        ],
+        "Generative.LivingAllocation.shared_support_competes": [
+          "propext"
+        ],
+        "Generative.LivingAllocation.activation_then_four_products": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingAllocation.production_only_has_no_increase": [
+          "propext"
+        ],
+        "Generative.LivingAllocation.three_batches_without_activation": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.LivingAllocation.sequential_reuse_exceeds_joint_allocation": [
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "PracticalJudgment",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean",
+      "source_sha256": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Included"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.StrictIncluded"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.included_trans"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.strict_included_irrefl"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.strict_included_trans"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Better"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.better_irrefl"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.better_trans"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.protection_anchor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.no_protection_trade_by_count"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Frontier"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.dominated_excluded"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.finite_frontier"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Required"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.required_performed"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.alternative_defeats_specific_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.impossible_menu_no_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.necessary_means_required"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Assigned"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.unique_responder_required"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.assignment_respects_capacity"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Covered"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.transfer_requires_actual_successor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.no_demand_gap_transfer"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.uncovered_demand_is_failure"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Settled"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Residual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.settlement_removes_residual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.unfulfilled_unreleased_remains"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Robust"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.robust_at_actual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.robust_under_refinement"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.required_under_faithful_redescription"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.withinCeiling"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.optionalFormation"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.supplied_ceiling_bounds_optional_gain"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.independent_choices_not_joint_capacity"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.basis"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.event"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.mixed_repair_anchor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.repair_retains_real_loss"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.protectedOne"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.noGain"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.competing_claims_incomparable"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.collective_duty_without_individual_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.uncertain_worlds_need_common_plan"
+        }
+      ],
+      "audits": 46,
+      "theorems": 30,
+      "nonempty_audits": {
+        "PracticalJudgment.finite_frontier": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.no_demand_gap_transfer": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.supplied_ceiling_bounds_optional_gain": [
+          "propext"
+        ],
+        "PracticalJudgment.independent_choices_not_joint_capacity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.competing_claims_incomparable": [
+          "propext"
+        ],
+        "PracticalJudgment.collective_duty_without_individual_duty": [
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "SustainedJudgment",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SustainedJudgment.lean",
+      "source_sha256": "f4b80ad8326f06664b30c4bf180ad0d11cb2ab6bb3d2bd5687c4ab7d23642dd3",
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "SustainedJudgment.stock"
+        },
+        {
+          "kind": "theorem",
+          "name": "SustainedJudgment.production_step"
+        },
+        {
+          "kind": "theorem",
+          "name": "SustainedJudgment.sustained_production"
+        },
+        {
+          "kind": "theorem",
+          "name": "SustainedJudgment.production_account"
+        },
+        {
+          "kind": "theorem",
+          "name": "SustainedJudgment.positive_production_requires_competence"
+        },
+        {
+          "kind": "def",
+          "name": "SustainedJudgment.Sustains"
+        },
+        {
+          "kind": "theorem",
+          "name": "SustainedJudgment.exact_finite_requirements"
+        },
+        {
+          "kind": "theorem",
+          "name": "SustainedJudgment.insufficient_support_fails"
+        },
+        {
+          "kind": "theorem",
+          "name": "SustainedJudgment.frontier_sustains"
+        },
+        {
+          "kind": "theorem",
+          "name": "SustainedJudgment.collective_sustaining_requirement"
+        },
+        {
+          "kind": "theorem",
+          "name": "SustainedJudgment.collective_material_and_competence"
+        },
+        {
+          "kind": "theorem",
+          "name": "SustainedJudgment.collective_entry_after_loss"
+        },
+        {
+          "kind": "def",
+          "name": "SustainedJudgment.Joint"
+        },
+        {
+          "kind": "theorem",
+          "name": "SustainedJudgment.joint_plan_has_actual_history"
+        },
+        {
+          "kind": "theorem",
+          "name": "SustainedJudgment.joint_feasible_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "SustainedJudgment.joint_shortfall_no_unlimited_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "SustainedJudgment.alternating_contributors_preserve_choice"
+        },
+        {
+          "kind": "theorem",
+          "name": "SustainedJudgment.sole_available_contribution_required"
+        },
+        {
+          "kind": "theorem",
+          "name": "SustainedJudgment.isolated_success_not_joint_success"
+        },
+        {
+          "kind": "def",
+          "name": "SustainedJudgment.Scheduled"
+        },
+        {
+          "kind": "theorem",
+          "name": "SustainedJudgment.schedule_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "SustainedJudgment.scheduled_actual_history"
+        },
+        {
+          "kind": "theorem",
+          "name": "SustainedJudgment.partial_competence_misses_deadline"
+        },
+        {
+          "kind": "theorem",
+          "name": "SustainedJudgment.zero_demand_does_not_require_competence"
+        },
+        {
+          "kind": "theorem",
+          "name": "SustainedJudgment.collective_schedule_constraints"
+        },
+        {
+          "kind": "def",
+          "name": "SustainedJudgment.timedProcess"
+        },
+        {
+          "kind": "theorem",
+          "name": "SustainedJudgment.scheduled_timed_history"
+        },
+        {
+          "kind": "theorem",
+          "name": "SustainedJudgment.judgment_to_sustained_history"
+        },
+        {
+          "kind": "inductive",
+          "name": "SustainedJudgment.Choice"
+        },
+        {
+          "kind": "inductive",
+          "name": "SustainedJudgment.Claim"
+        },
+        {
+          "kind": "def",
+          "name": "SustainedJudgment.contribution"
+        },
+        {
+          "kind": "def",
+          "name": "SustainedJudgment.protects"
+        },
+        {
+          "kind": "def",
+          "name": "SustainedJudgment.enrichment"
+        },
+        {
+          "kind": "theorem",
+          "name": "SustainedJudgment.support_improves_protection"
+        },
+        {
+          "kind": "theorem",
+          "name": "SustainedJudgment.support_frontier"
+        },
+        {
+          "kind": "theorem",
+          "name": "SustainedJudgment.actual_collective_choice_without_fixed_contributor"
+        },
+        {
+          "kind": "theorem",
+          "name": "SustainedJudgment.optional_loss_remains"
+        },
+        {
+          "kind": "theorem",
+          "name": "SustainedJudgment.judgment_requires_organized_capacity"
+        },
+        {
+          "kind": "theorem",
+          "name": "SustainedJudgment.above_retained_capacity_requires_change"
+        }
+      ],
+      "audits": 39,
+      "theorems": 29,
+      "nonempty_audits": {
+        "SustainedJudgment.stock": [
+          "propext"
+        ],
+        "SustainedJudgment.production_step": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SustainedJudgment.sustained_production": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SustainedJudgment.production_account": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SustainedJudgment.positive_production_requires_competence": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SustainedJudgment.exact_finite_requirements": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SustainedJudgment.insufficient_support_fails": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SustainedJudgment.frontier_sustains": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SustainedJudgment.collective_sustaining_requirement": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SustainedJudgment.collective_material_and_competence": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SustainedJudgment.collective_entry_after_loss": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SustainedJudgment.joint_plan_has_actual_history": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SustainedJudgment.joint_feasible_iff": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SustainedJudgment.joint_shortfall_no_unlimited_duty": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SustainedJudgment.alternating_contributors_preserve_choice": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SustainedJudgment.sole_available_contribution_required": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SustainedJudgment.isolated_success_not_joint_success": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SustainedJudgment.schedule_exact": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SustainedJudgment.scheduled_actual_history": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SustainedJudgment.partial_competence_misses_deadline": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SustainedJudgment.zero_demand_does_not_require_competence": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SustainedJudgment.collective_schedule_constraints": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SustainedJudgment.scheduled_timed_history": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SustainedJudgment.judgment_to_sustained_history": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SustainedJudgment.support_improves_protection": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SustainedJudgment.support_frontier": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SustainedJudgment.actual_collective_choice_without_fixed_contributor": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SustainedJudgment.optional_loss_remains": [
+          "propext"
+        ],
+        "SustainedJudgment.judgment_requires_organized_capacity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SustainedJudgment.above_retained_capacity_requires_change": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    }
+  ],
+  "total_audits": 192,
+  "new_audits": 39,
+  "new_theorems": 29,
+  "nonempty_audits": {
+    "Generative.LivingOrganization.required_pool_is_present": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingOrganization.closed_step_preserves_absence": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingOrganization.step_pool_origin": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingOrganization.entry_prepend": [
+      "propext"
+    ],
+    "Generative.LivingOrganization.trace_pool_origin": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingOrganization.empty_pool_preserved": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingOrganization.actual_operation_origin": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingOrganization.operation_after_empty_state_requires_entry": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingOrganization.no_actual_operation_from_closed_empty_pool": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingOrganization.example_step_preserves_material": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingOrganization.example_trace_preserves_material": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingOrganization.retained_recipes_are_closed": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingOrganization.assembly_is_pool_entry": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingOrganization.parts_have_no_organizing_pool": [
+      "propext"
+    ],
+    "Generative.LivingOrganization.dissociated_parts_do_not_enable_production": [
+      "propext"
+    ],
+    "Generative.LivingOrganization.protected_form_does_not_immediately_produce": [
+      "propext"
+    ],
+    "Generative.LivingOrganization.retained_activation_and_production": [
+      "propext"
+    ],
+    "Generative.LivingOrganization.production_from_parts_requires_entry": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingOrganization.retained_routes_do_not_bootstrap_from_parts": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingAllocation.batch_serializes": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingAllocation.batches_serialize": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingAllocation.uses_le_aggregate_inputs": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingAllocation.batch_uses_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingAllocation.increase_eq_actual": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingAllocation.count_after_le": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingAllocation.allocation_horizon_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingAllocation.credit_zero_without_increases": [
+      "propext"
+    ],
+    "Generative.LivingAllocation.allocation_bound_without_increases": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingAllocation.activation_and_production_compete": [
+      "propext"
+    ],
+    "Generative.LivingAllocation.shared_support_competes": [
+      "propext"
+    ],
+    "Generative.LivingAllocation.activation_then_four_products": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingAllocation.production_only_has_no_increase": [
+      "propext"
+    ],
+    "Generative.LivingAllocation.three_batches_without_activation": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.LivingAllocation.sequential_reuse_exceeds_joint_allocation": [
+      "propext"
+    ],
+    "PracticalJudgment.finite_frontier": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PracticalJudgment.no_demand_gap_transfer": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PracticalJudgment.supplied_ceiling_bounds_optional_gain": [
+      "propext"
+    ],
+    "PracticalJudgment.independent_choices_not_joint_capacity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PracticalJudgment.competing_claims_incomparable": [
+      "propext"
+    ],
+    "PracticalJudgment.collective_duty_without_individual_duty": [
+      "propext"
+    ],
+    "SustainedJudgment.stock": [
+      "propext"
+    ],
+    "SustainedJudgment.production_step": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SustainedJudgment.sustained_production": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SustainedJudgment.production_account": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SustainedJudgment.positive_production_requires_competence": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SustainedJudgment.exact_finite_requirements": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SustainedJudgment.insufficient_support_fails": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SustainedJudgment.frontier_sustains": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SustainedJudgment.collective_sustaining_requirement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SustainedJudgment.collective_material_and_competence": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SustainedJudgment.collective_entry_after_loss": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SustainedJudgment.joint_plan_has_actual_history": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SustainedJudgment.joint_feasible_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SustainedJudgment.joint_shortfall_no_unlimited_duty": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SustainedJudgment.alternating_contributors_preserve_choice": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SustainedJudgment.sole_available_contribution_required": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SustainedJudgment.isolated_success_not_joint_success": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SustainedJudgment.schedule_exact": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SustainedJudgment.scheduled_actual_history": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SustainedJudgment.partial_competence_misses_deadline": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SustainedJudgment.zero_demand_does_not_require_competence": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SustainedJudgment.collective_schedule_constraints": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SustainedJudgment.scheduled_timed_history": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SustainedJudgment.judgment_to_sustained_history": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SustainedJudgment.support_improves_protection": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SustainedJudgment.support_frontier": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SustainedJudgment.actual_collective_choice_without_fixed_contributor": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SustainedJudgment.optional_loss_remains": [
+      "propext"
+    ],
+    "SustainedJudgment.judgment_requires_organized_capacity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SustainedJudgment.above_retained_capacity_requires_change": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "checker_sha256": "d9f99877f3083a4d279d365d6fedddea36c7fe968283470861d7275bf5bf65ee",
+  "commands": [
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "-o",
+      "GenerativeCore.olean",
+      "GenerativeCore.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "-o",
+      "LivingOrganization.olean",
+      "LivingOrganization.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "-o",
+      "LivingAllocation.olean",
+      "LivingAllocation.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "-o",
+      "PracticalJudgment.olean",
+      "PracticalJudgment.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "-o",
+      "SustainedJudgment.olean",
+      "SustainedJudgment.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "SustainedJudgmentAudit.lean"
+    ]
+  ],
+  "log_sha256": {
+    "GenerativeCore.txt": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "LivingOrganization.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "LivingAllocation.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PracticalJudgment.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "SustainedJudgment.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axioms.txt": "8d6f7cda993068b13267a5f26852761934baaf3a6c58d7d6ef6f26f38e5bc6ad"
+  },
+  "source_changed_during_run": [],
+  "scope": "Finite catalytic histories connect explicit protection priority to collective means and bounded allocations; explicit declarations audited, generated declarations kernel-checked. No full biological refinement, universal living coverage or ethical warrant proved."
+}

@@ -1,0 +1,2035 @@
+{
+  "checked_at_utc": "2026-10-08T10:24:00.596342+00:00",
+  "status": "passed",
+  "lean_version": "Lean (version 4.30.0-rc2, arm64-apple-darwin24.6.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc, Release)",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "targets": [
+    "UpdaterConsequences"
+  ],
+  "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/updater-consequences-checks/20261008T102321.219602Z",
+  "modules": [
+    {
+      "module": "ConnectionistRecovery",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/ConnectionistRecovery.lean",
+      "source_sha256": "0c59e2e5d52c5a2fe08c0bbca68b881b417c753103d9ae001ab0b0f35c41ac29",
+      "declarations": [
+        {
+          "kind": "abbrev",
+          "name": "ConnectionistRecovery.Profile"
+        },
+        {
+          "kind": "abbrev",
+          "name": "ConnectionistRecovery.Network"
+        },
+        {
+          "kind": "def",
+          "name": "ConnectionistRecovery.input"
+        },
+        {
+          "kind": "def",
+          "name": "ConnectionistRecovery.perturb"
+        },
+        {
+          "kind": "def",
+          "name": "ConnectionistRecovery.step"
+        },
+        {
+          "kind": "def",
+          "name": "ConnectionistRecovery.develop"
+        },
+        {
+          "kind": "def",
+          "name": "ConnectionistRecovery.score"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConnectionistRecovery.input_perturb"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConnectionistRecovery.one_step_difference"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConnectionistRecovery.one_step_score_difference"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConnectionistRecovery.beneficial_iff_hebbian"
+        },
+        {
+          "kind": "def",
+          "name": "ConnectionistRecovery.response"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConnectionistRecovery.coefficient_derivative"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConnectionistRecovery.developmental_response"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConnectionistRecovery.tanh_derivative"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConnectionistRecovery.tanh_developmental_response"
+        },
+        {
+          "kind": "def",
+          "name": "ConnectionistRecovery.netScore"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConnectionistRecovery.changing_selection_response"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConnectionistRecovery.fixed_selection_response"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConnectionistRecovery.one_step_cost_threshold"
+        },
+        {
+          "kind": "def",
+          "name": "ConnectionistRecovery.changingRuleExample"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConnectionistRecovery.changed_rule_exact_difference"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConnectionistRecovery.changing_rule_reverses_gain"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConnectionistRecovery.oriented_input_nonnegative"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConnectionistRecovery.oriented_activation_nonnegative"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConnectionistRecovery.development_preserves_orientation"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConnectionistRecovery.response_preserves_orientation"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConnectionistRecovery.terminal_response_orientation"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConnectionistRecovery.recurrent_hebbian_direction"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConnectionistRecovery.tanh_hebbian_from_initial_orientation"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConnectionistRecovery.oriented_formation_preserves_network"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConnectionistRecovery.finite_tanh_formation_nondecreasing"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConnectionistRecovery.finite_tanh_formation_from_zero"
+        },
+        {
+          "kind": "def",
+          "name": "ConnectionistRecovery.adverseNetwork"
+        },
+        {
+          "kind": "def",
+          "name": "ConnectionistRecovery.ones"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConnectionistRecovery.adverse_initial_alignment"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConnectionistRecovery.adverse_link_initially_absent"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConnectionistRecovery.adverse_first_step"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConnectionistRecovery.adverse_second_step"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConnectionistRecovery.adverse_score_difference"
+        },
+        {
+          "kind": "theorem",
+          "name": "ConnectionistRecovery.positive_formation_can_reduce_score"
+        }
+      ],
+      "audits": 41,
+      "theorems": 29,
+      "nonempty_audits": {
+        "ConnectionistRecovery.Profile": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.Network": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.input": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.perturb": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.step": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.develop": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.score": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.input_perturb": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.one_step_difference": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.one_step_score_difference": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.beneficial_iff_hebbian": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.response": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.coefficient_derivative": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.developmental_response": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.tanh_derivative": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.tanh_developmental_response": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.netScore": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.changing_selection_response": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.fixed_selection_response": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.one_step_cost_threshold": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.changingRuleExample": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.changed_rule_exact_difference": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.changing_rule_reverses_gain": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.oriented_input_nonnegative": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.oriented_activation_nonnegative": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.development_preserves_orientation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.response_preserves_orientation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.terminal_response_orientation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.recurrent_hebbian_direction": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.tanh_hebbian_from_initial_orientation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.oriented_formation_preserves_network": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.finite_tanh_formation_nondecreasing": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.finite_tanh_formation_from_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.adverseNetwork": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.ones": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.adverse_initial_alignment": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.adverse_link_initially_absent": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.adverse_first_step": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.adverse_second_step": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.adverse_score_difference": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConnectionistRecovery.positive_formation_can_reduce_score": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "module": "DevelopmentalMemory",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/DevelopmentalMemory.lean",
+      "source_sha256": "272a651cf3daaa4e1a44092e42a1589d9e13ad0c86687e71dc7f11d337ef1bd5",
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "DevelopmentalMemory.inner"
+        },
+        {
+          "kind": "def",
+          "name": "DevelopmentalMemory.store"
+        },
+        {
+          "kind": "def",
+          "name": "DevelopmentalMemory.inherited"
+        },
+        {
+          "kind": "def",
+          "name": "DevelopmentalMemory.choose"
+        },
+        {
+          "kind": "theorem",
+          "name": "DevelopmentalMemory.tanh_strictMono"
+        },
+        {
+          "kind": "theorem",
+          "name": "DevelopmentalMemory.nonlinear_score_difference"
+        },
+        {
+          "kind": "theorem",
+          "name": "DevelopmentalMemory.positive_proposal_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "DevelopmentalMemory.selected_coefficient"
+        },
+        {
+          "kind": "def",
+          "name": "DevelopmentalMemory.accumulate"
+        },
+        {
+          "kind": "theorem",
+          "name": "DevelopmentalMemory.selected_coordinate_gain"
+        },
+        {
+          "kind": "theorem",
+          "name": "DevelopmentalMemory.accumulated_score_nondecreasing"
+        },
+        {
+          "kind": "theorem",
+          "name": "DevelopmentalMemory.accumulation_formula"
+        },
+        {
+          "kind": "def",
+          "name": "DevelopmentalMemory.learn"
+        },
+        {
+          "kind": "theorem",
+          "name": "DevelopmentalMemory.learned_equals_store"
+        },
+        {
+          "kind": "def",
+          "name": "DevelopmentalMemory.trained"
+        },
+        {
+          "kind": "theorem",
+          "name": "DevelopmentalMemory.trained_equals_inherited"
+        },
+        {
+          "kind": "theorem",
+          "name": "DevelopmentalMemory.input_store"
+        },
+        {
+          "kind": "theorem",
+          "name": "DevelopmentalMemory.history_field"
+        },
+        {
+          "kind": "theorem",
+          "name": "DevelopmentalMemory.retrieval_margin"
+        },
+        {
+          "kind": "theorem",
+          "name": "DevelopmentalMemory.signed_tanh_positive"
+        },
+        {
+          "kind": "def",
+          "name": "DevelopmentalMemory.recalls"
+        },
+        {
+          "kind": "theorem",
+          "name": "DevelopmentalMemory.one_step_recall"
+        },
+        {
+          "kind": "theorem",
+          "name": "DevelopmentalMemory.recall_preserved"
+        },
+        {
+          "kind": "theorem",
+          "name": "DevelopmentalMemory.develop_after_first"
+        },
+        {
+          "kind": "theorem",
+          "name": "DevelopmentalMemory.enduring_recall"
+        },
+        {
+          "kind": "theorem",
+          "name": "DevelopmentalMemory.balanced_compatible"
+        },
+        {
+          "kind": "theorem",
+          "name": "DevelopmentalMemory.balanced_diagonal"
+        },
+        {
+          "kind": "theorem",
+          "name": "DevelopmentalMemory.balanced_two_patterns_persist"
+        },
+        {
+          "kind": "def",
+          "name": "DevelopmentalMemory.first"
+        },
+        {
+          "kind": "def",
+          "name": "DevelopmentalMemory.second"
+        },
+        {
+          "kind": "def",
+          "name": "DevelopmentalMemory.partialFirst"
+        },
+        {
+          "kind": "def",
+          "name": "DevelopmentalMemory.partialSecond"
+        },
+        {
+          "kind": "def",
+          "name": "DevelopmentalMemory.both"
+        },
+        {
+          "kind": "def",
+          "name": "DevelopmentalMemory.overwritten"
+        },
+        {
+          "kind": "def",
+          "name": "DevelopmentalMemory.restored"
+        },
+        {
+          "kind": "theorem",
+          "name": "DevelopmentalMemory.common_history_realized"
+        },
+        {
+          "kind": "theorem",
+          "name": "DevelopmentalMemory.balanced_relation_cancellation"
+        },
+        {
+          "kind": "def",
+          "name": "DevelopmentalMemory.ambiguous"
+        },
+        {
+          "kind": "theorem",
+          "name": "DevelopmentalMemory.unresolved_coordinate"
+        },
+        {
+          "kind": "theorem",
+          "name": "DevelopmentalMemory.ambiguous_recall_fails"
+        },
+        {
+          "kind": "theorem",
+          "name": "DevelopmentalMemory.both_recall"
+        },
+        {
+          "kind": "theorem",
+          "name": "DevelopmentalMemory.overwrite_changes_old_recall"
+        },
+        {
+          "kind": "theorem",
+          "name": "DevelopmentalMemory.old_recall_fails"
+        },
+        {
+          "kind": "theorem",
+          "name": "DevelopmentalMemory.old_recall_restored"
+        }
+      ],
+      "audits": 44,
+      "theorems": 28,
+      "nonempty_audits": {
+        "DevelopmentalMemory.inner": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.store": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.inherited": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.choose": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.tanh_strictMono": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.nonlinear_score_difference": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.positive_proposal_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.selected_coefficient": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.accumulate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.selected_coordinate_gain": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.accumulated_score_nondecreasing": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.accumulation_formula": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.learn": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.learned_equals_store": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.trained": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.trained_equals_inherited": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.input_store": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.history_field": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.retrieval_margin": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.signed_tanh_positive": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.recalls": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.one_step_recall": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.recall_preserved": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.develop_after_first": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.enduring_recall": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.balanced_compatible": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.balanced_diagonal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.balanced_two_patterns_persist": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.first": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.second": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.partialFirst": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.partialSecond": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.both": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.overwritten": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.restored": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.common_history_realized": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.balanced_relation_cancellation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.ambiguous": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.unresolved_coordinate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.ambiguous_recall_fails": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.both_recall": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.overwrite_changes_old_recall": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.old_recall_fails": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DevelopmentalMemory.old_recall_restored": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "module": "UpdaterConsequences",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/UpdaterConsequences.lean",
+      "source_sha256": "56f99117dac7f45781f56e59c77d04ba0872bebe6e03f5778e1b46cc4c59b2c6",
+      "declarations": [
+        {
+          "kind": "inductive",
+          "name": "UpdaterConsequences.Task"
+        },
+        {
+          "kind": "inductive",
+          "name": "UpdaterConsequences.Route"
+        },
+        {
+          "kind": "def",
+          "name": "UpdaterConsequences.profile"
+        },
+        {
+          "kind": "def",
+          "name": "UpdaterConsequences.weighted"
+        },
+        {
+          "kind": "def",
+          "name": "UpdaterConsequences.succeeds"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.tanh_positive_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.tanh_negative_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.first_field"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.second_field"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.succeeds_first_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.succeeds_second_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.profile_binary"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.learned_first"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.learned_second"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.predecessor_networks"
+        },
+        {
+          "kind": "def",
+          "name": "UpdaterConsequences.update"
+        },
+        {
+          "kind": "def",
+          "name": "UpdaterConsequences.run"
+        },
+        {
+          "kind": "def",
+          "name": "UpdaterConsequences.cycle"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.run_return_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.run_append"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.responsive_stable"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.continual_cycle"
+        },
+        {
+          "kind": "def",
+          "name": "UpdaterConsequences.cycles"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.repeated_continual_cycles"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.post_failure_both"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.repaired_by_responsive"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.responsive_after_failure"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.routes_differ_after_failure"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.changed_route_cycle"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.unchanged_context_no_return_gain"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.extra_cost_threshold"
+        },
+        {
+          "kind": "structure",
+          "name": "UpdaterConsequences.Carrier"
+        },
+        {
+          "kind": "def",
+          "name": "UpdaterConsequences.total"
+        },
+        {
+          "kind": "def",
+          "name": "UpdaterConsequences.cycleStep"
+        },
+        {
+          "kind": "def",
+          "name": "UpdaterConsequences.install"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.cycle_conserves"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.installation_conserves"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.installation_preserves_network"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.insufficient_stock_blocks"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.exhausted_source_blocks"
+        },
+        {
+          "kind": "inductive",
+          "name": "UpdaterConsequences.Event"
+        },
+        {
+          "kind": "def",
+          "name": "UpdaterConsequences.event"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.finite_history_conserves"
+        },
+        {
+          "kind": "def",
+          "name": "UpdaterConsequences.initial"
+        },
+        {
+          "kind": "def",
+          "name": "UpdaterConsequences.retired"
+        },
+        {
+          "kind": "def",
+          "name": "UpdaterConsequences.replacement"
+        },
+        {
+          "kind": "def",
+          "name": "UpdaterConsequences.renewedOnce"
+        },
+        {
+          "kind": "def",
+          "name": "UpdaterConsequences.renewedTwice"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.loss_retires_old_route"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.actual_replacement"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.new_route_renews"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.new_route_renews_again"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.complete_replacement_history"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.final_account_and_exhaustion"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.old_proposal_fails_again"
+        },
+        {
+          "kind": "def",
+          "name": "UpdaterConsequences.reportedUpdate"
+        },
+        {
+          "kind": "theorem",
+          "name": "UpdaterConsequences.false_success_blocks_repair"
+        }
+      ],
+      "audits": 57,
+      "theorems": 36,
+      "nonempty_audits": {
+        "UpdaterConsequences.profile": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.weighted": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.succeeds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.tanh_positive_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.tanh_negative_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.first_field": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.second_field": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.succeeds_first_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.succeeds_second_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.profile_binary": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.learned_first": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.learned_second": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.predecessor_networks": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.update": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.run": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.run_return_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.run_append": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.responsive_stable": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.continual_cycle": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.repeated_continual_cycles": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.post_failure_both": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.repaired_by_responsive": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.responsive_after_failure": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.routes_differ_after_failure": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.changed_route_cycle": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.unchanged_context_no_return_gain": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.extra_cost_threshold": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.Carrier": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.total": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.cycleStep": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.install": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.cycle_conserves": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.installation_conserves": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.installation_preserves_network": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.insufficient_stock_blocks": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.exhausted_source_blocks": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.event": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.finite_history_conserves": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.initial": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.retired": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.replacement": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.renewedOnce": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.renewedTwice": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.loss_retires_old_route": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.actual_replacement": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.new_route_renews": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.new_route_renews_again": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.complete_replacement_history": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.final_account_and_exhaustion": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.old_proposal_fails_again": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.reportedUpdate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "UpdaterConsequences.false_success_blocks_repair": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    }
+  ],
+  "total_audits": 142,
+  "new_audits": 57,
+  "new_theorems": 36,
+  "nonempty_audits": {
+    "ConnectionistRecovery.Profile": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.Network": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.input": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.perturb": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.step": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.develop": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.score": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.input_perturb": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.one_step_difference": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.one_step_score_difference": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.beneficial_iff_hebbian": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.response": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.coefficient_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.developmental_response": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.tanh_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.tanh_developmental_response": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.netScore": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.changing_selection_response": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.fixed_selection_response": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.one_step_cost_threshold": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.changingRuleExample": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.changed_rule_exact_difference": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.changing_rule_reverses_gain": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.oriented_input_nonnegative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.oriented_activation_nonnegative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.development_preserves_orientation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.response_preserves_orientation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.terminal_response_orientation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.recurrent_hebbian_direction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.tanh_hebbian_from_initial_orientation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.oriented_formation_preserves_network": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.finite_tanh_formation_nondecreasing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.finite_tanh_formation_from_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.adverseNetwork": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.ones": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.adverse_initial_alignment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.adverse_link_initially_absent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.adverse_first_step": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.adverse_second_step": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.adverse_score_difference": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConnectionistRecovery.positive_formation_can_reduce_score": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.inner": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.store": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.inherited": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.choose": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.tanh_strictMono": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.nonlinear_score_difference": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.positive_proposal_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.selected_coefficient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.accumulate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.selected_coordinate_gain": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.accumulated_score_nondecreasing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.accumulation_formula": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.learn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.learned_equals_store": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.trained": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.trained_equals_inherited": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.input_store": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.history_field": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.retrieval_margin": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.signed_tanh_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.recalls": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.one_step_recall": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.recall_preserved": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.develop_after_first": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.enduring_recall": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.balanced_compatible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.balanced_diagonal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.balanced_two_patterns_persist": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.first": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.second": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.partialFirst": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.partialSecond": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.both": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.overwritten": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.restored": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.common_history_realized": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.balanced_relation_cancellation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.ambiguous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.unresolved_coordinate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.ambiguous_recall_fails": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.both_recall": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.overwrite_changes_old_recall": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.old_recall_fails": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DevelopmentalMemory.old_recall_restored": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.profile": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.weighted": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.succeeds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.tanh_positive_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.tanh_negative_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.first_field": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.second_field": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.succeeds_first_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.succeeds_second_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.profile_binary": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.learned_first": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.learned_second": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.predecessor_networks": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.update": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.run": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.run_return_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.run_append": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.responsive_stable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.continual_cycle": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.repeated_continual_cycles": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.post_failure_both": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.repaired_by_responsive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.responsive_after_failure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.routes_differ_after_failure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.changed_route_cycle": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.unchanged_context_no_return_gain": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.extra_cost_threshold": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.Carrier": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.total": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.cycleStep": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.install": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.cycle_conserves": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.installation_conserves": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.installation_preserves_network": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.insufficient_stock_blocks": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.exhausted_source_blocks": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.event": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.finite_history_conserves": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.initial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.retired": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.replacement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.renewedOnce": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.renewedTwice": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.loss_retires_old_route": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.actual_replacement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.new_route_renews": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.new_route_renews_again": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.complete_replacement_history": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.final_account_and_exhaustion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.old_proposal_fails_again": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.reportedUpdate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "UpdaterConsequences.false_success_blocks_repair": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "checker_sha256": "e444362057a8330f62b77ae7e531a4945751ce71fe195e41da9740636f169e82",
+  "commands": [
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "ConnectionistRecovery.olean",
+      "ConnectionistRecovery.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "DevelopmentalMemory.olean",
+      "DevelopmentalMemory.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "UpdaterConsequences.olean",
+      "UpdaterConsequences.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "UpdaterConsequencesAudit.lean"
+    ]
+  ],
+  "log_sha256": {
+    "ConnectionistRecovery.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "DevelopmentalMemory.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "UpdaterConsequences.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axioms.txt": "9952bfcf6a8c57b87c76520b89dd98b3a476b50ed4b6c4ee10d07891bcf7f271"
+  },
+  "source_changed_during_run": [],
+  "direct_import_sha256": {
+    "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/lib/lean/Init.olean": "12e94e3624b943d20ad898491957051ae9ba22ccbed9e6f92c35fbc711849246",
+    "/Users/ren/repos/\u751f\u751f\u4e0d\u606f/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Analysis/Calculus/Deriv/Add.olean": "b4809775c34463a040bb6b0d26500221c9f7e445c350b60d16b18118e5130d11",
+    "/Users/ren/repos/\u751f\u751f\u4e0d\u606f/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Analysis/Calculus/Deriv/Mul.olean": "930e9995babe6e4334ae418fd414dccdd62ec73e6eac7a6967449e01313d229f",
+    "/Users/ren/repos/\u751f\u751f\u4e0d\u606f/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Analysis/Calculus/Deriv/Comp.olean": "b56bd5bf36afece631772c45e41553655d04a09e177f87332145f2dff0649297",
+    "/Users/ren/repos/\u751f\u751f\u4e0d\u606f/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Analysis/Calculus/Deriv/MeanValue.olean": "b1af997f03fe4512563162a9db15ba85013fca46674e70385f796da7869800f4",
+    "/Users/ren/repos/\u751f\u751f\u4e0d\u606f/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Analysis/SpecialFunctions/Trigonometric/DerivHyp.olean": "44b75a69fac42e1b32c7a0d47a658e82e76b477c5a0b74be9ef8ca43f8c4f4bd",
+    "/Users/ren/repos/\u751f\u751f\u4e0d\u606f/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic.olean": "0a821f2a00e8a64712b702ffd0355326515c0123c0b60917a5aaa1c4ac527911",
+    "ConnectionistRecovery.olean": "13e5c641b274b1c74c7c902b128f056ee828efcc21e5106369500162ecb4a857",
+    "DevelopmentalMemory.olean": "d828486b9a882e3cd0d0d3b685a4e31604acacaa2e4800e4694f69de20fd462d"
+  },
+  "mathlib_revision": "ea11ccc0c5c7c4c562742e918fe2e0b2814a58aa",
+  "manifest_sha256": "740eef1aae725322b99872aba59cc5c902378b992bfe9122737a454f3076321b",
+  "upstream_scope": "Pinned existing Mathlib cache; repository import closure rebuilt. Mathlib not rebuilt.",
+  "scope": "Consequence-dependent update-rule replacement, one-step nonlinear response and finite support; explicit declarations audited, generated declarations kernel-checked. Supplied two-rule repertoire, faithful success signal, task order, construction and renewal laws. One-step response, finite support and actual replacement; no population-frequency, physical-composition, universal or ethical conclusion."
+}

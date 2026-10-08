@@ -1,0 +1,517 @@
+{
+  "status": "passed",
+  "utc": "20261008T085930.278106Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "selector-review-coverage-checks/20261008T085930.278106Z",
+  "source_sha256": {
+    "PracticalJudgment": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "SelectorReviewCoverage": "824a9713eb203f8de24b1a1c98d67e795cff0faf0c76a6aac94bcd27902ab6db"
+  },
+  "checker_sha256": {
+    "check_selector_review_coverage.py": "53dbef89ea16b44f60f1628f30ef0974e7561cd7409906f0127adc743436773b",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Menu-relative reflection of possible defeat characterizes sound transport of represented uniform-frontier certificates across different review types. An inherited J1/J2 witness has an exact nonvacuous old-menu compression which fails when a new repair becomes eligible; the real output loss remains. An objection summary preserves the exact certificate without becoming a new whole preference. Under absence of new self-defeats, transport on all menus is equivalent to pairwise reflection of existing objections. A supplied bounded/unbounded support family has identical full represented profiles for every audited plan up to arbitrary n but defeats extrapolation to plan n+1, preserving its real secondary gain. Meaning, review admission, factual coverage, classification, authority and actual acquisition remain substantive premises; no new ethical axiom or empirical finding.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "modules": [
+    {
+      "module": "PracticalJudgment",
+      "theorems": 30,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Included"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.StrictIncluded"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.included_trans"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.strict_included_irrefl"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.strict_included_trans"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Better"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.better_irrefl"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.better_trans"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.protection_anchor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.no_protection_trade_by_count"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Frontier"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.dominated_excluded"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.finite_frontier"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Required"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.required_performed"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.alternative_defeats_specific_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.impossible_menu_no_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.necessary_means_required"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Assigned"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.unique_responder_required"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.assignment_respects_capacity"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Covered"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.transfer_requires_actual_successor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.no_demand_gap_transfer"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.uncovered_demand_is_failure"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Settled"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Residual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.settlement_removes_residual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.unfulfilled_unreleased_remains"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Robust"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.robust_at_actual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.robust_under_refinement"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.required_under_faithful_redescription"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.withinCeiling"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.optionalFormation"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.supplied_ceiling_bounds_optional_gain"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.independent_choices_not_joint_capacity"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.basis"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.event"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.mixed_repair_anchor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.repair_retains_real_loss"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.protectedOne"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.noGain"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.competing_claims_incomparable"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.collective_duty_without_individual_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.uncertain_worlds_need_common_plan"
+        }
+      ],
+      "axiom_dependencies": {
+        "PracticalJudgment.Included": [],
+        "PracticalJudgment.StrictIncluded": [],
+        "PracticalJudgment.included_trans": [],
+        "PracticalJudgment.strict_included_irrefl": [],
+        "PracticalJudgment.strict_included_trans": [],
+        "PracticalJudgment.Better": [],
+        "PracticalJudgment.better_irrefl": [],
+        "PracticalJudgment.better_trans": [],
+        "PracticalJudgment.protection_anchor": [],
+        "PracticalJudgment.no_protection_trade_by_count": [],
+        "PracticalJudgment.Frontier": [],
+        "PracticalJudgment.dominated_excluded": [],
+        "PracticalJudgment.finite_frontier": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.Required": [],
+        "PracticalJudgment.required_performed": [],
+        "PracticalJudgment.alternative_defeats_specific_duty": [],
+        "PracticalJudgment.impossible_menu_no_duty": [],
+        "PracticalJudgment.necessary_means_required": [],
+        "PracticalJudgment.Assigned": [],
+        "PracticalJudgment.unique_responder_required": [],
+        "PracticalJudgment.assignment_respects_capacity": [],
+        "PracticalJudgment.Covered": [],
+        "PracticalJudgment.transfer_requires_actual_successor": [],
+        "PracticalJudgment.no_demand_gap_transfer": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.uncovered_demand_is_failure": [],
+        "PracticalJudgment.Settled": [],
+        "PracticalJudgment.Residual": [],
+        "PracticalJudgment.settlement_removes_residual": [],
+        "PracticalJudgment.unfulfilled_unreleased_remains": [],
+        "PracticalJudgment.Robust": [],
+        "PracticalJudgment.robust_at_actual": [],
+        "PracticalJudgment.robust_under_refinement": [],
+        "PracticalJudgment.required_under_faithful_redescription": [],
+        "PracticalJudgment.withinCeiling": [],
+        "PracticalJudgment.optionalFormation": [],
+        "PracticalJudgment.supplied_ceiling_bounds_optional_gain": [
+          "propext"
+        ],
+        "PracticalJudgment.independent_choices_not_joint_capacity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.basis": [],
+        "PracticalJudgment.event": [],
+        "PracticalJudgment.mixed_repair_anchor": [],
+        "PracticalJudgment.repair_retains_real_loss": [],
+        "PracticalJudgment.protectedOne": [],
+        "PracticalJudgment.noGain": [],
+        "PracticalJudgment.competing_claims_incomparable": [
+          "propext"
+        ],
+        "PracticalJudgment.collective_duty_without_individual_duty": [
+          "propext"
+        ],
+        "PracticalJudgment.uncertain_worlds_need_common_plan": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "SelectorReviewCoverage",
+      "theorems": 18,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "SelectorReviewCoverage.PossibleDefeat"
+        },
+        {
+          "kind": "def",
+          "name": "SelectorReviewCoverage.Clear"
+        },
+        {
+          "kind": "def",
+          "name": "SelectorReviewCoverage.CertificateCoverage"
+        },
+        {
+          "kind": "theorem",
+          "name": "SelectorReviewCoverage.clear_iff_no_possible_defeat"
+        },
+        {
+          "kind": "theorem",
+          "name": "SelectorReviewCoverage.coverage_iff_certificate_transport"
+        },
+        {
+          "kind": "theorem",
+          "name": "SelectorReviewCoverage.pairwise_reflection_suffices"
+        },
+        {
+          "kind": "theorem",
+          "name": "SelectorReviewCoverage.certificate_coverage_composes"
+        },
+        {
+          "kind": "theorem",
+          "name": "SelectorReviewCoverage.all_menus_coverage_iff_pairwise_reflection"
+        },
+        {
+          "kind": "def",
+          "name": "SelectorReviewCoverage.objectionSummary"
+        },
+        {
+          "kind": "theorem",
+          "name": "SelectorReviewCoverage.objection_summary_preserves_exact_certificate"
+        },
+        {
+          "kind": "inductive",
+          "name": "SelectorReviewCoverage.Plan"
+        },
+        {
+          "kind": "def",
+          "name": "SelectorReviewCoverage.protection"
+        },
+        {
+          "kind": "def",
+          "name": "SelectorReviewCoverage.gain"
+        },
+        {
+          "kind": "def",
+          "name": "SelectorReviewCoverage.comparison"
+        },
+        {
+          "kind": "def",
+          "name": "SelectorReviewCoverage.fullLive"
+        },
+        {
+          "kind": "def",
+          "name": "SelectorReviewCoverage.oldMenu"
+        },
+        {
+          "kind": "def",
+          "name": "SelectorReviewCoverage.enlargedMenu"
+        },
+        {
+          "kind": "def",
+          "name": "SelectorReviewCoverage.compressed"
+        },
+        {
+          "kind": "theorem",
+          "name": "SelectorReviewCoverage.output_defeats_routine_in_both_applications"
+        },
+        {
+          "kind": "theorem",
+          "name": "SelectorReviewCoverage.compression_is_exact_on_old_menu"
+        },
+        {
+          "kind": "theorem",
+          "name": "SelectorReviewCoverage.compressed_review_covers_old_menu"
+        },
+        {
+          "kind": "theorem",
+          "name": "SelectorReviewCoverage.expanded_menu_retains_compressed_output_certificate"
+        },
+        {
+          "kind": "theorem",
+          "name": "SelectorReviewCoverage.new_repair_defeats_output_in_omitted_application"
+        },
+        {
+          "kind": "theorem",
+          "name": "SelectorReviewCoverage.menu_growth_breaks_old_certificate_coverage"
+        },
+        {
+          "kind": "theorem",
+          "name": "SelectorReviewCoverage.repair_keeps_real_output_loss"
+        },
+        {
+          "kind": "theorem",
+          "name": "SelectorReviewCoverage.restored_summary_rejects_output_certificate"
+        },
+        {
+          "kind": "def",
+          "name": "SelectorReviewCoverage.prefixProtection"
+        },
+        {
+          "kind": "def",
+          "name": "SelectorReviewCoverage.prefixGain"
+        },
+        {
+          "kind": "def",
+          "name": "SelectorReviewCoverage.prefixComparison"
+        },
+        {
+          "kind": "def",
+          "name": "SelectorReviewCoverage.prefixMenu"
+        },
+        {
+          "kind": "def",
+          "name": "SelectorReviewCoverage.prefixCompressed"
+        },
+        {
+          "kind": "theorem",
+          "name": "SelectorReviewCoverage.finite_audit_protection_profiles_agree"
+        },
+        {
+          "kind": "theorem",
+          "name": "SelectorReviewCoverage.prefix_pairwise_comparison"
+        },
+        {
+          "kind": "theorem",
+          "name": "SelectorReviewCoverage.every_finite_prefix_has_exact_compression"
+        },
+        {
+          "kind": "theorem",
+          "name": "SelectorReviewCoverage.every_finite_prefix_has_a_failing_next_plan"
+        }
+      ],
+      "axiom_dependencies": {
+        "SelectorReviewCoverage.PossibleDefeat": [],
+        "SelectorReviewCoverage.Clear": [],
+        "SelectorReviewCoverage.CertificateCoverage": [],
+        "SelectorReviewCoverage.clear_iff_no_possible_defeat": [],
+        "SelectorReviewCoverage.coverage_iff_certificate_transport": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SelectorReviewCoverage.pairwise_reflection_suffices": [],
+        "SelectorReviewCoverage.certificate_coverage_composes": [],
+        "SelectorReviewCoverage.all_menus_coverage_iff_pairwise_reflection": [],
+        "SelectorReviewCoverage.objectionSummary": [],
+        "SelectorReviewCoverage.objection_summary_preserves_exact_certificate": [],
+        "SelectorReviewCoverage.Plan": [],
+        "SelectorReviewCoverage.protection": [],
+        "SelectorReviewCoverage.gain": [],
+        "SelectorReviewCoverage.comparison": [],
+        "SelectorReviewCoverage.fullLive": [],
+        "SelectorReviewCoverage.oldMenu": [],
+        "SelectorReviewCoverage.enlargedMenu": [],
+        "SelectorReviewCoverage.compressed": [],
+        "SelectorReviewCoverage.output_defeats_routine_in_both_applications": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SelectorReviewCoverage.compression_is_exact_on_old_menu": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SelectorReviewCoverage.compressed_review_covers_old_menu": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SelectorReviewCoverage.expanded_menu_retains_compressed_output_certificate": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SelectorReviewCoverage.new_repair_defeats_output_in_omitted_application": [
+          "propext"
+        ],
+        "SelectorReviewCoverage.menu_growth_breaks_old_certificate_coverage": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SelectorReviewCoverage.repair_keeps_real_output_loss": [
+          "propext"
+        ],
+        "SelectorReviewCoverage.restored_summary_rejects_output_certificate": [
+          "propext"
+        ],
+        "SelectorReviewCoverage.prefixProtection": [],
+        "SelectorReviewCoverage.prefixGain": [],
+        "SelectorReviewCoverage.prefixComparison": [],
+        "SelectorReviewCoverage.prefixMenu": [],
+        "SelectorReviewCoverage.prefixCompressed": [],
+        "SelectorReviewCoverage.finite_audit_protection_profiles_agree": [
+          "propext"
+        ],
+        "SelectorReviewCoverage.prefix_pairwise_comparison": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SelectorReviewCoverage.every_finite_prefix_has_exact_compression": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SelectorReviewCoverage.every_finite_prefix_has_a_failing_next_plan": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "kernel_checked": true
+    }
+  ],
+  "artifact_sha256": {
+    "PracticalJudgment.lean": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "PracticalJudgment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PracticalJudgmentAxiomAudit.lean": "c9f412159410854fb031176d7fe7a4c351dfaea59354c7d7a19ec4ad0c6e51a6",
+    "PracticalJudgmentAxiomAudit.log": "d73810d6b1a7343808726234c17bca9d7841acafabd3a17ee8e6145dfabbf1ea",
+    "PracticalJudgmentSignatures.lean": "aec1f9317bc8881cb24e62213fa9db801f59b620595bb90caf082a5debc9cb66",
+    "PracticalJudgmentSignatures.log": "93b65679f59a01788bfcfbfe0bf5bc3ef93f0cf67516c469f1667c5cdc9abd65",
+    "SelectorReviewCoverage.lean": "824a9713eb203f8de24b1a1c98d67e795cff0faf0c76a6aac94bcd27902ab6db",
+    "SelectorReviewCoverage.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "SelectorReviewCoverageAxiomAudit.lean": "e877dd70315d0f413605ca3b203122dd249455ac033d3675c3c65a7e2d898d4b",
+    "SelectorReviewCoverageAxiomAudit.log": "f893b2ab65afc3ef41509f94e2519aba6257f3471a3f125a1633c7433611d8f3",
+    "SelectorReviewCoverageSignatures.lean": "6328ea103ae5adc2c9d0c721e84bfc268a0bc7d8541daea4f1e77eee1c8aa7bb",
+    "SelectorReviewCoverageSignatures.log": "d94030cd610c0cda45d52ccf86c80f1a7ad97c04e755d7678e3ae96df6fb6640",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_selector_review_coverage.py": "53dbef89ea16b44f60f1628f30ef0974e7561cd7409906f0127adc743436773b",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

@@ -1,0 +1,34 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-compactness-hy00hegb/ExplanatoryCompactness.lean:62:86: error: unsolved goals
+S : Type u
+A : Type v
+O : Type w
+m : Model S A O
+finite : ImageFinite m
+s : S
+a : A
+Γ : Test A O → Prop
+⊢ FinitelyRealizable m s a Γ → ∃ t, m.process.step s a t ∧ ∀ (f : Test A O), Γ f → Holds m t f
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-compactness-hy00hegb/ExplanatoryCompactness.lean:64:19: error: unexpected identifier; expected 'binder_predicate', 'builtin_dsimproc', 'builtin_simproc', 'dsimproc', 'elab', 'elab_rules', 'grind_pattern', 'infix', 'infixl', 'infixr', 'instance', 'macro', 'macro_rules', 'notation', 'postfix', 'prefix', 'simproc', 'syntax' or 'unif_hint'
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-compactness-hy00hegb/ExplanatoryCompactness.lean:78:32: error: unexpected identifier; expected 'binder_predicate', 'builtin_dsimproc', 'builtin_simproc', 'dsimproc', 'elab', 'elab_rules', 'grind_pattern', 'infix', 'infixl', 'infixr', 'instance', 'macro', 'macro_rules', 'notation', 'postfix', 'prefix', 'simproc', 'syntax' or 'unif_hint'
+'Generative.ExplanatoryCompactness.holds_allTests' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryCompactness.finite_exclusion_list' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryCompactness.imageFinite_successorCompact' depends on axioms: [sorryAx]
+'Generative.ExplanatoryCompactness.complete_theory_forces_same' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryCompactness.successor_theory_finitely_realizable' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryCompactness.compact_successor_match' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryCompactness.compact_same_is_bisimulation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryCompactness.compact_same_iff_bisimilar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryCompactness.compact_structural_correspondence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryCompactness.compact_correspondence_preserves_steps' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryCompactness.compact_code_step_lifts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryCompactness.compact_code_trace_lifts' depends on axioms: [propext, Classical.choice, Quot.sound]

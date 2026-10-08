@@ -1,0 +1,29 @@
+{
+  "scope": "Owned navigation changes only; no claims of reviewing concurrent work.",
+  "changes": [
+    {
+      "path": "README.md",
+      "before_sha256": "656314301ce544f65af4589c221bd63b71898a3d30743e50e8c44377964ed2d7",
+      "before_reviewed": false,
+      "after_sha256": "2858d3dadf2880268318654ae1774096b34d14001d2efd94431769ff58f485b2"
+    },
+    {
+      "path": "RESEARCH.md",
+      "before_sha256": "d6a74a7f2dc8e6400fcc8e2e827e540d21c55bb0bec1ef47b033c7a68122e30b",
+      "before_reviewed": false,
+      "after_sha256": "7d80f3c362a2de69fae7142306c1729179af4b8fdb4fc8de0176ee7b635471ea"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "before_sha256": "a0a6afd346499137fe6d2c7f11365cb06afb2b0d54031be88a359114ed41b1d1",
+      "before_reviewed": false,
+      "after_sha256": "5acda323c97c6de9a4609e6b05d8a72b10236d94200966f621367c0d45435571"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "before_sha256": "513d66c65098787f90e84d9f1266f2e977b131f80ec565e0398dd2863ee8fc9f",
+      "before_reviewed": false,
+      "after_sha256": "1107920f321676da6ff79c366049cce19771c47faab0cf93f1e3a4748eff2c1e"
+    }
+  ]
+}

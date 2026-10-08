@@ -1,0 +1,17 @@
+FormativeAssessment.lean:186:2: error: unsolved goals
+case inl.intro
+a : Nat × Bool
+b : Bool
+left✝ : a = (0, true)
+right✝ : b = false
+⊢ b = true ↔
+    ¬a.fst = 0 ∧
+      (step (step { linked := false, credits := 3 } (Action.request true)).fst Action.form).fst.linked = true ∧
+        a.snd = true
+FormativeAssessment.lean:188:2: error: unsolved goals
+case inr.intro
+a : Nat × Bool
+b : Bool
+left✝ : a = (1, true)
+right✝ : b = true
+⊢ b = true ↔ ¬a.fst = 0 ∧ a.snd = true

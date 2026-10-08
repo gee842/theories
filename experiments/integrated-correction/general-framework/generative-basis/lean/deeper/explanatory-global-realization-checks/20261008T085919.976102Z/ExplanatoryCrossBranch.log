@@ -1,0 +1,15 @@
+'Generative.ExplanatoryCrossBranch.weak_local_certificate' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryCrossBranch.weak_has_local_separation' does not depend on any axioms
+'Generative.ExplanatoryCrossBranch.weak_lacks_inheritance' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryCrossBranch.crossing_requests_conflict' depends on axioms: [propext]
+'Generative.ExplanatoryCrossBranch.crossing_no_holding_history' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryCrossBranch.within_only_inheritance' does not depend on any axioms
+'Generative.ExplanatoryCrossBranch.within_only_accepts_duplicate' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryCrossBranch.within_only_no_holding_history' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryCrossBranch.repaired_rejects_crossing' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryCrossBranch.repaired_positive_and_holds' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryCrossBranch.capacity_trace_iff' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryCrossBranch.capacity_admission_iff' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryCrossBranch.same_single_and_pair_admission' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryCrossBranch.triple_capacity_distinguishes' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryCrossBranch.any_finite_arity_can_miss_next' depends on axioms: [propext, Quot.sound]

@@ -1,0 +1,22 @@
+import VariationWarrant
+#print axioms VariationWarrant.Prepared
+#print axioms VariationWarrant.preparation
+#print axioms VariationWarrant.preparation_shape
+#print axioms VariationWarrant.preparation_trace
+#print axioms VariationWarrant.every_prepared_endpoint_is_diagonal
+#print axioms VariationWarrant.every_diagonal_endpoint_has_preparation
+#print axioms VariationWarrant.prepared_iff_diagonal
+#print axioms VariationWarrant.prepared_iff_short_preparation
+#print axioms VariationWarrant.both_comparison_states_are_prepared
+#print axioms VariationWarrant.off_diagonal_endpoint_not_prepared
+#print axioms VariationWarrant.prepared_domain_independent_of_seed
+#print axioms VariationWarrant.prepared_closed_under_continuation
+#print axioms VariationWarrant.formed_continuation_iff
+#print axioms VariationWarrant.formed_outcome_iff
+#print axioms VariationWarrant.support_iff_prepared_tests
+#print axioms VariationWarrant.possibility_support_iff_prepared_tests
+#print axioms VariationWarrant.right_supports_generated_possibilities
+#print axioms VariationWarrant.generated_response_support_iff_diagonal
+#print axioms VariationWarrant.generated_domain_has_no_least_support
+#print axioms VariationWarrant.off_diagonal_execution_before_formation
+#print axioms VariationWarrant.normalization_does_not_preserve_original_word

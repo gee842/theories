@@ -1,0 +1,13 @@
+'Generative.AcquiredSupportUseCases.cycle_end' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSupportUseCases.cycle_trace' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSupportUseCases.totalCharge_append' depends on axioms: [propext]
+'Generative.AcquiredSupportUseCases.retries_charge' depends on axioms: [propext]
+'Generative.AcquiredSupportUseCases.retries_trace' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSupportUseCases.retries_then_use_iff' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSupportUseCases.finite_budget_can_be_exhausted' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSupportUseCases.acquired_ticket_initially_usable' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSupportUseCases.stale_read_rejected' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSupportUseCases.restored_value_still_rejected' does not depend on any axioms
+'Generative.AcquiredSupportUseCases.unrelated_change_then_use' does not depend on any axioms
+'Generative.AcquiredSupportUseCases.wrong_route_rejected' does not depend on any axioms
+'Generative.AcquiredSupportUseCases.bypass_breaks_correspondence' does not depend on any axioms

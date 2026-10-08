@@ -1,0 +1,20 @@
+'SituatedKitchen.History' does not depend on any axioms
+'SituatedKitchen.protection' does not depend on any axioms
+'SituatedKitchen.realization' does not depend on any axioms
+'SituatedKitchen.care' does not depend on any axioms
+'SituatedKitchen.learning' does not depend on any axioms
+'SituatedKitchen.classOnly' does not depend on any axioms
+'SituatedKitchen.overloadedCare' does not depend on any axioms
+'SituatedKitchen.harmfulLearning' does not depend on any axioms
+'SituatedKitchen.inaccessibleLearning' does not depend on any axioms
+'SituatedKitchen.exitWithoutCover' does not depend on any axioms
+'SituatedKitchen.timely_care_beats_class_only' does not depend on any axioms
+'SituatedKitchen.learning_and_care_incomparable' does not depend on any axioms
+'SituatedKitchen.supported_learning_beats_overloaded_care' does not depend on any axioms
+'SituatedKitchen.care_beats_harmful_learning' does not depend on any axioms
+'SituatedKitchen.skill_without_usable_route' depends on axioms: [propext]
+'SituatedKitchen.restored_access_improves_same_learning' does not depend on any axioms
+'SituatedKitchen.competing_basic_losses_incomparable' does not depend on any axioms
+'SituatedKitchen.handoff' does not depend on any axioms
+'SituatedKitchen.announcement_cannot_replace_coverage' depends on axioms: [propext]
+'SituatedKitchen.actual_coverage_repairs_handoff' does not depend on any axioms

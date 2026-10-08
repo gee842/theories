@@ -1,0 +1,5 @@
+Observed dependency-audit excerpt from the first successful compilation.
+These two declarations used the inherited derivation_sound proof.
+'InquiryRoot.WholeDischarge.closed_whole_valid' depends on axioms: [propext]
+'InquiryRoot.WholeDischarge.self_use_is_not_uniform_discharge' depends on axioms: [propext]
+The other four new declaration reports were empty. This is an excerpt, not a complete compiler log.

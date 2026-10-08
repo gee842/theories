@@ -1,0 +1,24 @@
+{
+  "status": "failed",
+  "utc": "20261007T234120.758840Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "model-revision-checks/20261007T234120.758840Z",
+  "source_sha256": {
+    "KnowledgeCorrespondence": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+    "NormativeActivity": "15105e2caa43fb9b00f228343be16a7d729ff5a3da10c506d134d07417ae622c",
+    "StandardsBridge": "f061dbc44da5cdf11ac5ff79b3f89558c7e177b23b9f121c1048c16ed353a42a",
+    "FormedGrounds": "15764b3258f843dc967fdfabfd17cd5f47a6eb740a4aa5a3465ceae61dea17ba",
+    "SelectiveRevision": "68468cb99fb536d1fcfefff017cf3188337b5dc769ac1c5041811abfd4ad3fc0",
+    "SourceReliance": "ac7b685ca7e8b92f4869bc67d94494a71e90cef67c1a9d21eb0bb2c71b0f87f9",
+    "ModelRevision": "c372a2d306bda7409d132c404ce609f2618511407f38781d0daa725abb443055"
+  },
+  "checker_sha256": {
+    "check_model_revision.py": "d2df67d866b4c5233334a2ae7af70978b2f1cbc1c8d065c45c43bac5cf096d8c",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "ModelRevisionCases.lean": "04382e8f83c2500fc76389ac5ce72412981d22154c661c2bdd59247702abd888"
+  },
+  "scope": "Evidence-guided repair generation, retained-history filtering, discriminating test selection and finite correction cycle; scoped use and positive exhaustive finite-domain correspondence; retained measurement-location, grammar, support and transfer failures. No universal epistemic or ethical sufficiency.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "ModelRevisionCases.lean:33:38: error(lean.unknownIdentifier): Unknown identifier `SourceReliance.protocol`\nModelRevisionCases.lean:45:30: error(lean.unknownIdentifier): Unknown identifier `SourceReliance.jointFailure`\nModelRevisionCases.lean:48:40: error(lean.unknownIdentifier): Unknown identifier `SourceReliance.jointFailure`\nModelRevisionCases.lean:49:32: error(lean.unknownIdentifier): Unknown identifier `SourceReliance.jointFailure`\nModelRevisionCases.lean:50:39: error(lean.unknownIdentifier): Unknown identifier `SourceReliance.jointFailure`\n"
+}

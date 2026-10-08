@@ -1,0 +1,493 @@
+{
+  "status": "passed",
+  "utc": "20261008T121651.982648Z",
+  "retained_run": "mediated-control-checks/20261008T121651.982648Z",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "sources": {
+    "AlignmentInquiry": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentInquiry.lean",
+      "sha256": "f40ad6179db326830edcdf8ec511f9069833a361f71181fd60166e0f72c0a23c"
+    },
+    "EffectiveCommand": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EffectiveCommand.lean",
+      "sha256": "7247ca05597f2f916fb409213d3814d48ad9a7037fb95017146d106273d58553"
+    },
+    "AcquiredCorrection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AcquiredCorrection.lean",
+      "sha256": "5448267c53e610b28bd030dfb1a894be840c307d54cd76e4be3695f196e8cd62"
+    },
+    "FaultTolerantCorrection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FaultTolerantCorrection.lean",
+      "sha256": "38f978fcabfaadca45c90b2298cf57502b839c6c9b93c3b9d0827d9ac2cb66ac"
+    },
+    "CorrectionReconfiguration": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionReconfiguration.lean",
+      "sha256": "4bd7160762f4bb697c72293133c91934e3622674f75990f6328d186abd7425e7"
+    },
+    "EvidenceQualifiedCorrection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvidenceQualifiedCorrection.lean",
+      "sha256": "a3c87bdfa01dbf6c25da19d4bbc0d6e028744b504d95023c76607379cc20327f"
+    },
+    "FallibleInspection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FallibleInspection.lean",
+      "sha256": "998bca3b8a24fd84c957e11b5b3cf9ef838fba5f76a432b0cbb35255a18c6aa3"
+    },
+    "TemporalInspection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/TemporalInspection.lean",
+      "sha256": "4916c6b1d5cbf38b7cebdd378fa508c799e279c56daaf5359334c4a73bf48694"
+    },
+    "MediatedControl": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MediatedControl.lean",
+      "sha256": "9a412dfca848a09f1b27e60b5551058a83597b1e131728f19096f9dafe888b7a"
+    },
+    "MediatedControlCases": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/MediatedControlCases.lean",
+      "sha256": "0bf23de4df2cfa3c7a88b1feef0f42cafdc261b81c7185fd0bafa2cd29539aec"
+    }
+  },
+  "checker_sha256": {
+    "check_mediated_control.py": "71df389ff7b4a848a932e4255e08512a8914b645a16f5f7e89f2f18aaaedb52a",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Instruction-derived transition coverage, exact-image evidence transport, checked rights and generation, coupled mutation/recording, old-command revocation and paid local correction. Initial coverage, current read correspondence, complete runtime mediation, atomic implementation and protected final command remain supplied; neither physical fault repair nor hardware refinement is established.",
+  "version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "modules": {
+    "MediatedControl": {
+      "declarations": [
+        {
+          "kind": "inductive",
+          "name": "MediatedControl.FaultCode"
+        },
+        {
+          "kind": "def",
+          "name": "MediatedControl.decodeFault"
+        },
+        {
+          "kind": "inductive",
+          "name": "MediatedControl.Write"
+        },
+        {
+          "kind": "structure",
+          "name": "MediatedControl.Rights"
+        },
+        {
+          "kind": "def",
+          "name": "MediatedControl.permitted"
+        },
+        {
+          "kind": "def",
+          "name": "MediatedControl.authorized"
+        },
+        {
+          "kind": "def",
+          "name": "MediatedControl.oneWrite"
+        },
+        {
+          "kind": "def",
+          "name": "MediatedControl.writes"
+        },
+        {
+          "kind": "def",
+          "name": "MediatedControl.modelTouched"
+        },
+        {
+          "kind": "def",
+          "name": "MediatedControl.faultTouched"
+        },
+        {
+          "kind": "def",
+          "name": "MediatedControl.effect"
+        },
+        {
+          "kind": "def",
+          "name": "MediatedControl.image"
+        },
+        {
+          "kind": "theorem",
+          "name": "MediatedControl.model_field_preserved"
+        },
+        {
+          "kind": "theorem",
+          "name": "MediatedControl.fault_field_preserved"
+        },
+        {
+          "kind": "theorem",
+          "name": "MediatedControl.world_fields_determine_state"
+        },
+        {
+          "kind": "theorem",
+          "name": "MediatedControl.model_write_stays_represented"
+        },
+        {
+          "kind": "theorem",
+          "name": "MediatedControl.fault_write_stays_represented"
+        },
+        {
+          "kind": "theorem",
+          "name": "MediatedControl.writes_stay_represented"
+        },
+        {
+          "kind": "theorem",
+          "name": "MediatedControl.executed_writes_fit_derived_effect"
+        },
+        {
+          "kind": "theorem",
+          "name": "MediatedControl.exact_image_retains_executed_actual"
+        },
+        {
+          "kind": "theorem",
+          "name": "MediatedControl.exact_image_is_within_coarse_prediction"
+        },
+        {
+          "kind": "structure",
+          "name": "MediatedControl.Packet"
+        },
+        {
+          "kind": "structure",
+          "name": "MediatedControl.Entry"
+        },
+        {
+          "kind": "structure",
+          "name": "MediatedControl.Machine"
+        },
+        {
+          "kind": "def",
+          "name": "MediatedControl.writeCost"
+        },
+        {
+          "kind": "def",
+          "name": "MediatedControl.installed"
+        },
+        {
+          "kind": "def",
+          "name": "MediatedControl.commit"
+        },
+        {
+          "kind": "theorem",
+          "name": "MediatedControl.committed_shape"
+        },
+        {
+          "kind": "theorem",
+          "name": "MediatedControl.commit_preserves_actual_coverage"
+        },
+        {
+          "kind": "theorem",
+          "name": "MediatedControl.commit_records_the_executed_effect"
+        },
+        {
+          "kind": "theorem",
+          "name": "MediatedControl.caller_effect_claim_is_not_used"
+        },
+        {
+          "kind": "theorem",
+          "name": "MediatedControl.replayed_packet_rejected"
+        },
+        {
+          "kind": "theorem",
+          "name": "MediatedControl.denied_write_prevents_commit"
+        },
+        {
+          "kind": "theorem",
+          "name": "MediatedControl.old_command_request_is_revoked"
+        },
+        {
+          "kind": "theorem",
+          "name": "MediatedControl.commit_keeps_consumption"
+        },
+        {
+          "kind": "inductive",
+          "name": "MediatedControl.Event"
+        },
+        {
+          "kind": "def",
+          "name": "MediatedControl.step"
+        },
+        {
+          "kind": "def",
+          "name": "MediatedControl.SourceLaw"
+        },
+        {
+          "kind": "theorem",
+          "name": "MediatedControl.mediated_step_preserves_coverage"
+        },
+        {
+          "kind": "inductive",
+          "name": "MediatedControl.History"
+        },
+        {
+          "kind": "theorem",
+          "name": "MediatedControl.mediated_history_preserves_coverage"
+        },
+        {
+          "kind": "theorem",
+          "name": "MediatedControl.mediated_history_to_current_certificate"
+        },
+        {
+          "kind": "def",
+          "name": "MediatedControl.run"
+        },
+        {
+          "kind": "def",
+          "name": "MediatedControl.start"
+        },
+        {
+          "kind": "def",
+          "name": "MediatedControl.inspectEvents"
+        },
+        {
+          "kind": "def",
+          "name": "MediatedControl.repair"
+        },
+        {
+          "kind": "def",
+          "name": "MediatedControl.worked"
+        },
+        {
+          "kind": "theorem",
+          "name": "MediatedControl.executed_patch_can_replace_a_fresh_structural_survey"
+        },
+        {
+          "kind": "theorem",
+          "name": "MediatedControl.exact_transform_is_stronger_than_footprint_alone"
+        },
+        {
+          "kind": "theorem",
+          "name": "MediatedControl.execution_still_needs_remaining_capacity"
+        },
+        {
+          "kind": "theorem",
+          "name": "MediatedControl.read_only_requester_cannot_reorganize"
+        },
+        {
+          "kind": "theorem",
+          "name": "MediatedControl.protected_field_attempts_reject_even_with_both_write_rights"
+        },
+        {
+          "kind": "def",
+          "name": "MediatedControl.bypass"
+        },
+        {
+          "kind": "def",
+          "name": "MediatedControl.publicView"
+        },
+        {
+          "kind": "def",
+          "name": "MediatedControl.previouslyInspected"
+        },
+        {
+          "kind": "theorem",
+          "name": "MediatedControl.bypass_preserves_records_but_breaks_coverage"
+        },
+        {
+          "kind": "theorem",
+          "name": "MediatedControl.record_only_acceptance_cannot_exclude_the_extra_writer"
+        }
+      ],
+      "dependencies": {
+        "MediatedControl.FaultCode": [],
+        "MediatedControl.decodeFault": [],
+        "MediatedControl.Write": [],
+        "MediatedControl.Rights": [],
+        "MediatedControl.permitted": [
+          "propext"
+        ],
+        "MediatedControl.authorized": [
+          "propext"
+        ],
+        "MediatedControl.oneWrite": [
+          "propext"
+        ],
+        "MediatedControl.writes": [
+          "propext"
+        ],
+        "MediatedControl.modelTouched": [
+          "propext"
+        ],
+        "MediatedControl.faultTouched": [
+          "propext"
+        ],
+        "MediatedControl.effect": [
+          "propext"
+        ],
+        "MediatedControl.image": [
+          "propext"
+        ],
+        "MediatedControl.model_field_preserved": [
+          "propext"
+        ],
+        "MediatedControl.fault_field_preserved": [
+          "propext"
+        ],
+        "MediatedControl.world_fields_determine_state": [
+          "propext"
+        ],
+        "MediatedControl.model_write_stays_represented": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MediatedControl.fault_write_stays_represented": [
+          "propext"
+        ],
+        "MediatedControl.writes_stay_represented": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MediatedControl.executed_writes_fit_derived_effect": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MediatedControl.exact_image_retains_executed_actual": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MediatedControl.exact_image_is_within_coarse_prediction": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MediatedControl.Packet": [],
+        "MediatedControl.Entry": [],
+        "MediatedControl.Machine": [],
+        "MediatedControl.writeCost": [],
+        "MediatedControl.installed": [
+          "propext"
+        ],
+        "MediatedControl.commit": [
+          "propext"
+        ],
+        "MediatedControl.committed_shape": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MediatedControl.commit_preserves_actual_coverage": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MediatedControl.commit_records_the_executed_effect": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MediatedControl.caller_effect_claim_is_not_used": [
+          "propext"
+        ],
+        "MediatedControl.replayed_packet_rejected": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MediatedControl.denied_write_prevents_commit": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MediatedControl.old_command_request_is_revoked": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "MediatedControl.commit_keeps_consumption": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MediatedControl.Event": [],
+        "MediatedControl.step": [
+          "propext"
+        ],
+        "MediatedControl.SourceLaw": [
+          "propext"
+        ],
+        "MediatedControl.mediated_step_preserves_coverage": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MediatedControl.History": [
+          "propext"
+        ],
+        "MediatedControl.mediated_history_preserves_coverage": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MediatedControl.mediated_history_to_current_certificate": [
+          "propext",
+          "Quot.sound"
+        ],
+        "MediatedControl.run": [
+          "propext"
+        ],
+        "MediatedControl.start": [],
+        "MediatedControl.inspectEvents": [],
+        "MediatedControl.repair": [],
+        "MediatedControl.worked": [],
+        "MediatedControl.executed_patch_can_replace_a_fresh_structural_survey": [
+          "propext"
+        ],
+        "MediatedControl.exact_transform_is_stronger_than_footprint_alone": [
+          "propext"
+        ],
+        "MediatedControl.execution_still_needs_remaining_capacity": [
+          "propext"
+        ],
+        "MediatedControl.read_only_requester_cannot_reorganize": [
+          "propext"
+        ],
+        "MediatedControl.protected_field_attempts_reject_even_with_both_write_rights": [
+          "propext"
+        ],
+        "MediatedControl.bypass": [],
+        "MediatedControl.publicView": [],
+        "MediatedControl.previouslyInspected": [
+          "propext"
+        ],
+        "MediatedControl.bypass_preserves_records_but_breaks_coverage": [
+          "propext"
+        ],
+        "MediatedControl.record_only_acceptance_cannot_exclude_the_extra_writer": [
+          "propext"
+        ]
+      },
+      "theorems": 27
+    }
+  },
+  "new_theorems": 27,
+  "audited_declarations": 57,
+  "compared_records": 24416,
+  "record_counts": {
+    "0": 3294,
+    "1": 3584,
+    "2": 5856,
+    "3": 10368,
+    "4": 972,
+    "5": 18,
+    "6": 324
+  },
+  "correspondence": "3294 instruction/world records, 3584 exact/coarse possibility transforms, 5856 claim/rights/generation records, 10368 full budget/rights histories, 972 deadline histories, 18 bypass records and 324 replay histories match a separately expressed integer-opcode/bitset reference. Same-author comparison; not independent review or empirical data.",
+  "artifacts": {
+    "FallibleInspection.lean": "998bca3b8a24fd84c957e11b5b3cf9ef838fba5f76a432b0cbb35255a18c6aa3",
+    "EffectiveCommand.lean": "7247ca05597f2f916fb409213d3814d48ad9a7037fb95017146d106273d58553",
+    "FaultTolerantCorrection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "MediatedControlCases.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cases.log": "3af2ffb9f86f286365e9f22bdb64d6862ee995d11f66d65b0773c5039c5ab31d",
+    "RunCases.lean": "f339eb9b44340320c5cc43b32a14d8b4b761dd6527c7574ae9c0b07880572aaa",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "TemporalInspection.lean": "4916c6b1d5cbf38b7cebdd378fa508c799e279c56daaf5359334c4a73bf48694",
+    "CorrectionReconfiguration.lean": "4bd7160762f4bb697c72293133c91934e3622674f75990f6328d186abd7425e7",
+    "EvidenceQualifiedCorrection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "AlignmentInquiry.lean": "f40ad6179db326830edcdf8ec511f9069833a361f71181fd60166e0f72c0a23c",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b",
+    "FallibleInspection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "MediatedControlAudit.lean": "400ea3e5645e7d3905e12cc11f57eaebd927e68fbb33b3cd6efd90966304f13f",
+    "TemporalInspection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference.json": "97c2f19dd656eef7371cbfb9f6ed253a4490cd6d4a468af48e4bb92820f0a35c",
+    "EvidenceQualifiedCorrection.lean": "a3c87bdfa01dbf6c25da19d4bbc0d6e028744b504d95023c76607379cc20327f",
+    "MediatedControl.lean": "9a412dfca848a09f1b27e60b5551058a83597b1e131728f19096f9dafe888b7a",
+    "check_mediated_control.py": "71df389ff7b4a848a932e4255e08512a8914b645a16f5f7e89f2f18aaaedb52a",
+    "MediatedControlAudit.log": "2de4aad3d1f77fb1bcb7a073712e28d0557d3e53c1e0faa2a57b4931d48973c3",
+    "MediatedControlCases.lean": "0bf23de4df2cfa3c7a88b1feef0f42cafdc261b81c7185fd0bafa2cd29539aec",
+    "EffectiveCommand.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FaultTolerantCorrection.lean": "38f978fcabfaadca45c90b2298cf57502b839c6c9b93c3b9d0827d9ac2cb66ac",
+    "MediatedControl.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "AcquiredCorrection.lean": "5448267c53e610b28bd030dfb1a894be840c307d54cd76e4be3695f196e8cd62",
+    "AcquiredCorrection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CorrectionReconfiguration.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "AlignmentInquiry.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

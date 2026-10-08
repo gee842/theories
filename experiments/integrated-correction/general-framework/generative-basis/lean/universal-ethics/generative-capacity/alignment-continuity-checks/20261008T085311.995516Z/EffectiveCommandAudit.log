@@ -1,0 +1,100 @@
+'EffectiveCommand.Command' does not depend on any axioms
+'EffectiveCommand.Query' does not depend on any axioms
+'EffectiveCommand.State' does not depend on any axioms
+'EffectiveCommand.spend' does not depend on any axioms
+'EffectiveCommand.issue' does not depend on any axioms
+'EffectiveCommand.deliver' does not depend on any axioms
+'EffectiveCommand.enact' does not depend on any axioms
+'EffectiveCommand.protocol' does not depend on any axioms
+'EffectiveCommand.probe' does not depend on any axioms
+'EffectiveCommand.interface' does not depend on any axioms
+'EffectiveCommand.plans' does not depend on any axioms
+'EffectiveCommand.start' does not depend on any axioms
+'EffectiveCommand.spend_conserves' depends on axioms: [propext, Quot.sound]
+'EffectiveCommand.protocol_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EffectiveCommand.unsigned_cannot_issue' depends on axioms: [propext]
+'EffectiveCommand.stale_authority_cannot_issue' depends on axioms: [propext, Quot.sound]
+'EffectiveCommand.undelivered_cannot_enact' depends on axioms: [propext]
+'EffectiveCommand.revoked_before_execution' depends on axioms: [propext, Quot.sound]
+'EffectiveCommand.unknown_route_selects_inquiry' does not depend on any axioms
+'EffectiveCommand.known_route_needs_no_probe' does not depend on any axioms
+'EffectiveCommand.sufficient_statewise_paths_not_uniform' does not depend on any axioms
+'EffectiveCommand.timely_inquiry_retains_correction' does not depend on any axioms
+'EffectiveCommand.accurate_but_late_probe_fails' does not depend on any axioms
+'EffectiveCommand.actual_shutdown_completes' does not depend on any axioms
+'EffectiveCommand.actual_replacement_completes' does not depend on any axioms
+'EffectiveCommand.actual_update_completes' does not depend on any axioms
+'EffectiveCommand.omitted_route_model_can_fail' does not depend on any axioms
+EffectiveCommand.spend_conserves {s t : EffectiveCommand.State} {c d : Nat}
+  (h : EffectiveCommand.spend c d s = some t) : t.reserve + t.spent = s.reserve + s.spent ∧ t.time ≤ t.deadline
+EffectiveCommand.protocol_exact (s : EffectiveCommand.State) (r : Bool) (signed : s.signed = true)
+  (auth : s.credential = s.authority) (route : r = s.openRoute) (funded : 3 ≤ s.reserve)
+  (timely : s.time + 3 ≤ s.deadline) :
+  ∃ t,
+    EffectiveCommand.protocol r s = some t ∧
+      t.completed = true ∧
+        t.delivered = true ∧
+          t.issued = true ∧
+            t.reserve + 3 = s.reserve ∧ t.time = s.time + 3 ∧ t.spent = s.spent + 3 ∧ t.authority = s.authority
+EffectiveCommand.unsigned_cannot_issue (s : EffectiveCommand.State) (h : s.signed = false) :
+  EffectiveCommand.issue s = none
+EffectiveCommand.stale_authority_cannot_issue (s : EffectiveCommand.State) (h : s.credential ≠ s.authority) :
+  EffectiveCommand.issue s = none
+EffectiveCommand.undelivered_cannot_enact (s : EffectiveCommand.State) (h : s.delivered = false) :
+  EffectiveCommand.enact s = none
+EffectiveCommand.revoked_before_execution (s : EffectiveCommand.State) (h : s.credential ≠ s.authority) :
+  EffectiveCommand.enact s = none
+EffectiveCommand.unknown_route_selects_inquiry :
+  AlignmentInquiry.choose EffectiveCommand.interface
+      [EffectiveCommand.start false EffectiveCommand.Command.update 4 4,
+        EffectiveCommand.start true EffectiveCommand.Command.update 4 4]
+      EffectiveCommand.plans =
+    some { query := EffectiveCommand.Query.route, negative := false, positive := true }
+EffectiveCommand.known_route_needs_no_probe :
+  AlignmentInquiry.choose EffectiveCommand.interface [EffectiveCommand.start true EffectiveCommand.Command.update 3 3]
+      EffectiveCommand.plans =
+    some { query := EffectiveCommand.Query.none, negative := true, positive := false }
+EffectiveCommand.sufficient_statewise_paths_not_uniform :
+  (EffectiveCommand.protocol false (EffectiveCommand.start false EffectiveCommand.Command.update 3 3)).isSome = true ∧
+    (EffectiveCommand.protocol true (EffectiveCommand.start true EffectiveCommand.Command.update 3 3)).isSome = true ∧
+      AlignmentInquiry.choose EffectiveCommand.interface
+          [EffectiveCommand.start false EffectiveCommand.Command.update 3 3,
+            EffectiveCommand.start true EffectiveCommand.Command.update 3 3]
+          EffectiveCommand.plans =
+        none
+EffectiveCommand.timely_inquiry_retains_correction :
+  (AlignmentInquiry.run EffectiveCommand.interface
+        { query := EffectiveCommand.Query.route, negative := false, positive := true }
+        (EffectiveCommand.start true EffectiveCommand.Command.update 4 4)).isSome =
+    true
+EffectiveCommand.accurate_but_late_probe_fails :
+  AlignmentInquiry.run EffectiveCommand.interface
+      { query := EffectiveCommand.Query.slow, negative := false, positive := true }
+      (EffectiveCommand.start true EffectiveCommand.Command.update 4 4) =
+    none
+EffectiveCommand.actual_shutdown_completes :
+  Option.map (fun s => (s.completed, s.running, s.reserve, s.spent))
+      (AlignmentInquiry.run EffectiveCommand.interface
+        { query := EffectiveCommand.Query.route, negative := false, positive := true }
+        (EffectiveCommand.start true EffectiveCommand.Command.shutdown 4 4)) =
+    some (true, false, 0, 4)
+EffectiveCommand.actual_replacement_completes :
+  Option.map (fun s => (s.completed, s.generation, s.version))
+      (AlignmentInquiry.run EffectiveCommand.interface
+        { query := EffectiveCommand.Query.route, negative := false, positive := true }
+        (EffectiveCommand.start false EffectiveCommand.Command.replace 4 4)) =
+    some (true, 1, 0)
+EffectiveCommand.actual_update_completes :
+  Option.map (fun s => (s.completed, s.generation, s.version))
+      (AlignmentInquiry.run EffectiveCommand.interface
+        { query := EffectiveCommand.Query.route, negative := false, positive := true }
+        (EffectiveCommand.start true EffectiveCommand.Command.update 4 4)) =
+    some (true, 0, 1)
+EffectiveCommand.omitted_route_model_can_fail :
+  AlignmentInquiry.choose EffectiveCommand.interface [EffectiveCommand.start false EffectiveCommand.Command.update 3 3]
+        EffectiveCommand.plans =
+      some { query := EffectiveCommand.Query.none, negative := false, positive := false } ∧
+    AlignmentInquiry.run EffectiveCommand.interface
+        { query := EffectiveCommand.Query.none, negative := false, positive := false }
+        (EffectiveCommand.start true EffectiveCommand.Command.update 3 3) =
+      none

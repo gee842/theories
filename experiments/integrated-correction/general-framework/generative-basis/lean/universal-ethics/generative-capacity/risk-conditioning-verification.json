@@ -1,0 +1,153 @@
+{
+  "status": "passed",
+  "utc": "20261008T115053.043257Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "risk-conditioning-checks/20261008T115053.043257Z",
+  "source_sha256": "7f26d67c47ee6f716d56be6fe3d79ffa769110bc976f3732bdd6256e672f3edb",
+  "checker_sha256": {
+    "check_risk_conditioning.py": "c82d4b226a4af4329490d1f1c2f3548797d2eff6f2cea540b585e683ea413b5e",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "A single finite joint law, actual gate resolution, conditional counts and a quadratic ranking reversal. No score is adopted ethically; current-risk correspondence, historical warrant and dynamic choice are distinct. NP and existing sharing results are reused without recompilation.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "kernel_checked": true,
+  "new_theorems": 10,
+  "declarations": [
+    {
+      "kind": "inductive",
+      "name": "RiskConditioning.Plan"
+    },
+    {
+      "kind": "def",
+      "name": "RiskConditioning.aRisk"
+    },
+    {
+      "kind": "def",
+      "name": "RiskConditioning.bRisk"
+    },
+    {
+      "kind": "def",
+      "name": "RiskConditioning.localOutcome"
+    },
+    {
+      "kind": "def",
+      "name": "RiskConditioning.outcome"
+    },
+    {
+      "kind": "def",
+      "name": "RiskConditioning.events"
+    },
+    {
+      "kind": "def",
+      "name": "RiskConditioning.liveEvents"
+    },
+    {
+      "kind": "def",
+      "name": "RiskConditioning.counts"
+    },
+    {
+      "kind": "def",
+      "name": "RiskConditioning.q"
+    },
+    {
+      "kind": "theorem",
+      "name": "RiskConditioning.event_masses"
+    },
+    {
+      "kind": "theorem",
+      "name": "RiskConditioning.full_joint_counts"
+    },
+    {
+      "kind": "theorem",
+      "name": "RiskConditioning.conditional_joint_counts"
+    },
+    {
+      "kind": "theorem",
+      "name": "RiskConditioning.outside_agreement"
+    },
+    {
+      "kind": "theorem",
+      "name": "RiskConditioning.live_correspondence"
+    },
+    {
+      "kind": "theorem",
+      "name": "RiskConditioning.no_simultaneous_loss"
+    },
+    {
+      "kind": "theorem",
+      "name": "RiskConditioning.opposite_strict_rankings"
+    },
+    {
+      "kind": "theorem",
+      "name": "RiskConditioning.translation_identity"
+    },
+    {
+      "kind": "theorem",
+      "name": "RiskConditioning.translated_ranking"
+    },
+    {
+      "kind": "def",
+      "name": "RiskConditioning.earlierScore"
+    },
+    {
+      "kind": "def",
+      "name": "RiskConditioning.laterScore"
+    },
+    {
+      "kind": "theorem",
+      "name": "RiskConditioning.no_shared_minimizer"
+    }
+  ],
+  "declaration_audits": 21,
+  "axiom_dependencies": {
+    "RiskConditioning.Plan": [],
+    "RiskConditioning.aRisk": [],
+    "RiskConditioning.bRisk": [],
+    "RiskConditioning.localOutcome": [],
+    "RiskConditioning.outcome": [],
+    "RiskConditioning.events": [],
+    "RiskConditioning.liveEvents": [],
+    "RiskConditioning.counts": [],
+    "RiskConditioning.q": [],
+    "RiskConditioning.event_masses": [],
+    "RiskConditioning.full_joint_counts": [],
+    "RiskConditioning.conditional_joint_counts": [],
+    "RiskConditioning.outside_agreement": [
+      "propext"
+    ],
+    "RiskConditioning.live_correspondence": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RiskConditioning.no_simultaneous_loss": [
+      "propext"
+    ],
+    "RiskConditioning.opposite_strict_rankings": [],
+    "RiskConditioning.translation_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiskConditioning.translated_ranking": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiskConditioning.earlierScore": [],
+    "RiskConditioning.laterScore": [],
+    "RiskConditioning.no_shared_minimizer": []
+  },
+  "source_unchanged_during_check": true,
+  "artifact_sha256": {
+    "Audit.lean": "69b1b2125c966692518e15352c6032a8cd5254a99b1e476f2494b3f80a32bcdf",
+    "RiskConditioning.lean": "7f26d67c47ee6f716d56be6fe3d79ffa769110bc976f3732bdd6256e672f3edb",
+    "Signatures.lean": "7b8e89d37e355e2dd7569177e466200e5de67311b816693616ca82408e429c92",
+    "axioms.log": "c2c346e2631d93dba903102872d40a4d567c343ebe40a82a241bcd7d45e267c8",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_risk_conditioning.py": "c82d4b226a4af4329490d1f1c2f3548797d2eff6f2cea540b585e683ea413b5e",
+    "compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "signatures.log": "7a7be3de7d12238c6ee244014cd845a242c9440479d195e5731bb1f18285be48",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

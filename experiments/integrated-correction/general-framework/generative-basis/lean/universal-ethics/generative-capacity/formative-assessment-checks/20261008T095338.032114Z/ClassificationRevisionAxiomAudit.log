@@ -1,0 +1,32 @@
+'ClassificationRevision.NecessaryRoute' does not depend on any axioms
+'ClassificationRevision.Observed' does not depend on any axioms
+'ClassificationRevision.Faithful' does not depend on any axioms
+'ClassificationRevision.Covered' does not depend on any axioms
+'ClassificationRevision.AssessedRoute' does not depend on any axioms
+'ClassificationRevision.observed_target_exact_on_covered_menu' does not depend on any axioms
+'ClassificationRevision.acquired_classification_exact' does not depend on any axioms
+'ClassificationRevision.one_faithful_alternative_defeats_necessity' does not depend on any axioms
+'ClassificationRevision.restriction_can_only_strengthen_necessity_with_witness' does not depend on any axioms
+'ClassificationRevision.alternative_survives_menu_expansion' does not depend on any axioms
+'ClassificationRevision.CommonNecessity' does not depend on any axioms
+'ClassificationRevision.necessity_survives_supported_refinement' does not depend on any axioms
+'ClassificationRevision.common_necessity_at_actual' does not depend on any axioms
+'ClassificationRevision.Arrangement' does not depend on any axioms
+'ClassificationRevision.access' does not depend on any axioms
+'ClassificationRevision.target' does not depend on any axioms
+'ClassificationRevision.usesRelay' does not depend on any axioms
+'ClassificationRevision.oldMenu' does not depend on any axioms
+'ClassificationRevision.enlargedMenu' does not depend on any axioms
+'ClassificationRevision.acquire' does not depend on any axioms
+'ClassificationRevision.firstRecords' does not depend on any axioms
+'ClassificationRevision.laterRecords' does not depend on any axioms
+'ClassificationRevision.acquisition_faithful' depends on axioms: [propext, Quot.sound]
+'ClassificationRevision.first_classification_scoped' depends on axioms: [propext]
+'ClassificationRevision.later_record_preserves_previous_records' does not depend on any axioms
+'ClassificationRevision.later_records_faithful' depends on axioms: [propext, Quot.sound]
+'ClassificationRevision.later_records_cover_enlarged_menu' depends on axioms: [propext]
+'ClassificationRevision.discovered_route_revises_classification' depends on axioms: [propext, Quot.sound]
+'ClassificationRevision.broader_target_remains_realized_without_old_route' depends on axioms: [propext]
+'ClassificationRevision.withholding_available_route_creates_apparent_necessity' depends on axioms: [propext, Quot.sound]
+'ClassificationRevision.corruptRecords' does not depend on any axioms
+'ClassificationRevision.false_reading_defeats_correspondence' depends on axioms: [propext]

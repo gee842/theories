@@ -1,0 +1,185 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T08:27:11.872579+00:00",
+  "scope": "Owned documentation, source and executed measurement bindings, C14 row and six broader requirements; no whole-repository certification or new scientific rerun.",
+  "links_checked": 34,
+  "local_links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md",
+      "reference": "DEVELOPMENTAL-HISTORY-PROTOCOL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md",
+      "reference": "../../../../sources/evolutionary-selection/karita-2026/microscopy-history/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/developmental-history/raw-history.png"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/developmental-history/endpoint-inspection.png"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/developmental-history/endpoint-review.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/developmental-history/measurement-sensitivity.png"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/developmental-history/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/developmental-history/measurement-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md",
+      "reference": "DEVELOPMENTAL-HISTORY-CHECKS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md",
+      "reference": "DEVELOPMENTAL-HISTORY-CHECK.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md",
+      "reference": "EVOLUTION-NETWORK-COMPARISON.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-PROTOCOL.md",
+      "reference": "MICROSCOPY-CORRESPONDENCE-INTEGRATION.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/developmental-history/README.md",
+      "reference": "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/developmental-history/README.md",
+      "reference": "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-PROTOCOL.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/developmental-history/README.md",
+      "reference": "../../../../../../../sources/evolutionary-selection/karita-2026/microscopy-history/README.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/developmental-history/README.md",
+      "reference": "raw-history.png"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/developmental-history/README.md",
+      "reference": "measurement-verification.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/developmental-history/README.md",
+      "reference": "endpoint-review.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/developmental-history/README.md",
+      "reference": "endpoint-inspection.png"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/developmental-history/README.md",
+      "reference": "measurement-sensitivity.png"
+    },
+    {
+      "from": "sources/evolutionary-selection/karita-2026/microscopy-history/README.md",
+      "reference": "../README.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/karita-2026/microscopy-history/README.md",
+      "reference": "../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-PROTOCOL.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/karita-2026/microscopy-history/README.md",
+      "reference": "../microscopy-metadata/README.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/karita-2026/microscopy-history/README.md",
+      "reference": "manifest.json"
+    },
+    {
+      "from": "sources/evolutionary-selection/karita-2026/microscopy-history/README.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/developmental-history/README.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/karita-2026/microscopy-history/README.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/developmental-history/measurement-verification.json"
+    },
+    {
+      "from": "RESEARCH.md",
+      "reference": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "DEVELOPMENTAL-HISTORY-INTEGRATION.md"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "reference": "evolutionary-selection/karita-2026/microscopy-history/README.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MICROSCOPY-CORRESPONDENCE-INTEGRATION.md",
+      "reference": "DEVELOPMENTAL-HISTORY-INTEGRATION.md"
+    }
+  ],
+  "owned_index_insertions": 8,
+  "frames_checked": 91,
+  "crop_pixels_checked": 23855104,
+  "original_new_bytes": 251170816,
+  "visual_endpoint_assessments": 4,
+  "new_Lean_theorems": 0,
+  "full_theory_requirements_preserved": 6,
+  "C14_matches_paired_data": true,
+  "other_entries_preserved_at_edit": 89,
+  "shared_table_structural_errors": [],
+  "shared_table_reviews_pending": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-ARGUMENT.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONCERN-AND-NEW-REASONS.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md"
+    ],
+    "removed_pages": []
+  },
+  "shared_full_render_matches": true,
+  "artifact_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INTEGRATION.md": "8ce27a6cd0eefde5c52e4ba711c91be753e5bce5bda2fdfc420f7b519af568d5",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-PROTOCOL.md": "3237358d1ea948d5e578bf75a675e686d9de590036218455eea820624b7dd065",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/developmental-history/README.md": "3a7f03396d2846aa9725fe5092b3a4cd186afe84bbd92074d862133bfb13a55c",
+    "sources/evolutionary-selection/karita-2026/microscopy-history/README.md": "e51d6484d7cf9ed9b5daeeccea574857440064716b0415f6404d83e6baa10435",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-INDEX-EDITS.json": "134fa097627a56af810a72d09ef0b1b50c4cd97e32dd6b546e433fde6774c778",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/developmental-history/results.json": "a2f54bc42ca870627e52a83771914bc419e1029f45383a63b587482558753827",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/developmental-history/measurement-verification.json": "606e6b2c56150011dd8d5069f569468f99f4831b0b2db1a3f25b68fc6f541843",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/developmental-history/endpoint-review.json": "1cb1ed664ba17da11675f02a0e4a1b7cace55a731e8b05085ebb668973c26795",
+    "sources/evolutionary-selection/karita-2026/microscopy-history/manifest.json": "cc197e8725a0295beab61353761a29fb7ebc030234ee5d38c079f6c272570196"
+  },
+  "checker_sha256": "73ef276a2e0bb792baf2be954e92fcf20f4ef10cbe5da3af54fe95813445a5dc"
+}

@@ -1,0 +1,71 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-acquired-support-use-89ld_lyx/AcquiredSupportUseCases.lean:20:70: error: unsolved goals
+revision fuel : Nat
+⊢ (setBusy (setBusy (fun x => false) () true) () false = fun x => false) ∧
+    bump (bump (fun x => revision) ()) () = fun x => revision + 2
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-acquired-support-use-89ld_lyx/AcquiredSupportUseCases.lean:21:45: warning: This simp argument is unused:
+  setBusy
+
+Hint: Omit it from the simp argument list.
+  simp [cycleEnd, idle, next, update, after, s̵e̵t̵B̵u̵s̵y̵,̵ ̵bump, Nat.add_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-acquired-support-use-89ld_lyx/AcquiredSupportUseCases.lean:21:54: warning: This simp argument is unused:
+  bump
+
+Hint: Omit it from the simp argument list.
+  simp [cycleEnd, idle, next, update, after, setBusy, b̵u̵m̵p̵,̵ ̵Nat.add_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-acquired-support-use-89ld_lyx/AcquiredSupportUseCases.lean:21:60: warning: This simp argument is unused:
+  Nat.add_assoc
+
+Hint: Omit it from the simp argument list.
+  simp [cycleEnd, idle, next, update, after, setBusy, bump,̵ ̵N̵a̵t̵.̵a̵d̵d̵_̵a̵s̵s̵o̵c̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-acquired-support-use-89ld_lyx/AcquiredSupportUseCases.lean:44:11: error: Tactic `rfl` failed: The left-hand side
+  totalCharge ([] ++ ys)
+is not definitionally equal to the right-hand side
+  totalCharge [] + totalCharge ys
+
+case nil
+R : Type
+ys : List (Action R)
+⊢ totalCharge ([] ++ ys) = totalCharge [] + totalCharge ys
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-acquired-support-use-89ld_lyx/AcquiredSupportUseCases.lean:50:32: warning: This simp argument is unused:
+  totalCharge_append
+
+Hint: Omit it from the simp argument list.
+  simp [retries, t̵o̵t̵a̵l̵C̵h̵a̵r̵g̵e̵_̵a̵p̵p̵e̵n̵d̵,̵ ̵cycle, totalCharge, charge, ih, Nat.add_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-acquired-support-use-89ld_lyx/AcquiredSupportUseCases.lean:75:69: error: Application type mismatch: The argument
+  True.intro
+has type
+  True
+but is expected to have type
+  ?m.89 (idle (revision + 2 * n) (fuel - n)).world.physical.route
+in the application
+  fresh_read_use (idle (revision + 2 * n) (fuel - n)) True.intro
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-acquired-support-use-89ld_lyx/AcquiredSupportUseCases.lean:105:40: error(lean.unknownIdentifier): Unknown identifier `t`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-acquired-support-use-89ld_lyx/AcquiredSupportUseCases.lean:105:61: error(lean.unknownIdentifier): Unknown identifier `stored`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-acquired-support-use-89ld_lyx/AcquiredSupportUseCases.lean:106:10: error(lean.unknownIdentifier): Unknown identifier `t`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-acquired-support-use-89ld_lyx/AcquiredSupportUseCases.lean:115:40: error(lean.unknownIdentifier): Unknown identifier `t`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-acquired-support-use-89ld_lyx/AcquiredSupportUseCases.lean:115:61: error(lean.unknownIdentifier): Unknown identifier `stored`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-acquired-support-use-89ld_lyx/AcquiredSupportUseCases.lean:116:10: error(lean.unknownIdentifier): Unknown identifier `t`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-acquired-support-use-89ld_lyx/AcquiredSupportUseCases.lean:133:36: error(lean.unknownIdentifier): Unknown identifier `t`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-acquired-support-use-89ld_lyx/AcquiredSupportUseCases.lean:133:57: error(lean.unknownIdentifier): Unknown identifier `stored`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-acquired-support-use-89ld_lyx/AcquiredSupportUseCases.lean:134:8: error(lean.unknownIdentifier): Unknown identifier `t`
+'Generative.AcquiredSupportUseCases.cycle_end' depends on axioms: [propext, sorryAx]
+'Generative.AcquiredSupportUseCases.cycle_trace' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.AcquiredSupportUseCases.totalCharge_append' depends on axioms: [propext, sorryAx]
+'Generative.AcquiredSupportUseCases.retries_charge' depends on axioms: [propext]
+'Generative.AcquiredSupportUseCases.retries_trace' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.AcquiredSupportUseCases.retries_then_use_iff' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.AcquiredSupportUseCases.finite_budget_can_be_exhausted' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.AcquiredSupportUseCases.acquired_ticket_initially_usable' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSupportUseCases.stale_read_rejected' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.AcquiredSupportUseCases.restored_value_still_rejected' depends on axioms: [sorryAx]
+'Generative.AcquiredSupportUseCases.unrelated_change_then_use' does not depend on any axioms
+'Generative.AcquiredSupportUseCases.wrong_route_rejected' depends on axioms: [sorryAx]
+'Generative.AcquiredSupportUseCases.bypass_breaks_correspondence' does not depend on any axioms

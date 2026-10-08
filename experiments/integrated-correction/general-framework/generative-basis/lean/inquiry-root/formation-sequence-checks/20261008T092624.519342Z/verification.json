@@ -1,0 +1,99 @@
+{
+  "status": "passed",
+  "utc": "20261008T092624.519342Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "formation-sequence-checks/20261008T092624.519342Z",
+  "source_sha256": {
+    "FormationSequence": "f51b91c47bab605fb08a050ffb1e932ea288fca91c2f8294687a4da94b751017"
+  },
+  "checker_sha256": {
+    "check_formation_sequence.py": "bdaedf5950c8b2d277a85e15ead48dae1c1d5b569a7ed711212742589ff6aa83",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Supplied whole-history comparisons compose; stage-specific comparisons require a transport premise. A numerical diagnostic fails that transport despite both comparisons being transitive. Faithful redescription is separately supplied. No ethical warrant, full rival theory, empirical result or universal necessity is proved.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "kernel_checked": true,
+  "theorems": 6,
+  "declarations": [
+    {
+      "kind": "def",
+      "name": "Generative.FormationSequence.TransitiveComparison"
+    },
+    {
+      "kind": "theorem",
+      "name": "Generative.FormationSequence.whole_comparisons_favor_formation"
+    },
+    {
+      "kind": "theorem",
+      "name": "Generative.FormationSequence.transport_supports_initial_comparison"
+    },
+    {
+      "kind": "theorem",
+      "name": "Generative.FormationSequence.faithful_redescription_preserves_result"
+    },
+    {
+      "kind": "inductive",
+      "name": "Generative.FormationSequence.History"
+    },
+    {
+      "kind": "def",
+      "name": "Generative.FormationSequence.incumbentGain"
+    },
+    {
+      "kind": "def",
+      "name": "Generative.FormationSequence.newLiving"
+    },
+    {
+      "kind": "def",
+      "name": "Generative.FormationSequence.initialScore"
+    },
+    {
+      "kind": "def",
+      "name": "Generative.FormationSequence.laterScore"
+    },
+    {
+      "kind": "def",
+      "name": "Generative.FormationSequence.ScoredAbove"
+    },
+    {
+      "kind": "theorem",
+      "name": "Generative.FormationSequence.score_comparison_transitive"
+    },
+    {
+      "kind": "theorem",
+      "name": "Generative.FormationSequence.stages_can_favor_without_initial_favor"
+    },
+    {
+      "kind": "theorem",
+      "name": "Generative.FormationSequence.diagnostic_fails_transport"
+    }
+  ],
+  "axiom_dependencies": {
+    "Generative.FormationSequence.TransitiveComparison": [],
+    "Generative.FormationSequence.whole_comparisons_favor_formation": [],
+    "Generative.FormationSequence.transport_supports_initial_comparison": [],
+    "Generative.FormationSequence.faithful_redescription_preserves_result": [],
+    "Generative.FormationSequence.History": [],
+    "Generative.FormationSequence.incumbentGain": [],
+    "Generative.FormationSequence.newLiving": [],
+    "Generative.FormationSequence.initialScore": [],
+    "Generative.FormationSequence.laterScore": [],
+    "Generative.FormationSequence.ScoredAbove": [],
+    "Generative.FormationSequence.score_comparison_transitive": [],
+    "Generative.FormationSequence.stages_can_favor_without_initial_favor": [],
+    "Generative.FormationSequence.diagnostic_fails_transport": []
+  },
+  "artifact_sha256": {
+    "AxiomAudit.log": "f9a48104a713cd7809dcc0782a6442286e26220a65389fab72930e358eb2e1fd",
+    "FormationSequence.lean": "f51b91c47bab605fb08a050ffb1e932ea288fca91c2f8294687a4da94b751017",
+    "FormationSequenceAxiomAudit.lean": "afbed4824aaa72d6e22ea34c5eec76b9ec16041f8bb5adb5cab33f9e22f6af74",
+    "FormationSequenceSignatures.lean": "9498da50f23664e3df7de1999dd6d3b4286fd20ded86b0b70979c7a0a68f8ceb",
+    "Signatures.log": "503851741b2e14989a3510d2c025ce0baa525c78e26c02c137f972cba567866d",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_formation_sequence.py": "bdaedf5950c8b2d277a85e15ead48dae1c1d5b569a7ed711212742589ff6aa83",
+    "compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "date": "2026-10-08",
+  "entry": "C23",
+  "before": {
+    "id": "C23",
+    "title_zh": "有限认识中的情境判断",
+    "title_en": "Situated judgment under finite knowledge",
+    "claim_zh": "整体中的生及继续生成给出共同方向；G0、公开 J1–J4、有根据的有限认识及真实对应相连，支持情境中的及时回应、调查、调整和结束。回应也改变后来理解与行动的条件。",
+    "claim_en": "Living and further generation give a common orientation; G0, disclosed J1–J4, warranted finite knowledge and actual correspondence jointly support timely response, inquiry, revision and closure. Responses also change later conditions of understanding and action.",
+    "scope_zh": "相连候选已整合；继承30项实践与8项求知定理的条件范围，无新增证明。未知不等于无损，共同保证不是一切合理冒险的必要条件；J2强度及实际范围须明示。实践候选经独立审查，知识接续为作者反审。",
+    "scope_en": "Connected defended candidate integrated; inherits conditional 30-theorem practical and eight-theorem inquiry packages, with no new proof. Unknown effects are not absent losses; a common guarantee is not necessary for every warranted risk. J2 and actual scope remain explicit. Practical review is independent; knowledge continuation has author counterreview.",
+    "links": [
+      {
+        "label_zh": "情境与不确定性",
+        "label_en": "Situation and uncertainty",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#situated-judgment-under-deep-uncertainty"
+      },
+      {
+        "label_zh": "整合与范围修正",
+        "label_en": "Integration and scope correction",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md#4-必要损失与目前只知道这条路不同",
+        "label_zh": "必要性与有限认识",
+        "label_en": "Necessity and finite knowledge"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md#5-真实冲突有限认识与及时决定--conflict-and-uncertainty",
+        "label_zh": "有限认识与及时决定",
+        "label_en": "Uncertainty and timely decision"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md#11-新成果接续后的结论2026年10月8日",
+        "label_zh": "当前接续结论",
+        "label_en": "Current integrated conclusion"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-PRIORITIES-AND-G0.md",
+        "label_zh": "求知、及时回应与结束",
+        "label_en": "Inquiry, timely response and closure"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-INQUIRY-AND-STANDING.md",
+        "label_zh": "有根据的可能性范围",
+        "label_en": "Warranted possibility scope"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-ADEQUACY-CORRESPONDENCE.md",
+        "label_zh": "八项既有求知实查",
+        "label_en": "Eight inherited inquiry results"
+      }
+    ]
+  },
+  "after": {
+    "id": "C23",
+    "title_zh": "有限认识中的情境判断",
+    "title_en": "Situated judgment under finite knowledge",
+    "claim_zh": "整体中的生及继续生成给出共同方向；G0、公开 J1–J4、有限认识及真实对应支持及时回应、调查、调整与结束。共享厨房应用区分能力形成、实际减负、可用路线及真实接续；稳定照料与共同学习不预先排序。",
+    "claim_en": "Living and further generation orient timely response, inquiry, revision and closure through G0, disclosed J1–J4, finite knowledge and actual correspondence. The kitchen application distinguishes capacity formation, actual relief, usable access and realized succession; stable care and shared learning are not pre-ranked.",
+    "scope_zh": "相连候选及构造应用；新增9项定理／20项审计，继承实践30项与求知8项的条件范围。保留不可比、负担反转与基本冲突；无现场验证。实践候选独立审查与知识、应用作者反审分别保留；J2及实际对应仍须辩护。",
+    "scope_en": "Connected candidate and constructed application; nine new theorems/20 audits, retaining the conditional 30-theorem practical and eight-theorem inquiry scopes. Incomparability, burden reversal and basic conflicts remain; no field validation. Practical acceptance is independent; knowledge and application have author counterreview. J2 and correspondence remain substantive.",
+    "links": [
+      {
+        "label_zh": "情境与不确定性",
+        "label_en": "Situation and uncertainty",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#situated-judgment-under-deep-uncertainty"
+      },
+      {
+        "label_zh": "整合与范围修正",
+        "label_en": "Integration and scope correction",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md#4-必要损失与目前只知道这条路不同",
+        "label_zh": "必要性与有限认识",
+        "label_en": "Necessity and finite knowledge"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md#5-真实冲突有限认识与及时决定--conflict-and-uncertainty",
+        "label_zh": "有限认识与及时决定",
+        "label_en": "Uncertainty and timely decision"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md#11-新成果接续后的结论2026年10月8日",
+        "label_zh": "当前接续结论",
+        "label_en": "Current integrated conclusion"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-PRIORITIES-AND-G0.md",
+        "label_zh": "求知、及时回应与结束",
+        "label_en": "Inquiry, timely response and closure"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-INQUIRY-AND-STANDING.md",
+        "label_zh": "有根据的可能性范围",
+        "label_en": "Warranted possibility scope"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-ADEQUACY-CORRESPONDENCE.md",
+        "label_zh": "八项既有求知实查",
+        "label_en": "Eight inherited inquiry results"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-CALIBRATION.md",
+        "label_zh": "共享厨房应用与校准",
+        "label_en": "Shared-kitchen application and calibration"
+      }
+    ]
+  },
+  "other_entries_preserved": 84,
+  "reviewed_sources": [
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-CALIBRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md"
+  ],
+  "discovery_added": [
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-CALIBRATION.md"
+  ],
+  "all_other_discovery_paths_preserved": true,
+  "scoped_existing_renderer": true,
+  "pending_global_changes": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/README.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [],
+    "removed_pages": []
+  },
+  "scope": "Only C23, the owned new study discovery and the actually read owned source changes are updated. Shared navigation edits and unrelated concurrent reviews remain separate; no full-results catalogue regeneration."
+}

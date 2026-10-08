@@ -1,0 +1,79 @@
+{
+  "entry_id": "M24",
+  "entry": {
+    "id": "M24",
+    "title_zh": "元吸引子与选择条件的重建",
+    "title_en": "Meta-attractors and reproduction of selection conditions",
+    "claim_zh": "活动后果参与重建选择该组织的条件，使其经具体承载者变化仍能接续；区分机制条件、实际边界、动力学接近及可行纠正。",
+    "claim_en": "Consequences help reproduce conditions selecting an organization across carrier changes; distinguish mechanism conditions, formed boundaries, dynamical approach and feasible correction.",
+    "scope_zh": "条件构造有47项新 Lean 定理／65项声明审计，直接连接实际核心轨迹、承载者替换、供给失败、盆地、扰动及区间／延迟下的退出。另有1,681项市场及1,053项回返预算计算。相同被动轨迹不足以辨认回返来源；经验对应、更丰富承载者实现及真实干预仍开放。作者反审不冒充独立验收；目标继续。",
+    "scope_en": "47 new Lean theorems / 65 audits connect actual core traces, carrier replacement, supply failure, basin, disturbances and exit under delay/interval uncertainty. 1,681 market and 1,053 recurrence-budget calculations supplement the proofs. Identical passive histories need not identify causal return; empirical correspondence, richer carrier realization and actual interventions remain open. Author counterreview is not independent acceptance; the goal continues.",
+    "links": [
+      {
+        "label_zh": "当前定义",
+        "label_en": "Current definition",
+        "path": "theories/meta-attractor/GENERATIVE-REGIMES.md"
+      },
+      {
+        "label_zh": "整合与完成范围",
+        "label_en": "Integration and scope",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-INTEGRATION.md"
+      },
+      {
+        "label_zh": "主来源与对手",
+        "label_en": "Primary comparisons",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-EVIDENCE.md"
+      },
+      {
+        "label_zh": "实质反审",
+        "label_en": "Substantive counterreview",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REVIEW.md"
+      },
+      {
+        "label_zh": "Lean实查",
+        "label_en": "Lean verification",
+        "path": "experiments/market-generativity/meta-attractor/verification.json"
+      },
+      {
+        "label_zh": "原话与目标",
+        "label_en": "Request and objective",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md"
+      }
+    ]
+  },
+  "other_entries_preserved": 89,
+  "reviewed_owned_sources": [
+    "theories/meta-attractor/GENERATIVE-REGIMES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-EVIDENCE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REVIEW.md",
+    "experiments/market-generativity/meta-attractor/verification.json",
+    "sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md"
+  ],
+  "owned_discovery": [
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-EVIDENCE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REVIEW.md"
+  ],
+  "data_before_sha256": "8d2c4434a284d3b460930be12bb3d4b331fea7aa023ecc564e6f498ccb5c1891",
+  "data_after_sha256": "c84dd16076e35dc1477a72883e4529c22cc7b7567a286c488758c7c05a1517ad",
+  "table_before_sha256": "56b47a9017a27ded6078f587e6b56a24ec1569ece5738d09b38aceaf50403957",
+  "table_after_sha256": "226ab9cfccfe7041e8a4cbdf37107094b8127af0af668c9d63b15e2a3e16fc69",
+  "rendered_row": "| M24 | 元吸引子与选择条件的重建<br>Meta-attractors and reproduction of selection conditions | 活动后果参与重建选择该组织的条件，使其经具体承载者变化仍能接续；区分机制条件、实际边界、动力学接近及可行纠正。 | Consequences help reproduce conditions selecting an organization across carrier changes; distinguish mechanism conditions, formed boundaries, dynamical approach and feasible correction. | 条件构造有47项新 Lean 定理／65项声明审计，直接连接实际核心轨迹、承载者替换、供给失败、盆地、扰动及区间／延迟下的退出。另有1,681项市场及1,053项回返预算计算。相同被动轨迹不足以辨认回返来源；经验对应、更丰富承载者实现及真实干预仍开放。作者反审不冒充独立验收；目标继续。<br>47 new Lean theorems / 65 audits connect actual core traces, carrier replacement, supply failure, basin, disturbances and exit under delay/interval uncertainty. 1,681 market and 1,053 recurrence-budget calculations supplement the proofs. Identical passive histories need not identify causal return; empirical correspondence, richer carrier realization and actual interventions remain open. Author counterreview is not independent acceptance; the goal continues. | [当前定义 / Current definition](../../meta-attractor/GENERATIVE-REGIMES.md)<br>[整合与完成范围 / Integration and scope](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-INTEGRATION.md)<br>[主来源与对手 / Primary comparisons](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-EVIDENCE.md)<br>[实质反审 / Substantive counterreview](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REVIEW.md)<br>[Lean实查 / Lean verification](../../../experiments/market-generativity/meta-attractor/verification.json)<br>[原话与目标 / Request and objective](../../../sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md) |",
+  "pending_shared_reviews": [
+    "RESEARCH.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/KNOWLEDGE.md",
+    "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+    "sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md",
+    "theories/shengsheng-buxi-generative-existence/README.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PHILOSOPHICAL-ACCOUNT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-COMPARATIVE-DIRECTION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-VALUE-NECESSITY.md"
+  ]
+}

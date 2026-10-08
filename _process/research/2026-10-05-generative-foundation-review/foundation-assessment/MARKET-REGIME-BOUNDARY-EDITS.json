@@ -1,0 +1,176 @@
+{
+  "scope": "Owned append/notice and paired index changes; preserve concurrent work.",
+  "files": {
+    "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md": {
+      "before_bytes": 12739,
+      "before_sha256": "2f6ce7bd5f28e2734d931de5d5369ce239e597053b7c3230a7cc9b1e375ced2f",
+      "edit": "append",
+      "append_bytes": 1021,
+      "after_owned_sha256": "2a8b713acf862f7c9c65294011f747f8588890dac3da3f3b37359c4800c863d5",
+      "subsequent_concurrent_bytes_read": 689,
+      "subsequent_concurrent_sha256": "e0a60c8cc085d6f42d9a1f65b78723747dbb553e011ccd3a9a18afbc9cfb6c71"
+    },
+    "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md": {
+      "before_bytes": 27416,
+      "before_sha256": "38f5063dd9989a5d8c6222615e75a585ed750151c87c76ad5e5cfc62884ca94e",
+      "edit": "append",
+      "append_bytes": 14007,
+      "after_owned_sha256": "932d62cc6316722bf5f95d6cfff51b215a0b6f4da9988712a5dfe26d2fbfb7b9"
+    },
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md": {
+      "before_bytes": 22954,
+      "before_sha256": "683b05a72f165f42a97deb361af454596e2510070829db22e1c74018b80c8686",
+      "edit": "append",
+      "append_bytes": 4599,
+      "after_owned_sha256": "5cfb7b4d14b9a9f7d9ed216111cdd0784257a081fa789885cae43e3d1d116200"
+    },
+    "experiments/market-generativity/formal/README.md": {
+      "before_bytes": 8313,
+      "before_sha256": "6a27a22f1a51f7ff561af06fc7db957693e302073a93b4c39e1e37958b12c48b",
+      "edit": "append",
+      "append_bytes": 3623,
+      "after_owned_sha256": "d75b82797acbba6e4ca2be8909587ee8649d41d5ae1ecc50bca70f77fba4bc1b"
+    },
+    "RESEARCH.md": {
+      "before_bytes": 534171,
+      "before_sha256": "5a58d5c3067428b69d632ef134806ec8d29dc286b2de4936ad44f69af8b007a4",
+      "initial_snapshot": {
+        "before_bytes": 533973,
+        "before_sha256": "5de6dc3b7869afa6b37d24b1eba5edf07c2bf60915c91812f0d62ad769776f65"
+      },
+      "owned_fragment": "**退化边界与转变 / Degeneration boundaries and transitions，2026-10-08。** [条件论证、反审与实查](_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#degeneration-boundary-and-transition)在原市场规律中找到统一门槛保护与低选择证书存在的精确余量界线，并检查域内任意时刻保持；19项新 Lean 定理／27项声明审计，39项导入审计分列。/ This conditional boundary is complete; the same parameters can support a distinct favorable region. Next: actual returning relations through institutional change, full state domains and rate-dependent transitions. No universal degeneration, complete basin, empirical threshold or spectral bifurcation is certified.\n\n",
+      "edit": "insert notice",
+      "after_owned_sha256": "4ca239e167d7fa93cada6d6c257ef5cfdba89a5aa91ebf57201bda27fad28aeb"
+    },
+    "theories/shengsheng-buxi-generative-existence/README.md": {
+      "before_bytes": 769400,
+      "before_sha256": "8bca11348dbc53204a9536c303e5d129e3edf492ca287de0a4b9f4bf00be07e4",
+      "initial_snapshot": {
+        "before_bytes": 768993,
+        "before_sha256": "2d52d1c0b0bde94b8487e5f9eabd1dd5663093d4d660db6523896c0cd1087d5d"
+      },
+      "owned_fragment": "**退化的条件边界 / Conditional degeneration boundaries，2026-10-08。** [当前市场与元吸引子接续](unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md#degeneration-boundaries-and-transitions)区分伦理损失、返回机制和状态域，完成原模型的精确保护／低区证书边界及域内保持：19项新 Lean 定理／27项审计。/ Favorable and low-selection regions can coexist; actual institutional correspondence, full domains and transition rates remain the next connection. Completed normative direction is reused.\n\n",
+      "edit": "insert notice",
+      "after_owned_sha256": "c8d407b3756fe8f82297b1c3142c0feaa11c0fc93643771f7697fee6c2cdfcb0"
+    },
+    "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md": {
+      "before_bytes": 41881,
+      "before_sha256": "bda6eb91148f46de463f33a350811e9885050653d726b65b90dec3e2c89d3c93",
+      "initial_snapshot": {
+        "before_bytes": 41881,
+        "before_sha256": "bda6eb91148f46de463f33a350811e9885050653d726b65b90dec3e2c89d3c93"
+      },
+      "owned_fragment": "**退化边界与相变路线 / Degeneration boundaries and transition routes，2026-10-08。** [本轮结果与反审](../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#degeneration-boundary-and-transition)完成纠正余量的精确边界、低选择区存在与域内保持，19项新 Lean 定理／27项审计。/ Reuse this result rather than reopening the local mechanism. Continue identifying returning relations under institutional change and full state/rate conditions; parameter thresholds, state displacement, execution failure and rate-induced change are distinct. No empirical phase threshold or universal adverse convergence is established.\n\n",
+      "edit": "insert notice",
+      "after_owned_sha256": "e279302ec21c6632d580b99ba8f18bc7c16c43820d3f464d129e0af96a7304fc"
+    },
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md": {
+      "before_bytes": 97817,
+      "before_sha256": "ae0fcc898bbf0ac9ad0597d0cbb736d9cbdaddfa1f3745ca0350b3cef241dc3e",
+      "initial_snapshot": {
+        "before_bytes": 97817,
+        "before_sha256": "ae0fcc898bbf0ac9ad0597d0cbb736d9cbdaddfa1f3745ca0350b3cef241dc3e"
+      },
+      "owned_fragment": "**退化边界与选择条件的对齐，2026-10-08。** [当前论证与精确边界](MARKETS-AND-GENERATIVE-REGIMES.md#degeneration-boundaries-and-transitions)落实 Ren 的相变问题：评价目标执行怎样改变纠正余量、返回关系和可保持状态域。19项新 Lean 定理／27项审计支持指定模型的保护及低区边界；良性域仍可共存。/ The local boundary is complete; actual rule-changing correspondence, full domains and rates remain open. Normative direction and previous formation results remain credited, not reopened.\n\n",
+      "edit": "insert notice",
+      "after_owned_sha256": "0100a9fbee5d06f754fbf63ac32cde140861893497d62931e63e249791e8f8d0"
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md": {
+      "before_bytes": 197448,
+      "before_sha256": "fef27d31a8df36f2e0fe2327bd3a6c234ad0481edda89c94773b37be2ade8adc",
+      "initial_snapshot": {
+        "before_bytes": 196316,
+        "before_sha256": "496fa6696d8c3fbd48b58ca37e1eb7cbfcb4ce999d2be5de05d72990fc0d8d2c"
+      },
+      "owned_fragment": "**退化边界及域内规律 / Degeneration boundaries and within-domain laws，2026-10-08。** M20 成对接入[精确边界、历史对应及反审](../foundation-assessment/MARKET-INTERNET-DEGENERATION.md#degeneration-boundary-and-transition)：19项新 Lean 定理／27项新声明审计，39项导入审计分列。/ Only owned additions and authored/read source versions change; other rows, discovery and pending reviews are preserved. [Edits](../foundation-assessment/MARKET-REGIME-BOUNDARY-EDITS.json); [scoped checks](../foundation-assessment/MARKET-REGIME-BOUNDARY-CHECKS.json). No full-table freshness, full basin, empirical calibration or independent acceptance is claimed.\n\n",
+      "edit": "insert notice",
+      "after_owned_sha256": "d23d4939f4fce181ce1d2dbbe04c5b9222948babdc6bb1c726a55efb17e28a5b"
+    }
+  },
+  "scientific_receipt": "experiments/market-generativity/formal/boundary-verification.json",
+  "chain": {
+    "entry": "M20",
+    "field_additions": {
+      "claim_zh": " 退化边界续研区分伦理损失、返回机制与状态域：原市场模型中纠正余量精确决定统一门槛保护及指定低区证书的存在，同参数仍可保留良性域。",
+      "claim_en": " The degeneration extension separates ethical loss, returning selection and state domains: an exact correction margin governs uniform floor protection and existence of the specified low-region certificates, while a favorable region can coexist.",
+      "scope_zh": " 本轮新增19项 Lean 定理／27项声明审计，39项导入审计分列；实际检查区域存在、一步及任意时刻闭合与正份额下降。未证完整吸引域、严格分岔、现实阈值或普遍退化；作者反审，无独立验收或新经验测量。",
+      "scope_en": " This extension checks 19 new Lean theorems / 27 declaration audits, separately rebuilding 39 imported audits: certificate existence, one-step and all-time closure, and positive-share decline. No full basin, spectral bifurcation, empirical threshold, universal degeneration or independent acceptance is claimed.",
+      "connection_zh": " 本轮精确条件边界已完成；下一连接是制度变化中实际返回关系的识别、完整状态域及变化速率下的转变条件，复用已完成规范方向。",
+      "connection_en": " The exact conditional boundary is complete. Next are actual returning relations through institutional change and transition conditions across full state domains and rates; completed normative direction is reused."
+    },
+    "added_links": [
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md#degeneration-boundaries-and-transitions",
+        "label_zh": "退化的条件边界",
+        "label_en": "Conditional degeneration boundaries"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#degeneration-boundary-and-transition",
+        "label_zh": "精确边界、转变与反审",
+        "label_en": "Exact boundary, transitions and counterreview"
+      },
+      {
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#degeneration-boundaries-and-phase-transitions",
+        "label_zh": "边界与相变原话",
+        "label_en": "Boundary and transition directive"
+      },
+      {
+        "path": "experiments/market-generativity/formal/RegimeBoundary.lean",
+        "label_zh": "边界实际证明",
+        "label_en": "Actual boundary proofs"
+      },
+      {
+        "path": "experiments/market-generativity/formal/boundary-verification.json",
+        "label_zh": "19项定理实查回执",
+        "label_en": "19-theorem verification receipt"
+      }
+    ],
+    "entry_before_sha256": "891f8a4c5040f7db3a1a45da513c803df62a583b0afb7144f46312afcfc299ff",
+    "other_entries_preserved": true,
+    "other_rendered_lines_preserved": true,
+    "known_discovery_paths_preserved": true,
+    "reviewed_sources_updated": [
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md",
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "experiments/market-generativity/formal/RegimeBoundary.lean",
+      "experiments/market-generativity/formal/boundary-verification.json"
+    ],
+    "pending_reviews": {
+      "modified_sources": [
+        "RESEARCH.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+        "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+        "theories/shengsheng-buxi-generative-existence/README.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+        "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+        "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md"
+      ],
+      "missing_sources": [],
+      "new_pages": [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-CORRESPONDENCE.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-FORMAL-PROTOCOL.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-FORMAL-REVIEW.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-PROOF.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-DRIFT-MARGINS-PROTOCOL.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md"
+      ],
+      "removed_pages": [
+        "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md"
+      ]
+    },
+    "schema_link_errors": [],
+    "old_row_sha256": "fd153b8e432b0cc2e220007d69f2e3f26358be22b4b3cf6a40e024d93fe401aa",
+    "new_row_sha256": "acf9f40acd95ce3d3f72e51a07d233c3c7b0396409ea2a89667bfcdc17f1f727"
+  }
+}

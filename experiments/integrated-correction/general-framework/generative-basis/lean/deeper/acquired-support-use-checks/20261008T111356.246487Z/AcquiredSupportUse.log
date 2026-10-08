@@ -1,0 +1,46 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-acquired-support-use-5q6t05jg/AcquiredSupportUse.lean:155:14: error: don't know how to synthesize implicit argument `R`
+  @Sound ?m.48 ?m.49
+context:
+R : Type u
+inst✝ : DecidableEq R
+K : R → Prop
+s t : Session R
+word : List (Action R)
+s✝ m✝ t✝ : Session R
+a✝¹ : Action R
+as✝ : List (Action R)
+step : (execution K).step s✝ a✝¹ m✝
+a✝ : Trace (execution K) m✝ as✝ t✝
+ih : Sound m✝ → Trace (process K) m✝.world.physical (List.flatMap nativeWord as✝) t✝.world.physical
+h : Sound s✝
+⊢ Type ?u.4894.126
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-acquired-support-use-5q6t05jg/AcquiredSupportUse.lean:155:20: error: don't know how to synthesize placeholder for argument `s`
+context:
+R : Type u
+inst✝ : DecidableEq R
+K : R → Prop
+s t : Session R
+word : List (Action R)
+s✝ m✝ t✝ : Session R
+a✝¹ : Action R
+as✝ : List (Action R)
+step : (execution K).step s✝ a✝¹ m✝
+a✝ : Trace (execution K) m✝ as✝ t✝
+ih : Sound m✝ → Trace (process K) m✝.world.physical (List.flatMap nativeWord as✝) t✝.world.physical
+h : Sound s✝
+⊢ Session ?m.48
+'Generative.AcquiredSupportUse.sample_valid' does not depend on any axioms
+'Generative.AcquiredSupportUse.update_valid' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSupportUse.admitted_is_free' does not depend on any axioms
+'Generative.AcquiredSupportUse.next_sound' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSupportUse.trace_sound' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSupportUse.use_is_native' does not depend on any axioms
+'Generative.AcquiredSupportUse.step_projects' does not depend on any axioms
+'Generative.AcquiredSupportUse.trace_projects' depends on axioms: [sorryAx]
+'Generative.AcquiredSupportUse.step_budget' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSupportUse.trace_budget' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSupportUse.budget_necessary' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSupportUse.fresh_read_use' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSupportUse.fresh_read_use_iff' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSupportUse.unrelated_release_admits' depends on axioms: [propext]
+'Generative.AcquiredSupportUse.intervening_take_rejects' depends on axioms: [propext, Classical.choice, Quot.sound]

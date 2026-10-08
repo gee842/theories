@@ -1,0 +1,109 @@
+{
+  "status": "passed_documentary_checks",
+  "checked_at_utc": "2026-10-07T21:27:41.068537+00:00",
+  "scope": "Second-round philosophical arguments and selective primary comparisons; documentary checks do not validate semantic adequacy, empirical correspondence or universal necessity.",
+  "local_links_checked": 67,
+  "errors": [],
+  "external_urls_recorded": [
+    "https://academic.oup.com/aristotelian/article-abstract/117/2/103/4321726",
+    "https://api.repository.cam.ac.uk/server/api/core/bitstreams/87be8e18-20f1-4554-b5fd-154176e29a36/content",
+    "https://ditext.com/sellars/epm8.html",
+    "https://elifesciences.org/articles/28362",
+    "https://elifesciences.org/articles/28362/peer-reviews",
+    "https://epdf.mx/commensurability-comparability-communicability.html",
+    "https://fitelson.org/proseminar/gettier.pdf",
+    "https://joelvelasco.net/teaching/4330/goldman76-discrimination.pdf",
+    "https://joelvelasco.net/teaching/5330%28fall2013%29/Woodward00-explinvarspecialsciences.pdf",
+    "https://link.springer.com/article/10.1007/s11229-016-1074-4",
+    "https://link.springer.com/article/10.1007/s12136-018-0360-9",
+    "https://philosophy.ucla.edu/wp-content/uploads/2018/08/BUrge-2009-Primitive-Agency-and-Natural-Norms.pdf",
+    "https://researchprofiles.herts.ac.uk/en/publications/radicalizing-enactivism-basic-minds-without-content/",
+    "https://sharpelab.psych.ucla.edu/wp-content/uploads/sites/185/2018/09/Sharpe-et-al.-2017.-eLife.pdf",
+    "https://www.bipm.org/documents/20126/41489682/SI-App2-kelvin.pdf/cd36cb68-3f00-05fd-339e-452df0b6215e?download=true&t=1748263492487&version=2.3",
+    "https://www.bipm.org/en/publications/mises-en-pratique",
+    "https://www.bu.edu/learninglab/files/2012/05/Corriveau-Harris-2009-Choosing-your-informant.pdf",
+    "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2022.894738/full",
+    "https://www.jameswoodward.org/publications/",
+    "https://www.nicholasshea.co.uk/wp-content/uploads/2018/11/Shea_18_GS_Cao_Content_Sig_Sys_BP18_OA.pdf",
+    "https://www.researchgate.net/profile/Ruth-Millikan/publication/235734046_Biosemantics/links/54b9cd880cf253b50e2a9aa5/Biosemantics.pdf",
+    "https://www.researchgate.net/publication/46381423_Young_Children_Have_a_Specific_Highly_Robust_Bias_to_Trust_Testimony"
+  ],
+  "external_access_scope": "Four new primary comparisons; selective reading, third-party primary-text reproductions and no empirical reanalysis. See KNOWLEDGE-SOURCES.md.",
+  "exact_user_quotes_preserved": [
+    "how do we get to the entire philosophical account",
+    "keep going alone this line, see how far you can go",
+    "2nd round please, go far"
+  ],
+  "new_mathematical_claims": false,
+  "new_experiment_or_reanalysis": false,
+  "independent_agent_acceptance": false,
+  "inherited_proof_binding": {
+    "source": true,
+    "checker": true,
+    "frozen_source": true,
+    "frozen_checker": true,
+    "frozen_receipt": true,
+    "log_compile.txt": true,
+    "log_axioms.txt": true
+  },
+  "inherited_theorems": 20,
+  "inherited_declaration_audits": 34,
+  "lean_rerun": false,
+  "document_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-REVISION-AND-OBJECTIVITY.md": "51b2807719530b327ed84d62c2c3a7b03dfcc703150bbdcdb62e11dea16c0519",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-AND-GENERATIVE-WARRANT.md": "63b9ad3bffa8a5a823a41a6e561957b918e05b70195da4e969b7d6e83f6f41c5",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-SOURCES.md": "10d9c12651431b2ccfa1e68023535782d53dbdc90d4abd81cf068ae971c0caf5",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/G0-AND-KNOWLEDGE.md": "3f8511ebc51197bd6bac00fe69e2581dadc6f5481517d9a0d585c96bae31e8ea",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/KNOWLEDGE.md": "e2b832ae909757513f70eb132959d37bbc4d49d8ef927c0e1bc448cb8954b59b",
+    "sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md": "738ab7216d509d1f0e47050f1bd5edd2be51b003e81a76ad43d20c344074ba6e"
+  },
+  "chain_maintenance": {
+    "owned_entry": "M21",
+    "paired_entry_and_generated_row": "passed",
+    "linked_source_versions": {
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/KNOWLEDGE.md": true,
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/G0-AND-KNOWLEDGE.md": true,
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-AND-GENERATIVE-WARRANT.md": true,
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-REVISION-AND-OBJECTIVITY.md": true,
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-CONTENT-AND-ERROR.md": true,
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-REASONS-AND-STANDARDS.md": true,
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-UPTAKE-AND-ERROR.md": true,
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-SOURCES.md": true,
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-CORRESPONDENCE.md": true,
+      "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/KnowledgeCorrespondence.lean": true,
+      "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/knowledge-correspondence-verification.json": true,
+      "sources/15-codex-theory-conversations/2026-10-08-g0-and-knowledge.md": true,
+      "sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md": true
+    },
+    "other_generated_rows": "preserved exactly in scoped mutation",
+    "entry_mutation": {
+      "other_entries_preserved": 83,
+      "before_sha256": "aa44d2220cb0e3bfe374481a04a05bcf0ff677f60f2cd4384c46cc45725cec6c",
+      "after_sha256": "9ab38ee73a7fc461678e05c42f05c0546c8588fe122a764c54db5337eec3c81e"
+    },
+    "combined_table_check": "pending concurrent source review at initial full-render attempt",
+    "remaining_changes": {
+      "modified_sources": [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-INQUIRY-INTEGRATION.md"
+      ],
+      "missing_sources": [],
+      "new_pages": [],
+      "removed_pages": []
+    },
+    "validation_errors": []
+  },
+  "current_contribution": [
+    "Partial epistemic continuity through changed concepts and methods",
+    "Historical content and grounds protected against retrospective rescue",
+    "Objectivity through accountable relationships and differentiated checks",
+    "Supported explanation and claim-specific scientific accountability",
+    "Explicit G0/J1-J4/E connection to inquiry and non-self helping case"
+  ],
+  "next_connection": "Warranted projection beyond investigated conditions and ethical selection among inquiries under uncertainty.",
+  "unestablished": [
+    "Complete semantics and conscious experience",
+    "Universal empirical validation of the architecture",
+    "Unique necessity of the entire theory for all scientific philosophy",
+    "A reduction of epistemic warrant or all comparisons from G0 alone"
+  ]
+}

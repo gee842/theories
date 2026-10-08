@@ -1,0 +1,397 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T11:59:07.296806+00:00",
+  "scope": "Owned source versions, retained Lean binding, links, review disposition and paired M20. No new compiler run, empirical validation, ethical-premise certification or full-table certification.",
+  "checker_sha256": "f3bdcfa1cb48cc518a1456714cf4a27b076c69dc1aefaabb4515cc054ca40ea4",
+  "edits_sha256": "f645456f6cf0f21bc017327fa6271615e4d37a5408dd1f048bf150bc5f134110",
+  "owned_reviewed_sources": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-PROTOCOL.md": "5447da46886232f8a8af02f92df549a71efa8689d3bf3d3011ba8ad80ecb0125",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-ARGUMENT.md": "7b4b7ef4267b96b3a32398b7e378144d8279aa05be72d5040759deca4cfdcd4c",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-PROOF.md": "be2d9bbc25eb39573a272c1119ee9c115d4055611ba23493eb514db2d96eb344",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-REVIEW.md": "00bb53c4710a2d818565e946940aceebc7d64fdd980cff4c128e31403ae5e24e",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-INTEGRATION.md": "3088f5bae7e31dc5e08120ce5091c810c79f0b4dcef72f80c0f1df01556bc634",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ObservableContinuation.lean": "a010674b1b4bf8baf3cce8a33170d52d1edec3f249345f2df9c29aa690aa6b8a",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentInquiry.lean": "f40ad6179db326830edcdf8ec511f9069833a361f71181fd60166e0f72c0a23c",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ChanceAdequacy.lean": "501a26f1561c78fb552a550700fc730c296e6005cde5a0f0d2e0cb9ec11a8c41",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_observable_continuation.py": "b3200becc4d8f942224bc42ee059aa5c39d9f06f00774f56a9134a85251b9b55",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/observable-continuation-verification.json": "b2db170900f9c5f6abe2316cb173450371a6d54929416a972d14017a18135308"
+  },
+  "local_links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-PROTOCOL.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentInquiry.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-PROTOCOL.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ChanceAdequacy.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-PROTOCOL.md",
+      "to": "CONTINUATION-ADEQUACY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-PROTOCOL.md",
+      "to": "INQUIRY-CHOICE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-PROTOCOL.md",
+      "to": "ALIGNMENT-CONTINUITY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-PROTOCOL.md",
+      "to": "RELATIONAL-CORRECTION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-PROTOCOL.md",
+      "to": "FALLIBLE-INSPECTION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-ARGUMENT.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-ARGUMENT.md",
+      "to": "OBSERVABLE-CONTINUATION-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-ARGUMENT.md",
+      "to": "OBSERVABLE-CONTINUATION-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-ARGUMENT.md",
+      "to": "CHANCE-ADEQUACY-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-ARGUMENT.md",
+      "to": "CHANCE-ADEQUACY-CORRESPONDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-ARGUMENT.md",
+      "to": "INQUIRY-ADEQUACY-CORRESPONDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-ARGUMENT.md",
+      "to": "CONTINUATION-ADEQUACY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-ARGUMENT.md",
+      "to": "CORRECTION-OBSERVATION-REPAIR.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-ARGUMENT.md",
+      "to": "ACQUIRED-CORRECTION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-ARGUMENT.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/observable-continuation-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-PROOF.md",
+      "to": "OBSERVABLE-CONTINUATION-PROTOCOL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-PROOF.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ObservableContinuation.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-PROOF.md",
+      "to": "CONTINUATION-ADEQUACY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-PROOF.md",
+      "to": "RELATIONAL-CORRECTION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-PROOF.md",
+      "to": "ALIGNMENT-CONTINUITY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-PROOF.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentInquiry.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-PROOF.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ChanceAdequacy.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-PROOF.md",
+      "to": "FALLIBLE-INSPECTION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-PROOF.md",
+      "to": "JOINT-RISK-REVISION-INTEGRATION.md#20-situational-awareness-and-continued-convergence"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-PROOF.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_observable_continuation.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-PROOF.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/observable-continuation-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-PROOF.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/observable-continuation-checks/20261008T115335.946363Z/verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-REVIEW.md",
+      "to": "CHANCE-ADEQUACY-INTEGRATION.md#checked-support-to-chance-bridge"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-REVIEW.md",
+      "to": "INQUIRY-CHOICE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-REVIEW.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionBoundary.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-REVIEW.md",
+      "to": "CONTINUATION-ADEQUACY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-REVIEW.md",
+      "to": "RELATIONAL-CORRECTION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-REVIEW.md",
+      "to": "ALIGNMENT-CONTINUITY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-REVIEW.md",
+      "to": "FALLIBLE-INSPECTION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-REVIEW.md",
+      "to": "OBSERVABLE-CONTINUATION-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-REVIEW.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ObservableContinuation.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-REVIEW.md",
+      "to": "OBSERVABLE-CONTINUATION-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-REVIEW.md",
+      "to": "OBSERVABLE-CONTINUATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-REVIEW.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_observable_continuation.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-REVIEW.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/observable-continuation-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-INTEGRATION.md",
+      "to": "../../../../sources/15-codex-theory-conversations/2026-10-08-chance-adequacy-lean-continuation.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-INTEGRATION.md",
+      "to": "OBSERVABLE-CONTINUATION-PROTOCOL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-INTEGRATION.md",
+      "to": "OBSERVABLE-CONTINUATION-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-INTEGRATION.md",
+      "to": "OBSERVABLE-CONTINUATION-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-INTEGRATION.md",
+      "to": "OBSERVABLE-CONTINUATION-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-INTEGRATION.md",
+      "to": "CHANCE-ADEQUACY-INTEGRATION.md#checked-support-to-chance-bridge"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-INTEGRATION.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentInquiry.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-INTEGRATION.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ObservableContinuation.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-INTEGRATION.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/observable-continuation-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-INTEGRATION.md",
+      "to": "OBSERVABLE-CONTINUATION-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-INTEGRATION.md",
+      "to": "FALLIBLE-INSPECTION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-INTEGRATION.md",
+      "to": "RELATIONAL-CORRECTION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-INTEGRATION.md",
+      "to": "CONTINUATION-ADEQUACY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-INTEGRATION.md",
+      "to": "OBSERVABLE-CONTINUATION-CHECKS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-INTEGRATION.md",
+      "to": "OBSERVABLE-CONTINUATION-INDEX-EDITS.json"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-PROOF.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md",
+      "to": "OBSERVABLE-CONTINUATION-INTEGRATION.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "to": "unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md#observable-continuation"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "OBSERVABLE-CONTINUATION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "BASIC-CONFLICT-JUDGMENT.md#observable-continuation"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "to": "BASIC-CONFLICT-JUDGMENT.md#observable-continuation"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-INTEGRATION.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "to": "ObservableContinuation.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "to": "observable-continuation-verification.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "to": "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "to": "OBSERVABLE-CONTINUATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "to": "OBSERVABLE-CONTINUATION-INDEX-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "to": "OBSERVABLE-CONTINUATION-CHECKS.json"
+    }
+  ],
+  "navigation_passages": 10,
+  "proof_receipt": {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/observable-continuation-verification.json",
+    "sha256": "b2db170900f9c5f6abe2316cb173450371a6d54929416a972d14017a18135308",
+    "retained_run": "observable-continuation-checks/20261008T115335.946363Z",
+    "retained_artifact_count": 23,
+    "source_sha256": {
+      "AlignmentInquiry": "f40ad6179db326830edcdf8ec511f9069833a361f71181fd60166e0f72c0a23c",
+      "ChanceAdequacy": "501a26f1561c78fb552a550700fc730c296e6005cde5a0f0d2e0cb9ec11a8c41",
+      "ObservableContinuation": "a010674b1b4bf8baf3cce8a33170d52d1edec3f249345f2df9c29aa690aa6b8a"
+    },
+    "checker_sha256": {
+      "check_observable_continuation.py": "b3200becc4d8f942224bc42ee059aa5c39d9f06f00774f56a9134a85251b9b55",
+      "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+    },
+    "new_theorems": 4,
+    "new_declaration_audits": 24,
+    "inherited_theorems": 17,
+    "inherited_declaration_audits": 31,
+    "separately_checked_examples": [
+      {
+        "claim": "with one budget unit the sensing plan cannot execute its subsequent response",
+        "kernel_checked": true,
+        "counted_as_new_theorem": false
+      },
+      {
+        "claim": "the generic selected-execution chance bridge instantiates to the funded sensing route using its actual output theorem",
+        "kernel_checked": true,
+        "counted_as_new_theorem": false
+      }
+    ]
+  },
+  "documentary_checker_does_not_rerun_lean": true,
+  "new_empirical_measurements": 0,
+  "independent_review": {
+    "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-REVIEW.md",
+    "sha256": "00bb53c4710a2d818565e946940aceebc7d64fdd980cff4c128e31403ae5e24e",
+    "disposition": "accepted as an actual-execution to specified-support composition with correspondence limits",
+    "formal_review_scope": "independent source and receipt audit, not another compiler run"
+  },
+  "paired_row": "M20",
+  "other_entries_preserved_at_mutation": 93,
+  "other_rendered_lines_preserved_at_mutation": true,
+  "unowned_review_hashes_preserved_at_mutation": true,
+  "scoped_render": "Canonical renderer; only M20 replaced and other lines retained.",
+  "global_check": {
+    "exit_code": 2,
+    "stdout": "{\n  \"status\": \"needs-review\",\n  \"errors\": [\n    \"Linked source versions changed; reread affected entries before rendering.\"\n  ],\n  \"changes\": {\n    \"modified_sources\": [\n      \"RESEARCH.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md\",\n      \"sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md\",\n      \"theories/shengsheng-buxi-generative-existence/README.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md\",\n      \"theories/shengsheng-buxi-generative-existence/results/ROADMAP.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md\",\n      \"theories/meta-attractor/GENERATIVE-REGIMES.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-INTEGRATION.md\",\n      \"sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md\",\n      \"experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md\",\n      \"theories/meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/COLLECTIVE-DESTRUCTION-INTEGRATION.md\",\n      \"sources/15-codex-theory-conversations/2026-10-08-collective-destructive-attractors.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-DISCOVERY.md\"\n    ],\n    \"missing_sources\": [],\n    \"new_pages\": [\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-EXPANDING-INQUIRY.md\"\n    ],\n    \"removed_pages\": [\n      \"_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md\"\n    ]\n  }\n}\n",
+    "stderr": ""
+  },
+  "pending_global_changes": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "theories/meta-attractor/GENERATIVE-REGIMES.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-INTEGRATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "theories/meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/COLLECTIVE-DESTRUCTION-INTEGRATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-collective-destructive-attractors.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-DISCOVERY.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-EXPANDING-INQUIRY.md"
+    ],
+    "removed_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md"
+    ]
+  }
+}

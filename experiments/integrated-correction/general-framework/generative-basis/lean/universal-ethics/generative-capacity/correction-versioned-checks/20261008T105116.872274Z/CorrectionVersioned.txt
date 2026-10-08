@@ -1,0 +1,139 @@
+CorrectionVersioned.lean:134:3: error: unexpected token 'seal'; expected identifier
+CorrectionVersioned.lean:163:20: error: unexpected token 'seal'; expected ')', '↑', '↥', '⇑' or term
+CorrectionVersioned.lean:163:25: error(lean.unknownIdentifier): Unknown constant `span`
+CorrectionVersioned.lean:163:33: error: unexpected token ')'; expected command
+CorrectionVersioned.lean:165:2: error(lean.unknownIdentifier): Unknown constant `split_ifs`
+CorrectionVersioned.lean:165:12: error: unexpected token 'with'; expected command
+CorrectionVersioned.lean:214:16: error: Application type mismatch: The argument
+  h.left
+has type
+  ∀ (b : Bool), Sound (s.banks b)
+but is expected to have type
+  ∀ (b : Bool), Sound ((tick s).1.banks b)
+in the application
+  And.intro h.left
+CorrectionVersioned.lean:214:21: error: Application type mismatch: The argument
+  h.right.left
+has type
+  Ready span (s.banks s.active)
+but is expected to have type
+  Ready span ((tick s).1.banks (tick s).1.active)
+in the application
+  And.intro h.right.left
+CorrectionVersioned.lean:216:8: error: Type mismatch
+  h.right.right q
+    (Eq.mpr (id (Eq.trans (congrFun' (congrArg Membership.mem hp) q) List.mem_cons._simp_1))
+      (Eq.mp
+        (Eq.trans
+          (congrFun'
+            (congrArg Membership.mem
+              (congrArg (List.cons p)
+                (congrArg Installation.packets
+                  (congrArg Prod.fst
+                    (Eq.trans
+                      (congrArg
+                        (fun x =>
+                          match x with
+                          | [] => (s, none)
+                          | p :: ps =>
+                            match List.drop p.cursor (s.banks p.slot).path with
+                            | [] =>
+                              ({ active := s.active, banks := s.banks, packets := ps }, some (p.requested, p.payload))
+                            | bit :: tail =>
+                              ({ active := s.active, banks := s.banks,
+                                  packets :=
+                                    { slot := p.slot, cursor := p.cursor + 1, payload := p.payload ^^ bit,
+                                        requested := p.requested } ::
+                                      ps },
+                                none))
+                        hp)
+                      (congrArg
+                        (fun x =>
+                          match x with
+                          | [] =>
+                            ({ active := s.active, banks := s.banks, packets := ps }, some (p.requested, p.payload))
+                          | bit :: tail =>
+                            ({ active := s.active, banks := s.banks,
+                                packets :=
+                                  { slot := p.slot, cursor := p.cursor + 1, payload := p.payload ^^ bit,
+                                      requested := p.requested } ::
+                                    ps },
+                              none))
+                        hd))))))
+            q)
+          List.mem_cons._simp_1)
+        (List.mem_cons_of_mem p hq)))
+has type
+  PacketValid span s q
+but is expected to have type
+  PacketValid span (tick s).1 q
+CorrectionVersioned.lean:225:16: error: Application type mismatch: The argument
+  h.left
+has type
+  ∀ (b : Bool), Sound (s.banks b)
+but is expected to have type
+  ∀ (b : Bool), Sound ((tick s).1.banks b)
+in the application
+  And.intro h.left
+CorrectionVersioned.lean:225:21: error: Application type mismatch: The argument
+  h.right.left
+has type
+  Ready span (s.banks s.active)
+but is expected to have type
+  Ready span ((tick s).1.banks (tick s).1.active)
+in the application
+  And.intro h.right.left
+CorrectionVersioned.lean:230:18: error: Application type mismatch: The argument
+  vp.left
+has type
+  Ready span (s.banks p.slot)
+but is expected to have type
+  Ready span
+    ((tick s).1.banks
+      { slot := p.slot, cursor := p.cursor + 1, payload := p.payload ^^ bit, requested := p.requested }.slot)
+in the application
+  And.intro vp.left
+CorrectionVersioned.lean:234:12: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 0
+  a ≥ 0
+  a - b ≥ 0
+  a - c ≤ -1
+where
+ a := ↑p.cursor
+ b := ↑((tick s).1.banks p.slot).path.length
+ c := ↑(s.banks p.slot).path.length
+CorrectionVersioned.lean:235:12: error: 'change' tactic failed, pattern
+  Follow (List.drop (p.cursor + 1) (s.banks p.slot).path) (p.payload ^^ bit) = p.requested
+is not definitionally equal to target
+  Follow
+      (List.drop
+        { slot := p.slot, cursor := p.cursor + 1, payload := p.payload ^^ bit, requested := p.requested }.cursor
+        ((tick s).1.banks
+            { slot := p.slot, cursor := p.cursor + 1, payload := p.payload ^^ bit,
+                requested := p.requested }.slot).path)
+      { slot := p.slot, cursor := p.cursor + 1, payload := p.payload ^^ bit, requested := p.requested }.payload =
+    { slot := p.slot, cursor := p.cursor + 1, payload := p.payload ^^ bit, requested := p.requested }.requested
+CorrectionVersioned.lean:241:10: error: Type mismatch
+  h.right.right q
+    (of_eq_true
+      (Eq.trans (Eq.trans (congrFun' (congrArg Membership.mem hp) q) List.mem_cons._simp_1)
+        (Eq.trans (congrArg (Or (q = p)) (eq_true hq)) (or_true (q = p)))))
+has type
+  PacketValid span s q
+but is expected to have type
+  PacketValid span (tick s).1 q
+CorrectionVersioned.lean:258:16: error: unexpected token 'seal'; expected ')', '_', '↑', '↥', '⇑', identifier or term
+CorrectionVersioned.lean:258:21: error(lean.unknownIdentifier): Unknown constant `span`
+CorrectionVersioned.lean:258:29: error: unexpected token ','; expected command
+CorrectionVersioned.lean:271:3: error: unexpected token 'seal'; expected '_' or identifier
+CorrectionVersioned.lean:271:2: error: Missing alternative name: Expected `seal`, `publish`, `beginRequest`, `tick`, or `pause`
+CorrectionVersioned.lean:268:2: error: Alternative `seal` has not been provided
+CorrectionVersioned.lean:268:2: error: Alternative `publish` has not been provided
+CorrectionVersioned.lean:268:2: error: Alternative `beginRequest` has not been provided
+CorrectionVersioned.lean:268:2: error: Alternative `tick` has not been provided
+CorrectionVersioned.lean:268:2: error: Alternative `pause` has not been provided
+CorrectionVersioned.lean:269:59: warning: declaration uses `sorry`
+CorrectionVersioned.lean:271:9: error(lean.unknownIdentifier): Unknown constant `b`
+CorrectionVersioned.lean:271:11: error: unexpected token '=>'; expected command

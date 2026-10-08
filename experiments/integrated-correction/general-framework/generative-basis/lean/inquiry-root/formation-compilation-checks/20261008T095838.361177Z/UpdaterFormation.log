@@ -1,0 +1,25 @@
+'UpdaterFormation.event_projection' depends on axioms: [propext]
+'UpdaterFormation.step_remainder_material' does not depend on any axioms
+'UpdaterFormation.step_energy_ledger' depends on axioms: [propext, Quot.sound]
+'UpdaterFormation.trace_energy_ledger' depends on axioms: [propext, Quot.sound]
+'UpdaterFormation.trace_material_preserved' does not depend on any axioms
+'UpdaterFormation.trace_projects_when_no_modules_formed' depends on axioms: [propext]
+'UpdaterFormation.directed_module_changes_available_assembly' depends on axioms: [propext]
+'UpdaterFormation.module_change_requires_paid_formation' depends on axioms: [propext, Quot.sound]
+'UpdaterFormation.bridge_energy_exact' depends on axioms: [propext, Quot.sound]
+'UpdaterFormation.bridge_has_two_actual_materials' depends on axioms: [propext, Quot.sound]
+'UpdaterFormation.bridge_material_exact' depends on axioms: [propext, Quot.sound]
+'UpdaterFormation.old_depleted_witness_cannot_pay_bridge' depends on axioms: [propext, Quot.sound]
+'UpdaterFormation.old_step_preserved_exactly' depends on axioms: [propext]
+'UpdaterFormation.old_trace_embeds' depends on axioms: [propext]
+'UpdaterFormation.organization_trace_embeds' depends on axioms: [propext]
+'UpdaterFormation.actual_formation_bridge_continuation' depends on axioms: [propext]
+'UpdaterFormation.joined_energy_ledger' depends on axioms: [propext, Quot.sound]
+'UpdaterFormation.synchronized_prefix_affordable_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UpdaterFormation.new_module_budget_obstruction' depends on axioms: [propext, Quot.sound]
+'UpdaterFormation.actual_old_preparation' does not depend on any axioms
+'UpdaterFormation.actual_old_entrance_enabled' does not depend on any axioms
+'UpdaterFormation.entrance_is_actual_paid_state' does not depend on any axioms
+'UpdaterFormation.paid_updater_revision_witness' does not depend on any axioms
+'UpdaterFormation.whole_preparation_to_changed_updater_witness' depends on axioms: [propext]
+'UpdaterFormation.whole_witness_accounting' depends on axioms: [propext]

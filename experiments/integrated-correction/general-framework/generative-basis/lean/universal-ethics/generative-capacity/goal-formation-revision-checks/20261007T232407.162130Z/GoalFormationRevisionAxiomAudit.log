@@ -1,0 +1,80 @@
+'GoalFormationRevision.Practice' does not depend on any axioms
+'GoalFormationRevision.Selection' does not depend on any axioms
+'GoalFormationRevision.Conditions' does not depend on any axioms
+'GoalFormationRevision.Outcome' does not depend on any axioms
+'GoalFormationRevision.perform' does not depend on any axioms
+'GoalFormationRevision.protects' does not depend on any axioms
+'GoalFormationRevision.gains' does not depend on any axioms
+'GoalFormationRevision.warranted_revision' depends on axioms: [propext]
+'GoalFormationRevision.revision_loses_real_output' depends on axioms: [propext]
+'GoalFormationRevision.harmless_attendance_preferred' depends on axioms: [propext, Quot.sound]
+'GoalFormationRevision.crossed_losses_incomparable' depends on axioms: [propext]
+'GoalFormationRevision.feedback' depends on axioms: [propext]
+'GoalFormationRevision.inferFormation' does not depend on any axioms
+'GoalFormationRevision.formation_identified' depends on axioms: [propext]
+'GoalFormationRevision.ambiguous_formation_suspended' does not depend on any axioms
+'GoalFormationRevision.encode' does not depend on any axioms
+'GoalFormationRevision.decode' does not depend on any axioms
+'GoalFormationRevision.acquired_calibration_correct' does not depend on any axioms
+'GoalFormationRevision.calibration_consumes_existing_interface' does not depend on any axioms
+'GoalFormationRevision.Account' does not depend on any axioms
+'GoalFormationRevision.total' does not depend on any axioms
+'GoalFormationRevision.charge' does not depend on any axioms
+'GoalFormationRevision.charge_conserves' depends on axioms: [propext, Quot.sound]
+'GoalFormationRevision.insufficient_work_blocks' depends on axioms: [propext, Quot.sound]
+'GoalFormationRevision.Evidence' does not depend on any axioms
+'GoalFormationRevision.Ground' does not depend on any axioms
+'GoalFormationRevision.interpret' does not depend on any axioms
+'GoalFormationRevision.callsForRevision' does not depend on any axioms
+'GoalFormationRevision.predictFeedback' depends on axioms: [propext]
+'GoalFormationRevision.formation_model_predicts_intervention' depends on axioms: [propext]
+'GoalFormationRevision.proposedSelector' depends on axioms: [propext]
+'GoalFormationRevision.acquired_grounds_warrant_comparison' depends on axioms: [propext]
+'GoalFormationRevision.Record' does not depend on any axioms
+'GoalFormationRevision.State' does not depend on any axioms
+'GoalFormationRevision.learnedGoal' does not depend on any axioms
+'GoalFormationRevision.experience' depends on axioms: [propext]
+'GoalFormationRevision.calibrate' does not depend on any axioms
+'GoalFormationRevision.assess' does not depend on any axioms
+'GoalFormationRevision.reviseGoal' does not depend on any axioms
+'GoalFormationRevision.reform' depends on axioms: [propext]
+'GoalFormationRevision.no_authority_no_reform' depends on axioms: [propext]
+'GoalFormationRevision.cycle' depends on axioms: [propext]
+'GoalFormationRevision.cycle_conserves' depends on axioms: [propext, Quot.sound]
+'GoalFormationRevision.cycles' depends on axioms: [propext]
+'GoalFormationRevision.operate' depends on axioms: [propext]
+'GoalFormationRevision.operateMany' depends on axioms: [propext]
+'GoalFormationRevision.supported_cycle' depends on axioms: [propext, Quot.sound]
+'GoalFormationRevision.supported_finite_continuation' depends on axioms: [propext, Quot.sound]
+'GoalFormationRevision.start' does not depend on any axioms
+'GoalFormationRevision.acquire' depends on axioms: [propext]
+'GoalFormationRevision.revised' depends on axioms: [propext]
+'GoalFormationRevision.completed' depends on axioms: [propext]
+'GoalFormationRevision.harmful' does not depend on any axioms
+'GoalFormationRevision.safe' does not depend on any axioms
+'GoalFormationRevision.conflict' does not depend on any axioms
+'GoalFormationRevision.acquired_history_identifies_origin' depends on axioms: [propext]
+'GoalFormationRevision.goal_depends_on_actual_formative_rule' depends on axioms: [propext]
+'GoalFormationRevision.revised_goal_with_old_metric_still_successful' depends on axioms: [propext]
+'GoalFormationRevision.calibration_handles_reversed_channel' depends on axioms: [propext]
+'GoalFormationRevision.no_harm_no_revision' depends on axioms: [propext]
+'GoalFormationRevision.crossed_loss_blocks_simple_revision' depends on axioms: [propext]
+'GoalFormationRevision.recognition_does_not_force_revision' depends on axioms: [propext]
+'GoalFormationRevision.reform_changes_the_formative_relation' depends on axioms: [propext]
+'GoalFormationRevision.acquired_intervention_prediction_realized' depends on axioms: [propext]
+'GoalFormationRevision.revision_preserves_formation_and_losses' depends on axioms: [propext]
+'GoalFormationRevision.complete_history_account' depends on axioms: [propext]
+'GoalFormationRevision.actual_reformed_continuation' depends on axioms: [propext]
+'GoalFormationRevision.continued_practice_preserves_actual_consequences' depends on axioms: [propext]
+'GoalFormationRevision.unchanged_selection_exhausts_revised_practice' depends on axioms: [propext]
+'GoalFormationRevision.reform_does_not_make_support_infinite' depends on axioms: [propext]
+'GoalFormationRevision.reform_with_insufficient_work_fails' depends on axioms: [propext]
+'GoalFormationRevision.missing_reference_prevents_assessment' depends on axioms: [propext]
+'GoalFormationRevision.false_reference_can_hide_real_loss' depends on axioms: [propext]
+'GoalFormationRevision.erased_formation_evidence_blocks_deliberation' depends on axioms: [propext]
+'GoalFormationRevision.wrong_formation_model_prevents_needed_reform' depends on axioms: [propext]
+'GoalFormationRevision.stale_grounds_can_leave_new_loss_unaddressed' depends on axioms: [propext]
+'GoalFormationRevision.changed_goal_is_consumed_by_operation' depends on axioms: [propext]
+'GoalFormationRevision.corrected_reference_restores_revision' depends on axioms: [propext]
+'GoalFormationRevision.reform_changes_later_goal_acquisition' depends on axioms: [propext]
+'GoalFormationRevision.joined_revision_has_warrant_and_actual_continuation' depends on axioms: [propext]

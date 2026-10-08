@@ -1,0 +1,20 @@
+{
+  "retrieved_at_utc": "2026-10-07T22:53:32.007217+00:00",
+  "license": "CC BY 4.0",
+  "files": [
+    {
+      "file": "varianceinwormgut-v1.0.0.zip",
+      "url": "https://zenodo.org/api/records/14291768/files/satyaspandana/varianceinwormgut-v1.0.0.zip/content",
+      "bytes": 8430482,
+      "sha256": "a91f19f73098be45d751e01a4257638b49b2fe6f386ba142c1720c7a10b4b0ae"
+    },
+    {
+      "file": "zenodo-metadata.json",
+      "url": "https://zenodo.org/api/records/14291768",
+      "bytes": 4311,
+      "sha256": "f609a8e5df4aff030767eb06bd7ce5a0ad1cb0d823f2a7cf5c77b99e4e77e96b"
+    }
+  ],
+  "doi": "10.5281/zenodo.14291768",
+  "archive_md5": "1753ae890020663d2b254136206461c0"
+}

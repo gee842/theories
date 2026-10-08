@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "checker_sha256": "35e2f4b9a7d1461be77b509a03d277609386e6de31ad017bdab896e9affaa9cd",
+  "analysis_source_sha256": "7352812d9162c7cbea08e77e05caefcd137a5f0bf1ed9c206662158c452a9309",
+  "fit_sha256": "97b77bba763f59e2e9fe51c278dc0a1c30cf2ec0a2c90ee64ba5834b555ad8f6",
+  "runs": [
+    {
+      "label": "validation_1",
+      "source": "sources/tclab-benchmark/extracted/2_PID/2_optimize_PID/validation_test1/validate.txt",
+      "source_sha256": "ff526ed74785c70eeeba4ef455cb14c1ff8121cc6c1c48d946a576d9386d9a0a",
+      "initial_reading_difference_celsius": -1.2899999999999991,
+      "adjusted_intercept": 0.007933288964502933,
+      "without_transferred_residual": {
+        "rmse_celsius": 1.0563956203064295,
+        "mae_celsius": 0.9316515385530902,
+        "max_abs_celsius": 1.9243084697503576
+      },
+      "with_initial_run_residual": {
+        "rmse_celsius": 1.0603483663987219,
+        "mae_celsius": 0.9237647552239838,
+        "max_abs_celsius": 2.127322882198108
+      }
+    },
+    {
+      "label": "validation_2",
+      "source": "sources/tclab-benchmark/extracted/2_PID/2_optimize_PID/validation_test2/validate.txt",
+      "source_sha256": "4c2c4925e427f21fe5ea01e555587bb6fdf4641050420c0f33095a562680ae80",
+      "initial_reading_difference_celsius": 0.3200000000000003,
+      "adjusted_intercept": 0.00857416178100312,
+      "without_transferred_residual": {
+        "rmse_celsius": 1.7079378097224378,
+        "mae_celsius": 1.52953935657354,
+        "max_abs_celsius": 2.8892073035609798
+      },
+      "with_initial_run_residual": {
+        "rmse_celsius": 1.7150950533322258,
+        "mae_celsius": 1.5232239599006514,
+        "max_abs_celsius": 3.1885269845614204
+      }
+    }
+  ],
+  "scope": "Post-hoc diagnostic. Coefficients a,b remain fixed; only c is adjusted by initial reading difference times (1-sum(a)). Initial reading is not certified ambient temperature. Improvement in one run and worsening in the other are retained; neither model is validated universally."
+}

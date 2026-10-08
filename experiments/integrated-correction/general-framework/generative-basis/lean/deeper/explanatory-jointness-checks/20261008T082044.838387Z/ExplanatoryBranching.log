@@ -1,0 +1,26 @@
+'Generative.ExplanatoryBranching.same_refl' does not depend on any axioms
+'Generative.ExplanatoryBranching.same_symm' does not depend on any axioms
+'Generative.ExplanatoryBranching.same_trans' does not depend on any axioms
+'Generative.ExplanatoryBranching.bisimulation_preserves_tests' does not depend on any axioms
+'Generative.ExplanatoryBranching.bisimulation_implies_same' does not depend on any axioms
+'Generative.ExplanatoryBranching.finite_separating_test' depends on axioms: [propext]
+'Generative.ExplanatoryBranching.not_same_has_separating_test' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryBranching.same_forces_successor_match' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryBranching.same_is_bisimulation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryBranching.same_iff_bisimilar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryBranching.exact_equal_codes_force_branch_matching' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryBranching.bisimulation_lifts_trace' does not depend on any axioms
+'Generative.ExplanatoryBranching.same_functional' does not depend on any axioms
+'Generative.ExplanatoryBranching.same_inverse_functional' does not depend on any axioms
+'Generative.ExplanatoryBranching.same_total_on_reachable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryBranching.branching_structural_correspondence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryBranching.correspondence_preserves_steps' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryBranching.any_bisimulation_agrees' does not depend on any axioms

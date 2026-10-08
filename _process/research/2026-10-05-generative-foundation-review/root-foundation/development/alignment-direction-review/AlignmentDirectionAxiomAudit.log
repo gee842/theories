@@ -1,0 +1,16 @@
+'AlignmentDirection.protection' does not depend on any axioms
+'AlignmentDirection.realization' does not depend on any axioms
+'AlignmentDirection.eligible' does not depend on any axioms
+'AlignmentDirection.preserve_over_expansion' depends on axioms: [propext]
+'AlignmentDirection.expansion_has_real_gain_and_preservation_loses_it' depends on axioms: [propext]
+'AlignmentDirection.transfer_over_preservation' depends on axioms: [propext]
+'AlignmentDirection.transfer_over_expansion' depends on axioms: [propext]
+'AlignmentDirection.expansion_excluded' depends on axioms: [propext]
+'AlignmentDirection.demand' does not depend on any axioms
+'AlignmentDirection.oldService' does not depend on any axioms
+'AlignmentDirection.successorService' does not depend on any axioms
+'AlignmentDirection.covered_transfer_with_old_model_stopped' depends on axioms: [propext, Quot.sound]
+'AlignmentDirection.promised_successor_without_delivery_fails' does not depend on any axioms
+'AlignmentDirection.conflictProtection' does not depend on any axioms
+'AlignmentDirection.crossed_basic_losses_remain_unranked' depends on axioms: [propext]
+'AlignmentDirection.revision_preserves_requirement' does not depend on any axioms

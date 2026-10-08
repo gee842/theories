@@ -1,0 +1,40 @@
+SituatedKitchen.lean:42:73: error: failed to synthesize
+  Decidable (PracticalJudgment.Better protection realization care classOnly)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+SituatedKitchen.lean:46:74: error: failed to synthesize
+  Decidable
+    (¬PracticalJudgment.Better protection realization learning care ∧
+      ¬PracticalJudgment.Better protection realization care learning)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+SituatedKitchen.lean:49:82: error: failed to synthesize
+  Decidable (PracticalJudgment.Better protection realization learning overloadedCare)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+SituatedKitchen.lean:52:79: error: failed to synthesize
+  Decidable (PracticalJudgment.Better protection realization care harmfulLearning)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+SituatedKitchen.lean:55:84: error: failed to synthesize
+  Decidable (realization inaccessibleLearning 0 ∧ ¬realization inaccessibleLearning 1)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+SituatedKitchen.lean:58:88: error: failed to synthesize
+  Decidable (PracticalJudgment.Better protection realization learning inaccessibleLearning)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+SituatedKitchen.lean:62:92: error: failed to synthesize
+  Decidable
+    (¬PracticalJudgment.Better protection realization overloadedCare exitWithoutCover ∧
+      ¬PracticalJudgment.Better protection realization exitWithoutCover overloadedCare)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+SituatedKitchen.lean:69:51: error: Expected type must not contain free variables
+  ¬protection (handoff announced false) 1
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+SituatedKitchen.lean:73:63: error: Expected type must not contain free variables
+  PracticalJudgment.Better protection realization (handoff announced true) (handoff announced false)
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables

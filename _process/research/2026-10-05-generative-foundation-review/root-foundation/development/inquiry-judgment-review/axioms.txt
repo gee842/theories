@@ -1,0 +1,319 @@
+'Generative.Process' does not depend on any axioms
+'Generative.Enabled' does not depend on any axioms
+'Generative.Trace' does not depend on any axioms
+'Generative.trace_nil_iff' does not depend on any axioms
+'Generative.trace_cons_iff' does not depend on any axioms
+'Generative.trace_singleton_iff' does not depend on any axioms
+'Generative.trace_append_iff' does not depend on any axioms
+'Generative.enabled_iff_singleton_trace' does not depend on any axioms
+'Generative.enabled_difference_implies_state_difference' does not depend on any axioms
+'Generative.Feasible' does not depend on any axioms
+'Generative.feasible_append_iff' does not depend on any axioms
+'Generative.feasible_prefix' does not depend on any axioms
+'Generative.productProcess' does not depend on any axioms
+'Generative.enabled_product_iff' does not depend on any axioms
+'Generative.trace_product_left' does not depend on any axioms
+'Generative.trace_product_right' does not depend on any axioms
+'Generative.trace_product_mk' does not depend on any axioms
+'Generative.trace_product_iff' does not depend on any axioms
+'Generative.feasible_product_iff' does not depend on any axioms
+'Generative.trace_map' does not depend on any axioms
+'Generative.trace_lift' does not depend on any axioms
+'Generative.projected_trace_iff' does not depend on any axioms
+'Generative.projection_exact_iff' does not depend on any axioms
+'Generative.local_exact_iff_trace_exact' does not depend on any axioms
+'Generative.enabled_projection_iff' does not depend on any axioms
+'Generative.feasible_projection_iff' does not depend on any axioms
+'Generative.feasible_difference_implies_projection_difference' does not depend on any axioms
+'Generative.trace_faithful_iff' does not depend on any axioms
+'SystemsOrganization.evolve' does not depend on any axioms
+'SystemsOrganization.deterministic' does not depend on any axioms
+'SystemsOrganization.deterministic_trace_iff' does not depend on any axioms
+'SystemsOrganization.Commuting' does not depend on any axioms
+'SystemsOrganization.evolve_semiconjugacy' does not depend on any axioms
+'SystemsOrganization.commuting_iff_all_words' does not depend on any axioms
+'SystemsOrganization.projected_trace_exact' does not depend on any axioms
+'SystemsOrganization.FibreConsistent' does not depend on any axioms
+'SystemsOrganization.reduced_law_exists_iff' does not depend on any axioms
+'SystemsOrganization.commuting_composes' does not depend on any axioms
+'SystemsOrganization.coupledNext' does not depend on any axioms
+'SystemsOrganization.coupled_components_preserve_history' does not depend on any axioms
+'SystemsOrganization.copyCell' does not depend on any axioms
+'SystemsOrganization.routed' does not depend on any axioms
+'SystemsOrganization.self_routing_fixed' does not depend on any axioms
+'SystemsOrganization.cross_routing_two_steps' does not depend on any axioms
+'SystemsOrganization.cross_routing_not_fixed' does not depend on any axioms
+'SystemsOrganization.same_cells_different_collective_recurrence' does not depend on any axioms
+'SystemsOrganization.crossed_left_not_fibre_consistent' does not depend on any axioms
+'SystemsOrganization.no_autonomous_left_law' does not depend on any axioms
+'SystemsOrganization.Device' does not depend on any axioms
+'SystemsOrganization.Event' does not depend on any axioms
+'SystemsOrganization.assembled' does not depend on any axioms
+'SystemsOrganization.exchanged' does not depend on any axioms
+'SystemsOrganization.organization' does not depend on any axioms
+'SystemsOrganization.parts' does not depend on any axioms
+'SystemsOrganization.linkInventory' does not depend on any axioms
+'SystemsOrganization.link_inventory_preserved' does not depend on any axioms
+'SystemsOrganization.fuel_does_not_increase' does not depend on any axioms
+'SystemsOrganization.raw' does not depend on any axioms
+'SystemsOrganization.formed' does not depend on any axioms
+'SystemsOrganization.exchangedOnce' does not depend on any axioms
+'SystemsOrganization.formation_step' does not depend on any axioms
+'SystemsOrganization.formation_preserves_cell_values' does not depend on any axioms
+'SystemsOrganization.formation_consumes_spare_and_fuel' does not depend on any axioms
+'SystemsOrganization.exchange_unavailable_before_formation' does not depend on any axioms
+'SystemsOrganization.exchange_available_after_formation' does not depend on any axioms
+'SystemsOrganization.formation_and_recurrence_same_history' does not depend on any axioms
+'SystemsOrganization.parts_only_cannot_preserve_futures' does not depend on any axioms
+'SystemsOrganization.no_fuel_blocks_formation' does not depend on any axioms
+'SystemsOrganization.no_spare_blocks_formation' does not depend on any axioms
+'RelationsAcrossScales.budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelationsAcrossScales.history_is_core_trace' does not depend on any axioms
+'RelationsAcrossScales.one_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelationsAcrossScales.finite_horizon_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelationsAcrossScales.budget_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelationsAcrossScales.composed_defect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelationsAcrossScales.observable_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelationsAcrossScales.protected_conditions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelationsAcrossScales.violation_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelationsAcrossScales.fibre_error_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelationsAcrossScales.total' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelationsAcrossScales.routing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelationsAcrossScales.routing_total' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelationsAcrossScales.routing_defect_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelationsAcrossScales.routing_error_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelationsAcrossScales.enriched_routing_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelationsAcrossScales.transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelationsAcrossScales.basicProtected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelationsAcrossScales.total_exact_through_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelationsAcrossScales.exact_total_can_hide_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelationsAcrossScales.no_total_only_protection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelationsAcrossScales.minimum_preserves_protection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelationsAcrossScales.frozen_charts_miss_change' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelationsAcrossScales.linear_drift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelationsAcrossScales.positive_drift_unbounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelationsAcrossScales.threshold_ambiguity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RemainingDependency.ticks' does not depend on any axioms
+'RemainingDependency.Pair' does not depend on any axioms
+'RemainingDependency.Pair.get' does not depend on any axioms
+'RemainingDependency.Pair.set' does not depend on any axioms
+'RemainingDependency.Account' does not depend on any axioms
+'RemainingDependency.tariff' does not depend on any axioms
+'RemainingDependency.Error' does not depend on any axioms
+'RemainingDependency.charge' does not depend on any axioms
+'RemainingDependency.charge_conserves' depends on axioms: [propext, Quot.sound]
+'RemainingDependency.charge_never_increases_fuel' does not depend on any axioms
+'RemainingDependency.charge_denial_preserves_account' depends on axioms: [propext]
+'RemainingDependency.choose' depends on axioms: [propext]
+'RemainingDependency.faithful' does not depend on any axioms
+'RemainingDependency.chosen_setting_supported' depends on axioms: [propext]
+'RemainingDependency.productive_pair_has_selected_setting' depends on axioms: [propext, Quot.sound]
+'RemainingDependency.absent_evidence_is_not_negative' depends on axioms: [propext]
+'RemainingDependency.no_constant_setting_serves_opposed_relations' depends on axioms: [propext]
+'RemainingDependency.Calibrated' does not depend on any axioms
+'RemainingDependency.calibrated_selected_setting_transfers' depends on axioms: [propext]
+'RemainingDependency.Ancestor' does not depend on any axioms
+'RemainingDependency.Datum' does not depend on any axioms
+'RemainingDependency.decode' does not depend on any axioms
+'RemainingDependency.faithful_bound_datum_decodes' depends on axioms: [propext]
+'RemainingDependency.wrong_context_stays_unknown' depends on axioms: [propext]
+'RemainingDependency.missing_stays_unknown' does not depend on any axioms
+'RemainingDependency.Stocks' does not depend on any axioms
+'RemainingDependency.discharge' does not depend on any axioms
+'RemainingDependency.Stocks.total' does not depend on any axioms
+'RemainingDependency.discharge_conserves' depends on axioms: [propext, Quot.sound]
+'RemainingDependency.supported_discharge_delivers' depends on axioms: [propext]
+'RemainingDependency.unsupported_discharge_wastes' depends on axioms: [propext]
+'RemainingDependency.fullTransfer' does not depend on any axioms
+'RemainingDependency.transfer_actor_account_conserved' depends on axioms: [propext, Quot.sound]
+'RemainingDependency.transfer_stocks_conserved' depends on axioms: [propext, Quot.sound]
+'RemainingDependency.empty_source_cannot_debit_actor' depends on axioms: [propext]
+'RemainingDependency.affordable_calibrated_selection_delivers' depends on axioms: [propext]
+'RemainingDependency.Mode' does not depend on any axioms
+'RemainingDependency.resultMode' depends on axioms: [propext]
+'RemainingDependency.Fault' does not depend on any axioms
+'RemainingDependency.Config' does not depend on any axioms
+'RemainingDependency.Body' does not depend on any axioms
+'RemainingDependency.State' does not depend on any axioms
+'RemainingDependency.paid' does not depend on any axioms
+'RemainingDependency.channel' does not depend on any axioms
+'RemainingDependency.Event' does not depend on any axioms
+'RemainingDependency.advance' depends on axioms: [propext]
+'RemainingDependency.step' depends on axioms: [propext]
+'RemainingDependency.process' depends on axioms: [propext]
+'RemainingDependency.run' depends on axioms: [propext]
+'RemainingDependency.ancestral_coordinates_unchanged' depends on axioms: [propext]
+'RemainingDependency.run_ancestral_coordinates_unchanged' depends on axioms: [propext]
+'RemainingDependency.completed_component_stays_complete' depends on axioms: [propext]
+'RemainingDependency.run_is_core_trace' depends on axioms: [propext]
+'RemainingDependency.consumer_read_ignores_latent_law' depends on axioms: [propext]
+'RemainingDependency.weak_challenge_does_not_supply_load' depends on axioms: [propext]
+'RemainingDependency.slot_write_does_not_supply_load' depends on axioms: [propext]
+'RemainingDependency.actorTotal' does not depend on any axioms
+'RemainingDependency.paid_account_conserved' depends on axioms: [propext, Quot.sound]
+'RemainingDependency.paid_stocks_preserved' does not depend on any axioms
+'RemainingDependency.advance_actor_account_conserved' depends on axioms: [propext, Quot.sound]
+'RemainingDependency.advance_stock_account_conserved' depends on axioms: [propext, Quot.sound]
+'RemainingDependency.run_actor_account_conserved' depends on axioms: [propext, Quot.sound]
+'RemainingDependency.run_stock_account_conserved' depends on axioms: [propext, Quot.sound]
+'RemainingDependency.wholeTotal' does not depend on any axioms
+'RemainingDependency.whole_history_conserved' depends on axioms: [propext, Quot.sound]
+'RemainingDependency.finite_original_support_bounds_fuel' depends on axioms: [propext, Quot.sound]
+'RemainingDependency.entrance' does not depend on any axioms
+'RemainingDependency.assayEvents' does not depend on any axioms
+'RemainingDependency.serviceEvents' does not depend on any axioms
+'RemainingDependency.continuation' depends on axioms: [propext]
+'RemainingDependency.truthful_paid_assay_acquires_pair' depends on axioms: [propext]
+'RemainingDependency.truthful_paid_assay_commits_supported_choice' depends on axioms: [propext]
+'RemainingDependency.actual_dependent_service' depends on axioms: [propext]
+'RemainingDependency.opposed_dependency_changes_the_enacted_relation' depends on axioms: [propext]
+'RemainingDependency.matched_clamp_preserves_acquisition_but_withholds_use' depends on axioms: [propext]
+'RemainingDependency.matched_assay_cost_through_commit' depends on axioms: [propext]
+'RemainingDependency.missing_contact_is_unresolved' depends on axioms: [propext]
+'RemainingDependency.false_positive_can_misdirect_remaining_packet' depends on axioms: [propext]
+'RemainingDependency.broken_calibration_defeats_correct_weak_record' depends on axioms: [propext]
+'RemainingDependency.unavailable_relation_is_not_old_unfulfillment' depends on axioms: [propext]
+'ScaleRevision.View' does not depend on any axioms
+'ScaleRevision.Config' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.State' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.total' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.drift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.forecast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.dose' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.paid' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.probeBody' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.inspectBody' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.reviseBody' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.respondBody' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.fixedBody' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.Event' does not depend on any axioms
+'ScaleRevision.advance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.run' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.entrance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.inquiry' does not depend on any axioms
+'ScaleRevision.complete' does not depend on any axioms
+'ScaleRevision.run_is_core_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.probe_obtains_actual_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.truthful_changed_probe_requests_refinement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.revised_exact_forecast' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.calibrated_response_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.readout_error_enters_response' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.dose_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.bounded_source_after_response' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.response_keeps_second' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.response_support_balance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.actual_response_condition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.workTotal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.paid_work_conserved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.advance_work_conserved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.run_work_conserved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.waited_evidence_rejected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.acquired_revision_endpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.enacted_refinement_protects' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.clamped_description_loses_condition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.ignored_revision_delay_loses_condition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.biased_new_coordinate_loses_condition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.inquiry_can_exhaust_response_funding' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.insufficient_response_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.mismatched_context_withholds_response' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.matched_revision_preserves_other_inputs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.bounded_bias_margin_recovers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.conservative_margin_can_exceed_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ScaleRevision.fixed_response_also_protects' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PracticalJudgment.Included' does not depend on any axioms
+'PracticalJudgment.StrictIncluded' does not depend on any axioms
+'PracticalJudgment.included_trans' does not depend on any axioms
+'PracticalJudgment.strict_included_irrefl' does not depend on any axioms
+'PracticalJudgment.strict_included_trans' does not depend on any axioms
+'PracticalJudgment.Better' does not depend on any axioms
+'PracticalJudgment.better_irrefl' does not depend on any axioms
+'PracticalJudgment.better_trans' does not depend on any axioms
+'PracticalJudgment.protection_anchor' does not depend on any axioms
+'PracticalJudgment.no_protection_trade_by_count' does not depend on any axioms
+'PracticalJudgment.Frontier' does not depend on any axioms
+'PracticalJudgment.dominated_excluded' does not depend on any axioms
+'PracticalJudgment.finite_frontier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PracticalJudgment.Required' does not depend on any axioms
+'PracticalJudgment.required_performed' does not depend on any axioms
+'PracticalJudgment.alternative_defeats_specific_duty' does not depend on any axioms
+'PracticalJudgment.impossible_menu_no_duty' does not depend on any axioms
+'PracticalJudgment.necessary_means_required' does not depend on any axioms
+'PracticalJudgment.Assigned' does not depend on any axioms
+'PracticalJudgment.unique_responder_required' does not depend on any axioms
+'PracticalJudgment.assignment_respects_capacity' does not depend on any axioms
+'PracticalJudgment.Covered' does not depend on any axioms
+'PracticalJudgment.transfer_requires_actual_successor' does not depend on any axioms
+'PracticalJudgment.no_demand_gap_transfer' depends on axioms: [propext, Quot.sound]
+'PracticalJudgment.uncovered_demand_is_failure' does not depend on any axioms
+'PracticalJudgment.Settled' does not depend on any axioms
+'PracticalJudgment.Residual' does not depend on any axioms
+'PracticalJudgment.settlement_removes_residual' does not depend on any axioms
+'PracticalJudgment.unfulfilled_unreleased_remains' does not depend on any axioms
+'PracticalJudgment.Robust' does not depend on any axioms
+'PracticalJudgment.robust_at_actual' does not depend on any axioms
+'PracticalJudgment.robust_under_refinement' does not depend on any axioms
+'PracticalJudgment.required_under_faithful_redescription' does not depend on any axioms
+'PracticalJudgment.withinCeiling' does not depend on any axioms
+'PracticalJudgment.optionalFormation' does not depend on any axioms
+'PracticalJudgment.supplied_ceiling_bounds_optional_gain' depends on axioms: [propext]
+'PracticalJudgment.independent_choices_not_joint_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PracticalJudgment.basis' does not depend on any axioms
+'PracticalJudgment.event' does not depend on any axioms
+'PracticalJudgment.mixed_repair_anchor' does not depend on any axioms
+'PracticalJudgment.repair_retains_real_loss' does not depend on any axioms
+'PracticalJudgment.protectedOne' does not depend on any axioms
+'PracticalJudgment.noGain' does not depend on any axioms
+'PracticalJudgment.competing_claims_incomparable' depends on axioms: [propext]
+'PracticalJudgment.collective_duty_without_individual_duty' depends on axioms: [propext]
+'PracticalJudgment.uncertain_worlds_need_common_plan' does not depend on any axioms
+'InquiryJudgment.response_charge_succeeds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.funded_calibrated_response' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.robust_execution_at_actual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.Case' does not depend on any axioms
+'InquiryJudgment.Plan' does not depend on any axioms
+'InquiryJudgment.Claim' does not depend on any axioms
+'InquiryJudgment.config' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.events' does not depend on any axioms
+'InquiryJudgment.outcome' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.holds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.protects' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.chosen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.both' does not depend on any axioms
+'InquiryJudgment.accurateOnly' does not depend on any axioms
+'InquiryJudgment.outcome_is_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.all_work_accounted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.continuation_table' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.companion_retained' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.fixed_protects' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.robust_continuation_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.fixed_dominates_failures' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.fixed_is_chosen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.chosen_iff_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.chosen_has_protecting_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.collective_response_required' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.pointwise_success_not_common_choice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.protection_under_narrowing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.accurate_measurement_protects' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.false_narrowing_loses_actual_claim' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.accurate_measured_is_chosen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.broader_cases_change_judgment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.optional_supply_loss_is_real' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.underfunded_menu_has_no_success' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.selectedAllowance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.adaptiveAdvance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.adaptiveOutcome' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.selection_uses_acquired_coordinate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.adaptive_is_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.adaptive_matches_successful_history' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.adaptive_protects' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.adaptive_work_accounted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.extendedOutcome' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.extendedProtect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.extendedChosen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.complete_protection_is_undominated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.extended_fixed_is_chosen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.extended_adaptive_is_chosen' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InquiryJudgment.extended_protection_required_without_fixed_requirement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

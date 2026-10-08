@@ -1,0 +1,222 @@
+'MediatedControl.FaultCode' does not depend on any axioms
+'MediatedControl.decodeFault' does not depend on any axioms
+'MediatedControl.Write' does not depend on any axioms
+'MediatedControl.Rights' does not depend on any axioms
+'MediatedControl.permitted' depends on axioms: [propext]
+'MediatedControl.authorized' depends on axioms: [propext]
+'MediatedControl.oneWrite' depends on axioms: [propext]
+'MediatedControl.writes' depends on axioms: [propext]
+'MediatedControl.modelTouched' depends on axioms: [propext]
+'MediatedControl.faultTouched' depends on axioms: [propext]
+'MediatedControl.effect' depends on axioms: [propext]
+'MediatedControl.image' depends on axioms: [propext]
+'MediatedControl.model_field_preserved' depends on axioms: [propext]
+'MediatedControl.fault_field_preserved' depends on axioms: [propext]
+'MediatedControl.world_fields_determine_state' depends on axioms: [propext]
+'MediatedControl.model_write_stays_represented' depends on axioms: [propext, Quot.sound]
+'MediatedControl.fault_write_stays_represented' depends on axioms: [propext]
+'MediatedControl.writes_stay_represented' depends on axioms: [propext, Quot.sound]
+'MediatedControl.executed_writes_fit_derived_effect' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MediatedControl.exact_image_retains_executed_actual' depends on axioms: [propext, Quot.sound]
+'MediatedControl.exact_image_is_within_coarse_prediction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MediatedControl.Packet' does not depend on any axioms
+'MediatedControl.Entry' does not depend on any axioms
+'MediatedControl.Machine' does not depend on any axioms
+'MediatedControl.writeCost' does not depend on any axioms
+'MediatedControl.installed' depends on axioms: [propext]
+'MediatedControl.commit' depends on axioms: [propext]
+'MediatedControl.committed_shape' depends on axioms: [propext, Quot.sound]
+'MediatedControl.commit_preserves_actual_coverage' depends on axioms: [propext, Quot.sound]
+'MediatedControl.commit_records_the_executed_effect' depends on axioms: [propext, Quot.sound]
+'MediatedControl.caller_effect_claim_is_not_used' depends on axioms: [propext]
+'MediatedControl.replayed_packet_rejected' depends on axioms: [propext, Quot.sound]
+'MediatedControl.denied_write_prevents_commit' depends on axioms: [propext, Quot.sound]
+'MediatedControl.old_command_request_is_revoked' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MediatedControl.commit_keeps_consumption' depends on axioms: [propext, Quot.sound]
+'MediatedControl.Event' does not depend on any axioms
+'MediatedControl.step' depends on axioms: [propext]
+'MediatedControl.SourceLaw' depends on axioms: [propext]
+'MediatedControl.mediated_step_preserves_coverage' depends on axioms: [propext, Quot.sound]
+'MediatedControl.History' depends on axioms: [propext]
+'MediatedControl.mediated_history_preserves_coverage' depends on axioms: [propext, Quot.sound]
+'MediatedControl.mediated_history_to_current_certificate' depends on axioms: [propext, Quot.sound]
+'MediatedControl.run' depends on axioms: [propext]
+'MediatedControl.start' does not depend on any axioms
+'MediatedControl.inspectEvents' does not depend on any axioms
+'MediatedControl.repair' does not depend on any axioms
+'MediatedControl.worked' does not depend on any axioms
+'MediatedControl.executed_patch_can_replace_a_fresh_structural_survey' depends on axioms: [propext]
+'MediatedControl.exact_transform_is_stronger_than_footprint_alone' depends on axioms: [propext]
+'MediatedControl.execution_still_needs_remaining_capacity' depends on axioms: [propext]
+'MediatedControl.read_only_requester_cannot_reorganize' depends on axioms: [propext]
+'MediatedControl.protected_field_attempts_reject_even_with_both_write_rights' depends on axioms: [propext]
+'MediatedControl.bypass' does not depend on any axioms
+'MediatedControl.publicView' does not depend on any axioms
+'MediatedControl.previouslyInspected' depends on axioms: [propext]
+'MediatedControl.bypass_preserves_records_but_breaks_coverage' depends on axioms: [propext]
+'MediatedControl.record_only_acceptance_cannot_exclude_the_extra_writer' depends on axioms: [propext]
+MediatedControl.model_field_preserved (program : List MediatedControl.Write) (w : TemporalInspection.World)
+  (untouched : MediatedControl.modelTouched program = false) : (MediatedControl.writes program w).model = w.model
+MediatedControl.fault_field_preserved (program : List MediatedControl.Write) (w : TemporalInspection.World)
+  (untouched : MediatedControl.faultTouched program = false) : (MediatedControl.writes program w).fault = w.fault
+MediatedControl.world_fields_determine_state {a b : TemporalInspection.World} (hm : a.model = b.model)
+  (hf : a.fault = b.fault) : a = b
+MediatedControl.model_write_stays_represented (w : TemporalInspection.World) (known : w ∈ TemporalInspection.worlds)
+  (h : EvidenceQualifiedCorrection.Model) : { model := h, fault := w.fault } ∈ TemporalInspection.worlds
+MediatedControl.fault_write_stays_represented (w : TemporalInspection.World) (f : MediatedControl.FaultCode) :
+  { model := w.model, fault := MediatedControl.decodeFault f } ∈ TemporalInspection.worlds
+MediatedControl.writes_stay_represented (program : List MediatedControl.Write) (w : TemporalInspection.World)
+  (known : w ∈ TemporalInspection.worlds) : MediatedControl.writes program w ∈ TemporalInspection.worlds
+MediatedControl.executed_writes_fit_derived_effect (program : List MediatedControl.Write) (w : TemporalInspection.World)
+  (known : w ∈ TemporalInspection.worlds) :
+  MediatedControl.writes program w ∈ TemporalInspection.successors (MediatedControl.effect program) w
+MediatedControl.exact_image_retains_executed_actual (program : List MediatedControl.Write)
+  (possible : List TemporalInspection.World) (w : TemporalInspection.World) (known : w ∈ possible) :
+  MediatedControl.writes program w ∈ MediatedControl.image program possible
+MediatedControl.exact_image_is_within_coarse_prediction (program : List MediatedControl.Write)
+  (possible : List TemporalInspection.World)
+  (represented : ∀ (w : TemporalInspection.World), w ∈ possible → w ∈ TemporalInspection.worlds)
+  (w : TemporalInspection.World) :
+  w ∈ MediatedControl.image program possible → w ∈ TemporalInspection.predict (MediatedControl.effect program) possible
+MediatedControl.committed_shape (p : MediatedControl.Packet) (m out : MediatedControl.Machine)
+  (done : MediatedControl.commit p m = some out) :
+  p.expectedGeneration = m.generation ∧
+    MediatedControl.authorized m.rights p.program = true ∧
+      ∃ paid,
+        EffectiveCommand.spend (MediatedControl.writeCost p.program) (MediatedControl.writeCost p.program)
+              m.tracked.installation.state =
+            some paid ∧
+          out = MediatedControl.installed m p paid
+MediatedControl.commit_preserves_actual_coverage (p : MediatedControl.Packet) (m out : MediatedControl.Machine)
+  (known : TemporalInspection.Known m.tracked) (done : MediatedControl.commit p m = some out) :
+  TemporalInspection.Known out.tracked
+MediatedControl.commit_records_the_executed_effect (p : MediatedControl.Packet) (m out : MediatedControl.Machine)
+  (done : MediatedControl.commit p m = some out) :
+  out.tracked.actual = MediatedControl.writes p.program m.tracked.actual ∧
+    out.tracked.possible = MediatedControl.image p.program m.tracked.possible ∧
+      out.tracked.records = m.tracked.records ++ [TemporalInspection.Record.change (MediatedControl.effect p.program)] ∧
+        out.journal =
+            m.journal ++
+              [{ generation := m.generation, actualEffect := MediatedControl.effect p.program, program := p.program }] ∧
+          out.generation = m.generation + 1 ∧
+            out.rights = m.rights ∧
+              out.tracked.installation.root = m.tracked.installation.root ∧
+                out.tracked.installation.mandate = m.tracked.installation.mandate
+MediatedControl.caller_effect_claim_is_not_used (m : MediatedControl.Machine) (p : MediatedControl.Packet)
+  (claim : TemporalInspection.Change) :
+  MediatedControl.commit { expectedGeneration := p.expectedGeneration, claimedEffect := claim, program := p.program }
+      m =
+    MediatedControl.commit p m
+MediatedControl.replayed_packet_rejected (p : MediatedControl.Packet) (m out : MediatedControl.Machine)
+  (done : MediatedControl.commit p m = some out) : MediatedControl.commit p out = none
+MediatedControl.denied_write_prevents_commit (p : MediatedControl.Packet) (m : MediatedControl.Machine)
+  (op : MediatedControl.Write) (included : op ∈ p.program) (denied : MediatedControl.permitted m.rights op = false) :
+  MediatedControl.commit p m = none
+MediatedControl.old_command_request_is_revoked (p : MediatedControl.Packet) (m out : MediatedControl.Machine)
+  (req : FaultTolerantCorrection.Request) (current : FaultTolerantCorrection.fresh m.tracked.installation req = true)
+  (done : MediatedControl.commit p m = some out) : FaultTolerantCorrection.fresh out.tracked.installation req = false
+MediatedControl.commit_keeps_consumption (p : MediatedControl.Packet) (m out : MediatedControl.Machine)
+  (done : MediatedControl.commit p m = some out) :
+  out.tracked.installation.state.reserve + out.tracked.installation.state.spent =
+      m.tracked.installation.state.reserve + m.tracked.installation.state.spent ∧
+    out.tracked.installation.state.spent = m.tracked.installation.state.spent + MediatedControl.writeCost p.program ∧
+      out.tracked.installation.state.time ≤ out.tracked.installation.state.deadline
+MediatedControl.mediated_step_preserves_coverage (e : MediatedControl.Event) (m out : MediatedControl.Machine)
+  (known : TemporalInspection.Known m.tracked) (source : MediatedControl.SourceLaw e m)
+  (done : MediatedControl.step e m = some out) : TemporalInspection.Known out.tracked
+MediatedControl.mediated_history_preserves_coverage {start finish : MediatedControl.Machine}
+  (history : MediatedControl.History start finish) (known : TemporalInspection.Known start.tracked) :
+  TemporalInspection.Known finish.tracked
+MediatedControl.mediated_history_to_current_certificate {start finish : MediatedControl.Machine}
+  (history : MediatedControl.History start finish) (known : TemporalInspection.Known start.tracked)
+  (supports : FaultTolerantCorrection.Domain → Bool) (P : Prop)
+  (faithful :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ (EvidenceQualifiedCorrection.describe finish.tracked.actual.model).roster →
+        CorrectionReconfiguration.fails
+              ((EvidenceQualifiedCorrection.describe finish.tracked.actual.model).vulnerability d)
+              (TemporalInspection.commandRoots finish.tracked.actual) =
+            false →
+          supports d = true → P)
+  (accepted :
+    FaultTolerantCorrection.certificate (EvidenceQualifiedCorrection.describe finish.tracked.actual.model).roster
+        (EvidenceQualifiedCorrection.pooled EvidenceQualifiedCorrection.describe
+          (TemporalInspection.models finish.tracked.possible))
+        supports =
+      true) :
+  P
+MediatedControl.executed_patch_can_replace_a_fresh_structural_survey :
+  have out :=
+    (MediatedControl.run MediatedControl.worked
+        (MediatedControl.start { model := EvidenceQualifiedCorrection.Model.left, fault := some 0 } 19 19)).snd;
+  out.tracked.actual = { model := EvidenceQualifiedCorrection.Model.right, fault := some 2 } ∧
+    TemporalInspection.mask out.tracked.possible = 4 ∧
+      out.tracked.installation.state.completed = true ∧
+        out.tracked.installation.state.running = false ∧
+          out.tracked.installation.state.spent = 19 ∧
+            out.tracked.installation.state.reserve = 0 ∧
+              out.tracked.installation.serial = 2 ∧
+                out.generation = 1 ∧
+                  out.journal =
+                    [{ generation := 0, actualEffect := TemporalInspection.Change.reset,
+                        program := MediatedControl.repair.program }]
+MediatedControl.exact_transform_is_stronger_than_footprint_alone :
+  TemporalInspection.mask
+        (MediatedControl.image MediatedControl.repair.program
+          (TemporalInspection.scanResult FallibleInspection.splitReports)) =
+      4 ∧
+    TemporalInspection.mask
+        (TemporalInspection.predict (MediatedControl.effect MediatedControl.repair.program)
+          (TemporalInspection.scanResult FallibleInspection.splitReports)) =
+      7
+MediatedControl.execution_still_needs_remaining_capacity :
+  have out :=
+    (MediatedControl.run MediatedControl.worked
+        (MediatedControl.start { model := EvidenceQualifiedCorrection.Model.left, fault := some 0 } 18 18)).snd;
+  out.tracked.installation.state.completed = false ∧
+    out.tracked.installation.state.spent = 16 ∧ out.tracked.installation.state.reserve = 2
+MediatedControl.read_only_requester_cannot_reorganize :
+  have result :=
+    MediatedControl.run MediatedControl.worked
+      (MediatedControl.start { model := EvidenceQualifiedCorrection.Model.left, fault := some 0 } 19 19
+        { model := false, fault := false });
+  result.fst = false ∧
+    result.snd.tracked.actual = { model := EvidenceQualifiedCorrection.Model.left, fault := some 0 } ∧
+      result.snd.tracked.installation.state.spent = 5 ∧ result.snd.journal = []
+MediatedControl.protected_field_attempts_reject_even_with_both_write_rights :
+  have m := MediatedControl.start { model := EvidenceQualifiedCorrection.Model.left, fault := some 0 } 30 30;
+  ([MediatedControl.Write.eraseRecords,
+          MediatedControl.Write.forgePossible [{ model := EvidenceQualifiedCorrection.Model.right, fault := some 2 }],
+          MediatedControl.Write.replaceInstallation m.tracked.installation, MediatedControl.Write.grantBoth].all
+      fun op =>
+      (MediatedControl.commit
+          { expectedGeneration := 0, claimedEffect := TemporalInspection.Change.steady,
+            program := [MediatedControl.Write.model EvidenceQualifiedCorrection.Model.right, op] }
+          m).isNone) =
+    true
+MediatedControl.bypass_preserves_records_but_breaks_coverage :
+  have changed :=
+    MediatedControl.bypass { model := EvidenceQualifiedCorrection.Model.right, fault := some 2 }
+      MediatedControl.previouslyInspected;
+  MediatedControl.publicView changed = MediatedControl.publicView MediatedControl.previouslyInspected ∧
+    ¬changed.tracked.actual ∈ changed.tracked.possible ∧
+      CorrectionReconfiguration.induced (EvidenceQualifiedCorrection.describe changed.tracked.actual.model)
+            (TemporalInspection.roots changed.tracked.actual) =
+          [2, 3] ∧
+        (FaultTolerantCorrection.certificate FaultTolerantCorrection.roster4
+            (EvidenceQualifiedCorrection.pooled EvidenceQualifiedCorrection.describe
+              (TemporalInspection.models changed.tracked.possible))
+            fun d => decide (2 ≤ d)) =
+          true
+MediatedControl.record_only_acceptance_cannot_exclude_the_extra_writer
+  (accept :
+    List TemporalInspection.World ×
+        List TemporalInspection.Record ×
+          FaultTolerantCorrection.Installation × MediatedControl.Rights × Nat × List MediatedControl.Entry →
+      Bool)
+  (original : accept (MediatedControl.publicView MediatedControl.previouslyInspected) = true) :
+  accept
+      (MediatedControl.publicView
+        (MediatedControl.bypass { model := EvidenceQualifiedCorrection.Model.right, fault := some 2 }
+          MediatedControl.previouslyInspected)) =
+    true

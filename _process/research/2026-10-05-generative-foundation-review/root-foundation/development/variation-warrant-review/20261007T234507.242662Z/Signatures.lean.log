@@ -1,0 +1,75 @@
+VariationWarrant.preparation_shape (seed : Bool × Bool) (bit : Bool) :
+  VariationWarrant.preparation seed bit = [] ∨ VariationWarrant.preparation seed bit = [SystemIndividuation.Event.flip]
+VariationWarrant.preparation_trace (seed : Bool × Bool) (bit : Bool) :
+  Generative.Trace SystemIndividuation.process seed
+    (SystemIndividuation.Event.correlate :: VariationWarrant.preparation seed bit) (bit, bit)
+VariationWarrant.every_prepared_endpoint_is_diagonal {seed t : Bool × Bool} (h : VariationWarrant.Prepared seed t) :
+  SystemIndividuation.diagonal t
+VariationWarrant.every_diagonal_endpoint_has_preparation (seed t : Bool × Bool) (h : SystemIndividuation.diagonal t) :
+  VariationWarrant.Prepared seed t
+VariationWarrant.prepared_iff_diagonal (seed t : Bool × Bool) :
+  VariationWarrant.Prepared seed t ↔ SystemIndividuation.diagonal t
+VariationWarrant.prepared_iff_short_preparation (seed t : Bool × Bool) :
+  VariationWarrant.Prepared seed t ↔
+    ∃ suffix,
+      (suffix = [] ∨ suffix = [SystemIndividuation.Event.flip]) ∧
+        Generative.Trace SystemIndividuation.process seed (SystemIndividuation.Event.correlate :: suffix) t
+VariationWarrant.both_comparison_states_are_prepared (seed : Bool × Bool) :
+  VariationWarrant.Prepared seed (false, false) ∧ VariationWarrant.Prepared seed (true, true)
+VariationWarrant.off_diagonal_endpoint_not_prepared (seed : Bool × Bool) (bit : Bool) :
+  ¬VariationWarrant.Prepared seed (bit, !bit)
+VariationWarrant.prepared_domain_independent_of_seed (seed other t : Bool × Bool) :
+  VariationWarrant.Prepared seed t ↔ VariationWarrant.Prepared other t
+VariationWarrant.prepared_closed_under_continuation {seed s t : Bool × Bool} {word : List SystemIndividuation.Event}
+  (prepared : VariationWarrant.Prepared seed s) (later : Generative.Trace SystemIndividuation.process s word t) :
+  VariationWarrant.Prepared seed t
+VariationWarrant.formed_continuation_iff (seed t : Bool × Bool) (word : List SystemIndividuation.Event) :
+  (∃ suffix,
+      Generative.Trace SystemIndividuation.process seed (SystemIndividuation.Event.correlate :: suffix ++ word) t) ↔
+    ∃ bit, Generative.Trace SystemIndividuation.process (bit, bit) word t
+VariationWarrant.formed_outcome_iff (seed : Bool × Bool) (word : List SystemIndividuation.Event)
+  (outcome : Bool × Bool → Prop) :
+  (∃ suffix t,
+      Generative.Trace SystemIndividuation.process seed (SystemIndividuation.Event.correlate :: suffix ++ word) t ∧
+        outcome t) ↔
+    ∃ bit t, Generative.Trace SystemIndividuation.process (bit, bit) word t ∧ outcome t
+VariationWarrant.support_iff_prepared_tests {Value : Type} (seed : Bool × Bool) (value : Bool × Bool → Value)
+  (region : SystemIndividuation.Position → Prop) :
+  SystemIndividuation.Supports (VariationWarrant.Prepared seed) SystemIndividuation.jointRead value region ↔
+    ∀ (first second : Bool),
+      SystemIndividuation.Agree SystemIndividuation.jointRead region (first, first) (second, second) →
+        value (first, first) = value (second, second)
+VariationWarrant.possibility_support_iff_prepared_tests (seed : Bool × Bool)
+  (region : SystemIndividuation.Position → Prop) :
+  SystemIndividuation.PossibilitySupport (VariationWarrant.Prepared seed) SystemIndividuation.jointRead
+      SystemIndividuation.process region ↔
+    ∀ (first second : Bool),
+      SystemIndividuation.Agree SystemIndividuation.jointRead region (first, first) (second, second) →
+        ∀ (word : List SystemIndividuation.Event),
+          Generative.Feasible SystemIndividuation.process (first, first) word ↔
+            Generative.Feasible SystemIndividuation.process (second, second) word
+VariationWarrant.right_supports_generated_possibilities (seed : Bool × Bool) :
+  SystemIndividuation.PossibilitySupport (VariationWarrant.Prepared seed) SystemIndividuation.jointRead
+    SystemIndividuation.process SystemIndividuation.rightRegion
+VariationWarrant.generated_response_support_iff_diagonal {Value : Type} (seed : Bool × Bool)
+  (value : Bool × Bool → Value) (region : SystemIndividuation.Position → Prop) :
+  SystemIndividuation.Supports (VariationWarrant.Prepared seed) SystemIndividuation.jointRead value region ↔
+    SystemIndividuation.Supports SystemIndividuation.diagonal SystemIndividuation.jointRead value region
+VariationWarrant.generated_domain_has_no_least_support (seed : Bool × Bool) :
+  ¬∃ region,
+      SystemIndividuation.Supports (VariationWarrant.Prepared seed) SystemIndividuation.jointRead
+          SystemIndividuation.response region ∧
+        ∀ (other : SystemIndividuation.Position → Prop),
+          SystemIndividuation.Supports (VariationWarrant.Prepared seed) SystemIndividuation.jointRead
+              SystemIndividuation.response other →
+            ∀ (i : SystemIndividuation.Position), region i → other i
+VariationWarrant.off_diagonal_execution_before_formation :
+  Generative.Trace SystemIndividuation.process (false, true)
+    [SystemIndividuation.Event.flip, SystemIndividuation.Event.flip] (false, true)
+VariationWarrant.normalization_does_not_preserve_original_word :
+  Generative.Trace SystemIndividuation.process (false, true) [SystemIndividuation.Event.correlate] (false, false) ∧
+    Generative.Trace SystemIndividuation.process (false, true)
+        [SystemIndividuation.Event.correlate, SystemIndividuation.Event.flip, SystemIndividuation.Event.flip]
+        (false, false) ∧
+      [SystemIndividuation.Event.correlate] ≠
+        [SystemIndividuation.Event.correlate, SystemIndividuation.Event.flip, SystemIndividuation.Event.flip]

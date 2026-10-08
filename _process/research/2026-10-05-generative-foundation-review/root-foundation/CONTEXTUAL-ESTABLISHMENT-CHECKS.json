@@ -1,0 +1,246 @@
+{
+  "checks_passed": true,
+  "scope": "Saved original/data/proof bindings, declared failed numerical bounds, corrected-run sensitivities, local links and C14 rendering. No fresh Lean run, empirical replication or global table review.",
+  "original_files": 14,
+  "publisher_md5_checks": 7,
+  "cultures": 45,
+  "dated_cohorts": 11,
+  "raw_colony_areas": 784,
+  "new_lean_theorems": 7,
+  "declaration_audits": 11,
+  "event_tolerance_sensitivity": {
+    "source": 1.6454240192587122e-09,
+    "equal_dispersal": 2.0117532776124105e-16,
+    "neutral_retention_slice": 4.612035105493358e-16
+  },
+  "failed_Euler_bounds_preserved": true,
+  "local_links_checked": 50,
+  "links": [
+    {
+      "document": "sources/evolutionary-selection/karita-2026/README.md",
+      "reference": "manifest.json"
+    },
+    {
+      "document": "sources/evolutionary-selection/karita-2026/README.md",
+      "reference": "Pellicle_success.xlsx"
+    },
+    {
+      "document": "sources/evolutionary-selection/karita-2026/README.md",
+      "reference": "Collapsing_colony_size.xlsx"
+    },
+    {
+      "document": "sources/evolutionary-selection/karita-2026/README.md",
+      "reference": "Surface_density_data.xlsx"
+    },
+    {
+      "document": "sources/evolutionary-selection/karita-2026/README.md",
+      "reference": "4state-model.ipynb"
+    },
+    {
+      "document": "sources/evolutionary-selection/karita-2026/README.md",
+      "reference": "Spatial_Model_LBOX500.c"
+    },
+    {
+      "document": "sources/evolutionary-selection/karita-2026/README.md",
+      "reference": "input.txt"
+    },
+    {
+      "document": "sources/evolutionary-selection/karita-2026/README.md",
+      "reference": "supplement.pdf"
+    },
+    {
+      "document": "sources/evolutionary-selection/karita-2026/README.md",
+      "reference": "../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/contextual-establishment/README.md"
+    },
+    {
+      "document": "sources/evolutionary-selection/karita-2026/README.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/contextual-establishment/README.md",
+      "reference": "../../../../../../sources/evolutionary-selection/karita-2026/README.md"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/contextual-establishment/README.md",
+      "reference": "../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/contextual-establishment/README.md",
+      "reference": "check_record.py"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/contextual-establishment/README.md",
+      "reference": "../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-CHECKS.json"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/contextual-establishment/README.md",
+      "reference": "analyze.py"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/contextual-establishment/README.md",
+      "reference": "pellicle-cohorts.csv"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/contextual-establishment/README.md",
+      "reference": "colony-areas.csv"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/contextual-establishment/README.md",
+      "reference": "results.json"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/contextual-establishment/README.md",
+      "reference": "../../lean/universal-ethics/SurfaceSelection.lean"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/contextual-establishment/README.md",
+      "reference": "../../lean/universal-ethics/surface-selection-verification/verification.json"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/contextual-establishment/README.md",
+      "reference": "establishment-and-retention.png"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/contextual-establishment/README.md",
+      "reference": "plot_results.py"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/contextual-establishment/README.md",
+      "reference": "establishment-and-retention.svg"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md",
+      "reference": "../../../../sources/evolutionary-selection/karita-2026/README.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md",
+      "reference": "MAT-HISTORY-INTEGRATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md",
+      "reference": "DEVELOPMENTAL-TRANSFER-INTEGRATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SurfaceSelection.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/surface-selection-verification/verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/contextual-establishment/README.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../sources/15-codex-theory-conversations/2026-10-08-the-theory-of-evolution-goal.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "NONDUAL-METHOD.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "GENERATIVE-SELECTION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "LIANGZHI-EVOLUTION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELECTION-RECURRENCE-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-ASSOCIATION-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ECOLOGICAL-SELECTION-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PACKING-FRAGMENTATION-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SETTLING-CORRESPONDENCE-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/AGGREGATION-SELECTION-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LINEAGE-CONTINUATION-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LINEAGE-FORECAST-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-TRANSFER-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-CONDITIONS-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-HISTORY-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "NEW-POSSIBILITIES.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "PRACTICAL-JUDGMENT.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELECTION-RECURRENCE-INTEGRATION.md#comparison-and-primary-evidence"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-COMPARATIVE-DIRECTION.md"
+    }
+  ],
+  "six_completion_rows_unchanged": true,
+  "scoped_C14_valid": true,
+  "unrelated_review_obligations": {
+    "modified_sources": 6,
+    "missing_sources": 0,
+    "new_pages": 4,
+    "removed_pages": 0
+  },
+  "bound_files": {
+    "sources/evolutionary-selection/karita-2026/README.md": "1e97315027b44c3c481a7498f5df7eebf183b0815806382fb6ee8d37f85cae2c",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/contextual-establishment/README.md": "eca454f23d37f0e5a42a7ab00068cdc20eacab91fafddf867a720f6247c526fa",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md": "7e78ebab72f75fda21af07b5dd8de4dd1814b125d3a255631b3fa26a4426e7c1",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md": "93a5f54382b18a8542727cbc2e9a5977665ae9fbf8c4ed041b1e6c5b4dd29a35",
+    "sources/evolutionary-selection/karita-2026/manifest.json": "3c31045c476235cb23e09768d24fdbb35ca5364efe4af1c3c584b9b124979084",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/contextual-establishment/analyze.py": "baa325d12da1f4dda268409419759fa10ffeffa5ff013d66284ac11d426c8ef1",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/contextual-establishment/results.json": "38d57b225fb7a5f440c8b6f39b6ef10a922742e351a2773b12f5a596acb05edd",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/contextual-establishment/check_record.py": "c275d2b0c8aa64234d8d7ee7ae62754952f11f35a9ff1efbb606b0170f678a59",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/contextual-establishment/plot_results.py": "f9c4cd1860e6df33b8e0a219ef7ccff88aa12f5a0e39ed53c55da328bcc5cb56",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/contextual-establishment/establishment-and-retention.png": "41c7251e67cf4fcd9f03a6bd082dbb02808588edd984c1dd03398bfb3df158ac",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/contextual-establishment/establishment-and-retention.svg": "12aafa815c764e218897092e7b3af25d066c1a6b121dbe0aa25a86995ab312a2",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SurfaceSelection.lean": "924117330819afeb0b1e83495f094ee3cbfce202837373dd79c601985eeb3633",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/surface-selection-verification/verification.json": "cd9197d2c0ce967d6123b9d7b2e76dbfaa296438ab387d3d02a0fbad6f102d06",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INDEX-EDITS.json": "d34bcaf067e33168975cea8db7dfd6576c3c360bf31860bf7d5a636ee4133e8e"
+  },
+  "independent_agent_review_claimed": false,
+  "full_theory_complete": false
+}

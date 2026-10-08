@@ -1,0 +1,136 @@
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+UpdaterConsequences.lean:36:69: error: unsolved goals
+case «0»
+a b : ℝ
+⊢ a * 3 + b = if 0 = 2 then a * 3 - b else a * 3 + b
+
+case «1»
+a b : ℝ
+⊢ a * 3 + b = if 1 = 2 then a * 3 - b else a * 3 + b
+
+case «2»
+a b : ℝ
+⊢ a * 3 - b = if ⟨2, ⋯⟩ = 2 then a * 3 - b else a * 3 + b
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+UpdaterConsequences.lean:40:70: error: unsolved goals
+case «0»
+a b : ℝ
+⊢ a + b * 3 = if 0 = 2 then a - b * 3 else a + b * 3
+
+case «1»
+a b : ℝ
+⊢ a + b * 3 = if 1 = 2 then a - b * 3 else a + b * 3
+
+case «2»
+a b : ℝ
+⊢ a - b * 3 = if ⟨2, ⋯⟩ = 2 then a - b * 3 else a + b * 3
+UpdaterConsequences.lean:157:88: error: unsolved goals
+h : ¬succeeds (weighted 1 4) Task.a
+⊢ weighted (1 + 1) 4 = weighted 2 4
+UpdaterConsequences.lean:166:82: error: unsolved goals
+h : update Route.continual (weighted 2 4) Task.c = update Route.responsive (weighted 2 4) Task.c
+h0 : learn 1 ![1, 1, -1] (weighted 2 4) 0 0 = 2 + 4
+⊢ False
+UpdaterConsequences.lean:169:46: warning: This simp argument is unused:
+  learned_second
+
+Hint: Omit it from the simp argument list.
+  simp [update, post_failure_both.2, profile, l̵e̵a̵r̵n̵e̵d̵_̵s̵e̵c̵o̵n̵d̵,̵ ̵weighted, first, second] at h0
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+UpdaterConsequences.lean:176:4: error: Type mismatch: After simplification, term
+  continual_cycle 1
+ has type
+  run Route.continual (weighted (1 + 1) (3 + 1)) cycle = (weighted (1 + 2) (3 + 4), 3)
+but is expected to have type
+  run Route.continual (weighted 2 4) cycle = (weighted 3 7, 3)
+UpdaterConsequences.lean:186:2: error: unsolved goals
+case left
+hc : ∀ (b : ℝ), 1 ≤ b → succeeds (weighted 1 b) Task.c
+ha : succeeds (weighted 1 1) Task.a
+⊢ 1 +
+      ((if succeeds (weighted 1 (1 + 1)) Task.c then 1 else 0) +
+        ((if succeeds (weighted 1 (1 + 1 + 1)) Task.c then 1 else 0) +
+          if succeeds (weighted 1 (1 + 1 + 1 + 1)) Task.c then 1 else 0)) =
+    4
+UpdaterConsequences.lean:187:6: warning: This simp argument is unused:
+  hc 2 (by norm_num)
+
+Hint: Omit it from the simp argument list.
+  simp [run, update, profile, learned_second, hc 1 (by norm_num), hc 2̵ ̵(̵b̵y̵ ̵n̵o̵r̵m̵_̵n̵u̵m̵)̵,̵ ̵h̵c̵ ̵3 (by norm_num),
+  ̲  ̲ ̲ ̲hc 4 (by norm_num)]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+UpdaterConsequences.lean:187:26: warning: This simp argument is unused:
+  hc 3 (by norm_num)
+
+Hint: Omit it from the simp argument list.
+  simp [run, update, profile, learned_second, hc 1 (by norm_num), hc 2 (by norm_num),
+  ̲  ̲ ̲ ̲hc 3̵ ̵(̵b̵y̵ ̵n̵o̵r̵m̵_̵n̵u̵m̵)̵,̵ ̵h̵c̵ ̵4 (by norm_num)]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+UpdaterConsequences.lean:187:46: warning: This simp argument is unused:
+  hc 4 (by norm_num)
+
+Hint: Omit it from the simp argument list.
+  simp [run, update, profile, learned_second, hc 1 (by norm_num), hc 2 (by norm_num),
+  ̲  ̲ ̲ ̲hc 3 (by n̵o̵r̵m̵_̵n̵u̵m̵)̵,̵ ̵h̵c̵ ̵4̵ ̵(̵b̵y̵ ̵norm_num)]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+UpdaterConsequences.lean:213:83: error: unexpected identifier; expected '}'
+UpdaterConsequences.lean:225:8: warning: declaration uses `sorry`
+UpdaterConsequences.lean:251:86: error: unsolved goals
+case some
+x : Carrier
+h : x.source < 4
+val✝ : Route
+⊢ sorry () = x
+UpdaterConsequences.lean:280:64: error: unsolved goals
+h : run Route.continual (weighted 1 1) cycle = (weighted 2 4, 3)
+⊢ sorry () = { network := weighted 2 4, route := none, stock := 3, source := 8, spent := 0, waste := 1 }
+UpdaterConsequences.lean:283:8: warning: declaration uses `sorry`
+UpdaterConsequences.lean:288:66: error: unsolved goals
+⊢ False
+UpdaterConsequences.lean:289:8: warning: declaration uses `sorry`
+UpdaterConsequences.lean:291:73: error: unsolved goals
+⊢ False
+UpdaterConsequences.lean:292:8: warning: declaration uses `sorry`
+UpdaterConsequences.lean:306:50: error: unsolved goals
+h1 : run Route.continual (weighted 2 4) cycle = (weighted 3 7, 3)
+h2 : run Route.continual (weighted 3 7) cycle = (weighted 4 10, 3)
+⊢ sorry () = { network := weighted 4 10, route := none, stock := 3, source := 0, spent := 6, waste := 3 }
+UpdaterConsequences.lean:310:26: warning: declaration uses `sorry`

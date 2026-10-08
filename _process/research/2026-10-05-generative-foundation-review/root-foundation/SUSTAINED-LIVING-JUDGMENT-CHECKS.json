@@ -1,0 +1,132 @@
+{
+  "status": "passed",
+  "date": "2026-10-08 Asia/Bangkok",
+  "scope": "Final written connection, local links, source-bound proof artifacts, independent acceptance and paired chain; no field implementation or empirical revalidation.",
+  "new_theorems": 29,
+  "new_audits": 39,
+  "closure_audits": 192,
+  "local_links_checked": 25,
+  "bilingual_entry_ids": [
+    "C27",
+    "F19"
+  ],
+  "proof_snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/sustained-judgment-checks/20261007T194406.070391Z",
+  "document_sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SUSTAINED-LIVING-JUDGMENT.md": "5099e076723d9b0d397e015778ac75137adcc28b2c5a5c612776918eb6adb6f4",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-INTEGRATION.md": "a45d522c4f3c9238b35cfbef154f16a28b785e68fef95f5581cfedc256e55d7b",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-EVIDENCE.md": "39cf8f48c30bda211c95330e3ebbe23c1fce76f23951453cb24720a7bc9a775d",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-REVIEW.md": "e25a87168c17797ddca85f69a27cf4a72a7ed5dcf7d8c3ab9948f3c52376231b",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/check_sustained_judgment.py": "d9f99877f3083a4d279d365d6fedddea36c7fe968283470861d7275bf5bf65ee",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/sustained-judgment-verification.json": "f6a75d9fcc84811de903ed63dabf7713f4302e7b70b0ffa592752ba221c6c9e0",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SustainedJudgment.lean": "f4b80ad8326f06664b30c4bf180ad0d11cb2ab6bb3d2bd5687c4ab7d23642dd3",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-CHECK.py": "9869c1b67998ddd9a2ac8e3549602c799080cba3229a21c6b88df82eb49c0a27"
+  },
+  "unrelated_pages_pending_scope_review": [
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-ASSOCIATION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-SOURCES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-TRANSITION-REVIEW.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/KNOWLEDGE.md"
+  ],
+  "links": [
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SUSTAINED-LIVING-JUDGMENT.md",
+      "target": "LIVING-DEPENDENCIES.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SUSTAINED-LIVING-JUDGMENT.md",
+      "target": "PRACTICAL-JUDGMENT.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SUSTAINED-LIVING-JUDGMENT.md",
+      "target": "NONDUAL-METHOD.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SUSTAINED-LIVING-JUDGMENT.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SUSTAINED-LIVING-JUDGMENT.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SustainedJudgment.lean"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SUSTAINED-LIVING-JUDGMENT.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-PROOF.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SUSTAINED-LIVING-JUDGMENT.md",
+      "target": "PRACTICAL-JUDGMENT.md#6-目的变化学习与结束责任--changed-purposes-learning-and-discharge"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SUSTAINED-LIVING-JUDGMENT.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-EVIDENCE.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SUSTAINED-LIVING-JUDGMENT.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SUSTAINED-LIVING-JUDGMENT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-INTEGRATION.md",
+      "target": "LIVING-ALLOCATION-PROOF.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-INTEGRATION.md",
+      "target": "LIVING-CAPACITY-EVIDENCE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SustainedJudgment.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/check_sustained_judgment.py"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/sustained-judgment-verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-INTEGRATION.md",
+      "target": "SUSTAINED-LIVING-JUDGMENT-EVIDENCE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-INTEGRATION.md",
+      "target": "SUSTAINED-LIVING-JUDGMENT-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-INTEGRATION.md",
+      "target": "SUSTAINED-LIVING-JUDGMENT-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-INTEGRATION.md",
+      "target": "SUSTAINED-LIVING-JUDGMENT-CHECK.py"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-EVIDENCE.md",
+      "target": "LIVING-ORGANIZATION-EVIDENCE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SUSTAINED-LIVING-JUDGMENT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-REVIEW.md",
+      "target": "SUSTAINED-LIVING-JUDGMENT-INTEGRATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-REVIEW.md",
+      "target": "SUSTAINED-LIVING-JUDGMENT-EVIDENCE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SUSTAINED-LIVING-JUDGMENT-REVIEW.md",
+      "target": "LIVING-CAPACITY-EVIDENCE.md"
+    }
+  ]
+}

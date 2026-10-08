@@ -1,0 +1,14 @@
+'Generative.ExplanatoryDeterminism.run_append' does not depend on any axioms
+'Generative.ExplanatoryDeterminism.trace_iff_run' does not depend on any axioms
+'Generative.ExplanatoryDeterminism.presentation_exact' does not depend on any axioms
+'Generative.ExplanatoryDeterminism.presentation_exact_common' does not depend on any axioms
+'Generative.ExplanatoryDeterminism.presentation_reduced' does not depend on any axioms
+'Generative.ExplanatoryDeterminism.every_state_used' does not depend on any axioms
+'Generative.ExplanatoryDeterminism.matched_initials' does not depend on any axioms
+'Generative.ExplanatoryDeterminism.matched_next' does not depend on any axioms
+'Generative.ExplanatoryDeterminism.matched_marks' does not depend on any axioms
+'Generative.ExplanatoryDeterminism.matched_functional' does not depend on any axioms
+'Generative.ExplanatoryDeterminism.matched_inverse_functional' does not depend on any axioms
+'Generative.ExplanatoryDeterminism.reachable_separated_unique' does not depend on any axioms
+'Generative.ExplanatoryDeterminism.matching_preserves_and_reflects_steps' does not depend on any axioms
+'Generative.ExplanatoryDeterminism.unique_word_aligned_matching' does not depend on any axioms

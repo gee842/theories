@@ -1,0 +1,13 @@
+'Generative.FormationProfileGap.step_lift_same_left' does not depend on any axioms
+'Generative.FormationProfileGap.trace_lift_same_left' does not depend on any axioms
+'Generative.FormationProfileGap.same_left_same_feasible' does not depend on any axioms
+'Generative.FormationProfileGap.correlation_preserves_word_possibilities' does not depend on any axioms
+'Generative.FormationProfileGap.correlation_preserves_profile' does not depend on any axioms
+'Generative.FormationProfileGap.genuine_formation_with_unchanged_profile' does not depend on any axioms
+'Generative.FormationProfileGap.irreducible_formation_with_unchanged_profile' does not depend on any axioms
+'Generative.FormationProfileGap.later_outcome_contrast' does not depend on any axioms
+'Generative.FormationProfileGap.word_equivalence_not_complete_for_outcomes' does not depend on any axioms
+'SystemIndividuation.process' does not depend on any axioms
+'SystemIndividuation.diagonal' does not depend on any axioms
+'SystemIndividuation.correlate_establishes_diagonal' does not depend on any axioms
+'SystemIndividuation.diagonal_preserved_by_trace' does not depend on any axioms

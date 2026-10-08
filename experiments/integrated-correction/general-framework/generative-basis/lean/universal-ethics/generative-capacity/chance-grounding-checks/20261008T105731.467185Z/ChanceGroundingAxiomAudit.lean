@@ -1,0 +1,11 @@
+import ChanceGrounding
+#print axioms ChanceGrounding.Tickets
+#print axioms ChanceGrounding.Positive
+#print axioms ChanceGrounding.total
+#print axioms ChanceGrounding.scoreNumerator
+#print axioms ChanceGrounding.Improves
+#print axioms ChanceGrounding.refine
+#print axioms ChanceGrounding.positive_refinement_improves_score
+#print axioms ChanceGrounding.no_maximum_in_unbounded_positive_ticket_domain
+#print axioms ChanceGrounding.every_positive_score_is_below_two
+#print axioms ChanceGrounding.fixed_resolution_unique_maximum

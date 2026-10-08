@@ -1,0 +1,117 @@
+{
+  "retrieved_at_utc": "2026-10-07T21:05:08.014957+00:00",
+  "repository": "https://github.com/APMonitor/arduino",
+  "revision": "f36e65a70dd7122d1829883899e40e56bf6c4279",
+  "publication": {
+    "title": "Benchmark Temperature Microcontroller for Process Dynamics and Control",
+    "authors": [
+      "Junho Park",
+      "R. Abraham Martin",
+      "Jeffrey D. Kelly",
+      "John D. Hedengren"
+    ],
+    "doi": "10.1016/j.compchemeng.2020.106736",
+    "year": 2020
+  },
+  "originals": [
+    {
+      "path": "sources/tclab-benchmark/CACE_2020_source.zip",
+      "url": "https://raw.githubusercontent.com/APMonitor/arduino/f36e65a70dd7122d1829883899e40e56bf6c4279/CACE_2020_source.zip",
+      "bytes": 1978989,
+      "sha256": "4cb422489a5396e8e4d156fc7b00f89e4bd7cb9a83561aacbbeee046d6c182ed"
+    },
+    {
+      "path": "sources/tclab-benchmark/CACE_2020_Preprint.pdf",
+      "url": "https://raw.githubusercontent.com/APMonitor/arduino/f36e65a70dd7122d1829883899e40e56bf6c4279/CACE_2020_Preprint.pdf",
+      "bytes": 5404099,
+      "sha256": "16144824fbfbd1060e85d521726e85da8b0854eb4bc756b12405c4435abb9a86"
+    }
+  ],
+  "extracted_members": [
+    {
+      "member": "README.md",
+      "path": "sources/tclab-benchmark/extracted/README.md",
+      "bytes": 389,
+      "sha256": "793c2d7cc5fb62074b21f42d7153d4d3cfdf47ff9a8e7ea6800fc9d155d578c9"
+    },
+    {
+      "member": "1_Model/README.txt",
+      "path": "sources/tclab-benchmark/extracted/1_Model/README.txt",
+      "bytes": 351,
+      "sha256": "a1f52ecae1ab9418af0d05ef67b8d924cc66aec016a19d8593f5735f9465d692"
+    },
+    {
+      "member": "1_Model/2_Heaters/gen_data.py",
+      "path": "sources/tclab-benchmark/extracted/1_Model/2_Heaters/gen_data.py",
+      "bytes": 1532,
+      "sha256": "f239739ead5c563755dac38d69a86fb8772e31cd08b8fe2819e04d7dbf0f9ebb"
+    },
+    {
+      "member": "1_Model/2_Heaters/gen_validation.py",
+      "path": "sources/tclab-benchmark/extracted/1_Model/2_Heaters/gen_validation.py",
+      "bytes": 1521,
+      "sha256": "ce9be94068deec5032ee6771a56c722947721a53d1a06835352dcb8e4a352789"
+    },
+    {
+      "member": "1_Model/2_Heaters/initial_models.csv",
+      "path": "sources/tclab-benchmark/extracted/1_Model/2_Heaters/initial_models.csv",
+      "bytes": 16084,
+      "sha256": "65cebd10bde3f07be40b1e9a0d8d81fa3009719bb548c56233710a4d5a5d13c7"
+    },
+    {
+      "member": "1_Model/2_Heaters/validation.csv",
+      "path": "sources/tclab-benchmark/extracted/1_Model/2_Heaters/validation.csv",
+      "bytes": 16093,
+      "sha256": "4817678bdd839128f2bbf9eb3add7d2793119a95da2dadb304aef9640136e1d9"
+    },
+    {
+      "member": "1_Model/2_Heaters/tclab_farx.py",
+      "path": "sources/tclab-benchmark/extracted/1_Model/2_Heaters/tclab_farx.py",
+      "bytes": 2768,
+      "sha256": "2ae717323a7d3938102802c8894d214c6500d859afda42f88750f5a0079092cb"
+    },
+    {
+      "member": "2_PID/0_initial_PID/0_initial_PID.py",
+      "path": "sources/tclab-benchmark/extracted/2_PID/0_initial_PID/0_initial_PID.py",
+      "bytes": 5982,
+      "sha256": "feafc3377f48f7550670dd845490dd912f276a028b92182e83cbacd264f3ad2a"
+    },
+    {
+      "member": "2_PID/0_initial_PID/data.txt",
+      "path": "sources/tclab-benchmark/extracted/2_PID/0_initial_PID/data.txt",
+      "bytes": 105452,
+      "sha256": "192bc93456a4d71d43b7ab39de381213dfda94cadcbd169f5faacb3b1ba1330c"
+    },
+    {
+      "member": "2_PID/2_optimize_PID/tclab_optimal.py",
+      "path": "sources/tclab-benchmark/extracted/2_PID/2_optimize_PID/tclab_optimal.py",
+      "bytes": 8154,
+      "sha256": "c366db6a664a6c19f67d2a905477ae60670eababe7f4190c7025295a0ab9dd76"
+    },
+    {
+      "member": "2_PID/2_optimize_PID/validation_test1/2_validate_PID.py",
+      "path": "sources/tclab-benchmark/extracted/2_PID/2_optimize_PID/validation_test1/2_validate_PID.py",
+      "bytes": 5806,
+      "sha256": "45816fbec1362c7d8f056e7187f5a06457e09c1b71298cd12cd419556d8cbca8"
+    },
+    {
+      "member": "2_PID/2_optimize_PID/validation_test1/validate.txt",
+      "path": "sources/tclab-benchmark/extracted/2_PID/2_optimize_PID/validation_test1/validate.txt",
+      "bytes": 105452,
+      "sha256": "ff526ed74785c70eeeba4ef455cb14c1ff8121cc6c1c48d946a576d9386d9a0a"
+    },
+    {
+      "member": "2_PID/2_optimize_PID/validation_test2/2_validate_PID.py",
+      "path": "sources/tclab-benchmark/extracted/2_PID/2_optimize_PID/validation_test2/2_validate_PID.py",
+      "bytes": 5806,
+      "sha256": "45816fbec1362c7d8f056e7187f5a06457e09c1b71298cd12cd419556d8cbca8"
+    },
+    {
+      "member": "2_PID/2_optimize_PID/validation_test2/validate.txt",
+      "path": "sources/tclab-benchmark/extracted/2_PID/2_optimize_PID/validation_test2/validate.txt",
+      "bytes": 105452,
+      "sha256": "4c2c4925e427f21fe5ea01e555587bb6fdf4641050420c0f33095a562680ae80"
+    }
+  ],
+  "scope": "Original source archive and author preprint, with selected unmodified members. Repeated archive/member bytes are provenance copies, not independent evidence. Not a new laboratory experiment."
+}

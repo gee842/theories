@@ -1,0 +1,521 @@
+SituatedKitchen.lean:43:132: warning: This simp argument is unused:
+  learning
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, l̵e̵a̵r̵n̵i̵n̵g̵,̵ ̵classOnly, overloadedCare, harmfulLearning, inaccessibleLearning,
+  ̲  ̲ ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:43:153: warning: This simp argument is unused:
+  overloadedCare
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, learning, classOnly, o̵v̵e̵r̵l̵o̵a̵d̵e̵d̵C̵a̵r̵e̵,̵ ̵harmfulLearning, inaccessibleLearning,
+  ̲  ̲ ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:43:169: warning: This simp argument is unused:
+  harmfulLearning
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, learning, classOnly, overloadedCare, h̵a̵r̵m̵f̵u̵l̵L̵e̵a̵r̵n̵i̵n̵g̵,̵ ̵inaccessibleLearning,
+  ̲  ̲ ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:43:186: warning: This simp argument is unused:
+  inaccessibleLearning
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, learning, classOnly, overloadedCare, harmfulLearning,
+  ̲ i̵n̵a̵c̵c̵e̵s̵s̵i̵b̵l̵e̵L̵e̵a̵r̵n̵i̵n̵g̵,̵  ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:43:208: warning: This simp argument is unused:
+  exitWithoutCover
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, learning, classOnly, overloadedCare, harmfulLearning,
+  ̲  ̲ ̲ ̲inaccessibleLearning,̵ ̵e̵x̵i̵t̵W̵i̵t̵h̵o̵u̵t̵C̵o̵v̵e̵r̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:49:142: warning: This simp argument is unused:
+  classOnly
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, learning, c̵l̵a̵s̵s̵O̵n̵l̵y̵,̵ ̵overloadedCare, harmfulLearning, inaccessibleLearning,
+  ̲  ̲ ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:49:153: warning: This simp argument is unused:
+  overloadedCare
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, learning, classOnly, o̵v̵e̵r̵l̵o̵a̵d̵e̵d̵C̵a̵r̵e̵,̵ ̵harmfulLearning, inaccessibleLearning,
+  ̲  ̲ ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:49:169: warning: This simp argument is unused:
+  harmfulLearning
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, learning, classOnly, overloadedCare, h̵a̵r̵m̵f̵u̵l̵L̵e̵a̵r̵n̵i̵n̵g̵,̵ ̵inaccessibleLearning,
+  ̲  ̲ ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:49:186: warning: This simp argument is unused:
+  inaccessibleLearning
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, learning, classOnly, overloadedCare, harmfulLearning,
+  ̲ i̵n̵a̵c̵c̵e̵s̵s̵i̵b̵l̵e̵L̵e̵a̵r̵n̵i̵n̵g̵,̵  ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:49:208: warning: This simp argument is unused:
+  exitWithoutCover
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, learning, classOnly, overloadedCare, harmfulLearning,
+  ̲  ̲ ̲ ̲inaccessibleLearning,̵ ̵e̵x̵i̵t̵W̵i̵t̵h̵o̵u̵t̵C̵o̵v̵e̵r̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:54:126: warning: This simp argument is unused:
+  care
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, c̵a̵r̵e̵,̵ ̵learning, classOnly, overloadedCare, harmfulLearning,
+  ̲  ̲ ̲ ̲inaccessibleLearning, exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:54:142: warning: This simp argument is unused:
+  classOnly
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, learning, c̵l̵a̵s̵s̵O̵n̵l̵y̵,̵ ̵overloadedCare, harmfulLearning, inaccessibleLearning,
+  ̲  ̲ ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:54:169: warning: This simp argument is unused:
+  harmfulLearning
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, learning, classOnly, overloadedCare, h̵a̵r̵m̵f̵u̵l̵L̵e̵a̵r̵n̵i̵n̵g̵,̵ ̵inaccessibleLearning,
+  ̲  ̲ ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:54:186: warning: This simp argument is unused:
+  inaccessibleLearning
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, learning, classOnly, overloadedCare, harmfulLearning,
+  ̲ i̵n̵a̵c̵c̵e̵s̵s̵i̵b̵l̵e̵L̵e̵a̵r̵n̵i̵n̵g̵,̵  ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:54:208: warning: This simp argument is unused:
+  exitWithoutCover
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, learning, classOnly, overloadedCare, harmfulLearning,
+  ̲  ̲ ̲ ̲inaccessibleLearning,̵ ̵e̵x̵i̵t̵W̵i̵t̵h̵o̵u̵t̵C̵o̵v̵e̵r̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:59:132: warning: This simp argument is unused:
+  learning
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, l̵e̵a̵r̵n̵i̵n̵g̵,̵ ̵classOnly, overloadedCare, harmfulLearning, inaccessibleLearning,
+  ̲  ̲ ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:59:142: warning: This simp argument is unused:
+  classOnly
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, learning, c̵l̵a̵s̵s̵O̵n̵l̵y̵,̵ ̵overloadedCare, harmfulLearning, inaccessibleLearning,
+  ̲  ̲ ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:59:153: warning: This simp argument is unused:
+  overloadedCare
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, learning, classOnly, o̵v̵e̵r̵l̵o̵a̵d̵e̵d̵C̵a̵r̵e̵,̵ ̵harmfulLearning, inaccessibleLearning,
+  ̲  ̲ ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:59:186: warning: This simp argument is unused:
+  inaccessibleLearning
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, learning, classOnly, overloadedCare, harmfulLearning,
+  ̲ i̵n̵a̵c̵c̵e̵s̵s̵i̵b̵l̵e̵L̵e̵a̵r̵n̵i̵n̵g̵,̵  ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:59:208: warning: This simp argument is unused:
+  exitWithoutCover
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, learning, classOnly, overloadedCare, harmfulLearning,
+  ̲  ̲ ̲ ̲inaccessibleLearning,̵ ̵e̵x̵i̵t̵W̵i̵t̵h̵o̵u̵t̵C̵o̵v̵e̵r̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:64:13: warning: This simp argument is unused:
+  PracticalJudgment.Better
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.B̵e̵t̵t̵e̵r̵,̵ ̵P̵r̵a̵c̵t̵i̵c̵a̵l̵J̵u̵d̵g̵m̵e̵n̵t̵.̵StrictIncluded, PracticalJudgment.Included, protection, realization,
+  ̲  ̲ ̲ ̲care, learning, classOnly, overloadedCare, harmfulLearning, inaccessibleLearning,
+  ̲  ̲ ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:64:39: warning: This simp argument is unused:
+  PracticalJudgment.StrictIncluded
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.S̵t̵r̵i̵c̵t̵Included, P̵r̵a̵c̵t̵i̵c̵a̵l̵J̵u̵d̵g̵m̵e̵n̵t̵.̵I̵n̵c̵l̵u̵d̵e̵d̵,̵ ̵protection, realization, care,
+  ̲  ̲ ̲ ̲learning, classOnly, overloadedCare, harmfulLearning, inaccessibleLearning, exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:64:73: warning: This simp argument is unused:
+  PracticalJudgment.Included
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, P̵r̵a̵c̵t̵i̵c̵a̵l̵J̵u̵d̵g̵m̵e̵n̵t̵.̵I̵n̵c̵l̵u̵d̵e̵d̵,̵ ̵protection, realization,
+  ̲  ̲ ̲ ̲care, learning, classOnly, overloadedCare, harmfulLearning, inaccessibleLearning,
+  ̲  ̲ ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:64:101: warning: This simp argument is unused:
+  protection
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲ p̵r̵o̵t̵e̵c̵t̵i̵o̵n̵,̵  ̲ ̲realization, care, learning, classOnly, overloadedCare, harmfulLearning, inaccessibleLearning,
+  ̲  ̲ ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:64:126: warning: This simp argument is unused:
+  care
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, c̵a̵r̵e̵,̵ ̵learning, classOnly, overloadedCare, harmfulLearning,
+  ̲  ̲ ̲ ̲inaccessibleLearning, exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:64:132: warning: This simp argument is unused:
+  learning
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, l̵e̵a̵r̵n̵i̵n̵g̵,̵ ̵classOnly, overloadedCare, harmfulLearning, inaccessibleLearning,
+  ̲  ̲ ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:64:142: warning: This simp argument is unused:
+  classOnly
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, learning, c̵l̵a̵s̵s̵O̵n̵l̵y̵,̵ ̵overloadedCare, harmfulLearning, inaccessibleLearning,
+  ̲  ̲ ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:64:153: warning: This simp argument is unused:
+  overloadedCare
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, learning, classOnly, o̵v̵e̵r̵l̵o̵a̵d̵e̵d̵C̵a̵r̵e̵,̵ ̵harmfulLearning, inaccessibleLearning,
+  ̲  ̲ ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:64:169: warning: This simp argument is unused:
+  harmfulLearning
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, learning, classOnly, overloadedCare, h̵a̵r̵m̵f̵u̵l̵L̵e̵a̵r̵n̵i̵n̵g̵,̵ ̵inaccessibleLearning,
+  ̲  ̲ ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:64:208: warning: This simp argument is unused:
+  exitWithoutCover
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, learning, classOnly, overloadedCare, harmfulLearning,
+  ̲  ̲ ̲ ̲inaccessibleLearning,̵ ̵e̵x̵i̵t̵W̵i̵t̵h̵o̵u̵t̵C̵o̵v̵e̵r̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:69:126: warning: This simp argument is unused:
+  care
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, c̵a̵r̵e̵,̵ ̵learning, classOnly, overloadedCare, harmfulLearning,
+  ̲  ̲ ̲ ̲inaccessibleLearning, exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:69:142: warning: This simp argument is unused:
+  classOnly
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, learning, c̵l̵a̵s̵s̵O̵n̵l̵y̵,̵ ̵overloadedCare, harmfulLearning, inaccessibleLearning,
+  ̲  ̲ ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:69:153: warning: This simp argument is unused:
+  overloadedCare
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, learning, classOnly, o̵v̵e̵r̵l̵o̵a̵d̵e̵d̵C̵a̵r̵e̵,̵ ̵harmfulLearning, inaccessibleLearning,
+  ̲  ̲ ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:69:169: warning: This simp argument is unused:
+  harmfulLearning
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, learning, classOnly, overloadedCare, h̵a̵r̵m̵f̵u̵l̵L̵e̵a̵r̵n̵i̵n̵g̵,̵ ̵inaccessibleLearning,
+  ̲  ̲ ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:69:208: warning: This simp argument is unused:
+  exitWithoutCover
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, learning, classOnly, overloadedCare, harmfulLearning,
+  ̲  ̲ ̲ ̲inaccessibleLearning,̵ ̵e̵x̵i̵t̵W̵i̵t̵h̵o̵u̵t̵C̵o̵v̵e̵r̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:75:126: warning: This simp argument is unused:
+  care
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, c̵a̵r̵e̵,̵ ̵learning, classOnly, overloadedCare, harmfulLearning,
+  ̲  ̲ ̲ ̲inaccessibleLearning, exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:75:132: warning: This simp argument is unused:
+  learning
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, l̵e̵a̵r̵n̵i̵n̵g̵,̵ ̵classOnly, overloadedCare, harmfulLearning, inaccessibleLearning,
+  ̲  ̲ ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:75:142: warning: This simp argument is unused:
+  classOnly
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, learning, c̵l̵a̵s̵s̵O̵n̵l̵y̵,̵ ̵overloadedCare, harmfulLearning, inaccessibleLearning,
+  ̲  ̲ ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:75:169: warning: This simp argument is unused:
+  harmfulLearning
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, learning, classOnly, overloadedCare, h̵a̵r̵m̵f̵u̵l̵L̵e̵a̵r̵n̵i̵n̵g̵,̵ ̵inaccessibleLearning,
+  ̲  ̲ ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:75:186: warning: This simp argument is unused:
+  inaccessibleLearning
+
+Hint: Omit it from the simp argument list.
+  simp only [PracticalJudgment.Better, PracticalJudgment.StrictIncluded, PracticalJudgment.Included,
+  ̲  ̲ ̲ ̲protection, realization, care, learning, classOnly, overloadedCare, harmfulLearning,
+  ̲ i̵n̵a̵c̵c̵e̵s̵s̵i̵b̵l̵e̵L̵e̵a̵r̵n̵i̵n̵g̵,̵  ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:84:22: warning: This simp argument is unused:
+  PracticalJudgment.Better
+
+Hint: Omit it from the simp argument list.
+  simp only [handoff, PracticalJudgment.B̵e̵t̵t̵e̵r̵,̵ ̵P̵r̵a̵c̵t̵i̵c̵a̵l̵J̵u̵d̵g̵m̵e̵n̵t̵.̵StrictIncluded, PracticalJudgment.Included, protection,
+  ̲  ̲ ̲ ̲realization, care, learning, classOnly, overloadedCare, harmfulLearning, inaccessibleLearning,
+  ̲  ̲ ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:84:48: warning: This simp argument is unused:
+  PracticalJudgment.StrictIncluded
+
+Hint: Omit it from the simp argument list.
+  simp only [handoff, PracticalJudgment.Better, P̵r̵a̵c̵t̵i̵c̵a̵l̵J̵u̵d̵g̵m̵e̵n̵t̵.̵S̵t̵r̵i̵c̵t̵I̵n̵c̵l̵u̵d̵e̵d̵,̵ ̵PracticalJudgment.Included, protection, realization,
+  ̲  ̲ ̲ ̲care, learning, classOnly, overloadedCare, harmfulLearning, inaccessibleLearning,
+  ̲  ̲ ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:84:82: warning: This simp argument is unused:
+  PracticalJudgment.Included
+
+Hint: Omit it from the simp argument list.
+  simp only [handoff, PracticalJudgment.Better, PracticalJudgment.StrictIncluded, P̵r̵a̵c̵t̵i̵c̵a̵l̵J̵u̵d̵g̵m̵e̵n̵t̵.̵I̵n̵c̵l̵u̵d̵e̵d̵,̵ ̵protection,
+  ̲  ̲ ̲ ̲realization, care, learning, classOnly, overloadedCare, harmfulLearning, inaccessibleLearning,
+  ̲  ̲ ̲ ̲exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:84:122: warning: This simp argument is unused:
+  realization
+
+Hint: Omit it from the simp argument list.
+  simp only [handoff, PracticalJudgment.Better, PracticalJudgment.StrictIncluded,
+  ̲  ̲ ̲ ̲PracticalJudgment.Included, protection, r̵e̵a̵l̵i̵z̵a̵t̵i̵o̵n̵,̵ ̵care, learning, classOnly, overloadedCare,
+  ̲  ̲ ̲ ̲harmfulLearning, inaccessibleLearning, exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:84:135: warning: This simp argument is unused:
+  care
+
+Hint: Omit it from the simp argument list.
+  simp only [handoff, PracticalJudgment.Better, PracticalJudgment.StrictIncluded,
+  ̲  ̲ ̲ ̲PracticalJudgment.Included, protection, realization, c̵a̵r̵e̵,̵ ̵learning, classOnly, overloadedCare,
+  ̲  ̲ ̲ ̲harmfulLearning, inaccessibleLearning, exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:84:141: warning: This simp argument is unused:
+  learning
+
+Hint: Omit it from the simp argument list.
+  simp only [handoff, PracticalJudgment.Better, PracticalJudgment.StrictIncluded,
+  ̲  ̲ ̲ ̲PracticalJudgment.Included, protection, realization, care, l̵e̵a̵r̵n̵i̵n̵g̵,̵ ̵classOnly, overloadedCare,
+  ̲  ̲ ̲ ̲harmfulLearning, inaccessibleLearning, exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:84:151: warning: This simp argument is unused:
+  classOnly
+
+Hint: Omit it from the simp argument list.
+  simp only [handoff, PracticalJudgment.Better, PracticalJudgment.StrictIncluded,
+  ̲  ̲ ̲ ̲PracticalJudgment.Included, protection, realization, care, learning, c̵l̵a̵s̵s̵O̵n̵l̵y̵,̵ ̵overloadedCare,
+  ̲  ̲ ̲ ̲harmfulLearning, inaccessibleLearning, exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:84:162: warning: This simp argument is unused:
+  overloadedCare
+
+Hint: Omit it from the simp argument list.
+  simp only [handoff, PracticalJudgment.Better, PracticalJudgment.StrictIncluded,
+  ̲  ̲ ̲ ̲PracticalJudgment.Included, protection, realization, care, learning, classOnly, o̵v̵e̵h̲a̲rm̲f̲u̲lo̵a̵d̵L̲ed̵C̵are̵n̲i̲n̲g̲,
+  ̲ h̵a̵r̵m̵f̵u̵l̵L̵e̵a̵r̵n̵i̵n̵g̵,̵  ̲ ̲inaccessibleLearning, exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:84:178: warning: This simp argument is unused:
+  harmfulLearning
+
+Hint: Omit it from the simp argument list.
+  simp only [handoff, PracticalJudgment.Better, PracticalJudgment.StrictIncluded,
+  ̲  ̲ ̲ ̲PracticalJudgment.Included, protection, realization, care, learning, classOnly, overloadedCare,
+  ̲ h̵a̵r̵m̵f̵u̵l̵L̵e̵a̵r̵n̵i̵n̵g̵,̵  ̲ ̲inaccessibleLearning, exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:84:195: warning: This simp argument is unused:
+  inaccessibleLearning
+
+Hint: Omit it from the simp argument list.
+  simp only [handoff, PracticalJudgment.Better, PracticalJudgment.StrictIncluded,
+  ̲  ̲ ̲ ̲PracticalJudgment.Included, protection, realization, care, learning, classOnly, overloadedCare,
+  ̲  ̲ ̲ ̲harmfulLearning, i̵n̵a̵c̵c̵es̵s̵i̵b̵l̵e̵L̵e̵a̵r̵n̵i̵n̵g̵,̵ ̵e̵xitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:84:217: warning: This simp argument is unused:
+  exitWithoutCover
+
+Hint: Omit it from the simp argument list.
+  simp only [handoff, PracticalJudgment.Better, PracticalJudgment.StrictIncluded,
+  ̲  ̲ ̲ ̲PracticalJudgment.Included, protection, realization, care, learning, classOnly, overloadedCare,
+  ̲  ̲ ̲ ̲harmfulLearning, inaccessibleLearning,̵ ̵e̵x̵i̵t̵W̵i̵t̵h̵o̵u̵t̵C̵o̵v̵e̵r̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:90:135: warning: This simp argument is unused:
+  care
+
+Hint: Omit it from the simp argument list.
+  simp only [handoff, PracticalJudgment.Better, PracticalJudgment.StrictIncluded,
+  ̲  ̲ ̲ ̲PracticalJudgment.Included, protection, realization, c̵a̵r̵e̵,̵ ̵learning, classOnly, overloadedCare,
+  ̲  ̲ ̲ ̲harmfulLearning, inaccessibleLearning, exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:90:141: warning: This simp argument is unused:
+  learning
+
+Hint: Omit it from the simp argument list.
+  simp only [handoff, PracticalJudgment.Better, PracticalJudgment.StrictIncluded,
+  ̲  ̲ ̲ ̲PracticalJudgment.Included, protection, realization, care, l̵e̵a̵r̵n̵i̵n̵g̵,̵ ̵classOnly, overloadedCare,
+  ̲  ̲ ̲ ̲harmfulLearning, inaccessibleLearning, exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:90:151: warning: This simp argument is unused:
+  classOnly
+
+Hint: Omit it from the simp argument list.
+  simp only [handoff, PracticalJudgment.Better, PracticalJudgment.StrictIncluded,
+  ̲  ̲ ̲ ̲PracticalJudgment.Included, protection, realization, care, learning, c̵l̵a̵s̵s̵O̵n̵l̵y̵,̵ ̵overloadedCare,
+  ̲  ̲ ̲ ̲harmfulLearning, inaccessibleLearning, exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:90:162: warning: This simp argument is unused:
+  overloadedCare
+
+Hint: Omit it from the simp argument list.
+  simp only [handoff, PracticalJudgment.Better, PracticalJudgment.StrictIncluded,
+  ̲  ̲ ̲ ̲PracticalJudgment.Included, protection, realization, care, learning, classOnly, o̵v̵e̵h̲a̲rm̲f̲u̲lo̵a̵d̵L̲ed̵C̵are̵n̲i̲n̲g̲,
+  ̲ h̵a̵r̵m̵f̵u̵l̵L̵e̵a̵r̵n̵i̵n̵g̵,̵  ̲ ̲inaccessibleLearning, exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:90:178: warning: This simp argument is unused:
+  harmfulLearning
+
+Hint: Omit it from the simp argument list.
+  simp only [handoff, PracticalJudgment.Better, PracticalJudgment.StrictIncluded,
+  ̲  ̲ ̲ ̲PracticalJudgment.Included, protection, realization, care, learning, classOnly, overloadedCare,
+  ̲ h̵a̵r̵m̵f̵u̵l̵L̵e̵a̵r̵n̵i̵n̵g̵,̵  ̲ ̲inaccessibleLearning, exitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:90:195: warning: This simp argument is unused:
+  inaccessibleLearning
+
+Hint: Omit it from the simp argument list.
+  simp only [handoff, PracticalJudgment.Better, PracticalJudgment.StrictIncluded,
+  ̲  ̲ ̲ ̲PracticalJudgment.Included, protection, realization, care, learning, classOnly, overloadedCare,
+  ̲  ̲ ̲ ̲harmfulLearning, i̵n̵a̵c̵c̵es̵s̵i̵b̵l̵e̵L̵e̵a̵r̵n̵i̵n̵g̵,̵ ̵e̵xitWithoutCover]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+SituatedKitchen.lean:90:217: warning: This simp argument is unused:
+  exitWithoutCover
+
+Hint: Omit it from the simp argument list.
+  simp only [handoff, PracticalJudgment.Better, PracticalJudgment.StrictIncluded,
+  ̲  ̲ ̲ ̲PracticalJudgment.Included, protection, realization, care, learning, classOnly, overloadedCare,
+  ̲  ̲ ̲ ̲harmfulLearning, inaccessibleLearning,̵ ̵e̵x̵i̵t̵W̵i̵t̵h̵o̵u̵t̵C̵o̵v̵e̵r̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

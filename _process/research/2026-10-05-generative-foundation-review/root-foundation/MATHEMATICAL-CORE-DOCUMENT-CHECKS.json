@@ -1,0 +1,146 @@
+{
+  "local_date": "2026-10-08",
+  "timezone": "Asia/Bangkok",
+  "scope": "mathematical core document and its own proof companion",
+  "passed": true,
+  "documents": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md": "23a6720da15c35bfa53ccb32a0dfeba0c4d4b40c59a098ff5ab4b8ca12cb54e9",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-CORE-DOCUMENT-RECORD.md": "4e00d0c893cffe1e9f2bd832732caee244ca9dd0c4e660279ff62102677698de",
+    "sources/15-codex-theory-conversations/2026-10-08-mathematical-core-document.md": "dd83a4b2ee3ad207c32030f2ddf35926cb6295038d5d1504db0c9834fb5d6c6f"
+  },
+  "local_links_checked": 31,
+  "links": [
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-08-mathematical-core-document.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-CORE-DOCUMENT-RECORD.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md",
+      "target": "GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md",
+      "target": "NONDUAL-METHOD.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ProductTower.lean"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PROCESS-LAW-DERIVATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedPaths.lean"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/CorePredication.lean"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/HistoryRealization.lean"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/BoundaryModels.lean"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md",
+      "target": "MATHEMATICAL-ROOT-FRONTIER.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md",
+      "target": "GENERATIVE-DEVELOPMENT.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-08-alignment-grounding-axiom-correction.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md",
+      "target": "UNIFIED-ETHICAL-GROUNDING.md#current-alignment-task-an-explicit-normative-axiom"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedPaths.lean"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/HistoryRealization.lean"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ProductTower.lean"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/BoundaryModels.lean"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/CorePredication.lean"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/core-document-verification.json"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md",
+      "target": "DEEPER-GENERATIVE-ROOT.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md",
+      "target": "MATHEMATICAL-ROOT-FRONTIER.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md",
+      "target": "../../../RESEARCH.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-CORE-DOCUMENT-RECORD.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-08-mathematical-core-document.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-CORE-DOCUMENT-RECORD.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-CORE-DOCUMENT-RECORD.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_core_document.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-CORE-DOCUMENT-RECORD.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/core-document-checks/20261007T192102.355920Z/receipt.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-CORE-DOCUMENT-RECORD.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/core-document-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATHEMATICAL-CORE-DOCUMENT-RECORD.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/CorePredication.lean"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-mathematical-core-document.md",
+      "target": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MATHEMATICAL-CORE.md"
+    }
+  ],
+  "proof_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/core-document-checks/20261007T192102.355920Z/receipt.json",
+  "proof_modules": 6,
+  "empty_axiom_audits": 61,
+  "proof_source_bindings_current": true,
+  "new_pedagogical_theorems": 12,
+  "chain_render_and_check": "passed with 65 entries and 111 reviewed source versions; unrelated discovery queue retained",
+  "independent_agent_review": false,
+  "review_scope": "author exposition and correspondence review; no claim of universal foundation completion"
+}

@@ -1,0 +1,20 @@
+{
+  "files": [
+    {
+      "file": "CziStructs.h",
+      "url": "https://raw.githubusercontent.com/ZEISS/libczi/f8f0ccc12f8193a22bf5a093f4f29f75ffc05a7a/Src/libCZI/CziStructs.h",
+      "commit": "f8f0ccc12f8193a22bf5a093f4f29f75ffc05a7a",
+      "bytes": 10543,
+      "sha256": "ebfc151238800a975b165e1785dc0c909f2ffa552de8ab84ec5d1c0809ae2693",
+      "commit_metadata_sha256": "7218fa342707a0040d4d61060c5c9ecd92c7e6af2b8e41d82fc8347f77363e93"
+    },
+    {
+      "file": "czifile.py",
+      "url": "https://raw.githubusercontent.com/cgohlke/czifile/ab0f6388c39388a4e38d37810cdd693d41fa5c95/czifile/czifile.py",
+      "commit": "ab0f6388c39388a4e38d37810cdd693d41fa5c95",
+      "bytes": 243596,
+      "sha256": "2a5820734c5a0fe32318fb03d200476058d6bce3f5ea6078041088d0a7bf8437",
+      "commit_metadata_sha256": "d85bb4ff4870f9ffecb87d835cdebd7eb6789eea612a258f7834f558483d7852"
+    }
+  ]
+}

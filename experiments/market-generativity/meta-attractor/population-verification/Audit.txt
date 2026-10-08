@@ -1,0 +1,104 @@
+'PopulationCorrection.State' does not depend on any axioms
+'PopulationCorrection.funded' does not depend on any axioms
+'PopulationCorrection.payoff' does not depend on any axioms
+'PopulationCorrection.locally_optimal_revision' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.strict_revision_advantage' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.unprotected_collective_loss' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.allocated' does not depend on any axioms
+'PopulationCorrection.inflow' does not depend on any axioms
+'PopulationCorrection.next' does not depend on any axioms
+'PopulationCorrection.history' does not depend on any axioms
+'PopulationCorrection.unfunded_step' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.funded_step' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.count_bound' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.count_history' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.revision_quota' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PopulationCorrection.slotAction' does not depend on any axioms
+'PopulationCorrection.revised_slot_is_optimal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PopulationCorrection.correction_stays_funded' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.triangle' does not depend on any axioms
+'PopulationCorrection.triangle_drop' depends on axioms: [propext]
+'PopulationCorrection.triangle_monotone' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.contribution_upper_bound' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.Doomed' does not depend on any axioms
+'PopulationCorrection.doom_step' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.doom_history' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.doomed_replacement_bound' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.funded_replacement_bound' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.funded_full_population' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.potential_preserved_at_unit_speed' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.potential_unit_history' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.funded_or_replacement_bound' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.unit_speed_activation' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.exact_unit_speed_activation_boundary' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.topup' does not depend on any axioms
+'PopulationCorrection.exact_unit_speed_topup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PopulationCorrection.history_add' depends on axioms: [propext]
+'PopulationCorrection.extinct_unfunded_history' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.destructive_region_reached' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.full_renewing_history' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PopulationCorrection.funded_constructive_region_reached' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PopulationCorrection.exampleStart' does not depend on any axioms
+'PopulationCorrection.slow_bootstraps' does not depend on any axioms
+'PopulationCorrection.growth_closes_bootstrap' does not depend on any axioms
+'PopulationCorrection.growth_eventually_destructive' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.speed_one_eventually_constructive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PopulationCorrection.offCount' does not depend on any axioms
+'PopulationCorrection.available' does not depend on any axioms
+'PopulationCorrection.faster_replacement_reduces_contributors' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.faster_replacement_reduces_available' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.off_count_bound' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.unit_count' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.unit_ledger_conservation' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.unit_available_is_triangle' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.available_monotone' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.contributions_stop' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.contributions_bounded' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.actual_or_unfunded_ledger' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.funding_iff_ledger' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.exact_schedule_activation_boundary' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.exact_schedule_topup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PopulationCorrection.schedule_shortfall_is_destructive' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.schedule_sufficiency_is_constructive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PopulationCorrection.post_step_bounds' depends on axioms: [propext]
+'PopulationCorrection.schedule_sufficiency_reaches_full_state' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PopulationCorrection.destructive_region_absorbing' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.slow_recovery_has_real_loss' does not depend on any axioms
+'PopulationCorrection.boosted_growth_preserves_floor' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PopulationCorrection.grossReceipts' does not depend on any axioms
+'PopulationCorrection.privateReceipts' does not depend on any axioms
+'PopulationCorrection.expenditure' does not depend on any axioms
+'PopulationCorrection.released' does not depend on any axioms
+'PopulationCorrection.operating_receipts_accounted' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.private_receipts_cover_reconstruction' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.treasury_accounted' depends on axioms: [propext, Quot.sound]
+'PopulationCorrection.leakingNext' does not depend on any axioms
+'PopulationCorrection.exact_funded_leak_tolerance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PopulationCorrection.all_renewing_leak_tolerance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PopulationCorrection.one_unit_diversion_breaks_zero_margin' does not depend on any axioms
+'PopulationCorrection.drainedNext' does not depend on any axioms
+'PopulationCorrection.identical_local_ordering_different_funding' does not depend on any axioms
+'PopulationCorrection.weightedDefectionValue' does not depend on any axioms
+'PopulationCorrection.arbitrary_finite_horizon_defection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PopulationRealization.Carrier' does not depend on any axioms
+'PopulationRealization.Input' does not depend on any axioms
+'PopulationRealization.roster' does not depend on any axioms
+'PopulationRealization.roster_has_all_slots' depends on axioms: [propext, Quot.sound]
+'PopulationRealization.advance' does not depend on any axioms
+'PopulationRealization.process' does not depend on any axioms
+'PopulationRealization.lineage' does not depend on any axioms
+'PopulationRealization.exact_economic_projection' depends on axioms: [propext]
+'PopulationRealization.lineage_accounting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PopulationRealization.actual_generation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PopulationRealization.actions' does not depend on any axioms
+'PopulationRealization.actual_core_history' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PopulationRealization.identity' does not depend on any axioms
+'PopulationRealization.distinct_generation_carriers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PopulationRealization.missing_parts_disable' depends on axioms: [propext, Quot.sound]
+'PopulationRealization.no_arrival_consumes_stock' depends on axioms: [propext, Quot.sound]
+'PopulationRealization.constructive_economy_can_lack_realization' depends on axioms: [propext, Quot.sound]
+'PopulationRealization.destructive_economy_with_actual_successors' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

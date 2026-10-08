@@ -1,0 +1,15 @@
+{
+  "scope": "Author-preserved exact document versions accepted by the independent feedback-memory review, before the active canonical account and completion audit continue. These copies are historical review evidence, not alternate current working documents.",
+  "documents": [
+    {
+      "original_path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEASURED-FEEDBACK-CORRESPONDENCE.md",
+      "preserved_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/feedback-memory-accepted-documents/MEASURED-FEEDBACK-CORRESPONDENCE.md",
+      "sha256": "6ffcdd44631505aa5755ad7c0585aab7b7c304f9b74d13aa756cd13958bb476c"
+    },
+    {
+      "original_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/THREE-CONNECTIONS-COMPLETION-AUDIT.md",
+      "preserved_path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/feedback-memory-accepted-documents/THREE-CONNECTIONS-COMPLETION-AUDIT.md",
+      "sha256": "2faef4586955e29bb6b1fb628dfdb1979c3648addf50cf62446953f3915c714b"
+    }
+  ]
+}

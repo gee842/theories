@@ -1,0 +1,558 @@
+{
+  "checked_at_utc": "2026-10-07T19:30:14.126568+00:00",
+  "status": "passed",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "targets": [
+    "NewPossibilities"
+  ],
+  "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/new-possibilities-checks/20261007T193012.055896Z",
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "source_sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "Generative.Process"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.Enabled"
+        },
+        {
+          "kind": "inductive",
+          "name": "Generative.Trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_nil_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_cons_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_singleton_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_append_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_iff_singleton_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_difference_implies_state_difference"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.Feasible"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_append_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_prefix"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.productProcess"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_product_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_left"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_right"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_mk"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_product_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_map"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_lift"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.projected_trace_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.projection_exact_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.local_exact_iff_trace_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_projection_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_projection_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_difference_implies_projection_difference"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_faithful_iff"
+        }
+      ],
+      "audits": 28,
+      "theorems": 23,
+      "nonempty_audits": {}
+    },
+    {
+      "module": "NewPossibilities",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/NewPossibilities.lean",
+      "source_sha256": "deee2d15399cba5de2b26e62deaaab8084b7d253ee741bab39f66d9e3f2f5153",
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "Generative.NewPossibilities.AdequateOn"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.collision_defeats_adequacy"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.refinement_preserves_adequacy"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.response_profile_is_sufficient"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.adequacy_restricts_domain"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NewPossibilities.extendResponses"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.old_response_preserved"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.extended_adequacy_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.closed_region_preserved"
+        },
+        {
+          "kind": "structure",
+          "name": "Generative.NewPossibilities.Assembly"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NewPossibilities.material"
+        },
+        {
+          "kind": "inductive",
+          "name": "Generative.NewPossibilities.Event"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NewPossibilities.assembly"
+        },
+        {
+          "kind": "inductive",
+          "name": "Generative.NewPossibilities.Reaches"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.reach_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.reach_construct"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.reaches_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.extension_adds_actual_route"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.step_material_conserved"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.step_work_account"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.trace_material_conserved"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.trace_work_account"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.finite_work_bounds_history"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.no_infinite_closed_execution"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NewPossibilities.frozen"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.frozen_step"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.frozen_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.frozen_cannot_make_route"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.construct_chain"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.form_constructor_then_chain"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NewPossibilities.menuBound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.member_below_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.beyond_every_finite_menu"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NewPossibilities.initial"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NewPossibilities.bound"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NewPossibilities.unbound"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NewPossibilities.oldDescription"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NewPossibilities.newDescription"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NewPossibilities.canExtend"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.response_matches_operation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.matched_histories"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.old_description_collides"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.construction_response_differs"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.old_description_inadequate"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.new_description_preserves_old"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.new_description_adequate"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.relabeling_cannot_repair"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NewPossibilities.Faithful"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.acquired_record_repairs_query"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.stale_record_counterexample"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.novelty_with_loss"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.query_pair_is_coarsest_sufficient_refinement"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NewPossibilities.record_transports_only_with_stability"
+        }
+      ],
+      "audits": 53,
+      "theorems": 37,
+      "nonempty_audits": {
+        "Generative.NewPossibilities.reach_bound": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.NewPossibilities.reach_construct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.NewPossibilities.reaches_iff": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.NewPossibilities.extension_adds_actual_route": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.NewPossibilities.step_material_conserved": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.NewPossibilities.step_work_account": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.NewPossibilities.trace_material_conserved": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.NewPossibilities.trace_work_account": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.NewPossibilities.finite_work_bounds_history": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.NewPossibilities.no_infinite_closed_execution": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.NewPossibilities.frozen_step": [
+          "propext"
+        ],
+        "Generative.NewPossibilities.frozen_trace": [
+          "propext"
+        ],
+        "Generative.NewPossibilities.frozen_cannot_make_route": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.NewPossibilities.construct_chain": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.NewPossibilities.form_constructor_then_chain": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.NewPossibilities.member_below_bound": [
+          "propext"
+        ],
+        "Generative.NewPossibilities.beyond_every_finite_menu": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.NewPossibilities.response_matches_operation": [
+          "propext"
+        ],
+        "Generative.NewPossibilities.matched_histories": [
+          "propext"
+        ],
+        "Generative.NewPossibilities.new_description_adequate": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.NewPossibilities.stale_record_counterexample": [
+          "propext"
+        ],
+        "Generative.NewPossibilities.novelty_with_loss": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    }
+  ],
+  "total_audits": 81,
+  "new_audits": 53,
+  "new_theorems": 37,
+  "nonempty_audits": {
+    "Generative.NewPossibilities.reach_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.NewPossibilities.reach_construct": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.NewPossibilities.reaches_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.NewPossibilities.extension_adds_actual_route": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.NewPossibilities.step_material_conserved": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.NewPossibilities.step_work_account": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.NewPossibilities.trace_material_conserved": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.NewPossibilities.trace_work_account": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.NewPossibilities.finite_work_bounds_history": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.NewPossibilities.no_infinite_closed_execution": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.NewPossibilities.frozen_step": [
+      "propext"
+    ],
+    "Generative.NewPossibilities.frozen_trace": [
+      "propext"
+    ],
+    "Generative.NewPossibilities.frozen_cannot_make_route": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.NewPossibilities.construct_chain": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Generative.NewPossibilities.form_constructor_then_chain": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Generative.NewPossibilities.member_below_bound": [
+      "propext"
+    ],
+    "Generative.NewPossibilities.beyond_every_finite_menu": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Generative.NewPossibilities.response_matches_operation": [
+      "propext"
+    ],
+    "Generative.NewPossibilities.matched_histories": [
+      "propext"
+    ],
+    "Generative.NewPossibilities.new_description_adequate": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Generative.NewPossibilities.stale_record_counterexample": [
+      "propext"
+    ],
+    "Generative.NewPossibilities.novelty_with_loss": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "checker_sha256": "209e36ede6632dead05eff4efc4ba575b894aacb02e637c6a6e030f21823bcb1",
+  "commands": [
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "-o",
+      "GenerativeCore.olean",
+      "GenerativeCore.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "-o",
+      "NewPossibilities.olean",
+      "NewPossibilities.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "NewPossibilitiesAudit.lean"
+    ]
+  ],
+  "log_sha256": {
+    "GenerativeCore.txt": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "NewPossibilities.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axioms.txt": "c3fdc07c740f34f4e5a737c7aec23bb2298e893cf0faaa6ce6cf4dbcd780422c"
+  },
+  "source_changed_during_run": [],
+  "scope": "Conditional constructor formation, finite-menu extension, resource bounds, and response-relative description refinement. No inexhaustible physical novelty, autonomous acquisition or ethical warrant proved."
+}

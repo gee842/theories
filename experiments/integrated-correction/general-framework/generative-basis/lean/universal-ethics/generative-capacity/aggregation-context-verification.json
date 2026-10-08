@@ -1,0 +1,106 @@
+{
+  "status": "passed",
+  "utc": "20261008T102710.187228Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "aggregation-context-checks/20261008T102710.187228Z",
+  "source_sha256": "b5b2e670296fc529e4b787ad8cdbd36b450e6763c524f5834655441fc52dab38",
+  "checker_sha256": {
+    "check_aggregation_context.py": "19c6ed77a7e21b2776911f12295dc60d07357697d2c181762456c991f3a7456e",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "A declared strongest-tier filter reverses under added protection in a fixed population. A fixed-score control and two conditional consistency obstructions are checked. Tier warrant, ethical relevance, actual joint realization, permissions, fair chances and the choice of premises remain substantive; no theorem establishes unrestricted aggregation or invalidates G0/J.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "kernel_checked": true,
+  "new_theorems": 6,
+  "declarations": [
+    {
+      "kind": "structure",
+      "name": "AggregationContext.Protection"
+    },
+    {
+      "kind": "def",
+      "name": "AggregationContext.Included"
+    },
+    {
+      "kind": "def",
+      "name": "AggregationContext.fixedScore"
+    },
+    {
+      "kind": "def",
+      "name": "AggregationContext.filteredScore"
+    },
+    {
+      "kind": "def",
+      "name": "AggregationContext.FilterPref"
+    },
+    {
+      "kind": "def",
+      "name": "AggregationContext.original"
+    },
+    {
+      "kind": "def",
+      "name": "AggregationContext.improved"
+    },
+    {
+      "kind": "def",
+      "name": "AggregationContext.alternative"
+    },
+    {
+      "kind": "def",
+      "name": "AggregationContext.population"
+    },
+    {
+      "kind": "theorem",
+      "name": "AggregationContext.fixed_population_upgrade"
+    },
+    {
+      "kind": "theorem",
+      "name": "AggregationContext.strongest_cutoff_reverses"
+    },
+    {
+      "kind": "theorem",
+      "name": "AggregationContext.unfiltered_control"
+    },
+    {
+      "kind": "theorem",
+      "name": "AggregationContext.fixed_score_preserves_inclusion"
+    },
+    {
+      "kind": "theorem",
+      "name": "AggregationContext.no_fixed_strict_extension"
+    },
+    {
+      "kind": "theorem",
+      "name": "AggregationContext.padding_composition_obstruction"
+    }
+  ],
+  "declaration_audits": 15,
+  "axiom_dependencies": {
+    "AggregationContext.Protection": [],
+    "AggregationContext.Included": [],
+    "AggregationContext.fixedScore": [],
+    "AggregationContext.filteredScore": [],
+    "AggregationContext.FilterPref": [],
+    "AggregationContext.original": [],
+    "AggregationContext.improved": [],
+    "AggregationContext.alternative": [],
+    "AggregationContext.population": [],
+    "AggregationContext.fixed_population_upgrade": [],
+    "AggregationContext.strongest_cutoff_reverses": [],
+    "AggregationContext.unfiltered_control": [],
+    "AggregationContext.fixed_score_preserves_inclusion": [],
+    "AggregationContext.no_fixed_strict_extension": [],
+    "AggregationContext.padding_composition_obstruction": []
+  },
+  "source_unchanged_during_check": true,
+  "artifact_sha256": {
+    "AggregationContext.lean": "b5b2e670296fc529e4b787ad8cdbd36b450e6763c524f5834655441fc52dab38",
+    "Audit.lean": "5f3b622f0a66066a2b0cb69eaabc46b5176d9ed7fd1a23656f46adff197b490f",
+    "axioms.log": "d8d4140f919ecd374b78f7fc071032a6007d3cfbb187886322e8771408314560",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_aggregation_context.py": "19c6ed77a7e21b2776911f12295dc60d07357697d2c181762456c991f3a7456e",
+    "compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

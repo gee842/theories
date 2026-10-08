@@ -1,0 +1,46 @@
+UpdaterConsequences.lean:240:40: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  i ≥ 0
+  h ≥ 0
+  g ≥ 0
+  f ≥ 0
+  e ≥ 0
+  d ≥ 0
+  c ≥ 0
+  b ≥ 4
+  b + c + d + e - f - g - h - i ≥ 1
+  0 ≤ a ≤ 4
+where
+ a := ↑(run route x.network cycle).2
+ b := ↑x.source
+ c := ↑x.stock
+ d := ↑x.spent
+ e := ↑x.waste
+ f := ↑(if 4 ≤ x.stock + (run route x.network cycle).2 then
+      { network := (run route x.network cycle).1, route := some route,
+        stock := x.stock + (run route x.network cycle).2 - 4, source := x.source - 4, spent := x.spent + 4,
+        waste := x.waste + (4 - (run route x.network cycle).2) }
+    else
+      { network := (run route x.network cycle).1, route := none, stock := x.stock + (run route x.network cycle).2,
+        source := x.source - 4, spent := x.spent, waste := x.waste + (4 - (run route x.network cycle).2) }).stock
+ g := ↑(if 4 ≤ x.stock + (run route x.network cycle).2 then
+      { network := (run route x.network cycle).1, route := some route,
+        stock := x.stock + (run route x.network cycle).2 - 4, source := x.source - 4, spent := x.spent + 4,
+        waste := x.waste + (4 - (run route x.network cycle).2) }
+    else
+      { network := (run route x.network cycle).1, route := none, stock := x.stock + (run route x.network cycle).2,
+        source := x.source - 4, spent := x.spent, waste := x.waste + (4 - (run route x.network cycle).2) }).source
+ h := ↑(if 4 ≤ x.stock + (run route x.network cycle).2 then
+      { network := (run route x.network cycle).1, route := some route,
+        stock := x.stock + (run route x.network cycle).2 - 4, source := x.source - 4, spent := x.spent + 4,
+        waste := x.waste + (4 - (run route x.network cycle).2) }
+    else
+      { network := (run route x.network cycle).1, route := none, stock := x.stock + (run route x.network cycle).2,
+        source := x.source - 4, spent := x.spent, waste := x.waste + (4 - (run route x.network cycle).2) }).spent
+ i := ↑(if 4 ≤ x.stock + (run route x.network cycle).2 then
+      { network := (run route x.network cycle).1, route := some route,
+        stock := x.stock + (run route x.network cycle).2 - 4, source := x.source - 4, spent := x.spent + 4,
+        waste := x.waste + (4 - (run route x.network cycle).2) }
+    else
+      { network := (run route x.network cycle).1, route := none, stock := x.stock + (run route x.network cycle).2,
+        source := x.source - 4, spent := x.spent, waste := x.waste + (4 - (run route x.network cycle).2) }).waste

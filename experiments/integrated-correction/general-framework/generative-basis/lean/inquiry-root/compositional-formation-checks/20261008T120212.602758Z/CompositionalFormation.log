@@ -1,0 +1,268 @@
+CompositionalFormation.lean:305:4: error: `dsimp` made no progress
+CompositionalFormation.lean:362:32: error(lean.unknownIdentifier): Unknown constant `List.replicate_add`
+CompositionalFormation.lean:362:32: error(lean.unknownIdentifier): Unknown constant `List.replicate_add`
+CompositionalFormation.lean:363:39: error(lean.unknownIdentifier): Unknown constant `List.replicate_add`
+CompositionalFormation.lean:385:6: error: Type mismatch
+  Eq.trans (formed_operation_correspondence { first := ?m.959, second := ?m.959, reversed := ?m.960 } e)
+    (indistinguishable_reversal_preserves_every_expression ?m.959 ?m.960 e)
+has type
+  operate (programFor { first := ?m.959, second := ?m.959, reversed := ?m.960 }) e =
+    eval { first := ?m.959, second := ?m.959, reversed := !?m.960 } e
+but is expected to have type
+  operate
+      { first := { first := false, second := false, reversed := true }.first,
+        second := { first := false, second := false, reversed := true }.second, route := [false, false] }
+      e =
+    eval { first := false, second := false, reversed := true } e
+CompositionalFormation.lean:385:6: error: Type mismatch
+  Eq.trans (formed_operation_correspondence { first := ?m.959, second := ?m.959, reversed := ?m.960 } e)
+    (indistinguishable_reversal_preserves_every_expression ?m.959 ?m.960 e)
+has type
+  operate (programFor { first := ?m.959, second := ?m.959, reversed := ?m.960 }) e =
+    eval { first := ?m.959, second := ?m.959, reversed := !?m.960 } e
+but is expected to have type
+  operate
+      { first := { first := false, second := true, reversed := false }.first,
+        second := { first := false, second := true, reversed := false }.second, route := [false, false] }
+      e =
+    eval { first := false, second := true, reversed := false } e
+CompositionalFormation.lean:385:6: error: Type mismatch
+  Eq.trans (formed_operation_correspondence { first := ?m.959, second := ?m.959, reversed := ?m.960 } e)
+    (indistinguishable_reversal_preserves_every_expression ?m.959 ?m.960 e)
+has type
+  operate (programFor { first := ?m.959, second := ?m.959, reversed := ?m.960 }) e =
+    eval { first := ?m.959, second := ?m.959, reversed := !?m.960 } e
+but is expected to have type
+  operate
+      { first := { first := false, second := true, reversed := true }.first,
+        second := { first := false, second := true, reversed := true }.second, route := [false, false] }
+      e =
+    eval { first := false, second := true, reversed := true } e
+CompositionalFormation.lean:385:6: error: Type mismatch
+  Eq.trans (formed_operation_correspondence { first := ?m.959, second := ?m.959, reversed := ?m.960 } e)
+    (indistinguishable_reversal_preserves_every_expression ?m.959 ?m.960 e)
+has type
+  operate (programFor { first := ?m.959, second := ?m.959, reversed := ?m.960 }) e =
+    eval { first := ?m.959, second := ?m.959, reversed := !?m.960 } e
+but is expected to have type
+  operate
+      { first := { first := true, second := false, reversed := false }.first,
+        second := { first := true, second := false, reversed := false }.second, route := [false, false] }
+      e =
+    eval { first := true, second := false, reversed := false } e
+CompositionalFormation.lean:385:6: error: Type mismatch
+  Eq.trans (formed_operation_correspondence { first := ?m.959, second := ?m.959, reversed := ?m.960 } e)
+    (indistinguishable_reversal_preserves_every_expression ?m.959 ?m.960 e)
+has type
+  operate (programFor { first := ?m.959, second := ?m.959, reversed := ?m.960 }) e =
+    eval { first := ?m.959, second := ?m.959, reversed := !?m.960 } e
+but is expected to have type
+  operate
+      { first := { first := true, second := false, reversed := true }.first,
+        second := { first := true, second := false, reversed := true }.second, route := [false, false] }
+      e =
+    eval { first := true, second := false, reversed := true } e
+CompositionalFormation.lean:385:6: error: Type mismatch
+  Eq.trans (formed_operation_correspondence { first := ?m.959, second := ?m.959, reversed := ?m.960 } e)
+    (indistinguishable_reversal_preserves_every_expression ?m.959 ?m.960 e)
+has type
+  operate (programFor { first := ?m.959, second := ?m.959, reversed := ?m.960 }) e =
+    eval { first := ?m.959, second := ?m.959, reversed := !?m.960 } e
+but is expected to have type
+  operate
+      { first := { first := true, second := true, reversed := false }.first,
+        second := { first := true, second := true, reversed := false }.second, route := [false, false] }
+      e =
+    eval { first := true, second := true, reversed := false } e
+CompositionalFormation.lean:385:6: error: Type mismatch
+  Eq.trans (formed_operation_correspondence { first := ?m.959, second := ?m.959, reversed := ?m.960 } e)
+    (indistinguishable_reversal_preserves_every_expression ?m.959 ?m.960 e)
+has type
+  operate (programFor { first := ?m.959, second := ?m.959, reversed := ?m.960 }) e =
+    eval { first := ?m.959, second := ?m.959, reversed := !?m.960 } e
+but is expected to have type
+  operate
+      { first := { first := true, second := true, reversed := true }.first,
+        second := { first := true, second := true, reversed := true }.second, route := [false, false] }
+      e =
+    eval { first := true, second := true, reversed := true } e
+CompositionalFormation.lean:385:6: error: Type mismatch
+  Eq.trans (formed_operation_correspondence { first := ?m.960, second := ?m.960, reversed := ?m.961 } e)
+    (indistinguishable_reversal_preserves_every_expression ?m.960 ?m.961 e)
+has type
+  operate (programFor { first := ?m.960, second := ?m.960, reversed := ?m.961 }) e =
+    eval { first := ?m.960, second := ?m.960, reversed := !?m.961 } e
+but is expected to have type
+  operate
+      { first := { first := false, second := false, reversed := true }.first,
+        second := { first := false, second := false, reversed := true }.second, route := [false, true] }
+      e =
+    eval { first := false, second := false, reversed := true } e
+CompositionalFormation.lean:385:6: error: Type mismatch
+  Eq.trans (formed_operation_correspondence { first := ?m.961, second := ?m.961, reversed := ?m.962 } e)
+    (indistinguishable_reversal_preserves_every_expression ?m.961 ?m.962 e)
+has type
+  operate (programFor { first := ?m.961, second := ?m.961, reversed := ?m.962 }) e =
+    eval { first := ?m.961, second := ?m.961, reversed := !?m.962 } e
+but is expected to have type
+  operate
+      { first := { first := false, second := true, reversed := true }.first,
+        second := { first := false, second := true, reversed := true }.second, route := [false, true] }
+      e =
+    eval { first := false, second := true, reversed := true } e
+CompositionalFormation.lean:385:6: error: Type mismatch
+  Eq.trans (formed_operation_correspondence { first := ?m.962, second := ?m.962, reversed := ?m.963 } e)
+    (indistinguishable_reversal_preserves_every_expression ?m.962 ?m.963 e)
+has type
+  operate (programFor { first := ?m.962, second := ?m.962, reversed := ?m.963 }) e =
+    eval { first := ?m.962, second := ?m.962, reversed := !?m.963 } e
+but is expected to have type
+  operate
+      { first := { first := true, second := false, reversed := true }.first,
+        second := { first := true, second := false, reversed := true }.second, route := [false, true] }
+      e =
+    eval { first := true, second := false, reversed := true } e
+CompositionalFormation.lean:385:6: error: Type mismatch
+  Eq.trans (formed_operation_correspondence { first := ?m.963, second := ?m.963, reversed := ?m.964 } e)
+    (indistinguishable_reversal_preserves_every_expression ?m.963 ?m.964 e)
+has type
+  operate (programFor { first := ?m.963, second := ?m.963, reversed := ?m.964 }) e =
+    eval { first := ?m.963, second := ?m.963, reversed := !?m.964 } e
+but is expected to have type
+  operate
+      { first := { first := true, second := true, reversed := true }.first,
+        second := { first := true, second := true, reversed := true }.second, route := [false, true] }
+      e =
+    eval { first := true, second := true, reversed := true } e
+CompositionalFormation.lean:385:6: error: Type mismatch
+  Eq.trans (formed_operation_correspondence { first := ?m.963, second := ?m.963, reversed := ?m.964 } e)
+    (indistinguishable_reversal_preserves_every_expression ?m.963 ?m.964 e)
+has type
+  operate (programFor { first := ?m.963, second := ?m.963, reversed := ?m.964 }) e =
+    eval { first := ?m.963, second := ?m.963, reversed := !?m.964 } e
+but is expected to have type
+  operate
+      { first := { first := false, second := false, reversed := false }.first,
+        second := { first := false, second := false, reversed := false }.second, route := [true, false] }
+      e =
+    eval { first := false, second := false, reversed := false } e
+CompositionalFormation.lean:385:6: error: Type mismatch
+  Eq.trans (formed_operation_correspondence { first := ?m.964, second := ?m.964, reversed := ?m.965 } e)
+    (indistinguishable_reversal_preserves_every_expression ?m.964 ?m.965 e)
+has type
+  operate (programFor { first := ?m.964, second := ?m.964, reversed := ?m.965 }) e =
+    eval { first := ?m.964, second := ?m.964, reversed := !?m.965 } e
+but is expected to have type
+  operate
+      { first := { first := false, second := true, reversed := false }.first,
+        second := { first := false, second := true, reversed := false }.second, route := [true, false] }
+      e =
+    eval { first := false, second := true, reversed := false } e
+CompositionalFormation.lean:385:6: error: Type mismatch
+  Eq.trans (formed_operation_correspondence { first := ?m.965, second := ?m.965, reversed := ?m.966 } e)
+    (indistinguishable_reversal_preserves_every_expression ?m.965 ?m.966 e)
+has type
+  operate (programFor { first := ?m.965, second := ?m.965, reversed := ?m.966 }) e =
+    eval { first := ?m.965, second := ?m.965, reversed := !?m.966 } e
+but is expected to have type
+  operate
+      { first := { first := true, second := false, reversed := false }.first,
+        second := { first := true, second := false, reversed := false }.second, route := [true, false] }
+      e =
+    eval { first := true, second := false, reversed := false } e
+CompositionalFormation.lean:385:6: error: Type mismatch
+  Eq.trans (formed_operation_correspondence { first := ?m.966, second := ?m.966, reversed := ?m.967 } e)
+    (indistinguishable_reversal_preserves_every_expression ?m.966 ?m.967 e)
+has type
+  operate (programFor { first := ?m.966, second := ?m.966, reversed := ?m.967 }) e =
+    eval { first := ?m.966, second := ?m.966, reversed := !?m.967 } e
+but is expected to have type
+  operate
+      { first := { first := true, second := true, reversed := false }.first,
+        second := { first := true, second := true, reversed := false }.second, route := [true, false] }
+      e =
+    eval { first := true, second := true, reversed := false } e
+CompositionalFormation.lean:385:6: error: Type mismatch
+  Eq.trans (formed_operation_correspondence { first := ?m.967, second := ?m.967, reversed := ?m.968 } e)
+    (indistinguishable_reversal_preserves_every_expression ?m.967 ?m.968 e)
+has type
+  operate (programFor { first := ?m.967, second := ?m.967, reversed := ?m.968 }) e =
+    eval { first := ?m.967, second := ?m.967, reversed := !?m.968 } e
+but is expected to have type
+  operate
+      { first := { first := false, second := false, reversed := true }.first,
+        second := { first := false, second := false, reversed := true }.second, route := [true, true] }
+      e =
+    eval { first := false, second := false, reversed := true } e
+CompositionalFormation.lean:385:6: error: Type mismatch
+  Eq.trans (formed_operation_correspondence { first := ?m.967, second := ?m.967, reversed := ?m.968 } e)
+    (indistinguishable_reversal_preserves_every_expression ?m.967 ?m.968 e)
+has type
+  operate (programFor { first := ?m.967, second := ?m.967, reversed := ?m.968 }) e =
+    eval { first := ?m.967, second := ?m.967, reversed := !?m.968 } e
+but is expected to have type
+  operate
+      { first := { first := false, second := true, reversed := false }.first,
+        second := { first := false, second := true, reversed := false }.second, route := [true, true] }
+      e =
+    eval { first := false, second := true, reversed := false } e
+CompositionalFormation.lean:385:6: error: Type mismatch
+  Eq.trans (formed_operation_correspondence { first := ?m.967, second := ?m.967, reversed := ?m.968 } e)
+    (indistinguishable_reversal_preserves_every_expression ?m.967 ?m.968 e)
+has type
+  operate (programFor { first := ?m.967, second := ?m.967, reversed := ?m.968 }) e =
+    eval { first := ?m.967, second := ?m.967, reversed := !?m.968 } e
+but is expected to have type
+  operate
+      { first := { first := false, second := true, reversed := true }.first,
+        second := { first := false, second := true, reversed := true }.second, route := [true, true] }
+      e =
+    eval { first := false, second := true, reversed := true } e
+CompositionalFormation.lean:385:6: error: Type mismatch
+  Eq.trans (formed_operation_correspondence { first := ?m.967, second := ?m.967, reversed := ?m.968 } e)
+    (indistinguishable_reversal_preserves_every_expression ?m.967 ?m.968 e)
+has type
+  operate (programFor { first := ?m.967, second := ?m.967, reversed := ?m.968 }) e =
+    eval { first := ?m.967, second := ?m.967, reversed := !?m.968 } e
+but is expected to have type
+  operate
+      { first := { first := true, second := false, reversed := false }.first,
+        second := { first := true, second := false, reversed := false }.second, route := [true, true] }
+      e =
+    eval { first := true, second := false, reversed := false } e
+CompositionalFormation.lean:385:6: error: Type mismatch
+  Eq.trans (formed_operation_correspondence { first := ?m.967, second := ?m.967, reversed := ?m.968 } e)
+    (indistinguishable_reversal_preserves_every_expression ?m.967 ?m.968 e)
+has type
+  operate (programFor { first := ?m.967, second := ?m.967, reversed := ?m.968 }) e =
+    eval { first := ?m.967, second := ?m.967, reversed := !?m.968 } e
+but is expected to have type
+  operate
+      { first := { first := true, second := false, reversed := true }.first,
+        second := { first := true, second := false, reversed := true }.second, route := [true, true] }
+      e =
+    eval { first := true, second := false, reversed := true } e
+CompositionalFormation.lean:385:6: error: Type mismatch
+  Eq.trans (formed_operation_correspondence { first := ?m.967, second := ?m.967, reversed := ?m.968 } e)
+    (indistinguishable_reversal_preserves_every_expression ?m.967 ?m.968 e)
+has type
+  operate (programFor { first := ?m.967, second := ?m.967, reversed := ?m.968 }) e =
+    eval { first := ?m.967, second := ?m.967, reversed := !?m.968 } e
+but is expected to have type
+  operate
+      { first := { first := true, second := true, reversed := false }.first,
+        second := { first := true, second := true, reversed := false }.second, route := [true, true] }
+      e =
+    eval { first := true, second := true, reversed := false } e
+CompositionalFormation.lean:385:6: error: Type mismatch
+  Eq.trans (formed_operation_correspondence { first := ?m.967, second := ?m.967, reversed := ?m.968 } e)
+    (indistinguishable_reversal_preserves_every_expression ?m.967 ?m.968 e)
+has type
+  operate (programFor { first := ?m.967, second := ?m.967, reversed := ?m.968 }) e =
+    eval { first := ?m.967, second := ?m.967, reversed := !?m.968 } e
+but is expected to have type
+  operate
+      { first := { first := true, second := true, reversed := true }.first,
+        second := { first := true, second := true, reversed := true }.second, route := [true, true] }
+      e =
+    eval { first := true, second := true, reversed := true } e

@@ -1,0 +1,55 @@
+'CorrectionRelations.Boundary' does not depend on any axioms
+'CorrectionRelations.Fits' does not depend on any axioms
+'CorrectionRelations.boundary_exact_for_context' does not depend on any axioms
+'CorrectionRelations.all_contexts_refinement_iff' does not depend on any axioms
+'CorrectionRelations.all_contexts_equivalent_iff' does not depend on any axioms
+'CorrectionRelations.Couple' does not depend on any axioms
+'CorrectionRelations.regrouping_preserves_relation' does not depend on any axioms
+'CorrectionRelations.coupled_boundary_exact' does not depend on any axioms
+'CorrectionRelations.boundary_replacement_preserves_coupling' depends on axioms: [propext]
+'CorrectionRelations.EqualBoundary' does not depend on any axioms
+'CorrectionRelations.FreeBoundary' does not depend on any axioms
+'CorrectionRelations.equal_boundary_full_coordinate_projections' does not depend on any axioms
+'CorrectionRelations.separate_coordinate_summaries_lose_joint_restriction' does not depend on any axioms
+'CorrectionRelations.Edge' does not depend on any axioms
+'CorrectionRelations.Parity' does not depend on any axioms
+'CorrectionRelations.Follow' does not depend on any axioms
+'CorrectionRelations.Path' does not depend on any axioms
+'CorrectionRelations.each_edge_has_full_projections' does not depend on any axioms
+'CorrectionRelations.path_iff_propagated' does not depend on any axioms
+'CorrectionRelations.propagation_parity' does not depend on any axioms
+'CorrectionRelations.cycle_compatible_iff_even' depends on axioms: [propext]
+'CorrectionRelations.every_root_choice_extends_iff_even' depends on axioms: [propext]
+'CorrectionRelations.odd_cycle_has_no_joint_assignment' depends on axioms: [propext]
+'CorrectionRelations.triangle_local_relations_do_not_ensure_joint_correction' depends on axioms: [propext]
+'CorrectionRelations.parity_append' does not depend on any axioms
+'CorrectionRelations.matching_converter_restores_every_root' depends on axioms: [propext]
+'CorrectionRelations.transparent_converter_fails_for_odd_cycle' depends on axioms: [propext]
+'CorrectionRelations.aggregate_probe_reads_parity' does not depend on any axioms
+'CorrectionRelations.aggregate_probe_summarizes_path' depends on axioms: [propext]
+'CorrectionRelations.equal_probes_iff_equal_path_relations' depends on axioms: [propext]
+'CorrectionRelations.converter_from_current_probe_corrects_every_root' depends on axioms: [propext]
+'CorrectionRelations.converter_from_stale_probe_can_fail' depends on axioms: [propext]
+'CorrectionRelations.retained_converter_iff_same_composed_relation' depends on axioms: [propext]
+'CorrectionRelations.Revision' does not depend on any axioms
+'CorrectionRelations.Revised' does not depend on any axioms
+'CorrectionRelations.paired_revision_preserves_parity' does not depend on any axioms
+'CorrectionRelations.finite_revisions_preserve_parity' does not depend on any axioms
+'CorrectionRelations.finite_revisions_preserve_entire_relation' depends on axioms: [propext]
+'CorrectionRelations.retained_converter_survives_finite_revisions' depends on axioms: [propext]
+'CorrectionRelations.first_half_of_paired_change_defeats_retained_converter' depends on axioms: [propext]
+'CorrectionRelations.Possible' does not depend on any axioms
+'CorrectionRelations.Uniform' does not depend on any axioms
+'CorrectionRelations.Observable' does not depend on any axioms
+'CorrectionRelations.uniform_implies_possible' does not depend on any axioms
+'CorrectionRelations.observable_implies_possible' does not depend on any axioms
+'CorrectionRelations.constant_observation_iff_uniform' does not depend on any axioms
+'CorrectionRelations.Fixed' does not depend on any axioms
+'CorrectionRelations.Switched' does not depend on any axioms
+'CorrectionRelations.fixed_boundary_total' does not depend on any axioms
+'CorrectionRelations.switched_boundary_total' does not depend on any axioms
+'CorrectionRelations.fixed_switched_same_feasibility_contexts' does not depend on any axioms
+'CorrectionRelations.fixed_has_uniform_realization' does not depend on any axioms
+'CorrectionRelations.switched_has_only_modewise_witnesses' depends on axioms: [propext]
+'CorrectionRelations.observing_relation_restores_realization' does not depend on any axioms
+'CorrectionRelations.exact_feasibility_summary_not_control_contract' depends on axioms: [propext]

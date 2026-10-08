@@ -1,0 +1,157 @@
+{
+  "scope": "Only C32/F25 content updated; inspected owned source hashes and discovery entries recorded. Shared navigation changes inspected; removing only the owned insertion recovered the prior reviewed bytes for each of three shared documents.",
+  "before": [
+    {
+      "id": "C32",
+      "title_zh": "测得反馈的机制与物理对应",
+      "title_en": "Measured feedback mechanism and physical correspondence",
+      "claim_zh": "三次已发表物理运行的1794项命令由实际读数、积分和时距重建；从该机制导出行动误差项，并保留更多运动、未来误差界失败和优化源码的指标差异。",
+      "claim_en": "All 1794 commands in three published physical runs are reconstructed from acquired readings, retained integral and elapsed time; the mechanism supplies a derived action-error term, retaining extra movement, failed future-bound extrapolation and an optimizer objective discrepancy.",
+      "scope_zh": "历史数据重分析和13项新Lean定理；不是新硬件试验、传感真值证明或伦理根据。完整三项整合目标仍活动，读数／响应校准和方案生成尚须整合。",
+      "scope_en": "Archival reanalysis and 13 new Lean theorems; not a new hardware experiment, sensor-truth proof or ethical warrant. The overall three-part integration remains active, with calibration and candidate-generation contracts still to integrate.",
+      "links": [
+        {
+          "label_zh": "当前理论",
+          "label_en": "Current account",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEASURED-FEEDBACK-CORRESPONDENCE.md"
+        },
+        {
+          "label_zh": "证据与前提解释",
+          "label_en": "Evidence and premise explanation",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-JUDGMENT-EMPIRICAL.md"
+        },
+        {
+          "label_zh": "完成核查",
+          "label_en": "Completion audit",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/THREE-CONNECTIONS-COMPLETION-AUDIT.md"
+        },
+        {
+          "label_zh": "独立验收与保留证据",
+          "label_en": "Independent review and retained evidence",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEASURED-FEEDBACK-REVIEW.md"
+        }
+      ]
+    },
+    {
+      "id": "F25",
+      "title_zh": "反馈误差传递与运动指标实查",
+      "title_en": "Checked feedback error transport and movement accounting",
+      "claim_zh": "实际控制器的实数模型把传感与记忆误差传到命令，再组合尺度误差定理；13项新定理、26项新声明、五模块共147项实查。另有1794命令的精确有理数数值复核。",
+      "claim_en": "A real-number controller abstraction carries sensing and memory error into commands and composes the scale bounds: 13 new theorems, 26 declarations and 147 checks across five modules; a separate rational calculation checks 1794 commands.",
+      "scope_zh": "Lean4.30.0-rc2新编仓库依赖，固定Mathlib缓存；标准逻辑依赖明示。独立验收重编147项审计、重放1794命令并独立QR复拟四模型；不是浮点程序的形式验证或新物理复制。",
+      "scope_en": "Lean4.30.0-rc2 rebuilds repository dependencies with the pinned Mathlib cache and disclosed logical dependencies. Independent acceptance rebuilt 147 audits, replayed 1794 commands and refitted four models by QR; no formal floating-program refinement or new physical replication.",
+      "links": [
+        {
+          "label_zh": "Lean源码",
+          "label_en": "Lean source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean"
+        },
+        {
+          "label_zh": "证明回执",
+          "label_en": "Proof receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/measured-feedback-verification.json"
+        },
+        {
+          "label_zh": "数值复核",
+          "label_en": "Numerical cross-check",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/tclab-checks.json"
+        },
+        {
+          "label_zh": "独立验收与保留证据",
+          "label_en": "Independent review and retained evidence",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEASURED-FEEDBACK-REVIEW.md"
+        }
+      ]
+    }
+  ],
+  "after": [
+    {
+      "id": "C32",
+      "title_zh": "测得反馈的机制与物理对应",
+      "title_en": "Measured feedback mechanism and physical correspondence",
+      "claim_zh": "先前1794项已发表物理命令的对应，现接通初始／读数误差、饱和分支、后续积分、命令与继承尺度界；真实数据上的完整控制器重算保留隐藏记忆跳变与宽界。",
+      "claim_en": "The preceding correspondence for 1794 published physical commands now connects initial/readout error, saturation, later integral memory, commands and inherited scale bounds; whole controller recomputations retain hidden memory jumps and loose enclosures.",
+      "scope_zh": "后续记忆界由实际递推推得；新增13项定理和7176项精确重算，含三组不变对照，不新增物理试验。未来读数校准、物理响应／时距、方案生成与实践比较仍待接通。",
+      "scope_en": "Later memory bounds follow from the actual recurrence: 13 additional theorems and 7176 exact recomputations, including three unchanged controls, without new physical trials. Future readout warrant, physical response/timing, candidate generation and practical comparison remain open.",
+      "links": [
+        {
+          "label_zh": "当前理论",
+          "label_en": "Current account",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEASURED-FEEDBACK-CORRESPONDENCE.md"
+        },
+        {
+          "label_zh": "证据与前提解释",
+          "label_en": "Evidence and premise explanation",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-JUDGMENT-EMPIRICAL.md"
+        },
+        {
+          "label_zh": "完成核查",
+          "label_en": "Completion audit",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/THREE-CONNECTIONS-COMPLETION-AUDIT.md"
+        },
+        {
+          "label_zh": "独立验收与保留证据",
+          "label_en": "Independent review and retained evidence",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEASURED-FEEDBACK-REVIEW.md"
+        },
+        {
+          "label_zh": "保留记忆的后续推导",
+          "label_en": "Retained-memory continuation",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FEEDBACK-MEMORY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "后续独立验收",
+          "label_en": "Continuation independent review",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FEEDBACK-MEMORY-REVIEW.md"
+        }
+      ]
+    },
+    {
+      "id": "F25",
+      "title_zh": "反馈误差、保留记忆与历史比较",
+      "title_en": "Feedback error, retained memory and history comparison",
+      "claim_zh": "先前13项反馈定理保留；另13项新定理／21项声明推导分支感知记忆界，实际组合原有受控过程误差界，并传递命令运动与暴露量误差。六模块共168项审计。",
+      "claim_en": "The preceding 13 feedback theorems retain their scope; 13 additional theorems/21 declarations derive memory bounds through branch changes, compose the inherited plant bound, and transport movement/exposure errors. Six modules pass 168 audits.",
+      "scope_zh": "独立重编168项审计并逐字段复核7176项有理数证书。Lean4.30.0-rc2、固定Mathlib缓存及逻辑依赖明示；回溯读数变换不是未来校准或反事实热实验。",
+      "scope_en": "Independent rebuild of 168 audits and field-by-field verification of 7176 rational certificates. Lean4.30.0-rc2, pinned Mathlib cache and logical dependencies disclosed; retrospective readout transformations are not future calibration or counterfactual thermal experiments.",
+      "links": [
+        {
+          "label_zh": "Lean源码",
+          "label_en": "Lean source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean"
+        },
+        {
+          "label_zh": "证明回执",
+          "label_en": "Proof receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/measured-feedback-verification.json"
+        },
+        {
+          "label_zh": "数值复核",
+          "label_en": "Numerical cross-check",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/tclab-checks.json"
+        },
+        {
+          "label_zh": "独立验收与保留证据",
+          "label_en": "Independent review and retained evidence",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MEASURED-FEEDBACK-REVIEW.md"
+        },
+        {
+          "label_zh": "后续 Lean 源码",
+          "label_en": "Continuation Lean source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/FeedbackMemory.lean"
+        },
+        {
+          "label_zh": "168项实查回执",
+          "label_en": "168-audit receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/feedback-memory-verification.json"
+        },
+        {
+          "label_zh": "后续独立验收",
+          "label_en": "Continuation independent review",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FEEDBACK-MEMORY-REVIEW.md"
+        }
+      ]
+    }
+  ],
+  "other_entries_unchanged": 82
+}

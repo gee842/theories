@@ -1,0 +1,163 @@
+{
+  "checked_at_utc": "20261008T114731.409806Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "compiler": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "checker_sha256": "81160af0c0943f91da20e0c3c8b86527c3af670886bb96c305e61ee6c2e2db23",
+  "scope": "nine response-structure theorems and 50 inherited import audits; no repository-wide validation",
+  "modules": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "expected_audits": 18,
+      "empty_axiom_audits": [
+        "Generative.trace_append_iff",
+        "Generative.trace_singleton_iff",
+        "Generative.enabled_iff_singleton_trace",
+        "Generative.enabled_difference_implies_state_difference",
+        "Generative.feasible_append_iff",
+        "Generative.feasible_prefix",
+        "Generative.enabled_product_iff",
+        "Generative.trace_product_iff",
+        "Generative.feasible_product_iff",
+        "Generative.trace_map",
+        "Generative.trace_lift",
+        "Generative.projected_trace_iff",
+        "Generative.projection_exact_iff",
+        "Generative.local_exact_iff_trace_exact",
+        "Generative.enabled_projection_iff",
+        "Generative.feasible_projection_iff",
+        "Generative.feasible_difference_implies_projection_difference",
+        "Generative.trace_faithful_iff"
+      ],
+      "standard_dependency_audits": {},
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GeneratedPaths.lean",
+      "sha256": "c9194672eca9625ef95ece823ef98a7bca46ead33215246dd97ebe3e8cecbbc1",
+      "expected_audits": 9,
+      "empty_axiom_audits": [
+        "Generative.Deeper.reach_refl",
+        "Generative.Deeper.reach_step",
+        "Generative.Deeper.reach_trans",
+        "Generative.Deeper.trace_evaluate",
+        "Generative.Deeper.reach_evaluate",
+        "Generative.Deeper.reach_least",
+        "Generative.Deeper.reach_is_least_closure",
+        "Generative.Deeper.least_closure_unique",
+        "Generative.Deeper.reach_without_steps_iff"
+      ],
+      "standard_dependency_audits": {},
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/CorePredication.lean",
+      "sha256": "bcebf3a74f0b94fe5cc9537f57c279dc9d9220d5071db97d9644e46597c30a0c",
+      "expected_audits": 12,
+      "empty_axiom_audits": [
+        "Generative.CorePredication.may_append_iff",
+        "Generative.CorePredication.must_append_iff",
+        "Generative.CorePredication.trace_invariant",
+        "Generative.CorePredication.reach_invariant",
+        "Generative.CorePredication.invariant_excludes_endpoint",
+        "Generative.CorePredication.feasible_and_must_implies_may",
+        "Generative.CorePredication.deterministic_trace_endpoint",
+        "Generative.CorePredication.deterministic_may_implies_must",
+        "Generative.CorePredication.possible_not_guaranteed",
+        "Generative.CorePredication.blocked_word_not_feasible",
+        "Generative.CorePredication.blocked_must_is_vacuous",
+        "Generative.CorePredication.blocked_may_is_false"
+      ],
+      "standard_dependency_audits": {},
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContextualWisdom.lean",
+      "sha256": "25cb25904731565b4146680af403f8cfba112ea83a42ebd115592afa757a1ea9",
+      "expected_audits": 11,
+      "empty_axiom_audits": [
+        "Generative.ContextualWisdom.assured_congr",
+        "Generative.ContextualWisdom.assured_append_iff",
+        "Generative.ContextualWisdom.assured_feasible_must",
+        "Generative.ContextualWisdom.assured_reached_suffix",
+        "Generative.ContextualWisdom.regulation_singleton"
+      ],
+      "standard_dependency_audits": {
+        "Generative.ContextualWisdom.completed_endpoints_omit_interruption": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.ContextualWisdom.opposite_responses_same_band": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.ContextualWisdom.no_aliased_response": [
+          "propext"
+        ],
+        "Generative.ContextualWisdom.contextual_response_preserves": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ContextualWisdom.contextual_finite_continuation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ContextualWisdom.success_changes_next_response": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/WisdomResponseStructure.lean",
+      "sha256": "f62c0f79757cf301ad18b2ee145fafdc029b1b8e0356326de1d7f17147ef9ed4",
+      "expected_audits": 9,
+      "empty_axiom_audits": [],
+      "standard_dependency_audits": {
+        "Generative.WisdomResponseStructure.assured_route_iff": [
+          "propext"
+        ],
+        "Generative.WisdomResponseStructure.left_response_adequate": [
+          "propext"
+        ],
+        "Generative.WisdomResponseStructure.right_response_adequate": [
+          "propext"
+        ],
+        "Generative.WisdomResponseStructure.adequate_description_loses_outcome_distinction": [
+          "propext"
+        ],
+        "Generative.WisdomResponseStructure.pairwise_common_response": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.WisdomResponseStructure.no_response_common_to_all": [
+          "propext"
+        ],
+        "Generative.WisdomResponseStructure.common_coarsening_constant": [
+          "propext"
+        ],
+        "Generative.WisdomResponseStructure.common_coarsening_inadequate": [
+          "propext"
+        ],
+        "Generative.WisdomResponseStructure.no_coarsest_adequate_description": [
+          "propext"
+        ]
+      },
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": false
+    }
+  ],
+  "passed": false
+}

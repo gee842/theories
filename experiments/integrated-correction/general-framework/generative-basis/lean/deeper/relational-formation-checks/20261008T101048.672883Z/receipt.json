@@ -1,0 +1,140 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-10-08T10:10:49.077007+00:00",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "module": "RelationalFormation",
+  "source_sha256": "75fd1db6ca05b683a8c4d650dcf90aca6d4566015a6274ef5ee67e6a5a7e5575",
+  "checker_sha256": "41ba116f33149dce5a1072c351971cff3146945b3f67d22f1111a16d37670672",
+  "log_sha256": "471bfef2a8a424d34e65baef1da2efdebdb8d6895e2715a1352e12503646b769",
+  "imports": [
+    "Init"
+  ],
+  "new_theorems": 19,
+  "definition_audits": 11,
+  "audits": [
+    {
+      "declaration": "RelationalFormation.Rectangular",
+      "axioms": []
+    },
+    {
+      "declaration": "RelationalFormation.Post",
+      "axioms": []
+    },
+    {
+      "declaration": "RelationalFormation.Separate",
+      "axioms": []
+    },
+    {
+      "declaration": "RelationalFormation.Factorizes",
+      "axioms": []
+    },
+    {
+      "declaration": "RelationalFormation.Reach",
+      "axioms": []
+    },
+    {
+      "declaration": "RelationalFormation.Full",
+      "axioms": []
+    },
+    {
+      "declaration": "RelationalFormation.Diagonal",
+      "axioms": []
+    },
+    {
+      "declaration": "RelationalFormation.Copy",
+      "axioms": []
+    },
+    {
+      "declaration": "RelationalFormation.Identity",
+      "axioms": []
+    },
+    {
+      "declaration": "RelationalFormation.Select",
+      "axioms": []
+    },
+    {
+      "declaration": "RelationalFormation.Reset",
+      "axioms": []
+    },
+    {
+      "declaration": "RelationalFormation.rectangular_transport",
+      "axioms": []
+    },
+    {
+      "declaration": "RelationalFormation.product_rectangular",
+      "axioms": []
+    },
+    {
+      "declaration": "RelationalFormation.separate_post_rectangular",
+      "axioms": []
+    },
+    {
+      "declaration": "RelationalFormation.factorized_post_rectangular",
+      "axioms": []
+    },
+    {
+      "declaration": "RelationalFormation.new_restriction_excludes_factorization",
+      "axioms": []
+    },
+    {
+      "declaration": "RelationalFormation.separate_reach_rectangular",
+      "axioms": []
+    },
+    {
+      "declaration": "RelationalFormation.restricted_target_has_no_separate_history",
+      "axioms": []
+    },
+    {
+      "declaration": "RelationalFormation.full_rectangular",
+      "axioms": []
+    },
+    {
+      "declaration": "RelationalFormation.diagonal_not_rectangular",
+      "axioms": []
+    },
+    {
+      "declaration": "RelationalFormation.copy_post_iff_diagonal",
+      "axioms": []
+    },
+    {
+      "declaration": "RelationalFormation.copy_does_not_factorize",
+      "axioms": []
+    },
+    {
+      "declaration": "RelationalFormation.identity_post_iff",
+      "axioms": []
+    },
+    {
+      "declaration": "RelationalFormation.identity_factorizes",
+      "axioms": []
+    },
+    {
+      "declaration": "RelationalFormation.inherited_restriction_without_new_coupling",
+      "axioms": []
+    },
+    {
+      "declaration": "RelationalFormation.selection_iff_diagonal",
+      "axioms": []
+    },
+    {
+      "declaration": "RelationalFormation.selection_can_introduce_restriction",
+      "axioms": []
+    },
+    {
+      "declaration": "RelationalFormation.fixed_common_mode_rectangular",
+      "axioms": []
+    },
+    {
+      "declaration": "RelationalFormation.varying_common_mode_not_rectangular",
+      "axioms": []
+    },
+    {
+      "declaration": "RelationalFormation.reset_erases_restriction",
+      "axioms": []
+    }
+  ],
+  "run_directory": "relational-formation-checks/20261008T101048.672883Z",
+  "scope": "A universally quantified restriction on independent formation, with explicit domain/recombination hypotheses; finite iteration and inherited, selected, shared-mode and erasure controls. No statistical or universal causal identification is inferred.",
+  "logical_basis": "Lean 4.29.1 type theory and Init remain the checking framework. Actual modal domains, coordinate meanings and transition correspondence are not derived."
+}

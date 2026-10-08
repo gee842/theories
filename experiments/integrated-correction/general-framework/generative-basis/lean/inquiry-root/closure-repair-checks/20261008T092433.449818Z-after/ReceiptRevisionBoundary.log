@@ -1,0 +1,15 @@
+'ReceiptRevisionBoundary.paid_work_has_compatible_receipt' does not depend on any axioms
+'ReceiptRevisionBoundary.paid_success_identifies_event_regime' does not depend on any axioms
+'ReceiptRevisionBoundary.available_work_write_update' does not depend on any axioms
+'ReceiptRevisionBoundary.work_blocks_reversal_before_write' does not depend on any axioms
+'ReceiptRevisionBoundary.enabled_after_work_must_be_write' does not depend on any axioms
+'ReceiptRevisionBoundary.reversal_retains_readout_changes_regime' does not depend on any axioms
+'ReceiptRevisionBoundary.actual_success_prefix' does not depend on any axioms
+'ReceiptRevisionBoundary.actual_success_then_reversal' does not depend on any axioms
+'ReceiptRevisionBoundary.acquired_success_does_not_identify_current_regime' does not depend on any axioms
+'ReceiptRevisionBoundary.actual_fresh_observation_and_write' does not depend on any axioms
+'ReceiptRevisionBoundary.fresh_available_failure_has_scoped_correction' does not depend on any axioms
+'ReceiptRevisionBoundary.same_history_retains_fresh_write_provenance' does not depend on any axioms
+'ReceiptRevisionBoundary.actual_later_corrective_observation' does not depend on any axioms
+'ReceiptRevisionBoundary.same_history_reaches_opposed_success' does not depend on any axioms
+'ReceiptRevisionBoundary.actual_dynamic_successes_refute_fixed_pooling' does not depend on any axioms

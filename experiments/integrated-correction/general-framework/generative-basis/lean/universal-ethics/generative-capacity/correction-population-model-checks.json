@@ -1,0 +1,642 @@
+{
+  "status": "passed",
+  "scope": "Exact finite models; no real-world independence, transfer or system-boundary validation",
+  "sources": {
+    "CorrectionBoundary.lean": "1d86d53e01c6780860ff1f6793e5654c161a5a3316cc43d545e1dd2c3c2955ac",
+    "CorrectionPopulation.lean": "bd13fad67f759b36bc3800b046a95f6b1dd715328c9574a44af33323acda1de9",
+    "CorrectionParent.lean": "fe5a56b7bce18b39c2a47afa87ee59f1017011872536715bd44d0d6055810473"
+  },
+  "runner_sha256": "d0182be2caa0a82f43abb0362eabf790ef40a17582d855afa40a05f869e8b160",
+  "observation_models": [
+    {
+      "requested": false,
+      "left_successful_policies": 0,
+      "right_successful_policies": 0,
+      "joint_successful_policies": 1,
+      "joint_policy": [
+        false,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "requested": true,
+      "left_successful_policies": 0,
+      "right_successful_policies": 0,
+      "joint_successful_policies": 1,
+      "joint_policy": [
+        true,
+        false,
+        false,
+        true
+      ]
+    }
+  ],
+  "probability_grid_points": 101,
+  "common_mixture_grid_points": 10201,
+  "probability_records": [
+    {
+      "error": "0",
+      "independent_majority": "0",
+      "shared_majority": "0"
+    },
+    {
+      "error": "1/100",
+      "independent_majority": "149/500000",
+      "shared_majority": "1/100"
+    },
+    {
+      "error": "1/50",
+      "independent_majority": "37/31250",
+      "shared_majority": "1/50"
+    },
+    {
+      "error": "3/100",
+      "independent_majority": "1323/500000",
+      "shared_majority": "3/100"
+    },
+    {
+      "error": "1/25",
+      "independent_majority": "73/15625",
+      "shared_majority": "1/25"
+    },
+    {
+      "error": "1/20",
+      "independent_majority": "29/4000",
+      "shared_majority": "1/20"
+    },
+    {
+      "error": "3/50",
+      "independent_majority": "162/15625",
+      "shared_majority": "3/50"
+    },
+    {
+      "error": "7/100",
+      "independent_majority": "7007/500000",
+      "shared_majority": "7/100"
+    },
+    {
+      "error": "2/25",
+      "independent_majority": "284/15625",
+      "shared_majority": "2/25"
+    },
+    {
+      "error": "9/100",
+      "independent_majority": "11421/500000",
+      "shared_majority": "9/100"
+    },
+    {
+      "error": "1/10",
+      "independent_majority": "7/250",
+      "shared_majority": "1/10"
+    },
+    {
+      "error": "11/100",
+      "independent_majority": "16819/500000",
+      "shared_majority": "11/100"
+    },
+    {
+      "error": "3/25",
+      "independent_majority": "621/15625",
+      "shared_majority": "3/25"
+    },
+    {
+      "error": "13/100",
+      "independent_majority": "23153/500000",
+      "shared_majority": "13/100"
+    },
+    {
+      "error": "7/50",
+      "independent_majority": "833/15625",
+      "shared_majority": "7/50"
+    },
+    {
+      "error": "3/20",
+      "independent_majority": "243/4000",
+      "shared_majority": "3/20"
+    },
+    {
+      "error": "4/25",
+      "independent_majority": "1072/15625",
+      "shared_majority": "4/25"
+    },
+    {
+      "error": "17/100",
+      "independent_majority": "38437/500000",
+      "shared_majority": "17/100"
+    },
+    {
+      "error": "9/50",
+      "independent_majority": "2673/31250",
+      "shared_majority": "9/50"
+    },
+    {
+      "error": "19/100",
+      "independent_majority": "47291/500000",
+      "shared_majority": "19/100"
+    },
+    {
+      "error": "1/5",
+      "independent_majority": "13/125",
+      "shared_majority": "1/5"
+    },
+    {
+      "error": "21/100",
+      "independent_majority": "56889/500000",
+      "shared_majority": "21/100"
+    },
+    {
+      "error": "11/50",
+      "independent_majority": "1936/15625",
+      "shared_majority": "11/50"
+    },
+    {
+      "error": "23/100",
+      "independent_majority": "67183/500000",
+      "shared_majority": "23/100"
+    },
+    {
+      "error": "6/25",
+      "independent_majority": "2268/15625",
+      "shared_majority": "6/25"
+    },
+    {
+      "error": "1/4",
+      "independent_majority": "5/32",
+      "shared_majority": "1/4"
+    },
+    {
+      "error": "13/50",
+      "independent_majority": "5239/31250",
+      "shared_majority": "13/50"
+    },
+    {
+      "error": "27/100",
+      "independent_majority": "89667/500000",
+      "shared_majority": "27/100"
+    },
+    {
+      "error": "7/25",
+      "independent_majority": "2989/15625",
+      "shared_majority": "7/25"
+    },
+    {
+      "error": "29/100",
+      "independent_majority": "101761/500000",
+      "shared_majority": "29/100"
+    },
+    {
+      "error": "3/10",
+      "independent_majority": "27/125",
+      "shared_majority": "3/10"
+    },
+    {
+      "error": "31/100",
+      "independent_majority": "114359/500000",
+      "shared_majority": "31/100"
+    },
+    {
+      "error": "8/25",
+      "independent_majority": "3776/15625",
+      "shared_majority": "8/25"
+    },
+    {
+      "error": "33/100",
+      "independent_majority": "127413/500000",
+      "shared_majority": "33/100"
+    },
+    {
+      "error": "17/50",
+      "independent_majority": "8381/31250",
+      "shared_majority": "17/50"
+    },
+    {
+      "error": "7/20",
+      "independent_majority": "1127/4000",
+      "shared_majority": "7/20"
+    },
+    {
+      "error": "9/25",
+      "independent_majority": "4617/15625",
+      "shared_majority": "9/25"
+    },
+    {
+      "error": "37/100",
+      "independent_majority": "154697/500000",
+      "shared_majority": "37/100"
+    },
+    {
+      "error": "19/50",
+      "independent_majority": "5054/15625",
+      "shared_majority": "19/50"
+    },
+    {
+      "error": "39/100",
+      "independent_majority": "168831/500000",
+      "shared_majority": "39/100"
+    },
+    {
+      "error": "2/5",
+      "independent_majority": "44/125",
+      "shared_majority": "2/5"
+    },
+    {
+      "error": "41/100",
+      "independent_majority": "183229/500000",
+      "shared_majority": "41/100"
+    },
+    {
+      "error": "21/50",
+      "independent_majority": "11907/31250",
+      "shared_majority": "21/50"
+    },
+    {
+      "error": "43/100",
+      "independent_majority": "197843/500000",
+      "shared_majority": "43/100"
+    },
+    {
+      "error": "11/25",
+      "independent_majority": "6413/15625",
+      "shared_majority": "11/25"
+    },
+    {
+      "error": "9/20",
+      "independent_majority": "1701/4000",
+      "shared_majority": "9/20"
+    },
+    {
+      "error": "23/50",
+      "independent_majority": "6877/15625",
+      "shared_majority": "23/50"
+    },
+    {
+      "error": "47/100",
+      "independent_majority": "227527/500000",
+      "shared_majority": "47/100"
+    },
+    {
+      "error": "12/25",
+      "independent_majority": "7344/15625",
+      "shared_majority": "12/25"
+    },
+    {
+      "error": "49/100",
+      "independent_majority": "242501/500000",
+      "shared_majority": "49/100"
+    },
+    {
+      "error": "1/2",
+      "independent_majority": "1/2",
+      "shared_majority": "1/2"
+    },
+    {
+      "error": "51/100",
+      "independent_majority": "257499/500000",
+      "shared_majority": "51/100"
+    },
+    {
+      "error": "13/25",
+      "independent_majority": "8281/15625",
+      "shared_majority": "13/25"
+    },
+    {
+      "error": "53/100",
+      "independent_majority": "272473/500000",
+      "shared_majority": "53/100"
+    },
+    {
+      "error": "27/50",
+      "independent_majority": "8748/15625",
+      "shared_majority": "27/50"
+    },
+    {
+      "error": "11/20",
+      "independent_majority": "2299/4000",
+      "shared_majority": "11/20"
+    },
+    {
+      "error": "14/25",
+      "independent_majority": "9212/15625",
+      "shared_majority": "14/25"
+    },
+    {
+      "error": "57/100",
+      "independent_majority": "302157/500000",
+      "shared_majority": "57/100"
+    },
+    {
+      "error": "29/50",
+      "independent_majority": "19343/31250",
+      "shared_majority": "29/50"
+    },
+    {
+      "error": "59/100",
+      "independent_majority": "316771/500000",
+      "shared_majority": "59/100"
+    },
+    {
+      "error": "3/5",
+      "independent_majority": "81/125",
+      "shared_majority": "3/5"
+    },
+    {
+      "error": "61/100",
+      "independent_majority": "331169/500000",
+      "shared_majority": "61/100"
+    },
+    {
+      "error": "31/50",
+      "independent_majority": "10571/15625",
+      "shared_majority": "31/50"
+    },
+    {
+      "error": "63/100",
+      "independent_majority": "345303/500000",
+      "shared_majority": "63/100"
+    },
+    {
+      "error": "16/25",
+      "independent_majority": "11008/15625",
+      "shared_majority": "16/25"
+    },
+    {
+      "error": "13/20",
+      "independent_majority": "2873/4000",
+      "shared_majority": "13/20"
+    },
+    {
+      "error": "33/50",
+      "independent_majority": "22869/31250",
+      "shared_majority": "33/50"
+    },
+    {
+      "error": "67/100",
+      "independent_majority": "372587/500000",
+      "shared_majority": "67/100"
+    },
+    {
+      "error": "17/25",
+      "independent_majority": "11849/15625",
+      "shared_majority": "17/25"
+    },
+    {
+      "error": "69/100",
+      "independent_majority": "385641/500000",
+      "shared_majority": "69/100"
+    },
+    {
+      "error": "7/10",
+      "independent_majority": "98/125",
+      "shared_majority": "7/10"
+    },
+    {
+      "error": "71/100",
+      "independent_majority": "398239/500000",
+      "shared_majority": "71/100"
+    },
+    {
+      "error": "18/25",
+      "independent_majority": "12636/15625",
+      "shared_majority": "18/25"
+    },
+    {
+      "error": "73/100",
+      "independent_majority": "410333/500000",
+      "shared_majority": "73/100"
+    },
+    {
+      "error": "37/50",
+      "independent_majority": "26011/31250",
+      "shared_majority": "37/50"
+    },
+    {
+      "error": "3/4",
+      "independent_majority": "27/32",
+      "shared_majority": "3/4"
+    },
+    {
+      "error": "19/25",
+      "independent_majority": "13357/15625",
+      "shared_majority": "19/25"
+    },
+    {
+      "error": "77/100",
+      "independent_majority": "432817/500000",
+      "shared_majority": "77/100"
+    },
+    {
+      "error": "39/50",
+      "independent_majority": "13689/15625",
+      "shared_majority": "39/50"
+    },
+    {
+      "error": "79/100",
+      "independent_majority": "443111/500000",
+      "shared_majority": "79/100"
+    },
+    {
+      "error": "4/5",
+      "independent_majority": "112/125",
+      "shared_majority": "4/5"
+    },
+    {
+      "error": "81/100",
+      "independent_majority": "452709/500000",
+      "shared_majority": "81/100"
+    },
+    {
+      "error": "41/50",
+      "independent_majority": "28577/31250",
+      "shared_majority": "41/50"
+    },
+    {
+      "error": "83/100",
+      "independent_majority": "461563/500000",
+      "shared_majority": "83/100"
+    },
+    {
+      "error": "21/25",
+      "independent_majority": "14553/15625",
+      "shared_majority": "21/25"
+    },
+    {
+      "error": "17/20",
+      "independent_majority": "3757/4000",
+      "shared_majority": "17/20"
+    },
+    {
+      "error": "43/50",
+      "independent_majority": "14792/15625",
+      "shared_majority": "43/50"
+    },
+    {
+      "error": "87/100",
+      "independent_majority": "476847/500000",
+      "shared_majority": "87/100"
+    },
+    {
+      "error": "22/25",
+      "independent_majority": "15004/15625",
+      "shared_majority": "22/25"
+    },
+    {
+      "error": "89/100",
+      "independent_majority": "483181/500000",
+      "shared_majority": "89/100"
+    },
+    {
+      "error": "9/10",
+      "independent_majority": "243/250",
+      "shared_majority": "9/10"
+    },
+    {
+      "error": "91/100",
+      "independent_majority": "488579/500000",
+      "shared_majority": "91/100"
+    },
+    {
+      "error": "23/25",
+      "independent_majority": "15341/15625",
+      "shared_majority": "23/25"
+    },
+    {
+      "error": "93/100",
+      "independent_majority": "492993/500000",
+      "shared_majority": "93/100"
+    },
+    {
+      "error": "47/50",
+      "independent_majority": "15463/15625",
+      "shared_majority": "47/50"
+    },
+    {
+      "error": "19/20",
+      "independent_majority": "3971/4000",
+      "shared_majority": "19/20"
+    },
+    {
+      "error": "24/25",
+      "independent_majority": "15552/15625",
+      "shared_majority": "24/25"
+    },
+    {
+      "error": "97/100",
+      "independent_majority": "498677/500000",
+      "shared_majority": "97/100"
+    },
+    {
+      "error": "49/50",
+      "independent_majority": "31213/31250",
+      "shared_majority": "49/50"
+    },
+    {
+      "error": "99/100",
+      "independent_majority": "499851/500000",
+      "shared_majority": "99/100"
+    },
+    {
+      "error": "1",
+      "independent_majority": "1",
+      "shared_majority": "1"
+    }
+  ],
+  "tenth_error": {
+    "independent": "7/250",
+    "shared": "1/10",
+    "common_mixture": "313/2500"
+  },
+  "control_models": [
+    {
+      "left_polarity": false,
+      "right_polarity": false,
+      "broadcast_solutions": 1,
+      "vector_solutions": 1
+    },
+    {
+      "left_polarity": false,
+      "right_polarity": true,
+      "broadcast_solutions": 0,
+      "vector_solutions": 1
+    },
+    {
+      "left_polarity": true,
+      "right_polarity": false,
+      "broadcast_solutions": 0,
+      "vector_solutions": 1
+    },
+    {
+      "left_polarity": true,
+      "right_polarity": true,
+      "broadcast_solutions": 1,
+      "vector_solutions": 1
+    }
+  ],
+  "parent_only_local_stop_laws": 0,
+  "contained_site_states": 8,
+  "pilot_transfer_cases": [
+    {
+      "pilot": false,
+      "target": false,
+      "requested": false,
+      "delivered": false
+    },
+    {
+      "pilot": false,
+      "target": false,
+      "requested": true,
+      "delivered": true
+    },
+    {
+      "pilot": false,
+      "target": true,
+      "requested": false,
+      "delivered": true
+    },
+    {
+      "pilot": false,
+      "target": true,
+      "requested": true,
+      "delivered": false
+    },
+    {
+      "pilot": true,
+      "target": false,
+      "requested": false,
+      "delivered": true
+    },
+    {
+      "pilot": true,
+      "target": false,
+      "requested": true,
+      "delivered": false
+    },
+    {
+      "pilot": true,
+      "target": true,
+      "requested": false,
+      "delivered": false
+    },
+    {
+      "pilot": true,
+      "target": true,
+      "requested": true,
+      "delivered": true
+    }
+  ],
+  "capacity_models": [
+    {
+      "capacity": 1,
+      "single_left": true,
+      "single_right": true,
+      "joint": false
+    },
+    {
+      "capacity": 2,
+      "single_left": true,
+      "single_right": true,
+      "joint": true
+    }
+  ]
+}

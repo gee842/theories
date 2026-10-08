@@ -1,0 +1,29 @@
+# Recorded descendants and linked life-cycle outcomes
+
+Read-only analysis of the original [Doulcier et al. 2025 archive](../../../../../../sources/evolutionary-selection/doulcier-2025/README.md). Run `analyze_lineages.py` using Python/openpyxl, followed by `python3 check_lineages.py` (standard library only). Both read the workbooks directly inside the preserved ZIP; no workbook is edited or resaved.
+
+The primary implementation constructs parent relations forward from each preceding culture's recorded replacement donor. The checker independently extracts XLSX XML and follows terminal ancestry backward. It checks 3,600 observed parent links, 174 viable terminal paths across four treatments, 3,808 source-labelled genealogy rows and all 222 rows in the linked assay reading. Missing observations remain missing; 16 post-gap nodes have unresolved parents. Other condition codes remain visible. Inferred genomic states are never inserted into the genealogies.
+
+The June 2020 assay matches each phase-II culture to the same date, strain, size, rack and tube in phase I. All phase-II cultures are exactly the preceding survivors, and no replacements are recorded. Thus 42/72 and 7/72 are directly observed two-phase completions, rather than products of unrelated samples. Nine racks per genotype are retained; deletion ranges describe these data, not biological-population confidence intervals or independent origins of the focal mutation.
+
+Outputs: [genealogy reading](genealogy-reading.csv), [missing rows](missing-reading.json), [linked assay reading](linked-assay-reading.csv), [results](lineage-results.json), [independent numerical verification](verification.json). CSVs are separately labelled reading editions; original workbook bytes remain authoritative.
+
+The separate ancestral assay audit compares joint first-phase outcomes with multiplied marginal frequencies. There are 183 complete observations and one contaminated record missing its smooth-cell count. Both possible completions of that missing binary outcome preserve the discrepancy. This does not invalidate the focal mutation-reversion result, and does not by itself establish a better predictive evolutionary theory.
+
+[LifecycleCorrespondence.lean](../../lean/universal-ethics/LifecycleCorrespondence.lean) has six checked rational results, including the count identity for a joint table, conditional composition and source-bound finite comparisons. [Pinned isolated verification](../../lean/universal-ethics/lifecycle-verification/verification.json) reports the actual compiler and dependencies. The algebra does not prove the biological correspondence, causal mechanism, independence or universality.
+
+[Research integration](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LINEAGE-CONTINUATION-INTEGRATION.md) retains supplied laboratory support and the adequate conventional comparator. Dependencies and scratch downloads remain outside the repository.
+
+## Chronological forecasts
+
+[Forecast specification](FORECAST-PROTOCOL.md) fixes targets, information boundaries, priors and evaluation before scoring. Run `forecast_lineages.py --grid 100`, then the same script with `--grid 50` and `--grid 200`, using Python with NumPy and SciPy. Run `check_forecast.py` afterward. These scripts use the already verified genealogy reading; the checker binds it to the original extraction receipt and original source hashes.
+
+Each run saves 3,840 planned-slot probabilities, conditional next-phase donor counts and full scores. The primary [100-state results](forecast-100-results.json) score 3,424 observed outcomes in cycles 2–10. Constant, changing-stage and inherited-lineage models all use only earlier outcomes. The lineage model credits the conventional colgen beta transition family but uses newly implemented posterior averaging, not the author's hard-MAP fitting procedure. Its supplied priors and independent phase representation are explicit. A generative interpretation of the same calculation is not a fourth independent model.
+
+[Verification](forecast-verification.json) covers exhaustive small-forest inference, quadrature, input isolation, separately recomputed scores/counts and numerical sensitivity. [Research interpretation and failures](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LINEAGE-FORECAST-INTEGRATION.md) preserve the stable-treatment cases where constant-rate prediction is better, and the unresolved advantage over adequately informed conventional theory. No new Lean theorem is claimed.
+
+## Shared-block rivals and dated assay transfer
+
+[Follow-up specification](TRANSFER-PROTOCOL.md) retains both block-root structures and the separate dated assay models. Run `forecast_blocks.py --grid 100` and its 50/200-state sensitivities, `assay_transfer.py`, then `check_transfer.py`, with the same NumPy/SciPy/openpyxl environment. Original forecast files are read unchanged. The [100-state block results](block-100-results.json) compare all five predictors; the [assay results](assay-transfer-results.json) inventory 3,802 raw rows in 139 cohorts and evaluate predictions from earlier assays against June 2020.
+
+[Checks](transfer-verification.json) pass for independent block enumeration, temporal isolation, source-XML extraction and exact count/Brier arithmetic. The [integration](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-TRANSFER-INTEGRATION.md) retains aggregate lineage gains, phase-specific block/constant-model advantages, a reversal of the first-stage genotype contrast, and missing February phase-II follow-up. It distinguishes the linked 2018 original survivors from replacement destinations. The next mechanism concerns first-stage mat formation/endurance and its conditions; the later-stage intervention does not supply a complete transferable life-cycle law.

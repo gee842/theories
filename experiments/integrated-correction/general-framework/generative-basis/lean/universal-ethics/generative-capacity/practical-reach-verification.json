@@ -1,0 +1,218 @@
+{
+  "status": "passed",
+  "utc": "20261007T225003.193303Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "practical-reach-checks/20261007T225003.193303Z",
+  "source_sha256": {
+    "PracticalReach": "1b13fcc34fed86de83e6f09dae82b321422195f31fb97d37024d7143183d0e7b"
+  },
+  "checker_sha256": {
+    "check_practical_reach.py": "32a1ac24fa81e681500c7e61d2f45824f84650d7d50e29df01e8a84509d87c3f",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Exact preservation of all outcome-goal guarantees under response refinement; finite heterogeneous revisions, projections and counterexamples separating possible outcomes, controllable goals, joint realization and goals about possibility itself. Structural correspondence only, not first ethical warrant or universal practical authority.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "modules": [
+    {
+      "module": "PracticalReach",
+      "theorems": 24,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "PracticalReach.Live"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalReach.Guarantees"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalReach.CanEnsure"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalReach.Refines"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalReach.Possible"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.guarantee_mono"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.cannot_ensure_false"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.ensure_true_iff_live_response"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.refinement_preserves_goals"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.refinement_iff_all_goal_preservation"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.refinement_refl"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.refinement_trans"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.failed_refinement_has_lost_goal"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.finite_revisions_preserve"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalReach.Project"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.projected_goal_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.no_strict_improvement_for_every_goal"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.common_goal_prevents_everywhere_strict"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalReach.fixed"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalReach.uncontrolled"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalReach.selectable"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalReach.absent"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.fixed_ensures_false"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.uncontrolled_cannot_ensure_false"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.possible_enlargement_without_control"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.selectable_retains_fixed"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.guaranteed_control_can_remove_possibility"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.selectable_ensures_each"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.fixed_cannot_ensure_true"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.retained_control_and_strict_new_goal"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalReach.ClosedToTrue"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.outcome_goal_preservation_can_defeat_closure_goal"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.separate_guarantees_not_joint"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.empty_response_does_not_guarantee"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.projection_can_hide_loss"
+        }
+      ],
+      "axiom_dependencies": {
+        "PracticalReach.Live": [],
+        "PracticalReach.Guarantees": [],
+        "PracticalReach.CanEnsure": [],
+        "PracticalReach.Refines": [],
+        "PracticalReach.Possible": [],
+        "PracticalReach.guarantee_mono": [],
+        "PracticalReach.cannot_ensure_false": [],
+        "PracticalReach.ensure_true_iff_live_response": [],
+        "PracticalReach.refinement_preserves_goals": [],
+        "PracticalReach.refinement_iff_all_goal_preservation": [],
+        "PracticalReach.refinement_refl": [],
+        "PracticalReach.refinement_trans": [],
+        "PracticalReach.failed_refinement_has_lost_goal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PracticalReach.finite_revisions_preserve": [],
+        "PracticalReach.Project": [],
+        "PracticalReach.projected_goal_iff": [],
+        "PracticalReach.no_strict_improvement_for_every_goal": [],
+        "PracticalReach.common_goal_prevents_everywhere_strict": [],
+        "PracticalReach.fixed": [],
+        "PracticalReach.uncontrolled": [],
+        "PracticalReach.selectable": [],
+        "PracticalReach.absent": [],
+        "PracticalReach.fixed_ensures_false": [],
+        "PracticalReach.uncontrolled_cannot_ensure_false": [],
+        "PracticalReach.possible_enlargement_without_control": [],
+        "PracticalReach.selectable_retains_fixed": [],
+        "PracticalReach.guaranteed_control_can_remove_possibility": [],
+        "PracticalReach.selectable_ensures_each": [],
+        "PracticalReach.fixed_cannot_ensure_true": [],
+        "PracticalReach.retained_control_and_strict_new_goal": [],
+        "PracticalReach.ClosedToTrue": [],
+        "PracticalReach.outcome_goal_preservation_can_defeat_closure_goal": [],
+        "PracticalReach.separate_guarantees_not_joint": [],
+        "PracticalReach.empty_response_does_not_guarantee": [],
+        "PracticalReach.projection_can_hide_loss": []
+      },
+      "kernel_checked": true
+    }
+  ],
+  "artifact_sha256": {
+    "PracticalReach.lean": "1b13fcc34fed86de83e6f09dae82b321422195f31fb97d37024d7143183d0e7b",
+    "PracticalReach.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PracticalReachAxiomAudit.lean": "f028c3fd805d1ad423efd6322c0979e1370d65eeadfab5340788b99a0f999d4d",
+    "PracticalReachAxiomAudit.log": "62dc90f3340f7c84dd61823c3343c2f850e0aa2162f68a3a66b8cdd35bcdb69b",
+    "PracticalReachSignatures.lean": "e1cab9c5b920c2fdd7f4a9026726574b25c9391b4f1eb02be328b1e6d2589047",
+    "PracticalReachSignatures.log": "bee9780bd2dbc0edff6906cbe83104d81211abdcb216a8abcf8a5e9657fe7ca6",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_practical_reach.py": "32a1ac24fa81e681500c7e61d2f45824f84650d7d50e29df01e8a84509d87c3f",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

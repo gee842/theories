@@ -1,0 +1,15 @@
+{
+  "archive_path": "Yuya_Karita/AxioZoom/20231123-WS-KB-dilution6-1x/from-t5h-01.czi",
+  "file_bytes": 13272869952,
+  "ranges": [],
+  "reused": [
+    {
+      "path": "sources/evolutionary-selection/karita-2026/microscopy-metadata/collapse-20231123/000000646496-00004096-subblock-prefix.bin",
+      "sha256": "b0df7c3916b4636204ab0888a6755223d2ba4c17074ee9a9a8130089cae2a866"
+    },
+    {
+      "path": "sources/evolutionary-selection/karita-2026/microscopy-metadata/collapse-20231123/000004842014-04194304-pixel-data.bin",
+      "sha256": "0fa3e6d4b036eae6ee36b399e6533e0dc532374b99fa57171f8d71f008914cdc"
+    }
+  ]
+}

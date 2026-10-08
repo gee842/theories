@@ -1,0 +1,395 @@
+{
+  "checked_at_utc": "2026-10-08T12:06:05.300248+00:00",
+  "status": "passed",
+  "fresh_local_source_build": true,
+  "inputs_unchanged": true,
+  "toolchain": "leanprover/lean4:v4.30.0-rc2",
+  "lean_version": "Lean (version 4.30.0-rc2, arm64-apple-darwin24.6.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc, Release)",
+  "compiler_path": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "checker_sha256": "8fbd347bc7f886693c284f3ae25bff7191c1b73d6f7e0b1c0977704e346fdf9f",
+  "toolchain_sha256": "ce4c4e3d87434b9663f46de25ce34b48a0cf0d392e0a320a0787b4674a2d7b61",
+  "mathlib_revision": "ea11ccc0c5c7c4c562742e918fe2e0b2814a58aa",
+  "dependency_project": "/Users/ren/repos/\u751f\u751f\u4e0d\u606f",
+  "manifest_sha256": "740eef1aae725322b99872aba59cc5c902378b992bfe9122737a454f3076321b",
+  "upstream_libraries": "Existing pinned cache used; upstream Mathlib was not rebuilt.",
+  "direct_import_fingerprints": [
+    {
+      "path": "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/lib/lean/Init.olean",
+      "sha256": "12e94e3624b943d20ad898491957051ae9ba22ccbed9e6f92c35fbc711849246"
+    },
+    {
+      "path": "SeededContinuation.olean",
+      "sha256": "2a9aafb7f92a654180d12f236b0fab6befa4da474195d35209234daea7721b67"
+    }
+  ],
+  "modules": [
+    {
+      "module": "ContinuationAdequacy",
+      "exit_code": 0,
+      "passed": true,
+      "source_sha256": "674a3a23358ae3d665345c749d3fc5415645e5e7fcc68cb95c173a397ff80266",
+      "output_sha256": "f9d80b6bbae1493f8962a7362b648db04b4c6a16158d73a34d51e4936cc07ede",
+      "audits": [
+        {
+          "name": "ContinuationAdequacy.actual_in_post",
+          "axioms": []
+        },
+        {
+          "name": "ContinuationAdequacy.post_mono",
+          "axioms": []
+        },
+        {
+          "name": "ContinuationAdequacy.viable_mono",
+          "axioms": []
+        },
+        {
+          "name": "ContinuationAdequacy.viable_now",
+          "axioms": []
+        },
+        {
+          "name": "ContinuationAdequacy.viable_shorter",
+          "axioms": []
+        },
+        {
+          "name": "ContinuationAdequacy.viable_empty",
+          "axioms": []
+        },
+        {
+          "name": "ContinuationAdequacy.viable_iff_plan",
+          "axioms": [
+            "Classical.choice",
+            "propext"
+          ]
+        },
+        {
+          "name": "ContinuationAdequacy.viable_successor",
+          "axioms": []
+        },
+        {
+          "name": "ContinuationAdequacy.maintained_class",
+          "axioms": []
+        },
+        {
+          "name": "ContinuationAdequacy.shared_first_step",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ContinuationAdequacy.blind_second_step_fails",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ContinuationAdequacy.sensing_repairs_two_steps",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ContinuationAdequacy.settling_repairs_blind_two_steps",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "ContinuationAdequacy.observation_refinement",
+          "axioms": []
+        }
+      ],
+      "new_in_this_adaptive_extension": false
+    },
+    {
+      "module": "JointContinuation",
+      "exit_code": 0,
+      "passed": true,
+      "source_sha256": "e3ef0f5a62365fb29dc2adbd36b3552b17ac85a010905013daefe8ffb3671a30",
+      "output_sha256": "86a10bbfa97a3fdbd9dc84e8e5299b9e6a71f4f83a9ddee4756e27d22a5a9259",
+      "audits": [
+        {
+          "name": "JointContinuation.joint_plan_composition",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "JointContinuation.compatibility_necessary",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "JointContinuation.incompatible_blocks_joint",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "JointContinuation.actual_joint_post_projects",
+          "axioms": []
+        },
+        {
+          "name": "JointContinuation.spend_conserves",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "JointContinuation.successive_spends",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "JointContinuation.separate_checks_miss_total",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "JointContinuation.all_pairs_fit_triple_fails",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "JointContinuation.each_local_twice",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "JointContinuation.joint_first_step",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "JointContinuation.joint_second_step_fails",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "JointContinuation.sufficient_stock_repairs",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "JointContinuation.shared_effect_breaks_isolated_projection",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "JointContinuation.serialization_without_renewal_fails",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "JointContinuation.reserved_demands_fit",
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "name": "JointContinuation.residual_reservations_conserve",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "new_in_this_adaptive_extension": false
+    },
+    {
+      "module": "SeededContinuation",
+      "exit_code": 0,
+      "passed": true,
+      "source_sha256": "05ae4037797c77db3edb6061c130b631307153b53a18202d12926bc40d996c31",
+      "output_sha256": "88663823620c9c145ab3d831a132b3d58844409ee12bbd644664083cb191469b",
+      "audits": [
+        {
+          "name": "SeededContinuation.mutual_history",
+          "axioms": []
+        },
+        {
+          "name": "SeededContinuation.compatible_from_seed",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "SeededContinuation.seeded_joint_plan",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "SeededContinuation.preservation_without_availability",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "SeededContinuation.reciprocal_eventual_promises_can_be_empty",
+          "axioms": []
+        },
+        {
+          "name": "SeededContinuation.tick_supports_mutually",
+          "axioms": []
+        },
+        {
+          "name": "SeededContinuation.tick_active_iff",
+          "axioms": []
+        },
+        {
+          "name": "SeededContinuation.active_run_iff",
+          "axioms": []
+        },
+        {
+          "name": "SeededContinuation.empty_never_starts",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "SeededContinuation.partial_seed_not_joint",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "SeededContinuation.stored_seed_starts_and_maintains",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "SeededContinuation.ignition_requires_actual_reserve",
+          "axioms": []
+        },
+        {
+          "name": "SeededContinuation.absent_reserve_blocks_ignition",
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "new_in_this_adaptive_extension": false
+    },
+    {
+      "module": "EvidenceThroughChange",
+      "exit_code": 0,
+      "passed": true,
+      "source_sha256": "9b7b1ca575f4cd4d14143d98cc34936dc172b28806b4251e298a4e352ea47a28",
+      "output_sha256": "76e54db712f9510344352d12b2fd0bc3011aebcaace4600a369ac1141924e51d",
+      "audits": [
+        {
+          "name": "EvidenceThroughChange.actual_remains_covered",
+          "axioms": []
+        },
+        {
+          "name": "EvidenceThroughChange.certificate_iff_transport",
+          "axioms": []
+        },
+        {
+          "name": "EvidenceThroughChange.transport_composes",
+          "axioms": []
+        },
+        {
+          "name": "EvidenceThroughChange.smaller_envelope_retains_certificate",
+          "axioms": []
+        },
+        {
+          "name": "EvidenceThroughChange.stable_certificate",
+          "axioms": []
+        },
+        {
+          "name": "EvidenceThroughChange.delayed_seeded_plan",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "EvidenceThroughChange.truthful_read_can_expire",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "EvidenceThroughChange.no_exact_record_only_decision",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "EvidenceThroughChange.stale_evidence_not_certificate",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "name": "EvidenceThroughChange.reserve_establishes_protection",
+          "axioms": []
+        },
+        {
+          "name": "EvidenceThroughChange.admitted_change_preserves_protection",
+          "axioms": []
+        },
+        {
+          "name": "EvidenceThroughChange.reservation_survives_finite_changes",
+          "axioms": []
+        },
+        {
+          "name": "EvidenceThroughChange.actual_reservation_exists",
+          "axioms": []
+        },
+        {
+          "name": "EvidenceThroughChange.duplicate_reservation_blocked",
+          "axioms": []
+        },
+        {
+          "name": "EvidenceThroughChange.unmediated_loss_breaks_protection",
+          "axioms": [
+            "propext"
+          ]
+        }
+      ],
+      "new_in_this_adaptive_extension": true
+    }
+  ],
+  "new_audits": 15,
+  "replayed_inherited_audits": 43,
+  "new_axioms": [
+    "propext"
+  ],
+  "scope": "Evidence transported through admitted changes supplies delayed plan domains and joint seed conditions; stale read failure and protected finite-history reservation.",
+  "limits": "Actual initial candidate and change-envelope coverage, local plan domains and seeded composition premises remain supplied; reservation is atomic and fully mediated; no universal race freedom, normative permission or empirical deployment."
+}

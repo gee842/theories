@@ -1,0 +1,426 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T10:47:16.332459+00:00",
+  "scope": "Owned source versions, retained Lean binding, links, review disposition and paired M20. No new compiler run, empirical validation, ethical-premise certification or full-table certification.",
+  "checker_sha256": "79edeeba0c29b2e0a85852aedf966d8b546c20913c40c798d1302ac7393bc910",
+  "edits_sha256": "50d1bb1b8349e36b13307fa84633dd7b2f1426da2a5ece36332b7490edcd8da5",
+  "owned_reviewed_sources": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-PROTOCOL.md": "09e22de813f259ed8395eafbf40b54677d8de1f094d6a4b0362cd096dbcd69ed",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md": "ce8296c222553f411f532aa9de8b5581034f88d9377392a547707e41cfdfef1b",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-PROOF.md": "5729ddd785443a15fd52474c8b5347afaedc2598f77e614e8eaaac61bc6725e0",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-REVIEW.md": "c097113044e67990490f49438e5be5ef93464ae2be3bb669bd9e201a85e1bdd7",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-SOURCES.md": "2a7eee8ddab48eeabf4b18c60fd489453224be3d802df958c13ce6365297c8e6",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md": "2c2b746fc7436a91a0e6be4bb645d6fe76e5be6b12e755f0e094289b77862198",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/crossed-claims-verification.json": "72eb6e26cb03ed1df17cb432ed40054f2a40656138fd710f937600a5700edf99"
+  },
+  "local_links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-PROTOCOL.md",
+      "to": "UNEQUAL-BASIC-LOSSES-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-PROTOCOL.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-PROTOCOL.md",
+      "to": "JOINT-RISK-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-PROTOCOL.md",
+      "to": "AGGREGATION-CONTEXT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-PROTOCOL.md",
+      "to": "CROSSED-CLAIMS-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-PROTOCOL.md",
+      "to": "CROSSED-CLAIMS-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-PROTOCOL.md",
+      "to": "CROSSED-CLAIMS-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
+      "to": "CROSSED-CLAIMS-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
+      "to": "CROSSED-CLAIMS-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
+      "to": "CROSSED-CLAIMS-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
+      "to": "BASIC-CONFLICT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
+      "to": "BASIC-LOSS-SEVERITY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
+      "to": "UNEQUAL-BASIC-LOSSES-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
+      "to": "AGGREGATION-CONTEXT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
+      "to": "AGGREGATION-CONTEXT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
+      "to": "AGGREGATION-CONTEXT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
+      "to": "CROSSED-CLAIMS-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-PROOF.md",
+      "to": "CROSSED-CLAIMS-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-PROOF.md",
+      "to": "CROSSED-CLAIMS-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-PROOF.md",
+      "to": "CROSSED-CLAIMS-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-PROOF.md",
+      "to": "AGGREGATION-CONTEXT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-PROOF.md",
+      "to": "UNEQUAL-BASIC-LOSSES-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-PROOF.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CrossedClaims.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-PROOF.md",
+      "to": "CROSSED-CLAIMS-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-PROOF.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_crossed_claims.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-PROOF.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/crossed-claims-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-PROOF.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/crossed-claims-checks/20261008T103855.124036Z/verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-REVIEW.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-REVIEW.md",
+      "to": "UNEQUAL-BASIC-LOSSES-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-REVIEW.md",
+      "to": "UNEQUAL-BASIC-LOSSES-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-REVIEW.md",
+      "to": "AGGREGATION-CONTEXT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-REVIEW.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CHOICE-AND-GENERATIVE-CONTEXT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-REVIEW.md",
+      "to": "JOINT-RISK-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-REVIEW.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CrossedClaims.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-REVIEW.md",
+      "to": "CROSSED-CLAIMS-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-REVIEW.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/crossed-claims-checks/20261008T103855.124036Z/verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-REVIEW.md",
+      "to": "CROSSED-CLAIMS-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-REVIEW.md",
+      "to": "CROSSED-CLAIMS-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-SOURCES.md",
+      "to": "CROSSED-CLAIMS-PROTOCOL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-SOURCES.md",
+      "to": "CROSSED-CLAIMS-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-SOURCES.md",
+      "to": "AGGREGATION-CONTEXT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-SOURCES.md",
+      "to": "CROSSED-CLAIMS-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-SOURCES.md",
+      "to": "AGGREGATION-CONTEXT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-SOURCES.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-SOURCES.md",
+      "to": "UNEQUAL-BASIC-LOSSES-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-SOURCES.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-SOURCES.md",
+      "to": "JOINT-RISK-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md",
+      "to": "CROSSED-CLAIMS-PROTOCOL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md",
+      "to": "CROSSED-CLAIMS-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md",
+      "to": "CROSSED-CLAIMS-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md",
+      "to": "CROSSED-CLAIMS-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md",
+      "to": "CROSSED-CLAIMS-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md",
+      "to": "UNEQUAL-BASIC-LOSSES-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md",
+      "to": "AGGREGATION-CONTEXT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md",
+      "to": "CROSSED-CLAIMS-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md",
+      "to": "CROSSED-CLAIMS-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md",
+      "to": "CROSSED-CLAIMS-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md#crossed-claims-and-new-opportunities"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md",
+      "to": "CROSSED-CLAIMS-CHECKS.json"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "to": "CHOICE-AND-GENERATIVE-CONTEXT.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-PROOF.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-REVIEW.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-SOURCES.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "to": "#crossed-claims-and-new-opportunities"
+    },
+    {
+      "from": "RESEARCH.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "to": "unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md#crossed-claims-and-new-opportunities"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "CROSSED-CLAIMS-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "BASIC-CONFLICT-JUDGMENT.md#crossed-claims-and-new-opportunities"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "to": "BASIC-CONFLICT-JUDGMENT.md#crossed-claims-and-new-opportunities"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CHOICE-AND-GENERATIVE-CONTEXT.md",
+      "to": "BASIC-CONFLICT-JUDGMENT.md#crossed-claims-and-new-opportunities"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "to": "../unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md#crossed-claims-and-new-opportunities"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "to": "CROSSED-CLAIMS-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "to": "CROSSED-CLAIMS-INDEX-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "to": "CROSSED-CLAIMS-CHECKS.json"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "to": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-SOURCES.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "to": "CrossedClaims.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "to": "crossed-claims-verification.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "to": "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-PROOF.md"
+    }
+  ],
+  "navigation_passages": 12,
+  "proof_receipt": {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/crossed-claims-verification.json",
+    "sha256": "72eb6e26cb03ed1df17cb432ed40054f2a40656138fd710f937600a5700edf99",
+    "retained_run": "crossed-claims-checks/20261008T103855.124036Z",
+    "retained_artifact_count": 17,
+    "source_sha256": {
+      "PracticalJudgment": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+      "CrossedClaims": "ce23a0d674433152ae2e80455f932283b5b96bafb1061f3197c75b17bfb97f28"
+    },
+    "checker_sha256": {
+      "check_crossed_claims.py": "c465579f1c5edd10d8b141d014f4ba3e89be6ca5556075823739c0c2c13a3166",
+      "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+    },
+    "new_theorems": 8,
+    "new_declaration_audits": 23,
+    "inherited_theorems": 30,
+    "inherited_declaration_audits": 46,
+    "separately_checked_examples": [
+      {
+        "claim": "transfer of (1,1,0) protects P,Q,R on 1,2,1 tickets",
+        "kernel_checked": true,
+        "counted_as_new_theorem": false
+      }
+    ]
+  },
+  "unchanged_lean_not_rerun": true,
+  "new_empirical_measurements": 0,
+  "independent_review": {
+    "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-REVIEW.md",
+    "sha256": "c097113044e67990490f49438e5be5ef93464ae2be3bb669bd9e201a85e1bdd7",
+    "disposition": "accepted as a defended additional normative candidate and checked conditional construction",
+    "formal_review_scope": "independent source and receipt audit, not another compiler run"
+  },
+  "paired_row": "M20",
+  "other_entries_preserved_at_mutation": true,
+  "other_rendered_lines_preserved_at_mutation": true,
+  "unowned_review_hashes_preserved_at_mutation": true,
+  "scoped_render": "Canonical renderer; only M20 replaced and other lines retained.",
+  "global_check": {
+    "exit_code": 2,
+    "stdout": "{\n  \"status\": \"needs-review\",\n  \"errors\": [\n    \"Linked source versions changed; reread affected entries before rendering.\"\n  ],\n  \"changes\": {\n    \"modified_sources\": [\n      \"RESEARCH.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md\",\n      \"sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md\",\n      \"theories/shengsheng-buxi-generative-existence/README.md\",\n      \"theories/shengsheng-buxi-generative-existence/results/ROADMAP.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md\",\n      \"theories/meta-attractor/GENERATIVE-REGIMES.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-INTEGRATION.md\",\n      \"experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-LOGIC-INTEGRATION.md\",\n      \"sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CHOICE-AND-GENERATIVE-CONTEXT.md\"\n    ],\n    \"missing_sources\": [],\n    \"new_pages\": [\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-LOGIC-INTEGRATION.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CALIBRATED-UPDATER-PROTOCOL.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-ADMISSION.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-PROTOCOL.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-SOURCES.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md\"\n    ],\n    \"removed_pages\": []\n  }\n}\n",
+    "stderr": ""
+  },
+  "pending_global_changes": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md",
+      "theories/meta-attractor/GENERATIVE-REGIMES.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-INTEGRATION.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-LOGIC-INTEGRATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CHOICE-AND-GENERATIVE-CONTEXT.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-LOGIC-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CALIBRATED-UPDATER-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-ADMISSION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-SOURCES.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md"
+    ],
+    "removed_pages": []
+  }
+}

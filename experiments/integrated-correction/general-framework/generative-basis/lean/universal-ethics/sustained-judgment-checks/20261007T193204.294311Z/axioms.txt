@@ -1,0 +1,158 @@
+'Generative.Process' does not depend on any axioms
+'Generative.Enabled' does not depend on any axioms
+'Generative.Trace' does not depend on any axioms
+'Generative.trace_nil_iff' does not depend on any axioms
+'Generative.trace_cons_iff' does not depend on any axioms
+'Generative.trace_singleton_iff' does not depend on any axioms
+'Generative.trace_append_iff' does not depend on any axioms
+'Generative.enabled_iff_singleton_trace' does not depend on any axioms
+'Generative.enabled_difference_implies_state_difference' does not depend on any axioms
+'Generative.Feasible' does not depend on any axioms
+'Generative.feasible_append_iff' does not depend on any axioms
+'Generative.feasible_prefix' does not depend on any axioms
+'Generative.productProcess' does not depend on any axioms
+'Generative.enabled_product_iff' does not depend on any axioms
+'Generative.trace_product_left' does not depend on any axioms
+'Generative.trace_product_right' does not depend on any axioms
+'Generative.trace_product_mk' does not depend on any axioms
+'Generative.trace_product_iff' does not depend on any axioms
+'Generative.feasible_product_iff' does not depend on any axioms
+'Generative.trace_map' does not depend on any axioms
+'Generative.trace_lift' does not depend on any axioms
+'Generative.projected_trace_iff' does not depend on any axioms
+'Generative.projection_exact_iff' does not depend on any axioms
+'Generative.local_exact_iff_trace_exact' does not depend on any axioms
+'Generative.enabled_projection_iff' does not depend on any axioms
+'Generative.feasible_projection_iff' does not depend on any axioms
+'Generative.feasible_difference_implies_projection_difference' does not depend on any axioms
+'Generative.trace_faithful_iff' does not depend on any axioms
+'Generative.LivingOrganization.Recipe' does not depend on any axioms
+'Generative.LivingOrganization.Inventory' does not depend on any axioms
+'Generative.LivingOrganization.process' does not depend on any axioms
+'Generative.LivingOrganization.Touches' does not depend on any axioms
+'Generative.LivingOrganization.touchesDecidable' does not depend on any axioms
+'Generative.LivingOrganization.Present' does not depend on any axioms
+'Generative.LivingOrganization.Closed' does not depend on any axioms
+'Generative.LivingOrganization.Entry' does not depend on any axioms
+'Generative.LivingOrganization.required_pool_is_present' depends on axioms: [propext, Quot.sound]
+'Generative.LivingOrganization.closed_step_preserves_absence' depends on axioms: [propext, Quot.sound]
+'Generative.LivingOrganization.step_pool_origin' depends on axioms: [propext, Quot.sound]
+'Generative.LivingOrganization.EntryOccurs' does not depend on any axioms
+'Generative.LivingOrganization.entry_prepend' depends on axioms: [propext]
+'Generative.LivingOrganization.trace_pool_origin' depends on axioms: [propext, Quot.sound]
+'Generative.LivingOrganization.empty_pool_preserved' depends on axioms: [propext, Quot.sound]
+'Generative.LivingOrganization.actual_operation_origin' depends on axioms: [propext, Quot.sound]
+'Generative.LivingOrganization.operation_after_empty_state_requires_entry' depends on axioms: [propext, Quot.sound]
+'Generative.LivingOrganization.no_actual_operation_from_closed_empty_pool' depends on axioms: [propext, Quot.sound]
+'Generative.LivingOrganization.Component' does not depend on any axioms
+'Generative.LivingOrganization.Operation' does not depend on any axioms
+'Generative.LivingOrganization.exampleRecipes' does not depend on any axioms
+'Generative.LivingOrganization.organizingPool' does not depend on any axioms
+'Generative.LivingOrganization.organizingPoolDecidable' does not depend on any axioms
+'Generative.LivingOrganization.retainedRoutes' does not depend on any axioms
+'Generative.LivingOrganization.allRoutes' does not depend on any axioms
+'Generative.LivingOrganization.stocked' does not depend on any axioms
+'Generative.LivingOrganization.protectedStart' does not depend on any axioms
+'Generative.LivingOrganization.activeStart' does not depend on any axioms
+'Generative.LivingOrganization.partsStart' does not depend on any axioms
+'Generative.LivingOrganization.activated' does not depend on any axioms
+'Generative.LivingOrganization.protectedProduct' does not depend on any axioms
+'Generative.LivingOrganization.assembled' does not depend on any axioms
+'Generative.LivingOrganization.assembledProduct' does not depend on any axioms
+'Generative.LivingOrganization.material' does not depend on any axioms
+'Generative.LivingOrganization.example_step_preserves_material' depends on axioms: [propext, Quot.sound]
+'Generative.LivingOrganization.example_trace_preserves_material' depends on axioms: [propext, Quot.sound]
+'Generative.LivingOrganization.retained_recipes_are_closed' depends on axioms: [propext, Quot.sound]
+'Generative.LivingOrganization.assembly_is_pool_entry' depends on axioms: [propext, Quot.sound]
+'Generative.LivingOrganization.parts_have_no_organizing_pool' depends on axioms: [propext]
+'Generative.LivingOrganization.matched_material_and_support' does not depend on any axioms
+'Generative.LivingOrganization.active_form_can_immediately_produce' does not depend on any axioms
+'Generative.LivingOrganization.dissociated_parts_do_not_enable_production' depends on axioms: [propext]
+'Generative.LivingOrganization.protected_form_does_not_immediately_produce' depends on axioms: [propext]
+'Generative.LivingOrganization.retained_activation_and_production' depends on axioms: [propext]
+'Generative.LivingOrganization.assembly_and_production' does not depend on any axioms
+'Generative.LivingOrganization.production_from_parts_requires_entry' depends on axioms: [propext, Quot.sound]
+'Generative.LivingOrganization.retained_routes_do_not_bootstrap_from_parts' depends on axioms: [propext, Quot.sound]
+'PracticalJudgment.Included' does not depend on any axioms
+'PracticalJudgment.StrictIncluded' does not depend on any axioms
+'PracticalJudgment.included_trans' does not depend on any axioms
+'PracticalJudgment.strict_included_irrefl' does not depend on any axioms
+'PracticalJudgment.strict_included_trans' does not depend on any axioms
+'PracticalJudgment.Better' does not depend on any axioms
+'PracticalJudgment.better_irrefl' does not depend on any axioms
+'PracticalJudgment.better_trans' does not depend on any axioms
+'PracticalJudgment.protection_anchor' does not depend on any axioms
+'PracticalJudgment.no_protection_trade_by_count' does not depend on any axioms
+'PracticalJudgment.Frontier' does not depend on any axioms
+'PracticalJudgment.dominated_excluded' does not depend on any axioms
+'PracticalJudgment.finite_frontier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PracticalJudgment.Required' does not depend on any axioms
+'PracticalJudgment.required_performed' does not depend on any axioms
+'PracticalJudgment.alternative_defeats_specific_duty' does not depend on any axioms
+'PracticalJudgment.impossible_menu_no_duty' does not depend on any axioms
+'PracticalJudgment.necessary_means_required' does not depend on any axioms
+'PracticalJudgment.Assigned' does not depend on any axioms
+'PracticalJudgment.unique_responder_required' does not depend on any axioms
+'PracticalJudgment.assignment_respects_capacity' does not depend on any axioms
+'PracticalJudgment.Covered' does not depend on any axioms
+'PracticalJudgment.transfer_requires_actual_successor' does not depend on any axioms
+'PracticalJudgment.no_demand_gap_transfer' depends on axioms: [propext, Quot.sound]
+'PracticalJudgment.uncovered_demand_is_failure' does not depend on any axioms
+'PracticalJudgment.Settled' does not depend on any axioms
+'PracticalJudgment.Residual' does not depend on any axioms
+'PracticalJudgment.settlement_removes_residual' does not depend on any axioms
+'PracticalJudgment.unfulfilled_unreleased_remains' does not depend on any axioms
+'PracticalJudgment.Robust' does not depend on any axioms
+'PracticalJudgment.robust_at_actual' does not depend on any axioms
+'PracticalJudgment.robust_under_refinement' does not depend on any axioms
+'PracticalJudgment.required_under_faithful_redescription' does not depend on any axioms
+'PracticalJudgment.withinCeiling' does not depend on any axioms
+'PracticalJudgment.optionalFormation' does not depend on any axioms
+'PracticalJudgment.supplied_ceiling_bounds_optional_gain' depends on axioms: [propext]
+'PracticalJudgment.independent_choices_not_joint_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PracticalJudgment.basis' does not depend on any axioms
+'PracticalJudgment.event' does not depend on any axioms
+'PracticalJudgment.mixed_repair_anchor' does not depend on any axioms
+'PracticalJudgment.repair_retains_real_loss' does not depend on any axioms
+'PracticalJudgment.protectedOne' does not depend on any axioms
+'PracticalJudgment.noGain' does not depend on any axioms
+'PracticalJudgment.competing_claims_incomparable' depends on axioms: [propext]
+'PracticalJudgment.collective_duty_without_individual_duty' depends on axioms: [propext]
+'PracticalJudgment.uncertain_worlds_need_common_plan' does not depend on any axioms
+'SustainedJudgment.stock' depends on axioms: [propext]
+'SustainedJudgment.production_step' depends on axioms: [propext, Quot.sound]
+'SustainedJudgment.sustained_production' depends on axioms: [propext, Quot.sound]
+'SustainedJudgment.production_account' depends on axioms: [propext, Quot.sound]
+'SustainedJudgment.positive_production_requires_competence' depends on axioms: [propext, Quot.sound]
+'SustainedJudgment.Sustains' does not depend on any axioms
+'SustainedJudgment.exact_finite_requirements' depends on axioms: [propext, Quot.sound]
+'SustainedJudgment.insufficient_support_fails' depends on axioms: [propext, Quot.sound]
+'SustainedJudgment.frontier_sustains' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SustainedJudgment.collective_sustaining_requirement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SustainedJudgment.collective_material_and_competence' depends on axioms: [propext, Quot.sound]
+'SustainedJudgment.collective_entry_after_loss' depends on axioms: [propext, Quot.sound]
+'SustainedJudgment.Joint' does not depend on any axioms
+'SustainedJudgment.joint_plan_has_actual_history' depends on axioms: [propext, Quot.sound]
+'SustainedJudgment.joint_feasible_iff' depends on axioms: [propext, Quot.sound]
+'SustainedJudgment.joint_shortfall_no_unlimited_duty' depends on axioms: [propext, Quot.sound]
+'SustainedJudgment.alternating_contributors_preserve_choice' depends on axioms: [propext, Quot.sound]
+'SustainedJudgment.sole_available_contribution_required' depends on axioms: [propext, Quot.sound]
+'SustainedJudgment.isolated_success_not_joint_success' depends on axioms: [propext, Quot.sound]
+'SustainedJudgment.Scheduled' does not depend on any axioms
+'SustainedJudgment.schedule_exact' depends on axioms: [propext, Quot.sound]
+'SustainedJudgment.scheduled_actual_history' depends on axioms: [propext, Quot.sound]
+'SustainedJudgment.partial_competence_misses_deadline' depends on axioms: [propext, Quot.sound]
+'SustainedJudgment.zero_demand_does_not_require_competence' depends on axioms: [propext, Quot.sound]
+'SustainedJudgment.collective_schedule_constraints' depends on axioms: [propext, Quot.sound]
+'SustainedJudgment.timedProcess' does not depend on any axioms
+'SustainedJudgment.scheduled_timed_history' depends on axioms: [propext, Quot.sound]
+'SustainedJudgment.judgment_to_sustained_history' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SustainedJudgment.Choice' does not depend on any axioms
+'SustainedJudgment.Claim' does not depend on any axioms
+'SustainedJudgment.contribution' does not depend on any axioms
+'SustainedJudgment.protects' does not depend on any axioms
+'SustainedJudgment.enrichment' does not depend on any axioms
+'SustainedJudgment.support_improves_protection' depends on axioms: [propext, Quot.sound]
+'SustainedJudgment.support_frontier' depends on axioms: [propext, Quot.sound]
+'SustainedJudgment.actual_collective_choice_without_fixed_contributor' depends on axioms: [propext, Quot.sound]
+'SustainedJudgment.optional_loss_remains' depends on axioms: [propext]

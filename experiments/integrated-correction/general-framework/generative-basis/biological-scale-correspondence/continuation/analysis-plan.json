@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-08",
+  "status": "Exploratory plan fixed before executing the new fits; published conclusions and coefficient summaries were already inspected. This is not preregistration.",
+  "target": "Predict classifier-derived exploitation probability in Haley et al. mixed-density encounters; separately quantify Anderson and McMullan avoidance-access versus later pathogen fluorescence.",
+  "foraging_source": "eLife 103191 Figure 4 source data 3, version 1",
+  "published_transfer_test": "Recompute the two published predictions from frozen single-density-training coefficients. Evaluate on mixed-density data without refitting these coefficients.",
+  "new_prediction_test": "Five folds by worm identifier, keeping every encounter and all simulation replicates for one worm together. Fixed seed 20261008. Fit on four folds and predict the fifth. Published outcome classifiers are held fixed; their fitting was not independently held out here.",
+  "models": {
+    "constant": ["intercept"],
+    "current_density": ["intercept", "densityK"],
+    "density_satiety": ["intercept", "densityK", "timeOffSinceExploit"],
+    "history": ["intercept", "densityK", "timeOffSinceExploit", "densityH", "densityE"],
+    "nonlinear_no_density_history": ["intercept", "densityK", "timeOffSinceExploit", "densityK^2", "timeOffSinceExploit^2"]
+  },
+  "fit": "Unpenalized logistic soft-target cross entropy; training-only standardization; equal weight per worm, equal weight per available imputation within worm, equal weight per encounter within that worm-imputation. No outcome-based model selection.",
+  "metrics": "Cross entropy and squared error against the published soft target. Report equal-worm primary metrics and published encounter-weighted arithmetic separately. Compare five-parameter history and nonlinear models fairly; credit any rival win.",
+  "uncertainty": "5000 paired worm bootstrap draws of already held-out scores, seed 20261008. Descriptive, conditional on fixed classifiers, imputations and fitted models. Plate IDs absent from this workbook, so these are not plate-independent confidence guarantees.",
+  "limits": "Imputations are not new animals; sensed encounter number is not a stable raw-event ID across imputations. Time off food is a proxy, not measured metabolic energy. No intracellular signal, gut dynamics, long-term microbial renewal or ethical value is identified by the foraging table.",
+  "pathogen_test": "Summarize every numeric SYTO13 measurement in the two declared source columns; preserve cell references. No pairing, plate-level uncertainty, or causal effect isolated from all consequences of lawn geometry is asserted.",
+  "revision_rule": "A predictive failure or equally capable conventional fit narrows the theory claim; no model is relabeled generative to manufacture unique empirical superiority. No fit supplies universal error bounds for the existing Lean abstraction theorem."
+}

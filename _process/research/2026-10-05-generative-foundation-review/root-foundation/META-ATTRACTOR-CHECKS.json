@@ -1,0 +1,100 @@
+{
+  "status": "passed",
+  "scope": "Owned documents, proof/output bindings and paired M24 row only",
+  "local_links": 129,
+  "theorems": 47,
+  "audits": 65,
+  "carrier_theorems": 40,
+  "carrier_new_audits": 69,
+  "carrier_inherited_audits": 54,
+  "reproduction_theorems": 58,
+  "reproduction_audits": 107,
+  "admission_theorems": 34,
+  "admission_audits": 56,
+  "testing_theorems": 43,
+  "testing_audits": 87,
+  "discovery_theorems": 43,
+  "discovery_audits": 87,
+  "inquiry_theorems": 54,
+  "inquiry_audits": 99,
+  "exploratory_network_cases": 1024,
+  "numerical_cases": 2734,
+  "owned_documents": {
+    "theories/meta-attractor/GENERATIVE-REGIMES.md": "004cb9d6e1c3e08433dd29c81851560b113aef703c38838b8a2570e2d98e8fc6",
+    "sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md": "558214b028de02b5631d8a498903f77651a09d12e196df1977c2002e3af01f29",
+    "experiments/market-generativity/meta-attractor/README.md": "baec86075efa5d5f80af27f9873a32fe18a3fefa381286b497bd26d6c06dac28",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-INTEGRATION.md": "ba78996c49f130cc66d263d30caa044d924acde446628b04b164efcaa3e16761",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-EVIDENCE.md": "8842da07cb0b8e2ac1dc13d4e7e1fd41acdc9396f1b267b360b77280e8557729",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REVIEW.md": "6558ccfb2046b74e0924684c2cd66cd793cdf957f7e8ba5e5e6914eb525eba0d",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-CARRIER-DIAGNOSIS.md": "b8bcac825d6b19c6aeee76f7be1f481986799223464128a6899e86c3eaf24408",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md": "a0a03d4d98139ddeeb17e1806b86b1267bdd28de74de585ede1c44adb817fb08",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-ADMISSION.md": "231cbc4bdba1f2f621edb696dafe718d6ac4afc8f55d7e43e66f1bb35fa882a8",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-TESTING.md": "a7541ec304b4360eb71711c7c067c2c4b5df19106742ee48601c26dc43524639",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-DISCOVERY.md": "403b6595907868ac22f50f8a59174c97d3870169ce8f08d8fb180d134856389b",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-EXPANDING-INQUIRY.md": "8df73a10b9b1fbe0384794b2c334b2e322ba43419c97e2268ff64bce7904069d"
+  },
+  "source_bindings": {
+    "GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "MarketGenerativity.lean": "db7cf7f120e8759aebc1e280e9dc1bbd10b30a6b7004a835015624f85f8d49b1",
+    "RecursiveSelection.lean": "c814f4c805c662192e4cf1eaa9f545f074144d6d185b9295fbf01fe8c8839d82",
+    "MarketDiagnosis.lean": "40026b83d101dfcf244e1344ccdbfaaacc098dc166bc4ff510988ae04fbc6bb0"
+  },
+  "carrier_source_bindings": {
+    "GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "RecursiveSelection.lean": "c814f4c805c662192e4cf1eaa9f545f074144d6d185b9295fbf01fe8c8839d82",
+    "CarrierDiagnosis.lean": "76581b21417113282036f43a68e140862977b817ac86613e395a94d3e365a39e"
+  },
+  "reproduction_source_bindings": {
+    "GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "ReproductionNetwork.lean": "a59b491973ad6436b68aeac9b9de890f4a4e6fb589d9d3e1cfc55c61e72bd0df"
+  },
+  "admission_source_bindings": {
+    "GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "ReproductionNetwork.lean": "a59b491973ad6436b68aeac9b9de890f4a4e6fb589d9d3e1cfc55c61e72bd0df",
+    "AdmissionRevision.lean": "7875105b7ce4ea1073a68b95ae574f22a0fa87cb39b8188ad13f48c273860936"
+  },
+  "testing_source_bindings": {
+    "GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "ReproductionNetwork.lean": "a59b491973ad6436b68aeac9b9de890f4a4e6fb589d9d3e1cfc55c61e72bd0df",
+    "AdmissionRevision.lean": "7875105b7ce4ea1073a68b95ae574f22a0fa87cb39b8188ad13f48c273860936",
+    "TestingReorganization.lean": "386ee96bed3fd9ba52dd98f0281a8265481d3b949f8038bcf8459ce6ea37266e"
+  },
+  "discovery_source_bindings": {
+    "GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "ReproductionNetwork.lean": "a59b491973ad6436b68aeac9b9de890f4a4e6fb589d9d3e1cfc55c61e72bd0df",
+    "AdmissionRevision.lean": "7875105b7ce4ea1073a68b95ae574f22a0fa87cb39b8188ad13f48c273860936",
+    "TestingReorganization.lean": "386ee96bed3fd9ba52dd98f0281a8265481d3b949f8038bcf8459ce6ea37266e",
+    "CommonCauseDiscovery.lean": "f49bd547d23609223a86bf6ff93c60f47841d720b45cd635496d1d74186a9129"
+  },
+  "inquiry_source_bindings": {
+    "GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "ReproductionNetwork.lean": "a59b491973ad6436b68aeac9b9de890f4a4e6fb589d9d3e1cfc55c61e72bd0df",
+    "AdmissionRevision.lean": "7875105b7ce4ea1073a68b95ae574f22a0fa87cb39b8188ad13f48c273860936",
+    "TestingReorganization.lean": "386ee96bed3fd9ba52dd98f0281a8265481d3b949f8038bcf8459ce6ea37266e",
+    "CommonCauseDiscovery.lean": "f49bd547d23609223a86bf6ff93c60f47841d720b45cd635496d1d74186a9129",
+    "ExpandingInquiry.lean": "b8b96cdcd725b5657dbc1c8df04e2dddd23fd69f3a69b4942d7e73d44b4a51d1"
+  },
+  "entry": "M24",
+  "full_table_pending_sources": [
+    "RESEARCH.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+    "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+    "theories/shengsheng-buxi-generative-existence/README.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+    "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+    "theories/meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COLLECTIVE-DESTRUCTION-INTEGRATION.md",
+    "sources/15-codex-theory-conversations/2026-10-08-collective-destructive-attractors.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md"
+  ],
+  "checker_sha256": "47e5ba20e81d51d067aaf4ab15d11e7af5e62e05018f16d8e0ddacd9e9c6b7a9"
+}

@@ -1,0 +1,8 @@
+import HistoryRealization
+#check Generative.Deeper.append_nil_constructive
+#check Generative.Deeper.append_assoc_constructive
+#check Generative.Deeper.history_trace_iff
+#check Generative.Deeper.history_from_empty_iff
+#check Generative.Deeper.history_feasible_iff
+#check Generative.Deeper.process_language_prefix_closed
+#check Generative.Deeper.process_language_exact_history_realization

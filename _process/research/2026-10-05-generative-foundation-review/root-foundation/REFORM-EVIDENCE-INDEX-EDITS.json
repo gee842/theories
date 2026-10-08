@@ -1,0 +1,219 @@
+{
+  "scope": "Reform-dependent evidence and actual repair; owned fragments and M20 followup only",
+  "entries": [
+    "M20"
+  ],
+  "shared_fragments": {
+    "RESEARCH.md": {
+      "fragment": "**改革也改变判断的证据 / Reform changes its own evidence，2026-10-08。** [本轮相连检验](_process/research/2026-10-05-generative-foundation-review/root-foundation/REFORM-EVIDENCE-INTEGRATION.md)在实际目的修订历史中接通新维护负担、报告排除、错误认可、有成本的直接取得及保留新目的的修复。**23项新 Lean 定理／43项声明审计**通过；93项继承定理／165项审计分列。/ The two post-reform histories have identical admitted judgment inputs but different real losses. A paid check and authorized repair restore maintenance without erasing earlier losses. Existing goal-continuation, model-revision and correction-infrastructure results retain credit. Acquired access and remedy selection without a supplied route remain the frontier; no empirical validation or algorithmic superiority is claimed.\n\n",
+      "before_sha256": "9e9d91e353441a83529b9910d51f31a1025b9adc6aa4559b4c534a16bc56412f",
+      "after_sha256": "a362e73b580ccab3f41cf75b0aa56a5b226a24df4dbd754648b3516cf8254ff6",
+      "other_bytes_preserved": true
+    },
+    "theories/shengsheng-buxi-generative-existence/README.md": {
+      "fragment": "**改革也改变判断的证据 / Reform changes its own evidence，2026-10-08。** [本轮相连检验](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REFORM-EVIDENCE-INTEGRATION.md)在实际目的修订历史中接通新维护负担、报告排除、错误认可、有成本的直接取得及保留新目的的修复。**23项新 Lean 定理／43项声明审计**通过；93项继承定理／165项审计分列。/ The two post-reform histories have identical admitted judgment inputs but different real losses. A paid check and authorized repair restore maintenance without erasing earlier losses. Existing goal-continuation, model-revision and correction-infrastructure results retain credit. Acquired access and remedy selection without a supplied route remain the frontier; no empirical validation or algorithmic superiority is claimed.\n\n",
+      "before_sha256": "940b5e781e28f8adb8253ea88d0f0dbc1611ca0e8736716cce49e95cdd0bd5ff",
+      "after_sha256": "ac25d7139bc4346ad9bc43264dfa2762fce9884fc635d583e7b0a4c717638df4",
+      "other_bytes_preserved": true
+    },
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": {
+      "fragment": "**改革也改变判断的证据 / Reform changes its own evidence，2026-10-08。** [本轮相连检验](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/REFORM-EVIDENCE-INTEGRATION.md)在实际目的修订历史中接通新维护负担、报告排除、错误认可、有成本的直接取得及保留新目的的修复。**23项新 Lean 定理／43项声明审计**通过；93项继承定理／165项审计分列。/ The two post-reform histories have identical admitted judgment inputs but different real losses. A paid check and authorized repair restore maintenance without erasing earlier losses. Existing goal-continuation, model-revision and correction-infrastructure results retain credit. Acquired access and remedy selection without a supplied route remain the frontier; no empirical validation or algorithmic superiority is claimed.\n\n",
+      "before_sha256": "8a296ed3c96ccb6501594726315150ed73dee69a8854e8e617fa8b4b2134872b",
+      "after_sha256": "b21df7e397a63541c6e723957aef3268e24372d9afc93261d93861fc6e9ed6d5",
+      "other_bytes_preserved": true
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md": {
+      "fragment": "**改革后的证据与修复 / Evidence and repair after reform，2026-10-08。** M20成对追加[相连后续](REFORM-EVIDENCE-INTEGRATION.md)：23项新定理／43项审计，93项继承定理／165项审计；保留已有独立验收及其他行。/ The actual changed selector alters a burden and its report; paid access and repair preserve the revised goal. Only the owned followup, discovery and read source versions change. Shared-file insertions do not refresh broader review. [Owned edits](REFORM-EVIDENCE-INDEX-EDITS.json); [scoped checks](REFORM-EVIDENCE-CHECKS.json).\n\n",
+      "before_sha256": "5534ca17ab9bebb9bf11b8ea51f97209505f69f0aeb0f982709bf3f99d2c7d41",
+      "after_sha256": "e1c2378b457876edfa94d30339527db4e3441ee17f5904edad1d90823f034907",
+      "other_bytes_preserved": true
+    }
+  },
+  "unrelated_entries_preserved": true,
+  "unrelated_entries_sha256": "9418c3ec2ae6515b87f077286ab00325ccafa97988c8327c97f03293dbad8394",
+  "other_table_lines_preserved": true,
+  "other_table_lines_sha256": "e62d733294d0acf6045d9f7a63c0e49800e51d6bf93f580aeb54cdb6cfe12551",
+  "owned_reviewed_sources": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/REFORM-EVIDENCE-INTEGRATION.md": "57dffa867f39eacbbef548ee663a08d3a6d716758552fcee01eda5d9c370b2b6",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md": "fc21e1b5a4de2f76619cf627cd7443c618f76eedd20106074e22d9da91c9a6e3",
+    "sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md": "0b759043dcb509ef7905c0ee5c8d3cdc821a3217f47ff7160e531deee5d95ceb",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReformEvidence.lean": "a66f490de7aaddf28542cdca7ac7095e74117bbf45877c9ae15691272011362e",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_reform_evidence.py": "a549f86014824e30ac173090334eb0e42968c5c9cdf00ee31eff5ad26e56f81a",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/reform-evidence-verification.json": "933878ddd6c61a8d5002cb9d6ee034bbceefd14ec3c732789fbedc7217200f54"
+  },
+  "shared_full_source_reviews_refreshed": false,
+  "entry_before": {
+    "id": "M20",
+    "title_zh": "生成性对齐：当前首要方向之一",
+    "title_en": "Generative alignment: a current primary direction",
+    "claim_zh": "以生生为共同根据评价目标、评价者与选择规则；方向论证及相连目标取得、判断、实际修订与有界改革现已成为完成成果，更强理论按明确范围继续。",
+    "claim_en": "Appraise ends, evaluators and selection rules through shared generative grounds; the direction argument and connected acquisition, judgment, operative revision and bounded reform are now completed foundations for the broader programme.",
+    "scope_zh": "当前首要方向之一；方向论证及本轮相连机制均已独立验收，不再作为待做接口。新相连结果：27新定理／84新声明审计、46继承审计，13历史／221完整状态；规范采用、对应、权限、有限资金与现实部署范围分明。",
+    "scope_en": "A current primary direction. The direction argument and new connected mechanism are independently accepted, not unfinished interfaces. New connection: 27 theorems/84 new and 46 inherited declaration audits, 13 histories/221 full states, with normative adoption, correspondence, authority, finite funding and deployment scope explicit.",
+    "links": [
+      {
+        "label_zh": "对齐与治理中的未来条件",
+        "label_en": "Conditions of a future in alignment and governance",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md",
+        "label_zh": "当前双语方向论证",
+        "label_en": "Current bilingual direction argument"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md",
+        "label_zh": "论证、对应与完成",
+        "label_en": "Argument, correspondence and completion"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/alignment-direction-verification.json",
+        "label_zh": "新实例实查回执",
+        "label_en": "Checked case-instance receipt"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-REVIEW.md",
+        "label_zh": "独立完成审查与重编译",
+        "label_en": "Independent completion review and recompilation"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#current-generative-alignment-priority",
+        "label_zh": "当前首要方向与未解连接",
+        "label_en": "Current priority and unresolved connection"
+      },
+      {
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+        "label_zh": "Ren的优先级及完成规则",
+        "label_en": "Ren’s priority and completion rule"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+        "label_zh": "当前方向与完成成果分列",
+        "label_en": "Active directions and completed results"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md",
+        "label_zh": "第一轮规范连接、反方与判别",
+        "label_en": "First normative connection, rivals and discriminators"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+        "label_zh": "理解自身形成及目的修订",
+        "label_en": "Understanding formation and revising goals"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md",
+        "label_zh": "相连论证、前提、反方与证明",
+        "label_en": "Joined argument, premises, counterreview and proofs"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-formation-revision-verification.json",
+        "label_zh": "43项新定理的实查回执",
+        "label_en": "Checked receipt for 43 new theorems"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-REVISION-CONTINUATION.md",
+        "label_zh": "已完成的相连历史",
+        "label_en": "Completed connected history"
+      }
+    ],
+    "connection_zh": "目标形成—后果使用—有根据的操作目的修订—选择安排改革—有限接续已条件性完成；更大的现实形成与部署问题保持独立范围，不重复此接口。",
+    "connection_en": "Acquired ends, consequential use, warranted operative revision, allocation reform and finite continuation are conditionally complete; broader real-world formation and deployment retain separate scope.",
+    "source_section": "Current generative alignment priority",
+    "source_line": 3,
+    "row_type": "application_programme",
+    "source_id": "alignment_governance"
+  },
+  "entry_after": {
+    "id": "M20",
+    "title_zh": "生成性对齐：当前首要方向之一",
+    "title_en": "Generative alignment: a current primary direction",
+    "claim_zh": "以生生为共同根据评价目标、评价者与选择规则；方向论证及相连目标取得、判断、实际修订与有界改革现已成为完成成果，更强理论按明确范围继续。 后续接通改革自身改变实际负担及报告路线、直接取得与保留新目的的修复。",
+    "claim_en": "Appraise ends, evaluators and selection rules through shared generative grounds; the direction argument and connected acquisition, judgment, operative revision and bounded reform are now completed foundations for the broader programme. A further joined case connects reform-induced burdens and reporting changes to acquired correction and repair preserving the new goal.",
+    "scope_zh": "当前首要方向之一；方向论证及本轮相连机制均已独立验收，不再作为待做接口。新相连结果：27新定理／84新声明审计、46继承审计，13历史／221完整状态；规范采用、对应、权限、有限资金与现实部署范围分明。 本会话后续另增23项定理／43项审计，93项继承定理／165项审计分列；此后续为同作者反审，无新经验验证或独立agent验收。",
+    "scope_en": "A current primary direction. The direction argument and new connected mechanism are independently accepted, not unfinished interfaces. New connection: 27 theorems/84 new and 46 inherited declaration audits, 13 histories/221 full states, with normative adoption, correspondence, authority, finite funding and deployment scope explicit. This session adds a separate 23-theorem/43-audit followup, with 93 inherited theorems/165 audits separately credited; author counterreview, no new empirical or independent-agent acceptance.",
+    "links": [
+      {
+        "label_zh": "对齐与治理中的未来条件",
+        "label_en": "Conditions of a future in alignment and governance",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md",
+        "label_zh": "当前双语方向论证",
+        "label_en": "Current bilingual direction argument"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md",
+        "label_zh": "论证、对应与完成",
+        "label_en": "Argument, correspondence and completion"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/alignment-direction-verification.json",
+        "label_zh": "新实例实查回执",
+        "label_en": "Checked case-instance receipt"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-REVIEW.md",
+        "label_zh": "独立完成审查与重编译",
+        "label_en": "Independent completion review and recompilation"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#current-generative-alignment-priority",
+        "label_zh": "当前首要方向与未解连接",
+        "label_en": "Current priority and unresolved connection"
+      },
+      {
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+        "label_zh": "Ren的优先级及完成规则",
+        "label_en": "Ren’s priority and completion rule"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+        "label_zh": "当前方向与完成成果分列",
+        "label_en": "Active directions and completed results"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md",
+        "label_zh": "第一轮规范连接、反方与判别",
+        "label_en": "First normative connection, rivals and discriminators"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+        "label_zh": "理解自身形成及目的修订",
+        "label_en": "Understanding formation and revising goals"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md",
+        "label_zh": "相连论证、前提、反方与证明",
+        "label_en": "Joined argument, premises, counterreview and proofs"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-formation-revision-verification.json",
+        "label_zh": "43项新定理的实查回执",
+        "label_en": "Checked receipt for 43 new theorems"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-REVISION-CONTINUATION.md",
+        "label_zh": "已完成的相连历史",
+        "label_en": "Completed connected history"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REFORM-EVIDENCE-INTEGRATION.md",
+        "label_zh": "改革、证据与修复的相连研究",
+        "label_en": "Reform, evidence and actual repair"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/reform-evidence-verification.json",
+        "label_zh": "23项新定理实查回执",
+        "label_en": "Receipt for 23 new theorems"
+      }
+    ],
+    "connection_zh": "目标形成—后果使用—有根据的操作目的修订—选择安排改革—有限接续已条件性完成；更大的现实形成与部署问题保持独立范围，不重复此接口。 新前沿：在不预送正确读取路线和修复方案时，取得遗漏后果、选择有能力承担的回应。",
+    "connection_en": "Acquired ends, consequential use, warranted operative revision, allocation reform and finite continuation are conditionally complete; broader real-world formation and deployment retain separate scope. New frontier: acquire omitted consequences and select an affordable response without being handed the correct access route and repair.",
+    "source_section": "Current generative alignment priority",
+    "source_line": 3,
+    "row_type": "application_programme",
+    "source_id": "alignment_governance"
+  }
+}

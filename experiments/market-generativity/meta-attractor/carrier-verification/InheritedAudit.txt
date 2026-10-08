@@ -1,0 +1,54 @@
+'RecursiveSelection.State' does not depend on any axioms
+'RecursiveSelection.selected' does not depend on any axioms
+'RecursiveSelection.update' does not depend on any axioms
+'RecursiveSelection.severed' does not depend on any axioms
+'RecursiveSelection.Source' does not depend on any axioms
+'RecursiveSelection.contribution' does not depend on any axioms
+'RecursiveSelection.sourceReturn' does not depend on any axioms
+'RecursiveSelection.causalUpdate' does not depend on any axioms
+'RecursiveSelection.substituted' does not depend on any axioms
+'RecursiveSelection.maintained' does not depend on any axioms
+'RecursiveSelection.cycle' does not depend on any axioms
+'RecursiveSelection.history' does not depend on any axioms
+'RecursiveSelection.iterate' does not depend on any axioms
+'RecursiveSelection.process' does not depend on any axioms
+'RecursiveSelection.maintenance_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecursiveSelection.moving_boundary_certificate' depends on axioms: [propext, Quot.sound]
+'RecursiveSelection.maintenance_history' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecursiveSelection.supplied_return_shortfall' does not depend on any axioms
+'RecursiveSelection.core_enabled_iff' does not depend on any axioms
+'RecursiveSelection.output_changes_condition' depends on axioms: [propext, Quot.sound]
+'RecursiveSelection.high_step' depends on axioms: [propext, Quot.sound]
+'RecursiveSelection.high_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecursiveSelection.low_step' depends on axioms: [propext, Quot.sound]
+'RecursiveSelection.low_invariant' depends on axioms: [propext, Quot.sound]
+'RecursiveSelection.high_history' depends on axioms: [propext, Quot.sound]
+'RecursiveSelection.low_history' depends on axioms: [propext, Quot.sound]
+'RecursiveSelection.exact_basin' depends on axioms: [propext, Quot.sound]
+'RecursiveSelection.carrier_supply' depends on axioms: [propext, Quot.sound]
+'RecursiveSelection.complete_turnover' depends on axioms: [propext, Quot.sound]
+'RecursiveSelection.carriers_distinct' depends on axioms: [propext, Quot.sound]
+'RecursiveSelection.every_cycle_enabled' depends on axioms: [propext, Quot.sound]
+'RecursiveSelection.actual_core_history' depends on axioms: [propext, Quot.sound]
+'RecursiveSelection.recurrent_across_carriers' depends on axioms: [propext, Quot.sound]
+'RecursiveSelection.saturated_turnover' depends on axioms: [propext, Quot.sound]
+'RecursiveSelection.finite_parts' depends on axioms: [propext, Quot.sound]
+'RecursiveSelection.finite_supply_stops' depends on axioms: [propext, Quot.sound]
+'RecursiveSelection.invariant_without_activity' depends on axioms: [propext]
+'RecursiveSelection.severed_history' depends on axioms: [propext, Quot.sound]
+'RecursiveSelection.severance_breaks_reproduction' depends on axioms: [propext, Quot.sound]
+'RecursiveSelection.escape_budget' depends on axioms: [propext, Quot.sound]
+'RecursiveSelection.recoverability_contracts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecursiveSelection.passive_causal_steps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecursiveSelection.passive_histories_equal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecursiveSelection.intervention_separates' does not depend on any axioms
+'RecursiveSelection.no_passive_classifier' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecursiveSelection.delayed_escape_budget' depends on axioms: [propext, Quot.sound]
+'RecursiveSelection.escape_stays_out' depends on axioms: [propext, Quot.sound]
+'RecursiveSelection.one_round_closes_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecursiveSelection.disturbed' does not depend on any axioms
+'RecursiveSelection.robust_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecursiveSelection.robust_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RecursiveSelection.excessive_shock_breaks' does not depend on any axioms
+'RecursiveSelection.uniform_delayed_escape' depends on axioms: [propext, Quot.sound]
+'RecursiveSelection.interval_uncertainty_can_close_exit' depends on axioms: [propext, Quot.sound]

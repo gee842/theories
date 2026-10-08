@@ -1,0 +1,30 @@
+Generative.ObservationalCompatibility.coverage_gives_compatibility {W E : Type} (admissible theory : W → Prop)
+  (profile : W → E) (h : Generative.ObservationalCompatibility.Covers admissible theory profile) :
+  Generative.ObservationalCompatibility.MandatoryAtProfile admissible theory profile
+Generative.ObservationalCompatibility.compatibility_requires_coverage {W E : Type} (admissible theory : W → Prop)
+  (profile : W → E) (h : Generative.ObservationalCompatibility.MandatoryAtProfile admissible theory profile) :
+  Generative.ObservationalCompatibility.Covers admissible theory profile
+Generative.ObservationalCompatibility.compatibility_iff_coverage {W E : Type} (admissible theory : W → Prop)
+  (profile : W → E) :
+  Generative.ObservationalCompatibility.MandatoryAtProfile admissible theory profile ↔
+    Generative.ObservationalCompatibility.Covers admissible theory profile
+Generative.ObservationalCompatibility.universal_truth_gives_coverage {W E : Type} (admissible theory : W → Prop)
+  (profile : W → E) (h : ∀ (w : W), admissible w → theory w) :
+  Generative.ObservationalCompatibility.Covers admissible theory profile
+Generative.ObservationalCompatibility.coverage_and_constancy_give_universal_truth {W E : Type}
+  (admissible theory : W → Prop) (profile : W → E)
+  (cover : Generative.ObservationalCompatibility.Covers admissible theory profile)
+  (constant : Generative.ObservationalCompatibility.ConstantOnProfiles admissible theory profile) (w : W) :
+  admissible w → theory w
+Generative.ObservationalCompatibility.finer_coverage_gives_coarser_coverage {W E F : Type}
+  (admissible theory : W → Prop) (fine : W → E) (coarsen : E → F)
+  (h : Generative.ObservationalCompatibility.Covers admissible theory fine) :
+  Generative.ObservationalCompatibility.Covers admissible theory fun w => coarsen (fine w)
+Generative.ObservationalCompatibility.profile_coverage_can_hide_a_false_commitment :
+  Generative.ObservationalCompatibility.Covers (fun x => True) (fun w => w.snd = false) Prod.fst ∧
+    (¬∀ (w : Bool × Bool), w.snd = false) ∧
+      ¬Generative.ObservationalCompatibility.Covers (fun x => True) (fun w => w.snd = false) id
+Generative.ObservationalCompatibility.pairwise_realizations_do_not_give_joint_realization :
+  (∃ w, w.fst = false ∧ w.snd = false) ∧
+    (∃ w, w.fst = false ∧ w.fst ≠ w.snd) ∧
+      (∃ w, w.snd = false ∧ w.fst ≠ w.snd) ∧ ¬∃ w, w.fst = false ∧ w.snd = false ∧ w.fst ≠ w.snd

@@ -1,0 +1,25 @@
+import ObservableContinuation
+#print axioms ObservableContinuation.selected_execution_gives_continuation_bound
+#print axioms ObservableContinuation.Query
+#print axioms ObservableContinuation.Action
+#print axioms ObservableContinuation.State
+#print axioms ObservableContinuation.queryCost
+#print axioms ObservableContinuation.actionCost
+#print axioms ObservableContinuation.routeWorks
+#print axioms ObservableContinuation.probe
+#print axioms ObservableContinuation.respond
+#print axioms ObservableContinuation.interface
+#print axioms ObservableContinuation.initial
+#print axioms ObservableContinuation.states
+#print axioms ObservableContinuation.oldWorks
+#print axioms ObservableContinuation.candidate
+#print axioms ObservableContinuation.extension
+#print axioms ObservableContinuation.singlePlans
+#print axioms ObservableContinuation.expandedPlans
+#print axioms ObservableContinuation.maintain
+#print axioms ObservableContinuation.inspect
+#print axioms ObservableContinuation.parallelPlan
+#print axioms ObservableContinuation.support
+#print axioms ObservableContinuation.limited_budget_preserves_maintenance_but_not_extension
+#print axioms ObservableContinuation.funded_observation_realizes_extension
+#print axioms ObservableContinuation.funded_parallel_support_realizes_extension

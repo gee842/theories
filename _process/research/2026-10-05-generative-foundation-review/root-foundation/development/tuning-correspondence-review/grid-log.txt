@@ -1,0 +1,221 @@
+{
+  "status": "passed",
+  "candidates": 1536,
+  "scenarios": [
+    {
+      "label": "archived_contract",
+      "best": {
+        "signed_objective": {
+          "index": 161,
+          "gains": [
+            10,
+            55
+          ],
+          "value": 5.214831272074847,
+          "runner_up_gap": 0.001220733619872405
+        },
+        "absolute_objective": {
+          "index": 161,
+          "gains": [
+            10,
+            55
+          ],
+          "value": 5.606796827601256,
+          "runner_up_gap": 0.0006131212102760131
+        }
+      },
+      "reversals": 8454,
+      "strict_pairs": 32640,
+      "wrong_objective_excess": 0.0
+    },
+    {
+      "label": "recorded_intervals",
+      "best": {
+        "signed_objective": {
+          "index": 161,
+          "gains": [
+            10,
+            55
+          ],
+          "value": 5.214914975510078,
+          "runner_up_gap": 0.0012397433191093654
+        },
+        "absolute_objective": {
+          "index": 161,
+          "gains": [
+            10,
+            55
+          ],
+          "value": 5.606947743511574,
+          "runner_up_gap": 0.0006318848838304802
+        }
+      },
+      "reversals": 8488,
+      "strict_pairs": 32640,
+      "wrong_objective_excess": 0.0
+    },
+    {
+      "label": "no_residual_transfer",
+      "best": {
+        "signed_objective": {
+          "index": 244,
+          "gains": [
+            25,
+            80
+          ],
+          "value": 5.211979585788955,
+          "runner_up_gap": 0.002088031651598321
+        },
+        "absolute_objective": {
+          "index": 177,
+          "gains": [
+            10,
+            60
+          ],
+          "value": 5.553658235742869,
+          "runner_up_gap": 0.0028264003688454054
+        }
+      },
+      "reversals": 9368,
+      "strict_pairs": 32640,
+      "wrong_objective_excess": 0.29754193503159954
+    },
+    {
+      "label": "compensated_gain_0.8",
+      "best": {
+        "signed_objective": {
+          "index": 145,
+          "gains": [
+            10,
+            50
+          ],
+          "value": 5.154011933890177,
+          "runner_up_gap": 0.003108019245911642
+        },
+        "absolute_objective": {
+          "index": 145,
+          "gains": [
+            10,
+            50
+          ],
+          "value": 5.529762010304422,
+          "runner_up_gap": 0.002543740034829156
+        }
+      },
+      "reversals": 14290,
+      "strict_pairs": 32640,
+      "wrong_objective_excess": 0.0
+    },
+    {
+      "label": "compensated_gain_1",
+      "best": {
+        "signed_objective": {
+          "index": 161,
+          "gains": [
+            10,
+            55
+          ],
+          "value": 5.214831296174644,
+          "runner_up_gap": 0.0012207367884151665
+        },
+        "absolute_objective": {
+          "index": 161,
+          "gains": [
+            10,
+            55
+          ],
+          "value": 5.606796836906671,
+          "runner_up_gap": 0.0006131266214026709
+        }
+      },
+      "reversals": 8454,
+      "strict_pairs": 32640,
+      "wrong_objective_excess": 0.0
+    },
+    {
+      "label": "compensated_gain_1.2",
+      "best": {
+        "signed_objective": {
+          "index": 243,
+          "gains": [
+            20,
+            80
+          ],
+          "value": 5.193685707232768,
+          "runner_up_gap": 0.0012703820670978416
+        },
+        "absolute_objective": {
+          "index": 240,
+          "gains": [
+            5,
+            80
+          ],
+          "value": 5.606449323273895,
+          "runner_up_gap": 0.0497888257709409
+        }
+      },
+      "reversals": 4818,
+      "strict_pairs": 32640,
+      "wrong_objective_excess": 0.26961008896575756
+    }
+  ],
+  "max_selected_trajectory_difference": 1.993782916542841e-11,
+  "validation": [
+    {
+      "label": "validation_1",
+      "without": {
+        "rmse_celsius": 0.25512306348997066,
+        "mae_celsius": 0.2097916005036999,
+        "max_abs_celsius": 0.6807457191154072
+      },
+      "with": {
+        "rmse_celsius": 0.29536548640166843,
+        "mae_celsius": 0.2208232218212113,
+        "max_abs_celsius": 0.8691010452773185
+      }
+    },
+    {
+      "label": "validation_2",
+      "without": {
+        "rmse_celsius": 1.9507069162288553,
+        "mae_celsius": 1.7603241627158146,
+        "max_abs_celsius": 3.1986116288204443
+      },
+      "with": {
+        "rmse_celsius": 1.9561025432898969,
+        "mae_celsius": 1.75400828108937,
+        "max_abs_celsius": 3.4999015823004953
+      }
+    }
+  ],
+  "diagnostics": [
+    {
+      "label": "validation_1",
+      "without": {
+        "rmse_celsius": 1.0563956203064295,
+        "mae_celsius": 0.9316515385530902,
+        "max_abs_celsius": 1.9243084697503576
+      },
+      "with": {
+        "rmse_celsius": 1.0603483663987219,
+        "mae_celsius": 0.9237647552239838,
+        "max_abs_celsius": 2.127322882198108
+      },
+      "adjusted_intercept": 0.007933288964502933
+    },
+    {
+      "label": "validation_2",
+      "without": {
+        "rmse_celsius": 1.7079378097224378,
+        "mae_celsius": 1.52953935657354,
+        "max_abs_celsius": 2.8892073035609798
+      },
+      "with": {
+        "rmse_celsius": 1.7150950533322258,
+        "mae_celsius": 1.5232239599006514,
+        "max_abs_celsius": 3.1885269845614204
+      },
+      "adjusted_intercept": 0.00857416178100312
+    }
+  ]
+}

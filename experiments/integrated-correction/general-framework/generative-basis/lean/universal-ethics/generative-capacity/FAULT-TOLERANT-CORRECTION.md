@@ -1,0 +1,9 @@
+# Reproduce correction under partial compromise
+
+Run `python3 check_fault_tolerant_correction.py` from this directory, or invoke its absolute path. Installed Lean 4.29.1 builds the complete repository import closure in a fresh temporary directory. Frozen source, helper, compiler fingerprints, signatures, axiom reports and comparison outputs remain in `fault-tolerant-correction-checks/`; `fault-tolerant-correction-verification.json` records the latest run. Failed development runs remain separately recorded.
+
+The new [formal source](FaultTolerantCorrection.lean) has 37 theorems / 68 explicit declarations audited, 29 with empty axiom lists and the rest with standard dependencies only. Imported acquisition/command theorems are not recounted. [Executable cases](FaultTolerantCorrectionCases.lean) match 85,680 records against a separately expressed set/arithmetic reference in the checker. This is same-author implementation checking, not independent acceptance or empirical reliability.
+
+Read the [integration and counterreview](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FAULT-TOLERANT-CORRECTION-INTEGRATION.md) for exact fault coverage, snapshot, response, protected-registry/mandate/monitor and cost assumptions. The checked availability condition is for one-statement attestation; it is not Byzantine agreement. `withinMandate` expresses current delegated scope, not ethical legitimacy. Real correlation and the protected boundary remain correspondence obligations.
+
+The recommended entry is `guardedExecute`, which directly enforces the protected scope before the attestation executor. The original `execute` remains as a comparison with a preserved correlated-issuance failure. Main finite cases compare both; matching labels alone are not a freshness proof.

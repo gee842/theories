@@ -1,0 +1,17 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-wisdom-response-structure-og0se70a/WisdomResponseStructure.lean:52:4: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-wisdom-response-structure-og0se70a/WisdomResponseStructure.lean:60:4: warning: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-wisdom-response-structure-og0se70a/WisdomResponseStructure.lean:90:44: error: omega could not prove the goal:
+No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants.
+'Generative.WisdomResponseStructure.assured_route_iff' depends on axioms: [propext]
+'Generative.WisdomResponseStructure.left_response_adequate' depends on axioms: [propext]
+'Generative.WisdomResponseStructure.right_response_adequate' depends on axioms: [propext]
+'Generative.WisdomResponseStructure.adequate_description_loses_outcome_distinction' depends on axioms: [propext]
+'Generative.WisdomResponseStructure.pairwise_common_response' depends on axioms: [propext, Quot.sound]
+'Generative.WisdomResponseStructure.no_response_common_to_all' depends on axioms: [propext]
+'Generative.WisdomResponseStructure.common_coarsening_constant' depends on axioms: [propext, sorryAx]
+'Generative.WisdomResponseStructure.common_coarsening_inadequate' depends on axioms: [propext, sorryAx]
+'Generative.WisdomResponseStructure.no_coarsest_adequate_description' depends on axioms: [propext, sorryAx]

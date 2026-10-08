@@ -1,0 +1,5 @@
+AlignmentContinuityCases.lean:45:40: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Inhabited (AlignmentInquiry.Plan ReformInquiry.Query ReformInquiry.Remedy)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+AlignmentContinuityCases.lean:58:74: error: unexpected identifier; expected '}'

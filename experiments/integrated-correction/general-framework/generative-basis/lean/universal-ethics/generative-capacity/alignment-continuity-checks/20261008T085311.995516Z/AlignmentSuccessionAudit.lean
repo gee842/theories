@@ -1,0 +1,59 @@
+import AlignmentSuccession
+#print axioms AlignmentSuccession.withMigration
+#print axioms AlignmentSuccession.Payload
+#print axioms AlignmentSuccession.Carrier
+#print axioms AlignmentSuccession.commandState
+#print axioms AlignmentSuccession.serve
+#print axioms AlignmentSuccession.carried_command_is_executed
+#print axioms AlignmentSuccession.next
+#print axioms AlignmentSuccession.step
+#print axioms AlignmentSuccession.enabled_step
+#print axioms AlignmentSuccession.exact_market_projection
+#print axioms AlignmentSuccession.payload_keeps_claims_and_history
+#print axioms AlignmentSuccession.carrier_and_work_accounted
+#print axioms AlignmentSuccession.corrupted_transfer_blocked
+#print axioms AlignmentSuccession.missing_part_blocks_realization
+#print axioms AlignmentSuccession.migration_funding_blocks_realization
+#print axioms AlignmentSuccession.selectPayload
+#print axioms AlignmentSuccession.admitted_payload_exact
+#print axioms AlignmentSuccession.faithful_candidate_is_selected
+#print axioms AlignmentSuccession.selectedStep
+#print axioms AlignmentSuccession.ranked_competition_preserves_transfer
+#print axioms AlignmentSuccession.lineage
+#print axioms AlignmentSuccession.lineage_projects_to_market
+#print axioms AlignmentSuccession.lineage_transports_actual_payload
+#print axioms AlignmentSuccession.lineage_resources
+#print axioms AlignmentSuccession.lineage_running
+#print axioms AlignmentSuccession.every_generation_executes
+#print axioms AlignmentSuccession.arbitrary_generation_preserves_supports
+#print axioms AlignmentSuccession.competitive_lineage_executes
+#print axioms AlignmentSuccession.financed
+#print axioms AlignmentSuccession.initialCarrier
+#print axioms AlignmentSuccession.financed_certificate
+#print axioms AlignmentSuccession.financed_initial_safe
+#print axioms AlignmentSuccession.aggregate_safe_can_lack_a_carrier
+#print axioms AlignmentSuccession.old_funding_certificate_does_not_pay_migration
+#print axioms AlignmentSuccession.aggregate_shutdown_does_not_force_perpetual_operation
+#check AlignmentSuccession.carried_command_is_executed
+#check AlignmentSuccession.enabled_step
+#check AlignmentSuccession.exact_market_projection
+#check AlignmentSuccession.payload_keeps_claims_and_history
+#check AlignmentSuccession.carrier_and_work_accounted
+#check AlignmentSuccession.corrupted_transfer_blocked
+#check AlignmentSuccession.missing_part_blocks_realization
+#check AlignmentSuccession.migration_funding_blocks_realization
+#check AlignmentSuccession.admitted_payload_exact
+#check AlignmentSuccession.faithful_candidate_is_selected
+#check AlignmentSuccession.ranked_competition_preserves_transfer
+#check AlignmentSuccession.lineage_projects_to_market
+#check AlignmentSuccession.lineage_transports_actual_payload
+#check AlignmentSuccession.lineage_resources
+#check AlignmentSuccession.lineage_running
+#check AlignmentSuccession.every_generation_executes
+#check AlignmentSuccession.arbitrary_generation_preserves_supports
+#check AlignmentSuccession.competitive_lineage_executes
+#check AlignmentSuccession.financed_certificate
+#check AlignmentSuccession.financed_initial_safe
+#check AlignmentSuccession.aggregate_safe_can_lack_a_carrier
+#check AlignmentSuccession.old_funding_certificate_does_not_pay_migration
+#check AlignmentSuccession.aggregate_shutdown_does_not_force_perpetual_operation

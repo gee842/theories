@@ -1,0 +1,57 @@
+DevelopmentalMemory.lean:119:26: warning: This simp argument is unused:
+  List.count_cons
+
+Hint: Omit it from the simp argument list.
+  simp [perturb, hno, L̵i̵s̵t̵.̵c̵o̵u̵n̵t̵_̵c̵o̵n̵s̵,̵ ̵hno']
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+DevelopmentalMemory.lean:252:24: error: Tactic `subst` failed: invalid equality proof, it is not of the form (x = t) or (t = x)
+  s = first ∨ s ∈ []
+
+case left.inr
+hf : ∀ (i : Fin 3), first i * first i = 1
+hs : ∀ (i : Fin 3), second i * second i = 1
+s : Profile 3
+h✝ : s = first ∨ s ∈ []
+⊢ ∀ (i : Fin 3), s i * s i = 1
+DevelopmentalMemory.lean:256:24: error: Tactic `subst` failed: invalid equality proof, it is not of the form (x = t) or (t = x)
+  s = second ∨ s = second ∨ s = second ∨ s = first ∨ s ∈ []
+
+case right.left.inr
+hf : ∀ (i : Fin 3), first i * first i = 1
+hs : ∀ (i : Fin 3), second i * second i = 1
+s : Profile 3
+h✝ : s = second ∨ s = second ∨ s = second ∨ s = first ∨ s ∈ []
+⊢ ∀ (i : Fin 3), s i * s i = 1
+DevelopmentalMemory.lean:251:41: warning: This simp argument is unused:
+  List.mem_singleton
+
+Hint: Omit it from the simp argument list.
+  simp only [List.mem_cons,̵ ̵L̵i̵s̵t̵.̵m̵e̵m̵_̵s̵i̵n̵g̵l̵e̵t̵o̵n̵] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+DevelopmentalMemory.lean:255:41: warning: This simp argument is unused:
+  List.mem_singleton
+
+Hint: Omit it from the simp argument list.
+  simp only [List.mem_cons, L̵i̵s̵t̵.̵m̵e̵m̵_̵s̵i̵n̵g̵l̵e̵t̵o̵n̵,̵ ̵or_self] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+DevelopmentalMemory.lean:255:61: warning: This simp argument is unused:
+  or_self
+
+Hint: Omit it from the simp argument list.
+  simp only [List.mem_cons, List.mem_singleton,̵ ̵o̵r̵_̵s̵e̵l̵f̵] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+DevelopmentalMemory.lean:262:99: error: unsolved goals
+⊢ ![1, 1, 1] 2 + ![1, 1, -1] 2 = 0 ∧
+    ![1, 1, 1] 2 + ![1, 1, -1] 2 + ![1, 1, -1] 2 + ![1, 1, -1] 2 + ![1, 1, -1] 2 = -3 ∧
+      ![1, 1, 1] 2 + ![1, 1, -1] 2 + ![1, 1, -1] 2 + ![1, 1, -1] 2 + ![1, 1, -1] 2 + ![1, 1, 1] 2 + ![1, 1, 1] 2 +
+            ![1, 1, 1] 2 +
+          ![1, 1, 1] 2 =
+        1
+DevelopmentalMemory.lean:271:4: error: 'change' tactic failed, pattern
+  Real.tanh (input both (develop Real.tanh 1 1 both ambiguous t) 2) = 0
+is not definitionally equal to target
+  develop Real.tanh 1 1 both ambiguous (t + 1) 2 = 0

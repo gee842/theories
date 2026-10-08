@@ -1,0 +1,28 @@
+'GeneratedSelectionRecurrence.weakCapacity' does not depend on any axioms
+'GeneratedSelectionRecurrence.strongCapacity' does not depend on any axioms
+'GeneratedSelectionRecurrence.generatedTable' does not depend on any axioms
+'GeneratedSelectionRecurrence.reconstruct' does not depend on any axioms
+'GeneratedSelectionRecurrence.reconfigure' does not depend on any axioms
+'GeneratedSelectionRecurrence.cycle' does not depend on any axioms
+'GeneratedSelectionRecurrence.generated_table_carrier_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GeneratedSelectionRecurrence.generated_table_maximal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GeneratedSelectionRecurrence.reconstruct_enabled_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GeneratedSelectionRecurrence.reconstruction_counts' depends on axioms: [propext]
+'GeneratedSelectionRecurrence.reconstructed_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GeneratedSelectionRecurrence.cycle_population_correspondence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'GeneratedSelectionRecurrence.reconfiguration_accounts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GeneratedSelectionRecurrence.Event' does not depend on any axioms
+'GeneratedSelectionRecurrence.step' does not depend on any axioms
+'GeneratedSelectionRecurrence.run' does not depend on any axioms
+'GeneratedSelectionRecurrence.step_accounts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GeneratedSelectionRecurrence.step_consumes_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GeneratedSelectionRecurrence.run_accounts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GeneratedSelectionRecurrence.run_length_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GeneratedSelectionRecurrence.seed' does not depend on any axioms
+'GeneratedSelectionRecurrence.formed_two_cycle_history' does not depend on any axioms
+'GeneratedSelectionRecurrence.first_generated_generation' does not depend on any axioms
+'GeneratedSelectionRecurrence.eroded_second_cycle_history' does not depend on any axioms
+'GeneratedSelectionRecurrence.support_failure_and_residual_limits' does not depend on any axioms
+'GeneratedSelectionRecurrence.stronger_operation_can_be_unavailable' does not depend on any axioms

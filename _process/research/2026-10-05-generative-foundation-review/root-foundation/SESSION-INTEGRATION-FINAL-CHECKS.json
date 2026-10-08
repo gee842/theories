@@ -1,0 +1,26 @@
+{
+  "scope": "Document links, JSON parse, renderer syntax, owned navigation preservation and whitespace; no scientific revalidation.",
+  "passed": true,
+  "errors": [],
+  "local_links_checked": 20278,
+  "unique_targets": 925,
+  "navigation_entries": 4,
+  "owned_generated_and_report_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md": "eb17a9cca25bea1bf050838379553efa0bf69764a3adbcc2a5e0713f2ebe42ca",
+    "theories/shengsheng-buxi-generative-existence/results/SESSION-RESULTS.md": "4c2033fc4f0d05c8e69d3dfdc37ee3c3029b4a4348c5cca32e965f9bd2235a9e",
+    "theories/shengsheng-buxi-generative-existence/results/README.md": "034306159ec4d7addd0797237124e9837e12337b1161589d6f1b9a715064a8da",
+    "theories/shengsheng-buxi-generative-existence/results/LEAN-INDEX.md": "d7a979a3498bf98187daeb6f2f626f548ddb4155a61f50a49e9f2e503a70bcf1",
+    "theories/shengsheng-buxi-generative-existence/results/LEAN-DECLARATIONS.md": "79975545f40e188ca960c043c38a245d6620d2c6b8a014731de02d1b424f6819",
+    "theories/shengsheng-buxi-generative-existence/results/lean-declarations/abstraction.md": "67a80996cedaf5cd0b0cfbd8a0903b5f762ea4bf3a2831cbf9eac41dbfac56af",
+    "theories/shengsheng-buxi-generative-existence/results/lean-declarations/concern.md": "3a1382c8b14f4667fbd32f56d157d7606b13a62fcafc7f9e4db46a0f17c02beb",
+    "theories/shengsheng-buxi-generative-existence/results/lean-declarations/core.md": "4ad3744d865a0bc8f267ac9ed8d7ebe58f5bd046253c4acfe2eb921b71ca9f43",
+    "theories/shengsheng-buxi-generative-existence/results/lean-declarations/ethics.md": "d33ddefa7cce9cd028ca87b96829ec6c33a90dc65d6eba97792741ef68c2e68b",
+    "theories/shengsheng-buxi-generative-existence/results/lean-declarations/inquiry.md": "2ee5fabbeb67300a94a0692647c4eae7294bd8bd2699129ceaf6e2e66b6e1c1e",
+    "theories/shengsheng-buxi-generative-existence/results/lean-declarations/learning.md": "fac93b62fec3d6f1ed9b16437c13693078b502d8f6759e87ee2f1d912a612ad6",
+    "theories/shengsheng-buxi-generative-existence/results/lean-declarations/other.md": "e92bd319ca31aca04d6a1f8c0f7f7423b04e1d71c43f6120945bc3a61a2e807c",
+    "theories/shengsheng-buxi-generative-existence/results/lean-declarations/renewal.md": "7c06d29588e98ca0943f90a00828b6e7bac7327f60ee2199c16692dc83043729",
+    "theories/shengsheng-buxi-generative-existence/results/lean-declarations/shared.md": "1bc1e9f464bdcfda25f114aed360ed2bc3887616d636dac081b15d5c7ea936ad",
+    "theories/shengsheng-buxi-generative-existence/results/lean-declarations/valuation.md": "12ae68922daf5fad63e5ee6d1341c0ece174a949cbdc50a4c7704789aa15fa1e"
+  },
+  "lean_source_files_changed_by_this_task": []
+}

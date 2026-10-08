@@ -1,0 +1,406 @@
+{
+  "status": "passed",
+  "utc": "20261008T115335.946363Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "observable-continuation-checks/20261008T115335.946363Z",
+  "source_sha256": {
+    "AlignmentInquiry": "f40ad6179db326830edcdf8ec511f9069833a361f71181fd60166e0f72c0a23c",
+    "ChanceAdequacy": "501a26f1561c78fb552a550700fc730c296e6005cde5a0f0d2e0cb9ec11a8c41",
+    "ObservableContinuation": "a010674b1b4bf8baf3cce8a33170d52d1edec3f249345f2df9c29aa690aa6b8a"
+  },
+  "checker_sha256": {
+    "check_observable_continuation.py": "b3200becc4d8f942224bc42ee059aa5c39d9f06f00774f56a9134a85251b9b55",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Four new results reuse the unchanged finite contingent selector and chance bridge. Selected actual execution, actual-candidate coverage and a separately supplied task-effect correspondence imply pointwise continuation and common-positive-total numerator bounds. In a fixed two-mode resource law, blind one-unit maintenance remains feasible while the full old-or-candidate extension has no listed single-route plan. Two units allow a charged current-mode observation followed by a single route, or a genuinely available parallel route without observation; both actually consume their budget and improve event mass from one to two. Stable faithful observation, permission, finite model coverage and resource law are supplied. This does not re-prove general observation-class criteria, prove ethical authority, bound search cost or model arbitrary noise/drift. The imported AlignmentInquiry and ChanceAdequacy declarations are rebuilt and audited separately as inherited.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "checked_application_examples": [
+    {
+      "claim": "with one budget unit the sensing plan cannot execute its subsequent response",
+      "kernel_checked": true,
+      "counted_as_new_theorem": false
+    },
+    {
+      "claim": "the generic selected-execution chance bridge instantiates to the funded sensing route using its actual output theorem",
+      "kernel_checked": true,
+      "counted_as_new_theorem": false
+    }
+  ],
+  "source_unchanged_during_check": true,
+  "modules": [
+    {
+      "module": "AlignmentInquiry",
+      "theorems": 9,
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "AlignmentInquiry.Plan"
+        },
+        {
+          "kind": "def",
+          "name": "AlignmentInquiry.branch"
+        },
+        {
+          "kind": "structure",
+          "name": "AlignmentInquiry.Interface"
+        },
+        {
+          "kind": "def",
+          "name": "AlignmentInquiry.run"
+        },
+        {
+          "kind": "def",
+          "name": "AlignmentInquiry.passes"
+        },
+        {
+          "kind": "def",
+          "name": "AlignmentInquiry.valid"
+        },
+        {
+          "kind": "def",
+          "name": "AlignmentInquiry.choose"
+        },
+        {
+          "kind": "def",
+          "name": "AlignmentInquiry.repertoire"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentInquiry.repertoire_complete"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentInquiry.passes_iff_actual_completion"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentInquiry.chosen_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentInquiry.chosen_exists_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentInquiry.no_listed_policy_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentInquiry.empty_uncertainty_never_certifies"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentInquiry.actual_covered_execution"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentInquiry.same_answer_same_selected_response"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentInquiry.observational_obstruction"
+        }
+      ],
+      "axiom_dependencies": {
+        "AlignmentInquiry.Plan": [],
+        "AlignmentInquiry.branch": [],
+        "AlignmentInquiry.Interface": [],
+        "AlignmentInquiry.run": [],
+        "AlignmentInquiry.passes": [],
+        "AlignmentInquiry.valid": [],
+        "AlignmentInquiry.choose": [],
+        "AlignmentInquiry.repertoire": [],
+        "AlignmentInquiry.repertoire_complete": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AlignmentInquiry.passes_iff_actual_completion": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AlignmentInquiry.chosen_sound": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AlignmentInquiry.chosen_exists_iff": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AlignmentInquiry.no_listed_policy_iff": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AlignmentInquiry.empty_uncertainty_never_certifies": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AlignmentInquiry.actual_covered_execution": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AlignmentInquiry.same_answer_same_selected_response": [],
+        "AlignmentInquiry.observational_obstruction": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "ChanceAdequacy",
+      "theorems": 8,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "ChanceAdequacy.mass"
+        },
+        {
+          "kind": "def",
+          "name": "ChanceAdequacy.IncludedOn"
+        },
+        {
+          "kind": "def",
+          "name": "ChanceAdequacy.total"
+        },
+        {
+          "kind": "theorem",
+          "name": "ChanceAdequacy.mass_monotone"
+        },
+        {
+          "kind": "theorem",
+          "name": "ChanceAdequacy.positive_added_event_strictly_increases_mass"
+        },
+        {
+          "kind": "theorem",
+          "name": "ChanceAdequacy.dirac_mass_positive_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "ChanceAdequacy.all_weights_preserve_mass_iff"
+        },
+        {
+          "kind": "def",
+          "name": "ChanceAdequacy.target"
+        },
+        {
+          "kind": "def",
+          "name": "ChanceAdequacy.Fulfilled"
+        },
+        {
+          "kind": "theorem",
+          "name": "ChanceAdequacy.fulfillment_gives_chance_floor"
+        },
+        {
+          "kind": "def",
+          "name": "ChanceAdequacy.repair"
+        },
+        {
+          "kind": "theorem",
+          "name": "ChanceAdequacy.repair_covers_target_and_candidate"
+        },
+        {
+          "kind": "theorem",
+          "name": "ChanceAdequacy.repair_adds_positive_new_protection"
+        },
+        {
+          "kind": "theorem",
+          "name": "ChanceAdequacy.positive_chance_can_miss_due_protection"
+        }
+      ],
+      "axiom_dependencies": {
+        "ChanceAdequacy.mass": [],
+        "ChanceAdequacy.IncludedOn": [],
+        "ChanceAdequacy.total": [],
+        "ChanceAdequacy.mass_monotone": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ChanceAdequacy.positive_added_event_strictly_increases_mass": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ChanceAdequacy.dirac_mass_positive_iff": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ChanceAdequacy.all_weights_preserve_mass_iff": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ChanceAdequacy.target": [],
+        "ChanceAdequacy.Fulfilled": [],
+        "ChanceAdequacy.fulfillment_gives_chance_floor": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ChanceAdequacy.repair": [],
+        "ChanceAdequacy.repair_covers_target_and_candidate": [
+          "propext"
+        ],
+        "ChanceAdequacy.repair_adds_positive_new_protection": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ChanceAdequacy.positive_chance_can_miss_due_protection": [
+          "propext"
+        ]
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "ObservableContinuation",
+      "theorems": 4,
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "ObservableContinuation.selected_execution_gives_continuation_bound"
+        },
+        {
+          "kind": "inductive",
+          "name": "ObservableContinuation.Query"
+        },
+        {
+          "kind": "inductive",
+          "name": "ObservableContinuation.Action"
+        },
+        {
+          "kind": "structure",
+          "name": "ObservableContinuation.State"
+        },
+        {
+          "kind": "def",
+          "name": "ObservableContinuation.queryCost"
+        },
+        {
+          "kind": "def",
+          "name": "ObservableContinuation.actionCost"
+        },
+        {
+          "kind": "def",
+          "name": "ObservableContinuation.routeWorks"
+        },
+        {
+          "kind": "def",
+          "name": "ObservableContinuation.probe"
+        },
+        {
+          "kind": "def",
+          "name": "ObservableContinuation.respond"
+        },
+        {
+          "kind": "def",
+          "name": "ObservableContinuation.interface"
+        },
+        {
+          "kind": "def",
+          "name": "ObservableContinuation.initial"
+        },
+        {
+          "kind": "def",
+          "name": "ObservableContinuation.states"
+        },
+        {
+          "kind": "def",
+          "name": "ObservableContinuation.oldWorks"
+        },
+        {
+          "kind": "def",
+          "name": "ObservableContinuation.candidate"
+        },
+        {
+          "kind": "def",
+          "name": "ObservableContinuation.extension"
+        },
+        {
+          "kind": "def",
+          "name": "ObservableContinuation.singlePlans"
+        },
+        {
+          "kind": "def",
+          "name": "ObservableContinuation.expandedPlans"
+        },
+        {
+          "kind": "def",
+          "name": "ObservableContinuation.maintain"
+        },
+        {
+          "kind": "def",
+          "name": "ObservableContinuation.inspect"
+        },
+        {
+          "kind": "def",
+          "name": "ObservableContinuation.parallelPlan"
+        },
+        {
+          "kind": "def",
+          "name": "ObservableContinuation.support"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservableContinuation.limited_budget_preserves_maintenance_but_not_extension"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservableContinuation.funded_observation_realizes_extension"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservableContinuation.funded_parallel_support_realizes_extension"
+        }
+      ],
+      "axiom_dependencies": {
+        "ObservableContinuation.selected_execution_gives_continuation_bound": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ObservableContinuation.Query": [],
+        "ObservableContinuation.Action": [],
+        "ObservableContinuation.State": [],
+        "ObservableContinuation.queryCost": [],
+        "ObservableContinuation.actionCost": [],
+        "ObservableContinuation.routeWorks": [],
+        "ObservableContinuation.probe": [],
+        "ObservableContinuation.respond": [],
+        "ObservableContinuation.interface": [],
+        "ObservableContinuation.initial": [],
+        "ObservableContinuation.states": [],
+        "ObservableContinuation.oldWorks": [],
+        "ObservableContinuation.candidate": [],
+        "ObservableContinuation.extension": [],
+        "ObservableContinuation.singlePlans": [],
+        "ObservableContinuation.expandedPlans": [],
+        "ObservableContinuation.maintain": [],
+        "ObservableContinuation.inspect": [],
+        "ObservableContinuation.parallelPlan": [],
+        "ObservableContinuation.support": [],
+        "ObservableContinuation.limited_budget_preserves_maintenance_but_not_extension": [],
+        "ObservableContinuation.funded_observation_realizes_extension": [],
+        "ObservableContinuation.funded_parallel_support_realizes_extension": []
+      },
+      "kernel_checked": true
+    }
+  ],
+  "artifact_sha256": {
+    "AlignmentInquiry.lean": "f40ad6179db326830edcdf8ec511f9069833a361f71181fd60166e0f72c0a23c",
+    "AlignmentInquiry.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "AlignmentInquiryAxiomAudit.lean": "414e388d17ba5699cc0bd2262e6c56f7996f194ad9fee8a35e49181f8fa6ae60",
+    "AlignmentInquiryAxiomAudit.log": "55db5ed4d3c74a7abcbef098ec27e1c3d40a125f19055ba350c0c288a0daae17",
+    "AlignmentInquirySignatures.lean": "82d3ea095538a7b6c047ec5296b015ffdc8741002f771b2c9322df7c3a3f18c2",
+    "AlignmentInquirySignatures.log": "a382f95d700c58c56eb9a340340292d078e2429c1daf72548a41b28f6ee200f4",
+    "ChanceAdequacy.lean": "501a26f1561c78fb552a550700fc730c296e6005cde5a0f0d2e0cb9ec11a8c41",
+    "ChanceAdequacy.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ChanceAdequacyAxiomAudit.lean": "51544c7effe09e77a7e4145d6b09c5a9b80a14f01442818bdc473fb12b94506b",
+    "ChanceAdequacyAxiomAudit.log": "8858690260708221de75301ff621855f8e4c7bc92fe36f414ffa06e32ae44626",
+    "ChanceAdequacySignatures.lean": "c0e598343a483b1515c48b076c499525a1a2d991202dfbd7ca3b024fbb4a3d61",
+    "ChanceAdequacySignatures.log": "a9b80591a134a882c0e3ad49159a6d8084a62585bd73a5511da0b963301bb1ca",
+    "Controls.lean": "e36fb33a8ee37d59b5421f71e8b4bec8ce05c4ac0a1ec5fbe887bd730bdc26d0",
+    "Controls.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ObservableContinuation.lean": "a010674b1b4bf8baf3cce8a33170d52d1edec3f249345f2df9c29aa690aa6b8a",
+    "ObservableContinuation.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ObservableContinuationAxiomAudit.lean": "87bd87722a882dcb9990211954e8794c0722e8f443c94d8a33cd83846f75efb4",
+    "ObservableContinuationAxiomAudit.log": "515d724d8b8b6110c24104d87643255375c748dc2d7a8ac53a078d356ed00d3d",
+    "ObservableContinuationSignatures.lean": "adf0e39667f1132faa06ec7ba6e8a859305a922d4b0b53a5063445b4e90d1f04",
+    "ObservableContinuationSignatures.log": "b743957e8e854b4582ebfc43acbb854bb9bd600df14da25c6c5a4229e1c0c4cc",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_observable_continuation.py": "b3200becc4d8f942224bc42ee059aa5c39d9f06f00774f56a9134a85251b9b55",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "status": "failed",
+  "utc": "20261007T211035.342464Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "standards-bridge-checks/20261007T211035.342464Z",
+  "source_sha256": {
+    "StandardsBridge": "ef9b8d22693096fe2e6d8eb97dd5485da98af2a67c692f31ed6806b7849209a8"
+  },
+  "checker_sha256": {
+    "check_standards_bridge.py": "27350d545a0d7e3237db4bb23d0fcef10050b0970869f59552747d4f4e7af862",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Acquired candidate-rule revision, exact assessment, maximal safe answering, evidence provenance and semantic transfer. Supplied candidate coverage, faithful acquisition, meanings and event laws; not a sufficient definition of understanding or moral authority.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "StandardsBridge.lean:48:5: error: unknown tactic\nStandardsBridge.lean:46:17: error: unsolved goals\ncase cons\nQ : Type\nh : Rule Q\no : Observation Q\nos : List (Observation Q)\nih : \u2200 (hs : List (Rule Q)), h \u2208 learn hs os \u2194 h \u2208 hs \u2227 Fits h os\nhs : List (Rule Q)\n\u22a2 ((h \u2208 hs \u2227 h o.fst = o.snd) \u2227 \u2200 (o : Observation Q), o \u2208 os \u2192 h o.fst = o.snd) \u2194\n    h \u2208 hs \u2227 h o.fst = o.snd \u2227 \u2200 (o : Observation Q), o \u2208 os \u2192 h o.fst = o.snd\nStandardsBridge.lean:61:20: error(lean.unknownIdentifier): Unknown identifier `not_forall`\nStandardsBridge.lean:61:2: error: Type mismatch: After simplification, term\n  bad\n has type\n  \u00ac\u2200 (o : Observation Q), o \u2208 evidence \u2192 h o.fst = o.snd\nbut is expected to have type\n  \u2203 o, o \u2208 evidence \u2227 h o.fst \u2260 o.snd\nStandardsBridge.lean:85:6: error: `simp` made no progress\nStandardsBridge.lean:169:13: error: Type mismatch\n  id\nhas type\n  ?m.2 \u2192 ?m.2\nbut is expected to have type\n  Nat\nStandardsBridge.lean:169:18: error: Type mismatch\n  Rule Bool\nhas type\n  Type\nof sort `Type 1` but is expected to have type\n  Nat\nof sort `Type`\n"
+}

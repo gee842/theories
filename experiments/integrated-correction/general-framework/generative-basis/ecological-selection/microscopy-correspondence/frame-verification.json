@@ -1,0 +1,41 @@
+{
+  "checks_passed": true,
+  "scope": "Predetermined first/last scene; exact all-pixel comparison with unmodified czifile. No event detection, segmentation, growth estimate or culture endpoint score.",
+  "script_sha256": "799ab9f89fbd52eb045dd289cf527fd14910d3e71e97b842d31c01b53300811d",
+  "reader_version": "2026.8.16",
+  "numpy_version": "2.5.3",
+  "matplotlib_version": "3.11.2",
+  "frames": [
+    {
+      "scene": 0,
+      "scene_name": "P6",
+      "t": 0,
+      "pixel_bytes": 12152832,
+      "pixel_sha256": "0d0164ae86afab30ce6c0b9b6ecd24724b1f56a0e628973890a7638fe230df20",
+      "min": 161,
+      "max": 1264,
+      "capture_utc": "2023-11-23T13:40:15.2352659Z",
+      "directory_position": 646496
+    },
+    {
+      "scene": 0,
+      "scene_name": "P6",
+      "t": 90,
+      "pixel_bytes": 12152832,
+      "pixel_sha256": "1242801bb9677b3f9dbf11286c8dab7a798061ded1d849d89c34783eba00931e",
+      "min": 1281,
+      "max": 4444,
+      "capture_utc": "2023-11-24T04:40:15.2995947Z",
+      "directory_position": 13127018336
+    }
+  ],
+  "display_percentiles": [
+    1,
+    99.9
+  ],
+  "display_limits": [
+    221.0,
+    2780.0
+  ],
+  "figure_sha256": "685e861dafc8be5029c4adfb0a488b5ee67b5f1494d181477e130f1e1990f7a4"
+}

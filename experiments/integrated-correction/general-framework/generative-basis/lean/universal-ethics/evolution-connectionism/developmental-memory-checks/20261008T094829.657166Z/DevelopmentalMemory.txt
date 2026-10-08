@@ -1,0 +1,21 @@
+DevelopmentalMemory.lean:298:99: error: unsolved goals
+hf : first 2 = 1
+hs : second 2 = -1
+⊢ ![1, 1, 1] 2 + ![1, 1, -1] 2 = 0 ∧
+    ![1, 1, 1] 2 + ![1, 1, -1] 2 + ![1, 1, -1] 2 + ![1, 1, -1] 2 + ![1, 1, -1] 2 = -3 ∧
+      ![1, 1, 1] 2 + ![1, 1, -1] 2 + ![1, 1, -1] 2 + ![1, 1, -1] 2 + ![1, 1, -1] 2 + ![1, 1, 1] 2 + ![1, 1, 1] 2 +
+            ![1, 1, 1] 2 +
+          ![1, 1, 1] 2 =
+        1
+DevelopmentalMemory.lean:308:14: error: unsolved goals
+case succ
+t : ℕ
+ih : develop Real.tanh 1 1 both ambiguous t 2 = 0
+⊢ Real.tanh
+      ((![1, 1, 1] 2 + ![1, 1, -1] 2) *
+          develop Real.tanh 1 1 (store 1 ![1, 1, -1] (store 1 ![1, 1, 1] fun x x_1 => 0)) ambiguous t 0 +
+        ((![1, 1, 1] 2 + ![1, 1, -1] 2) *
+            develop Real.tanh 1 1 (store 1 ![1, 1, -1] (store 1 ![1, 1, 1] fun x x_1 => 0)) ambiguous t 1 +
+          (![1, 1, 1] 2 + -![1, 1, -1] 2) *
+            develop Real.tanh 1 1 (store 1 ![1, 1, -1] (store 1 ![1, 1, 1] fun x x_1 => 0)) ambiguous t 2)) =
+    0

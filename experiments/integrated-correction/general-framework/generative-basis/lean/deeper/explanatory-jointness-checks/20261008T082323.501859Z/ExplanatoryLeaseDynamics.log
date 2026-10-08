@@ -1,0 +1,54 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-jointness-boyoqzmm/ExplanatoryLeaseDynamics.lean:55:24: error: Application type mismatch: The argument
+  i
+has type
+  Holds (model shared) (Node.held false a✝¹) (Test.atom false)
+of sort `Prop` but is expected to have type
+  Bool
+of sort `Type` in the application
+  mark vacant i
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-jointness-boyoqzmm/ExplanatoryLeaseDynamics.lean:55:45: error: Application type mismatch: The argument
+  i
+has type
+  Holds (model shared) (Node.held false a✝¹) (Test.atom false)
+of sort `Prop` but is expected to have type
+  Bool
+of sort `Type` in the application
+  mark vacant i
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-jointness-boyoqzmm/ExplanatoryLeaseDynamics.lean:62:10: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  mark ?busy ?slot ?slot
+in the target expression
+  mark vacant i (if shared = true then false else true) = false
+
+shared : Bool
+final : Occupancy
+i : Bool
+hi : Access shared false i
+left✝ : vacant i = false
+fresh : mark vacant i (if shared = true then false else true) = false
+right✝ : final = mark (mark vacant i) (if shared = true then false else true)
+eq : i = if shared = true then false else true
+⊢ False
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-jointness-boyoqzmm/ExplanatoryLeaseDynamics.lean:89:2: error: Tactic `apply` failed: could not unify the conclusion of `Trace.cons`
+  Trace ?m.12 ?m.13 (?m.15 :: ?m.16) (mark vacant slot)
+with the goal
+  Trace (process shared) vacant (episode shared task) vacant
+
+Note: The full type of `Trace.cons` is
+  Process.step ?m.12 ?m.13 ?m.15 ?m.14 →
+    Trace ?m.12 ?m.14 ?m.16 (mark vacant slot) → Trace ?m.12 ?m.13 (?m.15 :: ?m.16) (mark vacant slot)
+
+shared task : Bool
+slot : Bool := if shared = true then false else task
+⊢ Trace (process shared) vacant (episode shared task) vacant
+'Generative.ExplanatoryLeaseDynamics.mark_at_slot' depends on axioms: [propext]
+'Generative.ExplanatoryLeaseDynamics.mark_at_other' depends on axioms: [propext]
+'Generative.ExplanatoryLeaseDynamics.clear_after_fresh_mark' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryLeaseDynamics.activity_round' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryLeaseDynamics.ordinary_step_has_native_round' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryLeaseDynamics.joint_answer_iff_overlapping_acquisitions' depends on axioms: [propext, sorryAx]
+'Generative.ExplanatoryLeaseDynamics.shared_overlap_impossible' depends on axioms: [propext, sorryAx]
+'Generative.ExplanatoryLeaseDynamics.separate_overlap_realized' depends on axioms: [propext, sorryAx]
+'Generative.ExplanatoryLeaseDynamics.episode_returns_vacant' depends on axioms: [sorryAx]
+'Generative.ExplanatoryLeaseDynamics.arbitrary_serial_episodes' depends on axioms: [sorryAx]
+'Generative.ExplanatoryLeaseDynamics.serial_success_does_not_remove_overlap_conflict' depends on axioms: [propext,
+ sorryAx]

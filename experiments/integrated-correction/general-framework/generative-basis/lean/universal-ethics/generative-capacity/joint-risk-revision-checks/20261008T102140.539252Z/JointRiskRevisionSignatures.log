@@ -1,0 +1,60 @@
+JointRiskRevision.joint_bounds (t : JointRiskRevision.Table) :
+  t.both ≤ JointRiskRevision.leftRisk t ∧
+    t.both ≤ JointRiskRevision.rightRisk t ∧
+      JointRiskRevision.leftRisk t + JointRiskRevision.rightRisk t ≤ JointRiskRevision.mass t + t.both
+JointRiskRevision.compatible_iff (n l r b : Nat) : JointRiskRevision.Compatible n l r b ↔ b ≤ l ∧ b ≤ r ∧ l + r ≤ n + b
+JointRiskRevision.left_bound_suffices (t : JointRiskRevision.Table) (budget : Nat)
+  (h : JointRiskRevision.leftRisk t ≤ budget) : JointRiskRevision.WithinJointBound t budget
+JointRiskRevision.right_bound_suffices (t : JointRiskRevision.Table) (budget : Nat)
+  (h : JointRiskRevision.rightRisk t ≤ budget) : JointRiskRevision.WithinJointBound t budget
+JointRiskRevision.sound_drift_transfer (before after : JointRiskRevision.Table) (allowance budget : Nat)
+  (hDrift : after.both ≤ before.both + allowance) (hRoom : before.both + allowance ≤ budget) :
+  JointRiskRevision.WithinJointBound after budget
+JointRiskRevision.dispersed_record :
+  JointRiskRevision.record JointRiskRevision.Mode.dispersed = { neither := 6, leftOnly := 2, rightOnly := 2, both := 0 }
+JointRiskRevision.shared_record :
+  JointRiskRevision.record JointRiskRevision.Mode.shared = { neither := 9, leftOnly := 0, rightOnly := 0, both := 1 }
+JointRiskRevision.revised_record :
+  JointRiskRevision.record JointRiskRevision.Mode.revised = { neither := 8, leftOnly := 1, rightOnly := 1, both := 0 }
+JointRiskRevision.same_mass (m : JointRiskRevision.Mode) : JointRiskRevision.mass (JointRiskRevision.record m) = 10
+JointRiskRevision.better_marginals_worse_joint :
+  JointRiskRevision.leftRisk (JointRiskRevision.record JointRiskRevision.Mode.shared) <
+      JointRiskRevision.leftRisk (JointRiskRevision.record JointRiskRevision.Mode.dispersed) ∧
+    JointRiskRevision.rightRisk (JointRiskRevision.record JointRiskRevision.Mode.shared) <
+        JointRiskRevision.rightRisk (JointRiskRevision.record JointRiskRevision.Mode.dispersed) ∧
+      (JointRiskRevision.record JointRiskRevision.Mode.dispersed).both <
+        (JointRiskRevision.record JointRiskRevision.Mode.shared).both
+JointRiskRevision.repair_preserves_marginals_and_reduces_joint :
+  JointRiskRevision.leftRisk (JointRiskRevision.record JointRiskRevision.Mode.revised) =
+      JointRiskRevision.leftRisk (JointRiskRevision.record JointRiskRevision.Mode.shared) ∧
+    JointRiskRevision.rightRisk (JointRiskRevision.record JointRiskRevision.Mode.revised) =
+        JointRiskRevision.rightRisk (JointRiskRevision.record JointRiskRevision.Mode.shared) ∧
+      (JointRiskRevision.record JointRiskRevision.Mode.revised).both <
+        (JointRiskRevision.record JointRiskRevision.Mode.shared).both
+JointRiskRevision.joint_improvement_can_increase_any_loss :
+  (JointRiskRevision.record JointRiskRevision.Mode.revised).both <
+      (JointRiskRevision.record JointRiskRevision.Mode.shared).both ∧
+    JointRiskRevision.anyLoss (JointRiskRevision.record JointRiskRevision.Mode.shared) <
+      JointRiskRevision.anyLoss (JointRiskRevision.record JointRiskRevision.Mode.revised)
+JointRiskRevision.no_marginal_only_joint_estimator :
+  ¬∃ f,
+      ∀ (m : JointRiskRevision.Mode),
+        f (JointRiskRevision.leftRisk (JointRiskRevision.record m))
+            (JointRiskRevision.rightRisk (JointRiskRevision.record m)) =
+          (JointRiskRevision.record m).both
+JointRiskRevision.fresh_joint_reading_distinguishes :
+  JointRiskRevision.reading JointRiskRevision.Mode.shared 0 ≠ JointRiskRevision.reading JointRiskRevision.Mode.revised 0
+JointRiskRevision.positive_joint_risk_can_meet_bound :
+  0 < (JointRiskRevision.record JointRiskRevision.Mode.shared).both ∧
+    JointRiskRevision.WithinJointBound (JointRiskRevision.record JointRiskRevision.Mode.shared) 1
+JointRiskRevision.marginal_information_leaves_exact_two_options (b : Nat) :
+  JointRiskRevision.Compatible 10 1 1 b ↔ b = 0 ∨ b = 1
+JointRiskRevision.diagnostic_choice_changes_with_joint_weight :
+  JointRiskRevision.diagnosticLoss 1 (JointRiskRevision.record JointRiskRevision.Mode.shared) <
+      JointRiskRevision.diagnosticLoss 1 (JointRiskRevision.record JointRiskRevision.Mode.dispersed) ∧
+    JointRiskRevision.diagnosticLoss 3 (JointRiskRevision.record JointRiskRevision.Mode.dispersed) <
+      JointRiskRevision.diagnosticLoss 3 (JointRiskRevision.record JointRiskRevision.Mode.shared)
+JointRiskRevision.diagnostic_shared_preferred_iff (jointWeight : Nat) :
+  JointRiskRevision.diagnosticLoss jointWeight (JointRiskRevision.record JointRiskRevision.Mode.shared) <
+      JointRiskRevision.diagnosticLoss jointWeight (JointRiskRevision.record JointRiskRevision.Mode.dispersed) ↔
+    jointWeight < 2

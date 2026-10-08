@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "scope": "Numerical algorithm, extraction bindings, chronological input isolation and independent score/count arithmetic; no universal theorem or independent scientific review.",
+  "enumerated_forests": 49,
+  "max_enumeration_error": 1.3322676295501878e-15,
+  "transition_bins_checked_by_quadrature": 51,
+  "max_quadrature_error": 2.0317081350640365e-14,
+  "anti_leakage": [
+    {
+      "time": 3,
+      "forecast_rows": 48,
+      "future_outcomes_flags_and_parent_records_changed": true
+    },
+    {
+      "time": 10,
+      "forecast_rows": 48,
+      "future_outcomes_flags_and_parent_records_changed": true
+    },
+    {
+      "time": 17,
+      "forecast_rows": 48,
+      "future_outcomes_flags_and_parent_records_changed": true
+    }
+  ],
+  "rejects_unfiltered_future": true,
+  "forecast_rows_checked": 11520,
+  "donor_rows_checked": 10848,
+  "grid_sensitivity": [
+    {
+      "grid": 50,
+      "model": "constant_stage",
+      "max_forecast_difference": 0.0,
+      "max_brier_difference": 0.0
+    },
+    {
+      "grid": 50,
+      "model": "changing_stage",
+      "max_forecast_difference": 0.0017774277748103806,
+      "max_brier_difference": 5.067393350358107e-05
+    },
+    {
+      "grid": 50,
+      "model": "inherited_lineage",
+      "max_forecast_difference": 0.002289437239046843,
+      "max_brier_difference": 6.780279291479507e-05
+    },
+    {
+      "grid": 200,
+      "model": "constant_stage",
+      "max_forecast_difference": 0.0,
+      "max_brier_difference": 0.0
+    },
+    {
+      "grid": 200,
+      "model": "changing_stage",
+      "max_forecast_difference": 0.00030451392655950205,
+      "max_brier_difference": 1.2608384622386781e-05
+    },
+    {
+      "grid": 200,
+      "model": "inherited_lineage",
+      "max_forecast_difference": 0.000842138793859748,
+      "max_brier_difference": 1.7182604652415945e-05
+    }
+  ],
+  "bindings": {
+    "check_forecast.py": "04f814b4061700b35239257d9b6ccf6682d7178ad8d208370a81fcf5a152a939",
+    "FORECAST-PROTOCOL.md": "15aa9d30d28b2e628da6bfd125714c6b7b1118ce75721adb7b568b7117d7702d",
+    "forecast_lineages.py": "41978bc92fb0ecf14720ac01e06a519a0a5eb3e26221e2d90a6ec5aa4d039a79",
+    "verification.json": "5ec7502c73b5588971336e85a173a6a903b749a8e12fcb7abd2fa7fb8ff3468e",
+    "forecast-50-results.json": "e2e2069d94a3e58b1de6cea546ffc8e9b0ed52e431050c531f9f7260f71283ff",
+    "forecast-100-results.json": "7387b248b1a21288f36270bed4a108312f31711b48f4ebdf86dd0fe59e3b7201",
+    "forecast-200-results.json": "de036590c9f1e0536e3d8d08f2b5c934b475628f6c7666ce262ee1c7b4f79d5f"
+  },
+  "source_manifest_sha256": "102e47418fde32c6101b33a08f20f09d228986ae950294eccfa57d33828a1260",
+  "colgen_manifest_sha256": "e870660027c7021cb1e2f8392a16529ee3b59bdd3c2fbf90c3a46d23100c685d"
+}

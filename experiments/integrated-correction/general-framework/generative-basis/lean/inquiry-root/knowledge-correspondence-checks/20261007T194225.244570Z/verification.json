@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-07T19:42:26.636003+00:00",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/KnowledgeCorrespondence.lean",
+  "source_sha256": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+  "checker_sha256": "347f6dbf14bbe21b95313897d0dda71462b6a9f90fe4bebc3f78cf39a85772c4",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/knowledge-correspondence-checks/20261007T194225.244570Z",
+  "theorems": 20,
+  "explicit_declaration_audits": 34,
+  "dependencies": {
+    "Generative.KnowledgeCorrespondence.SoundOn": [],
+    "Generative.KnowledgeCorrespondence.ExactOn": [],
+    "Generative.KnowledgeCorrespondence.Resolves": [],
+    "Generative.KnowledgeCorrespondence.exact_is_sound": [],
+    "Generative.KnowledgeCorrespondence.exact_requires_resolution": [],
+    "Generative.KnowledgeCorrespondence.decoder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Generative.KnowledgeCorrespondence.resolution_admits_decoder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Generative.KnowledgeCorrespondence.exact_possible_iff_resolves": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Generative.KnowledgeCorrespondence.conflicting_fibre_forces_abstention": [],
+    "Generative.KnowledgeCorrespondence.sound_restricts_domain": [],
+    "Generative.KnowledgeCorrespondence.refinement_preserves_resolution": [],
+    "Generative.KnowledgeCorrespondence.preserved_record_preserves_exactness": [],
+    "Generative.KnowledgeCorrespondence.History": [],
+    "Generative.KnowledgeCorrespondence.signal": [],
+    "Generative.KnowledgeCorrespondence.target": [],
+    "Generative.KnowledgeCorrespondence.allHistories": [],
+    "Generative.KnowledgeCorrespondence.normal": [],
+    "Generative.KnowledgeCorrespondence.reference": [],
+    "Generative.KnowledgeCorrespondence.pairedEvidence": [],
+    "Generative.KnowledgeCorrespondence.decodePair": [],
+    "Generative.KnowledgeCorrespondence.direct": [],
+    "Generative.KnowledgeCorrespondence.calibrated_pair_exact": [],
+    "Generative.KnowledgeCorrespondence.raw_signal_not_resolving": [],
+    "Generative.KnowledgeCorrespondence.no_exact_raw_decoder": [],
+    "Generative.KnowledgeCorrespondence.every_sound_raw_decoder_abstains": [],
+    "Generative.KnowledgeCorrespondence.direct_exact_on_normal": [],
+    "Generative.KnowledgeCorrespondence.direct_fails_on_expanded_domain": [],
+    "Generative.KnowledgeCorrespondence.lucky_actual_correct": [],
+    "Generative.KnowledgeCorrespondence.parity_record_exact": [],
+    "Generative.KnowledgeCorrespondence.double_reversal_exact": [],
+    "Generative.KnowledgeCorrespondence.FixedContentSafe": [],
+    "Generative.KnowledgeCorrespondence.true_content_trivially_safe": [],
+    "Generative.KnowledgeCorrespondence.abstention_sound": [],
+    "Generative.KnowledgeCorrespondence.abstention_not_exact": []
+  },
+  "commands": [
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "-o",
+      "KnowledgeCorrespondence.olean",
+      "KnowledgeCorrespondence.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean",
+      "KnowledgeCorrespondenceAudit.lean"
+    ]
+  ],
+  "log_sha256": {
+    "compile.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axioms.txt": "c377f105cfd06f0e0910406603df50a3a522626e83669b2e8308f8018e2c7f21"
+  },
+  "scope": "Exact answers relative to supplied domains, evidence and target meanings; abstract decoder existence uses classical choice. No general definition of knowledge, empirical calibration, cognitive uptake or G0 necessity is proved."
+}

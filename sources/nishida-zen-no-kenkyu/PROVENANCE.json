@@ -1,0 +1,18 @@
+{
+  "work": "善の研究",
+  "author": "西田幾多郎 / Nishida Kitarō",
+  "original_publication_year": 1911,
+  "source_url": "https://www.aozora.gr.jp/cards/000182/files/946_74853.html",
+  "resolved_url": "https://www.aozora.gr.jp/cards/000182/files/946_74853.html",
+  "retrieved_at_utc": "2026-10-08T07:45:29.767188+00:00",
+  "response_headers": {
+    "Content-Type": "text/html",
+    "Last-Modified": "Wed, 03 Jul 2024 17:39:43 GMT",
+    "ETag": "\"48507-61c5b50c7ae0c\""
+  },
+  "file": "aozora-original.html",
+  "sha256": "60e311b1826e53dbc9aaa779cd1efe34ec25941e2e64f683499210cbdcd5c69e",
+  "bytes": 296199,
+  "preservation": "Original HTTP response body, unmodified. Aozora electronic edition, not a scan of the 1911 edition. No edition-wide textual collation claimed.",
+  "reading_scope": "Publication prefaces; Part II chapter 4 in full; selected paragraphs of Part II chapters 1, 3, 5 and 6 on direct ground, differentiation, causality, unity and universal scope. Prior repository reading covered Part I chapter 1 and prefaces. Retaining the whole HTML does not imply reading the entire book."
+}

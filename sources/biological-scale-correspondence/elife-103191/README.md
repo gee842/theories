@@ -1,0 +1,11 @@
+# Haley et al.: food history and exploitation
+
+Original sources for Haley, Chen, Aoi and Chalasani (2025), *Accept–reject decision-making revealed via a quantitative and ethological study of C. elegans foraging*, [eLife 13:RP103191](https://doi.org/10.7554/eLife.103191). The final article was published 10 September 2025; the repository retains its 2024 project name. Article and publisher source data are CC BY 4.0.
+
+The original Figure 4 source-data-3 workbook contains published coefficients, summaries and 172,463 rows from **100 stochastic imputations of encounters from 198 animals** in the mixed-density test. These are not 172,463 independent observations. The rows carry worm, imputation and sensed-encounter indices; sensed-encounter index is not a stable raw-event identifier across imputations. Plate identifiers are absent. Behavioral probabilities come from the authors' GMM/QDA analysis, not measured neural beliefs or directly observed binary decisions.
+
+Two original MATLAB files explain coefficient provenance and reconstruction. They come from commit `fd564615460f57f29887c96f3baa9c1347538953` of [the authors' repository](https://github.com/shreklab/Haley-et-al-2024). Its MIT license is preserved as `LICENSE`. The scripts were inspected, not executed in MATLAB. `article.xml` is the original Europe PMC full text. [Manifest](manifest.json) records URLs, byte counts, licenses and SHA-256 values; none of these files has been normalized or edited.
+
+The single-density fit is evaluated on mixed-density encounters in `fig4_matching.m`. `modelExploit.m` resolves the time-covariate ambiguity: `timeOffSinceExploit` subtracts cumulative off-patch time at the most recent earlier simulated exploitation. Earlier encounter and exploitation densities start from the acclimation density. The original encounter probabilities are themselves estimated from behavior; conditioning on sensed encounters does not predict the probability of sensing.
+
+[New analysis and limits](../../../experiments/integrated-correction/general-framework/generative-basis/biological-scale-correspondence/continuation/README.md). The much larger encounter MAT file and unused training-prediction workbook inspected in temporary storage are not imported as redundant sources; no result here depends on parsing that MAT file.

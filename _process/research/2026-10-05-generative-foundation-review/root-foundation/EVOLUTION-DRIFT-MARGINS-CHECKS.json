@@ -1,0 +1,99 @@
+{
+  "checked_at_utc": "2026-10-08T11:55:30.024630+00:00",
+  "status": "passed",
+  "scope": "Owned bounded-change and native-margin proof bindings, links, source preservation and C14 integration; no new compilation or full-table review certification.",
+  "proof_receipt_sha256": "fb69aa5bbabbedfa16cbe61c6e432d77f97316345954fd853191f421c45651f5",
+  "proof_modules": [
+    {
+      "module": "ConnectionistRecovery",
+      "theorems": 29,
+      "audits": 41,
+      "source_sha256": "0c59e2e5d52c5a2fe08c0bbca68b881b417c753103d9ae001ab0b0f35c41ac29"
+    },
+    {
+      "module": "DevelopmentalMemory",
+      "theorems": 28,
+      "audits": 44,
+      "source_sha256": "272a651cf3daaa4e1a44092e42a1589d9e13ad0c86687e71dc7f11d337ef1bd5"
+    },
+    {
+      "module": "UpdaterConsequences",
+      "theorems": 36,
+      "audits": 57,
+      "source_sha256": "56f99117dac7f45781f56e59c77d04ba0872bebe6e03f5778e1b46cc4c59b2c6"
+    },
+    {
+      "module": "CalibratedUpdater",
+      "theorems": 30,
+      "audits": 59,
+      "source_sha256": "a5b8a3c6defa189009367933defb10fe8d0ea2f39e9df368a5594ada60c993ab"
+    },
+    {
+      "module": "CalibrationRenewal",
+      "theorems": 34,
+      "audits": 50,
+      "source_sha256": "87f68ddcd5446dd536c6746aa1258e5637232474d28ebd51158fbdb95145147f"
+    },
+    {
+      "module": "DriftMargins",
+      "theorems": 42,
+      "audits": 56,
+      "source_sha256": "07493b4ca85648750b0290290f23ecbc5039bb0079cb216c8420e6bfeaa4257d"
+    }
+  ],
+  "new_theorems": 42,
+  "new_audits": 56,
+  "inherited_audits": 251,
+  "owned_local_links_checked": 27,
+  "original_pdf_sha256": "a4da950c2db561a67ca938a66543dc6153553d3939deb4e2cf5f089ddfc7af27",
+  "six_broad_completion_requirements_preserved": true,
+  "other_entries_preserved_at_mutation": 93,
+  "other_rendered_lines_preserved_at_mutation": true,
+  "C14_render_matches": true,
+  "full_render_matches_observation_only": true,
+  "pending_global_review": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CHOICE-AND-GENERATIVE-CONTEXT.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORE-CONSTRAINT-AND-WISDOM.md",
+      "sources/15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-ARGUMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/OBSERVABLE-CONTINUATION-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/RISK-CONDITIONING-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-RESPONSE-NECESSITY.md"
+    ],
+    "removed_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md"
+    ]
+  },
+  "global_structural_validation_observation_only": [],
+  "owned_reviewed_sources": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-DRIFT-MARGINS.md": "7c82de505727804f2e6bbab12bc42ac0c1eaf121aaea2ad6f642ee24f278ed86",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-DRIFT-MARGINS-PROTOCOL.md": "ee1cd33e3819a5f6c5955c5b8b409643b8cf3d58bf2233ff60210b85077e20bb",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/DriftMargins.lean": "07493b4ca85648750b0290290f23ecbc5039bb0079cb216c8420e6bfeaa4257d",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/drift-margins-verification.json": "fb69aa5bbabbedfa16cbe61c6e432d77f97316345954fd853191f421c45651f5",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CALIBRATION-RENEWAL.md": "8fe18f4da74da1f350db2ab4d55d014b102049eb0d795cb40f83d84f39d345d1",
+    "sources/15-codex-theory-conversations/2026-10-08-evolution-theoretical-focus.md": "31d765d1da6b8be605e72e24e87ad0195d79ff593a36824fa207d579853aa2cb",
+    "sources/evolutionary-selection/comparative-direction/README.md": "c3a95e2a0ca751ad949bb05477247063a440acc5c82ad5d890bb0e0a1fc7233b"
+  },
+  "documentary_checker_sha256": "2ab3a61a105ece99fe219163e22aaada127ea6a971bbc163baebfcaec552d801"
+}

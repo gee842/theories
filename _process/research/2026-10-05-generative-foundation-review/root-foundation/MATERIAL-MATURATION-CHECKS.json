@@ -1,0 +1,163 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T10:56:36.862469+00:00",
+  "scope": "Owned links, original bytes, kernel-check receipt and source bindings, C14 and six preserved broader requirements. No empirical test or repository-wide review.",
+  "links_checked": 28,
+  "links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-MATURATION-INTEGRATION.md",
+      "reference": "CONTACT-RECONSTRUCTION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-MATURATION-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-MATURATION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/material-maturation-verification/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-MATURATION-INTEGRATION.md",
+      "reference": "../../../../sources/evolutionary-selection/material-maturation/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-MATURATION-INTEGRATION.md",
+      "reference": "EVOLUTION-UPDATER-CONSEQUENCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-MATURATION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/MaterialMaturation.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-MATURATION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/material-maturation-verification/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-MATURATION-INTEGRATION.md",
+      "reference": "MATERIAL-MATURATION-CHECKS.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/material-maturation-verification/README.md",
+      "reference": "../MaterialMaturation.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/material-maturation-verification/README.md",
+      "reference": "check.py"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/material-maturation-verification/README.md",
+      "reference": "verification.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/material-maturation-verification/README.md",
+      "reference": "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-MATURATION-INTEGRATION.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/material-maturation/README.md",
+      "reference": "bianconi2013.xml"
+    },
+    {
+      "from": "sources/evolutionary-selection/material-maturation/README.md",
+      "reference": "manifest.json"
+    },
+    {
+      "from": "sources/evolutionary-selection/material-maturation/README.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-MATURATION-INTEGRATION.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "reference": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-MATURATION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md#material-growth-and-preparation"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "MATERIAL-MATURATION-INTEGRATION.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md",
+      "reference": "MaterialMaturation.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md",
+      "reference": "material-maturation-verification/README.md"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "reference": "evolutionary-selection/material-maturation/README.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "EVOLUTIONARY-ORGANIZATION.md#material-growth-and-preparation"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-RECONSTRUCTION-INTEGRATION.md",
+      "reference": "MATERIAL-MATURATION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-MATURATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "MATERIAL-MATURATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "MATERIAL-MATURATION-INDEX-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "MATERIAL-MATURATION-CHECKS.json"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-MATURATION-INTEGRATION.md"
+    }
+  ],
+  "original_sources_checked": 1,
+  "original_bytes": 116958,
+  "new_Lean_theorems": 28,
+  "new_declaration_audits": 44,
+  "closure_declaration_audits": 267,
+  "owned_index_insertions": 9,
+  "full_theory_requirements_preserved": 6,
+  "other_chain_entries_preserved_at_edit": 92,
+  "C14_matches_paired_data": true,
+  "shared_full_render_matches": true,
+  "shared_structural_errors": [],
+  "shared_reviews_pending": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [],
+    "removed_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md"
+    ]
+  },
+  "artifact_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-MATURATION-INTEGRATION.md": "d57bd1b8d8accc5ef085bada845d704afa043fcab0c16d9a965c8d65d441a334",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/material-maturation-verification/README.md": "655463b75836a2e5ae59ad0573cfe63f441f3e7ab9632795fae5f18a4ddcc8a2",
+    "sources/evolutionary-selection/material-maturation/README.md": "07de941c3d2d04ae99a3ca4c8cb6a63f93c0a6e799c460b7dd2bf8de453f67b4",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/MaterialMaturation.lean": "129096807280cc6c6a3b3a06f2c70eeca32d108ec16dc145db7cf5222446b915",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/material-maturation-verification/verification.json": "f45b6dffcdbec9958f379046dabdc4e2963a0313ca99c1843e6d17ab9cb1e8d5",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MATERIAL-MATURATION-INDEX-EDITS.json": "0489ac481edd1ab2d7f045027769341f2e56405f72d09cfde01f9770338bd9f2",
+    "sources/evolutionary-selection/material-maturation/manifest.json": "6294d866395684b11f2a999cf74c27479fec601f98f4a9132c4631bdc17f1185"
+  },
+  "checker_sha256": "7e59be3951f9addfebd65001c22935f6b6a6a2cf672f876890f66856aaf30a8f"
+}

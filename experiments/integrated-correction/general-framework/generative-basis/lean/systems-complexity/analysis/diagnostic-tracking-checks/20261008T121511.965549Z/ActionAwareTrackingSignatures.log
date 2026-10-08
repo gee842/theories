@@ -1,0 +1,68 @@
+ActionAwareTracking.predicted_step_bound (q : ℝ) (hq : 0 ≤ q) (hq1 : q ≤ 1) (reading actual increment : ℕ → ℝ)
+  (initial : ℝ) (n : ℕ) :
+  ActionAwareTracking.error q reading actual increment initial (n + 1) ≤
+    q * ActionAwareTracking.error q reading actual increment initial n +
+      ActionAwareTracking.residual q reading actual increment n
+ActionAwareTracking.calibration_residual_bound
+  (before after beforeReading afterReading theta probe disturbance beforeBound afterBound disturbanceBound : ℝ)
+  (hlaw : after = before + theta * probe + disturbance) (hb : |beforeReading - before| ≤ beforeBound)
+  (ha : |afterReading - after| ≤ afterBound) (hd : |disturbance| ≤ disturbanceBound) :
+  |afterReading - beforeReading - theta * probe| ≤ afterBound + beforeBound + disturbanceBound
+ActionAwareTracking.acquired_response_bound
+  (before after beforeReading afterReading theta probe disturbance beforeBound afterBound disturbanceBound : ℝ)
+  (hp : probe ≠ 0) (hlaw : after = before + theta * probe + disturbance) (hb : |beforeReading - before| ≤ beforeBound)
+  (ha : |afterReading - after| ≤ afterBound) (hd : |disturbance| ≤ disturbanceBound) :
+  |ActionAwareTracking.acquiredResponse beforeReading afterReading probe - theta| ≤
+    (afterBound + beforeBound + disturbanceBound) / |probe|
+ActionAwareTracking.acquired_response_exact (before theta probe : ℝ) (hp : probe ≠ 0) :
+  ActionAwareTracking.acquiredResponse before (before + theta * probe) probe = theta
+ActionAwareTracking.zero_probe_has_no_response_distinction (before theta other : ℝ) :
+  before + theta * 0 = before + other * 0
+ActionAwareTracking.controlled_residual_bound (current next theta learned command disturbance disturbanceBound : ℝ)
+  (hlaw : next = current + theta * command + disturbance) (hd : |disturbance| ≤ disturbanceBound) :
+  |learned * command - (next - current)| ≤ |learned - theta| * |command| + disturbanceBound
+ActionAwareTracking.calibration_transfers_to_action
+  (before after beforeReading afterReading theta probe calibrationDisturbance beforeBound afterBound calibrationBound
+    current next command useDisturbance useBound : ℝ)
+  (hp : probe ≠ 0) (hcal : after = before + theta * probe + calibrationDisturbance)
+  (hb : |beforeReading - before| ≤ beforeBound) (ha : |afterReading - after| ≤ afterBound)
+  (hd : |calibrationDisturbance| ≤ calibrationBound) (huse : next = current + theta * command + useDisturbance)
+  (hu : |useDisturbance| ≤ useBound) :
+  |ActionAwareTracking.acquiredResponse beforeReading afterReading probe * command - (next - current)| ≤
+    (afterBound + beforeBound + calibrationBound) / |probe| * |command| + useBound
+ActionAwareTracking.command_limit_from_precision (precision magnitude allowance : ℝ) (hp : 0 < precision) :
+  precision * magnitude ≤ allowance ↔ magnitude ≤ allowance / precision
+ActionAwareTracking.controlled_step_bound (q : ℝ) (hq : 0 ≤ q) (hq1 : q ≤ 1)
+  (reading actual learned command theta disturbance : ℕ → ℝ) (initial : ℝ) (n : ℕ)
+  (readingBound responseBound commandBound disturbanceBound : ℝ)
+  (hlaw : actual (n + 1) = actual n + theta n * command n + disturbance n) (hr : |reading n - actual n| ≤ readingBound)
+  (hp : |learned n - theta n| ≤ responseBound) (hu : |command n| ≤ commandBound)
+  (hd : |disturbance n| ≤ disturbanceBound) :
+  ActionAwareTracking.error q reading actual (fun i => learned i * command i) initial (n + 1) ≤
+    q * ActionAwareTracking.error q reading actual (fun i => learned i * command i) initial n +
+      ((1 - q) * readingBound + responseBound * commandBound + disturbanceBound)
+ActionAwareTracking.prediction_converges (q : ℝ) (hq : 0 ≤ q) (hq1 : q < 1) (reading actual increment : ℕ → ℝ)
+  (initial : ℝ) (hw : Filter.Tendsto (ActionAwareTracking.residual q reading actual increment) Filter.atTop (nhds 0)) :
+  Filter.Tendsto (ActionAwareTracking.error q reading actual increment initial) Filter.atTop (nhds 0)
+ActionAwareTracking.retained_radius_sound (q : ℝ) (hq : 0 ≤ q) (hq1 : q ≤ 1)
+  (reading actual increment inputBound : ℕ → ℝ) (initial initialBound : ℝ) (n : ℕ)
+  (hi : ActionAwareTracking.error q reading actual increment initial 0 ≤ initialBound)
+  (hw : ∀ i < n, ActionAwareTracking.residual q reading actual increment i ≤ inputBound i) :
+  ActionAwareTracking.error q reading actual increment initial n ≤ SituatedTracking.radius q inputBound initialBound n
+ActionAwareTracking.acquired_response_tracks_motion (q : ℝ) (n : ℕ) :
+  ActionAwareTracking.estimate q (fun t => 3 + 3 * ↑t) (fun x => ActionAwareTracking.acquiredResponse 0 3 1) 3 n =
+    3 + 3 * ↑n
+ActionAwareTracking.ignoring_action_retains_lag (n : ℕ) :
+  SituatedTracking.error 0 (fun t => 3 + 3 * ↑t) (fun t => 3 + 3 * ↑t) 3 (n + 1) = 3
+ActionAwareTracking.shrinking_parameter_error_can_be_amplified :
+  Filter.Tendsto (fun n => (1 / 2) ^ n) Filter.atTop (nhds 0) ∧ ∀ (n : ℕ), (1 / 2) ^ n * 2 ^ n = 1
+ActionAwareTracking.finite_relations_eventually_certify.{u_1} {ι : Type u_1} (tasks : Finset ι)
+  (actual retained radius cap : ι → ℕ → ℝ) (margin : ι → ℝ) (hm : ∀ j ∈ tasks, 0 < margin j)
+  (he : ∀ j ∈ tasks, ∀ (n : ℕ), |retained j n - actual j n| ≤ radius j n)
+  (ha : ∀ j ∈ tasks, ∀ (n : ℕ), actual j n ≤ cap j n - margin j)
+  (hr : ∀ j ∈ tasks, Filter.Tendsto (radius j) Filter.atTop (nhds 0)) :
+  ∃ N, ∀ n ≥ N, ∀ j ∈ tasks, retained j n + radius j n ≤ cap j n
+ActionAwareTracking.every_fixed_aspect_learned (aspect : ℕ) :
+  ∃ N, ∀ time ≥ N, ActionAwareTracking.freshError time aspect = 0
+ActionAwareTracking.expanding_frontier_keeps_unlearned_aspect (time : ℕ) :
+  ∃ aspect ≤ time, ActionAwareTracking.freshError time aspect = 1

@@ -1,0 +1,81 @@
+FeedbackMemory.lean:16:29: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Decidable (inside v C)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+FeedbackMemory.lean:16:2: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Decidable (outside v C)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+FeedbackMemory.lean:21:37: error: unexpected token '|*'; expected '|' or '|ₘ'
+FeedbackMemory.lean:32:64: error: unexpected token '|*'; expected '|' or '|ₘ'
+FeedbackMemory.lean:86:11: warning: declaration uses `sorry`
+FeedbackMemory.lean:72:8: warning: declaration uses `sorry`
+FeedbackMemory.lean:74:5: warning: unused variable `ha`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+FeedbackMemory.lean:74:46: warning: unused variable `hm`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+FeedbackMemory.lean:100:38: error: unexpected token '|*'; expected '|' or '|ₘ'
+FeedbackMemory.lean:117:4: error: Type mismatch
+  retained_margin_error g (i n) (j n) { target := ?m.114, reading := y n, elapsed := ?m.117 }
+    { target := ?m.114, reading := z n, elapsed := ?m.117 } |g.proportional + g.integral * ?m.117| |g.integral * ?m.117|
+    (memoryRadius g j r z dt E initial n)
+    (raw_error g (i n) (j n) ?m.114 (y n) (z n) ?m.117 (E n) (memoryRadius g j r z dt E initial n) (he n hlt) hm)
+    (increment_error g ?m.114 (y n) (z n) ?m.117 (E n) (he n hlt)) hm
+has type
+  |retain g (i n) { target := ?m.114, reading := y n, elapsed := ?m.117 } -
+        retain g (j n) { target := ?m.114, reading := z n, elapsed := ?m.117 }| ≤
+    memoryRadius g j r z dt E initial n +
+      allowance (raw g (j n) { target := ?m.114, reading := z n, elapsed := ?m.117 })
+        |g.proportional + g.integral * ?m.117| |g.integral * ?m.117|
+        (increment g { target := ?m.114, reading := z n, elapsed := ?m.117 })
+but is expected to have type
+  |retain g (i n) { target := r n, reading := y n, elapsed := dt n } -
+        retain g (j n) { target := r n, reading := z n, elapsed := dt n }| ≤
+    memoryRadius g j r z dt E initial (n + 1)
+FeedbackMemory.lean:122:42: error: unexpected token '|*'; expected '|' or '|ₘ'
+FeedbackMemory.lean:138:2: error: Type mismatch
+  command_error_bound ?m.74 (i n) (j n) ?m.77 (y n) (z n) ?m.80 (E n) (memoryRadius g j r z dt E initial n) (he n hn)
+    (memory_horizon g i j r y z dt E initial N hi hj h0 he n
+      (Decidable.byContradiction fun a => command_horizon._proof_1_1 N n hn a))
+has type
+  |command ?m.74 (i n) { target := ?m.77, reading := y n, elapsed := ?m.80 } -
+        command ?m.74 (j n) { target := ?m.77, reading := z n, elapsed := ?m.80 }| ≤
+    |Gains.proportional ?m.74 + Gains.integral ?m.74 * ?m.80| * E n + memoryRadius g j r z dt E initial n
+but is expected to have type
+  |command g (i n) { target := r n, reading := y n, elapsed := dt n } -
+        command g (j n) { target := r n, reading := z n, elapsed := dt n }| ≤
+    |g.proportional + g.integral * dt n|
+FeedbackMemory.lean:190:13: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  min 100 (raw { proportional := 1, integral := 1 } 0 { target := 100, reading := 50 - δ, elapsed := 1 })
+in the target expression
+  max 0 (min 100 (raw { proportional := 1, integral := 1 } 0 { target := 100, reading := 50, elapsed := 1 })) =
+    clip (raw { proportional := 1, integral := 1 } 0 { target := 100, reading := 50 - δ, elapsed := 1 })
+
+case right.left
+δ : ℝ
+hδ : 0 < δ
+hb : raw { proportional := 1, integral := 1 } 0 { target := 100, reading := 50 - δ, elapsed := 1 } > 100
+hn : retain { proportional := 1, integral := 1 } 0 { target := 100, reading := 50, elapsed := 1 } = 50
+hp : retain { proportional := 1, integral := 1 } 0 { target := 100, reading := 50 - δ, elapsed := 1 } = 0
+⊢ max 0 (min 100 (raw { proportional := 1, integral := 1 } 0 { target := 100, reading := 50, elapsed := 1 })) =
+    clip (raw { proportional := 1, integral := 1 } 0 { target := 100, reading := 50 - δ, elapsed := 1 })
+FeedbackMemory.lean:209:15: error: unexpected token '||'; expected term
+FeedbackMemory.lean:207:14: error: unsolved goals
+case step
+u v C : ℕ → ℝ
+n : ℕ
+ih : (∀ n_1 ≤ n, |u n_1 - v n_1| ≤ C n_1) → |movement u n - movement v n| ≤ movementRadius C n
+h : ∀ n_1 ≤ n + 1, |u n_1 - v n_1| ≤ C n_1
+prev : |movement u n - movement v n| ≤ movementRadius C n
+⊢ sorry
+
+case succ
+u v C : ℕ → ℝ
+n : ℕ
+ih : (∀ n_1 ≤ n, |u n_1 - v n_1| ≤ C n_1) → |movement u n - movement v n| ≤ movementRadius C n
+h : ∀ n_1 ≤ n + 1, |u n_1 - v n_1| ≤ C n_1
+prev : |movement u n - movement v n| ≤ movementRadius C n
+step : sorry
+⊢ |movement u (n + 1) - movement v (n + 1)| ≤ movementRadius C (n + 1)

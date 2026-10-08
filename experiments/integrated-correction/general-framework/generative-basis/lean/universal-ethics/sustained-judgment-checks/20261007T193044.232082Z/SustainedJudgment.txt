@@ -1,0 +1,14 @@
+SustainedJudgment.lean:361:5: error: unexpected token 'omit'; expected '_' or identifier
+SustainedJudgment.lean:361:4: error: Missing alternative name: Expected `omit`
+SustainedJudgment.lean:358:4: error: Alternative `omit` has not been provided
+SustainedJudgment.lean:353:43: error: unsolved goals
+case refine_2
+left : Frontier (fun x => True) (Better protects enrichment) Choice.left
+right : Frontier (fun x => True) (Better protects enrichment) Choice.right
+⊢ ¬Required (Frontier (fun x => True) (Better protects enrichment)) fun a => 0 < (contribution a).fst
+
+case refine_3
+left : Frontier (fun x => True) (Better protects enrichment) Choice.left
+right : Frontier (fun x => True) (Better protects enrichment) Choice.right
+⊢ ¬Required (Frontier (fun x => True) (Better protects enrichment)) fun a => 0 < (contribution a).snd
+SustainedJudgment.lean:361:10: error: unexpected token '=>'; expected '[' or identifier

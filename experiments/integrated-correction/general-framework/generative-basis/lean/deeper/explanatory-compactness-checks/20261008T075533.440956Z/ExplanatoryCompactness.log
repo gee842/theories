@@ -1,0 +1,24 @@
+'Generative.ExplanatoryCompactness.holds_allTests' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryCompactness.finite_exclusion_list' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryCompactness.imageFinite_successorCompact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryCompactness.complete_theory_forces_same' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryCompactness.successor_theory_finitely_realizable' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryCompactness.compact_successor_match' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryCompactness.compact_same_is_bisimulation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryCompactness.compact_same_iff_bisimilar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryCompactness.compact_structural_correspondence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryCompactness.compact_correspondence_preserves_steps' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryCompactness.compact_code_step_lifts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryCompactness.compact_code_trace_lifts' depends on axioms: [propext, Classical.choice, Quot.sound]

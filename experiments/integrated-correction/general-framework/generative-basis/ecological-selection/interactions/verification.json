@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "original_files_verified": 8,
+  "videos": 54,
+  "technical_replicates": 18,
+  "conditions": 6,
+  "checked_numeric_values": 132,
+  "max_absolute_difference": 3.552713678800501e-15,
+  "interaction_deletions": 81,
+  "scope": "Independent XML extraction and exact-decimal rational arithmetic; no independent biological replication, statistical population inference or mathematical theorem.",
+  "files_sha256": {
+    "analyze_interactions.py": "3ad48d84a54285d7d6eface694d514323260d9e82ccc86869b31d1acab49fcba",
+    "check_interactions.py": "2f7d2fb51e1777f4599cec605ff00e7b41a4d02663465b3d79425cee8fe89d20",
+    "interaction-results.json": "ccddf32921d43d2982a5bc1597d15cb1ac864acbfa97770d76dae614457ed6af",
+    "video-means.csv": "d665fdfe1ca7a9e1ec5c8fe940a10dc3542adb6f8153e794f5ee4505856b3a9f",
+    "manifest.json": "3808545afc295a3a03fd9afefe808a41ff1074dba720f63425d5340cab7dd7c0"
+  }
+}

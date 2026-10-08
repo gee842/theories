@@ -1,0 +1,423 @@
+{
+  "scope": "Original binding, encoded timestamps and RGB extraction only; no biological clock, counts, event rates or genotype validation.",
+  "source_manifest_sha256": "431b7ddcc7c0992881da6fb083b67b86435e68e8df1c8f14ae1ee48a7c500996",
+  "script_sha256": "ea25a7e400426900c7fac3b41db80d5dbc6b500ca263c465b0e4cad203052488",
+  "ffmpeg": "ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers",
+  "ffprobe": "ffprobe version 8.0.1 Copyright (c) 2007-2025 the FFmpeg developers",
+  "movies": {
+    "S1": {
+      "source_file": "6fb76fb64861d8d1c868a0cece56a181_genetics.113.154948-8.mov",
+      "source_sha256": "ed730535edefcce58aa7c5bd121665593c552fd967419c579457f35042d634ff",
+      "width": 640,
+      "height": 480,
+      "encoded_frames": 1198,
+      "frame_rate": "30000/1001",
+      "time_base": "1/30000",
+      "video_duration_playback_seconds": "39.973267",
+      "legend_span_hours": 48,
+      "acquisition_time_mapping_verified": false,
+      "selected": [
+        {
+          "encoded_frame": 0,
+          "playback_pts": "0",
+          "rgb_sha256": "5756efe5d8f32a6d0309821f88beecdb4573dfdb893acba2ad383c9bb33ba2a0",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 200,
+          "playback_pts": "1001/150",
+          "rgb_sha256": "59215b5b327612d29df31747b065382c3f44740f696fad7af7e681625c093a12",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 400,
+          "playback_pts": "1001/75",
+          "rgb_sha256": "c3a0a4584005e761cbef26e755e72827a9f00655cb17daa04f8aa56e8ee3f229",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 600,
+          "playback_pts": "1001/50",
+          "rgb_sha256": "98ca1bfce5d79d22174b8a790b6650eb0ea8c53991251e78e34878c36f2b6bd4",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 800,
+          "playback_pts": "2002/75",
+          "rgb_sha256": "d5b27e40d9b52a148813899a9e0f34002f4c3527d53c641ed2284242dae7c087",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 972,
+          "playback_pts": "81081/2500",
+          "rgb_sha256": "c938d3ee6ed11568289db0bf87d35e34dcb4b3ffef28eb75b3ef0592d61a3c45",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 984,
+          "playback_pts": "41041/1250",
+          "rgb_sha256": "9539be4369bd2589a473db71eb9a6e428f45c423fcfc5c074ae401c948701510",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 996,
+          "playback_pts": "83083/2500",
+          "rgb_sha256": "8b781f330f6116ba098d28f7d7c7177aff8b24f602fdf6b7891a6414724289fc",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 1000,
+          "playback_pts": "1001/30",
+          "rgb_sha256": "4146f032c8835577cf100d913b622f654374b4abc2a145e2f947796e675043bc",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 1008,
+          "playback_pts": "21021/625",
+          "rgb_sha256": "44de19791bfd43e2c14a734bd1f07a28e0dbe1cea96b2af3905f110f94312d27",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 1020,
+          "playback_pts": "17017/500",
+          "rgb_sha256": "eae50c44f12cc351008bbb1fd478758a6ec21bfd048f9128ecb1ebf197835c66",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 1032,
+          "playback_pts": "43043/1250",
+          "rgb_sha256": "ab8333438d67f9f73e578b320facb990a520570b48c6b30617fb350e9f14672b",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 1044,
+          "playback_pts": "87087/2500",
+          "rgb_sha256": "e2d6b2be267da73dd0fb81b2e4729e0df5d69b35a31c8e98a78bafa3201dbfa0",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 1056,
+          "playback_pts": "22022/625",
+          "rgb_sha256": "6f597bafb5e1ff3cd8af847e30f7f00396d26aa3f2a83465e54d1eeea71cd12c",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 1068,
+          "playback_pts": "89089/2500",
+          "rgb_sha256": "e072d3711cd2a25a73b90ba6b55d809b643feb7b0ba418698c246d3b7b71b89b",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 1080,
+          "playback_pts": "9009/250",
+          "rgb_sha256": "333dea6ac686cb951f45cdfa1ccf7659427fcfa5066e1ea4a5e1ad8b5453b6da",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 1092,
+          "playback_pts": "91091/2500",
+          "rgb_sha256": "1a8f30c79e033931fac9b3a1a7c35f151e18c274ad81bc8f9c09d829ead5ed1f",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 1100,
+          "playback_pts": "11011/300",
+          "rgb_sha256": "d23ce4c585be29e1b72d3250f09a277be64c687e7fe4ad3204011690bb3a3bb1",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 1104,
+          "playback_pts": "23023/625",
+          "rgb_sha256": "f7c93c7a8229c4961b100ab3c03dd2c1063244ca08762d6fd200f89af03de4fa",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 1197,
+          "playback_pts": "399399/10000",
+          "rgb_sha256": "91d0633296d0ce837533577dda16342d7515cb1beed2c99083014e13207b79d1",
+          "full_decode_md5_match": true
+        }
+      ]
+    },
+    "S4": {
+      "source_file": "ab6eea5c688f6ab4eaf4bf48bb8fbb95_genetics.113.154948-12.mov",
+      "source_sha256": "21c0c4fb0e2f4499ef3654b55edf7c9c5096b3c844a22f9d138a5f408f6f4538",
+      "width": 640,
+      "height": 480,
+      "encoded_frames": 1419,
+      "frame_rate": "30000/1001",
+      "time_base": "1/30000",
+      "video_duration_playback_seconds": "47.347300",
+      "legend_span_hours": 48,
+      "acquisition_time_mapping_verified": false,
+      "selected": [
+        {
+          "encoded_frame": 0,
+          "playback_pts": "0",
+          "rgb_sha256": "f52f8cc244bcfd3a7f153b1a2b37b930d882d51a9103d65f7b98a2f99181de8c",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 200,
+          "playback_pts": "1001/150",
+          "rgb_sha256": "a16c93aadc750c2ee58be460d04b2eb05c33f011600b6496d28a4043693a61c8",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 400,
+          "playback_pts": "1001/75",
+          "rgb_sha256": "8c7af8557fe6bb4eadb526c7048c92b7f56bd7b88ae245ab70d830245be103f9",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 600,
+          "playback_pts": "1001/50",
+          "rgb_sha256": "9d47509c77e0b19b099e1e2be52d2d8edd03f8f859da6a965da1afaee57a6140",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 800,
+          "playback_pts": "2002/75",
+          "rgb_sha256": "38690c96ca63b8a59127f8303a0d988274fa6c44594f08f7d8a36f8c1e0632d1",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 1000,
+          "playback_pts": "1001/30",
+          "rgb_sha256": "586786b7c9212b29cd2a84616cc1165f2ec28c3f2dd087428127ccc7a229e815",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 1200,
+          "playback_pts": "1001/25",
+          "rgb_sha256": "4c6869e2c6085fd5b5251d669e7098995e189d6dc35ce34629e9c8a1847df2a7",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 1418,
+          "playback_pts": "709709/15000",
+          "rgb_sha256": "5daf9a867d3e250cb3d520faef69202008dd4c0dc0b264255f0dbf1c695f1c8e",
+          "full_decode_md5_match": true
+        }
+      ]
+    },
+    "S5": {
+      "source_file": "eaa9186a72f48f810d721a8c31306472_genetics.113.154948-5.mov",
+      "source_sha256": "4ad27eec211515f7c73b2fd35bc5de06089a28d8cf678245dae25229ebc38d27",
+      "width": 640,
+      "height": 480,
+      "encoded_frames": 641,
+      "frame_rate": "30000/1001",
+      "time_base": "1/30000",
+      "video_duration_playback_seconds": "21.388033",
+      "legend_span_hours": 12,
+      "acquisition_time_mapping_verified": false,
+      "selected": [
+        {
+          "encoded_frame": 0,
+          "playback_pts": "0",
+          "rgb_sha256": "bb2583422dd7eb80cce800a9ebf8895fdcea4ab4f79e25023f7bff3debb81ae3",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 90,
+          "playback_pts": "3003/1000",
+          "rgb_sha256": "2c6ffd923168c1c518f78055d991283fbb81df5159403c27f680d65b7a40455f",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 180,
+          "playback_pts": "3003/500",
+          "rgb_sha256": "344a032d9e3f2ae339c062d3fc4a126b1f621a340983c27ff639ca5e59943f77",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 270,
+          "playback_pts": "9009/1000",
+          "rgb_sha256": "8e0e235ce60d90bc08ad40da508c67c606790d9bf1f7e543fab3e620be51890c",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 360,
+          "playback_pts": "3003/250",
+          "rgb_sha256": "b0dfe5be9526bb37519df7d4c86410d086c42061fc21c44787b8f2323d28d3af",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 450,
+          "playback_pts": "3003/200",
+          "rgb_sha256": "628387130239e3be6056ec0da89c958bc2eb904595bbf3e6779241448d51f3f5",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 540,
+          "playback_pts": "9009/500",
+          "rgb_sha256": "bc33f6b4aad18a5e905cbf96065e4486484083ef746af72b0c5c8af9ec151a0f",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 640,
+          "playback_pts": "8008/375",
+          "rgb_sha256": "71623dda623b2062d2828050b2b8efce128eb85c78765f20e52d3d1a8c78ceb7",
+          "full_decode_md5_match": true
+        }
+      ]
+    },
+    "S6": {
+      "source_file": "8399d6f43532e501af632b69f481fd06_genetics.113.154948-10.mov",
+      "source_sha256": "23c5ff31aa6e39df3f533abe02fd590379832906f566efe15ef8a1a4b11efe5f",
+      "width": 640,
+      "height": 480,
+      "encoded_frames": 1537,
+      "frame_rate": "30000/1001",
+      "time_base": "1/30000",
+      "video_duration_playback_seconds": "51.284567",
+      "legend_span_hours": 48,
+      "acquisition_time_mapping_verified": false,
+      "selected": [
+        {
+          "encoded_frame": 0,
+          "playback_pts": "0",
+          "rgb_sha256": "5c2a213f111828efcb32edf094dad2a270dd57833582d8f8bae098d3d487e6f2",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 400,
+          "playback_pts": "1001/75",
+          "rgb_sha256": "eab8929ba7ae4a523f7bba93740d302c6c922018618990b96b6b66080faecdb2",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 600,
+          "playback_pts": "1001/50",
+          "rgb_sha256": "a9b0242f449e4971201688dff752595a1498a7e5cbba10a99a9befa7e28f633a",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 800,
+          "playback_pts": "2002/75",
+          "rgb_sha256": "fb2cd789859464e41b234f0a1d0ac8d7a0928fc301ab604002a362db6eef416d",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 1000,
+          "playback_pts": "1001/30",
+          "rgb_sha256": "5b299034fad89e0eb5b0d626840f97facac9c56db04b9f0fc73ebaf00d25c438",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 1200,
+          "playback_pts": "1001/25",
+          "rgb_sha256": "a24f8943bcfefdd044e213bff9c7f18395668c7964cbbe4e2c1475c370b6926e",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 1400,
+          "playback_pts": "7007/150",
+          "rgb_sha256": "be1f76785db55099ca3627799195b02814eaae54169db77e29bc5a739acbaace",
+          "full_decode_md5_match": true
+        },
+        {
+          "encoded_frame": 1536,
+          "playback_pts": "32032/625",
+          "rgb_sha256": "557ae9c5128ba847359e4d805fa7a56a028ad5f8a39c7409f89abac4714583fc",
+          "full_decode_md5_match": true
+        }
+      ]
+    }
+  },
+  "views": {
+    "s1-overview": {
+      "source_label": "S1",
+      "encoded_frames": [
+        0,
+        200,
+        400,
+        600,
+        800,
+        1000,
+        1100,
+        1197
+      ],
+      "crop_original_pixels": null,
+      "file": "figures/s1-overview.png",
+      "sha256": "d71bfceef4a2b3ed13f58b3ebc561b47e09fb4e6290e7bdba78cbe6d9f7573aa"
+    },
+    "s1-detail": {
+      "source_label": "S1",
+      "encoded_frames": [
+        972,
+        984,
+        996,
+        1008,
+        1020,
+        1032,
+        1044,
+        1056,
+        1068,
+        1080,
+        1092,
+        1104
+      ],
+      "crop_original_pixels": [
+        160,
+        175,
+        465,
+        455
+      ],
+      "file": "figures/s1-detail.png",
+      "sha256": "87e99c1297025f9282d181ff321e72a59bf36dc2226d16591bae5d2cbd259dd8"
+    },
+    "s4-overview": {
+      "source_label": "S4",
+      "encoded_frames": [
+        0,
+        200,
+        400,
+        600,
+        800,
+        1000,
+        1200,
+        1418
+      ],
+      "crop_original_pixels": null,
+      "file": "figures/s4-overview.png",
+      "sha256": "a0e3f930bbbe847bd31b27e8701a1f9d0034ef082d137c8b88a32990e0cf2ca6"
+    },
+    "s5-overview": {
+      "source_label": "S5",
+      "encoded_frames": [
+        0,
+        90,
+        180,
+        270,
+        360,
+        450,
+        540,
+        640
+      ],
+      "crop_original_pixels": null,
+      "file": "figures/s5-overview.png",
+      "sha256": "49397c9aa9d38ecb2353e6facbcfeb74f7dde7273e3f08e9230d4d62164342f5"
+    },
+    "s6-overview": {
+      "source_label": "S6",
+      "encoded_frames": [
+        0,
+        400,
+        600,
+        800,
+        1000,
+        1200,
+        1400,
+        1536
+      ],
+      "crop_original_pixels": null,
+      "file": "figures/s6-overview.png",
+      "sha256": "073e93494e71fa931e5a54fdf88d3ea0aa47bb5df2e7b2cc4aec8ffdf74e2311"
+    }
+  },
+  "selected_unique_frames": 44,
+  "all_decoded_frames": 4795,
+  "checks_passed": true
+}

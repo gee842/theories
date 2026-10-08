@@ -1,0 +1,94 @@
+{
+  "checked_at_utc": "2026-10-07T22:40:27.197805+00:00",
+  "scope": "Documentary reconciliation and source/receipt binding checks only. No new theorem, empirical intervention, Lean rerun or independent-agent acceptance. Concurrent repository changes are preserved.",
+  "practical_inherited": {
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/practical-judgment-verification.json",
+    "receipt_sha256": "b9857bbfc496d0133a127a1a0799fd0bff35defd1bbba11dc902d806ab126174",
+    "recorded_status": "passed",
+    "theorems": 30,
+    "audited_declarations": 46,
+    "binding_checks": {
+      "PracticalJudgment.lean": true,
+      "PracticalJudgment.log": true,
+      "PracticalJudgmentAxiomAudit.lean": true,
+      "PracticalJudgmentAxiomAudit.log": true,
+      "PracticalJudgmentSignatures.lean": true,
+      "PracticalJudgmentSignatures.log": true,
+      "check.py": true,
+      "check_practical_judgment.py": true,
+      "version.log": true,
+      "current:PracticalJudgment.lean": true,
+      "current:check_practical_judgment.py": true,
+      "current:check.py": true
+    }
+  },
+  "inquiry_inherited": {
+    "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/inquiry-adequacy-verification.json",
+    "receipt_sha256": "b80fc3af2c1d70746fe0613b234ac26cf1026cfcb34ed0c34b41377c25b81a00",
+    "recorded_status": "passed",
+    "theorems": 8,
+    "audited_declarations": 13,
+    "binding_checks": {
+      "current_source": true,
+      "archived_source": true,
+      "current_checker": true,
+      "archived_checker": true,
+      "compile.txt": true,
+      "axioms.txt": true
+    }
+  },
+  "document_links_checked": 24,
+  "local_errors": [],
+  "c23_matches_existing_renderer": true,
+  "global_chain_commands": [
+    {
+      "mode": "--render",
+      "exit_code": 2,
+      "output": {
+        "status": "needs-review",
+        "errors": [
+          "Linked source versions changed; reread affected entries before rendering."
+        ],
+        "changes": {
+          "modified_sources": [
+            "RESEARCH.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+            "theories/shengsheng-buxi-generative-existence/README.md"
+          ],
+          "missing_sources": [],
+          "new_pages": [],
+          "removed_pages": []
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "mode": "--check",
+      "exit_code": 2,
+      "output": {
+        "status": "needs-review",
+        "errors": [
+          "Linked source versions changed; reread affected entries before rendering."
+        ],
+        "changes": {
+          "modified_sources": [
+            "RESEARCH.md",
+            "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+            "theories/shengsheng-buxi-generative-existence/README.md"
+          ],
+          "missing_sources": [],
+          "new_pages": [],
+          "removed_pages": []
+        }
+      },
+      "stderr": ""
+    }
+  ],
+  "diff_check": {
+    "exit_code": 0,
+    "output": ""
+  },
+  "owned_study_sha256": "e88eb371823aa789b6093d136871d03416aabca9e893c23246c5a1ffd1022414",
+  "review_scope": "Independent completion acceptance inherited only for practical judgment. Broader knowledge completion records author counterreview; this reconciliation does not upgrade it.",
+  "status": "scoped_checks_passed"
+}

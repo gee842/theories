@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/unfolding-preservation-checks/20261007T225350.404286Z/receipt.json",
+  "counts": {
+    "new": {
+      "modules": 2,
+      "declarations": 64,
+      "theorems": 42,
+      "empty_audit_dependencies": 64,
+      "standard_dependency_audits": 0
+    },
+    "inherited": {
+      "modules": 9,
+      "declarations": 248,
+      "theorems": 181,
+      "empty_audit_dependencies": 194,
+      "standard_dependency_audits": 54
+    }
+  }
+}

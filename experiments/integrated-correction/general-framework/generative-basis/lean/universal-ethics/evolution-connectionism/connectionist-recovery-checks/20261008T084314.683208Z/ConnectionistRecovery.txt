@@ -1,0 +1,7 @@
+ConnectionistRecovery.lean:157:2: error: Type mismatch: After simplification, term
+  changing_selection_response σ σ' hσ τ δ B g a b w t (fun x => s) (fun x => 0) (fun x => 0) 0
+    (fun i => hasDerivAt_const w (s i)) (hasDerivAt_const w 0)
+ has type
+  HasDerivAt (netScore σ τ δ B g a b t (fun x => s) fun x => 0) (∑ x, s x * response σ σ' τ δ B g a b w t x) w
+but is expected to have type
+  HasDerivAt (fun x => score s (develop σ τ δ (perturb B a b x) g t)) (∑ i, s i * response σ σ' τ δ B g a b w t i) w

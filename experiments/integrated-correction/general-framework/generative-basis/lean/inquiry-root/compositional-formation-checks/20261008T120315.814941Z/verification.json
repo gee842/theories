@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "utc": "20261008T120315.814941Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "compositional-formation-checks/20261008T120315.814941Z",
+  "source_sha256": {
+    "KnowledgeCorrespondence": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+    "CompositionalAcquisition": "c1bb4792d8f2034e870724f0a8828cef9ef31ecf36e3b6b53ed6e8eb3900f848",
+    "CompositionalFormation": "7bd98de4e5c407b0c5d510df1ebb3a8568ec3174ba6cffcef094e011801f2c99"
+  },
+  "checker_sha256": {
+    "check_compositional_formation.py": "9feef9b27a21dc97a3f58718a230951b3599a2ebb95ea431fd53f2262303ec3a",
+    "audit_support.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Formation, testing, rejection and recursive use of a composition route from supplied connectors; exact resource accounts and expanded-repertoire evidence failure and further-encounter repair. No grammar origin, full cognition or evolutionary sufficiency.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "CompositionalFormation.lean:389:47: error: Type mismatch\n  equal_primitive_effects_preserve_extent c same e\nhas type\n  eval c e = List.replicate (extent e) c.first\nbut is expected to have type\n  eval { first := c.first, second := c.second, reversed := false } e = List.replicate (extent e) c.first\nCompositionalFormation.lean:394:47: error: Type mismatch\n  equal_primitive_effects_preserve_extent c same e\nhas type\n  eval c e = List.replicate (extent e) c.first\nbut is expected to have type\n  eval { first := c.first, second := c.second, reversed := true } e = List.replicate (extent e) c.first\n"
+}

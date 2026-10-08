@@ -1,0 +1,23 @@
+CorrectionBoundary.lean:106:62: error: Application type mismatch: The argument
+  hf
+has type
+  some (output false c) = none ∨ output false c = requested
+but is expected to have type
+  output false c = requested
+in the application
+  And.intro hf
+CorrectionBoundary.lean:104:48: warning: This simp argument is unused:
+  Option.noConfusion
+
+Hint: Omit it from the simp argument list.
+  simp only [optionalOutput, Option.map_some, O̵p̵t̵i̵o̵n̵.̵n̵o̵C̵o̵n̵f̵u̵s̵i̵o̵n̵,̵ ̵false_or, Option.some.injEq] at hf ht
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CorrectionBoundary.lean:104:68: warning: This simp argument is unused:
+  false_or
+
+Hint: Omit it from the simp argument list.
+  simp only [optionalOutput, Option.map_some, Option.noConfusion, f̵a̵l̵s̵e̵_̵o̵r̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵Option.some.injEq] at hf ht
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

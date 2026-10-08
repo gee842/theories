@@ -1,0 +1,209 @@
+{
+  "status": "passed",
+  "utc": "20261008T103951.694758Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "basic-risk-sharing-checks/20261008T103951.694758Z",
+  "source_sha256": {
+    "BasicRiskSharing": "d5db223a9b793933369042f6c48a6a8ae719819578c8d52737d716335d54c59f"
+  },
+  "checker_sha256": {
+    "check_basic_risk_sharing.py": "e6f8887ca4c6530d06d6864ce19d5c89c051c14e7b789c1f69b0d5ea07825712",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Finite equal-stakes exposure family: exact common-bound optimum, retained individual costs, supplied product and correlated selection laws, and informed response. Equal standing, fair exposure commitment, warranted probabilities and permission are not proved. No empirical or universal ethical claim.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "modules": [
+    {
+      "module": "BasicRiskSharing",
+      "theorems": 15,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "BasicRiskSharing.exposureA"
+        },
+        {
+          "kind": "def",
+          "name": "BasicRiskSharing.exposureB"
+        },
+        {
+          "kind": "def",
+          "name": "BasicRiskSharing.AtMost"
+        },
+        {
+          "kind": "theorem",
+          "name": "BasicRiskSharing.total_exposure"
+        },
+        {
+          "kind": "theorem",
+          "name": "BasicRiskSharing.balanced_exposure"
+        },
+        {
+          "kind": "theorem",
+          "name": "BasicRiskSharing.equal_exposure_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "BasicRiskSharing.attainable_common_bound_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "BasicRiskSharing.unique_best_allocation"
+        },
+        {
+          "kind": "theorem",
+          "name": "BasicRiskSharing.pure_allocations_miss_best_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "BasicRiskSharing.sharing_retains_the_favored_positions_cost"
+        },
+        {
+          "kind": "theorem",
+          "name": "BasicRiskSharing.lower_equal_profile_remains_better"
+        },
+        {
+          "kind": "inductive",
+          "name": "BasicRiskSharing.Plan"
+        },
+        {
+          "kind": "def",
+          "name": "BasicRiskSharing.failures"
+        },
+        {
+          "kind": "def",
+          "name": "BasicRiskSharing.countA"
+        },
+        {
+          "kind": "def",
+          "name": "BasicRiskSharing.countB"
+        },
+        {
+          "kind": "def",
+          "name": "BasicRiskSharing.countBoth"
+        },
+        {
+          "kind": "def",
+          "name": "BasicRiskSharing.countAny"
+        },
+        {
+          "kind": "def",
+          "name": "BasicRiskSharing.planRecords"
+        },
+        {
+          "kind": "theorem",
+          "name": "BasicRiskSharing.native_plan_rates"
+        },
+        {
+          "kind": "def",
+          "name": "BasicRiskSharing.productRecords"
+        },
+        {
+          "kind": "theorem",
+          "name": "BasicRiskSharing.product_law_realizes_balanced_rates"
+        },
+        {
+          "kind": "theorem",
+          "name": "BasicRiskSharing.complete_joint_profile_preserved"
+        },
+        {
+          "kind": "def",
+          "name": "BasicRiskSharing.coupledPlan"
+        },
+        {
+          "kind": "def",
+          "name": "BasicRiskSharing.coupledRecords"
+        },
+        {
+          "kind": "theorem",
+          "name": "BasicRiskSharing.coupled_selection_has_equal_plan_frequencies"
+        },
+        {
+          "kind": "theorem",
+          "name": "BasicRiskSharing.coupled_law_doubles_each_risk"
+        },
+        {
+          "kind": "theorem",
+          "name": "BasicRiskSharing.coupled_joint_profile_worsens"
+        },
+        {
+          "kind": "theorem",
+          "name": "BasicRiskSharing.informed_selection_can_avoid_this_law_of_loss"
+        }
+      ],
+      "axiom_dependencies": {
+        "BasicRiskSharing.exposureA": [],
+        "BasicRiskSharing.exposureB": [],
+        "BasicRiskSharing.AtMost": [],
+        "BasicRiskSharing.total_exposure": [
+          "propext",
+          "Quot.sound"
+        ],
+        "BasicRiskSharing.balanced_exposure": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "BasicRiskSharing.equal_exposure_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "BasicRiskSharing.attainable_common_bound_iff": [
+          "propext",
+          "Quot.sound"
+        ],
+        "BasicRiskSharing.unique_best_allocation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "BasicRiskSharing.pure_allocations_miss_best_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "BasicRiskSharing.sharing_retains_the_favored_positions_cost": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "BasicRiskSharing.lower_equal_profile_remains_better": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "BasicRiskSharing.Plan": [],
+        "BasicRiskSharing.failures": [],
+        "BasicRiskSharing.countA": [],
+        "BasicRiskSharing.countB": [],
+        "BasicRiskSharing.countBoth": [],
+        "BasicRiskSharing.countAny": [],
+        "BasicRiskSharing.planRecords": [],
+        "BasicRiskSharing.native_plan_rates": [],
+        "BasicRiskSharing.productRecords": [],
+        "BasicRiskSharing.product_law_realizes_balanced_rates": [],
+        "BasicRiskSharing.complete_joint_profile_preserved": [],
+        "BasicRiskSharing.coupledPlan": [],
+        "BasicRiskSharing.coupledRecords": [],
+        "BasicRiskSharing.coupled_selection_has_equal_plan_frequencies": [],
+        "BasicRiskSharing.coupled_law_doubles_each_risk": [],
+        "BasicRiskSharing.coupled_joint_profile_worsens": [],
+        "BasicRiskSharing.informed_selection_can_avoid_this_law_of_loss": []
+      },
+      "kernel_checked": true
+    }
+  ],
+  "artifact_sha256": {
+    "BasicRiskSharing.lean": "d5db223a9b793933369042f6c48a6a8ae719819578c8d52737d716335d54c59f",
+    "BasicRiskSharing.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "BasicRiskSharingAxiomAudit.lean": "f0f859a7436f275b6654212a3deffe41df8ce24bd7d30b18f508ba90c59f34b0",
+    "BasicRiskSharingAxiomAudit.log": "bfc749a6814bb4a913b3936e474e4cf3fc28be009569a83e20f2eec9cd4d540e",
+    "BasicRiskSharingSignatures.lean": "6e11cf1de0104afde09deae736b22f91bd88bc8f7344aba2a2eef22b721a20db",
+    "BasicRiskSharingSignatures.log": "0221a965393ce25bdc4ec5693377e0dbd3ab147e69f17046e4d42b69cef1b073",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_basic_risk_sharing.py": "e6f8887ca4c6530d06d6864ce19d5c89c051c14e7b789c1f69b0d5ea07825712",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

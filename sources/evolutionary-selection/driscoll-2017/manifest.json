@@ -1,0 +1,70 @@
+{
+  "title": "Synergistic cooperation promotes multicellular performance and unicellular free-rider persistence",
+  "authors": [
+    "William W. Driscoll",
+    "Michael Travisano"
+  ],
+  "year": 2017,
+  "doi": "10.1038/ncomms15707",
+  "retrieved": "2026-10-08",
+  "license": "CC BY 4.0 as stated in original article XML; third-party exceptions as source specifies",
+  "files": [
+    {
+      "file": "41467_2017_BFncomms15707_MOESM76_ESM.xlsx",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fncomms15707/MediaObjects/41467_2017_BFncomms15707_MOESM76_ESM.xlsx",
+      "bytes": 52837,
+      "sha256": "75811b37fbfb5dbc4241cd19e529e363251e0a2b7472ca8b0e15e308bbe444fc",
+      "provenance": "Original retrieved bytes; no workbook edits or resaving."
+    },
+    {
+      "file": "41467_2017_BFncomms15707_MOESM77_ESM.xlsx",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fncomms15707/MediaObjects/41467_2017_BFncomms15707_MOESM77_ESM.xlsx",
+      "bytes": 98758,
+      "sha256": "ddb8fd1a7f0779e8fa29c323131b5c121aab236acba823754151455a37082d30",
+      "provenance": "Original retrieved bytes; no workbook edits or resaving."
+    },
+    {
+      "file": "41467_2017_BFncomms15707_MOESM78_ESM.xlsx",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fncomms15707/MediaObjects/41467_2017_BFncomms15707_MOESM78_ESM.xlsx",
+      "bytes": 18029,
+      "sha256": "c96d584a8c2eea706f4f74e0655339fb57767d8091b17f193dbb2269e52725db",
+      "provenance": "Original retrieved bytes; no workbook edits or resaving."
+    },
+    {
+      "file": "41467_2017_BFncomms15707_MOESM79_ESM.xlsx",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fncomms15707/MediaObjects/41467_2017_BFncomms15707_MOESM79_ESM.xlsx",
+      "bytes": 42110,
+      "sha256": "1adcd5e89c2eb6d53508a3d82ab8cdf5b98d0aaa085d3e0ec9228977afdac9cb",
+      "provenance": "Original retrieved bytes; no workbook edits or resaving."
+    },
+    {
+      "file": "41467_2017_BFncomms15707_MOESM80_ESM.xlsx",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fncomms15707/MediaObjects/41467_2017_BFncomms15707_MOESM80_ESM.xlsx",
+      "bytes": 54436,
+      "sha256": "5afb440f82b6032027b199488e08f596681f0d4caa0476c4a1eb39736c2a13c2",
+      "provenance": "Original retrieved bytes; no workbook edits or resaving."
+    },
+    {
+      "file": "41467_2017_BFncomms15707_MOESM81_ESM.xlsx",
+      "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fncomms15707/MediaObjects/41467_2017_BFncomms15707_MOESM81_ESM.xlsx",
+      "bytes": 49648,
+      "sha256": "be60b7d9469b7a84db044590e65a82e3055541a942b123b681de7bdb4f9c7462",
+      "provenance": "Original retrieved bytes; no workbook edits or resaving."
+    },
+    {
+      "file": "article.html",
+      "url": "https://www.nature.com/articles/ncomms15707",
+      "bytes": 466046,
+      "sha256": "ce24022316006a9e74d90d825167cd3b753efe54d50c9dfea3d9d5778e3dce6d",
+      "provenance": "Original retrieved bytes; no workbook edits or resaving."
+    },
+    {
+      "file": "article.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5465372/fullTextXML",
+      "bytes": 139474,
+      "sha256": "b66212fdba53f64a22d92c3615944913986f9ceae438b7bd003f47e7dae29d2f",
+      "provenance": "Original retrieved bytes; no workbook edits or resaving."
+    }
+  ],
+  "checksum_scope": "Local integrity fingerprints; no independent publisher checksum supplied."
+}

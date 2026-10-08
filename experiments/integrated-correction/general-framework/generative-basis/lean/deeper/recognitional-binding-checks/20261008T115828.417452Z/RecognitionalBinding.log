@@ -1,0 +1,124 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-recognitional-binding-vgzqis2r/RecognitionalBinding.lean:14:28: error: Application type mismatch: The argument
+  x
+has type
+  Term Ground context a✝
+but is expected to have type
+  Term Ground context a
+in the application
+  SourceFree x
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-recognitional-binding-vgzqis2r/RecognitionalBinding.lean:14:43: error: Application type mismatch: The argument
+  y
+has type
+  Term Ground context b✝
+but is expected to have type
+  Term Ground context a
+in the application
+  SourceFree y
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-recognitional-binding-vgzqis2r/RecognitionalBinding.lean:15:27: error: Application type mismatch: The argument
+  x
+has type
+  Term Ground context (a.both b✝)
+but is expected to have type
+  Term Ground context a✝
+in the application
+  SourceFree x
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-recognitional-binding-vgzqis2r/RecognitionalBinding.lean:16:28: error: Application type mismatch: The argument
+  x
+has type
+  Term Ground context (a✝.both a)
+but is expected to have type
+  Term Ground context a✝¹
+in the application
+  SourceFree x
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-recognitional-binding-vgzqis2r/RecognitionalBinding.lean:17:30: error: Application type mismatch: The argument
+  x
+has type
+  Term Ground (a✝ :: context) b✝
+but is expected to have type
+  Term Ground context a
+in the application
+  SourceFree x
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-recognitional-binding-vgzqis2r/RecognitionalBinding.lean:18:29: error: Application type mismatch: The argument
+  f
+has type
+  Term Ground context (a✝.arrow a)
+but is expected to have type
+  Term Ground context a✝¹
+in the application
+  SourceFree f
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-recognitional-binding-vgzqis2r/RecognitionalBinding.lean:18:44: error: Application type mismatch: The argument
+  x
+has type
+  Term Ground context a✝
+but is expected to have type
+  Term Ground context a✝¹
+in the application
+  SourceFree x
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-recognitional-binding-vgzqis2r/RecognitionalBinding.lean:27:41: error(lean.invalidField): Invalid field `elim`: The environment does not contain `Generative.RecognitionalBinding.SourceFree.elim`, so it is not possible to project the field `elim` from an expression
+  pure
+of type `SourceFree (Term.source i g)`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-recognitional-binding-vgzqis2r/RecognitionalBinding.lean:31:15: error: Invalid projection: Projection operates on structure-like types with fields. The expression
+  pure
+has type `SourceFree (x.pair y)` which does not have fields.
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-recognitional-binding-vgzqis2r/RecognitionalBinding.lean:31:43: error: Invalid projection: Projection operates on structure-like types with fields. The expression
+  pure
+has type `SourceFree (x.pair y)` which does not have fields.
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-recognitional-binding-vgzqis2r/RecognitionalBinding.lean:32:56: error: Application type mismatch: The argument
+  pure
+has type
+  SourceFree x.first
+but is expected to have type
+  SourceFree x
+in the application
+  ih pure
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-recognitional-binding-vgzqis2r/RecognitionalBinding.lean:33:57: error: Application type mismatch: The argument
+  pure
+has type
+  SourceFree x.second
+but is expected to have type
+  SourceFree x
+in the application
+  ih pure
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-recognitional-binding-vgzqis2r/RecognitionalBinding.lean:36:13: error: Application type mismatch: The argument
+  pure
+has type
+  SourceFree body.abstract
+but is expected to have type
+  SourceFree body
+in the application
+  ih pure
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-recognitional-binding-vgzqis2r/RecognitionalBinding.lean:40:14: error: Invalid projection: Projection operates on structure-like types with fields. The expression
+  pure
+has type `SourceFree (f.apply x)` which does not have fields.
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-recognitional-binding-vgzqis2r/RecognitionalBinding.lean:41:11: error: Invalid projection: Projection operates on structure-like types with fields. The expression
+  pure
+has type `SourceFree (f.apply x)` which does not have fields.
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-recognitional-binding-vgzqis2r/RecognitionalBinding.lean:72:3: error: Application type mismatch: The argument
+  True.intro
+has type
+  True
+but is expected to have type
+  SourceFree (boundIdentity G i)
+in the application
+  And.intro True.intro
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-recognitional-binding-vgzqis2r/RecognitionalBinding.lean:79:41: error: Application type mismatch: The argument
+  true
+has type
+  Bool
+but is expected to have type
+  GroundFor ?m.7 ?m.9
+in the application
+  extendContext true
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-recognitional-binding-vgzqis2r/RecognitionalBinding.lean:88:12: error: Type mismatch
+  h
+has type
+  SourceFree introducedChoice
+but is expected to have type
+  False
+'Generative.RecognitionalBinding.source_free_related' depends on axioms: [sorryAx]
+'Generative.RecognitionalBinding.no_closed_source_free_atom' depends on axioms: [sorryAx]
+'Generative.RecognitionalBinding.closed_identity_forced' depends on axioms: [sorryAx]
+'Generative.RecognitionalBinding.closed_identity_preserves' depends on axioms: [sorryAx]
+'Generative.RecognitionalBinding.bound_identity_spec' depends on axioms: [sorryAx]
+'Generative.RecognitionalBinding.ambient_ground_can_replace' depends on axioms: [sorryAx]
+'Generative.RecognitionalBinding.introduced_ground_can_replace' depends on axioms: [sorryAx]

@@ -1,0 +1,32 @@
+'Generative.SelectiveRevision.State' does not depend on any axioms
+'Generative.SelectiveRevision.Event' does not depend on any axioms
+'Generative.SelectiveRevision.step' does not depend on any axioms
+'Generative.SelectiveRevision.run' does not depend on any axioms
+'Generative.SelectiveRevision.Ground' does not depend on any axioms
+'Generative.SelectiveRevision.Choice' does not depend on any axioms
+'Generative.SelectiveRevision.Outcome' does not depend on any axioms
+'Generative.SelectiveRevision.usableReading' does not depend on any axioms
+'Generative.SelectiveRevision.combine' does not depend on any axioms
+'Generative.SelectiveRevision.choose' does not depend on any axioms
+'Generative.SelectiveRevision.outcome' does not depend on any axioms
+'Generative.SelectiveRevision.rails' does not depend on any axioms
+'Generative.SelectiveRevision.conventional' does not depend on any axioms
+'Generative.SelectiveRevision.prepared' does not depend on any axioms
+'Generative.SelectiveRevision.learned_reading' does not depend on any axioms
+'Generative.SelectiveRevision.prepared_outcome' depends on axioms: [propext]
+'Generative.SelectiveRevision.purpose_preserves_assessment' does not depend on any axioms
+'Generative.SelectiveRevision.withdrawal_retains_claim_records' does not depend on any axioms
+'Generative.SelectiveRevision.sole_ground_withdrawn' depends on axioms: [propext]
+'Generative.SelectiveRevision.redundant_ground_survives' depends on axioms: [propext]
+'Generative.SelectiveRevision.contrary_reports_conflict' depends on axioms: [propext]
+'Generative.SelectiveRevision.withdrawing_conflicting_ground' depends on axioms: [propext]
+'Generative.SelectiveRevision.changed_purpose_changes_choice' depends on axioms: [propext]
+'Generative.SelectiveRevision.joint_recoding_preserves_outcome' depends on axioms: [propext]
+'Generative.SelectiveRevision.rails_equal_combine' does not depend on any axioms
+'Generative.SelectiveRevision.conventional_matches_all_states' depends on axioms: [propext]
+'Generative.SelectiveRevision.conventional_matches_every_history' depends on axioms: [propext]
+'Generative.SelectiveRevision.suspension_hides_different_grounds' depends on axioms: [propext]
+'Generative.SelectiveRevision.copiedMistake' does not depend on any axioms
+'Generative.SelectiveRevision.supported_copied_mistake' does not depend on any axioms
+'Generative.SelectiveRevision.rawShape' does not depend on any axioms
+'Generative.SelectiveRevision.raw_shape_fails_recoding' depends on axioms: [propext]

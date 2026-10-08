@@ -1,5 +1,8 @@
 import Std
 
+-- Use ordinary case compilation to avoid an unnecessary propext dependency.
+set_option backward.match.sparseCases false
+
 /-!
 # Paid formation and localized retention of two response types
 

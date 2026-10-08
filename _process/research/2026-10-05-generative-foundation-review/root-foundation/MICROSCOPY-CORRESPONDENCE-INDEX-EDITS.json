@@ -1,0 +1,315 @@
+{
+  "scope": "Original microscopy correspondence; owned insertions and C14 only; all six full completion rows retained.",
+  "edits": [
+    {
+      "path": "RESEARCH.md",
+      "before_sha256": "78d00d6d688e8ad622d3c8b35ba463c19f54451ba5869f2518669e97fafef8b9",
+      "after_sha256": "d9dc2e0f1482ff0267e9e34e3f99f94aa2dc9ff8daef1ffaf9d2e06272b060fe"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "before_sha256": "1dca11922cdb11f0949a1b90aa9a6de61c0d369dbc76690d6d6c1101d084a52a",
+      "after_sha256": "df2d8ffa91b953f96625997c782eeb8f6bdbd4e273a98cd757319b5e011051a0"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "before_sha256": "9310fd6de8746252d424646b38a8b7cf1fa74a2a234a12aac48d16fab9c40465",
+      "after_sha256": "aa0ba75a5c4f50a3131091f008f6979dc64b641f087e4b7c576c27fb77d734aa"
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "before_sha256": "720ce90259c0783ef602aeb76d43f546ea3b0ed997b8115cba3ffb00a61334ff",
+      "after_sha256": "5ce5a244293f4c8c621ca37e1e3f9d07e969ec8740c71e28aa1520cbf1ae381e"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "before_sha256": "c490d175b4e55dd8dc63a492e8e2496bdfc7ddf9e30ba9e3b106e7765adb07af",
+      "after_sha256": "9fb43fceb63f6b73a0c6331b3e3a139c2eda1866dde588049e5642f3467ad837"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "before_sha256": "f407399dd25759b744bfd3c331b42d503be3feee5d9ab17324a1636922a8a74c",
+      "after_sha256": "e48e9db0fb3a00bc902cbc73aa77030144aa32bbbcb81461f0d80e1028e6d4aa"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "before_sha256": "a873f2e6003a33c1acab46dbd4a30347b4fb463aaf710506b47f2b9f0d9a0dfb",
+      "after_sha256": "8023c1d6b352eeef651d46137211e7065f175ac6cb7ae78bea186f43f058f3da"
+    },
+    {
+      "path": "sources/evolutionary-selection/karita-2026/README.md",
+      "before_sha256": "1e97315027b44c3c481a7498f5df7eebf183b0815806382fb6ee8d37f85cae2c",
+      "after_sha256": "edf2255d300f8340c2d6c4a053c100f7ab64050328d78967a7125839f40a67ae"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md",
+      "before_sha256": "7e78ebab72f75fda21af07b5dd8de4dd1814b125d3a255631b3fa26a4426e7c1",
+      "after_sha256": "5903423d2593d9d9d404612f6a0617a19f9347d99bbab5b75c0472383120a63d"
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "before_sha256": "5ce5a244293f4c8c621ca37e1e3f9d07e969ec8740c71e28aa1520cbf1ae381e",
+      "after_sha256": "4ce51efcaf54c3f945d6b0bcd6abd6d1224bc1f4a42ee8511bcd920c1e92d7f0"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/contextual-establishment/README.md",
+      "before_sha256": "eca454f23d37f0e5a42a7ab00068cdc20eacab91fafddf867a720f6247c526fa",
+      "after_sha256": "e11ce49bb87daa13b91413f43c266d80f8b76185fb893d275c348ee6f3712b22"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "before_sha256": "383ca9654e323cd5887e9ffc1b52aa5f3295d1efdd3ed10765a899878aa9274e",
+      "after_sha256": "18c39d33df2621b710b7a446ee66b7587ede9043b8a5695477afa80008bd6a9a"
+    }
+  ],
+  "completion_rows_before": [
+    "| **1 Formation of evolving organization** | Formation, regulation and developmental reconstruction have conditional models. The new bond-history account derives common founder ancestry under local non-aggregative development, with a targeted biological correspondence. | Extend the connected explanation beyond the stated local laws, retaining genealogy, actual construction and empirical scope. Origins of cells/genomes and broader mechanisms are not established by this case. |",
+    "| **2 Recovery of established evolutionary explanations** | Explicit transmission models and the new two-type recurrence correspondence. | Correspondences covering the claimed selection, mutation, drift, movement, inheritance and ecological mechanisms, with valid ranges and failures. Mathematical claims require actual Lean checks. An abstract interface alone is insufficient. |",
+    "| **3 Evolution of the conditions of evolution** | Actual output determines reconstruction, and inherited retention changes development. Retention, packing and aggregation constrain sorting. A bacterial genealogy and directly linked reversion assay now connect inherited switching to actual cycle completion and subsequent lineage representation under a declared regime. Separate oxygen experiments establish activity-generated gradients and condition-dependent competitive outcomes. | Generalize and calibrate these connections with supported renewal, mixing and stochastic occurrence. Resolve the separate yeast census conversion and follow fragmentation/aggregation participants. Explain mutation, transmission and replacement contributions to prevalence; fixation alone is not causal proof. Laboratory protocol changes do not establish endogenous evolution of the selector. |",
+    "| **4 Novel organization and changed evolutionary units** | The completed [new-possibilities integration](NEW-POSSIBILITIES.md) distinguishes installed construction from encompassing law, gives a formed constructor and scope-specific description revision. The association model adds formed group relations; empirical aggregation distinguishes temporary sorting groups from inherited organizations. | Credit those results and connect formation to inherited retention and ongoing effect under actual evolutionary conditions. Common transport does not alone establish a new inherited unit. Broader changes of evolutionary units and sustained qualitative innovation require their own mechanisms and evidence. |",
+    "| **5 Demonstrated comparative strength** | Exact recurrence correspondence and a proved limit of snapshots omitting bonds. Retention data compare ordinary predictors with/without protocol information, including a worsening case. A source-bound settling sensitivity holds geometry fixed and reveals consequential density/drag choices; a conventional developmental life-cycle model receives credit. Chronological genealogy forecasts now demonstrate a gain over a changing stage average and two block alternatives, fully credited to conventional lineage inference. Dated assay transfer exposes stage-specific prediction failures. | Establish a consequential gain against an adequately specified rival with matched evidence and assumptions. Neither the reduced baselines nor disagreement between unvalidated velocity approximations establishes superior prediction. Measure sorting and descendants to decide the physical correspondence. Broad empirical superiority remains unestablished. |",
+    "| **6 Ethical continuation and evolved evaluation** | The [practical-judgment candidate](PRACTICAL-JUDGMENT.md) is complete and independently accepted at its explicit-axiom general-principles scope, with G0 and additional comparison/responsibility commitments disclosed. | Credit that completed scope; connect evolved evaluation to its actual recognition, calibration and implementation, preserving failures. Application correspondence and actual compliance require evidence. Reproductive advantage cannot silently serve as ethical authority. |"
+  ],
+  "completion_rows_after": [
+    "| **1 Formation of evolving organization** | Formation, regulation and developmental reconstruction have conditional models. The new bond-history account derives common founder ancestry under local non-aggregative development, with a targeted biological correspondence. | Extend the connected explanation beyond the stated local laws, retaining genealogy, actual construction and empirical scope. Origins of cells/genomes and broader mechanisms are not established by this case. |",
+    "| **2 Recovery of established evolutionary explanations** | Explicit transmission models and the new two-type recurrence correspondence. | Correspondences covering the claimed selection, mutation, drift, movement, inheritance and ecological mechanisms, with valid ranges and failures. Mathematical claims require actual Lean checks. An abstract interface alone is insufficient. |",
+    "| **3 Evolution of the conditions of evolution** | Actual output determines reconstruction, and inherited retention changes development. Retention, packing and aggregation constrain sorting. A bacterial genealogy and directly linked reversion assay now connect inherited switching to actual cycle completion and subsequent lineage representation under a declared regime. Separate oxygen experiments establish activity-generated gradients and condition-dependent competitive outcomes. | Generalize and calibrate these connections with supported renewal, mixing and stochastic occurrence. Resolve the separate yeast census conversion and follow fragmentation/aggregation participants. Explain mutation, transmission and replacement contributions to prevalence; fixation alone is not causal proof. Laboratory protocol changes do not establish endogenous evolution of the selector. |",
+    "| **4 Novel organization and changed evolutionary units** | The completed [new-possibilities integration](NEW-POSSIBILITIES.md) distinguishes installed construction from encompassing law, gives a formed constructor and scope-specific description revision. The association model adds formed group relations; empirical aggregation distinguishes temporary sorting groups from inherited organizations. | Credit those results and connect formation to inherited retention and ongoing effect under actual evolutionary conditions. Common transport does not alone establish a new inherited unit. Broader changes of evolutionary units and sustained qualitative innovation require their own mechanisms and evidence. |",
+    "| **5 Demonstrated comparative strength** | Exact recurrence correspondence and a proved limit of snapshots omitting bonds. Retention data compare ordinary predictors with/without protocol information, including a worsening case. A source-bound settling sensitivity holds geometry fixed and reveals consequential density/drag choices; a conventional developmental life-cycle model receives credit. Chronological genealogy forecasts now demonstrate a gain over a changing stage average and two block alternatives, fully credited to conventional lineage inference. Dated assay transfer exposes stage-specific prediction failures. | Establish a consequential gain against an adequately specified rival with matched evidence and assumptions. Neither the reduced baselines nor disagreement between unvalidated velocity approximations establishes superior prediction. Measure sorting and descendants to decide the physical correspondence. Broad empirical superiority remains unestablished. |",
+    "| **6 Ethical continuation and evolved evaluation** | The [practical-judgment candidate](PRACTICAL-JUDGMENT.md) is complete and independently accepted at its explicit-axiom general-principles scope, with G0 and additional comparison/responsibility commitments disclosed. | Credit that completed scope; connect evolved evaluation to its actual recognition, calibration and implementation, preserving failures. Application correspondence and actual compliance require evidence. Reproductive advantage cannot silently serve as ethical authority. |"
+  ],
+  "chain": {
+    "entry_before": {
+      "id": "C14",
+      "title_zh": "生成对选择的递归影响",
+      "title_en": "Recursive influence of generation on selection",
+      "claim_zh": "活动后果可改变后继形成与选择条件，贡献变体不必获益。重构、发育与聚合区分遗传群体和运输集合；细菌回复实验接通遗传切换与周期完成。谱系预测保留总体优势及局部失败。新增原始实证支持呼吸形成氧梯度并改变后续选择；结构形成史须接入发育迁移，常规解释获完整信用。 原始延时研究进一步记录界面小筏形成、下落和再形成；酸碱条件改变空间组织，须与持续膜结构和实际后代分别对应。 比较方向现聚焦独立机制约束下的跨条件接续，以及重构和选择关系自身的改变。 新的24小时形成实测与常规模型进一步接通建立条件和留存占比；较低离散的优势取决于相对生长，反例保留。 已完成的演化组织说明进一步接通实际取样、继承发育状态与跨转移重建；组织改变后续取样结果，真实供给及后续修订均保留。",
+      "claim_en": "Consequences can change successor formation and selection without guaranteeing contributor advantage. Reconstruction, development and aggregation distinguish inherited clusters from transport groups; bacterial reversion links switching to cycle completion. Lineage forecasts retain aggregate gains and local failures. Primary evidence now links respiration-generated oxygen gradients to changed selection; structural development must enter transferable prediction. Conventional explanation receives full credit. Original time-lapse research adds recurring surface rafts and pH-sensitive spatial organization, requiring separate correspondences for persistent mat structure and actual descendants. Comparative work now targets continuation across conditions constrained by independent mechanisms, followed by changes in reconstruction and selection relations. New 24-hour observations and a conventional model connect establishment to retained representation; lower dispersal gains only under the relative-growth condition, with an adverse contrast preserved. The completed evolutionary-organization account now connects actual sampling, inherited developmental state and reconstruction across transfers; formed organization changes later sampling, with actual provision and subsequent revision retained.",
+      "scope_zh": "保留16/26、19/41、7/13及6/6定理/审计与反例；本轮新增7项局部定理／11项审计。54段视频/18项技术重复、33/190敏感性、3,808记录/3,600联系及42/72对7/72保持范围；3,424项预测及139分组/485行核验保留。新核对八项生长及两项竞争摘要，不能转作周期概率。初始未形成与后来失效须区分；联合校准、广泛比较与支持更新仍开放。 新保存四份影片，44帧像素对应核验通过；帧数不是重复。基因标签、拍摄时钟及后代联系未齐，未拟合周期概率。 新方向评估已完成，须与生态支架、内生化及演化联结论等强对手比较；优越性未获确立，无新预测或定理。 新核对45项培养物／11个日期组，保留784对769数量歧义与数值容量失败；事件求解只作显式模型适配。 聚焦说明现按用户选定范围完成：20项新 Lean 定理／44项新声明审计／113项闭包审计。有限历史继承及重建不等于入侵稳定性或无限更新；原始干预和强比较已评估，广泛优越性仍未成立。",
+      "scope_en": "Preserves 16/26, 19/41, 7/13 and 6/6 theorem/audit results and counterexamples; seven new local-balance theorems / eleven audits pass. The 54 videos/18 technical replicates, 33/190 sensitivity, 3,808 records/3,600 links, 42/72 versus 7/72, 3,424 forecasts and 139-cohort/485-row checks retain their scopes. Eight growth and two competition summaries cannot become cycle probabilities. Initial absence versus later loss, joint calibration, broad comparison and support renewal remain open. Four original movies are preserved and 44 selected-frame correspondences pass; frames are not replicates. Exact genotype attribution, acquisition timing and linked descendants remain incomplete; no cycle probability is fitted. The new direction assessment is complete; ecological scaffolding, endogenization and evolutionary connectionism are strong comparators. Superiority is unestablished, with no new forecast or theorem. New checks cover 45 cultures/11 dated cohorts, preserving a 784-versus-769 count ambiguity and numerical capacity failure; event integration is an explicit model adaptation. The focused account is complete at the selected scope: 20 new Lean theorems / 44 new declaration audits / 113 closure audits. Finite-history inheritance and reconstruction do not establish invasion stability or indefinite renewal; primary interventions and strong comparators are assessed, while broad superiority remains unestablished.",
+      "links": [
+        {
+          "label_zh": "当前表述与范围",
+          "label_en": "Current statement and scope",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#recursive-selection-and-the-generative-direction"
+        },
+        {
+          "label_zh": "生成的重构及实查",
+          "label_en": "Generated reconstruction and checks",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELECTION-RECURRENCE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "完整演化目标",
+          "label_en": "Full evolutionary objective",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md"
+        },
+        {
+          "label_zh": "局部发育与关联形成",
+          "label_en": "Local development and formed association",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-ASSOCIATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "生态留存实证与核验",
+          "label_en": "Measured ecological retention and checks",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ECOLOGICAL-SELECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "堆积、断裂与数量对应",
+          "label_en": "Packing, fragmentation and census correspondence",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PACKING-FRAGMENTATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "生命周期与物理筛选核验",
+          "label_en": "Life-cycle and physical sorting checks",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SETTLING-CORRESPONDENCE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "聚合实测与共存对应",
+          "label_en": "Measured aggregation and coexistence",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AGGREGATION-SELECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "谱系与实际生命周期",
+          "label_en": "Recorded lineage and realized life cycle",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LINEAGE-CONTINUATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "谱系的时间遮蔽预测",
+          "label_en": "Chronological lineage forecasting",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LINEAGE-FORECAST-INTEGRATION.md"
+        },
+        {
+          "label_zh": "共同条件及发育预测迁移",
+          "label_en": "Shared conditions and developmental transfer",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-TRANSFER-INTEGRATION.md"
+        },
+        {
+          "label_zh": "生成的氧条件与膜发育",
+          "label_en": "Generated oxygen conditions and mat development",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-CONDITIONS-INTEGRATION.md"
+        },
+        {
+          "label_zh": "界面形成、失效与再形成",
+          "label_en": "Surface formation, loss and reformation",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-HISTORY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "比较贡献与下一检验",
+          "label_en": "Comparative contribution and next test",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-COMPARATIVE-DIRECTION.md"
+        },
+        {
+          "label_zh": "情境形成与留存选择",
+          "label_en": "Contextual establishment and retention selection",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md"
+        },
+        {
+          "label_zh": "演化组织的完整聚焦说明",
+          "label_en": "Completed focused account of evolutionary organization",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md"
+        },
+        {
+          "label_zh": "整合、强比较及完成评估",
+          "label_en": "Integration, strong comparison and completion assessment",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "实际后继重建的检查回执",
+          "label_en": "Checked reconstruction through actual descendants",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/developmental-reconstruction-verification/verification.json"
+        },
+        {
+          "label_zh": "原始证据及读取范围",
+          "label_en": "Primary evidence and reading scope",
+          "path": "sources/evolutionary-selection/evolutionary-organization/README.md"
+        }
+      ]
+    },
+    "entry_after": {
+      "id": "C14",
+      "title_zh": "生成对选择的递归影响",
+      "title_en": "Recursive influence of generation on selection",
+      "claim_zh": "活动后果可改变后继形成与选择条件，贡献变体不必获益。重构、发育与聚合区分遗传群体和运输集合；细菌回复实验接通遗传切换与周期完成。谱系预测保留总体优势及局部失败。新增原始实证支持呼吸形成氧梯度并改变后续选择；结构形成史须接入发育迁移，常规解释获完整信用。 原始延时研究进一步记录界面小筏形成、下落和再形成；酸碱条件改变空间组织，须与持续膜结构和实际后代分别对应。 比较方向现聚焦独立机制约束下的跨条件接续，以及重构和选择关系自身的改变。 新的24小时形成实测与常规模型进一步接通建立条件和留存占比；较低离散的优势取决于相对生长，反例保留。 已完成的演化组织说明进一步接通实际取样、继承发育状态与跨转移重建；组织改变后续取样结果，真实供给及后续修订均保留。 原始显微数据现核对真实尺度及逐位置拍摄时钟，混合培养两段采集的位置配置可接续；成像对应与培养物身份仍分别论证。",
+      "claim_en": "Consequences can change successor formation and selection without guaranteeing contributor advantage. Reconstruction, development and aggregation distinguish inherited clusters from transport groups; bacterial reversion links switching to cycle completion. Lineage forecasts retain aggregate gains and local failures. Primary evidence now links respiration-generated oxygen gradients to changed selection; structural development must enter transferable prediction. Conventional explanation receives full credit. Original time-lapse research adds recurring surface rafts and pH-sensitive spatial organization, requiring separate correspondences for persistent mat structure and actual descendants. Comparative work now targets continuation across conditions constrained by independent mechanisms, followed by changes in reconstruction and selection relations. New 24-hour observations and a conventional model connect establishment to retained representation; lower dispersal gains only under the relative-growth condition, with an adverse contrast preserved. The completed evolutionary-organization account now connects actual sampling, inherited developmental state and reconstruction across transfers; formed organization changes later sampling, with actual provision and subsequent revision retained. Original microscopy now supplies checked scale and position-specific capture times, with continued position configuration across two rescue acquisitions; imaging correspondence and culture identity remain distinct.",
+      "scope_zh": "保留16/26、19/41、7/13及6/6定理/审计与反例；本轮新增7项局部定理／11项审计。54段视频/18项技术重复、33/190敏感性、3,808记录/3,600联系及42/72对7/72保持范围；3,424项预测及139分组/485行核验保留。新核对八项生长及两项竞争摘要，不能转作周期概率。初始未形成与后来失效须区分；联合校准、广泛比较与支持更新仍开放。 新保存四份影片，44帧像素对应核验通过；帧数不是重复。基因标签、拍摄时钟及后代联系未齐，未拟合周期概率。 新方向评估已完成，须与生态支架、内生化及演化联结论等强对手比较；优越性未获确立，无新预测或定理。 新核对45项培养物／11个日期组，保留784对769数量歧义与数值容量失败；事件求解只作显式模型适配。 聚焦说明现按用户选定范围完成：20项新 Lean 定理／44项新声明审计／113项闭包审计。有限历史继承及重建不等于入侵稳定性或无限更新；原始干预和强比较已评估，广泛优越性仍未成立。 新核对4,383项目录、388项时间戳、114项首末图像记录及两幅完整像素场；位置时差最大225.89秒，重启间隔337.39秒。处理／终点身份、内部轨迹及六日后代仍未接齐，无新定理。",
+      "scope_en": "Preserves 16/26, 19/41, 7/13 and 6/6 theorem/audit results and counterexamples; seven new local-balance theorems / eleven audits pass. The 54 videos/18 technical replicates, 33/190 sensitivity, 3,808 records/3,600 links, 42/72 versus 7/72, 3,424 forecasts and 139-cohort/485-row checks retain their scopes. Eight growth and two competition summaries cannot become cycle probabilities. Initial absence versus later loss, joint calibration, broad comparison and support renewal remain open. Four original movies are preserved and 44 selected-frame correspondences pass; frames are not replicates. Exact genotype attribution, acquisition timing and linked descendants remain incomplete; no cycle probability is fitted. The new direction assessment is complete; ecological scaffolding, endogenization and evolutionary connectionism are strong comparators. Superiority is unestablished, with no new forecast or theorem. New checks cover 45 cultures/11 dated cohorts, preserving a 784-versus-769 count ambiguity and numerical capacity failure; event integration is an explicit model adaptation. The focused account is complete at the selected scope: 20 new Lean theorems / 44 new declaration audits / 113 closure audits. Finite-history inheritance and reconstruction do not establish invasion stability or indefinite renewal; primary interventions and strong comparators are assessed, while broad superiority remains unestablished. New checks cover 4,383 directory entries, 388 timestamps, 114 first/last image records and two complete pixel fields; scene offsets reach 225.89 seconds and the restart gap is 337.39 seconds. Treatment/endpoint identity, interior trajectories and six-day descendants remain unjoined; no new theorem.",
+      "links": [
+        {
+          "label_zh": "当前表述与范围",
+          "label_en": "Current statement and scope",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#recursive-selection-and-the-generative-direction"
+        },
+        {
+          "label_zh": "生成的重构及实查",
+          "label_en": "Generated reconstruction and checks",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELECTION-RECURRENCE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "完整演化目标",
+          "label_en": "Full evolutionary objective",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md"
+        },
+        {
+          "label_zh": "局部发育与关联形成",
+          "label_en": "Local development and formed association",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-ASSOCIATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "生态留存实证与核验",
+          "label_en": "Measured ecological retention and checks",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ECOLOGICAL-SELECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "堆积、断裂与数量对应",
+          "label_en": "Packing, fragmentation and census correspondence",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PACKING-FRAGMENTATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "生命周期与物理筛选核验",
+          "label_en": "Life-cycle and physical sorting checks",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SETTLING-CORRESPONDENCE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "聚合实测与共存对应",
+          "label_en": "Measured aggregation and coexistence",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AGGREGATION-SELECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "谱系与实际生命周期",
+          "label_en": "Recorded lineage and realized life cycle",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LINEAGE-CONTINUATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "谱系的时间遮蔽预测",
+          "label_en": "Chronological lineage forecasting",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LINEAGE-FORECAST-INTEGRATION.md"
+        },
+        {
+          "label_zh": "共同条件及发育预测迁移",
+          "label_en": "Shared conditions and developmental transfer",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-TRANSFER-INTEGRATION.md"
+        },
+        {
+          "label_zh": "生成的氧条件与膜发育",
+          "label_en": "Generated oxygen conditions and mat development",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-CONDITIONS-INTEGRATION.md"
+        },
+        {
+          "label_zh": "界面形成、失效与再形成",
+          "label_en": "Surface formation, loss and reformation",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-HISTORY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "比较贡献与下一检验",
+          "label_en": "Comparative contribution and next test",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-COMPARATIVE-DIRECTION.md"
+        },
+        {
+          "label_zh": "情境形成与留存选择",
+          "label_en": "Contextual establishment and retention selection",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md"
+        },
+        {
+          "label_zh": "演化组织的完整聚焦说明",
+          "label_en": "Completed focused account of evolutionary organization",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md"
+        },
+        {
+          "label_zh": "整合、强比较及完成评估",
+          "label_en": "Integration, strong comparison and completion assessment",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "实际后继重建的检查回执",
+          "label_en": "Checked reconstruction through actual descendants",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/developmental-reconstruction-verification/verification.json"
+        },
+        {
+          "label_zh": "原始证据及读取范围",
+          "label_en": "Primary evidence and reading scope",
+          "path": "sources/evolutionary-selection/evolutionary-organization/README.md"
+        },
+        {
+          "label_zh": "原始显微尺度、时钟与身份对应",
+          "label_en": "Original microscopy scale, timing and identity correspondence",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MICROSCOPY-CORRESPONDENCE-INTEGRATION.md"
+        }
+      ]
+    },
+    "other_entries_preserved": 86,
+    "modified_reviewed_sources": [
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/MICROSCOPY-CORRESPONDENCE-INTEGRATION.md"
+    ],
+    "discovery_added": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/MICROSCOPY-CORRESPONDENCE-INTEGRATION.md"
+    ],
+    "unrelated_review_obligations": {
+      "modified_sources": 5,
+      "missing_sources": 0,
+      "new_pages": 6,
+      "removed_pages": 0
+    }
+  }
+}

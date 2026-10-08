@@ -1,0 +1,348 @@
+{
+  "status": "passed",
+  "utc": "20261008T112119.100011Z",
+  "retained_run": "fallible-inspection-checks/20261008T112119.100011Z",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "sources": {
+    "AlignmentInquiry": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentInquiry.lean",
+      "sha256": "f40ad6179db326830edcdf8ec511f9069833a361f71181fd60166e0f72c0a23c"
+    },
+    "EffectiveCommand": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EffectiveCommand.lean",
+      "sha256": "7247ca05597f2f916fb409213d3814d48ad9a7037fb95017146d106273d58553"
+    },
+    "AcquiredCorrection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AcquiredCorrection.lean",
+      "sha256": "5448267c53e610b28bd030dfb1a894be840c307d54cd76e4be3695f196e8cd62"
+    },
+    "FaultTolerantCorrection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FaultTolerantCorrection.lean",
+      "sha256": "38f978fcabfaadca45c90b2298cf57502b839c6c9b93c3b9d0827d9ac2cb66ac"
+    },
+    "CorrectionReconfiguration": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionReconfiguration.lean",
+      "sha256": "4bd7160762f4bb697c72293133c91934e3622674f75990f6328d186abd7425e7"
+    },
+    "EvidenceQualifiedCorrection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvidenceQualifiedCorrection.lean",
+      "sha256": "a3c87bdfa01dbf6c25da19d4bbc0d6e028744b504d95023c76607379cc20327f"
+    },
+    "FallibleInspection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FallibleInspection.lean",
+      "sha256": "998bca3b8a24fd84c957e11b5b3cf9ef838fba5f76a432b0cbb35255a18c6aa3"
+    },
+    "FallibleInspectionCases": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FallibleInspectionCases.lean",
+      "sha256": "00b2fe297b7c72f1695692a786bcc4e1d1e7c427b02187e037d204e8c15b09ee"
+    }
+  },
+  "checker_sha256": {
+    "check_fallible_inspection.py": "694e53d9e4bfc344f2cdb2b98ca6b3a481d1dc589863216e3ec69e78386ece27",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Joint inference of structural answers and fallible witness faults; retention, exact complete-transcript diagnosability, current command soundness and conditional completion. Actual candidate/fault coverage, truthful surviving reports, fixed roster and interval, mandate and protected execution remain supplied.",
+  "version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "modules": {
+    "FallibleInspection": {
+      "declarations": [
+        {
+          "kind": "abbrev",
+          "name": "FallibleInspection.Reports"
+        },
+        {
+          "kind": "def",
+          "name": "FallibleInspection.explains"
+        },
+        {
+          "kind": "def",
+          "name": "FallibleInspection.compatible"
+        },
+        {
+          "kind": "def",
+          "name": "FallibleInspection.refine"
+        },
+        {
+          "kind": "theorem",
+          "name": "FallibleInspection.explains_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "FallibleInspection.compatible_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "FallibleInspection.joint_refinement_preserves_actual"
+        },
+        {
+          "kind": "theorem",
+          "name": "FallibleInspection.joint_refinement_subset"
+        },
+        {
+          "kind": "theorem",
+          "name": "FallibleInspection.missing_reports_preserve_each_nonempty_model"
+        },
+        {
+          "kind": "theorem",
+          "name": "FallibleInspection.received_common_survivor_forces_same_answer"
+        },
+        {
+          "kind": "def",
+          "name": "FallibleInspection.CrossSeparated"
+        },
+        {
+          "kind": "theorem",
+          "name": "FallibleInspection.cross_separation_excludes_opposite_explanations"
+        },
+        {
+          "kind": "theorem",
+          "name": "FallibleInspection.responsive_survivors_exclude_opposite"
+        },
+        {
+          "kind": "def",
+          "name": "FallibleInspection.ambiguousReports"
+        },
+        {
+          "kind": "theorem",
+          "name": "FallibleInspection.covering_faults_admit_same_complete_transcript"
+        },
+        {
+          "kind": "theorem",
+          "name": "FallibleInspection.complete_diagnosability_iff_cross_separation"
+        },
+        {
+          "kind": "theorem",
+          "name": "FallibleInspection.refined_pool_remains_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "FallibleInspection.jointly_inspected_completion"
+        },
+        {
+          "kind": "def",
+          "name": "FallibleInspection.auditRoster"
+        },
+        {
+          "kind": "def",
+          "name": "FallibleInspection.auditArrangement"
+        },
+        {
+          "kind": "def",
+          "name": "FallibleInspection.auditFaults"
+        },
+        {
+          "kind": "def",
+          "name": "FallibleInspection.splitReports"
+        },
+        {
+          "kind": "def",
+          "name": "FallibleInspection.posterior"
+        },
+        {
+          "kind": "theorem",
+          "name": "FallibleInspection.conflicting_models_each_certify_themselves"
+        },
+        {
+          "kind": "theorem",
+          "name": "FallibleInspection.four_witnesses_cannot_separate_this_transcript"
+        },
+        {
+          "kind": "theorem",
+          "name": "FallibleInspection.fifth_diagnostic_witness_resolves_relevant_distinction"
+        },
+        {
+          "kind": "theorem",
+          "name": "FallibleInspection.absent_fifth_report_preserves_uncertainty"
+        },
+        {
+          "kind": "def",
+          "name": "FallibleInspection.falseFifth"
+        },
+        {
+          "kind": "theorem",
+          "name": "FallibleInspection.fifth_witness_is_not_an_infallible_oracle"
+        },
+        {
+          "kind": "theorem",
+          "name": "FallibleInspection.duplicated_fifth_support_does_not_repair_diagnosis"
+        },
+        {
+          "kind": "def",
+          "name": "FallibleInspection.simulationReports"
+        },
+        {
+          "kind": "structure",
+          "name": "FallibleInspection.Audited"
+        },
+        {
+          "kind": "def",
+          "name": "FallibleInspection.inspect"
+        },
+        {
+          "kind": "def",
+          "name": "FallibleInspection.run"
+        },
+        {
+          "kind": "theorem",
+          "name": "FallibleInspection.inspection_keeps_actual_under_admitted_faults"
+        },
+        {
+          "kind": "def",
+          "name": "FallibleInspection.outcome"
+        },
+        {
+          "kind": "theorem",
+          "name": "FallibleInspection.fallible_inspection_then_actual_shutdown"
+        },
+        {
+          "kind": "theorem",
+          "name": "FallibleInspection.inadequate_witnesses_leave_correction_uncertified"
+        },
+        {
+          "kind": "theorem",
+          "name": "FallibleInspection.diagnostic_success_still_requires_response_capacity"
+        },
+        {
+          "kind": "theorem",
+          "name": "FallibleInspection.denied_inspection_does_not_collect_or_execute"
+        },
+        {
+          "kind": "theorem",
+          "name": "FallibleInspection.uncovered_correlated_witness_failure_can_delete_actual"
+        }
+      ],
+      "dependencies": {
+        "FallibleInspection.Reports": [],
+        "FallibleInspection.explains": [],
+        "FallibleInspection.compatible": [],
+        "FallibleInspection.refine": [],
+        "FallibleInspection.explains_iff": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FallibleInspection.compatible_iff": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FallibleInspection.joint_refinement_preserves_actual": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FallibleInspection.joint_refinement_subset": [
+          "propext"
+        ],
+        "FallibleInspection.missing_reports_preserve_each_nonempty_model": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FallibleInspection.received_common_survivor_forces_same_answer": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FallibleInspection.CrossSeparated": [],
+        "FallibleInspection.cross_separation_excludes_opposite_explanations": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FallibleInspection.responsive_survivors_exclude_opposite": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FallibleInspection.ambiguousReports": [],
+        "FallibleInspection.covering_faults_admit_same_complete_transcript": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FallibleInspection.complete_diagnosability_iff_cross_separation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FallibleInspection.refined_pool_remains_sound": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FallibleInspection.jointly_inspected_completion": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FallibleInspection.auditRoster": [],
+        "FallibleInspection.auditArrangement": [],
+        "FallibleInspection.auditFaults": [],
+        "FallibleInspection.splitReports": [],
+        "FallibleInspection.posterior": [],
+        "FallibleInspection.conflicting_models_each_certify_themselves": [],
+        "FallibleInspection.four_witnesses_cannot_separate_this_transcript": [],
+        "FallibleInspection.fifth_diagnostic_witness_resolves_relevant_distinction": [],
+        "FallibleInspection.absent_fifth_report_preserves_uncertainty": [],
+        "FallibleInspection.falseFifth": [],
+        "FallibleInspection.fifth_witness_is_not_an_infallible_oracle": [],
+        "FallibleInspection.duplicated_fifth_support_does_not_repair_diagnosis": [],
+        "FallibleInspection.simulationReports": [],
+        "FallibleInspection.Audited": [],
+        "FallibleInspection.inspect": [],
+        "FallibleInspection.run": [
+          "propext"
+        ],
+        "FallibleInspection.inspection_keeps_actual_under_admitted_faults": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FallibleInspection.outcome": [
+          "propext"
+        ],
+        "FallibleInspection.fallible_inspection_then_actual_shutdown": [
+          "propext"
+        ],
+        "FallibleInspection.inadequate_witnesses_leave_correction_uncertified": [
+          "propext"
+        ],
+        "FallibleInspection.diagnostic_success_still_requires_response_capacity": [
+          "propext"
+        ],
+        "FallibleInspection.denied_inspection_does_not_collect_or_execute": [
+          "propext"
+        ],
+        "FallibleInspection.uncovered_correlated_witness_failure_can_delete_actual": []
+      },
+      "theorems": 24
+    }
+  },
+  "new_theorems": 24,
+  "audited_declarations": 41,
+  "compared_records": 18684,
+  "record_counts": {
+    "0": 2592,
+    "1": 7560,
+    "2": 6804,
+    "3": 1728
+  },
+  "correspondence": "2592 transcript refinements/certificates, 7560 costed executions, 6804 executions over arbitrary faulty-report assignments, and 1728 paired-fault transcript records match a separately expressed bitset/accounting reference. Same-author comparison, not independent review or empirical data.",
+  "artifacts": {
+    "FallibleInspection.lean": "998bca3b8a24fd84c957e11b5b3cf9ef838fba5f76a432b0cbb35255a18c6aa3",
+    "EffectiveCommand.lean": "7247ca05597f2f916fb409213d3814d48ad9a7037fb95017146d106273d58553",
+    "FaultTolerantCorrection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FallibleInspectionAudit.log": "96d5b0cdfd161d12df25624792a903c6201d717cdd5cc945e189634a0c6bafc3",
+    "FallibleInspectionAudit.lean": "cce806cd9188782ca6f4bbd0f698e95f1ce8e2586aa6b177fb65fded407263f9",
+    "cases.log": "d26ffaa59d59890926818ed7e52232f9132f5b2c15ca54eb0b1129356be9972e",
+    "RunCases.lean": "c7cae889bd1e62051a3c66e53c9e499ce9bc45427a63b255c85de143629e3e47",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_fallible_inspection.py": "694e53d9e4bfc344f2cdb2b98ca6b3a481d1dc589863216e3ec69e78386ece27",
+    "CorrectionReconfiguration.lean": "4bd7160762f4bb697c72293133c91934e3622674f75990f6328d186abd7425e7",
+    "EvidenceQualifiedCorrection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "AlignmentInquiry.lean": "f40ad6179db326830edcdf8ec511f9069833a361f71181fd60166e0f72c0a23c",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b",
+    "FallibleInspection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference.json": "857a82fc89f48b9d665f26a8c7943ddee24e24b687ddf5a4d453e9a10e57fb7a",
+    "EvidenceQualifiedCorrection.lean": "a3c87bdfa01dbf6c25da19d4bbc0d6e028744b504d95023c76607379cc20327f",
+    "FallibleInspectionCases.lean": "00b2fe297b7c72f1695692a786bcc4e1d1e7c427b02187e037d204e8c15b09ee",
+    "FallibleInspectionCases.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "EffectiveCommand.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FaultTolerantCorrection.lean": "38f978fcabfaadca45c90b2298cf57502b839c6c9b93c3b9d0827d9ac2cb66ac",
+    "AcquiredCorrection.lean": "5448267c53e610b28bd030dfb1a894be840c307d54cd76e4be3695f196e8cd62",
+    "AcquiredCorrection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CorrectionReconfiguration.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "AlignmentInquiry.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "status": "failed",
+  "utc": "20261008T101702.000666Z",
+  "retained_run": "fault-tolerant-correction-checks/20261008T101702.000666Z",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "sources": {
+    "AlignmentInquiry": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentInquiry.lean",
+      "sha256": "f40ad6179db326830edcdf8ec511f9069833a361f71181fd60166e0f72c0a23c"
+    },
+    "EffectiveCommand": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EffectiveCommand.lean",
+      "sha256": "7247ca05597f2f916fb409213d3814d48ad9a7037fb95017146d106273d58553"
+    },
+    "AcquiredCorrection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AcquiredCorrection.lean",
+      "sha256": "5448267c53e610b28bd030dfb1a894be840c307d54cd76e4be3695f196e8cd62"
+    },
+    "FaultTolerantCorrection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FaultTolerantCorrection.lean",
+      "sha256": "809baf2e1fc7f869f195a5bf9e1afe05284cf47fcdea6b93314e06cf30480157"
+    },
+    "FaultTolerantCorrectionCases": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FaultTolerantCorrectionCases.lean",
+      "sha256": "7dfabb98f604ade9b732cc255f46f559c23d12ee624518e60640bcdc36be9a54"
+    }
+  },
+  "checker_sha256": {
+    "check_fault_tolerant_correction.py": "43bca2488c0ac64a58e670e31339ab36986bc7174e24d9dd1ac17b70c2beaf54",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Single-transaction observation and bounded-mandate attestation under explicit correlated fault envelopes. Protected registry/mandate/monitor and actual fault coverage remain supplied. Not Byzantine agreement, ethical legitimacy from signatures, cryptographic implementation or deployed-AI validation.",
+  "version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "FaultTolerantCorrectionCases.lean:38:39: error: Ambiguous term\n  initial\nPossible interpretations:\n  AcquiredCorrection.initial : EffectiveCommand.State\n  \n  FaultTolerantCorrection.initial : Installation\n"
+}

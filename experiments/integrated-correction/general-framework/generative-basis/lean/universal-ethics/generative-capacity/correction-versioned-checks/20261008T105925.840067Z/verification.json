@@ -1,0 +1,1216 @@
+{
+  "checked_at_utc": "2026-10-08T11:00:20.660530+00:00",
+  "status": "passed",
+  "lean_version": "Lean (version 4.30.0-rc2, arm64-apple-darwin24.6.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc, Release)",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "targets": [
+    "CorrectionVersioned"
+  ],
+  "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-versioned-checks/20261008T105925.840067Z",
+  "modules": [
+    {
+      "module": "CorrectionRelations",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionRelations.lean",
+      "source_sha256": "9fbaa3585997862f9561b31d90b8552deda3e49beaedbd381ed4276f0518f858",
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "CorrectionRelations.Boundary"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRelations.Fits"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.boundary_exact_for_context"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.all_contexts_refinement_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.all_contexts_equivalent_iff"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRelations.Couple"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.regrouping_preserves_relation"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.coupled_boundary_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.boundary_replacement_preserves_coupling"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRelations.EqualBoundary"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRelations.FreeBoundary"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.equal_boundary_full_coordinate_projections"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.separate_coordinate_summaries_lose_joint_restriction"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRelations.Edge"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRelations.Parity"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRelations.Follow"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRelations.Path"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.each_edge_has_full_projections"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.path_iff_propagated"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.propagation_parity"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.cycle_compatible_iff_even"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.every_root_choice_extends_iff_even"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.odd_cycle_has_no_joint_assignment"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.triangle_local_relations_do_not_ensure_joint_correction"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.parity_append"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.matching_converter_restores_every_root"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.transparent_converter_fails_for_odd_cycle"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.aggregate_probe_reads_parity"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.aggregate_probe_summarizes_path"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.equal_probes_iff_equal_path_relations"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.converter_from_current_probe_corrects_every_root"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.converter_from_stale_probe_can_fail"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.retained_converter_iff_same_composed_relation"
+        },
+        {
+          "kind": "inductive",
+          "name": "CorrectionRelations.Revision"
+        },
+        {
+          "kind": "inductive",
+          "name": "CorrectionRelations.Revised"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.paired_revision_preserves_parity"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.finite_revisions_preserve_parity"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.finite_revisions_preserve_entire_relation"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.retained_converter_survives_finite_revisions"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.first_half_of_paired_change_defeats_retained_converter"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRelations.Possible"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRelations.Uniform"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRelations.Observable"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.uniform_implies_possible"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.observable_implies_possible"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.constant_observation_iff_uniform"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRelations.Fixed"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRelations.Switched"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.fixed_boundary_total"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.switched_boundary_total"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.fixed_switched_same_feasibility_contexts"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.fixed_has_uniform_realization"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.switched_has_only_modewise_witnesses"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.observing_relation_restores_realization"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.exact_feasibility_summary_not_control_contract"
+        }
+      ],
+      "audits": 55,
+      "theorems": 39,
+      "nonempty_audits": {
+        "CorrectionRelations.boundary_replacement_preserves_coupling": [
+          "propext"
+        ],
+        "CorrectionRelations.cycle_compatible_iff_even": [
+          "propext"
+        ],
+        "CorrectionRelations.every_root_choice_extends_iff_even": [
+          "propext"
+        ],
+        "CorrectionRelations.odd_cycle_has_no_joint_assignment": [
+          "propext"
+        ],
+        "CorrectionRelations.triangle_local_relations_do_not_ensure_joint_correction": [
+          "propext"
+        ],
+        "CorrectionRelations.matching_converter_restores_every_root": [
+          "propext"
+        ],
+        "CorrectionRelations.transparent_converter_fails_for_odd_cycle": [
+          "propext"
+        ],
+        "CorrectionRelations.aggregate_probe_summarizes_path": [
+          "propext"
+        ],
+        "CorrectionRelations.equal_probes_iff_equal_path_relations": [
+          "propext"
+        ],
+        "CorrectionRelations.converter_from_current_probe_corrects_every_root": [
+          "propext"
+        ],
+        "CorrectionRelations.converter_from_stale_probe_can_fail": [
+          "propext"
+        ],
+        "CorrectionRelations.retained_converter_iff_same_composed_relation": [
+          "propext"
+        ],
+        "CorrectionRelations.finite_revisions_preserve_entire_relation": [
+          "propext"
+        ],
+        "CorrectionRelations.retained_converter_survives_finite_revisions": [
+          "propext"
+        ],
+        "CorrectionRelations.first_half_of_paired_change_defeats_retained_converter": [
+          "propext"
+        ],
+        "CorrectionRelations.switched_has_only_modewise_witnesses": [
+          "propext"
+        ],
+        "CorrectionRelations.exact_feasibility_summary_not_control_contract": [
+          "propext"
+        ]
+      }
+    },
+    {
+      "module": "CorrectionHandoff",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionHandoff.lean",
+      "source_sha256": "018533d88c34db5489635b61e4b0ab136b082cd28b1118971ae9c5c847af85c9",
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "CorrectionHandoff.Record"
+        },
+        {
+          "kind": "structure",
+          "name": "CorrectionHandoff.Channel"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.decode"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.Sound"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.Ready"
+        },
+        {
+          "kind": "instance",
+          "name": "CorrectionHandoff.readyDecidable"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.probe"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.configure"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.power"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.execute"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.probe_learns_decoder"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.probe_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.configure_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.power_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.ready_executes"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.probe_preserves_ready"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.power_on_ready"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.configure_rejects_old_record"
+        },
+        {
+          "kind": "structure",
+          "name": "CorrectionHandoff.Installation"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.replace"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.Invariant"
+        },
+        {
+          "kind": "inductive",
+          "name": "CorrectionHandoff.Operation"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.step"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.replace_inactive"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.replace_ready"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.step_preserves"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.run"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.run_preserves"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.every_interruptible_prefix"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.unbounded_schedule_safety"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.handoff"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.handoff_completes"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.initial"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.initial_invariant"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.uncheckedSwitch"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.stalePreparation"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.stale_record_switch_fails"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.guarded_stale_switch_retains_service"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.fresh_retest_restores_switch"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.early_retirement_breaks_service"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.pause_does_not_complete_handoff"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.untrackedChange"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.matching_revision_is_insufficient"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.reusedRevision"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.revision_reuse_admits_stale_record"
+        }
+      ],
+      "audits": 45,
+      "theorems": 23,
+      "nonempty_audits": {
+        "CorrectionHandoff.readyDecidable": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.probe_learns_decoder": [
+          "propext"
+        ],
+        "CorrectionHandoff.probe_sound": [
+          "propext"
+        ],
+        "CorrectionHandoff.configure_sound": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.ready_executes": [
+          "propext"
+        ],
+        "CorrectionHandoff.configure_rejects_old_record": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.step": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.replace_inactive": [
+          "propext"
+        ],
+        "CorrectionHandoff.step_preserves": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.run": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.run_preserves": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.every_interruptible_prefix": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.unbounded_schedule_safety": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.handoff_completes": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.initial_invariant": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.stale_record_switch_fails": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.guarded_stale_switch_retains_service": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.fresh_retest_restores_switch": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.pause_does_not_complete_handoff": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.matching_revision_is_insufficient": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.reusedRevision": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.revision_reuse_admits_stale_record": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "module": "CorrectionVersioned",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionVersioned.lean",
+      "source_sha256": "ed3c9a422b82cd8b76dc229ddd9f3981631b9dd906c9e0f8d6e0dda228144df0",
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "CorrectionVersioned.Bank"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionVersioned.Sound"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionVersioned.Ready"
+        },
+        {
+          "kind": "instance",
+          "name": "CorrectionVersioned.readyDecidable"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionVersioned.emptyBank"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionVersioned.appendBank"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionVersioned.asChannel"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.empty_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.append_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.inherited_channel_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.inherited_channel_ready"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.prepared_path_delivers"
+        },
+        {
+          "kind": "structure",
+          "name": "CorrectionVersioned.Packet"
+        },
+        {
+          "kind": "structure",
+          "name": "CorrectionVersioned.Installation"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionVersioned.PacketValid"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionVersioned.Invariant"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionVersioned.busy"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionVersioned.replaceBank"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionVersioned.available"
+        },
+        {
+          "kind": "instance",
+          "name": "CorrectionVersioned.availableDecidable"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.live_packet_pins"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.unpinned_differs"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.replace_available_preserves"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionVersioned.reset"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionVersioned.append"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionVersioned.certify"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionVersioned.publish"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionVersioned.beginRequest"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.reset_preserves"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.append_preserves"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.seal_preserves"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.publish_preserves"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.begin_preserves"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionVersioned.tick"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.drop_after_hop"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.tick_preserves_and_output"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionVersioned.drain"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.head_traversal_completes"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.valid_head_completes"
+        },
+        {
+          "kind": "inductive",
+          "name": "CorrectionVersioned.Operation"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionVersioned.step"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.step_preserves_and_output"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionVersioned.run"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.run_preserves"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.every_prefix_correct"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.pinned_bank_cannot_be_reset"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.pinned_bank_cannot_be_appended"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.equal_whole_relations_do_not_protect_mixed_requests"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionVersioned.initial"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.initial_invariant"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.publication_selects_ready"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.full_request_capacity_blocks_admission"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.two_banks_can_both_be_unavailable"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionVersioned.handoffExample"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.staged_handoff_finishes_both_requests"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionVersioned.forceReuse"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.premature_reuse_can_deliver_wrong"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionVersioned.readCurrentVersion"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.switching_version_mid_request_fails"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.late_registration_after_capture_can_fail"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.completion_allows_old_retirement"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionVersioned.pause_is_not_a_progress_guarantee"
+        }
+      ],
+      "audits": 62,
+      "theorems": 33,
+      "nonempty_audits": {
+        "CorrectionVersioned.inherited_channel_sound": [
+          "propext"
+        ],
+        "CorrectionVersioned.prepared_path_delivers": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionVersioned.live_packet_pins": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionVersioned.unpinned_differs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionVersioned.replace_available_preserves": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionVersioned.reset_preserves": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionVersioned.append_preserves": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionVersioned.seal_preserves": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionVersioned.begin_preserves": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionVersioned.drop_after_hop": [
+          "propext"
+        ],
+        "CorrectionVersioned.tick_preserves_and_output": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionVersioned.head_traversal_completes": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionVersioned.valid_head_completes": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionVersioned.step_preserves_and_output": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionVersioned.run_preserves": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionVersioned.every_prefix_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionVersioned.pinned_bank_cannot_be_reset": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionVersioned.pinned_bank_cannot_be_appended": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionVersioned.equal_whole_relations_do_not_protect_mixed_requests": [
+          "propext"
+        ],
+        "CorrectionVersioned.initial_invariant": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionVersioned.publication_selects_ready": [
+          "propext"
+        ],
+        "CorrectionVersioned.full_request_capacity_blocks_admission": [
+          "propext"
+        ],
+        "CorrectionVersioned.two_banks_can_both_be_unavailable": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionVersioned.completion_allows_old_retirement": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    }
+  ],
+  "total_audits": 162,
+  "new_audits": 62,
+  "new_theorems": 33,
+  "nonempty_audits": {
+    "CorrectionRelations.boundary_replacement_preserves_coupling": [
+      "propext"
+    ],
+    "CorrectionRelations.cycle_compatible_iff_even": [
+      "propext"
+    ],
+    "CorrectionRelations.every_root_choice_extends_iff_even": [
+      "propext"
+    ],
+    "CorrectionRelations.odd_cycle_has_no_joint_assignment": [
+      "propext"
+    ],
+    "CorrectionRelations.triangle_local_relations_do_not_ensure_joint_correction": [
+      "propext"
+    ],
+    "CorrectionRelations.matching_converter_restores_every_root": [
+      "propext"
+    ],
+    "CorrectionRelations.transparent_converter_fails_for_odd_cycle": [
+      "propext"
+    ],
+    "CorrectionRelations.aggregate_probe_summarizes_path": [
+      "propext"
+    ],
+    "CorrectionRelations.equal_probes_iff_equal_path_relations": [
+      "propext"
+    ],
+    "CorrectionRelations.converter_from_current_probe_corrects_every_root": [
+      "propext"
+    ],
+    "CorrectionRelations.converter_from_stale_probe_can_fail": [
+      "propext"
+    ],
+    "CorrectionRelations.retained_converter_iff_same_composed_relation": [
+      "propext"
+    ],
+    "CorrectionRelations.finite_revisions_preserve_entire_relation": [
+      "propext"
+    ],
+    "CorrectionRelations.retained_converter_survives_finite_revisions": [
+      "propext"
+    ],
+    "CorrectionRelations.first_half_of_paired_change_defeats_retained_converter": [
+      "propext"
+    ],
+    "CorrectionRelations.switched_has_only_modewise_witnesses": [
+      "propext"
+    ],
+    "CorrectionRelations.exact_feasibility_summary_not_control_contract": [
+      "propext"
+    ],
+    "CorrectionHandoff.readyDecidable": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.probe_learns_decoder": [
+      "propext"
+    ],
+    "CorrectionHandoff.probe_sound": [
+      "propext"
+    ],
+    "CorrectionHandoff.configure_sound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.ready_executes": [
+      "propext"
+    ],
+    "CorrectionHandoff.configure_rejects_old_record": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.step": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.replace_inactive": [
+      "propext"
+    ],
+    "CorrectionHandoff.step_preserves": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.run": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.run_preserves": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.every_interruptible_prefix": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.unbounded_schedule_safety": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.handoff_completes": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.initial_invariant": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.stale_record_switch_fails": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.guarded_stale_switch_retains_service": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.fresh_retest_restores_switch": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.pause_does_not_complete_handoff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.matching_revision_is_insufficient": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.reusedRevision": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.revision_reuse_admits_stale_record": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionVersioned.inherited_channel_sound": [
+      "propext"
+    ],
+    "CorrectionVersioned.prepared_path_delivers": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionVersioned.live_packet_pins": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionVersioned.unpinned_differs": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionVersioned.replace_available_preserves": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionVersioned.reset_preserves": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionVersioned.append_preserves": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionVersioned.seal_preserves": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionVersioned.begin_preserves": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionVersioned.drop_after_hop": [
+      "propext"
+    ],
+    "CorrectionVersioned.tick_preserves_and_output": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionVersioned.head_traversal_completes": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionVersioned.valid_head_completes": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionVersioned.step_preserves_and_output": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionVersioned.run_preserves": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionVersioned.every_prefix_correct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionVersioned.pinned_bank_cannot_be_reset": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionVersioned.pinned_bank_cannot_be_appended": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionVersioned.equal_whole_relations_do_not_protect_mixed_requests": [
+      "propext"
+    ],
+    "CorrectionVersioned.initial_invariant": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionVersioned.publication_selects_ready": [
+      "propext"
+    ],
+    "CorrectionVersioned.full_request_capacity_blocks_admission": [
+      "propext"
+    ],
+    "CorrectionVersioned.two_banks_can_both_be_unavailable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionVersioned.completion_allows_old_retirement": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "checker_sha256": "c11f501b10c71b50037132f0cc53270cd4b83607bc7c2a6575f30a61b6a17782",
+  "commands": [
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "CorrectionRelations.olean",
+      "CorrectionRelations.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "CorrectionHandoff.olean",
+      "CorrectionHandoff.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "CorrectionVersioned.olean",
+      "CorrectionVersioned.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "CorrectionVersionedAudit.lean"
+    ]
+  ],
+  "log_sha256": {
+    "CorrectionRelations.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CorrectionHandoff.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CorrectionVersioned.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axioms.txt": "8a804a85782b611ee5196966f47e6259acbb0c5d52d025b3ebc20e91edb3886f"
+  },
+  "source_changed_during_run": [],
+  "direct_import_sha256": {
+    "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/lib/lean/Init.olean": "12e94e3624b943d20ad898491957051ae9ba22ccbed9e6f92c35fbc711849246",
+    "/Users/ren/repos/\u751f\u751f\u4e0d\u606f/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic.olean": "0a821f2a00e8a64712b702ffd0355326515c0123c0b60917a5aaa1c4ac527911",
+    "CorrectionRelations.olean": "7d2e1c52021b8ca8cf1b424d205783edecffca290ae244875edd1d1203c61d66",
+    "CorrectionHandoff.olean": "4463dce28faf31adad97d823bd7b7792ae4e636523fc8324202b88964542edd1"
+  },
+  "mathlib_revision": "ea11ccc0c5c7c4c562742e918fe2e0b2814a58aa",
+  "manifest_sha256": "740eef1aae725322b99872aba59cc5c902378b992bfe9122737a454f3076321b",
+  "upstream_scope": "Pinned existing Mathlib cache; repository import closure rebuilt. Mathlib not rebuilt.",
+  "scope": "Versioned bank assembly, captured and pinned per-hop correction, guarded publication and reclamation, arbitrary-prefix safety and failures. CorrectionRelations and CorrectionHandoff are inherited and separately audited. No unmediated-fault, weak-memory, universal-liveness or empirical AI guarantee."
+}

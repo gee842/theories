@@ -1,0 +1,89 @@
+{
+  "checked_at_utc": "2026-10-07T23:16:38.804848+00:00",
+  "status": "passed",
+  "scope": "Published aggregate extraction and arithmetic, not raw-data statistical replication, causal identification, field intervention or mathematical proof.",
+  "sources": {
+    "sahyoun-2019.xml": "d887006d538d477b6ab826803934e7a074636dfca7ed57e858f3b0918d6289bf",
+    "loopstra-2013-record.xml": "005548db5892962a6ade3696bd5769432b709286f850751fc2fe39ed637f4f60"
+  },
+  "checker_sha256": "3b3104775b37229f4a0d391f5738e248fb2e423cfafb081bf0848b9b48b530e8",
+  "sahyoun_2019": {
+    "flow": {
+      "initial": 51,
+      "early_exit": 18,
+      "matched": 32,
+      "endline_missing": 1,
+      "continued_after_week_one": 33
+    },
+    "early_exit_percent_of_initial": "35.3",
+    "matched_percent_of_initial": "62.7",
+    "selected_table2_rows": {
+      "affss": [
+        "AFFSS score, median [IQR]",
+        "4 [2;5]",
+        "2 [0–3]",
+        "0.006"
+      ],
+      "food_secure": [
+        "Food secure, n (%)",
+        "14 (43.8)",
+        "19 (59.3)",
+        "NS"
+      ],
+      "moderate": [
+        "Moderately food insecure, n (%)",
+        "12 (37.5)",
+        "8 (25.0)",
+        "NS"
+      ],
+      "severe": [
+        "Severely food insecure, n (%)",
+        "6 (18.8)",
+        "5 (15.6)",
+        "NS"
+      ],
+      "major_decisions": [
+        "Major household expenditures, n (%)",
+        "3 (9.4)",
+        "13 (40.6)",
+        "0.038"
+      ],
+      "mental_health": [
+        "Mental health inventory score, median [IQR]",
+        "40.9 [22.7–72.7]",
+        "57.14 [28.6–83.3]",
+        "NS"
+      ],
+      "social_support": [
+        "Social support score (DSSI), median [IQR]",
+        "24 [22–25]",
+        "24 [21–25.5]",
+        "NS"
+      ],
+      "expenditure_per_capita": [
+        "Household expenditure, total monthly USD per capita, median [IQR]",
+        "162.2 [152.5–165.7]",
+        "226.4 [168.7–229.1]",
+        "0.009"
+      ]
+    },
+    "food_insecure_baseline_count": 18,
+    "food_insecure_endline_count": 13,
+    "net_fewer_food_insecure_count": 5,
+    "interpretation": "Five is a net aggregate decrease, not five identified transitions or five causal successes. Category tests are NS; the score test is reported separately.",
+    "mental_health_direction_counts": {
+      "increase": 21,
+      "decrease": 11
+    },
+    "published_rounding_note": "Table 2 gives 19/32 as 59.3%; ordinary one-decimal rounding is 59.4%. Original bytes and counts remain unchanged.",
+    "estimand_note": "The text's 13% total household expenditure change is not the relative change between the table's per-capita medians. No discrepancy correction or individual change is inferred from their difference."
+  },
+  "loopstra_2013_abstract": {
+    "initial_families": 485,
+    "followed_families": 371,
+    "kitchen_users": 16,
+    "kitchen_users_percent_of_followed": "4.3",
+    "scope": "Observed uptake in the followed community sample, not acceptance among invited kitchen applicants or a causal effect; full text not inspected."
+  },
+  "unavailable": "Participant data and paired transitions are not public in Sahyoun 2019; no data request or participant contact was sent."
+}

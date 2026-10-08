@@ -1,0 +1,233 @@
+ObservationRepair.lean:33:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.instDivInvMonoid', which is 'noncomputable'
+ObservationRepair.lean:35:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'average', which is 'noncomputable'
+ObservationRepair.lean:41:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.instDivInvMonoid', which is 'noncomputable'
+ObservationRepair.lean:46:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'switchHead', which is 'noncomputable'
+ObservationRepair.lean:51:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'average', which is 'noncomputable'
+ObservationRepair.lean:53:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'average', which is 'noncomputable'
+ObservationRepair.lean:66:48: error: unsolved goals
+case «0».«1»
+⊢ |1 -
+        ((if
+                (if (if 1 = 2 then (true, false, true) else (true, true, false)).2.1 = false then
+                        if 1 = 2 then (true, false, true) else (true, true, false)
+                      else
+                        if 0 = 2 then
+                          ((if 1 = 2 then (true, false, true) else (true, true, false)).1, false,
+                            (if 1 = 2 then (true, false, true) else (true, true, false)).2.2)
+                        else
+                          if (if 1 = 2 then (true, false, true) else (true, true, false)).2.2 = true then
+                            ((if 1 = 2 then (true, false, true) else (true, true, false)).1, false,
+                              (if 1 = 2 then (true, false, true) else (true, true, false)).2.2)
+                          else if 1 = 2 then (true, false, true) else (true, true, false)).2.1 =
+                  false then
+              15
+            else 0) +
+            if
+                (if (if 1 = 2 then (false, false, true) else (false, true, false)).2.1 = false then
+                        if 1 = 2 then (false, false, true) else (false, true, false)
+                      else
+                        if 0 = 2 then
+                          ((if 1 = 2 then (false, false, true) else (false, true, false)).1, false,
+                            (if 1 = 2 then (false, false, true) else (false, true, false)).2.2)
+                        else
+                          if (if 1 = 2 then (false, false, true) else (false, true, false)).2.2 = true then
+                            ((if 1 = 2 then (false, false, true) else (false, true, false)).1, false,
+                              (if 1 = 2 then (false, false, true) else (false, true, false)).2.2)
+                          else if 1 = 2 then (false, false, true) else (false, true, false)).2.1 =
+                  false then
+              1
+            else 0) /
+          16| =
+    1
+
+case «1».«0»
+⊢ 1 -
+      ((if
+              (if (if 0 = 2 then (true, false, true) else (true, true, true)).2.1 = false then
+                      if 0 = 2 then (true, false, true) else (true, true, true)
+                    else
+                      if 0 = 2 then
+                        ((if 0 = 2 then (true, false, true) else (true, true, true)).1, false,
+                          (if 0 = 2 then (true, false, true) else (true, true, true)).2.2)
+                      else
+                        if (if 0 = 2 then (true, false, true) else (true, true, true)).2.2 = true then
+                          ((if 0 = 2 then (true, false, true) else (true, true, true)).1, false,
+                            (if 0 = 2 then (true, false, true) else (true, true, true)).2.2)
+                        else if 0 = 2 then (true, false, true) else (true, true, true)).2.1 =
+                false then
+            15
+          else 0) +
+          if
+              (if (if 0 = 2 then (false, false, true) else (false, true, true)).2.1 = false then
+                      if 0 = 2 then (false, false, true) else (false, true, true)
+                    else
+                      if 0 = 2 then
+                        ((if 0 = 2 then (false, false, true) else (false, true, true)).1, false,
+                          (if 0 = 2 then (false, false, true) else (false, true, true)).2.2)
+                      else
+                        if (if 0 = 2 then (false, false, true) else (false, true, true)).2.2 = true then
+                          ((if 0 = 2 then (false, false, true) else (false, true, true)).1, false,
+                            (if 0 = 2 then (false, false, true) else (false, true, true)).2.2)
+                        else if 0 = 2 then (false, false, true) else (false, true, true)).2.1 =
+                false then
+            1
+          else 0) /
+        16 =
+    0
+
+case «1».«1»
+⊢ |1 -
+        ((if
+                (if (if 1 = 2 then (true, false, true) else (true, true, false)).2.1 = false then
+                        if 1 = 2 then (true, false, true) else (true, true, false)
+                      else
+                        if 0 = 2 then
+                          ((if 1 = 2 then (true, false, true) else (true, true, false)).1, false,
+                            (if 1 = 2 then (true, false, true) else (true, true, false)).2.2)
+                        else
+                          if (if 1 = 2 then (true, false, true) else (true, true, false)).2.2 = true then
+                            ((if 1 = 2 then (true, false, true) else (true, true, false)).1, false,
+                              (if 1 = 2 then (true, false, true) else (true, true, false)).2.2)
+                          else if 1 = 2 then (true, false, true) else (true, true, false)).2.1 =
+                  false then
+              15
+            else 0) +
+            if
+                (if (if 1 = 2 then (false, false, true) else (false, true, false)).2.1 = false then
+                        if 1 = 2 then (false, false, true) else (false, true, false)
+                      else
+                        if 0 = 2 then
+                          ((if 1 = 2 then (false, false, true) else (false, true, false)).1, false,
+                            (if 1 = 2 then (false, false, true) else (false, true, false)).2.2)
+                        else
+                          if (if 1 = 2 then (false, false, true) else (false, true, false)).2.2 = true then
+                            ((if 1 = 2 then (false, false, true) else (false, true, false)).1, false,
+                              (if 1 = 2 then (false, false, true) else (false, true, false)).2.2)
+                          else if 1 = 2 then (false, false, true) else (false, true, false)).2.1 =
+                  false then
+              1
+            else 0) /
+          16| =
+    1
+
+case «1».«2»
+⊢ 1 -
+      ((if
+              (if (if ⟨2, ⋯⟩ = 2 then (true, false, true) else (true, true, true)).2.1 = false then
+                      if ⟨2, ⋯⟩ = 2 then (true, false, true) else (true, true, true)
+                    else
+                      if 0 = 2 then
+                        ((if ⟨2, ⋯⟩ = 2 then (true, false, true) else (true, true, true)).1, false,
+                          (if ⟨2, ⋯⟩ = 2 then (true, false, true) else (true, true, true)).2.2)
+                      else
+                        if (if ⟨2, ⋯⟩ = 2 then (true, false, true) else (true, true, true)).2.2 = true then
+                          ((if ⟨2, ⋯⟩ = 2 then (true, false, true) else (true, true, true)).1, false,
+                            (if ⟨2, ⋯⟩ = 2 then (true, false, true) else (true, true, true)).2.2)
+                        else if ⟨2, ⋯⟩ = 2 then (true, false, true) else (true, true, true)).2.1 =
+                false then
+            15
+          else 0) +
+          if
+              (if (if ⟨2, ⋯⟩ = 2 then (false, false, true) else (false, true, true)).2.1 = false then
+                      if ⟨2, ⋯⟩ = 2 then (false, false, true) else (false, true, true)
+                    else
+                      if 0 = 2 then
+                        ((if ⟨2, ⋯⟩ = 2 then (false, false, true) else (false, true, true)).1, false,
+                          (if ⟨2, ⋯⟩ = 2 then (false, false, true) else (false, true, true)).2.2)
+                      else
+                        if (if ⟨2, ⋯⟩ = 2 then (false, false, true) else (false, true, true)).2.2 = true then
+                          ((if ⟨2, ⋯⟩ = 2 then (false, false, true) else (false, true, true)).1, false,
+                            (if ⟨2, ⋯⟩ = 2 then (false, false, true) else (false, true, true)).2.2)
+                        else if ⟨2, ⋯⟩ = 2 then (false, false, true) else (false, true, true)).2.1 =
+                false then
+            1
+          else 0) /
+        16 =
+    0
+
+case «2».«1»
+⊢ |1 -
+        ((if
+                (if (if 1 = 2 then (true, false, true) else (true, true, false)).2.1 = false then
+                        if 1 = 2 then (true, false, true) else (true, true, false)
+                      else
+                        if 0 = 2 then
+                          ((if 1 = 2 then (true, false, true) else (true, true, false)).1, false,
+                            (if 1 = 2 then (true, false, true) else (true, true, false)).2.2)
+                        else
+                          if (if 1 = 2 then (true, false, true) else (true, true, false)).2.2 = true then
+                            ((if 1 = 2 then (true, false, true) else (true, true, false)).1, false,
+                              (if 1 = 2 then (true, false, true) else (true, true, false)).2.2)
+                          else if 1 = 2 then (true, false, true) else (true, true, false)).2.1 =
+                  false then
+              15
+            else 0) +
+            if
+                (if (if 1 = 2 then (false, false, true) else (false, true, false)).2.1 = false then
+                        if 1 = 2 then (false, false, true) else (false, true, false)
+                      else
+                        if 0 = 2 then
+                          ((if 1 = 2 then (false, false, true) else (false, true, false)).1, false,
+                            (if 1 = 2 then (false, false, true) else (false, true, false)).2.2)
+                        else
+                          if (if 1 = 2 then (false, false, true) else (false, true, false)).2.2 = true then
+                            ((if 1 = 2 then (false, false, true) else (false, true, false)).1, false,
+                              (if 1 = 2 then (false, false, true) else (false, true, false)).2.2)
+                          else if 1 = 2 then (false, false, true) else (false, true, false)).2.1 =
+                  false then
+              1
+            else 0) /
+          16| =
+    1
+
+case «3».«1»
+⊢ |1 -
+        ((if
+                (if (if 1 = 2 then (true, false, true) else (true, true, false)).2.1 = false then
+                        if 1 = 2 then (true, false, true) else (true, true, false)
+                      else
+                        if 0 = 2 then
+                          ((if 1 = 2 then (true, false, true) else (true, true, false)).1, false,
+                            (if 1 = 2 then (true, false, true) else (true, true, false)).2.2)
+                        else
+                          if (if 1 = 2 then (true, false, true) else (true, true, false)).2.2 = true then
+                            ((if 1 = 2 then (true, false, true) else (true, true, false)).1, false,
+                              (if 1 = 2 then (true, false, true) else (true, true, false)).2.2)
+                          else if 1 = 2 then (true, false, true) else (true, true, false)).2.1 =
+                  false then
+              15
+            else 0) +
+            if
+                (if (if 1 = 2 then (false, false, true) else (false, true, false)).2.1 = false then
+                        if 1 = 2 then (false, false, true) else (false, true, false)
+                      else
+                        if 0 = 2 then
+                          ((if 1 = 2 then (false, false, true) else (false, true, false)).1, false,
+                            (if 1 = 2 then (false, false, true) else (false, true, false)).2.2)
+                        else
+                          if (if 1 = 2 then (false, false, true) else (false, true, false)).2.2 = true then
+                            ((if 1 = 2 then (false, false, true) else (false, true, false)).1, false,
+                              (if 1 = 2 then (false, false, true) else (false, true, false)).2.2)
+                          else if 1 = 2 then (false, false, true) else (false, true, false)).2.1 =
+                  false then
+              1
+            else 0) /
+          16| =
+    1
+ObservationRepair.lean:83:18: error: linarith failed to find a contradiction
+case neg.h2.h
+x : Choice
+h : (if x.2 = 1 then -(1 / 2) else 0) < 0
+h✝ : ¬x.2 = 1
+a✝ : -(1 / 2) < 0
+⊢ False
+failed
+ObservationRepair.lean:108:4: error: No goals to be solved
+ObservationRepair.lean:105:75: error: unsolved goals
+case «3».«2»
+h : True
+⊢ (-330 + (-16 + if ⟨3, ⋯⟩ = 2 then 6 else -6)) / 16 ≤ 22
+ObservationRepair.lean:105:8: error: (kernel) declaration has metavariables 'ObservationRepair.all_other_values_le'
+ObservationRepair.lean:123:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'value', which is 'noncomputable'
+ObservationRepair.lean:171:2: error: omega could not prove the goal:
+No usable constraints found. You may need to unfold definitions so `omega` can see linear arithmetic facts about `Nat` and `Int`, which may also involve multiplication, division, and modular remainder by constants.

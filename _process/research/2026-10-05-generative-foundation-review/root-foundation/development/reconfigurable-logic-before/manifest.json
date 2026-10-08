@@ -1,0 +1,27 @@
+[
+  {
+    "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+    "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/reconfigurable-logic-before/GENERATED-LOGIC.md",
+    "sha256": "273574a1175f69ecbaf1bbbd255100ad58d1100cadc5dea81916ddf9307fa6d0"
+  },
+  {
+    "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-LOGIC-INTEGRATION.md",
+    "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/reconfigurable-logic-before/CONTEXTUAL-LOGIC-INTEGRATION.md",
+    "sha256": "8acbbced46325312971ffb131aecd4432d02f07dc9035cc7fd565a54b36fa4fc"
+  },
+  {
+    "path": "sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md",
+    "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/reconfigurable-logic-before/2026-10-08-generative-logic-investigation.md",
+    "sha256": "4ae90a5986b42d7891519be5a4404df9c3a874f5e17fb7e62cbb9c6ab90622fc"
+  },
+  {
+    "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-LOGIC-CHECKS.json",
+    "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/reconfigurable-logic-before/CONTEXTUAL-LOGIC-CHECKS.json",
+    "sha256": "f619df570f8264c489c63ebc2fe56a56f1c2f69bdef24fd2873574055aa45eaa"
+  },
+  {
+    "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-LOGIC-INDEX-EDITS.json",
+    "snapshot": "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/reconfigurable-logic-before/CONTEXTUAL-LOGIC-INDEX-EDITS.json",
+    "sha256": "0537564d2b4db58ded0947bb0811150b9365f42ae926ea887dade290184b0ed3"
+  }
+]

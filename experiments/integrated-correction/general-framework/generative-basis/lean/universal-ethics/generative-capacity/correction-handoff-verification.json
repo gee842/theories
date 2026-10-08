@@ -1,0 +1,402 @@
+{
+  "checked_at_utc": "2026-10-08T08:56:56.643910+00:00",
+  "status": "passed",
+  "lean_version": "Lean (version 4.30.0-rc2, arm64-apple-darwin24.6.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc, Release)",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "targets": [
+    "CorrectionHandoff"
+  ],
+  "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-handoff-checks/20261008T085635.790791Z",
+  "modules": [
+    {
+      "module": "CorrectionHandoff",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionHandoff.lean",
+      "source_sha256": "018533d88c34db5489635b61e4b0ab136b082cd28b1118971ae9c5c847af85c9",
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "CorrectionHandoff.Record"
+        },
+        {
+          "kind": "structure",
+          "name": "CorrectionHandoff.Channel"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.decode"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.Sound"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.Ready"
+        },
+        {
+          "kind": "instance",
+          "name": "CorrectionHandoff.readyDecidable"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.probe"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.configure"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.power"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.execute"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.probe_learns_decoder"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.probe_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.configure_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.power_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.ready_executes"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.probe_preserves_ready"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.power_on_ready"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.configure_rejects_old_record"
+        },
+        {
+          "kind": "structure",
+          "name": "CorrectionHandoff.Installation"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.replace"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.Invariant"
+        },
+        {
+          "kind": "inductive",
+          "name": "CorrectionHandoff.Operation"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.step"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.replace_inactive"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.replace_ready"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.step_preserves"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.run"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.run_preserves"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.every_interruptible_prefix"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.unbounded_schedule_safety"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.handoff"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.handoff_completes"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.initial"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.initial_invariant"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.uncheckedSwitch"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.stalePreparation"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.stale_record_switch_fails"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.guarded_stale_switch_retains_service"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.fresh_retest_restores_switch"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.early_retirement_breaks_service"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.pause_does_not_complete_handoff"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.untrackedChange"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.matching_revision_is_insufficient"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionHandoff.reusedRevision"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionHandoff.revision_reuse_admits_stale_record"
+        }
+      ],
+      "audits": 45,
+      "theorems": 23,
+      "nonempty_audits": {
+        "CorrectionHandoff.readyDecidable": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.probe_learns_decoder": [
+          "propext"
+        ],
+        "CorrectionHandoff.probe_sound": [
+          "propext"
+        ],
+        "CorrectionHandoff.configure_sound": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.ready_executes": [
+          "propext"
+        ],
+        "CorrectionHandoff.configure_rejects_old_record": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.step": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.replace_inactive": [
+          "propext"
+        ],
+        "CorrectionHandoff.step_preserves": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.run": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.run_preserves": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.every_interruptible_prefix": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.unbounded_schedule_safety": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.handoff_completes": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.initial_invariant": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.stale_record_switch_fails": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.guarded_stale_switch_retains_service": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.fresh_retest_restores_switch": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.pause_does_not_complete_handoff": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.matching_revision_is_insufficient": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.reusedRevision": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionHandoff.revision_reuse_admits_stale_record": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    }
+  ],
+  "total_audits": 45,
+  "new_audits": 45,
+  "new_theorems": 23,
+  "nonempty_audits": {
+    "CorrectionHandoff.readyDecidable": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.probe_learns_decoder": [
+      "propext"
+    ],
+    "CorrectionHandoff.probe_sound": [
+      "propext"
+    ],
+    "CorrectionHandoff.configure_sound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.ready_executes": [
+      "propext"
+    ],
+    "CorrectionHandoff.configure_rejects_old_record": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.step": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.replace_inactive": [
+      "propext"
+    ],
+    "CorrectionHandoff.step_preserves": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.run": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.run_preserves": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.every_interruptible_prefix": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.unbounded_schedule_safety": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.handoff_completes": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.initial_invariant": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.stale_record_switch_fails": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.guarded_stale_switch_retains_service": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.fresh_retest_restores_switch": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.pause_does_not_complete_handoff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.matching_revision_is_insufficient": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.reusedRevision": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionHandoff.revision_reuse_admits_stale_record": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "checker_sha256": "eb9f501f050c4e0c2c8c55a5782173cbafab002041b7a2a3ebdb1cae24b02341",
+  "commands": [
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "CorrectionHandoff.olean",
+      "CorrectionHandoff.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "CorrectionHandoffAudit.lean"
+    ]
+  ],
+  "log_sha256": {
+    "CorrectionHandoff.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axioms.txt": "69b22f9d4692a23511be2c801bdb3828a1ca7a6d731bfe946537100bd040d731"
+  },
+  "source_changed_during_run": [],
+  "direct_import_sha256": {
+    "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/lib/lean/Init.olean": "12e94e3624b943d20ad898491957051ae9ba22ccbed9e6f92c35fbc711849246",
+    "/Users/ren/repos/\u751f\u751f\u4e0d\u606f/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic.olean": "0a821f2a00e8a64712b702ffd0355326515c0123c0b60917a5aaa1c4ac527911"
+  },
+  "mathlib_revision": "ea11ccc0c5c7c4c562742e918fe2e0b2814a58aa",
+  "manifest_sha256": "740eef1aae725322b99872aba59cc5c902378b992bfe9122737a454f3076321b",
+  "upstream_scope": "Pinned existing Mathlib cache; repository import closure rebuilt. Mathlib not rebuilt.",
+  "scope": "Versioned probing and correction-channel handoff; explicit declarations audited, generated declarations kernel-checked. Supplied two-channel decoder class, faithful probe, atomic steps, unbounded epochs and mediated changes. Arbitrary schedule safety; completion for prescribed finite handoff, not unconditional liveness or ethical authority."
+}

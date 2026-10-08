@@ -1,0 +1,30 @@
+{
+  "status": "failed",
+  "utc": "20261008T082224.593161Z",
+  "scope": "Eight general extension results under the inherited J1/J2 comparator. Acquisition, meaning, ethical relevance and classification are substantive premises; 30 inherited theorems remain separately counted.",
+  "retained_run": "concern-extension-checks/20261008T082224.593161Z",
+  "source_sha256": {
+    "PracticalJudgment": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "ConcernExtension": "8930a8b137fc01b0dcaca6ce1ff78279670597b6e990b877058faea3f1b2aaf7"
+  },
+  "checker_sha256": {
+    "check_concern_extension.py": "cc089d0a45aedf074cd606c079e6a45e7896b68737d65c63f1c3ef335603e44f",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "ConcernExtension.lean:42:38: warning: unused variable `hba`\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\n",
+  "artifact_sha256": {
+    "ConcernExtension.lean": "8930a8b137fc01b0dcaca6ce1ff78279670597b6e990b877058faea3f1b2aaf7",
+    "ConcernExtension.log": "02b5a592f97875b59eb5fd3be1870884aa0fcccce7805c147c754cd94bf2ef2a",
+    "PracticalJudgment.lean": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "PracticalJudgment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PracticalJudgmentAxiomAudit.lean": "c9f412159410854fb031176d7fe7a4c351dfaea59354c7d7a19ec4ad0c6e51a6",
+    "PracticalJudgmentAxiomAudit.log": "d73810d6b1a7343808726234c17bca9d7841acafabd3a17ee8e6145dfabbf1ea",
+    "PracticalJudgmentSignatures.lean": "f8b97b475eacfb3d07f8ccfa675828f261dffc20c9ef8032db7a92d4a6fbc90a",
+    "PracticalJudgmentSignatures.log": "953db8ccf30c696cb0438c053f498c0209a4a563746adfffcfe253bcd74bff42",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_concern_extension.py": "cc089d0a45aedf074cd606c079e6a45e7896b68737d65c63f1c3ef335603e44f",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

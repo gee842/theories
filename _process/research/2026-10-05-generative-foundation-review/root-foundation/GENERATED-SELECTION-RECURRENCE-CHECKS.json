@@ -1,0 +1,88 @@
+{
+  "status": "passed",
+  "scope": "Owned document links and current source/checker/log bindings; not a new scientific run or full-goal completion.",
+  "owned_documents_sha256": {
+    "sources/15-codex-theory-conversations/2026-10-08-the-theory-of-evolution-goal.md": "b3f8d0713dff236a8f9f90d02383b8bb15e316be128e385a5410bd6b439083fb",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md": "a7bbda0b78ca7266a5b915dddc8fb5c7615a519949e7f8e1602e0ae513221731",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELECTION-RECURRENCE-INTEGRATION.md": "c66b85a769b1e06d4b8c070c07c2a3b5b59e712e3493acd85205a977f841821a"
+  },
+  "local_links_checked": 17,
+  "links": [
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-the-theory-of-evolution-goal.md",
+      "target": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-the-theory-of-evolution-goal.md",
+      "target": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-08-the-theory-of-evolution-goal.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "target": "NONDUAL-METHOD.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "target": "GENERATIVE-SELECTION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "target": "LIANGZHI-EVOLUTION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELECTION-RECURRENCE-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "target": "PRACTICAL-JUDGMENT.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELECTION-RECURRENCE-INTEGRATION.md#comparison-and-primary-evidence"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELECTION-RECURRENCE-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELECTION-RECURRENCE-INTEGRATION.md",
+      "target": "RECURSIVE-SELECTION-INHERITANCE-MATH.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELECTION-RECURRENCE-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELECTION-RECURRENCE-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/GeneratedSelectionRecurrence.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELECTION-RECURRENCE-INTEGRATION.md",
+      "target": "RECURSIVE-SELECTION-FORMATION-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELECTION-RECURRENCE-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generated-selection-recurrence-verification/verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELECTION-RECURRENCE-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generated-selection-recurrence-verification/check.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELECTION-RECURRENCE-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md#completion-requirements"
+    }
+  ],
+  "formal_receipt_sha256": "2370b23ed2a4c22f9f2e672e0b5270271c00065d2b58bdfcda9f17c59c1faa99",
+  "new_theorems": 16,
+  "new_declarations_audited": 26,
+  "total_declarations_audited": 54,
+  "substantive_review": "Implementing-author self-review, not independent review.",
+  "full_goal_status": "active; completion requirements remain unmet",
+  "errors": [],
+  "goal_turn_classification": "progress: new checked formal connection, substantive comparative assessment, and integrated current theory"
+}

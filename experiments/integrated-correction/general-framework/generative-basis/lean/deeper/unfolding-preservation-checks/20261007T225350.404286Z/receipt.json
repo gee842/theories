@@ -1,0 +1,1966 @@
+{
+  "status": "passed",
+  "utc": "20261007T225350.404286Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "scope": "Native finite-trace fidelity and same-law acquired-ground witnesses; conditional correspondence, no universal explanatory or empirical completion claim.",
+  "source_paths": {
+    "GenerativeCore": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+    "HistoryRealization": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/HistoryRealization.lean",
+    "ExplanatoryNecessity": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryNecessity.lean",
+    "ExplanatoryStructure": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryStructure.lean",
+    "ExplanatoryUniqueness": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryUniqueness.lean",
+    "KnowledgeCorrespondence": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/KnowledgeCorrespondence.lean",
+    "NormativeActivity": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/NormativeActivity.lean",
+    "StandardsBridge": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/StandardsBridge.lean",
+    "FormedGrounds": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormedGrounds.lean",
+    "UnfoldingPreservation": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/UnfoldingPreservation.lean",
+    "FormedUnfoldingPreservation": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/FormedUnfoldingPreservation.lean"
+  },
+  "source_sha256": {
+    "GenerativeCore": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "HistoryRealization": "22785f31280a7bbac5f89d7754cb6896830a6dc2d81949b9f3adfabd126e8fa9",
+    "ExplanatoryNecessity": "e6ee0229ef68da50a62ccc0d079f7e38866f86813d4e7309e681ecc17a923df5",
+    "ExplanatoryStructure": "ecc83334e6d7c136cbeab5f6094e94b82b1522011542feb9c7c0faaf5f7cc52e",
+    "ExplanatoryUniqueness": "25df183309a4e5bdda32dcb45a36cb57f3b6939f5a8f2abd428469e32030f5de",
+    "KnowledgeCorrespondence": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+    "NormativeActivity": "15105e2caa43fb9b00f228343be16a7d729ff5a3da10c506d134d07417ae622c",
+    "StandardsBridge": "f061dbc44da5cdf11ac5ff79b3f89558c7e177b23b9f121c1048c16ed353a42a",
+    "FormedGrounds": "15764b3258f843dc967fdfabfd17cd5f47a6eb740a4aa5a3465ceae61dea17ba",
+    "UnfoldingPreservation": "19ac73d41d6534617337f24e0d4a313a046e0e7bc2a82f2f8ce95bb7dedf37d6",
+    "FormedUnfoldingPreservation": "26c1a578b00b74065df6bc214e71eb2383319761ca9440ebf9a9e4703f216462"
+  },
+  "baselines": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-composition-checks/20261007T223124.386181Z/receipt.json",
+      "sha256": "ee6c7cbe004afe3e0f6489948400488212a8f04b5267af98b8625ea786456ebd"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/formed-grounds-checks/20261007T221235.147749Z/verification.json",
+      "sha256": "109f3cb54fbeba8e1b5e3ddd1eaf97fe5ae8045c3c2c17c12cb97dfd1c123a59"
+    }
+  ],
+  "checker_sha256": {
+    "check_unfolding_preservation.py": "5d8cde0c3fe50425b0ec2a91f44cac2caf4d90d4c1a73a165ef5081706ca8334",
+    "audit_support.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "new_modules": [
+    "FormedUnfoldingPreservation",
+    "UnfoldingPreservation"
+  ],
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "new": false,
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_append_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_singleton_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_iff_singleton_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_difference_implies_state_difference"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_append_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_prefix"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_product_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_product_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_map"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_lift"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.projected_trace_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.projection_exact_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.local_exact_iff_trace_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_projection_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_projection_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_difference_implies_projection_difference"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_faithful_iff"
+        }
+      ],
+      "theorems": 18,
+      "axiom_dependencies": {
+        "Generative.trace_append_iff": [],
+        "Generative.trace_singleton_iff": [],
+        "Generative.enabled_iff_singleton_trace": [],
+        "Generative.enabled_difference_implies_state_difference": [],
+        "Generative.feasible_append_iff": [],
+        "Generative.feasible_prefix": [],
+        "Generative.enabled_product_iff": [],
+        "Generative.trace_product_iff": [],
+        "Generative.feasible_product_iff": [],
+        "Generative.trace_map": [],
+        "Generative.trace_lift": [],
+        "Generative.projected_trace_iff": [],
+        "Generative.projection_exact_iff": [],
+        "Generative.local_exact_iff_trace_exact": [],
+        "Generative.enabled_projection_iff": [],
+        "Generative.feasible_projection_iff": [],
+        "Generative.feasible_difference_implies_projection_difference": [],
+        "Generative.trace_faithful_iff": []
+      },
+      "kernel_checked": true,
+      "audit_scope": "exact inherited baseline inventory"
+    },
+    {
+      "module": "HistoryRealization",
+      "new": false,
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "Generative.Deeper.append_nil_constructive"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.Deeper.append_assoc_constructive"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.Deeper.history_trace_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.Deeper.history_from_empty_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.Deeper.history_feasible_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.Deeper.process_language_prefix_closed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.Deeper.process_language_exact_history_realization"
+        }
+      ],
+      "theorems": 7,
+      "axiom_dependencies": {
+        "Generative.Deeper.append_nil_constructive": [],
+        "Generative.Deeper.append_assoc_constructive": [],
+        "Generative.Deeper.history_trace_iff": [],
+        "Generative.Deeper.history_from_empty_iff": [],
+        "Generative.Deeper.history_feasible_iff": [],
+        "Generative.Deeper.process_language_prefix_closed": [],
+        "Generative.Deeper.process_language_exact_history_realization": []
+      },
+      "kernel_checked": true,
+      "audit_scope": "exact inherited baseline inventory"
+    },
+    {
+      "module": "ExplanatoryNecessity",
+      "new": false,
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryNecessity.decode_singleton_recovers_step"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryNecessity.same_description_preserves_steps"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryNecessity.different_steps_require_different_descriptions"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryNecessity.step_equivalence_iff_trace_equivalence"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryNecessity.static_profile_adequate"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryNecessity.adequate_answers_agree"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryNecessity.local_decomposition_iff_trace_representation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryNecessity.idle_feasible"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryNecessity.flip_feasible"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryNecessity.feasibility_profiles_agree"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryNecessity.endpoint_profiles_differ"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryNecessity.bounded_empty"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryNecessity.bounded_singleton"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryNecessity.bounded_rejects_double"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryNecessity.bounded_prefix_closed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryNecessity.bounded_no_one_point_realization"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryNecessity.bounded_history_realization"
+        }
+      ],
+      "theorems": 17,
+      "axiom_dependencies": {
+        "Generative.ExplanatoryNecessity.decode_singleton_recovers_step": [],
+        "Generative.ExplanatoryNecessity.same_description_preserves_steps": [],
+        "Generative.ExplanatoryNecessity.different_steps_require_different_descriptions": [],
+        "Generative.ExplanatoryNecessity.step_equivalence_iff_trace_equivalence": [],
+        "Generative.ExplanatoryNecessity.static_profile_adequate": [],
+        "Generative.ExplanatoryNecessity.adequate_answers_agree": [],
+        "Generative.ExplanatoryNecessity.local_decomposition_iff_trace_representation": [],
+        "Generative.ExplanatoryNecessity.idle_feasible": [],
+        "Generative.ExplanatoryNecessity.flip_feasible": [],
+        "Generative.ExplanatoryNecessity.feasibility_profiles_agree": [],
+        "Generative.ExplanatoryNecessity.endpoint_profiles_differ": [],
+        "Generative.ExplanatoryNecessity.bounded_empty": [],
+        "Generative.ExplanatoryNecessity.bounded_singleton": [],
+        "Generative.ExplanatoryNecessity.bounded_rejects_double": [],
+        "Generative.ExplanatoryNecessity.bounded_prefix_closed": [],
+        "Generative.ExplanatoryNecessity.bounded_no_one_point_realization": [],
+        "Generative.ExplanatoryNecessity.bounded_history_realization": []
+      },
+      "kernel_checked": true,
+      "audit_scope": "exact inherited baseline inventory"
+    },
+    {
+      "module": "ExplanatoryStructure",
+      "new": false,
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryStructure.trace_global"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryStructure.global_realized"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryStructure.realizes_iff_global"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryStructure.adjacent_opposite"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryStructure.mutilated_balance"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryStructure.separated_balanced"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryStructure.complete_trace_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryStructure.balance_perm"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryStructure.opposite_pair_balance"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryStructure.legal_balance"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryStructure.global_balance"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryStructure.unbalanced_no_cover"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryStructure.unbalanced_no_placement_history"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryStructure.mutilated_no_cover"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryStructure.mutilated_no_history"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryStructure.separated_not_coverable"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryStructure.two_tile_orders"
+        }
+      ],
+      "theorems": 17,
+      "axiom_dependencies": {
+        "Generative.ExplanatoryStructure.trace_global": [],
+        "Generative.ExplanatoryStructure.global_realized": [],
+        "Generative.ExplanatoryStructure.realizes_iff_global": [],
+        "Generative.ExplanatoryStructure.adjacent_opposite": [],
+        "Generative.ExplanatoryStructure.mutilated_balance": [],
+        "Generative.ExplanatoryStructure.separated_balanced": [],
+        "Generative.ExplanatoryStructure.complete_trace_iff": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.balance_perm": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.opposite_pair_balance": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.legal_balance": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.global_balance": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.unbalanced_no_cover": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.unbalanced_no_placement_history": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.mutilated_no_cover": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.mutilated_no_history": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.separated_not_coverable": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.two_tile_orders": [
+          "propext"
+        ]
+      },
+      "kernel_checked": true,
+      "audit_scope": "exact inherited baseline inventory"
+    },
+    {
+      "module": "ExplanatoryUniqueness",
+      "new": false,
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryUniqueness.equal_codes_same_answers"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryUniqueness.reduced_exact_kernel"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryUniqueness.reduced_presentations_same_kernel"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryUniqueness.matches_total_on_used"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryUniqueness.matches_functional"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryUniqueness.matches_inverse_functional"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryUniqueness.matches_iff_equal_answers"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryUniqueness.unique_matching"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryUniqueness.short_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryUniqueness.full_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryUniqueness.short_reduced"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryUniqueness.full_not_reduced"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryUniqueness.first_summary_cannot_answer_both"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryUniqueness.relative_unique_correspondence"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.ExplanatoryUniqueness.balance_does_not_determine_coverability"
+        }
+      ],
+      "theorems": 15,
+      "axiom_dependencies": {
+        "Generative.ExplanatoryUniqueness.equal_codes_same_answers": [],
+        "Generative.ExplanatoryUniqueness.reduced_exact_kernel": [],
+        "Generative.ExplanatoryUniqueness.reduced_presentations_same_kernel": [],
+        "Generative.ExplanatoryUniqueness.matches_total_on_used": [],
+        "Generative.ExplanatoryUniqueness.matches_functional": [],
+        "Generative.ExplanatoryUniqueness.matches_inverse_functional": [],
+        "Generative.ExplanatoryUniqueness.matches_iff_equal_answers": [],
+        "Generative.ExplanatoryUniqueness.unique_matching": [],
+        "Generative.ExplanatoryUniqueness.short_exact": [],
+        "Generative.ExplanatoryUniqueness.full_exact": [],
+        "Generative.ExplanatoryUniqueness.short_reduced": [],
+        "Generative.ExplanatoryUniqueness.full_not_reduced": [],
+        "Generative.ExplanatoryUniqueness.first_summary_cannot_answer_both": [],
+        "Generative.ExplanatoryUniqueness.relative_unique_correspondence": [],
+        "Generative.ExplanatoryUniqueness.balance_does_not_determine_coverability": [
+          "propext"
+        ]
+      },
+      "kernel_checked": true,
+      "audit_scope": "exact inherited baseline inventory"
+    },
+    {
+      "module": "KnowledgeCorrespondence",
+      "new": false,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.SoundOn"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.ExactOn"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.Resolves"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.exact_is_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.exact_requires_resolution"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.decoder"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.resolution_admits_decoder"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.exact_possible_iff_resolves"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.conflicting_fibre_forces_abstention"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.sound_restricts_domain"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.refinement_preserves_resolution"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.preserved_record_preserves_exactness"
+        },
+        {
+          "kind": "structure",
+          "name": "Generative.KnowledgeCorrespondence.History"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.signal"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.target"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.allHistories"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.normal"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.reference"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.pairedEvidence"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.decodePair"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.direct"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.calibrated_pair_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.raw_signal_not_resolving"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.no_exact_raw_decoder"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.every_sound_raw_decoder_abstains"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.direct_exact_on_normal"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.direct_fails_on_expanded_domain"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.lucky_actual_correct"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.parity_record_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.double_reversal_exact"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.FixedContentSafe"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.true_content_trivially_safe"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.abstention_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.abstention_not_exact"
+        }
+      ],
+      "theorems": 20,
+      "axiom_dependencies": {
+        "Generative.KnowledgeCorrespondence.SoundOn": [],
+        "Generative.KnowledgeCorrespondence.ExactOn": [],
+        "Generative.KnowledgeCorrespondence.Resolves": [],
+        "Generative.KnowledgeCorrespondence.exact_is_sound": [],
+        "Generative.KnowledgeCorrespondence.exact_requires_resolution": [],
+        "Generative.KnowledgeCorrespondence.conflicting_fibre_forces_abstention": [],
+        "Generative.KnowledgeCorrespondence.sound_restricts_domain": [],
+        "Generative.KnowledgeCorrespondence.refinement_preserves_resolution": [],
+        "Generative.KnowledgeCorrespondence.preserved_record_preserves_exactness": [],
+        "Generative.KnowledgeCorrespondence.History": [],
+        "Generative.KnowledgeCorrespondence.signal": [],
+        "Generative.KnowledgeCorrespondence.target": [],
+        "Generative.KnowledgeCorrespondence.allHistories": [],
+        "Generative.KnowledgeCorrespondence.normal": [],
+        "Generative.KnowledgeCorrespondence.reference": [],
+        "Generative.KnowledgeCorrespondence.pairedEvidence": [],
+        "Generative.KnowledgeCorrespondence.decodePair": [],
+        "Generative.KnowledgeCorrespondence.direct": [],
+        "Generative.KnowledgeCorrespondence.calibrated_pair_exact": [],
+        "Generative.KnowledgeCorrespondence.raw_signal_not_resolving": [],
+        "Generative.KnowledgeCorrespondence.no_exact_raw_decoder": [],
+        "Generative.KnowledgeCorrespondence.every_sound_raw_decoder_abstains": [],
+        "Generative.KnowledgeCorrespondence.direct_exact_on_normal": [],
+        "Generative.KnowledgeCorrespondence.direct_fails_on_expanded_domain": [],
+        "Generative.KnowledgeCorrespondence.lucky_actual_correct": [],
+        "Generative.KnowledgeCorrespondence.parity_record_exact": [],
+        "Generative.KnowledgeCorrespondence.double_reversal_exact": [],
+        "Generative.KnowledgeCorrespondence.FixedContentSafe": [],
+        "Generative.KnowledgeCorrespondence.true_content_trivially_safe": [],
+        "Generative.KnowledgeCorrespondence.abstention_sound": [],
+        "Generative.KnowledgeCorrespondence.abstention_not_exact": [],
+        "Generative.KnowledgeCorrespondence.decoder": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.KnowledgeCorrespondence.resolution_admits_decoder": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.KnowledgeCorrespondence.exact_possible_iff_resolves": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "kernel_checked": true,
+      "audit_scope": "exact inherited baseline inventory"
+    },
+    {
+      "module": "NormativeActivity",
+      "new": false,
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "Generative.NormativeActivity.Receipt"
+        },
+        {
+          "kind": "structure",
+          "name": "Generative.NormativeActivity.State"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.target"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.sample"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.memoryAnswer"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.inspect"
+        },
+        {
+          "kind": "inductive",
+          "name": "Generative.NormativeActivity.Event"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.step"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.run"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.view"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.ClosedLocal"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.ReceiptSound"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.ClosedDomain"
+        },
+        {
+          "kind": "abbrev",
+          "name": "Generative.NormativeActivity.CurrentCorrect"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.initial"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.learned"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.settled"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.changed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.run_append"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.exact_inspection"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.closed_inspection"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.exhausted_inspection"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.fresh_uptake_correct"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.step_preserves_receipt_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.history_preserves_receipt_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.closed_local_preserves"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.closed_local_view_congr"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.closed_history_preserves"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.closed_history_view_congr"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.learned_without_production"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.historical_truth_present_error"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.retained_distinction_does_not_select_production"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.same_production_can_have_different_judgment"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.reachable_closed_disagreement"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.closed_domain_not_resolving"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.sound_closed_answer_abstains"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.closed_continuations_remain_unresolved"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.reopening_and_inspection_repair"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.reopening_without_inspection_does_not_repair"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.exhausted_reopening_does_not_repair"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.suspension_retains_relation_and_record"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.Reachable"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.ReachableClosed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.reachable_continuation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.witnesses_reachable_closed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.exhausted_case_reachable"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.fresh_record_can_coexist_with_stale_judgment"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.reachable_closed_not_resolving"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.sound_on_reachable_closed_abstains"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.AcquiredAlong"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.step_receipt_origin"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.retained_receipt_has_origin"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.from_initial_receipt_is_acquired"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.NormativeActivity.adapt"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.adaptive_closed_invariant"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.NormativeActivity.adaptive_closed_cannot_resolve"
+        }
+      ],
+      "theorems": 34,
+      "axiom_dependencies": {
+        "Generative.NormativeActivity.Receipt": [],
+        "Generative.NormativeActivity.State": [],
+        "Generative.NormativeActivity.target": [],
+        "Generative.NormativeActivity.sample": [],
+        "Generative.NormativeActivity.memoryAnswer": [],
+        "Generative.NormativeActivity.inspect": [],
+        "Generative.NormativeActivity.Event": [],
+        "Generative.NormativeActivity.step": [],
+        "Generative.NormativeActivity.run": [],
+        "Generative.NormativeActivity.view": [],
+        "Generative.NormativeActivity.ReceiptSound": [],
+        "Generative.NormativeActivity.ClosedDomain": [],
+        "Generative.NormativeActivity.CurrentCorrect": [],
+        "Generative.NormativeActivity.initial": [],
+        "Generative.NormativeActivity.learned": [],
+        "Generative.NormativeActivity.settled": [],
+        "Generative.NormativeActivity.changed": [],
+        "Generative.NormativeActivity.run_append": [],
+        "Generative.NormativeActivity.step_preserves_receipt_sound": [],
+        "Generative.NormativeActivity.history_preserves_receipt_sound": [],
+        "Generative.NormativeActivity.learned_without_production": [],
+        "Generative.NormativeActivity.retained_distinction_does_not_select_production": [],
+        "Generative.NormativeActivity.same_production_can_have_different_judgment": [],
+        "Generative.NormativeActivity.reachable_closed_disagreement": [],
+        "Generative.NormativeActivity.closed_domain_not_resolving": [],
+        "Generative.NormativeActivity.sound_closed_answer_abstains": [],
+        "Generative.NormativeActivity.reopening_and_inspection_repair": [],
+        "Generative.NormativeActivity.reopening_without_inspection_does_not_repair": [],
+        "Generative.NormativeActivity.exhausted_reopening_does_not_repair": [],
+        "Generative.NormativeActivity.suspension_retains_relation_and_record": [],
+        "Generative.NormativeActivity.Reachable": [],
+        "Generative.NormativeActivity.ReachableClosed": [],
+        "Generative.NormativeActivity.reachable_continuation": [],
+        "Generative.NormativeActivity.witnesses_reachable_closed": [],
+        "Generative.NormativeActivity.exhausted_case_reachable": [],
+        "Generative.NormativeActivity.fresh_record_can_coexist_with_stale_judgment": [],
+        "Generative.NormativeActivity.reachable_closed_not_resolving": [],
+        "Generative.NormativeActivity.sound_on_reachable_closed_abstains": [],
+        "Generative.NormativeActivity.AcquiredAlong": [],
+        "Generative.NormativeActivity.adapt": [],
+        "Generative.NormativeActivity.ClosedLocal": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.exact_inspection": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.NormativeActivity.closed_inspection": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.exhausted_inspection": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.fresh_uptake_correct": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.closed_local_preserves": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.closed_local_view_congr": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.closed_history_preserves": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.closed_history_view_congr": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.historical_truth_present_error": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.closed_continuations_remain_unresolved": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.step_receipt_origin": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.retained_receipt_has_origin": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.from_initial_receipt_is_acquired": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.adaptive_closed_invariant": [
+          "propext"
+        ],
+        "Generative.NormativeActivity.adaptive_closed_cannot_resolve": [
+          "propext"
+        ]
+      },
+      "kernel_checked": true,
+      "audit_scope": "exact inherited baseline inventory"
+    },
+    {
+      "module": "StandardsBridge",
+      "new": false,
+      "declarations": [
+        {
+          "kind": "abbrev",
+          "name": "Generative.StandardsBridge.Observation"
+        },
+        {
+          "kind": "abbrev",
+          "name": "Generative.StandardsBridge.Rule"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.Fits"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.revise"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.learn"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.answer"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.Safe"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.Maximal"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.mem_revise"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.mem_learn"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.actual_rule_retained"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.eliminated_rule_has_counterevidence"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.repetition_does_not_change_candidates"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.answer_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.answer_safe"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.safe_definite_requires_agreement"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.answer_maximal"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.unique_maximal_safe"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.known_rule_makes_answer_correct"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.acquire"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.acquired_evidence_faithful"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.acquired_answers_correct"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.transport"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.answer_transport"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.learning_transport"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.wrong_reencoding_breaks_transfer"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.repertoire"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.bool_repertoire_complete"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.full_bool_repertoire_correct"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.oneSample"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.StandardsBridge.twoSamples"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.before_acquisition_abstains"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.one_sample_leaves_other_case_unsettled"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.contrasting_acquisition_settles_both"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.learned_response_differs_from_last_report"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.repeated_same_case_does_not_settle_other"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.insufficient_support_retains_ambiguity"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.wrong_model_class_can_be_confidently_wrong"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.StandardsBridge.inconsistent_evidence_yields_no_answer"
+        }
+      ],
+      "theorems": 26,
+      "axiom_dependencies": {
+        "Generative.StandardsBridge.Observation": [],
+        "Generative.StandardsBridge.Rule": [],
+        "Generative.StandardsBridge.Fits": [],
+        "Generative.StandardsBridge.revise": [],
+        "Generative.StandardsBridge.learn": [],
+        "Generative.StandardsBridge.answer": [],
+        "Generative.StandardsBridge.Safe": [],
+        "Generative.StandardsBridge.Maximal": [],
+        "Generative.StandardsBridge.acquire": [],
+        "Generative.StandardsBridge.transport": [],
+        "Generative.StandardsBridge.wrong_reencoding_breaks_transfer": [],
+        "Generative.StandardsBridge.repertoire": [],
+        "Generative.StandardsBridge.oneSample": [],
+        "Generative.StandardsBridge.twoSamples": [],
+        "Generative.StandardsBridge.before_acquisition_abstains": [],
+        "Generative.StandardsBridge.one_sample_leaves_other_case_unsettled": [],
+        "Generative.StandardsBridge.contrasting_acquisition_settles_both": [],
+        "Generative.StandardsBridge.learned_response_differs_from_last_report": [],
+        "Generative.StandardsBridge.repeated_same_case_does_not_settle_other": [],
+        "Generative.StandardsBridge.insufficient_support_retains_ambiguity": [],
+        "Generative.StandardsBridge.wrong_model_class_can_be_confidently_wrong": [],
+        "Generative.StandardsBridge.inconsistent_evidence_yields_no_answer": [],
+        "Generative.StandardsBridge.mem_revise": [
+          "propext"
+        ],
+        "Generative.StandardsBridge.mem_learn": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.actual_rule_retained": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.eliminated_rule_has_counterevidence": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.repetition_does_not_change_candidates": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.answer_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.answer_safe": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.safe_definite_requires_agreement": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.answer_maximal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.unique_maximal_safe": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.known_rule_makes_answer_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.acquired_evidence_faithful": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.acquired_answers_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.answer_transport": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.learning_transport": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.bool_repertoire_complete": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.StandardsBridge.full_bool_repertoire_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "kernel_checked": true,
+      "audit_scope": "exact inherited baseline inventory"
+    },
+    {
+      "module": "FormedGrounds",
+      "new": false,
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "Generative.FormedGrounds.Evidence"
+        },
+        {
+          "kind": "structure",
+          "name": "Generative.FormedGrounds.State"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.encode"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.observations"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.hypotheses"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.interpret"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.enabled"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.contact"
+        },
+        {
+          "kind": "inductive",
+          "name": "Generative.FormedGrounds.Event"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.step"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.run"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.initial"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.training"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.trained"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.issued"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.mistaken"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.corrected"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedGrounds.AcquiredAlong"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.run_append"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.encode_involutive"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.interpretation_depends_on_acquired_view"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.step_evidence_origin"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.retained_evidence_origin"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.from_initial_evidence_is_acquired"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.contact_has_physical_correspondence"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.acquired_evidence_preserves_relation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.all_reachable_evidence_fits"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.every_reachable_faithful_interpretation_is_correct"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.before_calibration_no_definite_interpretation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.one_contact_leaves_unseen_signal_unsettled"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.training_forms_decoder"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.training_uses_real_contrasts"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.token_shape_does_not_fix_content"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.joint_recoding_preserves_interpreted_content"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.learned_interpretation_is_used"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.same_formed_interpretation_can_be_false"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.new_record_without_review_does_not_correct"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.acquired_review_refutes_and_corrects"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.review_preserves_meaning_and_compared_relation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.correct_prior_judgment_is_confirmed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.closed_review_cannot_claim_confirmation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.exhausted_review_does_not_acquire_a_ground"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.reward_alone_cannot_repair_interpretation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.full_history_is_one_reachable_execution"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedGrounds.later_change_retains_review_but_defeats_current_accuracy"
+        }
+      ],
+      "theorems": 27,
+      "axiom_dependencies": {
+        "Generative.FormedGrounds.Evidence": [],
+        "Generative.FormedGrounds.State": [],
+        "Generative.FormedGrounds.encode": [],
+        "Generative.FormedGrounds.observations": [],
+        "Generative.FormedGrounds.hypotheses": [],
+        "Generative.FormedGrounds.interpret": [],
+        "Generative.FormedGrounds.enabled": [],
+        "Generative.FormedGrounds.contact": [],
+        "Generative.FormedGrounds.Event": [],
+        "Generative.FormedGrounds.step": [],
+        "Generative.FormedGrounds.run": [],
+        "Generative.FormedGrounds.initial": [],
+        "Generative.FormedGrounds.training": [],
+        "Generative.FormedGrounds.trained": [],
+        "Generative.FormedGrounds.issued": [],
+        "Generative.FormedGrounds.mistaken": [],
+        "Generative.FormedGrounds.corrected": [],
+        "Generative.FormedGrounds.AcquiredAlong": [],
+        "Generative.FormedGrounds.run_append": [],
+        "Generative.FormedGrounds.encode_involutive": [],
+        "Generative.FormedGrounds.contact_has_physical_correspondence": [],
+        "Generative.FormedGrounds.acquired_evidence_preserves_relation": [],
+        "Generative.FormedGrounds.before_calibration_no_definite_interpretation": [],
+        "Generative.FormedGrounds.one_contact_leaves_unseen_signal_unsettled": [],
+        "Generative.FormedGrounds.training_forms_decoder": [],
+        "Generative.FormedGrounds.training_uses_real_contrasts": [],
+        "Generative.FormedGrounds.token_shape_does_not_fix_content": [],
+        "Generative.FormedGrounds.joint_recoding_preserves_interpreted_content": [],
+        "Generative.FormedGrounds.learned_interpretation_is_used": [],
+        "Generative.FormedGrounds.same_formed_interpretation_can_be_false": [],
+        "Generative.FormedGrounds.new_record_without_review_does_not_correct": [],
+        "Generative.FormedGrounds.acquired_review_refutes_and_corrects": [],
+        "Generative.FormedGrounds.review_preserves_meaning_and_compared_relation": [],
+        "Generative.FormedGrounds.correct_prior_judgment_is_confirmed": [],
+        "Generative.FormedGrounds.closed_review_cannot_claim_confirmation": [],
+        "Generative.FormedGrounds.exhausted_review_does_not_acquire_a_ground": [],
+        "Generative.FormedGrounds.reward_alone_cannot_repair_interpretation": [],
+        "Generative.FormedGrounds.full_history_is_one_reachable_execution": [],
+        "Generative.FormedGrounds.later_change_retains_review_but_defeats_current_accuracy": [],
+        "Generative.FormedGrounds.interpretation_depends_on_acquired_view": [
+          "propext"
+        ],
+        "Generative.FormedGrounds.step_evidence_origin": [
+          "propext"
+        ],
+        "Generative.FormedGrounds.retained_evidence_origin": [
+          "propext"
+        ],
+        "Generative.FormedGrounds.from_initial_evidence_is_acquired": [
+          "propext"
+        ],
+        "Generative.FormedGrounds.all_reachable_evidence_fits": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.FormedGrounds.every_reachable_faithful_interpretation_is_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "kernel_checked": true,
+      "audit_scope": "exact inherited baseline inventory"
+    },
+    {
+      "module": "UnfoldingPreservation",
+      "new": true,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "Generative.UnfoldingPreservation.May"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.UnfoldingPreservation.Must"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.UnfoldingPreservation.Completes"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.UnfoldingPreservation.may_append"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.UnfoldingPreservation.must_append"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.UnfoldingPreservation.completes_append_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.UnfoldingPreservation.all_reached_continue_suffices"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.UnfoldingPreservation.absent_continuation_is_not_completion"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.UnfoldingPreservation.NativeAnswer"
+        },
+        {
+          "kind": "abbrev",
+          "name": "Generative.UnfoldingPreservation.Account"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.UnfoldingPreservation.ExactAccount"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.UnfoldingPreservation.account_preserves_may"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.UnfoldingPreservation.account_preserves_must"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.UnfoldingPreservation.account_preserves_feasibility"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.UnfoldingPreservation.answer_difference_separates"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.UnfoldingPreservation.outcome_difference_separates"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.UnfoldingPreservation.enabled_difference_separates"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.UnfoldingPreservation.SameSegment"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.UnfoldingPreservation.same_segment_iff_all_may"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.UnfoldingPreservation.same_segment_in_context"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.UnfoldingPreservation.SegmentTarget"
+        },
+        {
+          "kind": "abbrev",
+          "name": "Generative.UnfoldingPreservation.SegmentAccount"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.UnfoldingPreservation.ExactSegmentAccount"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.UnfoldingPreservation.exact_segment_join"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.UnfoldingPreservation.exact_segment_admitted_join"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.UnfoldingPreservation.equal_segment_codes_substitute"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.UnfoldingPreservation.branching"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.UnfoldingPreservation.existential_completion_does_not_complete_every_branch"
+        }
+      ],
+      "theorems": 17,
+      "axiom_dependencies": {
+        "Generative.UnfoldingPreservation.May": [],
+        "Generative.UnfoldingPreservation.Must": [],
+        "Generative.UnfoldingPreservation.Completes": [],
+        "Generative.UnfoldingPreservation.may_append": [],
+        "Generative.UnfoldingPreservation.must_append": [],
+        "Generative.UnfoldingPreservation.completes_append_iff": [],
+        "Generative.UnfoldingPreservation.all_reached_continue_suffices": [],
+        "Generative.UnfoldingPreservation.absent_continuation_is_not_completion": [],
+        "Generative.UnfoldingPreservation.NativeAnswer": [],
+        "Generative.UnfoldingPreservation.Account": [],
+        "Generative.UnfoldingPreservation.ExactAccount": [],
+        "Generative.UnfoldingPreservation.account_preserves_may": [],
+        "Generative.UnfoldingPreservation.account_preserves_must": [],
+        "Generative.UnfoldingPreservation.account_preserves_feasibility": [],
+        "Generative.UnfoldingPreservation.answer_difference_separates": [],
+        "Generative.UnfoldingPreservation.outcome_difference_separates": [],
+        "Generative.UnfoldingPreservation.enabled_difference_separates": [],
+        "Generative.UnfoldingPreservation.SameSegment": [],
+        "Generative.UnfoldingPreservation.same_segment_iff_all_may": [],
+        "Generative.UnfoldingPreservation.same_segment_in_context": [],
+        "Generative.UnfoldingPreservation.SegmentTarget": [],
+        "Generative.UnfoldingPreservation.SegmentAccount": [],
+        "Generative.UnfoldingPreservation.ExactSegmentAccount": [],
+        "Generative.UnfoldingPreservation.exact_segment_join": [],
+        "Generative.UnfoldingPreservation.exact_segment_admitted_join": [],
+        "Generative.UnfoldingPreservation.equal_segment_codes_substitute": [],
+        "Generative.UnfoldingPreservation.branching": [],
+        "Generative.UnfoldingPreservation.existential_completion_does_not_complete_every_branch": []
+      },
+      "kernel_checked": true,
+      "audit_scope": "all explicit named declarations"
+    },
+    {
+      "module": "FormedUnfoldingPreservation",
+      "new": true,
+      "declarations": [
+        {
+          "kind": "abbrev",
+          "name": "Generative.FormedUnfoldingPreservation.Reading"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedUnfoldingPreservation.reading"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedUnfoldingPreservation.issuedHistory"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedUnfoldingPreservation.errorHistory"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedUnfoldingPreservation.correctionHistory"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedUnfoldingPreservation.named_stages_are_native_runs"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedUnfoldingPreservation.connected_formation_error_correction"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedUnfoldingPreservation.calibration_contacts_have_native_provenance"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedUnfoldingPreservation.same_answer_different_review_and_support"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedUnfoldingPreservation.same_answer_different_rejudgment"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedUnfoldingPreservation.record_and_uptake_have_different_outcomes"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedUnfoldingPreservation.spent_inspection_cannot_be_reused_for_review"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedUnfoldingPreservation.closed_access_blocks_acquisition_with_support_remaining"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedUnfoldingPreservation.changedHistory"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedUnfoldingPreservation.changed"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedUnfoldingPreservation.same_present_reading_different_native_continuation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedUnfoldingPreservation.distinguishing_continuations_are_reachable"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedUnfoldingPreservation.judging_again_cannot_perform_the_distinguishing_inspection"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedUnfoldingPreservation.lowHistory"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedUnfoldingPreservation.highHistory"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedUnfoldingPreservation.same_endpoint_different_acquired_history"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedUnfoldingPreservation.readings"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedUnfoldingPreservation.endpoint_equality_does_not_preserve_acquired_path"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedUnfoldingPreservation.no_endpoint_decoder_recovers_all_acquired_paths"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.FormedUnfoldingPreservation.nativeProcess"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedUnfoldingPreservation.native_run_has_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedUnfoldingPreservation.native_trace_ends_at_run"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedUnfoldingPreservation.native_trace_iff_run"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedUnfoldingPreservation.native_answer_iff_run"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedUnfoldingPreservation.exact_account_separates_native_outcomes"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedUnfoldingPreservation.exact_future_judgment_separates_equal_current_answers"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedUnfoldingPreservation.exact_future_reading_separates_equal_current_readings"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedUnfoldingPreservation.exact_future_judgment_separates_closed_acquisition"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedUnfoldingPreservation.exact_future_judgment_separates_exhausted_acquisition"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedUnfoldingPreservation.current_answer_alone_is_not_an_exact_future_account"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.FormedUnfoldingPreservation.current_reading_alone_is_not_an_exact_future_account"
+        }
+      ],
+      "theorems": 25,
+      "axiom_dependencies": {
+        "Generative.FormedUnfoldingPreservation.Reading": [],
+        "Generative.FormedUnfoldingPreservation.reading": [],
+        "Generative.FormedUnfoldingPreservation.issuedHistory": [],
+        "Generative.FormedUnfoldingPreservation.errorHistory": [],
+        "Generative.FormedUnfoldingPreservation.correctionHistory": [],
+        "Generative.FormedUnfoldingPreservation.named_stages_are_native_runs": [],
+        "Generative.FormedUnfoldingPreservation.connected_formation_error_correction": [],
+        "Generative.FormedUnfoldingPreservation.calibration_contacts_have_native_provenance": [],
+        "Generative.FormedUnfoldingPreservation.same_answer_different_review_and_support": [],
+        "Generative.FormedUnfoldingPreservation.same_answer_different_rejudgment": [],
+        "Generative.FormedUnfoldingPreservation.record_and_uptake_have_different_outcomes": [],
+        "Generative.FormedUnfoldingPreservation.spent_inspection_cannot_be_reused_for_review": [],
+        "Generative.FormedUnfoldingPreservation.closed_access_blocks_acquisition_with_support_remaining": [],
+        "Generative.FormedUnfoldingPreservation.changedHistory": [],
+        "Generative.FormedUnfoldingPreservation.changed": [],
+        "Generative.FormedUnfoldingPreservation.same_present_reading_different_native_continuation": [],
+        "Generative.FormedUnfoldingPreservation.distinguishing_continuations_are_reachable": [],
+        "Generative.FormedUnfoldingPreservation.judging_again_cannot_perform_the_distinguishing_inspection": [],
+        "Generative.FormedUnfoldingPreservation.lowHistory": [],
+        "Generative.FormedUnfoldingPreservation.highHistory": [],
+        "Generative.FormedUnfoldingPreservation.same_endpoint_different_acquired_history": [],
+        "Generative.FormedUnfoldingPreservation.readings": [],
+        "Generative.FormedUnfoldingPreservation.endpoint_equality_does_not_preserve_acquired_path": [],
+        "Generative.FormedUnfoldingPreservation.no_endpoint_decoder_recovers_all_acquired_paths": [],
+        "Generative.FormedUnfoldingPreservation.nativeProcess": [],
+        "Generative.FormedUnfoldingPreservation.native_run_has_trace": [],
+        "Generative.FormedUnfoldingPreservation.native_trace_ends_at_run": [],
+        "Generative.FormedUnfoldingPreservation.native_trace_iff_run": [],
+        "Generative.FormedUnfoldingPreservation.native_answer_iff_run": [],
+        "Generative.FormedUnfoldingPreservation.exact_account_separates_native_outcomes": [],
+        "Generative.FormedUnfoldingPreservation.exact_future_judgment_separates_equal_current_answers": [],
+        "Generative.FormedUnfoldingPreservation.exact_future_reading_separates_equal_current_readings": [],
+        "Generative.FormedUnfoldingPreservation.exact_future_judgment_separates_closed_acquisition": [],
+        "Generative.FormedUnfoldingPreservation.exact_future_judgment_separates_exhausted_acquisition": [],
+        "Generative.FormedUnfoldingPreservation.current_answer_alone_is_not_an_exact_future_account": [],
+        "Generative.FormedUnfoldingPreservation.current_reading_alone_is_not_an_exact_future_account": []
+      },
+      "kernel_checked": true,
+      "audit_scope": "all explicit named declarations"
+    }
+  ],
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "counts": {
+    "new": {
+      "modules": 2,
+      "declarations": 64,
+      "theorems": 42,
+      "empty_audit_dependencies": 64,
+      "standard_dependency_audits": 0
+    },
+    "inherited": {
+      "modules": 9,
+      "declarations": 248,
+      "theorems": 181,
+      "empty_audit_dependencies": 194,
+      "standard_dependency_audits": 54
+    }
+  },
+  "artifact_sha256": {
+    "ExplanatoryNecessity.lean": "e6ee0229ef68da50a62ccc0d079f7e38866f86813d4e7309e681ecc17a923df5",
+    "ExplanatoryNecessity.log": "6dbed6431dcbda668df4d730c07dde76db30141da09973cd6bcd78385c13a37f",
+    "ExplanatoryNecessityAxiomAudit.lean": "64f69b43e87320657696187936eaa2ec20a004a91939fe8127d6cb6b4808fee4",
+    "ExplanatoryNecessityAxiomAudit.log": "6dbed6431dcbda668df4d730c07dde76db30141da09973cd6bcd78385c13a37f",
+    "ExplanatoryNecessitySignatures.lean": "b37c80713bb533775447485894703137bddbc0ee9303b02b0c208f54834df4a7",
+    "ExplanatoryNecessitySignatures.log": "5e27de52d630cc8d5df77ca2d2a557424e51b05032ae4b34991cbde418d5aff7",
+    "ExplanatoryStructure.lean": "ecc83334e6d7c136cbeab5f6094e94b82b1522011542feb9c7c0faaf5f7cc52e",
+    "ExplanatoryStructure.log": "28b0e02b62cb780f89731ca209aa00ee4b3868c537ee781636ce2a8198255a7a",
+    "ExplanatoryStructureAxiomAudit.lean": "475dccdee9f118045c8da5e81111033c268e1c5cbea9355b78f7aaa2831a7a96",
+    "ExplanatoryStructureAxiomAudit.log": "87cc206c8e808eae9592980eadd73503489a2a0e4d6a475bae6d59df0a602899",
+    "ExplanatoryStructureSignatures.lean": "6cd9b78f944c6d649879520cd5adeff0ac103404f7446155573582206e80b032",
+    "ExplanatoryStructureSignatures.log": "af2dc0b6758828045acaeca91249f20283203917ac9db8398982e2daca5747cd",
+    "ExplanatoryUniqueness.lean": "25df183309a4e5bdda32dcb45a36cb57f3b6939f5a8f2abd428469e32030f5de",
+    "ExplanatoryUniqueness.log": "aa4c0d049327a18e313ffc123c9d10e0b98b17b62f7a98a79f0b2f59f0720b01",
+    "ExplanatoryUniquenessAxiomAudit.lean": "44188b85c26a5e66e2eb1ebab12ff4ed39bfcef54e81d36276cabe0657e08ba6",
+    "ExplanatoryUniquenessAxiomAudit.log": "3e0af215b368d02b0cb3ae037c54155d43e8cc6ba69fe75c46826ab0d6921503",
+    "ExplanatoryUniquenessSignatures.lean": "ca63ddb880af5aa243c634c1ce97941aaf42b38da1d39fc961f3410eb311525f",
+    "ExplanatoryUniquenessSignatures.log": "54710ab83cf897db3d87ca8ac054df784b54ee14b859ced52374154cbcfc44ae",
+    "FormedGrounds.lean": "15764b3258f843dc967fdfabfd17cd5f47a6eb740a4aa5a3465ceae61dea17ba",
+    "FormedGrounds.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FormedGroundsAxiomAudit.lean": "2af106ee8773c7d50760ec54e635afb61c7dfbee99213671c5b45fd5ca10e0f9",
+    "FormedGroundsAxiomAudit.log": "fd611ab17a7183bedcf5ac06a798925b8212f43ef681fabcc0abfb91e8c4df3c",
+    "FormedGroundsSignatures.lean": "da3de4ccee20c53a5596e518b6ffcf8abf8a842cec1ca75e91d1f48bbbb7a017",
+    "FormedGroundsSignatures.log": "578eb4ecb31900666ba461d9478922beef5daeed500fc808daab41d4b5e4f15b",
+    "FormedUnfoldingPreservation.lean": "26c1a578b00b74065df6bc214e71eb2383319761ca9440ebf9a9e4703f216462",
+    "FormedUnfoldingPreservation.log": "657d6d4f5fe6738b093eec8f76828406e5582e983b0e9c42959a8545ebf68a0b",
+    "FormedUnfoldingPreservationAxiomAudit.lean": "00e17213f27ee9b401af1d61f86b183cfc60f697028ae663caba53f00bc12a0a",
+    "FormedUnfoldingPreservationAxiomAudit.log": "657d6d4f5fe6738b093eec8f76828406e5582e983b0e9c42959a8545ebf68a0b",
+    "FormedUnfoldingPreservationSignatures.lean": "14c29c5b50d68d2063219ed41f2996db7f3082b4db8c4e51c5f534eb9e30ddb2",
+    "FormedUnfoldingPreservationSignatures.log": "e27df51e00faf33d34d2eb15a3eca27f9ffeaadc92a61eebe807c875d31fb361",
+    "GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "GenerativeCore.log": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "GenerativeCoreAxiomAudit.lean": "10b3b3f9a2e6ac20ac1c92a94a7842c7e4ceb2707fce20b6c4488ef97b58be55",
+    "GenerativeCoreAxiomAudit.log": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "GenerativeCoreSignatures.lean": "9e41754ef6799e19922713b88553663a44d12fcc258ec9ab60878e5def2ea9f3",
+    "GenerativeCoreSignatures.log": "f52ee06d75c715af20e2b39ea416e2f8f7792c0dc82f80d233183badc8b936e1",
+    "HistoryRealization.lean": "22785f31280a7bbac5f89d7754cb6896830a6dc2d81949b9f3adfabd126e8fa9",
+    "HistoryRealization.log": "97266bca4133cb46c4605b714397a8978a46343bd795429e184693890f223efe",
+    "HistoryRealizationAxiomAudit.lean": "fe4d46fff3b2115da046765b6c4643058dd29b677946e55ddaa703f6f3a3f582",
+    "HistoryRealizationAxiomAudit.log": "97266bca4133cb46c4605b714397a8978a46343bd795429e184693890f223efe",
+    "HistoryRealizationSignatures.lean": "778b0f4175a27149bf958bc3c0ee36a82254ee0bc6cb0f389e8da763789b666d",
+    "HistoryRealizationSignatures.log": "8f454e6ab491506ef24f6ebfe2bcc2cb34466872a5b948e7af42fa6054f6f73e",
+    "KnowledgeCorrespondence.lean": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+    "KnowledgeCorrespondence.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "KnowledgeCorrespondenceAxiomAudit.lean": "17a0077b3e78d738bf2d0be19d10e280b15db7dafef91e2b612d9472a15bbd1b",
+    "KnowledgeCorrespondenceAxiomAudit.log": "c377f105cfd06f0e0910406603df50a3a522626e83669b2e8308f8018e2c7f21",
+    "KnowledgeCorrespondenceSignatures.lean": "055b1e508f41e4b55b8cab7943c941eb25ff15bcb01ee7283c62605cbf932b13",
+    "KnowledgeCorrespondenceSignatures.log": "81471fa26e1d60c7def30cda3725076ec4f879b4f97ceb692743f08e198eedf1",
+    "NormativeActivity.lean": "15105e2caa43fb9b00f228343be16a7d729ff5a3da10c506d134d07417ae622c",
+    "NormativeActivity.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "NormativeActivityAxiomAudit.lean": "6ab05e5e305732620b64e33367375942293cc36b3dd678537de16a24efbe3735",
+    "NormativeActivityAxiomAudit.log": "a46082bf5b466328452aaad71b64bafe72fd079a2f3c95b0564ab2f5e80bfa61",
+    "NormativeActivitySignatures.lean": "31a72d24ac5b5b406e0412148c388130ed3d3ffa203978751338ed337f5f7625",
+    "NormativeActivitySignatures.log": "961317ee7ae0d4dcdfc9fc6e4cf40e7b34b6b3601fce985fb099c3b43b6fb75b",
+    "StandardsBridge.lean": "f061dbc44da5cdf11ac5ff79b3f89558c7e177b23b9f121c1048c16ed353a42a",
+    "StandardsBridge.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "StandardsBridgeAxiomAudit.lean": "0eb43ace08d209058824387c1bd826f05b131774d7393eaf3a641e846925dd99",
+    "StandardsBridgeAxiomAudit.log": "0a5fa190c7e00d7ebf6b96fb1bb80a052e47297c9df86f6667131b30dc8a6566",
+    "StandardsBridgeSignatures.lean": "56035d9e8a2592b7eb8071581caae089d8a9ac7f5b548f9130b35215bafa7d0d",
+    "StandardsBridgeSignatures.log": "c9e4b5bfdcea03db69722fc7d7d431662165d594f654b3e02f55ca7204181766",
+    "UnfoldingPreservation.lean": "19ac73d41d6534617337f24e0d4a313a046e0e7bc2a82f2f8ce95bb7dedf37d6",
+    "UnfoldingPreservation.log": "655b556fb5a851407550a153620616a81b6b9c7f13986b657b200fc5e19f78a3",
+    "UnfoldingPreservationAxiomAudit.lean": "5438f8ee8d7d5ffcf104edd4c77d064dfbefda5926d8ebbf3b21666016654102",
+    "UnfoldingPreservationAxiomAudit.log": "655b556fb5a851407550a153620616a81b6b9c7f13986b657b200fc5e19f78a3",
+    "UnfoldingPreservationSignatures.lean": "d975904170d918166c5679aba1ff0c384b03d1993174f613d62f8d0c4008a4c2",
+    "UnfoldingPreservationSignatures.log": "38529ce8245e2a78eba688bfa887ed08179019b8dd5ae0d56a160c57bfcca106",
+    "audit_support.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_unfolding_preservation.py": "5d8cde0c3fe50425b0ec2a91f44cac2caf4d90d4c1a73a165ef5081706ca8334",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

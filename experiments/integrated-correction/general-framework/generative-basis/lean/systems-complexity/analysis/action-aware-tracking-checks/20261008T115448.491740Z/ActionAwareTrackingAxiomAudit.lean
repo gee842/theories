@@ -1,0 +1,23 @@
+import ActionAwareTracking
+#print axioms ActionAwareTracking.estimate
+#print axioms ActionAwareTracking.error
+#print axioms ActionAwareTracking.residual
+#print axioms ActionAwareTracking.predicted_step_bound
+#print axioms ActionAwareTracking.acquiredResponse
+#print axioms ActionAwareTracking.calibration_residual_bound
+#print axioms ActionAwareTracking.acquired_response_bound
+#print axioms ActionAwareTracking.acquired_response_exact
+#print axioms ActionAwareTracking.zero_probe_has_no_response_distinction
+#print axioms ActionAwareTracking.controlled_residual_bound
+#print axioms ActionAwareTracking.calibration_transfers_to_action
+#print axioms ActionAwareTracking.command_limit_from_precision
+#print axioms ActionAwareTracking.controlled_step_bound
+#print axioms ActionAwareTracking.prediction_converges
+#print axioms ActionAwareTracking.retained_radius_sound
+#print axioms ActionAwareTracking.acquired_response_tracks_motion
+#print axioms ActionAwareTracking.ignoring_action_retains_lag
+#print axioms ActionAwareTracking.shrinking_parameter_error_can_be_amplified
+#print axioms ActionAwareTracking.finite_relations_eventually_certify
+#print axioms ActionAwareTracking.freshError
+#print axioms ActionAwareTracking.every_fixed_aspect_learned
+#print axioms ActionAwareTracking.expanding_frontier_keeps_unlearned_aspect

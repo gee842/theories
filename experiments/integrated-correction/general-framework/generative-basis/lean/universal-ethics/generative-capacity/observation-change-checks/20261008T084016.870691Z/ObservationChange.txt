@@ -1,0 +1,25 @@
+ObservationChange.lean:37:56: error: unsolved goals
+⊢ ![15 / 32, 1 / 32, 13 / 32, 3 / 32] 2 + ![15 / 32, 1 / 32, 13 / 32, 3 / 32] 3 = 1 / 2 ∧
+    1 / 32 + ![15 / 32, 1 / 32, 13 / 32, 3 / 32] 3 = 1 / 8 ∧
+      ![15 / 32, 1 / 32, 13 / 32, 3 / 32] 3 /
+          (![15 / 32, 1 / 32, 13 / 32, 3 / 32] 2 + ![15 / 32, 1 / 32, 13 / 32, 3 / 32] 3) =
+        3 / 16
+ObservationChange.lean:113:56: warning: This simp argument is unused:
+  Prod.fst
+
+Hint: Omit it from the simp argument list.
+  simp only [planValue, Fin.isValue, P̵r̵o̵d̵.̵f̵s̵t̵,̵ ̵Prod.snd]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ObservationChange.lean:113:66: warning: This simp argument is unused:
+  Prod.snd
+
+Hint: Omit it from the simp argument list.
+  simp only [planValue, Fin.isValue, Prod.fst,̵ ̵P̵r̵o̵d̵.̵s̵n̵d̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ObservationChange.lean:128:13: error: Tactic `split_ifs` failed: no if-then-else conditions to split
+
+case left
+z : Plan
+⊢ 0 ≤ (fun z => if z = selected then 1 else 0) z

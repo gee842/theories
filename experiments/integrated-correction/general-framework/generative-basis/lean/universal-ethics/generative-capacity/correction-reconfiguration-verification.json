@@ -1,0 +1,375 @@
+{
+  "status": "passed",
+  "utc": "20261008T104527.690950Z",
+  "retained_run": "correction-reconfiguration-checks/20261008T104527.690950Z",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "sources": {
+    "AlignmentInquiry": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentInquiry.lean",
+      "sha256": "f40ad6179db326830edcdf8ec511f9069833a361f71181fd60166e0f72c0a23c"
+    },
+    "EffectiveCommand": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EffectiveCommand.lean",
+      "sha256": "7247ca05597f2f916fb409213d3814d48ad9a7037fb95017146d106273d58553"
+    },
+    "AcquiredCorrection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AcquiredCorrection.lean",
+      "sha256": "5448267c53e610b28bd030dfb1a894be840c307d54cd76e4be3695f196e8cd62"
+    },
+    "FaultTolerantCorrection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FaultTolerantCorrection.lean",
+      "sha256": "38f978fcabfaadca45c90b2298cf57502b839c6c9b93c3b9d0827d9ac2cb66ac"
+    },
+    "CorrectionReconfiguration": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionReconfiguration.lean",
+      "sha256": "4bd7160762f4bb697c72293133c91934e3622674f75990f6328d186abd7425e7"
+    },
+    "CorrectionReconfigurationCases": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionReconfigurationCases.lean",
+      "sha256": "68e1e61448103f78379e90ae6b15bc8577e846043a4636cb76ec0345e67aea99"
+    }
+  },
+  "checker_sha256": {
+    "check_correction_reconfiguration.py": "871bb70040bb225b2aebb2b0fbb97ec17b7cf6a573a9d03c7a5c8e6aeb3436b2",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Computed fault envelopes from supplied monotone causal formulas; atomic authorized reviewer reconfiguration preserving mandate, revoking old requests and reserving correction capacity. Physical causal correspondence, root fault coverage, protected monitor and reorganization authority remain supplied; no distributed reconfiguration or ethical legitimacy theorem.",
+  "version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "modules": {
+    "CorrectionReconfiguration": {
+      "declarations": [
+        {
+          "kind": "inductive",
+          "name": "CorrectionReconfiguration.FaultExpr"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionReconfiguration.fails"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionReconfiguration.Subset"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionReconfiguration.failure_monotone"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionReconfiguration.survives_subset"
+        },
+        {
+          "kind": "structure",
+          "name": "CorrectionReconfiguration.Arrangement"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionReconfiguration.induced"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionReconfiguration.envelope"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionReconfiguration.Covered"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionReconfiguration.induced_membership"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionReconfiguration.induced_monotone"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionReconfiguration.outside_bound_survives"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionReconfiguration.derived_certificate_sound"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionReconfiguration.ready"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionReconfiguration.ready_separates"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionReconfiguration.ready_iff_nonempty_separated"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionReconfiguration.derived_certificate_available"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionReconfiguration.derived_actual_correction"
+        },
+        {
+          "kind": "structure",
+          "name": "CorrectionReconfiguration.Managed"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionReconfiguration.responseCost"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionReconfiguration.reconfigure"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionReconfiguration.admitted_configuration"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionReconfiguration.reform_does_not_expand_mandate"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionReconfiguration.old_request_rejected_after_reform"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionReconfiguration.admitted_budget_for_shorter_route"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionReconfiguration.admitted_reform_completes"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionReconfiguration.unavailable_candidate_rejected"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionReconfiguration.unauthorized_reform_rejected"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionReconfiguration.separate3"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionReconfiguration.merged3"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionReconfiguration.repaired4"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionReconfiguration.duplicated4"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionReconfiguration.original"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionReconfiguration.causal_envelopes_compute"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionReconfiguration.causal_readiness_changes"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionReconfiguration.renamed_support_is_not_redundancy"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionReconfiguration.stale_envelope_accepts_captured_support"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionReconfiguration.reform_rejects_shared_control"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionReconfiguration.renewed"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionReconfiguration.renewedRequest"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionReconfiguration.survivingReads"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionReconfiguration.survivingApprovals"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionReconfiguration.repaired_reform_installs"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionReconfiguration.repaired_reform_completes_correction"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionReconfiguration.old_approvals_fail_after_reform"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionReconfiguration.review_alone_funded_is_not_enough"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionReconfiguration.exact_combined_budget_suffices"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionReconfiguration.omitted_shared_cause_still_breaks_model"
+        }
+      ],
+      "dependencies": {
+        "CorrectionReconfiguration.FaultExpr": [],
+        "CorrectionReconfiguration.fails": [],
+        "CorrectionReconfiguration.Subset": [],
+        "CorrectionReconfiguration.failure_monotone": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionReconfiguration.survives_subset": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionReconfiguration.Arrangement": [],
+        "CorrectionReconfiguration.induced": [],
+        "CorrectionReconfiguration.envelope": [],
+        "CorrectionReconfiguration.Covered": [],
+        "CorrectionReconfiguration.induced_membership": [
+          "propext"
+        ],
+        "CorrectionReconfiguration.induced_monotone": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionReconfiguration.outside_bound_survives": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionReconfiguration.derived_certificate_sound": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionReconfiguration.ready": [],
+        "CorrectionReconfiguration.ready_separates": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionReconfiguration.ready_iff_nonempty_separated": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionReconfiguration.derived_certificate_available": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionReconfiguration.derived_actual_correction": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionReconfiguration.Managed": [],
+        "CorrectionReconfiguration.responseCost": [],
+        "CorrectionReconfiguration.reconfigure": [],
+        "CorrectionReconfiguration.admitted_configuration": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionReconfiguration.reform_does_not_expand_mandate": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionReconfiguration.old_request_rejected_after_reform": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionReconfiguration.admitted_budget_for_shorter_route": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionReconfiguration.admitted_reform_completes": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionReconfiguration.unavailable_candidate_rejected": [
+          "propext"
+        ],
+        "CorrectionReconfiguration.unauthorized_reform_rejected": [
+          "propext"
+        ],
+        "CorrectionReconfiguration.separate3": [],
+        "CorrectionReconfiguration.merged3": [],
+        "CorrectionReconfiguration.repaired4": [],
+        "CorrectionReconfiguration.duplicated4": [],
+        "CorrectionReconfiguration.original": [],
+        "CorrectionReconfiguration.causal_envelopes_compute": [],
+        "CorrectionReconfiguration.causal_readiness_changes": [],
+        "CorrectionReconfiguration.renamed_support_is_not_redundancy": [],
+        "CorrectionReconfiguration.stale_envelope_accepts_captured_support": [],
+        "CorrectionReconfiguration.reform_rejects_shared_control": [],
+        "CorrectionReconfiguration.renewed": [],
+        "CorrectionReconfiguration.renewedRequest": [],
+        "CorrectionReconfiguration.survivingReads": [
+          "propext"
+        ],
+        "CorrectionReconfiguration.survivingApprovals": [],
+        "CorrectionReconfiguration.repaired_reform_installs": [],
+        "CorrectionReconfiguration.repaired_reform_completes_correction": [
+          "propext"
+        ],
+        "CorrectionReconfiguration.old_approvals_fail_after_reform": [
+          "propext"
+        ],
+        "CorrectionReconfiguration.review_alone_funded_is_not_enough": [],
+        "CorrectionReconfiguration.exact_combined_budget_suffices": [],
+        "CorrectionReconfiguration.omitted_shared_cause_still_breaks_model": []
+      },
+      "theorems": 28
+    }
+  },
+  "new_theorems": 28,
+  "audited_declarations": 48,
+  "compared_records": 33648,
+  "record_counts": {
+    "0": 1008,
+    "1": 8192,
+    "2": 16384,
+    "3": 8064
+  },
+  "correspondence": "1008 formula truth values, 8192 support/readiness decisions, 16384 structural fault/availability cases and 8064 admission/accounting cases match separately expressed truth-table, set and arithmetic reference. Same-author comparison, not independent review or deployment evidence.",
+  "artifacts": {
+    "EffectiveCommand.lean": "7247ca05597f2f916fb409213d3814d48ad9a7037fb95017146d106273d58553",
+    "FaultTolerantCorrection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cases.log": "82f55db39ec601ee3befba53b60c7ef3dfb4f16ffd27a0627a265c2ef0a77616",
+    "RunCases.lean": "23a9f263349bd33968acd5bee832afe4b789d6ff6534751449975cfb9f244ed1",
+    "CorrectionReconfigurationCases.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "CorrectionReconfiguration.lean": "4bd7160762f4bb697c72293133c91934e3622674f75990f6328d186abd7425e7",
+    "check_correction_reconfiguration.py": "871bb70040bb225b2aebb2b0fbb97ec17b7cf6a573a9d03c7a5c8e6aeb3436b2",
+    "CorrectionReconfigurationAudit.lean": "5be956d4cf6c86c2fbf259aaf77c840c860dcd444df0c94b9e784f6da5d56025",
+    "AlignmentInquiry.lean": "f40ad6179db326830edcdf8ec511f9069833a361f71181fd60166e0f72c0a23c",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b",
+    "reference.json": "df844ca378b10d5a491f4fa0555619b96f646a902fac13cfcbd71ac56765e780",
+    "CorrectionReconfigurationAudit.log": "3349d05c009532ff16a703397f0d7c5bda28f6162aab7354cf56318a73105308",
+    "EffectiveCommand.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FaultTolerantCorrection.lean": "38f978fcabfaadca45c90b2298cf57502b839c6c9b93c3b9d0827d9ac2cb66ac",
+    "AcquiredCorrection.lean": "5448267c53e610b28bd030dfb1a894be840c307d54cd76e4be3695f196e8cd62",
+    "AcquiredCorrection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CorrectionReconfiguration.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CorrectionReconfigurationCases.lean": "68e1e61448103f78379e90ae6b15bc8577e846043a4636cb76ec0345e67aea99",
+    "AlignmentInquiry.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

@@ -1,0 +1,508 @@
+{
+  "status": "passed",
+  "utc": "20261008T114957.579255Z",
+  "retained_run": "temporal-inspection-checks/20261008T114957.579255Z",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "sources": {
+    "AlignmentInquiry": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentInquiry.lean",
+      "sha256": "f40ad6179db326830edcdf8ec511f9069833a361f71181fd60166e0f72c0a23c"
+    },
+    "EffectiveCommand": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EffectiveCommand.lean",
+      "sha256": "7247ca05597f2f916fb409213d3814d48ad9a7037fb95017146d106273d58553"
+    },
+    "AcquiredCorrection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AcquiredCorrection.lean",
+      "sha256": "5448267c53e610b28bd030dfb1a894be840c307d54cd76e4be3695f196e8cd62"
+    },
+    "FaultTolerantCorrection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FaultTolerantCorrection.lean",
+      "sha256": "38f978fcabfaadca45c90b2298cf57502b839c6c9b93c3b9d0827d9ac2cb66ac"
+    },
+    "CorrectionReconfiguration": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionReconfiguration.lean",
+      "sha256": "4bd7160762f4bb697c72293133c91934e3622674f75990f6328d186abd7425e7"
+    },
+    "EvidenceQualifiedCorrection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvidenceQualifiedCorrection.lean",
+      "sha256": "a3c87bdfa01dbf6c25da19d4bbc0d6e028744b504d95023c76607379cc20327f"
+    },
+    "FallibleInspection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FallibleInspection.lean",
+      "sha256": "998bca3b8a24fd84c957e11b5b3cf9ef838fba5f76a432b0cbb35255a18c6aa3"
+    },
+    "TemporalInspection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/TemporalInspection.lean",
+      "sha256": "4916c6b1d5cbf38b7cebdd378fa508c799e279c56daaf5359334c4a73bf48694"
+    },
+    "TemporalInspectionCases": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/TemporalInspectionCases.lean",
+      "sha256": "2d8e90d222e37d41ef41bb17d18a4bb08b38b560eb8fa8fe45532044724a6c63"
+    }
+  },
+  "checker_sha256": {
+    "check_temporal_inspection.py": "2bc49cb6a4cda027eef96960c7ebe3c94dcd3342272bdd28ed73c6a365c9db29",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Time-ordered structural/fault possibilities, covered transition prediction, lawful finite-history retention and current correction with paid inspection. Transition and source-response laws, initial coverage, protected recording and stable command execution remain supplied; mobile responses do not imply a physical recovery protocol.",
+  "version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "modules": {
+    "TemporalInspection": {
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "TemporalInspection.World"
+        },
+        {
+          "kind": "def",
+          "name": "TemporalInspection.roots"
+        },
+        {
+          "kind": "def",
+          "name": "TemporalInspection.commandRoots"
+        },
+        {
+          "kind": "def",
+          "name": "TemporalInspection.worlds"
+        },
+        {
+          "kind": "def",
+          "name": "TemporalInspection.fits"
+        },
+        {
+          "kind": "def",
+          "name": "TemporalInspection.receive"
+        },
+        {
+          "kind": "inductive",
+          "name": "TemporalInspection.Change"
+        },
+        {
+          "kind": "def",
+          "name": "TemporalInspection.successors"
+        },
+        {
+          "kind": "def",
+          "name": "TemporalInspection.predict"
+        },
+        {
+          "kind": "def",
+          "name": "TemporalInspection.models"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.received_actual_retained"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.prediction_contains_successor"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.received_possible_subset"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.predicted_world_is_represented"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.missing_report_retains_worlds"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.projected_model_contains_actual"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.command_projection_matches_physical_causes"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.represented_command_coverage"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.covered_command_world"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.current_pool_sound"
+        },
+        {
+          "kind": "inductive",
+          "name": "TemporalInspection.Record"
+        },
+        {
+          "kind": "structure",
+          "name": "TemporalInspection.State"
+        },
+        {
+          "kind": "def",
+          "name": "TemporalInspection.Known"
+        },
+        {
+          "kind": "def",
+          "name": "TemporalInspection.read"
+        },
+        {
+          "kind": "def",
+          "name": "TemporalInspection.changeCost"
+        },
+        {
+          "kind": "def",
+          "name": "TemporalInspection.move"
+        },
+        {
+          "kind": "def",
+          "name": "TemporalInspection.asSituation"
+        },
+        {
+          "kind": "def",
+          "name": "TemporalInspection.respond"
+        },
+        {
+          "kind": "inductive",
+          "name": "TemporalInspection.Event"
+        },
+        {
+          "kind": "def",
+          "name": "TemporalInspection.execute"
+        },
+        {
+          "kind": "def",
+          "name": "TemporalInspection.Lawful"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.reading_preserves_known"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.movement_preserves_known"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.responding_preserves_known"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.lawful_step_preserves_known"
+        },
+        {
+          "kind": "inductive",
+          "name": "TemporalInspection.History"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.lawful_history_preserves_known"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.history_to_current_certificate"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.history_to_actual_completion"
+        },
+        {
+          "kind": "def",
+          "name": "TemporalInspection.run"
+        },
+        {
+          "kind": "def",
+          "name": "TemporalInspection.runUntilBlocked"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.completed_run_preserves_its_executed_prefix"
+        },
+        {
+          "kind": "instance",
+          "name": "TemporalInspection.lawfulDecidable"
+        },
+        {
+          "kind": "def",
+          "name": "TemporalInspection.auditRun"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.history_transitive"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.audit_produces_lawful_history"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.audit_matches_operational_run"
+        },
+        {
+          "kind": "def",
+          "name": "TemporalInspection.initial"
+        },
+        {
+          "kind": "def",
+          "name": "TemporalInspection.scan"
+        },
+        {
+          "kind": "def",
+          "name": "TemporalInspection.mask"
+        },
+        {
+          "kind": "def",
+          "name": "TemporalInspection.scanResult"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.fixed_scan_retains_same_structural_alternatives"
+        },
+        {
+          "kind": "def",
+          "name": "TemporalInspection.mobileLie"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.single_cause_at_each_read_can_forge_whole_transcript"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.temporal_observer_does_not_infer_false_right_sharing"
+        },
+        {
+          "kind": "def",
+          "name": "TemporalInspection.changedAndRechecked"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.worked_histories_satisfy_their_transition_and_reporting_laws"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.actual_control_change_then_reinspection_completes"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.reinspection_without_execution_capacity_does_not_complete"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.blocked_later_read_does_not_refund_earlier_inspection"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.denied_reorganization_retains_earlier_evidence_and_cost"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.predicting_change_reopens_relevant_alternatives"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.fault_movement_does_not_erase_structural_knowledge"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.new_change_after_last_report_reopens_coverage"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.understated_change_can_leave_false_confidence"
+        },
+        {
+          "kind": "theorem",
+          "name": "TemporalInspection.denied_reads_collect_nothing"
+        }
+      ],
+      "dependencies": {
+        "TemporalInspection.World": [],
+        "TemporalInspection.roots": [],
+        "TemporalInspection.commandRoots": [],
+        "TemporalInspection.worlds": [],
+        "TemporalInspection.fits": [],
+        "TemporalInspection.receive": [],
+        "TemporalInspection.Change": [],
+        "TemporalInspection.successors": [],
+        "TemporalInspection.predict": [],
+        "TemporalInspection.models": [],
+        "TemporalInspection.received_actual_retained": [
+          "propext"
+        ],
+        "TemporalInspection.prediction_contains_successor": [
+          "propext",
+          "Quot.sound"
+        ],
+        "TemporalInspection.received_possible_subset": [
+          "propext"
+        ],
+        "TemporalInspection.predicted_world_is_represented": [
+          "propext"
+        ],
+        "TemporalInspection.missing_report_retains_worlds": [
+          "propext",
+          "Quot.sound"
+        ],
+        "TemporalInspection.projected_model_contains_actual": [
+          "propext",
+          "Quot.sound"
+        ],
+        "TemporalInspection.command_projection_matches_physical_causes": [],
+        "TemporalInspection.represented_command_coverage": [],
+        "TemporalInspection.covered_command_world": [
+          "propext",
+          "Quot.sound"
+        ],
+        "TemporalInspection.current_pool_sound": [
+          "propext",
+          "Quot.sound"
+        ],
+        "TemporalInspection.Record": [],
+        "TemporalInspection.State": [],
+        "TemporalInspection.Known": [],
+        "TemporalInspection.read": [],
+        "TemporalInspection.changeCost": [],
+        "TemporalInspection.move": [],
+        "TemporalInspection.asSituation": [],
+        "TemporalInspection.respond": [
+          "propext"
+        ],
+        "TemporalInspection.Event": [],
+        "TemporalInspection.execute": [
+          "propext"
+        ],
+        "TemporalInspection.Lawful": [],
+        "TemporalInspection.reading_preserves_known": [
+          "propext"
+        ],
+        "TemporalInspection.movement_preserves_known": [
+          "propext",
+          "Quot.sound"
+        ],
+        "TemporalInspection.responding_preserves_known": [
+          "propext"
+        ],
+        "TemporalInspection.lawful_step_preserves_known": [
+          "propext",
+          "Quot.sound"
+        ],
+        "TemporalInspection.History": [
+          "propext"
+        ],
+        "TemporalInspection.lawful_history_preserves_known": [
+          "propext",
+          "Quot.sound"
+        ],
+        "TemporalInspection.history_to_current_certificate": [
+          "propext",
+          "Quot.sound"
+        ],
+        "TemporalInspection.history_to_actual_completion": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TemporalInspection.run": [
+          "propext"
+        ],
+        "TemporalInspection.runUntilBlocked": [
+          "propext"
+        ],
+        "TemporalInspection.completed_run_preserves_its_executed_prefix": [
+          "propext"
+        ],
+        "TemporalInspection.lawfulDecidable": [
+          "propext"
+        ],
+        "TemporalInspection.auditRun": [
+          "propext"
+        ],
+        "TemporalInspection.history_transitive": [
+          "propext"
+        ],
+        "TemporalInspection.audit_produces_lawful_history": [
+          "propext"
+        ],
+        "TemporalInspection.audit_matches_operational_run": [
+          "propext"
+        ],
+        "TemporalInspection.initial": [],
+        "TemporalInspection.scan": [],
+        "TemporalInspection.mask": [],
+        "TemporalInspection.scanResult": [],
+        "TemporalInspection.fixed_scan_retains_same_structural_alternatives": [],
+        "TemporalInspection.mobileLie": [],
+        "TemporalInspection.single_cause_at_each_read_can_forge_whole_transcript": [],
+        "TemporalInspection.temporal_observer_does_not_infer_false_right_sharing": [
+          "propext"
+        ],
+        "TemporalInspection.changedAndRechecked": [],
+        "TemporalInspection.worked_histories_satisfy_their_transition_and_reporting_laws": [
+          "propext"
+        ],
+        "TemporalInspection.actual_control_change_then_reinspection_completes": [
+          "propext"
+        ],
+        "TemporalInspection.reinspection_without_execution_capacity_does_not_complete": [
+          "propext"
+        ],
+        "TemporalInspection.blocked_later_read_does_not_refund_earlier_inspection": [
+          "propext"
+        ],
+        "TemporalInspection.denied_reorganization_retains_earlier_evidence_and_cost": [
+          "propext"
+        ],
+        "TemporalInspection.predicting_change_reopens_relevant_alternatives": [],
+        "TemporalInspection.fault_movement_does_not_erase_structural_knowledge": [],
+        "TemporalInspection.new_change_after_last_report_reopens_coverage": [],
+        "TemporalInspection.understated_change_can_leave_false_confidence": [
+          "propext"
+        ],
+        "TemporalInspection.denied_reads_collect_nothing": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "theorems": 34
+    }
+  },
+  "new_theorems": 34,
+  "audited_declarations": 66,
+  "compared_records": 35486,
+  "record_counts": {
+    "0": 7680,
+    "1": 2048,
+    "2": 4374,
+    "3": 20736,
+    "4": 648
+  },
+  "correspondence": "7680 individual evidence updates, 2048 change predictions, 4374 stable scan/executions, 20736 change/reinspection budget-permission records, and 648 three-read mobile-fault histories match a separately expressed bitset/history reference. Same-author comparison, not independent review or empirical data.",
+  "artifacts": {
+    "FallibleInspection.lean": "998bca3b8a24fd84c957e11b5b3cf9ef838fba5f76a432b0cbb35255a18c6aa3",
+    "EffectiveCommand.lean": "7247ca05597f2f916fb409213d3814d48ad9a7037fb95017146d106273d58553",
+    "check_temporal_inspection.py": "2bc49cb6a4cda027eef96960c7ebe3c94dcd3342272bdd28ed73c6a365c9db29",
+    "FaultTolerantCorrection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cases.log": "351d410045710042af4753df9fc2ed26ebd9412e481684a4c895e0b06f69f195",
+    "RunCases.lean": "c6f85ddd1a812e02d88121aefd497c632421c6d1460c9379de539874686c9a58",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "TemporalInspection.lean": "4916c6b1d5cbf38b7cebdd378fa508c799e279c56daaf5359334c4a73bf48694",
+    "CorrectionReconfiguration.lean": "4bd7160762f4bb697c72293133c91934e3622674f75990f6328d186abd7425e7",
+    "EvidenceQualifiedCorrection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "AlignmentInquiry.lean": "f40ad6179db326830edcdf8ec511f9069833a361f71181fd60166e0f72c0a23c",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b",
+    "FallibleInspection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "TemporalInspectionAudit.log": "442e8d3430a794c8e27169406dae273915f0c9935520b191cca321d144dcc02e",
+    "TemporalInspectionCases.lean": "2d8e90d222e37d41ef41bb17d18a4bb08b38b560eb8fa8fe45532044724a6c63",
+    "TemporalInspection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference.json": "8e615105f1027eb60babb1d2f6b567ad63ed962087037e2b65a81be55e5301d1",
+    "EvidenceQualifiedCorrection.lean": "a3c87bdfa01dbf6c25da19d4bbc0d6e028744b504d95023c76607379cc20327f",
+    "EffectiveCommand.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "TemporalInspectionCases.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FaultTolerantCorrection.lean": "38f978fcabfaadca45c90b2298cf57502b839c6c9b93c3b9d0827d9ac2cb66ac",
+    "TemporalInspectionAudit.lean": "4218586da9adad1ef6e021bb4acb41280f60d13be4b83ed6c4f847ef5e952ac8",
+    "AcquiredCorrection.lean": "5448267c53e610b28bd030dfb1a894be840c307d54cd76e4be3695f196e8cd62",
+    "AcquiredCorrection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CorrectionReconfiguration.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "AlignmentInquiry.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

@@ -1,0 +1,495 @@
+{
+  "status": "passed",
+  "date": "2026-10-08 Asia/Bangkok",
+  "scope": "Document links and exact successful Lean receipt binding, not a new proof or empirical run.",
+  "scoped_index_rows": {
+    "C26": "passed",
+    "F23": "passed",
+    "F26": "passed",
+    "F27": "passed",
+    "F28": "passed"
+  },
+  "shared_index_status": "needs-review",
+  "shared_index_issues": [
+    {
+      "source_changes": {
+        "modified_sources": [
+          "RESEARCH.md",
+          "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+          "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md",
+          "sources/15-codex-theory-conversations/2026-10-08-relations-across-scales.md",
+          "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+          "theories/shengsheng-buxi-generative-existence/README.md"
+        ],
+        "missing_sources": [],
+        "new_pages": [
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-REVISION-CONTINUATION-PROTOCOL.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREDICTIVE-CALIBRATION-INTEGRATION.md",
+          "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-EVIDENCE.md"
+        ],
+        "removed_pages": []
+      }
+    }
+  ],
+  "local_links_checked": 87,
+  "formal_packages": [
+    {
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/priority-identification-verification.json",
+      "retained_artifacts_checked": 9,
+      "modules": [
+        {
+          "name": "PracticalPriorityIdentification",
+          "theorems": 14,
+          "explicit_declarations": 21,
+          "inherited_in_this_package": false
+        }
+      ]
+    },
+    {
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/normative-activity-verification.json",
+      "retained_artifacts_checked": 15,
+      "modules": [
+        {
+          "name": "KnowledgeCorrespondence",
+          "theorems": 20,
+          "explicit_declarations": 34,
+          "inherited_in_this_package": true
+        },
+        {
+          "name": "NormativeActivity",
+          "theorems": 34,
+          "explicit_declarations": 56,
+          "inherited_in_this_package": false
+        }
+      ]
+    },
+    {
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/standards-bridge-verification.json",
+      "retained_artifacts_checked": 9,
+      "modules": [
+        {
+          "name": "StandardsBridge",
+          "theorems": 26,
+          "explicit_declarations": 39,
+          "inherited_in_this_package": false
+        }
+      ]
+    },
+    {
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/formed-grounds-verification.json",
+      "retained_artifacts_checked": 27,
+      "modules": [
+        {
+          "name": "KnowledgeCorrespondence",
+          "theorems": 20,
+          "explicit_declarations": 34,
+          "inherited_in_this_package": true
+        },
+        {
+          "name": "NormativeActivity",
+          "theorems": 34,
+          "explicit_declarations": 56,
+          "inherited_in_this_package": true
+        },
+        {
+          "name": "StandardsBridge",
+          "theorems": 26,
+          "explicit_declarations": 39,
+          "inherited_in_this_package": true
+        },
+        {
+          "name": "FormedGrounds",
+          "theorems": 27,
+          "explicit_declarations": 45,
+          "inherited_in_this_package": false
+        }
+      ]
+    },
+    {
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/practical-reach-verification.json",
+      "retained_artifacts_checked": 9,
+      "modules": [
+        {
+          "name": "PracticalReach",
+          "theorems": 24,
+          "explicit_declarations": 35,
+          "inherited_in_this_package": false
+        }
+      ]
+    }
+  ],
+  "sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md": "2e2273297b9c5393b832da04776585032ec5d1647b3d37715dc1e8b5dc2aaa68",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md": "7deb38947d11c23e4afa6b97b44c358e18c521b1c364b634fb53940047ed0785",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-CHECK.py": "e8249116e07359a2eeeacfbaad474120c6d412a0556ff5a18b4ece003cd8dc98",
+    "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md": "cfd5ccc6f82a725c2215f831a21ef0af3e17470fb786b3258152eec5cab31eab",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalPriorityIdentification.lean": "d7416c92ea8ff688b72d4f660e5ef592fa45287f1f964a0f52419b2ebf1a99cb",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_priority_identification.py": "22bad1e07b3ef4254b10c16f7c41cde25094935463283ea09ada3ea95f805d84",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/priority-identification-verification.json": "94ffadaeb98221d528cc73ccdd3c4ad9b3f111fd4500fdef4df128973848be6d",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/KnowledgeCorrespondence.lean": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/NormativeActivity.lean": "15105e2caa43fb9b00f228343be16a7d729ff5a3da10c506d134d07417ae622c",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_normative_activity.py": "afe97454509e93b17c731cc3406efcdc701227c0c7e08964eced17a68f6ded23",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/normative-activity-verification.json": "d8cdade072ae0a6e1a77ff7d66d4c7bd9b8fa6cd397e022eec509e0065bef97f",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/StandardsBridge.lean": "f061dbc44da5cdf11ac5ff79b3f89558c7e177b23b9f121c1048c16ed353a42a",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_standards_bridge.py": "27350d545a0d7e3237db4bb23d0fcef10050b0970869f59552747d4f4e7af862",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/standards-bridge-verification.json": "bc93f8aba19c4f5d456807197cf22e1a580810bd49a1069e29bda315998ff8e9",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormedGrounds.lean": "15764b3258f843dc967fdfabfd17cd5f47a6eb740a4aa5a3465ceae61dea17ba",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_formed_grounds.py": "36730f5003e4f391ac0c11b44c555e7aafd96fbf6f6960b719650fdc2884fedf",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/formed-grounds-verification.json": "109f3cb54fbeba8e1b5e3ddd1eaf97fe5ae8045c3c2c17c12cb97dfd1c123a59",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalReach.lean": "1b13fcc34fed86de83e6f09dae82b321422195f31fb97d37024d7143183d0e7b",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_practical_reach.py": "32a1ac24fa81e681500c7e61d2f45824f84650d7d50e29df01e8a84509d87c3f",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/practical-reach-verification.json": "32c57b90ffc9e33fa27e18f03f227b9c69b3de12bd0540da3a1644901f6b7f46"
+  },
+  "bilingual_entries": 86,
+  "links": [
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "#17-第一规范根据的直接审计--direct-audit-of-first-normative-warrant"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "#8-认知与信息中的规范结构--normative-structure-in-cognition-and-information"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-08-zero-axiom-practical-judgment.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "PRACTICAL-JUDGMENT.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#7-undertaking-route-audited-against-existing-research"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#8-full-objective-and-impasse-audit"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "COGNITION-LI-AND-RECIPROCITY.md#1-认知理论与理不是同一层的三个名称"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#10-operative-normative-structure-and-a-discriminating-case"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#11-action-bias-correction-and-current-research"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "KNOWLEDGE.md#how-content-becomes-cognitively-available"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "RELATIONS-ACROSS-SCALES.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/NormativeActivity.lean"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/normative-activity-verification.json"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#14-checked-whole-activity-construction"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-REASONS-AND-STANDARDS.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/StandardsBridge.lean"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#15-understanding-assessment-and-authority-the-requested-harder-bridge"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "KNOWLEDGE.md#how-reasons-and-standards-become-available"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/standards-bridge-verification.json"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#15-understanding-assessment-and-authority-the-requested-harder-bridge"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#16-connecting-formed-interpretation-and-acquired-grounds-testing-universal-authority"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormedGrounds.lean"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#165-primary-comparison-inspected-scope-and-effects-on-the-argument"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md#universal-practical-authority-prioritized"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#17-universal-practical-authority-as-the-central-target"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "#17-第一规范根据的直接审计--direct-audit-of-first-normative-warrant"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md#several-connected-advances-requested"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#18-from-reasons-beyond-goals-to-controllable-continuation-transfer-and-conflict"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalReach.lean"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md#completion-of-the-remaining-central-claim-requested"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#19-direct-audit-of-the-remaining-central-claim"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-08-zero-axiom-practical-judgment.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "CONSTITUTIVE-ANSWER-INTEGRATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "WHOLE-CONTINUATION-WARRANT-INTEGRATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalPriorityIdentification.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "GENERATIVE-LOSS-COMPARISON-INTEGRATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_priority_identification.py"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/priority-identification-verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#54-successful-support-and-continuing-commitments"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#55-reasons-to-revise-and-powers-to-release"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "HUIGEN-SELF-GROUND-AUDIT.md#66-normative-powers-and-assistance-specific-exclusion"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#8-认知与信息中的规范结构--normative-structure-in-cognition-and-information"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#9-规范如何成为有作用的结构--how-a-norm-becomes-an-operative-structure"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVALUATIVE-GROUNDING.md#what-correct-revision-must-preserve"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPERIMENTAL-ACCESS.md#what-can-defeat-the-conclusion"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#11-从整体活动构造规范分化--constructing-normative-differentiation-within-whole-activity"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/KNOWLEDGE.md#how-content-becomes-cognitively-available"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/NormativeActivity.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_normative_activity.py"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/normative-activity-verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#12-整体活动的-lean-构造--lean-construction-of-whole-activity"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "KNOWLEDGE-REASONS-AND-STANDARDS.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#13-理解标准及其根据--understanding-standards-and-their-grounds"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md#completion-of-the-harder-bridge-requested"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/StandardsBridge.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_standards_bridge.py"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/standards-bridge-verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md#both-remaining-connections-requested"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormedGrounds.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_formed_grounds.py"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/formed-grounds-verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md#universal-practical-authority-prioritized"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#15-普遍实践权威--universal-practical-authority"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#universal-scope-and-substantive-conclusions"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "CONSTITUTIVE-ANSWER-ARGUMENT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "CONSTITUTIVE-ANSWER-INTEGRATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "WHOLE-GENERATIVE-AUTHORITY-ARGUMENT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "GROUNDING-INFERENCE-AND-PRESENTATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md#several-connected-advances-requested"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalReach.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "ELECTIVE-CONCERN-ARGUMENT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_practical_reach.py"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/practical-reach-verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md#completion-of-the-remaining-central-claim-requested"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#17-第一规范根据的直接审计--direct-audit-of-first-normative-warrant"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "HUIGEN-SELF-GROUND-SOURCES.md#32-motivational-access-and-the-ground-of-practical-reasons"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "CONSTITUTIVE-ANSWER-INTEGRATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "HUIGEN-PRACTICAL-NECESSITY-AUDIT.md#11-preserve-epistemic-authority-when-testing-the-practical-bridge"
+    }
+  ]
+}

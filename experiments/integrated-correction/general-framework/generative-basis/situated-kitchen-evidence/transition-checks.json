@@ -1,0 +1,117 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T08:03:57.879399+00:00",
+  "scope": "Source-bound anonymous count possibilities for the reported paired cohort; no recovered actual table, causation, sampling inference or ethical certification.",
+  "source_sha256": "d887006d538d477b6ab826803934e7a074636dfca7ed57e858f3b0918d6289bf",
+  "checker_sha256": "d05ca1ba8ea4f24d8e55c4882fdc78406a8e4a9ee512d76f96c1f3c96e1fb2b1",
+  "lean_source_sha256": "cf8af78afdf2e07a93067fd1df21f0259bde5d6beb9490b276c49a8515457a64",
+  "lean_verification_sha256": "64900bda22b73a00448f3b4d0d2783486763a4eb4369e757bbe9a13c1d6b1312",
+  "marginals": {
+    "sampleSize": 32,
+    "beforeSafe": 14,
+    "afterSafe": 19
+  },
+  "binary_tables": [
+    {
+      "kept_safe": 14,
+      "safe_to_insecure": 0,
+      "insecure_to_safe": 5,
+      "kept_insecure": 13
+    },
+    {
+      "kept_safe": 13,
+      "safe_to_insecure": 1,
+      "insecure_to_safe": 6,
+      "kept_insecure": 12
+    },
+    {
+      "kept_safe": 12,
+      "safe_to_insecure": 2,
+      "insecure_to_safe": 7,
+      "kept_insecure": 11
+    },
+    {
+      "kept_safe": 11,
+      "safe_to_insecure": 3,
+      "insecure_to_safe": 8,
+      "kept_insecure": 10
+    },
+    {
+      "kept_safe": 10,
+      "safe_to_insecure": 4,
+      "insecure_to_safe": 9,
+      "kept_insecure": 9
+    },
+    {
+      "kept_safe": 9,
+      "safe_to_insecure": 5,
+      "insecure_to_safe": 10,
+      "kept_insecure": 8
+    },
+    {
+      "kept_safe": 8,
+      "safe_to_insecure": 6,
+      "insecure_to_safe": 11,
+      "kept_insecure": 7
+    },
+    {
+      "kept_safe": 7,
+      "safe_to_insecure": 7,
+      "insecure_to_safe": 12,
+      "kept_insecure": 6
+    },
+    {
+      "kept_safe": 6,
+      "safe_to_insecure": 8,
+      "insecure_to_safe": 13,
+      "kept_insecure": 5
+    },
+    {
+      "kept_safe": 5,
+      "safe_to_insecure": 9,
+      "insecure_to_safe": 14,
+      "kept_insecure": 4
+    },
+    {
+      "kept_safe": 4,
+      "safe_to_insecure": 10,
+      "insecure_to_safe": 15,
+      "kept_insecure": 3
+    },
+    {
+      "kept_safe": 3,
+      "safe_to_insecure": 11,
+      "insecure_to_safe": 16,
+      "kept_insecure": 2
+    },
+    {
+      "kept_safe": 2,
+      "safe_to_insecure": 12,
+      "insecure_to_safe": 17,
+      "kept_insecure": 1
+    },
+    {
+      "kept_safe": 1,
+      "safe_to_insecure": 13,
+      "insecure_to_safe": 18,
+      "kept_insecure": 0
+    }
+  ],
+  "bounds": {
+    "safe_to_insecure": [
+      0,
+      13
+    ],
+    "insecure_to_safe": [
+      5,
+      18
+    ]
+  },
+  "preserved_limits": [
+    "Assumes the publication correctly describes the same 32 paired records.",
+    "Binary coarsening merges moderate and severe insecurity; within-category changes remain unrepresented.",
+    "Compatible tables receive no likelihood or probability; endpoints are not estimated actual losses.",
+    "The 18 early exits and one missing endpoint are outside this matched-cohort statement.",
+    "Survey categories do not certify actual basic protection or a J1/J2 ethical comparison."
+  ]
+}

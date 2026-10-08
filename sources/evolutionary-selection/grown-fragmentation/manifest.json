@@ -1,0 +1,24 @@
+[
+  {
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6853058/fullTextXML",
+    "error": "HTTP Error 500: "
+  },
+  {
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10425966/fullTextXML",
+    "error": "HTTP Error 500: "
+  },
+  {
+    "file": "jacobeen2018.html",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6853058/",
+    "bytes": 169644,
+    "sha256": "1c3cdd22501ce4ef33a6a78bd4e929ba03ba0eb01b93093d4a02dd3864c46d24",
+    "retrieved_at_utc": "2026-10-08T11:09:24.552168+00:00"
+  },
+  {
+    "file": "bozdag2023.html",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10425966/",
+    "bytes": 249387,
+    "sha256": "28d448f4148da12351448406c0c48111d047282dee53b928e5fd9f52d5eea8c8",
+    "retrieved_at_utc": "2026-10-08T11:09:25.727725+00:00"
+  }
+]

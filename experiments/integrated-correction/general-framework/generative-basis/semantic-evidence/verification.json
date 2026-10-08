@@ -1,0 +1,94 @@
+{
+  "status": "passed_four_selected_statistic_reproductions",
+  "checked_at_utc": "2026-10-07T23:00:41.830596+00:00",
+  "scope": "Animal-level published summaries only. No raw timestamp/neural-data reanalysis, fresh experiment, p-value reproduction, ethical proof or semantic-sufficiency proof.",
+  "numpy_version": "2.3.5",
+  "probe": {
+    "n_control": 22,
+    "n_inhibition": 21,
+    "mean_A_control": 26.838636364545458,
+    "mean_C_control": 15.706818181181823,
+    "mean_A_inhibition": 19.657936507142857,
+    "mean_C_inhibition": 22.987301587142856,
+    "mean_A_minus_C_control": 11.131818183363638,
+    "mean_A_minus_C_inhibition": -3.3293650799999996,
+    "between_group_contrast_percentage_points": 14.461183263363637,
+    "units": "percentage of cue time in food port minus pre-cue baseline"
+  },
+  "devaluation": {
+    "n_paired": 6,
+    "n_unpaired": 7,
+    "first_block_paired": 6.766666666666667,
+    "first_block_unpaired": 23.557142857142857,
+    "first_block_difference_percentage_points": 16.79047619047619,
+    "response_units": "percentage of cue time in food port, without baseline subtraction",
+    "consumption_paired_grams": 0.15,
+    "consumption_unpaired_grams": 5.357142857142857,
+    "alternative_sample_weighted_block_f": 5.702286784498977,
+    "contrast_note": "The alternative sample-weighted block estimand gives a different F. Equal group marginal weighting matches the reported statistic; arithmetic agreement alone does not establish author software settings."
+  },
+  "statistics": [
+    {
+      "name": "probe cue by group F",
+      "computed": 4.567238948856442,
+      "reported": 4.57,
+      "df": [
+        1,
+        41
+      ],
+      "matches_reported_rounding": true
+    },
+    {
+      "name": "devaluation block by group F",
+      "computed": 4.576109402160081,
+      "reported": 4.58,
+      "df": [
+        2,
+        22
+      ],
+      "matches_reported_rounding": true
+    },
+    {
+      "name": "devaluation block main effect F, equal group marginals",
+      "computed": 4.912581918313429,
+      "reported": 4.91,
+      "df": [
+        2,
+        22
+      ],
+      "matches_reported_rounding": true
+    },
+    {
+      "name": "consumption absolute t",
+      "computed": 4.9458848527052925,
+      "reported": 4.95,
+      "df": 11,
+      "matches_reported_rounding": true
+    }
+  ],
+  "preservation": {
+    "elife-30373-v2.json": true,
+    "elife-59998-v2.json": true,
+    "elife-59998-fig2-data1-v2.xlsx": true,
+    "elife-59998-fig3-data1-v2.xlsx": true
+  },
+  "source_ranges": {
+    "probe_control": "'figure  2'!C57:X58",
+    "probe_inhibition": "'figure  2'!C61:W62",
+    "devaluation_paired": "'Figure 3'!C4:H6",
+    "devaluation_unpaired": "'Figure 3'!C9:I11",
+    "consumption": "'Figure 3'!C22:I23"
+  },
+  "assumptions": [
+    "Columns within each panel are matched animals across conditions/blocks, as implied by the source layout and repeated-measures design. No cross-figure individual matching is asserted.",
+    "Use every supplied animal in the target panels; paper-level exclusions were already applied by the authors.",
+    "Repeated display panels are duplicate views, not independent evidence.",
+    "Equal-variance contrast and uncorrected repeated-measures model reproduce the specified paper statistics; their empirical assumptions are not proved by arithmetic agreement."
+  ],
+  "file_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/semantic-evidence/check_source_data.py": "0b42de7ec99cdda018c6294694db2ade7aeb9533fe7b8bd27653ddd63d0a1b9f",
+    "experiments/integrated-correction/general-framework/generative-basis/semantic-evidence/inspect_source.mjs": "d8929eb594387295d1666089ed22c4092671ff73f6583fc898f9661d68568333",
+    "experiments/integrated-correction/general-framework/generative-basis/semantic-evidence/source-extracts/figure2.json": "ce9170e9034d04f1af35bf543ec108c09f1733ec4549e85cf9f66e1326f492a8",
+    "experiments/integrated-correction/general-framework/generative-basis/semantic-evidence/source-extracts/figure3.json": "2b436a13e1b298df59f09e6ced80ee800bb333c8b359f4e9f6ec891660b52d14"
+  }
+}

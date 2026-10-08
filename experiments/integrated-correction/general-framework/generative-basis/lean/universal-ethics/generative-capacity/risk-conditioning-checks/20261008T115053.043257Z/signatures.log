@@ -1,0 +1,38 @@
+RiskConditioning.Plan : Type
+RiskConditioning.aRisk : RiskConditioning.Plan → Nat
+RiskConditioning.bRisk : RiskConditioning.Plan → Nat
+RiskConditioning.localOutcome (p : RiskConditioning.Plan) (i : Nat) : Bool × Bool
+RiskConditioning.outcome (p : RiskConditioning.Plan) (i : Nat) : Bool × Bool
+RiskConditioning.events : List Nat
+RiskConditioning.liveEvents : List Nat
+RiskConditioning.counts (p : RiskConditioning.Plan) (xs : List Nat) : Nat × Nat × Nat × Nat
+RiskConditioning.q (a b : Int) : Int
+RiskConditioning.event_masses : RiskConditioning.events.length = 200 ∧ RiskConditioning.liveEvents.length = 100
+RiskConditioning.full_joint_counts :
+  RiskConditioning.counts RiskConditioning.Plan.endpoint RiskConditioning.events = (60, 90, 50, 0) ∧
+    RiskConditioning.counts RiskConditioning.Plan.sharing RiskConditioning.events = (67, 87, 46, 0)
+RiskConditioning.conditional_joint_counts :
+  RiskConditioning.counts RiskConditioning.Plan.endpoint RiskConditioning.liveEvents = (10, 40, 50, 0) ∧
+    RiskConditioning.counts RiskConditioning.Plan.sharing RiskConditioning.liveEvents = (17, 37, 46, 0)
+RiskConditioning.outside_agreement (p r : RiskConditioning.Plan) (i : Nat) (hi : i < 100) :
+  RiskConditioning.outcome p i = RiskConditioning.outcome r i
+RiskConditioning.live_correspondence (p : RiskConditioning.Plan) (i : Nat) :
+  RiskConditioning.outcome p (100 + i) = RiskConditioning.localOutcome p i
+RiskConditioning.no_simultaneous_loss (p : RiskConditioning.Plan) (i : Nat) :
+  ¬((RiskConditioning.outcome p i).fst = true ∧ (RiskConditioning.outcome p i).snd = true)
+RiskConditioning.opposite_strict_rankings :
+  RiskConditioning.q 17 37 = 1658 ∧
+    RiskConditioning.q 10 40 = 1700 ∧
+      RiskConditioning.q 60 90 = 11700 ∧
+        RiskConditioning.q 67 87 = 12058 ∧
+          RiskConditioning.q 17 37 < RiskConditioning.q 10 40 ∧ RiskConditioning.q 60 90 < RiskConditioning.q 67 87
+RiskConditioning.translation_identity (c : Int) :
+  RiskConditioning.q (c + 17) (c + 37) + 42 = RiskConditioning.q (c + 10) (c + 40) + 8 * c
+RiskConditioning.translated_ranking (c : Int) (hc : 6 ≤ c) :
+  RiskConditioning.q (c + 10) (c + 40) < RiskConditioning.q (c + 17) (c + 37)
+RiskConditioning.earlierScore (p : RiskConditioning.Plan) : Int
+RiskConditioning.laterScore (p : RiskConditioning.Plan) : Int
+RiskConditioning.no_shared_minimizer :
+  ¬∃ p,
+      (∀ (r : RiskConditioning.Plan), RiskConditioning.earlierScore p ≤ RiskConditioning.earlierScore r) ∧
+        ∀ (r : RiskConditioning.Plan), RiskConditioning.laterScore p ≤ RiskConditioning.laterScore r

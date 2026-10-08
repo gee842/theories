@@ -1,0 +1,15 @@
+import SettlingCorrespondence
+
+#print axioms SettlingCorrespondence.bulkMass
+#print axioms SettlingCorrespondence.excess_mass_from_constituents
+#print axioms SettlingCorrespondence.effective_contrast_accounts_for_volume
+#print axioms SettlingCorrespondence.uniformScore
+#print axioms SettlingCorrespondence.materialScore
+#print axioms SettlingCorrespondence.sphere_density_correction
+#print axioms SettlingCorrespondence.agreement_requires_filled_envelope
+#print axioms SettlingCorrespondence.relativeDragScore
+#print axioms SettlingCorrespondence.permeability_can_offset_density
+#print axioms SettlingCorrespondence.equal_material_larger_radius_reverses_order
+#print axioms SettlingCorrespondence.radiusSquared01
+#print axioms SettlingCorrespondence.radiusSquared04
+#print axioms SettlingCorrespondence.measured_geometry_scores_reverse

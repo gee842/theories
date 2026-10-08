@@ -1,0 +1,20 @@
+import SituatedTracking
+#print axioms SituatedTracking.estimate
+#print axioms SituatedTracking.error
+#print axioms SituatedTracking.forcing
+#print axioms SituatedTracking.one_step
+#print axioms SituatedTracking.recurrence_bound
+#print axioms SituatedTracking.tracking_bound
+#print axioms SituatedTracking.eventual_band
+#print axioms SituatedTracking.vanishing_input_convergence
+#print axioms SituatedTracking.tracking_convergence
+#print axioms SituatedTracking.radius
+#print axioms SituatedTracking.radius_nonnegative
+#print axioms SituatedTracking.radius_sound
+#print axioms SituatedTracking.radius_converges
+#print axioms SituatedTracking.certificate_sound
+#print axioms SituatedTracking.eventually_certifies
+#print axioms SituatedTracking.misleading_reading_fixed
+#print axioms SituatedTracking.stable_error_can_be_wrong
+#print axioms SituatedTracking.changing_condition_retains_lag
+#print axioms SituatedTracking.boundary_accuracy_without_certificate

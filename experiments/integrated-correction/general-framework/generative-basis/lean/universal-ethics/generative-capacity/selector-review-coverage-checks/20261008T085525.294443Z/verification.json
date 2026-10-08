@@ -1,0 +1,18 @@
+{
+  "status": "failed",
+  "utc": "20261008T085525.294443Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "selector-review-coverage-checks/20261008T085525.294443Z",
+  "source_sha256": {
+    "PracticalJudgment": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "SelectorReviewCoverage": "dc884dd6816a4e79004e67a8003ae583de51fe6df607a63a4488ff14f8a7933d"
+  },
+  "checker_sha256": {
+    "check_selector_review_coverage.py": "13c8519c06a71a702e7f9c197ec3756d1c03e25bde9d6d091baa4aa2c938533c",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Menu-relative reflection of possible defeat characterizes sound transport of represented uniform-frontier certificates across different review types. An inherited J1/J2 witness has an exact nonvacuous old-menu compression which fails when a new repair becomes eligible; the real output loss remains. An objection summary preserves the exact certificate without becoming a new whole preference. Meaning, review admission, factual coverage, classification, authority and actual acquisition remain substantive premises; no new ethical axiom or empirical finding.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "SelectorReviewCoverage.lean:55:5: error: unknown tactic\nSelectorReviewCoverage.lean:54:2: error: unsolved goals\ncase mpr\nW V H : Type\noldLive : W \u2192 Prop\nnewLive : V \u2192 Prop\nmenu : H \u2192 Prop\noldBetter : W \u2192 H \u2192 H \u2192 Prop\nnewBetter : V \u2192 H \u2192 H \u2192 Prop\ntransport : \u2200 (a : H), Clear newLive menu newBetter a \u2192 Clear oldLive menu oldBetter a\na : H\nha : menu a\nold : PossibleDefeat oldLive menu oldBetter a\n\u22a2 PossibleDefeat newLive menu newBetter a\nSelectorReviewCoverage.lean:139:58: error: failed to synthesize\n  Decidable (oldMenu Plan.output)\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\nSelectorReviewCoverage.lean:142:61: error: failed to synthesize\n  Decidable (oldMenu Plan.output)\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\nSelectorReviewCoverage.lean:146:17: error: failed to synthesize\n  Decidable (oldMenu Plan.output)\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\nSelectorReviewCoverage.lean:146:40: error: failed to synthesize\n  Decidable (oldMenu Plan.output)\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\nSelectorReviewCoverage.lean:152:35: error: Function expected at\n  better_trans ?m.141 ?m.142 ?m.146 ?m.147\nbut this term has type\n  Better ?m.141 ?m.142 ?m.143 ?m.145\n\nNote: Expected a function because this term is being applied to the argument\n  _\nSelectorReviewCoverage.lean:154:38: error: failed to synthesize\n  Decidable (oldMenu Plan.output)\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\nSelectorReviewCoverage.lean:167:42: error: Function expected at\n  better_trans ?m.64 ?m.65 ?m.69 ?m.70\nbut this term has type\n  Better ?m.64 ?m.65 ?m.66 ?m.68\n\nNote: Expected a function because this term is being applied to the argument\n  _\nSelectorReviewCoverage.lean:191:16: error: failed to synthesize\n  Decidable \u00acgain Plan.repair ()\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\n"
+}

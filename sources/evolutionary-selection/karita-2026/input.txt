@@ -1,0 +1,13 @@
+20.0 #layer: um~pixel
+1.0 #m0:
+0.00001 #c_mu: 0.00001 => 0.5 cells per (100 px)^2 per generation for the saturated medium
+0.2 #r: growth rate for the vertical growth.
+80.0 #K: saturated mass for the vertical growth.
+0.15 #r_l: growth rate of the bulk liquid for the logistic growth model.
+5.0 #Nmax: max pop size of the bulk liquid. ~ 10^9[cells/mL]
+300.0 #gg: gg * periphery ~ M. gg = gamma/g * 10^6.
+0.85 #stopratio: If this ratio of the entire ALI is covered, stop the simulation.
+0.05 #r_s: this ratio of periphery cells can swim and move to another site.
+5 #sigma: Spreading of Gaussian dist. for swimming. integer data type for now. 6*sigma < L_box.
+0.1 #minT: minimum time step for mass growth [generation]
+0.5 #sampling: sampling time to record the system state. [generation].

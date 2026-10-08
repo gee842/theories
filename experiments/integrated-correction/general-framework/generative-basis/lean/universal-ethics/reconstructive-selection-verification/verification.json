@@ -1,0 +1,246 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T08:48:37.620604+00:00",
+  "version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "fresh_temporary_build": true,
+  "commands": [
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "--version"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "-o",
+      "ReconstructiveSelection.olean",
+      "ReconstructiveSelection.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "ReconstructiveSelectionAudit.lean"
+    ]
+  ],
+  "source_unchanged_during_check": true,
+  "source_sha256": {
+    "ReconstructiveSelection.lean": "c0faf669d3178e2a4284e7ac3191ceb490cfd901bb40c51035774f061a76d197",
+    "lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+    "ReconstructiveSelectionAudit.lean": "2ad2e042c95726efd9fbd216832228d46c3d3ba9224faa106ecbe4bb011fc2b4"
+  },
+  "log_sha256": {
+    "version.txt": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b",
+    "ReconstructiveSelection-compiler.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ReconstructiveSelection-axioms.txt": "621ef6c73b025077682c10df3f66cb3d208c5e80a413ae2b76505a1147e6a735"
+  },
+  "checker_sha256": "a5ff36c1be8851d09b324757426376fc21a68be83267446c7f3d99ff6a8dda21",
+  "source_locations": {
+    "ReconstructiveSelection.lean": "universal-ethics/ReconstructiveSelection.lean"
+  },
+  "new_theorem_count": 28,
+  "new_audit_count": 40,
+  "total_audit_count": 40,
+  "new_empty_axiom_count": 1,
+  "axiom_dependencies": {
+    "ReconstructiveSelection": {
+      "ReconstructiveSelection.Kernel": [],
+      "ReconstructiveSelection.nextO": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.nextP": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.value": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.margin": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.Expands": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.value_step": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.loop_criterion": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.full_loop_criterion": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.expansion_has_margin": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.nonexpansion_witness": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.history": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.uniform_history_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.developmental": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.returnDen": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.returnNumer": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.criticalOutput": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.finiteReturns": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.finite_return_identity": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.total_descendants": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.developmental_margin": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.output_threshold": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.developmental_expansion_criterion": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.developmental_nonnegative": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.developmental_growth_certificate": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.uniform_nonexpansion": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.threshold_exceeds_one": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.first_return_balance": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.cost_ceiling": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.reconstruction_threshold_identity": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.reconstruction_lowers_threshold": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.no_creation_from_routing": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.first_census_nonidentification": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.second_census_contrast": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.second_census_identifies_reconstruction": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.indistinguishable_first_census_opposite_margins": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.reconstruction_without_direct_copy": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.costly_reconstruction_can_cross_threshold": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.reconstruction_can_be_too_costly": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "ReconstructiveSelection.lost_return_prevents_this_gain": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  },
+  "scope": "Rational two-state descendant recurrence: exact expansion criterion, finite return paths, common-certificate history bound, cost ceiling and observation identification. Coefficients, faithful capacity transmission and the fixed resident context remain supplied. No fixation, microscopic rate derivation, indefinite resources or empirical superiority."
+}

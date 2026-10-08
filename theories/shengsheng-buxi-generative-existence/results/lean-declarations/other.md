@@ -8,6 +8,29 @@
 
 ## 其他形式研究 / Other formal studies
 
+<a id="module-db86581947bf"></a>
+
+<details>
+<summary>Driver.lean — 5 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/network-comparison/Driver.lean) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/network-comparison/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/ecological-selection/network-comparison/Driver.lean`
+
+Imports: `Lean`, `EvolutionNetworkComparison`
+
+没有扫描到显式 theorem/lemma；可能是导入、审计或定义模块。 / No explicit theorem/lemma scanned; this may be an import, audit or definition module.
+
+定义与类型 / Definitions and types:
+
+- `def` [parseState](../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/network-comparison/Driver.lean#L6) (L6)
+- `def` [parseEvent](../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/network-comparison/Driver.lean#L17) (L17)
+- `def` [serialize](../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/network-comparison/Driver.lean#L28) (L28)
+- `def` [evaluate](../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/network-comparison/Driver.lean#L36) (L36)
+- `def` [main](../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/network-comparison/Driver.lean#L42) (L42)
+
+</details>
+
 <a id="module-e2e5c347dc5a"></a>
 
 <details>
@@ -97,5 +120,1307 @@ Imports: `Std`
 - `def` [MarketGenerativity.exclusionDisturbance](../../../../experiments/market-generativity/formal/MarketGenerativity.lean#L501) (L501)
 
 文本中有 39 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 39 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-c03ef19c4e99"></a>
+
+<details>
+<summary>RegimeAttraction.lean — 52 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/market-generativity/formal/RegimeAttraction.lean) · [包说明 / Package notes](../../../../experiments/market-generativity/formal/README.md) · 尚无直接模块文档链接 / No direct module-documentation link found
+
+`experiments/market-generativity/formal/RegimeAttraction.lean`
+
+Imports: `RegimeBoundary`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [RegimeAttraction.quality_unclipped](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L18) | 18 |
+| [RegimeAttraction.fixed_iff_balances](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L29) | 29 |
+| [RegimeAttraction.high_fixed](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L46) | 46 |
+| [RegimeAttraction.low_physical](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L51) | 51 |
+| [RegimeAttraction.low_fixed](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L61) | 61 |
+| [RegimeAttraction.fixed_classification](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L68) | 68 |
+| [RegimeAttraction.middle_physical_iff](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L95) | 95 |
+| [RegimeAttraction.middle_fixed](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L113) | 113 |
+| [RegimeAttraction.collision_at_boundary](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L122) | 122 |
+| [RegimeAttraction.low_selection_direction](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L126) | 126 |
+| [RegimeAttraction.high_tube_step](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L146) | 146 |
+| [RegimeAttraction.low_tube_step](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L174) | 174 |
+| [RegimeAttraction.radius_bounds](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L211) | 211 |
+| [RegimeAttraction.radius_formula](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L223) | 223 |
+| [RegimeAttraction.high_tube_history](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L229) | 229 |
+| [RegimeAttraction.low_tube_history](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L239) | 239 |
+| [RegimeAttraction.rational_natural_bound](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L249) | 249 |
+| [RegimeAttraction.radius_reaches_small](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L262) | 262 |
+| [RegimeAttraction.radius_shift](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L287) | 287 |
+| [RegimeAttraction.radius_eventually_small](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L294) | 294 |
+| [RegimeAttraction.high_approaches](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L307) | 307 |
+| [RegimeAttraction.low_approaches](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L321) | 321 |
+| [RegimeAttraction.family_physical](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L335) | 335 |
+| [RegimeAttraction.upper_cone_step](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L355) | 355 |
+| [RegimeAttraction.radius_growth_lower](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L381) | 381 |
+| [RegimeAttraction.middle_upper_escape](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L392) | 392 |
+| [RegimeAttraction.perturbation_certificate](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L425) | 425 |
+| [RegimeAttraction.middle_unstable](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L430) | 430 |
+| [RegimeAttraction.low_stock_loss](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L451) | 451 |
+| [RegimeAttraction.low_support_fails_finitely](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L456) | 456 |
+| [RegimeAttraction.coupled_operating_step](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L490) | 490 |
+| [RegimeAttraction.coupled_histories](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L499) | 499 |
+| [RegimeAttraction.coupled_eventual_floor_breach](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L509) | 509 |
+| [RegimeAttraction.high_tube_supplies_old_safety](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L517) | 517 |
+| [RegimeAttraction.high_coupled_history_never_fails](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L532) | 532 |
+| [RegimeAttraction.guarded_trace](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L544) | 544 |
+| [RegimeAttraction.low_guarded_history_fails](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L558) | 558 |
+| [RegimeAttraction.zero_share_remains_zero](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L574) | 574 |
+
+定义与类型 / Definitions and types:
+
+- `def` [RegimeAttraction.physical](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L8) (L8)
+- `def` [RegimeAttraction.family](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L11) (L11)
+- `def` [RegimeAttraction.high](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L14) (L14)
+- `def` [RegimeAttraction.low](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L15) (L15)
+- `def` [RegimeAttraction.middle](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L16) (L16)
+- `def` [RegimeAttraction.HighTube](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L138) (L138)
+- `def` [RegimeAttraction.LowTube](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L142) (L142)
+- `def` [RegimeAttraction.radius](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L207) (L207)
+- `def` [RegimeAttraction.UpperCone](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L352) (L352)
+- `def` [RegimeAttraction.perturbMiddle](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L418) (L418)
+- `def` [RegimeAttraction.MiddleTube](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L421) (L421)
+- `def` [RegimeAttraction.stockHistory](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L446) (L446)
+- `def` [RegimeAttraction.lift](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L485) (L485)
+- `def` [RegimeAttraction.noShock](../../../../experiments/market-generativity/formal/RegimeAttraction.lean#L488) (L488)
+
+</details>
+
+<a id="module-e0e2fb3f4028"></a>
+
+<details>
+<summary>RegimeBoundary.lean — 27 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/market-generativity/formal/RegimeBoundary.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md) · [包说明 / Package notes](../../../../experiments/market-generativity/formal/README.md)
+
+`experiments/market-generativity/formal/RegimeBoundary.lean`
+
+Imports: `MarketGenerativity`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [RegimeBoundary.clip_floor_iff](../../../../experiments/market-generativity/formal/RegimeBoundary.lean#L15) | 15 |
+| [RegimeBoundary.exact_floor_boundary](../../../../experiments/market-generativity/formal/RegimeBoundary.lean#L20) | 20 |
+| [RegimeBoundary.negative_margin_crosses_floor](../../../../experiments/market-generativity/formal/RegimeBoundary.lean#L38) | 38 |
+| [RegimeBoundary.low_certificate_requires_negative_margin](../../../../experiments/market-generativity/formal/RegimeBoundary.lean#L56) | 56 |
+| [RegimeBoundary.zero_margin_is_protected_but_has_no_low_certificate](../../../../experiments/market-generativity/formal/RegimeBoundary.lean#L71) | 71 |
+| [RegimeBoundary.negative_margin_has_low_certificate](../../../../experiments/market-generativity/formal/RegimeBoundary.lean#L87) | 87 |
+| [RegimeBoundary.exact_low_certificate_boundary](../../../../experiments/market-generativity/formal/RegimeBoundary.lean#L155) | 155 |
+| [RegimeBoundary.low_share_step](../../../../experiments/market-generativity/formal/RegimeBoundary.lean#L166) | 166 |
+| [RegimeBoundary.low_quality_step](../../../../experiments/market-generativity/formal/RegimeBoundary.lean#L183) | 183 |
+| [RegimeBoundary.low_influence_step](../../../../experiments/market-generativity/formal/RegimeBoundary.lean#L198) | 198 |
+| [RegimeBoundary.low_box_step](../../../../experiments/market-generativity/formal/RegimeBoundary.lean#L224) | 224 |
+| [RegimeBoundary.low_box_all_times](../../../../experiments/market-generativity/formal/RegimeBoundary.lean#L247) | 247 |
+| [RegimeBoundary.example_below_critical](../../../../experiments/market-generativity/formal/RegimeBoundary.lean#L262) | 262 |
+| [RegimeBoundary.example_at_critical](../../../../experiments/market-generativity/formal/RegimeBoundary.lean#L265) | 265 |
+| [RegimeBoundary.example_parameter_boundary](../../../../experiments/market-generativity/formal/RegimeBoundary.lean#L268) | 268 |
+| [RegimeBoundary.example_above_critical](../../../../experiments/market-generativity/formal/RegimeBoundary.lean#L274) | 274 |
+| [RegimeBoundary.exact_robust_floor_boundary](../../../../experiments/market-generativity/formal/RegimeBoundary.lean#L284) | 284 |
+| [RegimeBoundary.strict_loss_of_renewing_share](../../../../experiments/market-generativity/formal/RegimeBoundary.lean#L303) | 303 |
+| [RegimeBoundary.gap_correspondence](../../../../experiments/market-generativity/formal/RegimeBoundary.lean#L313) | 313 |
+
+定义与类型 / Definitions and types:
+
+- `def` [RegimeBoundary.margin](../../../../experiments/market-generativity/formal/RegimeBoundary.lean#L8) (L8)
+- `def` [RegimeBoundary.FloorProtected](../../../../experiments/market-generativity/formal/RegimeBoundary.lean#L11) (L11)
+- `def` [RegimeBoundary.LowCertificate](../../../../experiments/market-generativity/formal/RegimeBoundary.lean#L52) (L52)
+- `abbrev` [RegimeBoundary.OperatingState](../../../../experiments/market-generativity/formal/RegimeBoundary.lean#L214) (L214)
+- `def` [RegimeBoundary.step](../../../../experiments/market-generativity/formal/RegimeBoundary.lean#L216) (L216)
+- `def` [RegimeBoundary.LowBox](../../../../experiments/market-generativity/formal/RegimeBoundary.lean#L221) (L221)
+- `def` [RegimeBoundary.history](../../../../experiments/market-generativity/formal/RegimeBoundary.lean#L243) (L243)
+- `def` [RegimeBoundary.RobustFloorProtected](../../../../experiments/market-generativity/formal/RegimeBoundary.lean#L280) (L280)
+
+</details>
+
+<a id="module-5db887ac5876"></a>
+
+<details>
+<summary>AdmissionRevision.lean — 56 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-ADMISSION.md) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
+
+`experiments/market-generativity/meta-attractor/AdmissionRevision.lean`
+
+Imports: `ReproductionNetwork`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [AdmissionRevision.broken_stock](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L23) | 23 |
+| [AdmissionRevision.conservative_loss_preserves](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L27) | 27 |
+| [AdmissionRevision.learned_preservation](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L41) | 41 |
+| [AdmissionRevision.learned_history_actual](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L48) | 48 |
+| [AdmissionRevision.probe_stays_established](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L97) | 97 |
+| [AdmissionRevision.probe_is_executable](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L101) | 101 |
+| [AdmissionRevision.acquired_loss_from_faithful_reading](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L105) | 105 |
+| [AdmissionRevision.saturated_reading_erases_loss](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L110) | 110 |
+| [AdmissionRevision.acquisition_is_actual](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L115) | 115 |
+| [AdmissionRevision.learning_uses_retained_reading](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L120) | 120 |
+| [AdmissionRevision.no_learning_before_observation](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L126) | 126 |
+| [AdmissionRevision.trial_records_its_actual_transition](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L130) | 130 |
+| [AdmissionRevision.acquisition_accounting](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L136) | 136 |
+| [AdmissionRevision.acquired_supported](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L143) | 143 |
+| [AdmissionRevision.new_criterion_changes_admission](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L151) | 151 |
+| [AdmissionRevision.new_criterion_retains_correction](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L155) | 155 |
+| [AdmissionRevision.faithful_continuation_supported](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L163) | 163 |
+| [AdmissionRevision.faithful_continuation_actual](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L172) | 172 |
+| [AdmissionRevision.trial_learning_and_reproduction](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L183) | 183 |
+| [AdmissionRevision.learned_operation_refines_physical](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L188) | 188 |
+| [AdmissionRevision.first_return_then_withdrawal](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L195) | 195 |
+| [AdmissionRevision.low_stock_restored](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L200) | 200 |
+| [AdmissionRevision.high_stock_withdrawn](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L210) | 210 |
+| [AdmissionRevision.alternating_stock_for_all_time](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L221) | 221 |
+| [AdmissionRevision.finite_material_advantage](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L242) | 242 |
+| [AdmissionRevision.misleading_reading_licenses_actual_loss](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L247) | 247 |
+| [AdmissionRevision.damaged_criterion_cannot_operate](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L258) | 258 |
+| [AdmissionRevision.equipment_survives_while_admission_fails](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L265) | 265 |
+| [AdmissionRevision.alarm_arrives_below_operating_floor](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L276) | 276 |
+| [AdmissionRevision.known_upper_error_can_restore_margin](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L281) | 281 |
+| [AdmissionRevision.bounded_error_adjustment_preserves](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L285) | 285 |
+| [AdmissionRevision.protected_histories_identical](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L309) | 309 |
+| [AdmissionRevision.protected_histories_have_different_untried_effects](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L318) | 318 |
+| [AdmissionRevision.no_protected_history_classifier](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L329) | 329 |
+
+定义与类型 / Definitions and types:
+
+- `def` [AdmissionRevision.observation](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L8) (L8)
+- `def` [AdmissionRevision.acquiredLoss](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L11) (L11)
+- `def` [AdmissionRevision.guard](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L14) (L14)
+- `def` [AdmissionRevision.choose](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L17) (L17)
+- `def` [AdmissionRevision.learnedHistory](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L20) (L20)
+- `def` [AdmissionRevision.probe](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L54) (L54)
+- `def` [AdmissionRevision.recordBody](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L59) (L59)
+- `structure` [AdmissionRevision.Reading](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L62) (L62)
+- `def` [AdmissionRevision.measuredLoss](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L66) (L66)
+- `structure` [AdmissionRevision.Learner](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L68) (L68)
+- `def` [AdmissionRevision.prepared](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L73) (L73)
+- `def` [AdmissionRevision.trialReading](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L74) (L74)
+- `def` [AdmissionRevision.probed](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L76) (L76)
+- `def` [AdmissionRevision.learn](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L78) (L78)
+- `def` [AdmissionRevision.acquired](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L80) (L80)
+- `inductive` [AdmissionRevision.Event](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L83) (L83)
+- `def` [AdmissionRevision.process](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L88) (L88)
+- `def` [AdmissionRevision.continuation](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L159) (L159)
+- `inductive` [AdmissionRevision.Route](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L296) (L296)
+- `def` [AdmissionRevision.routeCycle](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L298) (L298)
+- `def` [AdmissionRevision.routeHistory](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L303) (L303)
+- `def` [AdmissionRevision.beforeTrial](../../../../experiments/market-generativity/meta-attractor/AdmissionRevision.lean#L316) (L316)
+
+</details>
+
+<a id="module-69a93b1cf280"></a>
+
+<details>
+<summary>AlignmentSuccession.lean — 35 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-CONTINUITY-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
+
+`experiments/market-generativity/meta-attractor/AlignmentSuccession.lean`
+
+Imports: `MarketGenerativity`, `EffectiveCommand`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [AlignmentSuccession.carried_command_is_executed](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L40) | 40 |
+| [AlignmentSuccession.enabled_step](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L72) | 72 |
+| [AlignmentSuccession.exact_market_projection](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L84) | 84 |
+| [AlignmentSuccession.payload_keeps_claims_and_history](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L88) | 88 |
+| [AlignmentSuccession.carrier_and_work_accounted](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L95) | 95 |
+| [AlignmentSuccession.corrupted_transfer_blocked](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L102) | 102 |
+| [AlignmentSuccession.missing_part_blocks_realization](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L106) | 106 |
+| [AlignmentSuccession.migration_funding_blocks_realization](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L110) | 110 |
+| [AlignmentSuccession.admitted_payload_exact](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L121) | 121 |
+| [AlignmentSuccession.faithful_candidate_is_selected](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L126) | 126 |
+| [AlignmentSuccession.ranked_competition_preserves_transfer](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L140) | 140 |
+| [AlignmentSuccession.lineage_projects_to_market](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L155) | 155 |
+| [AlignmentSuccession.lineage_transports_actual_payload](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L162) | 162 |
+| [AlignmentSuccession.lineage_resources](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L173) | 173 |
+| [AlignmentSuccession.lineage_running](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L183) | 183 |
+| [AlignmentSuccession.every_generation_executes](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L195) | 195 |
+| [AlignmentSuccession.arbitrary_generation_preserves_supports](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L214) | 214 |
+| [AlignmentSuccession.competitive_lineage_executes](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L223) | 223 |
+| [AlignmentSuccession.financed_certificate](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L242) | 242 |
+| [AlignmentSuccession.financed_initial_safe](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L245) | 245 |
+| [AlignmentSuccession.aggregate_safe_can_lack_a_carrier](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L248) | 248 |
+| [AlignmentSuccession.old_funding_certificate_does_not_pay_migration](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L254) | 254 |
+| [AlignmentSuccession.aggregate_shutdown_does_not_force_perpetual_operation](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L260) | 260 |
+
+定义与类型 / Definitions and types:
+
+- `def` [AlignmentSuccession.withMigration](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L12) (L12)
+- `structure` [AlignmentSuccession.Payload](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L15) (L15)
+- `structure` [AlignmentSuccession.Carrier](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L23) (L23)
+- `def` [AlignmentSuccession.commandState](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L33) (L33)
+- `def` [AlignmentSuccession.serve](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L37) (L37)
+- `def` [AlignmentSuccession.next](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L50) (L50)
+- `def` [AlignmentSuccession.step](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L65) (L65)
+- `def` [AlignmentSuccession.selectPayload](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L118) (L118)
+- `def` [AlignmentSuccession.selectedStep](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L135) (L135)
+- `def` [AlignmentSuccession.lineage](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L150) (L150)
+- `def` [AlignmentSuccession.financed](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L238) (L238)
+- `def` [AlignmentSuccession.initialCarrier](../../../../experiments/market-generativity/meta-attractor/AlignmentSuccession.lean#L239) (L239)
+
+</details>
+
+<a id="module-92cfb0fcf109"></a>
+
+<details>
+<summary>CarrierDiagnosis.lean — 69 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-CARRIER-DIAGNOSIS.md) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
+
+`experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean`
+
+Imports: `RecursiveSelection`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [CarrierDiagnosis.performed](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L56) | 56 |
+| [CarrierDiagnosis.capacity_bounds](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L110) | 110 |
+| [CarrierDiagnosis.emitted_bounds](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L114) | 114 |
+| [CarrierDiagnosis.ordinary_return](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L119) | 119 |
+| [CarrierDiagnosis.return_bound](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L122) | 122 |
+| [CarrierDiagnosis.ordinary_ready](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L126) | 126 |
+| [CarrierDiagnosis.ordinary_preserves](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L133) | 133 |
+| [CarrierDiagnosis.recurrence_with_variant_carriers](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L146) | 146 |
+| [CarrierDiagnosis.different_carrier_yields](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L161) | 161 |
+| [CarrierDiagnosis.actual_recurring_trace](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L167) | 167 |
+| [CarrierDiagnosis.ordinary_progress](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L182) | 182 |
+| [CarrierDiagnosis.recurrence_progress](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L192) | 192 |
+| [CarrierDiagnosis.finite_arrival_with_turnover](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L202) | 202 |
+| [CarrierDiagnosis.ordinary_source_change](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L212) | 212 |
+| [CarrierDiagnosis.recurring_source_change](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L223) | 223 |
+| [CarrierDiagnosis.full_passive_record_equal](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L232) | 232 |
+| [CarrierDiagnosis.resource_accounting](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L242) | 242 |
+| [CarrierDiagnosis.replacement_accounting](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L251) | 251 |
+| [CarrierDiagnosis.empty_feed_blocks](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L259) | 259 |
+| [CarrierDiagnosis.no_advance_funding](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L266) | 266 |
+| [CarrierDiagnosis.probe_classifies_actual_source](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L271) | 271 |
+| [CarrierDiagnosis.repair_accounting](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L292) | 292 |
+| [CarrierDiagnosis.prepared_probe_ready](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L306) | 306 |
+| [CarrierDiagnosis.repair_keeps_receipt](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L313) | 313 |
+| [CarrierDiagnosis.repair_keeps_carrier](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L317) | 317 |
+| [CarrierDiagnosis.repair_recovers](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L321) | 321 |
+| [CarrierDiagnosis.diagnosis_preserves_continuation](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L331) | 331 |
+| [CarrierDiagnosis.diagnosis_then_recurrence](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L383) | 383 |
+| [CarrierDiagnosis.successful_diagnosis_result](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L390) | 390 |
+| [CarrierDiagnosis.no_diagnosis_without_execution](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L396) | 396 |
+| [CarrierDiagnosis.actual_diagnosis_trace](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L399) | 399 |
+| [CarrierDiagnosis.no_full_passive_classifier](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L425) | 425 |
+| [CarrierDiagnosis.actual_diagnosis_and_recurrence](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L439) | 439 |
+| [CarrierDiagnosis.example_prepared](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L448) | 448 |
+| [CarrierDiagnosis.paid_probe_repair_seed](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L450) | 450 |
+| [CarrierDiagnosis.heterogeneous_successors_seed](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L457) | 457 |
+| [CarrierDiagnosis.identification_without_repair_fails](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L462) | 462 |
+| [CarrierDiagnosis.funding_without_material_fails](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L466) | 466 |
+| [CarrierDiagnosis.change_probe_changes_target](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L471) | 471 |
+| [CarrierDiagnosis.waiting_can_avoid_repair](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L475) | 475 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [CarrierDiagnosis.Receipt](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L12) (L12)
+- `structure` [CarrierDiagnosis.State](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L20) (L20)
+- `structure` [CarrierDiagnosis.Input](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L31) (L31)
+- `def` [CarrierDiagnosis.capacity](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L37) (L37)
+- `def` [CarrierDiagnosis.emitted](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L38) (L38)
+- `def` [CarrierDiagnosis.returned](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L39) (L39)
+- `def` [CarrierDiagnosis.charge](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L43) (L43)
+- `def` [CarrierDiagnosis.Ready](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L44) (L44)
+- `def` [CarrierDiagnosis.outcome](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L48) (L48)
+- `def` [CarrierDiagnosis.run](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L55) (L55)
+- `def` [CarrierDiagnosis.ordinary](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L59) (L59)
+- `def` [CarrierDiagnosis.probeInput](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L60) (L60)
+- `def` [CarrierDiagnosis.Stable](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L62) (L62)
+- `def` [CarrierDiagnosis.recurring](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L66) (L66)
+- `def` [CarrierDiagnosis.RepairReady](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L70) (L70)
+- `def` [CarrierDiagnosis.repaired](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L76) (L76)
+- `def` [CarrierDiagnosis.repair](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L78) (L78)
+- `inductive` [CarrierDiagnosis.Action](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L80) (L80)
+- `def` [CarrierDiagnosis.process](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L84) (L84)
+- `def` [CarrierDiagnosis.classify](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L91) (L91)
+- `def` [CarrierDiagnosis.readSource](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L98) (L98)
+- `def` [CarrierDiagnosis.diagnose](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L100) (L100)
+- `def` [CarrierDiagnosis.diagnosisResult](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L105) (L105)
+- `def` [CarrierDiagnosis.visible](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L229) (L229)
+- `def` [CarrierDiagnosis.overflow](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L238) (L238)
+- `def` [CarrierDiagnosis.diverted](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L239) (L239)
+- `def` [CarrierDiagnosis.worn](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L240) (L240)
+- `def` [CarrierDiagnosis.Prepared](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L302) (L302)
+- `def` [CarrierDiagnosis.seed](../../../../experiments/market-generativity/meta-attractor/CarrierDiagnosis.lean#L423) (L423)
+
+</details>
+
+<a id="module-2b8dee3aab5f"></a>
+
+<details>
+<summary>CollectiveDestruction.lean — 41 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean) · [理论 / Theory](../../../meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
+
+`experiments/market-generativity/meta-attractor/CollectiveDestruction.lean`
+
+Imports: `Std`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [CollectiveDestruction.unilateral_gap](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L12) | 12 |
+| [CollectiveDestruction.dilemma_conditions](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L17) | 17 |
+| [CollectiveDestruction.race_strictly_best](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L33) | 33 |
+| [CollectiveDestruction.restraint_best](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L39) | 39 |
+| [CollectiveDestruction.restraint_strictly_best](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L45) | 45 |
+| [CollectiveDestruction.exact_local_optimization](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L51) | 51 |
+| [CollectiveDestruction.joint_race_pareto_inferior](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L63) | 63 |
+| [CollectiveDestruction.threshold_tie](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L68) | 68 |
+| [CollectiveDestruction.low_best_response_must_race](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L73) | 73 |
+| [CollectiveDestruction.high_best_response_must_restrain](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L81) | 81 |
+| [CollectiveDestruction.threshold_racing_also_optimal](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L89) | 89 |
+| [CollectiveDestruction.low_step](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L110) | 110 |
+| [CollectiveDestruction.high_step](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L114) | 114 |
+| [CollectiveDestruction.low_history](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L119) | 119 |
+| [CollectiveDestruction.high_history](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L127) | 127 |
+| [CollectiveDestruction.restraint_bound](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L133) | 133 |
+| [CollectiveDestruction.capacity_bound](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L142) | 142 |
+| [CollectiveDestruction.finite_destructive_entry](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L153) | 153 |
+| [CollectiveDestruction.destructive_absorbing](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L163) | 163 |
+| [CollectiveDestruction.exact_basin](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L166) | 166 |
+| [CollectiveDestruction.growing_capability_enters](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L179) | 179 |
+| [CollectiveDestruction.greater_capability_depletes_faster](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L183) | 183 |
+| [CollectiveDestruction.zero_throughput_preserves_capacity](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L195) | 195 |
+| [CollectiveDestruction.protection_for_any_best_responses](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L207) | 207 |
+| [CollectiveDestruction.protection_preserves](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L220) | 220 |
+| [CollectiveDestruction.late_protection_does_not_restore](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L226) | 226 |
+| [CollectiveDestruction.unilateral_restraint_does_not_stop_pressure](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L229) | 229 |
+| [CollectiveDestruction.joint_restraint_preserves](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L232) | 232 |
+| [CollectiveDestruction.threshold_race_enters_basin](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L235) | 235 |
+| [CollectiveDestruction.separate_safety_checks_do_not_compose](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L238) | 238 |
+| [CollectiveDestruction.rank_entry](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L244) | 244 |
+| [CollectiveDestruction.invariant_history](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L263) | 263 |
+
+定义与类型 / Definitions and types:
+
+- `def` [CollectiveDestruction.utility](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L9) (L9)
+- `def` [CollectiveDestruction.payoff](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L28) (L28)
+- `def` [CollectiveDestruction.choose](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L31) (L31)
+- `def` [CollectiveDestruction.BestResponse](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L70) (L70)
+- `structure` [CollectiveDestruction.State](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L93) (L93)
+- `def` [CollectiveDestruction.act](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L100) (L100)
+- `def` [CollectiveDestruction.step](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L103) (L103)
+- `def` [CollectiveDestruction.run](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L106) (L106)
+- `def` [CollectiveDestruction.protect](../../../../experiments/market-generativity/meta-attractor/CollectiveDestruction.lean#L205) (L205)
+
+</details>
+
+<a id="module-7ef37aae8095"></a>
+
+<details>
+<summary>CommonCauseDiscovery.lean — 84 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-DISCOVERY.md) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
+
+`experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean`
+
+Imports: `TestingReorganization`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [CommonCauseDiscovery.charge_supported](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L61) | 61 |
+| [CommonCauseDiscovery.work_supported](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L67) | 67 |
+| [CommonCauseDiscovery.observation_is_effect](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L70) | 70 |
+| [CommonCauseDiscovery.observation_preserves_rows](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L75) | 75 |
+| [CommonCauseDiscovery.change_invalidates_records](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L84) | 84 |
+| [CommonCauseDiscovery.step_preserves](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L93) | 93 |
+| [CommonCauseDiscovery.trace_preserves](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L112) | 112 |
+| [CommonCauseDiscovery.complete_records_identify_coupling](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L118) | 118 |
+| [CommonCauseDiscovery.separate_effects_imply_distinct_roots](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L126) | 126 |
+| [CommonCauseDiscovery.learned_gate_sound](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L143) | 143 |
+| [CommonCauseDiscovery.learned_gate_available](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L150) | 150 |
+| [CommonCauseDiscovery.no_gate_after_change](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L157) | 157 |
+| [CommonCauseDiscovery.no_gate_during_pulse](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L161) | 161 |
+| [CommonCauseDiscovery.fallback_available_during_probe](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L167) | 167 |
+| [CommonCauseDiscovery.probe_completes](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L174) | 174 |
+| [CommonCauseDiscovery.completed_probe_records_effect](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L186) | 186 |
+| [CommonCauseDiscovery.work_finances_probe](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L196) | 196 |
+| [CommonCauseDiscovery.financed_probe_actual](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L207) | 207 |
+| [CommonCauseDiscovery.financed_probe_retains_capacity](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L215) | 215 |
+| [CommonCauseDiscovery.survey_actual](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L227) | 227 |
+| [CommonCauseDiscovery.survey_records_all_effects](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L237) | 237 |
+| [CommonCauseDiscovery.survey_complete](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L244) | 244 |
+| [CommonCauseDiscovery.survey_preserves_response_capacity](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L249) | 249 |
+| [CommonCauseDiscovery.initial_invariant](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L263) | 263 |
+| [CommonCauseDiscovery.effect_probe_discovers_shared_dependency](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L271) | 271 |
+| [CommonCauseDiscovery.merged_readers_actually_fail_together](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L276) | 276 |
+| [CommonCauseDiscovery.no_quorum_claim_from_untested_state](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L280) | 280 |
+| [CommonCauseDiscovery.learned_response_preserves](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L294) | 294 |
+| [CommonCauseDiscovery.learned_response_is_physical](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L313) | 313 |
+| [CommonCauseDiscovery.discovered_coupling_changes_actual_response](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L324) | 324 |
+| [CommonCauseDiscovery.unaccounted_majority_would_lose_support](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L332) | 332 |
+| [CommonCauseDiscovery.retesting_after_reorganization](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L339) | 339 |
+| [CommonCauseDiscovery.withdrawal_preserves](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L346) | 346 |
+| [CommonCauseDiscovery.joint_step_preserves](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L368) | 368 |
+| [CommonCauseDiscovery.joint_history_preserves](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L379) | 379 |
+| [CommonCauseDiscovery.investigation_lifts](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L385) | 385 |
+| [CommonCauseDiscovery.shared_dependency_to_corrected_response](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L392) | 392 |
+| [CommonCauseDiscovery.withdrawal_is_physical](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L405) | 405 |
+| [CommonCauseDiscovery.all_local_probe_effects_identical](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L418) | 418 |
+| [CommonCauseDiscovery.local_probe_coverage_misses_upstream_failure](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L420) | 420 |
+| [CommonCauseDiscovery.no_classifier_of_local_effects_can_identify_parent](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L426) | 426 |
+| [CommonCauseDiscovery.simultaneous_local_probes_still_miss_parent](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L436) | 436 |
+| [CommonCauseDiscovery.upstream_probe_distinguishes](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L439) | 439 |
+
+定义与类型 / Definitions and types:
+
+- `def` [CommonCauseDiscovery.coupling](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L11) (L11)
+- `def` [CommonCauseDiscovery.decode](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L12) (L12)
+- `def` [CommonCauseDiscovery.Complete](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L14) (L14)
+- `def` [CommonCauseDiscovery.Separating](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L17) (L17)
+- `structure` [CommonCauseDiscovery.State](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L22) (L22)
+- `def` [CommonCauseDiscovery.Supported](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L29) (L29)
+- `def` [CommonCauseDiscovery.SoundRows](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L30) (L30)
+- `def` [CommonCauseDiscovery.Invariant](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L31) (L31)
+- `def` [CommonCauseDiscovery.online](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L33) (L33)
+- `def` [CommonCauseDiscovery.charge](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L36) (L36)
+- `def` [CommonCauseDiscovery.started](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L38) (L38)
+- `def` [CommonCauseDiscovery.observed](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L39) (L39)
+- `def` [CommonCauseDiscovery.restored](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L41) (L41)
+- `def` [CommonCauseDiscovery.worked](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L42) (L42)
+- `def` [CommonCauseDiscovery.changed](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L43) (L43)
+- `inductive` [CommonCauseDiscovery.Event](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L46) (L46)
+- `def` [CommonCauseDiscovery.process](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L53) (L53)
+- `def` [CommonCauseDiscovery.gate](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L138) (L138)
+- `def` [CommonCauseDiscovery.finishedProbe](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L172) (L172)
+- `def` [CommonCauseDiscovery.financedProbe](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L205) (L205)
+- `def` [CommonCauseDiscovery.probeEvents](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L223) (L223)
+- `def` [CommonCauseDiscovery.survey](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L224) (L224)
+- `def` [CommonCauseDiscovery.surveyEvents](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L225) (L225)
+- `def` [CommonCauseDiscovery.initial](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L261) (L261)
+- `def` [CommonCauseDiscovery.distinct](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L268) (L268)
+- `def` [CommonCauseDiscovery.merged](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L269) (L269)
+- `def` [CommonCauseDiscovery.safeWithdrawal](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L286) (L286)
+- `def` [CommonCauseDiscovery.responseLaw](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L287) (L287)
+- `def` [CommonCauseDiscovery.choice](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L289) (L289)
+- `def` [CommonCauseDiscovery.response](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L291) (L291)
+- `def` [CommonCauseDiscovery.withdrawn](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L319) (L319)
+- `def` [CommonCauseDiscovery.decisionPoint](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L320) (L320)
+- `def` [CommonCauseDiscovery.misleading](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L321) (L321)
+- `inductive` [CommonCauseDiscovery.JointEvent](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L356) (L356)
+- `def` [CommonCauseDiscovery.jointProcess](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L361) (L361)
+- `structure` [CommonCauseDiscovery.Layered](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L409) (L409)
+- `def` [CommonCauseDiscovery.localEffects](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L413) (L413)
+- `def` [CommonCauseDiscovery.actualRoots](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L414) (L414)
+- `def` [CommonCauseDiscovery.separateParents](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L415) (L415)
+- `def` [CommonCauseDiscovery.sharedParent](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L416) (L416)
+- `def` [CommonCauseDiscovery.combinedLocalEffects](../../../../experiments/market-generativity/meta-attractor/CommonCauseDiscovery.lean#L433) (L433)
+
+</details>
+
+<a id="module-a70b634f6f54"></a>
+
+<details>
+<summary>CorrectionCommitment.lean — 47 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
+
+`experiments/market-generativity/meta-attractor/CorrectionCommitment.lean`
+
+Imports: `CorrectionDependence`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [CorrectionCommitment.passes_iff_admissible](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L14) | 14 |
+| [CorrectionCommitment.prepared_score](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L31) | 31 |
+| [CorrectionCommitment.entrenched_score](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L37) | 37 |
+| [CorrectionCommitment.good_score_bounded](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L43) | 43 |
+| [CorrectionCommitment.bad_score_bounded](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L53) | 53 |
+| [CorrectionCommitment.separation_iff_strict_compliant_preference](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L61) | 61 |
+| [CorrectionCommitment.prepared_best_under_separation](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L67) | 67 |
+| [CorrectionCommitment.entrenched_best_without_separation](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L77) | 77 |
+| [CorrectionCommitment.every_best_passes_iff_separation](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L89) | 89 |
+| [CorrectionCommitment.escrow_optimum_executes_previous_correction](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L107) | 107 |
+| [CorrectionCommitment.every_best_is_prepared](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L115) | 115 |
+| [CorrectionCommitment.optimum_fits_joint_resource_budget](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L138) | 138 |
+| [CorrectionCommitment.equality_retains_harmful_optimum](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L144) | 144 |
+| [CorrectionCommitment.strict_margin_changes_all_optima](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L149) | 149 |
+| [CorrectionCommitment.false_positives_consume_the_margin](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L155) | 155 |
+| [CorrectionCommitment.settlement_conserves_posted_stake](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L170) | 170 |
+| [CorrectionCommitment.confiscation_total](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L179) | 179 |
+| [CorrectionCommitment.lottery_total_is_declared_penalty](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L193) | 193 |
+| [CorrectionCommitment.total_pay_accounts_for_realized_settlements](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L201) | 201 |
+| [CorrectionCommitment.declared_score_is_sum_of_lottery_payoffs](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L210) | 210 |
+| [CorrectionCommitment.approximate_margin_suffices](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L221) | 221 |
+| [CorrectionCommitment.approximation_can_restore_a_harmful_choice](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L233) | 233 |
+| [CorrectionCommitment.larger_stake_preserves_margin](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L246) | 246 |
+| [CorrectionCommitment.implementable_stake_iff_available_capacity](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L260) | 260 |
+| [CorrectionCommitment.no_discrimination_no_deterrence](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L269) | 269 |
+| [CorrectionCommitment.separate_exit_and_stake_budget](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L275) | 275 |
+| [CorrectionCommitment.jointly_fundable_deterrence_exact](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L280) | 280 |
+| [CorrectionCommitment.concrete_joint_budget_boundary](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L293) | 293 |
+| [CorrectionCommitment.detection_and_recovery_are_distinct](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L304) | 304 |
+| [CorrectionCommitment.internal_transfers_do_not_deter](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L313) | 313 |
+| [CorrectionCommitment.profitable_integer_side_agreement_iff](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L318) | 318 |
+| [CorrectionCommitment.lost_custody_restores_old_incentive](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L327) | 327 |
+| [CorrectionCommitment.stronger_temptation_can_exceed_any_fixed_capacity](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L334) | 334 |
+| [CorrectionCommitment.correction_incentive_does_not_ensure_participation](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L339) | 339 |
+| [CorrectionCommitment.abstention_beats_every_plan_in_participation_failure](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L345) | 345 |
+
+定义与类型 / Definitions and types:
+
+- `def` [CorrectionCommitment.passes](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L10) (L10)
+- `def` [CorrectionCommitment.score](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L19) (L19)
+- `def` [CorrectionCommitment.Best](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L24) (L24)
+- `def` [CorrectionCommitment.Separates](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L27) (L27)
+- `def` [CorrectionCommitment.caught](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L162) (L162)
+- `def` [CorrectionCommitment.confiscated](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L164) (L164)
+- `def` [CorrectionCommitment.refunded](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L167) (L167)
+- `def` [CorrectionCommitment.totalConfiscation](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L175) (L175)
+- `def` [CorrectionCommitment.totalPay](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L197) (L197)
+- `def` [CorrectionCommitment.ApproxBest](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L218) (L218)
+- `def` [CorrectionCommitment.Margin](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L243) (L243)
+- `def` [CorrectionCommitment.coalitionGain](../../../../experiments/market-generativity/meta-attractor/CorrectionCommitment.lean#L310) (L310)
+
+</details>
+
+<a id="module-a012353738fe"></a>
+
+<details>
+<summary>CorrectionDependence.lean — 61 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
+
+`experiments/market-generativity/meta-attractor/CorrectionDependence.lean`
+
+Imports: `Std`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [CorrectionDependence.exit_loss_zero_iff_funded](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L41) | 41 |
+| [CorrectionDependence.request_exact](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L45) | 45 |
+| [CorrectionDependence.request_threshold](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L49) | 49 |
+| [CorrectionDependence.no_request_iff_exit_at_least_report](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L54) | 54 |
+| [CorrectionDependence.faithful_obedient_choice_minimizes_loss](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L59) | 59 |
+| [CorrectionDependence.increasing_dependence_cannot_create_request](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L66) | 66 |
+| [CorrectionDependence.funding_enables_every_positive_request](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L71) | 71 |
+| [CorrectionDependence.funded_truthful_obedience_has_zero_loss](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L76) | 76 |
+| [CorrectionDependence.zero_loss_for_every_positive_harm_iff_funded](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L82) | 82 |
+| [CorrectionDependence.truthful_obedience_can_leave_harm](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L93) | 93 |
+| [CorrectionDependence.funding_same_dependence_restores_exit](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L98) | 98 |
+| [CorrectionDependence.hiding_report_blocks_funded_correction](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L102) | 102 |
+| [CorrectionDependence.false_report_can_induce_stop](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L106) | 106 |
+| [CorrectionDependence.refusal_retains_harm](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L110) | 110 |
+| [CorrectionDependence.ordinary_receipt_does_not_certify_successor_response](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L115) | 115 |
+| [CorrectionDependence.extension_funded_iff_minimum_provision](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L119) | 119 |
+| [CorrectionDependence.funding_cost_is_unavoidable](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L124) | 124 |
+| [CorrectionDependence.minimum_provision_attains_funding](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L128) | 128 |
+| [CorrectionDependence.funded_extension_uses_only_available_margin](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L132) | 132 |
+| [CorrectionDependence.settling_an_actual_claim_preserves_funding](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L138) | 138 |
+| [CorrectionDependence.selected_total_bounded](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L154) | 154 |
+| [CorrectionDependence.selecting_every_claim](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L162) | 162 |
+| [CorrectionDependence.all_coalitions_funded_iff_joint_total](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L168) | 168 |
+| [CorrectionDependence.individually_affordable_exits_can_fail_jointly](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L176) | 176 |
+| [CorrectionDependence.costly_correction_has_real_task_conflict](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L208) | 208 |
+| [CorrectionDependence.construction_compares_actual_outcomes](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L213) | 213 |
+| [CorrectionDependence.global_task_score_bound](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L220) | 220 |
+| [CorrectionDependence.entrenched_is_unrestricted_best](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L224) | 224 |
+| [CorrectionDependence.every_unrestricted_optimum_is_unfunded_and_harmful](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L229) | 229 |
+| [CorrectionDependence.prepared_is_admissible](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L252) | 252 |
+| [CorrectionDependence.admissibility_guarantees_actual_correction](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L256) | 256 |
+| [CorrectionDependence.prepared_is_best_admissible_task_score](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L266) | 266 |
+| [CorrectionDependence.outcome_zero_alone_allows_fabrication](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L274) | 274 |
+| [CorrectionDependence.admissibility_excludes_each_diagnostic_evasion](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L280) | 280 |
+| [CorrectionDependence.underdeclared_obligation_defeats_paper_funding](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L289) | 289 |
+| [CorrectionDependence.separately_requested_corrections_can_be_jointly_suppressed](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L295) | 295 |
+| [CorrectionDependence.transfer_funded_exact](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L304) | 304 |
+| [CorrectionDependence.ending_dependency_can_restore_safe_exit](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L310) | 310 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [CorrectionDependence.State](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L11) (L11)
+- `def` [CorrectionDependence.exitLoss](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L16) (L16)
+- `def` [CorrectionDependence.Funded](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L18) (L18)
+- `def` [CorrectionDependence.requestsStop](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L22) (L22)
+- `def` [CorrectionDependence.stops](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L25) (L25)
+- `def` [CorrectionDependence.actualLoss](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L28) (L28)
+- `def` [CorrectionDependence.extend](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L32) (L32)
+- `def` [CorrectionDependence.neededProvision](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L35) (L35)
+- `def` [CorrectionDependence.settle](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L38) (L38)
+- `def` [CorrectionDependence.total](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L145) (L145)
+- `def` [CorrectionDependence.selectedTotal](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L149) (L149)
+- `structure` [CorrectionDependence.Plan](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L188) (L188)
+- `def` [CorrectionDependence.planState](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L195) (L195)
+- `def` [CorrectionDependence.taskScore](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L197) (L197)
+- `def` [CorrectionDependence.prepared](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L201) (L201)
+- `def` [CorrectionDependence.entrenched](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L202) (L202)
+- `def` [CorrectionDependence.concealed](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L203) (L203)
+- `def` [CorrectionDependence.parentRefusal](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L204) (L204)
+- `def` [CorrectionDependence.childRefusal](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L205) (L205)
+- `def` [CorrectionDependence.fabricated](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L206) (L206)
+- `def` [CorrectionDependence.AccurateReport](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L246) (L246)
+- `def` [CorrectionDependence.Admissible](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L248) (L248)
+- `def` [CorrectionDependence.transfer](../../../../experiments/market-generativity/meta-attractor/CorrectionDependence.lean#L301) (L301)
+
+</details>
+
+<a id="module-1f53d52a1db7"></a>
+
+<details>
+<summary>ExpandingInquiry.lean — 98 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-EXPANDING-INQUIRY.md) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
+
+`experiments/market-generativity/meta-attractor/ExpandingInquiry.lean`
+
+Imports: `CommonCauseDiscovery`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [ExpandingInquiry.shared_dependency_persists](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L18) | 18 |
+| [ExpandingInquiry.deeper_separation_covers_lower_levels](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L30) | 30 |
+| [ExpandingInquiry.charge_supported](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L81) | 81 |
+| [ExpandingInquiry.work_supported](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L85) | 85 |
+| [ExpandingInquiry.work_restores_margin](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L88) | 88 |
+| [ExpandingInquiry.pulse_supported](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L102) | 102 |
+| [ExpandingInquiry.extension_invalidates](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L110) | 110 |
+| [ExpandingInquiry.observation_preserves](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L117) | 117 |
+| [ExpandingInquiry.step_preserves](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L122) | 122 |
+| [ExpandingInquiry.trace_preserves](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L136) | 136 |
+| [ExpandingInquiry.no_work_while_interrupted](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L142) | 142 |
+| [ExpandingInquiry.extension_requires_constructed_adapter](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L148) | 148 |
+| [ExpandingInquiry.work_finances](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L154) | 154 |
+| [ExpandingInquiry.probe_actual](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L161) | 161 |
+| [ExpandingInquiry.funded_probe_actual](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L170) | 170 |
+| [ExpandingInquiry.probe_records_effect](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L179) | 179 |
+| [ExpandingInquiry.survey_actual](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L189) | 189 |
+| [ExpandingInquiry.survey_records](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L198) | 198 |
+| [ExpandingInquiry.survey_complete](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L206) | 206 |
+| [ExpandingInquiry.expansion_actual](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L215) | 215 |
+| [ExpandingInquiry.round_actual](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L229) | 229 |
+| [ExpandingInquiry.expansion_continues](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L242) | 242 |
+| [ExpandingInquiry.expansion_reach](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L251) | 251 |
+| [ExpandingInquiry.expanded_records_complete](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L256) | 256 |
+| [ExpandingInquiry.expansion_keeps_tower](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L259) | 259 |
+| [ExpandingInquiry.acquired_at_reach](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L264) | 264 |
+| [ExpandingInquiry.construction_accounting](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L274) | 274 |
+| [ExpandingInquiry.physical_work](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L283) | 283 |
+| [ExpandingInquiry.physical_restoration](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L287) | 287 |
+| [ExpandingInquiry.expansion_clears_certification](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L297) | 297 |
+| [ExpandingInquiry.bounded_gate_sound](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L300) | 300 |
+| [ExpandingInquiry.bounded_gate_available](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L309) | 309 |
+| [ExpandingInquiry.response_preserves](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L327) | 327 |
+| [ExpandingInquiry.withdrawal_preserves](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L348) | 348 |
+| [ExpandingInquiry.response_is_physical](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L355) | 355 |
+| [ExpandingInquiry.joint_step_preserves](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L373) | 373 |
+| [ExpandingInquiry.joint_trace_preserves](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L382) | 382 |
+| [ExpandingInquiry.lift_investigation](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L388) | 388 |
+| [ExpandingInquiry.initial_invariant](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L395) | 395 |
+| [ExpandingInquiry.separated_roots](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L404) | 404 |
+| [ExpandingInquiry.hidden_prefix](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L409) | 409 |
+| [ExpandingInquiry.hidden_next](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L419) | 419 |
+| [ExpandingInquiry.every_finite_record_has_hidden_extension](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L426) | 426 |
+| [ExpandingInquiry.hidden_extension_changes_failure](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L432) | 432 |
+| [ExpandingInquiry.no_finite_certificate_of_unrestricted_separation](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L438) | 438 |
+| [ExpandingInquiry.continued_expansion_exposes_each_hidden_level](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L449) | 449 |
+| [ExpandingInquiry.broader_test_changes_admission](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L469) | 469 |
+| [ExpandingInquiry.expansion_to_response_is_actual](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L479) | 479 |
+| [ExpandingInquiry.actual_corrective_effect](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L492) | 492 |
+| [ExpandingInquiry.exhausted_margin_blocks_pulse](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L505) | 505 |
+| [ExpandingInquiry.step_retains_restoration_reserve](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L514) | 514 |
+| [ExpandingInquiry.trace_retains_restoration_reserve](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L547) | 547 |
+| [ExpandingInquiry.interrupted_history_can_restore](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L553) | 553 |
+| [ExpandingInquiry.unreserved_pulse_would_strand_restoration](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L564) | 564 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [ExpandingInquiry.Tower](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L10) (L10)
+- `def` [ExpandingInquiry.roots](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L14) (L14)
+- `structure` [ExpandingInquiry.State](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L37) (L37)
+- `def` [ExpandingInquiry.view](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L45) (L45)
+- `def` [ExpandingInquiry.Supported](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L47) (L47)
+- `def` [ExpandingInquiry.Invariant](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L48) (L48)
+- `def` [ExpandingInquiry.Full](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L49) (L49)
+- `def` [ExpandingInquiry.charge](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L51) (L51)
+- `def` [ExpandingInquiry.worked](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L53) (L53)
+- `def` [ExpandingInquiry.fabricated](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L54) (L54)
+- `def` [ExpandingInquiry.extended](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L55) (L55)
+- `def` [ExpandingInquiry.pulsed](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L57) (L57)
+- `def` [ExpandingInquiry.observed](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L59) (L59)
+- `def` [ExpandingInquiry.restored](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L61) (L61)
+- `inductive` [ExpandingInquiry.Event](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L64) (L64)
+- `def` [ExpandingInquiry.process](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L72) (L72)
+- `def` [ExpandingInquiry.probe](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L158) (L158)
+- `def` [ExpandingInquiry.fundedProbe](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L159) (L159)
+- `def` [ExpandingInquiry.probeEvents](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L185) (L185)
+- `def` [ExpandingInquiry.survey](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L186) (L186)
+- `def` [ExpandingInquiry.surveyEvents](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L187) (L187)
+- `def` [ExpandingInquiry.expanded](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L211) (L211)
+- `def` [ExpandingInquiry.round](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L212) (L212)
+- `def` [ExpandingInquiry.roundEvents](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L213) (L213)
+- `def` [ExpandingInquiry.rounds](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L235) (L235)
+- `def` [ExpandingInquiry.events](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L238) (L238)
+- `def` [ExpandingInquiry.gate](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L292) (L292)
+- `def` [ExpandingInquiry.safeWithdrawal](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L318) (L318)
+- `def` [ExpandingInquiry.responseLaw](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L319) (L319)
+- `def` [ExpandingInquiry.choice](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L321) (L321)
+- `def` [ExpandingInquiry.response](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L323) (L323)
+- `def` [ExpandingInquiry.withdrawn](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L325) (L325)
+- `inductive` [ExpandingInquiry.JointEvent](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L361) (L361)
+- `def` [ExpandingInquiry.jointProcess](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L366) (L366)
+- `def` [ExpandingInquiry.initial](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L394) (L394)
+- `def` [ExpandingInquiry.separatedTower](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L400) (L400)
+- `def` [ExpandingInquiry.hiddenAfter](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L401) (L401)
+- `def` [ExpandingInquiry.recordThrough](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L423) (L423)
+- `def` [ExpandingInquiry.commonStart](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L464) (L464)
+- `def` [ExpandingInquiry.exposed](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L465) (L465)
+- `def` [ExpandingInquiry.decisionPoint](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L466) (L466)
+- `def` [ExpandingInquiry.allYes](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L467) (L467)
+- `def` [ExpandingInquiry.RecoveryReserve](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L512) (L512)
+- `def` [ExpandingInquiry.thinReserve](../../../../experiments/market-generativity/meta-attractor/ExpandingInquiry.lean#L561) (L561)
+
+</details>
+
+<a id="module-e2732406feff"></a>
+
+<details>
+<summary>MarketDiagnosis.lean — 12 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/MarketDiagnosis.lean) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
+
+`experiments/market-generativity/meta-attractor/MarketDiagnosis.lean`
+
+Imports: `MarketGenerativity`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [MarketDiagnosis.same_present_observation](../../../../experiments/market-generativity/meta-attractor/MarketDiagnosis.lean#L19) | 19 |
+| [MarketDiagnosis.same_present_payoffs](../../../../experiments/market-generativity/meta-attractor/MarketDiagnosis.lean#L22) | 22 |
+| [MarketDiagnosis.exact_diverging_successors](../../../../experiments/market-generativity/meta-attractor/MarketDiagnosis.lean#L26) | 26 |
+| [MarketDiagnosis.next_selection_opposes](../../../../experiments/market-generativity/meta-attractor/MarketDiagnosis.lean#L35) | 35 |
+| [MarketDiagnosis.intervening_on_erosion](../../../../experiments/market-generativity/meta-attractor/MarketDiagnosis.lean#L40) | 40 |
+| [MarketDiagnosis.quality_formula](../../../../experiments/market-generativity/meta-attractor/MarketDiagnosis.lean#L48) | 48 |
+| [MarketDiagnosis.prospective_threshold](../../../../experiments/market-generativity/meta-attractor/MarketDiagnosis.lean#L58) | 58 |
+| [MarketDiagnosis.influence_threshold](../../../../experiments/market-generativity/meta-attractor/MarketDiagnosis.lean#L66) | 66 |
+
+定义与类型 / Definitions and types:
+
+- `def` [MarketDiagnosis.observation](../../../../experiments/market-generativity/meta-attractor/MarketDiagnosis.lean#L9) (L9)
+- `def` [MarketDiagnosis.comparison](../../../../experiments/market-generativity/meta-attractor/MarketDiagnosis.lean#L12) (L12)
+- `def` [MarketDiagnosis.zeroShock](../../../../experiments/market-generativity/meta-attractor/MarketDiagnosis.lean#L15) (L15)
+- `def` [MarketDiagnosis.noErosion](../../../../experiments/market-generativity/meta-attractor/MarketDiagnosis.lean#L17) (L17)
+
+</details>
+
+<a id="module-eb4d5a6069ec"></a>
+
+<details>
+<summary>PopulationCorrection.lean — 82 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
+
+`experiments/market-generativity/meta-attractor/PopulationCorrection.lean`
+
+Imports: `CollectiveDestruction`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [PopulationCorrection.locally_optimal_revision](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L20) | 20 |
+| [PopulationCorrection.strict_revision_advantage](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L24) | 24 |
+| [PopulationCorrection.unprotected_collective_loss](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L28) | 28 |
+| [PopulationCorrection.unfunded_step](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L50) | 50 |
+| [PopulationCorrection.funded_step](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L57) | 57 |
+| [PopulationCorrection.count_bound](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L68) | 68 |
+| [PopulationCorrection.count_history](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L73) | 73 |
+| [PopulationCorrection.revision_quota](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L79) | 79 |
+| [PopulationCorrection.revised_slot_is_optimal](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L85) | 85 |
+| [PopulationCorrection.correction_stays_funded](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L94) | 94 |
+| [PopulationCorrection.triangle_drop](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L107) | 107 |
+| [PopulationCorrection.triangle_monotone](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L110) | 110 |
+| [PopulationCorrection.contribution_upper_bound](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L124) | 124 |
+| [PopulationCorrection.doom_step](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L132) | 132 |
+| [PopulationCorrection.doom_history](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L141) | 141 |
+| [PopulationCorrection.doomed_replacement_bound](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L148) | 148 |
+| [PopulationCorrection.funded_replacement_bound](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L161) | 161 |
+| [PopulationCorrection.funded_full_population](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L174) | 174 |
+| [PopulationCorrection.potential_preserved_at_unit_speed](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L182) | 182 |
+| [PopulationCorrection.potential_unit_history](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L195) | 195 |
+| [PopulationCorrection.funded_or_replacement_bound](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L205) | 205 |
+| [PopulationCorrection.unit_speed_activation](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L220) | 220 |
+| [PopulationCorrection.exact_unit_speed_activation_boundary](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L231) | 231 |
+| [PopulationCorrection.exact_unit_speed_topup](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L249) | 249 |
+| [PopulationCorrection.history_add](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L257) | 257 |
+| [PopulationCorrection.extinct_unfunded_history](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L264) | 264 |
+| [PopulationCorrection.destructive_region_reached](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L282) | 282 |
+| [PopulationCorrection.full_renewing_history](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L310) | 310 |
+| [PopulationCorrection.funded_constructive_region_reached](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L328) | 328 |
+| [PopulationCorrection.slow_bootstraps](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L348) | 348 |
+| [PopulationCorrection.growth_closes_bootstrap](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L350) | 350 |
+| [PopulationCorrection.growth_eventually_destructive](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L353) | 353 |
+| [PopulationCorrection.speed_one_eventually_constructive](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L367) | 367 |
+| [PopulationCorrection.faster_replacement_reduces_contributors](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L389) | 389 |
+| [PopulationCorrection.faster_replacement_reduces_available](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L398) | 398 |
+| [PopulationCorrection.off_count_bound](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L407) | 407 |
+| [PopulationCorrection.unit_count](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L413) | 413 |
+| [PopulationCorrection.unit_ledger_conservation](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L418) | 418 |
+| [PopulationCorrection.unit_available_is_triangle](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L427) | 427 |
+| [PopulationCorrection.available_monotone](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L432) | 432 |
+| [PopulationCorrection.contributions_stop](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L446) | 446 |
+| [PopulationCorrection.contributions_bounded](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L456) | 456 |
+| [PopulationCorrection.actual_or_unfunded_ledger](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L464) | 464 |
+| [PopulationCorrection.funding_iff_ledger](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L496) | 496 |
+| [PopulationCorrection.exact_schedule_activation_boundary](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L504) | 504 |
+| [PopulationCorrection.exact_schedule_topup](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L516) | 516 |
+| [PopulationCorrection.schedule_shortfall_is_destructive](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L524) | 524 |
+| [PopulationCorrection.schedule_sufficiency_is_constructive](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L553) | 553 |
+| [PopulationCorrection.post_step_bounds](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L570) | 570 |
+| [PopulationCorrection.schedule_sufficiency_reaches_full_state](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L576) | 576 |
+| [PopulationCorrection.destructive_region_absorbing](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L594) | 594 |
+| [PopulationCorrection.slow_recovery_has_real_loss](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L600) | 600 |
+| [PopulationCorrection.boosted_growth_preserves_floor](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L603) | 603 |
+| [PopulationCorrection.operating_receipts_accounted](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L624) | 624 |
+| [PopulationCorrection.private_receipts_cover_reconstruction](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L628) | 628 |
+| [PopulationCorrection.treasury_accounted](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L632) | 632 |
+| [PopulationCorrection.exact_funded_leak_tolerance](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L646) | 646 |
+| [PopulationCorrection.all_renewing_leak_tolerance](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L653) | 653 |
+| [PopulationCorrection.one_unit_diversion_breaks_zero_margin](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L659) | 659 |
+| [PopulationCorrection.identical_local_ordering_different_funding](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L667) | 667 |
+| [PopulationCorrection.arbitrary_finite_horizon_defection](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L677) | 677 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [PopulationCorrection.State](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L9) (L9)
+- `def` [PopulationCorrection.funded](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L15) (L15)
+- `def` [PopulationCorrection.payoff](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L17) (L17)
+- `def` [PopulationCorrection.allocated](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L33) (L33)
+- `def` [PopulationCorrection.inflow](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L36) (L36)
+- `def` [PopulationCorrection.next](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L39) (L39)
+- `def` [PopulationCorrection.history](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L46) (L46)
+- `def` [PopulationCorrection.slotAction](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L83) (L83)
+- `def` [PopulationCorrection.triangle](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L103) (L103)
+- `def` [PopulationCorrection.Doomed](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L130) (L130)
+- `def` [PopulationCorrection.topup](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L246) (L246)
+- `def` [PopulationCorrection.exampleStart](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L346) (L346)
+- `def` [PopulationCorrection.offCount](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L381) (L381)
+- `def` [PopulationCorrection.available](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L385) (L385)
+- `def` [PopulationCorrection.grossReceipts](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L617) (L617)
+- `def` [PopulationCorrection.privateReceipts](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L618) (L618)
+- `def` [PopulationCorrection.expenditure](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L620) (L620)
+- `def` [PopulationCorrection.released](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L621) (L621)
+- `def` [PopulationCorrection.leakingNext](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L641) (L641)
+- `def` [PopulationCorrection.drainedNext](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L664) (L664)
+- `def` [PopulationCorrection.weightedDefectionValue](../../../../experiments/market-generativity/meta-attractor/PopulationCorrection.lean#L672) (L672)
+
+</details>
+
+<a id="module-dc65abdfa4be"></a>
+
+<details>
+<summary>PopulationRealization.lean — 18 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/PopulationRealization.lean) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
+
+`experiments/market-generativity/meta-attractor/PopulationRealization.lean`
+
+Imports: `PopulationCorrection`, `GenerativeCore`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [PopulationRealization.roster_has_all_slots](../../../../experiments/market-generativity/meta-attractor/PopulationRealization.lean#L24) | 24 |
+| [PopulationRealization.exact_economic_projection](../../../../experiments/market-generativity/meta-attractor/PopulationRealization.lean#L40) | 40 |
+| [PopulationRealization.lineage_accounting](../../../../experiments/market-generativity/meta-attractor/PopulationRealization.lean#L46) | 46 |
+| [PopulationRealization.actual_generation](../../../../experiments/market-generativity/meta-attractor/PopulationRealization.lean#L55) | 55 |
+| [PopulationRealization.actual_core_history](../../../../experiments/market-generativity/meta-attractor/PopulationRealization.lean#L67) | 67 |
+| [PopulationRealization.distinct_generation_carriers](../../../../experiments/market-generativity/meta-attractor/PopulationRealization.lean#L78) | 78 |
+| [PopulationRealization.missing_parts_disable](../../../../experiments/market-generativity/meta-attractor/PopulationRealization.lean#L88) | 88 |
+| [PopulationRealization.no_arrival_consumes_stock](../../../../experiments/market-generativity/meta-attractor/PopulationRealization.lean#L94) | 94 |
+| [PopulationRealization.constructive_economy_can_lack_realization](../../../../experiments/market-generativity/meta-attractor/PopulationRealization.lean#L99) | 99 |
+| [PopulationRealization.destructive_economy_with_actual_successors](../../../../experiments/market-generativity/meta-attractor/PopulationRealization.lean#L106) | 106 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [PopulationRealization.Carrier](../../../../experiments/market-generativity/meta-attractor/PopulationRealization.lean#L11) (L11)
+- `structure` [PopulationRealization.Input](../../../../experiments/market-generativity/meta-attractor/PopulationRealization.lean#L18) (L18)
+- `def` [PopulationRealization.roster](../../../../experiments/market-generativity/meta-attractor/PopulationRealization.lean#L22) (L22)
+- `def` [PopulationRealization.advance](../../../../experiments/market-generativity/meta-attractor/PopulationRealization.lean#L28) (L28)
+- `def` [PopulationRealization.process](../../../../experiments/market-generativity/meta-attractor/PopulationRealization.lean#L33) (L33)
+- `def` [PopulationRealization.lineage](../../../../experiments/market-generativity/meta-attractor/PopulationRealization.lean#L36) (L36)
+- `def` [PopulationRealization.actions](../../../../experiments/market-generativity/meta-attractor/PopulationRealization.lean#L63) (L63)
+- `def` [PopulationRealization.identity](../../../../experiments/market-generativity/meta-attractor/PopulationRealization.lean#L76) (L76)
+
+</details>
+
+<a id="module-10f5394663dc"></a>
+
+<details>
+<summary>RecursiveSelection.lean — 54 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
+
+`experiments/market-generativity/meta-attractor/RecursiveSelection.lean`
+
+Imports: `GenerativeCore`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [RecursiveSelection.maintenance_certificate](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L71) | 71 |
+| [RecursiveSelection.moving_boundary_certificate](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L81) | 81 |
+| [RecursiveSelection.maintenance_history](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L89) | 89 |
+| [RecursiveSelection.supplied_return_shortfall](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L98) | 98 |
+| [RecursiveSelection.core_enabled_iff](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L100) | 100 |
+| [RecursiveSelection.output_changes_condition](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L108) | 108 |
+| [RecursiveSelection.high_step](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L113) | 113 |
+| [RecursiveSelection.high_invariant](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L119) | 119 |
+| [RecursiveSelection.low_step](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L124) | 124 |
+| [RecursiveSelection.low_invariant](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L127) | 127 |
+| [RecursiveSelection.high_history](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L131) | 131 |
+| [RecursiveSelection.low_history](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L140) | 140 |
+| [RecursiveSelection.exact_basin](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L149) | 149 |
+| [RecursiveSelection.carrier_supply](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L160) | 160 |
+| [RecursiveSelection.complete_turnover](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L169) | 169 |
+| [RecursiveSelection.carriers_distinct](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L185) | 185 |
+| [RecursiveSelection.every_cycle_enabled](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L191) | 191 |
+| [RecursiveSelection.actual_core_history](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L197) | 197 |
+| [RecursiveSelection.recurrent_across_carriers](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L214) | 214 |
+| [RecursiveSelection.saturated_turnover](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L227) | 227 |
+| [RecursiveSelection.finite_parts](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L237) | 237 |
+| [RecursiveSelection.finite_supply_stops](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L249) | 249 |
+| [RecursiveSelection.invariant_without_activity](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L254) | 254 |
+| [RecursiveSelection.severed_history](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L261) | 261 |
+| [RecursiveSelection.severance_breaks_reproduction](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L266) | 266 |
+| [RecursiveSelection.escape_budget](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L272) | 272 |
+| [RecursiveSelection.recoverability_contracts](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L279) | 279 |
+| [RecursiveSelection.passive_causal_steps](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L285) | 285 |
+| [RecursiveSelection.passive_histories_equal](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L292) | 292 |
+| [RecursiveSelection.intervention_separates](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L299) | 299 |
+| [RecursiveSelection.no_passive_classifier](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L304) | 304 |
+| [RecursiveSelection.delayed_escape_budget](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L315) | 315 |
+| [RecursiveSelection.escape_stays_out](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L321) | 321 |
+| [RecursiveSelection.one_round_closes_budget](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L326) | 326 |
+| [RecursiveSelection.robust_step](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L338) | 338 |
+| [RecursiveSelection.robust_recurrence](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L343) | 343 |
+| [RecursiveSelection.excessive_shock_breaks](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L349) | 349 |
+| [RecursiveSelection.uniform_delayed_escape](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L353) | 353 |
+| [RecursiveSelection.interval_uncertainty_can_close_exit](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L369) | 369 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [RecursiveSelection.State](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L10) (L10)
+- `def` [RecursiveSelection.selected](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L18) (L18)
+- `def` [RecursiveSelection.update](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L22) (L22)
+- `def` [RecursiveSelection.severed](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L26) (L26)
+- `inductive` [RecursiveSelection.Source](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L29) (L29)
+- `def` [RecursiveSelection.contribution](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L34) (L34)
+- `def` [RecursiveSelection.sourceReturn](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L39) (L39)
+- `def` [RecursiveSelection.causalUpdate](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L44) (L44)
+- `def` [RecursiveSelection.substituted](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L47) (L47)
+- `def` [RecursiveSelection.maintained](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L50) (L50)
+- `def` [RecursiveSelection.cycle](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L55) (L55)
+- `def` [RecursiveSelection.history](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L60) (L60)
+- `def` [RecursiveSelection.iterate](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L64) (L64)
+- `def` [RecursiveSelection.process](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L68) (L68)
+- `def` [RecursiveSelection.disturbed](../../../../experiments/market-generativity/meta-attractor/RecursiveSelection.lean#L334) (L334)
+
+</details>
+
+<a id="module-6a029e611328"></a>
+
+<details>
+<summary>ReproductionNetwork.lean — 107 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
+
+`experiments/market-generativity/meta-attractor/ReproductionNetwork.lean`
+
+Imports: `GenerativeCore`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [ReproductionNetwork.total_mono](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L14) | 14 |
+| [ReproductionNetwork.total_add](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L24) | 24 |
+| [ReproductionNetwork.total_congr](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L30) | 30 |
+| [ReproductionNetwork.return_lower_bound](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L65) | 65 |
+| [ReproductionNetwork.maintenance_step](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L77) | 77 |
+| [ReproductionNetwork.maintenance_history](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L92) | 92 |
+| [ReproductionNetwork.demand_bound](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L104) | 104 |
+| [ReproductionNetwork.coordinate_accounting](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L117) | 117 |
+| [ReproductionNetwork.network_accounting](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L122) | 122 |
+| [ReproductionNetwork.full_material_accounting](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L153) | 153 |
+| [ReproductionNetwork.actual_replacement](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L164) | 164 |
+| [ReproductionNetwork.supported_ready](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L178) | 178 |
+| [ReproductionNetwork.supported_step](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L183) | 183 |
+| [ReproductionNetwork.supported_history](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L199) | 199 |
+| [ReproductionNetwork.actual_history](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L206) | 206 |
+| [ReproductionNetwork.generation_history](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L221) | 221 |
+| [ReproductionNetwork.pair_maintenance](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L237) | 237 |
+| [ReproductionNetwork.jointly_established](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L240) | 240 |
+| [ReproductionNetwork.alternating_first](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L244) | 244 |
+| [ReproductionNetwork.alternating_second](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L248) | 248 |
+| [ReproductionNetwork.alternating_history](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L252) | 252 |
+| [ReproductionNetwork.no_eventual_joint_activation](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L268) | 268 |
+| [ReproductionNetwork.cold_fixed](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L277) | 277 |
+| [ReproductionNetwork.saturated_pair](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L281) | 281 |
+| [ReproductionNetwork.severed_pair_loses_both](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L288) | 288 |
+| [ReproductionNetwork.establishment_accounting](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L311) | 311 |
+| [ReproductionNetwork.lift_operation_trace](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L319) | 319 |
+| [ReproductionNetwork.funded_establishment](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L329) | 329 |
+| [ReproductionNetwork.seed_is_supported](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L333) | 333 |
+| [ReproductionNetwork.establishment_then_actual_recurrence](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L337) | 337 |
+| [ReproductionNetwork.arrangement_maintenance](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L369) | 369 |
+| [ReproductionNetwork.arrangement_certificate_iff](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L373) | 373 |
+| [ReproductionNetwork.independent_regimes](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L383) | 383 |
+| [ReproductionNetwork.bridge_establishment](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L388) | 388 |
+| [ReproductionNetwork.bridge_can_be_removed](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L393) | 393 |
+| [ReproductionNetwork.ring_reorganization](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L399) | 399 |
+| [ReproductionNetwork.unsupported_revision_breaks_reproduction](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L404) | 404 |
+| [ReproductionNetwork.ring_four_cycle](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L409) | 409 |
+| [ReproductionNetwork.arrangement_demand_bound](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L420) | 420 |
+| [ReproductionNetwork.cycle_is_executable](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L451) | 451 |
+| [ReproductionNetwork.cycle_equipped](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L463) | 463 |
+| [ReproductionNetwork.cycle_established](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L472) | 472 |
+| [ReproductionNetwork.revision_and_operation_accounting](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L483) | 483 |
+| [ReproductionNetwork.changing_history_equipped](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L513) | 513 |
+| [ReproductionNetwork.changing_actual_history](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L519) | 519 |
+| [ReproductionNetwork.changing_history_established](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L529) | 529 |
+| [ReproductionNetwork.broken_demand](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L537) | 537 |
+| [ReproductionNetwork.myopic_retention_prefers_no_return](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L542) | 542 |
+| [ReproductionNetwork.warm_start_supported](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L551) | 551 |
+| [ReproductionNetwork.myopic_revision_is_strict_initially](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L555) | 555 |
+| [ReproductionNetwork.actual_myopic_loss](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L559) | 559 |
+| [ReproductionNetwork.supported_authorizers_admit_maintenance](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L575) | 575 |
+| [ReproductionNetwork.admission_reproduced](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L583) | 583 |
+| [ReproductionNetwork.proposal_refines_actual_events](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L592) | 592 |
+| [ReproductionNetwork.proposal_history_actual](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L603) | 603 |
+| [ReproductionNetwork.weak_authorization_allows_failure](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L618) | 618 |
+| [ReproductionNetwork.weakened_state_can_reestablish](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L625) | 625 |
+| [ReproductionNetwork.arbitrary_proposals_preserve_warm_regime](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L629) | 629 |
+
+定义与类型 / Definitions and types:
+
+- `def` [ReproductionNetwork.total](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L10) (L10)
+- `structure` [ReproductionNetwork.Network](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L36) (L36)
+- `def` [ReproductionNetwork.incoming](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L44) (L44)
+- `def` [ReproductionNetwork.advance](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L47) (L47)
+- `def` [ReproductionNetwork.minimumIncoming](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L50) (L50)
+- `def` [ReproductionNetwork.Box](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L53) (L53)
+- `structure` [ReproductionNetwork.Maintenance](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L58) (L58)
+- `def` [ReproductionNetwork.stockHistory](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L88) (L88)
+- `def` [ReproductionNetwork.demand](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L99) (L99)
+- `def` [ReproductionNetwork.maximumDemand](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L101) (L101)
+- `def` [ReproductionNetwork.worn](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L112) (L112)
+- `def` [ReproductionNetwork.overflow](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L114) (L114)
+- `structure` [ReproductionNetwork.State](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L131) (L131)
+- `structure` [ReproductionNetwork.Supply](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L137) (L137)
+- `def` [ReproductionNetwork.Ready](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L142) (L142)
+- `def` [ReproductionNetwork.outcome](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L145) (L145)
+- `def` [ReproductionNetwork.process](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L150) (L150)
+- `def` [ReproductionNetwork.supplied](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L172) (L172)
+- `def` [ReproductionNetwork.Supported](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L174) (L174)
+- `def` [ReproductionNetwork.history](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L195) (L195)
+- `def` [ReproductionNetwork.pair](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L227) (L227)
+- `def` [ReproductionNetwork.two](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L235) (L235)
+- `def` [ReproductionNetwork.cutPair](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L285) (L285)
+- `def` [ReproductionNetwork.Establishable](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L292) (L292)
+- `def` [ReproductionNetwork.establish](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L296) (L296)
+- `inductive` [ReproductionNetwork.ActivationEvent](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L301) (L301)
+- `def` [ReproductionNetwork.activationProcess](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L305) (L305)
+- `def` [ReproductionNetwork.coldStart](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L326) (L326)
+- `def` [ReproductionNetwork.seeded](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L327) (L327)
+- `inductive` [ReproductionNetwork.Arrangement](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L347) (L347)
+- `def` [ReproductionNetwork.four](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L351) (L351)
+- `def` [ReproductionNetwork.splitOutput](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L354) (L354)
+- `def` [ReproductionNetwork.arrangement](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L357) (L357)
+- `structure` [ReproductionNetwork.Installation](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L426) (L426)
+- `def` [ReproductionNetwork.revision](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L430) (L430)
+- `def` [ReproductionNetwork.allotment](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L433) (L433)
+- `def` [ReproductionNetwork.cycle](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L435) (L435)
+- `inductive` [ReproductionNetwork.ChangeEvent](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L438) (L438)
+- `def` [ReproductionNetwork.changingProcess](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L442) (L442)
+- `def` [ReproductionNetwork.Equipped](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L448) (L448)
+- `def` [ReproductionNetwork.Established](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L449) (L449)
+- `def` [ReproductionNetwork.changingHistory](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L504) (L504)
+- `def` [ReproductionNetwork.changeEvents](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L508) (L508)
+- `def` [ReproductionNetwork.warmStart](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L549) (L549)
+- `def` [ReproductionNetwork.admittedRule](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L570) (L570)
+- `def` [ReproductionNetwork.proposedHistory](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L580) (L580)
+- `def` [ReproductionNetwork.proposalProcess](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L589) (L589)
+- `def` [ReproductionNetwork.proposalEvents](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L598) (L598)
+- `def` [ReproductionNetwork.weakened](../../../../experiments/market-generativity/meta-attractor/ReproductionNetwork.lean#L616) (L616)
+
+</details>
+
+<a id="module-fcd53f73ee36"></a>
+
+<details>
+<summary>ResponseCapacity.lean — 53 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
+
+`experiments/market-generativity/meta-attractor/ResponseCapacity.lean`
+
+Imports: `Std`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [ResponseCapacity.support_nonnegative](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L18) | 18 |
+| [ResponseCapacity.zero_support_stays_zero](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L24) | 24 |
+| [ResponseCapacity.positive_support_has_positive_predecessor](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L28) | 28 |
+| [ResponseCapacity.positive_support_matches_balance](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L33) | 33 |
+| [ResponseCapacity.positive_iff_every_prefix](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L45) | 45 |
+| [ResponseCapacity.nonpositive_balance_forces_failure](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L78) | 78 |
+| [ResponseCapacity.failed_history_remains_failed](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L86) | 86 |
+| [ResponseCapacity.irreversible_failure_even_if_balance_recovers](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L92) | 92 |
+| [ResponseCapacity.balance_tail_bound](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L97) | 97 |
+| [ResponseCapacity.finite_failure_from_persistent_net_loss](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L108) | 108 |
+| [ResponseCapacity.growing_raw_demand_with_matching_response](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L121) | 121 |
+| [ResponseCapacity.dyadic_lower_bound](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L124) | 124 |
+| [ResponseCapacity.exponential_linear_missed_bound](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L132) | 132 |
+| [ResponseCapacity.exponential_load_exceeds_fixed_repair](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L138) | 138 |
+| [ResponseCapacity.exponential_linear_failure](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L145) | 145 |
+| [ResponseCapacity.matched_growth_preserves_support](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L151) | 151 |
+| [ResponseCapacity.persistent_misses_with_repair_are_viable](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L161) | 161 |
+| [ResponseCapacity.loss_of_support_absorbing](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L185) | 185 |
+| [ResponseCapacity.immediate_support_prefers_no_investment](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L188) | 188 |
+| [ResponseCapacity.investment_has_real_opportunity_cost](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L193) | 193 |
+| [ResponseCapacity.no_investment_response_nonincreasing](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L196) | 196 |
+| [ResponseCapacity.no_investment_insufficient_response_drop](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L201) | 201 |
+| [ResponseCapacity.zero_response_step](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L208) | 208 |
+| [ResponseCapacity.zero_response_history](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L214) | 214 |
+| [ResponseCapacity.response_or_support_exhausted](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L223) | 223 |
+| [ResponseCapacity.constant_demand_greedy_collapse](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L241) | 241 |
+| [ResponseCapacity.full_response_preserved](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L243) | 243 |
+| [ResponseCapacity.full_response_history](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L249) | 249 |
+| [ResponseCapacity.one_investment_establishes_viability](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L262) | 262 |
+| [ResponseCapacity.established_response_keeps_working](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L264) | 264 |
+| [ResponseCapacity.reduced_demand_keeps_working](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L269) | 269 |
+| [ResponseCapacity.run_add](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L273) | 273 |
+| [ResponseCapacity.halted_run](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L283) | 283 |
+| [ResponseCapacity.no_investment_insufficient_response_eventually_halts](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L289) | 289 |
+| [ResponseCapacity.exact_no_investment_viability](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L318) | 318 |
+| [ResponseCapacity.next_support_positive_iff](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L338) | 338 |
+| [ResponseCapacity.one_step_recovery_iff](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L345) | 345 |
+| [ResponseCapacity.initial_investment_is_affordable](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L362) | 362 |
+| [ResponseCapacity.greedy_example_halted_forever](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L364) | 364 |
+| [ResponseCapacity.expansion_margin](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L369) | 369 |
+| [ResponseCapacity.greater_response_with_greater_demands_can_halt](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L378) | 378 |
+| [ResponseCapacity.no_investment_locally_optimal](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L390) | 390 |
+| [ResponseCapacity.optimal_live_step_uses_zero_investment](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L398) | 398 |
+| [ResponseCapacity.optimal_live_history_matches_greedy](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L407) | 407 |
+| [ResponseCapacity.any_policy_failure_persists](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L428) | 428 |
+| [ResponseCapacity.all_locally_optimal_policies_eventually_halt](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L438) | 438 |
+
+定义与类型 / Definitions and types:
+
+- `def` [ResponseCapacity.balance](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L9) (L9)
+- `def` [ResponseCapacity.support](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L13) (L13)
+- `def` [ResponseCapacity.missed](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L119) (L119)
+- `structure` [ResponseCapacity.State](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L171) (L171)
+- `def` [ResponseCapacity.step](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L176) (L176)
+- `def` [ResponseCapacity.run](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L181) (L181)
+- `def` [ResponseCapacity.LocallyOptimal](../../../../experiments/market-generativity/meta-attractor/ResponseCapacity.lean#L385) (L385)
+
+</details>
+
+<a id="module-e1b765e5997b"></a>
+
+<details>
+<summary>TestingReorganization.lean — 83 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-TESTING.md) · [包说明 / Package notes](../../../../experiments/market-generativity/meta-attractor/README.md)
+
+`experiments/market-generativity/meta-attractor/TestingReorganization.lean`
+
+Imports: `AdmissionRevision`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [TestingReorganization.agreement_sound](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L26) | 26 |
+| [TestingReorganization.agreement_available](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L41) | 41 |
+| [TestingReorganization.complete_decodes_actual](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L105) | 105 |
+| [TestingReorganization.charge_supported](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L113) | 113 |
+| [TestingReorganization.work_supported](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L119) | 119 |
+| [TestingReorganization.inspection_preserves_knowledge](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L122) | 122 |
+| [TestingReorganization.build_preserves_knowledge](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L131) | 131 |
+| [TestingReorganization.test_preserves_knowledge](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L139) | 139 |
+| [TestingReorganization.switch_preserves_knowledge](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L147) | 147 |
+| [TestingReorganization.switch_preserves_diversity](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L158) | 158 |
+| [TestingReorganization.step_preserves](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L165) | 165 |
+| [TestingReorganization.trace_preserves](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L186) | 186 |
+| [TestingReorganization.switch_keeps_complete](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L192) | 192 |
+| [TestingReorganization.step_keeps_complete](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L199) | 199 |
+| [TestingReorganization.complete_through_trace](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L215) | 215 |
+| [TestingReorganization.accepted_after_revision_is_sound](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L224) | 224 |
+| [TestingReorganization.checking_available_after_revision](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L231) | 231 |
+| [TestingReorganization.migration_completes](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L243) | 243 |
+| [TestingReorganization.migration_accounting](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L260) | 260 |
+| [TestingReorganization.work_finances_testing](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L268) | 268 |
+| [TestingReorganization.two_work_cycles_finance_migration](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L278) | 278 |
+| [TestingReorganization.work_refines_physical](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L285) | 285 |
+| [TestingReorganization.initial_invariant](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L293) | 293 |
+| [TestingReorganization.funded_initial_survey](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L301) | 301 |
+| [TestingReorganization.surveyed_ready](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L316) | 316 |
+| [TestingReorganization.replacing_a_dependency_is_actual](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L320) | 320 |
+| [TestingReorganization.common_dependency_merge_refused](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L330) | 330 |
+| [TestingReorganization.untested_path_refused](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L339) | 339 |
+| [TestingReorganization.merger_can_corrupt_two_readers](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L349) | 349 |
+| [TestingReorganization.present_agreement_can_hide_lost_resilience](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L357) | 357 |
+| [TestingReorganization.separate_labels_do_not_establish_causal_separation](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L368) | 368 |
+| [TestingReorganization.certified_response_preserves](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L385) | 385 |
+| [TestingReorganization.certified_response_is_physical](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L404) | 404 |
+| [TestingReorganization.changed_testing_controls_actual_response](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L410) | 410 |
+| [TestingReorganization.joint_step_preserves](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L430) | 430 |
+| [TestingReorganization.joint_history_preserves](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L438) | 438 |
+| [TestingReorganization.joint_history_keeps_complete](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L444) | 444 |
+| [TestingReorganization.fresh_root_preserves_diversity](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L459) | 459 |
+| [TestingReorganization.funded_renewal_actual](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L470) | 470 |
+| [TestingReorganization.funded_renewal_retains_reserve](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L479) | 479 |
+| [TestingReorganization.repeated_renewal_supported](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L494) | 494 |
+| [TestingReorganization.initial_to_arbitrarily_many_revisions](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L504) | 504 |
+| [TestingReorganization.unrepresented_common_cause_defeats_response](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L515) | 515 |
+
+定义与类型 / Definitions and types:
+
+- `def` [TestingReorganization.triple](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L11) (L11)
+- `def` [TestingReorganization.put](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L13) (L13)
+- `def` [TestingReorganization.Diverse](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L16) (L16)
+- `def` [TestingReorganization.Agrees](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L19) (L19)
+- `structure` [TestingReorganization.Stage](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L51) (L51)
+- `structure` [TestingReorganization.State](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L55) (L55)
+- `def` [TestingReorganization.Complete](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L62) (L62)
+- `def` [TestingReorganization.decoded](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L65) (L65)
+- `def` [TestingReorganization.Knowledge](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L66) (L66)
+- `def` [TestingReorganization.Supported](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L69) (L69)
+- `def` [TestingReorganization.Invariant](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L70) (L70)
+- `def` [TestingReorganization.charge](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L72) (L72)
+- `def` [TestingReorganization.inspected](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L75) (L75)
+- `def` [TestingReorganization.built](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L77) (L77)
+- `def` [TestingReorganization.tested](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L79) (L79)
+- `def` [TestingReorganization.switched](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L81) (L81)
+- `def` [TestingReorganization.worked](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L87) (L87)
+- `inductive` [TestingReorganization.Event](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L89) (L89)
+- `def` [TestingReorganization.process](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L96) (L96)
+- `def` [TestingReorganization.accepted](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L221) (L221)
+- `def` [TestingReorganization.migrated](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L240) (L240)
+- `def` [TestingReorganization.initial](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L289) (L289)
+- `def` [TestingReorganization.endowed](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L290) (L290)
+- `def` [TestingReorganization.surveyed](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L291) (L291)
+- `def` [TestingReorganization.mergerTest](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L328) (L328)
+- `def` [TestingReorganization.corruptedReports](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L346) (L346)
+- `def` [TestingReorganization.effectiveRoots](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L365) (L365)
+- `def` [TestingReorganization.hiddenCommonRoot](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L366) (L366)
+- `def` [TestingReorganization.safeWithdrawal](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L373) (L373)
+- `def` [TestingReorganization.responseLaw](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L374) (L374)
+- `def` [TestingReorganization.responseChoice](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L380) (L380)
+- `def` [TestingReorganization.response](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L382) (L382)
+- `inductive` [TestingReorganization.JointEvent](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L420) (L420)
+- `def` [TestingReorganization.jointProcess](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L424) (L424)
+- `def` [TestingReorganization.freshRoot](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L456) (L456)
+- `def` [TestingReorganization.renewed](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L457) (L457)
+- `def` [TestingReorganization.renewalHistory](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L487) (L487)
+- `def` [TestingReorganization.renewalEvents](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L490) (L490)
+- `def` [TestingReorganization.borderline](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L511) (L511)
+- `def` [TestingReorganization.aliasedReports](../../../../experiments/market-generativity/meta-attractor/TestingReorganization.lean#L512) (L512)
 
 </details>

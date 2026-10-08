@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-08",
+  "scope": "Narrow correspondence correction for intervention-dependent maintenance target rebasing; existing J3 and execution mechanisms reused.",
+  "navigation_edits": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-CORRESPONDENCE.md",
+      "edit_kind": "replace-ambiguous-paragraph",
+      "previous_content": "目标事件之外也可能仍有严重需要和其他回应理由。原通道不能工作，只能改变这项特定维护任务的目标；不能据此抹掉 J3 的其他救助或修复要求，也不能宣告 CP 请求全部消失。",
+      "owned_content": "目标事件之外也可能仍有严重需要和其他回应理由。这里的原通道失效，须按任务内容和有根据配对的比较条件判断；不能把本次接管自身撤掉旧支持后的能力，直接代回原任务以缩小目标。当前不能工作既不证明原交付已经发生，也不独自解除维护、修复或紧急重议的要求；CP 请求同样不能因此被抹去。[后续对应检验](MAINTENANCE-BASELINE-INTEGRATION.md)明确区分能力下降、原任务履行与有根据的任务结束，保留真正完成后退役的正例。",
+      "before_sha256": "67f755850816ba92ee445ef1b93282f83d6074c58d2333a232aa37b6389a6314",
+      "after_sha256": "6dd1dcf35ccff4cf3665cd3ffac0d0fc0379ec67caecc06e2774a24c3fe5ea8f",
+      "other_content_preserved": true,
+      "prior_version_read": true,
+      "reading_basis": "Previous fully read version matched 67f755850816ba92ee445ef1b93282f83d6074c58d2333a232aa37b6389a6314 before this one-paragraph correction."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "owned_content": "<a id=\"maintenance-baseline\"></a>\n\n## 接管不能通过缩小目标自报履行 / A changed capability is not completed maintenance\n\n2026-10-08后续。[本轮对应纠错、论证与反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md)新增4项Lean定理／13项审计：接管实际撤掉原通道后，若按当前受损能力重算维护目标，可以得到通过的空目标，却仍未兑现原保护。需求未消失，缺少的是交付。这纠正旧对应说明的歧义，不反驳原ChanceAdequacy定理，也不增加一条新的J3。\n\n正确接续允许真正完成：原目标的每个相关情形，应由同一任务的真实已完成交付或修改后仍待兑现的内容承接；再由真实记录对应和当前履行取得原任务的履行及机会质量界。两个正例实际执行原单路或并行交付，再关闭旧线路，保留完成记录。任务可以结束，旧设备不因此必须永存。\n\nCurrent feasibility, fulfillment of the specified undertaking and justified revision or discharge are different judgments within the same history. A legitimate emergency change may leave an original result unfulfilled without making the whole action wrong. Equally, removing capability does not itself prove completion or create permission to withdraw. The task's validity, scope and remaining grounds must be assessed rather than assumed from an old numerical baseline.\n\n本轮质量统计描述整段一次任务的交付事件，不表示退役后仍有持续能力。没有新长期继任设施、连续无断供或实际截止保证；自然失效、真实疗愈、有效拒绝和合理解除均不能由一个布尔标签代替。已有21项导入定理／55项审计另计，29项产物及三个附加例保留。[证明记录](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-PROOF.md)列明条件与依赖。\n\nThis task-specific diagnostic closes locally. Existing evidence renewal, joint execution, versioned handoff and revocation mechanisms remain completed resources. Real-world correspondence still needs evidence. The next central normative question returns to adequate chances and justified discretion when no protected prior undertaking supplies a baseline; neither a new controller nor an arbitrary weight settles it.",
+      "before_sha256": "c2de15e795e2db5939fb70fcb0e981012b2b9cb5922a5fc033088cb2df56c0d6",
+      "after_sha256": "8a0fe64d18fb5ea8b2c6c603ebad0da4e18c928209c278242f386ab371bfe19e",
+      "other_content_preserved": true
+    },
+    {
+      "path": "RESEARCH.md",
+      "owned_content": "**维护目标重算的对应纠错 / Correcting maintenance-target rebasing，2026-10-08。** [新实查与反审](_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md)新增4项Lean定理／13项审计：先撤支承再用受损能力缩小目标可误报履行；同任务真实完成后退役则有正例。/ Twenty-one imported theorems / 55 audits remain separate. This corrects one task interpretation, not J3 or the old theorem. Completed mechanisms are reused; next central work returns to adequate initial chances and justified discretion.",
+      "before_sha256": "2045773eca6cc9c24635e2b5b8eed86651e6caba30923f17e70eba4d5eaf7e0b",
+      "after_sha256": "e8b888dea9d497a9b293cbc7386d914f4b66e7e84e48d8921bec1f9c6b554c88",
+      "other_content_preserved": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "owned_content": "**能力下降与履行不能混同 / Lost capacity is not fulfillment，2026-10-08。** [维护目标的自我改写检验](unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md#maintenance-baseline)新增4项Lean定理／13项审计，保留真实完成后合法结束。/ Actual withdrawal can empty a recomputed target without delivering the warranted original task; the finite completion record does not certify continuous future supply.",
+      "before_sha256": "12428f3411be6f0211d950e7247082efb0d2b996bb8af9676c7cccc98fa990b6",
+      "after_sha256": "82df9b600a031522e7a8b3685f8df58f4fb4f22ba5e59bd33a29018257116bba",
+      "other_content_preserved": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "owned_content": "**维护参照纠错 / Maintenance reference correction，2026-10-08。** [论证、4项新定理／13项审计及反审](MAINTENANCE-BASELINE-INTEGRATION.md)检查干预后重算目标的空过关，以及真实交付后退役；21项导入定理／55项审计分列。/ Existing J3, risk-reference and changing-execution results are credited; this is a scoped correspondence correction.",
+      "before_sha256": "486139e02180bdb737b0cfedbb8ac8f5a7449d42cef796a98c2a35e6cee7e69f",
+      "after_sha256": "8649cf3ac900bc7bb01c633ccdfa056284bdb3fe067fa45a3d1a0ebf5ae77cda",
+      "other_content_preserved": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "owned_content": "**任务内容不能被自身干预悄然改写 / Task content through intervention，2026-10-08。** [维护参照的实查纠错](BASIC-CONFLICT-JUDGMENT.md#maintenance-baseline)新增4项定理／13项审计，区分失去能力、实际履行与有根据结束；原任务可由真实完成记录结清。/ No new foundational axiom or perpetual initial-value constraint is introduced. Real correspondence remains a separate burden; the next central normative comparison concerns adequate chances without prior protected undertakings.",
+      "before_sha256": "e670d453bf43692af5e903e065064080bc00bf85a202d3595b2e0a68fa187425",
+      "after_sha256": "3e0fd23aedb58c95e288199e89ef094c94c2cbf6aa76eb8d211baea9337f82b0",
+      "other_content_preserved": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "owned_content": "**评价条件本身的变化 / Changes in the conditions of evaluation，2026-10-08。** [维护目标重算检验](BASIC-CONFLICT-JUDGMENT.md#maintenance-baseline)证明一种具体失真：先撤旧支持，再按受损能力缩小目标，可能认证空目标而未交付；真实完成后结束则允许。/ Four new Lean theorems / 13 audits test this task correspondence. The result neither forbids justified goal revision nor grants a self-issued release; previously proved correction mechanisms remain reusable.",
+      "before_sha256": "17fb5b4c1d5ad74cf89d4d3a129d2f48e2705e37a9f2888f64fa9d52e2a52f12",
+      "after_sha256": "0186af874a08ec6db157abd8eb2e9e412ca71c7a72b11a99b5dce6685cdee0f8",
+      "other_content_preserved": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "owned_content": "**维护目标对应检验已完成 / Maintenance-target diagnostic completed，2026-10-08。** [4项新Lean定理／13项审计与反审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-INTEGRATION.md)排除用自身撤支承后的空目标冒报原任务履行，保留真实完成后退役。时变证据、失败账本、共同执行、版本交接与当前撤权已有成果，直接复用；真实对应仍需独立证据。**本路线下一中心问题回到没有旧承担时的充分机会与正当裁量**，先固定阶段、真实支持和有效历史，不以任意比例或更多控制器替代比较根据。/ This completes a narrow task interpretation test, not universal ethics or empirical deployment.",
+      "before_sha256": "bbc63138c550fe067914f0af6aecb652b4871fcaba9aea0ab24b2bbfd66e7b44",
+      "after_sha256": "f5c1cbf7d74cd749a297284152017a18b0071522bfcd5edfc333836f7992c66b",
+      "other_content_preserved": true
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/README.md",
+      "owned_content": "**Maintenance baseline，2026-10-08。** [MaintenanceBaseline.lean](MaintenanceBaseline.lean) checks an intervention-dependent target error and genuine completion before retirement: 4 new theorems / 13 audits, with 21 inherited theorems / 55 audits separate. [Passing receipt](maintenance-baseline-verification.json); [proof and scope](../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-PROOF.md). Retirement disables actual routes; a recomputed empty target is distinct from delivered protection. Completed records concern one delivery, not continuing capacity.",
+      "before_sha256": "79a7526f5cdc95ea1305e3ddf2e2d40a1a3f1f2f6ed046bc924e5dade6a052ee",
+      "after_sha256": "7f0467ebc41352ccf8e1b2dcbfaaf5b8e4594f520ee9a22365fe21be40bbdee3",
+      "other_content_preserved": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "owned_content": "**维护目标的干预对应 / Intervention and maintenance targets，2026-10-08。** M20成对接入[4项新定理／13项审计与反审](MAINTENANCE-BASELINE-INTEGRATION.md)，21项导入定理／55项审计分列；修正旧对应说明一段歧义并保存原文。/ Only owned passages, paired suffixes, links, discovery and read versions change. [Owned edits](MAINTENANCE-BASELINE-INDEX-EDITS.json); [scoped checks](MAINTENANCE-BASELINE-CHECKS.json). Other rows and pending reviews remain; no full-table or empirical certification.",
+      "before_sha256": "8012ce7cf8a226c0eceda4e752746be008516fdb60c952d20f47fd548504ee95",
+      "after_sha256": "10d5944555ae66336b431f6dfbd585a1d0cd5d2ae4bc25eebfd65fc7929d1f38",
+      "other_content_preserved": true
+    }
+  ]
+}

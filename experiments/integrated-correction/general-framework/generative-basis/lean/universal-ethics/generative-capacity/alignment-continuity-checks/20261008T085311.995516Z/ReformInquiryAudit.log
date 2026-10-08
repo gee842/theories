@@ -1,0 +1,102 @@
+'ReformInquiry.Query' does not depend on any axioms
+'ReformInquiry.Remedy' does not depend on any axioms
+'ReformInquiry.reported' does not depend on any axioms
+'ReformInquiry.probe' does not depend on any axioms
+'ReformInquiry.respond' depends on axioms: [propext]
+'ReformInquiry.achieved' does not depend on any axioms
+'ReformInquiry.interface' depends on axioms: [propext]
+'ReformInquiry.plans' does not depend on any axioms
+'ReformInquiry.uncertainty' depends on axioms: [propext]
+'ReformInquiry.chosen' depends on axioms: [propext]
+'ReformInquiry.execute' depends on axioms: [propext]
+'ReformInquiry.chosen_query_and_contingent_remedy' depends on axioms: [propext]
+'ReformInquiry.faithful_query_both_ways' depends on axioms: [propext]
+'ReformInquiry.selected_report_cannot_support_uniform_remedy' depends on axioms: [propext]
+'ReformInquiry.actual_harmful_history_is_repaired' depends on axioms: [propext]
+'ReformInquiry.actual_supported_reform_continues' depends on axioms: [propext]
+'ReformInquiry.both_branches_preserve_historical_losses' depends on axioms: [propext]
+'ReformInquiry.both_branches_keep_total_support' depends on axioms: [propext]
+'ReformInquiry.known_supported_case_avoids_unneeded_inquiry' depends on axioms: [propext]
+'ReformInquiry.absent_authority_blocks_joint_solution' depends on axioms: [propext]
+'ReformInquiry.accurate_inquiry_can_consume_the_remedy' depends on axioms: [propext]
+'ReformInquiry.omitted_harmful_model_invalidates_selection' depends on axioms: [propext]
+'ReformInquiry.selected_policy_works_for_all_retained_candidates' depends on axioms: [propext, Quot.sound]
+ReformInquiry.chosen_query_and_contingent_remedy :
+  ReformInquiry.chosen =
+    some
+      { query := ReformInquiry.Query.direct, negative := ReformInquiry.Remedy.continue,
+        positive := ReformInquiry.Remedy.provide }
+ReformInquiry.faithful_query_both_ways :
+  (Option.map Prod.fst do
+        let s ← ReformEvidence.masked false
+        ReformInquiry.probe s ReformInquiry.Query.direct) =
+      some false ∧
+    (Option.map Prod.fst do
+        let s ← ReformEvidence.masked true
+        ReformInquiry.probe s ReformInquiry.Query.direct) =
+      some true
+ReformInquiry.selected_report_cannot_support_uniform_remedy :
+  AlignmentInquiry.choose (ReformInquiry.interface true) ReformInquiry.uncertainty
+      (AlignmentInquiry.repertoire [ReformInquiry.Query.reuse, ReformInquiry.Query.selected]
+        [ReformInquiry.Remedy.continue, ReformInquiry.Remedy.provide]) =
+    none
+ReformInquiry.actual_harmful_history_is_repaired :
+  Option.map
+      (fun s =>
+        (s.provisioned, ReformInquiry.achieved s, s.core.goal, s.core.selector, s.core.losses, s.core.archive.length,
+          s.core.account))
+      (ReformInquiry.execute true) =
+    some
+      (true, true, some GoalFormationRevision.Goal.learning, GoalFormationRevision.Selection.learning, 2, 4,
+        { work := 2, reserve := 6, spent := 18 })
+ReformInquiry.actual_supported_reform_continues :
+  Option.map
+      (fun s =>
+        (s.provisioned, ReformInquiry.achieved s, s.core.goal, s.core.selector, s.core.losses, s.core.archive.length,
+          s.core.account))
+      (ReformInquiry.execute false) =
+    some
+      (false, true, some GoalFormationRevision.Goal.learning, GoalFormationRevision.Selection.learning, 1, 4,
+        { work := 3, reserve := 8, spent := 15 })
+ReformInquiry.both_branches_preserve_historical_losses (harm : Bool) :
+  Option.map (fun s => s.core.losses) (ReformInquiry.execute harm) =
+    Option.map (fun s => s.core.losses) (ReformEvidence.masked harm)
+ReformInquiry.both_branches_keep_total_support (harm : Bool) :
+  Option.map (fun s => GoalFormationRevision.total s.core.account) (ReformInquiry.execute harm) = some 26
+ReformInquiry.known_supported_case_avoids_unneeded_inquiry :
+  AlignmentInquiry.choose (ReformInquiry.interface true) (ReformEvidence.masked false).toList ReformInquiry.plans =
+    some
+      { query := ReformInquiry.Query.reuse, negative := ReformInquiry.Remedy.continue,
+        positive := ReformInquiry.Remedy.continue }
+ReformInquiry.absent_authority_blocks_joint_solution :
+  AlignmentInquiry.choose (ReformInquiry.interface false) ReformInquiry.uncertainty ReformInquiry.plans = none
+ReformInquiry.accurate_inquiry_can_consume_the_remedy :
+  (Option.map Prod.fst do
+        let s ← ReformEvidence.masked true
+        ReformInquiry.probe s ReformInquiry.Query.slow) =
+      some true ∧
+    ReformEvidence.masked true >>=
+        AlignmentInquiry.run (ReformInquiry.interface true)
+          { query := ReformInquiry.Query.slow, negative := ReformInquiry.Remedy.continue,
+            positive := ReformInquiry.Remedy.provide } =
+      none
+ReformInquiry.omitted_harmful_model_invalidates_selection :
+  AlignmentInquiry.choose (ReformInquiry.interface true) (ReformEvidence.masked false).toList ReformInquiry.plans =
+      some
+        { query := ReformInquiry.Query.reuse, negative := ReformInquiry.Remedy.continue,
+          positive := ReformInquiry.Remedy.continue } ∧
+    Option.map ReformInquiry.achieved
+        (ReformEvidence.masked true >>=
+          AlignmentInquiry.run (ReformInquiry.interface true)
+            { query := ReformInquiry.Query.reuse, negative := ReformInquiry.Remedy.continue,
+              positive := ReformInquiry.Remedy.continue }) =
+      some false
+ReformInquiry.selected_policy_works_for_all_retained_candidates (s : ReformEvidence.Field) :
+  s ∈ ReformInquiry.uncertainty →
+    ∃ t,
+      AlignmentInquiry.run (ReformInquiry.interface true)
+            { query := ReformInquiry.Query.direct, negative := ReformInquiry.Remedy.continue,
+              positive := ReformInquiry.Remedy.provide }
+            s =
+          some t ∧
+        ReformInquiry.achieved t = true

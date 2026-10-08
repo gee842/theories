@@ -1,0 +1,28 @@
+Generative.FormationSequence.whole_comparisons_favor_formation {H : Type} (better : H → H → Prop)
+  (trans : Generative.FormationSequence.TransitiveComparison better) (baseline retained redirected : H)
+  (first : better retained baseline) (second : better redirected retained) : better redirected baseline
+Generative.FormationSequence.transport_supports_initial_comparison {H : Type} (initial later : H → H → Prop)
+  (trans : Generative.FormationSequence.TransitiveComparison initial) (baseline retained redirected : H)
+  (first : initial retained baseline) (second : later redirected retained)
+  (transport : later redirected retained → initial redirected retained) : initial redirected baseline
+Generative.FormationSequence.faithful_redescription_preserves_result {H : Type} (better sameContent : H → H → Prop)
+  (preserve : ∀ (a b c : H), sameContent a b → (better a c ↔ better b c)) (sequence direct baseline : H)
+  (same : sameContent sequence direct) (favorable : better sequence baseline) : better direct baseline
+Generative.FormationSequence.score_comparison_transitive {H : Type} (score : H → Nat) :
+  Generative.FormationSequence.TransitiveComparison (Generative.FormationSequence.ScoredAbove score)
+Generative.FormationSequence.stages_can_favor_without_initial_favor :
+  Generative.FormationSequence.TransitiveComparison
+      (Generative.FormationSequence.ScoredAbove Generative.FormationSequence.initialScore) ∧
+    Generative.FormationSequence.TransitiveComparison
+        (Generative.FormationSequence.ScoredAbove Generative.FormationSequence.laterScore) ∧
+      Generative.FormationSequence.ScoredAbove Generative.FormationSequence.initialScore
+          Generative.FormationSequence.History.retained Generative.FormationSequence.History.baseline ∧
+        Generative.FormationSequence.ScoredAbove Generative.FormationSequence.laterScore
+            Generative.FormationSequence.History.redirected Generative.FormationSequence.History.retained ∧
+          ¬Generative.FormationSequence.ScoredAbove Generative.FormationSequence.initialScore
+              Generative.FormationSequence.History.redirected Generative.FormationSequence.History.baseline
+Generative.FormationSequence.diagnostic_fails_transport :
+  ¬(Generative.FormationSequence.ScoredAbove Generative.FormationSequence.laterScore
+        Generative.FormationSequence.History.redirected Generative.FormationSequence.History.retained →
+      Generative.FormationSequence.ScoredAbove Generative.FormationSequence.initialScore
+        Generative.FormationSequence.History.redirected Generative.FormationSequence.History.retained)

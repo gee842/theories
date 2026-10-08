@@ -1,0 +1,24 @@
+CorrectionHandoff.lean:224:4: warning: This simp argument is unused:
+  Ready
+
+Hint: Omit it from the simp argument list.
+  simp [initial, stalePreparation, run, step, replace, configure, power, probe, R̵e̵a̵d̵y̵,̵ ̵execute, decode,
+  ̲  ̲ ̲ ̲uncheckedSwitch]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CorrectionHandoff.lean:230:28: warning: This simp argument is unused:
+  uncheckedSwitch
+
+Hint: Omit it from the simp argument list.
+  simp [initial, stalePreparation, run, step, replace, configure, power, probe, Ready, execute,
+  ̲  ̲ ̲ ̲d̵e̵c̵o̵d̵e̵,̵ ̵u̵n̵c̵h̵e̵c̵k̵e̵d̵S̵w̵i̵t̵c̵h̵]̵d̲e̲c̲o̲d̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CorrectionHandoff.lean:236:28: warning: This simp argument is unused:
+  uncheckedSwitch
+
+Hint: Omit it from the simp argument list.
+  simp [initial, stalePreparation, run, step, replace, configure, power, probe, Ready, execute,
+  ̲  ̲ ̲ ̲d̵e̵c̵o̵d̵e̵,̵ ̵u̵n̵c̵h̵e̵c̵k̵e̵d̵S̵w̵i̵t̵c̵h̵]̵d̲e̲c̲o̲d̲e̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

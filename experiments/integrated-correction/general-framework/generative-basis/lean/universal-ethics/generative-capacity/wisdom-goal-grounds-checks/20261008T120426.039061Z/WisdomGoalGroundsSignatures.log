@@ -1,0 +1,20 @@
+WisdomGoalGrounds.achievement_profiles_equal (c d : GoalFormationRevision.Conditions) :
+  WisdomGoalGrounds.achievementProfile c = WisdomGoalGrounds.achievementProfile d
+WisdomGoalGrounds.retaining_goal_preferred (c : GoalFormationRevision.Conditions) (access : c.accessLoss = false)
+  (loss : c.transitionLoss = true) :
+  PracticalJudgment.Better (GoalFormationRevision.protects c) (GoalFormationRevision.gains c)
+    GoalFormationRevision.Practice.attendance GoalFormationRevision.Practice.learning
+WisdomGoalGrounds.revision_frontier_iff (p : GoalFormationRevision.Practice) :
+  WisdomGoalGrounds.Acceptable GoalFormationRevision.harmful p ↔ p = GoalFormationRevision.Practice.learning
+WisdomGoalGrounds.retention_frontier_iff (p : GoalFormationRevision.Practice) :
+  WisdomGoalGrounds.Acceptable WisdomGoalGrounds.retentionCase p ↔ p = GoalFormationRevision.Practice.attendance
+WisdomGoalGrounds.adequate_goal_selector_distinguishes {O : Type} (describe : GoalFormationRevision.Conditions → O)
+  (select : O → GoalFormationRevision.Practice)
+  (adequate : ∀ (c : GoalFormationRevision.Conditions), WisdomGoalGrounds.Acceptable c (select (describe c))) :
+  describe GoalFormationRevision.harmful ≠ describe WisdomGoalGrounds.retentionCase
+WisdomGoalGrounds.attainment_only_selector_insufficient
+  (select : (GoalFormationRevision.Goal → GoalFormationRevision.Practice → Nat) → GoalFormationRevision.Practice) :
+  ¬∀ (c : GoalFormationRevision.Conditions),
+      WisdomGoalGrounds.Acceptable c (select (WisdomGoalGrounds.achievementProfile c))
+WisdomGoalGrounds.fixed_ground_rule_adequate (c : GoalFormationRevision.Conditions) :
+  WisdomGoalGrounds.Acceptable c (WisdomGoalGrounds.fixedRule c)

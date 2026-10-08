@@ -1,0 +1,12 @@
+'ChanceGrounding.Tickets' does not depend on any axioms
+'ChanceGrounding.Positive' does not depend on any axioms
+'ChanceGrounding.total' does not depend on any axioms
+'ChanceGrounding.scoreNumerator' does not depend on any axioms
+'ChanceGrounding.Improves' does not depend on any axioms
+'ChanceGrounding.refine' does not depend on any axioms
+'ChanceGrounding.positive_refinement_improves_score' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ChanceGrounding.no_maximum_in_unbounded_positive_ticket_domain' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ChanceGrounding.every_positive_score_is_below_two' depends on axioms: [propext, Quot.sound]
+'ChanceGrounding.fixed_resolution_unique_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]

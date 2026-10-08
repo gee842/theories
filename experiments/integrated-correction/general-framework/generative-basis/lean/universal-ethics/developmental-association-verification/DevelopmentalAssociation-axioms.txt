@@ -1,0 +1,41 @@
+'DevelopmentalAssociation.State' does not depend on any axioms
+'DevelopmentalAssociation.material' does not depend on any axioms
+'DevelopmentalAssociation.divide' does not depend on any axioms
+'DevelopmentalAssociation.changeRetention' does not depend on any axioms
+'DevelopmentalAssociation.detach' depends on axioms: [propext, Quot.sound]
+'DevelopmentalAssociation.aggregate' does not depend on any axioms
+'DevelopmentalAssociation.Event' does not depend on any axioms
+'DevelopmentalAssociation.step' depends on axioms: [propext, Quot.sound]
+'DevelopmentalAssociation.run' depends on axioms: [propext, Quot.sound]
+'DevelopmentalAssociation.process' depends on axioms: [propext, Quot.sound]
+'DevelopmentalAssociation.run_iff_core_trace' depends on axioms: [propext, Quot.sound]
+'DevelopmentalAssociation.division_inherits' depends on axioms: [propext]
+'DevelopmentalAssociation.changed_state_governs_division' depends on axioms: [propext]
+'DevelopmentalAssociation.step_accounts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DevelopmentalAssociation.core_trace_accounts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DevelopmentalAssociation.LineageConsistent' does not depend on any axioms
+'DevelopmentalAssociation.division_preserves_lineage' depends on axioms: [propext, Quot.sound]
+'DevelopmentalAssociation.NoAggregation' depends on axioms: [propext]
+'DevelopmentalAssociation.step_preserves_lineage' depends on axioms: [propext, Quot.sound]
+'DevelopmentalAssociation.trace_preserves_lineage' depends on axioms: [propext, Quot.sound]
+'DevelopmentalAssociation.Connected' does not depend on any axioms
+'DevelopmentalAssociation.connected_same_founder' does not depend on any axioms
+'DevelopmentalAssociation.developed_groups_have_common_origin' depends on axioms: [propext, Quot.sound]
+'DevelopmentalAssociation.seed' does not depend on any axioms
+'DevelopmentalAssociation.seed_lineage' does not depend on any axioms
+'DevelopmentalAssociation.Observation' does not depend on any axioms
+'DevelopmentalAssociation.observe' does not depend on any axioms
+'DevelopmentalAssociation.development' does not depend on any axioms
+'DevelopmentalAssociation.changed_division_forms_group' depends on axioms: [propext, Quot.sound]
+'DevelopmentalAssociation.separated_descendant_reconstructs_association' depends on axioms: [propext, Quot.sound]
+'DevelopmentalAssociation.restored_separation_changes_later_growth' depends on axioms: [propext, Quot.sound]
+'DevelopmentalAssociation.mixed' does not depend on any axioms
+'DevelopmentalAssociation.aggregation_breaks_clonal_conclusion' depends on axioms: [propext, Quot.sound]
+'DevelopmentalAssociation.splitMiddle' depends on axioms: [propext, Quot.sound]
+'DevelopmentalAssociation.splitBase' depends on axioms: [propext, Quot.sound]
+'DevelopmentalAssociation.CoarseObservation' does not depend on any axioms
+'DevelopmentalAssociation.coarse' does not depend on any axioms
+'DevelopmentalAssociation.equal_cell_states_different_continuations' depends on axioms: [propext, Quot.sound]
+'DevelopmentalAssociation.comparison_histories_are_actual' depends on axioms: [propext, Quot.sound]
+'DevelopmentalAssociation.no_bond_free_exact_predictor' depends on axioms: [propext, Quot.sound]
+'DevelopmentalAssociation.ineffective_operations_fail' depends on axioms: [propext, Quot.sound]

@@ -1,0 +1,14 @@
+import FormationSequence
+#print axioms Generative.FormationSequence.TransitiveComparison
+#print axioms Generative.FormationSequence.whole_comparisons_favor_formation
+#print axioms Generative.FormationSequence.transport_supports_initial_comparison
+#print axioms Generative.FormationSequence.faithful_redescription_preserves_result
+#print axioms Generative.FormationSequence.History
+#print axioms Generative.FormationSequence.incumbentGain
+#print axioms Generative.FormationSequence.newLiving
+#print axioms Generative.FormationSequence.initialScore
+#print axioms Generative.FormationSequence.laterScore
+#print axioms Generative.FormationSequence.ScoredAbove
+#print axioms Generative.FormationSequence.score_comparison_transitive
+#print axioms Generative.FormationSequence.stages_can_favor_without_initial_favor
+#print axioms Generative.FormationSequence.diagnostic_fails_transport

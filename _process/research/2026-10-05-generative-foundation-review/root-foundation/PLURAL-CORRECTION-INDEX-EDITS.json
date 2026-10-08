@@ -1,0 +1,434 @@
+{
+  "scope": "C33 added; M23/F29 and total count maintained; other entries and table lines preserved",
+  "files": {
+    "RESEARCH.md": {
+      "before_sha256": "a71188c76e4f63601642a0d54eb9c3c94dbb07b098970db35f29ea7c0449a48a",
+      "after_sha256": "86648249183ab27f16ca802cbc8b94e502130302badc07a90eddd52952c4a3ef"
+    },
+    "theories/shengsheng-buxi-generative-existence/README.md": {
+      "before_sha256": "03fb58b079215960aace1112882301a8c18fd976f2d2fbf3ef223da2a4b35fc1",
+      "after_sha256": "6ee66545e34d5b9f337f14ded4c1723a2a7e87e7647aa9a90c8d82d7cb648802"
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md": {
+      "before_sha256": "27263e530a6c7c6321ac9f188ec687d5c165feb9c810db35e35e5e8b5e3fd9e1",
+      "after_sha256": "3a773975a9997d96ef0cc7e5b0b2b50e55975145d613680583f6f816d888b0ce"
+    },
+    "sources/SOURCES.md": {
+      "before_sha256": "ce3d1a503a099cbf6ff3eaa90a8bc4e0d889e8634b620e18d5fde9ea767c8dae",
+      "after_sha256": "693db2b9488078e58e654bee636179cbbdfda81fbf886faa60805f92d5cafcd6"
+    },
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md": {
+      "before_sha256": "240ab14353d57fd6f53be7360c1e7ab588b8b4a284cf6a17da33f1e9d50ae2bd",
+      "after_sha256": "27c0a35f585030d3182b40a220c2b4cfba9e21ffa6af6f4fa8f33ecb6dc770b6"
+    },
+    "theories/shengsheng-buxi-generative-existence/results/data/generativity-chain.json": {
+      "before_sha256": "c829362b10151ccbc862db9802e903436fa36d957fdeafbae70f5dccb77a3227",
+      "after_sha256": "198bbca6fbc9a29068a70796ae0db01a1234493e95b569145e710b765d7cb8cc"
+    },
+    "theories/shengsheng-buxi-generative-existence/results/GENERATIVITY-CHAIN.md": {
+      "before_sha256": "44bdb7b630fb84ede320c54f5c459e3c7af9f532a172ba9f6228a486929484f3",
+      "after_sha256": "199c37abfecbe5ab8f5a28fb22dbe258f3d166bf41a1804072fabd4b9eb6b860"
+    }
+  },
+  "rows_before": {
+    "M23": {
+      "id": "M23",
+      "title_zh": "可纠正性的实际条件",
+      "title_en": "Practical conditions of corrigibility",
+      "claim_zh": "接受更新不独自保持实际纠正入口；维护有真实代价，过滤后还须重算接续价值。有限期组合保留前缀入口并达到域内最优。 后续有限权重反例表明：局部修复还须能依实际观察执行；精确最优策略仍可有1/16不实断言风险。 主动观察还可破坏先前成立的风险分离；保证须覆盖后续观察，并保持实际记录与命令送达。 双通道协议实际取得并更新解码记录，保留旧入口直到新的当前记录就绪；匹配版本不独自保证记录真实。 终端纠正可实现当且仅当同一观察下有共同成功命令；相反隐藏解码阻断保证，受保护使用区间给出条件修复。",
+      "claim_en": "Acceptance does not alone preserve correction access. Maintenance has a real cost, and filtering requires recomputed continuation values. Finite-horizon composition retains prefix access and attains the constrained optimum. A finite-weight counterexample shows that a local repair must be executable from available observations: exact optimality can retain a 1/16 false-assertion risk. Chosen sensing can invalidate an initially sufficient risk floor; guarantees must cover later observations and preserve usable records and command delivery. A two-channel protocol acquires and renews decoding records while retaining the old route until the new one is ready; matching versions alone do not establish record soundness. Terminal correction is realizable exactly when each observation admits a common successful command; conflicting hidden decoders obstruct guarantees, while a protected use interval supplies a conditional repair.",
+      "scope_zh": "原34项定理／56项审计及12,960项比较保留；新增31项定理／54项审计，含随机策略最优界、可执行修复界及风险分离条件。论文对应经作者反审，形成具体前沿贡献供外部核查；独立验收、绝对原创性及实际 AI 优势未证。 再新增28项定理／40项审计、432项计划；如实对照与真实代价保留。后续23项定理／45项审计实现原子协议中任意前缀及无界调度的有限时刻安全，指定交接完成；472个状态、3,796条转移及100次交接通过。真实探测、全部变化受管理与可用通道仍为前提，实际AI停机未证。 后续34项定理／58项审计、63,504个案例及60次线程试验：任意有限记录不能消除已允许的最终歧义，随机最坏成功率至多1/2。底层方法已有先例；一般部署对应及独立原创性是当前墙。",
+      "scope_en": "Original 34/56 proof package and 12,960 comparisons retained. Followup: 31 theorems / 54 audits, including randomized-policy optimality, executable repair bounds and a risk-floor condition. Explicit paper correspondence and author counterreview yield a concrete contribution for external scrutiny; independent acceptance, absolute priority and learned-AI advantage remain open. Further extension: 28 theorems / 40 audits and 432 plans, retaining safe controls and costs. A further 23 theorems / 45 audits realize prefix safety and safety at every finite point of unbounded atomic schedules, plus prescribed handoff completion; 472 states, 3,796 transitions and 100 handoffs pass. Faithful probing, mediated changes and channel availability remain premises; actual AI shutdown is unproved. Further 34 theorems / 58 audits, 63,504 cases and 60 thread trials: no finite transcript removes the admitted terminal ambiguity; randomized worst-case success is at most 1/2. Underlying methods are established; general deployment correspondence and independent novelty are the current walls.",
+      "links": [
+        {
+          "label_zh": "当前对齐表述",
+          "label_en": "Current alignment account",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#corrigibility-and-its-changing-practical-conditions"
+        },
+        {
+          "label_zh": "完整研究与反审",
+          "label_en": "Study and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-INFRASTRUCTURE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "事先协议",
+          "label_en": "Pre-execution protocol",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-INFRASTRUCTURE-PROTOCOL.md"
+        },
+        {
+          "label_zh": "可执行修复与前沿反例",
+          "label_en": "Executable repair and current-theorem counterexample",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-OBSERVATION-REPAIR.md"
+        },
+        {
+          "label_zh": "观察改变后的纠正",
+          "label_en": "Correction after observation changes",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-OBSERVATION-CHANGE.md"
+        },
+        {
+          "label_zh": "反复交接与反审",
+          "label_en": "Repeated handoff and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-HANDOFF-INTEGRATION.md"
+        },
+        {
+          "label_zh": "边界、反审与墙",
+          "label_en": "Boundary, counterreview and wall",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-FRONTIER-BOUNDARY.md"
+        }
+      ]
+    },
+    "F29": {
+      "id": "F29",
+      "title_zh": "纠正条件与组合实查",
+      "title_en": "Correction conditions and checked composition",
+      "claim_zh": "精确接受分解、维护界、旧价值反例、Bellman 组合、观察一致性及通道交接均经 Lean 检查。 新增完整有限权重反例、观察限制、可执行修复及近似界。 新增Bayes一致观察变化、主动取得信息的最优界、风险分离失效及纠正传递。 新增记录探测、版本失效、重复交接不变量及四类失败见证。 新增观察类共同动作充要条件、记录证书限制、随机界及测试—使用保留区间。",
+      "claim_en": "Lean checks acceptance factorization, maintenance boundaries, stale-value failure, Bellman composition, observation uniformity and channel handoff. Adds a complete finite-weight counterexample, observation restriction, executable repair and approximation bounds. Adds Bayesian-consistent observation change, optimal sensing bounds, risk-floor failure and correction transport. Adds explicit probing, record invalidation, repeated-handoff invariants and four failure controls. Adds the observation-class common-action equivalence, transcript-certificate limit, randomized bounds and reserved test/use interval.",
+      "scope_zh": "原34项定理／56项审计保留，新增31项定理／54项审计；Lean 4.30.0-rc2与固定Mathlib，标准逻辑依赖公开。论文对应单独核读，不由内核自动证明；未宣称普遍可纠正性。 本轮新增28项定理／40项审计，31/54继承分列；再新增23项定理／45项审计，原子双通道重复协议已完成；无条件活性、非原子实现和真实对应未证。 再新增34项定理／58项审计，两个模块无继承仓库证明；标准choice依赖公开。普通互斥为成功对照，未证完整双通道并发细化或实际AI停机。",
+      "scope_en": "Original 34 theorems / 56 audits retained; 31 theorems / 54 audits added with Lean 4.30.0-rc2 and pinned Mathlib. Standard dependencies disclosed. External theorem correspondence is separately audited, not kernel-certified; no universal corrigibility claim. This round adds 28 theorems / 40 audits, with inherited 31/54 separate; a further 23 theorems / 45 audits complete an atomic two-channel repeated protocol. Unconditional liveness, non-atomic implementation and real correspondence remain unproved. A further 34 theorems / 58 audits in two modules with no inherited repository proofs; standard choice dependency disclosed. Ordinary mutexes are the successful control; full concurrent refinement of the two-channel model and actual AI shutdown are unproved.",
+      "links": [
+        {
+          "label_zh": "Lean 源码",
+          "label_en": "Lean source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInfrastructure.lean"
+        },
+        {
+          "label_zh": "实查收据",
+          "label_en": "Proof receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-infrastructure-verification.json"
+        },
+        {
+          "label_zh": "模型比较",
+          "label_en": "Model comparison",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-infrastructure-model-checks.json"
+        },
+        {
+          "label_zh": "完整范围",
+          "label_en": "Full scope",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-INFRASTRUCTURE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "新Lean证明",
+          "label_en": "New Lean proof",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ObservationRepair.lean"
+        },
+        {
+          "label_zh": "新实查收据",
+          "label_en": "New proof receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/observation-repair-verification.json"
+        },
+        {
+          "label_zh": "观察与修复对照",
+          "label_en": "Observation and repair controls",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/observation-repair-model-checks.json"
+        },
+        {
+          "label_zh": "论文对应与反审",
+          "label_en": "Paper correspondence and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-OBSERVATION-REPAIR.md"
+        },
+        {
+          "label_zh": "观察变化Lean",
+          "label_en": "Observation-change Lean",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ObservationChange.lean"
+        },
+        {
+          "label_zh": "新增实查收据",
+          "label_en": "New check receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/observation-change-verification.json"
+        },
+        {
+          "label_zh": "432项计划比较",
+          "label_en": "432-plan comparison",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/observation-change-model-checks.json"
+        },
+        {
+          "label_zh": "范围与反审",
+          "label_en": "Scope and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-OBSERVATION-CHANGE.md"
+        },
+        {
+          "label_zh": "反复交接Lean",
+          "label_en": "Repeated-handoff Lean",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionHandoff.lean"
+        },
+        {
+          "label_zh": "交接证明回执",
+          "label_en": "Handoff proof receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-handoff-verification.json"
+        },
+        {
+          "label_zh": "交接模型检查",
+          "label_en": "Handoff model checks",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-handoff-model-checks.json"
+        },
+        {
+          "label_zh": "协议与范围",
+          "label_en": "Protocol and scope",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-HANDOFF-INTEGRATION.md"
+        },
+        {
+          "label_zh": "观察边界Lean",
+          "label_en": "Observation-boundary Lean",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionBoundary.lean"
+        },
+        {
+          "label_zh": "使用区间Lean",
+          "label_en": "Protected-interval Lean",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionRace.lean"
+        },
+        {
+          "label_zh": "边界证明回执",
+          "label_en": "Boundary proof receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-boundary-verification.json"
+        },
+        {
+          "label_zh": "模型与线程对照",
+          "label_en": "Model and thread controls",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-boundary-model-checks.json"
+        },
+        {
+          "label_zh": "范围与先例审查",
+          "label_en": "Scope and prior-work review",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-FRONTIER-BOUNDARY.md"
+        }
+      ]
+    }
+  },
+  "rows_after": {
+    "C33": {
+      "id": "C33",
+      "title_zh": "多系统试验与父子关系",
+      "title_en": "Plural trials and parent/subsystem relations",
+      "claim_zh": "共同整体内可形成互补观察、可转移试验及分址纠正；系统群是否可作一个单位取决于实际组织、相关干预与共享依存。",
+      "claim_en": "A shared whole can sustain complementary observations, transferable trials and separately addressed correction; grouping depends on actual organization, relevant interventions and shared dependencies.",
+      "scope_zh": "条件说明与37项新定理／58项审计完成，继承19/31分列。独立误差增益与共同故障、局部汇总失效及联合负载反例并存；实际全局划分、试验传递与包含范围仍需证据。",
+      "scope_en": "Conditional account and 37 new theorems / 58 audits complete, with inherited 19/31 separate. Independent-error gains coexist with common-failure, summary and joint-load counterexamples; actual global boundaries, transfer and containment require evidence.",
+      "links": [
+        {
+          "label_zh": "当前理论",
+          "label_en": "Current account",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PLURAL-SYSTEMS-AND-CORRECTION.md"
+        },
+        {
+          "label_zh": "整合、证明与反审",
+          "label_en": "Integration, proofs and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PLURAL-CORRECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "Ren原话",
+          "label_en": "Ren’s direction",
+          "path": "sources/15-codex-theory-conversations/2026-10-08-plural-systems-and-parent-correction.md"
+        }
+      ]
+    },
+    "M23": {
+      "id": "M23",
+      "title_zh": "可纠正性的实际条件",
+      "title_en": "Practical conditions of corrigibility",
+      "claim_zh": "接受更新不独自保持实际纠正入口；维护有真实代价，过滤后还须重算接续价值。有限期组合保留前缀入口并达到域内最优。 后续有限权重反例表明：局部修复还须能依实际观察执行；精确最优策略仍可有1/16不实断言风险。 主动观察还可破坏先前成立的风险分离；保证须覆盖后续观察，并保持实际记录与命令送达。 双通道协议实际取得并更新解码记录，保留旧入口直到新的当前记录就绪；匹配版本不独自保证记录真实。 终端纠正可实现当且仅当同一观察下有共同成功命令；相反隐藏解码阻断保证，受保护使用区间给出条件修复。 多系统互补观察与分址作用可以改变该边界；共同整体不排除有用试验，但局部成功不独自支持联合干预。",
+      "claim_en": "Acceptance does not alone preserve correction access. Maintenance has a real cost, and filtering requires recomputed continuation values. Finite-horizon composition retains prefix access and attains the constrained optimum. A finite-weight counterexample shows that a local repair must be executable from available observations: exact optimality can retain a 1/16 false-assertion risk. Chosen sensing can invalidate an initially sufficient risk floor; guarantees must cover later observations and preserve usable records and command delivery. A two-channel protocol acquires and renews decoding records while retaining the old route until the new one is ready; matching versions alone do not establish record soundness. Terminal correction is realizable exactly when each observation admits a common successful command; conflicting hidden decoders obstruct guarantees, while a protected use interval supplies a conditional repair. Complementary observations and separately addressed actions across systems can change that boundary; a shared whole permits useful trials, but local success alone does not justify joint intervention.",
+      "scope_zh": "原34项定理／56项审计及12,960项比较保留；新增31项定理／54项审计，含随机策略最优界、可执行修复界及风险分离条件。论文对应经作者反审，形成具体前沿贡献供外部核查；独立验收、绝对原创性及实际 AI 优势未证。 再新增28项定理／40项审计、432项计划；如实对照与真实代价保留。后续23项定理／45项审计实现原子协议中任意前缀及无界调度的有限时刻安全，指定交接完成；472个状态、3,796条转移及100次交接通过。真实探测、全部变化受管理与可用通道仍为前提，实际AI停机未证。 后续34项定理／58项审计、63,504个案例及60次线程试验：任意有限记录不能消除已允许的最终歧义，随机最坏成功率至多1/2。底层方法已有先例；一般部署对应及独立原创性是当前墙。 多系统接续新增37项定理／58项审计，19/31继承分列；实际传递、试验包含及共同变化范围为新的对应墙。",
+      "scope_en": "Original 34/56 proof package and 12,960 comparisons retained. Followup: 31 theorems / 54 audits, including randomized-policy optimality, executable repair bounds and a risk-floor condition. Explicit paper correspondence and author counterreview yield a concrete contribution for external scrutiny; independent acceptance, absolute priority and learned-AI advantage remain open. Further extension: 28 theorems / 40 audits and 432 plans, retaining safe controls and costs. A further 23 theorems / 45 audits realize prefix safety and safety at every finite point of unbounded atomic schedules, plus prescribed handoff completion; 472 states, 3,796 transitions and 100 handoffs pass. Faithful probing, mediated changes and channel availability remain premises; actual AI shutdown is unproved. Further 34 theorems / 58 audits, 63,504 cases and 60 thread trials: no finite transcript removes the admitted terminal ambiguity; randomized worst-case success is at most 1/2. Underlying methods are established; general deployment correspondence and independent novelty are the current walls. Plural-system continuation adds 37 theorems / 58 audits, with inherited 19/31 separate; actual transfer, trial containment and joint variation define the new correspondence wall.",
+      "links": [
+        {
+          "label_zh": "当前对齐表述",
+          "label_en": "Current alignment account",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#corrigibility-and-its-changing-practical-conditions"
+        },
+        {
+          "label_zh": "完整研究与反审",
+          "label_en": "Study and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-INFRASTRUCTURE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "事先协议",
+          "label_en": "Pre-execution protocol",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-INFRASTRUCTURE-PROTOCOL.md"
+        },
+        {
+          "label_zh": "可执行修复与前沿反例",
+          "label_en": "Executable repair and current-theorem counterexample",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-OBSERVATION-REPAIR.md"
+        },
+        {
+          "label_zh": "观察改变后的纠正",
+          "label_en": "Correction after observation changes",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-OBSERVATION-CHANGE.md"
+        },
+        {
+          "label_zh": "反复交接与反审",
+          "label_en": "Repeated handoff and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-HANDOFF-INTEGRATION.md"
+        },
+        {
+          "label_zh": "边界、反审与墙",
+          "label_en": "Boundary, counterreview and wall",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-FRONTIER-BOUNDARY.md"
+        },
+        {
+          "label_zh": "多系统与父子关系",
+          "label_en": "Plural systems and parent relations",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PLURAL-SYSTEMS-AND-CORRECTION.md"
+        }
+      ]
+    },
+    "F29": {
+      "id": "F29",
+      "title_zh": "纠正条件与组合实查",
+      "title_en": "Correction conditions and checked composition",
+      "claim_zh": "精确接受分解、维护界、旧价值反例、Bellman 组合、观察一致性及通道交接均经 Lean 检查。 新增完整有限权重反例、观察限制、可执行修复及近似界。 新增Bayes一致观察变化、主动取得信息的最优界、风险分离失效及纠正传递。 新增记录探测、版本失效、重复交接不变量及四类失败见证。 新增观察类共同动作充要条件、记录证书限制、随机界及测试—使用保留区间。 新增互补观察、任意复制失败、独立／共同误差、父汇总干预与联合负载检验。",
+      "claim_en": "Lean checks acceptance factorization, maintenance boundaries, stale-value failure, Bellman composition, observation uniformity and channel handoff. Adds a complete finite-weight counterexample, observation restriction, executable repair and approximation bounds. Adds Bayesian-consistent observation change, optimal sensing bounds, risk-floor failure and correction transport. Adds explicit probing, record invalidation, repeated-handoff invariants and four failure controls. Adds the observation-class common-action equivalence, transcript-certificate limit, randomized bounds and reserved test/use interval. Adds complementary observation, arbitrary duplication failure, independent/common error laws, parent-summary interventions and joint-load tests.",
+      "scope_zh": "原34项定理／56项审计保留，新增31项定理／54项审计；Lean 4.30.0-rc2与固定Mathlib，标准逻辑依赖公开。论文对应单独核读，不由内核自动证明；未宣称普遍可纠正性。 本轮新增28项定理／40项审计，31/54继承分列；再新增23项定理／45项审计，原子双通道重复协议已完成；无条件活性、非原子实现和真实对应未证。 再新增34项定理／58项审计，两个模块无继承仓库证明；标准choice依赖公开。普通互斥为成功对照，未证完整双通道并发细化或实际AI停机。 本次37项新定理／58项新审计，含继承共89项；101及10,201个精确概率网格通过。未把条件独立和实际系统边界藏入数量定义。",
+      "scope_en": "Original 34 theorems / 56 audits retained; 31 theorems / 54 audits added with Lean 4.30.0-rc2 and pinned Mathlib. Standard dependencies disclosed. External theorem correspondence is separately audited, not kernel-certified; no universal corrigibility claim. This round adds 28 theorems / 40 audits, with inherited 31/54 separate; a further 23 theorems / 45 audits complete an atomic two-channel repeated protocol. Unconditional liveness, non-atomic implementation and real correspondence remain unproved. A further 34 theorems / 58 audits in two modules with no inherited repository proofs; standard choice dependency disclosed. Ordinary mutexes are the successful control; full concurrent refinement of the two-channel model and actual AI shutdown are unproved. This round: 37 new theorems / 58 new audits, 89 including inheritance; 101 and 10,201 exact probability grid points pass. Independence and actual system boundaries are explicit obligations, not consequences of counting.",
+      "links": [
+        {
+          "label_zh": "Lean 源码",
+          "label_en": "Lean source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInfrastructure.lean"
+        },
+        {
+          "label_zh": "实查收据",
+          "label_en": "Proof receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-infrastructure-verification.json"
+        },
+        {
+          "label_zh": "模型比较",
+          "label_en": "Model comparison",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-infrastructure-model-checks.json"
+        },
+        {
+          "label_zh": "完整范围",
+          "label_en": "Full scope",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-INFRASTRUCTURE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "新Lean证明",
+          "label_en": "New Lean proof",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ObservationRepair.lean"
+        },
+        {
+          "label_zh": "新实查收据",
+          "label_en": "New proof receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/observation-repair-verification.json"
+        },
+        {
+          "label_zh": "观察与修复对照",
+          "label_en": "Observation and repair controls",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/observation-repair-model-checks.json"
+        },
+        {
+          "label_zh": "论文对应与反审",
+          "label_en": "Paper correspondence and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-OBSERVATION-REPAIR.md"
+        },
+        {
+          "label_zh": "观察变化Lean",
+          "label_en": "Observation-change Lean",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ObservationChange.lean"
+        },
+        {
+          "label_zh": "新增实查收据",
+          "label_en": "New check receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/observation-change-verification.json"
+        },
+        {
+          "label_zh": "432项计划比较",
+          "label_en": "432-plan comparison",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/observation-change-model-checks.json"
+        },
+        {
+          "label_zh": "范围与反审",
+          "label_en": "Scope and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-OBSERVATION-CHANGE.md"
+        },
+        {
+          "label_zh": "反复交接Lean",
+          "label_en": "Repeated-handoff Lean",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionHandoff.lean"
+        },
+        {
+          "label_zh": "交接证明回执",
+          "label_en": "Handoff proof receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-handoff-verification.json"
+        },
+        {
+          "label_zh": "交接模型检查",
+          "label_en": "Handoff model checks",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-handoff-model-checks.json"
+        },
+        {
+          "label_zh": "协议与范围",
+          "label_en": "Protocol and scope",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-HANDOFF-INTEGRATION.md"
+        },
+        {
+          "label_zh": "观察边界Lean",
+          "label_en": "Observation-boundary Lean",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionBoundary.lean"
+        },
+        {
+          "label_zh": "使用区间Lean",
+          "label_en": "Protected-interval Lean",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionRace.lean"
+        },
+        {
+          "label_zh": "边界证明回执",
+          "label_en": "Boundary proof receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-boundary-verification.json"
+        },
+        {
+          "label_zh": "模型与线程对照",
+          "label_en": "Model and thread controls",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-boundary-model-checks.json"
+        },
+        {
+          "label_zh": "范围与先例审查",
+          "label_en": "Scope and prior-work review",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-FRONTIER-BOUNDARY.md"
+        },
+        {
+          "label_zh": "多系统Lean",
+          "label_en": "Plural-system Lean",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionPopulation.lean"
+        },
+        {
+          "label_zh": "父子关系Lean",
+          "label_en": "Parent-relation Lean",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionParent.lean"
+        },
+        {
+          "label_zh": "多系统证明回执",
+          "label_en": "Plural-system proof receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-population-verification.json"
+        },
+        {
+          "label_zh": "多系统对照",
+          "label_en": "Plural-system controls",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-population-model-checks.json"
+        },
+        {
+          "label_zh": "完整整合",
+          "label_en": "Full integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PLURAL-CORRECTION-INTEGRATION.md"
+        }
+      ]
+    }
+  },
+  "unrelated_entries_preserved": 90,
+  "unrelated_rendered_lines_preserved": true,
+  "owned_fingerprints": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PLURAL-SYSTEMS-AND-CORRECTION.md": "c7c05a10b543e683363b44b249882880f967815e651b15756b7de0b8fa0b4b30",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PLURAL-CORRECTION-INTEGRATION.md": "4acf49883f398b56bc8bbbbb21059aa79290023a7106f32ce4f69d53a80106b5",
+    "sources/15-codex-theory-conversations/2026-10-08-plural-systems-and-parent-correction.md": "2165db57d83943629db16d10653a5e0066e70daea3276d4bed5156335034d1e0",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionPopulation.lean": "bd13fad67f759b36bc3800b046a95f6b1dd715328c9574a44af33323acda1de9",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionParent.lean": "fe5a56b7bce18b39c2a47afa87ee59f1017011872536715bd44d0d6055810473",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_correction_population.py": "a00b95e924e3f8f688ffbade5538c51aa4e94a23ef37491ac54d9d9e6977a7ad",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-population-verification.json": "ed34cb194a7b4e17cf3b4a687eb75a2b09c0e48f399b9894a0f099bd460aa0cc",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/compare_correction_population.py": "d0182be2caa0a82f43abb0362eabf790ef40a17582d855afa40a05f869e8b160",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-population-model-checks.json": "7cec7ef8f69d0c194b54b8bdc4f0b48e508eba82bb669c04ea7ce9dd5d0bfadd"
+  },
+  "discovery_added": [
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PLURAL-SYSTEMS-AND-CORRECTION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PLURAL-CORRECTION-INTEGRATION.md"
+  ]
+}

@@ -1,0 +1,69 @@
+'CarrierDiagnosis.Receipt' does not depend on any axioms
+'CarrierDiagnosis.State' does not depend on any axioms
+'CarrierDiagnosis.Input' does not depend on any axioms
+'CarrierDiagnosis.capacity' does not depend on any axioms
+'CarrierDiagnosis.emitted' does not depend on any axioms
+'CarrierDiagnosis.returned' does not depend on any axioms
+'CarrierDiagnosis.charge' does not depend on any axioms
+'CarrierDiagnosis.Ready' does not depend on any axioms
+'CarrierDiagnosis.outcome' does not depend on any axioms
+'CarrierDiagnosis.run' does not depend on any axioms
+'CarrierDiagnosis.performed' does not depend on any axioms
+'CarrierDiagnosis.ordinary' does not depend on any axioms
+'CarrierDiagnosis.probeInput' does not depend on any axioms
+'CarrierDiagnosis.Stable' does not depend on any axioms
+'CarrierDiagnosis.recurring' does not depend on any axioms
+'CarrierDiagnosis.RepairReady' does not depend on any axioms
+'CarrierDiagnosis.repaired' does not depend on any axioms
+'CarrierDiagnosis.repair' does not depend on any axioms
+'CarrierDiagnosis.Action' does not depend on any axioms
+'CarrierDiagnosis.process' does not depend on any axioms
+'CarrierDiagnosis.classify' does not depend on any axioms
+'CarrierDiagnosis.readSource' does not depend on any axioms
+'CarrierDiagnosis.diagnose' does not depend on any axioms
+'CarrierDiagnosis.diagnosisResult' does not depend on any axioms
+'CarrierDiagnosis.capacity_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CarrierDiagnosis.emitted_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CarrierDiagnosis.ordinary_return' depends on axioms: [propext]
+'CarrierDiagnosis.return_bound' depends on axioms: [propext, Quot.sound]
+'CarrierDiagnosis.ordinary_ready' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CarrierDiagnosis.ordinary_preserves' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CarrierDiagnosis.recurrence_with_variant_carriers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CarrierDiagnosis.different_carrier_yields' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CarrierDiagnosis.actual_recurring_trace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CarrierDiagnosis.ordinary_progress' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CarrierDiagnosis.recurrence_progress' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CarrierDiagnosis.finite_arrival_with_turnover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CarrierDiagnosis.ordinary_source_change' depends on axioms: [propext]
+'CarrierDiagnosis.recurring_source_change' depends on axioms: [propext]
+'CarrierDiagnosis.visible' does not depend on any axioms
+'CarrierDiagnosis.full_passive_record_equal' depends on axioms: [propext]
+'CarrierDiagnosis.overflow' does not depend on any axioms
+'CarrierDiagnosis.diverted' does not depend on any axioms
+'CarrierDiagnosis.worn' does not depend on any axioms
+'CarrierDiagnosis.resource_accounting' depends on axioms: [propext, Quot.sound]
+'CarrierDiagnosis.replacement_accounting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CarrierDiagnosis.empty_feed_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CarrierDiagnosis.no_advance_funding' depends on axioms: [propext, Quot.sound]
+'CarrierDiagnosis.probe_classifies_actual_source' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CarrierDiagnosis.repair_accounting' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CarrierDiagnosis.Prepared' does not depend on any axioms
+'CarrierDiagnosis.prepared_probe_ready' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CarrierDiagnosis.repair_keeps_receipt' does not depend on any axioms
+'CarrierDiagnosis.repair_keeps_carrier' does not depend on any axioms
+'CarrierDiagnosis.repair_recovers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CarrierDiagnosis.diagnosis_preserves_continuation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CarrierDiagnosis.diagnosis_then_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CarrierDiagnosis.successful_diagnosis_result' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CarrierDiagnosis.no_diagnosis_without_execution' depends on axioms: [propext]
+'CarrierDiagnosis.actual_diagnosis_trace' does not depend on any axioms
+'CarrierDiagnosis.seed' does not depend on any axioms
+'CarrierDiagnosis.no_full_passive_classifier' depends on axioms: [propext, Quot.sound]
+'CarrierDiagnosis.actual_diagnosis_and_recurrence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CarrierDiagnosis.example_prepared' depends on axioms: [propext, Quot.sound]
+'CarrierDiagnosis.paid_probe_repair_seed' does not depend on any axioms
+'CarrierDiagnosis.heterogeneous_successors_seed' does not depend on any axioms
+'CarrierDiagnosis.identification_without_repair_fails' does not depend on any axioms
+'CarrierDiagnosis.funding_without_material_fails' does not depend on any axioms
+'CarrierDiagnosis.change_probe_changes_target' does not depend on any axioms
+'CarrierDiagnosis.waiting_can_avoid_repair' does not depend on any axioms

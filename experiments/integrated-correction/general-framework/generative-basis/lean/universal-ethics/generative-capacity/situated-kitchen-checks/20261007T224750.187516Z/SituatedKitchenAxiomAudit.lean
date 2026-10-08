@@ -1,0 +1,21 @@
+import SituatedKitchen
+#print axioms SituatedKitchen.History
+#print axioms SituatedKitchen.protection
+#print axioms SituatedKitchen.realization
+#print axioms SituatedKitchen.care
+#print axioms SituatedKitchen.learning
+#print axioms SituatedKitchen.classOnly
+#print axioms SituatedKitchen.overloadedCare
+#print axioms SituatedKitchen.harmfulLearning
+#print axioms SituatedKitchen.inaccessibleLearning
+#print axioms SituatedKitchen.exitWithoutCover
+#print axioms SituatedKitchen.timely_care_beats_class_only
+#print axioms SituatedKitchen.learning_and_care_incomparable
+#print axioms SituatedKitchen.supported_learning_beats_overloaded_care
+#print axioms SituatedKitchen.care_beats_harmful_learning
+#print axioms SituatedKitchen.skill_without_usable_route
+#print axioms SituatedKitchen.restored_access_improves_same_learning
+#print axioms SituatedKitchen.competing_basic_losses_incomparable
+#print axioms SituatedKitchen.handoff
+#print axioms SituatedKitchen.announcement_cannot_replace_coverage
+#print axioms SituatedKitchen.actual_coverage_repairs_handoff

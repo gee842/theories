@@ -1,0 +1,32 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-generated-contraction-388nwwu1/ContractionMechanisms.lean:83:5: error: unknown tactic
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-generated-contraction-388nwwu1/ContractionMechanisms.lean:81:2: error: unsolved goals
+case mpr.refine_1
+b n : Nat
+hn : n ≤ b
+⊢ Reach process (budget b) { ready := 1 + n, provision := b - n }
+
+case mpr.refine_2
+b n : Nat
+hn : n ≤ b
+⊢ n + 1 ≤ { ready := 1 + n, provision := b - n }.ready
+'Generative.Logic.Mechanisms.left_unit' depends on axioms: [propext]
+'Generative.Logic.Mechanisms.step_frame' does not depend on any axioms
+'Generative.Logic.Mechanisms.step_mass' depends on axioms: [propext, Quot.sound]
+'Generative.Logic.Mechanisms.trace_mass' depends on axioms: [propext, Quot.sound]
+'Generative.Logic.Mechanisms.reach_mass' depends on axioms: [propext, Quot.sound]
+'Generative.Logic.Mechanisms.form_many' does not depend on any axioms
+'Generative.Logic.Mechanisms.budget_exact' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.Logic.Mechanisms.paid_duplication' does not depend on any axioms
+'Generative.Logic.Mechanisms.paid_contraction' does not depend on any axioms
+'Generative.Logic.Mechanisms.no_free_duplication' depends on axioms: [propext, Quot.sound]
+'Generative.Logic.Mechanisms.no_free_contraction' depends on axioms: [propext, Quot.sound]
+'Generative.Logic.Mechanisms.no_budget_contraction' depends on axioms: [propext, Quot.sound]
+'Generative.Logic.Mechanisms.formation' does not depend on any axioms
+'Generative.Logic.Mechanisms.spending' does not depend on any axioms
+'Generative.Logic.Mechanisms.formed_then_exhausted' depends on axioms: [propext, Quot.sound]
+'Generative.Logic.Mechanisms.Serial.serial_reuse' does not depend on any axioms
+'Generative.Logic.Mechanisms.Serial.no_overlapping_takes' does not depend on any axioms
+'Generative.Logic.Mechanisms.Interference.standalone_duplicate' depends on axioms: [propext]
+'Generative.Logic.Mechanisms.Interference.blocked_stays' does not depend on any axioms
+'Generative.Logic.Mechanisms.Interference.contextual_contraction_fails' depends on axioms: [propext]
+'Generative.Logic.Mechanisms.Interference.primitive_frame_fails' depends on axioms: [propext]

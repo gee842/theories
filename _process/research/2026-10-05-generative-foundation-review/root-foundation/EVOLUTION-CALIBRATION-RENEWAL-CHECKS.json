@@ -1,0 +1,91 @@
+{
+  "checked_at_utc": "2026-10-08T11:17:34.725125+00:00",
+  "status": "passed",
+  "scope": "Owned reference-renewal proof bindings, links, source preservation and C14 integration; no new compilation or full-table review certification.",
+  "proof_receipt_sha256": "0739a10c7523aa2e349e78652a5c2bea8863f4dde320f8495ec60a47558f27f3",
+  "proof_modules": [
+    {
+      "module": "ConnectionistRecovery",
+      "theorems": 29,
+      "audits": 41,
+      "source_sha256": "0c59e2e5d52c5a2fe08c0bbca68b881b417c753103d9ae001ab0b0f35c41ac29"
+    },
+    {
+      "module": "DevelopmentalMemory",
+      "theorems": 28,
+      "audits": 44,
+      "source_sha256": "272a651cf3daaa4e1a44092e42a1589d9e13ad0c86687e71dc7f11d337ef1bd5"
+    },
+    {
+      "module": "UpdaterConsequences",
+      "theorems": 36,
+      "audits": 57,
+      "source_sha256": "56f99117dac7f45781f56e59c77d04ba0872bebe6e03f5778e1b46cc4c59b2c6"
+    },
+    {
+      "module": "CalibratedUpdater",
+      "theorems": 30,
+      "audits": 59,
+      "source_sha256": "a5b8a3c6defa189009367933defb10fe8d0ea2f39e9df368a5594ada60c993ab"
+    },
+    {
+      "module": "CalibrationRenewal",
+      "theorems": 34,
+      "audits": 50,
+      "source_sha256": "87f68ddcd5446dd536c6746aa1258e5637232474d28ebd51158fbdb95145147f"
+    }
+  ],
+  "new_theorems": 34,
+  "new_audits": 50,
+  "inherited_audits": 201,
+  "owned_local_links_checked": 28,
+  "original_pdf_sha256": "a4da950c2db561a67ca938a66543dc6153553d3939deb4e2cf5f089ddfc7af27",
+  "six_broad_completion_requirements_preserved": true,
+  "other_entries_preserved_at_mutation": 92,
+  "other_rendered_lines_preserved_at_mutation": true,
+  "C14_render_matches": true,
+  "full_render_matches_observation_only": true,
+  "pending_global_review": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CHOICE-AND-GENERATIVE-CONTEXT.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-ARGUMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-PROOF-AUDIT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-SOURCES.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/RISK-PRIORITY-INTEGRATION.md"
+    ],
+    "removed_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md"
+    ]
+  },
+  "global_structural_validation_observation_only": [],
+  "owned_reviewed_sources": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CALIBRATION-RENEWAL.md": "e5ddaafc6097bcd902f9d7b7c8024663f0d42aa35069aa0f77e030fad5d6447a",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CALIBRATION-RENEWAL-PROTOCOL.md": "130262d125e00c2a29a73a7d83a51f1d9b84b29174b85e2319c706d2f6998811",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/CalibrationRenewal.lean": "87f68ddcd5446dd536c6746aa1258e5637232474d28ebd51158fbdb95145147f",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/calibration-renewal-verification.json": "0739a10c7523aa2e349e78652a5c2bea8863f4dde320f8495ec60a47558f27f3",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CALIBRATED-UPDATER.md": "32014b9f72a70d7797631ced899fc68985cda4dccf2be68c858a327ad8fb39b0",
+    "sources/15-codex-theory-conversations/2026-10-08-evolution-theoretical-focus.md": "5dc9f0a7f47cbe1fe793fbb86e4125705b73f07112480ac0f30d9cb8a31a71c8",
+    "sources/evolutionary-selection/comparative-direction/README.md": "3dbdd0e58cec383acdc34288337197a615ed0967ec653c4575185fecb69272be"
+  },
+  "documentary_checker_sha256": "b0582fd8e02903251c829291eb615985bdd4dc44c602450284c3cdee4d88ea84"
+}

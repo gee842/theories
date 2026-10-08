@@ -1,0 +1,13 @@
+'Generative.Logic.reach_frame' does not depend on any axioms
+'Generative.Logic.replacement_of_reach' does not depend on any axioms
+'Generative.Logic.reach_of_replacement' does not depend on any axioms
+'Generative.Logic.replacement_iff_reach' does not depend on any axioms
+'Generative.Logic.contraction_iff_duplicate' does not depend on any axioms
+'Generative.Logic.duplicate_finite' does not depend on any axioms
+'Generative.Logic.contraction_finite' does not depend on any axioms
+'Generative.Logic.derivation_sound' does not depend on any axioms
+'Generative.Logic.reach_derivable' does not depend on any axioms
+'Generative.Logic.derivation_iff_reach' does not depend on any axioms
+'Generative.Logic.admissible_contraction_of_duplicate' does not depend on any axioms
+'Generative.Logic.duplicate_of_admissible_contraction' does not depend on any axioms
+'Generative.Logic.admissible_contraction_iff_duplicate' does not depend on any axioms

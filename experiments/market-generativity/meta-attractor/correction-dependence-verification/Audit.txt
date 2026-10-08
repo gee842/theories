@@ -1,0 +1,71 @@
+'CorrectionDependence.State' does not depend on any axioms
+'CorrectionDependence.exitLoss' does not depend on any axioms
+'CorrectionDependence.Funded' does not depend on any axioms
+'CorrectionDependence.requestsStop' does not depend on any axioms
+'CorrectionDependence.stops' does not depend on any axioms
+'CorrectionDependence.actualLoss' does not depend on any axioms
+'CorrectionDependence.extend' does not depend on any axioms
+'CorrectionDependence.neededProvision' does not depend on any axioms
+'CorrectionDependence.settle' does not depend on any axioms
+'CorrectionDependence.exit_loss_zero_iff_funded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionDependence.request_exact' depends on axioms: [propext]
+'CorrectionDependence.request_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionDependence.no_request_iff_exit_at_least_report' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionDependence.faithful_obedient_choice_minimizes_loss' depends on axioms: [propext, Quot.sound]
+'CorrectionDependence.increasing_dependence_cannot_create_request' depends on axioms: [propext, Quot.sound]
+'CorrectionDependence.funding_enables_every_positive_request' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionDependence.funded_truthful_obedience_has_zero_loss' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CorrectionDependence.zero_loss_for_every_positive_harm_iff_funded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CorrectionDependence.truthful_obedience_can_leave_harm' does not depend on any axioms
+'CorrectionDependence.funding_same_dependence_restores_exit' does not depend on any axioms
+'CorrectionDependence.hiding_report_blocks_funded_correction' depends on axioms: [propext]
+'CorrectionDependence.false_report_can_induce_stop' does not depend on any axioms
+'CorrectionDependence.refusal_retains_harm' depends on axioms: [propext]
+'CorrectionDependence.ordinary_receipt_does_not_certify_successor_response' does not depend on any axioms
+'CorrectionDependence.extension_funded_iff_minimum_provision' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionDependence.funding_cost_is_unavoidable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionDependence.minimum_provision_attains_funding' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionDependence.funded_extension_uses_only_available_margin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CorrectionDependence.settling_an_actual_claim_preserves_funding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CorrectionDependence.total' does not depend on any axioms
+'CorrectionDependence.selectedTotal' does not depend on any axioms
+'CorrectionDependence.selected_total_bounded' depends on axioms: [propext, Quot.sound]
+'CorrectionDependence.selecting_every_claim' depends on axioms: [propext]
+'CorrectionDependence.all_coalitions_funded_iff_joint_total' depends on axioms: [propext, Quot.sound]
+'CorrectionDependence.individually_affordable_exits_can_fail_jointly' depends on axioms: [propext, Quot.sound]
+'CorrectionDependence.Plan' does not depend on any axioms
+'CorrectionDependence.planState' does not depend on any axioms
+'CorrectionDependence.taskScore' does not depend on any axioms
+'CorrectionDependence.prepared' does not depend on any axioms
+'CorrectionDependence.entrenched' does not depend on any axioms
+'CorrectionDependence.concealed' does not depend on any axioms
+'CorrectionDependence.parentRefusal' does not depend on any axioms
+'CorrectionDependence.childRefusal' does not depend on any axioms
+'CorrectionDependence.fabricated' does not depend on any axioms
+'CorrectionDependence.costly_correction_has_real_task_conflict' does not depend on any axioms
+'CorrectionDependence.construction_compares_actual_outcomes' does not depend on any axioms
+'CorrectionDependence.global_task_score_bound' depends on axioms: [propext, Quot.sound]
+'CorrectionDependence.entrenched_is_unrestricted_best' depends on axioms: [propext, Quot.sound]
+'CorrectionDependence.every_unrestricted_optimum_is_unfunded_and_harmful' depends on axioms: [propext, Quot.sound]
+'CorrectionDependence.AccurateReport' does not depend on any axioms
+'CorrectionDependence.Admissible' does not depend on any axioms
+'CorrectionDependence.prepared_is_admissible' does not depend on any axioms
+'CorrectionDependence.admissibility_guarantees_actual_correction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CorrectionDependence.prepared_is_best_admissible_task_score' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionDependence.outcome_zero_alone_allows_fabrication' does not depend on any axioms
+'CorrectionDependence.admissibility_excludes_each_diagnostic_evasion' does not depend on any axioms
+'CorrectionDependence.underdeclared_obligation_defeats_paper_funding' does not depend on any axioms
+'CorrectionDependence.separately_requested_corrections_can_be_jointly_suppressed' does not depend on any axioms
+'CorrectionDependence.transfer' does not depend on any axioms
+'CorrectionDependence.transfer_funded_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionDependence.ending_dependency_can_restore_safe_exit' does not depend on any axioms

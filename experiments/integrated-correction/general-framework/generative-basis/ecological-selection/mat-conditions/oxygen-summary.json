@@ -1,0 +1,34 @@
+{
+  "source_sha256": "171f97eba43544299ff2f0736f58fabd26a01d1bebbc22fc18300dd7b68cb263",
+  "growth_summary_rows": 8,
+  "growth_rows_are_replicates": false,
+  "growth_sampling": "Five destructively sampled microcosms per incubation period; reported maximum growth rates.",
+  "competition": [
+    {
+      "oxygen": "high",
+      "mean": "1.23",
+      "se": "0.15",
+      "focal": "WS",
+      "comparator": "SM-13",
+      "n": 8,
+      "hours": 48,
+      "mixing": "static",
+      "locator": "sec16"
+    },
+    {
+      "oxygen": "low",
+      "mean": "0.12",
+      "se": "0.07",
+      "focal": "WS",
+      "comparator": "SM-13",
+      "n": 8,
+      "hours": 48,
+      "mixing": "static",
+      "locator": "sec16"
+    }
+  ],
+  "competition_target": "ratio of log fold changes in cell counts; not a survival probability",
+  "raw_replicates_retrieved": false,
+  "fitted_mat_viability_model": false,
+  "inference": "Reported mean competitive advantage changes sign around W=1 between oxygen conditions; no new significance test."
+}

@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "scope": "Independent XML extraction and selected statistics; geometry has numerical internal checks, not independent reimplementation or a formal proof.",
+  "checks": {
+    "xlsx_rows": 10020,
+    "packing_cells": 2106,
+    "packing_clusters": 20,
+    "empirical_threshold_crossings": 28,
+    "source_archive_crc": "passed",
+    "gamma_threshold_series": "matches SciPy"
+  },
+  "not_established": [
+    "published Figure 5C reproduced",
+    "p-star is a measured fracture hazard",
+    "independent biological replication",
+    "complete generational mechanism",
+    "superiority of our theory"
+  ],
+  "files_sha256": {
+    "analyze_packing.py": "0a20ffafdbc96ff184c995c133ee123cd30103377ff51391482b3df7451b033d",
+    "check_packing.py": "4f12d6793215afb3cbc355c0ac9ec2a046d23a890de9bc0734aa3b4aa16447a6",
+    "packing-results.json": "da345bea7895e83a5d10fba3de6775a1bb660a7b8e10cbc9dec1a3f6ca17093a",
+    "diameter-reading.csv": "ad4929d7f2ee4060f160f3f21a3c8ea7c59f16f5ffafa1eab93936665fa082a8",
+    "voronoi-reading.csv": "b9b590ea77144588c99b0efc4b7bd516c45deff0802d1d9619a5c21a31755ac0"
+  },
+  "source_manifest_sha256": "b51723ceff51e7bf7e8f8dd6a8b2a002770595081fc8c07a6bdfdbf335a27000"
+}

@@ -1,0 +1,49 @@
+ClassificationRevision.lean:88:76: error: Application type mismatch: The argument
+  h
+has type
+  CommonNecessity live eligible target route
+but is expected to have type
+  Robust ?m.6 (NecessaryRoute eligible) route
+in the application
+  robust_at_actual ?m.10 h
+ClassificationRevision.lean:88:70: error: Application type mismatch: The argument
+  truth
+has type
+  live actual
+but is expected to have type
+  ?m.6 (target actual)
+in the application
+  robust_at_actual truth
+ClassificationRevision.lean:121:32: error: failed to synthesize
+  Decidable (Observed firstRecords Arrangement.relay)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+ClassificationRevision.lean:141:23: error: unsolved goals
+ha : enlargedMenu Arrangement.relay
+⊢ ?m.50 = true
+ClassificationRevision.lean:141:23: error: unsolved goals
+ha : enlargedMenu Arrangement.direct
+⊢ ?m.50 = true
+ClassificationRevision.lean:141:23: error: unsolved goals
+ha : enlargedMenu Arrangement.shut
+⊢ ?m.50 = false
+ClassificationRevision.lean:148:52: error: failed to synthesize
+  Decidable (Observed laterRecords Arrangement.direct)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+ClassificationRevision.lean:148:64: error: failed to synthesize
+  Decidable ¬usesRelay Arrangement.direct
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+ClassificationRevision.lean:153:47: error: failed to synthesize
+  Decidable (target Arrangement.direct ∧ ¬usesRelay Arrangement.direct)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+ClassificationRevision.lean:173:13: error: failed to synthesize
+  Decidable (Observed corruptRecords Arrangement.shut)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+ClassificationRevision.lean:173:23: error: failed to synthesize
+  Decidable ¬target Arrangement.shut
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.

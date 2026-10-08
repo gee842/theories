@@ -1,0 +1,170 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T08:56:34.414540+00:00",
+  "scope": "Owned links, original bytes, kernel-check receipt and source bindings, C14 and six preserved broader requirements. No empirical test or repository-wide review.",
+  "links_checked": 29,
+  "links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONSTRUCTIVE-SELECTION-INTEGRATION.md",
+      "reference": "EVOLUTIONARY-ORGANIZATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONSTRUCTIVE-SELECTION-INTEGRATION.md",
+      "reference": "GENERATED-SELECTION-RECURRENCE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONSTRUCTIVE-SELECTION-INTEGRATION.md",
+      "reference": "EVOLUTION-THEORETICAL-INTEGRATION.md#5-what-theoretical-completion-still-requires"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONSTRUCTIVE-SELECTION-INTEGRATION.md",
+      "reference": "DEVELOPMENTAL-HISTORY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONSTRUCTIVE-SELECTION-INTEGRATION.md",
+      "reference": "../../../../sources/evolutionary-selection/reconstructive-selection/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONSTRUCTIVE-SELECTION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/ReconstructiveSelection.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONSTRUCTIVE-SELECTION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/reconstructive-selection-verification/verification.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/reconstructive-selection-verification/README.md",
+      "reference": "../ReconstructiveSelection.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/reconstructive-selection-verification/README.md",
+      "reference": "verification.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/reconstructive-selection-verification/README.md",
+      "reference": "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONSTRUCTIVE-SELECTION-INTEGRATION.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/reconstructive-selection/README.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONSTRUCTIVE-SELECTION-INTEGRATION.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/reconstructive-selection/README.md",
+      "reference": "manifest.json"
+    },
+    {
+      "from": "sources/evolutionary-selection/reconstructive-selection/README.md",
+      "reference": "herron2018.html"
+    },
+    {
+      "from": "sources/evolutionary-selection/reconstructive-selection/README.md",
+      "reference": "pichugin2017.xml"
+    },
+    {
+      "from": "sources/evolutionary-selection/reconstructive-selection/README.md",
+      "reference": "pichugin2020.xml"
+    },
+    {
+      "from": "sources/evolutionary-selection/reconstructive-selection/README.md",
+      "reference": "../evolutionary-organization/README.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/reconstructive-selection/README.md",
+      "reference": "../comparative-direction/README.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-evolution-theoretical-frontier.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONSTRUCTIVE-SELECTION-INTEGRATION.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "reference": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONSTRUCTIVE-SELECTION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md#selection-on-the-capacity-to-reconstruct"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONSTRUCTIVE-SELECTION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "RECONSTRUCTIVE-SELECTION-INTEGRATION.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md",
+      "reference": "ReconstructiveSelection.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md",
+      "reference": "reconstructive-selection-verification/README.md"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "reference": "evolutionary-selection/reconstructive-selection/README.md"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "reference": "15-codex-theory-conversations/2026-10-08-evolution-theoretical-frontier.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "EVOLUTIONARY-ORGANIZATION.md#selection-on-the-capacity-to-reconstruct"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONSTRUCTIVE-SELECTION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONSTRUCTIVE-SELECTION-INTEGRATION.md"
+    }
+  ],
+  "original_sources_checked": 3,
+  "original_bytes": 748311,
+  "new_Lean_theorems": 28,
+  "new_declaration_audits": 40,
+  "owned_index_insertions": 6,
+  "full_theory_requirements_preserved": 6,
+  "other_chain_entries_preserved_at_edit": 89,
+  "C14_matches_paired_data": true,
+  "shared_full_render_matches": true,
+  "shared_structural_errors": [],
+  "shared_reviews_pending": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-ARGUMENT.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-CONTINUITY-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-CARRIER-DIAGNOSIS.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-SOURCES.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md"
+    ],
+    "removed_pages": []
+  },
+  "artifact_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONSTRUCTIVE-SELECTION-INTEGRATION.md": "d5c9877c74bcc68b437bb0d0c8291f363f40716f7ec987b7a06934e9b508786b",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/reconstructive-selection-verification/README.md": "c561d7c8379de882ce54724fad761e680d1b1f6b3672f7b987ed6e6c58279495",
+    "sources/evolutionary-selection/reconstructive-selection/README.md": "95113fdb22f6f633018377933710d783bda24e76e99b1b7d414f16727dc30909",
+    "sources/15-codex-theory-conversations/2026-10-08-evolution-theoretical-frontier.md": "14b44c29b07c05ceed1e2839e8028e496b81e839a1e2508073ea5ea32cfe7ee6",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/ReconstructiveSelection.lean": "c0faf669d3178e2a4284e7ac3191ceb490cfd901bb40c51035774f061a76d197",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/reconstructive-selection-verification/verification.json": "d0d3ab62be074a68649c5b2939dc3fbf9dc45d3dc983bf1b5245562dfa48a66e",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/RECONSTRUCTIVE-SELECTION-INDEX-EDITS.json": "12467191abe0dc10ff4649a50cf4df98297449f63fdb8d44033bfecb80d97fc7",
+    "sources/evolutionary-selection/reconstructive-selection/manifest.json": "d996a7215a373b8e7b6638777718fda886456b6125d0954fafbdd981d10af457"
+  },
+  "checker_sha256": "f6ac9da4cbf343790ad75c9d70b206cfe22bb057af558f434490415c5ae7ae4f"
+}

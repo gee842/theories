@@ -1,0 +1,177 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-10-08T07:57:34.179431+00:00",
+  "scope": "Primary-text preservation and a philosophical route test. Three owned read versions, seven shared fragments and C01 only. Existing proof-source binding, not a new proof check.",
+  "goal": "pursue assumption-free foundation",
+  "previous_goal_turn_classification": "progress: authoritative account changed and independent review completed",
+  "current_progress": "A previously untested universalization route was examined against primary arguments; added commitments and a target-preserving alternative were identified, changing the next inference to test.",
+  "goal_completed": false,
+  "new_theorems": 0,
+  "new_axioms": 0,
+  "new_lean_runs": 0,
+  "new_empirical_runs": 0,
+  "review_scope": "Substantive author counterreview; no new independent-agent acceptance.",
+  "owned_read_versions": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-DIFFERENTIATION-TEST.md": "4e366a77b7320db7b3135397344244b738882fe70098e1f6352f8a178be057db",
+    "sources/nishida-zen-no-kenkyu/PROVENANCE.json": "4de29b670a73ffd475a0a3e10ff75f8d5165ecdb406052da095aba3545c4407c",
+    "sources/james-radical-empiricism/PROVENANCE.json": "87eeed2a295e189d8a45bb25987a2289d9978615f482d98bee14eb266a1a3cec"
+  },
+  "source_originals": {
+    "sources/nishida-zen-no-kenkyu/aozora-original.html": {
+      "sha256": "60e311b1826e53dbc9aaa779cd1efe34ec25941e2e64f683499210cbdcd5c69e",
+      "bytes": 296199,
+      "source_url": "https://www.aozora.gr.jp/cards/000182/files/946_74853.html",
+      "reading_scope": "Publication prefaces; Part II chapter 4 in full; selected paragraphs of Part II chapters 1, 3, 5 and 6 on direct ground, differentiation, causality, unity and universal scope. Prior repository reading covered Part I chapter 1 and prefaces. Retaining the whole HTML does not imply reading the entire book.",
+      "provenance_sha256": "4de29b670a73ffd475a0a3e10ff75f8d5165ecdb406052da095aba3545c4407c"
+    },
+    "sources/james-radical-empiricism/gutenberg-original.html": {
+      "sha256": "fb1d9462675f7f7dd5724ce35d03edad5e20d18c84d98bc2520e4ac5b82d40ef",
+      "bytes": 467479,
+      "source_url": "https://www.gutenberg.org/files/32547/32547-h/32547-h.htm",
+      "reading_scope": "Essay II, sections I–II, on conjunctive relations and degrees of connection; Essay VI selected passages corresponding to printed pp. 158–170, 181–188, on experienced activity, causal attribution and methods. No reading of the entire collection or empirical revalidation is claimed.",
+      "provenance_sha256": "87eeed2a295e189d8a45bb25987a2289d9978615f482d98bee14eb266a1a3cec"
+    }
+  },
+  "historical_receipt": {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/relational-dynamics-verification.json",
+    "sha256": "731bc46e98e475d88212076c828ce225abc0bf1d8e5d2acda3a2eecbd3302f18",
+    "current_source_bindings": {
+      "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicUnderdetermination.lean": "0b5e930ba0a91306e73746c811b71e74fb9ccbc9e152c2e1116c4d19c4147f6c",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalDynamics.lean": "292fff843e984f602b3d5c62c33539abdc4d026ef376501e1f50ca5bce313ca3",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalContinuation.lean": "5357953ee4b838da22d426e831a0a04b782042cb3eb736ed81960110e98799eb"
+    },
+    "scope": "Previous reported validation retained; compiler not rerun and no claim to independently revalidate its past execution."
+  },
+  "shared_fragments": 7,
+  "local_links_checked": 26,
+  "links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-DIFFERENTIATION-TEST.md",
+      "reference": "../../../../sources/15-codex-theory-conversations/2026-10-08-assumption-free-shengsheng-foundation.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-DIFFERENTIATION-TEST.md",
+      "reference": "GENERAL-FOUNDATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-DIFFERENTIATION-TEST.md",
+      "reference": "../../../../sources/nishida-zen-no-kenkyu/aozora-original.html"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-DIFFERENTIATION-TEST.md",
+      "reference": "../../../../sources/nishida-zen-no-kenkyu/PROVENANCE.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-DIFFERENTIATION-TEST.md",
+      "reference": "GROUNDING-INFERENCE-AND-PRESENTATION.md#4-direct-presentation-can-be-a-ground-without-being-an-earlier-theorem"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-DIFFERENTIATION-TEST.md",
+      "reference": "../../../../sources/james-radical-empiricism/gutenberg-original.html"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-DIFFERENTIATION-TEST.md",
+      "reference": "../../../../sources/james-radical-empiricism/PROVENANCE.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-DIFFERENTIATION-TEST.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/DEEPER-GENERATIVE-ROOT.md#3-distinction-underdetermines-dynamics"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-DIFFERENTIATION-TEST.md",
+      "reference": "GENERAL-FOUNDATION-EVIDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-DIFFERENTIATION-TEST.md",
+      "reference": "MODEL-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-DIFFERENTIATION-TEST.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-DIFFERENTIATION-TEST.md",
+      "reference": "IMMANENT-DIFFERENTIATION-CHECKS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-DIFFERENTIATION-TEST.md",
+      "reference": "IMMANENT-DIFFERENTIATION-INDEX-EDITS.json"
+    },
+    {
+      "from": "RESEARCH.md",
+      "reference": "_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-DIFFERENTIATION-TEST.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-DIFFERENTIATION-TEST.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "IMMANENT-DIFFERENTIATION-TEST.md"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "reference": "nishida-zen-no-kenkyu/aozora-original.html"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "reference": "nishida-zen-no-kenkyu/PROVENANCE.json"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "reference": "james-radical-empiricism/gutenberg-original.html"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "reference": "james-radical-empiricism/PROVENANCE.json"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "reference": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-DIFFERENTIATION-TEST.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-DIFFERENTIATION-TEST.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/IMMANENT-DIFFERENTIATION-TEST.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "IMMANENT-DIFFERENTIATION-TEST.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "IMMANENT-DIFFERENTIATION-INDEX-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "IMMANENT-DIFFERENTIATION-CHECKS.json"
+    }
+  ],
+  "owned_rows": [
+    "C01"
+  ],
+  "other_rows_preserved_at_update": 86,
+  "full_table_or_concurrent_work_certified": false,
+  "concurrent_changes_not_certified": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-INFRASTRUCTURE-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-COMPARISON-PROTOCOL.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md"
+    ],
+    "removed_pages": []
+  },
+  "edit_record_sha256": "17ab67a632a2eed0f16b08195d1642a53508a1ddd64e1926e3e2b0bb2a23db81",
+  "renderer_sha256": "200321a64e3d7e9432f97cb4122f39b6217fba17567b3b276e312f144e0ea403"
+}

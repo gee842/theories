@@ -1,0 +1,107 @@
+'Generative.Process' does not depend on any axioms
+'Generative.Enabled' does not depend on any axioms
+'Generative.Trace' does not depend on any axioms
+'Generative.trace_nil_iff' does not depend on any axioms
+'Generative.trace_cons_iff' does not depend on any axioms
+'Generative.trace_singleton_iff' does not depend on any axioms
+'Generative.trace_append_iff' does not depend on any axioms
+'Generative.enabled_iff_singleton_trace' does not depend on any axioms
+'Generative.enabled_difference_implies_state_difference' does not depend on any axioms
+'Generative.Feasible' does not depend on any axioms
+'Generative.feasible_append_iff' does not depend on any axioms
+'Generative.feasible_prefix' does not depend on any axioms
+'Generative.productProcess' does not depend on any axioms
+'Generative.enabled_product_iff' does not depend on any axioms
+'Generative.trace_product_left' does not depend on any axioms
+'Generative.trace_product_right' does not depend on any axioms
+'Generative.trace_product_mk' does not depend on any axioms
+'Generative.trace_product_iff' does not depend on any axioms
+'Generative.feasible_product_iff' does not depend on any axioms
+'Generative.trace_map' does not depend on any axioms
+'Generative.trace_lift' does not depend on any axioms
+'Generative.projected_trace_iff' does not depend on any axioms
+'Generative.projection_exact_iff' does not depend on any axioms
+'Generative.local_exact_iff_trace_exact' does not depend on any axioms
+'Generative.enabled_projection_iff' does not depend on any axioms
+'Generative.feasible_projection_iff' does not depend on any axioms
+'Generative.feasible_difference_implies_projection_difference' does not depend on any axioms
+'Generative.trace_faithful_iff' does not depend on any axioms
+'Generative.LivingOrganization.Recipe' does not depend on any axioms
+'Generative.LivingOrganization.Inventory' does not depend on any axioms
+'Generative.LivingOrganization.process' does not depend on any axioms
+'Generative.LivingOrganization.Touches' does not depend on any axioms
+'Generative.LivingOrganization.touchesDecidable' does not depend on any axioms
+'Generative.LivingOrganization.Present' does not depend on any axioms
+'Generative.LivingOrganization.Closed' does not depend on any axioms
+'Generative.LivingOrganization.Entry' does not depend on any axioms
+'Generative.LivingOrganization.required_pool_is_present' depends on axioms: [propext, Quot.sound]
+'Generative.LivingOrganization.closed_step_preserves_absence' depends on axioms: [propext, Quot.sound]
+'Generative.LivingOrganization.step_pool_origin' depends on axioms: [propext, Quot.sound]
+'Generative.LivingOrganization.EntryOccurs' does not depend on any axioms
+'Generative.LivingOrganization.entry_prepend' depends on axioms: [propext]
+'Generative.LivingOrganization.trace_pool_origin' depends on axioms: [propext, Quot.sound]
+'Generative.LivingOrganization.empty_pool_preserved' depends on axioms: [propext, Quot.sound]
+'Generative.LivingOrganization.actual_operation_origin' depends on axioms: [propext, Quot.sound]
+'Generative.LivingOrganization.operation_after_empty_state_requires_entry' depends on axioms: [propext, Quot.sound]
+'Generative.LivingOrganization.no_actual_operation_from_closed_empty_pool' depends on axioms: [propext, Quot.sound]
+'Generative.LivingOrganization.Component' does not depend on any axioms
+'Generative.LivingOrganization.Operation' does not depend on any axioms
+'Generative.LivingOrganization.exampleRecipes' does not depend on any axioms
+'Generative.LivingOrganization.organizingPool' does not depend on any axioms
+'Generative.LivingOrganization.organizingPoolDecidable' does not depend on any axioms
+'Generative.LivingOrganization.retainedRoutes' does not depend on any axioms
+'Generative.LivingOrganization.allRoutes' does not depend on any axioms
+'Generative.LivingOrganization.stocked' does not depend on any axioms
+'Generative.LivingOrganization.protectedStart' does not depend on any axioms
+'Generative.LivingOrganization.activeStart' does not depend on any axioms
+'Generative.LivingOrganization.partsStart' does not depend on any axioms
+'Generative.LivingOrganization.activated' does not depend on any axioms
+'Generative.LivingOrganization.protectedProduct' does not depend on any axioms
+'Generative.LivingOrganization.assembled' does not depend on any axioms
+'Generative.LivingOrganization.assembledProduct' does not depend on any axioms
+'Generative.LivingOrganization.material' does not depend on any axioms
+'Generative.LivingOrganization.example_step_preserves_material' depends on axioms: [propext, Quot.sound]
+'Generative.LivingOrganization.example_trace_preserves_material' depends on axioms: [propext, Quot.sound]
+'Generative.LivingOrganization.retained_recipes_are_closed' depends on axioms: [propext, Quot.sound]
+'Generative.LivingOrganization.assembly_is_pool_entry' depends on axioms: [propext, Quot.sound]
+'Generative.LivingOrganization.parts_have_no_organizing_pool' depends on axioms: [propext]
+'Generative.LivingOrganization.matched_material_and_support' does not depend on any axioms
+'Generative.LivingOrganization.active_form_can_immediately_produce' does not depend on any axioms
+'Generative.LivingOrganization.dissociated_parts_do_not_enable_production' depends on axioms: [propext]
+'Generative.LivingOrganization.protected_form_does_not_immediately_produce' depends on axioms: [propext]
+'Generative.LivingOrganization.retained_activation_and_production' depends on axioms: [propext]
+'Generative.LivingOrganization.assembly_and_production' does not depend on any axioms
+'Generative.LivingOrganization.production_from_parts_requires_entry' depends on axioms: [propext, Quot.sound]
+'Generative.LivingOrganization.retained_routes_do_not_bootstrap_from_parts' depends on axioms: [propext, Quot.sound]
+'Generative.LivingAllocation.aggregate' does not depend on any axioms
+'Generative.LivingAllocation.batchProcess' does not depend on any axioms
+'Generative.LivingAllocation.batch_serializes' depends on axioms: [propext, Quot.sound]
+'Generative.LivingAllocation.batches_serialize' depends on axioms: [propext, Quot.sound]
+'Generative.LivingAllocation.usesIn' does not depend on any axioms
+'Generative.LivingAllocation.uses_le_aggregate_inputs' depends on axioms: [propext, Quot.sound]
+'Generative.LivingAllocation.batch_uses_bound' depends on axioms: [propext, Quot.sound]
+'Generative.LivingAllocation.increase' does not depend on any axioms
+'Generative.LivingAllocation.increase_eq_actual' depends on axioms: [propext, Quot.sound]
+'Generative.LivingAllocation.count_after_le' depends on axioms: [propext, Quot.sound]
+'Generative.LivingAllocation.totalUses' does not depend on any axioms
+'Generative.LivingAllocation.laterCredit' does not depend on any axioms
+'Generative.LivingAllocation.allocation_horizon_bound' depends on axioms: [propext, Quot.sound]
+'Generative.LivingAllocation.credit_zero_without_increases' depends on axioms: [propext]
+'Generative.LivingAllocation.allocation_bound_without_increases' depends on axioms: [propext, Quot.sound]
+'Generative.LivingAllocation.Participant' does not depend on any axioms
+'Generative.LivingAllocation.Activity' does not depend on any axioms
+'Generative.LivingAllocation.exampleRecipes' does not depend on any axioms
+'Generative.LivingAllocation.allActivities' does not depend on any axioms
+'Generative.LivingAllocation.stock' does not depend on any axioms
+'Generative.LivingAllocation.productiveUses' does not depend on any axioms
+'Generative.LivingAllocation.example_requires_participant' does not depend on any axioms
+'Generative.LivingAllocation.partialStart' does not depend on any axioms
+'Generative.LivingAllocation.activatedStart' does not depend on any axioms
+'Generative.LivingAllocation.twoProducts' does not depend on any axioms
+'Generative.LivingAllocation.fourProducts' does not depend on any axioms
+'Generative.LivingAllocation.activation_and_production_compete' depends on axioms: [propext]
+'Generative.LivingAllocation.shared_support_competes' depends on axioms: [propext]
+'Generative.LivingAllocation.activation_then_four_products' depends on axioms: [propext, Quot.sound]
+'Generative.LivingAllocation.production_only_has_no_increase' depends on axioms: [propext]
+'Generative.LivingAllocation.three_batches_without_activation' depends on axioms: [propext, Quot.sound]
+'Generative.LivingAllocation.sequential_reuse_exceeds_joint_allocation' depends on axioms: [propext]

@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-08",
+  "archive_sha256": "fe931fe108f940d229f5c2a33deb8b5e7b1838a6dc68d5b8934b7e2b6735725d",
+  "members": [
+    {
+      "member": "lce-genealogies-main/01_genealogies.ipynb",
+      "bytes": 15112,
+      "sha256": "ebe88cc22c75957cddbeab4b34e5c15fc4c8944da2aa9de9a2d3abdfee22e27c",
+      "scope": "Source inspected, not executed; dodo.py survival task and python-env.txt colgen pin inspected selectively."
+    },
+    {
+      "member": "lce-genealogies-main/03_survival.ipynb",
+      "bytes": 12977,
+      "sha256": "b6a8b70f65291e6a846173cd20df6dd20cd658116d0ce64abf79279a120569cd",
+      "scope": "Source inspected, not executed; dodo.py survival task and python-env.txt colgen pin inspected selectively."
+    },
+    {
+      "member": "lce-genealogies-main/07_compare_fit.ipynb",
+      "bytes": 4600,
+      "sha256": "ffece29bdb1b234286b9bb705d437cfe56ee477b6ebd51b5ee2e839f630d7e29",
+      "scope": "Source inspected, not executed; dodo.py survival task and python-env.txt colgen pin inspected selectively."
+    },
+    {
+      "member": "lce-genealogies-main/dodo.py",
+      "bytes": 15281,
+      "sha256": "67840eb3653a902d2d2c74021256481f57a74e8e8fad2e52660406737d94e071",
+      "scope": "Source inspected, not executed; dodo.py survival task and python-env.txt colgen pin inspected selectively."
+    },
+    {
+      "member": "lce-genealogies-main/python-env.txt",
+      "bytes": 1320,
+      "sha256": "7667166b58d4584728ffadc008d208fdcd5bd011942bf64205a2cd61bf7892a4",
+      "scope": "Source inspected, not executed; dodo.py survival task and python-env.txt colgen pin inspected selectively."
+    }
+  ],
+  "colgen_record": "colgen/manifest.json"
+}

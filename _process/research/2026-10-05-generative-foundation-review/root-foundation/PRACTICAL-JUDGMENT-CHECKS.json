@@ -1,0 +1,125 @@
+{
+  "status": "passed",
+  "date": "2026-10-08 Asia/Bangkok",
+  "scope": "Document links and exact successful Lean receipt binding, not a new proof or empirical run.",
+  "local_links_checked": 26,
+  "retained_artifacts_checked": 9,
+  "theorems": 30,
+  "explicit_declarations": 46,
+  "sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md": "fb3cc84f77a12180a65e0cea3085f09c5339874f1322360e4d774e9f2ae0e5de",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md": "6163c19590b61c1a89385c055ba4ce1ca4382365286885b331913e4f9b41c040",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-REVIEW.md": "8661acf99d7d013029deaa71344262861d9ce2bffd7b3c5177f46fb8c79c0d15",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_practical_judgment.py": "7883fd1d3ab49d80f5d47c5cf2d13eedcadfe2a90f2b677248fc2a4b1abe2ac9",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/practical-judgment-verification.json": "b9857bbfc496d0133a127a1a0799fd0bff35defd1bbba11dc902d806ab126174",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-CHECK.py": "7b23b52f3809fe145591fa253b7f8b06ce95fb128cca77463020fdd79ef15a1a"
+  },
+  "bilingual_entries": 65,
+  "links": [
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-PREMISE-DERIVATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-LOSS-COMPARISON-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md",
+      "target": "NONDUAL-METHOD.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-08-alignment-grounding-axiom-correction.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-08-alignment-grounding-axiom-correction.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_practical_judgment.py"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/practical-judgment-verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-08-alignment-grounding-axiom-correction.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-self-good-within-the-whole.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-generative-language-and-formation.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "GENERATIVE-PREMISE-DERIVATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "GENERATIVE-TRADEOFF-ARGUMENT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "GENERATIVE-LOSS-COMPARISON-INTEGRATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "LIANGZHI-PRACTICAL-ARGUMENT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "LIANGZHI-PRACTICAL-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "PRACTICAL-JUDGMENT-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-INTEGRATION.md",
+      "target": "PRACTICAL-JUDGMENT-CHECKS.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-REVIEW.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-08-alignment-grounding-axiom-correction.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-REVIEW.md",
+      "target": "PRACTICAL-JUDGMENT-INTEGRATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PRACTICAL-JUDGMENT-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    }
+  ]
+}

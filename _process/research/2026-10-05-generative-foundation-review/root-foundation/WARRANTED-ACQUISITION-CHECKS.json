@@ -1,0 +1,416 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T09:59:54.571483+00:00",
+  "scope": "Owned source versions, links, link-only provenance, review disposition and paired M20. No philosophical, empirical or full-table certification by this script.",
+  "checker_sha256": "5d9a253dac0680b90112c7c58ffa419586857cd6a1b68f960a02a3dce0d8b9fe",
+  "edits_sha256": "b74d718797538cd70a2aaaaa1030e4bde43e697f1a63590c3f3f5af59193be66",
+  "owned_reviewed_sources": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-PROTOCOL.md": "e75e44c74e8e55420009b80e231728ca7178d8bd3ac6f998c53133cfb66a5180",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-ARGUMENT.md": "8443d2afc30ffda13a0859bcaaef90ca7538895d595641024968e2bfbdd6879a",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-SOURCES.md": "dc84d292f65baf98e06d0fb943dd51a794e316494cdba7bb64bd6c78c0efae22",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-EVIDENCE-AUDIT.md": "4424e7562f38936e511cb9029e4506eb089b45cc90b8dee692a4d4eca4a0be71",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-INTEGRATION.md": "c94d6cbdd6004318fff068bad2f7f414ec810705c48405e2df08e9293c7bd93b",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-REVIEW.md": "f12c190198161421e2951b31c1f4da65e3453c4ace6dbf9078e1447fb80606dc",
+    "sources/communication-authorship/README.md": "bd2be01ae2dadaaa24ffb30f8f4c09e3067fd82b2524d12c4973ef4aaed74573",
+    "sources/communication-authorship/manifest.json": "5cd6a13d377466bdd40836d94a6ddc783cfde5e1b562b7750775218e3d12c834"
+  },
+  "local_links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-PROTOCOL.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-PROTOCOL.md",
+      "to": "SELECTOR-REVIEW-COVERAGE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-PROTOCOL.md",
+      "to": "KNOWLEDGE-REVISION-AND-OBJECTIVITY.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-PROTOCOL.md",
+      "to": "SOURCE-RELIANCE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-PROTOCOL.md",
+      "to": "MODEL-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-PROTOCOL.md",
+      "to": "CLASSIFICATION-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-PROTOCOL.md",
+      "to": "CALIBRATION-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-PROTOCOL.md",
+      "to": "WARRANTED-ACQUISITION-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-PROTOCOL.md",
+      "to": "WARRANTED-ACQUISITION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-PROTOCOL.md",
+      "to": "WARRANTED-ACQUISITION-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-PROTOCOL.md",
+      "to": "WARRANTED-ACQUISITION-EVIDENCE-AUDIT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-PROTOCOL.md",
+      "to": "WARRANTED-ACQUISITION-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-ARGUMENT.md",
+      "to": "../../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-ARGUMENT.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-ARGUMENT.md",
+      "to": "SELECTOR-REVIEW-COVERAGE-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-ARGUMENT.md",
+      "to": "KNOWLEDGE-PROJECTION-AND-RISK.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-ARGUMENT.md",
+      "to": "SHARED-INQUIRY-AND-STANDING.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-ARGUMENT.md",
+      "to": "SOURCE-RELIANCE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-ARGUMENT.md",
+      "to": "MODEL-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-ARGUMENT.md",
+      "to": "CLASSIFICATION-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-ARGUMENT.md",
+      "to": "WARRANTED-ACQUISITION-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-ARGUMENT.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEASURED-FEEDBACK-CORRESPONDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-ARGUMENT.md",
+      "to": "BOUND-CALIBRATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-ARGUMENT.md",
+      "to": "LAW-CORRESPONDENCE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-SOURCES.md",
+      "to": "WARRANTED-ACQUISITION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-SOURCES.md",
+      "to": "../../../../sources/communication-authorship/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-SOURCES.md",
+      "to": "WARRANTED-ACQUISITION-ARGUMENT.md#6-npl-的实际校准修正未经完全认证的新路线也能提供约束"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-SOURCES.md",
+      "to": "WARRANTED-ACQUISITION-ARGUMENT.md#7-另外两项主要来源及强对手"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-SOURCES.md",
+      "to": "WARRANTED-ACQUISITION-EVIDENCE-AUDIT.md#reuse-of-completed-formal-work"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-SOURCES.md",
+      "to": "WARRANTED-ACQUISITION-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-EVIDENCE-AUDIT.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-EVIDENCE-AUDIT.md",
+      "to": "WARRANTED-ACQUISITION-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-EVIDENCE-AUDIT.md",
+      "to": "SOURCE-RELIANCE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-EVIDENCE-AUDIT.md",
+      "to": "MODEL-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-EVIDENCE-AUDIT.md",
+      "to": "KNOWLEDGE-CORRESPONDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-EVIDENCE-AUDIT.md",
+      "to": "CLASSIFICATION-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-EVIDENCE-AUDIT.md",
+      "to": "SELECTOR-REVIEW-COVERAGE-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-INTEGRATION.md",
+      "to": "WARRANTED-ACQUISITION-PROTOCOL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-INTEGRATION.md",
+      "to": "WARRANTED-ACQUISITION-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-INTEGRATION.md",
+      "to": "WARRANTED-ACQUISITION-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-INTEGRATION.md",
+      "to": "WARRANTED-ACQUISITION-EVIDENCE-AUDIT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-INTEGRATION.md",
+      "to": "WARRANTED-ACQUISITION-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-INTEGRATION.md",
+      "to": "SELECTOR-REVIEW-COVERAGE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-INTEGRATION.md",
+      "to": "WARRANTED-ACQUISITION-SOURCES.md#communication-source-and-compact-factual-ledger"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-INTEGRATION.md",
+      "to": "WARRANTED-ACQUISITION-EVIDENCE-AUDIT.md#an-excluded-use-need-not-erase-the-events-other-significance"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-INTEGRATION.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-INTEGRATION.md",
+      "to": "WARRANTED-ACQUISITION-ARGUMENT.md#6-npl-的实际校准修正未经完全认证的新路线也能提供约束"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-INTEGRATION.md",
+      "to": "WARRANTED-ACQUISITION-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-INTEGRATION.md",
+      "to": "WARRANTED-ACQUISITION-SOURCES.md#communication-source-and-compact-factual-ledger"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-INTEGRATION.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#warranted-acquisition-and-retained-participation"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-INTEGRATION.md",
+      "to": "WARRANTED-ACQUISITION-INDEX-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-INTEGRATION.md",
+      "to": "WARRANTED-ACQUISITION-CHECKS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-REVIEW.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-REVIEW.md",
+      "to": "WARRANTED-ACQUISITION-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-REVIEW.md",
+      "to": "WARRANTED-ACQUISITION-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-REVIEW.md",
+      "to": "WARRANTED-ACQUISITION-EVIDENCE-AUDIT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-REVIEW.md",
+      "to": "CLASSIFICATION-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-REVIEW.md",
+      "to": "SOURCE-RELIANCE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-REVIEW.md",
+      "to": "MODEL-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-REVIEW.md",
+      "to": "KNOWLEDGE-CORRESPONDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-REVIEW.md",
+      "to": "SEMANTIC-CALIBRATION-IDENTIFICATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-REVIEW.md",
+      "to": "KNOWLEDGE-REASONS-AND-STANDARDS.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-REVIEW.md",
+      "to": "KNOWLEDGE-REVISION-AND-OBJECTIVITY.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-REVIEW.md",
+      "to": "SCIENTIFIC-PHILOSOPHY-AND-GENERATIVE-WARRANT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-REVIEW.md",
+      "to": "WARRANTED-ACQUISITION-INTEGRATION.md"
+    },
+    {
+      "from": "sources/communication-authorship/README.md",
+      "to": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-INTEGRATION.md"
+    },
+    {
+      "from": "sources/communication-authorship/README.md",
+      "to": "manifest.json"
+    },
+    {
+      "from": "sources/communication-authorship/README.md",
+      "to": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-SOURCES.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-SOURCES.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-REVIEW.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "to": "unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#warranted-acquisition-and-retained-participation"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "to": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "WARRANTED-ACQUISITION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "WARRANTED-ACQUISITION-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "WARRANTED-ACQUISITION-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "WARRANTED-ACQUISITION-REVIEW.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "ALIGNMENT-AND-GOVERNANCE.md#warranted-acquisition-and-retained-participation"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "to": "../unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#warranted-acquisition-and-retained-participation"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "to": "WARRANTED-ACQUISITION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "to": "WARRANTED-ACQUISITION-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "to": "WARRANTED-ACQUISITION-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "to": "WARRANTED-ACQUISITION-INDEX-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "to": "WARRANTED-ACQUISITION-CHECKS.json"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "to": "communication-authorship/README.md"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "to": "../_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-SOURCES.md"
+    }
+  ],
+  "new_theorems": 0,
+  "new_experiments": 0,
+  "raw_data_replications": 0,
+  "unchanged_lean_not_rerun": true,
+  "independent_review": {
+    "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-REVIEW.md",
+    "sha256": "f12c190198161421e2951b31c1f4da65e3453c4ace6dbf9078e1447fb80606dc",
+    "disposition": "accepted at the declared scope"
+  },
+  "paired_row": "M20",
+  "other_entries_preserved_at_mutation": true,
+  "other_rendered_lines_preserved_at_mutation": true,
+  "unowned_review_hashes_preserved_at_mutation": true,
+  "scoped_render": "Canonical renderer; only M20 replaced and other lines retained.",
+  "global_check": {
+    "exit_code": 2,
+    "stdout": "{\n  \"status\": \"needs-review\",\n  \"errors\": [\n    \"Linked source versions changed; reread affected entries before rendering.\"\n  ],\n  \"changes\": {\n    \"modified_sources\": [\n      \"RESEARCH.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md\",\n      \"sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md\",\n      \"theories/shengsheng-buxi-generative-existence/README.md\",\n      \"theories/shengsheng-buxi-generative-existence/results/ROADMAP.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md\",\n      \"sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md\"\n    ],\n    \"missing_sources\": [],\n    \"new_pages\": [\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-DEVELOPMENTAL-MEMORY-PROTOCOL.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-DEVELOPMENTAL-MEMORY.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md\"\n    ],\n    \"removed_pages\": []\n  }\n}\n",
+    "stderr": ""
+  },
+  "pending_global_changes": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-DEVELOPMENTAL-MEMORY-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-DEVELOPMENTAL-MEMORY.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md"
+    ],
+    "removed_pages": []
+  }
+}

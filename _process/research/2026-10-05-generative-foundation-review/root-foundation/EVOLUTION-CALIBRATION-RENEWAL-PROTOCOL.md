@@ -1,0 +1,11 @@
+# Reference renewal through changed transmission: prospective scope
+
+8 October 2026. Ren wrote “继续” after [acquired calibration and updater construction](EVOLUTION-CALIBRATED-UPDATER.md). AI-authored theoretical continuation, not a new empirical requirement.
+
+The named connection is renewed reference contact → detected change in the retained indication relation → actual record revision → corrected updating of the same memory network. A false-success report cannot be the sole trigger for checking itself. Specify a reference-check opportunity independently of that report; derive its change decision from acquired values, rather than supplying a correct alarm.
+
+Prove completeness of two reference values for the specified affine channel class; retain a one-reference blind case. Construct a supported inspection that acquires all six coordinate reference readings, compares them with installed records, retains an unchanged calibration or revises changed rows. Distinguish support for inspection from support for record revision. Unavailable inspection or unaffordable revision must not certify an old reader. The contact, reference-binding, sequencing and functional component laws remain explicit.
+
+Connect the resulting apparatus to actual response-sensitive updates, finite task blocks and the existing operational cycle interface. Permit changed channels between blocks while declaring the required relation within a reference/use block. Preserve late change, mixed-epoch reference, constant-channel and funding failures. Acquisition does not itself prove continued transfer. Account for any new inspection reserve at its stated entrance; do not replenish the predecessor's exhausted operational source by implication.
+
+Reuse acquired recipe grounding, formed monitoring and relational correction. Their physical histories and budgets are not automatically identical to this real-valued model. All new mathematical claims require actual Lean compilation and declaration audits. Preserve the predecessor's 30/59 result and 201 import-closure audits separately. Integrate a substantive counterreview, primary comparison and the paired C14 entry; no general calibration/monitoring restart, independent-agent acceptance or broad theoretical superiority is claimed.

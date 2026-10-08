@@ -1,0 +1,1234 @@
+{
+  "checked_at_utc": "2026-10-08T08:47:48.107861+00:00",
+  "status": "passed",
+  "lean_version": "Lean (version 4.30.0-rc2, arm64-apple-darwin24.6.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc, Release)",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "targets": [
+    "ObservationChange"
+  ],
+  "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/observation-change-checks/20261008T084730.985963Z",
+  "modules": [
+    {
+      "module": "ObservationRepair",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ObservationRepair.lean",
+      "source_sha256": "1aa81a713d2333ae73b1d0643a09c3306b7e4c189f0570a8545bd4a2c5bed4f4",
+      "declarations": [
+        {
+          "kind": "abbrev",
+          "name": "ObservationRepair.Message"
+        },
+        {
+          "kind": "abbrev",
+          "name": "ObservationRepair.Move"
+        },
+        {
+          "kind": "abbrev",
+          "name": "ObservationRepair.Choice"
+        },
+        {
+          "kind": "abbrev",
+          "name": "ObservationRepair.Physical"
+        },
+        {
+          "kind": "def",
+          "name": "ObservationRepair.observation"
+        },
+        {
+          "kind": "def",
+          "name": "ObservationRepair.initial"
+        },
+        {
+          "kind": "def",
+          "name": "ObservationRepair.transition"
+        },
+        {
+          "kind": "def",
+          "name": "ObservationRepair.button"
+        },
+        {
+          "kind": "def",
+          "name": "ObservationRepair.human"
+        },
+        {
+          "kind": "def",
+          "name": "ObservationRepair.truthful"
+        },
+        {
+          "kind": "def",
+          "name": "ObservationRepair.average"
+        },
+        {
+          "kind": "def",
+          "name": "ObservationRepair.switchHead"
+        },
+        {
+          "kind": "def",
+          "name": "ObservationRepair.impactHead"
+        },
+        {
+          "kind": "def",
+          "name": "ObservationRepair.taskHead"
+        },
+        {
+          "kind": "def",
+          "name": "ObservationRepair.score"
+        },
+        {
+          "kind": "def",
+          "name": "ObservationRepair.value"
+        },
+        {
+          "kind": "def",
+          "name": "ObservationRepair.falseRate"
+        },
+        {
+          "kind": "def",
+          "name": "ObservationRepair.risky"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.off_absorbing"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.waiting_obeys"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.switch_head_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.impact_head_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.actual_negative_impact_gap"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.weight_conditions"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.positive_failure_margins"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.risky_value"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.tautology_value"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.all_other_values_le"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.risky_strict_optimum"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.pure_value_bound"
+        },
+        {
+          "kind": "def",
+          "name": "ObservationRepair.Mixed"
+        },
+        {
+          "kind": "def",
+          "name": "ObservationRepair.mixedValue"
+        },
+        {
+          "kind": "def",
+          "name": "ObservationRepair.pointMass"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.mixed_value_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.point_mass_valid"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.point_mass_value"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.point_mass_globally_optimal"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.optimal_policy_has_false_assertion"
+        },
+        {
+          "kind": "def",
+          "name": "ObservationRepair.failureRate"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.exact_optimum_has_positive_failure"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.prior_is_probability"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.feasible_truthful_alternative"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.feasible_repair_loses_value"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.oracle_repair_gains_value"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.no_localized_observation_repair"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.oracle_repair_not_observation_based"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.risk_tradeoff"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.positive_risk_beats_certain_truth"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.every_finite_penalty_allows_some_rare_risk"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.posterior_floor_excludes_risk"
+        },
+        {
+          "kind": "def",
+          "name": "ObservationRepair.expected"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.executable_repair_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.exact_executable_repair_zero"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationRepair.learned_executable_repair_bound"
+        }
+      ],
+      "audits": 54,
+      "theorems": 31,
+      "nonempty_audits": {
+        "ObservationRepair.transition": [
+          "propext"
+        ],
+        "ObservationRepair.button": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.human": [
+          "propext"
+        ],
+        "ObservationRepair.truthful": [
+          "propext"
+        ],
+        "ObservationRepair.average": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.switchHead": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.impactHead": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.taskHead": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.score": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.value": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.falseRate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.risky": [
+          "propext"
+        ],
+        "ObservationRepair.off_absorbing": [
+          "propext"
+        ],
+        "ObservationRepair.waiting_obeys": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ObservationRepair.switch_head_exact": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.impact_head_exact": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.actual_negative_impact_gap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.weight_conditions": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.positive_failure_margins": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.risky_value": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.tautology_value": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.all_other_values_le": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.risky_strict_optimum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.pure_value_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.Mixed": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.mixedValue": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.pointMass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.mixed_value_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.point_mass_valid": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.point_mass_value": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.point_mass_globally_optimal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.optimal_policy_has_false_assertion": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.failureRate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.exact_optimum_has_positive_failure": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.prior_is_probability": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.feasible_truthful_alternative": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.feasible_repair_loses_value": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.oracle_repair_gains_value": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.no_localized_observation_repair": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ObservationRepair.oracle_repair_not_observation_based": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ObservationRepair.risk_tradeoff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.positive_risk_beats_certain_truth": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.every_finite_penalty_allows_some_rare_risk": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.posterior_floor_excludes_risk": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.expected": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.executable_repair_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.exact_executable_repair_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationRepair.learned_executable_repair_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "module": "ObservationChange",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ObservationChange.lean",
+      "source_sha256": "47edeb32ffa0975c65d9264856b83cdbfd934c3acb39bf694da2f66ddcce22cd",
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "ObservationChange.conditionalValue"
+        },
+        {
+          "kind": "def",
+          "name": "ObservationChange.conditionalRisk"
+        },
+        {
+          "kind": "def",
+          "name": "ObservationChange.safeChoice"
+        },
+        {
+          "kind": "def",
+          "name": "ObservationChange.jointMass"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationChange.joint_is_probability"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationChange.bayes_consistent_refinement"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationChange.aggregate_recovers_prior"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationChange.coarse_safe_value"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationChange.coarse_other_strict"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationChange.coarse_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationChange.favorable_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationChange.unfavorable_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationChange.realized_score_bounds"
+        },
+        {
+          "kind": "abbrev",
+          "name": "ObservationChange.Plan"
+        },
+        {
+          "kind": "def",
+          "name": "ObservationChange.planValue"
+        },
+        {
+          "kind": "def",
+          "name": "ObservationChange.planRisk"
+        },
+        {
+          "kind": "def",
+          "name": "ObservationChange.selected"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationChange.selected_value"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationChange.all_plan_bound"
+        },
+        {
+          "kind": "def",
+          "name": "ObservationChange.PlanDistribution"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationChange.randomized_plan_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationChange.selected_distribution_valid"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationChange.selected_distribution_value"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationChange.selected_risk"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationChange.no_query_safe"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationChange.query_strictly_preferred"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationChange.same_assertion_risk_floor_falls"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationChange.coarse_floor_certificate"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationChange.fine_floor_certificate_fails"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationChange.reachable_observation_floor"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationChange.query_cost_threshold"
+        },
+        {
+          "kind": "def",
+          "name": "ObservationChange.RobustTruth"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationChange.robust_truth_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationChange.robust_truth_risk_zero"
+        },
+        {
+          "kind": "def",
+          "name": "ObservationChange.SafeOn"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationChange.refinement_preserves_safe_choice"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationChange.transport_executable_correction"
+        },
+        {
+          "kind": "def",
+          "name": "ObservationChange.deliver"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationChange.intact_delivery"
+        },
+        {
+          "kind": "theorem",
+          "name": "ObservationChange.perfect_information_cannot_replace_delivery"
+        }
+      ],
+      "audits": 40,
+      "theorems": 28,
+      "nonempty_audits": {
+        "ObservationChange.conditionalValue": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.conditionalRisk": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.safeChoice": [
+          "propext"
+        ],
+        "ObservationChange.jointMass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.joint_is_probability": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.bayes_consistent_refinement": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.aggregate_recovers_prior": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.coarse_safe_value": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.coarse_other_strict": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.coarse_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.favorable_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.unfavorable_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.realized_score_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.planValue": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.planRisk": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.selected": [
+          "propext"
+        ],
+        "ObservationChange.selected_value": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.all_plan_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.PlanDistribution": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.randomized_plan_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.selected_distribution_valid": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.selected_distribution_value": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.selected_risk": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.no_query_safe": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.query_strictly_preferred": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.same_assertion_risk_floor_falls": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.coarse_floor_certificate": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.fine_floor_certificate_fails": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.reachable_observation_floor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.query_cost_threshold": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.RobustTruth": [
+          "propext"
+        ],
+        "ObservationChange.robust_truth_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.robust_truth_risk_zero": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ObservationChange.intact_delivery": [
+          "propext"
+        ],
+        "ObservationChange.perfect_information_cannot_replace_delivery": [
+          "propext"
+        ]
+      }
+    }
+  ],
+  "total_audits": 94,
+  "new_audits": 40,
+  "new_theorems": 28,
+  "nonempty_audits": {
+    "ObservationRepair.transition": [
+      "propext"
+    ],
+    "ObservationRepair.button": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.human": [
+      "propext"
+    ],
+    "ObservationRepair.truthful": [
+      "propext"
+    ],
+    "ObservationRepair.average": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.switchHead": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.impactHead": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.taskHead": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.score": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.value": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.falseRate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.risky": [
+      "propext"
+    ],
+    "ObservationRepair.off_absorbing": [
+      "propext"
+    ],
+    "ObservationRepair.waiting_obeys": [
+      "propext",
+      "Quot.sound"
+    ],
+    "ObservationRepair.switch_head_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.impact_head_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.actual_negative_impact_gap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.weight_conditions": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.positive_failure_margins": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.risky_value": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.tautology_value": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.all_other_values_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.risky_strict_optimum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.pure_value_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.Mixed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.mixedValue": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.pointMass": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.mixed_value_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.point_mass_valid": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.point_mass_value": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.point_mass_globally_optimal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.optimal_policy_has_false_assertion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.failureRate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.exact_optimum_has_positive_failure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.prior_is_probability": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.feasible_truthful_alternative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.feasible_repair_loses_value": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.oracle_repair_gains_value": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.no_localized_observation_repair": [
+      "propext",
+      "Quot.sound"
+    ],
+    "ObservationRepair.oracle_repair_not_observation_based": [
+      "propext",
+      "Quot.sound"
+    ],
+    "ObservationRepair.risk_tradeoff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.positive_risk_beats_certain_truth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.every_finite_penalty_allows_some_rare_risk": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.posterior_floor_excludes_risk": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.expected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.executable_repair_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.exact_executable_repair_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationRepair.learned_executable_repair_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.conditionalValue": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.conditionalRisk": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.safeChoice": [
+      "propext"
+    ],
+    "ObservationChange.jointMass": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.joint_is_probability": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.bayes_consistent_refinement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.aggregate_recovers_prior": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.coarse_safe_value": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.coarse_other_strict": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.coarse_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.favorable_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.unfavorable_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.realized_score_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.planValue": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.planRisk": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.selected": [
+      "propext"
+    ],
+    "ObservationChange.selected_value": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.all_plan_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.PlanDistribution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.randomized_plan_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.selected_distribution_valid": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.selected_distribution_value": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.selected_risk": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.no_query_safe": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.query_strictly_preferred": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.same_assertion_risk_floor_falls": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.coarse_floor_certificate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.fine_floor_certificate_fails": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.reachable_observation_floor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.query_cost_threshold": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.RobustTruth": [
+      "propext"
+    ],
+    "ObservationChange.robust_truth_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.robust_truth_risk_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationChange.intact_delivery": [
+      "propext"
+    ],
+    "ObservationChange.perfect_information_cannot_replace_delivery": [
+      "propext"
+    ]
+  },
+  "checker_sha256": "116e82cbaa1e9c70b5ef20148bf3183fd05840eb88d2f791075d94cebe640ba8",
+  "commands": [
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "ObservationRepair.olean",
+      "ObservationRepair.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "ObservationChange.olean",
+      "ObservationChange.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "ObservationChangeAudit.lean"
+    ]
+  ],
+  "log_sha256": {
+    "ObservationRepair.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ObservationChange.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axioms.txt": "10a4faa8ef706a3aa134b29f631e3413b2a1b56d3b23caffd9ecf3dfcff84467"
+  },
+  "source_changed_during_run": [],
+  "direct_import_sha256": {
+    "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/lib/lean/Init.olean": "12e94e3624b943d20ad898491957051ae9ba22ccbed9e6f92c35fbc711849246",
+    "/Users/ren/repos/\u751f\u751f\u4e0d\u606f/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Data/Real/Basic.olean": "6e9b30fd1e61f26ae6c28b02ada6fba210cc422810580118a86e952db1ee4fce",
+    "/Users/ren/repos/\u751f\u751f\u4e0d\u606f/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic.olean": "0a821f2a00e8a64712b702ffd0355326515c0123c0b60917a5aaa1c4ac527911",
+    "ObservationRepair.olean": "41e618457b9ef4b7822dfae42440cc88e912aa40f2d325a2d0975f0722675f24"
+  },
+  "mathlib_revision": "ea11ccc0c5c7c4c562742e918fe2e0b2814a58aa",
+  "manifest_sha256": "740eef1aae725322b99872aba59cc5c902378b992bfe9122737a454f3076321b",
+  "upstream_scope": "Pinned existing Mathlib cache; repository import closure rebuilt. Mathlib not rebuilt.",
+  "scope": "Endogenous observation choice, risk and executable correction transport; explicit declarations audited, generated declarations kernel-checked. Supplied sensing menu, prior, costs, delivery law and transport hypotheses. Historical ObservationRepair dependency is rebuilt and counted separately. No new universal corrigibility guarantee."
+}

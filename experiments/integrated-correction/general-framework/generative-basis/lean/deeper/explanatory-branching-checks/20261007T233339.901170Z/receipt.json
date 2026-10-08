@@ -1,0 +1,340 @@
+{
+  "checked_at_utc": "20261007T233339.901170Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "compiler": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "checker_sha256": "1610ec88a37c68f105b7c2bdf31bcde482db1ba04e23ecc1bd7f29ef22b2a428",
+  "scope": "36 new branching-test and witness results and 96 inherited audits; finite branching and test adequacy are explicit",
+  "modules": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "expected_audits": 18,
+      "empty_axiom_audits": [
+        "Generative.trace_append_iff",
+        "Generative.trace_singleton_iff",
+        "Generative.enabled_iff_singleton_trace",
+        "Generative.enabled_difference_implies_state_difference",
+        "Generative.feasible_append_iff",
+        "Generative.feasible_prefix",
+        "Generative.enabled_product_iff",
+        "Generative.trace_product_iff",
+        "Generative.feasible_product_iff",
+        "Generative.trace_map",
+        "Generative.trace_lift",
+        "Generative.projected_trace_iff",
+        "Generative.projection_exact_iff",
+        "Generative.local_exact_iff_trace_exact",
+        "Generative.enabled_projection_iff",
+        "Generative.feasible_projection_iff",
+        "Generative.feasible_difference_implies_projection_difference",
+        "Generative.trace_faithful_iff"
+      ],
+      "standard_axiom_audits": {},
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/HistoryRealization.lean",
+      "sha256": "22785f31280a7bbac5f89d7754cb6896830a6dc2d81949b9f3adfabd126e8fa9",
+      "expected_audits": 7,
+      "empty_axiom_audits": [
+        "Generative.Deeper.append_nil_constructive",
+        "Generative.Deeper.append_assoc_constructive",
+        "Generative.Deeper.history_trace_iff",
+        "Generative.Deeper.history_from_empty_iff",
+        "Generative.Deeper.history_feasible_iff",
+        "Generative.Deeper.process_language_prefix_closed",
+        "Generative.Deeper.process_language_exact_history_realization"
+      ],
+      "standard_axiom_audits": {},
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryNecessity.lean",
+      "sha256": "e6ee0229ef68da50a62ccc0d079f7e38866f86813d4e7309e681ecc17a923df5",
+      "expected_audits": 17,
+      "empty_axiom_audits": [
+        "Generative.ExplanatoryNecessity.decode_singleton_recovers_step",
+        "Generative.ExplanatoryNecessity.same_description_preserves_steps",
+        "Generative.ExplanatoryNecessity.different_steps_require_different_descriptions",
+        "Generative.ExplanatoryNecessity.step_equivalence_iff_trace_equivalence",
+        "Generative.ExplanatoryNecessity.static_profile_adequate",
+        "Generative.ExplanatoryNecessity.adequate_answers_agree",
+        "Generative.ExplanatoryNecessity.local_decomposition_iff_trace_representation",
+        "Generative.ExplanatoryNecessity.idle_feasible",
+        "Generative.ExplanatoryNecessity.flip_feasible",
+        "Generative.ExplanatoryNecessity.feasibility_profiles_agree",
+        "Generative.ExplanatoryNecessity.endpoint_profiles_differ",
+        "Generative.ExplanatoryNecessity.bounded_empty",
+        "Generative.ExplanatoryNecessity.bounded_singleton",
+        "Generative.ExplanatoryNecessity.bounded_rejects_double",
+        "Generative.ExplanatoryNecessity.bounded_prefix_closed",
+        "Generative.ExplanatoryNecessity.bounded_no_one_point_realization",
+        "Generative.ExplanatoryNecessity.bounded_history_realization"
+      ],
+      "standard_axiom_audits": {},
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryStructure.lean",
+      "sha256": "ecc83334e6d7c136cbeab5f6094e94b82b1522011542feb9c7c0faaf5f7cc52e",
+      "expected_audits": 17,
+      "empty_axiom_audits": [
+        "Generative.ExplanatoryStructure.trace_global",
+        "Generative.ExplanatoryStructure.global_realized",
+        "Generative.ExplanatoryStructure.realizes_iff_global",
+        "Generative.ExplanatoryStructure.adjacent_opposite",
+        "Generative.ExplanatoryStructure.mutilated_balance",
+        "Generative.ExplanatoryStructure.separated_balanced"
+      ],
+      "standard_axiom_audits": {
+        "Generative.ExplanatoryStructure.complete_trace_iff": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.balance_perm": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.opposite_pair_balance": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.legal_balance": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.global_balance": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.unbalanced_no_cover": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.unbalanced_no_placement_history": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.mutilated_no_cover": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.mutilated_no_history": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.separated_not_coverable": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.two_tile_orders": [
+          "propext"
+        ]
+      },
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryUniqueness.lean",
+      "sha256": "25df183309a4e5bdda32dcb45a36cb57f3b6939f5a8f2abd428469e32030f5de",
+      "expected_audits": 15,
+      "empty_axiom_audits": [
+        "Generative.ExplanatoryUniqueness.equal_codes_same_answers",
+        "Generative.ExplanatoryUniqueness.reduced_exact_kernel",
+        "Generative.ExplanatoryUniqueness.reduced_presentations_same_kernel",
+        "Generative.ExplanatoryUniqueness.matches_total_on_used",
+        "Generative.ExplanatoryUniqueness.matches_functional",
+        "Generative.ExplanatoryUniqueness.matches_inverse_functional",
+        "Generative.ExplanatoryUniqueness.matches_iff_equal_answers",
+        "Generative.ExplanatoryUniqueness.unique_matching",
+        "Generative.ExplanatoryUniqueness.short_exact",
+        "Generative.ExplanatoryUniqueness.full_exact",
+        "Generative.ExplanatoryUniqueness.short_reduced",
+        "Generative.ExplanatoryUniqueness.full_not_reduced",
+        "Generative.ExplanatoryUniqueness.first_summary_cannot_answer_both",
+        "Generative.ExplanatoryUniqueness.relative_unique_correspondence"
+      ],
+      "standard_axiom_audits": {
+        "Generative.ExplanatoryUniqueness.balance_does_not_determine_coverability": [
+          "propext"
+        ]
+      },
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/DynamicUnderdetermination.lean",
+      "sha256": "0b5e930ba0a91306e73746c811b71e74fb9ccbc9e152c2e1116c4d19c4147f6c",
+      "expected_audits": 9,
+      "empty_axiom_audits": [
+        "Generative.Deeper.idle_no_event",
+        "Generative.Deeper.static_event",
+        "Generative.Deeper.static_never_changes",
+        "Generative.Deeper.toggle_event",
+        "Generative.Deeper.toggle_always_changes",
+        "Generative.Deeper.static_history_never_changes",
+        "Generative.Deeper.toggle_two_event_cycle",
+        "Generative.Deeper.same_carrier_incompatible_laws",
+        "Generative.Deeper.event_without_state_distinction"
+      ],
+      "standard_axiom_audits": {},
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RelationalDynamics.lean",
+      "sha256": "292fff843e984f602b3d5c62c33539abdc4d026ef376501e1f50ca5bce313ca3",
+      "expected_audits": 13,
+      "empty_axiom_audits": [
+        "Generative.Deeper.bisimulation_feasible",
+        "Generative.Deeper.bisimulation_converse",
+        "Generative.Deeper.bisimulation_same_histories",
+        "Generative.Deeper.continuing_single_event_is_one_recurrence",
+        "Generative.Deeper.static_is_one_recurrence",
+        "Generative.Deeper.toggle_is_one_recurrence",
+        "Generative.Deeper.static_toggle_one_dynamics",
+        "Generative.Deeper.static_toggle_same_histories",
+        "Generative.Deeper.states_relationally_identical",
+        "Generative.Deeper.unchanged_reads_carrier_identity",
+        "Generative.Deeper.idle_differs_from_recurrence",
+        "Generative.Deeper.toggle_continues",
+        "Generative.Deeper.idle_cannot_continue"
+      ],
+      "standard_axiom_audits": {},
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranching.lean",
+      "sha256": "ff49f9ef7e458a316898575948fcec763d879ab5412e170c25de56ac94cd7a2e",
+      "expected_audits": 18,
+      "empty_axiom_audits": [
+        "Generative.ExplanatoryBranching.same_refl",
+        "Generative.ExplanatoryBranching.same_symm",
+        "Generative.ExplanatoryBranching.same_trans",
+        "Generative.ExplanatoryBranching.bisimulation_preserves_tests",
+        "Generative.ExplanatoryBranching.bisimulation_implies_same",
+        "Generative.ExplanatoryBranching.bisimulation_lifts_trace",
+        "Generative.ExplanatoryBranching.same_functional",
+        "Generative.ExplanatoryBranching.same_inverse_functional",
+        "Generative.ExplanatoryBranching.any_bisimulation_agrees"
+      ],
+      "standard_axiom_audits": {
+        "Generative.ExplanatoryBranching.finite_separating_test": [
+          "propext"
+        ],
+        "Generative.ExplanatoryBranching.not_same_has_separating_test": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryBranching.same_forces_successor_match": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryBranching.same_is_bisimulation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryBranching.same_iff_bisimilar": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryBranching.exact_equal_codes_force_branch_matching": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryBranching.same_total_on_reachable": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryBranching.branching_structural_correspondence": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryBranching.correspondence_preserves_steps": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryBranchingWitnesses.lean",
+      "sha256": "5f6169119d8635d813415850b4c3f2fcb02de07b1c7ff7ea265496a99d39c875",
+      "expected_audits": 18,
+      "empty_axiom_audits": [
+        "Generative.ExplanatoryBranchingWitnesses.can_nil",
+        "Generative.ExplanatoryBranchingWitnesses.can_cons",
+        "Generative.ExplanatoryBranchingWitnesses.unmarked_bisimulation",
+        "Generative.ExplanatoryBranchingWitnesses.static_toggle_same_all_tests",
+        "Generative.ExplanatoryBranchingWitnesses.two_actual_histories_same_endpoint",
+        "Generative.ExplanatoryBranchingWitnesses.all_future_tests_agree_after_both_histories"
+      ],
+      "standard_axiom_audits": {
+        "Generative.ExplanatoryBranchingWitnesses.fork_finitely_branching": [
+          "propext"
+        ],
+        "Generative.ExplanatoryBranchingWitnesses.finish_words": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryBranchingWitnesses.both_words": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryBranchingWitnesses.left_words": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryBranchingWitnesses.right_words": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryBranchingWitnesses.root_words": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryBranchingWitnesses.same_all_words": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryBranchingWitnesses.shared_condition_retains_alternatives": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryBranchingWitnesses.early_split_loses_shared_alternatives": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryBranchingWitnesses.trace_equivalence_misses_branching": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryBranchingWitnesses.no_rooted_bisimulation": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.ExplanatoryBranchingWitnesses.actual_length_not_endpoint_readable": [
+          "propext"
+        ]
+      },
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "total_empty_axiom_audits": 99,
+  "total_declaration_audits": 132,
+  "total_standard_axiom_audits": 33
+}

@@ -1,0 +1,28 @@
+'Generative.ExplanatoryLocalUnits.left_unit_unique' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.right_unit_unique' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.neutral_self_composes' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.local_units_exist_uniquely' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.joined_common_unit' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.composable_common_unit' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.left_unit_of_product' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.right_unit_of_product' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.common_unit_suffices_when_complete' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.composable_iff_common_unit' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.chain_complete_iff_unit_matching_suffices' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.boundary_assignments_unique' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.neutral_transport' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.left_unit_transport' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.right_unit_transport' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.budget_functional' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.budget_associative' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.budget_has_units' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.budget_matching_does_not_suffice' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.budget_not_chain_complete' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.trace_join_functional' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.trace_join_associative' depends on axioms: [propext]
+'Generative.ExplanatoryLocalUnits.trace_idle_neutral' depends on axioms: [propext]
+'Generative.ExplanatoryLocalUnits.trace_has_units' depends on axioms: [propext]
+'Generative.ExplanatoryLocalUnits.trace_chain_complete' does not depend on any axioms
+'Generative.ExplanatoryLocalUnits.trace_left_unit_iff' depends on axioms: [propext]
+'Generative.ExplanatoryLocalUnits.trace_right_unit_iff' depends on axioms: [propext]
+'Generative.ExplanatoryLocalUnits.trace_composable_iff_common_unit' depends on axioms: [propext]

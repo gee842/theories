@@ -1,0 +1,46 @@
+{
+  "title": "Environmental modification and niche construction: developing O2 gradients drive the evolution of the Wrinkly Spreader",
+  "authors": [
+    "Anna Koza",
+    "Olena Moshynets",
+    "Wilfred Otten",
+    "Andrew J. Spiers"
+  ],
+  "doi": "10.1038/ismej.2010.156",
+  "publication_year": 2011,
+  "online_date": "2010-10-21",
+  "retrieved": "2026-10-08",
+  "files": [
+    {
+      "file": "article.html",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3105741/?pdf=render",
+      "bytes": 181813,
+      "sha256": "171f97eba43544299ff2f0736f58fabd26a01d1bebbc22fc18300dd7b68cb263",
+      "kind": "unchanged public PMC HTML response, not a PDF despite query name"
+    }
+  ],
+  "rights": "Copyright 2011 International Society for Microbial Ecology; no open reuse license inferred from PMC availability.",
+  "read_scope": [
+    "methods sections sec3-sec10",
+    "results sec12-sec17",
+    "Table 1",
+    "Figure 3 and Figure 4 captions",
+    "discussion sec18"
+  ],
+  "not_retrieved": [
+    "underlying per-culture growth counts",
+    "underlying competition counts",
+    "microsensor raw profiles",
+    "supplementary PPT files",
+    "PDF"
+  ],
+  "retrieval_notes": [
+    "Europe PMC fullTextXML returned HTTP 500 on two attempts.",
+    "PMC PDF href returned HTML rather than PDF; not preserved as article PDF."
+  ],
+  "source_ambiguities": [
+    "Figure 3 caption gives inoculum cells per ml whereas nearby prose uses cells; no inoculum-normalized kinetics inferred.",
+    "Result prose has a malformed liquid-depth unit, while Figure 3 caption gives approximately 16 mm; no depth-volume inference uses the malformed unit."
+  ],
+  "scope": "Source-reported experiments and summary extraction. No biological replication, fitted reaction-diffusion model or cross-paper joined cultures."
+}

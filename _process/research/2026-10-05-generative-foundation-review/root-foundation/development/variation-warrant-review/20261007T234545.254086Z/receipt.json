@@ -1,0 +1,142 @@
+{
+  "status": "passed",
+  "utc": "20261007T234545.254086Z",
+  "source_sha256": {
+    "GenerativeCore": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "SystemIndividuation": "aa2da76bae0b742b0966d856334ed0cd7e29ccf05ce33b0b674a00e5e0689578",
+    "VariationWarrant": "599c90b9643f01b06c5185e4d38b19bb9e502efab2e9d71590fb30d6503042fa"
+  },
+  "author_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/variation-warrant-checks/20261007T234515.871133Z/receipt.json",
+  "author_receipt_sha256": "a5136177bc8d18b616f62cbb0fa17a1c5a9403e00ac1c5c94875608bb588ec62",
+  "author_artifact_bindings_verified": 21,
+  "declarations": [
+    {
+      "kind": "def",
+      "name": "VariationWarrant.Prepared"
+    },
+    {
+      "kind": "def",
+      "name": "VariationWarrant.preparation"
+    },
+    {
+      "kind": "theorem",
+      "name": "VariationWarrant.preparation_shape"
+    },
+    {
+      "kind": "theorem",
+      "name": "VariationWarrant.preparation_trace"
+    },
+    {
+      "kind": "theorem",
+      "name": "VariationWarrant.every_prepared_endpoint_is_diagonal"
+    },
+    {
+      "kind": "theorem",
+      "name": "VariationWarrant.every_diagonal_endpoint_has_preparation"
+    },
+    {
+      "kind": "theorem",
+      "name": "VariationWarrant.prepared_iff_diagonal"
+    },
+    {
+      "kind": "theorem",
+      "name": "VariationWarrant.prepared_iff_short_preparation"
+    },
+    {
+      "kind": "theorem",
+      "name": "VariationWarrant.both_comparison_states_are_prepared"
+    },
+    {
+      "kind": "theorem",
+      "name": "VariationWarrant.off_diagonal_endpoint_not_prepared"
+    },
+    {
+      "kind": "theorem",
+      "name": "VariationWarrant.prepared_domain_independent_of_seed"
+    },
+    {
+      "kind": "theorem",
+      "name": "VariationWarrant.prepared_closed_under_continuation"
+    },
+    {
+      "kind": "theorem",
+      "name": "VariationWarrant.formed_continuation_iff"
+    },
+    {
+      "kind": "theorem",
+      "name": "VariationWarrant.formed_outcome_iff"
+    },
+    {
+      "kind": "theorem",
+      "name": "VariationWarrant.support_iff_prepared_tests"
+    },
+    {
+      "kind": "theorem",
+      "name": "VariationWarrant.possibility_support_iff_prepared_tests"
+    },
+    {
+      "kind": "theorem",
+      "name": "VariationWarrant.right_supports_generated_possibilities"
+    },
+    {
+      "kind": "theorem",
+      "name": "VariationWarrant.generated_response_support_iff_diagonal"
+    },
+    {
+      "kind": "theorem",
+      "name": "VariationWarrant.generated_domain_has_no_least_support"
+    },
+    {
+      "kind": "theorem",
+      "name": "VariationWarrant.off_diagonal_execution_before_formation"
+    },
+    {
+      "kind": "theorem",
+      "name": "VariationWarrant.normalization_does_not_preserve_original_word"
+    }
+  ],
+  "new_theorems": 19,
+  "new_declarations": 21,
+  "scope": "Independent fresh compile of three exact sources; all explicit new declarations audited and theorem signatures printed. Inherited audit inventories and empirical science not rerun. No assumption-free foundational certification.",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "axiom_dependencies": {
+    "VariationWarrant.Prepared": [],
+    "VariationWarrant.preparation": [],
+    "VariationWarrant.preparation_shape": [],
+    "VariationWarrant.preparation_trace": [],
+    "VariationWarrant.every_prepared_endpoint_is_diagonal": [],
+    "VariationWarrant.every_diagonal_endpoint_has_preparation": [],
+    "VariationWarrant.prepared_iff_diagonal": [],
+    "VariationWarrant.prepared_iff_short_preparation": [],
+    "VariationWarrant.both_comparison_states_are_prepared": [],
+    "VariationWarrant.off_diagonal_endpoint_not_prepared": [],
+    "VariationWarrant.prepared_domain_independent_of_seed": [],
+    "VariationWarrant.prepared_closed_under_continuation": [],
+    "VariationWarrant.formed_continuation_iff": [],
+    "VariationWarrant.formed_outcome_iff": [],
+    "VariationWarrant.support_iff_prepared_tests": [],
+    "VariationWarrant.possibility_support_iff_prepared_tests": [],
+    "VariationWarrant.right_supports_generated_possibilities": [],
+    "VariationWarrant.generated_response_support_iff_diagonal": [],
+    "VariationWarrant.generated_domain_has_no_least_support": [],
+    "VariationWarrant.off_diagonal_execution_before_formation": [],
+    "VariationWarrant.normalization_does_not_preserve_original_word": []
+  },
+  "source_unchanged_during_check": true,
+  "artifact_sha256": {
+    "Audit.lean": "4beae160632276b4995619b5a9715fc346c0b96bd935082cdd2f8e6d3274199b",
+    "Audit.lean.log": "60bcb6075e7796e48412253638a0646b3840e5bce1a5bda96cfe10b159f41527",
+    "GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "GenerativeCore.log": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "Signatures.lean": "8cdcacd36ce7604dc3a164e02dd2b57cc3433e9b8c3868ddfff57f74bec35392",
+    "Signatures.lean.log": "ed1c6c6d14c991a5d70b840f071c470acb9620fabe9170a85849739f0736ed73",
+    "SystemIndividuation.lean": "aa2da76bae0b742b0966d856334ed0cd7e29ccf05ce33b0b674a00e5e0689578",
+    "SystemIndividuation.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "VariationWarrant.lean": "599c90b9643f01b06c5185e4d38b19bb9e502efab2e9d71590fb30d6503042fa",
+    "VariationWarrant.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "author-pointer.json": "cfcfe1b1156212b51db9f7703e75deb3fb4af838214d3031885397e2c38a1951",
+    "author-receipt.json": "a5136177bc8d18b616f62cbb0fa17a1c5a9403e00ac1c5c94875608bb588ec62",
+    "check.py": "21623e50908fa5b467e70be5f2d062c69f4996440ea3d5cb8e9de1f694ad0f06",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

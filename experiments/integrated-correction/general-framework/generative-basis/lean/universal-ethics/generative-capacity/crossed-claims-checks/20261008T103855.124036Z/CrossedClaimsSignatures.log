@@ -1,0 +1,58 @@
+CrossedClaims.replacement_preserves_each_ticket :
+  (∀ (route : CrossedClaims.Route),
+      (CrossedClaims.protects (CrossedClaims.replaceRoute route) CrossedClaims.Claim.p ↔
+          CrossedClaims.protects route CrossedClaims.Claim.p) ∧
+        (CrossedClaims.protects (CrossedClaims.replaceRoute route) CrossedClaims.Claim.r ↔
+            CrossedClaims.protects route CrossedClaims.Claim.r) ∧
+          (CrossedClaims.protects route CrossedClaims.Claim.q →
+            CrossedClaims.protects (CrossedClaims.replaceRoute route) CrossedClaims.Claim.q)) ∧
+    ¬CrossedClaims.protects CrossedClaims.Route.solo CrossedClaims.Claim.q ∧
+      CrossedClaims.protects (CrossedClaims.replaceRoute CrossedClaims.Route.solo) CrossedClaims.Claim.q
+CrossedClaims.joint_strictly_extends_solo_protection :
+  PracticalJudgment.Better CrossedClaims.protects (fun x x_1 => False) CrossedClaims.Route.joint
+    CrossedClaims.Route.solo
+CrossedClaims.transfer_conserves_total_and_chances (t : CrossedClaims.Tickets) :
+  CrossedClaims.ticketTotal (CrossedClaims.transfer t) = CrossedClaims.ticketTotal t ∧
+    CrossedClaims.protectedTickets (CrossedClaims.transfer t) CrossedClaims.Claim.p =
+        CrossedClaims.protectedTickets t CrossedClaims.Claim.p ∧
+      CrossedClaims.protectedTickets (CrossedClaims.transfer t) CrossedClaims.Claim.r =
+          CrossedClaims.protectedTickets t CrossedClaims.Claim.r ∧
+        CrossedClaims.protectedTickets (CrossedClaims.transfer t) CrossedClaims.Claim.q =
+          CrossedClaims.protectedTickets t CrossedClaims.Claim.q + t.solo
+CrossedClaims.transfer_preserves_any_satisfied_floor (t : CrossedClaims.Tickets) (floor : CrossedClaims.Claim → Nat)
+  (positive : 0 < CrossedClaims.ticketTotal t)
+  (satisfied : ∀ (claim : CrossedClaims.Claim), floor claim ≤ CrossedClaims.protectedTickets t claim) :
+  0 < CrossedClaims.ticketTotal (CrossedClaims.transfer t) ∧
+    ∀ (claim : CrossedClaims.Claim), floor claim ≤ CrossedClaims.protectedTickets (CrossedClaims.transfer t) claim
+CrossedClaims.transfer_strictly_improves_q (t : CrossedClaims.Tickets) (used : 0 < t.solo) :
+  CrossedClaims.protectedTickets t CrossedClaims.Claim.q <
+    CrossedClaims.protectedTickets (CrossedClaims.transfer t) CrossedClaims.Claim.q
+CrossedClaims.equal_personal_chances_iff (t : CrossedClaims.Tickets) :
+  CrossedClaims.EqualPersonalChances t ↔ t.joint = 0 ∧ t.solo = t.other
+CrossedClaims.equal_chances_have_improving_replacement (t : CrossedClaims.Tickets)
+  (positive : 0 < CrossedClaims.ticketTotal t) (equal : CrossedClaims.EqualPersonalChances t) :
+  CrossedClaims.ticketTotal (CrossedClaims.transfer t) = CrossedClaims.ticketTotal t ∧
+    (∀ (claim : CrossedClaims.Claim),
+        CrossedClaims.protectedTickets t claim ≤ CrossedClaims.protectedTickets (CrossedClaims.transfer t) claim) ∧
+      CrossedClaims.protectedTickets t CrossedClaims.Claim.q <
+          CrossedClaims.protectedTickets (CrossedClaims.transfer t) CrossedClaims.Claim.q ∧
+        ¬CrossedClaims.EqualPersonalChances (CrossedClaims.transfer t)
+CrossedClaims.unselected_strong_route_changes_filtered_choice :
+  CrossedClaims.SelectedByFilter [CrossedClaims.RescueGroup.middle, CrossedClaims.RescueGroup.lower]
+      CrossedClaims.RescueGroup.lower ∧
+    CrossedClaims.SelectedByFilter
+        [CrossedClaims.RescueGroup.strongest, CrossedClaims.RescueGroup.middle, CrossedClaims.RescueGroup.lower]
+        CrossedClaims.RescueGroup.middle ∧
+      ¬CrossedClaims.SelectedByFilter
+            [CrossedClaims.RescueGroup.strongest, CrossedClaims.RescueGroup.middle, CrossedClaims.RescueGroup.lower]
+            CrossedClaims.RescueGroup.strongest ∧
+        CrossedClaims.filteredScore
+              (CrossedClaims.menuAnchor [CrossedClaims.RescueGroup.middle, CrossedClaims.RescueGroup.lower])
+              CrossedClaims.RescueGroup.lower =
+            16 ∧
+          CrossedClaims.filteredScore
+              (CrossedClaims.menuAnchor
+                [CrossedClaims.RescueGroup.strongest, CrossedClaims.RescueGroup.middle,
+                  CrossedClaims.RescueGroup.lower])
+              CrossedClaims.RescueGroup.lower =
+            0

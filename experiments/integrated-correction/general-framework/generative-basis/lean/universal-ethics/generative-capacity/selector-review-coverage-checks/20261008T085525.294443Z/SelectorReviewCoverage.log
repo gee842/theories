@@ -1,0 +1,52 @@
+SelectorReviewCoverage.lean:55:5: error: unknown tactic
+SelectorReviewCoverage.lean:54:2: error: unsolved goals
+case mpr
+W V H : Type
+oldLive : W → Prop
+newLive : V → Prop
+menu : H → Prop
+oldBetter : W → H → H → Prop
+newBetter : V → H → H → Prop
+transport : ∀ (a : H), Clear newLive menu newBetter a → Clear oldLive menu oldBetter a
+a : H
+ha : menu a
+old : PossibleDefeat oldLive menu oldBetter a
+⊢ PossibleDefeat newLive menu newBetter a
+SelectorReviewCoverage.lean:139:58: error: failed to synthesize
+  Decidable (oldMenu Plan.output)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+SelectorReviewCoverage.lean:142:61: error: failed to synthesize
+  Decidable (oldMenu Plan.output)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+SelectorReviewCoverage.lean:146:17: error: failed to synthesize
+  Decidable (oldMenu Plan.output)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+SelectorReviewCoverage.lean:146:40: error: failed to synthesize
+  Decidable (oldMenu Plan.output)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+SelectorReviewCoverage.lean:152:35: error: Function expected at
+  better_trans ?m.141 ?m.142 ?m.146 ?m.147
+but this term has type
+  Better ?m.141 ?m.142 ?m.143 ?m.145
+
+Note: Expected a function because this term is being applied to the argument
+  _
+SelectorReviewCoverage.lean:154:38: error: failed to synthesize
+  Decidable (oldMenu Plan.output)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+SelectorReviewCoverage.lean:167:42: error: Function expected at
+  better_trans ?m.64 ?m.65 ?m.69 ?m.70
+but this term has type
+  Better ?m.64 ?m.65 ?m.66 ?m.68
+
+Note: Expected a function because this term is being applied to the argument
+  _
+SelectorReviewCoverage.lean:191:16: error: failed to synthesize
+  Decidable ¬gain Plan.repair ()
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.

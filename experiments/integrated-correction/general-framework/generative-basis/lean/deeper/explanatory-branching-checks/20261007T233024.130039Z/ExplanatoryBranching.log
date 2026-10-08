@@ -1,0 +1,46 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-branching-7yeg7n62/ExplanatoryBranching.lean:100:3: error: unknown tactic
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-branching-7yeg7n62/ExplanatoryBranching.lean:98:40: error: unsolved goals
+S : Type u
+T : Type x
+A : Type v
+O : Type w
+m : Model S A O
+n : Model T A O
+s : S
+t : T
+h : ¬Same m n s t
+⊢ ∃ f, Holds m s f ∧ ¬Holds n t f
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-branching-7yeg7n62/ExplanatoryBranching.lean:118:3: error: unknown tactic
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-branching-7yeg7n62/ExplanatoryBranching.lean:116:52: error: unsolved goals
+S : Type u
+T : Type x
+A : Type v
+O : Type w
+m : Model S A O
+n : Model T A O
+finite : ImageFinite n
+s : S
+t : T
+same : Same m n s t
+a : A
+s' : S
+step : m.process.step s a s'
+⊢ ∃ t', n.process.step t a t' ∧ Same m n s' t'
+'Generative.ExplanatoryBranching.same_refl' does not depend on any axioms
+'Generative.ExplanatoryBranching.same_symm' does not depend on any axioms
+'Generative.ExplanatoryBranching.same_trans' does not depend on any axioms
+'Generative.ExplanatoryBranching.bisimulation_preserves_tests' does not depend on any axioms
+'Generative.ExplanatoryBranching.bisimulation_implies_same' does not depend on any axioms
+'Generative.ExplanatoryBranching.finite_separating_test' depends on axioms: [propext]
+'Generative.ExplanatoryBranching.not_same_has_separating_test' depends on axioms: [sorryAx]
+'Generative.ExplanatoryBranching.same_forces_successor_match' depends on axioms: [sorryAx]
+'Generative.ExplanatoryBranching.same_is_bisimulation' depends on axioms: [sorryAx]
+'Generative.ExplanatoryBranching.same_iff_bisimilar' depends on axioms: [sorryAx]
+'Generative.ExplanatoryBranching.exact_equal_codes_force_branch_matching' depends on axioms: [sorryAx]
+'Generative.ExplanatoryBranching.bisimulation_lifts_trace' does not depend on any axioms
+'Generative.ExplanatoryBranching.same_functional' does not depend on any axioms
+'Generative.ExplanatoryBranching.same_inverse_functional' does not depend on any axioms
+'Generative.ExplanatoryBranching.same_total_on_reachable' depends on axioms: [sorryAx]
+'Generative.ExplanatoryBranching.branching_structural_correspondence' depends on axioms: [sorryAx]
+'Generative.ExplanatoryBranching.correspondence_preserves_steps' depends on axioms: [sorryAx]
+'Generative.ExplanatoryBranching.any_bisimulation_agrees' does not depend on any axioms

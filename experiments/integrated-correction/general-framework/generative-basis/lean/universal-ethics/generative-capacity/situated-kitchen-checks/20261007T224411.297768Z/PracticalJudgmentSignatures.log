@@ -1,0 +1,86 @@
+PracticalJudgment.Included {I : Type} (a b : I → Prop) : Prop
+PracticalJudgment.StrictIncluded {I : Type} (a b : I → Prop) : Prop
+PracticalJudgment.included_trans {I : Type} {a b c : I → Prop} (hab : PracticalJudgment.Included a b)
+  (hbc : PracticalJudgment.Included b c) : PracticalJudgment.Included a c
+PracticalJudgment.strict_included_irrefl {I : Type} (a : I → Prop) : ¬PracticalJudgment.StrictIncluded a a
+PracticalJudgment.strict_included_trans {I : Type} {a b c : I → Prop} (hab : PracticalJudgment.StrictIncluded a b)
+  (hbc : PracticalJudgment.StrictIncluded b c) : PracticalJudgment.StrictIncluded a c
+PracticalJudgment.Better {H C G : Type} (protect : H → C → Prop) (gain : H → G → Prop) (a b : H) : Prop
+PracticalJudgment.better_irrefl {H C G : Type} (p : H → C → Prop) (g : H → G → Prop) (a : H) :
+  ¬PracticalJudgment.Better p g a a
+PracticalJudgment.better_trans {H C G : Type} (p : H → C → Prop) (g : H → G → Prop) {a b c : H}
+  (hab : PracticalJudgment.Better p g a b) (hbc : PracticalJudgment.Better p g b c) : PracticalJudgment.Better p g a c
+PracticalJudgment.protection_anchor {H C G : Type} {p : H → C → Prop} {g : H → G → Prop} {a b : H}
+  (retain : PracticalJudgment.Included (p b) (p a)) (c : C) (restored : p a c) (lost : ¬p b c) :
+  PracticalJudgment.Better p g a b
+PracticalJudgment.no_protection_trade_by_count {H C G : Type} {p : H → C → Prop} {g : H → G → Prop} {a b : H} (c : C)
+  (hb : p b c) (ha : ¬p a c) : ¬PracticalJudgment.Better p g a b
+PracticalJudgment.Frontier {H : Type} (eligible : H → Prop) (better : H → H → Prop) (a : H) : Prop
+PracticalJudgment.dominated_excluded {H : Type} {e : H → Prop} {r : H → H → Prop} {a b : H} (hb : e b) (hba : r b a) :
+  ¬PracticalJudgment.Frontier e r a
+PracticalJudgment.finite_frontier {H : Type} (r : H → H → Prop) (irr : ∀ (a : H), ¬r a a)
+  (trans : ∀ {a b c : H}, r a b → r b c → r a c) (xs : List H) (hne : xs ≠ []) :
+  ∃ a, a ∈ xs ∧ ∀ (b : H), b ∈ xs → ¬r b a
+PracticalJudgment.Required {H : Type} (admissible task : H → Prop) : Prop
+PracticalJudgment.required_performed {H : Type} {a : H} {ad task : H → Prop} (h : PracticalJudgment.Required ad task)
+  (chosen : ad a) : task a
+PracticalJudgment.alternative_defeats_specific_duty {H : Type} {ad task : H → Prop} {a : H} (ha : ad a)
+  (hnot : ¬task a) : ¬PracticalJudgment.Required ad task
+PracticalJudgment.impossible_menu_no_duty {H : Type} {ad task : H → Prop} (empty : ∀ (a : H), ¬ad a) :
+  ¬PracticalJudgment.Required ad task
+PracticalJudgment.necessary_means_required {H : Type} {ad target means : H → Prop}
+  (h : PracticalJudgment.Required ad target) (law : ∀ (a : H), ad a → target a → means a) :
+  PracticalJudgment.Required ad means
+PracticalJudgment.Assigned {P A T : Type} (allocation : P → T → A → Prop) (p : P) (a : A) (t : T) : Prop
+PracticalJudgment.unique_responder_required {P A T : Type} {ad : P → Prop} {allocation : P → T → A → Prop} {a : A}
+  {t : T} (inhabited : ∃ p, ad p) (coverage : ∀ (p : P), ad p → ∃ b, allocation p t b)
+  (unique : ∀ (p : P) (b : A), ad p → allocation p t b → b = a) :
+  PracticalJudgment.Required ad fun p => PracticalJudgment.Assigned allocation p a t
+PracticalJudgment.assignment_respects_capacity {P A T : Type} {ad : P → Prop} {allocation : P → T → A → Prop}
+  {capable : P → A → T → Prop} (feasible : ∀ (p : P) (a : A) (t : T), ad p → allocation p t a → capable p a t) {p : P}
+  {a : A} {t : T} (hp : ad p) (ha : PracticalJudgment.Assigned allocation p a t) : capable p a t
+PracticalJudgment.Covered (demand oldSupport newSupport : Nat → Prop) : Prop
+PracticalJudgment.transfer_requires_actual_successor {d o n : Nat → Prop} (covered : PracticalJudgment.Covered d o n)
+  {t : Nat} (needed : d t) (withdrawn : ¬o t) : n t
+PracticalJudgment.no_demand_gap_transfer {d o n : Nat → Prop} (handoff : Nat)
+  (before : ∀ (t : Nat), t < handoff → d t → o t) (after : ∀ (t : Nat), handoff ≤ t → d t → n t) :
+  PracticalJudgment.Covered d o n
+PracticalJudgment.uncovered_demand_is_failure {d o n : Nat → Prop} {t : Nat} (hd : d t) (ho : ¬o t) (hn : ¬n t) :
+  ¬PracticalJudgment.Covered d o n
+PracticalJudgment.Settled {T : Type} (due done released : T → Prop) : Prop
+PracticalJudgment.Residual {T : Type} (due done released : T → Prop) (t : T) : Prop
+PracticalJudgment.settlement_removes_residual {T : Type} {d f r : T → Prop} (h : PracticalJudgment.Settled d f r)
+  (t : T) : ¬PracticalJudgment.Residual d f r t
+PracticalJudgment.unfulfilled_unreleased_remains {T : Type} {d f r : T → Prop} {t : T} (hd : d t) (hf : ¬f t)
+  (hr : ¬r t) : PracticalJudgment.Residual d f r t
+PracticalJudgment.Robust {W H : Type} (live : W → Prop) (ad : W → H → Prop) (a : H) : Prop
+PracticalJudgment.robust_at_actual {W H : Type} {live : W → Prop} {ad : W → H → Prop} {w : W} {a : H} (truth : live w)
+  (h : PracticalJudgment.Robust live ad a) : ad w a
+PracticalJudgment.robust_under_refinement {W H : Type} {old new : W → Prop} {ad : W → H → Prop} {a : H}
+  (subset : PracticalJudgment.Included new old) (h : PracticalJudgment.Robust old ad a) :
+  PracticalJudgment.Robust new ad a
+PracticalJudgment.required_under_faithful_redescription {H K : Type} {ad : H → Prop} {ad' : K → Prop} {task : H → Prop}
+  {task' : K → Prop} (f : H → K) (forward : ∀ (a : H), ad a → ad' (f a))
+  (cover : ∀ (b : K), ad' b → ∃ a, ad a ∧ f a = b) (meaning : ∀ (a : H), task a ↔ task' (f a))
+  (h : PracticalJudgment.Required ad task) : PracticalJudgment.Required ad' task'
+PracticalJudgment.withinCeiling (limit : Nat) (h : Nat × Nat) : Unit → Prop
+PracticalJudgment.optionalFormation (h : Nat × Nat) (i : Nat) : Prop
+PracticalJudgment.supplied_ceiling_bounds_optional_gain (limit amount : Nat) :
+  PracticalJudgment.Better (PracticalJudgment.withinCeiling limit) PracticalJudgment.optionalFormation (0, 0)
+    (limit + 1, amount)
+PracticalJudgment.independent_choices_not_joint_capacity : (1 ≤ 1 ∧ 1 ≤ 1) ∧ ¬1 + 1 ≤ 1
+PracticalJudgment.basis (repair : Bool) : Unit → Prop
+PracticalJudgment.event (repair : Bool) : Unit → Prop
+PracticalJudgment.mixed_repair_anchor :
+  PracticalJudgment.Better PracticalJudgment.basis PracticalJudgment.event true false
+PracticalJudgment.repair_retains_real_loss : PracticalJudgment.event false () ∧ ¬PracticalJudgment.event true ()
+PracticalJudgment.protectedOne (a c : Bool) : Prop
+PracticalJudgment.noGain : Bool → Unit → Prop
+PracticalJudgment.competing_claims_incomparable :
+  ¬PracticalJudgment.Better PracticalJudgment.protectedOne PracticalJudgment.noGain true false ∧
+    ¬PracticalJudgment.Better PracticalJudgment.protectedOne PracticalJudgment.noGain false true
+PracticalJudgment.collective_duty_without_individual_duty :
+  (PracticalJudgment.Required (fun x => True) fun p => p = true ∨ p = false) ∧
+    (¬PracticalJudgment.Required (fun x => True) fun p => p = true) ∧
+      ¬PracticalJudgment.Required (fun x => True) fun p => p = false
+PracticalJudgment.uncertain_worlds_need_common_plan : (∀ (w : Bool), ∃ a, a = w) ∧ ¬∃ a, ∀ (w : Bool), a = w

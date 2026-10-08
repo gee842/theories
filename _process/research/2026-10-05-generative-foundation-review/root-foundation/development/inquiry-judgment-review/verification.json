@@ -1,0 +1,969 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-07T20:59:44.633854+00:00",
+  "version": "Lean (version 4.30.0-rc2, arm64-apple-darwin24.6.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc, Release)",
+  "executable_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "mathlib_revision": "ea11ccc0c5c7c4c562742e918fe2e0b2814a58aa",
+  "source_sha256": {
+    "GenerativeCore": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "SystemsOrganization": "fd9622e4b76602f4f97bc9290798d01b4a7c2f3925023c268f5d3fb75e3dbf8b",
+    "RelationsAcrossScales": "24f8eb4269927017b6e65841011c3a4a52002bfe405bf5d09d8a99be7c0cf273",
+    "RemainingDependency": "bacb8ebbdb38ea3367250f39f3dc5aace9a4e557256dc69cb00e70ccbe41af98",
+    "ScaleRevision": "16d39c9497dba735eeabdd52d3b5b2e6ae256d613f40b73da5fab0b38ed61df5",
+    "PracticalJudgment": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "InquiryJudgment": "d91f3c391fd7c98ea9f9f8dd8ee050618604b32217b9e6610753129d580268a6"
+  },
+  "checker_sha256": "11b365203d46755fb10a8a1cafdf48a518c7a086d1529d60da3054d3beee691c",
+  "review_script_sha256": "6cfa4fe333ccf4aff30d1b6fb7e9f0a21daa0120a32aca70f3f748d0bec79b89",
+  "author_snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/inquiry-judgment-checks/20261007T205512.709175Z",
+  "author_receipt_sha256": "c4b8a1ed9cbd2907c668405b112db417285578c0ebf4cdd11b262fcc3b41f415",
+  "audits": 317,
+  "new_theorems": 31,
+  "new_audits": 48,
+  "axiom_dependencies": {
+    "Generative.Process": [],
+    "Generative.Enabled": [],
+    "Generative.Trace": [],
+    "Generative.trace_nil_iff": [],
+    "Generative.trace_cons_iff": [],
+    "Generative.trace_singleton_iff": [],
+    "Generative.trace_append_iff": [],
+    "Generative.enabled_iff_singleton_trace": [],
+    "Generative.enabled_difference_implies_state_difference": [],
+    "Generative.Feasible": [],
+    "Generative.feasible_append_iff": [],
+    "Generative.feasible_prefix": [],
+    "Generative.productProcess": [],
+    "Generative.enabled_product_iff": [],
+    "Generative.trace_product_left": [],
+    "Generative.trace_product_right": [],
+    "Generative.trace_product_mk": [],
+    "Generative.trace_product_iff": [],
+    "Generative.feasible_product_iff": [],
+    "Generative.trace_map": [],
+    "Generative.trace_lift": [],
+    "Generative.projected_trace_iff": [],
+    "Generative.projection_exact_iff": [],
+    "Generative.local_exact_iff_trace_exact": [],
+    "Generative.enabled_projection_iff": [],
+    "Generative.feasible_projection_iff": [],
+    "Generative.feasible_difference_implies_projection_difference": [],
+    "Generative.trace_faithful_iff": [],
+    "SystemsOrganization.evolve": [],
+    "SystemsOrganization.deterministic": [],
+    "SystemsOrganization.deterministic_trace_iff": [],
+    "SystemsOrganization.Commuting": [],
+    "SystemsOrganization.evolve_semiconjugacy": [],
+    "SystemsOrganization.commuting_iff_all_words": [],
+    "SystemsOrganization.projected_trace_exact": [],
+    "SystemsOrganization.FibreConsistent": [],
+    "SystemsOrganization.reduced_law_exists_iff": [],
+    "SystemsOrganization.commuting_composes": [],
+    "SystemsOrganization.coupledNext": [],
+    "SystemsOrganization.coupled_components_preserve_history": [],
+    "SystemsOrganization.copyCell": [],
+    "SystemsOrganization.routed": [],
+    "SystemsOrganization.self_routing_fixed": [],
+    "SystemsOrganization.cross_routing_two_steps": [],
+    "SystemsOrganization.cross_routing_not_fixed": [],
+    "SystemsOrganization.same_cells_different_collective_recurrence": [],
+    "SystemsOrganization.crossed_left_not_fibre_consistent": [],
+    "SystemsOrganization.no_autonomous_left_law": [],
+    "SystemsOrganization.Device": [],
+    "SystemsOrganization.Event": [],
+    "SystemsOrganization.assembled": [],
+    "SystemsOrganization.exchanged": [],
+    "SystemsOrganization.organization": [],
+    "SystemsOrganization.parts": [],
+    "SystemsOrganization.linkInventory": [],
+    "SystemsOrganization.link_inventory_preserved": [],
+    "SystemsOrganization.fuel_does_not_increase": [],
+    "SystemsOrganization.raw": [],
+    "SystemsOrganization.formed": [],
+    "SystemsOrganization.exchangedOnce": [],
+    "SystemsOrganization.formation_step": [],
+    "SystemsOrganization.formation_preserves_cell_values": [],
+    "SystemsOrganization.formation_consumes_spare_and_fuel": [],
+    "SystemsOrganization.exchange_unavailable_before_formation": [],
+    "SystemsOrganization.exchange_available_after_formation": [],
+    "SystemsOrganization.formation_and_recurrence_same_history": [],
+    "SystemsOrganization.parts_only_cannot_preserve_futures": [],
+    "SystemsOrganization.no_fuel_blocks_formation": [],
+    "SystemsOrganization.no_spare_blocks_formation": [],
+    "RelationsAcrossScales.budget": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.history_is_core_trace": [],
+    "RelationsAcrossScales.one_step": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.finite_horizon_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.budget_cap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.composed_defect": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.observable_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.protected_conditions": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.violation_certificate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.fibre_error_lower_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.total": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.routing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.routing_total": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.routing_defect_lower_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.routing_error_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.enriched_routing_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.transfer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.basicProtected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.total_exact_through_transfer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.exact_total_can_hide_loss": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.no_total_only_protection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.minimum_preserves_protection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.frozen_charts_miss_change": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.linear_drift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.positive_drift_unbounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RelationsAcrossScales.threshold_ambiguity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RemainingDependency.ticks": [],
+    "RemainingDependency.Pair": [],
+    "RemainingDependency.Pair.get": [],
+    "RemainingDependency.Pair.set": [],
+    "RemainingDependency.Account": [],
+    "RemainingDependency.tariff": [],
+    "RemainingDependency.Error": [],
+    "RemainingDependency.charge": [],
+    "RemainingDependency.charge_conserves": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RemainingDependency.charge_never_increases_fuel": [],
+    "RemainingDependency.charge_denial_preserves_account": [
+      "propext"
+    ],
+    "RemainingDependency.choose": [
+      "propext"
+    ],
+    "RemainingDependency.faithful": [],
+    "RemainingDependency.chosen_setting_supported": [
+      "propext"
+    ],
+    "RemainingDependency.productive_pair_has_selected_setting": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RemainingDependency.absent_evidence_is_not_negative": [
+      "propext"
+    ],
+    "RemainingDependency.no_constant_setting_serves_opposed_relations": [
+      "propext"
+    ],
+    "RemainingDependency.Calibrated": [],
+    "RemainingDependency.calibrated_selected_setting_transfers": [
+      "propext"
+    ],
+    "RemainingDependency.Ancestor": [],
+    "RemainingDependency.Datum": [],
+    "RemainingDependency.decode": [],
+    "RemainingDependency.faithful_bound_datum_decodes": [
+      "propext"
+    ],
+    "RemainingDependency.wrong_context_stays_unknown": [
+      "propext"
+    ],
+    "RemainingDependency.missing_stays_unknown": [],
+    "RemainingDependency.Stocks": [],
+    "RemainingDependency.discharge": [],
+    "RemainingDependency.Stocks.total": [],
+    "RemainingDependency.discharge_conserves": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RemainingDependency.supported_discharge_delivers": [
+      "propext"
+    ],
+    "RemainingDependency.unsupported_discharge_wastes": [
+      "propext"
+    ],
+    "RemainingDependency.fullTransfer": [],
+    "RemainingDependency.transfer_actor_account_conserved": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RemainingDependency.transfer_stocks_conserved": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RemainingDependency.empty_source_cannot_debit_actor": [
+      "propext"
+    ],
+    "RemainingDependency.affordable_calibrated_selection_delivers": [
+      "propext"
+    ],
+    "RemainingDependency.Mode": [],
+    "RemainingDependency.resultMode": [
+      "propext"
+    ],
+    "RemainingDependency.Fault": [],
+    "RemainingDependency.Config": [],
+    "RemainingDependency.Body": [],
+    "RemainingDependency.State": [],
+    "RemainingDependency.paid": [],
+    "RemainingDependency.channel": [],
+    "RemainingDependency.Event": [],
+    "RemainingDependency.advance": [
+      "propext"
+    ],
+    "RemainingDependency.step": [
+      "propext"
+    ],
+    "RemainingDependency.process": [
+      "propext"
+    ],
+    "RemainingDependency.run": [
+      "propext"
+    ],
+    "RemainingDependency.ancestral_coordinates_unchanged": [
+      "propext"
+    ],
+    "RemainingDependency.run_ancestral_coordinates_unchanged": [
+      "propext"
+    ],
+    "RemainingDependency.completed_component_stays_complete": [
+      "propext"
+    ],
+    "RemainingDependency.run_is_core_trace": [
+      "propext"
+    ],
+    "RemainingDependency.consumer_read_ignores_latent_law": [
+      "propext"
+    ],
+    "RemainingDependency.weak_challenge_does_not_supply_load": [
+      "propext"
+    ],
+    "RemainingDependency.slot_write_does_not_supply_load": [
+      "propext"
+    ],
+    "RemainingDependency.actorTotal": [],
+    "RemainingDependency.paid_account_conserved": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RemainingDependency.paid_stocks_preserved": [],
+    "RemainingDependency.advance_actor_account_conserved": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RemainingDependency.advance_stock_account_conserved": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RemainingDependency.run_actor_account_conserved": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RemainingDependency.run_stock_account_conserved": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RemainingDependency.wholeTotal": [],
+    "RemainingDependency.whole_history_conserved": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RemainingDependency.finite_original_support_bounds_fuel": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RemainingDependency.entrance": [],
+    "RemainingDependency.assayEvents": [],
+    "RemainingDependency.serviceEvents": [],
+    "RemainingDependency.continuation": [
+      "propext"
+    ],
+    "RemainingDependency.truthful_paid_assay_acquires_pair": [
+      "propext"
+    ],
+    "RemainingDependency.truthful_paid_assay_commits_supported_choice": [
+      "propext"
+    ],
+    "RemainingDependency.actual_dependent_service": [
+      "propext"
+    ],
+    "RemainingDependency.opposed_dependency_changes_the_enacted_relation": [
+      "propext"
+    ],
+    "RemainingDependency.matched_clamp_preserves_acquisition_but_withholds_use": [
+      "propext"
+    ],
+    "RemainingDependency.matched_assay_cost_through_commit": [
+      "propext"
+    ],
+    "RemainingDependency.missing_contact_is_unresolved": [
+      "propext"
+    ],
+    "RemainingDependency.false_positive_can_misdirect_remaining_packet": [
+      "propext"
+    ],
+    "RemainingDependency.broken_calibration_defeats_correct_weak_record": [
+      "propext"
+    ],
+    "RemainingDependency.unavailable_relation_is_not_old_unfulfillment": [
+      "propext"
+    ],
+    "ScaleRevision.View": [],
+    "ScaleRevision.Config": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.State": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.total": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.loss": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.drift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.forecast": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.dose": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.paid": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.probeBody": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.inspectBody": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.reviseBody": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.respondBody": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.fixedBody": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.Event": [],
+    "ScaleRevision.advance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.run": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.entrance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.inquiry": [],
+    "ScaleRevision.complete": [],
+    "ScaleRevision.run_is_core_trace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.probe_obtains_actual_loss": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.truthful_changed_probe_requests_refinement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.revised_exact_forecast": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.calibrated_response_margin": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.readout_error_enters_response": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.dose_nonnegative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.bounded_source_after_response": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.response_keeps_second": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.response_support_balance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.actual_response_condition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.workTotal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.paid_work_conserved": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.advance_work_conserved": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.run_work_conserved": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.waited_evidence_rejected": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.acquired_revision_endpoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.enacted_refinement_protects": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.clamped_description_loses_condition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.ignored_revision_delay_loses_condition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.biased_new_coordinate_loses_condition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.inquiry_can_exhaust_response_funding": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.insufficient_response_source": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.mismatched_context_withholds_response": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.matched_revision_preserves_other_inputs": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.bounded_bias_margin_recovers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.conservative_margin_can_exceed_source": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ScaleRevision.fixed_response_also_protects": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PracticalJudgment.Included": [],
+    "PracticalJudgment.StrictIncluded": [],
+    "PracticalJudgment.included_trans": [],
+    "PracticalJudgment.strict_included_irrefl": [],
+    "PracticalJudgment.strict_included_trans": [],
+    "PracticalJudgment.Better": [],
+    "PracticalJudgment.better_irrefl": [],
+    "PracticalJudgment.better_trans": [],
+    "PracticalJudgment.protection_anchor": [],
+    "PracticalJudgment.no_protection_trade_by_count": [],
+    "PracticalJudgment.Frontier": [],
+    "PracticalJudgment.dominated_excluded": [],
+    "PracticalJudgment.finite_frontier": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PracticalJudgment.Required": [],
+    "PracticalJudgment.required_performed": [],
+    "PracticalJudgment.alternative_defeats_specific_duty": [],
+    "PracticalJudgment.impossible_menu_no_duty": [],
+    "PracticalJudgment.necessary_means_required": [],
+    "PracticalJudgment.Assigned": [],
+    "PracticalJudgment.unique_responder_required": [],
+    "PracticalJudgment.assignment_respects_capacity": [],
+    "PracticalJudgment.Covered": [],
+    "PracticalJudgment.transfer_requires_actual_successor": [],
+    "PracticalJudgment.no_demand_gap_transfer": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PracticalJudgment.uncovered_demand_is_failure": [],
+    "PracticalJudgment.Settled": [],
+    "PracticalJudgment.Residual": [],
+    "PracticalJudgment.settlement_removes_residual": [],
+    "PracticalJudgment.unfulfilled_unreleased_remains": [],
+    "PracticalJudgment.Robust": [],
+    "PracticalJudgment.robust_at_actual": [],
+    "PracticalJudgment.robust_under_refinement": [],
+    "PracticalJudgment.required_under_faithful_redescription": [],
+    "PracticalJudgment.withinCeiling": [],
+    "PracticalJudgment.optionalFormation": [],
+    "PracticalJudgment.supplied_ceiling_bounds_optional_gain": [
+      "propext"
+    ],
+    "PracticalJudgment.independent_choices_not_joint_capacity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PracticalJudgment.basis": [],
+    "PracticalJudgment.event": [],
+    "PracticalJudgment.mixed_repair_anchor": [],
+    "PracticalJudgment.repair_retains_real_loss": [],
+    "PracticalJudgment.protectedOne": [],
+    "PracticalJudgment.noGain": [],
+    "PracticalJudgment.competing_claims_incomparable": [
+      "propext"
+    ],
+    "PracticalJudgment.collective_duty_without_individual_duty": [
+      "propext"
+    ],
+    "PracticalJudgment.uncertain_worlds_need_common_plan": [],
+    "InquiryJudgment.response_charge_succeeds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.funded_calibrated_response": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.robust_execution_at_actual": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.Case": [],
+    "InquiryJudgment.Plan": [],
+    "InquiryJudgment.Claim": [],
+    "InquiryJudgment.config": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.events": [],
+    "InquiryJudgment.outcome": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.holds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.protects": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.chosen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.both": [],
+    "InquiryJudgment.accurateOnly": [],
+    "InquiryJudgment.outcome_is_trace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.all_work_accounted": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.continuation_table": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.companion_retained": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.fixed_protects": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.robust_continuation_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.fixed_dominates_failures": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.fixed_is_chosen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.chosen_iff_fixed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.chosen_has_protecting_trace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.collective_response_required": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.pointwise_success_not_common_choice": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.protection_under_narrowing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.accurate_measurement_protects": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.false_narrowing_loses_actual_claim": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.accurate_measured_is_chosen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.broader_cases_change_judgment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.optional_supply_loss_is_real": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.underfunded_menu_has_no_success": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.selectedAllowance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.adaptiveAdvance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.adaptiveOutcome": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.selection_uses_acquired_coordinate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.adaptive_is_trace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.adaptive_matches_successful_history": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.adaptive_protects": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.adaptive_work_accounted": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.extendedOutcome": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.extendedProtect": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.extendedChosen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.complete_protection_is_undominated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.extended_fixed_is_chosen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.extended_adaptive_is_chosen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InquiryJudgment.extended_protection_required_without_fixed_requirement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "commands": [
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "GenerativeCore.olean",
+      "GenerativeCore.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "SystemsOrganization.olean",
+      "SystemsOrganization.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "RelationsAcrossScales.olean",
+      "RelationsAcrossScales.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "RemainingDependency.olean",
+      "RemainingDependency.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "ScaleRevision.olean",
+      "ScaleRevision.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "PracticalJudgment.olean",
+      "PracticalJudgment.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "InquiryJudgment.olean",
+      "InquiryJudgment.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "Audit.lean"
+    ]
+  ],
+  "log_sha256": {
+    "RemainingDependency.txt": "1ebe1f21adfed36245fa0f136eeceb8a6cdbcf3c1c82d3eb732051314469e07d",
+    "axioms.txt": "d5b190ccf3167b6cb374f4cf0db7379ce27f904cb70fa537b89f545928c275b9",
+    "GenerativeCore.txt": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "ScaleRevision.txt": "266b053102f002883afe11cfd3a14259622c4c131ef0939b9443b32eb67b2a6a",
+    "RelationsAcrossScales.txt": "7419604162fba6fced2806b83cad7338fd741da9274752caf4846941b814948d",
+    "PracticalJudgment.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "InquiryJudgment.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "SystemsOrganization.txt": "e94da75fc8f1f3ec9a0fe55379f37b31c954776c93cc5a4ddb5e929a04ec458b"
+  },
+  "audit_source_sha256": "8781f66671c1948a7fa4570f08ee1b7224d461b9b4d87f51c955ca0f1b3132cc",
+  "scope": "All seven repository modules independently compiled from current source in scratch; complete explicit-declaration axiom audit. Existing upstream cache reused. Executable hash does not fingerprint the full linked compiler runtime; no hermetic attestation. Author closure parser reused; author main runner not invoked. No proof of ethical premise warrant or empirical applicability."
+}

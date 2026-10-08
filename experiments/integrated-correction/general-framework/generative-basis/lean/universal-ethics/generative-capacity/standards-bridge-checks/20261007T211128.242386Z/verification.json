@@ -1,0 +1,17 @@
+{
+  "status": "failed",
+  "utc": "20261007T211128.242386Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "standards-bridge-checks/20261007T211128.242386Z",
+  "source_sha256": {
+    "StandardsBridge": "938aaf2e064596ec370099ada5a520542bc2d0fe09853f991c10bfda8022290d"
+  },
+  "checker_sha256": {
+    "check_standards_bridge.py": "27350d545a0d7e3237db4bb23d0fcef10050b0970869f59552747d4f4e7af862",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Acquired candidate-rule revision, exact assessment, maximal safe answering, evidence provenance and semantic transfer. Supplied candidate coverage, faithful acquisition, meanings and event laws; not a sufficient definition of understanding or moral authority.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "StandardsBridge.lean:61:3: error: unknown tactic\nStandardsBridge.lean:58:35: error: unsolved goals\nQ : Type\nh : Rule Q\nhs : List (Rule Q)\nevidence : List (Observation Q)\nincluded : h \u2208 hs\nremoved : \u00ach \u2208 learn hs evidence\nbad : \u00acFits h evidence\n\u22a2 \u2203 o, o \u2208 evidence \u2227 h o.fst \u2260 o.snd\n"
+}

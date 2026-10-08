@@ -1,0 +1,12 @@
+'KitchenTransitions.Feasible' does not depend on any axioms
+'KitchenTransitions.feasible_loss_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KitchenTransitions.net_change' depends on axioms: [propext, Quot.sound]
+'KitchenTransitions.sampleSize' does not depend on any axioms
+'KitchenTransitions.beforeSafe' does not depend on any axioms
+'KitchenTransitions.afterSafe' does not depend on any axioms
+'KitchenTransitions.Published' does not depend on any axioms
+'KitchenTransitions.published_loss_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KitchenTransitions.published_gain_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KitchenTransitions.published_table_determined_by_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'KitchenTransitions.no_losses_realization' does not depend on any axioms
+'KitchenTransitions.losses_realization' does not depend on any axioms

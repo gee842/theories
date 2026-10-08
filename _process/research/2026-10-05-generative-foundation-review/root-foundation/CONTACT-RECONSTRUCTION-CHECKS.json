@@ -1,0 +1,173 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T10:30:16.453076+00:00",
+  "scope": "Owned links, original bytes, kernel-check receipt and source bindings, C14 and six preserved broader requirements. No empirical test or repository-wide review.",
+  "links_checked": 29,
+  "links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-RECONSTRUCTION-INTEGRATION.md",
+      "reference": "ASSEMBLY-DERIVED-SELECTION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-RECONSTRUCTION-INTEGRATION.md",
+      "reference": "EVOLUTION-DEVELOPMENTAL-MEMORY.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-RECONSTRUCTION-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-RECONSTRUCTION-INTEGRATION.md",
+      "reference": "../../../../sources/evolutionary-selection/evolutionary-organization/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-RECONSTRUCTION-INTEGRATION.md",
+      "reference": "RECONSTRUCTIVE-SELECTION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-RECONSTRUCTION-INTEGRATION.md",
+      "reference": "../../../../sources/evolutionary-selection/contact-reconstruction/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-RECONSTRUCTION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/ContactReconstruction.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-RECONSTRUCTION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/contact-reconstruction-verification/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-RECONSTRUCTION-INTEGRATION.md",
+      "reference": "CONTACT-RECONSTRUCTION-CHECKS.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/contact-reconstruction-verification/README.md",
+      "reference": "../ContactReconstruction.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/contact-reconstruction-verification/README.md",
+      "reference": "check.py"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/contact-reconstruction-verification/README.md",
+      "reference": "verification.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/contact-reconstruction-verification/README.md",
+      "reference": "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-RECONSTRUCTION-INTEGRATION.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/contact-reconstruction/README.md",
+      "reference": "oszoli2024.xml"
+    },
+    {
+      "from": "sources/evolutionary-selection/contact-reconstruction/README.md",
+      "reference": "manifest.json"
+    },
+    {
+      "from": "sources/evolutionary-selection/contact-reconstruction/README.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-RECONSTRUCTION-INTEGRATION.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "reference": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-RECONSTRUCTION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md#transmission-and-contact-reconstruction"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "CONTACT-RECONSTRUCTION-INTEGRATION.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md",
+      "reference": "ContactReconstruction.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md",
+      "reference": "contact-reconstruction-verification/README.md"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "reference": "evolutionary-selection/contact-reconstruction/README.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "EVOLUTIONARY-ORGANIZATION.md#transmission-and-contact-reconstruction"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "reference": "CONTACT-RECONSTRUCTION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-RECONSTRUCTION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "CONTACT-RECONSTRUCTION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "CONTACT-RECONSTRUCTION-INDEX-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "CONTACT-RECONSTRUCTION-CHECKS.json"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-RECONSTRUCTION-INTEGRATION.md"
+    }
+  ],
+  "original_sources_checked": 1,
+  "original_bytes": 184926,
+  "new_Lean_theorems": 30,
+  "new_declaration_audits": 57,
+  "closure_declaration_audits": 223,
+  "owned_index_insertions": 9,
+  "full_theory_requirements_preserved": 6,
+  "other_chain_entries_preserved_at_edit": 92,
+  "C14_matches_paired_data": true,
+  "shared_full_render_matches": true,
+  "shared_structural_errors": [],
+  "shared_reviews_pending": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "theories/meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/COLLECTIVE-DESTRUCTION-INTEGRATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-collective-destructive-attractors.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FaultTolerantCorrection.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FaultTolerantCorrectionCases.lean",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_fault_tolerant_correction.py",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/fault-tolerant-correction-verification.json"
+    ],
+    "missing_sources": [],
+    "new_pages": [],
+    "removed_pages": []
+  },
+  "artifact_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-RECONSTRUCTION-INTEGRATION.md": "c4793851fd002b5993650a0b951dd775fb78702cab8c0049e598ba8b7ad554ab",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/contact-reconstruction-verification/README.md": "191a342d6b6a013a07612b4b8549d71bb3f9a4a98e7be57f91da3fb49ccb3a57",
+    "sources/evolutionary-selection/contact-reconstruction/README.md": "b36186de3b74a32c55ebf9dc9b1fcae91e443a5e88433f2d1b053fae3a881f98",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/ContactReconstruction.lean": "4a050a2aab79bb01599c35065d92372bcf860062f7e6c6841908f344699c3ec2",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/contact-reconstruction-verification/verification.json": "cb5d451c83576cb4f17679b04198e317b3b5403f1a822dc03bdd2d188dfa31e5",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTACT-RECONSTRUCTION-INDEX-EDITS.json": "b84e2595f67915449c7353b33cc7986b54b915dacf047915fde7dde27b7446f7",
+    "sources/evolutionary-selection/contact-reconstruction/manifest.json": "36243b0defbe4e7b0a906b4b2126dccc437dc9316e4b693dd0ec634c97017361"
+  },
+  "checker_sha256": "de4a3983220d2c94f47681870748b024add2befe0200d07dac4b04cbffbb55c0"
+}

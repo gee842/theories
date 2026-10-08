@@ -1,0 +1,397 @@
+{
+  "status": "passed",
+  "utc": "20261007T223223.414557Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "alignment-direction-checks/20261007T223223.414557Z",
+  "source_sha256": {
+    "PracticalJudgment": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "AlignmentDirection": "1b183a54e20f3f247aaca539e06ee5c739929758648c965ff900d494b002cd34"
+  },
+  "checker_sha256": {
+    "check_alignment_direction.py": "b730db37f7bef664863985a6024ddca08c1cafc69efaa7a2f7b175eac5ec8718",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Nine AI-case instances: stipulated mixed comparison, retained capability loss, transfer improvement, dominated expansion, actual demand coverage, failed undelivered transfer, crossed basic losses and faithful revision. Thirty imported practical theorems remain inherited. Normative priority, permissible allocation, truthful correspondence and practical selection are explicit philosophical commitments, not kernel-established ethical facts.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "modules": [
+    {
+      "module": "PracticalJudgment",
+      "theorems": 30,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Included"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.StrictIncluded"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.included_trans"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.strict_included_irrefl"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.strict_included_trans"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Better"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.better_irrefl"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.better_trans"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.protection_anchor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.no_protection_trade_by_count"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Frontier"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.dominated_excluded"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.finite_frontier"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Required"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.required_performed"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.alternative_defeats_specific_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.impossible_menu_no_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.necessary_means_required"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Assigned"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.unique_responder_required"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.assignment_respects_capacity"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Covered"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.transfer_requires_actual_successor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.no_demand_gap_transfer"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.uncovered_demand_is_failure"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Settled"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Residual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.settlement_removes_residual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.unfulfilled_unreleased_remains"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Robust"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.robust_at_actual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.robust_under_refinement"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.required_under_faithful_redescription"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.withinCeiling"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.optionalFormation"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.supplied_ceiling_bounds_optional_gain"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.independent_choices_not_joint_capacity"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.basis"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.event"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.mixed_repair_anchor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.repair_retains_real_loss"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.protectedOne"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.noGain"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.competing_claims_incomparable"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.collective_duty_without_individual_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.uncertain_worlds_need_common_plan"
+        }
+      ],
+      "axiom_dependencies": {
+        "PracticalJudgment.Included": [],
+        "PracticalJudgment.StrictIncluded": [],
+        "PracticalJudgment.included_trans": [],
+        "PracticalJudgment.strict_included_irrefl": [],
+        "PracticalJudgment.strict_included_trans": [],
+        "PracticalJudgment.Better": [],
+        "PracticalJudgment.better_irrefl": [],
+        "PracticalJudgment.better_trans": [],
+        "PracticalJudgment.protection_anchor": [],
+        "PracticalJudgment.no_protection_trade_by_count": [],
+        "PracticalJudgment.Frontier": [],
+        "PracticalJudgment.dominated_excluded": [],
+        "PracticalJudgment.finite_frontier": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.Required": [],
+        "PracticalJudgment.required_performed": [],
+        "PracticalJudgment.alternative_defeats_specific_duty": [],
+        "PracticalJudgment.impossible_menu_no_duty": [],
+        "PracticalJudgment.necessary_means_required": [],
+        "PracticalJudgment.Assigned": [],
+        "PracticalJudgment.unique_responder_required": [],
+        "PracticalJudgment.assignment_respects_capacity": [],
+        "PracticalJudgment.Covered": [],
+        "PracticalJudgment.transfer_requires_actual_successor": [],
+        "PracticalJudgment.no_demand_gap_transfer": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.uncovered_demand_is_failure": [],
+        "PracticalJudgment.Settled": [],
+        "PracticalJudgment.Residual": [],
+        "PracticalJudgment.settlement_removes_residual": [],
+        "PracticalJudgment.unfulfilled_unreleased_remains": [],
+        "PracticalJudgment.Robust": [],
+        "PracticalJudgment.robust_at_actual": [],
+        "PracticalJudgment.robust_under_refinement": [],
+        "PracticalJudgment.required_under_faithful_redescription": [],
+        "PracticalJudgment.withinCeiling": [],
+        "PracticalJudgment.optionalFormation": [],
+        "PracticalJudgment.supplied_ceiling_bounds_optional_gain": [
+          "propext"
+        ],
+        "PracticalJudgment.independent_choices_not_joint_capacity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.basis": [],
+        "PracticalJudgment.event": [],
+        "PracticalJudgment.mixed_repair_anchor": [],
+        "PracticalJudgment.repair_retains_real_loss": [],
+        "PracticalJudgment.protectedOne": [],
+        "PracticalJudgment.noGain": [],
+        "PracticalJudgment.competing_claims_incomparable": [
+          "propext"
+        ],
+        "PracticalJudgment.collective_duty_without_individual_duty": [
+          "propext"
+        ],
+        "PracticalJudgment.uncertain_worlds_need_common_plan": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "AlignmentDirection",
+      "theorems": 9,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "AlignmentDirection.protection"
+        },
+        {
+          "kind": "def",
+          "name": "AlignmentDirection.realization"
+        },
+        {
+          "kind": "def",
+          "name": "AlignmentDirection.eligible"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentDirection.preserve_over_expansion"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentDirection.expansion_has_real_gain_and_preservation_loses_it"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentDirection.transfer_over_preservation"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentDirection.transfer_over_expansion"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentDirection.expansion_excluded"
+        },
+        {
+          "kind": "def",
+          "name": "AlignmentDirection.demand"
+        },
+        {
+          "kind": "def",
+          "name": "AlignmentDirection.oldService"
+        },
+        {
+          "kind": "def",
+          "name": "AlignmentDirection.successorService"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentDirection.covered_transfer_with_old_model_stopped"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentDirection.promised_successor_without_delivery_fails"
+        },
+        {
+          "kind": "def",
+          "name": "AlignmentDirection.conflictProtection"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentDirection.crossed_basic_losses_remain_unranked"
+        },
+        {
+          "kind": "theorem",
+          "name": "AlignmentDirection.revision_preserves_requirement"
+        }
+      ],
+      "axiom_dependencies": {
+        "AlignmentDirection.protection": [],
+        "AlignmentDirection.realization": [],
+        "AlignmentDirection.eligible": [],
+        "AlignmentDirection.preserve_over_expansion": [
+          "propext"
+        ],
+        "AlignmentDirection.expansion_has_real_gain_and_preservation_loses_it": [
+          "propext"
+        ],
+        "AlignmentDirection.transfer_over_preservation": [
+          "propext"
+        ],
+        "AlignmentDirection.transfer_over_expansion": [
+          "propext"
+        ],
+        "AlignmentDirection.expansion_excluded": [
+          "propext"
+        ],
+        "AlignmentDirection.demand": [],
+        "AlignmentDirection.oldService": [],
+        "AlignmentDirection.successorService": [],
+        "AlignmentDirection.covered_transfer_with_old_model_stopped": [
+          "propext",
+          "Quot.sound"
+        ],
+        "AlignmentDirection.promised_successor_without_delivery_fails": [],
+        "AlignmentDirection.conflictProtection": [],
+        "AlignmentDirection.crossed_basic_losses_remain_unranked": [
+          "propext"
+        ],
+        "AlignmentDirection.revision_preserves_requirement": []
+      },
+      "kernel_checked": true
+    }
+  ],
+  "artifact_sha256": {
+    "AlignmentDirection.lean": "1b183a54e20f3f247aaca539e06ee5c739929758648c965ff900d494b002cd34",
+    "AlignmentDirection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "AlignmentDirectionAxiomAudit.lean": "eeaa87f1a5172a4f721d8064424b01dec6d65ef3ab3a25408e3aa190b3db7a3c",
+    "AlignmentDirectionAxiomAudit.log": "c1b4d8b1958068161e8ed798d5419616d0006a24220cb771ceb282b11c5aa960",
+    "AlignmentDirectionSignatures.lean": "fed195ef8c2681dc3e394f40bcf167716413b185cab4fd7d11265cd79726eb85",
+    "AlignmentDirectionSignatures.log": "662c3ff7c8cffe9bdb9508becd745db79ce13712c4599d7553b2fccf98365994",
+    "PracticalJudgment.lean": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "PracticalJudgment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PracticalJudgmentAxiomAudit.lean": "c9f412159410854fb031176d7fe7a4c351dfaea59354c7d7a19ec4ad0c6e51a6",
+    "PracticalJudgmentAxiomAudit.log": "d73810d6b1a7343808726234c17bca9d7841acafabd3a17ee8e6145dfabbf1ea",
+    "PracticalJudgmentSignatures.lean": "aec1f9317bc8881cb24e62213fa9db801f59b620595bb90caf082a5debc9cb66",
+    "PracticalJudgmentSignatures.log": "93b65679f59a01788bfcfbfe0bf5bc3ef93f0cf67516c469f1667c5cdc9abd65",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_alignment_direction.py": "b730db37f7bef664863985a6024ddca08c1cafc69efaa7a2f7b175eac5ec8718",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

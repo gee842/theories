@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "scope": "Canonical owned C28/F20 rows only; no full-table certification; other generated lines preserved.",
+  "entry_ids": [
+    "C28",
+    "F20"
+  ],
+  "unrelated_entries_preserved": 84,
+  "errors": [],
+  "pending_shared_source_reviews": [
+    "RESEARCH.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+    "theories/shengsheng-buxi-generative-existence/README.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+    "sources/15-codex-theory-conversations/2026-10-08-assumption-free-shengsheng-foundation.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-CALIBRATION.md"
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "owned_entry": "C01",
+  "other_entries_preserved": 84,
+  "before_entry": {
+    "id": "C01",
+    "title_zh": "同一生成展开与关系分化",
+    "title_en": "One generative unfolding and relational differentiation",
+    "claim_zh": "活动形成并转化后续活动的条件；组织、认识、行动与评价在同一展开中分化，并通过实际相连的机制及其对应得到说明。",
+    "claim_en": "Activity forms and transforms conditions of further activity; organization, knowing, action and evaluation differentiate within one unfolding and are explained through connected mechanisms and their correspondence.",
+    "scope_zh": "相连说明已完成；既有机制与规范应用保留条件范围，无新增定理或普遍必然性证明。",
+    "scope_en": "Connected articulation complete; inherited mechanisms and normative applications retain conditional scope. No new theorem or universal-necessity proof.",
+    "links": [
+      {
+        "label_zh": "完整相连说明",
+        "label_en": "Connected articulation",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md"
+      },
+      {
+        "label_zh": "证据、反审与完成范围",
+        "label_en": "Evidence, counterreview and completion",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md"
+      },
+      {
+        "label_zh": "本次原话",
+        "label_en": "Request and provenance",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-shengsheng-articulation.md"
+      },
+      {
+        "label_zh": "当前表述与范围",
+        "label_en": "Current statement and scope",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md#begin-within-generative-unfolding"
+      }
+    ]
+  },
+  "after_entry": {
+    "id": "C01",
+    "title_zh": "同一生成展开与关系分化",
+    "title_en": "One generative unfolding and relational differentiation",
+    "claim_zh": "活动形成并转化后续活动的条件；组织、认识、行动与评价在同一展开中分化，并通过实际相连的机制及其对应得到说明。",
+    "claim_en": "Activity forms and transforms conditions of further activity; organization, knowing, action and evaluation differentiate within one unfolding and are explained through connected mechanisms and their correspondence.",
+    "scope_zh": "相连说明在条件范围内已完成；新的无假设奠基仍未完成。有限发生续审新增11项已检查定理／29项含继承审计，不证明普遍必要性。",
+    "scope_en": "Connected articulation complete at conditional scope; renewed assumption-free grounding remains open. The finite-enactment audit adds 11 checked theorems / 29 audits with imports, without proving universal necessity.",
+    "links": [
+      {
+        "label_zh": "完整相连说明",
+        "label_en": "Connected articulation",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md"
+      },
+      {
+        "label_zh": "证据、反审与完成范围",
+        "label_en": "Evidence, counterreview and completion",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md"
+      },
+      {
+        "label_zh": "本次原话",
+        "label_en": "Request and provenance",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-shengsheng-articulation.md"
+      },
+      {
+        "label_zh": "当前表述与范围",
+        "label_en": "Current statement and scope",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md#begin-within-generative-unfolding"
+      },
+      {
+        "label_zh": "无假设奠基继续",
+        "label_en": "Assumption-free foundation",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md"
+      },
+      {
+        "label_zh": "实际发生、证明与反审",
+        "label_en": "Enactment, proof and counterreview",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ENACTED-FOUNDATION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "本次更强要求",
+        "label_en": "Renewed stronger request",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-assumption-free-shengsheng-foundation.md"
+      },
+      {
+        "label_zh": "有限历史实查",
+        "label_en": "Finite-history verification",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/enacted-foundation-verification.json"
+      }
+    ]
+  },
+  "owned_reviewed_sources": [
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ENACTED-FOUNDATION-INTEGRATION.md",
+    "sources/15-codex-theory-conversations/2026-10-08-assumption-free-shengsheng-foundation.md",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/enacted-foundation-verification.json"
+  ],
+  "owned_discovery_paths": [
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ENACTED-FOUNDATION-INTEGRATION.md"
+  ],
+  "pending_combined_table_changes": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEASURED-FEEDBACK-CORRESPONDENCE.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/THREE-CONNECTIONS-COMPLETION-AUDIT.md",
+      "theories/shengsheng-buxi-generative-existence/README.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/TIMED-FEEDBACK-INTEGRATION.md"
+    ],
+    "removed_pages": []
+  },
+  "scope": "Scoped update using the existing renderer, not a full-table source review."
+}

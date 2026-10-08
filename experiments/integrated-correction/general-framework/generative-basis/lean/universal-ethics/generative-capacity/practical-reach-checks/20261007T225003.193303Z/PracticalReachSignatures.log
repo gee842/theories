@@ -1,0 +1,54 @@
+PracticalReach.guarantee_mono {A O : Type} {r : A → O → Prop} {a : A} {g h : O → Prop}
+  (hg : PracticalReach.Guarantees r a g) (incl : ∀ (o : O), g o → h o) : PracticalReach.Guarantees r a h
+PracticalReach.cannot_ensure_false {A O : Type} (r : A → O → Prop) : ¬PracticalReach.CanEnsure r fun x => False
+PracticalReach.ensure_true_iff_live_response {A O : Type} (r : A → O → Prop) :
+  (PracticalReach.CanEnsure r fun x => True) ↔ ∃ a, PracticalReach.Live r a
+PracticalReach.refinement_preserves_goals {A B O : Type} {r : A → O → Prop} {s : B → O → Prop}
+  (h : PracticalReach.Refines r s) {g : O → Prop} (hg : PracticalReach.CanEnsure r g) : PracticalReach.CanEnsure s g
+PracticalReach.refinement_iff_all_goal_preservation {A B O : Type} (r : A → O → Prop) (s : B → O → Prop) :
+  PracticalReach.Refines r s ↔ ∀ (g : O → Prop), PracticalReach.CanEnsure r g → PracticalReach.CanEnsure s g
+PracticalReach.refinement_refl {A O : Type} (r : A → O → Prop) : PracticalReach.Refines r r
+PracticalReach.refinement_trans {A B C O : Type} {r : A → O → Prop} {s : B → O → Prop} {t : C → O → Prop}
+  (rs : PracticalReach.Refines r s) (st : PracticalReach.Refines s t) : PracticalReach.Refines r t
+PracticalReach.failed_refinement_has_lost_goal {A B O : Type} {r : A → O → Prop} {s : B → O → Prop}
+  (h : ¬PracticalReach.Refines r s) : ∃ g, PracticalReach.CanEnsure r g ∧ ¬PracticalReach.CanEnsure s g
+PracticalReach.finite_revisions_preserve {O : Type} {A : Nat → Type} (r : (n : Nat) → A n → O → Prop)
+  (step : ∀ (n : Nat), PracticalReach.Refines (r n) (r (n + 1))) (n : Nat) : PracticalReach.Refines (r 0) (r n)
+PracticalReach.projected_goal_iff {A O P : Type} (f : O → P) (r : A → O → Prop) (g : P → Prop) :
+  PracticalReach.CanEnsure (PracticalReach.Project f r) g ↔ PracticalReach.CanEnsure r fun o => g (f o)
+PracticalReach.no_strict_improvement_for_every_goal {A B O : Type} (r : A → O → Prop) (s : B → O → Prop) :
+  ¬∀ (g : O → Prop), PracticalReach.CanEnsure s g ∧ ¬PracticalReach.CanEnsure r g
+PracticalReach.common_goal_prevents_everywhere_strict {A B O : Type} {r : A → O → Prop} {s : B → O → Prop}
+  (live : ∃ a, PracticalReach.Live r a) (h : PracticalReach.Refines r s) :
+  ∃ g, PracticalReach.CanEnsure r g ∧ PracticalReach.CanEnsure s g
+PracticalReach.fixed_ensures_false : PracticalReach.CanEnsure PracticalReach.fixed fun o => o = false
+PracticalReach.uncontrolled_cannot_ensure_false :
+  ¬PracticalReach.CanEnsure PracticalReach.uncontrolled fun o => o = false
+PracticalReach.possible_enlargement_without_control :
+  (∀ (o : Bool),
+      PracticalReach.Possible PracticalReach.fixed o → PracticalReach.Possible PracticalReach.uncontrolled o) ∧
+    (PracticalReach.Possible PracticalReach.uncontrolled true ∧ ¬PracticalReach.Possible PracticalReach.fixed true) ∧
+      ¬PracticalReach.Refines PracticalReach.fixed PracticalReach.uncontrolled
+PracticalReach.selectable_retains_fixed : PracticalReach.Refines PracticalReach.fixed PracticalReach.selectable
+PracticalReach.guaranteed_control_can_remove_possibility :
+  PracticalReach.Refines PracticalReach.uncontrolled PracticalReach.fixed ∧
+    PracticalReach.Possible PracticalReach.uncontrolled true ∧ ¬PracticalReach.Possible PracticalReach.fixed true
+PracticalReach.selectable_ensures_each (b : Bool) : PracticalReach.CanEnsure PracticalReach.selectable fun o => o = b
+PracticalReach.fixed_cannot_ensure_true : ¬PracticalReach.CanEnsure PracticalReach.fixed fun o => o = true
+PracticalReach.retained_control_and_strict_new_goal :
+  PracticalReach.Refines PracticalReach.fixed PracticalReach.selectable ∧
+    (PracticalReach.CanEnsure PracticalReach.selectable fun o => o = true) ∧
+      ¬PracticalReach.CanEnsure PracticalReach.fixed fun o => o = true
+PracticalReach.outcome_goal_preservation_can_defeat_closure_goal :
+  PracticalReach.Refines PracticalReach.fixed PracticalReach.selectable ∧
+    PracticalReach.ClosedToTrue PracticalReach.fixed ∧ ¬PracticalReach.ClosedToTrue PracticalReach.selectable
+PracticalReach.separate_guarantees_not_joint :
+  (PracticalReach.CanEnsure PracticalReach.selectable fun o => o = false) ∧
+    (PracticalReach.CanEnsure PracticalReach.selectable fun o => o = true) ∧
+      ¬PracticalReach.CanEnsure PracticalReach.selectable fun o => o = false ∧ o = true
+PracticalReach.empty_response_does_not_guarantee :
+  (∀ (o : Bool), PracticalReach.absent () o → o = false) ∧
+    ¬PracticalReach.CanEnsure PracticalReach.absent fun o => o = false
+PracticalReach.projection_can_hide_loss :
+  (PracticalReach.CanEnsure (PracticalReach.Project (fun x => false) PracticalReach.uncontrolled) fun o => o = false) ∧
+    ¬PracticalReach.CanEnsure PracticalReach.uncontrolled fun o => o = false

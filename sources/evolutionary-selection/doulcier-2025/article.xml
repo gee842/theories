@@ -1,0 +1,1138 @@
+
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.4 20241031//EN" "JATS-archivearticle1-4-mathml3.dtd">
+<article xml:lang="en" article-type="research-article" dtd-version="1.4"><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Proc Biol Sci</journal-id><journal-id journal-id-type="iso-abbrev">Proc Biol Sci</journal-id><journal-id journal-id-type="pmc-domain-id">137</journal-id><journal-id journal-id-type="pmc-domain">procb</journal-id><journal-id journal-id-type="nlm-id">101245157</journal-id><journal-id journal-id-type="publisher-id">RSPB</journal-id><journal-title-group><journal-title>Proceedings of the Royal Society B: Biological Sciences</journal-title></journal-title-group><issn pub-type="ppub">0962-8452</issn><issn pub-type="epub">1471-2954</issn><?publisher_abbrev royalsoc?><publisher><publisher-name>The Royal Society</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC12040459</article-id><article-id pub-id-type="pmcid-ver">PMC12040459.1</article-id><article-id pub-id-type="pmcaid">12040459</article-id><article-id pub-id-type="pmcaiid">12040459</article-id><article-id pub-id-type="pmid">40300626</article-id><article-id pub-id-type="doi">10.1098/rspb.2024.1195</article-id><article-id pub-id-type="publisher-id">rspb20241195</article-id><article-version article-version-type="pmc-version">1</article-version><article-categories><subj-group subj-group-type="discipline-codes"><compound-subject><compound-subject-part content-type="code">1001</compound-subject-part></compound-subject></subj-group><subj-group subj-group-type="subject-codes"><compound-subject><compound-subject-part content-type="code">70</compound-subject-part></compound-subject></subj-group><subj-group subj-group-type="heading"><subject>Evolution</subject></subj-group><subj-group subj-group-type="type-of-publication"><subject>Research Articles</subject></subj-group></article-categories><title-group><article-title>Evolutionary dynamics of nascent multicellular lineages</article-title><alt-title alt-title-type="short">Evolutionary dynamics of nascent multicellular lineages</alt-title></title-group><contrib-group><contrib contrib-type="author" corresp="yes"><contrib-id contrib-id-type="orcid" authenticated="true">https://orcid.org/0000-0003-3720-9089</contrib-id><name name-style="western"><surname>Doulcier</surname><given-names initials="G">Guilhem</given-names></name><xref rid="aff1" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="aff2" ref-type="aff">
+<sup>2</sup>
+</xref><xref rid="aff3" ref-type="aff">
+<sup>3</sup>
+</xref><xref rid="afn1" ref-type="author-notes">
+<sup>†</sup>
+</xref><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Formal analysis" vocab-term-identifier="https://credit.niso.org/contributor-roles/formal-analysis/">Formal analysis</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Software" vocab-term-identifier="https://credit.niso.org/contributor-roles/software/">Software</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Visualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/visualization/">Visualization</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing – original draft</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – review and editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing – review and editing</role><email>guilhem.doulcier@normalesup.org</email></contrib><contrib contrib-type="author"><contrib-id contrib-id-type="orcid" authenticated="true">https://orcid.org/0000-0001-9023-3788</contrib-id><name name-style="western"><surname>Remigi</surname><given-names initials="P">Philippe</given-names></name><xref rid="aff4" ref-type="aff">
+<sup>4</sup>
+</xref><xref rid="aff5" ref-type="aff">
+<sup>5</sup>
+</xref><xref rid="afn1" ref-type="author-notes">
+<sup>†</sup>
+</xref><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing – original draft</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – review and editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing – review and editing</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Conceptualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/conceptualization/">Conceptualization</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Funding acquisition" vocab-term-identifier="https://credit.niso.org/contributor-roles/funding-acquisition/">Funding acquisition</role></contrib><contrib contrib-type="author"><contrib-id contrib-id-type="orcid" authenticated="true">https://orcid.org/0000-0003-2733-8549</contrib-id><name name-style="western"><surname>Rexin</surname><given-names initials="D">Daniel</given-names></name><xref rid="aff4" ref-type="aff">
+<sup>4</sup>
+</xref><xref rid="aff6" ref-type="aff">
+<sup>6</sup>
+</xref><xref rid="aff7" ref-type="aff">
+<sup>7</sup>
+</xref><xref rid="afn1" ref-type="author-notes">
+<sup>†</sup>
+</xref><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">Investigation</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing – original draft</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – review and editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing – review and editing</role></contrib><contrib contrib-type="author" corresp="yes"><contrib-id contrib-id-type="orcid" authenticated="true">https://orcid.org/0000-0003-0879-5795</contrib-id><name name-style="western"><surname>Rainey</surname><given-names initials="PB">Paul B.</given-names></name><xref rid="aff3" ref-type="aff">
+<sup>3</sup>
+</xref><xref rid="aff4" ref-type="aff">
+<sup>4</sup>
+</xref><xref rid="aff6" ref-type="aff">
+<sup>6</sup>
+</xref><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Conceptualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/conceptualization/">Conceptualization</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Funding acquisition" vocab-term-identifier="https://credit.niso.org/contributor-roles/funding-acquisition/">Funding acquisition</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing – original draft</role><role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing – review and editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing – review and editing</role><email>rainey@evolbio.mpg.de</email></contrib><aff id="aff1">
+<label>
+<sup>1</sup>
+</label>
+<institution-wrap><institution>Department of Philosophy, Macquarie University</institution></institution-wrap>, <city>Sydney</city>, <state>New SouthWales</state>
+<addr-line>2109</addr-line>, <country>Australia</country>
+</aff><aff id="aff2">
+<label>
+<sup>2</sup>
+</label>
+<institution-wrap><institution>Department ofTheoretical Biology, Max Planck Institute for Evolutionary Biology</institution></institution-wrap>, <city>Plön</city>, <country>Germany</country>
+</aff><aff id="aff3">
+<label>
+<sup>3</sup>
+</label>
+<institution-wrap><institution>Department of Microbial Population Biology, Max Planck Institute for Evolutionary Biology</institution></institution-wrap>, <city>Plön</city>, <country>Germany</country>
+</aff><aff id="aff4">
+<label>
+<sup>4</sup>
+</label>
+<institution-wrap><institution>Laboratory of Biophysics and Evolution, ESPCI, Université Paris Sciences et Lettres</institution></institution-wrap>, <city>Paris</city>, <country>France</country>
+</aff><aff id="aff5">
+<label>
+<sup>5</sup>
+</label>
+<institution-wrap><institution>NewZealand Institute for Advanced Study</institution></institution-wrap>, <city>Auckland</city>, <country>New Zealand</country>
+</aff><aff id="aff6">
+<label>
+<sup>6</sup>
+</label>
+<institution-wrap><institution>Laboratoire des Interactions Plantes-Microbes Environnement (LIPME), INRAE, CNRS, Université deToulouse</institution></institution-wrap>, <city>Castanet-Tolosan</city>, <country>France</country>
+</aff><aff id="aff7">
+<label>
+<sup>7</sup>
+</label>
+<institution-wrap><institution>Institute of Environmental Science and Research Ltd., ESR</institution></institution-wrap>, <city>Porirua</city>, <country>New Zealand</country>
+</aff></contrib-group><author-notes><fn fn-type="other"><p>Electronic supplementary material is available online at <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://doi.org/10.6084/m9.figshare.c.7736484" ext-link-type="uri">https://doi.org/10.6084/m9.figshare.c.7736484</ext-link>.</p></fn><fn fn-type="other" id="afn1"><label>
+<sup>†</sup>
+</label><p>Joint first authors.</p></fn></author-notes><pub-date date-type="collection" publication-format="electronic"><month>4</month><year>2025</year></pub-date><pub-date date-type="pub" publication-format="electronic"><day>30</day><month>4</month><year>2025</year><string-date>April 30, 2025</string-date></pub-date><volume>292</volume><issue>2045</issue><issue-id pub-id-type="pmc-issue-id">486705</issue-id><elocation-id>20241195</elocation-id><history>
+<date date-type="received"><day>20</day><month>5</month><year>2024</year><string-date>May 20, 2024</string-date></date>
+<date date-type="rev-recd"><day>06</day><month>8</month><year>2024</year><string-date>August 6, 2024</string-date></date>
+<date date-type="accepted"><day>17</day><month>1</month><year>2025</year><string-date>January 17, 2025</string-date></date>
+</history><pub-history><event event-type="pmc-release"><date><day>30</day><month>04</month><year>2025</year></date></event><event event-type="pmc-live"><date><day>30</day><month>04</month><year>2025</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2025-05-03 12:25:20.897"><day>03</day><month>05</month><year>2025</year></date></event></pub-history><permissions><copyright-statement>© 2025 The Author(s).</copyright-statement><copyright-year>2025</copyright-year><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>Published by the Royal Society under the terms of the Creative Commons Attribution License <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link>, which permits unrestricted use, provided the original author and source are credited.</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="rspb.2024.1195.pdf"><?pdf-name rspb.2024.1195.pdf?><?pdf-size 5022075?><?pdf-md5 7a4cd76c93aa3bfceba208656bae7f22?><?pdf-image-server-status NEVER_LOAD?><?pdf-cloudpmc-urn urn:app:5091/12040459/7a4cd76c93aa/rspb.2024.1195.pdf?></self-uri><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pdf" xlink:href="rspb.2024.1195.pdf"/><abstract><p>The evolution of multicellular organisms involves the emergence of cellular collectives that eventually become units of selection in their own right. The process can be facilitated by ecological conditions that impose heritable variance in fitness on nascent collectives, with long-term persistence depending on the capacity of competing lineages to transition reliably between soma- and germ-like stages of proto-life cycles. Prior work with experimental bacterial populations showed rapid increases in collective-level fitness, with the capacity to switch between life cycle phases being a particular focus of selection. Here, we report experiments in which the most successful lineage from the earlier study was further propagated for 10 life cycle generations under regimes that required different investments in the soma-like phase. To explore the adaptive significance of switching, a control was included in which reliable transitioning between life cycle phases was abolished. The switch proved central to the maintenance of fitness. Moreover, in a non-switch treatment, where solutions to producing a robust and enduring soma-phase were required, the evolution of <italic toggle="yes">mutL</italic>-dependent switching emerged de novo. A newly developed computational pipeline (colgen) was used to display the moment-by-moment evolutionary dynamics of lineages, providing rare visual evidence of the roles of chance, history and selection. Colgen, underpinned by a Bayesian model, was further used to propagate hundreds of mutations back through temporal genealogical series, predict lineages and time points corresponding to changes of likely adaptive significance, and in one instance, via a combination of targeted sequencing, genetics and analyses of fitness consequences, the adaptive significance of a single mutation was demonstrated. Overall, our results shed light on the mechanisms by which collectives adapt to new selective challenges and demonstrate the value of genealogy-centred approaches for investigating the dynamics of lineage-level selection.</p></abstract><kwd-group><kwd>experimental evolution</kwd><x xml:space="preserve">; </x><kwd>Bayesian network</kwd><x xml:space="preserve">; </x><kwd>genealogies</kwd><x xml:space="preserve">; </x><kwd>evolutionary transitions in individuality</kwd><x xml:space="preserve">; </x><kwd>ecological scaffolding</kwd><x xml:space="preserve">; </x><kwd>multicellularity</kwd><x xml:space="preserve">; </x><kwd>metapopulations</kwd></kwd-group><funding-group specific-use="FundRef"><award-group award-type="grant" id="award-1"><funding-source>
+<institution-wrap><institution>Max-Planck-Gesellschaft</institution><institution-id institution-id-type="FundRef">http://dx.doi.org/10.13039/501100004189</institution-id></institution-wrap>
+</funding-source></award-group><award-group award-type="grant" id="award-2"><funding-source>
+<institution-wrap><institution>Université de Recherche Paris Sciences et Lettres</institution><institution-id institution-id-type="FundRef">http://dx.doi.org/10.13039/501100009517</institution-id></institution-wrap>
+</funding-source></award-group><award-group award-type="grant" id="award-3"><funding-source>
+<institution-wrap><institution>Marsden Fund Council/Royal Society of New Zealand</institution></institution-wrap>
+</funding-source></award-group><award-group award-type="grant" id="award-4"><funding-source>
+<institution-wrap><institution>John Templeton Foundation</institution><institution-id institution-id-type="FundRef">http://dx.doi.org/10.13039/100000925</institution-id></institution-wrap>
+</funding-source></award-group></funding-group><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-license-ref</meta-name><meta-value>CC BY</meta-value></custom-meta></custom-meta-group></article-meta></front><body><sec sec-type="intro" id="s1"><label>1<x xml:space="preserve">. </x>
+</label><title>Introduction</title><p>Major evolutionary transitions in individuality underpin the emergence of life’s complexity [<xref rid="B1" ref-type="bibr">1</xref>–<xref rid="B4" ref-type="bibr">4</xref>]. A transition of particular interest is that involving the formation of multicellular collectives from ancestral unicellular types [<xref rid="B5" ref-type="bibr">5</xref>–<xref rid="B8" ref-type="bibr">8</xref>]. The transition initiates with the formation of simple groups—for example, through failure of cells to separate upon cell division—and completes once groups become units of selection in their own right. For the latter, newly formed collectives must be Darwinian; that is, collectives must be discrete (with variation among collectives), replicate and leave offspring copies that resemble parental types [<xref rid="B9" ref-type="bibr">9</xref>].</p><p>As elaborated elsewhere, these Darwinian properties are derived traits and require evolutionary explanation [<xref rid="B10" ref-type="bibr">10</xref>,<xref rid="B11" ref-type="bibr">11</xref>], but how these properties evolve—in the absence of collectives already manifesting these properties—has been a puzzle. One solution that has motivated experimental studies recognizes that variation, replication and heredity can be exogenously imposed (scaffolded) by specific ecological conditions [<xref rid="B12" ref-type="bibr">12</xref>–<xref rid="B16" ref-type="bibr">16</xref>]. Once stably imposed, simple undifferentiated groups of cells can become unwitting players in a selective process that occurs over timescales defined by the birth and death of groups, just as if they were cells of a multicellular organism.</p><p>A conceivable ecological setting—and one that has inspired laboratory studies—is provided by reeds in a pond [<xref rid="B12" ref-type="bibr">12</xref>]. Reeds act as scaffolds around which microbial mats attach, allowing colonization of the air–liquid interface (ALI), but importantly, spatial separation of reeds ensures that mats are discrete, thus allowing variation to manifest at the level of mats. Periodically, mats fail and sink, opening niches for the formation of new mats. If dispersing cells from an extant mat re-colonize a vacant reed, then the newly formed mat, being derived from the extant parent, may inherit parental characteristics. Mats thus become units of selection in their own right, with selection operating over two timescales: the doubling time of mats and the doubling time of cells [<xref rid="B13" ref-type="bibr">13</xref>]. Knowledge of the evolutionary dynamics that unfold at the level of mats stands to shed light on processes underpinning the origin of multicellular life.</p><p>In the laboratory, an analogy of the reeds-in-pond model has been devised by substituting glass vials for reeds with experimental realization in earlier studies [<xref rid="B17" ref-type="bibr">17</xref>,<xref rid="B18" ref-type="bibr">18</xref>]. In brief, the work uses the aerobic bacterium <italic toggle="yes">Pseudomonas fluorescens</italic> SBW25, whose metabolic activities, when introduced into static broth microcosms, cause the medium to become anoxic [<xref rid="B19" ref-type="bibr">19</xref>]. This creates conditions that favour cellulose-overproducing, ALI-colonizing (mat-forming) mutants known as ‘wrinkly spreaders’ (WS). Presence at the ALI ensures that constituent cells benefit from freely available oxygen. Given a cost associated with the overproduction of cellulose, WS mats are susceptible to invasion by cellulose-defective ‘smooth’ (SM) mutants. These types pay none of the costs but fail to provide structural support to the mat, ultimately leading to mat collapse [<xref rid="B20" ref-type="bibr">20</xref>]. While this amounts to a classic tragedy of the commons [<xref rid="B21" ref-type="bibr">21</xref>], taken back into the pond setting, functional roles of WS mat-forming cells and swimming SM cells can be viewed as analogous to primitive soma and germ phases, respectively [<xref rid="B11" ref-type="bibr">11</xref>]. WS mats perform an ecological role (ensuring access to oxygen) while producing seeds (SM cells) of the next generation of mats. The latter is especially relevant because in the absence of propagules, mats, like soma, are an evolutionary dead end [<xref rid="B17" ref-type="bibr">17</xref>].</p><p>A graphical representation of both the life cycle and the lineage selection regime is provided in <xref rid="F1" ref-type="fig">figure 1</xref>. Negative frequency-dependent interaction among WS and SM cells generates a life cycle that, in appropriate ecological context, becomes the primary focus of selection. Important to note are the causes of lineage-level death–birth dynamics. Lineages go extinct whenever they fail to generate the next stage in the life cycle or because the mat phase collapses prematurely (soma failure). Given that the life cycle is fuelled by spontaneous mutation, lineages are particularly prone to failure, with lineage death providing opportunity for extant lineages (chosen at random) to export their reproductive success to new microcosms in precisely the same way as a mat that falls from a reed provides opportunity for competing mats to reproduce.</p><fig position="float" fig-type="figure" id="F1" orientation="portrait"><label>Figure 1<x xml:space="preserve">. </x>
+</label><caption><p>Experimental regime and <monospace>colgen</monospace>-based representation. (a) A single generation of the nascent multicellular life cycle has two phases. Phase I (Ph I) initiates with the placement of a single WS genotype into a glass microcosm. The WS type overproduces cellulose and forms a soma-like structure (a mat) at the air–liquid interface (ALI). During the 6-day Ph I stage, the mat, in addition to remaining at the ALI, must generate non-cellulose-producing (SM) cells that function as seeds (germ cells) for the next generation of mats (solid arrow). At the end of Ph I, SM germ cells are transferred to a fresh microcosm (dotted arrow) where the soma state must be re-established. After 3 days in phase II (Ph II), WS cells are collected, and a single genotype is used to found the next generation. Alternative experimental set-ups are described and contrasted in [<xref rid="B17" ref-type="bibr">17</xref>,<xref rid="B18" ref-type="bibr">18</xref>]. (b) Transition between soma (WS) and germ (SM) states is required for survival and involves activation and deactivation of cellulose production, which is affected by mutations that activate and deactivate the synthesis of cyclic-di-GMP. Of particular relevance is the derived ‘life cycle switch’ <styled-content style-type="small-caps">lcs</styled-content>
+<sup>+</sup> genotype that has enhanced capacity to transition between soma and germ states because of a mutation in <italic toggle="yes">mutS</italic> that causes frameshifting to occur at high frequency in a tract of guanine (G) residues in the active site of the WspR-encoded diguanylate cyclase. When the reading frame is intact, the cellulose-overproducing soma state is achieved but gain or loss of a G-residue causes a frameshift, deactivation of WspR, leading to realization of the germ state. (c) Extinction of lineages occurs if there are no soma cells after 6 days of Ph I, no germ cells after 3 days in Ph II or if the mat collapses during Ph I (soma failure). The death of lineages allows a death–birth dynamic to unfold with lineages functioning as units of selection in their own right. A single meta-population of eight distinct lineages is shown. While lineages compete, they never mix. Extant lineages not only replace themselves but also have the possibility of reproducing on the death of a competing lineage. Selection rewards persistence, which depends on reliable transitioning between states. (d) Schematic description of three functions of the colgen package: visualization (section 0.1), survival breakpoint detection (section 0.2) and belief propagation (section 0.3).</p></caption><alt-text>Experimental regime and colgen-based representation.</alt-text><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="rspb.2024.1195.f001.jpg"><?image-name rspb.2024.1195.f001.jpg?><?image-size 97753?><?image-md5 ae39ddfa3249299f3f6bb1ecc916d323?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 1548?><?image-original-width 2254?><?image-scaled-height 516?><?image-scaled-width 751?><?image-cloudpmc-urn urn:cdn:blobs/5091/12040459/ae39ddfa3249/rspb.2024.1195.f001.jpg?><?thumb-name rspb.2024.1195.f001.gif?><?thumb-size 4150?><?thumb-md5 0bcb52487ed3d58cdccb808e85531aed?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 80?><?thumb-scaled-width 116?><?thumb-cloudpmc-urn urn:cdn:blobs/5091/12040459/0bcb52487ed3/rspb.2024.1195.f001.gif?></graphic></fig><p>The experiment originally conducted by Hammerschmidt <italic toggle="yes">et al.</italic> [<xref rid="B17" ref-type="bibr">17</xref>] was performed over 10 life cycle generations with selection rewarding lineages that repeatedly transitioned through soma and germ phases. On the conclusion of the experiment, a single lineage (line 17) had swept to fixation. Detailed analysis showed that success was a consequence of collective-level benefits arising from a simple genetic switch. Of a numerous array of mutations, two were of special significance: one that caused the WspR diguanylate cyclase (DGC) to achieve a state of constitutive activation (thus, overproducing cyclic-di-guanosine monophosphate (cyclic-di-GMP)) and eliciting overproduction of cellulose) and a second, loss-of-function mutation in <italic toggle="yes">mutS</italic> (A1489C), a gene involved in methyl-directed mismatch repair. The latter, while causing an overall elevation in mutation rate, specifically increases frame-shifting in tracts of guanine (G) residues [<xref rid="B22" ref-type="bibr">22</xref>]. While tracts of Gs are rarely found in any genome, one—composed of seven G residues—happens to reside in the active site of the DGC domain of WspR. Given the defect in <italic toggle="yes">mutS</italic>, WspR gained the ability to switch rapidly between functional and non-functional states (owing to elevated rates of frame-shifting), thus ensuring reliable transitions between soma and germ phases [<xref rid="B17" ref-type="bibr">17</xref>].</p><p>Here, we took the adaptive genotype and an isogenic lineage in which the genetic switch was rendered inoperable and asked whether the genetic switch delivers longer-term evolutionary advantage. We also explored the extent to which the switch facilitates lineage-level responses to the challenge of growing in larger diameter microcosms requiring substantially greater investment in the soma phase. Underpinning our analyses is colgen, a newly developed analytical tool that provides a graphical representation of genealogies, a variety of means for exploring lineage dynamics and, supported by a Bayesian model, allows inferences as to branch points of likely adaptive significance. Further, when combined with DNA sequences from derived lineages, colgen predicts the sequence of causal mutational events. Subsequent genetic analyses support the value of these predictions.</p></sec><sec sec-type="materials|methods" id="s2"><label>2<x xml:space="preserve">. </x>
+</label><title>Material and methods</title><sec id="s2-1"><label>(a)</label><title>Experimental evolution of collectives</title><p>The experimental protocol is as described previously [<xref rid="B17" ref-type="bibr">17</xref>] and depicted in <xref rid="F1" ref-type="fig">figure 1a–c</xref>. The two genotypes used here, line 17 (hereafter Life Cycle Switch+, <styled-content style-type="small-caps">lcs<sup>+</sup>
+</styled-content>) and the isogenic variant in which the <italic toggle="yes">mutS</italic> A1489C was reverted to wild-type (hereafter Life Cycle Switch−, <styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup>), are derived from [<xref rid="B17" ref-type="bibr">17</xref>].</p><p>Both <styled-content style-type="small-caps">lcs</styled-content>
+<sup>+</sup> and <styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> genotypes were propagated through 10 life cycle generations in standard (S) 17 mm diameter microcosms and in parallel, in large (L) microcosms of 35 mm diameter, with 9.5 and 31.5 ml media, respectively, to keep the surface area to volume ratio constant. Two genotypes, multiplied by two sizes of microcosm, result in four experimental regimes, designated S-<styled-content style-type="small-caps">lcs<sup>+</sup>
+</styled-content>, L-<styled-content style-type="small-caps">lcs<sup>+</sup>
+</styled-content>, S-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> and L-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup>.</p><p>Ten life cycle generations were performed on 48 parallel cultures blocked as six meta-populations of eight lineages. As in the reeds-in-pond thought experiment, lineages that fail to complete the life cycle and go extinct provide an opportunity for viable collective lineages to reproduce. Upon the demise of a lineage, a viable type from the same block is chosen at random and allowed to replace the extinct type. In the case where all cultures from a given block go extinct at the same time, random cultures from viable blocks are used to replace the extinct lineages. The eight-microcosm sub-population structure is a practical consequence of the experimental set-up in eight-microcosm racks. It limits global competition between lineages, as sub-populations must be entirely extinct before being invaded by lineages from other meta-populations.</p></sec><sec id="s2-2"><label>(b)</label><title>Measuring lineage-level fitness</title><p>The standard assay of fitness in experimental evolution is to determine the growth rate of derived genotypes in direct competition with ancestral types ([<xref rid="B23" ref-type="bibr">23</xref>], performed for this system in [<xref rid="B17" ref-type="bibr">17</xref>]). This captures two components of fitness: fecundity and viability. Here, however, this measure is inadequate. First, it is necessary to consider a timescale longer than one growth period within one microcosm [<xref rid="B15" ref-type="bibr">15</xref>]—survival probability over the timescale of collective generations is relevant for assessing collective-level adaptation. Second, standard measures capture two components of fitness: fecundity and viability. Observation of the genealogies of lineages led to the realization that the probability of avoiding extinction is a sound predictor of future evolutionary success [<xref rid="B24" ref-type="bibr">24</xref>]. In addition, viability (and not fertility) is the only component of fitness that depends on the genotype of collectives in this experimental set-up. Indeed, surviving collectives have an equal chance of reproduction (with the total number of offspring being set by the number of extinct competing lineages). Henceforth, measures of fitness were determined not by competition with an ancestral type but by measuring the number of lineage extinction events after replicating lineages of single test genotypes have gone through a further life cycle generation. Further details are available in the electronic supplementary material, note S1, including additional growth experiments that show a response to collective-level selection.</p><fig position="float" fig-type="figure" id="F2" orientation="portrait"><label>Figure 2<x xml:space="preserve">. </x>
+</label><caption><p>Proportion of surviving collectives in phase I (Ph I) and II (Ph II) for each cycle. The stacked bar corresponds to the proportion of surviving collective for each cycle. Blue denotes extant lineages, with red, orange and green marking extinct lineages and causes of extinction: during Ph I, failure to produce the germ cells (red), failure of the mat to remain intact for the required 6 days (orange), and during Ph II, failure to produce soma cells (green). Each column is a different treatment, lcs+: lineage 17 from [<xref rid="B17" ref-type="bibr">17</xref>] with a life cycle switch, lcs−: same lineage with the switch reverted, S: standard microcosms, L: large microcosms.</p></caption><alt-text>Proportion of surviving collectives in phase I and II for each cycle.</alt-text><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="rspb.2024.1195.f002.jpg"><?image-name rspb.2024.1195.f002.jpg?><?image-size 132478?><?image-md5 d66cc86ee5d56223631ce6addee5740d?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 2098?><?image-original-width 3973?><?image-scaled-height 419?><?image-scaled-width 794?><?image-cloudpmc-urn urn:cdn:blobs/5091/12040459/d66cc86ee5d5/rspb.2024.1195.f002.jpg?><?thumb-name rspb.2024.1195.f002.gif?><?thumb-size 5491?><?thumb-md5 ea083028924ccf5360c3971b8e40ef6d?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 80?><?thumb-scaled-width 151?><?thumb-cloudpmc-urn urn:cdn:blobs/5091/12040459/ea083028924c/rspb.2024.1195.f002.gif?></graphic></fig></sec><sec id="s2-3"><label>(c)</label><title>Sequencing</title><p>All WS genotypes chosen at the end of generation 10—in lieu of founding generation 11—were subject to whole genome sequencing. Bacterial genomic DNA was extracted from static overnight cultures of WS clones using the Wizard Genomic DNA purification kit (A1125, Promega) following the manufacturer’s instructions. Whole genome sequencing was performed using Illumina sequencing technology. Short reads were mapped on the <italic toggle="yes">P. fluorescens</italic> SBW25 reference genome (GCF000009225_2) and mutations were identified with B<styled-content style-type="small-caps">reseq</styled-content> v. 0.32.1 [<xref rid="B25" ref-type="bibr">25</xref>] using default parameters. When taking into account extinctions within cycle 10 and filtering out sequence data of poor quality, 45 of 48 endpoint genotypes were sequenced for L-<styled-content style-type="small-caps">lcs<sup>+</sup>
+</styled-content>, 48 of 48 for S-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>+</sup>, 42 of 48 for L-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> and 37 of 48 for S-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup>. Further genotypes were targeted for sequencing using the same protocol after the experiment concluded, based on analysis of genealogies. In S-<styled-content style-type="small-caps">lcs<sup>+</sup>
+</styled-content>, genotypes at each cycle, in L-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>+</sup> 1-II-A7 (cycle 1, Ph II, lineage A7) 2-I-A5, 2-II-A6, 2-II-A7, 2-II-A8, 3-II-A1 and 3-II-E2 were sequenced in order to elucidate the origin of the <italic toggle="yes">mutL</italic> mutation. Further details are available in the electronic supplementary material, note S3.</p></sec><sec id="s2-4"><label>(d)</label><title>Analysis of genealogies using the colgen package</title><p>Each new cycle of the experiment produced a set of complex data: for each lineage, the record of germ and soma-like cell census, the presence of the soma state, and additionally death–birth events were recorded. Plotting and visualization features of colgen [<xref rid="B26" ref-type="bibr">26</xref>], v. 2.0b1 were used to synthesize data without discounting complexity. Survival probability, as determined via colgen (section 0.2, described in the electronic supplementary material, note S2), was combined with DNA-sequence information to identify genotypes of likely adaptive significance (section 0.3, described in the electronic supplementary material, note S3).</p><p>All results obtained using colgen in the context of this manuscript can be explored interactively online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://doi.org/10.5281/zenodo" ext-link-type="uri"/>
+<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://zenodo.org/records/11170876" ext-link-type="uri">https://zenodo.org/records/11170876</ext-link> [<xref rid="B27" ref-type="bibr">27</xref>].</p></sec></sec><sec sec-type="results" id="s3"><label>3<x xml:space="preserve">. </x>
+</label><title>Results</title><sec id="s3-1"><label>(a)</label><title>Eco-evolutionary dynamics</title><p>
+<xref rid="F2" ref-type="fig">Figure 2</xref> shows the frequency of lineage extinctions and their causes. Extant lineages are in blue, with extinctions owing to failure to produce germ cells shown in red, failure of the soma phase (mat) in orange and failure to produce soma cells in green (see figure caption). The proportion of soma failure (i.e. mat collapse) is higher in large microcosms (L) than in standard microcosms (40 out of 96 versus 3 out of 96 in the first cycle). This shows that large microcosms present a new and more stringent challenge to lineages when compared to the ancestral environment of standard microcosms. <styled-content style-type="small-caps">lcs</styled-content>
+<sup>+</sup> treatments showed little change (S-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>+</sup> even less than L-<styled-content style-type="small-caps">lcs<sup>+</sup>
+</styled-content>), which indicates that these lineages are close to an evolutionary equilibrium. By contrast, the proportion of lineages that survived in the <styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> treatments was initially low but rapidly increased. <xref rid="F2" ref-type="fig">Figure 2</xref> shows the proportion of lineages that avoided extinction at each of the 10 life cycle generations. It also reveals how changes in survival during one phase correlate with changes in survival during the other. Viewed as displayed in the electronic supplementary material, figure S1, and comparing the first and the tenth generations, the data indicate, for S-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> and L-<styled-content style-type="small-caps">lcs<sup>+</sup>
+</styled-content>, a trade-off between survival in Ph I versus Ph II. For S-<styled-content style-type="small-caps">lcs<sup>+</sup>
+</styled-content>, there is a decrease in Ph I survival that is not accompanied by an increase in PhII survival. However, PhII survival was already close to its maximal possible value, indicating the founding genotype was close to optimality, thus obscuring any trade-off. Finally, for L-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> no trade-off is seen, suggesting the series of mutations may have broken the trade-off [<xref rid="B28" ref-type="bibr">28</xref>].</p><p>Data presented in <xref rid="F2" ref-type="fig">figure 2</xref> average the proportion of collectives that avoid extinction across the entire population of lineages at each time point. It masks heterogeneity, including the fact that some lineages are evolutionary dead ends, while others rise to fixation. A more information-rich representation is one where the evolutionary fate of each lineage is displayed along with the causes of extinction.</p><p>
+<xref rid="F3" ref-type="fig">Figure 3</xref> provides such a visual representation. Immediately apparent are treatment-specific differences in lineage dynamics, with those founded by <styled-content style-type="small-caps">lcs</styled-content>
+<sup>+</sup> suffering fewer extinction events compared with those founded by <styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup>. This is true for both continued selection in standard size microcosms and in the face of challenges posed by evolving in large diameter microcosms. Where improvement is evident, it is most apparent in the capacity of lineages to form mats able to endure the entire 6-day period of Ph I. Interestingly, this trend is reversed in S-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>+</sup>, where death owing to mat failure increased during the course of the experiment. Production of the germ-line phase during Ph I and the soma-phase during Ph II not only posed the greatest challenge to <styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> treatments but also showed improvement during the course of the experiment.</p><fig position="float" fig-type="figure" id="F3" orientation="portrait"><label>Figure 3<x xml:space="preserve">. </x>
+</label><caption><p>Lineage genealogies. The lineage-level selection experiment yields a rich dataset of 48 parallel microcosms (lineages) for each treatment with associated extinction (colours) and replacement events (edges). Lineage-level genealogies in the shape of directed acyclic graphs offer a synthetic but more granular visualization compared with the proportion of events at each phase (<xref rid="F2" ref-type="fig">figure 2</xref>). The <italic toggle="yes">x</italic>-axis labels are phases within each life cycle generation, with 1-I indicating the end of Ph I of the first cycle, 1-II, the end of Ph II of the first cycle and so forth. The gaps (L-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>+</sup> population F in 2-I, 2-II and 3-I, and S-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> population in 5-I, 5-II and 6-I) are missing owing to technical errors.</p></caption><alt-text>Lineage genealogies.</alt-text><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="rspb.2024.1195.f003.jpg"><?image-name rspb.2024.1195.f003.jpg?><?image-size 251846?><?image-md5 3c84cd5e5fb963cac25d6cac551eb9ef?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 5937?><?image-original-width 6691?><?image-scaled-height 698?><?image-scaled-width 787?><?image-cloudpmc-urn urn:cdn:blobs/5091/12040459/3c84cd5e5fb9/rspb.2024.1195.f003.jpg?><?thumb-name rspb.2024.1195.f003.gif?><?thumb-size 5654?><?thumb-md5 fc542fe8c61ef0f789efa00a42f88f6d?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 89?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/5091/12040459/fc542fe8c61e/rspb.2024.1195.f003.gif?></graphic></fig><p>Examination of the coalescent tree(s) (depicted in solid colour) reveals further differences among treatments. <styled-content style-type="small-caps">lcs</styled-content>
+<sup>+</sup> maintained in standard microcosms showed few deaths, with half of the founding lineages remaining intact at the end of the experiment. On the other hand, <styled-content style-type="small-caps">lcs<sup>−</sup>
+</styled-content> lineages propagated in large microcosms narrowly escaped extinction, with extant lineages, on conclusion of the experiment, being descendants of just a single ancestral microcosm (microcosm 2-II-A5—generation 2, Ph II, microcosm A5).</p><p>Collective fitness was assessed by estimating the probability of a collective to avoid extinction (See Material and Methods). The data, shown in the electronic supplementary material, figures S2 to S5, are largely concordant with that shown in <xref rid="F2" ref-type="fig">figure 2</xref>. <styled-content style-type="small-caps">lcs</styled-content>
+<sup>+</sup> lineages evolving in standard microcosms showed an overall decline in fitness relative to the ancestral type (electronic supplementary material, figure S2a) with negative contributions coming from both reductions in durability of the soma phase (electronic supplementary material, figure S2b) and in capacity to switch between life cycle phases (electronic supplementary material, figure S2c,d). This negative trend was not apparent for lcs+ types in large microcosms, where the fitness of all derived lineages exceeds the ancestral type (electronic supplementary material, figure S3a).</p><p>The fitness of derived <styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> lineages in standard microcosms was highly variable, with some test genotypes having elevated fitness but others with reduced fitness. Low probability of switching was the primary cause of low fitness (electronic supplementary material, figure S4c,d). This is understandable in terms of the availability of mutational routes for switching between soma and germ phases becoming increasingly limited as a consequence of prior mutational cycles. By contrast, in large microcosms, there was a noticeable improvement in the fitness of all tested <styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> lineages (electronic supplementary material,figure S5a), primarily in terms of the ability to produce an enduring soma phase (electronic supplementary material, figure S5b).</p></sec><sec id="s3-2"><label>(b)</label><title>Identifying likely adaptive events</title><p>The genealogical connections depicted in <xref rid="F3" ref-type="fig">figure 3</xref> show what appear to be selective sweeps. Those microcosms that mark the start of such sweeps indicate points at which adaptive mutations may have arisen. However, as the number of offspring at any time point is dependent on the death of competing lineages, the connection to adaptive potential can be difficult to infer. For example, it is not inconceivable that a poorly performing, but nonetheless extant, lineage happens to amplify, not because of improvements in fitness, but by chance. To distinguish improvements in future representation owing to chance versus selection, a measure of enduring ‘adaptive potential’ associated with each node is desirable.</p><p>To this end, we used a Bayesian network model in conjunction with an evidence-propagation algorithm [<xref rid="B29" ref-type="bibr">29</xref>] to predict improvement in the probability of survival. The model assumes the existence of a hidden <italic toggle="yes">probability of survival</italic> value for each node, which is calculated by computing the maximum-<italic toggle="yes">a-posteriori</italic> value using an expectation–maximization algorithm that takes genealogical data and transmission models as input. Details of the procedure are described in the electronic supplementary material, note S2. Nodes associated with marked improvement stand as indicators of time points at which mutations predicted to have adaptive significance occurred. While we bring particular focus to the L-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> treatment, identical analyses were performed on the remaining three treatments and are reported in the electronic supplementary material, figure S8.</p><p>
+<xref rid="F4" ref-type="fig">Figure 4</xref> shows the result of the analysis for the L-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> treatment. According to the maximum-<italic toggle="yes">a-posteriori</italic> procedure, genotypes that are ancestors of lineages where the probability of survival markedly improved are 2-I-A3 (generation 2, Ph I, lineage A3; marked A3 on the figure, +25%), as well as 1-I-F8 (+19%), 2-II-A5 (+1%), 3-I-A5 (+26%), 3-II-E2 (+1%), 4-I-E2 (+19%), 5-I-E3 (+7%) and 5-I-C7 (+5%). Note that all these lineages had extant descendants at the end of the experiment. Moreover, 1-I-F8 and 2-I-A3 are ancestral to the entire population of lineages at generation 10.</p><fig position="float" fig-type="figure" id="F4" orientation="portrait"><label>Figure 4<x xml:space="preserve">. </x>
+</label><caption><p>Nodes in the L-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> genealogy predicted to mark adaptive change. Lineages are coloured according to predicted change in survival probability relative to the previous cycle. The belief-propagation algorithm used for analysis is described in the electronic supplementary material, note S2. Here the model is beta with a grid of 100 points. The electronic supplementary material, figure S8 shows this result for all four treatments.</p></caption><alt-text>Nodes in the L-lcs− genealogy predicted to mark adaptive change.</alt-text><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="rspb.2024.1195.f004.jpg"><?image-name rspb.2024.1195.f004.jpg?><?image-size 85900?><?image-md5 9c7b2088a2d2b6b8caa4681fea6fd506?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 3250?><?image-original-width 4543?><?image-scaled-height 542?><?image-scaled-width 757?><?image-cloudpmc-urn urn:cdn:blobs/5091/12040459/9c7b2088a2d2/rspb.2024.1195.f004.jpg?><?thumb-name rspb.2024.1195.f004.gif?><?thumb-size 3800?><?thumb-md5 5dcfde1c9f896313ddb22195cdef987d?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 79?><?thumb-scaled-width 111?><?thumb-cloudpmc-urn urn:cdn:blobs/5091/12040459/5dcfde1c9f89/rspb.2024.1195.f004.gif?></graphic></fig><p>In the next section, we describe how mutational data derived from whole genome sequencing—primarily of derived lines at generation 10—aid elucidation of the genetic bases of fitness improvements.</p></sec><sec id="s3-3"><label>(c)</label><title>Propagating mutational data to the full genealogy</title><p>Whole genome sequence was obtained from all single WS (soma) genotypes derived from each extant lineage at the end of generation 10 (see the electronic supplementary material, Figure S13 for details), and from the single WS genotypes derived from the six selected microcosms marked in <xref rid="F4" ref-type="fig">figure 4</xref>. DNA sequence reads were aligned to the ancestral SBW25 genome, leading to the identification of a total of 9271 mutations (across all four treatments). Because the 10 generations reported here were derived from <styled-content style-type="small-caps">lcs<sup>+</sup>
+</styled-content>, which had already experienced 10 prior generations of evolution, we removed those mutations (58 in total) that accrued during the previous experiment (see the full dataset in the ‘Data availability’ section). While this represents an overwhelming number of mutations, in part, expected because of the mutator status of the lcs+ genotype, mapping of mutations on genealogies is nonetheless possible. A belief-propagation algorithm similar to that described in the previous section was used. This builds upon the fact that an identical mutation found in two or more descendant lineages most likely emerged in a single ancestral lineage whose identity can be inferred from patterns of genealogical connections. The procedure is detailed in the electronic supplementary material, note S3.</p><p>Given the large number of mutations, analysis began by first propagating the mutations from the end point (combined with additional information from the six focal lineages from L-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup>) backwards through each genealogy. The results, shown in <xref rid="F5" ref-type="fig">figure 5</xref>, reveal that lineages evolving under the S-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> treatment (represented by dots) accumulated few mutations during the course of the experiment. This is as expected given that a single mutation underpins the transition between each phase of the life cycle: two mutations per cycle and thus <inline-formula id="ui1">
+<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="u1" display="inline" overflow="scroll"><mml:mrow><mml:mo>≈</mml:mo></mml:mrow><mml:mrow><mml:mn>20</mml:mn></mml:mrow></mml:math>
+</inline-formula> over the course of 10 generations. By contrast, lineages from both <styled-content style-type="small-caps">lcs</styled-content>
+<sup>+</sup> treatments harboured <inline-formula id="ui2">
+<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="u2" display="inline" overflow="scroll"><mml:mrow><mml:mo>≈</mml:mo></mml:mrow><mml:mrow><mml:mn>150</mml:mn></mml:mrow></mml:math>
+</inline-formula> mutations, but some carried <inline-formula id="ui3">
+<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="u3" display="inline" overflow="scroll"><mml:mrow><mml:mo>≈</mml:mo></mml:mrow><mml:mrow><mml:mn>250</mml:mn></mml:mrow></mml:math>
+</inline-formula> mutations (represented by cross and plus symbols). Surprisingly, lineages from the L-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> treatment (represented by diamond symbols) harboured, for some lineages, more than 350 mutations.</p><fig position="float" fig-type="figure" id="F5" orientation="portrait"><label>Figure 5<x xml:space="preserve">. </x>
+</label><caption><p>Reconstruction of the number of mutations through time. Each point is the number of new mutations (compared to the ancestor of the genealogy) predicted to be found in a single microcosm at a given phase in each cycle. The inference stems from propagating knowledge of mutations in the final derived genomes of extant lineages backwards through the genealogy using the belief-propagation algorithm described in the electronic supplementary material, note S3. The electronic supplementary material, figure S10 shows the number of identified mutations without reconstruction through the belief-propagation regime. The electronic supplementary material, figure S13 shows the number of mutations associated with each extant lineage (derived directly from genome sequence data).</p></caption><alt-text>Reconstruction of the number of mutations through time.</alt-text><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="rspb.2024.1195.f005.jpg"><?image-name rspb.2024.1195.f005.jpg?><?image-size 93352?><?image-md5 e4b55d996172b2684ad87560ff9c6423?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 1768?><?image-original-width 5977?><?image-scaled-height 235?><?image-scaled-width 796?><?image-cloudpmc-urn urn:cdn:blobs/5091/12040459/e4b55d996172/rspb.2024.1195.f005.jpg?><?thumb-name rspb.2024.1195.f005.gif?><?thumb-size 6026?><?thumb-md5 204b6b4857c73f276ab284d24fe81c2e?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 59?><?thumb-scaled-width 200?><?thumb-cloudpmc-urn urn:cdn:blobs/5091/12040459/204b6b4857c7/rspb.2024.1195.f005.gif?></graphic></fig><p>Such large numbers of mutations are indicative of mutator genotypes. Mutation rate was not measured here; however, mutation rates of bacteria harbouring mutations in primary components of the methyl-directed mismatch repair (MMR) system have been previously measured and shown to be elevated by between 70- and 300-fold [<xref rid="B30" ref-type="bibr">30</xref>,<xref rid="B31" ref-type="bibr">31</xref>]. In addition, for non-mutator lineages in a similar experimental set-up, it is rare to fix more than a single mutation at each passage [<xref rid="B31" ref-type="bibr">31</xref>]. From the number of mutations found in final clones, we can infer that on average 29.0 mutations per collective generation are fixed for L-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup>, and respectively 12.2 mutations per generation for L-<styled-content style-type="small-caps">lcs<sup>+</sup>
+</styled-content>, 13.0 mutations per generation for S-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>+</sup> and 1.0 mutation per generation for S-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup>. Provided there are no changes in the probability of a mutation to fix, this estimate would indicate a 10- to 30-fold increase in mutation rate for mutator lines. That is, the same order of magnitude as reported in the literature.</p><p>While the presence of mutator genotypes was known for <styled-content style-type="small-caps">lcs</styled-content>
+<sup>+</sup> lineages, we nonetheless interrogated all mutational data for evidence of MMR-defective types (<italic toggle="yes">mutS</italic>, <italic toggle="yes">mutL</italic>, <italic toggle="yes">mutY</italic> and <italic toggle="yes">mutM</italic>). The points in <xref rid="F5" ref-type="fig">figure 5</xref>, coloured according to genotype, show that microcosms harbouring lineages with large numbers of mutations also carry defects in mismatch repair genes (see the electronic supplementary material, table S1). Again, while known for the <italic toggle="yes">mutS</italic>-based <styled-content style-type="small-caps">lcs</styled-content>
+<sup>+</sup> lineages, these genotypes acquired additional mutations in MMR genes. For example, eight lineages in block A of <styled-content style-type="small-caps">lcs</styled-content>
+<sup>+</sup> evolving in large microcosms acquired a single non-synonymous change in the A/G-specific adenine glycosylase <italic toggle="yes">mutY</italic> (G153D). Interestingly, this <italic toggle="yes">mutY</italic> mutation did not generate more mutations (<xref rid="F5" ref-type="fig">figure 5</xref>; electronic supplementary material, figure S15), but it is associated with a marked bias in the kind of mutations fixed (electronic supplementary material, figure S21).</p><p>The greatest number of mutations, however, was found in <styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> lineages propagated in large microcosms. As more fully elaborated below, a single <italic toggle="yes">mutL</italic> (L103R) mutation (orange diamond symbols) arose early in the experiment, but seven lineages of block C also acquired an additional <italic toggle="yes">mutS</italic> (G707S) mutation (purple diamond symbols). <xref rid="F6" ref-type="fig">Figure 6</xref> and the electronic supplementary material, figures S14 to S16 show these mutations in the context of the genealogies apparent in each treatment.</p><fig position="float" fig-type="figure" id="F6" orientation="portrait"><label>Figure 6<x xml:space="preserve">. </x>
+</label><caption><p>
+<bold>
+<inline-formula id="ui4">
+<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="u4" display="inline" overflow="scroll"><mml:mrow><mml:mi>m</mml:mi><mml:mi>u</mml:mi><mml:mi>t</mml:mi><mml:mi>L</mml:mi></mml:mrow></mml:math>
+</inline-formula>
+</bold>and <bold>
+<inline-formula id="ui5">
+<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="u5" display="inline" overflow="scroll"><mml:mrow><mml:mi>m</mml:mi><mml:mi>u</mml:mi><mml:mi>t</mml:mi><mml:mi>S</mml:mi></mml:mrow></mml:math>
+</inline-formula>
+</bold> mutations in the L-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> genealogy. Lineages are coloured according to <inline-formula id="ui6">
+<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="u6" display="inline" overflow="scroll"><mml:mrow><mml:mi>m</mml:mi><mml:mi>u</mml:mi><mml:mi>t</mml:mi><mml:mi>L</mml:mi></mml:mrow></mml:math>
+</inline-formula> and <inline-formula id="ui7">
+<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="u7" display="inline" overflow="scroll"><mml:mrow><mml:mi>m</mml:mi><mml:mi>u</mml:mi><mml:mi>t</mml:mi><mml:mi>S</mml:mi></mml:mrow></mml:math>
+</inline-formula> mutations. The mutation <inline-formula id="ui8">
+<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="u8" display="inline" overflow="scroll"><mml:mrow><mml:mi>m</mml:mi><mml:mi>u</mml:mi><mml:mi>t</mml:mi><mml:mi>L</mml:mi></mml:mrow></mml:math>
+</inline-formula> L103R appeared in lineage 2-II-A5 and swept to fixation. Black squares identify sequenced lineages, with the belief-propagation algorithm (described in the electronic supplementary material, note S3) allowing inferences to be extended to all nodes. The electronic supplementary material, figures S14 to S17 show the same analysis for all four treatments.</p></caption><alt-text>mutL and mutS mutations in the L-lcs− genealogy.</alt-text><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="rspb.2024.1195.f006.jpg"><?image-name rspb.2024.1195.f006.jpg?><?image-size 298395?><?image-md5 1e9002be80f8fdfffe96b863f5ff07cc?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 3259?><?image-original-width 4378?><?image-scaled-height 593?><?image-scaled-width 796?><?image-cloudpmc-urn urn:cdn:blobs/5091/12040459/1e9002be80f8/rspb.2024.1195.f006.jpg?><?thumb-name rspb.2024.1195.f006.gif?><?thumb-size 7105?><?thumb-md5 ec68d79e8b2ed65e538ba300e426d87a?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 80?><?thumb-scaled-width 107?><?thumb-cloudpmc-urn urn:cdn:blobs/5091/12040459/ec68d79e8b2e/rspb.2024.1195.f006.gif?></graphic></fig><p>As shown in <xref rid="F4" ref-type="fig">figure 4</xref>, the node marking the greatest improvement in survival probability in L-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> is in the vicinity of 2-I-A3 and 2-II-A5. Additional sequencing of these nodes showed that the point of origin of <italic toggle="yes">mutL</italic> (L103R) was immediately prior to 2-II-A5 (see the electronic supplementary material, note S3e and figures S18 to S20 for details of the procedure and iterative use of the algorithm to incorporate new data).</p></sec><sec id="s3-4"><label>(d)</label><title>Experimental confirmation of adaptive changes</title><p>The combined information provided by the survival probability inference (section 0.2) and sequencing-information propagation (section 0.3) points towards an adaptive change having occurred in (or in the vicinity of) microcosm 2-II-A5. In this section, we describe additional experiments conducted to test this hypothesis.</p><p>
+<xref rid="F7" ref-type="fig">Figure 7a–d</xref> shows the results of fitness assays performed around the adaptive points detected by Bayesian inference. These data, composed of measures of the probability to produce viable soma states at the end of Ph I (<xref rid="F7" ref-type="fig">figure 7a</xref>), probability to transition from soma to germ during Ph I (<xref rid="F7" ref-type="fig">figure 7b</xref>), the probability to switch from germ to soma type during Ph II (<xref rid="F7" ref-type="fig">figure 7c</xref>), and overall life cycle fitness (<xref rid="F7" ref-type="fig">figure 7d</xref>), confirm a stepped increase in life cycle fitness of the focal lineage between generation 2 and 4. Comparing the probabilities obtained through these additional experiments and the survival probabilities estimated by colgen shows agreement (electronic supplementary material, figure S9).</p><fig position="float" fig-type="figure" id="F7" orientation="portrait"><label>Figure 7<x xml:space="preserve">. </x>
+</label><caption><p>Probability and fitness estimates. Each line corresponds to a genotype derived from the ancestor <styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup>, and grown in large microcosms. Points correspond to the maximum-<italic toggle="yes">a-posteriori</italic> value for the probability; the fraction of surviving over the number of trials is written below the point. The box corresponds to the 50% Bayesian confidence interval, and the whiskers correspond to the 95% Bayesian confidence interval (the method is described in the electronic supplementary material, note S1). Orange depicts genotypes with the <italic toggle="yes">mutL</italic> L103R mutation; blue identifies genotypes without the <italic toggle="yes">mutL</italic> mutation.</p></caption><alt-text>Probability and fitness estimates.</alt-text><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="float" orientation="portrait" xlink:href="rspb.2024.1195.f007.jpg"><?image-name rspb.2024.1195.f007.jpg?><?image-size 55639?><?image-md5 9a1b62bd873f34ddfeab06e2b2962e2b?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 1468?><?image-original-width 3951?><?image-scaled-height 294?><?image-scaled-width 790?><?image-cloudpmc-urn urn:cdn:blobs/5091/12040459/9a1b62bd873f/rspb.2024.1195.f007.jpg?><?thumb-name rspb.2024.1195.f007.gif?><?thumb-size 3972?><?thumb-md5 b48922aee69fa200228a7e080fbfc264?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 74?><?thumb-scaled-width 200?><?thumb-cloudpmc-urn urn:cdn:blobs/5091/12040459/b48922aee69f/rspb.2024.1195.f007.gif?></graphic></fig><p>Because prior analysis predicted a causal role for the <italic toggle="yes">mutL</italic> (L103R) mutation, this mutation (in genotype 2-II-A5) was reverted, via a single nucleotide change, to the ancestral state. The effects of this change are shown in <xref rid="F7" ref-type="fig">figure 7a–d</xref>. Data in <xref rid="F7" ref-type="fig">figure 7d</xref> demonstrate that at the level of overall life cycle performance, the <italic toggle="yes">mutL</italic> (L103R) mutation is the primary cause of enhanced life cycle success. Interestingly, the effect is not significant for the two components of Ph I (<xref rid="F7" ref-type="fig">figure 7a,b</xref>), but has a marked impact on the ability of the germ stage to switch to the soma state. Further visual evidence for a seminal role of the <italic toggle="yes">mutL</italic> mutation in switching between life cycle states comes from observation of germ cells arising within soma directly on agar plates (electronic supplementary material, figure S22).</p></sec></sec><sec sec-type="discussion" id="s4"><label>4<x xml:space="preserve">. </x>
+</label><title>Discussion</title><p>The evolution of multicellular life continues to receive attention from both empiricists and theoreticians [<xref rid="B8" ref-type="bibr">8</xref>,<xref rid="B32" ref-type="bibr">32</xref>–<xref rid="B41" ref-type="bibr">41</xref>]. In this work, using the experimental <italic toggle="yes">Pseudomonas</italic> system, we have explored the efficacy of a previously derived genetic switch controlling life cycle transitions, used knowledge of genealogical connections among nascent multicellular entities to predict adaptive events, combined these data with DNA sequence information, and, for one particular mutation, demonstrated a causal connection to improved fitness.</p><p>The genetic switch, which in a prior experiment had delivered adaptive benefit to competing lineages through significant improvement in control of expression of soma- and germ-like phases, proved, in this work, central to subsequent evolutionary success. This held not only for continued selection in standard microcosms but also for selection in large vessels. <styled-content style-type="small-caps">lcs</styled-content>+ lineages suffered few extinctions during further propagation in standard microcosms, whereas persistence of <styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> lineages in the same diameter microcosms proved challenging, with frequent death events caused by failures at all three life cycle phases.</p><p>Both <styled-content style-type="small-caps">lcs</styled-content>
+<sup>+</sup> and <styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> lineages struggled initially to find solutions to producing enduring mats in large-diameter microcosms, but in both instances, this capacity showed improvement during the course of the experiment. Notable in the L-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> treatment was the early discovery of a mutation in <italic toggle="yes">mutL</italic> that effectively converted <styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> to <styled-content style-type="small-caps">lcs<sup>+</sup>
+</styled-content>. In the absence of this mutation—and thus marked improvement in capacity to transition between phases of the life cycle—all lineages in the L-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> treatment would have gone extinct by the third generation (evident by excluding reproduction events in <xref rid="F3" ref-type="fig">figure 3</xref> and following the fate of lineages to the first extinction). Thus, mutator-fuelled switching increased the reliability of the transition between life cycle phases, but the elevated mutation rate probably also played a role in the discovery of genetic changes that led to the formation of mats not only capable of colonizing the surface of large-diameter microcosms but with sufficient structure to ensure persistence over the 6 days of Ph I.</p><p>The prevalence of mutators associated with successful lineages was particularly apparent for lineages evolving in large microcosms and shows that the selective regime strongly favours mutational-based genetic switches. These switches deliver benefit through subsequent rounds of selection, despite presumed costs arising from the inevitable load of deleterious mutations. However, there are several reasons to suspect that these costs may be less significant than in standard mutation accumulation experiments. One important factor is the fact that the bottleneck is <italic toggle="yes">selective,</italic> with only cells expressing the correct phenotype transitioning to the next phase [<xref rid="B42" ref-type="bibr">42</xref>]. Such selective bottlenecks are likely to purge some deleterious mutations, thus reducing the mutational burden usually associated with hypermutagenesis [<xref rid="B43" ref-type="bibr">43</xref>]. Additionally, the 6- and 3-day periods of Ph I and II, respectively, provide ample time for both purifying selection and compensatory evolution. Finally, collective-level selection stands to counteract the accumulation of deleterious mutational effects: should a lineage carrying a costly mutation pass through the bottleneck such that it is unable to produce the next phenotype of the cycle, then its failure is compensated by replacement from the pool of extant lineages. Note that mutations which reduce growth rate, and thus appear maladaptive on an individual cell basis, can prove adaptive at the collective level [<xref rid="B13" ref-type="bibr">13</xref>] and over longer time scales [<xref rid="B28" ref-type="bibr">28</xref>].</p><p>While L-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>+</sup> lineages were founded by a genotype carrying a <italic toggle="yes">mutS</italic> allele, a further <italic toggle="yes">mutY</italic> G153D mutation arose early in a single block A lineage and went to fixation by generation 10. That the mutation swept suggests that it may have contributed to further improvements in the survival probability of collectives (electronic supplementary material, figure S8); however, it is not inconceivable that <italic toggle="yes">mutY</italic> G153D hitchhiked with a mutation that improved the performance of the soma phase. Interestingly, this mutation did not add to the overall number of mutations (<xref rid="F5" ref-type="fig">figure 5</xref>; electronic supplementary material, figure S15), but it did introduce a marked bias in the kinds of mutation found in these lineages (electronic supplementary material, figure S21), with recent work suggesting that the ensuing transversion-biased mutational spectrum might afford greater possibility for discovery of adaptive mutations [<xref rid="B44" ref-type="bibr">44</xref>]. Interrogation of sequence data for changes in repeat-tract length in genes with predicted DGC or phosphodiesterase (PDE) activity did not identify obvious candidate effectors of phenotype switching (as previously observed in WspR [<xref rid="B17" ref-type="bibr">17</xref>]; see <xref rid="F1" ref-type="fig">figure 1</xref>).</p><p>In large microcosms founded by the <styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> lineage, in addition to the early and key <italic toggle="yes">mutL</italic> mutation, a further <italic toggle="yes">mutS</italic> G707S mutation arose in block C microcosms. As with the <italic toggle="yes">mutY</italic> allele arising in the <italic toggle="yes">mutS</italic> background, the <italic toggle="yes">mutS</italic> G707S mutation, although arising late in the experiment (at generation 7), fixed (in block C) within a further two generations (electronic supplementary material, figure S14). While the adaptive significance of this mutation was not further investigated, microcosm 8-I-C4 was identified by colgen as a point that marked significant improvement in survival probability (<xref rid="F4" ref-type="fig">figure 4</xref>). Moreover, multilocus mutators have been shown to provide additional benefits to populations evolving under strong selection [<xref rid="B45" ref-type="bibr">45</xref>].</p><p>The fact that no additional mutators evolved in either the S-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> or the S-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>+</sup> treatment suggests that additional opportunities for mutator alleles to hitchhike with beneficial mutations were provided in large microcosms. This makes intuitive sense given the combination of selective challenge, where founding genotypes were initially poorly adapted, a threefold increase in population size (compared to standard microcosms), and the fact that transitions through the life cycle require passage through single-cell bottlenecks. Under such conditions, there are probably numerous beneficial mutations upon which mutator alleles can hitchhike; moreover, selection is expected to favour cells that switch phenotype early because descendants of such cells have a heightened chance of passage through the bottleneck.</p><p>A notable difference in this study compared to previous work [<xref rid="B17" ref-type="bibr">17</xref>,<xref rid="B18" ref-type="bibr">18</xref>] is the mode of analysis, particularly that delivered by colgen. The first and arguably most valuable component of colgen is the simple visual representation of evolutionary dynamics via which evolutionary patterns previously invisible are revealed, allowing, for example, contributions of chance, history and selection to be directly observed. This is further aided by comparisons among the fates of lineages founded by <styled-content style-type="small-caps">lcs</styled-content>
+<sup>+</sup> and <styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> genotypes. The former being endowed with the adaptive Muts-WspR-based switch—the product of prior evolutionary history—whereas the latter, by virtue of reversion of the <italic toggle="yes">mutS</italic> allele to wild-type, has this component of history removed.</p><p>Lcs<sup>+</sup> lineages propagated in standard microcosms suffered few extinction events (<xref rid="F3" ref-type="fig">figure 3a</xref>), which can be directly attributed to prior evolutionary history and is consistent with the adaptive value of the switch. Notable was the worsening of performance after generation 3 (electronic supplementary material, Figure S2). This probably reflects the downside of few initial extinction events, resulting in a shift in the relative contributions of selection acting between- versus within-lineages [<xref rid="B46" ref-type="bibr">46</xref>]. In the absence of lineage-level death-birth events, selection operates primarily within lineages, leading to erosion of traits favouring the success of lineages. However, as lineage-level death-birth events occur, selection operates both within and between lineages, with, presumably, some equilibrium level ultimately being achieved.</p><p>By contrast, for <styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> lineages propagated in the same standard microcosms, multiple extinction events occurred (<xref rid="F3" ref-type="fig">figure 3c</xref>). Beyond providing further evidence of the adaptive value of the switch, extinction and concomitant reproduction events are indicative of the hand of chance—both good and bad luck. In fact, as there is no overall improvement in the frequency of extinction events in S-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> lineages—and none detected by colgen (electronic supplementary material, figure S8), it is likely that the observed dynamics are driven almost entirely by chance.</p><p>Chance is an inherent factor in all evolutionary change, but a major factor affecting extinction events (<xref rid="F3" ref-type="fig">figure 3</xref>). Chance underpins the ability to transition (by mutation) between life cycle phases, with mutational switches greatly improving the likelihood that transitions are successfully achieved, but chance also plays a role in mat durability, with subtle differences determining whether a mat endures the required 6 day period. Additionally, chance contributes to whether cells composing the next life cycle phase reach a frequency sufficient to ensure detection.</p><p>Extinction, while terminating the evolution of affected lineages, provides an opportunity for those that are extant to reproduce, and here again, chance is important. Death—often a consequence of bad luck—means that extant lineages, which may be equally susceptible to extinction, serendipitously gain further opportunity to explore genetic (and thus phenotypic) space, and through such exploration, the possibility presents that these lineages, at some future time point, might discover fitness-enhancing mutations: persistence, and its counterpart serendipity, is everything [<xref rid="B24" ref-type="bibr">24</xref>].</p><p>A single lineage from block B in the S-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> treatment is a case in point (<xref rid="F3" ref-type="fig">figure 3c</xref>). The lineage in microcosm b3 produced offspring after the first generation, at generation 3 and at generation 4, but all failed soon after. Nonetheless, by virtue of persistence at generation 5, where the seven competing lineages failed, this lineage went on to leave eight offspring at generation 6; by the end of the experiment, this single generation 5 survivor had given rise to 11 extant offspring. Without further study, the extent to which the spread of this lineage reflects adaptive change is unclear, but it is plausible that success to this point was largely a matter of chance. This is also reflected in life cycle fitness data in the electronic supplementary material, figure S4, where there is no compelling evidence for the hand of selection, with the fitness of several extant lineages at the end of the experiment being equal to or worse than the ancestral type.</p><p>A further factor relevant to considerations that recognize the value of sheer persistence stems from the fact that lineage-level selection, as implemented in the experiments described here, involves a ‘death–birth’ dynamic. This is in contrast to a ‘birth–death’ process in which offspring replace extant collectives, regardless of fitness. While game theory approaches show that death-first dynamics favour the evolution of cooperation [<xref rid="B47" ref-type="bibr">47</xref>,<xref rid="B48" ref-type="bibr">48</xref>], in the context of this experiment a birth–death process would probably diminish the value of persistence.</p><p>Also notable in the dynamics of S-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> lineages (but also evident elsewhere) are abrupt extinctions of all lineages (within single blocks) following several generations of successful transitions (<xref rid="F3" ref-type="fig">figure 3c</xref>). See, for example, blocks F and C at Ph I of generation 6. While possibly just chance, this more likely reflects deleterious effects of prior mutational history that, owing to lineages having traversed various mutational paths during prior cycles, have exhausted possibilities for realization of mutations critical for the next life cycle transition.</p><p>Turning to <styled-content style-type="small-caps">lcs</styled-content>
+<sup>+</sup> and <styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> lineages propagated in large microcosms, similar patterns manifest; however, also apparent are dynamics consistent with the hand of selection. <styled-content style-type="small-caps">lcs</styled-content>
+<sup>+</sup> lineages, although replete with genetic switch (a product of past history), suffered high levels of extinction during the first few generations, primarily owing to premature failure of the soma stage, with such events becoming increasingly rare from generation 5. While chance was dominant early on, and the effect of prior history minimal (as expected given that the founding genotypes had not previously experienced selection in large microcosms), sweeps arose from individual lineages, probably underpinned by adaptive change, resulting in the fixation of successful types by generation 10.</p><p>
+<styled-content style-type="small-caps">Lcs</styled-content>
+<sup>−</sup> lineages propagated in large microcosms, as described above, narrowly escape wholesale extinction. Having eliminated prior history through elimination of the genetic switch, the fate of these lineages was determined by both the requirement to find solutions to switching and the construction of robust mats. Again, as mentioned, a key adaptive change—a mutation in <italic toggle="yes">mutL</italic>—occurred at generation 2, with this lineage becoming the progenitor of all extant lineages (across all blocks) at generation 10. A combination of chance and selection was sufficient to overcome—and more than compensate for—prior evolutionary history.</p><p>Representation of genealogies via colgen, while invaluable in this work, is generally applicable to numerous kinds of lineage selection experiments where mixing of lineages is avoided, as in the ‘propagule-pool’ (as opposed to ‘migrant-pool’ or ‘mixed’) mode of reproduction [<xref rid="B18" ref-type="bibr">18</xref>,<xref rid="B31" ref-type="bibr">31</xref>,<xref rid="B49" ref-type="bibr">49</xref>]. This holds irrespective of whether collectives are clonal [<xref rid="B17" ref-type="bibr">17</xref>] or communities [<xref rid="B14" ref-type="bibr">14</xref>,<xref rid="B50" ref-type="bibr">50</xref>,<xref rid="B51" ref-type="bibr">51</xref>].</p><p>Beyond providing graphic visualization, colgen, by virtue of the underlying Bayesian model, has use in allowing mutational data obtained from the end of the experiment to be propagated backwards throughout the genealogy. This allowed sense to be made of the hundreds of mutations present in mutator lineages, which are typically overwhelmingly difficult to deal with. However, in addition, among the noise of mutations, colgen proved invaluable at identifying microcosms likely to contain adaptive mutations. Detailed investigations into L-<styled-content style-type="small-caps">lcs</styled-content>
+<sup>−</sup> led to the identification of the <italic toggle="yes">mutL</italic> mutation that was pivotal to the success of descendant lineages.</p><p>Graphical probabilistic models (such as Bayesian networks) for statistical inference have been used in haplotyping of pedigree [<xref rid="B52" ref-type="bibr">52</xref>], gene network inference [<xref rid="B53" ref-type="bibr">53</xref>] and genetic diseases risk assessment [<xref rid="B54" ref-type="bibr">54</xref>]. Bayesian network analysis presents several advantages. First, it is designed to work with partial data: inference can be performed even when sequence data are missing or partial. Second, such modes of analyses allow seamless integration of new data, with the possibility of adding new sequencing or fitness information to refine inferences. Thus, Bayesian analysis makes possible iterative protocols that alternate between inferences based on existing data and targeted new experimentation. Finally, the statistical model of observation and transmission of characters is relatively simple to define and can be adjusted for different purposes. While the models used above were minimal in their assumptions, it is possible to conceive and develop more complex mechanistic models as required.</p><p>It is evident that life cycles based on mutation can deliver benefits to nascent multicellular types. However, life cycles in extant multicellular organisms are typically affected via developmental mechanisms requiring changes in patterns of gene regulation. While it would be interesting to continue the propagation of lineages containing mutation-dependent switches to observe future refinement, there is minimal possibility that true developmental control could be achieved using an experimental protocol that requires soma and germ phases to express distinct morphologies on agar plates. This has led to a revision in which this requirement has been removed. Indeed, selection under a revised protocol that remains unchanged except for the fact that the germ-line phase is assessed by dispersal (and not colony morphology) has shown that lineages capable of transitioning between life cycle phases by developmental control are eminently achievable (Summers <italic toggle="yes">et al</italic>. in preparation).</p></sec></body><back><ack><title>Acknowledgements</title><p>P.B.R. thanks J. Carlos Hernandez-Beltran and Kaumudi Hassan Prabhakara for commentcomments on a draft of the manuscript. We thank Mathieu Forget for contributions while an intern at the NZIAS. We thank Carsten Fortmann–Grote for formatting and uploading sequencing data to the European Nucleotide Archive.</p></ack><sec sec-type="ethics" id="s5"><title>Ethics</title><p>This work did not require ethical approval from a human subject or animal welfare committee.</p></sec><sec sec-type="data-availability" id="s6"><title>Data accessibility</title><p>All the data used in this manuscript (genealogy records, mutation identification from read alignments, fitness assays) and the code necessary to reproduce all the figures from this dataset are available in the Zenodo repository: [<xref rid="B55" ref-type="bibr">55</xref>]. colgen v2.0b1 used in this manuscript is also available on Zenodo: [<xref rid="B56" ref-type="bibr">56</xref>]. Sequencing data is available in the European Nucleotide Archive accession number PRJEB79852.</p><p>Supplementary material is available online [<xref rid="B57" ref-type="bibr">57</xref>].</p></sec><sec id="s7"><title>Declaration of AI use</title><p>We have not used AI-assisted technologies in creating this article.</p></sec><sec id="s8"><title>Authors’ contributions</title><p>G.D.: formal analysis, software, visualization, writing—original draft, writing—review and editing; P.R.:conceptualization, funding acquisition, writing—original draft, writing—review and editing; D.R.: investigation, writing—original draft, writing—review and editing; P.B.R.: investigation, writing—original draft, writing—review and editing.</p><p>All authors gave final approval for publication and agreed to be held accountable for the work performed therein.</p></sec><sec sec-type="COI-statement" id="s9"><title>Conflict of interest declaration</title><p>We declare we have no competing interests.</p></sec><sec id="s10"><title>Funding</title><p>P.B.R. is grateful to the Max Planck Society forgenerous for generous core support and funding from the Marsden Fund Council from govern-mentgovernment funding administered by the Royal Society of New Zealand. G.D. acknowledges the John Templeton Foundation (no. 62220); G.D. and P.B.R. acknowledge funding from Origines et Conditions d'apparition de la vie (ANR-10-IDEX-001-02).</p></sec><ref-list><title>References</title><ref id="B1"><label>1<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="book">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Maynard Smith</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Szathmary</surname>
+<given-names>E</given-names>
+</string-name>
+</person-group>. <year>1995</year>
+<source>The major transitions in evolution.</source>
+<publisher-loc>Oxford, UK</publisher-loc>: <publisher-name>W.H. Freeman</publisher-name>.</mixed-citation></ref><ref id="B2"><label>2<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="book">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Buss</surname>
+<given-names>LW</given-names>
+</string-name>
+</person-group>. <year>1987</year>
+<source>The evolution of individuality.</source>
+<publisher-loc>Princeton, NJ</publisher-loc>: <publisher-name>Princeton University Press</publisher-name>.</mixed-citation></ref><ref id="B3"><label>3<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="book">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Michod</surname>
+<given-names>RE</given-names>
+</string-name>
+</person-group>. <year>2000</year>
+<source>Darwinian dynamics: evolutionary transitions in fitness and individuality.</source>
+<publisher-loc>Princeton, NJ</publisher-loc>: <publisher-name>Princeton University Press</publisher-name>.</mixed-citation></ref><ref id="B4"><label>4<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="book">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Okasha</surname>
+<given-names>S</given-names>
+</string-name>
+</person-group>. <year>2006</year>
+<source>Evolution and the levels of selection</source>. <comment>vol</comment>. <volume>16</volume>. <publisher-loc>Oxford, UK</publisher-loc>: <publisher-name>Clarendon Press</publisher-name>.</mixed-citation></ref><ref id="B5"><label>5<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Bonner</surname>
+<given-names>JT</given-names>
+</string-name>
+</person-group>. <year>1998</year>
+<article-title>The origins of multicellularity</article-title>. <source>Integr. Biol.</source>
+<volume>
+<bold>1</bold>
+</volume>, <fpage>27</fpage>–<lpage>36</lpage>. (<pub-id pub-id-type="doi">10.1002/(sici)1520-6602(1998)1:13.0.co;2-6</pub-id>)</mixed-citation></ref><ref id="B6"><label>6<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Grosberg</surname>
+<given-names>RK</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Strathmann</surname>
+<given-names>RR</given-names>
+</string-name>
+</person-group>. <year>2007</year>
+<article-title>The Evolution of Multicellularity: A Minor Major Transition?</article-title>
+<source>Annu. Rev. Ecol. Evol. Syst.</source>
+<volume>
+<bold>38</bold>
+</volume>, <fpage>621</fpage>–<lpage>654</lpage>. (<pub-id pub-id-type="doi">10.1146/annurev.ecolsys.36.102403.114735</pub-id>)</mixed-citation></ref><ref id="B7"><label>7<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Rainey</surname>
+<given-names>PB</given-names>
+</string-name>, <string-name name-style="western">
+<surname>De Monte</surname>
+<given-names>S</given-names>
+</string-name>
+</person-group>. <year>2014</year>
+<article-title>Resolving conflicts during the evolutionary transition to multicellular life</article-title>. <source>Annu. Rev. Ecol. Evol. Syst.</source>
+<volume>
+<bold>45</bold>
+</volume>, <fpage>599</fpage>–<lpage>620</lpage>. (<pub-id pub-id-type="doi">10.1146/annurev-ecolsys-120213-091740</pub-id>)</mixed-citation></ref><ref id="B8"><label>8<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="book">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Herron</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Conlin</surname>
+<given-names>PL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ratcliff</surname>
+<given-names>W</given-names>
+</string-name>
+</person-group>. <year>2022</year>
+<source>The evolution of multicellularity</source>. <publisher-loc>Boca Raton</publisher-loc>: <publisher-name>CRC Press</publisher-name>.</mixed-citation></ref><ref id="B9"><label>9<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="book">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Godfrey-Smith</surname>
+<given-names>P</given-names>
+</string-name>
+</person-group>. <year>2009</year>
+<source>Darwinian populations and natural selection</source>. <publisher-loc>Oxford, UK</publisher-loc>: <publisher-name>Oxford University Press</publisher-name>.</mixed-citation></ref><ref id="B10"><label>10<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Griesemer</surname>
+<given-names>J</given-names>
+</string-name>
+</person-group>. <year>2001</year>
+<article-title>The units of evolutionary transition</article-title>. <source>Selection</source>
+<volume>
+<bold>1</bold>
+</volume>, <fpage>67</fpage>–<lpage>80</lpage>. (<pub-id pub-id-type="doi">10.1556/select.1.2000.1-3.7</pub-id>)</mixed-citation></ref><ref id="B11"><label>11<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Rainey</surname>
+<given-names>PB</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kerr</surname>
+<given-names>B</given-names>
+</string-name>
+</person-group>. <year>2010</year>
+<article-title>Cheats as first propagules: a new hypothesis for the evolution of individuality during the transition from single cells to multicellularity</article-title>. <source>BioEssays</source>
+<volume>
+<bold>32</bold>
+</volume>, <fpage>872</fpage>–<lpage>880</lpage>. (<pub-id pub-id-type="doi">10.1002/bies.201000039</pub-id>)<pub-id pub-id-type="pmid">20726010</pub-id>
+</mixed-citation></ref><ref id="B12"><label>12<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal"> .<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Rainey</surname>
+<given-names>PB</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Remigi</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Farr</surname>
+<given-names>AD</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lind</surname>
+<given-names>PA</given-names>
+</string-name>
+</person-group>. <year>2017</year>
+<article-title>Darwin was right: where now for experimental evolution?</article-title>
+<source>Curr. Opin. Genet. Dev.</source>
+<volume>
+<bold>47</bold>
+</volume>, <fpage>102</fpage>–<lpage>109</lpage>. (<pub-id pub-id-type="doi">10.1016/j.gde.2017.09.003</pub-id>)<pub-id pub-id-type="pmid">29059583</pub-id>
+</mixed-citation></ref><ref id="B13"><label>13<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Black</surname>
+<given-names>AJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bourrat</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rainey</surname>
+<given-names>PB</given-names>
+</string-name>
+</person-group>. <year>2020</year>
+<article-title>Ecological scaffolding and the evolution of individuality</article-title>. <source>Nat. Ecol. Evol.</source>
+<volume>
+<bold>4</bold>
+</volume>, <fpage>426</fpage>–<lpage>436</lpage>
+<fpage>s41559</fpage>-<lpage>019</lpage>. (<pub-id pub-id-type="doi">10.1038/s41559-019-1086-9</pub-id>)<pub-id pub-id-type="pmid">32042121</pub-id>
+</mixed-citation></ref><ref id="B14"><label>14<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Doulcier</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lambert</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>De Monte</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rainey</surname>
+<given-names>PB</given-names>
+</string-name>
+</person-group>. <year>2020</year>
+<article-title>Eco-evolutionary dynamics of nested Darwinian populations and the emergence of community-level heredity</article-title>. <source>eLife</source>
+<volume>
+<bold>9</bold>
+</volume>, <elocation-id>e53433</elocation-id>. (<pub-id pub-id-type="doi">10.7554/elife.53433</pub-id>)<pub-id pub-id-type="pmid">32633717</pub-id>
+<pub-id pub-id-type="pmcid">PMC7440921</pub-id></mixed-citation></ref><ref id="B15"><label>15<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Bourrat</surname>
+<given-names>P</given-names>
+</string-name>
+</person-group>. <year>2022</year>
+<article-title>Evolutionary transitions in individuality by endogenization of scaffolded properties</article-title>. <source>Br. J. Philos. Sci.</source> (<pub-id pub-id-type="doi">10.1086/719118</pub-id>)</mixed-citation></ref><ref id="B16"><label>16<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Doulcier</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Takacs</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hammerschmidt</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bourrat</surname>
+<given-names>P</given-names>
+</string-name>
+</person-group>. <year>2024</year>
+<article-title>Stability of ecologically scaffolded traits during evolutionary transitions in individuality</article-title>. <source>Nat. Commun.</source>
+<volume>
+<bold>15</bold>
+</volume>. (<pub-id pub-id-type="doi">10.1038/s41467-024-50625-1</pub-id>)<pub-id pub-id-type="pmcid">PMC11297203</pub-id><pub-id pub-id-type="pmid">39095362</pub-id></mixed-citation></ref><ref id="B17"><label>17<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Hammerschmidt</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rose</surname>
+<given-names>CJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kerr</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rainey</surname>
+<given-names>PB</given-names>
+</string-name>
+</person-group>. <year>2014</year>
+<article-title>Life cycles, fitness decoupling and the evolution of multicellularity</article-title>. <source>Nature</source>
+<volume>
+<bold>515</bold>
+</volume>, <fpage>75</fpage>–<lpage>79</lpage>. (<pub-id pub-id-type="doi">10.1038/nature13884</pub-id>)<pub-id pub-id-type="pmid">25373677</pub-id>
+</mixed-citation></ref><ref id="B18"><label>18<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Rose</surname>
+<given-names>CJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hammerschmidt</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pichugin</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rainey</surname>
+<given-names>PB</given-names>
+</string-name>
+</person-group>. <year>2020</year>
+<article-title>Meta‐population structure and the evolutionary transition to multicellularity</article-title>. <source>Ecol. Lett.</source>
+<volume>
+<bold>23</bold>
+</volume>, <fpage>1380</fpage>–<lpage>1390</lpage>. (<pub-id pub-id-type="doi">10.1111/ele.13570</pub-id>)<pub-id pub-id-type="pmid">32643307</pub-id>
+</mixed-citation></ref><ref id="B19"><label>19<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Koza</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Moshynets</surname>
+<given-names>O</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Otten</surname>
+<given-names>W</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Spiers</surname>
+<given-names>AJ</given-names>
+</string-name>
+</person-group>. <year>2011</year>
+<article-title>Environmental modification and niche construction: developing O2 gradients drive the evolution of the wrinkly spreader</article-title>. <source>ISME J.</source>
+<volume>
+<bold>5</bold>
+</volume>, <fpage>665</fpage>–<lpage>673</lpage>. (<pub-id pub-id-type="doi">10.1038/ismej.2010.156</pub-id>)<pub-id pub-id-type="pmid">20962880</pub-id>
+<pub-id pub-id-type="pmcid">PMC3105741</pub-id></mixed-citation></ref><ref id="B20"><label>20<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Rainey</surname>
+<given-names>PB</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rainey</surname>
+<given-names>K</given-names>
+</string-name>
+</person-group>. <year>2003</year>
+<article-title>Evolution of cooperation and conflict in experimental bacterial populations</article-title>. <source>Nature</source>
+<volume>
+<bold>425</bold>
+</volume>, <fpage>72</fpage>–<lpage>74</lpage>. (<pub-id pub-id-type="doi">10.1038/nature01906</pub-id>)<pub-id pub-id-type="pmid">12955142</pub-id>
+</mixed-citation></ref><ref id="B21"><label>21<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Hardin</surname>
+<given-names>G</given-names>
+</string-name>
+</person-group>. <year>1968</year>
+<article-title>The tragedy of the commons</article-title>. <source>Science</source>
+<volume>
+<bold>162</bold>
+</volume>, <fpage>1243</fpage>–<lpage>1248</lpage>. <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://science.sciencemag.org/content/162/3859/1243" ext-link-type="uri">https://science.sciencemag.org/content/162/3859/1243</ext-link>
+<pub-id pub-id-type="pmid">5699198</pub-id></mixed-citation></ref><ref id="B22"><label>22<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Heilbron</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Toll-Riera</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kojadinovic</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>MacLean</surname>
+<given-names>RC</given-names>
+</string-name>
+</person-group>. <year>2014</year>
+<article-title>Fitness is strongly influenced by rare mutations of large effect in a microbial mutation accumulation experiment</article-title>. <source>Genetics</source>
+<volume>
+<bold>197</bold>
+</volume>, <fpage>981</fpage>–<lpage>990</lpage>. (<pub-id pub-id-type="doi">10.1534/genetics.114.163147</pub-id>)<pub-id pub-id-type="pmid">24814466</pub-id>
+<pub-id pub-id-type="pmcid">PMC4096375</pub-id></mixed-citation></ref><ref id="B23"><label>23<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Kawecki</surname>
+<given-names>TJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lenski</surname>
+<given-names>RE</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ebert</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hollis</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Olivieri</surname>
+<given-names>I</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Whitlock</surname>
+<given-names>MC</given-names>
+</string-name>
+</person-group>. <year>2012</year>
+<article-title>Experimental evolution</article-title>. <source>Trends Ecol. Evol.</source>
+<volume>
+<bold>27</bold>
+</volume>, <fpage>547</fpage>–<lpage>560</lpage>. (<pub-id pub-id-type="doi">10.1016/j.tree.2012.06.001</pub-id>)<pub-id pub-id-type="pmid">22819306</pub-id>
+</mixed-citation></ref><ref id="B24"><label>24<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Palmer</surname>
+<given-names>ME</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Feldman</surname>
+<given-names>MW</given-names>
+</string-name>
+</person-group>. <year>2012</year>
+<article-title>Survivability is more fundamental than evolvability</article-title>. <source>PLoS ONE</source>
+<volume>
+<bold>7</bold>
+</volume>, <elocation-id>e38025</elocation-id>. (<pub-id pub-id-type="doi">10.1371/journal.pone.0038025</pub-id>)<pub-id pub-id-type="pmid">22723844</pub-id>
+<pub-id pub-id-type="pmcid">PMC3377627</pub-id></mixed-citation></ref><ref id="B25"><label>25<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Deatherage</surname>
+<given-names>DE</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Barrick</surname>
+<given-names>JE</given-names>
+</string-name>
+</person-group>. <year>2014</year>
+<article-title>Identification of mutations in laboratory-evolved microbes from next-generation sequencing data using breseq</article-title>. <source>Methods Mol. Biol.</source>
+<volume>
+<bold>1151</bold>
+</volume>, <fpage>165</fpage>–<lpage>188</lpage>. (<pub-id pub-id-type="doi">10.1007/978-1-4939-0554-6_12</pub-id>)<pub-id pub-id-type="pmid">24838886</pub-id>
+<pub-id pub-id-type="pmcid">PMC4239701</pub-id></mixed-citation></ref><ref id="B26"><label>26<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="other">
+<person-group person-group-type="editor">
+<string-name name-style="western">
+<surname>Doulcier</surname>
+<given-names>G</given-names>
+</string-name>
+</person-group> (ed). <year>2019</year>
+<article-title>Colgen - collective genealogies visualisation and analysis. Zenodo.</article-title> (<pub-id pub-id-type="doi">10.5281/zenodo.7342768</pub-id>)</mixed-citation></ref><ref id="B27"><label>27<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="other">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Doulcier</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Remigi</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rexin</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rainey</surname>
+<given-names>PB</given-names>
+</string-name>
+</person-group>. <year>2024</year>
+<article-title>Data and code for: Evolutionary dynamics of nascent multicellular lineages. Zenodo.</article-title> (<pub-id pub-id-type="doi">10.1101/2024.05.10.593459</pub-id>)<pub-id pub-id-type="pmcid">PMC12040459</pub-id><pub-id pub-id-type="pmid">40300626</pub-id></mixed-citation></ref><ref id="B28"><label>28<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Bourrat</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Doulcier</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rose</surname>
+<given-names>CJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rainey</surname>
+<given-names>PB</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hammerschmidt</surname>
+<given-names>K</given-names>
+</string-name>
+</person-group>. <year>2022</year>
+<article-title>Tradeoff breaking as a model of evolutionary transitions in individuality and limits of the fitness-decoupling metaphor</article-title>. <source>eLife</source>
+<volume>
+<bold>11</bold>
+</volume>, <elocation-id>e73715</elocation-id>. (<pub-id pub-id-type="doi">10.7554/elife.73715</pub-id>)<pub-id pub-id-type="pmid">35975712</pub-id>
+<pub-id pub-id-type="pmcid">PMC9470156</pub-id></mixed-citation></ref><ref id="B29"><label>29<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="book">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Koller</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Friedman</surname>
+<given-names>N</given-names>
+</string-name>
+</person-group>. <year>2009</year>
+<source>Probabilistic graphical models: principles and techniques</source>. <publisher-loc>Boston, MA</publisher-loc>: <publisher-name>MIT Press</publisher-name>.</mixed-citation></ref><ref id="B30"><label>30<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Long</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Miller</surname>
+<given-names>SF</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Williams</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lynch</surname>
+<given-names>M</given-names>
+</string-name>
+</person-group>. <year>2018</year>
+<article-title>Specificity of the DNA mismatch repair system (MMR) and mutagenesis bias in bacteria</article-title>. <source>Mol. Biol. Evol.</source>
+<volume>
+<bold>35</bold>
+</volume>, <fpage>2414</fpage>–<lpage>2421</lpage>. (<pub-id pub-id-type="doi">10.1093/molbev/msy134</pub-id>)<pub-id pub-id-type="pmid">29939310</pub-id>
+<pub-id pub-id-type="pmcid">PMC6188547</pub-id></mixed-citation></ref><ref id="B31"><label>31<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Barnett</surname>
+<given-names>MP</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Meister</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rainey</surname>
+<given-names>PB</given-names>
+</string-name>
+</person-group>. <year>2025</year>
+<article-title>Experimental evolution of evolvability</article-title>. <source>Science</source>
+<volume>
+<bold>387</bold>
+</volume>, <elocation-id>eadr2756</elocation-id>. (<pub-id pub-id-type="doi">10.1101/2024.05.01.592015</pub-id>)<pub-id pub-id-type="pmid">39977489</pub-id>
+</mixed-citation></ref><ref id="B32"><label>32<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Michod</surname>
+<given-names>RE</given-names>
+</string-name>
+</person-group>. <year>2007</year>
+<article-title>Evolution of individuality during the transition from unicellular to multicellular life</article-title>. <source>Proc. Natl Acad. Sci. USA</source>
+<volume>
+<bold>104</bold>
+</volume>, <fpage>8613</fpage>–<lpage>8618</lpage>. (<pub-id pub-id-type="doi">10.1073/pnas.0701489104</pub-id>)<pub-id pub-id-type="pmid">17494748</pub-id>
+<pub-id pub-id-type="pmcid">PMC1876437</pub-id></mixed-citation></ref><ref id="B33"><label>33<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="book">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Bonner</surname>
+<given-names>J</given-names>
+</string-name>
+</person-group>. <year>2015</year>
+<source>Life cycles: reflections of an evolutionary biologist</source>. <publisher-loc>Princeton, NJ</publisher-loc>: <publisher-name>Princeton University Press</publisher-name>.</mixed-citation></ref><ref id="B34"><label>34<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Libby</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rainey</surname>
+<given-names>PB</given-names>
+</string-name>
+</person-group>. <year>2013</year>
+<article-title>Eco-evolutionary feedback and the tuning of proto-developmental life cycles</article-title>. <source>PLoS ONE</source>
+<volume>
+<bold>8</bold>
+</volume>, <elocation-id>e82274</elocation-id>. (<pub-id pub-id-type="doi">10.1371/journal.pone.0082274</pub-id>)<pub-id pub-id-type="pmid">24367511</pub-id>
+<pub-id pub-id-type="pmcid">PMC3867345</pub-id></mixed-citation></ref><ref id="B35"><label>35<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Ratcliff</surname>
+<given-names>WC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Herron</surname>
+<given-names>MD</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Howell</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pentz</surname>
+<given-names>JT</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rosenzweig</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Travisano</surname>
+<given-names>M</given-names>
+</string-name>
+</person-group>. <year>2013</year>
+<article-title>Experimental evolution of an alternating uni- and multicellular life cycle in Chlamydomonas reinhardtii</article-title>. <source>Nat. Commun.</source>
+<volume>
+<bold>4</bold>
+</volume>, <fpage>2742</fpage>. (<pub-id pub-id-type="doi">10.1038/ncomms3742</pub-id>)<pub-id pub-id-type="pmid">24193369</pub-id>
+<pub-id pub-id-type="pmcid">PMC3831279</pub-id></mixed-citation></ref><ref id="B36"><label>36<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Pichugin</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Park</surname>
+<given-names>HJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Traulsen</surname>
+<given-names>A</given-names>
+</string-name>
+</person-group>. <year>2019</year>
+<article-title>Evolution of simple multicellular life cycles in dynamic environments</article-title>. <source>J. R. Soc. Interface</source>
+<volume>
+<bold>16</bold>
+</volume>, <elocation-id>20190054</elocation-id>. (<pub-id pub-id-type="doi">10.1098/rsif.2019.0054</pub-id>)<pub-id pub-id-type="pmid">31088261</pub-id>
+<pub-id pub-id-type="pmcid">PMC6544879</pub-id></mixed-citation></ref><ref id="B37"><label>37<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Ratcliff</surname>
+<given-names>WC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Herron</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Conlin</surname>
+<given-names>PL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Libby</surname>
+<given-names>E</given-names>
+</string-name>
+</person-group>. <year>2017</year>
+<article-title>Nascent life cycles and the emergence of higher-level individuality</article-title>. <source>Phil. Trans. R. Soc. B</source>
+<volume>
+<bold>372</bold>
+</volume>, <elocation-id>20160420</elocation-id>. (<pub-id pub-id-type="doi">10.1098/rstb.2016.0420</pub-id>)<pub-id pub-id-type="pmid">29061893</pub-id>
+<pub-id pub-id-type="pmcid">PMC5665808</pub-id></mixed-citation></ref><ref id="B38"><label>38<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Staps</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>van Gestel</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Tarnita</surname>
+<given-names>CE</given-names>
+</string-name>
+</person-group>. <year>2019</year>
+<article-title>Emergence of diverse life cycles and life histories at the origin of multicellularity</article-title>. <source>Nat. Ecol. Evol.</source>
+<volume>
+<bold>3</bold>
+</volume>, <fpage>1197</fpage>–<lpage>1205</lpage>
+<fpage>s41559</fpage>-<lpage>019</lpage>. (<pub-id pub-id-type="doi">10.1038/s41559-019-0940-0</pub-id>)<pub-id pub-id-type="pmid">31285576</pub-id>
+</mixed-citation></ref><ref id="B39"><label>39<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Chavhan</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Dey</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lind</surname>
+<given-names>PA</given-names>
+</string-name>
+</person-group>. <year>2023</year>
+<article-title>Bacteria evolve macroscopic multicellularity by the genetic assimilation of phenotypically plastic cell clustering</article-title>. <source>Nat. Commun.</source>
+<volume>
+<bold>14</bold>
+</volume>, <fpage>3555</fpage>
+<fpage>s41467</fpage>-<lpage>023</lpage>. (<pub-id pub-id-type="doi">10.1038/s41467-023-39320-9</pub-id>)<pub-id pub-id-type="pmid">37322016</pub-id>
+<pub-id pub-id-type="pmcid">PMC10272148</pub-id></mixed-citation></ref><ref id="B40"><label>40<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="book">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Solé</surname>
+<given-names>RV</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Duran-Nebreda</surname>
+<given-names>S</given-names>
+</string-name>
+</person-group>. <year>2015</year>
+<part-title>
+<italic toggle="yes">In silico</italic> transitions to multicellularity</part-title>. In <source>Advances in marine genomics evolutionary transitions to multicellular life</source> (eds <person-group person-group-type="editor">
+<string-name name-style="western">
+<given-names>I</given-names>
+<surname>Ruiz-Trillo</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A</given-names>
+<surname>Nedelcu</surname>
+</string-name>
+</person-group>), pp. <fpage>245</fpage>–<lpage>266</lpage>, <comment>vol</comment>. <volume>2</volume>. <publisher-loc>Dordrecht, The Netherlands</publisher-loc>: <publisher-name>Springer</publisher-name>. (<pub-id pub-id-type="doi">10.1007/978-94-017-9642-2_13</pub-id>)</mixed-citation></ref><ref id="B41"><label>41<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Colizzi</surname>
+<given-names>ES</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Vroomans</surname>
+<given-names>RM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Merks</surname>
+<given-names>RM</given-names>
+</string-name>
+</person-group>. <year>2020</year>
+<article-title>Evolution of multicellularity by collective integration of spatial information</article-title>. <source>eLife</source>
+<volume>
+<bold>9</bold>
+</volume>, <elocation-id>e56349</elocation-id>. (<pub-id pub-id-type="doi">10.7554/elife.56349</pub-id>)<pub-id pub-id-type="pmid">33064078</pub-id>
+<pub-id pub-id-type="pmcid">PMC7652420</pub-id></mixed-citation></ref><ref id="B42"><label>42<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>De Ste Croix</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Holmes</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wanford</surname>
+<given-names>JJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Moxon</surname>
+<given-names>ER</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Oggioni</surname>
+<given-names>MR</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bayliss</surname>
+<given-names>CD</given-names>
+</string-name>
+</person-group>. <year>2020</year>
+<article-title>Selective and non‐selective bottlenecks as drivers of the evolution of hypermutable bacterial loci</article-title>. <source>Mol. Microbiol.</source>
+<volume>
+<bold>113</bold>
+</volume>, <fpage>672</fpage>–<lpage>681</lpage>. (<pub-id pub-id-type="doi">10.1111/mmi.14453</pub-id>)<pub-id pub-id-type="pmid">32185830</pub-id>
+<pub-id pub-id-type="pmcid">PMC7154626</pub-id></mixed-citation></ref><ref id="B43"><label>43<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Doin de Moura</surname>
+<given-names>GG</given-names>
+</string-name>
+<etal>
+<italic toggle="yes">et al</italic>
+</etal>
+</person-group>. <year>2023</year>
+<article-title>A selective bottleneck during host entry drives the evolution of new legume symbionts</article-title>. <source>Mol. Biol. Evol.</source>
+<volume>
+<bold>40</bold>
+</volume>, <elocation-id>d116</elocation-id>. (<pub-id pub-id-type="doi">10.1093/molbev/msad116</pub-id>)<pub-id pub-id-type="pmcid">PMC10220510</pub-id><pub-id pub-id-type="pmid">37186547</pub-id></mixed-citation></ref><ref id="B44"><label>44<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Sane</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Diwan</surname>
+<given-names>GD</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bhat</surname>
+<given-names>BA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wahl</surname>
+<given-names>LM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Agashe</surname>
+<given-names>D</given-names>
+</string-name>
+</person-group>. <year>2023</year>
+<article-title>Shifts in mutation spectra enhance access to beneficial mutations</article-title>. <source>Proc. Natl Acad. Sci. USA</source>
+<volume>
+<bold>120</bold>
+</volume>, <elocation-id>e2207355120</elocation-id>. (<pub-id pub-id-type="doi">10.1073/pnas.2207355120</pub-id>)<pub-id pub-id-type="pmid">37216547</pub-id>
+<pub-id pub-id-type="pmcid">PMC10235995</pub-id></mixed-citation></ref><ref id="B45"><label>45<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Elgrail</surname>
+<given-names>MM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sprouffske</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Dartey</surname>
+<given-names>JO</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Garcia</surname>
+<given-names>AM</given-names>
+</string-name>
+</person-group>. <year>2024</year>
+<article-title>Emergence of a multilocus mutator genotype in mutator Escherichia coli experimental populations under repeated lethal selection</article-title>. <source>J. Evol. Biol.</source>
+<volume>
+<bold>37</bold>
+</volume>, <fpage>346</fpage>–<lpage>352</lpage>. (<pub-id pub-id-type="doi">10.1093/jeb/voae007</pub-id>)<pub-id pub-id-type="pmid">38367184</pub-id>
+</mixed-citation></ref><ref id="B46"><label>46<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Wade</surname>
+<given-names>MJ</given-names>
+</string-name>
+</person-group>. <year>1978</year>
+<article-title>A critical review of the models of group selection</article-title>. <source>Q. Rev. Biol.</source>
+<volume>
+<bold>53</bold>
+</volume>, <fpage>101</fpage>–<lpage>114</lpage>. (<pub-id pub-id-type="doi">10.1086/410450</pub-id>)</mixed-citation></ref><ref id="B47"><label>47<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Kaveh</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Komarova</surname>
+<given-names>NL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kohandel</surname>
+<given-names>M</given-names>
+</string-name>
+</person-group>. <year>2015</year>
+<article-title>The duality of spatial death–birth and birth–death processes and limitations of the isothermal theorem</article-title>. <source>R. Soc. Open Sci.</source>
+<volume>
+<bold>2</bold>
+</volume>, <elocation-id>140465</elocation-id>. (<pub-id pub-id-type="doi">10.1098/rsos.140465</pub-id>)<pub-id pub-id-type="pmid">26064637</pub-id>
+<pub-id pub-id-type="pmcid">PMC4448870</pub-id></mixed-citation></ref><ref id="B48"><label>48<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Zukewich</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kurella</surname>
+<given-names>V</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Doebeli</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hauert</surname>
+<given-names>C</given-names>
+</string-name>
+</person-group>. <year>2013</year>
+<article-title>Consolidating birth-death and death-birth processes in structured populations</article-title>. <source>PLoS ONE</source>
+<volume>
+<bold>8</bold>
+</volume>, <elocation-id>e54639</elocation-id>. (<pub-id pub-id-type="doi">10.1371/journal.pone.0054639</pub-id>)<pub-id pub-id-type="pmid">23382931</pub-id>
+<pub-id pub-id-type="pmcid">PMC3557300</pub-id></mixed-citation></ref><ref id="B49"><label>49<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Wade</surname>
+<given-names>MJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>McCauley</surname>
+<given-names>DE</given-names>
+</string-name>
+</person-group>. <year>1988</year>
+<article-title>Extinction and recolonization: their effects on the genetic differentiation of local populations</article-title>. <source>Evolution</source>
+<volume>
+<bold>42</bold>
+</volume>, <fpage>995</fpage>. (<pub-id pub-id-type="doi">10.2307/2408915</pub-id>)<pub-id pub-id-type="pmid">28581169</pub-id>
+</mixed-citation></ref><ref id="B50"><label>50<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Arias-Sánchez</surname>
+<given-names>FI</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Vessman</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mitri</surname>
+<given-names>S</given-names>
+</string-name>
+</person-group>. <year>2019</year>
+<article-title>Artificially selecting microbial communities: If we can breed dogs, why not microbiomes?</article-title>
+<source>PLoS Biol.</source>
+<volume>
+<bold>17</bold>
+</volume>, <elocation-id>e3000356</elocation-id>. (<pub-id pub-id-type="doi">10.1371/journal.pbio.3000356</pub-id>)<pub-id pub-id-type="pmid">31469824</pub-id>
+<pub-id pub-id-type="pmcid">PMC6716632</pub-id></mixed-citation></ref><ref id="B51"><label>51<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Xie</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Shou</surname>
+<given-names>W</given-names>
+</string-name>
+</person-group>. <year>2021</year>
+<article-title>Steering ecological-evolutionary dynamics to improve artificial selection of microbial communities</article-title>. <source>Nat. Commun.</source>
+<volume>
+<bold>12</bold>
+</volume>, <fpage>6799</fpage>
+<fpage>s41467</fpage>-<lpage>021</lpage>. (<pub-id pub-id-type="doi">10.1038/s41467-021-26647-4</pub-id>)<pub-id pub-id-type="pmid">34815384</pub-id>
+<pub-id pub-id-type="pmcid">PMC8611069</pub-id></mixed-citation></ref><ref id="B52"><label>52<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Fishelson</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Dovgolevsky</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Geiger</surname>
+<given-names>D</given-names>
+</string-name>
+</person-group>. <year>2005</year>
+<article-title>Maximum likelihood haplotyping for general pedigrees</article-title>. <source>Hum. Hered.</source>
+<volume>
+<bold>59</bold>
+</volume>, <fpage>41</fpage>–<lpage>60</lpage>. (<pub-id pub-id-type="doi">10.1159/000084736</pub-id>)<pub-id pub-id-type="pmid">15802921</pub-id>
+</mixed-citation></ref><ref id="B53"><label>53<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Needham</surname>
+<given-names>CJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bradford</surname>
+<given-names>JR</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bulpitt</surname>
+<given-names>AJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Westhead</surname>
+<given-names>DR</given-names>
+</string-name>
+</person-group>. <year>2007</year>
+<article-title>A primer on learning in bayesian networks for computational biology</article-title>. <source>PLoS Comput. Biol.</source>
+<volume>
+<bold>3</bold>
+</volume>, <elocation-id>e129</elocation-id>. (<pub-id pub-id-type="doi">10.1371/journal.pcbi.0030129</pub-id>)<pub-id pub-id-type="pmid">17784779</pub-id>
+<pub-id pub-id-type="pmcid">PMC1963499</pub-id></mixed-citation></ref><ref id="B54"><label>54<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Nuel</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lefebvre</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bouaziz</surname>
+<given-names>O</given-names>
+</string-name>
+</person-group>. <year>2017</year>
+<article-title>Computing individual risks based on family history in genetic disease in the presence of competing risks</article-title>. <source>Comput. Math. Methods Med.</source>
+<volume>
+<bold>2017</bold>
+</volume>, <fpage>1</fpage>–<lpage>14</lpage>. (<pub-id pub-id-type="doi">10.1155/2017/9193630</pub-id>)<pub-id pub-id-type="pmcid">PMC5700554</pub-id><pub-id pub-id-type="pmid">29312466</pub-id></mixed-citation></ref><ref id="B55"><label>55<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="other">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Doulcier</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Remigi</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rexin</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rainey</surname>
+<given-names>P</given-names>
+</string-name>
+</person-group>. <year>2024</year>
+<article-title>Data and code for: ‘Evolutionary dynamics of nascent multicellular lineages’. Zenodo.</article-title> (<pub-id pub-id-type="doi">10.5281/zenodo.13244627</pub-id>)<pub-id pub-id-type="pmcid">PMC12040459</pub-id><pub-id pub-id-type="pmid">40300626</pub-id></mixed-citation></ref><ref id="B56"><label>56<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="other">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Doulcier</surname>
+<given-names>G</given-names>
+</string-name>
+</person-group>. <year>2019</year>
+<article-title>Colgen - collective genealogies visualisation and analysis (1.0). Zenodo.</article-title> (<pub-id pub-id-type="doi">10.5281/zenodo.7342768</pub-id>)</mixed-citation></ref><ref id="B57"><label>57<x xml:space="preserve">. </x>
+</label><mixed-citation publication-type="other">
+<person-group person-group-type="author">
+<string-name name-style="western">
+<surname>Doulcier</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Remigi</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rexin</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rainey</surname>
+<given-names>P</given-names>
+</string-name>
+</person-group>. <year>2025</year>
+<article-title>Supplementary material from: Evolutionary dynamics of nascent multicellular lineages. Figshare.</article-title> (<pub-id pub-id-type="doi">10.6084/m9.figshare.c.7736484</pub-id>)<pub-id pub-id-type="pmcid">PMC12040459</pub-id><pub-id pub-id-type="pmid">40300626</pub-id></mixed-citation></ref></ref-list></back></article>

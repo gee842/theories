@@ -1,0 +1,22 @@
+{
+  "retrieved_utc": "2026-10-07T22:17:42.131959+00:00",
+  "article_doi": "10.7554/eLife.65935",
+  "authors": "Adam Filipowicz, Jonathan Lalsiamthara, Alejandro Aballay",
+  "year": 2021,
+  "license": "CC BY 4.0 as stated by eLife; attribution retained",
+  "discovery": "Links obtained from https://api.elifesciences.org/articles/65935 and cross-identified with PMC source-data captions",
+  "files": [
+    {
+      "file": "elife-65935-fig2-data1-v2.xlsx",
+      "url": "https://cdn.elifesciences.org/articles/65935/elife-65935-fig2-data1-v2.xlsx",
+      "bytes": 11663,
+      "sha256": "221d0f6c1be308868aa440cc03395c81a1bfb052dfdfabee6e7208299f4acf5c"
+    },
+    {
+      "file": "elife-65935-fig4-data1-v2.xlsx",
+      "url": "https://cdn.elifesciences.org/articles/65935/elife-65935-fig4-data1-v2.xlsx",
+      "bytes": 9949,
+      "sha256": "fc7cf6c6a8a2fa2f71ebbf5bb3e02015e8e2582b7ce2b89686fac8d7f26d0cf4"
+    }
+  ]
+}

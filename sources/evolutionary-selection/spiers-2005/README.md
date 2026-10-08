@@ -1,0 +1,9 @@
+# Biofilm structural interactions and development
+
+Spiers and Rainey, *The Pseudomonas fluorescens SBW25 wrinkly spreader biofilm requires attachment factor, cellulose fibre and LPS interactions to maintain strength and integrity*, Microbiology 151, 2829–2839 (2005), [publisher](https://doi.org/10.1099/mic.0.27984-0).
+
+This is a **link-only reading record**, made 8 October 2026. The publisher abstract and selected full-text passages from the [author-uploaded copy](https://www.researchgate.net/publication/7611316_The_Pseudomonas_fluorescens_SBW25_wrinkly_spreader_biofilm_requires_attachment_factor_cellulose_fibre_and_LPS_interactions_to_maintain_strength_and_integrity) were read through the web tool. Reading covers the biofilm/cellulose assay methods, comparison of WS and WS-5, chemical interference, and mixed-strain complementation. Original PDF/HTML bytes were not successfully retrieved and are not claimed preserved. Tool-extracted typography is not used to infer uncertain figure values.
+
+The evidence supports investigating component interactions and the timing of development. WS-5's mutation has multiple effects; it is not a clean intervention changing only LPS. Nonsignificant differences in attachment, growth and dye-binding measurements do not establish exact equality. Congo-red binding is a proxy, not an exclusive cellulose measurement. The reported mature-mat intervention has a two-hour observation window, not an unlimited invariance claim. The glass-ball strength assay destroys or detaches the structure whose endurance is being measured.
+
+These limits shape the [study and next measurement design](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-CONDITIONS-INTEGRATION.md). No numerical figure digitization, statistical replication, biological experiment or new inherited-unit claim is made from this reading.

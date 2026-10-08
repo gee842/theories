@@ -1,0 +1,44 @@
+EvaluativeExtension.lean:39:28: error: unexpected token 'protected'; expected '_' or identifier
+EvaluativeExtension.lean:39:37: error: unexpected token ':'; expected 'abbrev', 'axiom', 'builtin_initialize', 'class', 'coinductive', 'def', 'example', 'inductive', 'initialize', 'instance', 'opaque', 'structure' or 'theorem'
+EvaluativeExtension.lean:44:75: error: unexpected token ')'; expected 'abbrev', 'axiom', 'builtin_initialize', 'class', 'coinductive', 'def', 'example', 'inductive', 'initialize', 'instance', 'opaque', 'structure' or 'theorem'
+EvaluativeExtension.lean:45:72: error: unexpected token '⟩'; expected 'abbrev', 'axiom', 'builtin_initialize', 'class', 'coinductive', 'def', 'example', 'inductive', 'initialize', 'instance', 'opaque', 'structure' or 'theorem'
+EvaluativeExtension.lean:70:10: error(lean.unknownIdentifier): Unknown identifier `better_survives_no_new_loss`
+EvaluativeExtension.lean:112:24: error: failed to synthesize
+  Decidable (oldGain Plan.output 1)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+EvaluativeExtension.lean:117:88: error: failed to synthesize
+  Decidable
+    (formedProtection Stage.prior Plan.output () ∧
+      formedProtection Stage.prior Plan.maintain () ∧
+        ¬formedProtection Stage.formed Plan.output () ∧ formedProtection Stage.formed Plan.maintain ())
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+EvaluativeExtension.lean:123:4: error: failed to synthesize
+  Decidable (protection Stage.formed Plan.maintain (Sum.inr ()))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+EvaluativeExtension.lean:124:4: error: failed to synthesize
+  Decidable ¬protection Stage.formed Plan.output (Sum.inr ())
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+EvaluativeExtension.lean:128:37: error: failed to synthesize
+  Decidable (formedProtection Stage.formed Plan.maintain ())
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+EvaluativeExtension.lean:128:49: error: failed to synthesize
+  Decidable ¬formedProtection Stage.formed Plan.output ()
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+EvaluativeExtension.lean:133:12: error: failed to synthesize
+  Decidable (oldGain Plan.output 1)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+EvaluativeExtension.lean:133:23: error: failed to synthesize
+  Decidable ¬oldGain Plan.maintain 1
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+EvaluativeExtension.lean:170:39: error: failed to synthesize
+  Decidable (extend oldGain addedGain Plan.output (Sum.inl 1))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.

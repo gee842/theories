@@ -1,0 +1,13 @@
+'SeededContinuation.mutual_history' does not depend on any axioms
+'SeededContinuation.compatible_from_seed' depends on axioms: [propext]
+'SeededContinuation.seeded_joint_plan' depends on axioms: [propext]
+'SeededContinuation.preservation_without_availability' depends on axioms: [propext]
+'SeededContinuation.reciprocal_eventual_promises_can_be_empty' does not depend on any axioms
+'SeededContinuation.tick_supports_mutually' does not depend on any axioms
+'SeededContinuation.tick_active_iff' does not depend on any axioms
+'SeededContinuation.active_run_iff' does not depend on any axioms
+'SeededContinuation.empty_never_starts' depends on axioms: [propext]
+'SeededContinuation.partial_seed_not_joint' depends on axioms: [propext]
+'SeededContinuation.stored_seed_starts_and_maintains' depends on axioms: [propext]
+'SeededContinuation.ignition_requires_actual_reserve' does not depend on any axioms
+'SeededContinuation.absent_reserve_blocks_ignition' depends on axioms: [propext, Quot.sound]

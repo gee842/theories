@@ -1,0 +1,465 @@
+{
+  "status": "passed",
+  "utc": "20261008T102004.808532Z",
+  "retained_run": "fault-tolerant-correction-checks/20261008T102004.808532Z",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "sources": {
+    "AlignmentInquiry": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentInquiry.lean",
+      "sha256": "f40ad6179db326830edcdf8ec511f9069833a361f71181fd60166e0f72c0a23c"
+    },
+    "EffectiveCommand": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EffectiveCommand.lean",
+      "sha256": "7247ca05597f2f916fb409213d3814d48ad9a7037fb95017146d106273d58553"
+    },
+    "AcquiredCorrection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AcquiredCorrection.lean",
+      "sha256": "5448267c53e610b28bd030dfb1a894be840c307d54cd76e4be3695f196e8cd62"
+    },
+    "FaultTolerantCorrection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FaultTolerantCorrection.lean",
+      "sha256": "16d386e6b86ac50b1bfad4d0af6841853c4fd9e837d24f42f1173ef44e9163c6"
+    },
+    "FaultTolerantCorrectionCases": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FaultTolerantCorrectionCases.lean",
+      "sha256": "75bcb7553597490e02bdc38c561eab01beb4a6bee782903b30a1d360dea6b418"
+    }
+  },
+  "checker_sha256": {
+    "check_fault_tolerant_correction.py": "22fb0dab33ce22fcfa440828f3717d4372efabd13af231b3c79d9b62eabd08b7",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Single-transaction observation and bounded-mandate attestation under explicit correlated fault envelopes. Protected registry/mandate/monitor and actual fault coverage remain supplied. Not Byzantine agreement, ethical legitimacy from signatures, cryptographic implementation or deployed-AI validation.",
+  "version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "modules": {
+    "FaultTolerantCorrection": {
+      "declarations": [
+        {
+          "kind": "abbrev",
+          "name": "FaultTolerantCorrection.Domain"
+        },
+        {
+          "kind": "abbrev",
+          "name": "FaultTolerantCorrection.Envelope"
+        },
+        {
+          "kind": "def",
+          "name": "FaultTolerantCorrection.certificate"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.certificate_witness"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.certificate_sound"
+        },
+        {
+          "kind": "def",
+          "name": "FaultTolerantCorrection.separated"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.certificate_available"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.support_contained_in_fault_rejected"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.two_fault_sets_cover_prevents_availability"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.availability_iff_separated"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.duplicating_roster_gives_no_extra_warrant"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.no_fault_model_never_certifies"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.admitted_total_compromise_rejects"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.stronger_fault_coverage_cannot_create_acceptance"
+        },
+        {
+          "kind": "structure",
+          "name": "FaultTolerantCorrection.Mandate"
+        },
+        {
+          "kind": "def",
+          "name": "FaultTolerantCorrection.permits"
+        },
+        {
+          "kind": "structure",
+          "name": "FaultTolerantCorrection.Installation"
+        },
+        {
+          "kind": "structure",
+          "name": "FaultTolerantCorrection.Request"
+        },
+        {
+          "kind": "structure",
+          "name": "FaultTolerantCorrection.Observation"
+        },
+        {
+          "kind": "def",
+          "name": "FaultTolerantCorrection.observed"
+        },
+        {
+          "kind": "def",
+          "name": "FaultTolerantCorrection.expected"
+        },
+        {
+          "kind": "def",
+          "name": "FaultTolerantCorrection.fresh"
+        },
+        {
+          "kind": "def",
+          "name": "FaultTolerantCorrection.withinMandate"
+        },
+        {
+          "kind": "abbrev",
+          "name": "FaultTolerantCorrection.Readings"
+        },
+        {
+          "kind": "abbrev",
+          "name": "FaultTolerantCorrection.Approvals"
+        },
+        {
+          "kind": "def",
+          "name": "FaultTolerantCorrection.readSupport"
+        },
+        {
+          "kind": "def",
+          "name": "FaultTolerantCorrection.approvalSupport"
+        },
+        {
+          "kind": "def",
+          "name": "FaultTolerantCorrection.gate"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.accepted_observation_matches"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.gate_has_actual_route"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.gate_respects_mandate"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.stale_request_rejected"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.gate_available"
+        },
+        {
+          "kind": "structure",
+          "name": "FaultTolerantCorrection.Outcome"
+        },
+        {
+          "kind": "def",
+          "name": "FaultTolerantCorrection.execute"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.execution_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.execution_respects_mandate"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.forbidden_command_cannot_execute"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.completed_serial_advances"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.protected_completion_blocks_replay"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.quorum_to_actual_correction"
+        },
+        {
+          "kind": "def",
+          "name": "FaultTolerantCorrection.roster3"
+        },
+        {
+          "kind": "def",
+          "name": "FaultTolerantCorrection.singleFault"
+        },
+        {
+          "kind": "def",
+          "name": "FaultTolerantCorrection.correlated3"
+        },
+        {
+          "kind": "def",
+          "name": "FaultTolerantCorrection.roster4"
+        },
+        {
+          "kind": "def",
+          "name": "FaultTolerantCorrection.correlated4"
+        },
+        {
+          "kind": "def",
+          "name": "FaultTolerantCorrection.shutdownOnly"
+        },
+        {
+          "kind": "def",
+          "name": "FaultTolerantCorrection.initial"
+        },
+        {
+          "kind": "def",
+          "name": "FaultTolerantCorrection.request"
+        },
+        {
+          "kind": "def",
+          "name": "FaultTolerantCorrection.correctReads"
+        },
+        {
+          "kind": "def",
+          "name": "FaultTolerantCorrection.correctApprovals"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.one_fault_separation"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.correlated_recovery_separation"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.compromised_issuer_alone_cannot_expand_mandate"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.two_faithful_domains_complete_shutdown"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.consumed_request_cannot_replay"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.changing_command_invalidates_old_approvals"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.correlated_fault_defeats_unwarranted_single_fault_model"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.declared_correlation_can_block_availability"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.distinct_support_recovers_under_same_correlated_attack"
+        },
+        {
+          "kind": "theorem",
+          "name": "FaultTolerantCorrection.accurate_redundancy_can_exhaust_response_capacity"
+        }
+      ],
+      "dependencies": {
+        "FaultTolerantCorrection.Domain": [],
+        "FaultTolerantCorrection.Envelope": [],
+        "FaultTolerantCorrection.certificate": [],
+        "FaultTolerantCorrection.certificate_witness": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FaultTolerantCorrection.certificate_sound": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FaultTolerantCorrection.separated": [],
+        "FaultTolerantCorrection.certificate_available": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FaultTolerantCorrection.support_contained_in_fault_rejected": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FaultTolerantCorrection.two_fault_sets_cover_prevents_availability": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FaultTolerantCorrection.availability_iff_separated": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FaultTolerantCorrection.duplicating_roster_gives_no_extra_warrant": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FaultTolerantCorrection.no_fault_model_never_certifies": [],
+        "FaultTolerantCorrection.admitted_total_compromise_rejects": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FaultTolerantCorrection.stronger_fault_coverage_cannot_create_acceptance": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FaultTolerantCorrection.Mandate": [],
+        "FaultTolerantCorrection.permits": [],
+        "FaultTolerantCorrection.Installation": [],
+        "FaultTolerantCorrection.Request": [],
+        "FaultTolerantCorrection.Observation": [],
+        "FaultTolerantCorrection.observed": [
+          "propext"
+        ],
+        "FaultTolerantCorrection.expected": [],
+        "FaultTolerantCorrection.fresh": [],
+        "FaultTolerantCorrection.withinMandate": [],
+        "FaultTolerantCorrection.Readings": [],
+        "FaultTolerantCorrection.Approvals": [],
+        "FaultTolerantCorrection.readSupport": [],
+        "FaultTolerantCorrection.approvalSupport": [],
+        "FaultTolerantCorrection.gate": [],
+        "FaultTolerantCorrection.accepted_observation_matches": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FaultTolerantCorrection.gate_has_actual_route": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FaultTolerantCorrection.gate_respects_mandate": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FaultTolerantCorrection.stale_request_rejected": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FaultTolerantCorrection.gate_available": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FaultTolerantCorrection.Outcome": [],
+        "FaultTolerantCorrection.execute": [
+          "propext"
+        ],
+        "FaultTolerantCorrection.execution_exact": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FaultTolerantCorrection.execution_respects_mandate": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FaultTolerantCorrection.forbidden_command_cannot_execute": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FaultTolerantCorrection.completed_serial_advances": [
+          "propext"
+        ],
+        "FaultTolerantCorrection.protected_completion_blocks_replay": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FaultTolerantCorrection.quorum_to_actual_correction": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FaultTolerantCorrection.roster3": [],
+        "FaultTolerantCorrection.singleFault": [],
+        "FaultTolerantCorrection.correlated3": [],
+        "FaultTolerantCorrection.roster4": [],
+        "FaultTolerantCorrection.correlated4": [],
+        "FaultTolerantCorrection.shutdownOnly": [],
+        "FaultTolerantCorrection.initial": [],
+        "FaultTolerantCorrection.request": [],
+        "FaultTolerantCorrection.correctReads": [
+          "propext"
+        ],
+        "FaultTolerantCorrection.correctApprovals": [],
+        "FaultTolerantCorrection.one_fault_separation": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FaultTolerantCorrection.correlated_recovery_separation": [
+          "propext",
+          "Quot.sound"
+        ],
+        "FaultTolerantCorrection.compromised_issuer_alone_cannot_expand_mandate": [
+          "propext"
+        ],
+        "FaultTolerantCorrection.two_faithful_domains_complete_shutdown": [
+          "propext"
+        ],
+        "FaultTolerantCorrection.consumed_request_cannot_replay": [
+          "propext"
+        ],
+        "FaultTolerantCorrection.changing_command_invalidates_old_approvals": [
+          "propext"
+        ],
+        "FaultTolerantCorrection.correlated_fault_defeats_unwarranted_single_fault_model": [
+          "propext"
+        ],
+        "FaultTolerantCorrection.declared_correlation_can_block_availability": [],
+        "FaultTolerantCorrection.distinct_support_recovers_under_same_correlated_attack": [
+          "propext"
+        ],
+        "FaultTolerantCorrection.accurate_redundancy_can_exhaust_response_capacity": [
+          "propext"
+        ]
+      },
+      "theorems": 31
+    }
+  },
+  "new_theorems": 31,
+  "audited_declarations": 61,
+  "compared_records": 85680,
+  "record_counts": {
+    "0": 2048,
+    "1": 256,
+    "2": 82944,
+    "3": 432
+  },
+  "correspondence": "2048 support decisions, 256 availability conditions, 82944 concrete execution records and 432 variable-depth execution records match separate set-arithmetic and accounting reference. Same-author comparison, not independent review.",
+  "artifacts": {
+    "EffectiveCommand.lean": "7247ca05597f2f916fb409213d3814d48ad9a7037fb95017146d106273d58553",
+    "FaultTolerantCorrection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FaultTolerantCorrectionAudit.lean": "5392be10dcf9a643f8ad518a6ad55bcab8fe759a88e3dfed35b85fcf5855cba6",
+    "cases.log": "e3e068b746a31ae4226a6718eee6d3f2a6a5a510c366fa816bf940dc49590064",
+    "RunCases.lean": "47f60065ad0731f1225128a3061c7ffd7c84790ba268708475b4a4c4e7527bce",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "FaultTolerantCorrectionAudit.log": "88aa77421d925605f815f910e6215f21f0d8dc2bb26f21390b7cfac096bc37ca",
+    "AlignmentInquiry.lean": "f40ad6179db326830edcdf8ec511f9069833a361f71181fd60166e0f72c0a23c",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b",
+    "check_fault_tolerant_correction.py": "22fb0dab33ce22fcfa440828f3717d4372efabd13af231b3c79d9b62eabd08b7",
+    "reference.json": "be59eac2c9e23f6ca7cc47bb25f97f1c545bd979f7ffaadaf8a3c9bf38e2dcf5",
+    "FaultTolerantCorrectionCases.lean": "75bcb7553597490e02bdc38c561eab01beb4a6bee782903b30a1d360dea6b418",
+    "EffectiveCommand.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FaultTolerantCorrection.lean": "16d386e6b86ac50b1bfad4d0af6841853c4fd9e837d24f42f1173ef44e9163c6",
+    "AcquiredCorrection.lean": "5448267c53e610b28bd030dfb1a894be840c307d54cd76e4be3695f196e8cd62",
+    "AcquiredCorrection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FaultTolerantCorrectionCases.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "AlignmentInquiry.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

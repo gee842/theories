@@ -1,0 +1,40 @@
+{
+  "retrieved": "2026-10-08 Asia/Bangkok",
+  "doi": "10.5061/dryad.2hr77",
+  "dataset_url": "https://datadryad.org/dataset/doi:10.5061/dryad.2hr77",
+  "dataset_metadata_url": "https://datadryad.org/api/v2/datasets/doi%3A10.5061%2Fdryad.2hr77",
+  "file_metadata_url": "https://datadryad.org/api/v2/versions/7893/files",
+  "preview_source": "Public browser preview of settling survival compiled data.csv; all 31 rows including header",
+  "method": "Transcribe displayed table and restore CRLF. Byte count and MD5 exactly match published metadata. Not a direct file download.",
+  "license": "CC0-1.0",
+  "preserved_files": {
+    "settling survival compiled data.csv": {
+      "bytes": 643,
+      "sha256": "f9920311c09251f9854318a65f4d67212ec3b0d2792af78e83e50913c987db75",
+      "md5": "686faa3b6b625634c073bfc33095d4a0"
+    },
+    "survival-preview.csv": {
+      "bytes": 612,
+      "sha256": "7419124e80f7584fee0450b9879b2a020dd17d0022b181d82b2d618bbdc351d1",
+      "md5": "c13e5f6b51fc9e437b96818471a0720d"
+    },
+    "dataset-metadata.json": {
+      "bytes": 5225,
+      "sha256": "bc2b71a0192900a5c99fc080e3dc23a24ec308d0f1ee5883fea20ca5a145aec5",
+      "md5": "033c6c52e23f8f5ef1dfcfdfc8e2b09d"
+    },
+    "file-metadata.json": {
+      "bytes": 4156,
+      "sha256": "fb908148fa143c3a639e843a5ddde60a94ea381a662cf7812b24adad4d417687",
+      "md5": "7ed2fa587c2f9f089fbb6af5f0265188"
+    }
+  },
+  "unretrieved": [
+    "Cell volume.csv",
+    "cells per cluster.csv",
+    "Cluster buoyant density.csv",
+    "Roundness data.csv",
+    "Size and Settling velocity.csv"
+  ],
+  "velocity_preview_scope": "165 rows including header; 164 data rows, final record incomplete; not used in analysis"
+}

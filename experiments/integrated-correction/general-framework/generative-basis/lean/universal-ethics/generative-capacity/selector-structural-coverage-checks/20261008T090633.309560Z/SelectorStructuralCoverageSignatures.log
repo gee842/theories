@@ -1,0 +1,17 @@
+SelectorStructuralCoverage.lower_intensity_favored_iff (capacity lower higher : Nat) (order : lower < higher) :
+  SelectorReviewCoverage.prefixComparison capacity true lower higher ↔ lower ≤ capacity ∧ capacity < higher
+SelectorStructuralCoverage.threshold_all_menu_coverage_iff_capacity_inclusion (oldLive newLive : Nat → Prop) :
+  (∀ (menu : Nat → Prop),
+      SelectorReviewCoverage.CertificateCoverage oldLive newLive menu
+        (fun c => SelectorReviewCoverage.prefixComparison c true) fun c =>
+        SelectorReviewCoverage.prefixComparison c true) ↔
+    ∀ (c : Nat), oldLive c → newLive c
+SelectorStructuralCoverage.two_extreme_reviews_miss_middle_objection :
+  SelectorReviewCoverage.prefixComparison 2 true 2 3 ∧
+    ¬SelectorReviewCoverage.prefixComparison 0 true 2 3 ∧ ¬SelectorReviewCoverage.prefixComparison 4 true 2 3
+SelectorStructuralCoverage.two_adjacent_probes_identify_capacity (n capacity : Nat) :
+  SelectorStructuralCoverage.fitsAdjacentProbes n capacity ↔ capacity = n
+SelectorStructuralCoverage.two_probes_give_exact_certificate_on_every_menu (n : Nat) (menu : Nat → Prop) (a : Nat) :
+  SelectorReviewCoverage.Clear (SelectorStructuralCoverage.fitsAdjacentProbes n) menu
+      (fun c => SelectorReviewCoverage.prefixComparison c true) a ↔
+    SelectorReviewCoverage.Clear (fun x => True) menu (fun x => SelectorReviewCoverage.prefixComparison n true) a

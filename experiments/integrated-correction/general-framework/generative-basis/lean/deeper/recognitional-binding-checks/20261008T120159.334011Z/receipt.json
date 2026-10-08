@@ -1,0 +1,71 @@
+{
+  "checked_at_utc": "20261008T120159.334011Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "compiler": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "checker_sha256": "28e4ce570c2972cb97a6569164af9b7c20368e6dc44d96aff726de4527473dfc",
+  "scope": "RecognitionalBinding with the existing ground-language closure; 7 new theorem audits and 14 inherited declaration audits",
+  "modules": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/InferentialGrounds.lean",
+      "sha256": "04ade1d91de4fd7fba789a94728a5aee6792c551c41611fc195e6b30c20f0bcd",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/recognitional-binding-checks/20261008T120159.334011Z/sources/InferentialGrounds.lean",
+      "log": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/recognitional-binding-checks/20261008T120159.334011Z/InferentialGrounds.log",
+      "log_sha256": "df2209324a5aaa0c1aa627bccf131ba1c1f1db7443297256e9e591b35b1230f1",
+      "expected_audits": 10,
+      "empty_axiom_audits": [
+        "Generative.InferentialGrounds.extract",
+        "Generative.InferentialGrounds.first_after_pair",
+        "Generative.InferentialGrounds.second_after_pair",
+        "Generative.InferentialGrounds.application_after_abstraction",
+        "Generative.InferentialGrounds.atomic_conservativity",
+        "Generative.InferentialGrounds.no_ground_no_closed_atom",
+        "Generative.InferentialGrounds.adequate_sources_give_atomic_claim",
+        "Generative.InferentialGrounds.unsupported_unpacking_impossible",
+        "Generative.InferentialGrounds.duplicate",
+        "Generative.InferentialGrounds.duplication_is_ground_reuse"
+      ],
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/GroundRelationTransport.lean",
+      "sha256": "a05ca1028786a3fc0c27909aca52ddae29183f718c946d9d005e034503d26588",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/recognitional-binding-checks/20261008T120159.334011Z/sources/GroundRelationTransport.lean",
+      "log": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/recognitional-binding-checks/20261008T120159.334011Z/GroundRelationTransport.log",
+      "log_sha256": "edaf16bc53b5b4258b99349a97210c515d19bcd70ef8a0e83438fb86cac541bc",
+      "expected_audits": 4,
+      "empty_axiom_audits": [
+        "Generative.GroundRelationTransport.extend_related",
+        "Generative.GroundRelationTransport.extract_transport",
+        "Generative.GroundRelationTransport.closed_transport_iff_sources",
+        "Generative.GroundRelationTransport.paired_representation_transport"
+      ],
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/RecognitionalBinding.lean",
+      "sha256": "94c770bd95a8b19c13c8e74dd95b19ac01884f8f261e5284e23034eb2c4c95bc",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/recognitional-binding-checks/20261008T120159.334011Z/sources/RecognitionalBinding.lean",
+      "log": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/recognitional-binding-checks/20261008T120159.334011Z/RecognitionalBinding.log",
+      "log_sha256": "dd68921af9ea999349419b10d8cb4117faa8fbe956ca3f963d4f9c0bf2f6706b",
+      "expected_audits": 7,
+      "empty_axiom_audits": [
+        "Generative.RecognitionalBinding.source_free_related",
+        "Generative.RecognitionalBinding.no_closed_source_free_atom",
+        "Generative.RecognitionalBinding.closed_identity_forced",
+        "Generative.RecognitionalBinding.closed_identity_preserves",
+        "Generative.RecognitionalBinding.bound_identity_spec",
+        "Generative.RecognitionalBinding.ambient_ground_can_replace",
+        "Generative.RecognitionalBinding.introduced_ground_can_replace"
+      ],
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "total_empty_axiom_audits": 21
+}

@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T11:43:00.847457+00:00",
+  "checker_sha256": "f68f0c7df2440ae3ceed67f368d2636128da593fcf9fa30d66a014a07240942f",
+  "edits_sha256": "a1f7b4691aa6565004acb59da4c9ee8938145358e7e1750db98743dda87f07a1",
+  "preservation": {
+    "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md": "exact earlier prefix and owned append retained",
+    "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md": "exact earlier prefix and owned append retained",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md": "exact earlier prefix and owned append retained",
+    "experiments/market-generativity/formal/README.md": "exact earlier prefix and owned append retained",
+    "RESEARCH.md": "owned insertion retained; subsequent concurrent edits differ from pre-insertion snapshot",
+    "theories/shengsheng-buxi-generative-existence/README.md": "owned insertion retained; subsequent concurrent edits differ from pre-insertion snapshot",
+    "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md": "owned insertion retained; subsequent concurrent edits differ from pre-insertion snapshot",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md": "owned insertion retained; subsequent concurrent edits differ from pre-insertion snapshot",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md": "owned insertion retained; subsequent concurrent edits differ from pre-insertion snapshot"
+  },
+  "local_links_checked": 22,
+  "link_errors": [],
+  "actual_lean_receipt_matches_current_and_frozen_sources": true,
+  "new_theorems": 19,
+  "new_audits": 27,
+  "inherited_audits": 39,
+  "m20_matches_canonical_render": true,
+  "m20_exact_inverse_matches_snapshot": false,
+  "other_entries_preserved_at_write": true,
+  "other_rendered_lines_preserved_at_write": true,
+  "schema_link_errors": [],
+  "pending_separate_reviews": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-DRIFT-MARGINS-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-CONTINUATION-INTEGRATION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md"
+    ],
+    "removed_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md"
+    ]
+  },
+  "scope": "Owned documentary and proof-receipt checks only. Concurrent work retained. No new scientific run, independent acceptance, empirical validation or full-table freshness."
+}

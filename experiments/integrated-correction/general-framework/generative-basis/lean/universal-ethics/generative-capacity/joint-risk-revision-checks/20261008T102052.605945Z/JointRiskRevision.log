@@ -1,0 +1,4 @@
+JointRiskRevision.lean:125:74: error: failed to synthesize
+  Decidable (0 < (record Mode.shared).both ∧ WithinJointBound (record Mode.shared) 1)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.

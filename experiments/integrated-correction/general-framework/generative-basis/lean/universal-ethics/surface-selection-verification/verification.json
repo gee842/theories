@@ -1,0 +1,97 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-07T23:08:29.358137+00:00",
+  "version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "fresh_temporary_build": true,
+  "commands": [
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "--version"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "-o",
+      "SurfaceSelection.olean",
+      "SurfaceSelection.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "SurfaceSelectionAudit.lean"
+    ]
+  ],
+  "new_theorem_count": 7,
+  "declaration_audit_count": 11,
+  "axiom_dependencies": {
+    "SurfaceSelection.denominator": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SurfaceSelection.births": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SurfaceSelection.sNet": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SurfaceSelection.wNet": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SurfaceSelection.four_location_balance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SurfaceSelection.saturation_balance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SurfaceSelection.retained_growth_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SurfaceSelection.mutation_adjusted_balance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SurfaceSelection.gain_criterion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SurfaceSelection.source_rates_allow_slow_growth_gain": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SurfaceSelection.lower_dispersal_can_still_lose": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "checker_sha256": "aca008f2c5430c4d2cf0ba6ac680c81dd138eab0b398dabea2e4eff76982503f",
+  "source_sha256": {
+    "SurfaceSelection.lean": "924117330819afeb0b1e83495f094ee3cbfce202837373dd79c601985eeb3633",
+    "SurfaceSelectionAudit.lean": "4e1584911acff00eb3c13a88ea855139499a73b07859df9e8e71e19710a86ebc",
+    "lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2"
+  },
+  "log_sha256": {
+    "version.txt": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b",
+    "compiler.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axioms.txt": "ecb91ba03e53ae6f99c89c9482cab7cbb133b63836c053635020476f145373d6"
+  },
+  "scope": "Rational instantaneous balance and retained-growth criterion for the declared conventional surface model. ODE solutions, fixation, empirical calibration and biological causality are not proved."
+}

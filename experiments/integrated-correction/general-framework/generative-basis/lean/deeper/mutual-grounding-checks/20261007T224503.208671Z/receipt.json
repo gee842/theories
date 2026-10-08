@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "checked_at_utc": "20261007T224503.208671Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "compiler": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/MutualGrounding.lean",
+  "source_sha256": "207805dd9bc64f348bd255c5d7059600a613204c6d97f60f1533e3e9883917a9",
+  "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/mutual-grounding-checks/20261007T224503.208671Z/MutualGrounding.lean",
+  "log": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/mutual-grounding-checks/20261007T224503.208671Z/MutualGrounding.log",
+  "log_sha256": "bae92545e118615fa41ed13d5bd631052392c1a397adadf8596186fa8d845852",
+  "checker": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_mutual_grounding.py",
+  "checker_sha256": "e94fb2fd46db6e00c6b85f8552b4c99d15740e6da8a9ad399dacb8fabdd46109",
+  "source_unchanged_during_check": true,
+  "exit_code": 0,
+  "new_theorems": 10,
+  "empty_axiom_audits": [
+    "Generative.MutualGrounding.coupled_determines",
+    "Generative.MutualGrounding.coupled_from_profile",
+    "Generative.MutualGrounding.coupled_iff_profile",
+    "Generative.MutualGrounding.coupled_realized",
+    "Generative.MutualGrounding.coupled_profile_unique",
+    "Generative.MutualGrounding.occurrence_reading_equivalent",
+    "Generative.MutualGrounding.total_extension_conservative",
+    "Generative.MutualGrounding.canonical_extension_total",
+    "Generative.MutualGrounding.canonical_extension_unique",
+    "Generative.MutualGrounding.canonical_extension_conservative"
+  ],
+  "scope": "One new module, Std only; ten theorems audited. No ultimate grounding claim."
+}

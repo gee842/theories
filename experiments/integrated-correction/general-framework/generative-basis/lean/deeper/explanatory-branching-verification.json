@@ -1,0 +1,7 @@
+{
+  "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-branching-checks/20261007T233522.275247Z/receipt.json",
+  "passed": true,
+  "total_empty_axiom_audits": 103,
+  "total_declaration_audits": 141,
+  "total_standard_axiom_audits": 38
+}

@@ -56,9 +56,9 @@ theorem derivation_sound {World : Type u} {Index : Type v}
     intro w hb hc hp
     apply ih w hb
     intro r hr
-    cases List.mem_cons.mp hr with
-    | inl heq => exact heq ▸ hp
-    | inr ht => exact hc r ht
+    cases hr with
+    | head => exact hp
+    | tail _ ht => exact hc r ht
   | impElim _ _ ihf ihp => exact fun w hb hc => ihf w hb hc (ihp w hb hc)
   | andIntro _ _ ihp ihq => exact fun w hb hc => ⟨ihp w hb hc, ihq w hb hc⟩
   | andLeft _ ih => exact fun w hb hc => (ih w hb hc).1

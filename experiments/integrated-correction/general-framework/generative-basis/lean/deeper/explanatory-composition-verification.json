@@ -1,0 +1,7 @@
+{
+  "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-composition-checks/20261007T223124.386181Z/receipt.json",
+  "passed": true,
+  "total_empty_axiom_audits": 77,
+  "total_declaration_audits": 110,
+  "total_standard_axiom_audits": 33
+}

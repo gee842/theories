@@ -1,0 +1,115 @@
+{
+  "status": "passed_scoped_documentary_source_and_execution_bindings",
+  "checked_at_utc": "2026-10-07T23:02:15.567806+00:00",
+  "errors": [],
+  "local_links_checked": 82,
+  "document_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-SUFFICIENCY-INTEGRATION.md": "4a69a1804717f026dc82fd4ec7d72e7e2bdb3e25e8fe29439d52dce3b1a6cf0f",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-SUFFICIENCY-SOURCES.md": "0d67dd2bd60763379c91cb890fcccb148c39df40a0a2f987831136985fe0fa0b",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/KNOWLEDGE.md": "088fff29f9548b032260ac70a79160eca9269d3cab1fca4ea0b4bd6b55c55625",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PHILOSOPHICAL-ACCOUNT.md": "8ae4d585b90e2abe34b2481e234ec971c0b307b48db094081dcae545563176c8",
+    "sources/knowledge-semantics/README.md": "c47a6ea3bf6cdc73dac18d95bd5e7399930c8f67bf0bdb6f94f9eda4b6bce024",
+    "experiments/integrated-correction/general-framework/generative-basis/semantic-evidence/README.md": "a5071b2d1a33a65d00c3954f4dc8c4a9244bd75b088956bb126e2059ae13eca9",
+    "sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md": "d8165582f15f73f0c8386eca073d08fe09ac063329a7400ba2441f6d583156bd"
+  },
+  "checker_sha256": "2408d425ccb3d7943689c163c7af3417ca900b8fb8a89b1784c9627c71501798",
+  "original_source_bindings": {
+    "elife-30373-v2.json": true,
+    "elife-59998-v2.json": true,
+    "elife-59998-fig2-data1-v2.xlsx": true,
+    "elife-59998-fig3-data1-v2.xlsx": true
+  },
+  "analysis_execution_bindings": {
+    "experiments/integrated-correction/general-framework/generative-basis/semantic-evidence/check_source_data.py": true,
+    "experiments/integrated-correction/general-framework/generative-basis/semantic-evidence/inspect_source.mjs": true,
+    "experiments/integrated-correction/general-framework/generative-basis/semantic-evidence/source-extracts/figure2.json": true,
+    "experiments/integrated-correction/general-framework/generative-basis/semantic-evidence/source-extracts/figure3.json": true
+  },
+  "numerical_receipt": "experiments/integrated-correction/general-framework/generative-basis/semantic-evidence/verification.json",
+  "numerical_receipt_sha256": "9ad7e2d59fa662432fd9fd83b2617832c99dde4add0a743ef4b7ecaf85a6bc19",
+  "selected_statistic_reproductions": 4,
+  "new_mathematical_theorems": 0,
+  "new_experiments": 0,
+  "new_lean_compiler_run": false,
+  "independent_agent_acceptance": false,
+  "inherited_proof_bindings": [
+    {
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/knowledge-correspondence-verification.json",
+      "sha256": "711a066774cb41772c36dd007cd9a81e798836b2f8ff9d28a78a41785b4dbfca",
+      "bindings": {
+        "receipt_passed": true,
+        "current_source": true,
+        "current_checker": true,
+        "frozen_source": true,
+        "frozen_checker": true,
+        "frozen_receipt": true,
+        "compile.txt": true,
+        "axioms.txt": true
+      },
+      "theorems": 20,
+      "declarations": 34,
+      "scope": "Exact answers relative to supplied domains, evidence and target meanings; abstract decoder existence uses classical choice. No general definition of knowledge, empirical calibration, cognitive uptake or G0 necessity is proved."
+    },
+    {
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/inquiry-adequacy-verification.json",
+      "sha256": "b80fc3af2c1d70746fe0613b234ac26cf1026cfcb34ed0c34b41377c25b81a00",
+      "bindings": {
+        "receipt_passed": true,
+        "current_source": true,
+        "current_checker": true,
+        "frozen_source": true,
+        "frozen_checker": true,
+        "frozen_receipt": true,
+        "compile.txt": true,
+        "axioms.txt": true
+      },
+      "theorems": 8,
+      "declarations": 13,
+      "scope": "Common admissible choices within supplied evidence classes; policy lifting preserves a fixed requirement relation. Truthful inquiry can enable targeted action or miss a supplied deadline. Classical choice is used for abstract policy existence. No ethical warrant, empirical correspondence, probability calibration or general induction is proved."
+    }
+  ],
+  "chain": {
+    "owned_entry": "M21",
+    "paired_row_matches": true,
+    "source_versions": {
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-SUFFICIENCY-INTEGRATION.md": true,
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-SUFFICIENCY-SOURCES.md": true,
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PHILOSOPHICAL-ACCOUNT.md": true,
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-INQUIRY-AND-STANDING.md": true,
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-PHILOSOPHY-COMPLETION.md": true,
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/KNOWLEDGE.md": true,
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/G0-AND-KNOWLEDGE.md": true,
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-PROJECTION-AND-RISK.md": true,
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-PRIORITIES-AND-G0.md": true,
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-ADEQUACY-CORRESPONDENCE.md": true,
+      "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/inquiry-adequacy-verification.json": true,
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-AND-GENERATIVE-WARRANT.md": true,
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-REVISION-AND-OBJECTIVITY.md": true,
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-CONTENT-AND-ERROR.md": true,
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-REASONS-AND-STANDARDS.md": true,
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-UPTAKE-AND-ERROR.md": true,
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-SOURCES.md": true,
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-CORRESPONDENCE.md": true,
+      "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/KnowledgeCorrespondence.lean": true,
+      "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/knowledge-correspondence-verification.json": true,
+      "sources/15-codex-theory-conversations/2026-10-08-g0-and-knowledge.md": true,
+      "sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md": true
+    },
+    "remaining_changes": {
+      "modified_sources": [
+        "RESEARCH.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+        "theories/shengsheng-buxi-generative-existence/README.md"
+      ],
+      "missing_sources": [],
+      "new_pages": [
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-COMPARATIVE-DIRECTION.md"
+      ],
+      "removed_pages": []
+    },
+    "validation_errors": [],
+    "full_table_current": false
+  },
+  "scope": "Checks establish local preservation, reported numerical reproduction bindings and navigation. Philosophical sufficiency, consciousness and whole-theory necessity remain open. The active frontier goal is not marked complete."
+}

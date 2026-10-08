@@ -1,0 +1,33 @@
+NormativeActivity.lean:146:19: warning: unused variable `cs`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+NormativeActivity.lean:179:2: error: failed to synthesize
+  Decidable (learned.judgment = some false ∧ CurrentCorrect learned ∧ learned.work = 0)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+NormativeActivity.lean:189:4: error: failed to synthesize
+  Decidable (changed.judgment = some false ∧ target changed = true ∧ ¬CurrentCorrect changed)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+NormativeActivity.lean:236:62: error: failed to synthesize
+  Decidable
+    (CurrentCorrect (run [Event.reopen, Event.inspect, Event.takeUp] changed) ∧
+      (run [Event.reopen, Event.inspect, Event.takeUp] changed).judgment = some true ∧
+        (run [Event.reopen, Event.inspect, Event.takeUp] changed).budget = 0 ∧
+          (run [Event.reopen, Event.inspect, Event.takeUp] changed).work = 0)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+NormativeActivity.lean:239:60: error: failed to synthesize
+  Decidable ¬CurrentCorrect (run [Event.reopen, Event.takeUp] changed)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+NormativeActivity.lean:242:89: error: failed to synthesize
+  Decidable
+    ¬CurrentCorrect
+        (run [Event.reopen, Event.inspect, Event.takeUp]
+          (let __src := changed;
+          { specimen := __src.specimen, reference := __src.reference, receipt := __src.receipt,
+            judgment := __src.judgment, inspectionOpen := __src.inspectionOpen, budget := 0, work := __src.work,
+            repetitions := __src.repetitions }))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.

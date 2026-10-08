@@ -19,35 +19,50 @@ def ThresholdAvailable (n k : Nat) : Prop :=
   ∃ decoder : Nat → Bool,
     ∀ hidden, decoder (clippedObservation n hidden) = decide (hidden ≤ k)
 
+/-- A constructive reproof of the existing Unit-list length fact, used to
+avoid extensionality-bearing simplification in the original contracts. -/
+theorem unit_replicate_length (n : Nat) : (List.replicate n ()).length = n := by
+  induction n with
+  | zero => rfl
+  | succ n ih => exact congrArg Nat.succ ih
+
 theorem threshold_available_iff (n k : Nat) : ThresholdAvailable n k ↔ k < n := by
+  have minRight : ∀ a b : Nat, b ≤ a → min a b = b := by
+    intro a b hba
+    by_cases hab : a ≤ b
+    · exact (Nat.min_eq_left hab).trans (Nat.le_antisymm hab hba)
+    · exact if_neg hab
   constructor
   · rintro ⟨decoder, correct⟩
-    by_cases hn : k < n
-    · exact hn
-    have hn' : n ≤ k := by omega
-    have h0 : decoder n = true := by
-      simpa [clippedObservation, Nat.min_eq_right hn'] using correct k
-    have hn1 : n ≤ k + 1 := by omega
-    have hkfalse : ¬ k + 1 ≤ k := by omega
-    have h1 : decoder n = false := by
-      simpa [clippedObservation, Nat.min_eq_right hn1, hkfalse] using correct (k + 1)
-    rw [h0] at h1
-    cases h1
+    by_cases hkn : k < n
+    · exact hkn
+    have hnk : n ≤ k := Nat.le_of_not_gt hkn
+    have h0 : decoder n = true :=
+      (congrArg decoder (minRight k n hnk)).symm.trans
+        ((correct k).trans (decide_eq_true (Nat.le_refl k)))
+    have h1 : decoder n = false :=
+      (congrArg decoder (minRight (k + 1) n (Nat.le_trans hnk (Nat.le_succ k)))).symm.trans
+        ((correct (k + 1)).trans (decide_eq_false (Nat.not_succ_le_self k)))
+    exact Bool.noConfusion (h0.symm.trans h1)
   · intro hkn
     refine ⟨fun signal => decide (signal ≤ k), ?_⟩
     intro hidden
-    simp only [clippedObservation, decide_eq_decide]
-    omega
+    by_cases hhn : hidden ≤ n
+    · exact congrArg (fun value => decide (value ≤ k)) (Nat.min_eq_left hhn)
+    · have hhk : ¬ hidden ≤ k := fun h => hhn (Nat.le_trans h (Nat.le_of_lt hkn))
+      have hnFalse : decide (n ≤ k) = false := decide_eq_false (Nat.not_le_of_gt hkn)
+      exact (congrArg (fun value => decide (value ≤ k)) (minRight hidden n
+        (Nat.le_of_lt (Nat.lt_of_not_le hhn)))).trans
+          (hnFalse.trans (decide_eq_false hhk).symm)
 
 theorem every_threshold_has_a_finite_realization (k : Nat) :
     ThresholdAvailable (k + 1) k :=
-  (threshold_available_iff _ _).mpr (by omega)
+  (threshold_available_iff _ _).mpr (Nat.lt_succ_self k)
 
 theorem next_threshold_exceeds_that_realization (k : Nat) :
     ¬ ThresholdAvailable (k + 1) (k + 1) := by
   intro h
-  have := (threshold_available_iff _ _).mp h
-  omega
+  exact Nat.not_succ_le_self (k + 1) ((threshold_available_iff _ _).mp h)
 
 /-- For any two different query thresholds there is a capacity that separates
     their answerability. No assertion that one finite observer answers them all. -/
@@ -55,8 +70,7 @@ theorem threshold_capability_sets_pairwise_distinct {k l : Nat} (hkl : k < l) :
     ∃ n, ThresholdAvailable n k ∧ ¬ ThresholdAvailable n l := by
   refine ⟨k + 1, every_threshold_has_a_finite_realization k, ?_⟩
   intro h
-  have := (threshold_available_iff _ _).mp h
-  omega
+  exact Nat.not_succ_le_self l (Nat.le_trans ((threshold_available_iff _ _).mp h) hkl)
 
 def spendingProcess : Generative.Process Nat Unit where
   step s _ t := s = t + 1
@@ -64,40 +78,44 @@ def spendingProcess : Generative.Process Nat Unit where
 theorem spending_trace_iff (s t : Nat) (actions : List Unit) :
     Generative.Trace spendingProcess s actions t ↔ s = t + actions.length := by
   induction actions generalizing s with
-  | nil => simpa using (Generative.trace_nil_iff (P := spendingProcess) (s := s) (t := t))
+  | nil => exact Generative.trace_nil_iff
   | cons a rest ih =>
-    rw [Generative.trace_cons_iff]
     constructor
-    · rintro ⟨middle, hstep, htail⟩
+    · intro history
+      obtain ⟨middle, hstep, htail⟩ := Generative.trace_cons_iff.mp history
       have hs : s = middle + 1 := hstep
-      have hm := (ih middle).mp htail
-      simp only [List.length_cons]
-      omega
+      have hm : middle = t + rest.length := (ih middle).mp htail
+      exact hs.trans ((congrArg (fun value => value + 1) hm).trans
+        (Nat.add_assoc t rest.length 1))
     · intro h
-      refine ⟨t + rest.length, ?_, (ih _).mpr rfl⟩
-      change s = t + rest.length + 1
-      simpa only [List.length_cons, Nat.add_assoc] using h
+      exact Generative.Trace.cons
+        (m := t + rest.length) (h.trans (Nat.add_assoc t rest.length 1).symm)
+        ((ih _).mpr rfl)
 
 theorem spending_feasible_iff (fuel : Nat) (actions : List Unit) :
     Generative.Feasible spendingProcess fuel actions ↔ actions.length ≤ fuel := by
   constructor
   · rintro ⟨remaining, htrace⟩
     exact Generative.trace_length_bound (fun n => n)
-      (fun s _ t hs => by change s = t + 1 at hs; change t < s; omega) htrace
+      (fun s _ t hs => by
+        change s = t + 1 at hs
+        exact hs.symm ▸ Nat.lt_succ_self t) htrace
   · intro h
-    refine ⟨fuel - actions.length, (spending_trace_iff _ _ _).mpr ?_⟩
-    omega
+    obtain ⟨remaining, sum⟩ := Nat.le.dest h
+    exact ⟨remaining, (spending_trace_iff _ _ _).mpr
+      (sum.symm.trans (Nat.add_comm actions.length remaining))⟩
 
 theorem every_budget_excludes_a_different_horizon (fuel : Nat) :
     Generative.Feasible spendingProcess fuel (List.replicate fuel ()) ∧
     ¬ Generative.Feasible spendingProcess fuel (List.replicate (fuel + 1) ()) := by
   constructor
   · apply (spending_feasible_iff _ _).mpr
-    simp
+    exact Eq.mp (congrArg (fun length => length ≤ fuel)
+      (unit_replicate_length fuel).symm) (Nat.le_refl fuel)
   · intro h
     have bound := (spending_feasible_iff _ _).mp h
-    simp only [List.length_replicate] at bound
-    omega
+    exact Nat.not_succ_le_self fuel (Eq.mp
+      (congrArg (fun length => length ≤ fuel) (unit_replicate_length (fuel + 1))) bound)
 
 structure InquiryScenario where
   capacity : Nat
@@ -120,8 +138,9 @@ theorem local_basis_valid (i : Bool) (w : InquiryScenario) : localBasis i w := b
   | false => exact (threshold_available_iff _ _).mp
   | true =>
     intro h
-    simpa [repeatedTask, List.length_replicate] using
-      (spending_feasible_iff w.fuel (List.replicate w.horizon ())).mp h
+    exact Eq.mp (congrArg (fun length => length ≤ w.fuel)
+      (unit_replicate_length w.horizon))
+      ((spending_feasible_iff w.fuel (List.replicate w.horizon ())).mp h)
 
 /-- The inherited closed theory propagates both informative local constraints
     through every finite descendant, not just the particular examples below. -/
@@ -135,8 +154,8 @@ theorem combined_capability_descendant : Derives localBasis
     [observationTask, repeatedTask]
     (fun w => w.threshold < w.capacity ∧ w.horizon ≤ w.fuel) := by
   apply Derives.andIntro
-  · exact .impElim (.base false) (.assumption (by simp))
-  · exact .impElim (.base true) (.assumption (by simp))
+  · exact .impElim (.base false) (.assumption (.head _))
+  · exact .impElim (.base true) (.assumption (.tail _ (.head _)))
 
 theorem combined_capability_implication_in_closed_theory : Derives localBasis []
     (fun w => observationTask w → repeatedTask w →
@@ -144,8 +163,8 @@ theorem combined_capability_implication_in_closed_theory : Derives localBasis []
   apply Derives.impIntro
   apply Derives.impIntro
   apply Derives.andIntro
-  · exact .impElim (.base false) (.assumption (by simp))
-  · exact .impElim (.base true) (.assumption (by simp))
+  · exact .impElim (.base false) (.assumption (.tail _ (.head _)))
+  · exact .impElim (.base true) (.assumption (.head _))
 
 /-- Two finite formulas contain uniformly quantified operational law contracts.
     Their instances below are derived by a finite quantifier-elimination rule. -/
@@ -159,7 +178,8 @@ theorem uniform_basis_valid (i : Bool) (w : InquiryScenario) : uniformBasis i w 
   | false => exact fun _ => (threshold_available_iff _ _).mp
   | true =>
     intro n h
-    simpa only [List.length_replicate] using (spending_feasible_iff _ _).mp h
+    exact Eq.mp (congrArg (fun length => length ≤ w.fuel)
+      (unit_replicate_length n)) ((spending_feasible_iff _ _).mp h)
 
 theorem entire_uniform_closure_valid {p : Formula InquiryScenario}
     (proof : Derives uniformBasis [] p) : ∀ w, p w := by
@@ -180,6 +200,7 @@ theorem every_support_contract_is_a_descendant (n : Nat) :
   .allNatElim (p := fun (n : Nat) (w : InquiryScenario) => Generative.Feasible spendingProcess w.fuel
     (List.replicate n ()) → n ≤ w.fuel) n (.base true)
 
+#print axioms InquiryRoot.unit_replicate_length
 #print axioms InquiryRoot.threshold_available_iff
 #print axioms InquiryRoot.every_threshold_has_a_finite_realization
 #print axioms InquiryRoot.next_threshold_exceeds_that_realization

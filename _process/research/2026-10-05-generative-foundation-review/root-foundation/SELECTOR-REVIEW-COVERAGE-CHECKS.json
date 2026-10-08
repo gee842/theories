@@ -1,0 +1,545 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T09:12:46.309905+00:00",
+  "scope": "Owned links, source versions, frozen/current proof bindings and bilingual M20. Independent philosophical review is a separate document; no full-table freshness claim.",
+  "checker_sha256": "5b59ec4cef7ef15b7b3933c63ff57219e6d995e4e3db5e5b838a2b9cd4a2c287",
+  "owned_reviewed_sources": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-PROTOCOL.md": "234a065740deda69efc6bd6c2b3b6c70f88c72852082169c3c482c03a1e2fed9",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-ARGUMENT.md": "b626b99fa1bc535aa1cdc5b7ee4267e64e171143a62e4400e08930227fd50119",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-PROOF.md": "b3c8b3b26f7a8cd6fe06374f741a4be22d8172a6e9af1a834931271e619889cf",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-REVIEW.md": "6abc2ee9e5ae71414208ffc455d6afe913a317b2879600e661a2a1e71055a1d5",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-SOURCES.md": "aef3290a45fd43d19f1ae7e018adfa70e774ae11b8fe0c82deb5562d4cdb8002",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-INTEGRATION.md": "1d7321994f4bd6ec8726d7b6fbb349921598d73d4eb79b57454ab0f104cda6e2",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-STRUCTURAL-COVERAGE-PROOF.md": "748b4ee3120ca676a5d2ca2ee39f8388d08bec633659e4e5b264e68d3f5de2f4"
+  },
+  "local_links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-PROTOCOL.md",
+      "to": "../../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-PROTOCOL.md",
+      "to": "../../../../sources/15-codex-theory-conversations/2026-10-08-alignment-grounding-axiom-correction.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-PROTOCOL.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-PROTOCOL.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-PROTOCOL.md",
+      "to": "CONCERN-EXTENSION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-PROTOCOL.md",
+      "to": "EVALUATIVE-EXTENSION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-PROTOCOL.md",
+      "to": "SHARED-INQUIRY-AND-STANDING.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-PROTOCOL.md",
+      "to": "MODEL-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-PROTOCOL.md",
+      "to": "REFORM-EVIDENCE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-PROTOCOL.md",
+      "to": "ALIGNMENT-CONTINUITY-PROTOCOL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-ARGUMENT.md",
+      "to": "../../../../sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-ARGUMENT.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-ARGUMENT.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-ARGUMENT.md",
+      "to": "SHARED-INQUIRY-AND-STANDING.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-ARGUMENT.md",
+      "to": "MODEL-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-ARGUMENT.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-ARGUMENT.md",
+      "to": "CONCERN-EXTENSION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-ARGUMENT.md",
+      "to": "EVALUATIVE-EXTENSION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-ARGUMENT.md",
+      "to": "UNIVERSAL-METAETHICS-LEAN-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-PROOF.md",
+      "to": "SELECTOR-REVIEW-COVERAGE-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-PROOF.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-PROOF.md",
+      "to": "SELECTOR-STRUCTURAL-COVERAGE-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-PROOF.md",
+      "to": "EVALUATIVE-EXTENSION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-PROOF.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/SelectorReviewCoverage.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-PROOF.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_selector_review_coverage.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-PROOF.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/selector-review-coverage-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-REVIEW.md",
+      "to": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-REVIEW.md",
+      "to": "EVALUATIVE-EXTENSION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-REVIEW.md",
+      "to": "INQUIRY-ADEQUACY-CORRESPONDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-REVIEW.md",
+      "to": "MODEL-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-REVIEW.md",
+      "to": "REFORM-EVIDENCE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-REVIEW.md",
+      "to": "CORRECTION-INFRASTRUCTURE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-REVIEW.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/WholePracticalRestriction.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-REVIEW.md",
+      "to": "SELECTOR-REVIEW-COVERAGE-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-REVIEW.md",
+      "to": "SELECTOR-REVIEW-COVERAGE-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-REVIEW.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/SelectorReviewCoverage.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-REVIEW.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_selector_review_coverage.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-REVIEW.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/selector-review-coverage-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-REVIEW.md",
+      "to": "SELECTOR-STRUCTURAL-COVERAGE-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-REVIEW.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/SelectorStructuralCoverage.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-REVIEW.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_selector_structural_coverage.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-REVIEW.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/selector-structural-coverage-verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-REVIEW.md",
+      "to": "SELECTOR-REVIEW-COVERAGE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-SOURCES.md",
+      "to": "SELECTOR-REVIEW-COVERAGE-PROTOCOL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-SOURCES.md",
+      "to": "EVALUATIVE-EXTENSION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-SOURCES.md",
+      "to": "SHARED-INQUIRY-AND-STANDING.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-SOURCES.md",
+      "to": "MODEL-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-SOURCES.md",
+      "to": "REFORM-EVIDENCE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-SOURCES.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/WholePracticalRestriction.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-INTEGRATION.md",
+      "to": "SELECTOR-REVIEW-COVERAGE-PROTOCOL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-INTEGRATION.md",
+      "to": "ALIGNMENT-DIRECTION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-INTEGRATION.md",
+      "to": "PRACTICAL-JUDGMENT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-INTEGRATION.md",
+      "to": "CONCERN-EXTENSION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-INTEGRATION.md",
+      "to": "EVALUATIVE-EXTENSION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-INTEGRATION.md",
+      "to": "SHARED-INQUIRY-AND-STANDING.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-INTEGRATION.md",
+      "to": "MODEL-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-INTEGRATION.md",
+      "to": "REFORM-EVIDENCE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-INTEGRATION.md",
+      "to": "ALIGNMENT-CONTINUITY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-INTEGRATION.md",
+      "to": "SELECTOR-REVIEW-COVERAGE-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-INTEGRATION.md",
+      "to": "SELECTOR-REVIEW-COVERAGE-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-INTEGRATION.md",
+      "to": "SELECTOR-REVIEW-COVERAGE-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-INTEGRATION.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/SelectorReviewCoverage.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-INTEGRATION.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/SelectorStructuralCoverage.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-INTEGRATION.md",
+      "to": "SELECTOR-REVIEW-COVERAGE-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-INTEGRATION.md",
+      "to": "SELECTOR-STRUCTURAL-COVERAGE-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-INTEGRATION.md",
+      "to": "SELECTOR-REVIEW-COVERAGE-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-INTEGRATION.md",
+      "to": "SELECTOR-REVIEW-COVERAGE-SOURCES.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-STRUCTURAL-COVERAGE-PROOF.md",
+      "to": "SELECTOR-REVIEW-COVERAGE-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-STRUCTURAL-COVERAGE-PROOF.md",
+      "to": "MODEL-REVISION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-STRUCTURAL-COVERAGE-PROOF.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/WholePracticalRestriction.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-STRUCTURAL-COVERAGE-PROOF.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/SelectorStructuralCoverage.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-STRUCTURAL-COVERAGE-PROOF.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_selector_structural_coverage.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-STRUCTURAL-COVERAGE-PROOF.md",
+      "to": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/selector-structural-coverage-verification.json"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-PROOF.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-REVIEW.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "to": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-INTEGRATION.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "to": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#changing-the-conditions-of-review"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "to": "unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#changing-the-conditions-of-review"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "to": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "SELECTOR-REVIEW-COVERAGE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "SELECTOR-REVIEW-COVERAGE-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "to": "SELECTOR-REVIEW-COVERAGE-REVIEW.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "ALIGNMENT-AND-GOVERNANCE.md#changing-the-conditions-of-review"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "to": "../unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#changing-the-conditions-of-review"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "to": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "to": "SELECTOR-REVIEW-COVERAGE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "to": "SELECTOR-REVIEW-COVERAGE-PROOF.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "to": "SELECTOR-REVIEW-COVERAGE-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "to": "SELECTOR-REVIEW-COVERAGE-INDEX-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "to": "SELECTOR-REVIEW-COVERAGE-CHECKS.json"
+    }
+  ],
+  "proof_receipts": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/selector-review-coverage-verification.json",
+      "sha256": "1e3095b15e2df64303f6d068b494da44e1d9d0641eecf5992999c6851bb5c0e5",
+      "retained_artifacts": 15
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/selector-structural-coverage-verification.json",
+      "sha256": "60f0e700055ae65760c492e93a970a69b7c1015fd6603ea0c911abc2edb43b62",
+      "retained_artifacts": 21
+    }
+  ],
+  "new_modules": {
+    "SelectorReviewCoverage": {
+      "theorems": 18,
+      "explicit_audits": 35,
+      "axiom_dependencies": {
+        "SelectorReviewCoverage.PossibleDefeat": [],
+        "SelectorReviewCoverage.Clear": [],
+        "SelectorReviewCoverage.CertificateCoverage": [],
+        "SelectorReviewCoverage.clear_iff_no_possible_defeat": [],
+        "SelectorReviewCoverage.coverage_iff_certificate_transport": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SelectorReviewCoverage.pairwise_reflection_suffices": [],
+        "SelectorReviewCoverage.certificate_coverage_composes": [],
+        "SelectorReviewCoverage.all_menus_coverage_iff_pairwise_reflection": [],
+        "SelectorReviewCoverage.objectionSummary": [],
+        "SelectorReviewCoverage.objection_summary_preserves_exact_certificate": [],
+        "SelectorReviewCoverage.Plan": [],
+        "SelectorReviewCoverage.protection": [],
+        "SelectorReviewCoverage.gain": [],
+        "SelectorReviewCoverage.comparison": [],
+        "SelectorReviewCoverage.fullLive": [],
+        "SelectorReviewCoverage.oldMenu": [],
+        "SelectorReviewCoverage.enlargedMenu": [],
+        "SelectorReviewCoverage.compressed": [],
+        "SelectorReviewCoverage.output_defeats_routine_in_both_applications": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SelectorReviewCoverage.compression_is_exact_on_old_menu": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SelectorReviewCoverage.compressed_review_covers_old_menu": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SelectorReviewCoverage.expanded_menu_retains_compressed_output_certificate": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SelectorReviewCoverage.new_repair_defeats_output_in_omitted_application": [
+          "propext"
+        ],
+        "SelectorReviewCoverage.menu_growth_breaks_old_certificate_coverage": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SelectorReviewCoverage.repair_keeps_real_output_loss": [
+          "propext"
+        ],
+        "SelectorReviewCoverage.restored_summary_rejects_output_certificate": [
+          "propext"
+        ],
+        "SelectorReviewCoverage.prefixProtection": [],
+        "SelectorReviewCoverage.prefixGain": [],
+        "SelectorReviewCoverage.prefixComparison": [],
+        "SelectorReviewCoverage.prefixMenu": [],
+        "SelectorReviewCoverage.prefixCompressed": [],
+        "SelectorReviewCoverage.finite_audit_protection_profiles_agree": [
+          "propext"
+        ],
+        "SelectorReviewCoverage.prefix_pairwise_comparison": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SelectorReviewCoverage.every_finite_prefix_has_exact_compression": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SelectorReviewCoverage.every_finite_prefix_has_a_failing_next_plan": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    },
+    "SelectorStructuralCoverage": {
+      "theorems": 5,
+      "explicit_audits": 7,
+      "axiom_dependencies": {
+        "SelectorStructuralCoverage.lower_intensity_favored_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SelectorStructuralCoverage.threshold_all_menu_coverage_iff_capacity_inclusion": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SelectorStructuralCoverage.two_extreme_reviews_miss_middle_objection": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SelectorStructuralCoverage.probe": [],
+        "SelectorStructuralCoverage.fitsAdjacentProbes": [],
+        "SelectorStructuralCoverage.two_adjacent_probes_identify_capacity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SelectorStructuralCoverage.two_probes_give_exact_certificate_on_every_menu": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    }
+  },
+  "new_theorems": 23,
+  "new_explicit_audits": 42,
+  "inherited_practical_theorems": 30,
+  "inherited_practical_audits": 46,
+  "paired_row": "M20",
+  "other_entries_preserved_at_mutation": true,
+  "other_rendered_lines_preserved_at_mutation": true,
+  "scoped_render": "Same canonical renderer; only M20 line replaced, other lines retained.",
+  "global_check": {
+    "exit_code": 2,
+    "stdout": "{\n  \"status\": \"needs-review\",\n  \"errors\": [\n    \"Linked source versions changed; reread affected entries before rendering.\"\n  ],\n  \"changes\": {\n    \"modified_sources\": [\n      \"RESEARCH.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md\",\n      \"sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md\",\n      \"theories/shengsheng-buxi-generative-existence/README.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md\",\n      \"theories/shengsheng-buxi-generative-existence/results/ROADMAP.md\",\n      \"theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-ARGUMENT.md\",\n      \"_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md\"\n    ],\n    \"missing_sources\": [],\n    \"new_pages\": [],\n    \"removed_pages\": []\n  }\n}\n",
+    "stderr": ""
+  },
+  "pending_global_changes": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-ARGUMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [],
+    "removed_pages": []
+  }
+}

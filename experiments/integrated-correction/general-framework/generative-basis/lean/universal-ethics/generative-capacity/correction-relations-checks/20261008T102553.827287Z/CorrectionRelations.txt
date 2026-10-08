@@ -1,0 +1,16 @@
+CorrectionRelations.lean:187:31: error: Tactic `rfl` failed: The left-hand side
+  Parity ([] ++ ys)
+is not definitionally equal to the right-hand side
+  Parity [] ^^ false
+
+case nil.false
+ys : List Bool
+⊢ Parity ([] ++ ys) = (Parity [] ^^ false)
+CorrectionRelations.lean:187:31: error: Tactic `rfl` failed: The left-hand side
+  Parity ([] ++ ys)
+is not definitionally equal to the right-hand side
+  Parity [] ^^ true
+
+case nil.true
+ys : List Bool
+⊢ Parity ([] ++ ys) = (Parity [] ^^ true)

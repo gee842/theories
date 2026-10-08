@@ -1,0 +1,66 @@
+{
+  "baseline_receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/closure-repair-checks/20261008T092433.449818Z-after/receipt.json",
+  "baseline_receipt_sha256": "015d6af3b074b3c4dcb3e7735b129791ef97f1b5407f3876dad51f27e68ef825",
+  "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/InquiryFamilies.lean",
+  "before_sha256": "9b8ccc77d1f3fc7c2c4731312dc416a50bbb3079320e0571994fe43965547a75",
+  "after_sha256": "15464fab457e25df3815b0473c62eefd2a3e8aca5a9f3f269811415001511ec6",
+  "proof_replacements": [
+    {
+      "theorem": "threshold_available_iff",
+      "old_body": "  constructor\n  \u00b7 rintro \u27e8decoder, correct\u27e9\n    by_cases hn : k < n\n    \u00b7 exact hn\n    have hn' : n \u2264 k := by omega\n    have h0 : decoder n = true := by\n      simpa [clippedObservation, Nat.min_eq_right hn'] using correct k\n    have hn1 : n \u2264 k + 1 := by omega\n    have hkfalse : \u00ac k + 1 \u2264 k := by omega\n    have h1 : decoder n = false := by\n      simpa [clippedObservation, Nat.min_eq_right hn1, hkfalse] using correct (k + 1)\n    rw [h0] at h1\n    cases h1\n  \u00b7 intro hkn\n    refine \u27e8fun signal => decide (signal \u2264 k), ?_\u27e9\n    intro hidden\n    simp only [clippedObservation, decide_eq_decide]\n    omega\n",
+      "new_body": "  have minRight : \u2200 a b : Nat, b \u2264 a \u2192 min a b = b := by\n    intro a b hba\n    by_cases hab : a \u2264 b\n    \u00b7 exact (Nat.min_eq_left hab).trans (Nat.le_antisymm hab hba)\n    \u00b7 exact if_neg hab\n  constructor\n  \u00b7 rintro \u27e8decoder, correct\u27e9\n    by_cases hkn : k < n\n    \u00b7 exact hkn\n    have hnk : n \u2264 k := Nat.le_of_not_gt hkn\n    have h0 : decoder n = true :=\n      (congrArg decoder (minRight k n hnk)).symm.trans\n        ((correct k).trans (decide_eq_true (Nat.le_refl k)))\n    have h1 : decoder n = false :=\n      (congrArg decoder (minRight (k + 1) n (Nat.le_trans hnk (Nat.le_succ k)))).symm.trans\n        ((correct (k + 1)).trans (decide_eq_false (Nat.not_succ_le_self k)))\n    exact Bool.noConfusion (h0.symm.trans h1)\n  \u00b7 intro hkn\n    refine \u27e8fun signal => decide (signal \u2264 k), ?_\u27e9\n    intro hidden\n    by_cases hhn : hidden \u2264 n\n    \u00b7 exact congrArg (fun value => decide (value \u2264 k)) (Nat.min_eq_left hhn)\n    \u00b7 have hhk : \u00ac hidden \u2264 k := fun h => hhn (Nat.le_trans h (Nat.le_of_lt hkn))\n      have hnFalse : decide (n \u2264 k) = false := decide_eq_false (Nat.not_le_of_gt hkn)\n      exact (congrArg (fun value => decide (value \u2264 k)) (minRight hidden n\n        (Nat.le_of_lt (Nat.lt_of_not_le hhn)))).trans\n          (hnFalse.trans (decide_eq_false hhk).symm)\n"
+    },
+    {
+      "theorem": "next_threshold_exceeds_that_realization",
+      "old_body": "  intro h\n  have := (threshold_available_iff _ _).mp h\n  omega\n",
+      "new_body": "  intro h\n  exact Nat.not_succ_le_self (k + 1) ((threshold_available_iff _ _).mp h)\n"
+    },
+    {
+      "theorem": "threshold_capability_sets_pairwise_distinct",
+      "old_body": "  refine \u27e8k + 1, every_threshold_has_a_finite_realization k, ?_\u27e9\n  intro h\n  have := (threshold_available_iff _ _).mp h\n  omega\n",
+      "new_body": "  refine \u27e8k + 1, every_threshold_has_a_finite_realization k, ?_\u27e9\n  intro h\n  exact Nat.not_succ_le_self l (Nat.le_trans ((threshold_available_iff _ _).mp h) hkl)\n"
+    },
+    {
+      "theorem": "spending_trace_iff",
+      "old_body": "  induction actions generalizing s with\n  | nil => simpa using (Generative.trace_nil_iff (P := spendingProcess) (s := s) (t := t))\n  | cons a rest ih =>\n    rw [Generative.trace_cons_iff]\n    constructor\n    \u00b7 rintro \u27e8middle, hstep, htail\u27e9\n      have hs : s = middle + 1 := hstep\n      have hm := (ih middle).mp htail\n      simp only [List.length_cons]\n      omega\n    \u00b7 intro h\n      refine \u27e8t + rest.length, ?_, (ih _).mpr rfl\u27e9\n      change s = t + rest.length + 1\n      simpa only [List.length_cons, Nat.add_assoc] using h\n",
+      "new_body": "  induction actions generalizing s with\n  | nil => exact Generative.trace_nil_iff\n  | cons a rest ih =>\n    constructor\n    \u00b7 intro history\n      obtain \u27e8middle, hstep, htail\u27e9 := Generative.trace_cons_iff.mp history\n      have hs : s = middle + 1 := hstep\n      have hm : middle = t + rest.length := (ih middle).mp htail\n      exact hs.trans ((congrArg (fun value => value + 1) hm).trans\n        (Nat.add_assoc t rest.length 1))\n    \u00b7 intro h\n      exact Generative.Trace.cons\n        (m := t + rest.length) (h.trans (Nat.add_assoc t rest.length 1).symm)\n        ((ih _).mpr rfl)\n"
+    },
+    {
+      "theorem": "spending_feasible_iff",
+      "old_body": "  constructor\n  \u00b7 rintro \u27e8remaining, htrace\u27e9\n    exact Generative.trace_length_bound (fun n => n)\n      (fun s _ t hs => by change s = t + 1 at hs; change t < s; omega) htrace\n  \u00b7 intro h\n    refine \u27e8fuel - actions.length, (spending_trace_iff _ _ _).mpr ?_\u27e9\n    omega\n",
+      "new_body": "  constructor\n  \u00b7 rintro \u27e8remaining, htrace\u27e9\n    exact Generative.trace_length_bound (fun n => n)\n      (fun s _ t hs => by\n        change s = t + 1 at hs\n        exact hs.symm \u25b8 Nat.lt_succ_self t) htrace\n  \u00b7 intro h\n    obtain \u27e8remaining, sum\u27e9 := Nat.le.dest h\n    exact \u27e8remaining, (spending_trace_iff _ _ _).mpr\n      (sum.symm.trans (Nat.add_comm actions.length remaining))\u27e9\n"
+    },
+    {
+      "theorem": "every_budget_excludes_a_different_horizon",
+      "old_body": "  constructor\n  \u00b7 apply (spending_feasible_iff _ _).mpr\n    simp\n  \u00b7 intro h\n    have bound := (spending_feasible_iff _ _).mp h\n    simp only [List.length_replicate] at bound\n    omega\n",
+      "new_body": "  constructor\n  \u00b7 apply (spending_feasible_iff _ _).mpr\n    exact Eq.mp (congrArg (fun length => length \u2264 fuel)\n      (unit_replicate_length fuel).symm) (Nat.le_refl fuel)\n  \u00b7 intro h\n    have bound := (spending_feasible_iff _ _).mp h\n    exact Nat.not_succ_le_self fuel (Eq.mp\n      (congrArg (fun length => length \u2264 fuel) (unit_replicate_length (fuel + 1))) bound)\n"
+    },
+    {
+      "theorem": "local_basis_valid",
+      "old_body": "  cases i with\n  | false => exact (threshold_available_iff _ _).mp\n  | true =>\n    intro h\n    simpa [repeatedTask, List.length_replicate] using\n      (spending_feasible_iff w.fuel (List.replicate w.horizon ())).mp h\n",
+      "new_body": "  cases i with\n  | false => exact (threshold_available_iff _ _).mp\n  | true =>\n    intro h\n    exact Eq.mp (congrArg (fun length => length \u2264 w.fuel)\n      (unit_replicate_length w.horizon))\n      ((spending_feasible_iff w.fuel (List.replicate w.horizon ())).mp h)\n"
+    },
+    {
+      "theorem": "combined_capability_descendant",
+      "old_body": "  apply Derives.andIntro\n  \u00b7 exact .impElim (.base false) (.assumption (by simp))\n  \u00b7 exact .impElim (.base true) (.assumption (by simp))\n",
+      "new_body": "  apply Derives.andIntro\n  \u00b7 exact .impElim (.base false) (.assumption (.head _))\n  \u00b7 exact .impElim (.base true) (.assumption (.tail _ (.head _)))\n"
+    },
+    {
+      "theorem": "combined_capability_implication_in_closed_theory",
+      "old_body": "  apply Derives.impIntro\n  apply Derives.impIntro\n  apply Derives.andIntro\n  \u00b7 exact .impElim (.base false) (.assumption (by simp))\n  \u00b7 exact .impElim (.base true) (.assumption (by simp))\n",
+      "new_body": "  apply Derives.impIntro\n  apply Derives.impIntro\n  apply Derives.andIntro\n  \u00b7 exact .impElim (.base false) (.assumption (.tail _ (.head _)))\n  \u00b7 exact .impElim (.base true) (.assumption (.head _))\n"
+    },
+    {
+      "theorem": "uniform_basis_valid",
+      "old_body": "  cases i with\n  | false => exact fun _ => (threshold_available_iff _ _).mp\n  | true =>\n    intro n h\n    simpa only [List.length_replicate] using (spending_feasible_iff _ _).mp h\n",
+      "new_body": "  cases i with\n  | false => exact fun _ => (threshold_available_iff _ _).mp\n  | true =>\n    intro n h\n    exact Eq.mp (congrArg (fun length => length \u2264 w.fuel)\n      (unit_replicate_length n)) ((spending_feasible_iff _ _).mp h)\n"
+    }
+  ],
+  "term_replacement": {
+    "old": "  (threshold_available_iff _ _).mpr (by omega)",
+    "new": "  (threshold_available_iff _ _).mpr (Nat.lt_succ_self k)"
+  },
+  "added_helper": "/-- A constructive reproof of the existing Unit-list length fact, used to\navoid extensionality-bearing simplification in the original contracts. -/\ntheorem unit_replicate_length (n : Nat) : (List.replicate n ()).length = n := by\n  induction n with\n  | zero => rfl\n  | succ n ih => exact congrArg Nat.succ ih\n\n",
+  "added_audit": "#print axioms InquiryRoot.unit_replicate_length\n",
+  "scope": "Existing statements and definitions retained; one elementary constructive reproof helper added."
+}

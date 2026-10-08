@@ -1,0 +1,63 @@
+Generative.ExplanatoryStructure.trace_global.{u} {C : Type u} {tile : C → C → Prop} {board last : List C}
+  {ts : List (C × C)} (h : Generative.Trace (Generative.ExplanatoryStructure.placement tile) board ts last) :
+  Generative.ExplanatoryStructure.Global tile board ts last
+Generative.ExplanatoryStructure.global_realized.{u} {C : Type u} {tile : C → C → Prop} {board rest : List C}
+  {ts : List (C × C)} (h : Generative.ExplanatoryStructure.Global tile board ts rest) :
+  Generative.ExplanatoryStructure.Realizes tile board ts rest
+Generative.ExplanatoryStructure.realizes_iff_global.{u} {C : Type u} (tile : C → C → Prop) (board : List C)
+  (ts : List (C × C)) (rest : List C) :
+  Generative.ExplanatoryStructure.Realizes tile board ts rest ↔
+    Generative.ExplanatoryStructure.Global tile board ts rest
+Generative.ExplanatoryStructure.adjacent_opposite (a b : Generative.ExplanatoryStructure.Square) :
+  Generative.ExplanatoryStructure.adjacent a b →
+    Generative.ExplanatoryStructure.chessColor b = !Generative.ExplanatoryStructure.chessColor a
+Generative.ExplanatoryStructure.mutilated_balance :
+  Generative.ExplanatoryStructure.balance Generative.ExplanatoryStructure.chessColor
+      Generative.ExplanatoryStructure.mutilated =
+    -2
+Generative.ExplanatoryStructure.separated_balanced :
+  Generative.ExplanatoryStructure.balance Generative.ExplanatoryStructure.chessColor
+      Generative.ExplanatoryStructure.separated =
+    0
+Generative.ExplanatoryStructure.complete_trace_iff.{u} {C : Type u} (tile : C → C → Prop) (board : List C)
+  (ts : List (C × C)) :
+  Generative.Trace (Generative.ExplanatoryStructure.placement tile) board ts [] ↔
+    Generative.ExplanatoryStructure.Global tile board ts []
+Generative.ExplanatoryStructure.balance_perm.{u} {C : Type u} (color : C → Bool) {xs ys : List C} (h : xs.Perm ys) :
+  Generative.ExplanatoryStructure.balance color xs = Generative.ExplanatoryStructure.balance color ys
+Generative.ExplanatoryStructure.opposite_pair_balance.{u} {C : Type u} (color : C → Bool) (a b : C) (rest : List C)
+  (h : color b = !color a) :
+  Generative.ExplanatoryStructure.balance color (a :: b :: rest) = Generative.ExplanatoryStructure.balance color rest
+Generative.ExplanatoryStructure.legal_balance.{u} {C : Type u} (tile : C → C → Prop) (color : C → Bool)
+  (opposite : ∀ (a b : C), tile a b → color b = !color a) {ts : List (C × C)}
+  (h : Generative.ExplanatoryStructure.Legal tile ts) (rest : List C) :
+  Generative.ExplanatoryStructure.balance color (Generative.ExplanatoryStructure.cells ts ++ rest) =
+    Generative.ExplanatoryStructure.balance color rest
+Generative.ExplanatoryStructure.global_balance.{u} {C : Type u} (tile : C → C → Prop) (color : C → Bool)
+  (opposite : ∀ (a b : C), tile a b → color b = !color a) {board rest : List C} {ts : List (C × C)}
+  (h : Generative.ExplanatoryStructure.Global tile board ts rest) :
+  Generative.ExplanatoryStructure.balance color board = Generative.ExplanatoryStructure.balance color rest
+Generative.ExplanatoryStructure.unbalanced_no_cover.{u} {C : Type u} (tile : C → C → Prop) (color : C → Bool)
+  (opposite : ∀ (a b : C), tile a b → color b = !color a) (board : List C)
+  (h : Generative.ExplanatoryStructure.balance color board ≠ 0) :
+  ¬∃ ts, Generative.ExplanatoryStructure.Global tile board ts []
+Generative.ExplanatoryStructure.unbalanced_no_placement_history.{u} {C : Type u} (tile : C → C → Prop)
+  (color : C → Bool) (opposite : ∀ (a b : C), tile a b → color b = !color a) (board : List C)
+  (h : Generative.ExplanatoryStructure.balance color board ≠ 0) :
+  ¬∃ ts, Generative.Trace (Generative.ExplanatoryStructure.placement tile) board ts []
+Generative.ExplanatoryStructure.mutilated_no_cover :
+  ¬∃ ts,
+      Generative.ExplanatoryStructure.Global Generative.ExplanatoryStructure.adjacent
+        Generative.ExplanatoryStructure.mutilated ts []
+Generative.ExplanatoryStructure.mutilated_no_history :
+  ¬∃ ts,
+      Generative.Trace (Generative.ExplanatoryStructure.placement Generative.ExplanatoryStructure.adjacent)
+        Generative.ExplanatoryStructure.mutilated ts []
+Generative.ExplanatoryStructure.separated_not_coverable :
+  ¬∃ ts,
+      Generative.ExplanatoryStructure.Global Generative.ExplanatoryStructure.adjacent
+        Generative.ExplanatoryStructure.separated ts []
+Generative.ExplanatoryStructure.two_tile_orders.{u} {C : Type u} (tile : C → C → Prop) (a b c d : C) (hab : tile a b)
+  (hcd : tile c d) :
+  Generative.Trace (Generative.ExplanatoryStructure.placement tile) [a, b, c, d] [(a, b), (c, d)] [] ∧
+    Generative.Trace (Generative.ExplanatoryStructure.placement tile) [a, b, c, d] [(c, d), (a, b)] []

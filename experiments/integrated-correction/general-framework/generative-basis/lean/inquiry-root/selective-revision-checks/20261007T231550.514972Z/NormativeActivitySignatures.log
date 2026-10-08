@@ -1,0 +1,226 @@
+Generative.NormativeActivity.run_append (xs ys : List Generative.NormativeActivity.Event)
+  (s : Generative.NormativeActivity.State) :
+  Generative.NormativeActivity.run (xs ++ ys) s =
+    Generative.NormativeActivity.run ys (Generative.NormativeActivity.run xs s)
+Generative.NormativeActivity.exact_inspection (s : Generative.NormativeActivity.State)
+  (opened : s.inspectionOpen = true) (funded : 0 < s.budget) :
+  (Generative.NormativeActivity.inspect s).receipt = some (Generative.NormativeActivity.sample s) ∧
+    (Generative.NormativeActivity.inspect s).budget + 1 = s.budget
+Generative.NormativeActivity.closed_inspection (s : Generative.NormativeActivity.State)
+  (closed : s.inspectionOpen = false) : Generative.NormativeActivity.inspect s = s
+Generative.NormativeActivity.exhausted_inspection (s : Generative.NormativeActivity.State) (empty : s.budget = 0) :
+  Generative.NormativeActivity.inspect s = s
+Generative.NormativeActivity.fresh_uptake_correct (s : Generative.NormativeActivity.State)
+  (opened : s.inspectionOpen = true) (funded : 0 < s.budget) :
+  Generative.NormativeActivity.CurrentCorrect
+    (Generative.NormativeActivity.run
+      [Generative.NormativeActivity.Event.inspect, Generative.NormativeActivity.Event.takeUp] s)
+Generative.NormativeActivity.step_preserves_receipt_sound (e : Generative.NormativeActivity.Event)
+  (s : Generative.NormativeActivity.State) (h : Generative.NormativeActivity.ReceiptSound s) :
+  Generative.NormativeActivity.ReceiptSound (Generative.NormativeActivity.step e s)
+Generative.NormativeActivity.history_preserves_receipt_sound (es : List Generative.NormativeActivity.Event)
+  (s : Generative.NormativeActivity.State) (h : Generative.NormativeActivity.ReceiptSound s) :
+  Generative.NormativeActivity.ReceiptSound (Generative.NormativeActivity.run es s)
+Generative.NormativeActivity.closed_local_preserves (e : Generative.NormativeActivity.Event)
+  (localEvent : Generative.NormativeActivity.ClosedLocal e) (s : Generative.NormativeActivity.State)
+  (closed : s.inspectionOpen = false) :
+  (Generative.NormativeActivity.step e s).inspectionOpen = false ∧
+    (Generative.NormativeActivity.step e s).reference = s.reference ∧
+      (Generative.NormativeActivity.step e s).specimen = s.specimen
+Generative.NormativeActivity.closed_local_view_congr (e : Generative.NormativeActivity.Event)
+  (localEvent : Generative.NormativeActivity.ClosedLocal e) (s t : Generative.NormativeActivity.State)
+  (_cs : s.inspectionOpen = false) (ct : t.inspectionOpen = false)
+  (same : Generative.NormativeActivity.view s = Generative.NormativeActivity.view t) :
+  Generative.NormativeActivity.view (Generative.NormativeActivity.step e s) =
+    Generative.NormativeActivity.view (Generative.NormativeActivity.step e t)
+Generative.NormativeActivity.closed_history_preserves (es : List Generative.NormativeActivity.Event)
+  (localHistory : ∀ (e : Generative.NormativeActivity.Event), e ∈ es → Generative.NormativeActivity.ClosedLocal e)
+  (s : Generative.NormativeActivity.State) (closed : s.inspectionOpen = false) :
+  (Generative.NormativeActivity.run es s).inspectionOpen = false ∧
+    (Generative.NormativeActivity.run es s).reference = s.reference ∧
+      (Generative.NormativeActivity.run es s).specimen = s.specimen
+Generative.NormativeActivity.closed_history_view_congr (es : List Generative.NormativeActivity.Event)
+  (localHistory : ∀ (e : Generative.NormativeActivity.Event), e ∈ es → Generative.NormativeActivity.ClosedLocal e)
+  (s t : Generative.NormativeActivity.State) (cs : s.inspectionOpen = false) (ct : t.inspectionOpen = false)
+  (same : Generative.NormativeActivity.view s = Generative.NormativeActivity.view t) :
+  Generative.NormativeActivity.view (Generative.NormativeActivity.run es s) =
+    Generative.NormativeActivity.view (Generative.NormativeActivity.run es t)
+Generative.NormativeActivity.learned_without_production :
+  Generative.NormativeActivity.learned.judgment = some false ∧
+    Generative.NormativeActivity.CurrentCorrect Generative.NormativeActivity.learned ∧
+      Generative.NormativeActivity.learned.work = 0
+Generative.NormativeActivity.historical_truth_present_error :
+  Generative.NormativeActivity.ReceiptSound Generative.NormativeActivity.changed ∧
+    Generative.NormativeActivity.changed.judgment = some false ∧
+      Generative.NormativeActivity.target Generative.NormativeActivity.changed = true ∧
+        ¬Generative.NormativeActivity.CurrentCorrect Generative.NormativeActivity.changed
+Generative.NormativeActivity.retained_distinction_does_not_select_production :
+  (Generative.NormativeActivity.step Generative.NormativeActivity.Event.produce
+          Generative.NormativeActivity.learned).judgment =
+      (Generative.NormativeActivity.step Generative.NormativeActivity.Event.rest
+          Generative.NormativeActivity.learned).judgment ∧
+    (Generative.NormativeActivity.step Generative.NormativeActivity.Event.produce
+          Generative.NormativeActivity.learned).work ≠
+      (Generative.NormativeActivity.step Generative.NormativeActivity.Event.rest
+          Generative.NormativeActivity.learned).work
+Generative.NormativeActivity.same_production_can_have_different_judgment :
+  (Generative.NormativeActivity.step Generative.NormativeActivity.Event.suspend
+          Generative.NormativeActivity.learned).work =
+      Generative.NormativeActivity.learned.work ∧
+    (Generative.NormativeActivity.step Generative.NormativeActivity.Event.suspend
+          Generative.NormativeActivity.learned).judgment ≠
+      Generative.NormativeActivity.learned.judgment
+Generative.NormativeActivity.reachable_closed_disagreement :
+  Generative.NormativeActivity.view Generative.NormativeActivity.settled =
+      Generative.NormativeActivity.view Generative.NormativeActivity.changed ∧
+    Generative.NormativeActivity.target Generative.NormativeActivity.settled ≠
+        Generative.NormativeActivity.target Generative.NormativeActivity.changed ∧
+      Generative.NormativeActivity.settled =
+          Generative.NormativeActivity.run
+            [Generative.NormativeActivity.Event.inspect, Generative.NormativeActivity.Event.takeUp,
+              Generative.NormativeActivity.Event.close]
+            Generative.NormativeActivity.initial ∧
+        Generative.NormativeActivity.changed =
+          Generative.NormativeActivity.run
+            [Generative.NormativeActivity.Event.inspect, Generative.NormativeActivity.Event.takeUp,
+              Generative.NormativeActivity.Event.close, Generative.NormativeActivity.Event.changeReference 1]
+            Generative.NormativeActivity.initial
+Generative.NormativeActivity.closed_domain_not_resolving :
+  ¬Generative.KnowledgeCorrespondence.Resolves Generative.NormativeActivity.ClosedDomain
+      Generative.NormativeActivity.view Generative.NormativeActivity.target
+Generative.NormativeActivity.sound_closed_answer_abstains
+  (answer : Option Generative.NormativeActivity.Receipt × Option Bool × Bool × Nat × Nat × Nat → Option Bool)
+  (sound :
+    Generative.KnowledgeCorrespondence.SoundOn Generative.NormativeActivity.ClosedDomain
+      Generative.NormativeActivity.view Generative.NormativeActivity.target answer) :
+  answer (Generative.NormativeActivity.view Generative.NormativeActivity.settled) = none
+Generative.NormativeActivity.closed_continuations_remain_unresolved (es : List Generative.NormativeActivity.Event)
+  (localHistory : ∀ (e : Generative.NormativeActivity.Event), e ∈ es → Generative.NormativeActivity.ClosedLocal e) :
+  Generative.NormativeActivity.view (Generative.NormativeActivity.run es Generative.NormativeActivity.settled) =
+      Generative.NormativeActivity.view (Generative.NormativeActivity.run es Generative.NormativeActivity.changed) ∧
+    Generative.NormativeActivity.target (Generative.NormativeActivity.run es Generative.NormativeActivity.settled) ≠
+      Generative.NormativeActivity.target (Generative.NormativeActivity.run es Generative.NormativeActivity.changed)
+Generative.NormativeActivity.reopening_and_inspection_repair :
+  Generative.NormativeActivity.CurrentCorrect
+      (Generative.NormativeActivity.run
+        [Generative.NormativeActivity.Event.reopen, Generative.NormativeActivity.Event.inspect,
+          Generative.NormativeActivity.Event.takeUp]
+        Generative.NormativeActivity.changed) ∧
+    (Generative.NormativeActivity.run
+            [Generative.NormativeActivity.Event.reopen, Generative.NormativeActivity.Event.inspect,
+              Generative.NormativeActivity.Event.takeUp]
+            Generative.NormativeActivity.changed).judgment =
+        some true ∧
+      (Generative.NormativeActivity.run
+              [Generative.NormativeActivity.Event.reopen, Generative.NormativeActivity.Event.inspect,
+                Generative.NormativeActivity.Event.takeUp]
+              Generative.NormativeActivity.changed).budget =
+          0 ∧
+        (Generative.NormativeActivity.run
+              [Generative.NormativeActivity.Event.reopen, Generative.NormativeActivity.Event.inspect,
+                Generative.NormativeActivity.Event.takeUp]
+              Generative.NormativeActivity.changed).work =
+          0
+Generative.NormativeActivity.reopening_without_inspection_does_not_repair :
+  ¬Generative.NormativeActivity.CurrentCorrect
+      (Generative.NormativeActivity.run
+        [Generative.NormativeActivity.Event.reopen, Generative.NormativeActivity.Event.takeUp]
+        Generative.NormativeActivity.changed)
+Generative.NormativeActivity.exhausted_reopening_does_not_repair :
+  ¬Generative.NormativeActivity.CurrentCorrect
+      (Generative.NormativeActivity.run
+        [Generative.NormativeActivity.Event.reopen, Generative.NormativeActivity.Event.inspect,
+          Generative.NormativeActivity.Event.takeUp]
+        (have __src := Generative.NormativeActivity.changed;
+        { specimen := __src.specimen, reference := __src.reference, receipt := __src.receipt,
+          judgment := __src.judgment, inspectionOpen := __src.inspectionOpen, budget := 0, work := __src.work,
+          repetitions := __src.repetitions }))
+Generative.NormativeActivity.suspension_retains_relation_and_record :
+  (Generative.NormativeActivity.step Generative.NormativeActivity.Event.suspend
+          Generative.NormativeActivity.changed).judgment =
+      none ∧
+    (Generative.NormativeActivity.step Generative.NormativeActivity.Event.suspend
+            Generative.NormativeActivity.changed).reference =
+        Generative.NormativeActivity.changed.reference ∧
+      (Generative.NormativeActivity.step Generative.NormativeActivity.Event.suspend
+              Generative.NormativeActivity.changed).receipt =
+          Generative.NormativeActivity.changed.receipt ∧
+        Generative.NormativeActivity.target
+            (Generative.NormativeActivity.step Generative.NormativeActivity.Event.suspend
+              Generative.NormativeActivity.changed) =
+          Generative.NormativeActivity.target Generative.NormativeActivity.changed
+Generative.NormativeActivity.reachable_continuation (s : Generative.NormativeActivity.State)
+  (h : Generative.NormativeActivity.Reachable s) (es : List Generative.NormativeActivity.Event) :
+  Generative.NormativeActivity.Reachable (Generative.NormativeActivity.run es s)
+Generative.NormativeActivity.witnesses_reachable_closed :
+  Generative.NormativeActivity.ReachableClosed Generative.NormativeActivity.settled ∧
+    Generative.NormativeActivity.ReachableClosed Generative.NormativeActivity.changed
+Generative.NormativeActivity.exhausted_case_reachable :
+  Generative.NormativeActivity.Reachable
+    (have __src := Generative.NormativeActivity.changed;
+    { specimen := __src.specimen, reference := __src.reference, receipt := __src.receipt, judgment := __src.judgment,
+      inspectionOpen := __src.inspectionOpen, budget := 0, work := __src.work, repetitions := __src.repetitions })
+Generative.NormativeActivity.fresh_record_can_coexist_with_stale_judgment :
+  have s :=
+    Generative.NormativeActivity.run
+      [Generative.NormativeActivity.Event.reopen, Generative.NormativeActivity.Event.inspect]
+      Generative.NormativeActivity.changed;
+  Generative.NormativeActivity.Reachable s ∧
+    Generative.NormativeActivity.memoryAnswer s = some (Generative.NormativeActivity.target s) ∧
+      ¬Generative.NormativeActivity.CurrentCorrect s
+Generative.NormativeActivity.reachable_closed_not_resolving :
+  ¬Generative.KnowledgeCorrespondence.Resolves Generative.NormativeActivity.ReachableClosed
+      Generative.NormativeActivity.view Generative.NormativeActivity.target
+Generative.NormativeActivity.sound_on_reachable_closed_abstains
+  (answer : Option Generative.NormativeActivity.Receipt × Option Bool × Bool × Nat × Nat × Nat → Option Bool)
+  (sound :
+    Generative.KnowledgeCorrespondence.SoundOn Generative.NormativeActivity.ReachableClosed
+      Generative.NormativeActivity.view Generative.NormativeActivity.target answer) :
+  answer (Generative.NormativeActivity.view Generative.NormativeActivity.settled) = none
+Generative.NormativeActivity.step_receipt_origin (e : Generative.NormativeActivity.Event)
+  (s : Generative.NormativeActivity.State) (r : Generative.NormativeActivity.Receipt)
+  (retained : (Generative.NormativeActivity.step e s).receipt = some r) :
+  s.receipt = some r ∨
+    e = Generative.NormativeActivity.Event.inspect ∧
+      s.inspectionOpen = true ∧ 0 < s.budget ∧ Generative.NormativeActivity.sample s = r
+Generative.NormativeActivity.retained_receipt_has_origin (es : List Generative.NormativeActivity.Event)
+  (s : Generative.NormativeActivity.State) (r : Generative.NormativeActivity.Receipt)
+  (retained : (Generative.NormativeActivity.run es s).receipt = some r) :
+  s.receipt = some r ∨ Generative.NormativeActivity.AcquiredAlong es s r
+Generative.NormativeActivity.from_initial_receipt_is_acquired (es : List Generative.NormativeActivity.Event)
+  (r : Generative.NormativeActivity.Receipt)
+  (retained : (Generative.NormativeActivity.run es Generative.NormativeActivity.initial).receipt = some r) :
+  Generative.NormativeActivity.AcquiredAlong es Generative.NormativeActivity.initial r
+Generative.NormativeActivity.adaptive_closed_invariant
+  (policy :
+    Option Generative.NormativeActivity.Receipt × Option Bool × Bool × Nat × Nat × Nat →
+      Generative.NormativeActivity.Event)
+  (localPolicy :
+    ∀ (v : Option Generative.NormativeActivity.Receipt × Option Bool × Bool × Nat × Nat × Nat),
+      Generative.NormativeActivity.ClosedLocal (policy v))
+  (n : Nat) (s t : Generative.NormativeActivity.State) (cs : Generative.NormativeActivity.ClosedDomain s)
+  (ct : Generative.NormativeActivity.ClosedDomain t)
+  (same : Generative.NormativeActivity.view s = Generative.NormativeActivity.view t) :
+  Generative.NormativeActivity.view (Generative.NormativeActivity.adapt policy n s) =
+      Generative.NormativeActivity.view (Generative.NormativeActivity.adapt policy n t) ∧
+    Generative.NormativeActivity.ClosedDomain (Generative.NormativeActivity.adapt policy n s) ∧
+      Generative.NormativeActivity.ClosedDomain (Generative.NormativeActivity.adapt policy n t) ∧
+        Generative.NormativeActivity.target (Generative.NormativeActivity.adapt policy n s) =
+            Generative.NormativeActivity.target s ∧
+          Generative.NormativeActivity.target (Generative.NormativeActivity.adapt policy n t) =
+            Generative.NormativeActivity.target t
+Generative.NormativeActivity.adaptive_closed_cannot_resolve
+  (policy :
+    Option Generative.NormativeActivity.Receipt × Option Bool × Bool × Nat × Nat × Nat →
+      Generative.NormativeActivity.Event)
+  (localPolicy :
+    ∀ (v : Option Generative.NormativeActivity.Receipt × Option Bool × Bool × Nat × Nat × Nat),
+      Generative.NormativeActivity.ClosedLocal (policy v))
+  (n : Nat) :
+  Generative.NormativeActivity.view (Generative.NormativeActivity.adapt policy n Generative.NormativeActivity.settled) =
+      Generative.NormativeActivity.view
+        (Generative.NormativeActivity.adapt policy n Generative.NormativeActivity.changed) ∧
+    Generative.NormativeActivity.target
+        (Generative.NormativeActivity.adapt policy n Generative.NormativeActivity.settled) ≠
+      Generative.NormativeActivity.target
+        (Generative.NormativeActivity.adapt policy n Generative.NormativeActivity.changed)

@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-08",
+  "scope": "New M26 and owned navigation; other entries, render lines and pending source reviews preserved. Full goal remains active.",
+  "navigation_insertions": {
+    "RESEARCH.md": "**认知、学习与演化心理 / Cognition, learning and evolutionary psychology，2026-10-08。** [完整目标与当前候选](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md)保留十项覆盖要求；[本轮连接及反审](_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md)接通实际记录、取得的组合解释和新表达的有限执行：25项新 Lean 定理／52项新审计，34项继承审计分列。/ Transfer covers every finite expression of the supplied grammar; missing/corrupt records, changed/nonuniform laws and exhausted support retain failures. Next: formation and revision of the compositional organization. The full cognitive, developmental, evolutionary and experiential objective remains active.\n\n",
+    "theories/shengsheng-buxi-generative-existence/README.md": "**认知、学习与演化心理的相连研究 / Connected cognitive and evolutionary research，2026-10-08。** [当前理论与完整覆盖要求](unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md)复用已完成机制，新增从实际记录到任意有限新组合的有条件解释：25项 Lean 定理／52项新审计。语法、法则和取得安排明示；整个人类／动物认知及演化心理目标继续开放。/ [Evidence, exact proof scope and counterreview](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md) preserve developmental, motivational and consciousness requirements.\n\n",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": "**Cognition, learning and evolutionary psychology，8 October 2026.** [Connected extension and full-goal audit](COGNITION-LEARNING-EVOLUTION-INTEGRATION.md): 25 new Lean theorems / 52 new audits, with 34 inherited audits. Acquired probe records support unencountered combinations under a fixed recursive law, with finite execution and record/law failures. The full objective remains active; forming the supplied compositional operation is the next selected connection.\n\n",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": "**认知与演化心理的独立接续目标 / Continuing cognitive-development objective，2026-10-08。** [Ren 本会话的新目标](../../../sources/15-codex-theory-conversations/2026-10-08-cognition-learning-evolution-goal.md)要求推进认知、学习及演化心理的完整解释。[当前相连候选](COGNITION-LEARNING-AND-EVOLUTION.md)公开覆盖要求，新增25项 Lean 定理／52项审计的取得组合解释；语法形成、广泛心理对应与意识仍开放。/ This branch reuses completed learning, content, goal and evolutionary mechanisms. Its local proof is progress, not completion or a redirection of other authorized sessions.\n\n",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md": "**Acquired compositional interpretation, 8 October 2026.** [CompositionalAcquisition.lean](CompositionalAcquisition.lean), [fresh checker](check_compositional_acquisition.py) and [receipt](compositional-acquisition-verification.json): 25 new theorems / 52 explicit declaration audits; 34 KnowledgeCorrespondence audits are inherited. Actual record acquisition supports all finite expressions in the supplied recursive grammar, with finite execution, renaming, missing/corrupt records and transfer failures. This neither derives the grammar nor certifies full cognition. [Argument and counterreview](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md).\n\n",
+    "sources/SOURCES.md": "**Cognition, learning and evolutionary psychology, 8 October 2026.** [The preserved human question and continuing goal](15-codex-theory-conversations/2026-10-08-cognition-learning-evolution-goal.md) authorize the full explanatory investigation. The quoted assessment belongs to the assistant; the Chinese scope note is labeled AI interpretation. [Current account](../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md).\n\n",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md": "**认知与取得组合 / Cognition and acquired composition，2026-10-08。** 新增M26，成对记录[完整目标与候选](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md)及[本轮连接、证据和反审](COGNITION-LEARNING-EVOLUTION-INTEGRATION.md)：25项新定理／52项新审计、34项继承审计分列。/ Only the new canonical row, table count, two owned discovery paths and authored/read versions change; earlier entries and pending source reviews remain. [Owned edits](COGNITION-LEARNING-EVOLUTION-INDEX-EDITS.json); [scoped checks](COGNITION-LEARNING-EVOLUTION-CHECKS.json). Full cognition, evolutionary psychology and conscious experience are not certified complete.\n\n"
+  },
+  "navigation_bindings": {
+    "RESEARCH.md": {
+      "before_sha256": "ecd7fe7f1868935f5a58be0fc44a2933bc8d0aa8a28c9d9e52014730b3b20600",
+      "after_sha256": "de52232d92754bdccddcacf83a543c8af40764d104fd01893c20563777072155",
+      "inverse_preserves_previous_bytes": true
+    },
+    "theories/shengsheng-buxi-generative-existence/README.md": {
+      "before_sha256": "e585e490b0e401ac2ccc588e7abd1a2ca40915ed283df1c9d7930eeab0a94d3f",
+      "after_sha256": "b5a7a92bb1534dbd23dc2019b8636ae7dc8a75c04420f9fa084d8b0d55dd5f46",
+      "inverse_preserves_previous_bytes": true
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": {
+      "before_sha256": "211cd24490db7b1dd24b2385c80cf73bf33eb1e2da215b4e49bfef2950aa9b4d",
+      "after_sha256": "950d42263546bbca8f444d1b94c0e533aca5513f18aa6c811937c9026a366b1f",
+      "inverse_preserves_previous_bytes": true
+    },
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": {
+      "before_sha256": "9d978328020022f1e6d78799746fa0a4573ee60cd2a52e2e2bf0e6ed38c581b4",
+      "after_sha256": "3d531c5f17c947ed824c91d448bb2f3e121050d7234eea51bff8a91ba7e7be2e",
+      "inverse_preserves_previous_bytes": true
+    },
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/README.md": {
+      "before_sha256": "5ea21fe744a378a51f63f048ee2a6c683b51b1ca1ea64488e47bf2020f363bb5",
+      "after_sha256": "acdfbd83f781b54580486790afbf9fcc0fbde0169b3ed6bb1f653878f035e97b",
+      "inverse_preserves_previous_bytes": true
+    },
+    "sources/SOURCES.md": {
+      "before_sha256": "48e09121a132f34e23f664eaf22d49a4493b3f4bc3546bd3d80dea20950ff357",
+      "after_sha256": "ebe233861dd1cd866050d7e054bec69ec17939f3bddb8d193a5381803f792178",
+      "inverse_preserves_previous_bytes": true
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md": {
+      "before_sha256": "030aaf672c8fdd820e9970d26ed175ecde1efd84006ddf81558a615e155d4ba0",
+      "after_sha256": "ac2f67d44a6f60f6728450cfba55db1fa3ee44c2a215e3769186688919689127",
+      "inverse_preserves_previous_bytes": true
+    }
+  },
+  "reviewed_owned_sources": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md": "e5608fae9aa5bad8de0b33262af9400c34e125e16de0db83835d86f8d61a490d",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md": "1d8491f031bea1a47d839947cad073522c5308c12802037c71ff4ad74e91da42",
+    "sources/15-codex-theory-conversations/2026-10-08-cognition-learning-evolution-goal.md": "25ad8b63001311b73b7ee7781e5701c909aa2a246a3aff71f7c2ec9830ab9373",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalAcquisition.lean": "c1bb4792d8f2034e870724f0a8828cef9ef31ecf36e3b6b53ed6e8eb3900f848",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/check_compositional_acquisition.py": "d9385207ada71f062007cefe2d9df498c342834af9c282d437a247a247d3759a",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-acquisition-verification.json": "10d0a9d1c6deffbc25ef0b5343939b629e731a11f8fa2fc3039b0eb64b645f60"
+  },
+  "discovery_added": [
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md"
+  ],
+  "added_entry": {
+    "id": "M26",
+    "title_zh": "认知发展与取得的组合解释",
+    "title_en": "Cognitive development and acquired compositional interpretation",
+    "claim_zh": "实际探测记录形成基本效果及组合次序的解释；在公开递归法则内适用于任意有限表达，并能在剩余支持下执行未训练组合。认知、学习及演化心理的完整解释保持为独立继续目标。",
+    "claim_en": "Actual probe records form an interpretation of primitive effects and composition order; it covers every finite expression under the explicit recursive law and supports untrained combinations with remaining support. The full cognition, learning and evolutionary-psychology objective remains active.",
+    "scope_zh": "25项新 Lean 定理／52项审计，34项继承审计。语法、记录忠实性、法则范围和安排明示；缺失／失实记录、法则改变与不足保留。反审为作者自审；完整语义、发育演化对应及意识未完成。",
+    "scope_en": "25 new Lean theorems / 52 audits, with 34 inherited audits. Grammar, record fidelity, law scope and schedule are supplied; missing/corrupt records, law change and underfunding remain. Author counterreview; full semantics, developmental/evolutionary correspondence and consciousness incomplete.",
+    "links": [
+      {
+        "label_zh": "当前理论与完整目标",
+        "label_en": "Account and full objective",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/COGNITION-LEARNING-AND-EVOLUTION.md"
+      },
+      {
+        "label_zh": "论证、证据及反审",
+        "label_en": "Argument, evidence and counterreview",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-LEARNING-EVOLUTION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "形式源码",
+        "label_en": "Formal source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/CompositionalAcquisition.lean"
+      },
+      {
+        "label_zh": "实查回执",
+        "label_en": "Checked receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/compositional-acquisition-verification.json"
+      },
+      {
+        "label_zh": "Ren 的目标",
+        "label_en": "Ren's objective",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-cognition-learning-evolution-goal.md"
+      }
+    ]
+  },
+  "all_existing_entries_preserved": true,
+  "all_other_rendered_lines_preserved": true,
+  "old_entry_count": 93,
+  "new_entry_count": 94,
+  "data_before_sha256": "df37384845fffb8f527b89550fb23f8704cdacab0b2fa8fed1de94b7be670764",
+  "data_after_sha256": "0284e918ae3b110b84d57596b7c76f62d88b289d951eb810c09d00ef2d32f45b",
+  "table_before_sha256": "49cb38289ee76f2a36fc8245c9cc2defc96c6c2d50d05923475c690ab89e2e10",
+  "table_after_sha256": "f101a6c48b6ce0233f77b7bca20e3ac12874ef366710d973071f86f4ea16b418"
+}

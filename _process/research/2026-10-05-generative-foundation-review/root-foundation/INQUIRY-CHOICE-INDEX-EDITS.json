@@ -1,0 +1,165 @@
+{
+  "entry_ids": [
+    "C28",
+    "F20"
+  ],
+  "preserved_other_entries": 83,
+  "previous_entries": [
+    {
+      "id": "C28",
+      "title_zh": "尺度描述、误差与具体条件",
+      "title_en": "Scale descriptions, error and particular conditions",
+      "claim_zh": "同一历史的变化描述可在明确误差界内组合，并支持逐项条件判断；精确总量仍可能遗漏具体损失，组织变化可使旧描述失效。取得证据后的付费、耗时修订可改变实际回应，但校准与有限支持仍可使其失败，固定回应也可成功。",
+      "claim_en": "Changing descriptions of one history compose under explicit error bounds and support indexed condition judgments; exact totals can still omit particular losses, and organizational change can defeat an earlier description. Acquired, paid and delayed revision can change the enacted response, while calibration and finite support can defeat it and a fixed response can also succeed.",
+      "scope_zh": "原21项尺度定理＋后续27项修订定理；明确局部法则、校准和阈值根据；独立的身体／选择研究另计，非经验或普遍伦理证明",
+      "scope_en": "Original 21 scale plus 27 revision theorems; explicit local laws, calibration and threshold warrant; separate embodied-choice work counted separately; no empirical or universal ethical proof",
+      "links": [
+        {
+          "label_zh": "当前双语论述",
+          "label_en": "Current bilingual account",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md"
+        },
+        {
+          "label_zh": "整合、反审与来源",
+          "label_en": "Integration, counterreview and sources",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-INTEGRATION.md"
+        },
+        {
+          "label_zh": "取得证据后的修订与反审",
+          "label_en": "Acquired revision and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCALE-REVISION-INTEGRATION.md"
+        }
+      ]
+    },
+    {
+      "id": "F20",
+      "title_zh": "尺度近似与条件传递的形式检查",
+      "title_en": "Formal checks of scale approximation and condition transport",
+      "claim_zh": "有限时域误差递推、两尺度组合、指标校准和条件传递经过实查，并保留耦合变化、误差累积及总量丢失局部条件的反例。后续检查实际证据取得、描述修订、误差余量与回应，保留耗时、读数偏差、工作耗尽及支持不足的失败和固定回应成功。",
+      "claim_en": "Checked finite-horizon error propagation, two-scale composition, readout calibration and condition transport retain counterexamples for changed coupling, accumulated error and local conditions lost by exact totals. Continuation checks actual acquisition, revision, error margins and response, retaining delay, sensor bias, exhausted work, insufficient support and a successful fixed response.",
+      "scope_zh": "原21项／42项继承审计；后续27项／106项继承审计，继承结果不重复计新；标准逻辑，无任意尺度发现或普遍控制合成",
+      "scope_en": "Original 21 / 42 inherited audits; continuation 27 / 106 inherited audits, without counting inherited results as new; standard logic, no arbitrary scale discovery or universal controller synthesis",
+      "links": [
+        {
+          "label_zh": "证明与前提",
+          "label_en": "Proof and hypotheses",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-PROOF.md"
+        },
+        {
+          "label_zh": "Lean 源码",
+          "label_en": "Lean source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean"
+        },
+        {
+          "label_zh": "实查回执",
+          "label_en": "Checked receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/scales-verification.json"
+        },
+        {
+          "label_zh": "取得证据后的修订与反审",
+          "label_en": "Acquired revision and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCALE-REVISION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "修订 Lean 源码",
+          "label_en": "Revision Lean source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean"
+        },
+        {
+          "label_zh": "修订实查回执",
+          "label_en": "Revision checked receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/scale-revision-verification.json"
+        }
+      ]
+    }
+  ],
+  "updated_entries": [
+    {
+      "id": "C28",
+      "title_zh": "尺度描述、误差与具体条件",
+      "title_en": "Scale descriptions, error and particular conditions",
+      "claim_zh": "同一历史的变化描述可在明确误差界内组合，并支持逐项条件判断；精确总量仍可能遗漏具体损失，组织变化可使旧描述失效。取得证据后的付费、耗时修订可改变实际回应，但校准与有限支持仍可使其失败，固定回应也可成功。同一时限下的查询／直接回应比较进一步以共同可行回应的交集识别有关区别，保留查询过晚与支持不足，并修订选择条件。",
+      "claim_en": "Changing descriptions of one history compose under explicit error bounds and support indexed condition judgments; exact totals can still omit particular losses, and organizational change can defeat an earlier description. Acquired, paid and delayed revision can change the enacted response, while calibration and finite support can defeat it and a fixed response can also succeed. Common-horizon inquiry/immediate-response comparison identifies consequential distinctions through common admissible actions, retaining late inquiry and inadequate support and repairing the selection guard.",
+      "scope_zh": "21项尺度＋27项修订＋28项查询选择定理；局部法则、校准与目标根据明确；身体／组织研究另计，无普遍最优或经验闭环声称",
+      "scope_en": "21 scale + 27 revision + 28 inquiry-choice theorems; explicit local laws, calibration and target warrant; embodied/organized studies separate; no global optimum or empirical closed-loop claim",
+      "links": [
+        {
+          "label_zh": "当前双语论述",
+          "label_en": "Current bilingual account",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md"
+        },
+        {
+          "label_zh": "整合、反审与来源",
+          "label_en": "Integration, counterreview and sources",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-INTEGRATION.md"
+        },
+        {
+          "label_zh": "取得证据后的修订与反审",
+          "label_en": "Acquired revision and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCALE-REVISION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "查询选择整合与反审",
+          "label_en": "Inquiry choice and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CHOICE-INTEGRATION.md"
+        }
+      ]
+    },
+    {
+      "id": "F20",
+      "title_zh": "尺度近似与条件传递的形式检查",
+      "title_en": "Formal checks of scale approximation and condition transport",
+      "claim_zh": "有限时域误差递推、两尺度组合、指标校准和条件传递经过实查，并保留耦合变化、误差累积及总量丢失局部条件的反例。后续检查实际证据取得、描述修订、误差余量与回应，保留耗时、读数偏差、工作耗尽及支持不足的失败和固定回应成功。同一时限下的查询／直接回应比较进一步以共同可行回应的交集识别有关区别，保留查询过晚与支持不足，并修订选择条件。",
+      "claim_en": "Checked finite-horizon error propagation, two-scale composition, readout calibration and condition transport retain counterexamples for changed coupling, accumulated error and local conditions lost by exact totals. Continuation checks actual acquisition, revision, error margins and response, retaining delay, sensor bias, exhausted work, insufficient support and a successful fixed response. Common-horizon inquiry/immediate-response comparison identifies consequential distinctions through common admissible actions, retaining late inquiry and inadequate support and repairing the selection guard.",
+      "scope_zh": "三轮新增21／27／28项，分别继承42／106／133项审计；标准逻辑；一般规划证书与具体执行分别计范围，非全部策略最优",
+      "scope_en": "Three rounds add 21 / 27 / 28 results, respectively replaying 42 / 106 / 133 audits; standard logic; general planner certificates and concrete executions scoped separately, no all-policy optimality",
+      "links": [
+        {
+          "label_zh": "证明与前提",
+          "label_en": "Proof and hypotheses",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-PROOF.md"
+        },
+        {
+          "label_zh": "Lean 源码",
+          "label_en": "Lean source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean"
+        },
+        {
+          "label_zh": "实查回执",
+          "label_en": "Checked receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/scales-verification.json"
+        },
+        {
+          "label_zh": "取得证据后的修订与反审",
+          "label_en": "Acquired revision and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCALE-REVISION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "修订 Lean 源码",
+          "label_en": "Revision Lean source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean"
+        },
+        {
+          "label_zh": "修订实查回执",
+          "label_en": "Revision checked receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/scale-revision-verification.json"
+        },
+        {
+          "label_zh": "查询选择整合与反审",
+          "label_en": "Inquiry choice and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CHOICE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "查询选择 Lean",
+          "label_en": "Inquiry-choice Lean",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean"
+        },
+        {
+          "label_zh": "查询选择实查回执",
+          "label_en": "Inquiry-choice receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/inquiry-choice-verification.json"
+        }
+      ]
+    }
+  ]
+}

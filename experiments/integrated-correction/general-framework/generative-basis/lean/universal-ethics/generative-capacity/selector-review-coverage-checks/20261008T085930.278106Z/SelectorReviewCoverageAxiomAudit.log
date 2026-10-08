@@ -1,0 +1,39 @@
+'SelectorReviewCoverage.PossibleDefeat' does not depend on any axioms
+'SelectorReviewCoverage.Clear' does not depend on any axioms
+'SelectorReviewCoverage.CertificateCoverage' does not depend on any axioms
+'SelectorReviewCoverage.clear_iff_no_possible_defeat' does not depend on any axioms
+'SelectorReviewCoverage.coverage_iff_certificate_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SelectorReviewCoverage.pairwise_reflection_suffices' does not depend on any axioms
+'SelectorReviewCoverage.certificate_coverage_composes' does not depend on any axioms
+'SelectorReviewCoverage.all_menus_coverage_iff_pairwise_reflection' does not depend on any axioms
+'SelectorReviewCoverage.objectionSummary' does not depend on any axioms
+'SelectorReviewCoverage.objection_summary_preserves_exact_certificate' does not depend on any axioms
+'SelectorReviewCoverage.Plan' does not depend on any axioms
+'SelectorReviewCoverage.protection' does not depend on any axioms
+'SelectorReviewCoverage.gain' does not depend on any axioms
+'SelectorReviewCoverage.comparison' does not depend on any axioms
+'SelectorReviewCoverage.fullLive' does not depend on any axioms
+'SelectorReviewCoverage.oldMenu' does not depend on any axioms
+'SelectorReviewCoverage.enlargedMenu' does not depend on any axioms
+'SelectorReviewCoverage.compressed' does not depend on any axioms
+'SelectorReviewCoverage.output_defeats_routine_in_both_applications' depends on axioms: [propext, Quot.sound]
+'SelectorReviewCoverage.compression_is_exact_on_old_menu' depends on axioms: [propext, Quot.sound]
+'SelectorReviewCoverage.compressed_review_covers_old_menu' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SelectorReviewCoverage.expanded_menu_retains_compressed_output_certificate' depends on axioms: [propext, Quot.sound]
+'SelectorReviewCoverage.new_repair_defeats_output_in_omitted_application' depends on axioms: [propext]
+'SelectorReviewCoverage.menu_growth_breaks_old_certificate_coverage' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SelectorReviewCoverage.repair_keeps_real_output_loss' depends on axioms: [propext]
+'SelectorReviewCoverage.restored_summary_rejects_output_certificate' depends on axioms: [propext]
+'SelectorReviewCoverage.prefixProtection' does not depend on any axioms
+'SelectorReviewCoverage.prefixGain' does not depend on any axioms
+'SelectorReviewCoverage.prefixComparison' does not depend on any axioms
+'SelectorReviewCoverage.prefixMenu' does not depend on any axioms
+'SelectorReviewCoverage.prefixCompressed' does not depend on any axioms
+'SelectorReviewCoverage.finite_audit_protection_profiles_agree' depends on axioms: [propext]
+'SelectorReviewCoverage.prefix_pairwise_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SelectorReviewCoverage.every_finite_prefix_has_exact_compression' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SelectorReviewCoverage.every_finite_prefix_has_a_failing_next_plan' depends on axioms: [propext, Quot.sound]

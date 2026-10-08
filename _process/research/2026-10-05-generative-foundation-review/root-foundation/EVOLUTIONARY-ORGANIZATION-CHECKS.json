@@ -1,0 +1,289 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-07T23:28:03.557946+00:00",
+  "scope": "Owned links, source preservation, current Lean receipt bindings, eight owned index insertions, six unchanged broader requirements and the paired C14 row; not a whole-repository certification",
+  "local_link_count": 59,
+  "local_links": [
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "reference": "../../../sources/15-codex-theory-conversations/2026-10-08-evolutionary-organization-completion.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "reference": "THE-THEORY-OF-EVOLUTION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "reference": "NONDUAL-METHOD.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "reference": "../../../sources/evolutionary-selection/evolutionary-organization/README.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "reference": "../../../sources/evolutionary-selection/doulcier-2025/README.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RECURSIVE-GENERATIVE-SELECTION-MATH.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "reference": "../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/DevelopmentalReconstruction.lean"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "reference": "LIVING-DEPENDENCIES.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-COMPARATIVE-DIRECTION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-HISTORY-INTEGRATION.md#status-and-next-connection"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "reference": "ALIGNMENT-AND-GOVERNANCE.md#current-generative-alignment-priority"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "../../../../sources/15-codex-theory-conversations/2026-10-08-evolutionary-organization-completion.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "DEVELOPMENTAL-ASSOCIATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "GENERATED-SELECTION-RECURRENCE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/DevelopmentalReconstruction.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/developmental-reconstruction-verification/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "EVOLUTIONARY-ORGANIZATION-CHECKS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "EVOLUTIONARY-ORGANIZATION-CHECK.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "../../../../sources/evolutionary-selection/evolutionary-organization/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "MAT-HISTORY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "MAT-CONDITIONS-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "LINEAGE-FORECAST-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "DEVELOPMENTAL-TRANSFER-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "LIVING-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "EVOLUTION-COMPARATIVE-DIRECTION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "../../../../sources/evolutionary-selection/comparative-direction/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "MAT-HISTORY-INTEGRATION.md#status-and-next-connection"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md",
+      "reference": "CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md#substantive-counterreview-and-next-test"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-evolutionary-organization-completion.md",
+      "reference": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-evolutionary-organization-completion.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/evolutionary-organization/README.md",
+      "reference": "../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/evolutionary-organization/README.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/evolutionary-organization/README.md",
+      "reference": "manifest.json"
+    },
+    {
+      "from": "sources/evolutionary-selection/evolutionary-organization/README.md",
+      "reference": "ratcliff2015.html"
+    },
+    {
+      "from": "sources/evolutionary-selection/evolutionary-organization/README.md",
+      "reference": "doulcier2024.xml"
+    },
+    {
+      "from": "sources/evolutionary-selection/evolutionary-organization/README.md",
+      "reference": "../doulcier-2025/README.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/evolutionary-organization/README.md",
+      "reference": "manifest.json"
+    },
+    {
+      "from": "sources/evolutionary-selection/evolutionary-organization/README.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-HISTORY-INTEGRATION.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/evolutionary-organization/README.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-TRANSFER-INTEGRATION.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/evolutionary-organization/README.md",
+      "reference": "../comparative-direction/README.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/developmental-reconstruction-verification/README.md",
+      "reference": "../DevelopmentalReconstruction.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/developmental-reconstruction-verification/README.md",
+      "reference": "../../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/developmental-reconstruction-verification/README.md",
+      "reference": "verification.json"
+    },
+    {
+      "from": "RESEARCH.md",
+      "reference": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "reference": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "EVOLUTIONARY-ORGANIZATION-INTEGRATION.md"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "reference": "15-codex-theory-conversations/2026-10-08-evolutionary-organization-completion.md"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "reference": "evolutionary-selection/evolutionary-organization/README.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "reference": "EVOLUTIONARY-ORGANIZATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "reference": "EVOLUTIONARY-ORGANIZATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "EVOLUTIONARY-ORGANIZATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-COMPARATIVE-DIRECTION.md",
+      "reference": "EVOLUTIONARY-ORGANIZATION-INTEGRATION.md"
+    }
+  ],
+  "owned_index_insertions": 8,
+  "full_theory_requirements_preserved": 6,
+  "new_theorem_count": 20,
+  "new_audit_count": 44,
+  "total_audit_count": 113,
+  "lean_rerun_for_document_only_change": false,
+  "source_sha256": {
+    "sources/evolutionary-selection/evolutionary-organization/ratcliff2015.html": "1ce86a715a15e321a0f9775a42167a030efc6b0b35fd54729df7bd94c7c828a8",
+    "sources/evolutionary-selection/evolutionary-organization/doulcier2024.xml": "a7e5a62f1276ee2a0aa5406a0510a643609538ae80126187a8e0a3c6f5d47402",
+    "sources/evolutionary-selection/doulcier-2025/article.xml": "642e289abfd4d12f061e8416690d8bfea182b0314afa3fc2714c7c8e2d3587e5"
+  },
+  "artifact_sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md": "2c81c90dcae316ef5e09e28de1ee82e7d866aa1d3e41da94415174835396edda",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md": "fa94c195f17f5854fbc1eb9c466ceeec7924a1778f14e891b29827e32559ed0e",
+    "sources/15-codex-theory-conversations/2026-10-08-evolutionary-organization-completion.md": "3f0301236a4ceafba646580ae3271ec6209cac4aff7349684e17df052c203437",
+    "sources/evolutionary-selection/evolutionary-organization/README.md": "ce0ef7c7cdd22667e3731b7cdd196e6513ad98b8b990528de2ffccd3d6f266e2",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/developmental-reconstruction-verification/README.md": "4fcfc7ec46f1ec5b51d9383b58e35e5f1ec3d9967869bccb4c558f91bdbb302c",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INDEX-EDITS.json": "dc04d2d12e4927bbe766a1a547d177635994960f95c903339b6144627cb01dcd",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/DevelopmentalReconstruction.lean": "3aaa9603ec3c20c410d5187fa39aab94d63f47aaa34980077b4526e6feed9053",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/developmental-reconstruction-verification/check.py": "451be67c89f70a23876d4545f01bb05c683dc0380dc834d442ec10193a7ce4e3",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/developmental-reconstruction-verification/verification.json": "c067debaaccebfcc20d2197b938333e273557163346676d2dbc1a9c5bdc0bc3b",
+    "sources/evolutionary-selection/evolutionary-organization/manifest.json": "d64355570ff5a46608cdf4a3a8dd9a6e04e5dac9145f07f8aea9a366ad40a2bc"
+  },
+  "C14_matches_paired_data": true,
+  "other_entries_preserved_at_edit": 85,
+  "shared_table_structural_errors": [],
+  "shared_table_review_pending": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-REVISION-CONTINUATION-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-REVISION-CONTINUATION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md"
+    ],
+    "removed_pages": []
+  },
+  "shared_full_render_matches": true,
+  "checker_sha256": "f5beb3d4f0abee2bf42913ef7b270a0b5de371e21ba7cc9106440a7ebb9d77a9"
+}

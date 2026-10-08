@@ -1,0 +1,1148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1d3 20150301//EN" "http://jats.nlm.nih.gov/publishing/1.1d3/JATS-journalpublishing1.dtd">
+<article article-type="research-article" dtd-version="1.1d3" xml:lang="en" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink">
+<front>
+<journal-meta>
+<journal-id journal-id-type="nlm-ta">PLoS Comput Biol</journal-id>
+<journal-id journal-id-type="publisher-id">plos</journal-id>
+<journal-id journal-id-type="pmc">ploscomp</journal-id>
+<journal-title-group>
+<journal-title>PLOS Computational Biology</journal-title>
+</journal-title-group>
+<issn pub-type="ppub">1553-734X</issn>
+<issn pub-type="epub">1553-7358</issn>
+<publisher>
+<publisher-name>Public Library of Science</publisher-name>
+<publisher-loc>San Francisco, CA USA</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<article-id pub-id-type="publisher-id">PCOMPBIOL-D-20-00157</article-id>
+<article-id pub-id-type="doi">10.1371/journal.pcbi.1008406</article-id>
+<article-categories>
+<subj-group subj-group-type="heading">
+<subject>Research Article</subject>
+</subj-group>
+<subj-group subj-group-type="Discipline-v3">
+<subject>Biology and life sciences</subject><subj-group><subject>Developmental biology</subject><subj-group><subject>Life cycles</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3">
+<subject>Biology and life sciences</subject><subj-group><subject>Cell biology</subject><subj-group><subject>Cellular structures and organelles</subject><subj-group><subject>Cell walls</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3">
+<subject>Biology and life sciences</subject><subj-group><subject>Cell biology</subject><subj-group><subject>Cell processes</subject><subj-group><subject>Cell cycle and cell division</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3">
+<subject>Biology and life sciences</subject><subj-group><subject>Mycology</subject><subj-group><subject>Fungal evolution</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3">
+<subject>Biology and life sciences</subject><subj-group><subject>Evolutionary biology</subject><subj-group><subject>Organismal evolution</subject></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3">
+<subject>Biology and life sciences</subject><subj-group><subject>Population biology</subject><subj-group><subject>Population metrics</subject><subj-group><subject>Death rates</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3">
+<subject>Biology and life sciences</subject><subj-group><subject>Cell biology</subject><subj-group><subject>Cell processes</subject><subj-group><subject>Cell death</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3">
+<subject>Biology and life sciences</subject><subj-group><subject>Microbiology</subject><subj-group><subject>Bacteriology</subject><subj-group><subject>Bacterial evolution</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3">
+<subject>Biology and life sciences</subject><subj-group><subject>Microbiology</subject><subj-group><subject>Microbial evolution</subject><subj-group><subject>Bacterial evolution</subject></subj-group></subj-group></subj-group></subj-group><subj-group subj-group-type="Discipline-v3">
+<subject>Biology and life sciences</subject><subj-group><subject>Evolutionary biology</subject><subj-group><subject>Organismal evolution</subject><subj-group><subject>Microbial evolution</subject><subj-group><subject>Bacterial evolution</subject></subj-group></subj-group></subj-group></subj-group></subj-group></article-categories>
+<title-group>
+<article-title>Evolution of multicellular life cycles under costly fragmentation</article-title>
+<alt-title alt-title-type="running-head">Evolution of multicellular life cycles under costly fragmentation</alt-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author" corresp="yes" xlink:type="simple">
+<contrib-id authenticated="true" contrib-id-type="orcid">https://orcid.org/0000-0003-3078-2499</contrib-id>
+<name name-style="western">
+<surname>Pichugin</surname> <given-names>Yuriy</given-names></name>
+<role content-type="https://casrai.org/credit/">Conceptualization</role>
+<role content-type="https://casrai.org/credit/">Formal analysis</role>
+<role content-type="https://casrai.org/credit/">Investigation</role>
+<role content-type="https://casrai.org/credit/">Software</role>
+<role content-type="https://casrai.org/credit/">Visualization</role>
+<role content-type="https://casrai.org/credit/">Writing – original draft</role>
+<role content-type="https://casrai.org/credit/">Writing – review &amp; editing</role>
+<xref ref-type="aff" rid="aff001"/>
+<xref ref-type="corresp" rid="cor001">*</xref>
+</contrib>
+<contrib contrib-type="author" xlink:type="simple">
+<contrib-id authenticated="true" contrib-id-type="orcid">https://orcid.org/0000-0002-0669-5267</contrib-id>
+<name name-style="western">
+<surname>Traulsen</surname> <given-names>Arne</given-names></name>
+<role content-type="https://casrai.org/credit/">Formal analysis</role>
+<role content-type="https://casrai.org/credit/">Project administration</role>
+<role content-type="https://casrai.org/credit/">Supervision</role>
+<role content-type="https://casrai.org/credit/">Visualization</role>
+<role content-type="https://casrai.org/credit/">Writing – original draft</role>
+<role content-type="https://casrai.org/credit/">Writing – review &amp; editing</role>
+<xref ref-type="aff" rid="aff001"/>
+</contrib>
+</contrib-group>
+<aff id="aff001">
+<addr-line>Max Planck Institute for Evolutionary Biology, August-Thienemann-Str. 2, 24306 Plön, Germany</addr-line>
+</aff>
+<contrib-group>
+<contrib contrib-type="editor" xlink:type="simple">
+<name name-style="western">
+<surname>Maini</surname> <given-names>Philip K.</given-names></name>
+<role>Editor</role>
+<xref ref-type="aff" rid="edit1"/>
+</contrib>
+</contrib-group>
+<aff id="edit1">
+<addr-line>Oxford, UNITED KINGDOM</addr-line>
+</aff>
+<author-notes>
+<fn fn-type="conflict" id="coi001">
+<p>The authors have declared that no competing interests exist.</p>
+</fn>
+<corresp id="cor001">* E-mail: <email xlink:type="simple">pichugin@evolbio.mpg.de</email></corresp>
+</author-notes>
+<pub-date pub-type="collection">
+<month>11</month>
+<year>2020</year>
+</pub-date>
+<pub-date pub-type="epub">
+<day>19</day>
+<month>11</month>
+<year>2020</year>
+</pub-date>
+<volume>16</volume>
+<issue>11</issue>
+<elocation-id>e1008406</elocation-id>
+<history>
+<date date-type="received">
+<day>31</day>
+<month>1</month>
+<year>2020</year>
+</date>
+<date date-type="accepted">
+<day>28</day>
+<month>9</month>
+<year>2020</year>
+</date>
+</history>
+<permissions>
+<copyright-year>2020</copyright-year>
+<copyright-holder>Pichugin, Traulsen</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<self-uri content-type="pdf" xlink:href="info:doi/10.1371/journal.pcbi.1008406"/>
+<abstract>
+<p>A fascinating wealth of life cycles is observed in biology, from unicellularity to the concerted fragmentation of multicellular units. However, the understanding of factors driving their evolution is still limited. We show that costs of fragmentation have a major impact on the evolution of life cycles due to their influence on the growth rates of the associated populations. We model a group structured population of undifferentiated cells, where cell clusters reproduce by fragmentation. Fragmentation events are associated with a cost expressed by either a fragmentation delay, an additional risk, or a cell loss. The introduction of such fragmentation costs vastly increases the set of possible life cycles. Based on these findings, we suggest that the evolution of life cycles involving splitting into multiple offspring can be directly associated with the fragmentation cost. Moreover, the impact of this cost alone is strong enough to drive the emergence of multicellular units that eventually split into many single cells, even under scenarios that strongly disfavour collectives compared to solitary individuals.</p>
+</abstract>
+<abstract abstract-type="summary">
+<title>Author summary</title>
+<p>Even among the simplest bacteria, there is an impressive diversity in reproduction modes: Some organisms split their bodies into multicellular pieces—others produce unicellular propagules. Some organisms give rise to multiple offspring at once, while others fragment into only two parts. What drives the evolution of such reproduction modes? Here, we theoretically investigate a previously overlooked factor: the costs caused by the fragmentation event itself. We show that reproduction costs can be responsible for the evolution of fragmentation into multiple parts. However, not any fragmentation mode is possible—many modes cannot evolve under any cost. Based on mathematical reasoning alone, we can thus make general statements about the evolution of life cycles. Since our results demonstrate that the evolution of reproduction modes is heavily influenced by the costs of the reproduction act, they call for a more thorough experimental consideration of these costs.</p>
+</abstract>
+<funding-group>
+<funding-statement>The authors received no specific funding for this work.</funding-statement>
+</funding-group>
+<counts>
+<fig-count count="5"/>
+<table-count count="1"/>
+<page-count count="19"/>
+</counts>
+<custom-meta-group>
+<custom-meta>
+<meta-name>PLOS Publication Stage</meta-name>
+<meta-value>vor-update-to-uncorrected-proof</meta-value>
+</custom-meta>
+<custom-meta>
+<meta-name>Publication Update</meta-name>
+<meta-value>2020-12-03</meta-value>
+</custom-meta>
+<custom-meta id="data-availability">
+<meta-name>Data Availability</meta-name>
+<meta-value>The code and data used in the manuscript are publicly available at <ext-link ext-link-type="uri" xlink:href="https://github.com/yuriypichugin/Costly-fragmentation-life-cycles" xlink:type="simple">https://github.com/yuriypichugin/Costly-fragmentation-life-cycles</ext-link>.</meta-value>
+</custom-meta>
+</custom-meta-group>
+</article-meta>
+</front>
+<body>
+<sec id="sec001" sec-type="intro">
+<title>Introduction</title>
+<p>All living and evolving organisms are born, grow and reproduce, giving birth to new organisms [<xref ref-type="bibr" rid="pcbi.1008406.ref001">1</xref>–<xref ref-type="bibr" rid="pcbi.1008406.ref010">10</xref>]. This cycle is central to the existence of life on Earth, as natural selection promotes species which perform this cycle in a more efficient way than others. Surprisingly, even presumably simple organisms demonstrate a great variety of life cycles: <italic>Staphylococcus aureus</italic> produces unicellular propagules [<xref ref-type="bibr" rid="pcbi.1008406.ref011">11</xref>], cyanobacteria filaments fragment into multicellular threads [<xref ref-type="bibr" rid="pcbi.1008406.ref012">12</xref>], bacterial biofilms perform seeding dispersal, in which a biofilm composed of sessile cells develops cavities filled with motile cells later released into the environment [<xref ref-type="bibr" rid="pcbi.1008406.ref013">13</xref>, <xref ref-type="bibr" rid="pcbi.1008406.ref014">14</xref>]. Which factors drive the evolution of life cycles and fragmentation modes remains largely unknown, even for the simplest multicellular species. Nevertheless, the examples above illustrate that there is no universally optimal fragmentation mode. Instead, the fragmentation mode is an adaptation to the environmental conditions limited by the biological constraints of the organism [<xref ref-type="bibr" rid="pcbi.1008406.ref009">9</xref>, <xref ref-type="bibr" rid="pcbi.1008406.ref015">15</xref>–<xref ref-type="bibr" rid="pcbi.1008406.ref018">18</xref>].</p>
+<p>One such constraint, which can have an impact on the evolution of life cycles, is the fragmentation cost. There is substantial evidence that fragmentation is costly in natural populations. For example, during the fragmentation of simple multicellular organisms, the release of cells requires breaking the cellular matrix, which takes time and resources [<xref ref-type="bibr" rid="pcbi.1008406.ref019">19</xref>, <xref ref-type="bibr" rid="pcbi.1008406.ref020">20</xref>]. Also, not every cell may pass to the next generation. For instance, in slime molds some cells form a stalk while others serve as spores. The stalk cells die shortly after the spore cells are released [<xref ref-type="bibr" rid="pcbi.1008406.ref021">21</xref>]. In the case of <italic>Volvox carteri</italic> colonies, cells constituting the outer layer of the colony die upon release of the offspring [<xref ref-type="bibr" rid="pcbi.1008406.ref022">22</xref>]. In multicellular colonies of <italic>Saccharomyces cerevisiae</italic> evolved in settling experiments [<xref ref-type="bibr" rid="pcbi.1008406.ref023">23</xref>, <xref ref-type="bibr" rid="pcbi.1008406.ref024">24</xref>], fragmentation events are facilitated by the apoptosis of inner cells, which weakens the links stabilizing a tree-like structure of a colony. Combined, there is evidence that fragmentation can be associated with a conspicuous cost.</p>
+<p>Whether the fragmentation cost is an actual driving force of evolution in natural populations is an open experimental question. Nevertheless, our previous model predicts that costless fragmentation promotes the evolution of only binary fragmentation modes [<xref ref-type="bibr" rid="pcbi.1008406.ref025">25</xref>]. This theoretical finding thus excludes the evolution of life cycles involving fragmentation into multiple parts—but this is a common reproduction strategy among simple multicellular organisms found in nature [<xref ref-type="bibr" rid="pcbi.1008406.ref026">26</xref>–<xref ref-type="bibr" rid="pcbi.1008406.ref030">30</xref>], see <xref ref-type="fig" rid="pcbi.1008406.g001">Fig 1</xref>.</p>
+<fig id="pcbi.1008406.g001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pcbi.1008406.g001</object-id>
+<label>Fig 1</label>
+<caption>
+<title>Examples of multiple fragmentation in nature and their interpretation in terms of our model.</title>
+<p>(<bold>A</bold>) <italic>M. polyspora</italic> grows multiple endopsora, released after the maternal cell lysis (picture adopted from [<xref ref-type="bibr" rid="pcbi.1008406.ref027">27</xref>], Copyright (1998) National Academy of Sciences). (<bold>B</bold>) segmented filamentous bacteria grows two holdfast-bearing cells inside a maternal cell. These cells are released in the result of the maternal cell lysis (picture adopted from [<xref ref-type="bibr" rid="pcbi.1008406.ref029">29</xref>]). The death of maternal cells is the fragmentation cost in these two examples. (<bold>C</bold>) genus <italic>Stanieria</italic> grows multiple cells within a single extracellular matrix. These cells are released simultaneously upon the break of the matrix (Picture adopted from [<xref ref-type="bibr" rid="pcbi.1008406.ref030">30</xref>]). The loss of the extracellular matrix corresponds to a fragmentation cost here.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1008406.g001" xlink:type="simple"/>
+</fig>
+<p>There are only a few theoretical studies of the evolution of reproductive modes which explicitly take into account the fragmentation cost. Libby et al. modelled the evolution of life cycles of colonial forms of <italic>S. cerevisiae</italic> [<xref ref-type="bibr" rid="pcbi.1008406.ref031">31</xref>]. In their model, the fragmentation of tree-structured cell clusters was attributed to the death of cells. These cells become weak links and loose connections with neighbouring cells, causing the fragmentation of the cluster. However, while Libby et al. considered a detailed model of a binary fragmentation of cell clusters, they did not investigate the whole range of fragmentation outcomes. In our own previous work, we have exhaustively analysed all possible ways of fragmentation and found evolutionarily optimal life cycles in various environments [<xref ref-type="bibr" rid="pcbi.1008406.ref025">25</xref>]. For costless fragmentation, only binary fragmentation, where a cell cluster splits into two parts, can be evolutionarily optimal in terms of maximising population growth. The same holds for the case of proportional cost, where upon division into <italic>s</italic> parts, <italic>s</italic> − 1 cells die. However, for fragmentation with a fixed cost in the form of a single cell loss, fragmentation modes with multiple offspring can become evolutionarily optimal [<xref ref-type="bibr" rid="pcbi.1008406.ref025">25</xref>].</p>
+<p>In this study, we investigate the influence of fragmentation cost on the evolution of “staying together” life cycles [<xref ref-type="bibr" rid="pcbi.1008406.ref032">32</xref>]. Building upon the framework of [<xref ref-type="bibr" rid="pcbi.1008406.ref025">25</xref>], we explicitly incorporate fragmentation costs arising from three scenarios: fragmentation delay, fragmentation risk, and cell loss. We identify evolutionarily optimal life cycles maximizing the population growth rate. We show that some life cycles are never optimal and show mathematically why there are such “forbidden” life cycles. Then, we investigate which life cycles are more likely to evolve in the context of costly fragmentation and show that binary and (nearly) equal split life cycles are by far the most abundant after population growth rate optimization. Finally, we consider in detail environments in which an increase in cluster size always reduces the performance of the cluster, i.e. the fastest growth and the best protection is achieved by independent cells. We show that even in these environments that strongly disfavour collective living, fragmentation costs can promote the evolution of life cycles involving the emergence of multicellular units that later split into individual cells. Therefore, fragmentation costs, previously overlooked, are likely to be a notable factor of life cycle evolution.</p>
+</sec>
+<sec id="sec002">
+<title>Model</title>
+<p>Here, we first discuss the development of multicellular units by dividing cells staying together. Then, we present how fragmentation of units can occur. and how the fragmentation costs are taken into account. After that, we introduce resource limitation that restricts the population size. Finally, we discuss the selection occurring in the population defined by the processes above.</p>
+<sec id="sec003">
+<title>Development and death of units</title>
+<p>We consider a growing population composed of unstructured units of identical cells, which emerge, increase in size, and fragment into offspring units, thus completing a life cycle. A unit’s size increases due to dividing cells staying together after a cell division [<xref ref-type="bibr" rid="pcbi.1008406.ref032">32</xref>]. Due to the absence of any internal structure, the properties of a unit are determined by its size <italic>i</italic> alone. The minimal size of a unit is <italic>i</italic> = 1 (a solitary cell) and the maximal size is <italic>i</italic> = <italic>n</italic>. We denote the abundance of units of <italic>i</italic> cells in the population as <italic>x</italic><sub><italic>i</italic></sub>. Units of size <italic>i</italic> have death rate <italic>d</italic><sub><italic>i</italic></sub>, and cells in such a unit have division rate <italic>b</italic><sub><italic>i</italic></sub>. Thus the size of a unit increases with the rate <italic>ib</italic><sub><italic>i</italic></sub>, see <xref ref-type="fig" rid="pcbi.1008406.g002">Fig 2A</xref>. In line with recent studies on the experimental evolution of multicellularity [<xref ref-type="bibr" rid="pcbi.1008406.ref007">7</xref>, <xref ref-type="bibr" rid="pcbi.1008406.ref023">23</xref>, <xref ref-type="bibr" rid="pcbi.1008406.ref033">33</xref>, <xref ref-type="bibr" rid="pcbi.1008406.ref034">34</xref>], we assume that the vectors of division rates <bold>b</bold> = (<italic>b</italic><sub>1</sub>, …, <italic>b</italic><sub><italic>n</italic></sub>) and death rates <bold>d</bold> = (<italic>d</italic><sub>1</sub>, …, <italic>b</italic><sub><italic>n</italic></sub>) mainly come from the interaction of units with external factors, such as the availability of nutrients, the presence of hazards, etc. Hence, we refer to the pair (<bold>b</bold>, <bold>d</bold>) as <italic>environment</italic>.</p>
+<fig id="pcbi.1008406.g002" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pcbi.1008406.g002</object-id>
+<label>Fig 2</label>
+<caption>
+<title>Model of life cycles.</title>
+<p>(<bold>A</bold>) Multicellular units increase in size and fragment to produce new units. Cell division (<italic>b</italic><sub><italic>i</italic></sub>) and unit death (<italic>d</italic><sub><italic>i</italic></sub>) rates depend on the size of the unit and are determined by the environment. If the fragmentation process is costly, the division rate at the maturity size may be smaller than prescribed by the environment alone <inline-formula id="pcbi.1008406.e001"><alternatives><graphic id="pcbi.1008406.e001g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pcbi.1008406.e001" xlink:type="simple"/><mml:math display="inline" id="M1"><mml:mrow><mml:msubsup><mml:mi>b</mml:mi> <mml:mi>m</mml:mi> <mml:mo>′</mml:mo></mml:msubsup> <mml:mo>≤</mml:mo> <mml:msub><mml:mi>b</mml:mi> <mml:mi>m</mml:mi></mml:msub></mml:mrow></mml:math></alternatives></inline-formula> (see <xref ref-type="disp-formula" rid="pcbi.1008406.e004">Eq (1)</xref>), the death rate at the maturity size may be larger than prescribed by the environment alone <inline-formula id="pcbi.1008406.e002"><alternatives><graphic id="pcbi.1008406.e002g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pcbi.1008406.e002" xlink:type="simple"/><mml:math display="inline" id="M2"><mml:mrow><mml:msubsup><mml:mi>d</mml:mi> <mml:mi>m</mml:mi> <mml:mo>′</mml:mo></mml:msubsup> <mml:mo>≥</mml:mo> <mml:msub><mml:mi>d</mml:mi> <mml:mi>m</mml:mi></mml:msub></mml:mrow></mml:math></alternatives></inline-formula> (see <xref ref-type="disp-formula" rid="pcbi.1008406.e006">Eq (2)</xref>), and some cells may be lost upon the fragmentation (highlighted in blue). In this example, <italic>m</italic> = 4, so the unit fragments when it reaches five cells, one cell is lost in fragmentation and the remaining four are split by the fragmentation mode 2+2. (<bold>B</bold>) The fragmentation mode of cell clusters can be described by a sum of integers. All possible fragmentations of units of size 2, 3, and 4 are presented here. Different life cycles have different growth rates and we are looking for the fastest growth in this context.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1008406.g002" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec004">
+<title>Fragmentation</title>
+<p>In each investigated life cycle, units increase in size by means of cell division up to size <italic>m</italic> called <italic>maturity size</italic> (in our model, we have <italic>m</italic> ≤ <italic>n</italic>). Maturity sizes for different life cycles may be different. If a unit of size <italic>m</italic> survives until the next cell division, it will immediately fragment into smaller units according to the specific pattern, unique for each life cycle. As any unit can be characterized by the number of cells comprising it, any fragmentation event can be characterized by a partition of this integer number, see <xref ref-type="fig" rid="pcbi.1008406.g002">Fig 2B</xref>. A partition is a way of decomposing an integer <italic>m</italic> into a sum of integers without regard to order, and summands are called parts [<xref ref-type="bibr" rid="pcbi.1008406.ref035">35</xref>].</p>
+<p>As an example, consider life cycles with maturity size <italic>m</italic> = 3. There, the maximal size of a unit is three cells and the unit fragments when a fourth cell emerges. There are four different ways how four cells can be distributed between two or more units. First, the parental unit can fragment into two unequal pieces of three cells and one cell (partition 3+1 of 4). Second, the parental unit can fragment into two equal pieces of two cells each (partition 2+2 of 4). Third, the parental unit can fragment into three pieces, one of which has two cells and two others are unicellular (partition 2+1+1 of 4). Finally, the parental unit can split into four solitary cells (partition 1+1+1+1 of four), see <xref ref-type="fig" rid="pcbi.1008406.g002">Fig 2B</xref> for graphical illustration of these fragmentation modes. For simplicity of notation, we refer to life cycles by their partitions. For example, the unicellular life cycle, where cells immediately fragment after cell division, is called “1+1 life cycle”.</p>
+<p>The number of partitions of <italic>m</italic> grows quickly with <italic>m</italic>. In the numerical part of the current study, we use a maximal size of <italic>n</italic> = 19 and thus size before fragmentation does not exceed 20, which leads to 2693 different life cycles [<xref ref-type="bibr" rid="pcbi.1008406.ref025">25</xref>]. Our analytical results, however, are valid for any choice of <italic>n</italic>.</p>
+<p>In the course of this manuscript we only consider deterministic life cycles, where all groups fragment according to the same fragmentation mode. It can be shown that stochastic life cycles, representing bet-hedging reproductive strategies, are always evolutionarily suboptimal in the scope of our model, see <xref ref-type="supplementary-material" rid="pcbi.1008406.s006">S6 Text</xref>. Stochastic life cycles can evolve, however, when the environment (<bold>b</bold>, <bold>d</bold>) is variable in time [<xref ref-type="bibr" rid="pcbi.1008406.ref036">36</xref>].</p>
+</sec>
+<sec id="sec005">
+<title>Three ways of implementing fragmentation costs</title>
+<p>Next, we assume that the fragmentation of a unit comes at a cost for this unit. By cost, we mean that comparing two identical units, one of which fragments at some moment, while another continues growing, the expected size of the fragmenting unit (or the sum of the expected sizes of its offspring) will be smaller for at least a brief period of time. We consider three qualitatively different scenarios that describe a fragmentation cost: fragmentation delay, fragmentation risk, and fragmentation loss. Fragmentation costs represents various physiological restrictions of the units life history and assumed to be independent on the life cycle. Thus, growth competition between different life cycles maximizes the population growth rate, given the fixed environment and the fixed fragmentation cost.</p>
+<sec id="sec006">
+<title>Fragmentation delay</title>
+<p>In the case of fragmentation delays, the process of fragmentation is not immediate and takes time <italic>T</italic>. This scenario covers situations where the fragmentation of a unit requires the investment of resources, which would otherwise be spent on cell propagation. The transition time is inverse to the transition rate, thus we define the rate of fragmentation <inline-formula id="pcbi.1008406.e003"><alternatives><graphic id="pcbi.1008406.e003g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pcbi.1008406.e003" xlink:type="simple"/><mml:math display="inline" id="M3"><mml:msubsup><mml:mi>b</mml:mi> <mml:mi>m</mml:mi> <mml:mo>′</mml:mo></mml:msubsup></mml:math></alternatives></inline-formula> of a unit of size <italic>m</italic> by
+<disp-formula id="pcbi.1008406.e004"><alternatives><graphic id="pcbi.1008406.e004g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pcbi.1008406.e004" xlink:type="simple"/><mml:math display="block" id="M4"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mfrac><mml:mn>1</mml:mn> <mml:mrow><mml:mi>m</mml:mi> <mml:msubsup><mml:mi>b</mml:mi> <mml:mi>m</mml:mi> <mml:mo>′</mml:mo></mml:msubsup></mml:mrow></mml:mfrac> <mml:mo>=</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mrow><mml:mi>m</mml:mi> <mml:msub><mml:mi>b</mml:mi> <mml:mi>m</mml:mi></mml:msub></mml:mrow></mml:mfrac> <mml:mo>+</mml:mo> <mml:mi>T</mml:mi> <mml:mo>,</mml:mo> <mml:mspace width="5.0pt"/><mml:mspace width="4pt"/><mml:mtext>such</mml:mtext> <mml:mspace width="4pt"/><mml:mtext>that</mml:mtext> <mml:mspace width="4pt"/><mml:mspace width="5.0pt"/><mml:msubsup><mml:mi>b</mml:mi> <mml:mi>m</mml:mi> <mml:mo>′</mml:mo></mml:msubsup> <mml:mo>=</mml:mo> <mml:mfrac><mml:msub><mml:mi>b</mml:mi> <mml:mi>m</mml:mi></mml:msub> <mml:mrow><mml:mn>1</mml:mn> <mml:mo>+</mml:mo> <mml:mi>m</mml:mi> <mml:msub><mml:mi>b</mml:mi> <mml:mi>m</mml:mi></mml:msub> <mml:mi>T</mml:mi></mml:mrow></mml:mfrac> <mml:mo>≤</mml:mo> <mml:msub><mml:mi>b</mml:mi> <mml:mi>m</mml:mi></mml:msub> <mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(1)</label></disp-formula>
+where <italic>T</italic> is the fragmentation delay.</p>
+</sec>
+<sec id="sec007">
+<title>Fragmentation with risk of death</title>
+<p>In the case of fragmentation with risk, a unit has an increased death risk prior to fragmentation. For example, a unit could leave the shelter or break its shell in order to reproduce. Under this scenario, the death rate at the maturity size <inline-formula id="pcbi.1008406.e005"><alternatives><graphic id="pcbi.1008406.e005g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pcbi.1008406.e005" xlink:type="simple"/><mml:math display="inline" id="M5"><mml:msubsup><mml:mi>d</mml:mi> <mml:mi>m</mml:mi> <mml:mo>′</mml:mo></mml:msubsup></mml:math></alternatives></inline-formula> is increased
+<disp-formula id="pcbi.1008406.e006"><alternatives><graphic id="pcbi.1008406.e006g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pcbi.1008406.e006" xlink:type="simple"/><mml:math display="block" id="M6"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:msubsup><mml:mi>d</mml:mi> <mml:mi>m</mml:mi> <mml:mo>′</mml:mo></mml:msubsup> <mml:mo>=</mml:mo> <mml:msub><mml:mi>d</mml:mi> <mml:mi>m</mml:mi></mml:msub> <mml:mo>+</mml:mo> <mml:mi>R</mml:mi> <mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(2)</label></disp-formula>
+where <italic>R</italic> is the increase in the death rate triggered by the additional risk.</p>
+</sec>
+<sec id="sec008">
+<title>Fragmentation with loss</title>
+<p>For fragmentation with loss, <italic>L</italic> cells die just before a unit fragments. Thus, the combined size of offspring units is <italic>L</italic> cells smaller than the size of the parent unit. In this scenario, the fragmentation following the increment of size from <italic>m</italic> cells to <italic>m</italic> + 1 cells is characterized by a partition <italic>κ</italic> of <italic>m</italic> + 1 − <italic>L</italic>. We assume that <italic>L</italic> is independent of the partition chosen. Thus, the minimal maturity size possible is <italic>m</italic> = 1 + <italic>L</italic> and the maximal possible combined offspring size is <italic>n</italic> + 1 − <italic>L</italic>.</p>
+<p>Note, that the three considered scenarios are not mutually exclusive, all three types of cost may be present simultaneously. However, for simplicity we do not consider their interplay in the current work.</p>
+</sec>
+</sec>
+<sec id="sec009">
+<title>Resource limitation</title>
+<p>With constant growth and death rates, the population either goes extinct or exponentially increases in size. This does not occur in natural population due to the limitation of resources such as nutrients, physical space, or sunlight. To represent this constraint, we now add a density dependent death process to our model. The rate of unit death is directly proportional to the total number of units in a population with the reaction constant 1/<italic>K</italic> ≪ 1, see <xref ref-type="fig" rid="pcbi.1008406.g002">Fig 2A</xref>. In the long run, a population subjected to such process reaches the carrying capacity, with a magnitude of <italic>K</italic> units.</p>
+</sec>
+<sec id="sec010">
+<title>Life cycle competition</title>
+<p>The dynamics of population is governed by the growth of units, costly fragmentation into smaller parts, and resource competition. For a given life cycle, the state of a population can be described by the abundances of units <italic>x</italic><sub><italic>i</italic></sub> of each possible size <italic>i</italic> from one cell to <italic>m</italic> cells, given by the vector (<italic>x</italic><sub>1</sub>, <italic>x</italic><sub>2</sub>, ⋯, <italic>x</italic><sub><italic>m</italic></sub>). There are no units of size <italic>m</italic> + 1 or larger, because any unit fragments immediately after the next cell arises in a unit of the maturity size <italic>m</italic>.</p>
+<p>The dynamics of the population state can be expressed as a system of <italic>m</italic> differential equations—one equation for each unit size. The set of equations for a life cycle with fragmentation pattern <italic>κ</italic> is given by
+<disp-formula id="pcbi.1008406.e007"><alternatives><graphic id="pcbi.1008406.e007g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pcbi.1008406.e007" xlink:type="simple"/><mml:math display="block" id="M7"><mml:mrow><mml:mfrac><mml:mi>d</mml:mi> <mml:mrow><mml:mi>d</mml:mi> <mml:mi>t</mml:mi></mml:mrow></mml:mfrac> <mml:msub><mml:mi>x</mml:mi> <mml:mn>1</mml:mn></mml:msub> <mml:mo>=</mml:mo></mml:mrow><mml:mrow><mml:mo>-</mml:mo> <mml:msub><mml:mi>b</mml:mi> <mml:mn>1</mml:mn></mml:msub> <mml:msub><mml:mi>x</mml:mi> <mml:mn>1</mml:mn></mml:msub> <mml:mo>-</mml:mo> <mml:msub><mml:mi>d</mml:mi> <mml:mn>1</mml:mn></mml:msub> <mml:msub><mml:mi>x</mml:mi> <mml:mn>1</mml:mn></mml:msub> <mml:mo>+</mml:mo> <mml:msub><mml:mi>π</mml:mi> <mml:mn>1</mml:mn></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>κ</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mi>m</mml:mi> <mml:msubsup><mml:mi>b</mml:mi> <mml:mi>m</mml:mi> <mml:mo>′</mml:mo></mml:msubsup> <mml:msub><mml:mi>x</mml:mi> <mml:mi>m</mml:mi></mml:msub> <mml:mo>-</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mi>K</mml:mi></mml:mfrac> <mml:mi>X</mml:mi> <mml:msub><mml:mi>x</mml:mi> <mml:mn>1</mml:mn></mml:msub></mml:mrow></mml:math></alternatives> <label>(3a)</label></disp-formula>
+<disp-formula id="pcbi.1008406.e008"><alternatives><graphic id="pcbi.1008406.e008g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pcbi.1008406.e008" xlink:type="simple"/><mml:math display="block" id="M8"><mml:mrow><mml:mfrac><mml:mi>d</mml:mi> <mml:mrow><mml:mi>d</mml:mi> <mml:mi>t</mml:mi></mml:mrow></mml:mfrac> <mml:msub><mml:mi>x</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mo>=</mml:mo></mml:mrow><mml:mrow><mml:munder><mml:munder accentunder="true"><mml:mrow><mml:mo>-</mml:mo> <mml:mi>i</mml:mi> <mml:msub><mml:mi>b</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:msub><mml:mi>x</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mo>+</mml:mo> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>i</mml:mi> <mml:mo>-</mml:mo> <mml:mspace width="-0.166667em"/><mml:mn>1</mml:mn> <mml:mo>)</mml:mo></mml:mrow> <mml:msub><mml:mi>b</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mo>-</mml:mo> <mml:mn>1</mml:mn></mml:mrow></mml:msub> <mml:msub><mml:mi>x</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mo>-</mml:mo> <mml:mn>1</mml:mn></mml:mrow></mml:msub></mml:mrow> <mml:mo>︸</mml:mo></mml:munder> <mml:mrow><mml:mtext>Cell</mml:mtext> <mml:mspace width="4pt"/><mml:mtext>division</mml:mtext></mml:mrow></mml:munder> <mml:munder><mml:munder accentunder="true"><mml:mrow><mml:mo>-</mml:mo> <mml:msub><mml:mi>d</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:msub><mml:mi>x</mml:mi> <mml:mi>i</mml:mi></mml:msub></mml:mrow> <mml:mo>︸</mml:mo></mml:munder> <mml:mtext>Death</mml:mtext></mml:munder> <mml:munder><mml:munder accentunder="true"><mml:mrow><mml:mo>+</mml:mo> <mml:msub><mml:mi>π</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>κ</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mi>m</mml:mi> <mml:msubsup><mml:mi>b</mml:mi> <mml:mi>m</mml:mi> <mml:mo>′</mml:mo></mml:msubsup> <mml:msub><mml:mi>x</mml:mi> <mml:mi>m</mml:mi></mml:msub></mml:mrow> <mml:mo>︸</mml:mo></mml:munder> <mml:mtext>Fragmentation</mml:mtext></mml:munder> <mml:munder><mml:munder accentunder="true"><mml:mrow><mml:mo>-</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mi>K</mml:mi></mml:mfrac> <mml:mi>X</mml:mi> <mml:msub><mml:mi>x</mml:mi> <mml:mi>i</mml:mi></mml:msub></mml:mrow> <mml:mo>︸</mml:mo></mml:munder> <mml:mtext>Competition</mml:mtext></mml:munder> <mml:mspace width="1em"/><mml:mtext>for</mml:mtext> <mml:mspace width="1em"/><mml:mn>1</mml:mn> <mml:mo>&lt;</mml:mo> <mml:mi>i</mml:mi> <mml:mo>&lt;</mml:mo> <mml:mi>m</mml:mi></mml:mrow></mml:math></alternatives> <label>(3b)</label></disp-formula>
+<disp-formula id="pcbi.1008406.e009"><alternatives><graphic id="pcbi.1008406.e009g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pcbi.1008406.e009" xlink:type="simple"/><mml:math display="block" id="M9"><mml:mrow><mml:mfrac><mml:mi>d</mml:mi> <mml:mrow><mml:mi>d</mml:mi> <mml:mi>t</mml:mi></mml:mrow></mml:mfrac> <mml:msub><mml:mi>x</mml:mi> <mml:mi>m</mml:mi></mml:msub> <mml:mo>=</mml:mo></mml:mrow><mml:mrow><mml:mo>-</mml:mo> <mml:mi>m</mml:mi> <mml:msubsup><mml:mi>b</mml:mi> <mml:mi>m</mml:mi> <mml:mo>′</mml:mo></mml:msubsup> <mml:msub><mml:mi>x</mml:mi> <mml:mi>m</mml:mi></mml:msub> <mml:mo>+</mml:mo> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>m</mml:mi> <mml:mo>-</mml:mo> <mml:mn>1</mml:mn> <mml:mo>)</mml:mo></mml:mrow> <mml:msub><mml:mi>b</mml:mi> <mml:mrow><mml:mi>m</mml:mi> <mml:mo>-</mml:mo> <mml:mn>1</mml:mn></mml:mrow></mml:msub> <mml:msub><mml:mi>x</mml:mi> <mml:mrow><mml:mi>m</mml:mi> <mml:mo>-</mml:mo> <mml:mn>1</mml:mn></mml:mrow></mml:msub> <mml:mo>-</mml:mo> <mml:msubsup><mml:mi>d</mml:mi> <mml:mi>m</mml:mi> <mml:mo>′</mml:mo></mml:msubsup> <mml:msub><mml:mi>x</mml:mi> <mml:mi>m</mml:mi></mml:msub> <mml:mo>+</mml:mo> <mml:msub><mml:mi>π</mml:mi> <mml:mi>m</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>κ</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mi>m</mml:mi> <mml:msubsup><mml:mi>b</mml:mi> <mml:mi>m</mml:mi> <mml:mo>′</mml:mo></mml:msubsup> <mml:msub><mml:mi>x</mml:mi> <mml:mi>m</mml:mi></mml:msub> <mml:mo>-</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mi>K</mml:mi></mml:mfrac> <mml:mi>X</mml:mi> <mml:msub><mml:mi>x</mml:mi> <mml:mi>m</mml:mi></mml:msub> <mml:mo>,</mml:mo></mml:mrow></mml:math></alternatives> <label>(3c)</label></disp-formula>
+where <inline-formula id="pcbi.1008406.e010"><alternatives><graphic id="pcbi.1008406.e010g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pcbi.1008406.e010" xlink:type="simple"/><mml:math display="inline" id="M10"><mml:mrow><mml:mi>X</mml:mi> <mml:mo>=</mml:mo> <mml:msubsup><mml:mo>∑</mml:mo> <mml:mrow><mml:mi>j</mml:mi> <mml:mo>=</mml:mo> <mml:mn>1</mml:mn></mml:mrow> <mml:mi>m</mml:mi></mml:msubsup> <mml:msub><mml:mi>x</mml:mi> <mml:mi>j</mml:mi></mml:msub></mml:mrow></mml:math></alternatives></inline-formula> is the total number of groups in the whole population, including lineages with other life cycles.</p>
+<p>Here, Eqs (<xref ref-type="disp-formula" rid="pcbi.1008406.e007">3a</xref>) and (<xref ref-type="disp-formula" rid="pcbi.1008406.e008">3b</xref>) describe the dynamics of the abundances of units <italic>x</italic><sub><italic>i</italic></sub> that increase in size without fragmentation, because they do not reach the maturity size <italic>m</italic>. The first two terms in <xref ref-type="disp-formula" rid="pcbi.1008406.e008">Eq (3b)</xref> −<italic>ib</italic><sub><italic>i</italic></sub> <italic>x</italic><sub><italic>i</italic></sub> + (<italic>i</italic> − 1)<italic>b</italic><sub><italic>i</italic>−1</sub> <italic>x</italic><sub><italic>i</italic>−1</sub> describe the change in <italic>x</italic><sub><italic>i</italic></sub> due to cell division. The third term −<italic>d</italic><sub><italic>i</italic></sub> <italic>x</italic><sub><italic>i</italic></sub> describes the death of units. The next term <inline-formula id="pcbi.1008406.e011"><alternatives><graphic id="pcbi.1008406.e011g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pcbi.1008406.e011" xlink:type="simple"/><mml:math display="inline" id="M11"><mml:mrow><mml:msub><mml:mi>π</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mrow><mml:mo>(</mml:mo> <mml:mi>κ</mml:mi> <mml:mo>)</mml:mo></mml:mrow> <mml:mi>m</mml:mi> <mml:msubsup><mml:mi>b</mml:mi> <mml:mi>m</mml:mi> <mml:mo>′</mml:mo></mml:msubsup> <mml:msub><mml:mi>x</mml:mi> <mml:mi>m</mml:mi></mml:msub></mml:mrow></mml:math></alternatives></inline-formula> describes the emergence of new units of size <italic>i</italic> resulting from the fragmentation of mature units. The integer <italic>π</italic><sub><italic>i</italic></sub>(<italic>κ</italic>) is the number of units of size <italic>i</italic> that emerge in a single act of fragmentation according to the partition <italic>κ</italic> (for example for <italic>κ</italic> = 1 + 1 + 1, we have <italic>π</italic><sub>1</sub>(<italic>κ</italic>) = 3 and <italic>π</italic><sub><italic>i</italic></sub>(<italic>κ</italic>) = 0 for <italic>i</italic> &gt; 1), and <inline-formula id="pcbi.1008406.e012"><alternatives><graphic id="pcbi.1008406.e012g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pcbi.1008406.e012" xlink:type="simple"/><mml:math display="inline" id="M12"><mml:mrow><mml:mi>m</mml:mi> <mml:msubsup><mml:mi>b</mml:mi> <mml:mi>m</mml:mi> <mml:mo>′</mml:mo></mml:msubsup></mml:mrow></mml:math></alternatives></inline-formula> is the growth rate prior to fragmentation (see <xref ref-type="disp-formula" rid="pcbi.1008406.e004">Eq (1)</xref>). Finally, the last term <inline-formula id="pcbi.1008406.e013"><alternatives><graphic id="pcbi.1008406.e013g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pcbi.1008406.e013" xlink:type="simple"/><mml:math display="inline" id="M13"><mml:mrow><mml:mo>-</mml:mo> <mml:mfrac><mml:mn>1</mml:mn> <mml:mi>K</mml:mi></mml:mfrac> <mml:mi>X</mml:mi> <mml:msub><mml:mi>x</mml:mi> <mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:math></alternatives></inline-formula> describes competition, leading to density dependent death.</p>
+<p>
+<xref ref-type="disp-formula" rid="pcbi.1008406.e009">Eq (3c)</xref> describes the dynamics of units of maturity size <italic>m</italic>, which will inevitably fragment according to the partition <italic>κ</italic> upon the next cell division. For fragmentation with delay, the rate of transition to the next state (fragmentation) is smaller than the division rate determined by the environment (<inline-formula id="pcbi.1008406.e014"><alternatives><graphic id="pcbi.1008406.e014g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pcbi.1008406.e014" xlink:type="simple"/><mml:math display="inline" id="M14"><mml:mrow><mml:msubsup><mml:mi>b</mml:mi> <mml:mi>m</mml:mi> <mml:mo>′</mml:mo></mml:msubsup> <mml:mo>&lt;</mml:mo> <mml:msub><mml:mi>b</mml:mi> <mml:mi>m</mml:mi></mml:msub></mml:mrow></mml:math></alternatives></inline-formula>, see <xref ref-type="disp-formula" rid="pcbi.1008406.e004">Eq (1)</xref>). For fragmentation with risk, the death rate is larger (<inline-formula id="pcbi.1008406.e015"><alternatives><graphic id="pcbi.1008406.e015g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pcbi.1008406.e015" xlink:type="simple"/><mml:math display="inline" id="M15"><mml:mrow><mml:msubsup><mml:mi>d</mml:mi> <mml:mi>m</mml:mi> <mml:mo>′</mml:mo></mml:msubsup> <mml:mo>&gt;</mml:mo> <mml:msub><mml:mi>d</mml:mi> <mml:mi>m</mml:mi></mml:msub></mml:mrow></mml:math></alternatives></inline-formula>) than induced by the environment death rate vector <bold>d</bold> (see <xref ref-type="disp-formula" rid="pcbi.1008406.e006">Eq (2)</xref>).</p>
+<p>Thus, <xref ref-type="disp-formula" rid="pcbi.1008406.e007">Eq (3)</xref> describe a single life cycle. It can be characterized by the growth rate of the life cycle, which emerges as the exponential growth rate of the lineage performing this life cycle once the relative sizes of each unit does not change anymore. This exponential growth rate is the key parameter for evolutionary competition in our model: We can imagine a population, in which different lineages perform different life cycles. There, some lineages will become more abundant, while others will go extinct. We investigate which factors provide an evolutionarily advantage to a life cycle to win the competition by natural selection.</p>
+</sec>
+</sec>
+<sec id="sec011" sec-type="results">
+<title>Results</title>
+<sec id="sec012">
+<title>In any environment there is a single evolutionarily optimal life cycle</title>
+<p>Our first finding is that the competition of life cycles has the same outcome as in the simplified model without resource limitation (<italic>K</italic> = 0), see <xref ref-type="supplementary-material" rid="pcbi.1008406.s001">S1 Text</xref> for details. Without resource limitation, the system is described by a linear matrix population model characterized by the matrix <italic>A</italic><sub><italic>ij</italic></sub>,
+<disp-formula id="pcbi.1008406.e016"><alternatives><graphic id="pcbi.1008406.e016g" mimetype="image" position="anchor" xlink:href="info:doi/10.1371/journal.pcbi.1008406.e016" xlink:type="simple"/><mml:math display="block" id="M16"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mfrac><mml:mi>d</mml:mi> <mml:mrow><mml:mi>d</mml:mi> <mml:mi>t</mml:mi></mml:mrow></mml:mfrac> <mml:msub><mml:mi>x</mml:mi> <mml:mi>i</mml:mi></mml:msub> <mml:mo>=</mml:mo> <mml:munder><mml:mo>∑</mml:mo> <mml:mi>j</mml:mi></mml:munder> <mml:msub><mml:mi>A</mml:mi> <mml:mrow><mml:mi>i</mml:mi> <mml:mi>j</mml:mi></mml:mrow></mml:msub> <mml:msub><mml:mi>x</mml:mi> <mml:mi>j</mml:mi></mml:msub> <mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:math></alternatives> <label>(4)</label></disp-formula>
+see <xref ref-type="supplementary-material" rid="pcbi.1008406.s002">S2 Text</xref> for details of the matrix construction. There, the competition of life cycles is determined by their intrinsic growth rate, equal to the leading eigenvalue of the matrix <italic>A</italic><sub><italic>ij</italic></sub>. Consequently, in any environment, the life cycle having the maximal growth rate will eventually dominate the system, independently of the initial conditions.</p>
+<p>Below, to find the evolutionarily optimal life cycle, we fix the division rates (<bold>b</bold>), the death rates (<bold>d</bold>), and the fragmentation costs (<italic>T</italic>, <italic>R</italic>, <italic>L</italic>). Then, we compute the population growth rates for each individual life cycle and find one with the maximal value. Our analytical results on the forbidden life cycles are valid for any maximal size <italic>n</italic> and any combination of environment and fragmentation costs. For simplicity, our numerical results consider each of the three fragmentation cost scenarios separately.</p>
+</sec>
+<sec id="sec013">
+<title>Some life cycles cannot be evolutionarily optimal under any environment</title>
+<p>Here, we show that many life cycles cannot be evolutionary optimal in any environment. We label these life cycles “forbidden life cycles”. Consequently, we call a life cycle that can be evolutionarily optimal under some environment an “allowed life cycle”.</p>
+<p>All three scenarios of the fragmentation cost (delay, risk and loss) lead to the same condition for a life cycle to be allowed: fragmentation by the partition <italic>κ</italic> leads to an allowed life cycle only if any two subsets of its parts with the same sum have the same form. Consequently, <italic>κ</italic> leads to a forbidden life cycle if <italic>κ</italic> contains two subsets of parts with the same sum, but with a different form. In other words, within the partition <italic>κ</italic>, we can find two different partitions <italic>τ</italic><sub>1</sub> and <italic>τ</italic><sub>2</sub> of the same integer <italic>j</italic>. For any environment and any fragmentation cost scenario, every forbidden life cycle has smaller population growth rate λ than at least one allowed life cycle, see <xref ref-type="supplementary-material" rid="pcbi.1008406.s003">S3 Text</xref> for a proof.</p>
+<p>The simplest example of a forbidden life cycle is the partition 2+1+1, which has two different offspring subsets: 2 and 1+1, both having the same combined size 2. The fate of the two subpopulations founded by the offspring, 2 and 1+1, is entirely independent of each other. Generically, either the subpopulation starting with a unit of two cells or the subpopulation starting with two unicells will have the larger growth rate. In the first case, the life cycle 2+2 would ultimately lead to a larger growth than 2+1+1, whereas in the second case the life cycle 1+1+1+1 would lead to a larger growth. More examples of forbidden life cycles are presented on <xref ref-type="fig" rid="pcbi.1008406.g003">Fig 3A</xref>. The proportion of forbidden life cycles increases rapidly with the partition sum (see black bars on <xref ref-type="fig" rid="pcbi.1008406.g003">Fig 3B</xref>). Computationally assessing each of our 2693 partitions, we found 2006 partitions corresponding to forbidden life cycles, roughly 75%.</p>
+<fig id="pcbi.1008406.g003" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pcbi.1008406.g003</object-id>
+<label>Fig 3</label>
+<caption>
+<title>The majority of life cycles cannot win growth competition and are thus called forbidden.</title>
+<p>(<bold>A</bold>) All possible fragmentation modes with combined fragments size equal to 7. Allowed modes are further broken into binary, (nearly) equal split, seeding, and other classes, according to the definitions in the main text. For each of the forbidden modes, a couple of different subsets of parts with the same sum are underlined. (<bold>B</bold>) Proportions of different classes of fragmentation modes for different combined size at fragmentation. For sizes 2 and 3, all partitions are allowed. Starting from size 4, some are forbidden (for 4, it is 2+1+1). The proportion of forbidden modes grows rapidly with the size. For even sizes, more forbidden modes exist. Among the allowed modes, the proportions of binary, (nearly) equal split and seeding classes rapidly declines.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1008406.g003" xlink:type="simple"/>
+</fig>
+</sec>
+<sec id="sec014">
+<title>Classification of life cycles</title>
+<p>The total amount of allowed life cycles is still too large to track each of them individually. Therefore, we distinguish three classes: binary fragmentations, (nearly) equal splits, and seeding life cycles, see also <xref ref-type="fig" rid="pcbi.1008406.g003">Fig 3A</xref>.</p>
+<p>Binary fragmentations have only two parts and are of the form <italic>κ</italic> = <italic>a</italic> + <italic>b</italic>. Examples of binary partitions are 2+2 and 7+1. Among the non-binary fragmentation modes (where we have at least three offspring units), we distinguish (nearly) equal splits and seeding partitions. Note that we call the split into two identical units binary (but at the same time, it would be an equal split). In (nearly) equal split partitions, the sizes of the largest and the smallest offspring differ by no more than one cell. In other words, (nearly) equal splits have the form <italic>κ</italic> = <italic>a</italic> + … + <italic>a</italic> + <italic>b</italic> + … + <italic>b</italic> such that <italic>b</italic> = <italic>a</italic> (true equal split) or <italic>b</italic> = <italic>a</italic> − 1 (nearly equal split). For (nearly) equal split partition to be allowed, there must be either less than <italic>b</italic> parts of size <italic>a</italic>, or less than <italic>a</italic> parts of size <italic>b</italic>. Examples of (nearly) equal splits are 1+1+1 and 3+3+2+2. (Nearly) equal splits represent scenarios where cells are distributed among multiple offspring units as evenly as possible.</p>
+<p>Finally, seeding partitions have the form <italic>κ</italic> = <italic>a</italic> + <italic>b</italic> + … + <italic>b</italic> with the restriction <italic>a</italic> &gt; <italic>b</italic> + … + <italic>b</italic> to make sure that the partition is allowed. Examples of seeding are 3+1+1 and 7+2+2+2. Distinguishing the seeding fragmentation modes is inspired by seeding dispersal exhibited by biofilms, where a small portion of cells leaves the parent cell cluster in an act of fragmentation.</p>
+<p>Some allowed partitions do not belong to any of these three classes, for instance, 4+2+1 and 3+3+1. We lump them together in the “other” partitions class. The proportion of binary, (nearly) equal, and seeding partitions among all allowed partitions decreases with the partition sum, see <xref ref-type="fig" rid="pcbi.1008406.g003">Fig 3B</xref>). For <italic>n</italic> = 19, we have 2693 partitions in total. Among the 687 allowed partitions, there are 100 binary partitions, 80 (nearly) equal split partitions, 110 seeding partitions and 397 other allowed partitions, which do not belong to either of these three classes.</p>
+</sec>
+<sec id="sec015">
+<title>(Nearly) equal split and binary fragmentation life cycles are overrepresented for random environments</title>
+<p>Our previous findings introduced the range of potentially optimal life cycles, but they did not give any insight into which life cycles are more likely to be optimal. To address this, it would be necessary to know the environment (profiles <bold>b</bold> and <bold>d</bold>) and the fragmentation costs (<italic>T</italic>, <italic>R</italic>, <italic>L</italic>). Unfortunately, such empirical data is not available, neither for natural nor for experimental populations.</p>
+<p>Thus we generated a set of 10000 random environments, see <xref ref-type="supplementary-material" rid="pcbi.1008406.s004">S4 Text</xref>. We independently assessed each of the three fragmentation cost scenarios (delay, risk, or loss). For delay and risk, we used 200 different values of <italic>T</italic> and <italic>R</italic>, respectively, in the interval [0, 20]. For the scenario of the cell loss, we used each possible value of <italic>L</italic> from 0 to <italic>n</italic> − 2 = 18. For each combination of the environment from the random set and the fragmentation cost, we numerically computed the evolutionarily optimal life cycle—in total more than 4 ⋅ 10<sup>6</sup> data points. This allows to screen through an extremely diverse set of selective conditions. Using this approach, we can distinguish life cycles remaining evolutionarily optimal under a broad range of conditions from life cycles which may only evolve in special circumstances.</p>
+<p>When the fragmentation is costless (<italic>T</italic> = <italic>R</italic> = <italic>L</italic> = 0) only binary fragmentations can be evolutionarily optimal [<xref ref-type="bibr" rid="pcbi.1008406.ref025">25</xref>], while seeding, equal split, and the other life cycles cannot evolve. This leaves only 14% of the total 687 allowed life cycles. It is remarkable that under a costly fragmentation, more than 96% (662) of life cycles occur as an evolutionary optimal in some combination of the environment and the fragmentation cost for our parameter set. All allowed life cycles with maturity size up to <italic>m</italic> = 10 can be evolutionarily optimal in each of the three scenarios for the fragmentation costs. Additionally, all allowed life cycles with maturity size of up to <italic>m</italic> = 14 can be evolutionarily optimal in at least one of the three scenarios. Allowed life cycles, which were not evolutionarily optimal have large maturity size and likely are optimal under an extremely narrow range of conditions, which was not captured by our screening due to the limited sample size. Our findings suggest that any allowed life cycle can become evolutionarily optimal given the right combination of environment and fragmentation cost.</p>
+<p>In the delay scenario, the most frequently observed fragmentation mode is unicellularity, 1+1, see <xref ref-type="fig" rid="pcbi.1008406.g004">Fig 4A</xref>. Among the ten most frequent fragmentation modes, we observe in particular binary and equal split life cycles at large and small sizes. Thus, delay fragmentation costs provide an advantage to equal split life cycles relative to the costless scenario.</p>
+<fig id="pcbi.1008406.g004" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pcbi.1008406.g004</object-id>
+<label>Fig 4</label>
+<caption>
+<title>Fragmentations by binary and (nearly) equal split partitions are likely to evolve in random environments.</title>
+<p>The top panels present the ten most frequent fragmentation modes for (<bold>A</bold>) fragmentation with delay, (<bold>B</bold>) fragmentation with increased death risk and (<bold>C</bold>) fragmentation with cell loss, respectively. Each bar shows the frequency of the corresponding life cycle to be evolutionarily optimal. The colour of the bar represents the class of the life cycle, see <xref ref-type="fig" rid="pcbi.1008406.g003">Fig 3</xref>. (Nearly) equal split life cycles are represented in the form of 1+ … + 1 and the total number of cells Σ. The bottom panels <bold>(D—F)</bold> present the fractions of each of binary fragmentation, (nearly) equal split, seeding, and other allowed fragmentation modes as functions of fragmentation cost for the same scenarios. The majority of random environments promote the evolution of (nearly) equal split and binary fragmentation modes.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1008406.g004" xlink:type="simple"/>
+</fig>
+<p>In the death risk scenario, the most frequently observed fragmentation mode is the equal split into 1 + … + 1 at the maximal possible size <italic>m</italic> = 20, see <xref ref-type="fig" rid="pcbi.1008406.g004">Fig 4B</xref>. Other frequent life cycles are equal splits at a large size (20, 19, 18, etc). Thus, delay fragmentation costs provide a large advantage to equal split life cycles with large maturity sizes relative to the costless scenario.</p>
+<p>In the cell loss scenario, the most frequently observed fragmentation mode is unicellularity, 1+1, see <xref ref-type="fig" rid="pcbi.1008406.g004">Fig 4C</xref>. Other frequent life cycles are mostly equal splits at small sizes (3, 4, 5, etc). Altogether, in all scenarios, the ten most frequent fragmentation modes are either binary or equal split. Thus, loss fragmentation costs provide an advantage again to equal split life cycles relative to the costless scenario.</p>
+<p>If there are no fragmentation costs (<italic>T</italic> = <italic>R</italic> = <italic>L</italic> = 0), only binary partitions are evolutionarily optimal, as shown in [<xref ref-type="bibr" rid="pcbi.1008406.ref025">25</xref>]. However, even minimal fragmentation costs allow life cycles from all four classes to evolve, see <xref ref-type="fig" rid="pcbi.1008406.g004">Fig 4D–4F</xref>.</p>
+<p>Some life cycles are vastly overrepresented: The binary and (nearly) equal split classes of life cycles represent only 26% of all allowed life cycles. Nevertheless, these classes constitute more than 80% of the observed evolutionarily optimal life cycles for any fragmentation cost in any scenario. The fragmentation delay scenario promotes mostly binary fragmentations, while fragmentation risk and loss promote (nearly) equal splits. Qualitatively the same pattern is observed in other environments with correlated birth and death rates profiles: beneficial (birth rate increase with size, while death rate decrease) and unimodal (at the optimal size of 10 cells, birth rate has a maximum, while death rate has a minimum), see <xref ref-type="supplementary-material" rid="pcbi.1008406.s005">S5 Text</xref>.</p>
+<p>The distribution of classes for fragmentation with losses looks irregular, see <xref ref-type="fig" rid="pcbi.1008406.g004">Fig 4F</xref>. This results from the decrease of the available partition set with increasing <italic>L</italic>. At <italic>L</italic> = 0, all 687 allowed fragmentation modes are available. With increasing <italic>L</italic>, this number drops as the maximal group size is limited to 19. For <italic>L</italic> = 1, only 589 life cycles can be executed. Finally, for <italic>L</italic> = 18, the only possible life cycle is to fragment upon the birth of the 20-th cell into two solitary cells (<italic>κ</italic> = 1 + 1), losing the other 18 as a fragmentation cost. Hence, the set of life cycles to choose from is different for each <italic>L</italic>, which explains the seemingly irregular distribution of evolutionarily optimal life cycles.</p>
+</sec>
+<sec id="sec016">
+<title>Fragmentation costs can drive the formation of multicellular units</title>
+<p>Multicellular units evolve when the existence of cells in a collective provides some benefit, expressed for example in a form of better resource acquisition or protection from external threats. However, for costly fragmentation, even when the existence in groups is detrimental to cells comprising them, the formation of multicellular units may become evolutionarily beneficial. We have constructed a set of 10000 random detrimental environments in which the death rate increases monotonically with the size of the unit, while the division rate monotonically decreases with the size of the unit (see <xref ref-type="supplementary-material" rid="pcbi.1008406.s004">S4 Text</xref>). Consequently, for costless fragmentation, the optimal life cycle for all detrimental environments is unicellular, i.e. uses the partition 1 + 1. However, under costly fragmentation, other—multicellular—life cycles become optimal, see <xref ref-type="fig" rid="pcbi.1008406.g005">Fig 5</xref>.</p>
+<fig id="pcbi.1008406.g005" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pcbi.1008406.g005</object-id>
+<label>Fig 5</label>
+<caption>
+<title>Multicellular units can evolve in detrimental environments.</title>
+<p>Each panel presents the fraction of the minimal, binary life cycle 1+1 (green) and equal split life cycles with a larger maturity size (orange) for random detrimental environments, where division rates decrease and death rates increase with cluster size. Panel (<bold>A</bold>) shows fragmentation with delay, (<bold>B</bold>)—fragmentation with risk, and (<bold>C</bold>)—fragmentation with cell loss. The increase in fragmentation costs, drives the evolution of life cycles involving formation of multicellular units. All evolutionarily optimal life cycles found have the form 1+ … + 1.</p>
+</caption>
+<graphic mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1008406.g005" xlink:type="simple"/>
+</fig>
+<p>Two factors contribute to this effect: First, it takes more time to reach a larger size and this makes fragmentation less frequent, so the cost paid per time unit is smaller. Second, larger unit size at fragmentation makes it possible to share the cost of fragmentation among more units. Therefore, fragmentation costs can establish selection pressures promoting multicellular life cycles strong enough to overcome the impact of the environment.</p>
+<p>Note, that in the scenario of fragmentation with loss (<italic>L</italic> &gt; 0), all fragmentation modes, including 1+1, require multicellular units to be produced at an intermediary stage of the life cycle. For this case, the conclusion is slightly different—cell loss promotes life cycles with maturity sizes larger than the minimally possible <italic>m</italic> = 1 + <italic>L</italic>, see <xref ref-type="fig" rid="pcbi.1008406.g005">Fig 5C</xref>.</p>
+<p>We also observed that for all detrimental environments and all scenarios of the fragmentation cost, all observed multicellular life cycles are equal splits in the form 1 + 1 + ⋯ + 1. In these life cycles, initially solitary cells develop into multicellular units, which then turn into solitary cells again. The intuition behind this result is that a solitary cell is the most effective state available to the population in detrimental environments in terms of division rate and death risk. Therefore, multicellular life cycles passing through the unicellular state have an advantage over life cycles, where groups fragment into larger pieces.</p>
+</sec>
+</sec>
+<sec id="sec017" sec-type="conclusions">
+<title>Discussion</title>
+<p>In order to reproduce, an organism undergoing a clonal development has to partition its body into several pieces. This is true across all levels of biological organization, from the fragmentation of cyanobacteria filaments to the birth act in viviparous animals. However, the particular implementation of this process drastically varies between species. Even in bacteria, we observe a great variety of reproduction patterns among simple multicellular species, where reproduction occurs by means of simple fragmentation [<xref ref-type="bibr" rid="pcbi.1008406.ref011">11</xref>–<xref ref-type="bibr" rid="pcbi.1008406.ref013">13</xref>, <xref ref-type="bibr" rid="pcbi.1008406.ref023">23</xref>, <xref ref-type="bibr" rid="pcbi.1008406.ref026">26</xref>]. What drives the evolution of these fragmentation modes is an open question. In this study, we constructed a matrix population model of multicellular units that increase in size by staying together. In our model, fragmentation costs result in less immediate expected biomass than an increase in the size of a unit without fragmentation. We considered three scenarios of fragmentation costs: delay (reduced rate of the cell division), death risk (increased chance of the unit death at fragmentation), and cell loss (guaranteed loss of some biomass), see <xref ref-type="fig" rid="pcbi.1008406.g002">Fig 2</xref>. We numerically assessed all possible fragmentation modes available to units up to 20 cells and identified those modes leading to a maximum population growth rate.</p>
+<p>The roots of our approach come from the field of demography, which studies age- or stage-structured populations [<xref ref-type="bibr" rid="pcbi.1008406.ref037">37</xref>]. Our model utilizes parameters typical for demographic models: rates of transitions between states and mortalities at each stage. As of today, the overlap between demography (our method) and microbiology (our subject of study) is almost non-existent and empirical data are just not available yet. Nevertheless, the methodology to gather all data needed for models of our type exists and is already developed. Once a sub-field of the demography of simple multicellular species will emerge, our model can naturally be adapted to the new experimental paradigm. Predictions from our model are thus ready to be tested once experimental data are available. However, we expect that such experiments will also naturally trigger the further development of theoretical models.</p>
+<p>Many of our results are valid for an arbitrary choice of parameters’ values and do thus not rely on the availability of experimental data, see <xref ref-type="fig" rid="pcbi.1008406.g003">Fig 3</xref>. For other results, we used a large set of random parameters. This set established an extremely diverse manifold of parameter values—which can be expected to be comparable or even exceed the diversity expected in natural populations. This makes it possible to find common patterns among evolutionarily optimal life cycles typical for majority of parameters combinations, including the ones present in nature. For example, the evolution of multicellular life cycles driven by fragmentation costs was observed among more than 99% of random detrimental environments, see <xref ref-type="fig" rid="pcbi.1008406.g005">Fig 5</xref>. Thus, our study suggest that the costs of fragmentation could be a important factor in the evolution of multicellular life cycles.</p>
+<p>Our previous findings [<xref ref-type="bibr" rid="pcbi.1008406.ref025">25</xref>] indicate that under costless fragmentation only binary fragmentation modes can become evolutionary optimal, while a small cell loss <italic>L</italic> = 1 may promote fragmentation into multiple parts with similar sizes. In the present work, we show that the influence of the fragmentation costs is much more substantial. First of all, costly fragmentation allows the evolution of a diverse set of fragmentation modes. These are not limited to the (nearly) equal splits we observed before: For instance, this includes seeding partitions, where a single large offspring unit is accompanied by a number of smaller propagules, conceptually similar to the seeding dispersal in biofilms, see <xref ref-type="fig" rid="pcbi.1008406.g003">Fig 3A</xref>.</p>
+<p>At the same time, costly fragmentation still imposes restrictions on which fragmentation modes can evolve. The majority of them cannot evolve under costly fragmentation, see <xref ref-type="fig" rid="pcbi.1008406.g003">Fig 3B</xref>. We found that all three considered scenarios of the fragmentation cost share the same set of forbidden life cycles—these contain two different offspring subsets with the same combined size. Given the difference between the considered cost scenarios, this result is striking.</p>
+<p>Among all allowed life cycles, the evolution of life cycles with costly fragmentation generally gives rise to binary or (nearly) equal split fragmentation modes. These two classes constitute only a small fraction of all allowed life cycles, but appeared to be evolutionarily optimal under the vast majority of random environments for all three scenarios of the fragmentation cost, see <xref ref-type="fig" rid="pcbi.1008406.g004">Fig 4</xref>. Looking at natural populations, binary fission seems to be the dominant mode of fragmentation among bacteria and simple eukaryotes [<xref ref-type="bibr" rid="pcbi.1008406.ref038">38</xref>]. The majority of species, which utilize fragmentation into more than two parts, do so by fission in multiple unicellular propagules [<xref ref-type="bibr" rid="pcbi.1008406.ref038">38</xref>]. A notable exception is the fragmentation mode of segmented filamentous bacteria [<xref ref-type="bibr" rid="pcbi.1008406.ref028">28</xref>]. Thus, binary fragmentation and (nearly) equal split are not only promoted by our model, but are also relatively widespread in nature.</p>
+<p>Life cycles with single cell bottlenecks have a central role in the life histories of complex animal multicellularity. The fragmentation costs considered in our work promote the evolution of such reproduction modes: many of multiple fragmentation modes (only able to evolve under costly fragmentation) feature unicellular propagules. Specifically, reproduction via fission into solitary cells in a form 1 + … + 1 appear among the most frequently optimal life cycles in every scenario of fragmentation costs, see <xref ref-type="fig" rid="pcbi.1008406.g004">Fig 4A–4C</xref>. This demonstrates that reproduction costs open additional opportunities for evolution of life cycles with single cell bottlenecks.</p>
+<p>The evolution of cell collectives from unicellular ancestors is often considered to be driven by some ongoing benefits provided by the group membership such as better protection [<xref ref-type="bibr" rid="pcbi.1008406.ref039">39</xref>], access to novel resources [<xref ref-type="bibr" rid="pcbi.1008406.ref040">40</xref>] and the opportunity to cooperate (reviewed in [<xref ref-type="bibr" rid="pcbi.1008406.ref041">41</xref>] and in [<xref ref-type="bibr" rid="pcbi.1008406.ref042">42</xref>]). In our work, we have shown that such ongoing benefits of being in a group are not a necessary condition for the evolution of collectives. The impact of the fragmentation cost can be strong enough that it can promote the formation of multicellular units even if collective living puts cells in a disadvantage compared to solitary existence, see <xref ref-type="fig" rid="pcbi.1008406.g005">Fig 5</xref>.</p>
+<p>For the described effect on the evolution of life cycles, the fragmentation costs must be paid not only in the course of multicellular development, but also be present in a similar form in the unicellular life cycle. However, paying fragmentation costs at each cell division appears to have no adaptive significance. Therefore, natural selection, instead of triggering the evolution of multicellular life cycles, may just lead to the removal of fragmentation costs themselves.</p>
+<p>However, the life cycles of a number of unicellular species exhibit features which can be associated with some fragmentation costs. Our main example comes from the green algae genus <italic>Nannochloris</italic> containing only 7 species, all of them are unicellular [<xref ref-type="bibr" rid="pcbi.1008406.ref043">43</xref>]. Four of them are enveloped in a cell wall and reproduce by binary autosporulation: when the maternal cell divides, both daughter cells initially remain enclosed inside the cell wall, then they form cell walls of their own and break out, leaving the empty maternal cell wall behind. Each fragmentation in these unicellular species is accompanied by the loss of biomass (maternal cell wall) and therefore, is costly by our definition. Two more species reproduce by simple binary cell division and do not discard cell walls, their fragmentation is thus costless in our sense. The single remaining species reproduces by autosporulation, but undergoes two rounds of cell division before releasing four daughter cells, also paying a fragmentation cost in the form of a discarded cell wall. A phylogenetic analysis of this genus indicates that the ancestral form of life cycle is binary autosporulation [<xref ref-type="bibr" rid="pcbi.1008406.ref043">43</xref>, <xref ref-type="bibr" rid="pcbi.1008406.ref044">44</xref>]. Hence, in the history of <italic>Nannochloris</italic> genus, most species preserved the original life cycle with costly binary fragmentation, some abandoned fragmentation costs, and one species developed multiple fission mode of reproduction.</p>
+<p>Another example are <italic>Volvocales</italic> algae—a monophyletic group used to study the evolution of multicellularity, as it contains organisms with sizes ranges from one to tens thousands cells [<xref ref-type="bibr" rid="pcbi.1008406.ref045">45</xref>]. The unicellular member of the group is <italic>Chlamydomonas reinhardtii</italic>, where the cell is enclosed within a cell wall. Upon reproduction, the cell undergoes two or three rounds of division resulting in four or eight cells enclosed within the maternal cell wall. Later, these cells escape, leaving the empty cell wall [<xref ref-type="bibr" rid="pcbi.1008406.ref046">46</xref>, <xref ref-type="bibr" rid="pcbi.1008406.ref047">47</xref>]. Other members of <italic>Volvocales</italic> are multicellular and pay noticeable costs of the group fragmentation. For example, in <italic>Pandorina morum</italic> (16 cells) and <italic>Astrephomene gubernaculifera</italic> (32 or 64 cells), the colonies are embedded in the common cell wall. Whenever a cell gives rise to a colony, the offspring colony breaks through the cell wall of the parent and escapes [<xref ref-type="bibr" rid="pcbi.1008406.ref048">48</xref>–<xref ref-type="bibr" rid="pcbi.1008406.ref050">50</xref>]. A logical conclusion of this process is that the maternal cell wall is completely abandoned, as reported for <italic>A. gubernaculifera</italic> [<xref ref-type="bibr" rid="pcbi.1008406.ref048">48</xref>]. Hence, in these multicellular species, the cell wall is not inherited either and constitutes an explicit fragmentation cost. An alternative to the development of a multicellular life cycle, would be not to produce a cell wall in the first place. Such species are not known among <italic>Volvocales</italic>. However, a number of cell wall less mutants have been reported for <italic>C. reinhardtii</italic> [<xref ref-type="bibr" rid="pcbi.1008406.ref047">47</xref>]. In laboratory conditions, these mutants have shown similar growth rates to the wild type [<xref ref-type="bibr" rid="pcbi.1008406.ref047">47</xref>]. Therefore, the cell wall is not essential for the survival of <italic>C. reinhardtii</italic> cells. Indeed, outside of the lab, the cell wall likely has some adaptive significance for example by providing protection to the cell. Still, the evolutionary option to discard the cell wall and associated fragmentation costs is available to <italic>C. reinhardtii</italic>, but such a path was not taken.</p>
+<p>Similar life cycles and fragmentation costs were observed in a range of other species, such as the bacterium <italic>M. polyspora</italic> [<xref ref-type="bibr" rid="pcbi.1008406.ref027">27</xref>] (see also <xref ref-type="fig" rid="pcbi.1008406.g001">Fig 1A</xref>), algae <italic>Chlorella</italic> [<xref ref-type="bibr" rid="pcbi.1008406.ref044">44</xref>], shizonts of Ichthyosporea [<xref ref-type="bibr" rid="pcbi.1008406.ref051">51</xref>], and among cyanobacteria of the <italic>Pleurocapsales</italic> order [<xref ref-type="bibr" rid="pcbi.1008406.ref030">30</xref>]. Therefore, the fragmentation costs considered in our model seem to be relevant to a wide spectrum of species.</p>
+<p>In addition to the naturally existing fragmentation costs, these can emerge in the result of a mutation. Experimental evolution studies demonstrate several examples of these. In the settling experiment in yeast <italic>S. cerevisiae</italic>, the mutant cells are unable to separate after division, which leads to the formation of multicellular snowflake-structured clusters [<xref ref-type="bibr" rid="pcbi.1008406.ref006">6</xref>, <xref ref-type="bibr" rid="pcbi.1008406.ref023">23</xref>, <xref ref-type="bibr" rid="pcbi.1008406.ref024">24</xref>]. In the course of rapid evolution, these clusters evolved a primitive form of apoptosis leading to release of colony branches as offspring [<xref ref-type="bibr" rid="pcbi.1008406.ref006">6</xref>]. Such a reproduction mode is an example fragmentation with loss considered in our study.</p>
+<p>In another life cycle experiment with bacteria <italic>Pseudomonas fluorescens</italic>, mutant cells overproduced cellulose at the cell surface, which made them stick together [<xref ref-type="bibr" rid="pcbi.1008406.ref007">7</xref>]. The fragmentation of the arising clusters likely requires significant efforts and it is safe to assume that it cannot happen for free. In addition, cellulose production itself is costly. Thus, in a well mixed environment, such a mutant loses the growth competition to the wild type [<xref ref-type="bibr" rid="pcbi.1008406.ref040">40</xref>]. Yet, in a non-mixed environment, cellulose-producing mutants form a mat on the air-liquid interface, gain exclusive access to both oxygen and nutrients, and ultimately outgrow the wild type [<xref ref-type="bibr" rid="pcbi.1008406.ref040">40</xref>]. Such a selective advantage arises only when the number of cells in the mat is sufficiently high. To get to that stage, the cells capable of producing the mat must pass through the initial phase of growth, where they have no advantage. Moreover, the return to the wild type is possible [<xref ref-type="bibr" rid="pcbi.1008406.ref007">7</xref>, <xref ref-type="bibr" rid="pcbi.1008406.ref052">52</xref>], so abandoning the fragmentation costs altogether is an evolutionary option. Our model demonstrates that an increase in the group size under costly fragmentation is indeed an evolutionary plausible strategy, even if the size does not provide any benefits until a large amount of cells is accumulated in a colony. The species discussed in our work, their life cycles, and sources of possible fragmentation costs are summarized in <xref ref-type="table" rid="pcbi.1008406.t001">Table 1</xref>.</p>
+<table-wrap id="pcbi.1008406.t001" position="float">
+<object-id pub-id-type="doi">10.1371/journal.pcbi.1008406.t001</object-id>
+<label>Table 1</label>
+<caption>
+<title>List of species considered in this work and their life cycles.</title>
+</caption>
+<alternatives>
+<graphic id="pcbi.1008406.t001g" mimetype="image" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1008406.t001" xlink:type="simple"/>
+<table border="0" frame="box" rules="all">
+<colgroup>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+<col align="left" valign="middle"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" style="border-bottom:thick">Group</th>
+<th align="left" style="border-bottom:thick">Species</th>
+<th align="center" style="border-bottom:thick">Fragmentation mode</th>
+<th align="center" style="border-bottom:thick">Fragmentation costs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="7"><italic>Nannochloris</italic></td>
+<td align="left"><italic>N. bacillaris</italic> [<xref ref-type="bibr" rid="pcbi.1008406.ref043">43</xref>]</td>
+<td align="center">1 + 1</td>
+<td align="center">none</td>
+</tr>
+<tr>
+<td align="left"><italic>N. coccoides</italic> [<xref ref-type="bibr" rid="pcbi.1008406.ref043">43</xref>]</td>
+<td align="center">1 + 1</td>
+<td align="center">none</td>
+</tr>
+<tr>
+<td align="left"><italic>N. maculata</italic> [<xref ref-type="bibr" rid="pcbi.1008406.ref043">43</xref>]</td>
+<td align="center">1 + 1</td>
+<td align="center">cell wall loss</td>
+</tr>
+<tr>
+<td align="left"><italic>N. atomus CCAP 251/7</italic> [<xref ref-type="bibr" rid="pcbi.1008406.ref043">43</xref>]</td>
+<td align="center">1 + 1</td>
+<td align="center">cell wall loss</td>
+</tr>
+<tr>
+<td align="left"><italic>N. atomus SAG 14.87</italic> [<xref ref-type="bibr" rid="pcbi.1008406.ref043">43</xref>]</td>
+<td align="center">1 + 1</td>
+<td align="center">cell wall loss</td>
+</tr>
+<tr>
+<td align="left"><italic>N. sp. SAG 251-2</italic> [<xref ref-type="bibr" rid="pcbi.1008406.ref043">43</xref>]</td>
+<td align="center">1 + 1</td>
+<td align="center">cell wall loss</td>
+</tr>
+<tr>
+<td align="left"><italic>N. eucaryotum</italic> [<xref ref-type="bibr" rid="pcbi.1008406.ref043">43</xref>]</td>
+<td align="center">1 + 1, 1 + 1 + 1, 1 + 1 + 1 + 1</td>
+<td align="center">cell wall loss</td>
+</tr>
+<tr>
+<td align="left" rowspan="3"><italic>Volvocales</italic></td>
+<td align="left"><italic>C. reinhardtii</italic> [<xref ref-type="bibr" rid="pcbi.1008406.ref046">46</xref>, <xref ref-type="bibr" rid="pcbi.1008406.ref047">47</xref>]</td>
+<td align="center">1 + 1</td>
+<td align="center">cell wall loss</td>
+</tr>
+<tr>
+<td align="left"><italic>P. morum</italic> [<xref ref-type="bibr" rid="pcbi.1008406.ref048">48</xref>–<xref ref-type="bibr" rid="pcbi.1008406.ref050">50</xref>]</td>
+<td align="center">16 × 1</td>
+<td align="center">cell wall loss</td>
+</tr>
+<tr>
+<td align="left"><italic>A. gubernaculifera</italic> [<xref ref-type="bibr" rid="pcbi.1008406.ref048">48</xref>]</td>
+<td align="center">32 × 1, 64 × 1</td>
+<td align="center">cell wall loss</td>
+</tr>
+<tr>
+<td align="left" rowspan="2"><italic>Bacteria</italic></td>
+<td align="left"><italic>M. polyspora</italic> [<xref ref-type="bibr" rid="pcbi.1008406.ref027">27</xref>]</td>
+<td align="center">∼ 7 × 1</td>
+<td align="center">maternal cell loss</td>
+</tr>
+<tr>
+<td align="left">segmented filamentous bacteria [<xref ref-type="bibr" rid="pcbi.1008406.ref028">28</xref>]</td>
+<td align="center"><italic>X</italic> + 1 + 1</td>
+<td align="center">cell wall and maternal cell loss</td>
+</tr>
+<tr>
+<td align="left"><italic>Ichthyosporea</italic></td>
+<td align="left"><italic>Ichthyophonus sp</italic>. [<xref ref-type="bibr" rid="pcbi.1008406.ref051">51</xref>]</td>
+<td align="center">&gt; 20 × 1</td>
+<td align="center">extracellular membrane loss</td>
+</tr>
+<tr>
+<td align="left" rowspan="2"><italic>Chlorella</italic></td>
+<td align="left"><italic>C. vulgaris</italic> [<xref ref-type="bibr" rid="pcbi.1008406.ref044">44</xref>]</td>
+<td align="center">1 + 1, 4 × 1, 32 × 1</td>
+<td align="center">cell wall loss</td>
+</tr>
+<tr>
+<td align="left"><italic>C. kessleri</italic> [<xref ref-type="bibr" rid="pcbi.1008406.ref044">44</xref>]</td>
+<td align="center">1 + 1, 4 × 1, 8 × 1</td>
+<td align="center">cell wall loss</td>
+</tr>
+<tr>
+<td align="left"><italic>Cyanobacteria</italic></td>
+<td align="left"><italic>Pleurocapsales</italic> [<xref ref-type="bibr" rid="pcbi.1008406.ref030">30</xref>]</td>
+<td align="center">1 + 1, 4 × 1, …, &gt; 20 × 1</td>
+<td align="center">cell wall loss</td>
+</tr>
+<tr>
+<td align="left" style="border-bottom:thick"><italic>Fungi</italic></td>
+<td align="left" style="border-bottom:thick"><italic>S. cerevisiae</italic> [<xref ref-type="bibr" rid="pcbi.1008406.ref023">23</xref>, <xref ref-type="bibr" rid="pcbi.1008406.ref024">24</xref>] (experimental system)</td>
+<td align="center" style="border-bottom:thick"><italic>X</italic> + <italic>Y</italic></td>
+<td align="center" style="border-bottom:thick">cell loss</td>
+</tr>
+</tbody>
+</table>
+</alternatives>
+</table-wrap>
+<p>Concluding the discussion on unicellular species facing fragmentation costs, we would like to highlight that such organisms have two options to mitigate the costs: either to find a way to reduce the cost itself, or to alter their life cycle to a multicellular one to mitigate the impact of costs. Which of those two options is more plausible depends on the specific situation, and we see both paths taken in natural and experimental populations. Those species that adopt a multicellular stage in their life cycle gain the possibility to develop a wide range of beneficial adaptations available only to multicellular species, such as the division of labour.</p>
+</sec>
+<sec id="sec018" sec-type="supplementary-material">
+<title>Supporting information</title>
+<supplementary-material id="pcbi.1008406.s001" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1008406.s001" xlink:type="simple">
+<label>S1 Text</label>
+<caption>
+<title>Appendix.</title>
+<p>Life cycles competition.</p>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pcbi.1008406.s002" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1008406.s002" xlink:type="simple">
+<label>S2 Text</label>
+<caption>
+<title>Appendix.</title>
+<p>Linear model of life cycles evolution.</p>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pcbi.1008406.s003" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1008406.s003" xlink:type="simple">
+<label>S3 Text</label>
+<caption>
+<title>Appendix.</title>
+<p>Forbidden fragmentation modes.</p>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pcbi.1008406.s004" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1008406.s004" xlink:type="simple">
+<label>S4 Text</label>
+<caption>
+<title>Appendix.</title>
+<p>Random environments.</p>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pcbi.1008406.s005" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1008406.s005" xlink:type="simple">
+<label>S5 Text</label>
+<caption>
+<title>Appendix.</title>
+<p>Binary fragmentation and (nearly) equal split are overrepresented in beneficial and unimodal environments.</p>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+<supplementary-material id="pcbi.1008406.s006" mimetype="application/pdf" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1008406.s006" xlink:type="simple">
+<label>S6 Text</label>
+<caption>
+<title>Appendix.</title>
+<p>Only deterministic fragmentation modes can be evolutionarily optimal under any environment.</p>
+<p>(PDF)</p>
+</caption>
+</supplementary-material>
+</sec>
+</body>
+<back>
+<ack>
+<p>We are grateful to David Rogers and Philippe Remigi for fruitful discussions and biological insights, to Jorge Peña for valuable detailed comments on the initial manuscript.</p>
+</ack>
+<ref-list>
+<title>References</title>
+<ref id="pcbi.1008406.ref001">
+<label>1</label>
+<mixed-citation publication-type="book" xlink:type="simple">
+<name name-style="western"><surname>Stearns</surname> <given-names>SC</given-names></name>. <source>The evolution of life histories</source>. <publisher-name>Oxford University Press</publisher-name>, <publisher-loc>NY</publisher-loc>; <year>1992</year>.</mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref002">
+<label>2</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Bonner</surname> <given-names>JT</given-names></name>. <article-title>The origins of multicellularity</article-title>. <source>Integrative Biology</source>. <year>1998</year>;<volume>1</volume>:<fpage>27</fpage>–<lpage>36</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1002/(SICI)1520-6602(1998)1:1%3C27::AID-INBI4%3E3.0.CO;2-6" xlink:type="simple">10.1002/(SICI)1520-6602(1998)1:1%3C27::AID-INBI4%3E3.0.CO;2-6</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref003">
+<label>3</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Roze</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Michod</surname> <given-names>RE</given-names></name>. <article-title>Mutation, multilevel selection, and the evolution of propagule size during the origin of multicellularity</article-title>. <source>The American Naturalist</source>. <year>2001</year>;<volume>158</volume>(<issue>6</issue>):<fpage>638</fpage>–<lpage>654</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1086/323590" xlink:type="simple">10.1086/323590</ext-link></comment> <object-id pub-id-type="pmid">18707357</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref004">
+<label>4</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Rainey</surname> <given-names>PB</given-names></name>, <name name-style="western"><surname>Kerr</surname> <given-names>B</given-names></name>. <article-title>Cheats as first propagules: a new hypothesis for the evolution of individuality during the transition from single cells to multicellularity</article-title>. <source>BioEssays</source>. <year>2010</year>;<volume>32</volume>(<issue>10</issue>):<fpage>872</fpage>–<lpage>880</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1002/bies.201000039" xlink:type="simple">10.1002/bies.201000039</ext-link></comment> <object-id pub-id-type="pmid">20726010</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref005">
+<label>5</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Nowak</surname> <given-names>MA</given-names></name>, <name name-style="western"><surname>Tarnita</surname> <given-names>CE</given-names></name>, <name name-style="western"><surname>Wilson</surname> <given-names>EO</given-names></name>. <article-title>The evolution of eusociality</article-title>. <source>Nature</source>. <year>2010</year>;<volume>466</volume>(<issue>7310</issue>):<fpage>1057</fpage>–<lpage>1062</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/nature09205" xlink:type="simple">10.1038/nature09205</ext-link></comment> <object-id pub-id-type="pmid">20740005</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref006">
+<label>6</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Ratcliff</surname> <given-names>WC</given-names></name>, <name name-style="western"><surname>Denison</surname> <given-names>RF</given-names></name>, <name name-style="western"><surname>Borrello</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Travisano</surname> <given-names>M</given-names></name>. <article-title>Experimental evolution of multicellularity</article-title>. <source>Proceedings of the National Academy of Sciences USA</source>. <year>2012</year>; <volume>109</volume>(<issue>5</issue>), <fpage>1595</fpage>–<lpage>1600</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1073/pnas.1115323109" xlink:type="simple">10.1073/pnas.1115323109</ext-link></comment> <object-id pub-id-type="pmid">22307617</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref007">
+<label>7</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Hammerschmidt</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Rose</surname> <given-names>CJ</given-names></name>, <name name-style="western"><surname>Kerr</surname> <given-names>B</given-names></name>, <name name-style="western"><surname>Rainey</surname> <given-names>PB</given-names></name>. <article-title>Life cycles, fitness decoupling and the evolution of multicellularity</article-title>. <source>Nature</source>. <year>2014</year>;<volume>515</volume>(<issue>7525</issue>):<fpage>75</fpage>–<lpage>79</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/nature13884" xlink:type="simple">10.1038/nature13884</ext-link></comment> <object-id pub-id-type="pmid">25373677</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref008">
+<label>8</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>De Monte</surname> <given-names>S</given-names></name>, <name name-style="western"><surname>Rainey</surname> <given-names>PB</given-names></name>. <article-title>Nascent multicellular life and the emergence of individuality</article-title>. <source>Journal of biosciences</source>. <year>2014</year>;<volume>39</volume>(<issue>2</issue>):<fpage>237</fpage>–<lpage>248</lpage>. <object-id pub-id-type="pmid">24736157</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref009">
+<label>9</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>van Gestel</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Tarnita</surname> <given-names>CE</given-names></name>. <article-title>On the origin of biological construction, with a focus on multicellularity</article-title>. <source>Proceedings of the National Academy of Sciences USA</source>. <year>2017</year>;<volume>114</volume>(<issue>42</issue>):<fpage>11018</fpage>–<lpage>11026</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1073/pnas.1704631114" xlink:type="simple">10.1073/pnas.1704631114</ext-link></comment> <object-id pub-id-type="pmid">28973893</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref010">
+<label>10</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Staps</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>van Gestel</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Tarnita</surname> <given-names>CE</given-names></name>. <article-title>Emergence of diverse life cycles and life histories at the origin of multicellularity</article-title>. <source>Nature ecology &amp; evolution</source>. <year>2019</year>;<volume>3</volume>(<issue>8</issue>):<fpage>1197</fpage>–<lpage>1205</lpage>. <object-id pub-id-type="pmid">31285576</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref011">
+<label>11</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Koyama</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Yamada</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Matsuhashi</surname> <given-names>M</given-names></name>. <article-title>Formation of regular packets of Staphylococcus aureus cells</article-title>. <source>Journal of Bacteriology</source>. <year>1977</year>;<volume>129</volume>(<issue>3</issue>):<fpage>1518</fpage>–<lpage>1523</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1128/JB.129.3.1518-1523.1977" xlink:type="simple">10.1128/JB.129.3.1518-1523.1977</ext-link></comment> <object-id pub-id-type="pmid">845124</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref012">
+<label>12</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Rippka</surname> <given-names>R</given-names></name>, <name name-style="western"><surname>Deruelles</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Waterbury</surname> <given-names>JB</given-names></name>, <name name-style="western"><surname>Herdmann</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Stanier</surname> <given-names>RY</given-names></name>. <article-title>Generic assignments, strain histories and properties of pure cultures of cyanobacteria</article-title>. <source>Microbiology</source>. <year>1979</year>;<volume>111</volume>(<issue>1</issue>):<fpage>1</fpage>–<lpage>61</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1099/00221287-111-1-1" xlink:type="simple">10.1099/00221287-111-1-1</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref013">
+<label>13</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Webb</surname> <given-names>JS</given-names></name>, <name name-style="western"><surname>Givskov</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Kjelleberg</surname> <given-names>S</given-names></name>. <article-title>Bacterial biofilms: prokaryotic adventures in multicellularity</article-title>. <source>Current Opinion in Microbiology</source>. <year>2003</year>;<volume>6</volume>(<issue>6</issue>):<fpage>578</fpage>–<lpage>585</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.mib.2003.10.014" xlink:type="simple">10.1016/j.mib.2003.10.014</ext-link></comment> <object-id pub-id-type="pmid">14662353</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref014">
+<label>14</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>McDougald</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Rice</surname> <given-names>SA</given-names></name>, <name name-style="western"><surname>Barraud</surname> <given-names>N</given-names></name>, <name name-style="western"><surname>Steinberg</surname> <given-names>PD</given-names></name>, <name name-style="western"><surname>Kjelleberg</surname> <given-names>S</given-names></name>. <article-title>Should we stay or should we go: mechanisms and ecological consequences for biofilm dispersal</article-title>. <source>Nat Rev Micro</source>. <year>2012</year>;<volume>10</volume>(<issue>1</issue>):<fpage>39</fpage>–<lpage>50</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/nrmicro2695" xlink:type="simple">10.1038/nrmicro2695</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref015">
+<label>15</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Ghang</surname> <given-names>W</given-names></name>, <name name-style="western"><surname>Nowak</surname> <given-names>MA</given-names></name>. <article-title>Stochastic evolution of staying together</article-title>. <source>Journal of Theoretical Biology</source>. <year>2014</year>;<volume>360</volume>:<fpage>129</fpage>–<lpage>136</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.jtbi.2014.06.026" xlink:type="simple">10.1016/j.jtbi.2014.06.026</ext-link></comment> <object-id pub-id-type="pmid">24992234</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref016">
+<label>16</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Olejarz</surname> <given-names>JW</given-names></name>, <name name-style="western"><surname>Nowak</surname> <given-names>MA</given-names></name>. <article-title>Evolution of staying together in the context of diffusible public goods</article-title>. <source>Journal of Theoretical Biology</source>. <year>2014</year>;<volume>360</volume>:<fpage>1</fpage>–<lpage>12</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.jtbi.2014.06.023" xlink:type="simple">10.1016/j.jtbi.2014.06.023</ext-link></comment> <object-id pub-id-type="pmid">24992231</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref017">
+<label>17</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Kaveh</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Veller</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Nowak</surname> <given-names>MA</given-names></name>. <article-title>Games of multicellularity</article-title>. <source>Journal of Theoretical Biology</source>. <year>2016</year>;<volume>403</volume>:<fpage>143</fpage>–<lpage>158</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.jtbi.2016.04.037" xlink:type="simple">10.1016/j.jtbi.2016.04.037</ext-link></comment> <object-id pub-id-type="pmid">27179461</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref018">
+<label>18</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Olejarz</surname> <given-names>JW</given-names></name>, <name name-style="western"><surname>Kaveh</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Veller</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Nowak</surname> <given-names>MA</given-names></name>. <article-title>Selection for synchronized cell division in simple multicellular organisms</article-title>. <source>Journal of Theoretical Biology</source>. <year>2018</year>;<volume>457</volume>:<fpage>170</fpage>–<lpage>179</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.jtbi.2018.08.038" xlink:type="simple">10.1016/j.jtbi.2018.08.038</ext-link></comment> <object-id pub-id-type="pmid">30172691</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref019">
+<label>19</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Birkendal-Hansen</surname> <given-names>H</given-names></name>. <article-title>Proteolytic remodeling of extracellular matrix</article-title>. <source>Current opinion in cell biology</source>. <year>1995</year>;<volume>7</volume>(<issue>5</issue>):<fpage>728</fpage>–<lpage>735</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/0955-0674(95)80116-2" xlink:type="simple">10.1016/0955-0674(95)80116-2</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref020">
+<label>20</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Basbaum</surname> <given-names>CB</given-names></name>, <name name-style="western"><surname>Werb</surname> <given-names>Z</given-names></name>. <article-title>Focalized proteolysis: spatial and temporal regulation of extracellular matrix degradation at the cell surface</article-title>. <source>Current opinion in cell biology</source>. <year>1996</year>;<volume>8</volume>(<issue>5</issue>):<fpage>731</fpage>–<lpage>738</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/S0955-0674(96)80116-5" xlink:type="simple">10.1016/S0955-0674(96)80116-5</ext-link></comment> <object-id pub-id-type="pmid">8939664</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref021">
+<label>21</label>
+<mixed-citation publication-type="book" xlink:type="simple">
+<name name-style="western"><surname>Bonner</surname> <given-names>JT</given-names></name>. <source>The Cellular Slime Molds</source>. <publisher-name>Princeton University Press</publisher-name>, <publisher-loc>Princeton, NJ</publisher-loc>; <year>1959</year>.</mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref022">
+<label>22</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Smith</surname> <given-names>GM</given-names></name>. <article-title>A comparative study of the species of Volvox</article-title>. <source>Transactions of the American Microscopical Society</source>. <year>1944</year>;<volume>63</volume>(<issue>4</issue>):<fpage>265</fpage>–<lpage>310</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.2307/3223302" xlink:type="simple">10.2307/3223302</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref023">
+<label>23</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Ratcliff</surname> <given-names>WC</given-names></name>, <name name-style="western"><surname>Pentz</surname> <given-names>JT</given-names></name>, <name name-style="western"><surname>Travisano</surname> <given-names>M</given-names></name>. <article-title>Tempo and mode of multicellular adaptation in experimentally evolved Saccharomyces cerevisiae</article-title>. <source>Evolution</source>. <year>2013</year>;<volume>67</volume>(<issue>6</issue>):<fpage>1573</fpage>–<lpage>1581</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1111/evo.12101" xlink:type="simple">10.1111/evo.12101</ext-link></comment> <object-id pub-id-type="pmid">23730752</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref024">
+<label>24</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Ratcliff</surname> <given-names>WC</given-names></name>, <name name-style="western"><surname>Fankhauser</surname> <given-names>JD</given-names></name>, <name name-style="western"><surname>Rogers</surname> <given-names>DW</given-names></name>, <name name-style="western"><surname>Greig</surname> <given-names>D</given-names></name>, <name name-style="western"><surname>Travisano</surname> <given-names>M</given-names></name>. <article-title>Origins of multicellular evolvability in snowflake yeast</article-title>. <source>Nature Communications</source>. <year>2015</year>;<volume>6</volume>(<issue>1</issue>):<fpage>1</fpage>–<lpage>9</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/ncomms7102" xlink:type="simple">10.1038/ncomms7102</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref025">
+<label>25</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Pichugin</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Peña</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Rainey</surname> <given-names>PB</given-names></name>, <name name-style="western"><surname>Traulsen</surname> <given-names>A</given-names></name>. <article-title>Fragmentation modes and the evolution of life cycles</article-title>. <source>PLoS Computational Biology</source>. <year>2017</year>;<volume>13</volume>(<issue>11</issue>):<fpage>e1005860</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1371/journal.pcbi.1005860" xlink:type="simple">10.1371/journal.pcbi.1005860</ext-link></comment> <object-id pub-id-type="pmid">29166656</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref026">
+<label>26</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Stein</surname> <given-names>JR</given-names></name>. <article-title>A morphologic and genetic study of Gonium pectorale</article-title>. <source>American Journal of Botany</source>. <year>1958</year>;<volume>45</volume>(<issue>9</issue>):<fpage>664</fpage>–<lpage>672</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1002/j.1537-2197.1958.tb12219.x" xlink:type="simple">10.1002/j.1537-2197.1958.tb12219.x</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref027">
+<label>27</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Angert</surname> <given-names>ER</given-names></name>, <name name-style="western"><surname>Losick</surname> <given-names>RM</given-names></name>. <article-title>Propagation by sporulation in the guinea pig symbiont Metabacterium polyspora</article-title>. <source>Proceedings of the National Academy of Sciences USA</source>. <year>1998</year>;<volume>95</volume>(<issue>17</issue>):<fpage>10218</fpage>–<lpage>10233</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1073/pnas.95.17.10218" xlink:type="simple">10.1073/pnas.95.17.10218</ext-link></comment> <object-id pub-id-type="pmid">9707627</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref028">
+<label>28</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Davis</surname> <given-names>CP</given-names></name>, <name name-style="western"><surname>Savage</surname> <given-names>DC</given-names></name>. <article-title>Habitat, succession, attachment, and morphology of segmented, filamentous microbes indigenous to the murine gastrointestinal tract</article-title>. <source>Infection and immunity</source>. <year>1974</year>;<volume>10</volume>(<issue>4</issue>):<fpage>948</fpage>–<lpage>956</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1128/IAI.10.4.948-956.1974" xlink:type="simple">10.1128/IAI.10.4.948-956.1974</ext-link></comment> <object-id pub-id-type="pmid">4426712</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref029">
+<label>29</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Chase</surname> <given-names>DG</given-names></name>, <name name-style="western"><surname>Erlandsen</surname> <given-names>SL</given-names></name>. <article-title>Evidence for a complex life cycle and endospore formation in the attached, filamentous, segmented bacterium from murine ileum</article-title>. <source>Journal of Bacteriology</source>. <year>1976</year>;<volume>127</volume>(<issue>1</issue>):<fpage>572</fpage>–<lpage>583</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1128/JB.127.1.572-583.1976" xlink:type="simple">10.1128/JB.127.1.572-583.1976</ext-link></comment> <object-id pub-id-type="pmid">931952</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref030">
+<label>30</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Waterbury</surname> <given-names>JB</given-names></name>, <name name-style="western"><surname>Stanier</surname> <given-names>RY</given-names></name>. <article-title>Patterns of growth and development in pleurocapsalean cyanobacteria</article-title>. <source>Microbiological reviews</source>. <year>1978</year>;<volume>42</volume>(<issue>1</issue>):<fpage>2</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1128/MMBR.42.1.2-44.1978" xlink:type="simple">10.1128/MMBR.42.1.2-44.1978</ext-link></comment> <object-id pub-id-type="pmid">111023</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref031">
+<label>31</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Libby</surname> <given-names>E</given-names></name>, <name name-style="western"><surname>Ratcliff</surname> <given-names>WC</given-names></name>, <name name-style="western"><surname>Travisano</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Kerr</surname> <given-names>B</given-names></name>. <article-title>Geometry Shapes Evolution of Early Multicellularity</article-title>. <source>PLoS Computational Biology</source>. <year>2014</year>;<volume>10</volume>(<issue>9</issue>):<fpage>e1003803</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1371/journal.pcbi.1003803" xlink:type="simple">10.1371/journal.pcbi.1003803</ext-link></comment> <object-id pub-id-type="pmid">25233196</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref032">
+<label>32</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Tarnita</surname> <given-names>CE</given-names></name>, <name name-style="western"><surname>Taubes</surname> <given-names>CH</given-names></name>, <name name-style="western"><surname>Nowak</surname> <given-names>MA</given-names></name>. <article-title>Evolutionary construction by staying together and coming together</article-title>. <source>Journal of Theoretical Biology</source>. <year>2013</year>;<volume>320</volume>:<fpage>10</fpage>–<lpage>22</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/j.jtbi.2012.11.022" xlink:type="simple">10.1016/j.jtbi.2012.11.022</ext-link></comment> <object-id pub-id-type="pmid">23206384</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref033">
+<label>33</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Ratcliff</surname> <given-names>WC</given-names></name>, <name name-style="western"><surname>Herron</surname> <given-names>MD</given-names></name>, <name name-style="western"><surname>Howell</surname> <given-names>K</given-names></name>, <name name-style="western"><surname>Pentz</surname> <given-names>JT</given-names></name>, <name name-style="western"><surname>Rosenzweig</surname> <given-names>F</given-names></name>, <name name-style="western"><surname>Travisano</surname> <given-names>M</given-names></name>. <article-title>Experimental evolution of an altering uni- and multicellular life cycle in Chlamydomonas reinhardtii</article-title>. <source>Nature Communications</source>. <year>2013</year>;<volume>4</volume> (<issue>2742</issue>). <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/ncomms3742" xlink:type="simple">10.1038/ncomms3742</ext-link></comment> <object-id pub-id-type="pmid">24193369</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref034">
+<label>34</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Herron</surname> <given-names>MD</given-names></name>, <name name-style="western"><surname>Borin</surname> <given-names>JM</given-names></name>, <name name-style="western"><surname>Boswell</surname> <given-names>JC</given-names></name>, <name name-style="western"><surname>Walker</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Chen</surname> <given-names>ICK</given-names></name>, <name name-style="western"><surname>Knox</surname> <given-names>CA</given-names></name>, <etal>et al</etal>. <article-title>De novo origins of multicellularity in response to predation</article-title>. <source>Scientific Reports</source>. <year>2019</year>;<volume>9</volume>(<issue>1</issue>):<fpage>1</fpage>–<lpage>9</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/s41598-019-39558-8" xlink:type="simple">10.1038/s41598-019-39558-8</ext-link></comment> <object-id pub-id-type="pmid">30787483</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref035">
+<label>35</label>
+<mixed-citation publication-type="book" xlink:type="simple">
+<name name-style="western"><surname>Andrews</surname> <given-names>GE</given-names></name>. <source>The Theory of Partitions</source>. <publisher-loc>Cambridge, UK</publisher-loc>: <publisher-name>Cambridge University Press</publisher-name>; <year>1998</year>.</mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref036">
+<label>36</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Pichugin</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Park</surname> <given-names>HJ</given-names></name>, <name name-style="western"><surname>Traulsen</surname> <given-names>A</given-names></name>. <article-title>Evolution of simple multicellular life cycles in dynamic environments</article-title>. <source>Journal of the Royal Society Interface</source>. <year>2019</year>;<volume>16</volume>(<issue>154</issue>):<fpage>20190054</fpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1098/rsif.2019.0054" xlink:type="simple">10.1098/rsif.2019.0054</ext-link></comment> <object-id pub-id-type="pmid">31088261</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref037">
+<label>37</label>
+<mixed-citation publication-type="book" xlink:type="simple">
+<name name-style="western"><surname>Caswell</surname> <given-names>H</given-names></name>. <source>Matrix population models</source>. <edition>2nd ed</edition>. <publisher-name>Sinauer Associates</publisher-name>, <publisher-loc>Sunderland MA</publisher-loc>; <year>2001</year>.</mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref038">
+<label>38</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Angert</surname> <given-names>ER</given-names></name>. <article-title>Alternatives to binary fission in bacteria</article-title>. <source>Nature Reviews Microbiology</source>. <year>2005</year>;<volume>3</volume>(<issue>3</issue>):<fpage>214</fpage>–<lpage>224</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/nrmicro1096" xlink:type="simple">10.1038/nrmicro1096</ext-link></comment> <object-id pub-id-type="pmid">15738949</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref039">
+<label>39</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Stanley</surname> <given-names>SM</given-names></name>. <article-title>An ecological theory for the sudden origin of multicellular life in the late Precambrian</article-title>. <source>Proceedings of the National Academy of Sciences USA</source>. <year>1973</year>;<volume>70</volume>(<issue>5</issue>):<fpage>1486</fpage>–<lpage>1489</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1073/pnas.70.5.1486" xlink:type="simple">10.1073/pnas.70.5.1486</ext-link></comment> <object-id pub-id-type="pmid">16592084</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref040">
+<label>40</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Rainey</surname> <given-names>PB</given-names></name>, <name name-style="western"><surname>Travisano</surname> <given-names>M</given-names></name>. <article-title>Adaptive radiation in a heterogeneous environment</article-title>. <source>Nature</source>. <year>1998</year>;<volume>394</volume>(<issue>6688</issue>):<fpage>69</fpage>–<lpage>72</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/27900" xlink:type="simple">10.1038/27900</ext-link></comment> <object-id pub-id-type="pmid">9665128</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref041">
+<label>41</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Kaiser</surname> <given-names>D</given-names></name>. <article-title>Building a multicellular organism</article-title>. <source>Annual Review of Genetics</source>. <year>2001</year>;<volume>35</volume>(<issue>1</issue>):<fpage>103</fpage>–<lpage>123</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1146/annurev.genet.35.102401.090145" xlink:type="simple">10.1146/annurev.genet.35.102401.090145</ext-link></comment> <object-id pub-id-type="pmid">11700279</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref042">
+<label>42</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Grosberg</surname> <given-names>RK</given-names></name>, <name name-style="western"><surname>Strathmann</surname> <given-names>RR</given-names></name>. <article-title>The Evolution of Multicellularity: A Minor Major Transition?</article-title> <source>Annual Review of Ecology, Evolution, and Systematics</source>. <year>2007</year>;<volume>38</volume>:<fpage>621</fpage>–<lpage>654</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1146/annurev.ecolsys.36.102403.114735" xlink:type="simple">10.1146/annurev.ecolsys.36.102403.114735</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref043">
+<label>43</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Yamamoto</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Nozaki</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Kawano</surname> <given-names>S</given-names></name>. <article-title>Evolutionary relationships among multiple modes of cell division in the genus Nannochloris (Chlorophyta) revealed by genome size, actin gene multiplicity, and phylogeny</article-title>. <source>Journal of Phycology</source>. <year>2001</year>;<volume>37</volume>(<issue>1</issue>):<fpage>106</fpage>–<lpage>120</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1046/j.1529-8817.2001.037001106.x" xlink:type="simple">10.1046/j.1529-8817.2001.037001106.x</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref044">
+<label>44</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Yamamoto</surname> <given-names>M</given-names></name>, <name name-style="western"><surname>Nozaki</surname> <given-names>H</given-names></name>, <name name-style="western"><surname>Miyazawa</surname> <given-names>Y</given-names></name>, <name name-style="western"><surname>Koide</surname> <given-names>T</given-names></name>, <name name-style="western"><surname>Kawano</surname> <given-names>S</given-names></name>. <article-title>Relationship between presence of a mother cell wall and speciation in the unicellular microalga nannochloris (Chlorophyta) 1</article-title>. <source>Journal of Phycology</source>. <year>2003</year>;<volume>39</volume>(<issue>1</issue>):<fpage>172</fpage>–<lpage>184</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1046/j.1529-8817.2003.02052.x" xlink:type="simple">10.1046/j.1529-8817.2003.02052.x</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref045">
+<label>45</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Kirk</surname> <given-names>DL</given-names></name>. <article-title>A twelve step program for evolving multicellularity and a division of labor</article-title>. <source>BioEssays</source>. <year>2005</year>;<volume>27</volume>(<issue>3</issue>):<fpage>299</fpage>–<lpage>310</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1002/bies.20197" xlink:type="simple">10.1002/bies.20197</ext-link></comment> <object-id pub-id-type="pmid">15714559</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref046">
+<label>46</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Johnson</surname> <given-names>UG</given-names></name>, <name name-style="western"><surname>Porter</surname> <given-names>KR</given-names></name>. <article-title>Fine structure of cell division in Chlamydomonas reinhardi: basal bodies and microtubules</article-title>. <source>The Journal of Cell Biology</source>. <year>1968</year>;<volume>38</volume>(<issue>2</issue>):<fpage>403</fpage>–<lpage>425</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1083/jcb.38.2.403" xlink:type="simple">10.1083/jcb.38.2.403</ext-link></comment> <object-id pub-id-type="pmid">5664210</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref047">
+<label>47</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Davies</surname> <given-names>DR</given-names></name>, <name name-style="western"><surname>Plaskitt</surname> <given-names>A</given-names></name>. <article-title>Genetical and structural analyses of cell-wall formation in Chlamydomonas reinhardi</article-title>. <source>Genetics Research</source>. <year>1971</year>;<volume>17</volume>(<issue>1</issue>):<fpage>33</fpage>–<lpage>43</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1017/S0016672300012015" xlink:type="simple">10.1017/S0016672300012015</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref048">
+<label>48</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Pocock</surname> <given-names>MA</given-names></name>. <article-title>Two multicellular motile green algae, Volvulina Playfair and Astrephomene, a new genus</article-title>. <source>Transactions of the Royal Society of South Africa</source>. <year>1954</year>;<volume>34</volume>(<issue>1</issue>):<fpage>103</fpage>–<lpage>127</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1080/00359195409518981" xlink:type="simple">10.1080/00359195409518981</ext-link></comment></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref049">
+<label>49</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Fulton</surname> <given-names>AB</given-names></name>. <article-title>Colonial development in Pandorina morum: I. Structure and composition of the extracellular matrix</article-title>. <source>Developmental Biology</source>. <year>1978</year>;<volume>64</volume>(<issue>2</issue>):<fpage>224</fpage>–<lpage>235</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/0012-1606(78)90074-X" xlink:type="simple">10.1016/0012-1606(78)90074-X</ext-link></comment> <object-id pub-id-type="pmid">680344</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref050">
+<label>50</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Fulton</surname> <given-names>AB</given-names></name>. <article-title>Colonial development in Pandorina morum: II. Colony morphogenesis and formation of the extracellular matrix</article-title>. <source>Developmental Biology</source>. <year>1978</year>;<volume>64</volume>(<issue>2</issue>):<fpage>236</fpage>–<lpage>251</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1016/0012-1606(78)90075-X" xlink:type="simple">10.1016/0012-1606(78)90075-X</ext-link></comment> <object-id pub-id-type="pmid">680345</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref051">
+<label>51</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Kocan</surname> <given-names>RM</given-names></name>. <article-title>Proposed changes to the nomenclature of Ichthyophonus sp. life stages and structures</article-title>. <source>Journal of Parasitology</source>. <year>2013</year>;<volume>99</volume>(<issue>5</issue>):<fpage>906</fpage>–<lpage>909</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1645/13-177.1" xlink:type="simple">10.1645/13-177.1</ext-link></comment> <object-id pub-id-type="pmid">23617800</object-id></mixed-citation>
+</ref>
+<ref id="pcbi.1008406.ref052">
+<label>52</label>
+<mixed-citation publication-type="journal" xlink:type="simple">
+<name name-style="western"><surname>Beaumont</surname> <given-names>HJE</given-names></name>, <name name-style="western"><surname>Gallie</surname> <given-names>J</given-names></name>, <name name-style="western"><surname>Kost</surname> <given-names>C</given-names></name>, <name name-style="western"><surname>Ferguson</surname> <given-names>GC</given-names></name>, <name name-style="western"><surname>Rainey</surname> <given-names>PB</given-names></name>. <article-title>Experimental evolution of bet hedging</article-title>. <source>Nature</source>. <year>2009</year>;<volume>462</volume>(<issue>7269</issue>):<fpage>90</fpage>–<lpage>93</lpage>. <comment>doi: <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.1038/nature08504" xlink:type="simple">10.1038/nature08504</ext-link></comment> <object-id pub-id-type="pmid">19890329</object-id></mixed-citation>
+</ref>
+</ref-list>
+</back>
+<sub-article article-type="aggregated-review-documents" id="pcbi.1008406.r001" specific-use="decision-letter">
+<front-stub>
+<article-id pub-id-type="doi">10.1371/journal.pcbi.1008406.r001</article-id>
+<title-group>
+<article-title>Decision Letter 0</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<name name-style="western">
+<surname>Maini</surname>
+<given-names>Philip K</given-names>
+</name>
+<role>Associate Editor</role>
+</contrib>
+<contrib contrib-type="author">
+<name name-style="western">
+<surname>Komarova</surname>
+<given-names>Natalia L.</given-names>
+</name>
+<role>Deputy Editor</role>
+</contrib>
+</contrib-group>
+<permissions>
+<copyright-year>2020</copyright-year>
+<copyright-holder>Maini, Komarova</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<related-object document-id="10.1371/journal.pcbi.1008406" document-id-type="doi" document-type="article" id="rel-obj001" link-type="peer-reviewed-article"/>
+<custom-meta-group>
+<custom-meta>
+<meta-name>Submission Version</meta-name>
+<meta-value>0</meta-value>
+</custom-meta>
+</custom-meta-group>
+</front-stub>
+<body>
+<p>
+<named-content content-type="letter-date">9 Apr 2020</named-content>
+</p>
+<p>Dear Dr. Pichugin,</p>
+<p>Thank you very much for submitting your manuscript "Evolution of multicellular life cycles under costly fragmentation" for consideration at PLOS Computational Biology.</p>
+<p>As with all papers reviewed by the journal, your manuscript was reviewed by members of the editorial board and by several independent reviewers. In light of the reviews (below this email), we would like to invite the resubmission of a significantly-revised version that takes into account the reviewers' comments.</p>
+<p>The reviewers are split on this. One recommends minor revision, while the other recommends rejection. The latter raises a number of important concerns ranging from the novelty of the work in the context</p>
+<p>of previous publications, through to the biological relevance of the work given the lack of appropriate data. I would be willing to consider a substantially revised version of the paper that fully takes into</p>
+<p>account these comments (and a rebuttal letter setting out the changes).</p>
+<p>We cannot make any decision about publication until we have seen the revised manuscript and your response to the reviewers' comments. Your revised manuscript is also likely to be sent to reviewers for further evaluation.</p>
+<p>When you are ready to resubmit, please upload the following:</p>
+<p>[1] A letter containing a detailed list of your responses to the review comments and a description of the changes you have made in the manuscript. Please note while forming your response, if your article is accepted, you may have the opportunity to make the peer review history publicly available. The record will include editor decision letters (with reviews) and your responses to reviewer comments. If eligible, we will contact you to opt in or out.</p>
+<p>[2] Two versions of the revised manuscript: one with either highlights or tracked changes denoting where the text has been changed; the other a clean version (uploaded as the manuscript file).</p>
+<p>Important additional instructions are given below your reviewer comments.</p>
+<p>Please prepare and submit your revised manuscript within 60 days. If you anticipate any delay, please let us know the expected resubmission date by replying to this email. Please note that revised manuscripts received after the 60-day due date may require evaluation and peer review similar to newly submitted manuscripts.</p>
+<p>Thank you again for your submission. We hope that our editorial process has been constructive so far, and we welcome your feedback at any time. Please don't hesitate to contact us if you have any questions or comments.</p>
+<p>Sincerely,</p>
+<p>Philip K Maini</p>
+<p>Associate Editor</p>
+<p>PLOS Computational Biology</p>
+<p>Natalia Komarova</p>
+<p>Deputy Editor</p>
+<p>PLOS Computational Biology</p>
+<p>***********************</p>
+<p>The reviewers are split on this. One recommends minor revision, while the other recommends rejection. The latter raises a number of important concerns ranging from the novel of the work in the context</p>
+<p>of previous publications, through to the biological relevance of the work given the lack of appropriate data. I would be willing to consider a substantially revised version of the paper that fully takes into</p>
+<p>account these comments (and a rebuttal letter setting out the changes).</p>
+<p>Reviewer's Responses to Questions</p>
+<p><bold>Comments to the Authors:</bold></p>
+<p><bold>Please note here if the review is uploaded as an attachment.</bold></p>
+<p>Reviewer #1: The authors point out that a great variety of life cycles exist in nature, although the factors affecting the evolution of life cycles and fragmentation modes are largely unknown. The authors previously found that costless fragmentation promotes the evolution of binary fragmentation modes, but fragmentation into more than two parts is common in biology. Costly fragmentation, however, is widespread in nature, and this article is on how costly fragmentation influences the evolution of life cycles.</p>
+<p>In the model that the authors investigate, cells of an organism divide and stay together until they reach some maximum size, at which point the fragmentation mode determines how the organism divides into smaller groups of cells. The authors consider three types of fragmentation costs: delay, death risk, and cell loss. They find that costly fragmentation can favor many more types of fragmentation modes than costless fragmentation. The three types of fragmentation cost have the same set of forbidden life cycles. Binary fragmentation modes are promoted for the case of costly fragmentation. If fragmentation costs occur for complexes of different sizes, then benefits of forming complexes of multiple cells are not essential for evolution of multicellularity. The authors argue that the three types of fragmentation costs that they consider are applicable to a broad range of species.</p>
+<p>This article is well-researched, and the topic of costly fragmentation has relevance for understanding the life cycles of many organisms. I consider this paper a great conceptual achievement. I recomend publication subject to minor revision.</p>
+<p>I have some minor comments:</p>
+<p>It might be helpful to cite the following articles:</p>
+<p>Ghang, W. &amp; Nowak, M.A. (2014). Stochastic evolution of staying together. J. Theor. Biol. 360: 129-136.</p>
+<p>Olejarz, J. W. &amp; Nowak, M.A.(2014). Evolution of staying together in the context of diffusible public goods. J. Theor. Biol. 360:1-12.</p>
+<p>Kaveh K, Veller C, Nowak MA. Games of multicellularity. Journal of Theoretical Biology. 2016;403:143–158</p>
+<p>Olejarz, J., Kaveh, K., Veller, C. &amp; Nowak, M.A. (2018). Selection for synchronized cell division in simple multicellular organisms. J. Theor. Biol. 457.</p>
+<p>Note also that the model for evolution of eusociality in Nowak, M. A., Tarnita, C. E. &amp; Wilson, E. O. (2010). The evolution of eusociality. Nature 466(7310):1057-1062</p>
+<p>is a mathematical analysis of life cycles with costly fragmentation. It might be useful to point out that very interesting connection.</p>
+<p>page 5, middle: typo: "by dividing cell staying together" should be "by dividing cells staying together"</p>
+<p>page 5, bottom: this might read better: "Units of size $i$ have death rate $d_i$, and cells in such a unit have division rate $b_i$."</p>
+<p>page 6, middle: a comma is missing: "A partition is a way of decomposing an integer m into a sum of integers without regard to order, and summands are called parts [Andrews, 1998]."</p>
+<p>page 7, top: "Next, we assume that the fragmentation of a unit comes at a cost for this unit. In other words, if the unit continues to increase in size instead of fragmenting, its expected net biomass in the short run will be larger." Could that statement be clarified?</p>
+<p>page 7, middle: typo: "maximises" should be "maximizes"</p>
+<p>page 7, bottom: typo: "where T it the fragmentation delay" should be "where T is the fragmentation delay"</p>
+<p>page 8, caption of Figure 2: typo: "and remaining four are split" should be "and the remaining four are split"</p>
+<p>page 11, top: typo: "see Appendix A.2 for details of the matrix construction." should be "(See Appendix A.2 for details of the matrix construction.)"</p>
+<p>page 13, caption of Figure 3: typo: "and is thus called forbidden" should be "and are thus called forbidden"</p>
+<p>page 16, caption of Figure 4: typo: "Fragmentation by binary and (nearly) equal split partitions are likely to evolve in random environments." should be "Fragmentations by binary and (nearly) equal split partitions are likely to evolve in random environments."</p>
+<p>page 18, caption of Figure 5: typo: "found her have" should be "found have"</p>
+<p>page 19, bottom: typo: "these modes delivering" should be "those modes delivering"</p>
+<p>page 21, middle: typo: "both daughter cell" should be "both daughter cells"</p>
+<p>page 21, middle: typo: "leaving empty maternal cell wall behind" should be "leaving the empty maternal cell wall behind"</p>
+<p>page 22, top: typo: "cell give rises to the a colony" should be "cell gives rise to a colony"</p>
+<p>page 22, bottom: typo: "which lead to the formation" should be "which leads to the formation"</p>
+<p>page 23, top: typo: "which make them stick together" should be "which made them stick together"</p>
+<p>page 23, middle: "Which of two" should be "Which of those two options"</p>
+<p>page 23: The last paragraph should be either deleted or rewritten.</p>
+<p>Reviewer #2: The paper is a theoretical investigation of how simple multicellular organisms evolve. The number of cells in these multicellular units (stochastically) grows and upon reaching a certain size, these units fragment into smaller units. The authors are interested in the most efficient way to do this. Or rather, the effects of the cost of fragmentation on the most efficient way. In order to do this they study rate equations describing the mean behavior.</p>
+<p>My problem with the paper is that it falls somewhere between useful and beautiful. It is very far from experimental testing, nothing is known, so many parameters are assumed. To get answers one needs to know these parameters. As they write: "Unfortunately, such experimental data is not available, neither for natural nor for experimental populations." Hence the authors assume random parameters from some arbitrary distributions. And the results of course cannot be compared to data either.</p>
+<p>And this would be OK if the model was pretty, which is subjective of course, but I find it cumbersome. The rules are quite arbitrary; one could similarly set up models with very different rules, like fragmenting at some rate at each size, fragmenting randomly, and so on.</p>
+<p>The authors already published a conceptual paper Pichugin et al 2017, building upon Tarnita et al 2013. That paper made the point that there could be optimal fragmentation modes, and suggested that "in the field and in the laboratory" this could be studied. Last year a stochastic version of the model was published: Pichugin et al 2019.</p>
+<p>In summary, I am not convinced that different versions and aspects of this model is worth being published in this Journal without meaningful links to biology.</p>
+<p>**********</p>
+<p><bold>Have all data underlying the figures and results presented in the manuscript been provided?</bold></p>
+<p>Large-scale datasets should be made available via a public repository as described in the <italic>PLOS Computational Biology</italic> <ext-link ext-link-type="uri" xlink:href="http://journals.plos.org/ploscompbiol/s/data-availability" xlink:type="simple">data availability policy</ext-link>, and numerical data that underlies graphs or summary statistics should be provided in spreadsheet form as supporting information.</p>
+<p>Reviewer #1: Yes</p>
+<p>Reviewer #2: Yes</p>
+<p>**********</p>
+<p>PLOS authors have the option to publish the peer review history of their article (<ext-link ext-link-type="uri" xlink:href="https://journals.plos.org/ploscompbiol/s/editorial-and-peer-review-process#loc-peer-review-history" xlink:type="simple">what does this mean?</ext-link>). If published, this will include your full peer review and any attached files.</p>
+<p>If you choose “no”, your identity will remain anonymous but your review may still be made public.</p>
+<p><bold>Do you want your identity to be public for this peer review?</bold> For information about this choice, including consent withdrawal, please see our <ext-link ext-link-type="uri" xlink:href="https://www.plos.org/privacy-policy" xlink:type="simple">Privacy Policy</ext-link>.</p>
+<p>Reviewer #1: Yes: Martin Nowak</p>
+<p>Reviewer #2: No</p>
+<p><underline>Figure Files:</underline></p>
+<p>While revising your submission, please upload your figure files to the Preflight Analysis and Conversion Engine (PACE) digital diagnostic tool, <underline><ext-link ext-link-type="uri" xlink:href="https://pacev2.apexcovantage.com/" xlink:type="simple">https://pacev2.apexcovantage.com</ext-link></underline>. PACE helps ensure that figures meet PLOS requirements. To use PACE, you must first register as a user. Then, login and navigate to the UPLOAD tab, where you will find detailed instructions on how to use the tool. If you encounter any issues or have any questions when using PACE, please email us at <underline><email xlink:type="simple">figures@plos.org</email></underline>.</p>
+<p><underline>Data Requirements:</underline></p>
+<p>Please note that, as a condition of publication, PLOS' data policy requires that you make available all data used to draw the conclusions outlined in your manuscript. Data must be deposited in an appropriate repository, included within the body of the manuscript, or uploaded as supporting information. This includes all numerical values that were used to generate graphs, histograms etc.. For an example in PLOS Biology see here: <ext-link ext-link-type="uri" xlink:href="http://www.plosbiology.org/article/info%3Adoi%2F10.1371%2Fjournal.pbio.1001908#s5" xlink:type="simple">http://www.plosbiology.org/article/info%3Adoi%2F10.1371%2Fjournal.pbio.1001908#s5</ext-link>.</p>
+<p><underline>Reproducibility:</underline></p>
+<p>To enhance the reproducibility of your results, PLOS recommends that you deposit laboratory protocols in protocols.io, where a protocol can be assigned its own identifier (DOI) such that it can be cited independently in the future. For instructions, please see <underline><ext-link ext-link-type="uri" xlink:href="http://journals.plos.org/plospathogens/s/submission-guidelines" xlink:type="simple">http://journals.plos.org/compbiol/s/submission-guidelines#loc-materials-and-methods</ext-link></underline></p>
+</body>
+</sub-article>
+<sub-article article-type="author-comment" id="pcbi.1008406.r002">
+<front-stub>
+<article-id pub-id-type="doi">10.1371/journal.pcbi.1008406.r002</article-id>
+<title-group>
+<article-title>Author response to Decision Letter 0</article-title>
+</title-group>
+<related-object document-id="10.1371/journal.pcbi.1008406" document-id-type="doi" document-type="peer-reviewed-article" id="rel-obj002" link-type="rebutted-decision-letter" object-id="10.1371/journal.pcbi.1008406.r001" object-id-type="doi" object-type="decision-letter"/>
+<custom-meta-group>
+<custom-meta>
+<meta-name>Submission Version</meta-name>
+<meta-value>1</meta-value>
+</custom-meta>
+</custom-meta-group>
+</front-stub>
+<body>
+<p>
+<named-content content-type="author-response-date">14 May 2020</named-content>
+</p>
+<supplementary-material id="pcbi.1008406.s007" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1008406.s007" xlink:type="simple">
+<label>Attachment</label>
+<caption>
+<p>Submitted filename: <named-content content-type="submitted-filename">Reply to reviewers_05.docx</named-content></p>
+</caption>
+</supplementary-material>
+</body>
+</sub-article>
+<sub-article article-type="aggregated-review-documents" id="pcbi.1008406.r003" specific-use="decision-letter">
+<front-stub>
+<article-id pub-id-type="doi">10.1371/journal.pcbi.1008406.r003</article-id>
+<title-group>
+<article-title>Decision Letter 1</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<name name-style="western">
+<surname>Maini</surname>
+<given-names>Philip K</given-names>
+</name>
+<role>Associate Editor</role>
+</contrib>
+<contrib contrib-type="author">
+<name name-style="western">
+<surname>Komarova</surname>
+<given-names>Natalia L.</given-names>
+</name>
+<role>Deputy Editor</role>
+</contrib>
+</contrib-group>
+<permissions>
+<copyright-year>2020</copyright-year>
+<copyright-holder>Maini, Komarova</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<related-object document-id="10.1371/journal.pcbi.1008406" document-id-type="doi" document-type="article" id="rel-obj003" link-type="peer-reviewed-article"/>
+<custom-meta-group>
+<custom-meta>
+<meta-name>Submission Version</meta-name>
+<meta-value>1</meta-value>
+</custom-meta>
+</custom-meta-group>
+</front-stub>
+<body>
+<p>
+<named-content content-type="letter-date">6 Aug 2020</named-content>
+</p>
+<p>Dear Dr. Pichugin,</p>
+<p>Thank you very much for submitting your manuscript "Evolution of multicellular life cycles under costly fragmentation" for consideration at PLOS Computational Biology. As with all papers reviewed by the journal, your manuscript was reviewed by members of the editorial board and by several independent reviewers. As Reviewer 1 had only minor concerns but Reviewer 2 recommended Reject we sent it back to Reviewer 2. Unfortunately, despite several reminders, Reviewer 2 did not respond, so we asked a third Reviewer to assess the</p>
+<p>whole situation given the previous reviewers. This reviewer is very positive but raises some issues. We would be very happy to consider a revised version that takes this comments into account.</p>
+<p>Please prepare and submit your revised manuscript within 30 days. If you anticipate any delay, please let us know the expected resubmission date by replying to this email. </p>
+<p>When you are ready to resubmit, please upload the following:</p>
+<p>[1] A letter containing a detailed list of your responses to all review comments, and a description of the changes you have made in the manuscript. Please note while forming your response, if your article is accepted, you may have the opportunity to make the peer review history publicly available. The record will include editor decision letters (with reviews) and your responses to reviewer comments. If eligible, we will contact you to opt in or out</p>
+<p>[2] Two versions of the revised manuscript: one with either highlights or tracked changes denoting where the text has been changed; the other a clean version (uploaded as the manuscript file).</p>
+<p>Important additional instructions are given below your reviewer comments.</p>
+<p>Thank you again for your submission to our journal. We hope that our editorial process has been constructive so far, and we welcome your feedback at any time. Please don't hesitate to contact us if you have any questions or comments.</p>
+<p>Sincerely,</p>
+<p>Philip K Maini</p>
+<p>Associate Editor</p>
+<p>PLOS Computational Biology</p>
+<p>Natalia Komarova</p>
+<p>Deputy Editor</p>
+<p>PLOS Computational Biology</p>
+<p>***********************</p>
+<p>A link appears below if there are any accompanying review attachments. If you believe any reviews to be missing, please contact <email xlink:type="simple">ploscompbiol@plos.org</email> immediately:</p>
+<p>[LINK]</p>
+<p>Reviewer's Responses to Questions</p>
+<p><bold>Comments to the Authors:</bold></p>
+<p><bold>Please note here if the review is uploaded as an attachment.</bold></p>
+<p>Reviewer #3: Review: Evolution of multicellular life cycles under costly fragmentation</p>
+<p>The authors present an an analysis of how costs associated with the fragmentation of multicellular complexes may drive the evolution of particular fragmentation modes – for instance whether to cleave in to two equally sized parts, produce unicellular propagules or spilt into a number of unicells. The identification of conditions that lead these latter two results are particularly interesting, arising as they do thorough extensions of the authors’ previous 2017 work, where fragmentation costs were only briefly (and incompletely) touched upon. In the conclusion in particular, I believe the authors put together a solid case that different fragmentation costs could lie behind the variety of fragmentation modes observed in nature. From a theoretical standpoint, I also found the observation that these costs could actually drive the evolution of multicellularity itself very intriguing. On first reading I felt like this was likely be a purely theoretical curiosity. However following the authors’ discussion of reproduction in the Volvocales algae, I’m actually thoughtful of paying this more heed.</p>
+<p>I think this is a thoughtful and thorough article, well-worthy of publication in PLOS Computational Biology. As always however, I believe there are some changes that the authors could make to improve the manuscript still further.</p>
+<p>The initial three suggestions I believe in some sense may address the concerns of Reviewer 2.</p>
+<p>First, for the random environments the authors choose b_i and d_i sampled independently from the uniform distribution U(0,1). As Reviewer 2 states “Hence the authors assume random parameters from some arbitrary distributions. And the results of course cannot be compared to data either.” While I do not share Reviewer 2’s concern about data in a quantitative sense, it seems more biologically relevant to consider three subcases for b_i; b_i strictly increasing, b_i strictly decreasing, and a unimodal distribution for b_i (and simultaneously the converse scenario for d_i) . Importantly, it seems biologically unlikely that b and d are multimodal, as is possible in the current implementation.</p>
+<p>The authors have already considered the second of these scenarios in Section 4.5, so there’s no extra work there. The case of strictly increasing b_i should be similarly straightforward. My guess would be that in this condition the “Other” fragmentation modes would be unlikely. The case of unimodal b_i would still allow for a formidable parameter space. A manageable subcase to look at might be b peaked in the middle at b_10. My guess here would be that we might see an increase in the maturity size selected for compared to the case with no costs, similar to the current results in Section 4.5.</p>
+<p>Second, in response to Reviewer 2’s concerns about data, the authors state “Predictions from our model are ready to be tested once experimental data are available, but we are not experimentalists and not in a position to conduct such experiments (as probably most mathematical biologists). In the revised manuscript, we reflect this aspect of our work in the discussion”. I believe the discussion tackles this very well, but suggest that the predictions of the model could be even more succinctly stated for use by experimentalists by using a table. This could be included in addition to the discussion (which could be kept as is) and could essentially list each species described by the authors, its empirically observed fragmentation mode, and the model predictions for scenarios under which this mode might be selected for. The table would then serve as a handy reference for experimentalists interested in testing these hypotheses.</p>
+<p>Thirdly, Reviewer 2 is concerned that the current paper is perhaps incremental “The authors already published a conceptual paper Pichugin et al 2017 … I am not convinced that different versions and aspects of this model is worth being published in this Journal ...”. Given this it appears that it may not be emphasised clearly enough which predictions of the current model are novel with respect to the 2017 paper. I would suggest periodic reminders in the results section. To avoid repetition I would move the line 267-268 “Only binary fragmentations can be evolutionarily optimal under costless fragmentation, T = R = L = 0 [Pichugin et al., 2017]” (it’s not necessary to address the evolutionary dynamics in that section) and place it in a paragraph before L316 noting that nearly equal split, seeding, and other are not possible in the costless case. The following paragraphs could then emphasise how each fragmentation cost extends the life-cycles of the costless case – e.g. following line 321 “Thus delay fragmentation costs extend the possible life cycles to equal splits relative to the costless case”.</p>
+<p>My other comments are more minor/unrelated to previous reviews.</p>
+<p>5) I was surprised to see discussion of the unicellular bottleneck omitted. I am not suggesting that this should be dealt with in a modelling sense, but it certainly should be discussed. It is likely that this is a strong factor driving a transition from equal-part fragmentation modes to those involving the production of unicells.</p>
+<p>6) Section 3.2 could be improved by explicitly giving an example with a given \\pi(\\kappa) and m, and emphasising these as evolutionary parameters. This might also help make the life-cycle definitions (e.g. 1+1 lifecycle) more clear.</p>
+<p>7) L149 - “The fragmentation cost is another external factor of our model” - would it be more natural to think of this as a physiological restriction, based on the evolutionary history of the organism under consideration?</p>
+<p>8) Fig 2 could reference Eqs.(1-2) for the b/d costs.</p>
+<p>9) Figure 3 – in the “nearly equal split”, 1+1+1+…1 is included, yet this seems by far the more interesting example in this category biologically, and it also appears in particular under various scenarios. Would it be worth considering this as a separate case?</p>
+<p>10) L133 fast → quickly</p>
+<p>**********</p>
+<p><bold>Have all data underlying the figures and results presented in the manuscript been provided?</bold></p>
+<p>Large-scale datasets should be made available via a public repository as described in the <italic>PLOS Computational Biology</italic> <ext-link ext-link-type="uri" xlink:href="http://journals.plos.org/ploscompbiol/s/data-availability" xlink:type="simple">data availability policy</ext-link>, and numerical data that underlies graphs or summary statistics should be provided in spreadsheet form as supporting information.</p>
+<p>Reviewer #3: Yes</p>
+<p>**********</p>
+<p>PLOS authors have the option to publish the peer review history of their article (<ext-link ext-link-type="uri" xlink:href="https://journals.plos.org/ploscompbiol/s/editorial-and-peer-review-process#loc-peer-review-history" xlink:type="simple">what does this mean?</ext-link>). If published, this will include your full peer review and any attached files.</p>
+<p>If you choose “no”, your identity will remain anonymous but your review may still be made public.</p>
+<p><bold>Do you want your identity to be public for this peer review?</bold> For information about this choice, including consent withdrawal, please see our <ext-link ext-link-type="uri" xlink:href="https://www.plos.org/privacy-policy" xlink:type="simple">Privacy Policy</ext-link>.</p>
+<p>Reviewer #3: <bold>Yes: </bold>G.W.A. Constable</p>
+<p><underline>Figure Files:</underline></p>
+<p>While revising your submission, please upload your figure files to the Preflight Analysis and Conversion Engine (PACE) digital diagnostic tool, <underline><ext-link ext-link-type="uri" xlink:href="https://pacev2.apexcovantage.com/" xlink:type="simple">https://pacev2.apexcovantage.com</ext-link></underline>. PACE helps ensure that figures meet PLOS requirements. To use PACE, you must first register as a user. Then, login and navigate to the UPLOAD tab, where you will find detailed instructions on how to use the tool. If you encounter any issues or have any questions when using PACE, please email us at <underline><email xlink:type="simple">figures@plos.org</email></underline>.</p>
+<p><underline>Data Requirements:</underline></p>
+<p>Please note that, as a condition of publication, PLOS' data policy requires that you make available all data used to draw the conclusions outlined in your manuscript. Data must be deposited in an appropriate repository, included within the body of the manuscript, or uploaded as supporting information. This includes all numerical values that were used to generate graphs, histograms etc.. For an example in PLOS Biology see here: <ext-link ext-link-type="uri" xlink:href="http://www.plosbiology.org/article/info%3Adoi%2F10.1371%2Fjournal.pbio.1001908#s5" xlink:type="simple">http://www.plosbiology.org/article/info%3Adoi%2F10.1371%2Fjournal.pbio.1001908#s5</ext-link>.</p>
+<p><underline>Reproducibility:</underline></p>
+<p>To enhance the reproducibility of your results, PLOS recommends that you deposit laboratory protocols in protocols.io, where a protocol can be assigned its own identifier (DOI) such that it can be cited independently in the future. For instructions see <underline><ext-link ext-link-type="uri" xlink:href="http://journals.plos.org/plospathogens/s/submission-guidelines" xlink:type="simple">http://journals.plos.org/ploscompbiol/s/submission-guidelines#loc-materials-and-methods</ext-link></underline></p>
+</body>
+</sub-article>
+<sub-article article-type="author-comment" id="pcbi.1008406.r004">
+<front-stub>
+<article-id pub-id-type="doi">10.1371/journal.pcbi.1008406.r004</article-id>
+<title-group>
+<article-title>Author response to Decision Letter 1</article-title>
+</title-group>
+<related-object document-id="10.1371/journal.pcbi.1008406" document-id-type="doi" document-type="peer-reviewed-article" id="rel-obj004" link-type="rebutted-decision-letter" object-id="10.1371/journal.pcbi.1008406.r003" object-id-type="doi" object-type="decision-letter"/>
+<custom-meta-group>
+<custom-meta>
+<meta-name>Submission Version</meta-name>
+<meta-value>2</meta-value>
+</custom-meta>
+</custom-meta-group>
+</front-stub>
+<body>
+<p>
+<named-content content-type="author-response-date">31 Aug 2020</named-content>
+</p>
+<supplementary-material id="pcbi.1008406.s008" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document" position="float" xlink:href="info:doi/10.1371/journal.pcbi.1008406.s008" xlink:type="simple">
+<label>Attachment</label>
+<caption>
+<p>Submitted filename: <named-content content-type="submitted-filename">Reply Rev 2_v4_AT.docx</named-content></p>
+</caption>
+</supplementary-material>
+</body>
+</sub-article>
+<sub-article article-type="aggregated-review-documents" id="pcbi.1008406.r005" specific-use="decision-letter">
+<front-stub>
+<article-id pub-id-type="doi">10.1371/journal.pcbi.1008406.r005</article-id>
+<title-group>
+<article-title>Decision Letter 2</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<name name-style="western">
+<surname>Maini</surname>
+<given-names>Philip K</given-names>
+</name>
+<role>Associate Editor</role>
+</contrib>
+<contrib contrib-type="author">
+<name name-style="western">
+<surname>Komarova</surname>
+<given-names>Natalia L.</given-names>
+</name>
+<role>Deputy Editor</role>
+</contrib>
+</contrib-group>
+<permissions>
+<copyright-year>2020</copyright-year>
+<copyright-holder>Maini, Komarova</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<related-object document-id="10.1371/journal.pcbi.1008406" document-id-type="doi" document-type="article" id="rel-obj005" link-type="peer-reviewed-article"/>
+<custom-meta-group>
+<custom-meta>
+<meta-name>Submission Version</meta-name>
+<meta-value>2</meta-value>
+</custom-meta>
+</custom-meta-group>
+</front-stub>
+<body>
+<p>
+<named-content content-type="letter-date">28 Sep 2020</named-content>
+</p>
+<p>Dear Dr. Pichugin,</p>
+<p>We are pleased to inform you that your manuscript 'Evolution of multicellular life cycles under costly fragmentation' has been provisionally accepted for publication in PLOS Computational Biology.</p>
+<p>Before your manuscript can be formally accepted you will need to complete some formatting changes, which you will receive in a follow up email. A member of our team will be in touch with a set of requests.</p>
+<p>Please note that your manuscript will not be scheduled for publication until you have made the required changes, so a swift response is appreciated.</p>
+<p>IMPORTANT: The editorial review process is now complete. PLOS will only permit corrections to spelling, formatting or significant scientific errors from this point onwards. Requests for major changes, or any which affect the scientific understanding of your work, will cause delays to the publication date of your manuscript.</p>
+<p>Should you, your institution's press office or the journal office choose to press release your paper, you will automatically be opted out of early publication. We ask that you notify us now if you or your institution is planning to press release the article. All press must be co-ordinated with PLOS.</p>
+<p>Thank you again for supporting Open Access publishing; we are looking forward to publishing your work in PLOS Computational Biology. </p>
+<p>Best regards,</p>
+<p>Philip K Maini</p>
+<p>Associate Editor</p>
+<p>PLOS Computational Biology</p>
+<p>Natalia Komarova</p>
+<p>Deputy Editor</p>
+<p>PLOS Computational Biology</p>
+<p>***********************************************************</p>
+<p>Reviewer's Responses to Questions</p>
+<p><bold>Comments to the Authors:</bold></p>
+<p><bold>Please note here if the review is uploaded as an attachment.</bold></p>
+<p>Reviewer #3: Great to see the suggestions implemented in this final version - I have no further recommendations for the scientific content of the paper.</p>
+<p>Following the spot of the small bug in the production of figure 5, it may be wise to upload the simulation and figure code to a repository, and to provide a link in the paper along with the summary data for the figures.</p>
+<p>Finally, just one small typo - L337 (birth rate increase with size, while death rate decrease) -&gt; (birth rate increases with size, while death rate decreases)</p>
+<p>**********</p>
+<p><bold>Have all data underlying the figures and results presented in the manuscript been provided?</bold></p>
+<p>Large-scale datasets should be made available via a public repository as described in the <italic>PLOS Computational Biology</italic> <ext-link ext-link-type="uri" xlink:href="http://journals.plos.org/ploscompbiol/s/data-availability" xlink:type="simple">data availability policy</ext-link>, and numerical data that underlies graphs or summary statistics should be provided in spreadsheet form as supporting information.</p>
+<p>Reviewer #3: <bold>No: </bold>I can't see a link to the data for Figure 3B, 4 or 5 - however I may have overlooked this.</p>
+<p>**********</p>
+<p>PLOS authors have the option to publish the peer review history of their article (<ext-link ext-link-type="uri" xlink:href="https://journals.plos.org/ploscompbiol/s/editorial-and-peer-review-process#loc-peer-review-history" xlink:type="simple">what does this mean?</ext-link>). If published, this will include your full peer review and any attached files.</p>
+<p>If you choose “no”, your identity will remain anonymous but your review may still be made public.</p>
+<p><bold>Do you want your identity to be public for this peer review?</bold> For information about this choice, including consent withdrawal, please see our <ext-link ext-link-type="uri" xlink:href="https://www.plos.org/privacy-policy" xlink:type="simple">Privacy Policy</ext-link>.</p>
+<p>Reviewer #3: <bold>Yes: </bold>George WA Constable</p>
+</body>
+</sub-article>
+<sub-article article-type="editor-report" id="pcbi.1008406.r006" specific-use="acceptance-letter">
+<front-stub>
+<article-id pub-id-type="doi">10.1371/journal.pcbi.1008406.r006</article-id>
+<title-group>
+<article-title>Acceptance letter</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<name name-style="western">
+<surname>Maini</surname>
+<given-names>Philip K</given-names>
+</name>
+<role>Associate Editor</role>
+</contrib>
+<contrib contrib-type="author">
+<name name-style="western">
+<surname>Komarova</surname>
+<given-names>Natalia L.</given-names>
+</name>
+<role>Deputy Editor</role>
+</contrib>
+</contrib-group>
+<permissions>
+<copyright-year>2020</copyright-year>
+<copyright-holder>Maini, Komarova</copyright-holder>
+<license xlink:href="http://creativecommons.org/licenses/by/4.0/">
+<license-p>This is an open access article distributed under the terms of the <ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/" xlink:type="simple">Creative Commons Attribution License</ext-link>, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</license-p>
+</license>
+</permissions>
+<related-object document-id="10.1371/journal.pcbi.1008406" document-id-type="doi" document-type="article" id="rel-obj006" link-type="peer-reviewed-article"/>
+</front-stub>
+<body>
+<p>
+<named-content content-type="letter-date">1 Nov 2020</named-content>
+</p>
+<p>PCOMPBIOL-D-20-00157R2 </p>
+<p>Evolution of multicellular life cycles under costly fragmentation</p>
+<p>Dear Dr Pichugin,</p>
+<p>I am pleased to inform you that your manuscript has been formally accepted for publication in PLOS Computational Biology. Your manuscript is now with our production department and you will be notified of the publication date in due course.</p>
+<p>The corresponding author will soon be receiving a typeset proof for review, to ensure errors have not been introduced during production. Please review the PDF proof of your manuscript carefully, as this is the last chance to correct any errors. Please note that major changes, or those which affect the scientific understanding of the work, will likely cause delays to the publication date of your manuscript. </p>
+<p>Soon after your final files are uploaded, unless you have opted out, the early version of your manuscript will be published online. The date of the early version will be your article's publication date. The final article will be published to the same URL, and all versions of the paper will be accessible to readers.</p>
+<p>Thank you again for supporting PLOS Computational Biology and open-access publishing. We are looking forward to publishing your work! </p>
+<p>With kind regards,</p>
+<p>Nicola Davies</p>
+<p>PLOS Computational Biology | Carlyle House, Carlyle Road, Cambridge CB4 3DN | United Kingdom <email xlink:type="simple">ploscompbiol@plos.org</email> | Phone +44 (0) 1223-442824 | <ext-link ext-link-type="uri" xlink:href="http://ploscompbiol.org" xlink:type="simple">ploscompbiol.org</ext-link> | @PLOSCompBiol</p>
+</body>
+</sub-article>
+</article>

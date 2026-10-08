@@ -1,0 +1,16 @@
+import SituatedTracking
+#check SituatedTracking.one_step
+#check SituatedTracking.recurrence_bound
+#check SituatedTracking.tracking_bound
+#check SituatedTracking.eventual_band
+#check SituatedTracking.vanishing_input_convergence
+#check SituatedTracking.tracking_convergence
+#check SituatedTracking.radius_nonnegative
+#check SituatedTracking.radius_sound
+#check SituatedTracking.radius_converges
+#check SituatedTracking.certificate_sound
+#check SituatedTracking.eventually_certifies
+#check SituatedTracking.misleading_reading_fixed
+#check SituatedTracking.stable_error_can_be_wrong
+#check SituatedTracking.changing_condition_retains_lag
+#check SituatedTracking.boundary_accuracy_without_certificate

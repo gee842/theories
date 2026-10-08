@@ -1,0 +1,327 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-10-07T23:49:02.178117+00:00",
+  "scope": "Owned document/source bindings, author and independent proof receipts, eight shared fragments, local links and C01. No empirical rerun or universal-foundation completion.",
+  "new_theorems": 19,
+  "new_empty_audits": 21,
+  "inherited_audits": 59,
+  "retained_proof_artifacts_checked": 35,
+  "local_links_checked": 68,
+  "links": [
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-WARRANT.md",
+      "reference": "../../../sources/15-codex-theory-conversations/2026-10-08-variation-warrant-question.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-WARRANT.md",
+      "reference": "SYSTEM-INDIVIDUATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-WARRANT.md",
+      "reference": "NONDUAL-METHOD.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-WARRANT.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-FORMAL.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-WARRANT.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-WARRANT.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-REVIEW.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-WARRANT.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-REVIEW.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-WARRANT.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SOURCE-RELIANCE-INTEGRATION.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-variation-warrant-question.md",
+      "reference": "2026-10-08-systems-foundation-question.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-variation-warrant-question.md",
+      "reference": "../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-WARRANT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-ARGUMENT.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-INDIVIDUATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-ARGUMENT.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-ARGUMENT.md",
+      "reference": "CONSTITUTIVE-WARRANT-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-ARGUMENT.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-ARGUMENT.md",
+      "reference": "LAW-CORRESPONDENCE-EVIDENCE.md#1-documented-acquisition-retention-and-issued-action"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-ARGUMENT.md",
+      "reference": "SYSTEM-INDIVIDUATION-FORMAL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-ARGUMENT.md",
+      "reference": "LAW-CORRESPONDENCE-EVIDENCE.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-ARGUMENT.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-FORMAL.md",
+      "reference": "SYSTEM-INDIVIDUATION-FORMAL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-FORMAL.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/SystemIndividuation.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-FORMAL.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/VariationWarrant.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-FORMAL.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_variation_warrant.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-FORMAL.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/system-individuation-checks/20261007T233431.104249Z/receipt.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-FORMAL.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/variation-warrant-checks/20261007T234515.871133Z/receipt.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-INTEGRATION.md",
+      "reference": "../../../../sources/15-codex-theory-conversations/2026-10-08-variation-warrant-question.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-WARRANT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-INTEGRATION.md",
+      "reference": "VARIATION-WARRANT-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-INTEGRATION.md",
+      "reference": "VARIATION-WARRANT-FORMAL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-INTEGRATION.md",
+      "reference": "VARIATION-WARRANT-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/VariationWarrant.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/variation-warrant-checks/20261007T234515.871133Z/receipt.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_variation_warrant.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-INTEGRATION.md",
+      "reference": "development/variation-warrant-review/20261007T234545.254086Z/receipt.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-INTEGRATION.md",
+      "reference": "VARIATION-WARRANT-REVIEW.md#3-primary-evidence-variation-performed-within-a-biological-preparation"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-INTEGRATION.md",
+      "reference": "VARIATION-WARRANT-REVIEW.md#4-primary-evidence-programmed-operations-and-actual-controller-records"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-INTEGRATION.md",
+      "reference": "SOURCE-RELIANCE-INTEGRATION.md#omitted-joint-failure"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-INTEGRATION.md",
+      "reference": "VARIATION-WARRANT-INDEX-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-INTEGRATION.md",
+      "reference": "VARIATION-WARRANT-CHECKS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-REVIEW.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-REVIEW.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md#minimal-grounding-and-universal-scope"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-REVIEW.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-INDIVIDUATION.md#7-completion-and-the-stronger-question"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-REVIEW.md",
+      "reference": "../../../../sources/evolutionary-selection/koza-2011/article.html"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-REVIEW.md",
+      "reference": "../../../../sources/evolutionary-selection/koza-2011/manifest.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-REVIEW.md",
+      "reference": "MAT-CONDITIONS-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-REVIEW.md",
+      "reference": "../../../../sources/tclab-benchmark/extracted/2_PID/0_initial_PID/0_initial_PID.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-REVIEW.md",
+      "reference": "LAW-CORRESPONDENCE-EVIDENCE.md#1-documented-acquisition-retention-and-issued-action"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-REVIEW.md",
+      "reference": "TUNING-CORRESPONDENCE-REVIEW.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-REVIEW.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-WARRANT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-REVIEW.md",
+      "reference": "VARIATION-WARRANT-ARGUMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-REVIEW.md",
+      "reference": "VARIATION-WARRANT-FORMAL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-REVIEW.md",
+      "reference": "VARIATION-WARRANT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-REVIEW.md",
+      "reference": "development/variation-warrant-review/check.py"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-REVIEW.md",
+      "reference": "development/variation-warrant-review/20261007T234545.254086Z/receipt.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-REVIEW.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/variation-warrant-checks/20261007T234515.871133Z/receipt.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-REVIEW.md",
+      "reference": "SOURCE-RELIANCE-INTEGRATION.md#omitted-joint-failure"
+    },
+    {
+      "from": "RESEARCH.md",
+      "reference": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "VARIATION-WARRANT-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-INTEGRATION.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "reference": "VariationWarrant.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "reference": "variation-warrant-checks/20261007T234515.871133Z/receipt.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "reference": "../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-FORMAL.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "reference": "SYSTEM-WARRANT.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-INTEGRATION.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "reference": "SYSTEM-WARRANT.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEMS-COMPLEXITY-CHAOS.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "VARIATION-WARRANT-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "VARIATION-WARRANT-CHECKS.json"
+    }
+  ],
+  "shared_fragments": 8,
+  "owned_rows": [
+    "C01"
+  ],
+  "stronger_foundation_completed": false,
+  "receipt_sha256": {
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/variation-warrant-checks/20261007T234515.871133Z/receipt.json": "a5136177bc8d18b616f62cbb0fa17a1c5a9403e00ac1c5c94875608bb588ec62",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/development/variation-warrant-review/20261007T234545.254086Z/receipt.json": "6e53f5675a7205a4ef14fabf4ce960472801cea611706ac948bb5aa8f77c8c0b"
+  },
+  "owned_document_sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-WARRANT.md": "ad8181f2f52d16e9072fc8c4e205d03b1ae03d85bb85bd531e8918183ce80b52",
+    "sources/15-codex-theory-conversations/2026-10-08-variation-warrant-question.md": "3a34714ca4ad319bc4e0112936bd4f132d620ff091088bf09686e27302cc13cd",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-ARGUMENT.md": "ae3a4fee2cb1940ae11a3f12928e02428a982e5feae40275bb1d9d5e7ea089d1",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-FORMAL.md": "bf7dd25401c167f62f58ef0aa39c1877c3dc3ec9e70e4ef48c77dfb8f1a3a54e",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-INTEGRATION.md": "614e72c850f2b6cb97aeba78f3731dd3680c8ea845133453a6e66b512e3b3dc2",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-REVIEW.md": "2f5c57ab45d97af9a3aed374bd08363de16fa43231b7ab45f7f5c73dfe94328b"
+  },
+  "primary_and_previous_source_bindings": {
+    "sources/evolutionary-selection/koza-2011/article.html": "171f97eba43544299ff2f0736f58fabd26a01d1bebbc22fc18300dd7b68cb263",
+    "sources/tclab-benchmark/extracted/2_PID/0_initial_PID/0_initial_PID.py": "feafc3377f48f7550670dd845490dd912f276a028b92182e83cbacd264f3ad2a",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-INDIVIDUATION.md": "62416ce3c87f922d7b52904aa09777735b7ddb0724a94011f7bf841dc5cfebc7"
+  },
+  "checker_sha256": "cbdb77464f32fcd5e6934563d5cc9a219e6fe1118b85e69b96c20351d90177f7",
+  "edit_record_sha256": "21771a228fc0ab1986e45818a290973648cf5566bb890bb835912a1d9fa82fed",
+  "concurrent_global_changes_not_certified": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/KNOWLEDGE.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PHILOSOPHICAL-ACCOUNT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SOURCE-RELIANCE-INTEGRATION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODEL-REVISION-INTEGRATION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md"
+    ],
+    "removed_pages": []
+  }
+}

@@ -1,0 +1,648 @@
+{
+  "retrieved_date": "2026-10-08",
+  "original_acquisition_date": "2023-11-23",
+  "archive": "https://doi.org/10.6019/S-BIAD2117",
+  "scope": "Original unmodified HTTP range bodies for one fixed central row band through 91 time points; not a complete CZI file or independent biological replicates.",
+  "new_original_bytes": 251170816,
+  "range_manifest_count": 91,
+  "manifests": [
+    {
+      "path": "t000/ranges.json",
+      "sha256": "784515c8972d6e374975f5f5aa6f37cd8deb5bc78a9aa8a565d0ec3d40238d42",
+      "new_bytes": 0,
+      "original_range_count": 0,
+      "reused_original_parts": 2
+    },
+    {
+      "path": "t001/ranges.json",
+      "sha256": "6bfd6b927c0989c0b638960e704cc825e08ad4a6b05228f53b468624092baec3",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t002/ranges.json",
+      "sha256": "64bc0c5b2e4c44d570e37ca4088feb4f1de5c34eafaa5c4565ac6b60a80f0df7",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t003/ranges.json",
+      "sha256": "c364e68950c80097311cf38e1f655a45b926fd2e0f7938ee5be8eeef2511b198",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t004/ranges.json",
+      "sha256": "e447a373aa085dfc1b906c898a30389ba99f10732b3cc567dbd14db563518245",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t005/ranges.json",
+      "sha256": "a85aa7ec3af07abcc4ac6f3e1d090ef1eff2b1471f65dfda1481e97b62b79941",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t006/ranges.json",
+      "sha256": "66d9324bc04afea73cd0023bf70accfc2c3481b219eeaeb965a29689d65188b4",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t007/ranges.json",
+      "sha256": "f2aa0f18255f38a5ef35de272c010a5652d32eb2f4ead82f04bfccfdf7809947",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t008/ranges.json",
+      "sha256": "b2a5bfe51e5be32c35c4e9e93f7868cfccc4a16cbcd275f41fbea92d5d5f0328",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t009/ranges.json",
+      "sha256": "9d3db8c1cb3028d3460de6599f2cc79bb5afb4d596343472d518cbecf926c642",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t010/ranges.json",
+      "sha256": "ea39dd27a4fdf892d90974b3da6bead4a19fd51a11b7f223effc26dae42c3457",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t011/ranges.json",
+      "sha256": "d4021a7d3c240d99dcbfb3e6e44d7065d44a9a6c40c0b360be0631948995e7dc",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t012/ranges.json",
+      "sha256": "ce639515b8b8de5e7238f605ba98d29405effb380de4460c37909c4f3096c254",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t013/ranges.json",
+      "sha256": "e03cbddbe1bc1131b71073e56021a2c719037b2341129dda0fecfb994524e98f",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t014/ranges.json",
+      "sha256": "9b3c6658b58c2a3581659e16573063b0a6d334bccea5d51b49bc8ef871083d36",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t015/ranges.json",
+      "sha256": "e800c82d9aba74f61b14643162cac0f9735f91533d1e9feece4cb26040361cf7",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t016/ranges.json",
+      "sha256": "402a30cfbb0510a1ed6f309ead06ef541f1e0919bce6a0a241b776111907f2d8",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t017/ranges.json",
+      "sha256": "35c00c0522096f7f6414413c34586e33efc28c0f6b27a0ba4a170e4577b67fd2",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t018/ranges.json",
+      "sha256": "cc03787c2479811157a84a45a200458f3b599f5475cd43b8c7ff9cee02eb5e38",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t019/ranges.json",
+      "sha256": "4965b65984d2d0ff8789a73049d30b4b98eb703ec2aefe8504e6f0c4be13b73d",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t020/ranges.json",
+      "sha256": "bc96dd0bd4b762918a91f16767a157f0bf45a5e4b5b0988c23086f44578a68a7",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t021/ranges.json",
+      "sha256": "29af418c5f6d3b2f463b2a346d013865b7ab1070aa37ee80fa063ca03cf3c5bf",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t022/ranges.json",
+      "sha256": "ba44e9a1b5bc48cbdd9d5728ac0a39591186c8889e9a54e2bf732e07e0fb44c8",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t023/ranges.json",
+      "sha256": "7cf72a6ff58fb39f187c29015180f2a3a35d194ee2e6820ee272580e1f30d4ea",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t024/ranges.json",
+      "sha256": "35a7517ab9a393d57e69950601bb97e71f3091af3316fd79d8ebf31235fe9aad",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t025/ranges.json",
+      "sha256": "36a0275f56822e300227366460607c287f64d0351b5ee5a79987f7d6d6afffbc",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t026/ranges.json",
+      "sha256": "93fcedf31566cc8859cdc9dee079cbd451c73fe8f9a1d0a01f21a7b46366ec67",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t027/ranges.json",
+      "sha256": "5a3528fc5a272b683ec3c4cdab32e16fe24fedbaa79446e5f9c5ac0b21abfd4c",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t028/ranges.json",
+      "sha256": "ca8080392b3e910c3f56674bc6dab63de46b5cf12db52055de46c2fb3f179ba8",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t029/ranges.json",
+      "sha256": "35e83009c7838bd903b5054a2e51abca1cd363e96f154fc6d1398febfc9417e7",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t030/ranges.json",
+      "sha256": "83767991b949efe74b0c3f3b1c6d1323b8197818881eb2d2428928586f70d13f",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t031/ranges.json",
+      "sha256": "08051e134a6568a3ce79b4a9cb37d8c9139fc0f7222ffa7374652ff4195fcb92",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t032/ranges.json",
+      "sha256": "891184e4fe9ee89df7d4b6d0217f5155eba2febd8eeb884fdd19df6cb604eac4",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t033/ranges.json",
+      "sha256": "5636ace7cf652b452fd6ba5815bad824253f2462bcac7fdceb8678f6265d335e",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t034/ranges.json",
+      "sha256": "63d60d01c5e8c9c0ef083df140eb6cb0b2c73ab201f9ffe33f62d6ed05ef77ee",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t035/ranges.json",
+      "sha256": "4393b03f3a008c249c762601dfe491ea11b2ed948856add0110d76a048e5b868",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t036/ranges.json",
+      "sha256": "fa93c83bacabf69b72f3ff4be6ec5bab2a3c2e2d647bb98ade487e282727852d",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t037/ranges.json",
+      "sha256": "62ae46b796a486f0ab5171e2318d978d1598e7d3189a8fa61cb65c7149cbd0fc",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t038/ranges.json",
+      "sha256": "c041503aa72cf7dc7d556d0d8f7289470d185a3f1f45d31a17eb508203260f83",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t039/ranges.json",
+      "sha256": "e0fd0a98b012f0c17e1918f580db7f95fe295e649d9793bac46d74bdbddef880",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t040/ranges.json",
+      "sha256": "e9e54dc5b2adc7df44af95f9ee04edd31a63e0ea4afdcabf354e60226ed7c60a",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t041/ranges.json",
+      "sha256": "23768412b0309267cd860286791faf48b69959bcbe82e1d30480df128b6eb17d",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t042/ranges.json",
+      "sha256": "06428e90c6b8de82672a73b43837b45bf16b77bec9983fa0d1e30a440868101d",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t043/ranges.json",
+      "sha256": "4ad4c413d0c95ae2d0e37c7378de6e7e5b9a524354472726754bd871ae95c44d",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t044/ranges.json",
+      "sha256": "684fe9e46322f5edc9b29d3f79abf76d67d25ce67a08b5a0d1d1db3fb0948260",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t045/ranges.json",
+      "sha256": "f32ffc96c85336ab477995c749951748fdf2800a77b8c975a45bb912d53c410d",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t046/ranges.json",
+      "sha256": "6908a7b3a029eafc37c1cf6131f65a70bbde2725f364982e7dd72838e9463d89",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t047/ranges.json",
+      "sha256": "1ab59a84a965b7454731a2d325000cf8962936d384bd66e98178d1eccf64aea6",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t048/ranges.json",
+      "sha256": "998816dca7eb5e9d8794a1ffde4087b9c11b032e22be543b44fbc85164b1bc8e",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t049/ranges.json",
+      "sha256": "ceb91ea35dd7a8bffb4bd8c6796fa73bacf6aa6af83b92a2513510c0a7d22988",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t050/ranges.json",
+      "sha256": "cf80c6d0f26053cd76ed257c4130171d579360efe4fdb416f2663a241e8cfdf5",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t051/ranges.json",
+      "sha256": "0b257b1777b78bf8da343a5a85c07484697f75fa42d33757a79e0453fd1ec19d",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t052/ranges.json",
+      "sha256": "1eb3788bb07b6d7119416ba2c50b4ffc853f91145ae8b342bb15d66358f3de0f",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t053/ranges.json",
+      "sha256": "2c63a5dcbf0de3c99d0984723c25f272ac8b6f9dfe09e2e6c895c6e87021645e",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t054/ranges.json",
+      "sha256": "b5bb6df4b14fef0b8620ca08aa8475e7d90e6ab8fcdcb37d2d16dc6fc5afd858",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t055/ranges.json",
+      "sha256": "29cb48ceaef09ca71d7e9c890d53a8bdf0a357558d505cf89d7912e0cc1949aa",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t056/ranges.json",
+      "sha256": "b51a30ab8abdeb9e3688c73f39f166d397809535076020b6db07990c687a83e7",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t057/ranges.json",
+      "sha256": "9977587050ed51f73c81c0b2fe42b895fdf69d3e1f0750b802b94886f0572777",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t058/ranges.json",
+      "sha256": "5bc7e75116a8f56aecf5180ddb0924fa2d6ca8b5a28809d2c13cdb0163d27702",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t059/ranges.json",
+      "sha256": "0ef70618b50d2178132008c2dad6643bd80e9d8234a8a2498c5b6c0aa939e6aa",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t060/ranges.json",
+      "sha256": "6bf27a48d493d846d8735e152fcfbc6052a512c8c6f60a8b650b9fc2ec453986",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t061/ranges.json",
+      "sha256": "1ce0b02977edf58d5d95a5425c8dfd4450e5056d318abb6dfbf2cbc98038c3c2",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t062/ranges.json",
+      "sha256": "b3959c664e00d677a7ff94ef0990c870f7f4d1abb6925d53c6d058502950fa47",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t063/ranges.json",
+      "sha256": "f9656039e4795a1fcebf7f9f9e00955b782a461e31a015f3f1ce47781409ce95",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t064/ranges.json",
+      "sha256": "c142fe6fcd36a386c5c5404db7e56751bfb0938d4c8cb7747475fdee068ef5a3",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t065/ranges.json",
+      "sha256": "623d14ca2fbd1dbd4aaf3b9c01cb16274bee80bf62e9a6301a7651c2fdf7d4e6",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t066/ranges.json",
+      "sha256": "8cb43b6414f2e4bfebba530436cc2520914294e731e533d256c6af4a277fb6b3",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t067/ranges.json",
+      "sha256": "576eb720e0e28329c2b57927af266af345067e46e324016168ead8772c9c2460",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t068/ranges.json",
+      "sha256": "2ecbc99641c08fdeccd039c6d37ceee97f3779b4f4c21eeb531b86ad259ce6d5",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t069/ranges.json",
+      "sha256": "9c11a2c1ed25a59adb4f372a600940a1501412d0a9d82c3bba1b52f511884fd0",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t070/ranges.json",
+      "sha256": "bbf42e37531b2440333327677d630f5b3d412006dbb6ce9c58c39f8a2f762b74",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t071/ranges.json",
+      "sha256": "27016f0ec1228ea33e050304557f8c485f32c44cedda6475bfe0a6abcfcaad8f",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t072/ranges.json",
+      "sha256": "920d29c4f0fe944ade03abb62c0607673eb8cc53f24878f825be9209e5d71054",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t073/ranges.json",
+      "sha256": "462a7f84606e80ecd23334407dea6e00ed0a596a719f8c4cb763600ca59c09f8",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t074/ranges.json",
+      "sha256": "5fe2893d53aff8829e1313da5aa73bdfd06e8da3554f43e8d8642523ffd55d86",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t075/ranges.json",
+      "sha256": "d77b26503e010035ebe68350a7a0f0767b4a5655a50f8806471dd72b61e95f9c",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t076/ranges.json",
+      "sha256": "4e9c1e5aee25d5712f02b11ac97306ebddf6456c3c38b8a9ad476755ebd90dd4",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t077/ranges.json",
+      "sha256": "6c56f7d42e96469accb80e48b778b97cd06ae8dd5ff7bad34d6966da4f466811",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t078/ranges.json",
+      "sha256": "4bddaf3ce3b014b51d44c43d769555651001375ebd6fa461f40261360f1caab5",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t079/ranges.json",
+      "sha256": "db4977656e216bcc77f8a034484eb8234a8d48931693a693b40b1b3dc723d066",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t080/ranges.json",
+      "sha256": "0cede282113570f59ac06b30a71962f4a7a32962ce04d53934f3b81713b88174",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t081/ranges.json",
+      "sha256": "4d754e117fdac4c8161ecb84130a8f264570589bcbe898ba35dedef1e862c488",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t082/ranges.json",
+      "sha256": "42f297f79185f37e148f345201216b8b98ccb2e6933c7c34d2c6192f7eded6c6",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t083/ranges.json",
+      "sha256": "bb442166703cffc05fb8cf776b448231da80087d62df17bf7ed15d0566119120",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t084/ranges.json",
+      "sha256": "3775cc2f5f065969e4d59a6f10c4f7225169ac84a2e347bbc8cd08711b8d069a",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t085/ranges.json",
+      "sha256": "c58d5c340fe6e6e3a1d7b51e41be32d2ff28a791b46a770ba8d90b6efaabab46",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t086/ranges.json",
+      "sha256": "dff129a0b6c6616648a7b876546eb8ccc056fef050c34157af8b0ec12bfba274",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t087/ranges.json",
+      "sha256": "04484ffe225a8c5aee1f084cb94931ea10cb38d594cfc7cf8193a4bae6b0325e",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t088/ranges.json",
+      "sha256": "fb7d42ccef6d032e853d069a5901eeb0b5f456072dc553ebfa2f58719b78a249",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t089/ranges.json",
+      "sha256": "79d2f3c65a62976ec6aede845835aa61ab06bf37e731c2cce575d1375749086a",
+      "new_bytes": 2822144,
+      "original_range_count": 2,
+      "reused_original_parts": 0
+    },
+    {
+      "path": "t090/ranges.json",
+      "sha256": "607c0bae5a7f3cdcd7e4123bc6743229d813337a48aec6cc14f4f922607b9cfa",
+      "new_bytes": 0,
+      "original_range_count": 0,
+      "reused_original_parts": 2
+    }
+  ],
+  "publisher_full_file_checksum_verified": false
+}

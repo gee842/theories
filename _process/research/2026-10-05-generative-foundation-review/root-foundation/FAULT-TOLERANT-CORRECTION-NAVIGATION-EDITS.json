@@ -1,0 +1,38 @@
+[
+  {
+    "path": "RESEARCH.md",
+    "inserted": "**部分失陷下的纠正 / Correction under partial compromise，2026-10-08。** [新构造、原典与反审](_process/research/2026-10-05-generative-foundation-review/root-foundation/FAULT-TOLERANT-CORRECTION-INTEGRATION.md)接通相关故障范围、真实路线、委托许可、付费执行与防重放：37项新 Lean 定理／68项审计、85,680项记录匹配。/ Certificate availability has an exact two-fault-set coverage condition; a direct protected scope check improves the final executor. Correlated capture defeats a misspecified model; actual fault coverage, protected execution and mandate legitimacy remain substantive premises. Earlier acquisition and boundary results are reused, not recounted.\n\n",
+    "before_sha256": "ff823aa3498ce7008d9c854c793d719ab415b9b986d68913be116bccf72897be",
+    "after_sha256": "e2512151a9a9298e20b9a0bd4024fea440c2a6f75f044cd6cb86e9e8d784d73a"
+  },
+  {
+    "path": "theories/shengsheng-buxi-generative-existence/README.md",
+    "inserted": "**部分失陷下的纠正 / Correction under partial compromise，2026-10-08。** [变化中对齐 §7](unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md#7-correction-under-partial-compromise--部分失陷下的纠正)将相关故障范围、观察与委托许可接到实际执行；37项新定理／68项审计、85,680项记录匹配。/ Review diversity depends on actual shared vulnerabilities; current mandate fidelity does not establish mandate legitimacy.\n\n",
+    "before_sha256": "a885fe58330199d4381c2aca90a330ffa0df9d0cb628ae99c1f73c54bab49d33",
+    "after_sha256": "240bdaf06ea6d75722a384df27c62547039fa11864f5e84d88518d253885f7a4"
+  },
+  {
+    "path": "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+    "inserted": "**已完成部分失陷连接 / Completed partial-compromise connection，2026-10-08。** [故障范围与纠正执行](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FAULT-TOLERANT-CORRECTION-INTEGRATION.md)新增37项定理／68项审计，明确可用性条件、相关俘获及消耗。/ Reuse the conditional attestation result; next warrant and maintain actual failure/control relations through organizational change and justify mandate revision. Generic quorum or freshness proofs are completed scope.\n\n",
+    "before_sha256": "ae24b992ed18b33569d5c039f9aba6c5f41836dda2ab31c8a429f7f53acdee07",
+    "after_sha256": "eb52a9fc06ba94109eaecab078530e96ab07214d40fab47798edfab3a75efdac"
+  },
+  {
+    "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+    "inserted": "**部分失陷与委托范围 / Partial compromise and delegated scope，2026-10-08。** [变化中对齐 §7](ALIGNMENT-THROUGH-CHANGE.md#7-correction-under-partial-compromise--部分失陷下的纠正)新增37项定理／68项审计：分别认证实际观察与委托许可，并接到执行与防重放。/ Shared control must enter the fault envelope; signatures preserve a supplied mandate under conditions but do not create its ethical legitimacy.\n\n",
+    "before_sha256": "c869b0508dbeccba060c2bb1c97e2ff659bb449e75236b3a3b0405a101e91026",
+    "after_sha256": "b4bb0bda1c78400620c6b36dd6d94d936b75bd00864f58c17bba6ec33eda24e4"
+  },
+  {
+    "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+    "inserted": "**部分失陷下的纠正 / Correction under partial compromise，2026-10-08。** [构造、原典比较与反审](FAULT-TOLERANT-CORRECTION-INTEGRATION.md)新增37项 Lean 定理／68项声明审计、85,680项匹配记录。/ Correlated fault envelopes yield scoped observation and mandate guarantees; protected implementation and actual fault coverage remain explicit.\n\n",
+    "before_sha256": "becadf6358ebf62bbbfc086fdf2a9ab2e246a7dcaf5edc69a412e50d6b04001e",
+    "after_sha256": "6b45bd9f1e613ec5981c439ba9dc24204ab2e30877765aaebcad37f3f77be746"
+  },
+  {
+    "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+    "inserted": "**部分失陷接续 / Partial-compromise continuation，2026-10-08。** M25/F30成对接入[37项新定理／68项审计、85,680项记录](FAULT-TOLERANT-CORRECTION-INTEGRATION.md)，保留前两轮独立计数及反例。/ Only owned suffixes, links, read/authored fingerprints and one discovery page change; unrelated rows and rendered lines are preserved. [Edits](FAULT-TOLERANT-CORRECTION-INDEX-EDITS.json); [scoped checks](FAULT-TOLERANT-CORRECTION-CHECKS.json). No whole-table or independent acceptance.\n\n",
+    "before_sha256": "b8bb6a58d43b7f109062dd8d9429172e57b87e98ebd41e8552df83795961f2bf",
+    "after_sha256": "656c519487499b79c73dcb7e3ee00422464637f1e946fa405d7a8940888db00c"
+  }
+]

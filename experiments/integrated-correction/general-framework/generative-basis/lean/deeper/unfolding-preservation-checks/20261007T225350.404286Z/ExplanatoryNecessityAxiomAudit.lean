@@ -1,0 +1,18 @@
+import ExplanatoryNecessity
+#print axioms Generative.ExplanatoryNecessity.decode_singleton_recovers_step
+#print axioms Generative.ExplanatoryNecessity.same_description_preserves_steps
+#print axioms Generative.ExplanatoryNecessity.different_steps_require_different_descriptions
+#print axioms Generative.ExplanatoryNecessity.step_equivalence_iff_trace_equivalence
+#print axioms Generative.ExplanatoryNecessity.static_profile_adequate
+#print axioms Generative.ExplanatoryNecessity.adequate_answers_agree
+#print axioms Generative.ExplanatoryNecessity.local_decomposition_iff_trace_representation
+#print axioms Generative.ExplanatoryNecessity.idle_feasible
+#print axioms Generative.ExplanatoryNecessity.flip_feasible
+#print axioms Generative.ExplanatoryNecessity.feasibility_profiles_agree
+#print axioms Generative.ExplanatoryNecessity.endpoint_profiles_differ
+#print axioms Generative.ExplanatoryNecessity.bounded_empty
+#print axioms Generative.ExplanatoryNecessity.bounded_singleton
+#print axioms Generative.ExplanatoryNecessity.bounded_rejects_double
+#print axioms Generative.ExplanatoryNecessity.bounded_prefix_closed
+#print axioms Generative.ExplanatoryNecessity.bounded_no_one_point_realization
+#print axioms Generative.ExplanatoryNecessity.bounded_history_realization

@@ -1,0 +1,40 @@
+{
+  "scope": "Source identity after removing #print axioms commands; role correction only, no proof changes.",
+  "initial_statistics": {
+    "lean_paths": 4081,
+    "distinct_byte_contents": 1177,
+    "byte_identical_duplicate_groups": 517,
+    "roles": {
+      "audit-driver": 13,
+      "development-attempt": 440,
+      "historical-draft": 3,
+      "imported-archive": 23,
+      "saved-copy": 3118,
+      "working-source": 484
+    },
+    "working_named_theorem_lemma_occurrences": 9644,
+    "working_explicit_named_declaration_occurrences": 15817,
+    "working_groups": {
+      "abstraction": 41,
+      "concern": 15,
+      "core": 109,
+      "ethics": 103,
+      "inquiry": 63,
+      "learning": 49,
+      "other": 19,
+      "renewal": 12,
+      "shared": 67,
+      "valuation": 19
+    }
+  },
+  "initial_matching_header_groups": 53,
+  "removed_snapshot_header_groups": 14,
+  "source_sha256": {
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/formal/RecipientReasons.lean": "2c750ca9fbd432428dc4a69717afdca8862f8efeaabc012429f2031d257d860d",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/RecipientReasons.lean": "47609fbd8220a33a76d356d151b80b12e0f69ccb676ff44d64838fd99933d4a8",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/README.md": "d0873cdb5bcef7c189303ab613bfcd38445dcdfc3fa96bab1b1334a0c822baf9",
+    "experiments/shared-renewal-capability/regulation/retention/formation/selectors/updaters/prediction/recipient-correction/identification/recording/reason-consumer/transport/evidence/manifest.json": "f893f4870ca394db276c5ada65776b5794436989d90cfde33691c33b2e0681ce"
+  },
+  "same_text_except_print_commands": true,
+  "corrected_role": "saved-copy"
+}

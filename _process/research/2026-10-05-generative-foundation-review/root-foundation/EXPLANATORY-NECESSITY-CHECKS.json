@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "local_links_checked": 15,
+  "new_theorems": 17,
+  "inherited_audits": 25,
+  "total_empty_axiom_audits": 42,
+  "proof_source_and_snapshot_bindings": "match",
+  "checks_do_not_claim": "universal explanatory necessity or empirical correspondence",
+  "sha256": {
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md": "7b5bf40b638621838e6017c6ea639204741b9702e4afc659568c5c231cf94b78",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md": "5b05e0636a3ae2146738c6685a2904392b50aff2c23e46e7081dc324394d547d",
+    "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md": "624cdb897aa33dca3ae2af9a799aa397cc137e4329b5db10590941757b4a6f0b",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryNecessity.lean": "e6ee0229ef68da50a62ccc0d079f7e38866f86813d4e7309e681ecc17a923df5",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_explanatory_necessity.py": "3e6ebe9483d4a37a9f1a6bbdb38b3fa523fae01448246a26a5d2ea21e7d6a054",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/explanatory-necessity-checks/20261007T204034.392105Z/receipt.json": "d1e69c10d383be261f0f35d07a1e645f57ebc7511184d0f93df3e0a0bdddb8be",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INDEX-EDITS.json": "f84f66421da40023f19362f58c3b00b5ce81218f6596c177aefe6775f7d8cd67"
+  }
+}

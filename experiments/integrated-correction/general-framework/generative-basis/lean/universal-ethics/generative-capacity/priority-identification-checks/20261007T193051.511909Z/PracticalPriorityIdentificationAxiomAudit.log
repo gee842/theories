@@ -1,0 +1,22 @@
+'PracticalPriorityIdentification.History' does not depend on any axioms
+'PracticalPriorityIdentification.LexLe' does not depend on any axioms
+'PracticalPriorityIdentification.score' does not depend on any axioms
+'PracticalPriorityIdentification.FiniteLe' does not depend on any axioms
+'PracticalPriorityIdentification.lex_refl' does not depend on any axioms
+'PracticalPriorityIdentification.lex_trans' depends on axioms: [propext, Quot.sound]
+'PracticalPriorityIdentification.finite_trans' does not depend on any axioms
+'PracticalPriorityIdentification.finite_protection_positive' depends on axioms: [propext]
+'PracticalPriorityIdentification.finite_secondary_positive' depends on axioms: [propext]
+'PracticalPriorityIdentification.bounded_comparison_agreement' depends on axioms: [propext, Quot.sound]
+'PracticalPriorityIdentification.secondaryBound' does not depend on any axioms
+'PracticalPriorityIdentification.member_bounded' depends on axioms: [propext]
+'PracticalPriorityIdentification.every_finite_sample_agrees' depends on axioms: [propext, Quot.sound]
+'PracticalPriorityIdentification.outside_sample_reversal' depends on axioms: [propext]
+'PracticalPriorityIdentification.reversing_history_unobserved' depends on axioms: [propext, Quot.sound]
+'PracticalPriorityIdentification.no_fixed_finite_weight_is_lexical' depends on axioms: [propext]
+'PracticalPriorityIdentification.finite_agreement_without_global_identification' depends on axioms: [propext,
+ Quot.sound]
+'PracticalPriorityIdentification.SwapInvariant' does not depend on any axioms
+'PracticalPriorityIdentification.ExactlyOne' does not depend on any axioms
+'PracticalPriorityIdentification.symmetric_assignment_not_unique' does not depend on any axioms
+'PracticalPriorityIdentification.two_assignments_fit_one_task' does not depend on any axioms

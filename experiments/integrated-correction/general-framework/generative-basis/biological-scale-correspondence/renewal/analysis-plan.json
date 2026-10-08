@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-08",
+  "status": "Exploratory analysis fixed before the new numerical results; paper conclusions and layouts already read. Not preregistration.",
+  "memory": "Read Figure 3B/C/D and 3E, 8I/J/L and 9A-D from the original Pv1 study workbook. Preserve source cell references and compute within-panel means, SDs and contrasts. Do not pair rows across panels or infer independent worms from neurons. Imaging exposure changes across generations, so no absolute cross-generation fluorescence calibration is fitted.",
+  "calibration": "Use matched GFP/CFU individual measurements in the Boddu archive. Train on positive-CFU T48 rows, test T72. Compare a constant log10-CFU baseline, a linear log-GFP predictor and the published inverse-tanh functional form refitted only on training data. Report common inhibition conditions and the added CM25 condition separately. Preserve zeros as excluded from the log10-CFU regression, never as literal log zero. Flag inverse-map domain failures rather than clipping or dropping them.",
+  "calibration_bounds": "For inverse map b+c*atanh(log10(GFP)/a), a exceeds the training maximum by 0.000001 and is at most 100; c is positive. Fit with deterministic starting points and training loss only. These numerical constraints are analyst choices, not biological laws.",
+  "colonization": "Summarize observed GFP distributions by original run, sorted cohort, migration treatment and time. Retain changing sample counts and missing individual identities. Raw fluorescence and cohort distributions do not identify individual transition rates, bacterial births, or indefinite renewal.",
+  "ecological_return": "Assess published worm-mediated bacterial dispersal, subsequent bacterial growth and 144-hour worm-population experiment as mechanistic evidence; do not invent raw measurements or claim to reproduce its fitted population model.",
+  "scope": "These studies complete specified mechanism/correspondence checks. Their different preparations cannot be silently joined into a quantitatively validated entire cell-organ-learning-ecosystem trajectory. No new mathematical theorem is claimed."
+}

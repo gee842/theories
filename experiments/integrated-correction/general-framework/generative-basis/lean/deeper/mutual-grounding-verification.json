@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/mutual-grounding-checks/20261007T224503.208671Z/receipt.json",
+  "new_theorems": 10,
+  "empty_axiom_audits": 10
+}

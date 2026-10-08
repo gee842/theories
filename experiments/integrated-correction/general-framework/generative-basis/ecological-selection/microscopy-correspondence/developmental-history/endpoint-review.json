@@ -1,0 +1,127 @@
+{
+  "scope": "AI visual assessment and post-inspection numerical diagnostics for the four longest assigned tracks; no new confirmatory dataset or biological event-rate estimate.",
+  "selection": "Four longest tracks in the prospective threshold-6 / 40-micrometer matching analysis; ties ordered by track number.",
+  "reviews": [
+    {
+      "track": 9,
+      "last_assigned_t": 52,
+      "last_region_threshold_sensitivity": [
+        {
+          "threshold": 4,
+          "nearest_center_distance_px": 0.16072510397988143,
+          "within_post_inspection_five_pixel_gate": true,
+          "diameter_um": 7.508830166918917
+        },
+        {
+          "threshold": 6,
+          "nearest_center_distance_px": 0.0,
+          "within_post_inspection_five_pixel_gate": true,
+          "diameter_um": 5.772083664198705
+        },
+        {
+          "threshold": 8,
+          "nearest_center_distance_px": 34.42149357123476,
+          "within_post_inspection_five_pixel_gate": false,
+          "diameter_um": null
+        }
+      ],
+      "visual_assessment": "The small feature near the last assigned center remains weakly visible; this ending is not certified local structural loss."
+    },
+    {
+      "track": 2,
+      "last_assigned_t": 48,
+      "last_region_threshold_sensitivity": [
+        {
+          "threshold": 4,
+          "nearest_center_distance_px": 0.13789541529946062,
+          "within_post_inspection_five_pixel_gate": true,
+          "diameter_um": 59.037831263620866
+        },
+        {
+          "threshold": 6,
+          "nearest_center_distance_px": 0.0,
+          "within_post_inspection_five_pixel_gate": true,
+          "diameter_um": 58.273201731238586
+        },
+        {
+          "threshold": 8,
+          "nearest_center_distance_px": 0.1540098500722906,
+          "within_post_inspection_five_pixel_gate": true,
+          "diameter_um": 57.31983793899554
+        }
+      ],
+      "visual_assessment": "A large bright structure is visible through T48 and absent from the same local window at T49 and T50. This is abrupt local image loss, not a demonstrated vertical collapse or loss of viable cells."
+    },
+    {
+      "track": 3,
+      "last_assigned_t": 46,
+      "last_region_threshold_sensitivity": [
+        {
+          "threshold": 4,
+          "nearest_center_distance_px": 0.12326609949553967,
+          "within_post_inspection_five_pixel_gate": true,
+          "diameter_um": 63.18946347764359
+        },
+        {
+          "threshold": 6,
+          "nearest_center_distance_px": 0.0,
+          "within_post_inspection_five_pixel_gate": true,
+          "diameter_um": 62.70087782103316
+        },
+        {
+          "threshold": 8,
+          "nearest_center_distance_px": 0.08055426134484556,
+          "within_post_inspection_five_pixel_gate": true,
+          "diameter_um": 62.16724362455769
+        }
+      ],
+      "visual_assessment": "The large structure is still visible at T47 after its assigned track ends at T46. At T47 its thresholded region touches the right crop boundary and is excluded by the declared detector. It is absent from the displayed local window at T48."
+    },
+    {
+      "track": 10,
+      "last_assigned_t": 45,
+      "last_region_threshold_sensitivity": [
+        {
+          "threshold": 4,
+          "nearest_center_distance_px": 0.032171347462830104,
+          "within_post_inspection_five_pixel_gate": true,
+          "diameter_um": 54.383085676304816
+        },
+        {
+          "threshold": 6,
+          "nearest_center_distance_px": 0.0,
+          "within_post_inspection_five_pixel_gate": true,
+          "diameter_um": 53.64766440910132
+        },
+        {
+          "threshold": 8,
+          "nearest_center_distance_px": 0.04239452002208363,
+          "within_post_inspection_five_pixel_gate": true,
+          "diameter_um": 53.167800882344366
+        }
+      ],
+      "visual_assessment": "A large bright structure is visible through T45 and absent from the same local window at T46 and T47. Motion out of the plane or field, dispersal and collapse require further discrimination."
+    }
+  ],
+  "track_3_boundary_diagnostic_at_t47": [
+    {
+      "label": 7,
+      "box_yx": [
+        [
+          85,
+          134
+        ],
+        [
+          468,
+          512
+        ]
+      ],
+      "area_px": 1622,
+      "touches_right_boundary": true
+    }
+  ],
+  "script_sha256": "abbdfc54db6dd05bd58a623048b86fd60cad24d69edfc3337e56fdffa977c01b",
+  "analyze_sha256": "e7087dab2d530d099ea0789413b9c9b537bb1b2d2abe09aa7dd4e7685aa56077",
+  "endpoint_figure_sha256": "f48535612858a318e3bee72a059dcf20f2f7f8b88d3da36f9f91cb2fd7bea44f",
+  "track_record_sha256": "7f3cb2a584ab6ed26dc87358cca4b1c6a4bdcb368029ad2ea2439769e6534500"
+}

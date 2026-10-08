@@ -85,3 +85,35 @@ The supplied local inputs remain identifiable: the transition laws and projectio
 Historical comparisons with Bertalanffy, Simon, Turing, Holland, Lorenz and OGY remain source-based prose. We do not claim a formalization of those complete works, a Lorenz-flow chaos theorem, empirical identification of these local laws, or ethical necessity from complexity. Those are different claims, not hidden premises of the completed results above.
 
 Further details: [organization scope](SYSTEMS-LEAN-NOTES.md), [rational feedback scope](FEEDBACK-LEAN-NOTES.md), [symbolic topology and chaos scope](CHAOS-LEAN-NOTES.md).
+
+## Relations across scales, 8 October 2026
+
+[The new account](../../../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md) extends exact projections to time-dependent descriptions, finite-horizon errors, composition and calibrated indexed conditions. [RelationsAcrossScales.lean](analysis/RelationsAcrossScales.lean) has **21 new checked theorems**, with **42 inherited audits** replayed separately. These are not included in the historical 162 above. [Proof and premises](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-PROOF.md) · [Counterreview and prior work](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-INTEGRATION.md).
+
+Run `python3 analysis/check_scales.py` for a fresh build against the same pinned installed analytic environment; [receipt](analysis/scales-verification.json). Exact totals can conceal particular support losses; changed coupling can defeat a previously exact total-only law. Laws, maps, error calibration and normative thresholds remain supplied. No empirical validation or all-policy equivalence is claimed.
+
+
+### Acquired description revision and response
+
+[ScaleRevision.lean](analysis/ScaleRevision.lean) adds **27 checked theorems**, with **106 inherited audits** freshly replayed. It imports the actual remaining-dependency charger and context decoder into a new quantitative history. Paid acquisition and delayed revision alter the response; calibration, work and support failures remain, and a fixed-response rival succeeds. This is not a replay of the ancestral learner or a measured biological loop. [Hypotheses, theorem map and counterreview](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCALE-REVISION-INTEGRATION.md).
+
+Run `python3 analysis/check_scale_revision.py` in this directory for a fresh build; [receipt](analysis/scale-revision-verification.json). Earlier 21 scale results and the separate 14 embodied-choice results retain their own receipts and are not counted again as new here.
+
+
+## Organized activity across scales, 8 October 2026
+
+[OrganizedScaleLoop.lean](analysis/OrganizedScaleLoop.lean) adds 26 checked theorems and replays 77 inherited audits. Local signal composition, actual view commutation, supported acquisition/withdrawal, history and regional counterexamples, and competing-context recontact share one event law. [Receipt](analysis/organized-scale-verification.json) · [Premises, evidence and completion limits](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZED-SCALES-INTEGRATION.md). This conditional construction is not a fitted biological model.
+
+
+### Inquiry or immediate response
+
+[InquiryChoice.lean](analysis/InquiryChoice.lean) adds **28 checked theorems / 133 inherited audits**. Robust interval and observation-class criteria connect current evidence to common response feasibility. Actual routes share the horizon and starting work/support; sensing changes the selected dose, while wider tolerance admits a cheaper immediate response. The failed headroom/work-only selector and its support-aware repair are both retained. [Hypotheses, counterreview and source comparison](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CHOICE-INTEGRATION.md).
+
+Run `python3 analysis/check_inquiry_choice.py` in this directory for a fresh pinned build; [receipt](analysis/inquiry-choice-verification.json). General planner certificates and concrete charged executions retain separate scopes. No empirical calibration or global policy optimality is asserted.
+
+
+### Changing dependencies after acquisition
+
+[ChangingDependency.lean](analysis/ChangingDependency.lean) adds **25 checked theorems / 161 inherited audits** on temporal error, response tolerance, changing losses and refreshed response. An acquired loss can become misleading while its timestamp remains current; a later within-bound change defeats exact continuation after refresh. The bounded refresh repair covers every pair of losses in [1,3], with a separately checked charged execution. [Hypotheses and self-counterreview](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANGING-DEPENDENCY-INTEGRATION.md).
+
+Run `python3 analysis/check_changing_dependency.py`; [receipt](analysis/changing-dependency-verification.json). New exact readout channels, event law, change envelopes and tariffs are explicit. General error certificates are not a claim of biological calibration or all-policy optimality.

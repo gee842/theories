@@ -1,0 +1,658 @@
+{
+  "status": "passed",
+  "scope": "Declared atomic protocol, finite exploration and constructed failures",
+  "source_sha256": "018533d88c34db5489635b61e4b0ab136b082cd28b1118971ae9c5c847af85c9",
+  "runner_sha256": "20728355685ff2d95222c359b7c76873bce7f1a282a83a4bcbc13926a4f5932a",
+  "maximum_explored_depth": 8,
+  "operation_count": 13,
+  "reachable_states": 472,
+  "explored_edges": 3796,
+  "layers": [
+    {
+      "minimum_depth": 0,
+      "new_states": 1
+    },
+    {
+      "minimum_depth": 1,
+      "new_states": 4
+    },
+    {
+      "minimum_depth": 2,
+      "new_states": 9
+    },
+    {
+      "minimum_depth": 3,
+      "new_states": 17
+    },
+    {
+      "minimum_depth": 4,
+      "new_states": 29
+    },
+    {
+      "minimum_depth": 5,
+      "new_states": 46
+    },
+    {
+      "minimum_depth": 6,
+      "new_states": 72
+    },
+    {
+      "minimum_depth": 7,
+      "new_states": 114
+    },
+    {
+      "minimum_depth": 8,
+      "new_states": 180
+    }
+  ],
+  "completed_handoffs": [
+    {
+      "handoff": 1,
+      "active": 1,
+      "epoch": 1,
+      "polarity": false
+    },
+    {
+      "handoff": 2,
+      "active": 0,
+      "epoch": 1,
+      "polarity": true
+    },
+    {
+      "handoff": 3,
+      "active": 1,
+      "epoch": 2,
+      "polarity": true
+    },
+    {
+      "handoff": 4,
+      "active": 0,
+      "epoch": 2,
+      "polarity": false
+    },
+    {
+      "handoff": 5,
+      "active": 1,
+      "epoch": 3,
+      "polarity": true
+    },
+    {
+      "handoff": 6,
+      "active": 0,
+      "epoch": 3,
+      "polarity": true
+    },
+    {
+      "handoff": 7,
+      "active": 1,
+      "epoch": 4,
+      "polarity": false
+    },
+    {
+      "handoff": 8,
+      "active": 0,
+      "epoch": 4,
+      "polarity": true
+    },
+    {
+      "handoff": 9,
+      "active": 1,
+      "epoch": 5,
+      "polarity": true
+    },
+    {
+      "handoff": 10,
+      "active": 0,
+      "epoch": 5,
+      "polarity": false
+    },
+    {
+      "handoff": 11,
+      "active": 1,
+      "epoch": 6,
+      "polarity": true
+    },
+    {
+      "handoff": 12,
+      "active": 0,
+      "epoch": 6,
+      "polarity": true
+    },
+    {
+      "handoff": 13,
+      "active": 1,
+      "epoch": 7,
+      "polarity": false
+    },
+    {
+      "handoff": 14,
+      "active": 0,
+      "epoch": 7,
+      "polarity": true
+    },
+    {
+      "handoff": 15,
+      "active": 1,
+      "epoch": 8,
+      "polarity": true
+    },
+    {
+      "handoff": 16,
+      "active": 0,
+      "epoch": 8,
+      "polarity": false
+    },
+    {
+      "handoff": 17,
+      "active": 1,
+      "epoch": 9,
+      "polarity": true
+    },
+    {
+      "handoff": 18,
+      "active": 0,
+      "epoch": 9,
+      "polarity": true
+    },
+    {
+      "handoff": 19,
+      "active": 1,
+      "epoch": 10,
+      "polarity": false
+    },
+    {
+      "handoff": 20,
+      "active": 0,
+      "epoch": 10,
+      "polarity": true
+    },
+    {
+      "handoff": 21,
+      "active": 1,
+      "epoch": 11,
+      "polarity": true
+    },
+    {
+      "handoff": 22,
+      "active": 0,
+      "epoch": 11,
+      "polarity": false
+    },
+    {
+      "handoff": 23,
+      "active": 1,
+      "epoch": 12,
+      "polarity": true
+    },
+    {
+      "handoff": 24,
+      "active": 0,
+      "epoch": 12,
+      "polarity": true
+    },
+    {
+      "handoff": 25,
+      "active": 1,
+      "epoch": 13,
+      "polarity": false
+    },
+    {
+      "handoff": 26,
+      "active": 0,
+      "epoch": 13,
+      "polarity": true
+    },
+    {
+      "handoff": 27,
+      "active": 1,
+      "epoch": 14,
+      "polarity": true
+    },
+    {
+      "handoff": 28,
+      "active": 0,
+      "epoch": 14,
+      "polarity": false
+    },
+    {
+      "handoff": 29,
+      "active": 1,
+      "epoch": 15,
+      "polarity": true
+    },
+    {
+      "handoff": 30,
+      "active": 0,
+      "epoch": 15,
+      "polarity": true
+    },
+    {
+      "handoff": 31,
+      "active": 1,
+      "epoch": 16,
+      "polarity": false
+    },
+    {
+      "handoff": 32,
+      "active": 0,
+      "epoch": 16,
+      "polarity": true
+    },
+    {
+      "handoff": 33,
+      "active": 1,
+      "epoch": 17,
+      "polarity": true
+    },
+    {
+      "handoff": 34,
+      "active": 0,
+      "epoch": 17,
+      "polarity": false
+    },
+    {
+      "handoff": 35,
+      "active": 1,
+      "epoch": 18,
+      "polarity": true
+    },
+    {
+      "handoff": 36,
+      "active": 0,
+      "epoch": 18,
+      "polarity": true
+    },
+    {
+      "handoff": 37,
+      "active": 1,
+      "epoch": 19,
+      "polarity": false
+    },
+    {
+      "handoff": 38,
+      "active": 0,
+      "epoch": 19,
+      "polarity": true
+    },
+    {
+      "handoff": 39,
+      "active": 1,
+      "epoch": 20,
+      "polarity": true
+    },
+    {
+      "handoff": 40,
+      "active": 0,
+      "epoch": 20,
+      "polarity": false
+    },
+    {
+      "handoff": 41,
+      "active": 1,
+      "epoch": 21,
+      "polarity": true
+    },
+    {
+      "handoff": 42,
+      "active": 0,
+      "epoch": 21,
+      "polarity": true
+    },
+    {
+      "handoff": 43,
+      "active": 1,
+      "epoch": 22,
+      "polarity": false
+    },
+    {
+      "handoff": 44,
+      "active": 0,
+      "epoch": 22,
+      "polarity": true
+    },
+    {
+      "handoff": 45,
+      "active": 1,
+      "epoch": 23,
+      "polarity": true
+    },
+    {
+      "handoff": 46,
+      "active": 0,
+      "epoch": 23,
+      "polarity": false
+    },
+    {
+      "handoff": 47,
+      "active": 1,
+      "epoch": 24,
+      "polarity": true
+    },
+    {
+      "handoff": 48,
+      "active": 0,
+      "epoch": 24,
+      "polarity": true
+    },
+    {
+      "handoff": 49,
+      "active": 1,
+      "epoch": 25,
+      "polarity": false
+    },
+    {
+      "handoff": 50,
+      "active": 0,
+      "epoch": 25,
+      "polarity": true
+    },
+    {
+      "handoff": 51,
+      "active": 1,
+      "epoch": 26,
+      "polarity": true
+    },
+    {
+      "handoff": 52,
+      "active": 0,
+      "epoch": 26,
+      "polarity": false
+    },
+    {
+      "handoff": 53,
+      "active": 1,
+      "epoch": 27,
+      "polarity": true
+    },
+    {
+      "handoff": 54,
+      "active": 0,
+      "epoch": 27,
+      "polarity": true
+    },
+    {
+      "handoff": 55,
+      "active": 1,
+      "epoch": 28,
+      "polarity": false
+    },
+    {
+      "handoff": 56,
+      "active": 0,
+      "epoch": 28,
+      "polarity": true
+    },
+    {
+      "handoff": 57,
+      "active": 1,
+      "epoch": 29,
+      "polarity": true
+    },
+    {
+      "handoff": 58,
+      "active": 0,
+      "epoch": 29,
+      "polarity": false
+    },
+    {
+      "handoff": 59,
+      "active": 1,
+      "epoch": 30,
+      "polarity": true
+    },
+    {
+      "handoff": 60,
+      "active": 0,
+      "epoch": 30,
+      "polarity": true
+    },
+    {
+      "handoff": 61,
+      "active": 1,
+      "epoch": 31,
+      "polarity": false
+    },
+    {
+      "handoff": 62,
+      "active": 0,
+      "epoch": 31,
+      "polarity": true
+    },
+    {
+      "handoff": 63,
+      "active": 1,
+      "epoch": 32,
+      "polarity": true
+    },
+    {
+      "handoff": 64,
+      "active": 0,
+      "epoch": 32,
+      "polarity": false
+    },
+    {
+      "handoff": 65,
+      "active": 1,
+      "epoch": 33,
+      "polarity": true
+    },
+    {
+      "handoff": 66,
+      "active": 0,
+      "epoch": 33,
+      "polarity": true
+    },
+    {
+      "handoff": 67,
+      "active": 1,
+      "epoch": 34,
+      "polarity": false
+    },
+    {
+      "handoff": 68,
+      "active": 0,
+      "epoch": 34,
+      "polarity": true
+    },
+    {
+      "handoff": 69,
+      "active": 1,
+      "epoch": 35,
+      "polarity": true
+    },
+    {
+      "handoff": 70,
+      "active": 0,
+      "epoch": 35,
+      "polarity": false
+    },
+    {
+      "handoff": 71,
+      "active": 1,
+      "epoch": 36,
+      "polarity": true
+    },
+    {
+      "handoff": 72,
+      "active": 0,
+      "epoch": 36,
+      "polarity": true
+    },
+    {
+      "handoff": 73,
+      "active": 1,
+      "epoch": 37,
+      "polarity": false
+    },
+    {
+      "handoff": 74,
+      "active": 0,
+      "epoch": 37,
+      "polarity": true
+    },
+    {
+      "handoff": 75,
+      "active": 1,
+      "epoch": 38,
+      "polarity": true
+    },
+    {
+      "handoff": 76,
+      "active": 0,
+      "epoch": 38,
+      "polarity": false
+    },
+    {
+      "handoff": 77,
+      "active": 1,
+      "epoch": 39,
+      "polarity": true
+    },
+    {
+      "handoff": 78,
+      "active": 0,
+      "epoch": 39,
+      "polarity": true
+    },
+    {
+      "handoff": 79,
+      "active": 1,
+      "epoch": 40,
+      "polarity": false
+    },
+    {
+      "handoff": 80,
+      "active": 0,
+      "epoch": 40,
+      "polarity": true
+    },
+    {
+      "handoff": 81,
+      "active": 1,
+      "epoch": 41,
+      "polarity": true
+    },
+    {
+      "handoff": 82,
+      "active": 0,
+      "epoch": 41,
+      "polarity": false
+    },
+    {
+      "handoff": 83,
+      "active": 1,
+      "epoch": 42,
+      "polarity": true
+    },
+    {
+      "handoff": 84,
+      "active": 0,
+      "epoch": 42,
+      "polarity": true
+    },
+    {
+      "handoff": 85,
+      "active": 1,
+      "epoch": 43,
+      "polarity": false
+    },
+    {
+      "handoff": 86,
+      "active": 0,
+      "epoch": 43,
+      "polarity": true
+    },
+    {
+      "handoff": 87,
+      "active": 1,
+      "epoch": 44,
+      "polarity": true
+    },
+    {
+      "handoff": 88,
+      "active": 0,
+      "epoch": 44,
+      "polarity": false
+    },
+    {
+      "handoff": 89,
+      "active": 1,
+      "epoch": 45,
+      "polarity": true
+    },
+    {
+      "handoff": 90,
+      "active": 0,
+      "epoch": 45,
+      "polarity": true
+    },
+    {
+      "handoff": 91,
+      "active": 1,
+      "epoch": 46,
+      "polarity": false
+    },
+    {
+      "handoff": 92,
+      "active": 0,
+      "epoch": 46,
+      "polarity": true
+    },
+    {
+      "handoff": 93,
+      "active": 1,
+      "epoch": 47,
+      "polarity": true
+    },
+    {
+      "handoff": 94,
+      "active": 0,
+      "epoch": 47,
+      "polarity": false
+    },
+    {
+      "handoff": 95,
+      "active": 1,
+      "epoch": 48,
+      "polarity": true
+    },
+    {
+      "handoff": 96,
+      "active": 0,
+      "epoch": 48,
+      "polarity": true
+    },
+    {
+      "handoff": 97,
+      "active": 1,
+      "epoch": 49,
+      "polarity": false
+    },
+    {
+      "handoff": 98,
+      "active": 0,
+      "epoch": 49,
+      "polarity": true
+    },
+    {
+      "handoff": 99,
+      "active": 1,
+      "epoch": 50,
+      "polarity": true
+    },
+    {
+      "handoff": 100,
+      "active": 0,
+      "epoch": 50,
+      "polarity": false
+    }
+  ],
+  "failures": {
+    "stale_guard": "wrong command",
+    "early_retirement": "no delivery",
+    "unmediated_change": "wrong command despite matching revision",
+    "version_reuse": "wrong command despite matching revision"
+  },
+  "guarded_stale_switch": "old channel retains service",
+  "fresh_retest": "new channel works"
+}

@@ -1,0 +1,245 @@
+{
+  "owned_ids": [
+    "M25",
+    "F30"
+  ],
+  "owned_sources": [
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-CORRECTION-INTEGRATION.md",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AcquiredCorrection.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AcquiredCorrectionCases.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_acquired_correction.py",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/acquired-correction-verification.json",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ACQUIRED-CORRECTION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-CONTINUITY-INTEGRATION.md",
+    "sources/15-codex-theory-conversations/2026-10-08-finish-alignment-fruits.md"
+  ],
+  "before_rows": {
+    "M25": {
+      "title_zh": "变化中的对齐：纠正、查询与接续",
+      "title_en": "Alignment through change: correction, inquiry and succession",
+      "claim_zh": "明确G0/J规范基础评价目的与选择规则；观察可用的查询和回应共同保留实际纠正，宏观选择通过有资金支持的忠实载体交接接入真实命令执行。",
+      "claim_en": "Explicit G0/J grounds appraise ends and selectors; observation-usable inquiry and response jointly preserve actual correction, while funded faithful carrier transfer refines aggregate selection into real command execution.",
+      "scope_zh": "四项条件性理论成果完成；59项新Lean定理／102项声明审计和14,295项有限记录匹配。42项空依赖，其余仅标准公理。保留遗漏模型、查询耗尽、权限失效、部件不足、失真交接及迁移资金不足。常规有限规划匹配；真实部署、任意发现及普遍收敛未证。作者反审，不冒充独立验收。",
+      "scope_en": "Four scoped theoretical deliverables complete; 59 new Lean theorems / 102 declaration audits and 14,295 matched finite records. Forty-two empty dependencies; others use standard axioms only. Omitted models, inquiry depletion, authority failure, missing parts, corrupt transfer and migration underfunding remain. Conventional finite planning matches; deployment, arbitrary discovery and universal convergence are unestablished. Author counterreview, not independent acceptance.",
+      "links": [
+        {
+          "label_zh": "论文",
+          "label_en": "Theory paper",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md"
+        },
+        {
+          "label_zh": "整合与反审",
+          "label_en": "Integration and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-CONTINUITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "验证回执",
+          "label_en": "Verification receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/alignment-continuity-verification.json"
+        },
+        {
+          "label_zh": "形式选择与执行",
+          "label_en": "Selection and execution",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentInquiry.lean"
+        },
+        {
+          "label_zh": "实际纠正命令",
+          "label_en": "Concrete commands",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EffectiveCommand.lean"
+        },
+        {
+          "label_zh": "改革查询",
+          "label_en": "Reform inquiry",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReformInquiry.lean"
+        },
+        {
+          "label_zh": "承载者接续",
+          "label_en": "Carrier succession",
+          "path": "experiments/market-generativity/meta-attractor/AlignmentSuccession.lean"
+        }
+      ],
+      "id": "M25"
+    },
+    "F30": {
+      "title_zh": "对齐接续的形式与执行包",
+      "title_en": "Formal and execution package for alignment continuity",
+      "claim_zh": "核验有限稳健策略选择、实际命令、继承改革历史及市场到载体的精确细化；同一形式包链接两次不重复计为独立成果。",
+      "claim_en": "Checks finite robust policy synthesis, concrete commands, the inherited reform history and exact market-to-carrier refinement; cross-linking the same package does not count it twice.",
+      "scope_zh": "四项条件性理论成果完成；59项新Lean定理／102项声明审计和14,295项有限记录匹配。42项空依赖，其余仅标准公理。保留遗漏模型、查询耗尽、权限失效、部件不足、失真交接及迁移资金不足。常规有限规划匹配；真实部署、任意发现及普遍收敛未证。作者反审，不冒充独立验收。",
+      "scope_en": "Four scoped theoretical deliverables complete; 59 new Lean theorems / 102 declaration audits and 14,295 matched finite records. Forty-two empty dependencies; others use standard axioms only. Omitted models, inquiry depletion, authority failure, missing parts, corrupt transfer and migration underfunding remain. Conventional finite planning matches; deployment, arbitrary discovery and universal convergence are unestablished. Author counterreview, not independent acceptance.",
+      "links": [
+        {
+          "label_zh": "论文",
+          "label_en": "Theory paper",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md"
+        },
+        {
+          "label_zh": "整合与反审",
+          "label_en": "Integration and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-CONTINUITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "验证回执",
+          "label_en": "Verification receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/alignment-continuity-verification.json"
+        },
+        {
+          "label_zh": "形式选择与执行",
+          "label_en": "Selection and execution",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentInquiry.lean"
+        },
+        {
+          "label_zh": "实际纠正命令",
+          "label_en": "Concrete commands",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EffectiveCommand.lean"
+        },
+        {
+          "label_zh": "改革查询",
+          "label_en": "Reform inquiry",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReformInquiry.lean"
+        },
+        {
+          "label_zh": "承载者接续",
+          "label_en": "Carrier succession",
+          "path": "experiments/market-generativity/meta-attractor/AlignmentSuccession.lean"
+        }
+      ],
+      "id": "F30"
+    }
+  },
+  "after_rows": {
+    "M25": {
+      "title_zh": "变化中的对齐：纠正、查询与接续",
+      "title_en": "Alignment through change: correction, inquiry and succession",
+      "claim_zh": "明确G0/J规范基础评价目的与选择规则；观察可用的查询和回应共同保留实际纠正，宏观选择通过有资金支持的忠实载体交接接入真实命令执行。 后续实际检查形成未预列的纠正地址；局部成功见证与给定范围的穷尽分开，重新核验当前配置与权限。",
+      "claim_en": "Explicit G0/J grounds appraise ends and selectors; observation-usable inquiry and response jointly preserve actual correction, while funded faithful carrier transfer refines aggregate selection into real command execution. Subsequent inspection forms unlisted correction addresses, separates local success from scoped exhaustion, and rechecks current configuration and authority.",
+      "scope_zh": "四项条件性理论成果完成；59项新Lean定理／102项声明审计和14,295项有限记录匹配。42项空依赖，其余仅标准公理。保留遗漏模型、查询耗尽、权限失效、部件不足、失真交接及迁移资金不足。常规有限规划匹配；真实部署、任意发现及普遍收敛未证。作者反审，不冒充独立验收。 接续另有24项新定理／45项审计、25,284项匹配记录；21项空依赖，其余仅标准公理。有限忠实界面、检查成本和原子执行明确；权限俘获不由凭据相等解决。",
+      "scope_en": "Four scoped theoretical deliverables complete; 59 new Lean theorems / 102 declaration audits and 14,295 matched finite records. Forty-two empty dependencies; others use standard axioms only. Omitted models, inquiry depletion, authority failure, missing parts, corrupt transfer and migration underfunding remain. Conventional finite planning matches; deployment, arbitrary discovery and universal convergence are unestablished. Author counterreview, not independent acceptance. The continuation adds 24 theorems / 45 audits and 25,284 matched records; 21 empty dependencies, otherwise standard axioms. Finite faithful inspection, charged reads and atomic dispatch remain explicit; credential equality does not resolve authority capture.",
+      "links": [
+        {
+          "label_zh": "论文",
+          "label_en": "Theory paper",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md"
+        },
+        {
+          "label_zh": "整合与反审",
+          "label_en": "Integration and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-CONTINUITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "验证回执",
+          "label_en": "Verification receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/alignment-continuity-verification.json"
+        },
+        {
+          "label_zh": "形式选择与执行",
+          "label_en": "Selection and execution",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentInquiry.lean"
+        },
+        {
+          "label_zh": "实际纠正命令",
+          "label_en": "Concrete commands",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EffectiveCommand.lean"
+        },
+        {
+          "label_zh": "改革查询",
+          "label_en": "Reform inquiry",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReformInquiry.lean"
+        },
+        {
+          "label_zh": "承载者接续",
+          "label_en": "Carrier succession",
+          "path": "experiments/market-generativity/meta-attractor/AlignmentSuccession.lean"
+        },
+        {
+          "label_zh": "取得路线接续",
+          "label_en": "Acquired route continuation",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-CORRECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "取得与执行证明",
+          "label_en": "Acquisition and execution proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AcquiredCorrection.lean"
+        },
+        {
+          "label_zh": "新增验证回执",
+          "label_en": "Additional verification receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/acquired-correction-verification.json"
+        }
+      ],
+      "id": "M25"
+    },
+    "F30": {
+      "title_zh": "对齐接续的形式与执行包",
+      "title_en": "Formal and execution package for alignment continuity",
+      "claim_zh": "核验有限稳健策略选择、实际命令、继承改革历史及市场到载体的精确细化；同一形式包链接两次不重复计为独立成果。 后续实际检查形成未预列的纠正地址；局部成功见证与给定范围的穷尽分开，重新核验当前配置与权限。",
+      "claim_en": "Checks finite robust policy synthesis, concrete commands, the inherited reform history and exact market-to-carrier refinement; cross-linking the same package does not count it twice. Subsequent inspection forms unlisted correction addresses, separates local success from scoped exhaustion, and rechecks current configuration and authority.",
+      "scope_zh": "四项条件性理论成果完成；59项新Lean定理／102项声明审计和14,295项有限记录匹配。42项空依赖，其余仅标准公理。保留遗漏模型、查询耗尽、权限失效、部件不足、失真交接及迁移资金不足。常规有限规划匹配；真实部署、任意发现及普遍收敛未证。作者反审，不冒充独立验收。 接续另有24项新定理／45项审计、25,284项匹配记录；21项空依赖，其余仅标准公理。有限忠实界面、检查成本和原子执行明确；权限俘获不由凭据相等解决。",
+      "scope_en": "Four scoped theoretical deliverables complete; 59 new Lean theorems / 102 declaration audits and 14,295 matched finite records. Forty-two empty dependencies; others use standard axioms only. Omitted models, inquiry depletion, authority failure, missing parts, corrupt transfer and migration underfunding remain. Conventional finite planning matches; deployment, arbitrary discovery and universal convergence are unestablished. Author counterreview, not independent acceptance. The continuation adds 24 theorems / 45 audits and 25,284 matched records; 21 empty dependencies, otherwise standard axioms. Finite faithful inspection, charged reads and atomic dispatch remain explicit; credential equality does not resolve authority capture.",
+      "links": [
+        {
+          "label_zh": "论文",
+          "label_en": "Theory paper",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md"
+        },
+        {
+          "label_zh": "整合与反审",
+          "label_en": "Integration and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-CONTINUITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "验证回执",
+          "label_en": "Verification receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/alignment-continuity-verification.json"
+        },
+        {
+          "label_zh": "形式选择与执行",
+          "label_en": "Selection and execution",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentInquiry.lean"
+        },
+        {
+          "label_zh": "实际纠正命令",
+          "label_en": "Concrete commands",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EffectiveCommand.lean"
+        },
+        {
+          "label_zh": "改革查询",
+          "label_en": "Reform inquiry",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReformInquiry.lean"
+        },
+        {
+          "label_zh": "承载者接续",
+          "label_en": "Carrier succession",
+          "path": "experiments/market-generativity/meta-attractor/AlignmentSuccession.lean"
+        },
+        {
+          "label_zh": "取得路线接续",
+          "label_en": "Acquired route continuation",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-CORRECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "取得与执行证明",
+          "label_en": "Acquisition and execution proofs",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AcquiredCorrection.lean"
+        },
+        {
+          "label_zh": "新增验证回执",
+          "label_en": "Additional verification receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/acquired-correction-verification.json"
+        }
+      ],
+      "id": "F30"
+    }
+  },
+  "before_data_sha256": "ff30553e71af050d4ae389ae2fca1ddc210e633cb0943f29467827c60da23db0",
+  "after_data_sha256": "a6b12fa997b28c8399a6bd462d1fae7eb5a86690997bc3fc57280cc71e513e65",
+  "unrelated_entries_preserved": true,
+  "unrelated_rendered_lines_preserved": true,
+  "scope": "Scoped canonical-row update only; no whole-table certification.",
+  "subsequent_link_repair": {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ACQUIRED-CORRECTION.md",
+    "sha256": "d4462da16315fc39d93b6bc31de0626918358202123aa350c250c577ba82a5f1",
+    "change": "Fix relative path to integration; update only its reviewed-source fingerprint."
+  }
+}

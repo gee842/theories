@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/formed-effective-law-checks/20261007T231137.825236Z/receipt.json",
+  "counts": {
+    "new": {
+      "modules": 1,
+      "declarations": 18,
+      "theorems": 14,
+      "empty_audit_dependencies": 18,
+      "standard_dependency_audits": 0
+    },
+    "inherited": {
+      "modules": 5,
+      "declarations": 192,
+      "theorems": 125,
+      "empty_audit_dependencies": 150,
+      "standard_dependency_audits": 42
+    }
+  }
+}

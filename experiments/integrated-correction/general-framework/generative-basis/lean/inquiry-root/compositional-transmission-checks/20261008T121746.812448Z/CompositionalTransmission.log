@@ -1,0 +1,97 @@
+CompositionalTransmission.lean:51:4: error: Tactic `split` failed: Could not split an `if` or `match` expression in the type
+  (have output := operate p✝ e;
+    if 1 + output.length ≤ s.support then some (output, s.support - (1 + output.length)) else none) =
+    some (out, left)
+of `h`
+
+Hint: Use `set_option trace.split.failure true` to display additional diagnostic information
+
+case h_2
+s : Frame
+e : Expr
+out : List Bool
+left : Nat
+x✝ : Option Program
+p✝ : Program
+heq✝ : s.installed = some p✝
+h :
+  (have output := operate p✝ e;
+    if 1 + output.length ≤ s.support then some (output, s.support - (1 + output.length)) else none) =
+    some (out, left)
+⊢ left ≤ s.support
+CompositionalTransmission.lean:114:45: error: unsolved goals
+case inl.true.false
+n : Nat
+enough : 7 ≤ n
+⊢ (develop
+          { wires := (blank 22 8).wires, installed := (blank 22 8).installed, support := (blank 22 8).support,
+            spent := 3, parts := (blank 22 8).parts, usedParts := (blank 22 8).usedParts,
+            blocked := (blank 22 8).blocked,
+            samples := programRecords { first := true, second := false, route := [false, false] },
+            attempts := (blank 22 8).attempts }).installed =
+      some { first := true, second := false, route := [false, false] } ∧
+    7 ≤
+      (develop
+          { wires := (blank 22 8).wires, installed := (blank 22 8).installed, support := (blank 22 8).support,
+            spent := 3, parts := (blank 22 8).parts, usedParts := (blank 22 8).usedParts,
+            blocked := (blank 22 8).blocked,
+            samples := programRecords { first := true, second := false, route := [false, false] },
+            attempts := (blank 22 8).attempts }).support
+
+case inr.inl.true.false
+n : Nat
+enough : 7 ≤ n
+⊢ (develop
+          { wires := (blank 22 8).wires, installed := (blank 22 8).installed, support := (blank 22 8).support,
+            spent := 3, parts := (blank 22 8).parts, usedParts := (blank 22 8).usedParts,
+            blocked := (blank 22 8).blocked,
+            samples := programRecords { first := true, second := false, route := [false, true] },
+            attempts := (blank 22 8).attempts }).installed =
+      some { first := true, second := false, route := [false, true] } ∧
+    7 ≤
+      (develop
+          { wires := (blank 22 8).wires, installed := (blank 22 8).installed, support := (blank 22 8).support,
+            spent := 3, parts := (blank 22 8).parts, usedParts := (blank 22 8).usedParts,
+            blocked := (blank 22 8).blocked,
+            samples := programRecords { first := true, second := false, route := [false, true] },
+            attempts := (blank 22 8).attempts }).support
+
+case inr.inr.inl.true.false
+n : Nat
+enough : 7 ≤ n
+⊢ (develop
+          { wires := (blank 22 8).wires, installed := (blank 22 8).installed, support := (blank 22 8).support,
+            spent := 3, parts := (blank 22 8).parts, usedParts := (blank 22 8).usedParts,
+            blocked := (blank 22 8).blocked,
+            samples := programRecords { first := true, second := false, route := [true, false] },
+            attempts := (blank 22 8).attempts }).installed =
+      some { first := true, second := false, route := [true, false] } ∧
+    7 ≤
+      (develop
+          { wires := (blank 22 8).wires, installed := (blank 22 8).installed, support := (blank 22 8).support,
+            spent := 3, parts := (blank 22 8).parts, usedParts := (blank 22 8).usedParts,
+            blocked := (blank 22 8).blocked,
+            samples := programRecords { first := true, second := false, route := [true, false] },
+            attempts := (blank 22 8).attempts }).support
+
+case inr.inr.inr.true.false
+n : Nat
+enough : 7 ≤ n
+⊢ (develop
+          { wires := (blank 22 8).wires, installed := (blank 22 8).installed, support := (blank 22 8).support,
+            spent := 3, parts := (blank 22 8).parts, usedParts := (blank 22 8).usedParts,
+            blocked := (blank 22 8).blocked,
+            samples := programRecords { first := true, second := false, route := [true, true] },
+            attempts := (blank 22 8).attempts }).installed =
+      some { first := true, second := false, route := [true, true] } ∧
+    7 ≤
+      (develop
+          { wires := (blank 22 8).wires, installed := (blank 22 8).installed, support := (blank 22 8).support,
+            spent := 3, parts := (blank 22 8).parts, usedParts := (blank 22 8).usedParts,
+            blocked := (blank 22 8).blocked,
+            samples := programRecords { first := true, second := false, route := [true, true] },
+            attempts := (blank 22 8).attempts }).support
+CompositionalTransmission.lean:164:69: error: Tactic `decide` proved that the proposition
+  misleadingPeer.installed = some duplicated ∧
+    revisedPeer.installed = some (programFor collapsed) ∧ respond revisedPeer further = some ([false, false, false], 8)
+is false

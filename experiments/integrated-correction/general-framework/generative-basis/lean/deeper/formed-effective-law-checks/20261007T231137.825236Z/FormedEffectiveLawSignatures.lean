@@ -1,0 +1,15 @@
+import FormedEffectiveLaw
+#check Generative.FormedEffectiveLaw.summary_sufficient
+#check Generative.FormedEffectiveLaw.project_representative
+#check Generative.FormedEffectiveLaw.native_step_projects
+#check Generative.FormedEffectiveLaw.effective_step_iff
+#check Generative.FormedEffectiveLaw.effective_step_single_valued
+#check Generative.FormedEffectiveLaw.effective_step_exists
+#check Generative.FormedEffectiveLaw.native_history_projects
+#check Generative.FormedEffectiveLaw.effective_trace_iff
+#check Generative.FormedEffectiveLaw.every_trace_lifts_from_every_representative
+#check Generative.FormedEffectiveLaw.equal_summaries_preserve_future
+#check Generative.FormedEffectiveLaw.future_questions_preserved
+#check Generative.FormedEffectiveLaw.reward_omitted
+#check Generative.FormedEffectiveLaw.reward_change_has_no_selected_future_effect
+#check Generative.FormedEffectiveLaw.summary_is_not_injective

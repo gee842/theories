@@ -1,0 +1,10 @@
+import ConcernExtension
+#print axioms ConcernExtension.extend
+#print axioms ConcernExtension.included_extension_iff
+#print axioms ConcernExtension.strict_extension_transfer_iff
+#print axioms ConcernExtension.retained_old_new_strict
+#print axioms ConcernExtension.crossed_extension_is_incomparable
+#print axioms ConcernExtension.covered_profiles_no_better
+#print axioms ConcernExtension.positive_extension_changes_judgment
+#print axioms ConcernExtension.gain_judgment_transfer_iff
+#print axioms ConcernExtension.new_basic_condition_can_reverse

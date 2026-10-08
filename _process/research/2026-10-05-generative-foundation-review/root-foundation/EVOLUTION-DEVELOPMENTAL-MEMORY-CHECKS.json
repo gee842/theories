@@ -1,0 +1,67 @@
+{
+  "checked_at_utc": "2026-10-08T10:03:56.862446+00:00",
+  "status": "passed",
+  "scope": "Owned memory-study proof bindings, links, source preservation and C14 integration; no new compilation or full-table review certification.",
+  "proof_receipt_sha256": "8fc4f3f2aedfb31efcd1d883b5b238a582b130fd3af3d4b73d728e785ddde159",
+  "proof_modules": [
+    {
+      "module": "ConnectionistRecovery",
+      "theorems": 29,
+      "audits": 41,
+      "source_sha256": "0c59e2e5d52c5a2fe08c0bbca68b881b417c753103d9ae001ab0b0f35c41ac29"
+    },
+    {
+      "module": "DevelopmentalMemory",
+      "theorems": 28,
+      "audits": 44,
+      "source_sha256": "272a651cf3daaa4e1a44092e42a1589d9e13ad0c86687e71dc7f11d337ef1bd5"
+    }
+  ],
+  "new_theorems": 28,
+  "new_audits": 44,
+  "inherited_audits": 41,
+  "owned_local_links_checked": 30,
+  "original_pdf_sha256": "a4da950c2db561a67ca938a66543dc6153553d3939deb4e2cf5f089ddfc7af27",
+  "six_broad_completion_requirements_preserved": true,
+  "other_entries_preserved_at_mutation": 91,
+  "other_rendered_lines_preserved_at_mutation": true,
+  "C14_render_matches": true,
+  "full_render_matches_observation_only": true,
+  "pending_global_review": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PHILOSOPHICAL-ACCOUNT.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-VALUE-SCOPE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-GOOD-GROUNDING.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md"
+    ],
+    "removed_pages": []
+  },
+  "owned_reviewed_sources": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-DEVELOPMENTAL-MEMORY.md": "8c20d4939d2f485c73ce42670fff988ddbdf1240947eb9be62817f53ea169bf0",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-DEVELOPMENTAL-MEMORY-PROTOCOL.md": "d071a334c1fe9433bb9ea108bdf10f687bd3bf89c5f6c195b97a87a508959244",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/DevelopmentalMemory.lean": "272a651cf3daaa4e1a44092e42a1589d9e13ad0c86687e71dc7f11d337ef1bd5",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/developmental-memory-verification.json": "8fc4f3f2aedfb31efcd1d883b5b238a582b130fd3af3d4b73d728e785ddde159",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CONNECTIONISM-RECOVERY.md": "c18e616eccd53c400280162bc07be377172ffc459712cba4abf1ad0e8dd4102e",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-THEORETICAL-INTEGRATION.md": "4ceec3df324392e68fcd16c86d826b5aab8dc6ea6437be5ce559b68fdeb35975",
+    "sources/15-codex-theory-conversations/2026-10-08-evolution-theoretical-focus.md": "f8bba624cd97fb6d96c343304b89dc6f6892a3625c0b8f501b25c8909484045d",
+    "sources/evolutionary-selection/comparative-direction/README.md": "0418eb8b33ce2393b443bb8ad75885b01ff17686cc89e80144a8fcd7380e134c",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md": "0e5237c1eedfcc40ebdb57d3cc7730c9ebda9d3c003db60527637901e5469f5f"
+  },
+  "documentary_checker_sha256": "0d909251e457d94a747b4ad088389324a1311a50d23264cf81b9333398b32df3"
+}

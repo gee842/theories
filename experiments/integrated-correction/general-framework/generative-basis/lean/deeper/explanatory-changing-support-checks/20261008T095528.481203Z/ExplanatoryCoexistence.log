@@ -1,0 +1,13 @@
+'Generative.ExplanatoryCoexistence.admissible_cons' depends on axioms: [propext]
+'Generative.ExplanatoryCoexistence.trace_iff_admissible' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryCoexistence.exists_trace_iff' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryCoexistence.final_retains_all_requests' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryCoexistence.empty_trace_iff_supported' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryCoexistence.native_plan_iff_common_holding' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryCoexistence.footprint_plan_has_holding_history' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryCoexistence.code_plan_has_holding_history' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryCoexistence.permutation_preserves_holding' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryCoexistence.frame_holding_iff' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryCoexistence.successful_history_preserves_distinctness' depends on axioms: [propext, Quot.sound]

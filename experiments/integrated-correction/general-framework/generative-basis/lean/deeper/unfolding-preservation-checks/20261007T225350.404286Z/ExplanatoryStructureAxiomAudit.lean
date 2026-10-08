@@ -1,0 +1,18 @@
+import ExplanatoryStructure
+#print axioms Generative.ExplanatoryStructure.trace_global
+#print axioms Generative.ExplanatoryStructure.global_realized
+#print axioms Generative.ExplanatoryStructure.realizes_iff_global
+#print axioms Generative.ExplanatoryStructure.adjacent_opposite
+#print axioms Generative.ExplanatoryStructure.mutilated_balance
+#print axioms Generative.ExplanatoryStructure.separated_balanced
+#print axioms Generative.ExplanatoryStructure.complete_trace_iff
+#print axioms Generative.ExplanatoryStructure.balance_perm
+#print axioms Generative.ExplanatoryStructure.opposite_pair_balance
+#print axioms Generative.ExplanatoryStructure.legal_balance
+#print axioms Generative.ExplanatoryStructure.global_balance
+#print axioms Generative.ExplanatoryStructure.unbalanced_no_cover
+#print axioms Generative.ExplanatoryStructure.unbalanced_no_placement_history
+#print axioms Generative.ExplanatoryStructure.mutilated_no_cover
+#print axioms Generative.ExplanatoryStructure.mutilated_no_history
+#print axioms Generative.ExplanatoryStructure.separated_not_coverable
+#print axioms Generative.ExplanatoryStructure.two_tile_orders

@@ -1,0 +1,19 @@
+'Generative.ExplanatoryBranchingRecovery.native_step_projects' does not depend on any axioms
+'Generative.ExplanatoryBranchingRecovery.code_step_lifts_from_every_representative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryBranchingRecovery.native_trace_projects' does not depend on any axioms
+'Generative.ExplanatoryBranchingRecovery.code_trace_iff_native' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryBranchingRecovery.code_graph_is_bisimulation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryBranchingRecovery.recovered_model_agrees_with_reading' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryBranchingRecovery.exact_code_law_unique' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryBranchingRecovery.separated_encoding_injective' does not depend on any axioms
+'Generative.ExplanatoryBranchingRecovery.separated_native_step_recovered' does not depend on any axioms

@@ -1,0 +1,93 @@
+{
+  "checked_at_utc": "20261008T101106.251288Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "compiler": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "checker_sha256": "8a2fd3c4d4d3fcf47860fc3ac583a7a6fd71aec24ad5abf8bcab1fce99d3a07b",
+  "scope": "ContinuationConditions with GenerativeCore and HistoryRealization; 18 new theorem audits and 25 inherited declaration audits",
+  "modules": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/continuation-conditions-checks/20261008T101106.251288Z/sources/GenerativeCore.lean",
+      "log": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/continuation-conditions-checks/20261008T101106.251288Z/GenerativeCore.log",
+      "log_sha256": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+      "expected_audits": 18,
+      "empty_axiom_audits": [
+        "Generative.trace_append_iff",
+        "Generative.trace_singleton_iff",
+        "Generative.enabled_iff_singleton_trace",
+        "Generative.enabled_difference_implies_state_difference",
+        "Generative.feasible_append_iff",
+        "Generative.feasible_prefix",
+        "Generative.enabled_product_iff",
+        "Generative.trace_product_iff",
+        "Generative.feasible_product_iff",
+        "Generative.trace_map",
+        "Generative.trace_lift",
+        "Generative.projected_trace_iff",
+        "Generative.projection_exact_iff",
+        "Generative.local_exact_iff_trace_exact",
+        "Generative.enabled_projection_iff",
+        "Generative.feasible_projection_iff",
+        "Generative.feasible_difference_implies_projection_difference",
+        "Generative.trace_faithful_iff"
+      ],
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/HistoryRealization.lean",
+      "sha256": "22785f31280a7bbac5f89d7754cb6896830a6dc2d81949b9f3adfabd126e8fa9",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/continuation-conditions-checks/20261008T101106.251288Z/sources/HistoryRealization.lean",
+      "log": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/continuation-conditions-checks/20261008T101106.251288Z/HistoryRealization.log",
+      "log_sha256": "97266bca4133cb46c4605b714397a8978a46343bd795429e184693890f223efe",
+      "expected_audits": 7,
+      "empty_axiom_audits": [
+        "Generative.Deeper.append_nil_constructive",
+        "Generative.Deeper.append_assoc_constructive",
+        "Generative.Deeper.history_trace_iff",
+        "Generative.Deeper.history_from_empty_iff",
+        "Generative.Deeper.history_feasible_iff",
+        "Generative.Deeper.process_language_prefix_closed",
+        "Generative.Deeper.process_language_exact_history_realization"
+      ],
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ContinuationConditions.lean",
+      "sha256": "4f2a1d8f2bef7a617ee2d9b4fbe93c6a96a5061db967cfbd5f0bbe2d9125b39a",
+      "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/continuation-conditions-checks/20261008T101106.251288Z/sources/ContinuationConditions.lean",
+      "log": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/continuation-conditions-checks/20261008T101106.251288Z/ContinuationConditions.log",
+      "log_sha256": "adf2bea3d2e3c61c07b39fa28261608e27de99c871f8d7f70273ab60cc596c07",
+      "expected_audits": 18,
+      "empty_axiom_audits": [
+        "Generative.ContinuationConditions.future_update",
+        "Generative.ContinuationConditions.same_future_extends",
+        "Generative.ContinuationConditions.future_is_reachable_union",
+        "Generative.ContinuationConditions.letterwise_append",
+        "Generative.ContinuationConditions.stable_implies_letterwise",
+        "Generative.ContinuationConditions.letterwise_implies_stable",
+        "Generative.ContinuationConditions.stable_iff_letterwise",
+        "Generative.ContinuationConditions.joint_obstruction_refutes_stability",
+        "Generative.ContinuationConditions.blocked_extension_separates",
+        "Generative.ContinuationConditions.enabled_extension_separates",
+        "Generative.ContinuationConditions.locate_first_obstruction",
+        "Generative.ContinuationConditions.obstruction_locates_changed_profile",
+        "Generative.ContinuationConditions.unrestricted_stable",
+        "Generative.ContinuationConditions.unrestricted_realized",
+        "Generative.ContinuationConditions.latch_obstruction",
+        "Generative.ContinuationConditions.latch_changes_profile_and_continues",
+        "Generative.ContinuationConditions.gate_formation",
+        "Generative.ContinuationConditions.gate_gains_profile"
+      ],
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "total_empty_axiom_audits": 43
+}

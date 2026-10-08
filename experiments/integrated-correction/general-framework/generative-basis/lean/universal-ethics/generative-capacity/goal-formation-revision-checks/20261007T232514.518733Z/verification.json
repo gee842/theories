@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "utc": "20261007T232514.518733Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "goal-formation-revision-checks/20261007T232514.518733Z",
+  "source_sha256": {
+    "PracticalJudgment": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "KnowledgeCorrespondence": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+    "GoalFormationRevision": "8420d163293dd9071e9cf642fba3c6f7c6589eccf1102ae5a7210edec4ee6257"
+  },
+  "checker_sha256": {
+    "check_goal_formation_revision.py": "8a143555c5f0451fb621c66e9a19e4a2d1562848ff81b0fb21982c005a9fe590",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Connected finite formation, calibrated acquisition, grounds-sensitive goal revision, authorized selector reform and actual supported continuation. Counterexamples preserve crossed losses, false/stale evidence, nonresponse and finite support. G0/J commitments, local law family, sensor reference, authority, schedules and response architecture remain explicit premises; no empirical or semantic-universality claim.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "GoalFormationRevision.lean:53:26: error: Expected type must not contain free variables\n  attainment Goal.attendance (perform c Practice.attendance) \u2264\n    attainment Goal.attendance (perform c (meansFor Goal.attendance))\n\nHint: Use the `+revert` option to automatically clean up and revert free variables\nGoalFormationRevision.lean:53:26: error: Expected type must not contain free variables\n  attainment Goal.attendance (perform c Practice.learning) \u2264\n    attainment Goal.attendance (perform c (meansFor Goal.attendance))\n\nHint: Use the `+revert` option to automatically clean up and revert free variables\nGoalFormationRevision.lean:53:26: error: Expected type must not contain free variables\n  attainment Goal.learning (perform c Practice.attendance) \u2264\n    attainment Goal.learning (perform c (meansFor Goal.learning))\n\nHint: Use the `+revert` option to automatically clean up and revert free variables\nGoalFormationRevision.lean:53:26: error: Expected type must not contain free variables\n  attainment Goal.learning (perform c Practice.learning) \u2264 attainment Goal.learning (perform c (meansFor Goal.learning))\n\nHint: Use the `+revert` option to automatically clean up and revert free variables\nGoalFormationRevision.lean:58:2: error: Expected type must not contain free variables\n  attainment Goal.attendance (perform c Practice.attendance) >\n      attainment Goal.attendance (perform c Practice.learning) \u2227\n    attainment Goal.learning (perform c Practice.learning) > attainment Goal.learning (perform c Practice.attendance)\n\nHint: Use the `+revert` option to automatically clean up and revert free variables\n"
+}

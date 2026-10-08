@@ -1,0 +1,78 @@
+'GoalRevision.Goal' does not depend on any axioms
+'GoalRevision.Context' does not depend on any axioms
+'GoalRevision.Rule' does not depend on any axioms
+'GoalRevision.Meter' does not depend on any axioms
+'GoalRevision.Impact' does not depend on any axioms
+'GoalRevision.protects' does not depend on any axioms
+'GoalRevision.gains' does not depend on any axioms
+'GoalRevision.within' does not depend on any axioms
+'GoalRevision.basicSubset' does not depend on any axioms
+'GoalRevision.gainSubset' does not depend on any axioms
+'GoalRevision.better' does not depend on any axioms
+'GoalRevision.comparison_reflects' does not depend on any axioms
+'GoalRevision.recommend' does not depend on any axioms
+'GoalRevision.revised_end_has_comparative_ground' does not depend on any axioms
+'GoalRevision.retained_end_has_comparative_ground' does not depend on any axioms
+'GoalRevision.native' does not depend on any axioms
+'GoalRevision.reward' does not depend on any axioms
+'GoalRevision.payment' does not depend on any axioms
+'GoalRevision.Budget' does not depend on any axioms
+'GoalRevision.total' does not depend on any axioms
+'GoalRevision.settle' does not depend on any axioms
+'GoalRevision.settlement_conserves' depends on axioms: [propext, Quot.sound]
+'GoalRevision.repeatBudget' does not depend on any axioms
+'GoalRevision.funded_continuation' depends on axioms: [propext, Quot.sound]
+'GoalRevision.unreformed_depletion' depends on axioms: [propext, Quot.sound]
+'GoalRevision.one_more_unreformed_fails' depends on axioms: [propext, Quot.sound]
+'GoalRevision.Packet' does not depend on any axioms
+'GoalRevision.State' does not depend on any axioms
+'GoalRevision.findPacket' does not depend on any axioms
+'GoalRevision.signal' does not depend on any axioms
+'GoalRevision.learned' does not depend on any axioms
+'GoalRevision.judgment' does not depend on any axioms
+'GoalRevision.approval_not_a_ground' does not depend on any axioms
+'GoalRevision.metered' does not depend on any axioms
+'GoalRevision.paid' does not depend on any axioms
+'GoalRevision.work' does not depend on any axioms
+'GoalRevision.reform' depends on axioms: [propext]
+'GoalRevision.Event' does not depend on any axioms
+'GoalRevision.step' depends on axioms: [propext]
+'GoalRevision.run' depends on axioms: [propext]
+'GoalRevision.initial' does not depend on any axioms
+'GoalRevision.formation' does not depend on any axioms
+'GoalRevision.inquiry' does not depend on any axioms
+'GoalRevision.preparation' does not depend on any axioms
+'GoalRevision.continuation' does not depend on any axioms
+'GoalRevision.fullHistory' does not depend on any axioms
+'GoalRevision.formed' depends on axioms: [propext]
+'GoalRevision.assessed' depends on axioms: [propext]
+'GoalRevision.prepared' depends on axioms: [propext]
+'GoalRevision.success' depends on axioms: [propext]
+'GoalRevision.unreformed' depends on axioms: [propext]
+'GoalRevision.clamped' depends on axioms: [propext]
+'GoalRevision.acquired_not_initialized' depends on axioms: [propext]
+'GoalRevision.old_reward_remains_higher' does not depend on any axioms
+'GoalRevision.acquired_native_correspondence' depends on axioms: [propext]
+'GoalRevision.faithful_revision_warrant' depends on axioms: [propext]
+'GoalRevision.actual_end_write_matters' depends on axioms: [propext]
+'GoalRevision.joined_history_completes' depends on axioms: [propext]
+'GoalRevision.correct_end_can_be_selected_out' depends on axioms: [propext]
+'GoalRevision.absent_adoption_does_not_follow_from_knowledge' depends on axioms: [propext]
+'GoalRevision.missing_is_not_a_zero_consequence' depends on axioms: [propext]
+'GoalRevision.changed_context_invalidates_use' depends on axioms: [propext]
+'GoalRevision.reverse_case_protects_restriction' depends on axioms: [propext]
+'GoalRevision.misleading_acquisition_can_misguide' depends on axioms: [propext]
+'GoalRevision.authority_is_not_created_by_judgment' depends on axioms: [propext]
+'GoalRevision.unnecessary_reform_is_not_forced' depends on axioms: [propext]
+'GoalRevision.unfunded_reform_is_not_performed' depends on axioms: [propext]
+'GoalRevision.acquired_selection_evidence_matters' depends on axioms: [propext]
+'GoalRevision.traces' depends on axioms: [propext]
+'GoalRevision.cases' does not depend on any axioms
+'GoalRevision.goalCode' does not depend on any axioms
+'GoalRevision.optionGoalCode' does not depend on any axioms
+'GoalRevision.contextCode' does not depend on any axioms
+'GoalRevision.ruleCode' does not depend on any axioms
+'GoalRevision.boolCode' does not depend on any axioms
+'GoalRevision.packetCode' does not depend on any axioms
+'GoalRevision.stateCode' does not depend on any axioms
+'GoalRevision.emit' depends on axioms: [propext]

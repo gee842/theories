@@ -1,0 +1,60 @@
+{
+  "entry_ids": [
+    "C29",
+    "F21"
+  ],
+  "added_entries": [
+    {
+      "id": "C29",
+      "title_zh": "身体、生态参与与认知选择",
+      "title_en": "Embodied organization, ecological participation and cognitive choice",
+      "claim_zh": "细胞、器官与身体通过实际组织和支持相连；认知在其中形成分辨、保持和选择，活动又改变身体及生态条件。生态参与不等同于固定解剖层级。",
+      "claim_en": "Cells, organs and bodies are related through actual organization and support; cognition discriminates, retains and selects within these relations, and activity changes bodily and ecological conditions. Ecological participation differs from a fixed anatomical hierarchy.",
+      "scope_zh": "解释性整合；四项原始研究支持分别的机制连接，另有14项新 Lean 定理；不冒称单一完整生物轨迹、意识理论或普遍伦理证明",
+      "scope_en": "Explanatory integration; four primary studies constrain separate mechanisms, with 14 additional Lean theorems; no single complete biological trajectory, theory of consciousness or universal ethical proof",
+      "links": [
+        {
+          "label_zh": "当前理论",
+          "label_en": "Current theory",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md"
+        },
+        {
+          "label_zh": "整合与自我反审",
+          "label_en": "Integration and self-counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EMBODIED-SCALES-INTEGRATION.md"
+        },
+        {
+          "label_zh": "原始生物证据",
+          "label_en": "Primary biological evidence",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EMBODIED-SCALES-EVIDENCE.md"
+        }
+      ]
+    },
+    {
+      "id": "F21",
+      "title_zh": "选择影响尺度误差的形式检查",
+      "title_en": "Formal checks of action-sensitive scale errors",
+      "claim_zh": "所选行动影响之差进入有限时域误差界；阈值余量足以保持指定选择，近阈值反例及共享支持被他者消耗后的计划失败均经过实查。",
+      "claim_en": "Differences in selected action effects enter the finite-horizon error bound; threshold margins suffice to preserve specified choices, with checked near-threshold counterexamples and failed retained plans after another participant consumes shared support.",
+      "scope_zh": "14项新定理／63项继承审计，使用标准逻辑；策略、对应和活动规则明示，有限见证无生理拟合或生态更新",
+      "scope_en": "14 new theorems / 63 inherited audits, with standard logic; policies, correspondence and activity laws explicit; finite witness has no physiological fit or ecological renewal",
+      "links": [
+        {
+          "label_zh": "证明与对应",
+          "label_en": "Proof and correspondence",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EMBODIED-SCALES-PROOF.md"
+        },
+        {
+          "label_zh": "Lean 源码",
+          "label_en": "Lean source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean"
+        },
+        {
+          "label_zh": "实查回执",
+          "label_en": "Checked receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/embodied-scales-verification.json"
+        }
+      ]
+    }
+  ]
+}

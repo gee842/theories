@@ -1,0 +1,41 @@
+OrganizedScaleLoop.lean:188:12: error: Tactic `split_ifs` failed: no if-then-else conditions to split
+
+case context
+θ : ℕ
+s : Joint
+opposition✝ : ℕ
+⊢ { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel, spent := s.spent,
+      retained := s.retained, contact := s.contact, capacity := s.route.prod, opposition := opposition✝ } =
+    { anterior := s.anterior, posterior := s.posterior, patch := s.patch, fuel := s.fuel, spent := s.spent,
+      retained := s.retained, contact := s.contact, capacity := [s.route.prod].prod, opposition := opposition✝ }
+OrganizedScaleLoop.lean:242:2: error: failed to synthesize
+  Decidable
+    (physical initial = physical trained ∧ (withdraw 1 initial).contact = true ∧ (withdraw 1 trained).contact = false)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+'OrganizedScaleLoop.relay_product' depends on axioms: [propext]
+'OrganizedScaleLoop.relay_append' does not depend on any axioms
+'OrganizedScaleLoop.severed_route' depends on axioms: [propext]
+'OrganizedScaleLoop.grouped_route' depends on axioms: [propext]
+'OrganizedScaleLoop.chosen_step_commutes' does not depend on any axioms
+'OrganizedScaleLoop.chosen_history_three_views' does not depend on any axioms
+'OrganizedScaleLoop.material_step' depends on axioms: [propext, Quot.sound]
+'OrganizedScaleLoop.work_step' depends on axioms: [propext, Quot.sound]
+'OrganizedScaleLoop.finite_history_accounts' depends on axioms: [propext, Quot.sound]
+'OrganizedScaleLoop.same_core_history' does not depend on any axioms
+'OrganizedScaleLoop.concrete_view_commutes' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OrganizedScaleLoop.concrete_view_all_histories' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'OrganizedScaleLoop.acquisition_amount' depends on axioms: [propext]
+'OrganizedScaleLoop.unsupported_acquisition' depends on axioms: [propext]
+'OrganizedScaleLoop.acquisition_withdrawal' depends on axioms: [propext, Quot.sound]
+'OrganizedScaleLoop.withdrawal_changes_next_exposure' depends on axioms: [propext, Quot.sound]
+'OrganizedScaleLoop.disrupted_acquisition' depends on axioms: [propext]
+'OrganizedScaleLoop.joined_endpoint' does not depend on any axioms
+'OrganizedScaleLoop.disrupted_endpoint' does not depend on any axioms
+'OrganizedScaleLoop.history_changes_choice' depends on axioms: [sorryAx]
+'OrganizedScaleLoop.no_memoryless_choice_readout' depends on axioms: [sorryAx]
+'OrganizedScaleLoop.same_organ_amount_distinct_signal' does not depend on any axioms
+'OrganizedScaleLoop.no_amount_only_acquisition' does not depend on any axioms
+'OrganizedScaleLoop.support_can_prevent_enactment' does not depend on any axioms
+'OrganizedScaleLoop.release_changes_shared_conditions' does not depend on any axioms
+'OrganizedScaleLoop.changed_context_reopens_exposure' does not depend on any axioms

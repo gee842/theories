@@ -1,0 +1,262 @@
+{
+  "checked_at_utc": "20261007T231550.347371Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "compiler": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "checker_sha256": "3887ffaa19609c582d2a24ac565bfcc4077c5ab3a6426268d97842eeb2b6662e",
+  "scope": "61 new recoverability, minimal-model and deterministic-repair results and 74 inherited audits; no universal ontology claim",
+  "modules": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "expected_audits": 18,
+      "empty_axiom_audits": [
+        "Generative.trace_append_iff",
+        "Generative.trace_singleton_iff",
+        "Generative.enabled_iff_singleton_trace",
+        "Generative.enabled_difference_implies_state_difference",
+        "Generative.feasible_append_iff",
+        "Generative.feasible_prefix",
+        "Generative.enabled_product_iff",
+        "Generative.trace_product_iff",
+        "Generative.feasible_product_iff",
+        "Generative.trace_map",
+        "Generative.trace_lift",
+        "Generative.projected_trace_iff",
+        "Generative.projection_exact_iff",
+        "Generative.local_exact_iff_trace_exact",
+        "Generative.enabled_projection_iff",
+        "Generative.feasible_projection_iff",
+        "Generative.feasible_difference_implies_projection_difference",
+        "Generative.trace_faithful_iff"
+      ],
+      "standard_axiom_audits": {},
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/HistoryRealization.lean",
+      "sha256": "22785f31280a7bbac5f89d7754cb6896830a6dc2d81949b9f3adfabd126e8fa9",
+      "expected_audits": 7,
+      "empty_axiom_audits": [
+        "Generative.Deeper.append_nil_constructive",
+        "Generative.Deeper.append_assoc_constructive",
+        "Generative.Deeper.history_trace_iff",
+        "Generative.Deeper.history_from_empty_iff",
+        "Generative.Deeper.history_feasible_iff",
+        "Generative.Deeper.process_language_prefix_closed",
+        "Generative.Deeper.process_language_exact_history_realization"
+      ],
+      "standard_axiom_audits": {},
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryNecessity.lean",
+      "sha256": "e6ee0229ef68da50a62ccc0d079f7e38866f86813d4e7309e681ecc17a923df5",
+      "expected_audits": 17,
+      "empty_axiom_audits": [
+        "Generative.ExplanatoryNecessity.decode_singleton_recovers_step",
+        "Generative.ExplanatoryNecessity.same_description_preserves_steps",
+        "Generative.ExplanatoryNecessity.different_steps_require_different_descriptions",
+        "Generative.ExplanatoryNecessity.step_equivalence_iff_trace_equivalence",
+        "Generative.ExplanatoryNecessity.static_profile_adequate",
+        "Generative.ExplanatoryNecessity.adequate_answers_agree",
+        "Generative.ExplanatoryNecessity.local_decomposition_iff_trace_representation",
+        "Generative.ExplanatoryNecessity.idle_feasible",
+        "Generative.ExplanatoryNecessity.flip_feasible",
+        "Generative.ExplanatoryNecessity.feasibility_profiles_agree",
+        "Generative.ExplanatoryNecessity.endpoint_profiles_differ",
+        "Generative.ExplanatoryNecessity.bounded_empty",
+        "Generative.ExplanatoryNecessity.bounded_singleton",
+        "Generative.ExplanatoryNecessity.bounded_rejects_double",
+        "Generative.ExplanatoryNecessity.bounded_prefix_closed",
+        "Generative.ExplanatoryNecessity.bounded_no_one_point_realization",
+        "Generative.ExplanatoryNecessity.bounded_history_realization"
+      ],
+      "standard_axiom_audits": {},
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryStructure.lean",
+      "sha256": "ecc83334e6d7c136cbeab5f6094e94b82b1522011542feb9c7c0faaf5f7cc52e",
+      "expected_audits": 17,
+      "empty_axiom_audits": [
+        "Generative.ExplanatoryStructure.trace_global",
+        "Generative.ExplanatoryStructure.global_realized",
+        "Generative.ExplanatoryStructure.realizes_iff_global",
+        "Generative.ExplanatoryStructure.adjacent_opposite",
+        "Generative.ExplanatoryStructure.mutilated_balance",
+        "Generative.ExplanatoryStructure.separated_balanced"
+      ],
+      "standard_axiom_audits": {
+        "Generative.ExplanatoryStructure.complete_trace_iff": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.balance_perm": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.opposite_pair_balance": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.legal_balance": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.global_balance": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.unbalanced_no_cover": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.unbalanced_no_placement_history": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.mutilated_no_cover": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.mutilated_no_history": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.separated_not_coverable": [
+          "propext"
+        ],
+        "Generative.ExplanatoryStructure.two_tile_orders": [
+          "propext"
+        ]
+      },
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryUniqueness.lean",
+      "sha256": "25df183309a4e5bdda32dcb45a36cb57f3b6939f5a8f2abd428469e32030f5de",
+      "expected_audits": 15,
+      "empty_axiom_audits": [
+        "Generative.ExplanatoryUniqueness.equal_codes_same_answers",
+        "Generative.ExplanatoryUniqueness.reduced_exact_kernel",
+        "Generative.ExplanatoryUniqueness.reduced_presentations_same_kernel",
+        "Generative.ExplanatoryUniqueness.matches_total_on_used",
+        "Generative.ExplanatoryUniqueness.matches_functional",
+        "Generative.ExplanatoryUniqueness.matches_inverse_functional",
+        "Generative.ExplanatoryUniqueness.matches_iff_equal_answers",
+        "Generative.ExplanatoryUniqueness.unique_matching",
+        "Generative.ExplanatoryUniqueness.short_exact",
+        "Generative.ExplanatoryUniqueness.full_exact",
+        "Generative.ExplanatoryUniqueness.short_reduced",
+        "Generative.ExplanatoryUniqueness.full_not_reduced",
+        "Generative.ExplanatoryUniqueness.first_summary_cannot_answer_both",
+        "Generative.ExplanatoryUniqueness.relative_unique_correspondence"
+      ],
+      "standard_axiom_audits": {
+        "Generative.ExplanatoryUniqueness.balance_does_not_determine_coverability": [
+          "propext"
+        ]
+      },
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryUniversality.lean",
+      "sha256": "60b8b30c41ee8812c1a51f2035621048da42d3d7c6d9fa8eea1a0acbf11a7338",
+      "expected_audits": 13,
+      "empty_axiom_audits": [
+        "Generative.ExplanatoryUniversality.lift_contains",
+        "Generative.ExplanatoryUniversality.saturation_gives_exact_lift",
+        "Generative.ExplanatoryUniversality.exact_relation_forces_saturation",
+        "Generative.ExplanatoryUniversality.relation_descends_iff_saturated",
+        "Generative.ExplanatoryUniversality.lift_exact_iff_saturated",
+        "Generative.ExplanatoryUniversality.relational_reading_unique_on_used",
+        "Generative.ExplanatoryUniversality.separating_relation_blocks_descent",
+        "Generative.ExplanatoryUniversality.all_predicates_separate",
+        "Generative.ExplanatoryUniversality.all_predicates_force_injective",
+        "Generative.ExplanatoryUniversality.all_predicates_every_relation",
+        "Generative.ExplanatoryUniversality.all_predicates_relation_recoverable",
+        "Generative.ExplanatoryUniversality.all_predicates_automatically_reduced",
+        "Generative.ExplanatoryUniversality.all_predicates_unique_correspondence"
+      ],
+      "standard_axiom_audits": {},
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryMinimalModels.lean",
+      "sha256": "ddfa05db387f79cb2cad31fbde3f33ce21cdfe7f5a23e61a9ca68596c4c7e642",
+      "expected_audits": 31,
+      "empty_axiom_audits": [
+        "Generative.ExplanatoryMinimalModels.right_nil",
+        "Generative.ExplanatoryMinimalModels.accepts_nil",
+        "Generative.ExplanatoryMinimalModels.early_nonempty_run",
+        "Generative.ExplanatoryMinimalModels.late_wait",
+        "Generative.ExplanatoryMinimalModels.late_nonempty_run",
+        "Generative.ExplanatoryMinimalModels.early_accepts",
+        "Generative.ExplanatoryMinimalModels.late_accepts",
+        "Generative.ExplanatoryMinimalModels.same_complete_language",
+        "Generative.ExplanatoryMinimalModels.any_realizer_needs_two_states",
+        "Generative.ExplanatoryMinimalModels.two_state_lower_bound",
+        "Generative.ExplanatoryMinimalModels.early_trim",
+        "Generative.ExplanatoryMinimalModels.late_trim",
+        "Generative.ExplanatoryMinimalModels.final_distinguishes_bool_states",
+        "Generative.ExplanatoryMinimalModels.early_separated",
+        "Generative.ExplanatoryMinimalModels.late_separated",
+        "Generative.ExplanatoryMinimalModels.early_deterministic",
+        "Generative.ExplanatoryMinimalModels.late_branches",
+        "Generative.ExplanatoryMinimalModels.late_not_deterministic",
+        "Generative.ExplanatoryMinimalModels.no_injective_step_preserving_map",
+        "Generative.ExplanatoryMinimalModels.same_possible_words",
+        "Generative.ExplanatoryMinimalModels.early_all_finish_after_one",
+        "Generative.ExplanatoryMinimalModels.late_not_all_finish_after_one",
+        "Generative.ExplanatoryMinimalModels.successful_continuation_differs",
+        "Generative.ExplanatoryMinimalModels.minimal_mechanism_uniqueness_fails",
+        "Generative.ExplanatoryMinimalModels.any_realizer_needs_two_edges",
+        "Generative.ExplanatoryMinimalModels.early_edges_exact",
+        "Generative.ExplanatoryMinimalModels.late_edges_exact",
+        "Generative.ExplanatoryMinimalModels.collective_iff_appended",
+        "Generative.ExplanatoryMinimalModels.same_collective_predictions",
+        "Generative.ExplanatoryMinimalModels.no_late_state_matches_early_success",
+        "Generative.ExplanatoryMinimalModels.determinism_not_language_invariant"
+      ],
+      "standard_axiom_audits": {},
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryDeterminism.lean",
+      "sha256": "3ee2e25980acd0b5a72cd38a6ef069161fca19467815fc8b05f0023cfaed28e0",
+      "expected_audits": 17,
+      "empty_axiom_audits": [
+        "Generative.ExplanatoryDeterminism.run_append",
+        "Generative.ExplanatoryDeterminism.trace_iff_run",
+        "Generative.ExplanatoryDeterminism.presentation_exact",
+        "Generative.ExplanatoryDeterminism.presentation_exact_common",
+        "Generative.ExplanatoryDeterminism.presentation_reduced",
+        "Generative.ExplanatoryDeterminism.every_state_used",
+        "Generative.ExplanatoryDeterminism.matched_initials",
+        "Generative.ExplanatoryDeterminism.matched_next",
+        "Generative.ExplanatoryDeterminism.matched_marks",
+        "Generative.ExplanatoryDeterminism.matched_functional",
+        "Generative.ExplanatoryDeterminism.matched_inverse_functional",
+        "Generative.ExplanatoryDeterminism.reachable_separated_unique",
+        "Generative.ExplanatoryDeterminism.matching_preserves_and_reflects_steps",
+        "Generative.ExplanatoryDeterminism.unique_word_aligned_matching",
+        "Generative.ExplanatoryDeterminism.map_follows_run",
+        "Generative.ExplanatoryDeterminism.rooted_map_automatically_aligned",
+        "Generative.ExplanatoryDeterminism.rooted_map_unique"
+      ],
+      "standard_axiom_audits": {},
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "total_empty_axiom_audits": 123,
+  "total_declaration_audits": 135,
+  "total_standard_axiom_audits": 12
+}

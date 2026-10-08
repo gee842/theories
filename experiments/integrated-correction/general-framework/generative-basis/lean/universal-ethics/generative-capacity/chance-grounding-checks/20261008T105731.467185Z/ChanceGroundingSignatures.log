@@ -1,0 +1,19 @@
+ChanceGrounding.positive_refinement_improves_score (t : ChanceGrounding.Tickets) (h : ChanceGrounding.Positive t) :
+  ChanceGrounding.Positive (ChanceGrounding.refine t) ∧
+    ChanceGrounding.total (ChanceGrounding.refine t) = 2 * ChanceGrounding.total t ∧
+      (ChanceGrounding.refine t).snd = t.snd ∧ ChanceGrounding.Improves t (ChanceGrounding.refine t)
+ChanceGrounding.no_maximum_in_unbounded_positive_ticket_domain :
+  ¬∃ best,
+      ChanceGrounding.Positive best ∧
+        ∀ (alternative : ChanceGrounding.Tickets),
+          ChanceGrounding.Positive alternative → ¬ChanceGrounding.Improves best alternative
+ChanceGrounding.every_positive_score_is_below_two (t : ChanceGrounding.Tickets) (h : ChanceGrounding.Positive t) :
+  ChanceGrounding.scoreNumerator t < 2 * ChanceGrounding.total t
+ChanceGrounding.fixed_resolution_unique_maximum (n : Nat) (hn : 2 ≤ n) :
+  ChanceGrounding.Positive (n - 1, 1) ∧
+    ChanceGrounding.total (n - 1, 1) = n ∧
+      ∀ (t : ChanceGrounding.Tickets),
+        ChanceGrounding.Positive t →
+          ChanceGrounding.total t = n →
+            ChanceGrounding.scoreNumerator t ≤ ChanceGrounding.scoreNumerator (n - 1, 1) ∧
+              (ChanceGrounding.scoreNumerator t = ChanceGrounding.scoreNumerator (n - 1, 1) ↔ t = (n - 1, 1))

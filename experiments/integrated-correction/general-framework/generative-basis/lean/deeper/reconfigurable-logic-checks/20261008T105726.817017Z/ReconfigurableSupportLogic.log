@@ -1,0 +1,42 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-reconfigurable-logic-y5_55kai/ReconfigurableSupportLogic.lean:53:0: warning: automatically included section variable(s) unused in theorem `Generative.ReconfigurableSupportLogic.agrees_symm`:
+  [DecidableEq R]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq R] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-reconfigurable-logic-y5_55kai/ReconfigurableSupportLogic.lean:56:0: warning: automatically included section variable(s) unused in theorem `Generative.ReconfigurableSupportLogic.observation_iff`:
+  [DecidableEq R]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq R] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-reconfigurable-logic-y5_55kai/ReconfigurableSupportLogic.lean:68:0: warning: automatically included section variable(s) unused in theorem `Generative.ReconfigurableSupportLogic.agrees_enabled`:
+  [DecidableEq R]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq R] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'Generative.ReconfigurableSupportLogic.enabled_exact' does not depend on any axioms
+'Generative.ReconfigurableSupportLogic.redirect_readiness' does not depend on any axioms
+'Generative.ReconfigurableSupportLogic.agrees_symm' does not depend on any axioms
+'Generative.ReconfigurableSupportLogic.observation_iff' depends on axioms: [Quot.sound]
+'Generative.ReconfigurableSupportLogic.agrees_enabled' does not depend on any axioms
+'Generative.ReconfigurableSupportLogic.agrees_after' depends on axioms: [propext]
+'Generative.ReconfigurableSupportLogic.match_trace' depends on axioms: [propext]
+'Generative.ReconfigurableSupportLogic.agrees_feasible' depends on axioms: [propext]
+'Generative.ReconfigurableSupportLogic.observation_sufficient' depends on axioms: [propext, Quot.sound]
+'Generative.ReconfigurableSupportLogic.probe_exact' does not depend on any axioms
+'Generative.ReconfigurableSupportLogic.bool_false_iff_eq' depends on axioms: [propext]
+'Generative.ReconfigurableSupportLogic.probes_determine_occupancy' depends on axioms: [propext]
+'Generative.ReconfigurableSupportLogic.fixed_route_behavior_iff' depends on axioms: [propext]
+'Generative.ReconfigurableSupportLogic.exact_reader_separates' depends on axioms: [propext]
+'Generative.ReconfigurableSupportLogic.unrestricted_reader_injective' depends on axioms: [propext, Quot.sound]
+'Generative.ReconfigurableSupportLogic.Witness.hidden_formed' does not depend on any axioms
+'Generative.ReconfigurableSupportLogic.Witness.old_observation_same' depends on axioms: [Quot.sound]
+'Generative.ReconfigurableSupportLogic.Witness.old_workload_exact' depends on axioms: [propext, Quot.sound]
+'Generative.ReconfigurableSupportLogic.Witness.new_probe_separates' does not depend on any axioms
+'Generative.ReconfigurableSupportLogic.Witness.same_active_view' does not depend on any axioms
+'Generative.ReconfigurableSupportLogic.Witness.no_old_view_future_reader' does not depend on any axioms
+'Generative.ReconfigurableSupportLogic.Witness.no_blind_redirect_update' does not depend on any axioms
+'Generative.ReconfigurableSupportLogic.Witness.redirect_changes_readiness_only' does not depend on any axioms
+'Generative.ReconfigurableSupportLogic.Witness.refreshed_view' does not depend on any axioms

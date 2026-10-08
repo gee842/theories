@@ -1,0 +1,7 @@
+import FormationSequence
+#check Generative.FormationSequence.whole_comparisons_favor_formation
+#check Generative.FormationSequence.transport_supports_initial_comparison
+#check Generative.FormationSequence.faithful_redescription_preserves_result
+#check Generative.FormationSequence.score_comparison_transitive
+#check Generative.FormationSequence.stages_can_favor_without_initial_favor
+#check Generative.FormationSequence.diagnostic_fails_transport

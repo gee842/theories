@@ -1,0 +1,32 @@
+StandardsBridge.lean:48:5: error: unknown tactic
+StandardsBridge.lean:46:17: error: unsolved goals
+case cons
+Q : Type
+h : Rule Q
+o : Observation Q
+os : List (Observation Q)
+ih : ∀ (hs : List (Rule Q)), h ∈ learn hs os ↔ h ∈ hs ∧ Fits h os
+hs : List (Rule Q)
+⊢ ((h ∈ hs ∧ h o.fst = o.snd) ∧ ∀ (o : Observation Q), o ∈ os → h o.fst = o.snd) ↔
+    h ∈ hs ∧ h o.fst = o.snd ∧ ∀ (o : Observation Q), o ∈ os → h o.fst = o.snd
+StandardsBridge.lean:61:20: error(lean.unknownIdentifier): Unknown identifier `not_forall`
+StandardsBridge.lean:61:2: error: Type mismatch: After simplification, term
+  bad
+ has type
+  ¬∀ (o : Observation Q), o ∈ evidence → h o.fst = o.snd
+but is expected to have type
+  ∃ o, o ∈ evidence ∧ h o.fst ≠ o.snd
+StandardsBridge.lean:85:6: error: `simp` made no progress
+StandardsBridge.lean:169:13: error: Type mismatch
+  id
+has type
+  ?m.2 → ?m.2
+but is expected to have type
+  Nat
+StandardsBridge.lean:169:18: error: Type mismatch
+  Rule Bool
+has type
+  Type
+of sort `Type 1` but is expected to have type
+  Nat
+of sort `Type`

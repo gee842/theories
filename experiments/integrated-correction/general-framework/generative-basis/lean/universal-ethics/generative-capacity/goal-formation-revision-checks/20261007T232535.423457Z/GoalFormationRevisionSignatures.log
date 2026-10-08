@@ -1,0 +1,290 @@
+GoalFormationRevision.supplied_means_realize_their_goal (c : GoalFormationRevision.Conditions)
+  (g : GoalFormationRevision.Goal) (p : GoalFormationRevision.Practice) :
+  GoalFormationRevision.attainment g (GoalFormationRevision.perform c p) ≤
+    GoalFormationRevision.attainment g (GoalFormationRevision.perform c (GoalFormationRevision.meansFor g))
+GoalFormationRevision.goal_criteria_really_disagree (c : GoalFormationRevision.Conditions) :
+  GoalFormationRevision.attainment GoalFormationRevision.Goal.attendance
+        (GoalFormationRevision.perform c GoalFormationRevision.Practice.attendance) >
+      GoalFormationRevision.attainment GoalFormationRevision.Goal.attendance
+        (GoalFormationRevision.perform c GoalFormationRevision.Practice.learning) ∧
+    GoalFormationRevision.attainment GoalFormationRevision.Goal.learning
+        (GoalFormationRevision.perform c GoalFormationRevision.Practice.learning) >
+      GoalFormationRevision.attainment GoalFormationRevision.Goal.learning
+        (GoalFormationRevision.perform c GoalFormationRevision.Practice.attendance)
+GoalFormationRevision.warranted_revision (c : GoalFormationRevision.Conditions) (harm : c.accessLoss = true)
+  (retain : c.transitionLoss = false) :
+  PracticalJudgment.Better (GoalFormationRevision.protects c) (GoalFormationRevision.gains c)
+    GoalFormationRevision.Practice.learning GoalFormationRevision.Practice.attendance
+GoalFormationRevision.revision_loses_real_output (c : GoalFormationRevision.Conditions) :
+  GoalFormationRevision.gains c GoalFormationRevision.Practice.attendance 1 ∧
+    ¬GoalFormationRevision.gains c GoalFormationRevision.Practice.learning 1
+GoalFormationRevision.harmless_attendance_preferred (c : GoalFormationRevision.Conditions) (harm : c.accessLoss = false)
+  (retain : c.transitionLoss = false) :
+  PracticalJudgment.Better (GoalFormationRevision.protects c) (GoalFormationRevision.gains c)
+    GoalFormationRevision.Practice.attendance GoalFormationRevision.Practice.learning
+GoalFormationRevision.crossed_losses_incomparable (c : GoalFormationRevision.Conditions) (harm : c.accessLoss = true)
+  (loss : c.transitionLoss = true) :
+  ¬PracticalJudgment.Better (GoalFormationRevision.protects c) (GoalFormationRevision.gains c)
+        GoalFormationRevision.Practice.learning GoalFormationRevision.Practice.attendance ∧
+    ¬PracticalJudgment.Better (GoalFormationRevision.protects c) (GoalFormationRevision.gains c)
+        GoalFormationRevision.Practice.attendance GoalFormationRevision.Practice.learning
+GoalFormationRevision.formation_identified (r : GoalFormationRevision.Selection) :
+  GoalFormationRevision.inferFormation (GoalFormationRevision.feedback r GoalFormationRevision.Practice.attendance)
+      (GoalFormationRevision.feedback r GoalFormationRevision.Practice.learning) =
+    some r
+GoalFormationRevision.ambiguous_formation_suspended : GoalFormationRevision.inferFormation 0 0 = none
+GoalFormationRevision.acquired_calibration_correct (value reversed : Bool) :
+  GoalFormationRevision.decode (GoalFormationRevision.encode reversed value)
+      (GoalFormationRevision.encode reversed false) =
+    value
+GoalFormationRevision.calibration_consumes_existing_interface :
+  Generative.KnowledgeCorrespondence.ExactOn Generative.KnowledgeCorrespondence.allHistories
+    Generative.KnowledgeCorrespondence.pairedEvidence Generative.KnowledgeCorrespondence.target
+    Generative.KnowledgeCorrespondence.decodePair
+GoalFormationRevision.charge_conserves {n : Nat} {a b : GoalFormationRevision.Account}
+  (h : GoalFormationRevision.charge n a = some b) : GoalFormationRevision.total b = GoalFormationRevision.total a
+GoalFormationRevision.insufficient_work_blocks {n : Nat} {a : GoalFormationRevision.Account} (h : a.work < n) :
+  GoalFormationRevision.charge n a = none
+GoalFormationRevision.formation_model_predicts_intervention (g : GoalFormationRevision.Ground)
+  (r : GoalFormationRevision.Selection) (replacement : Option GoalFormationRevision.Selection)
+  (p : GoalFormationRevision.Practice) (correct : g.formation = r) :
+  GoalFormationRevision.predictFeedback g replacement p = GoalFormationRevision.feedback (replacement.getD r) p
+GoalFormationRevision.acquired_grounds_warrant_comparison (c : GoalFormationRevision.Conditions)
+  (r : GoalFormationRevision.Selection)
+  (h :
+    GoalFormationRevision.callsForRevision
+        { formation := r, accessLoss := c.accessLoss, transitionLoss := c.transitionLoss } =
+      true) :
+  PracticalJudgment.Better (GoalFormationRevision.protects c) (GoalFormationRevision.gains c)
+    GoalFormationRevision.Practice.learning GoalFormationRevision.Practice.attendance
+GoalFormationRevision.no_authority_no_reform (s : GoalFormationRevision.State) :
+  GoalFormationRevision.reform false s = none
+GoalFormationRevision.cycle_conserves {r : GoalFormationRevision.Selection} {p : GoalFormationRevision.Practice}
+  {a b : GoalFormationRevision.Account} (h : GoalFormationRevision.cycle r p a = some b) :
+  GoalFormationRevision.total b = GoalFormationRevision.total a
+GoalFormationRevision.supported_cycle (w q z : Nat) (hw : 2 ≤ w) (hq : 2 ≤ q) :
+  GoalFormationRevision.cycle GoalFormationRevision.Selection.learning GoalFormationRevision.Practice.learning
+      { work := w, reserve := q, spent := z } =
+    some { work := w, reserve := q - 2, spent := z + 2 }
+GoalFormationRevision.supported_finite_continuation (n w q z : Nat) (hw : 2 ≤ w) (hq : 2 * n ≤ q) :
+  GoalFormationRevision.cycles GoalFormationRevision.Selection.learning GoalFormationRevision.Practice.learning n
+      { work := w, reserve := q, spent := z } =
+    some { work := w, reserve := q - 2 * n, spent := z + 2 * n }
+GoalFormationRevision.acquired_history_identifies_origin (c : GoalFormationRevision.Conditions)
+  (r : GoalFormationRevision.Selection) :
+  Option.map GoalFormationRevision.State.ground (GoalFormationRevision.acquire c r) =
+    some (some { formation := r, accessLoss := c.accessLoss, transitionLoss := c.transitionLoss })
+GoalFormationRevision.goal_depends_on_actual_formative_rule (c : GoalFormationRevision.Conditions) :
+  Option.map GoalFormationRevision.State.goal
+        (GoalFormationRevision.acquire c GoalFormationRevision.Selection.attendance) =
+      some (some GoalFormationRevision.Goal.attendance) ∧
+    Option.map GoalFormationRevision.State.goal
+        (GoalFormationRevision.acquire c GoalFormationRevision.Selection.learning) =
+      some (some GoalFormationRevision.Goal.learning)
+GoalFormationRevision.revised_goal_with_old_metric_still_successful :
+  Option.map GoalFormationRevision.State.goal (GoalFormationRevision.revised GoalFormationRevision.harmful) =
+      some (some GoalFormationRevision.Goal.learning) ∧
+    Option.map GoalFormationRevision.State.attendanceScore
+          (GoalFormationRevision.revised GoalFormationRevision.harmful) =
+        some 2 ∧
+      Option.map GoalFormationRevision.State.learningScore
+            (GoalFormationRevision.revised GoalFormationRevision.harmful) =
+          some 0 ∧
+        (GoalFormationRevision.perform GoalFormationRevision.harmful GoalFormationRevision.Practice.attendance).output >
+          (GoalFormationRevision.perform GoalFormationRevision.harmful GoalFormationRevision.Practice.learning).output
+GoalFormationRevision.calibration_handles_reversed_channel :
+  Option.map GoalFormationRevision.State.goal
+      (GoalFormationRevision.revised { accessLoss := true, transitionLoss := false, reversed := true }) =
+    some (some GoalFormationRevision.Goal.learning)
+GoalFormationRevision.no_harm_no_revision :
+  Option.map GoalFormationRevision.State.goal (GoalFormationRevision.revised GoalFormationRevision.safe) =
+    some (some GoalFormationRevision.Goal.attendance)
+GoalFormationRevision.crossed_loss_blocks_simple_revision :
+  Option.map GoalFormationRevision.State.goal (GoalFormationRevision.revised GoalFormationRevision.conflict) =
+      some (some GoalFormationRevision.Goal.attendance) ∧
+    GoalFormationRevision.completed GoalFormationRevision.conflict = none
+GoalFormationRevision.recognition_does_not_force_revision :
+  Option.map GoalFormationRevision.State.ground (GoalFormationRevision.revised GoalFormationRevision.harmful false) =
+      Option.map GoalFormationRevision.State.ground (GoalFormationRevision.revised GoalFormationRevision.harmful) ∧
+    Option.map GoalFormationRevision.State.goal (GoalFormationRevision.revised GoalFormationRevision.harmful false) =
+        some (some GoalFormationRevision.Goal.attendance) ∧
+      Option.map GoalFormationRevision.State.goal (GoalFormationRevision.revised GoalFormationRevision.harmful) =
+        some (some GoalFormationRevision.Goal.learning)
+GoalFormationRevision.reform_changes_the_formative_relation :
+  Option.map GoalFormationRevision.State.selector (GoalFormationRevision.completed GoalFormationRevision.harmful) =
+      some GoalFormationRevision.Selection.learning ∧
+    Option.map (fun s => GoalFormationRevision.feedback s.selector GoalFormationRevision.Practice.attendance)
+          (GoalFormationRevision.completed GoalFormationRevision.harmful) =
+        some 0 ∧
+      Option.map (fun s => GoalFormationRevision.feedback s.selector GoalFormationRevision.Practice.learning)
+          (GoalFormationRevision.completed GoalFormationRevision.harmful) =
+        some 2
+GoalFormationRevision.acquired_intervention_prediction_realized :
+  Option.map
+        (fun s =>
+          Option.map
+            (fun g =>
+              GoalFormationRevision.predictFeedback g (some GoalFormationRevision.Selection.learning)
+                GoalFormationRevision.Practice.learning)
+            s.ground)
+        (GoalFormationRevision.acquire GoalFormationRevision.harmful GoalFormationRevision.Selection.attendance) =
+      some (some 2) ∧
+    Option.map (fun s => GoalFormationRevision.feedback s.selector GoalFormationRevision.Practice.learning)
+        (GoalFormationRevision.completed GoalFormationRevision.harmful) =
+      some 2
+GoalFormationRevision.revision_preserves_formation_and_losses :
+  Option.map GoalFormationRevision.State.archive (GoalFormationRevision.completed GoalFormationRevision.harmful) =
+      Option.map GoalFormationRevision.State.archive
+        (GoalFormationRevision.acquire GoalFormationRevision.harmful GoalFormationRevision.Selection.attendance) ∧
+    Option.map GoalFormationRevision.State.losses (GoalFormationRevision.completed GoalFormationRevision.harmful) =
+        some 1 ∧
+      Option.map GoalFormationRevision.State.attendanceScore
+          (GoalFormationRevision.completed GoalFormationRevision.harmful) =
+        some 2
+GoalFormationRevision.complete_history_account :
+  Option.map GoalFormationRevision.State.account (GoalFormationRevision.completed GoalFormationRevision.harmful) =
+      some { work := 3, reserve := 8, spent := 7 } ∧
+    Option.map (fun s => GoalFormationRevision.total s.account)
+        (GoalFormationRevision.completed GoalFormationRevision.harmful) =
+      some 18
+GoalFormationRevision.actual_reformed_continuation :
+  Option.map GoalFormationRevision.State.account
+      (GoalFormationRevision.completed GoalFormationRevision.harmful >>=
+        GoalFormationRevision.operateMany GoalFormationRevision.harmful 5) =
+    some { work := 1, reserve := 0, spent := 17 }
+GoalFormationRevision.continued_practice_preserves_actual_consequences :
+  Option.map (fun s => s.archive.length)
+        (GoalFormationRevision.completed GoalFormationRevision.harmful >>=
+          GoalFormationRevision.operateMany GoalFormationRevision.harmful 5) =
+      some 7 ∧
+    Option.map GoalFormationRevision.State.losses
+          (GoalFormationRevision.completed GoalFormationRevision.harmful >>=
+            GoalFormationRevision.operateMany GoalFormationRevision.harmful 5) =
+        some 1 ∧
+      Option.map GoalFormationRevision.State.goal
+          (GoalFormationRevision.completed GoalFormationRevision.harmful >>=
+            GoalFormationRevision.operateMany GoalFormationRevision.harmful 5) =
+        some (some GoalFormationRevision.Goal.learning)
+GoalFormationRevision.unchanged_selection_exhausts_revised_practice :
+  GoalFormationRevision.revised GoalFormationRevision.harmful >>=
+      GoalFormationRevision.operateMany GoalFormationRevision.harmful 3 =
+    none
+GoalFormationRevision.reform_does_not_make_support_infinite :
+  GoalFormationRevision.completed GoalFormationRevision.harmful >>=
+      GoalFormationRevision.operateMany GoalFormationRevision.harmful 6 =
+    none
+GoalFormationRevision.reform_with_insufficient_work_fails :
+  (do
+      let s ← GoalFormationRevision.revised GoalFormationRevision.harmful
+      GoalFormationRevision.reform true
+          { account := { work := 1, reserve := 8, spent := 9 }, selector := s.selector,
+            attendanceScore := s.attendanceScore, learningScore := s.learningScore, goal := s.goal,
+            evidence := s.evidence, ground := s.ground, archive := s.archive, losses := s.losses,
+            reformed := s.reformed }) =
+    none
+GoalFormationRevision.missing_reference_prevents_assessment :
+  GoalFormationRevision.experience GoalFormationRevision.harmful GoalFormationRevision.Practice.attendance
+          (GoalFormationRevision.start GoalFormationRevision.Selection.attendance) >>=
+        GoalFormationRevision.experience GoalFormationRevision.harmful GoalFormationRevision.Practice.learning >>=
+      GoalFormationRevision.assess =
+    none
+GoalFormationRevision.false_reference_can_hide_real_loss :
+  Option.map GoalFormationRevision.State.goal
+      (GoalFormationRevision.acquire GoalFormationRevision.harmful GoalFormationRevision.Selection.attendance >>=
+        fun s =>
+        GoalFormationRevision.assess
+            { account := s.account, selector := s.selector, attendanceScore := s.attendanceScore,
+              learningScore := s.learningScore, goal := s.goal,
+              evidence :=
+                have __src := s.evidence;
+                { attendanceSignal := __src.attendanceSignal, learningSignal := __src.learningSignal,
+                  reference := some true, attendanceFeedback := __src.attendanceFeedback,
+                  learningFeedback := __src.learningFeedback },
+              ground := s.ground, archive := s.archive, losses := s.losses, reformed := s.reformed } >>=
+          GoalFormationRevision.reviseGoal true) =
+    some (some GoalFormationRevision.Goal.attendance)
+GoalFormationRevision.erased_formation_evidence_blocks_deliberation :
+  (do
+      let s ← GoalFormationRevision.acquire GoalFormationRevision.harmful GoalFormationRevision.Selection.attendance
+      GoalFormationRevision.assess
+          { account := s.account, selector := s.selector, attendanceScore := s.attendanceScore,
+            learningScore := s.learningScore, goal := s.goal,
+            evidence :=
+              have __src := s.evidence;
+              { attendanceSignal := __src.attendanceSignal, learningSignal := __src.learningSignal,
+                reference := __src.reference, learningFeedback := __src.learningFeedback },
+            ground := s.ground, archive := s.archive, losses := s.losses, reformed := s.reformed }) =
+    none
+GoalFormationRevision.wrong_formation_model_prevents_needed_reform :
+  (do
+      let s ← GoalFormationRevision.revised GoalFormationRevision.harmful
+      GoalFormationRevision.reform true
+          { account := s.account, selector := s.selector, attendanceScore := s.attendanceScore,
+            learningScore := s.learningScore, goal := s.goal, evidence := s.evidence,
+            ground :=
+              some
+                { formation := GoalFormationRevision.Selection.learning, accessLoss := true, transitionLoss := false },
+            archive := s.archive, losses := s.losses, reformed := s.reformed }) =
+    none
+GoalFormationRevision.stale_grounds_can_leave_new_loss_unaddressed :
+  Option.map GoalFormationRevision.State.goal
+        (GoalFormationRevision.revised GoalFormationRevision.safe >>=
+          GoalFormationRevision.operate GoalFormationRevision.harmful) =
+      some (some GoalFormationRevision.Goal.attendance) ∧
+    Option.map GoalFormationRevision.State.losses
+        (GoalFormationRevision.revised GoalFormationRevision.safe >>=
+          GoalFormationRevision.operate GoalFormationRevision.harmful) =
+      some 1
+GoalFormationRevision.changed_goal_is_consumed_by_operation :
+  Option.map GoalFormationRevision.State.losses
+        (GoalFormationRevision.revised GoalFormationRevision.harmful false >>=
+          GoalFormationRevision.operate GoalFormationRevision.harmful) =
+      some 2 ∧
+    Option.map GoalFormationRevision.State.losses
+        (GoalFormationRevision.revised GoalFormationRevision.harmful >>=
+          GoalFormationRevision.operate GoalFormationRevision.harmful) =
+      some 1
+GoalFormationRevision.corrected_reference_restores_revision :
+  Option.map GoalFormationRevision.State.goal
+      (GoalFormationRevision.acquire GoalFormationRevision.harmful GoalFormationRevision.Selection.attendance >>=
+        fun s =>
+        GoalFormationRevision.assess
+                  { account := s.account, selector := s.selector, attendanceScore := s.attendanceScore,
+                    learningScore := s.learningScore, goal := s.goal,
+                    evidence :=
+                      have __src := s.evidence;
+                      { attendanceSignal := __src.attendanceSignal, learningSignal := __src.learningSignal,
+                        reference := some true, attendanceFeedback := __src.attendanceFeedback,
+                        learningFeedback := __src.learningFeedback },
+                    ground := s.ground, archive := s.archive, losses := s.losses, reformed := s.reformed } >>=
+                GoalFormationRevision.reviseGoal true >>=
+              GoalFormationRevision.calibrate GoalFormationRevision.harmful >>=
+            GoalFormationRevision.assess >>=
+          GoalFormationRevision.reviseGoal true) =
+    some (some GoalFormationRevision.Goal.learning)
+GoalFormationRevision.reform_changes_later_goal_acquisition :
+  Option.map GoalFormationRevision.State.goal
+        (GoalFormationRevision.completed GoalFormationRevision.harmful >>=
+            GoalFormationRevision.experience GoalFormationRevision.harmful GoalFormationRevision.Practice.learning >>=
+          GoalFormationRevision.experience GoalFormationRevision.harmful GoalFormationRevision.Practice.learning) =
+      some (some GoalFormationRevision.Goal.learning) ∧
+    Option.map GoalFormationRevision.State.goal
+        (GoalFormationRevision.revised GoalFormationRevision.harmful >>=
+            GoalFormationRevision.experience GoalFormationRevision.harmful GoalFormationRevision.Practice.learning >>=
+          GoalFormationRevision.experience GoalFormationRevision.harmful GoalFormationRevision.Practice.learning) =
+      some (some GoalFormationRevision.Goal.attendance)
+GoalFormationRevision.joined_revision_has_warrant_and_actual_continuation :
+  PracticalJudgment.Better (GoalFormationRevision.protects GoalFormationRevision.harmful)
+      (GoalFormationRevision.gains GoalFormationRevision.harmful) GoalFormationRevision.Practice.learning
+      GoalFormationRevision.Practice.attendance ∧
+    Option.map GoalFormationRevision.State.goal
+          (GoalFormationRevision.acquire GoalFormationRevision.harmful GoalFormationRevision.Selection.attendance) =
+        some (some GoalFormationRevision.Goal.attendance) ∧
+      Option.map GoalFormationRevision.State.goal
+            (GoalFormationRevision.completed GoalFormationRevision.harmful >>=
+              GoalFormationRevision.operateMany GoalFormationRevision.harmful 5) =
+          some (some GoalFormationRevision.Goal.learning) ∧
+        Option.map GoalFormationRevision.State.losses
+            (GoalFormationRevision.completed GoalFormationRevision.harmful >>=
+              GoalFormationRevision.operateMany GoalFormationRevision.harmful 5) =
+          some 1

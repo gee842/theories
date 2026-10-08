@@ -1,0 +1,264 @@
+'EvidenceQualifiedCorrection.pooled' does not depend on any axioms
+'EvidenceQualifiedCorrection.retain' does not depend on any axioms
+'EvidenceQualifiedCorrection.retained_truth' depends on axioms: [propext, Quot.sound]
+'EvidenceQualifiedCorrection.retained_subset' depends on axioms: [propext]
+'EvidenceQualifiedCorrection.model_faults_in_pool' depends on axioms: [propext, Quot.sound]
+'EvidenceQualifiedCorrection.pooled_subset' depends on axioms: [propext, Quot.sound]
+'EvidenceQualifiedCorrection.pooled_certificate_sound' depends on axioms: [propext, Quot.sound]
+'EvidenceQualifiedCorrection.refinement_preserves_certificate' depends on axioms: [propext, Quot.sound]
+'EvidenceQualifiedCorrection.refinement_preserves_separation' depends on axioms: [propext, Quot.sound]
+'EvidenceQualifiedCorrection.empty_family_rejects' does not depend on any axioms
+'EvidenceQualifiedCorrection.evidence_qualified_completion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'EvidenceQualifiedCorrection.Model' does not depend on any axioms
+'EvidenceQualifiedCorrection.describe' does not depend on any axioms
+'EvidenceQualifiedCorrection.hypotheses' does not depend on any axioms
+'EvidenceQualifiedCorrection.diagnostic' does not depend on any axioms
+'EvidenceQualifiedCorrection.poolReady' does not depend on any axioms
+'EvidenceQualifiedCorrection.every_candidate_ready_but_pool_not_ready' does not depend on any axioms
+'EvidenceQualifiedCorrection.actual_survivors_can_be_insufficient_before_diagnosis' does not depend on any axioms
+'EvidenceQualifiedCorrection.diagnosis_need_not_identify_the_model' does not depend on any axioms
+'EvidenceQualifiedCorrection.misleading_diagnosis_can_accept_only_compromised_support' does not depend on any axioms
+'EvidenceQualifiedCorrection.unobserved_structural_change_invalidates_learned_coverage' does not depend on any axioms
+'EvidenceQualifiedCorrection.Query' does not depend on any axioms
+'EvidenceQualifiedCorrection.queryCost' does not depend on any axioms
+'EvidenceQualifiedCorrection.queryLaw' depends on axioms: [propext]
+'EvidenceQualifiedCorrection.Situation' does not depend on any axioms
+'EvidenceQualifiedCorrection.probe' depends on axioms: [propext]
+'EvidenceQualifiedCorrection.currentRequest' does not depend on any axioms
+'EvidenceQualifiedCorrection.physicalReads' depends on axioms: [propext]
+'EvidenceQualifiedCorrection.physicalApprovals' does not depend on any axioms
+'EvidenceQualifiedCorrection.respond' depends on axioms: [propext]
+'EvidenceQualifiedCorrection.achieved' does not depend on any axioms
+'EvidenceQualifiedCorrection.interface' depends on axioms: [propext]
+'EvidenceQualifiedCorrection.plan' does not depend on any axioms
+'EvidenceQualifiedCorrection.plans' does not depend on any axioms
+'EvidenceQualifiedCorrection.initialSituation' does not depend on any axioms
+'EvidenceQualifiedCorrection.possibleSituations' does not depend on any axioms
+'EvidenceQualifiedCorrection.final' depends on axioms: [propext]
+'EvidenceQualifiedCorrection.inspected_actual_model_is_retained' depends on axioms: [propext, Quot.sound]
+'EvidenceQualifiedCorrection.selected_inquiry_actually_completes' depends on axioms: [propext, Quot.sound]
+'EvidenceQualifiedCorrection.pooled_unknowns_select_affordable_inspection' depends on axioms: [propext]
+'EvidenceQualifiedCorrection.learned_common_envelope_needs_no_further_identification' depends on axioms: [propext]
+'EvidenceQualifiedCorrection.unaffordable_or_unauthorized_inspection_leaves_no_listed_uniform_plan' depends on axioms: [propext]
+'EvidenceQualifiedCorrection.sufficient_evidence_can_leave_too_little_to_act' depends on axioms: [propext]
+'EvidenceQualifiedCorrection.acquired_evidence_then_real_shutdown' depends on axioms: [propext]
+'EvidenceQualifiedCorrection.slower_equally_accurate_inspection_misses_deadline' depends on axioms: [propext]
+'EvidenceQualifiedCorrection.lack_of_uniform_availability_does_not_forbid_actual_certificate' depends on axioms: [propext]
+'EvidenceQualifiedCorrection.empty_survivors_do_not_authorize_correction' depends on axioms: [propext]
+EvidenceQualifiedCorrection.retained_truth {H : Type} (models : List H) (test : H → Bool) (actual : H)
+  (covered : actual ∈ models) : actual ∈ EvidenceQualifiedCorrection.retain models test (test actual)
+EvidenceQualifiedCorrection.retained_subset {H : Type} (models : List H) (test : H → Bool) (answer : Bool) (h : H) :
+  h ∈ EvidenceQualifiedCorrection.retain models test answer → h ∈ models
+EvidenceQualifiedCorrection.model_faults_in_pool {H : Type} (describe : H → CorrectionReconfiguration.Arrangement)
+  (models : List H) (actual : H) (known : actual ∈ models) (bad : List FaultTolerantCorrection.Domain)
+  (member : bad ∈ CorrectionReconfiguration.envelope (describe actual)) :
+  bad ∈ EvidenceQualifiedCorrection.pooled describe models
+EvidenceQualifiedCorrection.pooled_subset {H : Type} (describe : H → CorrectionReconfiguration.Arrangement)
+  (old new : List H) (included : ∀ (h : H), h ∈ new → h ∈ old) (bad : List FaultTolerantCorrection.Domain) :
+  bad ∈ EvidenceQualifiedCorrection.pooled describe new → bad ∈ EvidenceQualifiedCorrection.pooled describe old
+EvidenceQualifiedCorrection.pooled_certificate_sound {H : Type} (describe : H → CorrectionReconfiguration.Arrangement)
+  (models : List H) (actual : H) (known : actual ∈ models) (roots : List Nat)
+  (covered : CorrectionReconfiguration.Covered (describe actual) roots)
+  (supports : FaultTolerantCorrection.Domain → Bool) (P : Prop)
+  (faithful :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ (describe actual).roster →
+        CorrectionReconfiguration.fails ((describe actual).vulnerability d) roots = false → supports d = true → P)
+  (accepted :
+    FaultTolerantCorrection.certificate (describe actual).roster (EvidenceQualifiedCorrection.pooled describe models)
+        supports =
+      true) :
+  P
+EvidenceQualifiedCorrection.refinement_preserves_certificate {H : Type}
+  (describe : H → CorrectionReconfiguration.Arrangement) (roster : List FaultTolerantCorrection.Domain)
+  (old new : List H) (included : ∀ (h : H), h ∈ new → h ∈ old)
+  (nonempty : EvidenceQualifiedCorrection.pooled describe new ≠ []) (supports : FaultTolerantCorrection.Domain → Bool)
+  (accepted :
+    FaultTolerantCorrection.certificate roster (EvidenceQualifiedCorrection.pooled describe old) supports = true) :
+  FaultTolerantCorrection.certificate roster (EvidenceQualifiedCorrection.pooled describe new) supports = true
+EvidenceQualifiedCorrection.refinement_preserves_separation {H : Type}
+  (describe : H → CorrectionReconfiguration.Arrangement) (roster : List FaultTolerantCorrection.Domain)
+  (old new : List H) (included : ∀ (h : H), h ∈ new → h ∈ old)
+  (apart : FaultTolerantCorrection.separated roster (EvidenceQualifiedCorrection.pooled describe old)) :
+  FaultTolerantCorrection.separated roster (EvidenceQualifiedCorrection.pooled describe new)
+EvidenceQualifiedCorrection.empty_family_rejects (roster : List FaultTolerantCorrection.Domain) {H : Type}
+  (describe : H → CorrectionReconfiguration.Arrangement) (supports : FaultTolerantCorrection.Domain → Bool) :
+  FaultTolerantCorrection.certificate roster (EvidenceQualifiedCorrection.pooled describe []) supports = false
+EvidenceQualifiedCorrection.evidence_qualified_completion {H : Type}
+  (describe : H → CorrectionReconfiguration.Arrangement) (models : List H) (test : H → Bool) (actual : H)
+  (known : actual ∈ models) (roots : List Nat) (covered : CorrectionReconfiguration.Covered (describe actual) roots)
+  (apart :
+    FaultTolerantCorrection.separated (describe actual).roster
+      (EvidenceQualifiedCorrection.pooled describe (EvidenceQualifiedCorrection.retain models test (test actual))))
+  (w : FaultTolerantCorrection.Installation) (p : FaultTolerantCorrection.Request)
+  (reads : FaultTolerantCorrection.Readings) (approvals : FaultTolerantCorrection.Approvals)
+  (current : FaultTolerantCorrection.fresh w p = true)
+  (readResponses :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ (describe actual).roster →
+        CorrectionReconfiguration.fails ((describe actual).vulnerability d) roots = false →
+          reads d = some (FaultTolerantCorrection.expected p))
+  (issueResponses :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ (describe actual).roster →
+        CorrectionReconfiguration.fails ((describe actual).vulnerability d) roots = false → approvals d = some p)
+  (readFaithful :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ (describe actual).roster →
+        CorrectionReconfiguration.fails ((describe actual).vulnerability d) roots = false →
+          ∀ (o : FaultTolerantCorrection.Observation),
+            reads d = some o → o = FaultTolerantCorrection.observed w p.address)
+  (issueFaithful :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ (describe actual).roster →
+        CorrectionReconfiguration.fails ((describe actual).vulnerability d) roots = false →
+          approvals d = some p → FaultTolerantCorrection.withinMandate w p = true)
+  (funded : (describe actual).roster.length * (List.length p.address + 2) + 3 ≤ w.state.reserve)
+  (timely : w.state.time + (describe actual).roster.length * (List.length p.address + 2) + 3 ≤ w.state.deadline) :
+  (FaultTolerantCorrection.guardedExecute (describe actual).roster
+          (EvidenceQualifiedCorrection.pooled describe (EvidenceQualifiedCorrection.retain models test (test actual)))
+          (EvidenceQualifiedCorrection.pooled describe (EvidenceQualifiedCorrection.retain models test (test actual))) w
+          p reads approvals).succeeded =
+      true ∧
+    (FaultTolerantCorrection.guardedExecute (describe actual).roster
+                (EvidenceQualifiedCorrection.pooled describe
+                  (EvidenceQualifiedCorrection.retain models test (test actual)))
+                (EvidenceQualifiedCorrection.pooled describe
+                  (EvidenceQualifiedCorrection.retain models test (test actual)))
+                w p reads approvals).installation.state.completed =
+        true ∧
+      FaultTolerantCorrection.withinMandate w p = true
+EvidenceQualifiedCorrection.every_candidate_ready_but_pool_not_ready :
+  (EvidenceQualifiedCorrection.hypotheses.all fun h =>
+        CorrectionReconfiguration.ready (EvidenceQualifiedCorrection.describe h)) =
+      true ∧
+    EvidenceQualifiedCorrection.poolReady
+        (EvidenceQualifiedCorrection.pooled EvidenceQualifiedCorrection.describe
+          EvidenceQualifiedCorrection.hypotheses) =
+      false
+EvidenceQualifiedCorrection.actual_survivors_can_be_insufficient_before_diagnosis :
+  (FaultTolerantCorrection.certificate FaultTolerantCorrection.roster4
+        (EvidenceQualifiedCorrection.pooled EvidenceQualifiedCorrection.describe EvidenceQualifiedCorrection.hypotheses)
+        fun d => decide (2 ≤ d)) =
+      false ∧
+    (FaultTolerantCorrection.certificate FaultTolerantCorrection.roster4
+        (CorrectionReconfiguration.envelope
+          (EvidenceQualifiedCorrection.describe EvidenceQualifiedCorrection.Model.left))
+        fun d => decide (2 ≤ d)) =
+      true
+EvidenceQualifiedCorrection.diagnosis_need_not_identify_the_model :
+  EvidenceQualifiedCorrection.retain EvidenceQualifiedCorrection.hypotheses EvidenceQualifiedCorrection.diagnostic
+        true =
+      [EvidenceQualifiedCorrection.Model.left, EvidenceQualifiedCorrection.Model.swapped] ∧
+    (EvidenceQualifiedCorrection.describe EvidenceQualifiedCorrection.Model.left).vulnerability 2 ≠
+        (EvidenceQualifiedCorrection.describe EvidenceQualifiedCorrection.Model.swapped).vulnerability 2 ∧
+      EvidenceQualifiedCorrection.poolReady
+            (EvidenceQualifiedCorrection.pooled EvidenceQualifiedCorrection.describe
+              (EvidenceQualifiedCorrection.retain EvidenceQualifiedCorrection.hypotheses
+                EvidenceQualifiedCorrection.diagnostic true)) =
+          true ∧
+        EvidenceQualifiedCorrection.poolReady
+            (EvidenceQualifiedCorrection.pooled EvidenceQualifiedCorrection.describe
+              (EvidenceQualifiedCorrection.retain EvidenceQualifiedCorrection.hypotheses
+                EvidenceQualifiedCorrection.diagnostic false)) =
+          true
+EvidenceQualifiedCorrection.misleading_diagnosis_can_accept_only_compromised_support :
+  EvidenceQualifiedCorrection.diagnostic EvidenceQualifiedCorrection.Model.left = true ∧
+    EvidenceQualifiedCorrection.retain EvidenceQualifiedCorrection.hypotheses EvidenceQualifiedCorrection.diagnostic
+          false =
+        [EvidenceQualifiedCorrection.Model.right] ∧
+      CorrectionReconfiguration.induced (EvidenceQualifiedCorrection.describe EvidenceQualifiedCorrection.Model.left)
+            [0] =
+          [0, 1] ∧
+        (FaultTolerantCorrection.certificate FaultTolerantCorrection.roster4
+            (EvidenceQualifiedCorrection.pooled EvidenceQualifiedCorrection.describe
+              (EvidenceQualifiedCorrection.retain EvidenceQualifiedCorrection.hypotheses
+                EvidenceQualifiedCorrection.diagnostic false))
+            fun d => decide (d < 2)) =
+          true
+EvidenceQualifiedCorrection.unobserved_structural_change_invalidates_learned_coverage :
+  CorrectionReconfiguration.induced (EvidenceQualifiedCorrection.describe EvidenceQualifiedCorrection.Model.right) [2] =
+      [2, 3] ∧
+    (FaultTolerantCorrection.certificate FaultTolerantCorrection.roster4
+        (EvidenceQualifiedCorrection.pooled EvidenceQualifiedCorrection.describe
+          (EvidenceQualifiedCorrection.retain EvidenceQualifiedCorrection.hypotheses
+            EvidenceQualifiedCorrection.diagnostic true))
+        fun d => decide (2 ≤ d)) =
+      true
+EvidenceQualifiedCorrection.inspected_actual_model_is_retained (s : EvidenceQualifiedCorrection.Situation)
+  (q : EvidenceQualifiedCorrection.Query) (answer : Bool) (after : EvidenceQualifiedCorrection.Situation)
+  (known : s.actual ∈ s.candidates) (observed : EvidenceQualifiedCorrection.probe s q = some (answer, after)) :
+  after.actual = s.actual ∧ after.actual ∈ after.candidates
+EvidenceQualifiedCorrection.selected_inquiry_actually_completes (states : List EvidenceQualifiedCorrection.Situation)
+  (chosen : AlignmentInquiry.Plan EvidenceQualifiedCorrection.Query Unit) (s : EvidenceQualifiedCorrection.Situation)
+  (selection :
+    AlignmentInquiry.choose EvidenceQualifiedCorrection.interface states EvidenceQualifiedCorrection.plans =
+      some chosen)
+  (covered : s ∈ states) :
+  ∃ answer after out,
+    EvidenceQualifiedCorrection.probe s chosen.query = some (answer, after) ∧
+      EvidenceQualifiedCorrection.respond after (AlignmentInquiry.branch chosen answer) = some out ∧
+        EvidenceQualifiedCorrection.achieved out = true
+EvidenceQualifiedCorrection.pooled_unknowns_select_affordable_inspection :
+  AlignmentInquiry.choose EvidenceQualifiedCorrection.interface (EvidenceQualifiedCorrection.possibleSituations 12 12)
+      EvidenceQualifiedCorrection.plans =
+    some (EvidenceQualifiedCorrection.plan EvidenceQualifiedCorrection.Query.inspect)
+EvidenceQualifiedCorrection.learned_common_envelope_needs_no_further_identification :
+  AlignmentInquiry.choose EvidenceQualifiedCorrection.interface
+      (EvidenceQualifiedCorrection.possibleSituations 11 11
+        [EvidenceQualifiedCorrection.Model.left, EvidenceQualifiedCorrection.Model.swapped])
+      EvidenceQualifiedCorrection.plans =
+    some (EvidenceQualifiedCorrection.plan EvidenceQualifiedCorrection.Query.reuse)
+EvidenceQualifiedCorrection.unaffordable_or_unauthorized_inspection_leaves_no_listed_uniform_plan :
+  AlignmentInquiry.choose EvidenceQualifiedCorrection.interface (EvidenceQualifiedCorrection.possibleSituations 11 11)
+        EvidenceQualifiedCorrection.plans =
+      none ∧
+    AlignmentInquiry.choose EvidenceQualifiedCorrection.interface
+        (EvidenceQualifiedCorrection.possibleSituations 12 12 EvidenceQualifiedCorrection.hypotheses false)
+        EvidenceQualifiedCorrection.plans =
+      none
+EvidenceQualifiedCorrection.sufficient_evidence_can_leave_too_little_to_act :
+  have result :=
+    EvidenceQualifiedCorrection.final
+      (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [0] 11 11)
+      EvidenceQualifiedCorrection.Query.inspect;
+  result.candidates = [EvidenceQualifiedCorrection.Model.left, EvidenceQualifiedCorrection.Model.swapped] ∧
+    result.receipt = some (EvidenceQualifiedCorrection.Query.inspect, true) ∧
+      result.installation.state.completed = false ∧
+        result.installation.state.spent = 9 ∧ result.installation.state.reserve = 2
+EvidenceQualifiedCorrection.acquired_evidence_then_real_shutdown :
+  have result :=
+    EvidenceQualifiedCorrection.final
+      (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [0] 12 12)
+      EvidenceQualifiedCorrection.Query.inspect;
+  result.candidates = [EvidenceQualifiedCorrection.Model.left, EvidenceQualifiedCorrection.Model.swapped] ∧
+    result.receipt = some (EvidenceQualifiedCorrection.Query.inspect, true) ∧
+      EvidenceQualifiedCorrection.achieved result = true ∧
+        result.installation.state.spent = 12 ∧ result.installation.state.reserve = 0 ∧ result.installation.serial = 1
+EvidenceQualifiedCorrection.slower_equally_accurate_inspection_misses_deadline :
+  EvidenceQualifiedCorrection.achieved
+        (EvidenceQualifiedCorrection.final
+          (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [0] 20 12)
+          EvidenceQualifiedCorrection.Query.slow) =
+      false ∧
+    EvidenceQualifiedCorrection.achieved
+        (EvidenceQualifiedCorrection.final
+          (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [0] 20 12)
+          EvidenceQualifiedCorrection.Query.inspect) =
+      true
+EvidenceQualifiedCorrection.lack_of_uniform_availability_does_not_forbid_actual_certificate :
+  EvidenceQualifiedCorrection.poolReady
+        (EvidenceQualifiedCorrection.pooled EvidenceQualifiedCorrection.describe
+          EvidenceQualifiedCorrection.hypotheses) =
+      false ∧
+    EvidenceQualifiedCorrection.achieved
+        (EvidenceQualifiedCorrection.final
+          (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [] 11 11)
+          EvidenceQualifiedCorrection.Query.reuse) =
+      true
+EvidenceQualifiedCorrection.empty_survivors_do_not_authorize_correction :
+  EvidenceQualifiedCorrection.achieved
+      (EvidenceQualifiedCorrection.final
+        (EvidenceQualifiedCorrection.initialSituation EvidenceQualifiedCorrection.Model.left [] 20 20 [])
+        EvidenceQualifiedCorrection.Query.reuse) =
+    false

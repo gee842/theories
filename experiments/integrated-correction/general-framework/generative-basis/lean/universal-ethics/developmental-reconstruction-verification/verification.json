@@ -1,0 +1,358 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-07T23:19:28.728082+00:00",
+  "version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "fresh_temporary_build": true,
+  "commands": [
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "--version"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "-o",
+      "GenerativeCore.olean",
+      "GenerativeCore.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "GenerativeCoreAudit.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "-o",
+      "DevelopmentalAssociation.olean",
+      "DevelopmentalAssociation.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "DevelopmentalAssociationAudit.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "-o",
+      "DevelopmentalReconstruction.olean",
+      "DevelopmentalReconstruction.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "DevelopmentalReconstructionAudit.lean"
+    ]
+  ],
+  "source_unchanged_during_check": true,
+  "source_sha256": {
+    "GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "DevelopmentalAssociation.lean": "6137099d1ae405f6f26bda3966960ce495dcc8e519297ae922cf4927a73eb8be",
+    "DevelopmentalReconstruction.lean": "3aaa9603ec3c20c410d5187fa39aab94d63f47aaa34980077b4526e6feed9053",
+    "lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+    "GenerativeCoreAudit.lean": "d0e29bea9d0403409ee60ac5b2c044e68394230e4e5eda1e908ff4d4a946b187",
+    "DevelopmentalAssociationAudit.lean": "f9d1508eb07b62130f0e85dbbecd97be9203600894b285b799c51ee4661b053e",
+    "DevelopmentalReconstructionAudit.lean": "b2f9bd181291fc25ce6cadfb7eb7a3ebbed08c2ddbd3e74000564f0863dff469"
+  },
+  "log_sha256": {
+    "version.txt": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b",
+    "GenerativeCore-compiler.txt": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "GenerativeCore-axioms.txt": "a940c563aa7dafc2204031660bcc59f2780125b6bdb5350b7daac8b1226585f1",
+    "DevelopmentalAssociation-compiler.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "DevelopmentalAssociation-axioms.txt": "5d6d2b75185ba33703b7c3b6a43bcb1d1493cb2eb36cbdd01e8a72a03c8bca80",
+    "DevelopmentalReconstruction-compiler.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "DevelopmentalReconstruction-axioms.txt": "289239b7fd21ac241e768e7bfc4ecfeb01a04ee4e1bb75ff6b7f37730b6c9878"
+  },
+  "checker_sha256": "451be67c89f70a23876d4545f01bb05c683dc0380dc834d442ec10193a7ce4e3",
+  "source_locations": {
+    "GenerativeCore.lean": "GenerativeCore.lean",
+    "DevelopmentalAssociation.lean": "universal-ethics/DevelopmentalAssociation.lean",
+    "DevelopmentalReconstruction.lean": "universal-ethics/DevelopmentalReconstruction.lean"
+  },
+  "new_theorem_count": 20,
+  "new_audit_count": 44,
+  "total_audit_count": 113,
+  "new_empty_axiom_count": 16,
+  "axiom_dependencies": {
+    "GenerativeCore": {
+      "Generative.Process": [],
+      "Generative.Enabled": [],
+      "Generative.Trace": [],
+      "Generative.trace_nil_iff": [],
+      "Generative.trace_cons_iff": [],
+      "Generative.trace_singleton_iff": [],
+      "Generative.trace_append_iff": [],
+      "Generative.enabled_iff_singleton_trace": [],
+      "Generative.enabled_difference_implies_state_difference": [],
+      "Generative.Feasible": [],
+      "Generative.feasible_append_iff": [],
+      "Generative.feasible_prefix": [],
+      "Generative.productProcess": [],
+      "Generative.enabled_product_iff": [],
+      "Generative.trace_product_left": [],
+      "Generative.trace_product_right": [],
+      "Generative.trace_product_mk": [],
+      "Generative.trace_product_iff": [],
+      "Generative.feasible_product_iff": [],
+      "Generative.trace_map": [],
+      "Generative.trace_lift": [],
+      "Generative.projected_trace_iff": [],
+      "Generative.projection_exact_iff": [],
+      "Generative.local_exact_iff_trace_exact": [],
+      "Generative.enabled_projection_iff": [],
+      "Generative.feasible_projection_iff": [],
+      "Generative.feasible_difference_implies_projection_difference": [],
+      "Generative.trace_faithful_iff": []
+    },
+    "DevelopmentalAssociation": {
+      "DevelopmentalAssociation.State": [],
+      "DevelopmentalAssociation.material": [],
+      "DevelopmentalAssociation.divide": [],
+      "DevelopmentalAssociation.changeRetention": [],
+      "DevelopmentalAssociation.detach": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.aggregate": [],
+      "DevelopmentalAssociation.Event": [],
+      "DevelopmentalAssociation.step": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.run": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.process": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.run_iff_core_trace": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.division_inherits": [
+        "propext"
+      ],
+      "DevelopmentalAssociation.changed_state_governs_division": [
+        "propext"
+      ],
+      "DevelopmentalAssociation.step_accounts": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.core_trace_accounts": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.LineageConsistent": [],
+      "DevelopmentalAssociation.division_preserves_lineage": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.NoAggregation": [
+        "propext"
+      ],
+      "DevelopmentalAssociation.step_preserves_lineage": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.trace_preserves_lineage": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.Connected": [],
+      "DevelopmentalAssociation.connected_same_founder": [],
+      "DevelopmentalAssociation.developed_groups_have_common_origin": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.seed": [],
+      "DevelopmentalAssociation.seed_lineage": [],
+      "DevelopmentalAssociation.Observation": [],
+      "DevelopmentalAssociation.observe": [],
+      "DevelopmentalAssociation.development": [],
+      "DevelopmentalAssociation.changed_division_forms_group": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.separated_descendant_reconstructs_association": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.restored_separation_changes_later_growth": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.mixed": [],
+      "DevelopmentalAssociation.aggregation_breaks_clonal_conclusion": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.splitMiddle": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.splitBase": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.CoarseObservation": [],
+      "DevelopmentalAssociation.coarse": [],
+      "DevelopmentalAssociation.equal_cell_states_different_continuations": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.comparison_histories_are_actual": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.no_bond_free_exact_predictor": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.ineffective_operations_fail": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    "DevelopmentalReconstruction": {
+      "DevelopmentalReconstruction.Culture": [],
+      "DevelopmentalReconstruction.World": [],
+      "DevelopmentalReconstruction.material": [],
+      "DevelopmentalReconstruction.support": [],
+      "DevelopmentalReconstruction.Requirement": [],
+      "DevelopmentalReconstruction.attached": [],
+      "DevelopmentalReconstruction.eligible": [],
+      "DevelopmentalReconstruction.transfer": [],
+      "DevelopmentalReconstruction.develop": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalReconstruction.transfer_accounts": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "DevelopmentalReconstruction.transfer_carries_development": [
+        "propext"
+      ],
+      "DevelopmentalReconstruction.sampled_state_rebuilds_bonds": [
+        "propext"
+      ],
+      "DevelopmentalReconstruction.development_accounts": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "DevelopmentalReconstruction.Event": [],
+      "DevelopmentalReconstruction.step": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalReconstruction.run": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalReconstruction.process": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalReconstruction.run_iff_core_trace": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalReconstruction.step_accounts": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "DevelopmentalReconstruction.history_accounts": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "DevelopmentalReconstruction.remainingSupport": [],
+      "DevelopmentalReconstruction.workCost": [],
+      "DevelopmentalReconstruction.historyCost": [],
+      "DevelopmentalReconstruction.step_support_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "DevelopmentalReconstruction.history_support_bound": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "DevelopmentalReconstruction.Retention": [],
+      "DevelopmentalReconstruction.NoRevision": [
+        "propext"
+      ],
+      "DevelopmentalReconstruction.local_step_preserves_retention": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalReconstruction.local_history_preserves_retention": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalReconstruction.PreservesDevelopment": [
+        "propext"
+      ],
+      "DevelopmentalReconstruction.world_step_preserves_retention": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalReconstruction.inherited_development_over_generations": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalReconstruction.initial": [],
+      "DevelopmentalReconstruction.acquired": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalReconstruction.ordinary": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalReconstruction.acquired_developmental_state": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalReconstruction.cycle": [],
+      "DevelopmentalReconstruction.observation": [],
+      "DevelopmentalReconstruction.formed_inherited_reconstruction_history": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalReconstruction.formation_changes_sampling_under_same_requirement": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalReconstruction.relaxed_requirement_preserves_reconstruction": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalReconstruction.revised_descendant_changes_next_sampling": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalReconstruction.inherited_capacity_still_needs_actual_support": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalReconstruction.count_only_sampling_is_inadequate": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  },
+  "scope": "Actual sampled developmental state governs reconstructed bonds; finite supported histories and accounted transfers. Sampling regime, local division, mutation occurrence and reserves remain supplied. No indefinite renewal, invasion stability or empirical superiority."
+}

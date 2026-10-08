@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "checks": [
+    "published byte size and MD5",
+    "input and analysis SHA256 bindings",
+    "30 rows and six five-culture groups",
+    "exact integer means and contrasts",
+    "independent 252-allocation enumeration",
+    "independent balanced holdout losses"
+  ],
+  "scope": "Independent numerical implementation check, not an independent scientific review or Lean proof.",
+  "bootstrap_check": "Finite ordered output only; bootstrap percentiles are not independently recomputed.",
+  "source_sha256": "f9920311c09251f9854318a65f4d67212ec3b0d2792af78e83e50913c987db75",
+  "results_sha256": "82c2987c71b8ab21c8babd1cad4e5bcfe2b94d8382dbded3b4817e11926c1ebd",
+  "checker_sha256": "1c38bda8521f5ab66c44a11b390d05a463cdc6a86a657393cde5c2805d818fb9",
+  "node_version": "v24.19.0"
+}

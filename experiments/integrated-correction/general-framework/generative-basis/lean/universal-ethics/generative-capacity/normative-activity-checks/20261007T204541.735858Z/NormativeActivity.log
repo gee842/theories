@@ -1,0 +1,4 @@
+NormativeActivity.lean:257:10: error: unexpected token 'prefix'; expected '⟩'
+NormativeActivity.lean:257:16: error: unexpected token ','; expected ':'
+NormativeActivity.lean:258:15: error: unexpected token '++'; expected ':'
+NormativeActivity.lean:258:40: error: unexpected identifier; expected ':'

@@ -1,0 +1,111 @@
+Generative.ModelRevision.decoded_measurement_preserves_record (reversed : Bool)
+  (value : Generative.ModelRevision.Reports) :
+  Generative.SourceReliance.decode reversed
+      (Generative.FormedGrounds.encode reversed value.fst, Generative.FormedGrounds.encode reversed value.snd) =
+    some value
+Generative.ModelRevision.accepted_repair_fits_history (r : Generative.ModelRevision.Repair)
+  (candidates : List Generative.ModelRevision.Repair) (records : List Generative.ModelRevision.Evidence)
+  (accepted : r ∈ Generative.ModelRevision.retain candidates records) (e : Generative.ModelRevision.Evidence) :
+  e ∈ records → Generative.ModelRevision.predict r e.fst = e.snd
+Generative.ModelRevision.faithful_candidate_survives (r : Generative.ModelRevision.Repair)
+  (actual : Generative.ModelRevision.Law) (ps : List Generative.ModelRevision.Probe)
+  (candidates : List Generative.ModelRevision.Repair) (included : r ∈ candidates)
+  (faithful : ∀ (p : Generative.ModelRevision.Probe), Generative.ModelRevision.predict r p = actual p) :
+  r ∈ Generative.ModelRevision.retain candidates (Generative.ModelRevision.acquire actual ps)
+Generative.ModelRevision.every_probe_is_in_domain (p : Generative.ModelRevision.Probe) :
+  p ∈ Generative.ModelRevision.allProbes
+Generative.ModelRevision.exhaustive_acceptance_establishes_correspondence (actual : Generative.ModelRevision.Law)
+  (r : Generative.ModelRevision.Repair) (candidates : List Generative.ModelRevision.Repair)
+  (accepted :
+    r ∈
+      Generative.ModelRevision.retain candidates
+        (Generative.ModelRevision.acquire actual Generative.ModelRevision.allProbes))
+  (p : Generative.ModelRevision.Probe) : Generative.ModelRevision.predict r p = actual p
+Generative.ModelRevision.advance_preserves_old_history (actual : Generative.ModelRevision.Law)
+  (p : Generative.ModelRevision.Probe) (s : Generative.ModelRevision.State) :
+  List.take s.history.length (Generative.ModelRevision.advance actual p s).history = s.history
+Generative.ModelRevision.acquisition_locates_actual_discrepancy :
+  Generative.ModelRevision.firstMismatch Generative.ModelRevision.discoveryHistory =
+    some (Generative.ModelRevision.discovery, false, false)
+Generative.ModelRevision.generated_residual_targets_second_report :
+  Generative.ModelRevision.difference (Generative.ModelRevision.base Generative.ModelRevision.discovery)
+      (Generative.SourceReliance.jointFailure Generative.ModelRevision.discovery) =
+    (false, true)
+Generative.ModelRevision.failure_generates_competing_repairs :
+  Generative.ModelRevision.generate Generative.ModelRevision.discoveryHistory =
+    [Generative.ModelRevision.interaction, Generative.ModelRevision.exceptionPatch]
+Generative.ModelRevision.both_repairs_fit_discovery :
+  Generative.ModelRevision.fits Generative.ModelRevision.interaction Generative.ModelRevision.discoveryHistory = true ∧
+    Generative.ModelRevision.fits Generative.ModelRevision.exceptionPatch Generative.ModelRevision.discoveryHistory =
+      true
+Generative.ModelRevision.disagreement_selects_unseen_contrast :
+  Generative.ModelRevision.selectProbe (Generative.ModelRevision.generate Generative.ModelRevision.discoveryHistory)
+        Generative.ModelRevision.allProbes =
+      some Generative.ModelRevision.contrast ∧
+    ¬Generative.ModelRevision.contrast ∈ List.map Prod.fst Generative.ModelRevision.discoveryHistory
+Generative.ModelRevision.contrast_distinguishes_repairs :
+  Generative.ModelRevision.predict Generative.ModelRevision.interaction Generative.ModelRevision.contrast =
+      (true, true) ∧
+    Generative.ModelRevision.predict Generative.ModelRevision.exceptionPatch Generative.ModelRevision.contrast =
+      (true, false)
+Generative.ModelRevision.repetition_cannot_choose_between_repairs (n : Nat) :
+  Generative.ModelRevision.retain [Generative.ModelRevision.interaction, Generative.ModelRevision.exceptionPatch]
+      (List.replicate n
+        (Generative.ModelRevision.discovery,
+          Generative.SourceReliance.jointFailure Generative.ModelRevision.discovery)) =
+    [Generative.ModelRevision.interaction, Generative.ModelRevision.exceptionPatch]
+Generative.ModelRevision.complete_cycle_selects_interaction :
+  Generative.ModelRevision.finished.candidates = [Generative.ModelRevision.interaction]
+Generative.ModelRevision.complete_cycle_records_all_probes :
+  Generative.ModelRevision.finished.history =
+    Generative.ModelRevision.acquire Generative.SourceReliance.jointFailure Generative.ModelRevision.allProbes
+Generative.ModelRevision.corrected_law_matches_joint_failure (p : Generative.ModelRevision.Probe) :
+  Generative.ModelRevision.predict Generative.ModelRevision.interaction p = Generative.SourceReliance.jointFailure p
+Generative.ModelRevision.completed_cycle_has_earned_correspondence (r : Generative.ModelRevision.Repair)
+  (accepted : r ∈ Generative.ModelRevision.finished.candidates) (p : Generative.ModelRevision.Probe) :
+  Generative.ModelRevision.predict r p = Generative.SourceReliance.jointFailure p
+Generative.ModelRevision.no_support_preserves_unfinished_status :
+  Generative.ModelRevision.status
+      (Generative.ModelRevision.investigate Generative.SourceReliance.jointFailure Generative.ModelRevision.allProbes 0
+        (Generative.ModelRevision.start Generative.ModelRevision.discoveryHistory))
+      Generative.ModelRevision.allProbes =
+    Generative.ModelRevision.Status.needsProbe
+Generative.ModelRevision.finished_status_is_scoped :
+  Generative.ModelRevision.status Generative.ModelRevision.finished Generative.ModelRevision.allProbes =
+    Generative.ModelRevision.Status.settledOnAvailable
+Generative.ModelRevision.unavailable_probe_is_not_global_settlement :
+  Generative.ModelRevision.status (Generative.ModelRevision.start Generative.ModelRevision.discoveryHistory)
+        [Generative.ModelRevision.discovery] =
+      Generative.ModelRevision.Status.settledOnAvailable ∧
+    Generative.ModelRevision.status (Generative.ModelRevision.start Generative.ModelRevision.discoveryHistory)
+        Generative.ModelRevision.allProbes =
+      Generative.ModelRevision.Status.needsProbe
+Generative.ModelRevision.insufficient_grammar_is_exposed :
+  (Generative.ModelRevision.investigate Generative.SourceReliance.jointFailure Generative.ModelRevision.allProbes 1
+          { candidates := [Generative.ModelRevision.exceptionPatch],
+            history := Generative.ModelRevision.discoveryHistory }).candidates =
+      [Generative.ModelRevision.exceptionPatch] ∧
+    Generative.ModelRevision.retain [Generative.ModelRevision.exceptionPatch]
+        (Generative.ModelRevision.acquire Generative.SourceReliance.jointFailure Generative.ModelRevision.allProbes) =
+      []
+Generative.ModelRevision.corrected_use_retains_relevant_uncertainty :
+  Generative.ModelRevision.rely Generative.ModelRevision.finished.candidates Generative.SourceReliance.allFaults
+      (false, false) =
+    none
+Generative.ModelRevision.controlled_use_returns_correct_answer (target : Bool) :
+  Generative.ModelRevision.rely Generative.ModelRevision.finished.candidates Generative.SourceReliance.clean
+      (Generative.SourceReliance.jointFailure { target := target, localFault := false, commonFault := false }) =
+    some target
+Generative.ModelRevision.full_old_domain_does_not_establish_new_setting :
+  (∀ (p : Generative.ModelRevision.Probe),
+      Generative.ModelRevision.shifted false p =
+        Generative.ModelRevision.predict Generative.ModelRevision.interaction p) ∧
+    Generative.ModelRevision.shifted true Generative.ModelRevision.contrast ≠
+      Generative.ModelRevision.predict Generative.ModelRevision.interaction Generative.ModelRevision.contrast
+Generative.ModelRevision.recording_alternative_preserves_all_observations (p : Generative.ModelRevision.Probe) :
+  Generative.ModelRevision.alteredRecording p = Generative.SourceReliance.jointFailure p
+Generative.ModelRevision.mechanism_location_requires_another_observation :
+  Generative.ModelRevision.base Generative.ModelRevision.contrast ≠
+      Generative.SourceReliance.jointFailure Generative.ModelRevision.contrast ∧
+    Generative.ModelRevision.alteredRecording Generative.ModelRevision.contrast =
+      Generative.SourceReliance.jointFailure Generative.ModelRevision.contrast

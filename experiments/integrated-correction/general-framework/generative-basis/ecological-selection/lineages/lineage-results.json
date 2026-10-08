@@ -1,0 +1,726 @@
+{
+  "treatments": {
+    "WT-S": {
+      "raw_rows": 960,
+      "retained_nodes": 944,
+      "miss_rows": 16,
+      "source_condition_counts": {
+        "0": 917,
+        "GLY": 16,
+        "CON": 11,
+        "MISS": 16
+      },
+      "unresolved_parent_nodes": [
+        "11:a1",
+        "11:a2",
+        "11:a3",
+        "11:a4",
+        "11:a5",
+        "11:a6",
+        "11:a7",
+        "11:a8"
+      ],
+      "nonviable_donors": [],
+      "observed_parent_edges": 888,
+      "terminal_viable_nodes": 37,
+      "terminal_founder_counts": {
+        "1:b3": 11,
+        "1:d3": 26
+      },
+      "terminal_common_ancestors": [],
+      "descendants_of_2_II_A5": 0,
+      "phase_counts": {
+        "1": {
+          "observed": 48,
+          "survived": 39,
+          "flagged": 0
+        },
+        "2": {
+          "observed": 48,
+          "survived": 28,
+          "flagged": 0
+        },
+        "3": {
+          "observed": 48,
+          "survived": 38,
+          "flagged": 0
+        },
+        "4": {
+          "observed": 48,
+          "survived": 33,
+          "flagged": 0
+        },
+        "5": {
+          "observed": 48,
+          "survived": 21,
+          "flagged": 0
+        },
+        "6": {
+          "observed": 48,
+          "survived": 15,
+          "flagged": 17
+        },
+        "7": {
+          "observed": 48,
+          "survived": 25,
+          "flagged": 2
+        },
+        "8": {
+          "observed": 48,
+          "survived": 30,
+          "flagged": 2
+        },
+        "9": {
+          "observed": 40,
+          "survived": 22,
+          "flagged": 0
+        },
+        "10": {
+          "observed": 40,
+          "survived": 25,
+          "flagged": 0
+        },
+        "11": {
+          "observed": 48,
+          "survived": 16,
+          "flagged": 0
+        },
+        "12": {
+          "observed": 48,
+          "survived": 32,
+          "flagged": 0
+        },
+        "13": {
+          "observed": 48,
+          "survived": 36,
+          "flagged": 0
+        },
+        "14": {
+          "observed": 48,
+          "survived": 36,
+          "flagged": 0
+        },
+        "15": {
+          "observed": 48,
+          "survived": 24,
+          "flagged": 3
+        },
+        "16": {
+          "observed": 48,
+          "survived": 39,
+          "flagged": 0
+        },
+        "17": {
+          "observed": 48,
+          "survived": 22,
+          "flagged": 1
+        },
+        "18": {
+          "observed": 48,
+          "survived": 31,
+          "flagged": 1
+        },
+        "19": {
+          "observed": 48,
+          "survived": 27,
+          "flagged": 0
+        },
+        "20": {
+          "observed": 48,
+          "survived": 37,
+          "flagged": 1
+        }
+      }
+    },
+    "WT-L.csv": {
+      "raw_rows": 960,
+      "retained_nodes": 944,
+      "miss_rows": 16,
+      "source_condition_counts": {
+        "0": 917,
+        "GLY": 8,
+        "MISS": 16,
+        "ERR": 5,
+        "CON": 13,
+        "SLUG": 1
+      },
+      "unresolved_parent_nodes": [
+        "5:F1",
+        "5:F2",
+        "5:F3",
+        "5:F4",
+        "5:F5",
+        "5:F6",
+        "5:F7",
+        "5:F8"
+      ],
+      "nonviable_donors": [],
+      "observed_parent_edges": 888,
+      "terminal_viable_nodes": 44,
+      "terminal_founder_counts": {
+        "1:F8": 44
+      },
+      "terminal_common_ancestors": [
+        "1:F8",
+        "2:A7",
+        "3:A3",
+        "4:A5"
+      ],
+      "descendants_of_2_II_A5": 44,
+      "phase_counts": {
+        "1": {
+          "observed": 48,
+          "survived": 18,
+          "flagged": 0
+        },
+        "2": {
+          "observed": 48,
+          "survived": 29,
+          "flagged": 8
+        },
+        "3": {
+          "observed": 40,
+          "survived": 9,
+          "flagged": 0
+        },
+        "4": {
+          "observed": 40,
+          "survived": 28,
+          "flagged": 0
+        },
+        "5": {
+          "observed": 48,
+          "survived": 9,
+          "flagged": 4
+        },
+        "6": {
+          "observed": 48,
+          "survived": 20,
+          "flagged": 1
+        },
+        "7": {
+          "observed": 48,
+          "survived": 18,
+          "flagged": 0
+        },
+        "8": {
+          "observed": 48,
+          "survived": 28,
+          "flagged": 0
+        },
+        "9": {
+          "observed": 48,
+          "survived": 15,
+          "flagged": 0
+        },
+        "10": {
+          "observed": 48,
+          "survived": 40,
+          "flagged": 0
+        },
+        "11": {
+          "observed": 48,
+          "survived": 24,
+          "flagged": 0
+        },
+        "12": {
+          "observed": 48,
+          "survived": 37,
+          "flagged": 2
+        },
+        "13": {
+          "observed": 48,
+          "survived": 18,
+          "flagged": 1
+        },
+        "14": {
+          "observed": 48,
+          "survived": 32,
+          "flagged": 0
+        },
+        "15": {
+          "observed": 48,
+          "survived": 24,
+          "flagged": 10
+        },
+        "16": {
+          "observed": 48,
+          "survived": 38,
+          "flagged": 1
+        },
+        "17": {
+          "observed": 48,
+          "survived": 42,
+          "flagged": 0
+        },
+        "18": {
+          "observed": 48,
+          "survived": 37,
+          "flagged": 0
+        },
+        "19": {
+          "observed": 48,
+          "survived": 39,
+          "flagged": 0
+        },
+        "20": {
+          "observed": 48,
+          "survived": 44,
+          "flagged": 0
+        }
+      }
+    },
+    "17-S": {
+      "raw_rows": 960,
+      "retained_nodes": 960,
+      "miss_rows": 0,
+      "source_condition_counts": {
+        "0": 942,
+        "CON": 10,
+        "GLY": 8
+      },
+      "unresolved_parent_nodes": [],
+      "nonviable_donors": [],
+      "observed_parent_edges": 912,
+      "terminal_viable_nodes": 48,
+      "terminal_founder_counts": {
+        "1:a1": 2,
+        "1:a3": 2,
+        "1:a7": 3,
+        "1:a8": 1,
+        "1:b1": 2,
+        "1:b4": 4,
+        "1:b5": 1,
+        "1:b7": 1,
+        "1:c5": 1,
+        "1:c6": 3,
+        "1:c7": 2,
+        "1:c8": 2,
+        "1:d2": 5,
+        "1:d5": 3,
+        "1:e3": 2,
+        "1:e6": 2,
+        "1:e8": 4,
+        "1:f3": 3,
+        "1:f4": 1,
+        "1:f5": 1,
+        "1:f7": 2,
+        "1:f8": 1
+      },
+      "terminal_common_ancestors": [],
+      "descendants_of_2_II_A5": 0,
+      "phase_counts": {
+        "1": {
+          "observed": 48,
+          "survived": 47,
+          "flagged": 1
+        },
+        "2": {
+          "observed": 48,
+          "survived": 48,
+          "flagged": 0
+        },
+        "3": {
+          "observed": 48,
+          "survived": 47,
+          "flagged": 0
+        },
+        "4": {
+          "observed": 48,
+          "survived": 46,
+          "flagged": 0
+        },
+        "5": {
+          "observed": 48,
+          "survived": 47,
+          "flagged": 0
+        },
+        "6": {
+          "observed": 48,
+          "survived": 46,
+          "flagged": 8
+        },
+        "7": {
+          "observed": 48,
+          "survived": 43,
+          "flagged": 0
+        },
+        "8": {
+          "observed": 48,
+          "survived": 46,
+          "flagged": 0
+        },
+        "9": {
+          "observed": 48,
+          "survived": 40,
+          "flagged": 0
+        },
+        "10": {
+          "observed": 48,
+          "survived": 47,
+          "flagged": 0
+        },
+        "11": {
+          "observed": 48,
+          "survived": 42,
+          "flagged": 0
+        },
+        "12": {
+          "observed": 48,
+          "survived": 46,
+          "flagged": 1
+        },
+        "13": {
+          "observed": 48,
+          "survived": 44,
+          "flagged": 0
+        },
+        "14": {
+          "observed": 48,
+          "survived": 46,
+          "flagged": 0
+        },
+        "15": {
+          "observed": 48,
+          "survived": 44,
+          "flagged": 6
+        },
+        "16": {
+          "observed": 48,
+          "survived": 47,
+          "flagged": 1
+        },
+        "17": {
+          "observed": 48,
+          "survived": 47,
+          "flagged": 0
+        },
+        "18": {
+          "observed": 48,
+          "survived": 46,
+          "flagged": 1
+        },
+        "19": {
+          "observed": 48,
+          "survived": 39,
+          "flagged": 0
+        },
+        "20": {
+          "observed": 48,
+          "survived": 48,
+          "flagged": 0
+        }
+      }
+    },
+    "17-L.csv": {
+      "raw_rows": 960,
+      "retained_nodes": 960,
+      "miss_rows": 0,
+      "source_condition_counts": {
+        "0": 945,
+        "GLY": 8,
+        "CON": 6,
+        "ERR": 1
+      },
+      "unresolved_parent_nodes": [],
+      "nonviable_donors": [],
+      "observed_parent_edges": 912,
+      "terminal_viable_nodes": 45,
+      "terminal_founder_counts": {
+        "1:A5": 8,
+        "1:B2": 2,
+        "1:B6": 6,
+        "1:C2": 5,
+        "1:C3": 1,
+        "1:D7": 8,
+        "1:E3": 8,
+        "1:F4": 3,
+        "1:F8": 4
+      },
+      "terminal_common_ancestors": [],
+      "descendants_of_2_II_A5": 8,
+      "phase_counts": {
+        "1": {
+          "observed": 48,
+          "survived": 34,
+          "flagged": 0
+        },
+        "2": {
+          "observed": 48,
+          "survived": 48,
+          "flagged": 8
+        },
+        "3": {
+          "observed": 48,
+          "survived": 32,
+          "flagged": 0
+        },
+        "4": {
+          "observed": 48,
+          "survived": 45,
+          "flagged": 0
+        },
+        "5": {
+          "observed": 48,
+          "survived": 29,
+          "flagged": 0
+        },
+        "6": {
+          "observed": 48,
+          "survived": 44,
+          "flagged": 1
+        },
+        "7": {
+          "observed": 48,
+          "survived": 34,
+          "flagged": 0
+        },
+        "8": {
+          "observed": 48,
+          "survived": 46,
+          "flagged": 1
+        },
+        "9": {
+          "observed": 48,
+          "survived": 27,
+          "flagged": 0
+        },
+        "10": {
+          "observed": 48,
+          "survived": 47,
+          "flagged": 1
+        },
+        "11": {
+          "observed": 48,
+          "survived": 34,
+          "flagged": 0
+        },
+        "12": {
+          "observed": 48,
+          "survived": 43,
+          "flagged": 1
+        },
+        "13": {
+          "observed": 48,
+          "survived": 35,
+          "flagged": 1
+        },
+        "14": {
+          "observed": 48,
+          "survived": 45,
+          "flagged": 0
+        },
+        "15": {
+          "observed": 48,
+          "survived": 39,
+          "flagged": 1
+        },
+        "16": {
+          "observed": 48,
+          "survived": 47,
+          "flagged": 0
+        },
+        "17": {
+          "observed": 48,
+          "survived": 40,
+          "flagged": 0
+        },
+        "18": {
+          "observed": 48,
+          "survived": 43,
+          "flagged": 1
+        },
+        "19": {
+          "observed": 48,
+          "survived": 45,
+          "flagged": 0
+        },
+        "20": {
+          "observed": 48,
+          "survived": 45,
+          "flagged": 0
+        }
+      }
+    }
+  },
+  "total_raw_genealogy_rows": 3840,
+  "known_genealogy_nodes": 3808,
+  "source_miss_rows": 32,
+  "focal_assay": {
+    "PE-2-WT-A5": {
+      "initial": 72,
+      "phase1_survived": 47,
+      "phase2_survived": 42,
+      "cycle_fraction": 0.5833333333333334,
+      "phase2_conditional_fraction": 0.8936170212765957,
+      "racks": [
+        {
+          "rack": 1,
+          "start": 8,
+          "phase1_survived": 7,
+          "cycle_completed": 7
+        },
+        {
+          "rack": 2,
+          "start": 8,
+          "phase1_survived": 1,
+          "cycle_completed": 1
+        },
+        {
+          "rack": 3,
+          "start": 8,
+          "phase1_survived": 7,
+          "cycle_completed": 7
+        },
+        {
+          "rack": 4,
+          "start": 8,
+          "phase1_survived": 8,
+          "cycle_completed": 6
+        },
+        {
+          "rack": 5,
+          "start": 8,
+          "phase1_survived": 4,
+          "cycle_completed": 4
+        },
+        {
+          "rack": 6,
+          "start": 8,
+          "phase1_survived": 4,
+          "cycle_completed": 4
+        },
+        {
+          "rack": 7,
+          "start": 8,
+          "phase1_survived": 4,
+          "cycle_completed": 3
+        },
+        {
+          "rack": 8,
+          "start": 8,
+          "phase1_survived": 6,
+          "cycle_completed": 5
+        },
+        {
+          "rack": 9,
+          "start": 8,
+          "phase1_survived": 6,
+          "cycle_completed": 5
+        }
+      ],
+      "joined_by": "same date, strain, size, rack and tube; no replacement recorded"
+    },
+    "PE-2-WT-A5 mutL": {
+      "initial": 72,
+      "phase1_survived": 31,
+      "phase2_survived": 7,
+      "cycle_fraction": 0.09722222222222222,
+      "phase2_conditional_fraction": 0.22580645161290322,
+      "racks": [
+        {
+          "rack": 1,
+          "start": 8,
+          "phase1_survived": 7,
+          "cycle_completed": 3
+        },
+        {
+          "rack": 2,
+          "start": 8,
+          "phase1_survived": 5,
+          "cycle_completed": 0
+        },
+        {
+          "rack": 3,
+          "start": 8,
+          "phase1_survived": 1,
+          "cycle_completed": 0
+        },
+        {
+          "rack": 4,
+          "start": 8,
+          "phase1_survived": 4,
+          "cycle_completed": 0
+        },
+        {
+          "rack": 5,
+          "start": 8,
+          "phase1_survived": 4,
+          "cycle_completed": 1
+        },
+        {
+          "rack": 6,
+          "start": 8,
+          "phase1_survived": 1,
+          "cycle_completed": 0
+        },
+        {
+          "rack": 7,
+          "start": 8,
+          "phase1_survived": 3,
+          "cycle_completed": 1
+        },
+        {
+          "rack": 8,
+          "start": 8,
+          "phase1_survived": 4,
+          "cycle_completed": 1
+        },
+        {
+          "rack": 9,
+          "start": 8,
+          "phase1_survived": 2,
+          "cycle_completed": 1
+        }
+      ],
+      "joined_by": "same date, strain, size, rack and tube; no replacement recorded"
+    }
+  },
+  "matched_date_risk_difference": 0.48611111111111116,
+  "matched_date_ratio": 6.0,
+  "delete_one_rack_each_difference_range": [
+    0.4375,
+    0.578125
+  ],
+  "rack_sensitivity_scope": "81 deletion combinations; descriptive, not confidence intervals or independently evolved mutations.",
+  "ancestral_phase1": {
+    "n": 184,
+    "complete_n": 183,
+    "known_table": {
+      "11": 28,
+      "10": 22,
+      "01": 130,
+      "00": 3
+    },
+    "unknown_sm": [
+      {
+        "source_row": "2403",
+        "Date": "2018-05-22 00:00:00",
+        "Mat": "1",
+        "Count SM": "NA",
+        "Extinct": "1"
+      }
+    ],
+    "complete_mat_success": 50,
+    "sm_known_success": 158,
+    "joint_known_success": 28,
+    "complete_joint_fraction": 0.15300546448087432,
+    "complete_marginal_product": 0.23589835468362746,
+    "full_record_joint_range": [
+      0.15217391304347827,
+      0.15760869565217392
+    ],
+    "full_record_marginal_product_range": [
+      0.23800803402646503,
+      0.23951441398865783
+    ],
+    "observed_extant": 28
+  },
+  "limits": [
+    "No imputed parents across missing phases.",
+    "Condition flags are retained; raw recorded parent links are not genotype proofs.",
+    "No Bayesian mutation propagation or sequencing alignment rerun.",
+    "Single mutation origin and one matched-date comparison; no independent evolution replication.",
+    "Growth medium, transfer schedule and replacement lottery remain experimentally supplied."
+  ]
+}

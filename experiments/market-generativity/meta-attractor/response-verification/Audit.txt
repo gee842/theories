@@ -1,0 +1,53 @@
+'ResponseCapacity.balance' does not depend on any axioms
+'ResponseCapacity.support' does not depend on any axioms
+'ResponseCapacity.support_nonnegative' depends on axioms: [propext, Quot.sound]
+'ResponseCapacity.zero_support_stays_zero' depends on axioms: [propext]
+'ResponseCapacity.positive_support_has_positive_predecessor' depends on axioms: [propext, Quot.sound]
+'ResponseCapacity.positive_support_matches_balance' depends on axioms: [propext, Quot.sound]
+'ResponseCapacity.positive_iff_every_prefix' depends on axioms: [propext, Quot.sound]
+'ResponseCapacity.nonpositive_balance_forces_failure' depends on axioms: [propext, Quot.sound]
+'ResponseCapacity.failed_history_remains_failed' depends on axioms: [propext]
+'ResponseCapacity.irreversible_failure_even_if_balance_recovers' does not depend on any axioms
+'ResponseCapacity.balance_tail_bound' depends on axioms: [propext, Quot.sound]
+'ResponseCapacity.finite_failure_from_persistent_net_loss' depends on axioms: [propext, Quot.sound]
+'ResponseCapacity.missed' does not depend on any axioms
+'ResponseCapacity.growing_raw_demand_with_matching_response' depends on axioms: [propext]
+'ResponseCapacity.dyadic_lower_bound' depends on axioms: [propext, Quot.sound]
+'ResponseCapacity.exponential_linear_missed_bound' depends on axioms: [propext, Quot.sound]
+'ResponseCapacity.exponential_load_exceeds_fixed_repair' depends on axioms: [propext, Quot.sound]
+'ResponseCapacity.exponential_linear_failure' depends on axioms: [propext, Quot.sound]
+'ResponseCapacity.matched_growth_preserves_support' depends on axioms: [propext, Quot.sound]
+'ResponseCapacity.persistent_misses_with_repair_are_viable' depends on axioms: [propext, Quot.sound]
+'ResponseCapacity.State' does not depend on any axioms
+'ResponseCapacity.step' does not depend on any axioms
+'ResponseCapacity.run' does not depend on any axioms
+'ResponseCapacity.loss_of_support_absorbing' depends on axioms: [propext]
+'ResponseCapacity.immediate_support_prefers_no_investment' depends on axioms: [propext, Quot.sound]
+'ResponseCapacity.investment_has_real_opportunity_cost' does not depend on any axioms
+'ResponseCapacity.no_investment_response_nonincreasing' depends on axioms: [propext, Quot.sound]
+'ResponseCapacity.no_investment_insufficient_response_drop' depends on axioms: [propext, Quot.sound]
+'ResponseCapacity.zero_response_step' depends on axioms: [propext]
+'ResponseCapacity.zero_response_history' depends on axioms: [propext, Quot.sound]
+'ResponseCapacity.response_or_support_exhausted' depends on axioms: [propext, Quot.sound]
+'ResponseCapacity.constant_demand_greedy_collapse' does not depend on any axioms
+'ResponseCapacity.full_response_preserved' depends on axioms: [propext, Quot.sound]
+'ResponseCapacity.full_response_history' depends on axioms: [propext, Quot.sound]
+'ResponseCapacity.one_investment_establishes_viability' does not depend on any axioms
+'ResponseCapacity.established_response_keeps_working' depends on axioms: [propext, Quot.sound]
+'ResponseCapacity.reduced_demand_keeps_working' depends on axioms: [propext, Quot.sound]
+'ResponseCapacity.run_add' depends on axioms: [propext]
+'ResponseCapacity.halted_run' depends on axioms: [propext]
+'ResponseCapacity.no_investment_insufficient_response_eventually_halts' depends on axioms: [propext, Quot.sound]
+'ResponseCapacity.exact_no_investment_viability' depends on axioms: [propext, Quot.sound]
+'ResponseCapacity.next_support_positive_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ResponseCapacity.one_step_recovery_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ResponseCapacity.initial_investment_is_affordable' does not depend on any axioms
+'ResponseCapacity.greedy_example_halted_forever' depends on axioms: [propext]
+'ResponseCapacity.expansion_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ResponseCapacity.greater_response_with_greater_demands_can_halt' depends on axioms: [propext, Quot.sound]
+'ResponseCapacity.LocallyOptimal' does not depend on any axioms
+'ResponseCapacity.no_investment_locally_optimal' depends on axioms: [propext, Quot.sound]
+'ResponseCapacity.optimal_live_step_uses_zero_investment' depends on axioms: [propext, Quot.sound]
+'ResponseCapacity.optimal_live_history_matches_greedy' depends on axioms: [propext, Quot.sound]
+'ResponseCapacity.any_policy_failure_persists' depends on axioms: [propext]
+'ResponseCapacity.all_locally_optimal_policies_eventually_halt' depends on axioms: [propext, Quot.sound]

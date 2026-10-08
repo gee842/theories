@@ -1,0 +1,73 @@
+CorrectionRelations.lean:251:12: error: unexpected token 'prefix'; expected '_' or identifier
+CorrectionRelations.lean:251:18: error: unexpected identifier; expected ':'
+CorrectionRelations.lean:252:22: error: unexpected token '++'; expected ':'
+CorrectionRelations.lean:252:51: error: unexpected token '++'; expected ':'
+CorrectionRelations.lean:257:24: error: Function expected at
+  Revision
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  mid
+
+Hint: The identifier `Revision` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+CorrectionRelations.lean:260:16: error: Function expected at
+  Revision
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  old
+
+Hint: The identifier `Revision` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+CorrectionRelations.lean:262:17: error: unexpected identifier; expected ':'
+CorrectionRelations.lean:264:29: error: unexpected token ')'; expected ':'
+CorrectionRelations.lean:265:24: error: unexpected token ')'; expected ':'
+CorrectionRelations.lean:266:23: error: unexpected token '<;>'; expected ':'
+CorrectionRelations.lean:269:15: error: Function expected at
+  Revised
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  old
+
+Hint: The identifier `Revised` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+CorrectionRelations.lean:275:15: error: Function expected at
+  Revised
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  old
+
+Hint: The identifier `Revised` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+CorrectionRelations.lean:275:80: error: unsolved goals
+x✝ : Sort u_1
+Revised : x✝
+old current : List Bool
+history : sorry
+⊢ Parity old = Parity current
+CorrectionRelations.lean:281:15: error: Function expected at
+  Revised
+but this term has type
+  ?m.1
+
+Note: Expected a function because this term is being applied to the argument
+  old
+
+Hint: The identifier `Revised` is unknown, and Lean's `autoImplicit` option causes an unknown identifier to be treated as an implicitly bound variable with an unknown type. However, the unknown type cannot be a function, and a function is what Lean expects here. This is often the result of a typo or a missing `import` or `open` statement.
+CorrectionRelations.lean:282:48: error: unsolved goals
+x✝ : Sort u_1
+Revised : x✝
+old current : List Bool
+history : sorry
+a : Bool
+⊢ Parity current = Parity old
+CorrectionRelations.lean:290:5: error: unexpected token 'prefix'; expected '_' or identifier
+CorrectionRelations.lean:290:11: error: unexpected identifier; expected ':'
+CorrectionRelations.lean:291:19: error: unexpected token '++'; expected ':'
+CorrectionRelations.lean:292:21: error: unexpected token '++'; expected ':'
+CorrectionRelations.lean:296:29: error: unexpected token ')'; expected ':'
+CorrectionRelations.lean:297:22: error: unexpected token ')'; expected ':'
+CorrectionRelations.lean:298:21: error: unexpected token '<;>'; expected ':'

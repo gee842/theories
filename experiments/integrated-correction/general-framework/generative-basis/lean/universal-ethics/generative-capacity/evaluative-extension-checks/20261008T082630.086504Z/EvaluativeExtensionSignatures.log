@@ -1,0 +1,60 @@
+EvaluativeExtension.inclusion_extension_iff {H C N : Type} (p : H → C → Prop) (q : H → N → Prop) (a b : H) :
+  PracticalJudgment.Included (EvaluativeExtension.extend p q a) (EvaluativeExtension.extend p q b) ↔
+    PracticalJudgment.Included (p a) (p b) ∧ PracticalJudgment.Included (q a) (q b)
+EvaluativeExtension.strict_inclusion_survives_extension {H C N : Type} (p : H → C → Prop) (q : H → N → Prop) (a b : H)
+  (old : PracticalJudgment.StrictIncluded (p a) (p b)) (added : PracticalJudgment.Included (q a) (q b)) :
+  PracticalJudgment.StrictIncluded (EvaluativeExtension.extend p q a) (EvaluativeExtension.extend p q b)
+EvaluativeExtension.better_survives_no_new_loss {H C N G K : Type} (p : H → C → Prop) (q : H → N → Prop)
+  (g : H → G → Prop) (k : H → K → Prop) (a b : H) (old : PracticalJudgment.Better p g a b)
+  (addedProtection : PracticalJudgment.Included (q b) (q a)) (secondary : PracticalJudgment.Included (k b) (k a)) :
+  PracticalJudgment.Better (EvaluativeExtension.extend p q) (EvaluativeExtension.extend g k) a b
+EvaluativeExtension.equal_additions_preserve_exact_comparison {H C N G K : Type} (p : H → C → Prop) (q : H → N → Prop)
+  (g : H → G → Prop) (k : H → K → Prop) (a b : H) (qab : PracticalJudgment.Included (q a) (q b))
+  (qba : PracticalJudgment.Included (q b) (q a)) (kab : PracticalJudgment.Included (k a) (k b))
+  (kba : PracticalJudgment.Included (k b) (k a)) :
+  PracticalJudgment.Better (EvaluativeExtension.extend p q) (EvaluativeExtension.extend g k) a b ↔
+    PracticalJudgment.Better p g a b
+EvaluativeExtension.new_protection_loss_defeats_old_verdict {H C N G : Type} (p : H → C → Prop) (q : H → N → Prop)
+  (g : H → G → Prop) (a b : H) (n : N) (held : q b n) (lost : ¬q a n) :
+  ¬PracticalJudgment.Better (EvaluativeExtension.extend p q) g a b
+EvaluativeExtension.prior_output_favored :
+  EvaluativeExtension.comparison EvaluativeExtension.Stage.prior EvaluativeExtension.Plan.output
+    EvaluativeExtension.Plan.maintain
+EvaluativeExtension.formation_creates_a_differentiating_need :
+  EvaluativeExtension.formedProtection EvaluativeExtension.Stage.prior EvaluativeExtension.Plan.output () ∧
+    EvaluativeExtension.formedProtection EvaluativeExtension.Stage.prior EvaluativeExtension.Plan.maintain () ∧
+      ¬EvaluativeExtension.formedProtection EvaluativeExtension.Stage.formed EvaluativeExtension.Plan.output () ∧
+        EvaluativeExtension.formedProtection EvaluativeExtension.Stage.formed EvaluativeExtension.Plan.maintain ()
+EvaluativeExtension.formed_maintenance_favored :
+  EvaluativeExtension.comparison EvaluativeExtension.Stage.formed EvaluativeExtension.Plan.maintain
+    EvaluativeExtension.Plan.output
+EvaluativeExtension.formed_output_no_longer_favored :
+  ¬EvaluativeExtension.comparison EvaluativeExtension.Stage.formed EvaluativeExtension.Plan.output
+      EvaluativeExtension.Plan.maintain
+EvaluativeExtension.reversal_keeps_real_output_loss :
+  EvaluativeExtension.oldGain EvaluativeExtension.Plan.output 1 ∧
+    ¬EvaluativeExtension.oldGain EvaluativeExtension.Plan.maintain 1 ∧
+      EvaluativeExtension.comparison EvaluativeExtension.Stage.formed EvaluativeExtension.Plan.maintain
+        EvaluativeExtension.Plan.output
+EvaluativeExtension.no_unrestricted_preservation_of_verdicts :
+  ¬∀ (a b : EvaluativeExtension.Plan),
+      EvaluativeExtension.comparison EvaluativeExtension.Stage.prior a b →
+        EvaluativeExtension.comparison EvaluativeExtension.Stage.formed a b
+EvaluativeExtension.no_one_stage_blind_exact_ranking :
+  ¬∃ rank,
+      (∀ (a b : EvaluativeExtension.Plan),
+          rank a b ↔ EvaluativeExtension.comparison EvaluativeExtension.Stage.prior a b) ∧
+        ∀ (a b : EvaluativeExtension.Plan),
+          rank a b ↔ EvaluativeExtension.comparison EvaluativeExtension.Stage.formed a b
+EvaluativeExtension.one_unchanged_rule_handles_both_stages :
+  PracticalJudgment.Better (EvaluativeExtension.protection EvaluativeExtension.Stage.prior) EvaluativeExtension.oldGain
+      EvaluativeExtension.Plan.output EvaluativeExtension.Plan.maintain ∧
+    PracticalJudgment.Better (EvaluativeExtension.protection EvaluativeExtension.Stage.formed)
+      EvaluativeExtension.oldGain EvaluativeExtension.Plan.maintain EvaluativeExtension.Plan.output
+EvaluativeExtension.added_secondary_gain_can_leave_incomparability :
+  ¬PracticalJudgment.Better EvaluativeExtension.oldProtection
+        (EvaluativeExtension.extend EvaluativeExtension.oldGain EvaluativeExtension.addedGain)
+        EvaluativeExtension.Plan.output EvaluativeExtension.Plan.maintain ∧
+    ¬PracticalJudgment.Better EvaluativeExtension.oldProtection
+        (EvaluativeExtension.extend EvaluativeExtension.oldGain EvaluativeExtension.addedGain)
+        EvaluativeExtension.Plan.maintain EvaluativeExtension.Plan.output

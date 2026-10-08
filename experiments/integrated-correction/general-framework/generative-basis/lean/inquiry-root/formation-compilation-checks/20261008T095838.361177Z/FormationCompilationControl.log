@@ -1,0 +1,42 @@
+'FormationCompilationControl.Legacy.bit' does not depend on any axioms
+'FormationCompilationControl.Legacy.occupied' depends on axioms: [propext]
+'FormationCompilationControl.Legacy.activeResident' depends on axioms: [propext]
+'FormationCompilationControl.Legacy.alternativeResident' depends on axioms: [propext]
+'FormationCompilationControl.Legacy.population' depends on axioms: [propext]
+'FormationCompilationControl.Legacy.aCount' depends on axioms: [propext]
+'FormationCompilationControl.Legacy.hCount' depends on axioms: [propext]
+'FormationCompilationControl.Legacy.precursor' depends on axioms: [propext]
+'FormationCompilationControl.Legacy.Valid' depends on axioms: [propext]
+'FormationCompilationControl.Legacy.Enabled' depends on axioms: [propext]
+'FormationCompilationControl.Legacy.advance' does not depend on any axioms
+'FormationCompilationControl.Legacy.Step' depends on axioms: [propext]
+'FormationCompilationControl.Legacy.expenditure' depends on axioms: [propext]
+'FormationCompilationControl.Legacy.commonExpenditure' depends on axioms: [propext]
+'FormationCompilationControl.Legacy.copyIncrement' depends on axioms: [propext]
+'FormationCompilationControl.Legacy.eventIndicator' does not depend on any axioms
+'FormationCompilationControl.Legacy.tally' does not depend on any axioms
+'FormationCompilationControl.Legacy.energy' does not depend on any axioms
+'FormationCompilationControl.Legacy.rank' depends on axioms: [propext]
+'FormationCompilationControl.Legacy.rankDrop' depends on axioms: [propext]
+'FormationCompilationControl.Legacy.phase' depends on axioms: [propext]
+'FormationCompilationControl.Legacy.Absent' does not depend on any axioms
+'FormationCompilationControl.Legacy.mixedPhase' depends on axioms: [propext]
+'FormationCompilationControl.Legacy.SupportOwned' does not depend on any axioms
+'FormationCompilationControl.Legacy.initial' does not depend on any axioms
+'FormationCompilationControl.Legacy.formedH' does not depend on any axioms
+'FormationCompilationControl.Legacy.formed' does not depend on any axioms
+'FormationCompilationControl.Legacy.associated' does not depend on any axioms
+'FormationCompilationControl.Legacy.repaired' does not depend on any axioms
+'FormationCompilationControl.Legacy.captured' does not depend on any axioms
+'FormationCompilationControl.Legacy.copied' does not depend on any axioms
+'FormationCompilationControl.Legacy.witnessEvents' does not depend on any axioms
+'FormationCompilationControl.Legacy.inheritanceInitial' does not depend on any axioms
+'FormationCompilationControl.Legacy.inheritanceFinal' does not depend on any axioms
+'FormationCompilationControl.Legacy.inheritanceEvents' does not depend on any axioms
+'FormationCompilationControl.enabled_same' depends on axioms: [propext]
+'FormationCompilationControl.advance_same' does not depend on any axioms
+'FormationCompilationControl.step_same' depends on axioms: [propext]
+'FormationCompilationControl.expenditure_same' depends on axioms: [propext]
+'FormationCompilationControl.common_expenditure_same' depends on axioms: [propext]
+'FormationCompilationControl.copy_increment_same' depends on axioms: [propext]
+'FormationCompilationControl.rank_drop_same' depends on axioms: [propext]

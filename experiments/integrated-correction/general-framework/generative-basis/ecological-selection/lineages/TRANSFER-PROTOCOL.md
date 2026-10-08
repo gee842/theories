@@ -1,0 +1,21 @@
+# Follow-up specification: shared blocks and assay transfer
+
+8 October 2026. AI-authored follow-up after the completed chronological forecast study. The prior forecasts and assay summaries have already been inspected. These are retrospective follow-up tests, not preregistered or untouched external validation. Earlier data and results remain unchanged.
+
+## Shared experimental blocks
+
+Add a conventional changing-block propensity model to the previous three models. For each treatment and phase, six rack propensities evolve across the ten scheduled cycles. All observations in a rack/phase batch share its latent probability. Use the previous 100 probability midpoints, beta transition family, equal finite sigma prior and past-only parameter averaging. Before seeing this follow-up's scores, specify two starting structures: a common unobserved founder linked to each initial block, and independent uniform initial block roots. Retain both; do not select one by the final score.
+
+All past observations inform the parameter posterior; a culture's forecast uses its current destination block. This model does not follow biological parents. A missing rack/phase has no outcome emission, while its latent block condition continues through the scheduled transition. That assumption concerns a persistent location; it does not impute unknown biological ancestry. Both block models receive the same observed past viability and block labels. Compare the existing lineage forecasts unchanged, on the same 3,424 observations and the same previously specified phase, time-window and condition-zero sensitivities. Run 50/100/200-state numerical sensitivity. This comparison can challenge attribution of the earlier predictive gain to ancestry alone, but cannot identify a causal environmental effect either.
+
+## Separate developmental assays
+
+Read the original raw workbook and retain every date/strain/size/phase cohort's size, viability counts, condition flags and replacement labels in a cohort inventory. Preserve source row numbers and original strain strings. Do not pool all dates into a single fitness estimate.
+
+For the matched focal genotype pair, use **17 February 2020 phase I** to forecast **2 June 2020 phase I** with a Beta(1,1) count model, separately by genotype. Compare with the same-date pooled-genotype predictor using the same prior, and an uninformative 1/2 predictor. Report Brier and log scores and both the earlier and later genotype contrasts; do not infer biological independence from culture counts. No current assay outcome enters its forecast.
+
+Inspect same-key follow-up using date, strain, size, rack and tube, distinguishing actual phase-I survivors from replaced cultures. February's evolved strain has only 7 of 41 survivors followed; the revertant has none of 51. Do not fit a complete-cycle forecast from these selectively or incompletely observed phase-II rows. Missing records are not failures or successes.
+
+As a separate same-genotype transfer check, use the **22 May 2018 evolved-strain assay**. Its 40 phase-I survivors all have corresponding phase-II cultures, with 36 surviving. Exclude the eight replacement destinations from the linked-original-culture denominator. Estimate phase-I viability and conditional phase-II viability separately with Beta(1,1), then evaluate both against June 2020. The product of their posterior means is a declared independent-prior stage-model prediction for June's cycle; it is not an algebraic identity between unrelated assays or a microscopic mutation-rate model. Preserve known experimental flags and provide a condition-zero scoring sensitivity without outcome-driven refitting.
+
+The 2018 and February models are both reported; a result will not be selected because it fits June better. No fresh intervention is performed, raw labels alone do not prove unchanged stored genotypes, and this analysis does not calibrate a mutational event rate. The paper's separate genetic-reversion evidence retains its original scope. Source extraction, temporal isolation, independent numerical inference/score checks and missing-follow-up accounting must pass before integration. This empirical study claims no new universal proof or Lean theorem.

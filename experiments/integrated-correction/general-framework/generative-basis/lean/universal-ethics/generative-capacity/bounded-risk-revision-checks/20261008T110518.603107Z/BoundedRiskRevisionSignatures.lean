@@ -1,0 +1,10 @@
+import BoundedRiskRevision
+#check BoundedRiskRevision.greatest_on_frontier
+#check BoundedRiskRevision.dominated_beyond_balance
+#check BoundedRiskRevision.no_joint_improvement_on_frontier
+#check BoundedRiskRevision.frontier_exact
+#check BoundedRiskRevision.intermediate_profiles
+#check BoundedRiskRevision.whole_allowance_iff
+#check BoundedRiskRevision.four_point_constraint_optimum
+#check BoundedRiskRevision.scope_bounds_compose
+#check BoundedRiskRevision.resetting_allowance_exceeds_original_scope

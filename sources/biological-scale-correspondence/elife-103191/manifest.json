@@ -1,0 +1,40 @@
+{
+  "retrieved_at_utc": "2026-10-07T22:35:08.757302+00:00",
+  "files": [
+    {
+      "file": "elife-103191-fig4-data3-v1.xlsx",
+      "url": "https://cdn.elifesciences.org/articles/103191/elife-103191-fig4-data3-v1.xlsx",
+      "license": "CC BY 4.0",
+      "bytes": 17605426,
+      "sha256": "9ef6098dc801863135e64bf863a8b19d85987a8aa310b81ae658e263ac4564f1"
+    },
+    {
+      "file": "modelExploit.m",
+      "url": "https://raw.githubusercontent.com/shreklab/Haley-et-al-2024/fd564615460f57f29887c96f3baa9c1347538953/analysis/modelExploit.m",
+      "license": "MIT; license preserved separately",
+      "bytes": 22527,
+      "sha256": "a029da795945e5cb40346fb50580720abee407e615d5ce484f713491ef753686"
+    },
+    {
+      "file": "fig4_matching.m",
+      "url": "https://raw.githubusercontent.com/shreklab/Haley-et-al-2024/fd564615460f57f29887c96f3baa9c1347538953/figure_generation/fig4_matching.m",
+      "license": "MIT; license preserved separately",
+      "bytes": 18543,
+      "sha256": "584d8d02984047dddf29d06717f41cd48527e28916464f1d2d0edb212effde12"
+    },
+    {
+      "file": "LICENSE",
+      "url": "https://raw.githubusercontent.com/shreklab/Haley-et-al-2024/fd564615460f57f29887c96f3baa9c1347538953/LICENSE",
+      "license": "MIT",
+      "sha256": "605b70c1395a7f8d7016510027ddf73816d78fb2899d0d420b5ded81eeeba5f9",
+      "bytes": 1066
+    },
+    {
+      "file": "article.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12422737/fullTextXML",
+      "license": "CC BY 4.0",
+      "sha256": "1c1464873c9b6baed4aff21e7d46e644846cd731458ef67e9c325f662796db85",
+      "bytes": 498846
+    }
+  ]
+}

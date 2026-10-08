@@ -1,0 +1,19 @@
+SelectiveRevision.lean:178:17: error: Expected type must not contain free variables
+  (have assessment := combine (if true = true then none else none) (if true = true then none else none);
+      { judgment := assessment.fst, ground := assessment.snd, choice := choose g assessment.fst }).ground ≠
+    (have assessment := combine (if true = true then some true else none) (if true = true then some false else none);
+      { judgment := assessment.fst, ground := assessment.snd, choice := choose g assessment.fst }).ground
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+SelectiveRevision.lean:199:14: error: Expected type must not contain free variables
+  rawShape (prepared true (some false) none true true g) ≠
+    (have assessment := combine (if true = true then some false else none) (if true = true then none else none);
+      { judgment := assessment.fst, ground := assessment.snd, choice := choose g assessment.fst }).judgment
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+SelectiveRevision.lean:199:14: error: Expected type must not contain free variables
+  rawShape (prepared true (some true) none true true g) ≠
+    (have assessment := combine (if true = true then some true else none) (if true = true then none else none);
+      { judgment := assessment.fst, ground := assessment.snd, choice := choose g assessment.fst }).judgment
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables

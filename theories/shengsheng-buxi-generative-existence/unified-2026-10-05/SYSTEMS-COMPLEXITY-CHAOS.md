@@ -4,6 +4,16 @@
 
 **Systems theory, cybernetics, complex-systems research and chaos theory illuminate different aspects of activity forming and changing the conditions of further activity.** They overlap, but neither their identity nor their strict containment within this theory has been established. Their integration adds an explicit connection: **formed and revised relations → patterns of behavior over time → conditions for effective learning, response and continued revision.**
 
+## Relations across scales: subsequent extension
+
+8 October 2026. [The new scale account](RELATIONS-ACROSS-SCALES.md) adds **21 checked theorems** on time-varying descriptions, finite-horizon approximation, two-scale composition and calibrated condition judgments. The historical 162-result package below remains separately counted. A concrete equal-total witness loses local support despite exact aggregate prediction; changed coupling can invalidate a total-only reduction. Supplied calibration, thresholds and laws remain explicit. [Proof and counterreview](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-INTEGRATION.md).
+
+The [operative-revision continuation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCALE-REVISION-INTEGRATION.md) adds **27 checked theorems / 106 inherited audits** on acquired records, delayed and charged revision, calibrated response and finite support. It retains failed timing/calibration and successful fixed-response alternatives; no automatic choice of the right sensor or universally superior refinement is claimed. / 后续把尺度修订接入同一实际历史，保留代价、失败和同样成功的替代回应。
+
+The [inquiry-choice continuation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CHOICE-INTEGRATION.md) adds **28 checked results / 133 inherited audits**. Common response feasibility connects descriptive adequacy to an explicit task; acquired distinctions can resolve conflicting responses, while direct robust action can preserve conditions with less work. Same-horizon comparisons and a repaired support guard retain delay and actual failures.
+
+[Changing dependencies](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANGING-DEPENDENCY-INTEGRATION.md) add **25 checked theorems / 161 inherited audits**: acquired evidence retains response value only under calibrated subsequent change. Fresh acquisition alone does not ensure exact continuation; bounded-change certificates and an actual repaired route preserve both target limits.
+
 ## Lean completion of the mathematical connections
 
 The initial [formal package](../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md) passes **104 distinct new theorem audits**, with exact history correspondences to the existing generative core. [Integration and proof accounting](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-INTEGRATION.md) and [independent review](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-REVIEW.md) record this completion separately from the earlier prose-only result. The [recurrent-revision continuation](#recurrent-revision-with-effective-regulation-and-support) adds **58 distinct checked theorems**, bringing this package to **162**; inherited core and resource-accounting audits are counted separately.
@@ -128,3 +138,15 @@ The broader derivation continues under conditional universality: specify law pro
 ### Sources and review
 
 [Primary comparisons and Ren’s 2024 genealogy](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-SOURCES.md) · [Mathematical argument and existing-model correspondence](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-MECHANISM.md) · [Independent scope review](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-REVIEW.md) · [Preserved originals and reading limits](../../../sources/41-systems-complexity-2026-10-06/README.md).
+
+## System individuation and constitutive possibilities
+
+8 October 2026. [The systems-foundation continuation](SYSTEM-INDIVIDUATION.md) asks which relationships warrant identifying an organization and its boundaries. It credits the exact-reduction and assembly results above, then distinguishes a sufficient description from actual constitutive participation. A coordinated record can arise through a common driver; a correlated substitute can predict an outcome without being used to produce it.
+
+[New Lean results](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md#2-new-mathematics-and-its-exact-inputs) establish support intersection under admitted recombination and a constrained domain with two sufficient regions but no least one. Formation establishes the domain in which either coordinate preserves every finite event-word possibility; a later distinct event changes pulse availability. All 27 new theorems / 41 declaration audits pass with empty dependencies; 18 inherited core audits are unchanged. These are additional to the older 162-result package, not a recount of it. Actual system boundaries, causal attribution and universal foundational warrant remain substantive obligations.
+
+## Grounding the range of variation
+
+8 October 2026. [The next warrant study](SYSTEM-WARRANT.md) derives the earlier example's post-formation comparison domain from its actual formal preparation and continuation. **19 new theorems / 21 empty audits** prove exact endpoint coverage and arbitrary finite continuation/outcome correspondence; 59 inherited audits retain their maps. The unchanged process and selected phase remain local inputs.
+
+The account distinguishes witnessed occurrence, currently supported capability, justified universal constraints and exact possibility characterizations. Each needs the appropriate direction of coverage. Documented control and biological preparation supply actual scoped evidence; neither past success nor absence from a protocol guarantees future feasibility or impossibility. [Argument, primary review and checks](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-INTEGRATION.md) preserve observational routes to warrant and the stronger unfinished foundation.

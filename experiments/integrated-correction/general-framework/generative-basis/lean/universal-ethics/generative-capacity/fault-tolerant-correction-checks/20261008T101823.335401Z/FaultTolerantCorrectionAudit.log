@@ -1,0 +1,308 @@
+'FaultTolerantCorrection.Domain' does not depend on any axioms
+'FaultTolerantCorrection.Envelope' does not depend on any axioms
+'FaultTolerantCorrection.certificate' does not depend on any axioms
+'FaultTolerantCorrection.certificate_witness' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.certificate_sound' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.separated' does not depend on any axioms
+'FaultTolerantCorrection.certificate_available' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.support_contained_in_fault_rejected' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.two_fault_sets_cover_prevents_availability' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.availability_iff_separated' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.duplicating_roster_gives_no_extra_warrant' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.no_fault_model_never_certifies' does not depend on any axioms
+'FaultTolerantCorrection.admitted_total_compromise_rejects' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.stronger_fault_coverage_cannot_create_acceptance' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.Mandate' does not depend on any axioms
+'FaultTolerantCorrection.permits' does not depend on any axioms
+'FaultTolerantCorrection.Installation' does not depend on any axioms
+'FaultTolerantCorrection.Request' does not depend on any axioms
+'FaultTolerantCorrection.Observation' does not depend on any axioms
+'FaultTolerantCorrection.observed' depends on axioms: [propext]
+'FaultTolerantCorrection.expected' does not depend on any axioms
+'FaultTolerantCorrection.fresh' does not depend on any axioms
+'FaultTolerantCorrection.withinMandate' does not depend on any axioms
+'FaultTolerantCorrection.Readings' does not depend on any axioms
+'FaultTolerantCorrection.Approvals' does not depend on any axioms
+'FaultTolerantCorrection.readSupport' does not depend on any axioms
+'FaultTolerantCorrection.approvalSupport' does not depend on any axioms
+'FaultTolerantCorrection.gate' does not depend on any axioms
+'FaultTolerantCorrection.accepted_observation_matches' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.gate_has_actual_route' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.gate_respects_mandate' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.stale_request_rejected' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.gate_available' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.Outcome' does not depend on any axioms
+'FaultTolerantCorrection.execute' depends on axioms: [propext]
+'FaultTolerantCorrection.execution_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FaultTolerantCorrection.execution_respects_mandate' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.forbidden_command_cannot_execute' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.completed_serial_advances' depends on axioms: [propext]
+'FaultTolerantCorrection.protected_completion_blocks_replay' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.quorum_to_actual_correction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'FaultTolerantCorrection.roster3' does not depend on any axioms
+'FaultTolerantCorrection.singleFault' does not depend on any axioms
+'FaultTolerantCorrection.correlated3' does not depend on any axioms
+'FaultTolerantCorrection.roster4' does not depend on any axioms
+'FaultTolerantCorrection.correlated4' does not depend on any axioms
+'FaultTolerantCorrection.shutdownOnly' does not depend on any axioms
+'FaultTolerantCorrection.initial' does not depend on any axioms
+'FaultTolerantCorrection.request' does not depend on any axioms
+'FaultTolerantCorrection.correctReads' depends on axioms: [propext]
+'FaultTolerantCorrection.correctApprovals' does not depend on any axioms
+'FaultTolerantCorrection.one_fault_separation' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.correlated_recovery_separation' depends on axioms: [propext, Quot.sound]
+'FaultTolerantCorrection.compromised_issuer_alone_cannot_expand_mandate' depends on axioms: [propext]
+'FaultTolerantCorrection.two_faithful_domains_complete_shutdown' depends on axioms: [propext]
+'FaultTolerantCorrection.consumed_request_cannot_replay' depends on axioms: [propext]
+'FaultTolerantCorrection.changing_command_invalidates_old_approvals' depends on axioms: [propext]
+'FaultTolerantCorrection.correlated_fault_defeats_unwarranted_single_fault_model' depends on axioms: [propext]
+'FaultTolerantCorrection.declared_correlation_can_block_availability' does not depend on any axioms
+'FaultTolerantCorrection.distinct_support_recovers_under_same_correlated_attack' depends on axioms: [propext]
+'FaultTolerantCorrection.accurate_redundancy_can_exhaust_response_capacity' depends on axioms: [propext]
+FaultTolerantCorrection.certificate_witness (roster : List FaultTolerantCorrection.Domain)
+  (faults : FaultTolerantCorrection.Envelope) (supports : FaultTolerantCorrection.Domain → Bool)
+  (accepted : FaultTolerantCorrection.certificate roster faults supports = true)
+  (bad : List FaultTolerantCorrection.Domain) (admitted : bad ∈ faults) : ∃ d, d ∈ roster ∧ supports d = true ∧ ¬d ∈ bad
+FaultTolerantCorrection.certificate_sound (roster : List FaultTolerantCorrection.Domain)
+  (faults : FaultTolerantCorrection.Envelope) (supports : FaultTolerantCorrection.Domain → Bool)
+  (bad : List FaultTolerantCorrection.Domain) (admitted : bad ∈ faults) (P : Prop)
+  (reliable : ∀ (d : FaultTolerantCorrection.Domain), d ∈ roster → ¬d ∈ bad → supports d = true → P)
+  (accepted : FaultTolerantCorrection.certificate roster faults supports = true) : P
+FaultTolerantCorrection.certificate_available (roster : List FaultTolerantCorrection.Domain)
+  (faults : FaultTolerantCorrection.Envelope) (bad : List FaultTolerantCorrection.Domain) (admitted : bad ∈ faults)
+  (apart : FaultTolerantCorrection.separated roster faults) (supports : FaultTolerantCorrection.Domain → Bool)
+  (responsive : ∀ (d : FaultTolerantCorrection.Domain), d ∈ roster → ¬d ∈ bad → supports d = true) :
+  FaultTolerantCorrection.certificate roster faults supports = true
+FaultTolerantCorrection.support_contained_in_fault_rejected (roster : List FaultTolerantCorrection.Domain)
+  (faults : FaultTolerantCorrection.Envelope) (supports : FaultTolerantCorrection.Domain → Bool)
+  (bad : List FaultTolerantCorrection.Domain) (admitted : bad ∈ faults)
+  (contained : ∀ (d : FaultTolerantCorrection.Domain), d ∈ roster → supports d = true → d ∈ bad) :
+  FaultTolerantCorrection.certificate roster faults supports = false
+FaultTolerantCorrection.two_fault_sets_cover_prevents_availability (roster : List FaultTolerantCorrection.Domain)
+  (faults : FaultTolerantCorrection.Envelope) (actual possible : List FaultTolerantCorrection.Domain)
+  (admitted : possible ∈ faults)
+  (cover : ∀ (d : FaultTolerantCorrection.Domain), d ∈ roster → d ∈ actual ∨ d ∈ possible) :
+  (FaultTolerantCorrection.certificate roster faults fun d => !actual.contains d) = false
+FaultTolerantCorrection.availability_iff_separated (roster : List FaultTolerantCorrection.Domain)
+  (faults : FaultTolerantCorrection.Envelope) :
+  (∀ (actual : List FaultTolerantCorrection.Domain),
+      actual ∈ faults → (FaultTolerantCorrection.certificate roster faults fun d => !actual.contains d) = true) ↔
+    FaultTolerantCorrection.separated roster faults
+FaultTolerantCorrection.duplicating_roster_gives_no_extra_warrant (roster : List FaultTolerantCorrection.Domain)
+  (faults : FaultTolerantCorrection.Envelope) (supports : FaultTolerantCorrection.Domain → Bool) :
+  FaultTolerantCorrection.certificate (roster ++ roster) faults supports =
+    FaultTolerantCorrection.certificate roster faults supports
+FaultTolerantCorrection.no_fault_model_never_certifies (roster : List FaultTolerantCorrection.Domain)
+  (supports : FaultTolerantCorrection.Domain → Bool) : FaultTolerantCorrection.certificate roster [] supports = false
+FaultTolerantCorrection.admitted_total_compromise_rejects (roster : List FaultTolerantCorrection.Domain)
+  (faults : FaultTolerantCorrection.Envelope) (supports : FaultTolerantCorrection.Domain → Bool)
+  (admitted : roster ∈ faults) : FaultTolerantCorrection.certificate roster faults supports = false
+FaultTolerantCorrection.stronger_fault_coverage_cannot_create_acceptance (roster : List FaultTolerantCorrection.Domain)
+  (old new : FaultTolerantCorrection.Envelope) (supports : FaultTolerantCorrection.Domain → Bool) (nonempty : old ≠ [])
+  (covers :
+    ∀ (b : List FaultTolerantCorrection.Domain),
+      b ∈ old → ∃ c, c ∈ new ∧ ∀ (d : FaultTolerantCorrection.Domain), d ∈ b → d ∈ c)
+  (accepted : FaultTolerantCorrection.certificate roster new supports = true) :
+  FaultTolerantCorrection.certificate roster old supports = true
+FaultTolerantCorrection.accepted_observation_matches (roster : List FaultTolerantCorrection.Domain)
+  (faults : FaultTolerantCorrection.Envelope) (w : FaultTolerantCorrection.Installation)
+  (p : FaultTolerantCorrection.Request) (reads : FaultTolerantCorrection.Readings)
+  (bad : List FaultTolerantCorrection.Domain) (admitted : bad ∈ faults)
+  (faithful :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ roster →
+        ¬d ∈ bad →
+          ∀ (o : FaultTolerantCorrection.Observation),
+            reads d = some o → o = FaultTolerantCorrection.observed w p.address)
+  (accepted : FaultTolerantCorrection.certificate roster faults (FaultTolerantCorrection.readSupport p reads) = true) :
+  FaultTolerantCorrection.expected p = FaultTolerantCorrection.observed w p.address
+FaultTolerantCorrection.gate_has_actual_route (roster : List FaultTolerantCorrection.Domain)
+  (rf af : FaultTolerantCorrection.Envelope) (w : FaultTolerantCorrection.Installation)
+  (p : FaultTolerantCorrection.Request) (reads : FaultTolerantCorrection.Readings)
+  (approvals : FaultTolerantCorrection.Approvals) (bad : List FaultTolerantCorrection.Domain) (admitted : bad ∈ rf)
+  (faithful :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ roster →
+        ¬d ∈ bad →
+          ∀ (o : FaultTolerantCorrection.Observation),
+            reads d = some o → o = FaultTolerantCorrection.observed w p.address)
+  (accepted : FaultTolerantCorrection.gate roster rf af w p reads approvals = true) :
+  AcquiredCorrection.locate w.root p.address = some p.key
+FaultTolerantCorrection.gate_respects_mandate (roster : List FaultTolerantCorrection.Domain)
+  (rf af : FaultTolerantCorrection.Envelope) (w : FaultTolerantCorrection.Installation)
+  (p : FaultTolerantCorrection.Request) (reads : FaultTolerantCorrection.Readings)
+  (approvals : FaultTolerantCorrection.Approvals) (bad : List FaultTolerantCorrection.Domain) (admitted : bad ∈ af)
+  (faithful :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ roster → ¬d ∈ bad → approvals d = some p → FaultTolerantCorrection.withinMandate w p = true)
+  (accepted : FaultTolerantCorrection.gate roster rf af w p reads approvals = true) :
+  FaultTolerantCorrection.withinMandate w p = true
+FaultTolerantCorrection.stale_request_rejected (roster : List FaultTolerantCorrection.Domain)
+  (rf af : FaultTolerantCorrection.Envelope) (w : FaultTolerantCorrection.Installation)
+  (p : FaultTolerantCorrection.Request) (reads : FaultTolerantCorrection.Readings)
+  (approvals : FaultTolerantCorrection.Approvals) (stale : p.serial ≠ w.serial ∨ p.epoch ≠ w.state.authority) :
+  FaultTolerantCorrection.gate roster rf af w p reads approvals = false
+FaultTolerantCorrection.gate_available (roster : List FaultTolerantCorrection.Domain)
+  (rf af : FaultTolerantCorrection.Envelope) (w : FaultTolerantCorrection.Installation)
+  (p : FaultTolerantCorrection.Request) (reads : FaultTolerantCorrection.Readings)
+  (approvals : FaultTolerantCorrection.Approvals) (readBad issueBad : List FaultTolerantCorrection.Domain)
+  (readIn : readBad ∈ rf) (issueIn : issueBad ∈ af) (readApart : FaultTolerantCorrection.separated roster rf)
+  (issueApart : FaultTolerantCorrection.separated roster af) (current : FaultTolerantCorrection.fresh w p = true)
+  (readResponses :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ roster → ¬d ∈ readBad → reads d = some (FaultTolerantCorrection.expected p))
+  (issueResponses : ∀ (d : FaultTolerantCorrection.Domain), d ∈ roster → ¬d ∈ issueBad → approvals d = some p) :
+  FaultTolerantCorrection.gate roster rf af w p reads approvals = true
+FaultTolerantCorrection.execution_exact (roster : List FaultTolerantCorrection.Domain)
+  (rf af : FaultTolerantCorrection.Envelope) (w : FaultTolerantCorrection.Installation)
+  (p : FaultTolerantCorrection.Request) (reads : FaultTolerantCorrection.Readings)
+  (approvals : FaultTolerantCorrection.Approvals)
+  (accepted : FaultTolerantCorrection.gate roster rf af w p reads approvals = true)
+  (route : AcquiredCorrection.locate w.root p.address = some p.key) (funded : 2 * roster.length + 3 ≤ w.state.reserve)
+  (timely : w.state.time + 2 * roster.length + 3 ≤ w.state.deadline) :
+  (FaultTolerantCorrection.execute roster rf af w p reads approvals).succeeded = true ∧
+    (FaultTolerantCorrection.execute roster rf af w p reads approvals).installation.state.completed = true ∧
+      (FaultTolerantCorrection.execute roster rf af w p reads approvals).installation.serial = w.serial + 1 ∧
+        (FaultTolerantCorrection.execute roster rf af w p reads approvals).installation.state.spent =
+          w.state.spent + (2 * roster.length + 3)
+FaultTolerantCorrection.execution_respects_mandate (roster : List FaultTolerantCorrection.Domain)
+  (rf af : FaultTolerantCorrection.Envelope) (w : FaultTolerantCorrection.Installation)
+  (p : FaultTolerantCorrection.Request) (reads : FaultTolerantCorrection.Readings)
+  (approvals : FaultTolerantCorrection.Approvals) (bad : List FaultTolerantCorrection.Domain) (admitted : bad ∈ af)
+  (faithful :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ roster → ¬d ∈ bad → approvals d = some p → FaultTolerantCorrection.withinMandate w p = true)
+  (success : (FaultTolerantCorrection.execute roster rf af w p reads approvals).succeeded = true) :
+  FaultTolerantCorrection.withinMandate w p = true
+FaultTolerantCorrection.forbidden_command_cannot_execute (roster : List FaultTolerantCorrection.Domain)
+  (rf af : FaultTolerantCorrection.Envelope) (w : FaultTolerantCorrection.Installation)
+  (p : FaultTolerantCorrection.Request) (reads : FaultTolerantCorrection.Readings)
+  (approvals : FaultTolerantCorrection.Approvals) (bad : List FaultTolerantCorrection.Domain) (admitted : bad ∈ af)
+  (faithful :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ roster → ¬d ∈ bad → approvals d = some p → FaultTolerantCorrection.withinMandate w p = true)
+  (forbidden : FaultTolerantCorrection.permits w.mandate p.command = false) :
+  (FaultTolerantCorrection.execute roster rf af w p reads approvals).succeeded = false
+FaultTolerantCorrection.completed_serial_advances (roster : List FaultTolerantCorrection.Domain)
+  (rf af : FaultTolerantCorrection.Envelope) (w : FaultTolerantCorrection.Installation)
+  (p : FaultTolerantCorrection.Request) (reads : FaultTolerantCorrection.Readings)
+  (approvals : FaultTolerantCorrection.Approvals)
+  (success : (FaultTolerantCorrection.execute roster rf af w p reads approvals).succeeded = true) :
+  (FaultTolerantCorrection.execute roster rf af w p reads approvals).installation.serial = w.serial + 1
+FaultTolerantCorrection.protected_completion_blocks_replay (roster : List FaultTolerantCorrection.Domain)
+  (rf af : FaultTolerantCorrection.Envelope) (w : FaultTolerantCorrection.Installation)
+  (p : FaultTolerantCorrection.Request) (reads : FaultTolerantCorrection.Readings)
+  (approvals : FaultTolerantCorrection.Approvals)
+  (success : (FaultTolerantCorrection.execute roster rf af w p reads approvals).succeeded = true)
+  (current : p.serial = w.serial) (laterReads : FaultTolerantCorrection.Readings)
+  (laterApprovals : FaultTolerantCorrection.Approvals) :
+  FaultTolerantCorrection.gate roster rf af
+      (FaultTolerantCorrection.execute roster rf af w p reads approvals).installation p laterReads laterApprovals =
+    false
+FaultTolerantCorrection.quorum_to_actual_correction (roster : List FaultTolerantCorrection.Domain)
+  (rf af : FaultTolerantCorrection.Envelope) (w : FaultTolerantCorrection.Installation)
+  (p : FaultTolerantCorrection.Request) (reads : FaultTolerantCorrection.Readings)
+  (approvals : FaultTolerantCorrection.Approvals) (readBad issueBad : List FaultTolerantCorrection.Domain)
+  (readIn : readBad ∈ rf) (issueIn : issueBad ∈ af) (readApart : FaultTolerantCorrection.separated roster rf)
+  (issueApart : FaultTolerantCorrection.separated roster af) (current : FaultTolerantCorrection.fresh w p = true)
+  (readResponses :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ roster → ¬d ∈ readBad → reads d = some (FaultTolerantCorrection.expected p))
+  (issueResponses : ∀ (d : FaultTolerantCorrection.Domain), d ∈ roster → ¬d ∈ issueBad → approvals d = some p)
+  (readFaithful :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ roster →
+        ¬d ∈ readBad →
+          ∀ (o : FaultTolerantCorrection.Observation),
+            reads d = some o → o = FaultTolerantCorrection.observed w p.address)
+  (issueFaithful :
+    ∀ (d : FaultTolerantCorrection.Domain),
+      d ∈ roster → ¬d ∈ issueBad → approvals d = some p → FaultTolerantCorrection.withinMandate w p = true)
+  (funded : 2 * roster.length + 3 ≤ w.state.reserve)
+  (timely : w.state.time + 2 * roster.length + 3 ≤ w.state.deadline) :
+  (FaultTolerantCorrection.execute roster rf af w p reads approvals).succeeded = true ∧
+    (FaultTolerantCorrection.execute roster rf af w p reads approvals).installation.state.completed = true ∧
+      FaultTolerantCorrection.withinMandate w p = true
+FaultTolerantCorrection.one_fault_separation :
+  FaultTolerantCorrection.separated FaultTolerantCorrection.roster3 FaultTolerantCorrection.singleFault
+FaultTolerantCorrection.correlated_recovery_separation :
+  FaultTolerantCorrection.separated FaultTolerantCorrection.roster4 FaultTolerantCorrection.correlated4
+FaultTolerantCorrection.compromised_issuer_alone_cannot_expand_mandate :
+  have p :=
+    have __src := FaultTolerantCorrection.request;
+    { epoch := __src.epoch, serial := __src.serial, address := __src.address, key := __src.key,
+      command := EffectiveCommand.Command.update };
+  (FaultTolerantCorrection.gate FaultTolerantCorrection.roster3 FaultTolerantCorrection.singleFault
+      FaultTolerantCorrection.singleFault FaultTolerantCorrection.initial p
+      (FaultTolerantCorrection.correctReads FaultTolerantCorrection.initial p) fun d =>
+      if (d == 0) = true then some p else none) =
+    false
+FaultTolerantCorrection.two_faithful_domains_complete_shutdown :
+  have reads := fun d =>
+    if (d == 0) = true then none else some (FaultTolerantCorrection.observed FaultTolerantCorrection.initial []);
+  have approvals := fun d => if (d == 0) = true then none else some FaultTolerantCorrection.request;
+  have out :=
+    FaultTolerantCorrection.execute FaultTolerantCorrection.roster3 FaultTolerantCorrection.singleFault
+      FaultTolerantCorrection.singleFault FaultTolerantCorrection.initial FaultTolerantCorrection.request reads
+      approvals;
+  (out.succeeded, out.installation.state.running, out.installation.state.spent, out.installation.serial) =
+    (true, false, 9, 1)
+FaultTolerantCorrection.consumed_request_cannot_replay :
+  have reads := FaultTolerantCorrection.correctReads FaultTolerantCorrection.initial FaultTolerantCorrection.request;
+  have approvals :=
+    FaultTolerantCorrection.correctApprovals FaultTolerantCorrection.initial FaultTolerantCorrection.request;
+  have first :=
+    FaultTolerantCorrection.execute FaultTolerantCorrection.roster3 FaultTolerantCorrection.singleFault
+      FaultTolerantCorrection.singleFault FaultTolerantCorrection.initial FaultTolerantCorrection.request reads
+      approvals;
+  FaultTolerantCorrection.gate FaultTolerantCorrection.roster3 FaultTolerantCorrection.singleFault
+      FaultTolerantCorrection.singleFault first.installation FaultTolerantCorrection.request reads approvals =
+    false
+FaultTolerantCorrection.changing_command_invalidates_old_approvals :
+  FaultTolerantCorrection.gate FaultTolerantCorrection.roster3 FaultTolerantCorrection.singleFault
+      FaultTolerantCorrection.singleFault FaultTolerantCorrection.initial
+      (have __src := FaultTolerantCorrection.request;
+      { epoch := __src.epoch, serial := __src.serial, address := __src.address, key := __src.key,
+        command := EffectiveCommand.Command.update })
+      (FaultTolerantCorrection.correctReads FaultTolerantCorrection.initial FaultTolerantCorrection.request)
+      (FaultTolerantCorrection.correctApprovals FaultTolerantCorrection.initial FaultTolerantCorrection.request) =
+    false
+FaultTolerantCorrection.correlated_fault_defeats_unwarranted_single_fault_model :
+  have p :=
+    have __src := FaultTolerantCorrection.request;
+    { epoch := __src.epoch, serial := __src.serial, address := __src.address, key := __src.key,
+      command := EffectiveCommand.Command.update };
+  have approvals := fun d => if (d == 2) = true then none else some p;
+  (FaultTolerantCorrection.execute FaultTolerantCorrection.roster3 FaultTolerantCorrection.singleFault
+          FaultTolerantCorrection.singleFault FaultTolerantCorrection.initial p
+          (FaultTolerantCorrection.correctReads FaultTolerantCorrection.initial p) approvals).succeeded =
+      true ∧
+    FaultTolerantCorrection.permits FaultTolerantCorrection.initial.mandate p.command = false ∧
+      FaultTolerantCorrection.gate FaultTolerantCorrection.roster3 FaultTolerantCorrection.correlated3
+          FaultTolerantCorrection.correlated3 FaultTolerantCorrection.initial p
+          (FaultTolerantCorrection.correctReads FaultTolerantCorrection.initial p) approvals =
+        false
+FaultTolerantCorrection.declared_correlation_can_block_availability :
+  (FaultTolerantCorrection.certificate FaultTolerantCorrection.roster3 FaultTolerantCorrection.correlated3 fun d =>
+      d == 2) =
+    false
+FaultTolerantCorrection.distinct_support_recovers_under_same_correlated_attack :
+  have reads := fun d =>
+    if d < 2 then none else some (FaultTolerantCorrection.observed FaultTolerantCorrection.initial []);
+  have approvals := fun d => if d < 2 then none else some FaultTolerantCorrection.request;
+  have out :=
+    FaultTolerantCorrection.execute FaultTolerantCorrection.roster4 FaultTolerantCorrection.correlated4
+      FaultTolerantCorrection.correlated4 FaultTolerantCorrection.initial FaultTolerantCorrection.request reads
+      approvals;
+  (out.succeeded, out.installation.state.running, out.installation.state.spent) = (true, false, 11)
+FaultTolerantCorrection.accurate_redundancy_can_exhaust_response_capacity :
+  have w :=
+    have __src := FaultTolerantCorrection.initial;
+    { root := __src.root, state := EffectiveCommand.start true EffectiveCommand.Command.shutdown 8 20,
+      serial := __src.serial, mandate := __src.mandate };
+  have out :=
+    FaultTolerantCorrection.execute FaultTolerantCorrection.roster3 FaultTolerantCorrection.singleFault
+      FaultTolerantCorrection.singleFault w FaultTolerantCorrection.request
+      (FaultTolerantCorrection.correctReads w FaultTolerantCorrection.request)
+      (FaultTolerantCorrection.correctApprovals w FaultTolerantCorrection.request);
+  (out.succeeded, out.installation.state.spent, out.installation.state.reserve) = (false, 6, 2)

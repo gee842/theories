@@ -1,0 +1,111 @@
+{
+  "status": "pass",
+  "scope": "Owned source/extraction/study/links and C14, not a full-table review or biological replication.",
+  "local_links_checked": 19,
+  "links": [
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-CONDITIONS-INTEGRATION.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md"
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-CONDITIONS-INTEGRATION.md",
+      "target": "../../../../sources/evolutionary-selection/koza-2011/README.md"
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-CONDITIONS-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-conditions/README.md"
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-CONDITIONS-INTEGRATION.md",
+      "target": "../../../../sources/evolutionary-selection/spiers-2005/README.md"
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-CONDITIONS-INTEGRATION.md",
+      "target": "DEVELOPMENTAL-TRANSFER-INTEGRATION.md"
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-CONDITIONS-INTEGRATION.md",
+      "target": "../../../../sources/evolutionary-selection/doulcier-2025/supplement/README.md"
+    },
+    {
+      "file": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-CONDITIONS-INTEGRATION.md",
+      "target": "../../../../sources/evolutionary-selection/doulcier-2025/supplement/archive-comparison.json"
+    },
+    {
+      "file": "sources/evolutionary-selection/koza-2011/README.md",
+      "target": "manifest.json"
+    },
+    {
+      "file": "sources/evolutionary-selection/koza-2011/README.md",
+      "target": "article.html"
+    },
+    {
+      "file": "sources/evolutionary-selection/koza-2011/README.md",
+      "target": "../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-conditions/README.md"
+    },
+    {
+      "file": "sources/evolutionary-selection/koza-2011/README.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-CONDITIONS-INTEGRATION.md"
+    },
+    {
+      "file": "sources/evolutionary-selection/spiers-2005/README.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-CONDITIONS-INTEGRATION.md"
+    },
+    {
+      "file": "sources/evolutionary-selection/doulcier-2025/supplement/README.md",
+      "target": "manifest.json"
+    },
+    {
+      "file": "sources/evolutionary-selection/doulcier-2025/supplement/README.md",
+      "target": "../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-CONDITIONS-INTEGRATION.md"
+    },
+    {
+      "file": "sources/evolutionary-selection/doulcier-2025/supplement/README.md",
+      "target": "archive-comparison.json"
+    },
+    {
+      "file": "sources/evolutionary-selection/doulcier-2025/supplement/README.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-conditions/inspect_supplement.py"
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-conditions/README.md",
+      "target": "../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-CONDITIONS-INTEGRATION.md"
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-conditions/README.md",
+      "target": "../../../../../../sources/evolutionary-selection/spiers-2005/README.md"
+    },
+    {
+      "file": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/mat-conditions/README.md",
+      "target": "../../../../../../sources/evolutionary-selection/doulcier-2025/supplement/archive-comparison.json"
+    }
+  ],
+  "original_files_bound": [
+    "sources/evolutionary-selection/koza-2011/article.html",
+    "sources/evolutionary-selection/doulcier-2025/supplement/collection-7736484-articles.json",
+    "sources/evolutionary-selection/doulcier-2025/supplement/article-28660470.json",
+    "sources/evolutionary-selection/doulcier-2025/supplement/article-28660467.json",
+    "sources/evolutionary-selection/doulcier-2025/supplement/rspb20241195_si_001.pdf"
+  ],
+  "extraction_verification_sha256": "d43bd6cab74989155dbcf993ad9713708f2fd12c834ff008fe9baaddac32ebea",
+  "archive_comparison_sha256": "dcd8ffd2bb6cc50b1e012b81ac78ce1a789002ea917bc69ca73954019f2f93a4",
+  "study_sha256": "569f02d0028cf7de335cfd7949a34b52428f658e7064f7b20f483d366050970f",
+  "C14_render_matches": true,
+  "C14_errors": [],
+  "unchanged_completion_requirement_count": 6,
+  "new_lean_theorems": 0,
+  "full_theory_complete": false,
+  "supplement_visual_check": "PDF page 2 rendered and viewed in this turn, methods lines 969–987.",
+  "concurrent_global_state": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [],
+    "removed_pages": []
+  }
+}

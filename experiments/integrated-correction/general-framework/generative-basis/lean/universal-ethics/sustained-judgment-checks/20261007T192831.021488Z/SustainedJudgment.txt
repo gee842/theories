@@ -1,0 +1,8 @@
+SustainedJudgment.lean:264:2: error: failed to synthesize
+  Decidable (Scheduled 2 2 2 [2] ∧ ¬Scheduled 1 2 2 [2] ∧ Scheduled 1 2 2 [1, 1])
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+SustainedJudgment.lean:266:78: error: failed to synthesize
+  Decidable (Scheduled 0 0 0 [0, 0])
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.

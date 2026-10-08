@@ -1,0 +1,302 @@
+{
+  "entry_id": "M24",
+  "entry_before": {
+    "id": "M24",
+    "title_zh": "元吸引子与选择条件的重建",
+    "title_en": "Meta-attractors and reproduction of selection conditions",
+    "claim_zh": "活动后果参与重建选择该组织的条件，使其经具体承载者变化仍能接续；区分机制条件、实际边界、动力学接近及可行纠正。 新会话进一步检验精确局部目标执行怎样经制度后果进入共同损失；局部安全与共同执行保护分列。",
+    "claim_en": "Consequences help reproduce conditions selecting an organization across carrier changes; distinguish mechanism conditions, formed boundaries, dynamical approach and feasible correction. A new session tests how exact local objective fidelity can lead through institutional consequences to collective loss; local safety and joint-execution protection remain distinct.",
+    "scope_zh": "原47项 Lean 定理／65项审计保留；新40项定理／69项审计（另54项继承审计）接通不同产出承载者、材料、实际探测、修复及后续核心轨迹。1,681项市场及1,053项回返预算计算保留。正确识别不保证还能回应，等待也可能改善可恢复探测。理论探索已到被动历史不足以辨认回返来源的边界；经验对应仍须在具体应用中检验，无普遍预警分数或独立验收主张。 集体破坏第一构造另有32项新定理／41项审计，检查两位置阶段最优化、正且可增长吞吐下的有限到达、精确盆地及严格保护；平局失败与无法自动恢复保留。接续新增71项定理／100项审计，接通有限人口替换、内部筹资、恢复／耗尽精确分界及材料约束下的核心接续；恢复前归零、分流与缺件失败保留。到墙范围是实际征收、证据、权限与承诺的形成和维护，未宣称普遍收敛或经验对应。",
+    "scope_en": "The first 47 Lean theorems / 65 audits are preserved; 40 new theorems / 69 new audits, with 54 inherited audits separate, connect varied carrier yields, material, executed probing, repair and subsequent core traces. The 1,681 market and 1,053 recurrence-budget calculations retain their scope. Correct identification need not preserve response capacity; waiting can enable recoverable probing. The theoretical exploration reaches a passive-identification limit. Field correspondence remains application-specific; no universal warning score or independent acceptance is claimed. A separate first collective-destruction construction adds 32 theorems / 41 audits for two-position stage optimization, finite arrival under positive and possibly growing throughput, an exact basin and strict protection, retaining tie failure and absent automatic recovery. The continuation adds 71 theorems / 100 audits for bounded population replacement, internally financed correction, exact recovery/destruction boundaries and material-guarded core histories. Interim loss, diversion and missing-parts failures remain. The wall is formation and preservation of actual collection, evidence, authority and commitments; universal convergence and empirical correspondence are not established.",
+    "links": [
+      {
+        "label_zh": "当前定义",
+        "label_en": "Current definition",
+        "path": "theories/meta-attractor/GENERATIVE-REGIMES.md"
+      },
+      {
+        "label_zh": "整合与完成范围",
+        "label_en": "Integration and scope",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-INTEGRATION.md"
+      },
+      {
+        "label_zh": "主来源与对手",
+        "label_en": "Primary comparisons",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-EVIDENCE.md"
+      },
+      {
+        "label_zh": "实质反审",
+        "label_en": "Substantive counterreview",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REVIEW.md"
+      },
+      {
+        "label_zh": "Lean实查",
+        "label_en": "Lean verification",
+        "path": "experiments/market-generativity/meta-attractor/verification.json"
+      },
+      {
+        "label_zh": "原话与目标",
+        "label_en": "Request and objective",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md"
+      },
+      {
+        "label_zh": "局部对齐与集体破坏",
+        "label_en": "Local alignment and collective destruction",
+        "path": "theories/meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md"
+      },
+      {
+        "label_zh": "集体破坏整合与作者反审",
+        "label_en": "Collective-destruction integration and author counterreview",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COLLECTIVE-DESTRUCTION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "集体破坏形式检查",
+        "label_en": "Collective-destruction formal checks",
+        "path": "experiments/market-generativity/meta-attractor/collective-verification.json"
+      },
+      {
+        "label_zh": "本会话原话",
+        "label_en": "Session directive",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-collective-destructive-attractors.md"
+      },
+      {
+        "label_zh": "承载者、探测与修复",
+        "label_en": "Carriers, diagnosis and repair",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-CARRIER-DIAGNOSIS.md"
+      },
+      {
+        "label_zh": "接续Lean实查",
+        "label_en": "Continuation Lean verification",
+        "path": "experiments/market-generativity/meta-attractor/carrier-verification.json"
+      },
+      {
+        "label_zh": "人口机制与依赖",
+        "label_en": "Population mechanism and dependencies",
+        "path": "experiments/market-generativity/meta-attractor/POPULATION-README.md"
+      },
+      {
+        "label_zh": "人口接续Lean实查",
+        "label_en": "Population continuation Lean checks",
+        "path": "experiments/market-generativity/meta-attractor/population-verification.json"
+      },
+      {
+        "label_zh": "分配与分界计算",
+        "label_en": "Allocation and boundary computations",
+        "path": "experiments/market-generativity/meta-attractor/population-experiment.json"
+      }
+    ]
+  },
+  "entry": {
+    "id": "M24",
+    "title_zh": "元吸引子与选择条件的重建",
+    "title_en": "Meta-attractors and reproduction of selection conditions",
+    "claim_zh": "活动后果参与重建选择该组织的条件，使其经具体承载者变化仍能接续；区分机制条件、实际边界、动力学接近及可行纠正。 新会话进一步检验精确局部目标执行怎样经制度后果进入共同损失；局部安全与共同执行保护分列。",
+    "claim_en": "Consequences help reproduce conditions selecting an organization across carrier changes; distinguish mechanism conditions, formed boundaries, dynamical approach and feasible correction. A new session tests how exact local objective fidelity can lead through institutional consequences to collective loss; local safety and joint-execution protection remain distinct.",
+    "scope_zh": "原47项定理／65项审计及承载者识别40项／69项保留。新58项 Lean 定理／107项审计由回返量推导维护，接通实际建立、相位、耦合、规则修订及操作条件可再生的准入；短期材料最优化与授权薄弱时的失败保留。1,024项网络轨迹探索不冒充证明。新的理论目标继续：判准本身的形成与修订尚待连接；非独立验收，无新增经验门槛。 集体破坏第一构造另有32项新定理／41项审计，检查两位置阶段最优化、正且可增长吞吐下的有限到达、精确盆地及严格保护；平局失败与无法自动恢复保留。接续新增71项定理／100项审计，接通有限人口替换、内部筹资、恢复／耗尽精确分界及材料约束下的核心接续；恢复前归零、分流与缺件失败保留。到墙范围是实际征收、证据、权限与承诺的形成和维护，未宣称普遍收敛或经验对应。",
+    "scope_en": "The first 47-theorem/65-audit and carrier-diagnosis 40/69 results retain their scopes. A new 58-theorem/107-audit construction derives maintenance from return flows and joins establishment, phase, coupling, rule revision and admission with reproduced operating support. Myopic material-retention and weakened-authorization failures remain. The 1,024 network explorations are not proofs. The renewed theoretical goal stays active at formation and revision of the criterion itself; no independent acceptance or added empirical gate is claimed. A separate first collective-destruction construction adds 32 theorems / 41 audits for two-position stage optimization, finite arrival under positive and possibly growing throughput, an exact basin and strict protection, retaining tie failure and absent automatic recovery. The continuation adds 71 theorems / 100 audits for bounded population replacement, internally financed correction, exact recovery/destruction boundaries and material-guarded core histories. Interim loss, diversion and missing-parts failures remain. The wall is formation and preservation of actual collection, evidence, authority and commitments; universal convergence and empirical correspondence are not established.",
+    "links": [
+      {
+        "label_zh": "当前定义",
+        "label_en": "Current definition",
+        "path": "theories/meta-attractor/GENERATIVE-REGIMES.md"
+      },
+      {
+        "label_zh": "整合与完成范围",
+        "label_en": "Integration and scope",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-INTEGRATION.md"
+      },
+      {
+        "label_zh": "主来源与对手",
+        "label_en": "Primary comparisons",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-EVIDENCE.md"
+      },
+      {
+        "label_zh": "实质反审",
+        "label_en": "Substantive counterreview",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REVIEW.md"
+      },
+      {
+        "label_zh": "Lean实查",
+        "label_en": "Lean verification",
+        "path": "experiments/market-generativity/meta-attractor/verification.json"
+      },
+      {
+        "label_zh": "原话与目标",
+        "label_en": "Request and objective",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md"
+      },
+      {
+        "label_zh": "局部对齐与集体破坏",
+        "label_en": "Local alignment and collective destruction",
+        "path": "theories/meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md"
+      },
+      {
+        "label_zh": "集体破坏整合与作者反审",
+        "label_en": "Collective-destruction integration and author counterreview",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COLLECTIVE-DESTRUCTION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "集体破坏形式检查",
+        "label_en": "Collective-destruction formal checks",
+        "path": "experiments/market-generativity/meta-attractor/collective-verification.json"
+      },
+      {
+        "label_zh": "本会话原话",
+        "label_en": "Session directive",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-collective-destructive-attractors.md"
+      },
+      {
+        "label_zh": "承载者、探测与修复",
+        "label_en": "Carriers, diagnosis and repair",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-CARRIER-DIAGNOSIS.md"
+      },
+      {
+        "label_zh": "接续Lean实查",
+        "label_en": "Continuation Lean verification",
+        "path": "experiments/market-generativity/meta-attractor/carrier-verification.json"
+      },
+      {
+        "label_zh": "人口机制与依赖",
+        "label_en": "Population mechanism and dependencies",
+        "path": "experiments/market-generativity/meta-attractor/POPULATION-README.md"
+      },
+      {
+        "label_zh": "人口接续Lean实查",
+        "label_en": "Population continuation Lean checks",
+        "path": "experiments/market-generativity/meta-attractor/population-verification.json"
+      },
+      {
+        "label_zh": "分配与分界计算",
+        "label_en": "Allocation and boundary computations",
+        "path": "experiments/market-generativity/meta-attractor/population-experiment.json"
+      },
+      {
+        "label_zh": "选择与纠正的再生",
+        "label_en": "Reproduction of selection and correction",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md"
+      },
+      {
+        "label_zh": "再生网络实查",
+        "label_en": "Reproduction-network verification",
+        "path": "experiments/market-generativity/meta-attractor/reproduction-verification.json"
+      }
+    ]
+  },
+  "owned_prefixes": {
+    "scope_zh": "原47项定理／65项审计及承载者识别40项／69项保留。新58项 Lean 定理／107项审计由回返量推导维护，接通实际建立、相位、耦合、规则修订及操作条件可再生的准入；短期材料最优化与授权薄弱时的失败保留。1,024项网络轨迹探索不冒充证明。新的理论目标继续：判准本身的形成与修订尚待连接；非独立验收，无新增经验门槛。",
+    "scope_en": "The first 47-theorem/65-audit and carrier-diagnosis 40/69 results retain their scopes. A new 58-theorem/107-audit construction derives maintenance from return flows and joins establishment, phase, coupling, rule revision and admission with reproduced operating support. Myopic material-retention and weakened-authorization failures remain. The 1,024 network explorations are not proofs. The renewed theoretical goal stays active at formation and revision of the criterion itself; no independent acceptance or added empirical gate is claimed."
+  },
+  "preserved_concurrent_suffixes": {
+    "scope_zh": " 集体破坏第一构造另有32项新定理／41项审计，检查两位置阶段最优化、正且可增长吞吐下的有限到达、精确盆地及严格保护；平局失败与无法自动恢复保留。接续新增71项定理／100项审计，接通有限人口替换、内部筹资、恢复／耗尽精确分界及材料约束下的核心接续；恢复前归零、分流与缺件失败保留。到墙范围是实际征收、证据、权限与承诺的形成和维护，未宣称普遍收敛或经验对应。",
+    "scope_en": " A separate first collective-destruction construction adds 32 theorems / 41 audits for two-position stage optimization, finite arrival under positive and possibly growing throughput, an exact basin and strict protection, retaining tie failure and absent automatic recovery. The continuation adds 71 theorems / 100 audits for bounded population replacement, internally financed correction, exact recovery/destruction boundaries and material-guarded core histories. Interim loss, diversion and missing-parts failures remain. The wall is formation and preservation of actual collection, evidence, authority and commitments; universal convergence and empirical correspondence are not established."
+  },
+  "owned_links": [
+    {
+      "label_zh": "当前定义",
+      "label_en": "Current definition",
+      "path": "theories/meta-attractor/GENERATIVE-REGIMES.md"
+    },
+    {
+      "label_zh": "整合与完成范围",
+      "label_en": "Integration and scope",
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-INTEGRATION.md"
+    },
+    {
+      "label_zh": "主来源与对手",
+      "label_en": "Primary comparisons",
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-EVIDENCE.md"
+    },
+    {
+      "label_zh": "实质反审",
+      "label_en": "Substantive counterreview",
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REVIEW.md"
+    },
+    {
+      "label_zh": "Lean实查",
+      "label_en": "Lean verification",
+      "path": "experiments/market-generativity/meta-attractor/verification.json"
+    },
+    {
+      "label_zh": "原话与目标",
+      "label_en": "Request and objective",
+      "path": "sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md"
+    },
+    {
+      "label_zh": "承载者、探测与修复",
+      "label_en": "Carriers, diagnosis and repair",
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-CARRIER-DIAGNOSIS.md"
+    },
+    {
+      "label_zh": "接续Lean实查",
+      "label_en": "Continuation Lean verification",
+      "path": "experiments/market-generativity/meta-attractor/carrier-verification.json"
+    },
+    {
+      "label_zh": "选择与纠正的再生",
+      "label_en": "Reproduction of selection and correction",
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md"
+    },
+    {
+      "label_zh": "再生网络实查",
+      "label_en": "Reproduction-network verification",
+      "path": "experiments/market-generativity/meta-attractor/reproduction-verification.json"
+    }
+  ],
+  "reviewed_owned_sources": [
+    "theories/meta-attractor/GENERATIVE-REGIMES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-EVIDENCE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REVIEW.md",
+    "experiments/market-generativity/meta-attractor/verification.json",
+    "sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-CARRIER-DIAGNOSIS.md",
+    "experiments/market-generativity/meta-attractor/carrier-verification.json",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md",
+    "experiments/market-generativity/meta-attractor/reproduction-verification.json"
+  ],
+  "owned_discovery": [
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md"
+  ],
+  "other_entries_preserved": 92,
+  "data_before_sha256": "84b13d8340a77a61738317777ac0371d2696e331d5d0b31ed1a523f04649f445",
+  "data_after_sha256": "c7f5bf66de724bdd23ae3e399bdcb03430bc869e9c4fd0a5b451bcaaae1f2a03",
+  "table_before_sha256": "f598adbd1a44164c2b7e1d38437d683be69fdefe48857a11ad59d539a48da3cb",
+  "table_after_sha256": "6998f3195570aab86af526ef90d8bc51c20bb198e9c1e99e602f4d98adc086f3",
+  "rendered_row": "| M24 | 元吸引子与选择条件的重建<br>Meta-attractors and reproduction of selection conditions | 活动后果参与重建选择该组织的条件，使其经具体承载者变化仍能接续；区分机制条件、实际边界、动力学接近及可行纠正。 新会话进一步检验精确局部目标执行怎样经制度后果进入共同损失；局部安全与共同执行保护分列。 | Consequences help reproduce conditions selecting an organization across carrier changes; distinguish mechanism conditions, formed boundaries, dynamical approach and feasible correction. A new session tests how exact local objective fidelity can lead through institutional consequences to collective loss; local safety and joint-execution protection remain distinct. | 原47项定理／65项审计及承载者识别40项／69项保留。新58项 Lean 定理／107项审计由回返量推导维护，接通实际建立、相位、耦合、规则修订及操作条件可再生的准入；短期材料最优化与授权薄弱时的失败保留。1,024项网络轨迹探索不冒充证明。新的理论目标继续：判准本身的形成与修订尚待连接；非独立验收，无新增经验门槛。 集体破坏第一构造另有32项新定理／41项审计，检查两位置阶段最优化、正且可增长吞吐下的有限到达、精确盆地及严格保护；平局失败与无法自动恢复保留。接续新增71项定理／100项审计，接通有限人口替换、内部筹资、恢复／耗尽精确分界及材料约束下的核心接续；恢复前归零、分流与缺件失败保留。到墙范围是实际征收、证据、权限与承诺的形成和维护，未宣称普遍收敛或经验对应。<br>The first 47-theorem/65-audit and carrier-diagnosis 40/69 results retain their scopes. A new 58-theorem/107-audit construction derives maintenance from return flows and joins establishment, phase, coupling, rule revision and admission with reproduced operating support. Myopic material-retention and weakened-authorization failures remain. The 1,024 network explorations are not proofs. The renewed theoretical goal stays active at formation and revision of the criterion itself; no independent acceptance or added empirical gate is claimed. A separate first collective-destruction construction adds 32 theorems / 41 audits for two-position stage optimization, finite arrival under positive and possibly growing throughput, an exact basin and strict protection, retaining tie failure and absent automatic recovery. The continuation adds 71 theorems / 100 audits for bounded population replacement, internally financed correction, exact recovery/destruction boundaries and material-guarded core histories. Interim loss, diversion and missing-parts failures remain. The wall is formation and preservation of actual collection, evidence, authority and commitments; universal convergence and empirical correspondence are not established. | [当前定义 / Current definition](../../meta-attractor/GENERATIVE-REGIMES.md)<br>[整合与完成范围 / Integration and scope](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-INTEGRATION.md)<br>[主来源与对手 / Primary comparisons](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-EVIDENCE.md)<br>[实质反审 / Substantive counterreview](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REVIEW.md)<br>[Lean实查 / Lean verification](../../../experiments/market-generativity/meta-attractor/verification.json)<br>[原话与目标 / Request and objective](../../../sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md)<br>[局部对齐与集体破坏 / Local alignment and collective destruction](../../meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md)<br>[集体破坏整合与作者反审 / Collective-destruction integration and author counterreview](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COLLECTIVE-DESTRUCTION-INTEGRATION.md)<br>[集体破坏形式检查 / Collective-destruction formal checks](../../../experiments/market-generativity/meta-attractor/collective-verification.json)<br>[本会话原话 / Session directive](../../../sources/15-codex-theory-conversations/2026-10-08-collective-destructive-attractors.md)<br>[承载者、探测与修复 / Carriers, diagnosis and repair](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-CARRIER-DIAGNOSIS.md)<br>[接续Lean实查 / Continuation Lean verification](../../../experiments/market-generativity/meta-attractor/carrier-verification.json)<br>[人口机制与依赖 / Population mechanism and dependencies](../../../experiments/market-generativity/meta-attractor/POPULATION-README.md)<br>[人口接续Lean实查 / Population continuation Lean checks](../../../experiments/market-generativity/meta-attractor/population-verification.json)<br>[分配与分界计算 / Allocation and boundary computations](../../../experiments/market-generativity/meta-attractor/population-experiment.json)<br>[选择与纠正的再生 / Reproduction of selection and correction](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md)<br>[再生网络实查 / Reproduction-network verification](../../../experiments/market-generativity/meta-attractor/reproduction-verification.json) |",
+  "shared_fragments": [
+    {
+      "path": "RESEARCH.md",
+      "insertion": "**选择与纠正的相互重建 / Reproduction of selection and correction，2026-10-08。** [新理论接续](_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md)新增58项 Lean 定理／107项审计：由回返量推导维护，连接有材料根据的建立、相位、独立／桥接／共同依存、实际规则修订及操作条件可再生的准入。保留短期材料最大化切断回返、授权薄弱时失败。/ The renewed goal remains active. Criterion formation and revision are the next connection; the parallel 71-theorem population continuation is credited, not reopened. Numerical cycle exploration remains separate from proof."
+    },
+    {
+      "path": "theories/meta-attractor/README.md",
+      "insertion": "**选择与纠正的再生条件 / Reproducing selection and correction，2026-10-08。** [58项新定理／107项审计](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md)连接相互维护、实际建立、相位与耦合、规则修订及授权角色的再生。准入可运行不等于其判准正确；更广理论研究继续。/ The earlier focused exploration remains complete at its scope; the renewed programme now studies how the criterion itself forms and changes. The parallel population replacement/funding result is reused."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "insertion": "**元吸引子的规则再生 / Reproduction of meta-attractor rules，2026-10-08。** [理论与反审](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md)以58项新 Lean 定理／107项审计推导角色相互维护，并实现建立、耦合、规则修订及有条件的准入再生。/ This advances the operative conditions of selection and correction within one process. Formation and revision of the admission criterion remain open; no new ethical axiom or empirical completion gate is added."
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "insertion": "**Meta-attractor rule reproduction / 元吸引子规则再生，2026-10-08。** [New argument and author counterreview](META-ATTRACTOR-REPRODUCTION.md): 58 checked theorems / 107 audits derive maintenance from return flows and connect establishment, phase, coupling, costed revisions and materially supported admission. The broader renewed goal remains active at criterion formation and revision; the parallel population connection is credited."
+    }
+  ],
+  "pending_shared_reviews": [
+    "RESEARCH.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+    "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+    "theories/shengsheng-buxi-generative-existence/README.md",
+    "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+    "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md"
+  ]
+}

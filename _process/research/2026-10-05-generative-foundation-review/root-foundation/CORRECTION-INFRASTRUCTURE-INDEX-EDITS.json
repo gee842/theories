@@ -1,0 +1,88 @@
+{
+  "scope": "Owned insertions and new paired entries only; unrelated source reviews remain pending.",
+  "navigation": {
+    "RESEARCH.md": {
+      "before_sha256": "1721996c8692b4a56a838a9c8a5ca0d6d6bb2ad2b26284b7cda5fc9e354a7d4a",
+      "after_sha256": "0757bb3a6ffdc891a974162861e4bbaa9eb9b347e2bb290e5e98a3ebc9fb5070",
+      "owned_insertion": "**可纠正性基础设施 / Correction infrastructure，2026-10-08。** [分离、代价与组合](_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-INFRASTRUCTURE-INTEGRATION.md)：34项 Lean 定理／56项声明审计，1,296个模型／12,960项执行。接受更新不独自保持实际入口；过滤须重算受约束后续价值。普通受约束规划全部匹配，前沿原创与实际 AI 优势未证。 / Checked acceptance/access separation and finite-horizon composition; next test observation-limited authorized intervention, preserving completed goal revision.\n\n"
+    },
+    "theories/shengsheng-buxi-generative-existence/README.md": {
+      "before_sha256": "61edc89ad461e43d46d0fc7becca9a0d51e86524755dd6d0d6e3d30b1c77a6bb",
+      "after_sha256": "8f7d364ca1e4cbd51af2ec7bb287309444b9a4c95a2fdf472427a3159f9ca54e",
+      "owned_insertion": "**可纠正性组合研究 / Corrigibility composition，2026-10-08。** [实际入口、代价和重算](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-INFRASTRUCTURE-INTEGRATION.md)有34项 Lean 定理／56项审计及12,960项模型比较。普通受约束规划匹配；尚未宣告前沿原创或部署完成。 / Acceptance incentives need an actual correction-preserving domain; constrained continuation values matter. The continuing target is an operational, observation-limited correction contract.\n\n"
+    },
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": {
+      "before_sha256": "87d601641fd0349faea3a4f0a6fbf8a5d5c92cb765f6be0728386e707e7f7903",
+      "after_sha256": "bca2b303014af67e59c073c4f15eefdc251a2fbc1b94aca0695589f736c900d2",
+      "owned_insertion": "**可纠正性接续 / Corrigibility continuation，2026-10-08。** [新组合实查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-INFRASTRUCTURE-INTEGRATION.md)检验行动怎样改变后续纠正条件：接受、实际入口和域内最优分别证明。34项定理／56项审计，12,960项模型比较；常规规划匹配。 / The open connection is intervention-sensitive access under limited evidence and authority, not the already completed goal-revision history. Frontier novelty and learned realization remain unestablished.\n\n"
+    }
+  },
+  "added_entries": [
+    {
+      "id": "M23",
+      "title_zh": "可纠正性的实际条件",
+      "title_en": "Practical conditions of corrigibility",
+      "claim_zh": "接受更新不独自保持实际纠正入口；维护有真实代价，过滤后还须重算接续价值。有限期组合保留前缀入口并达到域内最优。",
+      "claim_en": "Acceptance does not alone preserve correction access. Maintenance has a real cost, and filtering requires recomputed continuation values. Finite-horizon composition retains prefix access and attains the constrained optimum.",
+      "scope_zh": "34项 Lean 定理／56项声明审计；1,296个模型／12,960项比较。普通受约束规划匹配；给定入口、权限与模型对应，前沿原创和实际 AI 优势未证。下一检验是受观察限制的命令、送达与完成。",
+      "scope_en": "34 Lean theorems / 56 declaration audits; 1,296 models / 12,960 comparisons. Conventional constrained planning matches. Access, authority and model correspondence are supplied; frontier originality and learned-AI advantage remain unestablished. Next test observation-limited commands, delivery and completion.",
+      "links": [
+        {
+          "label_zh": "当前对齐表述",
+          "label_en": "Current alignment account",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#corrigibility-and-its-changing-practical-conditions"
+        },
+        {
+          "label_zh": "完整研究与反审",
+          "label_en": "Study and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-INFRASTRUCTURE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "事先协议",
+          "label_en": "Pre-execution protocol",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-INFRASTRUCTURE-PROTOCOL.md"
+        }
+      ]
+    },
+    {
+      "id": "F29",
+      "title_zh": "纠正条件与组合实查",
+      "title_en": "Correction conditions and checked composition",
+      "claim_zh": "精确接受分解、维护界、旧价值反例、Bellman 组合、观察一致性及通道交接均经 Lean 检查。",
+      "claim_en": "Lean checks acceptance factorization, maintenance boundaries, stale-value failure, Bellman composition, observation uniformity and channel handoff.",
+      "scope_zh": "34项定理／56项顶层声明；标准逻辑依赖公开，无新增公理或占位。数学范围为给定模型与接口，不证明伦理、真实对应或新算法优越性。",
+      "scope_en": "34 theorems / 56 top-level audits; disclosed standard dependencies, no custom axiom or admitted proof. Supplied models and interfaces do not establish ethics, physical correspondence or algorithmic superiority.",
+      "links": [
+        {
+          "label_zh": "Lean 源码",
+          "label_en": "Lean source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInfrastructure.lean"
+        },
+        {
+          "label_zh": "实查收据",
+          "label_en": "Proof receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-infrastructure-verification.json"
+        },
+        {
+          "label_zh": "模型比较",
+          "label_en": "Model comparison",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-infrastructure-model-checks.json"
+        },
+        {
+          "label_zh": "完整范围",
+          "label_en": "Full scope",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-INFRASTRUCTURE-INTEGRATION.md"
+        }
+      ]
+    }
+  ],
+  "unchanged_existing_entries": 87,
+  "reviewed_owned_sources": [
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-INFRASTRUCTURE-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-INFRASTRUCTURE-PROTOCOL.md",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInfrastructure.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-infrastructure-verification.json",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-infrastructure-model-checks.json"
+  ],
+  "table_scope": "Only M23, F29 and entry count changed via canonical renderer."
+}

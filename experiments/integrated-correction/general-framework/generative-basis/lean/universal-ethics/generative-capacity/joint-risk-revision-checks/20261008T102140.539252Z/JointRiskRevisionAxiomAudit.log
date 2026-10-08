@@ -1,0 +1,32 @@
+'JointRiskRevision.Table' does not depend on any axioms
+'JointRiskRevision.mass' does not depend on any axioms
+'JointRiskRevision.leftRisk' does not depend on any axioms
+'JointRiskRevision.rightRisk' does not depend on any axioms
+'JointRiskRevision.anyLoss' does not depend on any axioms
+'JointRiskRevision.Compatible' does not depend on any axioms
+'JointRiskRevision.joint_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JointRiskRevision.compatible_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JointRiskRevision.WithinJointBound' does not depend on any axioms
+'JointRiskRevision.left_bound_suffices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JointRiskRevision.right_bound_suffices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JointRiskRevision.sound_drift_transfer' does not depend on any axioms
+'JointRiskRevision.Mode' does not depend on any axioms
+'JointRiskRevision.reading' does not depend on any axioms
+'JointRiskRevision.tally' does not depend on any axioms
+'JointRiskRevision.record' does not depend on any axioms
+'JointRiskRevision.dispersed_record' does not depend on any axioms
+'JointRiskRevision.shared_record' does not depend on any axioms
+'JointRiskRevision.revised_record' does not depend on any axioms
+'JointRiskRevision.same_mass' does not depend on any axioms
+'JointRiskRevision.better_marginals_worse_joint' does not depend on any axioms
+'JointRiskRevision.repair_preserves_marginals_and_reduces_joint' does not depend on any axioms
+'JointRiskRevision.joint_improvement_can_increase_any_loss' does not depend on any axioms
+'JointRiskRevision.no_marginal_only_joint_estimator' depends on axioms: [propext, Quot.sound]
+'JointRiskRevision.fresh_joint_reading_distinguishes' does not depend on any axioms
+'JointRiskRevision.positive_joint_risk_can_meet_bound' does not depend on any axioms
+'JointRiskRevision.marginal_information_leaves_exact_two_options' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'JointRiskRevision.diagnosticLoss' does not depend on any axioms
+'JointRiskRevision.diagnostic_choice_changes_with_joint_weight' does not depend on any axioms
+'JointRiskRevision.diagnostic_shared_preferred_iff' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,22 @@
+FeedbackMemory.lean:211:16: error: expected no space before
+FeedbackMemory.lean:211:16: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  AddGroup Prop
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+FeedbackMemory.lean:209:14: error: unsolved goals
+case step
+u v C : ℕ → ℝ
+n : ℕ
+ih : (∀ n_1 ≤ n, |u n_1 - v n_1| ≤ C n_1) → |movement u n - movement v n| ≤ movementRadius C n
+h : ∀ n_1 ≤ n + 1, |u n_1 - v n_1| ≤ C n_1
+prev : |movement u n - movement v n| ≤ movementRadius C n
+⊢ sorry
+
+case succ
+u v C : ℕ → ℝ
+n : ℕ
+ih : (∀ n_1 ≤ n, |u n_1 - v n_1| ≤ C n_1) → |movement u n - movement v n| ≤ movementRadius C n
+h : ∀ n_1 ≤ n + 1, |u n_1 - v n_1| ≤ C n_1
+prev : |movement u n - movement v n| ≤ movementRadius C n
+step : sorry
+⊢ |movement u (n + 1) - movement v (n + 1)| ≤ movementRadius C (n + 1)

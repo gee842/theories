@@ -1,0 +1,59 @@
+'ContactReconstruction.Edge' does not depend on any axioms
+'ContactReconstruction.Seed' does not depend on any axioms
+'ContactReconstruction.internal' does not depend on any axioms
+'ContactReconstruction.transmit' does not depend on any axioms
+'ContactReconstruction.compatible' does not depend on any axioms
+'ContactReconstruction.State' does not depend on any axioms
+'ContactReconstruction.encounter' does not depend on any axioms
+'ContactReconstruction.project' does not depend on any axioms
+'ContactReconstruction.encounter_projection' depends on axioms: [propext]
+'ContactReconstruction.encounter_accounts' depends on axioms: [propext, Quot.sound]
+'ContactReconstruction.replay' does not depend on any axioms
+'ContactReconstruction.replay_accounts' depends on axioms: [propext, Quot.sound]
+'ContactReconstruction.formed_bond_has_transmitted_endpoints' depends on axioms: [propext, Quot.sound]
+'ContactReconstruction.total' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.hits' does not depend on any axioms
+'ContactReconstruction.rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.total_binary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.rate_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.meanDraw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.draw_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.expected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.binaryExpected' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.expectation_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.stopped_binary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.binary_is_tree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.expected_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.reconstructed' depends on axioms: [propext, Quot.sound]
+'ContactReconstruction.reconstruction_from_contacts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.cost_from_contacts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.singleton_cannot_reconstruct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.empty_contacts_stay_unbonded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.zero_rate_never_succeeds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.singleton_no_reconstruction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.two_attempt_heterogeneity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.two_attempt_cost_equal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.one_attempt_mean_suffices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.strict_heterogeneity_loss' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.parentComponents' does not depend on any axioms
+'ContactReconstruction.parentContacts' does not depend on any axioms
+'ContactReconstruction.labels' does not depend on any axioms
+'ContactReconstruction.concentrated' does not depend on any axioms
+'ContactReconstruction.distributed' does not depend on any axioms
+'ContactReconstruction.severed' does not depend on any axioms
+'ContactReconstruction.actual_partitions' does not depend on any axioms
+'ContactReconstruction.actual_rates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.batchOutput' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.batchCost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.same_first_different_second' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.opposed_cycle_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.severed_partition_preserves_components_loses_contacts' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ContactReconstruction.no_aggregate_return_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.Stages' does not depend on any axioms
+'ContactReconstruction.next' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.typed_two_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.balanced_stage_reduction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.cycles' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ContactReconstruction.conditional_cycle_return' depends on axioms: [propext, Classical.choice, Quot.sound]

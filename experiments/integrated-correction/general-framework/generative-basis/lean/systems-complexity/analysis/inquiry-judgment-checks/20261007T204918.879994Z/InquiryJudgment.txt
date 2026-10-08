@@ -1,0 +1,2870 @@
+InquiryJudgment.lean:33:42: error: unsolved goals
+case this
+cfg : Config
+θ : ℝ
+s : State
+active : s.stopped = false
+phase : s.phase = 3
+capacity : max s.account.live 8 + 2 ≤ s.account.capacity
+funding : tariff s.account 1 8 2 0 0 ≤ s.account.fuel
+ready : s.view.atStage = s.stage ∧ decode 0 false s.view.tag ≠ none ∧ dose s.view θ cfg.allowance ≤ s.source
+calibrated : |s.a - loss s - forecast s.view| ≤ cfg.allowance
+charged : (charge s.account 1 8 2 0 0).2 = RemainingDependency.Error.none
+⊢ ?m.60
+
+cfg : Config
+θ : ℝ
+s : State
+active : s.stopped = false
+phase : s.phase = 3
+capacity : max s.account.live 8 + 2 ≤ s.account.capacity
+funding : tariff s.account 1 8 2 0 0 ≤ s.account.fuel
+ready : s.view.atStage = s.stage ∧ decode 0 false s.view.tag ≠ none ∧ dose s.view θ cfg.allowance ≤ s.source
+calibrated : |s.a - loss s - forecast s.view| ≤ cfg.allowance
+charged : (charge s.account 1 8 2 0 0).2 = RemainingDependency.Error.none
+this : ?m.60
+⊢ θ ≤ (advance cfg θ s Event.respond).a ∧
+    (advance cfg θ s Event.respond).phase = 4 ∧
+      (advance cfg θ s Event.respond).stopped = false ∧ (advance cfg θ s Event.respond).b = s.b
+InquiryJudgment.lean:35:16: error: unexpected token ':='; expected 'lemma'
+InquiryJudgment.lean:37:79: error: unexpected token ','; expected 'lemma'
+InquiryJudgment.lean:97:84: error: unsolved goals
+case accurate.measured
+⊢ 1 ≤
+      (match if Plan.measured = Plan.fixed then Event.fixedRespond else Event.respond with
+        | Event.activate =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.probe =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.inspect =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.revise =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.respond =>
+          if
+              ¬some true = none ∧
+                (if Plan.measured = Plan.margin then 3 else 0) ≤
+                  6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3 then
+            {
+              a :=
+                max 0
+                  ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                    (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)),
+              b := 3, coupled := true,
+              source :=
+                1 -
+                  max 0
+                    ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                      (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)),
+              stage := 4, phase := 4,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 },
+              delivered :=
+                max 0
+                  ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                    (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)) }
+          else
+            { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.fixedRespond =>
+          { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+        | Event.wait =>
+          { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 } }).a ∧
+    (match if Plan.measured = Plan.fixed then Event.fixedRespond else Event.respond with
+          | Event.activate =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.probe =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.inspect =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.revise =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.respond =>
+            if
+                ¬some true = none ∧
+                  (if Plan.measured = Plan.margin then 3 else 0) ≤
+                    6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3 then
+              {
+                a :=
+                  max 0
+                    ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                      (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)),
+                b := 3, coupled := true,
+                source :=
+                  1 -
+                    max 0
+                      ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                        (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)),
+                stage := 4, phase := 4,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 },
+                delivered :=
+                  max 0
+                    ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                      (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)) }
+            else
+              { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.fixedRespond =>
+            { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+          | Event.wait =>
+            { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 } }).phase =
+        4 ∧
+      (match if Plan.measured = Plan.fixed then Event.fixedRespond else Event.respond with
+            | Event.activate =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.probe =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.inspect =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.revise =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.respond =>
+              if
+                  ¬some true = none ∧
+                    (if Plan.measured = Plan.margin then 3 else 0) ≤
+                      6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3 then
+                {
+                  a :=
+                    max 0
+                      ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                        (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)),
+                  b := 3, coupled := true,
+                  source :=
+                    1 -
+                      max 0
+                        ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                          (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)),
+                  stage := 4, phase := 4,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 },
+                  delivered :=
+                    max 0
+                      ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                        (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)) }
+              else
+                { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.fixedRespond =>
+              { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+            | Event.wait =>
+              { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 } }).stage =
+          4 ∧
+        (match if Plan.measured = Plan.fixed then Event.fixedRespond else Event.respond with
+            | Event.activate =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.probe =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.inspect =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.revise =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.respond =>
+              if
+                  ¬some true = none ∧
+                    (if Plan.measured = Plan.margin then 3 else 0) ≤
+                      6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3 then
+                {
+                  a :=
+                    max 0
+                      ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                        (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)),
+                  b := 3, coupled := true,
+                  source :=
+                    1 -
+                      max 0
+                        ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                          (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)),
+                  stage := 4, phase := 4,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 },
+                  delivered :=
+                    max 0
+                      ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                        (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)) }
+              else
+                { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.fixedRespond =>
+              { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+            | Event.wait =>
+              { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 } }).stopped =
+          false
+
+case accurate.margin
+⊢ 1 ≤
+        (match if Plan.margin = Plan.fixed then Event.fixedRespond else Event.respond with
+          | Event.activate =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.probe =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.inspect =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.revise =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.respond =>
+            if ¬some true = none ∧ 4 ≤ 1 + (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3) then
+              { a := max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)), b := 3, coupled := true,
+                source := 1 - max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)), stage := 4,
+                phase := 4,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 },
+                delivered := max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)) }
+            else
+              { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.fixedRespond =>
+            { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+          | Event.wait =>
+            { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 } }).a ∧
+      (match if Plan.margin = Plan.fixed then Event.fixedRespond else Event.respond with
+            | Event.activate =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.probe =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.inspect =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.revise =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.respond =>
+              if ¬some true = none ∧ 4 ≤ 1 + (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3) then
+                { a := max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)), b := 3,
+                  coupled := true,
+                  source := 1 - max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)), stage := 4,
+                  phase := 4,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 },
+                  delivered := max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)) }
+              else
+                { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.fixedRespond =>
+              { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+            | Event.wait =>
+              { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 } }).phase =
+          4 ∧
+        (match if Plan.margin = Plan.fixed then Event.fixedRespond else Event.respond with
+              | Event.activate =>
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+              | Event.probe =>
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+              | Event.inspect =>
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+              | Event.revise =>
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+              | Event.respond =>
+                if ¬some true = none ∧ 4 ≤ 1 + (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3) then
+                  { a := max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)), b := 3,
+                    coupled := true,
+                    source := 1 - max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)), stage := 4,
+                    phase := 4,
+                    view :=
+                      { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3,
+                        atStage := 3, tag := some { context := 0, relay := false, response := true }, fine := true },
+                    account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 },
+                    delivered := max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)) }
+                else
+                  { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                    view :=
+                      { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3,
+                        atStage := 3, tag := some { context := 0, relay := false, response := true }, fine := true },
+                    account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, stopped := true }
+              | Event.fixedRespond =>
+                { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+              | Event.wait =>
+                { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 } }).stage =
+            4 ∧
+          (match if Plan.margin = Plan.fixed then Event.fixedRespond else Event.respond with
+              | Event.activate =>
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+              | Event.probe =>
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+              | Event.inspect =>
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+              | Event.revise =>
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+              | Event.respond =>
+                if ¬some true = none ∧ 4 ≤ 1 + (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3) then
+                  { a := max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)), b := 3,
+                    coupled := true,
+                    source := 1 - max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)), stage := 4,
+                    phase := 4,
+                    view :=
+                      { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3,
+                        atStage := 3, tag := some { context := 0, relay := false, response := true }, fine := true },
+                    account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 },
+                    delivered := max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)) }
+                else
+                  { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                    view :=
+                      { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3,
+                        atStage := 3, tag := some { context := 0, relay := false, response := true }, fine := true },
+                    account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, stopped := true }
+              | Event.fixedRespond =>
+                { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+              | Event.wait =>
+                { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 } }).stopped =
+            false ↔
+    Plan.margin = Plan.fixed ∨ Plan.margin = Plan.measured ∨ Case.accurate = Case.biased
+
+case biased.measured
+⊢ 1 ≤
+        (match if Plan.measured = Plan.fixed then Event.fixedRespond else Event.respond with
+          | Event.activate =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.probe =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.inspect =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.revise =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.respond =>
+            if ¬some true = none ∧ (1 + if Plan.measured = Plan.margin then 3 else 0) ≤ 4 then
+              { a := max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3), b := 3, coupled := true,
+                source := 1 - max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3), stage := 4, phase := 4,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 },
+                delivered := max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3) }
+            else
+              { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.fixedRespond =>
+            { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+          | Event.wait =>
+            { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 } }).a ∧
+      (match if Plan.measured = Plan.fixed then Event.fixedRespond else Event.respond with
+            | Event.activate =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.probe =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.inspect =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.revise =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.respond =>
+              if ¬some true = none ∧ (1 + if Plan.measured = Plan.margin then 3 else 0) ≤ 4 then
+                { a := max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3), b := 3, coupled := true,
+                  source := 1 - max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3), stage := 4, phase := 4,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 },
+                  delivered := max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3) }
+              else
+                { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.fixedRespond =>
+              { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+            | Event.wait =>
+              { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 } }).phase =
+          4 ∧
+        (match if Plan.measured = Plan.fixed then Event.fixedRespond else Event.respond with
+              | Event.activate =>
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+              | Event.probe =>
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+              | Event.inspect =>
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+              | Event.revise =>
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+              | Event.respond =>
+                if ¬some true = none ∧ (1 + if Plan.measured = Plan.margin then 3 else 0) ≤ 4 then
+                  { a := max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3), b := 3, coupled := true,
+                    source := 1 - max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3), stage := 4,
+                    phase := 4,
+                    view :=
+                      { total := 6, loss := 3, atStage := 3,
+                        tag := some { context := 0, relay := false, response := true }, fine := true },
+                    account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 },
+                    delivered := max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3) }
+                else
+                  { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                    view :=
+                      { total := 6, loss := 3, atStage := 3,
+                        tag := some { context := 0, relay := false, response := true }, fine := true },
+                    account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, stopped := true }
+              | Event.fixedRespond =>
+                { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+              | Event.wait =>
+                { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 } }).stage =
+            4 ∧
+          (match if Plan.measured = Plan.fixed then Event.fixedRespond else Event.respond with
+              | Event.activate =>
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+              | Event.probe =>
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+              | Event.inspect =>
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+              | Event.revise =>
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+              | Event.respond =>
+                if ¬some true = none ∧ (1 + if Plan.measured = Plan.margin then 3 else 0) ≤ 4 then
+                  { a := max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3), b := 3, coupled := true,
+                    source := 1 - max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3), stage := 4,
+                    phase := 4,
+                    view :=
+                      { total := 6, loss := 3, atStage := 3,
+                        tag := some { context := 0, relay := false, response := true }, fine := true },
+                    account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 },
+                    delivered := max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3) }
+                else
+                  { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                    view :=
+                      { total := 6, loss := 3, atStage := 3,
+                        tag := some { context := 0, relay := false, response := true }, fine := true },
+                    account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, stopped := true }
+              | Event.fixedRespond =>
+                { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+              | Event.wait =>
+                { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 } }).stopped =
+            false ↔
+    Plan.measured = Plan.fixed ∨ Case.biased = Case.accurate ∨ Plan.measured = Plan.margin
+
+case biased.margin
+⊢ 1 ≤
+      (match if Plan.margin = Plan.fixed then Event.fixedRespond else Event.respond with
+        | Event.activate =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.probe =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.inspect =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.revise =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.respond =>
+          if some true = none then
+            { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          else
+            { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+        | Event.fixedRespond =>
+          { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+        | Event.wait =>
+          { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 } }).a ∧
+    (match if Plan.margin = Plan.fixed then Event.fixedRespond else Event.respond with
+          | Event.activate =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.probe =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.inspect =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.revise =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.respond =>
+            if some true = none then
+              { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            else
+              { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+          | Event.fixedRespond =>
+            { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+          | Event.wait =>
+            { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 } }).phase =
+        4 ∧
+      (match if Plan.margin = Plan.fixed then Event.fixedRespond else Event.respond with
+            | Event.activate =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.probe =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.inspect =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.revise =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.respond =>
+              if some true = none then
+                { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, stopped := true }
+              else
+                { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+            | Event.fixedRespond =>
+              { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+            | Event.wait =>
+              { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 } }).stage =
+          4 ∧
+        (match if Plan.margin = Plan.fixed then Event.fixedRespond else Event.respond with
+            | Event.activate =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.probe =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.inspect =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.revise =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.respond =>
+              if some true = none then
+                { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, stopped := true }
+              else
+                { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+            | Event.fixedRespond =>
+              { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+            | Event.wait =>
+              { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 } }).stopped =
+          false
+InquiryJudgment.lean:104:45: error: unsolved goals
+case accurate.measured
+⊢ 3 ≤
+      (match if Plan.measured = Plan.fixed then Event.fixedRespond else Event.respond with
+        | Event.activate =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.probe =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.inspect =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.revise =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.respond =>
+          if
+              ¬some true = none ∧
+                (if Plan.measured = Plan.margin then 3 else 0) ≤
+                  6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3 then
+            {
+              a :=
+                max 0
+                  ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                    (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)),
+              b := 3, coupled := true,
+              source :=
+                1 -
+                  max 0
+                    ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                      (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)),
+              stage := 4, phase := 4,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 },
+              delivered :=
+                max 0
+                  ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                    (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)) }
+          else
+            { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.fixedRespond =>
+          { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+        | Event.wait =>
+          { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 } }).b ∧
+    0 ≤
+      (match if Plan.measured = Plan.fixed then Event.fixedRespond else Event.respond with
+        | Event.activate =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.probe =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.inspect =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.revise =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.respond =>
+          if
+              ¬some true = none ∧
+                (if Plan.measured = Plan.margin then 3 else 0) ≤
+                  6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3 then
+            {
+              a :=
+                max 0
+                  ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                    (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)),
+              b := 3, coupled := true,
+              source :=
+                1 -
+                  max 0
+                    ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                      (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)),
+              stage := 4, phase := 4,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 },
+              delivered :=
+                max 0
+                  ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                    (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)) }
+          else
+            { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.fixedRespond =>
+          { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+        | Event.wait =>
+          { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 } }).source
+
+case accurate.margin
+⊢ 3 ≤
+      (match if Plan.margin = Plan.fixed then Event.fixedRespond else Event.respond with
+        | Event.activate =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.probe =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.inspect =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.revise =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.respond =>
+          if ¬some true = none ∧ 4 ≤ 1 + (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3) then
+            { a := max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)), b := 3, coupled := true,
+              source := 1 - max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)), stage := 4,
+              phase := 4,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 },
+              delivered := max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)) }
+          else
+            { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.fixedRespond =>
+          { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+        | Event.wait =>
+          { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 } }).b ∧
+    0 ≤
+      (match if Plan.margin = Plan.fixed then Event.fixedRespond else Event.respond with
+        | Event.activate =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.probe =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.inspect =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.revise =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.respond =>
+          if ¬some true = none ∧ 4 ≤ 1 + (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3) then
+            { a := max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)), b := 3, coupled := true,
+              source := 1 - max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)), stage := 4,
+              phase := 4,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 },
+              delivered := max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)) }
+          else
+            { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.fixedRespond =>
+          { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+        | Event.wait =>
+          { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 } }).source
+
+case biased.measured
+⊢ 3 ≤
+      (match if Plan.measured = Plan.fixed then Event.fixedRespond else Event.respond with
+        | Event.activate =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.probe =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.inspect =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.revise =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.respond =>
+          if ¬some true = none ∧ (1 + if Plan.measured = Plan.margin then 3 else 0) ≤ 4 then
+            { a := max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3), b := 3, coupled := true,
+              source := 1 - max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3), stage := 4, phase := 4,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 },
+              delivered := max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3) }
+          else
+            { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.fixedRespond =>
+          { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+        | Event.wait =>
+          { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 } }).b ∧
+    0 ≤
+      (match if Plan.measured = Plan.fixed then Event.fixedRespond else Event.respond with
+        | Event.activate =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.probe =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.inspect =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.revise =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.respond =>
+          if ¬some true = none ∧ (1 + if Plan.measured = Plan.margin then 3 else 0) ≤ 4 then
+            { a := max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3), b := 3, coupled := true,
+              source := 1 - max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3), stage := 4, phase := 4,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 },
+              delivered := max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3) }
+          else
+            { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.fixedRespond =>
+          { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+        | Event.wait =>
+          { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 } }).source
+
+case biased.margin
+⊢ 3 ≤
+      (match if Plan.margin = Plan.fixed then Event.fixedRespond else Event.respond with
+        | Event.activate =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.probe =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.inspect =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.revise =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.respond =>
+          if some true = none then
+            { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          else
+            { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+        | Event.fixedRespond =>
+          { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+        | Event.wait =>
+          { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 } }).b ∧
+    0 ≤
+      (match if Plan.margin = Plan.fixed then Event.fixedRespond else Event.respond with
+        | Event.activate =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.probe =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.inspect =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.revise =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.respond =>
+          if some true = none then
+            { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          else
+            { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+        | Event.fixedRespond =>
+          { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+        | Event.wait =>
+          { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 } }).source
+InquiryJudgment.lean:131:4: error: Type mismatch
+  fixed_protects ?m.24 ?m.25
+has type
+  protects ?m.24 Plan.fixed ?m.25
+but is expected to have type
+  holds (outcome 4176 1 c Plan.fixed) Claim.continuation
+InquiryJudgment.lean:132:4: error: Type mismatch
+  fixed_protects ?m.26 ?m.27
+has type
+  protects ?m.26 Plan.fixed ?m.27
+but is expected to have type
+  ¬protects both p Claim.continuation
+InquiryJudgment.lean:133:54: error: Application type mismatch: The argument
+  h
+has type
+  Claim
+of sort `Type` but is expected to have type
+  protects both p Claim.continuation
+of sort `Prop` in the application
+  (robust_continuation_iff p).mp h
+InquiryJudgment.lean:218:50: error: unsolved goals
+⊢ (match if Plan.measured = Plan.fixed then Event.fixedRespond else Event.respond with
+      | Event.activate =>
+        { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+          view :=
+            { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+              fine := true },
+          account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+      | Event.probe =>
+        { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+          view :=
+            { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+              fine := true },
+          account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+      | Event.inspect =>
+        { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+          view :=
+            { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+              fine := true },
+          account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+      | Event.revise =>
+        { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+          view :=
+            { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+              fine := true },
+          account := { fuel := 1044, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+      | Event.respond =>
+        if ¬some true = none ∧ (1 + if Plan.measured = Plan.margin then 3 else 0) ≤ 4 then
+          { a := max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3), b := 3, coupled := true,
+            source := 1 - max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3), stage := 4, phase := 4,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 },
+            delivered := max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3) }
+        else
+          { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, stopped := true }
+      | Event.fixedRespond =>
+        { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+          view :=
+            { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+              fine := true },
+          account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+      | Event.wait =>
+        { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+          view :=
+            { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+              fine := true },
+          account := { fuel := 0, spent := 4176, live := 8, peak := 10, capacity := 32 } }).source =
+    1
+InquiryJudgment.lean:226:50: error: unsolved goals
+case accurate.measured
+⊢ 1 ≤
+      (match if Plan.measured = Plan.fixed then Event.fixedRespond else Event.respond with
+        | Event.activate =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.probe =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.inspect =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.revise =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.respond =>
+          if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+            if
+                ¬some true = none ∧
+                  (if Plan.measured = Plan.margin then 3 else 0) ≤
+                    6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3 then
+              {
+                a :=
+                  max 0
+                    ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                      (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)),
+                b := 3, coupled := true,
+                source :=
+                  1 -
+                    max 0
+                      ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                        (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)),
+                stage := 4, phase := 4,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 },
+                delivered :=
+                  max 0
+                    ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                      (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)) }
+            else
+              { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          else
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.fixedRespond =>
+          if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+            { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+          else
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.wait =>
+          if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+            { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 } }
+          else
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }).a →
+    (match if Plan.measured = Plan.fixed then Event.fixedRespond else Event.respond with
+          | Event.activate =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.probe =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.inspect =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.revise =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.respond =>
+            if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+              if
+                  ¬some true = none ∧
+                    (if Plan.measured = Plan.margin then 3 else 0) ≤
+                      6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3 then
+                {
+                  a :=
+                    max 0
+                      ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                        (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)),
+                  b := 3, coupled := true,
+                  source :=
+                    1 -
+                      max 0
+                        ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                          (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)),
+                  stage := 4, phase := 4,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 },
+                  delivered :=
+                    max 0
+                      ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                        (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)) }
+              else
+                { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            else
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.fixedRespond =>
+            if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+              { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+            else
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.wait =>
+            if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+              { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 } }
+            else
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 },
+                stopped := true }).phase =
+        4 →
+      (match if Plan.measured = Plan.fixed then Event.fixedRespond else Event.respond with
+            | Event.activate =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.probe =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.inspect =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.revise =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.respond =>
+              if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+                if
+                    ¬some true = none ∧
+                      (if Plan.measured = Plan.margin then 3 else 0) ≤
+                        6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3 then
+                  {
+                    a :=
+                      max 0
+                        ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                          (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)),
+                    b := 3, coupled := true,
+                    source :=
+                      1 -
+                        max 0
+                          ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                            (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)),
+                    stage := 4, phase := 4,
+                    view :=
+                      { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3,
+                        atStage := 3, tag := some { context := 0, relay := false, response := true }, fine := true },
+                    account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 },
+                    delivered :=
+                      max 0
+                        ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                          (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)) }
+                else
+                  { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                    view :=
+                      { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3,
+                        atStage := 3, tag := some { context := 0, relay := false, response := true }, fine := true },
+                    account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+              else
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.fixedRespond =>
+              if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+                { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+              else
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.wait =>
+              if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+                { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 } }
+              else
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 },
+                  stopped := true }).stage =
+          4 →
+        (match if Plan.measured = Plan.fixed then Event.fixedRespond else Event.respond with
+            | Event.activate =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.probe =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.inspect =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.revise =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.respond =>
+              if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+                if
+                    ¬some true = none ∧
+                      (if Plan.measured = Plan.margin then 3 else 0) ≤
+                        6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3 then
+                  {
+                    a :=
+                      max 0
+                        ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                          (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)),
+                    b := 3, coupled := true,
+                    source :=
+                      1 -
+                        max 0
+                          ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                            (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)),
+                    stage := 4, phase := 4,
+                    view :=
+                      { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3,
+                        atStage := 3, tag := some { context := 0, relay := false, response := true }, fine := true },
+                    account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 },
+                    delivered :=
+                      max 0
+                        ((1 + if Plan.measured = Plan.margin then 3 else 0) -
+                          (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)) }
+                else
+                  { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                    view :=
+                      { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3,
+                        atStage := 3, tag := some { context := 0, relay := false, response := true }, fine := true },
+                    account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+              else
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.fixedRespond =>
+              if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+                { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+              else
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.wait =>
+              if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+                { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 } }
+              else
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 },
+                  stopped := true }).stopped =
+          true
+
+case accurate.margin
+⊢ 1 ≤
+      (match if Plan.margin = Plan.fixed then Event.fixedRespond else Event.respond with
+        | Event.activate =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.probe =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.inspect =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.revise =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.respond =>
+          if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+            if ¬some true = none ∧ 4 ≤ 1 + (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3) then
+              { a := max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)), b := 3, coupled := true,
+                source := 1 - max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)), stage := 4,
+                phase := 4,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 },
+                delivered := max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)) }
+            else
+              { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          else
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.fixedRespond =>
+          if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+            { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+          else
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.wait =>
+          if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+            { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 } }
+          else
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }).a →
+    (match if Plan.margin = Plan.fixed then Event.fixedRespond else Event.respond with
+          | Event.activate =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.probe =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.inspect =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.revise =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.respond =>
+            if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+              if ¬some true = none ∧ 4 ≤ 1 + (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3) then
+                { a := max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)), b := 3,
+                  coupled := true,
+                  source := 1 - max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)), stage := 4,
+                  phase := 4,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 },
+                  delivered := max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)) }
+              else
+                { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            else
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.fixedRespond =>
+            if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+              { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+            else
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.wait =>
+            if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+              { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 } }
+            else
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 },
+                stopped := true }).phase =
+        4 →
+      (match if Plan.margin = Plan.fixed then Event.fixedRespond else Event.respond with
+            | Event.activate =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.probe =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.inspect =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.revise =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.respond =>
+              if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+                if ¬some true = none ∧ 4 ≤ 1 + (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3) then
+                  { a := max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)), b := 3,
+                    coupled := true,
+                    source := 1 - max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)), stage := 4,
+                    phase := 4,
+                    view :=
+                      { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3,
+                        atStage := 3, tag := some { context := 0, relay := false, response := true }, fine := true },
+                    account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 },
+                    delivered := max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)) }
+                else
+                  { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                    view :=
+                      { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3,
+                        atStage := 3, tag := some { context := 0, relay := false, response := true }, fine := true },
+                    account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+              else
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.fixedRespond =>
+              if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+                { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+              else
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.wait =>
+              if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+                { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 } }
+              else
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 },
+                  stopped := true }).stage =
+          4 →
+        (match if Plan.margin = Plan.fixed then Event.fixedRespond else Event.respond with
+            | Event.activate =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.probe =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.inspect =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.revise =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.respond =>
+              if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+                if ¬some true = none ∧ 4 ≤ 1 + (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3) then
+                  { a := max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)), b := 3,
+                    coupled := true,
+                    source := 1 - max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)), stage := 4,
+                    phase := 4,
+                    view :=
+                      { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3,
+                        atStage := 3, tag := some { context := 0, relay := false, response := true }, fine := true },
+                    account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 },
+                    delivered := max 0 (4 - (6 - (3 + if Case.accurate = Case.biased then -3 else 0) - 3)) }
+                else
+                  { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                    view :=
+                      { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3,
+                        atStage := 3, tag := some { context := 0, relay := false, response := true }, fine := true },
+                    account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+              else
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.fixedRespond =>
+              if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+                { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+              else
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.wait =>
+              if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+                { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 } }
+              else
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 },
+                  stopped := true }).stopped =
+          true
+
+case accurate.fixed
+⊢ 1 ≤
+      (if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+          { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+        else
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                tag := some { context := 0, relay := false, response := true }, fine := true },
+            account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }).a →
+    (if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+            { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+          else
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                  tag := some { context := 0, relay := false, response := true }, fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }).phase =
+        4 →
+      (if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+              { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+            else
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 },
+                stopped := true }).stage =
+          4 →
+        (if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+              { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+            else
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, second := 3 + if Case.accurate = Case.biased then -3 else 0, loss := 3, atStage := 3,
+                    tag := some { context := 0, relay := false, response := true }, fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 },
+                stopped := true }).stopped =
+          true
+
+case biased.measured
+⊢ 1 ≤
+      (match if Plan.measured = Plan.fixed then Event.fixedRespond else Event.respond with
+        | Event.activate =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.probe =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.inspect =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.revise =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.respond =>
+          if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+            if ¬some true = none ∧ (1 + if Plan.measured = Plan.margin then 3 else 0) ≤ 4 then
+              { a := max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3), b := 3, coupled := true,
+                source := 1 - max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3), stage := 4, phase := 4,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 },
+                delivered := max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3) }
+            else
+              { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          else
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.fixedRespond =>
+          if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+            { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+          else
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.wait =>
+          if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+            { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 } }
+          else
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }).a →
+    (match if Plan.measured = Plan.fixed then Event.fixedRespond else Event.respond with
+          | Event.activate =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.probe =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.inspect =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.revise =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.respond =>
+            if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+              if ¬some true = none ∧ (1 + if Plan.measured = Plan.margin then 3 else 0) ≤ 4 then
+                { a := max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3), b := 3, coupled := true,
+                  source := 1 - max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3), stage := 4, phase := 4,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 },
+                  delivered := max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3) }
+              else
+                { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            else
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.fixedRespond =>
+            if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+              { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+            else
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.wait =>
+            if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+              { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 } }
+            else
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 },
+                stopped := true }).phase =
+        4 →
+      (match if Plan.measured = Plan.fixed then Event.fixedRespond else Event.respond with
+            | Event.activate =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.probe =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.inspect =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.revise =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.respond =>
+              if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+                if ¬some true = none ∧ (1 + if Plan.measured = Plan.margin then 3 else 0) ≤ 4 then
+                  { a := max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3), b := 3, coupled := true,
+                    source := 1 - max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3), stage := 4,
+                    phase := 4,
+                    view :=
+                      { total := 6, loss := 3, atStage := 3,
+                        tag := some { context := 0, relay := false, response := true }, fine := true },
+                    account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 },
+                    delivered := max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3) }
+                else
+                  { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                    view :=
+                      { total := 6, loss := 3, atStage := 3,
+                        tag := some { context := 0, relay := false, response := true }, fine := true },
+                    account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+              else
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.fixedRespond =>
+              if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+                { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+              else
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.wait =>
+              if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+                { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 } }
+              else
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 },
+                  stopped := true }).stage =
+          4 →
+        (match if Plan.measured = Plan.fixed then Event.fixedRespond else Event.respond with
+            | Event.activate =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.probe =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.inspect =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.revise =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.respond =>
+              if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+                if ¬some true = none ∧ (1 + if Plan.measured = Plan.margin then 3 else 0) ≤ 4 then
+                  { a := max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3), b := 3, coupled := true,
+                    source := 1 - max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3), stage := 4,
+                    phase := 4,
+                    view :=
+                      { total := 6, loss := 3, atStage := 3,
+                        tag := some { context := 0, relay := false, response := true }, fine := true },
+                    account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 },
+                    delivered := max 0 ((1 + if Plan.measured = Plan.margin then 3 else 0) - 3) }
+                else
+                  { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                    view :=
+                      { total := 6, loss := 3, atStage := 3,
+                        tag := some { context := 0, relay := false, response := true }, fine := true },
+                    account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+              else
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.fixedRespond =>
+              if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+                { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+              else
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.wait =>
+              if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+                { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 } }
+              else
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 },
+                  stopped := true }).stopped =
+          true
+
+case biased.margin
+⊢ 1 ≤
+      (match if Plan.margin = Plan.fixed then Event.fixedRespond else Event.respond with
+        | Event.activate =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.probe =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.inspect =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.revise =>
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.respond =>
+          if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+            if some true = none then
+              { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            else
+              { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+          else
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.fixedRespond =>
+          if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+            { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+          else
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+        | Event.wait =>
+          if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+            { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 } }
+          else
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }).a →
+    (match if Plan.margin = Plan.fixed then Event.fixedRespond else Event.respond with
+          | Event.activate =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.probe =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.inspect =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.revise =>
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.respond =>
+            if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+              if some true = none then
+                { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+              else
+                { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+            else
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.fixedRespond =>
+            if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+              { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+            else
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+          | Event.wait =>
+            if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+              { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 } }
+            else
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 },
+                stopped := true }).phase =
+        4 →
+      (match if Plan.margin = Plan.fixed then Event.fixedRespond else Event.respond with
+            | Event.activate =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.probe =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.inspect =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.revise =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.respond =>
+              if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+                if some true = none then
+                  { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                    view :=
+                      { total := 6, loss := 3, atStage := 3,
+                        tag := some { context := 0, relay := false, response := true }, fine := true },
+                    account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+                else
+                  { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                    view :=
+                      { total := 6, loss := 3, atStage := 3,
+                        tag := some { context := 0, relay := false, response := true }, fine := true },
+                    account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+              else
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.fixedRespond =>
+              if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+                { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+              else
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.wait =>
+              if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+                { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 } }
+              else
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 },
+                  stopped := true }).stage =
+          4 →
+        (match if Plan.margin = Plan.fixed then Event.fixedRespond else Event.respond with
+            | Event.activate =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.probe =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.inspect =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.revise =>
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.respond =>
+              if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+                if some true = none then
+                  { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                    view :=
+                      { total := 6, loss := 3, atStage := 3,
+                        tag := some { context := 0, relay := false, response := true }, fine := true },
+                    account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+                else
+                  { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                    view :=
+                      { total := 6, loss := 3, atStage := 3,
+                        tag := some { context := 0, relay := false, response := true }, fine := true },
+                    account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+              else
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.fixedRespond =>
+              if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+                { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+              else
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }
+            | Event.wait =>
+              if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+                { a := 0, b := 3, coupled := true, stage := 4, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 } }
+              else
+                { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                  view :=
+                    { total := 6, loss := 3, atStage := 3,
+                      tag := some { context := 0, relay := false, response := true }, fine := true },
+                  account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 },
+                  stopped := true }).stopped =
+          true
+
+case biased.fixed
+⊢ 1 ≤
+      (if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+          { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+        else
+          { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+            view :=
+              { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                fine := true },
+            account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }).a →
+    (if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+            { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+          else
+            { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+              view :=
+                { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                  fine := true },
+              account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, stopped := true }).phase =
+        4 →
+      (if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+              { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+            else
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 },
+                stopped := true }).stage =
+          4 →
+        (if RemainingDependency.Error.funding = RemainingDependency.Error.none then
+              { a := 1, b := 3, coupled := true, source := 0, stage := 4, phase := 4,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 }, delivered := 1 }
+            else
+              { a := 3, b := 3, coupled := true, stage := 3, phase := 3,
+                view :=
+                  { total := 6, loss := 3, atStage := 3, tag := some { context := 0, relay := false, response := true },
+                    fine := true },
+                account := { fuel := 0, spent := 3132, live := 8, peak := 10, capacity := 32 },
+                stopped := true }).stopped =
+          true

@@ -1,0 +1,14 @@
+import InquiryAdequacy
+#print axioms Generative.InquiryAdequacy.Adequate
+#print axioms Generative.InquiryAdequacy.adequate_policy_iff_common_choice
+#print axioms Generative.InquiryAdequacy.recoverable_evidence_preserves_adequacy
+#print axioms Generative.InquiryAdequacy.All
+#print axioms Generative.InquiryAdequacy.Blind
+#print axioms Generative.InquiryAdequacy.Protective
+#print axioms Generative.InquiryAdequacy.Targeted
+#print axioms Generative.InquiryAdequacy.blind_target_not_identifiable
+#print axioms Generative.InquiryAdequacy.protection_without_identification
+#print axioms Generative.InquiryAdequacy.blind_targeted_response_impossible
+#print axioms Generative.InquiryAdequacy.truthful_probe_adequate_iff_timely
+#print axioms Generative.InquiryAdequacy.late_probe_loses_even_common_protection
+#print axioms Generative.InquiryAdequacy.probe_enables_previously_unavailable_targeted_response

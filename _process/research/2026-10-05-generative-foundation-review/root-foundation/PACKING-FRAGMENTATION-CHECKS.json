@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-08",
+  "previous_goal_turn": "no progress: completion-criteria explanation only",
+  "this_goal_turn": "progress: new source preservation, numerical geometry reconstruction, conversion audit and integrated evidence",
+  "goal": "establish The Theory of Evolution",
+  "goal_complete": false,
+  "scientific_verification": "passed at the numerical scope recorded by packing/verification.json",
+  "new_lean_theorems": 0,
+  "independent_agent_review": false,
+  "author_self_review": "included in integration",
+  "local_links_checked": 24,
+  "c14_pair_and_render": "passed",
+  "own_linked_source_versions": "passed for the new study and evolutionary completion map",
+  "whole_chain_status": "needs review of concurrent source changes; not certified by this scoped check",
+  "whole_chain_remaining_changes_at_check": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/G0-AND-KNOWLEDGE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/KNOWLEDGE.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-SOURCES.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-JUDGMENT-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-CONTENT-AND-ERROR.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-REASONS-AND-STANDARDS.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PROVED-CONNECTIONS.md"
+    ],
+    "removed_pages": []
+  },
+  "concurrent_grounding_note": "Our added paragraph was reviewed and its source hash recorded, but another session subsequently changed the shared grounding page. Its newer whole-file version is not certified here.",
+  "figure_visual_review": "passed; labels and units legible, no observed overlap or clipping",
+  "files_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/PACKING-FRAGMENTATION-INTEGRATION.md": "bc98cdfc45cedd5cb90543787f0bcbdccb4b7bf29fcf5715f2518f0aa7d1343a",
+    "sources/evolutionary-selection/day-2022/README.md": "b59d2fc1e73e70caac8ecfdd34df23325bb7dd8a8fa7a34df1c74d3b1690e7a8",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/packing/README.md": "a61bc93b75c9414640a2120f5662dd167e88dffa861dabf1126d468badac7d7a",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/packing/analyze_packing.py": "0a20ffafdbc96ff184c995c133ee123cd30103377ff51391482b3df7451b033d",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/packing/check_packing.py": "4f12d6793215afb3cbc355c0ac9ec2a046d23a890de9bc0734aa3b4aa16447a6",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/packing/plot_packing.py": "e0a54f2b5bf1606c2d2778867ec2a240b6aa1e3966f3f530523392b20e00d04e",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/packing/packing-results.json": "da345bea7895e83a5d10fba3de6775a1bb660a7b8e10cbc9dec1a3f6ca17093a",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/packing/diameter-reading.csv": "ad4929d7f2ee4060f160f3f21a3c8ea7c59f16f5ffafa1eab93936665fa082a8",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/packing/voronoi-reading.csv": "b9b590ea77144588c99b0efc4b7bd516c45deff0802d1d9619a5c21a31755ac0",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/packing/verification.json": "7b8c084f9cad5cc51f683247cd5a55b9582f018f5d282b3aa3ada983db8ad84c",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/packing/packing-correspondence.png": "e6a2a7be98078a418751cb01fdf64f1d186833e75ebd20664437fae49ac95093",
+    "sources/evolutionary-selection/day-2022/manifest.json": "b51723ceff51e7bf7e8f8dd6a8b2a002770595081fc8c07a6bdfdbf335a27000"
+  },
+  "completion_requirement_assessment": {
+    "1": "still incomplete beyond existing conditional scope",
+    "2": "physical correspondence strengthened, wider recovery incomplete",
+    "3": "packing intermediate supported; conversion and fragment-descendant cycle incomplete",
+    "4": "existing novelty scope credited; evolutionary persistence incomplete",
+    "5": "conventional explanation credited; no demonstrated superiority",
+    "6": "existing conditional ethics credited; evolved implementation incomplete"
+  },
+  "next_action": "Resolve or replace the census calibration and inspect the primary division-timing lineage study for a compatible growth-fragmentation-descendant history, with real support activity and equally informed rivals."
+}

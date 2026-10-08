@@ -1,0 +1,22 @@
+import DiagnosticTracking
+#print axioms DiagnosticTracking.response
+#print axioms DiagnosticTracking.acquiredGain
+#print axioms DiagnosticTracking.acquiredJoint
+#print axioms DiagnosticTracking.acquiredEffect
+#print axioms DiagnosticTracking.same_discrepancy_different_repairs
+#print axioms DiagnosticTracking.diagnostic_records_distinguish
+#print axioms DiagnosticTracking.three_probes_miss_joint_relation
+#print axioms DiagnosticTracking.joint_probe_exposes_missing_relation
+#print axioms DiagnosticTracking.four_readings_recover_parameters
+#print axioms DiagnosticTracking.acquired_effect_matches
+#print axioms DiagnosticTracking.acquired_parameters_error_bounds
+#print axioms DiagnosticTracking.reference_and_readout_offsets_confounded
+#print axioms DiagnosticTracking.four_probes_do_not_certify_unrepresented_curvature
+#print axioms DiagnosticTracking.bound_transfers_with_drift
+#print axioms DiagnosticTracking.corrected_reading_bound
+#print axioms DiagnosticTracking.revised_effect_bound
+#print axioms DiagnosticTracking.calibration_to_revised_residual
+#print axioms DiagnosticTracking.acquired_revision_bounds_tracking_step
+#print axioms DiagnosticTracking.repaired_tail_converges
+#print axioms DiagnosticTracking.acquired_repair_restores_convergence
+#print axioms DiagnosticTracking.bounded_repaired_tail

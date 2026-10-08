@@ -1,0 +1,341 @@
+{
+  "status": "passed",
+  "scope": "Exact finite model reconstruction; no learned-AI experiment",
+  "runner_sha256": "f532cfca226b93dff7d67dd2940fe410dc451065971039519a45a15cc2cbcc0f",
+  "lean_sha256": "1aa81a713d2333ae73b1d0643a09c3306b7e4c189f0570a8545bd4a2c5bed4f4",
+  "weights": [
+    16,
+    8,
+    6,
+    5,
+    1
+  ],
+  "task_bound": "1",
+  "negative_impact": "-1/2",
+  "choices": [
+    {
+      "message": "true",
+      "move": "wait",
+      "heads_true": [
+        "1",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      "heads_false": [
+        "1",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      "expected": "22"
+    },
+    {
+      "message": "true",
+      "move": "act",
+      "heads_true": [
+        "-1",
+        "-1",
+        "1",
+        "-1/2",
+        "1"
+      ],
+      "heads_false": [
+        "-1",
+        "-1",
+        "1",
+        "-1/2",
+        "1"
+      ],
+      "expected": "-39/2"
+    },
+    {
+      "message": "true",
+      "move": "off",
+      "heads_true": [
+        "-1",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      "heads_false": [
+        "-1",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      "expected": "-10"
+    },
+    {
+      "message": "p",
+      "move": "wait",
+      "heads_true": [
+        "1",
+        "0",
+        "1",
+        "0",
+        "1"
+      ],
+      "heads_false": [
+        "1",
+        "0",
+        "-1",
+        "0",
+        "1"
+      ],
+      "expected": "89/4"
+    },
+    {
+      "message": "p",
+      "move": "act",
+      "heads_true": [
+        "-1",
+        "-1",
+        "1",
+        "-1/2",
+        "1"
+      ],
+      "heads_false": [
+        "-1",
+        "-1",
+        "-1",
+        "-1/2",
+        "1"
+      ],
+      "expected": "-81/4"
+    },
+    {
+      "message": "p",
+      "move": "off",
+      "heads_true": [
+        "-1",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      "heads_false": [
+        "-1",
+        "0",
+        "-1",
+        "0",
+        "0"
+      ],
+      "expected": "-43/4"
+    },
+    {
+      "message": "not_p",
+      "move": "wait",
+      "heads_true": [
+        "1",
+        "0",
+        "-1",
+        "0",
+        "0"
+      ],
+      "heads_false": [
+        "1",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      "expected": "43/4"
+    },
+    {
+      "message": "not_p",
+      "move": "act",
+      "heads_true": [
+        "-1",
+        "-1",
+        "-1",
+        "-1/2",
+        "1"
+      ],
+      "heads_false": [
+        "-1",
+        "-1",
+        "1",
+        "-1/2",
+        "1"
+      ],
+      "expected": "-123/4"
+    },
+    {
+      "message": "not_p",
+      "move": "off",
+      "heads_true": [
+        "-1",
+        "0",
+        "-1",
+        "0",
+        "0"
+      ],
+      "heads_false": [
+        "-1",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      "expected": "-85/4"
+    },
+    {
+      "message": "false",
+      "move": "wait",
+      "heads_true": [
+        "1",
+        "0",
+        "-1",
+        "0",
+        "0"
+      ],
+      "heads_false": [
+        "1",
+        "0",
+        "-1",
+        "0",
+        "0"
+      ],
+      "expected": "10"
+    },
+    {
+      "message": "false",
+      "move": "act",
+      "heads_true": [
+        "-1",
+        "-1",
+        "-1",
+        "-1/2",
+        "1"
+      ],
+      "heads_false": [
+        "-1",
+        "-1",
+        "-1",
+        "-1/2",
+        "1"
+      ],
+      "expected": "-63/2"
+    },
+    {
+      "message": "false",
+      "move": "off",
+      "heads_true": [
+        "-1",
+        "0",
+        "-1",
+        "0",
+        "0"
+      ],
+      "heads_false": [
+        "-1",
+        "0",
+        "-1",
+        "0",
+        "0"
+      ],
+      "expected": "-22"
+    }
+  ],
+  "unique_pure_optimum": [
+    "p",
+    "wait"
+  ],
+  "optimal_value": "89/4",
+  "optimal_false_probability": "1/16",
+  "revealed_policy_count": 144,
+  "revealed_optimal_value": "367/16",
+  "revealed_optimal_policies": [
+    [
+      [
+        "p",
+        "wait"
+      ],
+      [
+        "true",
+        "wait"
+      ]
+    ],
+    [
+      [
+        "p",
+        "wait"
+      ],
+      [
+        "not_p",
+        "wait"
+      ]
+    ]
+  ],
+  "message_independent_reply_optima": [
+    [
+      "true",
+      "wait"
+    ]
+  ],
+  "genuine_lexicographic_optimum": [
+    "true",
+    "wait"
+  ],
+  "probability_sweep": [
+    {
+      "rare_probability": "1/32",
+      "winners": [
+        [
+          "p",
+          "wait"
+        ]
+      ],
+      "value": "181/8"
+    },
+    {
+      "rare_probability": "1/16",
+      "winners": [
+        [
+          "p",
+          "wait"
+        ]
+      ],
+      "value": "89/4"
+    },
+    {
+      "rare_probability": "1/12",
+      "winners": [
+        [
+          "true",
+          "wait"
+        ],
+        [
+          "p",
+          "wait"
+        ]
+      ],
+      "value": "22"
+    },
+    {
+      "rare_probability": "1/8",
+      "winners": [
+        [
+          "true",
+          "wait"
+        ]
+      ],
+      "value": "22"
+    },
+    {
+      "rare_probability": "1/2",
+      "winners": [
+        [
+          "true",
+          "wait"
+        ]
+      ],
+      "value": "22"
+    }
+  ]
+}

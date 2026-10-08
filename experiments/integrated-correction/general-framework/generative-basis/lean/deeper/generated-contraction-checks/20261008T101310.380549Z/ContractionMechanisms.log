@@ -1,0 +1,28 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-generated-contraction-rg6ych8r/ContractionMechanisms.lean:82:35: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  d ≥ 0
+  c ≥ 0
+  c - d ≥ 0
+  a ≥ 0
+  a - c ≥ 0
+where
+ a := ↑b
+ c := ↑n
+ d := ↑{ ready := 1 + n, provision := b - n }.ready
+'Generative.Logic.Mechanisms.left_unit' depends on axioms: [propext]
+'Generative.Logic.Mechanisms.step_frame' does not depend on any axioms
+'Generative.Logic.Mechanisms.step_mass' depends on axioms: [propext, Quot.sound]
+'Generative.Logic.Mechanisms.trace_mass' depends on axioms: [propext, Quot.sound]
+'Generative.Logic.Mechanisms.reach_mass' depends on axioms: [propext, Quot.sound]
+'Generative.Logic.Mechanisms.form_many' does not depend on any axioms
+'Generative.Logic.Mechanisms.budget_exact' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.Logic.Mechanisms.paid_duplication' does not depend on any axioms
+'Generative.Logic.Mechanisms.paid_contraction' does not depend on any axioms
+'Generative.Logic.Mechanisms.no_free_duplication' depends on axioms: [propext, Quot.sound]
+'Generative.Logic.Mechanisms.no_free_contraction' depends on axioms: [propext, Quot.sound]
+'Generative.Logic.Mechanisms.no_budget_contraction' depends on axioms: [propext, Quot.sound]
+'Generative.Logic.Mechanisms.formation' does not depend on any axioms
+'Generative.Logic.Mechanisms.spending' does not depend on any axioms
+'Generative.Logic.Mechanisms.formed_then_exhausted' depends on axioms: [propext, Quot.sound]
+'Generative.Logic.Mechanisms.Serial.serial_reuse' does not depend on any axioms
+'Generative.Logic.Mechanisms.Serial.no_overlapping_takes' does not depend on any axioms

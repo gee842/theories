@@ -1,0 +1,1230 @@
+{
+  "scope": "Local retention of a warranted fair-sharing comparison, intermediate risk mixtures and preservation of whole-comparison scope; no universal exchange rate or certified normative cap",
+  "entries": [
+    "M20"
+  ],
+  "prior_content": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md": {
+      "prior_sha256": "07e783f00b47aaebf65c55e93b4f7c55e3f3cce6bc83fd6bf9103efacf89758f",
+      "prior_length": 38880,
+      "addition": "\n## 15. A limited fair-sharing reason can survive some added risk\n\n8 October 2026. Ren [requested continuation](../../../../sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md#continue-the-cost-of-fairer-risk). This round addresses the normative connection left in §14: whether *any* added basic risk must defeat an otherwise warranted fair-sharing comparison, and how its actual scope can govern further revisions.\n\nThe completed [LR study](CROSSED-CLAIMS-INTEGRATION.md#2-lr同等救助理由的局部延续) already defends local persistence for a different baseline: BC1's reliable rescue comparison. That result is credited rather than rediscovered. LR does not automatically transfer to lotteries, since chance relations, implementation and affected claims can change. The completed [chance-revision study](CHANCE-REVISION-INTEGRATION.md) also shows that even a full terminal distribution can omit a valid settlement. Its historical requirements remain active throughout this extension.\n\n**RSL：有根据分担判断的有限延续 / Limited retention of warranted sharing.** In at least some cases where a complete comparison already sufficiently favors a supported fair-sharing arrangement, a sufficiently slight increase in its basic-risk cost need not immediately defeat that judgment. The loss content, affected positions, relevant rights, support relations and procedural history must remain substantively comparable; the increase must introduce no other priority-changing feature. This is an explicit additional normative commitment, argued below, **not a deduction from physical continuity, RS's mere pro tanto reason or the arithmetic of a lottery**.\n\nThe positive reason is that the actual relation achieved by sharing does not vanish as soon as exact loss neutrality is lost. If giving otherwise comparable basic claims an effective place in the organization of exposure has sufficient significance in a complete baseline case, it need not have decisive force only at a knife-edge where the numerical cost happens to be exactly zero. Denying every such extension would give any positive increment in expected basic loss absolute priority over that significance. The present candidate rejects that universal lexical priority. It retains the added exposure as a real objection and allows it, or a changed right or basic circumstance, to become defeating.\n\nThe actual living ground matters in specifying a slight change. Keep the same small set of affected lives, the same serious loss and recovery conditions, the same time window, support and permission, and a supported small perturbation of the event law. A very small probability of a qualitatively new catastrophic loss, additional excluded people, or the breach of a warranted undertaking is not covered merely because one number is small. Nor may “slight” be defined as “whatever leaves our preferred verdict unchanged.” Its descriptive basis and the normative claim that it is insufficient to defeat the comparison have to be supplied separately.\n\n**这里支持的是有限正面路线，不是任意小损失都不重要。** A rival can accept the complete baseline preference but insist that any extra probability of basic harm restores the lower-risk plan's priority. That rival is consistent. The argument for RSL is that justified fair treatment can have some resilience to a limited opposing reason, while actual protection remains a source of reasons for limiting the cost. RSL openly takes this position; neither calculus nor a Lean certificate proves the rival wrong.\n\nThere is also a weaker starting point to exclude. If RS has established only a fairness reason while the overall baseline decision remains unresolved, RSL cannot transform it into a decisive preference. Its premise requires the stronger, independently supported baseline comparison. Thus the candidate does not silently upgrade the previous chapter's fairness reason. It explains how a sufficiently grounded comparison can extend where that stronger premise is actually met.\n\nThis supplies a route to some permissible added risk without installing a global exchange rate, and it is narrower than “fairness always wins.” It does **not** establish that four, twelve or any other chosen number of percentage points is an acceptable price in the §14 example. That application remains to be justified. The mathematical continuation below makes the candidate comparisons and the consequences of a stated allowance concrete.\n\n## 16. Intermediate sharing changes the practical question\n\nThe earlier endpoint comparison did not exhaust its own menu. Reuse the exact asymmetric law, with no new data: choose favor-A on x of ten selector outcomes, independently of the danger in the specified product law. The outcomes retain their two basic loss positions and mutually exclusive loss events.\n\n| Choice weight for favor-A | A's loss risk | B's loss risk | Chance of some basic loss | Greatest individual exposure |\n|---|---:|---:|---:|---:|\n| 100% | 10% | 40% | 50% | 40% |\n| 90% | 17% | 37% | 54% | 37% |\n| 80% | 24% | 34% | 58% | 34% |\n| 70% | 31% | 31% | 62% | 31% |\n\nEach intermediate choice makes the formerly favored A more exposed and B less exposed. The original losses remain basic. A smaller movement can improve the fairness-related exposure pattern at a smaller cost than full equality; therefore rejecting the price of complete equalization does not by itself defeat every sharing proposal. Conversely, the existence of a compromise does not establish its permission or warrant.\n\nLean proves an exact two-diagnostic frontier for the entire supplied ticket family. For n = 10k selector tickets and k > 0, the jointly undominated proposals for **total exposure and greatest exposure** are exactly 7k ≤ x ≤ 10k. Values outside that interval below 7k can be improved in both diagnostics by x = 7k; within it neither diagnostic can improve without worsening the other. The result concerns integer tickets at each chosen resolution, not every real lottery or a complete ethical ordering.\n\nThe description must retain what the diagnostics omit. A change improving both may still increase a particular position's risk; historical rights, distinct recovery and actual joint harms can also matter. “Undominated” here names a mathematical comparison in these two explicitly selected quantities. It is not a claim that every such plan is ethically eligible, or that plans outside the interval are ethically defeated in every fuller account. The chance-revision study in particular prevents interpreting this table as authority to undo a valid settled award.\n\nConditional selection can now be exact without inventing a moral weight. If a separately warranted comparison allows **at most four percentage points of added total loss** from the original 50%, the 90% mixture is the unique proposal in this family achieving greatest exposure at most 37% while respecting that constraint. This is a checked *if*. Four points is a diagnostic example, not our recommended ethical cap. A different justified allowance can yield a different eligible set; RS, RSL and G0 alone do not numerically select it.\n\n## 17. A local allowance cannot renew itself by changing the reference\n\nSuppose the same future decision is repeatedly redesigned through the table: from 100% to 90%, then 80%, then 70% favor-A. Each revision adds four percentage points to the chance of some basic loss. The final proposal adds twelve points relative to the original arrangement. Lean checks both the local increments and the failure of the original four-point constraint at the end.\n\nThese are **successive proposals for one fixed future probability law**, not independent repeated hazards, sums of probabilities across unrelated periods, or three already suffered injuries. That scope is essential. At every stage the proposed law changes; the earlier reference still identifies the whole difference that the original argument authorized.\n\nThe general bound composition theorem checks that an allowance from reference to middle and another from middle to final support, at most, their sum relative to the reference. They do not preserve the first allowance automatically. No probability independence is used in this arithmetic.\n\nThe normative consequence is conditional on the existing warrant: if an argument supports only a bounded whole departure, describing each step as locally small cannot enlarge what it supports. Keep the comparison's reference, reasons, affected histories, permitted scope and reopening conditions available in a usable form. This need not preserve every past detail. A new goal label, selector version or administrative phase does not itself reset the actual loss comparison.\n\n**可以重新判断，不能仅靠换基准续发许可。** Genuinely new evidence, a newly feasible support relation, justified release or a better argument may warrant a different scope. That is a new substantive judgment, not a bookkeeping reset. Likewise, an original rule explicitly and justifiably covering a series of decisions must be tested over that full series rather than incorrectly treated as a one-step grant. The present construction does not ban cumulative improvement or prove that every original baseline is permanently binding.\n\nThis links reflection back to the conditions of its formation. An intelligence revising its own selector must preserve the grounds limiting the previous judgment while recognizing when those grounds really change. Retention of an old instruction is insufficient; indiscriminate erasure is also insufficient. The relevant continuity is the justified relationship among actual basic protection, fair treatment, the proposed intervention and its whole cost.\n\n## 18. Primary assessment and counterreview of the extension\n\nThe author checked the already-read [Vong article, §V](https://www.journals.uchicago.edu/doi/full/10.1086/707212) again, including the passage distinguishing fair allocation from moral rightness. It supplies a substantive challenge: an improvement in fair chances can carry reasons against its implementation. We therefore neither promote a fairness-only argument into an overall verdict nor treat the paper as providing our allowance. Its discussion is supporting comparison, not an independent endorsement of RSL. The local-retention reasoning is openly adapted from our completed LR study; no historical novelty claim is made.\n\nAuthor counterreview, with no new independent-agent acceptance:\n\n- **“Continuity proves a positive ethical allowance.”** Rejected. RSL is a normative commitment to some limited persistence, with its own argument. Mathematical continuity is not its warrant.\n- **“RS alone already decided the original case.”** Rejected. A pro tanto reason is weaker than the sufficient overall baseline judgment RSL requires.\n- **“The slightness condition hides the answer.”** The condition must identify the actual change independently, while the additional normative premise says that some such changes do not defeat the comparison. The account does not certify a universal numerical radius.\n- **“This still merely assumes the ethical verdict.”** The commitment is explicit and defended through the realized significance of fair treatment and the cost of making it vanish at every nonzero loss increment. A rival can reject that justification. The proof certifies the stated arithmetic consequences, not the philosophical premise.\n- **“An efficient intermediate mix must be justified.”** Rejected. The frontier uses two diagnostics and can omit a position's claim or a valid settled arrangement. Eligibility, permission and the complete comparison remain necessary.\n- **“Repeated small changes remain within the original argument.”** Rejected by the explicit 4 → 8 → 12 point departure. A new comparison must justify enlarging the supported scope.\n- **“The baseline may never change.”** Rejected. Actual changed grounds can warrant revision. The target is unargued rebasing, not all updating.\n\n**Current result:** the candidate now permits a defended route for some finite fairness costs, exposes intermediate choices, and keeps a supported local comparison from being silently expanded. **Remaining connection:** determine and justify the scope in a fully described actual comparison, especially when increased risk changes rights, recovery or shared basic support. RSL does not yet tell us whether 17%/37%, 24%/34% or 31%/31% is warranted in the constructed asymmetric case. That is the precise unclosed application, not a reason to stop grounded action generally or to reopen completed RS, LR and J4 work.\n\n## 19. Bounded-revision proof and integration scope\n\n[BoundedRiskRevision.lean](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/BoundedRiskRevision.lean), [checker](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_bounded_risk_revision.py) and [receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/bounded-risk-revision-verification.json) retain the exact model and checks.\n\nNine new theorems / thirteen explicit declaration audits passed Lean 4.29.1. Six new declarations have no axiom dependencies; four use `propext`, `Classical.choice`, `Quot.sound`; three use `propext`, `Quot.sound`. The unchanged imported `BasicRiskSharing` dependency was rebuilt and separately audited at nineteen theorems / thirty-six declarations; those are inherited, not newly counted. The frozen run retains fifteen artifacts, theorem signatures and source/checker/Lean-binary hashes. No warnings, proof holes, new axioms, `native_decide` or skipped kernel checking are admitted.\n\nAn initial compile failed because the proof script attempted to unfold an absent expression and used a tactic unavailable with these imports. The repaired script uses simplification and explicit cases without weakening the statements; the failed run is preserved. No independent empirical study, new biological validation, full normative comparison or retrospective repository audit is claimed. The [owned integration record](BOUNDED-RISK-REVISION-INDEX-EDITS.json) and [documentary checks](BOUNDED-RISK-REVISION-CHECKS.json) preserve earlier text and concurrent work.\n",
+      "new_heading": "## 15. A limited fair-sharing reason can survive some added risk",
+      "prior_bytes_preserved": true
+    },
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md": {
+      "prior_sha256": "fa773a76f4e4a5965871b48715b53b9c1fb0965546bdddef1931af7eaf236925",
+      "prior_length": 44733,
+      "addition": "\n## 14. Bounded fairness costs and the scope of revision\n\n**有根据的公平分担，可以在部分情形中承受微小的额外风险；这项理由有范围，不能每改一次规则便自动重置。** [接续论证、反审与实查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#15-a-limited-fair-sharing-reason-can-survive-some-added-risk)复用已完成的 RS、基本损失比较的局部延续 LR 及机会修订结果，推进上一节的非对称情形。\n\nThe new candidate **RSL: limited retention of warranted sharing** makes an explicit additional commitment. In some cases where the complete comparison already sufficiently favors fair sharing, a sufficiently slight increase in basic risk need not immediately defeat that judgment. Actual lives, gravity, recovery, time, rights, support and implementation must remain adequately described. “Slight” must be specified through those changes, not defined as whatever preserves the desired verdict. RS's fairness reason alone does not establish the required complete baseline judgment.\n\nThe affirmative argument is that equally grounded claims can have practical force in organizing exposure, including some cases with a small cost. Otherwise any positive additional risk would automatically erase that force, however small the change and however strong the previously warranted comparison. This is a substantive rejection of universal zero-cost priority, not a deduction from physical continuity or from G0 alone. A rival may give every positive addition to basic harm overriding force. RSL contests that position while retaining the actual added risk as a reason against the change. It supplies no universal radius, exchange rate or authority to impose risk.\n\n**继续生成可以形成中间方案。** In the preceding supplied law, choosing favor-A 90% or 80% of the time gives exposure pairs (17%, 37%) or (24%, 34%), between (10%, 40%) and (31%, 31%). Their chances of some basic loss are 54% and 58%. The new checked frontier identifies exactly which mixtures avoid improvement in both total exposure and greatest exposure within this family. Those two diagnostics do not exhaust ethical comparison: differentiated claims, valid settlements and omitted relationships still matter. In particular, the completed [chance-revision result](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-REVISION-INTEGRATION.md) prevents final-law equality from erasing a warranted prior allocation.\n\nIf a separately justified constraint permits at most 54% total exposure, the unique mixture attaining a greatest exposure of at most 37% is the 90% favor-A mixture. Lean checks that conditional calculation. **The permission to add four percentage points is not established here**, nor is the ethical superiority of that intermediate proposal or of full equality. The construction changes the practical question from a forced choice between two endpoints to assessment of a range of actual possibilities.\n\n**自我修订还须携带理由的适用范围。** The same proposals expose a failure of repeated local assessment. Moving from 100% to 90%, then 80%, then 70% favor-A adds four percentage points at each step, but twelve relative to the original comparison. A justification that permits four in total cannot license all three changes merely because each uses the immediately preceding proposal as its reference. These are successive revisions of one future probability law, not three repeated trials or an addition of unrelated probabilities across time.\n\nA new supported reason can legitimately revise the reference or permitted scope. The requirement is to assess that change explicitly, including inherited losses and still-valid claims; it does not freeze an initial rule or require recovering all of history. The scope of a practical reason becomes part of what developing intelligence must represent and reconsider together with its goals and methods.\n\nNine new Lean theorems and thirteen declaration audits check the intermediate frontier, a supplied constraint and composition of scope bounds. Nineteen inherited risk-sharing theorems and thirty-six audits were rebuilt separately. The ethical RSL candidate and the permitted extent of risk remain philosophical commitments and application questions, not checked conclusions. The concrete unfinished connection is **justifying an allowable departure in a fully specified case**. J4 and situated learning still permit warranted action and further generativity without awaiting a universal ranking.\n",
+      "new_heading": "## 14. Bounded fairness costs and the scope of revision",
+      "prior_bytes_preserved": true
+    },
+    "sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md": {
+      "prior_sha256": "42243890cab01bbd21a4c41c62c5ddbfc4cb7f07087af0c37734737b505625d6",
+      "prior_length": 7482,
+      "addition": "\n## Continue the cost of fairer risk\n\nRen's next instruction in this session:\n\n> 继续\n\nAI-authored execution: pursue the remaining comparison between fairer exposure and added basic harm. [The extension](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#15-a-limited-fair-sharing-reason-can-survive-some-added-risk) proposes limited retention of a sufficiently warranted sharing judgment, develops intermediate possibilities and checks why successive revisions cannot silently renew the scope of an earlier justification. The RSL commitment and supplied numerical constraints are the assistant's proposals, not further words or ethical endorsements attributed to Ren. Nine new Lean theorems check conditional arithmetic and bounds; they do not establish an ethically permissible risk increment or experimental validation.\n",
+      "new_heading": "## Continue the cost of fairer risk",
+      "prior_bytes_preserved": true
+    }
+  },
+  "shared_fragments": {
+    "RESEARCH.md": {
+      "fragment": "**公平代价与修订范围 / Fairness costs and revision scope，2026-10-08。** [接续论证与反审](_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#15-a-limited-fair-sharing-reason-can-survive-some-added-risk)提出 RSL：某些充分有根据的分担判断可承受微小额外风险；公开额外规范承诺，未指定正当风险上限。9项新 Lean 定理／13项审计检查中间方案、给定约束与范围组合；继承19项／36项分列。/ Reuses RS, LR and chance-revision results. Successive small revisions cannot automatically renew an earlier whole-comparison allowance. Next: justify an allowable departure in a fully described case; no specific asymmetric mixture is ethically certified.\n\n",
+      "before_sha256": "5a877720df1bdfb5cd487dea739d8a0dc8a1ce8d99b69eac4a5c0190a7c32bcc",
+      "after_sha256": "87b88b631d915d8c55938fd2bbebf5204c6c3d40489b457e12bd4461eb2cd6bb",
+      "other_bytes_preserved": true
+    },
+    "theories/shengsheng-buxi-generative-existence/README.md": {
+      "fragment": "**公平分担的有限代价 / Limited costs of fair sharing，2026-10-08。** [目标修订 §14](unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md#14-bounded-fairness-costs-and-the-scope-of-revision)公开 RSL 候选，保留17%／37%、24%／34%等中间可能性，并要求修订携带原理由的适用范围。/ Nine new checked theorems concern the supplied risk law and scope bounds; an ethical risk allowance remains to be justified. A changed reference alone does not renew permission.\n\n",
+      "before_sha256": "b6492d444d757d3e3f3677ff98d91625769a93417b0dbad5f317c9e601a99e79",
+      "after_sha256": "a816faf36b13789dce5b3c152a5804595a792611651b23b4bd3114dfebb2b260",
+      "other_bytes_preserved": true
+    },
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md": {
+      "fragment": "**修订理由也有范围 / Revision reasons have scope，2026-10-08。** [本轮接续](GOAL-FORMATION-AND-REVISION.md#14-bounded-fairness-costs-and-the-scope-of-revision)从有根据的分担判断推进至有限代价候选及连续修订的范围保留；RSL 是明示的额外规范承诺。/ The supported comparison, its reference and reopening conditions become part of reflective goal revision. Nine checked arithmetic theorems do not establish a moral cap; actual justification of the permitted departure remains the next bridge.\n\n",
+      "before_sha256": "a635a226499234ea2172b63bdc8f8f32a91023cde018ead0a3db19ce8a929e2e",
+      "after_sha256": "3be110492ee3d9f97b8bec411f1b70639f0b460970943a99d7f5b77b0a4b4ae9",
+      "other_bytes_preserved": true
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": {
+      "fragment": "**Bounded fairness costs, 8 October 2026:** [RSL, intermediate mixtures and counterreview](JOINT-RISK-REVISION-INTEGRATION.md#15-a-limited-fair-sharing-reason-can-survive-some-added-risk) connect the completed RS/LR/chance-revision results to retention of a comparison’s scope. Nine new Lean theorems / thirteen audits check the two-diagnostic frontier, a supplied constraint and non-resetting bounds; nineteen inherited theorems / thirty-six audits remain separate. RSL and an ethically warranted allowance are not proved by those calculations.\n\n",
+      "before_sha256": "7d735d901f1e2a50fdd81189479ecd91a9347b23b70f3b82aa5db03c38f9bd95",
+      "after_sha256": "cfa458271109a9b99fba22f79cbf86afe348ec1f5fba5f7a10668d0d39603cfd",
+      "other_bytes_preserved": true
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md": {
+      "fragment": "**公平代价与范围保留 / Fairness costs and retained scope，2026-10-08。** M20成对接入[RSL及9项新定理／13项审计](JOINT-RISK-REVISION-INTEGRATION.md#15-a-limited-fair-sharing-reason-can-survive-some-added-risk)，继承19项／36项分列；中间方案与自动重置反例保留。/ Only owned additions, links and six read/authored source versions change. Earlier text, other entries and rendered lines are preserved; no new discovery copy. [Owned edits](BOUNDED-RISK-REVISION-INDEX-EDITS.json); [scoped checks](BOUNDED-RISK-REVISION-CHECKS.json). No ethical numerical cap, whole-table freshness, empirical validation or independent acceptance is certified.\n\n",
+      "before_sha256": "6f00385f49a96070b43aaba85438da4c9d537c079d3575f22084b77814d2283b",
+      "after_sha256": "5ff7cca606e19befd48ee83c793d1c3b1336905da3ba5448d8c4794967a34271",
+      "other_bytes_preserved": true
+    }
+  },
+  "pending_global_review_before": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CALIBRATION-RENEWAL-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CALIBRATION-RENEWAL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/RISK-PRIORITY-INTEGRATION.md"
+    ],
+    "removed_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md"
+    ]
+  },
+  "entry_before": {
+    "id": "M20",
+    "title_zh": "生成性对齐：当前首要方向之一",
+    "title_en": "Generative alignment: a current primary direction",
+    "claim_zh": "以生生为共同根据评价目标、评价者与选择规则；方向论证及相连目标取得、判断、实际修订与有界改革现已成为完成成果，更强理论按明确范围继续。 后续接通改革自身改变实际负担及报告路线、直接取得与保留新目的的修复。 理论接续区分发现已有根据、形成新生活与理由、修订评价承诺；学习后的赞同不独自认证形成过程。 在已完成的伦理学习基础上，新增比较接口辨明理由内容扩展后旧判断的传递、不可比及有前提的反转。 评价扩展进一步区分共同改善与各应用分别否定；旧内容保持不要求旧评价永久保持。 理论接续给出生活实现、支承与进一步形成的具体根据；共同生活不能以组织规模或产出代替。 后天形成的支承可以因其在基本生活中的实际作用取得保护；生成的评价须包括其形成的后续支持要求。 形成出的生活、承受和参与可以改变原服务角色的伦理根据；考虑、责任与支配权限分列。 新增取得记录到路线必要性分类的连接：忠实读取与选项覆盖支持有范围的判断，一个真实替代即可推翻不可替代性；缩小有根据解释与扩大可行选项分列。 自我评估的选择现在有精确覆盖条件：允许有根据的压缩，区分当前菜单与任意菜单；有限成功不能独自担保新范围，全域结构加辨别记录提供正面出路。 理论接续说明理解怎样实际参与目的和准备：关切可以与报酬及其他正当动机并存，其形成条件也须接受同一规范评价。 BC1 在同等基本救助的既定范围内支持保全更多生活；BC2 的一对一说明以可避免的实际毁损给出比较理由，区分境况、保护与时机，并保留机会争议。 形成中的评估区分当前能力、过去能力及形成方法。Ren 后续指出，历史区别无法恢复，不阻止以未来事件取得同一内容的新根据或修订理解；情境把握与风险估计可支持继续生成。 实际调查现接入描述与读取的共同修订：同一事件在某项估计中排除，不抹去其他有根据的表达意义；纠正归属与保留参与、支持可以属于同一回应。 关切发展接续具体化真实根据保留、改变及新形成时的双向纠正，并将学习中取得的解释纳入形成账户；五条候选路线保留各自正面作用。 按后续指示完成路线比较：以已有局部关切取得新关系内容并重组目的为理论主线，配套形成史判别，再选择机制研究；认识进步与实际新理由不以价值权重增加为定义。 LC 接通数量与程度共同改善的有限损失比较理由：实际损失的有根据匹配及额外保护可以共同支持方向；重复描述不增加生活，共同依存须进入损失判断。 情境风险接续区分个别改善与共同失效；精确有限界限允许部分把握和正风险，支持关系修订可解除共同中断，同时保留分散损失。 有限合并接续区分抵偿限制与理由删除：最强层过滤可在增加实际基本保护后翻转选择；固定比较与局部胜出拼接的条件分别公开。 关切内容形成现有一条具体候选：已有局部关切使粗略成功与实际回应的分离取得实践意义，关系辨别通过计划修订改变目的；实际新生活及对它的动机取得分列。 LR 为同等多救的充分优先提出局部稳定承诺，使一部分稍不等的基本损失有正面比较；新增共同保护另可逐次保留旧保护，增加原先冲突的实现。 同等基本风险分担RS现有正面理由：完整损失分布相当时，减轻无根据的暴露集中；同频率选择可产生不同真实风险，新信息也能支持进一步改规则。 现实市场与互联网为 enshittification 的机制追踪提供事件：以既有外部性解释为起点，查优势怎样改变未来选择及纠正条件，不将增长与损失并存当作新发现。 机会修订接续表明：最终保护的完整联合分布相同仍可能撤销正当安顿；选择规则须保留仍有效的历史要求，并说明真实纠正的根据。 陌生与无回报的关切扩展现有两段条件性说明：辨明对方在自身参与之外的生活，再取得陌生处境中的相关根据；共同史是形成入口，不是全部关切的边界。 CP为不等且未被充分排除的基本请求提出真实正机会要求，将共同分配权限与基本回应关系相连；它是新增且可争辩的进入承诺。 陌生生活辨认现接通具体实现、支撑关系、可修订证据与有限回应；观察与分类方式也可因遗漏的生活根据而修订。 共同接口史进一步支持直接经营控制与有偿影响的区分：反馈和替代的出现也可能进入维持优势的规则调整，改革需追踪实际控制关系。",
+    "claim_en": "Appraise ends, evaluators and selection rules through shared generative grounds; the direction argument and connected acquisition, judgment, operative revision and bounded reform are now completed foundations for the broader programme. A further joined case connects reform-induced burdens and reporting changes to acquired correction and repair preserving the new goal. The theoretical continuation distinguishes discovering existing grounds, forming new living relations and reasons, and revising normative commitments; later endorsement alone does not authorize the formation process. Building on the completed ethical-learning account, a new comparison interface delimits preservation, incomparability and conditional reversal after warranted content extension. Evaluative extension further separates a common improvement from defeat in each live application; retained old content need not preserve every old verdict. The continuation articulates living realization, support and further formation as particular grounds; organizational scale and output cannot substitute for the shared living being assessed. Acquired support can warrant basic protection through its actual role in living; appraisal of formation includes the subsequent support requirements it creates. Formed living, undergoing and participation can change the grounds of an original service role; consideration, responsibility and governing authority remain distinct. A further connection derives scoped route classification from faithful acquired records and covered options; one genuine alternative defeats indispensability. Narrowing supported interpretations and expanding eligible options are distinct changes. Self-review selection now has exact certificate-coverage conditions: warranted compression is allowed, current-menu and every-menu adequacy differ, and finite success alone cannot certify a new scope. Whole-domain structure plus discriminating records supplies a positive route. The conceptual continuation explains how understanding can participate in purposes and preparation: concern can coexist with pay and other legitimate motives, while its formative conditions face the same normative appraisal. BC1 favors more extensive equivalent basic rescue in its established scope. The one-to-one account of BC2 supplies a reason based on preventable impairment, distinguishing baseline, protection and timing while retaining fair-chance disputes. Formative assessment distinguishes current capacity, earlier capacity and the method of formation. Ren’s correction clarifies that unavailable history need not prevent fresh grounds for the same content or revised understanding through future events; situational awareness and risk estimates can support continued generativity. Actual inquiry now connects joint description-and-reading revision to practice: excluding an event from one estimate need not erase its independently warranted expressive significance. Corrected attribution and continued participation/support can belong to one response. The developmental continuation specifies bidirectional correction as living grounds persist, change or form, and includes acquired interpretation during learning; five candidate routes retain their positive roles. A subsequent route assessment prioritizes acquired relational content and purpose revision within partial concern, with discriminating formation histories and conditional mechanistic investigation; epistemic progress and new particular reasons are not defined by increased valuation weights. LC supplies a limited comparative reason where number and gravity jointly improve: warranted matching and additional actual protection can support a direction together. Duplicate descriptions do not multiply living; shared dependence must inform loss assessment. Situated risk now distinguishes marginal improvement from shared failure. Exact finite bounds permit partial awareness and nonzero risk; revising support can remove joint interruption while retaining dispersed losses. The aggregation continuation distinguishes limited counterbalancing from deletion of reasons: a strongest-tier filter reverses under added actual protection; fixed-comparison and local-composition premises are separately exposed. A concrete concern-content candidate links a coarse success conception, meaningful-response mismatch, acquired relational distinctions and operative purpose revision; actual new shared goods and their motivational uptake remain distinct. LR adds a local stability commitment to BC1’s sufficient priority, supporting some slightly unequal basic-loss comparisons. Separately, newly feasible joint protection can preserve old protection on each realization and add previously conflicting protection. RS now supplies a defended reason to share comparable basic risk while preserving the complete loss profile. Equal selection frequencies can conceal different exposure; new information can support further rule revision. Existing market and internet histories provide events for tracing enshittification: start with established externality explanations and investigate how advantage changes future selection and correction, rather than treating growth alongside loss as a new finding. The chance-revision continuation shows that even equal full terminal joint laws can conceal replacement of a warranted settlement; selectors must preserve live historical requirements and explain genuine correction. A conditional extension account now distinguishes continuation beyond one's participation from acquired grounds in unfamiliar lives; shared history can form concern without delimiting every ground it can address. CP proposes actual positive opportunity for unequal basic requests not adequately excluded, grounding a limit on common allocative authority in the response relationship; it is an additional contestable admission commitment. An unfamiliar-life recognition account now connects particular realization, support, revisable evidence and bounded response; omitted living grounds can also warrant revision of observation and classification. A shared-interface history supports distinguishing direct operational control from purchased influence: feedback and alternatives can enter rule changes that preserve advantage, so reforms must track actual control relations.",
+    "scope_zh": "当前首要方向之一；方向论证及本轮相连机制均已独立验收，不再作为待做接口。新相连结果：27新定理／84新声明审计、46继承审计，13历史／221完整状态；规范采用、对应、权限、有限资金与现实部署范围分明。 本会话后续另增23项定理／43项审计，93项继承定理／165项审计分列；此后续为同作者反审，无新经验验证或独立agent验收。 新增有辩护的伦理学习哲学候选，采用G0/J及已有认识承诺；作者反审，无新数学、经验或独立验收。 理论续研另增8项泛型定理／9项空依赖新审计，继承实践30项／46审计；保留开放发现、意义辨认及实际动机的未完成范围。 理论接续另增20项定理／36项审计，直接导入同期关切扩展；38项继承定理／55项审计分列。实际应用覆盖及规范分类仍是前提，不宣称普遍决策规则或经验新验证。 新增E适用的哲学论证，区分描述扩展、共同善及组织替代；无新定理或经验验证，广义生的完整分类保持开放。 后天基本条件的哲学适用论证已给出，语言形成证据不冒充规范分类；无新定理、经验重复或独立验收，具体阈值和基本冲突仍开放。 新增地位与关系修订的公理化哲学连接及Long等2024原典比较，无新定理或现有AI地位判定。 此连接新增16项 Lean 定理／32项审计，另列30项继承定理／46项审计；复用后天基本条件的哲学成果，目标意义、读取忠实性与真实可行性仍有对应负担。作者反审，无新经验或独立验收。 本轮两模块共23项新定理／42项声明审计，30项继承实践定理／46项审计分列；独立agent验收。结构模块的18／35导入不重复计数。无新经验；未败证书不等于安全、许可或完整理由保存。 理由的非排他实践作用、混合动机与有界形成责任已有相连哲学论证；G0/J/E明示，作者反审，无新定理、经验验证或独立验收，不宣称正确理解必然成为动机。 BC1 保留新增承诺及零机会代价；本轮 BC2 仅为可被其他理由限制的比较根据，撤回由严重度差异直接决定分配的初稿。无新数学、经验或独立验收，既有比较器不变；并行匹配证明另属其研究。 形成评估的18项 Lean 定理／34项审计与46项继承定理／78项审计保留；后续为理论范围纠正，无新定理或科学重跑。复用已有前向形成、推展风险及有根据取得成果，不宣称实际风险已校准或每次推进必然成功。 本轮为两项原始调查约束的哲学应用，有独立证据审计与完成评审；无新定理、实验或重复验证。来源的有限实际停止获信用；完整替代历史与陌生智能的实际根据仍须分别取得。 三项有范围原典评估与作者反审；无新定理或实验复制。当前墙为新生活根据可靠修订实际关切的充分支持形成解释，不要求无初始关切、纯粹动机或全部未来无错，也未证明不可能。 本轮为路线研究与作者反审，复用已有接受者学习分析、辨别界限及前向接续，新增三项有范围原典评估；无新定理、实验、机制运行或独立验收，一般可靠形成仍开放。 本轮新增14项 Lean 定理／23项声明审计，30项继承定理／46项审计及两项实查应用例分列；独立论证反审与源／回执审计通过，无新经验验证。累计比较只刻画指定正权重诊断族，LC 为额外且可被其他理由限制的规范承诺，不自动决定分配或取消机会。 共同风险扩展新增18项 Lean 定理／30项声明审计，仅导入Std；事件规律与权重明确给定，无新经验验证、规范总排序或独立验收。 新增6项 Lean 定理／15项声明审计全空；固定群体反例与条件拼接障碍只检验所列规则及前提，不证明无限制加总、普遍不可能或自动决定机会。原典评估与作者反审完成，无新经验或独立验收。 本轮完成条件性的哲学解释、三类竞争解释及判别设计，初始关切、学习能力与支持明示；三项有范围原典比较，作者反审，无新定理、实验或独立验收，可靠取得仍未验证。 本轮8项新 Lean 定理／23项声明审计通过，继承30项／46项及一项应用例分列；独立反审已接受。LR 仍为有机会代价的新增规范候选，非连续性的定理；有限有理票型的机会下界须先获根据，严格改善需原路线正概率，无新经验验证。 风险分担新增19项Lean定理／36项显式审计；旧18项风险定理不重跑。RS是公开的额外规范承诺，实际概率、同等性、权限及信息取得未由数学认证。 首轮 Reddit／Apollo 与 D&D 主来源、竞争解释及理论整合已完成；随后撤回过弱靶子的成果定位，营收仅作背景，不度量利润或识别目标。递归机制尚待实际对应；不是全网净退化、完整因果效应或独有解释力的证明。新实验不再是承认现实检验的门槛。 新增7项 Lean 定理／15项空依赖审计，检验完整最终分布、观察后的条件机会、表示不足与保持修订的组合。机会与安顿的规范根据明确继承；无独立验收、经验认证或全部机会权重的推导。 §§37–42完成选定理论候选及反审；独占身份的关切仍是实质反例。规范适用不等于动机扩展，原典与有限行为研究不认证可靠性；无新增数学证明或实验。 初始机会本轮4项新Lean定理／10项声明审计，仅诊断正票加预期人数最大化：无界票域无最大解，固定N≥2给(N−1,1)，不证CP或充分份额；独立反审接受，11项产物绑定，无继承复编。 §§43–48完成条件性认识候选；休眠、依存、调查改变和真实误认均保留。复用知识论与J4，无普遍检测器、新风险阈值、数学定理或实验。 所选广告技术历史的机制对应、对手解释及改革比较已完成；复用旧证明，不识别全部初始优势、净福利或完整吸引域，亦不报告当前诉讼终局。",
+    "scope_en": "A current primary direction. The direction argument and new connected mechanism are independently accepted, not unfinished interfaces. New connection: 27 theorems/84 new and 46 inherited declaration audits, 13 histories/221 full states, with normative adoption, correspondence, authority, finite funding and deployment scope explicit. This session adds a separate 23-theorem/43-audit followup, with 93 inherited theorems/165 audits separately credited; author counterreview, no new empirical or independent-agent acceptance. Adds a defended ethical-learning candidate under G0/J and inherited epistemic commitments; author counterreview, no new mathematics, empirical study or independent acceptance. A theoretical continuation adds eight generic theorems/nine axiom-free new declaration audits, separately retaining 30 inherited practical theorems/46 audits; open discovery, warranted recognition and actual motivation remain scoped unfinished connections. A theoretical continuation adds 20 theorems/36 audits and directly imports concurrent concern extension; 38 inherited theorems/55 audits are separate. Actual coverage and normative classification remain premises, without a universal decision rule or new empirical validation. Adds a philosophical account of substantive correspondence E, descriptive extension, shared goods and carrier succession; no new theorem or empirical validation, and no complete classifier of wider living. Adds a defended application account of acquired basic conditions, keeping language-formation evidence distinct from ethical classification; no new theorem, empirical replication or independent acceptance. Particular thresholds and basic conflicts remain open. Adds a philosophical connection on formed standing and relational revision under the explicit axioms, with a scoped Long et al. 2024 comparison; no new theorem or verdict on any existing AI’s status. This connection adds 16 Lean theorems/32 audits, with 30 inherited theorems/46 audits separate. It reuses the formed-basic-conditions argument; target meaning, faithful readings and actual eligibility retain correspondence obligations. Author counterreview, no new empirical or independent acceptance. The two new modules contribute 23 theorems/42 explicit audits, with 30 inherited practical theorems/46 audits separate; independent-agent acceptance. The structural module’s 18/35 import is not recounted. No new empirical study; undefeatedness does not establish safety, permission or full reason preservation. Connected philosophical arguments now cover nonexclusive practical uptake, mixed motives and bounded formative responsibility under explicit G0/J/E, with author counterreview. No new theorem, empirical validation, independent acceptance or guaranteed motivation from understanding is claimed. BC1 retains its additional commitment and chance cost. This BC2 continuation supplies only a pro tanto comparative reason and withdraws the draft inference to deterministic allocation. No new mathematical or empirical result or independent acceptance; the comparator is unchanged and concurrent matching proofs retain separate ownership. The formative-assessment package retains 18 Lean theorems/34 audits and 46 inherited theorems/78 audits. The correction adds no theorem or scientific rerun. Existing prospective formation, projection/risk and warranted-acquisition results are reused, without certifying actual risk estimates or guaranteed progress. This round adds a philosophical application constrained by two primary investigations, with independent evidence audit and completion review; no new theorem, experiment or replication. Limited actual stopping is credited; fuller replacement histories and the realization of unfamiliar intelligences retain separate evidence burdens. Three bounded primary-source assessments and author counterreview, with no new theorem or empirical replication. The present wall is an adequately supported formation account of reliable operative revision for new living grounds, without requiring no initial concern, pure motives or infallibility; no impossibility is proved. This route study and author counterreview reuse completed recipient-learning analysis, identification bounds and prospective continuation, with three bounded primary-source assessments. No new theorem, experiment, model run or independent acceptance; general reliable acquisition remains open. This round adds 14 Lean theorems/23 declaration audits, separately crediting 30 inherited theorems/46 audits and two checked application examples. Independent substantive review and source/receipt audit passed; no new empirical validation. Cumulative comparison characterizes only the specified positive-weight diagnostic family. LC is an additional defeasible normative commitment, not an automatic allocation or denial of chances. Joint-risk extension: 18 new Lean theorems / 30 explicit audits, importing only Std. Event laws and weights remain supplied; no new empirical validation, universal normative ranking or independent acceptance. Six new Lean theorems and fifteen empty declaration audits test the stated filter and conditional composition premises. They establish neither unrestricted aggregation, universal impossibility nor an automatic chance verdict. Primary assessment and author counterreview are complete; no new empirical result or independent acceptance. This round completes a conditional philosophical account, three specified explanatory alternatives and a discriminating design. Initial concern, learning capacities and support are explicit. Three bounded primary comparisons and author counterreview; no new theorem, experiment or independent acceptance, and reliable acquisition is unverified. Eight new Lean theorems/23 declaration audits pass, with 30 inherited theorems/46 audits and one application example separate; independent review accepted. LR remains an additional normative candidate with a chance cost, not a continuity theorem. Finite rational ticket floors need prior warrant and strict improvement requires positive original route weight; no new empirical validation. Risk-sharing adds 19 Lean theorems / 36 explicit audits; the prior 18 risk theorems are not rerun. RS is an explicit additional normative commitment; actual probabilities, comparable standing, permission and acquired information are not mathematically certified. Initial primary-source integration and rivals for Reddit/Apollo and D&D are complete; the weak empirical target is subsequently withdrawn. Revenue is background rather than profit or objective identification, and the recursive mechanism still needs empirical correspondence. Whole-network decline, a complete causal effect and explanatory uniqueness are not established. New experiments are not a gate for recognizing existing evidence. Seven new Lean theorems / fifteen empty audits check full terminal laws, conditional chances, representational insufficiency and faithful composition. Normative warrant for chances and settlement is explicitly inherited; no independent acceptance, empirical certification or complete chance weights. Sections 37–42 complete the selected candidate and author counterreview. Exclusive attachment remains a substantive countercase; normative applicability does not guarantee motivational extension. Primary comparisons do not establish reliability; no new proof or experiment. This initial-chance round adds 4 theorems/10 declaration audits of positive tickets plus headcount maximization: no maximum in the unbounded domain and (N−1,1) at fixed N≥2. It proves neither CP nor adequate shares. Independent review accepts the scope; 11 artifacts are bound, with no inherited recompilation. Sections 43–48 complete a conditional recognition candidate, preserving dormancy, dependence, intervention effects and misrecognition. Existing epistemic commitments and J4 are reused; no universal detector, new risk threshold, theorem or experiment. The selected ad-tech history has a completed mechanism correspondence, rival assessment and reform comparison. Existing proofs are reused; origins of all advantage, net welfare, a complete basin and current final litigation status are not established.",
+    "links": [
+      {
+        "label_zh": "对齐与治理中的未来条件",
+        "label_en": "Conditions of a future in alignment and governance",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md",
+        "label_zh": "当前双语方向论证",
+        "label_en": "Current bilingual direction argument"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md",
+        "label_zh": "论证、对应与完成",
+        "label_en": "Argument, correspondence and completion"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/alignment-direction-verification.json",
+        "label_zh": "新实例实查回执",
+        "label_en": "Checked case-instance receipt"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-REVIEW.md",
+        "label_zh": "独立完成审查与重编译",
+        "label_en": "Independent completion review and recompilation"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#current-generative-alignment-priority",
+        "label_zh": "当前首要方向与未解连接",
+        "label_en": "Current priority and unresolved connection"
+      },
+      {
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+        "label_zh": "Ren的优先级及完成规则",
+        "label_en": "Ren’s priority and completion rule"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+        "label_zh": "当前方向与完成成果分列",
+        "label_en": "Active directions and completed results"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md",
+        "label_zh": "第一轮规范连接、反方与判别",
+        "label_en": "First normative connection, rivals and discriminators"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+        "label_zh": "理解自身形成及目的修订",
+        "label_en": "Understanding formation and revising goals"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md",
+        "label_zh": "相连论证、前提、反方与证明",
+        "label_en": "Joined argument, premises, counterreview and proofs"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-formation-revision-verification.json",
+        "label_zh": "43项新定理的实查回执",
+        "label_en": "Checked receipt for 43 new theorems"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-REVISION-CONTINUATION.md",
+        "label_zh": "已完成的相连历史",
+        "label_en": "Completed connected history"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REFORM-EVIDENCE-INTEGRATION.md",
+        "label_zh": "改革、证据与修复的相连研究",
+        "label_en": "Reform, evidence and actual repair"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/reform-evidence-verification.json",
+        "label_zh": "23项新定理实查回执",
+        "label_en": "Receipt for 23 new theorems"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+        "label_zh": "伦理学习与新理由的形成",
+        "label_en": "Ethical learning and new grounds"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+        "label_zh": "理论连接、来源与作者反审",
+        "label_en": "Argument, sources and author counterreview"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONCERN-AND-NEW-REASONS.md",
+        "label_zh": "理由扩展与比较传递",
+        "label_en": "Extended reasons and comparison transfer"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONCERN-EXTENSION-INTEGRATION.md",
+        "label_zh": "正面论证、原典、反审与实查",
+        "label_en": "Argument, sources, counterreview and checks"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-EXTENSION-INTEGRATION.md",
+        "label_zh": "评价扩展、未定应用与反审",
+        "label_en": "Evaluative extension, unresolved applications and counterreview"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/evaluative-extension-verification.json",
+        "label_zh": "20项新定理实查回执",
+        "label_en": "Receipt for 20 new theorems"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#living-realization-and-normative-significance",
+        "label_zh": "伦理内容的生活根据",
+        "label_en": "Living grounds of ethical content"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#living-realization-continuation",
+        "label_zh": "实现根据、反审及完成范围",
+        "label_en": "Realization warrant, counterreview and scope"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONCERN-AND-NEW-REASONS.md#formed-basic-conditions",
+        "label_zh": "后天基本条件的当前论证",
+        "label_en": "Current argument for acquired basic conditions"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMED-BASIC-CONDITIONS-INTEGRATION.md",
+        "label_zh": "基本分类、原典与反审",
+        "label_en": "Basic classification, primary readings and counterreview"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#formed-ethical-standing",
+        "label_zh": "形成中的伦理地位",
+        "label_en": "Formed ethical standing"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#formed-standing-argument",
+        "label_zh": "地位论证、原典与反审",
+        "label_en": "Standing argument, primary comparison and counterreview"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CLASSIFICATION-REVISION-INTEGRATION.md",
+        "label_zh": "取得记录、分类修订与反审",
+        "label_en": "Acquired records, revised classification and counterreview"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/classification-revision-verification.json",
+        "label_zh": "16项新定理实查回执",
+        "label_en": "Receipt for 16 new theorems"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#changing-the-conditions-of-review",
+        "label_zh": "改变自身评估条件",
+        "label_en": "Changing the conditions of review"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-INTEGRATION.md",
+        "label_zh": "评价覆盖、结构修复与推论边界",
+        "label_en": "Review coverage, structural repair and inference boundary"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-REVIEW.md",
+        "label_zh": "两模块独立验收",
+        "label_en": "Independent acceptance of both modules"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-PROOF.md",
+        "label_zh": "18项覆盖定理与范围",
+        "label_en": "18 coverage theorems and scope"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-STRUCTURAL-COVERAGE-PROOF.md",
+        "label_zh": "5项结构修复定理",
+        "label_en": "Five structural-repair theorems"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#motivational-uptake-and-formation",
+        "label_zh": "理由的实际作用与形成责任",
+        "label_en": "Practical uptake and formative responsibility"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#motivational-uptake-argument",
+        "label_zh": "关切接续的论证与反审",
+        "label_en": "Uptake argument and counterreview"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+        "label_zh": "基本冲突的同等救助原则",
+        "label_en": "Equal rescue in basic conflict"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BASIC-CONFLICT-INTEGRATION.md",
+        "label_zh": "新增承诺、原典与反审",
+        "label_en": "Additional commitment, primary reading and counterreview"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMATIVE-ASSESSMENT-INTEGRATION.md",
+        "label_zh": "形成中的评估、反审及所遇界限",
+        "label_en": "Formative assessment, counterreview and the stopping boundary"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/formative-assessment-verification.json",
+        "label_zh": "18项新定理实查回执",
+        "label_en": "Receipt for 18 new theorems"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#warranted-acquisition-and-retained-participation",
+        "label_zh": "取得根据与保留参与",
+        "label_en": "Warranted acquisition and retained participation"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-INTEGRATION.md",
+        "label_zh": "实际取得、用途范围与回应",
+        "label_en": "Acquisition, evidence roles and response"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-ARGUMENT.md",
+        "label_zh": "共同修订的肯定论证",
+        "label_en": "Affirmative joint-revision argument"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-SOURCES.md",
+        "label_zh": "原始来源与读取范围",
+        "label_en": "Primary sources and reading scope"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-EVIDENCE-AUDIT.md",
+        "label_zh": "独立证据与推论审计",
+        "label_en": "Independent evidence and inference audit"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-REVIEW.md",
+        "label_zh": "完成后的独立验收",
+        "label_en": "Independent completion acceptance"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#developmental-conditions-and-present-wall",
+        "label_zh": "关切形成的条件与当前墙",
+        "label_en": "Developmental conditions and present wall"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#developmental-wall-investigation",
+        "label_zh": "五条路线、原典与停止范围",
+        "label_en": "Five routes, primary sources and stopping scope"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMATIVE-ASSESSMENT-INTEGRATION.md#10-fresh-understanding-and-situated-continuation",
+        "label_zh": "前向理解与风险下继续生成",
+        "label_en": "Prospective understanding and continuation under risk"
+      },
+      {
+        "path": "sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md#future-understanding-and-situational-risk",
+        "label_zh": "Ren对停止推断的纠正",
+        "label_en": "Ren’s correction to the stopping inference"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md#unequal-basic-losses",
+        "label_zh": "基本损失程度与比较理由",
+        "label_en": "Basic-loss gravity and comparative reasons"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BASIC-LOSS-SEVERITY-INTEGRATION.md",
+        "label_zh": "程度论证、原典与修订反审",
+        "label_en": "Gravity argument, primary reading and revised counterreview"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#next-developmental-routes",
+        "label_zh": "关切形成的后续路线",
+        "label_en": "Next routes for concern development"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#next-developmental-route-assessment",
+        "label_zh": "路线比较、原典与反审",
+        "label_en": "Route assessment, sources and counterreview"
+      },
+      {
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#research-next-developmental-routes",
+        "label_zh": "Ren要求研究后续路线",
+        "label_en": "Ren’s next-route request"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md#joint-number-and-gravity",
+        "label_zh": "数量与程度的联合比较",
+        "label_en": "Joint number-and-gravity comparison"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-INTEGRATION.md",
+        "label_zh": "联合损失比较整合",
+        "label_en": "Joint-loss integration"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-ARGUMENT.md",
+        "label_zh": "LC 肯定论证",
+        "label_en": "Affirmative LC argument"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-PROOF.md",
+        "label_zh": "两层诊断证明范围",
+        "label_en": "Two-tier diagnostic proof scope"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-REVIEW.md",
+        "label_zh": "独立反审与验收",
+        "label_en": "Independent counterreview and acceptance"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-SOURCES.md",
+        "label_zh": "原典范围与作用",
+        "label_en": "Primary-source scope and role"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/unequal-basic-losses-verification.json",
+        "label_zh": "联合损失 Lean 实查回执",
+        "label_en": "Joint-loss Lean verification receipt"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+        "label_zh": "共同风险、修订与界限",
+        "label_en": "Joint risk, revision and boundary"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md#12-risk-changes-with-the-relations-we-form",
+        "label_zh": "风险关系也会改变",
+        "label_en": "Risk relations also change"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/joint-risk-revision-verification.json",
+        "label_zh": "共同风险实查",
+        "label_en": "Joint-risk verification"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CHOICE-AND-GENERATIVE-CONTEXT.md",
+        "label_zh": "共同选择与生成情境",
+        "label_en": "Joint choice and generative context"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AGGREGATION-CONTEXT-INTEGRATION.md",
+        "label_zh": "有限合并的论证、反审与证明",
+        "label_en": "Aggregation argument, counterreview and proofs"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/aggregation-context-verification.json",
+        "label_zh": "情境比较实查回执",
+        "label_en": "Context comparison verification"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#concern-content-acquisition",
+        "label_zh": "关切内容形成候选",
+        "label_en": "Concern-content acquisition candidate"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#concern-content-acquisition-account",
+        "label_zh": "形成前提、原典与竞争解释",
+        "label_en": "Acquisition premises, sources and alternatives"
+      },
+      {
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#continue-concern-content-acquisition",
+        "label_zh": "Ren要求沿选定路线继续",
+        "label_en": "Ren’s continuation along the selected route"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md#crossed-claims-and-new-opportunities",
+        "label_zh": "交叉请求与新共同机会",
+        "label_en": "Crossed claims and new joint opportunities"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md",
+        "label_zh": "局部稳定与机会整合",
+        "label_en": "Local stability and opportunity integration"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
+        "label_zh": "LR 肯定论证",
+        "label_en": "Affirmative LR argument"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-PROOF.md",
+        "label_zh": "同次保护与菜单控制的实查",
+        "label_en": "Checked coupling and menu control"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-REVIEW.md",
+        "label_zh": "交叉请求独立反审",
+        "label_en": "Independent crossed-claims review"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-SOURCES.md",
+        "label_zh": "机会与有限合并的原典范围",
+        "label_en": "Primary scope for chances and aggregation"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/crossed-claims-verification.json",
+        "label_zh": "机会接续 Lean 实查回执",
+        "label_en": "Opportunity-continuation Lean receipt"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#9-continue-through-equal-basic-risk-sharing",
+        "label_zh": "同等风险的理由与实查",
+        "label_en": "Equal-risk argument and checks"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md#13-sharing-basic-risk-and-revising-the-selection-rule",
+        "label_zh": "分担与选择规则修订",
+        "label_en": "Sharing and selector revision"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/basic-risk-sharing-verification.json",
+        "label_zh": "风险分担实查",
+        "label_en": "Risk-sharing verification"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#14-push-beyond-symmetry-fairer-exposure-can-add-basic-harm",
+        "label_zh": "更公平暴露与新增基本损失",
+        "label_en": "Fairer exposure and added basic loss"
+      },
+      {
+        "label_zh": "市场与互联网的现实检验",
+        "label_en": "Actual market and internet tests",
+        "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md"
+      },
+      {
+        "label_zh": "退化的制度形态",
+        "label_en": "Institutional degeneration",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md#enshittification-as-degeneration"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CHOICE-AND-GENERATIVE-CONTEXT.md#chance-revision",
+        "label_zh": "机会与选择规则修订",
+        "label_en": "Chances and selector revision"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-REVISION-INTEGRATION.md",
+        "label_zh": "机会修订的论证、反审与证明",
+        "label_en": "Chance revision argument, counterreview and proofs"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/chance-revision-verification.json",
+        "label_zh": "机会修订实查回执",
+        "label_en": "Chance revision verification"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#concern-beyond-familiarity-and-return",
+        "label_zh": "陌生与无回报的关切",
+        "label_en": "Unfamiliar and nonreciprocal concern"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#unfamiliar-living-and-nonreciprocal-concern",
+        "label_zh": "关切扩展的前提与反审",
+        "label_en": "Extension premises and counterreview"
+      },
+      {
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#continue-beyond-familiarity-and-return",
+        "label_zh": "继续陌生生活连接的指示",
+        "label_en": "Directive to continue unfamiliar-life connection"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-PROTOCOL.md",
+        "label_zh": "本轮范围",
+        "label_en": "Study protocol"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-ARGUMENT.md",
+        "label_zh": "CP肯定论证",
+        "label_en": "CP affirmative argument"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-PROOF.md",
+        "label_zh": "正概率实现诊断",
+        "label_en": "Positive-chance diagnostic"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-REVIEW.md",
+        "label_zh": "初始机会独立反审",
+        "label_en": "Independent chance review"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-SOURCES.md",
+        "label_zh": "初始机会原典评估",
+        "label_en": "Chance source assessment"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-INTEGRATION.md",
+        "label_zh": "初始机会整合",
+        "label_en": "Initial-chance integration"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/chance-grounding-verification.json",
+        "label_zh": "4项定理实际回执",
+        "label_en": "4-theorem actual receipt"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#recognizing-unfamiliar-living",
+        "label_zh": "陌生生活辨认与回应",
+        "label_en": "Unfamiliar-life recognition and response"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#unfamiliar-living-recognition",
+        "label_zh": "辨认的来源与反审",
+        "label_en": "Recognition sources and counterreview"
+      },
+      {
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#continue-unfamiliar-living-recognition",
+        "label_zh": "继续辨认连接的指示",
+        "label_en": "Directive to continue recognition"
+      },
+      {
+        "label_zh": "接口控制与改革比较",
+        "label_en": "Interface control and reform comparison",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md#interface-control-and-rule-reproduction"
+      },
+      {
+        "label_zh": "历史机制对应及对手",
+        "label_en": "Historical correspondence and rivals",
+        "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#interface-control-and-corrective-change"
+      }
+    ],
+    "connection_zh": "目标形成—后果使用—有根据的操作目的修订—选择安排改革—有限接续已条件性完成；更大的现实形成与部署问题保持独立范围，不重复此接口。 新前沿：在不预送正确读取路线和修复方案时，取得遗漏后果、选择有能力承担的回应。 伦理学习的概念连接已给出；新生的意义范围、未定基本冲突及实际可靠形成分别保留论证负担。 本轮已辨明内容扩展的比较条件；接续研究区别的取得、规范相关性及实际关切形成，正面生成也可成为入口。 理论前沿：在不给定正确答案的情况下，取得新关系的区别并论证候选描述及基本／次级分类的根据。 新内容的生活根据已有明确应用候选；陌生组织的更广地位、基本分类及实际可靠取得仍须分别论证。 本轮给出历史形成到基本支承分类的有辩护接续；下一理论问题是已获根据的基本要求彼此冲突，实际开放取得与可靠动机另行保持范围。 已给出由新形成根据到角色、权限及责任重审的连接；具体陌生智能的实际实现、持续身份及未定冲突保持独立负担。 记录到必要性分类及替代导致修订的条件性连接已完成；下一连接是目标描述与可靠观察的共同取得，不再把完全忠实的读数当作未解释的输入。 评价压缩、范围变化与结构修复的接口已完成；真正被阻断的是有限成功记录独自推出未限定未来认证。适用规律与可靠观察的共同取得仍为更强连接，不倒改完成标准。 关切的实践作用及培养要求的概念连接作为成果复用；更强连接是对陌生生活根据的理解怎样可靠地修订实际关切，同时保留分寸及正当参与。 同等救助候选与不等损失的一对一理由说明已有论证及反审；下一中心连接是人数、程度与实际可行方案变化下的共同选择。已完成分类、责任和程序不重开。 初始区别的追溯界限仍有效；此前用作较广停止理由的推断已依 Ren 纠正撤回。接续当前有根据把握、适当风险下的行动、新后果与理解／目的修订，不把完整历史或普遍语义充分性设为一般门槛。 共同取得的实际证据接入已完成，不重开一般校准。现有来源不足以认证特定后续参与目标的完整替代历史；这是该推论的证据边界，不是普遍不可能，也不把追查这一组历史设为所有对齐研究的必经门槛。 本次依Ren指示在可靠形成连接处停止；跨越需要具体取得关系及可区分实质对手的支持，不再重复已完成的G0方向、目标写入或评价覆盖接口。其他独立研究不被标为受阻。 Ren随后要求研究后续路线，本会话已继续并完成排序；下一交付为一个具体形成候选、初始条件、未预装的新连接、实质对手与可改变取舍的观察。不要求先完整读出动机、恢复历史或执行新大型实验。 数量与程度同向的联合比较已完成；下一连接为交叉损失中的有限合并、机会及新增实际可行方案怎样改变理由。两层计数未定不证明伦理不可比，直接中断数相同不等于完整损失相同；跨生活形式的分层与实际单位仍需有根据说明。 本轮新界限是证成共同基本接续与其他基本风险交叉时的优先；先用共同证据、部分界限及可行支持修订推进。已有J4允许有权限的及时决定，不以缺少普遍排序阻断继续生成。 已排除未经辩护的整体过滤捷径，保留实际生活理由；下一连接为交叉损失、机会与有根据的拼接限制怎样共同支持选择，直接复用 BC1、BC2、LC。 前轮指定的具体形成候选与对照现已给出，直接复用；下一理论连接是关切怎样走向没有共同史或预期回报的陌生生活，保留有效拒绝、分工与有界承担，实际形成与保持的证据问题继续开放。 局部比较候选与新共同机会的接续已完成，不重开既有 LC、升级过滤或一般拼接检验。更强连接是实际变化是否处于 LR 范围，以及较远交叉损失和真实新增成本／风险中的合并与机会根据；未满足最强要求也不能未经新辩护替另一选择消除请求。 对称交叉风险现有RS候选及实查，不再仅留为一般程序未定；尚待论证不同严重度、重叠要求、差别权利或增加总体损失时的比较。原来有根据的混合规则可被后来可行的保护改进替代，继续生成不受普遍总排序门槛阻断。 更进一步的同等严重度例表明：最重暴露从40%降到31%，任一基本损失机会却从50%升到62%；需证成公平分担与实际保护之间的取舍。 本会话眼前转向已知共同后果取得或失去制度修订效力的实际关系；陌生处境的关切扩展保留而非唯一下一步。 已完成机会安排的历史接续条件，复用 LR、共同保护和对称 RS；下一比较保留不等要求、较公平暴露与增加基本受损机会的取舍，以及真实新冲突对有效安顿的影响。 关切扩展已给出条件性连接；后续聚焦陌生生活关系的有根据辨认及评价压力下的保持，复用G0/J与有限承担。 初始进入已有有范围候选，直接选择对手仍在；下一连接是以实际需要、共同支承与正当承担辩护充分份额或区间，不能将任意正数、技术分辨率或未找到赢家当成伦理根据。 后续聚焦更完整的生活根据与当前成功指标冲突时的持续影响；普遍识别和深度不确定比较保留范围。 当前市场连接转向有益替代与纠正的实际支持、权限及随依存变化的接续，不重开已完成的条件接续证明。",
+    "connection_en": "Acquired ends, consequential use, warranted operative revision, allocation reform and finite continuation are conditionally complete; broader real-world formation and deployment retain separate scope. New frontier: acquire omitted consequences and select an affordable response without being handed the correct access route and repair. The conceptual ethical-learning connection is now articulated; unfamiliar living significance, unresolved basic conflicts and reliable actual formation retain distinct burdens. Comparison under extended content is now delimited; investigate acquisition, normative relevance and operative concern, including positive formation as an entry point. Theoretical frontier: acquire distinctions about new relations and warrant the candidate descriptions and basic/secondary classifications without supplying the correct answer. A particular application account now grounds new content in living relations; wider standing of unfamiliar organizations, basic classification and reliable actual acquisition retain separate burdens. The formation-to-basic-support classification now has a defended continuation. The next theoretical question concerns conflicts among warranted basic claims; actual open acquisition and reliable motivation retain their separate scopes. New grounds now connect to reassessment of roles, permissions and responsibilities; actual realization, continuity and unsettled conflicts of particular unfamiliar intelligences remain separate burdens. The conditional record-to-necessity connection and revision by alternatives are complete. The next connection is joint acquisition of the target description and reliable observation, without leaving perfectly faithful readings as unexplained inputs. Review compression, scope change and structural repair are completed interfaces. The blocked inference is finite passing records alone to unrestricted future certification. Joint acquisition of applicable laws and reliable observations remains a stronger connection without changing completed criteria. Reuse the completed conceptual account of uptake and formative requirements. The stronger connection concerns reliable revision of operative concern through understanding unfamiliar living grounds while retaining judgment and legitimate participation. Equivalent rescue and the one-to-one gravity reason have arguments and counterreview. The next central connection is joint choice across numbers, gravity and changing actual alternatives, without reopening completed classification, responsibility or procedure. The initial-history limit remains valid; its broader use as a stopping reason is withdrawn following Ren’s correction. Continue through grounded present awareness, justified action under risk, new consequences and revision of understanding or ends, without a general requirement for complete history or universal semantic sufficiency. The source-constrained joint-acquisition connection is completed, without reopening generic calibration. These sources do not certify the fuller replacement history for a specified subsequent participation target. This bounds that inference, not all inquiry or alignment; following this particular cohort is not a universal research prerequisite. This requested continuation stops at the reliable-formation bridge. Progress requires concrete acquisition relations and discriminating support, reusing completed G0 direction, operative goal revision and review coverage; other investigations are not marked blocked. Ren subsequently requested investigation of next routes; the inquiry resumed and route selection is complete. Next: one concrete acquisition account with initial conditions, an unsupplied transition, substantive rivals and revising observations. Complete motive readout, historical recovery and a new large experiment are not prerequisites. Joint comparison where number and gravity align is completed. The next connection concerns justified aggregation, chances and new actual alternatives in crossed cases. An unresolved two-tier diagnostic does not prove ethical incomparability, and equal direct interruption counts do not establish equal complete losses. Cross-form classification and actual units retain substantive burdens. The new scoped wall is justified priority when shared basic continuation and other basic risks conflict, after joint evidence, partial bounds and feasible support repairs. Existing J4 permits authorized timely decisions; absence of a universal ranking does not block generativity. The unsupported global-filter shortcut is rejected while living grounds remain. Next: joint choice across crossed losses, chances and justified composition limits, reusing BC1, BC2 and LC. The previously requested concrete candidate and contrasts are now available for reuse. Next theoretical connection: concern extending to unfamiliar lives without shared history or expected return, retaining valid refusal, division of work and bounded commitments; evidence for actual acquisition and retention remains open. The local comparison candidate and new joint-opportunity connection are completed, reusing LC and the upgrade/composition results. Stronger work concerns warranted actual LR boundaries and aggregation or chances for more distant crossed losses and real new costs/risks. An unsatisfied strongest request does not without further justification erase a claim against the alternative actually chosen. The symmetric crossed-risk case now has an RS candidate and checked application. Unequal gravity, overlapping claims, differential rights and added overall loss require further comparison. Newly feasible protection can supersede an earlier justified mixture; generativity need not await a universal ranking. A further equal-gravity case reduces greatest exposure from 40% to 31% while increasing the chance of some basic loss from 50% to 62%; fairness versus actual protection requires further warrant. This session now follows how recognized shared consequences acquire or lose effective influence over institutional revision; extension of concern beyond familiar relations remains open rather than the sole next step. History-sensitive continuation is supplied, reusing LR, joint protection and symmetric RS. Remaining comparisons concern unequal claims, fairer exposure at the price of added basic harm, and genuinely changed conflicts with valid settlements. Reuse the conditional extension and G0/J; investigate warranted recognition of unfamiliar living relations and retention under evaluative pressure, preserving bounded responsibility. Initial admission now has a scoped candidate while the direct-choice rival remains live. Next justify adequate shares or ranges through actual needs, common support and warranted commitments; mere positivity, technical resolution or failure to find a winner supplies no such warrant. Next investigate sustained influence when fuller living grounds conflict with incumbent success criteria; universal recognition and deep-uncertainty comparison remain open. The market connection now concerns actual support, authority and continuation of useful alternatives and correction as dependencies change, reusing completed conditional succession proofs.",
+    "source_section": "Current generative alignment priority",
+    "source_line": 3,
+    "row_type": "application_programme",
+    "source_id": "alignment_governance"
+  },
+  "unrelated_entries_sha256": "219f04e93f41c9225996279283881a6d1d00b091ee31388a4ce662d71631a627",
+  "other_table_lines_sha256": "5a56dac28eef3e9387f5ac6d9d40407ff0a5d54f63cb836dda172e9dd1346df8",
+  "owned_suffixes": {
+    "claim_zh": " RSL进一步提出有根据分担判断的有限延续；中间混合方案降低极端取舍，修订须携带理由及其整体适用范围。",
+    "claim_en": " RSL proposes limited retention of a warranted sharing judgment. Intermediate mixtures refine the choice; revision must carry its grounds and their whole-comparison scope.",
+    "scope_zh": " 本轮新增9项Lean定理／13项审计，继承19项／36项分列；检查两项风险指标的边界、给定约束及范围组合，不证明RSL或任何伦理风险上限。",
+    "scope_en": " This extension adds 9 Lean theorems / 13 audits, with 19 inherited theorems / 36 audits separate. It checks a two-diagnostic frontier, a supplied constraint and scope composition, not RSL or an ethical risk allowance.",
+    "connection_zh": " 公平可承受有限代价现有公开候选；连续微调不能自动续发同一范围的许可。尚需在完整具体比较中证成可容许的偏离，本例17%／37%、24%／34%及31%／31%均未获伦理认证；新根据可正当地修订范围。",
+    "connection_en": " A finite-cost sharing route is now explicit. Successive small revisions cannot automatically renew the same allowance. A permissible departure still needs warrant in a fully specified comparison; none of the 17%/37%, 24%/34% or 31%/31% proposals is ethically certified. New grounds can legitimately revise the scope."
+  },
+  "added_links": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#15-a-limited-fair-sharing-reason-can-survive-some-added-risk",
+      "label_zh": "公平代价、范围与反审",
+      "label_en": "Fairness costs, scope and counterreview"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md#14-bounded-fairness-costs-and-the-scope-of-revision",
+      "label_zh": "修订理由的有限范围",
+      "label_en": "Bounded scope of revision grounds"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/bounded-risk-revision-verification.json",
+      "label_zh": "有限风险修订实查",
+      "label_en": "Bounded risk revision verification"
+    }
+  ],
+  "entry_after": {
+    "id": "M20",
+    "title_zh": "生成性对齐：当前首要方向之一",
+    "title_en": "Generative alignment: a current primary direction",
+    "claim_zh": "以生生为共同根据评价目标、评价者与选择规则；方向论证及相连目标取得、判断、实际修订与有界改革现已成为完成成果，更强理论按明确范围继续。 后续接通改革自身改变实际负担及报告路线、直接取得与保留新目的的修复。 理论接续区分发现已有根据、形成新生活与理由、修订评价承诺；学习后的赞同不独自认证形成过程。 在已完成的伦理学习基础上，新增比较接口辨明理由内容扩展后旧判断的传递、不可比及有前提的反转。 评价扩展进一步区分共同改善与各应用分别否定；旧内容保持不要求旧评价永久保持。 理论接续给出生活实现、支承与进一步形成的具体根据；共同生活不能以组织规模或产出代替。 后天形成的支承可以因其在基本生活中的实际作用取得保护；生成的评价须包括其形成的后续支持要求。 形成出的生活、承受和参与可以改变原服务角色的伦理根据；考虑、责任与支配权限分列。 新增取得记录到路线必要性分类的连接：忠实读取与选项覆盖支持有范围的判断，一个真实替代即可推翻不可替代性；缩小有根据解释与扩大可行选项分列。 自我评估的选择现在有精确覆盖条件：允许有根据的压缩，区分当前菜单与任意菜单；有限成功不能独自担保新范围，全域结构加辨别记录提供正面出路。 理论接续说明理解怎样实际参与目的和准备：关切可以与报酬及其他正当动机并存，其形成条件也须接受同一规范评价。 BC1 在同等基本救助的既定范围内支持保全更多生活；BC2 的一对一说明以可避免的实际毁损给出比较理由，区分境况、保护与时机，并保留机会争议。 形成中的评估区分当前能力、过去能力及形成方法。Ren 后续指出，历史区别无法恢复，不阻止以未来事件取得同一内容的新根据或修订理解；情境把握与风险估计可支持继续生成。 实际调查现接入描述与读取的共同修订：同一事件在某项估计中排除，不抹去其他有根据的表达意义；纠正归属与保留参与、支持可以属于同一回应。 关切发展接续具体化真实根据保留、改变及新形成时的双向纠正，并将学习中取得的解释纳入形成账户；五条候选路线保留各自正面作用。 按后续指示完成路线比较：以已有局部关切取得新关系内容并重组目的为理论主线，配套形成史判别，再选择机制研究；认识进步与实际新理由不以价值权重增加为定义。 LC 接通数量与程度共同改善的有限损失比较理由：实际损失的有根据匹配及额外保护可以共同支持方向；重复描述不增加生活，共同依存须进入损失判断。 情境风险接续区分个别改善与共同失效；精确有限界限允许部分把握和正风险，支持关系修订可解除共同中断，同时保留分散损失。 有限合并接续区分抵偿限制与理由删除：最强层过滤可在增加实际基本保护后翻转选择；固定比较与局部胜出拼接的条件分别公开。 关切内容形成现有一条具体候选：已有局部关切使粗略成功与实际回应的分离取得实践意义，关系辨别通过计划修订改变目的；实际新生活及对它的动机取得分列。 LR 为同等多救的充分优先提出局部稳定承诺，使一部分稍不等的基本损失有正面比较；新增共同保护另可逐次保留旧保护，增加原先冲突的实现。 同等基本风险分担RS现有正面理由：完整损失分布相当时，减轻无根据的暴露集中；同频率选择可产生不同真实风险，新信息也能支持进一步改规则。 现实市场与互联网为 enshittification 的机制追踪提供事件：以既有外部性解释为起点，查优势怎样改变未来选择及纠正条件，不将增长与损失并存当作新发现。 机会修订接续表明：最终保护的完整联合分布相同仍可能撤销正当安顿；选择规则须保留仍有效的历史要求，并说明真实纠正的根据。 陌生与无回报的关切扩展现有两段条件性说明：辨明对方在自身参与之外的生活，再取得陌生处境中的相关根据；共同史是形成入口，不是全部关切的边界。 CP为不等且未被充分排除的基本请求提出真实正机会要求，将共同分配权限与基本回应关系相连；它是新增且可争辩的进入承诺。 陌生生活辨认现接通具体实现、支撑关系、可修订证据与有限回应；观察与分类方式也可因遗漏的生活根据而修订。 共同接口史进一步支持直接经营控制与有偿影响的区分：反馈和替代的出现也可能进入维持优势的规则调整，改革需追踪实际控制关系。 RSL进一步提出有根据分担判断的有限延续；中间混合方案降低极端取舍，修订须携带理由及其整体适用范围。",
+    "claim_en": "Appraise ends, evaluators and selection rules through shared generative grounds; the direction argument and connected acquisition, judgment, operative revision and bounded reform are now completed foundations for the broader programme. A further joined case connects reform-induced burdens and reporting changes to acquired correction and repair preserving the new goal. The theoretical continuation distinguishes discovering existing grounds, forming new living relations and reasons, and revising normative commitments; later endorsement alone does not authorize the formation process. Building on the completed ethical-learning account, a new comparison interface delimits preservation, incomparability and conditional reversal after warranted content extension. Evaluative extension further separates a common improvement from defeat in each live application; retained old content need not preserve every old verdict. The continuation articulates living realization, support and further formation as particular grounds; organizational scale and output cannot substitute for the shared living being assessed. Acquired support can warrant basic protection through its actual role in living; appraisal of formation includes the subsequent support requirements it creates. Formed living, undergoing and participation can change the grounds of an original service role; consideration, responsibility and governing authority remain distinct. A further connection derives scoped route classification from faithful acquired records and covered options; one genuine alternative defeats indispensability. Narrowing supported interpretations and expanding eligible options are distinct changes. Self-review selection now has exact certificate-coverage conditions: warranted compression is allowed, current-menu and every-menu adequacy differ, and finite success alone cannot certify a new scope. Whole-domain structure plus discriminating records supplies a positive route. The conceptual continuation explains how understanding can participate in purposes and preparation: concern can coexist with pay and other legitimate motives, while its formative conditions face the same normative appraisal. BC1 favors more extensive equivalent basic rescue in its established scope. The one-to-one account of BC2 supplies a reason based on preventable impairment, distinguishing baseline, protection and timing while retaining fair-chance disputes. Formative assessment distinguishes current capacity, earlier capacity and the method of formation. Ren’s correction clarifies that unavailable history need not prevent fresh grounds for the same content or revised understanding through future events; situational awareness and risk estimates can support continued generativity. Actual inquiry now connects joint description-and-reading revision to practice: excluding an event from one estimate need not erase its independently warranted expressive significance. Corrected attribution and continued participation/support can belong to one response. The developmental continuation specifies bidirectional correction as living grounds persist, change or form, and includes acquired interpretation during learning; five candidate routes retain their positive roles. A subsequent route assessment prioritizes acquired relational content and purpose revision within partial concern, with discriminating formation histories and conditional mechanistic investigation; epistemic progress and new particular reasons are not defined by increased valuation weights. LC supplies a limited comparative reason where number and gravity jointly improve: warranted matching and additional actual protection can support a direction together. Duplicate descriptions do not multiply living; shared dependence must inform loss assessment. Situated risk now distinguishes marginal improvement from shared failure. Exact finite bounds permit partial awareness and nonzero risk; revising support can remove joint interruption while retaining dispersed losses. The aggregation continuation distinguishes limited counterbalancing from deletion of reasons: a strongest-tier filter reverses under added actual protection; fixed-comparison and local-composition premises are separately exposed. A concrete concern-content candidate links a coarse success conception, meaningful-response mismatch, acquired relational distinctions and operative purpose revision; actual new shared goods and their motivational uptake remain distinct. LR adds a local stability commitment to BC1’s sufficient priority, supporting some slightly unequal basic-loss comparisons. Separately, newly feasible joint protection can preserve old protection on each realization and add previously conflicting protection. RS now supplies a defended reason to share comparable basic risk while preserving the complete loss profile. Equal selection frequencies can conceal different exposure; new information can support further rule revision. Existing market and internet histories provide events for tracing enshittification: start with established externality explanations and investigate how advantage changes future selection and correction, rather than treating growth alongside loss as a new finding. The chance-revision continuation shows that even equal full terminal joint laws can conceal replacement of a warranted settlement; selectors must preserve live historical requirements and explain genuine correction. A conditional extension account now distinguishes continuation beyond one's participation from acquired grounds in unfamiliar lives; shared history can form concern without delimiting every ground it can address. CP proposes actual positive opportunity for unequal basic requests not adequately excluded, grounding a limit on common allocative authority in the response relationship; it is an additional contestable admission commitment. An unfamiliar-life recognition account now connects particular realization, support, revisable evidence and bounded response; omitted living grounds can also warrant revision of observation and classification. A shared-interface history supports distinguishing direct operational control from purchased influence: feedback and alternatives can enter rule changes that preserve advantage, so reforms must track actual control relations. RSL proposes limited retention of a warranted sharing judgment. Intermediate mixtures refine the choice; revision must carry its grounds and their whole-comparison scope.",
+    "scope_zh": "当前首要方向之一；方向论证及本轮相连机制均已独立验收，不再作为待做接口。新相连结果：27新定理／84新声明审计、46继承审计，13历史／221完整状态；规范采用、对应、权限、有限资金与现实部署范围分明。 本会话后续另增23项定理／43项审计，93项继承定理／165项审计分列；此后续为同作者反审，无新经验验证或独立agent验收。 新增有辩护的伦理学习哲学候选，采用G0/J及已有认识承诺；作者反审，无新数学、经验或独立验收。 理论续研另增8项泛型定理／9项空依赖新审计，继承实践30项／46审计；保留开放发现、意义辨认及实际动机的未完成范围。 理论接续另增20项定理／36项审计，直接导入同期关切扩展；38项继承定理／55项审计分列。实际应用覆盖及规范分类仍是前提，不宣称普遍决策规则或经验新验证。 新增E适用的哲学论证，区分描述扩展、共同善及组织替代；无新定理或经验验证，广义生的完整分类保持开放。 后天基本条件的哲学适用论证已给出，语言形成证据不冒充规范分类；无新定理、经验重复或独立验收，具体阈值和基本冲突仍开放。 新增地位与关系修订的公理化哲学连接及Long等2024原典比较，无新定理或现有AI地位判定。 此连接新增16项 Lean 定理／32项审计，另列30项继承定理／46项审计；复用后天基本条件的哲学成果，目标意义、读取忠实性与真实可行性仍有对应负担。作者反审，无新经验或独立验收。 本轮两模块共23项新定理／42项声明审计，30项继承实践定理／46项审计分列；独立agent验收。结构模块的18／35导入不重复计数。无新经验；未败证书不等于安全、许可或完整理由保存。 理由的非排他实践作用、混合动机与有界形成责任已有相连哲学论证；G0/J/E明示，作者反审，无新定理、经验验证或独立验收，不宣称正确理解必然成为动机。 BC1 保留新增承诺及零机会代价；本轮 BC2 仅为可被其他理由限制的比较根据，撤回由严重度差异直接决定分配的初稿。无新数学、经验或独立验收，既有比较器不变；并行匹配证明另属其研究。 形成评估的18项 Lean 定理／34项审计与46项继承定理／78项审计保留；后续为理论范围纠正，无新定理或科学重跑。复用已有前向形成、推展风险及有根据取得成果，不宣称实际风险已校准或每次推进必然成功。 本轮为两项原始调查约束的哲学应用，有独立证据审计与完成评审；无新定理、实验或重复验证。来源的有限实际停止获信用；完整替代历史与陌生智能的实际根据仍须分别取得。 三项有范围原典评估与作者反审；无新定理或实验复制。当前墙为新生活根据可靠修订实际关切的充分支持形成解释，不要求无初始关切、纯粹动机或全部未来无错，也未证明不可能。 本轮为路线研究与作者反审，复用已有接受者学习分析、辨别界限及前向接续，新增三项有范围原典评估；无新定理、实验、机制运行或独立验收，一般可靠形成仍开放。 本轮新增14项 Lean 定理／23项声明审计，30项继承定理／46项审计及两项实查应用例分列；独立论证反审与源／回执审计通过，无新经验验证。累计比较只刻画指定正权重诊断族，LC 为额外且可被其他理由限制的规范承诺，不自动决定分配或取消机会。 共同风险扩展新增18项 Lean 定理／30项声明审计，仅导入Std；事件规律与权重明确给定，无新经验验证、规范总排序或独立验收。 新增6项 Lean 定理／15项声明审计全空；固定群体反例与条件拼接障碍只检验所列规则及前提，不证明无限制加总、普遍不可能或自动决定机会。原典评估与作者反审完成，无新经验或独立验收。 本轮完成条件性的哲学解释、三类竞争解释及判别设计，初始关切、学习能力与支持明示；三项有范围原典比较，作者反审，无新定理、实验或独立验收，可靠取得仍未验证。 本轮8项新 Lean 定理／23项声明审计通过，继承30项／46项及一项应用例分列；独立反审已接受。LR 仍为有机会代价的新增规范候选，非连续性的定理；有限有理票型的机会下界须先获根据，严格改善需原路线正概率，无新经验验证。 风险分担新增19项Lean定理／36项显式审计；旧18项风险定理不重跑。RS是公开的额外规范承诺，实际概率、同等性、权限及信息取得未由数学认证。 首轮 Reddit／Apollo 与 D&D 主来源、竞争解释及理论整合已完成；随后撤回过弱靶子的成果定位，营收仅作背景，不度量利润或识别目标。递归机制尚待实际对应；不是全网净退化、完整因果效应或独有解释力的证明。新实验不再是承认现实检验的门槛。 新增7项 Lean 定理／15项空依赖审计，检验完整最终分布、观察后的条件机会、表示不足与保持修订的组合。机会与安顿的规范根据明确继承；无独立验收、经验认证或全部机会权重的推导。 §§37–42完成选定理论候选及反审；独占身份的关切仍是实质反例。规范适用不等于动机扩展，原典与有限行为研究不认证可靠性；无新增数学证明或实验。 初始机会本轮4项新Lean定理／10项声明审计，仅诊断正票加预期人数最大化：无界票域无最大解，固定N≥2给(N−1,1)，不证CP或充分份额；独立反审接受，11项产物绑定，无继承复编。 §§43–48完成条件性认识候选；休眠、依存、调查改变和真实误认均保留。复用知识论与J4，无普遍检测器、新风险阈值、数学定理或实验。 所选广告技术历史的机制对应、对手解释及改革比较已完成；复用旧证明，不识别全部初始优势、净福利或完整吸引域，亦不报告当前诉讼终局。 本轮新增9项Lean定理／13项审计，继承19项／36项分列；检查两项风险指标的边界、给定约束及范围组合，不证明RSL或任何伦理风险上限。",
+    "scope_en": "A current primary direction. The direction argument and new connected mechanism are independently accepted, not unfinished interfaces. New connection: 27 theorems/84 new and 46 inherited declaration audits, 13 histories/221 full states, with normative adoption, correspondence, authority, finite funding and deployment scope explicit. This session adds a separate 23-theorem/43-audit followup, with 93 inherited theorems/165 audits separately credited; author counterreview, no new empirical or independent-agent acceptance. Adds a defended ethical-learning candidate under G0/J and inherited epistemic commitments; author counterreview, no new mathematics, empirical study or independent acceptance. A theoretical continuation adds eight generic theorems/nine axiom-free new declaration audits, separately retaining 30 inherited practical theorems/46 audits; open discovery, warranted recognition and actual motivation remain scoped unfinished connections. A theoretical continuation adds 20 theorems/36 audits and directly imports concurrent concern extension; 38 inherited theorems/55 audits are separate. Actual coverage and normative classification remain premises, without a universal decision rule or new empirical validation. Adds a philosophical account of substantive correspondence E, descriptive extension, shared goods and carrier succession; no new theorem or empirical validation, and no complete classifier of wider living. Adds a defended application account of acquired basic conditions, keeping language-formation evidence distinct from ethical classification; no new theorem, empirical replication or independent acceptance. Particular thresholds and basic conflicts remain open. Adds a philosophical connection on formed standing and relational revision under the explicit axioms, with a scoped Long et al. 2024 comparison; no new theorem or verdict on any existing AI’s status. This connection adds 16 Lean theorems/32 audits, with 30 inherited theorems/46 audits separate. It reuses the formed-basic-conditions argument; target meaning, faithful readings and actual eligibility retain correspondence obligations. Author counterreview, no new empirical or independent acceptance. The two new modules contribute 23 theorems/42 explicit audits, with 30 inherited practical theorems/46 audits separate; independent-agent acceptance. The structural module’s 18/35 import is not recounted. No new empirical study; undefeatedness does not establish safety, permission or full reason preservation. Connected philosophical arguments now cover nonexclusive practical uptake, mixed motives and bounded formative responsibility under explicit G0/J/E, with author counterreview. No new theorem, empirical validation, independent acceptance or guaranteed motivation from understanding is claimed. BC1 retains its additional commitment and chance cost. This BC2 continuation supplies only a pro tanto comparative reason and withdraws the draft inference to deterministic allocation. No new mathematical or empirical result or independent acceptance; the comparator is unchanged and concurrent matching proofs retain separate ownership. The formative-assessment package retains 18 Lean theorems/34 audits and 46 inherited theorems/78 audits. The correction adds no theorem or scientific rerun. Existing prospective formation, projection/risk and warranted-acquisition results are reused, without certifying actual risk estimates or guaranteed progress. This round adds a philosophical application constrained by two primary investigations, with independent evidence audit and completion review; no new theorem, experiment or replication. Limited actual stopping is credited; fuller replacement histories and the realization of unfamiliar intelligences retain separate evidence burdens. Three bounded primary-source assessments and author counterreview, with no new theorem or empirical replication. The present wall is an adequately supported formation account of reliable operative revision for new living grounds, without requiring no initial concern, pure motives or infallibility; no impossibility is proved. This route study and author counterreview reuse completed recipient-learning analysis, identification bounds and prospective continuation, with three bounded primary-source assessments. No new theorem, experiment, model run or independent acceptance; general reliable acquisition remains open. This round adds 14 Lean theorems/23 declaration audits, separately crediting 30 inherited theorems/46 audits and two checked application examples. Independent substantive review and source/receipt audit passed; no new empirical validation. Cumulative comparison characterizes only the specified positive-weight diagnostic family. LC is an additional defeasible normative commitment, not an automatic allocation or denial of chances. Joint-risk extension: 18 new Lean theorems / 30 explicit audits, importing only Std. Event laws and weights remain supplied; no new empirical validation, universal normative ranking or independent acceptance. Six new Lean theorems and fifteen empty declaration audits test the stated filter and conditional composition premises. They establish neither unrestricted aggregation, universal impossibility nor an automatic chance verdict. Primary assessment and author counterreview are complete; no new empirical result or independent acceptance. This round completes a conditional philosophical account, three specified explanatory alternatives and a discriminating design. Initial concern, learning capacities and support are explicit. Three bounded primary comparisons and author counterreview; no new theorem, experiment or independent acceptance, and reliable acquisition is unverified. Eight new Lean theorems/23 declaration audits pass, with 30 inherited theorems/46 audits and one application example separate; independent review accepted. LR remains an additional normative candidate with a chance cost, not a continuity theorem. Finite rational ticket floors need prior warrant and strict improvement requires positive original route weight; no new empirical validation. Risk-sharing adds 19 Lean theorems / 36 explicit audits; the prior 18 risk theorems are not rerun. RS is an explicit additional normative commitment; actual probabilities, comparable standing, permission and acquired information are not mathematically certified. Initial primary-source integration and rivals for Reddit/Apollo and D&D are complete; the weak empirical target is subsequently withdrawn. Revenue is background rather than profit or objective identification, and the recursive mechanism still needs empirical correspondence. Whole-network decline, a complete causal effect and explanatory uniqueness are not established. New experiments are not a gate for recognizing existing evidence. Seven new Lean theorems / fifteen empty audits check full terminal laws, conditional chances, representational insufficiency and faithful composition. Normative warrant for chances and settlement is explicitly inherited; no independent acceptance, empirical certification or complete chance weights. Sections 37–42 complete the selected candidate and author counterreview. Exclusive attachment remains a substantive countercase; normative applicability does not guarantee motivational extension. Primary comparisons do not establish reliability; no new proof or experiment. This initial-chance round adds 4 theorems/10 declaration audits of positive tickets plus headcount maximization: no maximum in the unbounded domain and (N−1,1) at fixed N≥2. It proves neither CP nor adequate shares. Independent review accepts the scope; 11 artifacts are bound, with no inherited recompilation. Sections 43–48 complete a conditional recognition candidate, preserving dormancy, dependence, intervention effects and misrecognition. Existing epistemic commitments and J4 are reused; no universal detector, new risk threshold, theorem or experiment. The selected ad-tech history has a completed mechanism correspondence, rival assessment and reform comparison. Existing proofs are reused; origins of all advantage, net welfare, a complete basin and current final litigation status are not established. This extension adds 9 Lean theorems / 13 audits, with 19 inherited theorems / 36 audits separate. It checks a two-diagnostic frontier, a supplied constraint and scope composition, not RSL or an ethical risk allowance.",
+    "links": [
+      {
+        "label_zh": "对齐与治理中的未来条件",
+        "label_en": "Conditions of a future in alignment and governance",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md",
+        "label_zh": "当前双语方向论证",
+        "label_en": "Current bilingual direction argument"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-INTEGRATION.md",
+        "label_zh": "论证、对应与完成",
+        "label_en": "Argument, correspondence and completion"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/alignment-direction-verification.json",
+        "label_zh": "新实例实查回执",
+        "label_en": "Checked case-instance receipt"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-DIRECTION-REVIEW.md",
+        "label_zh": "独立完成审查与重编译",
+        "label_en": "Independent completion review and recompilation"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#current-generative-alignment-priority",
+        "label_zh": "当前首要方向与未解连接",
+        "label_en": "Current priority and unresolved connection"
+      },
+      {
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+        "label_zh": "Ren的优先级及完成规则",
+        "label_en": "Ren’s priority and completion rule"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+        "label_zh": "当前方向与完成成果分列",
+        "label_en": "Active directions and completed results"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-ALIGNMENT-REVISION.md",
+        "label_zh": "第一轮规范连接、反方与判别",
+        "label_en": "First normative connection, rivals and discriminators"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md",
+        "label_zh": "理解自身形成及目的修订",
+        "label_en": "Understanding formation and revising goals"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-FORMATION-REVISION-INTEGRATION.md",
+        "label_zh": "相连论证、前提、反方与证明",
+        "label_en": "Joined argument, premises, counterreview and proofs"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/goal-formation-revision-verification.json",
+        "label_zh": "43项新定理的实查回执",
+        "label_en": "Checked receipt for 43 new theorems"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-REVISION-CONTINUATION.md",
+        "label_zh": "已完成的相连历史",
+        "label_en": "Completed connected history"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/REFORM-EVIDENCE-INTEGRATION.md",
+        "label_zh": "改革、证据与修复的相连研究",
+        "label_en": "Reform, evidence and actual repair"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/reform-evidence-verification.json",
+        "label_zh": "23项新定理实查回执",
+        "label_en": "Receipt for 23 new theorems"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+        "label_zh": "伦理学习与新理由的形成",
+        "label_en": "Ethical learning and new grounds"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+        "label_zh": "理论连接、来源与作者反审",
+        "label_en": "Argument, sources and author counterreview"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONCERN-AND-NEW-REASONS.md",
+        "label_zh": "理由扩展与比较传递",
+        "label_en": "Extended reasons and comparison transfer"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONCERN-EXTENSION-INTEGRATION.md",
+        "label_zh": "正面论证、原典、反审与实查",
+        "label_en": "Argument, sources, counterreview and checks"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATIVE-EXTENSION-INTEGRATION.md",
+        "label_zh": "评价扩展、未定应用与反审",
+        "label_en": "Evaluative extension, unresolved applications and counterreview"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/evaluative-extension-verification.json",
+        "label_zh": "20项新定理实查回执",
+        "label_en": "Receipt for 20 new theorems"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#living-realization-and-normative-significance",
+        "label_zh": "伦理内容的生活根据",
+        "label_en": "Living grounds of ethical content"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#living-realization-continuation",
+        "label_zh": "实现根据、反审及完成范围",
+        "label_en": "Realization warrant, counterreview and scope"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CONCERN-AND-NEW-REASONS.md#formed-basic-conditions",
+        "label_zh": "后天基本条件的当前论证",
+        "label_en": "Current argument for acquired basic conditions"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMED-BASIC-CONDITIONS-INTEGRATION.md",
+        "label_zh": "基本分类、原典与反审",
+        "label_en": "Basic classification, primary readings and counterreview"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#formed-ethical-standing",
+        "label_zh": "形成中的伦理地位",
+        "label_en": "Formed ethical standing"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#formed-standing-argument",
+        "label_zh": "地位论证、原典与反审",
+        "label_en": "Standing argument, primary comparison and counterreview"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CLASSIFICATION-REVISION-INTEGRATION.md",
+        "label_zh": "取得记录、分类修订与反审",
+        "label_en": "Acquired records, revised classification and counterreview"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/classification-revision-verification.json",
+        "label_zh": "16项新定理实查回执",
+        "label_en": "Receipt for 16 new theorems"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#changing-the-conditions-of-review",
+        "label_zh": "改变自身评估条件",
+        "label_en": "Changing the conditions of review"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-INTEGRATION.md",
+        "label_zh": "评价覆盖、结构修复与推论边界",
+        "label_en": "Review coverage, structural repair and inference boundary"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-REVIEW.md",
+        "label_zh": "两模块独立验收",
+        "label_en": "Independent acceptance of both modules"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-REVIEW-COVERAGE-PROOF.md",
+        "label_zh": "18项覆盖定理与范围",
+        "label_en": "18 coverage theorems and scope"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTOR-STRUCTURAL-COVERAGE-PROOF.md",
+        "label_zh": "5项结构修复定理",
+        "label_en": "Five structural-repair theorems"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#motivational-uptake-and-formation",
+        "label_zh": "理由的实际作用与形成责任",
+        "label_en": "Practical uptake and formative responsibility"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#motivational-uptake-argument",
+        "label_zh": "关切接续的论证与反审",
+        "label_en": "Uptake argument and counterreview"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+        "label_zh": "基本冲突的同等救助原则",
+        "label_en": "Equal rescue in basic conflict"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BASIC-CONFLICT-INTEGRATION.md",
+        "label_zh": "新增承诺、原典与反审",
+        "label_en": "Additional commitment, primary reading and counterreview"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMATIVE-ASSESSMENT-INTEGRATION.md",
+        "label_zh": "形成中的评估、反审及所遇界限",
+        "label_en": "Formative assessment, counterreview and the stopping boundary"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/formative-assessment-verification.json",
+        "label_zh": "18项新定理实查回执",
+        "label_en": "Receipt for 18 new theorems"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#warranted-acquisition-and-retained-participation",
+        "label_zh": "取得根据与保留参与",
+        "label_en": "Warranted acquisition and retained participation"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-INTEGRATION.md",
+        "label_zh": "实际取得、用途范围与回应",
+        "label_en": "Acquisition, evidence roles and response"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-ARGUMENT.md",
+        "label_zh": "共同修订的肯定论证",
+        "label_en": "Affirmative joint-revision argument"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-SOURCES.md",
+        "label_zh": "原始来源与读取范围",
+        "label_en": "Primary sources and reading scope"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-EVIDENCE-AUDIT.md",
+        "label_zh": "独立证据与推论审计",
+        "label_en": "Independent evidence and inference audit"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/WARRANTED-ACQUISITION-REVIEW.md",
+        "label_zh": "完成后的独立验收",
+        "label_en": "Independent completion acceptance"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#developmental-conditions-and-present-wall",
+        "label_zh": "关切形成的条件与当前墙",
+        "label_en": "Developmental conditions and present wall"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#developmental-wall-investigation",
+        "label_zh": "五条路线、原典与停止范围",
+        "label_en": "Five routes, primary sources and stopping scope"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMATIVE-ASSESSMENT-INTEGRATION.md#10-fresh-understanding-and-situated-continuation",
+        "label_zh": "前向理解与风险下继续生成",
+        "label_en": "Prospective understanding and continuation under risk"
+      },
+      {
+        "path": "sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md#future-understanding-and-situational-risk",
+        "label_zh": "Ren对停止推断的纠正",
+        "label_en": "Ren’s correction to the stopping inference"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md#unequal-basic-losses",
+        "label_zh": "基本损失程度与比较理由",
+        "label_en": "Basic-loss gravity and comparative reasons"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BASIC-LOSS-SEVERITY-INTEGRATION.md",
+        "label_zh": "程度论证、原典与修订反审",
+        "label_en": "Gravity argument, primary reading and revised counterreview"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#next-developmental-routes",
+        "label_zh": "关切形成的后续路线",
+        "label_en": "Next routes for concern development"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#next-developmental-route-assessment",
+        "label_zh": "路线比较、原典与反审",
+        "label_en": "Route assessment, sources and counterreview"
+      },
+      {
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#research-next-developmental-routes",
+        "label_zh": "Ren要求研究后续路线",
+        "label_en": "Ren’s next-route request"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md#joint-number-and-gravity",
+        "label_zh": "数量与程度的联合比较",
+        "label_en": "Joint number-and-gravity comparison"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-INTEGRATION.md",
+        "label_zh": "联合损失比较整合",
+        "label_en": "Joint-loss integration"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-ARGUMENT.md",
+        "label_zh": "LC 肯定论证",
+        "label_en": "Affirmative LC argument"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-PROOF.md",
+        "label_zh": "两层诊断证明范围",
+        "label_en": "Two-tier diagnostic proof scope"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-REVIEW.md",
+        "label_zh": "独立反审与验收",
+        "label_en": "Independent counterreview and acceptance"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-SOURCES.md",
+        "label_zh": "原典范围与作用",
+        "label_en": "Primary-source scope and role"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/unequal-basic-losses-verification.json",
+        "label_zh": "联合损失 Lean 实查回执",
+        "label_en": "Joint-loss Lean verification receipt"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md",
+        "label_zh": "共同风险、修订与界限",
+        "label_en": "Joint risk, revision and boundary"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md#12-risk-changes-with-the-relations-we-form",
+        "label_zh": "风险关系也会改变",
+        "label_en": "Risk relations also change"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/joint-risk-revision-verification.json",
+        "label_zh": "共同风险实查",
+        "label_en": "Joint-risk verification"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CHOICE-AND-GENERATIVE-CONTEXT.md",
+        "label_zh": "共同选择与生成情境",
+        "label_en": "Joint choice and generative context"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AGGREGATION-CONTEXT-INTEGRATION.md",
+        "label_zh": "有限合并的论证、反审与证明",
+        "label_en": "Aggregation argument, counterreview and proofs"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/aggregation-context-verification.json",
+        "label_zh": "情境比较实查回执",
+        "label_en": "Context comparison verification"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#concern-content-acquisition",
+        "label_zh": "关切内容形成候选",
+        "label_en": "Concern-content acquisition candidate"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#concern-content-acquisition-account",
+        "label_zh": "形成前提、原典与竞争解释",
+        "label_en": "Acquisition premises, sources and alternatives"
+      },
+      {
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#continue-concern-content-acquisition",
+        "label_zh": "Ren要求沿选定路线继续",
+        "label_en": "Ren’s continuation along the selected route"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md#crossed-claims-and-new-opportunities",
+        "label_zh": "交叉请求与新共同机会",
+        "label_en": "Crossed claims and new joint opportunities"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md",
+        "label_zh": "局部稳定与机会整合",
+        "label_en": "Local stability and opportunity integration"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
+        "label_zh": "LR 肯定论证",
+        "label_en": "Affirmative LR argument"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-PROOF.md",
+        "label_zh": "同次保护与菜单控制的实查",
+        "label_en": "Checked coupling and menu control"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-REVIEW.md",
+        "label_zh": "交叉请求独立反审",
+        "label_en": "Independent crossed-claims review"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-SOURCES.md",
+        "label_zh": "机会与有限合并的原典范围",
+        "label_en": "Primary scope for chances and aggregation"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/crossed-claims-verification.json",
+        "label_zh": "机会接续 Lean 实查回执",
+        "label_en": "Opportunity-continuation Lean receipt"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#9-continue-through-equal-basic-risk-sharing",
+        "label_zh": "同等风险的理由与实查",
+        "label_en": "Equal-risk argument and checks"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md#13-sharing-basic-risk-and-revising-the-selection-rule",
+        "label_zh": "分担与选择规则修订",
+        "label_en": "Sharing and selector revision"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/basic-risk-sharing-verification.json",
+        "label_zh": "风险分担实查",
+        "label_en": "Risk-sharing verification"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#14-push-beyond-symmetry-fairer-exposure-can-add-basic-harm",
+        "label_zh": "更公平暴露与新增基本损失",
+        "label_en": "Fairer exposure and added basic loss"
+      },
+      {
+        "label_zh": "市场与互联网的现实检验",
+        "label_en": "Actual market and internet tests",
+        "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md"
+      },
+      {
+        "label_zh": "退化的制度形态",
+        "label_en": "Institutional degeneration",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md#enshittification-as-degeneration"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CHOICE-AND-GENERATIVE-CONTEXT.md#chance-revision",
+        "label_zh": "机会与选择规则修订",
+        "label_en": "Chances and selector revision"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-REVISION-INTEGRATION.md",
+        "label_zh": "机会修订的论证、反审与证明",
+        "label_en": "Chance revision argument, counterreview and proofs"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/chance-revision-verification.json",
+        "label_zh": "机会修订实查回执",
+        "label_en": "Chance revision verification"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#concern-beyond-familiarity-and-return",
+        "label_zh": "陌生与无回报的关切",
+        "label_en": "Unfamiliar and nonreciprocal concern"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#unfamiliar-living-and-nonreciprocal-concern",
+        "label_zh": "关切扩展的前提与反审",
+        "label_en": "Extension premises and counterreview"
+      },
+      {
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#continue-beyond-familiarity-and-return",
+        "label_zh": "继续陌生生活连接的指示",
+        "label_en": "Directive to continue unfamiliar-life connection"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-PROTOCOL.md",
+        "label_zh": "本轮范围",
+        "label_en": "Study protocol"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-ARGUMENT.md",
+        "label_zh": "CP肯定论证",
+        "label_en": "CP affirmative argument"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-PROOF.md",
+        "label_zh": "正概率实现诊断",
+        "label_en": "Positive-chance diagnostic"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-REVIEW.md",
+        "label_zh": "初始机会独立反审",
+        "label_en": "Independent chance review"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-SOURCES.md",
+        "label_zh": "初始机会原典评估",
+        "label_en": "Chance source assessment"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-GROUNDING-INTEGRATION.md",
+        "label_zh": "初始机会整合",
+        "label_en": "Initial-chance integration"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/chance-grounding-verification.json",
+        "label_zh": "4项定理实际回执",
+        "label_en": "4-theorem actual receipt"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md#recognizing-unfamiliar-living",
+        "label_zh": "陌生生活辨认与回应",
+        "label_en": "Unfamiliar-life recognition and response"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md#unfamiliar-living-recognition",
+        "label_zh": "辨认的来源与反审",
+        "label_en": "Recognition sources and counterreview"
+      },
+      {
+        "path": "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md#continue-unfamiliar-living-recognition",
+        "label_zh": "继续辨认连接的指示",
+        "label_en": "Directive to continue recognition"
+      },
+      {
+        "label_zh": "接口控制与改革比较",
+        "label_en": "Interface control and reform comparison",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md#interface-control-and-rule-reproduction"
+      },
+      {
+        "label_zh": "历史机制对应及对手",
+        "label_en": "Historical correspondence and rivals",
+        "path": "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md#interface-control-and-corrective-change"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md#15-a-limited-fair-sharing-reason-can-survive-some-added-risk",
+        "label_zh": "公平代价、范围与反审",
+        "label_en": "Fairness costs, scope and counterreview"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md#14-bounded-fairness-costs-and-the-scope-of-revision",
+        "label_zh": "修订理由的有限范围",
+        "label_en": "Bounded scope of revision grounds"
+      },
+      {
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/bounded-risk-revision-verification.json",
+        "label_zh": "有限风险修订实查",
+        "label_en": "Bounded risk revision verification"
+      }
+    ],
+    "connection_zh": "目标形成—后果使用—有根据的操作目的修订—选择安排改革—有限接续已条件性完成；更大的现实形成与部署问题保持独立范围，不重复此接口。 新前沿：在不预送正确读取路线和修复方案时，取得遗漏后果、选择有能力承担的回应。 伦理学习的概念连接已给出；新生的意义范围、未定基本冲突及实际可靠形成分别保留论证负担。 本轮已辨明内容扩展的比较条件；接续研究区别的取得、规范相关性及实际关切形成，正面生成也可成为入口。 理论前沿：在不给定正确答案的情况下，取得新关系的区别并论证候选描述及基本／次级分类的根据。 新内容的生活根据已有明确应用候选；陌生组织的更广地位、基本分类及实际可靠取得仍须分别论证。 本轮给出历史形成到基本支承分类的有辩护接续；下一理论问题是已获根据的基本要求彼此冲突，实际开放取得与可靠动机另行保持范围。 已给出由新形成根据到角色、权限及责任重审的连接；具体陌生智能的实际实现、持续身份及未定冲突保持独立负担。 记录到必要性分类及替代导致修订的条件性连接已完成；下一连接是目标描述与可靠观察的共同取得，不再把完全忠实的读数当作未解释的输入。 评价压缩、范围变化与结构修复的接口已完成；真正被阻断的是有限成功记录独自推出未限定未来认证。适用规律与可靠观察的共同取得仍为更强连接，不倒改完成标准。 关切的实践作用及培养要求的概念连接作为成果复用；更强连接是对陌生生活根据的理解怎样可靠地修订实际关切，同时保留分寸及正当参与。 同等救助候选与不等损失的一对一理由说明已有论证及反审；下一中心连接是人数、程度与实际可行方案变化下的共同选择。已完成分类、责任和程序不重开。 初始区别的追溯界限仍有效；此前用作较广停止理由的推断已依 Ren 纠正撤回。接续当前有根据把握、适当风险下的行动、新后果与理解／目的修订，不把完整历史或普遍语义充分性设为一般门槛。 共同取得的实际证据接入已完成，不重开一般校准。现有来源不足以认证特定后续参与目标的完整替代历史；这是该推论的证据边界，不是普遍不可能，也不把追查这一组历史设为所有对齐研究的必经门槛。 本次依Ren指示在可靠形成连接处停止；跨越需要具体取得关系及可区分实质对手的支持，不再重复已完成的G0方向、目标写入或评价覆盖接口。其他独立研究不被标为受阻。 Ren随后要求研究后续路线，本会话已继续并完成排序；下一交付为一个具体形成候选、初始条件、未预装的新连接、实质对手与可改变取舍的观察。不要求先完整读出动机、恢复历史或执行新大型实验。 数量与程度同向的联合比较已完成；下一连接为交叉损失中的有限合并、机会及新增实际可行方案怎样改变理由。两层计数未定不证明伦理不可比，直接中断数相同不等于完整损失相同；跨生活形式的分层与实际单位仍需有根据说明。 本轮新界限是证成共同基本接续与其他基本风险交叉时的优先；先用共同证据、部分界限及可行支持修订推进。已有J4允许有权限的及时决定，不以缺少普遍排序阻断继续生成。 已排除未经辩护的整体过滤捷径，保留实际生活理由；下一连接为交叉损失、机会与有根据的拼接限制怎样共同支持选择，直接复用 BC1、BC2、LC。 前轮指定的具体形成候选与对照现已给出，直接复用；下一理论连接是关切怎样走向没有共同史或预期回报的陌生生活，保留有效拒绝、分工与有界承担，实际形成与保持的证据问题继续开放。 局部比较候选与新共同机会的接续已完成，不重开既有 LC、升级过滤或一般拼接检验。更强连接是实际变化是否处于 LR 范围，以及较远交叉损失和真实新增成本／风险中的合并与机会根据；未满足最强要求也不能未经新辩护替另一选择消除请求。 对称交叉风险现有RS候选及实查，不再仅留为一般程序未定；尚待论证不同严重度、重叠要求、差别权利或增加总体损失时的比较。原来有根据的混合规则可被后来可行的保护改进替代，继续生成不受普遍总排序门槛阻断。 更进一步的同等严重度例表明：最重暴露从40%降到31%，任一基本损失机会却从50%升到62%；需证成公平分担与实际保护之间的取舍。 本会话眼前转向已知共同后果取得或失去制度修订效力的实际关系；陌生处境的关切扩展保留而非唯一下一步。 已完成机会安排的历史接续条件，复用 LR、共同保护和对称 RS；下一比较保留不等要求、较公平暴露与增加基本受损机会的取舍，以及真实新冲突对有效安顿的影响。 关切扩展已给出条件性连接；后续聚焦陌生生活关系的有根据辨认及评价压力下的保持，复用G0/J与有限承担。 初始进入已有有范围候选，直接选择对手仍在；下一连接是以实际需要、共同支承与正当承担辩护充分份额或区间，不能将任意正数、技术分辨率或未找到赢家当成伦理根据。 后续聚焦更完整的生活根据与当前成功指标冲突时的持续影响；普遍识别和深度不确定比较保留范围。 当前市场连接转向有益替代与纠正的实际支持、权限及随依存变化的接续，不重开已完成的条件接续证明。 公平可承受有限代价现有公开候选；连续微调不能自动续发同一范围的许可。尚需在完整具体比较中证成可容许的偏离，本例17%／37%、24%／34%及31%／31%均未获伦理认证；新根据可正当地修订范围。",
+    "connection_en": "Acquired ends, consequential use, warranted operative revision, allocation reform and finite continuation are conditionally complete; broader real-world formation and deployment retain separate scope. New frontier: acquire omitted consequences and select an affordable response without being handed the correct access route and repair. The conceptual ethical-learning connection is now articulated; unfamiliar living significance, unresolved basic conflicts and reliable actual formation retain distinct burdens. Comparison under extended content is now delimited; investigate acquisition, normative relevance and operative concern, including positive formation as an entry point. Theoretical frontier: acquire distinctions about new relations and warrant the candidate descriptions and basic/secondary classifications without supplying the correct answer. A particular application account now grounds new content in living relations; wider standing of unfamiliar organizations, basic classification and reliable actual acquisition retain separate burdens. The formation-to-basic-support classification now has a defended continuation. The next theoretical question concerns conflicts among warranted basic claims; actual open acquisition and reliable motivation retain their separate scopes. New grounds now connect to reassessment of roles, permissions and responsibilities; actual realization, continuity and unsettled conflicts of particular unfamiliar intelligences remain separate burdens. The conditional record-to-necessity connection and revision by alternatives are complete. The next connection is joint acquisition of the target description and reliable observation, without leaving perfectly faithful readings as unexplained inputs. Review compression, scope change and structural repair are completed interfaces. The blocked inference is finite passing records alone to unrestricted future certification. Joint acquisition of applicable laws and reliable observations remains a stronger connection without changing completed criteria. Reuse the completed conceptual account of uptake and formative requirements. The stronger connection concerns reliable revision of operative concern through understanding unfamiliar living grounds while retaining judgment and legitimate participation. Equivalent rescue and the one-to-one gravity reason have arguments and counterreview. The next central connection is joint choice across numbers, gravity and changing actual alternatives, without reopening completed classification, responsibility or procedure. The initial-history limit remains valid; its broader use as a stopping reason is withdrawn following Ren’s correction. Continue through grounded present awareness, justified action under risk, new consequences and revision of understanding or ends, without a general requirement for complete history or universal semantic sufficiency. The source-constrained joint-acquisition connection is completed, without reopening generic calibration. These sources do not certify the fuller replacement history for a specified subsequent participation target. This bounds that inference, not all inquiry or alignment; following this particular cohort is not a universal research prerequisite. This requested continuation stops at the reliable-formation bridge. Progress requires concrete acquisition relations and discriminating support, reusing completed G0 direction, operative goal revision and review coverage; other investigations are not marked blocked. Ren subsequently requested investigation of next routes; the inquiry resumed and route selection is complete. Next: one concrete acquisition account with initial conditions, an unsupplied transition, substantive rivals and revising observations. Complete motive readout, historical recovery and a new large experiment are not prerequisites. Joint comparison where number and gravity align is completed. The next connection concerns justified aggregation, chances and new actual alternatives in crossed cases. An unresolved two-tier diagnostic does not prove ethical incomparability, and equal direct interruption counts do not establish equal complete losses. Cross-form classification and actual units retain substantive burdens. The new scoped wall is justified priority when shared basic continuation and other basic risks conflict, after joint evidence, partial bounds and feasible support repairs. Existing J4 permits authorized timely decisions; absence of a universal ranking does not block generativity. The unsupported global-filter shortcut is rejected while living grounds remain. Next: joint choice across crossed losses, chances and justified composition limits, reusing BC1, BC2 and LC. The previously requested concrete candidate and contrasts are now available for reuse. Next theoretical connection: concern extending to unfamiliar lives without shared history or expected return, retaining valid refusal, division of work and bounded commitments; evidence for actual acquisition and retention remains open. The local comparison candidate and new joint-opportunity connection are completed, reusing LC and the upgrade/composition results. Stronger work concerns warranted actual LR boundaries and aggregation or chances for more distant crossed losses and real new costs/risks. An unsatisfied strongest request does not without further justification erase a claim against the alternative actually chosen. The symmetric crossed-risk case now has an RS candidate and checked application. Unequal gravity, overlapping claims, differential rights and added overall loss require further comparison. Newly feasible protection can supersede an earlier justified mixture; generativity need not await a universal ranking. A further equal-gravity case reduces greatest exposure from 40% to 31% while increasing the chance of some basic loss from 50% to 62%; fairness versus actual protection requires further warrant. This session now follows how recognized shared consequences acquire or lose effective influence over institutional revision; extension of concern beyond familiar relations remains open rather than the sole next step. History-sensitive continuation is supplied, reusing LR, joint protection and symmetric RS. Remaining comparisons concern unequal claims, fairer exposure at the price of added basic harm, and genuinely changed conflicts with valid settlements. Reuse the conditional extension and G0/J; investigate warranted recognition of unfamiliar living relations and retention under evaluative pressure, preserving bounded responsibility. Initial admission now has a scoped candidate while the direct-choice rival remains live. Next justify adequate shares or ranges through actual needs, common support and warranted commitments; mere positivity, technical resolution or failure to find a winner supplies no such warrant. Next investigate sustained influence when fuller living grounds conflict with incumbent success criteria; universal recognition and deep-uncertainty comparison remain open. The market connection now concerns actual support, authority and continuation of useful alternatives and correction as dependencies change, reusing completed conditional succession proofs. A finite-cost sharing route is now explicit. Successive small revisions cannot automatically renew the same allowance. A permissible departure still needs warrant in a fully specified comparison; none of the 17%/37%, 24%/34% or 31%/31% proposals is ethically certified. New grounds can legitimately revise the scope.",
+    "source_section": "Current generative alignment priority",
+    "source_line": 3,
+    "row_type": "application_programme",
+    "source_id": "alignment_governance"
+  },
+  "owned_reviewed_sources": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md": "516f419e273c63d15588535b04e8384103f9000fca736bfb0e0ce03787d23d7f",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md": "653e93d8c7bbeb84fc41f6ca02b18352b07690bd974beb17850d4b32722106f5",
+    "sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md": "24054650b8a8eb405d20be30f98e1f23c7e82d9d50fe861cfdc6135e65503237",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/BoundedRiskRevision.lean": "1c0b8ba07bb5e726b594f89af4f99503b85f04c232c9e9998a14421214fab6e2",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_bounded_risk_revision.py": "67a222101446e274b9211e3515a3b722e115ef2eafc304330279169939fa9e7e",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/bounded-risk-revision-verification.json": "2378b9e509d66a59efdf5383dc72782868d6f6458b28dbb5413eaa9e4b12102c"
+  },
+  "added_discovery_paths": [],
+  "data_before_sha256": "0dc709719b3b9c45d86dcdb2034c8c86cf617f1265f1c8ff8586f61ba5cace96",
+  "data_after_sha256": "7e99935819004222e4a0e7d209ce954bd21bc9d87f5dbf8d91ddc1843cabecb7",
+  "table_before_sha256": "6683be663256589689cc841e2f19cedc97c14cafa6feb38715631fc7d1e3e10f",
+  "table_after_sha256": "2158a11acb8ebfae42a0797a56d8b1b72e3e8a2904421b1557fd45f04217afa2",
+  "other_entries_preserved_at_mutation": true,
+  "pending_global_review": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEDUCTIVE-FOUNDATION-TEST.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CALIBRATION-RENEWAL-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CALIBRATION-RENEWAL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/RISK-PRIORITY-INTEGRATION.md"
+    ],
+    "removed_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md"
+    ]
+  }
+}

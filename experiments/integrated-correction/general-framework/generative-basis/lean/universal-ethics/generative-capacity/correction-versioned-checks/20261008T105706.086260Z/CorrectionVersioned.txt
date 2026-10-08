@@ -1,0 +1,20 @@
+CorrectionVersioned.lean:425:2: error: unsolved goals
+case right
+span : ℕ
+s : Installation
+h : Invariant span s
+p : Packet
+hp : s.packets = [p]
+old : p.slot ≠ s.active
+result :
+  have result := drain ((List.drop p.cursor (s.banks p.slot).path).length + 1) s;
+  result.1.packets = [] ∧
+    result.1.banks = s.banks ∧ result.1.active = s.active ∧ result.2 = [(p.requested, p.requested)]
+⊢ ∀ x ∈ (drain ((s.banks p.slot).path.length - p.cursor + 1) s).1.packets, ¬x.slot = p.slot
+CorrectionVersioned.lean:425:16: warning: This simp argument is unused:
+  result.1
+
+Hint: Omit it from the simp argument list.
+  simp [busy,̵ ̵r̵e̵s̵u̵l̵t̵.̵1̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

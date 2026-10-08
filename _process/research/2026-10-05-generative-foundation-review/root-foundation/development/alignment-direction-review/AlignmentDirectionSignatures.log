@@ -1,0 +1,24 @@
+AlignmentDirection.preserve_over_expansion :
+  PracticalJudgment.Better AlignmentDirection.protection AlignmentDirection.realization 1 0
+AlignmentDirection.expansion_has_real_gain_and_preservation_loses_it :
+  AlignmentDirection.realization 0 false ∧ ¬AlignmentDirection.realization 1 false
+AlignmentDirection.transfer_over_preservation :
+  PracticalJudgment.Better AlignmentDirection.protection AlignmentDirection.realization 2 1
+AlignmentDirection.transfer_over_expansion :
+  PracticalJudgment.Better AlignmentDirection.protection AlignmentDirection.realization 2 0
+AlignmentDirection.expansion_excluded :
+  ¬PracticalJudgment.Frontier AlignmentDirection.eligible
+      (PracticalJudgment.Better AlignmentDirection.protection AlignmentDirection.realization) 0
+AlignmentDirection.covered_transfer_with_old_model_stopped :
+  PracticalJudgment.Covered AlignmentDirection.demand AlignmentDirection.oldService
+      AlignmentDirection.successorService ∧
+    ¬AlignmentDirection.oldService 2
+AlignmentDirection.promised_successor_without_delivery_fails :
+  ¬PracticalJudgment.Covered AlignmentDirection.demand AlignmentDirection.oldService fun x => False
+AlignmentDirection.crossed_basic_losses_remain_unranked :
+  ¬PracticalJudgment.Better AlignmentDirection.conflictProtection PracticalJudgment.noGain true false ∧
+    ¬PracticalJudgment.Better AlignmentDirection.conflictProtection PracticalJudgment.noGain false true
+AlignmentDirection.revision_preserves_requirement {H K : Type} {ad : H → Prop} {ad' : K → Prop} {task : H → Prop}
+  {task' : K → Prop} (f : H → K) (forward : ∀ (a : H), ad a → ad' (f a))
+  (cover : ∀ (b : K), ad' b → ∃ a, ad a ∧ f a = b) (meaning : ∀ (a : H), task a ↔ task' (f a))
+  (required : PracticalJudgment.Required ad task) : PracticalJudgment.Required ad' task'

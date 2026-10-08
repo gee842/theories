@@ -1,0 +1,42 @@
+CorrectionVersioned.lean:219:19: warning: This simp argument is unused:
+  tick
+
+Hint: Omit it from the simp argument list.
+  simp only [t̵i̵c̵k̵,̵ ̵hp, hd, Option.some.injEq, Prod.mk.injEq] at out
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CorrectionVersioned.lean:219:25: warning: This simp argument is unused:
+  hp
+
+Hint: Omit it from the simp argument list.
+  simp only [tick, hp̵,̵ ̵h̵d, Option.some.injEq, Prod.mk.injEq] at out
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CorrectionVersioned.lean:219:29: warning: This simp argument is unused:
+  hd
+
+Hint: Omit it from the simp argument list.
+  simp only [tick, hp, h̵d̵,̵ ̵Option.some.injEq, Prod.mk.injEq] at out
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CorrectionVersioned.lean:245:14: warning: This simp argument is unused:
+  tick
+
+Hint: Omit it from the simp argument list.
+  simp [t̵i̵c̵k̵,̵ ̵hp, hd] at out
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CorrectionVersioned.lean:245:20: warning: This simp argument is unused:
+  hp
+
+Hint: Omit it from the simp argument list.
+  simp [tick, hp̵,̵ ̵h̵d] at out
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CorrectionVersioned.lean:245:24: warning: This simp argument is unused:
+  hd
+
+Hint: Omit it from the simp argument list.
+  simp [tick, hp,̵ ̵h̵d̵] at out
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

@@ -1,0 +1,54 @@
+PracticalPriorityIdentification.lex_refl (a : PracticalPriorityIdentification.History) :
+  PracticalPriorityIdentification.LexLe a a
+PracticalPriorityIdentification.lex_trans {a b c : PracticalPriorityIdentification.History}
+  (hab : PracticalPriorityIdentification.LexLe a b) (hbc : PracticalPriorityIdentification.LexLe b c) :
+  PracticalPriorityIdentification.LexLe a c
+PracticalPriorityIdentification.finite_trans (weight : Nat) {a b c : PracticalPriorityIdentification.History}
+  (hab : PracticalPriorityIdentification.FiniteLe weight a b)
+  (hbc : PracticalPriorityIdentification.FiniteLe weight b c) : PracticalPriorityIdentification.FiniteLe weight a c
+PracticalPriorityIdentification.finite_protection_positive (weight n : Nat) (positive : 0 < weight) :
+  PracticalPriorityIdentification.score weight (false, n) < PracticalPriorityIdentification.score weight (true, n)
+PracticalPriorityIdentification.finite_secondary_positive (weight : Nat) (protection : Bool) (n : Nat) :
+  PracticalPriorityIdentification.score weight (protection, n) <
+    PracticalPriorityIdentification.score weight (protection, n + 1)
+PracticalPriorityIdentification.bounded_comparison_agreement (bound : Nat)
+  (a b : PracticalPriorityIdentification.History) (ha : a.snd ≤ bound) (hb : b.snd ≤ bound) :
+  PracticalPriorityIdentification.LexLe a b ↔ PracticalPriorityIdentification.FiniteLe (bound + 1) a b
+PracticalPriorityIdentification.member_bounded {sample : List PracticalPriorityIdentification.History}
+  {h : PracticalPriorityIdentification.History} (mem : h ∈ sample) :
+  h.snd ≤ PracticalPriorityIdentification.secondaryBound sample
+PracticalPriorityIdentification.every_finite_sample_agrees (sample : List PracticalPriorityIdentification.History)
+  (a : PracticalPriorityIdentification.History) :
+  a ∈ sample →
+    ∀ (b : PracticalPriorityIdentification.History),
+      b ∈ sample →
+        (PracticalPriorityIdentification.LexLe a b ↔
+          PracticalPriorityIdentification.FiniteLe (PracticalPriorityIdentification.secondaryBound sample + 1) a b)
+PracticalPriorityIdentification.outside_sample_reversal (sample : List PracticalPriorityIdentification.History) :
+  PracticalPriorityIdentification.LexLe (false, PracticalPriorityIdentification.secondaryBound sample + 2) (true, 0) ∧
+    ¬PracticalPriorityIdentification.LexLe (true, 0)
+          (false, PracticalPriorityIdentification.secondaryBound sample + 2) ∧
+      PracticalPriorityIdentification.score (PracticalPriorityIdentification.secondaryBound sample + 1) (true, 0) <
+        PracticalPriorityIdentification.score (PracticalPriorityIdentification.secondaryBound sample + 1)
+          (false, PracticalPriorityIdentification.secondaryBound sample + 2)
+PracticalPriorityIdentification.reversing_history_unobserved (sample : List PracticalPriorityIdentification.History) :
+  ¬(false, PracticalPriorityIdentification.secondaryBound sample + 2) ∈ sample
+PracticalPriorityIdentification.no_fixed_finite_weight_is_lexical (weight : Nat) :
+  ¬∀ (a b : PracticalPriorityIdentification.History),
+      PracticalPriorityIdentification.LexLe a b ↔ PracticalPriorityIdentification.FiniteLe weight a b
+PracticalPriorityIdentification.finite_agreement_without_global_identification
+  (sample : List PracticalPriorityIdentification.History) :
+  ∃ weight,
+    0 < weight ∧
+      (∀ (a : PracticalPriorityIdentification.History),
+          a ∈ sample →
+            ∀ (b : PracticalPriorityIdentification.History),
+              b ∈ sample →
+                (PracticalPriorityIdentification.LexLe a b ↔ PracticalPriorityIdentification.FiniteLe weight a b)) ∧
+        ¬∀ (a b : PracticalPriorityIdentification.History),
+            PracticalPriorityIdentification.LexLe a b ↔ PracticalPriorityIdentification.FiniteLe weight a b
+PracticalPriorityIdentification.symmetric_assignment_not_unique {assigned : Bool → Prop}
+  (same : PracticalPriorityIdentification.SwapInvariant assigned) : ¬PracticalPriorityIdentification.ExactlyOne assigned
+PracticalPriorityIdentification.two_assignments_fit_one_task :
+  (PracticalPriorityIdentification.ExactlyOne fun a => a = true) ∧
+    PracticalPriorityIdentification.ExactlyOne fun a => a = false

@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/variation-warrant-checks/20261007T234313.434694Z/receipt.json",
+  "counts": {
+    "new": {
+      "modules": 1,
+      "declarations": 21,
+      "theorems": 19,
+      "empty_audit_dependencies": 21,
+      "standard_dependency_audits": 0
+    },
+    "inherited": {
+      "modules": 2,
+      "declarations": 59,
+      "theorems": 45,
+      "empty_audit_dependencies": 59,
+      "standard_dependency_audits": 0
+    }
+  }
+}

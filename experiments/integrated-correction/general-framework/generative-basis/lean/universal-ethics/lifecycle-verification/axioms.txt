@@ -1,0 +1,10 @@
+'LifecycleCorrespondence.joint_marginal_numerator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LifecycleCorrespondence.numerator_agreement_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LifecycleCorrespondence.conditional_stage_composition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LifecycleCorrespondence.complete_record_product_overstates_joint' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LifecycleCorrespondence.both_missing_record_completions_preserve_discrepancy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'LifecycleCorrespondence.linked_assay_counts' depends on axioms: [propext, Classical.choice, Quot.sound]

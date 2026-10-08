@@ -1,0 +1,63 @@
+FormativeAssessment.retrospective_sound_iff_backward_stable {S : Type} (change : S → S) (target : S → Prop)
+  (read : S → Bool) (current : ∀ (s : S), read s = true ↔ target s) :
+  (∀ (s : S), read (change s) = true → target s) ↔ FormativeAssessment.BackwardStable change target
+FormativeAssessment.contradictory_undated_records_not_faithful {H : Type} (records : List (H × Bool)) (a : H)
+  (target : H → Prop) (positive : (a, true) ∈ records) (negative : (a, false) ∈ records) :
+  ¬ClassificationRevision.Faithful records target
+FormativeAssessment.equal_successors_defeat_every_later_inquiry {S A O R : Type} (step : S → A → S × O) (left right : S)
+  (a : A) (same : step left a = step right a) (next : O → FormativeAssessment.Inquiry A O R) :
+  FormativeAssessment.execute step (FormativeAssessment.Inquiry.ask a next) left =
+    FormativeAssessment.execute step (FormativeAssessment.Inquiry.ask a next) right
+FormativeAssessment.capacity_iff_linked (s : FormativeAssessment.State) :
+  FormativeAssessment.Capacity s ↔ s.linked = true
+FormativeAssessment.no_credit_no_formation (b : Bool) (a : FormativeAssessment.Action) :
+  FormativeAssessment.step { linked := b, credits := 0 } a =
+    ({ linked := b, credits := 0 }, FormativeAssessment.Reading.unavailable)
+FormativeAssessment.acquired_unprompted_reading_exact (b : Bool) (n : Nat) :
+  (FormativeAssessment.step { linked := b, credits := n + 1 } (FormativeAssessment.Action.request true)).snd =
+      FormativeAssessment.Reading.reply true ↔
+    FormativeAssessment.Capacity { linked := b, credits := n + 1 }
+FormativeAssessment.prompted_success_without_retained_capacity (n : Nat) :
+  (FormativeAssessment.step { linked := false, credits := n + 1 } (FormativeAssessment.Action.prompt true)).snd =
+      FormativeAssessment.Reading.reply true ∧
+    ¬FormativeAssessment.Capacity
+        (FormativeAssessment.step { linked := false, credits := n + 1 } (FormativeAssessment.Action.prompt true)).fst
+FormativeAssessment.supported_formation_establishes_capacity (b : Bool) (n : Nat) :
+  FormativeAssessment.Capacity
+    (FormativeAssessment.step { linked := b, credits := n + 1 } FormativeAssessment.Action.form).fst
+FormativeAssessment.formation_is_not_backward_stable :
+  ¬FormativeAssessment.BackwardStable (fun s => (FormativeAssessment.step s FormativeAssessment.Action.form).fst)
+      FormativeAssessment.Capacity
+FormativeAssessment.formation_coalesces_distinct_initial_routes (n : Nat) :
+  FormativeAssessment.step { linked := false, credits := n + 1 } FormativeAssessment.Action.form =
+    FormativeAssessment.step { linked := true, credits := n + 1 } FormativeAssessment.Action.form
+FormativeAssessment.formation_first_cannot_recover_initial_route (n : Nat)
+  (next :
+    FormativeAssessment.Reading →
+      FormativeAssessment.Inquiry FormativeAssessment.Action FormativeAssessment.Reading Bool) :
+  ¬((FormativeAssessment.execute FormativeAssessment.step
+            (FormativeAssessment.Inquiry.ask FormativeAssessment.Action.form next)
+            { linked := false, credits := n + 1 }).snd =
+        false ∧
+      (FormativeAssessment.execute FormativeAssessment.step
+            (FormativeAssessment.Inquiry.ask FormativeAssessment.Action.form next)
+            { linked := true, credits := n + 1 }).snd =
+        true)
+FormativeAssessment.baseline_record_recovers_initial_route (b : Bool) (n : Nat) :
+  (FormativeAssessment.execute FormativeAssessment.step FormativeAssessment.baselineFirst
+          { linked := b, credits := n + 2 }).snd =
+      b ∧
+    FormativeAssessment.Capacity
+      (FormativeAssessment.execute FormativeAssessment.step FormativeAssessment.baselineFirst
+          { linked := b, credits := n + 2 }).fst
+FormativeAssessment.acquired_contrast_tracks_missing_route (b : Bool) (n : Nat) :
+  FormativeAssessment.assistanceContrast (FormativeAssessment.pairedReadings { linked := b, credits := n + 2 }) = !b
+FormativeAssessment.positive_prompt_alone_does_not_identify (n : Nat) :
+  (FormativeAssessment.step { linked := false, credits := n + 1 } (FormativeAssessment.Action.prompt true)).snd =
+      (FormativeAssessment.step { linked := true, credits := n + 1 } (FormativeAssessment.Action.prompt true)).snd ∧
+    ¬FormativeAssessment.Capacity { linked := false, credits := n + 1 } ∧
+      FormativeAssessment.Capacity { linked := true, credits := n + 1 }
+FormativeAssessment.truthful_change_cannot_fit_one_undated_target (target : Bool → Prop) :
+  ¬ClassificationRevision.Faithful FormativeAssessment.changedRecords target
+FormativeAssessment.dated_records_preserve_both_true_observations :
+  ClassificationRevision.Faithful FormativeAssessment.stagedRecords FormativeAssessment.stagedTarget

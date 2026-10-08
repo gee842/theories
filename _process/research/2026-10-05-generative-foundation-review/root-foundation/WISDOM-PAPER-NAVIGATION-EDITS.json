@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-08",
+  "scope": "Four additive publication-discovery entries; scientific results, proof receipts and paired chain unchanged.",
+  "edits": [
+    {
+      "path": "RESEARCH.md",
+      "before_sha256": "03511cbb2d8e2d18bc4974402f7826bdbee6a6cf7ef2a0a9e0c5e5b5b09cad73",
+      "after_sha256": "66ca8023251675ae5218775eea08343b06d95340c060e57ab77893e84890b35b",
+      "insertion": "\n**智慧论文定位 / Wisdom paper positioning，2026-10-08。** 按 Ren 选择面向形式哲学与智慧理论，[论文方案](_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-PAPER-POSITIONING.md)确定“实践智慧与理由的接续”：复用情境回应、实际承担及机会修订结果，比较杜威、情境理由、动态规范逻辑和当代智慧研究。/ Publication assessment and a concrete argument design are complete; the manuscript and comparative novelty remain unfinished. No new theorem or empirical result; the existing scientific-chain status is unchanged.\n",
+      "preserves_all_previous_bytes": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "before_sha256": "d46826b190cb23a52a642f60ed9ff9c6ed56743cb8a40643a81ea6377404e3bf",
+      "after_sha256": "58191795e95eee7e2f778f089778cbcddc26d3be31a0be2108ca59fd4fd5ee55",
+      "insertion": "\n**智慧研究的首篇论文 / First wisdom paper，2026-10-08。** [定位与深化方案](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-PAPER-POSITIONING.md)按 Ren 的形式哲学方向，研究行动改变判断条件时理由如何继续成立或得到修订。/ Reuses completed wisdom and practical-judgment results; primary comparisons delimit the candidate contribution. This is a publication design, not a completed manuscript or additional proof.\n",
+      "preserves_all_previous_bytes": true
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "before_sha256": "1eb0a6d9101c25122049fcabe0ab3754efd74d291ed82fb2d9186ed0d2d5ede8",
+      "after_sha256": "6311af99079c9d6146d0748fd663690cdf7f61be4060212e26db837a58bee1bf",
+      "insertion": "\n**Formal-philosophy wisdom paper, 8 October 2026.** [Publication positioning, primary comparisons and author counterreview](WISDOM-PAPER-POSITIONING.md) respond to Ren’s chosen audience. The proposed article examines continuity and revision of reasons through action-induced changes, reusing checked context and settlement results. Publication assessment is complete; the comparative argument and manuscript remain to be written. No new theorem, empirical result or independent acceptance.\n",
+      "preserves_all_previous_bytes": true
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "before_sha256": "cfbddb74a90418f8141440097e810e802e4d8b295537609ebd9dedcac2d08531",
+      "after_sha256": "edea74c33ac38d6347876729eb5e1ae2de829310c219957da1e4945a93121063",
+      "insertion": "\n**智慧论文方向 / Wisdom publication direction，2026-10-08。** [Ren 的发表问题与读者选择](15-codex-theory-conversations/2026-10-08-wisdom-paper-direction.md)逐字保存，并与助手的问题和研究设计分开。[有范围的文献比较](../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-PAPER-POSITIONING.md#5-最接近的文献与新颖性边界--primary-source-comparison)记录杜威、情境理由、动态规范逻辑、智慧研究及近期预印本的实际读取范围。/ Link-only assessment; no imported external original bytes, exhaustive survey or proof replication.\n",
+      "preserves_all_previous_bytes": true
+    }
+  ]
+}

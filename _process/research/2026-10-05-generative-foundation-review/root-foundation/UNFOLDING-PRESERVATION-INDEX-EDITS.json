@@ -1,0 +1,361 @@
+{
+  "date": "2026-10-08",
+  "scope": "Owned unfolding-preservation integration only; other concurrent entries preserved.",
+  "shared_fragments": [
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "text": "## 29. 实际展开的解释必须保留什么\n\n本轮先固定原有取得—解释—错误—审查的展开，再问解释不可抹去什么。必要要求是：**保留所解释的实际发生、相关差异及其取得、形成、运用和转变关系，以及有根据的后续差异。** 可以改变尺度、术语和整体／局部表述；若把相关成功与失败合并成同一答案，就失去了自己声称解释的内容。这里的必要性来自已独立辨认的目标，不是把“充分解释”定义为接受生成论。\n\n具体须保留：相关来源和历史、差异怎样参与后续、接合处实际支持与相容条件、会改变后续答案的区别、真实失败与替代路线，以及实际发生／可能发生／所有完成终点的性质／可靠接续之间的范围。并非所有细节、所有历史或任意想象干预都必须保留；纯问终点的解释承担较窄任务，说明取得与纠正则不能再只交付终点。\n\n新证明接入原有 `Trace`：准确回答边界接合问题的表述，虽没有预设组合操作或同态字段，仍必须让两个片段通过**同一个实际中间边界**接合。边界等效的片段可在实际准许的上下文中替换。较弱的选定结果接口允许省略坐标，但凡某个有根据的接续答案不同，对应表述就不能合并该区别。全边界接口比选定结果接口更强，不能冒称所有物理细节普遍不可省略。\n\n## 30. 同一规律下不能抹去的区别\n\n沿用未经改写的 `FormedGrounds`，所有边界从同一初始条件、同一信号约定和原有事件规则实际运行得到。Lean 实查：\n\n- 当下判断相同，之后重新判断的结果可以不同。审查修正了判断，却没有修复已扰乱的信号；再次解释仍可恢复错误。\n- 单纯记录和审查取得同一比较，只有审查改变判断。审查在同一事件中新取得并使用比较，不是后来读取先存的记录。\n- 先单纯记录会耗尽最后支持，此后审查无效；关闭接近则在仍有支持时使审查无效。原模型将这些失败表示为实际发生但无改变的事件，并非事件不存在。\n- 当前完整的选定操作读数相同，未再取得的比较关系仍可不同；随后同样审查得到不同判断。\n- 两段同样长的实际历史达到完全相同的终点，却曾取得不同记录。因此只给最终全状态，也无法恢复所有相关取得历史。\n\n这些位置属于同一展开；“读数”和其未保留的关系不是两个基本世界。模型中的实际运行也不冒称真实学习者的新实验。整体或非时间式说明若保留同一目标、区别及接合关系，同样合格；仅完整列举答案是否足以解释，仍需进一步论证。\n\n## 31. 这次完成的桥梁与范围\n\n完成的是：**独立指定的取得与接续问题 → 不能抹去的实际差异 → 准确表述必须保留的关系内容。** 先前接触形成校准材料、取得消耗支持、扰乱保留到后来判断，这些在原有执行中连接起来；不是把前后并列就称为构成。规律本身及其实际对应仍须有根据，单一观察到的先后次序也不能独自排除共同原因或预设序列。\n\n42项新定理、64项新声明已用 Lean 4.29.1 实际检查，公理依赖全部为空。九个继承模块的248项既有审计原样重查，其中194项为空、54项保留原标准依赖；不把“没有新公理”写成没有局部前提。原有过程规律、选定问题和准确性前提明示。非确定反例还保留了：某条历史能够完成，不表示每个分支都能继续。\n\n[论证、证明对应与下一检验](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md)和[独立审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md)保留上述限度。下一步在有实际取得、运用与后续证据的案例中，比较共同原因／预设序列对手；并行或异类边界的接合另有形式范围。没有把无限延续、唯一术语或普遍无假设基础冒称已证，也未改变已经独立完成的显式伦理公理路线。\n\n**English current summary.** An account of an unfolding must retain the relevant occurrences, formation/use relationships, compatible boundaries, consequential distinctions, real failures and supported alternatives of its independently specified target. It may abstract and admit global or atemporal presentations. Native trace joining is inherited by exact endpoint accounts without a composition axiom; selected-outcome accounts need only retain distinctions relevant to their questions. Same-law witnesses preserve historical loss, equal readings with different continuations, exhausted or closed acquisition, and error returning after correction. All 64 new declaration audits covering 42 theorems are empty; 248 inherited audits retain their exact maps. The native law and correspondence remain supplied, and factual fidelity is a necessary condition, not a complete theory of explanation.",
+      "before_sha256": "899898d4d2db0ac65a970636b19ba1f022a9212f8d33eaed0d10c250cf831bcd",
+      "after_sha256": "aa2cdf91c408ad77ca447b231d6b3c6cda91f108573614cbd4ff468a8b141553",
+      "insertion_only": true,
+      "mode": "append"
+    },
+    {
+      "path": "RESEARCH.md",
+      "text": "**实际展开的解释保留什么 / Preserving an actual unfolding，2026-10-08。** [本轮整合](_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md)从原有取得、判断、错误与审查的问题，推出准确表述不能抹去相关形成、接续、支持及失败区别；整体和非时间式表述仍可保留同一内容。**42项新 Lean 定理／64项新空依赖审计通过**，另248项继承审计的依赖逐项不变。/ Native joining follows through the same intermediate boundary without a composition axiom in the account. Same-law examples retain equal endpoints with different acquisition histories, equal current readings with different continuations, resource/access failure and error returning after correction. [Independent review](_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md) and [fresh checker](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_unfolding_preservation.py) distinguish factual fidelity from explanatory sufficiency and empirical correspondence. The supplied native law and stronger foundational scope remain explicit; next test warranted acquisition/use evidence against a matched common-cause or predetermined-sequence rival.",
+      "before_sha256": "24b3dcfbc1c7130f184fdf2aa0d1cf06d13d8e7ae793b2fac7024d25c9b2f41a",
+      "after_sha256": "a2a76e54fc7bc3b52ed35bd3a447984337ae0bb2c4f951509b4b99fc9e16ce08",
+      "insertion_only": true,
+      "mode": "after_title"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "text": "**实际展开的解释保留什么 / Preserving an actual unfolding，2026-10-08。** [本轮整合](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md)从原有取得、判断、错误与审查的问题，推出准确表述不能抹去相关形成、接续、支持及失败区别；整体和非时间式表述仍可保留同一内容。**42项新 Lean 定理／64项新空依赖审计通过**，另248项继承审计的依赖逐项不变。/ Native joining follows through the same intermediate boundary without a composition axiom in the account. Same-law examples retain equal endpoints with different acquisition histories, equal current readings with different continuations, resource/access failure and error returning after correction. [Independent review](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md) and [fresh checker](../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_unfolding_preservation.py) distinguish factual fidelity from explanatory sufficiency and empirical correspondence. The supplied native law and stronger foundational scope remain explicit; next test warranted acquisition/use evidence against a matched common-cause or predetermined-sequence rival.",
+      "before_sha256": "6d771738331ee6b41e5b059aecf5ee0e9abc8fe9bbcc3fe620f616f9c5ebc335",
+      "after_sha256": "46007588ea5dbfcfe422a2779a137343f49c31945c81cef8f836373f9796ebeb",
+      "insertion_only": true,
+      "mode": "after_title"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "text": "**实际展开的解释保留什么 / Preserving an actual unfolding，2026-10-08。** [本轮整合](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md)从原有取得、判断、错误与审查的问题，推出准确表述不能抹去相关形成、接续、支持及失败区别；整体和非时间式表述仍可保留同一内容。**42项新 Lean 定理／64项新空依赖审计通过**，另248项继承审计的依赖逐项不变。/ Native joining follows through the same intermediate boundary without a composition axiom in the account. Same-law examples retain equal endpoints with different acquisition histories, equal current readings with different continuations, resource/access failure and error returning after correction. [Independent review](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md) and [fresh checker](../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_unfolding_preservation.py) distinguish factual fidelity from explanatory sufficiency and empirical correspondence. The supplied native law and stronger foundational scope remain explicit; next test warranted acquisition/use evidence against a matched common-cause or predetermined-sequence rival.",
+      "before_sha256": "5feff93d47d2c90dc645e82e573e9eeaa61362009e1d3adffbeba6575a14a69e",
+      "after_sha256": "2e4a1b7fba824971a7fc0fa7b6a34369449247734593219df224284358b0266f",
+      "insertion_only": true,
+      "mode": "after_title"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "text": "**实际展开的解释保留什么 / Preserving an actual unfolding，2026-10-08。** [本轮整合](UNFOLDING-PRESERVATION-INTEGRATION.md)从原有取得、判断、错误与审查的问题，推出准确表述不能抹去相关形成、接续、支持及失败区别；整体和非时间式表述仍可保留同一内容。**42项新 Lean 定理／64项新空依赖审计通过**，另248项继承审计的依赖逐项不变。/ Native joining follows through the same intermediate boundary without a composition axiom in the account. Same-law examples retain equal endpoints with different acquisition histories, equal current readings with different continuations, resource/access failure and error returning after correction. [Independent review](UNFOLDING-PRESERVATION-REVIEW.md) and [fresh checker](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_unfolding_preservation.py) distinguish factual fidelity from explanatory sufficiency and empirical correspondence. The supplied native law and stronger foundational scope remain explicit; next test warranted acquisition/use evidence against a matched common-cause or predetermined-sequence rival.",
+      "before_sha256": "0fec65a51ed3d7f95cf4216b707abdca5d645e599cd42ac0f1644fe4d66812eb",
+      "after_sha256": "e27deb9e58c5009754df5d6ce6a8c5ad0993d3da98b29ebf610b00e3503e7424",
+      "insertion_only": true,
+      "mode": "after_title"
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+      "text": "**实际展开的解释保留什么 / Preserving an actual unfolding，2026-10-08。** [本轮整合](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md)从原有取得、判断、错误与审查的问题，推出准确表述不能抹去相关形成、接续、支持及失败区别；整体和非时间式表述仍可保留同一内容。**42项新 Lean 定理／64项新空依赖审计通过**，另248项继承审计的依赖逐项不变。/ Native joining follows through the same intermediate boundary without a composition axiom in the account. Same-law examples retain equal endpoints with different acquisition histories, equal current readings with different continuations, resource/access failure and error returning after correction. [Independent review](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md) and [fresh checker](check_unfolding_preservation.py) distinguish factual fidelity from explanatory sufficiency and empirical correspondence. The supplied native law and stronger foundational scope remain explicit; next test warranted acquisition/use evidence against a matched common-cause or predetermined-sequence rival. Run `python3 check_unfolding_preservation.py` here for this separate eleven-module closure; older build receipts retain their scopes.",
+      "before_sha256": "b67905812cba9f99486f63df7297b93cb77badea90d6ca1e0c2e6b37c48c15d6",
+      "after_sha256": "f7c310c8c14915466edf04edd248bdcf6077265077134c315dcb9793298aa716",
+      "insertion_only": true,
+      "mode": "after_title"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "text": "**实际展开的解释保留 / Unfolding preservation，2026-10-08。** C30/F22 成对接入[保留判准、同一规律反例与证明](UNFOLDING-PRESERVATION-INTEGRATION.md)及[独立审查](UNFOLDING-PRESERVATION-REVIEW.md)：42项新定理／64项新空依赖审计，248项继承依赖逐项不变。保留全局对手、原生规律的给定、真实错误回归、历史与未来目标的差别。/ Only C30/F22 and the two owned research pages enter this round's discovery review. The same renderer supplies the two rows; unrelated entries and Markdown lines are unchanged. Read owned sources receive hashes; broad concurrent files are checked only for this round's inserted fragments and are not silently stamped fully reviewed. [Owned edits](UNFOLDING-PRESERVATION-INDEX-EDITS.json) and [scoped checks](UNFOLDING-PRESERVATION-CHECKS.json) record remaining global review changes without claiming full-table freshness.",
+      "before_sha256": "c5fa6ec3df37d6cdce6120ac7e0f4eeff71afa214728b204a09464eb9167a54d",
+      "after_sha256": "ff7cf63d1714d85e4a2e58cf79f54a2e3309777f5d949f1ba6307a8e69793591",
+      "insertion_only": true,
+      "mode": "after_title"
+    }
+  ],
+  "rows_before": {
+    "C30": {
+      "id": "C30",
+      "title_zh": "生成关系的解释必要性",
+      "title_en": "Generative relations and explanatory necessity",
+      "claim_zh": "固定拼接及全部前后接续问题后，可替换关系迫出共同最小组合结构；所有准确表述保留其因子，准确约简表述保持组合与单位元同构。整体说明仍适用，不由此选定生成的本体或解释优先。",
+      "claim_en": "Fixed concatenation and all two-sided contextual questions force a common minimal composition structure. Every exact presentation retains its factor; reduced exact presentations are isomorphic with composition and unit preserved. Global accounts remain eligible; ontological or explanatory priority is not selected.",
+      "scope_zh": "此前17、45、40、32项研究保留原范围；新增36项／110项含继承审计（77空、30仅propext、3另含Quot.sound）。一般存在性、三类预算及当前／单侧问题反例已查；下一步从共同实现条件恢复适用的部分接合接口。普遍唯一性与规范根据仍开放。",
+      "scope_en": "Prior 17-, 45-, 40- and 32-theorem studies retain scope. New 36 / 110 audits: 77 empty, 30 propext only, 3 also Quot.sound. General existence, the three-class budget and present/suffix-query counters are checked. Next recover suitable partial joining from joint-realization conditions; universal uniqueness and normative warrant remain open.",
+      "links": [
+        {
+          "label_zh": "当前论述",
+          "label_en": "Current account",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md"
+        },
+        {
+          "label_zh": "论证、反审与来源",
+          "label_en": "Argument, counterreview and sources",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "Ren 原话",
+          "label_en": "Ren’s direction",
+          "path": "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md"
+        },
+        {
+          "label_zh": "可用变化、保留与反审",
+          "label_en": "Available variation, retention and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-VARIATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "取得、校准与修正整合",
+          "label_en": "Acquisition, calibration and correction",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-INQUIRY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "唯一性、结构与反审",
+          "label_en": "Uniqueness, structure and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-STRUCTURE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "组合唯一性、来源与反审",
+          "label_en": "Compositional uniqueness, sources and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-COMPOSITION-INTEGRATION.md"
+        }
+      ]
+    },
+    "F22": {
+      "id": "F22",
+      "title_zh": "关系恢复、证据再用与组合结构唯一性",
+      "title_en": "Relation recovery, evidence reuse and compositional uniqueness",
+      "claim_zh": "继承必要内容、校准及结构对手证明；新增上下文同余、代表无关的组合律、一般最小表述存在、准确表述的共同因子与约简表述的结构同构，具体预算迫出三类及其组合表。",
+      "claim_en": "Retains necessary-content, calibration and structural-rival proofs; adds contextual congruence, representative-independent composition, general reduced existence, a common factor of exact presentations, reduced structural isomorphism and a forced three-class budget table.",
+      "scope_zh": "最新36项新定理＋74项继承审计＝110项：77空依赖、30仅标准propext、3另含Quot.sound。无自定公理或选择公理；固定问题、拼接及约简前提明示。以关系图给出组合与对齐同构，不宣称无前提的唯一基础。",
+      "scope_en": "Latest 36 new + 74 inherited audits = 110: 77 empty, 30 standard propext only, 3 also Quot.sound. No custom axioms or Classical.choice; questions, concatenation and reduction are explicit. Operation graphs and aligned isomorphism do not establish assumption-free unique grounding.",
+      "links": [
+        {
+          "label_zh": "Lean 源码",
+          "label_en": "Lean source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryNecessity.lean"
+        },
+        {
+          "label_zh": "证明对应与回执",
+          "label_en": "Proof correspondence and receipt",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "变化源码",
+          "label_en": "Variation source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryVariation.lean"
+        },
+        {
+          "label_zh": "恢复与记录源码",
+          "label_en": "Recovery and retention source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryRecovery.lean"
+        },
+        {
+          "label_zh": "新证明对应与回执",
+          "label_en": "New proof correspondence and receipt",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-VARIATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "取得与再用源码",
+          "label_en": "Acquisition and reuse source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryInquiry.lean"
+        },
+        {
+          "label_zh": "取得、校准与修正整合",
+          "label_en": "Acquisition, calibration and correction",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-INQUIRY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "整体与结构源码",
+          "label_en": "Global and structural source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryStructure.lean"
+        },
+        {
+          "label_zh": "相对唯一性源码",
+          "label_en": "Relative uniqueness source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryUniqueness.lean"
+        },
+        {
+          "label_zh": "唯一性、结构与反审",
+          "label_en": "Uniqueness, structure and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-STRUCTURE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "组合与一般存在性源码",
+          "label_en": "Composition and general existence source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryComposition.lean"
+        },
+        {
+          "label_zh": "组合唯一性、来源与反审",
+          "label_en": "Compositional uniqueness, sources and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-COMPOSITION-INTEGRATION.md"
+        }
+      ]
+    }
+  },
+  "rows_after": {
+    "C30": {
+      "id": "C30",
+      "title_zh": "生成关系的解释必要性",
+      "title_en": "Generative relations and explanatory necessity",
+      "claim_zh": "固定接续问题迫出共同最小组合结构；进一步从原有取得、错误、审查与接续问题说明解释须保留哪些相关关系。准确原生边界答案迫出同一中间边界的接合；同一规律下的历史、后续及失败区别不可任意合并。整体或非时间式说明仍合格。",
+      "claim_en": "Fixed contextual questions force a common minimal composition structure. Native acquisition, error, review and continuation questions further motivate relevant preservation: exact boundary answers inherit joining through one intermediate boundary, and same-law history, continuation and failure distinctions cannot be erased. Global or atemporal accounts remain eligible.",
+      "scope_zh": "此前17、45、40、32及36项研究保留原范围。新增42项定理／64项新审计全部空依赖；248项继承审计原样保留（194空、54标准依赖）。独立审查接受必要保真判准及有条件证明；规律与真实对应仍明示，非完整解释充分性或普遍无假设根基。下一检验以实际取得／运用证据区分共同原因或预设序列对手。",
+      "scope_en": "Prior 17-, 45-, 40-, 32- and 36-theorem studies retain scope. New 42 theorems / 64 audits are empty; 248 inherited maps unchanged (194 empty, 54 standard). Independent review accepts necessary fidelity and conditional proofs, with native law and correspondence explicit. This does not establish explanatory sufficiency or universal assumption-free grounding. Next test acquisition/use evidence against common-cause or predetermined-sequence rivals.",
+      "links": [
+        {
+          "label_zh": "当前论述",
+          "label_en": "Current account",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md"
+        },
+        {
+          "label_zh": "论证、反审与来源",
+          "label_en": "Argument, counterreview and sources",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "Ren 原话",
+          "label_en": "Ren’s direction",
+          "path": "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md"
+        },
+        {
+          "label_zh": "可用变化、保留与反审",
+          "label_en": "Available variation, retention and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-VARIATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "取得、校准与修正整合",
+          "label_en": "Acquisition, calibration and correction",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-INQUIRY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "唯一性、结构与反审",
+          "label_en": "Uniqueness, structure and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-STRUCTURE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "组合唯一性、来源与反审",
+          "label_en": "Compositional uniqueness, sources and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-COMPOSITION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "实际展开的保留判准与整合",
+          "label_en": "Unfolding-preservation criterion and integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "独立审查",
+          "label_en": "Independent review",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md"
+        }
+      ]
+    },
+    "F22": {
+      "id": "F22",
+      "title_zh": "关系恢复、证据再用与组合结构唯一性",
+      "title_en": "Relation recovery, evidence reuse and compositional uniqueness",
+      "claim_zh": "保留必要内容、校准、整体对手与上下文组合证明；新增准确表述的原生接合与可替换性、可能／完成／分支接续区别，并在未经改写的同一模型中实查历史遗失、当下相同而后续不同、耗尽／关闭及纠正后错误回归。",
+      "claim_en": "Retains necessary-content, calibration, global-rival and contextual-composition proofs; adds exact-account native joining/substitution, distinctions between possibility, completed outcomes and branch continuation, and same-law witnesses of lost history, equal presents with different futures, exhaustion/closure and error returning after correction.",
+      "scope_zh": "前轮36项新定理／110项审计的范围及77空、30仅propext、3另含Quot.sound依赖保留。本轮42项新定理／64项新审计全部空；另248项继承审计逐项不变（194空、54标准）。两轮继承重叠不累加。完整11模块实查、独立审查通过；局部规律、观察问题与准确性条件不是无前提所得。",
+      "scope_en": "Earlier 36 new theorems / 110 audits retain their 77 empty, 30 propext-only and 3 additional Quot.sound scope. This round: 42 new theorems / 64 empty audits; 248 inherited maps unchanged (194 empty, 54 standard). Overlapping closures are not added together. All 11 modules checked and independently reviewed; native law, observation questions and exactness remain explicit inputs.",
+      "links": [
+        {
+          "label_zh": "Lean 源码",
+          "label_en": "Lean source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryNecessity.lean"
+        },
+        {
+          "label_zh": "证明对应与回执",
+          "label_en": "Proof correspondence and receipt",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "变化源码",
+          "label_en": "Variation source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryVariation.lean"
+        },
+        {
+          "label_zh": "恢复与记录源码",
+          "label_en": "Recovery and retention source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryRecovery.lean"
+        },
+        {
+          "label_zh": "新证明对应与回执",
+          "label_en": "New proof correspondence and receipt",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-VARIATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "取得与再用源码",
+          "label_en": "Acquisition and reuse source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryInquiry.lean"
+        },
+        {
+          "label_zh": "取得、校准与修正整合",
+          "label_en": "Acquisition, calibration and correction",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-INQUIRY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "整体与结构源码",
+          "label_en": "Global and structural source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryStructure.lean"
+        },
+        {
+          "label_zh": "相对唯一性源码",
+          "label_en": "Relative uniqueness source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryUniqueness.lean"
+        },
+        {
+          "label_zh": "唯一性、结构与反审",
+          "label_en": "Uniqueness, structure and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-STRUCTURE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "组合与一般存在性源码",
+          "label_en": "Composition and general existence source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryComposition.lean"
+        },
+        {
+          "label_zh": "组合唯一性、来源与反审",
+          "label_en": "Compositional uniqueness, sources and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-COMPOSITION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "实际展开的保留判准与整合",
+          "label_en": "Unfolding-preservation criterion and integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "独立审查",
+          "label_en": "Independent review",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md"
+        },
+        {
+          "label_zh": "原生接合与准确表述源码",
+          "label_en": "Native joining and exact-account source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/UnfoldingPreservation.lean"
+        },
+        {
+          "label_zh": "同一规律下的具体保留源码",
+          "label_en": "Same-law preservation source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/FormedUnfoldingPreservation.lean"
+        },
+        {
+          "label_zh": "完整实查回执",
+          "label_en": "Fresh complete receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/unfolding-preservation-checks/20261007T225350.404286Z/receipt.json"
+        }
+      ]
+    }
+  },
+  "other_rows_unchanged": true,
+  "generated_other_rows_unchanged": true,
+  "unchanged_other_entries_sha256": "03d959e9d6a338d7213d3acec2ee1373d2c3c4f3f19b404656d5b3283993c097",
+  "unchanged_other_markdown_sha256": "b30c084fd6f66e356f728ff6a428f467c6b65d10a8cecfe5701ab734d3f79186",
+  "owned_reviewed_sources": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-INTEGRATION.md": "24f5de5fa7a5231dce8f432d5e55c41d51d374e4ea091079a58b0e3e229b922d",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNFOLDING-PRESERVATION-REVIEW.md": "5a8b006e5a2093e9b89d88627ac5f4c1f4dfc3f0ab2da375213db4c9f0a89cc7",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/UnfoldingPreservation.lean": "19ac73d41d6534617337f24e0d4a313a046e0e7bc2a82f2f8ce95bb7dedf37d6",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/FormedUnfoldingPreservation.lean": "26c1a578b00b74065df6bc214e71eb2383319761ca9440ebf9a9e4703f216462",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/unfolding-preservation-checks/20261007T225350.404286Z/receipt.json": "57a38f199bdfff852dd1327f7634160580e0619f2dc69de3325f77331f08d103"
+  },
+  "global_pending_changes_at_edit": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "theories/shengsheng-buxi-generative-existence/README.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-HISTORY-INTEGRATION.md"
+    ],
+    "removed_pages": []
+  },
+  "shared_review_note": "Shared-file additions were checked as fragments; no unread full shared-file version was stamped reviewed."
+}

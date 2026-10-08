@@ -1,0 +1,15 @@
+'Generative.ContextualLeaseRules.acquire_spec' does not depend on any axioms
+'Generative.ContextualLeaseRules.step_unique' does not depend on any axioms
+'Generative.ContextualLeaseRules.merge_mark' depends on axioms: [propext, Quot.sound]
+'Generative.ContextualLeaseRules.merge_clear' depends on axioms: [propext, Quot.sound]
+'Generative.ContextualLeaseRules.step_avoids' depends on axioms: [propext]
+'Generative.ContextualLeaseRules.step_frame' depends on axioms: [propext, Quot.sound]
+'Generative.ContextualLeaseRules.step_disjoint' depends on axioms: [propext]
+'Generative.ContextualLeaseRules.trace_frame_lift' depends on axioms: [propext, Quot.sound]
+'Generative.ContextualLeaseRules.trace_frame_reflect' depends on axioms: [propext, Quot.sound]
+'Generative.ContextualLeaseRules.framed_feasible_iff' depends on axioms: [propext, Quot.sound]
+'Generative.ContextualLeaseRules.guarded_substitution' depends on axioms: [propext, Quot.sound]
+'Generative.ContextualLeaseRules.disjoint_vacant' does not depend on any axioms
+'Generative.ContextualLeaseRules.episode_context_iff' depends on axioms: [propext, Quot.sound]
+'Generative.ContextualLeaseRules.occupied_context_iff' depends on axioms: [propext, Quot.sound]
+'Generative.ContextualLeaseRules.release_restores_episode' depends on axioms: [propext, Quot.sound]

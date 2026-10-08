@@ -1,0 +1,39 @@
+SituatedTracking.one_step (q : ℝ) (hq : 0 ≤ q) (hq1 : q ≤ 1) (reading actual : ℕ → ℝ) (initial : ℝ) (n : ℕ) :
+  SituatedTracking.error q reading actual initial (n + 1) ≤
+    q * SituatedTracking.error q reading actual initial n + SituatedTracking.forcing q reading actual n
+SituatedTracking.recurrence_bound (e : ℕ → ℝ) (q B : ℝ) (hq : 0 ≤ q) (n : ℕ)
+  (hstep : ∀ i < n, e (i + 1) ≤ q * e i + (1 - q) * B) : e n ≤ q ^ n * e 0 + (1 - q ^ n) * B
+SituatedTracking.tracking_bound (q noise drift B : ℝ) (hq : 0 ≤ q) (hq1 : q ≤ 1) (reading actual : ℕ → ℝ) (initial : ℝ)
+  (n : ℕ) (hr : ∀ i < n, |reading i - actual i| ≤ noise) (hd : ∀ i < n, |actual (i + 1) - actual i| ≤ drift)
+  (hb : (1 - q) * noise + drift ≤ (1 - q) * B) :
+  SituatedTracking.error q reading actual initial n ≤
+    q ^ n * SituatedTracking.error q reading actual initial 0 + (1 - q ^ n) * B
+SituatedTracking.eventual_band (e : ℕ → ℝ) (q B : ℝ) (hq : 0 ≤ q) (hq1 : q < 1) (hB : 0 ≤ B)
+  (hstep : ∀ (n : ℕ), e (n + 1) ≤ q * e n + (1 - q) * B) (ε : ℝ) (hε : 0 < ε) : ∃ N, ∀ n ≥ N, e n < B + ε
+SituatedTracking.vanishing_input_convergence (e w : ℕ → ℝ) (q : ℝ) (hq : 0 ≤ q) (hq1 : q < 1) (he : ∀ (n : ℕ), 0 ≤ e n)
+  (hs : ∀ (n : ℕ), e (n + 1) ≤ q * e n + w n) (hw : Filter.Tendsto w Filter.atTop (nhds 0)) :
+  Filter.Tendsto e Filter.atTop (nhds 0)
+SituatedTracking.tracking_convergence (q : ℝ) (hq : 0 ≤ q) (hq1 : q < 1) (reading actual : ℕ → ℝ) (initial : ℝ)
+  (hf : Filter.Tendsto (SituatedTracking.forcing q reading actual) Filter.atTop (nhds 0)) :
+  Filter.Tendsto (SituatedTracking.error q reading actual initial) Filter.atTop (nhds 0)
+SituatedTracking.radius_nonnegative (q : ℝ) (inputBound : ℕ → ℝ) (initialBound : ℝ) (hq : 0 ≤ q) (hi : 0 ≤ initialBound)
+  (hw : ∀ (n : ℕ), 0 ≤ inputBound n) (n : ℕ) : 0 ≤ SituatedTracking.radius q inputBound initialBound n
+SituatedTracking.radius_sound (q : ℝ) (hq : 0 ≤ q) (hq1 : q ≤ 1) (reading actual inputBound : ℕ → ℝ)
+  (initial initialBound : ℝ) (n : ℕ) (hi : SituatedTracking.error q reading actual initial 0 ≤ initialBound)
+  (hw : ∀ i < n, SituatedTracking.forcing q reading actual i ≤ inputBound i) :
+  SituatedTracking.error q reading actual initial n ≤ SituatedTracking.radius q inputBound initialBound n
+SituatedTracking.radius_converges (q : ℝ) (inputBound : ℕ → ℝ) (initialBound : ℝ) (hq : 0 ≤ q) (hq1 : q < 1)
+  (hi : 0 ≤ initialBound) (hw : ∀ (n : ℕ), 0 ≤ inputBound n) (hl : Filter.Tendsto inputBound Filter.atTop (nhds 0)) :
+  Filter.Tendsto (SituatedTracking.radius q inputBound initialBound) Filter.atTop (nhds 0)
+SituatedTracking.certificate_sound (actual retained radius cap : ℝ) (he : |retained - actual| ≤ radius)
+  (hc : retained + radius ≤ cap) : actual ≤ cap
+SituatedTracking.eventually_certifies (actual retained radius cap : ℕ → ℝ) (margin : ℝ) (hm : 0 < margin)
+  (he : ∀ (n : ℕ), |retained n - actual n| ≤ radius n) (ha : ∀ (n : ℕ), actual n ≤ cap n - margin)
+  (hr : Filter.Tendsto radius Filter.atTop (nhds 0)) : ∃ N, ∀ n ≥ N, retained n + radius n ≤ cap n
+SituatedTracking.misleading_reading_fixed (q initial : ℝ) (n : ℕ) :
+  SituatedTracking.estimate q (fun x => initial) initial n = initial
+SituatedTracking.stable_error_can_be_wrong (q : ℝ) (n : ℕ) : SituatedTracking.error q (fun x => 0) (fun x => 1) 0 n = 1
+SituatedTracking.changing_condition_retains_lag (n : ℕ) :
+  SituatedTracking.error 0 (fun t => ↑t) (fun t => ↑t) 0 (n + 1) = 1
+SituatedTracking.boundary_accuracy_without_certificate :
+  Filter.Tendsto (fun n => (1 / 2) ^ n) Filter.atTop (nhds 0) ∧ ∀ (n : ℕ), ¬(1 / 2) ^ n + (1 / 2) ^ n ≤ 0

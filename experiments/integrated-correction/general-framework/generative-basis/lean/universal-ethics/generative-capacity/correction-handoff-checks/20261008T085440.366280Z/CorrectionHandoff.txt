@@ -1,0 +1,49 @@
+CorrectionHandoff.lean:45:23: error: Tactic `rfl` failed: The left-hand side
+  decode c false
+is not definitionally equal to the right-hand side
+  false
+
+case false
+c : Channel
+⊢ decode c false = false
+CorrectionHandoff.lean:45:23: error: Tactic `rfl` failed: The left-hand side
+  decode c false
+is not definitionally equal to the right-hand side
+  true
+
+case true
+c : Channel
+⊢ decode c false = true
+CorrectionHandoff.lean:228:2: error: Tactic `decide` failed for proposition
+  (step (run initial stalePreparation) (Operation.switch true)).active = false ∧
+    execute ((step (run initial stalePreparation) (Operation.switch true)).channels false) true = some true
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `Bool.decEq`, and `readyDecidable`, reduction got stuck at the `Decidable` instance
+  match (step (run initial stalePreparation) (Operation.switch true)).active, false with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯
+CorrectionHandoff.lean:233:2: error: Tactic `decide` failed for proposition
+  (run initial (stalePreparation ++ [Operation.test true, Operation.switch true, Operation.retire false])).active =
+      true ∧
+    execute
+        ((run initial
+              (stalePreparation ++ [Operation.test true, Operation.switch true, Operation.retire false])).channels
+          true)
+        true =
+      some true
+because its `Decidable` instance
+  instDecidableAnd
+did not reduce to `isTrue` or `isFalse`.
+
+After unfolding the instances `instDecidableAnd`, `instDecidableEqBool`, `Bool.decEq`, and `readyDecidable`, reduction got stuck at the `Decidable` instance
+  match (run initial (stalePreparation ++ [Operation.test true, Operation.switch true, Operation.retire false])).active,
+    true with
+  | false, false => isTrue ⋯
+  | false, true => isFalse ⋯
+  | true, false => isFalse ⋯
+  | true, true => isTrue ⋯

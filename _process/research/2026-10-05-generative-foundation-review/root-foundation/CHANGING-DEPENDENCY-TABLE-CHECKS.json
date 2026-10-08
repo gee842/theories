@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "scope": "C28/F20 paired fields, linked-source registration and canonical rendered rows; all other generated lines preserved; not a full-table validation.",
+  "other_generated_lines_unchanged": true,
+  "global_pending": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/README.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [],
+    "removed_pages": []
+  }
+}

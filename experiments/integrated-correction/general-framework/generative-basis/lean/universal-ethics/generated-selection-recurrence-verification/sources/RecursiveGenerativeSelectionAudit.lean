@@ -1,0 +1,17 @@
+import RecursiveGenerativeSelection
+
+#print axioms RecursiveGenerativeSelection.mul_assoc_eq
+#print axioms RecursiveGenerativeSelection.add_mul_eq
+#print axioms RecursiveGenerativeSelection.strict_mul_cancel_right
+#print axioms RecursiveGenerativeSelection.support
+#print axioms RecursiveGenerativeSelection.descendants
+#print axioms RecursiveGenerativeSelection.pooled
+#print axioms RecursiveGenerativeSelection.cross_compare_iff
+#print axioms RecursiveGenerativeSelection.more_supporters_produce_more_support
+#print axioms RecursiveGenerativeSelection.supporter_share_falls_within
+#print axioms RecursiveGenerativeSelection.descendant_totals_positive
+#print axioms RecursiveGenerativeSelection.pooled_counts
+#print axioms RecursiveGenerativeSelection.support_contribution_threshold
+#print axioms RecursiveGenerativeSelection.global_supporter_share_rises_iff
+#print axioms RecursiveGenerativeSelection.weak_coupling_witness
+#print axioms RecursiveGenerativeSelection.strong_coupling_witness

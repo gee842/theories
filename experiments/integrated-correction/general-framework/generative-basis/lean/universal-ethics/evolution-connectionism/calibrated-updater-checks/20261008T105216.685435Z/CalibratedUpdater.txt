@@ -1,0 +1,8 @@
+CalibratedUpdater.lean:159:105: error: unsolved goals
+case zero.h.«2»
+channels : Fin 3 → Channel
+⊢ raw (channels 2) 0 = raw (channels ⟨2, ⋯⟩) 0
+
+case one.h.«2»
+channels : Fin 3 → Channel
+⊢ raw (channels 2) 1 = raw (channels ⟨2, ⋯⟩) 1

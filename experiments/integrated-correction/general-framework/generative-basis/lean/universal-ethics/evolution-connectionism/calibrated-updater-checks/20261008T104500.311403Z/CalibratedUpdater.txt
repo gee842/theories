@@ -1,0 +1,32 @@
+CalibratedUpdater.lean:101:38: warning: This simp argument is unused:
+  Bool.and_assoc
+
+Hint: Omit it from the simp argument list.
+  simp [recalls, Fin.forall_fin_succ,̵ ̵B̵o̵o̵l̵.̵a̵n̵d̵_̵a̵s̵s̵o̵c̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+CalibratedUpdater.lean:160:16: error: (deterministic) timeout at `whnf`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+CalibratedUpdater.lean:176:77: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+CalibratedUpdater.lean:180:86: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+CalibratedUpdater.lean:213:81: error: unsolved goals
+channels : Fin 3 → Channel
+hg : ∀ (i : Fin 3), (channels i).gain ≠ 0
+B : Network 3
+task : UpdaterConsequences.Task
+⊢ (if
+        report
+            { zero := fun i => some (raw (channels i) 0), one := fun i => some (raw (channels i) 1),
+              wired := fun x => true, inhibit := true, parts := 0, fuel := 0, spent := 10 }
+            (readings channels (step Real.tanh 1 1 B (profile task))) (profile task) =
+          some true then
+      B
+    else learn 1 (profile task) B) =
+    if recalls (profile task) (step Real.tanh 1 1 B (profile task)) then B else learn 1 (profile task) B

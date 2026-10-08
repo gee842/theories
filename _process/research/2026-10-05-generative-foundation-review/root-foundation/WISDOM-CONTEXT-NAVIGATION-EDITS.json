@@ -1,0 +1,44 @@
+[
+  {
+    "path": "RESEARCH.md",
+    "before_sha256": "c43ad2aa8ae8f8fc50e966892957ddcec4cdd4e01102e730a802754fc4141985",
+    "after_sha256": "bf6246132a750865c1b961c988e3a98b03a44e9fb224748db2c899afc26f2307",
+    "insertion": "\n**智慧、情境与共同核心 / Wisdom and context，2026-10-08。** [首轮研究](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/WISDOM-AND-CONTEXT.md)连接有限继续、相反回应与历史原典；成功本身可改变下一步的适当方向。11项新 Lean 定理／50项含依赖审计通过（44空、6标准依赖）。/ Selected source comparisons preserve different ethical grounds and costly fidelity; a blind historical test, universal wisdom and unique truth constitution remain unproved. [Proof correspondence and author counterreview](_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md).\n",
+    "all_prior_bytes_preserved": true
+  },
+  {
+    "path": "theories/shengsheng-buxi-generative-existence/README.md",
+    "before_sha256": "038e0b25df3a955efb0b5aa89791bda5a74da1fbd40595f435552a47e1caf8cc",
+    "after_sha256": "dce6b361afa0aa4ff2302472c4fd946cbfaa4608c5a78ed0421c39a777533ff3",
+    "insertion": "\n**智慧的情境结构 / Wisdom in context，2026-10-08。** [新论述](unified-2026-10-05/WISDOM-AND-CONTEXT.md)检验同一原则怎样要求相反行动，以及成功怎样形成下一次回应须变的条件。/ Eleven new Lean theorems, fifty total audits and scoped classical readings; the [integration](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md) preserves supplied targets, interrupted branches, historical differences and conventional comparators.\n",
+    "all_prior_bytes_preserved": true
+  },
+  {
+    "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+    "before_sha256": "031c38ec6bb44db7320f10d0aa06f6a61075500571a4194ecacbcd5dcb443ab9",
+    "after_sha256": "09c044f306329dd39037960ddf82567a14651bde517df16e2eeaa61e91dfa632",
+    "insertion": "\n**理解到情境回应 / Understanding to contextual response，2026-10-08。** [智慧与共同核心](WISDOM-AND-CONTEXT.md)将既有有限历史与慧根推理接到逐前缀继续、相反回应及前次成功造成的条件改变；11项新 Lean 定理已查。/ This completes a finite formal bridge under supplied laws and targets, reusing G0/J for ethical warrant. The next discriminating test is a prospectively fixed, independently selected case comparison; two familiar source readings do not prove historical convergence or universal wisdom.\n",
+    "all_prior_bytes_preserved": true
+  },
+  {
+    "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+    "before_sha256": "f5caee8d4009c11a38e46aba9daf3215d0ea7f48f3e3688a35adf8c806005303",
+    "after_sha256": "1d7230d03bc98ebf933aaedd99f74ca12a701fbbcfa00f269e479cd0cd953d41",
+    "insertion": "\n**Wisdom and context, 8 October 2026.** [Integration and author counterreview](WISDOM-CONTEXT-INTEGRATION.md) connect the [fixed first-test protocol](WISDOM-CONTEXT-PROTOCOL.md), [primary readings](WISDOM-CONTEXT-SOURCES.md) and eleven checked theorems. Earlier success can change the next admissible response; a successful endpoint can conceal an interrupted branch. Historical universality and ethical identity are not inferred.\n",
+    "all_prior_bytes_preserved": true
+  },
+  {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/README.md",
+    "before_sha256": "94e08d4fb314bbe4ae5410aeddbd5d383afc5f2b9251f94fd70f8d74c40fc4cf",
+    "after_sha256": "57238cf659ddcde96316f1e0792617033914a34b2810a794036465900955baaf",
+    "insertion": "\n**Contextual wisdom, 8 October 2026.** [ContextualWisdom.lean](ContextualWisdom.lean) adds eleven finite-continuation/context theorems. Run [check_contextual_wisdom.py](check_contextual_wisdom.py): [four-module receipt](contextual-wisdom-verification.json), 50 audits (44 empty, 6 standard). [Correspondence, primary precedent and counterreview](../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-INTEGRATION.md) preserve supplied laws, targets and actual-execution limits.\n",
+    "all_prior_bytes_preserved": true
+  },
+  {
+    "path": "sources/SOURCES.md",
+    "before_sha256": "43198f93dd4d464508a0a775ee7fac852eef328af138f4359448aea32152ab7c",
+    "after_sha256": "c8c53813aa9e54f53c687056370e56fdc35148d2eba518a49a518db31939cbf4",
+    "insertion": "\n**Math core and historical wisdom, 8 October 2026.** [Ren’s exact observation and continuation](15-codex-theory-conversations/2026-10-08-math-core-and-historical-wisdom.md) are separated from AI hypotheses. [Link-only primary readings](../_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-SOURCES.md) record Analects XI.22, Cicero I.10/I.13 and Dijkstra EWD418, with access and comparison limits; no external original bytes or empirical replication are claimed.\n",
+    "all_prior_bytes_preserved": true
+  }
+]

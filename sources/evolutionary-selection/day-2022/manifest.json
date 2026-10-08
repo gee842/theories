@@ -1,0 +1,161 @@
+{
+  "retrieved": "2026-10-08 Asia/Bangkok",
+  "doi": "10.7554/eLife.72707",
+  "title": "Cellular organization in lab-evolved and extant multicellular species obeys a maximum entropy law",
+  "authors": "Day et al.",
+  "publication_date": "2022-02-21",
+  "license": "Article CC BY 4.0; associated publisher source archives retained with attribution",
+  "method": "Original public downloads preserved unchanged from temporary download directory. Local hashes are preservation checks, not publisher-issued checksums.",
+  "preserved_files": {
+    "day-2022.pdf": {
+      "url": "https://api.repository.cam.ac.uk/server/api/core/bitstreams/0507c61e-74fc-4063-b73d-d417ff50a508/content",
+      "bytes": 7739249,
+      "sha256": "eb013b627bd357c8f845b881ea93ab07810a45194408a5778b635a318dfc0f17"
+    },
+    "packing-data.zip": {
+      "url": "https://cdn.elifesciences.org/articles/72707/elife-72707-fig1-data1-v1.zip",
+      "bytes": 125720,
+      "sha256": "3b5040aaf75205a62c2bdc7306da1d41497ade688bf159f1d58c7f56a7295e6b",
+      "members": {
+        "Experimental_Data/Snowflake_SEM_positions/particles-sphere-01.txt": {
+          "bytes": 4728,
+          "sha256": "229b91a7a66f891b1ccabf345901cb27f0ffd7771359e3a38ab48321babd22a8"
+        },
+        "Experimental_Data/Snowflake_SEM_positions/particles-sphere-02.txt": {
+          "bytes": 1822,
+          "sha256": "20652b0f82818597f86acdf6c2427cd4c942896c2a65bb84029f68f855487188"
+        },
+        "Experimental_Data/Snowflake_SEM_positions/particles-sphere-03.txt": {
+          "bytes": 3589,
+          "sha256": "a368a1b149a6fd30ad013476fa4cff12de1d77db0736b6d03a685d376f011651"
+        },
+        "Experimental_Data/Snowflake_SEM_positions/particles-sphere-04.txt": {
+          "bytes": 5329,
+          "sha256": "247a230727d40e2ba6cd5c9e2e5a88054d509a781f32a6069c33bc0bad4a643b"
+        },
+        "Experimental_Data/Snowflake_SEM_positions/particles-sphere-05.txt": {
+          "bytes": 1188,
+          "sha256": "9901361135412ca08671ae79b4d2d2b3b65f72f3552a60b98167853163af5c46"
+        },
+        "Experimental_Data/Snowflake_SEM_positions/particles-sphere-06.txt": {
+          "bytes": 3008,
+          "sha256": "ce2fcfd635e3ff70f410ba094832f315f06d67b8b7dbebc267da37a6066a9ef1"
+        },
+        "Experimental_Data/Snowflake_SEM_positions/particles-sphere-07.txt": {
+          "bytes": 5999,
+          "sha256": "d5ec59430d98ee6545a50688b023d221402305522aa098ba3d4a70b7fb94ae6c"
+        },
+        "Experimental_Data/Snowflake_SEM_positions/particles-sphere-08.txt": {
+          "bytes": 1372,
+          "sha256": "ff6925974d404ea401c28bc066a44749b39bbbc73a4a87cf42d627010a4ce3e3"
+        },
+        "Experimental_Data/Snowflake_SEM_positions/particles-sphere-09.txt": {
+          "bytes": 4283,
+          "sha256": "70ce9a121d5c7b5424637b776dca47e5553861bed9e7f09b83d2ca98981990f9"
+        },
+        "Experimental_Data/Snowflake_SEM_positions/particles-sphere-10.txt": {
+          "bytes": 1892,
+          "sha256": "dafbe6b3a2ed48b2bf91b18e5e857283f0f19ddca362d4ccedccc5b6bf0a7779"
+        },
+        "Experimental_Data/Snowflake_SEM_positions/particles-sphere-11.txt": {
+          "bytes": 6516,
+          "sha256": "77432affce657e3e51d05af76816d911c322b126d861f61f3dfcec5f2a630727"
+        },
+        "Experimental_Data/Snowflake_SEM_positions/particles-sphere-12.txt": {
+          "bytes": 456,
+          "sha256": "125374e5384f810da443066dd9a273066a6ccad59655d673bc0afa7b8af21ca6"
+        },
+        "Experimental_Data/Snowflake_SEM_positions/particles-sphere-13.txt": {
+          "bytes": 3496,
+          "sha256": "612cab570b3e03a8633be9498edb049f4d9b9fc738df76d2fa8816048a647d38"
+        },
+        "Experimental_Data/Snowflake_SEM_positions/particles-sphere-14.txt": {
+          "bytes": 4773,
+          "sha256": "5c3b1e8388b5f0e291ba7ea6baa569a747ee31c5976d4707de05e161a3b39915"
+        },
+        "Experimental_Data/Snowflake_SEM_positions/particles-sphere-15.txt": {
+          "bytes": 4685,
+          "sha256": "d6409b0771d196c67014a162ceeb7c2c62a30761c406211bc6c07e7ed0c2c186"
+        },
+        "Experimental_Data/Snowflake_SEM_positions/particles-sphere-16.txt": {
+          "bytes": 4429,
+          "sha256": "a01a9586ef23915f98c76a28fc57b4e098eae81f7dc5993a9a26e570bb4b5d2b"
+        },
+        "Experimental_Data/Snowflake_SEM_positions/particles-sphere-17.txt": {
+          "bytes": 4579,
+          "sha256": "27fec6f6380a6fe51b3eb48d54cfb8bdb584d2f63336b30f8339b9b78162bd5a"
+        },
+        "Experimental_Data/Snowflake_SEM_positions/particles-sphere-18.txt": {
+          "bytes": 7416,
+          "sha256": "d235e5d3f45e8f3dfab5e109d6973084ae3a1bea45e44cadd22b82205193b7a4"
+        },
+        "Experimental_Data/Snowflake_SEM_positions/particles-sphere-19.txt": {
+          "bytes": 3774,
+          "sha256": "c3fe74cf13c4a52729022a548b14822acf2e7e66e8e73661261019d2a5cc84d0"
+        },
+        "Experimental_Data/Snowflake_SEM_positions/particles-sphere-20.txt": {
+          "bytes": 3284,
+          "sha256": "b99f8022f99d8f993d6a6cd2996914af68953c826b06f7981958d59d27227479"
+        },
+        "Experimental_Data/Snowflake_SEM_positions/README.txt": {
+          "bytes": 318,
+          "sha256": "d694c8703f1db12e36d092f85ce29417972fbb09ecec26ca66eac9089984294f"
+        },
+        "Experimental_Data/Volvox_Lightsheet_positions/README.txt": {
+          "bytes": 309,
+          "sha256": "ee9d7f459a0946abafd9708554df1ce71896068b31191c8a0b70dfd3b6d8d9c4"
+        },
+        "Experimental_Data/Volvox_Lightsheet_positions/sp11_tif11_sMerged.txt": {
+          "bytes": 49637,
+          "sha256": "8f3e5c6b51d1d51f117c1919735b09d2462835a76f15833a83a3170e86cbf185"
+        },
+        "Experimental_Data/Volvox_Lightsheet_positions/sp1_tif01_sMerged.txt": {
+          "bytes": 50127,
+          "sha256": "e284d844ad1201359b64732d55ffc1cd6993125f72a48113a1ba91e0be2f136f"
+        },
+        "Experimental_Data/Volvox_Lightsheet_positions/sp2_tif02_sMerged.txt": {
+          "bytes": 49637,
+          "sha256": "1f36134d0a3fb04e7938028b1661ad6c467474bd4a03b98c1ab11bb99e6bc3b8"
+        },
+        "Experimental_Data/Volvox_Lightsheet_positions/sp3_tif03_sMerged.txt": {
+          "bytes": 51400,
+          "sha256": "6690f408e663b24d427c9c6cd820be52f065d56eec5f520b5af48b335e3d41e7"
+        },
+        "Experimental_Data/Volvox_Lightsheet_positions/sp8l_tif08_sMerged.txt": {
+          "bytes": 49637,
+          "sha256": "69e93bdbc00b4b42b2fc17f4814a1587e282830e57d57ba874ba4f71c80d4a57"
+        },
+        "Experimental_Data/Volvox_Lightsheet_positions/sp8u_tif08_sMerged.txt": {
+          "bytes": 49686,
+          "sha256": "4a2715afeab50de21a4b40f1edc23ff7123b354aa076802a389efbe647305c60"
+        }
+      }
+    },
+    "size-data.zip": {
+      "url": "https://cdn.elifesciences.org/articles/72707/elife-72707-fig5-data1-v1.zip",
+      "bytes": 162146,
+      "sha256": "0860d0d5add29b897431126a4f5ab076e26903c5a548cc09b659749042415178",
+      "members": {
+        "04_CoulterCounter_Data/2021-03-26-Petite-Gob21-Ace2KO-01.xlsx": {
+          "bytes": 87185,
+          "sha256": "46fc42676523da91ae850c544c092ceb6686fcfc405be1a175bd7dd3f43c8ab3"
+        },
+        "04_CoulterCounter_Data/2021-03-26-Petite-Gob21-Ace2KO-02.xlsx": {
+          "bytes": 87228,
+          "sha256": "11499244fa63c17c2d55bc5cef982cd44b9b99cbdc3928aae3d92ac13f0afeea"
+        }
+      }
+    },
+    "snowflake-code.zip": {
+      "url": "https://cdn.elifesciences.org/articles/72707/elife-72707-code4-v1.zip",
+      "bytes": 8158,
+      "sha256": "8416b20b1ef02cb2d7410f33e3ce179acf99550909803c0b56658cdc238a1ea4",
+      "members": {
+        "4_snowflake_simulations.m": {
+          "bytes": 27685,
+          "sha256": "2dbdd37aaad364fa457a85c4495eb1b2b0cd1c2e140c361bbb4679eae9c68768"
+        }
+      }
+    }
+  }
+}

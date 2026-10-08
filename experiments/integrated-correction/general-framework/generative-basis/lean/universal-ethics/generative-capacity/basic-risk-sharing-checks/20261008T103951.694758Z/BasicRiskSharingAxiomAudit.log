@@ -1,0 +1,28 @@
+'BasicRiskSharing.exposureA' does not depend on any axioms
+'BasicRiskSharing.exposureB' does not depend on any axioms
+'BasicRiskSharing.AtMost' does not depend on any axioms
+'BasicRiskSharing.total_exposure' depends on axioms: [propext, Quot.sound]
+'BasicRiskSharing.balanced_exposure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BasicRiskSharing.equal_exposure_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BasicRiskSharing.attainable_common_bound_iff' depends on axioms: [propext, Quot.sound]
+'BasicRiskSharing.unique_best_allocation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BasicRiskSharing.pure_allocations_miss_best_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BasicRiskSharing.sharing_retains_the_favored_positions_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BasicRiskSharing.lower_equal_profile_remains_better' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BasicRiskSharing.Plan' does not depend on any axioms
+'BasicRiskSharing.failures' does not depend on any axioms
+'BasicRiskSharing.countA' does not depend on any axioms
+'BasicRiskSharing.countB' does not depend on any axioms
+'BasicRiskSharing.countBoth' does not depend on any axioms
+'BasicRiskSharing.countAny' does not depend on any axioms
+'BasicRiskSharing.planRecords' does not depend on any axioms
+'BasicRiskSharing.native_plan_rates' does not depend on any axioms
+'BasicRiskSharing.productRecords' does not depend on any axioms
+'BasicRiskSharing.product_law_realizes_balanced_rates' does not depend on any axioms
+'BasicRiskSharing.complete_joint_profile_preserved' does not depend on any axioms
+'BasicRiskSharing.coupledPlan' does not depend on any axioms
+'BasicRiskSharing.coupledRecords' does not depend on any axioms
+'BasicRiskSharing.coupled_selection_has_equal_plan_frequencies' does not depend on any axioms
+'BasicRiskSharing.coupled_law_doubles_each_risk' does not depend on any axioms
+'BasicRiskSharing.coupled_joint_profile_worsens' does not depend on any axioms
+'BasicRiskSharing.informed_selection_can_avoid_this_law_of_loss' does not depend on any axioms

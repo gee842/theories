@@ -1,0 +1,46 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-contextual-logic-cn96ey2p/ContextualLeaseRules.lean:37:20: error: Type mismatch
+  Eq.trans ((acquire_spec shared b task t).mp ht).right
+has type
+  mark b (if shared = true then false else task) = ?m.39 → t = ?m.39
+but is expected to have type
+  t = u
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-contextual-logic-cn96ey2p/ContextualLeaseRules.lean:36:2: error: Alternative `release` has not been provided
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-contextual-logic-cn96ey2p/ContextualLeaseRules.lean:38:6: error: unexpected token '('; expected command
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-contextual-logic-cn96ey2p/ContextualLeaseRules.lean:62:4: error: Type mismatch: After simplification, term
+  hh
+ has type
+  g (!shared && task) = false ∧ b (!shared && task) = false
+but is expected to have type
+  g (!shared && task) = false
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-contextual-logic-cn96ey2p/ContextualLeaseRules.lean:72:14: error: Type mismatch: After simplification, term
+  ha
+ has type
+  Avoids shared g (Event.acquire task)
+but is expected to have type
+  g (!shared && task) = false ∧ b (!shared && task) = false
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-contextual-logic-cn96ey2p/ContextualLeaseRules.lean:87:6: error: Type mismatch: After simplification, term
+  hi
+ has type
+  i = (!shared && task) ∨ b i = true
+but is expected to have type
+  b i = true
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-contextual-logic-cn96ey2p/ContextualLeaseRules.lean:138:5: error: unexpected token 'prefix'; expected '_' or identifier
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-contextual-logic-cn96ey2p/ContextualLeaseRules.lean:138:11: error: unexpected identifier; expected ':'
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-contextual-logic-cn96ey2p/ContextualLeaseRules.lean:138:69: error: unexpected identifier; expected ':'
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-contextual-logic-cn96ey2p/ContextualLeaseRules.lean:139:56: error: unexpected token ')'; expected ':'
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-contextual-logic-cn96ey2p/ContextualLeaseRules.lean:141:46: error: unexpected token '++'; expected ':'
+'Generative.ContextualLeaseRules.acquire_spec' does not depend on any axioms
+'Generative.ContextualLeaseRules.step_unique' depends on axioms: [sorryAx]
+'Generative.ContextualLeaseRules.merge_mark' depends on axioms: [propext, Quot.sound]
+'Generative.ContextualLeaseRules.merge_clear' depends on axioms: [propext, Quot.sound]
+'Generative.ContextualLeaseRules.step_avoids' depends on axioms: [sorryAx]
+'Generative.ContextualLeaseRules.step_frame' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.ContextualLeaseRules.step_disjoint' depends on axioms: [propext, sorryAx]
+'Generative.ContextualLeaseRules.trace_frame_lift' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.ContextualLeaseRules.trace_frame_reflect' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.ContextualLeaseRules.framed_feasible_iff' depends on axioms: [propext, sorryAx, Quot.sound]
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-contextual-logic-cn96ey2p/ContextualLeaseRules.lean:181:14: error(lean.unknownIdentifier): Unknown constant `Generative.ContextualLeaseRules.guarded_substitution`
+'Generative.ContextualLeaseRules.disjoint_vacant' does not depend on any axioms
+'Generative.ContextualLeaseRules.episode_context_iff' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.ContextualLeaseRules.occupied_context_iff' depends on axioms: [propext, sorryAx, Quot.sound]
+'Generative.ContextualLeaseRules.release_restores_episode' depends on axioms: [propext, Quot.sound]

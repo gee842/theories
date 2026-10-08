@@ -2,7 +2,7 @@
 
 8 October 2026, Asia/Bangkok. AI-authored review for [living dependencies](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md), following the [nondual method](../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md). The connection under review is **retained or reconstructed organization → actual resumption of a specified living activity**. The [preceding recovery review](LIVING-RECOVERY-REVIEW.md) established why restoring a measured amount alone does not establish that connection.
 
-**Design verdict:** a general reaction-history origin theorem can advance the account if it derives a requirement across all admitted alternative routes and is connected to an independently investigated living function. A fresh vocabulary of catalysts, products and repair would not by itself be an advance: the repository already has substantive models of those relationships. The proposed generic statement should identify inherited organization or an actual earlier entry/formation event, without declaring an independently supplied recipe universally necessary. Final source and evidence review remain pending below.
+**Verdict:** the checked reaction-history result provides a reusable requirement across admitted alternative routes, and the evidence identifies a relevant living-function distinction. This is a bounded formal and correspondence advance. A fresh vocabulary of catalysts, products and repair would not by itself be new: the repository already has substantive models of those relationships. The result identifies initial pool presence or an actual earlier entry event; it does not declare one recipe universally necessary or identify the initial member as the later causal contributor. Final source and verification assessments appear below.
 
 ## 1. Credit the inherited mechanism results
 
@@ -18,6 +18,8 @@ This review inspected the current canonical account, relevant existing source de
 
 The intended addition is narrower: a **reusable origin/entry argument over an arbitrary reaction family**, with a new biological comparison separating retained functional organization from merely present material. This is mathematical generalization and correspondence work; it is not a claim that the original core supplied molecular reaction laws without premises.
 
+The earlier [turnover and closure account](TURNOVER-AND-CLOSURE.md) already distinguishes durable suppliers, conjunctive support, external organized provision, spontaneous formation and actual timing. Its episode-parent condition and finite-lifetime premise retain their recorded validation scope. The proposed reaction result should derive a local origin restriction from concrete reaction semantics without reinstalling universal finite lifetimes, or claim credit for discovering those already stated boundaries.
+
 ## 2. What the general derivation should establish
 
 For a selected organizing pool, inspect every allowed reaction that can introduce a member. A pool-preserving closure condition must be derived from the declared prestate requirements and update, not supplied as the desired conclusion that later function requires inherited organization. If every pool-producing reaction requires an already present pool participant, an initially empty pool has no admitted route of entry. If some reaction does not satisfy that condition, its actual occurrence is a candidate entry event; merely adding the recipe to the vocabulary is not its realization.
@@ -27,6 +29,8 @@ Applied to an actual productive event, the useful result is an origin disjunctio
 Catalytic participation and consumption require precise multiplicities. The same copy must not be counted both as retained catalyst and consumed material unless the reaction semantics explicitly warrants that convention. Required catalysts must exist before the transition; the product cannot retroactively enable its own production. The actual update and prefix must retain the resulting stock changes.
 
 Count-level origin is weaker than molecular genealogy. Initial population presence does not by itself establish uninterrupted retention of the particular molecule later acting. Conversely, material from a disassembled complex may participate in a reconstructed complex without preserving the earlier complex's identity. Individual ancestry or binding geometry would need a richer representation and correspondence, as the earlier carrier work already explains.
+
+The generic initial-presence branch is weaker still than a demonstrated causal contribution: some pool member may have existed initially without being the retained or productive member later on. Its presence satisfies that branch even if subsequent entry also occurs. The disjunction therefore supplies an absence/entry requirement, not a complete attribution of the later operation's actual ancestry. A separate retained-activation history can demonstrate a particular continuing contribution under its specified transitions.
 
 ## 3. The organizing pool must earn its biological meaning
 
@@ -58,4 +62,28 @@ The complete [catalytic-network comparison](LIVING-ORGANIZATION-NETWORKS.md) was
 
 ## 6. Final source and verification review
 
-Pending the concrete module and proof note. No new mathematical result is claimed by the design and evidence review above.
+The complete [LivingOrganization source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingOrganization.lean), including the final added empty-state suffix theorem, was inspected against the core `Process` and `Trace` semantics. No mathematical blocker was found at its declared scope.
+
+`Recipe` uses finite input and output lists over arbitrary species and reaction types. For every species, an actual step requires its complete input multiplicity to be present and its output balance to hold. A retained catalyst occurs on both sides; an additionally consumed copy increases the input multiplicity. The prestate guard prevents the product from supplying its own earlier prerequisite. The general inventory may range over an arbitrary species type; the result does not independently identify a finite physical population, reaction rates, spatial encounters or molecular allocation.
+
+`Closed` tests whether production of any selected pool member requires some pool input. `Entry` identifies a recipe producing a pool member without a pool input. Neither means creation of material from nothing: inputs outside the selected pool can be consumed. `EntryOccurs` contains the reaction, actual before/after states, word decomposition, prefix and suffix. It is stronger than listing an available recipe. The proof builds that witness through the admitted history rather than resetting its resources.
+
+`empty_pool_preserved` derives the absence invariant when every allowed recipe satisfies closure. `actual_operation_origin` applies the general pool-presence disjunction to the prestate of an actual operation whose input touches the pool. The substantive recipe adequacy and classification of that pool remain correspondence premises; the theorem does not infer them from the word “living.” The initial branch retains the limited historical-presence meaning discussed in §2.
+
+`operation_after_empty_state_requires_entry` makes the result more directly useful for disturbance and reconstruction. Given an actual suffix beginning at an established empty state, later performance of a pool-requiring operation demands an actual entry **after that state**. An earlier member elsewhere in the whole history cannot discharge this requirement. The result does not synthesize a future recovery or show which entry event contributed which molecule.
+
+The concrete illustration distinguishes active complexes, protected pairs, separated components, substrate, product, support and spent support. Its matched starts have equal declared weighted material and support. An active start admits immediate production; protected and separated starts do not. Actual activation then production and actual assembly then production are separately checked traces. Production consumes substrate/support while retaining the active participant. The protected-pair route yields two active units; assembly uses actual loose components and is an explicit entry into the selected pool.
+
+The restricted `retainedRoutes` family excludes assembly and is checked closed. Its absence obstruction is deliberately defeated by the all-routes assembly witness. Consequently the illustration cannot be read as proving an intact precursor universally indispensable. The declared reaction weights are conserved in the example, including spent support; arbitrary recipes in the generic theorem need not conserve those weights. These coefficients and species roles are supplied structural examples, not calibrated ribosome stoichiometry or a measured zero-competence mutant.
+
+The module establishes neither uninterrupted physiology nor complete resumed life. It also does not compose these reaction states with the preceding `LivingRecovery` transport history into a single biological realization. That remains a correspondence and composition question. The advance is a reusable restriction on actual entry and a concrete demonstration of retained activation versus assembly, now constrained by an independent functional assay comparison.
+
+The complete final [proof note](LIVING-ORGANIZATION-PROOF.md) was independently read and accepted at this scope. It explicitly preserves the limited initial-presence branch, actual post-absence entry, non-unique/non-earliest entry witnesses, recipe-family closure, example-only material weighting, and the distinction between the two biological assays and the constructed trace. No substantive prose correction remains requested.
+
+## 7. Independent verification inspection
+
+The [source-bound receipt](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-organization-verification.json) and [immutable record](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-organization-checks/20261007T190635.342493Z/verification.json) record Lean 4.29.1 passing two modules with **75 explicit declaration audits**, including **47 new declarations and 22 new named theorems**. Twenty-eight new reports are empty, five depend only on `propext`, and fourteen use `propext` with `Quot.sound`.
+
+Independent read-only checks matched both current and archived source files, checker and compiler bytes, all three output logs, receipt copies and the generated audit source. All 75 audit names match in order; parsed dependencies match the receipt and contain no additional axiom. The logs contain no error or warning. Final new-source SHA-256: `3e7f32f4aaca8a6cb025122d7e77dae4a1546746e38caddc89a391748a74305e`.
+
+This reviewer did not rerun compilation or conduct a new biological experiment. The verification concerns those source bytes and their formal deductions, not the empirical completeness of the recipes or universal living-domain coverage.

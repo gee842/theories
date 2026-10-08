@@ -1,0 +1,16 @@
+'InquiryRoot.unit_replicate_length' does not depend on any axioms
+'InquiryRoot.threshold_available_iff' does not depend on any axioms
+'InquiryRoot.every_threshold_has_a_finite_realization' does not depend on any axioms
+'InquiryRoot.next_threshold_exceeds_that_realization' does not depend on any axioms
+'InquiryRoot.threshold_capability_sets_pairwise_distinct' does not depend on any axioms
+'InquiryRoot.spending_trace_iff' does not depend on any axioms
+'InquiryRoot.spending_feasible_iff' does not depend on any axioms
+'InquiryRoot.every_budget_excludes_a_different_horizon' does not depend on any axioms
+'InquiryRoot.local_basis_valid' does not depend on any axioms
+'InquiryRoot.entire_local_closure_valid' does not depend on any axioms
+'InquiryRoot.combined_capability_descendant' does not depend on any axioms
+'InquiryRoot.combined_capability_implication_in_closed_theory' does not depend on any axioms
+'InquiryRoot.uniform_basis_valid' does not depend on any axioms
+'InquiryRoot.entire_uniform_closure_valid' does not depend on any axioms
+'InquiryRoot.every_threshold_contract_is_a_descendant' does not depend on any axioms
+'InquiryRoot.every_support_contract_is_a_descendant' does not depend on any axioms

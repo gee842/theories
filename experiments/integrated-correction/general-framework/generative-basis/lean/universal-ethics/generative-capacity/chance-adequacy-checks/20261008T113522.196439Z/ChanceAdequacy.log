@@ -1,0 +1,10 @@
+ChanceAdequacy.lean:78:4: error: unsolved goals
+case pos.true
+Ω : Type
+inst✝ : DecidableEq Ω
+h : Ω
+event : Ω → Bool
+tail : List Ω
+ih : 0 < mass tail (fun x => if x = h then 1 else 0) event ↔ h ∈ tail
+he : event h = true
+⊢ 0 < 1 + mass tail (fun x => if x = h then 1 else 0) event

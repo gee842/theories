@@ -1,0 +1,13 @@
+'BoundedRiskRevision.total' does not depend on any axioms
+'BoundedRiskRevision.greatest' does not depend on any axioms
+'BoundedRiskRevision.Dominates' does not depend on any axioms
+'BoundedRiskRevision.Efficient' does not depend on any axioms
+'BoundedRiskRevision.greatest_on_frontier' depends on axioms: [propext, Quot.sound]
+'BoundedRiskRevision.dominated_beyond_balance' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedRiskRevision.no_joint_improvement_on_frontier' depends on axioms: [propext, Quot.sound]
+'BoundedRiskRevision.frontier_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedRiskRevision.intermediate_profiles' does not depend on any axioms
+'BoundedRiskRevision.whole_allowance_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedRiskRevision.four_point_constraint_optimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BoundedRiskRevision.scope_bounds_compose' depends on axioms: [propext, Quot.sound]
+'BoundedRiskRevision.resetting_allowance_exceeds_original_scope' does not depend on any axioms

@@ -1,0 +1,24 @@
+GoalFormationRevision.lean:62:39: warning: This simp argument is unused:
+  retain
+
+Hint: Omit it from the simp argument list.
+  simp [protects, perform,̵ ̵r̵e̵t̵a̵i̵n̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+GoalFormationRevision.lean:65:40: warning: This simp argument is unused:
+  harm
+
+Hint: Omit it from the simp argument list.
+  simp [protects, perform,̵ ̵h̵a̵r̵m̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+GoalFormationRevision.lean:324:16: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  c ≥ 0
+  b ≥ 0
+  2*b - c ≤ 0
+  a ≥ 2
+where
+ a := ↑w
+ b := ↑n
+ c := ↑(q - 2)

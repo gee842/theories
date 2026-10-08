@@ -1,0 +1,376 @@
+{
+  "checked_at_utc": "2026-10-08T10:37:26.647279+00:00",
+  "status": "passed",
+  "lean_version": "Lean (version 4.30.0-rc2, arm64-apple-darwin24.6.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc, Release)",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "targets": [
+    "CorrectionRelations"
+  ],
+  "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-relations-checks/20261008T103557.405778Z",
+  "modules": [
+    {
+      "module": "CorrectionRelations",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionRelations.lean",
+      "source_sha256": "9fbaa3585997862f9561b31d90b8552deda3e49beaedbd381ed4276f0518f858",
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "CorrectionRelations.Boundary"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRelations.Fits"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.boundary_exact_for_context"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.all_contexts_refinement_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.all_contexts_equivalent_iff"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRelations.Couple"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.regrouping_preserves_relation"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.coupled_boundary_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.boundary_replacement_preserves_coupling"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRelations.EqualBoundary"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRelations.FreeBoundary"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.equal_boundary_full_coordinate_projections"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.separate_coordinate_summaries_lose_joint_restriction"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRelations.Edge"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRelations.Parity"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRelations.Follow"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRelations.Path"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.each_edge_has_full_projections"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.path_iff_propagated"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.propagation_parity"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.cycle_compatible_iff_even"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.every_root_choice_extends_iff_even"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.odd_cycle_has_no_joint_assignment"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.triangle_local_relations_do_not_ensure_joint_correction"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.parity_append"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.matching_converter_restores_every_root"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.transparent_converter_fails_for_odd_cycle"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.aggregate_probe_reads_parity"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.aggregate_probe_summarizes_path"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.equal_probes_iff_equal_path_relations"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.converter_from_current_probe_corrects_every_root"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.converter_from_stale_probe_can_fail"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.retained_converter_iff_same_composed_relation"
+        },
+        {
+          "kind": "inductive",
+          "name": "CorrectionRelations.Revision"
+        },
+        {
+          "kind": "inductive",
+          "name": "CorrectionRelations.Revised"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.paired_revision_preserves_parity"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.finite_revisions_preserve_parity"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.finite_revisions_preserve_entire_relation"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.retained_converter_survives_finite_revisions"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.first_half_of_paired_change_defeats_retained_converter"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRelations.Possible"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRelations.Uniform"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRelations.Observable"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.uniform_implies_possible"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.observable_implies_possible"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.constant_observation_iff_uniform"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRelations.Fixed"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRelations.Switched"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.fixed_boundary_total"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.switched_boundary_total"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.fixed_switched_same_feasibility_contexts"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.fixed_has_uniform_realization"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.switched_has_only_modewise_witnesses"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.observing_relation_restores_realization"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRelations.exact_feasibility_summary_not_control_contract"
+        }
+      ],
+      "audits": 55,
+      "theorems": 39,
+      "nonempty_audits": {
+        "CorrectionRelations.boundary_replacement_preserves_coupling": [
+          "propext"
+        ],
+        "CorrectionRelations.cycle_compatible_iff_even": [
+          "propext"
+        ],
+        "CorrectionRelations.every_root_choice_extends_iff_even": [
+          "propext"
+        ],
+        "CorrectionRelations.odd_cycle_has_no_joint_assignment": [
+          "propext"
+        ],
+        "CorrectionRelations.triangle_local_relations_do_not_ensure_joint_correction": [
+          "propext"
+        ],
+        "CorrectionRelations.matching_converter_restores_every_root": [
+          "propext"
+        ],
+        "CorrectionRelations.transparent_converter_fails_for_odd_cycle": [
+          "propext"
+        ],
+        "CorrectionRelations.aggregate_probe_summarizes_path": [
+          "propext"
+        ],
+        "CorrectionRelations.equal_probes_iff_equal_path_relations": [
+          "propext"
+        ],
+        "CorrectionRelations.converter_from_current_probe_corrects_every_root": [
+          "propext"
+        ],
+        "CorrectionRelations.converter_from_stale_probe_can_fail": [
+          "propext"
+        ],
+        "CorrectionRelations.retained_converter_iff_same_composed_relation": [
+          "propext"
+        ],
+        "CorrectionRelations.finite_revisions_preserve_entire_relation": [
+          "propext"
+        ],
+        "CorrectionRelations.retained_converter_survives_finite_revisions": [
+          "propext"
+        ],
+        "CorrectionRelations.first_half_of_paired_change_defeats_retained_converter": [
+          "propext"
+        ],
+        "CorrectionRelations.switched_has_only_modewise_witnesses": [
+          "propext"
+        ],
+        "CorrectionRelations.exact_feasibility_summary_not_control_contract": [
+          "propext"
+        ]
+      }
+    }
+  ],
+  "total_audits": 55,
+  "new_audits": 55,
+  "new_theorems": 39,
+  "nonempty_audits": {
+    "CorrectionRelations.boundary_replacement_preserves_coupling": [
+      "propext"
+    ],
+    "CorrectionRelations.cycle_compatible_iff_even": [
+      "propext"
+    ],
+    "CorrectionRelations.every_root_choice_extends_iff_even": [
+      "propext"
+    ],
+    "CorrectionRelations.odd_cycle_has_no_joint_assignment": [
+      "propext"
+    ],
+    "CorrectionRelations.triangle_local_relations_do_not_ensure_joint_correction": [
+      "propext"
+    ],
+    "CorrectionRelations.matching_converter_restores_every_root": [
+      "propext"
+    ],
+    "CorrectionRelations.transparent_converter_fails_for_odd_cycle": [
+      "propext"
+    ],
+    "CorrectionRelations.aggregate_probe_summarizes_path": [
+      "propext"
+    ],
+    "CorrectionRelations.equal_probes_iff_equal_path_relations": [
+      "propext"
+    ],
+    "CorrectionRelations.converter_from_current_probe_corrects_every_root": [
+      "propext"
+    ],
+    "CorrectionRelations.converter_from_stale_probe_can_fail": [
+      "propext"
+    ],
+    "CorrectionRelations.retained_converter_iff_same_composed_relation": [
+      "propext"
+    ],
+    "CorrectionRelations.finite_revisions_preserve_entire_relation": [
+      "propext"
+    ],
+    "CorrectionRelations.retained_converter_survives_finite_revisions": [
+      "propext"
+    ],
+    "CorrectionRelations.first_half_of_paired_change_defeats_retained_converter": [
+      "propext"
+    ],
+    "CorrectionRelations.switched_has_only_modewise_witnesses": [
+      "propext"
+    ],
+    "CorrectionRelations.exact_feasibility_summary_not_control_contract": [
+      "propext"
+    ]
+  },
+  "checker_sha256": "f4db96dba4145912fb9a900d84c234e32c2ba30abeaa3e4917570c43b3ccb3a8",
+  "commands": [
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "CorrectionRelations.olean",
+      "CorrectionRelations.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "CorrectionRelationsAudit.lean"
+    ]
+  ],
+  "log_sha256": {
+    "CorrectionRelations.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axioms.txt": "e06cca1099ed7959d4cdcd0b3b397aa20f7cda9622212b5a3fb1e27b5cc04a1e"
+  },
+  "source_changed_during_run": [],
+  "direct_import_sha256": {
+    "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/lib/lean/Init.olean": "12e94e3624b943d20ad898491957051ae9ba22ccbed9e6f92c35fbc711849246",
+    "/Users/ren/repos/\u751f\u751f\u4e0d\u606f/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic.olean": "0a821f2a00e8a64712b702ffd0355326515c0123c0b60917a5aaa1c4ac527911"
+  },
+  "mathlib_revision": "ea11ccc0c5c7c4c562742e918fe2e0b2814a58aa",
+  "manifest_sha256": "740eef1aae725322b99872aba59cc5c902378b992bfe9122737a454f3076321b",
+  "upstream_scope": "Pinned existing Mathlib cache; repository import closure rebuilt. Mathlib not rebuilt.",
+  "scope": "Exact feasibility interfaces and context equivalence, relational regrouping, arbitrary finite binary coupling cycles, constructive converter repair, finite paired reconfiguration with a retained converter and split-update failure, and separation of modewise feasibility from observable realization. No physical correspondence, execution protocol, ethical authority or novelty proof."
+}

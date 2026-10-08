@@ -1,0 +1,41 @@
+'CollectiveDestruction.utility' does not depend on any axioms
+'CollectiveDestruction.unilateral_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollectiveDestruction.dilemma_conditions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollectiveDestruction.payoff' does not depend on any axioms
+'CollectiveDestruction.choose' does not depend on any axioms
+'CollectiveDestruction.race_strictly_best' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollectiveDestruction.restraint_best' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollectiveDestruction.restraint_strictly_best' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollectiveDestruction.exact_local_optimization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollectiveDestruction.joint_race_pareto_inferior' depends on axioms: [propext, Quot.sound]
+'CollectiveDestruction.threshold_tie' does not depend on any axioms
+'CollectiveDestruction.BestResponse' does not depend on any axioms
+'CollectiveDestruction.low_best_response_must_race' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollectiveDestruction.high_best_response_must_restrain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollectiveDestruction.threshold_racing_also_optimal' does not depend on any axioms
+'CollectiveDestruction.State' does not depend on any axioms
+'CollectiveDestruction.act' does not depend on any axioms
+'CollectiveDestruction.step' does not depend on any axioms
+'CollectiveDestruction.run' does not depend on any axioms
+'CollectiveDestruction.low_step' depends on axioms: [propext]
+'CollectiveDestruction.high_step' depends on axioms: [propext, Quot.sound]
+'CollectiveDestruction.low_history' depends on axioms: [propext, Quot.sound]
+'CollectiveDestruction.high_history' depends on axioms: [propext, Quot.sound]
+'CollectiveDestruction.restraint_bound' depends on axioms: [propext, Quot.sound]
+'CollectiveDestruction.capacity_bound' depends on axioms: [propext, Quot.sound]
+'CollectiveDestruction.finite_destructive_entry' depends on axioms: [propext, Quot.sound]
+'CollectiveDestruction.destructive_absorbing' depends on axioms: [propext]
+'CollectiveDestruction.exact_basin' depends on axioms: [propext, Quot.sound]
+'CollectiveDestruction.growing_capability_enters' depends on axioms: [propext, Quot.sound]
+'CollectiveDestruction.greater_capability_depletes_faster' depends on axioms: [propext, Quot.sound]
+'CollectiveDestruction.zero_throughput_preserves_capacity' depends on axioms: [propext, Quot.sound]
+'CollectiveDestruction.protect' does not depend on any axioms
+'CollectiveDestruction.protection_for_any_best_responses' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollectiveDestruction.protection_preserves' depends on axioms: [propext, Quot.sound]
+'CollectiveDestruction.late_protection_does_not_restore' does not depend on any axioms
+'CollectiveDestruction.unilateral_restraint_does_not_stop_pressure' depends on axioms: [propext]
+'CollectiveDestruction.joint_restraint_preserves' depends on axioms: [propext]
+'CollectiveDestruction.threshold_race_enters_basin' depends on axioms: [propext]
+'CollectiveDestruction.separate_safety_checks_do_not_compose' does not depend on any axioms
+'CollectiveDestruction.rank_entry' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CollectiveDestruction.invariant_history' does not depend on any axioms

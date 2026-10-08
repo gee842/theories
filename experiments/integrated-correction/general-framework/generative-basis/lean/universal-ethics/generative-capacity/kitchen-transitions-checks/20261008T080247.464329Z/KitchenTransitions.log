@@ -1,0 +1,8 @@
+KitchenTransitions.lean:57:2: error: failed to synthesize
+  Decidable (Published 14 0 5 13)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+KitchenTransitions.lean:60:2: error: failed to synthesize
+  Decidable (Published 1 13 18 0)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.

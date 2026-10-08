@@ -1,0 +1,16 @@
+{
+  "status": "failed_dependency_audit",
+  "scope": "All three source modules compiled, but the allowed-axiom audit rejected Classical.choice dependencies. This is not a passed verification.",
+  "rejected_declarations": [
+    "Generative.LivingExpansion.distinct_subset_length",
+    "Generative.LivingExpansion.current_provision_bound",
+    "Generative.LivingExpansion.uniform_current_provision_bound",
+    "Generative.LivingExpansion.reached_increase_has_actual_event",
+    "Generative.LivingExpansion.expanded_provision_requires_actual_increase",
+    "Generative.LivingExpansion.inherited_provision_bound",
+    "Generative.LivingExpansion.inherited_uniform_frontier_bound",
+    "Generative.LivingExpansion.three_required_centers_exceed_two_copies"
+  ],
+  "original_source_sha256": "2ae9cfa9d8e88a331b294ca4cea46684215c129d6849a95bfeb951fa2f67588c",
+  "repaired_passed_run": "20261007T201714.534634Z"
+}

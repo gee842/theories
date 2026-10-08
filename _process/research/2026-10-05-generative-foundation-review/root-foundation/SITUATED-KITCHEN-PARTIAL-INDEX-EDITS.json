@@ -1,0 +1,210 @@
+{
+  "date": "2026-10-08",
+  "entry": "C23",
+  "navigation_edits": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-EVIDENCE.md",
+      "before_sha256": "be76f7808b2054895882a6e552c6814d8009501cac71c9dd4ebbaa535f4d619e",
+      "after_sha256": "aaa771994d0105cc048cea6a9cc65f7505e0af6231c94eb9f670df29a598a603",
+      "old": "# 从构造应用到真实资料：共同厨房的参与条件与判断修正\n",
+      "new": "# 从构造应用到真实资料：共同厨房的参与条件与判断修正\n\n**本轮后续校准：** [有限资料的精确范围与评价修订](SITUATED-KITCHEN-PARTIAL-INFORMATION.md)补出配对样本的肯定界限，新增7项 Lean 定理／12项声明审计：至少5份记录进入食品安全分级，离开者份数仍未辨明；原文的统计、因果及伦理范围保持不变。下文“无新定理”指首次资料接续轮。\n"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md",
+      "before_sha256": "cb0f7dd8a51d93e574142a827346c8a7737ba20e280920a1bf812b8a7b0c1423",
+      "after_sha256": "62aba139c9fffd23ee87d53649d400f2c3bf94e52c9653a448d50342372c476c",
+      "old": "# 整体生成中的有限判断：情境范围、未知后果与行动根据\n",
+      "new": "# 整体生成中的有限判断：情境范围、未知后果与行动根据\n\n**最新应用校准，2026年10月8日：** [有限资料与评价修订](SITUATED-KITCHEN-PARTIAL-INFORMATION.md)将“汇总数不足”收紧为有肯定内容的界限：同一32份记录至少5份进入食品安全分级，同时不能辨明是否有记录反向变化。7项新 Lean 定理／12项审计支持精确计数，继而修订表述、调查及评价目标；不认证因果效果或现场决定。\n"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md",
+      "before_sha256": "62aba139c9fffd23ee87d53649d400f2c3bf94e52c9653a448d50342372c476c",
+      "after_sha256": "57748b3f9241aded0487bf6b43d912f894a0afeed0532cc035fd536579ef16eb",
+      "old": "下一应用以能改变具体安排的负担、参与和承接证据为中心，不再重复一般公理框架或单纯增加构造案例。\n",
+      "new": "下一应用以能改变具体安排的负担、参与和承接证据为中心，不再重复一般公理框架或单纯增加构造案例。\n\n## 14. 有限资料的肯定内容与目标校准\n\n[本轮精确校准](SITUATED-KITCHEN-PARTIAL-INFORMATION.md)由原始配对样本的边际人数推出5至18份进入食品安全分级、0至13份离开分级的相容界限；并不恢复实际转移人数、赋予概率或证明因果效果。七项新定理及来源绑定分别核验推理与对应。应用上，修正成效表述，按决定所需安排匿名配对核对，保留退出、缺失和量表外生活，并直接复用已完成的目标修订。已知改善与未决变化可以同时构成有界回应的根据；没有理由退回完备预见门槛或仅以净改善认证全部保护。下一缺口仍是现实安排中的具体负担、参与及承接资料。\n"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md",
+      "before_sha256": "80beb7a9024f5258bd4ea8115e7703b65e859e15373946c4b31e81b364878712",
+      "after_sha256": "eac523e7256e3a1f90bfd45f4c439d4fa1898dfb2ebef87b39bd64e66fa395ba",
+      "old": "## Connection to sustained living and collective judgment\n",
+      "new": "## Connection to sustained living and collective judgment\n\n**有限资料的精确校准 / Exact partial-information calibration，2026-10-08。** [共同厨房的转移界限](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-PARTIAL-INFORMATION.md)证明公开配对样本中至少5份记录进入食品安全分级，但离开者份数尚不能确定；据此修订结果表述、调查及评价目标。/ Seven new Lean results and 12 declaration audits establish count bounds, with separate source binding. Exact partial knowledge supports claim-specific revision; neither the survey categories nor their net improvement certify J2’s full protection premise. No field decision, causal identification or independent acceptance is claimed.\n"
+    },
+    {
+      "path": "RESEARCH.md",
+      "before_sha256": "926a90423a407a45ec97aa45e031880f3813664952dea1d238812f1294621976",
+      "after_sha256": "9e9d91e353441a83529b9910d51f31a1025b9adc6aa4559b4c534a16bc56412f",
+      "old": "**情境应用进入真实资料，2026年10月8日 / Evidence-constrained situated application.**",
+      "new": "**情境应用的精确校准，2026年10月8日 / Exact situated calibration.** [共同厨房的有限资料与评价修订](_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-PARTIAL-INFORMATION.md)在原始配对样本中取得确定的肯定界限，区分已有改善、未决转移与实际行动前提；据此修改成效表述、调查和评价目标。7项新 Lean 定理／12项审计及来源绑定通过；原九项构造定理保持范围。/ Source-bound marginal counts imply 5–18 entries into the food-secure category and allow 0–13 exits, without identifying actual transitions or causal effects. Completed practical and goal-revision results are reused. The remaining application bridge needs specific burdens, participation and succession evidence; no field calibration or independent acceptance is claimed.\n\n**情境应用进入真实资料，2026年10月8日 / Evidence-constrained situated application.**"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "before_sha256": "3ece963fc55de372e62ab850c01a88645bfb3b25617b7a00e0e4c945d17865c5",
+      "after_sha256": "940b5e781e28f8adb8253ea88d0f0dbc1611ca0e8736716cce49e95cdd0bd5ff",
+      "old": "**真实资料中的情境校准 / Evidence-constrained application，2026-10-08。**",
+      "new": "**有限资料与评价修订 / Partial-information calibration，2026-10-08。** [厨房的精确界限](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-PARTIAL-INFORMATION.md)以7项新 Lean 定理／12项审计及原始来源绑定，取得确定的分级改善界限，保留未知反向变化；据此修订成效表述、调查及评价目标。/ Exact partial knowledge guides bounded revision without certifying causal effects, complete protection or field decisions.\n\n**真实资料中的情境校准 / Evidence-constrained application，2026-10-08。**"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "before_sha256": "aa8e75b483935be2aee3b2dadf0fcb6ded0820099cfb88676cf3379b9e633af3",
+      "after_sha256": "5534ca17ab9bebb9bf11b8ea51f97209505f69f0aeb0f982709bf3f99d2c7d41",
+      "old": "# 中英理论链索引：范围、维护与更新 / Bilingual chain index: scope and maintenance\n",
+      "new": "# 中英理论链索引：范围、维护与更新 / Bilingual chain index: scope and maintenance\n\n**共同厨房的有限资料校准 / Kitchen partial-information calibration，2026-10-08。** C23 成对接入[精确界限及评价修订](SITUATED-KITCHEN-PARTIAL-INFORMATION.md)：新增7项 Lean 定理／12项声明审计，原始来源绑定与14张相容匿名表核对通过；原九项构造结果、完整实践与目标修订机制保留范围。/ Only C23, its owned discovery page and actually read source versions are updated. Other entries and rendered rows are preserved. [Owned edits](SITUATED-KITCHEN-PARTIAL-INDEX-EDITS.json) and [scoped checks](SITUATED-KITCHEN-PARTIAL-CHECKS.json) distinguish local validation from concurrent full-table maintenance. No causal claim, field intervention, independent acceptance, unrelated scientific rerun or automation is added.\n"
+    }
+  ],
+  "before": {
+    "id": "C23",
+    "title_zh": "有限认识中的情境判断",
+    "title_en": "Situated judgment under finite knowledge",
+    "claim_zh": "G0、公开 J1–J4、有限认识及真实对应支持情境回应、调查、调整与结束。厨房构造及公开项目资料区分能力、可用路线、实际接续和参与条件；留存者收益不替代退出与未进入的生活。",
+    "claim_en": "G0, disclosed J1–J4, finite knowledge and actual correspondence support situated response, inquiry, revision and closure. Kitchen cases and published evidence distinguish capacities, usable routes, succession and participation conditions; retained participants’ benefits do not stand in for the lives of those leaving or not entering.",
+    "scope_zh": "相连候选、构造应用及原始资料约束；原9项新构造定理／20项审计范围不变，继承实践30项与求知8项。新增八行汇总表格核对，无新定理、现场干预或因果认证。保留不可比、真实损失及作者反审；一般实践独立验收保持原范围。",
+    "scope_en": "Connected candidate, constructed application and primary-evidence constraints. The nine-theorem/20-audit construction and inherited practical/inquiry scopes remain; eight aggregate rows are newly checked. No new theorem, field intervention or causal certification. Incomparability, real losses and author counterreview remain; independent practical acceptance keeps its original scope.",
+    "links": [
+      {
+        "label_zh": "情境与不确定性",
+        "label_en": "Situation and uncertainty",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#situated-judgment-under-deep-uncertainty"
+      },
+      {
+        "label_zh": "整合与范围修正",
+        "label_en": "Integration and scope correction",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md#4-必要损失与目前只知道这条路不同",
+        "label_zh": "必要性与有限认识",
+        "label_en": "Necessity and finite knowledge"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md#5-真实冲突有限认识与及时决定--conflict-and-uncertainty",
+        "label_zh": "有限认识与及时决定",
+        "label_en": "Uncertainty and timely decision"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md#11-新成果接续后的结论2026年10月8日",
+        "label_zh": "当前接续结论",
+        "label_en": "Current integrated conclusion"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-PRIORITIES-AND-G0.md",
+        "label_zh": "求知、及时回应与结束",
+        "label_en": "Inquiry, timely response and closure"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-INQUIRY-AND-STANDING.md",
+        "label_zh": "有根据的可能性范围",
+        "label_en": "Warranted possibility scope"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-ADEQUACY-CORRESPONDENCE.md",
+        "label_zh": "八项既有求知实查",
+        "label_en": "Eight inherited inquiry results"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-CALIBRATION.md",
+        "label_zh": "共享厨房应用与校准",
+        "label_en": "Shared-kitchen application and calibration"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-EVIDENCE.md",
+        "label_zh": "实际资料与应用修正",
+        "label_en": "Published evidence and application revision"
+      }
+    ]
+  },
+  "after": {
+    "id": "C23",
+    "title_zh": "有限认识中的情境判断",
+    "title_en": "Situated judgment under finite knowledge",
+    "claim_zh": "G0、公开 J1–J4、有限认识及真实对应支持情境回应、调查、调整与结束。厨房应用将能力、参与与实际接续共同校准；原始配对人数给出确定的分级改善界限，并保留未知转移，据此修订评价目标。",
+    "claim_en": "G0, disclosed J1–J4, finite knowledge and actual correspondence support situated response, inquiry, revision and closure. Kitchen applications calibrate capacities, participation and actual succession together; published paired counts establish definite category-improvement bounds while preserving unknown transitions, informing revised evaluation aims.",
+    "scope_zh": "相连候选、构造应用及原始资料校准。保留9项构造定理／20项审计、既有实践与求知范围及八行汇总核对；新增7项计数定理／12项审计和来源绑定，5–18份进入安全分级、0–13份离开与汇总相容。无因果认证或现场决定；保留不可比、真实损失及作者反审，独立实践验收不转用于本轮。",
+    "scope_en": "Connected candidate, construction and primary-evidence calibration. The nine-theorem/20-audit case, inherited practical/inquiry scopes and eight aggregate rows remain. Seven new count theorems/12 audits plus source binding permit 5–18 category entries and 0–13 exits. No causal certification or field decision; incomparability, losses and author counterreview remain. Prior independent acceptance does not extend to this round.",
+    "links": [
+      {
+        "label_zh": "情境与不确定性",
+        "label_en": "Situation and uncertainty",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#situated-judgment-under-deep-uncertainty"
+      },
+      {
+        "label_zh": "整合与范围修正",
+        "label_en": "Integration and scope correction",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md#4-必要损失与目前只知道这条路不同",
+        "label_zh": "必要性与有限认识",
+        "label_en": "Necessity and finite knowledge"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md#5-真实冲突有限认识与及时决定--conflict-and-uncertainty",
+        "label_zh": "有限认识与及时决定",
+        "label_en": "Uncertainty and timely decision"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md#11-新成果接续后的结论2026年10月8日",
+        "label_zh": "当前接续结论",
+        "label_en": "Current integrated conclusion"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-PRIORITIES-AND-G0.md",
+        "label_zh": "求知、及时回应与结束",
+        "label_en": "Inquiry, timely response and closure"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-INQUIRY-AND-STANDING.md",
+        "label_zh": "有根据的可能性范围",
+        "label_en": "Warranted possibility scope"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-ADEQUACY-CORRESPONDENCE.md",
+        "label_zh": "八项既有求知实查",
+        "label_en": "Eight inherited inquiry results"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-CALIBRATION.md",
+        "label_zh": "共享厨房应用与校准",
+        "label_en": "Shared-kitchen application and calibration"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-EVIDENCE.md",
+        "label_zh": "实际资料与应用修正",
+        "label_en": "Published evidence and application revision"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-PARTIAL-INFORMATION.md",
+        "label_zh": "有限资料与评价修订",
+        "label_en": "Partial information and revised evaluation"
+      }
+    ]
+  },
+  "reviewed_sources": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-PARTIAL-INFORMATION.md": "64d5ab9f01a4a54dd1ee2117dfd2d1085b217d9265a2629e0e34f8d32cb97b1f",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-EVIDENCE.md": "aaa771994d0105cc048cea6a9cc65f7505e0af6231c94eb9f670df29a598a603",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md": "57748b3f9241aded0487bf6b43d912f894a0afeed0532cc035fd536579ef16eb",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md": "eac523e7256e3a1f90bfd45f4c439d4fa1898dfb2ebef87b39bd64e66fa395ba"
+  },
+  "discovery_added": [
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-PARTIAL-INFORMATION.md"
+  ],
+  "other_entries_preserved": 88,
+  "other_rendered_lines_preserved": true,
+  "pending_global_changes": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-PROTOCOL.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md"
+    ],
+    "removed_pages": []
+  },
+  "scoped_existing_renderer": true
+}

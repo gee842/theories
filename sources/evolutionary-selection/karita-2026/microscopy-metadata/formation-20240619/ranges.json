@@ -1,0 +1,896 @@
+{
+  "archive_path": "Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+  "file_bytes": 13275191552,
+  "ranges": [
+    {
+      "file": "000000000000-00000544-file-header.bin",
+      "offset": 0,
+      "bytes": 544,
+      "sha256": "fe77f0bb1c988baad326d6e5274ab011c8154e9fbf2826dc51f3efa07945b1bb",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=0-543",
+        "Accept-Encoding": "identity"
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:28:18 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "544",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 0-543/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "013249342336-00000032-ZISRAWMETADATA-header.bin",
+      "offset": 13249342336,
+      "bytes": 32,
+      "sha256": "4928824fbee9b43e17596535b731f253794cc644a3e945e0a075191216fec531",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=13249342336-13249342367",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:28:19 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "32",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 13249342336-13249342367/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "013249342368-00769959-ZISRAWMETADATA-body.bin",
+      "offset": 13249342368,
+      "bytes": 769959,
+      "sha256": "5b0848ec6ca92a4a8fb9972c96072ccb1d782f376f8f4abd3481742517fa8149",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=13249342368-13250112326",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:28:21 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "769959",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 13249342368-13250112326/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000000000544-00000032-ZISRAWDIRECTORY-header.bin",
+      "offset": 544,
+      "bytes": 32,
+      "sha256": "82d1d6f53e446dd209134e1f040746633315da269f89afd6b1059c7387fb8078",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=544-575",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:28:25 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "32",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 544-575/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000000000576-00166112-ZISRAWDIRECTORY-body.bin",
+      "offset": 576,
+      "bytes": 166112,
+      "sha256": "08adaac545cddb20929ce6a407cdb9666f1cd42d89567d91a5b6b4d5e7685d3c",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=576-166687",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:28:26 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "166112",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 576-166687/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000000168320-00000032-ZISRAWATTDIR-header.bin",
+      "offset": 168320,
+      "bytes": 32,
+      "sha256": "1c888c9c263aa7c8f3816261d059095e227c4a82179165f4d9d4e3aeee66b30a",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=168320-168351",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:28:28 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "32",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 168320-168351/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000000168352-00000650-ZISRAWATTDIR-body.bin",
+      "offset": 168352,
+      "bytes": 650,
+      "sha256": "84d4d7c3ab5304c24d64f1957f5aaa1129f227bc81b1ee6a10f3e98dfae20323",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=168352-169001",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:28:31 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "650",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 168352-169001/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "013275187872-00000032-ZISRAWATTACH-header.bin",
+      "offset": 13275187872,
+      "bytes": 32,
+      "sha256": "e2e3a04dab9a2712581bedc949995b047e0aec25ff71832a3b0a18f56f60163c",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=13275187872-13275187903",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:28:32 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "32",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 13275187872-13275187903/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "013275187904-00000992-ZISRAWATTACH-body.bin",
+      "offset": 13275187904,
+      "bytes": 992,
+      "sha256": "2481fd0b2012370aab7b2a2b19bd8d39b469b5a7792a5d46a8b0dab599b917f2",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=13275187904-13275188895",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:28:34 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "992",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 13275187904-13275188895/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000000661984-00004096-subblock-prefix.bin",
+      "offset": 661984,
+      "bytes": 4096,
+      "sha256": "61d6fc895522bbde4d8ac8e259cfd8595f525c368236240e4de6672f96440b03",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=661984-666079",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:44 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 661984-666079/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "013127801856-00004096-subblock-prefix.bin",
+      "offset": 13127801856,
+      "bytes": 4096,
+      "sha256": "a64c279f18f97925aa7a8478c62f3be28c86206a6222d1ec647667371f0d6ae0",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=13127801856-13127805951",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:45 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 13127801856-13127805951/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000012816032-00004096-subblock-prefix.bin",
+      "offset": 12816032,
+      "bytes": 4096,
+      "sha256": "286bf845655c52d1715795148167e0834c629d303ed63af26d9a331d6f02b3bd",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=12816032-12820127",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:47 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 12816032-12820127/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "013139955904-00004096-subblock-prefix.bin",
+      "offset": 13139955904,
+      "bytes": 4096,
+      "sha256": "bb0f48d881dc5be57d000a47817c7a06ed899cb80df889476e86b169b68a24ef",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=13139955904-13139959999",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:49 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 13139955904-13139959999/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000024970080-00004096-subblock-prefix.bin",
+      "offset": 24970080,
+      "bytes": 4096,
+      "sha256": "86fced18ed6d38888f7feab41b89bd140673997762f40f287c20d16e58ae0510",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=24970080-24974175",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:51 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 24970080-24974175/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "013152109952-00004096-subblock-prefix.bin",
+      "offset": 13152109952,
+      "bytes": 4096,
+      "sha256": "0d49163678744fd3b252ecf34fbc004ad2898073609bde64bb636e4540cf51bf",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=13152109952-13152114047",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:52 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 13152109952-13152114047/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000037124128-00004096-subblock-prefix.bin",
+      "offset": 37124128,
+      "bytes": 4096,
+      "sha256": "d8dd4ea49e7f7922135195c2654ed35a4c2bcf76cd3941e19b50284c794a7dbf",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=37124128-37128223",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:54 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 37124128-37128223/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "013164264000-00004096-subblock-prefix.bin",
+      "offset": 13164264000,
+      "bytes": 4096,
+      "sha256": "2aad0819bbbe60f7e5fb175b9da45b84842524d8e319895c2e2cfc7e2bcfc2ef",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=13164264000-13164268095",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:55 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 13164264000-13164268095/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000049278176-00004096-subblock-prefix.bin",
+      "offset": 49278176,
+      "bytes": 4096,
+      "sha256": "62188da6831c458d239d48d7b1db7e009ef8a453fae144b1112b22e7fe8fca9b",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=49278176-49282271",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:58 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 49278176-49282271/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "013176418048-00004096-subblock-prefix.bin",
+      "offset": 13176418048,
+      "bytes": 4096,
+      "sha256": "6c76dd2f2f05f7db2ab911c9c7bc0a79e1d3e091879307a24c6350a3a26749f8",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=13176418048-13176422143",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:59 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 13176418048-13176422143/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000061432224-00004096-subblock-prefix.bin",
+      "offset": 61432224,
+      "bytes": 4096,
+      "sha256": "29ca39a393fc170ae13b0c431356daa5d4701e8cd8b731da47ed4b2d65358c64",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=61432224-61436319",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:31:48 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 61432224-61436319/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "013188572096-00004096-subblock-prefix.bin",
+      "offset": 13188572096,
+      "bytes": 4096,
+      "sha256": "d57f92ce582974113d46a410eecfa11e33fd6b0d15c6ed084c74aae50af5fe22",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=13188572096-13188576191",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:31:50 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 13188572096-13188576191/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000073586272-00004096-subblock-prefix.bin",
+      "offset": 73586272,
+      "bytes": 4096,
+      "sha256": "9565758f61cc257855e4c4efb44c51cb64bc38c08a29ed1dfaa80a0e979ffe38",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=73586272-73590367",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:31:52 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 73586272-73590367/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "013200726144-00004096-subblock-prefix.bin",
+      "offset": 13200726144,
+      "bytes": 4096,
+      "sha256": "dbcfee7397e814ba3c70a2a0ffe6d0c4bd6a6b089e0b825658122dfa6a8762a4",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=13200726144-13200730239",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:31:53 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 13200726144-13200730239/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000085740320-00004096-subblock-prefix.bin",
+      "offset": 85740320,
+      "bytes": 4096,
+      "sha256": "e23ae58e56957f2b290ac95ee2496a2b7c34c3db7bca6b3a5b1ee4dddbcdbc89",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=85740320-85744415",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:31:55 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 85740320-85744415/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "013212880192-00004096-subblock-prefix.bin",
+      "offset": 13212880192,
+      "bytes": 4096,
+      "sha256": "4c10d76a3708f9096256aa43605bfaf46c6102f40f172e8abfebceaab1afc049",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=13212880192-13212884287",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:31:57 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 13212880192-13212884287/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000097894368-00004096-subblock-prefix.bin",
+      "offset": 97894368,
+      "bytes": 4096,
+      "sha256": "e6a92530ef131c2fc4cb8098da7e37e4714f2718b9a94f3b6e88e72d6813d888",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=97894368-97898463",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:31:58 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 97894368-97898463/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "013225034240-00004096-subblock-prefix.bin",
+      "offset": 13225034240,
+      "bytes": 4096,
+      "sha256": "77f491a3b78d4bb8583520c965d7a564454701fd7fdaee8f7d7ce12e64e55c29",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=13225034240-13225038335",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:32:00 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 13225034240-13225038335/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000110048416-00004096-subblock-prefix.bin",
+      "offset": 110048416,
+      "bytes": 4096,
+      "sha256": "87906a5c31ae706c22a5d0513760cbabeecdc25e91a208444bf68571c0d2d579",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=110048416-110052511",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:32:02 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 110048416-110052511/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "013237188288-00004096-subblock-prefix.bin",
+      "offset": 13237188288,
+      "bytes": 4096,
+      "sha256": "53f9a264a0ba8360b037d941bf5b9ef528762cde57c1e686da6d0821621beba6",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=13237188288-13237192383",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:32:04 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 13237188288-13237192383/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000122202464-00004096-subblock-prefix.bin",
+      "offset": 122202464,
+      "bytes": 4096,
+      "sha256": "39922b1e47c57602f990ef5cdf42141a5fa9b5bebdce0ef98577eb9e15e08554",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=122202464-122206559",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:32:06 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 122202464-122206559/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "013250879456-00004096-subblock-prefix.bin",
+      "offset": 13250879456,
+      "bytes": 4096,
+      "sha256": "f12d790456d275995378ae3c827f1b3b684c61e2061ad710423ea40b2d1506f5",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=13250879456-13250883551",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:32:07 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 13250879456-13250883551/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000134356512-00004096-subblock-prefix.bin",
+      "offset": 134356512,
+      "bytes": 4096,
+      "sha256": "e17398053cad81549baf45d38ca4facb2f644fd82d23f09a5c99c5d5c2447e12",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=134356512-134360607",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:32:09 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 134356512-134360607/13275191552",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "013263033504-00004096-subblock-prefix.bin",
+      "offset": 13263033504,
+      "bytes": 4096,
+      "sha256": "beb510d1fdb16e5290a2ebfd80250e0d871f6dba36ecff01316886b9a0b901a4",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240619_ws-inoculum-2_5to4/fromt6h-every10min-01.czi",
+      "request_headers": {
+        "Range": "bytes=13263033504-13263037599",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"317435900-64bd9a0dba6c0\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:32:11 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:39 GMT",
+        "ETag": "\"317435900-64bd9a0dba6c0\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 13263033504-13263037599/13275191552",
+        "Connection": "close"
+      }
+    }
+  ]
+}

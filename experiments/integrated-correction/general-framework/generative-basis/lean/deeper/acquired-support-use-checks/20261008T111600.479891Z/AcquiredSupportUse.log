@@ -1,0 +1,22 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-acquired-support-use-ajpitjo1/AcquiredSupportUse.lean:229:19: warning: This simp argument is unused:
+  if_pos rfl
+
+Hint: Omit it from the simp argument list.
+  simp only [bump,̵ ̵i̵f̵_̵p̵o̵s̵ ̵r̵f̵l̵] at eq
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'Generative.AcquiredSupportUse.sample_valid' does not depend on any axioms
+'Generative.AcquiredSupportUse.update_valid' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSupportUse.admitted_is_free' does not depend on any axioms
+'Generative.AcquiredSupportUse.next_sound' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSupportUse.trace_sound' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSupportUse.use_is_native' does not depend on any axioms
+'Generative.AcquiredSupportUse.step_projects' does not depend on any axioms
+'Generative.AcquiredSupportUse.trace_projects' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSupportUse.step_budget' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSupportUse.trace_budget' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSupportUse.budget_necessary' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSupportUse.fresh_read_use' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSupportUse.fresh_read_use_iff' depends on axioms: [propext, Quot.sound]
+'Generative.AcquiredSupportUse.unrelated_release_admits' depends on axioms: [propext]
+'Generative.AcquiredSupportUse.intervening_take_rejects' depends on axioms: [propext]

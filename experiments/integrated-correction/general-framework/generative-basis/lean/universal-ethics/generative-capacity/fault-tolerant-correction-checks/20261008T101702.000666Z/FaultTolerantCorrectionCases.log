@@ -1,0 +1,6 @@
+FaultTolerantCorrectionCases.lean:38:39: error: Ambiguous term
+  initial
+Possible interpretations:
+  AcquiredCorrection.initial : EffectiveCommand.State
+  
+  FaultTolerantCorrection.initial : Installation

@@ -1,0 +1,204 @@
+{
+  "date": "2026-10-08 Asia/Bangkok",
+  "scope": "Owned navigation fragments and C26 only; broad concurrent source review is not claimed.",
+  "edits": [
+    {
+      "path": "README.md",
+      "before_sha256": "4e318a5f3881e2b9d29b2ea51081f05df65aa1dc2f897ac828a4fd718d1af1d3",
+      "after_sha256": "d9fe399f6984e446f42751891eae246e7c3f345d5d055ae51024a82e20a1e431",
+      "old_fragment": "**普遍实践权威连续推进 / Connected advances in universal practical authority，2026-10-08。** [五个连接](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#16-连续推进理由可行接续迁移与冲突--reasons-effective-continuation-transfer-and-conflict)推进更强理由对手、对目的的评价、有效接续、异质修订与现实责任；**24项新 Lean 定理／35项声明审计通过**。/ An exact all-outcome-goals characterization and counterexamples distinguish possibility growth, effective control, closure and ethical quality. Finite revisions and projection have checked conditions; universal first warrant remains unestablished. Earlier results and the completed G0 route retain their scopes.",
+      "new_fragment": "**普遍实践权威的直接审计 / Direct practical-authority audit，2026-10-08。** [第一根据的检验](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#17-第一规范根据的直接审计--direct-audit-of-first-normative-warrant)纠正上一轮额外门槛：普遍理由不必在所有适当思考路径之外。完整肯定论证仍须建立生活质量对可回应位置的非排他实践意义，**零公理中心主张未证**。/ The first-ground dependency remains explicit; existing 24-theorem/35-audit practical-reach results retain their instrumental scope. The completed G0/J route remains separate.",
+      "full_source_review_claimed": false
+    },
+    {
+      "path": "RESEARCH.md",
+      "before_sha256": "640fda1cdc31d06157224687a737fdc7c643f116d8a497a7b85682ca12a8cda7",
+      "after_sha256": "7a9b48971ccdf1fd6ee3e9f3479920d8075b9e20b776d571334f7f3047f5ad7f",
+      "old_fragment": "**Universal practical authority: five connected advances, 8 October 2026.** [The current continuation](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#16-连续推进理由可行接续迁移与冲突--reasons-effective-continuation-transfer-and-conflict) strengthens the internalist rival beyond expressly adopted goals, develops the affirmative account of criticizing ends, and tests the all-goals route to authority. **24 new Lean theorems / 35 declaration audits pass:** all outcome-goal guarantees are preserved exactly under live response refinement; heterogeneous finite revisions compose, while projections preserve only their declared content. Checked witnesses distinguish possibility growth, effective control, closure goals and joint feasibility. [Argument, correspondence and substantive self-counterreview](_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#18-from-reasons-beyond-goals-to-controllable-continuation-transfer-and-conflict) connect these results to responsibilities, transfer and endings. Williams is read directly at the stated passage scope; the further author-source comparison retains access limits. Universal first ethical warrant remains open; the completed G0/J route is neither reopened nor renamed. **Next:** warrant beyond the full deliberatively available motivational organization, distinguishing recognition of a reason from creation of a new concern. / 连续推进五个连接；数学结果认证可实现性保持，不认证能力、控制或任意目的的伦理意义。",
+      "new_fragment": "**Universal practical authority: direct first-ground audit, 8 October 2026.** [The current correction](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#17-第一规范根据的直接审计--direct-audit-of-first-normative-warrant) removes the unnecessary requirement that universal reasons lie outside every sound deliberative route. [The full affirmative argument and self-counterreview](_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#19-direct-audit-of-the-remaining-central-claim) distinguish actual organization, patient-relative good and already warranted response-specific favor. The first nonexclusive practical identification remains unproved; defining it as quality or supplying it to Lean would not establish it. The existing motivational-access, constitutive-answer and epistemic-authority studies are credited, with a bounded primary recheck of Korsgaard1986. **No new theorem or universal completion is claimed.** The earlier five connected advances and 24 checked practical-reach theorems retain scope. The remaining task is substantive warrant for the first identification, compatible with a justified universal learning route; no switch to the independently completed G0/J route is made. / 第一根据直接审计纠正额外门槛；普遍权威未证，已有条件性成果继续复用。",
+      "full_source_review_claimed": false
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "before_sha256": "43515843af07f64a1a463a3720b6233c0a810bc1e036a26750b0c90ac92581e0",
+      "after_sha256": "3b52c283589bdb07bab22dce14e78995d0f0688702772a01a021ded9bba23a46",
+      "old_fragment": "**普遍实践权威的五步推进 / Five connected authority advances:** [新论证与构造](unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#16-连续推进理由可行接续迁移与冲突--reasons-effective-continuation-transfer-and-conflict)加强理由对手，检验跨目的路线，并接到修订、责任与交接；**24项新 Lean 定理／35项审计通过**。/ The exact guarantee-preservation condition has checked control, closure, projection and joint-feasibility limits. It supports implementation of warranted requirements while leaving first universal ethical authority under investigation.",
+      "new_fragment": "**普遍实践权威的第一根据 / First practical warrant:** [直接审计](unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#17-第一规范根据的直接审计--direct-audit-of-first-normative-warrant)纠正“普遍理由必须在全部适当思考之外”的额外门槛，保留最强肯定论证及其实质依赖。/ Universal authority remains unproved. The earlier five connected advances and 24 checked theorems/35 audits concern effective realization and transfer, with no new ethical proof or completion acceptance.",
+      "full_source_review_claimed": false
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "before_sha256": "cf7414572ce2fb4f0720704888cfee01f55f7a6753bc7486a63c7077d5ff37ea",
+      "after_sha256": "a4ff21e6dbc889b168481f36b7dc18b047ebb408b4ea2a4aa4bde604c7a2edc4",
+      "old_fragment": "**First practical authority → effective continuation → revision and conflict, 8 October 2026.** [The five-step continuation](ZERO-AXIOM-PRACTICAL-JUDGMENT.md#16-连续推进理由可行接续迁移与冲突--reasons-effective-continuation-transfer-and-conflict) strengthens the reasons rival beyond expressly adopted goals and connects the affirmative assessment of ends to a checked all-outcome-goals characterization. Twenty-four new Lean theorems / 35 declaration audits distinguish possibility growth, controllable guarantees, goals about closure and actual joint feasibility. Arbitrary finite heterogeneous revisions compose; a projection can conceal a lost protection. These supply exact conditions for realizing an independently warranted requirement through transfer, not a proof that control, every goal or every new organization is good. First ethical authority beyond the whole deliberatively available motivational organization remains the central unresolved connection. Existing conditional responsibility and ending principles retain their G0/J premises. / 本轮连续推进多个连接；普遍伦理有效、跨目的弱能力保持与实际遵循分别说明。",
+      "new_fragment": "**First practical warrant: direct audit, 8 October 2026.** [The corrected target](ZERO-AXIOM-PRACTICAL-JUDGMENT.md#17-第一规范根据的直接审计--direct-audit-of-first-normative-warrant) does not require universal reasons to be inaccessible through sound deliberation. The affirmative account still needs to warrant the nonexclusive practical bearing of actual living quality; common formation, recognition and effective control do not yet establish that identification. The earlier five-step continuation retains its 24 checked practical-reach theorems/35 audits and explicit limits concerning control, closure, projection, joint feasibility and finite heterogeneous revision. No new mathematical proof or universal ethical completion is claimed. The completed G0/J responsibility and ending principles remain reusable at their original scope. / 本轮纠正额外门槛并直接审计第一规范根据；未以新的条件性机制替代普遍证明。",
+      "full_source_review_claimed": false
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/results/data/generativity-chain.json",
+      "before_sha256": "a08354cc26e2d7e4f43d3fa5a52a225138a84cef5d176bb3ecd74344ac3047e8",
+      "after_sha256": "cb25d36ea52045a17ae0fae7498d8fd982223c7070c42a1416c208a6e5074e9f",
+      "owned_entry_before": {
+        "id": "C26",
+        "title_zh": "零公理路线：普遍实践权威",
+        "title_en": "Zero-axiom route: universal practical authority",
+        "claim_zh": "连续推进更强的理由对手、对目的的评价、跨目的可实现性、异质修订与实践责任；一般等价结果区分可能性增长、控制及伦理质量。",
+        "claim_en": "Five connected steps address the stronger reasons rival, assessment of ends, all-goal attainability, heterogeneous revisions and responsibility; an exact characterization separates possibility growth, control and ethical quality.",
+        "scope_zh": "新增24项 Lean 定理／35项声明审计；34项空依赖，一项标准经典依赖。给定回应与结果域，前提及反例明示；第一权威超出全部可经思考到达的动机结构仍未证，原成果各保留范围。",
+        "scope_en": "24 new Lean theorems/35 declaration audits; 34 empty and one with standard classical dependencies. Response/outcome domains and counterexamples explicit; first authority beyond deliberatively available motivation remains unproved. Earlier results retain scope.",
+        "links": [
+          {
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+            "label_zh": "当前双语研究",
+            "label_en": "Current bilingual investigation"
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+            "label_zh": "论证、反审与证据",
+            "label_en": "Argument, counterreview and evidence"
+          },
+          {
+            "path": "sources/15-codex-theory-conversations/2026-10-08-zero-axiom-practical-judgment.md",
+            "label_zh": "Ren 后续原话",
+            "label_en": "Ren’s later directive"
+          },
+          {
+            "path": "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+            "label_zh": "规范结构的新澄清",
+            "label_en": "New clarification of normative structure"
+          },
+          {
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#9-规范如何成为有作用的结构--how-a-norm-becomes-an-operative-structure",
+            "label_zh": "具体结构与检验案例",
+            "label_en": "Developed structure and discriminating case"
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#11-action-bias-correction-and-current-research",
+            "label_zh": "行动偏置纠正与前沿比较",
+            "label_en": "Action-bias correction and contemporary comparison"
+          },
+          {
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#11-从整体活动构造规范分化--constructing-normative-differentiation-within-whole-activity",
+            "label_zh": "从整体活动作出的具体构造",
+            "label_en": "Concrete construction within whole activity"
+          },
+          {
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#12-整体活动的-lean-构造--lean-construction-of-whole-activity",
+            "label_zh": "实际 Lean 构造",
+            "label_en": "Checked Lean construction"
+          },
+          {
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#13-理解标准及其根据--understanding-standards-and-their-grounds",
+            "label_zh": "更困难连接的论证与完成审计",
+            "label_en": "Harder-bridge argument and completion audit"
+          },
+          {
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#14-内容形成与根据接入普遍权威的检验--formed-content-acquired-grounds-and-the-authority-test",
+            "label_zh": "两项未完成连接的后续",
+            "label_en": "Continuation of both outstanding connections"
+          },
+          {
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#15-普遍实践权威--universal-practical-authority",
+            "label_zh": "普遍实践权威的中心论证",
+            "label_en": "Central universal-authority argument"
+          },
+          {
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#16-连续推进理由可行接续迁移与冲突--reasons-effective-continuation-transfer-and-conflict",
+            "label_zh": "五个连接的连续推进",
+            "label_en": "Five connected advances"
+          }
+        ]
+      },
+      "owned_entry_after": {
+        "id": "C26",
+        "title_zh": "零公理路线：普遍实践权威",
+        "title_en": "Zero-axiom route: universal practical authority",
+        "claim_zh": "直接审计第一规范根据，纠正普遍理由必须超出全部适当思考路径的额外门槛；肯定候选仍须辩护生活质量的非排他实践意义。",
+        "claim_en": "The direct first-ground audit removes an unnecessary requirement of deliberative inaccessibility; the affirmative candidate still needs to warrant living quality’s nonexclusive practical bearing.",
+        "scope_zh": "中心主张未证；本轮无新增定理或独立完成验收。此前24项 Lean 定理／35项审计保留有效接续与迁移的条件性范围，不认证第一伦理根据；已完成G0/J路线保持独立。",
+        "scope_en": "Central claim unproved; no new theorem or independent completion acceptance. Earlier 24 Lean theorems/35 audits retain conditional effective-continuation and transfer scope, not first ethical warrant. The completed G0/J route remains separate.",
+        "links": [
+          {
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+            "label_zh": "当前双语研究",
+            "label_en": "Current bilingual investigation"
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+            "label_zh": "论证、反审与证据",
+            "label_en": "Argument, counterreview and evidence"
+          },
+          {
+            "path": "sources/15-codex-theory-conversations/2026-10-08-zero-axiom-practical-judgment.md",
+            "label_zh": "Ren 后续原话",
+            "label_en": "Ren’s later directive"
+          },
+          {
+            "path": "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+            "label_zh": "规范结构的新澄清",
+            "label_en": "New clarification of normative structure"
+          },
+          {
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#9-规范如何成为有作用的结构--how-a-norm-becomes-an-operative-structure",
+            "label_zh": "具体结构与检验案例",
+            "label_en": "Developed structure and discriminating case"
+          },
+          {
+            "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#11-action-bias-correction-and-current-research",
+            "label_zh": "行动偏置纠正与前沿比较",
+            "label_en": "Action-bias correction and contemporary comparison"
+          },
+          {
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#11-从整体活动构造规范分化--constructing-normative-differentiation-within-whole-activity",
+            "label_zh": "从整体活动作出的具体构造",
+            "label_en": "Concrete construction within whole activity"
+          },
+          {
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#12-整体活动的-lean-构造--lean-construction-of-whole-activity",
+            "label_zh": "实际 Lean 构造",
+            "label_en": "Checked Lean construction"
+          },
+          {
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#13-理解标准及其根据--understanding-standards-and-their-grounds",
+            "label_zh": "更困难连接的论证与完成审计",
+            "label_en": "Harder-bridge argument and completion audit"
+          },
+          {
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#14-内容形成与根据接入普遍权威的检验--formed-content-acquired-grounds-and-the-authority-test",
+            "label_zh": "两项未完成连接的后续",
+            "label_en": "Continuation of both outstanding connections"
+          },
+          {
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#15-普遍实践权威--universal-practical-authority",
+            "label_zh": "普遍实践权威的中心论证",
+            "label_en": "Central universal-authority argument"
+          },
+          {
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#16-连续推进理由可行接续迁移与冲突--reasons-effective-continuation-transfer-and-conflict",
+            "label_zh": "五个连接的连续推进",
+            "label_en": "Five connected advances"
+          },
+          {
+            "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#17-第一规范根据的直接审计--direct-audit-of-first-normative-warrant",
+            "label_zh": "第一根据的直接审计与目标纠正",
+            "label_en": "Direct first-ground audit and target correction"
+          }
+        ]
+      },
+      "reviewed_owned_sources": [
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+        "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md"
+      ],
+      "unrelated_entries_preserved": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/results/GENERATIVITY-CHAIN.md",
+      "before_sha256": "971d68c687abc5490836e47ea7c3b7578303d05e544e930db1b5bcca57064eab",
+      "after_sha256": "f07a675d512c3a3f9a12325a0d9928f91299836ff0f571647887d5e031a425e7",
+      "old_fragment": "| C26 | 零公理路线：普遍实践权威<br>Zero-axiom route: universal practical authority | 连续推进更强的理由对手、对目的的评价、跨目的可实现性、异质修订与实践责任；一般等价结果区分可能性增长、控制及伦理质量。 | Five connected steps address the stronger reasons rival, assessment of ends, all-goal attainability, heterogeneous revisions and responsibility; an exact characterization separates possibility growth, control and ethical quality. | 新增24项 Lean 定理／35项声明审计；34项空依赖，一项标准经典依赖。给定回应与结果域，前提及反例明示；第一权威超出全部可经思考到达的动机结构仍未证，原成果各保留范围。<br>24 new Lean theorems/35 declaration audits; 34 empty and one with standard classical dependencies. Response/outcome domains and counterexamples explicit; first authority beyond deliberatively available motivation remains unproved. Earlier results retain scope. | [当前双语研究 / Current bilingual investigation](../unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md)<br>[论证、反审与证据 / Argument, counterreview and evidence](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md)<br>[Ren 后续原话 / Ren’s later directive](../../../sources/15-codex-theory-conversations/2026-10-08-zero-axiom-practical-judgment.md)<br>[规范结构的新澄清 / New clarification of normative structure](../../../sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md)<br>[具体结构与检验案例 / Developed structure and discriminating case](../unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#9-规范如何成为有作用的结构--how-a-norm-becomes-an-operative-structure)<br>[行动偏置纠正与前沿比较 / Action-bias correction and contemporary comparison](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#11-action-bias-correction-and-current-research)<br>[从整体活动作出的具体构造 / Concrete construction within whole activity](../unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#11-从整体活动构造规范分化--constructing-normative-differentiation-within-whole-activity)<br>[实际 Lean 构造 / Checked Lean construction](../unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#12-整体活动的-lean-构造--lean-construction-of-whole-activity)<br>[更困难连接的论证与完成审计 / Harder-bridge argument and completion audit](../unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#13-理解标准及其根据--understanding-standards-and-their-grounds)<br>[两项未完成连接的后续 / Continuation of both outstanding connections](../unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#14-内容形成与根据接入普遍权威的检验--formed-content-acquired-grounds-and-the-authority-test)<br>[普遍实践权威的中心论证 / Central universal-authority argument](../unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#15-普遍实践权威--universal-practical-authority)<br>[五个连接的连续推进 / Five connected advances](../unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#16-连续推进理由可行接续迁移与冲突--reasons-effective-continuation-transfer-and-conflict) |",
+      "new_fragment": "| C26 | 零公理路线：普遍实践权威<br>Zero-axiom route: universal practical authority | 直接审计第一规范根据，纠正普遍理由必须超出全部适当思考路径的额外门槛；肯定候选仍须辩护生活质量的非排他实践意义。 | The direct first-ground audit removes an unnecessary requirement of deliberative inaccessibility; the affirmative candidate still needs to warrant living quality’s nonexclusive practical bearing. | 中心主张未证；本轮无新增定理或独立完成验收。此前24项 Lean 定理／35项审计保留有效接续与迁移的条件性范围，不认证第一伦理根据；已完成G0/J路线保持独立。<br>Central claim unproved; no new theorem or independent completion acceptance. Earlier 24 Lean theorems/35 audits retain conditional effective-continuation and transfer scope, not first ethical warrant. The completed G0/J route remains separate. | [当前双语研究 / Current bilingual investigation](../unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md)<br>[论证、反审与证据 / Argument, counterreview and evidence](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md)<br>[Ren 后续原话 / Ren’s later directive](../../../sources/15-codex-theory-conversations/2026-10-08-zero-axiom-practical-judgment.md)<br>[规范结构的新澄清 / New clarification of normative structure](../../../sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md)<br>[具体结构与检验案例 / Developed structure and discriminating case](../unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#9-规范如何成为有作用的结构--how-a-norm-becomes-an-operative-structure)<br>[行动偏置纠正与前沿比较 / Action-bias correction and contemporary comparison](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md#11-action-bias-correction-and-current-research)<br>[从整体活动作出的具体构造 / Concrete construction within whole activity](../unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#11-从整体活动构造规范分化--constructing-normative-differentiation-within-whole-activity)<br>[实际 Lean 构造 / Checked Lean construction](../unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#12-整体活动的-lean-构造--lean-construction-of-whole-activity)<br>[更困难连接的论证与完成审计 / Harder-bridge argument and completion audit](../unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#13-理解标准及其根据--understanding-standards-and-their-grounds)<br>[两项未完成连接的后续 / Continuation of both outstanding connections](../unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#14-内容形成与根据接入普遍权威的检验--formed-content-acquired-grounds-and-the-authority-test)<br>[普遍实践权威的中心论证 / Central universal-authority argument](../unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#15-普遍实践权威--universal-practical-authority)<br>[五个连接的连续推进 / Five connected advances](../unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#16-连续推进理由可行接续迁移与冲突--reasons-effective-continuation-transfer-and-conflict)<br>[第一根据的直接审计与目标纠正 / Direct first-ground audit and target correction](../unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md#17-第一规范根据的直接审计--direct-audit-of-first-normative-warrant) |",
+      "other_rendered_lines_preserved": true
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "path": "RESEARCH.md",
+    "inserted": "**取得纠正路线 / Acquired correction routes，2026-10-08。** [新接续与反审](_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-CORRECTION-INTEGRATION.md)完成有限忠实界面内的地址形成、搜索记账与当前配置／权限复查；24项新 Lean 定理／45项审计，25,284项记录匹配。/ A positive route witness can suffice without a complete map; incomplete search is not absence. Discovery plus revalidation and actual execution has a sufficient 2N+3 bound. Real inspection warrant, atomicity and authority capture remain explicit limits; prior 59 / 102 results are not recounted.\n\n",
+    "before_sha256": "4f7c6295ee901af9e76931e396454bba9f1ea9c192c12a251220fa7552c6ae17",
+    "after_sha256": "a3e37cd26eda996f031fe7cbc62eabf4d1a5983e8fd07991327b99ba99348bf9"
+  },
+  {
+    "path": "theories/shengsheng-buxi-generative-existence/README.md",
+    "inserted": "**取得纠正路线 / Acquired correction routes，2026-10-08。** [变化中对齐 §6](unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md#6-acquiring-correction-routes--取得纠正路线)接通未预列地址的取得、消耗与实际执行；新增24项 Lean 定理／45项审计、25,284项有限记录。/ Local success and scoped exhaustion differ; current authority is checked, while legitimate authority and reliable real inspection remain separate.\n\n",
+    "before_sha256": "f1cdf1edc562f4da80860c383b2b24bd76394c18341db51eb9d1a5ae64234776",
+    "after_sha256": "1b74d9ac56e3e6bbeff70d3ea2fa6c89bfba40ac20f4ffcab2fb77119f840473"
+  },
+  {
+    "path": "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+    "inserted": "**已完成的取得接续 / Completed acquisition continuation，2026-10-08。** [有限界面内取得纠正路线](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ACQUIRED-CORRECTION-INTEGRATION.md)新增24项定理／45项审计及25,284项记录，关闭地址形成与可负担执行的本地连接。/ Reuse this result; next test the real inspection/enforcement relation and authority issuance under manipulation, rather than repeat supplied-menu planning or local route discovery.\n\n",
+    "before_sha256": "d8abbbe76c1827cfa2f4717d291a95c81950bafbf238fcc28b91ee323a0b2603",
+    "after_sha256": "2722d11e62937d9c8f6ac93f18d8316efdb4914a60ee265c97dc5165ed8a108f"
+  },
+  {
+    "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+    "inserted": "**取得与执行的接续 / Acquisition and execution，2026-10-08。** [变化中对齐 §6](ALIGNMENT-THROUGH-CHANGE.md#6-acquiring-correction-routes--取得纠正路线)新增24项 Lean 定理／45项审计，将实际检查形成的纠正地址、查询消耗与当前权限执行相连。/ A local witness need not cover an unread whole; matching current credentials does not establish legitimate authority or resist its capture. The finite faithful interface and atomic dispatch remain supplied.\n\n",
+    "before_sha256": "8d5cb2b5c9bf451187a77ab925efffdff9f2b72b74622eb3b5962a6a8d4067c2",
+    "after_sha256": "c61b28469124e2fa3200c83080cb20c2074b54c19ad5a09e6a259aa12f9893da"
+  },
+  {
+    "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+    "inserted": "**取得纠正路线 / Acquired correction routes，2026-10-08。** [整合、范围与反审](ACQUIRED-CORRECTION-INTEGRATION.md)新增24项 Lean 定理／45项审计及25,284项记录，接通查询形成地址、当前复查与实际执行。/ Earlier alignment and handoff work is reused; real inspection warrant and authority capture remain open.\n\n",
+    "before_sha256": "d22d7c37d459cafcdbea89be5d0accc263463a70f69a6923d3cbc80fc23e1a2a",
+    "after_sha256": "955ec61ba530246edd88f63049a6b5f32a0cc01d47b1b14373ebee86fc49bd3d"
+  },
+  {
+    "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+    "inserted": "**取得纠正路线 / Acquired correction routes，2026-10-08。** M25/F30成对接续[24项新定理／45项审计及25,284项记录](ACQUIRED-CORRECTION-INTEGRATION.md)，保留先前59／102与全部失败范围。/ Only owned suffixes, links, read/authored source versions and one discovery page change; unrelated rows remain unchanged. [Owned edits](ACQUIRED-CORRECTION-INDEX-EDITS.json); [scoped checks](ACQUIRED-CORRECTION-CHECKS.json). No whole-table or independent acceptance is claimed.\n\n",
+    "before_sha256": "c06eee68da12f236167cbdb61f3d0109108ad0f94d1756300905e88e49888064",
+    "after_sha256": "237d61049a771b8dbec173b479649158d8bb01569e88d9e2efd70c0d1c10fd7f"
+  }
+]

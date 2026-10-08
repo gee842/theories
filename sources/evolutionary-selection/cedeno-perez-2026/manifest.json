@@ -1,0 +1,18 @@
+{
+  "title": "Cell division timing shapes the morphology and size of nascent multicellular organisms",
+  "authors": "Cedeño-Pérez et al.",
+  "doi": "10.1101/2025.04.23.650085",
+  "version": "3",
+  "version_date": "2026-05-28",
+  "status": "preprint, not journal peer-reviewed",
+  "retrieved": "2026-10-08 Asia/Bangkok",
+  "license": "CC BY-NC-ND 4.0; original XML retained unchanged; analysis is separate",
+  "preserved_files": {
+    "article.xml": {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13228533/fullTextXML",
+      "bytes": 170704,
+      "sha256": "bac188363a4f4949cda25a05b4e2bb7e14cea6e924cbff0554b72925b85b8ae1"
+    }
+  },
+  "scope": "Full public XML; selected results and methods assessed. No original author simulation code or underlying lineage data retrieved."
+}

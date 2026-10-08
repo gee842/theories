@@ -1,0 +1,14 @@
+import BoundedRiskRevision
+#print axioms BoundedRiskRevision.total
+#print axioms BoundedRiskRevision.greatest
+#print axioms BoundedRiskRevision.Dominates
+#print axioms BoundedRiskRevision.Efficient
+#print axioms BoundedRiskRevision.greatest_on_frontier
+#print axioms BoundedRiskRevision.dominated_beyond_balance
+#print axioms BoundedRiskRevision.no_joint_improvement_on_frontier
+#print axioms BoundedRiskRevision.frontier_exact
+#print axioms BoundedRiskRevision.intermediate_profiles
+#print axioms BoundedRiskRevision.whole_allowance_iff
+#print axioms BoundedRiskRevision.four_point_constraint_optimum
+#print axioms BoundedRiskRevision.scope_bounds_compose
+#print axioms BoundedRiskRevision.resetting_allowance_exceeds_original_scope

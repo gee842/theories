@@ -1,0 +1,46 @@
+'Generative.CompositionalAcquisition.Expr' does not depend on any axioms
+'Generative.CompositionalAcquisition.Code' does not depend on any axioms
+'Generative.CompositionalAcquisition.eval' does not depend on any axioms
+'Generative.CompositionalAcquisition.p0' does not depend on any axioms
+'Generative.CompositionalAcquisition.p1' does not depend on any axioms
+'Generative.CompositionalAcquisition.orderProbe' does not depend on any axioms
+'Generative.CompositionalAcquisition.Evidence' does not depend on any axioms
+'Generative.CompositionalAcquisition.observe' does not depend on any axioms
+'Generative.CompositionalAcquisition.acquire' does not depend on any axioms
+'Generative.CompositionalAcquisition.probe_readings' does not depend on any axioms
+'Generative.CompositionalAcquisition.acquired_code_exact' depends on axioms: [propext, Quot.sound]
+'Generative.CompositionalAcquisition.acquired_all_expressions' depends on axioms: [propext, Quot.sound]
+'Generative.CompositionalAcquisition.rename' does not depend on any axioms
+'Generative.CompositionalAcquisition.renamed' does not depend on any axioms
+'Generative.CompositionalAcquisition.reencoding_preserves_content' does not depend on any axioms
+'Generative.CompositionalAcquisition.operationCost' does not depend on any axioms
+'Generative.CompositionalAcquisition.acquisitionCost' does not depend on any axioms
+'Generative.CompositionalAcquisition.acquisition_cost' depends on axioms: [propext]
+'Generative.CompositionalAcquisition.Learner' does not depend on any axioms
+'Generative.CompositionalAcquisition.trialRecords' does not depend on any axioms
+'Generative.CompositionalAcquisition.train' does not depend on any axioms
+'Generative.CompositionalAcquisition.training_uses_actual_records' depends on axioms: [propext]
+'Generative.CompositionalAcquisition.training_forms_interpreter' depends on axioms: [propext, Quot.sound]
+'Generative.CompositionalAcquisition.training_support_conserved' depends on axioms: [propext]
+'Generative.CompositionalAcquisition.insufficient_training_unchanged' depends on axioms: [propext]
+'Generative.CompositionalAcquisition.execute' does not depend on any axioms
+'Generative.CompositionalAcquisition.acquired_execution' depends on axioms: [propext, Quot.sound]
+'Generative.CompositionalAcquisition.acquired_execution_conserved' depends on axioms: [propext, Quot.sound]
+'Generative.CompositionalAcquisition.primitiveEvidence' does not depend on any axioms
+'Generative.CompositionalAcquisition.separated' does not depend on any axioms
+'Generative.CompositionalAcquisition.primitive_readings_do_not_resolve_order' depends on axioms: [propext]
+'Generative.CompositionalAcquisition.no_exact_order_without_composite_probe' depends on axioms: [propext]
+'Generative.CompositionalAcquisition.usual' does not depend on any axioms
+'Generative.CompositionalAcquisition.switched' does not depend on any axioms
+'Generative.CompositionalAcquisition.novel' does not depend on any axioms
+'Generative.CompositionalAcquisition.initial' does not depend on any axioms
+'Generative.CompositionalAcquisition.novel_expression_not_a_training_item' does not depend on any axioms
+'Generative.CompositionalAcquisition.novel_execution_from_acquisition' does not depend on any axioms
+'Generative.CompositionalAcquisition.acquired_capacity_can_outlast_executable_support' does not depend on any axioms
+'Generative.CompositionalAcquisition.changed_order_invalidates_transfer' does not depend on any axioms
+'Generative.CompositionalAcquisition.unresolved_order_can_preserve_a_novel_answer' does not depend on any axioms
+'Generative.CompositionalAcquisition.nonuniform' does not depend on any axioms
+'Generative.CompositionalAcquisition.nonuniform_matches_training' does not depend on any axioms
+'Generative.CompositionalAcquisition.nonuniform_fails_transfer' does not depend on any axioms
+'Generative.CompositionalAcquisition.pick' does not depend on any axioms
+'Generative.CompositionalAcquisition.changed_motivation_preserves_acquired_content' does not depend on any axioms

@@ -1,0 +1,94 @@
+{
+  "status": "passed-owned-scope",
+  "checked_at_utc": "2026-10-08T12:09:44.484259+00:00",
+  "lean_receipt": "passed",
+  "theorem_count": 32,
+  "audit_count": 41,
+  "population_receipt": "passed",
+  "population_theorem_count": 71,
+  "population_audit_count": 100,
+  "response_receipt": "passed",
+  "response_theorem_count": 46,
+  "response_audit_count": 53,
+  "dependence_receipt": "passed",
+  "dependence_theorem_count": 38,
+  "dependence_audit_count": 61,
+  "commitment_receipt": "passed",
+  "commitment_theorem_count": 35,
+  "commitment_audit_count": 47,
+  "finite_checks": {
+    "micro_allocation_and_accounting_cases": 24744,
+    "schedule_boundary_cases": 9949,
+    "topup_cases": 10247
+  },
+  "response_finite_checks": {
+    "prefix_history_cases": 32805,
+    "viability_cases": 3549,
+    "affordable_action_comparisons": 39039,
+    "one_step_recovery_cases": 1560,
+    "optimal_live_step_cases": 3177
+  },
+  "dependence_finite_checks": {
+    "decision_cases": 20736,
+    "extension_cases": 6561,
+    "transfer_cases": 2025,
+    "portfolio_cases": 4433,
+    "coalition_cases": 60853,
+    "plan_cases": 180
+  },
+  "commitment_finite_checks": {
+    "contract_cases": 3475,
+    "plan_score_cases": 625500,
+    "realized_settlement_cases": 2898000,
+    "approximate_cases": 13900,
+    "separated_contract_cases": 447,
+    "capacity_cases": 23436,
+    "budget_cases": 51030,
+    "coalition_cases": 441
+  },
+  "local_links_checked": 100,
+  "attachment_bytes_preserved": true,
+  "owned_M24_row_matches_data": true,
+  "new_source_hashes_current": true,
+  "owned_document_hashes": {
+    "theories/meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md": "e0f1367f8ca1c8d26667e592863e6446a1570a0947ec72ea1f8c2bd157421bcc",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/COLLECTIVE-DESTRUCTION-INTEGRATION.md": "83860416cb80f10f35879ab880ac1e6bb9be478ba9780a3a64adc824961b3565",
+    "experiments/market-generativity/meta-attractor/COLLECTIVE-README.md": "0f624d32be2f7d3c88e3c97122566fb32da4a616b647710129d84cb1304f9ff0",
+    "experiments/market-generativity/meta-attractor/POPULATION-README.md": "6731c55f11affafb002288270591d9734aca5f97c0cd060cc25635a4b46b4eb3",
+    "experiments/market-generativity/meta-attractor/RESPONSE-README.md": "930f8b5005035370a730225c1ef0cfc529e6adec144ce45566c015083be2347b",
+    "experiments/market-generativity/meta-attractor/CORRECTION-DEPENDENCE-README.md": "7d693d6b92791a1da8b8e7abeb63d4930e6014041b5af75be8104ad38ae9e422",
+    "experiments/market-generativity/meta-attractor/CORRECTION-COMMITMENT-README.md": "c579bb192a1b3b3f530978b2bd4b213317cf5abb56b84ced2fbddfc511d2a3b9",
+    "sources/15-codex-theory-conversations/2026-10-08-collective-destructive-attractors.md": "9f6e9ea6400b831ead909d46d85d3bf6e2da86a077f5bd8db8798395d57f884a"
+  },
+  "unrelated_pending_reviews": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ETHICAL-LEARNING.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ETHICAL-LEARNING-INTEGRATION.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANCE-ADEQUACY-INTEGRATION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/MAINTENANCE-BASELINE-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SESSION-INTEGRATION-AUDIT.md"
+    ],
+    "removed_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md"
+    ]
+  },
+  "scope": "Five owned proof packages, frozen dependency/current source bindings, finite implementation reports, source preservation, local links, M24 suffixes and shared insertions/replacements only. Earlier index edit records are historical; latest versions supersede only owned changed fields. Does not certify all linked sources, unrelated concurrent reviews or independent scientific acceptance."
+}

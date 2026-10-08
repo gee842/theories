@@ -1,0 +1,12 @@
+CompositionalFormation.lean:389:47: error: Type mismatch
+  equal_primitive_effects_preserve_extent c same e
+has type
+  eval c e = List.replicate (extent e) c.first
+but is expected to have type
+  eval { first := c.first, second := c.second, reversed := false } e = List.replicate (extent e) c.first
+CompositionalFormation.lean:394:47: error: Type mismatch
+  equal_primitive_effects_preserve_extent c same e
+has type
+  eval c e = List.replicate (extent e) c.first
+but is expected to have type
+  eval { first := c.first, second := c.second, reversed := true } e = List.replicate (extent e) c.first

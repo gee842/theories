@@ -1,0 +1,113 @@
+{
+  "status": "passed",
+  "utc": "20261008T105731.467185Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "chance-grounding-checks/20261008T105731.467185Z",
+  "source_sha256": {
+    "ChanceGrounding": "efb287aa7665d04dcccea7d28220030e98ca912d95096061eaceae121f2c451f"
+  },
+  "checker_sha256": {
+    "check_chance_grounding.py": "dea8c50b684f52f885f1ea2bb4103e158194cd5eb86b2a5ffca1fa792cf49cc7",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Four results audit only the candidate implementation that combines positive chances for both exclusive rescue routes with maximization of expected protected headcount. A positive-ticket refinement doubles the total while preserving the minority ticket numerator and strictly increasing the candidate score. Therefore no maximum exists in the domain allowing every positive natural ticket pair. Every such score remains below two. At fixed resolution n at least two, the unique maximum has ticket counts (n-1,1). CP does not require this objective; a positive ticket or representation-dependent floor is not thereby fair. Severity, permission, reliable randomization, actual available resolution and normative warrant remain outside this diagnostic. No inherited project theorem is rebuilt.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "checked_application_examples": [
+    {
+      "claim": "positive tickets (1,1) refine to (3,1), strictly increasing the diagnostic score",
+      "kernel_checked": true,
+      "counted_as_new_theorem": false
+    }
+  ],
+  "source_unchanged_during_check": true,
+  "modules": [
+    {
+      "module": "ChanceGrounding",
+      "theorems": 4,
+      "declarations": [
+        {
+          "kind": "abbrev",
+          "name": "ChanceGrounding.Tickets"
+        },
+        {
+          "kind": "def",
+          "name": "ChanceGrounding.Positive"
+        },
+        {
+          "kind": "def",
+          "name": "ChanceGrounding.total"
+        },
+        {
+          "kind": "def",
+          "name": "ChanceGrounding.scoreNumerator"
+        },
+        {
+          "kind": "def",
+          "name": "ChanceGrounding.Improves"
+        },
+        {
+          "kind": "def",
+          "name": "ChanceGrounding.refine"
+        },
+        {
+          "kind": "theorem",
+          "name": "ChanceGrounding.positive_refinement_improves_score"
+        },
+        {
+          "kind": "theorem",
+          "name": "ChanceGrounding.no_maximum_in_unbounded_positive_ticket_domain"
+        },
+        {
+          "kind": "theorem",
+          "name": "ChanceGrounding.every_positive_score_is_below_two"
+        },
+        {
+          "kind": "theorem",
+          "name": "ChanceGrounding.fixed_resolution_unique_maximum"
+        }
+      ],
+      "axiom_dependencies": {
+        "ChanceGrounding.Tickets": [],
+        "ChanceGrounding.Positive": [],
+        "ChanceGrounding.total": [],
+        "ChanceGrounding.scoreNumerator": [],
+        "ChanceGrounding.Improves": [],
+        "ChanceGrounding.refine": [],
+        "ChanceGrounding.positive_refinement_improves_score": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ChanceGrounding.no_maximum_in_unbounded_positive_ticket_domain": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ChanceGrounding.every_positive_score_is_below_two": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ChanceGrounding.fixed_resolution_unique_maximum": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "kernel_checked": true
+    }
+  ],
+  "artifact_sha256": {
+    "ChanceGrounding.lean": "efb287aa7665d04dcccea7d28220030e98ca912d95096061eaceae121f2c451f",
+    "ChanceGrounding.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ChanceGroundingAxiomAudit.lean": "9d5ce42920477261b8895f260b95eb79bf4362a6b3ad680f6cc72dc97a9e8d98",
+    "ChanceGroundingAxiomAudit.log": "24dfee4c07ecb29af020a7f8ff9c324484df6063e4399d572431fbc2e24442f8",
+    "ChanceGroundingSignatures.lean": "a311b1a434f768b4c4faebdf2539c2f898f942b95bfe35b91c001f60e3f65623",
+    "ChanceGroundingSignatures.log": "8ae644b8247aabd883007a38c0e7c65da8a97652fa43840e444148102198fc23",
+    "Controls.lean": "ed736aa6e8be38f8223578fab363a6d81c58aefc3cfa20d0ec0e5978d5848929",
+    "Controls.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_chance_grounding.py": "dea8c50b684f52f885f1ea2bb4103e158194cd5eb86b2a5ffca1fa792cf49cc7",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

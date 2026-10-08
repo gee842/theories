@@ -1,0 +1,5 @@
+ModelRevisionCases.lean:33:38: error(lean.unknownIdentifier): Unknown identifier `SourceReliance.protocol`
+ModelRevisionCases.lean:45:30: error(lean.unknownIdentifier): Unknown identifier `SourceReliance.jointFailure`
+ModelRevisionCases.lean:48:40: error(lean.unknownIdentifier): Unknown identifier `SourceReliance.jointFailure`
+ModelRevisionCases.lean:49:32: error(lean.unknownIdentifier): Unknown identifier `SourceReliance.jointFailure`
+ModelRevisionCases.lean:50:39: error(lean.unknownIdentifier): Unknown identifier `SourceReliance.jointFailure`

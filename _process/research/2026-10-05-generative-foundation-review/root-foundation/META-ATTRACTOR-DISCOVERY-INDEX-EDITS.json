@@ -1,0 +1,461 @@
+{
+  "entry_id": "M24",
+  "entry_before": {
+    "id": "M24",
+    "title_zh": "元吸引子与选择条件的重建",
+    "title_en": "Meta-attractors and reproduction of selection conditions",
+    "claim_zh": "活动后果参与重建选择该组织的条件，使其经具体承载者变化仍能接续；区分机制条件、实际边界、动力学接近及可行纠正。 新会话进一步检验精确局部目标执行怎样经制度后果进入共同损失；局部安全与共同执行保护分列。 Ren 后续提出复杂性增长与实际认知／行动能力失配的退化候选；区别需求、回应、损失与修复。 条件接续已证明逐前缀支持与内生回应受损，并保留可负担恢复及需求调整。 可纠正性接续区分实际回应能力与接受目的修订的动机。 纠正依存模型接通退出负担、真实请求、后继配合及共同支持。",
+    "claim_en": "Consequences help reproduce conditions selecting an organization across carrier changes; distinguish mechanism conditions, formed boundaries, dynamical approach and feasible correction. A new session tests how exact local objective fidelity can lead through institutional consequences to collective loss; local safety and joint-execution protection remain distinct. Ren subsequently proposes degeneration through a mismatch between growing complexity and effective cognition/action; demand, response, loss and repair remain distinct. The conditional continuation now proves prefix support and endogenous response impairment, retaining affordable recovery and demand adjustment. The corrigibility assessment distinguishes effective response from willingness to revise ends. Correction dependence connects exit burdens, truthful requests, successor cooperation and shared provision.",
+    "scope_zh": "原47／65、承载者40／69、再生58／107、判准34／56各轮定理／审计保留。新43项 Lean 定理／87项审计将依存记录取得、先建后测的替换、回返资助反复修订和实际回应接通；已知一共同根故障下保有检验可靠性及可用性。当前意见一致可隐藏依存合并后的脆弱性；遗漏共同原因仍可导致错误的实际撤回。结构读取、因果／故障覆盖、变化受协议约束及来源实际可用仍为前提；非任意自证、整体理论完成或独立验收。1,024项网络探索不计作证明。 集体破坏第一构造另有32项新定理／41项审计，检查两位置阶段最优化、正且可增长吞吐下的有限到达、精确盆地及严格保护；平局失败与无法自动恢复保留。接续新增71项定理／100项审计，接通有限人口替换、内部筹资、恢复／耗尽精确分界及材料约束下的核心接续；恢复前归零、分流与缺件失败保留。到墙范围是实际征收、证据、权限与承诺的形成和维护，未宣称普遍收敛或经验对应。 新的普遍连接与当前社会诊断仍为候选，已有证明不冒充指数复杂性或必然崩溃的证明。 回应接续新增46项定理／53项审计，涵盖明确指数需求／线性回应特例和所有可负担当期留存支持最优策略的失败；认识的实际形成及社会对应仍开放。 Corrigibility 概念整合无新增证明；规范理由、执行协议与局部维持不构成完整解决。 再增38项定理／61项审计：服从下的依存固化、原任务全部最优方案的损害、受约束的有代价纠正与共同退出分界；动机、真实负担与正当权限仍须解释。",
+    "scope_en": "Earlier theorem/audit packages 47/65, carrier 40/69, reproduction 58/107 and admission 34/56 retain their scopes. A further 43 theorems/87 audits join acquired dependency records, staged tested substitution, financed repeated revisions and actual responses, preserving soundness and availability under one represented common-root fault. Present agreement can hide lost resilience; an omitted common cause can still license an actual damaging withdrawal. Structural inspection, causal/fault coverage, mediated changes and real source availability remain premises; no unrestricted self-certification, whole-theory completion or independent acceptance. The 1,024 network explorations are not proofs. A separate first collective-destruction construction adds 32 theorems / 41 audits for two-position stage optimization, finite arrival under positive and possibly growing throughput, an exact basin and strict protection, retaining tie failure and absent automatic recovery. The continuation adds 71 theorems / 100 audits for bounded population replacement, internally financed correction, exact recovery/destruction boundaries and material-guarded core histories. Interim loss, diversion and missing-parts failures remain. The wall is formation and preservation of actual collection, evidence, authority and commitments; universal convergence and empirical correspondence are not established. The broader implication and diagnosis of current society remain hypotheses; existing proofs establish neither exponential societal complexity nor inevitable collapse. The response continuation adds 46 theorems / 53 audits, including a specified exponential-demand/linear-response case and failure of all affordable immediate-support-optimal policies. Actual cognitive realization and societal correspondence remain open. The conceptual corrigibility integration adds no proof; normative reasons, execution protocols and local maintenance do not constitute a full solution. A further 38 theorems / 61 audits cover entrenchment despite obedience, harmful unrestricted task optima, costly constrained correction and joint exit capacity; motivation, actual burdens and legitimate authority remain explicit obligations.",
+    "links": [
+      {
+        "label_zh": "当前定义",
+        "label_en": "Current definition",
+        "path": "theories/meta-attractor/GENERATIVE-REGIMES.md"
+      },
+      {
+        "label_zh": "整合与完成范围",
+        "label_en": "Integration and scope",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-INTEGRATION.md"
+      },
+      {
+        "label_zh": "主来源与对手",
+        "label_en": "Primary comparisons",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-EVIDENCE.md"
+      },
+      {
+        "label_zh": "实质反审",
+        "label_en": "Substantive counterreview",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REVIEW.md"
+      },
+      {
+        "label_zh": "Lean实查",
+        "label_en": "Lean verification",
+        "path": "experiments/market-generativity/meta-attractor/verification.json"
+      },
+      {
+        "label_zh": "原话与目标",
+        "label_en": "Request and objective",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md"
+      },
+      {
+        "label_zh": "局部对齐与集体破坏",
+        "label_en": "Local alignment and collective destruction",
+        "path": "theories/meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md"
+      },
+      {
+        "label_zh": "集体破坏整合与作者反审",
+        "label_en": "Collective-destruction integration and author counterreview",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COLLECTIVE-DESTRUCTION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "集体破坏形式检查",
+        "label_en": "Collective-destruction formal checks",
+        "path": "experiments/market-generativity/meta-attractor/collective-verification.json"
+      },
+      {
+        "label_zh": "本会话原话",
+        "label_en": "Session directive",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-collective-destructive-attractors.md"
+      },
+      {
+        "label_zh": "承载者、探测与修复",
+        "label_en": "Carriers, diagnosis and repair",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-CARRIER-DIAGNOSIS.md"
+      },
+      {
+        "label_zh": "接续Lean实查",
+        "label_en": "Continuation Lean verification",
+        "path": "experiments/market-generativity/meta-attractor/carrier-verification.json"
+      },
+      {
+        "label_zh": "人口机制与依赖",
+        "label_en": "Population mechanism and dependencies",
+        "path": "experiments/market-generativity/meta-attractor/POPULATION-README.md"
+      },
+      {
+        "label_zh": "人口接续Lean实查",
+        "label_en": "Population continuation Lean checks",
+        "path": "experiments/market-generativity/meta-attractor/population-verification.json"
+      },
+      {
+        "label_zh": "分配与分界计算",
+        "label_en": "Allocation and boundary computations",
+        "path": "experiments/market-generativity/meta-attractor/population-experiment.json"
+      },
+      {
+        "label_zh": "选择与纠正的再生",
+        "label_en": "Reproduction of selection and correction",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md"
+      },
+      {
+        "label_zh": "再生网络实查",
+        "label_en": "Reproduction-network verification",
+        "path": "experiments/market-generativity/meta-attractor/reproduction-verification.json"
+      },
+      {
+        "label_zh": "判准取得与推论界限",
+        "label_en": "Acquired criterion and inference wall",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-ADMISSION.md"
+      },
+      {
+        "label_zh": "准入学习实查",
+        "label_en": "Admission-learning verification",
+        "path": "experiments/market-generativity/meta-attractor/admission-verification.json"
+      },
+      {
+        "label_zh": "回应能力机制与依赖",
+        "label_en": "Response mechanism and assumptions",
+        "path": "experiments/market-generativity/meta-attractor/RESPONSE-README.md"
+      },
+      {
+        "label_zh": "回应能力Lean实查",
+        "label_en": "Response-capacity Lean checks",
+        "path": "experiments/market-generativity/meta-attractor/response-verification.json"
+      },
+      {
+        "label_zh": "回应与恢复有限检查",
+        "label_en": "Response and recovery finite checks",
+        "path": "experiments/market-generativity/meta-attractor/response-experiment.json"
+      },
+      {
+        "label_zh": "检验关系改组",
+        "label_en": "Reorganizing testing relations",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-TESTING.md"
+      },
+      {
+        "label_zh": "检验改组实查",
+        "label_en": "Testing reorganization verification",
+        "path": "experiments/market-generativity/meta-attractor/testing-verification.json"
+      },
+      {
+        "label_zh": "纠正依存机制",
+        "label_en": "Correction-dependence mechanism",
+        "path": "experiments/market-generativity/meta-attractor/CORRECTION-DEPENDENCE-README.md"
+      },
+      {
+        "label_zh": "纠正依存Lean实查",
+        "label_en": "Correction-dependence Lean checks",
+        "path": "experiments/market-generativity/meta-attractor/correction-dependence-verification.json"
+      },
+      {
+        "label_zh": "退出与共同支持计算",
+        "label_en": "Exit and shared-support computations",
+        "path": "experiments/market-generativity/meta-attractor/correction-dependence-experiment.json"
+      }
+    ]
+  },
+  "entry": {
+    "id": "M24",
+    "title_zh": "元吸引子与选择条件的重建",
+    "title_en": "Meta-attractors and reproduction of selection conditions",
+    "claim_zh": "活动后果参与重建选择该组织的条件，使其经具体承载者变化仍能接续；区分机制条件、实际边界、动力学接近及可行纠正。 新会话进一步检验精确局部目标执行怎样经制度后果进入共同损失；局部安全与共同执行保护分列。 Ren 后续提出复杂性增长与实际认知／行动能力失配的退化候选；区别需求、回应、损失与修复。 条件接续已证明逐前缀支持与内生回应受损，并保留可负担恢复及需求调整。 可纠正性接续区分实际回应能力与接受目的修订的动机。 纠正依存模型接通退出负担、真实请求、后继配合及共同支持。",
+    "claim_en": "Consequences help reproduce conditions selecting an organization across carrier changes; distinguish mechanism conditions, formed boundaries, dynamical approach and feasible correction. A new session tests how exact local objective fidelity can lead through institutional consequences to collective loss; local safety and joint-execution protection remain distinct. Ren subsequently proposes degeneration through a mismatch between growing complexity and effective cognition/action; demand, response, loss and repair remain distinct. The conditional continuation now proves prefix support and endogenous response impairment, retaining affordable recovery and demand adjustment. The corrigibility assessment distinguishes effective response from willingness to revise ends. Correction dependence connects exit burdens, truthful requests, successor cooperation and shared provision.",
+    "scope_zh": "原47／65、承载者40／69、再生58／107、判准34／56、检验改组43／87各轮定理／审计保留。干预发现另增43项 Lean 定理／87项审计：以付费中断、实际共同失去支承及恢复取得未知依存划分，接通准入、重测与实际回应并保留支承。所有可用局部及组合测试仍可遗漏上游共同原因；干预覆盖、效果忠实、脉冲与故障对应及回退供给仍为前提。既有检验改组与可失实见证结果直接复用，不宣称无限自证、整体理论完成或独立验收。1,024项网络探索不计作证明。 集体破坏第一构造另有32项新定理／41项审计，检查两位置阶段最优化、正且可增长吞吐下的有限到达、精确盆地及严格保护；平局失败与无法自动恢复保留。接续新增71项定理／100项审计，接通有限人口替换、内部筹资、恢复／耗尽精确分界及材料约束下的核心接续；恢复前归零、分流与缺件失败保留。到墙范围是实际征收、证据、权限与承诺的形成和维护，未宣称普遍收敛或经验对应。 新的普遍连接与当前社会诊断仍为候选，已有证明不冒充指数复杂性或必然崩溃的证明。 回应接续新增46项定理／53项审计，涵盖明确指数需求／线性回应特例和所有可负担当期留存支持最优策略的失败；认识的实际形成及社会对应仍开放。 Corrigibility 概念整合无新增证明；规范理由、执行协议与局部维持不构成完整解决。 再增38项定理／61项审计：服从下的依存固化、原任务全部最优方案的损害、受约束的有代价纠正与共同退出分界；动机、真实负担与正当权限仍须解释。",
+    "scope_en": "Earlier theorem/audit packages 47/65, carrier 40/69, reproduction 58/107, admission 34/56 and testing reorganization 43/87 retain their scopes. Effect-based discovery separately adds 43 theorems/87 audits: funded interruption, joint-outage observation and restoration acquire an unknown dependency partition and join admission, retesting and actual supported response. All available local and combined tests can still miss an upstream common cause. Intervention coverage, effect fidelity, pulse/fault correspondence and fallback supply remain premises. Completed reconfiguration and fallible-witness results are reused; no unrestricted self-certification, whole-theory completion or independent acceptance. The 1,024 network explorations are not proofs. A separate first collective-destruction construction adds 32 theorems / 41 audits for two-position stage optimization, finite arrival under positive and possibly growing throughput, an exact basin and strict protection, retaining tie failure and absent automatic recovery. The continuation adds 71 theorems / 100 audits for bounded population replacement, internally financed correction, exact recovery/destruction boundaries and material-guarded core histories. Interim loss, diversion and missing-parts failures remain. The wall is formation and preservation of actual collection, evidence, authority and commitments; universal convergence and empirical correspondence are not established. The broader implication and diagnosis of current society remain hypotheses; existing proofs establish neither exponential societal complexity nor inevitable collapse. The response continuation adds 46 theorems / 53 audits, including a specified exponential-demand/linear-response case and failure of all affordable immediate-support-optimal policies. Actual cognitive realization and societal correspondence remain open. The conceptual corrigibility integration adds no proof; normative reasons, execution protocols and local maintenance do not constitute a full solution. A further 38 theorems / 61 audits cover entrenchment despite obedience, harmful unrestricted task optima, costly constrained correction and joint exit capacity; motivation, actual burdens and legitimate authority remain explicit obligations.",
+    "links": [
+      {
+        "label_zh": "当前定义",
+        "label_en": "Current definition",
+        "path": "theories/meta-attractor/GENERATIVE-REGIMES.md"
+      },
+      {
+        "label_zh": "整合与完成范围",
+        "label_en": "Integration and scope",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-INTEGRATION.md"
+      },
+      {
+        "label_zh": "主来源与对手",
+        "label_en": "Primary comparisons",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-EVIDENCE.md"
+      },
+      {
+        "label_zh": "实质反审",
+        "label_en": "Substantive counterreview",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REVIEW.md"
+      },
+      {
+        "label_zh": "Lean实查",
+        "label_en": "Lean verification",
+        "path": "experiments/market-generativity/meta-attractor/verification.json"
+      },
+      {
+        "label_zh": "原话与目标",
+        "label_en": "Request and objective",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md"
+      },
+      {
+        "label_zh": "局部对齐与集体破坏",
+        "label_en": "Local alignment and collective destruction",
+        "path": "theories/meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md"
+      },
+      {
+        "label_zh": "集体破坏整合与作者反审",
+        "label_en": "Collective-destruction integration and author counterreview",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/COLLECTIVE-DESTRUCTION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "集体破坏形式检查",
+        "label_en": "Collective-destruction formal checks",
+        "path": "experiments/market-generativity/meta-attractor/collective-verification.json"
+      },
+      {
+        "label_zh": "本会话原话",
+        "label_en": "Session directive",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-collective-destructive-attractors.md"
+      },
+      {
+        "label_zh": "承载者、探测与修复",
+        "label_en": "Carriers, diagnosis and repair",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-CARRIER-DIAGNOSIS.md"
+      },
+      {
+        "label_zh": "接续Lean实查",
+        "label_en": "Continuation Lean verification",
+        "path": "experiments/market-generativity/meta-attractor/carrier-verification.json"
+      },
+      {
+        "label_zh": "人口机制与依赖",
+        "label_en": "Population mechanism and dependencies",
+        "path": "experiments/market-generativity/meta-attractor/POPULATION-README.md"
+      },
+      {
+        "label_zh": "人口接续Lean实查",
+        "label_en": "Population continuation Lean checks",
+        "path": "experiments/market-generativity/meta-attractor/population-verification.json"
+      },
+      {
+        "label_zh": "分配与分界计算",
+        "label_en": "Allocation and boundary computations",
+        "path": "experiments/market-generativity/meta-attractor/population-experiment.json"
+      },
+      {
+        "label_zh": "选择与纠正的再生",
+        "label_en": "Reproduction of selection and correction",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md"
+      },
+      {
+        "label_zh": "再生网络实查",
+        "label_en": "Reproduction-network verification",
+        "path": "experiments/market-generativity/meta-attractor/reproduction-verification.json"
+      },
+      {
+        "label_zh": "判准取得与推论界限",
+        "label_en": "Acquired criterion and inference wall",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-ADMISSION.md"
+      },
+      {
+        "label_zh": "准入学习实查",
+        "label_en": "Admission-learning verification",
+        "path": "experiments/market-generativity/meta-attractor/admission-verification.json"
+      },
+      {
+        "label_zh": "回应能力机制与依赖",
+        "label_en": "Response mechanism and assumptions",
+        "path": "experiments/market-generativity/meta-attractor/RESPONSE-README.md"
+      },
+      {
+        "label_zh": "回应能力Lean实查",
+        "label_en": "Response-capacity Lean checks",
+        "path": "experiments/market-generativity/meta-attractor/response-verification.json"
+      },
+      {
+        "label_zh": "回应与恢复有限检查",
+        "label_en": "Response and recovery finite checks",
+        "path": "experiments/market-generativity/meta-attractor/response-experiment.json"
+      },
+      {
+        "label_zh": "检验关系改组",
+        "label_en": "Reorganizing testing relations",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-TESTING.md"
+      },
+      {
+        "label_zh": "检验改组实查",
+        "label_en": "Testing reorganization verification",
+        "path": "experiments/market-generativity/meta-attractor/testing-verification.json"
+      },
+      {
+        "label_zh": "纠正依存机制",
+        "label_en": "Correction-dependence mechanism",
+        "path": "experiments/market-generativity/meta-attractor/CORRECTION-DEPENDENCE-README.md"
+      },
+      {
+        "label_zh": "纠正依存Lean实查",
+        "label_en": "Correction-dependence Lean checks",
+        "path": "experiments/market-generativity/meta-attractor/correction-dependence-verification.json"
+      },
+      {
+        "label_zh": "退出与共同支持计算",
+        "label_en": "Exit and shared-support computations",
+        "path": "experiments/market-generativity/meta-attractor/correction-dependence-experiment.json"
+      },
+      {
+        "label_zh": "干预发现与覆盖界限",
+        "label_en": "Intervention discovery and coverage limit",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-DISCOVERY.md"
+      },
+      {
+        "label_zh": "干预发现实查",
+        "label_en": "Intervention-discovery verification",
+        "path": "experiments/market-generativity/meta-attractor/discovery-verification.json"
+      }
+    ]
+  },
+  "owned_prefixes": {
+    "scope_zh": "原47／65、承载者40／69、再生58／107、判准34／56、检验改组43／87各轮定理／审计保留。干预发现另增43项 Lean 定理／87项审计：以付费中断、实际共同失去支承及恢复取得未知依存划分，接通准入、重测与实际回应并保留支承。所有可用局部及组合测试仍可遗漏上游共同原因；干预覆盖、效果忠实、脉冲与故障对应及回退供给仍为前提。既有检验改组与可失实见证结果直接复用，不宣称无限自证、整体理论完成或独立验收。1,024项网络探索不计作证明。",
+    "scope_en": "Earlier theorem/audit packages 47/65, carrier 40/69, reproduction 58/107, admission 34/56 and testing reorganization 43/87 retain their scopes. Effect-based discovery separately adds 43 theorems/87 audits: funded interruption, joint-outage observation and restoration acquire an unknown dependency partition and join admission, retesting and actual supported response. All available local and combined tests can still miss an upstream common cause. Intervention coverage, effect fidelity, pulse/fault correspondence and fallback supply remain premises. Completed reconfiguration and fallible-witness results are reused; no unrestricted self-certification, whole-theory completion or independent acceptance. The 1,024 network explorations are not proofs."
+  },
+  "preserved_concurrent_suffixes": {
+    "scope_zh": " 集体破坏第一构造另有32项新定理／41项审计，检查两位置阶段最优化、正且可增长吞吐下的有限到达、精确盆地及严格保护；平局失败与无法自动恢复保留。接续新增71项定理／100项审计，接通有限人口替换、内部筹资、恢复／耗尽精确分界及材料约束下的核心接续；恢复前归零、分流与缺件失败保留。到墙范围是实际征收、证据、权限与承诺的形成和维护，未宣称普遍收敛或经验对应。 新的普遍连接与当前社会诊断仍为候选，已有证明不冒充指数复杂性或必然崩溃的证明。 回应接续新增46项定理／53项审计，涵盖明确指数需求／线性回应特例和所有可负担当期留存支持最优策略的失败；认识的实际形成及社会对应仍开放。 Corrigibility 概念整合无新增证明；规范理由、执行协议与局部维持不构成完整解决。 再增38项定理／61项审计：服从下的依存固化、原任务全部最优方案的损害、受约束的有代价纠正与共同退出分界；动机、真实负担与正当权限仍须解释。",
+    "scope_en": " A separate first collective-destruction construction adds 32 theorems / 41 audits for two-position stage optimization, finite arrival under positive and possibly growing throughput, an exact basin and strict protection, retaining tie failure and absent automatic recovery. The continuation adds 71 theorems / 100 audits for bounded population replacement, internally financed correction, exact recovery/destruction boundaries and material-guarded core histories. Interim loss, diversion and missing-parts failures remain. The wall is formation and preservation of actual collection, evidence, authority and commitments; universal convergence and empirical correspondence are not established. The broader implication and diagnosis of current society remain hypotheses; existing proofs establish neither exponential societal complexity nor inevitable collapse. The response continuation adds 46 theorems / 53 audits, including a specified exponential-demand/linear-response case and failure of all affordable immediate-support-optimal policies. Actual cognitive realization and societal correspondence remain open. The conceptual corrigibility integration adds no proof; normative reasons, execution protocols and local maintenance do not constitute a full solution. A further 38 theorems / 61 audits cover entrenchment despite obedience, harmful unrestricted task optima, costly constrained correction and joint exit capacity; motivation, actual burdens and legitimate authority remain explicit obligations."
+  },
+  "owned_links": [
+    {
+      "label_zh": "当前定义",
+      "label_en": "Current definition",
+      "path": "theories/meta-attractor/GENERATIVE-REGIMES.md"
+    },
+    {
+      "label_zh": "整合与完成范围",
+      "label_en": "Integration and scope",
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-INTEGRATION.md"
+    },
+    {
+      "label_zh": "主来源与对手",
+      "label_en": "Primary comparisons",
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-EVIDENCE.md"
+    },
+    {
+      "label_zh": "实质反审",
+      "label_en": "Substantive counterreview",
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REVIEW.md"
+    },
+    {
+      "label_zh": "Lean实查",
+      "label_en": "Lean verification",
+      "path": "experiments/market-generativity/meta-attractor/verification.json"
+    },
+    {
+      "label_zh": "原话与目标",
+      "label_en": "Request and objective",
+      "path": "sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md"
+    },
+    {
+      "label_zh": "承载者、探测与修复",
+      "label_en": "Carriers, diagnosis and repair",
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-CARRIER-DIAGNOSIS.md"
+    },
+    {
+      "label_zh": "接续Lean实查",
+      "label_en": "Continuation Lean verification",
+      "path": "experiments/market-generativity/meta-attractor/carrier-verification.json"
+    },
+    {
+      "label_zh": "选择与纠正的再生",
+      "label_en": "Reproduction of selection and correction",
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md"
+    },
+    {
+      "label_zh": "再生网络实查",
+      "label_en": "Reproduction-network verification",
+      "path": "experiments/market-generativity/meta-attractor/reproduction-verification.json"
+    },
+    {
+      "label_zh": "判准取得与推论界限",
+      "label_en": "Acquired criterion and inference wall",
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-ADMISSION.md"
+    },
+    {
+      "label_zh": "准入学习实查",
+      "label_en": "Admission-learning verification",
+      "path": "experiments/market-generativity/meta-attractor/admission-verification.json"
+    },
+    {
+      "label_zh": "检验关系改组",
+      "label_en": "Reorganizing testing relations",
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-TESTING.md"
+    },
+    {
+      "label_zh": "检验改组实查",
+      "label_en": "Testing reorganization verification",
+      "path": "experiments/market-generativity/meta-attractor/testing-verification.json"
+    },
+    {
+      "label_zh": "干预发现与覆盖界限",
+      "label_en": "Intervention discovery and coverage limit",
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-DISCOVERY.md"
+    },
+    {
+      "label_zh": "干预发现实查",
+      "label_en": "Intervention-discovery verification",
+      "path": "experiments/market-generativity/meta-attractor/discovery-verification.json"
+    }
+  ],
+  "reviewed_owned_sources": [
+    "theories/meta-attractor/GENERATIVE-REGIMES.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-EVIDENCE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REVIEW.md",
+    "experiments/market-generativity/meta-attractor/verification.json",
+    "sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-CARRIER-DIAGNOSIS.md",
+    "experiments/market-generativity/meta-attractor/carrier-verification.json",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md",
+    "experiments/market-generativity/meta-attractor/reproduction-verification.json",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-ADMISSION.md",
+    "experiments/market-generativity/meta-attractor/admission-verification.json",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-TESTING.md",
+    "experiments/market-generativity/meta-attractor/testing-verification.json",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-DISCOVERY.md",
+    "experiments/market-generativity/meta-attractor/discovery-verification.json"
+  ],
+  "owned_discovery": "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-DISCOVERY.md",
+  "other_entries_preserved": 92,
+  "data_before_sha256": "280def2fb614f61a3e335c2686f9a5820dd8799b063276522637f23013c0c310",
+  "data_after_sha256": "314a1bf59ce0909f8bb09316621060370b8d9850a0457b908aa58eda884cac6e",
+  "table_before_sha256": "1afb98b960eb657f90666f99bfeee15919b011d3a69753c2138afe15a5570fbf",
+  "table_after_sha256": "60f64e479b06703949ac530eede0aa8c919f8a42fa55e1ac99a463135a60d9e1",
+  "rendered_row": "| M24 | 元吸引子与选择条件的重建<br>Meta-attractors and reproduction of selection conditions | 活动后果参与重建选择该组织的条件，使其经具体承载者变化仍能接续；区分机制条件、实际边界、动力学接近及可行纠正。 新会话进一步检验精确局部目标执行怎样经制度后果进入共同损失；局部安全与共同执行保护分列。 Ren 后续提出复杂性增长与实际认知／行动能力失配的退化候选；区别需求、回应、损失与修复。 条件接续已证明逐前缀支持与内生回应受损，并保留可负担恢复及需求调整。 可纠正性接续区分实际回应能力与接受目的修订的动机。 纠正依存模型接通退出负担、真实请求、后继配合及共同支持。 | Consequences help reproduce conditions selecting an organization across carrier changes; distinguish mechanism conditions, formed boundaries, dynamical approach and feasible correction. A new session tests how exact local objective fidelity can lead through institutional consequences to collective loss; local safety and joint-execution protection remain distinct. Ren subsequently proposes degeneration through a mismatch between growing complexity and effective cognition/action; demand, response, loss and repair remain distinct. The conditional continuation now proves prefix support and endogenous response impairment, retaining affordable recovery and demand adjustment. The corrigibility assessment distinguishes effective response from willingness to revise ends. Correction dependence connects exit burdens, truthful requests, successor cooperation and shared provision. | 原47／65、承载者40／69、再生58／107、判准34／56、检验改组43／87各轮定理／审计保留。干预发现另增43项 Lean 定理／87项审计：以付费中断、实际共同失去支承及恢复取得未知依存划分，接通准入、重测与实际回应并保留支承。所有可用局部及组合测试仍可遗漏上游共同原因；干预覆盖、效果忠实、脉冲与故障对应及回退供给仍为前提。既有检验改组与可失实见证结果直接复用，不宣称无限自证、整体理论完成或独立验收。1,024项网络探索不计作证明。 集体破坏第一构造另有32项新定理／41项审计，检查两位置阶段最优化、正且可增长吞吐下的有限到达、精确盆地及严格保护；平局失败与无法自动恢复保留。接续新增71项定理／100项审计，接通有限人口替换、内部筹资、恢复／耗尽精确分界及材料约束下的核心接续；恢复前归零、分流与缺件失败保留。到墙范围是实际征收、证据、权限与承诺的形成和维护，未宣称普遍收敛或经验对应。 新的普遍连接与当前社会诊断仍为候选，已有证明不冒充指数复杂性或必然崩溃的证明。 回应接续新增46项定理／53项审计，涵盖明确指数需求／线性回应特例和所有可负担当期留存支持最优策略的失败；认识的实际形成及社会对应仍开放。 Corrigibility 概念整合无新增证明；规范理由、执行协议与局部维持不构成完整解决。 再增38项定理／61项审计：服从下的依存固化、原任务全部最优方案的损害、受约束的有代价纠正与共同退出分界；动机、真实负担与正当权限仍须解释。<br>Earlier theorem/audit packages 47/65, carrier 40/69, reproduction 58/107, admission 34/56 and testing reorganization 43/87 retain their scopes. Effect-based discovery separately adds 43 theorems/87 audits: funded interruption, joint-outage observation and restoration acquire an unknown dependency partition and join admission, retesting and actual supported response. All available local and combined tests can still miss an upstream common cause. Intervention coverage, effect fidelity, pulse/fault correspondence and fallback supply remain premises. Completed reconfiguration and fallible-witness results are reused; no unrestricted self-certification, whole-theory completion or independent acceptance. The 1,024 network explorations are not proofs. A separate first collective-destruction construction adds 32 theorems / 41 audits for two-position stage optimization, finite arrival under positive and possibly growing throughput, an exact basin and strict protection, retaining tie failure and absent automatic recovery. The continuation adds 71 theorems / 100 audits for bounded population replacement, internally financed correction, exact recovery/destruction boundaries and material-guarded core histories. Interim loss, diversion and missing-parts failures remain. The wall is formation and preservation of actual collection, evidence, authority and commitments; universal convergence and empirical correspondence are not established. The broader implication and diagnosis of current society remain hypotheses; existing proofs establish neither exponential societal complexity nor inevitable collapse. The response continuation adds 46 theorems / 53 audits, including a specified exponential-demand/linear-response case and failure of all affordable immediate-support-optimal policies. Actual cognitive realization and societal correspondence remain open. The conceptual corrigibility integration adds no proof; normative reasons, execution protocols and local maintenance do not constitute a full solution. A further 38 theorems / 61 audits cover entrenchment despite obedience, harmful unrestricted task optima, costly constrained correction and joint exit capacity; motivation, actual burdens and legitimate authority remain explicit obligations. | [当前定义 / Current definition](../../meta-attractor/GENERATIVE-REGIMES.md)<br>[整合与完成范围 / Integration and scope](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-INTEGRATION.md)<br>[主来源与对手 / Primary comparisons](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-EVIDENCE.md)<br>[实质反审 / Substantive counterreview](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REVIEW.md)<br>[Lean实查 / Lean verification](../../../experiments/market-generativity/meta-attractor/verification.json)<br>[原话与目标 / Request and objective](../../../sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md)<br>[局部对齐与集体破坏 / Local alignment and collective destruction](../../meta-attractor/COLLECTIVE-DESTRUCTIVE-ATTRACTORS.md)<br>[集体破坏整合与作者反审 / Collective-destruction integration and author counterreview](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COLLECTIVE-DESTRUCTION-INTEGRATION.md)<br>[集体破坏形式检查 / Collective-destruction formal checks](../../../experiments/market-generativity/meta-attractor/collective-verification.json)<br>[本会话原话 / Session directive](../../../sources/15-codex-theory-conversations/2026-10-08-collective-destructive-attractors.md)<br>[承载者、探测与修复 / Carriers, diagnosis and repair](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-CARRIER-DIAGNOSIS.md)<br>[接续Lean实查 / Continuation Lean verification](../../../experiments/market-generativity/meta-attractor/carrier-verification.json)<br>[人口机制与依赖 / Population mechanism and dependencies](../../../experiments/market-generativity/meta-attractor/POPULATION-README.md)<br>[人口接续Lean实查 / Population continuation Lean checks](../../../experiments/market-generativity/meta-attractor/population-verification.json)<br>[分配与分界计算 / Allocation and boundary computations](../../../experiments/market-generativity/meta-attractor/population-experiment.json)<br>[选择与纠正的再生 / Reproduction of selection and correction](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md)<br>[再生网络实查 / Reproduction-network verification](../../../experiments/market-generativity/meta-attractor/reproduction-verification.json)<br>[判准取得与推论界限 / Acquired criterion and inference wall](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-ADMISSION.md)<br>[准入学习实查 / Admission-learning verification](../../../experiments/market-generativity/meta-attractor/admission-verification.json)<br>[回应能力机制与依赖 / Response mechanism and assumptions](../../../experiments/market-generativity/meta-attractor/RESPONSE-README.md)<br>[回应能力Lean实查 / Response-capacity Lean checks](../../../experiments/market-generativity/meta-attractor/response-verification.json)<br>[回应与恢复有限检查 / Response and recovery finite checks](../../../experiments/market-generativity/meta-attractor/response-experiment.json)<br>[检验关系改组 / Reorganizing testing relations](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-TESTING.md)<br>[检验改组实查 / Testing reorganization verification](../../../experiments/market-generativity/meta-attractor/testing-verification.json)<br>[纠正依存机制 / Correction-dependence mechanism](../../../experiments/market-generativity/meta-attractor/CORRECTION-DEPENDENCE-README.md)<br>[纠正依存Lean实查 / Correction-dependence Lean checks](../../../experiments/market-generativity/meta-attractor/correction-dependence-verification.json)<br>[退出与共同支持计算 / Exit and shared-support computations](../../../experiments/market-generativity/meta-attractor/correction-dependence-experiment.json)<br>[干预发现与覆盖界限 / Intervention discovery and coverage limit](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-DISCOVERY.md)<br>[干预发现实查 / Intervention-discovery verification](../../../experiments/market-generativity/meta-attractor/discovery-verification.json) |",
+  "shared_fragments": [
+    {
+      "path": "RESEARCH.md",
+      "before": "**选择与纠正的相互重建 / Reproduction of selection and correction，2026-10-08。** [新理论接续](_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md)新增58项 Lean 定理／107项审计：由回返量推导维护，连接有材料根据的建立、相位、独立／桥接／共同依存、实际规则修订及操作条件可再生的准入。保留短期材料最大化切断回返、授权薄弱时失败。 [判准取得与推论界限 / Acquired criterion and inference wall](_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-ADMISSION.md)新增34项 Lean 定理／56项审计，把试验、记录、判准改变和实际回返接成同一过程；保留偏差导致检查失能及有限误差修复。/ The preceding continuation reached its wall: recurrence and agreement with selected evidence do not establish adequacy under untried changes. The combined new result is 92 theorems; warranted maintenance of changing evidence/testing relations remains open. The parallel population results retain full credit. **Further continuation / 再续：** [检验关系改组 / Reorganizing testing](_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-TESTING.md)再增43项 Lean 定理／87项审计，连接实际依存读取、先建后测的替换、回返资助反复修订及实际回应；保留隐藏共同原因导致错误接纳。/ The previous wall is advanced under explicit causal-inspection and fault-coverage premises. Warrant for that coverage and changes outside the protocol remain open.",
+      "insertion": "**元吸引子的检验与发现 / Meta-attractor testing and discovery，2026-10-08。** [再生 / Reproduction](_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md)（58项定理／107项审计）、[判准取得 / Acquired admission](_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-ADMISSION.md)（34／56）及[检验改组 / Testing reorganization](_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-TESTING.md)（43／87）保留原范围。[最新干预发现 / Latest intervention-based discovery](_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-DISCOVERY.md)另增43项 Lean 定理／87项审计：由实际共同失去支承取得未知依存划分，把付费调查、记录、重测与实际回应接通。/ The new result replaces direct root reads with observed intervention effects under explicit delivery and observation laws. Complete local tests can still miss an upstream common cause; intervention coverage and pulse/fault transfer remain the precise boundary. Parallel population, response and fallible-inspection results remain credited; no whole-theory completion is claimed."
+    },
+    {
+      "path": "theories/meta-attractor/README.md",
+      "before": "**选择与纠正的再生条件 / Reproducing selection and correction，2026-10-08。** [58项新定理／107项审计](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md)连接相互维护、实际建立、相位与耦合、规则修订及授权角色的再生。 [判准取得与推论界限 / Acquired criterion and inference wall](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-ADMISSION.md)新增34项 Lean 定理／56项审计，把试验、记录、判准改变和实际回返接成同一过程；保留偏差导致检查失能及有限误差修复。/ The preceding continuation reached its wall: recurrence and agreement with selected evidence do not establish adequacy under untried changes. The combined new result is 92 theorems; warranted maintenance of changing evidence/testing relations remains open. **Further continuation / 再续：** [检验关系改组 / Reorganizing testing](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-TESTING.md)再增43项 Lean 定理／87项审计，连接实际依存读取、先建后测的替换、回返资助反复修订及实际回应；保留隐藏共同原因导致错误接纳。/ The previous wall is advanced under explicit causal-inspection and fault-coverage premises. Warrant for that coverage and changes outside the protocol remain open.",
+      "insertion": "**元吸引子的检验与发现 / Meta-attractor testing and discovery，2026-10-08。** [再生 / Reproduction](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md)（58项定理／107项审计）、[判准取得 / Acquired admission](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-ADMISSION.md)（34／56）及[检验改组 / Testing reorganization](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-TESTING.md)（43／87）保留原范围。[最新干预发现 / Latest intervention-based discovery](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-DISCOVERY.md)另增43项 Lean 定理／87项审计：由实际共同失去支承取得未知依存划分，把付费调查、记录、重测与实际回应接通。/ The new result replaces direct root reads with observed intervention effects under explicit delivery and observation laws. Complete local tests can still miss an upstream common cause; intervention coverage and pulse/fault transfer remain the precise boundary. Parallel population, response and fallible-inspection results remain credited; no whole-theory completion is claimed."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "before": "**元吸引子的规则再生 / Reproduction of meta-attractor rules，2026-10-08。** [理论与反审](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md)以58项新 Lean 定理／107项审计推导角色相互维护，并实现建立、耦合、规则修订及有条件的准入再生。 [判准取得与推论界限 / Acquired criterion and inference wall](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-ADMISSION.md)新增34项 Lean 定理／56项审计，把试验、记录、判准改变和实际回返接成同一过程；保留偏差导致检查失能及有限误差修复。/ The preceding continuation reached its wall: recurrence and agreement with selected evidence do not establish adequacy under untried changes. The combined new result is 92 theorems; warranted maintenance of changing evidence/testing relations remains open. **Further continuation / 再续：** [检验关系改组 / Reorganizing testing](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-TESTING.md)再增43项 Lean 定理／87项审计，连接实际依存读取、先建后测的替换、回返资助反复修订及实际回应；保留隐藏共同原因导致错误接纳。/ The previous wall is advanced under explicit causal-inspection and fault-coverage premises. Warrant for that coverage and changes outside the protocol remain open.",
+      "insertion": "**元吸引子的检验与发现 / Meta-attractor testing and discovery，2026-10-08。** [再生 / Reproduction](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md)（58项定理／107项审计）、[判准取得 / Acquired admission](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-ADMISSION.md)（34／56）及[检验改组 / Testing reorganization](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-TESTING.md)（43／87）保留原范围。[最新干预发现 / Latest intervention-based discovery](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-DISCOVERY.md)另增43项 Lean 定理／87项审计：由实际共同失去支承取得未知依存划分，把付费调查、记录、重测与实际回应接通。/ The new result replaces direct root reads with observed intervention effects under explicit delivery and observation laws. Complete local tests can still miss an upstream common cause; intervention coverage and pulse/fault transfer remain the precise boundary. Parallel population, response and fallible-inspection results remain credited; no whole-theory completion is claimed."
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "before": "**Meta-attractor rule reproduction / 元吸引子规则再生，2026-10-08。** [New argument and author counterreview](META-ATTRACTOR-REPRODUCTION.md): 58 checked theorems / 107 audits derive maintenance from return flows and connect establishment, phase, coupling, costed revisions and materially supported admission.  [判准取得与推论界限 / Acquired criterion and inference wall](META-ATTRACTOR-ADMISSION.md)新增34项 Lean 定理／56项审计，把试验、记录、判准改变和实际回返接成同一过程；保留偏差导致检查失能及有限误差修复。/ The preceding continuation reached its wall: recurrence and agreement with selected evidence do not establish adequacy under untried changes. The combined new result is 92 theorems; warranted maintenance of changing evidence/testing relations remains open. **Further continuation / 再续：** [检验关系改组 / Reorganizing testing](META-ATTRACTOR-TESTING.md)再增43项 Lean 定理／87项审计，连接实际依存读取、先建后测的替换、回返资助反复修订及实际回应；保留隐藏共同原因导致错误接纳。/ The previous wall is advanced under explicit causal-inspection and fault-coverage premises. Warrant for that coverage and changes outside the protocol remain open.",
+      "insertion": "**元吸引子的检验与发现 / Meta-attractor testing and discovery，2026-10-08。** [再生 / Reproduction](META-ATTRACTOR-REPRODUCTION.md)（58项定理／107项审计）、[判准取得 / Acquired admission](META-ATTRACTOR-ADMISSION.md)（34／56）及[检验改组 / Testing reorganization](META-ATTRACTOR-TESTING.md)（43／87）保留原范围。[最新干预发现 / Latest intervention-based discovery](META-ATTRACTOR-DISCOVERY.md)另增43项 Lean 定理／87项审计：由实际共同失去支承取得未知依存划分，把付费调查、记录、重测与实际回应接通。/ The new result replaces direct root reads with observed intervention effects under explicit delivery and observation laws. Complete local tests can still miss an upstream common cause; intervention coverage and pulse/fault transfer remain the precise boundary. Parallel population, response and fallible-inspection results remain credited; no whole-theory completion is claimed."
+    }
+  ],
+  "pending_shared_reviews": [
+    "RESEARCH.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+    "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+    "theories/shengsheng-buxi-generative-existence/README.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+    "sources/15-codex-theory-conversations/2026-10-08-generative-alignment-priority.md",
+    "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/BASIC-CONFLICT-JUDGMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MARKETS-AND-GENERATIVE-REGIMES.md",
+    "_process/research/2026-10-05-generative-foundation-review/foundation-assessment/MARKET-INTERNET-DEGENERATION.md"
+  ]
+}

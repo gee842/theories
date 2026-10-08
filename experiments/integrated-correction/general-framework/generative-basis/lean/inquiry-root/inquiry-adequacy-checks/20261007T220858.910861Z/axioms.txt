@@ -1,0 +1,13 @@
+'Generative.InquiryAdequacy.Adequate' does not depend on any axioms
+'Generative.InquiryAdequacy.adequate_policy_iff_common_choice' depends on axioms: [Classical.choice]
+'Generative.InquiryAdequacy.recoverable_evidence_preserves_adequacy' does not depend on any axioms
+'Generative.InquiryAdequacy.All' does not depend on any axioms
+'Generative.InquiryAdequacy.Blind' does not depend on any axioms
+'Generative.InquiryAdequacy.Protective' does not depend on any axioms
+'Generative.InquiryAdequacy.Targeted' does not depend on any axioms
+'Generative.InquiryAdequacy.blind_target_not_identifiable' does not depend on any axioms
+'Generative.InquiryAdequacy.protection_without_identification' does not depend on any axioms
+'Generative.InquiryAdequacy.blind_targeted_response_impossible' does not depend on any axioms
+'Generative.InquiryAdequacy.truthful_probe_adequate_iff_timely' does not depend on any axioms
+'Generative.InquiryAdequacy.late_probe_loses_even_common_protection' does not depend on any axioms
+'Generative.InquiryAdequacy.probe_enables_previously_unavailable_targeted_response' does not depend on any axioms

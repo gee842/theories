@@ -1,0 +1,12 @@
+{
+  "retrieved_date": "2026-10-08",
+  "source": "Europe PMC full-text delivery of primary publications; exact returned bytes",
+  "files": [
+    {
+      "file": "watson2016.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5119841/fullTextXML",
+      "bytes": 265830,
+      "sha256": "611a9e60c9f38c70403aed1b22de6e16d1f37dab70757f6ed0159a774c29ebaa"
+    }
+  ]
+}

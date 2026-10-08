@@ -1,0 +1,277 @@
+{
+  "checks_passed": true,
+  "scope": "Original portions, executed-reader receipts, exact selected pixel bindings, local links, unchanged six completion rows and owned C14 render; no global concurrent-source certification.",
+  "prior_original_files_unchanged": 14,
+  "original_range_bodies": 165,
+  "preserved_range_bytes": 27543801,
+  "directory_entries": 4383,
+  "common_timestamps": 388,
+  "selected_image_records": 114,
+  "selected_complete_frames": 2,
+  "selected_pixels_compared": 12152832,
+  "local_links_checked": 58,
+  "links": [
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/README.md",
+      "reference": "../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MICROSCOPY-CORRESPONDENCE-INTEGRATION.md"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/README.md",
+      "reference": "../../../../../../sources/evolutionary-selection/karita-2026/microscopy-metadata/README.md"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/README.md",
+      "reference": "verification.json"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/README.md",
+      "reference": "frame-verification.json"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/README.md",
+      "reference": "selected-fields.png"
+    },
+    {
+      "document": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/README.md",
+      "reference": "../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MICROSCOPY-CORRESPONDENCE-CHECKS.json"
+    },
+    {
+      "document": "sources/evolutionary-selection/karita-2026/microscopy-metadata/README.md",
+      "reference": "../README.md"
+    },
+    {
+      "document": "sources/evolutionary-selection/karita-2026/microscopy-metadata/README.md",
+      "reference": "../bioimage-file-list.json"
+    },
+    {
+      "document": "sources/evolutionary-selection/karita-2026/microscopy-metadata/README.md",
+      "reference": "../bioimage-S-BIAD2117.json"
+    },
+    {
+      "document": "sources/evolutionary-selection/karita-2026/microscopy-metadata/README.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/README.md"
+    },
+    {
+      "document": "sources/evolutionary-selection/karita-2026/microscopy-metadata/README.md",
+      "reference": "../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MICROSCOPY-CORRESPONDENCE-INTEGRATION.md"
+    },
+    {
+      "document": "sources/evolutionary-selection/karita-2026/README.md",
+      "reference": "manifest.json"
+    },
+    {
+      "document": "sources/evolutionary-selection/karita-2026/README.md",
+      "reference": "Pellicle_success.xlsx"
+    },
+    {
+      "document": "sources/evolutionary-selection/karita-2026/README.md",
+      "reference": "Collapsing_colony_size.xlsx"
+    },
+    {
+      "document": "sources/evolutionary-selection/karita-2026/README.md",
+      "reference": "Surface_density_data.xlsx"
+    },
+    {
+      "document": "sources/evolutionary-selection/karita-2026/README.md",
+      "reference": "4state-model.ipynb"
+    },
+    {
+      "document": "sources/evolutionary-selection/karita-2026/README.md",
+      "reference": "Spatial_Model_LBOX500.c"
+    },
+    {
+      "document": "sources/evolutionary-selection/karita-2026/README.md",
+      "reference": "input.txt"
+    },
+    {
+      "document": "sources/evolutionary-selection/karita-2026/README.md",
+      "reference": "supplement.pdf"
+    },
+    {
+      "document": "sources/evolutionary-selection/karita-2026/README.md",
+      "reference": "microscopy-metadata/README.md"
+    },
+    {
+      "document": "sources/evolutionary-selection/karita-2026/README.md",
+      "reference": "../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/contextual-establishment/README.md"
+    },
+    {
+      "document": "sources/evolutionary-selection/karita-2026/README.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../sources/15-codex-theory-conversations/2026-10-08-the-theory-of-evolution-goal.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "NONDUAL-METHOD.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "GENERATIVE-SELECTION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "LIANGZHI-EVOLUTION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELECTION-RECURRENCE-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-ASSOCIATION-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ECOLOGICAL-SELECTION-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PACKING-FRAGMENTATION-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SETTLING-CORRESPONDENCE-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/AGGREGATION-SELECTION-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LINEAGE-CONTINUATION-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LINEAGE-FORECAST-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-TRANSFER-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-CONDITIONS-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-HISTORY-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "EVOLUTIONARY-ORGANIZATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTIONARY-ORGANIZATION-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MICROSCOPY-CORRESPONDENCE-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "NEW-POSSIBILITIES.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "PRACTICAL-JUDGMENT.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELECTION-RECURRENCE-INTEGRATION.md#comparison-and-primary-evidence"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-COMPARATIVE-DIRECTION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MICROSCOPY-CORRESPONDENCE-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MICROSCOPY-CORRESPONDENCE-INTEGRATION.md",
+      "reference": "../../../../sources/evolutionary-selection/karita-2026/microscopy-metadata/README.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MICROSCOPY-CORRESPONDENCE-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/README.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MICROSCOPY-CORRESPONDENCE-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/frame-verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MICROSCOPY-CORRESPONDENCE-INTEGRATION.md",
+      "reference": "EVOLUTIONARY-ORGANIZATION-INTEGRATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md",
+      "reference": "../../../../sources/evolutionary-selection/karita-2026/README.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md",
+      "reference": "MAT-HISTORY-INTEGRATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md",
+      "reference": "DEVELOPMENTAL-TRANSFER-INTEGRATION.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SurfaceSelection.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/surface-selection-verification/verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/contextual-establishment/README.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md",
+      "reference": "MICROSCOPY-CORRESPONDENCE-INTEGRATION.md"
+    }
+  ],
+  "six_completion_rows_unchanged": true,
+  "scoped_C14_valid": true,
+  "other_entries_preserved_in_update": 86,
+  "unrelated_review_obligations": {
+    "modified_sources": 8,
+    "missing_sources": 0,
+    "new_pages": 2,
+    "removed_pages": 0
+  },
+  "bound_files": {
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/README.md": "6084fef16f951e1dd844191989bc926a80ed227dfa8f931d27f6a3ffaf420eeb",
+    "sources/evolutionary-selection/karita-2026/microscopy-metadata/README.md": "08ecc80a39611fa0b71deea1ce3cd767d347308eb7a0e0b75c0a0abb6ddf9867",
+    "sources/evolutionary-selection/karita-2026/README.md": "edf2255d300f8340c2d6c4a053c100f7ab64050328d78967a7125839f40a67ae",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md": "e48e9db0fb3a00bc902cbc73aa77030144aa32bbbcb81461f0d80e1028e6d4aa",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MICROSCOPY-CORRESPONDENCE-INTEGRATION.md": "f83ecd791e2ffbc9ac6f3644439b117616d5ef3371a602a7991c1ebda66c7461",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md": "5903423d2593d9d9d404612f6a0617a19f9347d99bbab5b75c0472383120a63d",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/inspect_czi.py": "f43dc7ef4d9cfeb87f525ba67c06dc59ee3c8a3287b23e947a3ca01c21f052c5",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/check_reader.py": "7587ba65cb65dca1f1273cf83b2af06208564dcdbcfbba19ba3b8ae58fdaa14a",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/inspect_frames.py": "799ab9f89fbd52eb045dd289cf527fd14910d3e71e97b842d31c01b53300811d",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/check_record.py": "5812c640be2c34e7490eb43129398b73b08446f463022d43f089f2141110343f",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/verification.json": "3a28d3fa21a521305fb436615ef303d108279bcabe7eb1e9cdae891599401f28",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/frame-verification.json": "73f2df023f5437183029c51947bf93427d20d5e13906b21d51023ec260f63ee5",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/selected-fields.png": "685e861dafc8be5029c4adfb0a488b5ee67b5f1494d181477e130f1e1990f7a4",
+    "sources/evolutionary-selection/karita-2026/manifest.json": "3c31045c476235cb23e09768d24fdbb35ca5364efe4af1c3c584b9b124979084",
+    "sources/evolutionary-selection/karita-2026/microscopy-metadata/format-sources/manifest.json": "3152170da388fe6734a467f7e5e9bc4f9a18cea5c143622272706233b49e9a59",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/MICROSCOPY-CORRESPONDENCE-INDEX-EDITS.json": "98af7d0689adcb4fd32f1acc740c6d937b6011d951d6242451959885bee37324"
+  },
+  "new_lean_theorems": 0,
+  "independent_agent_review_claimed": false,
+  "full_theory_complete": false
+}

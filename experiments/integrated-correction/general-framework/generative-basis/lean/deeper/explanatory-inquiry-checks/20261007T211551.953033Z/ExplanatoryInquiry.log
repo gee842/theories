@@ -1,0 +1,525 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:10:13: error: unexpected token ':='; expected command
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:32:39: error(lean.unknownIdentifier): Unknown identifier `KC.signal`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:49:91: error: unexpected identifier; expected '}'
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:97:14: error(lean.unknownIdentifier): Unknown identifier `KC.signal`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:97:44: error(lean.unknownIdentifier): Unknown identifier `KC.reference`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:98:19: error(lean.unknownIdentifier): Unknown identifier `KC.calibrated_pair_exact`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:100:8: warning: declaration uses `sorry`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:101:39: warning: unused variable `hr`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:102:35: warning: unused variable `er`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:126:2: error: Invalid alternative name `gate`: There are no unhandled alternatives
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:129:2: error: Invalid alternative name `reverseChannel`: There are no unhandled alternatives
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:112:2: error: Too many variable names provided at alternative `prepare`: 3 provided, but 2 expected
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:113:2: error: Too many variable names provided at alternative `readTarget`: 3 provided, but 2 expected
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:115:2: error: Too many variable names provided at alternative `readReference`: 5 provided, but 4 expected
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:116:35: error(lean.unknownIdentifier): Unknown identifier `hr`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:119:2: error: Too many variable names provided at alternative `judge`: 9 provided, but 8 expected
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:120:36: error: Application type mismatch: The argument
+  ht
+has type
+  s✝.referenceRead = some target
+but is expected to have type
+  s✝.targetRead = some ?m.180
+in the application
+  fresh_pair_decodes h ht
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:120:45: error(lean.unknownIdentifier): Unknown identifier `er`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:167:16: error(lean.unknownIdentifier): Unknown constant `Generative.Process.step.gate`
+
+Note: Inferred this name from the expected resulting type of `.gate`:
+  inquiry.step
+    { gates := { leftOpen := true, rightOpen := true, support := c, passed := false }, reversed := reversed,
+      epoch := epoch, standard := standard, targetRead := target, referenceRead := reference, judgment := judgment,
+      fuel := fuel }
+    (Event.gate Event.pass) ?m.98
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:167:16: error(lean.unknownIdentifier): Unknown constant `Generative.ExplanatoryInquiry.KC.Step.gate`
+
+Note: Inferred this name from the expected resulting type of `.gate`:
+  inquiry.step
+    { gates := { leftOpen := true, rightOpen := true, support := c, passed := false }, reversed := reversed,
+      epoch := epoch, standard := standard, targetRead := target, referenceRead := reference, judgment := judgment,
+      fuel := fuel }
+    (Event.gate Event.pass) ?m.98
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:173:2: error: Too many variable names provided at alternative `readReference`: 5 provided, but 4 expected
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:173:39: error(lean.unknownIdentifier): Unknown identifier `hr`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:173:33: error: Tactic `cases` failed: major premise type is not an inductive type
+  ?m.56
+
+Explanation: the `cases` tactic is for constructor-based reasoning as well as for applying custom cases principles with a 'using' clause or a registered '@[cases_eliminator]' theorem. The above type neither is an inductive type nor has a registered theorem.
+
+case readReference
+g : GateState
+reversed : Bool
+fuel s : Nat
+n : Bool
+v : (initial g reversed fuel).fuel = s + 1
+hf : (initial g reversed fuel).standard = some n
+x✝ : ?m.56
+⊢ False
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:179:2: error: Too many variable names provided at alternative `judge`: 9 provided, but 8 expected
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:184:34: error: unexpected identifier; expected '}'
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:198:50: error: unexpected identifier; expected '}'
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:190:50: error: unsolved goals
+s : State
+n : Nat
+hf : s.fuel = n + 4
+decode : (sorry ^^ sorry) = s.gates.leftOpen
+hp :
+  inquiry.step s Event.prepare
+    { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false, targetRead := s.targetRead,
+      referenceRead := s.referenceRead, judgment := s.judgment, fuel := n + 3 }
+hj :
+  ∀ (n_1 : Nat) (target reference : Receipt),
+    { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false, targetRead := s.targetRead,
+            referenceRead := s.referenceRead, judgment := s.judgment, fuel := n + 1 }.fuel =
+        n_1 + 1 →
+      { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false, targetRead := s.targetRead,
+              referenceRead := s.referenceRead, judgment := s.judgment, fuel := n + 1 }.targetRead =
+          some target →
+        { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                fuel := n + 1 }.referenceRead =
+            some reference →
+          target.epoch =
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 1 }.epoch →
+            reference.epoch =
+                { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                    targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                    fuel := n + 1 }.epoch →
+              Step
+                { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment, fuel := n + 1 }
+                Event.judge
+                {
+                  gates :=
+                    { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 1 }.gates,
+                  reversed :=
+                    { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 1 }.reversed,
+                  epoch :=
+                    { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 1 }.epoch,
+                  standard :=
+                    { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 1 }.standard,
+                  targetRead :=
+                    { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 1 }.targetRead,
+                  referenceRead :=
+                    { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 1 }.referenceRead,
+                  judgment :=
+                    some
+                      {
+                        epoch :=
+                          { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                              targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                              fuel := n + 1 }.epoch,
+                        bit := target.bit ^^ reference.bit },
+                  fuel :=
+                    { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 1 }.fuel }
+⊢ Trace { step := Step }
+    {
+      gates :=
+        {
+            gates :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.gates,
+            reversed :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.reversed,
+            epoch :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.epoch,
+            standard :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.standard,
+            targetRead :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.targetRead,
+            referenceRead :=
+              some
+                {
+                  epoch :=
+                    { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 3 }.epoch,
+                  bit :=
+                    referenceSignal
+                      { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 3 }
+                      false },
+            judgment :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.judgment,
+            fuel := n + 2 }.gates,
+      reversed :=
+        {
+            gates :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.gates,
+            reversed :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.reversed,
+            epoch :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.epoch,
+            standard :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.standard,
+            targetRead :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.targetRead,
+            referenceRead :=
+              some
+                {
+                  epoch :=
+                    { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 3 }.epoch,
+                  bit :=
+                    referenceSignal
+                      { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 3 }
+                      false },
+            judgment :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.judgment,
+            fuel := n + 2 }.reversed,
+      epoch :=
+        {
+            gates :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.gates,
+            reversed :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.reversed,
+            epoch :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.epoch,
+            standard :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.standard,
+            targetRead :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.targetRead,
+            referenceRead :=
+              some
+                {
+                  epoch :=
+                    { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 3 }.epoch,
+                  bit :=
+                    referenceSignal
+                      { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 3 }
+                      false },
+            judgment :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.judgment,
+            fuel := n + 2 }.epoch,
+      standard :=
+        {
+            gates :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.gates,
+            reversed :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.reversed,
+            epoch :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.epoch,
+            standard :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.standard,
+            targetRead :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.targetRead,
+            referenceRead :=
+              some
+                {
+                  epoch :=
+                    { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 3 }.epoch,
+                  bit :=
+                    referenceSignal
+                      { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 3 }
+                      false },
+            judgment :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.judgment,
+            fuel := n + 2 }.standard,
+      targetRead :=
+        some
+          {
+            epoch :=
+              {
+                  gates :=
+                    { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 3 }.gates,
+                  reversed :=
+                    { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 3 }.reversed,
+                  epoch :=
+                    { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 3 }.epoch,
+                  standard :=
+                    { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 3 }.standard,
+                  targetRead :=
+                    { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 3 }.targetRead,
+                  referenceRead :=
+                    some
+                      {
+                        epoch :=
+                          { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                              targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                              fuel := n + 3 }.epoch,
+                        bit :=
+                          referenceSignal
+                            { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                              targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                              fuel := n + 3 }
+                            false },
+                  judgment :=
+                    { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 3 }.judgment,
+                  fuel := n + 2 }.epoch,
+            bit :=
+              targetSignal
+                {
+                  gates :=
+                    { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 3 }.gates,
+                  reversed :=
+                    { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 3 }.reversed,
+                  epoch :=
+                    { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 3 }.epoch,
+                  standard :=
+                    { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 3 }.standard,
+                  targetRead :=
+                    { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 3 }.targetRead,
+                  referenceRead :=
+                    some
+                      {
+                        epoch :=
+                          { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                              targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                              fuel := n + 3 }.epoch,
+                        bit :=
+                          referenceSignal
+                            { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                              targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                              fuel := n + 3 }
+                            false },
+                  judgment :=
+                    { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 3 }.judgment,
+                  fuel := n + 2 } },
+      referenceRead :=
+        {
+            gates :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.gates,
+            reversed :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.reversed,
+            epoch :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.epoch,
+            standard :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.standard,
+            targetRead :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.targetRead,
+            referenceRead :=
+              some
+                {
+                  epoch :=
+                    { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 3 }.epoch,
+                  bit :=
+                    referenceSignal
+                      { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 3 }
+                      false },
+            judgment :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.judgment,
+            fuel := n + 2 }.referenceRead,
+      judgment :=
+        {
+            gates :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.gates,
+            reversed :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.reversed,
+            epoch :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.epoch,
+            standard :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.standard,
+            targetRead :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.targetRead,
+            referenceRead :=
+              some
+                {
+                  epoch :=
+                    { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 3 }.epoch,
+                  bit :=
+                    referenceSignal
+                      { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                        targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                        fuel := n + 3 }
+                      false },
+            judgment :=
+              { gates := s.gates, reversed := s.reversed, epoch := s.epoch, standard := some false,
+                  targetRead := s.targetRead, referenceRead := s.referenceRead, judgment := s.judgment,
+                  fuel := n + 3 }.judgment,
+            fuel := n + 2 }.judgment,
+      fuel := n + 1 }
+    [Event.judge] (acquired s n)
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:206:0: error: Not a definitional equality: the left-hand side
+  (acquired s n).judgment
+is not definitionally equal to the right-hand side
+  some { epoch := s.epoch, bit := s.gates.leftOpen }
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:207:66: error: Type mismatch
+  rfl
+has type
+  ?m.5 = ?m.5
+but is expected to have type
+  (acquired s n).judgment = some { epoch := s.epoch, bit := s.gates.leftOpen }
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:224:2: error: Invalid alternative name `gate`: There are no unhandled alternatives
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:225:2: error: Invalid alternative name `reverseChannel`: There are no unhandled alternatives
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:220:2: error: Too many variable names provided at alternative `prepare`: 3 provided, but 2 expected
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:220:28: error(lean.unknownIdentifier): Unknown identifier `hf.symm`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:221:2: error: Too many variable names provided at alternative `readTarget`: 3 provided, but 2 expected
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:221:31: error(lean.unknownIdentifier): Unknown identifier `hf.symm`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:222:2: error: Too many variable names provided at alternative `readReference`: 5 provided, but 4 expected
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:222:33: error: Type mismatch
+  Eq.symm hf
+has type
+  some n = s✝.standard
+but is expected to have type
+  { gates := s✝.gates, reversed := s✝.reversed, epoch := s✝.epoch, standard := s✝.standard, targetRead := s✝.targetRead,
+          referenceRead := some { epoch := s✝.epoch, bit := referenceSignal s✝ n }, judgment := s✝.judgment,
+          fuel := s }.fuel +
+      eventCost Event.readReference =
+    s✝.fuel
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:223:2: error: Too many variable names provided at alternative `judge`: 9 provided, but 8 expected
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:223:38: error: Type mismatch
+  Eq.symm hf
+has type
+  some n = s✝.targetRead
+but is expected to have type
+  { gates := s✝.gates, reversed := s✝.reversed, epoch := s✝.epoch, standard := s✝.standard, targetRead := s✝.targetRead,
+          referenceRead := s✝.referenceRead, judgment := some { epoch := s✝.epoch, bit := n.bit ^^ tr.bit },
+          fuel := s✝.fuel }.fuel +
+      eventCost Event.judge =
+    s✝.fuel
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:252:0: error: Invalid name after `end`: Expected `ExplanatoryInquiry.KC`, but found `Generative.ExplanatoryInquiry`
+
+Hint: If you meant to end the outer scope(s) `Generative.ExplanatoryInquiry`, you must end all the intervening scopes `Generative.ExplanatoryInquiry.KC`:
+  end Generative.ExplanatoryInquiry.̲K̲C̲
+'Generative.KnowledgeCorrespondence.calibrated_pair_exact' does not depend on any axioms
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:256:14: error(lean.unknownIdentifier): Unknown constant `Generative.ExplanatoryInquiry.empty_record_valid`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:257:14: error(lean.unknownIdentifier): Unknown constant `Generative.ExplanatoryInquiry.new_record_valid`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:258:14: error(lean.unknownIdentifier): Unknown constant `Generative.ExplanatoryInquiry.revision_invalidates_old`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:259:14: error(lean.unknownIdentifier): Unknown constant `Generative.ExplanatoryInquiry.standard_is_false`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:260:14: error(lean.unknownIdentifier): Unknown constant `Generative.ExplanatoryInquiry.inherited_pair_decode`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:261:14: error(lean.unknownIdentifier): Unknown constant `Generative.ExplanatoryInquiry.fresh_pair_decodes`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:262:14: error(lean.unknownIdentifier): Unknown constant `Generative.ExplanatoryInquiry.valid_step`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:263:14: error(lean.unknownIdentifier): Unknown constant `Generative.ExplanatoryInquiry.valid_trace`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:264:14: error(lean.unknownIdentifier): Unknown constant `Generative.ExplanatoryInquiry.initial_valid`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:265:14: error(lean.unknownIdentifier): Unknown constant `Generative.ExplanatoryInquiry.current_judgment_correct`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:266:14: error(lean.unknownIdentifier): Unknown constant `Generative.ExplanatoryInquiry.current_negative_is_evidence`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:267:14: error(lean.unknownIdentifier): Unknown constant `Generative.ExplanatoryInquiry.current_positive_allows_pass`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:268:14: error(lean.unknownIdentifier): Unknown constant `Generative.ExplanatoryInquiry.no_reference_before_preparation`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:269:14: error(lean.unknownIdentifier): Unknown constant `Generative.ExplanatoryInquiry.no_judgment_without_readings`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:270:14: error(lean.unknownIdentifier): Unknown constant `Generative.ExplanatoryInquiry.acquisition_realized`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:271:14: error(lean.unknownIdentifier): Unknown constant `Generative.ExplanatoryInquiry.acquired_record_exact`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:272:14: error(lean.unknownIdentifier): Unknown constant `Generative.ExplanatoryInquiry.fuel_step`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:273:14: error(lean.unknownIdentifier): Unknown constant `Generative.ExplanatoryInquiry.fuel_trace`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:274:14: error(lean.unknownIdentifier): Unknown constant `Generative.ExplanatoryInquiry.acquisition_requires_four`
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-inquiry-jlnkwl01/ExplanatoryInquiry.lean:275:14: error(lean.unknownIdentifier): Unknown constant `Generative.ExplanatoryInquiry.insufficient_fuel_blocks_acquisition`

@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "implementation": "Separate 80-digit Decimal arithmetic, raw-source parsing, calibration order statistics and all interval/summary classifications; same agent, not independent-agent review.",
+  "checked_intervals": 12440,
+  "summary_groups": 60,
+  "rate_checks": 12,
+  "result_sha256": "e8a02782529c9c20c2178155c330c183eb756a43baa1253fd9840ad5945e96d7",
+  "checker_sha256": "a9ba2bc047205f4de89bb418b58f55deb056c981da76bd79a79d1359431554a6",
+  "intervals_sha256": "1a7124125121f3d819be20fc8931965ec2ad5aa25d5e5c4e44b3e349187de5a5"
+}

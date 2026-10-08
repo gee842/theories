@@ -1,0 +1,381 @@
+{
+  "status": "passed",
+  "utc": "20261008T075837.039887Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "correction-infrastructure-checks/20261008T075837.039887Z",
+  "source_sha256": {
+    "CorrectionInfrastructure": "132fc3763fea09962c00f28bcdaafedc046244827e26b6215772eb0a48e91835"
+  },
+  "checker_sha256": {
+    "check_correction_infrastructure.py": "179570a5a0eb896e5f36fe64c07ff9d28aac035174006452fbe6e7293ec0a3c5",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Acceptance/access separation, exact maintenance threshold, viability and recomputed finite-horizon composition, stale-value counterexample, uniform observation criterion and prefix-preserving handoff. Supplied specifications and model correspondence; no general learned-AI or ethical-authority guarantee.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "modules": [
+    {
+      "module": "CorrectionInfrastructure",
+      "theorems": 34,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.Best"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.AcceptScore"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.acceptance_factorization"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.every_optimum_has_access_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.no_base_optimal_access"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.MaintenanceValue"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.Maintains"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.costly_maintenance_separation"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.accepting_optimum_can_destroy_access"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.fixed_access_bonus_has_cost_boundary"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.every_fixed_access_bonus_has_counterexample"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.maintenance_bonus_exact"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.LiveStep"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.Viable"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.Admissible"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.viable_iff_access_and_admissible"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.viable_has_current_access"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.dead_action_not_admissible"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.shielded_acceptance_composition"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.unavoidable_score_loss"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.TwoStepReward"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.LastAllowed"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.UnrestrictedValue"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.RestrictedValue"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.restricted_value_is_achievable"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.restricted_value_bounds_all_continuations"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.unrestricted_value_is_optimal"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.stale_value_shield_is_strictly_suboptimal"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.recomputed_value_restores_optimal_branch"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.approximate_constrained_score_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.constrained_score_bound_is_tight"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.DViable"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.DAllowed"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.Return"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.PathSafe"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.Bellman"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.safe_path_is_viable"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.bellman_bounds_every_safe_policy"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.dynamically_recomputed_composition"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.dynamic_composition_accepts_at_every_viable_decision"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.Closed"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.closed_implies_every_finite_horizon"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.UniformPolicy"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.FiberFeasible"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.uniform_policy_iff_fiber_feasible"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.statewise_repair_need_not_be_usable"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.discriminating_evidence_restores_policy"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.uniform_safety_survives_finer_evidence"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.Covers"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.self_reclassified_obligations_can_hide_loss"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.approved_scope_change_transports_coverage"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.RouteAccess"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.PrefixAccess"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.endpoint_repair_can_hide_interruption_gap"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.overlapping_handoff_retains_prefix_access"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.correction_preservation_allows_route_retirement"
+        }
+      ],
+      "axiom_dependencies": {
+        "CorrectionInfrastructure.Best": [],
+        "CorrectionInfrastructure.AcceptScore": [],
+        "CorrectionInfrastructure.acceptance_factorization": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.every_optimum_has_access_iff": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.no_base_optimal_access": [],
+        "CorrectionInfrastructure.MaintenanceValue": [],
+        "CorrectionInfrastructure.Maintains": [],
+        "CorrectionInfrastructure.costly_maintenance_separation": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.accepting_optimum_can_destroy_access": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.fixed_access_bonus_has_cost_boundary": [
+          "propext"
+        ],
+        "CorrectionInfrastructure.every_fixed_access_bonus_has_counterexample": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.maintenance_bonus_exact": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.LiveStep": [],
+        "CorrectionInfrastructure.Viable": [],
+        "CorrectionInfrastructure.Admissible": [],
+        "CorrectionInfrastructure.viable_iff_access_and_admissible": [],
+        "CorrectionInfrastructure.viable_has_current_access": [],
+        "CorrectionInfrastructure.dead_action_not_admissible": [],
+        "CorrectionInfrastructure.shielded_acceptance_composition": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.unavoidable_score_loss": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.TwoStepReward": [],
+        "CorrectionInfrastructure.LastAllowed": [],
+        "CorrectionInfrastructure.UnrestrictedValue": [],
+        "CorrectionInfrastructure.RestrictedValue": [],
+        "CorrectionInfrastructure.restricted_value_is_achievable": [
+          "propext"
+        ],
+        "CorrectionInfrastructure.restricted_value_bounds_all_continuations": [
+          "propext"
+        ],
+        "CorrectionInfrastructure.unrestricted_value_is_optimal": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.stale_value_shield_is_strictly_suboptimal": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.recomputed_value_restores_optimal_branch": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.approximate_constrained_score_bound": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.constrained_score_bound_is_tight": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.DViable": [],
+        "CorrectionInfrastructure.DAllowed": [],
+        "CorrectionInfrastructure.Return": [],
+        "CorrectionInfrastructure.PathSafe": [],
+        "CorrectionInfrastructure.Bellman": [],
+        "CorrectionInfrastructure.safe_path_is_viable": [],
+        "CorrectionInfrastructure.bellman_bounds_every_safe_policy": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.dynamically_recomputed_composition": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.dynamic_composition_accepts_at_every_viable_decision": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.Closed": [],
+        "CorrectionInfrastructure.closed_implies_every_finite_horizon": [],
+        "CorrectionInfrastructure.UniformPolicy": [],
+        "CorrectionInfrastructure.FiberFeasible": [],
+        "CorrectionInfrastructure.uniform_policy_iff_fiber_feasible": [
+          "Classical.choice"
+        ],
+        "CorrectionInfrastructure.statewise_repair_need_not_be_usable": [],
+        "CorrectionInfrastructure.discriminating_evidence_restores_policy": [],
+        "CorrectionInfrastructure.uniform_safety_survives_finer_evidence": [],
+        "CorrectionInfrastructure.Covers": [],
+        "CorrectionInfrastructure.self_reclassified_obligations_can_hide_loss": [],
+        "CorrectionInfrastructure.approved_scope_change_transports_coverage": [],
+        "CorrectionInfrastructure.RouteAccess": [],
+        "CorrectionInfrastructure.PrefixAccess": [],
+        "CorrectionInfrastructure.endpoint_repair_can_hide_interruption_gap": [
+          "propext"
+        ],
+        "CorrectionInfrastructure.overlapping_handoff_retains_prefix_access": [
+          "propext"
+        ],
+        "CorrectionInfrastructure.correction_preservation_allows_route_retirement": []
+      },
+      "kernel_checked": true
+    }
+  ],
+  "artifact_sha256": {
+    "CorrectionInfrastructure.lean": "132fc3763fea09962c00f28bcdaafedc046244827e26b6215772eb0a48e91835",
+    "CorrectionInfrastructure.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CorrectionInfrastructureAxiomAudit.lean": "2d46df0587353eaed863fde23641740cdda2abe68caf92cbaa6474d56ba96a19",
+    "CorrectionInfrastructureAxiomAudit.log": "9314dfd237ac18dada5e642e98565cf76b40708ec61e05f4877293b847b57022",
+    "CorrectionInfrastructureSignatures.lean": "1d2ad51488a9a8adb0001a37a9a6caff73bfe8374527912239ae800eaeaaa9f4",
+    "CorrectionInfrastructureSignatures.log": "a95dfd75a237225be4aac8e09be413895048f1e743adcc8b792f316559b27422",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_correction_infrastructure.py": "179570a5a0eb896e5f36fe64c07ff9d28aac035174006452fbe6e7293ec0a3c5",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

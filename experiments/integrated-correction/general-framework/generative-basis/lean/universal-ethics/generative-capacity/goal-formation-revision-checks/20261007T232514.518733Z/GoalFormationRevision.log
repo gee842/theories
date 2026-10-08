@@ -1,0 +1,25 @@
+GoalFormationRevision.lean:53:26: error: Expected type must not contain free variables
+  attainment Goal.attendance (perform c Practice.attendance) ≤
+    attainment Goal.attendance (perform c (meansFor Goal.attendance))
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+GoalFormationRevision.lean:53:26: error: Expected type must not contain free variables
+  attainment Goal.attendance (perform c Practice.learning) ≤
+    attainment Goal.attendance (perform c (meansFor Goal.attendance))
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+GoalFormationRevision.lean:53:26: error: Expected type must not contain free variables
+  attainment Goal.learning (perform c Practice.attendance) ≤
+    attainment Goal.learning (perform c (meansFor Goal.learning))
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+GoalFormationRevision.lean:53:26: error: Expected type must not contain free variables
+  attainment Goal.learning (perform c Practice.learning) ≤ attainment Goal.learning (perform c (meansFor Goal.learning))
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables
+GoalFormationRevision.lean:58:2: error: Expected type must not contain free variables
+  attainment Goal.attendance (perform c Practice.attendance) >
+      attainment Goal.attendance (perform c Practice.learning) ∧
+    attainment Goal.learning (perform c Practice.learning) > attainment Goal.learning (perform c Practice.attendance)
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables

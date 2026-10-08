@@ -1,0 +1,19 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-enacted-foundation-kmb9xn3a/EnactedFoundation.lean:95:21: error: Application type mismatch: The argument
+  Eq.symm (Nat.add_assoc n as.length 1)
+has type
+  n + (as.length + 1) = n + as.length + 1
+but is expected to have type
+  (s, n + (a :: as).length).snd = Prod.snd ?m.54 + 1
+in the application
+  ⟨?m.60, Eq.symm (Nat.add_assoc n as.length 1)⟩
+'Generative.EnactedFoundation.occurrence_from_enactment' does not depend on any axioms
+'Generative.EnactedFoundation.enacted_denial_excludes_no_occurrence' does not depend on any axioms
+'Generative.EnactedFoundation.positive_count_preserves_enabled' does not depend on any axioms
+'Generative.EnactedFoundation.zero_count_has_no_step' does not depend on any axioms
+'Generative.EnactedFoundation.zero_count_has_no_enabled' does not depend on any axioms
+'Generative.EnactedFoundation.bounded_trace_projects' does not depend on any axioms
+'Generative.EnactedFoundation.bounded_trace_count' does not depend on any axioms
+'Generative.EnactedFoundation.finite_trace_lifts' depends on axioms: [sorryAx]
+'Generative.EnactedFoundation.bounded_trace_iff' depends on axioms: [sorryAx]
+'Generative.EnactedFoundation.finite_trace_has_terminal_replay' depends on axioms: [sorryAx]
+'Generative.EnactedFoundation.bounded_trace_length_le' does not depend on any axioms

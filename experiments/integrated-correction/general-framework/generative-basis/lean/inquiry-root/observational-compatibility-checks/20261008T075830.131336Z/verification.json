@@ -1,0 +1,17 @@
+{
+  "status": "failed",
+  "utc": "20261008T075830.131336Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "observational-compatibility-checks/20261008T075830.131336Z",
+  "source_sha256": {
+    "ObservationalCompatibility": "4ddc64a11f44b0b307f84a4dd59c1f865f7141a301c583ae5dfc9c9b2712daf1"
+  },
+  "checker_sha256": {
+    "check_observational_compatibility.py": "9af3f0bc8431465d03391a8fd29f172ca9ca8f97e4f1bf11155c6aeb6b4f3966",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Compatibility with all profile-expressible rivals is equivalent to coverage of every admissible profile. Invariance is an explicit additional premise for universal truth; finer profiles and one joint realization are distinguished. No definition of science, ethical countermodel, empirical experiment or proof of G0.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "ObservationalCompatibility.lean:88:33: error: invalid `\u25b8` notation, expected result type of cast is \n  true = false\nhowever, the equality \n  same\nof type \n  v = (false, true)\ndoes not contain the expected result type on either the left or the right hand side\n"
+}

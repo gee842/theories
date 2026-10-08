@@ -1,0 +1,560 @@
+{
+  "updated_at_utc": "2026-10-08T10:17:14.167539+00:00",
+  "owned_entry": "M21",
+  "entry_before": {
+    "id": "M21",
+    "title_zh": "知识与生活：相连的哲学候选",
+    "title_en": "Knowing and living: connected philosophical proposal",
+    "claim_zh": "认识、纠正与模型修订构成相连候选。G0下意识分化生的意义，新的生也可有正面意义且不自动产生特定义务。保存已有生活能够要求实际更新；更强争点是超出既有请求与保存目标的新实现。整体改名不能隐去毁损，拒绝福利性创造理由不等于否定全部生成根据。 有条件的照护不独自穷尽生成理由，排除其他正面根据须另有辩护。 完整历史中的混合改善与正当重新分配可导出新的生的正面比较；先后评价须有明确传递。 完整排序不是基本正面意义的新增门槛；新生的正面理由与具体行动要求分别说明。 生的意义不以调节成功或自足为门槛；依存中的生活与局部成功的整体后果分别保留。",
+    "claim_en": "Knowing, correction and model revision form a connected account. Under G0, consciousness differentiates living significance and new living can count positively without assigning a specific duty. Preservation can require renewal; the sharper dispute concerns new realization beyond incumbent claims and preservation targets. Redescription cannot erase destruction, and rejecting a welfare-based creation reason does not reject every generative ground. Conditional care does not independently exhaust formation reasons; excluding a further favorable ground needs its own defense. Whole-history mixed improvement and warranted reallocation yield favorable formation; stage-relative judgments need explicit transport. A complete ordering is not an additional gate for basic positive significance; favorable formation reasons and practical requirements retain distinct grounds. Living significance is not awarded for regulatory success or self-sufficiency; dependent living and the whole consequences of local success remain in view.",
+    "scope_zh": "两个范围问题在G0/J下的完成保留；扩读Frick的接续价值论，新增Finneron-Burns原典检验保存对象的界定，纠正过粗的对手归类。无新定理、实验或独立验收；整套理论必要性、最广组织范围及普遍意识／语义仍未证。继承界面相容8／11、一般相容13／18、模型修订30／72及76次执行、来源26／53、选择性修订16／32与四项统计复核原范围；完成的实践与对齐方向不重开。 新增Aaron原典批评与作者反审，信用既有时间与排序分析；批评限制不等于证明相反公理。 生成序列新增6项Lean定理／13项空依赖审计；有限诊断只检验较弱推论，不证明完整对手或G0。 本轮Chappell与Dorr–Nebel–Zuehl原典检验强化正面论证与实质反审；两个G0回答保持完成，无新定理、编译或实验，普遍必要性仍未证。 Bruckner与Dussault原典及依存反审强化非感知范围候选，不把充分根据误作必要条件；无新证明或普遍必要性结论。",
+    "scope_en": "The two G0/J scope answers remain complete. Extended Frick reading and a new Finneron-Burns comparison sharpen the preservation target and correct an overly broad rival classification. No new theorem, experiment or independent acceptance. Whole-theory necessity, the broadest organizational scope and universal consciousness/semantics remain unproved. Inherited profile compatibility 8/11, general compatibility 13/18, model revision 30/72 and 76 runs, source reliance 26/53, selective revision 16/32 and four-statistic checks retain their scopes; completed practical and alignment arguments are reused. New Aaron primary criticism and author counterreview credit the prior temporal and ordering analyses; criticism of a restriction does not prove the opposite axiom. Formation sequence adds 6 Lean theorems/13 empty dependency audits; the finite diagnostic tests a weaker inference, not a full ethical rival or G0. This round’s Chappell and Dorr–Nebel–Zuehl primary assessments strengthen the affirmative argument and substantive counterreview; the two G0 answers remain complete, with no new theorem, compilation or experiment and no universal-necessity proof. Bruckner and Dussault primary assessments and the dependence counterreview strengthen the nonsentient-scope candidate without confusing sufficient grounds with necessary conditions; no new proof or universal-necessity conclusion.",
+    "links": [
+      {
+        "label_zh": "生活意义与依存",
+        "label_en": "Living significance and dependence",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-GOOD-GROUNDING.md"
+      },
+      {
+        "label_zh": "正面根据与两个问题收束",
+        "label_en": "Positive ground and two-question closure",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-VALUE-SCOPE.md#26-positive-significance-is-the-target-whole-ranking-is-one-route"
+      },
+      {
+        "label_zh": "生成序列论证与反审",
+        "label_en": "Formation-sequence argument",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMATION-SEQUENCE-ARGUMENT.md"
+      },
+      {
+        "label_zh": "生成序列 Lean",
+        "label_en": "Formation-sequence Lean",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/FormationSequence.lean"
+      },
+      {
+        "label_zh": "生成序列实查",
+        "label_en": "Formation-sequence verification",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/formation-sequence-verification.json"
+      },
+      {
+        "label_zh": "生成理由的限制检验",
+        "label_en": "Restriction on formation reasons",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-VALUE-SCOPE.md#21-does-conditional-care-exhaust-the-reasons"
+      },
+      {
+        "label_zh": "接续与新生的对手检验",
+        "label_en": "Continuation and new-living rival test",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-VALUE-SCOPE.md#16-a-stronger-rival-can-also-value-continuation"
+      },
+      {
+        "label_zh": "两个问题的完成回答",
+        "label_en": "Completed scope and formation answers",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-VALUE-SCOPE.md#10-completion-of-the-two-questions"
+      },
+      {
+        "label_zh": "生成价值必要性接续",
+        "label_en": "Generative-value necessity",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-VALUE-NECESSITY.md"
+      },
+      {
+        "label_zh": "认识界面相容 Lean",
+        "label_en": "Profile compatibility Lean",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ObservationalCompatibility.lean"
+      },
+      {
+        "label_zh": "认识界面相容实查",
+        "label_en": "Profile compatibility verification",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/observational-compatibility-verification.json"
+      },
+      {
+        "label_zh": "科学哲学必要性",
+        "label_en": "Scientific-philosophy necessity",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-COMPATIBILITY-NECESSITY.md"
+      },
+      {
+        "label_zh": "相容要求 Lean",
+        "label_en": "Compatibility Lean",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificCompatibility.lean"
+      },
+      {
+        "label_zh": "相容要求实查",
+        "label_en": "Compatibility verification",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-compatibility-verification.json"
+      },
+      {
+        "label_zh": "模型修订完成",
+        "label_en": "Completed model revision",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODEL-REVISION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "模型修订 Lean",
+        "label_en": "Model revision Lean",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ModelRevision.lean"
+      },
+      {
+        "label_zh": "模型修订实查",
+        "label_en": "Model revision verification",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/model-revision-verification.json"
+      },
+      {
+        "label_zh": "来源信赖整合",
+        "label_en": "Source reliance integration",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SOURCE-RELIANCE-INTEGRATION.md"
+      },
+      {
+        "label_zh": "来源信赖 Lean",
+        "label_en": "Source reliance Lean",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/SourceReliance.lean"
+      },
+      {
+        "label_zh": "来源信赖实查",
+        "label_en": "Source reliance verification",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/source-reliance-verification.json"
+      },
+      {
+        "label_zh": "选择性修订实查",
+        "label_en": "Executed selective revision",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTIVE-REVISION-TEST.md"
+      },
+      {
+        "label_zh": "修订 Lean 源码",
+        "label_en": "Revision Lean source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/SelectiveRevision.lean"
+      },
+      {
+        "label_zh": "修订实查回执",
+        "label_en": "Revision verification",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/selective-revision-verification.json"
+      },
+      {
+        "label_zh": "语义充分性前沿",
+        "label_en": "Semantic-sufficiency frontier",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-SUFFICIENCY-INTEGRATION.md"
+      },
+      {
+        "label_zh": "原典与数据复核",
+        "label_en": "Primary evidence and data checks",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-SUFFICIENCY-SOURCES.md"
+      },
+      {
+        "label_zh": "完整哲学候选",
+        "label_en": "Connected proposal",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PHILOSOPHICAL-ACCOUNT.md"
+      },
+      {
+        "label_zh": "共同求知与地位",
+        "label_en": "Shared inquiry and standing",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-INQUIRY-AND-STANDING.md"
+      },
+      {
+        "label_zh": "完成评估",
+        "label_en": "Completion assessment",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-PHILOSOPHY-COMPLETION.md"
+      },
+      {
+        "label_zh": "当前知识章",
+        "label_en": "Current account",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/KNOWLEDGE.md"
+      },
+      {
+        "label_zh": "整合与自审",
+        "label_en": "Integration and self-review",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/G0-AND-KNOWLEDGE.md#completion-stage-continuation-shared-inquiry-and-the-philosophical-account"
+      },
+      {
+        "label_zh": "推展与错误风险",
+        "label_en": "Projection and error risk",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-PROJECTION-AND-RISK.md"
+      },
+      {
+        "label_zh": "求知优先次序",
+        "label_en": "Inquiry priorities",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-PRIORITIES-AND-G0.md"
+      },
+      {
+        "label_zh": "求知实查对应",
+        "label_en": "Checked inquiry correspondence",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-ADEQUACY-CORRESPONDENCE.md"
+      },
+      {
+        "label_zh": "新实查回执",
+        "label_en": "New checked receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/inquiry-adequacy-verification.json"
+      },
+      {
+        "label_zh": "科学哲学与生成论根据",
+        "label_en": "Scientific philosophy and generative warrant",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-AND-GENERATIVE-WARRANT.md"
+      },
+      {
+        "label_zh": "修订与客观性",
+        "label_en": "Revision and objectivity",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-REVISION-AND-OBJECTIVITY.md"
+      },
+      {
+        "label_zh": "内容与错误",
+        "label_en": "Content and error",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-CONTENT-AND-ERROR.md"
+      },
+      {
+        "label_zh": "理由与可修订标准",
+        "label_en": "Reasons and revisable standards",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-REASONS-AND-STANDARDS.md"
+      },
+      {
+        "label_zh": "认识持有与错误范围",
+        "label_en": "Cognitive possession and error scope",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-UPTAKE-AND-ERROR.md"
+      },
+      {
+        "label_zh": "原典比较",
+        "label_en": "Primary comparisons",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-SOURCES.md"
+      },
+      {
+        "label_zh": "证明对应",
+        "label_en": "Proof correspondence",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-CORRESPONDENCE.md"
+      },
+      {
+        "label_zh": "Lean源码",
+        "label_en": "Lean source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/KnowledgeCorrespondence.lean"
+      },
+      {
+        "label_zh": "实查回执",
+        "label_en": "Checked receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/knowledge-correspondence-verification.json"
+      },
+      {
+        "label_zh": "Ren的原话与目标",
+        "label_en": "Ren’s words and goal",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-g0-and-knowledge.md"
+      },
+      {
+        "label_zh": "继续研究的原话",
+        "label_en": "Continuation directive",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md"
+      }
+    ]
+  },
+  "entry_after": {
+    "id": "M21",
+    "title_zh": "知识与生活：相连的哲学候选",
+    "title_en": "Knowing and living: connected philosophical proposal",
+    "claim_zh": "认识、纠正与模型修订构成相连候选。G0下意识分化生的意义，新的生也可有正面意义且不自动产生特定义务。保存已有生活能够要求实际更新；更强争点是超出既有请求与保存目标的新实现。整体改名不能隐去毁损，拒绝福利性创造理由不等于否定全部生成根据。 有条件的照护不独自穷尽生成理由，排除其他正面根据须另有辩护。 完整历史中的混合改善与正当重新分配可导出新的生的正面比较；先后评价须有明确传递。 完整排序不是基本正面意义的新增门槛；新生的正面理由与具体行动要求分别说明。 生的意义不以调节成功或自足为门槛；依存中的生活与局部成功的整体后果分别保留。 意识比较完成两问：福利限制不独自穷尽伦理意义，感觉改变须重评，不能自动保留或抹去全部价值。",
+    "claim_en": "Knowing, correction and model revision form a connected account. Under G0, consciousness differentiates living significance and new living can count positively without assigning a specific duty. Preservation can require renewal; the sharper dispute concerns new realization beyond incumbent claims and preservation targets. Redescription cannot erase destruction, and rejecting a welfare-based creation reason does not reject every generative ground. Conditional care does not independently exhaust formation reasons; excluding a further favorable ground needs its own defense. Whole-history mixed improvement and warranted reallocation yield favorable formation; stage-relative judgments need explicit transport. A complete ordering is not an additional gate for basic positive significance; favorable formation reasons and practical requirements retain distinct grounds. Living significance is not awarded for regulatory success or self-sufficiency; dependent living and the whole consequences of local success remain in view. The consciousness comparison closes the two questions: a welfare restriction alone does not exhaust ethical significance, and changed feeling requires reassessment without automatic retention or erasure of all value.",
+    "scope_zh": "两个范围问题在G0/J下的完成保留；扩读Frick的接续价值论，新增Finneron-Burns原典检验保存对象的界定，纠正过粗的对手归类。无新定理、实验或独立验收；整套理论必要性、最广组织范围及普遍意识／语义仍未证。继承界面相容8／11、一般相容13／18、模型修订30／72及76次执行、来源26／53、选择性修订16／32与四项统计复核原范围；完成的实践与对齐方向不重开。 新增Aaron原典批评与作者反审，信用既有时间与排序分析；批评限制不等于证明相反公理。 生成序列新增6项Lean定理／13项空依赖审计；有限诊断只检验较弱推论，不证明完整对手或G0。 本轮Chappell与Dorr–Nebel–Zuehl原典检验强化正面论证与实质反审；两个G0回答保持完成，无新定理、编译或实验，普遍必要性仍未证。 Bruckner与Dussault原典及依存反审强化非感知范围候选，不把充分根据误作必要条件；无新证明或普遍必要性结论。 Cecchinato、Gottlieb等与Shepherd原典评估保留 G0/J/E 的明确根据；有心灵不等于涵盖全部生命，无新证明或整套理论必要性结论。",
+    "scope_en": "The two G0/J scope answers remain complete. Extended Frick reading and a new Finneron-Burns comparison sharpen the preservation target and correct an overly broad rival classification. No new theorem, experiment or independent acceptance. Whole-theory necessity, the broadest organizational scope and universal consciousness/semantics remain unproved. Inherited profile compatibility 8/11, general compatibility 13/18, model revision 30/72 and 76 runs, source reliance 26/53, selective revision 16/32 and four-statistic checks retain their scopes; completed practical and alignment arguments are reused. New Aaron primary criticism and author counterreview credit the prior temporal and ordering analyses; criticism of a restriction does not prove the opposite axiom. Formation sequence adds 6 Lean theorems/13 empty dependency audits; the finite diagnostic tests a weaker inference, not a full ethical rival or G0. This round’s Chappell and Dorr–Nebel–Zuehl primary assessments strengthen the affirmative argument and substantive counterreview; the two G0 answers remain complete, with no new theorem, compilation or experiment and no universal-necessity proof. Bruckner and Dussault primary assessments and the dependence counterreview strengthen the nonsentient-scope candidate without confusing sufficient grounds with necessary conditions; no new proof or universal-necessity conclusion. Primary assessments of Cecchinato, Gottlieb and colleagues, and Shepherd retain explicit G0/J/E grounds; mentality does not cover all living, and no new proof or full-theory necessity follows.",
+    "links": [
+      {
+        "label_zh": "意识比较与两问终点",
+        "label_en": "Consciousness comparison and two-question endpoint",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-GOOD-GROUNDING.md#7-the-strongest-affective-restriction"
+      },
+      {
+        "label_zh": "生活意义与依存",
+        "label_en": "Living significance and dependence",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-GOOD-GROUNDING.md"
+      },
+      {
+        "label_zh": "正面根据与两个问题收束",
+        "label_en": "Positive ground and two-question closure",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-VALUE-SCOPE.md#26-positive-significance-is-the-target-whole-ranking-is-one-route"
+      },
+      {
+        "label_zh": "生成序列论证与反审",
+        "label_en": "Formation-sequence argument",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMATION-SEQUENCE-ARGUMENT.md"
+      },
+      {
+        "label_zh": "生成序列 Lean",
+        "label_en": "Formation-sequence Lean",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/FormationSequence.lean"
+      },
+      {
+        "label_zh": "生成序列实查",
+        "label_en": "Formation-sequence verification",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/formation-sequence-verification.json"
+      },
+      {
+        "label_zh": "生成理由的限制检验",
+        "label_en": "Restriction on formation reasons",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-VALUE-SCOPE.md#21-does-conditional-care-exhaust-the-reasons"
+      },
+      {
+        "label_zh": "接续与新生的对手检验",
+        "label_en": "Continuation and new-living rival test",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-VALUE-SCOPE.md#16-a-stronger-rival-can-also-value-continuation"
+      },
+      {
+        "label_zh": "两个问题的完成回答",
+        "label_en": "Completed scope and formation answers",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-VALUE-SCOPE.md#10-completion-of-the-two-questions"
+      },
+      {
+        "label_zh": "生成价值必要性接续",
+        "label_en": "Generative-value necessity",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-VALUE-NECESSITY.md"
+      },
+      {
+        "label_zh": "认识界面相容 Lean",
+        "label_en": "Profile compatibility Lean",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ObservationalCompatibility.lean"
+      },
+      {
+        "label_zh": "认识界面相容实查",
+        "label_en": "Profile compatibility verification",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/observational-compatibility-verification.json"
+      },
+      {
+        "label_zh": "科学哲学必要性",
+        "label_en": "Scientific-philosophy necessity",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-COMPATIBILITY-NECESSITY.md"
+      },
+      {
+        "label_zh": "相容要求 Lean",
+        "label_en": "Compatibility Lean",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ScientificCompatibility.lean"
+      },
+      {
+        "label_zh": "相容要求实查",
+        "label_en": "Compatibility verification",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/scientific-compatibility-verification.json"
+      },
+      {
+        "label_zh": "模型修订完成",
+        "label_en": "Completed model revision",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/MODEL-REVISION-INTEGRATION.md"
+      },
+      {
+        "label_zh": "模型修订 Lean",
+        "label_en": "Model revision Lean",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/ModelRevision.lean"
+      },
+      {
+        "label_zh": "模型修订实查",
+        "label_en": "Model revision verification",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/model-revision-verification.json"
+      },
+      {
+        "label_zh": "来源信赖整合",
+        "label_en": "Source reliance integration",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SOURCE-RELIANCE-INTEGRATION.md"
+      },
+      {
+        "label_zh": "来源信赖 Lean",
+        "label_en": "Source reliance Lean",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/SourceReliance.lean"
+      },
+      {
+        "label_zh": "来源信赖实查",
+        "label_en": "Source reliance verification",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/source-reliance-verification.json"
+      },
+      {
+        "label_zh": "选择性修订实查",
+        "label_en": "Executed selective revision",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SELECTIVE-REVISION-TEST.md"
+      },
+      {
+        "label_zh": "修订 Lean 源码",
+        "label_en": "Revision Lean source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/SelectiveRevision.lean"
+      },
+      {
+        "label_zh": "修订实查回执",
+        "label_en": "Revision verification",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/selective-revision-verification.json"
+      },
+      {
+        "label_zh": "语义充分性前沿",
+        "label_en": "Semantic-sufficiency frontier",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-SUFFICIENCY-INTEGRATION.md"
+      },
+      {
+        "label_zh": "原典与数据复核",
+        "label_en": "Primary evidence and data checks",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-SUFFICIENCY-SOURCES.md"
+      },
+      {
+        "label_zh": "完整哲学候选",
+        "label_en": "Connected proposal",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PHILOSOPHICAL-ACCOUNT.md"
+      },
+      {
+        "label_zh": "共同求知与地位",
+        "label_en": "Shared inquiry and standing",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-INQUIRY-AND-STANDING.md"
+      },
+      {
+        "label_zh": "完成评估",
+        "label_en": "Completion assessment",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-PHILOSOPHY-COMPLETION.md"
+      },
+      {
+        "label_zh": "当前知识章",
+        "label_en": "Current account",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/KNOWLEDGE.md"
+      },
+      {
+        "label_zh": "整合与自审",
+        "label_en": "Integration and self-review",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/G0-AND-KNOWLEDGE.md#completion-stage-continuation-shared-inquiry-and-the-philosophical-account"
+      },
+      {
+        "label_zh": "推展与错误风险",
+        "label_en": "Projection and error risk",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-PROJECTION-AND-RISK.md"
+      },
+      {
+        "label_zh": "求知优先次序",
+        "label_en": "Inquiry priorities",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-PRIORITIES-AND-G0.md"
+      },
+      {
+        "label_zh": "求知实查对应",
+        "label_en": "Checked inquiry correspondence",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-ADEQUACY-CORRESPONDENCE.md"
+      },
+      {
+        "label_zh": "新实查回执",
+        "label_en": "New checked receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/inquiry-adequacy-verification.json"
+      },
+      {
+        "label_zh": "科学哲学与生成论根据",
+        "label_en": "Scientific philosophy and generative warrant",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-AND-GENERATIVE-WARRANT.md"
+      },
+      {
+        "label_zh": "修订与客观性",
+        "label_en": "Revision and objectivity",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-REVISION-AND-OBJECTIVITY.md"
+      },
+      {
+        "label_zh": "内容与错误",
+        "label_en": "Content and error",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-CONTENT-AND-ERROR.md"
+      },
+      {
+        "label_zh": "理由与可修订标准",
+        "label_en": "Reasons and revisable standards",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-REASONS-AND-STANDARDS.md"
+      },
+      {
+        "label_zh": "认识持有与错误范围",
+        "label_en": "Cognitive possession and error scope",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-UPTAKE-AND-ERROR.md"
+      },
+      {
+        "label_zh": "原典比较",
+        "label_en": "Primary comparisons",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-SOURCES.md"
+      },
+      {
+        "label_zh": "证明对应",
+        "label_en": "Proof correspondence",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-CORRESPONDENCE.md"
+      },
+      {
+        "label_zh": "Lean源码",
+        "label_en": "Lean source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/KnowledgeCorrespondence.lean"
+      },
+      {
+        "label_zh": "实查回执",
+        "label_en": "Checked receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/knowledge-correspondence-verification.json"
+      },
+      {
+        "label_zh": "Ren的原话与目标",
+        "label_en": "Ren’s words and goal",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-g0-and-knowledge.md"
+      },
+      {
+        "label_zh": "继续研究的原话",
+        "label_en": "Continuation directive",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md"
+      }
+    ]
+  },
+  "reviewed_sources": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-GOOD-GROUNDING.md": "8b7bd4cac00e717119b114f80b476845324314560e538fbe5ba58af2794601fc",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PHILOSOPHICAL-ACCOUNT.md": "664cb2cd7635e42905e160558c7dc5c9c95de1e4c98a424fe367f89b94cc938b"
+  },
+  "reviewed_baseline_matches": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-GOOD-GROUNDING.md": true,
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PHILOSOPHICAL-ACCOUNT.md": true
+  },
+  "baseline_source_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-VALUE-SCOPE.md": "1663931fcfa816c121640bd65723911f864abdf540bc65afcac457d5cbcbb0a4",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-VALUE-NECESSITY.md": "244aa4d5b7fc54c1ccd56a42fbf5f06a1470c32b40978d3e32fa8355873b913f",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/KNOWLEDGE.md": "fa503bfedcf0f5fc60849e55d45fe392f1b691e501956f91c514b34335be4f61",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PHILOSOPHICAL-ACCOUNT.md": "f23a84374037b5c6f1af2e0e23681eb8fa54fad824470a27ba2d54f7abb4aa0f",
+    "sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md": "a207bbfb42ba637a8a76e0df316a3c2ac708de1c5192a445dbac76ab6c7d038c",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/FORMATION-SEQUENCE-ARGUMENT.md": "082e393f7b0c1810c5655dcbc914085ff1eddcf2f93a3004b085f6b852fcd8b6",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-GOOD-GROUNDING.md": "9d41c54d80f9ea6693d26937488da3a384590677fccd6d182a8e241e79a16c12"
+  },
+  "new_discovery_pages": [],
+  "other_entries_preserved": 92,
+  "other_generated_lines_preserved": true,
+  "prior_discovery_inventory_preserved": true,
+  "unrelated_reviewed_sources_preserved": true,
+  "data_before_sha256": "2208111613e3842326c1de7ea8cbeed3419ca2c50735316e86e2359e79e181b2",
+  "data_after_sha256": "29f4ab79976525ac6fd80321832d3d6b370a41aaba196dce82ae0c595dd5a311",
+  "table_before_sha256": "38f0b64869da0205de5b53456ca41e9daf0a15a3836abf91e1f4584a3461ebe9",
+  "table_after_sha256": "7a99eff13f4999ec209f32cc0ac70288a218602e9f39784201c79d1ede003003",
+  "pending_changes_before": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PHILOSOPHICAL-ACCOUNT.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-meta-attractor-generative-integration.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-GOOD-GROUNDING.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-UPDATER-CONSEQUENCES-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/META-ATTRACTOR-REPRODUCTION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-ARGUMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-PROOF.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/UNEQUAL-BASIC-LOSSES-SOURCES.md"
+    ],
+    "removed_pages": []
+  },
+  "navigation_insertions": {
+    "RESEARCH.md": {
+      "text": "**两个问题完成：意识与更广的生活意义 / Two questions finished: consciousness and wider living significance，2026-10-08。** [最终比较与结论](_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-GOOD-GROUNDING.md#7-the-strongest-affective-restriction)核读三项原典，区分福利限制与全部伦理意义；感觉改变须重评，不能自动保全或抹去全部价值。/ The G0/J/E answers are complete: consciousness differentiates living significance, and further living can count positively without a prior claimant or unlimited duty. Full-theory necessity remains unproved; no new theorem or experiment.",
+      "before_sha256": "66a52285d49946e4fd9db34e0fc2efaddb9b50edbd141ab82bea10169610babf",
+      "after_sha256": "90f142f9f0937804a8ff0bd752f822638211557d716d7e7d2e99b0cb7b630e1b"
+    },
+    "theories/shengsheng-buxi-generative-existence/README.md": {
+      "text": "**意识与生活意义的收束 / Closing consciousness and living significance，2026-10-08。** [完成论述](unified-2026-10-05/PHILOSOPHICAL-ACCOUNT.md#24-closing-the-two-questions-after-the-consciousness-comparison)与[原典反审](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-GOOD-GROUNDING.md#7-the-strongest-affective-restriction)完成 G0/J/E 下两个问题，区分福利与更广意义，保留真实感觉差异及生活损失。/ Wider organizational scope and full-theory necessity remain unproved; no new theorem or experiment.",
+      "before_sha256": "58a7263281b7bca1c0c2544282690fd2c5890ce57d30ccd807c421412b6ce340",
+      "after_sha256": "7f4d98f901a574ba6953cf768dd1dbdc8edc908500d7ada50f7dec173d26b8b6"
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": {
+      "text": "**Two-question closure after the consciousness comparison, 8 October 2026:** [Primary assessment, counterreview and endpoint](LIVING-GOOD-GROUNDING.md#7-the-strongest-affective-restriction) distinguish affective welfare, suitable mentality and wider living significance. Removing feeling requires reassessment in both directions. The two G0/J/E answers are finished; whole-theory necessity remains unproved. No new theorem, experiment or independent acceptance.",
+      "before_sha256": "ff41c8e3fe0b8e3f4d72ec7c13c0454fce7a3b8e91bd98580245fe4e31ce586d",
+      "after_sha256": "10b7b09af79c066ba1be9e0cf7daa5b9d9120c49799c28fc9af04558337e741e"
+    },
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md": {
+      "text": "**意识比较后的两问完成 / Two-question closure after consciousness comparison，2026-10-08。** M21 成对接入[原典、反审和终点](LIVING-GOOD-GROUNDING.md#7-the-strongest-affective-restriction)，区分福利范围与全部伦理意义。/ Only M21 and two read/authored source versions change; other entries, generated lines and discovery inventory are preserved. [Owned edits](AFFECTIVE-SCOPE-INDEX-EDITS.json); [scoped checks](AFFECTIVE-SCOPE-CHECKS.json). No new theorem, compilation, empirical result, independent acceptance or full-table certification.",
+      "before_sha256": "f7b426ef859d18446793108e776277761174f2f349df1ae58a6e18a91f77b406",
+      "after_sha256": "48d4ed8ab933709ccb6db6cc771a36a11f01783706fd567682b2df946bfc2da0"
+    }
+  },
+  "previous_goal_turn": "Progress: living significance through dependence and impaired regulation assessed and integrated; two G0 answers complete, necessity unproved.",
+  "current_goal_status": "active; requested two-question account complete, stronger full-theory necessity unproved",
+  "scope": "Primary philosophical comparison, affirmative argument and author counterreview; no new theorem, compiler run, experiment or independent acceptance."
+}

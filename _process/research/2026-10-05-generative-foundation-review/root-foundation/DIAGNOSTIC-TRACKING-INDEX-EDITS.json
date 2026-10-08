@@ -1,0 +1,20 @@
+{
+  "scope": "Diagnostic repair to acquired prediction, bounded tracking and convergence after finite earlier errors. Conditional model, no empirical calibration or independent acceptance.",
+  "entries": [
+    "M20"
+  ],
+  "prior_content": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md": {
+      "prior_sha256": "8abfaf5d93e75a01dc5c649d38c5a04d4fe5be8d95c9fce5bc55948cfa5e56fd",
+      "prior_length": 81458
+    },
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md": {
+      "prior_sha256": "e877ae5cd8f8045240f3db1b30ae8ccb0be6bd9dce08d26a1a0b5849bfda04ef",
+      "prior_length": 58781
+    },
+    "sources/15-codex-theory-conversations/2026-10-08-goal-formation-and-revision.md": {
+      "prior_sha256": "af533b314ba3a30973120d5406af505878379327ea687264b484b49d4ce54bb8",
+      "prior_length": 10354
+    }
+  }
+}

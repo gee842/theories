@@ -1,0 +1,27 @@
+{
+  "owned_ids": [
+    "M25",
+    "F30"
+  ],
+  "new_count": 92,
+  "owned_sources": [
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-THROUGH-CHANGE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-CONTINUITY-INTEGRATION.md",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/alignment-continuity-verification.json",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentInquiry.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EffectiveCommand.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReformInquiry.lean",
+    "experiments/market-generativity/meta-attractor/AlignmentSuccession.lean",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/ALIGNMENT-CONTINUITY-PROTOCOL.md",
+    "sources/15-codex-theory-conversations/2026-10-08-finish-alignment-fruits.md",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_alignment_continuity.py",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentContinuityCases.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ALIGNMENT-CONTINUITY.md"
+  ],
+  "before_data_sha256": "bab65f7bae9bdf1195597692c6810516cc10d58f80190fd2a082506d351314d4",
+  "after_data_sha256": "a00b499aefe54b8aaf61efb11edcd860b06d9a753b2a8eebb80b4c0738955c13",
+  "old_entries_unchanged": true,
+  "old_rows_unchanged": true,
+  "new_rows_match_canonical_renderer": true,
+  "scope": "Only new owned rows, read source fingerprints, owned discoveries and count. Pending concurrent reviews not cleared."
+}

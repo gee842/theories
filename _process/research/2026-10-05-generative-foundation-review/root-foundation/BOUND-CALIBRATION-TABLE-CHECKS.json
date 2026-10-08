@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "scope": "Canonical C28/F20 rows only; not full-table certification. Unrelated generated lines preserved.",
+  "entry_ids": [
+    "C28",
+    "F20"
+  ],
+  "unrelated_entries_preserved": 84,
+  "errors": [],
+  "pending_shared_source_reviews": [
+    "RESEARCH.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+    "theories/shengsheng-buxi-generative-existence/README.md"
+  ]
+}

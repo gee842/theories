@@ -1,0 +1,213 @@
+{
+  "checked_at_utc": "20261008T112000.799032Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "compiler": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "checker_sha256": "3e6eaad26a0a930340f8829754175e7d35fc2791dc916c54defc55aa07aa270b",
+  "scope": "Costed coherent acquisition, per-slot validation, native-use projection and explicit interference limits",
+  "modules": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+      "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+      "expected_audits": 18,
+      "empty_axiom_audits": [
+        "Generative.trace_append_iff",
+        "Generative.trace_singleton_iff",
+        "Generative.enabled_iff_singleton_trace",
+        "Generative.enabled_difference_implies_state_difference",
+        "Generative.feasible_append_iff",
+        "Generative.feasible_prefix",
+        "Generative.enabled_product_iff",
+        "Generative.trace_product_iff",
+        "Generative.feasible_product_iff",
+        "Generative.trace_map",
+        "Generative.trace_lift",
+        "Generative.projected_trace_iff",
+        "Generative.projection_exact_iff",
+        "Generative.local_exact_iff_trace_exact",
+        "Generative.enabled_projection_iff",
+        "Generative.feasible_projection_iff",
+        "Generative.feasible_difference_implies_projection_difference",
+        "Generative.trace_faithful_iff"
+      ],
+      "standard_axiom_audits": {},
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ReconfigurableSupportLogic.lean",
+      "sha256": "ba6511391b9ec50b9e96604982c84c3a3fc9a0dc2cb931acbb7979bfbd874911",
+      "expected_audits": 24,
+      "empty_axiom_audits": [
+        "Generative.ReconfigurableSupportLogic.enabled_exact",
+        "Generative.ReconfigurableSupportLogic.redirect_readiness",
+        "Generative.ReconfigurableSupportLogic.agrees_symm",
+        "Generative.ReconfigurableSupportLogic.agrees_enabled",
+        "Generative.ReconfigurableSupportLogic.probe_exact",
+        "Generative.ReconfigurableSupportLogic.Witness.hidden_formed",
+        "Generative.ReconfigurableSupportLogic.Witness.new_probe_separates",
+        "Generative.ReconfigurableSupportLogic.Witness.same_active_view",
+        "Generative.ReconfigurableSupportLogic.Witness.no_old_view_future_reader",
+        "Generative.ReconfigurableSupportLogic.Witness.no_blind_redirect_update",
+        "Generative.ReconfigurableSupportLogic.Witness.redirect_changes_readiness_only",
+        "Generative.ReconfigurableSupportLogic.Witness.refreshed_view"
+      ],
+      "standard_axiom_audits": {
+        "Generative.ReconfigurableSupportLogic.observation_iff": [
+          "Quot.sound"
+        ],
+        "Generative.ReconfigurableSupportLogic.agrees_after": [
+          "propext"
+        ],
+        "Generative.ReconfigurableSupportLogic.match_trace": [
+          "propext"
+        ],
+        "Generative.ReconfigurableSupportLogic.agrees_feasible": [
+          "propext"
+        ],
+        "Generative.ReconfigurableSupportLogic.observation_sufficient": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.ReconfigurableSupportLogic.bool_false_iff_eq": [
+          "propext"
+        ],
+        "Generative.ReconfigurableSupportLogic.probes_determine_occupancy": [
+          "propext"
+        ],
+        "Generative.ReconfigurableSupportLogic.fixed_route_behavior_iff": [
+          "propext"
+        ],
+        "Generative.ReconfigurableSupportLogic.exact_reader_separates": [
+          "propext"
+        ],
+        "Generative.ReconfigurableSupportLogic.unrestricted_reader_injective": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.ReconfigurableSupportLogic.Witness.old_observation_same": [
+          "Quot.sound"
+        ],
+        "Generative.ReconfigurableSupportLogic.Witness.old_workload_exact": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/AcquiredSupportUse.lean",
+      "sha256": "57acaccb8dfe5c6d406a50a17105a86ece0818d1f5bebcffa19ddb5224e5de2e",
+      "expected_audits": 15,
+      "empty_axiom_audits": [
+        "Generative.AcquiredSupportUse.sample_valid",
+        "Generative.AcquiredSupportUse.admitted_is_free",
+        "Generative.AcquiredSupportUse.use_is_native",
+        "Generative.AcquiredSupportUse.step_projects"
+      ],
+      "standard_axiom_audits": {
+        "Generative.AcquiredSupportUse.update_valid": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.AcquiredSupportUse.next_sound": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.AcquiredSupportUse.trace_sound": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.AcquiredSupportUse.trace_projects": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.AcquiredSupportUse.step_budget": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.AcquiredSupportUse.trace_budget": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.AcquiredSupportUse.budget_necessary": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.AcquiredSupportUse.fresh_read_use": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.AcquiredSupportUse.fresh_read_use_iff": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.AcquiredSupportUse.unrelated_release_admits": [
+          "propext"
+        ],
+        "Generative.AcquiredSupportUse.intervening_take_rejects": [
+          "propext"
+        ]
+      },
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/AcquiredSupportUseCases.lean",
+      "sha256": "74c46d71ed670ded087e39bf7255b3f4d7aae595e393066af29c5972d4cade3e",
+      "expected_audits": 13,
+      "empty_axiom_audits": [
+        "Generative.AcquiredSupportUseCases.restored_value_still_rejected",
+        "Generative.AcquiredSupportUseCases.unrelated_change_then_use",
+        "Generative.AcquiredSupportUseCases.wrong_route_rejected",
+        "Generative.AcquiredSupportUseCases.bypass_breaks_correspondence"
+      ],
+      "standard_axiom_audits": {
+        "Generative.AcquiredSupportUseCases.cycle_end": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.AcquiredSupportUseCases.cycle_trace": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.AcquiredSupportUseCases.totalCharge_append": [
+          "propext"
+        ],
+        "Generative.AcquiredSupportUseCases.retries_charge": [
+          "propext"
+        ],
+        "Generative.AcquiredSupportUseCases.retries_trace": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.AcquiredSupportUseCases.retries_then_use_iff": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.AcquiredSupportUseCases.finite_budget_can_be_exhausted": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.AcquiredSupportUseCases.acquired_ticket_initially_usable": [
+          "propext",
+          "Quot.sound"
+        ],
+        "Generative.AcquiredSupportUseCases.stale_read_rejected": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "exit_code": 0,
+      "source_unchanged_during_check": true,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "total_empty_axiom_audits": 38,
+  "total_declaration_audits": 70,
+  "total_standard_axiom_audits": 32
+}

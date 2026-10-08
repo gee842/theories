@@ -1,0 +1,9 @@
+import CrossedClaims
+#check CrossedClaims.replacement_preserves_each_ticket
+#check CrossedClaims.joint_strictly_extends_solo_protection
+#check CrossedClaims.transfer_conserves_total_and_chances
+#check CrossedClaims.transfer_preserves_any_satisfied_floor
+#check CrossedClaims.transfer_strictly_improves_q
+#check CrossedClaims.equal_personal_chances_iff
+#check CrossedClaims.equal_chances_have_improving_replacement
+#check CrossedClaims.unselected_strong_route_changes_filtered_choice

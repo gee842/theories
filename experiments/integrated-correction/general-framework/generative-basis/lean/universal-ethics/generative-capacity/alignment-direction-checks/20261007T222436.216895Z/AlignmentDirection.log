@@ -1,0 +1,12 @@
+AlignmentDirection.lean:46:43: error: failed to synthesize
+  Decidable (eligible 2)
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+AlignmentDirection.lean:62:4: error: failed to synthesize
+  Decidable ¬oldService 2
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+AlignmentDirection.lean:66:54: error: failed to synthesize
+  Decidable ¬oldService 2
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.

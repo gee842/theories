@@ -1,0 +1,1177 @@
+{
+  "scope": "Empirical extraction and illustrative conventional-model replay; no biological replication, fitted kinetic prediction, ODE proof or comparative superiority.",
+  "checks_passed": true,
+  "pellicle_cohorts": 11,
+  "pellicle_cultures": 45,
+  "pellicle_pooled": [
+    {
+      "log10_dilution_factor": 2,
+      "success": 3,
+      "total": 3
+    },
+    {
+      "log10_dilution_factor": 2.5,
+      "success": 6,
+      "total": 6
+    },
+    {
+      "log10_dilution_factor": 3,
+      "success": 12,
+      "total": 12
+    },
+    {
+      "log10_dilution_factor": 3.5,
+      "success": 10,
+      "total": 15
+    },
+    {
+      "log10_dilution_factor": 4,
+      "success": 0,
+      "total": 9
+    }
+  ],
+  "same_dilution_3_5_cohorts": [
+    {
+      "date": "2024-06-19",
+      "sheet": "Tabelle1",
+      "count_cell": "B6",
+      "log10_dilution_factor": 3.5,
+      "success": 0,
+      "total": 3
+    },
+    {
+      "date": "2024-06-16",
+      "sheet": "Tabelle1",
+      "count_cell": "E7",
+      "log10_dilution_factor": 3.5,
+      "success": 1,
+      "total": 3
+    },
+    {
+      "date": "2024-06-26",
+      "sheet": "Tabelle1",
+      "count_cell": "K4",
+      "log10_dilution_factor": 3.5,
+      "success": 9,
+      "total": 9
+    }
+  ],
+  "colony_areas": {
+    "raw_n": 784,
+    "paper_caption_n": 769,
+    "mean_diameter": 44.56671932885514,
+    "median_diameter": 44.07536754009294,
+    "range": [
+      19.076817504853178,
+      84.92263623309971
+    ],
+    "n_le_65": 769,
+    "cutoff_is_not_a_verified_source_exclusion_rule": true,
+    "culture_nesting_unresolved": true
+  },
+  "notebook_parameters": {
+    "r_sa": 1.0,
+    "r_wa": 0.85,
+    "r_sb": 0.001,
+    "r_wb": 0.00085,
+    "d_s": 0.002,
+    "d_w": 0.001,
+    "switch": 1,
+    "m_s": 0.02,
+    "m_w": 0.01,
+    "mu": 1.1000000000000001e-08,
+    "K_a": 10000000000.0
+  },
+  "source_function_comparisons": 20,
+  "max_relative_derivative_difference": 0.0,
+  "source_nominal_time_conversion_not_empirical_calibration": true,
+  "model_scenarios": {
+    "source": [
+      {
+        "step": 0.001,
+        "records": [
+          {
+            "source_time_units": 0.0,
+            "source_nominal_days": 0.0,
+            "sA": 100000.0,
+            "sB": 10000000.0,
+            "wA": 0.0,
+            "wB": 0.0,
+            "surface_WS_fraction": 0.0
+          },
+          {
+            "source_time_units": 12.0,
+            "source_nominal_days": 1.0,
+            "sA": 10004803011.963488,
+            "sB": 15527936251.67349,
+            "wA": 1197.3369138688556,
+            "wB": 660.9505676486581,
+            "surface_WS_fraction": 1.1967619643728948e-07
+          },
+          {
+            "source_time_units": 24.0,
+            "source_nominal_days": 2.0,
+            "sA": 10000676975.625206,
+            "sB": 136475926655.54703,
+            "wA": 100420.55258098544,
+            "wB": 140854.23552455436,
+            "surface_WS_fraction": 1.004127465324499e-05
+          },
+          {
+            "source_time_units": 36.0,
+            "source_nominal_days": 3.0,
+            "sA": 9993296633.553415,
+            "sB": 258837182574.7546,
+            "wA": 6710147.659029613,
+            "wB": 9607149.595052002,
+            "surface_WS_fraction": 0.0006710143108739018
+          },
+          {
+            "source_time_units": 48.0,
+            "source_nominal_days": 4.0,
+            "sA": 9562572351.982803,
+            "sB": 381868622570.3149,
+            "wA": 437427651.10305005,
+            "wB": 638408402.2486489,
+            "surface_WS_fraction": 0.04374276509680663
+          },
+          {
+            "source_time_units": 60.0,
+            "source_nominal_days": 5.0,
+            "sA": 925768534.4145136,
+            "sB": 470029127389.016,
+            "wA": 9074231465.585552,
+            "wB": 30925457813.576103,
+            "surface_WS_fraction": 0.9074231465585494
+          },
+          {
+            "source_time_units": 72.0,
+            "source_nominal_days": 6.0,
+            "sA": 163907.94996588177,
+            "sB": 478095741323.55695,
+            "wA": 9999838149.883156,
+            "wB": 131601222491.74274,
+            "surface_WS_fraction": 0.9999836092083763
+          },
+          {
+            "source_time_units": 84.0,
+            "source_nominal_days": 7.0,
+            "sA": 169.21761891510772,
+            "sB": 483867850307.4997,
+            "wA": 9999999830.784578,
+            "wB": 235471990610.2821,
+            "surface_WS_fraction": 0.9999999830782381
+          },
+          {
+            "source_time_units": 96.0,
+            "source_nominal_days": 8.0,
+            "sA": -117253.93544361582,
+            "sB": 489700132942.2802,
+            "wA": 10000118501.779314,
+            "wB": 340421487781.29785,
+            "surface_WS_fraction": 1.0000117253920813
+          }
+        ],
+        "max_relative_capacity_overshoot": 0.0008499547498161952,
+        "minimum_population": -3151371.5555550507
+      },
+      {
+        "step": 0.0005,
+        "records": [
+          {
+            "source_time_units": 0.0,
+            "source_nominal_days": 0.0,
+            "sA": 100000.0,
+            "sB": 10000000.0,
+            "wA": 0.0,
+            "wB": 0.0,
+            "surface_WS_fraction": 0.0
+          },
+          {
+            "source_time_units": 12.0,
+            "source_nominal_days": 1.0,
+            "sA": 10000962695.273775,
+            "sB": 15551843082.984016,
+            "wA": 1198.6089704286576,
+            "wB": 662.6392621067826,
+            "surface_WS_fraction": 1.1984934483783174e-07
+          },
+          {
+            "source_time_units": 24.0,
+            "source_nominal_days": 2.0,
+            "sA": 10000055417.917057,
+            "sB": 136469865650.31523,
+            "wA": 100538.50117020299,
+            "wB": 141022.32399477766,
+            "surface_WS_fraction": 1.0053693323220233e-05
+          },
+          {
+            "source_time_units": 36.0,
+            "source_nominal_days": 3.0,
+            "sA": 9993280874.458328,
+            "sB": 258828533353.35416,
+            "wA": 6720486.78360376,
+            "wB": 9621961.045552334,
+            "surface_WS_fraction": 0.0006720485868783044
+          },
+          {
+            "source_time_units": 48.0,
+            "source_nominal_days": 4.0,
+            "sA": 9561757542.238775,
+            "sB": 381858331930.06226,
+            "wA": 438242458.38153297,
+            "wB": 639621728.8300616,
+            "surface_WS_fraction": 0.043824245835434844
+          },
+          {
+            "source_time_units": 60.0,
+            "source_nominal_days": 5.0,
+            "sA": 922938918.5533599,
+            "sB": 469967796437.5489,
+            "wA": 9080886614.314392,
+            "wB": 30966260202.160812,
+            "surface_WS_fraction": 0.9077414019745719
+          },
+          {
+            "source_time_units": 72.0,
+            "source_nominal_days": 6.0,
+            "sA": 248618.19211405588,
+            "sB": 478030959272.6589,
+            "wA": 9999751398.121353,
+            "wB": 131645302441.88414,
+            "surface_WS_fraction": 0.9999751381808292
+          },
+          {
+            "source_time_units": 84.0,
+            "source_nominal_days": 7.0,
+            "sA": 189.35965324689192,
+            "sB": 483802498076.29266,
+            "wA": 9999999810.640375,
+            "wB": 235516349598.3734,
+            "surface_WS_fraction": 0.9999999810640346
+          },
+          {
+            "source_time_units": 96.0,
+            "source_nominal_days": 8.0,
+            "sA": -4035.1454558141127,
+            "sB": 489638270542.68976,
+            "wA": 10000004040.29005,
+            "wB": 340459931636.52716,
+            "surface_WS_fraction": 1.0000004035145453
+          }
+        ],
+        "max_relative_capacity_overshoot": 0.00043189087347483834,
+        "minimum_population": -1597777.2125591806
+      }
+    ],
+    "equal_dispersal": [
+      {
+        "step": 0.001,
+        "records": [
+          {
+            "source_time_units": 0.0,
+            "source_nominal_days": 0.0,
+            "sA": 100000.0,
+            "sB": 10000000.0,
+            "wA": 0.0,
+            "wB": 0.0,
+            "surface_WS_fraction": 0.0
+          },
+          {
+            "source_time_units": 12.0,
+            "source_nominal_days": 1.0,
+            "sA": 10004803608.925665,
+            "sB": 15527936071.206942,
+            "wA": 598.3268424043856,
+            "wB": 901.6565434455948,
+            "surface_WS_fraction": 5.980395318187806e-08
+          },
+          {
+            "source_time_units": 24.0,
+            "source_nominal_days": 2.0,
+            "sA": 10000776684.342163,
+            "sB": 136476099445.07297,
+            "wA": 711.0945013774909,
+            "wB": 9011.00788404277,
+            "surface_WS_fraction": 7.110392255125706e-08
+          },
+          {
+            "source_time_units": 36.0,
+            "source_nominal_days": 3.0,
+            "sA": 10000006051.256804,
+            "sB": 258849656285.45404,
+            "wA": 729.6573391468305,
+            "wB": 17850.07431999456,
+            "surface_WS_fraction": 7.29656844372789e-08
+          },
+          {
+            "source_time_units": 48.0,
+            "source_nominal_days": 4.0,
+            "sA": 9999999270.35109,
+            "sB": 382697399509.97095,
+            "wA": 732.7257164486343,
+            "wB": 26900.042121870065,
+            "surface_WS_fraction": 7.32725716223189e-08
+          },
+          {
+            "source_time_units": 60.0,
+            "source_nominal_days": 5.0,
+            "sA": 9999999266.767366,
+            "sB": 508040248448.6251,
+            "wA": 733.2328703259273,
+            "wB": 36076.509873689414,
+            "surface_WS_fraction": 7.332328703259099e-08
+          },
+          {
+            "source_time_units": 72.0,
+            "source_nominal_days": 6.0,
+            "sA": 9999999308.192274,
+            "sB": 634905745398.5831,
+            "wA": 733.404715066277,
+            "wB": 45368.8780728717,
+            "surface_WS_fraction": 7.334047120155343e-08
+          },
+          {
+            "source_time_units": 84.0,
+            "source_nominal_days": 7.0,
+            "sA": 10000090062.554043,
+            "sB": 763299958723.0146,
+            "wA": 733.6077454967938,
+            "wB": 54773.038830762336,
+            "surface_WS_fraction": 7.336010846805165e-08
+          },
+          {
+            "source_time_units": 96.0,
+            "source_nominal_days": 8.0,
+            "sA": 9999999266.621862,
+            "sB": 893237700772.5029,
+            "wA": 733.3781711082466,
+            "wB": 64290.995813909394,
+            "surface_WS_fraction": 7.333781711082442e-08
+          }
+        ],
+        "max_relative_capacity_overshoot": 0.000997999989001075,
+        "minimum_population": 0.0
+      },
+      {
+        "step": 0.0005,
+        "records": [
+          {
+            "source_time_units": 0.0,
+            "source_nominal_days": 0.0,
+            "sA": 100000.0,
+            "sB": 10000000.0,
+            "wA": 0.0,
+            "wB": 0.0,
+            "surface_WS_fraction": 0.0
+          },
+          {
+            "source_time_units": 12.0,
+            "source_nominal_days": 1.0,
+            "sA": 10000963293.643486,
+            "sB": 15551842902.965708,
+            "wA": 598.1911749637906,
+            "wB": 903.1706987664082,
+            "surface_WS_fraction": 5.981335213620627e-08
+          },
+          {
+            "source_time_units": 24.0,
+            "source_nominal_days": 2.0,
+            "sA": 10000155244.993664,
+            "sB": 136470038659.73297,
+            "wA": 711.0109208753655,
+            "wB": 9010.788073588034,
+            "surface_WS_fraction": 7.109998324060532e-08
+          },
+          {
+            "source_time_units": 36.0,
+            "source_nominal_days": 3.0,
+            "sA": 10000000631.535992,
+            "sB": 258841026332.9585,
+            "wA": 729.6435943677951,
+            "wB": 17849.363047112485,
+            "surface_WS_fraction": 7.29643495050212e-08
+          },
+          {
+            "source_time_units": 48.0,
+            "source_nominal_days": 4.0,
+            "sA": 9999999267.895077,
+            "sB": 382688681147.6669,
+            "wA": 732.7234219697501,
+            "wB": 26899.248189143495,
+            "surface_WS_fraction": 7.327234219244314e-08
+          },
+          {
+            "source_time_units": 60.0,
+            "source_nominal_days": 5.0,
+            "sA": 10002060316.698334,
+            "sB": 508032306813.79486,
+            "wA": 733.4864509191627,
+            "wB": 36075.70070164065,
+            "surface_WS_fraction": 7.333353068321973e-08
+          },
+          {
+            "source_time_units": 72.0,
+            "source_nominal_days": 6.0,
+            "sA": 9999999268.92811,
+            "sB": 634892361545.5427,
+            "wA": 733.3486723995034,
+            "wB": 45367.02817114803,
+            "surface_WS_fraction": 7.333486722325358e-08
+          },
+          {
+            "source_time_units": 84.0,
+            "source_nominal_days": 7.0,
+            "sA": 10000007055.58103,
+            "sB": 763283255522.2332,
+            "wA": 733.4444974367709,
+            "wB": 54770.56698654596,
+            "surface_WS_fraction": 7.334439261554245e-08
+          },
+          {
+            "source_time_units": 96.0,
+            "source_nominal_days": 8.0,
+            "sA": 9999999266.648844,
+            "sB": 893220690151.1646,
+            "wA": 733.3516282357477,
+            "wB": 64287.59441067926,
+            "surface_WS_fraction": 7.333516282357132e-08
+          }
+        ],
+        "max_relative_capacity_overshoot": 0.0004989999945006485,
+        "minimum_population": 0.0
+      }
+    ],
+    "neutral_retention_slice": [
+      {
+        "step": 0.001,
+        "records": [
+          {
+            "source_time_units": 0.0,
+            "source_nominal_days": 0.0,
+            "sA": 100000.0,
+            "sB": 10000000.0,
+            "wA": 0.0,
+            "wB": 0.0,
+            "surface_WS_fraction": 0.0
+          },
+          {
+            "source_time_units": 12.0,
+            "source_nominal_days": 1.0,
+            "sA": 10004803473.929924,
+            "sB": 15527936102.896608,
+            "wA": 733.9358012630295,
+            "wB": 855.1412138610078,
+            "surface_WS_fraction": 7.335833725621667e-08
+          },
+          {
+            "source_time_units": 24.0,
+            "source_nominal_days": 2.0,
+            "sA": 10000775341.426535,
+            "sB": 136476091980.37834,
+            "wA": 2054.1373483830416,
+            "wB": 15154.573226689481,
+            "surface_WS_fraction": 2.0539776730699057e-07
+          },
+          {
+            "source_time_units": 36.0,
+            "source_nominal_days": 3.0,
+            "sA": 10000003406.80233,
+            "sB": 258849626019.7081,
+            "wA": 3374.114578820117,
+            "wB": 43149.819530355795,
+            "surface_WS_fraction": 3.3741122908626084e-07
+          },
+          {
+            "source_time_units": 48.0,
+            "source_nominal_days": 4.0,
+            "sA": 9999995308.963682,
+            "sB": 382697330351.74255,
+            "wA": 4694.113135419631,
+            "wB": 84981.17357106293,
+            "surface_WS_fraction": 4.694113133975338e-07
+          },
+          {
+            "source_time_units": 60.0,
+            "source_nominal_days": 5.0,
+            "sA": 10004017606.502768,
+            "sB": 508042023253.8946,
+            "wA": 6018.376254799363,
+            "wB": 140790.11842204377,
+            "surface_WS_fraction": 6.01595565991293e-07
+          },
+          {
+            "source_time_units": 72.0,
+            "source_nominal_days": 6.0,
+            "sA": 9999992666.575237,
+            "sB": 634905992705.8652,
+            "wA": 7337.850943119939,
+            "wB": 210760.88633398066,
+            "surface_WS_fraction": 7.337850939872075e-07
+          },
+          {
+            "source_time_units": 84.0,
+            "source_nominal_days": 7.0,
+            "sA": 10000008151.563713,
+            "sB": 763300368410.8916,
+            "wA": 8663.023447658214,
+            "wB": 295012.71892719285,
+            "surface_WS_fraction": 8.663008881166424e-07
+          },
+          {
+            "source_time_units": 96.0,
+            "source_nominal_days": 8.0,
+            "sA": 10003274083.919794,
+            "sB": 893238368286.304,
+            "wA": 9989.99959374563,
+            "wB": 393713.5058245147,
+            "surface_WS_fraction": 9.98671988111545e-07
+          }
+        ],
+        "max_relative_capacity_overshoot": 0.0009979999114555493,
+        "minimum_population": 0.0
+      },
+      {
+        "step": 0.0005,
+        "records": [
+          {
+            "source_time_units": 0.0,
+            "source_nominal_days": 0.0,
+            "sA": 100000.0,
+            "sB": 10000000.0,
+            "wA": 0.0,
+            "wB": 0.0,
+            "surface_WS_fraction": 0.0
+          },
+          {
+            "source_time_units": 12.0,
+            "source_nominal_days": 1.0,
+            "sA": 10000963158.420887,
+            "sB": 15551842934.47527,
+            "wA": 734.0269650141678,
+            "wB": 856.7757710135024,
+            "surface_WS_fraction": 7.339562195284621e-08
+          },
+          {
+            "source_time_units": 24.0,
+            "source_nominal_days": 2.0,
+            "sA": 10000153902.04225,
+            "sB": 136470031192.95972,
+            "wA": 2054.0671121354635,
+            "wB": 15156.021759382096,
+            "surface_WS_fraction": 2.0540350782035346e-07
+          },
+          {
+            "source_time_units": 36.0,
+            "source_nominal_days": 3.0,
+            "sA": 9999997987.118904,
+            "sB": 258840996064.79916,
+            "wA": 3374.062013312544,
+            "wB": 43150.934391144096,
+            "surface_WS_fraction": 3.374061554041724e-07
+          },
+          {
+            "source_time_units": 48.0,
+            "source_nominal_days": 4.0,
+            "sA": 9999995306.557556,
+            "sB": 382688611987.1927,
+            "wA": 4694.0609361994475,
+            "wB": 84982.05367877397,
+            "surface_WS_fraction": 4.6940609359091235e-07
+          },
+          {
+            "source_time_units": 60.0,
+            "source_nominal_days": 5.0,
+            "sA": 10000995828.85211,
+            "sB": 508034338864.1351,
+            "wA": 6016.036171024802,
+            "wB": 140792.47238147084,
+            "surface_WS_fraction": 6.015433517892732e-07
+          },
+          {
+            "source_time_units": 72.0,
+            "source_nominal_days": 6.0,
+            "sA": 9999992665.202564,
+            "sB": 634892243003.8064,
+            "wA": 7335.904144736711,
+            "wB": 210742.840054296,
+            "surface_WS_fraction": 7.33590414392484e-07
+          },
+          {
+            "source_time_units": 84.0,
+            "source_nominal_days": 7.0,
+            "sA": 9999995994.0376,
+            "sB": 763283073991.9089,
+            "wA": 8658.473500037471,
+            "wB": 294968.24094155506,
+            "surface_WS_fraction": 8.65846947167494e-07
+          },
+          {
+            "source_time_units": 96.0,
+            "source_nominal_days": 8.0,
+            "sA": 10000944920.251474,
+            "sB": 893221718111.9412,
+            "wA": 9981.80055957796,
+            "wB": 393624.7525292019,
+            "surface_WS_fraction": 9.980847486403378e-07
+          }
+        ],
+        "max_relative_capacity_overshoot": 0.0004989999563078662,
+        "minimum_population": 0.0
+      }
+    ]
+  },
+  "event_model_scenarios": {
+    "source": [
+      {
+        "relative_tolerance": 1e-08,
+        "capacity_event_time": 10.446294846024017,
+        "records": [
+          {
+            "source_time_units": 0,
+            "source_nominal_days": 0.0,
+            "sA": 100000.00000000001,
+            "sB": 10000000.0,
+            "wA": 0.0,
+            "wB": 0.0,
+            "surface_WS_fraction": 0.0
+          },
+          {
+            "source_time_units": 12,
+            "source_nominal_days": 1.0,
+            "sA": 9999998799.909542,
+            "sB": 15577395044.864721,
+            "wA": 1200.0904576420712,
+            "wB": 664.3571148513684,
+            "surface_WS_fraction": 1.2000904576420713e-07
+          },
+          {
+            "source_time_units": 24,
+            "source_nominal_days": 2.0,
+            "sA": 9999899326.607723,
+            "sB": 136488155742.39162,
+            "wA": 100673.39227553582,
+            "wB": 141214.91831947115,
+            "surface_WS_fraction": 1.0067339227553583e-05
+          },
+          {
+            "source_time_units": 36,
+            "source_nominal_days": 3.0,
+            "sA": 9993268050.622791,
+            "sB": 258846419793.79022,
+            "wA": 6731949.377209317,
+            "wB": 9638384.455320273,
+            "surface_WS_fraction": 0.0006731949377209317
+          },
+          {
+            "source_time_units": 48,
+            "source_nominal_days": 4.0,
+            "sA": 9560870582.026152,
+            "sB": 381874771685.8634,
+            "wA": 439129417.9738486,
+            "wB": 640942514.8094434,
+            "surface_WS_fraction": 0.04391294179738486
+          },
+          {
+            "source_time_units": 60,
+            "source_nominal_days": 5.0,
+            "sA": 919334650.7936817,
+            "sB": 469930004169.80743,
+            "wA": 9080665349.206318,
+            "wB": 31016837925.200348,
+            "surface_WS_fraction": 0.9080665349206318
+          },
+          {
+            "source_time_units": 72,
+            "source_nominal_days": 6.0,
+            "sA": 250826.95825684455,
+            "sB": 477988754446.13336,
+            "wA": 9999749173.041742,
+            "wB": 131693119034.28113,
+            "surface_WS_fraction": 0.9999749173041743
+          },
+          {
+            "source_time_units": 84,
+            "source_nominal_days": 7.0,
+            "sA": 189.94701589392093,
+            "sB": 483759790632.74054,
+            "wA": 9999999810.052984,
+            "wB": 235564673620.90198,
+            "surface_WS_fraction": 0.9999999810052984
+          },
+          {
+            "source_time_units": 96,
+            "source_nominal_days": 8.0,
+            "sA": 133.58410377861674,
+            "sB": 489599881414.52386,
+            "wA": 9999999866.415895,
+            "wB": 340501699744.8536,
+            "surface_WS_fraction": 0.9999999866415896
+          }
+        ],
+        "nonnegative_at_solver_nodes": true,
+        "scope": "Numerical event-based adaptation with exact saturated coordinate, not a certified ODE solution or biological prediction."
+      },
+      {
+        "relative_tolerance": 1e-10,
+        "capacity_event_time": 10.4462948704862,
+        "records": [
+          {
+            "source_time_units": 0,
+            "source_nominal_days": 0.0,
+            "sA": 100000.00000000001,
+            "sB": 10000000.0,
+            "wA": 0.0,
+            "wB": 0.0,
+            "surface_WS_fraction": 0.0
+          },
+          {
+            "source_time_units": 12,
+            "source_nominal_days": 1.0,
+            "sA": 9999998799.90956,
+            "sB": 15577394799.861422,
+            "wA": 1200.0904413242467,
+            "wB": 664.3570981313634,
+            "surface_WS_fraction": 1.2000904413242468e-07
+          },
+          {
+            "source_time_units": 24,
+            "source_nominal_days": 2.0,
+            "sA": 9999899326.608812,
+            "sB": 136488155494.43256,
+            "wA": 100673.39118725737,
+            "wB": 141214.91676767272,
+            "surface_WS_fraction": 1.0067339118725736e-05
+          },
+          {
+            "source_time_units": 36,
+            "source_nominal_days": 3.0,
+            "sA": 9993268050.695314,
+            "sB": 258846419542.97064,
+            "wA": 6731949.304684419,
+            "wB": 9638384.351407979,
+            "surface_WS_fraction": 0.0006731949304684419
+          },
+          {
+            "source_time_units": 48,
+            "source_nominal_days": 4.0,
+            "sA": 9560870586.651077,
+            "sB": 381874771440.79865,
+            "wA": 439129413.3489222,
+            "wB": 640942507.9264855,
+            "surface_WS_fraction": 0.04391294133489222
+          },
+          {
+            "source_time_units": 60,
+            "source_nominal_days": 5.0,
+            "sA": 919334667.247922,
+            "sB": 469930004176.8618,
+            "wA": 9080665332.752079,
+            "wB": 31016837703.365105,
+            "surface_WS_fraction": 0.9080665332752078
+          },
+          {
+            "source_time_units": 72,
+            "source_nominal_days": 6.0,
+            "sA": 250826.96371692137,
+            "sB": 477988754498.5061,
+            "wA": 9999749173.036283,
+            "wB": 131693118769.29419,
+            "surface_WS_fraction": 0.9999749173036283
+          },
+          {
+            "source_time_units": 84,
+            "source_nominal_days": 7.0,
+            "sA": 189.94701811436698,
+            "sB": 483759790685.75885,
+            "wA": 9999999810.052982,
+            "wB": 235564673353.18616,
+            "surface_WS_fraction": 0.9999999810052982
+          },
+          {
+            "source_time_units": 96,
+            "source_nominal_days": 8.0,
+            "sA": 133.5841071092858,
+            "sB": 489599881468.1819,
+            "wA": 9999999866.415894,
+            "wB": 340501699474.39307,
+            "surface_WS_fraction": 0.9999999866415893
+          }
+        ],
+        "nonnegative_at_solver_nodes": true,
+        "scope": "Numerical event-based adaptation with exact saturated coordinate, not a certified ODE solution or biological prediction."
+      }
+    ],
+    "equal_dispersal": [
+      {
+        "relative_tolerance": 1e-08,
+        "capacity_event_time": 10.446294846234306,
+        "records": [
+          {
+            "source_time_units": 0,
+            "source_nominal_days": 0.0,
+            "sA": 100000.00000000001,
+            "sB": 10000000.0,
+            "wA": 0.0,
+            "wB": 0.0,
+            "surface_WS_fraction": 0.0
+          },
+          {
+            "source_time_units": 12,
+            "source_nominal_days": 1.0,
+            "sA": 9999999401.770586,
+            "sB": 15577394866.402096,
+            "wA": 598.229414235548,
+            "wB": 904.7851859662379,
+            "surface_WS_fraction": 5.98229414235548e-08
+          },
+          {
+            "source_time_units": 24,
+            "source_nominal_days": 2.0,
+            "sA": 9999999288.999233,
+            "sB": 136488329018.03653,
+            "wA": 711.0007673666289,
+            "wB": 9012.396767838869,
+            "surface_WS_fraction": 7.110007673666289e-08
+          },
+          {
+            "source_time_units": 36,
+            "source_nominal_days": 3.0,
+            "sA": 9999999270.358253,
+            "sB": 258858934150.40845,
+            "wA": 729.6417467865737,
+            "wB": 17850.931650925217,
+            "surface_WS_fraction": 7.296417467865737e-08
+          },
+          {
+            "source_time_units": 48,
+            "source_nominal_days": 4.0,
+            "sA": 9999999267.27692,
+            "sB": 382706832440.0929,
+            "wA": 732.7230800143705,
+            "wB": 26900.827525794575,
+            "surface_WS_fraction": 7.327230800143705e-08
+          },
+          {
+            "source_time_units": 60,
+            "source_nominal_days": 5.0,
+            "sA": 9999999266.767578,
+            "sB": 508049858296.97003,
+            "wA": 733.2324209810673,
+            "wB": 36077.29452990227,
+            "surface_WS_fraction": 7.332324209810674e-08
+          },
+          {
+            "source_time_units": 72,
+            "source_nominal_days": 6.0,
+            "sA": 9999999266.683386,
+            "sB": 634906061349.3099,
+            "wA": 733.3166144782505,
+            "wB": 45367.423402793975,
+            "surface_WS_fraction": 7.333166144782505e-08
+          },
+          {
+            "source_time_units": 84,
+            "source_nominal_days": 7.0,
+            "sA": 9999999266.669468,
+            "sB": 763293709111.8616,
+            "wA": 733.3305315700057,
+            "wB": 54770.20002663294,
+            "surface_WS_fraction": 7.333305315700058e-08
+          },
+          {
+            "source_time_units": 96,
+            "source_nominal_days": 8.0,
+            "sA": 9999999266.667168,
+            "sB": 893231289627.7965,
+            "wA": 733.3328320498457,
+            "wB": 64286.59005755748,
+            "surface_WS_fraction": 7.333328320498457e-08
+          }
+        ],
+        "nonnegative_at_solver_nodes": true,
+        "scope": "Numerical event-based adaptation with exact saturated coordinate, not a certified ODE solution or biological prediction."
+      },
+      {
+        "relative_tolerance": 1e-10,
+        "capacity_event_time": 10.44629487069751,
+        "records": [
+          {
+            "source_time_units": 0,
+            "source_nominal_days": 0.0,
+            "sA": 100000.00000000001,
+            "sB": 10000000.0,
+            "wA": 0.0,
+            "wB": 0.0,
+            "surface_WS_fraction": 0.0
+          },
+          {
+            "source_time_units": 12,
+            "source_nominal_days": 1.0,
+            "sA": 9999999401.770588,
+            "sB": 15577394621.388563,
+            "wA": 598.2294122237947,
+            "wB": 904.7851686497527,
+            "surface_WS_fraction": 5.982294122237948e-08
+          },
+          {
+            "source_time_units": 24,
+            "source_nominal_days": 2.0,
+            "sA": 9999999288.999233,
+            "sB": 136488328770.0652,
+            "wA": 711.0007670340887,
+            "wB": 9012.396739043756,
+            "surface_WS_fraction": 7.110007670340887e-08
+          },
+          {
+            "source_time_units": 36,
+            "source_nominal_days": 3.0,
+            "sA": 9999999270.358253,
+            "sB": 258858933899.44363,
+            "wA": 729.641746731605,
+            "wB": 17850.93161993914,
+            "surface_WS_fraction": 7.296417467316051e-08
+          },
+          {
+            "source_time_units": 48,
+            "source_nominal_days": 4.0,
+            "sA": 9999999267.27692,
+            "sB": 382706832186.0984,
+            "wA": 732.7230800052837,
+            "wB": 26900.827494149406,
+            "surface_WS_fraction": 7.327230800052836e-08
+          },
+          {
+            "source_time_units": 60,
+            "source_nominal_days": 5.0,
+            "sA": 9999999266.767578,
+            "sB": 508049858039.9096,
+            "wA": 733.2324209795652,
+            "wB": 36077.29449784788,
+            "surface_WS_fraction": 7.332324209795652e-08
+          },
+          {
+            "source_time_units": 72,
+            "source_nominal_days": 6.0,
+            "sA": 9999999266.683386,
+            "sB": 634906061089.147,
+            "wA": 733.316614478002,
+            "wB": 45367.423370368226,
+            "surface_WS_fraction": 7.333166144780019e-08
+          },
+          {
+            "source_time_units": 84,
+            "source_nominal_days": 7.0,
+            "sA": 9999999266.669468,
+            "sB": 763293708848.5574,
+            "wA": 733.3305315699645,
+            "wB": 54770.19999383867,
+            "surface_WS_fraction": 7.333305315699645e-08
+          },
+          {
+            "source_time_units": 96,
+            "source_nominal_days": 8.0,
+            "sA": 9999999266.667168,
+            "sB": 893231289361.315,
+            "wA": 733.3328320498388,
+            "wB": 64286.59002439163,
+            "surface_WS_fraction": 7.333328320498387e-08
+          }
+        ],
+        "nonnegative_at_solver_nodes": true,
+        "scope": "Numerical event-based adaptation with exact saturated coordinate, not a certified ODE solution or biological prediction."
+      }
+    ],
+    "neutral_retention_slice": [
+      {
+        "relative_tolerance": 1e-08,
+        "capacity_event_time": 10.446294846171345,
+        "records": [
+          {
+            "source_time_units": 0,
+            "source_nominal_days": 0.0,
+            "sA": 100000.00000000001,
+            "sB": 10000000.0,
+            "wA": 0.0,
+            "wB": 0.0,
+            "surface_WS_fraction": 0.0
+          },
+          {
+            "source_time_units": 12,
+            "source_nominal_days": 1.0,
+            "sA": 9999999265.69288,
+            "sB": 15577394897.398975,
+            "wA": 734.307118054133,
+            "wB": 858.4896671888077,
+            "surface_WS_fraction": 7.34307118054133e-08
+          },
+          {
+            "source_time_units": 24,
+            "source_nominal_days": 2.0,
+            "sA": 9999997945.693222,
+            "sB": 136488321542.553,
+            "wA": 2054.306777564371,
+            "wB": 15160.556378122654,
+            "surface_WS_fraction": 2.0543067775643708e-07
+          },
+          {
+            "source_time_units": 36,
+            "source_nominal_days": 3.0,
+            "sA": 9999996625.693886,
+            "sB": 258858903869.6644,
+            "wA": 3374.306114730731,
+            "wB": 43158.28440767587,
+            "surface_WS_fraction": 3.374306114730731e-07
+          },
+          {
+            "source_time_units": 48,
+            "source_nominal_days": 4.0,
+            "sA": 9999995305.69487,
+            "sB": 382706763263.57965,
+            "wA": 4694.305129553293,
+            "wB": 84992.27589700649,
+            "surface_WS_fraction": 4.6943051295532933e-07
+          },
+          {
+            "source_time_units": 60,
+            "source_nominal_days": 5.0,
+            "sA": 9999993985.696178,
+            "sB": 508049733839.59106,
+            "wA": 6014.30382203214,
+            "wB": 140804.57682013794,
+            "surface_WS_fraction": 6.01430382203214e-07
+          },
+          {
+            "source_time_units": 72,
+            "source_nominal_days": 6.0,
+            "sA": 9999992665.697807,
+            "sB": 634905865011.5795,
+            "wA": 7334.302192167356,
+            "wB": 210738.69181481228,
+            "surface_WS_fraction": 7.334302192167356e-07
+          },
+          {
+            "source_time_units": 84,
+            "source_nominal_days": 7.0,
+            "sA": 9999991345.69976,
+            "sB": 763293424091.1621,
+            "wA": 8654.300239958971,
+            "wB": 294939.59916573425,
+            "surface_WS_fraction": 8.654300239958972e-07
+          },
+          {
+            "source_time_units": 96,
+            "source_nominal_days": 8.0,
+            "sA": 9999990025.702034,
+            "sB": 893230898918.2166,
+            "wA": 9974.297965407119,
+            "wB": 393553.7659417756,
+            "surface_WS_fraction": 9.974297965407118e-07
+          }
+        ],
+        "nonnegative_at_solver_nodes": true,
+        "scope": "Numerical event-based adaptation with exact saturated coordinate, not a certified ODE solution or biological prediction."
+      },
+      {
+        "relative_tolerance": 1e-10,
+        "capacity_event_time": 10.446294870634244,
+        "records": [
+          {
+            "source_time_units": 0,
+            "source_nominal_days": 0.0,
+            "sA": 100000.00000000001,
+            "sB": 10000000.0,
+            "wA": 0.0,
+            "wB": 0.0,
+            "surface_WS_fraction": 0.0
+          },
+          {
+            "source_time_units": 12,
+            "source_nominal_days": 1.0,
+            "sA": 9999999265.692886,
+            "sB": 15577394652.388504,
+            "wA": 734.3071134421167,
+            "wB": 858.4896493554569,
+            "surface_WS_fraction": 7.343071134421167e-08
+          },
+          {
+            "source_time_units": 24,
+            "source_nominal_days": 2.0,
+            "sA": 9999997945.693228,
+            "sB": 136488321294.58484,
+            "wA": 2054.3067729523555,
+            "wB": 15160.556312790479,
+            "surface_WS_fraction": 2.0543067729523553e-07
+          },
+          {
+            "source_time_units": 36,
+            "source_nominal_days": 3.0,
+            "sA": 9999996625.69389,
+            "sB": 258858903618.70273,
+            "wA": 3374.3061101187145,
+            "wB": 43158.2842943575,
+            "surface_WS_fraction": 3.3743061101187145e-07
+          },
+          {
+            "source_time_units": 48,
+            "source_nominal_days": 4.0,
+            "sA": 9999995305.694876,
+            "sB": 382706763009.5883,
+            "wA": 4694.30512494128,
+            "wB": 84992.27573520964,
+            "surface_WS_fraction": 4.69430512494128e-07
+          },
+          {
+            "source_time_units": 60,
+            "source_nominal_days": 5.0,
+            "sA": 9999993985.696182,
+            "sB": 508049733582.53326,
+            "wA": 6014.303817420133,
+            "wB": 140804.57660936512,
+            "surface_WS_fraction": 6.014303817420133e-07
+          },
+          {
+            "source_time_units": 72,
+            "source_nominal_days": 6.0,
+            "sA": 9999992665.697813,
+            "sB": 634905864751.4186,
+            "wA": 7334.30218755532,
+            "wB": 210738.69155456085,
+            "surface_WS_fraction": 7.334302187555321e-07
+          },
+          {
+            "source_time_units": 84,
+            "source_nominal_days": 7.0,
+            "sA": 9999991345.699764,
+            "sB": 763293423827.8607,
+            "wA": 8654.300235346964,
+            "wB": 294939.5988554969,
+            "surface_WS_fraction": 8.654300235346964e-07
+          },
+          {
+            "source_time_units": 96,
+            "source_nominal_days": 8.0,
+            "sA": 9999990025.70204,
+            "sB": 893230898651.7368,
+            "wA": 9974.297960795115,
+            "wB": 393553.7655810394,
+            "surface_WS_fraction": 9.974297960795115e-07
+          }
+        ],
+        "nonnegative_at_solver_nodes": true,
+        "scope": "Numerical event-based adaptation with exact saturated coordinate, not a certified ODE solution or biological prediction."
+      }
+    ]
+  },
+  "source_same_slice_rational_net": "7/30",
+  "raw_xml_crosscheck": {
+    "literal_cohort_cells": 11,
+    "areas": 784
+  },
+  "source_manifest_sha256": "3c31045c476235cb23e09768d24fdbb35ca5364efe4af1c3c584b9b124979084",
+  "script_sha256": "baa325d12da1f4dda268409419759fa10ffeffa5ff013d66284ac11d426c8ef1",
+  "outputs_sha256": {
+    "pellicle-cohorts.csv": "4738ec4eea13e6830d39042daba566b0d08a694aafe09e63b7c7f7c19756b74f",
+    "colony-areas.csv": "31373412e0e5c1291e89a659e85e182ab218ab85f3825c502222aa34aee4a8f6"
+  }
+}

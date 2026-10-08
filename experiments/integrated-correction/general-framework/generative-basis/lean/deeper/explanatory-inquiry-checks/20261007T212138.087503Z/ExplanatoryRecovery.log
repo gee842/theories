@@ -1,0 +1,10 @@
+'Generative.ExplanatoryRecovery.recovery_iff_consistent_predecessors' does not depend on any axioms
+'Generative.ExplanatoryRecovery.conflicting_predecessors_prevent_recovery' does not depend on any axioms
+'Generative.ExplanatoryRecovery.recovery_composes' does not depend on any axioms
+'Generative.ExplanatoryRecovery.merge_ambiguity_persists' does not depend on any axioms
+'Generative.ExplanatoryRecovery.recorded_step_projects' does not depend on any axioms
+'Generative.ExplanatoryRecovery.recorded_trace_projects' does not depend on any axioms
+'Generative.ExplanatoryRecovery.recorded_probe_exists' does not depend on any axioms
+'Generative.ExplanatoryRecovery.recorded_probe_retains_original' does not depend on any axioms
+'Generative.ExplanatoryRecovery.recorded_probe_recovers_original' does not depend on any axioms
+'Generative.ExplanatoryRecovery.recorded_support_still_cannot_return' does not depend on any axioms

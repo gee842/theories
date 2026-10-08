@@ -1,0 +1,11 @@
+'WisdomGoalGrounds.achievementProfile' does not depend on any axioms
+'WisdomGoalGrounds.Acceptable' does not depend on any axioms
+'WisdomGoalGrounds.retentionCase' does not depend on any axioms
+'WisdomGoalGrounds.fixedRule' does not depend on any axioms
+'WisdomGoalGrounds.achievement_profiles_equal' depends on axioms: [Quot.sound]
+'WisdomGoalGrounds.retaining_goal_preferred' depends on axioms: [propext]
+'WisdomGoalGrounds.revision_frontier_iff' depends on axioms: [propext]
+'WisdomGoalGrounds.retention_frontier_iff' depends on axioms: [propext]
+'WisdomGoalGrounds.adequate_goal_selector_distinguishes' depends on axioms: [propext]
+'WisdomGoalGrounds.attainment_only_selector_insufficient' depends on axioms: [propext, Quot.sound]
+'WisdomGoalGrounds.fixed_ground_rule_adequate' depends on axioms: [propext]

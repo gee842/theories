@@ -144,6 +144,12 @@ def role(path: str, content: dict) -> str:
         return "imported-archive"
     if parts[0] == "drafts":
         return "historical-draft"
+    # This package's README and evidence/manifest.json identify a frozen parent
+    # semantic-source capture. Its omitted #print commands change the bytes,
+    # but do not make it another working proof module. Keep the exception narrow:
+    # an arbitrary directory named "evidence" is not necessarily a snapshot.
+    if path.endswith("/reason-consumer/transport/evidence/RecipientReasons.lean"):
+        return "saved-copy"
     if any(p == "development" or (p.endswith("-development") and p != "valuation-development") or p.startswith("attempt-") or p in ("review-history", "review-probe-authority") for p in parts[:-1]) or parts[0] == "_process":
         return "development-attempt"
     if any(

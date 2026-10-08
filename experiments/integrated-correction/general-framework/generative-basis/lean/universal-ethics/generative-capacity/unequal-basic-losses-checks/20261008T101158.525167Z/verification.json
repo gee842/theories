@@ -1,0 +1,427 @@
+{
+  "status": "passed",
+  "utc": "20261008T101158.525167Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "unequal-basic-losses-checks/20261008T101158.525167Z",
+  "source_sha256": {
+    "PracticalJudgment": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "UnequalBasicLosses": "38d70d545e0e7ea781b75ee1ef87bbeea28ff246a63a2e2002d48e150534b443"
+  },
+  "checker_sha256": {
+    "check_unequal_basic_losses.py": "802afe6b2c549528324bfa5b885d8a7fe163571119eb377f7141b416bb7c4c95",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Standard two-tier cumulative loss dominance is equivalent to unanimity within an explicitly defined family of additive diagnostics with positive natural base and severity increment. The strict version, crossed-case reversal, invariance under repeated ground reports, raw-row counting failure, and a common-support dependency counterexample are checked. Equal direct profiles need not determine shared continuation; the inherited J comparator distinguishes that omitted dependency. Actual unit individuation, tier classification, completeness, normative LC force, permissions and appropriate chances are substantive premises. No additive ethical utility, decisive choice, empirical calibration or universal ordering is established.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "modules": [
+    {
+      "module": "PracticalJudgment",
+      "theorems": 30,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Included"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.StrictIncluded"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.included_trans"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.strict_included_irrefl"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.strict_included_trans"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Better"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.better_irrefl"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.better_trans"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.protection_anchor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.no_protection_trade_by_count"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Frontier"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.dominated_excluded"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.finite_frontier"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Required"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.required_performed"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.alternative_defeats_specific_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.impossible_menu_no_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.necessary_means_required"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Assigned"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.unique_responder_required"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.assignment_respects_capacity"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Covered"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.transfer_requires_actual_successor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.no_demand_gap_transfer"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.uncovered_demand_is_failure"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Settled"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Residual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.settlement_removes_residual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.unfulfilled_unreleased_remains"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Robust"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.robust_at_actual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.robust_under_refinement"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.required_under_faithful_redescription"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.withinCeiling"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.optionalFormation"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.supplied_ceiling_bounds_optional_gain"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.independent_choices_not_joint_capacity"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.basis"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.event"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.mixed_repair_anchor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.repair_retains_real_loss"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.protectedOne"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.noGain"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.competing_claims_incomparable"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.collective_duty_without_individual_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.uncertain_worlds_need_common_plan"
+        }
+      ],
+      "axiom_dependencies": {
+        "PracticalJudgment.Included": [],
+        "PracticalJudgment.StrictIncluded": [],
+        "PracticalJudgment.included_trans": [],
+        "PracticalJudgment.strict_included_irrefl": [],
+        "PracticalJudgment.strict_included_trans": [],
+        "PracticalJudgment.Better": [],
+        "PracticalJudgment.better_irrefl": [],
+        "PracticalJudgment.better_trans": [],
+        "PracticalJudgment.protection_anchor": [],
+        "PracticalJudgment.no_protection_trade_by_count": [],
+        "PracticalJudgment.Frontier": [],
+        "PracticalJudgment.dominated_excluded": [],
+        "PracticalJudgment.finite_frontier": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.Required": [],
+        "PracticalJudgment.required_performed": [],
+        "PracticalJudgment.alternative_defeats_specific_duty": [],
+        "PracticalJudgment.impossible_menu_no_duty": [],
+        "PracticalJudgment.necessary_means_required": [],
+        "PracticalJudgment.Assigned": [],
+        "PracticalJudgment.unique_responder_required": [],
+        "PracticalJudgment.assignment_respects_capacity": [],
+        "PracticalJudgment.Covered": [],
+        "PracticalJudgment.transfer_requires_actual_successor": [],
+        "PracticalJudgment.no_demand_gap_transfer": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.uncovered_demand_is_failure": [],
+        "PracticalJudgment.Settled": [],
+        "PracticalJudgment.Residual": [],
+        "PracticalJudgment.settlement_removes_residual": [],
+        "PracticalJudgment.unfulfilled_unreleased_remains": [],
+        "PracticalJudgment.Robust": [],
+        "PracticalJudgment.robust_at_actual": [],
+        "PracticalJudgment.robust_under_refinement": [],
+        "PracticalJudgment.required_under_faithful_redescription": [],
+        "PracticalJudgment.withinCeiling": [],
+        "PracticalJudgment.optionalFormation": [],
+        "PracticalJudgment.supplied_ceiling_bounds_optional_gain": [
+          "propext"
+        ],
+        "PracticalJudgment.independent_choices_not_joint_capacity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.basis": [],
+        "PracticalJudgment.event": [],
+        "PracticalJudgment.mixed_repair_anchor": [],
+        "PracticalJudgment.repair_retains_real_loss": [],
+        "PracticalJudgment.protectedOne": [],
+        "PracticalJudgment.noGain": [],
+        "PracticalJudgment.competing_claims_incomparable": [
+          "propext"
+        ],
+        "PracticalJudgment.collective_duty_without_individual_duty": [
+          "propext"
+        ],
+        "PracticalJudgment.uncertain_worlds_need_common_plan": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "UnequalBasicLosses",
+      "theorems": 11,
+      "declarations": [
+        {
+          "kind": "abbrev",
+          "name": "UnequalBasicLosses.Profile"
+        },
+        {
+          "kind": "def",
+          "name": "UnequalBasicLosses.total"
+        },
+        {
+          "kind": "def",
+          "name": "UnequalBasicLosses.CumulativeLE"
+        },
+        {
+          "kind": "def",
+          "name": "UnequalBasicLosses.CumulativeLT"
+        },
+        {
+          "kind": "def",
+          "name": "UnequalBasicLosses.diagnosticCost"
+        },
+        {
+          "kind": "theorem",
+          "name": "UnequalBasicLosses.positive_linear_diagnostics_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "UnequalBasicLosses.cumulative_iff_all_positive_diagnostics"
+        },
+        {
+          "kind": "theorem",
+          "name": "UnequalBasicLosses.strict_cumulative_iff_all_positive_diagnostics"
+        },
+        {
+          "kind": "theorem",
+          "name": "UnequalBasicLosses.one_higher_two_lower_cross_thresholds"
+        },
+        {
+          "kind": "theorem",
+          "name": "UnequalBasicLosses.positive_diagnostics_reverse_crossed_case"
+        },
+        {
+          "kind": "def",
+          "name": "UnequalBasicLosses.reportedGrounds"
+        },
+        {
+          "kind": "theorem",
+          "name": "UnequalBasicLosses.same_reported_grounds_same_inventory"
+        },
+        {
+          "kind": "theorem",
+          "name": "UnequalBasicLosses.duplicating_reports_does_not_multiply_grounds"
+        },
+        {
+          "kind": "theorem",
+          "name": "UnequalBasicLosses.duplicate_row_count_can_reverse_comparison"
+        },
+        {
+          "kind": "inductive",
+          "name": "UnequalBasicLosses.SupportPoint"
+        },
+        {
+          "kind": "def",
+          "name": "UnequalBasicLosses.directLossProfile"
+        },
+        {
+          "kind": "def",
+          "name": "UnequalBasicLosses.provisionContinues"
+        },
+        {
+          "kind": "theorem",
+          "name": "UnequalBasicLosses.equal_direct_profiles_different_common_continuation"
+        },
+        {
+          "kind": "theorem",
+          "name": "UnequalBasicLosses.direct_profile_does_not_determine_continuation"
+        },
+        {
+          "kind": "theorem",
+          "name": "UnequalBasicLosses.common_support_distinguishes_histories_in_existing_comparator"
+        }
+      ],
+      "axiom_dependencies": {
+        "UnequalBasicLosses.Profile": [],
+        "UnequalBasicLosses.total": [],
+        "UnequalBasicLosses.CumulativeLE": [],
+        "UnequalBasicLosses.CumulativeLT": [],
+        "UnequalBasicLosses.diagnosticCost": [],
+        "UnequalBasicLosses.positive_linear_diagnostics_iff": [
+          "propext",
+          "Quot.sound"
+        ],
+        "UnequalBasicLosses.cumulative_iff_all_positive_diagnostics": [
+          "propext",
+          "Quot.sound"
+        ],
+        "UnequalBasicLosses.strict_cumulative_iff_all_positive_diagnostics": [
+          "propext",
+          "Quot.sound"
+        ],
+        "UnequalBasicLosses.one_higher_two_lower_cross_thresholds": [
+          "propext"
+        ],
+        "UnequalBasicLosses.positive_diagnostics_reverse_crossed_case": [],
+        "UnequalBasicLosses.reportedGrounds": [
+          "propext"
+        ],
+        "UnequalBasicLosses.same_reported_grounds_same_inventory": [
+          "propext"
+        ],
+        "UnequalBasicLosses.duplicating_reports_does_not_multiply_grounds": [
+          "propext"
+        ],
+        "UnequalBasicLosses.duplicate_row_count_can_reverse_comparison": [
+          "propext"
+        ],
+        "UnequalBasicLosses.SupportPoint": [],
+        "UnequalBasicLosses.directLossProfile": [],
+        "UnequalBasicLosses.provisionContinues": [],
+        "UnequalBasicLosses.equal_direct_profiles_different_common_continuation": [
+          "propext"
+        ],
+        "UnequalBasicLosses.direct_profile_does_not_determine_continuation": [
+          "propext"
+        ],
+        "UnequalBasicLosses.common_support_distinguishes_histories_in_existing_comparator": [
+          "propext"
+        ]
+      },
+      "kernel_checked": true
+    }
+  ],
+  "artifact_sha256": {
+    "PracticalJudgment.lean": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "PracticalJudgment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PracticalJudgmentAxiomAudit.lean": "c9f412159410854fb031176d7fe7a4c351dfaea59354c7d7a19ec4ad0c6e51a6",
+    "PracticalJudgmentAxiomAudit.log": "d73810d6b1a7343808726234c17bca9d7841acafabd3a17ee8e6145dfabbf1ea",
+    "PracticalJudgmentSignatures.lean": "aec1f9317bc8881cb24e62213fa9db801f59b620595bb90caf082a5debc9cb66",
+    "PracticalJudgmentSignatures.log": "93b65679f59a01788bfcfbfe0bf5bc3ef93f0cf67516c469f1667c5cdc9abd65",
+    "UnequalBasicLosses.lean": "38d70d545e0e7ea781b75ee1ef87bbeea28ff246a63a2e2002d48e150534b443",
+    "UnequalBasicLosses.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "UnequalBasicLossesAxiomAudit.lean": "096813a168769853f733d4c4875b761fdb0305e6d4273ff2d80a0c92ce6a9550",
+    "UnequalBasicLossesAxiomAudit.log": "a4cb7783c820970b26cd98479980aad4c5793aff4c7e33653214a63b991aa6ee",
+    "UnequalBasicLossesSignatures.lean": "8d009f4b705b86eaf0df7be4b9452af9af47c1de572eb1106a0aed4f9c9801b6",
+    "UnequalBasicLossesSignatures.log": "cd39fa20e095b696d607013407ce739937ade048500895c9fccecfcf9f5044fd",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_unequal_basic_losses.py": "802afe6b2c549528324bfa5b885d8a7fe163571119eb377f7141b416bb7c4c95",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

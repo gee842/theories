@@ -1,0 +1,216 @@
+{
+  "status": "passed",
+  "utc": "20261008T102140.539252Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "joint-risk-revision-checks/20261008T102140.539252Z",
+  "source_sha256": {
+    "JointRiskRevision": "eb11c8e112d8cec5a82bf3276d05ffdd2deb0ff58cfa37e719c5b3d4fe751b60"
+  },
+  "checker_sha256": {
+    "check_joint_risk_revision.py": "608c485008dc9db17c21d92dd061d5e42acd0a05c40a26b2fbf5e7799c29e680",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Exact finite joint-count bounds, native support reform, informative joint records, nonzero bounded risk and diagnostic weighting. Event law and weights are supplied; future statistical transfer and ethical risk permission are not derived. No empirical or universal normative claim.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "modules": [
+    {
+      "module": "JointRiskRevision",
+      "theorems": 18,
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "JointRiskRevision.Table"
+        },
+        {
+          "kind": "def",
+          "name": "JointRiskRevision.mass"
+        },
+        {
+          "kind": "def",
+          "name": "JointRiskRevision.leftRisk"
+        },
+        {
+          "kind": "def",
+          "name": "JointRiskRevision.rightRisk"
+        },
+        {
+          "kind": "def",
+          "name": "JointRiskRevision.anyLoss"
+        },
+        {
+          "kind": "def",
+          "name": "JointRiskRevision.Compatible"
+        },
+        {
+          "kind": "theorem",
+          "name": "JointRiskRevision.joint_bounds"
+        },
+        {
+          "kind": "theorem",
+          "name": "JointRiskRevision.compatible_iff"
+        },
+        {
+          "kind": "def",
+          "name": "JointRiskRevision.WithinJointBound"
+        },
+        {
+          "kind": "theorem",
+          "name": "JointRiskRevision.left_bound_suffices"
+        },
+        {
+          "kind": "theorem",
+          "name": "JointRiskRevision.right_bound_suffices"
+        },
+        {
+          "kind": "theorem",
+          "name": "JointRiskRevision.sound_drift_transfer"
+        },
+        {
+          "kind": "inductive",
+          "name": "JointRiskRevision.Mode"
+        },
+        {
+          "kind": "def",
+          "name": "JointRiskRevision.reading"
+        },
+        {
+          "kind": "def",
+          "name": "JointRiskRevision.tally"
+        },
+        {
+          "kind": "def",
+          "name": "JointRiskRevision.record"
+        },
+        {
+          "kind": "theorem",
+          "name": "JointRiskRevision.dispersed_record"
+        },
+        {
+          "kind": "theorem",
+          "name": "JointRiskRevision.shared_record"
+        },
+        {
+          "kind": "theorem",
+          "name": "JointRiskRevision.revised_record"
+        },
+        {
+          "kind": "theorem",
+          "name": "JointRiskRevision.same_mass"
+        },
+        {
+          "kind": "theorem",
+          "name": "JointRiskRevision.better_marginals_worse_joint"
+        },
+        {
+          "kind": "theorem",
+          "name": "JointRiskRevision.repair_preserves_marginals_and_reduces_joint"
+        },
+        {
+          "kind": "theorem",
+          "name": "JointRiskRevision.joint_improvement_can_increase_any_loss"
+        },
+        {
+          "kind": "theorem",
+          "name": "JointRiskRevision.no_marginal_only_joint_estimator"
+        },
+        {
+          "kind": "theorem",
+          "name": "JointRiskRevision.fresh_joint_reading_distinguishes"
+        },
+        {
+          "kind": "theorem",
+          "name": "JointRiskRevision.positive_joint_risk_can_meet_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "JointRiskRevision.marginal_information_leaves_exact_two_options"
+        },
+        {
+          "kind": "def",
+          "name": "JointRiskRevision.diagnosticLoss"
+        },
+        {
+          "kind": "theorem",
+          "name": "JointRiskRevision.diagnostic_choice_changes_with_joint_weight"
+        },
+        {
+          "kind": "theorem",
+          "name": "JointRiskRevision.diagnostic_shared_preferred_iff"
+        }
+      ],
+      "axiom_dependencies": {
+        "JointRiskRevision.Table": [],
+        "JointRiskRevision.mass": [],
+        "JointRiskRevision.leftRisk": [],
+        "JointRiskRevision.rightRisk": [],
+        "JointRiskRevision.anyLoss": [],
+        "JointRiskRevision.Compatible": [],
+        "JointRiskRevision.joint_bounds": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "JointRiskRevision.compatible_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "JointRiskRevision.WithinJointBound": [],
+        "JointRiskRevision.left_bound_suffices": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "JointRiskRevision.right_bound_suffices": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "JointRiskRevision.sound_drift_transfer": [],
+        "JointRiskRevision.Mode": [],
+        "JointRiskRevision.reading": [],
+        "JointRiskRevision.tally": [],
+        "JointRiskRevision.record": [],
+        "JointRiskRevision.dispersed_record": [],
+        "JointRiskRevision.shared_record": [],
+        "JointRiskRevision.revised_record": [],
+        "JointRiskRevision.same_mass": [],
+        "JointRiskRevision.better_marginals_worse_joint": [],
+        "JointRiskRevision.repair_preserves_marginals_and_reduces_joint": [],
+        "JointRiskRevision.joint_improvement_can_increase_any_loss": [],
+        "JointRiskRevision.no_marginal_only_joint_estimator": [
+          "propext",
+          "Quot.sound"
+        ],
+        "JointRiskRevision.fresh_joint_reading_distinguishes": [],
+        "JointRiskRevision.positive_joint_risk_can_meet_bound": [],
+        "JointRiskRevision.marginal_information_leaves_exact_two_options": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "JointRiskRevision.diagnosticLoss": [],
+        "JointRiskRevision.diagnostic_choice_changes_with_joint_weight": [],
+        "JointRiskRevision.diagnostic_shared_preferred_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "kernel_checked": true
+    }
+  ],
+  "artifact_sha256": {
+    "JointRiskRevision.lean": "eb11c8e112d8cec5a82bf3276d05ffdd2deb0ff58cfa37e719c5b3d4fe751b60",
+    "JointRiskRevision.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "JointRiskRevisionAxiomAudit.lean": "a076f23ce1039c7886cfdda7b9c291bf8956826a6a5789b29e13cebc7f4828a0",
+    "JointRiskRevisionAxiomAudit.log": "d4c80af75107c1c5c68dad504a1324fb2d876d1c4853be951bb88333c610cd8e",
+    "JointRiskRevisionSignatures.lean": "8d90f025032b8e8daeac0510e55411e59b9242a5a98acd6c32b73a61bef2b794",
+    "JointRiskRevisionSignatures.log": "e4dac1a8af1ada141de286a8668e1c397b185cf2e8391f93e9e22cc64a742097",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_joint_risk_revision.py": "608c485008dc9db17c21d92dd061d5e42acd0a05c40a26b2fbf5e7799c29e680",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

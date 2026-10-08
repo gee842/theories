@@ -1,0 +1,35 @@
+{
+  "retrieved_at_utc": "2026-10-07T22:53:13.143338+00:00",
+  "files": [
+    {
+      "file": "elife-30373-v2.json",
+      "url": "https://api.elifesciences.org/articles/30373",
+      "version": 2,
+      "license": "CC0-1.0",
+      "sha256": "7d3ee4c0187b665a89288f40b6b5dc0c6ea64140cc797824c7c3e59f2d5b2c20",
+      "bytes": 121079
+    },
+    {
+      "file": "elife-59998-v2.json",
+      "url": "https://api.elifesciences.org/articles/59998",
+      "version": 2,
+      "license": "CC0-1.0",
+      "sha256": "3e8aaef56a76b8a6bf985818b2bf4863a497e01fd28fd0ba81df0dfac1285982",
+      "bytes": 105626
+    },
+    {
+      "file": "elife-59998-fig2-data1-v2.xlsx",
+      "url": "https://cdn.elifesciences.org/articles/59998/elife-59998-fig2-data1-v2.xlsx",
+      "license": "CC0-1.0",
+      "sha256": "750feee0e55624e8400e1b703856eff96033f08e7e303e1ed2f298997223a642",
+      "bytes": 16385
+    },
+    {
+      "file": "elife-59998-fig3-data1-v2.xlsx",
+      "url": "https://cdn.elifesciences.org/articles/59998/elife-59998-fig3-data1-v2.xlsx",
+      "license": "CC0-1.0",
+      "sha256": "e2e77029fc5cc34a3430a3a221a2ad02a8faa4c7d99a527ec2bb69ba2018c448",
+      "bytes": 9626
+    }
+  ]
+}

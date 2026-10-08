@@ -1,0 +1,243 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-08T08:04:50.888506+00:00",
+  "scope": "Owned links, frozen proof/execution bindings, unchanged inherited mechanism, paired C14 and six unchanged completion requirements; not global source review",
+  "local_link_count": 47,
+  "local_links": [
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md",
+      "reference": "EVOLUTION-COMPARISON-PROTOCOL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md",
+      "reference": "../../../../sources/evolutionary-selection/comparative-direction/README.md#direct-comparison-reading"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/DevelopmentalReconstruction.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/EvolutionNetworkComparison.lean"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-network-comparison-verification/verification.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md",
+      "reference": "../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/network-comparison/README.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-DIRECTION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md#current-generative-alignment-priority"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md",
+      "reference": "MICROSCOPY-CORRESPONDENCE-INTEGRATION.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md",
+      "reference": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md#completion-requirements"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-COMPARISON-PROTOCOL.md",
+      "reference": "EVOLUTION-COMPARATIVE-DIRECTION.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/comparative-direction/README.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-COMPARATIVE-DIRECTION.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/comparative-direction/README.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LINEAGE-FORECAST-INTEGRATION.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/comparative-direction/README.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-TRANSFER-INTEGRATION.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/comparative-direction/README.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MAT-HISTORY-INTEGRATION.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/comparative-direction/README.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md"
+    },
+    {
+      "from": "sources/evolutionary-selection/comparative-direction/README.md",
+      "reference": "watson2016.xml"
+    },
+    {
+      "from": "sources/evolutionary-selection/comparative-direction/README.md",
+      "reference": "connectionism-manifest.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/network-comparison/README.md",
+      "reference": "verification.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/network-comparison/README.md",
+      "reference": "Driver.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/network-comparison/README.md",
+      "reference": "check.py"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/network-comparison/README.md",
+      "reference": "../../lean/universal-ethics/EvolutionNetworkComparison.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/network-comparison/README.md",
+      "reference": "../../lean/universal-ethics/evolution-network-comparison-verification/verification.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/network-comparison/README.md",
+      "reference": "../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-COMPARISON-PROTOCOL.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/network-comparison/README.md",
+      "reference": "../../../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-network-comparison-verification/README.md",
+      "reference": "../EvolutionNetworkComparison.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-network-comparison-verification/README.md",
+      "reference": "verification.json"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-network-comparison-verification/README.md",
+      "reference": "check.py"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-network-comparison-verification/README.md",
+      "reference": "../../../ecological-selection/network-comparison/README.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-evolution-connectionism-comparison.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-COMPARISON-PROTOCOL.md"
+    },
+    {
+      "from": "sources/15-codex-theory-conversations/2026-10-08-evolution-connectionism-comparison.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md"
+    },
+    {
+      "from": "RESEARCH.md",
+      "reference": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/README.md",
+      "reference": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "EVOLUTION-NETWORK-COMPARISON.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "EVOLUTION-COMPARISON-PROTOCOL.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "reference": "EVOLUTION-NETWORK-COMPARISON-CHECKS.json"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "reference": "15-codex-theory-conversations/2026-10-08-evolution-connectionism-comparison.md"
+    },
+    {
+      "from": "sources/SOURCES.md",
+      "reference": "evolutionary-selection/comparative-direction/README.md#direct-comparison-reading"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md",
+      "reference": "EvolutionNetworkComparison.lean"
+    },
+    {
+      "from": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/README.md",
+      "reference": "evolution-network-comparison-verification/verification.json"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md"
+    },
+    {
+      "from": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "reference": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-COMPARATIVE-DIRECTION.md",
+      "reference": "EVOLUTION-NETWORK-COMPARISON.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "EVOLUTION-NETWORK-COMPARISON.md"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "EVOLUTION-NETWORK-COMPARISON-INDEX-EDITS.json"
+    },
+    {
+      "from": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "reference": "EVOLUTION-NETWORK-COMPARISON-CHECKS.json"
+    }
+  ],
+  "owned_index_edits": 9,
+  "full_completion_requirements_preserved": 6,
+  "new_theorems": 11,
+  "new_declaration_audits": 24,
+  "executed_cases": 34768,
+  "operative_definitions_do_not_call_original_transitions": true,
+  "inherited_mechanism_sources_unchanged": true,
+  "C14_matches_paired_data": true,
+  "other_entries_preserved_at_edit": 86,
+  "shared_review_pending": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-INFRASTRUCTURE-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-INFRASTRUCTURE-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-HISTORY-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-COMPACTNESS-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-VALUE-NECESSITY.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md"
+    ],
+    "removed_pages": []
+  },
+  "shared_full_render_matches": false,
+  "artifact_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON.md": "9e14a7b5032b160355f3ba989bb1dbfe47935773cbef3834a342419d7a0daa0f",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-COMPARISON-PROTOCOL.md": "88754565b43fea959c60aa5e395124e8d1f841a7fc38e070ff945f1b9bfdc492",
+    "sources/evolutionary-selection/comparative-direction/README.md": "195930f3b32f91b763dc45287e0764c6120cebc71e84893fdd45d399bee09751",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/network-comparison/README.md": "38163193c09bf2e3ef1f40665041c44132429807d858003a186761b93820dc35",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-network-comparison-verification/README.md": "0b8a0bbd6714c9d7f8f01d1b85fdd50ab1753674350a2333f014a13bae772633",
+    "sources/15-codex-theory-conversations/2026-10-08-evolution-connectionism-comparison.md": "2245435dbd7abe472d85f382eaa2a133e2b4db8af4905e6a8146cf1b48a58329",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-NETWORK-COMPARISON-INDEX-EDITS.json": "0fc9056ceb382c25794bc698dcad1c37b54a8ffb50b10318d6934db35704b0ce",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/EvolutionNetworkComparison.lean": "7a6c968147aaace8e4e431f6a7ccd083eec60694c5905b7197840c378eaa2002",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-network-comparison-verification/verification.json": "bc419b28af8a623c9eeeabe4f09b2734d4d775c908c75985f82ce89d6cee8922",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-network-comparison-verification/check.py": "fef9b5434ee41d02a09d1955baedeba81e46d25d821b0d56765768c88de9312e",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/network-comparison/verification.json": "ea7376b54f5f9490edcabd95c45553b41b7baf1a35490949f944b57c9f2651d4",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/network-comparison/check.py": "54b4f63aaab1cfd9e02ddd7a58bb95bee6deab21b5bb4965f9241a8909e4ced2",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/network-comparison/Driver.lean": "67019bf34117c3f9b620f8c2141479f2168b88c69254f253ebc743eb6faa6ad1",
+    "sources/evolutionary-selection/comparative-direction/connectionism-manifest.json": "4b1021820de0d0ac6462ee06026485b4936035e1a90ee0535646aa682b1911d4"
+  },
+  "checker_sha256": "d2578e0ffe3850ab9f2aeb85590064efa05f0080b75b417fe36718563b952679"
+}

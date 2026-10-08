@@ -1,0 +1,21 @@
+'Generative.ContextualLogicAbstraction.mayBy_zero_iff' depends on axioms: [propext]
+'Generative.ContextualLogicAbstraction.mayBy_exact' does not depend on any axioms
+'Generative.ContextualLogicAbstraction.contextual_word_exact' does not depend on any axioms
+'Generative.ContextualLogicAbstraction.contextual_mayBy_exact' does not depend on any axioms
+'Generative.ContextualLogicAbstraction.Lease.same_count' does not depend on any axioms
+'Generative.ContextualLogicAbstraction.Lease.false_held_blocks' depends on axioms: [propext]
+'Generative.ContextualLogicAbstraction.Lease.true_held_allows' does not depend on any axioms
+'Generative.ContextualLogicAbstraction.Lease.count_cannot_decide_readiness' depends on axioms: [propext]
+'Generative.ContextualLogicAbstraction.Lease.restricted_trace_iff' does not depend on any axioms
+'Generative.ContextualLogicAbstraction.Lease.project_preserves' depends on axioms: [propext]
+'Generative.ContextualLogicAbstraction.Lease.project_lifts' depends on axioms: [propext]
+'Generative.ContextualLogicAbstraction.Lease.project_merge' does not depend on any axioms
+'Generative.ContextualLogicAbstraction.Lease.selective_feasible_exact' depends on axioms: [propext]
+'Generative.ContextualLogicAbstraction.Lease.selective_native_exact' depends on axioms: [propext]
+'Generative.ContextualLogicAbstraction.Lease.selective_context_exact' depends on axioms: [propext]
+'Generative.ContextualLogicAbstraction.Lease.selective_readiness_budget' depends on axioms: [propext]
+'Generative.ContextualLogicAbstraction.Lease.safe_projection' depends on axioms: [propext]
+'Generative.ContextualLogicAbstraction.Lease.visible_guard_exact' depends on axioms: [propext, Quot.sound]
+'Generative.ContextualLogicAbstraction.Lease.projection_loses_global_disjointness' depends on axioms: [propext]
+'Generative.ContextualLogicAbstraction.Lease.projection_is_noninjective' does not depend on any axioms
+'Generative.ContextualLogicAbstraction.Lease.hidden_release_lost' depends on axioms: [propext]

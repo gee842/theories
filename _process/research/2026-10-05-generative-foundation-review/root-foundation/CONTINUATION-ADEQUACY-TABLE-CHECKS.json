@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "scope": "Canonical owned C28/F20 rows only; no full-table certification; other generated lines preserved.",
+  "entry_ids": [
+    "C28",
+    "F20"
+  ],
+  "unrelated_entries_preserved": 88,
+  "errors": [],
+  "pending_shared_source_reviews": [
+    "RESEARCH.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+    "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+    "theories/shengsheng-buxi-generative-existence/README.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md",
+    "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-ARGUMENT.md"
+  ]
+}

@@ -1,0 +1,143 @@
+#!/usr/bin/env python3
+"""Fresh checked snapshots for SourceReliance; reuses the disclosed audit scanner."""
+from datetime import datetime, timezone
+import json
+import csv
+import io
+import os
+from pathlib import Path
+import re
+import subprocess
+import sys
+import tempfile
+
+sys.dont_write_bytecode = True
+import importlib.util
+
+GROUND = Path(__file__).resolve().parent.parent / "universal-ethics/generative-capacity"
+spec = importlib.util.spec_from_file_location("audit_support", GROUND / "check.py")
+audit_support = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(audit_support)
+
+
+HERE = Path(__file__).resolve().parent
+SOURCES = {
+    "KnowledgeCorrespondence": HERE / "KnowledgeCorrespondence.lean",
+    "NormativeActivity": GROUND / "NormativeActivity.lean",
+    "StandardsBridge": GROUND / "StandardsBridge.lean",
+    "FormedGrounds": GROUND / "FormedGrounds.lean",
+    "SelectiveRevision": HERE / "SelectiveRevision.lean",
+    "SourceReliance": HERE / "SourceReliance.lean",
+}
+
+
+def declarations(module, source):
+    # Validate exact imports before normalizing the declaration-inventory view.
+    # Original, byte-exact sources are compiled and retained; normalization only
+    # lets the inherited scanner inventory a supported import and noncomputable def.
+    code = audit_support.code_only(source)
+    imports = re.findall(r"^import\s+(.+)$", code, re.M)
+    expected = {"KnowledgeCorrespondence": ["Std"], "NormativeActivity": ["KnowledgeCorrespondence"], "StandardsBridge": ["Std"], "FormedGrounds": ["NormativeActivity", "StandardsBridge"], "SelectiveRevision": ["FormedGrounds"], "SourceReliance": ["SelectiveRevision"]}
+    assert [item.strip() for item in imports] == expected[module], imports
+    inventory = re.sub(r"^import\s+[^\n]+", "import Std", code, flags=re.M)
+    inventory = re.sub(r"^noncomputable def\b", "def", inventory, flags=re.M)
+    return audit_support.declarations(inventory)
+
+
+def main():
+    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S.%fZ")
+    retained = HERE / "source-reliance-checks" / stamp
+    retained.mkdir(parents=True, exist_ok=False)
+    sources = {name: path.read_bytes() for name, path in SOURCES.items()}
+    helpers = {p.name: p.read_bytes() for p in [Path(__file__), GROUND / "check.py"]}
+    for name, data in helpers.items():
+        (retained / name).write_bytes(data)
+    for name, data in sources.items():
+        (retained / (name + ".lean")).write_bytes(data)
+    receipt = {
+        "status": "checking", "utc": stamp, "toolchain": audit_support.TOOLCHAIN,
+        "retained_run": str(retained.relative_to(HERE)),
+        "source_sha256": {name: audit_support.digest(data) for name, data in sources.items()},
+        "checker_sha256": {name: audit_support.digest(data) for name, data in helpers.items()},
+        "scope": "Acquired production-route distinctions, conditional target correctness under covered routes and faults, undistinguishable live reports, and an omitted joint-failure law that defeats extrapolation and is exposed by a further probe. No general semantic, epistemic or ethical sufficiency.",
+    }
+    try:
+        registry = {name: declarations(name, data.decode()) for name, data in sources.items()}
+        lean = Path.home() / ".elan/bin/lean"
+        binary = Path.home() / ".elan/toolchains/leanprover--lean4---v4.29.1/bin/lean"
+        receipt["lean_binary_sha256"] = audit_support.digest(binary.read_bytes())
+        command = [str(lean), "+" + audit_support.TOOLCHAIN]
+        records = []
+        with tempfile.TemporaryDirectory(prefix="generative-source-reliance-lean-") as scratch:
+            work = Path(scratch)
+            env = {**os.environ, "LEAN_PATH": str(work)}
+
+            def run(args, log):
+                p = subprocess.run(command + args, cwd=work, env=env, text=True,
+                                   stdout=subprocess.PIPE, stderr=subprocess.STDOUT, timeout=120)
+                (retained / log).write_text(p.stdout)
+                assert p.returncode == 0, p.stdout
+                assert not re.search(r"\b(?:error|warning):", p.stdout), p.stdout
+                return p.stdout
+
+            receipt["lean_version"] = run(["--version"], "version.log").strip()
+            assert "version 4.29.1" in receipt["lean_version"]
+            for name, data in sources.items():
+                (work / (name + ".lean")).write_bytes(data)
+            for name in sources:
+                run(["-o", name + ".olean", name + ".lean"], name + ".log")
+                audit = "import " + name + "\n" + "\n".join(
+                    "#print axioms " + item["name"] for item in registry[name]) + "\n"
+                audit_name = name + "AxiomAudit.lean"
+                (work / audit_name).write_text(audit)
+                (retained / audit_name).write_text(audit)
+                output = run([audit_name], name + "AxiomAudit.log")
+                signatures = "import " + name + "\n" + "\n".join(
+                    "#check " + item["name"] for item in registry[name]
+                    if item["kind"] == "theorem") + "\n"
+                signature_name = name + "Signatures.lean"
+                (work / signature_name).write_text(signatures)
+                (retained / signature_name).write_text(signatures)
+                run([signature_name], name + "Signatures.log")
+                dependencies = {}
+                for item in registry[name]:
+                    full = item["name"]
+                    if "'" + full + "' does not depend on any axioms" in output:
+                        axioms = []
+                    else:
+                        match = re.search(r"'" + re.escape(full) + r"' depends on axioms:\s*\[([^]]*)\]", output)
+                        assert match, (full, output)
+                        axioms = [a.strip() for a in match[1].split(",") if a.strip()]
+                    assert set(axioms) <= {"propext", "Quot.sound", "Classical.choice"}, (full, axioms)
+                    dependencies[full] = axioms
+                records.append({
+                    "module": name, "theorems": sum(x["kind"] == "theorem" for x in registry[name]),
+                    "declarations": registry[name], "axiom_dependencies": dependencies,
+                    "kernel_checked": True,
+                })
+        receipt["source_unchanged_during_check"] = all(
+            SOURCES[name].read_bytes() == data for name, data in sources.items())
+        assert receipt["source_unchanged_during_check"], "Source changed; only snapshot checked"
+        assert all((GROUND / name if name == "check.py" else HERE / name).read_bytes() == data for name, data in helpers.items()), "Checker changed"
+        receipt["modules"] = records
+        receipt["artifact_sha256"] = {
+            p.name: audit_support.digest(p.read_bytes()) for p in sorted(retained.iterdir()) if p.is_file()
+        }
+        receipt["status"] = "passed"
+    except Exception as error:
+        receipt["status"] = "failed"
+        receipt["error"] = str(error)
+        raise
+    finally:
+        serialized = json.dumps(receipt, indent=2) + "\n"
+        (retained / "verification.json").write_text(serialized)
+        (HERE / "source-reliance-verification.json").write_text(serialized)
+    model = next(r for r in records if r["module"] == "SourceReliance")
+    print(json.dumps({"status": receipt["status"], "new_theorems": model["theorems"],
+                      "new_declaration_audits": len(model["declarations"]),
+                      "axioms": sorted({a for r in records for aa in r["axiom_dependencies"].values() for a in aa}),
+                      "receipt": str(HERE / "source-reliance-verification.json")}))
+
+
+if __name__ == "__main__":
+    main()

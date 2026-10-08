@@ -1,0 +1,63 @@
+Generative.FormedEffectiveLaw.summary_sufficient (reversed : Bool) (s t : Generative.FormedGrounds.State)
+  (e : Generative.FormedGrounds.Event)
+  (same : Generative.FormedEffectiveLaw.project s = Generative.FormedEffectiveLaw.project t) :
+  Generative.FormedEffectiveLaw.project (Generative.FormedGrounds.step reversed e s) =
+    Generative.FormedEffectiveLaw.project (Generative.FormedGrounds.step reversed e t)
+Generative.FormedEffectiveLaw.project_representative (v : Generative.FormedEffectiveLaw.Summary) :
+  Generative.FormedEffectiveLaw.project (Generative.FormedEffectiveLaw.representative v) = v
+Generative.FormedEffectiveLaw.native_step_projects (reversed : Bool) (s : Generative.FormedGrounds.State)
+  (e : Generative.FormedGrounds.Event) :
+  (Generative.FormedEffectiveLaw.process reversed).step (Generative.FormedEffectiveLaw.project s) e
+    (Generative.FormedEffectiveLaw.project (Generative.FormedGrounds.step reversed e s))
+Generative.FormedEffectiveLaw.effective_step_iff (reversed : Bool) (s : Generative.FormedGrounds.State)
+  (e : Generative.FormedGrounds.Event) (after : Generative.FormedEffectiveLaw.Summary) :
+  (Generative.FormedEffectiveLaw.process reversed).step (Generative.FormedEffectiveLaw.project s) e after ↔
+    Generative.FormedEffectiveLaw.project (Generative.FormedGrounds.step reversed e s) = after
+Generative.FormedEffectiveLaw.effective_step_single_valued (reversed : Bool)
+  (before left right : Generative.FormedEffectiveLaw.Summary) (e : Generative.FormedGrounds.Event)
+  (hl : (Generative.FormedEffectiveLaw.process reversed).step before e left)
+  (hr : (Generative.FormedEffectiveLaw.process reversed).step before e right) : left = right
+Generative.FormedEffectiveLaw.effective_step_exists (reversed : Bool) (before : Generative.FormedEffectiveLaw.Summary)
+  (e : Generative.FormedGrounds.Event) : ∃ after, (Generative.FormedEffectiveLaw.process reversed).step before e after
+Generative.FormedEffectiveLaw.native_history_projects (reversed : Bool) (s : Generative.FormedGrounds.State)
+  (word : List Generative.FormedGrounds.Event) :
+  Generative.Trace (Generative.FormedEffectiveLaw.process reversed) (Generative.FormedEffectiveLaw.project s) word
+    (Generative.FormedEffectiveLaw.project (Generative.FormedGrounds.run reversed word s))
+Generative.FormedEffectiveLaw.effective_trace_iff (reversed : Bool) (s : Generative.FormedGrounds.State)
+  (word : List Generative.FormedGrounds.Event) (after : Generative.FormedEffectiveLaw.Summary) :
+  Generative.Trace (Generative.FormedEffectiveLaw.process reversed) (Generative.FormedEffectiveLaw.project s) word
+      after ↔
+    Generative.FormedEffectiveLaw.project (Generative.FormedGrounds.run reversed word s) = after
+Generative.FormedEffectiveLaw.every_trace_lifts_from_every_representative (reversed : Bool)
+  (before after : Generative.FormedEffectiveLaw.Summary) (word : List Generative.FormedGrounds.Event)
+  (trace : Generative.Trace (Generative.FormedEffectiveLaw.process reversed) before word after)
+  (s : Generative.FormedGrounds.State) (compatible : Generative.FormedEffectiveLaw.project s = before) :
+  Generative.FormedEffectiveLaw.project (Generative.FormedGrounds.run reversed word s) = after
+Generative.FormedEffectiveLaw.equal_summaries_preserve_future (reversed : Bool) (s t : Generative.FormedGrounds.State)
+  (same : Generative.FormedEffectiveLaw.project s = Generative.FormedEffectiveLaw.project t)
+  (word : List Generative.FormedGrounds.Event) :
+  Generative.FormedEffectiveLaw.project (Generative.FormedGrounds.run reversed word s) =
+    Generative.FormedEffectiveLaw.project (Generative.FormedGrounds.run reversed word t)
+Generative.FormedEffectiveLaw.future_questions_preserved (reversed : Bool) (s t : Generative.FormedGrounds.State)
+  (same : Generative.FormedEffectiveLaw.project s = Generative.FormedEffectiveLaw.project t)
+  (word : List Generative.FormedGrounds.Event) :
+  (Generative.FormedGrounds.run reversed word s).judgment = (Generative.FormedGrounds.run reversed word t).judgment ∧
+    (Generative.FormedGrounds.run reversed word s).review = (Generative.FormedGrounds.run reversed word t).review ∧
+      (Generative.FormedGrounds.run reversed word s).examples = (Generative.FormedGrounds.run reversed word t).examples
+Generative.FormedEffectiveLaw.reward_omitted (reversed : Bool) (s : Generative.FormedGrounds.State) (n : Nat) :
+  Generative.FormedEffectiveLaw.project
+      (Generative.FormedGrounds.step reversed (Generative.FormedGrounds.Event.reward n) s) =
+    Generative.FormedEffectiveLaw.project s
+Generative.FormedEffectiveLaw.reward_change_has_no_selected_future_effect (reversed : Bool)
+  (s : Generative.FormedGrounds.State) (n : Nat) (word : List Generative.FormedGrounds.Event) :
+  Generative.FormedEffectiveLaw.project
+      (Generative.FormedGrounds.run reversed word
+        (Generative.FormedGrounds.step reversed (Generative.FormedGrounds.Event.reward n) s)) =
+    Generative.FormedEffectiveLaw.project (Generative.FormedGrounds.run reversed word s)
+Generative.FormedEffectiveLaw.summary_is_not_injective :
+  Generative.FormedEffectiveLaw.project
+        (Generative.FormedGrounds.step false (Generative.FormedGrounds.Event.reward 1)
+          Generative.FormedGrounds.initial) =
+      Generative.FormedEffectiveLaw.project Generative.FormedGrounds.initial ∧
+    Generative.FormedGrounds.step false (Generative.FormedGrounds.Event.reward 1) Generative.FormedGrounds.initial ≠
+      Generative.FormedGrounds.initial

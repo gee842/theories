@@ -1,0 +1,1036 @@
+{
+  "status": "passed",
+  "utc": "20261007T232535.423457Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "goal-formation-revision-checks/20261007T232535.423457Z",
+  "source_sha256": {
+    "PracticalJudgment": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "KnowledgeCorrespondence": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+    "GoalFormationRevision": "da02f3ad420abebef1829a803493b0583ef532d8c12fd9b20ac60260b64e70c0"
+  },
+  "checker_sha256": {
+    "check_goal_formation_revision.py": "8a143555c5f0451fb621c66e9a19e4a2d1562848ff81b0fb21982c005a9fe590",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Connected finite formation, calibrated acquisition, grounds-sensitive goal revision, authorized selector reform and actual supported continuation. Counterexamples preserve crossed losses, false/stale evidence, nonresponse and finite support. G0/J commitments, local law family, sensor reference, authority, schedules and response architecture remain explicit premises; no empirical or semantic-universality claim.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "modules": [
+    {
+      "module": "PracticalJudgment",
+      "theorems": 30,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Included"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.StrictIncluded"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.included_trans"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.strict_included_irrefl"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.strict_included_trans"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Better"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.better_irrefl"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.better_trans"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.protection_anchor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.no_protection_trade_by_count"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Frontier"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.dominated_excluded"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.finite_frontier"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Required"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.required_performed"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.alternative_defeats_specific_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.impossible_menu_no_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.necessary_means_required"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Assigned"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.unique_responder_required"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.assignment_respects_capacity"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Covered"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.transfer_requires_actual_successor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.no_demand_gap_transfer"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.uncovered_demand_is_failure"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Settled"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Residual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.settlement_removes_residual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.unfulfilled_unreleased_remains"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.Robust"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.robust_at_actual"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.robust_under_refinement"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.required_under_faithful_redescription"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.withinCeiling"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.optionalFormation"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.supplied_ceiling_bounds_optional_gain"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.independent_choices_not_joint_capacity"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.basis"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.event"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.mixed_repair_anchor"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.repair_retains_real_loss"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.protectedOne"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalJudgment.noGain"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.competing_claims_incomparable"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.collective_duty_without_individual_duty"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalJudgment.uncertain_worlds_need_common_plan"
+        }
+      ],
+      "axiom_dependencies": {
+        "PracticalJudgment.Included": [],
+        "PracticalJudgment.StrictIncluded": [],
+        "PracticalJudgment.included_trans": [],
+        "PracticalJudgment.strict_included_irrefl": [],
+        "PracticalJudgment.strict_included_trans": [],
+        "PracticalJudgment.Better": [],
+        "PracticalJudgment.better_irrefl": [],
+        "PracticalJudgment.better_trans": [],
+        "PracticalJudgment.protection_anchor": [],
+        "PracticalJudgment.no_protection_trade_by_count": [],
+        "PracticalJudgment.Frontier": [],
+        "PracticalJudgment.dominated_excluded": [],
+        "PracticalJudgment.finite_frontier": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.Required": [],
+        "PracticalJudgment.required_performed": [],
+        "PracticalJudgment.alternative_defeats_specific_duty": [],
+        "PracticalJudgment.impossible_menu_no_duty": [],
+        "PracticalJudgment.necessary_means_required": [],
+        "PracticalJudgment.Assigned": [],
+        "PracticalJudgment.unique_responder_required": [],
+        "PracticalJudgment.assignment_respects_capacity": [],
+        "PracticalJudgment.Covered": [],
+        "PracticalJudgment.transfer_requires_actual_successor": [],
+        "PracticalJudgment.no_demand_gap_transfer": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.uncovered_demand_is_failure": [],
+        "PracticalJudgment.Settled": [],
+        "PracticalJudgment.Residual": [],
+        "PracticalJudgment.settlement_removes_residual": [],
+        "PracticalJudgment.unfulfilled_unreleased_remains": [],
+        "PracticalJudgment.Robust": [],
+        "PracticalJudgment.robust_at_actual": [],
+        "PracticalJudgment.robust_under_refinement": [],
+        "PracticalJudgment.required_under_faithful_redescription": [],
+        "PracticalJudgment.withinCeiling": [],
+        "PracticalJudgment.optionalFormation": [],
+        "PracticalJudgment.supplied_ceiling_bounds_optional_gain": [
+          "propext"
+        ],
+        "PracticalJudgment.independent_choices_not_joint_capacity": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PracticalJudgment.basis": [],
+        "PracticalJudgment.event": [],
+        "PracticalJudgment.mixed_repair_anchor": [],
+        "PracticalJudgment.repair_retains_real_loss": [],
+        "PracticalJudgment.protectedOne": [],
+        "PracticalJudgment.noGain": [],
+        "PracticalJudgment.competing_claims_incomparable": [
+          "propext"
+        ],
+        "PracticalJudgment.collective_duty_without_individual_duty": [
+          "propext"
+        ],
+        "PracticalJudgment.uncertain_worlds_need_common_plan": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "KnowledgeCorrespondence",
+      "theorems": 20,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.SoundOn"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.ExactOn"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.Resolves"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.exact_is_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.exact_requires_resolution"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.decoder"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.resolution_admits_decoder"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.exact_possible_iff_resolves"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.conflicting_fibre_forces_abstention"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.sound_restricts_domain"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.refinement_preserves_resolution"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.preserved_record_preserves_exactness"
+        },
+        {
+          "kind": "structure",
+          "name": "Generative.KnowledgeCorrespondence.History"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.signal"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.target"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.allHistories"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.normal"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.reference"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.pairedEvidence"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.decodePair"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.direct"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.calibrated_pair_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.raw_signal_not_resolving"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.no_exact_raw_decoder"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.every_sound_raw_decoder_abstains"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.direct_exact_on_normal"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.direct_fails_on_expanded_domain"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.lucky_actual_correct"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.parity_record_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.double_reversal_exact"
+        },
+        {
+          "kind": "def",
+          "name": "Generative.KnowledgeCorrespondence.FixedContentSafe"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.true_content_trivially_safe"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.abstention_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.KnowledgeCorrespondence.abstention_not_exact"
+        }
+      ],
+      "axiom_dependencies": {
+        "Generative.KnowledgeCorrespondence.SoundOn": [],
+        "Generative.KnowledgeCorrespondence.ExactOn": [],
+        "Generative.KnowledgeCorrespondence.Resolves": [],
+        "Generative.KnowledgeCorrespondence.exact_is_sound": [],
+        "Generative.KnowledgeCorrespondence.exact_requires_resolution": [],
+        "Generative.KnowledgeCorrespondence.decoder": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.KnowledgeCorrespondence.resolution_admits_decoder": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.KnowledgeCorrespondence.exact_possible_iff_resolves": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Generative.KnowledgeCorrespondence.conflicting_fibre_forces_abstention": [],
+        "Generative.KnowledgeCorrespondence.sound_restricts_domain": [],
+        "Generative.KnowledgeCorrespondence.refinement_preserves_resolution": [],
+        "Generative.KnowledgeCorrespondence.preserved_record_preserves_exactness": [],
+        "Generative.KnowledgeCorrespondence.History": [],
+        "Generative.KnowledgeCorrespondence.signal": [],
+        "Generative.KnowledgeCorrespondence.target": [],
+        "Generative.KnowledgeCorrespondence.allHistories": [],
+        "Generative.KnowledgeCorrespondence.normal": [],
+        "Generative.KnowledgeCorrespondence.reference": [],
+        "Generative.KnowledgeCorrespondence.pairedEvidence": [],
+        "Generative.KnowledgeCorrespondence.decodePair": [],
+        "Generative.KnowledgeCorrespondence.direct": [],
+        "Generative.KnowledgeCorrespondence.calibrated_pair_exact": [],
+        "Generative.KnowledgeCorrespondence.raw_signal_not_resolving": [],
+        "Generative.KnowledgeCorrespondence.no_exact_raw_decoder": [],
+        "Generative.KnowledgeCorrespondence.every_sound_raw_decoder_abstains": [],
+        "Generative.KnowledgeCorrespondence.direct_exact_on_normal": [],
+        "Generative.KnowledgeCorrespondence.direct_fails_on_expanded_domain": [],
+        "Generative.KnowledgeCorrespondence.lucky_actual_correct": [],
+        "Generative.KnowledgeCorrespondence.parity_record_exact": [],
+        "Generative.KnowledgeCorrespondence.double_reversal_exact": [],
+        "Generative.KnowledgeCorrespondence.FixedContentSafe": [],
+        "Generative.KnowledgeCorrespondence.true_content_trivially_safe": [],
+        "Generative.KnowledgeCorrespondence.abstention_sound": [],
+        "Generative.KnowledgeCorrespondence.abstention_not_exact": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "GoalFormationRevision",
+      "theorems": 43,
+      "declarations": [
+        {
+          "kind": "inductive",
+          "name": "GoalFormationRevision.Practice"
+        },
+        {
+          "kind": "inductive",
+          "name": "GoalFormationRevision.Selection"
+        },
+        {
+          "kind": "inductive",
+          "name": "GoalFormationRevision.Goal"
+        },
+        {
+          "kind": "structure",
+          "name": "GoalFormationRevision.Conditions"
+        },
+        {
+          "kind": "structure",
+          "name": "GoalFormationRevision.Outcome"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.perform"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.attainment"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.meansFor"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.supplied_means_realize_their_goal"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.goal_criteria_really_disagree"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.protects"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.gains"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.warranted_revision"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.revision_loses_real_output"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.harmless_attendance_preferred"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.crossed_losses_incomparable"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.feedback"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.inferFormation"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.formation_identified"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.ambiguous_formation_suspended"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.encode"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.decode"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.acquired_calibration_correct"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.calibration_consumes_existing_interface"
+        },
+        {
+          "kind": "structure",
+          "name": "GoalFormationRevision.Account"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.total"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.charge"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.charge_conserves"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.insufficient_work_blocks"
+        },
+        {
+          "kind": "structure",
+          "name": "GoalFormationRevision.Evidence"
+        },
+        {
+          "kind": "structure",
+          "name": "GoalFormationRevision.Ground"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.interpret"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.callsForRevision"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.predictFeedback"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.formation_model_predicts_intervention"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.proposedSelector"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.acquired_grounds_warrant_comparison"
+        },
+        {
+          "kind": "structure",
+          "name": "GoalFormationRevision.Record"
+        },
+        {
+          "kind": "structure",
+          "name": "GoalFormationRevision.State"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.learnedGoal"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.experience"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.calibrate"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.assess"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.reviseGoal"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.reform"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.no_authority_no_reform"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.cycle"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.cycle_conserves"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.cycles"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.operate"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.operateMany"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.supported_cycle"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.supported_finite_continuation"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.start"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.acquire"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.revised"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.completed"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.harmful"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.safe"
+        },
+        {
+          "kind": "def",
+          "name": "GoalFormationRevision.conflict"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.acquired_history_identifies_origin"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.goal_depends_on_actual_formative_rule"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.revised_goal_with_old_metric_still_successful"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.calibration_handles_reversed_channel"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.no_harm_no_revision"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.crossed_loss_blocks_simple_revision"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.recognition_does_not_force_revision"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.reform_changes_the_formative_relation"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.acquired_intervention_prediction_realized"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.revision_preserves_formation_and_losses"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.complete_history_account"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.actual_reformed_continuation"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.continued_practice_preserves_actual_consequences"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.unchanged_selection_exhausts_revised_practice"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.reform_does_not_make_support_infinite"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.reform_with_insufficient_work_fails"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.missing_reference_prevents_assessment"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.false_reference_can_hide_real_loss"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.erased_formation_evidence_blocks_deliberation"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.wrong_formation_model_prevents_needed_reform"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.stale_grounds_can_leave_new_loss_unaddressed"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.changed_goal_is_consumed_by_operation"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.corrected_reference_restores_revision"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.reform_changes_later_goal_acquisition"
+        },
+        {
+          "kind": "theorem",
+          "name": "GoalFormationRevision.joined_revision_has_warrant_and_actual_continuation"
+        }
+      ],
+      "axiom_dependencies": {
+        "GoalFormationRevision.Practice": [],
+        "GoalFormationRevision.Selection": [],
+        "GoalFormationRevision.Goal": [],
+        "GoalFormationRevision.Conditions": [],
+        "GoalFormationRevision.Outcome": [],
+        "GoalFormationRevision.perform": [],
+        "GoalFormationRevision.attainment": [],
+        "GoalFormationRevision.meansFor": [],
+        "GoalFormationRevision.supplied_means_realize_their_goal": [
+          "propext",
+          "Quot.sound"
+        ],
+        "GoalFormationRevision.goal_criteria_really_disagree": [
+          "propext"
+        ],
+        "GoalFormationRevision.protects": [],
+        "GoalFormationRevision.gains": [],
+        "GoalFormationRevision.warranted_revision": [
+          "propext"
+        ],
+        "GoalFormationRevision.revision_loses_real_output": [
+          "propext"
+        ],
+        "GoalFormationRevision.harmless_attendance_preferred": [
+          "propext",
+          "Quot.sound"
+        ],
+        "GoalFormationRevision.crossed_losses_incomparable": [
+          "propext"
+        ],
+        "GoalFormationRevision.feedback": [
+          "propext"
+        ],
+        "GoalFormationRevision.inferFormation": [],
+        "GoalFormationRevision.formation_identified": [
+          "propext"
+        ],
+        "GoalFormationRevision.ambiguous_formation_suspended": [],
+        "GoalFormationRevision.encode": [],
+        "GoalFormationRevision.decode": [],
+        "GoalFormationRevision.acquired_calibration_correct": [],
+        "GoalFormationRevision.calibration_consumes_existing_interface": [],
+        "GoalFormationRevision.Account": [],
+        "GoalFormationRevision.total": [],
+        "GoalFormationRevision.charge": [],
+        "GoalFormationRevision.charge_conserves": [
+          "propext",
+          "Quot.sound"
+        ],
+        "GoalFormationRevision.insufficient_work_blocks": [
+          "propext",
+          "Quot.sound"
+        ],
+        "GoalFormationRevision.Evidence": [],
+        "GoalFormationRevision.Ground": [],
+        "GoalFormationRevision.interpret": [],
+        "GoalFormationRevision.callsForRevision": [],
+        "GoalFormationRevision.predictFeedback": [
+          "propext"
+        ],
+        "GoalFormationRevision.formation_model_predicts_intervention": [
+          "propext"
+        ],
+        "GoalFormationRevision.proposedSelector": [
+          "propext"
+        ],
+        "GoalFormationRevision.acquired_grounds_warrant_comparison": [
+          "propext"
+        ],
+        "GoalFormationRevision.Record": [],
+        "GoalFormationRevision.State": [],
+        "GoalFormationRevision.learnedGoal": [],
+        "GoalFormationRevision.experience": [
+          "propext"
+        ],
+        "GoalFormationRevision.calibrate": [],
+        "GoalFormationRevision.assess": [],
+        "GoalFormationRevision.reviseGoal": [],
+        "GoalFormationRevision.reform": [
+          "propext"
+        ],
+        "GoalFormationRevision.no_authority_no_reform": [
+          "propext"
+        ],
+        "GoalFormationRevision.cycle": [
+          "propext"
+        ],
+        "GoalFormationRevision.cycle_conserves": [
+          "propext",
+          "Quot.sound"
+        ],
+        "GoalFormationRevision.cycles": [
+          "propext"
+        ],
+        "GoalFormationRevision.operate": [
+          "propext"
+        ],
+        "GoalFormationRevision.operateMany": [
+          "propext"
+        ],
+        "GoalFormationRevision.supported_cycle": [
+          "propext",
+          "Quot.sound"
+        ],
+        "GoalFormationRevision.supported_finite_continuation": [
+          "propext",
+          "Quot.sound"
+        ],
+        "GoalFormationRevision.start": [],
+        "GoalFormationRevision.acquire": [
+          "propext"
+        ],
+        "GoalFormationRevision.revised": [
+          "propext"
+        ],
+        "GoalFormationRevision.completed": [
+          "propext"
+        ],
+        "GoalFormationRevision.harmful": [],
+        "GoalFormationRevision.safe": [],
+        "GoalFormationRevision.conflict": [],
+        "GoalFormationRevision.acquired_history_identifies_origin": [
+          "propext"
+        ],
+        "GoalFormationRevision.goal_depends_on_actual_formative_rule": [
+          "propext"
+        ],
+        "GoalFormationRevision.revised_goal_with_old_metric_still_successful": [
+          "propext"
+        ],
+        "GoalFormationRevision.calibration_handles_reversed_channel": [
+          "propext"
+        ],
+        "GoalFormationRevision.no_harm_no_revision": [
+          "propext"
+        ],
+        "GoalFormationRevision.crossed_loss_blocks_simple_revision": [
+          "propext"
+        ],
+        "GoalFormationRevision.recognition_does_not_force_revision": [
+          "propext"
+        ],
+        "GoalFormationRevision.reform_changes_the_formative_relation": [
+          "propext"
+        ],
+        "GoalFormationRevision.acquired_intervention_prediction_realized": [
+          "propext"
+        ],
+        "GoalFormationRevision.revision_preserves_formation_and_losses": [
+          "propext"
+        ],
+        "GoalFormationRevision.complete_history_account": [
+          "propext"
+        ],
+        "GoalFormationRevision.actual_reformed_continuation": [
+          "propext"
+        ],
+        "GoalFormationRevision.continued_practice_preserves_actual_consequences": [
+          "propext"
+        ],
+        "GoalFormationRevision.unchanged_selection_exhausts_revised_practice": [
+          "propext"
+        ],
+        "GoalFormationRevision.reform_does_not_make_support_infinite": [
+          "propext"
+        ],
+        "GoalFormationRevision.reform_with_insufficient_work_fails": [
+          "propext"
+        ],
+        "GoalFormationRevision.missing_reference_prevents_assessment": [
+          "propext"
+        ],
+        "GoalFormationRevision.false_reference_can_hide_real_loss": [
+          "propext"
+        ],
+        "GoalFormationRevision.erased_formation_evidence_blocks_deliberation": [
+          "propext"
+        ],
+        "GoalFormationRevision.wrong_formation_model_prevents_needed_reform": [
+          "propext"
+        ],
+        "GoalFormationRevision.stale_grounds_can_leave_new_loss_unaddressed": [
+          "propext"
+        ],
+        "GoalFormationRevision.changed_goal_is_consumed_by_operation": [
+          "propext"
+        ],
+        "GoalFormationRevision.corrected_reference_restores_revision": [
+          "propext"
+        ],
+        "GoalFormationRevision.reform_changes_later_goal_acquisition": [
+          "propext"
+        ],
+        "GoalFormationRevision.joined_revision_has_warrant_and_actual_continuation": [
+          "propext"
+        ]
+      },
+      "kernel_checked": true
+    }
+  ],
+  "artifact_sha256": {
+    "GoalFormationRevision.lean": "da02f3ad420abebef1829a803493b0583ef532d8c12fd9b20ac60260b64e70c0",
+    "GoalFormationRevision.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "GoalFormationRevisionAxiomAudit.lean": "f54f7d408e03fe0ff497a490ac2936c9b11e65d79eb5578ccdd6f12d9605f43b",
+    "GoalFormationRevisionAxiomAudit.log": "34d9287eaa6d225b6a20b337eaaab007b1f47aec3dc75dfdce236a2ef25c59bc",
+    "GoalFormationRevisionSignatures.lean": "3bd10859026a86dc37a0d8bc5f60115b112736c386ebda428bbdeba3396711a4",
+    "GoalFormationRevisionSignatures.log": "62c8190b23f30885154eac821cc8f305b4ab8ecd4c6c81b461c8e78bc00fa2b8",
+    "KnowledgeCorrespondence.lean": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+    "KnowledgeCorrespondence.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "KnowledgeCorrespondenceAxiomAudit.lean": "17a0077b3e78d738bf2d0be19d10e280b15db7dafef91e2b612d9472a15bbd1b",
+    "KnowledgeCorrespondenceAxiomAudit.log": "c377f105cfd06f0e0910406603df50a3a522626e83669b2e8308f8018e2c7f21",
+    "KnowledgeCorrespondenceSignatures.lean": "055b1e508f41e4b55b8cab7943c941eb25ff15bcb01ee7283c62605cbf932b13",
+    "KnowledgeCorrespondenceSignatures.log": "81471fa26e1d60c7def30cda3725076ec4f879b4f97ceb692743f08e198eedf1",
+    "PracticalJudgment.lean": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "PracticalJudgment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PracticalJudgmentAxiomAudit.lean": "c9f412159410854fb031176d7fe7a4c351dfaea59354c7d7a19ec4ad0c6e51a6",
+    "PracticalJudgmentAxiomAudit.log": "d73810d6b1a7343808726234c17bca9d7841acafabd3a17ee8e6145dfabbf1ea",
+    "PracticalJudgmentSignatures.lean": "aec1f9317bc8881cb24e62213fa9db801f59b620595bb90caf082a5debc9cb66",
+    "PracticalJudgmentSignatures.log": "93b65679f59a01788bfcfbfe0bf5bc3ef93f0cf67516c469f1667c5cdc9abd65",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_goal_formation_revision.py": "8a143555c5f0451fb621c66e9a19e4a2d1562848ff81b0fb21982c005a9fe590",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

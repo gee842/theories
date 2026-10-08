@@ -1,0 +1,19 @@
+'RiskPriority.Exposure' does not depend on any axioms
+'RiskPriority.mixture' does not depend on any axioms
+'RiskPriority.equalized' does not depend on any axioms
+'RiskPriority.departure' does not depend on any axioms
+'RiskPriority.total' does not depend on any axioms
+'RiskPriority.quadratic' does not depend on any axioms
+'RiskPriority.magnitude' does not depend on any axioms
+'RiskPriority.corner' does not depend on any axioms
+'RiskPriority.same_support_family' depends on axioms: [propext, Quot.sound]
+'RiskPriority.feasible_departure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RiskPriority.exposure_exchange' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RiskPriority.quadratic_departure_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RiskPriority.quadratic_prefers_small_departure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RiskPriority.partial_sharing_control' does not depend on any axioms
+'RiskPriority.corner_departure_identity' depends on axioms: [propext, Quot.sound]
+'RiskPriority.corner_prefers_equality' depends on axioms: [propext, Quot.sound]
+'RiskPriority.diagnostic_symmetry' depends on axioms: [propext, Quot.sound]
+'RiskPriority.corner_linear_change_bound' depends on axioms: [propext, Quot.sound]
+'RiskPriority.bounded_exchange_certificate' depends on axioms: [propext, Quot.sound]

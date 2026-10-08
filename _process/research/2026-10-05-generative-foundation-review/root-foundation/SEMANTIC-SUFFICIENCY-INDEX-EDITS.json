@@ -1,0 +1,276 @@
+{
+  "scope": "Only semantic-sufficiency navigation insertions and M21; unrelated shared edits preserved.",
+  "insertions": [
+    {
+      "path": "RESEARCH.md",
+      "before_sha256": "f75f44db8f1f5c103479fb1a887b05a856d6f8c23edff8da21c248537d10d220",
+      "after_sha256": "80aa67141f6d5a5a02c8e2d26db4972d0c8eab0a5e533da6de1cce906ff1cd25",
+      "inserted_text": "**意义与理解的充分性前沿 / Semantic sufficiency，2026-10-08。** [新整合](_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-SUFFICIENCY-INTEGRATION.md)信用已有解释形成与纠正构造，检验所得信息、实际因果作用、可出错的内容及对根据的理解。两项实证原典和公开数据的四项统计量复核支持获得关系的路线；不宣告普遍语义、意识或整套理论必要性。无内容基本认知与表征解释的对手保留同一目标。/ The next comparison concerns selective changes to support, asserted content and practical response under matched access and learning. No new theorem or experiment is claimed. [Evidence and reading scope](_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-SUFFICIENCY-SOURCES.md); the broader frontier goal remains active."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "before_sha256": "1c2b8ecad0d150b7703012dc55944ea96eef594fd3b4f51eec079665f0e1fabd",
+      "after_sha256": "afe98f7408bcd1f9019fa8a17c19c8d757a461d916ca2b36db3bbfdb60833125",
+      "inserted_text": "**认识前沿 / Knowledge frontier，2026-10-08。** [内容与理解的充分性](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-SUFFICIENCY-INTEGRATION.md)将获得的关系、实际运用与对根据的理解继续区分并相连，保留已有相连哲学候选。/ Four selected published statistics reproduce from unmodified public data; the stronger semantic, consciousness and necessity claims remain open. Next: matched tests of how changes to evidence, source access and purpose selectively change judgments and responses."
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "before_sha256": "9f2995b5375ceba1775f02adef8eed4dff7d95c0e3fee2104a930bb3c803bc91",
+      "after_sha256": "e5c528ecc4f23bab5c3b14e02f6c07df36cf337556b7e55a65215b9734f04965",
+      "inserted_text": "**Semantic-sufficiency frontier, 8 October 2026:** [integration](SEMANTIC-SUFFICIENCY-INTEGRATION.md) and [primary evidence](SEMANTIC-SUFFICIENCY-SOURCES.md) credit formed interpretation and actual correction, then test their sufficiency for reflective understanding. Four selected statistics reproduce from public animal-level source data. Content-free and representational rivals remain substantive competitors; the proposed selective-revision comparison is unrun. No new mathematical theorem, fresh experiment or independent-agent acceptance is claimed. The broad frontier goal remains active."
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "before_sha256": "3012d7d050fe2344264e31a7764a3a88d5a52f759bd6d0fc06f8913ae8362348",
+      "after_sha256": "9dcb9e07641178c0db5e24017ea850ed0c1c81fc537b8d6f97a1bfc3e0495da4",
+      "inserted_text": "**Knowledge/semantics empirical originals, 8 October 2026:** [preserved publisher records and source spreadsheets](knowledge-semantics/README.md), with original-byte hashes and CC0 provenance, support a bounded source-data reproduction. The [reading record](../_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-SUFFICIENCY-SOURCES.md) distinguishes recording, intervention, numerical checks and philosophical comparisons. Repeated views and copied source bytes are not independent evidence."
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "before_sha256": "e820f08645b855badbdf9cc301de4647f72f55b0030ea8e03583202f2bd45988",
+      "after_sha256": "d98038b83308c2a2de82f4de6a0bccbc5ec853cdf57467d1b7eb5a055d944395",
+      "inserted_text": "**语义充分性前沿 / Semantic-sufficiency frontier，2026-10-08。** M21 成对加入[新论证](SEMANTIC-SUFFICIENCY-INTEGRATION.md)与[原典和数据范围](SEMANTIC-SUFFICIENCY-SOURCES.md)，保留已有候选完成范围及普遍目标开放。/ Four selected statistic reproductions strengthen a bounded acquisition/use comparison; no new theorem or experiment. Only M21, two owned discovery pages and actually reviewed owned source versions are updated. [Owned edits](SEMANTIC-SUFFICIENCY-INDEX-EDITS.json) and [checks](SEMANTIC-SUFFICIENCY-CHECKS.json) distinguish local maintenance from pending reviews in concurrent studies."
+    }
+  ],
+  "entry_before": {
+    "id": "M21",
+    "title_zh": "知识与生活：相连的哲学候选",
+    "title_en": "Knowing and living: connected philosophical proposal",
+    "claim_zh": "生成中的认识经内容、实际根据、相关错误及可修订标准形成。共同求知须说明可能性的纳入，并区分有理由查与有理由信、相关接近与受影响地位及决定权限。G0 与公开 J1–J4/E 连接理解、真实损失、有界责任及可纠正的智慧回应。",
+    "claim_en": "Knowing forms through content, actual grounds, relevant error and revisable standards. Shared inquiry must warrant its scope and distinguish grounds to investigate from grounds to believe, as well as relevant access, affected standing and decision authority. G0 and explicit J1–J4/E connect understanding, real losses, bounded responsibility and corrigible wise response.",
+    "scope_zh": "相连的有辩护候选与作者反审已完成；本轮三项原典比较有阅读范围。没有新定理、实验或独立 agent 验收；继承20项／34项审计与8项／13项审计各保留条件。完成不等于普遍验证、完备意识／语义、一般归纳或整套理论独有必要性已证；其他强目标保持未完成。",
+    "scope_en": "Connected defended proposal and author counterreview complete at their stated scope; three new primary comparisons have reading limits. No new theorem, experiment or independent-agent acceptance. Inherited packages retain 20 theorems/34 audits and 8 theorems/13 audits separately. Universal validation, exhaustive consciousness/semantics, general induction and exclusive whole-theory necessity remain unestablished; stronger objectives are not renamed as completed.",
+    "links": [
+      {
+        "label_zh": "完整哲学候选",
+        "label_en": "Connected proposal",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PHILOSOPHICAL-ACCOUNT.md"
+      },
+      {
+        "label_zh": "共同求知与地位",
+        "label_en": "Shared inquiry and standing",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-INQUIRY-AND-STANDING.md"
+      },
+      {
+        "label_zh": "完成评估",
+        "label_en": "Completion assessment",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-PHILOSOPHY-COMPLETION.md"
+      },
+      {
+        "label_zh": "当前知识章",
+        "label_en": "Current account",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/KNOWLEDGE.md"
+      },
+      {
+        "label_zh": "整合与自审",
+        "label_en": "Integration and self-review",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/G0-AND-KNOWLEDGE.md#completion-stage-continuation-shared-inquiry-and-the-philosophical-account"
+      },
+      {
+        "label_zh": "推展与错误风险",
+        "label_en": "Projection and error risk",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-PROJECTION-AND-RISK.md"
+      },
+      {
+        "label_zh": "求知优先次序",
+        "label_en": "Inquiry priorities",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-PRIORITIES-AND-G0.md"
+      },
+      {
+        "label_zh": "求知实查对应",
+        "label_en": "Checked inquiry correspondence",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-ADEQUACY-CORRESPONDENCE.md"
+      },
+      {
+        "label_zh": "新实查回执",
+        "label_en": "New checked receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/inquiry-adequacy-verification.json"
+      },
+      {
+        "label_zh": "科学哲学与生成论根据",
+        "label_en": "Scientific philosophy and generative warrant",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-AND-GENERATIVE-WARRANT.md"
+      },
+      {
+        "label_zh": "修订与客观性",
+        "label_en": "Revision and objectivity",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-REVISION-AND-OBJECTIVITY.md"
+      },
+      {
+        "label_zh": "内容与错误",
+        "label_en": "Content and error",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-CONTENT-AND-ERROR.md"
+      },
+      {
+        "label_zh": "理由与可修订标准",
+        "label_en": "Reasons and revisable standards",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-REASONS-AND-STANDARDS.md"
+      },
+      {
+        "label_zh": "认识持有与错误范围",
+        "label_en": "Cognitive possession and error scope",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-UPTAKE-AND-ERROR.md"
+      },
+      {
+        "label_zh": "原典比较",
+        "label_en": "Primary comparisons",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-SOURCES.md"
+      },
+      {
+        "label_zh": "证明对应",
+        "label_en": "Proof correspondence",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-CORRESPONDENCE.md"
+      },
+      {
+        "label_zh": "Lean源码",
+        "label_en": "Lean source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/KnowledgeCorrespondence.lean"
+      },
+      {
+        "label_zh": "实查回执",
+        "label_en": "Checked receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/knowledge-correspondence-verification.json"
+      },
+      {
+        "label_zh": "Ren的原话与目标",
+        "label_en": "Ren’s words and goal",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-g0-and-knowledge.md"
+      },
+      {
+        "label_zh": "继续研究的原话",
+        "label_en": "Continuation directive",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md"
+      }
+    ]
+  },
+  "entry_after": {
+    "id": "M21",
+    "title_zh": "知识与生活：相连的哲学候选",
+    "title_en": "Knowing and living: connected philosophical proposal",
+    "claim_zh": "生成中的认识经内容、实际根据、相关错误和可修订标准形成；G0 与公开 J1–J4/E 连接其生活意义。前沿进一步检验：所得信息、因果作用、可出错的内容及对根据的理解怎样在同一形成史中分化；相关挑战应能选择性改变信赖、断言或实践回应。",
+    "claim_en": "Knowing forms through content, actual grounds, relevant error and revisable standards; G0 and explicit J1–J4/E connect its place in living. The frontier distinguishes available information, causal use, content through error and understanding of grounds within one history; relevant challenges should selectively affect reliance, assertion or practical response.",
+    "scope_zh": "相连哲学候选保留完成范围；本轮两项实证与两项哲学原典比较、四项公开数据统计量复核。无新定理、新实验或独立 agent 验收；既有20／34及8／13实查包保留原范围。新的选择性修订比较尚未执行；普遍语义充分性、意识、一般归纳及整套理论必要性仍开放。",
+    "scope_en": "The connected philosophical proposal retains its completed scope. Two empirical and two philosophical primary comparisons plus four selected statistic reproductions advance its adequacy assessment. No new theorem, experiment or independent-agent acceptance; inherited 20/34 and 8/13 proof packages retain their scopes. The new selective-revision comparison is unrun. Universal semantics, consciousness, general induction and whole-theory necessity remain open.",
+    "links": [
+      {
+        "label_zh": "语义充分性前沿",
+        "label_en": "Semantic-sufficiency frontier",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-SUFFICIENCY-INTEGRATION.md"
+      },
+      {
+        "label_zh": "原典与数据复核",
+        "label_en": "Primary evidence and data checks",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-SUFFICIENCY-SOURCES.md"
+      },
+      {
+        "label_zh": "完整哲学候选",
+        "label_en": "Connected proposal",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PHILOSOPHICAL-ACCOUNT.md"
+      },
+      {
+        "label_zh": "共同求知与地位",
+        "label_en": "Shared inquiry and standing",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-INQUIRY-AND-STANDING.md"
+      },
+      {
+        "label_zh": "完成评估",
+        "label_en": "Completion assessment",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-PHILOSOPHY-COMPLETION.md"
+      },
+      {
+        "label_zh": "当前知识章",
+        "label_en": "Current account",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/KNOWLEDGE.md"
+      },
+      {
+        "label_zh": "整合与自审",
+        "label_en": "Integration and self-review",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/G0-AND-KNOWLEDGE.md#completion-stage-continuation-shared-inquiry-and-the-philosophical-account"
+      },
+      {
+        "label_zh": "推展与错误风险",
+        "label_en": "Projection and error risk",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-PROJECTION-AND-RISK.md"
+      },
+      {
+        "label_zh": "求知优先次序",
+        "label_en": "Inquiry priorities",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-PRIORITIES-AND-G0.md"
+      },
+      {
+        "label_zh": "求知实查对应",
+        "label_en": "Checked inquiry correspondence",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-ADEQUACY-CORRESPONDENCE.md"
+      },
+      {
+        "label_zh": "新实查回执",
+        "label_en": "New checked receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/inquiry-adequacy-verification.json"
+      },
+      {
+        "label_zh": "科学哲学与生成论根据",
+        "label_en": "Scientific philosophy and generative warrant",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-PHILOSOPHY-AND-GENERATIVE-WARRANT.md"
+      },
+      {
+        "label_zh": "修订与客观性",
+        "label_en": "Revision and objectivity",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-REVISION-AND-OBJECTIVITY.md"
+      },
+      {
+        "label_zh": "内容与错误",
+        "label_en": "Content and error",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-CONTENT-AND-ERROR.md"
+      },
+      {
+        "label_zh": "理由与可修订标准",
+        "label_en": "Reasons and revisable standards",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-REASONS-AND-STANDARDS.md"
+      },
+      {
+        "label_zh": "认识持有与错误范围",
+        "label_en": "Cognitive possession and error scope",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-UPTAKE-AND-ERROR.md"
+      },
+      {
+        "label_zh": "原典比较",
+        "label_en": "Primary comparisons",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-SOURCES.md"
+      },
+      {
+        "label_zh": "证明对应",
+        "label_en": "Proof correspondence",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/KNOWLEDGE-CORRESPONDENCE.md"
+      },
+      {
+        "label_zh": "Lean源码",
+        "label_en": "Lean source",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/KnowledgeCorrespondence.lean"
+      },
+      {
+        "label_zh": "实查回执",
+        "label_en": "Checked receipt",
+        "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/knowledge-correspondence-verification.json"
+      },
+      {
+        "label_zh": "Ren的原话与目标",
+        "label_en": "Ren’s words and goal",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-g0-and-knowledge.md"
+      },
+      {
+        "label_zh": "继续研究的原话",
+        "label_en": "Continuation directive",
+        "path": "sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md"
+      }
+    ]
+  },
+  "reviewed_sources": [
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-SUFFICIENCY-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SEMANTIC-SUFFICIENCY-SOURCES.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/KNOWLEDGE.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PHILOSOPHICAL-ACCOUNT.md",
+    "sources/15-codex-theory-conversations/2026-10-08-knowledge-content-continuation.md"
+  ],
+  "other_entries_preserved": 85,
+  "other_generated_lines_preserved": true
+}

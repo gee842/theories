@@ -1,0 +1,30 @@
+{
+  "retrieved_at_utc": "2026-10-07T23:02:11.485603+00:00",
+  "license": "CC BY 4.0",
+  "files": [
+    {
+      "file": "gainey-2025.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11942167/fullTextXML",
+      "bytes": 239562,
+      "sha256": "b33c26750c09dabf8af360a71cc8e08341f8277bf85f74357b945611de1d1020"
+    },
+    {
+      "file": "kaletsky-2025.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12080996/fullTextXML",
+      "bytes": 132851,
+      "sha256": "430edacbca64df18e4c1110fbae5a58d1a4d47fb0f36d9f993801cf0d101f9a8"
+    },
+    {
+      "file": "akinosho-2025.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12604853/fullTextXML",
+      "bytes": 72304,
+      "sha256": "5eabcb8072e80076d36d794863aba369311e8adb553cafa2240c390e0c0ed2a3"
+    },
+    {
+      "file": "elife-107034-supp1-v1.xlsx",
+      "url": "https://cdn.elifesciences.org/articles/107034/elife-107034-supp1-v1.xlsx",
+      "bytes": 21554,
+      "sha256": "e4d7d7fd977a37ddac9b73d8bfd1daabfcf4d5edd8561e9c70f07ed8cc4f4bc5"
+    }
+  ]
+}

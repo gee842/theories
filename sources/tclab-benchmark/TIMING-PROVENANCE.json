@@ -1,0 +1,76 @@
+{
+  "status": "preserved",
+  "producer_sha256": "65fc4dbcd342b5472ab60a2d358e816abb2d0821e6a7e51d070d16072e891409",
+  "archive_path": "sources/tclab-benchmark/CACE_2020_source.zip",
+  "archive_sha256": "4cb422489a5396e8e4d156fc7b00f89e4bd7cb9a83561aacbbeee046d6c182ed",
+  "original_provenance": "sources/tclab-benchmark/PROVENANCE.json",
+  "extracted_members": [
+    {
+      "member": "3_TCLab/ARX/tclab_farx.py",
+      "path": "sources/tclab-benchmark/extracted/3_TCLab/ARX/tclab_farx.py",
+      "bytes": 8699,
+      "sha256": "f7c5d6f4a77eb8a31de417f63f62776c7dc5e7c8451ac987cfcf0aad625ffaa8"
+    },
+    {
+      "member": "3_TCLab/ARX/tclab_farx81.py",
+      "path": "sources/tclab-benchmark/extracted/3_TCLab/ARX/tclab_farx81.py",
+      "bytes": 9079,
+      "sha256": "892941b751e2b24e473685d193a5212921b8ab2b3363019e660592fe4b157dac"
+    },
+    {
+      "member": "3_TCLab/ARX/results_farx.csv",
+      "path": "sources/tclab-benchmark/extracted/3_TCLab/ARX/results_farx.csv",
+      "bytes": 105804,
+      "sha256": "f9b6b1bafb5a8fbbdfd777fa8fdc5570efed5a48d7c15db460754a69bd257bd9"
+    },
+    {
+      "member": "3_TCLab/Physics/tclab_hybrid.py",
+      "path": "sources/tclab-benchmark/extracted/3_TCLab/Physics/tclab_hybrid.py",
+      "bytes": 6770,
+      "sha256": "12311174be37adf7462def7ea6ab71124668835488fe4a1a7ea439729bbc934d"
+    },
+    {
+      "member": "3_TCLab/Physics/results_hybrid.csv",
+      "path": "sources/tclab-benchmark/extracted/3_TCLab/Physics/results_hybrid.csv",
+      "bytes": 52828,
+      "sha256": "05aa79688d91b1b82b4b473bec910a2af3e9cf5a8222d522acf47dafaa096d83"
+    },
+    {
+      "member": "3_TCLab/ANN/tclab_ann.py",
+      "path": "sources/tclab-benchmark/extracted/3_TCLab/ANN/tclab_ann.py",
+      "bytes": 9147,
+      "sha256": "1c4ae46b0a4526cfcbd7078685c262926f09858c2c365cea2ddd4acde598e50f"
+    },
+    {
+      "member": "3_TCLab/ANN/results_ann.csv",
+      "path": "sources/tclab-benchmark/extracted/3_TCLab/ANN/results_ann.csv",
+      "bytes": 52828,
+      "sha256": "d71cbedbbd10d14c158581993e1699be6650b1deb84b02ad3ad32cd2520fb86d"
+    },
+    {
+      "member": "3_TCLab/Summary/results.py",
+      "path": "sources/tclab-benchmark/extracted/3_TCLab/Summary/results.py",
+      "bytes": 717,
+      "sha256": "0c7490634f9e44b2096ea008958074cd5b0735d9c61231a074a00e2ff8b15393"
+    },
+    {
+      "member": "3_TCLab/Summary/results_farx.csv",
+      "path": "sources/tclab-benchmark/extracted/3_TCLab/Summary/results_farx.csv",
+      "bytes": 105804,
+      "sha256": "cb1d4b46e813288f9252b67b8d7da71eae39cb29776f0f6344117efb8172cd73"
+    },
+    {
+      "member": "3_TCLab/Summary/results_hybrid.csv",
+      "path": "sources/tclab-benchmark/extracted/3_TCLab/Summary/results_hybrid.csv",
+      "bytes": 52828,
+      "sha256": "05aa79688d91b1b82b4b473bec910a2af3e9cf5a8222d522acf47dafaa096d83"
+    },
+    {
+      "member": "3_TCLab/Summary/results_ann.csv",
+      "path": "sources/tclab-benchmark/extracted/3_TCLab/Summary/results_ann.csv",
+      "bytes": 52828,
+      "sha256": "d71cbedbbd10d14c158581993e1699be6650b1deb84b02ad3ad32cd2520fb86d"
+    }
+  ],
+  "scope": "Additional byte-preserved MPC source/log members from the already pinned archive. Earlier provenance manifest is unchanged. Duplicate Summary copies are not independent trials; the two ARX records are distinct."
+}

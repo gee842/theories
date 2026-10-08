@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "stage": "source token precheck",
+  "reason": "Overbroad scanner rejected ordinary word admit in introductory comment; changed to allow. Compilation of the new module had not started."
+}

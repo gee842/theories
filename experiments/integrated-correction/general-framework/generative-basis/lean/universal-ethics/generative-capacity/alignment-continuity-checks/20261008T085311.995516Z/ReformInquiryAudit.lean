@@ -1,0 +1,36 @@
+import ReformInquiry
+#print axioms ReformInquiry.Query
+#print axioms ReformInquiry.Remedy
+#print axioms ReformInquiry.reported
+#print axioms ReformInquiry.probe
+#print axioms ReformInquiry.respond
+#print axioms ReformInquiry.achieved
+#print axioms ReformInquiry.interface
+#print axioms ReformInquiry.plans
+#print axioms ReformInquiry.uncertainty
+#print axioms ReformInquiry.chosen
+#print axioms ReformInquiry.execute
+#print axioms ReformInquiry.chosen_query_and_contingent_remedy
+#print axioms ReformInquiry.faithful_query_both_ways
+#print axioms ReformInquiry.selected_report_cannot_support_uniform_remedy
+#print axioms ReformInquiry.actual_harmful_history_is_repaired
+#print axioms ReformInquiry.actual_supported_reform_continues
+#print axioms ReformInquiry.both_branches_preserve_historical_losses
+#print axioms ReformInquiry.both_branches_keep_total_support
+#print axioms ReformInquiry.known_supported_case_avoids_unneeded_inquiry
+#print axioms ReformInquiry.absent_authority_blocks_joint_solution
+#print axioms ReformInquiry.accurate_inquiry_can_consume_the_remedy
+#print axioms ReformInquiry.omitted_harmful_model_invalidates_selection
+#print axioms ReformInquiry.selected_policy_works_for_all_retained_candidates
+#check ReformInquiry.chosen_query_and_contingent_remedy
+#check ReformInquiry.faithful_query_both_ways
+#check ReformInquiry.selected_report_cannot_support_uniform_remedy
+#check ReformInquiry.actual_harmful_history_is_repaired
+#check ReformInquiry.actual_supported_reform_continues
+#check ReformInquiry.both_branches_preserve_historical_losses
+#check ReformInquiry.both_branches_keep_total_support
+#check ReformInquiry.known_supported_case_avoids_unneeded_inquiry
+#check ReformInquiry.absent_authority_blocks_joint_solution
+#check ReformInquiry.accurate_inquiry_can_consume_the_remedy
+#check ReformInquiry.omitted_harmful_model_invalidates_selection
+#check ReformInquiry.selected_policy_works_for_all_retained_candidates

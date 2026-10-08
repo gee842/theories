@@ -1,0 +1,11 @@
+'Generative.ExplanatoryFiniteLogic.matches_symm' does not depend on any axioms
+'Generative.ExplanatoryFiniteLogic.extend_old' depends on axioms: [propext]
+'Generative.ExplanatoryFiniteLogic.extend_fresh' depends on axioms: [propext]
+'Generative.ExplanatoryFiniteLogic.match_extends' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryFiniteLogic.finite_formula_preserved' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryFiniteLogic.sentence_agreement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryFiniteLogic.rooted_agreement' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryFiniteLogic.modal_translation_correct' depends on axioms: [propext]
+'Generative.ExplanatoryFiniteLogic.earlier_questions_agree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryFiniteLogic.every_position_generated' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.ExplanatoryFiniteLogic.joint_pairs_exist' depends on axioms: [propext]

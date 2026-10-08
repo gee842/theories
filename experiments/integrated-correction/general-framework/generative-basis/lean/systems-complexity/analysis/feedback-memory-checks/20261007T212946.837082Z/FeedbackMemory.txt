@@ -1,0 +1,6 @@
+FeedbackMemory.lean:215:43: error: Type mismatch
+  abs_sub_le ?m.206 ?m.207
+has type
+  ∀ (c : ?m.202), |?m.206 - c| ≤ |?m.206 - ?m.207| + |?m.207 - c|
+but is expected to have type
+  |u (n + 1) - v (n + 1) - (u n - v n)| ≤ |u (n + 1) - v (n + 1)| + |u n - v n|

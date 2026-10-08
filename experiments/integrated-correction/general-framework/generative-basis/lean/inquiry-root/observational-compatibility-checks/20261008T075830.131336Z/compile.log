@@ -1,0 +1,7 @@
+ObservationalCompatibility.lean:88:33: error: invalid `▸` notation, expected result type of cast is 
+  true = false
+however, the equality 
+  same
+of type 
+  v = (false, true)
+does not contain the expected result type on either the left or the right hand side

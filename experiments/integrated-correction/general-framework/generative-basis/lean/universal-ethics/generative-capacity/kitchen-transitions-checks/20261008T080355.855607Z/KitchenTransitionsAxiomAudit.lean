@@ -1,0 +1,13 @@
+import KitchenTransitions
+#print axioms KitchenTransitions.Feasible
+#print axioms KitchenTransitions.feasible_loss_iff
+#print axioms KitchenTransitions.net_change
+#print axioms KitchenTransitions.sampleSize
+#print axioms KitchenTransitions.beforeSafe
+#print axioms KitchenTransitions.afterSafe
+#print axioms KitchenTransitions.Published
+#print axioms KitchenTransitions.published_loss_iff
+#print axioms KitchenTransitions.published_gain_bounds
+#print axioms KitchenTransitions.published_table_determined_by_loss
+#print axioms KitchenTransitions.no_losses_realization
+#print axioms KitchenTransitions.losses_realization

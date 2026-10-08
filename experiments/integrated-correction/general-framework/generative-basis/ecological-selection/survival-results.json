@@ -1,0 +1,160 @@
+{
+  "status": "analysis_completed_at_declared_empirical_scope",
+  "scope": "30 culture observations, three sampled isolates from one historical lineage; not 30 evolutionary lineages",
+  "source_doi": "10.5061/dryad.2hr77",
+  "source_bytes": 643,
+  "source_md5_matches_repository": true,
+  "source_sha256": "f9920311c09251f9854318a65f4d67212ec3b0d2792af78e83e50913c987db75",
+  "analysis_sha256": "8022ab31a2075fe2bafce7f2e2c4326316d46d6b5414a5a2cfa2a3d13ec46d16",
+  "python_version": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "bootstrap_replicates": 40000,
+  "bootstrap_seed": 8102013,
+  "bootstrap_scope": "Exploratory culture-level sampling uncertainty; n=5 per regime. No evolutionary-lineage generalization.",
+  "proof_status": "Numerical empirical calculations; no new theorem or Lean claim.",
+  "results": [
+    {
+      "isolate_day": 7,
+      "cultures_per_regime": 5,
+      "old_mean": 0.0367678894,
+      "new_mean": 0.0381050516,
+      "old_sample_sd": 0.008368226373778332,
+      "new_sample_sd": 0.007291275345103097,
+      "mean_difference_new_minus_old": 0.0013371622,
+      "ratio_of_means_new_over_old": 1.036367662702989,
+      "bootstrap_ratio_percentiles_2_5_97_5": [
+        0.811312771800599,
+        1.3009379912838135
+      ],
+      "bootstrap_difference_percentiles_2_5_97_5": [
+        -0.007783883999999998,
+        0.009485275599999999
+      ],
+      "permutation_sensitivity": {
+        "allocations": 252,
+        "at_least_as_extreme": 194,
+        "two_sided_reference_probability": 0.7698412698412699,
+        "assumption": "Exchangeability of culture labels under the null; not documented random assignment."
+      },
+      "balanced_holdout": {
+        "folds": 25,
+        "scored_occurrences": 50,
+        "unique_cultures": 10,
+        "common_rate_rmse": 0.007973821477042382,
+        "regime_conditional_rmse": 0.008774605005387265,
+        "comparison_scope": "Value of retaining the observed transfer regime, not superiority over conventional evolutionary models."
+      },
+      "old_values": [
+        0.027981651,
+        0.045445545,
+        0.045408805,
+        0.029625668,
+        0.035377778
+      ],
+      "new_values": [
+        0.025259434,
+        0.04021978,
+        0.040740741,
+        0.043467153,
+        0.04083815
+      ]
+    },
+    {
+      "isolate_day": 28,
+      "cultures_per_regime": 5,
+      "old_mean": 0.0610580388,
+      "new_mean": 0.0262995468,
+      "old_sample_sd": 0.00499006087963115,
+      "new_sample_sd": 0.007553045755821503,
+      "mean_difference_new_minus_old": -0.034758492,
+      "ratio_of_means_new_over_old": 0.4307302906689496,
+      "bootstrap_ratio_percentiles_2_5_97_5": [
+        0.3299799629730588,
+        0.5296544987266267
+      ],
+      "bootstrap_difference_percentiles_2_5_97_5": [
+        -0.04199637134,
+        -0.027873210599999997
+      ],
+      "permutation_sensitivity": {
+        "allocations": 252,
+        "at_least_as_extreme": 2,
+        "two_sided_reference_probability": 0.007936507936507936,
+        "assumption": "Exchangeability of culture labels under the null; not documented random assignment."
+      },
+      "balanced_holdout": {
+        "folds": 25,
+        "scored_occurrences": 50,
+        "unique_cultures": 10,
+        "common_rate_rmse": 0.01854823874419468,
+        "regime_conditional_rmse": 0.007156693011263932,
+        "comparison_scope": "Value of retaining the observed transfer regime, not superiority over conventional evolutionary models."
+      },
+      "old_values": [
+        0.064072848,
+        0.061621622,
+        0.056370968,
+        0.06742671,
+        0.055798046
+      ],
+      "new_values": [
+        0.017111111,
+        0.029315961,
+        0.034127517,
+        0.019470752,
+        0.031472393
+      ]
+    },
+    {
+      "isolate_day": 65,
+      "cultures_per_regime": 5,
+      "old_mean": 0.0246892832,
+      "new_mean": 0.0121983222,
+      "old_sample_sd": 0.004475128214894821,
+      "new_sample_sd": 0.0022207577718149946,
+      "mean_difference_new_minus_old": -0.012490961,
+      "ratio_of_means_new_over_old": 0.4940735662994056,
+      "bootstrap_ratio_percentiles_2_5_97_5": [
+        0.3987835975578751,
+        0.6001939003581561
+      ],
+      "bootstrap_difference_percentiles_2_5_97_5": [
+        -0.0165159056,
+        -0.008678701979999997
+      ],
+      "permutation_sensitivity": {
+        "allocations": 252,
+        "at_least_as_extreme": 2,
+        "two_sided_reference_probability": 0.007936507936507936,
+        "assumption": "Exchangeability of culture labels under the null; not documented random assignment."
+      },
+      "balanced_holdout": {
+        "folds": 25,
+        "scored_occurrences": 50,
+        "unique_cultures": 10,
+        "common_rate_rmse": 0.007197032527823725,
+        "regime_conditional_rmse": 0.0039495678261064525,
+        "comparison_scope": "Value of retaining the observed transfer regime, not superiority over conventional evolutionary models."
+      },
+      "old_values": [
+        0.023659091,
+        0.027191489,
+        0.022771084,
+        0.019038462,
+        0.03078629
+      ],
+      "new_values": [
+        0.008743169,
+        0.01348135,
+        0.013410405,
+        0.014129693,
+        0.011226994
+      ]
+    }
+  ],
+  "missing": [
+    "Complete velocity/area table",
+    "linked cluster identities across trait, survival and offspring records",
+    "descendant yield and metabolic renewal measurements for these 30 cultures",
+    "prospective independent validation and adequately informed rival comparison"
+  ]
+}

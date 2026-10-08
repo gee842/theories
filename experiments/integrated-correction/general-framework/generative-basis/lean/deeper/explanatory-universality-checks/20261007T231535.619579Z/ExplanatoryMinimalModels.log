@@ -1,0 +1,63 @@
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-universality-pr3uxly7/ExplanatoryMinimalModels.lean:246:26: error: failed to synthesize
+  Decidable (early.process.step false () false ↔ (false, false) = (false, true) ∨ (false, false) = (true, true))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-universality-pr3uxly7/ExplanatoryMinimalModels.lean:246:26: error: failed to synthesize
+  Decidable (early.process.step false () true ↔ (false, true) = (false, true) ∨ (false, true) = (true, true))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-universality-pr3uxly7/ExplanatoryMinimalModels.lean:246:26: error: failed to synthesize
+  Decidable (early.process.step true () false ↔ (true, false) = (false, true) ∨ (true, false) = (true, true))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-universality-pr3uxly7/ExplanatoryMinimalModels.lean:246:26: error: failed to synthesize
+  Decidable (early.process.step true () true ↔ (true, true) = (false, true) ∨ (true, true) = (true, true))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-universality-pr3uxly7/ExplanatoryMinimalModels.lean:250:26: error: failed to synthesize
+  Decidable (late.process.step false () false ↔ (false, false) = (false, false) ∨ (false, false) = (false, true))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-universality-pr3uxly7/ExplanatoryMinimalModels.lean:250:26: error: failed to synthesize
+  Decidable (late.process.step false () true ↔ (false, true) = (false, false) ∨ (false, true) = (false, true))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-universality-pr3uxly7/ExplanatoryMinimalModels.lean:250:26: error: failed to synthesize
+  Decidable (late.process.step true () false ↔ (true, false) = (false, false) ∨ (true, false) = (false, true))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+/var/folders/h6/tw6bmgcs5txbtn4swlpkpm4w0000gn/T/ren-explanatory-universality-pr3uxly7/ExplanatoryMinimalModels.lean:250:26: error: failed to synthesize
+  Decidable (late.process.step true () true ↔ (true, true) = (false, false) ∨ (true, true) = (false, true))
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+'Generative.ExplanatoryMinimalModels.right_nil' does not depend on any axioms
+'Generative.ExplanatoryMinimalModels.accepts_nil' does not depend on any axioms
+'Generative.ExplanatoryMinimalModels.early_nonempty_run' does not depend on any axioms
+'Generative.ExplanatoryMinimalModels.late_wait' does not depend on any axioms
+'Generative.ExplanatoryMinimalModels.late_nonempty_run' does not depend on any axioms
+'Generative.ExplanatoryMinimalModels.early_accepts' does not depend on any axioms
+'Generative.ExplanatoryMinimalModels.late_accepts' does not depend on any axioms
+'Generative.ExplanatoryMinimalModels.same_complete_language' does not depend on any axioms
+'Generative.ExplanatoryMinimalModels.any_realizer_needs_two_states' does not depend on any axioms
+'Generative.ExplanatoryMinimalModels.two_state_lower_bound' does not depend on any axioms
+'Generative.ExplanatoryMinimalModels.early_trim' does not depend on any axioms
+'Generative.ExplanatoryMinimalModels.late_trim' does not depend on any axioms
+'Generative.ExplanatoryMinimalModels.final_distinguishes_bool_states' does not depend on any axioms
+'Generative.ExplanatoryMinimalModels.early_separated' does not depend on any axioms
+'Generative.ExplanatoryMinimalModels.late_separated' does not depend on any axioms
+'Generative.ExplanatoryMinimalModels.early_deterministic' does not depend on any axioms
+'Generative.ExplanatoryMinimalModels.late_branches' does not depend on any axioms
+'Generative.ExplanatoryMinimalModels.late_not_deterministic' does not depend on any axioms
+'Generative.ExplanatoryMinimalModels.no_injective_step_preserving_map' does not depend on any axioms
+'Generative.ExplanatoryMinimalModels.same_possible_words' does not depend on any axioms
+'Generative.ExplanatoryMinimalModels.early_all_finish_after_one' does not depend on any axioms
+'Generative.ExplanatoryMinimalModels.late_not_all_finish_after_one' does not depend on any axioms
+'Generative.ExplanatoryMinimalModels.successful_continuation_differs' does not depend on any axioms
+'Generative.ExplanatoryMinimalModels.minimal_mechanism_uniqueness_fails' does not depend on any axioms
+'Generative.ExplanatoryMinimalModels.any_realizer_needs_two_edges' does not depend on any axioms
+'Generative.ExplanatoryMinimalModels.early_edges_exact' depends on axioms: [sorryAx]
+'Generative.ExplanatoryMinimalModels.late_edges_exact' depends on axioms: [sorryAx]
+'Generative.ExplanatoryMinimalModels.collective_iff_appended' does not depend on any axioms
+'Generative.ExplanatoryMinimalModels.same_collective_predictions' does not depend on any axioms
+'Generative.ExplanatoryMinimalModels.no_late_state_matches_early_success' does not depend on any axioms
+'Generative.ExplanatoryMinimalModels.determinism_not_language_invariant' does not depend on any axioms

@@ -1,0 +1,68 @@
+ObservableContinuation.selected_execution_gives_continuation_bound {Ω S Q A : Type} (domain : List Ω) (weight : Ω → Nat)
+  (demand oldWorks newWorks : Ω → Bool) (initial : Ω → S) (m : AlignmentInquiry.Interface S Q A) (states : List S)
+  (plans : List (AlignmentInquiry.Plan Q A)) (p : AlignmentInquiry.Plan Q A)
+  (selected : AlignmentInquiry.choose m states plans = some p) (covered : ∀ (h : Ω), h ∈ domain → initial h ∈ states)
+  (effect :
+    ∀ (h : Ω),
+      h ∈ domain →
+        ChanceAdequacy.target demand oldWorks h = true →
+          ∀ (final : S),
+            AlignmentInquiry.run m p (initial h) = some final → m.achieved final = true → newWorks h = true)
+  (positive : 0 < ChanceAdequacy.total domain weight) :
+  ChanceAdequacy.Fulfilled domain demand oldWorks newWorks ∧
+    0 < ChanceAdequacy.total domain weight ∧
+      ChanceAdequacy.mass domain weight (ChanceAdequacy.target demand oldWorks) ≤
+          ChanceAdequacy.mass domain weight newWorks ∧
+        ChanceAdequacy.mass domain weight newWorks ≤ ChanceAdequacy.total domain weight
+ObservableContinuation.limited_budget_preserves_maintenance_but_not_extension :
+  AlignmentInquiry.choose (ObservableContinuation.interface ObservableContinuation.oldWorks)
+        (ObservableContinuation.states 1) ObservableContinuation.singlePlans =
+      some ObservableContinuation.maintain ∧
+    (∀ (mode : Bool),
+        AlignmentInquiry.run (ObservableContinuation.interface ObservableContinuation.oldWorks)
+            ObservableContinuation.maintain (ObservableContinuation.initial 1 mode) =
+          some { mode := mode, budget := 0, supported := !mode }) ∧
+      ChanceAdequacy.Fulfilled [false, true] (fun x => true) ObservableContinuation.oldWorks
+          (ObservableContinuation.support ObservableContinuation.maintain 1) ∧
+        (∀ (mode : Bool), ObservableContinuation.extension mode = true) ∧
+          AlignmentInquiry.choose (ObservableContinuation.interface ObservableContinuation.extension)
+              (ObservableContinuation.states 1) ObservableContinuation.singlePlans =
+            none
+ObservableContinuation.funded_observation_realizes_extension :
+  AlignmentInquiry.choose (ObservableContinuation.interface ObservableContinuation.extension)
+        (ObservableContinuation.states 2) ObservableContinuation.singlePlans =
+      some ObservableContinuation.inspect ∧
+    (∀ (mode : Bool),
+        ObservableContinuation.probe (ObservableContinuation.initial 2 mode) ObservableContinuation.Query.sense =
+            some (mode, { mode := mode, budget := 1, supported := false }) ∧
+          AlignmentInquiry.run (ObservableContinuation.interface ObservableContinuation.extension)
+              ObservableContinuation.inspect (ObservableContinuation.initial 2 mode) =
+            some { mode := mode, budget := 0, supported := true }) ∧
+      ChanceAdequacy.Fulfilled [false, true] (fun x => true) ObservableContinuation.oldWorks
+          (ObservableContinuation.support ObservableContinuation.inspect 2) ∧
+        ChanceAdequacy.mass [false, true] (fun x => 1) ObservableContinuation.oldWorks = 1 ∧
+          ChanceAdequacy.mass [false, true] (fun x => 1)
+                (ObservableContinuation.support ObservableContinuation.inspect 2) =
+              2 ∧
+            ChanceAdequacy.mass [false, true] (fun x => 1) ObservableContinuation.oldWorks <
+              ChanceAdequacy.mass [false, true] (fun x => 1)
+                (ObservableContinuation.support ObservableContinuation.inspect 2)
+ObservableContinuation.funded_parallel_support_realizes_extension :
+  AlignmentInquiry.choose (ObservableContinuation.interface ObservableContinuation.extension)
+        (ObservableContinuation.states 2) ObservableContinuation.expandedPlans =
+      some ObservableContinuation.parallelPlan ∧
+    (∀ (mode : Bool),
+        ObservableContinuation.probe (ObservableContinuation.initial 2 mode) ObservableContinuation.Query.blind =
+            some (false, ObservableContinuation.initial 2 mode) ∧
+          AlignmentInquiry.run (ObservableContinuation.interface ObservableContinuation.extension)
+              ObservableContinuation.parallelPlan (ObservableContinuation.initial 2 mode) =
+            some { mode := mode, budget := 0, supported := true }) ∧
+      ChanceAdequacy.Fulfilled [false, true] (fun x => true) ObservableContinuation.oldWorks
+          (ObservableContinuation.support ObservableContinuation.parallelPlan 2) ∧
+        ChanceAdequacy.mass [false, true] (fun x => 1) ObservableContinuation.oldWorks = 1 ∧
+          ChanceAdequacy.mass [false, true] (fun x => 1)
+                (ObservableContinuation.support ObservableContinuation.parallelPlan 2) =
+              2 ∧
+            ChanceAdequacy.mass [false, true] (fun x => 1) ObservableContinuation.oldWorks <
+              ChanceAdequacy.mass [false, true] (fun x => 1)
+                (ObservableContinuation.support ObservableContinuation.parallelPlan 2)

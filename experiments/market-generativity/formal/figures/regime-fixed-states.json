@@ -1,0 +1,10 @@
+{
+  "scope": "Illustration of checked rational stationary formulas and beta=1/2 local behavior; no simulated trajectories.",
+  "matplotlib_version": "3.11.2",
+  "proof_receipt_sha256": "bc1e36c7b7fefff1c8ef77156e2f48536a01a12b324a11277079143d9675e77c",
+  "script_sha256": "f011c14629a3b3b4fd494ed8b224f795eb331146d51fb1c6e70614b2034df740",
+  "outputs": {
+    "regime-fixed-states.png": "1aa9d14bfb1e4d4e165a1a0711b27bdeda6e5bdac4acd65312aa8ca2821672d7",
+    "regime-fixed-states.svg": "51cd214a203ce2eb5525c7dbacee517b6e38c839c0127ac8a7559a4f2445fd07"
+  }
+}

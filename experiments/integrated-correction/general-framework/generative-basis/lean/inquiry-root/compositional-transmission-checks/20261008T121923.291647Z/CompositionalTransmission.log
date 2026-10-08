@@ -1,0 +1,12 @@
+CompositionalTransmission.lean:138:11: error: Application type mismatch: The argument
+  rfl
+has type
+  ?m.44 = ?m.44
+but is expected to have type
+  x.receiver = y.receiver
+in the application
+  And.intro rfl
+CompositionalTransmission.lean:180:26: error: Expected type must not contain free variables
+  7 ≤ (cohort p 0).support
+
+Hint: Use the `+revert` option to automatically clean up and revert free variables

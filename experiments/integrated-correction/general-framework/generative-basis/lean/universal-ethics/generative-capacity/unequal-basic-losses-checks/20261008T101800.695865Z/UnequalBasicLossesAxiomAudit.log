@@ -1,0 +1,23 @@
+'UnequalBasicLosses.Profile' does not depend on any axioms
+'UnequalBasicLosses.total' does not depend on any axioms
+'UnequalBasicLosses.CumulativeLE' does not depend on any axioms
+'UnequalBasicLosses.CumulativeLT' does not depend on any axioms
+'UnequalBasicLosses.diagnosticCost' does not depend on any axioms
+'UnequalBasicLosses.positive_linear_diagnostics_iff' depends on axioms: [propext, Quot.sound]
+'UnequalBasicLosses.cumulative_iff_all_positive_diagnostics' depends on axioms: [propext, Quot.sound]
+'UnequalBasicLosses.strict_cumulative_iff_all_positive_diagnostics' depends on axioms: [propext, Quot.sound]
+'UnequalBasicLosses.cumulative_strict_irrefl' depends on axioms: [propext]
+'UnequalBasicLosses.cumulative_strict_trans' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UnequalBasicLosses.individual_sensitivities_agree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UnequalBasicLosses.one_higher_two_lower_cross_thresholds' depends on axioms: [propext]
+'UnequalBasicLosses.positive_diagnostics_reverse_crossed_case' does not depend on any axioms
+'UnequalBasicLosses.reportedGrounds' depends on axioms: [propext]
+'UnequalBasicLosses.same_reported_grounds_same_inventory' depends on axioms: [propext]
+'UnequalBasicLosses.duplicating_reports_does_not_multiply_grounds' depends on axioms: [propext]
+'UnequalBasicLosses.duplicate_row_count_can_reverse_comparison' depends on axioms: [propext]
+'UnequalBasicLosses.SupportPoint' does not depend on any axioms
+'UnequalBasicLosses.directLossProfile' does not depend on any axioms
+'UnequalBasicLosses.provisionContinues' does not depend on any axioms
+'UnequalBasicLosses.equal_direct_profiles_different_common_continuation' depends on axioms: [propext]
+'UnequalBasicLosses.direct_profile_does_not_determine_continuation' depends on axioms: [propext]
+'UnequalBasicLosses.common_support_distinguishes_histories_in_existing_comparator' depends on axioms: [propext]

@@ -1,0 +1,12 @@
+import WisdomGoalGrounds
+#print axioms WisdomGoalGrounds.achievementProfile
+#print axioms WisdomGoalGrounds.Acceptable
+#print axioms WisdomGoalGrounds.retentionCase
+#print axioms WisdomGoalGrounds.fixedRule
+#print axioms WisdomGoalGrounds.achievement_profiles_equal
+#print axioms WisdomGoalGrounds.retaining_goal_preferred
+#print axioms WisdomGoalGrounds.revision_frontier_iff
+#print axioms WisdomGoalGrounds.retention_frontier_iff
+#print axioms WisdomGoalGrounds.adequate_goal_selector_distinguishes
+#print axioms WisdomGoalGrounds.attainment_only_selector_insufficient
+#print axioms WisdomGoalGrounds.fixed_ground_rule_adequate

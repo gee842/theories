@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-10-08T11:41:34.507121+00:00",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "checker_sha256": "9441cfdd07484cae4563225d6600769e2c90728ac599d1be6436f171a33e4646",
+  "modules": {
+    "GenerativeClosure": {
+      "source_sha256": "d0a79987bd15c3de39f4c109d1d61703df50d3e9b3236c4e46acdd1854ec22ed",
+      "log_sha256": "687b5a329da93c81fa8b42c99581286923578abe68b69de79c6c0b9f10913e74",
+      "audits": {
+        "InquiryRoot.derivation_sound": [],
+        "InquiryRoot.all_closed_descendants_necessary": [],
+        "InquiryRoot.all_relative_descendants_necessary": [],
+        "InquiryRoot.entire_closure_necessary_iff_basis": [],
+        "InquiryRoot.local_justification_discharges_context": [],
+        "InquiryRoot.no_counterexample_to_closed_descendant": [],
+        "InquiryRoot.countermodel_excludes_derivation": [],
+        "InquiryRoot.derived_lemma_extension_preserves_necessity": [],
+        "InquiryRoot.extra_claim_derives_with_one_local_premise": [],
+        "InquiryRoot.extra_claim_not_necessary": [],
+        "InquiryRoot.extra_claim_not_closed_derivable": [],
+        "InquiryRoot.one_local_premise_becomes_an_implication": []
+      }
+    },
+    "JointInterpretation": {
+      "source_sha256": "b8c6fabc4ed4ff3c63898d1660abca7e6e83d446abe2b2df5975568212a16fac",
+      "log_sha256": "247f75707db7d74a07cb14adef69edfe43762aea49309d12e4e130213332fc1c",
+      "audits": {
+        "InquiryRoot.JointInterpretation.package": [],
+        "InquiryRoot.JointInterpretation.package_derivable": [],
+        "InquiryRoot.JointInterpretation.package_iff_list": [],
+        "InquiryRoot.JointInterpretation.package_iff_basis": [],
+        "InquiryRoot.JointInterpretation.basis_iff_relative_closure": [],
+        "InquiryRoot.JointInterpretation.common_basis_iff_common_closure": [],
+        "InquiryRoot.JointInterpretation.pointwise_closure_iff_common": [],
+        "InquiryRoot.JointInterpretation.pointwise_closure_gives_common_relative": [],
+        "InquiryRoot.JointInterpretation.incompatibleRows": [],
+        "InquiryRoot.JointInterpretation.separate_basis_rows_fit": [],
+        "InquiryRoot.JointInterpretation.separate_rows_have_no_common_interpretation": [],
+        "InquiryRoot.JointInterpretation.separate_rows_do_not_cover_full_closure": []
+      }
+    }
+  },
+  "new_theorems": 10,
+  "new_definitions": 2,
+  "new_empty_audits": 12,
+  "inherited_empty_audits": 12,
+  "total_empty_audits": 24,
+  "run_directory": "joint-interpretation-checks/20261008T114133.852211Z",
+  "baseline_receipt": "formation-compilation-checks/20261008T095838.361177Z/receipt.json",
+  "baseline_sha256": "5adb28771bb4508fa766406904a9ef96a1bebf6304ea7b783f1a5be20213660b",
+  "scope": "Migration of the finite-basis joint-interpretation argument into the existing calculus. Full pointwise closed-theory coverage yields one common admitted interpretation; separate row matching does not. Local premises remain conditional.",
+  "logical_basis": "Lean 4.29.1 and unchanged GenerativeClosure. The interpretation carrier, admission predicate, basis and covering finite list remain explicit. No common actual process law or actual admissibility is established."
+}

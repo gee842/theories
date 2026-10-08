@@ -1,0 +1,12 @@
+'Generative.ExplanatoryLeaseDynamics.mark_at_slot' depends on axioms: [propext]
+'Generative.ExplanatoryLeaseDynamics.mark_at_other' depends on axioms: [propext]
+'Generative.ExplanatoryLeaseDynamics.clear_after_fresh_mark' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryLeaseDynamics.activity_round' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryLeaseDynamics.ordinary_step_has_native_round' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryLeaseDynamics.joint_answer_iff_overlapping_acquisitions' depends on axioms: [propext]
+'Generative.ExplanatoryLeaseDynamics.shared_overlap_impossible' depends on axioms: [propext]
+'Generative.ExplanatoryLeaseDynamics.separate_overlap_realized' depends on axioms: [propext]
+'Generative.ExplanatoryLeaseDynamics.episode_returns_vacant' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryLeaseDynamics.arbitrary_serial_episodes' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryLeaseDynamics.serial_success_does_not_remove_overlap_conflict' depends on axioms: [propext,
+ Quot.sound]

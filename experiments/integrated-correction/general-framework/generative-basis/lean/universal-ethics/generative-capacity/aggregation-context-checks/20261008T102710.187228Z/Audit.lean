@@ -1,0 +1,16 @@
+import AggregationContext
+#print axioms AggregationContext.Protection
+#print axioms AggregationContext.Included
+#print axioms AggregationContext.fixedScore
+#print axioms AggregationContext.filteredScore
+#print axioms AggregationContext.FilterPref
+#print axioms AggregationContext.original
+#print axioms AggregationContext.improved
+#print axioms AggregationContext.alternative
+#print axioms AggregationContext.population
+#print axioms AggregationContext.fixed_population_upgrade
+#print axioms AggregationContext.strongest_cutoff_reverses
+#print axioms AggregationContext.unfiltered_control
+#print axioms AggregationContext.fixed_score_preserves_inclusion
+#print axioms AggregationContext.no_fixed_strict_extension
+#print axioms AggregationContext.padding_composition_obstruction

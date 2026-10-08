@@ -1,0 +1,19 @@
+import GenerativeCore
+#print axioms Generative.trace_append_iff
+#print axioms Generative.trace_singleton_iff
+#print axioms Generative.enabled_iff_singleton_trace
+#print axioms Generative.enabled_difference_implies_state_difference
+#print axioms Generative.feasible_append_iff
+#print axioms Generative.feasible_prefix
+#print axioms Generative.enabled_product_iff
+#print axioms Generative.trace_product_iff
+#print axioms Generative.feasible_product_iff
+#print axioms Generative.trace_map
+#print axioms Generative.trace_lift
+#print axioms Generative.projected_trace_iff
+#print axioms Generative.projection_exact_iff
+#print axioms Generative.local_exact_iff_trace_exact
+#print axioms Generative.enabled_projection_iff
+#print axioms Generative.feasible_projection_iff
+#print axioms Generative.feasible_difference_implies_projection_difference
+#print axioms Generative.trace_faithful_iff

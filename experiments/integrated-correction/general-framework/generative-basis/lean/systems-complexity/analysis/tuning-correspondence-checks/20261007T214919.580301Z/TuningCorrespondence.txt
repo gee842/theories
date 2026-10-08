@@ -1,0 +1,15 @@
+Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+TuningCorrespondence.lean:24:21: error: unsolved goals
+case e_a
+target x y E : ℕ → ℝ
+N : ℕ
+h : ∀ n < N, |x n - y n| ≤ E n
+n : ℕ
+hn : n < N
+⊢ -x n + y n = x n - y n
+TuningCorrespondence.lean:30:58: error: unexpected token '|*'; expected '|' or '|ₘ'

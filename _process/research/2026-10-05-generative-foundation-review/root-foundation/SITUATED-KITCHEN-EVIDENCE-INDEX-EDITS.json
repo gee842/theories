@@ -1,0 +1,150 @@
+{
+  "date": "2026-10-08",
+  "entry": "C23",
+  "before": {
+    "id": "C23",
+    "title_zh": "有限认识中的情境判断",
+    "title_en": "Situated judgment under finite knowledge",
+    "claim_zh": "整体中的生及继续生成给出共同方向；G0、公开 J1–J4、有限认识及真实对应支持及时回应、调查、调整与结束。共享厨房应用区分能力形成、实际减负、可用路线及真实接续；稳定照料与共同学习不预先排序。",
+    "claim_en": "Living and further generation orient timely response, inquiry, revision and closure through G0, disclosed J1–J4, finite knowledge and actual correspondence. The kitchen application distinguishes capacity formation, actual relief, usable access and realized succession; stable care and shared learning are not pre-ranked.",
+    "scope_zh": "相连候选及构造应用；新增9项定理／20项审计，继承实践30项与求知8项的条件范围。保留不可比、负担反转与基本冲突；无现场验证。实践候选独立审查与知识、应用作者反审分别保留；J2及实际对应仍须辩护。",
+    "scope_en": "Connected candidate and constructed application; nine new theorems/20 audits, retaining the conditional 30-theorem practical and eight-theorem inquiry scopes. Incomparability, burden reversal and basic conflicts remain; no field validation. Practical acceptance is independent; knowledge and application have author counterreview. J2 and correspondence remain substantive.",
+    "links": [
+      {
+        "label_zh": "情境与不确定性",
+        "label_en": "Situation and uncertainty",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#situated-judgment-under-deep-uncertainty"
+      },
+      {
+        "label_zh": "整合与范围修正",
+        "label_en": "Integration and scope correction",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md#4-必要损失与目前只知道这条路不同",
+        "label_zh": "必要性与有限认识",
+        "label_en": "Necessity and finite knowledge"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md#5-真实冲突有限认识与及时决定--conflict-and-uncertainty",
+        "label_zh": "有限认识与及时决定",
+        "label_en": "Uncertainty and timely decision"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md#11-新成果接续后的结论2026年10月8日",
+        "label_zh": "当前接续结论",
+        "label_en": "Current integrated conclusion"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-PRIORITIES-AND-G0.md",
+        "label_zh": "求知、及时回应与结束",
+        "label_en": "Inquiry, timely response and closure"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-INQUIRY-AND-STANDING.md",
+        "label_zh": "有根据的可能性范围",
+        "label_en": "Warranted possibility scope"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-ADEQUACY-CORRESPONDENCE.md",
+        "label_zh": "八项既有求知实查",
+        "label_en": "Eight inherited inquiry results"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-CALIBRATION.md",
+        "label_zh": "共享厨房应用与校准",
+        "label_en": "Shared-kitchen application and calibration"
+      }
+    ]
+  },
+  "after": {
+    "id": "C23",
+    "title_zh": "有限认识中的情境判断",
+    "title_en": "Situated judgment under finite knowledge",
+    "claim_zh": "G0、公开 J1–J4、有限认识及真实对应支持情境回应、调查、调整与结束。厨房构造及公开项目资料区分能力、可用路线、实际接续和参与条件；留存者收益不替代退出与未进入的生活。",
+    "claim_en": "G0, disclosed J1–J4, finite knowledge and actual correspondence support situated response, inquiry, revision and closure. Kitchen cases and published evidence distinguish capacities, usable routes, succession and participation conditions; retained participants’ benefits do not stand in for the lives of those leaving or not entering.",
+    "scope_zh": "相连候选、构造应用及原始资料约束；原9项新构造定理／20项审计范围不变，继承实践30项与求知8项。新增八行汇总表格核对，无新定理、现场干预或因果认证。保留不可比、真实损失及作者反审；一般实践独立验收保持原范围。",
+    "scope_en": "Connected candidate, constructed application and primary-evidence constraints. The nine-theorem/20-audit construction and inherited practical/inquiry scopes remain; eight aggregate rows are newly checked. No new theorem, field intervention or causal certification. Incomparability, real losses and author counterreview remain; independent practical acceptance keeps its original scope.",
+    "links": [
+      {
+        "label_zh": "情境与不确定性",
+        "label_en": "Situation and uncertainty",
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#situated-judgment-under-deep-uncertainty"
+      },
+      {
+        "label_zh": "整合与范围修正",
+        "label_en": "Integration and scope correction",
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVE-TRADEOFF-INTEGRATION.md#4-必要损失与目前只知道这条路不同",
+        "label_zh": "必要性与有限认识",
+        "label_en": "Necessity and finite knowledge"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md#5-真实冲突有限认识与及时决定--conflict-and-uncertainty",
+        "label_zh": "有限认识与及时决定",
+        "label_en": "Uncertainty and timely decision"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md#11-新成果接续后的结论2026年10月8日",
+        "label_zh": "当前接续结论",
+        "label_en": "Current integrated conclusion"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-PRIORITIES-AND-G0.md",
+        "label_zh": "求知、及时回应与结束",
+        "label_en": "Inquiry, timely response and closure"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHARED-INQUIRY-AND-STANDING.md",
+        "label_zh": "有根据的可能性范围",
+        "label_en": "Warranted possibility scope"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-ADEQUACY-CORRESPONDENCE.md",
+        "label_zh": "八项既有求知实查",
+        "label_en": "Eight inherited inquiry results"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-CALIBRATION.md",
+        "label_zh": "共享厨房应用与校准",
+        "label_en": "Shared-kitchen application and calibration"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-EVIDENCE.md",
+        "label_zh": "实际资料与应用修正",
+        "label_en": "Published evidence and application revision"
+      }
+    ]
+  },
+  "other_entries_preserved": 85,
+  "reviewed_sources": [
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-EVIDENCE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-CALIBRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-WARRANT-INTEGRATION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/PRACTICAL-JUDGMENT.md"
+  ],
+  "discovery_added": [
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SITUATED-KITCHEN-EVIDENCE.md"
+  ],
+  "other_discovery_paths_preserved": true,
+  "scoped_existing_renderer": true,
+  "pending_global_changes": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-assumption-free-shengsheng-foundation.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTEXTUAL-ESTABLISHMENT-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GOAL-REVISION-CONTINUATION-PROTOCOL.md"
+    ],
+    "removed_pages": []
+  }
+}

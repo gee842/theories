@@ -1,0 +1,45 @@
+{
+  "checked_at": "2026-10-08T08:15:57.290135+00:00",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "module": "DeductiveNecessity",
+  "source_sha256": "c7690ac84c21f4c9d733eff1a411c7b2faad92bc831870b8bacc553a8e180d9f",
+  "checker_sha256": "1a9707b5fdbe8536814b48a571a043486381970d73ad523e901fd4351ac4835b",
+  "imports": [
+    "Init"
+  ],
+  "new_theorems": 5,
+  "audits": [
+    {
+      "declaration": "Generative.DeductiveNecessity.Possible",
+      "axioms": []
+    },
+    {
+      "declaration": "Generative.DeductiveNecessity.Necessary",
+      "axioms": []
+    },
+    {
+      "declaration": "Generative.DeductiveNecessity.actual_gives_possible",
+      "axioms": []
+    },
+    {
+      "declaration": "Generative.DeductiveNecessity.return_gives_necessary_possibility",
+      "axioms": []
+    },
+    {
+      "declaration": "Generative.DeductiveNecessity.uniform_possibility_transfer_iff_return",
+      "axioms": []
+    },
+    {
+      "declaration": "Generative.DeductiveNecessity.uniform_truth_transfer_iff_single_case",
+      "axioms": []
+    },
+    {
+      "declaration": "Generative.DeductiveNecessity.one_way_comparison_separates",
+      "axioms": []
+    }
+  ],
+  "run_directory": "deductive-necessity-checks/20261008T081557.084380Z",
+  "scope": "Inference schemas over a supplied comparison relation; no actual modal or process law established.",
+  "logical_basis": "Lean 4.29.1 type theory and Init remain the checking framework."
+}

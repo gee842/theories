@@ -1,0 +1,169 @@
+{
+  "status": "passed",
+  "utc": "20261007T193051.511909Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "priority-identification-checks/20261007T193051.511909Z",
+  "source_sha256": {
+    "PracticalPriorityIdentification": "d7416c92ea8ff688b72d4f660e5ef592fa45287f1f964a0f52419b2ebf1a99cb"
+  },
+  "checker_sha256": {
+    "check_priority_identification.py": "22bad1e07b3ef4254b10c16f7c41cde25094935463283ea09ada3ea95f805d84",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Exact finite-comparison agreement of lexical and finite-weight rules with global reversal; symmetric allocation cannot uniquely assign one role. Restricted identification and structural results, not ethical correctness, whole-theory refutation, or zero-axiom practical grounding.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "modules": [
+    {
+      "module": "PracticalPriorityIdentification",
+      "theorems": 14,
+      "declarations": [
+        {
+          "kind": "abbrev",
+          "name": "PracticalPriorityIdentification.History"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalPriorityIdentification.LexLe"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalPriorityIdentification.score"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalPriorityIdentification.FiniteLe"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalPriorityIdentification.lex_refl"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalPriorityIdentification.lex_trans"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalPriorityIdentification.finite_trans"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalPriorityIdentification.finite_protection_positive"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalPriorityIdentification.finite_secondary_positive"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalPriorityIdentification.bounded_comparison_agreement"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalPriorityIdentification.secondaryBound"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalPriorityIdentification.member_bounded"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalPriorityIdentification.every_finite_sample_agrees"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalPriorityIdentification.outside_sample_reversal"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalPriorityIdentification.reversing_history_unobserved"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalPriorityIdentification.no_fixed_finite_weight_is_lexical"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalPriorityIdentification.finite_agreement_without_global_identification"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalPriorityIdentification.SwapInvariant"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalPriorityIdentification.ExactlyOne"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalPriorityIdentification.symmetric_assignment_not_unique"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalPriorityIdentification.two_assignments_fit_one_task"
+        }
+      ],
+      "axiom_dependencies": {
+        "PracticalPriorityIdentification.History": [],
+        "PracticalPriorityIdentification.LexLe": [],
+        "PracticalPriorityIdentification.score": [],
+        "PracticalPriorityIdentification.FiniteLe": [],
+        "PracticalPriorityIdentification.lex_refl": [],
+        "PracticalPriorityIdentification.lex_trans": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PracticalPriorityIdentification.finite_trans": [],
+        "PracticalPriorityIdentification.finite_protection_positive": [
+          "propext"
+        ],
+        "PracticalPriorityIdentification.finite_secondary_positive": [
+          "propext"
+        ],
+        "PracticalPriorityIdentification.bounded_comparison_agreement": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PracticalPriorityIdentification.secondaryBound": [],
+        "PracticalPriorityIdentification.member_bounded": [
+          "propext"
+        ],
+        "PracticalPriorityIdentification.every_finite_sample_agrees": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PracticalPriorityIdentification.outside_sample_reversal": [
+          "propext"
+        ],
+        "PracticalPriorityIdentification.reversing_history_unobserved": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PracticalPriorityIdentification.no_fixed_finite_weight_is_lexical": [
+          "propext"
+        ],
+        "PracticalPriorityIdentification.finite_agreement_without_global_identification": [
+          "propext",
+          "Quot.sound"
+        ],
+        "PracticalPriorityIdentification.SwapInvariant": [],
+        "PracticalPriorityIdentification.ExactlyOne": [],
+        "PracticalPriorityIdentification.symmetric_assignment_not_unique": [],
+        "PracticalPriorityIdentification.two_assignments_fit_one_task": []
+      },
+      "kernel_checked": true
+    }
+  ],
+  "artifact_sha256": {
+    "PracticalPriorityIdentification.lean": "d7416c92ea8ff688b72d4f660e5ef592fa45287f1f964a0f52419b2ebf1a99cb",
+    "PracticalPriorityIdentification.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PracticalPriorityIdentificationAxiomAudit.lean": "1364cb9dc427fbb038acbc5f5486053b41f3d2b3b6a036f2b58308b3d975adcc",
+    "PracticalPriorityIdentificationAxiomAudit.log": "fd67ac762359405facdcc2c98a1b6670c26033323c46c2885725f53fb3a4b1f2",
+    "PracticalPriorityIdentificationSignatures.lean": "c8131a7c59a499f83bf4ce458511491971a76abf13049fa3fd07ca3b829f38a9",
+    "PracticalPriorityIdentificationSignatures.log": "f61ade1ecdc078b71ccb7b56574e37bfdd0875dd876f34c2f5e809a00b0a122d",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_priority_identification.py": "22bad1e07b3ef4254b10c16f7c41cde25094935463283ea09ada3ea95f805d84",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

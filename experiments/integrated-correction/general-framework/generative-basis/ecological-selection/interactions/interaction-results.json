@@ -1,0 +1,180 @@
+{
+  "source_sha256": "5afb440f82b6032027b199488e08f596681f0d4caa0476c4a1eb39736c2a13c2",
+  "source_sheet": "Mean cluster velocity",
+  "original_rows": [
+    2,
+    55
+  ],
+  "observed_unit": "mean cluster speed within a video",
+  "nesting": "54 videos in 18 technical replicates, six conditions; 3 videos/replicate",
+  "biological_replication": "Not established by these video data; methods call the replicate IDs technical.",
+  "units": "mm/min",
+  "groups": {
+    "K. lactis|Dextrose|100": {
+      "video_count": 9,
+      "technical_replicate_count": 3,
+      "replicate_means_mm_min": [
+        15.003466494933333,
+        19.345005306,
+        22.816703094666664
+      ],
+      "mean_mm_min": 19.055058298533332,
+      "replicate_mean_range_mm_min": [
+        15.003466494933333,
+        22.816703094666664
+      ],
+      "replicate_mean_sd_mm_min": 3.9146798708460535,
+      "leave_one_replicate_out_means_mm_min": [
+        21.080854200333334,
+        18.9100847948,
+        17.174235900466666
+      ]
+    },
+    "K. lactis|Galactose|100": {
+      "video_count": 9,
+      "technical_replicate_count": 3,
+      "replicate_means_mm_min": [
+        3.2587192719333333,
+        3.1771857337666667,
+        5.925539873633333
+      ],
+      "mean_mm_min": 4.120481626444445,
+      "replicate_mean_range_mm_min": [
+        3.1771857337666667,
+        5.925539873633333
+      ],
+      "replicate_mean_sd_mm_min": 1.5637577773651397,
+      "leave_one_replicate_out_means_mm_min": [
+        4.5513628037,
+        4.592129572783334,
+        3.2179525028500002
+      ]
+    },
+    "K. lactis|YPD|100": {
+      "video_count": 9,
+      "technical_replicate_count": 3,
+      "replicate_means_mm_min": [
+        13.311513762666667,
+        17.616125803,
+        18.099128872666668
+      ],
+      "mean_mm_min": 16.34225614611111,
+      "replicate_mean_range_mm_min": [
+        13.311513762666667,
+        18.099128872666668
+      ],
+      "replicate_mean_sd_mm_min": 2.6357868915054077,
+      "leave_one_replicate_out_means_mm_min": [
+        17.857627337833335,
+        15.705321317666668,
+        15.463819782833333
+      ]
+    },
+    "K. lactis|YPD|5": {
+      "video_count": 9,
+      "technical_replicate_count": 3,
+      "replicate_means_mm_min": [
+        3.8535021428666667,
+        3.3978779293,
+        3.5660022299666667
+      ],
+      "mean_mm_min": 3.605794100711111,
+      "replicate_mean_range_mm_min": [
+        3.3978779293,
+        3.8535021428666667
+      ],
+      "replicate_mean_sd_mm_min": 0.2304037775950469,
+      "leave_one_replicate_out_means_mm_min": [
+        3.4819400796333335,
+        3.709752186416667,
+        3.6256900360833333
+      ]
+    },
+    "S. cerevisiae|YPD|100": {
+      "video_count": 9,
+      "technical_replicate_count": 3,
+      "replicate_means_mm_min": [
+        8.744962627166668,
+        10.451734590766666,
+        6.321144177766667
+      ],
+      "mean_mm_min": 8.505947131900001,
+      "replicate_mean_range_mm_min": [
+        6.321144177766667,
+        10.451734590766666
+      ],
+      "replicate_mean_sd_mm_min": 2.0756422127199703,
+      "leave_one_replicate_out_means_mm_min": [
+        8.386439384266666,
+        7.533053402466667,
+        9.598348608966667
+      ]
+    },
+    "S. cerevisiae|YPD|5": {
+      "video_count": 9,
+      "technical_replicate_count": 3,
+      "replicate_means_mm_min": [
+        11.365586343666667,
+        4.566476296066667,
+        4.505317980966667
+      ],
+      "mean_mm_min": 6.8124602069,
+      "replicate_mean_range_mm_min": [
+        4.505317980966667,
+        11.365586343666667
+      ],
+      "replicate_mean_sd_mm_min": 3.9432414709040176,
+      "leave_one_replicate_out_means_mm_min": [
+        4.535897138516667,
+        7.9354521623166665,
+        7.9660313198666675
+      ]
+    }
+  },
+  "contrasts": {
+    "K_lactis_density": {
+      "high": "K. lactis|YPD|100",
+      "low": "K. lactis|YPD|5",
+      "mean_difference_mm_min": 12.7364620454,
+      "ratio_of_means": 4.5322211112631745,
+      "min_high_rep_minus_max_low_rep_mm_min": 9.4580116198,
+      "delete_one_each_condition_difference_range_mm_min": [
+        11.754067596416666,
+        14.375687258200003
+      ]
+    },
+    "S_cerevisiae_density": {
+      "high": "S. cerevisiae|YPD|100",
+      "low": "S. cerevisiae|YPD|5",
+      "mean_difference_mm_min": 1.693486925000001,
+      "ratio_of_means": 1.2485866887390773,
+      "min_high_rep_minus_max_low_rep_mm_min": -5.0444421659000005,
+      "delete_one_each_condition_difference_range_mm_min": [
+        -0.4329779174000006,
+        5.06245147045
+      ]
+    },
+    "K_lactis_sugar": {
+      "high": "K. lactis|Dextrose|100",
+      "low": "K. lactis|Galactose|100",
+      "mean_difference_mm_min": 14.934576672088888,
+      "ratio_of_means": 4.624473550917373,
+      "min_high_rep_minus_max_low_rep_mm_min": 9.0779266213,
+      "delete_one_each_condition_difference_range_mm_min": [
+        12.582106327683332,
+        17.862901697483334
+      ]
+    }
+  },
+  "species_by_density_difference_mm_min": 11.042975120399998,
+  "delete_one_each_condition_interaction_range_mm_min": [
+    6.691616125966666,
+    14.808665175600003
+  ],
+  "sensitivity_scope": "All 81 combinations of deleting one technical replicate in each YPD condition. Not a confidence interval or a population inference.",
+  "limits": [
+    "No particle-level size, neighbor, or trajectory records in this worksheet.",
+    "No source-matched material/geometry/velocity/offspring history.",
+    "No new hydrodynamic fit, independent biological replication, or superiority claim."
+  ]
+}

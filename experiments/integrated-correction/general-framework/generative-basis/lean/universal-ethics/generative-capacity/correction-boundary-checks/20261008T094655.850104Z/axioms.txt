@@ -1,0 +1,58 @@
+'CorrectionBoundary.Implements' does not depend on any axioms
+'CorrectionBoundary.CommonAction' does not depend on any axioms
+'CorrectionBoundary.selector_iff_common_action' depends on axioms: [Classical.choice]
+'CorrectionBoundary.indistinguishable_conflict' does not depend on any axioms
+'CorrectionBoundary.refine_observation' does not depend on any axioms
+'CorrectionBoundary.restrict_histories' does not depend on any axioms
+'CorrectionBoundary.output' does not depend on any axioms
+'CorrectionBoundary.revealed_polarity_suffices' does not depend on any axioms
+'CorrectionBoundary.opposite_decoders_conflict' does not depend on any axioms
+'CorrectionBoundary.Continuation' does not depend on any axioms
+'CorrectionBoundary.observe' does not depend on any axioms
+'CorrectionBoundary.successful' does not depend on any axioms
+'CorrectionBoundary.no_transcript_policy' does not depend on any axioms
+'CorrectionBoundary.every_finite_transcript_has_failure' does not depend on any axioms
+'CorrectionBoundary.transcript_only_certificate_cannot_accept' does not depend on any axioms
+'CorrectionBoundary.optionalOutput' does not depend on any axioms
+'CorrectionBoundary.abstention_no_wrong_delivery' depends on axioms: [propext]
+'CorrectionBoundary.universal_no_wrong_requires_abstention' does not depend on any axioms
+'CorrectionBoundary.abstention_cannot_complete' depends on axioms: [propext]
+'CorrectionBoundary.successMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionBoundary.wrongMass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionBoundary.randomized_worst_case_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionBoundary.randomized_half_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionBoundary.balanced_attains_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionBoundary.uniform_success_error_tradeoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionBoundary.zero_error_zero_delivery' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionBoundary.Command' does not depend on any axioms
+'CorrectionBoundary.stopped' does not depend on any axioms
+'CorrectionBoundary.common_stop_succeeds' does not depend on any axioms
+'CorrectionBoundary.mutableStop' does not depend on any axioms
+'CorrectionBoundary.mutable_stop_can_fail' does not depend on any axioms
+'CorrectionRace.Device' does not depend on any axioms
+'CorrectionRace.Ticket' does not depend on any axioms
+'CorrectionRace.sample' does not depend on any axioms
+'CorrectionRace.Valid' does not depend on any axioms
+'CorrectionRace.change' does not depend on any axioms
+'CorrectionRace.reserve' does not depend on any axioms
+'CorrectionRace.deliver' does not depend on any axioms
+'CorrectionRace.release' does not depend on any axioms
+'CorrectionRace.changes' does not depend on any axioms
+'CorrectionRace.sample_valid' depends on axioms: [propext]
+'CorrectionRace.change_valid' depends on axioms: [propext, Quot.sound]
+'CorrectionRace.reserve_valid' does not depend on any axioms
+'CorrectionRace.changes_valid' depends on axioms: [propext, Quot.sound]
+'CorrectionRace.reserved_changes_freeze' depends on axioms: [propext]
+'CorrectionRace.deliver_only_correct' depends on axioms: [propext, Quot.sound]
+'CorrectionRace.matched_reservation_delivers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionRace.protected_interval_delivers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionRace.delayed_test_remains_safe' depends on axioms: [propext, Quot.sound]
+'CorrectionRace.fresh_test_then_reservation_completes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionRace.release_allows_change' depends on axioms: [propext]
+'CorrectionRace.initial' does not depend on any axioms
+'CorrectionRace.unprotectedUse' does not depend on any axioms
+'CorrectionRace.check_then_change_then_use_fails' does not depend on any axioms
+'CorrectionRace.stale_test_is_rejected' does not depend on any axioms
+'CorrectionRace.reservation_blocks_race' does not depend on any axioms
+'CorrectionRace.bypass' does not depend on any axioms
+'CorrectionRace.bypass_defeats_reservation' does not depend on any axioms

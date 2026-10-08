@@ -1,0 +1,1540 @@
+{
+  "status": "passed",
+  "scope": "Exact finite-model execution; not learned-AI evidence",
+  "protocol_sha256": "1fcae3287ec749f994674a4657fdc93b092d25e6cb4bf9233ffc96d677c50138",
+  "runner_sha256": "2c71f6d86d3b5a4ad115484402feabb411f7283c0306e1ad40427b52050b0576",
+  "lean_source_sha256": "132fc3763fea09962c00f28bcdaafedc046244827e26b6215772eb0a48e91835",
+  "records_sha256": "1e7213804c392fe72d907b167643ef12b2f77cf3e7a9ab266de173993e94da68",
+  "totals": {
+    "models": 1296,
+    "cases": 12960,
+    "feasible": 11136,
+    "infeasible": 1824
+  },
+  "metrics": {
+    "acceptance_only": {
+      "unsafe_on_feasible": 3198,
+      "suboptimal_on_feasible": 0,
+      "maximum_regret": 0,
+      "executed_decisions": 38880,
+      "accepting_decisions": 38880
+    },
+    "stale_filter": {
+      "unsafe_on_feasible": 0,
+      "suboptimal_on_feasible": 56,
+      "maximum_regret": 2,
+      "executed_decisions": 33216,
+      "accepting_decisions": 33216
+    },
+    "recomputed": {
+      "unsafe_on_feasible": 0,
+      "suboptimal_on_feasible": 0,
+      "maximum_regret": 0,
+      "executed_decisions": 33216,
+      "accepting_decisions": 33216
+    }
+  },
+  "first_counterexamples": {
+    "acceptance_only": {
+      "next": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "rewards": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "row": {
+        "model": 33,
+        "horizon": 1,
+        "initial": 1,
+        "feasible": true,
+        "reference": 0,
+        "policies": {
+          "acceptance_only": {
+            "safe": false,
+            "return": 2,
+            "blocked": false,
+            "regret": null
+          },
+          "stale_filter": {
+            "safe": true,
+            "return": 0,
+            "blocked": false,
+            "regret": 0
+          },
+          "recomputed": {
+            "safe": true,
+            "return": 0,
+            "blocked": false,
+            "regret": 0
+          }
+        }
+      },
+      "outcome": {
+        "blocked": false,
+        "trace": [
+          1,
+          2
+        ],
+        "return": 2,
+        "decisions": [
+          [
+            1,
+            true
+          ]
+        ]
+      },
+      "reference_sequence": [
+        0
+      ]
+    },
+    "stale_filter": {
+      "next": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "rewards": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "row": {
+        "model": 181,
+        "horizon": 3,
+        "initial": 0,
+        "feasible": true,
+        "reference": 4,
+        "policies": {
+          "acceptance_only": {
+            "safe": false,
+            "return": 4,
+            "blocked": false,
+            "regret": null
+          },
+          "stale_filter": {
+            "safe": true,
+            "return": 2,
+            "blocked": false,
+            "regret": 2
+          },
+          "recomputed": {
+            "safe": true,
+            "return": 4,
+            "blocked": false,
+            "regret": 0
+          }
+        }
+      },
+      "outcome": {
+        "blocked": false,
+        "trace": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "return": 2,
+        "decisions": [
+          [
+            0,
+            true
+          ],
+          [
+            1,
+            true
+          ],
+          [
+            0,
+            true
+          ]
+        ]
+      },
+      "reference_sequence": [
+        1,
+        0,
+        1
+      ]
+    }
+  },
+  "maintenance_cases": [
+    {
+      "cost": 0,
+      "acceptance_bonus": 1,
+      "access_bonus": 0,
+      "acceptance_optima": [
+        [
+          false,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 0,
+      "acceptance_bonus": 1,
+      "access_bonus": 1,
+      "acceptance_optima": [
+        [
+          false,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 0,
+      "acceptance_bonus": 1,
+      "access_bonus": 4,
+      "acceptance_optima": [
+        [
+          false,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 0,
+      "acceptance_bonus": 1,
+      "access_bonus": 16,
+      "acceptance_optima": [
+        [
+          false,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 0,
+      "acceptance_bonus": 3,
+      "access_bonus": 0,
+      "acceptance_optima": [
+        [
+          false,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 0,
+      "acceptance_bonus": 3,
+      "access_bonus": 1,
+      "acceptance_optima": [
+        [
+          false,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 0,
+      "acceptance_bonus": 3,
+      "access_bonus": 4,
+      "acceptance_optima": [
+        [
+          false,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 0,
+      "acceptance_bonus": 3,
+      "access_bonus": 16,
+      "acceptance_optima": [
+        [
+          false,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 0,
+      "acceptance_bonus": 17,
+      "access_bonus": 0,
+      "acceptance_optima": [
+        [
+          false,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 0,
+      "acceptance_bonus": 17,
+      "access_bonus": 1,
+      "acceptance_optima": [
+        [
+          false,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 0,
+      "acceptance_bonus": 17,
+      "access_bonus": 4,
+      "acceptance_optima": [
+        [
+          false,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 0,
+      "acceptance_bonus": 17,
+      "access_bonus": 16,
+      "acceptance_optima": [
+        [
+          false,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 1,
+      "acceptance_bonus": 1,
+      "access_bonus": 0,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 1,
+      "acceptance_bonus": 1,
+      "access_bonus": 1,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 1,
+      "acceptance_bonus": 1,
+      "access_bonus": 4,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 1,
+      "acceptance_bonus": 1,
+      "access_bonus": 16,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 1,
+      "acceptance_bonus": 3,
+      "access_bonus": 0,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 1,
+      "acceptance_bonus": 3,
+      "access_bonus": 1,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 1,
+      "acceptance_bonus": 3,
+      "access_bonus": 4,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 1,
+      "acceptance_bonus": 3,
+      "access_bonus": 16,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 1,
+      "acceptance_bonus": 17,
+      "access_bonus": 0,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 1,
+      "acceptance_bonus": 17,
+      "access_bonus": 1,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 1,
+      "acceptance_bonus": 17,
+      "access_bonus": 4,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 1,
+      "acceptance_bonus": 17,
+      "access_bonus": 16,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 2,
+      "acceptance_bonus": 1,
+      "access_bonus": 0,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 2,
+      "acceptance_bonus": 1,
+      "access_bonus": 1,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 2,
+      "acceptance_bonus": 1,
+      "access_bonus": 4,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 2,
+      "acceptance_bonus": 1,
+      "access_bonus": 16,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 2,
+      "acceptance_bonus": 3,
+      "access_bonus": 0,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 2,
+      "acceptance_bonus": 3,
+      "access_bonus": 1,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 2,
+      "acceptance_bonus": 3,
+      "access_bonus": 4,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 2,
+      "acceptance_bonus": 3,
+      "access_bonus": 16,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 2,
+      "acceptance_bonus": 17,
+      "access_bonus": 0,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 2,
+      "acceptance_bonus": 17,
+      "access_bonus": 1,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 2,
+      "acceptance_bonus": 17,
+      "access_bonus": 4,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 2,
+      "acceptance_bonus": 17,
+      "access_bonus": 16,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 4,
+      "acceptance_bonus": 1,
+      "access_bonus": 0,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 4,
+      "acceptance_bonus": 1,
+      "access_bonus": 1,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 4,
+      "acceptance_bonus": 1,
+      "access_bonus": 4,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 4,
+      "acceptance_bonus": 1,
+      "access_bonus": 16,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 4,
+      "acceptance_bonus": 3,
+      "access_bonus": 0,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 4,
+      "acceptance_bonus": 3,
+      "access_bonus": 1,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 4,
+      "acceptance_bonus": 3,
+      "access_bonus": 4,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 4,
+      "acceptance_bonus": 3,
+      "access_bonus": 16,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 4,
+      "acceptance_bonus": 17,
+      "access_bonus": 0,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 4,
+      "acceptance_bonus": 17,
+      "access_bonus": 1,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 4,
+      "acceptance_bonus": 17,
+      "access_bonus": 4,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 4,
+      "acceptance_bonus": 17,
+      "access_bonus": 16,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 8,
+      "acceptance_bonus": 1,
+      "access_bonus": 0,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 8,
+      "acceptance_bonus": 1,
+      "access_bonus": 1,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 8,
+      "acceptance_bonus": 1,
+      "access_bonus": 4,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 8,
+      "acceptance_bonus": 1,
+      "access_bonus": 16,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 8,
+      "acceptance_bonus": 3,
+      "access_bonus": 0,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 8,
+      "acceptance_bonus": 3,
+      "access_bonus": 1,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 8,
+      "acceptance_bonus": 3,
+      "access_bonus": 4,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 8,
+      "acceptance_bonus": 3,
+      "access_bonus": 16,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 8,
+      "acceptance_bonus": 17,
+      "access_bonus": 0,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 8,
+      "acceptance_bonus": 17,
+      "access_bonus": 1,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 8,
+      "acceptance_bonus": 17,
+      "access_bonus": 4,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 8,
+      "acceptance_bonus": 17,
+      "access_bonus": 16,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 16,
+      "acceptance_bonus": 1,
+      "access_bonus": 0,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 16,
+      "acceptance_bonus": 1,
+      "access_bonus": 1,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 16,
+      "acceptance_bonus": 1,
+      "access_bonus": 4,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 16,
+      "acceptance_bonus": 1,
+      "access_bonus": 16,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 16,
+      "acceptance_bonus": 3,
+      "access_bonus": 0,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 16,
+      "acceptance_bonus": 3,
+      "access_bonus": 1,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 16,
+      "acceptance_bonus": 3,
+      "access_bonus": 4,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 16,
+      "acceptance_bonus": 3,
+      "access_bonus": 16,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 16,
+      "acceptance_bonus": 17,
+      "access_bonus": 0,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 16,
+      "acceptance_bonus": 17,
+      "access_bonus": 1,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 16,
+      "acceptance_bonus": 17,
+      "access_bonus": 4,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "cost": 16,
+      "acceptance_bonus": 17,
+      "access_bonus": 16,
+      "acceptance_optima": [
+        [
+          true,
+          true
+        ]
+      ],
+      "augmented_optima": [
+        [
+          false,
+          true
+        ],
+        [
+          true,
+          true
+        ]
+      ]
+    }
+  ],
+  "two_stage_controls": [
+    {
+      "temptation": 3,
+      "stale_return": 1,
+      "recomputed_return": 2
+    },
+    {
+      "temptation": 5,
+      "stale_return": 1,
+      "recomputed_return": 2
+    },
+    {
+      "temptation": 9,
+      "stale_return": 1,
+      "recomputed_return": 2
+    }
+  ],
+  "observation_control": "statewise yes, hidden no, disclosed yes",
+  "handoff_control": "endpoints yes, gap fails, overlap passes"
+}

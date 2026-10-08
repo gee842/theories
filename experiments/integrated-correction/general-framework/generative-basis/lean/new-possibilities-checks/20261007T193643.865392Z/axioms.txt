@@ -1,0 +1,92 @@
+'Generative.Process' does not depend on any axioms
+'Generative.Enabled' does not depend on any axioms
+'Generative.Trace' does not depend on any axioms
+'Generative.trace_nil_iff' does not depend on any axioms
+'Generative.trace_cons_iff' does not depend on any axioms
+'Generative.trace_singleton_iff' does not depend on any axioms
+'Generative.trace_append_iff' does not depend on any axioms
+'Generative.enabled_iff_singleton_trace' does not depend on any axioms
+'Generative.enabled_difference_implies_state_difference' does not depend on any axioms
+'Generative.Feasible' does not depend on any axioms
+'Generative.feasible_append_iff' does not depend on any axioms
+'Generative.feasible_prefix' does not depend on any axioms
+'Generative.productProcess' does not depend on any axioms
+'Generative.enabled_product_iff' does not depend on any axioms
+'Generative.trace_product_left' does not depend on any axioms
+'Generative.trace_product_right' does not depend on any axioms
+'Generative.trace_product_mk' does not depend on any axioms
+'Generative.trace_product_iff' does not depend on any axioms
+'Generative.feasible_product_iff' does not depend on any axioms
+'Generative.trace_map' does not depend on any axioms
+'Generative.trace_lift' does not depend on any axioms
+'Generative.projected_trace_iff' does not depend on any axioms
+'Generative.projection_exact_iff' does not depend on any axioms
+'Generative.local_exact_iff_trace_exact' does not depend on any axioms
+'Generative.enabled_projection_iff' does not depend on any axioms
+'Generative.feasible_projection_iff' does not depend on any axioms
+'Generative.feasible_difference_implies_projection_difference' does not depend on any axioms
+'Generative.trace_faithful_iff' does not depend on any axioms
+'Generative.NewPossibilities.AdequateOn' does not depend on any axioms
+'Generative.NewPossibilities.collision_defeats_adequacy' does not depend on any axioms
+'Generative.NewPossibilities.refinement_preserves_adequacy' does not depend on any axioms
+'Generative.NewPossibilities.response_profile_is_sufficient' does not depend on any axioms
+'Generative.NewPossibilities.adequacy_restricts_domain' does not depend on any axioms
+'Generative.NewPossibilities.extendResponses' does not depend on any axioms
+'Generative.NewPossibilities.old_response_preserved' does not depend on any axioms
+'Generative.NewPossibilities.extended_adequacy_iff' does not depend on any axioms
+'Generative.NewPossibilities.closed_region_preserved' does not depend on any axioms
+'Generative.NewPossibilities.Assembly' does not depend on any axioms
+'Generative.NewPossibilities.material' does not depend on any axioms
+'Generative.NewPossibilities.Event' does not depend on any axioms
+'Generative.NewPossibilities.assembly' does not depend on any axioms
+'Generative.NewPossibilities.Reaches' does not depend on any axioms
+'Generative.NewPossibilities.reach_bound' depends on axioms: [propext, Quot.sound]
+'Generative.NewPossibilities.reach_construct' depends on axioms: [propext, Quot.sound]
+'Generative.NewPossibilities.reaches_iff' depends on axioms: [propext, Quot.sound]
+'Generative.NewPossibilities.extension_adds_actual_route' depends on axioms: [propext, Quot.sound]
+'Generative.NewPossibilities.step_material_conserved' depends on axioms: [propext, Quot.sound]
+'Generative.NewPossibilities.step_work_account' depends on axioms: [propext, Quot.sound]
+'Generative.NewPossibilities.trace_material_conserved' depends on axioms: [propext, Quot.sound]
+'Generative.NewPossibilities.trace_work_account' depends on axioms: [propext, Quot.sound]
+'Generative.NewPossibilities.finite_work_bounds_history' depends on axioms: [propext, Quot.sound]
+'Generative.NewPossibilities.no_infinite_closed_execution' depends on axioms: [propext, Quot.sound]
+'Generative.NewPossibilities.frozen' does not depend on any axioms
+'Generative.NewPossibilities.frozen_step' depends on axioms: [propext]
+'Generative.NewPossibilities.frozen_trace' depends on axioms: [propext]
+'Generative.NewPossibilities.frozen_cannot_make_route' depends on axioms: [propext, Quot.sound]
+'Generative.NewPossibilities.construct_chain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.NewPossibilities.form_constructor_then_chain' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.NewPossibilities.menuBound' does not depend on any axioms
+'Generative.NewPossibilities.member_below_bound' depends on axioms: [propext]
+'Generative.NewPossibilities.beyond_every_finite_menu' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Generative.NewPossibilities.initial' does not depend on any axioms
+'Generative.NewPossibilities.bound' does not depend on any axioms
+'Generative.NewPossibilities.unbound' does not depend on any axioms
+'Generative.NewPossibilities.oldDescription' does not depend on any axioms
+'Generative.NewPossibilities.newDescription' does not depend on any axioms
+'Generative.NewPossibilities.canExtend' does not depend on any axioms
+'Generative.NewPossibilities.response_matches_operation' depends on axioms: [propext]
+'Generative.NewPossibilities.matched_histories' depends on axioms: [propext]
+'Generative.NewPossibilities.old_description_collides' does not depend on any axioms
+'Generative.NewPossibilities.construction_response_differs' does not depend on any axioms
+'Generative.NewPossibilities.old_description_inadequate' does not depend on any axioms
+'Generative.NewPossibilities.new_description_preserves_old' does not depend on any axioms
+'Generative.NewPossibilities.new_description_adequate' depends on axioms: [propext, Quot.sound]
+'Generative.NewPossibilities.relabeling_cannot_repair' does not depend on any axioms
+'Generative.NewPossibilities.Faithful' does not depend on any axioms
+'Generative.NewPossibilities.acquired_record_repairs_query' does not depend on any axioms
+'Generative.NewPossibilities.stale_record_counterexample' depends on axioms: [propext]
+'Generative.NewPossibilities.novelty_with_loss' depends on axioms: [propext, Quot.sound]
+'Generative.NewPossibilities.query_pair_is_coarsest_sufficient_refinement' does not depend on any axioms
+'Generative.NewPossibilities.record_transports_only_with_stability' does not depend on any axioms
+'Generative.NewPossibilities.contact' does not depend on any axioms
+'Generative.NewPossibilities.circuit' does not depend on any axioms
+'Generative.NewPossibilities.SingleChannel' does not depend on any axioms
+'Generative.NewPossibilities.unjoined_factors_through_one_channel' depends on axioms: [propext]
+'Generative.NewPossibilities.joined_realizes_coincidence' does not depend on any axioms
+'Generative.NewPossibilities.coincidence_not_single_channel' does not depend on any axioms
+'Generative.NewPossibilities.joined_outside_entire_single_channel_repertoire' does not depend on any axioms
+'Generative.NewPossibilities.one_channel_processing_preserves_limit' does not depend on any axioms
+'Generative.NewPossibilities.joined_depends_on_both_inputs' does not depend on any axioms
+'Generative.NewPossibilities.joining_removes_a_previous_output' does not depend on any axioms
+'Generative.NewPossibilities.accounted_join_changes_function_kind' depends on axioms: [propext]

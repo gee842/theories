@@ -1,0 +1,19 @@
+Generative.Deeper.append_nil_constructive.{v} {Action : Type v} (xs : List Action) : xs ++ [] = xs
+Generative.Deeper.append_assoc_constructive.{v} {Action : Type v} (xs ys zs : List Action) :
+  xs ++ ys ++ zs = xs ++ (ys ++ zs)
+Generative.Deeper.history_trace_iff.{v} {Action : Type v} {Allowed : List Action → Prop}
+  (hclosed : Generative.Deeper.PrefixClosed Allowed) {before word after : List Action} (hbefore : Allowed before) :
+  Generative.Trace (Generative.Deeper.historyProcess Allowed) before word after ↔ after = before ++ word ∧ Allowed after
+Generative.Deeper.history_from_empty_iff.{v} {Action : Type v} {Allowed : List Action → Prop}
+  (hclosed : Generative.Deeper.PrefixClosed Allowed) (hempty : Allowed []) (word after : List Action) :
+  Generative.Trace (Generative.Deeper.historyProcess Allowed) [] word after ↔ after = word ∧ Allowed word
+Generative.Deeper.history_feasible_iff.{v} {Action : Type v} {Allowed : List Action → Prop}
+  (hclosed : Generative.Deeper.PrefixClosed Allowed) (hempty : Allowed []) (word : List Action) :
+  Generative.Feasible (Generative.Deeper.historyProcess Allowed) [] word ↔ Allowed word
+Generative.Deeper.process_language_prefix_closed.{v, u} {Action : Type v} {State : Type u}
+  (P : Generative.Process State Action) (initial : State) :
+  Generative.Deeper.PrefixClosed (Generative.Feasible P initial)
+Generative.Deeper.process_language_exact_history_realization.{v, u} {Action : Type v} {State : Type u}
+  (P : Generative.Process State Action) (initial : State) (word : List Action) :
+  Generative.Feasible (Generative.Deeper.historyProcess (Generative.Feasible P initial)) [] word ↔
+    Generative.Feasible P initial word

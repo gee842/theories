@@ -1,0 +1,1710 @@
+{
+  "checks_passed": true,
+  "reader_version": "2026.8.16",
+  "scope": "Independent software decoding of preserved byte ranges; metadata correspondence, not independent biological replication or metrological calibration.",
+  "files": {
+    "collapse-20231123": {
+      "file_bytes": 13272869952,
+      "preserved_range_bytes": 24759155,
+      "preserved_ranges": 39,
+      "overlap_checks": 2,
+      "directory_entries_checked": 1092,
+      "scene_count": 12,
+      "time_count": 91,
+      "first_last_subblocks_checked": 24,
+      "pixel_size_um": {
+        "X": 1.4187500241611801,
+        "Y": 1.4187500241611801
+      },
+      "field_size_um": {
+        "X": 3904.4000664915675,
+        "Y": 3132.600053347886
+      },
+      "acquisition_utc": "2023-11-23T13:39:46.916631Z",
+      "timestamps_seconds_first_last": [
+        28.3186349,
+        54028.382963699994
+      ],
+      "timestamp_duration_hours": 15.000017869111108,
+      "interval_seconds_min_median_max": [
+        599.8996200000001,
+        600.0071813499962,
+        600.147708
+      ],
+      "scene_offset_seconds_min_max": [
+        -8.999999998593466e-07,
+        223.02919930000644
+      ],
+      "scenes": [
+        {
+          "index": 0,
+          "name": "P6",
+          "region_id": "638363260343388122",
+          "center": "90591.512,27401.469"
+        },
+        {
+          "index": 1,
+          "name": "P7",
+          "region_id": "638363260402593127",
+          "center": "62446.858,29067.635"
+        },
+        {
+          "index": 2,
+          "name": "P12",
+          "region_id": "638363260774430988",
+          "center": "39369.238,29650.876"
+        },
+        {
+          "index": 3,
+          "name": "P1",
+          "region_id": "638363260044783426",
+          "center": "113733.22,30349.448"
+        },
+        {
+          "index": 4,
+          "name": "P11",
+          "region_id": "638363260692108715",
+          "center": "39081.394,54615.285"
+        },
+        {
+          "index": 5,
+          "name": "P8",
+          "region_id": "638363260487388925",
+          "center": "64074.471,55170.062"
+        },
+        {
+          "index": 6,
+          "name": "P5",
+          "region_id": "638363260294025490",
+          "center": "88643.155,55212.621"
+        },
+        {
+          "index": 7,
+          "name": "P2",
+          "region_id": "638363260122746913",
+          "center": "113733.151,55436.105"
+        },
+        {
+          "index": 8,
+          "name": "P9",
+          "region_id": "638363260547066102",
+          "center": "64143.868,77680.145"
+        },
+        {
+          "index": 9,
+          "name": "P10",
+          "region_id": "638363260628829489",
+          "center": "39081.394,79359.943"
+        },
+        {
+          "index": 10,
+          "name": "P4",
+          "region_id": "638363260247709922",
+          "center": "88642.863,79398.94"
+        },
+        {
+          "index": 11,
+          "name": "P3",
+          "region_id": "638363260176588060",
+          "center": "113733.134,79399.282"
+        }
+      ],
+      "captures": [
+        {
+          "scene": 0,
+          "t": 0,
+          "utc": "2023-11-23T13:40:15.2352659Z",
+          "elapsed_seconds": 28.318634,
+          "offset_from_common_timestamp_seconds": -8.999999998593466e-07,
+          "stage_x": "+000000090591.4950",
+          "stage_y": "+000000027401.4690",
+          "focus": "-000000077189.0000"
+        },
+        {
+          "scene": 0,
+          "t": 90,
+          "utc": "2023-11-24T04:40:15.2995947Z",
+          "elapsed_seconds": 54028.382963,
+          "offset_from_common_timestamp_seconds": -6.999980541877449e-07,
+          "stage_x": "+000000090591.4950",
+          "stage_y": "+000000027401.4690",
+          "focus": "-000000077189.0000"
+        },
+        {
+          "scene": 1,
+          "t": 0,
+          "utc": "2023-11-23T13:40:30.2098407Z",
+          "elapsed_seconds": 43.293209,
+          "offset_from_common_timestamp_seconds": 14.974574099999998,
+          "stage_x": "+000000062446.8580",
+          "stage_y": "+000000029067.6350",
+          "focus": "-000000077091.0000"
+        },
+        {
+          "scene": 1,
+          "t": 90,
+          "utc": "2023-11-24T04:40:30.2481968Z",
+          "elapsed_seconds": 54043.331565,
+          "offset_from_common_timestamp_seconds": 14.948601300005976,
+          "stage_x": "+000000062446.8580",
+          "stage_y": "+000000029067.6350",
+          "focus": "-000000077091.0000"
+        },
+        {
+          "scene": 2,
+          "t": 0,
+          "utc": "2023-11-23T13:40:42.6829070Z",
+          "elapsed_seconds": 55.766276,
+          "offset_from_common_timestamp_seconds": 27.4476411,
+          "stage_x": "+000000039369.2380",
+          "stage_y": "+000000029650.8760",
+          "focus": "-000000076943.0000"
+        },
+        {
+          "scene": 2,
+          "t": 90,
+          "utc": "2023-11-24T04:40:42.6976511Z",
+          "elapsed_seconds": 54055.78102,
+          "offset_from_common_timestamp_seconds": 27.398056300007738,
+          "stage_x": "+000000039369.2380",
+          "stage_y": "+000000029650.8760",
+          "focus": "-000000076943.0000"
+        },
+        {
+          "scene": 3,
+          "t": 0,
+          "utc": "2023-11-23T13:41:21.0491323Z",
+          "elapsed_seconds": 94.132501,
+          "offset_from_common_timestamp_seconds": 65.81386610000001,
+          "stage_x": "+000000113733.2020",
+          "stage_y": "+000000030349.4480",
+          "focus": "-000000077382.0000"
+        },
+        {
+          "scene": 3,
+          "t": 90,
+          "utc": "2023-11-24T04:41:21.0567610Z",
+          "elapsed_seconds": 54094.14013,
+          "offset_from_common_timestamp_seconds": 65.75716630000534,
+          "stage_x": "+000000113733.2020",
+          "stage_y": "+000000030349.4480",
+          "focus": "-000000077382.0000"
+        },
+        {
+          "scene": 4,
+          "t": 0,
+          "utc": "2023-11-23T13:41:59.6079081Z",
+          "elapsed_seconds": 132.691277,
+          "offset_from_common_timestamp_seconds": 104.37264210000001,
+          "stage_x": "+000000039081.3940",
+          "stage_y": "+000000054615.2850",
+          "focus": "-000000076856.0000"
+        },
+        {
+          "scene": 4,
+          "t": 90,
+          "utc": "2023-11-24T04:41:59.6161888Z",
+          "elapsed_seconds": 54132.699557,
+          "offset_from_common_timestamp_seconds": 104.31659330000548,
+          "stage_x": "+000000039081.3940",
+          "stage_y": "+000000054615.2850",
+          "focus": "-000000076856.0000"
+        },
+        {
+          "scene": 5,
+          "t": 0,
+          "utc": "2023-11-23T13:42:13.0389510Z",
+          "elapsed_seconds": 146.12232,
+          "offset_from_common_timestamp_seconds": 117.8036851,
+          "stage_x": "+000000064074.4710",
+          "stage_y": "+000000055170.0620",
+          "focus": "-000000077021.0000"
+        },
+        {
+          "scene": 5,
+          "t": 90,
+          "utc": "2023-11-24T04:42:13.0548635Z",
+          "elapsed_seconds": 54146.138232,
+          "offset_from_common_timestamp_seconds": 117.75526830000308,
+          "stage_x": "+000000064074.4710",
+          "stage_y": "+000000055170.0620",
+          "focus": "-000000077021.0000"
+        },
+        {
+          "scene": 6,
+          "t": 0,
+          "utc": "2023-11-23T13:42:26.1761884Z",
+          "elapsed_seconds": 159.259557,
+          "offset_from_common_timestamp_seconds": 130.9409221,
+          "stage_x": "+000000088643.1370",
+          "stage_y": "+000000055212.6210",
+          "focus": "-000000077183.0000"
+        },
+        {
+          "scene": 6,
+          "t": 90,
+          "utc": "2023-11-24T04:42:26.2851235Z",
+          "elapsed_seconds": 54159.368492,
+          "offset_from_common_timestamp_seconds": 130.985528300007,
+          "stage_x": "+000000088643.1370",
+          "stage_y": "+000000055212.6210",
+          "focus": "-000000077183.0000"
+        },
+        {
+          "scene": 7,
+          "t": 0,
+          "utc": "2023-11-23T13:42:39.5840754Z",
+          "elapsed_seconds": 172.667444,
+          "offset_from_common_timestamp_seconds": 144.34880909999998,
+          "stage_x": "+000000113733.1340",
+          "stage_y": "+000000055436.1050",
+          "focus": "-000000077220.0000"
+        },
+        {
+          "scene": 7,
+          "t": 90,
+          "utc": "2023-11-24T04:42:39.6659082Z",
+          "elapsed_seconds": 54172.749277,
+          "offset_from_common_timestamp_seconds": 144.3663133000082,
+          "stage_x": "+000000113733.1340",
+          "stage_y": "+000000055436.1050",
+          "focus": "-000000077220.0000"
+        },
+        {
+          "scene": 8,
+          "t": 0,
+          "utc": "2023-11-23T13:43:05.4170682Z",
+          "elapsed_seconds": 198.500437,
+          "offset_from_common_timestamp_seconds": 170.1818021,
+          "stage_x": "+000000064143.8680",
+          "stage_y": "+000000077680.1450",
+          "focus": "-000000076950.0000"
+        },
+        {
+          "scene": 8,
+          "t": 90,
+          "utc": "2023-11-24T04:43:05.5336557Z",
+          "elapsed_seconds": 54198.617024,
+          "offset_from_common_timestamp_seconds": 170.23406030000478,
+          "stage_x": "+000000064143.8680",
+          "stage_y": "+000000077680.1450",
+          "focus": "-000000076950.0000"
+        },
+        {
+          "scene": 9,
+          "t": 0,
+          "utc": "2023-11-23T13:43:18.9520021Z",
+          "elapsed_seconds": 212.035371,
+          "offset_from_common_timestamp_seconds": 183.7167361,
+          "stage_x": "+000000039081.3940",
+          "stage_y": "+000000079359.9430",
+          "focus": "-000000076724.0000"
+        },
+        {
+          "scene": 9,
+          "t": 90,
+          "utc": "2023-11-24T04:43:19.0663175Z",
+          "elapsed_seconds": 54212.149686,
+          "offset_from_common_timestamp_seconds": 183.76672230000258,
+          "stage_x": "+000000039081.3940",
+          "stage_y": "+000000079359.9430",
+          "focus": "-000000076724.0000"
+        },
+        {
+          "scene": 10,
+          "t": 0,
+          "utc": "2023-11-23T13:43:44.8041925Z",
+          "elapsed_seconds": 237.887561,
+          "offset_from_common_timestamp_seconds": 209.5689261,
+          "stage_x": "+000000088642.8460",
+          "stage_y": "+000000079398.9400",
+          "focus": "-000000077032.0000"
+        },
+        {
+          "scene": 10,
+          "t": 90,
+          "utc": "2023-11-24T04:43:44.9160750Z",
+          "elapsed_seconds": 54237.999444,
+          "offset_from_common_timestamp_seconds": 209.61648030000651,
+          "stage_x": "+000000088642.8460",
+          "stage_y": "+000000079398.9400",
+          "focus": "-000000077032.0000"
+        },
+        {
+          "scene": 11,
+          "t": 0,
+          "utc": "2023-11-23T13:43:58.2177830Z",
+          "elapsed_seconds": 251.301152,
+          "offset_from_common_timestamp_seconds": 222.9825171,
+          "stage_x": "+000000113733.1170",
+          "stage_y": "+000000079398.9400",
+          "focus": "-000000077156.0000"
+        },
+        {
+          "scene": 11,
+          "t": 90,
+          "utc": "2023-11-24T04:43:58.3287949Z",
+          "elapsed_seconds": 54251.412163,
+          "offset_from_common_timestamp_seconds": 223.02919930000644,
+          "stage_x": "+000000113733.1170",
+          "stage_y": "+000000079398.9400",
+          "focus": "-000000077156.0000"
+        }
+      ],
+      "range_manifest_sha256": "5e2d1bc36090525dd817812e66b8e400317f61b4d530f67acb1139ed886de690",
+      "decoded_json_sha256": "5b96f3ffa45703d70636bd3543e6c6c7f6050156abf20a3a7ff22839795fb2e3",
+      "metadata_xml_sha256": "c0d7f54aa37045bf8990f6126f2c89ba35d7a18b128556b97b408d22e87dae21"
+    },
+    "formation-20240619": {
+      "file_bytes": 13275191552,
+      "preserved_range_bytes": 1036689,
+      "preserved_ranges": 33,
+      "overlap_checks": 0,
+      "directory_entries_checked": 1092,
+      "scene_count": 12,
+      "time_count": 91,
+      "first_last_subblocks_checked": 24,
+      "pixel_size_um": {
+        "X": 7.099296446154179,
+        "Y": 7.099296446154179
+      },
+      "field_size_um": {
+        "X": 19537.2638198163,
+        "Y": 15675.246553108427
+      },
+      "acquisition_utc": "2024-06-19T14:38:29.6589576Z",
+      "timestamps_seconds_first_last": [
+        0.6467611999999999,
+        54027.912772899996
+      ],
+      "timestamp_duration_hours": 15.007573892138888,
+      "interval_seconds_min_median_max": [
+        599.8906217000003,
+        599.9999827500005,
+        627.3440972999999
+      ],
+      "scene_offset_seconds_min_max": [
+        -1.9999999989472883e-07,
+        225.88807310000266
+      ],
+      "scenes": [
+        {
+          "index": 0,
+          "name": "P12",
+          "region_id": "638544045418917025",
+          "center": "36937.862,29976.621"
+        },
+        {
+          "index": 1,
+          "name": "P7",
+          "region_id": "638544043671642030",
+          "center": "61687.691,30147.68"
+        },
+        {
+          "index": 2,
+          "name": "P6",
+          "region_id": "638544043355391925",
+          "center": "86748.401,30147.338"
+        },
+        {
+          "index": 3,
+          "name": "P1",
+          "region_id": "638544041477395539",
+          "center": "111578.007,30306.169"
+        },
+        {
+          "index": 4,
+          "name": "P11",
+          "region_id": "638544045117791694",
+          "center": "36937.999,54866.478"
+        },
+        {
+          "index": 5,
+          "name": "P5",
+          "region_id": "638544042923082447",
+          "center": "86748.127,55111.626"
+        },
+        {
+          "index": 6,
+          "name": "P8",
+          "region_id": "638544043981930164",
+          "center": "61688.102,55276.229"
+        },
+        {
+          "index": 7,
+          "name": "P2",
+          "region_id": "638544041797173656",
+          "center": "111577.887,55796.411"
+        },
+        {
+          "index": 8,
+          "name": "P4",
+          "region_id": "638544042490037717",
+          "center": "86747.853,80241.75"
+        },
+        {
+          "index": 9,
+          "name": "P3",
+          "region_id": "638544042168193903",
+          "center": "111662.287,80242.452"
+        },
+        {
+          "index": 10,
+          "name": "P10",
+          "region_id": "638544044632678267",
+          "center": "36937.57,80374.36"
+        },
+        {
+          "index": 11,
+          "name": "P9",
+          "region_id": "638544044302276172",
+          "center": "61900.847,80375.456"
+        }
+      ],
+      "captures": [
+        {
+          "scene": 0,
+          "t": 0,
+          "utc": "2024-06-19T14:38:30.3057188Z",
+          "elapsed_seconds": 0.646761,
+          "offset_from_common_timestamp_seconds": -1.9999999989472883e-07,
+          "stage_x": "+000000036937.8620",
+          "stage_y": "+000000029976.6210",
+          "focus": "-000000042537.0000"
+        },
+        {
+          "scene": 0,
+          "t": 90,
+          "utc": "2024-06-20T05:38:57.5717305Z",
+          "elapsed_seconds": 54027.912773,
+          "offset_from_common_timestamp_seconds": 1.00000761449337e-07,
+          "stage_x": "+000000036937.8620",
+          "stage_y": "+000000029976.6040",
+          "focus": "-000000042537.0000"
+        },
+        {
+          "scene": 1,
+          "t": 0,
+          "utc": "2024-06-19T14:38:43.8601392Z",
+          "elapsed_seconds": 14.201182,
+          "offset_from_common_timestamp_seconds": 13.554420799999999,
+          "stage_x": "+000000061687.6740",
+          "stage_y": "+000000030147.6630",
+          "focus": "-000000042488.0000"
+        },
+        {
+          "scene": 1,
+          "t": 90,
+          "utc": "2024-06-20T05:39:11.1632374Z",
+          "elapsed_seconds": 54041.50428,
+          "offset_from_common_timestamp_seconds": 13.591507100005401,
+          "stage_x": "+000000061687.6740",
+          "stage_y": "+000000030147.6630",
+          "focus": "-000000042488.0000"
+        },
+        {
+          "scene": 2,
+          "t": 0,
+          "utc": "2024-06-19T14:38:57.6840599Z",
+          "elapsed_seconds": 28.025102,
+          "offset_from_common_timestamp_seconds": 27.3783408,
+          "stage_x": "+000000086748.3840",
+          "stage_y": "+000000030147.6630",
+          "focus": "-000000042273.0000"
+        },
+        {
+          "scene": 2,
+          "t": 90,
+          "utc": "2024-06-20T05:39:24.9940926Z",
+          "elapsed_seconds": 54055.335135,
+          "offset_from_common_timestamp_seconds": 27.422362100005557,
+          "stage_x": "+000000086748.3840",
+          "stage_y": "+000000030147.6630",
+          "focus": "-000000042273.0000"
+        },
+        {
+          "scene": 3,
+          "t": 0,
+          "utc": "2024-06-19T14:39:11.2810363Z",
+          "elapsed_seconds": 41.622079,
+          "offset_from_common_timestamp_seconds": 40.9753178,
+          "stage_x": "+000000111577.9900",
+          "stage_y": "+000000030306.1520",
+          "focus": "-000000042223.0000"
+        },
+        {
+          "scene": 3,
+          "t": 90,
+          "utc": "2024-06-20T05:39:38.5858003Z",
+          "elapsed_seconds": 54068.926843,
+          "offset_from_common_timestamp_seconds": 41.01407010000548,
+          "stage_x": "+000000111577.9900",
+          "stage_y": "+000000030306.1520",
+          "focus": "-000000042223.0000"
+        },
+        {
+          "scene": 4,
+          "t": 0,
+          "utc": "2024-06-19T14:39:50.0201148Z",
+          "elapsed_seconds": 80.361157,
+          "offset_from_common_timestamp_seconds": 79.7143958,
+          "stage_x": "+000000036937.9990",
+          "stage_y": "+000000054866.4610",
+          "focus": "-000000042610.0000"
+        },
+        {
+          "scene": 4,
+          "t": 90,
+          "utc": "2024-06-20T05:40:17.3249411Z",
+          "elapsed_seconds": 54107.665984,
+          "offset_from_common_timestamp_seconds": 79.75321110000368,
+          "stage_x": "+000000036937.9990",
+          "stage_y": "+000000054866.4610",
+          "focus": "-000000042610.0000"
+        },
+        {
+          "scene": 5,
+          "t": 0,
+          "utc": "2024-06-19T14:40:16.2371484Z",
+          "elapsed_seconds": 106.578191,
+          "offset_from_common_timestamp_seconds": 105.9314298,
+          "stage_x": "+000000086748.1100",
+          "stage_y": "+000000055111.6090",
+          "focus": "-000000042342.0000"
+        },
+        {
+          "scene": 5,
+          "t": 90,
+          "utc": "2024-06-20T05:40:43.5453924Z",
+          "elapsed_seconds": 54133.886435,
+          "offset_from_common_timestamp_seconds": 105.97366210000473,
+          "stage_x": "+000000086748.1100",
+          "stage_y": "+000000055111.6090",
+          "focus": "-000000042342.0000"
+        },
+        {
+          "scene": 6,
+          "t": 0,
+          "utc": "2024-06-19T14:40:29.9253309Z",
+          "elapsed_seconds": 120.266373,
+          "offset_from_common_timestamp_seconds": 119.6196118,
+          "stage_x": "+000000061688.0850",
+          "stage_y": "+000000055276.2110",
+          "focus": "-000000042400.0000"
+        },
+        {
+          "scene": 6,
+          "t": 90,
+          "utc": "2024-06-20T05:40:57.3276466Z",
+          "elapsed_seconds": 54147.668689,
+          "offset_from_common_timestamp_seconds": 119.75591610000265,
+          "stage_x": "+000000061688.0850",
+          "stage_y": "+000000055276.2110",
+          "focus": "-000000042400.0000"
+        },
+        {
+          "scene": 7,
+          "t": 0,
+          "utc": "2024-06-19T14:40:56.2274968Z",
+          "elapsed_seconds": 146.568539,
+          "offset_from_common_timestamp_seconds": 145.9217778,
+          "stage_x": "+000000111577.8700",
+          "stage_y": "+000000055796.3940",
+          "focus": "-000000042172.0000"
+        },
+        {
+          "scene": 7,
+          "t": 90,
+          "utc": "2024-06-20T05:41:23.6336569Z",
+          "elapsed_seconds": 54173.974699,
+          "offset_from_common_timestamp_seconds": 146.0619261000029,
+          "stage_x": "+000000111577.8700",
+          "stage_y": "+000000055796.3940",
+          "focus": "-000000042172.0000"
+        },
+        {
+          "scene": 8,
+          "t": 0,
+          "utc": "2024-06-19T14:41:09.8388855Z",
+          "elapsed_seconds": 160.179928,
+          "offset_from_common_timestamp_seconds": 159.5331668,
+          "stage_x": "+000000086747.8360",
+          "stage_y": "+000000080241.7330",
+          "focus": "-000000042320.0000"
+        },
+        {
+          "scene": 8,
+          "t": 90,
+          "utc": "2024-06-20T05:41:37.2607142Z",
+          "elapsed_seconds": 54187.601757,
+          "offset_from_common_timestamp_seconds": 159.6889841000011,
+          "stage_x": "+000000086747.8360",
+          "stage_y": "+000000080241.7330",
+          "focus": "-000000042320.0000"
+        },
+        {
+          "scene": 9,
+          "t": 0,
+          "utc": "2024-06-19T14:41:23.6481855Z",
+          "elapsed_seconds": 173.989228,
+          "offset_from_common_timestamp_seconds": 173.3424668,
+          "stage_x": "+000000111662.2690",
+          "stage_y": "+000000080241.7330",
+          "focus": "-000000042112.0000"
+        },
+        {
+          "scene": 9,
+          "t": 90,
+          "utc": "2024-06-20T05:41:51.0550665Z",
+          "elapsed_seconds": 54201.396109,
+          "offset_from_common_timestamp_seconds": 173.48333610000554,
+          "stage_x": "+000000111662.2690",
+          "stage_y": "+000000080241.7330",
+          "focus": "-000000042112.0000"
+        },
+        {
+          "scene": 10,
+          "t": 0,
+          "utc": "2024-06-19T14:42:02.3607754Z",
+          "elapsed_seconds": 212.701818,
+          "offset_from_common_timestamp_seconds": 212.05505680000002,
+          "stage_x": "+000000036937.5700",
+          "stage_y": "+000000080374.3430",
+          "focus": "-000000042510.0000"
+        },
+        {
+          "scene": 10,
+          "t": 90,
+          "utc": "2024-06-20T05:42:29.7661945Z",
+          "elapsed_seconds": 54240.107237,
+          "offset_from_common_timestamp_seconds": 212.1944641000009,
+          "stage_x": "+000000036937.5700",
+          "stage_y": "+000000080374.3430",
+          "focus": "-000000042510.0000"
+        },
+        {
+          "scene": 11,
+          "t": 0,
+          "utc": "2024-06-19T14:42:16.0526268Z",
+          "elapsed_seconds": 226.393669,
+          "offset_from_common_timestamp_seconds": 225.7469078,
+          "stage_x": "+000000061900.8300",
+          "stage_y": "+000000080374.3430",
+          "focus": "-000000042432.0000"
+        },
+        {
+          "scene": 11,
+          "t": 90,
+          "utc": "2024-06-20T05:42:43.4598034Z",
+          "elapsed_seconds": 54253.800846,
+          "offset_from_common_timestamp_seconds": 225.88807310000266,
+          "stage_x": "+000000061900.8300",
+          "stage_y": "+000000080374.3430",
+          "focus": "-000000042432.0000"
+        }
+      ],
+      "range_manifest_sha256": "7873c6cc049d8f7733a787ca1d38bdc6639c9bf56692b473cf477c9aa3014af9",
+      "decoded_json_sha256": "1f8389f1c4fa8e4e44b19d03a210cd5825dbb9514f8607549674f9ab13ddbea5",
+      "metadata_xml_sha256": "66b57ca71e67e5d3e580d40f800eea896114eaaf8fa5dfb14064cddf3db1e80f"
+    },
+    "formation-20240626": {
+      "file_bytes": 9957072544,
+      "preserved_range_bytes": 962440,
+      "preserved_ranges": 27,
+      "overlap_checks": 0,
+      "directory_entries_checked": 819,
+      "scene_count": 9,
+      "time_count": 91,
+      "first_last_subblocks_checked": 18,
+      "pixel_size_um": {
+        "X": 7.099296446154179,
+        "Y": 7.099296446154179
+      },
+      "field_size_um": {
+        "X": 19537.2638198163,
+        "Y": 15675.246553108427
+      },
+      "acquisition_utc": "2024-06-26T15:45:29.5473623Z",
+      "timestamps_seconds_first_last": [
+        27.324179299999997,
+        54027.4485681
+      ],
+      "timestamp_duration_hours": 15.000034552444445,
+      "interval_seconds_min_median_max": [
+        599.5107527,
+        600.0047507500021,
+        600.5091005000004
+      ],
+      "scene_offset_seconds_min_max": [
+        -2.9999999640040187e-07,
+        121.1226107
+      ],
+      "scenes": [
+        {
+          "index": 0,
+          "name": "P7",
+          "region_id": "638550131957816082",
+          "center": "61870.261,23894.21"
+        },
+        {
+          "index": 1,
+          "name": "P6",
+          "region_id": "638550131550536686",
+          "center": "86936.828,23893.337"
+        },
+        {
+          "index": 2,
+          "name": "P1",
+          "region_id": "638550129407591950",
+          "center": "111647.011,24699.667"
+        },
+        {
+          "index": 3,
+          "name": "P2",
+          "region_id": "638550129890768679",
+          "center": "111647.696,48963.945"
+        },
+        {
+          "index": 4,
+          "name": "P8",
+          "region_id": "638550132362697160",
+          "center": "61870.655,49086.57"
+        },
+        {
+          "index": 5,
+          "name": "P5",
+          "region_id": "638550131200142671",
+          "center": "86692.793,49443.537"
+        },
+        {
+          "index": 6,
+          "name": "P9",
+          "region_id": "638550132774949039",
+          "center": "61870.843,73628.006"
+        },
+        {
+          "index": 7,
+          "name": "P4",
+          "region_id": "638550130773015527",
+          "center": "86693.53,73722.048"
+        },
+        {
+          "index": 8,
+          "name": "P3",
+          "region_id": "638550130319332495",
+          "center": "111485.183,74012.17"
+        }
+      ],
+      "captures": [
+        {
+          "scene": 0,
+          "t": 0,
+          "utc": "2024-06-26T15:45:56.8715416Z",
+          "elapsed_seconds": 27.324179,
+          "offset_from_common_timestamp_seconds": -2.9999999640040187e-07,
+          "stage_x": "+000000061870.8430",
+          "stage_y": "+000000023894.2100",
+          "focus": "-000000060385.0000"
+        },
+        {
+          "scene": 0,
+          "t": 90,
+          "utc": "2024-06-27T06:45:56.9959304Z",
+          "elapsed_seconds": 54027.448568,
+          "offset_from_common_timestamp_seconds": -1.00000761449337e-07,
+          "stage_x": "+000000061870.2610",
+          "stage_y": "+000000023894.2100",
+          "focus": "-000000060385.0000"
+        },
+        {
+          "scene": 1,
+          "t": 0,
+          "utc": "2024-06-26T15:46:10.5374195Z",
+          "elapsed_seconds": 40.990057,
+          "offset_from_common_timestamp_seconds": 13.665877700000003,
+          "stage_x": "+000000086936.8280",
+          "stage_y": "+000000023894.2100",
+          "focus": "-000000060380.0000"
+        },
+        {
+          "scene": 1,
+          "t": 90,
+          "utc": "2024-06-27T06:46:10.6651501Z",
+          "elapsed_seconds": 54041.117788,
+          "offset_from_common_timestamp_seconds": 13.669219900002645,
+          "stage_x": "+000000086936.8280",
+          "stage_y": "+000000023894.2100",
+          "focus": "-000000060380.0000"
+        },
+        {
+          "scene": 2,
+          "t": 0,
+          "utc": "2024-06-26T15:46:24.0779998Z",
+          "elapsed_seconds": 54.530637,
+          "offset_from_common_timestamp_seconds": 27.2064577,
+          "stage_x": "+000000111647.0110",
+          "stage_y": "+000000024699.6500",
+          "focus": "-000000060366.0000"
+        },
+        {
+          "scene": 2,
+          "t": 90,
+          "utc": "2024-06-27T06:46:24.1379519Z",
+          "elapsed_seconds": 54054.590589,
+          "offset_from_common_timestamp_seconds": 27.142020899998897,
+          "stage_x": "+000000111647.0110",
+          "stage_y": "+000000024699.6500",
+          "focus": "-000000060366.0000"
+        },
+        {
+          "scene": 3,
+          "t": 0,
+          "utc": "2024-06-26T15:46:37.5388273Z",
+          "elapsed_seconds": 67.991465,
+          "offset_from_common_timestamp_seconds": 40.66728570000001,
+          "stage_x": "+000000111647.0110",
+          "stage_y": "+000000048963.9280",
+          "focus": "-000000060518.0000"
+        },
+        {
+          "scene": 3,
+          "t": 90,
+          "utc": "2024-06-27T06:46:37.5627404Z",
+          "elapsed_seconds": 54068.015378,
+          "offset_from_common_timestamp_seconds": 40.56680989999586,
+          "stage_x": "+000000111647.0110",
+          "stage_y": "+000000048963.9280",
+          "focus": "-000000060518.0000"
+        },
+        {
+          "scene": 4,
+          "t": 0,
+          "utc": "2024-06-26T15:47:03.6304317Z",
+          "elapsed_seconds": 94.083069,
+          "offset_from_common_timestamp_seconds": 66.7588897,
+          "stage_x": "+000000061870.6550",
+          "stage_y": "+000000049086.5530",
+          "focus": "-000000060476.0000"
+        },
+        {
+          "scene": 4,
+          "t": 90,
+          "utc": "2024-06-27T06:47:03.6475690Z",
+          "elapsed_seconds": 54094.100207,
+          "offset_from_common_timestamp_seconds": 66.65163890000258,
+          "stage_x": "+000000061870.6550",
+          "stage_y": "+000000049086.5530",
+          "focus": "-000000060476.0000"
+        },
+        {
+          "scene": 5,
+          "t": 0,
+          "utc": "2024-06-26T15:47:17.1779264Z",
+          "elapsed_seconds": 107.630564,
+          "offset_from_common_timestamp_seconds": 80.30638470000001,
+          "stage_x": "+000000086692.7930",
+          "stage_y": "+000000049443.5200",
+          "focus": "-000000060478.0000"
+        },
+        {
+          "scene": 5,
+          "t": 90,
+          "utc": "2024-06-27T06:47:17.1993495Z",
+          "elapsed_seconds": 54107.651987,
+          "offset_from_common_timestamp_seconds": 80.2034188999969,
+          "stage_x": "+000000086692.7930",
+          "stage_y": "+000000049443.5200",
+          "focus": "-000000060478.0000"
+        },
+        {
+          "scene": 6,
+          "t": 0,
+          "utc": "2024-06-26T15:47:30.7881906Z",
+          "elapsed_seconds": 121.240828,
+          "offset_from_common_timestamp_seconds": 93.9166487,
+          "stage_x": "+000000061870.8430",
+          "stage_y": "+000000073627.9890",
+          "focus": "-000000060599.0000"
+        },
+        {
+          "scene": 6,
+          "t": 90,
+          "utc": "2024-06-27T06:47:30.8106237Z",
+          "elapsed_seconds": 54121.263261,
+          "offset_from_common_timestamp_seconds": 93.8146928999995,
+          "stage_x": "+000000061870.8430",
+          "stage_y": "+000000073627.9890",
+          "focus": "-000000060599.0000"
+        },
+        {
+          "scene": 7,
+          "t": 0,
+          "utc": "2024-06-26T15:47:44.3992520Z",
+          "elapsed_seconds": 134.85189,
+          "offset_from_common_timestamp_seconds": 107.5277107,
+          "stage_x": "+000000086693.5300",
+          "stage_y": "+000000073722.0310",
+          "focus": "-000000060640.0000"
+        },
+        {
+          "scene": 7,
+          "t": 90,
+          "utc": "2024-06-27T06:47:44.4143790Z",
+          "elapsed_seconds": 54134.867017,
+          "offset_from_common_timestamp_seconds": 107.41844889999629,
+          "stage_x": "+000000086693.5300",
+          "stage_y": "+000000073722.0310",
+          "focus": "-000000060640.0000"
+        },
+        {
+          "scene": 8,
+          "t": 0,
+          "utc": "2024-06-26T15:47:57.9941524Z",
+          "elapsed_seconds": 148.44679,
+          "offset_from_common_timestamp_seconds": 121.1226107,
+          "stage_x": "+000000111485.1830",
+          "stage_y": "+000000074012.1530",
+          "focus": "-000000060558.0000"
+        },
+        {
+          "scene": 8,
+          "t": 90,
+          "utc": "2024-06-27T06:47:58.0198972Z",
+          "elapsed_seconds": 54148.472535,
+          "offset_from_common_timestamp_seconds": 121.02396690000023,
+          "stage_x": "+000000111485.1830",
+          "stage_y": "+000000074012.1530",
+          "focus": "-000000060558.0000"
+        }
+      ],
+      "range_manifest_sha256": "821287bca0106246a813fc74712b8b94c966b39f14a6a439e226551cabfa91b5",
+      "decoded_json_sha256": "a6117ab8a76e18aa9887e9ae39e5165dd9d6116ea8f32adf6c57be749c3a1f59",
+      "metadata_xml_sha256": "e7a909c7b30d8534da8347156b9b757f903b4b743b57c9719e86680cf82b24e5"
+    },
+    "rescue-20241014-early": {
+      "file_bytes": 2917624032,
+      "preserved_range_bytes": 324060,
+      "preserved_ranges": 33,
+      "overlap_checks": 0,
+      "directory_entries_checked": 240,
+      "scene_count": 12,
+      "time_count": 20,
+      "first_last_subblocks_checked": 24,
+      "pixel_size_um": {
+        "X": 7.099296446154179,
+        "Y": 7.099296446154179
+      },
+      "field_size_um": {
+        "X": 19537.2638198163,
+        "Y": 15675.246553108427
+      },
+      "acquisition_utc": "2024-10-14T15:06:21.694445Z",
+      "timestamps_seconds_first_last": [
+        26.0177022,
+        11427.931621099999
+      ],
+      "timestamp_duration_hours": 3.167198310805555,
+      "interval_seconds_min_median_max": [
+        599.9193371000001,
+        600.0206098999997,
+        601.9118446
+      ],
+      "scene_offset_seconds_min_max": [
+        -1.999999987845058e-07,
+        225.2972208
+      ],
+      "scenes": [
+        {
+          "index": 0,
+          "name": "P6",
+          "region_id": "638645148978731513",
+          "center": "88095.038,26294.364"
+        },
+        {
+          "index": 1,
+          "name": "P7",
+          "region_id": "638645149342772144",
+          "center": "63281.258,26392.584"
+        },
+        {
+          "index": 2,
+          "name": "P12",
+          "region_id": "638645150882698360",
+          "center": "38404.76,26481.35"
+        },
+        {
+          "index": 3,
+          "name": "P1",
+          "region_id": "638645147391888435",
+          "center": "113151.142,27173.653"
+        },
+        {
+          "index": 4,
+          "name": "P11",
+          "region_id": "638645150608190446",
+          "center": "38344.989,50847.274"
+        },
+        {
+          "index": 5,
+          "name": "P8",
+          "region_id": "638645149674056837",
+          "center": "63173.55,51517.981"
+        },
+        {
+          "index": 6,
+          "name": "P5",
+          "region_id": "638645148726717391",
+          "center": "88096.665,51520.053"
+        },
+        {
+          "index": 7,
+          "name": "P2",
+          "region_id": "638645147691612637",
+          "center": "112782.186,51563.863"
+        },
+        {
+          "index": 8,
+          "name": "P10",
+          "region_id": "638645150322057378",
+          "center": "38254.921,76027.68"
+        },
+        {
+          "index": 9,
+          "name": "P9",
+          "region_id": "638645150031094367",
+          "center": "63032.873,76214.17"
+        },
+        {
+          "index": 10,
+          "name": "P4",
+          "region_id": "638645148375974003",
+          "center": "87928.603,76404.634"
+        },
+        {
+          "index": 11,
+          "name": "P3",
+          "region_id": "638645147963337948",
+          "center": "112782.734,76861.088"
+        }
+      ],
+      "captures": [
+        {
+          "scene": 0,
+          "t": 0,
+          "utc": "2024-10-14T15:06:47.7121472Z",
+          "elapsed_seconds": 26.017702,
+          "offset_from_common_timestamp_seconds": -1.999999987845058e-07,
+          "stage_x": "+000000088095.0210",
+          "stage_y": "+000000026294.3640",
+          "focus": "-000000042004.0000"
+        },
+        {
+          "scene": 0,
+          "t": 19,
+          "utc": "2024-10-14T18:16:49.6260661Z",
+          "elapsed_seconds": 11427.931621,
+          "offset_from_common_timestamp_seconds": -9.999894245993346e-08,
+          "stage_x": "+000000088095.0210",
+          "stage_y": "+000000026294.3640",
+          "focus": "-000000042004.0000"
+        },
+        {
+          "scene": 1,
+          "t": 0,
+          "utc": "2024-10-14T15:07:01.3619441Z",
+          "elapsed_seconds": 39.667499,
+          "offset_from_common_timestamp_seconds": 13.6497968,
+          "stage_x": "+000000063281.2580",
+          "stage_y": "+000000026392.5840",
+          "focus": "-000000042050.0000"
+        },
+        {
+          "scene": 1,
+          "t": 19,
+          "utc": "2024-10-14T18:17:03.2195101Z",
+          "elapsed_seconds": 11441.525065,
+          "offset_from_common_timestamp_seconds": 13.593443900001148,
+          "stage_x": "+000000063281.2580",
+          "stage_y": "+000000026392.5840",
+          "focus": "-000000042050.0000"
+        },
+        {
+          "scene": 2,
+          "t": 0,
+          "utc": "2024-10-14T15:07:15.0542560Z",
+          "elapsed_seconds": 53.359811,
+          "offset_from_common_timestamp_seconds": 27.342108800000002,
+          "stage_x": "+000000038404.7600",
+          "stage_y": "+000000026481.3500",
+          "focus": "-000000042109.0000"
+        },
+        {
+          "scene": 2,
+          "t": 19,
+          "utc": "2024-10-14T18:17:16.8299514Z",
+          "elapsed_seconds": 11455.135506,
+          "offset_from_common_timestamp_seconds": 27.203884900001867,
+          "stage_x": "+000000038404.7600",
+          "stage_y": "+000000026481.3500",
+          "focus": "-000000042109.0000"
+        },
+        {
+          "scene": 3,
+          "t": 0,
+          "utc": "2024-10-14T15:07:53.7637723Z",
+          "elapsed_seconds": 92.069327,
+          "offset_from_common_timestamp_seconds": 66.0516248,
+          "stage_x": "+000000113151.1240",
+          "stage_y": "+000000027173.6530",
+          "focus": "-000000041851.0000"
+        },
+        {
+          "scene": 3,
+          "t": 19,
+          "utc": "2024-10-14T18:17:55.5457484Z",
+          "elapsed_seconds": 11493.851303,
+          "offset_from_common_timestamp_seconds": 65.9196819000008,
+          "stage_x": "+000000113151.1240",
+          "stage_y": "+000000027173.6530",
+          "focus": "-000000041851.0000"
+        },
+        {
+          "scene": 4,
+          "t": 0,
+          "utc": "2024-10-14T15:08:32.4769247Z",
+          "elapsed_seconds": 130.782479,
+          "offset_from_common_timestamp_seconds": 104.76477679999999,
+          "stage_x": "+000000038344.9890",
+          "stage_y": "+000000050847.2740",
+          "focus": "-000000042072.0000"
+        },
+        {
+          "scene": 4,
+          "t": 19,
+          "utc": "2024-10-14T18:18:34.2574663Z",
+          "elapsed_seconds": 11532.563021,
+          "offset_from_common_timestamp_seconds": 104.63139990000127,
+          "stage_x": "+000000038344.9890",
+          "stage_y": "+000000050847.2740",
+          "focus": "-000000042072.0000"
+        },
+        {
+          "scene": 5,
+          "t": 0,
+          "utc": "2024-10-14T15:08:46.1802240Z",
+          "elapsed_seconds": 144.485779,
+          "offset_from_common_timestamp_seconds": 118.4680768,
+          "stage_x": "+000000063173.5500",
+          "stage_y": "+000000051517.9810",
+          "focus": "-000000042199.0000"
+        },
+        {
+          "scene": 5,
+          "t": 19,
+          "utc": "2024-10-14T18:18:47.9604450Z",
+          "elapsed_seconds": 11546.266,
+          "offset_from_common_timestamp_seconds": 118.33437890000096,
+          "stage_x": "+000000063173.5500",
+          "stage_y": "+000000051517.9810",
+          "focus": "-000000042199.0000"
+        },
+        {
+          "scene": 6,
+          "t": 0,
+          "utc": "2024-10-14T15:08:59.9947172Z",
+          "elapsed_seconds": 158.300272,
+          "offset_from_common_timestamp_seconds": 132.2825698,
+          "stage_x": "+000000088096.6480",
+          "stage_y": "+000000051520.0530",
+          "focus": "-000000042004.0000"
+        },
+        {
+          "scene": 6,
+          "t": 19,
+          "utc": "2024-10-14T18:19:01.7663725Z",
+          "elapsed_seconds": 11560.071927,
+          "offset_from_common_timestamp_seconds": 132.1403059000022,
+          "stage_x": "+000000088096.6480",
+          "stage_y": "+000000051520.0530",
+          "focus": "-000000042004.0000"
+        },
+        {
+          "scene": 7,
+          "t": 0,
+          "utc": "2024-10-14T15:09:13.5050706Z",
+          "elapsed_seconds": 171.810625,
+          "offset_from_common_timestamp_seconds": 145.79292279999999,
+          "stage_x": "+000000112782.1690",
+          "stage_y": "+000000051563.8630",
+          "focus": "-000000041996.0000"
+        },
+        {
+          "scene": 7,
+          "t": 19,
+          "utc": "2024-10-14T18:19:15.2805740Z",
+          "elapsed_seconds": 11573.586129,
+          "offset_from_common_timestamp_seconds": 145.65450790000068,
+          "stage_x": "+000000112782.1690",
+          "stage_y": "+000000051563.8630",
+          "focus": "-000000041996.0000"
+        },
+        {
+          "scene": 8,
+          "t": 0,
+          "utc": "2024-10-14T15:09:52.1113004Z",
+          "elapsed_seconds": 210.416855,
+          "offset_from_common_timestamp_seconds": 184.3991528,
+          "stage_x": "+000000038254.9210",
+          "stage_y": "+000000076027.6630",
+          "focus": "-000000042298.0000"
+        },
+        {
+          "scene": 8,
+          "t": 19,
+          "utc": "2024-10-14T18:19:53.8832013Z",
+          "elapsed_seconds": 11612.188756,
+          "offset_from_common_timestamp_seconds": 184.2571349000009,
+          "stage_x": "+000000038254.9210",
+          "stage_y": "+000000076027.6630",
+          "focus": "-000000042298.0000"
+        },
+        {
+          "scene": 9,
+          "t": 0,
+          "utc": "2024-10-14T15:10:05.7090356Z",
+          "elapsed_seconds": 224.01459,
+          "offset_from_common_timestamp_seconds": 197.9968878,
+          "stage_x": "+000000063032.8730",
+          "stage_y": "+000000076214.1530",
+          "focus": "-000000042259.0000"
+        },
+        {
+          "scene": 9,
+          "t": 19,
+          "utc": "2024-10-14T18:20:07.4839605Z",
+          "elapsed_seconds": 11625.789515,
+          "offset_from_common_timestamp_seconds": 197.85789390000173,
+          "stage_x": "+000000063032.8730",
+          "stage_y": "+000000076214.1530",
+          "focus": "-000000042259.0000"
+        },
+        {
+          "scene": 10,
+          "t": 0,
+          "utc": "2024-10-14T15:10:19.2924628Z",
+          "elapsed_seconds": 237.598017,
+          "offset_from_common_timestamp_seconds": 211.5803148,
+          "stage_x": "+000000087928.5860",
+          "stage_y": "+000000076404.6170",
+          "focus": "-000000042245.0000"
+        },
+        {
+          "scene": 10,
+          "t": 19,
+          "utc": "2024-10-14T18:20:21.0682188Z",
+          "elapsed_seconds": 11639.373773,
+          "offset_from_common_timestamp_seconds": 211.44215190000068,
+          "stage_x": "+000000087928.5860",
+          "stage_y": "+000000076404.6170",
+          "focus": "-000000042245.0000"
+        },
+        {
+          "scene": 11,
+          "t": 0,
+          "utc": "2024-10-14T15:10:33.0093680Z",
+          "elapsed_seconds": 251.314923,
+          "offset_from_common_timestamp_seconds": 225.2972208,
+          "stage_x": "+000000112782.7170",
+          "stage_y": "+000000076861.0710",
+          "focus": "-000000042120.0000"
+        },
+        {
+          "scene": 11,
+          "t": 19,
+          "utc": "2024-10-14T18:20:34.7830240Z",
+          "elapsed_seconds": 11653.088579,
+          "offset_from_common_timestamp_seconds": 225.15695790000063,
+          "stage_x": "+000000112782.7170",
+          "stage_y": "+000000076861.0710",
+          "focus": "-000000042120.0000"
+        }
+      ],
+      "range_manifest_sha256": "685ccf9c61f30f1d4250b0bca3a2859c996f6f4c84a5a3da5e5f77d33702685c",
+      "decoded_json_sha256": "3c024c327bfc1de2ba4e2ed00fb3c96847fdcf51d86e3de4a7997b256f112cf5",
+      "metadata_xml_sha256": "188b1cf66444e2971c4303e410a273fd16bd99203ae939d3b4272546c53904f0"
+    },
+    "rescue-20241014-late": {
+      "file_bytes": 13871462208,
+      "preserved_range_bytes": 461457,
+      "preserved_ranges": 33,
+      "overlap_checks": 0,
+      "directory_entries_checked": 1140,
+      "scene_count": 12,
+      "time_count": 95,
+      "first_last_subblocks_checked": 24,
+      "pixel_size_um": {
+        "X": 7.099296446154179,
+        "Y": 7.099296446154179
+      },
+      "field_size_um": {
+        "X": 19537.2638198163,
+        "Y": 15675.246553108427
+      },
+      "acquisition_utc": "2024-10-14T18:21:59.5147055Z",
+      "timestamps_seconds_first_last": [
+        27.505966299999997,
+        56427.9093344
+      ],
+      "timestamp_duration_hours": 15.666778713361111,
+      "interval_seconds_min_median_max": [
+        599.9172488000004,
+        600.0107420499999,
+        600.3533592
+      ],
+      "scene_offset_seconds_min_max": [
+        -3.9999576983973384e-07,
+        225.1602767
+      ],
+      "scenes": [
+        {
+          "index": 0,
+          "name": "P6",
+          "region_id": "638645148978731513",
+          "center": "88095.038,26294.364"
+        },
+        {
+          "index": 1,
+          "name": "P7",
+          "region_id": "638645149342772144",
+          "center": "63281.258,26392.584"
+        },
+        {
+          "index": 2,
+          "name": "P12",
+          "region_id": "638645150882698360",
+          "center": "38404.76,26481.35"
+        },
+        {
+          "index": 3,
+          "name": "P1",
+          "region_id": "638645147391888435",
+          "center": "113151.142,27173.653"
+        },
+        {
+          "index": 4,
+          "name": "P11",
+          "region_id": "638645150608190446",
+          "center": "38344.989,50847.274"
+        },
+        {
+          "index": 5,
+          "name": "P8",
+          "region_id": "638645149674056837",
+          "center": "63173.55,51517.981"
+        },
+        {
+          "index": 6,
+          "name": "P5",
+          "region_id": "638645148726717391",
+          "center": "88096.665,51520.053"
+        },
+        {
+          "index": 7,
+          "name": "P2",
+          "region_id": "638645147691612637",
+          "center": "112782.186,51563.863"
+        },
+        {
+          "index": 8,
+          "name": "P10",
+          "region_id": "638645150322057378",
+          "center": "38254.921,76027.68"
+        },
+        {
+          "index": 9,
+          "name": "P9",
+          "region_id": "638645150031094367",
+          "center": "63032.873,76214.17"
+        },
+        {
+          "index": 10,
+          "name": "P4",
+          "region_id": "638645148375974003",
+          "center": "87928.603,76404.634"
+        },
+        {
+          "index": 11,
+          "name": "P3",
+          "region_id": "638645147963337948",
+          "center": "112782.734,76861.088"
+        }
+      ],
+      "captures": [
+        {
+          "scene": 0,
+          "t": 0,
+          "utc": "2024-10-14T18:22:27.0206718Z",
+          "elapsed_seconds": 27.505966,
+          "offset_from_common_timestamp_seconds": -2.9999999640040187e-07,
+          "stage_x": "+000000088095.0210",
+          "stage_y": "+000000026294.3640",
+          "focus": "-000000042004.0000"
+        },
+        {
+          "scene": 0,
+          "t": 94,
+          "utc": "2024-10-15T10:02:27.4240399Z",
+          "elapsed_seconds": 56427.909334,
+          "offset_from_common_timestamp_seconds": -3.9999576983973384e-07,
+          "stage_x": "+000000088095.0210",
+          "stage_y": "+000000026294.3640",
+          "focus": "-000000042004.0000"
+        },
+        {
+          "scene": 1,
+          "t": 0,
+          "utc": "2024-10-14T18:22:40.6120962Z",
+          "elapsed_seconds": 41.097391,
+          "offset_from_common_timestamp_seconds": 13.591424700000005,
+          "stage_x": "+000000063281.2580",
+          "stage_y": "+000000026392.5840",
+          "focus": "-000000042050.0000"
+        },
+        {
+          "scene": 1,
+          "t": 94,
+          "utc": "2024-10-15T10:02:41.0170689Z",
+          "elapsed_seconds": 56441.502363,
+          "offset_from_common_timestamp_seconds": 13.593028600000252,
+          "stage_x": "+000000063281.2580",
+          "stage_y": "+000000026392.5840",
+          "focus": "-000000042050.0000"
+        },
+        {
+          "scene": 2,
+          "t": 0,
+          "utc": "2024-10-14T18:22:54.2186041Z",
+          "elapsed_seconds": 54.703899,
+          "offset_from_common_timestamp_seconds": 27.197932700000003,
+          "stage_x": "+000000038404.7600",
+          "stage_y": "+000000026481.3500",
+          "focus": "-000000042109.0000"
+        },
+        {
+          "scene": 2,
+          "t": 94,
+          "utc": "2024-10-15T10:02:54.6199777Z",
+          "elapsed_seconds": 56455.105272,
+          "offset_from_common_timestamp_seconds": 27.195937600001344,
+          "stage_x": "+000000038404.7600",
+          "stage_y": "+000000026481.3500",
+          "focus": "-000000042109.0000"
+        },
+        {
+          "scene": 3,
+          "t": 0,
+          "utc": "2024-10-14T18:23:32.9324736Z",
+          "elapsed_seconds": 93.417768,
+          "offset_from_common_timestamp_seconds": 65.9118017,
+          "stage_x": "+000000113151.1240",
+          "stage_y": "+000000027173.6530",
+          "focus": "-000000041851.0000"
+        },
+        {
+          "scene": 3,
+          "t": 94,
+          "utc": "2024-10-15T10:03:33.3354398Z",
+          "elapsed_seconds": 56493.820734,
+          "offset_from_common_timestamp_seconds": 65.91139960000146,
+          "stage_x": "+000000113151.1240",
+          "stage_y": "+000000027173.6530",
+          "focus": "-000000041851.0000"
+        },
+        {
+          "scene": 4,
+          "t": 0,
+          "utc": "2024-10-14T18:24:11.6487708Z",
+          "elapsed_seconds": 132.134065,
+          "offset_from_common_timestamp_seconds": 104.6280987,
+          "stage_x": "+000000038344.9890",
+          "stage_y": "+000000050847.2740",
+          "focus": "-000000042072.0000"
+        },
+        {
+          "scene": 4,
+          "t": 94,
+          "utc": "2024-10-15T10:04:12.0457994Z",
+          "elapsed_seconds": 56532.531094,
+          "offset_from_common_timestamp_seconds": 104.62175959999877,
+          "stage_x": "+000000038344.9890",
+          "stage_y": "+000000050847.2740",
+          "focus": "-000000042072.0000"
+        },
+        {
+          "scene": 5,
+          "t": 0,
+          "utc": "2024-10-14T18:24:25.3516684Z",
+          "elapsed_seconds": 145.836963,
+          "offset_from_common_timestamp_seconds": 118.3309967,
+          "stage_x": "+000000063173.5500",
+          "stage_y": "+000000051517.9810",
+          "focus": "-000000042199.0000"
+        },
+        {
+          "scene": 5,
+          "t": 94,
+          "utc": "2024-10-15T10:04:25.7504141Z",
+          "elapsed_seconds": 56546.235709,
+          "offset_from_common_timestamp_seconds": 118.32637460000115,
+          "stage_x": "+000000063173.5500",
+          "stage_y": "+000000051517.9810",
+          "focus": "-000000042199.0000"
+        },
+        {
+          "scene": 6,
+          "t": 0,
+          "utc": "2024-10-14T18:24:39.1596627Z",
+          "elapsed_seconds": 159.644957,
+          "offset_from_common_timestamp_seconds": 132.13899070000002,
+          "stage_x": "+000000088096.6480",
+          "stage_y": "+000000051520.0530",
+          "focus": "-000000042004.0000"
+        },
+        {
+          "scene": 6,
+          "t": 94,
+          "utc": "2024-10-15T10:04:39.5551449Z",
+          "elapsed_seconds": 56560.040439,
+          "offset_from_common_timestamp_seconds": 132.13110459999734,
+          "stage_x": "+000000088096.6480",
+          "stage_y": "+000000051520.0530",
+          "focus": "-000000042004.0000"
+        },
+        {
+          "scene": 7,
+          "t": 0,
+          "utc": "2024-10-14T18:24:52.6743959Z",
+          "elapsed_seconds": 173.15969,
+          "offset_from_common_timestamp_seconds": 145.6537237,
+          "stage_x": "+000000112782.1690",
+          "stage_y": "+000000051563.8630",
+          "focus": "-000000041996.0000"
+        },
+        {
+          "scene": 7,
+          "t": 94,
+          "utc": "2024-10-15T10:04:53.0694063Z",
+          "elapsed_seconds": 56573.554701,
+          "offset_from_common_timestamp_seconds": 145.64536660000158,
+          "stage_x": "+000000112782.1690",
+          "stage_y": "+000000051563.8630",
+          "focus": "-000000041996.0000"
+        },
+        {
+          "scene": 8,
+          "t": 0,
+          "utc": "2024-10-14T18:25:31.2770160Z",
+          "elapsed_seconds": 211.762311,
+          "offset_from_common_timestamp_seconds": 184.2563447,
+          "stage_x": "+000000038254.9210",
+          "stage_y": "+000000076027.6630",
+          "focus": "-000000042298.0000"
+        },
+        {
+          "scene": 8,
+          "t": 94,
+          "utc": "2024-10-15T10:05:31.6726579Z",
+          "elapsed_seconds": 56612.157952,
+          "offset_from_common_timestamp_seconds": 184.24861760000204,
+          "stage_x": "+000000038254.9210",
+          "stage_y": "+000000076027.6630",
+          "focus": "-000000042298.0000"
+        },
+        {
+          "scene": 9,
+          "t": 0,
+          "utc": "2024-10-14T18:25:44.8755582Z",
+          "elapsed_seconds": 225.360853,
+          "offset_from_common_timestamp_seconds": 197.8548867,
+          "stage_x": "+000000063032.8730",
+          "stage_y": "+000000076214.1530",
+          "focus": "-000000042259.0000"
+        },
+        {
+          "scene": 9,
+          "t": 94,
+          "utc": "2024-10-15T10:05:45.2741712Z",
+          "elapsed_seconds": 56625.759466,
+          "offset_from_common_timestamp_seconds": 197.8501316000038,
+          "stage_x": "+000000063032.8730",
+          "stage_y": "+000000076214.1530",
+          "focus": "-000000042259.0000"
+        },
+        {
+          "scene": 10,
+          "t": 0,
+          "utc": "2024-10-14T18:25:58.4649696Z",
+          "elapsed_seconds": 238.950264,
+          "offset_from_common_timestamp_seconds": 211.4442977,
+          "stage_x": "+000000087928.5860",
+          "stage_y": "+000000076404.6170",
+          "focus": "-000000042245.0000"
+        },
+        {
+          "scene": 10,
+          "t": 94,
+          "utc": "2024-10-15T10:05:58.8386219Z",
+          "elapsed_seconds": 56639.323916,
+          "offset_from_common_timestamp_seconds": 211.41458160000184,
+          "stage_x": "+000000087928.5860",
+          "stage_y": "+000000076404.6170",
+          "focus": "-000000042245.0000"
+        },
+        {
+          "scene": 11,
+          "t": 0,
+          "utc": "2024-10-14T18:26:12.1809483Z",
+          "elapsed_seconds": 252.666243,
+          "offset_from_common_timestamp_seconds": 225.1602767,
+          "stage_x": "+000000112782.7170",
+          "stage_y": "+000000076861.0710",
+          "focus": "-000000042120.0000"
+        },
+        {
+          "scene": 11,
+          "t": 94,
+          "utc": "2024-10-15T10:06:12.5530497Z",
+          "elapsed_seconds": 56653.038344,
+          "offset_from_common_timestamp_seconds": 225.12900960000115,
+          "stage_x": "+000000112782.7170",
+          "stage_y": "+000000076861.0710",
+          "focus": "-000000042120.0000"
+        }
+      ],
+      "range_manifest_sha256": "9662a586aa69aeef0f570a16fd3cf184426df56718b07822ef10d251a1ce026d",
+      "decoded_json_sha256": "32bf51fde45421df85dbb894d517db21a52ea798a4b8fdd7d117b8d369fb0276",
+      "metadata_xml_sha256": "b16762342cc0c274131fa8b168a2f48012756f0bcc77037c89f53ee0973b4137"
+    }
+  },
+  "script_sha256": "7587ba65cb65dca1f1273cf83b2af06208564dcdbcfbba19ba3b8ae58fdaa14a",
+  "inspection_script_sha256": "f43dc7ef4d9cfeb87f525ba67c06dc59ee3c8a3287b23e947a3ca01c21f052c5",
+  "rescue_continuation": {
+    "same_scene_names_region_ids_centers_and_scale": true,
+    "all_selected_boundary_stage_and_focus_positions_identical": true,
+    "boundary_gap_seconds_by_scene": [
+      337.394605,
+      337.392586,
+      337.388653,
+      337.386725,
+      337.391304,
+      337.391223,
+      337.39329,
+      337.393821,
+      337.393815,
+      337.391598,
+      337.396751,
+      337.397924
+    ],
+    "interpretation": "Supports the same imaging-position configuration across two acquisitions. Does not identify mixture assignment, individual culture handling, inoculation time or terminal scoring."
+  }
+}

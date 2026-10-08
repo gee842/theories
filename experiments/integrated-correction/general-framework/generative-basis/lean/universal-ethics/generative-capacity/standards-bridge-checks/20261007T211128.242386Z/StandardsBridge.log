@@ -1,0 +1,10 @@
+StandardsBridge.lean:61:3: error: unknown tactic
+StandardsBridge.lean:58:35: error: unsolved goals
+Q : Type
+h : Rule Q
+hs : List (Rule Q)
+evidence : List (Observation Q)
+included : h ∈ hs
+removed : ¬h ∈ learn hs evidence
+bad : ¬Fits h evidence
+⊢ ∃ o, o ∈ evidence ∧ h o.fst ≠ o.snd

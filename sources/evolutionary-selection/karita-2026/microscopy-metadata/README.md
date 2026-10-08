@@ -1,0 +1,13 @@
+# Original microscopy ranges and reader provenance
+
+Targeted original-byte access to [BioImage Archive S-BIAD2117](https://doi.org/10.6019/S-BIAD2117), retrieved 8 October 2026. The [parent source record](../README.md), [original archive inventory](../bioimage-file-list.json) and [submission metadata](../bioimage-S-BIAD2117.json) identify the study and its CC BY 4.0 deposit license. The original fourteen-file parent manifest remains unchanged.
+
+Five folders preserve portions of five CZI acquisitions: collapse on 23 November 2023, formation on 19 and 26 June 2024, and two consecutive rescue acquisitions on 14 October 2024. Their complete listed sizes sum to 53,294,220,288 bytes. **These folders are not complete CZI files.** Each `ranges.json` records the precise original offset, length, SHA256, requested/resolved URLs, response headers and ETag of each `.bin` response body. Bodies are unmodified. Metadata/XML and images decoded from those bodies are derived outputs in the [analysis package](../../../../experiments/integrated-correction/general-framework/generative-basis/ecological-selection/microscopy-correspondence/README.md).
+
+Every saved response is HTTP 206 and is checked against its requested range and the inventory's full size. Subsequent requests include the first ETag as If-Match. Local hashes and overlap checks verify preserved-byte consistency; they are not publisher checksums of the complete CZI files. Source-recorded acquisition dates are distinct from retrieval dates and server Last-Modified dates.
+
+The range set includes global headers/XML, full image directories, attachment directories, common timestamp payloads, and 4096-byte prefixes of the first and last image at every scene. Prefixes include a small initial part of pixel data. Two complete pixel payloads are additionally preserved for the predetermined first/last high-resolution scene-0 fields. Other original pixels, event-list payloads and thumbnails have not been downloaded.
+
+`format-sources/manifest.json` pins two unchanged primary software sources and their original commit metadata: ZEISS `CziStructs.h` (LGPL-3.0-or-later, license declaration retained) and Christoph Gohlke's `czifile.py` (BSD-3-Clause, full notice retained). The former supplies the binary structure; the latter independently decodes the saved ranges. Dependency installations are not part of this source collection.
+
+[Research findings and limitations](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/MICROSCOPY-CORRESPONDENCE-INTEGRATION.md) separate imaging-position continuity, culture identity, experimental timing and biological outcomes. No authors have been contacted and no missing treatment labels or inoculation events have been invented.

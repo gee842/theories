@@ -1,0 +1,327 @@
+{
+  "scope": "Six owned fragments and paired C01 only. Stronger assumption-free foundation not completed. Read-version fingerprints finalized after independent review.",
+  "shared_fragments": [
+    {
+      "path": "RESEARCH.md",
+      "text": "**普遍根基的直接检验 / Direct test of the general foundation，2026-10-08。** [正面论证、证据与独立反审](_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md)区分已有实际根据的“可以发生”、组织的相容共同实现，以及尚未建立的普遍充分说明。/ Actual participation is already grounded at its documented scopes; the constitutive argument requires compatible realization of the organization being explained. Necessary realization does not alone explain formation, transformation and changing possibilities throughout the stronger target. No new theorem or axiom; the assumption-free foundation remains unfinished, without reopening completed local correspondence or requiring every application to be infallible.",
+      "placement": "top",
+      "before_sha256": "c283c95631e90e4f70a2d252d0ec3722c50e060f53d8519a7c8a6abd0323dbf5",
+      "after_sha256": "de2a420a3a56d57609685eba17887e8651810a1bf20e10a08db686973faf7ff0"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "text": "**普遍根基的直接检验 / Direct test of the general foundation，2026-10-08。** [正面论证、证据与独立反审](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md)区分已有实际根据的“可以发生”、组织的相容共同实现，以及尚未建立的普遍充分说明。/ Actual participation is already grounded at its documented scopes; the constitutive argument requires compatible realization of the organization being explained. Necessary realization does not alone explain formation, transformation and changing possibilities throughout the stronger target. No new theorem or axiom; the assumption-free foundation remains unfinished, without reopening completed local correspondence or requiring every application to be infallible.",
+      "placement": "top",
+      "before_sha256": "c5c064302725ec79bb843b744630f3e1d49083bad2f276f6a8bcbc9c68baf674",
+      "after_sha256": "8a99afccc443daf6fb99c9d2cab904d139c2f217c0abaea5e56131da4b4a89b0"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md",
+      "text": "**普遍根基的直接检验 / Direct test of the general foundation，2026-10-08。** [正面论证、证据与独立反审](GENERAL-FOUNDATION-INTEGRATION.md)区分已有实际根据的“可以发生”、组织的相容共同实现，以及尚未建立的普遍充分说明。/ Actual participation is already grounded at its documented scopes; the constitutive argument requires compatible realization of the organization being explained. Necessary realization does not alone explain formation, transformation and changing possibilities throughout the stronger target. No new theorem or axiom; the assumption-free foundation remains unfinished, without reopening completed local correspondence or requiring every application to be infallible.",
+      "placement": "top",
+      "before_sha256": "09539878a1c9088ca3f3f57678977f7ee488f8092e805282ef1c65fa521afaff",
+      "after_sha256": "a408687d4d8a75cc8f2e257e4e9b832430f32384f85ed4096df0585db2610e0d"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "text": "**Warrant refined, 8 October 2026:** the [direct general argument](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md) distinguishes these commitments. Actual retained-use and formed-condition evidence already ground the permissive content of consequential differentiation and possible composition/recurrence. The second commitment has a general constitutive reading: an actual organization requires compatible realization of its constituent relations, with its relevant timing; continuation can retain, transform or replace that realization. This constrains explanations without selecting one architecture. It does not by itself supply the stronger common explanation of how organization forms, transforms and changes its possibilities. That necessary-to-sufficient explanatory inference remains unestablished at the requested assumption-free scope. Specific warranted applications and the completed conditional foundation remain credited; universal infallibility of applications is not a completion condition. **中文：**“可以发生”已有实际根据；相容共同实现提供一般构成约束；由此到形成、转化及可能性变化的普遍充分说明仍未完成。本轮没有新增公理或定理。",
+      "placement": "after",
+      "before_sha256": "f055c8429f76e7696077279c4bb24436b37c2421cd6b7bc809b26bd47a12a56f",
+      "after_sha256": "c5be93ee2858e3a3fb14bb0dd6685ecc4c0a6521dd2235998916334bb89f658c"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md",
+      "text": "## General constitutive warrant and the exact remaining inference\n\nThe [direct general investigation](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md) corrects the undifferentiated statement that actual applicability and all three root commitments remain ungrounded. Their permissive content has actual evidence: consequential differentiation and recurrent composition occur in identified histories. No induction to every system is needed to support that existence claim.\n\nThe stronger constitutive argument concerns actual joint realization. Contributions sharing conditions must fit together at the timing of the organization being explained; incompatible separately successful arrangements do not establish that organization. Continued organization can retain, transform or replace its realizing relations. This is a general necessary constraint grounded in independently identified organization, not a definition asserting that prior activity necessarily produces every future.\n\nThe [independent review](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md) accepts this constitutive component and direct grounds within the same unfolding. It does not accept the stronger inference from necessary realization to sufficient common explanation of formation, transformation and changing possibilities. That inference remains the substantive target, with the warrant of the recognition and inference actually used; an infallibility guarantee for all applications is not demanded. Actual correspondence, model revision and the completed conditional foundation need not be reopened.\n\n**中文范围。** 已有实际根据的“能够发生”与一般相容实现约束得到明确区分和独立反审。尚未完成的是必要构成条件到普遍充分说明的连接；没有把这个缺口泛化为所有关系都无根据，也没有把定义或空公理清单冒充无假设完成。本轮没有新增定理、Lean 修改或经验复现；更强目标仍未完成，也未被证明不可能。",
+      "placement": "append",
+      "before_sha256": "1f0dec84b3c3d9fa6b2319bfbbe89b8c138556ba69d566a6d886fe14e137df8d",
+      "after_sha256": "9261aec43b7f4a1d540d2107250eb9126c22ed2d9e755bbba16291f44a03dbb3"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "text": "**普遍根基直接检验 / Direct general-foundation test，2026-10-08。** C01 成对接入[一般论证与独立反审](GENERAL-FOUNDATION-INTEGRATION.md)：信用“可以发生”的实际根据，明确组织共同实现的一般必要约束，保留从必要构成到普遍充分说明的未完成连接。/ No new theorem, axiom or empirical run. Only C01, this study's owned discovery paths and read owned source versions change; prior counts and all unrelated rows remain preserved. [Owned edits](GENERAL-FOUNDATION-INDEX-EDITS.json) and [scoped checks](GENERAL-FOUNDATION-CHECKS.json) retain concurrent review limits. No automation or full-results-catalogue update.",
+      "placement": "append",
+      "before_sha256": "bf659a9400f4d67a90585d6a56721a2deb16ebef17a3bfd0a5f5cd9ecc24c2bb",
+      "after_sha256": "0a7e5837b4327bb582408b12fe6ad7c4beec6c91d99cb740948c18269afba1c9"
+    }
+  ],
+  "rows_before": {
+    "C01": {
+      "id": "C01",
+      "title_zh": "同一生成展开与关系分化",
+      "title_en": "One generative unfolding and relational differentiation",
+      "claim_zh": "活动形成并转化后续活动的条件；组织、认识、行动与评价在同一展开中分化，并通过实际相连的机制及其对应得到说明。 系统通过实际关系辨认，边界须保留相关依存；预测充分性与构成参与分别说明。",
+      "claim_en": "Activity forms and transforms conditions of further activity; organization, knowing, action and evaluation differentiate within one unfolding and are explained through connected mechanisms and their correspondence. Systems are identified through actual relations; boundaries retain relevant dependencies, with predictive sufficiency distinguished from constitutive participation.",
+      "scope_zh": "相连说明在条件范围内已完成；无假设目标继续。既有11项有限重演定理之外，持续阶段25项新定理、27项声明审计；构成可证源对应并传递至复合项，实际适用、逻辑／识别根据与普遍范围仍待证成。 直接构成论证保留已辨认关系的必要内容，排除同一架构普遍实现的额外门槛；全目标域的归属与覆盖尚未证成。本轮无新定理。 后续系统研究新增27项定理／41项空依赖声明审计，另18项继承审计：联合可接纳域中两个充分区域可以没有最小共同支持。最小性限可判定子区域，无最小支持结论不限。形成域内的有限词可行性已证；实际构成及更强普遍根据仍开放。 变化根据接续新增19项定理／21项空审计，59项继承声明原样复查：由形成与后续路径导出精确可达域及有限接续对应。发生、当前能力、普遍约束与精确范围各需相应覆盖；本地域输入已消除，实际普遍无假设根据仍未完成。",
+      "scope_en": "Connected articulation complete at conditional scope; assumption-free grounding continues. Beyond 11 earlier finite-replay theorems, the sustained investigation has 25 new theorems and 27 audits. Construction can prove source links and propagate correspondence; actual applicability, logical/recognitional warrant and universal scope remain open. The direct constitutive argument preserves established relational content and rejects universal use of one architecture as an extra gate; full-scope attribution and coverage remain unestablished. No new theorem in this assessment. The subsequent systems study adds 27 theorems / 41 empty declaration audits plus 18 inherited audits: joint admissibility can allow two sufficient regions with no least support. Minimality is among decidable subregions; absence of a least support is unrestricted. Formed-domain finite-word feasibility is proved; actual constitution and stronger universal warrant remain open. The variation-warrant continuation adds 19 theorems / 21 empty audits, retaining 59 inherited audits: formation histories derive the exact attained domain and finite continuation correspondence. Occurrence, current capability, universal constraints and exact ranges need different coverage. The independent local domain input is removed; actual universal assumption-free warrant remains unfinished.",
+      "links": [
+        {
+          "label_zh": "完整相连说明",
+          "label_en": "Connected articulation",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md"
+        },
+        {
+          "label_zh": "证据、反审与完成范围",
+          "label_en": "Evidence, counterreview and completion",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md"
+        },
+        {
+          "label_zh": "本次原话",
+          "label_en": "Request and provenance",
+          "path": "sources/15-codex-theory-conversations/2026-10-08-shengsheng-articulation.md"
+        },
+        {
+          "label_zh": "当前表述与范围",
+          "label_en": "Current statement and scope",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md#begin-within-generative-unfolding"
+        },
+        {
+          "label_zh": "无假设奠基继续",
+          "label_en": "Assumption-free foundation",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md"
+        },
+        {
+          "label_zh": "实际发生、证明与反审",
+          "label_en": "Enactment, proof and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ENACTED-FOUNDATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "本次更强要求",
+          "label_en": "Renewed stronger request",
+          "path": "sources/15-codex-theory-conversations/2026-10-08-assumption-free-shengsheng-foundation.md"
+        },
+        {
+          "label_zh": "有限历史实查",
+          "label_en": "Finite-history verification",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/enacted-foundation-verification.json"
+        },
+        {
+          "label_zh": "推理与直接呈现的根据",
+          "label_en": "Inference and direct presentation",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md"
+        },
+        {
+          "label_zh": "根据构造实查",
+          "label_en": "Ground-construction check",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/inferential-grounds-verification.json"
+        },
+        {
+          "label_zh": "相互奠基实查",
+          "label_en": "Mutual-grounding check",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/mutual-grounding-verification.json"
+        },
+        {
+          "label_zh": "依存根据实查",
+          "label_en": "Dependence-warrant check",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/dependence-warrant-verification.json"
+        },
+        {
+          "label_zh": "构成与对应实查",
+          "label_en": "Constructive correspondence check",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ground-relation-transport-verification.json"
+        },
+        {
+          "label_zh": "构成根据直接论证与反审",
+          "label_en": "Direct constitutive argument and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTITUTIVE-WARRANT-ARGUMENT.md"
+        },
+        {
+          "label_zh": "系统及其构成可能性",
+          "label_en": "Systems and constitutive possibilities",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-INDIVIDUATION.md"
+        },
+        {
+          "label_zh": "系统说明整合与实查",
+          "label_en": "Systems integration and checks",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "系统独立审查",
+          "label_en": "Independent systems review",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-REVIEW.md"
+        },
+        {
+          "label_zh": "关系与变化的根据",
+          "label_en": "Warrant for relationships and variation",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-WARRANT.md"
+        },
+        {
+          "label_zh": "变化根据整合与实查",
+          "label_en": "Variation warrant integration and checks",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-INTEGRATION.md"
+        },
+        {
+          "label_zh": "变化根据独立审查",
+          "label_en": "Independent variation-warrant review",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-REVIEW.md"
+        }
+      ]
+    }
+  },
+  "rows_after": {
+    "C01": {
+      "id": "C01",
+      "title_zh": "同一生成展开与关系分化",
+      "title_en": "One generative unfolding and relational differentiation",
+      "claim_zh": "活动形成并转化后续活动的条件；组织、认识、行动与评价在同一展开中分化，并通过实际相连的机制及其对应得到说明。 系统通过实际关系辨认，边界须保留相关依存；预测充分性与构成参与分别说明。",
+      "claim_en": "Activity forms and transforms conditions of further activity; organization, knowing, action and evaluation differentiate within one unfolding and are explained through connected mechanisms and their correspondence. Systems are identified through actual relations; boundaries retain relevant dependencies, with predictive sufficiency distinguished from constitutive participation.",
+      "scope_zh": "相连说明在条件范围内已完成；无假设目标继续。既有11项有限重演定理之外，持续阶段25项新定理、27项声明审计；构成可证源对应并传递至复合项，实际适用、逻辑／识别根据与普遍范围仍待证成。 直接构成论证保留已辨认关系的必要内容，排除同一架构普遍实现的额外门槛；全目标域的归属与覆盖尚未证成。本轮无新定理。 后续系统研究新增27项定理／41项空依赖声明审计，另18项继承审计：联合可接纳域中两个充分区域可以没有最小共同支持。最小性限可判定子区域，无最小支持结论不限。形成域内的有限词可行性已证；实际构成及更强普遍根据仍开放。 变化根据接续新增19项定理／21项空审计，59项继承声明原样复查：由形成与后续路径导出精确可达域及有限接续对应。发生、当前能力、普遍约束与精确范围各需相应覆盖；本地域输入已消除，实际普遍无假设根据仍未完成。 本轮一般论证澄清：实际参与及“可以发生”已有根据；相容共同实现具有一般构成约束力。必要构成条件尚不独自提供形成、转化及可能性变化的普遍充分说明。无新定理或公理；不要求所有具体应用无误，较强目标仍未完成。",
+      "scope_en": "Connected articulation complete at conditional scope; assumption-free grounding continues. Beyond 11 earlier finite-replay theorems, the sustained investigation has 25 new theorems and 27 audits. Construction can prove source links and propagate correspondence; actual applicability, logical/recognitional warrant and universal scope remain open. The direct constitutive argument preserves established relational content and rejects universal use of one architecture as an extra gate; full-scope attribution and coverage remain unestablished. No new theorem in this assessment. The subsequent systems study adds 27 theorems / 41 empty declaration audits plus 18 inherited audits: joint admissibility can allow two sufficient regions with no least support. Minimality is among decidable subregions; absence of a least support is unrestricted. Formed-domain finite-word feasibility is proved; actual constitution and stronger universal warrant remain open. The variation-warrant continuation adds 19 theorems / 21 empty audits, retaining 59 inherited audits: formation histories derive the exact attained domain and finite continuation correspondence. Occurrence, current capability, universal constraints and exact ranges need different coverage. The independent local domain input is removed; actual universal assumption-free warrant remains unfinished. The general argument now credits actual participation and permissive existence, and earns compatible joint realization as a general constitutive constraint. Necessary realization alone does not supply the common sufficient explanation of formation, transformation and changing possibilities. No new theorem or axiom; infallibility of every application is not required, and the stronger target remains unfinished.",
+      "links": [
+        {
+          "label_zh": "完整相连说明",
+          "label_en": "Connected articulation",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SHENGSHENG.md"
+        },
+        {
+          "label_zh": "证据、反审与完成范围",
+          "label_en": "Evidence, counterreview and completion",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SHENGSHENG-ARTICULATION-RECORD.md"
+        },
+        {
+          "label_zh": "本次原话",
+          "label_en": "Request and provenance",
+          "path": "sources/15-codex-theory-conversations/2026-10-08-shengsheng-articulation.md"
+        },
+        {
+          "label_zh": "当前表述与范围",
+          "label_en": "Current statement and scope",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md#begin-within-generative-unfolding"
+        },
+        {
+          "label_zh": "无假设奠基继续",
+          "label_en": "Assumption-free foundation",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md"
+        },
+        {
+          "label_zh": "实际发生、证明与反审",
+          "label_en": "Enactment, proof and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ENACTED-FOUNDATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "本次更强要求",
+          "label_en": "Renewed stronger request",
+          "path": "sources/15-codex-theory-conversations/2026-10-08-assumption-free-shengsheng-foundation.md"
+        },
+        {
+          "label_zh": "有限历史实查",
+          "label_en": "Finite-history verification",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/enacted-foundation-verification.json"
+        },
+        {
+          "label_zh": "推理与直接呈现的根据",
+          "label_en": "Inference and direct presentation",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GROUNDING-INFERENCE-AND-PRESENTATION.md"
+        },
+        {
+          "label_zh": "根据构造实查",
+          "label_en": "Ground-construction check",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/inferential-grounds-verification.json"
+        },
+        {
+          "label_zh": "相互奠基实查",
+          "label_en": "Mutual-grounding check",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/mutual-grounding-verification.json"
+        },
+        {
+          "label_zh": "依存根据实查",
+          "label_en": "Dependence-warrant check",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/dependence-warrant-verification.json"
+        },
+        {
+          "label_zh": "构成与对应实查",
+          "label_en": "Constructive correspondence check",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ground-relation-transport-verification.json"
+        },
+        {
+          "label_zh": "构成根据直接论证与反审",
+          "label_en": "Direct constitutive argument and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONSTITUTIVE-WARRANT-ARGUMENT.md"
+        },
+        {
+          "label_zh": "系统及其构成可能性",
+          "label_en": "Systems and constitutive possibilities",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-INDIVIDUATION.md"
+        },
+        {
+          "label_zh": "系统说明整合与实查",
+          "label_en": "Systems integration and checks",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "系统独立审查",
+          "label_en": "Independent systems review",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEM-INDIVIDUATION-REVIEW.md"
+        },
+        {
+          "label_zh": "关系与变化的根据",
+          "label_en": "Warrant for relationships and variation",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/SYSTEM-WARRANT.md"
+        },
+        {
+          "label_zh": "变化根据整合与实查",
+          "label_en": "Variation warrant integration and checks",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-INTEGRATION.md"
+        },
+        {
+          "label_zh": "变化根据独立审查",
+          "label_en": "Independent variation-warrant review",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/VARIATION-WARRANT-REVIEW.md"
+        },
+        {
+          "label_zh": "普遍根基直接检验",
+          "label_en": "Direct general-foundation assessment",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "一般构成论证",
+          "label_en": "General constitutive argument",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-ARGUMENT.md"
+        },
+        {
+          "label_zh": "一般根基独立反审",
+          "label_en": "Independent general-foundation review",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md"
+        },
+        {
+          "label_zh": "实际运作根据",
+          "label_en": "Actual operative warrant",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-EVIDENCE.md"
+        }
+      ]
+    }
+  },
+  "other_rows_unchanged": true,
+  "other_rows_count": 86,
+  "generated_other_rows_unchanged": true,
+  "other_rows_sha256": "3536547d3e27e3a5f6ce76d150944a89d095f98efafb885d14f2f60c18e5cfc2",
+  "table_before_sha256": "1053bba11932db613437c63c8ddd5e1ce386c71805d17d67bc6105614adcb359",
+  "table_after_sha256": "acbc5293823168eaea4847092f2a336dfd3bd90523e139de79142d3081493d24",
+  "owned_reviewed_sources": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-ARGUMENT.md": "cf637d7b9322391b826c951c618642f563c7c60453fa4ac497754d85d73c7db5",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-EVIDENCE.md": "cd02da903c4137342ca983e25568f13a33050e0eef9fff34fed53e6e335f7812",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md": "22021964edbe0f5f170be033f8b6a908a7dd64f0c0a495aec549b59842727a66",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md": "700d2fda3dd61a284d6c6c46a4e5748283428a6648c801e381f7b96de7c1f705",
+    "sources/15-codex-theory-conversations/2026-10-08-general-foundation-continuation.md": "ba2331369e0716920ab2f19743bc960505ea0947d9706b5235b16e34842ab786"
+  },
+  "owned_discovery_paths": [
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-ARGUMENT.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-EVIDENCE.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-INTEGRATION.md",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-FOUNDATION-REVIEW.md"
+  ],
+  "concurrent_changes_not_certified": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ASSUMPTION-FREE-FOUNDATION.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCIENTIFIC-COMPATIBILITY-NECESSITY.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GOAL-FORMATION-AND-REVISION.md"
+    ],
+    "removed_pages": []
+  }
+}

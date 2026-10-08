@@ -1,0 +1,15 @@
+'AcquiredPredictionRecord.trace_memory_is_replay' does not depend on any axioms
+'AcquiredPredictionRecord.equal_read_fields_equal_commands' does not depend on any axioms
+'AcquiredPredictionRecord.same_acquisition_same_next_command' does not depend on any axioms
+'AcquiredPredictionRecord.different_commands_require_different_acquisition' does not depend on any axioms
+'AcquiredPredictionRecord.write_retains_action_reference' does not depend on any axioms
+'AcquiredPredictionRecord.work_executes_readout' does not depend on any axioms
+'AcquiredPredictionRecord.work_record_decodes_actual_regime' does not depend on any axioms
+'AcquiredPredictionRecord.no_receipt_only_target_decoder' does not depend on any axioms
+'AcquiredPredictionRecord.enabled_work_outcome_iff' does not depend on any axioms
+'AcquiredPredictionRecord.acquired_record_and_executed_outcome' does not depend on any axioms
+'AcquiredPredictionRecord.same_acquisition_same_work_outcomes' does not depend on any axioms
+'AcquiredPredictionRecord.actual_corrective_prefix' does not depend on any axioms
+'AcquiredPredictionRecord.actual_write_then_corrected_work' does not depend on any axioms
+'AcquiredPredictionRecord.actual_acquisition_replay_and_effect' does not depend on any axioms
+'AcquiredPredictionRecord.actual_acquisition_has_corrected_outcome' does not depend on any axioms

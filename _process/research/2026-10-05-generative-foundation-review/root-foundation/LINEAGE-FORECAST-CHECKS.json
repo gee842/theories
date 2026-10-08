@@ -1,0 +1,41 @@
+{
+  "status": "passed_at_stated_scopes",
+  "scientific": "Executed retrospective chronological prediction; no independent biological replication, new universal proof or superiority over an equally informed conventional model.",
+  "numerical_receipt_sha256": "6e49dbf63424007ec160b0277163c34212da76a8aadc83c9680e99de2aa98975",
+  "local_links_checked": 28,
+  "local_link_errors": [],
+  "original_data_and_added_source_readings_bound": true,
+  "primary_improvement_direction_preserved_at_all_three_grids": true,
+  "bilingual_c14_render": "passed",
+  "global_table_review_pending": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/MEASURED-FEEDBACK-CORRESPONDENCE.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/THREE-CONNECTIONS-COMPLETION-AUDIT.md",
+      "theories/shengsheng-buxi-generative-existence/README.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/TUNING-CORRESPONDENCE-INTEGRATION.md"
+    ],
+    "removed_pages": []
+  },
+  "author_self_review": "Includes correlated genealogy, block-exposure alternative, prior and phase assumptions, stable-treatment failures, software pin mismatch and absence of a distinct generative probability law.",
+  "previous_goal_turn": "no progress: completion-map restatement",
+  "this_goal_turn": "progress: preserved source versions, executed and verified predictions, narrowed causal interpretation and integrated next mechanism requirement",
+  "full_goal": "active and incomplete; all six requirements retained",
+  "files_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LINEAGE-FORECAST-INTEGRATION.md": "002a9a7dbd519c2fe5f9bf648797fd1dd32ee9ec31aa613fcdab13478431a609",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/lineages/README.md": "abce8c876d06d8c98d545e16e95f3c4a8f528d0ad549cea28a29374cbf05ff24",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/lineages/FORECAST-PROTOCOL.md": "15aa9d30d28b2e628da6bfd125714c6b7b1118ce75721adb7b568b7117d7702d",
+    "sources/evolutionary-selection/doulcier-2025/README.md": "abab0a8b26015ade1c9ddd7ffebb5b171f522f1fc4c83c31fca40308f0ec4728",
+    "sources/evolutionary-selection/doulcier-2025/colgen/README.md": "8bbde17e520571278cba30e3f8a41556b44a8e102931f4b86ea5224ae85f2d30",
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/LINEAGE-FORECAST-INDEX-EDITS.json": "1bf3424e939a6f6abc833a54656c1da2751ea84a35dfcdef02c7204bed509496",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/lineages/forecast_lineages.py": "41978bc92fb0ecf14720ac01e06a519a0a5eb3e26221e2d90a6ec5aa4d039a79",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/lineages/check_forecast.py": "04f814b4061700b35239257d9b6ccf6682d7178ad8d208370a81fcf5a152a939",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/lineages/forecast-verification.json": "6e49dbf63424007ec160b0277163c34212da76a8aadc83c9680e99de2aa98975",
+    "sources/evolutionary-selection/doulcier-2025/forecast-reading.json": "bc0fd39c7839588d1c18e14a5cb129cb80ee2c4e8e49d538f4c73bda214b9f4c",
+    "sources/evolutionary-selection/doulcier-2025/colgen/manifest.json": "e870660027c7021cb1e2f8392a16529ee3b59bdd3c2fbf90c3a46d23100c685d"
+  }
+}

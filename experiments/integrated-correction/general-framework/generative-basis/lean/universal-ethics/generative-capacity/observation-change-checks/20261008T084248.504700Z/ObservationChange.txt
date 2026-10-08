@@ -1,0 +1,7 @@
+ObservationChange.lean:31:4: error: Tactic `simp` failed with a nested error:
+maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+ObservationChange.lean:160:2: error: unsolved goals
+case right
+⊢ False

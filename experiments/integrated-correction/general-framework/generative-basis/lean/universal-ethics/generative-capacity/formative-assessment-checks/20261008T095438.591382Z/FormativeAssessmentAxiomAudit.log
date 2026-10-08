@@ -1,0 +1,34 @@
+'FormativeAssessment.BackwardStable' does not depend on any axioms
+'FormativeAssessment.retrospective_sound_iff_backward_stable' does not depend on any axioms
+'FormativeAssessment.contradictory_undated_records_not_faithful' does not depend on any axioms
+'FormativeAssessment.Inquiry' does not depend on any axioms
+'FormativeAssessment.execute' does not depend on any axioms
+'FormativeAssessment.equal_successors_defeat_every_later_inquiry' depends on axioms: [propext]
+'FormativeAssessment.State' does not depend on any axioms
+'FormativeAssessment.Action' does not depend on any axioms
+'FormativeAssessment.Reading' does not depend on any axioms
+'FormativeAssessment.response' does not depend on any axioms
+'FormativeAssessment.Capacity' does not depend on any axioms
+'FormativeAssessment.step' does not depend on any axioms
+'FormativeAssessment.capacity_iff_linked' depends on axioms: [propext, Quot.sound]
+'FormativeAssessment.no_credit_no_formation' does not depend on any axioms
+'FormativeAssessment.acquired_unprompted_reading_exact' depends on axioms: [propext, Quot.sound]
+'FormativeAssessment.prompted_success_without_retained_capacity' depends on axioms: [propext, Quot.sound]
+'FormativeAssessment.supported_formation_establishes_capacity' depends on axioms: [propext, Quot.sound]
+'FormativeAssessment.formation_is_not_backward_stable' depends on axioms: [propext, Quot.sound]
+'FormativeAssessment.formation_coalesces_distinct_initial_routes' does not depend on any axioms
+'FormativeAssessment.formation_first_cannot_recover_initial_route' depends on axioms: [propext]
+'FormativeAssessment.formThenRead' does not depend on any axioms
+'FormativeAssessment.formation_then_unprompted_probe_succeeds' does not depend on any axioms
+'FormativeAssessment.one_credit_forms_but_cannot_fund_assessment' does not depend on any axioms
+'FormativeAssessment.baselineFirst' does not depend on any axioms
+'FormativeAssessment.baseline_record_recovers_initial_route' depends on axioms: [propext, Quot.sound]
+'FormativeAssessment.pairedReadings' does not depend on any axioms
+'FormativeAssessment.assistanceContrast' does not depend on any axioms
+'FormativeAssessment.acquired_contrast_tracks_missing_route' does not depend on any axioms
+'FormativeAssessment.positive_prompt_alone_does_not_identify' depends on axioms: [propext, Quot.sound]
+'FormativeAssessment.changedRecords' does not depend on any axioms
+'FormativeAssessment.truthful_change_cannot_fit_one_undated_target' depends on axioms: [propext]
+'FormativeAssessment.stagedRecords' depends on axioms: [propext]
+'FormativeAssessment.stagedTarget' does not depend on any axioms
+'FormativeAssessment.dated_records_preserve_both_true_observations' depends on axioms: [propext]

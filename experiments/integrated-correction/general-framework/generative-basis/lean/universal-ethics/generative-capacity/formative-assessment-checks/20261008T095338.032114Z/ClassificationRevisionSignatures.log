@@ -1,0 +1,56 @@
+ClassificationRevision.observed_target_exact_on_covered_menu {H : Type} (records : List (H × Bool))
+  (eligible target : H → Prop) (faithful : ClassificationRevision.Faithful records target)
+  (covered : ClassificationRevision.Covered records eligible) (a : H) (ha : eligible a) :
+  ClassificationRevision.Observed records a ↔ target a
+ClassificationRevision.acquired_classification_exact {H : Type} (records : List (H × Bool))
+  (eligible target route : H → Prop) (faithful : ClassificationRevision.Faithful records target)
+  (covered : ClassificationRevision.Covered records eligible) :
+  ClassificationRevision.AssessedRoute records eligible route ↔
+    ClassificationRevision.NecessaryRoute eligible target route
+ClassificationRevision.one_faithful_alternative_defeats_necessity {H : Type} (records : List (H × Bool))
+  (eligible target route : H → Prop) (faithful : ClassificationRevision.Faithful records target) (a : H)
+  (ha : eligible a) (observed : ClassificationRevision.Observed records a) (without : ¬route a) :
+  ¬ClassificationRevision.NecessaryRoute eligible target route
+ClassificationRevision.restriction_can_only_strengthen_necessity_with_witness {H : Type}
+  (broad narrow target route : H → Prop) (subset : PracticalJudgment.Included narrow broad)
+  (viable : ∃ a, narrow a ∧ target a) (h : ClassificationRevision.NecessaryRoute broad target route) :
+  ClassificationRevision.NecessaryRoute narrow target route
+ClassificationRevision.alternative_survives_menu_expansion {H : Type} (old new target route : H → Prop)
+  (subset : PracticalJudgment.Included old new) (witness : ∃ a, old a ∧ target a ∧ ¬route a) :
+  ∃ a, new a ∧ target a ∧ ¬route a
+ClassificationRevision.necessity_survives_supported_refinement {W H : Type} (old new : W → Prop) (eligible : H → Prop)
+  (target : W → H → Prop) (route : H → Prop) (subset : PracticalJudgment.Included new old)
+  (h : ClassificationRevision.CommonNecessity old eligible target route) :
+  ClassificationRevision.CommonNecessity new eligible target route
+ClassificationRevision.common_necessity_at_actual {W H : Type} (live : W → Prop) (eligible : H → Prop)
+  (target : W → H → Prop) (route : H → Prop) (actual : W) (truth : live actual)
+  (h : ClassificationRevision.CommonNecessity live eligible target route) :
+  ClassificationRevision.NecessaryRoute eligible (target actual) route
+ClassificationRevision.acquisition_faithful (menu : List ClassificationRevision.Arrangement) :
+  ClassificationRevision.Faithful (ClassificationRevision.acquire menu) ClassificationRevision.target
+ClassificationRevision.first_classification_scoped :
+  ClassificationRevision.AssessedRoute ClassificationRevision.firstRecords ClassificationRevision.oldMenu
+    ClassificationRevision.usesRelay
+ClassificationRevision.later_record_preserves_previous_records (r : ClassificationRevision.Arrangement × Bool) :
+  r ∈ ClassificationRevision.firstRecords → r ∈ ClassificationRevision.laterRecords
+ClassificationRevision.later_records_faithful :
+  ClassificationRevision.Faithful ClassificationRevision.laterRecords ClassificationRevision.target
+ClassificationRevision.later_records_cover_enlarged_menu :
+  ClassificationRevision.Covered ClassificationRevision.laterRecords ClassificationRevision.enlargedMenu
+ClassificationRevision.discovered_route_revises_classification :
+  ¬ClassificationRevision.AssessedRoute ClassificationRevision.laterRecords ClassificationRevision.enlargedMenu
+        ClassificationRevision.usesRelay ∧
+    ¬ClassificationRevision.NecessaryRoute ClassificationRevision.enlargedMenu ClassificationRevision.target
+        ClassificationRevision.usesRelay
+ClassificationRevision.broader_target_remains_realized_without_old_route :
+  ClassificationRevision.target ClassificationRevision.Arrangement.direct ∧
+    ¬ClassificationRevision.usesRelay ClassificationRevision.Arrangement.direct
+ClassificationRevision.withholding_available_route_creates_apparent_necessity :
+  ClassificationRevision.NecessaryRoute ClassificationRevision.oldMenu ClassificationRevision.target
+      ClassificationRevision.usesRelay ∧
+    ¬ClassificationRevision.NecessaryRoute ClassificationRevision.enlargedMenu ClassificationRevision.target
+        ClassificationRevision.usesRelay
+ClassificationRevision.false_reading_defeats_correspondence :
+  ClassificationRevision.Observed ClassificationRevision.corruptRecords ClassificationRevision.Arrangement.shut ∧
+    ¬ClassificationRevision.target ClassificationRevision.Arrangement.shut ∧
+      ¬ClassificationRevision.Faithful ClassificationRevision.corruptRecords ClassificationRevision.target

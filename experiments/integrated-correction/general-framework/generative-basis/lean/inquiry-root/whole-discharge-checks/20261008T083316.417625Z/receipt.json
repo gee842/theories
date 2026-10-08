@@ -1,0 +1,147 @@
+{
+  "checked_at": "2026-10-08T08:33:18.234968+00:00",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "checker_sha256": "1564c8c973db3e444d66ca0fd38ea2c52157ddf5836c053e7cd649674355e36f",
+  "modules": [
+    {
+      "module": "GenerativeClosure",
+      "source_sha256": "bf9a625ac70c7cd1fe78ba39ee37bd506caf319f31d7ea4059ca6a2549908bf4",
+      "audits": [
+        {
+          "declaration": "InquiryRoot.derivation_sound",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "declaration": "InquiryRoot.all_closed_descendants_necessary",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "declaration": "InquiryRoot.all_relative_descendants_necessary",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "declaration": "InquiryRoot.entire_closure_necessary_iff_basis",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "declaration": "InquiryRoot.local_justification_discharges_context",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "declaration": "InquiryRoot.no_counterexample_to_closed_descendant",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "declaration": "InquiryRoot.countermodel_excludes_derivation",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "declaration": "InquiryRoot.derived_lemma_extension_preserves_necessity",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "declaration": "InquiryRoot.extra_claim_derives_with_one_local_premise",
+          "axioms": []
+        },
+        {
+          "declaration": "InquiryRoot.extra_claim_not_necessary",
+          "axioms": []
+        },
+        {
+          "declaration": "InquiryRoot.extra_claim_not_closed_derivable",
+          "axioms": [
+            "propext"
+          ]
+        },
+        {
+          "declaration": "InquiryRoot.one_local_premise_becomes_an_implication",
+          "axioms": []
+        }
+      ]
+    },
+    {
+      "module": "CoreTreeRearticulation",
+      "source_sha256": "c6374f1fd125a2c2d0053444f55a737983dc9bd0af14e258375bb8fb7fc47825",
+      "audits": [
+        {
+          "declaration": "InquiryRoot.CoreTree.context_weaken",
+          "axioms": []
+        },
+        {
+          "declaration": "InquiryRoot.CoreTree.substitute_derived_basis",
+          "axioms": []
+        },
+        {
+          "declaration": "InquiryRoot.CoreTree.same_derivations_iff_mutual_generation",
+          "axioms": []
+        },
+        {
+          "declaration": "InquiryRoot.CoreTree.whole_tree_rearticulation",
+          "axioms": []
+        },
+        {
+          "declaration": "InquiryRoot.CoreTree.added_branch_conservative_iff",
+          "axioms": []
+        }
+      ]
+    },
+    {
+      "module": "WholeTheoryDischarge",
+      "source_sha256": "f835741c8d9efc49eabb6f4d82db0488e5f46f308fd0f1500bd8692a62590893",
+      "audits": [
+        {
+          "declaration": "InquiryRoot.WholeDischarge.emptyBasis",
+          "axioms": []
+        },
+        {
+          "declaration": "InquiryRoot.WholeDischarge.lowerBasis",
+          "axioms": []
+        },
+        {
+          "declaration": "InquiryRoot.WholeDischarge.derivation_sound_constructively",
+          "axioms": []
+        },
+        {
+          "declaration": "InquiryRoot.WholeDischarge.roots_discharged",
+          "axioms": []
+        },
+        {
+          "declaration": "InquiryRoot.WholeDischarge.whole_derivation_discharged",
+          "axioms": []
+        },
+        {
+          "declaration": "InquiryRoot.WholeDischarge.closed_whole_valid",
+          "axioms": []
+        },
+        {
+          "declaration": "InquiryRoot.WholeDischarge.self_use_is_not_uniform_discharge",
+          "axioms": []
+        }
+      ]
+    }
+  ],
+  "new_checked_theorems": 5,
+  "new_content_scope": "Four discharge results plus an axiom-free reproof of inherited soundness.",
+  "new_declaration_audits": 7,
+  "new_axioms": [],
+  "run_directory": "whole-discharge-checks/20261008T083316.417625Z",
+  "scope": "Well-founded proof substitution; no instance for the actual foundational process law.",
+  "logical_basis": "The existing calculus and Lean 4.29.1 remain the formal framework."
+}

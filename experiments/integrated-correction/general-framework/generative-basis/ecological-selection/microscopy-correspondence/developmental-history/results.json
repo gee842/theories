@@ -1,0 +1,223 @@
+{
+  "status": "passed",
+  "scope": "Exploratory image-region measurements and assignment sensitivity in one preselected field; not validated colony identity, collapse events, culture outcome or descendants.",
+  "frames": 91,
+  "pixel_scale_um": 1.4187500241611801,
+  "field_side_um": 726.4000123705242,
+  "duration_hours": 15.000017869166667,
+  "dt_seconds_min_max": [
+    599.8996199999993,
+    600.147708
+  ],
+  "acquisition_fields": {
+    "/METADATA/Tags/StageYPosition": [
+      "+000000027401.4690"
+    ],
+    "/METADATA/Tags/FocusPosition": [
+      "-000000077189.0000"
+    ],
+    "/METADATA/DataSchema/ValidBitsPerPixel": [
+      "14"
+    ],
+    "/METADATA/Tags/StageXPosition": [
+      "+000000090591.4950"
+    ]
+  },
+  "variable_metadata_fields": {
+    "/METADATA/Tags/AcquisitionTime": [
+      "2023-11-23T13:40:15.2352659Z",
+      "2023-11-23T13:50:15.3829739Z",
+      "2023-11-23T14:00:15.2982659Z",
+      "2023-11-23T14:10:15.3388677Z",
+      "2023-11-23T14:20:15.3670087Z",
+      "2023-11-23T14:30:15.3038343Z",
+      "2023-11-23T14:40:15.3118571Z",
+      "2023-11-23T14:50:15.3130938Z",
+      "2023-11-23T15:00:15.3659228Z",
+      "2023-11-23T15:10:15.3682410Z",
+      "2023-11-23T15:20:15.2893713Z",
+      "2023-11-23T15:30:15.3121393Z",
+      "2023-11-23T15:40:15.3667313Z",
+      "2023-11-23T15:50:15.3618560Z",
+      "2023-11-23T16:00:15.2899451Z",
+      "2023-11-23T16:10:15.3328422Z",
+      "2023-11-23T16:20:15.3575223Z",
+      "2023-11-23T16:30:15.3788086Z",
+      "2023-11-23T16:40:15.3442031Z",
+      "2023-11-23T16:50:15.3067769Z",
+      "2023-11-23T17:00:15.3710619Z",
+      "2023-11-23T17:10:15.3835938Z",
+      "2023-11-23T17:20:15.3817265Z",
+      "2023-11-23T17:30:15.2976685Z",
+      "2023-11-23T17:40:15.3396382Z",
+      "2023-11-23T17:50:15.3725080Z",
+      "2023-11-23T18:00:15.3855080Z",
+      "2023-11-23T18:10:15.2851280Z",
+      "2023-11-23T18:20:15.3428729Z",
+      "2023-11-23T18:30:15.2906403Z",
+      "2023-11-23T18:40:15.3479798Z",
+      "2023-11-23T18:50:15.3693495Z",
+      "2023-11-23T19:00:15.3023495Z",
+      "2023-11-23T19:10:15.3085638Z",
+      "2023-11-23T19:20:15.3470592Z",
+      "2023-11-23T19:30:15.3768869Z",
+      "2023-11-23T19:40:15.3901171Z",
+      "2023-11-23T19:50:15.3034309Z",
+      "2023-11-23T20:00:15.3097455Z",
+      "2023-11-23T20:10:15.3132752Z",
+      "2023-11-23T20:20:15.3739518Z",
+      "2023-11-23T20:30:15.2949490Z",
+      "2023-11-23T20:40:15.3348724Z",
+      "2023-11-23T20:50:15.2996686Z",
+      "2023-11-23T21:00:15.2966808Z",
+      "2023-11-23T21:10:15.2998643Z",
+      "2023-11-23T21:20:15.3815596Z",
+      "2023-11-23T21:30:15.3790354Z",
+      "2023-11-23T21:40:15.2997596Z",
+      "2023-11-23T21:50:15.3853589Z",
+      "2023-11-23T22:00:15.3340191Z",
+      "2023-11-23T22:10:15.3861218Z",
+      "2023-11-23T22:20:15.3956776Z",
+      "2023-11-23T22:30:15.3679283Z",
+      "2023-11-23T22:40:15.3766101Z",
+      "2023-11-23T22:50:15.3826290Z",
+      "2023-11-23T23:00:15.2989091Z",
+      "2023-11-23T23:10:15.3372029Z",
+      "2023-11-23T23:20:15.3863825Z",
+      "2023-11-23T23:30:15.3113654Z",
+      "2023-11-23T23:40:15.3858734Z",
+      "2023-11-23T23:50:15.3785154Z",
+      "2023-11-24T00:00:15.2985293Z",
+      "2023-11-24T00:10:15.3616189Z",
+      "2023-11-24T00:20:15.3668691Z",
+      "2023-11-24T00:30:15.3845836Z",
+      "2023-11-24T00:40:15.2989843Z",
+      "2023-11-24T00:50:15.3012694Z",
+      "2023-11-24T01:00:15.3077208Z",
+      "2023-11-24T01:10:15.3652310Z",
+      "2023-11-24T01:20:15.3625392Z",
+      "2023-11-24T01:30:15.3850581Z",
+      "2023-11-24T01:40:15.3916604Z",
+      "2023-11-24T01:50:15.3106442Z",
+      "2023-11-24T02:00:15.3005725Z",
+      "2023-11-24T02:10:15.3626042Z",
+      "2023-11-24T02:20:15.3684891Z",
+      "2023-11-24T02:30:15.3858881Z",
+      "2023-11-24T02:40:15.3445798Z",
+      "2023-11-24T02:50:15.3739059Z",
+      "2023-11-24T03:00:15.3316575Z",
+      "2023-11-24T03:10:15.3594971Z",
+      "2023-11-24T03:20:15.3755379Z",
+      "2023-11-24T03:30:15.3236692Z",
+      "2023-11-24T03:40:15.3516262Z",
+      "2023-11-24T03:50:15.3712685Z",
+      "2023-11-24T04:00:15.3793443Z",
+      "2023-11-24T04:10:15.3439257Z",
+      "2023-11-24T04:20:15.3857889Z",
+      "2023-11-24T04:30:15.2918343Z",
+      "2023-11-24T04:40:15.2995947Z"
+    ]
+  },
+  "frame_count_ranges": {
+    "4": [
+      8,
+      58
+    ],
+    "6": [
+      9,
+      56
+    ],
+    "8": [
+      9,
+      54
+    ]
+  },
+  "sensitivity": [
+    {
+      "threshold": 4,
+      "bound_um": 40,
+      "region_instances": 2555,
+      "matched_pairs": 2177,
+      "ambiguous_matched_pairs": 209,
+      "unmatched_previous": 333,
+      "unmatched_next": 370,
+      "tracks": 378,
+      "one_frame_tracks": 209,
+      "tracks_at_least_three_frames": 135,
+      "longest_track_frames": 54
+    },
+    {
+      "threshold": 6,
+      "bound_um": 40,
+      "region_instances": 2393,
+      "matched_pairs": 2074,
+      "ambiguous_matched_pairs": 179,
+      "unmatched_previous": 276,
+      "unmatched_next": 310,
+      "tracks": 319,
+      "one_frame_tracks": 150,
+      "tracks_at_least_three_frames": 140,
+      "longest_track_frames": 52
+    },
+    {
+      "threshold": 8,
+      "bound_um": 40,
+      "region_instances": 2324,
+      "matched_pairs": 1967,
+      "ambiguous_matched_pairs": 222,
+      "unmatched_previous": 316,
+      "unmatched_next": 348,
+      "tracks": 357,
+      "one_frame_tracks": 155,
+      "tracks_at_least_three_frames": 151,
+      "longest_track_frames": 49
+    },
+    {
+      "threshold": 6,
+      "bound_um": 20,
+      "region_instances": 2393,
+      "matched_pairs": 2033,
+      "ambiguous_matched_pairs": 26,
+      "unmatched_previous": 317,
+      "unmatched_next": 351,
+      "tracks": 360,
+      "one_frame_tracks": 180,
+      "tracks_at_least_three_frames": 141,
+      "longest_track_frames": 52
+    },
+    {
+      "threshold": 6,
+      "bound_um": 80,
+      "region_instances": 2393,
+      "matched_pairs": 2098,
+      "ambiguous_matched_pairs": 1066,
+      "unmatched_previous": 252,
+      "unmatched_next": 286,
+      "tracks": 295,
+      "one_frame_tracks": 131,
+      "tracks_at_least_three_frames": 139,
+      "longest_track_frames": 54
+    }
+  ],
+  "display_raw_limits": [
+    232.0,
+    2577.0
+  ],
+  "versions": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.2"
+  },
+  "script_sha256": "e7087dab2d530d099ea0789413b9c9b537bb1b2d2abe09aa7dd4e7685aa56077",
+  "acquisition_receipt_sha256": "a5bb4809332514754f220ea1380cd5c9623d97248c174c7be8218832c5e81db8",
+  "output_sha256": {
+    "regions.csv": "03e4e6a8c18cf71bacc81cf94ab4535bec5659fd7591e79af77d8b14fa6dbd49",
+    "frame-summaries.csv": "a66f7e492d512afd1f7d334df8742f2fbc7e1ae0f1614142f99d1f152de4a72f",
+    "adjacent-matches.csv": "3c5719a291ad34f1a271ac62f3563b5d28dd9e52bdf51b5fe2910c95fba203bf",
+    "raw-history.png": "d1704fde831f4327ea6e08d5988381aa8175ca1b05106d59c678af9261f8b4b8",
+    "region-history.png": "b5f8c76c47d56bbe9e0e7397a62c0cfb188c101909cd3a634652575913f298f8",
+    "measurement-sensitivity.png": "33555064ff1c696ffc7bc71f08dafb9e021afd5941a9ae7f74daf33724dda25e",
+    "endpoint-inspection.png": "f48535612858a318e3bee72a059dcf20f2f7f8b88d3da36f9f91cb2fd7bea44f",
+    "longest-diagnostic-tracks.json": "7f3cb2a584ab6ed26dc87358cca4b1c6a4bdcb368029ad2ea2439769e6534500"
+  }
+}

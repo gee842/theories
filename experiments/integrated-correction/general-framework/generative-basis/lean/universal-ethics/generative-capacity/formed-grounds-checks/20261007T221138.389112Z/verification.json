@@ -1,0 +1,18 @@
+{
+  "status": "failed",
+  "utc": "20261007T221138.389112Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "formed-grounds-checks/20261007T221138.389112Z",
+  "source_sha256": {
+    "KnowledgeCorrespondence": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+    "NormativeActivity": "15105e2caa43fb9b00f228343be16a7d729ff5a3da10c506d134d07417ae622c",
+    "StandardsBridge": "f061dbc44da5cdf11ac5ff79b3f89558c7e177b23b9f121c1048c16ed353a42a",
+    "FormedGrounds": "0ea87333852c607b90c361f23c5f2747f9542ce257f283a9ece687e6716833a4"
+  },
+  "checker_sha256": {
+    "check_formed_grounds.py": "36730f5003e4f391ac0c11b44c555e7aafd96fbf6f6960b719650fdc2884fedf",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Connected formed signal interpretation, acquired grounds, false use with retained content, and actual refutation/correction. Imported physical inspection and candidate-learning premises remain explicit. No general semantic, consciousness or universal ethical conclusion.",
+  "error": ""
+}

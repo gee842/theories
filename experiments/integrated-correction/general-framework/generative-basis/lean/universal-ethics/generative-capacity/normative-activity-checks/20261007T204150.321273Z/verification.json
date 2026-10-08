@@ -1,0 +1,16 @@
+{
+  "status": "failed",
+  "utc": "20261007T204150.321273Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "normative-activity-checks/20261007T204150.321273Z",
+  "source_sha256": {
+    "KnowledgeCorrespondence": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+    "NormativeActivity": "c3914bfc7347ced9cb9f1a888a2e674541011fe42faaac017c6b597720e696e0"
+  },
+  "checker_sha256": {
+    "check_normative_activity.py": "4df76dcc696f05e5f2b743a6ae53824555d9a48bce5665cede97b6368b02104c",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Whole local measurement histories: retained judgments without production, stale but historically sound records, closed-access indistinguishability, funded reinspection and suspension. Inherits correspondence logic; supplied event laws and meanings, not a neural or ethical grounding theorem.",
+  "error": "['KnowledgeCorrespondence']"
+}

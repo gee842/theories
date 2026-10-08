@@ -1,0 +1,522 @@
+{
+  "checked_at_utc": "2026-10-07T19:39:32.569780+00:00",
+  "status": "passed",
+  "scope": "Document links and exact source/checker/compiler/raw-output bindings to the preserved fresh Lean run. No physical timing, biological replication, continued self-maintenance, ethical authority or universal living coverage certified.",
+  "documents": [
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-PROOF.md",
+      "sha256": "5d7a654f07c067f4ecb260954940043ae0f984412fcbde8eae21befb37c54d34"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-CAPACITY-EVIDENCE.md",
+      "sha256": "248a99c6e0e75246a5e13fd97ba9d950e63330496c2119b3fa06cdef85487f58"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-REVIEW.md",
+      "sha256": "f5a262d31eb6d32f54ca5e3ee0e569457458c3f11cba06914e7aeeee69871663"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "sha256": "0e27b85a3992ed9b8f955ef329bde14950903c821055ca7a159b8b7d2b4af6c3"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md",
+      "sha256": "9532fa82612bab8667d68a3c266afc39b2b6fd3abb90a1c95faa162a109dab8b"
+    }
+  ],
+  "shared_entries": [
+    {
+      "path": "README.md",
+      "entry": "生命依存推进：[共同参与与后续活动](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md#partial-competence-and-jointly-supported-activity)新增16项 Lean 定理／32项声明审计，说明现有参与者与共同支持怎样同时约束活动和组织恢复，保留后续复用与有限耗尽。下一连接是实际占用、释放和损失所支持的物理时间范围。 / Living-dependency development: sixteen new theorems and thirty-two declaration audits connect joint participant allocation to admissible reaction histories, preserving activation, later reuse and finite supplies. Actual occupancy, release and losses over a physical horizon are the next connection.",
+      "entry_sha256": "054c9e2be408b762bb6b58025e4111f97949b989cb72a865fc8ea20e2a059e7a"
+    },
+    {
+      "path": "RESEARCH.md",
+      "entry": "**Living dependencies: joint participation and continued activity, 8 October 2026.** [The fourth integrated round](_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md#9-joint-participation-and-continuing-productive-organization) adds a generic joint-allocation and serialization result across declared reaction families. **16 new Lean theorems / 32 declaration audits pass, with 107 full-closure audits.** Joint input requirements constrain activity and rebuilding together; actual increases of available participants are credited only to later allocations, while returned catalysts remain reusable. Positive-competence histories preserve support expenditure, finite exhaustion and sequential reuse. The evidence assessment separates recruitable organization, inferred productive engagement and replacement from net growth, crediting existing resource-allocation mechanisms. Independent review preserves the untimed scope. **Next connection:** occupancy, release and losses supporting specified activity over a physical horizon. The [current formulation](theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md) retains the prior transport, recovery and origin results; the broader living goal remains active.",
+      "entry_sha256": "1be5dcade4451d613e452b043d6e9550a592e21660bd38cfbb14204f7c65e833"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "entry": "**Living dependencies, extended 8 October 2026; current directed focus.** [The current formulation](unified-2026-10-05/LIVING-DEPENDENCIES.md) connects transport, disturbed histories, organizing structures and joint participation. [The latest integrated study](../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md#9-joint-participation-and-continuing-productive-organization) adds 16 checked Lean theorems: jointly reserved inputs admit an original-reaction sequence, and actual changes in participants constrain later allocation. Partial competence, activation costs, shared support and serial reuse remain explicit. Primary evidence separates inferred engagement and net growth from recruitable capacity and replacement. Occupancy, release, physical timing and broader living coverage remain explanatory work; ethical authority is separate.",
+      "entry_sha256": "e0fe537d7dfce847f18b4815fe796a151e458b9731a9d3838981e3c9bc46e59c"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "entry": "**Living dependencies as the current directed focus, extended 8 October 2026:** [Ren selects this connection](../../../sources/15-codex-theory-conversations/2026-10-07-living-dependencies-current-goal.md). [The current derivation](LIVING-DEPENDENCIES.md) connects maintenance, disturbed histories and organizing structures to jointly supported activity. The latest 16 checked Lean theorems generalize participant allocation and admissible serialization across declared reaction families, preserving actual prior increases, retained reuse, shared inputs and finite exhaustion. Primary evidence distinguishes recruitable organization, inferred engagement and net growth. Occupancy, release and losses over a physical horizon are the next applicability connection; universal living coverage and other authorized research retain their scopes.",
+      "entry_sha256": "b133afbca26026fd0e9171662605594f52f425da2a2f38f9dd5117ac1ea01c4e"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "entry": "**Living-dependency connection advanced, extended 8 October 2026.** Under [Ren's living focus](../../../sources/15-codex-theory-conversations/2026-10-07-living-dependencies-current-goal.md), [the current account](LIVING-DEPENDENCIES.md) connects transport, organization and joint participation. The latest 16 checked Lean theorems derive allocation limits and admissible original-reaction histories, retaining activation, shared support, finite exhaustion and later reuse. Primary evidence separates recruitable capacity, productive engagement and replacement from net growth. This advances the correspondence used in situated reasoning without supplying new ethical authority. Actual occupancy and release over physical time, and broader living-domain coverage, remain explanatory work.",
+      "entry_sha256": "014cbcd87bd238ef9872bebdd46a8554e25b3fbf33808954befe2dd58870ad08"
+    }
+  ],
+  "local_links_checked": 100,
+  "local_links": [
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-PROOF.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-PROOF.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingAllocation.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-PROOF.md",
+      "target": "LIVING-ORGANIZATION-PROOF.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-PROOF.md",
+      "target": "../../../../experiments/shared-renewal-capability/formal/TypedRenewal.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-PROOF.md",
+      "target": "../../../../experiments/shared-renewal-capability/formal/CarrierTurnover.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-PROOF.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormativeCapacity.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-PROOF.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormationRoutes.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-PROOF.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReconfigurableRoutes.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-PROOF.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/ResourceContinuation.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-PROOF.md",
+      "target": "../../2026-10-05-support-and-shared-generativity/completion/RESOURCE-ALLOCATION-BASELINE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-PROOF.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-PROOF.md",
+      "target": "LIVING-CAPACITY-EVIDENCE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-PROOF.md",
+      "target": "LIVING-ORGANIZATION-EVIDENCE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-PROOF.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/check_living_allocation.py"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-PROOF.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-allocation-verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-PROOF.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-allocation-checks/20261007T193335.742143Z/"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-PROOF.md",
+      "target": "LIVING-ALLOCATION-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-CAPACITY-EVIDENCE.md",
+      "target": "LIVING-DEPENDENCY-INTEGRATION.md#8-organizing-relationships-and-actual-resumed-activity"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-CAPACITY-EVIDENCE.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-CAPACITY-EVIDENCE.md",
+      "target": "../../2026-10-05-support-and-shared-generativity/completion/RESOURCE-ALLOCATION-BASELINE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-CAPACITY-EVIDENCE.md",
+      "target": "LIVING-ORGANIZATION-EVIDENCE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-REVIEW.md",
+      "target": "LIVING-ORGANIZATION-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-REVIEW.md",
+      "target": "../../../../theories/shengsheng-buxi-generative-existence/unified-2026-10-05/NONDUAL-METHOD.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/BoundaryModels.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/conditional/ResourceContinuation.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormationRoutes.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-REVIEW.md",
+      "target": "GENERAL-CONTINUATION-PROOF.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-REVIEW.md",
+      "target": "../../2026-10-05-support-and-shared-generativity/completion/ALLOCATION-CONTROL.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-REVIEW.md",
+      "target": "../../2026-10-05-support-and-shared-generativity/completion/JOINT-CAPABILITY-BRIDGE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-REVIEW.md",
+      "target": "../../2026-10-05-support-and-shared-generativity/completion/RESOURCE-ALLOCATION-BASELINE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-REVIEW.md",
+      "target": "LIVING-ORGANIZATION-PROOF.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingAllocation.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-REVIEW.md",
+      "target": "LIVING-CAPACITY-EVIDENCE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-REVIEW.md",
+      "target": "LIVING-ALLOCATION-PROOF.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-REVIEW.md",
+      "target": "LIVING-DEPENDENCY-INTEGRATION.md#9-joint-participation-and-continuing-productive-organization"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-allocation-verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-REVIEW.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-allocation-checks/20261007T193335.742143Z/verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "../../../../sources/15-codex-theory-conversations/2026-10-07-living-dependencies-current-goal.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-DEPENDENCY-MECHANISMS.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-REALIZATION-PROOF.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-DEPENDENCY-COVERAGE-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-DEPENDENCY-PHYSICAL-SOURCES.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingRealization.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-DEPENDENCY-MECHANISMS.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-DEPENDENCY-COVERAGE-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-DEPENDENCY-PHYSICAL-SOURCES.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-DEPENDENCY-COVERAGE-REVIEW.md#4-exact-coverage-obligation"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/check_living_realization.py"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-realization-verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-DEPENDENCY-CHECKS.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-RECOVERY-PROOF.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-RECOVERY-EVIDENCE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-RECOVERY-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-RECOVERY-EVIDENCE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-recovery-verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-RECOVERY-CHECKS.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-ORGANIZATION-EVIDENCE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-ORGANIZATION-NETWORKS.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-ORGANIZATION-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-ORGANIZATION-PROOF.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-ORGANIZATION-EVIDENCE.md#1-primary-evidence-protection-tested-by-subsequent-function"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-ORGANIZATION-EVIDENCE.md#2-primary-evidence-release-of-retained-organization"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingOrganization.lean"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-ORGANIZATION-REVIEW.md#1-credit-the-inherited-mechanism-results"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-ORGANIZATION-NETWORKS.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-organization-verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-ORGANIZATION-CHECKS.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-ALLOCATION-PROOF.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-CAPACITY-EVIDENCE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "../../2026-10-05-support-and-shared-generativity/completion/RESOURCE-ALLOCATION-BASELINE.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "../../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-allocation-verification.json"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-ALLOCATION-REVIEW.md"
+    },
+    {
+      "document": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md",
+      "target": "LIVING-ALLOCATION-CHECKS.json"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-07-living-dependencies-current-goal.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md#7-extension-passive-relief-and-actual-bounded-endpoints"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md#8-organizing-relationships-and-actual-resumed-activity"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ORGANIZATION-PROOF.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ORGANIZATION-EVIDENCE.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ORGANIZATION-REVIEW.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md#9-joint-participation-and-continuing-productive-organization"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-PROOF.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-CAPACITY-EVIDENCE.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-ALLOCATION-REVIEW.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-MECHANISMS.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-COVERAGE-REVIEW.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-RECOVERY-EVIDENCE.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md",
+      "target": "../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERAL-GENERATIVE-REQUIREMENT-INTEGRATION.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md",
+      "target": "../../../RESEARCH.md"
+    },
+    {
+      "document": "README.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md#partial-competence-and-jointly-supported-activity"
+    },
+    {
+      "document": "RESEARCH.md",
+      "target": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md#9-joint-participation-and-continuing-productive-organization"
+    },
+    {
+      "document": "RESEARCH.md",
+      "target": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIVING-DEPENDENCIES.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "unified-2026-10-05/LIVING-DEPENDENCIES.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/README.md",
+      "target": "../../_process/research/2026-10-05-generative-foundation-review/root-foundation/LIVING-DEPENDENCY-INTEGRATION.md#9-joint-participation-and-continuing-productive-organization"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-07-living-dependencies-current-goal.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "target": "LIVING-DEPENDENCIES.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "../../../sources/15-codex-theory-conversations/2026-10-07-living-dependencies-current-goal.md"
+    },
+    {
+      "document": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md",
+      "target": "LIVING-DEPENDENCIES.md"
+    }
+  ],
+  "formal_receipt": {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-allocation-verification.json",
+    "sha256": "555898dab43f886d5ca3c1b13f455801646e8fae85498f42ea929e3e45398de7",
+    "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/living-allocation-checks/20261007T193335.742143Z",
+    "modules": [
+      {
+        "module": "GenerativeCore",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+        "sha256": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8"
+      },
+      {
+        "module": "LivingOrganization",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingOrganization.lean",
+        "sha256": "3e7f32f4aaca8a6cb025122d7e77dae4a1546746e38caddc89a391748a74305e"
+      },
+      {
+        "module": "LivingAllocation",
+        "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingAllocation.lean",
+        "sha256": "415a7ea68cbf68e32323fa95e641aef202ead0d3b352f51dc69a8eb17870b836"
+      }
+    ],
+    "checker_sha256": "9c9b2ab94bbb7000f88b014085f92e57ecf0ff351f7bfde34caa0c422f7d06e4",
+    "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+    "logs_verified": [
+      "GenerativeCore.txt",
+      "LivingOrganization.txt",
+      "LivingAllocation.txt",
+      "axioms.txt"
+    ],
+    "ordered_explicit_audits_verified": 107,
+    "new_theorems": 16,
+    "new_declarations": 32,
+    "new_axiom_distribution": {
+      "empty": 17,
+      "propext_only": 5,
+      "propext_and_Quot_sound": 10
+    }
+  },
+  "review_status": "Independent source, proof, evidence, integration and receipt review accepted at bounded untimed scope; canonical wording clarifications applied.",
+  "goal_status": "Active: joint allocation and ordering connection completed; physical-horizon and broader living correspondence remain.",
+  "bilingual_chain_maintenance": {
+    "checked_at_utc": "2026-10-07T19:41:35.465924+00:00",
+    "status": "passed",
+    "owned_entries": [
+      "C08",
+      "E06"
+    ],
+    "entry_count_at_check": 68,
+    "reviewed_source_versions_at_check": 126,
+    "files": [
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/results/data/generativity-chain.json",
+        "sha256": "748356b037e200356f7f217233991055535d8c2bee32915b4b6175ce8fa0f108"
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/results/GENERATIVITY-CHAIN.md",
+        "sha256": "3606a4326fe0427899d5cd6f6555fdf1c304bda7e20e27b1afdbf3d667a91ffd"
+      },
+      {
+        "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+        "sha256": "013eaf7175380f2081028a3d0597d19bb05e41a3083e56982f1a8474b3cbb487"
+      }
+    ],
+    "scope": "Paired living-allocation and empirical-correspondence updates; other entries and other owners discovery queue preserved. No additional Lean rerun or whole-repository review."
+  }
+}

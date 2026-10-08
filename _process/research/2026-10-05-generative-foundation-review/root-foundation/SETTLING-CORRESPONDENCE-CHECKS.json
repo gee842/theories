@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-08",
+  "previous_goal_turn": "progress: preserved and checked packing/census reconstruction",
+  "this_goal_turn": "progress: primary life-cycle comparator, material/drag correspondence, geometry sensitivity and checked algebra",
+  "goal": "establish The Theory of Evolution",
+  "goal_complete": false,
+  "new_theorems": 7,
+  "declaration_audits": 13,
+  "lean_toolchain": "leanprover/lean4:v4.29.1",
+  "proof_and_numerical_source_bindings": "passed",
+  "numerical_scope": "Independent integer-moment and exact pair-score computation, plus numerical bulk-density speed correspondence. Not measured hydrodynamics or author-code replication.",
+  "local_links_checked": 20,
+  "independent_agent_review": false,
+  "author_self_review": "in integration",
+  "chain_check": {
+    "status": "passed",
+    "entries": 81,
+    "reviewed_sources": 189,
+    "new_pages_for_scope_review": [],
+    "removed_pages_for_scope_review": [],
+    "output": "theories/shengsheng-buxi-generative-existence/results/GENERATIVITY-CHAIN.md"
+  },
+  "files_sha256": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/SETTLING-CORRESPONDENCE-INTEGRATION.md": "022ef7d882ffbec51d459d6bdd856243a6a1a702a99e7f2c0f99c7d90dea1b03",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/settling/README.md": "3e0c18476f160c1e8ab492fe0c02f9dd45f95b5c5ea52f62d26f04fea292f4d7",
+    "sources/evolutionary-selection/cedeno-perez-2026/README.md": "d2e508c0d699c683648df63c29e441d17b6ba351a3b1d26e446a2fc424c72d68",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/settling/analyze_settling.py": "ae2e226c6efd15746a47d8fa8279217a45bba64d74fb4b3653d710c09adf650a",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/settling/check_settling.py": "9b55083a6e15695b619b5a9e4aa52695760f6e991dc7d70bcd168840b359d002",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/settling/settling-results.json": "d7c6cd094190ddaf034468ca77f390211894b8972446b3fb8864065a1edf919a",
+    "experiments/integrated-correction/general-framework/generative-basis/ecological-selection/settling/verification.json": "64ffdfc01aab6cf05a4d995ffc5df4fd31ceed794c775789547ea3dcc543831b",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SettlingCorrespondence.lean": "2d9ee91a4dcff1d059428a2c0bf6533d1e1d38c4f367248d5f0c17394e304180",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/settling-verification/check.py": "0d506d6fee60fbb54aa669cfa7412f7cdcc364041017d6e5ab9bc8424c899702",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/settling-verification/verification.json": "8bae3e86f34fabc88997be11a897aa8b744dafb49cfceb395ce8f16f7283ff38",
+    "sources/evolutionary-selection/cedeno-perez-2026/manifest.json": "f9aa083fdc8a4c5e711a4fc595c11428fd1703b5064f071c0186ecf850f4f816"
+  },
+  "unresolved": [
+    "actual hydrodynamic radius and permeability",
+    "observed velocity/retention/descendant prediction",
+    "compatible inherited histories and material support renewal",
+    "earlier independent census-conversion discrepancy",
+    "broader recovery and demonstrated comparative advantage"
+  ],
+  "next_action": "Seek jointly measured material, geometry and settling data; compare equally informed drag/selection models and follow retained fragments into development, keeping the conventional life-cycle account as comparator."
+}

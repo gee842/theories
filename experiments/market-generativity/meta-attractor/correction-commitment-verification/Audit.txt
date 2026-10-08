@@ -1,0 +1,55 @@
+'CorrectionCommitment.passes' does not depend on any axioms
+'CorrectionCommitment.passes_iff_admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionCommitment.score' does not depend on any axioms
+'CorrectionCommitment.Best' does not depend on any axioms
+'CorrectionCommitment.Separates' does not depend on any axioms
+'CorrectionCommitment.prepared_score' depends on axioms: [propext]
+'CorrectionCommitment.entrenched_score' depends on axioms: [propext]
+'CorrectionCommitment.good_score_bounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionCommitment.bad_score_bounded' depends on axioms: [propext, Quot.sound]
+'CorrectionCommitment.separation_iff_strict_compliant_preference' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CorrectionCommitment.prepared_best_under_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionCommitment.entrenched_best_without_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionCommitment.every_best_passes_iff_separation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionCommitment.escrow_optimum_executes_previous_correction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CorrectionCommitment.every_best_is_prepared' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionCommitment.optimum_fits_joint_resource_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionCommitment.equality_retains_harmful_optimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionCommitment.strict_margin_changes_all_optima' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionCommitment.false_positives_consume_the_margin' does not depend on any axioms
+'CorrectionCommitment.caught' does not depend on any axioms
+'CorrectionCommitment.confiscated' does not depend on any axioms
+'CorrectionCommitment.refunded' does not depend on any axioms
+'CorrectionCommitment.settlement_conserves_posted_stake' depends on axioms: [propext, Quot.sound]
+'CorrectionCommitment.totalConfiscation' does not depend on any axioms
+'CorrectionCommitment.confiscation_total' depends on axioms: [propext, Quot.sound]
+'CorrectionCommitment.lottery_total_is_declared_penalty' depends on axioms: [propext, Quot.sound]
+'CorrectionCommitment.totalPay' does not depend on any axioms
+'CorrectionCommitment.total_pay_accounts_for_realized_settlements' depends on axioms: [propext, Quot.sound]
+'CorrectionCommitment.declared_score_is_sum_of_lottery_payoffs' depends on axioms: [propext, Quot.sound]
+'CorrectionCommitment.ApproxBest' does not depend on any axioms
+'CorrectionCommitment.approximate_margin_suffices' depends on axioms: [propext, Quot.sound]
+'CorrectionCommitment.approximation_can_restore_a_harmful_choice' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'CorrectionCommitment.Margin' does not depend on any axioms
+'CorrectionCommitment.larger_stake_preserves_margin' depends on axioms: [propext, Quot.sound]
+'CorrectionCommitment.implementable_stake_iff_available_capacity' depends on axioms: [propext, Quot.sound]
+'CorrectionCommitment.no_discrimination_no_deterrence' depends on axioms: [propext, Quot.sound]
+'CorrectionCommitment.separate_exit_and_stake_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionCommitment.jointly_fundable_deterrence_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CorrectionCommitment.concrete_joint_budget_boundary' depends on axioms: [propext, Quot.sound]
+'CorrectionCommitment.detection_and_recovery_are_distinct' does not depend on any axioms
+'CorrectionCommitment.coalitionGain' does not depend on any axioms
+'CorrectionCommitment.internal_transfers_do_not_deter' depends on axioms: [propext, Quot.sound]
+'CorrectionCommitment.profitable_integer_side_agreement_iff' depends on axioms: [propext, Quot.sound]
+'CorrectionCommitment.lost_custody_restores_old_incentive' depends on axioms: [propext, Quot.sound]
+'CorrectionCommitment.stronger_temptation_can_exceed_any_fixed_capacity' depends on axioms: [propext, Quot.sound]
+'CorrectionCommitment.correction_incentive_does_not_ensure_participation' depends on axioms: [propext]
+'CorrectionCommitment.abstention_beats_every_plan_in_participation_failure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

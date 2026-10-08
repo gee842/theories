@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "scope": "Independent integer-moment and exact pair-score computation, plus numerical bulk-density speed correspondence. Not measured hydrodynamics or author-code replication.",
+  "checks": {
+    "clusters": 20,
+    "coordinate_rows": 2106,
+    "pairs": 190,
+    "reversed_pairs": 33,
+    "lean_witness_source_correspondence": "passed"
+  },
+  "files_sha256": {
+    "analyze_settling.py": "ae2e226c6efd15746a47d8fa8279217a45bba64d74fb4b3653d710c09adf650a",
+    "check_settling.py": "9b55083a6e15695b619b5a9e4aa52695760f6e991dc7d70bcd168840b359d002",
+    "settling-results.json": "d7c6cd094190ddaf034468ca77f390211894b8972446b3fb8864065a1edf919a"
+  },
+  "lean_source_sha256": "2d9ee91a4dcff1d059428a2c0bf6533d1e1d38c4f367248d5f0c17394e304180",
+  "source_sha256": "3b5040aaf75205a62c2bdc7306da1d41497ade688bf159f1d58c7f56a7295e6b"
+}

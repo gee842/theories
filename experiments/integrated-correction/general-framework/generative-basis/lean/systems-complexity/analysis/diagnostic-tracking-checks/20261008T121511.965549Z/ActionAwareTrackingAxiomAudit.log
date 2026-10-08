@@ -1,0 +1,26 @@
+'ActionAwareTracking.estimate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ActionAwareTracking.error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ActionAwareTracking.residual' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ActionAwareTracking.predicted_step_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ActionAwareTracking.acquiredResponse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ActionAwareTracking.calibration_residual_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ActionAwareTracking.acquired_response_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ActionAwareTracking.acquired_response_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ActionAwareTracking.zero_probe_has_no_response_distinction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ActionAwareTracking.controlled_residual_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ActionAwareTracking.calibration_transfers_to_action' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ActionAwareTracking.command_limit_from_precision' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ActionAwareTracking.controlled_step_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ActionAwareTracking.prediction_converges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ActionAwareTracking.retained_radius_sound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ActionAwareTracking.acquired_response_tracks_motion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ActionAwareTracking.ignoring_action_retains_lag' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ActionAwareTracking.shrinking_parameter_error_can_be_amplified' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ActionAwareTracking.finite_relations_eventually_certify' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ActionAwareTracking.freshError' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ActionAwareTracking.every_fixed_aspect_learned' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ActionAwareTracking.expanding_frontier_keeps_unlearned_aspect' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

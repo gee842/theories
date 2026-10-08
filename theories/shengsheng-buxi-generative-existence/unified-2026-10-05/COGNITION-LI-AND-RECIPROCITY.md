@@ -4,6 +4,18 @@
 
 **结论：这句话在生成理论中有明确的候选位置——主体理解自己的处境，形成对他人的判断，再检验这种理解对行动提出什么约束。它可以重构为有条件的实践推论；其中“由己知人”的预测部分还能写出误差界。** 认识迁移、理由成立、形成行动习惯及实际做到，是需要连接的不同环节。
 
+## G0 and knowledge
+
+**同日后续 / Later continuation:** [知识的当前专章 / Current knowledge account](KNOWLEDGE.md)区分命题知识、解释性理解与知如何，并以形成的内容、实际整合及失败路径解释认识持有和相关错误范围；20 项 Lean 定理／34 项声明审计保持其精确对应范围。下列“把握”保留为首轮候选，不要求所有命题知识都包含解释性理解。 / The concluded investigation develops cognitive uptake and error scope while retaining the candidate's fallibility. G0 supplies ethical direction without alone identifying knowledge; the checked component is not a complete definition or universal necessity proof.
+
+**2026-10-08，新研究候选 / New exploratory proposal.** 按 [Ren 的新方向](../../../sources/15-codex-theory-conversations/2026-10-08-g0-and-knowledge.md)，从已接受的 G0“整体中的生及其继续生成具有基本正面规范意义”考察知识。工作候选是：**知识是在生成过程中形成的、有根据地把握实际关系，并能在相应范围内进入理解、推论、预期或熟练回应。** 知者与所知在同一展开中分化；共同形成不使所有痕迹、适应或成功都成为知识。“有根据地把握”仍须实质解释，不能把有用直接当作正确。
+
+**Working proposal:** knowledge is a formed, warranted grasp of actual relations, available for understanding, inference, anticipation or skilled response within its relevant scope. Knowing and what it concerns differentiate within one unfolding. Their common formation does not make every trace, adaptation or successful result knowledge; the nonaccidental connection supporting a grasp remains to be explained.
+
+G0 为发展和运用这种理解提供生成方向：理解依存、可能、损失与修复，可以参与生的实现及继续生成。认识如何形成承接已有生成解释；正确与根据是本轮公开提出的认识条件，不冒称从规范公理单独推出。幸运猜中、有益错误、真实知识的破坏性运用，以及有根据地承认未知，均须保留。下一连接是有根据的辨识如何区别于碰巧成功的调整。
+
+G0 gives a generative direction to developing and using understanding of dependencies, possibilities, losses and repair. The formation account draws on the existing theory; correctness and warrant are explicit proposed epistemic conditions, not conclusions from G0 alone. Lucky success, useful error, destructive use of accurate knowledge and warranted recognition of ignorance remain tests. The next connection concerns what separates knowing discrimination from merely successful adjustment. [Argument, inherited evidence and substantive self-review / 论证、已有证据与实质自审](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/G0-AND-KNOWLEDGE.md). No new theorem or empirical result; the following 6 October study retains its historical scope.
+
 ## 1. 认知、理论与理，不是同一层的三个名称
 
 仓库较早的《生生不息论》已经把概念、地图、模型、理论和叙事归入“像”，并用“像亦象”说明表征也在现实中发生；“理”则与象的结构相连。这是既有成稿的思想谱系，不是本次才提出，也不把归档成稿句子全部归为 Ren 的逐字原话。[出处与来源等级](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/COGNITION-THEORY-MAP.md)

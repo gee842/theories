@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "scope": "Separate raw-source Decimal/normal-equation reconstruction of every forecast, radius and grouped metric; same agent, not independent-agent review. No new physical observations or mathematical theorem.",
+  "checked_forecasts": 10930,
+  "groups": 120,
+  "model_horizon_channel_records": 90,
+  "ridge_fits": 54,
+  "max_absolute_numerical_difference": "1.147173085120463705547875498775847893627446687E-13",
+  "classification_tolerance_C": "1E-10",
+  "error_radius_near_equal_comparisons": 60,
+  "result_sha256": "a79a934f80da30c975c089e52f47fe56266b33349b5965d9b8668252fbfb8d73",
+  "checker_sha256": "1d9ee89e0f242fd56b1d0e7cdf7fa7c7932f4fad69fa30ea97c2b9188bac6571",
+  "predictions_sha256": "f3bbceeffd1774e7caa86583fca5d6f34dfe0ef757bf3467a88fb115f05e187c"
+}

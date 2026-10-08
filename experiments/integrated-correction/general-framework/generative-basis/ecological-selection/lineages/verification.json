@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "original_files_verified": 3,
+  "publisher_archive_md5_verified": true,
+  "source_genealogy_nodes": 3808,
+  "observed_parent_links_checked": 3600,
+  "backward_terminal_paths": 174,
+  "linked_assay_initial_cultures": 144,
+  "assay_rows": 222,
+  "scope": "Independent raw-XML extraction, all recorded parent links, backward terminal ancestry, and matched-date linked fates. No new biological experiment or genomic/Bayesian replication.",
+  "files_sha256": {
+    "analyze_lineages.py": "37cc5140388b1cb9c2a7f77d031154b2b3c797bc9f5ef8da2c8dd97ddb04e819",
+    "check_lineages.py": "4e5eee5dfd7c6ce9cd521eb4572efb57b79b4f5ac516c5b88da9942d8955bc2b",
+    "lineage-results.json": "766e7795d2a9cfe5a21d2d3e28e4cbcf126f359940e4720aafe82c3b83f564e9",
+    "genealogy-reading.csv": "58347362b3d8d3e462b62d50b76713f9955ebc84b0e220ade645f0f8b1d9f1dc",
+    "linked-assay-reading.csv": "b441bcc3001c8215229bf4ff6a211b42cd6d3118b2db510dc74bcc6f311dcb21",
+    "missing-reading.json": "4990de9ec0a86496185137c8897ddf7bc76d89d1702323bbb05fbc3d72c3583f",
+    "manifest.json": "102e47418fde32c6101b33a08f20f09d228986ae950294eccfa57d33828a1260"
+  }
+}

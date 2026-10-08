@@ -1,0 +1,27 @@
+{
+  "passed": false,
+  "checked_at_utc": "20261008T114246.183481Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "compiler": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ReflectiveIdentity.lean",
+  "source_sha256": "375548460ff842525e1445d6dccf08cd18087e5423fb7566603b32c2f8042d96",
+  "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/reflective-identity-checks/20261008T114246.183481Z/ReflectiveIdentity.lean",
+  "log": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/reflective-identity-checks/20261008T114246.183481Z/ReflectiveIdentity.log",
+  "log_sha256": "60019e4d404034d340f47f505dd9f0157b0ba572c6eaf87f2dacb4b18f3f25ca",
+  "checker": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/check_reflective_identity.py",
+  "checker_sha256": "edd44f3c78c8e1e453e12067528c4997be0391bfb18aa583e687dd1f2b98eadf",
+  "source_unchanged_during_check": true,
+  "exit_code": 0,
+  "new_theorems": 11,
+  "empty_axiom_audits": [
+    "Generative.ReflectiveIdentity.retain_is_same",
+    "Generative.ReflectiveIdentity.retained_ground_preserves",
+    "Generative.ReflectiveIdentity.no_ground_created",
+    "Generative.ReflectiveIdentity.reflexive_exact",
+    "Generative.ReflectiveIdentity.same_criterion",
+    "Generative.ReflectiveIdentity.compose_with_bridge",
+    "Generative.ReflectiveIdentity.curry_fixed_point",
+    "Generative.ReflectiveIdentity.no_false_curry_fixed_point"
+  ],
+  "scope": "One new module, Std only; eleven theorems audited. No ultimate grounding claim."
+}

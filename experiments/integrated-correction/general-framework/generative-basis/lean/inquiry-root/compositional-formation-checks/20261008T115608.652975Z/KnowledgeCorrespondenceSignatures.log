@@ -1,0 +1,77 @@
+Generative.KnowledgeCorrespondence.exact_is_sound.{u, v} {H : Type u} {E : Type v} {D : H → Prop} {evidence : H → E}
+  {target : H → Bool} {answer : E → Option Bool}
+  (h : Generative.KnowledgeCorrespondence.ExactOn D evidence target answer) :
+  Generative.KnowledgeCorrespondence.SoundOn D evidence target answer
+Generative.KnowledgeCorrespondence.exact_requires_resolution.{u, v} {H : Type u} {E : Type v} {D : H → Prop}
+  {evidence : H → E} {target : H → Bool} {answer : E → Option Bool}
+  (h : Generative.KnowledgeCorrespondence.ExactOn D evidence target answer) :
+  Generative.KnowledgeCorrespondence.Resolves D evidence target
+Generative.KnowledgeCorrespondence.resolution_admits_decoder.{u, v} {H : Type u} {E : Type v} {D : H → Prop}
+  {evidence : H → E} {target : H → Bool} (h : Generative.KnowledgeCorrespondence.Resolves D evidence target) :
+  Generative.KnowledgeCorrespondence.ExactOn D evidence target
+    (Generative.KnowledgeCorrespondence.decoder D evidence target)
+Generative.KnowledgeCorrespondence.exact_possible_iff_resolves.{u, v} {H : Type u} {E : Type v} (D : H → Prop)
+  (evidence : H → E) (target : H → Bool) :
+  (∃ answer, Generative.KnowledgeCorrespondence.ExactOn D evidence target answer) ↔
+    Generative.KnowledgeCorrespondence.Resolves D evidence target
+Generative.KnowledgeCorrespondence.conflicting_fibre_forces_abstention.{u, v} {H : Type u} {E : Type v} {D : H → Prop}
+  {evidence : H → E} {target : H → Bool} {answer : E → Option Bool}
+  (sound : Generative.KnowledgeCorrespondence.SoundOn D evidence target answer) {x y : H} (hx : D x) (hy : D y)
+  (same : evidence x = evidence y) (different : target x ≠ target y) : answer (evidence x) = none
+Generative.KnowledgeCorrespondence.sound_restricts_domain.{u, v} {H : Type u} {E : Type v} {D D' : H → Prop}
+  {evidence : H → E} {target : H → Bool} {answer : E → Option Bool}
+  (h : Generative.KnowledgeCorrespondence.SoundOn D evidence target answer) (sub : ∀ (x : H), D' x → D x) :
+  Generative.KnowledgeCorrespondence.SoundOn D' evidence target answer
+Generative.KnowledgeCorrespondence.refinement_preserves_resolution.{u, v} {H : Type u} {E : Type v} {F : Type}
+  {D : H → Prop} {evidence : H → E} {target : H → Bool}
+  (h : Generative.KnowledgeCorrespondence.Resolves D evidence target) (extra : H → F) :
+  Generative.KnowledgeCorrespondence.Resolves D (fun x => (evidence x, extra x)) target
+Generative.KnowledgeCorrespondence.preserved_record_preserves_exactness.{u, v} {H : Type u} {E : Type v} {M : Type}
+  {D : H → Prop} {evidence : H → E} {target : H → Bool} {answer : E → Option Bool}
+  (h : Generative.KnowledgeCorrespondence.ExactOn D evidence target answer) (retain : E → M) (read : M → E)
+  (faithful : ∀ (x : H), D x → read (retain (evidence x)) = evidence x) :
+  Generative.KnowledgeCorrespondence.ExactOn D (fun x => retain (evidence x)) target fun m => answer (read m)
+Generative.KnowledgeCorrespondence.calibrated_pair_exact :
+  Generative.KnowledgeCorrespondence.ExactOn Generative.KnowledgeCorrespondence.allHistories
+    Generative.KnowledgeCorrespondence.pairedEvidence Generative.KnowledgeCorrespondence.target
+    Generative.KnowledgeCorrespondence.decodePair
+Generative.KnowledgeCorrespondence.raw_signal_not_resolving :
+  ¬Generative.KnowledgeCorrespondence.Resolves Generative.KnowledgeCorrespondence.allHistories
+      Generative.KnowledgeCorrespondence.signal Generative.KnowledgeCorrespondence.target
+Generative.KnowledgeCorrespondence.no_exact_raw_decoder :
+  ¬∃ answer,
+      Generative.KnowledgeCorrespondence.ExactOn Generative.KnowledgeCorrespondence.allHistories
+        Generative.KnowledgeCorrespondence.signal Generative.KnowledgeCorrespondence.target answer
+Generative.KnowledgeCorrespondence.every_sound_raw_decoder_abstains (answer : Bool → Option Bool)
+  (h :
+    Generative.KnowledgeCorrespondence.SoundOn Generative.KnowledgeCorrespondence.allHistories
+      Generative.KnowledgeCorrespondence.signal Generative.KnowledgeCorrespondence.target answer)
+  (e : Bool) : answer e = none
+Generative.KnowledgeCorrespondence.direct_exact_on_normal :
+  Generative.KnowledgeCorrespondence.ExactOn Generative.KnowledgeCorrespondence.normal
+    Generative.KnowledgeCorrespondence.signal Generative.KnowledgeCorrespondence.target
+    Generative.KnowledgeCorrespondence.direct
+Generative.KnowledgeCorrespondence.direct_fails_on_expanded_domain :
+  ¬Generative.KnowledgeCorrespondence.SoundOn Generative.KnowledgeCorrespondence.allHistories
+      Generative.KnowledgeCorrespondence.signal Generative.KnowledgeCorrespondence.target
+      Generative.KnowledgeCorrespondence.direct
+Generative.KnowledgeCorrespondence.lucky_actual_correct :
+  Generative.KnowledgeCorrespondence.direct
+      (Generative.KnowledgeCorrespondence.signal { value := false, reversed := false }) =
+    some (Generative.KnowledgeCorrespondence.target { value := false, reversed := false })
+Generative.KnowledgeCorrespondence.parity_record_exact :
+  Generative.KnowledgeCorrespondence.ExactOn Generative.KnowledgeCorrespondence.allHistories
+    (fun h =>
+      (Generative.KnowledgeCorrespondence.pairedEvidence h).fst ^^
+        (Generative.KnowledgeCorrespondence.pairedEvidence h).snd)
+    Generative.KnowledgeCorrespondence.target Generative.KnowledgeCorrespondence.direct
+Generative.KnowledgeCorrespondence.double_reversal_exact :
+  Generative.KnowledgeCorrespondence.ExactOn Generative.KnowledgeCorrespondence.allHistories (fun h => !h.value)
+    Generative.KnowledgeCorrespondence.target fun b => some !b
+Generative.KnowledgeCorrespondence.true_content_trivially_safe.{u} {H : Type u} (D asserts : H → Prop) {p : Prop}
+  (hp : p) : Generative.KnowledgeCorrespondence.FixedContentSafe D p asserts
+Generative.KnowledgeCorrespondence.abstention_sound.{u, v} {H : Type u} {E : Type v} (D : H → Prop) (evidence : H → E)
+  (target : H → Bool) : Generative.KnowledgeCorrespondence.SoundOn D evidence target fun x => none
+Generative.KnowledgeCorrespondence.abstention_not_exact.{u, v} {H : Type u} {E : Type v} {D : H → Prop}
+  (evidence : H → E) (target : H → Bool) {x : H} (hx : D x) :
+  ¬Generative.KnowledgeCorrespondence.ExactOn D evidence target fun x => none

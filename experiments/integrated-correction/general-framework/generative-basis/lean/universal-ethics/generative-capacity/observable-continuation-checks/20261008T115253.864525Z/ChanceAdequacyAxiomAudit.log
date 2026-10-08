@@ -1,0 +1,14 @@
+'ChanceAdequacy.mass' does not depend on any axioms
+'ChanceAdequacy.IncludedOn' does not depend on any axioms
+'ChanceAdequacy.total' does not depend on any axioms
+'ChanceAdequacy.mass_monotone' depends on axioms: [propext, Quot.sound]
+'ChanceAdequacy.positive_added_event_strictly_increases_mass' depends on axioms: [propext, Quot.sound]
+'ChanceAdequacy.dirac_mass_positive_iff' depends on axioms: [propext, Quot.sound]
+'ChanceAdequacy.all_weights_preserve_mass_iff' depends on axioms: [propext, Quot.sound]
+'ChanceAdequacy.target' does not depend on any axioms
+'ChanceAdequacy.Fulfilled' does not depend on any axioms
+'ChanceAdequacy.fulfillment_gives_chance_floor' depends on axioms: [propext, Quot.sound]
+'ChanceAdequacy.repair' does not depend on any axioms
+'ChanceAdequacy.repair_covers_target_and_candidate' depends on axioms: [propext]
+'ChanceAdequacy.repair_adds_positive_new_protection' depends on axioms: [propext, Quot.sound]
+'ChanceAdequacy.positive_chance_can_miss_due_protection' depends on axioms: [propext]

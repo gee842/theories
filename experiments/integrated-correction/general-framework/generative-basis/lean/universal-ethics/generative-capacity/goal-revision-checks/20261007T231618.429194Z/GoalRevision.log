@@ -1,0 +1,1001 @@
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := false }
+          { participant := false, maintainer := false, learning := false, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := false }
+        { participant := false, maintainer := false, learning := false, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := false }
+          { participant := false, maintainer := false, learning := false, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := false }
+        { participant := false, maintainer := false, learning := false, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := false }
+          { participant := false, maintainer := false, learning := true, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := false }
+        { participant := false, maintainer := false, learning := true, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := false }
+          { participant := false, maintainer := false, learning := true, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := false }
+        { participant := false, maintainer := false, learning := true, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := false }
+          { participant := false, maintainer := true, learning := false, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := false }
+        { participant := false, maintainer := true, learning := false, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := false }
+          { participant := false, maintainer := true, learning := false, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := false }
+        { participant := false, maintainer := true, learning := false, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := false }
+          { participant := false, maintainer := true, learning := true, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := false }
+        { participant := false, maintainer := true, learning := true, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := false }
+          { participant := false, maintainer := true, learning := true, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := false }
+        { participant := false, maintainer := true, learning := true, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := false }
+          { participant := true, maintainer := false, learning := false, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := false }
+        { participant := true, maintainer := false, learning := false, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := false }
+          { participant := true, maintainer := false, learning := false, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := false }
+        { participant := true, maintainer := false, learning := false, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := false }
+          { participant := true, maintainer := false, learning := true, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := false }
+        { participant := true, maintainer := false, learning := true, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := false }
+          { participant := true, maintainer := false, learning := true, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := false }
+        { participant := true, maintainer := false, learning := true, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := false }
+          { participant := true, maintainer := true, learning := false, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := false }
+        { participant := true, maintainer := true, learning := false, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := false }
+          { participant := true, maintainer := true, learning := false, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := false }
+        { participant := true, maintainer := true, learning := false, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := false }
+          { participant := true, maintainer := true, learning := true, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := false }
+        { participant := true, maintainer := true, learning := true, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := false }
+          { participant := true, maintainer := true, learning := true, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := false }
+        { participant := true, maintainer := true, learning := true, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := true }
+          { participant := false, maintainer := false, learning := false, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := true }
+        { participant := false, maintainer := false, learning := false, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := true }
+          { participant := false, maintainer := false, learning := false, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := true }
+        { participant := false, maintainer := false, learning := false, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := true }
+          { participant := false, maintainer := false, learning := true, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := true }
+        { participant := false, maintainer := false, learning := true, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := true }
+          { participant := false, maintainer := false, learning := true, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := true }
+        { participant := false, maintainer := false, learning := true, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := true }
+          { participant := false, maintainer := true, learning := false, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := true }
+        { participant := false, maintainer := true, learning := false, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := true }
+          { participant := false, maintainer := true, learning := false, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := true }
+        { participant := false, maintainer := true, learning := false, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := true }
+          { participant := false, maintainer := true, learning := true, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := true }
+        { participant := false, maintainer := true, learning := true, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := true }
+          { participant := false, maintainer := true, learning := true, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := true }
+        { participant := false, maintainer := true, learning := true, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := true }
+          { participant := true, maintainer := false, learning := false, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := true }
+        { participant := true, maintainer := false, learning := false, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := true }
+          { participant := true, maintainer := false, learning := false, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := true }
+        { participant := true, maintainer := false, learning := false, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := true }
+          { participant := true, maintainer := false, learning := true, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := true }
+        { participant := true, maintainer := false, learning := true, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := true }
+          { participant := true, maintainer := false, learning := true, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := true }
+        { participant := true, maintainer := false, learning := true, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := true }
+          { participant := true, maintainer := true, learning := false, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := true }
+        { participant := true, maintainer := true, learning := false, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := true }
+          { participant := true, maintainer := true, learning := false, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := true }
+        { participant := true, maintainer := true, learning := false, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := true }
+          { participant := true, maintainer := true, learning := true, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := true }
+        { participant := true, maintainer := true, learning := true, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := false, affiliation := true }
+          { participant := true, maintainer := true, learning := true, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := false, affiliation := true }
+        { participant := true, maintainer := true, learning := true, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := false }
+          { participant := false, maintainer := false, learning := false, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := false }
+        { participant := false, maintainer := false, learning := false, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := false }
+          { participant := false, maintainer := false, learning := false, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := false }
+        { participant := false, maintainer := false, learning := false, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := false }
+          { participant := false, maintainer := false, learning := true, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := false }
+        { participant := false, maintainer := false, learning := true, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := false }
+          { participant := false, maintainer := false, learning := true, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := false }
+        { participant := false, maintainer := false, learning := true, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := false }
+          { participant := false, maintainer := true, learning := false, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := false }
+        { participant := false, maintainer := true, learning := false, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := false }
+          { participant := false, maintainer := true, learning := false, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := false }
+        { participant := false, maintainer := true, learning := false, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := false }
+          { participant := false, maintainer := true, learning := true, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := false }
+        { participant := false, maintainer := true, learning := true, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := false }
+          { participant := false, maintainer := true, learning := true, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := false }
+        { participant := false, maintainer := true, learning := true, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := false }
+          { participant := true, maintainer := false, learning := false, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := false }
+        { participant := true, maintainer := false, learning := false, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := false }
+          { participant := true, maintainer := false, learning := false, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := false }
+        { participant := true, maintainer := false, learning := false, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := false }
+          { participant := true, maintainer := false, learning := true, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := false }
+        { participant := true, maintainer := false, learning := true, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := false }
+          { participant := true, maintainer := false, learning := true, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := false }
+        { participant := true, maintainer := false, learning := true, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := false }
+          { participant := true, maintainer := true, learning := false, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := false }
+        { participant := true, maintainer := true, learning := false, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := false }
+          { participant := true, maintainer := true, learning := false, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := false }
+        { participant := true, maintainer := true, learning := false, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := false }
+          { participant := true, maintainer := true, learning := true, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := false }
+        { participant := true, maintainer := true, learning := true, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := false }
+          { participant := true, maintainer := true, learning := true, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := false }
+        { participant := true, maintainer := true, learning := true, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := true }
+          { participant := false, maintainer := false, learning := false, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := true }
+        { participant := false, maintainer := false, learning := false, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := true }
+          { participant := false, maintainer := false, learning := false, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := true }
+        { participant := false, maintainer := false, learning := false, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := true }
+          { participant := false, maintainer := false, learning := true, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := true }
+        { participant := false, maintainer := false, learning := true, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := true }
+          { participant := false, maintainer := false, learning := true, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := true }
+        { participant := false, maintainer := false, learning := true, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := true }
+          { participant := false, maintainer := true, learning := false, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := true }
+        { participant := false, maintainer := true, learning := false, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := true }
+          { participant := false, maintainer := true, learning := false, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := true }
+        { participant := false, maintainer := true, learning := false, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := true }
+          { participant := false, maintainer := true, learning := true, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := true }
+        { participant := false, maintainer := true, learning := true, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := true }
+          { participant := false, maintainer := true, learning := true, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := true }
+        { participant := false, maintainer := true, learning := true, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := true }
+          { participant := true, maintainer := false, learning := false, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := true }
+        { participant := true, maintainer := false, learning := false, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := true }
+          { participant := true, maintainer := false, learning := false, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := true }
+        { participant := true, maintainer := false, learning := false, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := true }
+          { participant := true, maintainer := false, learning := true, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := true }
+        { participant := true, maintainer := false, learning := true, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := true }
+          { participant := true, maintainer := false, learning := true, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := true }
+        { participant := true, maintainer := false, learning := true, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := true }
+          { participant := true, maintainer := true, learning := false, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := true }
+        { participant := true, maintainer := true, learning := false, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := true }
+          { participant := true, maintainer := true, learning := false, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := true }
+        { participant := true, maintainer := true, learning := false, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := true }
+          { participant := true, maintainer := true, learning := true, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := true }
+        { participant := true, maintainer := true, learning := true, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := false, learning := true, affiliation := true }
+          { participant := true, maintainer := true, learning := true, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := false, learning := true, affiliation := true }
+        { participant := true, maintainer := true, learning := true, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := false }
+          { participant := false, maintainer := false, learning := false, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := false }
+        { participant := false, maintainer := false, learning := false, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := false }
+          { participant := false, maintainer := false, learning := false, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := false }
+        { participant := false, maintainer := false, learning := false, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := false }
+          { participant := false, maintainer := false, learning := true, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := false }
+        { participant := false, maintainer := false, learning := true, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := false }
+          { participant := false, maintainer := false, learning := true, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := false }
+        { participant := false, maintainer := false, learning := true, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := false }
+          { participant := false, maintainer := true, learning := false, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := false }
+        { participant := false, maintainer := true, learning := false, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := false }
+          { participant := false, maintainer := true, learning := false, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := false }
+        { participant := false, maintainer := true, learning := false, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := false }
+          { participant := false, maintainer := true, learning := true, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := false }
+        { participant := false, maintainer := true, learning := true, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := false }
+          { participant := false, maintainer := true, learning := true, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := false }
+        { participant := false, maintainer := true, learning := true, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := false }
+          { participant := true, maintainer := false, learning := false, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := false }
+        { participant := true, maintainer := false, learning := false, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := false }
+          { participant := true, maintainer := false, learning := false, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := false }
+        { participant := true, maintainer := false, learning := false, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := false }
+          { participant := true, maintainer := false, learning := true, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := false }
+        { participant := true, maintainer := false, learning := true, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := false }
+          { participant := true, maintainer := false, learning := true, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := false }
+        { participant := true, maintainer := false, learning := true, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := false }
+          { participant := true, maintainer := true, learning := false, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := false }
+        { participant := true, maintainer := true, learning := false, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := false }
+          { participant := true, maintainer := true, learning := false, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := false }
+        { participant := true, maintainer := true, learning := false, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := false }
+          { participant := true, maintainer := true, learning := true, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := false }
+        { participant := true, maintainer := true, learning := true, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := false }
+          { participant := true, maintainer := true, learning := true, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := false }
+        { participant := true, maintainer := true, learning := true, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := true }
+          { participant := false, maintainer := false, learning := false, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := true }
+        { participant := false, maintainer := false, learning := false, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := true }
+          { participant := false, maintainer := false, learning := false, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := true }
+        { participant := false, maintainer := false, learning := false, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := true }
+          { participant := false, maintainer := false, learning := true, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := true }
+        { participant := false, maintainer := false, learning := true, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := true }
+          { participant := false, maintainer := false, learning := true, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := true }
+        { participant := false, maintainer := false, learning := true, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := true }
+          { participant := false, maintainer := true, learning := false, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := true }
+        { participant := false, maintainer := true, learning := false, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := true }
+          { participant := false, maintainer := true, learning := false, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := true }
+        { participant := false, maintainer := true, learning := false, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := true }
+          { participant := false, maintainer := true, learning := true, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := true }
+        { participant := false, maintainer := true, learning := true, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := true }
+          { participant := false, maintainer := true, learning := true, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := true }
+        { participant := false, maintainer := true, learning := true, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := true }
+          { participant := true, maintainer := false, learning := false, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := true }
+        { participant := true, maintainer := false, learning := false, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := true }
+          { participant := true, maintainer := false, learning := false, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := true }
+        { participant := true, maintainer := false, learning := false, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := true }
+          { participant := true, maintainer := false, learning := true, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := true }
+        { participant := true, maintainer := false, learning := true, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := true }
+          { participant := true, maintainer := false, learning := true, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := true }
+        { participant := true, maintainer := false, learning := true, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := true }
+          { participant := true, maintainer := true, learning := false, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := true }
+        { participant := true, maintainer := true, learning := false, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := true }
+          { participant := true, maintainer := true, learning := false, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := true }
+        { participant := true, maintainer := true, learning := false, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := true }
+          { participant := true, maintainer := true, learning := true, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := true }
+        { participant := true, maintainer := true, learning := true, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := false, affiliation := true }
+          { participant := true, maintainer := true, learning := true, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := false, affiliation := true }
+        { participant := true, maintainer := true, learning := true, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := true, affiliation := false }
+          { participant := false, maintainer := false, learning := false, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := true, affiliation := false }
+        { participant := false, maintainer := false, learning := false, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := true, affiliation := false }
+          { participant := false, maintainer := false, learning := false, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := true, affiliation := false }
+        { participant := false, maintainer := false, learning := false, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := true, affiliation := false }
+          { participant := false, maintainer := false, learning := true, affiliation := false } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := true, affiliation := false }
+        { participant := false, maintainer := false, learning := true, affiliation := false })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: failed to synthesize
+  Decidable
+    (better { participant := false, maintainer := true, learning := true, affiliation := false }
+          { participant := false, maintainer := false, learning := true, affiliation := true } =
+        true ↔
+      PracticalJudgment.Better protects gains
+        { participant := false, maintainer := true, learning := true, affiliation := false }
+        { participant := false, maintainer := false, learning := true, affiliation := true })
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+GoalRevision.lean:56:56: error: maximum number of errors (100; from option `maxErrors`) reached, exiting

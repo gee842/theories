@@ -1,0 +1,18 @@
+{
+  "status": "failed",
+  "utc": "20261007T204541.735858Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "normative-activity-checks/20261007T204541.735858Z",
+  "source_sha256": {
+    "KnowledgeCorrespondence": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076",
+    "NormativeActivity": "b59580347d45b36e7cf54bf1c1eefea9550d3570cb693f90be5476a1e0e722a2"
+  },
+  "checker_sha256": {
+    "check_normative_activity.py": "afe97454509e93b17c731cc3406efcdc701227c0c7e08964eced17a68f6ded23",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Whole local measurement histories: retained judgments without production, stale but historically sound records, closed-access indistinguishability, funded reinspection and suspension. Inherits correspondence logic; supplied event laws and meanings, not a neural or ethical grounding theorem.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "NormativeActivity.lean:257:10: error: unexpected token 'prefix'; expected '\u27e9'\nNormativeActivity.lean:257:16: error: unexpected token ','; expected ':'\nNormativeActivity.lean:258:15: error: unexpected token '++'; expected ':'\nNormativeActivity.lean:258:40: error: unexpected identifier; expected ':'\n"
+}

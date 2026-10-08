@@ -1,0 +1,15 @@
+'AggregationContext.Protection' does not depend on any axioms
+'AggregationContext.Included' does not depend on any axioms
+'AggregationContext.fixedScore' does not depend on any axioms
+'AggregationContext.filteredScore' does not depend on any axioms
+'AggregationContext.FilterPref' does not depend on any axioms
+'AggregationContext.original' does not depend on any axioms
+'AggregationContext.improved' does not depend on any axioms
+'AggregationContext.alternative' does not depend on any axioms
+'AggregationContext.population' does not depend on any axioms
+'AggregationContext.fixed_population_upgrade' does not depend on any axioms
+'AggregationContext.strongest_cutoff_reverses' does not depend on any axioms
+'AggregationContext.unfiltered_control' does not depend on any axioms
+'AggregationContext.fixed_score_preserves_inclusion' does not depend on any axioms
+'AggregationContext.no_fixed_strict_extension' does not depend on any axioms
+'AggregationContext.padding_composition_obstruction' does not depend on any axioms

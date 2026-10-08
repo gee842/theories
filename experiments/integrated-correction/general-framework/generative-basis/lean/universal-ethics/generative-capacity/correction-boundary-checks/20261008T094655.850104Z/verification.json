@@ -1,0 +1,473 @@
+{
+  "checked_at_utc": "2026-10-08T09:47:13.557254+00:00",
+  "status": "passed",
+  "lean_version": "Lean (version 4.30.0-rc2, arm64-apple-darwin24.6.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc, Release)",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "targets": [
+    "CorrectionBoundary",
+    "CorrectionRace"
+  ],
+  "snapshot": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/correction-boundary-checks/20261008T094655.850104Z",
+  "modules": [
+    {
+      "module": "CorrectionBoundary",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionBoundary.lean",
+      "source_sha256": "1d86d53e01c6780860ff1f6793e5654c161a5a3316cc43d545e1dd2c3c2955ac",
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "CorrectionBoundary.Implements"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionBoundary.CommonAction"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.selector_iff_common_action"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.indistinguishable_conflict"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.refine_observation"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.restrict_histories"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionBoundary.output"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.revealed_polarity_suffices"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.opposite_decoders_conflict"
+        },
+        {
+          "kind": "structure",
+          "name": "CorrectionBoundary.Continuation"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionBoundary.observe"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionBoundary.successful"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.no_transcript_policy"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.every_finite_transcript_has_failure"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.transcript_only_certificate_cannot_accept"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionBoundary.optionalOutput"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.abstention_no_wrong_delivery"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.universal_no_wrong_requires_abstention"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.abstention_cannot_complete"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionBoundary.successMass"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionBoundary.wrongMass"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.randomized_worst_case_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.randomized_half_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.balanced_attains_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.uniform_success_error_tradeoff"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.zero_error_zero_delivery"
+        },
+        {
+          "kind": "inductive",
+          "name": "CorrectionBoundary.Command"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionBoundary.stopped"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.common_stop_succeeds"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionBoundary.mutableStop"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionBoundary.mutable_stop_can_fail"
+        }
+      ],
+      "audits": 31,
+      "theorems": 19,
+      "nonempty_audits": {
+        "CorrectionBoundary.selector_iff_common_action": [
+          "Classical.choice"
+        ],
+        "CorrectionBoundary.abstention_no_wrong_delivery": [
+          "propext"
+        ],
+        "CorrectionBoundary.abstention_cannot_complete": [
+          "propext"
+        ],
+        "CorrectionBoundary.successMass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionBoundary.wrongMass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionBoundary.randomized_worst_case_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionBoundary.randomized_half_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionBoundary.balanced_attains_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionBoundary.uniform_success_error_tradeoff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionBoundary.zero_error_zero_delivery": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "module": "CorrectionRace",
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionRace.lean",
+      "source_sha256": "d0b1b70779f5eb1a38c9172bd1cc616d396e20753a1357390bad33d18116c333",
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "CorrectionRace.Device"
+        },
+        {
+          "kind": "structure",
+          "name": "CorrectionRace.Ticket"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRace.sample"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRace.Valid"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRace.change"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRace.reserve"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRace.deliver"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRace.release"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRace.changes"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRace.sample_valid"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRace.change_valid"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRace.reserve_valid"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRace.changes_valid"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRace.reserved_changes_freeze"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRace.deliver_only_correct"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRace.matched_reservation_delivers"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRace.protected_interval_delivers"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRace.delayed_test_remains_safe"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRace.fresh_test_then_reservation_completes"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRace.release_allows_change"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRace.initial"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRace.unprotectedUse"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRace.check_then_change_then_use_fails"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRace.stale_test_is_rejected"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRace.reservation_blocks_race"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionRace.bypass"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionRace.bypass_defeats_reservation"
+        }
+      ],
+      "audits": 27,
+      "theorems": 15,
+      "nonempty_audits": {
+        "CorrectionRace.sample_valid": [
+          "propext"
+        ],
+        "CorrectionRace.change_valid": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionRace.changes_valid": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionRace.reserved_changes_freeze": [
+          "propext"
+        ],
+        "CorrectionRace.deliver_only_correct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionRace.matched_reservation_delivers": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionRace.protected_interval_delivers": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionRace.delayed_test_remains_safe": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionRace.fresh_test_then_reservation_completes": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionRace.release_allows_change": [
+          "propext"
+        ]
+      }
+    }
+  ],
+  "total_audits": 58,
+  "new_audits": 58,
+  "new_theorems": 34,
+  "nonempty_audits": {
+    "CorrectionBoundary.selector_iff_common_action": [
+      "Classical.choice"
+    ],
+    "CorrectionBoundary.abstention_no_wrong_delivery": [
+      "propext"
+    ],
+    "CorrectionBoundary.abstention_cannot_complete": [
+      "propext"
+    ],
+    "CorrectionBoundary.successMass": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionBoundary.wrongMass": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionBoundary.randomized_worst_case_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionBoundary.randomized_half_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionBoundary.balanced_attains_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionBoundary.uniform_success_error_tradeoff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionBoundary.zero_error_zero_delivery": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionRace.sample_valid": [
+      "propext"
+    ],
+    "CorrectionRace.change_valid": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionRace.changes_valid": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionRace.reserved_changes_freeze": [
+      "propext"
+    ],
+    "CorrectionRace.deliver_only_correct": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionRace.matched_reservation_delivers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionRace.protected_interval_delivers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionRace.delayed_test_remains_safe": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CorrectionRace.fresh_test_then_reservation_completes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CorrectionRace.release_allows_change": [
+      "propext"
+    ]
+  },
+  "checker_sha256": "588a1ba063b1f26e2e1b76dc8007ed721a5ad375c92aac0da687640b1f1d8c94",
+  "commands": [
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "CorrectionBoundary.olean",
+      "CorrectionBoundary.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "-o",
+      "CorrectionRace.olean",
+      "CorrectionRace.lean"
+    ],
+    [
+      "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean",
+      "CorrectionBoundaryAudit.lean"
+    ]
+  ],
+  "log_sha256": {
+    "CorrectionBoundary.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CorrectionRace.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "axioms.txt": "b1544506ca7449874cea8da31768d155bf0648497710b14c0fdc27c433126c69"
+  },
+  "source_changed_during_run": [],
+  "direct_import_sha256": {
+    "/Users/ren/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/lib/lean/Init.olean": "12e94e3624b943d20ad898491957051ae9ba22ccbed9e6f92c35fbc711849246",
+    "/Users/ren/repos/\u751f\u751f\u4e0d\u606f/.lake/packages/mathlib/.lake/build/lib/lean/Mathlib/Tactic.olean": "0a821f2a00e8a64712b702ffd0355326515c0123c0b60917a5aaa1c4ac527911"
+  },
+  "mathlib_revision": "ea11ccc0c5c7c4c562742e918fe2e0b2814a58aa",
+  "manifest_sha256": "740eef1aae725322b99872aba59cc5c902378b992bfe9122737a454f3076321b",
+  "upstream_scope": "Pinned existing Mathlib cache; repository import closure rebuilt. Mathlib not rebuilt.",
+  "scope": "Observation-fiber feasibility, indistinguishable terminal decoder obstruction, randomized success/error bounds and local reservation protocol. Supplied histories, outcome correspondence, atomic snapshot/reservation and fully mediated changes. No general AI corrigibility, computable universal synthesis or independent novelty claim."
+}

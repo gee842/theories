@@ -1,0 +1,26 @@
+{
+  "retrieved_at_utc": "2026-10-07T22:35:08.758738+00:00",
+  "files": [
+    {
+      "file": "rstb20170255_si_001.xlsx",
+      "url": "https://ndownloader.figshare.com/files/11095832",
+      "license": "CC BY 4.0",
+      "bytes": 84163,
+      "sha256": "dd657bd16a330f0bf44a6c67f81848f1d29c23d3a8177c62e0211515fb25bcab"
+    },
+    {
+      "file": "figshare-metadata.json",
+      "url": "https://api.figshare.com/v2/articles/6144314",
+      "license": "Repository metadata",
+      "bytes": 3554,
+      "sha256": "bdf1b0f2dbeaa62bc51e1f4cd9a67e46aab7c6c063ceceb3cc75993f84f7f01c"
+    },
+    {
+      "file": "article.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6000145/fullTextXML",
+      "license": "CC BY 4.0",
+      "sha256": "e84682152dc2d51b368c2f01a113bde0c23c8772d1778cd16dfbb7f775dd88d8",
+      "bytes": 125405
+    }
+  ]
+}

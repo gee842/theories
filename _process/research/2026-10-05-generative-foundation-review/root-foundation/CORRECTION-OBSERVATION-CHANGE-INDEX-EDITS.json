@@ -1,0 +1,56 @@
+{
+  "scope": "Owned insertions and M23/F29 extension; shared-file review not refreshed",
+  "edits": [
+    {
+      "path": "RESEARCH.md",
+      "kind": "owned insertion after title",
+      "before_sha256": "88f54aa04cb16f3462dda52092a60a1f474882bcad76170fd8d9d98cf8a1223a",
+      "after_sha256": "47f107c75536320427a0afcb2e45f66b98f7675228d5c6455a803e1cef636018"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "kind": "owned insertion after title",
+      "before_sha256": "33a8dfcb4bd51783346252b48188d7440448a0963d6c9d8db996aba6a9a880d2",
+      "after_sha256": "b1f4c2cf3684a14928e1a557afcfa55ed49e239f66f9c57903f056a0ccf0be1b"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "kind": "owned next-connection replacement",
+      "before_sha256": "d2cb5eaf9e0666316d09aa1ef4ac5be1eccc0f7be96555e7dcb6bace66c5dc9a",
+      "after_sha256": "bd9a47cbce29c42818fdfbf8836969bc3ca4be420f372be5191ea0d86d8c65d2"
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATIVITY-CHAIN-INDEX-RECORD.md",
+      "kind": "owned insertion after title",
+      "before_sha256": "c5f4cb4a61781839dd7e00eee154b271d42858cd87140effaf19432a11e3f090",
+      "after_sha256": "a94dfcc094281d8c5432491d27fc4ab9110b3a4a2044fa1d68ed2258ba85fdca"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/results/data/generativity-chain.json",
+      "kind": "owned paired rows, discovery and new evidence hashes",
+      "before_sha256": "d9246cece3fee29bb8b1d69a8d4ab09631d4b8daf355f5786d50a976ed6c038c",
+      "after_sha256": "7ffe39e2d28f4dd89704b89f599362f90356f9cf22ddd578d144070144e27376"
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/results/GENERATIVITY-CHAIN.md",
+      "kind": "only two generated rows",
+      "before_sha256": "3e7f578442f343117ba57e5de68bb5c3fa4403dcdacd94d239c054d7b9f2543a",
+      "after_sha256": "3a9b0fc1c2aac84cc0ccdde0ff966d5ab76241a037d0d1dd57582cff6897567a"
+    }
+  ],
+  "paired_rows": [
+    "M23",
+    "F29"
+  ],
+  "other_entries_preserved": 88,
+  "other_rendered_lines_preserved": true,
+  "owned_fingerprints": {
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CORRECTION-OBSERVATION-CHANGE.md": "9dd83527ab2b46e6c2d6ebd45adfd7011603b52e5ba1d2f1280f68ad79aac10f",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ObservationChange.lean": "47edeb32ffa0975c65d9264856b83cdbfd934c3acb39bf694da2f66ddcce22cd",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/check_observation_change.py": "116e82cbaa1e9c70b5ef20148bf3183fd05840eb88d2f791075d94cebe640ba8",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/observation-change-verification.json": "ebd761c0d06dc28620428227c68e3de0a9f96010d372b826529993866dd87667",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/compare_observation_change.py": "f2d34d2855982b281f702a0e7cca61d7dc88a619ceae02f5244f07ea0b533206",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/observation-change-model-checks.json": "7acb25c067f69d3f62f15c098f735519083d06df864cf6a554b3920c8913809d",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/observation-change-records.jsonl": "7ac5f98f3642e8976129b47bf76f27ced22b883bf85c0a8ab40e25af6fe4479f"
+  }
+}

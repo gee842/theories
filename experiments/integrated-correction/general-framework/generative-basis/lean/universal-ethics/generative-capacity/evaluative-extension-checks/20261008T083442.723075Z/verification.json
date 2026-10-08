@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "utc": "20261008T083442.723075Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "evaluative-extension-checks/20261008T083442.723075Z",
+  "source_sha256": {
+    "PracticalJudgment": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+    "ConcernExtension": "ee8e0fb64357fe9d428288aac09bb27c4f046e6ae55f50cdc88e2a445fcefc3f",
+    "EvaluativeExtension": "9e522d447265fb47fa520243b4a046f6935cfc359403320781cd57442652531f"
+  },
+  "checker_sha256": {
+    "check_evaluative_extension.py": "6d76afc899c80d9d569991c334ed74f8c36469cb58287b2cd52b3776bf5196eb",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Extension of protected and secondary claim descriptions under the inherited explicit J1/J2 comparator. General sufficient transport, exact equal-extension correspondence, new-claim defeat, a formed-dependence reversal, stage-blind/incomparability controls, and separation of common strict comparison from undefeatedness across live applications. Shared content-extension facts are imported from ConcernExtension. Actual formation, basic standing, feasibility and normative commitments remain premises; no universal uncomputability, autonomous moral discovery or empirical claim.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "EvaluativeExtension.lean:212:9: error: unknown tactic\nEvaluativeExtension.lean:212:6: error: unsolved goals\ncase mp.inl.left\nw : Bool\na b : Response\nh : StrictIncluded (routeProtection w b) (routeProtection w a)\n\u22a2 routeProtection w a ()\nEvaluativeExtension.lean:211:4: error: unsolved goals\ncase mp.inl.right\nw : Bool\na b : Response\nh : StrictIncluded (routeProtection w b) (routeProtection w a)\n\u22a2 \u00acrouteProtection w b ()\nEvaluativeExtension.lean:209:2: error: unsolved goals\ncase mp.inr\nw : Bool\na b : Response\nh :\n  Included (routeProtection w b) (routeProtection w a) \u2227\n    Included (routeProtection w a) (routeProtection w b) \u2227 StrictIncluded (routeGain w b) (routeGain w a)\n\u22a2 routeProtection w a () \u2227 \u00acrouteProtection w b ()\nEvaluativeExtension.lean:207:59: error: unsolved goals\ncase mpr\nw : Bool\na b : Response\n\u22a2 routeProtection w a () \u2227 \u00acrouteProtection w b () \u2192 Better (routeProtection w) (routeGain w) a b\nEvaluativeExtension.lean:240:3: error: unexpected token 'omit'; expected '_' or identifier\nEvaluativeExtension.lean:240:2: error: Missing alternative name: Expected `omit`\nEvaluativeExtension.lean:233:2: error: Alternative `omit` has not been provided\nEvaluativeExtension.lean:240:8: error: unexpected token '=>'; expected '[' or identifier\nEvaluativeExtension.lean:247:12: error: Type mismatch\n  (h true True.intro).right Response.right True.intro\nhas type\n  \u00acBetter (routeProtection true) (routeGain true) Response.right Response.left\nbut is expected to have type\n  False\nEvaluativeExtension.lean:246:2: error: Alternative `right` has not been provided\nEvaluativeExtension.lean:246:2: error: Alternative `omit` has not been provided\nEvaluativeExtension.lean:248:6: error: unexpected token '('; expected command\nEvaluativeExtension.lean:251:8: error: unexpected token '=>'; expected '[' or identifier\n"
+}

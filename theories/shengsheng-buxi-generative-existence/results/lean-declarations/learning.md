@@ -1277,7 +1277,7 @@ Imports: `SystemsOrganization`, `FeedbackDynamics`, `SymbolicDynamics`
 <details>
 <summary>SystemsOrganization.lean — 41 explicit declarations</summary>
 
-[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SystemsOrganization.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SYSTEMS-COMPLEXITY-LEAN-REVIEW.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SystemsOrganization.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/PLURAL-CORRECTION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
 
 `experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/SystemsOrganization.lean`
 
@@ -1334,6 +1334,47 @@ Imports: `GenerativeCore`
 
 </details>
 
+<a id="module-c1e8bbb07357"></a>
+
+<details>
+<summary>ActionAwareTracking.lean — 22 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ActionAwareTracking.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ActionAwareTracking.lean`
+
+Imports: `SituatedTracking`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [ActionAwareTracking.predicted_step_bound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ActionAwareTracking.lean#L23) | 23 |
+| [ActionAwareTracking.calibration_residual_bound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ActionAwareTracking.lean#L44) | 44 |
+| [ActionAwareTracking.acquired_response_bound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ActionAwareTracking.lean#L60) | 60 |
+| [ActionAwareTracking.acquired_response_exact](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ActionAwareTracking.lean#L76) | 76 |
+| [ActionAwareTracking.zero_probe_has_no_response_distinction](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ActionAwareTracking.lean#L82) | 82 |
+| [ActionAwareTracking.controlled_residual_bound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ActionAwareTracking.lean#L85) | 85 |
+| [ActionAwareTracking.calibration_transfers_to_action](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ActionAwareTracking.lean#L98) | 98 |
+| [ActionAwareTracking.command_limit_from_precision](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ActionAwareTracking.lean#L116) | 116 |
+| [ActionAwareTracking.controlled_step_bound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ActionAwareTracking.lean#L121) | 121 |
+| [ActionAwareTracking.prediction_converges](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ActionAwareTracking.lean#L139) | 139 |
+| [ActionAwareTracking.retained_radius_sound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ActionAwareTracking.lean#L146) | 146 |
+| [ActionAwareTracking.acquired_response_tracks_motion](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ActionAwareTracking.lean#L161) | 161 |
+| [ActionAwareTracking.ignoring_action_retains_lag](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ActionAwareTracking.lean#L170) | 170 |
+| [ActionAwareTracking.shrinking_parameter_error_can_be_amplified](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ActionAwareTracking.lean#L178) | 178 |
+| [ActionAwareTracking.finite_relations_eventually_certify](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ActionAwareTracking.lean#L189) | 189 |
+| [ActionAwareTracking.every_fixed_aspect_learned](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ActionAwareTracking.lean#L204) | 204 |
+| [ActionAwareTracking.expanding_frontier_keeps_unlearned_aspect](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ActionAwareTracking.lean#L210) | 210 |
+
+定义与类型 / Definitions and types:
+
+- `def` [ActionAwareTracking.estimate](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ActionAwareTracking.lean#L13) (L13)
+- `def` [ActionAwareTracking.error](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ActionAwareTracking.lean#L17) (L17)
+- `def` [ActionAwareTracking.residual](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ActionAwareTracking.lean#L20) (L20)
+- `def` [ActionAwareTracking.acquiredResponse](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ActionAwareTracking.lean#L41) (L41)
+- `def` [ActionAwareTracking.freshError](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ActionAwareTracking.lean#L202) (L202)
+
+</details>
+
 <a id="module-c3234339b888"></a>
 
 <details>
@@ -1351,6 +1392,546 @@ Imports: `RealFeedback`
 
 - `def` [SystemsComplexity.AdaptiveCore.trajectory](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/AdaptiveCore.lean#L10) (L10)
 - `def` [SystemsComplexity.AdaptiveCore.envelope](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/AdaptiveCore.lean#L14) (L14)
+
+</details>
+
+<a id="module-751a219a4f11"></a>
+
+<details>
+<summary>ChangingDependency.lean — 36 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean) · [理论 / Theory](../../unified-2026-10-05/RELATIONS-ACROSS-SCALES.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANGING-DEPENDENCY-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean`
+
+Imports: `InquiryChoice`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [ChangingDependency.forecast_error](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L12) | 12 |
+| [ChangingDependency.cumulative_error](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L22) | 22 |
+| [ChangingDependency.acquired_error_after_change](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L30) | 30 |
+| [ChangingDependency.variable_two_stage_response](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L40) | 40 |
+| [ChangingDependency.certificate_transfers](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L51) | 51 |
+| [ChangingDependency.certificate_iff_interval](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L58) | 58 |
+| [ChangingDependency.uncertainty_requires_tolerance](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L70) | 70 |
+| [ChangingDependency.smaller_error_preserves_certificate](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L75) | 75 |
+| [ChangingDependency.read_obtains_condition_and_loss](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L114) | 114 |
+| [ChangingDependency.run_is_core_trace](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L120) | 120 |
+| [ChangingDependency.changed_dependency_keeps_timestamp](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L124) | 124 |
+| [ChangingDependency.run_work_conserved](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L129) | 129 |
+| [ChangingDependency.current_stamp_can_have_wrong_forecast](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L143) | 143 |
+| [ChangingDependency.stale_response_misses_target](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L149) | 149 |
+| [ChangingDependency.bounded_response_meets_target](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L156) | 156 |
+| [ChangingDependency.bounded_response_covers_variable_losses](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L163) | 163 |
+| [ChangingDependency.refresh_meets_same_horizon](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L169) | 169 |
+| [ChangingDependency.refresh_is_useful_when_loss_stays_low](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L176) | 176 |
+| [ChangingDependency.changed_reading_can_still_meet_target](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L183) | 183 |
+| [ChangingDependency.unbounded_change_defeats_refresh](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L191) | 191 |
+| [ChangingDependency.narrow_tolerance_defeats_old_bound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L198) | 198 |
+| [ChangingDependency.within_bound_change_defeats_exact_refresh](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L204) | 204 |
+| [ChangingDependency.error_growth_budget](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L213) | 213 |
+| [ChangingDependency.bounded_refresh_covers_variable_losses](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L221) | 221 |
+| [ChangingDependency.bounded_refresh_repairs_actual_failure](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L230) | 230 |
+
+定义与类型 / Definitions and types:
+
+- `def` [ChangingDependency.certified](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L48) (L48)
+- `def` [ChangingDependency.readBody](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L83) (L83)
+- `def` [ChangingDependency.retainedCondition](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L87) (L87)
+- `def` [ChangingDependency.selectedDose](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L89) (L89)
+- `inductive` [ChangingDependency.Event](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L92) (L92)
+- `def` [ChangingDependency.advance](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L95) (L95)
+- `def` [ChangingDependency.run](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L106) (L106)
+- `def` [ChangingDependency.start](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L108) (L108)
+- `def` [ChangingDependency.staleRoute](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L110) (L110)
+- `def` [ChangingDependency.boundedRoute](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L111) (L111)
+- `def` [ChangingDependency.refreshRoute](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean#L112) (L112)
+
+文本中有 25 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 25 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-fa7b94dd1994"></a>
+
+<details>
+<summary>ContinuationAdequacy.lean — 29 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean) · [理论 / Theory](../../unified-2026-10-05/RELATIONS-ACROSS-SCALES.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-ADEQUACY-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean`
+
+Imports: `Mathlib.Tactic`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [ContinuationAdequacy.actual_in_post](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L23) | 23 |
+| [ContinuationAdequacy.post_mono](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L27) | 27 |
+| [ContinuationAdequacy.viable_mono](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L33) | 33 |
+| [ContinuationAdequacy.viable_now](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L45) | 45 |
+| [ContinuationAdequacy.viable_shorter](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L52) | 52 |
+| [ContinuationAdequacy.viable_empty](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L62) | 62 |
+| [ContinuationAdequacy.observation_refinement](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L77) | 77 |
+| [ContinuationAdequacy.viable_iff_plan](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L104) | 104 |
+| [ContinuationAdequacy.viable_successor](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L127) | 127 |
+| [ContinuationAdequacy.maintained_class](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L136) | 136 |
+| [ContinuationAdequacy.shared_first_step](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L168) | 168 |
+| [ContinuationAdequacy.blind_second_step_fails](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L171) | 171 |
+| [ContinuationAdequacy.sensing_repairs_two_steps](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L174) | 174 |
+| [ContinuationAdequacy.settling_repairs_blind_two_steps](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L180) | 180 |
+
+定义与类型 / Definitions and types:
+
+- `def` [ContinuationAdequacy.post](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L9) (L9)
+- `def` [ContinuationAdequacy.usable](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L13) (L13)
+- `def` [ContinuationAdequacy.viable](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L17) (L17)
+- `inductive` [ContinuationAdequacy.Plan](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L93) (L93)
+- `def` [ContinuationAdequacy.works](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L97) (L97)
+- `inductive` [ContinuationAdequacy.Stage](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L150) (L150)
+- `abbrev` [ContinuationAdequacy.State](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L151) (L151)
+- `def` [ContinuationAdequacy.good](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L152) (L152)
+- `def` [ContinuationAdequacy.allowed](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L153) (L153)
+- `def` [ContinuationAdequacy.advance](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L154) (L154)
+- `def` [ContinuationAdequacy.step](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L160) (L160)
+- `def` [ContinuationAdequacy.seeds](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L161) (L161)
+- `def` [ContinuationAdequacy.blind](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L162) (L162)
+- `def` [ContinuationAdequacy.sensed](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L163) (L163)
+- `def` [ContinuationAdequacy.settle](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean#L178) (L178)
+
+文本中有 14 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 14 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-6883a5aecb08"></a>
+
+<details>
+<summary>EmbodiedChoiceScales.lean — 26 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EMBODIED-SCALES-PROOF.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean`
+
+Imports: `RelationsAcrossScales`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [EmbodiedChoiceScales.controlled_one_step](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean#L13) | 13 |
+| [EmbodiedChoiceScales.closed_loop_horizon](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean#L25) | 25 |
+| [EmbodiedChoiceScales.equal_actions_remove_action_error](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean#L55) | 55 |
+| [EmbodiedChoiceScales.upper_margin_preserves_choice](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean#L60) | 60 |
+| [EmbodiedChoiceScales.lower_margin_preserves_choice](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean#L69) | 69 |
+| [EmbodiedChoiceScales.arbitrarily_small_score_error_changes_effect](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean#L82) | 82 |
+| [computed_history_is_actual](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean#L135) | 135 |
+| [event_conserves_shared_support](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean#L141) | 141 |
+| [history_conserves_shared_support](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean#L158) | 158 |
+| [acquired_signal_selects_effective_activity](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean#L167) | 167 |
+| [sensory_intervention_changes_choice_and_effect](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean#L172) | 172 |
+| [bodily_amount_does_not_determine_choice](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean#L179) | 179 |
+| [intervening_participation_defeats_retained_plan](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean#L185) | 185 |
+| [response_does_not_create_unavailable_support](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean#L192) | 192 |
+
+定义与类型 / Definitions and types:
+
+- `def` [EmbodiedChoiceScales.choose](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean#L58) (L58)
+- `def` [EmbodiedChoiceScales.effect](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean#L78) (L78)
+- `structure` [Episode](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean#L99) (L99)
+- `inductive` [Activity](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean#L107) (L107)
+- `def` [signal](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean#L113) (L113)
+- `def` [choice](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean#L114) (L114)
+- `def` [total](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean#L115) (L115)
+- `def` [evolve](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean#L117) (L117)
+- `def` [process](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean#L128) (L128)
+- `def` [history](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean#L131) (L131)
+- `def` [start](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean#L164) (L164)
+- `def` [clamped](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EmbodiedChoiceScales.lean#L165) (L165)
+
+文本中有 14 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 14 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-820a29505426"></a>
+
+<details>
+<summary>EvidenceThroughChange.lean — 28 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean) · [理论 / Theory](../../unified-2026-10-05/RELATIONS-ACROSS-SCALES.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVIDENCE-THROUGH-CHANGE-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean`
+
+Imports: `SeededContinuation`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [EvidenceThroughChange.actual_remains_covered](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean#L14) | 14 |
+| [EvidenceThroughChange.certificate_iff_transport](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean#L17) | 17 |
+| [EvidenceThroughChange.transport_composes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean#L23) | 23 |
+| [EvidenceThroughChange.smaller_envelope_retains_certificate](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean#L30) | 30 |
+| [EvidenceThroughChange.stable_certificate](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean#L40) | 40 |
+| [EvidenceThroughChange.delayed_seeded_plan](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean#L49) | 49 |
+| [EvidenceThroughChange.truthful_read_can_expire](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean#L93) | 93 |
+| [EvidenceThroughChange.no_exact_record_only_decision](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean#L98) | 98 |
+| [EvidenceThroughChange.stale_evidence_not_certificate](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean#L112) | 112 |
+| [EvidenceThroughChange.reserve_establishes_protection](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean#L118) | 118 |
+| [EvidenceThroughChange.admitted_change_preserves_protection](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean#L123) | 123 |
+| [EvidenceThroughChange.reservation_survives_finite_changes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean#L130) | 130 |
+| [EvidenceThroughChange.actual_reservation_exists](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean#L137) | 137 |
+| [EvidenceThroughChange.duplicate_reservation_blocked](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean#L140) | 140 |
+| [EvidenceThroughChange.unmediated_loss_breaks_protection](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean#L148) | 148 |
+
+定义与类型 / Definitions and types:
+
+- `def` [EvidenceThroughChange.transport](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean#L8) (L8)
+- `def` [EvidenceThroughChange.certifies](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean#L11) (L11)
+- `inductive` [EvidenceThroughChange.Reach](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean#L36) (L36)
+- `structure` [EvidenceThroughChange.State](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean#L73) (L73)
+- `def` [EvidenceThroughChange.readNow](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean#L79) (L79)
+- `def` [EvidenceThroughChange.usableNow](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean#L80) (L80)
+- `def` [EvidenceThroughChange.takeElsewhere](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean#L82) (L82)
+- `def` [EvidenceThroughChange.reserve](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean#L84) (L84)
+- `def` [EvidenceThroughChange.admittedChange](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean#L86) (L86)
+- `def` [EvidenceThroughChange.reservedSupport](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean#L87) (L87)
+- `def` [EvidenceThroughChange.start](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean#L89) (L89)
+- `def` [EvidenceThroughChange.checked](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean#L90) (L90)
+- `def` [EvidenceThroughChange.lost](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/EvidenceThroughChange.lean#L91) (L91)
+
+文本中有 15 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 15 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-9889c88e9097"></a>
+
+<details>
+<summary>FeedbackMemory.lean — 21 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/FeedbackMemory.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/FEEDBACK-MEMORY-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/FeedbackMemory.lean`
+
+Imports: `MeasuredFeedback`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [FeedbackMemory.raw_error](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/FeedbackMemory.lean#L19) | 19 |
+| [FeedbackMemory.increment_error](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/FeedbackMemory.lean#L32) | 32 |
+| [FeedbackMemory.retained_interior_error](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/FeedbackMemory.lean#L39) | 39 |
+| [FeedbackMemory.retained_mixed_error](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/FeedbackMemory.lean#L50) | 50 |
+| [FeedbackMemory.retained_margin_error](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/FeedbackMemory.lean#L73) | 73 |
+| [FeedbackMemory.memory_horizon](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/FeedbackMemory.lean#L106) | 106 |
+| [FeedbackMemory.command_difference_at_most_100](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/FeedbackMemory.lean#L125) | 125 |
+| [FeedbackMemory.command_horizon](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/FeedbackMemory.lean#L131) | 131 |
+| [FeedbackMemory.controller_plant_horizon](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/FeedbackMemory.lean#L144) | 144 |
+| [FeedbackMemory.saturation_boundary_hidden_memory](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/FeedbackMemory.lean#L173) | 173 |
+| [FeedbackMemory.movement_error](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/FeedbackMemory.lean#L204) | 204 |
+| [FeedbackMemory.exposure_error](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/FeedbackMemory.lean#L227) | 227 |
+| [FeedbackMemory.separated_costs](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/FeedbackMemory.lean#L245) | 245 |
+
+定义与类型 / Definitions and types:
+
+- `def` [FeedbackMemory.outside](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/FeedbackMemory.lean#L11) (L11)
+- `def` [FeedbackMemory.inside](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/FeedbackMemory.lean#L13) (L13)
+- `def` [FeedbackMemory.allowance](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/FeedbackMemory.lean#L15) (L15)
+- `def` [FeedbackMemory.memoryRadius](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/FeedbackMemory.lean#L96) (L96)
+- `def` [FeedbackMemory.commandRadius](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/FeedbackMemory.lean#L122) (L122)
+- `def` [FeedbackMemory.movement](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/FeedbackMemory.lean#L196) (L196)
+- `def` [FeedbackMemory.movementRadius](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/FeedbackMemory.lean#L200) (L200)
+- `def` [FeedbackMemory.exposure](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/FeedbackMemory.lean#L223) (L223)
+
+</details>
+
+<a id="module-93cab8a6e1fc"></a>
+
+<details>
+<summary>InquiryChoice.lean — 42 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean) · [理论 / Theory](../../unified-2026-10-05/RELATIONS-ACROSS-SCALES.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CHOICE-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean`
+
+Imports: `ScaleRevision`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [InquiryChoice.robust_iff_interval](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L20) | 20 |
+| [InquiryChoice.robust_exists_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L39) | 39 |
+| [InquiryChoice.minimal_robust_dose](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L50) | 50 |
+| [InquiryChoice.indistinguishable_conflict](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L56) | 56 |
+| [InquiryChoice.observed_class_policy_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L65) | 65 |
+| [InquiryChoice.waiting_floor](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L78) | 78 |
+| [InquiryChoice.early_support_dominates_before_delivery](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L84) | 84 |
+| [InquiryChoice.same_horizon_same_dose](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L87) | 87 |
+| [InquiryChoice.run_is_core_trace](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L121) | 121 |
+| [InquiryChoice.deliver_work_conserved](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L126) | 126 |
+| [InquiryChoice.run_work_conserved](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L131) | 131 |
+| [InquiryChoice.two_losses_have_no_common_immediate_dose](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L142) | 142 |
+| [InquiryChoice.low_loss_inquiry](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L152) | 152 |
+| [InquiryChoice.high_loss_inquiry](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L160) | 160 |
+| [InquiryChoice.shared_evidence_selects_inquiry](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L168) | 168 |
+| [InquiryChoice.wide_tolerance_selects_immediate](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L172) | 172 |
+| [InquiryChoice.immediate_is_robust_with_wider_tolerance](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L176) | 176 |
+| [InquiryChoice.immediate_uses_less_work](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L180) | 180 |
+| [InquiryChoice.inquiry_can_cross_floor_before_response](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L186) | 186 |
+| [InquiryChoice.early_response_keeps_floor](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L192) | 192 |
+| [InquiryChoice.selector_rejects_unsafe_inquiry](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L198) | 198 |
+| [InquiryChoice.selector_rejects_unfunded_inquiry](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L201) | 201 |
+| [InquiryChoice.selected_inquiry_can_lack_support](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L206) | 206 |
+| [InquiryChoice.adaptive_dose_admissible](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L216) | 216 |
+| [InquiryChoice.guarded_inquiry_has_feasible_correction](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L247) | 247 |
+| [InquiryChoice.guarded_immediate_is_robust](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L264) | 264 |
+| [InquiryChoice.repaired_selection_retains_useful_inquiry](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L278) | 278 |
+| [InquiryChoice.repaired_selection_rejects_insufficient_support](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L282) | 282 |
+
+定义与类型 / Definitions and types:
+
+- `def` [InquiryChoice.terminal](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L10) (L10)
+- `def` [InquiryChoice.admissible](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L11) (L11)
+- `def` [InquiryChoice.robust](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L14) (L14)
+- `def` [InquiryChoice.leastDose](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L17) (L17)
+- `def` [InquiryChoice.mostDose](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L18) (L18)
+- `def` [InquiryChoice.deliverBody](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L91) (L91)
+- `inductive` [InquiryChoice.Event](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L96) (L96)
+- `def` [InquiryChoice.advance](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L99) (L99)
+- `def` [InquiryChoice.run](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L106) (L106)
+- `def` [InquiryChoice.start](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L109) (L109)
+- `def` [InquiryChoice.immediate](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L113) (L113)
+- `def` [InquiryChoice.inquire](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L114) (L114)
+- `def` [InquiryChoice.chooseRoute](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L116) (L116)
+- `def` [InquiryChoice.guardedRoute](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean#L238) (L238)
+
+文本中有 28 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 28 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-3dd125e34817"></a>
+
+<details>
+<summary>InquiryJudgment.lean — 48 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean) · [理论 / Theory](../../unified-2026-10-05/PROVED-CONNECTIONS.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-JUDGMENT-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean`
+
+Imports: `ScaleRevision`, `PracticalJudgment`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [InquiryJudgment.response_charge_succeeds](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L16) | 16 |
+| [InquiryJudgment.funded_calibrated_response](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L23) | 23 |
+| [InquiryJudgment.robust_execution_at_actual](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L40) | 40 |
+| [InquiryJudgment.outcome_is_trace](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L85) | 85 |
+| [InquiryJudgment.all_work_accounted](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L90) | 90 |
+| [InquiryJudgment.continuation_table](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L95) | 95 |
+| [InquiryJudgment.companion_retained](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L104) | 104 |
+| [InquiryJudgment.fixed_protects](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L112) | 112 |
+| [InquiryJudgment.robust_continuation_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L118) | 118 |
+| [InquiryJudgment.fixed_dominates_failures](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L129) | 129 |
+| [InquiryJudgment.fixed_is_chosen](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L136) | 136 |
+| [InquiryJudgment.chosen_iff_fixed](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L145) | 145 |
+| [InquiryJudgment.chosen_has_protecting_trace](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L155) | 155 |
+| [InquiryJudgment.collective_response_required](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L166) | 166 |
+| [InquiryJudgment.pointwise_success_not_common_choice](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L174) | 174 |
+| [InquiryJudgment.protection_under_narrowing](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L186) | 186 |
+| [InquiryJudgment.accurate_measurement_protects](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L190) | 190 |
+| [InquiryJudgment.false_narrowing_loses_actual_claim](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L198) | 198 |
+| [InquiryJudgment.accurate_measured_is_chosen](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L203) | 203 |
+| [InquiryJudgment.broader_cases_change_judgment](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L212) | 212 |
+| [InquiryJudgment.optional_supply_loss_is_real](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L217) | 217 |
+| [InquiryJudgment.underfunded_menu_has_no_success](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L228) | 228 |
+| [InquiryJudgment.selection_uses_acquired_coordinate](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L249) | 249 |
+| [InquiryJudgment.adaptive_is_trace](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L252) | 252 |
+| [InquiryJudgment.adaptive_matches_successful_history](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L259) | 259 |
+| [InquiryJudgment.adaptive_protects](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L267) | 267 |
+| [InquiryJudgment.adaptive_work_accounted](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L273) | 273 |
+| [InquiryJudgment.complete_protection_is_undominated](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L288) | 288 |
+| [InquiryJudgment.extended_fixed_is_chosen](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L296) | 296 |
+| [InquiryJudgment.extended_adaptive_is_chosen](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L301) | 301 |
+| [InquiryJudgment.extended_protection_required_without_fixed_requirement](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L308) | 308 |
+
+定义与类型 / Definitions and types:
+
+- `inductive` [InquiryJudgment.Case](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L55) (L55)
+- `inductive` [InquiryJudgment.Plan](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L56) (L56)
+- `inductive` [InquiryJudgment.Claim](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L57) (L57)
+- `def` [InquiryJudgment.config](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L59) (L59)
+- `def` [InquiryJudgment.events](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L63) (L63)
+- `def` [InquiryJudgment.outcome](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L66) (L66)
+- `def` [InquiryJudgment.holds](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L71) (L71)
+- `def` [InquiryJudgment.protects](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L75) (L75)
+- `def` [InquiryJudgment.chosen](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L78) (L78)
+- `def` [InquiryJudgment.both](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L81) (L81)
+- `def` [InquiryJudgment.accurateOnly](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L82) (L82)
+- `def` [InquiryJudgment.selectedAllowance](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L239) (L239)
+- `def` [InquiryJudgment.adaptiveAdvance](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L241) (L241)
+- `def` [InquiryJudgment.adaptiveOutcome](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L246) (L246)
+- `def` [InquiryJudgment.extendedOutcome](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L278) (L278)
+- `def` [InquiryJudgment.extendedProtect](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L282) (L282)
+- `def` [InquiryJudgment.extendedChosen](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryJudgment.lean#L285) (L285)
+
+</details>
+
+<a id="module-9bafeaa2c9e5"></a>
+
+<details>
+<summary>JointContinuation.lean — 29 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean) · [理论 / Theory](../../unified-2026-10-05/RELATIONS-ACROSS-SCALES.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-CONTINUATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean`
+
+Imports: `ContinuationAdequacy`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [JointContinuation.joint_plan_composition](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean#L21) | 21 |
+| [JointContinuation.compatibility_necessary](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean#L57) | 57 |
+| [JointContinuation.incompatible_blocks_joint](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean#L71) | 71 |
+| [JointContinuation.actual_joint_post_projects](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean#L80) | 80 |
+| [JointContinuation.spend_conserves](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean#L97) | 97 |
+| [JointContinuation.successive_spends](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean#L101) | 101 |
+| [JointContinuation.separate_checks_miss_total](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean#L108) | 108 |
+| [JointContinuation.all_pairs_fit_triple_fails](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean#L111) | 111 |
+| [JointContinuation.reserved_demands_fit](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean#L117) | 117 |
+| [JointContinuation.residual_reservations_conserve](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean#L122) | 122 |
+| [JointContinuation.each_local_twice](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean#L136) | 136 |
+| [JointContinuation.joint_first_step](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean#L139) | 139 |
+| [JointContinuation.joint_second_step_fails](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean#L142) | 142 |
+| [JointContinuation.sufficient_stock_repairs](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean#L145) | 145 |
+| [JointContinuation.shared_effect_breaks_isolated_projection](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean#L148) | 148 |
+| [JointContinuation.serialization_without_renewal_fails](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean#L151) | 151 |
+
+定义与类型 / Definitions and types:
+
+- `def` [JointContinuation.zipPlan](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean#L9) (L9)
+- `def` [JointContinuation.compatible](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean#L14) (L14)
+- `def` [JointContinuation.spend](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean#L95) (L95)
+- `def` [JointContinuation.localStep](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean#L125) (L125)
+- `def` [JointContinuation.jointStep](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean#L126) (L126)
+- `def` [JointContinuation.quiet](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean#L127) (L127)
+- `def` [JointContinuation.jointQuiet](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean#L128) (L128)
+- `def` [JointContinuation.fine](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean#L129) (L129)
+- `def` [JointContinuation.localAllowed](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean#L130) (L130)
+- `def` [JointContinuation.jointAllowed](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean#L131) (L131)
+- `def` [JointContinuation.exactStock](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean#L132) (L132)
+- `def` [JointContinuation.twice](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean#L133) (L133)
+- `def` [JointContinuation.once](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/JointContinuation.lean#L134) (L134)
+
+文本中有 16 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 16 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-99c139232337"></a>
+
+<details>
+<summary>MeasuredFeedback.lean — 26 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-JUDGMENT-EMPIRICAL.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean`
+
+Imports: `EmbodiedChoiceScales`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [MeasuredFeedback.measured_history_is_trace](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean#L43) | 43 |
+| [MeasuredFeedback.command_bounds](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean#L47) | 47 |
+| [MeasuredFeedback.saturation_retains_integral](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean#L51) | 51 |
+| [MeasuredFeedback.interior_updates_integral](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean#L55) | 55 |
+| [MeasuredFeedback.clip_nonexpansive](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean#L59) | 59 |
+| [MeasuredFeedback.command_error_bound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean#L68) | 68 |
+| [MeasuredFeedback.measured_feedback_one_step](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean#L86) | 86 |
+| [MeasuredFeedback.measured_feedback_horizon](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean#L105) | 105 |
+| [MeasuredFeedback.signed_motion_telescopes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean#L138) | 138 |
+| [MeasuredFeedback.absolute_motion_bounds_net](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean#L144) | 144 |
+| [MeasuredFeedback.bounded_round_trip_has_hidden_movement](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean#L155) | 155 |
+| [MeasuredFeedback.movement_objective_changes_comparison](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean#L162) | 162 |
+| [MeasuredFeedback.shared_record_can_leave_prediction_unresolved](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean#L170) | 170 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [MeasuredFeedback.Sample](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean#L11) (L11)
+- `structure` [MeasuredFeedback.Gains](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean#L16) (L16)
+- `def` [MeasuredFeedback.increment](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean#L20) (L20)
+- `def` [MeasuredFeedback.raw](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean#L23) (L23)
+- `def` [MeasuredFeedback.clip](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean#L26) (L26)
+- `def` [MeasuredFeedback.command](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean#L28) (L28)
+- `def` [MeasuredFeedback.retain](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean#L30) (L30)
+- `structure` [MeasuredFeedback.Record](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean#L33) (L33)
+- `def` [MeasuredFeedback.step](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean#L37) (L37)
+- `def` [MeasuredFeedback.history](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean#L40) (L40)
+- `def` [MeasuredFeedback.lastCommand](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean#L126) (L126)
+- `def` [MeasuredFeedback.signedMotion](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean#L130) (L130)
+- `def` [MeasuredFeedback.absoluteMotion](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/MeasuredFeedback.lean#L134) (L134)
+
+</details>
+
+<a id="module-fa24e61409c5"></a>
+
+<details>
+<summary>OrganizedScaleLoop.lean — 51 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/ORGANIZED-SCALES-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean`
+
+Imports: `EmbodiedChoiceScales`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [OrganizedScaleLoop.relay_product](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L17) | 17 |
+| [OrganizedScaleLoop.relay_append](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L22) | 22 |
+| [OrganizedScaleLoop.severed_route](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L28) | 28 |
+| [OrganizedScaleLoop.grouped_route](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L34) | 34 |
+| [OrganizedScaleLoop.chosen_step_commutes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L44) | 44 |
+| [OrganizedScaleLoop.chosen_history_three_views](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L54) | 54 |
+| [OrganizedScaleLoop.material_step](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L130) | 130 |
+| [OrganizedScaleLoop.work_step](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L137) | 137 |
+| [OrganizedScaleLoop.finite_history_accounts](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L144) | 144 |
+| [OrganizedScaleLoop.same_core_history](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L153) | 153 |
+| [OrganizedScaleLoop.concrete_view_commutes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L184) | 184 |
+| [OrganizedScaleLoop.concrete_view_all_histories](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L191) | 191 |
+| [OrganizedScaleLoop.acquisition_amount](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L195) | 195 |
+| [OrganizedScaleLoop.unsupported_acquisition](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L199) | 199 |
+| [OrganizedScaleLoop.acquisition_withdrawal](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L202) | 202 |
+| [OrganizedScaleLoop.withdrawal_changes_next_exposure](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L209) | 209 |
+| [OrganizedScaleLoop.disrupted_acquisition](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L216) | 216 |
+| [OrganizedScaleLoop.joined_endpoint](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L234) | 234 |
+| [OrganizedScaleLoop.disrupted_endpoint](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L238) | 238 |
+| [OrganizedScaleLoop.history_changes_choice](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L242) | 242 |
+| [OrganizedScaleLoop.no_memoryless_choice_readout](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L249) | 249 |
+| [OrganizedScaleLoop.same_organ_amount_distinct_signal](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L262) | 262 |
+| [OrganizedScaleLoop.no_amount_only_acquisition](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L267) | 267 |
+| [OrganizedScaleLoop.support_can_prevent_enactment](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L274) | 274 |
+| [OrganizedScaleLoop.release_changes_shared_conditions](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L279) | 279 |
+| [OrganizedScaleLoop.changed_context_reopens_exposure](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L286) | 286 |
+
+定义与类型 / Definitions and types:
+
+- `def` [OrganizedScaleLoop.relay](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L13) (L13)
+- `structure` [OrganizedScaleLoop.Joint](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L66) (L66)
+- `def` [OrganizedScaleLoop.burden](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L80) (L80)
+- `def` [OrganizedScaleLoop.material](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L81) (L81)
+- `def` [OrganizedScaleLoop.work](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L82) (L82)
+- `def` [OrganizedScaleLoop.ingest](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L84) (L84)
+- `def` [OrganizedScaleLoop.transit](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L89) (L89)
+- `def` [OrganizedScaleLoop.release](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L94) (L94)
+- `def` [OrganizedScaleLoop.acquire](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L101) (L101)
+- `def` [OrganizedScaleLoop.withdraw](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L106) (L106)
+- `def` [OrganizedScaleLoop.approach](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L111) (L111)
+- `inductive` [OrganizedScaleLoop.Event](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L116) (L116)
+- `def` [OrganizedScaleLoop.step](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L121) (L121)
+- `structure` [OrganizedScaleLoop.View](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L159) (L159)
+- `def` [OrganizedScaleLoop.view](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L171) (L171)
+- `def` [OrganizedScaleLoop.liftView](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L175) (L175)
+- `def` [OrganizedScaleLoop.viewStep](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L181) (L181)
+- `def` [OrganizedScaleLoop.currentConditions](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L225) (L225)
+- `def` [OrganizedScaleLoop.initial](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L228) (L228)
+- `def` [OrganizedScaleLoop.untrained](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L229) (L229)
+- `def` [OrganizedScaleLoop.trained](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L230) (L230)
+- `def` [OrganizedScaleLoop.broken](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L231) (L231)
+- `def` [OrganizedScaleLoop.episode](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L232) (L232)
+- `def` [OrganizedScaleLoop.frontLoaded](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L259) (L259)
+- `def` [OrganizedScaleLoop.backLoaded](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/OrganizedScaleLoop.lean#L260) (L260)
+
+文本中有 26 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 26 textual `#print axioms` commands; results belong to the original verification records.
 
 </details>
 
@@ -1407,6 +1988,161 @@ Imports: `Mathlib.Analysis.SpecificLimits.Basic`, `Mathlib.Tactic`, `SystemsComp
 
 </details>
 
+<a id="module-ba4d9be09079"></a>
+
+<details>
+<summary>RelationsAcrossScales.lean — 26 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-PROOF.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean`
+
+Imports: `Mathlib.Topology.MetricSpace.Pseudo.Defs`, `Mathlib.Tactic`, `SystemsOrganization`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [RelationsAcrossScales.history_is_core_trace](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean#L18) | 18 |
+| [RelationsAcrossScales.one_step](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean#L33) | 33 |
+| [RelationsAcrossScales.finite_horizon_bound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean#L42) | 42 |
+| [RelationsAcrossScales.budget_cap](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean#L64) | 64 |
+| [RelationsAcrossScales.composed_defect](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean#L77) | 77 |
+| [RelationsAcrossScales.observable_error](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean#L88) | 88 |
+| [RelationsAcrossScales.protected_conditions](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean#L101) | 101 |
+| [RelationsAcrossScales.violation_certificate](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean#L110) | 110 |
+| [RelationsAcrossScales.fibre_error_lower_bound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean#L118) | 118 |
+| [RelationsAcrossScales.routing_total](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean#L135) | 135 |
+| [RelationsAcrossScales.routing_defect_lower_bound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean#L141) | 141 |
+| [RelationsAcrossScales.routing_error_bound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean#L151) | 151 |
+| [RelationsAcrossScales.enriched_routing_exact](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean#L160) | 160 |
+| [RelationsAcrossScales.total_exact_through_transfer](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean#L168) | 168 |
+| [RelationsAcrossScales.exact_total_can_hide_loss](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean#L171) | 171 |
+| [RelationsAcrossScales.no_total_only_protection](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean#L176) | 176 |
+| [RelationsAcrossScales.minimum_preserves_protection](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean#L185) | 185 |
+| [RelationsAcrossScales.frozen_charts_miss_change](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean#L191) | 191 |
+| [RelationsAcrossScales.linear_drift](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean#L197) | 197 |
+| [RelationsAcrossScales.positive_drift_unbounded](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean#L205) | 205 |
+| [RelationsAcrossScales.threshold_ambiguity](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean#L213) | 213 |
+
+定义与类型 / Definitions and types:
+
+- `def` [RelationsAcrossScales.budget](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean#L13) (L13)
+- `def` [RelationsAcrossScales.total](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean#L131) (L131)
+- `def` [RelationsAcrossScales.routing](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean#L133) (L133)
+- `def` [RelationsAcrossScales.transfer](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean#L165) (L165)
+- `def` [RelationsAcrossScales.basicProtected](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean#L166) (L166)
+
+文本中有 21 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 21 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-dea38234acec"></a>
+
+<details>
+<summary>ScaleRevision.lean — 48 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean) · [理论 / Theory](../../unified-2026-10-05/RELATIONS-ACROSS-SCALES.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SCALE-REVISION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean`
+
+Imports: `RelationsAcrossScales`, `RemainingDependency`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [ScaleRevision.run_is_core_trace](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L116) | 116 |
+| [ScaleRevision.probe_obtains_actual_loss](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L121) | 121 |
+| [ScaleRevision.truthful_changed_probe_requests_refinement](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L127) | 127 |
+| [ScaleRevision.revised_exact_forecast](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L132) | 132 |
+| [ScaleRevision.calibrated_response_margin](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L141) | 141 |
+| [ScaleRevision.readout_error_enters_response](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L147) | 147 |
+| [ScaleRevision.dose_nonnegative](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L158) | 158 |
+| [ScaleRevision.bounded_source_after_response](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L160) | 160 |
+| [ScaleRevision.response_keeps_second](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L170) | 170 |
+| [ScaleRevision.response_support_balance](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L176) | 176 |
+| [ScaleRevision.actual_response_condition](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L186) | 186 |
+| [ScaleRevision.paid_work_conserved](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L196) | 196 |
+| [ScaleRevision.advance_work_conserved](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L206) | 206 |
+| [ScaleRevision.run_work_conserved](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L231) | 231 |
+| [ScaleRevision.waited_evidence_rejected](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L239) | 239 |
+| [ScaleRevision.acquired_revision_endpoint](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L247) | 247 |
+| [ScaleRevision.enacted_refinement_protects](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L256) | 256 |
+| [ScaleRevision.clamped_description_loses_condition](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L266) | 266 |
+| [ScaleRevision.ignored_revision_delay_loses_condition](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L275) | 275 |
+| [ScaleRevision.biased_new_coordinate_loses_condition](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L283) | 283 |
+| [ScaleRevision.inquiry_can_exhaust_response_funding](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L291) | 291 |
+| [ScaleRevision.insufficient_response_source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L300) | 300 |
+| [ScaleRevision.mismatched_context_withholds_response](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L308) | 308 |
+| [ScaleRevision.matched_revision_preserves_other_inputs](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L315) | 315 |
+| [ScaleRevision.bounded_bias_margin_recovers](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L323) | 323 |
+| [ScaleRevision.conservative_margin_can_exceed_source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L331) | 331 |
+| [ScaleRevision.fixed_response_also_protects](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L339) | 339 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [ScaleRevision.View](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L15) (L15)
+- `structure` [ScaleRevision.Config](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L23) (L23)
+- `structure` [ScaleRevision.State](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L30) (L30)
+- `def` [ScaleRevision.total](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L42) (L42)
+- `def` [ScaleRevision.loss](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L43) (L43)
+- `def` [ScaleRevision.drift](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L45) (L45)
+- `def` [ScaleRevision.forecast](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L48) (L48)
+- `def` [ScaleRevision.dose](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L51) (L51)
+- `def` [ScaleRevision.paid](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L55) (L55)
+- `def` [ScaleRevision.probeBody](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L60) (L60)
+- `def` [ScaleRevision.inspectBody](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L67) (L67)
+- `def` [ScaleRevision.reviseBody](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L71) (L71)
+- `def` [ScaleRevision.respondBody](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L78) (L78)
+- `def` [ScaleRevision.fixedBody](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L85) (L85)
+- `inductive` [ScaleRevision.Event](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L90) (L90)
+- `def` [ScaleRevision.advance](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L94) (L94)
+- `def` [ScaleRevision.run](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L105) (L105)
+- `def` [ScaleRevision.entrance](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L108) (L108)
+- `def` [ScaleRevision.inquiry](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L112) (L112)
+- `def` [ScaleRevision.complete](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L113) (L113)
+- `def` [ScaleRevision.workTotal](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean#L194) (L194)
+
+文本中有 27 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 27 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-37af2e7fffc1"></a>
+
+<details>
+<summary>SeededContinuation.lean — 18 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SeededContinuation.lean) · [理论 / Theory](../../unified-2026-10-05/RELATIONS-ACROSS-SCALES.md) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/SEEDED-CONTINUATION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SeededContinuation.lean`
+
+Imports: `JointContinuation`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [SeededContinuation.mutual_history](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SeededContinuation.lean#L11) | 11 |
+| [SeededContinuation.compatible_from_seed](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SeededContinuation.lean#L25) | 25 |
+| [SeededContinuation.seeded_joint_plan](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SeededContinuation.lean#L63) | 63 |
+| [SeededContinuation.preservation_without_availability](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SeededContinuation.lean#L84) | 84 |
+| [SeededContinuation.reciprocal_eventual_promises_can_be_empty](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SeededContinuation.lean#L89) | 89 |
+| [SeededContinuation.tick_supports_mutually](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SeededContinuation.lean#L113) | 113 |
+| [SeededContinuation.tick_active_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SeededContinuation.lean#L117) | 117 |
+| [SeededContinuation.active_run_iff](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SeededContinuation.lean#L120) | 120 |
+| [SeededContinuation.empty_never_starts](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SeededContinuation.lean#L125) | 125 |
+| [SeededContinuation.partial_seed_not_joint](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SeededContinuation.lean#L130) | 130 |
+| [SeededContinuation.stored_seed_starts_and_maintains](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SeededContinuation.lean#L133) | 133 |
+| [SeededContinuation.ignition_requires_actual_reserve](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SeededContinuation.lean#L138) | 138 |
+| [SeededContinuation.absent_reserve_blocks_ignition](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SeededContinuation.lean#L142) | 142 |
+
+定义与类型 / Definitions and types:
+
+- `structure` [SeededContinuation.Config](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SeededContinuation.lean#L98) (L98)
+- `def` [SeededContinuation.tick](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SeededContinuation.lean#L104) (L104)
+- `def` [SeededContinuation.run](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SeededContinuation.lean#L105) (L105)
+- `def` [SeededContinuation.active](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SeededContinuation.lean#L109) (L109)
+- `def` [SeededContinuation.ignite](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SeededContinuation.lean#L111) (L111)
+
+文本中有 13 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 13 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
 <a id="module-59ffcfa61113"></a>
 
 <details>
@@ -1444,6 +2180,44 @@ Imports: `AdaptiveCore`
 - `def` [SystemsComplexity.ShrinkingGain.orbit](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ShrinkingGain.lean#L25) (L25)
 
 文本中有 15 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 15 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-0484b39d8ec3"></a>
+
+<details>
+<summary>SituatedTracking.lean — 19 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SituatedTracking.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/JOINT-RISK-REVISION-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SituatedTracking.lean`
+
+Imports: `Mathlib.Analysis.SpecificLimits.Basic`, `Mathlib.Tactic`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [SituatedTracking.one_step](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SituatedTracking.lean#L24) | 24 |
+| [SituatedTracking.recurrence_bound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SituatedTracking.lean#L43) | 43 |
+| [SituatedTracking.tracking_bound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SituatedTracking.lean#L55) | 55 |
+| [SituatedTracking.eventual_band](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SituatedTracking.lean#L71) | 71 |
+| [SituatedTracking.vanishing_input_convergence](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SituatedTracking.lean#L86) | 86 |
+| [SituatedTracking.tracking_convergence](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SituatedTracking.lean#L110) | 110 |
+| [SituatedTracking.radius_nonnegative](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SituatedTracking.lean#L123) | 123 |
+| [SituatedTracking.radius_sound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SituatedTracking.lean#L130) | 130 |
+| [SituatedTracking.radius_converges](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SituatedTracking.lean#L145) | 145 |
+| [SituatedTracking.certificate_sound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SituatedTracking.lean#L154) | 154 |
+| [SituatedTracking.eventually_certifies](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SituatedTracking.lean#L160) | 160 |
+| [SituatedTracking.misleading_reading_fixed](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SituatedTracking.lean#L173) | 173 |
+| [SituatedTracking.stable_error_can_be_wrong](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SituatedTracking.lean#L179) | 179 |
+| [SituatedTracking.changing_condition_retains_lag](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SituatedTracking.lean#L185) | 185 |
+| [SituatedTracking.boundary_accuracy_without_certificate](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SituatedTracking.lean#L192) | 192 |
+
+定义与类型 / Definitions and types:
+
+- `def` [SituatedTracking.estimate](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SituatedTracking.lean#L14) (L14)
+- `def` [SituatedTracking.error](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SituatedTracking.lean#L18) (L18)
+- `def` [SituatedTracking.forcing](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SituatedTracking.lean#L21) (L21)
+- `def` [SituatedTracking.radius](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SituatedTracking.lean#L119) (L119)
 
 </details>
 
@@ -1509,6 +2283,67 @@ Imports: `VaryingFeedback`, `ResourceContinuation`
 - `def` [SystemsComplexity.SupportedRevision.initial](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/SupportedRevision.lean#L292) (L292)
 
 文本中有 26 条 `#print axioms` 指令；输出请见原验证记录。 / Contains 26 textual `#print axioms` commands; results belong to the original verification records.
+
+</details>
+
+<a id="module-d03f54c6bf35"></a>
+
+<details>
+<summary>TimedFeedback.lean — 9 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TimedFeedback.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/TIMED-FEEDBACK-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TimedFeedback.lean`
+
+Imports: `TuningCorrespondence`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [TimedFeedback.acquisition_age_bound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TimedFeedback.lean#L10) | 10 |
+| [TimedFeedback.queued_timestamp_age](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TimedFeedback.lean#L17) | 17 |
+| [TimedFeedback.source_ordered_calibration](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TimedFeedback.lean#L22) | 22 |
+| [TimedFeedback.timed_protection_at_actual](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TimedFeedback.lean#L38) | 38 |
+| [TimedFeedback.segment_midpoint_bound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TimedFeedback.lean#L63) | 63 |
+| [TimedFeedback.segment_interval_endpoints](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TimedFeedback.lean#L72) | 72 |
+| [TimedFeedback.history_exposure_bound](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TimedFeedback.lean#L81) | 81 |
+| [TimedFeedback.separated_history_exposure](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TimedFeedback.lean#L92) | 92 |
+
+定义与类型 / Definitions and types:
+
+- `def` [TimedFeedback.segment](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TimedFeedback.lean#L60) (L60)
+
+</details>
+
+<a id="module-1745ec53c5aa"></a>
+
+<details>
+<summary>TuningCorrespondence.lean — 14 explicit declarations</summary>
+
+[原源码 / Source](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TuningCorrespondence.lean) · [研究 / Study](../../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/TUNING-CORRESPONDENCE-INTEGRATION.md) · [包说明 / Package notes](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/README.md)
+
+`experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TuningCorrespondence.lean`
+
+Imports: `FeedbackMemory`, `PracticalJudgment`
+
+| 定理／引理 / Theorem or lemma | 源行 / Line |
+|---|---:|
+| [TuningCorrespondence.tracking_error](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TuningCorrespondence.lean#L17) | 17 |
+| [TuningCorrespondence.objective_error](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TuningCorrespondence.lean#L29) | 29 |
+| [TuningCorrespondence.finite_model_minimum](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TuningCorrespondence.lean#L47) | 47 |
+| [TuningCorrespondence.estimated_minimum_actual_regret](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TuningCorrespondence.lean#L53) | 53 |
+| [TuningCorrespondence.separated_model_comparison](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TuningCorrespondence.lean#L61) | 61 |
+| [TuningCorrespondence.arx_input_difference_scales](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TuningCorrespondence.lean#L76) | 76 |
+| [TuningCorrespondence.every_corrected_model_fits_record](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TuningCorrespondence.lean#L90) | 90 |
+| [TuningCorrespondence.corrected_arx_response](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TuningCorrespondence.lean#L95) | 95 |
+| [TuningCorrespondence.fitted_record_does_not_identify_transfer](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TuningCorrespondence.lean#L106) | 106 |
+| [TuningCorrespondence.calibrated_protection_at_actual](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TuningCorrespondence.lean#L122) | 122 |
+
+定义与类型 / Definitions and types:
+
+- `def` [TuningCorrespondence.tracking](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TuningCorrespondence.lean#L11) (L11)
+- `def` [TuningCorrespondence.objective](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TuningCorrespondence.lean#L14) (L14)
+- `def` [TuningCorrespondence.arx](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TuningCorrespondence.lean#L68) (L68)
+- `def` [TuningCorrespondence.corrected](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/TuningCorrespondence.lean#L86) (L86)
 
 </details>
 

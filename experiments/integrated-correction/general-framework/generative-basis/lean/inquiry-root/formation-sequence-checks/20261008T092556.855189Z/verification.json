@@ -1,0 +1,17 @@
+{
+  "status": "failed",
+  "utc": "20261008T092556.855189Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "formation-sequence-checks/20261008T092556.855189Z",
+  "source_sha256": {
+    "FormationSequence": "bbb75d75bc4da90978ebf71ef027bf166fb4aa7668a8a3e7c911940d9147c08b"
+  },
+  "checker_sha256": {
+    "check_formation_sequence.py": "bdaedf5950c8b2d277a85e15ead48dae1c1d5b569a7ed711212742589ff6aa83",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Supplied whole-history comparisons compose; stage-specific comparisons require a transport premise. A numerical diagnostic fails that transport despite both comparisons being transitive. Faithful redescription is separately supplied. No ethical warrant, full rival theory, empirical result or universal necessity is proved.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "FormationSequence.lean:83:60: error: failed to synthesize\n  Decidable (ScoredAbove initialScore History.retained History.baseline)\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\nFormationSequence.lean:83:60: error: failed to synthesize\n  Decidable (ScoredAbove laterScore History.redirected History.retained)\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\nFormationSequence.lean:83:60: error: failed to synthesize\n  Decidable \u00acScoredAbove initialScore History.redirected History.baseline\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\nFormationSequence.lean:88:2: error: failed to synthesize\n  Decidable\n    \u00ac(ScoredAbove laterScore History.redirected History.retained \u2192\n        ScoredAbove initialScore History.redirected History.retained)\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\n"
+}

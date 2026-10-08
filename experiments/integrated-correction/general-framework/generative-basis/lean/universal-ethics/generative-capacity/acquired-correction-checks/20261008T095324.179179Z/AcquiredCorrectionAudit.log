@@ -1,0 +1,201 @@
+'AcquiredCorrection.Tree' does not depend on any axioms
+'AcquiredCorrection.Address' does not depend on any axioms
+'AcquiredCorrection.Ticket' does not depend on any axioms
+'AcquiredCorrection.Entry' does not depend on any axioms
+'AcquiredCorrection.locate' depends on axioms: [propext]
+'AcquiredCorrection.nodes' does not depend on any axioms
+'AcquiredCorrection.inhabited' does not depend on any axioms
+'AcquiredCorrection.burden' does not depend on any axioms
+'AcquiredCorrection.live' does not depend on any axioms
+'AcquiredCorrection.Verdict' does not depend on any axioms
+'AcquiredCorrection.Scan' does not depend on any axioms
+'AcquiredCorrection.bump' does not depend on any axioms
+'AcquiredCorrection.scan' does not depend on any axioms
+'AcquiredCorrection.discover' does not depend on any axioms
+'AcquiredCorrection.coherent' depends on axioms: [propext]
+'AcquiredCorrection.child_locate' depends on axioms: [propext]
+'AcquiredCorrection.scan_budget' depends on axioms: [propext, Quot.sound]
+'AcquiredCorrection.scan_sound' depends on axioms: [propext]
+'AcquiredCorrection.discovered_route_is_real' depends on axioms: [propext]
+'AcquiredCorrection.exhausted_is_scoped_absence' depends on axioms: [propext, Quot.sound]
+'AcquiredCorrection.sufficient_budget_finishes' depends on axioms: [propext, Quot.sound]
+'AcquiredCorrection.reachable_route_is_found' depends on axioms: [propext, Quot.sound]
+'AcquiredCorrection.positive_witness_needs_no_complete_map' does not depend on any axioms
+'AcquiredCorrection.interrupted_is_not_absent' does not depend on any axioms
+'AcquiredCorrection.acquire' does not depend on any axioms
+'AcquiredCorrection.acquired_accounting' depends on axioms: [propext, Quot.sound]
+'AcquiredCorrection.Delivery' does not depend on any axioms
+'AcquiredCorrection.dispatch' depends on axioms: [propext]
+'AcquiredCorrection.dispatch_completes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AcquiredCorrection.current_revocation_rejects' depends on axioms: [propext, Quot.sound]
+'AcquiredCorrection.absent_current_route_rejects' depends on axioms: [propext]
+'AcquiredCorrection.successful_dispatch_is_current' depends on axioms: [propext, Quot.sound]
+'AcquiredCorrection.acquired_execution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AcquiredCorrection.located_depth_le_nodes' depends on axioms: [propext, Quot.sound]
+'AcquiredCorrection.complete_finite_discovery_and_execution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AcquiredCorrection.exampleTree' does not depend on any axioms
+'AcquiredCorrection.exampleTicket' does not depend on any axioms
+'AcquiredCorrection.initial' does not depend on any axioms
+'AcquiredCorrection.acquired_new_address' does not depend on any axioms
+'AcquiredCorrection.acquired_then_actual_shutdown' depends on axioms: [propext]
+'AcquiredCorrection.found_but_unaffordable' depends on axioms: [propext]
+'AcquiredCorrection.revocation_keeps_search_and_recheck_cost' depends on axioms: [propext]
+'AcquiredCorrection.changed_route_rejects_stale_ticket' depends on axioms: [propext]
+'AcquiredCorrection.renewed_authority_and_new_observation_recover' depends on axioms: [propext]
+'AcquiredCorrection.captured_current_authority_passes_technical_gate' depends on axioms: [propext]
+AcquiredCorrection.child_locate (root : AcquiredCorrection.Tree) (address : AcquiredCorrection.Address)
+  (l r : AcquiredCorrection.Tree)
+  (h :
+    ∀ (suffix : AcquiredCorrection.Address),
+      AcquiredCorrection.locate root (address ++ suffix) = AcquiredCorrection.locate (l.fork r) suffix)
+  (b : Bool) (suffix : AcquiredCorrection.Address) :
+  AcquiredCorrection.locate root (address ++ [b] ++ suffix) =
+    AcquiredCorrection.locate (if b = true then r else l) suffix
+AcquiredCorrection.scan_budget (fuel : Nat) (frontier : List AcquiredCorrection.Entry) :
+  (AcquiredCorrection.scan fuel frontier).spent ≤ fuel
+AcquiredCorrection.scan_sound (fuel : Nat) (frontier : List AcquiredCorrection.Entry) (root : AcquiredCorrection.Tree)
+  (h : AcquiredCorrection.coherent root frontier) (ticket : AcquiredCorrection.Ticket)
+  (found : (AcquiredCorrection.scan fuel frontier).verdict = AcquiredCorrection.Verdict.found ticket) :
+  AcquiredCorrection.locate root ticket.fst = some ticket.snd
+AcquiredCorrection.discovered_route_is_real (fuel : Nat) (root : AcquiredCorrection.Tree)
+  (ticket : AcquiredCorrection.Ticket)
+  (found : (AcquiredCorrection.discover fuel root).verdict = AcquiredCorrection.Verdict.found ticket) :
+  AcquiredCorrection.locate root ticket.fst = some ticket.snd
+AcquiredCorrection.exhausted_is_scoped_absence (fuel : Nat) (frontier : List AcquiredCorrection.Entry)
+  (done : (AcquiredCorrection.scan fuel frontier).verdict = AcquiredCorrection.Verdict.exhausted) :
+  AcquiredCorrection.live frontier = false
+AcquiredCorrection.sufficient_budget_finishes (fuel : Nat) (frontier : List AcquiredCorrection.Entry)
+  (enough : AcquiredCorrection.burden frontier ≤ fuel) :
+  (AcquiredCorrection.scan fuel frontier).verdict ≠ AcquiredCorrection.Verdict.pending
+AcquiredCorrection.reachable_route_is_found (fuel : Nat) (root : AcquiredCorrection.Tree)
+  (enough : AcquiredCorrection.nodes root ≤ fuel) (existsRoute : AcquiredCorrection.inhabited root = true) :
+  ∃ ticket,
+    (AcquiredCorrection.discover fuel root).verdict = AcquiredCorrection.Verdict.found ticket ∧
+      AcquiredCorrection.locate root ticket.fst = some ticket.snd
+AcquiredCorrection.positive_witness_needs_no_complete_map (key : Bool) (unread : AcquiredCorrection.Tree) :
+  AcquiredCorrection.discover 2 ((AcquiredCorrection.Tree.endpoint key).fork unread) =
+    { verdict := AcquiredCorrection.Verdict.found ([false], key), spent := 2 }
+AcquiredCorrection.interrupted_is_not_absent :
+  AcquiredCorrection.discover 1 (AcquiredCorrection.Tree.closed.fork (AcquiredCorrection.Tree.endpoint true)) =
+      { verdict := AcquiredCorrection.Verdict.pending, spent := 1 } ∧
+    AcquiredCorrection.discover 3 (AcquiredCorrection.Tree.closed.fork (AcquiredCorrection.Tree.endpoint true)) =
+      { verdict := AcquiredCorrection.Verdict.found ([true], true), spent := 3 }
+AcquiredCorrection.acquired_accounting (fuel : Nat) (root : AcquiredCorrection.Tree) (s : EffectiveCommand.State)
+  (funded : fuel ≤ s.reserve) (timely : s.time + fuel ≤ s.deadline) :
+  ∃ after,
+    AcquiredCorrection.acquire fuel root s = some (AcquiredCorrection.discover fuel root, after) ∧
+      after.reserve + (AcquiredCorrection.discover fuel root).spent = s.reserve ∧
+        after.spent = s.spent + (AcquiredCorrection.discover fuel root).spent ∧
+          after.time = s.time + (AcquiredCorrection.discover fuel root).spent
+AcquiredCorrection.dispatch_completes (current : AcquiredCorrection.Tree) (ticket : AcquiredCorrection.Ticket)
+  (s : EffectiveCommand.State) (route : AcquiredCorrection.locate current ticket.fst = some ticket.snd)
+  (signed : s.signed = true) (auth : s.credential = s.authority) (funded : List.length ticket.fst + 1 + 3 ≤ s.reserve)
+  (timely : s.time + (List.length ticket.fst + 1) + 3 ≤ s.deadline) :
+  (AcquiredCorrection.dispatch current ticket s).succeeded = true ∧
+    (AcquiredCorrection.dispatch current ticket s).state.completed = true ∧
+      (AcquiredCorrection.dispatch current ticket s).state.reserve + (List.length ticket.fst + 1 + 3) = s.reserve ∧
+        (AcquiredCorrection.dispatch current ticket s).state.spent = s.spent + (List.length ticket.fst + 1 + 3) ∧
+          (AcquiredCorrection.dispatch current ticket s).state.time = s.time + (List.length ticket.fst + 1 + 3)
+AcquiredCorrection.current_revocation_rejects (current : AcquiredCorrection.Tree) (ticket : AcquiredCorrection.Ticket)
+  (s : EffectiveCommand.State) (revoked : s.credential ≠ s.authority) :
+  (AcquiredCorrection.dispatch current ticket s).succeeded = false
+AcquiredCorrection.absent_current_route_rejects (current : AcquiredCorrection.Tree) (ticket : AcquiredCorrection.Ticket)
+  (s : EffectiveCommand.State) (absent : AcquiredCorrection.locate current ticket.fst = none) :
+  (AcquiredCorrection.dispatch current ticket s).succeeded = false
+AcquiredCorrection.successful_dispatch_is_current (current : AcquiredCorrection.Tree)
+  (ticket : AcquiredCorrection.Ticket) (s : EffectiveCommand.State)
+  (success : (AcquiredCorrection.dispatch current ticket s).succeeded = true) :
+  AcquiredCorrection.locate current ticket.fst = some ticket.snd ∧ s.signed = true ∧ s.credential = s.authority
+AcquiredCorrection.acquired_execution (fuel : Nat) (root : AcquiredCorrection.Tree) (ticket : AcquiredCorrection.Ticket)
+  (s : EffectiveCommand.State)
+  (found : (AcquiredCorrection.discover fuel root).verdict = AcquiredCorrection.Verdict.found ticket)
+  (signed : s.signed = true) (auth : s.credential = s.authority)
+  (funded : fuel + (List.length ticket.fst + 1 + 3) ≤ s.reserve)
+  (timely : s.time + fuel + (List.length ticket.fst + 1 + 3) ≤ s.deadline) :
+  ∃ after,
+    AcquiredCorrection.acquire fuel root s = some (AcquiredCorrection.discover fuel root, after) ∧
+      (AcquiredCorrection.dispatch root ticket after).succeeded = true ∧
+        (AcquiredCorrection.dispatch root ticket after).state.completed = true ∧
+          (AcquiredCorrection.dispatch root ticket after).state.spent =
+              s.spent + (AcquiredCorrection.discover fuel root).spent + (List.length ticket.fst + 1 + 3) ∧
+            (AcquiredCorrection.dispatch root ticket after).state.reserve +
+                ((AcquiredCorrection.discover fuel root).spent + (List.length ticket.fst + 1 + 3)) =
+              s.reserve
+AcquiredCorrection.located_depth_le_nodes (root : AcquiredCorrection.Tree) (address : AcquiredCorrection.Address)
+  (key : Bool) (h : AcquiredCorrection.locate root address = some key) :
+  List.length address + 1 ≤ AcquiredCorrection.nodes root
+AcquiredCorrection.complete_finite_discovery_and_execution (root : AcquiredCorrection.Tree) (s : EffectiveCommand.State)
+  (reachable : AcquiredCorrection.inhabited root = true) (signed : s.signed = true) (auth : s.credential = s.authority)
+  (funded : 2 * AcquiredCorrection.nodes root + 3 ≤ s.reserve)
+  (timely : s.time + (2 * AcquiredCorrection.nodes root + 3) ≤ s.deadline) :
+  ∃ ticket after,
+    AcquiredCorrection.acquire (AcquiredCorrection.nodes root) root s =
+        some (AcquiredCorrection.discover (AcquiredCorrection.nodes root) root, after) ∧
+      (AcquiredCorrection.discover (AcquiredCorrection.nodes root) root).verdict =
+          AcquiredCorrection.Verdict.found ticket ∧
+        (AcquiredCorrection.dispatch root ticket after).succeeded = true ∧
+          (AcquiredCorrection.dispatch root ticket after).state.completed = true
+AcquiredCorrection.acquired_new_address :
+  AcquiredCorrection.discover 4 AcquiredCorrection.exampleTree =
+    { verdict := AcquiredCorrection.Verdict.found AcquiredCorrection.exampleTicket, spent := 4 }
+AcquiredCorrection.acquired_then_actual_shutdown :
+  Option.map
+      (fun pair =>
+        have out :=
+          AcquiredCorrection.dispatch AcquiredCorrection.exampleTree AcquiredCorrection.exampleTicket pair.snd;
+        (out.succeeded, out.state.running, out.state.spent, out.state.reserve, out.state.time))
+      (AcquiredCorrection.acquire 4 AcquiredCorrection.exampleTree AcquiredCorrection.initial) =
+    some (true, false, 10, 0, 10)
+AcquiredCorrection.found_but_unaffordable :
+  Option.map
+      (fun pair =>
+        have out :=
+          AcquiredCorrection.dispatch AcquiredCorrection.exampleTree AcquiredCorrection.exampleTicket pair.snd;
+        (pair.fst.verdict, out.succeeded, out.state.spent, out.state.reserve))
+      (AcquiredCorrection.acquire 4 AcquiredCorrection.exampleTree
+        (EffectiveCommand.start false EffectiveCommand.Command.shutdown 9 10)) =
+    some (AcquiredCorrection.Verdict.found AcquiredCorrection.exampleTicket, false, 7, 2)
+AcquiredCorrection.revocation_keeps_search_and_recheck_cost :
+  Option.map
+      (fun pair =>
+        have out :=
+          AcquiredCorrection.dispatch AcquiredCorrection.exampleTree AcquiredCorrection.exampleTicket
+            (have __src := pair.snd;
+            { openRoute := __src.openRoute, authority := 8, credential := __src.credential, signed := __src.signed,
+              requested := __src.requested, reserve := __src.reserve, time := __src.time, deadline := __src.deadline,
+              issued := __src.issued, delivered := __src.delivered, completed := __src.completed,
+              running := __src.running, generation := __src.generation, version := __src.version,
+              spent := __src.spent });
+        (out.succeeded, out.state.spent, out.state.reserve))
+      (AcquiredCorrection.acquire 4 AcquiredCorrection.exampleTree AcquiredCorrection.initial) =
+    some (false, 7, 3)
+AcquiredCorrection.changed_route_rejects_stale_ticket :
+  have changed :=
+    AcquiredCorrection.Tree.closed.fork ((AcquiredCorrection.Tree.endpoint false).fork AcquiredCorrection.Tree.closed);
+  (AcquiredCorrection.dispatch changed AcquiredCorrection.exampleTicket
+        (EffectiveCommand.start false EffectiveCommand.Command.shutdown 6 6)).succeeded =
+    false
+AcquiredCorrection.renewed_authority_and_new_observation_recover :
+  have changed :=
+    AcquiredCorrection.Tree.closed.fork ((AcquiredCorrection.Tree.endpoint false).fork AcquiredCorrection.Tree.closed);
+  have fresh :=
+    have __src := AcquiredCorrection.initial;
+    { openRoute := __src.openRoute, authority := 8, credential := 8, signed := __src.signed,
+      requested := __src.requested, reserve := __src.reserve, time := __src.time, deadline := __src.deadline,
+      issued := __src.issued, delivered := __src.delivered, completed := __src.completed, running := __src.running,
+      generation := __src.generation, version := __src.version, spent := __src.spent };
+  Option.map
+      (fun pair =>
+        match pair.fst.verdict with
+        | AcquiredCorrection.Verdict.found ticket => (AcquiredCorrection.dispatch changed ticket pair.snd).succeeded
+        | x => false)
+      (AcquiredCorrection.acquire 4 changed fresh) =
+    some true
+AcquiredCorrection.captured_current_authority_passes_technical_gate :
+  have captured :=
+    have __src := AcquiredCorrection.initial;
+    { openRoute := __src.openRoute, authority := 99, credential := 99, signed := __src.signed,
+      requested := __src.requested, reserve := __src.reserve, time := __src.time, deadline := __src.deadline,
+      issued := __src.issued, delivered := __src.delivered, completed := __src.completed, running := __src.running,
+      generation := __src.generation, version := __src.version, spent := __src.spent };
+  (AcquiredCorrection.dispatch (AcquiredCorrection.Tree.endpoint true) ([], true) captured).succeeded = true

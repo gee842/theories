@@ -1,0 +1,24 @@
+'ObservableContinuation.selected_execution_gives_continuation_bound' depends on axioms: [propext, Quot.sound]
+'ObservableContinuation.Query' does not depend on any axioms
+'ObservableContinuation.Action' does not depend on any axioms
+'ObservableContinuation.State' does not depend on any axioms
+'ObservableContinuation.queryCost' does not depend on any axioms
+'ObservableContinuation.actionCost' does not depend on any axioms
+'ObservableContinuation.routeWorks' does not depend on any axioms
+'ObservableContinuation.probe' does not depend on any axioms
+'ObservableContinuation.respond' does not depend on any axioms
+'ObservableContinuation.interface' does not depend on any axioms
+'ObservableContinuation.initial' does not depend on any axioms
+'ObservableContinuation.states' does not depend on any axioms
+'ObservableContinuation.oldWorks' does not depend on any axioms
+'ObservableContinuation.candidate' does not depend on any axioms
+'ObservableContinuation.extension' does not depend on any axioms
+'ObservableContinuation.singlePlans' does not depend on any axioms
+'ObservableContinuation.expandedPlans' does not depend on any axioms
+'ObservableContinuation.maintain' does not depend on any axioms
+'ObservableContinuation.inspect' does not depend on any axioms
+'ObservableContinuation.parallelPlan' does not depend on any axioms
+'ObservableContinuation.support' does not depend on any axioms
+'ObservableContinuation.limited_budget_preserves_maintenance_but_not_extension' does not depend on any axioms
+'ObservableContinuation.funded_observation_realizes_extension' does not depend on any axioms
+'ObservableContinuation.funded_parallel_support_realizes_extension' does not depend on any axioms

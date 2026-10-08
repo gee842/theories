@@ -1,0 +1,55 @@
+{
+  "status": "failed",
+  "utc": "20261008T085255.665415Z",
+  "retained_run": "alignment-continuity-checks/20261008T085255.665415Z",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "sources": {
+    "PracticalJudgment": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean",
+      "sha256": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af"
+    },
+    "KnowledgeCorrespondence": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/KnowledgeCorrespondence.lean",
+      "sha256": "dc710b9934cbbf80ec81194ecc7e9091084f524d41d7c50df55f121e9835a076"
+    },
+    "GoalFormationRevision": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GoalFormationRevision.lean",
+      "sha256": "90c5903cf3d1382304fa91dc3336e7a8ae20c89695ea4c9baabd9b95bd068038"
+    },
+    "ReformEvidence": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReformEvidence.lean",
+      "sha256": "a66f490de7aaddf28542cdca7ac7095e74117bbf45877c9ae15691272011362e"
+    },
+    "MarketGenerativity": {
+      "path": "experiments/market-generativity/formal/MarketGenerativity.lean",
+      "sha256": "db7cf7f120e8759aebc1e280e9dc1bbd10b30a6b7004a835015624f85f8d49b1"
+    },
+    "AlignmentInquiry": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentInquiry.lean",
+      "sha256": "f40ad6179db326830edcdf8ec511f9069833a361f71181fd60166e0f72c0a23c"
+    },
+    "EffectiveCommand": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EffectiveCommand.lean",
+      "sha256": "7247ca05597f2f916fb409213d3814d48ad9a7037fb95017146d106273d58553"
+    },
+    "ReformInquiry": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReformInquiry.lean",
+      "sha256": "3fc4afb2ce10efb86ab6f54d348ae030351f971fc3b39a6b93ea5aafb6d1c211"
+    },
+    "AlignmentSuccession": {
+      "path": "experiments/market-generativity/meta-attractor/AlignmentSuccession.lean",
+      "sha256": "0af531d5cd3204bb6297c21f8169a39dbdfcb5a894ede7864f09ba820f11871d"
+    },
+    "AlignmentContinuityCases": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentContinuityCases.lean",
+      "sha256": "b0d4dadf56edb983fbc1e1a180165152b42fde3d493557b5dd58c7349241f86b"
+    }
+  },
+  "checker_sha256": {
+    "check_alignment_continuity.py": "77e2a310de9a73fee101a98d62cba61780b19c852687d64831906aa71d6882f7",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Conditional observation-usable correction, finite query/remedy synthesis on inherited history, and funded carrier refinement with current authenticated authority. No ethical-axiom proof, empirical efficacy or novel planning algorithm.",
+  "version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "AlignmentContinuityCases.lean:45:40: error(lean.synthInstanceFailed): failed to synthesize instance of type class\n  Inhabited (AlignmentInquiry.Plan ReformInquiry.Query ReformInquiry.Remedy)\n\nHint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.\nAlignmentContinuityCases.lean:58:74: error: unexpected identifier; expected '}'\n"
+}

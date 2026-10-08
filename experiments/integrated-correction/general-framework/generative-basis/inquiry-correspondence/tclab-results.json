@@ -1,0 +1,259 @@
+{
+  "status": "passed",
+  "analysis_source_sha256": "8e0f917554a47960d73f5afeba6a2dde612c4c2089ef464486618c6b5dfbc92d",
+  "provenance_sha256": "b553747deb40275e4be1827a8f143eac617c159cc93e56451c5cf48db34eef39",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "physical_runs": [
+    {
+      "label": "initial",
+      "path": "sources/tclab-benchmark/extracted/2_PID/0_initial_PID/data.txt",
+      "gains": {
+        "Kc": 5.745521148646428,
+        "tauI_seconds": 175.1814480958061
+      },
+      "metrics": {
+        "samples": 599,
+        "elapsed_seconds": 598.0565781593323,
+        "interval_seconds_min": 0.875199556350708,
+        "interval_seconds_max": 1.1259057521820068,
+        "intervals_above_1_05_seconds": 94,
+        "mean_absolute_tracking_error_celsius": 5.73449081803005,
+        "mean_absolute_command_movement_percent": 0.712674078660821,
+        "paper_absolute_objective": 6.090827857360461,
+        "archived_search_signed_objective_on_observations": 5.777550709062806,
+        "time_weighted_absolute_tracking_error_celsius": 5.743324873733486,
+        "commanded_percent_seconds_left_hold": 27292.48357669395,
+        "measured_t1_min_celsius": 21.19,
+        "measured_t1_max_celsius": 58.28,
+        "zero_command_samples": 45,
+        "full_command_samples": 82
+      },
+      "command_replay": {
+        "commands": 598,
+        "max_absolute_replay_error_percent": 0.0,
+        "mean_absolute_replay_error_percent": 0.0,
+        "replay_errors_above_1e_minus_9": 0,
+        "one_degree_perturbation_max_command_change_percent": 5.78244809142981,
+        "one_sample_stale_max_command_change_percent": 3.756820506555968,
+        "counterfactual_scope": "Command recomputation at the same recorded integral and sample; not simulated or observed counterfactual temperature."
+      }
+    },
+    {
+      "label": "validation_1",
+      "path": "sources/tclab-benchmark/extracted/2_PID/2_optimize_PID/validation_test1/validate.txt",
+      "gains": {
+        "Kc": 10.0,
+        "tauI_seconds": 55.0
+      },
+      "metrics": {
+        "samples": 599,
+        "elapsed_seconds": 598.1907215118408,
+        "interval_seconds_min": 0.8439650535583496,
+        "interval_seconds_max": 1.151778221130371,
+        "intervals_above_1_05_seconds": 151,
+        "mean_absolute_tracking_error_celsius": 5.314207011686143,
+        "mean_absolute_command_movement_percent": 0.9007485000040368,
+        "paper_absolute_objective": 5.7645812616881615,
+        "archived_search_signed_objective_on_observations": 5.358167321480791,
+        "time_weighted_absolute_tracking_error_celsius": 5.3204506145566555,
+        "commanded_percent_seconds_left_hold": 28565.140940317444,
+        "measured_t1_min_celsius": 19.93,
+        "measured_t1_max_celsius": 60.86,
+        "zero_command_samples": 60,
+        "full_command_samples": 123
+      },
+      "command_replay": {
+        "commands": 598,
+        "max_absolute_replay_error_percent": 0.0,
+        "mean_absolute_replay_error_percent": 0.0,
+        "replay_errors_above_1e_minus_9": 0,
+        "one_degree_perturbation_max_command_change_percent": 10.209414222023703,
+        "one_sample_stale_max_command_change_percent": 4.5808409994298245,
+        "counterfactual_scope": "Command recomputation at the same recorded integral and sample; not simulated or observed counterfactual temperature."
+      },
+      "observed_absolute_objective_reduction_percent": 5.3563588285957975
+    },
+    {
+      "label": "validation_2",
+      "path": "sources/tclab-benchmark/extracted/2_PID/2_optimize_PID/validation_test2/validate.txt",
+      "gains": {
+        "Kc": 10.0,
+        "tauI_seconds": 55.0
+      },
+      "metrics": {
+        "samples": 599,
+        "elapsed_seconds": 596.9126904010773,
+        "interval_seconds_min": 0.9612109661102295,
+        "interval_seconds_max": 1.0418567657470703,
+        "intervals_above_1_05_seconds": 0,
+        "mean_absolute_tracking_error_celsius": 5.081953255425709,
+        "mean_absolute_command_movement_percent": 0.9522245230705858,
+        "paper_absolute_objective": 5.558065516961003,
+        "archived_search_signed_objective_on_observations": 5.126929900848118,
+        "time_weighted_absolute_tracking_error_celsius": 5.091891129187475,
+        "commanded_percent_seconds_left_hold": 26504.04808138802,
+        "measured_t1_min_celsius": 21.54,
+        "measured_t1_max_celsius": 61.12,
+        "zero_command_samples": 68,
+        "full_command_samples": 116
+      },
+      "command_replay": {
+        "commands": 598,
+        "max_absolute_replay_error_percent": 0.0,
+        "mean_absolute_replay_error_percent": 0.0,
+        "replay_errors_above_1e_minus_9": 0,
+        "one_degree_perturbation_max_command_change_percent": 10.188991936770357,
+        "one_sample_stale_max_command_change_percent": 7.9450686732204865,
+        "counterfactual_scope": "Command recomputation at the same recorded integral and sample; not simulated or observed counterfactual temperature."
+      },
+      "observed_absolute_objective_reduction_percent": 8.746961051536553
+    }
+  ],
+  "total_logged_samples": 1797,
+  "total_replayed_commands": 1794,
+  "identification": [
+    {
+      "channel": "T1",
+      "second_heater_included": false,
+      "fit_samples": 598,
+      "validation_samples": 598,
+      "parameters": [
+        0.08293212877237888,
+        0.7250161292686347,
+        0.26962331372719134,
+        0.0004279393303753463,
+        0.00556840034816746
+      ],
+      "design_rank": 5,
+      "design_condition_number": 1183.7603646813734,
+      "training_one_step": {
+        "rmse_celsius": 0.14345931322431207,
+        "mae_celsius": 0.09507809035461912,
+        "max_absolute_error_celsius": 1.185710441896795
+      },
+      "validation_one_step": {
+        "rmse_celsius": 0.22370126181657005,
+        "mae_celsius": 0.11390055263828788,
+        "max_absolute_error_celsius": 3.4754268250109703
+      },
+      "training_max_radius_validation_exceedances": 2,
+      "validation_free_rollout": {
+        "rmse_celsius": 5.93346114996609,
+        "mae_celsius": 5.311309746365374,
+        "max_absolute_error_celsius": 9.45288224614005
+      },
+      "scope": "Our ordinary least-squares recorded-index ARX analysis, not reproduction of GEKKO prediction-error fitting. Prior measured temperatures are available in one-step forecasts; free rollout uses only the first two temperatures and the recorded input schedule. Sampling indices are nominal seconds, not measured open-loop deadlines."
+    },
+    {
+      "channel": "T1",
+      "second_heater_included": true,
+      "fit_samples": 598,
+      "validation_samples": 598,
+      "parameters": [
+        0.08188777619295852,
+        0.7255180874507698,
+        0.26909239467124085,
+        0.00044024922334093985,
+        0.00556880811017281,
+        0.0008252585508037522,
+        -0.0007837300695272645
+      ],
+      "design_rank": 7,
+      "design_condition_number": 1377.4606484636884,
+      "training_one_step": {
+        "rmse_celsius": 0.1433623302137463,
+        "mae_celsius": 0.09513326241000632,
+        "max_absolute_error_celsius": 1.1842831372346794
+      },
+      "validation_one_step": {
+        "rmse_celsius": 0.22345590440150187,
+        "mae_celsius": 0.11309867548946209,
+        "max_absolute_error_celsius": 3.4779172927852215
+      },
+      "training_max_radius_validation_exceedances": 2,
+      "validation_free_rollout": {
+        "rmse_celsius": 5.777561775865793,
+        "mae_celsius": 5.151931626494332,
+        "max_absolute_error_celsius": 9.326156883919197
+      },
+      "scope": "Our ordinary least-squares recorded-index ARX analysis, not reproduction of GEKKO prediction-error fitting. Prior measured temperatures are available in one-step forecasts; free rollout uses only the first two temperatures and the recorded input schedule. Sampling indices are nominal seconds, not measured open-loop deadlines."
+    },
+    {
+      "channel": "T2",
+      "second_heater_included": false,
+      "fit_samples": 598,
+      "validation_samples": 598,
+      "parameters": [
+        0.24749130807860406,
+        0.9317303754986992,
+        0.06536000998174837,
+        -0.00039748576403418867,
+        -0.0005858787862385679
+      ],
+      "design_rank": 5,
+      "design_condition_number": 728.5714706025934,
+      "training_one_step": {
+        "rmse_celsius": 0.21660963885474538,
+        "mae_celsius": 0.164353937404585,
+        "max_absolute_error_celsius": 1.084498760211666
+      },
+      "validation_one_step": {
+        "rmse_celsius": 0.19409426914658084,
+        "mae_celsius": 0.15429720179754183,
+        "max_absolute_error_celsius": 0.597526201059992
+      },
+      "training_max_radius_validation_exceedances": 0,
+      "validation_free_rollout": {
+        "rmse_celsius": 8.190726637727865,
+        "mae_celsius": 6.354381694805516,
+        "max_absolute_error_celsius": 15.667015169594329
+      },
+      "scope": "Our ordinary least-squares recorded-index ARX analysis, not reproduction of GEKKO prediction-error fitting. Prior measured temperatures are available in one-step forecasts; free rollout uses only the first two temperatures and the recorded input schedule. Sampling indices are nominal seconds, not measured open-loop deadlines."
+    },
+    {
+      "channel": "T2",
+      "second_heater_included": true,
+      "fit_samples": 598,
+      "validation_samples": 598,
+      "parameters": [
+        0.16942720208690346,
+        0.6048054872198745,
+        0.38934782480822955,
+        0.000303970695557152,
+        -0.0001715357587488986,
+        0.002854068944966197,
+        0.0005874077768264115
+      ],
+      "design_rank": 7,
+      "design_condition_number": 980.742323343914,
+      "training_one_step": {
+        "rmse_celsius": 0.17575684348513354,
+        "mae_celsius": 0.12507080338831017,
+        "max_absolute_error_celsius": 1.0123656152039189
+      },
+      "validation_one_step": {
+        "rmse_celsius": 0.16886217223818423,
+        "mae_celsius": 0.12943255154391495,
+        "max_absolute_error_celsius": 0.5691595177922721
+      },
+      "training_max_radius_validation_exceedances": 0,
+      "validation_free_rollout": {
+        "rmse_celsius": 3.9338892985432,
+        "mae_celsius": 3.5563030040073875,
+        "max_absolute_error_celsius": 7.486553508875538
+      },
+      "scope": "Our ordinary least-squares recorded-index ARX analysis, not reproduction of GEKKO prediction-error fitting. Prior measured temperatures are available in one-step forecasts; free rollout uses only the first two temperatures and the recorded input schedule. Sampling indices are nominal seconds, not measured open-loop deadlines."
+    }
+  ],
+  "source_discrepancy": "Archived optimizer sums signed moves; paper equation and reported objective use absolute moves. The present reanalysis reproduces the latter from physical logs. The archived search is not certified as minimizing that objective.",
+  "empirical_limits": [
+    "Published archival physical observations, not new independent hardware runs.",
+    "No randomized treatment assignment or isolation of all ambient differences.",
+    "Measured feedback-to-command replay does not establish absolute sensor truth or the plant response to unexecuted commands.",
+    "Percent-seconds is commanded duty exposure, not measured energy.",
+    "No sensor typical specification is treated as a worst-case bound.",
+    "No moral value or living threshold is inferred from tracking performance.",
+    "Observed residual maxima are not future-error guarantees."
+  ]
+}

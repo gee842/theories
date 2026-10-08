@@ -1,0 +1,313 @@
+{
+  "entry_ids": [
+    "C28",
+    "F20"
+  ],
+  "previous_entries": [
+    {
+      "id": "C28",
+      "title_zh": "尺度描述、误差与具体条件",
+      "title_en": "Scale descriptions, error and particular conditions",
+      "claim_zh": "同一历史的变化描述可在明确误差界内组合，并支持逐项条件判断；精确总量仍可能遗漏具体损失，组织变化可使旧描述失效。取得证据后的付费、耗时修订可改变实际回应，但校准与有限支持仍可使其失败，固定回应也可成功。同一时限下的查询／直接回应比较进一步以共同可行回应的交集识别有关区别，保留查询过晚与支持不足，并修订选择条件。变化依存下还须校准记录有效期；刷新后仍可能失效，后续变化界给出有条件的修复。 此前保留旧读数的留出检验保留最大变化界被突破及迁移失败；该轮所试区间均宽于控制器软目标带，完整经验认证尚未成立。 后续局部历史模型改善18项留出预测比较，胜过同容量跨通道模型；三个窄百分位区间仍有实际失败。",
+      "claim_en": "Changing descriptions of one history compose under explicit error bounds and support indexed condition judgments; exact totals can still omit particular losses, and organizational change can defeat an earlier description. Acquired, paid and delayed revision can change the enacted response, while calibration and finite support can defeat it and a fixed response can also succeed. Common-horizon inquiry/immediate-response comparison identifies consequential distinctions through common admissible actions, retaining late inquiry and inadequate support and repairing the selection guard. Changed dependencies require calibrated temporal validity; a fresh reading can still fail, and bounded subsequent change supports a conditional repair. Earlier retained-reading tests retain maximum-envelope violations and transfer failures; every interval in that round exceeds the controller’s soft target width, leaving empirical certification incomplete. A subsequent local-history model improves 18 held-out comparisons and beats an equal-size coupled model; three narrow percentile intervals retain actual misses.",
+      "scope_zh": "四轮新增21／27／28／25项定理，各自继承42／106／133／161项审计；校准、局部法则与目标根据明确，身体／组织研究另计；本轮12,440项区间数值复核，无新定理、硬件复现或完整生物闭环认证；后续10,930项预测经另一数值实现复核，独立新运行与联合生物验证仍待完成",
+      "scope_en": "Four rounds add 21 / 27 / 28 / 25 theorems and replay 42 / 106 / 133 / 161 inherited audits; explicit calibration, local laws and target warrant; embodied/organized work separate; this round cross-checks 12,440 interval evaluations, with no new theorem, hardware replication or complete biological-loop certification; a further 10,930 forecasts are cross-checked by another numerical implementation; independent new runs and joint biological validation remain open",
+      "links": [
+        {
+          "label_zh": "当前双语论述",
+          "label_en": "Current bilingual account",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md"
+        },
+        {
+          "label_zh": "整合、反审与来源",
+          "label_en": "Integration, counterreview and sources",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-INTEGRATION.md"
+        },
+        {
+          "label_zh": "取得证据后的修订与反审",
+          "label_en": "Acquired revision and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCALE-REVISION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "查询选择整合与反审",
+          "label_en": "Inquiry choice and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CHOICE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "变化依存整合与反审",
+          "label_en": "Changing-dependency integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANGING-DEPENDENCY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "实际变化界检验与完成范围",
+          "label_en": "Actual-bound test and completion scope",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BOUND-CALIBRATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "动态预测与不确定性实证",
+          "label_en": "Predictive dynamics and uncertainty test",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREDICTIVE-CALIBRATION-INTEGRATION.md"
+        }
+      ]
+    },
+    {
+      "id": "F20",
+      "title_zh": "尺度近似与条件传递的形式检查",
+      "title_en": "Formal checks of scale approximation and condition transport",
+      "claim_zh": "有限时域误差递推、两尺度组合、指标校准和条件传递经过实查，并保留耦合变化、误差累积及总量丢失局部条件的反例。后续检查实际证据取得、描述修订、误差余量与回应，保留耗时、读数偏差、工作耗尽及支持不足的失败和固定回应成功。同一时限下的查询／直接回应比较进一步以共同可行回应的交集识别有关区别，保留查询过晚与支持不足，并修订选择条件。变化依存下还须校准记录有效期；刷新后仍可能失效，后续变化界给出有条件的修复。 此前保留旧读数的留出检验保留最大变化界被突破及迁移失败；该轮所试区间均宽于控制器软目标带，完整经验认证尚未成立。 后续局部历史模型改善18项留出预测比较，胜过同容量跨通道模型；三个窄百分位区间仍有实际失败。",
+      "claim_en": "Checked finite-horizon error propagation, two-scale composition, readout calibration and condition transport retain counterexamples for changed coupling, accumulated error and local conditions lost by exact totals. Continuation checks actual acquisition, revision, error margins and response, retaining delay, sensor bias, exhausted work, insufficient support and a successful fixed response. Common-horizon inquiry/immediate-response comparison identifies consequential distinctions through common admissible actions, retaining late inquiry and inadequate support and repairing the selection guard. Changed dependencies require calibrated temporal validity; a fresh reading can still fail, and bounded subsequent change supports a conditional repair. Earlier retained-reading tests retain maximum-envelope violations and transfer failures; every interval in that round exceeds the controller’s soft target width, leaving empirical certification incomplete. A subsequent local-history model improves 18 held-out comparisons and beats an equal-size coupled model; three narrow percentile intervals retain actual misses.",
+      "scope_zh": "四轮新增21／27／28／25项定理，各自继承42／106／133／161项审计；校准、局部法则与目标根据明确，身体／组织研究另计；本轮12,440项区间数值复核，无新定理、硬件复现或完整生物闭环认证；后续10,930项预测经另一数值实现复核，独立新运行与联合生物验证仍待完成",
+      "scope_en": "Four rounds add 21 / 27 / 28 / 25 theorems and replay 42 / 106 / 133 / 161 inherited audits; explicit calibration, local laws and target warrant; embodied/organized work separate; this round cross-checks 12,440 interval evaluations, with no new theorem, hardware replication or complete biological-loop certification; a further 10,930 forecasts are cross-checked by another numerical implementation; independent new runs and joint biological validation remain open",
+      "links": [
+        {
+          "label_zh": "证明与前提",
+          "label_en": "Proof and hypotheses",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-PROOF.md"
+        },
+        {
+          "label_zh": "Lean 源码",
+          "label_en": "Lean source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean"
+        },
+        {
+          "label_zh": "实查回执",
+          "label_en": "Checked receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/scales-verification.json"
+        },
+        {
+          "label_zh": "取得证据后的修订与反审",
+          "label_en": "Acquired revision and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCALE-REVISION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "修订 Lean 源码",
+          "label_en": "Revision Lean source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean"
+        },
+        {
+          "label_zh": "修订实查回执",
+          "label_en": "Revision checked receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/scale-revision-verification.json"
+        },
+        {
+          "label_zh": "查询选择整合与反审",
+          "label_en": "Inquiry choice and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CHOICE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "查询选择 Lean",
+          "label_en": "Inquiry-choice Lean",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean"
+        },
+        {
+          "label_zh": "查询选择实查回执",
+          "label_en": "Inquiry-choice receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/inquiry-choice-verification.json"
+        },
+        {
+          "label_zh": "变化依存整合与反审",
+          "label_en": "Changing-dependency integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANGING-DEPENDENCY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "变化依存 Lean",
+          "label_en": "Changing-dependency Lean",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean"
+        },
+        {
+          "label_zh": "变化依存实查回执",
+          "label_en": "Changing-dependency receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/changing-dependency-verification.json"
+        },
+        {
+          "label_zh": "实际变化界检验与完成范围",
+          "label_en": "Actual-bound test and completion scope",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BOUND-CALIBRATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "经验计算复核",
+          "label_en": "Empirical computation cross-check",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/bound-calibration-checks.json"
+        },
+        {
+          "label_zh": "动态预测与不确定性实证",
+          "label_en": "Predictive dynamics and uncertainty test",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREDICTIVE-CALIBRATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "预测数值复核",
+          "label_en": "Prediction computation cross-check",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/predictive-calibration-checks.json"
+        }
+      ]
+    }
+  ],
+  "updated_entries": [
+    {
+      "id": "C28",
+      "title_zh": "尺度描述、误差与具体条件",
+      "title_en": "Scale descriptions, error and particular conditions",
+      "claim_zh": "同一历史的变化描述可在明确误差界内组合，并支持逐项条件判断；精确总量仍可能遗漏具体损失，组织变化可使旧描述失效。取得证据后的付费、耗时修订可改变实际回应，但校准与有限支持仍可使其失败，固定回应也可成功。同一时限下的查询／直接回应比较进一步以共同可行回应的交集识别有关区别，保留查询过晚与支持不足，并修订选择条件。变化依存下还须校准记录有效期；刷新后仍可能失效，后续变化界给出有条件的修复。 此前保留旧读数的留出检验保留最大变化界被突破及迁移失败；该轮所试区间均宽于控制器软目标带，完整经验认证尚未成立。 后续局部历史模型改善18项留出预测比较，胜过同容量跨通道模型；三个窄百分位区间仍有实际失败。 接续充分性进一步要求活动后的每个观察类仍支持剩余时域的回应；一般递推等价于依记录分支的有限方案，保留眼前成功而后继冲突，以及取得区别／实际改变依存两种修复。",
+      "claim_en": "Changing descriptions of one history compose under explicit error bounds and support indexed condition judgments; exact totals can still omit particular losses, and organizational change can defeat an earlier description. Acquired, paid and delayed revision can change the enacted response, while calibration and finite support can defeat it and a fixed response can also succeed. Common-horizon inquiry/immediate-response comparison identifies consequential distinctions through common admissible actions, retaining late inquiry and inadequate support and repairing the selection guard. Changed dependencies require calibrated temporal validity; a fresh reading can still fail, and bounded subsequent change supports a conditional repair. Earlier retained-reading tests retain maximum-envelope violations and transfer failures; every interval in that round exceeds the controller’s soft target width, leaving empirical certification incomplete. A subsequent local-history model improves 18 held-out comparisons and beats an equal-size coupled model; three narrow percentile intervals retain actual misses. Continuation adequacy further requires each post-activity observation class to support the remaining horizon; the recursion is equivalent to a finite observation-dependent plan, retaining later conflict and repairs through information or actual dependency change.",
+      "scope_zh": "四轮新增21／27／28／25项定理，各自继承42／106／133／161项审计；校准、局部法则与目标根据明确，身体／组织研究另计；本轮12,440项区间数值复核，无新定理、硬件复现或完整生物闭环认证；后续10,930项预测经另一数值实现复核，独立新运行与联合生物验证仍待完成；理论接续新增14项定理／14项审计（9项空依赖），不以新增经验数据为该接口完成门槛",
+      "scope_en": "Four rounds add 21 / 27 / 28 / 25 theorems and replay 42 / 106 / 133 / 161 inherited audits; explicit calibration, local laws and target warrant; embodied/organized work separate; this round cross-checks 12,440 interval evaluations, with no new theorem, hardware replication or complete biological-loop certification; a further 10,930 forecasts are cross-checked by another numerical implementation; independent new runs and joint biological validation remain open; theoretical continuation adds 14 theorems/audits (9 empty dependencies); new empirical data are not a completion gate for this conditional interface",
+      "links": [
+        {
+          "label_zh": "当前双语论述",
+          "label_en": "Current bilingual account",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md"
+        },
+        {
+          "label_zh": "整合、反审与来源",
+          "label_en": "Integration, counterreview and sources",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-INTEGRATION.md"
+        },
+        {
+          "label_zh": "取得证据后的修订与反审",
+          "label_en": "Acquired revision and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCALE-REVISION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "查询选择整合与反审",
+          "label_en": "Inquiry choice and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CHOICE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "变化依存整合与反审",
+          "label_en": "Changing-dependency integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANGING-DEPENDENCY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "实际变化界检验与完成范围",
+          "label_en": "Actual-bound test and completion scope",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BOUND-CALIBRATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "动态预测与不确定性实证",
+          "label_en": "Predictive dynamics and uncertainty test",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREDICTIVE-CALIBRATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "接续充分性推导与反审",
+          "label_en": "Continuation adequacy and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-ADEQUACY-INTEGRATION.md"
+        }
+      ]
+    },
+    {
+      "id": "F20",
+      "title_zh": "尺度近似与条件传递的形式检查",
+      "title_en": "Formal checks of scale approximation and condition transport",
+      "claim_zh": "有限时域误差递推、两尺度组合、指标校准和条件传递经过实查，并保留耦合变化、误差累积及总量丢失局部条件的反例。后续检查实际证据取得、描述修订、误差余量与回应，保留耗时、读数偏差、工作耗尽及支持不足的失败和固定回应成功。同一时限下的查询／直接回应比较进一步以共同可行回应的交集识别有关区别，保留查询过晚与支持不足，并修订选择条件。变化依存下还须校准记录有效期；刷新后仍可能失效，后续变化界给出有条件的修复。 此前保留旧读数的留出检验保留最大变化界被突破及迁移失败；该轮所试区间均宽于控制器软目标带，完整经验认证尚未成立。 后续局部历史模型改善18项留出预测比较，胜过同容量跨通道模型；三个窄百分位区间仍有实际失败。 接续充分性进一步要求活动后的每个观察类仍支持剩余时域的回应；一般递推等价于依记录分支的有限方案，保留眼前成功而后继冲突，以及取得区别／实际改变依存两种修复。",
+      "claim_en": "Checked finite-horizon error propagation, two-scale composition, readout calibration and condition transport retain counterexamples for changed coupling, accumulated error and local conditions lost by exact totals. Continuation checks actual acquisition, revision, error margins and response, retaining delay, sensor bias, exhausted work, insufficient support and a successful fixed response. Common-horizon inquiry/immediate-response comparison identifies consequential distinctions through common admissible actions, retaining late inquiry and inadequate support and repairing the selection guard. Changed dependencies require calibrated temporal validity; a fresh reading can still fail, and bounded subsequent change supports a conditional repair. Earlier retained-reading tests retain maximum-envelope violations and transfer failures; every interval in that round exceeds the controller’s soft target width, leaving empirical certification incomplete. A subsequent local-history model improves 18 held-out comparisons and beats an equal-size coupled model; three narrow percentile intervals retain actual misses. Continuation adequacy further requires each post-activity observation class to support the remaining horizon; the recursion is equivalent to a finite observation-dependent plan, retaining later conflict and repairs through information or actual dependency change.",
+      "scope_zh": "四轮新增21／27／28／25项定理，各自继承42／106／133／161项审计；校准、局部法则与目标根据明确，身体／组织研究另计；本轮12,440项区间数值复核，无新定理、硬件复现或完整生物闭环认证；后续10,930项预测经另一数值实现复核，独立新运行与联合生物验证仍待完成；理论接续新增14项定理／14项审计（9项空依赖），不以新增经验数据为该接口完成门槛",
+      "scope_en": "Four rounds add 21 / 27 / 28 / 25 theorems and replay 42 / 106 / 133 / 161 inherited audits; explicit calibration, local laws and target warrant; embodied/organized work separate; this round cross-checks 12,440 interval evaluations, with no new theorem, hardware replication or complete biological-loop certification; a further 10,930 forecasts are cross-checked by another numerical implementation; independent new runs and joint biological validation remain open; theoretical continuation adds 14 theorems/audits (9 empty dependencies); new empirical data are not a completion gate for this conditional interface",
+      "links": [
+        {
+          "label_zh": "证明与前提",
+          "label_en": "Proof and hypotheses",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/RELATIONS-ACROSS-SCALES-PROOF.md"
+        },
+        {
+          "label_zh": "Lean 源码",
+          "label_en": "Lean source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/RelationsAcrossScales.lean"
+        },
+        {
+          "label_zh": "实查回执",
+          "label_en": "Checked receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/scales-verification.json"
+        },
+        {
+          "label_zh": "取得证据后的修订与反审",
+          "label_en": "Acquired revision and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SCALE-REVISION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "修订 Lean 源码",
+          "label_en": "Revision Lean source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ScaleRevision.lean"
+        },
+        {
+          "label_zh": "修订实查回执",
+          "label_en": "Revision checked receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/scale-revision-verification.json"
+        },
+        {
+          "label_zh": "查询选择整合与反审",
+          "label_en": "Inquiry choice and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/INQUIRY-CHOICE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "查询选择 Lean",
+          "label_en": "Inquiry-choice Lean",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/InquiryChoice.lean"
+        },
+        {
+          "label_zh": "查询选择实查回执",
+          "label_en": "Inquiry-choice receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/inquiry-choice-verification.json"
+        },
+        {
+          "label_zh": "变化依存整合与反审",
+          "label_en": "Changing-dependency integration",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CHANGING-DEPENDENCY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "变化依存 Lean",
+          "label_en": "Changing-dependency Lean",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ChangingDependency.lean"
+        },
+        {
+          "label_zh": "变化依存实查回执",
+          "label_en": "Changing-dependency receipt",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/changing-dependency-verification.json"
+        },
+        {
+          "label_zh": "实际变化界检验与完成范围",
+          "label_en": "Actual-bound test and completion scope",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BOUND-CALIBRATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "经验计算复核",
+          "label_en": "Empirical computation cross-check",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/bound-calibration-checks.json"
+        },
+        {
+          "label_zh": "动态预测与不确定性实证",
+          "label_en": "Predictive dynamics and uncertainty test",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PREDICTIVE-CALIBRATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "预测数值复核",
+          "label_en": "Prediction computation cross-check",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/inquiry-correspondence/predictive-calibration-checks.json"
+        },
+        {
+          "label_zh": "接续充分性推导与反审",
+          "label_en": "Continuation adequacy and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-ADEQUACY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "接续 Lean",
+          "label_en": "Continuation Lean",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean"
+        },
+        {
+          "label_zh": "接续实查回执",
+          "label_en": "Continuation verification",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/continuation-adequacy-verification.json"
+        }
+      ]
+    }
+  ],
+  "unrelated_entries_preserved": 88,
+  "reviewed_paths": [
+    "_process/research/2026-10-05-generative-foundation-review/root-foundation/CONTINUATION-ADEQUACY-INTEGRATION.md",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/RELATIONS-ACROSS-SCALES.md",
+    "sources/15-codex-theory-conversations/2026-10-08-relations-across-scales.md",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/ContinuationAdequacy.lean",
+    "experiments/integrated-correction/general-framework/generative-basis/lean/systems-complexity/analysis/continuation-adequacy-verification.json"
+  ],
+  "scope": "Owned C28/F20 content and actually read versions only; other entries and discovery work preserved."
+}

@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "scope": "Owned relational correction documents, proof, finite controls and rows; not independent review or whole-table freshness",
+  "new_theorems": 39,
+  "new_declaration_audits": 55,
+  "empty_audits": 38,
+  "propext_only_audits": 17,
+  "inherited_repository_audits": 0,
+  "document_links": 31,
+  "paired_revision_cases": 1284,
+  "scoped_rows": [
+    "C33",
+    "M23",
+    "F29"
+  ],
+  "document_sha256": "cb96db97e70fbb62136aecb6248d2d298d48fdf8c98d872df3f7f56d8eee7e10",
+  "checker_sha256": "29261e595a78b146ce1049b57f6d90e9f6a74d950b9ac5e34fd849c74bc44ff0",
+  "shared_index_pending": {
+    "modified_sources": [
+      "RESEARCH.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ALIGNMENT-AND-GOVERNANCE.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/HUIGEN.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/LIANGZHI-EVOLUTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md",
+      "theories/shengsheng-buxi-generative-existence/README.md",
+      "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EVOLUTIONARY-ORGANIZATION.md",
+      "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/evolution-connectionism/README.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/ASSEMBLY-DERIVED-SELECTION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATED-LOGIC.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-LOGIC-INTEGRATION.md",
+      "sources/15-codex-theory-conversations/2026-10-08-generative-logic-investigation.md"
+    ],
+    "missing_sources": [],
+    "new_pages": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-ARGUMENT.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-INTEGRATION.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-PROOF.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-REVIEW.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/CROSSED-CLAIMS-SOURCES.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/EVOLUTION-CALIBRATED-UPDATER-PROTOCOL.md",
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/WISDOM-CONTEXT-PROTOCOL.md"
+    ],
+    "removed_pages": []
+  }
+}

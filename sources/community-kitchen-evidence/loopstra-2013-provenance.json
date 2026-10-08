@@ -1,0 +1,8 @@
+{
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A23618120%20AND%20SRC%3AMED&format=xml&resultType=core",
+  "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A23618120%20AND%20SRC%3AMED&format=xml&resultType=core",
+  "retrieved_at_utc": "2026-10-07T23:11:59.040268+00:00",
+  "bytes": 8407,
+  "sha256": "005548db5892962a6ade3696bd5769432b709286f850751fc2fe39ed637f4f60",
+  "scope": "Bibliographic record and abstract, not article full text"
+}

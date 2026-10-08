@@ -1,0 +1,506 @@
+{
+  "status": "passed",
+  "utc": "20261007T234515.871133Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "scope": "Exact comparison domain derived from the unchanged SystemIndividuation formation law, constructive short preparation coverage, finite continuation and selected-outcome correspondence, and support transfer on the generated domain. Original law and post-correlation scope remain explicit; no empirical law validation or universal foundational completion.",
+  "source_paths": {
+    "GenerativeCore": "experiments/integrated-correction/general-framework/generative-basis/lean/GenerativeCore.lean",
+    "SystemIndividuation": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/SystemIndividuation.lean",
+    "VariationWarrant": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/VariationWarrant.lean"
+  },
+  "source_sha256": {
+    "GenerativeCore": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "SystemIndividuation": "aa2da76bae0b742b0966d856334ed0cd7e29ccf05ce33b0b674a00e5e0689578",
+    "VariationWarrant": "599c90b9643f01b06c5185e4d38b19bb9e502efab2e9d71590fb30d6503042fa"
+  },
+  "baselines": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/system-individuation-checks/20261007T233431.104249Z/receipt.json",
+      "sha256": "3379682d8dcb4f97f2f772f6a460c8baa7a95169790bcb0a9ce95dc7d8eab5a6"
+    }
+  ],
+  "checker_sha256": {
+    "check_variation_warrant.py": "30808028af120ff0592d26062d9f2e81dbb9c743ccac57bf52a798b56ca09aa9",
+    "audit_support.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "new_modules": [
+    "VariationWarrant"
+  ],
+  "modules": [
+    {
+      "module": "GenerativeCore",
+      "new": false,
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_append_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_singleton_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_iff_singleton_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_difference_implies_state_difference"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_append_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_prefix"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_product_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_product_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_product_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_map"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_lift"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.projected_trace_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.projection_exact_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.local_exact_iff_trace_exact"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.enabled_projection_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_projection_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.feasible_difference_implies_projection_difference"
+        },
+        {
+          "kind": "theorem",
+          "name": "Generative.trace_faithful_iff"
+        }
+      ],
+      "theorems": 18,
+      "axiom_dependencies": {
+        "Generative.trace_append_iff": [],
+        "Generative.trace_singleton_iff": [],
+        "Generative.enabled_iff_singleton_trace": [],
+        "Generative.enabled_difference_implies_state_difference": [],
+        "Generative.feasible_append_iff": [],
+        "Generative.feasible_prefix": [],
+        "Generative.enabled_product_iff": [],
+        "Generative.trace_product_iff": [],
+        "Generative.feasible_product_iff": [],
+        "Generative.trace_map": [],
+        "Generative.trace_lift": [],
+        "Generative.projected_trace_iff": [],
+        "Generative.projection_exact_iff": [],
+        "Generative.local_exact_iff_trace_exact": [],
+        "Generative.enabled_projection_iff": [],
+        "Generative.feasible_projection_iff": [],
+        "Generative.feasible_difference_implies_projection_difference": [],
+        "Generative.trace_faithful_iff": []
+      },
+      "kernel_checked": true,
+      "audit_scope": "exact inherited baseline inventory"
+    },
+    {
+      "module": "SystemIndividuation",
+      "new": false,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "SystemIndividuation.Agree"
+        },
+        {
+          "kind": "def",
+          "name": "SystemIndividuation.Supports"
+        },
+        {
+          "kind": "def",
+          "name": "SystemIndividuation.Recombines"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemIndividuation.support_mono"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemIndividuation.support_restrict_domain"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemIndividuation.intersection_support_of_recombination"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemIndividuation.full_product_recombines"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemIndividuation.full_product_support_intersection"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemIndividuation.contrast_excludes_agreement"
+        },
+        {
+          "kind": "inductive",
+          "name": "SystemIndividuation.Position"
+        },
+        {
+          "kind": "def",
+          "name": "SystemIndividuation.jointRead"
+        },
+        {
+          "kind": "def",
+          "name": "SystemIndividuation.diagonal"
+        },
+        {
+          "kind": "def",
+          "name": "SystemIndividuation.leftRegion"
+        },
+        {
+          "kind": "def",
+          "name": "SystemIndividuation.rightRegion"
+        },
+        {
+          "kind": "def",
+          "name": "SystemIndividuation.response"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemIndividuation.left_supports_on_diagonal"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemIndividuation.right_supports_on_diagonal"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemIndividuation.empty_does_not_support_on_diagonal"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemIndividuation.intersection_does_not_support_on_diagonal"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemIndividuation.diagonal_does_not_recombine"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemIndividuation.diagonal_has_no_least_support"
+        },
+        {
+          "kind": "def",
+          "name": "SystemIndividuation.MinimalSupport"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemIndividuation.left_is_minimal_support"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemIndividuation.right_is_minimal_support"
+        },
+        {
+          "kind": "def",
+          "name": "SystemIndividuation.IsolatedContrast"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemIndividuation.no_isolated_contrast_on_diagonal"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemIndividuation.joint_contrast_on_diagonal"
+        },
+        {
+          "kind": "inductive",
+          "name": "SystemIndividuation.Event"
+        },
+        {
+          "kind": "def",
+          "name": "SystemIndividuation.process"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemIndividuation.correlate_establishes_diagonal"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemIndividuation.diagonal_preserved_by_step"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemIndividuation.diagonal_preserved_by_trace"
+        },
+        {
+          "kind": "def",
+          "name": "SystemIndividuation.PossibilitySupport"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemIndividuation.diagonal_right_identifies_state"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemIndividuation.diagonal_left_identifies_state"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemIndividuation.right_supports_all_possibilities_on_diagonal"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemIndividuation.left_supports_all_possibilities_on_diagonal"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemIndividuation.right_does_not_support_all_possibilities_before_restriction"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemIndividuation.formation_and_possibility_change_same_history"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemIndividuation.pulse_unavailable_immediately_after_formation"
+        },
+        {
+          "kind": "theorem",
+          "name": "SystemIndividuation.pulse_available_after_flip"
+        }
+      ],
+      "theorems": 27,
+      "axiom_dependencies": {
+        "SystemIndividuation.Agree": [],
+        "SystemIndividuation.Supports": [],
+        "SystemIndividuation.Recombines": [],
+        "SystemIndividuation.support_mono": [],
+        "SystemIndividuation.support_restrict_domain": [],
+        "SystemIndividuation.intersection_support_of_recombination": [],
+        "SystemIndividuation.full_product_recombines": [],
+        "SystemIndividuation.full_product_support_intersection": [],
+        "SystemIndividuation.contrast_excludes_agreement": [],
+        "SystemIndividuation.Position": [],
+        "SystemIndividuation.jointRead": [],
+        "SystemIndividuation.diagonal": [],
+        "SystemIndividuation.leftRegion": [],
+        "SystemIndividuation.rightRegion": [],
+        "SystemIndividuation.response": [],
+        "SystemIndividuation.left_supports_on_diagonal": [],
+        "SystemIndividuation.right_supports_on_diagonal": [],
+        "SystemIndividuation.empty_does_not_support_on_diagonal": [],
+        "SystemIndividuation.intersection_does_not_support_on_diagonal": [],
+        "SystemIndividuation.diagonal_does_not_recombine": [],
+        "SystemIndividuation.diagonal_has_no_least_support": [],
+        "SystemIndividuation.MinimalSupport": [],
+        "SystemIndividuation.left_is_minimal_support": [],
+        "SystemIndividuation.right_is_minimal_support": [],
+        "SystemIndividuation.IsolatedContrast": [],
+        "SystemIndividuation.no_isolated_contrast_on_diagonal": [],
+        "SystemIndividuation.joint_contrast_on_diagonal": [],
+        "SystemIndividuation.Event": [],
+        "SystemIndividuation.process": [],
+        "SystemIndividuation.correlate_establishes_diagonal": [],
+        "SystemIndividuation.diagonal_preserved_by_step": [],
+        "SystemIndividuation.diagonal_preserved_by_trace": [],
+        "SystemIndividuation.PossibilitySupport": [],
+        "SystemIndividuation.diagonal_right_identifies_state": [],
+        "SystemIndividuation.diagonal_left_identifies_state": [],
+        "SystemIndividuation.right_supports_all_possibilities_on_diagonal": [],
+        "SystemIndividuation.left_supports_all_possibilities_on_diagonal": [],
+        "SystemIndividuation.right_does_not_support_all_possibilities_before_restriction": [],
+        "SystemIndividuation.formation_and_possibility_change_same_history": [],
+        "SystemIndividuation.pulse_unavailable_immediately_after_formation": [],
+        "SystemIndividuation.pulse_available_after_flip": []
+      },
+      "kernel_checked": true,
+      "audit_scope": "exact inherited baseline inventory"
+    },
+    {
+      "module": "VariationWarrant",
+      "new": true,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "VariationWarrant.Prepared"
+        },
+        {
+          "kind": "def",
+          "name": "VariationWarrant.preparation"
+        },
+        {
+          "kind": "theorem",
+          "name": "VariationWarrant.preparation_shape"
+        },
+        {
+          "kind": "theorem",
+          "name": "VariationWarrant.preparation_trace"
+        },
+        {
+          "kind": "theorem",
+          "name": "VariationWarrant.every_prepared_endpoint_is_diagonal"
+        },
+        {
+          "kind": "theorem",
+          "name": "VariationWarrant.every_diagonal_endpoint_has_preparation"
+        },
+        {
+          "kind": "theorem",
+          "name": "VariationWarrant.prepared_iff_diagonal"
+        },
+        {
+          "kind": "theorem",
+          "name": "VariationWarrant.prepared_iff_short_preparation"
+        },
+        {
+          "kind": "theorem",
+          "name": "VariationWarrant.both_comparison_states_are_prepared"
+        },
+        {
+          "kind": "theorem",
+          "name": "VariationWarrant.off_diagonal_endpoint_not_prepared"
+        },
+        {
+          "kind": "theorem",
+          "name": "VariationWarrant.prepared_domain_independent_of_seed"
+        },
+        {
+          "kind": "theorem",
+          "name": "VariationWarrant.prepared_closed_under_continuation"
+        },
+        {
+          "kind": "theorem",
+          "name": "VariationWarrant.formed_continuation_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "VariationWarrant.formed_outcome_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "VariationWarrant.support_iff_prepared_tests"
+        },
+        {
+          "kind": "theorem",
+          "name": "VariationWarrant.possibility_support_iff_prepared_tests"
+        },
+        {
+          "kind": "theorem",
+          "name": "VariationWarrant.right_supports_generated_possibilities"
+        },
+        {
+          "kind": "theorem",
+          "name": "VariationWarrant.generated_response_support_iff_diagonal"
+        },
+        {
+          "kind": "theorem",
+          "name": "VariationWarrant.generated_domain_has_no_least_support"
+        },
+        {
+          "kind": "theorem",
+          "name": "VariationWarrant.off_diagonal_execution_before_formation"
+        },
+        {
+          "kind": "theorem",
+          "name": "VariationWarrant.normalization_does_not_preserve_original_word"
+        }
+      ],
+      "theorems": 19,
+      "axiom_dependencies": {
+        "VariationWarrant.Prepared": [],
+        "VariationWarrant.preparation": [],
+        "VariationWarrant.preparation_shape": [],
+        "VariationWarrant.preparation_trace": [],
+        "VariationWarrant.every_prepared_endpoint_is_diagonal": [],
+        "VariationWarrant.every_diagonal_endpoint_has_preparation": [],
+        "VariationWarrant.prepared_iff_diagonal": [],
+        "VariationWarrant.prepared_iff_short_preparation": [],
+        "VariationWarrant.both_comparison_states_are_prepared": [],
+        "VariationWarrant.off_diagonal_endpoint_not_prepared": [],
+        "VariationWarrant.prepared_domain_independent_of_seed": [],
+        "VariationWarrant.prepared_closed_under_continuation": [],
+        "VariationWarrant.formed_continuation_iff": [],
+        "VariationWarrant.formed_outcome_iff": [],
+        "VariationWarrant.support_iff_prepared_tests": [],
+        "VariationWarrant.possibility_support_iff_prepared_tests": [],
+        "VariationWarrant.right_supports_generated_possibilities": [],
+        "VariationWarrant.generated_response_support_iff_diagonal": [],
+        "VariationWarrant.generated_domain_has_no_least_support": [],
+        "VariationWarrant.off_diagonal_execution_before_formation": [],
+        "VariationWarrant.normalization_does_not_preserve_original_word": []
+      },
+      "kernel_checked": true,
+      "audit_scope": "all explicit named declarations"
+    }
+  ],
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "source_unchanged_during_check": true,
+  "counts": {
+    "new": {
+      "modules": 1,
+      "declarations": 21,
+      "theorems": 19,
+      "empty_audit_dependencies": 21,
+      "standard_dependency_audits": 0
+    },
+    "inherited": {
+      "modules": 2,
+      "declarations": 59,
+      "theorems": 45,
+      "empty_audit_dependencies": 59,
+      "standard_dependency_audits": 0
+    }
+  },
+  "artifact_sha256": {
+    "GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "GenerativeCore.log": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "GenerativeCoreAxiomAudit.lean": "10b3b3f9a2e6ac20ac1c92a94a7842c7e4ceb2707fce20b6c4488ef97b58be55",
+    "GenerativeCoreAxiomAudit.log": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "GenerativeCoreSignatures.lean": "9e41754ef6799e19922713b88553663a44d12fcc258ec9ab60878e5def2ea9f3",
+    "GenerativeCoreSignatures.log": "f52ee06d75c715af20e2b39ea416e2f8f7792c0dc82f80d233183badc8b936e1",
+    "SystemIndividuation.lean": "aa2da76bae0b742b0966d856334ed0cd7e29ccf05ce33b0b674a00e5e0689578",
+    "SystemIndividuation.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "SystemIndividuationAxiomAudit.lean": "3d6ed4b3215fd14f13041c43917750e13c8fcb4234ef6cc4b17b17fcde3b36f1",
+    "SystemIndividuationAxiomAudit.log": "5236b4513e9de37604af9ef2d34d5d5508df5ed0d67ff3cbb1742e1161161fe8",
+    "SystemIndividuationSignatures.lean": "817960282b4a3b675e160474bdc8a55ff9e282e196e41d085690391360b1945d",
+    "SystemIndividuationSignatures.log": "94c19d2131b5ceb3c17b6bc8498b1f0cff26fcd50acc0c61ab061136e3582d82",
+    "VariationWarrant.lean": "599c90b9643f01b06c5185e4d38b19bb9e502efab2e9d71590fb30d6503042fa",
+    "VariationWarrant.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "VariationWarrantAxiomAudit.lean": "4beae160632276b4995619b5a9715fc346c0b96bd935082cdd2f8e6d3274199b",
+    "VariationWarrantAxiomAudit.log": "60bcb6075e7796e48412253638a0646b3840e5bce1a5bda96cfe10b159f41527",
+    "VariationWarrantSignatures.lean": "8cdcacd36ce7604dc3a164e02dd2b57cc3433e9b8c3868ddfff57f74bec35392",
+    "VariationWarrantSignatures.log": "ed1c6c6d14c991a5d70b840f071c470acb9620fabe9170a85849739f0736ed73",
+    "audit_support.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_variation_warrant.py": "30808028af120ff0592d26062d9f2e81dbb9c743ccac57bf52a798b56ca09aa9",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

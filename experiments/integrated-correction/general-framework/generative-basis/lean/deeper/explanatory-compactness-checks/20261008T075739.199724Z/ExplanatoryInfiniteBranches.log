@@ -1,0 +1,28 @@
+'Generative.ExplanatoryInfiniteBranches.after_zero' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryInfiniteBranches.after_succ' depends on axioms: [propext]
+'Generative.ExplanatoryInfiniteBranches.after_endless' depends on axioms: [propext]
+'Generative.ExplanatoryInfiniteBranches.finite_approximates_endless' depends on axioms: [propext]
+'Generative.ExplanatoryInfiniteBranches.finite_model_agreement' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryInfiniteBranches.root_after_false' does not depend on any axioms
+'Generative.ExplanatoryInfiniteBranches.root_after_true' does not depend on any axioms
+'Generative.ExplanatoryInfiniteBranches.roots_same_all_finite_tests' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryInfiniteBranches.endless_survives' depends on axioms: [propext]
+'Generative.ExplanatoryInfiniteBranches.finite_survives_iff' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryInfiniteBranches.no_finite_matches_endless' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryInfiniteBranches.no_rooted_bisimulation' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryInfiniteBranches.countdown_not_successorCompact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryInfiniteBranches.no_infinite_run_from_finite' does not depend on any axioms
+'Generative.ExplanatoryInfiniteBranches.countdown_has_no_infinite_run' does not depend on any axioms
+'Generative.ExplanatoryInfiniteBranches.completed_has_infinite_run' does not depend on any axioms
+'Generative.ExplanatoryInfiniteBranches.finite_answers_do_not_determine_infinite_realization' depends on axioms: [propext,
+ Quot.sound]
+'Generative.ExplanatoryInfiniteBranches.countdown_no_unbounded_successor' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryInfiniteBranches.completed_unbounded_successor' depends on axioms: [propext]
+'Generative.ExplanatoryInfiniteBranches.no_finite_test_defines_unbounded_successor' depends on axioms: [propext,
+ Quot.sound]
+'Generative.ExplanatoryInfiniteBranches.completed_successorCompact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Generative.ExplanatoryInfiniteBranches.completed_not_imageFinite' depends on axioms: [propext, Quot.sound]

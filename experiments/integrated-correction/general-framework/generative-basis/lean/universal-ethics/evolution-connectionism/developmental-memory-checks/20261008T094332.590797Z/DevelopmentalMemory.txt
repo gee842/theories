@@ -1,0 +1,57 @@
+DevelopmentalMemory.lean:75:6: error: Tactic `rewrite` failed: motive is not type correct:
+  fun _a => (if _a then perturb B a b η else perturb B a b (-η)) = perturb B a b (η * s a * s b)
+Error: Application type mismatch: The argument
+  (score s (step Real.tanh 1 1 B s)).decidableLT (score s (step Real.tanh 1 1 (perturb B a b η) s))
+has type
+  Decidable (score s (step Real.tanh 1 1 B s) < score s (step Real.tanh 1 1 (perturb B a b η) s))
+but is expected to have type
+  Decidable _a
+in the application
+  @ite (Network n) _a
+    ((score s (step Real.tanh 1 1 B s)).decidableLT (score s (step Real.tanh 1 1 (perturb B a b η) s)))
+
+Explanation: The rewrite tactic rewrites an expression 'e' using an equality 'a = b' by the following process. First, it looks for all 'a' in 'e'. Second, it tries to abstract these occurrences of 'a' to create a function 'm := fun _a => ...', called the *motive*, with the property that 'm a' is definitionally equal to 'e'. Third, we observe that 'congrArg' implies that 'm a = m b', which can be used with lemmas such as 'Eq.mpr' to change the goal. However, if 'e' depends on specific properties of 'a', then the motive 'm' might not typecheck.
+
+Possible solutions: use rewrite's 'occs' configuration option to limit which occurrences are rewritten, or use 'simp' or 'conv' mode, which have strategies for certain kinds of dependencies (these tactics can handle proofs and 'Decidable' instances whose types depend on the rewritten term, and 'simp' can apply user-defined '@[congr]' theorems as well).
+
+n : ℕ
+B : Network n
+s : Profile n
+a b : Fin n
+η : ℝ
+hη : 0 < η
+unit : ∀ (i : Fin n), s i * s i = 1
+⊢ (if score s (step Real.tanh 1 1 B s) < score s (step Real.tanh 1 1 (perturb B a b η) s) then perturb B a b η
+    else perturb B a b (-η)) =
+    perturb B a b (η * s a * s b)
+DevelopmentalMemory.lean:133:66: error: Application type mismatch: The argument
+  h
+has type
+  Real.tanh x < Real.tanh 0
+but is expected to have type
+  ?m.121 < 0
+in the application
+  neg_pos.mpr h
+DevelopmentalMemory.lean:172:14: error: unsolved goals
+case succ
+n : ℕ
+B : Network n
+x : Profile n
+t : ℕ
+ih : develop Real.tanh 1 1 B x (t + 1) = develop Real.tanh 1 1 B (step Real.tanh 1 1 B x) t
+⊢ step Real.tanh 1 1 B (step Real.tanh 1 1 B (develop Real.tanh 1 1 B x t)) =
+    step Real.tanh 1 1 B (develop Real.tanh 1 1 B (step Real.tanh 1 1 B x) t)
+DevelopmentalMemory.lean:172:37: warning: This simp argument is unused:
+  ih
+
+Hint: Omit it from the simp argument list.
+  simp only [develop,̵ ̵i̵h̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+DevelopmentalMemory.lean:217:2: error: linarith failed to find a contradiction
+t : ℕ
+h : recalls first (develop Real.tanh 1 1 overwritten first (t + 1))
+hn : 0 < ![1, 1, -1] 2 * develop Real.tanh 1 1 overwritten ![1, 1, 1] (t + 1) 2
+hp : 0 < ![1, 1, 1] 2 * develop Real.tanh 1 1 overwritten ![1, 1, 1] (t + 1) 2
+⊢ False
+failed

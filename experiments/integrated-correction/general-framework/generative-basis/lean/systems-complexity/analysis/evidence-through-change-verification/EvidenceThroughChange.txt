@@ -1,0 +1,15 @@
+'EvidenceThroughChange.actual_remains_covered' does not depend on any axioms
+'EvidenceThroughChange.certificate_iff_transport' does not depend on any axioms
+'EvidenceThroughChange.transport_composes' does not depend on any axioms
+'EvidenceThroughChange.smaller_envelope_retains_certificate' does not depend on any axioms
+'EvidenceThroughChange.stable_certificate' does not depend on any axioms
+'EvidenceThroughChange.delayed_seeded_plan' depends on axioms: [propext]
+'EvidenceThroughChange.truthful_read_can_expire' depends on axioms: [propext]
+'EvidenceThroughChange.no_exact_record_only_decision' depends on axioms: [propext]
+'EvidenceThroughChange.stale_evidence_not_certificate' depends on axioms: [propext]
+'EvidenceThroughChange.reserve_establishes_protection' does not depend on any axioms
+'EvidenceThroughChange.admitted_change_preserves_protection' does not depend on any axioms
+'EvidenceThroughChange.reservation_survives_finite_changes' does not depend on any axioms
+'EvidenceThroughChange.actual_reservation_exists' does not depend on any axioms
+'EvidenceThroughChange.duplicate_reservation_blocked' does not depend on any axioms
+'EvidenceThroughChange.unmediated_loss_breaks_protection' depends on axioms: [propext]

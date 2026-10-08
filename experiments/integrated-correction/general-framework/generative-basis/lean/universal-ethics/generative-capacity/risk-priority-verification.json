@@ -1,0 +1,176 @@
+{
+  "status": "passed",
+  "utc": "20261008T111030.353032Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "risk-priority-checks/20261008T111030.353032Z",
+  "source_sha256": "e3305ad252e52a8d865665194f39b3179832a3ae43c6f25701eba49724454af7",
+  "checker_sha256": {
+    "check_risk_priority.py": "0e2ed681bb587c37378e4eae284d1d4f6cee2a5ebea8f59dacc08b02d10e1f49",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Asymmetric risk transfers on a common finite denominator, local priority bounds and contrasting diagnostic scores. No ethical utility or weight is adopted; near-parity warrant, actual loss correspondence, joint law and permissions remain substantive. Existing symmetric sharing is reused, not reproved.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "kernel_checked": true,
+  "new_theorems": 13,
+  "declarations": [
+    {
+      "kind": "structure",
+      "name": "RiskPriority.Exposure"
+    },
+    {
+      "kind": "def",
+      "name": "RiskPriority.mixture"
+    },
+    {
+      "kind": "def",
+      "name": "RiskPriority.equalized"
+    },
+    {
+      "kind": "def",
+      "name": "RiskPriority.departure"
+    },
+    {
+      "kind": "def",
+      "name": "RiskPriority.total"
+    },
+    {
+      "kind": "def",
+      "name": "RiskPriority.quadratic"
+    },
+    {
+      "kind": "def",
+      "name": "RiskPriority.magnitude"
+    },
+    {
+      "kind": "def",
+      "name": "RiskPriority.corner"
+    },
+    {
+      "kind": "theorem",
+      "name": "RiskPriority.same_support_family"
+    },
+    {
+      "kind": "theorem",
+      "name": "RiskPriority.feasible_departure"
+    },
+    {
+      "kind": "theorem",
+      "name": "RiskPriority.exposure_exchange"
+    },
+    {
+      "kind": "theorem",
+      "name": "RiskPriority.quadratic_departure_identity"
+    },
+    {
+      "kind": "theorem",
+      "name": "RiskPriority.quadratic_prefers_small_departure"
+    },
+    {
+      "kind": "theorem",
+      "name": "RiskPriority.partial_sharing_control"
+    },
+    {
+      "kind": "theorem",
+      "name": "RiskPriority.corner_departure_identity"
+    },
+    {
+      "kind": "theorem",
+      "name": "RiskPriority.corner_prefers_equality"
+    },
+    {
+      "kind": "theorem",
+      "name": "RiskPriority.diagnostic_symmetry"
+    },
+    {
+      "kind": "theorem",
+      "name": "RiskPriority.corner_linear_change_bound"
+    },
+    {
+      "kind": "theorem",
+      "name": "RiskPriority.corner_strictly_respects_risk_reduction"
+    },
+    {
+      "kind": "theorem",
+      "name": "RiskPriority.corner_favors_costless_balance"
+    },
+    {
+      "kind": "theorem",
+      "name": "RiskPriority.bounded_exchange_certificate"
+    }
+  ],
+  "declaration_audits": 21,
+  "axiom_dependencies": {
+    "RiskPriority.Exposure": [],
+    "RiskPriority.mixture": [],
+    "RiskPriority.equalized": [],
+    "RiskPriority.departure": [],
+    "RiskPriority.total": [],
+    "RiskPriority.quadratic": [],
+    "RiskPriority.magnitude": [],
+    "RiskPriority.corner": [],
+    "RiskPriority.same_support_family": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RiskPriority.feasible_departure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiskPriority.exposure_exchange": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiskPriority.quadratic_departure_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiskPriority.quadratic_prefers_small_departure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RiskPriority.partial_sharing_control": [],
+    "RiskPriority.corner_departure_identity": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RiskPriority.corner_prefers_equality": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RiskPriority.diagnostic_symmetry": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RiskPriority.corner_linear_change_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RiskPriority.corner_strictly_respects_risk_reduction": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RiskPriority.corner_favors_costless_balance": [
+      "propext",
+      "Quot.sound"
+    ],
+    "RiskPriority.bounded_exchange_certificate": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "source_unchanged_during_check": true,
+  "artifact_sha256": {
+    "Audit.lean": "c32f42cfd9eecc45abee0ca265a2a037e048be132f2d0e52da94ecd6e850dc55",
+    "RiskPriority.lean": "e3305ad252e52a8d865665194f39b3179832a3ae43c6f25701eba49724454af7",
+    "axioms.log": "7274848676c69b8afcf97dcfba9a4cd39ed8133e786360fd3ab35aefe869a1fa",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "check_risk_priority.py": "0e2ed681bb587c37378e4eae284d1d4f6cee2a5ebea8f59dacc08b02d10e1f49",
+    "compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "status": "failed",
+  "utc": "20261008T102052.605945Z",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "retained_run": "joint-risk-revision-checks/20261008T102052.605945Z",
+  "source_sha256": {
+    "JointRiskRevision": "b17880ec7e61dc1e477050674d8a42b761c89179c8340fd718d05f9126cda6a5"
+  },
+  "checker_sha256": {
+    "check_joint_risk_revision.py": "608c485008dc9db17c21d92dd061d5e42acd0a05c40a26b2fbf5e7799c29e680",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Exact finite joint-count bounds, native support reform, informative joint records, nonzero bounded risk and diagnostic weighting. Event law and weights are supplied; future statistical transfer and ethical risk permission are not derived. No empirical or universal normative claim.",
+  "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "error": "JointRiskRevision.lean:125:74: error: failed to synthesize\n  Decidable (0 < (record Mode.shared).both \u2227 WithinJointBound (record Mode.shared) 1)\n\nHint: Additional diagnostic information may be available using the `set_option diagnostics true` command.\n"
+}

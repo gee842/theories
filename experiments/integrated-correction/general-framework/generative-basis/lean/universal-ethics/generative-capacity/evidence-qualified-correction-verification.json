@@ -1,0 +1,377 @@
+{
+  "status": "passed",
+  "utc": "20261008T110110.555681Z",
+  "retained_run": "evidence-qualified-correction-checks/20261008T110110.555681Z",
+  "compiler_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
+  "sources": {
+    "AlignmentInquiry": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentInquiry.lean",
+      "sha256": "f40ad6179db326830edcdf8ec511f9069833a361f71181fd60166e0f72c0a23c"
+    },
+    "EffectiveCommand": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EffectiveCommand.lean",
+      "sha256": "7247ca05597f2f916fb409213d3814d48ad9a7037fb95017146d106273d58553"
+    },
+    "AcquiredCorrection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AcquiredCorrection.lean",
+      "sha256": "5448267c53e610b28bd030dfb1a894be840c307d54cd76e4be3695f196e8cd62"
+    },
+    "FaultTolerantCorrection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FaultTolerantCorrection.lean",
+      "sha256": "38f978fcabfaadca45c90b2298cf57502b839c6c9b93c3b9d0827d9ac2cb66ac"
+    },
+    "CorrectionReconfiguration": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionReconfiguration.lean",
+      "sha256": "4bd7160762f4bb697c72293133c91934e3622674f75990f6328d186abd7425e7"
+    },
+    "EvidenceQualifiedCorrection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvidenceQualifiedCorrection.lean",
+      "sha256": "a3c87bdfa01dbf6c25da19d4bbc0d6e028744b504d95023c76607379cc20327f"
+    },
+    "EvidenceQualifiedCorrectionCases": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvidenceQualifiedCorrectionCases.lean",
+      "sha256": "e3d09b3709c7f5e46c055b35e2b27fac6c7230e2f8207bd7506ba8e3529a7307"
+    }
+  },
+  "checker_sha256": {
+    "check_evidence_qualified_correction.py": "0b8f499745e7e055cc19902288b6dfbc2e96c13576cd228e8661ab44fb8584a8",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
+  },
+  "scope": "Certificates conservative across retained causal descriptions; truthful costed structural inspection, retained coverage, and response under one stable installation. Candidate and root coverage, diagnostic fidelity/permission, response laws and protected execution remain supplied. Existing planning is reused; no full causal identification, empirical validation or new ethical authority.",
+  "version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "modules": {
+    "EvidenceQualifiedCorrection": {
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "EvidenceQualifiedCorrection.pooled"
+        },
+        {
+          "kind": "def",
+          "name": "EvidenceQualifiedCorrection.retain"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvidenceQualifiedCorrection.retained_truth"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvidenceQualifiedCorrection.retained_subset"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvidenceQualifiedCorrection.model_faults_in_pool"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvidenceQualifiedCorrection.pooled_subset"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvidenceQualifiedCorrection.pooled_certificate_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvidenceQualifiedCorrection.refinement_preserves_certificate"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvidenceQualifiedCorrection.refinement_preserves_separation"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvidenceQualifiedCorrection.empty_family_rejects"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvidenceQualifiedCorrection.evidence_qualified_completion"
+        },
+        {
+          "kind": "inductive",
+          "name": "EvidenceQualifiedCorrection.Model"
+        },
+        {
+          "kind": "def",
+          "name": "EvidenceQualifiedCorrection.describe"
+        },
+        {
+          "kind": "def",
+          "name": "EvidenceQualifiedCorrection.hypotheses"
+        },
+        {
+          "kind": "def",
+          "name": "EvidenceQualifiedCorrection.diagnostic"
+        },
+        {
+          "kind": "def",
+          "name": "EvidenceQualifiedCorrection.poolReady"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvidenceQualifiedCorrection.every_candidate_ready_but_pool_not_ready"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvidenceQualifiedCorrection.actual_survivors_can_be_insufficient_before_diagnosis"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvidenceQualifiedCorrection.diagnosis_need_not_identify_the_model"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvidenceQualifiedCorrection.misleading_diagnosis_can_accept_only_compromised_support"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvidenceQualifiedCorrection.unobserved_structural_change_invalidates_learned_coverage"
+        },
+        {
+          "kind": "inductive",
+          "name": "EvidenceQualifiedCorrection.Query"
+        },
+        {
+          "kind": "def",
+          "name": "EvidenceQualifiedCorrection.queryCost"
+        },
+        {
+          "kind": "def",
+          "name": "EvidenceQualifiedCorrection.queryLaw"
+        },
+        {
+          "kind": "structure",
+          "name": "EvidenceQualifiedCorrection.Situation"
+        },
+        {
+          "kind": "def",
+          "name": "EvidenceQualifiedCorrection.probe"
+        },
+        {
+          "kind": "def",
+          "name": "EvidenceQualifiedCorrection.currentRequest"
+        },
+        {
+          "kind": "def",
+          "name": "EvidenceQualifiedCorrection.physicalReads"
+        },
+        {
+          "kind": "def",
+          "name": "EvidenceQualifiedCorrection.physicalApprovals"
+        },
+        {
+          "kind": "def",
+          "name": "EvidenceQualifiedCorrection.respond"
+        },
+        {
+          "kind": "def",
+          "name": "EvidenceQualifiedCorrection.achieved"
+        },
+        {
+          "kind": "def",
+          "name": "EvidenceQualifiedCorrection.interface"
+        },
+        {
+          "kind": "def",
+          "name": "EvidenceQualifiedCorrection.plan"
+        },
+        {
+          "kind": "def",
+          "name": "EvidenceQualifiedCorrection.plans"
+        },
+        {
+          "kind": "def",
+          "name": "EvidenceQualifiedCorrection.initialSituation"
+        },
+        {
+          "kind": "def",
+          "name": "EvidenceQualifiedCorrection.possibleSituations"
+        },
+        {
+          "kind": "def",
+          "name": "EvidenceQualifiedCorrection.final"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvidenceQualifiedCorrection.inspected_actual_model_is_retained"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvidenceQualifiedCorrection.selected_inquiry_actually_completes"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvidenceQualifiedCorrection.pooled_unknowns_select_affordable_inspection"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvidenceQualifiedCorrection.learned_common_envelope_needs_no_further_identification"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvidenceQualifiedCorrection.unaffordable_or_unauthorized_inspection_leaves_no_listed_uniform_plan"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvidenceQualifiedCorrection.sufficient_evidence_can_leave_too_little_to_act"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvidenceQualifiedCorrection.acquired_evidence_then_real_shutdown"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvidenceQualifiedCorrection.slower_equally_accurate_inspection_misses_deadline"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvidenceQualifiedCorrection.lack_of_uniform_availability_does_not_forbid_actual_certificate"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvidenceQualifiedCorrection.empty_survivors_do_not_authorize_correction"
+        }
+      ],
+      "dependencies": {
+        "EvidenceQualifiedCorrection.pooled": [],
+        "EvidenceQualifiedCorrection.retain": [],
+        "EvidenceQualifiedCorrection.retained_truth": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EvidenceQualifiedCorrection.retained_subset": [
+          "propext"
+        ],
+        "EvidenceQualifiedCorrection.model_faults_in_pool": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EvidenceQualifiedCorrection.pooled_subset": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EvidenceQualifiedCorrection.pooled_certificate_sound": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EvidenceQualifiedCorrection.refinement_preserves_certificate": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EvidenceQualifiedCorrection.refinement_preserves_separation": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EvidenceQualifiedCorrection.empty_family_rejects": [],
+        "EvidenceQualifiedCorrection.evidence_qualified_completion": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "EvidenceQualifiedCorrection.Model": [],
+        "EvidenceQualifiedCorrection.describe": [],
+        "EvidenceQualifiedCorrection.hypotheses": [],
+        "EvidenceQualifiedCorrection.diagnostic": [],
+        "EvidenceQualifiedCorrection.poolReady": [],
+        "EvidenceQualifiedCorrection.every_candidate_ready_but_pool_not_ready": [],
+        "EvidenceQualifiedCorrection.actual_survivors_can_be_insufficient_before_diagnosis": [],
+        "EvidenceQualifiedCorrection.diagnosis_need_not_identify_the_model": [],
+        "EvidenceQualifiedCorrection.misleading_diagnosis_can_accept_only_compromised_support": [],
+        "EvidenceQualifiedCorrection.unobserved_structural_change_invalidates_learned_coverage": [],
+        "EvidenceQualifiedCorrection.Query": [],
+        "EvidenceQualifiedCorrection.queryCost": [],
+        "EvidenceQualifiedCorrection.queryLaw": [
+          "propext"
+        ],
+        "EvidenceQualifiedCorrection.Situation": [],
+        "EvidenceQualifiedCorrection.probe": [
+          "propext"
+        ],
+        "EvidenceQualifiedCorrection.currentRequest": [],
+        "EvidenceQualifiedCorrection.physicalReads": [
+          "propext"
+        ],
+        "EvidenceQualifiedCorrection.physicalApprovals": [],
+        "EvidenceQualifiedCorrection.respond": [
+          "propext"
+        ],
+        "EvidenceQualifiedCorrection.achieved": [],
+        "EvidenceQualifiedCorrection.interface": [
+          "propext"
+        ],
+        "EvidenceQualifiedCorrection.plan": [],
+        "EvidenceQualifiedCorrection.plans": [],
+        "EvidenceQualifiedCorrection.initialSituation": [],
+        "EvidenceQualifiedCorrection.possibleSituations": [],
+        "EvidenceQualifiedCorrection.final": [
+          "propext"
+        ],
+        "EvidenceQualifiedCorrection.inspected_actual_model_is_retained": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EvidenceQualifiedCorrection.selected_inquiry_actually_completes": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EvidenceQualifiedCorrection.pooled_unknowns_select_affordable_inspection": [
+          "propext"
+        ],
+        "EvidenceQualifiedCorrection.learned_common_envelope_needs_no_further_identification": [
+          "propext"
+        ],
+        "EvidenceQualifiedCorrection.unaffordable_or_unauthorized_inspection_leaves_no_listed_uniform_plan": [
+          "propext"
+        ],
+        "EvidenceQualifiedCorrection.sufficient_evidence_can_leave_too_little_to_act": [
+          "propext"
+        ],
+        "EvidenceQualifiedCorrection.acquired_evidence_then_real_shutdown": [
+          "propext"
+        ],
+        "EvidenceQualifiedCorrection.slower_equally_accurate_inspection_misses_deadline": [
+          "propext"
+        ],
+        "EvidenceQualifiedCorrection.lack_of_uniform_availability_does_not_forbid_actual_certificate": [
+          "propext"
+        ],
+        "EvidenceQualifiedCorrection.empty_survivors_do_not_authorize_correction": [
+          "propext"
+        ]
+      },
+      "theorems": 24
+    }
+  },
+  "new_theorems": 24,
+  "audited_declarations": 47,
+  "compared_records": 19808,
+  "record_counts": {
+    "0": 384,
+    "1": 18144,
+    "2": 1280
+  },
+  "correspondence": "384 pooled/refined certificate cases, 18144 actual inspection/execution records and 1280 contingent-plan selections match a separately expressed bitset/accounting reference. Same-author comparison, not independent review or empirical data.",
+  "artifacts": {
+    "EffectiveCommand.lean": "7247ca05597f2f916fb409213d3814d48ad9a7037fb95017146d106273d58553",
+    "FaultTolerantCorrection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cases.log": "14afbea3850ce7c472c8643252ab5d04d25a9c46ef47204e4e925761bd9bd132",
+    "RunCases.lean": "a479d2a115cd87fc03b08f48985fd2f4f1f477a2ca4383dff0f316e107e0c370",
+    "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
+    "CorrectionReconfiguration.lean": "4bd7160762f4bb697c72293133c91934e3622674f75990f6328d186abd7425e7",
+    "EvidenceQualifiedCorrection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "AlignmentInquiry.lean": "f40ad6179db326830edcdf8ec511f9069833a361f71181fd60166e0f72c0a23c",
+    "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b",
+    "EvidenceQualifiedCorrectionAudit.lean": "cdef1604810857a9ff9a6aca4a9c539bbce40127a424c3effd3cfa306f13b03f",
+    "EvidenceQualifiedCorrectionCases.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference.json": "ead1aeaabd10ce5dc142b9d3ef69c2a9a6f4920a14cdfcd18ffbce01e532dbda",
+    "EvidenceQualifiedCorrection.lean": "a3c87bdfa01dbf6c25da19d4bbc0d6e028744b504d95023c76607379cc20327f",
+    "EffectiveCommand.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "FaultTolerantCorrection.lean": "38f978fcabfaadca45c90b2298cf57502b839c6c9b93c3b9d0827d9ac2cb66ac",
+    "EvidenceQualifiedCorrectionAudit.log": "6ca0911a33cd3b7d43ad9b0ae47b80f6060e2697371c1eb481068dba6389c22c",
+    "EvidenceQualifiedCorrectionCases.lean": "e3d09b3709c7f5e46c055b35e2b27fac6c7230e2f8207bd7506ba8e3529a7307",
+    "AcquiredCorrection.lean": "5448267c53e610b28bd030dfb1a894be840c307d54cd76e4be3695f196e8cd62",
+    "AcquiredCorrection.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "check_evidence_qualified_correction.py": "0b8f499745e7e055cc19902288b6dfbc2e96c13576cd228e8661ab44fb8584a8",
+    "CorrectionReconfiguration.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "AlignmentInquiry.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

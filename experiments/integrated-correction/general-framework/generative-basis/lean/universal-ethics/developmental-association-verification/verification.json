@@ -1,0 +1,209 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-07T19:45:49.133978+00:00",
+  "version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "toolchain": "leanprover/lean4:v4.29.1",
+  "fresh_temporary_build": true,
+  "commands": [
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "--version"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "-o",
+      "GenerativeCore.olean",
+      "GenerativeCore.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "GenerativeCoreAudit.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "-o",
+      "DevelopmentalAssociation.olean",
+      "DevelopmentalAssociation.lean"
+    ],
+    [
+      "/Users/ren/.elan/bin/lean",
+      "+leanprover/lean4:v4.29.1",
+      "DevelopmentalAssociationAudit.lean"
+    ]
+  ],
+  "source_unchanged_during_check": true,
+  "source_sha256": {
+    "GenerativeCore.lean": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
+    "DevelopmentalAssociation.lean": "6137099d1ae405f6f26bda3966960ce495dcc8e519297ae922cf4927a73eb8be",
+    "lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+    "GenerativeCoreAudit.lean": "d0e29bea9d0403409ee60ac5b2c044e68394230e4e5eda1e908ff4d4a946b187",
+    "DevelopmentalAssociationAudit.lean": "f9d1508eb07b62130f0e85dbbecd97be9203600894b285b799c51ee4661b053e"
+  },
+  "log_sha256": {
+    "version.txt": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b",
+    "GenerativeCore-compiler.txt": "eae342f61e22744208cddbc5144ff1f5b58b3849a5a827563fb58e65833a3257",
+    "GenerativeCore-axioms.txt": "a940c563aa7dafc2204031660bcc59f2780125b6bdb5350b7daac8b1226585f1",
+    "DevelopmentalAssociation-compiler.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "DevelopmentalAssociation-axioms.txt": "5d6d2b75185ba33703b7c3b6a43bcb1d1493cb2eb36cbdd01e8a72a03c8bca80"
+  },
+  "checker_sha256": "e4bfffd4e1e1e0b3abfc3c4a45309c60a3831ad9cf0c30645460eda508fe7331",
+  "source_locations": {
+    "GenerativeCore.lean": "GenerativeCore.lean",
+    "DevelopmentalAssociation.lean": "universal-ethics/DevelopmentalAssociation.lean"
+  },
+  "new_theorem_count": 19,
+  "new_audit_count": 41,
+  "total_audit_count": 69,
+  "new_empty_axiom_count": 17,
+  "axiom_dependencies": {
+    "GenerativeCore": {
+      "Generative.Process": [],
+      "Generative.Enabled": [],
+      "Generative.Trace": [],
+      "Generative.trace_nil_iff": [],
+      "Generative.trace_cons_iff": [],
+      "Generative.trace_singleton_iff": [],
+      "Generative.trace_append_iff": [],
+      "Generative.enabled_iff_singleton_trace": [],
+      "Generative.enabled_difference_implies_state_difference": [],
+      "Generative.Feasible": [],
+      "Generative.feasible_append_iff": [],
+      "Generative.feasible_prefix": [],
+      "Generative.productProcess": [],
+      "Generative.enabled_product_iff": [],
+      "Generative.trace_product_left": [],
+      "Generative.trace_product_right": [],
+      "Generative.trace_product_mk": [],
+      "Generative.trace_product_iff": [],
+      "Generative.feasible_product_iff": [],
+      "Generative.trace_map": [],
+      "Generative.trace_lift": [],
+      "Generative.projected_trace_iff": [],
+      "Generative.projection_exact_iff": [],
+      "Generative.local_exact_iff_trace_exact": [],
+      "Generative.enabled_projection_iff": [],
+      "Generative.feasible_projection_iff": [],
+      "Generative.feasible_difference_implies_projection_difference": [],
+      "Generative.trace_faithful_iff": []
+    },
+    "DevelopmentalAssociation": {
+      "DevelopmentalAssociation.State": [],
+      "DevelopmentalAssociation.material": [],
+      "DevelopmentalAssociation.divide": [],
+      "DevelopmentalAssociation.changeRetention": [],
+      "DevelopmentalAssociation.detach": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.aggregate": [],
+      "DevelopmentalAssociation.Event": [],
+      "DevelopmentalAssociation.step": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.run": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.process": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.run_iff_core_trace": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.division_inherits": [
+        "propext"
+      ],
+      "DevelopmentalAssociation.changed_state_governs_division": [
+        "propext"
+      ],
+      "DevelopmentalAssociation.step_accounts": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.core_trace_accounts": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.LineageConsistent": [],
+      "DevelopmentalAssociation.division_preserves_lineage": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.NoAggregation": [
+        "propext"
+      ],
+      "DevelopmentalAssociation.step_preserves_lineage": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.trace_preserves_lineage": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.Connected": [],
+      "DevelopmentalAssociation.connected_same_founder": [],
+      "DevelopmentalAssociation.developed_groups_have_common_origin": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.seed": [],
+      "DevelopmentalAssociation.seed_lineage": [],
+      "DevelopmentalAssociation.Observation": [],
+      "DevelopmentalAssociation.observe": [],
+      "DevelopmentalAssociation.development": [],
+      "DevelopmentalAssociation.changed_division_forms_group": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.separated_descendant_reconstructs_association": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.restored_separation_changes_later_growth": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.mixed": [],
+      "DevelopmentalAssociation.aggregation_breaks_clonal_conclusion": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.splitMiddle": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.splitBase": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.CoarseObservation": [],
+      "DevelopmentalAssociation.coarse": [],
+      "DevelopmentalAssociation.equal_cell_states_different_continuations": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.comparison_histories_are_actual": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.no_bond_free_exact_predictor": [
+        "propext",
+        "Quot.sound"
+      ],
+      "DevelopmentalAssociation.ineffective_operations_fail": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  },
+  "scope": "Conditional inherited division and association; finite exact histories and lineage/accounting invariants. No molecular derivation, calibrated fitness, or universal evolutionary superiority."
+}

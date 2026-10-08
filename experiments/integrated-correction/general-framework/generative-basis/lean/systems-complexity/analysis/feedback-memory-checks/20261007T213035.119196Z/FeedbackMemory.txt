@@ -1,0 +1,6 @@
+FeedbackMemory.lean:215:46: error: Type mismatch: After simplification, term
+  abs_sub_le (u (n + 1) - v (n + 1)) 0 (u n - v n)
+ has type
+  |u (n + 1) - v (n + 1) - (u n - v n)| ≤ |u (n + 1) - v (n + 1)| + |v n - u n|
+but is expected to have type
+  |u (n + 1) - v (n + 1) - (u n - v n)| ≤ |u (n + 1) - v (n + 1)| + |u n - v n|

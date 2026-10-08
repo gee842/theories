@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/system-individuation-checks/20261007T233431.104249Z/receipt.json",
+  "counts": {
+    "new": {
+      "modules": 1,
+      "declarations": 41,
+      "theorems": 27,
+      "empty_audit_dependencies": 41,
+      "standard_dependency_audits": 0
+    },
+    "inherited": {
+      "modules": 1,
+      "declarations": 18,
+      "theorems": 18,
+      "empty_audit_dependencies": 18,
+      "standard_dependency_audits": 0
+    }
+  }
+}

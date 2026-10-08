@@ -1,0 +1,681 @@
+{
+  "scope": "Matched-geometry correspondence sensitivity; neither velocity law is validated for these clusters",
+  "code_sha256": "ae2e226c6efd15746a47d8fa8279217a45bba64d74fb4b3653d710c09adf650a",
+  "source_sha256": "3b5040aaf75205a62c2bdc7306da1d41497ade688bf159f1d58c7f56a7295e6b",
+  "assumptions": {
+    "cell_volume_um3": 17.44,
+    "gravity_m_s2": 9.81,
+    "cell_density_kg_m3": 1112.6,
+    "water_density_kg_m3": 997,
+    "dynamic_viscosity_Pa_s": 0.000981,
+    "radius": "R = sqrt(5/3 * mean squared distance of cell centers from centroid)",
+    "geometry": "Point centers omit intracellular inertia and are not a measured hydrodynamic radius",
+    "hydrodynamics": "Shared impermeable-sphere drag, no interactions, prescribed water properties",
+    "contrast": "Uniform-cell-density envelope versus accounted cell material and water-filled space",
+    "provenance": "Geometries and cell-volume mean are Day 2022; constants/form of uniform approximation are from Cedeno-Perez 2026. This is not a joined lineage dataset."
+  },
+  "clusters": [
+    {
+      "cluster": "particles-sphere-01",
+      "cells": 128,
+      "radius_squared_um2": "1698677849312322677/9830400000000000",
+      "radius_um": 13.145282293861904,
+      "radius_gyration_squared_um2": "1698677849312322677/16384000000000000",
+      "envelope_volume_um3": 9514.77143877039,
+      "supplied_solid_volume_um3": 2232.32,
+      "solid_fraction": 0.23461625057054303,
+      "uniform_cell_density_speed_mm_min": 2.6634000567017186,
+      "material_accounted_sphere_speed_mm_min": 0.624876935072729,
+      "uniform_reynolds_number": 0.0011860724488620925
+    },
+    {
+      "cluster": "particles-sphere-02",
+      "cells": 53,
+      "radius_squared_um2": "15404810672254283/140450000000000",
+      "radius_um": 10.47290853866286,
+      "radius_gyration_squared_um2": "46214432016762849/702250000000000",
+      "envelope_volume_um3": 4811.611361451828,
+      "supplied_solid_volume_um3": 924.32,
+      "solid_fraction": 0.19210196555049722,
+      "uniform_cell_density_speed_mm_min": 1.6905623483684287,
+      "material_accounted_sphere_speed_mm_min": 0.3247603500072396,
+      "uniform_reynolds_number": 0.0005997957709415406
+    },
+    {
+      "cluster": "particles-sphere-03",
+      "cells": 97,
+      "radius_squared_um2": "107568990115103233/705675000000000",
+      "radius_um": 12.346423781949886,
+      "radius_gyration_squared_um2": "107568990115103233/1176125000000000",
+      "envelope_volume_um3": 7883.374323095245,
+      "supplied_solid_volume_um3": 1691.68,
+      "solid_fraction": 0.21458831341346185,
+      "uniform_cell_density_speed_mm_min": 2.34951883086991,
+      "material_accounted_sphere_speed_mm_min": 0.5041792832495429,
+      "uniform_reynolds_number": 0.000982709164256968
+    },
+    {
+      "cluster": "particles-sphere-04",
+      "cells": 147,
+      "radius_squared_um2": "1024674525495734117/6482700000000000",
+      "radius_um": 12.572307872723224,
+      "radius_gyration_squared_um2": "1024674525495734117/10804500000000000",
+      "envelope_volume_um3": 8324.029908034576,
+      "supplied_solid_volume_um3": 2563.6800000000003,
+      "solid_fraction": 0.3079854383422467,
+      "uniform_cell_density_speed_mm_min": 2.4362765544666423,
+      "material_accounted_sphere_speed_mm_min": 0.7503377025503477,
+      "uniform_reynolds_number": 0.0010376394851897524
+    },
+    {
+      "cluster": "particles-sphere-05",
+      "cells": 33,
+      "radius_squared_um2": "26183863298249707/326700000000000",
+      "radius_um": 8.952458061964812,
+      "radius_gyration_squared_um2": "26183863298249707/544500000000000",
+      "envelope_volume_um3": 3005.4914371743907,
+      "supplied_solid_volume_um3": 575.5200000000001,
+      "solid_fraction": 0.19148948251240888,
+      "uniform_cell_density_speed_mm_min": 1.235324802480426,
+      "material_accounted_sphere_speed_mm_min": 0.23655170716172044,
+      "uniform_reynolds_number": 0.00037465225642710313
+    },
+    {
+      "cluster": "particles-sphere-06",
+      "cells": 85,
+      "radius_squared_um2": "83901514603677113/541875000000000",
+      "radius_um": 12.443293444599936,
+      "radius_gyration_squared_um2": "83901514603677113/903125000000000",
+      "envelope_volume_um3": 8070.392154265788,
+      "supplied_solid_volume_um3": 1482.4,
+      "solid_fraction": 0.18368376302710943,
+      "uniform_cell_density_speed_mm_min": 2.386531970949036,
+      "material_accounted_sphere_speed_mm_min": 0.4383671730084231,
+      "uniform_reynolds_number": 0.0010060220413370706
+    },
+    {
+      "cluster": "particles-sphere-07",
+      "cells": 170,
+      "radius_squared_um2": "3694130951633916293/17340000000000000",
+      "radius_um": 14.5959241115775,
+      "radius_gyration_squared_um2": "3694130951633916293/28900000000000000",
+      "envelope_volume_um3": 13025.16997184724,
+      "supplied_solid_volume_um3": 2964.8,
+      "solid_fraction": 0.22762083000898684,
+      "uniform_cell_density_speed_mm_min": 3.2836719570079227,
+      "material_accounted_sphere_speed_mm_min": 0.7474321363313775,
+      "uniform_reynolds_number": 0.0016236643564977028
+    },
+    {
+      "cluster": "particles-sphere-08",
+      "cells": 37,
+      "radius_squared_um2": "31147605751533817/410700000000000",
+      "radius_um": 8.708632884061608,
+      "radius_gyration_squared_um2": "31147605751533817/684500000000000",
+      "envelope_volume_um3": 2766.550222246575,
+      "supplied_solid_volume_um3": 645.2800000000001,
+      "solid_fraction": 0.23324355177474457,
+      "uniform_cell_density_speed_mm_min": 1.168951619146922,
+      "material_accounted_sphere_speed_mm_min": 0.27265042750266666,
+      "uniform_reynolds_number": 0.0003448668229306423
+    },
+    {
+      "cluster": "particles-sphere-09",
+      "cells": 116,
+      "radius_squared_um2": "776724176022402329/4036800000000000",
+      "radius_um": 13.871224317135196,
+      "radius_gyration_squared_um2": "776724176022402329/6728000000000000",
+      "envelope_volume_um3": 11179.77322194532,
+      "supplied_solid_volume_um3": 2023.0400000000002,
+      "solid_fraction": 0.18095537000955234,
+      "uniform_cell_density_speed_mm_min": 2.9656927846541694,
+      "material_accounted_sphere_speed_mm_min": 0.5366580351817549,
+      "uniform_reynolds_number": 0.0013936247537217929
+    },
+    {
+      "cluster": "particles-sphere-10",
+      "cells": 52,
+      "radius_squared_um2": "201102772928394451/1622400000000000",
+      "radius_um": 11.133457629028074,
+      "radius_gyration_squared_um2": "201102772928394451/2704000000000000",
+      "envelope_volume_um3": 5780.67816812799,
+      "supplied_solid_volume_um3": 906.8800000000001,
+      "solid_fraction": 0.15688124708275938,
+      "uniform_cell_density_speed_mm_min": 1.9105424515550928,
+      "material_accounted_sphere_speed_mm_min": 0.29972828240451554,
+      "uniform_reynolds_number": 0.0007205956711705574
+    },
+    {
+      "cluster": "particles-sphere-11",
+      "cells": 181,
+      "radius_squared_um2": "486938702132318477/2457075000000000",
+      "radius_um": 14.077577936437866,
+      "radius_gyration_squared_um2": "486938702132318477/4095125000000000",
+      "envelope_volume_um3": 11686.176206398794,
+      "supplied_solid_volume_um3": 3156.6400000000003,
+      "solid_fraction": 0.27011743997763565,
+      "uniform_cell_density_speed_mm_min": 3.054586664577243,
+      "material_accounted_sphere_speed_mm_min": 0.8250971300254301,
+      "uniform_reynolds_number": 0.0014567508762720813
+    },
+    {
+      "cluster": "particles-sphere-12",
+      "cells": 12,
+      "radius_squared_um2": "284790062646913/7200000000000",
+      "radius_um": 6.28921102902636,
+      "radius_gyration_squared_um2": "284790062646913/12000000000000",
+      "envelope_volume_um3": 1042.0225353289247,
+      "supplied_solid_volume_um3": 209.28000000000003,
+      "solid_fraction": 0.20084018618075158,
+      "uniform_cell_density_speed_mm_min": 0.609661689666354,
+      "material_accounted_sphere_speed_mm_min": 0.12244456725986215,
+      "uniform_reynolds_number": 0.00012989426264208652
+    },
+    {
+      "cluster": "particles-sphere-13",
+      "cells": 92,
+      "radius_squared_um2": "797780766958193017/5078400000000000",
+      "radius_um": 12.533672093714726,
+      "radius_gyration_squared_um2": "797780766958193017/8464000000000000",
+      "envelope_volume_um3": 8247.524128487104,
+      "supplied_solid_volume_um3": 1604.48,
+      "solid_fraction": 0.1945408070354224,
+      "uniform_cell_density_speed_mm_min": 2.4213257892345896,
+      "material_accounted_sphere_speed_mm_min": 0.4710466731333782,
+      "uniform_reynolds_number": 0.0010281025879680052
+    },
+    {
+      "cluster": "particles-sphere-14",
+      "cells": 129,
+      "radius_squared_um2": "233929285765390537/1248075000000000",
+      "radius_um": 13.69058340635205,
+      "radius_gyration_squared_um2": "233929285765390537/2080125000000000",
+      "envelope_volume_um3": 10748.663712471802,
+      "supplied_solid_volume_um3": 2249.76,
+      "solid_fraction": 0.20930601795547638,
+      "uniform_cell_density_speed_mm_min": 2.8889530340168257,
+      "material_accounted_sphere_speed_mm_min": 0.6046752556104538,
+      "uniform_reynolds_number": 0.0013398844074697057
+    },
+    {
+      "cluster": "particles-sphere-15",
+      "cells": 130,
+      "radius_squared_um2": "349728430624899643/2028000000000000",
+      "radius_um": 13.132018751193813,
+      "radius_gyration_squared_um2": "349728430624899643/3380000000000000",
+      "envelope_volume_um3": 9485.999378488214,
+      "supplied_solid_volume_um3": 2267.2000000000003,
+      "solid_fraction": 0.23900486491085188,
+      "uniform_cell_density_speed_mm_min": 2.6580280460380252,
+      "material_accounted_sphere_speed_mm_min": 0.6352816340725739,
+      "uniform_reynolds_number": 0.0011824858416359188
+    },
+    {
+      "cluster": "particles-sphere-16",
+      "cells": 121,
+      "radius_squared_um2": "76169067129767699/399300000000000",
+      "radius_um": 13.811462329705272,
+      "radius_gyration_squared_um2": "76169067129767699/665500000000000",
+      "envelope_volume_um3": 11035.895996984806,
+      "supplied_solid_volume_um3": 2110.2400000000002,
+      "solid_fraction": 0.1912160100617615,
+      "uniform_cell_density_speed_mm_min": 2.9401933918360923,
+      "material_accounted_sphere_speed_mm_min": 0.5622120491968552,
+      "uniform_reynolds_number": 0.0013756896079705194
+    },
+    {
+      "cluster": "particles-sphere-17",
+      "cells": 127,
+      "radius_squared_um2": "423517574610173201/2419350000000000",
+      "radius_um": 13.230808023224942,
+      "radius_gyration_squared_um2": "423517574610173201/4032250000000000",
+      "envelope_volume_um3": 9701.69714226999,
+      "supplied_solid_volume_um3": 2214.88,
+      "solid_fraction": 0.22829820056429484,
+      "uniform_cell_density_speed_mm_min": 2.6981699836697723,
+      "material_accounted_sphere_speed_mm_min": 0.6159873520884019,
+      "uniform_reynolds_number": 0.0012093738416839568
+    },
+    {
+      "cluster": "particles-sphere-18",
+      "cells": 206,
+      "radius_squared_um2": "544253932051137937/2546160000000000",
+      "radius_um": 14.62035581363308,
+      "radius_gyration_squared_um2": "544253932051137937/4243600000000000",
+      "envelope_volume_um3": 13090.68690068039,
+      "supplied_solid_volume_um3": 3592.6400000000003,
+      "solid_fraction": 0.27444243585210737,
+      "uniform_cell_density_speed_mm_min": 3.2946740474603056,
+      "material_accounted_sphere_speed_mm_min": 0.9041983709237285,
+      "uniform_reynolds_number": 0.0016318314285837874
+    },
+    {
+      "cluster": "particles-sphere-19",
+      "cells": 102,
+      "radius_squared_um2": "128911763858556509/693600000000000",
+      "radius_um": 13.633009368175157,
+      "radius_gyration_squared_um2": "128911763858556509/1156000000000000",
+      "envelope_volume_um3": 10613.626701906598,
+      "supplied_solid_volume_um3": 1778.88,
+      "solid_fraction": 0.16760340738952575,
+      "uniform_cell_density_speed_mm_min": 2.8647058635234757,
+      "material_accounted_sphere_speed_mm_min": 0.48013446389528824,
+      "uniform_reynolds_number": 0.0013230512466482637
+    },
+    {
+      "cluster": "particles-sphere-20",
+      "cells": 88,
+      "radius_squared_um2": "670205723113858597/4646400000000000",
+      "radius_um": 12.0100763615437,
+      "radius_gyration_squared_um2": "670205723113858597/7744000000000000",
+      "envelope_volume_um3": 7256.478543260148,
+      "supplied_solid_volume_um3": 1534.72,
+      "solid_fraction": 0.2114965256013132,
+      "uniform_cell_density_speed_mm_min": 2.2232490126251716,
+      "material_accounted_sphere_speed_mm_min": 0.4702094417167741,
+      "uniform_reynolds_number": 0.000904562903198025
+    }
+  ],
+  "pairs_compared": 190,
+  "reversed_pairs": [
+    {
+      "a": "particles-sphere-01",
+      "b": "particles-sphere-04",
+      "uniform_a_faster": true,
+      "material_a_faster": false,
+      "material_squared_crossproducts": [
+        "8197396203965872936/3165380859375",
+        "12235576548596660242431/3276800000000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-01",
+      "b": "particles-sphere-09",
+      "uniform_a_faster": false,
+      "material_a_faster": true,
+      "material_squared_crossproducts": [
+        "776724176022402329/246386718750",
+        "1428588071271663371357/614400000000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-01",
+      "b": "particles-sphere-14",
+      "uniform_a_faster": false,
+      "material_a_faster": true,
+      "material_squared_crossproducts": [
+        "7485737144492497184/2437646484375",
+        "9422566030135453889319/3276800000000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-01",
+      "b": "particles-sphere-15",
+      "uniform_a_faster": true,
+      "material_a_faster": false,
+      "material_squared_crossproducts": [
+        "349728430624899643/123779296875",
+        "287076556533782532413/98304000000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-01",
+      "b": "particles-sphere-16",
+      "uniform_a_faster": false,
+      "material_a_faster": true,
+      "material_squared_crossproducts": [
+        "609352537038141592/194970703125",
+        "24870342391781716313957/9830400000000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-01",
+      "b": "particles-sphere-17",
+      "uniform_a_faster": false,
+      "material_a_faster": true,
+      "material_squared_crossproducts": [
+        "6776281193762771216/2362646484375",
+        "27397975031558452457333/9830400000000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-01",
+      "b": "particles-sphere-19",
+      "uniform_a_faster": false,
+      "material_a_faster": true,
+      "material_squared_crossproducts": [
+        "128911763858556509/42333984375",
+        "1472753695353783760959/819200000000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-02",
+      "b": "particles-sphere-10",
+      "uniform_a_faster": false,
+      "material_a_faster": true,
+      "material_squared_crossproducts": [
+        "564897689155860012859/1622400000000000",
+        "2603413003610973827/8778125000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-03",
+      "b": "particles-sphere-06",
+      "uniform_a_faster": false,
+      "material_a_faster": true,
+      "material_squared_crossproducts": [
+        "789429350905997956217/541875000000000",
+        "31087438143264834337/28227000000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-03",
+      "b": "particles-sphere-13",
+      "uniform_a_faster": false,
+      "material_a_faster": true,
+      "material_squared_crossproducts": [
+        "7506319236309638096953/5078400000000000",
+        "56903995770889610257/44104687500000"
+      ]
+    },
+    {
+      "a": "particles-sphere-03",
+      "b": "particles-sphere-19",
+      "uniform_a_faster": false,
+      "material_a_faster": true,
+      "material_squared_crossproducts": [
+        "1212930786145158193181/693600000000000",
+        "93262314429794503011/58806250000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-04",
+      "b": "particles-sphere-07",
+      "uniform_a_faster": false,
+      "material_a_faster": true,
+      "material_squared_crossproducts": [
+        "26608825244619099058479/5780000000000000",
+        "296130937868267159813/64827000000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-04",
+      "b": "particles-sphere-09",
+      "uniform_a_faster": false,
+      "material_a_faster": true,
+      "material_squared_crossproducts": [
+        "5594744239889363975787/1345600000000000",
+        "861751275941912392397/405168750000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-04",
+      "b": "particles-sphere-14",
+      "uniform_a_faster": false,
+      "material_a_faster": true,
+      "material_squared_crossproducts": [
+        "561664215122702679337/138675000000000",
+        "1894623197641612382333/720300000000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-04",
+      "b": "particles-sphere-15",
+      "uniform_a_faster": false,
+      "material_a_faster": true,
+      "material_squared_crossproducts": [
+        "2519093885791152128529/676000000000000",
+        "173169994808779065773/64827000000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-04",
+      "b": "particles-sphere-16",
+      "uniform_a_faster": false,
+      "material_a_faster": true,
+      "material_squared_crossproducts": [
+        "548645790535716735897/133100000000000",
+        "15002259727783043206997/6482700000000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-04",
+      "b": "particles-sphere-17",
+      "uniform_a_faster": false,
+      "material_a_faster": true,
+      "material_squared_crossproducts": [
+        "3050597089917077566803/806450000000000",
+        "16526975421720695573093/6482700000000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-04",
+      "b": "particles-sphere-19",
+      "uniform_a_faster": false,
+      "material_a_faster": true,
+      "material_squared_crossproducts": [
+        "928551435073182534327/231200000000000",
+        "296130937868267159813/180075000000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-05",
+      "b": "particles-sphere-08",
+      "uniform_a_faster": true,
+      "material_a_faster": false,
+      "material_squared_crossproducts": [
+        "11306580887806775571/136900000000000",
+        "35845708855303848883/326700000000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-06",
+      "b": "particles-sphere-20",
+      "uniform_a_faster": true,
+      "material_a_faster": false,
+      "material_squared_crossproducts": [
+        "193689453979905134533/185856000000000",
+        "10152083267044930673/8466796875000"
+      ]
+    },
+    {
+      "a": "particles-sphere-07",
+      "b": "particles-sphere-11",
+      "uniform_a_faster": true,
+      "material_a_faster": false,
+      "material_squared_crossproducts": [
+        "140725284916240039853/24570750000000",
+        "121023424106478731674973/17340000000000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-09",
+      "b": "particles-sphere-14",
+      "uniform_a_faster": true,
+      "material_a_faster": false,
+      "material_squared_crossproducts": [
+        "196734529328693441617/78004687500000",
+        "4308489004396265718963/1345600000000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-09",
+      "b": "particles-sphere-15",
+      "uniform_a_faster": true,
+      "material_a_faster": false,
+      "material_squared_crossproducts": [
+        "294121610155540599763/126750000000000",
+        "131266385747785993601/40368000000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-09",
+      "b": "particles-sphere-16",
+      "uniform_a_faster": true,
+      "material_a_faster": false,
+      "material_squared_crossproducts": [
+        "64058185456134634859/24956250000000",
+        "11372018661143992498889/4036800000000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-09",
+      "b": "particles-sphere-17",
+      "uniform_a_faster": true,
+      "material_a_faster": false,
+      "material_squared_crossproducts": [
+        "356178280247155662041/151209375000000",
+        "12527784235065327164441/4036800000000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-14",
+      "b": "particles-sphere-15",
+      "uniform_a_faster": true,
+      "material_a_faster": false,
+      "material_squared_crossproducts": [
+        "1939943604676318319721/676000000000000",
+        "39534049294351000753/12480750000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-14",
+      "b": "particles-sphere-16",
+      "uniform_a_faster": false,
+      "material_a_faster": true,
+      "material_squared_crossproducts": [
+        "422509815368821426353/133100000000000",
+        "3424958672891082852217/1248075000000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-14",
+      "b": "particles-sphere-17",
+      "uniform_a_faster": true,
+      "material_a_faster": false,
+      "material_squared_crossproducts": [
+        "2349251986362630745947/806450000000000",
+        "3773045450109983971273/1248075000000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-15",
+      "b": "particles-sphere-16",
+      "uniform_a_faster": false,
+      "material_a_faster": true,
+      "material_squared_crossproducts": [
+        "12872572344930741131/3993000000000",
+        "5120373952779155673163/2028000000000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-15",
+      "b": "particles-sphere-17",
+      "uniform_a_faster": false,
+      "material_a_faster": true,
+      "material_squared_crossproducts": [
+        "71574470109119270969/24193500000000",
+        "5640769857549006341947/2028000000000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-15",
+      "b": "particles-sphere-19",
+      "uniform_a_faster": false,
+      "material_a_faster": true,
+      "material_squared_crossproducts": [
+        "21786088092096050021/6936000000000",
+        "303214549351787990481/169000000000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-16",
+      "b": "particles-sphere-17",
+      "uniform_a_faster": true,
+      "material_a_faster": false,
+      "material_squared_crossproducts": [
+        "6200720809867545835841/2419350000000000",
+        "1228530883736023217171/399300000000000"
+      ]
+    },
+    {
+      "a": "particles-sphere-17",
+      "b": "particles-sphere-19",
+      "uniform_a_faster": false,
+      "material_a_faster": true,
+      "material_squared_crossproducts": [
+        "2079217839274657933661/693600000000000",
+        "367189737187020165267/201612500000000"
+      ]
+    }
+  ],
+  "uniform_ranking": [
+    "particles-sphere-18",
+    "particles-sphere-07",
+    "particles-sphere-11",
+    "particles-sphere-09",
+    "particles-sphere-16",
+    "particles-sphere-14",
+    "particles-sphere-19",
+    "particles-sphere-17",
+    "particles-sphere-01",
+    "particles-sphere-15",
+    "particles-sphere-04",
+    "particles-sphere-13",
+    "particles-sphere-06",
+    "particles-sphere-03",
+    "particles-sphere-20",
+    "particles-sphere-10",
+    "particles-sphere-02",
+    "particles-sphere-05",
+    "particles-sphere-08",
+    "particles-sphere-12"
+  ],
+  "material_ranking": [
+    "particles-sphere-18",
+    "particles-sphere-11",
+    "particles-sphere-04",
+    "particles-sphere-07",
+    "particles-sphere-15",
+    "particles-sphere-01",
+    "particles-sphere-17",
+    "particles-sphere-14",
+    "particles-sphere-16",
+    "particles-sphere-09",
+    "particles-sphere-03",
+    "particles-sphere-19",
+    "particles-sphere-13",
+    "particles-sphere-20",
+    "particles-sphere-06",
+    "particles-sphere-02",
+    "particles-sphere-10",
+    "particles-sphere-08",
+    "particles-sphere-05",
+    "particles-sphere-12"
+  ],
+  "summary": {
+    "cluster_count": 20,
+    "cells": 2106,
+    "reversed_pair_count": 33,
+    "solid_fraction_range": [
+      0.15688124708275938,
+      0.3079854383422467
+    ],
+    "uniform_speed_range_mm_min": [
+      0.609661689666354,
+      3.2946740474603056
+    ],
+    "material_speed_range_mm_min": [
+      0.12244456725986215,
+      0.9041983709237285
+    ],
+    "maximum_uniform_reynolds_number": 0.0016318314285837874
+  },
+  "limitations": [
+    "No observed settling velocities, fitness estimates or selection coefficients are produced.",
+    "Permeability, nonsphericity and interactions may change the drag and predicted ordering.",
+    "The two formulae are conventional approximations; disagreement does not demonstrate superiority of our theory.",
+    "Small Reynolds numbers do not validate the radius or impermeable-drag correspondence.",
+    "No arbitrary rescaling is chosen to resolve the earlier Coulter conversion discrepancy."
+  ]
+}

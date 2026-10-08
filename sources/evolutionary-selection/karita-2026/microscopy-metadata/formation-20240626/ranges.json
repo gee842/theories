@@ -1,0 +1,734 @@
+{
+  "archive_path": "Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+  "file_bytes": 9957072544,
+  "ranges": [
+    {
+      "file": "000000000000-00000544-file-header.bin",
+      "offset": 0,
+      "bytes": 544,
+      "sha256": "ebcd246f3dce1319703ad711ba0f8ce90c828de19f78201eaef134b6c8264c8d",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "request_headers": {
+        "Range": "bytes=0-543",
+        "Accept-Encoding": "identity"
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:28:36 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:30 GMT",
+        "ETag": "\"2517cdea0-64bd9a0525280\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "544",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 0-543/9957072544",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "009846156608-00000032-ZISRAWMETADATA-header.bin",
+      "offset": 9846156608,
+      "bytes": 32,
+      "sha256": "74202b5bb92bb41052f41e7689a853f0c9f934a2eb2fe72a92f3a1a81f473096",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "request_headers": {
+        "Range": "bytes=9846156608-9846156639",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"2517cdea0-64bd9a0525280\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:28:37 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:30 GMT",
+        "ETag": "\"2517cdea0-64bd9a0525280\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "32",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 9846156608-9846156639/9957072544",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "009846156640-00761782-ZISRAWMETADATA-body.bin",
+      "offset": 9846156640,
+      "bytes": 761782,
+      "sha256": "986ef8d9259a4ea23ee28891b2e5f67610c9ab7dc29c4560bbfa8fb2b86d070b",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "request_headers": {
+        "Range": "bytes=9846156640-9846918421",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"2517cdea0-64bd9a0525280\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:28:39 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:30 GMT",
+        "ETag": "\"2517cdea0-64bd9a0525280\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "761782",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 9846156640-9846918421/9957072544",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000000000544-00000032-ZISRAWDIRECTORY-header.bin",
+      "offset": 544,
+      "bytes": 32,
+      "sha256": "4c525b73e609e319585c46428b6c77515780376a5fdb53f35110138f9e2c2430",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "request_headers": {
+        "Range": "bytes=544-575",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"2517cdea0-64bd9a0525280\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:28:42 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:30 GMT",
+        "ETag": "\"2517cdea0-64bd9a0525280\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "32",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 544-575/9957072544",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000000000576-00124616-ZISRAWDIRECTORY-body.bin",
+      "offset": 576,
+      "bytes": 124616,
+      "sha256": "93cb2e1ada351994a44a7b63a0f108e28d11ecb9501bca8df672d493fe0b7db3",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "request_headers": {
+        "Range": "bytes=576-125191",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"2517cdea0-64bd9a0525280\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:28:44 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:30 GMT",
+        "ETag": "\"2517cdea0-64bd9a0525280\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "124616",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 576-125191/9957072544",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000000126400-00000032-ZISRAWATTDIR-header.bin",
+      "offset": 126400,
+      "bytes": 32,
+      "sha256": "1c888c9c263aa7c8f3816261d059095e227c4a82179165f4d9d4e3aeee66b30a",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "request_headers": {
+        "Range": "bytes=126400-126431",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"2517cdea0-64bd9a0525280\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:28:46 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:30 GMT",
+        "ETag": "\"2517cdea0-64bd9a0525280\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "32",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 126400-126431/9957072544",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000000126432-00000650-ZISRAWATTDIR-body.bin",
+      "offset": 126432,
+      "bytes": 650,
+      "sha256": "b23615b6e670904d3e396f0d8e0d1d13dba5f7d89214adef97ddc002ae03b782",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "request_headers": {
+        "Range": "bytes=126432-127081",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"2517cdea0-64bd9a0525280\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:28:47 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:30 GMT",
+        "ETag": "\"2517cdea0-64bd9a0525280\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "650",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 126432-127081/9957072544",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "009957065504-00000032-ZISRAWATTACH-header.bin",
+      "offset": 9957065504,
+      "bytes": 32,
+      "sha256": "e2e3a04dab9a2712581bedc949995b047e0aec25ff71832a3b0a18f56f60163c",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "request_headers": {
+        "Range": "bytes=9957065504-9957065535",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"2517cdea0-64bd9a0525280\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:28:49 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:30 GMT",
+        "ETag": "\"2517cdea0-64bd9a0525280\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "32",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 9957065504-9957065535/9957072544",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "009957065536-00000992-ZISRAWATTACH-body.bin",
+      "offset": 9957065536,
+      "bytes": 992,
+      "sha256": "d4ac40ab563030b0d6336993d69ef1cc7d1c6b61c5b08134149279c0415e3521",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "request_headers": {
+        "Range": "bytes=9957065536-9957066527",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"2517cdea0-64bd9a0525280\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:28:51 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:30 GMT",
+        "ETag": "\"2517cdea0-64bd9a0525280\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "992",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 9957065536-9957066527/9957072544",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000000616672-00004096-subblock-prefix.bin",
+      "offset": 616672,
+      "bytes": 4096,
+      "sha256": "dde3bc606e0cbcdded1ab2f3f446c6e488ea106aa4e8e6b25d33d66a5f9e071e",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "request_headers": {
+        "Range": "bytes=616672-620767",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"2517cdea0-64bd9a0525280\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:44 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:30 GMT",
+        "ETag": "\"2517cdea0-64bd9a0525280\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 616672-620767/9957072544",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "009847678752-00004096-subblock-prefix.bin",
+      "offset": 9847678752,
+      "bytes": 4096,
+      "sha256": "69054ce23c47d05f2c2c87dd58876319ad49637802ed864130c9fcd5736dffea",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "request_headers": {
+        "Range": "bytes=9847678752-9847682847",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"2517cdea0-64bd9a0525280\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:47 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:30 GMT",
+        "ETag": "\"2517cdea0-64bd9a0525280\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 9847678752-9847682847/9957072544",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000012770720-00004096-subblock-prefix.bin",
+      "offset": 12770720,
+      "bytes": 4096,
+      "sha256": "970e83db825e87d3d94b45dbd59ddd1e98b07c3a2add1761561d3f0480229f3c",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "request_headers": {
+        "Range": "bytes=12770720-12774815",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"2517cdea0-64bd9a0525280\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:48 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:30 GMT",
+        "ETag": "\"2517cdea0-64bd9a0525280\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 12770720-12774815/9957072544",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "009859832800-00004096-subblock-prefix.bin",
+      "offset": 9859832800,
+      "bytes": 4096,
+      "sha256": "8511f904a877598d1f95ec44ccb44b22a8cef96e81121a9eed7d7e95e9493a23",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "request_headers": {
+        "Range": "bytes=9859832800-9859836895",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"2517cdea0-64bd9a0525280\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:50 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:30 GMT",
+        "ETag": "\"2517cdea0-64bd9a0525280\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 9859832800-9859836895/9957072544",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000024924768-00004096-subblock-prefix.bin",
+      "offset": 24924768,
+      "bytes": 4096,
+      "sha256": "c51a8292148c5ae036470b179747c1a28ce0ca00f5ec1c566ffef4903e7ae30d",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "request_headers": {
+        "Range": "bytes=24924768-24928863",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"2517cdea0-64bd9a0525280\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:52 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:30 GMT",
+        "ETag": "\"2517cdea0-64bd9a0525280\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 24924768-24928863/9957072544",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "009871986848-00004096-subblock-prefix.bin",
+      "offset": 9871986848,
+      "bytes": 4096,
+      "sha256": "c3a610f43c16cf5c330262596eed31a4d3beafaf8a2b1dcff3a778e9ad6e6819",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "request_headers": {
+        "Range": "bytes=9871986848-9871990943",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"2517cdea0-64bd9a0525280\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:53 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:30 GMT",
+        "ETag": "\"2517cdea0-64bd9a0525280\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 9871986848-9871990943/9957072544",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000037078816-00004096-subblock-prefix.bin",
+      "offset": 37078816,
+      "bytes": 4096,
+      "sha256": "2d46072788267a828daa1f6551b7491f5eed09ce9a43d136c311fa1320947663",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "request_headers": {
+        "Range": "bytes=37078816-37082911",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"2517cdea0-64bd9a0525280\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:55 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:30 GMT",
+        "ETag": "\"2517cdea0-64bd9a0525280\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 37078816-37082911/9957072544",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "009884140896-00004096-subblock-prefix.bin",
+      "offset": 9884140896,
+      "bytes": 4096,
+      "sha256": "025b21308373eb14e99b0a9e6f8826aa384c53cd511265da59ea8a6ef95def04",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "request_headers": {
+        "Range": "bytes=9884140896-9884144991",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"2517cdea0-64bd9a0525280\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:58 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:30 GMT",
+        "ETag": "\"2517cdea0-64bd9a0525280\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 9884140896-9884144991/9957072544",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000049232864-00004096-subblock-prefix.bin",
+      "offset": 49232864,
+      "bytes": 4096,
+      "sha256": "8100dca4063834db2922502465340b1413ebf9d08fe113bf55b2a5082e3b032e",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "request_headers": {
+        "Range": "bytes=49232864-49236959",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"2517cdea0-64bd9a0525280\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:29:59 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:30 GMT",
+        "ETag": "\"2517cdea0-64bd9a0525280\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 49232864-49236959/9957072544",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "009896294944-00004096-subblock-prefix.bin",
+      "offset": 9896294944,
+      "bytes": 4096,
+      "sha256": "d0de944d6c0571301c912b468354db1be4b3adedc6b2f494bb4f7208b0e5aaaf",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "request_headers": {
+        "Range": "bytes=9896294944-9896299039",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"2517cdea0-64bd9a0525280\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:30:01 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:30 GMT",
+        "ETag": "\"2517cdea0-64bd9a0525280\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 9896294944-9896299039/9957072544",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000061386912-00004096-subblock-prefix.bin",
+      "offset": 61386912,
+      "bytes": 4096,
+      "sha256": "7ea06db29a6aea9cb2defdd7a5c6a9cbea216357374fb8374ac2949388f97be7",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "request_headers": {
+        "Range": "bytes=61386912-61391007",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"2517cdea0-64bd9a0525280\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:30:03 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:30 GMT",
+        "ETag": "\"2517cdea0-64bd9a0525280\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 61386912-61391007/9957072544",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "009908448992-00004096-subblock-prefix.bin",
+      "offset": 9908448992,
+      "bytes": 4096,
+      "sha256": "c082a077dec448ac034e123298c8e46cd91f4e642fe120a106baa775e4f3fbcc",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "request_headers": {
+        "Range": "bytes=9908448992-9908453087",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"2517cdea0-64bd9a0525280\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:30:05 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:30 GMT",
+        "ETag": "\"2517cdea0-64bd9a0525280\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 9908448992-9908453087/9957072544",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000073540960-00004096-subblock-prefix.bin",
+      "offset": 73540960,
+      "bytes": 4096,
+      "sha256": "090999b352988024de81d4010dc27cf1896acba31300b9cdbaa2e8c0e53beb56",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "request_headers": {
+        "Range": "bytes=73540960-73545055",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"2517cdea0-64bd9a0525280\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:30:07 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:30 GMT",
+        "ETag": "\"2517cdea0-64bd9a0525280\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 73540960-73545055/9957072544",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "009920603040-00004096-subblock-prefix.bin",
+      "offset": 9920603040,
+      "bytes": 4096,
+      "sha256": "741ddf2c13ff441358ff24419da67b573c017222f1c5cb1c6bb5c628370352d8",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "request_headers": {
+        "Range": "bytes=9920603040-9920607135",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"2517cdea0-64bd9a0525280\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:30:09 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:30 GMT",
+        "ETag": "\"2517cdea0-64bd9a0525280\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 9920603040-9920607135/9957072544",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000085695008-00004096-subblock-prefix.bin",
+      "offset": 85695008,
+      "bytes": 4096,
+      "sha256": "4a9e4b42b938da4e318afbaf80f9e9129dd306f48cfc1afddc9f5ea200162611",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "request_headers": {
+        "Range": "bytes=85695008-85699103",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"2517cdea0-64bd9a0525280\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:30:10 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:30 GMT",
+        "ETag": "\"2517cdea0-64bd9a0525280\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 85695008-85699103/9957072544",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "009932757088-00004096-subblock-prefix.bin",
+      "offset": 9932757088,
+      "bytes": 4096,
+      "sha256": "a90a0e1cb7f8a89d212096d97a1501a04f1128109a9eaa90feb31800a386dc9a",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "request_headers": {
+        "Range": "bytes=9932757088-9932761183",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"2517cdea0-64bd9a0525280\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:30:12 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:30 GMT",
+        "ETag": "\"2517cdea0-64bd9a0525280\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 9932757088-9932761183/9957072544",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "000097849056-00004096-subblock-prefix.bin",
+      "offset": 97849056,
+      "bytes": 4096,
+      "sha256": "d473e701e71f3ac35920c74ef61fe394a941a42250a27ff009f4dd644da6e3b8",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "request_headers": {
+        "Range": "bytes=97849056-97853151",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"2517cdea0-64bd9a0525280\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:30:14 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:30 GMT",
+        "ETag": "\"2517cdea0-64bd9a0525280\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 97849056-97853151/9957072544",
+        "Connection": "close"
+      }
+    },
+    {
+      "file": "009944911136-00004096-subblock-prefix.bin",
+      "offset": 9944911136,
+      "bytes": 4096,
+      "sha256": "aa6fb32631a8f1d064d10dca8a13775f5311db9a89147a27d01258efbd3e5ff5",
+      "status": 206,
+      "requested_url": "https://www.ebi.ac.uk/biostudies/files/S-BIAD2117/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "resolved_url": "https://ftp.ebi.ac.uk/biostudies/fire/S-BIAD/117/S-BIAD2117/Files/Yuya_Karita/AxioZoom/20240626_ws-dilution3_5/t6h-dilution3_5-02.czi",
+      "request_headers": {
+        "Range": "bytes=9944911136-9944915231",
+        "Accept-Encoding": "identity",
+        "If-Match": "\"2517cdea0-64bd9a0525280\""
+      },
+      "headers": {
+        "Date": "Wed, 07 Oct 2026 23:30:15 GMT",
+        "Server": "Apache",
+        "Last-Modified": "Sat, 28 Feb 2026 03:05:30 GMT",
+        "ETag": "\"2517cdea0-64bd9a0525280\"",
+        "Accept-Ranges": "bytes",
+        "Content-Length": "4096",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,OPTIONS",
+        "Access-Control-Allow-Headers": "Authorization,Origin,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Accept",
+        "Content-Range": "bytes 9944911136-9944915231/9957072544",
+        "Connection": "close"
+      }
+    }
+  ]
+}

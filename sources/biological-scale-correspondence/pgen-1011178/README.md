@@ -1,0 +1,7 @@
+# Pv1, cellular signaling and inherited avoidance
+
+Original article and S5 source workbook from Sengupta et al. (2024), [*A natural bacterial pathogen of C. elegans uses a small RNA to induce transgenerational inheritance of learned avoidance*](https://doi.org/10.1371/journal.pgen.1011178). CC BY 4.0. [Manifest](manifest.json) records download URLs, byte counts and SHA-256 hashes. Original bytes are unchanged.
+
+The [analysis](../../../experiments/integrated-correction/general-framework/generative-basis/biological-scale-correspondence/renewal/README.md) independently checks all 6,503 numeric workbook cells and extracts Figure 3B–F, 8I/J/L and 9A–D. Neuron observations are not independent worm identities; choice observations are plates. Exposure settings change between generations, precluding absolute cross-generation GFP calibration. One Figure 3E value, J299, extends into the row where column A begins Figure 3F and is retained.
+
+Pv1 has a 16-nucleotide match to `maco-1`; the mismatch construct has seven substitutions, four inside that matching segment. The deletion, mismatch and pathway-mutant interventions constrain mechanism in their preparations. They do not supply a calibrated joint cellular–motion–ecological history or settle the separate PA14 replication dispute. The [integration](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/BIOLOGICAL-RENEWAL-INTEGRATION.md) preserves both favorable and adverse evidence.

@@ -1,0 +1,40 @@
+EvaluativeExtension.lean:212:9: error: unknown tactic
+EvaluativeExtension.lean:212:6: error: unsolved goals
+case mp.inl.left
+w : Bool
+a b : Response
+h : StrictIncluded (routeProtection w b) (routeProtection w a)
+⊢ routeProtection w a ()
+EvaluativeExtension.lean:211:4: error: unsolved goals
+case mp.inl.right
+w : Bool
+a b : Response
+h : StrictIncluded (routeProtection w b) (routeProtection w a)
+⊢ ¬routeProtection w b ()
+EvaluativeExtension.lean:209:2: error: unsolved goals
+case mp.inr
+w : Bool
+a b : Response
+h :
+  Included (routeProtection w b) (routeProtection w a) ∧
+    Included (routeProtection w a) (routeProtection w b) ∧ StrictIncluded (routeGain w b) (routeGain w a)
+⊢ routeProtection w a () ∧ ¬routeProtection w b ()
+EvaluativeExtension.lean:207:59: error: unsolved goals
+case mpr
+w : Bool
+a b : Response
+⊢ routeProtection w a () ∧ ¬routeProtection w b () → Better (routeProtection w) (routeGain w) a b
+EvaluativeExtension.lean:240:3: error: unexpected token 'omit'; expected '_' or identifier
+EvaluativeExtension.lean:240:2: error: Missing alternative name: Expected `omit`
+EvaluativeExtension.lean:233:2: error: Alternative `omit` has not been provided
+EvaluativeExtension.lean:240:8: error: unexpected token '=>'; expected '[' or identifier
+EvaluativeExtension.lean:247:12: error: Type mismatch
+  (h true True.intro).right Response.right True.intro
+has type
+  ¬Better (routeProtection true) (routeGain true) Response.right Response.left
+but is expected to have type
+  False
+EvaluativeExtension.lean:246:2: error: Alternative `right` has not been provided
+EvaluativeExtension.lean:246:2: error: Alternative `omit` has not been provided
+EvaluativeExtension.lean:248:6: error: unexpected token '('; expected command
+EvaluativeExtension.lean:251:8: error: unexpected token '=>'; expected '[' or identifier

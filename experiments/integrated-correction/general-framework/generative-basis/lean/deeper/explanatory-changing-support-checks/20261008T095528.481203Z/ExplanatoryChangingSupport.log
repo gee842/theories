@@ -1,0 +1,13 @@
+'Generative.ExplanatoryChangingSupport.mem_without' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryChangingSupport.initial_certificate_iff' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryChangingSupport.formation_preserves' does not depend on any axioms
+'Generative.ExplanatoryChangingSupport.withdrawal_preserves_iff' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryChangingSupport.take_preserves_iff' depends on axioms: [propext]
+'Generative.ExplanatoryChangingSupport.release_preserves_iff' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryChangingSupport.change_preserves_iff_guard' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryChangingSupport.certificate_has_remaining_trace' depends on axioms: [propext, Quot.sound]
+'Generative.ExplanatoryChangingSupport.advance_enabled' does not depend on any axioms
+'Generative.ExplanatoryChangingSupport.advance_certificate' depends on axioms: [propext]
+'Generative.ExplanatoryChangingSupport.completion_holds' does not depend on any axioms
+'Generative.ExplanatoryChangingSupport.arbitrary_change_preserves' does not depend on any axioms
+'Generative.ExplanatoryChangingSupport.enabled_change_preserves_wellformed' depends on axioms: [propext, Quot.sound]

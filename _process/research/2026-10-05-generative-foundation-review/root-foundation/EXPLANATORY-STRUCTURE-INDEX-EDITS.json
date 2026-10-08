@@ -1,0 +1,222 @@
+{
+  "scope": "Owned additions and paired C30/F22 continuation; earlier studies preserved.",
+  "shared_file_insertions": [
+    {
+      "path": "RESEARCH.md",
+      "before_sha256": "056b8f95b2ae7f1a4e43eb5996f3ad1143975cb10f09f0b0a8a3fa1b3803b229",
+      "indexed_before_sha256": "fbe503912c31758c8014c4be8dce13cce3608a68710083c33fb08082d2f17c63",
+      "inserted_text": "**普遍唯一性的直接检验 / Direct uniqueness test, 8 October 2026.** [新研究](_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-STRUCTURE-INTEGRATION.md)新增 **32项 Lean 定理／74项含继承审计**：固定问题下准确、约简的表述具有双向唯一对应；同一棋盘目标的整体覆盖与局部放置精确对应，颜色结构可解释去角棋盘的不可能性，却不足以确定全部铺法。 / This establishes relative uniqueness of answer distinctions, not unique generative ontology. A compact same-content global rival survives; mathematical explanation is distinguished from the history of proof acquisition. Audits: 62 empty and 12 using only standard `propext`. Next test independently specified composition relations, preserving prior calibration results and the separate normative route.\n\n",
+      "preserved_other_bytes": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "before_sha256": "0c72eceaeb457ec53098447084c8d701bb54ab9be5d2d61f7c310bace717ea74",
+      "indexed_before_sha256": "36e516860562ea05664f57b102621653b4e29e6b8a3fcb5109695ab3ad67a846",
+      "inserted_text": "**相对唯一性与数学解释 / Relative uniqueness and mathematical explanation, 8 October 2026.** [直接检验](unified-2026-10-05/EXPLANATORY-NECESSITY.md#17-一个已经证明的相对唯一性)已有32项新定理：准确最小表述在固定问题下双向唯一对应，棋盘整体覆盖与逐步历史精确相连；不由此选出时间式生成解释的优先性。 / The structural rival retains the same target. Standard `propext` dependencies are disclosed separately from empty audits. Next compare preservation of composition, not just agreement of answers.\n\n",
+      "preserved_other_bytes": true
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "before_sha256": "f10ab99fed622287bbb3f1caf8b71ffeb9405429e02e293778df0d6e2c961b2b",
+      "indexed_before_sha256": null,
+      "inserted_text": "**Direct explanatory-uniqueness test, 8 October 2026.** [Ren’s authorization](15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md#普遍唯一性的直接检验--direct-test-of-universal-uniqueness) is preserved with the assistant’s proposed route separately marked. [Source assessment](../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-STRUCTURE-INTEGRATION.md#7-primary-sources-and-inherited-work) reads selected Adlam text, the Naproche checkerboard paper and AFP entry metadata; rejected full-text requests for philosophical comparisons retain abstract-only scope. All external materials are link-only, with no imported bytes or novelty claim for the checkerboard proof.\n\n",
+      "preserved_other_bytes": true
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "before_sha256": "d0e492d4eb521b1a348c497cf917dcf4902d27a4696de4ff16bfd0a31851fa06",
+      "indexed_before_sha256": "04c4dd0de72acc6037ad3bc3f5d1ee30f1c510d0ab30b5fe86c214c5cc1219c8",
+      "inserted_text": "**Fixed answers → relative uniqueness; matched structure → limits of priority, 8 October 2026.** [The direct explanatory test](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-STRUCTURE-INTEGRATION.md) checks 32 new theorems / 74 audits (62 empty, 12 standard `propext` only). Exact reduced presentations induce a uniquely matched answer structure on used codes, conditional on the fixed question family and minimality. Compact global tiling and local placement have the same coverage content; a structural balance obstruction need not retain the entire process. This preserves shared relational-content support while blocking an unsupported inference to unique temporal or ontological priority. The next bridge asks which independently required composition/substitution relations must also be preserved. No universal normative warrant is supplied; prior formation/calibration results remain in scope.\n\n",
+      "preserved_other_bytes": true
+    }
+  ],
+  "rows_before": {
+    "C30": {
+      "id": "C30",
+      "title_zh": "生成关系的解释必要性",
+      "title_en": "Generative relations and explanatory necessity",
+      "claim_zh": "目标相关的关系内容贯通可用变化、证据保留、实际正反证据取得、校准、变化后失效及有支持的再用；历史真实与当前适用可分离。",
+      "claim_en": "Target-relevant relations connect available variation, retention, acquired positive/negative evidence, calibration, invalidation and supported reuse; historical truth can outlast current applicability.",
+      "scope_zh": "前两轮17项及45项定理保留；本轮40项新定理／128项含继承审计。可靠参考、共同通道、变化覆盖及支持明示；完整失败历史限制标签保证，整体约束对手与普遍优先性问题保留。下一步解释选择性校准与变化检测。",
+      "scope_en": "Earlier 17- and 45-theorem studies retained; new 40-theorem study / 128 audits including imports. Reference reliability, shared channel, change coverage and support are explicit. Realized failure histories limit label-based guarantees; global rivals and universal priority remain open. Next explain selective recalibration and change monitoring.",
+      "links": [
+        {
+          "label_zh": "当前论述",
+          "label_en": "Current account",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md"
+        },
+        {
+          "label_zh": "论证、反审与来源",
+          "label_en": "Argument, counterreview and sources",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "Ren 原话",
+          "label_en": "Ren’s direction",
+          "path": "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md"
+        },
+        {
+          "label_zh": "可用变化、保留与反审",
+          "label_en": "Available variation, retention and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-VARIATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "取得、校准与修正整合",
+          "label_en": "Acquisition, calibration and correction",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-INQUIRY-INTEGRATION.md"
+        }
+      ]
+    },
+    "F22": {
+      "id": "F22",
+      "title_zh": "关系恢复、证据取得与有效再用",
+      "title_en": "Relation recovery, evidence acquisition and valid reuse",
+      "claim_zh": "在原有恢复、变化及保留结果上，直接复用知识解码定理，检查正反证据取得、任意有限历史有效性、失效与再校准、资源守恒及同起点失误过程。",
+      "claim_en": "Extends recovery, variation and retention by directly reusing the knowledge decoder: checks acquired evidence, validity across arbitrary finite lawful histories, invalidation/recalibration, resource accounting and faulty histories from valid starts.",
+      "scope_zh": "本轮40项新定理＋88项继承审计＝128项空公理依赖审计；单次四事件、保留参考两事件和完整修正历史分别明示。无噪声局部规律不等于零前提，历史存在不等于控制保证，标签一致不等于正确。",
+      "scope_en": "40 new theorems + 88 inherited audits = 128 empty dependency audits. Four-event acquisition, two-event retained-reference reuse and the full correction history have distinct contracts. Noiseless local laws are premises; path existence is not control, and matching labels do not ensure correctness.",
+      "links": [
+        {
+          "label_zh": "Lean 源码",
+          "label_en": "Lean source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryNecessity.lean"
+        },
+        {
+          "label_zh": "证明对应与回执",
+          "label_en": "Proof correspondence and receipt",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "变化源码",
+          "label_en": "Variation source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryVariation.lean"
+        },
+        {
+          "label_zh": "恢复与记录源码",
+          "label_en": "Recovery and retention source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryRecovery.lean"
+        },
+        {
+          "label_zh": "新证明对应与回执",
+          "label_en": "New proof correspondence and receipt",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-VARIATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "取得与再用源码",
+          "label_en": "Acquisition and reuse source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryInquiry.lean"
+        },
+        {
+          "label_zh": "取得、校准与修正整合",
+          "label_en": "Acquisition, calibration and correction",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-INQUIRY-INTEGRATION.md"
+        }
+      ]
+    }
+  },
+  "rows_after": {
+    "C30": {
+      "id": "C30",
+      "title_zh": "生成关系的解释必要性",
+      "title_en": "Generative relations and explanatory necessity",
+      "claim_zh": "目标相关的关系内容贯通变化、证据取得及再用；固定问题下准确最小表述双向唯一对应，但同内容整体覆盖与数学结构说明仍保留，不能仅由可恢复性选定解释优先。",
+      "claim_en": "Target-relevant relations connect variation, evidence acquisition and reuse. Exact reduced presentations uniquely match for fixed questions, while same-content global coverage and structural explanations remain viable; recoverability alone does not select explanatory priority.",
+      "scope_zh": "此前17、45、40项定理各保留范围；本轮32项新定理／74项审计（62空依赖、12仅标准propext）。最小性与问题范围明示；棋盘颜色障碍不决定全部覆盖。下一步检验组合关系的保留，普遍唯一性和规范根据仍开放。",
+      "scope_en": "Prior 17-, 45- and 40-theorem studies retain scope; new 32-theorem study / 74 audits (62 empty, 12 standard propext only). Minimality and questions are explicit; color obstruction does not determine all coverage. Next test preserved composition; universal uniqueness and normative warrant remain open.",
+      "links": [
+        {
+          "label_zh": "当前论述",
+          "label_en": "Current account",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/EXPLANATORY-NECESSITY.md"
+        },
+        {
+          "label_zh": "论证、反审与来源",
+          "label_en": "Argument, counterreview and sources",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "Ren 原话",
+          "label_en": "Ren’s direction",
+          "path": "sources/15-codex-theory-conversations/2026-10-08-generative-explanatory-necessity.md"
+        },
+        {
+          "label_zh": "可用变化、保留与反审",
+          "label_en": "Available variation, retention and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-VARIATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "取得、校准与修正整合",
+          "label_en": "Acquisition, calibration and correction",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-INQUIRY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "唯一性、结构与反审",
+          "label_en": "Uniqueness, structure and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-STRUCTURE-INTEGRATION.md"
+        }
+      ]
+    },
+    "F22": {
+      "id": "F22",
+      "title_zh": "关系恢复、证据再用与相对唯一性",
+      "title_en": "Relation recovery, evidence reuse and relative uniqueness",
+      "claim_zh": "继承必要内容、变化与校准证明；新增准确约简表述的唯一对应、整体覆盖与局部放置等价、去角棋盘结构障碍和问题范围反例。",
+      "claim_en": "Retains content, variation and calibration proofs; adds unique matching of exact reduced presentations, global/local coverage equivalence, the mutilated-board obstruction and query-scope counterexamples.",
+      "scope_zh": "最新17项结构＋15项唯一性定理，连同42项继承审计共74项；核心相对唯一性为空依赖，12项结构相关声明使用标准propext，无自定公理。表述对应不等于生成操作同构，形式验证不证明唯一基础。",
+      "scope_en": "Latest 17 structural + 15 uniqueness theorems, with 42 inherited audits for 74 total. Core relative uniqueness has empty dependencies; 12 structural declarations use standard propext, with no custom axioms. Presentation matching is not generative-operation isomorphism or unique grounding.",
+      "links": [
+        {
+          "label_zh": "Lean 源码",
+          "label_en": "Lean source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryNecessity.lean"
+        },
+        {
+          "label_zh": "证明对应与回执",
+          "label_en": "Proof correspondence and receipt",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-NECESSITY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "变化源码",
+          "label_en": "Variation source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryVariation.lean"
+        },
+        {
+          "label_zh": "恢复与记录源码",
+          "label_en": "Recovery and retention source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryRecovery.lean"
+        },
+        {
+          "label_zh": "新证明对应与回执",
+          "label_en": "New proof correspondence and receipt",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-VARIATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "取得与再用源码",
+          "label_en": "Acquisition and reuse source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryInquiry.lean"
+        },
+        {
+          "label_zh": "取得、校准与修正整合",
+          "label_en": "Acquisition, calibration and correction",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-INQUIRY-INTEGRATION.md"
+        },
+        {
+          "label_zh": "整体与结构源码",
+          "label_en": "Global and structural source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryStructure.lean"
+        },
+        {
+          "label_zh": "相对唯一性源码",
+          "label_en": "Relative uniqueness source",
+          "path": "experiments/integrated-correction/general-framework/generative-basis/lean/deeper/ExplanatoryUniqueness.lean"
+        },
+        {
+          "label_zh": "唯一性、结构与反审",
+          "label_en": "Uniqueness, structure and counterreview",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/EXPLANATORY-STRUCTURE-INTEGRATION.md"
+        }
+      ]
+    }
+  },
+  "preserved_other_entries": true
+}

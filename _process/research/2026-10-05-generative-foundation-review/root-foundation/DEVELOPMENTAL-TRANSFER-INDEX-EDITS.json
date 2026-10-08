@@ -1,0 +1,213 @@
+{
+  "date": "2026-10-08",
+  "edits": [
+    {
+      "path": "RESEARCH.md",
+      "before_sha256": "fbe503912c31758c8014c4be8dce13cce3608a68710083c33fb08082d2f17c63",
+      "after_sha256": "d6c88b3aec836066d5702e75e81c22048983f37f2657e8aaae1d35bcfc274967",
+      "prior_reviewed_sha256": "fbe503912c31758c8014c4be8dce13cce3608a68710083c33fb08082d2f17c63",
+      "scope": "Owned new research entry, prior entries preserved."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+      "before_sha256": "04c4dd0de72acc6037ad3bc3f5d1ee30f1c510d0ab30b5fe86c214c5cc1219c8",
+      "after_sha256": "ebebdf01298050ada2597e80a2cdbddb458448da7493a43b03ca655e2b9b2114",
+      "prior_reviewed_sha256": "04c4dd0de72acc6037ad3bc3f5d1ee30f1c510d0ab30b5fe86c214c5cc1219c8",
+      "scope": "Owned derivation paragraph, other branches unchanged."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/README.md",
+      "before_sha256": "36e516860562ea05664f57b102621653b4e29e6b8a3fcb5109695ab3ad67a846",
+      "after_sha256": "a0ac1e9924b68909894ed3889789d5db816febc70d02a7b9fc4128da350b62cb",
+      "prior_reviewed_sha256": "36e516860562ea05664f57b102621653b4e29e6b8a3fcb5109695ab3ad67a846",
+      "scope": "Owned paired top entry only."
+    },
+    {
+      "path": "sources/SOURCES.md",
+      "before_sha256": "7e89184b14cb81aa09978358b41225e2edc901c9ace69ed8366450eb7a3843c5",
+      "after_sha256": "aa9d6a2a4c78ef3e1ee3996a80e55757a27c733cae2a1d43862c7ea8592c0e12",
+      "prior_reviewed_sha256": null,
+      "scope": "Owned provenance paragraph only."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-SELECTION.md",
+      "before_sha256": "b3c7d751b88c20ba1f19fc70cc4dcaa6fa5d2c3edcb6f7017b05407864bdb8d2",
+      "after_sha256": "dcd5c1c46bff0278c37e0eb2d2324d88e18277749a39491ec4738762c689b7a8",
+      "prior_reviewed_sha256": null,
+      "scope": "Owned new mechanism/counterexample subsection."
+    },
+    {
+      "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md",
+      "before_sha256": "dbdcb0c16ee05b12df00df7447d35ef8657ba1a8be486c83349aff04961270c6",
+      "after_sha256": "532a328cdf527f3f0e1318bd46202bcaa92c04823d129796dcc58dadf6cb33fb",
+      "prior_reviewed_sha256": "dbdcb0c16ee05b12df00df7447d35ef8657ba1a8be486c83349aff04961270c6",
+      "scope": "Added measured failure/alternative comparison without weakening the six requirements; advanced the specific next mechanism."
+    }
+  ],
+  "chain": {
+    "entry_before": {
+      "id": "C14",
+      "title_zh": "生成对选择的递归影响",
+      "title_en": "Recursive influence of generation on selection",
+      "claim_zh": "活动后果可改变后继形成与下一轮选择条件，贡献变体不必获益。重构、发育、留存和聚合区分遗传群体与运输集合；细菌谱系及回复实验接通遗传切换和周期完成。时间遮蔽预测进一步支持实际谱系的信息作用，给常规贝叶斯解释完整信用。",
+      "claim_en": "Consequences can change successor formation and later selection without guaranteeing contributor advantage. Reconstruction, development, retention and aggregation distinguish inherited clusters from transport groups; bacterial genealogy and reversion connect inherited switching to cycle completion. Chronological forecasts further support the information carried by ancestry, fully crediting conventional Bayesian explanation.",
+      "scope_zh": "保留16/26、19/41、7/13及6/6定理/审计与反例；本轮无新定理。54段视频/18项技术重复、33/190敏感性、3,808项记录/3,600联系及42/72对7/72保持原范围。新预测检验3,424项后期结果，保留恒定模型局部优势；独立机制校准、广泛比较与支持更新仍开放。",
+      "scope_en": "Preserves 16/26, 19/41, 7/13 and 6/6 theorem/audit results and counterexamples; no new theorem this round. The 54 videos/18 technical replicates, 33/190 sensitivity, 3,808 records/3,600 links and 42/72 versus 7/72 retain their scopes. New forecasts test 3,424 later outcomes, retaining constant-model exceptions. Independent mechanism calibration, broad comparison and support renewal remain open.",
+      "links": [
+        {
+          "label_zh": "当前表述与范围",
+          "label_en": "Current statement and scope",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#recursive-selection-and-the-generative-direction"
+        },
+        {
+          "label_zh": "生成的重构及实查",
+          "label_en": "Generated reconstruction and checks",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELECTION-RECURRENCE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "完整演化目标",
+          "label_en": "Full evolutionary objective",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md"
+        },
+        {
+          "label_zh": "局部发育与关联形成",
+          "label_en": "Local development and formed association",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-ASSOCIATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "生态留存实证与核验",
+          "label_en": "Measured ecological retention and checks",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ECOLOGICAL-SELECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "堆积、断裂与数量对应",
+          "label_en": "Packing, fragmentation and census correspondence",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PACKING-FRAGMENTATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "生命周期与物理筛选核验",
+          "label_en": "Life-cycle and physical sorting checks",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SETTLING-CORRESPONDENCE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "聚合实测与共存对应",
+          "label_en": "Measured aggregation and coexistence",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AGGREGATION-SELECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "谱系与实际生命周期",
+          "label_en": "Recorded lineage and realized life cycle",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LINEAGE-CONTINUATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "谱系的时间遮蔽预测",
+          "label_en": "Chronological lineage forecasting",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LINEAGE-FORECAST-INTEGRATION.md"
+        }
+      ]
+    },
+    "entry_before_record": "LINEAGE-FORECAST-INDEX-EDITS.json:chain.entry_after",
+    "entry_after": {
+      "id": "C14",
+      "title_zh": "生成对选择的递归影响",
+      "title_en": "Recursive influence of generation on selection",
+      "claim_zh": "活动后果可改变后继形成与选择条件，贡献变体不必获益。重构、发育与聚合区分遗传群体和运输集合；细菌回复实验接通遗传切换与周期完成。谱系预测保留对阶段和区组模型的总体优势；跨日期发育估计暴露前阶段迁移失败，常规解释获完整信用。",
+      "claim_en": "Consequences can change successor formation and selection without guaranteeing contributor advantage. Reconstruction, development and aggregation distinguish inherited clusters from transport groups; bacterial reversion links switching to cycle completion. Lineage forecasts retain aggregate gains over stage and block models, while dated developmental estimates expose first-stage transfer failure. Conventional explanation receives full credit.",
+      "scope_zh": "保留16/26、19/41、7/13及6/6定理/审计与反例；本轮无新定理。54段视频/18项技术重复、33/190敏感性、3,808记录/3,600联系及42/72对7/72保持范围。3,424项预测保留局部反例；新增139实验分组/485焦点行核验。物理校准、广泛比较与支持更新仍开放。",
+      "scope_en": "Preserves 16/26, 19/41, 7/13 and 6/6 theorem/audit results and counterexamples; no new theorem. The 54 videos/18 technical replicates, 33/190 sensitivity, 3,808 records/3,600 links and 42/72 versus 7/72 retain their scopes. Forecasts of 3,424 outcomes retain local failures; new checks cover 139 assay cohorts/485 focal rows. Physical calibration, broad comparison and support renewal remain open.",
+      "links": [
+        {
+          "label_zh": "当前表述与范围",
+          "label_en": "Current statement and scope",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/UNIFIED-ETHICAL-GROUNDING.md#recursive-selection-and-the-generative-direction"
+        },
+        {
+          "label_zh": "生成的重构及实查",
+          "label_en": "Generated reconstruction and checks",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/GENERATED-SELECTION-RECURRENCE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "完整演化目标",
+          "label_en": "Full evolutionary objective",
+          "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md"
+        },
+        {
+          "label_zh": "局部发育与关联形成",
+          "label_en": "Local development and formed association",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-ASSOCIATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "生态留存实证与核验",
+          "label_en": "Measured ecological retention and checks",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/ECOLOGICAL-SELECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "堆积、断裂与数量对应",
+          "label_en": "Packing, fragmentation and census correspondence",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/PACKING-FRAGMENTATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "生命周期与物理筛选核验",
+          "label_en": "Life-cycle and physical sorting checks",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/SETTLING-CORRESPONDENCE-INTEGRATION.md"
+        },
+        {
+          "label_zh": "聚合实测与共存对应",
+          "label_en": "Measured aggregation and coexistence",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/AGGREGATION-SELECTION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "谱系与实际生命周期",
+          "label_en": "Recorded lineage and realized life cycle",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LINEAGE-CONTINUATION-INTEGRATION.md"
+        },
+        {
+          "label_zh": "谱系的时间遮蔽预测",
+          "label_en": "Chronological lineage forecasting",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/LINEAGE-FORECAST-INTEGRATION.md"
+        },
+        {
+          "label_zh": "共同条件及发育预测迁移",
+          "label_en": "Shared conditions and developmental transfer",
+          "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-TRANSFER-INTEGRATION.md"
+        }
+      ]
+    },
+    "other_entries_unchanged_at_owned_mutation": 83,
+    "read_source_versions": [
+      "_process/research/2026-10-05-generative-foundation-review/root-foundation/DEVELOPMENTAL-TRANSFER-INTEGRATION.md",
+      "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/THE-THEORY-OF-EVOLUTION.md"
+    ],
+    "shared_owned_files_awaiting_review": [],
+    "scoped_renderer_check": "passed",
+    "global_pending": {
+      "modified_sources": [
+        "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/ZERO-AXIOM-PRACTICAL-JUDGMENT.md",
+        "_process/research/2026-10-05-generative-foundation-review/root-foundation/ZERO-AXIOM-PRACTICAL-JUDGMENT-INTEGRATION.md",
+        "sources/15-codex-theory-conversations/2026-10-08-normative-force-and-informational-generation.md"
+      ],
+      "missing_sources": [],
+      "new_pages": [],
+      "removed_pages": []
+    },
+    "global_link_validation_pending": [],
+    "scope": "Other entries were compared before the owned write. A subsequent global validation found concurrent unversioned knowledge sources; only C14 is certified here.",
+    "concurrently_revised_and_currently_versioned": [
+      {
+        "path": "RESEARCH.md",
+        "current_reviewed_sha256": "7d80f3c362a2de69fae7142306c1729179af4b8fdb4fc8de0176ee7b635471ea",
+        "scope": "Current version includes concurrent work; this study does not claim ownership or scientific review of those changes."
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/GENERATIVE-GROUNDING.md",
+        "current_reviewed_sha256": "1107920f321676da6ff79c366049cce19771c47faab0cf93f1e3a4748eff2c1e",
+        "scope": "Current version includes concurrent work; this study does not claim ownership or scientific review of those changes."
+      },
+      {
+        "path": "theories/shengsheng-buxi-generative-existence/README.md",
+        "current_reviewed_sha256": "5acda323c97c6de9a4609e6b05d8a72b10236d94200966f621367c0d45435571",
+        "scope": "Current version includes concurrent work; this study does not claim ownership or scientific review of those changes."
+      }
+    ]
+  }
+}

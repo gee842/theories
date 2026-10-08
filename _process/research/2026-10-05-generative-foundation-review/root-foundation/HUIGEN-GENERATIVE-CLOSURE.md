@@ -212,6 +212,9 @@ The strongest progress is therefore about the whole: **a finite necessary root c
 
 ## 9. One coherent interpretation can cover the unbounded closure
 
+**Lean migration, 8 October 2026:** [The checked continuation](DEDUCTIVE-FOUNDATION-TEST.md#20-one-coherent-interpretation-for-a-finitely-based-whole) now implements the finite-basis H10–H11 reduction and the separate-row H12 control in the unchanged calculus, including the empty-basis case and conditional local contexts. [Ten new theorems / 12 new empty audits](../../../../experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/joint-interpretation-verification.json) pass with 12 inherited empty audits. The infinite-basis example, compactness discussion and H13 below remain at their historical hand-proof scope; this notice does not retroactively certify them or the substantive foundation.
+
+
 6 October 2026. Further hand arguments, not additions to the preceding Lean package. The named connection is **a necessary root across different representations → a meaning-preserving whole generated theory**. The [mathematical comparison](MATHEMATICS-UNIQUENESS-RESOLUTION.md#u6-equivalence-and-shortest-description-require-a-declared-comparison) already distinguishes equivalent presentations from a unique ultimate explanation. The present extension addresses the quantifiers needed for Ren's whole-theory claim. None of these statements establishes necessity of the substantive root by itself.
 
 ### H10. Whole interpretation and finite-basis reduction

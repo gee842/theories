@@ -1,0 +1,59 @@
+{
+  "t": 42,
+  "scene": 0,
+  "scene_name": "P6",
+  "position": 6126286688,
+  "data_offset": 6126287902,
+  "data_bytes": 12152832,
+  "metadata_bytes": 926,
+  "metadata_offset": 6126286976,
+  "metadata_sha256": "56c013d6f22a90b67482b6bb1e34e49fbc5f164ddb9fe5b0a3a058857dc9611d",
+  "metadata_leaves": [
+    {
+      "path": "/METADATA/Tags/AcquisitionTime",
+      "value": "2023-11-23T20:40:15.3348724Z"
+    },
+    {
+      "path": "/METADATA/Tags/ImageScaling",
+      "value": "<ImageScaling>\n  <ImagePixelSize>4.54,4.54</ImagePixelSize>\n</ImageScaling>"
+    },
+    {
+      "path": "/METADATA/Tags/DetectorState",
+      "value": "<CameraState>\n  <ApplyCameraProfile>false</ApplyCameraProfile>\n  <ApplyImageOrientation>true</ApplyImageOrientation>\n  <ExposureTime>50000000</ExposureTime>\n  <Frame>0,0,2752,2208</Frame>\n  <ImageOrientation>3</ImageOrientation>\n</CameraState>"
+    },
+    {
+      "path": "/METADATA/Tags/StageXPosition",
+      "value": "+000000090591.4950"
+    },
+    {
+      "path": "/METADATA/Tags/StageYPosition",
+      "value": "+000000027401.4690"
+    },
+    {
+      "path": "/METADATA/Tags/FocusPosition",
+      "value": "-000000077189.0000"
+    },
+    {
+      "path": "/METADATA/Tags/RoiCenterOffsetX",
+      "value": "+000000000000.0000"
+    },
+    {
+      "path": "/METADATA/Tags/RoiCenterOffsetY",
+      "value": "+000000000000.0000"
+    },
+    {
+      "path": "/METADATA/DataSchema/ValidBitsPerPixel",
+      "value": "14"
+    }
+  ],
+  "capture_utc": "2023-11-23T20:40:15.3348724Z",
+  "crop_bounds_xywh": [
+    1120,
+    848,
+    512,
+    512
+  ],
+  "crop_sha256": "880213801d156a1d51541d8213d0560c8f9bfe86e83ba2503bf7a0caec27f0ea",
+  "range_manifest": "sources/evolutionary-selection/karita-2026/microscopy-history/t042/ranges.json",
+  "range_manifest_sha256": "06428e90c6b8de82672a73b43837b45bf16b77bec9983fa0d1e30a440868101d"
+}

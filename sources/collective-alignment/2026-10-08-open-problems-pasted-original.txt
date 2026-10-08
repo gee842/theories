@@ -1,0 +1,198 @@
+# The 20 Most Important Open Problems in AI Alignment
+
+As of October 2026, I would divide AI alignment into five layers, covering 20 fundamental problems.
+
+The central challenge is much larger than making AI obedient or harmless:
+
+How can we build increasingly powerful intelligence that reliably contributes to a desirable future, even when objectives are imperfect, humans disagree, and multiple intelligent actors compete?
+
+This ranking is my synthesis, rather than an established consensus. It draws on the 2026 Singapore Consensus, the UK AI Security Institute alignment agenda, and current frontier-lab research.&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://www.aipriorities.org\&sz=32)
+
+AI Priorities
+
++2
+
+
+
+## I. Foundational alignment — What should intelligence optimize?
+
+These are the deepest questions, and arguably the least resolved.
+
+| # | Problem                            | Fundamental question                                                                                        |
+| - | ---------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| 1 | Normative foundations / metaethics | Is there a universal, rationally defensible account of good and bad that applies across intelligent agents? |
+| 2 | Value specification                | How can desirable outcomes be represented without losing what actually matters?                             |
+| 3 | Value pluralism and aggregation    | How should conflicting interests, preferences, rights, and conceptions of well-being be reconciled?         |
+| 4 | Moral uncertainty                  | How should intelligence act when it is uncertain about ethics itself?                                       |
+| 5 | Long-term consequences             | How can we evaluate whether actions improve the future rather than merely producing immediate benefits?     |
+
+An important distinction: solving alignment might not require discovering a single universal morality. It could instead require systems that preserve rights, remain corrigible, and make decisions robustly under persistent moral disagreement.
+
+## II. Inner alignment — What will AI actually pursue?
+
+| #  | Problem                         | Fundamental question                                                                                      |
+| -- | ------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| 6  | Goal misgeneralization          | Will a learned objective remain appropriate in unfamiliar situations?                                     |
+| 7  | Instrumental convergence        | Will agents acquire incentives for self-preservation, resource acquisition, power, or resisting shutdown? |
+| 8  | Deceptive alignment / scheming  | Can an AI appear aligned while pursuing conflicting objectives?                                           |
+| 9  | Reward hacking / Goodhart's law | How do we prevent optimization of measurable proxies from destroying the objectives they represent?       |
+| 10 | Self-improvement stability      | Can alignment survive recursive self-improvement, architecture changes, and autonomous AI research?       |
+
+These problems become more serious when systems can plan over long horizons and influence their own operating conditions.
+
+## III. Epistemic alignment — How can we know an AI is aligned?
+
+| #  | Problem                                 | Fundamental question                                                                                                       |
+| -- | --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| 11 | Mechanistic interpretability            | Can we understand the internal mechanisms that produce AI decisions, goals, and representations?                           |
+| 12 | Scalable oversight                      | How can humans reliably supervise systems that outperform them?                                                            |
+| 13 | Robust evaluation and formal guarantees | How can we establish meaningful safety assurances, including against unknown failures and deliberately deceptive behavior? |
+| 14 | AI control and corrigibility            | Can AI remain interruptible, correctable, and constrained even when it is more capable than its operators?                 |
+
+A major current research challenge is evaluation awareness: models may behave differently when they recognize they are being tested. This makes observable compliance insufficient evidence of deep alignment.&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://www.aipriorities.org\&sz=32)
+
+AI Priorities
+
++2
+
+
+
+## IV. Collective alignment — What happens when intelligent agents interact?
+
+| #  | Problem                                       | Fundamental question                                                                                                       |
+| -- | --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| 15 | Multi-agent alignment                         | Can individually aligned agents produce collectively harmful outcomes?                                                     |
+| 16 | Competitive dynamics and arms races           | Can competition systematically select for increasingly dangerous strategies, even among otherwise well-intentioned actors? |
+| 17 | Power concentration and institutional capture | How do we prevent AI-enabled actors from accumulating power and reshaping institutions to preserve it?                     |
+| 18 | Human–AI coevolution                          | How can human institutions, incentives, and values adapt without creating an unstable feedback loop with AI capabilities?  |
+
+These are not merely speculative extensions. Economic theory and game theory are explicit areas of the UK AI Security Institute's alignment research agenda.&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://alignmentproject.aisi.gov.uk\&sz=32)
+
+Alignment Project by AISI
+
+
+
+## V. Civilizational alignment — Can humanity use aligned AI well?
+
+| #  | Problem                                        | Fundamental question                                                                                                                   |
+| -- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| 19 | Governance and coordination                    | Can institutions manage dangerous capabilities, credible verification, international competition, and deployment incentives?           |
+| 20 | Beneficial distribution and systemic stability | Can the benefits of AI be broadly shared without undermining human agency, social stability, or the institutions that support welfare? |
+
+This final layer is important because a technically aligned AI can still be deployed toward destructive human objectives.
+
+Technical alignment does not automatically imply alignment of the civilization operating the technology.
+
+## Which problems matter most?
+
+If I prioritize by a combination of existential significance, foundational importance, and dependence of other problems on their solution, my top 10 would be:
+
+1
+
+Normative foundations
+
+What counts as good, and whose good?
+
+2
+
+Competitive dynamics
+
+Prevent destructive equilibria among intelligent actors
+
+3
+
+Self-improvement stability
+
+Preserve safety through recursive improvement
+
+4
+
+Deceptive alignment
+
+Prevent concealed, conflicting objectives
+
+5
+
+Scalable oversight
+
+Supervise intelligence beyond human expertise
+
+6
+
+Goal misgeneralization
+
+Ensure goals generalize to novel circumstances
+
+7
+
+Power concentration
+
+Prevent self-reinforcing capture of institutions
+
+8
+
+Value pluralism
+
+Reconcile conflicting human values and interests
+
+9
+
+Formal guarantees
+
+Establish reliable evidence of safety
+
+10
+
+Governance and coordination
+
+Make international cooperation and enforcement viable
+
+My qualitative importance assessment, not a measurement or field-wide ranking. Five dots indicate highest priority; several problems are tied.
+
+## The dependency structure
+
+These problems are not independent. A useful conceptual map is:
+
+Conceptual dependency map. In reality the relationships are bidirectional, and many technical approaches can make progress without resolving all earlier layers.
+
+## One especially important unsolved problem
+
+Given your interest in Meta-Attractors and universal metaethics, I think a particularly valuable research question is:
+
+Under what conditions does a population of individually goal-directed, increasingly capable agents converge toward a collectively destructive attractor, even when each agent is locally aligned?
+
+This can be made mathematically precise without first solving universal metaethics.
+
+For example, consider agents \\(i=1,\ldots,n\\) maximizing individual objectives:
+
+\\[ \max\_{\pi_i}\mathbb E[U_i] \\]
+
+while their actions change both the world state \\(s_t\\) and future distributions of power \\(p_t\\):
+
+\\[ (s\_{t+1},p\_{t+1})=F(s_t,p_t,a_1,\ldots,a_n). \\]
+
+The research challenge is to establish conditions under which:
+
+\\[ \text{Individual optimization + selection} \Longrightarrow \text{collective loss of welfare or control} \\]
+
+and then identify interventions that provably prevent this outcome under explicitly stated assumptions.
+
+That implication is not universally true; cooperation and well-designed incentives can produce beneficial equilibria. The important scientific contribution would be identifying the conditions separating beneficial and destructive attractors.
+
+This would connect game theory, evolutionary dynamics, institutional design, multi-agent AI safety, and the foundations of ethics.
+
+It also gives rise to a deeper distinction:
+
+- AI alignment: Is the AI pursuing the objective we intend?
+- Collective alignment: Does the interaction of pursuing agents produce desirable outcomes?
+- Civilizational alignment: Are humanity's objectives, institutions, and technological trajectories jointly sustainable?
+
+My assessment is that contemporary technical alignment research has made more concrete progress on the first question than on the latter two. The latter are especially important because perfectly aligning every AI with its operator does not guarantee a desirable collective outcome.
+
+That may be one of the most consequential gaps in the overall alignment research program.
