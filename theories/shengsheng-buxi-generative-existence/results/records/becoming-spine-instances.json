@@ -1,0 +1,422 @@
+{
+  "schema_version": 1,
+  "id": "becoming-spine-instances",
+  "title": {
+    "zh": "既有接口是 Becoming 脊柱的实例；比较经提升规则推广到每个框架",
+    "en": "Existing interfaces are instances of the Becoming spine; comparison extends to every frame under the lifting rule"
+  },
+  "kind": "theorem",
+  "status": "recorded-checked",
+  "family": "F07",
+  "reviewed_at_utc": "2026-10-08T20:13:24+00:00",
+  "claim": {
+    "zh": "种子—边闭包（WholeGroundCoverage 的 Reached、CutCoverageAudit 的 Reach）与评价者链（EvaluatorGrounding 的 Chain）恰是边过程上的可达。框架的可达配置构成共同延续空间：保持步骤与主张的映射携带每个可共同实现的组合，步骤可提升、主张可反映的摘要不丢失任何组合。稳健回应恰是可容许性取完成的共同回应，反之每个稳健回应都是某个过程的共同回应；保证即一步完成；LiveStep 即 Enabled；按一次观察过滤规则表即纯观察上的 After。函数式情境的实践表述恰是提升规则 L 下表述在确定框架上的情形；在 L 下，生成比较提升到回应，并给出理由、协调选择的存活与持续改进无存活者，对每个框架成立。L 是实质承诺：有一好一坏两个结果的回应，在保守规则下两个方向都不可比。",
+    "en": "Seed–edge closures (WholeGroundCoverage.Reached, CutCoverageAudit.Reach) and evaluator chains (EvaluatorGrounding.Chain) are exactly reachability on the edge process. A frame's reachable configurations form a joint-continuation space: a step- and claim-preserving map carries every jointly realizable bundle, and a summary whose steps lift and whose claims reflect loses none. A robust response is exactly a common response with completion as admissibility, and every robust response is a common response of some process; a guarantee is one-step completion; LiveStep is Enabled; filtering a rule list by one observation is After on a pure observation. The functional articulation of a situation is exactly the articulation under the lifting rule L on the deterministic frame; under L, generative comparison lifts to responses and supplies reasons, survival of coherent selection and the absence of survivors under continual improvement on every frame. L is substantive: a response with one better and one worse outcome is comparable in neither direction under the conservative rule."
+  },
+  "hypotheses": [
+    {
+      "zh": "桥接定理是定义层面的等同，不引入规范前提；它们只搬运定理，原定理需要的外给前提照旧需要。",
+      "en": "The bridge theorems are definitional identifications and add no normative premise; they transport theorems, and the supplied premises the original theorems need are still needed."
+    },
+    {
+      "zh": "提升后的结果以比较原则 C、提升后的实践表述或选择协调为外给前提；L 取保守规则“每个结果都优于每个结果”，按计划第 6 节公开为默认，更强规则是可选承诺。",
+      "en": "The lifted results take comparison principle C and the lifted articulation or selection coherence as supplied premises; L is the conservative rule “every outcome better than every outcome”, public as the default by plan §6, with stronger rules optional commitments."
+    },
+    {
+      "zh": "方向约定不同且保留：GenerativeComparison 的 Better first second 表示后者更好；PracticalJudgment 与 LiftBetter 的 better x y 表示前者更好。",
+      "en": "Direction conventions differ and are kept: GenerativeComparison's Better first second says the second is better; PracticalJudgment's and LiftBetter's better x y says x is better."
+    }
+  ],
+  "correspondence": {
+    "zh": "按核心约定，配置保留问题所需的历史，因此把模块的历史类型取为框架的配置是对应选择，不是 Lean 结果。分类页逐模块记录其定理经桥接、因已在核心上、或经类型代入作用于脊柱，以及哪些模块有意不桥接（Mathlib 叶子、具体模型）与留给 P3b 的更新／消耗模块。",
+    "en": "By the core convention a configuration retains whatever history the question needs, so taking a module's history type as a frame's configurations is a correspondence choice, not a Lean result. The classification page records, module by module, whether its theorems reach the spine by a bridge, by already being on the core, or by type substitution, and which modules are deliberately not bridged (Mathlib leaves, concrete models) or left to P3b (renewal and consumption)."
+  },
+  "canonical_source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingInstances.lean",
+  "aliases": [
+    "Becoming.reached_iff_closure",
+    "Becoming.cutReach_iff_closure",
+    "Becoming.chain_iff_reach",
+    "Becoming.Frame.map_preserves_bundles",
+    "Becoming.Frame.lift_reflects_bundles",
+    "Becoming.commonResponse_is_robust",
+    "Becoming.robust_iff_commonResponse",
+    "Becoming.guarantees_iff_completes",
+    "Becoming.liveStep_iff_enabled",
+    "Becoming.after_observe_iff",
+    "Becoming.revise_is_after",
+    "Becoming.comparison_lifts",
+    "Becoming.lifted_comparison_supplies_reason",
+    "Becoming.lift_coherent_selection_survives",
+    "Becoming.lift_continual_improvement_has_no_survivor",
+    "Becoming.articulation_iff_lifted",
+    "Becoming.LiftModel.some_outcome_does_not_lift",
+    "Becoming.LiftModel.lift_needs_live_middle"
+  ],
+  "dependencies": [
+    {
+      "id": "metaethical-core-characterization",
+      "relation": "formal-reuse",
+      "detail": {
+        "zh": "comparison_lifts 与各提升定理直接使用 Comparison（C）、LiftBetter（L）、Frame.inventory 与 Enabled；PositiveGroundUncertainty 与 PositionedPositiveReason 的接口实例就是 universal_reason。",
+        "en": "comparison_lifts and the lifted theorems directly use Comparison (C), LiftBetter (L), Frame.inventory and Enabled; the interface instance for PositiveGroundUncertainty and PositionedPositiveReason is universal_reason itself."
+      },
+      "interface": {
+        "output": {
+          "zh": "框架上的生成比较原则 C 与保守提升规则 L 的定义。",
+          "en": "The definitions of generative comparison principle C on a frame and the conservative lifting rule L."
+        },
+        "input": {
+          "zh": "comparison_lifts 把 C 下的逐结果扩展转成回应间的 LiftBetter。",
+          "en": "comparison_lifts turns an outcome-wise extension under C into LiftBetter between responses."
+        },
+        "conditions": {
+          "zh": "同一框架、同一 living 读法；比较方向按 GenerativeComparison 的约定翻转为 LiftBetter 的约定。",
+          "en": "Same frame and `living` reading; the comparison's direction is flipped from GenerativeComparison's convention to LiftBetter's."
+        },
+        "evidence": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingInstances.lean"
+      }
+    }
+  ],
+  "related": [
+    {
+      "id": "classification-robust-generative-comparison",
+      "detail": {
+        "zh": "GenerativeComparison 的情境理由、协调选择与持续改进结果是本结果提升定理在确定框架上的情形（articulation_iff_lifted）；本结果推广而不调用它们。",
+        "en": "GenerativeComparison's situated reason, coherent selection and continual-improvement results are the deterministic case of this result's lifted theorems (articulation_iff_lifted); this result generalizes them without calling them."
+      }
+    },
+    {
+      "id": "practical-judgment-g0-j",
+      "detail": {
+        "zh": "robust_iff_commonResponse 把 J 的稳健判断等同于探究层的共同回应，因此 J 的稳健性定理可在可靠探究的所见范围上使用；J 的规范前提不因此得到证明。",
+        "en": "robust_iff_commonResponse identifies J's robust judgment with the inquiry layer's common response, so J's robustness theorems apply on the scope of a sound inquiry; J's normative premises are not thereby proved."
+      }
+    },
+    {
+      "id": "positive-ground-open-futures",
+      "detail": {
+        "zh": "该结果用到的规则表修订与共同组合传递，分别是 revise_is_after 与 Frame.map_preserves_bundles 的情形。",
+        "en": "The rule-list revision and joint-bundle transport it uses are cases of revise_is_after and Frame.map_preserves_bundles."
+      }
+    },
+    {
+      "id": "relational-generative-comparison",
+      "detail": {
+        "zh": "共同延续空间取框架的可达配置时，该结果的共同组合区分直接作用于脊柱。",
+        "en": "With the joint-continuation space taken as a frame's reachable configurations, that result's joint-bundle distinction applies on the spine."
+      }
+    },
+    {
+      "id": "self-good-reachable-g0",
+      "detail": {
+        "zh": "该路线的 Chain 即边过程上的可达（chain_iff_reach）。",
+        "en": "That route's Chain is reachability on the edge process (chain_iff_reach)."
+      }
+    }
+  ],
+  "counterexamples": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingInstances.lean",
+      "detail": {
+        "zh": "L 是实质承诺：从配置 0 出发，mixed 到 0 或 4，high 到 3；mixed 有结果胜过 high，但保守规则在两个方向都不比较（LiftModel.some_outcome_does_not_lift）。",
+        "en": "L is substantive: from configuration 0, mixed reaches 0 or 4 and high reaches 3; some outcome of mixed beats high, yet the conservative rule compares them in neither direction (LiftModel.some_outcome_does_not_lift)."
+      }
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingInstances.lean",
+      "detail": {
+        "zh": "经没有结果的中间回应，两段提升比较空洞成立而合成失败（LiftModel.lift_needs_live_middle）。",
+        "en": "Through a middle response with no outcome both lifted comparisons hold vacuously while the composite fails (LiftModel.lift_needs_live_middle)."
+      }
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-INSTANCE-CLASSIFICATION.md",
+      "detail": {
+        "zh": "有意不桥接：5 个 Mathlib 叶子留待 P5，9 个具体模型没有需要实例化的接口，2 个更新／消耗模块留待 P3b。",
+        "en": "Deliberately not bridged: 5 Mathlib leaves are left to P5, 9 concrete models have no interface to instantiate, and 2 renewal modules are left to P3b."
+      }
+    }
+  ],
+  "limitations": {
+    "zh": "不增加任何规范内容：桥接只搬运定理，不证明其前提，历史类型的含义与外给关系的规范根据仍由使用者提供。L 只取保守规则；更强的提升规则（某结果、期望或风险规则）未研究。更新／消耗的统一与 living 的动力学读法留待 P3b。",
+    "en": "Adds no normative content: bridges transport theorems without proving their premises, and the meaning of history types and the normative warrant of supplied relations remain the user's to supply. L is only the conservative rule; stronger lifting rules (some-outcome, expectation or risk rules) are not studied. The unification of renewal and consumption and the dynamic reading of `living` are left to P3b."
+  },
+  "validation_scope": {
+    "zh": "Lean 4.29.1 合并检查器成功实查（20261008T201324.870042Z）：BecomingInstances 26 项定理，连同 BecomingFrame 新增的 Reach.map、Reach.lift，全部空依赖；同一回执共 4 个脊柱模块 62 项定理／111 项声明审计，13 个继承模块的当前字节与已通过回执一致，其 propext、Quot.sound、Classical.choice 另列。控制例“框架的延续空间有实现生命主张的可达配置”不计为新定理。分类检查对 45 个模块逐行机械检查。作者自审，尚无独立反审。",
+    "en": "Successful Lean 4.29.1 consolidated check (20261008T201324.870042Z): BecomingInstances' 26 theorems, with BecomingFrame's new Reach.map and Reach.lift, all have empty axiom reports; the same receipt covers 4 spine modules with 62 theorems/111 declaration audits, and 13 inherited modules whose current bytes match passed receipts, with their propext, Quot.sound and Classical.choice listed separately. The control that a frame's continuation space has a reached configuration realizing a living claim is not counted as a new theorem. The classification check mechanically checks all 45 module rows. Author's review only; no independent review yet."
+  },
+  "references": [
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingInstances.lean",
+      "role": "proof",
+      "sha256": "30636dd8f1c5ac6444ee085e3228eae5110944a59334eb31a2b78f68e2deacf8",
+      "declarations": [
+        "Becoming.edgeProcess",
+        "Becoming.Closure",
+        "Becoming.reached_iff_closure",
+        "Becoming.cutReach_iff_closure",
+        "Becoming.chain_iff_reach",
+        "Becoming.Frame.continuations",
+        "Becoming.Frame.map_preserves_bundles",
+        "Becoming.Frame.lift_reflects_bundles",
+        "Becoming.commonResponse_is_robust",
+        "Becoming.robust_iff_commonResponse",
+        "Becoming.guarantees_iff_completes",
+        "Becoming.liveStep_iff_enabled",
+        "Becoming.after_observe_iff",
+        "Becoming.revise_is_after",
+        "Becoming.LiftExtension",
+        "Becoming.comparison_lifts",
+        "Becoming.LiftedArticulation",
+        "Becoming.lifted_comparison_supplies_reason",
+        "Becoming.LiftSurvives",
+        "Becoming.LiftCoherence",
+        "Becoming.lift_coherent_selection_survives",
+        "Becoming.lift_continual_improvement_has_no_survivor",
+        "Becoming.situation_enabled_iff",
+        "Becoming.situation_lift_iff",
+        "Becoming.articulation_iff_lifted",
+        "Becoming.LiftModel.some_outcome_does_not_lift",
+        "Becoming.LiftModel.lift_needs_live_middle"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingFrame.lean",
+      "role": "proof",
+      "sha256": "a5af25d221a18ce291638a314ee9c2e2bf2620e8db76f16ce38518b32824e3d3",
+      "declarations": [
+        "Becoming.Reach.map",
+        "Becoming.Reach.lift",
+        "Becoming.Invariant.reach"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean",
+      "role": "proof",
+      "sha256": "44b1485b1acbcfcfb713aa127cb29163ed5348d24be9e2682c34690e69ab9e62",
+      "declarations": [
+        "Becoming.Frame.inventory",
+        "Becoming.Comparison",
+        "Becoming.LiftBetter",
+        "Becoming.universal_reason"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/WholeGroundCoverage.lean",
+      "role": "proof",
+      "sha256": "8ddf51311583755908ba843986f262f7a0b4071764031a6fa1a1bf2c0dbd512a",
+      "declarations": [
+        "WholeGroundCoverage.Reached"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/CutCoverageAudit.lean",
+      "role": "proof",
+      "sha256": "4e6649999c96112c1f746d377fbfdacabe10e6ed2d12a7368f480b3986e38669",
+      "declarations": [
+        "UniversalEthics.CutCoverageAudit.Reach"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluatorGrounding.lean",
+      "role": "proof",
+      "sha256": "e98dd3eeabfbc94407512be78d9a7412af4fe00e6fbcf7acf03e3b068286689c",
+      "declarations": [
+        "EvaluatorGrounding.Chain"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointContinuationClassification.lean",
+      "role": "proof",
+      "sha256": "e508683cc80832744a28f44c69f9c2561701cd099219448b75cfdb474c0786ee",
+      "declarations": [
+        "JointContinuationClassification.Continuations",
+        "JointContinuationClassification.faithful_history_transport_preserves_joint_bundles"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean",
+      "role": "proof",
+      "sha256": "e3e5d866aa755650414eb85f8d3e8a1ba7166914dfc16d2e907f9fa9e0c451af",
+      "declarations": [
+        "PracticalJudgment.Robust"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalReach.lean",
+      "role": "proof",
+      "sha256": "1b13fcc34fed86de83e6f09dae82b321422195f31fb97d37024d7143183d0e7b",
+      "declarations": [
+        "PracticalReach.Guarantees"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/StandardsBridge.lean",
+      "role": "proof",
+      "sha256": "f061dbc44da5cdf11ac5ff79b3f89558c7e177b23b9f121c1048c16ed353a42a",
+      "declarations": [
+        "Generative.StandardsBridge.revise"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInfrastructure.lean",
+      "role": "proof",
+      "sha256": "132fc3763fea09962c00f28bcdaafedc046244827e26b6215772eb0a48e91835",
+      "declarations": [
+        "CorrectionInfrastructure.LiveStep"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
+      "role": "proof",
+      "sha256": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
+      "declarations": [
+        "GenerativeComparison.Situation",
+        "GenerativeComparison.PracticalArticulation",
+        "GenerativeComparison.GenerativeExtension"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/InquirySufficiency.lean",
+      "role": "proof",
+      "sha256": "d4a95ca842f46ffa9c23eea92d04cdb45027dc6842148d3d0bdc17cd65ad18f2",
+      "declarations": [
+        "Generative.InquirySufficiency.CommonResponse",
+        "Generative.InquirySufficiency.After"
+      ]
+    },
+    {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "role": "receipt",
+      "sha256": "4a1ad8cb4cd2fe5b06e2d01757736d56e7c8353fe3e74da94a8a79e206e8c001",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-INSTANCE-CLASSIFICATION.md",
+      "role": "integration",
+      "sha256": "d47c67fc88c170051a6e5110150035386558d5a91bbba790878266612d3a613c",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-INSTANCE-CHECKS.json",
+      "role": "integration",
+      "sha256": "4a40dd2eaee42aac5f9472d2d4937ca3fe3a5af4aae1f3e968037b0bc3064967",
+      "declarations": []
+    },
+    {
+      "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
+      "role": "statement",
+      "sha256": "48e679d390049a677d0455978954ee83789fac6b94e119bc80d4cd7dbe799bfc",
+      "declarations": []
+    },
+    {
+      "path": "sources/15-codex-theory-conversations/2026-10-09-one-theory-unification.md",
+      "role": "provenance",
+      "sha256": "054c09c4d17c281d401795a90330f5a7c353827b12ec06f73820dd9055c52b41",
+      "declarations": []
+    }
+  ],
+  "proof_bindings": [
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingInstances.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/BecomingInstances",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingFrame.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/BecomingFrame",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/MetaethicalCore",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/WholeGroundCoverage.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/WholeGroundCoverage",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/CutCoverageAudit.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/CutCoverageAudit",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluatorGrounding.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/EvaluatorGrounding",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointContinuationClassification.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/JointContinuationClassification",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/PracticalJudgment",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalReach.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/PracticalReach",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/StandardsBridge.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/StandardsBridge",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInfrastructure.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/CorrectionInfrastructure",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/GenerativeComparison",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    },
+    {
+      "source": "experiments/integrated-correction/general-framework/generative-basis/lean/inquiry-root/sufficiency/InquirySufficiency.lean",
+      "receipt": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+      "sha256_pointer": "/source_sha256/InquirySufficiency",
+      "success_pointer": "/status",
+      "success_value": "passed"
+    }
+  ],
+  "next_delta": {
+    "zh": "P3b：由 Run 可观测量构造更新／消耗分类，使 ContinuationRenewal、OpenFutureRevision 与 Depletion 成为同一分类的实例；P5 时为 Mathlib 叶子建立桥接。",
+    "en": "P3b: build the renewal/consumption classification from Run observables so that ContinuationRenewal, OpenFutureRevision and Depletion become instances of one classification; at P5, bridge the Mathlib leaves."
+  },
+  "history": [
+    {
+      "zh": "2026-10-09：应 Ren“你自己全改了吧……先更新好计划，然后再一步步完整完成，保持代码和整体结构优雅”新增，作为整合计划 P3（实例化而不复制）。",
+      "en": "2026-10-09: added following Ren's “你自己全改了吧……先更新好计划，然后再一步步完整完成，保持代码和整体结构优雅”, as P3 of the unification plan (instantiate rather than copy)."
+    }
+  ]
+}

@@ -1,12 +1,13 @@
 {
   "status": "passed",
-  "utc": "20261008T195935.130766Z",
+  "utc": "20261008T201324.870042Z",
   "toolchain": "leanprover/lean4:v4.29.1",
-  "retained_run": "becoming-checks/20261008T195935.130766Z",
+  "retained_run": "becoming-checks/20261008T201324.870042Z",
   "spine_modules": [
     "BecomingFrame",
     "BecomingModal",
-    "MetaethicalCore"
+    "MetaethicalCore",
+    "BecomingInstances"
   ],
   "compile_order": [
     "GenerativeCore",
@@ -19,7 +20,13 @@
     "StandardsBridge",
     "PositiveGroundUncertainty",
     "PositionedPositiveReason",
-    "MetaethicalCore"
+    "MetaethicalCore",
+    "WholeGroundCoverage",
+    "CutCoverageAudit",
+    "EvaluatorGrounding",
+    "PracticalReach",
+    "CorrectionInfrastructure",
+    "BecomingInstances"
   ],
   "source_paths": {
     "GenerativeCore": "GenerativeCore.lean",
@@ -32,11 +39,17 @@
     "StandardsBridge": "universal-ethics/generative-capacity/StandardsBridge.lean",
     "PositiveGroundUncertainty": "universal-ethics/generative-capacity/PositiveGroundUncertainty.lean",
     "PositionedPositiveReason": "universal-ethics/generative-capacity/PositionedPositiveReason.lean",
-    "MetaethicalCore": "becoming/MetaethicalCore.lean"
+    "MetaethicalCore": "becoming/MetaethicalCore.lean",
+    "WholeGroundCoverage": "universal-ethics/WholeGroundCoverage.lean",
+    "CutCoverageAudit": "universal-ethics/CutCoverageAudit.lean",
+    "EvaluatorGrounding": "universal-ethics/generative-capacity/EvaluatorGrounding.lean",
+    "PracticalReach": "universal-ethics/generative-capacity/PracticalReach.lean",
+    "CorrectionInfrastructure": "universal-ethics/generative-capacity/CorrectionInfrastructure.lean",
+    "BecomingInstances": "becoming/BecomingInstances.lean"
   },
   "source_sha256": {
     "GenerativeCore": "e3daca1b729118fc309585a5d3ba1af60ac99cd80bab41e477aed204177069e8",
-    "BecomingFrame": "cbcf9aa5886a2c0c08cb5d7ae1c72a1d88f362c8c88c0e0cc188e5f85a12855f",
+    "BecomingFrame": "a5af25d221a18ce291638a314ee9c2e2bf2620e8db76f16ce38518b32824e3d3",
     "InquirySufficiency": "d4a95ca842f46ffa9c23eea92d04cdb45027dc6842148d3d0bdc17cd65ad18f2",
     "BecomingModal": "382e1684c6391d1bba72f1830a3ba67486216dcdd883f25d225855ac1ea7a54f",
     "GenerativeComparison": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
@@ -45,13 +58,19 @@
     "StandardsBridge": "f061dbc44da5cdf11ac5ff79b3f89558c7e177b23b9f121c1048c16ed353a42a",
     "PositiveGroundUncertainty": "86ff096d42b7246b74242ba0e68ec90d3624392f14303b0dcd6e8a9c59e42fcd",
     "PositionedPositiveReason": "95cf5800f6827d1896cac186113cccf9561768693c6d6e867a3626cd04fc8408",
-    "MetaethicalCore": "44b1485b1acbcfcfb713aa127cb29163ed5348d24be9e2682c34690e69ab9e62"
+    "MetaethicalCore": "44b1485b1acbcfcfb713aa127cb29163ed5348d24be9e2682c34690e69ab9e62",
+    "WholeGroundCoverage": "8ddf51311583755908ba843986f262f7a0b4071764031a6fa1a1bf2c0dbd512a",
+    "CutCoverageAudit": "4e6649999c96112c1f746d377fbfdacabe10e6ed2d12a7368f480b3986e38669",
+    "EvaluatorGrounding": "e98dd3eeabfbc94407512be78d9a7412af4fe00e6fbcf7acf03e3b068286689c",
+    "PracticalReach": "1b13fcc34fed86de83e6f09dae82b321422195f31fb97d37024d7143183d0e7b",
+    "CorrectionInfrastructure": "132fc3763fea09962c00f28bcdaafedc046244827e26b6215772eb0a48e91835",
+    "BecomingInstances": "30636dd8f1c5ac6444ee085e3228eae5110944a59334eb31a2b78f68e2deacf8"
   },
   "checker_sha256": {
-    "check_becoming.py": "79db8b352b3b26a8f3d7d2627b747dfb6a765baa171c13847743173bbc7fc8f9",
+    "check_becoming.py": "00b6c569afa50ce8155e3c3e99ce761e086bbbd82b466103719445819c7f7038",
     "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
   },
-  "scope": "Spine: a Frame is the core Process with realized claims; runs, reachability, invariants and new realization are defined through the core Trace; the visible scope of an inquiry is the set of configurations its actual executions reach, and a sound policy secures its goal there. Metaethical core: on a connected whole with some living claim, significance of every living claim from every standpoint (G0 at claim level) is equivalent to a seed together with relational and standpoint neutrality; the positioned articulation D follows from the articulation premise A; a sound inquiry for new living content gives every position with access a contributory reason. Each of seed, relational neutrality, standpoint neutrality, connection and A has a consistent countermodel, and each rival satisfies the same rule inside a formed boundary. The lifting rule L is transitive only through a live middle response. No premise is proved, no rejecting position is bound, and no duty, ranking, recognition or compliance is inferred.",
+  "scope": "Spine: a Frame is the core Process with realized claims; runs, reachability, invariants and new realization are defined through the core Trace; the visible scope of an inquiry is the set of configurations its actual executions reach, and a sound policy secures its goal there. Metaethical core: on a connected whole with some living claim, significance of every living claim from every standpoint (G0 at claim level) is equivalent to a seed together with relational and standpoint neutrality; the positioned articulation D follows from the articulation premise A; a sound inquiry for new living content gives every position with access a contributory reason. Each of seed, relational neutrality, standpoint neutrality, connection and A has a consistent countermodel, and each rival satisfies the same rule inside a formed boundary. The lifting rule L is transitive only through a live middle response. No premise is proved, no rejecting position is bound, and no duty, ranking, recognition or compliance is inferred. Instances: seed-edge closures and evaluator chains are reachability on the edge process; a frame's reachable configurations form a joint-continuation space whose bundles step-preserving maps carry and lifting summaries reflect; robust responses, guarantees, live steps and evidence narrowing by a rule list are common responses, one-step completion, enabledness and After on a pure observation; the functional articulation of a situation is exactly the deterministic case of the articulation under L, and the lifted comparison, reason, survival and continual-improvement results hold on every frame. A countermodel shows that L is substantive: a response with one better and one worse outcome is comparable in neither direction.",
   "inherited_receipts": {
     "GenerativeCore": [
       "acquired-perspective/verification.json",
@@ -416,6 +435,7 @@
       "universal-ethics/generative-capacity/comparison-checks/20261007T163915.257189Z/verification.json",
       "universal-ethics/generative-capacity/comparison-verification.json",
       "universal-ethics/generative-capacity/evaluator-grounding-checks/20261008T185523.019489Z/verification.json",
+      "universal-ethics/generative-capacity/evaluator-grounding-checks/20261008T200325.071625Z/verification.json",
       "universal-ethics/generative-capacity/evaluator-grounding-verification.json",
       "universal-ethics/generative-capacity/generative-discrimination-checks/20261008T185033.210526Z/verification.json",
       "universal-ethics/generative-capacity/generative-discrimination-checks/20261008T192158.959087Z/verification.json",
@@ -572,6 +592,27 @@
     "PositionedPositiveReason": [
       "universal-ethics/generative-capacity/positioned-positive-reason-checks/20261008T185535.491960Z/verification.json",
       "universal-ethics/generative-capacity/positioned-positive-reason-verification.json"
+    ],
+    "WholeGroundCoverage": [
+      "universal-ethics/verification.json",
+      "universal-ethics/verification/20261007T110659.328621Z/verification.json"
+    ],
+    "CutCoverageAudit": [
+      "universal-ethics/verification.json",
+      "universal-ethics/verification/20261007T110659.328621Z/verification.json"
+    ],
+    "EvaluatorGrounding": [
+      "universal-ethics/generative-capacity/evaluator-grounding-checks/20261008T200325.071625Z/verification.json",
+      "universal-ethics/generative-capacity/evaluator-grounding-verification.json"
+    ],
+    "PracticalReach": [
+      "universal-ethics/generative-capacity/practical-reach-checks/20261007T225003.193303Z/verification.json",
+      "universal-ethics/generative-capacity/practical-reach-verification.json"
+    ],
+    "CorrectionInfrastructure": [
+      "universal-ethics/generative-capacity/correction-infrastructure-checks/20261008T075837.039887Z/verification.json",
+      "universal-ethics/generative-capacity/correction-infrastructure-model-checks.json",
+      "universal-ethics/generative-capacity/correction-infrastructure-verification.json"
     ]
   },
   "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
@@ -584,6 +625,11 @@
     },
     {
       "claim": "universal_reason has a nonvacuous instance on a one-step frame",
+      "kernel_checked": true,
+      "counted_as_new_theorem": false
+    },
+    {
+      "claim": "a frame's continuation space has a reached configuration realizing a living claim",
       "kernel_checked": true,
       "counted_as_new_theorem": false
     }
@@ -743,7 +789,7 @@
     {
       "module": "BecomingFrame",
       "spine": true,
-      "theorems": 9,
+      "theorems": 11,
       "declarations": [
         {
           "kind": "structure",
@@ -776,6 +822,14 @@
         {
           "kind": "theorem",
           "name": "Becoming.Reach.trans"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Reach.map"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Reach.lift"
         },
         {
           "kind": "theorem",
@@ -815,6 +869,8 @@
         "Becoming.Reach.refl": [],
         "Becoming.Reach.of_step": [],
         "Becoming.Reach.trans": [],
+        "Becoming.Reach.map": [],
+        "Becoming.Reach.lift": [],
         "Becoming.Run.reach": [],
         "Becoming.Invariant": [],
         "Becoming.Invariant.trace": [],
@@ -2376,23 +2432,1304 @@
         "Becoming.Model.articulation_neutrality_is_needed": []
       },
       "kernel_checked": true
+    },
+    {
+      "module": "WholeGroundCoverage",
+      "spine": false,
+      "theorems": 27,
+      "declarations": [
+        {
+          "kind": "inductive",
+          "name": "WholeGroundCoverage.Reached"
+        },
+        {
+          "kind": "def",
+          "name": "WholeGroundCoverage.Admissible"
+        },
+        {
+          "kind": "def",
+          "name": "WholeGroundCoverage.Entails"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.reason_inheritance"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.reached_is_admissible"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.reached_iff_entails"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.universal_target_coverage_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.uncovered_has_admissible_omission"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.reached_mono"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.substitute_grounded_seeds"
+        },
+        {
+          "kind": "structure",
+          "name": "WholeGroundCoverage.LocalAtlas"
+        },
+        {
+          "kind": "def",
+          "name": "WholeGroundCoverage.ScopedEdge"
+        },
+        {
+          "kind": "def",
+          "name": "WholeGroundCoverage.JoinedEdge"
+        },
+        {
+          "kind": "def",
+          "name": "WholeGroundCoverage.LocalSound"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.local_sound_iff_joined_sound"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.local_sound_gives_global_inheritance"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.local_reach_in_joined"
+        },
+        {
+          "kind": "def",
+          "name": "WholeGroundCoverage.CompatibleGrounds"
+        },
+        {
+          "kind": "def",
+          "name": "WholeGroundCoverage.GluedGround"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.glued_ground_iff_local"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.compatible_local_ground_transport_glues"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.jointly_grounded_scope_inheritance"
+        },
+        {
+          "kind": "inductive",
+          "name": "WholeGroundCoverage.HistoryEdge"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.history_edge_preserves_history"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.history_reach_projects"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.history_reach_lifts"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.history_reach_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.history_local_sound_gives_global"
+        },
+        {
+          "kind": "inductive",
+          "name": "WholeGroundCoverage.Place"
+        },
+        {
+          "kind": "inductive",
+          "name": "WholeGroundCoverage.Window"
+        },
+        {
+          "kind": "def",
+          "name": "WholeGroundCoverage.firstSeed"
+        },
+        {
+          "kind": "inductive",
+          "name": "WholeGroundCoverage.InWindow"
+        },
+        {
+          "kind": "inductive",
+          "name": "WholeGroundCoverage.WindowStep"
+        },
+        {
+          "kind": "def",
+          "name": "WholeGroundCoverage.alternatingAtlas"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.alternating_domains_cover"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.alternating_first_step"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.alternating_second_step"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.alternating_join_reaches_finish"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.first_scope_reach_stays_inside"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.second_scope_reach_stays_at_seed"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.alternating_beyond_separate_closures"
+        },
+        {
+          "kind": "def",
+          "name": "WholeGroundCoverage.unconnectedAtlas"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.unconnected_reach_is_seed"
+        },
+        {
+          "kind": "theorem",
+          "name": "WholeGroundCoverage.local_domain_coverage_insufficient"
+        }
+      ],
+      "axiom_dependencies": {
+        "WholeGroundCoverage.Reached": [],
+        "WholeGroundCoverage.Admissible": [],
+        "WholeGroundCoverage.Entails": [],
+        "WholeGroundCoverage.reason_inheritance": [],
+        "WholeGroundCoverage.reached_is_admissible": [],
+        "WholeGroundCoverage.reached_iff_entails": [],
+        "WholeGroundCoverage.universal_target_coverage_iff": [],
+        "WholeGroundCoverage.uncovered_has_admissible_omission": [],
+        "WholeGroundCoverage.reached_mono": [],
+        "WholeGroundCoverage.substitute_grounded_seeds": [],
+        "WholeGroundCoverage.LocalAtlas": [],
+        "WholeGroundCoverage.ScopedEdge": [],
+        "WholeGroundCoverage.JoinedEdge": [],
+        "WholeGroundCoverage.LocalSound": [],
+        "WholeGroundCoverage.local_sound_iff_joined_sound": [],
+        "WholeGroundCoverage.local_sound_gives_global_inheritance": [],
+        "WholeGroundCoverage.local_reach_in_joined": [],
+        "WholeGroundCoverage.CompatibleGrounds": [],
+        "WholeGroundCoverage.GluedGround": [],
+        "WholeGroundCoverage.glued_ground_iff_local": [],
+        "WholeGroundCoverage.compatible_local_ground_transport_glues": [],
+        "WholeGroundCoverage.jointly_grounded_scope_inheritance": [],
+        "WholeGroundCoverage.HistoryEdge": [],
+        "WholeGroundCoverage.history_edge_preserves_history": [],
+        "WholeGroundCoverage.history_reach_projects": [],
+        "WholeGroundCoverage.history_reach_lifts": [],
+        "WholeGroundCoverage.history_reach_iff": [],
+        "WholeGroundCoverage.history_local_sound_gives_global": [],
+        "WholeGroundCoverage.Place": [],
+        "WholeGroundCoverage.Window": [],
+        "WholeGroundCoverage.firstSeed": [],
+        "WholeGroundCoverage.InWindow": [],
+        "WholeGroundCoverage.WindowStep": [],
+        "WholeGroundCoverage.alternatingAtlas": [],
+        "WholeGroundCoverage.alternating_domains_cover": [],
+        "WholeGroundCoverage.alternating_first_step": [],
+        "WholeGroundCoverage.alternating_second_step": [],
+        "WholeGroundCoverage.alternating_join_reaches_finish": [],
+        "WholeGroundCoverage.first_scope_reach_stays_inside": [],
+        "WholeGroundCoverage.second_scope_reach_stays_at_seed": [],
+        "WholeGroundCoverage.alternating_beyond_separate_closures": [],
+        "WholeGroundCoverage.unconnectedAtlas": [],
+        "WholeGroundCoverage.unconnected_reach_is_seed": [],
+        "WholeGroundCoverage.local_domain_coverage_insufficient": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "CutCoverageAudit",
+      "spine": false,
+      "theorems": 12,
+      "declarations": [
+        {
+          "kind": "inductive",
+          "name": "UniversalEthics.CutCoverageAudit.Reach"
+        },
+        {
+          "kind": "def",
+          "name": "UniversalEthics.CutCoverageAudit.HasCut"
+        },
+        {
+          "kind": "def",
+          "name": "UniversalEthics.CutCoverageAudit.NoCut"
+        },
+        {
+          "kind": "theorem",
+          "name": "UniversalEthics.CutCoverageAudit.reach_avoids_reverse_closed_cut"
+        },
+        {
+          "kind": "theorem",
+          "name": "UniversalEthics.CutCoverageAudit.reachable_implies_no_cut"
+        },
+        {
+          "kind": "theorem",
+          "name": "UniversalEthics.CutCoverageAudit.has_cut_implies_not_reachable"
+        },
+        {
+          "kind": "theorem",
+          "name": "UniversalEthics.CutCoverageAudit.not_reachable_has_cut"
+        },
+        {
+          "kind": "theorem",
+          "name": "UniversalEthics.CutCoverageAudit.has_cut_iff_not_reachable"
+        },
+        {
+          "kind": "theorem",
+          "name": "UniversalEthics.CutCoverageAudit.no_cut_iff_double_negated_reachability"
+        },
+        {
+          "kind": "theorem",
+          "name": "UniversalEthics.CutCoverageAudit.no_cut_to_reachable_of_decidable"
+        },
+        {
+          "kind": "theorem",
+          "name": "UniversalEthics.CutCoverageAudit.no_cut_iff_reachable_of_decidable"
+        },
+        {
+          "kind": "def",
+          "name": "UniversalEthics.CutCoverageAudit.DoubleNegationElimination"
+        },
+        {
+          "kind": "def",
+          "name": "UniversalEthics.CutCoverageAudit.UniversalCutUpgrade"
+        },
+        {
+          "kind": "theorem",
+          "name": "UniversalEthics.CutCoverageAudit.singleton_reachability_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "UniversalEthics.CutCoverageAudit.double_negation_elimination_implies_universal_cut_upgrade"
+        },
+        {
+          "kind": "theorem",
+          "name": "UniversalEthics.CutCoverageAudit.universal_cut_upgrade_implies_double_negation_elimination"
+        },
+        {
+          "kind": "theorem",
+          "name": "UniversalEthics.CutCoverageAudit.universal_cut_upgrade_iff_double_negation_elimination"
+        }
+      ],
+      "axiom_dependencies": {
+        "UniversalEthics.CutCoverageAudit.Reach": [],
+        "UniversalEthics.CutCoverageAudit.HasCut": [],
+        "UniversalEthics.CutCoverageAudit.NoCut": [],
+        "UniversalEthics.CutCoverageAudit.reach_avoids_reverse_closed_cut": [],
+        "UniversalEthics.CutCoverageAudit.reachable_implies_no_cut": [],
+        "UniversalEthics.CutCoverageAudit.has_cut_implies_not_reachable": [],
+        "UniversalEthics.CutCoverageAudit.not_reachable_has_cut": [],
+        "UniversalEthics.CutCoverageAudit.has_cut_iff_not_reachable": [],
+        "UniversalEthics.CutCoverageAudit.no_cut_iff_double_negated_reachability": [],
+        "UniversalEthics.CutCoverageAudit.no_cut_to_reachable_of_decidable": [],
+        "UniversalEthics.CutCoverageAudit.no_cut_iff_reachable_of_decidable": [],
+        "UniversalEthics.CutCoverageAudit.DoubleNegationElimination": [],
+        "UniversalEthics.CutCoverageAudit.UniversalCutUpgrade": [],
+        "UniversalEthics.CutCoverageAudit.singleton_reachability_iff": [],
+        "UniversalEthics.CutCoverageAudit.double_negation_elimination_implies_universal_cut_upgrade": [],
+        "UniversalEthics.CutCoverageAudit.universal_cut_upgrade_implies_double_negation_elimination": [],
+        "UniversalEthics.CutCoverageAudit.universal_cut_upgrade_iff_double_negation_elimination": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "EvaluatorGrounding",
+      "spine": false,
+      "theorems": 12,
+      "declarations": [
+        {
+          "kind": "structure",
+          "name": "EvaluatorGrounding.Standpoint"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluatorGrounding.SelfGood"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluatorGrounding.Monotone"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluatorGrounding.Supervenes"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluatorGrounding.Tolerant"
+        },
+        {
+          "kind": "inductive",
+          "name": "EvaluatorGrounding.Chain"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluatorGrounding.self_good_reaches_at_least_as_connected"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluatorGrounding.strict_indexed_rival_inconsistent"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluatorGrounding.chain_preserves"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluatorGrounding.tolerant_chain_reaches"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluatorGrounding.reachableInventory"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluatorGrounding.reach_is_g0"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluatorGrounding.self_good_derives_reachable_g0"
+        },
+        {
+          "kind": "inductive",
+          "name": "EvaluatorGrounding.Occ"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluatorGrounding.degree"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluatorGrounding.ownOcc"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluatorGrounding.reachOcc"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluatorGrounding.adjacent"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluatorGrounding.standpoint"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluatorGrounding.formed_other_has_significance"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluatorGrounding.threshold_rival_is_consistent_without_tolerance"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluatorGrounding.tolerant_standpoint_reaches_stranger"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluatorGrounding.present_aim_evaluator_escapes"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluatorGrounding.closedStep"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluatorGrounding.closed_self_blocks_reach"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluatorGrounding.profile2"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluatorGrounding.productLe"
+        },
+        {
+          "kind": "def",
+          "name": "EvaluatorGrounding.persistence"
+        },
+        {
+          "kind": "theorem",
+          "name": "EvaluatorGrounding.persistence_rival_escapes_self_transcendence"
+        }
+      ],
+      "axiom_dependencies": {
+        "EvaluatorGrounding.Standpoint": [],
+        "EvaluatorGrounding.SelfGood": [],
+        "EvaluatorGrounding.Monotone": [],
+        "EvaluatorGrounding.Supervenes": [],
+        "EvaluatorGrounding.Tolerant": [],
+        "EvaluatorGrounding.Chain": [],
+        "EvaluatorGrounding.self_good_reaches_at_least_as_connected": [],
+        "EvaluatorGrounding.strict_indexed_rival_inconsistent": [],
+        "EvaluatorGrounding.chain_preserves": [],
+        "EvaluatorGrounding.tolerant_chain_reaches": [],
+        "EvaluatorGrounding.reachableInventory": [],
+        "EvaluatorGrounding.reach_is_g0": [],
+        "EvaluatorGrounding.self_good_derives_reachable_g0": [],
+        "EvaluatorGrounding.Occ": [],
+        "EvaluatorGrounding.degree": [],
+        "EvaluatorGrounding.ownOcc": [
+          "propext"
+        ],
+        "EvaluatorGrounding.reachOcc": [
+          "propext"
+        ],
+        "EvaluatorGrounding.adjacent": [],
+        "EvaluatorGrounding.standpoint": [
+          "propext"
+        ],
+        "EvaluatorGrounding.formed_other_has_significance": [
+          "propext"
+        ],
+        "EvaluatorGrounding.threshold_rival_is_consistent_without_tolerance": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EvaluatorGrounding.tolerant_standpoint_reaches_stranger": [
+          "propext"
+        ],
+        "EvaluatorGrounding.present_aim_evaluator_escapes": [
+          "propext"
+        ],
+        "EvaluatorGrounding.closedStep": [],
+        "EvaluatorGrounding.closed_self_blocks_reach": [
+          "propext",
+          "Quot.sound"
+        ],
+        "EvaluatorGrounding.profile2": [],
+        "EvaluatorGrounding.productLe": [],
+        "EvaluatorGrounding.persistence": [
+          "propext"
+        ],
+        "EvaluatorGrounding.persistence_rival_escapes_self_transcendence": [
+          "propext"
+        ]
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "PracticalReach",
+      "spine": false,
+      "theorems": 24,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "PracticalReach.Live"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalReach.Guarantees"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalReach.CanEnsure"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalReach.Refines"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalReach.Possible"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.guarantee_mono"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.cannot_ensure_false"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.ensure_true_iff_live_response"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.refinement_preserves_goals"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.refinement_iff_all_goal_preservation"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.refinement_refl"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.refinement_trans"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.failed_refinement_has_lost_goal"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.finite_revisions_preserve"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalReach.Project"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.projected_goal_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.no_strict_improvement_for_every_goal"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.common_goal_prevents_everywhere_strict"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalReach.fixed"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalReach.uncontrolled"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalReach.selectable"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalReach.absent"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.fixed_ensures_false"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.uncontrolled_cannot_ensure_false"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.possible_enlargement_without_control"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.selectable_retains_fixed"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.guaranteed_control_can_remove_possibility"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.selectable_ensures_each"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.fixed_cannot_ensure_true"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.retained_control_and_strict_new_goal"
+        },
+        {
+          "kind": "def",
+          "name": "PracticalReach.ClosedToTrue"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.outcome_goal_preservation_can_defeat_closure_goal"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.separate_guarantees_not_joint"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.empty_response_does_not_guarantee"
+        },
+        {
+          "kind": "theorem",
+          "name": "PracticalReach.projection_can_hide_loss"
+        }
+      ],
+      "axiom_dependencies": {
+        "PracticalReach.Live": [],
+        "PracticalReach.Guarantees": [],
+        "PracticalReach.CanEnsure": [],
+        "PracticalReach.Refines": [],
+        "PracticalReach.Possible": [],
+        "PracticalReach.guarantee_mono": [],
+        "PracticalReach.cannot_ensure_false": [],
+        "PracticalReach.ensure_true_iff_live_response": [],
+        "PracticalReach.refinement_preserves_goals": [],
+        "PracticalReach.refinement_iff_all_goal_preservation": [],
+        "PracticalReach.refinement_refl": [],
+        "PracticalReach.refinement_trans": [],
+        "PracticalReach.failed_refinement_has_lost_goal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PracticalReach.finite_revisions_preserve": [],
+        "PracticalReach.Project": [],
+        "PracticalReach.projected_goal_iff": [],
+        "PracticalReach.no_strict_improvement_for_every_goal": [],
+        "PracticalReach.common_goal_prevents_everywhere_strict": [],
+        "PracticalReach.fixed": [],
+        "PracticalReach.uncontrolled": [],
+        "PracticalReach.selectable": [],
+        "PracticalReach.absent": [],
+        "PracticalReach.fixed_ensures_false": [],
+        "PracticalReach.uncontrolled_cannot_ensure_false": [],
+        "PracticalReach.possible_enlargement_without_control": [],
+        "PracticalReach.selectable_retains_fixed": [],
+        "PracticalReach.guaranteed_control_can_remove_possibility": [],
+        "PracticalReach.selectable_ensures_each": [],
+        "PracticalReach.fixed_cannot_ensure_true": [],
+        "PracticalReach.retained_control_and_strict_new_goal": [],
+        "PracticalReach.ClosedToTrue": [],
+        "PracticalReach.outcome_goal_preservation_can_defeat_closure_goal": [],
+        "PracticalReach.separate_guarantees_not_joint": [],
+        "PracticalReach.empty_response_does_not_guarantee": [],
+        "PracticalReach.projection_can_hide_loss": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "CorrectionInfrastructure",
+      "spine": false,
+      "theorems": 34,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.Best"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.AcceptScore"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.acceptance_factorization"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.every_optimum_has_access_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.no_base_optimal_access"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.MaintenanceValue"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.Maintains"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.costly_maintenance_separation"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.accepting_optimum_can_destroy_access"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.fixed_access_bonus_has_cost_boundary"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.every_fixed_access_bonus_has_counterexample"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.maintenance_bonus_exact"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.LiveStep"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.Viable"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.Admissible"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.viable_iff_access_and_admissible"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.viable_has_current_access"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.dead_action_not_admissible"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.shielded_acceptance_composition"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.unavoidable_score_loss"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.TwoStepReward"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.LastAllowed"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.UnrestrictedValue"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.RestrictedValue"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.restricted_value_is_achievable"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.restricted_value_bounds_all_continuations"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.unrestricted_value_is_optimal"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.stale_value_shield_is_strictly_suboptimal"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.recomputed_value_restores_optimal_branch"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.approximate_constrained_score_bound"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.constrained_score_bound_is_tight"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.DViable"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.DAllowed"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.Return"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.PathSafe"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.Bellman"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.safe_path_is_viable"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.bellman_bounds_every_safe_policy"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.dynamically_recomputed_composition"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.dynamic_composition_accepts_at_every_viable_decision"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.Closed"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.closed_implies_every_finite_horizon"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.UniformPolicy"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.FiberFeasible"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.uniform_policy_iff_fiber_feasible"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.statewise_repair_need_not_be_usable"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.discriminating_evidence_restores_policy"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.uniform_safety_survives_finer_evidence"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.Covers"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.self_reclassified_obligations_can_hide_loss"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.approved_scope_change_transports_coverage"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.RouteAccess"
+        },
+        {
+          "kind": "def",
+          "name": "CorrectionInfrastructure.PrefixAccess"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.endpoint_repair_can_hide_interruption_gap"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.overlapping_handoff_retains_prefix_access"
+        },
+        {
+          "kind": "theorem",
+          "name": "CorrectionInfrastructure.correction_preservation_allows_route_retirement"
+        }
+      ],
+      "axiom_dependencies": {
+        "CorrectionInfrastructure.Best": [],
+        "CorrectionInfrastructure.AcceptScore": [],
+        "CorrectionInfrastructure.acceptance_factorization": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.every_optimum_has_access_iff": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.no_base_optimal_access": [],
+        "CorrectionInfrastructure.MaintenanceValue": [],
+        "CorrectionInfrastructure.Maintains": [],
+        "CorrectionInfrastructure.costly_maintenance_separation": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.accepting_optimum_can_destroy_access": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.fixed_access_bonus_has_cost_boundary": [
+          "propext"
+        ],
+        "CorrectionInfrastructure.every_fixed_access_bonus_has_counterexample": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.maintenance_bonus_exact": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.LiveStep": [],
+        "CorrectionInfrastructure.Viable": [],
+        "CorrectionInfrastructure.Admissible": [],
+        "CorrectionInfrastructure.viable_iff_access_and_admissible": [],
+        "CorrectionInfrastructure.viable_has_current_access": [],
+        "CorrectionInfrastructure.dead_action_not_admissible": [],
+        "CorrectionInfrastructure.shielded_acceptance_composition": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.unavoidable_score_loss": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.TwoStepReward": [],
+        "CorrectionInfrastructure.LastAllowed": [],
+        "CorrectionInfrastructure.UnrestrictedValue": [],
+        "CorrectionInfrastructure.RestrictedValue": [],
+        "CorrectionInfrastructure.restricted_value_is_achievable": [
+          "propext"
+        ],
+        "CorrectionInfrastructure.restricted_value_bounds_all_continuations": [
+          "propext"
+        ],
+        "CorrectionInfrastructure.unrestricted_value_is_optimal": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.stale_value_shield_is_strictly_suboptimal": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.recomputed_value_restores_optimal_branch": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.approximate_constrained_score_bound": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.constrained_score_bound_is_tight": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.DViable": [],
+        "CorrectionInfrastructure.DAllowed": [],
+        "CorrectionInfrastructure.Return": [],
+        "CorrectionInfrastructure.PathSafe": [],
+        "CorrectionInfrastructure.Bellman": [],
+        "CorrectionInfrastructure.safe_path_is_viable": [],
+        "CorrectionInfrastructure.bellman_bounds_every_safe_policy": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.dynamically_recomputed_composition": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.dynamic_composition_accepts_at_every_viable_decision": [
+          "propext",
+          "Quot.sound"
+        ],
+        "CorrectionInfrastructure.Closed": [],
+        "CorrectionInfrastructure.closed_implies_every_finite_horizon": [],
+        "CorrectionInfrastructure.UniformPolicy": [],
+        "CorrectionInfrastructure.FiberFeasible": [],
+        "CorrectionInfrastructure.uniform_policy_iff_fiber_feasible": [
+          "Classical.choice"
+        ],
+        "CorrectionInfrastructure.statewise_repair_need_not_be_usable": [],
+        "CorrectionInfrastructure.discriminating_evidence_restores_policy": [],
+        "CorrectionInfrastructure.uniform_safety_survives_finer_evidence": [],
+        "CorrectionInfrastructure.Covers": [],
+        "CorrectionInfrastructure.self_reclassified_obligations_can_hide_loss": [],
+        "CorrectionInfrastructure.approved_scope_change_transports_coverage": [],
+        "CorrectionInfrastructure.RouteAccess": [],
+        "CorrectionInfrastructure.PrefixAccess": [],
+        "CorrectionInfrastructure.endpoint_repair_can_hide_interruption_gap": [
+          "propext"
+        ],
+        "CorrectionInfrastructure.overlapping_handoff_retains_prefix_access": [
+          "propext"
+        ],
+        "CorrectionInfrastructure.correction_preservation_allows_route_retirement": []
+      },
+      "kernel_checked": true
+    },
+    {
+      "module": "BecomingInstances",
+      "spine": true,
+      "theorems": 26,
+      "declarations": [
+        {
+          "kind": "def",
+          "name": "Becoming.edgeProcess"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Closure"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Closure.base"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Closure.step"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Closure.induction"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.reached_iff_closure"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.cutReach_iff_closure"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.chain_iff_reach"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.Frame.continuations"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Frame.map_preserves_bundles"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.Frame.lift_reflects_bundles"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.commonResponse_is_robust"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.judgeProcess"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.sees"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.robust_iff_commonResponse"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.guarantees_iff_completes"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.liveStep_iff_enabled"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.observe"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.after_observe_iff"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.encode"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.encode_inj"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.mem_filter"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.beq_true_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.revise_is_after"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LiftExtension"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.comparison_lifts"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LiftedArticulation"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.lifted_comparison_supplies_reason"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LiftSurvives"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LiftCoherence"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.lift_coherent_selection_survives"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.lift_continual_improvement_has_no_survivor"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.situationProcess"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.situation_enabled_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.situation_lift_iff"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.articulation_iff_lifted"
+        },
+        {
+          "kind": "inductive",
+          "name": "Becoming.LiftModel.Act"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LiftModel.options"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LiftModel.frame"
+        },
+        {
+          "kind": "def",
+          "name": "Becoming.LiftModel.larger"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LiftModel.some_outcome_does_not_lift"
+        },
+        {
+          "kind": "theorem",
+          "name": "Becoming.LiftModel.lift_needs_live_middle"
+        }
+      ],
+      "axiom_dependencies": {
+        "Becoming.edgeProcess": [],
+        "Becoming.Closure": [],
+        "Becoming.Closure.base": [],
+        "Becoming.Closure.step": [],
+        "Becoming.Closure.induction": [],
+        "Becoming.reached_iff_closure": [],
+        "Becoming.cutReach_iff_closure": [],
+        "Becoming.chain_iff_reach": [],
+        "Becoming.Frame.continuations": [],
+        "Becoming.Frame.map_preserves_bundles": [],
+        "Becoming.Frame.lift_reflects_bundles": [],
+        "Becoming.commonResponse_is_robust": [],
+        "Becoming.judgeProcess": [],
+        "Becoming.sees": [],
+        "Becoming.robust_iff_commonResponse": [],
+        "Becoming.guarantees_iff_completes": [],
+        "Becoming.liveStep_iff_enabled": [],
+        "Becoming.observe": [],
+        "Becoming.after_observe_iff": [],
+        "Becoming.encode": [],
+        "Becoming.encode_inj": [],
+        "Becoming.mem_filter": [],
+        "Becoming.beq_true_iff": [],
+        "Becoming.revise_is_after": [],
+        "Becoming.LiftExtension": [],
+        "Becoming.comparison_lifts": [],
+        "Becoming.LiftedArticulation": [],
+        "Becoming.lifted_comparison_supplies_reason": [],
+        "Becoming.LiftSurvives": [],
+        "Becoming.LiftCoherence": [],
+        "Becoming.lift_coherent_selection_survives": [],
+        "Becoming.lift_continual_improvement_has_no_survivor": [],
+        "Becoming.situationProcess": [],
+        "Becoming.situation_enabled_iff": [],
+        "Becoming.situation_lift_iff": [],
+        "Becoming.articulation_iff_lifted": [],
+        "Becoming.LiftModel.Act": [],
+        "Becoming.LiftModel.options": [],
+        "Becoming.LiftModel.frame": [],
+        "Becoming.LiftModel.larger": [],
+        "Becoming.LiftModel.some_outcome_does_not_lift": [],
+        "Becoming.LiftModel.lift_needs_live_middle": []
+      },
+      "kernel_checked": true
     }
   ],
   "artifact_sha256": {
-    "BecomingFrame.lean": "cbcf9aa5886a2c0c08cb5d7ae1c72a1d88f362c8c88c0e0cc188e5f85a12855f",
+    "BecomingFrame.lean": "a5af25d221a18ce291638a314ee9c2e2bf2620e8db76f16ce38518b32824e3d3",
     "BecomingFrame.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "BecomingFrameAxiomAudit.lean": "9b95e6ae45e778ae04c72f845e8ed1eb5f8cef7566d77cd51805713dbd0f4ec1",
-    "BecomingFrameAxiomAudit.log": "0c991c198910e13874427271b5e1564585df27d541ee8a4df74d8c92a84dd4a1",
-    "BecomingFrameSignatures.lean": "02d1e3e644ec0cd21ec7476c42648436bdd859800e1ff611f93a8512597f1c3c",
-    "BecomingFrameSignatures.log": "19cb5d660181ae29b30ed90b582b0a599200a048dba2f3ad26843035054a6992",
+    "BecomingFrameAxiomAudit.lean": "1925e5a026a7c555db3c468025660f5d9e2bc1482f826d43ac568de60dc28619",
+    "BecomingFrameAxiomAudit.log": "51a187a2eec317dbf68771b0f3a146d3a9ab289cd96509f225b8c799d54bde10",
+    "BecomingFrameSignatures.lean": "c4ba8c9117d16d3ed0a51647b428697e5d061ff4ee2d892cdac099e802ce6321",
+    "BecomingFrameSignatures.log": "ca0df6ccab583f57493f2aafd3136b7b46573ae4fbe1a6e01ec5b705b4a9dcca",
+    "BecomingInstances.lean": "30636dd8f1c5ac6444ee085e3228eae5110944a59334eb31a2b78f68e2deacf8",
+    "BecomingInstances.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "BecomingInstancesAxiomAudit.lean": "f6dfbd77074e9e2081437c2d13bfbe067ae4592a724329f0cc583b4bd4a6fd5e",
+    "BecomingInstancesAxiomAudit.log": "bce07712e21f9a69a1774f5d404d380bce728765384be7878aea76248c52c5f7",
+    "BecomingInstancesSignatures.lean": "8bf99e15af81ca3aec2c60ebb7aab6d45ef64c37f2dd739fe3810eb9e0d8f410",
+    "BecomingInstancesSignatures.log": "dc0c2b5c9954851aeb61dc153ebf728a48a278733b5ce3725d55ccf2f3b8a021",
     "BecomingModal.lean": "382e1684c6391d1bba72f1830a3ba67486216dcdd883f25d225855ac1ea7a54f",
     "BecomingModal.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "BecomingModalAxiomAudit.lean": "8afd8eae9605d102fd215da5b1083fc175300341224e4db9e545e92c59ecfaa4",
     "BecomingModalAxiomAudit.log": "06883e25fb8f2568d05e646b6511d995947c52214e6f3b4618c4e1bb9d7b0308",
     "BecomingModalSignatures.lean": "cde3d8205f26deb2983a6da110be0e94b58079ef3a3751a3c54a93206269c2dc",
     "BecomingModalSignatures.log": "62a6f0308489e5f69eba44697cedaaaede38967c0c13f477526d369c13ec338f",
-    "Controls.lean": "7b24d04ac09aeee8fb26138e51c8ae1426bb4dfb70eff8e7198251e9480c1208",
+    "Controls.lean": "7f73669865084bb0af481b3132d4235299e351d62fec66ed9a31f47a6ad11f00",
     "Controls.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CorrectionInfrastructure.lean": "132fc3763fea09962c00f28bcdaafedc046244827e26b6215772eb0a48e91835",
+    "CorrectionInfrastructure.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CorrectionInfrastructureAxiomAudit.lean": "2d46df0587353eaed863fde23641740cdda2abe68caf92cbaa6474d56ba96a19",
+    "CorrectionInfrastructureAxiomAudit.log": "9314dfd237ac18dada5e642e98565cf76b40708ec61e05f4877293b847b57022",
+    "CutCoverageAudit.lean": "4e6649999c96112c1f746d377fbfdacabe10e6ed2d12a7368f480b3986e38669",
+    "CutCoverageAudit.log": "9dc6eba22dfa372604ae58d7cb40f0d1682b2f07b5f12256a3e818de62d1830e",
+    "CutCoverageAuditAxiomAudit.lean": "da5e28aa8f3bc517685da82f175af0040e10a305086a24da5ef60889d6262cd5",
+    "CutCoverageAuditAxiomAudit.log": "afa6c35b8a09d115b7d3ad813255fc7eaa5a6f75c93e29b1e7588dc437868e8e",
+    "EvaluatorGrounding.lean": "e98dd3eeabfbc94407512be78d9a7412af4fe00e6fbcf7acf03e3b068286689c",
+    "EvaluatorGrounding.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "EvaluatorGroundingAxiomAudit.lean": "a0cec7208661ee307859ca25ecb85d93b52856b949f8deea263fdc185e2886e8",
+    "EvaluatorGroundingAxiomAudit.log": "8a908e52df9fa7bfd1d73d8ccc5c5321960fec17944b82d37311530c401987e7",
     "GenerativeComparison.lean": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
     "GenerativeComparison.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "GenerativeComparisonAxiomAudit.lean": "b917ae91ff6db176d460a5d332e193d545ad4277abfc0e95224a97d2894ad84e",
@@ -2427,12 +3764,20 @@
     "PracticalJudgment.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "PracticalJudgmentAxiomAudit.lean": "c9f412159410854fb031176d7fe7a4c351dfaea59354c7d7a19ec4ad0c6e51a6",
     "PracticalJudgmentAxiomAudit.log": "d73810d6b1a7343808726234c17bca9d7841acafabd3a17ee8e6145dfabbf1ea",
+    "PracticalReach.lean": "1b13fcc34fed86de83e6f09dae82b321422195f31fb97d37024d7143183d0e7b",
+    "PracticalReach.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PracticalReachAxiomAudit.lean": "f028c3fd805d1ad423efd6322c0979e1370d65eeadfab5340788b99a0f999d4d",
+    "PracticalReachAxiomAudit.log": "62dc90f3340f7c84dd61823c3343c2f850e0aa2162f68a3a66b8cdd35bcdb69b",
     "StandardsBridge.lean": "f061dbc44da5cdf11ac5ff79b3f89558c7e177b23b9f121c1048c16ed353a42a",
     "StandardsBridge.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "StandardsBridgeAxiomAudit.lean": "0eb43ace08d209058824387c1bd826f05b131774d7393eaf3a641e846925dd99",
     "StandardsBridgeAxiomAudit.log": "0a5fa190c7e00d7ebf6b96fb1bb80a052e47297c9df86f6667131b30dc8a6566",
+    "WholeGroundCoverage.lean": "8ddf51311583755908ba843986f262f7a0b4071764031a6fa1a1bf2c0dbd512a",
+    "WholeGroundCoverage.log": "354353187c792fcd62c41c9a269818e35eabedf27e4dc7c299d0f1abbf46bc30",
+    "WholeGroundCoverageAxiomAudit.lean": "a6e14bd79f1def768583cc5baa8777a8cc16e3da7b2440d0360f1834a1bf3a80",
+    "WholeGroundCoverageAxiomAudit.log": "a6bc2bb42c8090e42ba9558b7cf68d8d10a4d635df2042f8ff00d3b43b1e3ba1",
     "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
-    "check_becoming.py": "79db8b352b3b26a8f3d7d2627b747dfb6a765baa171c13847743173bbc7fc8f9",
+    "check_becoming.py": "00b6c569afa50ce8155e3c3e99ce761e086bbbd82b466103719445819c7f7038",
     "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
   }
 }

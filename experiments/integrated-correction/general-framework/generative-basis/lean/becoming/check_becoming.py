@@ -22,7 +22,7 @@ sys.path.insert(0, str(LEAN_ROOT / "universal-ethics" / "generative-capacity"))
 import check as audit_support  # noqa: E402
 
 # Spine modules in this directory, in layer order.
-SPINE = ["BecomingFrame", "BecomingModal", "MetaethicalCore"]
+SPINE = ["BecomingFrame", "BecomingModal", "MetaethicalCore", "BecomingInstances"]
 RECEIPT = HERE / "becoming-verification.json"
 RETAINED = HERE / "becoming-checks"
 
@@ -37,7 +37,15 @@ SCOPE = (
     "Each of seed, relational neutrality, standpoint neutrality, connection and A has a consistent "
     "countermodel, and each rival satisfies the same rule inside a formed boundary. The lifting rule L "
     "is transitive only through a live middle response. No premise is proved, no rejecting position is "
-    "bound, and no duty, ranking, recognition or compliance is inferred."
+    "bound, and no duty, ranking, recognition or compliance is inferred. "
+    "Instances: seed-edge closures and evaluator chains are reachability on the edge process; a "
+    "frame's reachable configurations form a joint-continuation space whose bundles step-preserving "
+    "maps carry and lifting summaries reflect; robust responses, guarantees, live steps and evidence "
+    "narrowing by a rule list are common responses, one-step completion, enabledness and After on a "
+    "pure observation; the functional articulation of a situation is exactly the deterministic case "
+    "of the articulation under L, and the lifted comparison, reason, survival and continual-improvement "
+    "results hold on every frame. A countermodel shows that L is substantive: a response with one "
+    "better and one worse outcome is comparable in neither direction."
 )
 
 
@@ -97,7 +105,7 @@ def declarations(data):
     return audit_support.declarations(re.sub(r"^import .+$", "import Std", data.decode(), flags=re.M))
 
 
-CONTROLS = """import MetaethicalCore
+CONTROLS = """import BecomingInstances
 open Becoming Generative Generative.InquirySufficiency PositionedPositiveReason
 
 -- The full premise set is consistent: the model satisfies seed, both neutralities and connection.
@@ -137,6 +145,10 @@ theorem grow_reason : ∀ p, access p (.respond ()) → routeReason p (.respond 
     (fun _ _ _ _ => Reach.refl _ _)
     (fun ⟨_, _⟩ available secured => ⟨available, secured⟩)
     (.respond ()) grow_sound
+
+-- The continuation instance is nonvacuous: a reached configuration realizes the living claim.
+example : JointContinuationClassification.Jointly (grow.continuations false) (fun _ => True) :=
+  ⟨true, Reach.of_step (a := ()) ⟨rfl, rfl⟩, fun _ _ => rfl⟩
 """
 
 
@@ -231,6 +243,7 @@ def main():
             receipt["checked_application_examples"] = [
                 {"claim": "the full premise set has a model", "kernel_checked": True, "counted_as_new_theorem": False},
                 {"claim": "universal_reason has a nonvacuous instance on a one-step frame", "kernel_checked": True, "counted_as_new_theorem": False},
+                {"claim": "a frame's continuation space has a reached configuration realizing a living claim", "kernel_checked": True, "counted_as_new_theorem": False},
             ]
         receipt["source_unchanged_during_check"] = all(
             paths[name].read_bytes() == data for name, data in sources.items())

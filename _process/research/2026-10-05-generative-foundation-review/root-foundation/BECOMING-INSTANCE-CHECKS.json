@@ -1,0 +1,678 @@
+{
+  "status": "passed",
+  "utc": "2026-10-08T20:17:38Z",
+  "criterion": "A module in universal-ethics, generative-capacity or evolution-connectionism with a theorem whose signature has an explicit type binder, or with a type variable (plan §1).",
+  "census": {
+    "modules": 45,
+    "lines": 10790,
+    "theorems": 758
+  },
+  "totals": {
+    "bridge": {
+      "modules": 11,
+      "lines": 2974,
+      "theorems": 199
+    },
+    "core": {
+      "modules": 8,
+      "lines": 2456,
+      "theorems": 130
+    },
+    "history": {
+      "modules": 10,
+      "lines": 2109,
+      "theorems": 138
+    },
+    "renewal": {
+      "modules": 2,
+      "lines": 382,
+      "theorems": 27
+    },
+    "mathlib": {
+      "modules": 5,
+      "lines": 1235,
+      "theorems": 133
+    },
+    "model": {
+      "modules": 9,
+      "lines": 1634,
+      "theorems": 131
+    }
+  },
+  "spine_receipt": {
+    "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
+    "sha256": "4a1ad8cb4cd2fe5b06e2d01757736d56e7c8353fe3e74da94a8a79e206e8c001",
+    "utc": "20261008T201324.870042Z"
+  },
+  "checker_sha256": "563f39f777599c2aaad103a2b221985541c9a4a9898bcf49a2cd86f6454ccb42",
+  "scope": "Classification and mechanical checks of its rows only. Kernel checking of every named declaration is supplied by the spine receipt; the inherited modules are not recompiled.",
+  "modules": {
+    "ContinuationRenewal": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/ContinuationRenewal.lean",
+      "lines": 215,
+      "theorems": 17,
+      "polymorphic_theorems": 5,
+      "category": "renewal",
+      "connections": [],
+      "note": "无更新尾部与任意晚的更新",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "CutCoverageAudit": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/CutCoverageAudit.lean",
+      "lines": 184,
+      "theorems": 12,
+      "polymorphic_theorems": 8,
+      "category": "bridge",
+      "connections": [
+        {
+          "declaration": "Becoming.cutReach_iff_closure",
+          "spine_modules": [
+            "BecomingInstances"
+          ]
+        }
+      ],
+      "note": "`Reach` 与 WholeGroundCoverage 的 `Reached` 逐字同构",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "JointContinuationClassification": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/JointContinuationClassification.lean",
+      "lines": 203,
+      "theorems": 5,
+      "polymorphic_theorems": 4,
+      "category": "bridge",
+      "connections": [
+        {
+          "declaration": "Becoming.Frame.continuations",
+          "spine_modules": [
+            "BecomingInstances"
+          ]
+        },
+        {
+          "declaration": "Becoming.Frame.map_preserves_bundles",
+          "spine_modules": [
+            "BecomingInstances"
+          ]
+        },
+        {
+          "declaration": "Becoming.Frame.lift_reflects_bundles",
+          "spine_modules": [
+            "BecomingInstances"
+          ]
+        }
+      ],
+      "note": "可达配置即延续空间；忠实变换来自核心 `trace_map`／`trace_lift`",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "LivingAllocation": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingAllocation.lean",
+      "lines": 320,
+      "theorems": 16,
+      "polymorphic_theorems": 0,
+      "category": "core",
+      "connections": [],
+      "note": "",
+      "imports_core": true,
+      "imports_mathlib": false
+    },
+    "LivingExpansion": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingExpansion.lean",
+      "lines": 262,
+      "theorems": 14,
+      "polymorphic_theorems": 0,
+      "category": "core",
+      "connections": [],
+      "note": "",
+      "imports_core": true,
+      "imports_mathlib": false
+    },
+    "LivingOrganization": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingOrganization.lean",
+      "lines": 335,
+      "theorems": 22,
+      "polymorphic_theorems": 0,
+      "category": "core",
+      "connections": [],
+      "note": "生命组织的轨迹与可行动作",
+      "imports_core": true,
+      "imports_mathlib": false
+    },
+    "LivingRealization": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingRealization.lean",
+      "lines": 232,
+      "theorems": 10,
+      "polymorphic_theorems": 0,
+      "category": "core",
+      "connections": [],
+      "note": "",
+      "imports_core": true,
+      "imports_mathlib": false
+    },
+    "LivingRecovery": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/LivingRecovery.lean",
+      "lines": 282,
+      "theorems": 15,
+      "polymorphic_theorems": 0,
+      "category": "core",
+      "connections": [],
+      "note": "",
+      "imports_core": true,
+      "imports_mathlib": false
+    },
+    "SituatedContinuation": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SituatedContinuation.lean",
+      "lines": 339,
+      "theorems": 15,
+      "polymorphic_theorems": 2,
+      "category": "core",
+      "connections": [],
+      "note": "也用到 ContinuationRenewal，见 P3b",
+      "imports_core": true,
+      "imports_mathlib": false
+    },
+    "SituatedRenewal": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SituatedRenewal.lean",
+      "lines": 254,
+      "theorems": 9,
+      "polymorphic_theorems": 0,
+      "category": "core",
+      "connections": [],
+      "note": "也用到 ContinuationRenewal，见 P3b",
+      "imports_core": true,
+      "imports_mathlib": false
+    },
+    "SustainedJudgment": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/SustainedJudgment.lean",
+      "lines": 432,
+      "theorems": 29,
+      "polymorphic_theorems": 7,
+      "category": "core",
+      "connections": [],
+      "note": "同时用到 `PracticalJudgment`，经其桥接",
+      "imports_core": true,
+      "imports_mathlib": false
+    },
+    "WholeGroundCoverage": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/WholeGroundCoverage.lean",
+      "lines": 384,
+      "theorems": 27,
+      "polymorphic_theorems": 18,
+      "category": "bridge",
+      "connections": [
+        {
+          "declaration": "Becoming.reached_iff_closure",
+          "spine_modules": [
+            "BecomingInstances"
+          ]
+        }
+      ],
+      "note": "`Reached` 即沿边的可达闭包",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "WholePracticalRestriction": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/WholePracticalRestriction.lean",
+      "lines": 302,
+      "theorems": 14,
+      "polymorphic_theorems": 10,
+      "category": "history",
+      "connections": [],
+      "note": "`Family Whole Index`：整体取配置，指标取立场",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "AggregationContext": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AggregationContext.lean",
+      "lines": 92,
+      "theorems": 6,
+      "polymorphic_theorems": 1,
+      "category": "model",
+      "connections": [],
+      "note": "",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "AlignmentDirection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentDirection.lean",
+      "lines": 89,
+      "theorems": 9,
+      "polymorphic_theorems": 1,
+      "category": "history",
+      "connections": [],
+      "note": "唯一的多态定理是忠实修订保持要求；其余为具体 AI 服务例",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "AlignmentInquiry": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/AlignmentInquiry.lean",
+      "lines": 100,
+      "theorems": 9,
+      "polymorphic_theorems": 9,
+      "category": "model",
+      "connections": [],
+      "note": "可执行的一次探测规划器，是探究层的确定、可计算特例",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "ClassificationRevision": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ClassificationRevision.lean",
+      "lines": 180,
+      "theorems": 16,
+      "polymorphic_theorems": 7,
+      "category": "history",
+      "connections": [],
+      "note": "记录与目标在历史上",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "ClassificationRobustJudgment": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ClassificationRobustJudgment.lean",
+      "lines": 276,
+      "theorems": 13,
+      "polymorphic_theorems": 7,
+      "category": "history",
+      "connections": [],
+      "note": "经 `PracticalJudgment`",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "ConcernExtension": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ConcernExtension.lean",
+      "lines": 100,
+      "theorems": 8,
+      "polymorphic_theorems": 8,
+      "category": "history",
+      "connections": [],
+      "note": "经 `PracticalJudgment`",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "CorrectionBoundary": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionBoundary.lean",
+      "lines": 183,
+      "theorems": 19,
+      "polymorphic_theorems": 4,
+      "category": "mathlib",
+      "connections": [],
+      "note": "",
+      "imports_core": false,
+      "imports_mathlib": true
+    },
+    "CorrectionInfrastructure": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionInfrastructure.lean",
+      "lines": 464,
+      "theorems": 34,
+      "polymorphic_theorems": 17,
+      "category": "bridge",
+      "connections": [
+        {
+          "declaration": "Becoming.liveStep_iff_enabled",
+          "spine_modules": [
+            "BecomingInstances"
+          ]
+        }
+      ],
+      "note": "`LiveStep` 即 `Enabled`",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "CorrectionParent": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionParent.lean",
+      "lines": 106,
+      "theorems": 16,
+      "polymorphic_theorems": 1,
+      "category": "mathlib",
+      "connections": [],
+      "note": "",
+      "imports_core": false,
+      "imports_mathlib": true
+    },
+    "CorrectionRelations": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/CorrectionRelations.lean",
+      "lines": 386,
+      "theorems": 39,
+      "polymorphic_theorems": 9,
+      "category": "mathlib",
+      "connections": [],
+      "note": "",
+      "imports_core": false,
+      "imports_mathlib": true
+    },
+    "EvaluativeExtension": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluativeExtension.lean",
+      "lines": 259,
+      "theorems": 20,
+      "polymorphic_theorems": 7,
+      "category": "history",
+      "connections": [],
+      "note": "经 `PracticalJudgment`",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "EvaluatorGrounding": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluatorGrounding.lean",
+      "lines": 297,
+      "theorems": 12,
+      "polymorphic_theorems": 0,
+      "category": "bridge",
+      "connections": [
+        {
+          "declaration": "Becoming.chain_iff_reach",
+          "spine_modules": [
+            "BecomingInstances"
+          ]
+        }
+      ],
+      "note": "`Chain` 即边过程上的可达；路线本身见 MetaethicalCore §9",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "EvidenceQualifiedCorrection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvidenceQualifiedCorrection.lean",
+      "lines": 272,
+      "theorems": 24,
+      "polymorphic_theorems": 9,
+      "category": "model",
+      "connections": [],
+      "note": "候选模型池与保守证书",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "FallibleInspection": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FallibleInspection.lean",
+      "lines": 314,
+      "theorems": 24,
+      "polymorphic_theorems": 4,
+      "category": "model",
+      "connections": [],
+      "note": "",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "FormativeAssessment": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/FormativeAssessment.lean",
+      "lines": 189,
+      "theorems": 18,
+      "polymorphic_theorems": 3,
+      "category": "model",
+      "connections": [],
+      "note": "确定性评估序列，是探究层的特例",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "GenerativeComparison": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeComparison.lean",
+      "lines": 251,
+      "theorems": 11,
+      "polymorphic_theorems": 7,
+      "category": "bridge",
+      "connections": [
+        {
+          "declaration": "Becoming.Frame.inventory",
+          "spine_modules": [
+            "MetaethicalCore"
+          ]
+        },
+        {
+          "declaration": "Becoming.comparison_lifts",
+          "spine_modules": [
+            "BecomingInstances"
+          ]
+        },
+        {
+          "declaration": "Becoming.articulation_iff_lifted",
+          "spine_modules": [
+            "BecomingInstances"
+          ]
+        },
+        {
+          "declaration": "Becoming.lifted_comparison_supplies_reason",
+          "spine_modules": [
+            "BecomingInstances"
+          ]
+        },
+        {
+          "declaration": "Becoming.lift_coherent_selection_survives",
+          "spine_modules": [
+            "BecomingInstances"
+          ]
+        },
+        {
+          "declaration": "Becoming.lift_continual_improvement_has_no_survivor",
+          "spine_modules": [
+            "BecomingInstances"
+          ]
+        }
+      ],
+      "note": "函数式情境恰为提升规则 L 下的确定情形；比较、理由、存活与持续改进推广到每个框架",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "GenerativeLossComparison": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeLossComparison.lean",
+      "lines": 168,
+      "theorems": 16,
+      "polymorphic_theorems": 6,
+      "category": "history",
+      "connections": [],
+      "note": "外给的 `Le` 可取 `BetterAt`",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "GenerativeTradeoff": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/GenerativeTradeoff.lean",
+      "lines": 252,
+      "theorems": 11,
+      "polymorphic_theorems": 4,
+      "category": "history",
+      "connections": [],
+      "note": "`Problem Circumstance Response History`",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "ObservationChange": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ObservationChange.lean",
+      "lines": 249,
+      "theorems": 28,
+      "polymorphic_theorems": 3,
+      "category": "mathlib",
+      "connections": [],
+      "note": "",
+      "imports_core": false,
+      "imports_mathlib": true
+    },
+    "ObservationRepair": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ObservationRepair.lean",
+      "lines": 311,
+      "theorems": 31,
+      "polymorphic_theorems": 4,
+      "category": "mathlib",
+      "connections": [],
+      "note": "",
+      "imports_core": false,
+      "imports_mathlib": true
+    },
+    "OpenFutureRevision": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/OpenFutureRevision.lean",
+      "lines": 167,
+      "theorems": 10,
+      "polymorphic_theorems": 3,
+      "category": "renewal",
+      "connections": [],
+      "note": "有界清单下的交接进展",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "PositionedPositiveReason": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean",
+      "lines": 220,
+      "theorems": 9,
+      "polymorphic_theorems": 3,
+      "category": "bridge",
+      "connections": [
+        {
+          "declaration": "Becoming.universal_reason",
+          "spine_modules": [
+            "MetaethicalCore"
+          ]
+        },
+        {
+          "declaration": "Becoming.positioned_articulation_of_articulates",
+          "spine_modules": [
+            "MetaethicalCore"
+          ]
+        }
+      ],
+      "note": "路线理由由表述前提 A 给出",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "PositiveGroundUncertainty": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositiveGroundUncertainty.lean",
+      "lines": 257,
+      "theorems": 9,
+      "polymorphic_theorems": 3,
+      "category": "bridge",
+      "connections": [
+        {
+          "declaration": "Becoming.universal_reason",
+          "spine_modules": [
+            "MetaethicalCore"
+          ]
+        }
+      ],
+      "note": "可靠探究的范围给出 `SecuresPositiveGround` 的实例",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "PracticalJudgment": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalJudgment.lean",
+      "lines": 269,
+      "theorems": 30,
+      "polymorphic_theorems": 20,
+      "category": "bridge",
+      "connections": [
+        {
+          "declaration": "Becoming.commonResponse_is_robust",
+          "spine_modules": [
+            "BecomingInstances"
+          ]
+        },
+        {
+          "declaration": "Becoming.robust_iff_commonResponse",
+          "spine_modules": [
+            "BecomingInstances"
+          ]
+        }
+      ],
+      "note": "`Robust` 即共同回应，反之每个稳健回应都是某过程的共同回应",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "PracticalReach": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PracticalReach.lean",
+      "lines": 213,
+      "theorems": 24,
+      "polymorphic_theorems": 12,
+      "category": "bridge",
+      "connections": [
+        {
+          "declaration": "Becoming.guarantees_iff_completes",
+          "spine_modules": [
+            "BecomingInstances"
+          ]
+        }
+      ],
+      "note": "`Guarantees` 即一步完成",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "ReformEvidence": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ReformEvidence.lean",
+      "lines": 220,
+      "theorems": 23,
+      "polymorphic_theorems": 1,
+      "category": "model",
+      "connections": [],
+      "note": "",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "RelationalGrounding": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RelationalGrounding.lean",
+      "lines": 129,
+      "theorems": 6,
+      "polymorphic_theorems": 1,
+      "category": "model",
+      "connections": [],
+      "note": "关于边际描述的具体反例",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "RelationalOrganization": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RelationalOrganization.lean",
+      "lines": 186,
+      "theorems": 13,
+      "polymorphic_theorems": 1,
+      "category": "history",
+      "connections": [],
+      "note": "经 `PracticalJudgment`",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "SelectorReviewCoverage": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/SelectorReviewCoverage.lean",
+      "lines": 297,
+      "theorems": 18,
+      "polymorphic_theorems": 6,
+      "category": "history",
+      "connections": [],
+      "note": "`live`／`menu` 与 `Robust` 同形，世界取范围内的配置",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "StandardsBridge": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/StandardsBridge.lean",
+      "lines": 232,
+      "theorems": 26,
+      "polymorphic_theorems": 15,
+      "category": "bridge",
+      "connections": [
+        {
+          "declaration": "Becoming.revise_is_after",
+          "spine_modules": [
+            "BecomingInstances"
+          ]
+        }
+      ],
+      "note": "按观察过滤规则表即纯观察上的 `After`",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "UnequalBasicLosses": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/UnequalBasicLosses.lean",
+      "lines": 190,
+      "theorems": 14,
+      "polymorphic_theorems": 2,
+      "category": "model",
+      "connections": [],
+      "note": "两层损失诊断；多态引理是报告去重",
+      "imports_core": false,
+      "imports_mathlib": false
+    },
+    "WisdomGoalGrounds": {
+      "path": "experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/WisdomGoalGrounds.lean",
+      "lines": 128,
+      "theorems": 7,
+      "polymorphic_theorems": 1,
+      "category": "model",
+      "connections": [],
+      "note": "",
+      "imports_core": false,
+      "imports_mathlib": false
+    }
+  },
+  "errors": []
+}

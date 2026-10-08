@@ -66,6 +66,18 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/deeper/BecomingCompatibility.lean)
 
+## becoming-spine-instances ← metaethical-core-characterization
+
+`formal-reuse` — comparison_lifts 与各提升定理直接使用 Comparison（C）、LiftBetter（L）、Frame.inventory 与 Enabled；PositiveGroundUncertainty 与 PositionedPositiveReason 的接口实例就是 universal_reason。 / comparison_lifts and the lifted theorems directly use Comparison (C), LiftBetter (L), Frame.inventory and Enabled; the interface instance for PositiveGroundUncertainty and PositionedPositiveReason is universal_reason itself.
+
+**Producer output / 上游输出:** 框架上的生成比较原则 C 与保守提升规则 L 的定义。 / The definitions of generative comparison principle C on a frame and the conservative lifting rule L.
+
+**Consumer input / 下游输入:** comparison_lifts 把 C 下的逐结果扩展转成回应间的 LiftBetter。 / comparison_lifts turns an outcome-wise extension under C into LiftBetter between responses.
+
+**Retained conditions / 保留条件:** 同一框架、同一 living 读法；比较方向按 GenerativeComparison 的约定翻转为 LiftBetter 的约定。 / Same frame and `living` reading; the comparison's direction is flipped from GenerativeComparison's convention to LiftBetter's.
+
+[Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingInstances.lean)
+
 ## classification-robust-generative-comparison ← practical-judgment-g0-j
 
 `formal-reuse` — 复用比较、非自反性与传递性；不重证规范前提。 / Reuses comparison, irreflexivity and transitivity without re-proving normative premises.

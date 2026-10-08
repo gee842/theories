@@ -64,6 +64,20 @@ theorem Reach.trans {P : Process S A} {s m t : S} :
     Reach P s m → Reach P m t → Reach P s t
   | ⟨xs, hx⟩, ⟨ys, hy⟩ => ⟨xs ++ ys, trace_append_iff.mpr ⟨m, hx, hy⟩⟩
 
+/-- A step-preserving map carries reachability (core `trace_map`). -/
+theorem Reach.map {S' : Type u} {P : Process S A} {Q : Process S' A} {f : S → S'}
+    (preserve : ∀ s a t, P.step s a t → Q.step (f s) a (f t)) {s t : S} :
+    Reach P s t → Reach Q (f s) (f t)
+  | ⟨as, h⟩ => ⟨as, trace_map preserve h⟩
+
+/-- A summary whose steps lift from every concrete configuration reflects
+reachability (core `trace_lift`). -/
+theorem Reach.lift {S' : Type u} {P : Process S A} {Q : Process S' A} {q : S → S'}
+    (lift : ∀ s a r, Q.step (q s) a r → ∃ t, P.step s a t ∧ q t = r) {s : S} {r : S'} :
+    Reach Q (q s) r → ∃ t, Reach P s t ∧ q t = r
+  | ⟨_, h⟩ => match trace_lift lift h with
+    | ⟨t, path, same⟩ => ⟨t, ⟨_, path⟩, same⟩
+
 /-- A run reaches every later configuration from every earlier one. -/
 theorem Run.reach {P : Process S A} (r : Run P) (n k : Nat) :
     Reach P (r.state n) (r.state (n + k)) :=

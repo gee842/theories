@@ -1,0 +1,278 @@
+#!/usr/bin/env python3
+"""One checker for the Becoming spine.
+
+Resolves the import closure of the spine modules, requires every inherited module's
+current bytes to match a passed receipt, compiles the closure in dependency order with
+Lean 4.29.1, audits the axioms of every declaration, and requires an empty axiom report
+for every declaration of the spine modules. Inherited reports are recorded, not changed.
+"""
+from datetime import datetime, timezone
+import json
+import os
+from pathlib import Path
+import re
+import subprocess
+import sys
+import tempfile
+
+sys.dont_write_bytecode = True
+HERE = Path(__file__).resolve().parent
+LEAN_ROOT = HERE.parent
+sys.path.insert(0, str(LEAN_ROOT / "universal-ethics" / "generative-capacity"))
+import check as audit_support  # noqa: E402
+
+# Spine modules in this directory, in layer order.
+SPINE = ["BecomingFrame", "BecomingModal", "MetaethicalCore", "BecomingInstances"]
+RECEIPT = HERE / "becoming-verification.json"
+RETAINED = HERE / "becoming-checks"
+
+SCOPE = (
+    "Spine: a Frame is the core Process with realized claims; runs, reachability, invariants and new "
+    "realization are defined through the core Trace; the visible scope of an inquiry is the set of "
+    "configurations its actual executions reach, and a sound policy secures its goal there. "
+    "Metaethical core: on a connected whole with some living claim, significance of every living claim "
+    "from every standpoint (G0 at claim level) is equivalent to a seed together with relational and "
+    "standpoint neutrality; the positioned articulation D follows from the articulation premise A; a "
+    "sound inquiry for new living content gives every position with access a contributory reason. "
+    "Each of seed, relational neutrality, standpoint neutrality, connection and A has a consistent "
+    "countermodel, and each rival satisfies the same rule inside a formed boundary. The lifting rule L "
+    "is transitive only through a live middle response. No premise is proved, no rejecting position is "
+    "bound, and no duty, ranking, recognition or compliance is inferred. "
+    "Instances: seed-edge closures and evaluator chains are reachability on the edge process; a "
+    "frame's reachable configurations form a joint-continuation space whose bundles step-preserving "
+    "maps carry and lifting summaries reflect; robust responses, guarantees, live steps and evidence "
+    "narrowing by a rule list are common responses, one-step completion, enabledness and After on a "
+    "pure observation; the functional articulation of a situation is exactly the deterministic case "
+    "of the articulation under L, and the lifted comparison, reason, survival and continual-improvement "
+    "results hold on every frame. A countermodel shows that L is substantive: a response with one "
+    "better and one worse outcome is comparable in neither direction."
+)
+
+
+# Directories holding retained runs, frozen copies and development attempts.
+ARCHIVE = re.compile(r"(-checks|-runs|-history|-development|verification.*)$"
+                     r"|^(checks|runs|sources|revalidation|retained.*|history|archive.*)$")
+
+
+def module_index():
+    index = {}
+    for path in LEAN_ROOT.rglob("*.lean"):
+        if any(ARCHIVE.search(part) for part in path.relative_to(LEAN_ROOT).parts[:-1]):
+            continue
+        index.setdefault(path.stem, []).append(path)
+    return index
+
+
+def imports_of(data):
+    code = audit_support.code_only(data.decode())
+    return [m.strip() for m in re.findall(r"^import\s+(.+)$", code, re.M) if m.strip() != "Std"]
+
+
+def closure(index):
+    order, seen = [], set()
+
+    def visit(name, stack):
+        assert name not in stack, ("import cycle", stack + [name])
+        if name in seen:
+            return
+        paths = index.get(name, [])
+        assert len(paths) == 1, (name, [str(p) for p in paths])
+        for dependency in imports_of(paths[0].read_bytes()):
+            visit(dependency, stack + [name])
+        seen.add(name)
+        order.append(name)
+
+    for name in SPINE:
+        visit(name, [])
+    return order
+
+
+def passed_receipts():
+    receipts = []
+    for path in LEAN_ROOT.rglob("*.json"):
+        if path == RECEIPT or RETAINED in path.parents:
+            continue
+        relative = path.relative_to(LEAN_ROOT)
+        text = path.read_text(errors="replace")
+        if '"passed"' in text:
+            receipts.append((str(relative), text))
+    return receipts
+
+
+def declarations(data):
+    # The inherited scanner accepts only Std/GenerativeCore imports; it reads a copy
+    # with imports replaced. Compilation uses the unchanged bytes.
+    return audit_support.declarations(re.sub(r"^import .+$", "import Std", data.decode(), flags=re.M))
+
+
+CONTROLS = """import BecomingInstances
+open Becoming Generative Generative.InquirySufficiency PositionedPositiveReason
+
+-- The full premise set is consistent: the model satisfies seed, both neutralities and connection.
+example : (Model.valuation Model.linked (fun _ _ => True)).Grounds :=
+  ((Model.valuation Model.linked (fun _ _ => True)).significant_iff
+    (Model.linked_connected _) .evaluator (c₀ := .self) trivial).mp (fun _ _ _ => trivial)
+
+-- The headline theorem has a nonvacuous instance: one step forms a new living claim.
+def grow : Frame Bool Unit Unit := ⟨⟨fun s _ t => s = false ∧ t = true⟩, fun s _ => s = true⟩
+def everyone : Valuation Model.Who Unit :=
+  ⟨fun _ => True, fun _ _ => True, fun _ _ => True, fun _ _ => True⟩
+def zero : Fin 2 := ⟨0, Nat.zero_lt_succ 1⟩
+def sense0 : Bool → Unit → Bool → Fin 2 := fun _ _ _ => zero
+def respondOnce : Unit → List Unit := fun _ => [()]
+def believed : Bool → Prop := fun s => s = false
+def access : Model.Who → Policy Unit Unit 2 → Prop := fun _ _ => True
+def nothingBefore : Bool → Unit → Prop := fun _ _ => False
+
+/-- The least reason satisfying A. -/
+def routeReason (p : Model.Who) (r : Policy Unit Unit 2) : Prop :=
+  access p r ∧ SecuresPositiveGround (Scope grow.P sense0 respondOnce believed) nothingBefore
+    (fun _ c => everyone.sig p c) r
+
+theorem grow_sound :
+    Sound grow.P (fun _ _ _ => True) (Novel grow everyone.living nothingBefore)
+      sense0 respondOnce (.respond ()) believed :=
+  ⟨⟨false, rfl⟩, fun s held => by
+    cases held
+    exact ⟨⟨true, rfl, rfl⟩, fun t step => ⟨trivial, by
+      cases step.2
+      exact ⟨(), trivial, rfl, id⟩⟩⟩⟩
+
+theorem grow_reason : ∀ p, access p (.respond ()) → routeReason p (.respond ()) :=
+  universal_reason grow everyone nothingBefore access routeReason
+    ⟨⟨.evaluator, (), trivial, trivial⟩, fun ⟨_, _, _⟩ _ _ _ => trivial,
+      fun ⟨_, _, _⟩ _ _ => trivial⟩
+    (fun _ _ _ _ => Reach.refl _ _)
+    (fun ⟨_, _⟩ available secured => ⟨available, secured⟩)
+    (.respond ()) grow_sound
+
+-- The continuation instance is nonvacuous: a reached configuration realizes the living claim.
+example : JointContinuationClassification.Jointly (grow.continuations false) (fun _ => True) :=
+  ⟨true, Reach.of_step (a := ()) ⟨rfl, rfl⟩, fun _ _ => rfl⟩
+"""
+
+
+def main():
+    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S.%fZ")
+    retained = RETAINED / stamp
+    retained.mkdir(parents=True, exist_ok=False)
+    index = module_index()
+    order = closure(index)
+    paths = {name: index[name][0] for name in order}
+    sources = {name: paths[name].read_bytes() for name in order}
+    helpers = {p.name: p.read_bytes() for p in [Path(__file__), LEAN_ROOT / "universal-ethics" / "generative-capacity" / "check.py"]}
+    for name, data in helpers.items():
+        (retained / name).write_bytes(data)
+    for name, data in sources.items():
+        (retained / (name + ".lean")).write_bytes(data)
+    receipt = {
+        "status": "checking", "utc": stamp, "toolchain": audit_support.TOOLCHAIN,
+        "retained_run": str(retained.relative_to(HERE)),
+        "spine_modules": SPINE,
+        "compile_order": order,
+        "source_paths": {name: str(paths[name].relative_to(LEAN_ROOT)) for name in order},
+        "source_sha256": {name: audit_support.digest(data) for name, data in sources.items()},
+        "checker_sha256": {name: audit_support.digest(data) for name, data in helpers.items()},
+        "scope": SCOPE,
+    }
+    try:
+        inherited = [name for name in order if name not in SPINE]
+        receipts = passed_receipts()
+        matches = {}
+        for name in inherited:
+            found = sorted(path for path, text in receipts if receipt["source_sha256"][name] in text)
+            assert found, ("inherited module has no passed receipt for its current bytes", name)
+            matches[name] = found
+        receipt["inherited_receipts"] = matches
+        registry = {name: declarations(data) for name, data in sources.items()}
+        lean = Path.home() / ".elan/bin/lean"
+        binary = Path.home() / ".elan/toolchains/leanprover--lean4---v4.29.1/bin/lean"
+        receipt["lean_binary_sha256"] = audit_support.digest(binary.read_bytes())
+        command = [str(lean), "+" + audit_support.TOOLCHAIN]
+        records = []
+        with tempfile.TemporaryDirectory(prefix="becoming-spine-lean-") as scratch:
+            work = Path(scratch)
+            env = {**os.environ, "LEAN_PATH": str(work)}
+
+            def run(args, log):
+                p = subprocess.run(command + args, cwd=work, env=env, text=True,
+                                   stdout=subprocess.PIPE, stderr=subprocess.STDOUT, timeout=600)
+                (retained / log).write_text(p.stdout)
+                assert p.returncode == 0, p.stdout
+                assert not re.search(r"\b(?:error|warning):", p.stdout), p.stdout
+                return p.stdout
+
+            receipt["lean_version"] = run(["--version"], "version.log").strip()
+            assert "version 4.29.1" in receipt["lean_version"]
+            for name, data in sources.items():
+                (work / (name + ".lean")).write_bytes(data)
+            for name in order:
+                run(["-o", name + ".olean", name + ".lean"], name + ".log")
+                audit = "import " + name + "\n" + "\n".join(
+                    "#print axioms " + item["name"] for item in registry[name]) + "\n"
+                (work / (name + "AxiomAudit.lean")).write_text(audit)
+                (retained / (name + "AxiomAudit.lean")).write_text(audit)
+                output = run([name + "AxiomAudit.lean"], name + "AxiomAudit.log")
+                dependencies = {}
+                for item in registry[name]:
+                    full = item["name"]
+                    if "'" + full + "' does not depend on any axioms" in output:
+                        axioms = []
+                    else:
+                        match = re.search(r"'" + re.escape(full) + r"' depends on axioms:\s*\[([^]]*)\]", output)
+                        assert match, (full, output)
+                        axioms = [a.strip() for a in match[1].split(",") if a.strip()]
+                    assert set(axioms) <= {"propext", "Quot.sound", "Classical.choice"}, (full, axioms)
+                    assert name not in SPINE or not axioms, (full, axioms)
+                    dependencies[full] = axioms
+                if name in SPINE:
+                    signatures = "import " + name + "\n" + "\n".join(
+                        "#check @" + item["name"] for item in registry[name] if item["kind"] == "theorem") + "\n"
+                    (work / (name + "Signatures.lean")).write_text(signatures)
+                    (retained / (name + "Signatures.lean")).write_text(signatures)
+                    run([name + "Signatures.lean"], name + "Signatures.log")
+                records.append({
+                    "module": name, "spine": name in SPINE,
+                    "theorems": sum(x["kind"] == "theorem" for x in registry[name]),
+                    "declarations": registry[name], "axiom_dependencies": dependencies,
+                    "kernel_checked": True,
+                })
+            (work / "Controls.lean").write_text(CONTROLS)
+            (retained / "Controls.lean").write_text(CONTROLS)
+            run(["Controls.lean"], "Controls.log")
+            receipt["checked_application_examples"] = [
+                {"claim": "the full premise set has a model", "kernel_checked": True, "counted_as_new_theorem": False},
+                {"claim": "universal_reason has a nonvacuous instance on a one-step frame", "kernel_checked": True, "counted_as_new_theorem": False},
+                {"claim": "a frame's continuation space has a reached configuration realizing a living claim", "kernel_checked": True, "counted_as_new_theorem": False},
+            ]
+        receipt["source_unchanged_during_check"] = all(
+            paths[name].read_bytes() == data for name, data in sources.items())
+        assert receipt["source_unchanged_during_check"], "Source changed; only snapshot checked"
+        assert all((retained / name).read_bytes() == data for name, data in helpers.items())
+        receipt["modules"] = records
+        receipt["artifact_sha256"] = {
+            p.name: audit_support.digest(p.read_bytes()) for p in sorted(retained.iterdir()) if p.is_file()
+        }
+        receipt["status"] = "passed"
+    except Exception as error:
+        receipt["status"] = "failed"
+        receipt["error"] = str(error)
+        raise
+    finally:
+        serialized = json.dumps(receipt, indent=2, ensure_ascii=False) + "\n"
+        (retained / "verification.json").write_text(serialized)
+        RECEIPT.write_text(serialized)
+    spine = [r for r in records if r["spine"]]
+    print(json.dumps({
+        "status": receipt["status"],
+        "spine_theorems": {r["module"]: r["theorems"] for r in spine},
+        "spine_declaration_audits": sum(len(r["declarations"]) for r in spine),
+        "inherited_modules": len(records) - len(spine),
+        "inherited_axioms": sorted({a for r in records if not r["spine"]
+                                    for aa in r["axiom_dependencies"].values() for a in aa}),
+        "receipt": str(RECEIPT),
+    }))
+
+
+if __name__ == "__main__":
+    main()

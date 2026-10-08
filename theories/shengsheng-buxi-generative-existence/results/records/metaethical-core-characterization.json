@@ -8,7 +8,7 @@
   "kind": "theorem",
   "status": "recorded-checked",
   "family": "F07",
-  "reviewed_at_utc": "2026-10-08T19:59:35+00:00",
+  "reviewed_at_utc": "2026-10-08T20:13:24+00:00",
   "claim": {
     "zh": "在同一框架（核心过程加主张赋值）上陈述评价，不另立世界模型。在已形成关系把生生连在一起、且有某一生生的整体上，“每一生生从每一立场都有正面意义”（G0 在主张层的形式）等价于三项合取：某处有一个生生被某立场珍视（种子；任何持 S0 且有自身生生的位置都提供一个）；正面意义沿非零的已形成关系传递（N_rel）；对生生的正面意义不随立场而取消（N_std）。位置化表述 D 由外在论表述 A 推出。一个以新生生为目标的 sound 探究，使每个对它有通达的位置都具有支持它的一项理由。种子、N_rel、N_std、连通与 A 各有一个一致的反模型；每个规范对手都恰是同一规则加上一条已形成的边界（自身区域、自身立场、认同者）。提升规则 L 只有经由一个可行的中间回应才传递。",
     "en": "Evaluation is stated over one frame (the core process with realized claims), with no world model of its own. On a whole where formed relations connect living and further generation and some such claim exists, “every living claim is significant from every standpoint” (G0 at claim level) is equivalent to three conjuncts: some living claim is valued from some standpoint (a seed; any S0-holding position with own living supplies one); significance passes along nonzero formed relations (N_rel); and significance of living content holds from every standpoint (N_std). The positioned articulation D follows from the externalist articulation A. A sound inquiry whose goal is new living content gives every position with access a contributory reason for it. Seed, N_rel, N_std, connection and A each have a consistent countermodel, and each normative rival is the same rule restricted by a formed boundary (own region, own standpoint, endorsers). The lifting rule L is transitive only through a live middle response."
@@ -155,8 +155,8 @@
     "en": "Proves none of S0, N, A, C, L or J, binds no position rejecting them, and does not treat the value of bringing new lives into existence. A contributory reason is not a duty or ranking and predicts no recognition or compliance. Sidgwick's dualism of practical reason is not dissolved; it is located at the boundary-neutrality premise."
   },
   "validation_scope": {
-    "zh": "Lean 4.29.1 合并检查器成功实查脊柱 3 个模块共 34 项定理／67 项声明审计，全部空依赖；检查器要求脊柱模块无任何公理依赖，并要求 8 个继承模块的当前字节与某张已通过回执一致。继承模块的 propext、Quot.sound、Classical.choice 依赖另列，未迁移；2 项控制例（前提集有模型；universal_reason 有非空实例）不计为新定理。作者自审，尚无独立反审。",
-    "en": "Successful Lean 4.29.1 consolidated check of 3 spine modules: 34 theorems/67 declaration audits, all with empty axiom reports; the checker requires the spine to have none and requires each of the 8 inherited modules' current bytes to match a passed receipt. Inherited propext, Quot.sound and Classical.choice dependencies are listed separately and not migrated; 2 controls (the premise set has a model; universal_reason has a nonvacuous instance) are not counted as new theorems. Author's review only; no independent review yet."
+    "zh": "Lean 4.29.1 合并检查器成功实查。本结果所在的脊柱模块 MetaethicalCore、BecomingModal、BecomingFrame 分别有 20、5、11 项定理，全部空依赖；同一回执还检查了 BecomingInstances（另见 becoming-spine-instances），共 4 个脊柱模块 62 项定理／111 项声明审计。检查器要求脊柱模块无任何公理依赖，并要求 13 个继承模块的当前字节与某张已通过回执一致；继承模块的 propext、Quot.sound、Classical.choice 依赖另列，未迁移。3 项控制例不计为新定理。作者自审，尚无独立反审。",
+    "en": "Successful Lean 4.29.1 consolidated check. This result's spine modules MetaethicalCore, BecomingModal and BecomingFrame have 20, 5 and 11 theorems, all with empty axiom reports; the same receipt also checks BecomingInstances (see becoming-spine-instances): 4 spine modules, 62 theorems/111 declaration audits. The checker requires the spine to have no axiom dependency and each of the 13 inherited modules' current bytes to match a passed receipt; inherited propext, Quot.sound and Classical.choice dependencies are listed separately and not migrated. 3 controls are not counted as new theorems. Author's review only; no independent review yet."
   },
   "references": [
     {
@@ -201,7 +201,7 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/BecomingFrame.lean",
       "role": "proof",
-      "sha256": "cbcf9aa5886a2c0c08cb5d7ae1c72a1d88f362c8c88c0e0cc188e5f85a12855f",
+      "sha256": "a5af25d221a18ce291638a314ee9c2e2bf2620e8db76f16ce38518b32824e3d3",
       "declarations": [
         "Becoming.Run.window_trace",
         "Becoming.Reach.refl",
@@ -255,13 +255,13 @@
     {
       "path": "experiments/integrated-correction/general-framework/generative-basis/lean/becoming/becoming-verification.json",
       "role": "receipt",
-      "sha256": "5f4a59d4e6686f52e4877d4df3661e22ae2a51a07e166840f7a6f6133853b9a3",
+      "sha256": "4a1ad8cb4cd2fe5b06e2d01757736d56e7c8353fe3e74da94a8a79e206e8c001",
       "declarations": []
     },
     {
       "path": "_process/research/2026-10-05-generative-foundation-review/root-foundation/BECOMING-UNIFICATION-PLAN.md",
       "role": "statement",
-      "sha256": "290d7ce11fc0f5e228ba26e3394064cc2fc53f06d34c0e4e81a5a0c947bda7e4",
+      "sha256": "48e679d390049a677d0455978954ee83789fac6b94e119bc80d4cd7dbe799bfc",
       "declarations": []
     },
     {
@@ -336,6 +336,10 @@
     {
       "zh": "2026-10-09：应 Ren“你自己全改了吧……先更新好计划，然后再一步步完整完成”新增，作为整合计划 P1–P2。吸收另一会话的 S0+N* 提议并按评估作更正：N 分为承受者、立场两条，受话者一侧另需 A；P+ 写成传递形式以免 S0 冗余。",
       "en": "2026-10-09: added following Ren's “你自己全改了吧……先更新好计划，然后再一步步完整完成”, as P1–P2 of the unification plan. Absorbs another session's S0 + N* proposal with the assessed corrections: N splits into patient and standpoint rules, the addressee side needs A, and P+ is stated as transmission so that S0 is not redundant."
+    },
+    {
+      "zh": "2026-10-09（P3）：BecomingFrame 增加 Reach.map 与 Reach.lift 两条引理，合并回执加入 BecomingInstances 后重新生成。已读差异：本结果的定义与定理未变，只更新这两个文件的哈希与检查范围的计数；计划的阶段表标出 P1–P3 已完成，其哈希一并更新。",
+      "en": "2026-10-09 (P3): BecomingFrame gained the lemmas Reach.map and Reach.lift, and the consolidated receipt was regenerated with BecomingInstances. Diff read: this result's definitions and theorems are unchanged; only these two hashes and the counts in the validation scope were updated; the plan's phase table now marks P1–P3 complete, and its hash was updated with them."
     }
   ]
 }

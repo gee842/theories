@@ -6,7 +6,7 @@
 
 记录源 / Editable record: [metaethical-core-characterization.json](metaethical-core-characterization.json) · [登记表 / Register](../../../../RESULTS.md)
 
-Documentary review UTC: `2026-10-08T19:59:35+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
+Documentary review UTC: `2026-10-08T20:13:24+00:00`. Run the registry checker for source drift; this page is not a fresh proof receipt.
 
 ## 主张 Claim
 
@@ -24,7 +24,7 @@ living 读作生生；对应 Ren 的 G0 时取更新型形成的关系读法（r
 
 ## 检验与边界 Validation and boundaries
 
-Lean 4.29.1 合并检查器成功实查脊柱 3 个模块共 34 项定理／67 项声明审计，全部空依赖；检查器要求脊柱模块无任何公理依赖，并要求 8 个继承模块的当前字节与某张已通过回执一致。继承模块的 propext、Quot.sound、Classical.choice 依赖另列，未迁移；2 项控制例（前提集有模型；universal_reason 有非空实例）不计为新定理。作者自审，尚无独立反审。 / Successful Lean 4.29.1 consolidated check of 3 spine modules: 34 theorems/67 declaration audits, all with empty axiom reports; the checker requires the spine to have none and requires each of the 8 inherited modules' current bytes to match a passed receipt. Inherited propext, Quot.sound and Classical.choice dependencies are listed separately and not migrated; 2 controls (the premise set has a model; universal_reason has a nonvacuous instance) are not counted as new theorems. Author's review only; no independent review yet.
+Lean 4.29.1 合并检查器成功实查。本结果所在的脊柱模块 MetaethicalCore、BecomingModal、BecomingFrame 分别有 20、5、11 项定理，全部空依赖；同一回执还检查了 BecomingInstances（另见 becoming-spine-instances），共 4 个脊柱模块 62 项定理／111 项声明审计。检查器要求脊柱模块无任何公理依赖，并要求 13 个继承模块的当前字节与某张已通过回执一致；继承模块的 propext、Quot.sound、Classical.choice 依赖另列，未迁移。3 项控制例不计为新定理。作者自审，尚无独立反审。 / Successful Lean 4.29.1 consolidated check. This result's spine modules MetaethicalCore, BecomingModal and BecomingFrame have 20, 5 and 11 theorems, all with empty axiom reports; the same receipt also checks BecomingInstances (see becoming-spine-instances): 4 spine modules, 62 theorems/111 declaration audits. The checker requires the spine to have no axiom dependency and each of the 13 inherited modules' current bytes to match a passed receipt; inherited propext, Quot.sound and Classical.choice dependencies are listed separately and not migrated. 3 controls are not counted as new theorems. Author's review only; no independent review yet.
 
 不证明 S0、N、A、C、L 或 J，不约束拒绝它们的立场，不处理使新生命存在的价值。一项支持理由不是义务、排序，也不预测认识或遵循。Sidgwick 的实践理性二元论没有被消解，只被定位到边界中立这一前提上。 / Proves none of S0, N, A, C, L or J, binds no position rejecting them, and does not treat the value of bringing new lives into existence. A contributory reason is not a duty or ranking and predicts no recognition or compliance. Sidgwick's dualism of practical reason is not dissolved; it is located at the boundary-neutrality premise.
 
@@ -77,3 +77,4 @@ Aliases / 别名: `Becoming.Valuation.significant_iff`, `Becoming.Valuation.sign
 ## 沿革 History
 
 - 2026-10-09：应 Ren“你自己全改了吧……先更新好计划，然后再一步步完整完成”新增，作为整合计划 P1–P2。吸收另一会话的 S0+N* 提议并按评估作更正：N 分为承受者、立场两条，受话者一侧另需 A；P+ 写成传递形式以免 S0 冗余。 / 2026-10-09: added following Ren's “你自己全改了吧……先更新好计划，然后再一步步完整完成”, as P1–P2 of the unification plan. Absorbs another session's S0 + N* proposal with the assessed corrections: N splits into patient and standpoint rules, the addressee side needs A, and P+ is stated as transmission so that S0 is not redundant.
+- 2026-10-09（P3）：BecomingFrame 增加 Reach.map 与 Reach.lift 两条引理，合并回执加入 BecomingInstances 后重新生成。已读差异：本结果的定义与定理未变，只更新这两个文件的哈希与检查范围的计数；计划的阶段表标出 P1–P3 已完成，其哈希一并更新。 / 2026-10-09 (P3): BecomingFrame gained the lemmas Reach.map and Reach.lift, and the consolidated receipt was regenerated with BecomingInstances. Diff read: this result's definitions and theorems are unchanged; only these two hashes and the counts in the validation scope were updated; the plan's phase table now marks P1–P3 complete, and its hash was updated with them.

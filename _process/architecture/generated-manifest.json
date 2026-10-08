@@ -2,16 +2,16 @@
   "schema_version": 1,
   "files": {
     "README.md": "974527687932769d17404b265dedbd65c684589d9fc42957a05fb5f494239857",
-    "RESEARCH.md": "7310e40578a1c2ceece7c1c40e446538beaf79a2febb12997077f9433540f26f",
-    "RESULTS.md": "c3338817269f4de000798fb33097658deff6890c465730ca1314fd549b353507",
+    "RESEARCH.md": "26347ebb8a67a2269d2c466b5ae4626c49ac3ccf05d2d465f0f7c9f308dca7da",
+    "RESULTS.md": "ea33489e280910f7f4d9e13e7538cd3061bc6771bce211b38ac094f0d63d7a24",
     "GOALS.md": "0a917d66dfc6488b149cb09364c2b227459582bc0e73b290834d8ca79f682c43",
-    "DEPENDENCIES.md": "999829cd028e8acb035626dbff39cd381b6b66c02527d336d90b99a54698dbe0",
+    "DEPENDENCIES.md": "3e9ab2333a2010485f5a4aac695b7693f36573a5fdaaf6682b3cea9ef8054757",
     "_process/BRIEF.md": "5f3005b122b90314e0a33e4004b6687d91a0b889b5cb1a0bc69cb27f9e8a9d72",
-    "theories/shengsheng-buxi-generative-existence/README.md": "88322aeb62c2480f9fee952fe0a109ce5774a0134c0a49f44ab0257c37c84fa1",
+    "theories/shengsheng-buxi-generative-existence/README.md": "df3ff355e3711ce797a954755a463573819419314b98bbfe6a39d1b7f55cbb31",
     "theories/shengsheng-buxi-generative-existence/results/ROADMAP.md": "b078d602cb7f4fbec7f1f3509f47ca2a03e2f348e35b55793401cbebcd6e6dbc",
     "_process/research/2026-10-05-generative-foundation-review/root-foundation/README.md": "488455208d005b447fff6183e5682bb4a931b1c65dbc318d1a6eef29d045fe99",
-    "OPEN-QUESTIONS.md": "6a5f7b0a852014bba080d0bfdfd2193c7d4641ad64852a1fe23fd98d79f13c7b",
-    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md": "129ab551634832414193474763f7ad2c2f3260f0e257f641cd102d5de499a191",
+    "OPEN-QUESTIONS.md": "0b9f4f89e16b58a2d5634dd0ee107dc4ed1165bef120a89461f5c9ea1a7788dc",
+    "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/CLAIMS.md": "aa8a07f3f111b8d62d8f516b0775d338f38bc311de9411014caf33a47abc2651",
     "theories/shengsheng-buxi-generative-existence/results/records/acquired-binding-compositional-use.md": "2802039dee657162a2629a6383f5bd8bbce4966c28b064e791617dcbca4b9880",
     "theories/shengsheng-buxi-generative-existence/results/records/aggregate-exit-funding.md": "268e7367a89631f8b3233ea0c5c48d2c172b63bff24fedf01bc3e9b3f91f1c29",
     "theories/shengsheng-buxi-generative-existence/results/records/alignment-direction-g0-j.md": "7c31a9e2a3982d3b53bfe5cfe00999a16d335885cb4902e4c9ac6ba00293102a",
@@ -44,7 +44,7 @@
     "theories/shengsheng-buxi-generative-existence/results/records/trace-law-equivalence.md": "27aa7d30981da65704d733e14c16816200fa2c391ff8dbd97976c0ccb2804888",
     "theories/shengsheng-buxi-generative-existence/results/records/transition-grouping-word-partition.md": "ad9fc875a53b60e66a5fc12d3ad55070892302db114d2fe523f4bf9bd2b79c1e",
     "theories/shengsheng-buxi-generative-existence/results/records/wisdom-root.md": "85afbf91e193d9adc3d9a6b99af1a9e41d4393f4eebb170142fb8baf512e1d29",
-    "theories/shengsheng-buxi-generative-existence/results/RESULT-REGISTER.md": "65b1bf839652dbd39c337b73f358045c10268078d1f98a4ce83c71f706f23741",
+    "theories/shengsheng-buxi-generative-existence/results/RESULT-REGISTER.md": "2863c88dff9514c08d89b7591bad0fa30a6380e9880bafb5b1ebc896b31c0db9",
     "theories/shengsheng-buxi-generative-existence/results/records/universal-practical-warrant.md": "d1b55d83d9985610398df6d8ed65b1dd6742349af7272a6989aef2dfc5b891d4",
     "theories/shengsheng-buxi-generative-existence/results/records/enacted-scene-binding.md": "ebf79c98d3135dc8a7834e859a85f2805933cef57cdfa80c794507a3e05f0b29",
     "theories/shengsheng-buxi-generative-existence/results/records/market-protected-continuation.md": "c98d3fb32336739dd3c1fc75e9056a3c377827946151b265b674c1274106f66d",
@@ -102,6 +102,7 @@
     "theories/shengsheng-buxi-generative-existence/results/records/relational-reading-comparison.md": "73d75bfc3f54c6bb5c6aa0f128f40ccf0f21c18ab3bdcc728122bd5f70227093",
     "theories/shengsheng-buxi-generative-existence/results/records/formed-copying-correction.md": "fc78f66d50fd762b97c913d1f67204c584e1092dfe4c8b198fced25008c4a92a",
     "theories/shengsheng-buxi-generative-existence/results/records/learned-procedure-transmission.md": "859abd893fc4f305c12a13ed02e84255fc271e5a1cc0b4700ebc15ed45e50a09",
-    "theories/shengsheng-buxi-generative-existence/results/records/metaethical-core-characterization.md": "c96e322cee681d230b50e6dc630a73d30b5f6c31acc7ecbb2c253229a2f876c8"
+    "theories/shengsheng-buxi-generative-existence/results/records/metaethical-core-characterization.md": "73bc0e458e4c5e9a9abbd1bddf52d611c3b2ca450cf3ea62825953ec5648cac9",
+    "theories/shengsheng-buxi-generative-existence/results/records/becoming-spine-instances.md": "03290f29bd8fce0933a8c70c271a100670cc5f3cfdc0897b0b5091c7e8fcbb82"
   }
 }

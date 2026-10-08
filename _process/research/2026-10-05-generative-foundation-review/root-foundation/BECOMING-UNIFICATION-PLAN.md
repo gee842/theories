@@ -125,10 +125,10 @@ Leaves          ℝ/Mathlib、序理论、Rat 市场：作为叶子包，只在�
 | 阶段 | 内容 | 验收 |
 |---|---|---|
 | P0 ✓ | 本线提交 78f1abda；整库检查点 4e7642e1 | 已完成 |
-| P1 脊柱 | `BecomingFrame`：Frame、Run（含窗口即轨迹）、Reach、不变量、历史、Novel。`BecomingModal`：Scope、sound 策略确保其目标、反单调性。合并检查器 `check_becoming.py` | 空公理；继承哈希与回执相符 |
-| P2 伦理核心 | `MetaethicalCore`：S0、N_rel、N_std、A、C、L、J 的具名定义；G0 刻画定理；D 的导出；极小性反模型与“对手即有界规则”；脊柱上的普遍位置理由；提升规则 L。记录 `metaethical-core-characterization`；一页前提卡 | 同上；前提卡与记录逐项一致 |
-| P2b 评价者路线更正 | 执行[审查](EVALUATOR-GROUNDING-REVIEW.md) §6 的 15 项更正：论证文档、Lean 说明、记录 `self-good-reachable-g0`（收窄标题与主张）、G0-WARRANT 相关段；P+ 版第二步由 P2 承担 | 记录与审查逐项对应；该模块检查器重跑通过 |
-| P3 实例化 | 先用脚本对 45 个含多态定理的模块分类，结果存入本研究。再按接口逐一处理：给出脊柱实例；对重建核心组合子者证明等价（`Robust`、`Reached`、`revise`、`Guarantees` 等）；函数式结果用 L 推广。相应记录增加证明绑定，按具名声明升级 `related` 链接 | 每个接口都有具名实例或等价定理；分类表完整 |
+| P1 脊柱 ✓ | `BecomingFrame`：Frame、Run（含窗口即轨迹）、Reach、不变量、历史、Novel。`BecomingModal`：Scope、sound 策略确保其目标、反单调性。合并检查器 `check_becoming.py` | 已完成（d79d0d9d）：空公理；继承哈希与回执相符 |
+| P2 伦理核心 ✓ | `MetaethicalCore`：S0、N_rel、N_std、A、C、L、J 的具名定义；G0 刻画定理；D 的导出；极小性反模型与“对手即有界规则”；脊柱上的普遍位置理由；提升规则 L。记录 `metaethical-core-characterization`；一页前提卡 | 已完成（d79d0d9d）：[metaethical-core-characterization](../../../../theories/shengsheng-buxi-generative-existence/results/records/metaethical-core-characterization.md) |
+| P2b 评价者路线更正 ✓ | 执行[审查](EVALUATOR-GROUNDING-REVIEW.md) §6 的 15 项更正：论证文档、Lean 说明、记录 `self-good-reachable-g0`（收窄标题与主张）、G0-WARRANT 相关段；P+ 版第二步由 P2 承担 | 已完成（001c5cdd）：记录与审查逐项对应；该模块检查器重跑通过 |
+| P3 实例化 ✓ | 先用脚本对 45 个含多态定理的模块分类，结果存入本研究。再按接口逐一处理：给出脊柱实例；对重建核心组合子者证明等价（`Robust`、`Reached`、`revise`、`Guarantees` 等）；函数式结果用 L 推广。相应记录增加证明绑定，按具名声明升级 `related` 链接 | 已完成：[分类表](BECOMING-INSTANCE-CLASSIFICATION.md)覆盖 45 个模块并逐行机械检查；11 个接口都有具名实例或等价定理（`BecomingInstances`），记录 [becoming-spine-instances](../../../../theories/shengsheng-buxi-generative-existence/results/records/becoming-spine-instances.md)。证明绑定放在新记录上，既有记录按原范围保留不改；新记录以 `related` 连到它们，唯一的 `formal-reuse` 是对 C 与 L 的直接使用 |
 | P3b 更新／消耗统一 | 由 Run 可观测量构造 `RelationalRenewal` 的展开，`RenewalComparison` 的关系读法成为脊柱上 `generative` 的规范读法；`Depletion`、`ContinuationRenewal` 的储备界作为同一分类的实例 | 新的实质结果；作者反审 |
 | P4 叙述 | 新正典入口 `THE-THEORY-OF-BECOMING`：Becoming、组织与演化、认识与探究、集体动力学、评价的形成、Universal Metaethical Core、AI 对齐、开放纲领。附术语表与前提卡；旧章作为证据链接，并在新章中标为历史证据；README 首段指向它；补齐阅读目录 | 不改任何被绑定章节；渲染与检查通过 |
 | P4b 工作规则 | AGENTS.md 增一条：新的形式结果陈述在脊柱上；脊柱表达不了时扩展脊柱，而不是另建模型 | 规则与目录一致 |
