@@ -190,7 +190,7 @@
     {
       "path": "theories/shengsheng-buxi-generative-existence/unified-2026-10-05/G0-WARRANT.md",
       "role": "integration",
-      "sha256": "cdc0ae61453b294f941c6f096a5579746b5c175ef4fd22ad2b9013d8aad7253b",
+      "sha256": "5e7c2e0395208e10e22a26f2a5552376b5ad977c1196156d52844288fd8f8915",
       "declarations": []
     },
     {
@@ -246,6 +246,10 @@
     {
       "zh": "2026-10-09：独立审查附更正后接受（GENERATIVE-DISCRIMINATION-REVIEW）。按审查：假设弱化为超出当前速率（BeyondCurrent），原 beyond_renewal_* 作为推论保留原名；共享形成推广到联合超出；新增 KeepsCapacity 读法及两种读法的反例；新增 comparison_does_not_apply 与 event_comparison_ranks_rest_below；event_reading_favors_both 改名 event_reading_recognizes_both，whole_direction_separates 改名 ceaseless_separates。依 Ren 同日追问，写明宽读法不是 G0。与 ResourceContinuation 的差别改为磨损反馈（该处到达可依赖状态）。首版回执保留于 generative-discrimination-checks/20261008T185033.210526Z。同一 ID：主张的对象不变，范围在首次审查中修正。",
       "en": "2026-10-09: independently reviewed and accepted with corrections (GENERATIVE-DISCRIMINATION-REVIEW). Per the review, the hypothesis is weakened to excess over the current rate (BeyondCurrent), with the original beyond_renewal_* kept as corollaries under their names; shared formation is generalized to joint excess; the KeepsCapacity reading and counterexamples between readings are added; comparison_does_not_apply and event_comparison_ranks_rest_below are added; event_reading_favors_both is renamed event_reading_recognizes_both and whole_direction_separates ceaseless_separates. Following Ren's follow-up the same day, the broad reading is marked as not G0. The difference from ResourceContinuation is restated as wear feedback (its arrival may depend on state). The first receipt is preserved in generative-discrimination-checks/20261008T185033.210526Z. Same ID: the claim's object is unchanged and its scope was corrected in first review."
+    },
+    {
+      "zh": "2026年10月9日：G0-WARRANT 由整合会话改动 §2.3 评价者段（依独立审查收窄）并新增“内容刻画”段、§3 表新增 MetaethicalCore 一行、§4 第 4 项与 §5 措辞；本记录所依的 §2.2、§2.3 保护优先段及本模块的表行未变。读过改动后更新哈希；主张、证明与回执不变。",
+      "en": "9 October 2026: the unification session changed G0-WARRANT's §2.3 evaluator paragraph (narrowed after independent review), added a characterization paragraph, a MetaethicalCore row in §3, and rewording in §4 item 4 and §5; the §2.2 text, the §2.3 protection paragraph and this module's table row that this record relies on are unchanged. Hash updated after reading the change; claim, proof and receipt unchanged."
     }
   ]
 }

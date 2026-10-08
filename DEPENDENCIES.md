@@ -678,7 +678,7 @@ Curated result edges retain their exact interpretation. File imports can be expl
 
 **Consumer input / 下游输入:** contingent_generation_has_positive_ground 的 G0 前提。 / The G0 hypothesis of contingent_generation_has_positive_ground.
 
-**Retained conditions / 保留条件:** 库存限于此位置可及的生命内容；正面相关性取此位置的意义；容差与分级连通成立。 / Inventory restricted to living content reachable by the position; positive relevance is the position's significance; tolerance and graded connection hold.
+**Retained conditions / 保留条件:** 库存限于此位置可及的生命内容，且只有单一历史（Unit），开放未来的多分支结构未被表示；正面相关性取此位置的意义；容差与分级连通成立。 / Inventory restricted to living content reachable by the position, with a single history (Unit), so the branching structure of open futures is not represented; positive relevance is the position's significance; tolerance and graded connection hold.
 
 [Connection evidence / 连接证据](experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/EvaluatorGrounding.lean)
 

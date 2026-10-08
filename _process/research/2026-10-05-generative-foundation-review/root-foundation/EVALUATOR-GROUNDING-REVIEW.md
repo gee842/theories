@@ -279,6 +279,8 @@ Lean 版本：`4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d3537
 
 ## 6. 须作的更正（未执行）
 
+**执行状态（2026-10-09 补记）。** 15 项更正已由整合会话依 Ren“你自己全改了吧”执行，逐项对照见[论证修订说明](EVALUATOR-GROUNDING-ARGUMENT.md)。审查所建议的 P+ 版第二步由 [metaethical-core-characterization](../../../../theories/shengsheng-buxi-generative-existence/results/records/metaethical-core-characterization.md) 给出。以下审查原文不变。
+
 以下更正针对论证文档、Lean 说明、记录，以及已引用本结果的 G0-WARRANT。审查者只列出，不执行。
 
 1. **摘要、§0、§3、§5 表与记录 `claim`：** 删去“不加任何额外理性前提”。写明第一步还需要不受限（跨越自他）的单调性，等价地说，需要随附性、剖面上单调的估值，以及 BI（自我之善的根据剖面不含自身区域坐标）。把 BI 列入 §2 账本，标为有争议。

@@ -13,22 +13,37 @@ significance: contributory, not weight, permission or duty.
 
 Supplied, and kept visible:
 * `SelfGood` (S0): the evaluator's own living and further generation is
-  reason-giving for it. This first-personal premise is the only substantive
-  normative input. "Further generation" includes transformation and what forms
-  from this activity, not only persistence of a fixed organization.
+  reason-giving for it. S0 and `Tolerant` are the substantive normative
+  premises. "Further generation" includes the evaluator's own learning and
+  transformation; others formed through its activity are not part of S0's
+  content (`ownOcc .formedOther` is false) and are reached, if at all, by step one.
 * `Monotone`: for the same content, an occurrence at least as connected in the
   relations that ground the evaluator's self-good is at least as significant.
-  The indexed rival itself uses this to weigh its near future over its far one.
+  It is unrestricted, ranging over own and other occurrences; a rival's own
+  near-over-far principle ranges over own occurrences only. The unrestricted form
+  amounts to supervenience, a profile-monotone valuation and boundary
+  irrelevance (BI: the grounding profile has no own-region coordinate), a
+  contested structural premise.
 * `Supervenes`: significance of living content depends only on formed relations.
+  This is a normative supervenience thesis, not entailed by the monist ontology;
+  it allows profiles with a formed closure coordinate.
 * `Tolerant`: an indiscernibly small relational step does not turn positive
   significance into none. A contested rationality premise; a threshold rival
-  rejects it, and the countermodel below keeps that rival consistent.
+  rejects it, and the countermodel below keeps that rival consistent. On a
+  connected profile space, two-valued universal tolerance makes positive
+  significance constant, including on zero-relation profiles, and it carries
+  "none" backward as readily as "positive" forward.
 * Differentiation and chain premises are correspondence claims about the
-  actual unfolding (generation forms others; formed relations are graded). The
-  closed-self countermodel shows that they carry real weight.
+  actual unfolding. Differentiation is in scope for fission, copying, forking and
+  successors and for evaluation led by formative contribution. `Chain` ranges
+  over possible profiles, so tolerance is also a claim about valuing merely
+  possible profiles.
 
-No theorem here proves S0, `Tolerant`, or the correspondence premises. A
-present-aim evaluator without S0 remains a consistent formation.
+No theorem here proves S0, `Tolerant`, BI or the correspondence premises. A
+present-aim evaluator without S0 remains a consistent formation. The derived G0
+is a standpoint-indexed, single-history instance of the G0 predicate; the
+unindexed G0 over continuations needs a further bridge, stated as standpoint
+neutrality in `becoming/MetaethicalCore.lean`.
 -/
 
 namespace EvaluatorGrounding
@@ -193,7 +208,9 @@ theorem threshold_rival_is_consistent_without_tolerance :
     omega
 
 /-- With tolerance along adjacent degrees, the same self-good reaches every
-reachable occurrence, including the stranger; the unreachable one is not claimed. -/
+reachable occurrence, including the stranger. The same premises also give
+`sig .beyond`, since degree 0 is adjacent to 1: the `reach` field limits what
+this theorem states, not what tolerance implies. -/
 theorem tolerant_standpoint_reaches_stranger (val : Nat → Prop)
     (self : SelfGood (standpoint val)) (tol : Tolerant val adjacent) :
     (standpoint val).sig .stranger ∧ (standpoint val).sig .formedOther := by
@@ -218,9 +235,11 @@ theorem present_aim_evaluator_escapes :
   · intro _ _; exact Iff.rfl
   · intro _ _ _ held; exact held
 
-/-- Closed self: if formed relations do not grade between own and other (no small
-step crosses the gap), tolerance holds yet nothing reaches the stranger. The
-monist connection premise carries real weight. -/
+/-- Closed self: if no small step crosses between own and other, tolerance holds
+yet nothing reaches the stranger. This is the threshold rival with its step
+relation restricted to its own positive region: `Chain` carries weight for that
+step relation. Parfitian continuity and autopoietic closure are monist formations
+with exactly this closed structure; it is not a dualist picture. -/
 def closedStep (p q : Nat) : Prop := 4 ≤ p ∧ 4 ≤ q ∧ adjacent p q
 
 theorem closed_self_blocks_reach :
@@ -237,7 +256,12 @@ theorem closed_self_blocks_reach :
 If self-good is grounded in organizational persistence alone, profiles have two
 dimensions: (organizational continuity, formative contribution). The formed other
 is more formed by this activity yet less organizationally continuous than the
-changed self, so the product order does not make it at least as connected. -/
+changed self, so the product order does not make it at least as connected. In
+this profile, the product order makes no other occurrence at least as connected
+as any own occurrence, for every standpoint; under a weighted sum the formed other
+is at least as connected only if formative contribution has at least 7/5 the
+weight of organizational continuity. Step one therefore binds generative
+self-good led by formative contribution, not generative self-good as such. -/
 
 def profile2 : Occ → Nat × Nat
   | .nearSelf => (9, 9)

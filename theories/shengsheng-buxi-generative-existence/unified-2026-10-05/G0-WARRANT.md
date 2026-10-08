@@ -68,9 +68,30 @@ In one constructed situation, G0, C and J2 hold together; G0 constrains relevanc
 
 **Gewirth 与辩证路线。** Gewirth 试图从任何目的性行动者已有的承诺推出普遍原则，而不另设价值公理（[来源研读](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/NORMATIVE-WARRANT-SOURCES.md) §1）。他的论证公认在“我需要 X”到“他人也应尊重每个人的 X”这一步上有争议。审查 §3.1 提出一个研究假说：一元关系本体下，评价者自身的评价与延续形成于并依存于与他者的关系，阻断这一步的自我边界并不是给定的。若这条路走通，G0 可以降为接近“构成我之评价的那些生成关系的延续”，所支持的也正是 §2.2 中的更新型形成。这是待证目标（`universal-practical-warrant`，open），不是成果。
 
-**2026-10-09 部分完成**（[自我之善推出可及范围的 G0](../results/records/self-good-reachable-g0.md)，[论证](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATOR-GROUNDING-ARGUMENT.md)）。起点改为评价者自身的自我之善 S0：它自己的生及继续生成对它有提供理由的意义。意义只取决于已形成关系，不取决于原始所有者。第一步不加额外理性前提：S0 加上对手自己的单调性，及于至少同样相连的他者；只承认“我的”的对手严格不一致。第二步加上容差与分级连通，及于全部可及的生命，所得恰为可及库存上的 G0。因此对持 S0 的评价者，G0 的可及部分由其自身之善推出，理由的约束也不依赖 D。墙仍在：没有 S0 的现时目的评价者不受约束；容差对门槛式对手仍有争议；所得是正面意义，不是权重；`universal-practical-warrant` 仍为 open。
+**2026-10-09 部分完成，经独立审查收窄**（[记录](../results/records/self-good-reachable-g0.md)，[论证](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATOR-GROUNDING-ARGUMENT.md)，[审查](../../../_process/research/2026-10-05-generative-foundation-review/root-foundation/EVALUATOR-GROUNDING-REVIEW.md)）。
 
-Partially completed on 9 October: starting from the evaluator's own self-good S0, with significance determined by formed relations rather than a primitive owner, monotonicity alone reaches others at least as connected (the own-only rival is inconsistent), and tolerance with graded connection yields G0 on the reachable inventory. Present-aim evaluators without S0 escape; tolerance remains contested; the target stays open.
+起点改为评价者自身的自我之善 S0：它自己的生及继续生成对它有提供理由的意义。
+- **第一步。** S0 加上不受限（跨越自他）的单调性，及于至少同样相连的他者。不受限单调性等价于随附性、剖面单调估值与 BI；BI 有争议。只承认“我的”的对手，只有在承认“连接程度就是完整根据”时才严格不一致。
+- **第二步。** 加上容差与分级连通，及于全部可及的生命。所得是 G0 谓词的**立场索引的单历史实例** G0(reachₛ, sigₛ)，超出 S0 的全部内容由容差承担。
+- **仍需桥接。** 所采用的不带索引、跨接续的 G0，仍需从立场相对意义到规范意义的桥接。
+- **约束力取决于认同。** 理由对一个位置的约束，取决于它是否认同 S0、容差（及 BI），不是与认同无关的。
+- **墙。** 没有 S0 的现时目的评价者不受约束；容差对闭合坐标与归零权重的对手没有得到辩护；所得是正面意义，不是权重。
+
+Partially completed on 9 October and narrowed after independent review:
+- S0 with unrestricted monotonicity (equivalently supervenience, a profile-monotone valuation and the contested BI) reaches others at least as connected.
+- Tolerance with graded connection yields a standpoint-indexed, single-history instance of G0 on the reachable inventory; tolerance carries everything beyond S0.
+- The adopted unindexed G0 still needs a bridge from standpoint-relative to normative significance, and the binding force depends on accepting S0, tolerance and BI.
+
+**2026-10-09 内容刻画**（[记录](../results/records/metaethical-core-characterization.md)，[Lean](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean)）。在已形成关系把生生连在一起的整体上，G0 等价于三项合取：
+- 某处有一个生生被某立场珍视（种子；持 S0 的位置都提供一个）；
+- 正面意义沿非零的已形成关系传递（N_rel）；
+- 对生生的正面意义不随立场而取消（N_std）。
+
+D 由外在论表述 A 推出。种子、N_rel、N_std、连通与 A 各有一个一致的反模型；每个规范对手都恰是同一规则加上一条已形成的边界：自身区域、自身立场、认同者。
+
+这不是对 G0 的证明，也不替换 G0。它说明：G0 中超出评价者本来就持有的东西，精确落在“已形成的边界不能取消规范意义”这一前提上。上面评价者路线的容差与 BI、审查要求的“立场到规范的桥”，都是这一形状的规则。Sidgwick 的二元论没有被消解，只被定位到这里。
+
+On a connected whole, G0 is equivalent to a seed with relational and standpoint neutrality, and D follows from the externalist articulation A. Each premise has a countermodel, and each normative rival is the same rule inside a formed boundary. This characterizes G0's content; it neither proves nor replaces it.
 
 **构成主义与 shmagency。** 任何论证都不能约束一个不评价任何东西、或对一切延续都漠然的过程。因此即使最强的辩证路线成功，所得也是“对一切评价者普遍”，不是“对一切可能存在普遍”。G0 公开采用，承认这一限度。
 
@@ -85,6 +106,7 @@ Under the same commitments, human instructions, institutional aims and AI goals 
 | 检查 | 承担的内容 | 不承担的内容 |
 |---|---|---|
 | [PositiveGroundUncertainty](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositiveGroundUncertainty.lean) | 前提足迹：正面结论只需 G0 与实际对应，不需整体改善、完整排序或未来积分；量词结构（每段接续都有某种生成，而没有一种固定形态遍及所有接续）；证书可撤回 | G0 为真 |
+| [MetaethicalCore](../../../experiments/integrated-correction/general-framework/generative-basis/lean/becoming/MetaethicalCore.lean) | 内容刻画：连通整体上 G0 ⇔ 种子 ∧ N_rel ∧ N_std；D 由 A 推出；每项前提的极小性，以及对手即有界规则；所见范围由探究的实际执行给出 | 种子、N、A 为真；`living` 即生生的认定；连通的实际对应 |
 | [PositionedPositiveReason](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/PositionedPositiveReason.lean) | 前提足迹：每个能通达回应的位置都有该理由，不论是否认同；这种认同无关性来自 D，不来自 G0 与 E | D 本身的根据 |
 | [RenewingFormation](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/RenewingFormation.lean) | 所给不可恢复磨损规律下的描述性区分：两种形式读法（`Ceaseless`、`KeepsCapacity`）、共享与联合超出时共享形成的终止、一步计数与整体比较的反转；逐事件 G0 与 C 都不分开两者 | 形式读法即生生的认定（读法与对应）；“消耗更坏”的比较（由 C 承担，关系读法下见 relational-reading-comparison）；外部化的消耗；“更多”与复杂度上升；真实过程对规律的对应；停止的伦理评价 |
 | [ProtectionPriorityRival](../../../experiments/integrated-correction/general-framework/generative-basis/lean/universal-ethics/generative-capacity/ProtectionPriorityRival.lean) | 在一个构造情境中：J2 相对 C 的独立性（G0 不约束排序）；自然数评分都交换；有界评分恰好表示 J2 | 把 J2 与有界敏感性对手分开；其他情境；基本分类 |
@@ -97,10 +119,10 @@ Lean verifies inference, premise footprint, descriptive dynamical distinctions a
 1. 一个忠实表示的案例中，更新内、无反向损失的生生不息形成，经过充分审查后仍被判定毫无正面意义，而不只是被其他理由压倒。
 2. 一个案例中，整体方向的读法给出的判断，被同一组忠实事实显示为错误，而 J1–J4 无法说明这一差异。
 3. 一个对手能以更少或更弱的承诺解释 §2.1 的同一范围，并在 §2.2–§2.3 的判别案例中至少同样好。
-4. 辩证路线（§2.3）成功，使 G0 降为评价者已有的前提。这不推翻 G0，而是改变它的地位。对持 S0 的评价者，这一改变已在所述前提下部分发生（§2.3）。
+4. 辩证路线（§2.3）成功，使 G0 降为评价者已有的前提。这不推翻 G0，而是改变它的地位。目前只得到：立场索引的单历史实例由 S0、不受限单调性（含 BI）、容差与对应条件推出；不带索引的 G0 另需立场中立 N_std（§2.3 内容刻画），后者本身是一项规范前提。
 
 ## 5. 仍未完成 / Open
 
-普遍实践根据（`universal-practical-warrant`）仍是开放目标。[位置索引的正面理由](../results/records/positioned-positive-reason.md)已检查：每个能通达回应的位置都有该理由，而认同无关性是 D 的内容，不是 G0 的推论。因此“普遍”在形式上有了对应，但它依赖 D；D 本身尚未从行动者自身立场得到论证。§2.2 的规律类没有更新组织的恢复、休息的恢复作用、“更多”或复杂度上升，也没有外部化的消耗；先冲高后回落的情形只由 `KeepsCapacity` 识别，`Ceaseless` 识别不了。§2.3 的情境分不开 J2 与有界敏感性对手。各项对应仍需具体证据。
+普遍实践根据（`universal-practical-warrant`）仍是开放目标。[位置索引的正面理由](../results/records/positioned-positive-reason.md)已检查：每个能通达回应的位置都有该理由，而认同无关性是 D 的内容，不是 G0 的推论。因此“普遍”在形式上有了对应，但它依赖 D。内容刻画进一步把 D 分解为外在论表述 A 与立场中立 N_std；二者都是公开前提，都未从行动者自身立场得到论证。§2.2 的规律类没有更新组织的恢复、休息的恢复作用、“更多”或复杂度上升，也没有外部化的消耗；先冲高后回落的情形只由 `KeepsCapacity` 识别，`Ceaseless` 识别不了。§2.3 的情境分不开 J2 与有界敏感性对手。各项对应仍需具体证据。
 
-The universal practical warrant remains open. Position-indexed reasons are now checked, and endorsement independence is located in D rather than G0; D itself is not yet argued from an agent's own standpoint.
+The universal practical warrant remains open. Position-indexed reasons are now checked, and endorsement independence is located in D rather than G0; the characterization splits D into the externalist articulation A and standpoint neutrality N_std, both explicit premises not yet argued from an agent's own standpoint.

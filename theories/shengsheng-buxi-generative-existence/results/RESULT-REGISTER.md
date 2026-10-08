@@ -94,7 +94,7 @@
 | `retrospective-source-binding` | [后得来源关系接通保留记录的绑定 / Later source learning binds retained records](records/retrospective-source-binding.md) | theorem | recorded-checked |
 | `risk-certificate-outcome-distinction` | [风险界限与实现结果的区别 / Risk bounds and realized outcomes](records/risk-certificate-outcome-distinction.md) | theorem | recorded-checked |
 | `scientific-inquiry-foundation` | [科学探究之必要关系基础 / Necessary relational foundation of scientific inquiry](records/scientific-inquiry-foundation.md) | target | open |
-| `self-good-reachable-g0` | [自我之善经一元关系推出可及范围的 G0 / Self-good grounds G0 over reachable generation in the monist ontology](records/self-good-reachable-g0.md) | theorem | recorded-checked |
+| `self-good-reachable-g0` | [自我之善加不受限单调性与容差，推出立场索引的可及 G0 实例 / Self-good with unrestricted monotonicity and tolerance gives a standpoint-indexed instance of G0 on reachable generation](records/self-good-reachable-g0.md) | theorem | recorded-checked |
 | `situated-recovery-empirical-correspondence` | [情境恢复的公开数据对应 / Public-data correspondence for situated recovery](records/situated-recovery-empirical-correspondence.md) | assessment | reviewed-scoped |
 | `supported-renewal-recovery` | [仍受支持的修复与维持关系再形成 / Supported repair and reformation of a sustaining relation](records/supported-renewal-recovery.md) | theorem | recorded-checked |
 | `theory-of-becoming-foundation` | [生成与变化之论：完整根基目标 / Theory of Becoming: full foundational target](records/theory-of-becoming-foundation.md) | target | open |

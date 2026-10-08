@@ -1,17 +1,17 @@
 {
   "status": "passed",
-  "utc": "20261008T185523.019489Z",
+  "utc": "20261008T200325.071625Z",
   "toolchain": "leanprover/lean4:v4.29.1",
-  "retained_run": "evaluator-grounding-checks/20261008T185523.019489Z",
+  "retained_run": "evaluator-grounding-checks/20261008T200325.071625Z",
   "source_sha256": {
     "GenerativeComparison": "948d36b4cddc0b2289219604464bd38eb6e607183b157cee1075d50fb9797a03",
-    "EvaluatorGrounding": "86c1583d35505b466db5670f15f19b53cba2be3deb4e3d56b53bed79bcc9218c"
+    "EvaluatorGrounding": "e98dd3eeabfbc94407512be78d9a7412af4fe00e6fbcf7acf03e3b068286689c"
   },
   "checker_sha256": {
-    "check_evaluator_grounding.py": "9074b9ab33f133952d13d99bf029bcb698b7ccfe1cce1a406531f101af44200e",
+    "check_evaluator_grounding.py": "136af50de0cc82df0ce7a0d7b896ea14e4e893fdb6ea257935f02c9780bd0afb",
     "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308"
   },
-  "scope": "Monist evaluator grounding. From a standpoint's reason-giving self-good (S0) over its own living and further generation, with significance determined by formed relations rather than a primitive owner: (1) monotonicity in the relations grounding self-good extends significance to any living occurrence at least as connected as a valued own occurrence, and a strictly own-only rival is inconsistent once its further generation differentiates into such an occurrence; (2) supervenience, tolerance (no positive-to-none flip across one small relational step) and graded connection extend significance to every reachable living occurrence, which is exactly G0 for the reachable inventory with this standpoint's significance as positive relevance. Countermodels keep consistent a threshold rival without tolerance, a present-aim evaluator without self-good, a closed self without graded connection, and a persistence-grounded rival escaping the tolerance-free step. S0, tolerance, differentiation and graded-connection correspondence are supplied; no theorem proves them, assigns weights, permission or duty, or binds an evaluator without self-good.",
+  "scope": "Monist evaluator grounding. From a standpoint's reason-giving self-good (S0) over its own living and further generation, with significance determined by formed relations rather than a primitive owner: (1) unrestricted monotonicity (over own and other occurrences) in the relations grounding self-good extends significance to any living occurrence at least as connected as a valued own occurrence, and a strictly own-only rival is inconsistent once its further generation differentiates into such an occurrence; (2) supervenience, tolerance (no positive-to-none flip across one small relational step) and graded connection extend significance to every reachable living occurrence, which is exactly G0 for the reachable inventory with this standpoint's significance as positive relevance. Countermodels keep consistent a threshold rival without tolerance, a present-aim evaluator without self-good, a closed self without graded connection, and a persistence-grounded rival escaping the tolerance-free step. The derived G0 is a standpoint-indexed single-history instance, not the unindexed G0 over continuations. S0, tolerance, unrestricted monotonicity (equivalently supervenience, a profile-monotone valuation and boundary irrelevance), differentiation and graded-connection correspondence are supplied; no theorem proves them, assigns weights, permission or duty, or binds an evaluator without self-good.",
   "lean_binary_sha256": "b48bc5ab229bd8b320a224b87e20fc428dba6fa8a1c054bd4fa6def846e19997",
   "lean_version": "Lean (version 4.29.1, arm64-apple-darwin24.6.0, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
   "checked_application_examples": [
@@ -364,7 +364,7 @@
   "artifact_sha256": {
     "Controls.lean": "a12a7993ee77e3aad6d524790553dc3c2d31e3231a2c9586f2bfd7b13bd48f62",
     "Controls.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "EvaluatorGrounding.lean": "86c1583d35505b466db5670f15f19b53cba2be3deb4e3d56b53bed79bcc9218c",
+    "EvaluatorGrounding.lean": "e98dd3eeabfbc94407512be78d9a7412af4fe00e6fbcf7acf03e3b068286689c",
     "EvaluatorGrounding.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "EvaluatorGroundingAxiomAudit.lean": "a0cec7208661ee307859ca25ecb85d93b52856b949f8deea263fdc185e2886e8",
     "EvaluatorGroundingAxiomAudit.log": "8a908e52df9fa7bfd1d73d8ccc5c5321960fec17944b82d37311530c401987e7",
@@ -377,7 +377,7 @@
     "GenerativeComparisonSignatures.lean": "bb1012bec6a2f508fa3e308f5ff3c666a651559eab86001b5b46e82013642809",
     "GenerativeComparisonSignatures.log": "9a1754ab174b2e643d3359d1468c52053ccc3305e7c79e18b2b1ce67663da16f",
     "check.py": "b9f56e1700c03f0019a486d0f3c097f70c2ce20414da9e7b231131b8ed4a8308",
-    "check_evaluator_grounding.py": "9074b9ab33f133952d13d99bf029bcb698b7ccfe1cce1a406531f101af44200e",
+    "check_evaluator_grounding.py": "136af50de0cc82df0ce7a0d7b896ea14e4e893fdb6ea257935f02c9780bd0afb",
     "version.log": "3185b32e24f5aea32feec5ebb137ef7b0b6d7b33707fb4f254924fe41b5ded8b"
   }
 }
